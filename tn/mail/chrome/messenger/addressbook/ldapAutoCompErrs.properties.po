@@ -1,0 +1,207 @@
+# ***** BEGIN LICENSE BLOCK *****
+# Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#
+# The contents of this file are subject to the Mozilla Public License Version
+# 1.1 (the "License"); you may not use this file except in compliance with
+# the License. You may obtain a copy of the License at
+# http://www.mozilla.org/MPL/
+#
+# Software distributed under the License is distributed on an "AS IS" basis,
+# WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+# for the specific language governing rights and limitations under the
+# License.
+#
+# The Original Code is the mozilla.org autocomplete code.
+#
+# The Initial Developer of the Original Code is
+# Netscape Communications Corporation.
+# Portions created by the Initial Developer are Copyright (C) 2001
+# the Initial Developer. All Rights Reserved.
+#
+# Contributor(s):
+#   Dan Mosedale <dmose@netscape.com>
+#   Robin Foster-Clark <robinf@netscape.com>
+#
+# Alternatively, the contents of this file may be used under the terms of
+# either the GNU General Public License Version 2 or later (the "GPL"), or
+# the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+# in which case the provisions of the GPL or the LGPL are applicable instead
+# of those above. If you wish to allow use of your version of this file only
+# under the terms of either the GPL or the LGPL, and not to allow others to
+# use your version of this file under the terms of the MPL, indicate your
+# decision by deleting the provisions above and replace them with the notice
+# and other provisions required by the GPL or the LGPL. If you do not delete
+# the provisions above, a recipient may use your version of this file under
+# the terms of any one of the MPL, the GPL or the LGPL.
+#
+# ***** END LICENSE BLOCK *****
+# extracted from en-US/mozilla/mail/locales/en-US/chrome/messenger/addressbook/ldapAutoCompErrs.properties
+# extracted from tn-1-arranged/mail/chrome/messenger/addressbook/ldapAutoCompErrs.properties.csv
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-07-07 14:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Translate Toolkit 0.8rc3\n"
+
+# These are error strings for problems that happen while in the
+# various states declared in nsILDAPAutoCompFormatter.idl.  Note that
+# the number that indexes each error state is the same as the number 
+# corresponding to that state in nsILDAPAutoCompFormatter.idl.
+## @name ERR_STATE_UNBOUND
+## @loc none
+#: 0
+msgid "LDAP initialization problem"
+msgstr "Bothata jwa paakanyetsotirio ya LDAP"
+
+## @name ERR_STATE_INITIALIZING
+## @loc none
+#: 1
+msgid "_: 1\n"
+"LDAP server connection failed"
+msgstr "Kgolagano ya dikgatlhong ya LDAP e retetse"
+
+## @name ERR_STATE_BINDING
+## @loc none
+#: 2
+msgid "_: 2\n"
+"LDAP server connection failed"
+msgstr "Kgolagano ya dikgatlhong tsa LDAP e retetse"
+
+## @name ERR_STATE_BOUND
+## @loc none
+#: 3
+msgid "LDAP server communications problem"
+msgstr "Bothata jwa tlhaeletsano ya dikgatlhong tsa LDAP"
+
+## @name ERR_STATE_SEARCHING
+## @loc none
+#: 4
+msgid "LDAP server search problem"
+msgstr "Bothata jwa go phuruphutsa dikgatlhong tsa LDAP"
+
+# The format of the alert dialog itself
+#
+## @name ALERT_FORMAT
+## @loc None of %1$S, %2$S, %3$S, and %4$S should be localized.  %1$S is the 
+##      ERROR_CODE string below, %2$S is the error code itself, %3$S is an
+##      LDAP SDK error message from chrome://mozldap/locale/ldap.properties,
+##      and %4$S is a hint relating to that specific error, found in this file.
+#: alertFormat
+msgid "%1$S %2$S: %3$S\n"
+"\n"
+" %4$S"
+msgstr "%1$S %2$S: %3$S\n\n %4$S"
+
+# This string is used in ALERT_FORMAT
+#
+## @name ERROR_CODE
+## @loc none
+#: errCode
+msgid "Error code"
+msgstr "Khoutu ya phoso"
+
+## The following errors are for error codes other than LDAP-specific ones.
+## Someday mozilla will actually have a system for mapping nsresults to
+## error strings that's actually widely used, unlike nsIErrorService.  But
+## until it does, these strings live here...
+## @name HOST_NOT_FOUND
+## @loc none
+#: 5000
+msgid "Host not found"
+msgstr "Ga go a bonwa khomphiutarakgolo"
+
+## @name GENERIC_ERROR
+## @loc none
+#: 9999
+msgid "Unknown error"
+msgstr "Phoso e e sa itsiweng"
+
+# Hints to for the user, associated with specific error codes (ie error code
+# + 10000)
+## @name TIMELIMIT_EXCEEDED_HINT
+## @loc none
+#: 10003
+msgid "Please try again later, or else contact your System Administrator."
+msgstr "Tsweetswee leka gape kgantele, gongwe o ikgolaganye le Motsamaisi wa gago wa Tsamaiso ya Khomphiutara."
+
+## @name STRONGAUTH_REQUIRED_HINT
+## @loc none
+#: 10008
+msgid "Strong authentication is not currently supported."
+msgstr "Thurifatso e e maatla ga e tshegediwe ga jaana."
+
+## @name INVALID_SYNTAX_HINT
+## @loc none
+#: 10021
+msgid "_: 10021\n"
+"Verify that the search filter is correct, and then try again, or else contact your System Administrator. To verify that the search filter is correct, from the Edit menu, choose Preferences, then choose Mail & Newsgroups, and then choose Addressing. Click Edit Directories, and select the LDAP server being used. Click Edit, and then click Advanced to display the Search Filter."
+msgstr "Tlhomamisa gore setlhotlhi sa go phuruphutsa se siame, mme o leke gape, go seng jalo, ikgolaganye le Motsamaisi wa gago wa Tsamaiso ya Khomphiutara. Go tlhomamisa gore setlhotlhi sa go phuruphutsa se siame, mo lenaanekhomphiutareng la Tseleganya, tlhopha  Diratwabogolo, mme o tlhophe Poso le Ditlhopha tsa Dikgang, mme o tlhophe Go ateresa. Tobetsa Tseleganya Mananefaele, mme o tlhophe dikgatlhong tsa LDAP tse di dirisiwang. Tobetsa Tseleganya, mme o tobetse Tseneletseng go bontsa Setlhotlhi sa go Phuruphutsa.  "
+
+## @name NO_SUCH_OBJECT_HINT
+## @loc none
+#: 10032
+msgid "Verify that the Base DN is correct, and then try again, or else contact your System Administrator. To verify that the Base DN is correct, from the Edit menu, choose Preferences, then choose Mail & Newsgroups, and then choose Addressing. Click Edit Directories, and select the LDAP server being used. Click Edit to display the Base DN."
+msgstr " Tlhomamisa gore DN ya Motheo e siame, mme o leke gape, go seng jalo, ikgolaganye le Motsamaisi wa gago wa Tsamaiso ya Khomphiutara. Go tlhomamisa gore DN ya Motheo e siame, mo lenaanekhomphiutareng la Tseleganya, tlhopha  Diratwabogolo, mme o tlhophe Poso le Ditlhopha tsa Dikgang, mme o tlhophe Go ateresa. Tobetsa Tseleganya Mananefaele, mme o tlhophe dikgatlhong tsa LDAP tse di dirisiwang. Tobetsa Tseleganya, go bontsa DN ya Motheo. "
+
+## @name BUSY_HINT
+## @loc none
+#: 10051
+msgid "_: 10051\n"
+"Please try again later."
+msgstr "Tsweetswee leka gape kgantele."
+
+## @name SERVER_DOWN_HINT
+## @loc none
+#: 10081
+msgid "_: 10081\n"
+"Verify that the Hostname and Port Number are correct, and then try again, or else contact your System Administrator. To verify that the Hostname and Port Number are correct, from the Edit menu, choose Preferences, then choose Mail & Newsgroups, and then choose Addressing. Click Edit Directories, and select the LDAP server being used. Click Edit to display the Hostname. Click Advanced to display the Port Number."
+msgstr "Tlhomamisa gore Leina la Khomphiutarakgolo le Nomoro ya Setshwaraganyi di siame, mme o leke gape, go seng jalo, ikgolaganye le Motsamaisi wa gago wa Tsamaiso ya Khomphiutara. Go tlhomamisa gore Leina la Khomphiutarakgolo le Nomoro ya Setshwaraganyi di siame, mo lenaanekhomphiutareng la Tseleganya, tlhopha  Diratwabogolo, mme o tlhophe Poso le Ditlhopha tsa Dikgang, mme o tlhophe Go ateresa. Tobetsa Tseleganya Mananefaele, mme o tlhophe dikgatlhong tsa LDAP tse di dirisiwang. Tobetsa Tseleganya, go bontsa Leina la Khomphiutarakgolo. Tobetsa Tseneletseng go bontsha Nomoro ya Setshwaraganyi "
+
+## @name TIMEOUT_HINT
+## @loc none
+#: 10085
+msgid "_: 10085\n"
+"Please try again later."
+msgstr "Tsweetswee leka gape kgantele."
+
+## @name FILTER_ERROR_HINT
+## @loc none
+#: 10087
+msgid "_: 10087\n"
+"Verify that the search filter is correct, and then try again, or else contact your System Administrator. To verify that the search filter is correct, from the Edit menu, choose Preferences, then choose Mail & Newsgroups, and then choose Addressing. Click Edit Directories, and select the LDAP server being used. Click Edit, and then click Advanced to display the Search Filter."
+msgstr "Tlhomamisa gore setlhotlhi sa go phuruphutsa se siame, mme o leke gape, go seng jalo, ikgolaganye le Motsamaisi wa gago wa Tsamaiso ya Khomphiutara. Go tlhomamisa gore setlhotlhi sa go phuruphutsa se siame, mo lenaanekhomphiutareng la Tseleganya, tlhopha  Diratwabogolo, mme o tlhophe Poso le Ditlhopha tsa Dikgang, mme o tlhophe Go ateresa. Tobetsa Tseleganya Mananefaele, mme o tlhophe dikgatlhong tsa LDAP tse di dirisiwang. Tobetsa Tseleganya, mme o tobetse Tseneletseng go bontsa Setlhotlhi sa go Phuruphutsa."
+
+## @name NO_MEMORY_HINT
+## @loc none
+#: 10090
+msgid "Please close some other windows and/or applications and try again."
+msgstr "Tsweetswee tswala difensetere dingwe le/gongwe dirweboleta mme o leke gape."
+
+## @name CONNECT_ERROR_HINT
+## @loc none
+#: 10091
+msgid "_: 10091\n"
+"Verify that the Hostname and Port Number are correct, and then try again, or else contact your System Administrator. To verify that the Hostname and Port Number are correct, from the Edit menu, choose Preferences, then choose Mail & Newsgroups, and then choose Addressing. Click Edit Directories, and select the LDAP server being used. Click Edit to display the Hostname. Click Advanced to display the Port Number."
+msgstr "Tlhomamisa gore Leina la Khomphiutarakgolo le Nomoro ya Setshwaraganyi di siame, mme o leke gape, go seng jalo, ikgolaganye le Motsamaisi wa gago wa Tsamaiso ya Khomphiutara. Go tlhomamisa gore Leina la Khomphiutarakgolo le Nomoro ya Setshwaraganyi di siame, mo lenaanekhomphiutareng la Tseleganya, tlhopha  Diratwabogolo, mme o tlhophe Poso le Ditlhopha tsa Dikgang, mme o tlhophe Go ateresa. Tobetsa Tseleganya Mananefaele, mme o tlhophe dikgatlhong tsa LDAP tse di dirisiwang. Tobetsa Tseleganya, go bontsha Leina la Khomphiutarakgolo. Tobetsa Tseneletseng go bontsha Nomoro ya Setshwaraganyi "
+
+## @name HOST_NOT_FOUND_HINT
+## @loc none
+#: 15000
+msgid "Verify that the Hostname is correct, and then try again, or else contact your System Administrator. To verify that the Hostname is correct, from the Edit menu, choose Preferences, then choose Mail & Newsgroups, and then choose Addressing. Click Edit Directories, and select the LDAP server being used. Click Edit to display the Hostname."
+msgstr "Tlhomamisa gore Leina la Khomphiutarakgolo le siame, mme o leke gape, go seng jalo, ikgolaganye le Motsamaisi wa gago wa Tsamaiso ya Khomphiutara. Go tlhomamisa gore Leina la Khomphiutarakgolo le siame, mo lenaanekhomphiutareng la Tseleganya, tlhopha  Diratwabogolo, mme o tlhophe Poso le Ditlhopha tsa Dikgang, mme o tlhophe Go ateresa. Tobetsa Tseleganya Mananefaele, mme o tlhophe dikgatlhong tsa LDAP tse di dirisiwang. Tobetsa Tseleganya, go bontsa Leina la Khomphiutarakgolo."
+
+## @name GENERIC_HINT
+## @loc none
+#: 19999
+msgid "Please contact your System Administrator."
+msgstr "Tsweetswee ikgolaganye le Motsamaisi wa gago wa Khomphiutarakgolo."
+
