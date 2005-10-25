@@ -152,7 +152,7 @@ msgstr "Ha ho melaetsa e metjha ho seva."
 # the second %ld will receive the total number of messages
 #: 4009
 msgid "Received %ld of %ld messages"
-msgstr "Ho amohetswe %Id melaetseng e %Id"
+msgstr "Ho amohetswe %ld melaetseng e %ld"
 
 # Status - the server doesn't support UIDL...
 ## @name POP3_SERVER_DOES_NOT_SUPPORT_UIDL_ETC
@@ -163,7 +163,7 @@ msgstr "Ho amohetswe %Id melaetseng e %Id"
 # Do not translate "UIDL"
 #: 4010
 msgid "The POP3 server (%S) does not support UIDL, which is needed to implement the ``Leave on Server'' and ``Maximum Message Size'' options. To download your mail, turn off these options in the Mail Server panel of Preferences."
-msgstr "Seva ya POP3 ya (%S) ha e tshehetse UIDL, e hlokehang ho kenya tshebetsong \"Tlohela ho Seva\" le \"Saese e Kahodimo ya Molaetsa\". Ho jarolla meile ya hao, kwala dikgetho tsena phaneleng ya Boikgethelo ya Diseva tsa Meile."
+msgstr "Seva ya POP3 ya (%S) ha e tshehetse UIDL, e hlokehang ho kenya tshebetsong ``Tlohela ho Seva'' le ``Saese e Kahodimo ya Molaetsa''. Ho jarolla meile ya hao, kwala dikgetho tsena phaneleng ya Boikgethelo ya Diseva tsa Meile."
 
 # Status - the server doesn't support the top command
 ## @name POP3_SERVER_DOES_NOT_SUPPORT_THE_TOP_COMMAND
@@ -174,7 +174,7 @@ msgstr "Seva ya POP3 ya (%S) ha e tshehetse UIDL, e hlokehang ho kenya tshebetso
 # Do not translate "TOP"
 #: 4011
 msgid "The POP3 mail server (%s) does not support the TOP command. Without server support for this, we cannot implement the ``Maximum Message Size'' preference.  This option has been disabled, and messages will be downloaded regardless of their size."
-msgstr "Seva ya meile (%s) ya POP3 ha e tshehetse taelo ya TOP. Kantle le tshehetso ena ya seva, ha re kgone ho kenya tshebetsong boikgethelo ba \"Saese e Kahodimo ya Molaetsa\". Kgetho ena e kwetswe mme melaetsa e tla jarollwa ho sa natswe saese ya yona."
+msgstr "Seva ya meile (%s) ya POP3 ha e tshehetse taelo ya TOP. Kantle le tshehetso ena ya seva, ha re kgone ho kenya tshebetsong boikgethelo ba ``Saese e Kahodimo ya Molaetsa''.  Kgetho ena e kwetswe mme melaetsa e tla jarollwa ho sa natswe saese ya yona."
 
 # Status - retr failure from the server
 ## @name POP3_RETR_FAILURE
@@ -196,12 +196,13 @@ msgstr "Ho na le phoso ya ho fumana phasewete ya meile."
 ## @loc None
 #: 4014
 msgid "You have not supplied a username for this server.  Please provide one in the account setup menu and try again."
-msgstr "Ha o a fana ka lebitso la mosebedisi la seva ena. Ka kopo fana ka lona ho menu ya ho seta akhaonteng ebe o leka hape."
+msgstr "Ha o a fana ka lebitso la mosebedisi la seva ena.  Ka kopo fana ka lona ho menu ya ho seta akhaonteng ebe o leka hape."
 
 # Status - list failure
 ## @name POP3_LIST_FAILURE
 ## @loc None
 # LOCALIZATION NOTE(4015): Do not translate the word "POP3" below.
+# (pofilter) acronyms: acronyms should not be translated: LIST
 #: 4015
 msgid "The LIST command did not succeed. Error getting the ID and size of a message."
 msgstr "Taelo ya LENAN ha e a atleha. Phoso ya ho fumana ID le saese ya molaetsa."
@@ -210,6 +211,7 @@ msgstr "Taelo ya LENAN ha e a atleha. Phoso ya ho fumana ID le saese ya molaetsa
 ## @name POP3_DELE_FAILURE
 ## @loc None
 # LOCALIZATION NOTE(4016): Do not translate the word "POP3" below.
+# (pofilter) acronyms: acronyms should not be translated: DELE
 #: 4016
 msgid "The DELE command did not succeed. Error marking a message as deleted."
 msgstr "Taelo ya PHUM ha e a atleha. Phoso ya ho tshwaya molaetsa e le o hlakotsweng."
@@ -220,7 +222,7 @@ msgstr "Taelo ya PHUM ha e a atleha. Phoso ya ho tshwaya molaetsa e le o hlakots
 # Place the word "%1$s" and "%2$s" where email account name should appear (i.e. john.smith@example.org)
 #: 4017
 msgid "Enter your password for %1$s on %2$s:"
-msgstr "Kenya phasewete ya hao bakeng sa %1$s ho %2$s."
+msgstr "Kenya phasewete ya hao bakeng sa %1$s ho %2$s:"
 
 ## @name POP3_PREVIOUSLY_ENTERED_PASSWORD_IS_INVALID_ETC
 ## @loc None
@@ -271,7 +273,7 @@ msgstr "Seva ya meile ya %S e arabetse:"
 ## @loc None
 #: 4026
 msgid "Deleting %S of %S messages"
-msgstr "E phumula molaetsa wa %S ho e %S."
+msgstr "E phumula molaetsa wa %S ho e %S"
 
 ## @name COPYING_MSGS_STATUS
 ## @loc None
@@ -283,7 +285,7 @@ msgstr "E kopiletsa molaetsa wa %S ho e %S ho iswa ho %S"
 ## @loc None
 #: 4028
 msgid "Moving %S of %S messages to %S"
-msgstr "E tsamaisa molaetsa wa %S ho e %S ho iswa ho %S."
+msgstr "E tsamaisa molaetsa wa %S ho e %S ho iswa ho %S"
 
 # secure authentication failed
 ## @name CANNOT_PROCESS_SECURE_AUTH
@@ -342,7 +344,10 @@ msgid "There was an error downloading the following message:   \n"
 "From: %S\n"
 "   Subject: %S\n"
 " This message may contain a virus or there is not enough disk space. Skip this message?"
-msgstr "Ho bile le phoso ho jarollweng ha molaetsa o latelang: \nO tswang ho: %S\n Taba: %S\n Molaetsa ona o ka ba le vaerase kapa ha ho sebaka se lekaneng diskeng. O tlola molaetsa oo."
+msgstr "Ho bile le phoso ho jarollweng ha molaetsa o latelang:   \n"
+"O tswang ho: %S\n"
+"   Taba: %S\n"
+" Molaetsa ona o ka ba le vaerase kapa ha ho sebaka se lekaneng diskeng. O tlola molaetsa oo."
 
 ## @name NS_ERROR_COULD_NOT_CONNECT_VIA_TLS
 ## @loc None
