@@ -56,9 +56,10 @@ msgstr ""
 ## @name NS_MSG_UNABLE_TO_OPEN_FILE 
 #: 12500
 msgid "Unable to open the file %P0%."
-msgstr "Ifayili alivuleki %P0%"
+msgstr "Ifayili alivuleki %P0%."
 
 ## @name NS_MSG_UNABLE_TO_OPEN_TMP_FILE
+# (pofilter) singlequoting: checks whether singlequoting is consistent between the two strings
 #: 12501
 msgid "Unable to open the temporary file %P0%. Check your 'Temporary Directory' setting."
 msgstr "Ayikwazi ukuvula ifayili yesikhatjhana %P0%. Qala izakhiwo zakho Zerhelo Lesikhatjhana'."
@@ -119,29 +120,34 @@ msgid "Error writing temporary file."
 msgstr "Kunephoso ngokutlola kufayili yesikhatjhana."
 
 ## @name NS_ERROR_COULD_NOT_LOGIN_TO_SMTP_SERVER
+# (pofilter) variables: do not translate: %S
+# (pofilter) sentencecount: checks that the number of sentences in both strings match
 #: 12513
+#, fuzzy
 msgid "An error occurred sending mail: Unable to connect to SMTP server %S. The server may be down or may be incorrectly configured. Please verify that your Mail/News account settings are correct and try again."
 msgstr "Kwenzeke iphoso nakuthunyelwa iposo. Akukghonakali ukuthintana nesisebenzi seSTMP. Kungenzeka isisebenzesi siwile namkha sitjhugululwe kumbi. Sibawa uqiniseke ukobana izakhiwo ze-akhawundi yakho yeendaba neposo zilungile ubese uyazama godu."
 
 ## @name NS_ERROR_SENDING_FROM_COMMAND
+# (pofilter) variables: do not translate: %s
 #: 12514
+#, fuzzy
 msgid "An error occurred while sending mail. The mail server responded:  %s.  Please verify that your email address is correct in your Mail preferences and try again."
 msgstr "Kwenzeke iphoso nawuthumela iposo. Umsebenzi weposo uphendulile. Sibawa uqinisekile ukobana ikheli lakho le-email lilungile ekukhetheni Iposo ubese uyazama godu."
 
 ## @name NS_ERROR_SENDING_RCPT_COMMAND
 #: 12515
 msgid "An error occurred while sending mail. The mail server responded:  %s. Please check the message recipients and try again."
-msgstr "Kwenzeke Iphoso nakuthunyelwa iposo. Umsebenzi weposo uphendulile %S. Sibawa uqale umlayezo ubese uyazama godu."
+msgstr "Kwenzeke Iphoso nakuthunyelwa iposo. Umsebenzi weposo uphendulile:  %s. Sibawa uqale umlayezo ubese uyazama godu."
 
 ## @name NS_ERROR_SENDING_DATA_COMMAND
 #: 12516
 msgid "An (SMTP) error occurred while sending mail. The server responded:  %s."
-msgstr "Kwenzeke iphoso yeSMTP lokha kuthunyelwa umlayezo. Umsebenzi uphendulile %Ss."
+msgstr "Kwenzeke iphoso yeSMTP lokha kuthunyelwa umlayezo. Umsebenzi uphendulile:  %s."
 
 ## @name NS_ERROR_SENDING_MESSAGE
 #: 12517
 msgid "An error occurred while sending mail. The mail server responded:  %s. Please check the message and try again."
-msgstr "Kwenzeke iphoso lokha kuthunyelwa iposo. Umsebenzi weposo uphendulile: %s. Sibawa uqale umlayezo ubese uyazama godu."
+msgstr "Kwenzeke iphoso lokha kuthunyelwa iposo. Umsebenzi weposo uphendulile:  %s. Sibawa uqale umlayezo ubese uyazama godu."
 
 ## @name NS_ERROR_POST_FAILED
 #: 12518
@@ -161,7 +167,7 @@ msgstr "Ukuthunyelwa komlayezo kuhlulekile."
 ## @name SMTP_DELIV_MAIL
 #: 12521
 msgid "Delivering mail..."
-msgstr "Ukwethula iposo"
+msgstr "Ukwethula iposo..."
 
 ## @name SMTP_MESSAGE_SENT_WAITING_MAIL_REPLY
 #: 12522
@@ -176,7 +182,7 @@ msgstr "Iposo ikhambe ngepumelelo"
 ## @name NS_ERROR_SMTP_SERVER_ERROR
 #: 12524
 msgid "An error occurred sending mail: SMTP server error. The server responded:  %s Contact your mail administrator for assistance."
-msgstr "Kwenzeke iphutha kuthunyelwa umlayezo: Kunephoso yesisebenzi seSMTP. Umsebenzi uphendulile: %s Thintana nomphathi weposo yakho bona akusize."
+msgstr "Kwenzeke iphutha kuthunyelwa umlayezo: Kunephoso yesisebenzi seSMTP. Umsebenzi uphendulile:  %s Thintana nomphathi weposo yakho bona akusize."
 
 ## @name NS_MSG_UNABLE_TO_SEND_LATER
 #: 12525
@@ -186,22 +192,22 @@ msgstr "Akukghonakali ukubulunga umsebenzi wakho bona uwuthumele emva kwesikhath
 ## @name NS_ERROR_COMMUNICATIONS_ERROR
 #: 12526
 msgid "A communications error occurred: %d.  Please try again."
-msgstr "Kwenzeke iphoso ekuthintaneni: %d Sibawa uzame godu."
+msgstr "Kwenzeke iphoso ekuthintaneni: %d.  Sibawa uzame godu."
 
 ## @name NS_ERROR_BUT_DONT_SHOW_ALERT
 #: 12527
 msgid "THIS IS JUST A PLACEHOLDER.  YOU SHOULD NEVER SEE THIS STRING."
-msgstr "LOKHU KWAPHELA KUBAMBA INDAWO. AKUKAFANELI UBONE INTAMBO LE GODU."
+msgstr "LOKHU KWAPHELA KUBAMBA INDAWO.  AKUKAFANELI UBONE INTAMBO LE GODU."
 
 ## @name NS_ERROR_TCP_READ_ERROR
 #: 12528
 msgid "A network error occurred while receiving data.  (Network Error: %s)  Try connecting again."
-msgstr "Kubenephoso ekuthintaneni lokha kwamukela imininingwane. (Iphoso ekuthintaneni. %s) Zama uthintane godu."
+msgstr "Kubenephoso ekuthintaneni lokha kwamukela imininingwane.  (Iphoso ekuthintaneni: %s)  Zama uthintane godu."
 
 ## @name NS_ERROR_COULD_NOT_GET_USERS_MAIL_ADDRESS
 #: 12529
 msgid "An error occurred sending mail:  the return mail address was invalid.  Please verify that your email address is correct in your Mail preferences and try again."
-msgstr "Kwenzeke iphoso lokha kuthunyelwa umlayezo: ikheli lokubuyisa iposo alisebenzi. Sibawa uqinisekise bona ikheli le-email yakho lilungile ekukhethi Kweposo kwakho ubese uyazama godu."
+msgstr "Kwenzeke iphoso lokha kuthunyelwa umlayezo:  ikheli lokubuyisa iposo alisebenzi.  Sibawa uqinisekise bona ikheli le-email yakho lilungile ekukhethi Kweposo kwakho ubese uyazama godu."
 
 ## @name NS_ERROR_SMTP_PASSWORD_UNDEFINED
 #: 12530
@@ -221,7 +227,7 @@ msgstr "Umlayezo uphumelele ukukhamba kodwana azange ukopelrke envilobhini yakho
 ## @name NS_MSG_FAILURE_ON_OBJ_EMBED_WHILE_SAVING
 #: 12533
 msgid "There was a problem including the file %.200s in the message. Would you like to continue saving the message without this file?"
-msgstr "Kubenephoso kufake hlangana ifayili %200s kumilayezo. Ufuna ukuragela phambili ubulunge umlayezo ngaphandle kwefayili le?"
+msgstr "Kubenephoso kufake hlangana ifayili %.200s kumilayezo. Ufuna ukuragela phambili ubulunge umlayezo ngaphandle kwefayili le?"
 
 ## @name NS_MSG_ASSEMBLING_MESSAGE
 #: 12534
@@ -241,7 +247,7 @@ msgstr "Yakha umlayezo weposo..."
 ## @name NS_MSG_FAILURE_ON_OBJ_EMBED_WHILE_SENDING
 #: 12537
 msgid "There was a problem including the file %.200s in the message. Would you like to continue sending the message without this file?"
-msgstr "Kubenephoso kufake hlangana ifayili %200s kumilayezo. Ufuna ukuragela phambili ubulunge umlayezo ngaphandle kwefayili le?"
+msgstr "Kubenephoso kufake hlangana ifayili %.200s kumilayezo. Ufuna ukuragela phambili ubulunge umlayezo ngaphandle kwefayili le?"
 
 ## @name NS_MSG_START_COPY_MESSAGE
 #: 12538
@@ -265,7 +271,7 @@ msgstr "Yelela! Useduze nokuthumela %d iintokana zemilayezo. Uneqiniso bona ufun
 
 #: noIdentities
 msgid "You don't have any email identities yet.  Create one with the Account Wizard."
-msgstr "Awunamazisi we I-meyili. Yenza munye ngesihlakaniphi se- akhawundi I-Wizard."
+msgstr "Awunamazisi we I-meyili.  Yenza munye ngesihlakaniphi se- akhawundi I-Wizard."
 
 ## @name NS_SMTP_PASSWORD_PROMPT_TITLE
 #: 12542
@@ -363,10 +369,12 @@ msgstr "Ifayili Yokufunda Iphoso."
 ## @name NS_FOLLOWUPTO_SENDER
 #: 12564
 msgid "The author of this message has requested that responses be sent only to the author. If you also want to reply to the newsgroup, add a new row to the addressing area, choose Newsgroup from the recipients list, and enter the name of the newsgroup."
-msgstr "Umtloli womlayezo lo ubawe bona iimpendulo zithunyelwe kuye kwaphela.Nakube uthanda godu ukutlolela kusichema seendaba, yengeza ilayini linye kundawo yekheli, khetha isichema seendaba kurhelo labatlolelweko, ubese ufaka igama lesichema seendaba."
+msgstr "Umtloli womlayezo lo ubawe bona iimpendulo zithunyelwe kuye kwaphela. Nakube uthanda godu ukutlolela kusichema seendaba, yengeza ilayini linye kundawo yekheli, khetha isichema seendaba kurhelo labatlolelweko, ubese ufaka igama lesichema seendaba."
 
 ## @name NS_ERROR_SMTP_SEND_FAILED
+# (pofilter) variables: do not translate: %S
 #: 12565
+#, fuzzy
 msgid "The message could not be sent because connecting to SMTP server %S failed. The server may be unavailable or is refusing SMTP connections. Please verify that your SMTP server setting is correct and try again, or else contact your network administrator."
 msgstr "Umlayezo awukathunyelwa ngombana ukuthintana nesisebenzi seSMTP kuhlulekile. Kungenzeka umsebenzi akekho namkha wala ithintano neSMTP. Sibawa uqinisekise bona izakhiwo zakho zesibenzi seSMTP zilungile ubese uyazama godu, namkha thintana nomphathi wehlelo lakho."
 
@@ -379,17 +387,20 @@ msgstr "abamukeli abangakavezwa"
 ## @name NS_ERROR_SMTP_TEMP_SIZE_EXCEEDED
 #: 12567
 msgid "The size of the message you are trying to send exceeds a temporary size limit of the server. The message was not sent, try to reduce the message size and try again. The server responded:  %s."
-msgstr "Isayizi yomlayezo ozama ukuwuthumela idlula isimedo sesayizi yesikhatjhana yomsebenzi weposo.Umlayezo akukathunyelwa, zama ukuphungula isayizi yomlayezo ubese uyazama godu. Umsebenzi uphendule: %s."
+msgstr "Isayizi yomlayezo ozama ukuwuthumela idlula isimedo sesayizi yesikhatjhana yomsebenzi weposo. Umlayezo akukathunyelwa, zama ukuphungula isayizi yomlayezo ubese uyazama godu. Umsebenzi uphendule:  %s."
 
 ## @name NS_ERROR_SMTP_PERM_SIZE_EXCEEDED_1
+# (pofilter) brackets: translation is missing '(', ')'
+# (pofilter) variables: do not translate: %d
 #: 12568
+#, fuzzy
 msgid "The size of the message you are trying to send exceeds the global size limit (%d bytes) of the server. The message was not sent, try to reduce the message size and try again."
 msgstr "Isayizi yomlayezo ozama ukuwuthumela idlula ubukhulu boke besayizi yesisebenzi seposo. Umlayezo azange uthunyelwe, zama uphungule isayizi yomlayezo ubese uyazama godu."
 
 ## @name NS_ERROR_SMTP_PERM_SIZE_EXCEEDED_2
 #: 12569
 msgid "The size of the message you are trying to send exceeds the global size limit of the server. The message was not sent, try to reduce the message size and try again. The server responded:  %s."
-msgstr "Isayizi yomlayezo ozama ukuwuthumela idlula isimedo sesayizi yesikhatjhana yomsebenzi weposo.Umlayezo akukathunyelwa, zama ukuphungula isayizi yomlayezo ubese uyazama godu. Umsebenzi uphendule: %s."
+msgstr "Isayizi yomlayezo ozama ukuwuthumela idlula isimedo sesayizi yesikhatjhana yomsebenzi weposo. Umlayezo akukathunyelwa, zama ukuphungula isayizi yomlayezo ubese uyazama godu. Umsebenzi uphendule:  %s."
 
 ## @name NS_MSG_ERROR_ATTACHING_FILE
 #: 12570
@@ -404,15 +415,17 @@ msgstr "Kubenephoso ukukopela umlayezo kuvilobhu yokuthumela. Zama godu?"
 ## @name NS_ERROR_SMTP_GREETING
 #: 12572
 msgid "An error occurred sending mail: The mail server sent an incorrect greeting:  %s."
-msgstr "Kwenzeke iphutha lokha kuthunyelwa umlayezo: Umsebenzi weposo uthumele ukulotjhisa okungakalungi: %s."
+msgstr "Kwenzeke iphutha lokha kuthunyelwa umlayezo: Umsebenzi weposo uthumele ukulotjhisa okungakalungi:  %s."
 
 ## @name NS_ERROR_COULD_NOT_LOGIN_TO_SMTP_SERVER_WITH_STARTTLS1
 #: 12573
 msgid "An error occurred sending mail: Unable to connect to SMTP server %S via STARTTLS since it doesn't support EHLO. Please verify that your Mail/News account settings are correct and try again."
-msgstr "Kwenzeke iphutha nakuthunyelwa umlayezo: Akukghoneki ukuthintana nesisebenzi seSMTP %s nge STARTTLS ngombana ayisekeli iEHL. Sibawa uqinisekise bona izakhiwo zakho ze-akhawundi yePoso/Iindaba zilungile ubese uzama godu."
+msgstr "Kwenzeke iphutha nakuthunyelwa umlayezo: Akukghoneki ukuthintana nesisebenzi seSMTP %S nge STARTTLS ngombana ayisekeli iEHLO. Sibawa uqinisekise bona izakhiwo zakho ze-akhawundi yePoso/Iindaba zilungile ubese uzama godu."
 
 ## @name NS_ERROR_COULD_NOT_LOGIN_TO_SMTP_SERVER_WITH_STARTTLS2
+# (pofilter) variables: do not translate: %S
 #: 12574
+#, fuzzy
 msgid "An error occurred sending mail: Unable to connect to SMTP server %S via STARTTLS since it doesn't offer STARTTLS In EHLO reponse. Please verify that your Mail/News account settings are correct and try again."
 msgstr "Kwenzeke iphutha nakuthunyelwa umlayezo: Akukghoneki ukuthintana nesisebenzi seSMTP nge STARTTLS ngombana ayisebenzisi ipendulo yeSTARTTLS kuEHLO. Sibawa uqinisekise izakhiwo ze-akhawundi yakho zePoso/Iindaba bona zilungile ubese uyazama godu."
 
@@ -441,7 +454,7 @@ msgstr "Cima"
 ## generics string
 #: defaultSubject
 msgid "(no subject)"
-msgstr "(Akunasihloko)"
+msgstr "(akunasihloko)"
 
 #: chooseFileToAttach
 msgid "Attach File(s)"
@@ -458,6 +471,7 @@ msgid "_: sendMsgTitle\n"
 "Send Message"
 msgstr "Thumela Umlayezo"
 
+# (pofilter) sentencecount: checks that the number of sentences in both strings match
 #: subjectDlogMessage
 msgid "You did not specify a subject for this message. If you would like to provide one, please type it now."
 msgstr "Awuzange utlole isihloko somlayezo lo/ Nakube ufuna ukuwutlola, sibawa uwutlole gades."
@@ -479,7 +493,7 @@ msgstr "Sibawa utjho indawo ukwazi ukunamathisela"
 
 #: attachPageDlogMessage
 msgid "Web Page (URL):"
-msgstr "Ikhasi leWeb (URL)"
+msgstr "Ikhasi leWeb (URL):"
 
 ## String used for attachment pretty name, when attachment is a message
 #: messageAttachmentSafeName
@@ -552,17 +566,19 @@ msgstr "Thumela"
 
 ## reply header in composeMsg
 ## <author> wrote:
+# (review) please check
 #: mailnews.reply_header_authorwrote
 msgid "%s wrote"
-msgstr "%Stlola"
+msgstr "%s tlola"
 
+# (review) please check
 #: mailnews.reply_header_ondate
 msgid "On %s"
-msgstr "Ku%S"
+msgstr "Ku %s"
 
 ## reply header in composeMsg
 ## user specified 
 #: mailnews.reply_header_originalmessage
 msgid "-------- Original Message --------"
-msgstr "---------Umlayezo wokuthoma-----"
+msgstr "-------- Umlayezo wokuthoma --------"
 
