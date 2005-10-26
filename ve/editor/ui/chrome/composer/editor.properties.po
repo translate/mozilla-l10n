@@ -157,7 +157,7 @@ msgstr "Tsivhudzo"
 
 #: CantEditFramesetMsg
 msgid "Composer cannot edit HTML framesets, or pages with inline frames. For framesets, try editing the page for each frame separately. For pages with iframes, save a copy of the page and remove the <iframe> tag."
-msgstr "Khompouza a i koni u lulamisa nzudzanyo dza fureme dza HTML, kana masiaṱari ane a vha na ifureme dza ngomu ha ḽaini. U itela nzudzanyo dza fureme, lingedzani u lulamisa siaṱari u itela fureme iṅwe na iṅwe thungo. U itela masiaṱari are na fureme, vhulungani khophi ya siaṱari nahone ni bvise thege ya <ifureme>."
+msgstr "Khompouza a i koni u lulamisa nzudzanyo dza fureme dza HTML, kana masiaṱari ane a vha na ifureme dza ngomu ha ḽaini. U itela nzudzanyo dza fureme, lingedzani u lulamisa siaṱari u itela fureme iṅwe na iṅwe thungo. U itela masiaṱari are na fureme, vhulungani khophi ya siaṱari nahone ni bvise thege ya <iframe>."
 
 #: CantEditMimeTypeMsg
 msgid "This type of page can't be edited."
@@ -196,12 +196,16 @@ msgid "before validating the document"
 msgstr "musi ni saathu u sumbedza ndeme ya ḽiṅwalo"
 
 # LOCALIZATION NOTE (SaveFilePrompt, PublishPrompt): Don't translate %title% and %reason% (this is the reason for asking user to close, such as "before closing")
+# (pofilter) variables: do not translate: %title%, %reason%
 #: SaveFilePrompt
+#, fuzzy
 msgid "_: SaveFilePrompt\n"
 "Save changes to \"%title%\" %reason%?"
 msgstr "Ni khou ṱoḓa u vhulunga tshanduko kha \"%ṱhoho%\" %ndivho%?"
 
+# (pofilter) variables: do not translate: %title%, %reason%
 #: PublishPrompt
+#, fuzzy
 msgid "_: PublishPrompt\n"
 "Save changes to \"%title%\" %reason%?"
 msgstr "Ni khou ṱoḓa u vhulunga tshanduko kha \"%ṱhoho%\" %ndivho%?"
@@ -212,11 +216,17 @@ msgstr "U vhulunga faela ho kundelwa!"
 
 # Publishing error strings:
 # LOCALIZATION NOTE Don't translate %dir% or %file% in the Publishing error strings:
+# (pofilter) variables: do not translate: %file%
 #: FileNotFound
+#, fuzzy
 msgid "%file% not found."
 msgstr "%faela% a i ngo wanala."
 
+# (pofilter) escapes: escapes in original ('\"%dir%\"', '\"%file%\"') don't match escapes in translation ('%dir%\"', '\"%faela%\"')
+# (pofilter) doublequoting: checks whether doublequoting is consistent between the two strings
+# (pofilter) variables: do not translate: %file%
 #: SubdirDoesNotExist
+#, fuzzy
 msgid "The subdirectory \"%dir%\" doesn't exist on this site or the filename \"%file%\" is already in use by another subdirectory."
 msgstr "Tshipiḓa tsha tsumbanḓila %dir%\" a tshi ho kha hei saithi kana dzina ḽa faela \"%faela%\" ḽi khou shumiswa nga tshipiḓa tsha tsumbanḓila tshiṅwe."
 
@@ -258,12 +268,14 @@ msgstr "U anḓadza ho fhela."
 
 #: AllFilesPublished
 msgid "All files published"
-msgstr "Faela dzoṱhe dzo anḓadzwa."
+msgstr "Faela dzoṱhe dzo anḓadzwa"
 
 # LOCALIZATION NOTE Don't translate %x% or %total%
+# (pofilter) variables: do not translate: %total%
 #: FailedFileMsg
+#, fuzzy
 msgid "%x% of %total% files failed to publish."
-msgstr "%x% ya %gute% faela dzo kundelwa u anḓadza.."
+msgstr "%x% ya %gute% faela dzo kundelwa u anḓadza."
 
 # End-Publishing error strings
 #: Prompt
@@ -271,7 +283,9 @@ msgid "Prompt"
 msgstr "Ṱavhanya"
 
 # LOCALIZATION NOTE (PromptFTPUsernamePassword): Don't translate %host% 
+# (pofilter) variables: do not translate: %host%
 #: PromptFTPUsernamePassword
+#, fuzzy
 msgid "Enter username and password for FTP server at %host%"
 msgstr "Dzhenisani dzina ḽa mushumisi na phasiwede ya seva ya FTP kha %tshigwada%"
 
@@ -292,15 +306,21 @@ msgid "Send"
 msgstr "Rumelani"
 
 ## LOCALIZATION NOTE (PublishProgressCaption, PublishToSite, AbandonChanges): Don't translate %title%
+# (pofilter) variables: do not translate: %title%
 #: PublishProgressCaption
+#, fuzzy
 msgid "Publishing: %title%"
 msgstr "U Anḓadza: %ṱhowaha%"
 
+# (pofilter) variables: do not translate: %title%
 #: PublishToSite
+#, fuzzy
 msgid "Publishing to Site: %title%"
 msgstr "Vhulungani kha Saithi: %ṱhohwana%"
 
+# (pofilter) variables: do not translate: %title%
 #: AbandonChanges
+#, fuzzy
 msgid "Abandon unsaved changes to \"%title%\" and reload page?"
 msgstr "Ni khou ṱoḓa u Litsha tshanduko dzi songo vhulungwaho \"%thoho%\" nahone ni dzhenise hafhu siaṱari?"
 
@@ -388,7 +408,9 @@ msgid "Please enter a name for this anchor."
 msgstr "Ni khiou humbelwa uri ni dzhenise dzina la hetshi tshikundi."
 
 #LOCALIZATION NOTE (DuplicateAnchorNameError): Don't translate %name%
+# (pofilter) variables: do not translate: %name%
 #: DuplicateAnchorNameError
+#, fuzzy
 msgid "\"%name%\" already exists in this page. Please enter a different name."
 msgstr "\"%dzina%\" yo no ḓi vha hone kha heḽi siaṱari. Ni khou humbelwa uri ni dzhenise dzina ḽa thungo."
 
@@ -600,6 +622,7 @@ msgstr "Lebulu"
 msgid "Field Set"
 msgstr "Dzudzanyani Buḓo"
 
+# (pofilter) unchanged: please translate
 #: Tag
 msgid "Tag"
 msgstr "Tag"
@@ -621,7 +644,9 @@ msgid "No publishing site information given. Switching to Settings panel so you 
 msgstr "A huna vhuṱanzi ha fhethu ha u anḓadza ho ṋewaho. U sudzulutshela kha phaneḽe ya Nzudzanyo u itela uri ni kone u ṋetshedza vhuṱanzi ha u anḓadza."
 
 #LOCALIZATION NOTE (DuplicateSiteNameError): Don't translate %name%
+# (pofilter) variables: do not translate: %name%
 #: DuplicateSiteNameError
+#, fuzzy
 msgid "\"%name%\" already exists. Please enter a different site name."
 msgstr "\"%dzina%\" lo no di vha hone. Ni khou humbelwa uri ni dzhenise dzina ḽa fhethu ḽa thungo."
 
@@ -636,7 +661,7 @@ msgstr "U ṱola ho bvelelaho hu a wanala musi ho nangiwa sele dzi na tshivhalo"
 # LOCALIZATION NOTE (ObjectProperties):Don't translate "%obj%" it will be replaced with one of above object nouns
 #: ObjectProperties
 msgid "%obj% Properties..."
-msgstr "Vhuvha ha %obj% ..."
+msgstr "Vhuvha ha %obj%..."
 
 # LOCALIZATION NOTE This character must be in the above string and not confict with other accesskeys in Format menu
 #: ObjectPropertiesAccessKey
@@ -764,7 +789,7 @@ msgstr "Vhulungani Tshivhumbeo (%NAME%)..."
 
 #: NoSeparatorCharacter
 msgid "Please enter a single character to use for separating into columns"
-msgstr "Ni khou humbulwa uri ni dzhenise tshiteṅwa tshithihi tsha u shumisa u musi ni tshi saukanyela kha dzikhoḽomu."
+msgstr "Ni khou humbulwa uri ni dzhenise tshiteṅwa tshithihi tsha u shumisa u musi ni tshi saukanyela kha dzikhoḽomu"
 
 #
 # LOCALIZATION NOTE please do not translate %brand%, it will be used programmatically
@@ -773,18 +798,20 @@ msgstr "Ni khou humbulwa uri ni dzhenise tshiteṅwa tshithihi tsha u shumisa u 
 msgid "Download Dictionaries"
 msgstr "Dzhienisani Ṱhalusaipfi"
 
+# (pofilter) variables: do not translate: %brand%
 #: DictDownldConfirmMsg
+#, fuzzy
 msgid "%brand% will close the current window and redirect you to a spellchecker download site."
-msgstr "%pfungavhuṋe% i ḓo vala heḽi siaṱari kha ḽino siaṱari na  u livhisa kha saithi ya u dzhenisa u ṱola mupeleṱo."
+msgstr "%pfungavhuṋe% i ḓo vala heḽi siaṱari kha ḽino siaṱari na u livhisa kha saithi ya u dzhenisa u ṱola mupeleṱo."
 
 #
 #: NoHeadTag
 msgid "The HTML source could not be converted back into the document because the required <head> tag is missing. Please add it."
-msgstr "Tshiko tsha HTML a tshi ngo kona u humiselwa murahu kha ḽiṅwalo ngauri thege ine ya khou ṱoḓea ya <ṱhoho> i khou ṱahela. Ni khou humbelwa uri ni ḓadzise."
+msgstr "Tshiko tsha HTML a tshi ngo kona u humiselwa murahu kha ḽiṅwalo ngauri thege ine ya khou ṱoḓea ya <head> i khou ṱahela. Ni khou humbelwa uri ni ḓadzise."
 
 #: NoBodyTag
 msgid "The HTML source could not be converted back into the document because the required <body> tag is missing. Please add it."
-msgstr "Tshiko tsha HTML a tshi ngo kona u humiselwa murahu kha ḽiṅwalo ngauri thege ine ya khou ṱoḓea ya <mutumbu> i khou ṱahela. Ni khou humbelwa uri ni ḓadzise."
+msgstr "Tshiko tsha HTML a tshi ngo kona u humiselwa murahu kha ḽiṅwalo ngauri thege ine ya khou ṱoḓea ya <body> i khou ṱahela. Ni khou humbelwa uri ni ḓadzise."
 
 #: NoLinksToCheck
 msgid "There are no elements with links to check"
