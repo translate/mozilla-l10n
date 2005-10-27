@@ -99,7 +99,7 @@ msgstr "Layishela umlayeto wa %S ya %S"
 #LOCALIZATION NOTE (4003): Do not translate POP3 in the following line.
 #: 4003
 msgid "An error occurred with the POP3 mail server."
-msgstr "Kunengoti leyenteke ngesilondvoloti seliposi POP."
+msgstr "Kunengoti leyenteke ngesilondvoloti seliposi POP3."
 
 # Status - pop3 user name failed
 ## @name POP3_USERNAME_FAILURE
@@ -134,7 +134,7 @@ msgstr "Iyasetjentwa lefolda nyalo. Uyacelwa sewulindze kuze kuphele loku lekwen
 ## @loc None
 #: 4007
 msgid "Connect: Host contacted, sending login information..."
-msgstr "Hlanganisa: Bemukeli batsintsiwe, kutfunyelwa lwati lwekungena."
+msgstr "Hlanganisa: Bemukeli batsintsiwe, kutfunyelwa lwati lwekungena..."
 
 # Status - no messages to download 
 ## @name POP3_NO_MESSAGES
@@ -152,7 +152,7 @@ msgstr "Kute imilayeto lemisha kulesilondvoloti."
 # the second %ld will receive the total number of messages
 #: 4009
 msgid "Received %ld of %ld messages"
-msgstr "Kutfolakele imilayeto %d ya %ld."
+msgstr "Kutfolakele imilayeto %ld ya %ld"
 
 # Status - the server doesn't support UIDL...
 ## @name POP3_SERVER_DOES_NOT_SUPPORT_UIDL_ETC
@@ -163,7 +163,7 @@ msgstr "Kutfolakele imilayeto %d ya %ld."
 # Do not translate "UIDL"
 #: 4010
 msgid "The POP3 server (%S) does not support UIDL, which is needed to implement the ``Leave on Server'' and ``Maximum Message Size'' options. To download your mail, turn off these options in the Mail Server panel of Preferences."
-msgstr "Silondvoloti POP3 (%s) asiyisekeli iUIDL, ledzingekako kuchuba le ``livi kusilonfvoloti'' nekwekutikhetsela ``Isayizi Lenkhulukati Yemlayeto''. Nawufuna kulayishela liposi lakho phuma kulokwekukhetsa kulephaneli yalokutsandvwako kwesilondvoloti seliposi."
+msgstr "Silondvoloti POP3 (%S) asiyisekeli iUIDL, ledzingekako kuchuba le ``livi kusilonfvoloti'' nekwekutikhetsela ``Isayizi Lenkhulukati Yemlayeto''. Nawufuna kulayishela liposi lakho phuma kulokwekukhetsa kulephaneli yalokutsandvwako kwesilondvoloti seliposi."
 
 # Status - the server doesn't support the top command
 ## @name POP3_SERVER_DOES_NOT_SUPPORT_THE_TOP_COMMAND
@@ -172,6 +172,7 @@ msgstr "Silondvoloti POP3 (%s) asiyisekeli iUIDL, ledzingekako kuchuba le ``livi
 # Do not translate "POP3"
 # Do not translate "%s". Place %s in your translation where the name of the server should appear.
 # Do not translate "TOP"
+# (pofilter) brackets: translation is missing '(', ')'
 #: 4011
 msgid "The POP3 mail server (%s) does not support the TOP command. Without server support for this, we cannot implement the ``Maximum Message Size'' preference.  This option has been disabled, and messages will be downloaded regardless of their size."
 msgstr "Silondvoloti POP3 seliposi %s asiwusekeli lomyalo iTOP. Ngaphandle kwekusekelwa silondvoloti kuloku, singeke sikwati kwenta lokutsandvwako ``Isayizi Lenkhulukati Yemilayeto''.  Lokwekukhetsa kukhinyabetiwe, kutawulayishelwa nemilayeto kungasanakwa bungako bayo."
@@ -182,7 +183,7 @@ msgstr "Silondvoloti POP3 seliposi %s asiwusekeli lomyalo iTOP. Ngaphandle kweku
 # LOCALIZATION NOTE(4012): Do not translate the word "POP3" below.
 #: 4012
 msgid "The RETR command did not succeed. Error retrieving a message."
-msgstr "Umyalo PETR awukaphumeleli. Ingoti ekudvonseni umlayeto."
+msgstr "Umyalo RETR awukaphumeleli. Ingoti ekudvonseni umlayeto."
 
 # Status - password undefined 
 ## @name POP3_PASSWORD_UNDEFINED
@@ -211,6 +212,7 @@ msgstr "Lomyalo weLUHLU awukaphumeleli. Ingoti ekutfoleni ID nesayizi yemlayeto.
 ## @name POP3_DELE_FAILURE
 ## @loc None
 # LOCALIZATION NOTE(4016): Do not translate the word "POP3" below.
+# (pofilter) acronyms: acronyms should not be translated: DELE
 #: 4016
 msgid "The DELE command did not succeed. Error marking a message as deleted."
 msgstr "Umyalo ELE awukaphumeleli. Ingoti ekubekeni luphawu emlayetweni njengalocishiwe."
@@ -229,7 +231,7 @@ msgstr "Faka libitophawu lwakho ku %1$s ku %2$s:"
 # Do not translate "%.100s" and "%.100s". It will receive the email account name.
 #: 4018
 msgid "Please enter a new password for user %.100s on %.100s:"
-msgstr "Uyacelwa ufake libitophawu lelisha wentele lotalisebentisa %. 100s wa %. 100:"
+msgstr "Uyacelwa ufake libitophawu lelisha wentele lotalisebentisa %.100s wa %.100s:"
 
 ## @name POP3_NO_ANSWER
 ## @loc None
@@ -302,7 +304,9 @@ msgstr "Silondvoloti seliposi asikusekeli kucinisekiswa nome ufake libitophawu l
 
 ## @name MOVEMAIL_SPOOL_FILE_LOCKED
 ## @loc None
+# (pofilter) variables: do not translate: %S
 #: 4032
+#, fuzzy
 msgid "The mail spool file %S is locked."
 msgstr "Likhiyiwe lifayela leliyimbokojwana yeliposi."
 
@@ -338,12 +342,13 @@ msgstr "Alitfolakali lelifayela leliyimbokojwana leliposi."
 
 ## @name POP3_TMP_DOWNLOAD_FAILED
 ## @loc None
+# (pofilter) endpunc: checks whether punctuation at the end of the strings match
 #: 4038
 msgid "There was an error downloading the following message:   \n"
 "From: %S\n"
 "   Subject: %S\n"
 " This message may contain a virus or there is not enough disk space. Skip this message?"
-msgstr "Kube nengoti ekulayisheni lemilayeto lelandzelako: \n  Kusukela ku %S\n Sihloko: %S\n Lomlayeto ungahle kube uneligciwane nome kute sikhala lesenele sediski. Wugalaje lomlayeto."
+msgstr "Kube nengoti ekulayisheni lemilayeto lelandzelako:   \nKusukela ku: %S\n   Sihloko: %S\n Lomlayeto ungahle kube uneligciwane nome kute sikhala lesenele sediski. Wugalaje lomlayeto."
 
 ## @name NS_ERROR_COULD_NOT_CONNECT_VIA_TLS
 ## @loc None

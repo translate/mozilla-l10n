@@ -64,12 +64,13 @@ msgstr "Sicelo asitfolakali."
 ## @name MIME_UNABLE_TO_OPEN_TMP_FILE
 ## @loc None
 # LOCALIZATION NOTE (-1001): Do not translate "\n%.200s.\n\n" below. It will display the name of the temporary directory
+# (pofilter) singlequoting: checks whether singlequoting is consistent between the two strings
 #: -1001
 msgid "Unable to open the temporary file\n"
 "%.200s.\n"
 "\n"
 "\\Check your `Temporary Directory' setting and try again."
-msgstr "Kumatima kuvula ifayela yesikhashana \n%\n \\Hlola kuhlelwa kwenkhomba yakho yesikhashana uphindze wetame futsi."
+msgstr "Kumatima kuvula ifayela yesikhashana\n%.200s.\n\n\\Hlola kuhlelwa kwenkhomba yakho yesikhashana uphindze wetame futsi."
 
 # Can't write temp file
 ## @name MIME_ERROR_WRITING_FILE
@@ -118,7 +119,7 @@ msgstr "Tfumela kabusha-ibuya-ka"
 ## @loc 
 #: 1005
 msgid "Resent-To"
-msgstr "Tfumela kabusha-ku."
+msgstr "Tfumela kabusha-ku"
 
 # Resent-CC
 ## @name MIME_MHTML_RESENT_CC
@@ -299,7 +300,7 @@ msgstr "forward.msg"
 # added to the address book.
 #: 1030
 msgid "Add %s to your Address Book"
-msgstr "Ngeta %S ebhukwini lemakheli"
+msgstr "Ngeta %s ebhukwini lemakheli"
 
 # XSender Internal
 ## @name MIME_MSG_XSENDER_INTERNAL
@@ -307,7 +308,7 @@ msgstr "Ngeta %S ebhukwini lemakheli"
 # LOCALIZATION NOTE (1031): Only translate the word "Internal in the line below".
 #: 1031
 msgid "<B><FONT COLOR=\"#808080\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internal</FONT></B>"
-msgstr "<B><UMBALA WEFONTI=\"#808080\">&nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;Kwangekhatsi C/IFONTI></B.>"
+msgstr "<B><FONT COLOR=\"#808080\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kwangekhatsi</FONT></B>"
 
 # User wrote
 ## @name MIME_MSG_X_USER_WROTE
@@ -318,7 +319,7 @@ msgstr "<B><UMBALA WEFONTI=\"#808080\">&nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;Kwangekhat
 # Do not translate "<P>"
 #: 1032
 msgid "In message %s %s wrote:<P>"
-msgstr "Kumlayeto %s%s bhala:<P>"
+msgstr "Kumlayeto %s %s bhala:<P>"
 
 # Msg user wrote
 ## @name MIME_MSG_USER_WROTE
@@ -335,7 +336,7 @@ msgstr "%s wabhala:<P>"
 ## @loc 
 #: 1034
 msgid "(no headers)"
-msgstr "Atikho tihloko"
+msgstr "(atikho tihloko)"
 
 # No Headers
 ## @name MIME_MSG_SHOW_ATTACHMENT_PANE
@@ -355,9 +356,11 @@ msgstr "(Akukalayishwa)"
 ## @name MIME_MSG_PARTIAL_FMT_1
 ## @loc
 # LOCALIZATION NOTE (1037): In the following line, translate only the word, "Truncated!".
+# (review) please check - only translate: Truncated!
 #: 1037
+#, fuzzy
 msgid "<P><CENTER><TABLE BORDER CELLSPACING=5 CELLPADDING=10 WIDTH=\"80%%\"><TR><TD ALIGN=CENTER><FONT SIZE=\"+1\"><B>Truncated!</B></FONT><HR>"
-msgstr "<P>UMKHATSI><KUHLELWA  nekwehlukaniswa kwemngengcema=5selpheda =bubanti=\"80%%\"><TRTDLUNGISA=UMKHATSI><bungako befonti=\" AIGN=UMKHATSI><BUNGAKO BEFONTI=\"+ 1\" ><B> ayikalayishwa</B></ IFONTI ><HR>"
+msgstr "<P><CENTER><TABLE BORDER CELLSPACING=5 CELLPADDING=10 WIDTH=\"80%%\"><TR><TD ALIGN=CENTER><FONT SIZE=\"+1\"><B>Ayikalayishwa</B></FONT><HR>"
 
 # Partial Message Format 2
 ## @name MIME_MSG_PARTIAL_FMT_2
@@ -367,7 +370,7 @@ msgstr "<P>UMKHATSI><KUHLELWA  nekwehlukaniswa kwemngengcema=5selpheda =bubanti=
 # In particular, the "<B>" tag must begin the first section, which must end with the "<A HREF=" tag. Do not translate the html tag,"<P>"
 #: 1038
 msgid "<B>This message exceeded the Maximum Message Size set in Account Settings, so we have only downloaded the first few lines from the mail server.<P>Click <A HREF=\""
-msgstr "<B>Lomlayeto wendlule  lingetulu  kwebungako bemlayeto Eluhlelweni lema-akhawunti,sikhone kulayisha imigca lembalwa kusilulu seliposi.<P> chofota<A HREF=\""
+msgstr "<B>Lomlayeto wendlule lingetulu kwebungako bemlayeto Eluhlelweni lema-akhawunti,sikhone kulayisha imigca lembalwa kusilulu seliposi.<P>Chofota<A HREF=\""
 
 # Partial Message Format 3
 ## @name MIME_MSG_PARTIAL_FMT_3
@@ -377,7 +380,7 @@ msgstr "<B>Lomlayeto wendlule  lingetulu  kwebungako bemlayeto Eluhlelweni lema-
 #: 1039
 msgid "_: 1039\n"
 "\">here</A> to download the rest of the message.</B></TD></TR></TABLE></CENTER>"
-msgstr "\">lapha</A>kulayisha lomlayeto </B></TD<>/TR></LITAFULA></UMKHATSI>"
+msgstr "\">lapha</A> kulayisha lomlayeto.</B></TD></TR></TABLE></CENTER>"
 
 # default attachment name
 ## @name MIME_MSG_DEFAULT_ATTACHMENT_NAME
@@ -393,15 +396,16 @@ msgstr "Sigaba%s"
 ## @loc 
 #: 1041
 msgid "-------- Original Message --------"
-msgstr "------Umlayeto longuwonawona"
+msgstr "-------- Umlayeto longuwonawona --------"
 
 # Partial Message Format2 1
 ## @name MIME_MSG_PARTIAL_FMT2_1
 ## @loc
 # LOCALIZATION NOTE (1037): In the following line, translate only the words, "Not Downloaded".
 #: 1042
+#, fuzzy
 msgid "<P><CENTER><TABLE BORDER CELLSPACING=5 CELLPADDING=10 WIDTH=\"80%%\"><TR><TD ALIGN=CENTER><FONT SIZE=\"+1\"><B>Not Downloaded</B></FONT><HR>"
-msgstr "<P>UMKHATSI><KUHLELWA KWELITAFULA%%\"><TR><TD AIGN=UMKHATSI><BUNGAKO BEFONTI=\"+ 1\" ><B> ayikalayishwa</B></ IFONTI ><HR>"
+msgstr "<P><CENTER><TABLE BORDER CELLSPACING=5 CELLPADDING=10 WIDTH=\"80%%\"><TR><TD ALIGN=CENTER><FONT SIZE=\"+1\"><B>Ayikalayishwa</B></FONT><HR>"
 
 # Partial Message Format2 2
 ## @name MIME_MSG_PARTIAL_FMT2_2
@@ -421,5 +425,5 @@ msgstr "<B>Tihloko talomlayeto kuphela letilayishelwe kusilulu seliposi.<P>chofo
 #: 1044
 msgid "_: 1044\n"
 "\">here</A> to download the rest of the message.</B></TD></TR></TABLE></CENTER>"
-msgstr "\">lapha</A>kulayisha umlayeto losele.</B></TD></TR></LITHEBULA></UMKHATSI>"
+msgstr "\">lapha</A> kulayisha umlayeto losele.</B></TD></TR></TABLE></CENTER>"
 
