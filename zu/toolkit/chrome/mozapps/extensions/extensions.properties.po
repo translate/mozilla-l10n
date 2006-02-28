@@ -46,7 +46,7 @@ msgstr "Ukwaziswa kwakamuva okuvumelanayo okufakwe Ku-%S."
 
 #: updateNoUpdateMessage
 msgid "No updates were found for %S."
-msgstr "Akukho ukwaziswa kwakamuva okufakwe kuku-S."
+msgstr "Akukho ukwaziswa kwakamuva okufakwe kuku-%S."
 
 #: updateErrorMessage
 msgid "An error occurred while trying to find updates for %S."
@@ -66,7 +66,7 @@ msgstr "Ukuthuthukiswa akwemukeleki (khetha ingosi yezinto ezifundwayo kuphela).
 
 #: updateNotManagedMessage
 msgid "Update not supported (install location is not managed by %S)."
-msgstr "Ukwaziswa kwakamuva akwamukeleki (khetha ingosi eqondiswa yi-%S"
+msgstr "Ukwaziswa kwakamuva akwamukeleki (khetha ingosi eqondiswa yi-%S)."
 
 #: restartBeforeEnableTitle
 msgid "Enable Extension"
@@ -88,11 +88,15 @@ msgstr "I-%S izokwenziwa ingasebenzi lapho I-%S isiqalile ukusebenza futhi."
 msgid "Uninstall"
 msgstr "Kukhishiwe ukwaziswa obekufakiwe"
 
+# (pofilter) variables: do not translate: %S, %S
 #: restartBeforeUninstallMessage
+#, fuzzy
 msgid "%S will be uninstalled when %S is restarted."
 msgstr "Kuzokhishwa ukwaziswa obekufakiwe lapho I-%S isiqalile futhi."
 
+# (pofilter) variables: do not translate: %S, %S
 #: restartBeforeInstallMessage
+#, fuzzy
 msgid "%S will be installed when %S is restarted."
 msgstr "Ukwaziswa kuzofakwa ku-%S lapho isiqalile futhi."
 
@@ -114,7 +118,7 @@ msgstr "Uyafuna ukukhipha ukwaziswa obekufakwe ku-%S?"
 
 #: queryUninstallTitle
 msgid "Uninstall %S"
-msgstr "Khipha ukwaziswa obekufakwe ku-%S."
+msgstr "Khipha ukwaziswa obekufakwe ku-%S"
 
 #: installSuccess
 msgid "Install completed successfully"
@@ -142,11 +146,11 @@ msgstr "https://addons.mozilla.org/update/VersionCheck.php?reqVersion=%REQ_VERSI
 
 #: extensions.getMoreExtensionsURL
 msgid "https://addons.mozilla.org/extensions/?application=%APPID%"
-msgstr "https://addons.mozilla.org/izithasiselo zamagama/?indlela yokukusebenzisa=%APPID%"
+msgstr "https://addons.mozilla.org/extensions/?application=%APPID%"
 
 #: extensions.getMoreThemesURL
 msgid "https://addons.mozilla.org/themes/?application=%APPID%"
-msgstr "https://addons.mozilla.org/izihloko/?indlela yokukusebenzisa=%APPID%"
+msgstr "https://addons.mozilla.org/themes/?application=%APPID%"
 
 #: themesTitle
 msgid "Themes"
@@ -164,12 +168,16 @@ msgstr ""
 #: globalItemListExtensions
 msgid "Globally Available Extensions:\n"
 "=============================="
-msgstr "Izithasiselo zamagama ezitholaka kuyo yonke indawo:\n=================="
+msgstr ""
+"Izithasiselo zamagama ezitholaka kuyo yonke indawo:\n"
+"==================================================="
 
 #: globalItemListThemes
 msgid "Globally Available Themes:\n"
 "=========================="
-msgstr "Izihloko ezitholakala kuyo yonke indawo:\n===================="
+msgstr ""
+"Izihloko ezitholakala kuyo yonke indawo:\n"
+"========================================"
 
 #: statusFormatKBKB
 msgid "#1 of #2 KB"
@@ -207,15 +215,21 @@ msgstr "Isithasiselo segama"
 msgid "Incompatible %S"
 msgstr "Akuvumelani ne-%S"
 
+# (pofilter) variables: The groups of %S must appear together, you are missing one from the beginning
 #: incompatibleMsg
+#, fuzzy
 msgid "%S %S could not be installed because it is not compatible with %S %S. (%S %S will only work with %S versions from %S to %S)"
 msgstr "I-%S ayifakwanga ukwaziswa ngoba ayivumelani ne-%S %S. (%S %S izosebenza kuphela ngezinhlelo ze-%S kusukela ku-%S kuye ku-%S)"
 
+# (pofilter) variables: The groups of %S must appear together, you are missing one from the beginning
 #: incompatibleMsgSingleAppVersion
+#, fuzzy
 msgid "%S %S could not be installed because it is not compatible with %S %S. (%S %S will only work with %S %S)"
-msgstr "I-%S ayifakwanga ukwaziswa ngoba ayivumelani ne-%S %S. (I-%2 %2 izosebenza kuphela ne-%S kusukela ku-%S kuye ku-%S)"
+msgstr "I-%S ayifakwanga ukwaziswa ngoba ayivumelani ne-%S %S. (I-%S %S izosebenza kuphela ne-%S kusukela ku-%S kuye ku-%S)"
 
+# (pofilter) variables: do not translate: %S, %S, %S
 #: incompatibleMessageNoApp
+#, fuzzy
 msgid "%S %S could not be installed because it is not compatible with %S."
 msgstr "I-%S ayifakwanga ukwaziswa ngoba ayivumelani ne-%S."
 
@@ -229,7 +243,7 @@ msgstr "lesisihloko"
 
 #: incompatibleExtension
 msgid "Disabled - not compatible with %S %S"
-msgstr "Yenziwe yangakwazi ukusebenza  - ayivumelani ne-%2 %2"
+msgstr "Yenziwe yangakwazi ukusebenza - ayivumelani ne-%S %S"
 
 #: invalidGUIDMessage
 msgid "\"%S\" could not be installed because of an error in its Install Manifest (\"%S\" is not a valid GUID). Please contact the author of this item about the problem."
@@ -239,7 +253,9 @@ msgstr "I\"%S\" ayifakwanga ukwaziswa ngenxa yephutha elisoHlelweni lalo lokufak
 msgid "\"%S\" could not be installed because of an error in its Install Manifest (\"%S\" is not a valid Version String). Please contact the author of this item about the problem."
 msgstr ""
 
+# (review) incorrect
 #: incompatiblePlatformMessage
+#, fuzzy
 msgid "\"%S\" could not be installed because it is not compatible with your %S build type (%S). Please contact the author of this item about the problem."
 msgstr "I\"%S\" ayifakwanga ukwaziswa ngenxa yephutha elisoHlelweni lalo lokufaka ukwaziswa (I-\"%S\" ayilona uHlelo Lokuhlelwa Kwamagama). Siza uthintane nomsunguli waloluhlelo ngalenkinga."
 
@@ -249,7 +265,7 @@ msgstr "Ifayela Elidukile"
 
 #: missingFileMessage
 msgid "%S could not load this item because the file %S was missing."
-msgstr "I-%S ayikwazanga ukufaka lokhu ngoba ifayela %2 belingatholakali."
+msgstr "I-%S ayikwazanga ukufaka lokhu ngoba ifayela %S belingatholakali."
 
 #: missingFileConsoleMessage
 msgid "Failed to install from %S because %S was not provided at the top level of the jar/xpi file."
@@ -257,7 +273,7 @@ msgstr "Ayikwazanga ukufaka ukwaziswa okuku-%S ngoba I-%S ayitholakalanga ezinge
 
 #: malformedMessage
 msgid "%S could not install this item because \"%S\" (provided by the item) is not well-formed or does not exist. Please contact the author about this problem."
-msgstr "I-%S ayikwazanga ukufaka lokhu ngoba ifayela I-\"%S (etholakala kulokhu kwaziswa) ayakhekanga kahle noma ayikho nhlobo. Siza uthintane nomsunguli ngalenkinga."
+msgstr "I-%S ayikwazanga ukufaka lokhu ngoba ifayela I-\"%S\" (etholakala kulokhu kwaziswa) ayakhekanga kahle noma ayikho nhlobo. Siza uthintane nomsunguli ngalenkinga."
 
 #: malformedTitle
 msgid "Malformed File"
@@ -269,15 +285,17 @@ msgstr "Ukubhaliswa kwe-Chrome Ngokomthetho Kuhlulekile"
 
 #: malformedRegistrationMessage
 msgid "%S could not install this item because of a failure in Chrome Registration. Please contact the author about this problem."
-msgstr "I-%2 ayikwazanga ukufaka lokhu ngenxa yokuhluleka ukubhalisa ngokomthetho I-chrome. Siza uthintane nomsunguli walolu hlelo ngalenkinga."
+msgstr "I-%S ayikwazanga ukufaka lokhu ngenxa yokuhluleka ukubhalisa ngokomthetho I-chrome. Siza uthintane nomsunguli walolu hlelo ngalenkinga."
 
 #: invalidFileExtTitle
 msgid "Invalid File Extension"
 msgstr "Isithasiselo segama esingasebenzi"
 
+# (pofilter) variables: do not translate: %S, %S, %S
 #: invalidFileExtMessage
+#, fuzzy
 msgid "\"%S\" could not be installed because this item has an invalid file extension (%S is not a valid file extension for a %S). Please contact the author about this problem."
-msgstr "I-%S ayifakwanga ukwaziswa ngoba lefayela inesithasiselo segama esingasebenzi (I-%S ayisona isithasiselo segama lefayili esisebenzayo). Siza uthintane nomsunguli walo ngalenkinga."
+msgstr "I-\"%S\" ayifakwanga ukwaziswa ngoba lefayela inesithasiselo segama esingasebenzi (I-%S ayisona isithasiselo segama lefayili esisebenzayo). Siza uthintane nomsunguli walo ngalenkinga."
 
 #: missingPackageFilesTitle
 msgid "Missing Installation Files"
@@ -285,7 +303,7 @@ msgstr "Kunamafayela angekho okufaka ukwaziswa"
 
 #: missingPackageFilesMessage
 msgid "\"%S\" could not be installed because it does not contain a valid package (a %S must contain at least one extension or theme). Please contact the author about this problem."
-msgstr "I-%S ayikwazanga ukufaka ukwaziswa ngoba ayinazo izinto ezifanele (I-%S kufanele okungenani ibe nesithasiselo esisodwa noma isihloko) Siza uthintane nomsunguli ngalenkinga."
+msgstr "I-%S ayikwazanga ukufaka ukwaziswa ngoba ayinazo izinto ezifanele (I-%S kufanele okungenani ibe nesithasiselo esisodwa noma isihloko). Siza uthintane nomsunguli ngalenkinga."
 
 #: errorInstallTitle
 msgid "Error"
