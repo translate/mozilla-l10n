@@ -58,7 +58,7 @@ msgstr ""
 ## @loc None
 #: -321
 msgid "There is not enough disk space to download new messages. Try deleting old mail, emptying the Trash folder, and compacting your mail folders, and then try again."
-msgstr "Asanele isikhala esiku-disk sokufaka imiyalezo emisha.  Zama ukucima iposi elidala, khipha imiyalezo engenzuzo ku-folder, bese uphinda uzame."
+msgstr "Asanele isikhala esiku-disk sokufaka imiyalezo emisha. Zama ukucima iposi elidala, khipha imiyalezo engenzuzo ku-folder, bese uphinda uzame."
 
 # Out of memory
 ## @name LOCAL_OUT_OF_MEMORY
@@ -162,9 +162,10 @@ msgstr "Kwamukelwe %ld yemiyalezo ye-%ld"
 # Do not translate "POP3"
 # Do not translate "%S". Place %s in your translation where the name of the server should appear.
 # Do not translate "UIDL"
+# (review) onlu place the translations inside quotes not any other words such as and
 #: 4010
 msgid "The POP3 server (%S) does not support UIDL, which is needed to implement the ``Leave on Server'' and ``Maximum Message Size'' options. To download your mail, turn off these options in the Mail Server panel of Preferences."
-msgstr "Iseva ye-POP3 (%S) ayiyisekeli i-UIDL, edingekayo ukuze kusetshenziswe i-\"Shiya Iseva\" \"neSilinganiso Esimumatha Kakhulu Imiyalezo.\" Ukuze ufake ukwaziswa eposini lakho, vala lezizici kuSeva Yeposi yalokho Okukhethwayo."
+msgstr "Iseva ye-POP3 (%S) ayiyisekeli i-UIDL, edingekayo ukuze kusetshenziswe i-\"Shiya Iseva\" \"neSilinganiso Esimumatha Kakhulu Imiyalezo\". Ukuze ufake ukwaziswa eposini lakho, vala lezizici kuSeva Yeposi yalokho Okukhethwayo."
 
 # Status - the server doesn't support the top command
 ## @name POP3_SERVER_DOES_NOT_SUPPORT_THE_TOP_COMMAND
@@ -173,9 +174,10 @@ msgstr "Iseva ye-POP3 (%S) ayiyisekeli i-UIDL, edingekayo ukuze kusetshenziswe i
 # Do not translate "POP3"
 # Do not translate "%s". Place %s in your translation where the name of the server should appear.
 # Do not translate "TOP"
+# (pofilter) acronyms: acronyms should not be translated: POP3
 #: 4011
 msgid "The POP3 mail server (%s) does not support the TOP command. Without server support for this, we cannot implement the ``Maximum Message Size'' preference.  This option has been disabled, and messages will be downloaded regardless of their size."
-msgstr "Iseva yeposi (5s) ayikusekeli lokho okushiwo yi-TOP. Ngaphandle kokusekelwa iseva kulokhu, ngeke sikwazi ukusebenzisa \"Isilinganiso Esimumatha Kakhulu Imiyalezo.\" Lesi sici senziwe sangasebenza, futhi imiyalezo izofakwa kungakhathaliseki ubukhulu bayo."
+msgstr "Iseva yeposi (%s) ayikusekeli lokho okushiwo yi-TOP. Ngaphandle kokusekelwa iseva kulokhu, ngeke sikwazi ukusebenzisa \"Isilinganiso Esimumatha Kakhulu Imiyalezo\".  Lesi sici senziwe sangasebenza, futhi imiyalezo izofakwa kungakhathaliseki ubukhulu bayo."
 
 # Status - retr failure from the server
 ## @name POP3_RETR_FAILURE
@@ -197,12 +199,13 @@ msgstr "Kube nephutha lapho kutholwa igama lokungena eposini."
 ## @loc None
 #: 4014
 msgid "You have not supplied a username for this server.  Please provide one in the account setup menu and try again."
-msgstr "Awulibhalanga igama lomuntu oyisebenzisayo kuleseva. Siza ulibhale ohlelweni lwe-akhawunti bese uphinda uzame."
+msgstr "Awulibhalanga igama lomuntu oyisebenzisayo kuleseva.  Siza ulibhale ohlelweni lwe-akhawunti bese uphinda uzame."
 
 # Status - list failure
 ## @name POP3_LIST_FAILURE
 ## @loc None
 # LOCALIZATION NOTE(4015): Do not translate the word "POP3" below.
+# (pofilter) acronyms: acronyms should not be translated: LIST
 #: 4015
 msgid "The LIST command did not succeed. Error getting the ID and size of a message."
 msgstr "Okusiwo Ohlwini akuphumelelanga. Kwenzeke iphutha lapho kuphawulwa umyalezo ngokuthi ucinyiwe."
@@ -227,6 +230,7 @@ msgstr "Bhala igama lakho lokungena le-%1$s e-%2$s:"
 ## @loc None
 # LOCALIZATION NOTE(4016): Do not translate the word "%s" below. It will receive the message returned by the server.
 # Do not translate "%.100s" and "%.100s". It will receive the email account name.
+# (review) do not translate: %.100s
 #: 4018
 msgid "Please enter a new password for user %.100s on %.100s:"
 msgstr "Siza ubhale igama elisha lokungena lomuntu osebenzisa i-%. I-100s e-100s:"
@@ -316,7 +320,7 @@ msgstr "Ayikwazi ukuvula ifayela leposi i-%S."
 ## @loc None
 #: 4034
 msgid "Unable to create lock file %S. For movemail to work, it is necessary to create lock files in the mail spool directory. On many systems, this is best accomplished by making the spool directory be mode 01777."
-msgstr "Ayikwazi ukwakha ifayela lokukhiya i-%S.  Ukuze indlela yokugudluza iposi isebenze, kubalulekile ukwakha amafayela okukhiya asesiqondisweni seposi. Ezinhlelweni eziningi, lokhu kufezeka kangcono ngokwenza isiqondiso sibe ku-mode 01777."
+msgstr "Ayikwazi ukwakha ifayela lokukhiya i-%S. Ukuze indlela yokugudluza iposi isebenze, kubalulekile ukwakha amafayela okukhiya asesiqondisweni seposi. Ezinhlelweni eziningi, lokhu kufezeka kangcono ngokwenza isiqondiso sibe ku-mode 01777."
 
 ## @name MOVEMAIL_CANT_DELETE_LOCK
 ## @loc None
@@ -343,7 +347,7 @@ msgid "There was an error downloading the following message:   \n"
 "From: %S\n"
 "   Subject: %S\n"
 " This message may contain a virus or there is not enough disk space. Skip this message?"
-msgstr "Kube nephutha lapho kufakwa umyalezo olandelayo: \nKusuka: %S/n Isihloko: %S\n Kungenzeka ukuthi lomyalezo une-virus noma isikhala asanele ku-disk.  Ngeqe lomyalezo?"
+msgstr "Kube nephutha lapho kufakwa umyalezo olandelayo:   \nKusuka: %S\n   Isihloko: %S\n Kungenzeka ukuthi lomyalezo une-virus noma isikhala asanele ku-disk.  Ngeqe lomyalezo?"
 
 ## @name NS_ERROR_COULD_NOT_CONNECT_VIA_TLS
 ## @loc None
