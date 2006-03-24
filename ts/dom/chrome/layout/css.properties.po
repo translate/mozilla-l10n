@@ -129,12 +129,12 @@ msgstr "URI leyi languteriweke eka milawu ya @import kambe ku kumekile '%1$S'."
 msgid "Found unexpected '%1$S' within @import."
 msgstr "Ku kumiwile leswi nga languteriwangiki swa '%1$S' eka @import."
 
-# (review) do not translate: @media @-moz-document
+# (review) do not translate: @-moz-document
 #: PEGroupRuleEOF
 msgid "end of @media or @-moz-document rule"
 msgstr "emakumu ka @media kumbe eka nawu wa dokhumente ya @-moz-"
 
-# (review) do not translate: url() url-prefix() domain() @-moz-document
+# (pofilter) functions: checks to see that function names are not translated: url() url-prefix() domain() @-moz-document
 #: PEMozDocRuleBadFunc
 msgid "Expected url(), url-prefix(), or domain() in @-moz-document rule but found '%1$S'."
 msgstr "URL0 leyi languteriweke, xirhangi xa url0, kumbe ndhawu0 eka dokhumente ya milawu @-moz- kambe ku kumekile '%1$S'."
@@ -208,6 +208,7 @@ msgid "element type"
 msgstr "muxaka wa elemente"
 
 # (review) missing: '*'
+# (pofilter) singlequoting: checks whether singlequoting is consistent between the two strings
 #: PETypeSelNotType
 msgid "Expected element name or '*' but found '%1$S'."
 msgstr "Ku languteriwile vito ra elemente kambe ku kumekile '%1$S'."
@@ -305,6 +306,7 @@ msgid "Malformed simple selector as negation pseudo-class argument '%1$S'."
 msgstr "Xihlawuri xo olova lexi aleriweke xa mbulavulo wa pseudo-tlilasi xa '%1$S'."
 
 # (pofilter) variables: do not translate: %1$S
+# (pofilter) singlequoting: checks whether singlequoting is consistent between the two strings
 #: PENegationNoClose
 #, fuzzy
 msgid "Missing closing ')' in negation pseudo-class '%1$S'."
@@ -314,7 +316,7 @@ msgstr "')' Ku kayivela ka ku pfala loku aleriweke wa pseudo-tlilasi."
 msgid "Missing argument in negation pseudo-class '%1$S'."
 msgstr "Ku kayivela ka mbulavulo lowu aleriweke wa pseudo-tlilasi '%1$S'."
 
-# (review) do not translate - :lang
+# (review) do not split: ':' and 'lang' ie they must appear as ':lang'
 #: PELangArgEOF
 msgid "argument to :lang selector"
 msgstr "mbulavulo wa: xihlawuri xa lang"
@@ -324,6 +326,7 @@ msgid "Expected identifier for lang pseudo-class parameter but found '%1$S'."
 msgstr "Ku languteriwile pharamitara ya lang pseudo-tlilasi kambe ku kumekile '%1$S'."
 
 # (pofilter) brackets: translation is missing ')'
+# (pofilter) singlequoting: checks whether singlequoting is consistent between the two strings
 #: PELangNoClose
 msgid "Missing closing ')' in lang pseudo-class '%1$S'."
 msgstr "Ku kayivela ku pfala eka pseudo-tlilasi ya lang ya '%1$S'."
@@ -337,6 +340,7 @@ msgid "selector"
 msgstr "xihlawuri"
 
 # (pofilter) brackets: translation is missing '{'
+# (pofilter) singlequoting: checks whether singlequoting is consistent between the two strings
 #: PEBadDeclBlockStart
 msgid "Expected '{' to begin declaration block but found '%1$S'."
 msgstr "Ku languteriwile ku sungula buloko ya leswi boheweke kambe ku kumekile '%1$S'."
@@ -375,6 +379,7 @@ msgid "hue"
 msgstr "mavala"
 
 # (review) missing: ','
+# (pofilter) singlequoting: checks whether singlequoting is consistent between the two strings
 #: PEExpectedComma
 msgid "Expected ',' but found '%1$S'."
 msgstr "Languteriwile kambe ku kumekile '%1$S'."
@@ -396,6 +401,7 @@ msgid "Expected a number but found '%1$S'."
 msgstr "Ku languteriwile nomboro kambe ku kumekile '%1$S'."
 
 # (pofilter) brackets: translation is missing ')'
+# (pofilter) singlequoting: checks whether singlequoting is consistent between the two strings
 #: PEExpectedCloseParen
 msgid "Expected ')' but found '%1$S'."
 msgstr "Ku languteriwile kambe ku kumekile '%1$S'."
