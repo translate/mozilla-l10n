@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 14:29+0200\n"
+"POT-Creation-Date: 2006-02-01 23:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,6 +120,27 @@ msgstr "Web Page, complete"
 msgid "Web Page, HTML only"
 msgstr "Web Page, HTML only"
 
+#: bookmarkAllTabs_label
+msgid "Bookmark All Tabs..."
+msgstr ""
+
+#: bookmarkAllTabs_accesskey
+msgid "T"
+msgstr ""
+
+#: bookmarkCurTab_label
+msgid "Bookmark This Tab..."
+msgstr ""
+
+#: bookmarkCurTab_accesskey
+msgid "B"
+msgstr ""
+
+# bookmark dialog strings
+#: bookmarkAllTabsDefault
+msgid "[Folder Name]"
+msgstr ""
+
 # LOCALIZATION NOTE (filesFolder):
 #    This is the name of the folder that is created parallel to a HTML file 
 #    when it is saved "With Images". The %S section is replaced with the
@@ -185,8 +206,16 @@ msgstr ""
 msgid ""
 "_: xpinstallWarningButton\n"
 "Edit Options..."
+msgstr "Edit Options..."
+
+# Accessibility Note:
+# Be sure you do not choose an accesskey that is used elsewhere in the active context (e.g. main menu bar, submenu of the warning popup button)
+# See http://www.mozilla.org/access/keyboard/accesskey for details
+#: xpinstallWarningButton.accesskey
+msgid ""
+"_: xpinstallWarningButton.accesskey\n"
+"O"
 msgstr ""
-"Edit Options..."
 
 #: xpinstallDisabledWarning
 msgid ""
@@ -200,8 +229,13 @@ msgstr ""
 msgid ""
 "_: xpinstallDisabledWarningButton\n"
 "Edit Options..."
+msgstr "Edit Options..."
+
+#: xpinstallDisabledWarningButton.accesskey
+msgid ""
+"_: xpinstallDisabledWarningButton.accesskey\n"
+"O"
 msgstr ""
-"Edit Options..."
 
 #: themeWarning
 msgid ""
@@ -213,8 +247,7 @@ msgstr ""
 msgid ""
 "_: themeWarningButton\n"
 "Edit Options..."
-msgstr ""
-"Edit Options..."
+msgstr "Edit Options..."
 
 #: popupWarning
 msgid "%S prevented this site from opening a popup window."
@@ -228,9 +261,19 @@ msgstr "%S prevented this site from opening %S popup windows."
 msgid "Options"
 msgstr "Options"
 
+#: popupWarningButton.accesskey
+msgid ""
+"_: popupWarningButton.accesskey\n"
+"O"
+msgstr ""
+
 #: popupWarningButtonUnix
 msgid "Preferences"
 msgstr "Preferences"
+
+#: popupWarningButtonUnix.accesskey
+msgid "P"
+msgstr ""
 
 #: popupAllow
 msgid "Allow popups for %S"
@@ -251,18 +294,6 @@ msgstr "Don't show info message when popups are blocked"
 #: popupShowPopupPrefix
 msgid "Show '%S'"
 msgstr "Show '%S'"
-
-#: livemarkHasLivemarksTooltip
-msgid "Add Live Bookmark for this page's feed"
-msgstr "Add Live Bookmark for this page's feed"
-
-#: livemarkNoLivemarksTooltip
-msgid "Page has no feeds for Live Bookmark"
-msgstr "Page has no feeds for Live Bookmark"
-
-#: livemarkSubscribeTo
-msgid "Subscribe to '%S'..."
-msgstr "Subscribe to '%S'..."
 
 #: saveFormInformationMessage
 msgid ""
@@ -289,33 +320,109 @@ msgstr "Additional plugins are required to display all the media on this page."
 msgid "Install Missing Plugins..."
 msgstr "Install Missing Plugins..."
 
+#: missingpluginsMessage.button.accesskey
+msgid "I"
+msgstr ""
+
 # Sanitize
 #: sanitizeWithPromptLabel
-msgid "Sanitize %S..."
-msgstr "Sanitize %S..."
+msgid "Clear Private Data..."
+msgstr ""
 
 #: sanitizeButton
-msgid "Sanitize Now"
-msgstr "Sanitize Now"
+msgid "Clear Private Data Now"
+msgstr ""
 
 # Check for Updates
-#: updates_checkForUpdates
-msgid "Check for Updates..."
-msgstr "Check for Updates..."
+#: updatesItem_default
+msgid ""
+"_: updatesItem_default\n"
+"Check for Updates..."
+msgstr ""
 
-#: updates_downloadingUpdates
+#: updatesItem_defaultFallback
+msgid ""
+"_: updatesItem_defaultFallback\n"
+"Check for Updates..."
+msgstr ""
+
+#: updatesItem_downloading
 msgid "Downloading %S..."
 msgstr "Downloading %S..."
 
-#: updates_downloadingUpdatesFallback
+#: updatesItem_downloadingFallback
 msgid "Downloading Update..."
 msgstr "Downloading Update..."
 
-#: updates_resumeDownloading
+#: updatesItem_resume
 msgid "Resume Downloading %S..."
 msgstr "Resume Downloading %S..."
 
-#: updates_resumeDownloadingFallback
+#: updatesItem_resumeFallback
 msgid "Resume Downloading Update..."
 msgstr "Resume Downloading Update..."
 
+#: updatesItem_pending
+msgid ""
+"_: updatesItem_pending\n"
+"Apply Downloaded Update Now..."
+msgstr ""
+
+#: updatesItem_pendingFallback
+msgid ""
+"_: updatesItem_pendingFallback\n"
+"Apply Downloaded Update Now..."
+msgstr ""
+
+# RSS Pretty Print
+#: feedTitle
+msgid "Feed: %S"
+msgstr ""
+
+#: feedDescription
+msgid "This feed contains %S articles."
+msgstr ""
+
+#: feedAddLiveBookmarkLink
+msgid ""
+"_: feedAddLiveBookmarkLink\n"
+"Add Live Bookmark..."
+msgstr ""
+
+#: feedLiveBookmarkInfoText
+msgid "What are Live Bookmarks?"
+msgstr ""
+
+#: feedShowFeed
+msgid "Add '%S' as Live Bookmark..."
+msgstr ""
+
+#: feedHasFeeds
+msgid ""
+"_: feedHasFeeds\n"
+"Add Live Bookmark..."
+msgstr ""
+
+#: feedNoFeeds
+msgid "Page has no feeds"
+msgstr ""
+
+#~ msgid "Add Live Bookmark for this page's feed"
+#~ msgstr "Add Live Bookmark for this page's feed"
+
+#~ msgid "Page has no feeds for Live Bookmark"
+#~ msgstr "Page has no feeds for Live Bookmark"
+
+#~ msgid "Subscribe to '%S'..."
+#~ msgstr "Subscribe to '%S'..."
+
+# Sanitize
+#~ msgid "Sanitize %S..."
+#~ msgstr "Sanitize %S..."
+
+#~ msgid "Sanitize Now"
+#~ msgstr "Sanitize Now"
+
+# Check for Updates
+#~ msgid "Check for Updates..."
+#~ msgstr "Check for Updates..."
