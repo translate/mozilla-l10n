@@ -64,10 +64,19 @@ msgstr "Onderteken deur %S"
 msgid "Please enter the master password for the %S."
 msgstr "Tik die meesterwagwoord vir die %S in."
 
+# the following strings have special requirements:
+# they must fit in a 32 or 64 byte buffer after being translated
+# to UTF8.  Note to translator. It's not easy for you to figure
+# whether the escaped unicode string you produce will fit in
+# the space allocated.
+#
+# 64 bytes long after conversion to UTF8
 #: RootCertModuleName
 msgid "Builtin Roots Module"
 msgstr "Ingeboude wortelmodule"
 
+#
+# 32 bytes long after conversion to UTF8
 #: ManufacturerID
 msgid "Mozilla.org"
 msgstr "Mozilla.org"
@@ -77,14 +86,14 @@ msgstr "Mozilla.org"
 # 32  bytes long after conversion to UTF8
 #: LibraryDescription
 msgid "PSM Internal Crypto Services"
-msgstr ""
+msgstr "PSB- interne kriptografiedienste"
 
 # #-#-#-#-#  pipnss.properties.po (pipnss.properties)  #-#-#-#-#
 #
 # 32 bytes long after conversion to UTF8
 #: TokenDescription
 msgid "Generic Crypto Services"
-msgstr ""
+msgstr "Generiese kriptografiedienste"
 
 #
 # 32 bytes long after conversion to UTF8
@@ -93,33 +102,34 @@ msgid ""
 "_: PrivateTokenDescription\n"
 "Software Security Device"
 msgstr ""
+"Sagtewaresekuriteitstoestel"
 
 # #-#-#-#-#  pipnss.properties.po (pipnss.properties)  #-#-#-#-#
 #
 # 64 bytes long after conversion to UTF8
 #: SlotDescription
 msgid "PSM Internal Cryptographic Services"
-msgstr ""
+msgstr "PSB- interne FIPS-140-1-kriptografiedienste"
 
 # #-#-#-#-#  pipnss.properties.po (pipnss.properties)  #-#-#-#-#
 #
 # 64 bytes long after conversion to UTF8
 #: PrivateSlotDescription
 msgid "PSM Private Keys"
-msgstr ""
+msgstr "PSB- private sleutels"
 
 # #-#-#-#-#  pipnss.properties.po (pipnss.properties)  #-#-#-#-#
 #
 # 64
 #: FipsSlotDescription
 msgid "PSM Internal FIPS-140-1 Cryptographic Services"
-msgstr ""
+msgstr "PSB- interne FIPS-140-1-kriptografiedienste"
 
 # #-#-#-#-#  pipnss.properties.po (pipnss.properties)  #-#-#-#-#
 # 64
 #: FipsPrivateSlotDescription
 msgid "PSM FIPS-140-1 User Private Key Services"
-msgstr ""
+msgstr "PSB-FIPS-140-1-gebruikerprivatesleutel-dienste"
 
 # 32
 #: InternalToken
@@ -127,7 +137,9 @@ msgid ""
 "_: InternalToken\n"
 "Software Security Device"
 msgstr ""
+"Sagtewaresekuriteitstoestel"
 
+# End of size restriction.
 #: VerifySSLClient
 msgid "SSL Client Certificate"
 msgstr "SSL-kliëntsertifikaat"
@@ -142,7 +154,7 @@ msgstr "SSL-bediener met Step-up"
 
 #: VerifySSLCA
 msgid "SSL Certificate Authority"
-msgstr "SSL-sertifiseergesag"
+msgstr "SSL-sertifikaatowerheid"
 
 #: VerifyEmailSigner
 msgid "Email Signer Certificate"
@@ -157,22 +169,25 @@ msgid ""
 "_: VerifyProtectObjSign\n"
 "Protected Object Signer"
 msgstr ""
+"Beskermde objekondertekenaar"
 
 #: VerifyObjSign
 msgid ""
 "_: VerifyObjSign\n"
 "Object Signer"
 msgstr ""
+"Objekondertekenaar"
 
 #: VerifyUserImport
 msgid "User Import Cert"
-msgstr "Gebruikerbinnevoeringsertifikaat"
+msgstr "Gebruikerinvoersertifikaat"
 
 #: VerifyCAVerifier
 msgid ""
 "_: VerifyCAVerifier\n"
 "CA Verifier"
 msgstr ""
+"SO-stawer"
 
 #: VerifyStatusResponder
 msgid "Status Responder Certificate"
@@ -180,7 +195,7 @@ msgstr "Statusterugskrywer-sertifikaat"
 
 #: VerifyAnyCA
 msgid "Any Certificate Authority"
-msgstr "Enige sertifiseergesag"
+msgstr "Enige sertifikaatowerheid"
 
 #: HighGrade
 msgid "2048 (High Grade)"
@@ -198,6 +213,7 @@ msgstr "%1$s se %2$s-ID"
 msgid "%1$s's %2$s ID #%3$d"
 msgstr "%1$s se %2$s-ID #%3$d"
 
+# These are the strings set for the ASN1 objects in a certificate.
 #: CertDumpCertificate
 msgid "Certificate"
 msgstr "Sertifikaat"
@@ -220,7 +236,7 @@ msgstr "Weergawe 3"
 
 #: CertDumpSerialNo
 msgid "Serial Number"
-msgstr "Serienommer"
+msgstr "Reeksnommer"
 
 #: CertDumpOID
 msgid "Object Identifier"
@@ -240,15 +256,15 @@ msgstr "PKCS #1 SHA-1 met RSA-enkripsie"
 
 #: CertDumpSHA256WithRSA
 msgid "PKCS #1 SHA-256 With RSA Encryption"
-msgstr "PKCS #1 SHA-256 Met RSA Enkripsie"
+msgstr "PKCS #1 SHA-256 met RSA-enkripsie"
 
 #: CertDumpSHA384WithRSA
 msgid "PKCS #1 SHA-384 With RSA Encryption"
-msgstr "PKCS #1 SHA-384 Met RSA Enkripsie"
+msgstr "PKCS #1 SHA-384 met RSA-enkripsie"
 
 #: CertDumpSHA512WithRSA
 msgid "PKCS #1 SHA-512 With RSA Encryption"
-msgstr "PKCS #1 SHA-512 Met RSA Enkripsie"
+msgstr "PKCS #1 SHA-512 met RSA-enkripsie"
 
 #: CertDumpDefOID
 msgid "Object Identifier (%S)"
@@ -276,7 +292,7 @@ msgstr "Relatiewe onderskeidende naam"
 
 #: CertDumpATV
 msgid "Attribute Type and Value"
-msgstr "Attribuutwaarde en -soort"
+msgstr "Attribuutsoort en -waarde"
 
 #: CertDumpAVACountry
 msgid "C"
@@ -332,7 +348,7 @@ msgstr "Nie ná"
 
 #: CertDumpSPKI
 msgid "Subject Public Key Info"
-msgstr "Besonderhede oor onderwerp se openbare sleutel"
+msgstr "Besonderhede oor onderwerp se publieke sleutel"
 
 #: CertDumpSPKIAlg
 msgid "Subject Public Key Algorithm"
@@ -364,7 +380,7 @@ msgstr "Onderwerp se unieke ID"
 
 #: CertDumpExtensions
 msgid "Extensions"
-msgstr "Verlengings"
+msgstr "Uitbreidings"
 
 #: CertDumpCertType
 msgid "Netscape Certificate Type"
@@ -372,51 +388,51 @@ msgstr "Netscape-sertifikaatsoort"
 
 #: CertDumpNSCertExtBaseUrl
 msgid "Netscape Certificate Extension Base URL"
-msgstr "Netscape Sertifikaat Uitbreiding Basis URL"
+msgstr "Netscape-sertifikaatuitbreiding-basis-URL"
 
 #: CertDumpNSCertExtRevocationUrl
 msgid "Netscape Certificate Revocation URL"
-msgstr "Netscape Sertifikaat Herroeping URL"
+msgstr "Netscape-sertifikaatopheffing-URL"
 
 #: CertDumpNSCertExtCARevocationUrl
 msgid "Netscape Certificate Authority Revocation URL"
-msgstr "Netscape Sertifikaat Magtiging Herroeping URL"
+msgstr "Netscape-sertifikaatowerheid-opheffing-URL"
 
 #: CertDumpNSCertExtCertRenewalUrl
 msgid "Netscape Certificate Renewal URL"
-msgstr "Netscape Sertifikaat Hernuwing URL"
+msgstr "Netscape-sertifikaat-hernuwing-URL"
 
 #: CertDumpNSCertExtCAPolicyUrl
 msgid "Netscape Certificate Authority Policy URL"
-msgstr "Netscape Sertifikaat Magtigingsbeleid URL"
+msgstr "Netscape-sertifikaatowerheid-beleid-URL"
 
 #: CertDumpNSCertExtSslServerName
 msgid "Netscape Certificate SSL Server Name"
-msgstr "Netscape Sertifikaat SSL Bedienernaam"
+msgstr "Netscape-sertifikaat-SSL-bedienernaam"
 
 #: CertDumpNSCertExtComment
 msgid "Netscape Certificate Comment"
-msgstr "Netscape Sertifikaat Opmerking"
+msgstr "Netscape-sertifikaatopmerking"
 
 #: CertDumpNSCertExtLostPasswordUrl
 msgid "Netscape Lost Password URL"
-msgstr "Netscape Verlore Wagwoord URL"
+msgstr "Netscape-verlorewagwoord-URL"
 
 #: CertDumpNSCertExtCertRenewalTime
 msgid "NetscapeCertificate Renewal Time"
-msgstr "Netscape Sertifikaat Hernuwingstyd"
+msgstr "Netscape-sertifikaathernuwingstyd"
 
 #: CertDumpNetscapeAolScreenname
 msgid "AOL Screenname"
-msgstr "AOL Skermnaam"
+msgstr "AOL-skermnaam"
 
 #: CertDumpSubjectDirectoryAttr
 msgid "Certificate Subject Directory Attributes"
-msgstr "Sertifikaat Onderwerp Gidseienskappe"
+msgstr "Sertifikaat-onderwerpgids-attribute"
 
 #: CertDumpSubjectKeyID
 msgid "Certificate Subject Key ID"
-msgstr "Sertifikaat Onderwerp Sleutel-ID"
+msgstr "Sertifikaat-onderwerpsleutel-ID"
 
 #: CertDumpKeyUsage
 msgid "Certificate Key Usage"
@@ -424,39 +440,39 @@ msgstr "Sertifikaatsleutelgebruik"
 
 #: CertDumpSubjectAltName
 msgid "Certificate Subject Alt Name"
-msgstr "Sertifikaat Onderwerp Alt Naam"
+msgstr "Sertifikaat-onderwerp se alt naam"
 
 #: CertDumpIssuerAltName
 msgid "Certificate Issuer Alt Name"
-msgstr "Sertifikaat Uitreiker Alt Naam"
+msgstr "Sertifikaat-uitreiker se alt naam"
 
 #: CertDumpBasicConstraints
 msgid "Certificate Basic Constraints"
-msgstr "Sertifikaat Basiese Beperkings"
+msgstr "Sertifikaat- basiese beperkings"
 
 #: CertDumpNameConstraints
 msgid "Certificate Name Constraints"
-msgstr "Sertifikaat Naam Beperkings"
+msgstr "Sertifikaatnaam-beperkings"
 
 #: CertDumpCrlDistPoints
 msgid "CRL Distribution Points"
-msgstr "CRL Verspreidingspunte"
+msgstr "SOL-verspreidingspunte"
 
 #: CertDumpCertPolicies
 msgid "Certificate Policies"
-msgstr "Sertifikaat Beleide"
+msgstr "Sertifikaat-beleide"
 
 #: CertDumpPolicyMappings
 msgid "Certificate Policy Mappings"
-msgstr "Sertifikaat Beleid Kartering"
+msgstr "Sertifikaatbeleid-kartering"
 
 #: CertDumpPolicyConstraints
 msgid "Certificate Policy Constraints"
-msgstr "Sertifikaat Beleid Beperkings"
+msgstr "Sertifikaatbeleid-beperkings"
 
 #: CertDumpAuthKeyID
 msgid "Certificate Authority Key Identifier"
-msgstr "Sertifiseergesag se sleutelidentifiseerder"
+msgstr "Sertifikaatowerheid se sleutelidentifiseerder"
 
 #: CertDumpExtKeyUsage
 msgid "Extended Key Usage"
@@ -464,19 +480,19 @@ msgstr "Uitgebreide sleutelgebruik"
 
 #: CertDumpAuthInfoAccess
 msgid "Authority Information Access"
-msgstr "Magtigingsinligting toegang"
+msgstr "Owerheidinligting-toegang"
 
 #: CertDumpAnsiX9DsaSignature
 msgid "ANSI X9.57 DSA Signature"
-msgstr "ANSI X9.57 DSA Handtekening"
+msgstr "ANSI X9.57 DSA-handtekening"
 
 #: CertDumpAnsiX9DsaSignatureWithSha1
 msgid "ANSI X9.57 DSA Signature with SHA1 Digest"
-msgstr "ANSI X9.57 DSA Handtekening met SHA1 Digest"
+msgstr "ANSI X9.57 DSA-handtekening met SHA1 Digest"
 
 #: CertDumpAnsiX962ECDsaSignatureWithSha1
 msgid "ANSI X9.62 ECDSA Signature with SHA1"
-msgstr "ANSI X9.62 ECDSA Handtekening met SHA1"
+msgstr "ANSI X9.62 ECDSA-handtekening met SHA1"
 
 # #-#-#-#-#  pipnss.properties.po (pipnss.properties)  #-#-#-#-#
 # #-#-#-#-#  search-attributes.properties.po (PACKAGE VERSION)  #-#-#-#-#
@@ -487,7 +503,7 @@ msgstr "E-pos"
 
 #: CertDumpEmailCA
 msgid "Email Certificate Authority"
-msgstr "E-possertifiseergesag"
+msgstr "E-possertifikaatowerheid"
 
 #: CertDumpKUSign
 msgid "Signing"
@@ -515,7 +531,7 @@ msgstr "Sertifikaatondertekenaar"
 
 #: CertDumpKUCRLSigner
 msgid "CRL Signer"
-msgstr "CRL-ondertekenaar"
+msgstr "SOL-ondertekenaar"
 
 #: CertDumpCritical
 msgid "Critical"
@@ -535,7 +551,7 @@ msgstr "Sertifikaathandtekening-waarde"
 
 #: CertDumpExtensionFailure
 msgid "Error: Unable to process extension"
-msgstr "Probleem: Kon nie verlenging verwerk nie"
+msgstr "Probleem: Kon nie uitbreiding verwerk nie"
 
 #: VerifySSLClient_p
 msgid "Client"
@@ -547,11 +563,11 @@ msgstr "Bediener"
 
 #: VerifySSLStepUp_p
 msgid "Step-up"
-msgstr ""
+msgstr "Step-up"
 
 #: VerifySSLCA_p
 msgid "SSL CA"
-msgstr "SSL-sertifiseergesag"
+msgstr "SSL-SO"
 
 #: VerifyEmailSigner_p
 msgid "Sign"
@@ -566,22 +582,25 @@ msgid ""
 "_: VerifyProtectObjSign_p\n"
 "Protected Object Signer"
 msgstr ""
+"Beskermde objekondertekenaar"
 
 #: VerifyObjSign_p
 msgid ""
 "_: VerifyObjSign_p\n"
 "Object Signer"
 msgstr ""
+"Objekondertekenaar"
 
 #: VerifyUserImport_p
 msgid "User Import"
-msgstr "Gebruikerbinnevoering"
+msgstr "Gebruikerinvoer"
 
 #: VerifyCAVerifier_p
 msgid ""
 "_: VerifyCAVerifier_p\n"
 "CA Verifier"
 msgstr ""
+"SO-stawer"
 
 #: VerifyStatusResponder_p
 msgid "Status Responder"
@@ -589,7 +608,7 @@ msgstr "Statusterugskrywer"
 
 #: VerifyAnyCA_p
 msgid "CA"
-msgstr "Sertifiseergesag"
+msgstr "SO"
 
 # #-#-#-#-#  pipnss.properties.po (pipnss.properties)  #-#-#-#-#
 # #-#-#-#-#  printdialog.properties.po (PACKAGE VERSION)  #-#-#-#-#
@@ -636,18 +655,18 @@ msgstr "onwaar"
 
 #: PK11BadPassword
 msgid "The password entered was incorrect."
-msgstr "Die wagwoord wat ingetik is."
+msgstr "Die wagwoord wat ingetik is, is verkeerd."
 
 #: SuccessfulP12Backup
 msgid "Successfully backed up your security certificate(s) and private key(s)."
 msgstr ""
-"Suksesvol dekkopieë van jou sekuriteitsertifikaat(e) en private sleutel(s) "
+"Suksesvol dekkopieë van u sekuriteitsertifikaat(e) en private sleutel(s) "
 "gemaak."
 
 #: SuccessfulP12Restore
 msgid "Successfully restored your security certificate(s) and private key(s)."
 msgstr ""
-"Suksesvol terugkopieë van jou sekuriteitsertifikaat(e) en private sleutel(s) "
+"Suksesvol terugkopieë van u sekuriteitsertifikaat(e) en private sleutel(s) "
 "gemaak."
 
 #: PKCS12PasswordInvalid
@@ -656,10 +675,6 @@ msgid ""
 "Could not decode PKCS #12 file.  Perhaps the password you entered was "
 "incorrect?"
 msgstr ""
-"#-#-#-#-#  pipnss.properties.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Kon nie PKCS #12-lêer dekodeer nie.  Dalk is die wagwoord wat ingetik is, "
-"nie korrek nie?\n"
-"#-#-#-#-#  pipnss.properties.po (pipnss.properties)  #-#-#-#-#\n"
 "Kon nie PKCS #12-lêer dekodeer nie.  Dalk is die wagwoord wat ingetik is, "
 "nie korrek nie."
 
@@ -669,19 +684,19 @@ msgid ""
 "corrupted, or the password you entered was incorrect."
 msgstr ""
 "Kon nie die lêer dekodeer nie.  Dit is óf nie in PKCS #12-formaat nie, óf "
-"gekorrupteer, óf die wagwoord wat ingetik is, is nie korrek nie."
+"gekorrumpeer, óf die wagwoord wat ingetik is, is nie korrek nie."
 
 #: PKCS12UnknownErrRestore
 msgid "Failed to restore the PKCS #12 file for unknown reasons."
-msgstr "Kon nie die PKCS #12-lêer terugkopieer nie"
+msgstr "Kon om onbekende redes nie die PKCS #12-lêer terugkopieer nie"
 
 #: PKCS12UnknownErrBackup
 msgid "Failed to create the PKCS #12 backup file for unknown reasons."
-msgstr "Kon nie die PKCS #12-deklêer skep nie"
+msgstr "Kon om onbekende redes nie die PKCS #12-deklêer skep nie"
 
 #: PKCS12UnknownErr
 msgid "The PKCS #12 operation failed for unknown reasons."
-msgstr "Kon nie die PKCS #12-operasie voltooi nie"
+msgstr "Kon om onbekende redes nie die PKCS #12-operasie voltooi nie."
 
 #: PKCS12InfoNoSmartcardBackup
 msgid ""
@@ -698,7 +713,7 @@ msgstr ""
 
 #: AddModulePrompt
 msgid "Are you sure you want to install this security module?"
-msgstr "Is jy seker jy wil hierdie sekuriteitsmodule installeer?"
+msgstr "Is u seker u wil hierdie sekuriteitsmodule installeer?"
 
 #: AddModuleName
 msgid "Module Name: %S"
@@ -726,7 +741,7 @@ msgstr "Ongeldige modulenaam."
 
 #: DelModuleWarning
 msgid "Are you sure you want to delete this security module?"
-msgstr "Is jy seker jy wil hierdie sekuriteitsmodule skrap?"
+msgstr "Is u seker u wil hierdie sekuriteitsmodule skrap?"
 
 #: DelModuleError
 msgid "Unable to delete module"
@@ -745,7 +760,7 @@ msgid ""
 "You should make a password-protected backup copy of your new security "
 "certificate and its associated private key."
 msgstr ""
-"Jy behoort eintlik 'n wagwoordbeskermde dekkopieë van jou nuwe "
+"U behoort eintlik 'n wagwoordbeskermde dekkopieë van u nuwe "
 "sekuriteitsertifikaat en sy geassosieerde private sleutel te maak."
 
 #: ForcedBackup2
@@ -754,17 +769,14 @@ msgid ""
 "security password, or by experiencing file corruption, you can restore this "
 "private key and certificate from this backup copy."
 msgstr ""
-"As jy ooit toegang tot jou private sleutel verloor omdat jy jou persoonlike "
-"sekuriteitswagwoord vergeet het of van jou lêers korrup geraak het, kan jy "
-"hierdie private sleutel en sertifikaat van die dekkopieë terugkopieer."
+"As u ooit toegang tot u private sleutel verloor omdat u u persoonlike sekuriteitswagwoord vergeet het of van u lêers korrup geraak het, kan u hierdie private sleutel en sertifikaat van die dekkopie terugkopieer."
 
 #: ForcedBackup3
 msgid ""
 "To make a copy, click OK. If possible, you should save your backup copy on a "
 "floppy disk that you keep in a safe location."
 msgstr ""
-"Om 'n dekkopieë te maak, klik OK. Indien moontlik moet jy jou dekkopieë op "
-"'n slapskyf op 'n veilige plek bewaar."
+"Om 'n dekkopieë te maak, kliek OK. Indien moontlik moet u u dekkopie op 'n slapskyf op 'n veilige plek bêre."
 
 #: UnknownCertIssuer
 msgid "(Unknown Issuer)"
@@ -780,11 +792,11 @@ msgstr "%S = %S"
 
 #: SSLDisabled
 msgid "You cannot connect to %S because SSL is disabled."
-msgstr "Jy kan nie na %S koppel nie"
+msgstr "U kan nie aan %S koppel nie omdat SSL gedeaktiveer is."
 
 #: SSL2Disabled
 msgid "You cannot connect to %S because SSL version 2 is disabled."
-msgstr "Jy kan nie na %S koppel nie"
+msgstr "U kan nie aan %S koppel nie omdat SSL weergawe 2 gedeaktiveer is."
 
 #: SSLNoMatchingCiphers
 msgid ""
@@ -799,28 +811,28 @@ msgid ""
 "Could not establish an encrypted connection with %S because your certificate "
 "has been revoked."
 msgstr ""
-"Kon nie geënkripteerd met %S koppel nie omdat jou sertifikaat opgehef is."
+"Kon nie geënkripteerd met %S koppel nie omdat u sertifikaat opgehef is."
 
 #: UsersCertExpired
 msgid ""
 "Could not establish an encrypted connection with %S because your certificate "
 "is expired."
 msgstr ""
-"Kon nie geënkripteerd met %S koppel nie omdat jou sertifikaat verval het."
+"Kon nie geënkripteerd met %S koppel nie omdat u sertifikaat verval het."
 
 #: UsersCertRejected
 msgid ""
 "Could not establish an encrypted connection because your certificate was "
 "rejected by %S. Error Code: %S."
 msgstr ""
-"Kon nie geënkripteerd koppel nie omdat %S jou sertifikaat verwerp het. "
+"Kon nie geënkripteerd koppel nie omdat %S u sertifikaat verwerp het. "
 "Foutkode: %S."
 
 #: BadMac
 msgid ""
 "%S received a message with incorrect Message Authentication Code. If the "
 "error occurs frequently, contact the website administrator."
-msgstr ""
+msgstr "%S het 'n boodskap ontvang waarvan die boodskapmagtigingskode nie korrek is nie. As hierdie fout gereeld voorkom, kontak die webwerfadministrateur."
 
 #: PeerResetConnection
 msgid "%S has closed the connection. Error Code: %S"
@@ -832,11 +844,11 @@ msgstr "Die huidige oordrag is gekanselleer."
 
 #: BadPassword
 msgid "An incorrect password was provided."
-msgstr "Die wagwoord wat voorsien is"
+msgstr "Die verkeerde wagwoord is voorsien."
 
 #: BadDatabase
 msgid "There is a problem with your certificate database [Error Code: %S]."
-msgstr "Daar is fout met jou sertifikaatdatabasis [Foutkode: %S]."
+msgstr "Daar is fout met u sertifikaatdatabasis [Foutkode: %S]."
 
 #: BadServer
 msgid "%S has sent an incorrect or unexpected message. Error Code: %S"
@@ -859,21 +871,9 @@ msgid ""
 "issued by the certificate authority.  Please get a new certificate "
 "containing a unique serial number."
 msgstr ""
-"#-#-#-#-#  pipnss.properties.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Jy het 'n ongeldige sertifikaat ontvang. Kontak asb. die bediener-"
-"administreerder of e-pos die korrespondent en verskaf aan hulle die volgende "
-"inligting:\n"
+"U het 'n ongeldige sertifikaat ontvang.  Kontak die bedieneradministrateur of e-poskorrespondent en gee aan hulle die volgende inligting:\n"
 "\n"
-"Jou sertifikaat het dieselfde reeksnommer as 'n ander sertifikaat wat deur "
-"die sertifikaat-owerhede uitgereik is. Kry asb. 'n nuwe sertifikaat wat 'n "
-"unieke reeksnommer het.\n"
-"#-#-#-#-#  pipnss.properties.po (pipnss.properties)  #-#-#-#-#\n"
-"Jy het 'n ongeldige sertifikaat ontvang. Kontak asb. die bediener-"
-"administreerder of e-pos die korrespondent en verskaf aan hulle die volgende "
-"inligting:\n"
-"\n"
-"Jou sertifikaat het dieselfde reeksnommer as 'n ander sertifikaat wat deur "
-"die sertifikaat-owerhede uitgereik is.  Kry asb. 'n nuwe sertifikaat wat 'n "
+"U sertifikaat het dieselfde reeksnommer as 'n ander sertifikaat wat deur die sertifikaatowerheid uitgereik is.  Kry 'n nuwe sertifikaat wat 'n "
 "unieke reeksnommer het."
 
 #: SSLGenericError
@@ -937,23 +937,21 @@ msgid ""
 "Certificate Revocation List (CRL) from the CA certifying %S is past its Next "
 "Update date. Please update the CRL."
 msgstr ""
-"Sertifikaatopheffingslys (SOLP) van die sertifiseergesag wat %S sertifiseer "
-"is ouer as die jongste bywerkdatum. Werk dus die SOL by."
+"Sertifikaatopheffingslys (SOL) van die SO wat %S sertifiseer is ouer as die jongste opdateerdatum. Dateer die SOL op."
 
 #: CRLNotYetValid
 msgid ""
 "Certificate Revocation List (CRL) from the CA certifying %S is not yet "
 "valid. Please check your system clock."
 msgstr ""
-"Sertifikaatopheffingslys (SOL) van die sertifiseergesag wat %S sertifiseer, "
-"is nog nie geldig nie. Gaan jou rekenaar se klok na."
+"Sertifikaatopheffingslys (SOL) van die SO wat %S sertifiseer, is nog nie geldig nie. Kontroleer u rekenaar se klok."
 
 #: CRLSigNotValid
 msgid ""
 "Certificate Revocation List (CRL) from the CA certifying %S has an invalid "
 "digital signature."
 msgstr ""
-"Sertifikaatopheffingslys (SOL) van die sertifiseergesag wat %S sertifiseer, "
+"Sertifikaatopheffingslys (SOL) van die SO wat %S sertifiseer, "
 "bevat 'n ongeldige digitale handtekening."
 
 #: CRLSNotValid
@@ -961,23 +959,20 @@ msgstr ""
 msgid ""
 "Certificate Revocation List (CRL) from the CA certifying %S is not valid."
 msgstr ""
-"#-#-#-#-#  pipnss.properties.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Sertifikaatopheffingslys (SOL) van die sertifiseergesag wat %S sertifiseer.\n"
-"#-#-#-#-#  pipnss.properties.po (pipnss.properties)  #-#-#-#-#\n"
-"Sertifikaatopheffingslys (SOL) van die sertifiseergesag wat %S sertifiseer"
+"Sertifikaatopheffingslys (SOL) van die SO wat %S sertifiseer is nie geldig nie."
 
 #: OCSPMalformedRequest
 msgid ""
 "Error trying to validate certificate from %S using OCSP - malformed request."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP valideer nie - misvormde versoek."
+"Kon nie die sertifikaat van %S met OCSP valideer nie - wangevormde versoek."
 
 #: OCSPRequestNeedsSig
 msgid ""
 "Error trying to validate certificate from %S using OCSP - request needs "
 "signature."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP valideer nie - versoek kort "
+"Kon nie die sertifikaat van %S met OCSP staaf nie - versoek kort "
 "handtekening."
 
 #: OCSPUnauthorizedReq
@@ -985,18 +980,18 @@ msgid ""
 "Error trying to validate certificate from %S using OCSP - unauthorized "
 "request."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP valideer nie - ongemagtigde versoek."
+"Kon nie die sertifikaat van %S met OCSP staaf nie - ongemagtigde versoek."
 
 #: OCSPServerError
 msgid "Error trying to validate certificate from %S using OCSP - server error."
-msgstr "Kon nie die sertifikaat van %S met OCSP valideer nie - bedienerfout."
+msgstr "Kon nie die sertifikaat van %S met OCSP staaf nie - bedienerfout."
 
 #: OCSPTryServerLater
 msgid ""
 "Error trying to validate certificate from %S using OCSP - server is busy. "
 "Please try again later."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP valideer nie - bediener is besig. "
+"Kon nie die sertifikaat van %S met OCSP staaf nie - bediener is besig. "
 "Probeer later weer."
 
 #: OCSPFutureResponse
@@ -1004,19 +999,19 @@ msgid ""
 "Error trying to validate certificate from %S using OCSP - response contains "
 "a date which is in the future."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP valideer nie - respons bevat 'n "
+"Kon nie die sertifikaat van %S met OCSP staaf nie - respons bevat 'n "
 "datum wat in die toekoms is."
 
 #: OCSPOldResponse
 msgid "Error trying to validate certificate from %S using OCSP - old response."
-msgstr "Kon nie die sertifikaat van %S met OCSP valideer nie - ou versoek."
+msgstr "Kon nie die sertifikaat van %S met OCSP staaf nie - ou respons."
 
 #: OCSPCorruptedResponse
 msgid ""
 "Error trying to validate certificate from %S using OCSP - corrupted or "
 "unknown response. Error Code: %S."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP valideer nie - korrupte of onbekende "
+"Kon nie die sertifikaat van %S met OCSP staaf nie - korrupte of onbekende "
 "respons. Foutkode: %S."
 
 #: OCSPUnauthorizedResponse
@@ -1024,21 +1019,21 @@ msgid ""
 "Error trying to validate certificate from %S using OCSP - unauthorized "
 "response."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP valideer nie - ongemagtigde respons."
+"Kon nie die sertifikaat van %S met OCSP staaf nie - ongemagtigde respons."
 
 #: OCSPUnknownCert
 msgid ""
 "Error trying to validate certificate from %S using OCSP - unknown "
 "certificate."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP valideer nie - onbekende sertifikaat."
+"Kon nie die sertifikaat van %S met OCSP staaf nie - onbekende sertifikaat."
 
 #: OCSPNoDefaultResponder
 msgid ""
 "Error trying to validate certificate from %S using OCSP - no default "
 "responder specified."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP valideer nie - geen verstek-"
+"Kon nie die sertifikaat van % met OCSP staaf nie - geen verstek-"
 "terugskrywer gespesifiseer nie."
 
 #: OCSPDirLookup
@@ -1046,7 +1041,7 @@ msgid ""
 "Error trying to validate certificate from %S using OCSP - directory lookup "
 "error."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP valideer nie - kon nie in die gids "
+"Kon nie die sertifikaat van %S met OCSP staaf nie - kon nie in die gids "
 "opsoek nie."
 
 #: CertInfoIssuedFor
@@ -1071,7 +1066,7 @@ msgstr "tot"
 
 #: CertInfoPurposes
 msgid "Purposes"
-msgstr "Doeleinde"
+msgstr "Doelwitte"
 
 #: CertInfoStoredIn
 msgid "Stored in:"
@@ -1079,18 +1074,18 @@ msgstr "Gestoor in:"
 
 #: P12DefaultNickname
 msgid "Imported Certificate"
-msgstr "Binnegevoerde sertifikaat"
+msgstr "Ingevoerde sertifikaat"
 
 #: CrlImportSuccess
 msgid ""
 "The browser successfully imported the certificate revocation list (CRL)."
 msgstr ""
-"Die blaaier het die sertifikaatopheffingslys (SOL) suksesvol na binne gevoer."
+"Die blaaier het die sertifikaatopheffingslys (SOL) suksesvol ingevoer."
 
 #: CrlImportFailure1
 msgid "The browser cannot import the Certificate Revocation List (CRL)."
 msgstr ""
-"Die blaaier kan nie die sertifikaatopheffingslys (SOL) suksesvol na binne "
+"Die blaaier kan nie die sertifikaatopheffingslys (SOL) in"
 "voer nie."
 
 #: CrlImportFailureExpired
@@ -1111,7 +1106,7 @@ msgstr "Nuwe SOL is ouer as die huidige een."
 
 #: CrlImportFailureNotYetValid
 msgid "The CRL is not yet valid. You might want to check your system clock."
-msgstr "Die SOL is nog nie geldig nie. Gaan jou rekenaar se klok na."
+msgstr "Die SOL is nog nie geldig nie. Gaan u rekenaar se klok na."
 
 #: CrlImportFailureNetworkProblem
 msgid "Download of the CRL failed due to Network problems."
@@ -1119,11 +1114,11 @@ msgstr "Kon nie SOL aflaai nie vanweë netwerkprobleme."
 
 #: CrlImportFailureReasonUnknown
 msgid "Error Importing CRL to local Database. Error Code:"
-msgstr "Kon nie SOL na plaaslike databasis na binne voer nie. Foutkode:"
+msgstr "Kon nie SOL na plaaslike databasis invoer nie. Foutkode:"
 
 #: CrlImportFailure2
 msgid "Please ask your system administrator for assistance."
-msgstr "Vra jou stelseladministrateur vir bystand."
+msgstr "Vra u stelseladministrateur vir bystand."
 
 #: NSSInitProblem
 msgid ""
@@ -1134,12 +1129,7 @@ msgid ""
 "the problem. If you continue to use this browser session, you might see "
 "incorrect browser behaviour when accessing security features."
 msgstr ""
-"Kon nie die blaaier se sekuriteitskomponent begin nie. Die probleem lê "
-"waarskynlik by lêers in jou blaaier se profielsubgids. Maak seker dat daar "
-"geen lees/skryf-beperkings op hierdie subgids van toepassing is nie en dat "
-"jou hardeskyf nie vol of byna vol is nie. Ons stel voor jy sluit jou blaaier "
-"af en maak die fout reg. As jy voortgaan met jou huidige sessie, mag jy dalk "
-"foutiewe blaaiergedrag opmerk wanneer jy die sekuriteitskenmerke gebruik."
+"Kon nie die blaaier se sekuriteitskomponent inisialiseer nie. Die probleem lê waarskynlik by lêers in u blaaier se profielsubgids. Maak seker dat daar geen lees-skryf-beperkings op hierdie subgids van toepassing is nie en dat u hardeskyf nie vol of byna vol is nie. Ons stel voor dat u u blaaier afsluit en die fout korrigeer. As u voortgaan met u huidige sessie, mag u dalk foutiewe blaaiergedrag opmerk wanneer u die sekuriteitskenmerke gebruik."
 
 #: ProfileSwitchSocketsStillActive
 msgid ""
@@ -1147,15 +1137,14 @@ msgid ""
 "network communication has not been cleaned up correctly."
 msgstr ""
 "Kon nie die operasie voltooi nie vanweë 'n interne faling. 'n Beveiligde "
-"stuk netwerkkommunikasie is nie korrek skoongevee nie."
+"netwerkkommunikasie-proses is nie korrek opgeruim nie."
 
 #: ProfileSwitchCryptoUIActive
 msgid ""
 "This operation is impossible at the current time. Please complete the "
 "operation that requests your attention in one of the other open windows."
 msgstr ""
-"Dit is onmoontlik om hierdie operasie tans uit te voer. Voltooi die operasie "
-"wat jou aandag in een van jou ander oop vensters verg."
+"Dit is onmoontlik om hierdie operasie tans uit te voer. Voltooi eers die operasie wat u aandag in een van u ander oop vensters verg."
 
 #: VerifyExpired
 msgid "<Expired>"
@@ -1179,7 +1168,7 @@ msgstr "<Uitreiker onbekend>"
 
 #: VerifyInvalidCA
 msgid "<Invalid CA>"
-msgstr "<Ongeldige sertifiseergesag>"
+msgstr "<Ongeldige SO>"
 
 #: VerifyUnknown
 msgid "<Unknown>"
@@ -1230,3 +1219,4 @@ msgstr "(geen e-posadres)"
 #~ "gebruik. Skakel die bedieneradministrateur of e-poskorrespondent wie se "
 #~ "ongeldige sertifikaat hierdie is, en dring by hulle aan om 'n geldige "
 #~ "sertifikaat te kry."
+

@@ -51,13 +51,14 @@ msgstr ""
 "#-#-#-#-#  xmlparser.properties.po (xmlparser.properties)  #-#-#-#-#\n"
 "X-Generator: KBabel 1.3.1\n"
 
+# Map Expat error codes to error strings
 #: 1
 msgid "out of memory"
-msgstr "geen geheuespasie oor nie"
+msgstr "geheue is op"
 
 #: 2
 msgid "syntax error"
-msgstr "foutiewe sintaks"
+msgstr "sintaksfout"
 
 #: 3
 msgid "no element found"
@@ -65,31 +66,31 @@ msgstr "geen element gevind nie"
 
 #: 4
 msgid "not well-formed"
-msgstr "nie goed gevorm nie"
+msgstr "nie welgevorm nie"
 
 #: 5
 msgid "unclosed token"
-msgstr "ongesluite teken"
+msgstr "ongeslote teken"
 
 #: 6
 msgid "partial character"
-msgstr ""
+msgstr "gedeeltelike karakter"
 
 #: 7
 msgid "mismatched tag"
-msgstr "onpaar etiket"
+msgstr "wangepaste merker"
 
 #: 8
 msgid "duplicate attribute"
-msgstr "duplikaat attribuut"
+msgstr "duplikaatattribuut"
 
 #: 9
 msgid "junk after document element"
-msgstr "gemors na dokumentelement"
+msgstr "gemors ná dokumentelement"
 
 #: 10
 msgid "illegal parameter entity reference"
-msgstr "onwettige parameterentiteitverwysing"
+msgstr "onwettige parameter-entiteitverwysing"
 
 #: 11
 msgid "undefined entity"
@@ -97,11 +98,11 @@ msgstr "ongedefinieerde entiteit"
 
 #: 12
 msgid "recursive entity reference"
-msgstr "rekursiewe entiteitsverwysing"
+msgstr "terugwerkende entiteitverwysing"
 
 #: 13
 msgid "asynchronous entity"
-msgstr "asinkrone entiteit"
+msgstr "asinchroniese entiteit"
 
 #: 14
 msgid "reference to invalid character number"
@@ -109,7 +110,7 @@ msgstr "verwysing na ongeldige karakternommer"
 
 #: 15
 msgid "reference to binary entity"
-msgstr "verwysing na binre entiteit"
+msgstr "verwysing na binêre entiteit"
 
 #: 16
 msgid "reference to external entity in attribute"
@@ -117,54 +118,58 @@ msgstr "verwysing na eksterne entiteit in attribuut"
 
 #: 17
 msgid "xml declaration not at start of external entity"
-msgstr ""
+msgstr "xml-deklarasie nie aan begin van eksterne entiteit nie"
 
 #: 18
 msgid "unknown encoding"
-msgstr "onbekende kodering"
+msgstr "onbekende enkodering"
 
 #: 19
 msgid "encoding specified in XML declaration is incorrect"
-msgstr "kodering in XML-verklaring gespesifiseer is foutief"
+msgstr "enkodering in XML-deklarasie gespesifiseer, is verkeerd"
 
 #: 20
 msgid "unclosed CDATA section"
-msgstr "ongesluite CDATA-seksie"
+msgstr "ongeslote CDATA-afdeling"
 
 #: 21
 msgid "error in processing external entity reference"
-msgstr "fout in verwerking van verwysing na eksterne entiteit"
+msgstr "kon nie eksterne entiteitsverwysing verwerk nie"
 
 #: 22
 msgid "document is not standalone"
-msgstr "dokument is nie losstaande nie"
+msgstr "dokument is nie alleenstaande nie"
 
 #: 23
 msgid "unexpected parser state"
-msgstr ""
+msgstr "onverwagse ontlederstaat"
 
 #: 24
 msgid "entity declared in parameter entity"
-msgstr ""
+msgstr "entiteit in parameterentiteit verklaar"
 
 #: 27
 msgid "prefix not bound to a namespace"
-msgstr ""
+msgstr "voorvoegsel nie aan 'n naamspasie gebind nie"
 
 #: 29
 msgid ""
 "reserved prefix (xml) must not be undeclared or bound to another namespace "
 "URI"
-msgstr ""
+msgstr "gereserveerde voorvoegsel (xml) kan nie verklaar word nie of is aan 'n ander naamspasie-URI gebind"
 
 #: 30
 msgid "reserved prefix (xmlns) must not be declared or undeclared"
-msgstr ""
+msgstr "gereserveerde voorvoegsel (xmlns) moet nie verklaar of onverklaar wees nie"
 
 #: 31
 msgid "prefix must not be bound to one of the reserved namespace URIs"
-msgstr ""
+msgstr "voorvoegsel moet nie aan een van die gereserveerde naamspasie-URI's gebind wees nie"
 
+# %1$S is replaced by the Expat error string, may be followed by Expected (see below)
+# %2$S is replaced by URL
+# %3$d is replaced by line number
+# %4$d is replaced by column number
 #: XMLParsingError
 msgid ""
 "XML Parsing Error: %1$S\n"
@@ -173,11 +178,14 @@ msgid ""
 msgstr ""
 "XML-ontledingsfout: %1$S\n"
 "Ligging: %2$S\n"
-"Reëlnommer %3$d, Kolom %4$d:"
+"Reëlnommer %3$d, kolom %4$d:"
 
+# %S is replaced by a tag name.
+# This gets appended to the error string if the error is mismatched tag.
 #: Expected
 msgid ". Expected: </%S>."
 msgstr ". Verwag: </%S>."
 
 #~ msgid "xml processing instruction not at start of external entity"
 #~ msgstr "xml-verwerkingsinstruksie nie aan begin van eksterne entiteit nie"
+
