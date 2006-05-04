@@ -1,38 +1,32 @@
-# #-#-#-#-#  profileSelection.properties.po (ff 1.0)  #-#-#-#-#
 # LOCALIZATION NOTE: Do not translate <html:br/> 
-# extracted from en-US.xpi:locale/mozapps/profile/profileSelection.properties
-# #-#-#-#-#  profileSelection.properties.po (profileSelection.properties)  #-#-#-#-#
-# translation of profileSelection.properties.po to 
-# translation of profileSelection.properties.po to
-# LOCALIZATION NOTE: Do not translate <html:br/>
-# extracted from toolkit-en-US-1.xpi:package/chrome/mozapps/profile/profileSelection.properties
-# Dwayne Bailey <dwayne@translate.org.za>, 2004.
+# extracted from mozilla.l10n/toolkit/chrome/mozapps/profile/profileSelection.properties
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: profileSelection.properties\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 14:29+0200\n"
-"PO-Revision-Date: 2004-10-05 23:42+0200\n"
-"Last-Translator: Dwayne Bailey <dwayne@translate.org.za>\n"
-"Language-Team:  <en@li.org>\n"
+"POT-Creation-Date: 2006-02-01 23:32+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  profileSelection.properties.po (ff 1.0)  #-#-#-#-#\n"
-"#-#-#-#-#  profileSelection.properties.po (profileSelection.properties)  #-#-"
-"#-#-#\n"
-"X-Generator: KBabel 1.3.1\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Translate Toolkit 0.8rc5\n"
+"X-Accelerator-Marker: &\n"
 
 #: restartTitle
-msgid "Restart %S"
+msgid "Close %S"
 msgstr "Sluit %S af"
 
-#: restartMessage
-msgid ""
-"%S is already running, but is not responding. To open a new window, you must "
-"restart %S."
-msgstr ""
+#: restartMessageNoUnlocker
+msgid "%S is already running, but is not responding. To open a new window, you must first close the existing %S process, or restart your system."
+msgstr "%S loop reeds, maar reageer nie. Om 'n nuwe venster te open, moet u eers die bestaande %S-proses afsluit, of u rekenaar herbegin."
+
+#: restartMessageUnlocker
+msgid "%S is already running, but is not responding. The old %S process must be closed to open a new window."
+msgstr "%S loop reeds, maar reageer nie. Die ou %S-proses moet afgesluit word om 'n nuwe venster te open."
 
 #: profileTooltip
 msgid "Profile: '%S' - Path: '%S'"
@@ -51,12 +45,10 @@ msgid "Profile In Use"
 msgstr "Profiel in gebruik"
 
 #: profileLocked2
-msgid ""
-"%S cannot use the profile \"%S\" because it is in use.\n"
+msgid "%S cannot use the profile \"%S\" because it is in use.\n"
 "\n"
 "To continue, close the running instance of %S or choose a different profile."
-msgstr ""
-"%S kan nie die profiel \\\"%S\\\" gebruik nie omdat dit tans gebruik word.\n"
+msgstr "%S kan nie die profiel \"%S\" gebruik nie omdat dit tans gebruik word.\n"
 "\n"
 "Om voort te gaan, sluit die lopende instans van %S af of kies 'n ander profiel."
 
@@ -66,7 +58,7 @@ msgstr "Hernoem profiel"
 
 #: renameProfilePrompt
 msgid "Rename the profile \"%S\" to:"
-msgstr "Hernoem die profiel \\\"%S\\\" na:"
+msgstr "Hernoem die profiel \"%S\" na:"
 
 #: profileNameInvalidTitle
 msgid "Invalid profile name"
@@ -74,7 +66,7 @@ msgstr "Ongeldige profielnaam"
 
 #: profileNameInvalid
 msgid "The profile name \"%S\" is not allowed."
-msgstr "Die profielnaam \\\"%S\\\" word nie toegelaat nie."
+msgstr "Die profielnaam \"%S\" word nie toegelaat nie."
 
 #: chooseFolder
 msgid "Choose Profile Folder"
@@ -85,26 +77,19 @@ msgid "An empty profile name is not allowed."
 msgstr "'n Leë profielnaam word nie toegelaat nie."
 
 #: invalidChar
-msgid ""
-"The character \"%S\" is not allowed in profile names. Please choose a "
-"different name."
-msgstr "Die karakter \\\"%S\\\" word nie in profielname toegelaat nie. Kies 'n ander naam."
+msgid "The character \"%S\" is not allowed in profile names. Please choose a different name."
+msgstr "Die karakter \"%S\" word nie in profielname toegelaat nie. Kies 'n ander naam."
 
 #: deleteTitle
 msgid "Delete Profile"
 msgstr "Skrap profiel"
 
 #: deleteProfile
-msgid ""
-"Deleting a profile will remove the profile from the list of available "
-"profiles and cannot be undone.\n"
-"You may also choose to delete the profile data files, including your saved "
-"mail, settings, and certificates. This option will delete the folder \"%S\" "
-"and cannot be undone.\n"
+msgid "Deleting a profile will remove the profile from the list of available profiles and cannot be undone.\n"
+"You may also choose to delete the profile data files, including your saved mail, settings, and certificates. This option will delete the folder \"%S\" and cannot be undone.\n"
 "Would you like to delete the profile data files?"
-msgstr ""
-"As u 'n profiel skrap, sal dit die profiel van die lys beskikbare profiele verwyder word, en dit kan nie ontdoen word nie.\n"
-"U kan ook kies om die profieldatalêers te skrap, waaronder u gestoorde pos, opstelling en sertifikate. Hierdie opsies sal die vouer \\\"%S\\\" skrap, en dit kan nie ontdoen word nie.\n"
+msgstr "As u 'n profiel skrap, sal dit die profiel van die lys beskikbare profiele verwyder word, en dit kan nie ontdoen word nie.\n"
+"U kan ook kies om die profieldatalêers te skrap, waaronder u gestoorde pos, opstelling en sertifikate. Hierdie opsies sal die vouer \"%S\" skrap, en dit kan nie ontdoen word nie.\n"
 "Wil u die profieldatalêers skrap?"
 
 #: deleteFiles
