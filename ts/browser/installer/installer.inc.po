@@ -31,10 +31,9 @@ msgstr "U amukeriwile eka %s"
 msgid "You are about to install %s."
 msgstr "U le kusuhi no nghenisa %s."
 
-# (pofilter) notranslatewords: do not translate: Windows
 #: SETUP_MESSAGE1
 msgid "It is strongly recommended that you exit all Windows programs before running this Setup program."
-msgstr "Ku bumabumeriwa swinene leswaku u huma eka tiphurogireme ta mafasitere hinkwawo u nga si tirhisa Ndzulamiso wa phurogireme leyi."
+msgstr "Ku bumabumeriwa swinene leswaku u huma eka tiphurogireme ta Windows hinkwawo u nga si tirhisa Ndzulamiso wa phurogireme leyi."
 
 #: SETUP_MESSAGE1_UNIX
 msgid "It is strongly recommended that you exit all instances of %s before running this Setup program."
@@ -64,10 +63,9 @@ msgstr "Hlaya mpfumelelo lowu landzelaka wa layisense. Tirhisa barha yo secha ku
 msgid "I &Accept the terms of the License Agreement"
 msgstr "&Ndzi amukela swipimelo hinkwaswo swa Mpfumelelo wa Layisense"
 
-# (pofilter) accelerators: accelerator & is missing from translation
 #: LICENSE_DECLINE
 msgid "I do NO&T Accept the terms of the License Agreement"
-msgstr "A ndzi amukeli swipimelo swa Mpfumelelo wa Layisense"
+msgstr "A nd&zi amukeli swipimelo swa Mpfumelelo wa Layisense"
 
 #: SETUP_TYPE_TITLE
 msgid "Setup Type"
@@ -81,9 +79,11 @@ msgstr "Hlawula ndzulamiso wa tiopxini."
 msgid "Choose the type of Setup you prefer, then click Next."
 msgstr "Hlawulo muxaka wa ndzulamiso lowu u wu rhandzaka, kutani u tshikelela Leswi landzelaka."
 
+# (pofilter) singlequoting: checks whether singlequoting is consistent between the two strings
+# (pofilter) sentencecount: checks that the number of sentences in both strings match
 #: SETUP_TYPE_EXISTING
 msgid "The selected directory already contains a Firefox installation. To delete %s completely, please press the 'Delete Directory' button. Your Firefox settings should not be affected. Or, please press the 'Cancel' button and choose a different destination directory."
-msgstr ""
+msgstr "Xikombo lexitekiwe xina firefox leyifakiwe.kushitima %s shihelerile presa kinobho yakutima. Lokuyimisiwe ka firefox yawena akulabeki tikukumuxa."
 
 # &Ampersand is used to select a shortcut key
 #: TYPE_STANDARD
@@ -426,6 +426,7 @@ msgstr "Xihoxo eka ku hlanganisa fayili %s: %d"
 
 # (review) completely wrong please redo - all tabs are imortant
 # (review) incomplete
+# (review) please check or use MS Word
 #: MSG_USAGE
 #, fuzzy
 msgid "Usage: %s [options]\n"
@@ -475,9 +476,11 @@ msgstr "Tirhisa &HTTP ku panga tifayili"
 msgid "&Save installer files locally"
 msgstr "Hlayisa tifayili to nghenisa ekaya"
 
+# (review) incomplete
 #: MSG_DL_PAUSED
+#, fuzzy
 msgid "Setup has encountered a network problem and has paused the download.  If you have just lost your network connection, please click Resume once your network has been reestablished."
-msgstr ""
+msgstr "Loku ulakelwe yi network yawena tirisa I resume"
 
 #: MSG_NOT_ADMIN
 msgid "Setup has detected that you do not have the appropriate Administrator privileges to this system.  It is highly recommended that you do not continue with the installation of $ProductShortName$, or it may not function properly.  Would you still like to continue?"
@@ -487,9 +490,11 @@ msgstr ""
 msgid "Setup has detected that you do not have the appropriate Administrator privileges to this system.  Setup cannot continue with the installation of $ProductShortName$."
 msgstr ""
 
+# (review) incomplete
 #: UNINST_RUNNING
+#, fuzzy
 msgid "$ProductNameInternal$ is detected to be currently running.  Please quit $ProductNameInternal$ before continuing.  Click OK to exit $ProductNameInternal$ automatically and proceed with uninstallation."
-msgstr ""
+msgstr "$ProductName xa le ndzeni $ inka entliwele ka folda yati windows. "
 
 #: UNINST_SHUTDOWN
 msgid "_: UNINST_SHUTDOWN\n"
@@ -637,15 +642,13 @@ msgstr "Swi tsandzile ku kuma xiyenge Ex()!"
 msgid "Attention"
 msgstr "Lemuka"
 
-# (pofilter) notranslatewords: do not translate: Windows
 #: MSG_FORCE_QUIT_PROCESS
 msgid "Uninstall has detected that %s (%s) is still running.  Click OK to quit %s and proceed with uninstallation. Alternatively, use the Windows Task Manager to quit %s, and then click OK to continue with uninstallation."
-msgstr "Yunisitolo yi kumile leswaku %s (%s) yi le ku tirheni.  Tshikelela OK ku huma %s u ya emahlweni ni ku yunisitola. Loko swi nga ri tano, tirhisa Mininjhere wa Ntirho wa Mafasitere ku huma %s, ivi u tshikelela OK ku ya emahlweni no yunisitola."
+msgstr "Yunisitolo yi kumile leswaku %s (%s) yi le ku tirheni.  Tshikelela OK ku huma %s u ya emahlweni ni ku yunisitola. Loko swi nga ri tano, tirhisa Mininjhere wa Ntirho wa Windows ku huma %s, ivi u tshikelela OK ku ya emahlweni no yunisitola."
 
-# (pofilter) notranslatewords: do not translate: Windows
 #: MSG_FORCE_QUIT_PROCESS_FAILED
 msgid "Uninstall will now exit.  Uninstall could not continue because %s (%s) is still running. Try manually quitting %s using Windows Task Manager, and then run Uninstall again."
-msgstr "Ku yunisitola swi ta suka.  Ku yunisitola a swi yi emahlweni hikuva %s (%s) yi le ku tirheni. Ringeta ku huma hi manuwali eka %s hi ku tirhisa Mininjhere wa Ntirho wa Mafasitere, kutani u tirhisa yunisitolo nakambe."
+msgstr "Ku yunisitola swi ta suka.  Ku yunisitola a swi yi emahlweni hikuva %s (%s) yi le ku tirheni. Ringeta ku huma hi manuwali eka %s hi ku tirhisa Mininjhere wa Ntirho wa Windows, kutani u tirhisa yunisitolo nakambe."
 
 #: MSG_DELETE_INSTALLATION_PATH
 msgid "Not all files were uninstalled from the installation directory:\n"
@@ -662,4 +665,3 @@ msgstr "A hi tifayili hinkwato ti nga nghenisiwangiki eka dayirekitheri yo nghen
 #: MSG_INSTALLATION_PATH_WITHIN_WINDIR
 msgid "Uninstall has detected that the installation path of $ProductNameInternal$ is installed to a folder within your Windows folder.  Uninstall will not attempt to delete this installation due to the potential removal of critical system files."
 msgstr ""
-
