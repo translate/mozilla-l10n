@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-01 23:32+0200\n"
+"POT-Creation-Date: 2006-07-29 02:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,15 @@ msgstr ""
 #: itemGeneral.label
 msgid "General"
 msgstr "Algemeen"
+
+#: itemJunk.label
+#, fuzzy
+msgid "Junk"
+msgstr ""
+"#-#-#-#-#  messenger.dtd.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Gemors\n"
+"#-#-#-#-#  FilterEditor.dtd.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Gemorspos"
 
 #: itemPhishing.label
 msgid "E-mail Scams"
@@ -35,57 +44,123 @@ msgstr "Viruswering"
 msgid "Security"
 msgstr "Sekuriteit"
 
-#: disableImageInMailNews.label
-#: disableImageInMailNews.accesskey
+#: disableImageInMailNews.label disableImageInMailNews.accesskey
 msgid "&Block loading of remote images in mail messages"
 msgstr "&Blokeer afgeleë prente in posboodskappe"
 
-#: allowRemoteImagesForFriends.label
-#: allowRemoteImagesForFriends.accesskey
+#: allowRemoteImagesForFriends.label allowRemoteImagesForFriends.accesskey
 msgid "&Allow remote images if the sender is in my:"
 msgstr "&Laat afgeleë prente toe indien afsender in die volgende is:"
 
-#: enbJsCheckMailNews.label
-#: enbJsCheckMailNews.accesskey
+#: enbJsCheckMailNews.label enbJsCheckMailNews.accesskey
 msgid "Block &JavaScript in mail messages"
 msgstr "Blokeer &JavaScript in posboodskappe"
 
+# Junk Mail Controls
+#: junkMail.intro
+msgid ""
+"Set your default junk mail settings. Account specific junk mail settings can "
+"be configured in Account Settings."
+msgstr ""
+
+#: manualMark.label
+msgid "When I mark messages as junk:"
+msgstr ""
+
+#: manualMarkModeMove.label
+msgid "Move them to the account's &quot;Junk&quot; folder"
+msgstr ""
+
+#: markAsReadOnSpam.label
+msgid "Mark messages determined to be Junk as read"
+msgstr ""
+
+# #-#-#-#-#  browser.dtd.po (PACKAGE VERSION)  #-#-#-#-#
+# 
+# Comment duplicated from browser-sets.inc:
+# 
+# Search Command Key Logic works like this:
+# 
+# Unix: Ctrl+J (0.8, 0.9 support)
+# Ctrl+K (cross platform binding)
+# Mac:  Ctrl+K (cross platform binding)
+# Win:  Ctrl+K (cross platform binding)
+# Ctrl+E (IE compat)
+# 
+# We support Ctrl+K on all platforms now and advertise it in the menu since it is
+# our standard - it is a "safe" choice since it is near no harmful keys like "W" as
+# "E" is. People mourning the loss of Ctrl+K for emacs compat can switch their GTK
+# system setting to use emacs emulation, and we should respect it. Focus-Search-Box
+# is a fundamental keybinding and we are maintaining a XP binding so that it is easy
+# for people to switch to Linux.
+# 
+# Do *not* tamper with these values without talking to ben@mozilla.org
+# 
+# 
+#
+#: markAsReadOnSpam.acesskey
+msgid "k"
+msgstr "k"
+
+#: manualMarkModeDelete.label
+msgid "Delete them"
+msgstr "Skrap dit"
+
+#: enableJunkLogging.label enableJunkLogging.accesskey
+msgid "Enable junk filter lo&gging"
+msgstr ""
+
+#: openJunkLog.label openJunkLog.accesskey
+msgid "S&how log"
+msgstr ""
+
+#: resetTrainingData.label resetTrainingData.accesskey
+msgid "Reset Training &Data"
+msgstr ""
+
 # Phishing Detector
 #: phishingDetector.intro
-msgid "&brandShortName; can analyze messages for possible email scams by looking for common techniques used to deceive you."
-msgstr "&brandShortName; kan boodskappe ontleed vir moontlike e-posswendelary deur te let op algemene tegnieke om jou om die bos te lei."
+msgid ""
+"&brandShortName; can analyze messages for possible email scams by looking "
+"for common techniques used to deceive you."
+msgstr ""
+"&brandShortName; kan boodskappe ontleed vir moontlike e-posswendelary deur "
+"te let op algemene tegnieke om jou om die bos te lei."
 
-#: enablePhishingDetector.label
-#: enablePhishingDetector.accesskey
+#: enablePhishingDetector.label enablePhishingDetector.accesskey
 msgid "&Check mail messages for email scams"
 msgstr "&Kontroleer posboodskappe vir e-posswendelary"
 
 # Passwords
 #: savedPasswords.intro
-msgid "&brandShortName; can remember password information for all of your accounts so you do not need to re-enter your login details."
-msgstr "&brandShortName; kan wagwoordinligting vir al jou rekeninge onthou sodat jy nie jou aanmeldbesonderhede hoef in te tik nie."
+msgid ""
+"&brandShortName; can remember password information for all of your accounts "
+"so you do not need to re-enter your login details."
+msgstr ""
+"&brandShortName; kan wagwoordinligting vir al jou rekeninge onthou sodat jy "
+"nie jou aanmeldbesonderhede hoef in te tik nie."
 
-#: encryptEnabled.label
-#: encryptEnabled.accesskey
+#: encryptEnabled.label encryptEnabled.accesskey
 msgid "U&se a master password to encrypt stored passwords"
 msgstr "&Gebruik 'n meesterwagwoord om gestoorde wagwoorde te enkripteer"
 
 #: masterPassword.intro
-msgid "When set, the Master Password protects all your passwords - but you must enter it once per session."
-msgstr "Die meesterwagwoord sal al jou wagwoorde beskerm, maar jy moet dit een maal per sessie intik."
+msgid ""
+"When set, the Master Password protects all your passwords - but you must "
+"enter it once per session."
+msgstr ""
+"Die meesterwagwoord sal al jou wagwoorde beskerm, maar jy moet dit een maal "
+"per sessie intik."
 
-#: setMasterPassword.label
-#: setMasterPassword.accesskey
+#: setMasterPassword.label setMasterPassword.accesskey
 msgid "&Master Password"
 msgstr "&Meesterwagwoord"
 
-#: removeMasterPassword.label
-#: removeMasterPassword.accesskey
+#: removeMasterPassword.label removeMasterPassword.accesskey
 msgid "&Remove Master Password..."
 msgstr "&Verwyder meesterwagwoord..."
 
-#: viewPasswords.label
-#: viewPasswords.accesskey
+#: viewPasswords.label viewPasswords.accesskey
 msgid "&View Saved Passwords"
 msgstr "&Bekyk gestoorde wagwoordeewaarde Wagwoorde"
 
@@ -95,36 +170,40 @@ msgid "Certificates"
 msgstr "Sertifikate"
 
 #: certificatesInfo.label
-msgid "Manage certificates, revocation lists, certificate verification and security devices."
-msgstr "Bestuur sertifikate, opheffingslyste, sertifikaatverifiëring en sekuriteitstoestelle."
+msgid ""
+"Manage certificates, revocation lists, certificate verification and security "
+"devices."
+msgstr ""
+"Bestuur sertifikate, opheffingslyste, sertifikaatverifiëring en "
+"sekuriteitstoestelle."
 
-#: viewCertificates.label
-#: viewCertificates.accesskey
+#: viewCertificates.label viewCertificates.accesskey
 msgid "V&iew Certificates"
 msgstr "B&ekyk sertifikate"
 
-#: viewCRLs.label
-#: viewCRLs.accesskey
+#: viewCRLs.label viewCRLs.accesskey
 msgid "R&evocation Lists"
 msgstr "O&pheffingslyste"
 
-#: viewOCSP.label
-#: viewOCSP.accesskey
+#: viewOCSP.label viewOCSP.accesskey
 msgid "Veri&fication"
 msgstr "V&erifikasie"
 
-#: viewSecurityDevices.label
-#: viewSecurityDevices.accesskey
+#: viewSecurityDevices.label viewSecurityDevices.accesskey
 msgid "Sec&urity Devices"
 msgstr "Se&kuriteitstoestelle"
 
 # Anti Virus
 #: antiVirus.intro
-msgid "&brandShortName; can make it easy for anti-virus software to analyze incoming mail messages for viruses before they are stored locally."
-msgstr "&brandShortName; maak dit maklik vir viruswering om inkomende posboodskappe vir virusse te ontleed voor hulle plaaslik gestoor word."
+msgid ""
+"&brandShortName; can make it easy for anti-virus software to analyze "
+"incoming mail messages for viruses before they are stored locally."
+msgstr ""
+"&brandShortName; maak dit maklik vir viruswering om inkomende posboodskappe "
+"vir virusse te ontleed voor hulle plaaslik gestoor word."
 
-#: antiVirus.label
-#: antiVirus.accesskey
+#: antiVirus.label antiVirus.accesskey
 msgid "A&llow anti-virus clients to quarantine individual incoming messages"
-msgstr "&Laat viruswering-kliënte toe om individuele inkomende boodskappe in kwarantyn te plaas"
-
+msgstr ""
+"&Laat viruswering-kliënte toe om individuele inkomende boodskappe in "
+"kwarantyn te plaas"
