@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-29 02:37+0200\n"
+"POT-Creation-Date: 2006-10-03 11:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,9 +12,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc5\n"
+"X-Generator: Translate Toolkit 0.10rc4\n"
 "X-Accelerator-Marker: &\n"
 
+# Note: due to bug 143065, the only remaining accesskeys available to be used
+# in the Advanced pane are: "b", "j", "q", "z"
 #: generalTab.label
 msgid "General"
 msgstr "Algemeen"
@@ -28,7 +30,7 @@ msgid "Always use the &cursor keys to navigate within pages"
 msgstr ""
 
 #: searchStartTyping.label searchStartTyping.accesskey
-msgid "&Search for text when I start typing"
+msgid "Search for te&xt when I start typing"
 msgstr ""
 
 #: browsing.label
@@ -43,10 +45,12 @@ msgstr "Gebruik &autorol"
 msgid "Use s&mooth scrolling"
 msgstr "Gebruik gl&adde rol"
 
+#: checkSpelling.label checkSpelling.accesskey
+msgid "Check my spelling as I &type"
+msgstr ""
+
 #: languages.label
-msgid ""
-"_: languages.label\n"
-"Languages"
+msgid "Languages"
 msgstr "Tale"
 
 #: chooseLanguage.label
@@ -77,6 +81,12 @@ msgstr "O&pstelling"
 msgid "Cache"
 msgstr "Kas"
 
+# LOCALIZATION NOTE:
+# The entities useCacheBefore.label and useCacheAfter.label appear on a single
+# line in preferences as follows:
+# 
+# &useCacheBefore.label  [ textbox for cache size in MB ]   &useCacheAfter.label;
+# 
 #: useCacheBefore.label useCacheBefore.accesskey
 msgid "&Use up to"
 msgstr ""
@@ -101,21 +111,13 @@ msgstr "&brandShortName;"
 msgid "F"
 msgstr "F"
 
-#: enableExtensionUpdate.label enableExtensionUpdate.accesskey
-msgid "Installed E&xtensions and Themes"
-msgstr "Geïnstalleerde u&itbreidings en temas"
+#: enableAddonsUpdate.label enableAddonsUpdate.accesskey
+msgid "I&nstalled Add-ons"
+msgstr ""
 
 #: enableSearchUpdate.label enableSearchUpdate.accesskey
 msgid "Searc&h Engines"
 msgstr "Soe&kenjins"
-
-#: checkNow.label
-msgid "Check Now..."
-msgstr "Kontroleer nou..."
-
-#: appCheckNow.accesskey
-msgid "N"
-msgstr "N"
 
 #: whenUpdatesFound.label
 msgid "When updates to &brandShortName; are found:"
@@ -129,9 +131,9 @@ msgstr "V&ra my wat ek wil doen"
 msgid "Automatically &download and install the update"
 msgstr "Laai die opdatering &outomaties af en installeer dit"
 
-#: modeAutoWarn.label modeAutoWarn.accesskey
-msgid "&Warn me if this will disable extensions or themes"
-msgstr "&Waarsku my indien dit uitbreidings of temas sal deaktiveer"
+#: modeAutoAddonWarn.label modeAutoAddonWarn.accesskey
+msgid "&Warn me if this will disable any of my add-ons"
+msgstr ""
 
 #: updateHistory.label updateHistory.accesskey
 msgid "Show U&pdate History"
@@ -162,9 +164,7 @@ msgid "When a web site requires a certificate:"
 msgstr "Wanneer 'n webwerf 'n sertifikaat vereis:"
 
 #: certs.auto
-msgid ""
-"_: certs.auto\n"
-"Select one automatically"
+msgid "Select one automatically"
 msgstr "Kies een outomaties"
 
 #: certs.auto.accesskey
@@ -172,146 +172,85 @@ msgid "l"
 msgstr "t"
 
 #: certs.ask
-msgid ""
-"_: certs.ask\n"
-"Ask me every time"
+msgid "Ask me every time"
 msgstr "Vra my elke keer"
 
-# No accesskey for gopher (':' doesn't go well) - mpt's going to redesign the window
-# No accesskey for gopher (':' doesn't go well) - mpt's going to redesign the window#: SOCKSport.accesskey
 #: certs.ask.accesskey
-msgid "t"
-msgstr "k"
+msgid "i"
+msgstr ""
 
 #: viewCerts.label viewCerts.accesskey
-msgid "&View Certificates"
-msgstr "&Bekyk sertifikate"
+#, fuzzy
+msgid "View Certificate&s"
+msgstr "Bekyk &sertifikate"
 
 #: viewCRLs.label viewCRLs.accesskey
 msgid "&Revocation Lists"
 msgstr "&Opheffingslyste"
 
 #: verify.label verify.accesskey
-msgid "Ver&ification"
-msgstr ""
+msgid "&Verification"
+msgstr "&Stawing"
 
 #: viewSecurityDevices.label viewSecurityDevices.accesskey
 msgid "Securit&y Devices"
 msgstr "Sekur&iteitstoestelle"
 
-#: moveSystemCaret.label moveSystemCaret.accesskey
-msgid "Allow text to &be selected with the keyboard"
-msgstr "Laat teks toe om &met die sleutelbord gemerk te word"
+#~ msgid "Installed E&xtensions and Themes"
+#~ msgstr "Geïnstalleerde u&itbreidings en temas"
 
-#: useTypeAheadFind.label useTypeAheadFind.accesskey
-msgid "Begin finding when you begin ty&ping"
-msgstr "Begin vind sodra u begin ti&ik"
+#~ msgid "Check Now..."
+#~ msgstr "Kontroleer nou..."
 
-#: enableAutoImageResizing.label enableAutoImageResizing.accesskey
-msgid "Resi&ze large images to fit in the browser window"
-msgstr "Sk&aleer groot prente om in blaaiervenster te pas"
+#~ msgid "N"
+#~ msgstr "N"
 
-#: useAutoScrolling.label useAutoScrolling.accesskey
-msgid "U&se autoscrolling"
-msgstr "G&ebruik outorol"
+#~ msgid "&Warn me if this will disable extensions or themes"
+#~ msgstr "&Waarsku my indien dit uitbreidings of temas sal deaktiveer"
 
-#: modeAskMe.label modeAskMe.accesskey
-msgid "&Ask me what I want to do"
-msgstr "&Vra my wat ek wil doen"
+# No accesskey for gopher (':' doesn't go well) - mpt's going to redesign the window
+# No accesskey for gopher (':' doesn't go well) - mpt's going to redesign the window#: SOCKSport.accesskey
+#~ msgid "t"
+#~ msgstr "k"
 
-#: showUpdates.label showUpdates.accesskey
-msgid "Show &Update History"
-msgstr "Wys &opdateringgeskiedenis"
+#~ msgid "&View Certificates"
+#~ msgstr "&Bekyk sertifikate"
 
-#: securityTab.label
-msgid "Security"
-msgstr "Sekuriteit"
+#~ msgid "Allow text to &be selected with the keyboard"
+#~ msgstr "Laat teks toe om &met die sleutelbord gemerk te word"
 
-#: certselect.auto
-msgid ""
-"_: certselect.auto\n"
-"Select one automatically"
-msgstr "Kies een outomaties"
+#~ msgid "Begin finding when you begin ty&ping"
+#~ msgstr "Begin vind sodra u begin ti&ik"
 
-#: certselect.auto.accesskey
-msgid "e"
-msgstr "e"
+#~ msgid "Resi&ze large images to fit in the browser window"
+#~ msgstr "Sk&aleer groot prente om in blaaiervenster te pas"
 
-#: certselect.ask
-msgid ""
-"_: certselect.ask\n"
-"Ask me every time"
-msgstr "Vra my elke keer"
+#~ msgid "U&se autoscrolling"
+#~ msgstr "G&ebruik outorol"
 
-#: certselect.ask.accesskey
-msgid "k"
-msgstr "a"
+#~ msgid "&Ask me what I want to do"
+#~ msgstr "&Vra my wat ek wil doen"
 
-#: viewCertificates.label viewCertificates.accesskey
-msgid "View &Certificates"
-msgstr "Bekyk &sertifikate"
+#~ msgid "Show &Update History"
+#~ msgstr "Wys &opdateringgeskiedenis"
 
-#: viewOCSP.label viewOCSP.accesskey
-msgid "&Verification"
-msgstr "&Stawing"
+#~ msgid "Security"
+#~ msgstr "Sekuriteit"
 
-#: securityWarnings.label
-msgid "Warnings"
-msgstr ""
+#~ msgid "e"
+#~ msgstr "e"
 
-#: securityWarnings.description
-msgid "Choose which security warnings should be displayed while browsing."
-msgstr ""
+#~ msgid "k"
+#~ msgstr "a"
 
-#: securityWarningsButton.label securityWarningsButton.accesskey
-msgid "Confi&gure Security Warnings"
-msgstr ""
+#~ msgid "Choose Languages web pages are displayed in."
+#~ msgstr "Kies tale waarin webbladsye vertoon moet word."
 
-#: languages.caption
-msgid ""
-"_: languages.caption\n"
-"Languages"
-msgstr "Tale"
-
-#: languagesInfo.label
-msgid "Choose Languages web pages are displayed in."
-msgstr "Kies tale waarin webbladsye vertoon moet word."
-
-#: showLanguages.label showLanguages.accesskey
-msgid "Edit &Languages..."
-msgstr "Redigeer &tale..."
-
-#: safeBrowsingTab.label
-msgid "Anti-Phishing"
-msgstr ""
-
-#: safeBrowsing.label
-msgid "While I'm browsing the Internet:"
-msgstr ""
-
-#: safeBrowsingEnable.label safeBrowsingEnable.accesskey
-msgid "Check t&o see if the site I'm visiting might be a scam"
-msgstr ""
-
-#: safeBrowsingLocal.label safeBrowsingLocal.accesskey
-msgid "Using a locally s&tored list"
-msgstr ""
-
-#: safeBrowsingRemote.label safeBrowsingRemote.accesskey
-msgid "By ask&ing:"
-msgstr ""
+#~ msgid "Edit &Languages..."
+#~ msgstr "Redigeer &tale..."
 
 #~ msgid "Be&gin finding when you begin typing"
 #~ msgstr "Be&gin vind sodra u begin tik"
 
 #~ msgid "Use SSL &2.0"
 #~ msgstr "Gebruik SSL &2.0"
-
-#~ msgid "Select one automatically"
-#~ msgstr "Kies een outomaties"
-
-#~ msgid "Ask me every time"
-#~ msgstr "Vra my elke keer"
-
-#~ msgid "Languages"
-#~ msgstr "Tale"
