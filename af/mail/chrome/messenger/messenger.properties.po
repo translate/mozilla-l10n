@@ -41,7 +41,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-07-29 02:37+0200\n"
+"POT-Creation-Date: 2006-10-03 11:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc5\n"
+"X-Generator: Translate Toolkit 0.10rc4\n"
 "X-Accelerator-Marker: &\n"
 
 #
@@ -129,6 +129,7 @@ msgstr "Open boodskap"
 
 # LOCALIZATION NOTES(defaultSaveMessageAsFileName): Do not translate ".eml" 
 # in the line below.  Also, the complete file name should 8.3
+# LOCALIZATION NOTES(defaultSaveMessageAsFileName): Do not translate ".eml"
 #: defaultSaveMessageAsFileName
 msgid "message.eml"
 msgstr "boodskap.eml"
@@ -245,9 +246,9 @@ msgstr ""
 msgid "Compacting folder %S..."
 msgstr "Kompakteer tans vouer %S..."
 
-#: compactingDone
-msgid "Done compacting folders"
-msgstr "Klaar vouers gekompakteer"
+#: doneCompacting
+msgid "Done compacting"
+msgstr ""
 
 #: autoCompactAllFoldersTitle
 msgid "Compact Folders"
@@ -421,9 +422,7 @@ msgid "<not specified>"
 msgstr "<nie gespesifiseer nie>"
 
 #: smtpServer-SecureConnection-Type-0
-msgid ""
-"_: smtpServer-SecureConnection-Type-0\n"
-"None"
+msgid "None"
 msgstr "Geen"
 
 #: smtpServer-SecureConnection-Type-1
@@ -470,10 +469,6 @@ msgid "Local Mail Store"
 msgstr "Plaaslike posstoor"
 
 # LOCALIZATION NOTES(serverType-movemail): DONT_TRANSLATE
-#: serverType-movemail
-msgid "Unix Movemail"
-msgstr "Unix Movemail"
-
 #: sizeColumnTooltip
 msgid "Click to sort by size"
 msgstr "Kliek om volgens grootte te sorteer"
@@ -625,21 +620,22 @@ msgstr "Aanhegsels"
 
 # Grouped by starred
 #: notFlagged
+#, fuzzy
 msgid "Not Starred"
-msgstr ""
+msgstr "Nie begin nie"
 
 #: groupFlagged
+#, fuzzy
 msgid ""
 "_: groupFlagged\n"
 "Starred"
-msgstr ""
+msgstr "Het begin:"
 
-# defaults for labels prefs listed in mailnews.js
-#: mailnews.labels.description.0
-msgid ""
-"_: mailnews.labels.description.0\n"
-"None"
-msgstr "Geen"
+# defaults descriptions for tag prefs listed in mailnews.js
+# (we keep the .labels. names for backwards compatibility)
+#: mailnews.tags.remove
+msgid "Remove All Tags"
+msgstr ""
 
 #: mailnews.labels.description.1
 msgid "Important"
@@ -661,41 +657,20 @@ msgstr "Moetdoen"
 msgid "Later"
 msgstr "Later"
 
-# Format definition for label menu text.  This is necessary in order to
-# get the access key to be the on the first character of the menu text
-# instead of after the menu text.  The access keys for each of the label
-# items have been set to be the number preceeding '%S' listed below.
-#
-# '%S' is the prefs defined above, mailnews.labels.description.X.
-#   ie: 0 None
-#       1 Important
-#       2 Work
-#       3 Personal
-#       4 To Do
-#       5 Later
-#: labelMenuItemFormat0
-msgid "0 %S"
-msgstr "0 %S"
-
-#: labelMenuItemFormat1
-msgid "1 %S"
-msgstr "1 %S"
-
-#: labelMenuItemFormat2
-msgid "2 %S"
-msgstr "2 %S"
-
-#: labelMenuItemFormat3
-msgid "3 %S"
-msgstr "3 %S"
-
-#: labelMenuItemFormat4
-msgid "4 %S"
-msgstr "4 %S"
-
-#: labelMenuItemFormat5
-msgid "5 %S"
-msgstr "5 %S"
+# Format definition tag menu texts.
+# This is necessary in order to get the accesskeys to be the on the first
+# character of the menu text instead of after the menu text.
+# If a key definition exists for the tag at index n, that key's key will be
+# taken as the accesskey, eg.
+#   <key id="key_tag3" key="&tagCmd3.key;" oncommand="ToggleMessageTagKey(3);"/>
+# makes the third tag have the accesskey &tagCmd3.key;.
+# In the menuitem's label, this accesskey appears at %1$S below; %2$S will be
+# replaced by the tag label.
+# # LOCALIZATION NOTE (cityOrStateAndZip):
+# # %1$S is city or state, %2$S is zip
+#: mailnews.tags.format
+msgid "%1$S %2$S"
+msgstr "%1$S %2$S"
 
 #: replied
 msgid "Replied"
@@ -714,10 +689,11 @@ msgid "Read"
 msgstr "Lees"
 
 #: flagged
+#, fuzzy
 msgid ""
 "_: flagged\n"
 "Starred"
-msgstr ""
+msgstr "Het begin:"
 
 # for junk status picker in search and mail views
 #: junk
@@ -733,8 +709,9 @@ msgstr "Het aanhegsels"
 
 # for the Tag picker in search and mail views.
 #: tag
+#, fuzzy
 msgid "Tags"
-msgstr ""
+msgstr "Merker"
 
 # mailnews.js
 #: mailnews.send_default_charset
@@ -831,8 +808,9 @@ msgstr "Nuus"
 
 # LOCALIZATION NOTES(nocachedbodytitle): Do not translate "<TITLE>" or "</TITLE>" in the line below
 #: nocachedbodytitle
+#, fuzzy
 msgid "<TITLE>Go Online to View This Message</TITLE>\n"
-msgstr ""
+msgstr "<TITLE>Gaan aanlyn om hierdie boodskap te bekyk</TITLE>"
 
 # mailWindowOverlay.js
 #: confirmUnsubscribeTitle
@@ -953,6 +931,7 @@ msgid "Subject or Sender contains:"
 msgstr "Onderwerp of afsender bevat:"
 
 # LOCALIZATION NOTES(biffNotification): %1$S is the number of new messages  
+# LOCALIZATION NOTES(biffNotification): %1$S is the number of new messages
 #: biffNotification_message
 msgid "has %1$S new message"
 msgstr "het %1$S nuwe boodskap"
@@ -1137,6 +1116,71 @@ msgstr ""
 msgid "Recent Folders"
 msgstr ""
 
+# Copy / Move to Folder Again
+# LOCALIZATION NOTE %1$S is the name of the folder we will move to. moveToFolderAgainAccessKey
+# should have the same value as copyToFolderAgainAccessKey as they are the same menu item in the UI
+# moveToFolderAgainAccessKey should also be a letter that occurs before %1$S
+#: moveToFolderAgain
+msgid "Move to \"%1$S\" Again"
+msgstr ""
+
+#: moveToFolderAgainAccessKey
+msgid ""
+"_: moveToFolderAgainAccessKey\n"
+"t"
+msgstr "p"
+
+# LOCALIZATION NOTE %1$S is the name of the folder we will copy to
+# copyToFolderAgainAccessKey
+# should have the same value as moveToFolderAgainAccessKey as they are the same menu item in the UI
+# copyToFolderAgainAccessKey should also be a letter that occurs before %1$S
+#: copyToFolderAgain
+msgid "Copy to \"%1$S\" Again"
+msgstr ""
+
+#: copyToFolderAgainAccessKey
+msgid ""
+"_: copyToFolderAgainAccessKey\n"
+"t"
+msgstr "p"
+
+#~ msgid "Done compacting folders"
+#~ msgstr "Klaar vouers gekompakteer"
+
+# LOCALIZATION NOTES(serverType-movemail): DONT_TRANSLATE
+#~ msgid "Unix Movemail"
+#~ msgstr "Unix Movemail"
+
+# Format definition for label menu text.  This is necessary in order to
+# get the access key to be the on the first character of the menu text
+# instead of after the menu text.  The access keys for each of the label
+# items have been set to be the number preceeding '%S' listed below.
+#
+# '%S' is the prefs defined above, mailnews.labels.description.X.
+#   ie: 0 None
+#       1 Important
+#       2 Work
+#       3 Personal
+#       4 To Do
+#       5 Later
+#~ msgid "0 %S"
+#~ msgstr "0 %S"
+
+#~ msgid "1 %S"
+#~ msgstr "1 %S"
+
+#~ msgid "2 %S"
+#~ msgstr "2 %S"
+
+#~ msgid "3 %S"
+#~ msgstr "3 %S"
+
+#~ msgid "4 %S"
+#~ msgstr "4 %S"
+
+#~ msgid "5 %S"
+#~ msgstr "5 %S"
+
 #~ msgid "Rename Folder..."
 #~ msgstr "Hernoem vouer..."
 
@@ -1158,16 +1202,6 @@ msgstr ""
 # separator for search date (e.g. "/", "-"), or empty when search_date_format is zero
 #~ msgid "The body of this message has not been downloaded from"
 #~ msgstr "Die lyf van hierdie boodskap is nog nie afgelaai nie van"
-
-# LOCALIZATION NOTES(nocachedbodytitle): Do not translate "<TITLE>" or "</TITLE>" in the line below
-#~ msgid "<TITLE>Go Online to View This Message</TITLE>"
-#~ msgstr "<TITLE>Gaan aanlyn om hierdie boodskap te bekyk</TITLE>"
-
-# for checking if the user really wants to delete the adaptive filter training set
-#~ msgid ""
-#~ "_: confirmResetJunkTrainingTitle\n"
-#~ "Confirm"
-#~ msgstr "Bevestig"
 
 #~ msgid "Are you sure you want to reset the adaptive filter training data?"
 #~ msgstr "Is jy seker jy wil die aanpassende filteropleidingdata terugstel?"
