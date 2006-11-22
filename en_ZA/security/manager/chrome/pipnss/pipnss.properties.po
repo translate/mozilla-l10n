@@ -1,30 +1,23 @@
-#
 # ***** BEGIN LICENSE BLOCK *****
 # Version: MPL 1.1/GPL 2.0/LGPL 2.1
-#
 # The contents of this file are subject to the Mozilla Public License Version
 # 1.1 (the "License"); you may not use this file except in compliance with
 # the License. You may obtain a copy of the License at
 # http://www.mozilla.org/MPL/
-#
 # Software distributed under the License is distributed on an "AS IS" basis,
 # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
 # for the specific language governing rights and limitations under the
 # License.
-#
 # The Original Code is mozilla.org code.
-#
 # The Initial Developer of the Original Code is
 # Netscape Communications Corporation.
 # Portions created by the Initial Developer are Copyright (C) 1998
 # the Initial Developer. All Rights Reserved.
-#
 # Contributor(s):
 #   Javier Delgadillo <javi@netscape.com>
 #   Brian Ryner <bryner@brianryner.com>
 #   Terry Hayes <thayes@netscape.com>
 #   John Gardiner Myers <jgmyers@speakeasy.net>
-#
 # Alternatively, the contents of this file may be used under the terms of
 # either the GNU General Public License Version 2 or later (the "GPL"), or
 # the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
@@ -36,7 +29,6 @@
 # and other provisions required by the GPL or the LGPL. If you do not delete
 # the provisions above, a recipient may use your version of this file under
 # the terms of any one of the MPL, the GPL or the LGPL.
-#
 # ***** END LICENSE BLOCK *****
 # extracted from en-US/mozilla/security/manager/locales/en-US/chrome/pipnss/pipnss.properties
 #, fuzzy
@@ -44,7 +36,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 14:29+0200\n"
+"POT-Creation-Date: 2006-11-22 16:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,11 +44,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 0.10.90\n"
+"X-Accelerator-Marker: &\n"
 
 #: SignedBy
-msgid "Signed by %S"
-msgstr "Signed by %S"
+msgid "Authenticated by %S"
+msgstr ""
 
 #: CertPassPrompt
 msgid "Please enter the master password for the %S."
@@ -69,6 +62,7 @@ msgstr "Please enter the master password for the %S."
 # the space allocated.
 #
 # 64 bytes long after conversion to UTF8
+# whether the escaped unicode string you produce will fit in
 #: RootCertModuleName
 msgid "Builtin Roots Module"
 msgstr "Builtin Roots Module"
@@ -97,8 +91,7 @@ msgstr "Generic Crypto Services"
 msgid ""
 "_: PrivateTokenDescription\n"
 "Software Security Device"
-msgstr ""
-"Software Security Device"
+msgstr "Software Security Device"
 
 #
 # 64 bytes long after conversion to UTF8
@@ -128,8 +121,7 @@ msgstr "PSM FIPS-140-1 User Private Key Services"
 msgid ""
 "_: InternalToken\n"
 "Software Security Device"
-msgstr ""
-"Software Security Device"
+msgstr "Software Security Device"
 
 # End of size restriction.
 #: VerifySSLClient
@@ -160,15 +152,13 @@ msgstr "Email Recipient Certificate"
 msgid ""
 "_: VerifyProtectObjSign\n"
 "Protected Object Signer"
-msgstr ""
-"Protected Object Signer"
+msgstr "Protected Object Signer"
 
 #: VerifyObjSign
 msgid ""
 "_: VerifyObjSign\n"
 "Object Signer"
-msgstr ""
-"Object Signer"
+msgstr "Object Signer"
 
 #: VerifyUserImport
 msgid "User Import Cert"
@@ -178,8 +168,7 @@ msgstr "User Import Cert"
 msgid ""
 "_: VerifyCAVerifier\n"
 "CA Verifier"
-msgstr ""
-"CA Verifier"
+msgstr "CA Verifier"
 
 #: VerifyStatusResponder
 msgid "Status Responder Certificate"
@@ -205,6 +194,7 @@ msgstr "%1$s's %2$s ID"
 msgid "%1$s's %2$s ID #%3$d"
 msgstr "%1$s's %2$s ID #%3$d"
 
+# These are the strings set for the ASN1 objects in a certificate.
 # These are the strings set for the ASN1 objects in a certificate.
 #: CertDumpCertificate
 msgid "Certificate"
@@ -538,6 +528,455 @@ msgstr "Certificate Signature Value"
 msgid "Error: Unable to process extension"
 msgstr "Error: Unable to process extension"
 
+#: CertDumpIsCA
+msgid "Is a Certificate Authority"
+msgstr ""
+
+#: CertDumpIsNotCA
+msgid "Is not a Certificate Authority"
+msgstr ""
+
+#: CertDumpPathLen
+msgid "Maximum number of intermediate CAs: %S"
+msgstr ""
+
+#: CertDumpPathLenUnlimited
+msgid "unlimited"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_5_5_7_3_1
+msgid "TLS Web Server Authentication"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_5_5_7_3_2
+msgid "TLS Web Client Authentication"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_5_5_7_3_3
+msgid "Code Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_5_5_7_3_4
+msgid "E-mail protection"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_5_5_7_3_8
+msgid "Time Stamping"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_5_5_7_3_9
+msgid "OCSP Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_2_1_21
+msgid "Microsoft Individual Code Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_2_1_22
+msgid "Microsoft Commercial Code Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_1
+msgid "Microsoft Trust List Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_2
+msgid "Microsoft Time Stamping"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_3
+msgid "Microsoft Server Gated Crypto"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_4
+msgid "Microsoft Encrypting File System"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_4_1
+msgid "Microsoft File Recovery"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_5
+msgid "Microsoft Windows Hardware Driver Verification"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_10
+msgid "Microsoft Qualified Subordination"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_11
+msgid "Microsoft Key Recovery"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_12
+msgid "Microsoft Document Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_13
+msgid "Microsoft Lifetime Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_20_2_2
+msgid "Microsoft Smart Card Logon"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_21_6
+msgid "Microsoft Key Recovery Agent"
+msgstr ""
+
+#: CertDumpMSCerttype
+msgid "Microsoft Certificate Template Name"
+msgstr ""
+
+#: CertDumpMSNTPrincipal
+msgid "Microsoft Principal Name"
+msgstr ""
+
+#: CertDumpMSCAVersion
+msgid "Microsoft CA Version"
+msgstr ""
+
+#: CertDumpMSDomainGUID
+msgid "Microsoft Domain GUID"
+msgstr ""
+
+#: CertDumpEKU_2_16_840_1_113730_4_1
+msgid "Netscape Server Gated Crypto"
+msgstr ""
+
+#: CertDumpRFC822Name
+msgid "E-Mail Address"
+msgstr ""
+
+#: CertDumpDNSName
+msgid "DNS Name"
+msgstr ""
+
+#: CertDumpX400Address
+msgid "X.400 Address"
+msgstr ""
+
+#: CertDumpDirectoryName
+msgid "X.500 Name"
+msgstr ""
+
+#: CertDumpEDIPartyName
+msgid "EDI Party Name"
+msgstr ""
+
+#: CertDumpURI
+msgid "URI"
+msgstr ""
+
+#: CertDumpIPAddress
+msgid "IP Address"
+msgstr ""
+
+#: CertDumpRegisterID
+msgid "Registered OID"
+msgstr ""
+
+#: CertDumpKeyID
+msgid "Key ID"
+msgstr ""
+
+#: CertDumpVerisignNotices
+msgid "Verisign User Notices"
+msgstr ""
+
+#: CertDumpUnused
+msgid "Unused"
+msgstr ""
+
+#: CertDumpKeyCompromise
+msgid "Key Compromise"
+msgstr ""
+
+#: CertDumpCACompromise
+msgid "CA Compromise"
+msgstr ""
+
+#: CertDumpAffiliationChanged
+msgid "Affiliation Changed"
+msgstr ""
+
+#: CertDumpSuperseded
+msgid "Superseded"
+msgstr ""
+
+#: CertDumpCessation
+msgid "Cessation of Operation"
+msgstr ""
+
+#: CertDumpHold
+msgid "Certificate Hold"
+msgstr ""
+
+#: CertDumpOCSPResponder
+msgid "OCSP"
+msgstr ""
+
+#: CertDumpCAIssuers
+msgid "CA Issuers"
+msgstr ""
+
+#: CertDumpCPSPointer
+msgid "Certification Practice Statement pointer"
+msgstr ""
+
+#: CertDumpUserNotice
+msgid "User Notice"
+msgstr ""
+
+#: CertDumpLogotype
+msgid "Logotype"
+msgstr ""
+
+#: CertDumpECPublicKey
+msgid "Elliptic Curve Public Key"
+msgstr ""
+
+#: CertDumpECDSAWithSHA1
+#, fuzzy
+msgid "X9.62 ECDSA Signature with SHA1"
+msgstr "ANSI X9.62 ECDSA Signature with SHA1"
+
+#: CertDumpECprime192v1
+msgid "ANSI X9.62 elliptic curve prime192v1 (aka secp192r1, NIST P-192)"
+msgstr ""
+
+#: CertDumpECprime192v2
+msgid "ANSI X9.62 elliptic curve prime192v2"
+msgstr ""
+
+#: CertDumpECprime192v3
+msgid "ANSI X9.62 elliptic curve prime192v3"
+msgstr ""
+
+#: CertDumpECprime239v1
+msgid "ANSI X9.62 elliptic curve prime239v1"
+msgstr ""
+
+#: CertDumpECprime239v2
+msgid "ANSI X9.62 elliptic curve prime239v2"
+msgstr ""
+
+#: CertDumpECprime239v3
+msgid "ANSI X9.62 elliptic curve prime239v3"
+msgstr ""
+
+#: CertDumpECprime256v1
+msgid "ANSI X9.62 elliptic curve prime256v1 (aka secp256r1, NIST P-256)"
+msgstr ""
+
+#: CertDumpECsecp112r1
+msgid "SECG elliptic curve secp112r1"
+msgstr ""
+
+#: CertDumpECsecp112r2
+msgid "SECG elliptic curve secp112r2"
+msgstr ""
+
+#: CertDumpECsecp128r1
+msgid "SECG elliptic curve secp128r1"
+msgstr ""
+
+#: CertDumpECsecp128r2
+msgid "SECG elliptic curve secp128r2"
+msgstr ""
+
+#: CertDumpECsecp160k1
+msgid "SECG elliptic curve secp160k1"
+msgstr ""
+
+#: CertDumpECsecp160r1
+msgid "SECG elliptic curve secp160r1"
+msgstr ""
+
+#: CertDumpECsecp160r2
+msgid "SECG elliptic curve secp160r2"
+msgstr ""
+
+#: CertDumpECsecp192k1
+msgid "SECG elliptic curve secp192k1"
+msgstr ""
+
+#: CertDumpECsecp224k1
+msgid "SECG elliptic curve secp224k1"
+msgstr ""
+
+#: CertDumpECsecp224r1
+msgid "SECG elliptic curve secp224r1 (aka NIST P-224)"
+msgstr ""
+
+#: CertDumpECsecp256k1
+msgid "SECG elliptic curve secp256k1"
+msgstr ""
+
+#: CertDumpECsecp384r1
+msgid "SECG elliptic curve secp384r1 (aka NIST P-384)"
+msgstr ""
+
+#: CertDumpECsecp521r1
+msgid "SECG elliptic curve secp521r1 (aka NIST P-521)"
+msgstr ""
+
+#: CertDumpECc2pnb163v1
+msgid "ANSI X9.62 elliptic curve c2pnb163v1"
+msgstr ""
+
+#: CertDumpECc2pnb163v2
+msgid "ANSI X9.62 elliptic curve c2pnb163v2"
+msgstr ""
+
+#: CertDumpECc2pnb163v3
+msgid "ANSI X9.62 elliptic curve c2pnb163v3"
+msgstr ""
+
+#: CertDumpECc2pnb176v1
+msgid "ANSI X9.62 elliptic curve c2pnb176v1"
+msgstr ""
+
+#: CertDumpECc2tnb191v1
+msgid "ANSI X9.62 elliptic curve c2tnb191v1"
+msgstr ""
+
+#: CertDumpECc2tnb191v2
+msgid "ANSI X9.62 elliptic curve c2tnb191v2"
+msgstr ""
+
+#: CertDumpECc2tnb191v3
+msgid "ANSI X9.62 elliptic curve c2tnb191v3"
+msgstr ""
+
+#: CertDumpECc2onb191v4
+msgid "ANSI X9.62 elliptic curve c2onb191v4"
+msgstr ""
+
+#: CertDumpECc2onb191v5
+msgid "ANSI X9.62 elliptic curve c2onb191v5"
+msgstr ""
+
+#: CertDumpECc2pnb208w1
+msgid "ANSI X9.62 elliptic curve c2pnb208w1"
+msgstr ""
+
+#: CertDumpECc2tnb239v1
+msgid "ANSI X9.62 elliptic curve c2tnb239v1"
+msgstr ""
+
+#: CertDumpECc2tnb239v2
+msgid "ANSI X9.62 elliptic curve c2tnb239v2"
+msgstr ""
+
+#: CertDumpECc2tnb239v3
+msgid "ANSI X9.62 elliptic curve c2tnb239v3"
+msgstr ""
+
+#: CertDumpECc2onb239v4
+msgid "ANSI X9.62 elliptic curve c2onb239v4"
+msgstr ""
+
+#: CertDumpECc2onb239v5
+msgid "ANSI X9.62 elliptic curve c2onb239v5"
+msgstr ""
+
+#: CertDumpECc2pnb272w1
+msgid "ANSI X9.62 elliptic curve c2pnb272w1"
+msgstr ""
+
+#: CertDumpECc2pnb304w1
+msgid "ANSI X9.62 elliptic curve c2pnb304w1"
+msgstr ""
+
+#: CertDumpECc2tnb359v1
+msgid "ANSI X9.62 elliptic curve c2tnb359v1"
+msgstr ""
+
+#: CertDumpECc2pnb368w1
+msgid "ANSI X9.62 elliptic curve c2pnb368w1"
+msgstr ""
+
+#: CertDumpECc2tnb431r1
+msgid "ANSI X9.62 elliptic curve c2tnb431r1"
+msgstr ""
+
+#: CertDumpECsect113r1
+msgid "SECG elliptic curve sect113r1"
+msgstr ""
+
+#: CertDumpECsect113r2
+msgid "SECG elliptic curve sect113r2"
+msgstr ""
+
+#: CertDumpECsect131r1
+msgid "SECG elliptic curve sect131r1"
+msgstr ""
+
+#: CertDumpECsect131r2
+msgid "SECG elliptic curve sect131r2"
+msgstr ""
+
+#: CertDumpECsect163k1
+msgid "SECG elliptic curve sect163k1 (aka NIST K-163)"
+msgstr ""
+
+#: CertDumpECsect163r1
+msgid "SECG elliptic curve sect163r1"
+msgstr ""
+
+#: CertDumpECsect163r2
+msgid "SECG elliptic curve sect163r2 (aka NIST B-163)"
+msgstr ""
+
+#: CertDumpECsect193r1
+msgid "SECG elliptic curve sect193r1"
+msgstr ""
+
+#: CertDumpECsect193r2
+msgid "SECG elliptic curve sect193r2"
+msgstr ""
+
+#: CertDumpECsect233k1
+msgid "SECG elliptic curve sect233k1 (aka NIST K-233)"
+msgstr ""
+
+#: CertDumpECsect233r1
+msgid "SECG elliptic curve sect233r1 (aka NIST B-233)"
+msgstr ""
+
+#: CertDumpECsect239k1
+msgid "SECG elliptic curve sect239k1"
+msgstr ""
+
+#: CertDumpECsect283k1
+msgid "SECG elliptic curve sect283k1 (aka NIST K-283)"
+msgstr ""
+
+#: CertDumpECsect283r1
+msgid "SECG elliptic curve sect283r1 (aka NIST B-283)"
+msgstr ""
+
+#: CertDumpECsect409k1
+msgid "SECG elliptic curve sect409k1 (aka NIST K-409)"
+msgstr ""
+
+#: CertDumpECsect409r1
+msgid "SECG elliptic curve sect409r1 (aka NIST B-409)"
+msgstr ""
+
+#: CertDumpECsect571k1
+msgid "SECG elliptic curve sect571k1 (aka NIST K-571)"
+msgstr ""
+
+#: CertDumpECsect571r1
+msgid "SECG elliptic curve sect571r1 (aka NIST B-571)"
+msgstr ""
+
+#: CertDumpRawBytesHeader
+msgid "Size: %S Bytes / %S Bits"
+msgstr ""
+
 #: VerifySSLClient_p
 msgid "Client"
 msgstr "Client"
@@ -566,15 +1005,13 @@ msgstr "Encrypt"
 msgid ""
 "_: VerifyProtectObjSign_p\n"
 "Protected Object Signer"
-msgstr ""
-"Protected Object Signer"
+msgstr "Protected Object Signer"
 
 #: VerifyObjSign_p
 msgid ""
 "_: VerifyObjSign_p\n"
 "Object Signer"
-msgstr ""
-"Object Signer"
+msgstr "Object Signer"
 
 #: VerifyUserImport_p
 msgid "User Import"
@@ -584,8 +1021,7 @@ msgstr "User Import"
 msgid ""
 "_: VerifyCAVerifier_p\n"
 "CA Verifier"
-msgstr ""
-"CA Verifier"
+msgstr "CA Verifier"
 
 #: VerifyStatusResponder_p
 msgid "Status Responder"
@@ -738,21 +1174,24 @@ msgstr "(Unknown Organization)"
 msgid "%S = %S"
 msgstr "%S = %S"
 
-#: SSLDisabled
-msgid "You cannot connect to %S because SSL is disabled."
-msgstr "You cannot connect to %S because SSL is disabled."
-
-#: SSL2Disabled
-msgid "You cannot connect to %S because SSL version 2 is disabled."
-msgstr "You cannot connect to %S because SSL version 2 is disabled."
-
-#: SSLNoMatchingCiphers
+# for the next 3 lines, %1$S will be product name (e.g. Firefox), %2$S will be the www.example.com address we connect to
+#: SSL_Disabled
 msgid ""
-"%S and %S cannot communicate securely because they have no common encryption "
-"algorithms."
+"%1$S can't connect securely to %2$S because the SSL protocol has been "
+"disabled."
 msgstr ""
-"%S and %S cannot communicate securely because they have no common encryption "
-"algorithms."
+
+#: SSL2_Disabled
+msgid ""
+"%1$S can't connect securely to %2$S because the site uses an older, insecure "
+"version of the SSL protocol."
+msgstr ""
+
+#: SSL_NoMatchingCiphers
+msgid ""
+"%1$S can't connect securely to %2$S because the site uses a security "
+"protocol which isn't enabled."
+msgstr ""
 
 #: UsersCertRevoked
 msgid ""
@@ -1002,6 +1441,12 @@ msgstr ""
 "Error trying to validate certificate from %S using OCSP - directory lookup "
 "error."
 
+#: OCSPDeadlock
+msgid ""
+"An internal failure has been detected. It is not possible to complete the "
+"requested OCSP operation."
+msgstr ""
+
 #: CertInfoIssuedFor
 msgid "Issued to:"
 msgstr "Issued to:"
@@ -1144,3 +1589,57 @@ msgstr "(no nickname)"
 msgid "(no email address)"
 msgstr "(no email address)"
 
+#: NicknameExpired
+#, fuzzy
+msgid "(expired)"
+msgstr "<Expired>"
+
+#: NicknameNotYetValid
+msgid "(not yet valid)"
+msgstr ""
+
+#: CaCertExists
+msgid "This certificate is already installed as a certificate authority."
+msgstr ""
+
+#: NotACACert
+msgid ""
+"This is not a certificate authority certificate, so it can't be imported "
+"into the certificate authority list."
+msgstr ""
+
+#: NotImportingUnverifiedCert
+msgid ""
+"This certificate can't be verified and will not be imported. The certificate "
+"issuer might be unknown or untrusted, the certificate might have expired or "
+"been revoked, or the certificate might not have been approved."
+msgstr ""
+
+#: UserCertIgnoredNoPrivateKey
+msgid ""
+"This personal certificate can't be installed because you do not own the "
+"corresponding private key which was created when the certificate was "
+"requested."
+msgstr ""
+
+#: UserCertImported
+msgid ""
+"Your personal certificate has been installed. You should keep a backup copy "
+"of this certificate."
+msgstr ""
+
+#~ msgid "Signed by %S"
+#~ msgstr "Signed by %S"
+
+#~ msgid "You cannot connect to %S because SSL is disabled."
+#~ msgstr "You cannot connect to %S because SSL is disabled."
+
+#~ msgid "You cannot connect to %S because SSL version 2 is disabled."
+#~ msgstr "You cannot connect to %S because SSL version 2 is disabled."
+
+#~ msgid ""
+#~ "%S and %S cannot communicate securely because they have no common "
+#~ "encryption algorithms."
+#~ msgstr ""
+#~ "%S and %S cannot communicate securely because they have no common "
+#~ "encryption algorithms."

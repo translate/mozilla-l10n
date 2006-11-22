@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 14:29+0200\n"
+"POT-Creation-Date: 2006-11-22 16:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 0.10.90\n"
+"X-Accelerator-Marker: &\n"
+
+#: blankpage
+msgid "(blank page)"
+msgstr ""
+
+# LOCALIZATION NOTE: bookmarkjoiner is used to separate bookmark names when
+#                    multiple bookmarks have been chosen as a home page and
+#                    their names must be displayed.  (Note that there is a
+#                    trailing space in the value defined below.)
+#: bookmarkjoiner
+msgid ","
+msgstr ""
 
 #: choosehomepage
 msgid "Choose Home Page"
@@ -32,19 +45,48 @@ msgid "Choose a file"
 msgstr "Choose a file"
 
 # ### Content
+#: addReader
+msgid "Add New Reader..."
+msgstr ""
+
+# ### Security
+# LOCALIZATION NOTE: phishBefore uses %S to represent the name of the provider
+#                    whose privacy policy must be accepted (for enabling
+#                    check-every-page-as-I-load-it phishing protection).
+#: phishBeforeText
+msgid ""
+"Selecting this option will send the address of web pages you are viewing to %"
+"S. To continue, please review and accept the following terms of service."
+msgstr ""
+
+# ### Content
 #: setMasterPassword
 msgid "Set Master Password..."
 msgstr "Set Master Password..."
+
+#: setMasterPassword_accesskey
+msgid ""
+"_: setMasterPassword_accesskey\n"
+"M"
+msgstr ""
 
 #: changeMasterPassword
 msgid "Change Master Password..."
 msgstr "Change Master Password..."
 
+#: changeMasterPassword_accesskey
+msgid ""
+"_: changeMasterPassword_accesskey\n"
+"M"
+msgstr ""
+
+# ### Fonts
 # ### Fonts
 #: labelDefaultFont
 msgid "Default (%S)"
 msgstr "Default (%S)"
 
+# ### Permissions Manager
 # ### Permissions Manager
 #: cookiepermissionstext
 msgid ""
@@ -60,16 +102,18 @@ msgstr ""
 msgid "Exceptions - Cookies"
 msgstr "Exceptions - Cookies"
 
-#: installpermissionstext
+#: addonspermissionstext
+#, fuzzy
 msgid ""
-"You can specify which web sites are allowed to install software. Type the "
+"You can specify which web sites are allowed to install add-ons. Type the "
 "exact address of the site you want to allow and then click Allow."
 msgstr ""
 "You can specify which web sites are allowed to install software. Type the "
 "exact address of the site you want to allow and then click Allow."
 
-#: installpermissionstitle
-msgid "Allowed Sites - Software Installation"
+#: addons_permissions_title
+#, fuzzy
+msgid "Allowed Sites - Add-ons Installation"
 msgstr "Allowed Sites - Software Installation"
 
 #: popuppermissionstext
@@ -83,20 +127,6 @@ msgstr ""
 #: popuppermissionstitle
 msgid "Allowed Sites - Popups"
 msgstr "Allowed Sites - Popups"
-
-#: downloadpermissionstext
-msgid ""
-"You can specify which web sites are allowed to download files to your "
-"computer. Type the exact address of the site you want to allow and then "
-"click Allow."
-msgstr ""
-"You can specify which web sites are allowed to download files to your "
-"computer. Type the exact address of the site you want to allow and then "
-"click Allow."
-
-#: downloadpermissionstitle
-msgid "Allowed Sites - Downloading Software"
-msgstr "Allowed Sites - Downloading Software"
 
 #: imagepermissionstext
 msgid ""
@@ -118,6 +148,7 @@ msgstr "Please enter a valid hostname"
 msgid "Invalid Hostname Entered"
 msgstr "Invalid Hostname Entered"
 
+# ### Master Password
 # ### Master Password
 #: password_not_set
 msgid "(not set)"
@@ -176,6 +207,7 @@ msgstr "Remove"
 #   and without the region.
 #   e.g. languageRegionCodeFormat : "French/Canada  [fr-ca]" languageCodeFormat : "French  [fr]"
 #   %1$S = language name, %2$S = region name, %3$S = language-region code
+# ### Fonts
 #: languageRegionCodeFormat
 msgid "%1$S/%2$S  [%3$S]"
 msgstr "%1$S/%2$S  [%3$S]"
@@ -191,6 +223,7 @@ msgid "%S dpi"
 msgstr "%S dpi"
 
 # ### Downloads
+# ### Downloads
 #: desktopFolderName
 msgid "Desktop"
 msgstr "Desktop"
@@ -204,6 +237,7 @@ msgid "Choose Download Folder:"
 msgstr "Choose Download Folder:"
 
 # ### Download Actions
+# ### Download Actions
 #: extensionNone
 msgid "(NONE)"
 msgstr "(NONE)"
@@ -212,29 +246,25 @@ msgstr "(NONE)"
 msgid ""
 "_: removeButtonSingle\n"
 "Remove Action"
-msgstr ""
-"Remove Action"
+msgstr "Remove Action"
 
 #: removeButtonMultiple
 msgid ""
 "_: removeButtonMultiple\n"
 "Remove Actions"
-msgstr ""
-"Remove Actions"
+msgstr "Remove Actions"
 
 #: removeTitleSingle
 msgid ""
 "_: removeTitleSingle\n"
 "Remove Action"
-msgstr ""
-"Remove Action"
+msgstr "Remove Action"
 
 #: removeTitleMultiple
 msgid ""
 "_: removeTitleMultiple\n"
 "Remove Actions"
-msgstr ""
-"Remove Actions"
+msgstr "Remove Actions"
 
 #: removeMessageSingle
 msgid ""
@@ -277,6 +307,7 @@ msgstr ""
 "types:"
 
 # ### Change Action
+# ### Change Action
 #: extensionStringFormat
 msgid "%S, %S"
 msgstr "%S, %S"
@@ -297,6 +328,7 @@ msgstr "Select Helper Application"
 msgid "Select Download Folder"
 msgstr "Select Download Folder"
 
+# ### Cookie Viewer
 # ### Cookie Viewer
 #: hostColon
 msgid "Host:"
@@ -350,3 +382,14 @@ msgstr "Remove Cookies"
 msgid "Remove Cookie"
 msgstr "Remove Cookie"
 
+#~ msgid ""
+#~ "You can specify which web sites are allowed to download files to your "
+#~ "computer. Type the exact address of the site you want to allow and then "
+#~ "click Allow."
+#~ msgstr ""
+#~ "You can specify which web sites are allowed to download files to your "
+#~ "computer. Type the exact address of the site you want to allow and then "
+#~ "click Allow."
+
+#~ msgid "Allowed Sites - Downloading Software"
+#~ msgstr "Allowed Sites - Downloading Software"

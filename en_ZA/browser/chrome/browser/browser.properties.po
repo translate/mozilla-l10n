@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-01 23:32+0200\n"
+"POT-Creation-Date: 2006-11-22 16:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 0.10.90\n"
+"X-Accelerator-Marker: &\n"
 
 #: nv_done
 msgid "Done"
@@ -29,6 +30,10 @@ msgstr "Stopped"
 #: openFile
 msgid "Open File"
 msgstr "Open File"
+
+#: defaultStatus
+msgid "_: defaultStatus\n"
+msgstr ""
 
 #: droponbookmarksbutton
 msgid "Drop a link to bookmark it"
@@ -75,6 +80,7 @@ msgid "Location:"
 msgstr "Location:"
 
 # SessionHistory.js
+# SessionHistory.js
 #: nothingAvailable
 msgid "(Nothing Available)"
 msgstr "(Nothing Available)"
@@ -83,13 +89,15 @@ msgstr "(Nothing Available)"
 # show the English description or not
 # for example, in Japanese build, instead of showing English description
 # set the following value to false so it won't show up.
+# Localization Note: Use 'true' or 'false' to control the pref:theme to
 #: showskinsdescription
 msgid "true"
 msgstr "true"
 
 # context menu strings
-#: searchText
-msgid "Search Web for \"%S\""
+#: contextMenuSearchText
+#, fuzzy
+msgid "Search %S for \"%S\""
 msgstr "Search Web for \"%S\""
 
 #: blockImages
@@ -145,6 +153,7 @@ msgstr "[Folder Name]"
 #    This is the name of the folder that is created parallel to a HTML file 
 #    when it is saved "With Images". The %S section is replaced with the
 #    leaf name of the file being saved (minus extension).
+#    This is the name of the folder that is created parallel to a HTML file
 #: filesFolder
 msgid "%S_files"
 msgstr "%S_files"
@@ -166,78 +175,46 @@ msgstr "Save Link"
 msgid "Web Panels"
 msgstr "Web Panels"
 
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "Confirm close"
-
-#: tabs.closeWarning
+#: xpinstallPromptWarning
 msgid ""
-"This Browser window has %S tabs open. Do you want to close it and all its "
-"tabs?"
+"%S prevented this site (%S) from asking you to install software on your "
+"computer."
 msgstr ""
-"This Browser window has %S tabs open. Do you want to close it and all its "
-"tabs?"
 
-#: tabs.closeButton
-msgid "Close all tabs"
-msgstr "Close all tabs"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when closing multiple tabs"
-msgstr "Warn me when closing multiple tabs"
-
-#: mailUnreadTooltip
-msgid "Read Mail and News (%S new messages)"
-msgstr "Read Mail and News (%S new messages)"
-
-#: mailUnreadMenuitem
-msgid "Read Mail (%S new)"
-msgstr "Read Mail (%S new)"
-
-#: xpinstallWarning
+#: xpinstallPromptWarningButton
 msgid ""
-"To protect your computer, %S prevented this site (%S) from installing "
-"software on your computer."
-msgstr ""
-"To protect your computer, %S prevented this site (%S) from installing "
-"software on your computer."
-
-#: xpinstallWarningButton
-msgid ""
-"_: xpinstallWarningButton\n"
+"_: xpinstallPromptWarningButton\n"
 "Edit Options..."
 msgstr "Edit Options..."
 
 # Accessibility Note:
 # Be sure you do not choose an accesskey that is used elsewhere in the active context (e.g. main menu bar, submenu of the warning popup button)
 # See http://www.mozilla.org/access/keyboard/accesskey for details
-#: xpinstallWarningButton.accesskey
+#: xpinstallPromptWarningButton.accesskey
 msgid ""
-"_: xpinstallWarningButton.accesskey\n"
+"_: xpinstallPromptWarningButton.accesskey\n"
 "O"
-msgstr ""
-"O"
+msgstr "O"
 
-#: xpinstallDisabledWarning
+#: xpinstallDisabledMessageLocked
+msgid "Software installation has been disabled by your system administrator."
+msgstr ""
+
+#: xpinstallDisabledMessage
+#, fuzzy
 msgid ""
+"Software installation is currently disabled. Click Enable and try again."
+msgstr ""
 "Software installation is currently disabled. Click Edit Options... to enable "
 "it and try again."
-msgstr ""
-"Software installation is currently disabled. Click Edit Options... to enable "
-"it and try again."
 
-#: xpinstallDisabledWarningButton
-msgid ""
-"_: xpinstallDisabledWarningButton\n"
-"Edit Options..."
-msgstr "Edit Options..."
-
-#: xpinstallDisabledWarningButton.accesskey
-msgid ""
-"_: xpinstallDisabledWarningButton.accesskey\n"
-"O"
+#: xpinstallDisabledButton
+msgid "Enable"
 msgstr ""
-"O"
+
+#: xpinstallDisabledButton.accesskey
+msgid "n"
+msgstr ""
 
 #: themeWarning
 msgid ""
@@ -267,8 +244,7 @@ msgstr "Options"
 msgid ""
 "_: popupWarningButton.accesskey\n"
 "O"
-msgstr ""
-"O"
+msgstr "O"
 
 #: popupWarningButtonUnix
 msgid "Preferences"
@@ -297,6 +273,24 @@ msgstr "Don't show info message when popups are blocked"
 #: popupShowPopupPrefix
 msgid "Show '%S'"
 msgstr "Show '%S'"
+
+#: imageBlockedWarning
+msgid "%S will now always block images from %S."
+msgstr ""
+
+#: imageAllowedWarning
+msgid "%S will now allow images from %S."
+msgstr ""
+
+#: undo
+msgid "Undo"
+msgstr ""
+
+#: undo.accessKey
+msgid ""
+"_: undo.accessKey\n"
+"U"
+msgstr ""
 
 #: saveFormInformationMessage
 msgid ""
@@ -341,15 +335,13 @@ msgstr "Clear Private Data Now"
 msgid ""
 "_: updatesItem_default\n"
 "Check for Updates..."
-msgstr ""
-"Check for Updates..."
+msgstr "Check for Updates..."
 
 #: updatesItem_defaultFallback
 msgid ""
 "_: updatesItem_defaultFallback\n"
 "Check for Updates..."
-msgstr ""
-"Check for Updates..."
+msgstr "Check for Updates..."
 
 #: updatesItem_downloading
 msgid "Downloading %S..."
@@ -371,50 +363,84 @@ msgstr "Resume Downloading Update..."
 msgid ""
 "_: updatesItem_pending\n"
 "Apply Downloaded Update Now..."
-msgstr ""
-"Apply Downloaded Update Now..."
+msgstr "Apply Downloaded Update Now..."
 
 #: updatesItem_pendingFallback
 msgid ""
 "_: updatesItem_pendingFallback\n"
 "Apply Downloaded Update Now..."
-msgstr ""
-"Apply Downloaded Update Now..."
+msgstr "Apply Downloaded Update Now..."
 
 # RSS Pretty Print
-#: feedTitle
-msgid "Feed: %S"
-msgstr "Feed: %S"
-
-#: feedDescription
-msgid "This feed contains %S articles."
-msgstr "This feed contains %S articles."
-
-#: feedAddLiveBookmarkLink
-msgid ""
-"_: feedAddLiveBookmarkLink\n"
-"Add Live Bookmark..."
-msgstr ""
-"Add Live Bookmark..."
-
-#: feedLiveBookmarkInfoText
-msgid "What are Live Bookmarks?"
-msgstr "What are Live Bookmarks?"
-
 #: feedShowFeed
 msgid "Add '%S' as Live Bookmark..."
 msgstr "Add '%S' as Live Bookmark..."
 
 #: feedHasFeeds
-msgid ""
-"_: feedHasFeeds\n"
-"Add Live Bookmark..."
-msgstr ""
-"Add Live Bookmark..."
+msgid "Add Live Bookmark..."
+msgstr "Add Live Bookmark..."
 
 #: feedNoFeeds
 msgid "Page has no feeds"
 msgstr "Page has no feeds"
+
+#: feedShowFeedNew
+msgid "Subscribe to '%S'..."
+msgstr "Subscribe to '%S'..."
+
+#: feedHasFeedsNew
+msgid "Subscribe to this page..."
+msgstr ""
+
+# tab context menu additions
+#: tabContext.undoCloseTab
+msgid "Undo Close Tab"
+msgstr ""
+
+#: tabContext.undoCloseTabAccessKey
+msgid ""
+"_: tabContext.undoCloseTabAccessKey\n"
+"U"
+msgstr ""
+
+#~ msgid "Confirm close"
+#~ msgstr "Confirm close"
+
+#~ msgid ""
+#~ "This Browser window has %S tabs open. Do you want to close it and all its "
+#~ "tabs?"
+#~ msgstr ""
+#~ "This Browser window has %S tabs open. Do you want to close it and all its "
+#~ "tabs?"
+
+#~ msgid "Close all tabs"
+#~ msgstr "Close all tabs"
+
+#~ msgid "Warn me when closing multiple tabs"
+#~ msgstr "Warn me when closing multiple tabs"
+
+#~ msgid "Read Mail and News (%S new messages)"
+#~ msgstr "Read Mail and News (%S new messages)"
+
+#~ msgid "Read Mail (%S new)"
+#~ msgstr "Read Mail (%S new)"
+
+#~ msgid ""
+#~ "To protect your computer, %S prevented this site (%S) from installing "
+#~ "software on your computer."
+#~ msgstr ""
+#~ "To protect your computer, %S prevented this site (%S) from installing "
+#~ "software on your computer."
+
+# RSS Pretty Print
+#~ msgid "Feed: %S"
+#~ msgstr "Feed: %S"
+
+#~ msgid "This feed contains %S articles."
+#~ msgstr "This feed contains %S articles."
+
+#~ msgid "What are Live Bookmarks?"
+#~ msgstr "What are Live Bookmarks?"
 
 #~ msgid "Add Live Bookmark for this page's feed"
 #~ msgstr "Add Live Bookmark for this page's feed"
@@ -422,17 +448,9 @@ msgstr "Page has no feeds"
 #~ msgid "Page has no feeds for Live Bookmark"
 #~ msgstr "Page has no feeds for Live Bookmark"
 
-#~ msgid "Subscribe to '%S'..."
-#~ msgstr "Subscribe to '%S'..."
-
 # Sanitize
 #~ msgid "Sanitize %S..."
 #~ msgstr "Sanitize %S..."
 
 #~ msgid "Sanitize Now"
 #~ msgstr "Sanitize Now"
-
-# Check for Updates
-#~ msgid "Check for Updates..."
-#~ msgstr "Check for Updates..."
-
