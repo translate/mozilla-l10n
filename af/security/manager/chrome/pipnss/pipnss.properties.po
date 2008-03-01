@@ -43,7 +43,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-07 11:12+0200\n"
+"POT-Creation-Date: 2008-02-29 14:07+0200\n"
 "PO-Revision-Date: 2007-10-08 15:00+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"X-Generator: Translate Toolkit 1.1.1rc3\n"
 "X-Accelerator-Marker: &\n"
 
 #: SignedBy
@@ -111,15 +111,16 @@ msgid "PSM Private Keys"
 msgstr "PSB- private sleutels"
 
 #. #
-#. # 64
-#: FipsSlotDescription
-msgid "PSM Internal FIPS-140-1 Cryptographic Services"
-msgstr "PSB- interne FIPS-140-1-kriptografiedienste"
+#. # 32
+#: Fips140TokenDescription
+#, fuzzy
+msgid "Software Security Device (FIPS)"
+msgstr "Sagtewaresekuriteitstoestel"
 
 #. # 64
-#: FipsPrivateSlotDescription
-msgid "PSM FIPS-140-1 User Private Key Services"
-msgstr "PSB-FIPS-140-1-gebruikerprivatesleutel-dienste"
+#: Fips140SlotDescription
+msgid "FIPS 140 Cryptographic, Key and Certificate Services"
+msgstr ""
 
 #. # 32
 #: InternalToken
@@ -180,12 +181,12 @@ msgid "Any Certificate Authority"
 msgstr "Enige sertifikaatowerheid"
 
 #: HighGrade
-msgid "2048 (High Grade)"
-msgstr "2048 (höegraads)"
+msgid "High Grade"
+msgstr "Höegraads"
 
 #: MediumGrade
-msgid "1024 (Medium Grade)"
-msgstr "1024 (mediumgraads)"
+msgid "Medium Grade"
+msgstr "Mediumgraads"
 
 #: nick_template
 msgid "%1$s's %2$s ID"
@@ -344,6 +345,14 @@ msgstr "Algoritmeparameters"
 msgid "PKCS #1 RSA Encryption"
 msgstr "PKCS #1 RSA-enkripsie"
 
+#: CertDumpRSATemplate
+msgid ""
+"Modulus (%S bits):\n"
+"%S\n"
+"Exponent (%S bits):\n"
+"%S"
+msgstr ""
+
 #: CertDumpIssuerUniqueID
 msgid "Issuer Unique ID"
 msgstr "Uitreiker se unieke ID"
@@ -473,6 +482,7 @@ msgid "ANSI X9.62 ECDSA Signature with SHA1"
 msgstr "ANSI X9.62 ECDSA-handtekening met SHA1"
 
 #: CertDumpCertTypeEmail
+msgctxt "CertDumpCertTypeEmail"
 msgid "Email"
 msgstr "E-pos"
 
@@ -723,6 +733,10 @@ msgstr "SO-uitreikers"
 #: CertDumpCPSPointer
 msgid "Certification Practice Statement pointer"
 msgstr "Sertifiseringspraktyk-stellinginleiding"
+
+#: CertDumpPolicyOidEV
+msgid "Extended Validation (EV) SSL Server Certificate"
+msgstr ""
 
 #: CertDumpUserNotice
 msgid "User Notice"
@@ -1174,88 +1188,23 @@ msgstr "(Onbekend organisasie)"
 msgid "%S = %S"
 msgstr "%S = %S"
 
-#. #for the next 3 lines, %1$S will be product name (e.g. Firefox), %2$S will be the www.example.com address we connect to
-#: SSL_Disabled
-msgid ""
-"%1$S can't connect securely to %2$S because the SSL protocol has been "
-"disabled."
+#: PSMERR_SSL_Disabled
+#, fuzzy
+msgid "Can't connect securely because the SSL protocol has been disabled."
 msgstr ""
 "%1$S kan nie beveiligd aan %2$S koppel nie omdat die SSL-protokol "
 "gedeaktiveer is."
 
-#: SSL2_Disabled
+#: PSMERR_SSL2_Disabled
+#, fuzzy
 msgid ""
-"%1$S can't connect securely to %2$S because the site uses an older, insecure "
-"version of the SSL protocol."
+"Can't connect securely because the site uses an older, insecure version of "
+"the SSL protocol."
 msgstr ""
 "%1$S kan nie beveiligd aan %2$S koppel nie omdat die werf 'n ouer, onveilige "
 "weergawe van die SSL-protokol gebruik."
 
-#: SSL_NoMatchingCiphers
-msgid ""
-"%1$S can't connect securely to %2$S because the site uses a security "
-"protocol which isn't enabled."
-msgstr ""
-"%1$S kan nie beveiligd aan %2$S koppel nie omdat die werf 'n "
-"sekuriteitprotokol gebruik wat nie geaktiveer is nie."
-
-#: UsersCertRevoked
-msgid ""
-"Could not establish an encrypted connection with %S because your certificate "
-"has been revoked."
-msgstr ""
-"Kon nie geënkripteerd met %S koppel nie omdat u sertifikaat opgehef is."
-
-#: UsersCertExpired
-msgid ""
-"Could not establish an encrypted connection with %S because your certificate "
-"is expired."
-msgstr ""
-"Kon nie geënkripteerd met %S koppel nie omdat u sertifikaat verval het."
-
-#: UsersCertRejected
-msgid ""
-"Could not establish an encrypted connection because your certificate was "
-"rejected by %S. Error Code: %S."
-msgstr ""
-"Kon nie geënkripteerd koppel nie omdat %S u sertifikaat verwerp het. "
-"Foutkode: %S."
-
-#: BadMac
-msgid ""
-"%S received a message with incorrect Message Authentication Code. If the "
-"error occurs frequently, contact the website administrator."
-msgstr ""
-"%S het 'n boodskap ontvang waarvan die boodskapmagtigingskode nie korrek is "
-"nie. As hierdie fout gereeld voorkom, kontak die webwerfadministrateur."
-
-#: PeerResetConnection
-msgid "%S has closed the connection. Error Code: %S"
-msgstr "%S het die verbinding gesluit. Foutkode: %S"
-
-#: HostResetConnection
-msgid "The current transfer has been cancelled."
-msgstr "Die huidige oordrag is gekanselleer."
-
-#: BadPassword
-msgid "An incorrect password was provided."
-msgstr "Die verkeerde wagwoord is voorsien."
-
-#: BadDatabase
-msgid "There is a problem with your certificate database [Error Code: %S]."
-msgstr "Daar is fout met u sertifikaatdatabasis [Foutkode: %S]."
-
-#: BadServer
-msgid "%S has sent an incorrect or unexpected message. Error Code: %S"
-msgstr ""
-"%S het boodskap gestuur wat onverwags of nie korrek is nie. Foutkode: %S"
-
-#: BadClient
-msgid "%S has received an incorrect or unexpected message. Error Code: %S"
-msgstr ""
-"%S het boodskap ontvang wat onverwags of nie korrek is nie. Foutkode: %S"
-
-#: HostReusedIssuerSerial
+#: PSMERR_HostReusedIssuerSerial
 msgid ""
 "You have received an invalid certificate.  Please contact the server "
 "administrator or email correspondent and give them the following "
@@ -1272,183 +1221,71 @@ msgstr ""
 "sertifikaatowerheid uitgereik is.  Kry 'n nuwe sertifikaat wat 'n unieke "
 "reeksnommer het."
 
-#: SSLGenericError
-msgid "Error establishing an encrypted connection to %S. Error Code: %S."
-msgstr "Kon nie geënkripteerd met %S koppel nie. Foutkode: %S."
-
-#: TimeOut
-msgid "Connection request timed out."
-msgstr "Verbindingsversoek het uitgetel."
-
-#: PeersCertUntrusted
-msgid ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S is not trusted."
+#: SSLConnectionErrorPrefix
+msgid "An error occurred during a connection to %S."
 msgstr ""
-"Kon nie geënkripteerd koppel nie omdat die sertifikaat wat deur %S voorgelê "
-"word, nie vertrou kan word nie."
 
-#: PeersCertRevoked
-msgid ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S has been revoked."
+#: certErrorIntro
+msgid "%S uses an invalid security certificate."
 msgstr ""
-"Kon nie geënkripteerd koppel nie omdat die sertifikaat wat deur %S voorgelê "
-"word, opgehef is."
 
-#: PeersCertExpired
-msgid ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S has expired."
+#: certErrorTrust_SelfSigned
+msgid "The certificate is not trusted because it is self signed."
 msgstr ""
-"Kon nie geënkripteerd koppel nie omdat die sertifikaat wat deur %S voorgelê "
-"word, verval het."
 
-#: PeersCertWrongDomain
+#: certErrorTrust_UnknownIssuer
 msgid ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S is for a different domain."
+"The certificate is not trusted because the issuer certificate is unknown."
 msgstr ""
-"Kon nie geënkripteerd koppel nie omdat die sertifikaat wat deur %S voorgelê "
-"word, vir 'n ander domein is."
 
-#: PeersCertBadSignature
+#: certErrorTrust_CaInvalid
 msgid ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S has an invalid signature."
-msgstr ""
-"Kon nie geënkripteerd koppel nie omdat die sertifikaat wat deur %S voorgelê "
-"word, 'n ongeldige handtekening bevat."
-
-#: PeersCertNoGood
-msgid ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S is invalid or corrupted. Error Code: %S"
-msgstr ""
-"Kon nie geënkripteerd koppel nie omdat die sertifikaat wat deur %S voorgelê "
-"word, ongeldig of korrup is. Foutkode: %S"
-
-#: CRLExpired
-msgid ""
-"Certificate Revocation List (CRL) from the CA certifying %S is past its Next "
-"Update date. Please update the CRL."
-msgstr ""
-"Sertifikaatopheffingslys (SOL) van die SO wat %S sertifiseer is ouer as die "
-"jongste bywerkdatum. Dateer die SOL op."
-
-#: CRLNotYetValid
-msgid ""
-"Certificate Revocation List (CRL) from the CA certifying %S is not yet "
-"valid. Please check your system clock."
-msgstr ""
-"Sertifikaatopheffingslys (SOL) van die SO wat %S sertifiseer, is nog nie "
-"geldig nie. Kontroleer u rekenaar se klok."
-
-#: CRLSigNotValid
-msgid ""
-"Certificate Revocation List (CRL) from the CA certifying %S has an invalid "
-"digital signature."
-msgstr ""
-"Sertifikaatopheffingslys (SOL) van die SO wat %S sertifiseer, bevat 'n "
-"ongeldige digitale handtekening."
-
-#: CRLSNotValid
-msgid ""
-"Certificate Revocation List (CRL) from the CA certifying %S is not valid."
-msgstr ""
-"Sertifikaatopheffingslys (SOL) van die SO wat %S sertifiseer is nie geldig "
-"nie."
-
-#: OCSPMalformedRequest
-msgid ""
-"Error trying to validate certificate from %S using OCSP - malformed request."
-msgstr ""
-"Kon nie die sertifikaat van %S met OCSP valideer nie - wangevormde versoek."
-
-#: OCSPRequestNeedsSig
-msgid ""
-"Error trying to validate certificate from %S using OCSP - request needs "
-"signature."
-msgstr ""
-"Kon nie die sertifikaat van %S met OCSP staaf nie - versoek kort "
-"handtekening."
-
-#: OCSPUnauthorizedReq
-msgid ""
-"Error trying to validate certificate from %S using OCSP - unauthorized "
-"request."
-msgstr ""
-"Kon nie die sertifikaat van %S met OCSP staaf nie - ongemagtigde versoek."
-
-#: OCSPServerError
-msgid "Error trying to validate certificate from %S using OCSP - server error."
-msgstr "Kon nie die sertifikaat van %S met OCSP staaf nie - bedienerfout."
-
-#: OCSPTryServerLater
-msgid ""
-"Error trying to validate certificate from %S using OCSP - server is busy. "
-"Please try again later."
-msgstr ""
-"Kon nie die sertifikaat van %S met OCSP staaf nie - bediener is besig. "
-"Probeer later weer."
-
-#: OCSPFutureResponse
-msgid ""
-"Error trying to validate certificate from %S using OCSP - response contains "
-"a date which is in the future."
-msgstr ""
-"Kon nie die sertifikaat van %S met OCSP staaf nie - respons bevat 'n datum "
-"wat in die toekoms is."
-
-#: OCSPOldResponse
-msgid "Error trying to validate certificate from %S using OCSP - old response."
-msgstr "Kon nie die sertifikaat van %S met OCSP staaf nie - ou respons."
-
-#: OCSPCorruptedResponse
-msgid ""
-"Error trying to validate certificate from %S using OCSP - corrupted or "
-"unknown response. Error Code: %S."
-msgstr ""
-"Kon nie die sertifikaat van %S met OCSP staaf nie - korrupte of onbekende "
-"respons. Foutkode: %S."
-
-#: OCSPUnauthorizedResponse
-msgid ""
-"Error trying to validate certificate from %S using OCSP - unauthorized "
-"response."
-msgstr ""
-"Kon nie die sertifikaat van %S met OCSP staaf nie - ongemagtigde respons."
-
-#: OCSPUnknownCert
-msgid ""
-"Error trying to validate certificate from %S using OCSP - unknown "
+"The certificate is not trusted because it was issued by an invalid CA "
 "certificate."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP staaf nie - onbekende sertifikaat."
 
-#: OCSPNoDefaultResponder
+#: certErrorTrust_Issuer
 msgid ""
-"Error trying to validate certificate from %S using OCSP - no default "
-"responder specified."
+"The certificate is not trusted because the issuer certificate is not trusted."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP staaf nie - geen verstek-"
-"terugskrywer gespesifiseer nie."
 
-#: OCSPDirLookup
+#: certErrorTrust_ExpiredIssuer
 msgid ""
-"Error trying to validate certificate from %S using OCSP - directory lookup "
-"error."
+"The certificate is not trusted because the issuer certificate has expired."
 msgstr ""
-"Kon nie die sertifikaat van %S met OCSP staaf nie - kon nie in die gids "
-"opsoek nie."
 
-#: OCSPDeadlock
-msgid ""
-"An internal failure has been detected. It is not possible to complete the "
-"requested OCSP operation."
+#: certErrorTrust_Untrusted
+msgid "The certificate does not come from a trusted source."
 msgstr ""
-"'n Internet faling is bespeur. Die versoekte OCSP-bewerking kan nie voltooi "
-"word nie."
+
+#: certErrorMismatch
+msgid "The certificate is not valid for the name %S."
+msgstr ""
+
+#: certErrorMismatchSingle2
+msgid "The certificate is only valid for %S."
+msgstr ""
+
+#: certErrorMismatchMultiple
+msgid "The certificate is only valid for the following names:"
+msgstr ""
+
+#: certErrorMismatchNoNames
+msgid "The certificate is not valid for any server names."
+msgstr ""
+
+#: certErrorExpired
+msgid "The certificate expired on %S."
+msgstr ""
+
+#: certErrorNotYetValid
+msgid "The certificate will not be valid until %S."
+msgstr ""
+
+#: certErrorCodePrefix
+#, fuzzy
+msgid "(Error code: %S)"
+msgstr "Foutkode: %S"
 
 #: CertInfoIssuedFor
 msgid "Issued to:"
@@ -1474,6 +1311,11 @@ msgstr "tot"
 msgid "Purposes"
 msgstr "Doelwitte"
 
+#: CertInfoEmail
+msgctxt "CertInfoEmail"
+msgid "Email"
+msgstr "E-pos"
+
 #: CertInfoStoredIn
 msgid "Stored in:"
 msgstr "Gestoor in:"
@@ -1482,13 +1324,9 @@ msgstr "Gestoor in:"
 msgid "Imported Certificate"
 msgstr "Ingevoerde sertifikaat"
 
-#: CrlImportSuccess
-msgid ""
-"The browser successfully imported the certificate revocation list (CRL)."
-msgstr "Die blaaier het die sertifikaatopheffingslys (SOL) suksesvol ingevoer."
-
-#: CrlImportFailure1
-msgid "The browser cannot import the Certificate Revocation List (CRL)."
+#: CrlImportFailure1x
+#, fuzzy
+msgid "The application cannot import the Certificate Revocation List (CRL)."
 msgstr "Die blaaier kan nie die sertifikaatopheffingslys (SOL) invoer nie."
 
 #: CrlImportFailureExpired
@@ -1523,14 +1361,15 @@ msgstr "Kon nie SOL na plaaslike databasis invoer nie. Foutkode:"
 msgid "Please ask your system administrator for assistance."
 msgstr "Vra u stelseladministrateur vir bystand."
 
-#: NSSInitProblem
+#: NSSInitProblemX
+#, fuzzy
 msgid ""
-"Could not initialize the browser's security component. The most likely cause "
-"is problems with files in your browser's profile directory. Please check "
-"that this directory has no read/write restrictions and your hard disk is not "
-"full or close to full. It is recommended that you exit the browser and fix "
-"the problem. If you continue to use this browser session, you might see "
-"incorrect browser behaviour when accessing security features."
+"Could not initialize the application's security component. The most likely "
+"cause is problems with files in your application's profile directory. Please "
+"check that this directory has no read/write restrictions and your hard disk "
+"is not full or close to full. It is recommended that you exit the "
+"application and fix the problem. If you continue to use this session, you "
+"might see incorrect application behaviour when accessing security features."
 msgstr ""
 "Kon nie die blaaier se sekuriteitskomponent inisialiseer nie. Die probleem "
 "lê waarskynlik by lêers in u blaaier se profielsubgids. Maak seker dat daar "
@@ -1581,6 +1420,28 @@ msgstr "<Ongeldige SO>"
 
 #: VerifyUnknown
 msgid "<Unknown>"
+msgstr "<Onbekend>"
+
+#: CertUser
+msgid "Your Cert"
+msgstr ""
+
+#: CertCA
+#, fuzzy
+msgid "CA (Certificate Authority)"
+msgstr "SSL-sertifikaatowerheid"
+
+#: CertSSL
+msgid "SSL Server"
+msgstr ""
+
+#: CertEmail
+msgid "Peer S/MIME"
+msgstr ""
+
+#: CertUnknown
+#, fuzzy
+msgid "Unknown"
 msgstr "<Onbekend>"
 
 #: CertNoNickname
@@ -1639,6 +1500,250 @@ msgid ""
 msgstr ""
 "U persoonlike sertifikaat is geïnstalleer. U behoort 'n dekkopie van hierdie "
 "sertifikaat te maak."
+
+#: CertOrgUnknown
+#, fuzzy
+msgid "(Unknown)"
+msgstr "<Onbekend>"
+
+#: CertNotStored
+msgid "(Not Stored)"
+msgstr ""
+
+#: CertExceptionPermanent
+msgid "Permanent"
+msgstr ""
+
+#: CertExceptionTemporary
+msgid "Temporary"
+msgstr ""
+
+#~ msgid "PSM Internal FIPS-140-1 Cryptographic Services"
+#~ msgstr "PSB- interne FIPS-140-1-kriptografiedienste"
+
+#~ msgid "PSM FIPS-140-1 User Private Key Services"
+#~ msgstr "PSB-FIPS-140-1-gebruikerprivatesleutel-dienste"
+
+#~ msgid "2048 (High Grade)"
+#~ msgstr "2048 (höegraads)"
+
+#~ msgid "1024 (Medium Grade)"
+#~ msgstr "1024 (mediumgraads)"
+
+#~ msgid ""
+#~ "%1$S can't connect securely to %2$S because the site uses a security "
+#~ "protocol which isn't enabled."
+#~ msgstr ""
+#~ "%1$S kan nie beveiligd aan %2$S koppel nie omdat die werf 'n "
+#~ "sekuriteitprotokol gebruik wat nie geaktiveer is nie."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection with %S because your "
+#~ "certificate has been revoked."
+#~ msgstr ""
+#~ "Kon nie geënkripteerd met %S koppel nie omdat u sertifikaat opgehef is."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection with %S because your "
+#~ "certificate is expired."
+#~ msgstr ""
+#~ "Kon nie geënkripteerd met %S koppel nie omdat u sertifikaat verval het."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because your certificate was "
+#~ "rejected by %S. Error Code: %S."
+#~ msgstr ""
+#~ "Kon nie geënkripteerd koppel nie omdat %S u sertifikaat verwerp het. "
+#~ "Foutkode: %S."
+
+#~ msgid ""
+#~ "%S received a message with incorrect Message Authentication Code. If the "
+#~ "error occurs frequently, contact the website administrator."
+#~ msgstr ""
+#~ "%S het 'n boodskap ontvang waarvan die boodskapmagtigingskode nie korrek "
+#~ "is nie. As hierdie fout gereeld voorkom, kontak die webwerfadministrateur."
+
+#~ msgid "%S has closed the connection. Error Code: %S"
+#~ msgstr "%S het die verbinding gesluit. Foutkode: %S"
+
+#~ msgid "The current transfer has been cancelled."
+#~ msgstr "Die huidige oordrag is gekanselleer."
+
+#~ msgid "An incorrect password was provided."
+#~ msgstr "Die verkeerde wagwoord is voorsien."
+
+#~ msgid "There is a problem with your certificate database [Error Code: %S]."
+#~ msgstr "Daar is fout met u sertifikaatdatabasis [Foutkode: %S]."
+
+#~ msgid "%S has sent an incorrect or unexpected message. Error Code: %S"
+#~ msgstr ""
+#~ "%S het boodskap gestuur wat onverwags of nie korrek is nie. Foutkode: %S"
+
+#~ msgid "%S has received an incorrect or unexpected message. Error Code: %S"
+#~ msgstr ""
+#~ "%S het boodskap ontvang wat onverwags of nie korrek is nie. Foutkode: %S"
+
+#~ msgid "Error establishing an encrypted connection to %S. Error Code: %S."
+#~ msgstr "Kon nie geënkripteerd met %S koppel nie. Foutkode: %S."
+
+#~ msgid "Connection request timed out."
+#~ msgstr "Verbindingsversoek het uitgetel."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S is not trusted."
+#~ msgstr ""
+#~ "Kon nie geënkripteerd koppel nie omdat die sertifikaat wat deur %S "
+#~ "voorgelê word, nie vertrou kan word nie."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S has been revoked."
+#~ msgstr ""
+#~ "Kon nie geënkripteerd koppel nie omdat die sertifikaat wat deur %S "
+#~ "voorgelê word, opgehef is."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S has expired."
+#~ msgstr ""
+#~ "Kon nie geënkripteerd koppel nie omdat die sertifikaat wat deur %S "
+#~ "voorgelê word, verval het."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S is for a different domain."
+#~ msgstr ""
+#~ "Kon nie geënkripteerd koppel nie omdat die sertifikaat wat deur %S "
+#~ "voorgelê word, vir 'n ander domein is."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S has an invalid signature."
+#~ msgstr ""
+#~ "Kon nie geënkripteerd koppel nie omdat die sertifikaat wat deur %S "
+#~ "voorgelê word, 'n ongeldige handtekening bevat."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S is invalid or corrupted. Error Code: %S"
+#~ msgstr ""
+#~ "Kon nie geënkripteerd koppel nie omdat die sertifikaat wat deur %S "
+#~ "voorgelê word, ongeldig of korrup is. Foutkode: %S"
+
+#~ msgid ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S is past its "
+#~ "Next Update date. Please update the CRL."
+#~ msgstr ""
+#~ "Sertifikaatopheffingslys (SOL) van die SO wat %S sertifiseer is ouer as "
+#~ "die jongste bywerkdatum. Dateer die SOL op."
+
+#~ msgid ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S is not yet "
+#~ "valid. Please check your system clock."
+#~ msgstr ""
+#~ "Sertifikaatopheffingslys (SOL) van die SO wat %S sertifiseer, is nog nie "
+#~ "geldig nie. Kontroleer u rekenaar se klok."
+
+#~ msgid ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S has an "
+#~ "invalid digital signature."
+#~ msgstr ""
+#~ "Sertifikaatopheffingslys (SOL) van die SO wat %S sertifiseer, bevat 'n "
+#~ "ongeldige digitale handtekening."
+
+#~ msgid ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S is not valid."
+#~ msgstr ""
+#~ "Sertifikaatopheffingslys (SOL) van die SO wat %S sertifiseer is nie "
+#~ "geldig nie."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - malformed "
+#~ "request."
+#~ msgstr ""
+#~ "Kon nie die sertifikaat van %S met OCSP valideer nie - wangevormde "
+#~ "versoek."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - request needs "
+#~ "signature."
+#~ msgstr ""
+#~ "Kon nie die sertifikaat van %S met OCSP staaf nie - versoek kort "
+#~ "handtekening."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - unauthorized "
+#~ "request."
+#~ msgstr ""
+#~ "Kon nie die sertifikaat van %S met OCSP staaf nie - ongemagtigde versoek."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - server error."
+#~ msgstr "Kon nie die sertifikaat van %S met OCSP staaf nie - bedienerfout."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - server is busy. "
+#~ "Please try again later."
+#~ msgstr ""
+#~ "Kon nie die sertifikaat van %S met OCSP staaf nie - bediener is besig. "
+#~ "Probeer later weer."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - response "
+#~ "contains a date which is in the future."
+#~ msgstr ""
+#~ "Kon nie die sertifikaat van %S met OCSP staaf nie - respons bevat 'n "
+#~ "datum wat in die toekoms is."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - old response."
+#~ msgstr "Kon nie die sertifikaat van %S met OCSP staaf nie - ou respons."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - corrupted or "
+#~ "unknown response. Error Code: %S."
+#~ msgstr ""
+#~ "Kon nie die sertifikaat van %S met OCSP staaf nie - korrupte of onbekende "
+#~ "respons. Foutkode: %S."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - unauthorized "
+#~ "response."
+#~ msgstr ""
+#~ "Kon nie die sertifikaat van %S met OCSP staaf nie - ongemagtigde respons."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - unknown "
+#~ "certificate."
+#~ msgstr ""
+#~ "Kon nie die sertifikaat van %S met OCSP staaf nie - onbekende sertifikaat."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - no default "
+#~ "responder specified."
+#~ msgstr ""
+#~ "Kon nie die sertifikaat van %S met OCSP staaf nie - geen verstek-"
+#~ "terugskrywer gespesifiseer nie."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - directory "
+#~ "lookup error."
+#~ msgstr ""
+#~ "Kon nie die sertifikaat van %S met OCSP staaf nie - kon nie in die gids "
+#~ "opsoek nie."
+
+#~ msgid ""
+#~ "An internal failure has been detected. It is not possible to complete the "
+#~ "requested OCSP operation."
+#~ msgstr ""
+#~ "'n Internet faling is bespeur. Die versoekte OCSP-bewerking kan nie "
+#~ "voltooi word nie."
+
+#~ msgid ""
+#~ "The browser successfully imported the certificate revocation list (CRL)."
+#~ msgstr ""
+#~ "Die blaaier het die sertifikaatopheffingslys (SOL) suksesvol ingevoer."
 
 #~ msgid "Signed by %S"
 #~ msgstr "Onderteken deur %S"

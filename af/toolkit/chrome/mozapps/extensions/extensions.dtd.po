@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-07 11:12+0200\n"
+"POT-Creation-Date: 2008-02-29 14:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"X-Generator: Translate Toolkit 1.1.1rc3\n"
 "X-Accelerator-Marker: &\n"
 
 #: addons.title
@@ -43,6 +43,10 @@ msgid "w"
 msgstr "w"
 
 #. View labels
+#: search.label
+msgid "Get Add-ons"
+msgstr ""
+
 #: extensions.label
 msgid "Extensions"
 msgstr "Uitbreidings"
@@ -80,13 +84,10 @@ msgstr "Vind bywerkings vir u byvoegings"
 msgid "Finds Updates to your Themes"
 msgstr "Vind bywerkings vir u temas"
 
-#: cmd.installLocalFile.label
-msgid "Install..."
-msgstr "Installeer..."
-
-#: cmd.installFile.accesskey
-msgid "I"
-msgstr "I"
+# the following command bar items are used by thunderbird only
+#: cmd.installLocalFile.label cmd.installLocalFile.accesskey
+msgid "I&nstall…"
+msgstr "I&nstalleer…"
 
 #: cmd.installFileAddon.tooltip
 msgid "Install an Add-on"
@@ -104,16 +105,16 @@ msgstr "&Installeer bywerkings"
 msgid "Installs the selected updates"
 msgstr "Installeer die gekose bywerkings"
 
-#: cmd.restartApp.label cmd.restartApp.accesskey
+#: cmd.restartApp2.label cmd.restartApp2.accesskey
 msgid "&Restart &brandShortName;"
 msgstr "&Herbegin &brandShortName;"
 
-#: cmd.restartApp.tooltip
-msgid "Restarts &brandShortName; to finish the installation"
-msgstr "Herbegin &brandShortName; om die installering te voltooi"
+#: cmd.restartApp2.tooltip
+msgid "Restart &brandShortName; to apply changes"
+msgstr ""
 
 #: cmd.skip.label cmd.skip.accesskey
-msgid "&Skip"
+msgid "S&kip"
 msgstr "&Slaan oor"
 
 #: cmd.skip.tooltip
@@ -205,6 +206,25 @@ msgstr "&Kanselleer deïnstallering"
 msgid "Cancel the uninstall of this Add-on"
 msgstr "Kanselleer die deïnstallering van hierdie byvoeging"
 
+#: cmd.cancelInstall.label cmd.cancelInstall.accesskey
+#, fuzzy
+msgid "&Cancel Install"
+msgstr "&Kanselleer deïnstallering"
+
+#: cmd.cancelInstall.tooltip
+#, fuzzy
+msgid "Cancel the install of this Add-on"
+msgstr "Kanselleer die deïnstallering van hierdie byvoeging"
+
+#: cmd.cancelUpgrade.label cmd.cancelUpgrade.accesskey
+msgid "&Cancel Upgrade"
+msgstr ""
+
+#: cmd.cancelUpgrade.tooltip
+#, fuzzy
+msgid "Cancel the upgrade of this Add-on"
+msgstr "Kanselleer die deïnstallering van hierdie byvoeging"
+
 #: cmd.installUpdate.label cmd.installUpdate.accesskey
 msgid "&Install Update"
 msgstr "&Installeer bywerking"
@@ -213,8 +233,46 @@ msgstr "&Installeer bywerking"
 msgid "Install an update for this Add-on"
 msgstr "Installeer 'n bywerking vir hierdie byvoeging"
 
+#: cmd.showUpdateInfo.label cmd.showUpdateInfo.accesskey
+msgid "&Show Information"
+msgstr ""
+
+#: cmd.showUpdateInfo.tooltip
+#, fuzzy
+msgid "Show more information about these updates"
+msgstr "Bekyk meer inligting oor hierdie bywerking"
+
+#: cmd.hideUpdateInfo.label cmd.hideUpdateInfo.accesskey
+#, fuzzy
+msgid "&Hide Information"
+msgstr "Meer inligting"
+
+#: cmd.hideUpdateInfo.tooltip
+msgid "Hide information about these updates"
+msgstr ""
+
+#: cmd.installSearchResult.label cmd.installSearchResult.accesskey
+#, fuzzy
+msgid "&Add to &brandShortName;…"
+msgstr "&Aangaande &brandShortName;…"
+
+#: cmd.installSearchResult.tooltip
+msgid "Download and install this add-on"
+msgstr ""
+
 #. The selected add-on's cancel action button label
 #: cancel.label cancel.accesskey
+msgctxt "cancel.label cancel.accesskey"
+msgid "&Cancel"
+msgstr "&Kanselleer"
+
+#: cancelInstall.label cancelInstall.accesskey
+msgctxt "cancelInstall.label cancelInstall.accesskey"
+msgid "&Cancel"
+msgstr "&Kanselleer"
+
+#: cancelUpgrade.label cancelUpgrade.accesskey
+msgctxt "cancelUpgrade.label cancelUpgrade.accesskey"
 msgid "&Cancel"
 msgstr "&Kanselleer"
 
@@ -248,6 +306,10 @@ msgid "Include this Add-on when installing the updates"
 msgstr "Sluit hierdie byvoeging in wanneer die bywerkings geïnstalleer word"
 
 #. Status Messsages
+#: insecureUpdate.label
+msgid "Does not provide secure updates."
+msgstr ""
+
 #: needsDependencies.label
 msgid "Requires additional items."
 msgstr "Vereis bykomende items."
@@ -279,8 +341,9 @@ msgstr ""
 "Hierdie byvoeging sal gedeïnstalleer word wanneer &brandShortName; herbegin "
 "word."
 
-#: toBeUpgraded.label
-msgid "This add-on will be upgraded when &brandShortName; is restarted."
+#: toBeUpdated.label
+#, fuzzy
+msgid "This add-on will be updated when &brandShortName; is restarted."
 msgstr ""
 "Hierdie byvoeging sal opgegradeer word wanneer &brandShortName; herbegin "
 "word."
@@ -289,17 +352,112 @@ msgstr ""
 msgid "Get Extensions"
 msgstr "Kry uitbreidings"
 
-#: getExtensions.tooltip
-msgid "Get Extensions from addons.mozilla.org"
-msgstr "Kry uitbreidings van addons.mozilla.org"
-
 #: getThemes.label
 msgid "Get Themes"
 msgstr "Kry temas"
 
-#: getThemes.tooltip
-msgid "Get Themes from addons.mozilla.org"
-msgstr "Kry temas van addons.mozilla.org"
+#: getPlugins.label
+msgid "Get Plugins"
+msgstr ""
+
+#: searchAddons.label
+msgctxt "searchAddons.label"
+msgid "Search All Add-ons"
+msgstr ""
+
+#: browseAddons.label
+msgid "Browse All Add-ons"
+msgstr ""
+
+#: searchFailed.label
+msgid "&brandShortName; couldn't retrieve add-ons"
+msgstr ""
+
+#: recommendedHeader.label
+#, fuzzy
+msgid "Recommended"
+msgstr "Aanbeveel"
+
+#: recommendedThrobber.label
+msgid "Retrieving recommended add-ons"
+msgstr ""
+
+#: searchThrobber.label
+msgid "Searching add-ons"
+msgstr ""
+
+#: resetSearch.label
+msgid "Clear Results"
+msgstr ""
+
+#: noSearchResults.label
+msgid "All results are already installed or incompatible."
+msgstr ""
+
+#: noRecommendedResults.label
+msgid "All recommendations are already installed or incompatible."
+msgstr ""
+
+#: emptySearch.label
+msgid "No matching add-ons"
+msgstr ""
+
+#: emptySearch.button
+msgctxt "emptySearch.button"
+msgid "OK"
+msgstr "OK"
+
+#: cancelSearch.button
+#, fuzzy
+msgid "Cancel"
+msgstr "Kanselleer"
+
+#: searchFailed.button
+msgctxt "searchFailed.button"
+msgid "OK"
+msgstr "OK"
+
+#: searchResultHomepage.value
+msgid "Learn More"
+msgstr ""
+
+#: searchBox.label
+msgctxt "searchBox.label"
+msgid "Search All Add-ons"
+msgstr ""
+
+#: recommendedResults.label
+msgid "See All Recommended Add-ons"
+msgstr ""
+
+#: searchResultInstalling.label
+#, fuzzy
+msgctxt "searchResultInstalling.label"
+msgid "Installing…"
+msgstr "Installeer tans…"
+
+#: searchResultFailed.label
+#, fuzzy
+msgid "Install Failed"
+msgstr "Installering het misluk"
+
+#: searchResultInstalled.label
+msgid "Install Complete"
+msgstr "Installering voltooi"
+
+#: addonTypeExtension.label
+#, fuzzy
+msgid "Extension"
+msgstr "Uitbreidings"
+
+#: addonTypeTheme.label
+#, fuzzy
+msgid "Theme"
+msgstr "Temas"
+
+#: missingThumbnail.label
+msgid "No Preview"
+msgstr ""
 
 #: previewNoThemeSelected.label
 msgid "No Theme Selected"
@@ -313,9 +471,17 @@ msgstr "Hierdie tema het nie 'n voorskouprent nie"
 msgid "More Information"
 msgstr "Meer inligting"
 
-#: closeMessage.tooltip
-msgid "Close this message"
-msgstr "Sluit hierdie boodskap af"
+#: infoNoAddonSelected.label
+msgid "No Update Selected"
+msgstr ""
+
+#: infoNoUpdateInfo.label
+msgid "This update does not have any additional information"
+msgstr ""
+
+#: infoUpdateInfoError.label
+msgid "There was an error loading the information about this update"
+msgstr ""
 
 #: updateSuccess.label
 msgid "Update completed successfully."
@@ -329,21 +495,73 @@ msgstr "Installering suksesvol afgehandel."
 msgid "Restart to complete the installation."
 msgstr "Herbegin om die installering te voltooi."
 
+#: updateSuccessRestart.label
+msgid "Restart to complete the update."
+msgstr ""
+
 #: installWaiting.label
-msgid "Waiting..."
-msgstr "Wag tans..."
+msgid "Waiting…"
+msgstr "Wag tans…"
 
 #: installIncompatibleUpdate.label
-msgid "Checking compatibility..."
-msgstr "Kontroleer vir versoenbaarheid..."
+msgid "Checking compatibility…"
+msgstr "Kontroleer vir versoenbaarheid…"
 
 #: installFinishing.label
-msgid "Installing..."
-msgstr "Installeer tans..."
+msgctxt "installFinishing.label"
+msgid "Installing…"
+msgstr "Installeer tans…"
 
 #: installFailure.label
 msgid "Install failed."
 msgstr "Installering het misluk."
+
+#: progressStatus.label
+#, fuzzy
+msgid "Checking For Updates"
+msgstr "Kontroleer vir bywerkings"
+
+#: eula.title
+msgid "End-User License Agreement"
+msgstr ""
+
+#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
+#: eula.width
+msgid "560px"
+msgstr "560px"
+
+#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
+#: eula.height
+msgid "400px"
+msgstr "400px"
+
+#: eula.accept
+msgid "Accept and Install…"
+msgstr ""
+
+#~ msgid "Install..."
+#~ msgstr "Installeer..."
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgid "Restarts &brandShortName; to finish the installation"
+#~ msgstr "Herbegin &brandShortName; om die installering te voltooi"
+
+#~ msgid "&Skip"
+#~ msgstr "&Slaan oor"
+
+#~ msgid "Get Extensions from addons.mozilla.org"
+#~ msgstr "Kry uitbreidings van addons.mozilla.org"
+
+#~ msgid "Get Themes from addons.mozilla.org"
+#~ msgstr "Kry temas van addons.mozilla.org"
+
+#~ msgid "Close this message"
+#~ msgstr "Sluit hierdie boodskap af"
+
+#~ msgid "Waiting..."
+#~ msgstr "Wag tans..."
 
 # Command Bar items
 #~ msgid "Un&install"
@@ -354,10 +572,6 @@ msgstr "Installering het misluk."
 
 #~ msgid "Find &Updates"
 #~ msgstr "Vind &opdaterings"
-
-# the following command bar items are used by thunderbird only
-#~ msgid "I&nstall"
-#~ msgstr "I&nstalleer"
 
 #~ msgid "Install an Extension"
 #~ msgstr "Installeer 'n uitbreiding"

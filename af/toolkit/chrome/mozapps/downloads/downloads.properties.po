@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-07 11:12+0200\n"
+"POT-Creation-Date: 2008-02-29 14:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,12 +12,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"X-Generator: Translate Toolkit 1.1.1rc3\n"
 "X-Accelerator-Marker: &\n"
 
-#: transferred
-msgid "%1SKB of %2SKB"
-msgstr "%1SKB van %2SKB"
+#. # LOCALIZATION NOTE (seconds, minutes, hours, days): Semi-colon list of plural
+#. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#: seconds
+msgid "second;seconds"
+msgstr ""
+
+#: minutes
+msgid "minute;minutes"
+msgstr ""
+
+#: hours
+msgid "hour;hours"
+msgstr ""
+
+#: days
+msgid "day;days"
+msgstr ""
+
+#. # LOCALIZATION NOTE (paused): — is the "em dash" (long dash)
+#: paused
+msgid "Paused —  #1"
+msgstr ""
 
 #: downloading
 msgid "Downloading"
@@ -28,6 +47,7 @@ msgid "Not Started"
 msgstr "Nie begin nie"
 
 #: failed
+msgctxt "failed"
 msgid "Failed"
 msgstr "Misluk"
 
@@ -36,12 +56,24 @@ msgid "Finished"
 msgstr "Is klaar"
 
 #: canceled
+msgctxt "canceled"
 msgid "Canceled"
 msgstr "Gekanselleer"
+
+#: cannotPause
+msgid "This download cannot be paused"
+msgstr ""
 
 #: downloadErrorAlertTitle
 msgid "Download Error"
 msgstr "Aflaaifout"
+
+#: downloadErrorGeneric
+msgid ""
+"The download cannot be saved because an unknown error occurred.\n"
+"\n"
+"Please try again."
+msgstr ""
 
 #: quitCancelDownloadsAlertTitle
 msgctxt "quitCancelDownloadsAlertTitle"
@@ -79,14 +111,6 @@ msgctxt "offlineCancelDownloadsAlertTitle"
 msgid "Cancel All Downloads?"
 msgstr "Kanselleer alle aflaaie?"
 
-#: offlineCancelDownloadsAlertMsgMultiple
-msgid ""
-"If you go offline now, %S downloads will be canceled. Are you sure you want "
-"to go offline?"
-msgstr ""
-"As u nou aflyn gaan, sal %S aflaaie gekanselleer word. Is u seker u aflyn "
-"wil gaan?"
-
 #: offlineCancelDownloadsAlertMsg
 msgid ""
 "If you go offline now, 1 download will be canceled. Are you sure you want to "
@@ -94,6 +118,14 @@ msgid ""
 msgstr ""
 "As u nou aflyn gaan, sal 1 aflaai gekanselleer word. Is u seker u aflyn wil "
 "gaan?"
+
+#: offlineCancelDownloadsAlertMsgMultiple
+msgid ""
+"If you go offline now, %S downloads will be canceled. Are you sure you want "
+"to go offline?"
+msgstr ""
+"As u nou aflyn gaan, sal %S aflaaie gekanselleer word. Is u seker u aflyn "
+"wil gaan?"
 
 #: cancelDownloadsOKText
 msgid "Cancel 1 Download"
@@ -123,45 +155,130 @@ msgstr "Aflaaie afgehandel"
 msgid "All files have finished downloading."
 msgstr "Alle lêers is klaar afgelaai."
 
-#: statusFormatKBKB
-msgid "#1 of #2 KB"
-msgstr "#1 van #2 KB"
+#. # LOCALIZATION NOTE (statusFormat2): — is the "em dash" (long dash)
+#. # #1 transfer progress; #2 rate number; #3 rate unit; #4 time left
+#. # example: 4 minutes left — 1.1 of 11.1 GB (2.2 MB/sec)
+#: statusFormat2
+msgid "#4 — #1 (#2 #3/sec)"
+msgstr ""
 
-#: statusFormatKBMB
-msgid "#1 KB of #2 MB"
-msgstr "#1 KB van #2 MB"
+#: bytes
+msgid "bytes"
+msgstr ""
 
-#: statusFormatMBMB
-msgid "#1 of #2 MB"
-msgstr "#1 van #2 MB"
+#: kilobyte
+msgid "KB"
+msgstr "KG"
 
-#: statusFormatUnknownKB
-msgid "#1 KB"
-msgstr "#1 KB"
+#: megabyte
+msgid "MB"
+msgstr ""
 
-#: statusFormatUnknownMB
-msgid "#1 MB"
-msgstr "#1 MB"
+#: gigabyte
+msgid "GB"
+msgstr ""
 
-#: remain
-msgid "remain"
-msgstr "oor"
+#. # LOCALIZATION NOTE (transferSameUnits, transferDiffUnits, transferNoTotal):
+#. # #1 progress number; #2 progress unit; #3 total number; #4 total unit
+#. # examples: 1.1 of 333 MB; 11.1 MB of 3.3 GB; 111 KB
+#: transferSameUnits
+msgid "#1 of #3 #4"
+msgstr ""
 
-#: unknownFilesize
-msgid "unknown file size"
-msgstr "onbekende lêergrootte"
+#: transferDiffUnits
+msgid "#1 #2 of #3 #4"
+msgstr ""
 
-#: statusFormat
-msgid "#1 at #2 KB/sec; #3"
-msgstr "#1 teen #2 KB/s; #3"
+#: transferNoTotal
+msgctxt "transferNoTotal"
+msgid "#1 #2"
+msgstr "#1 #2"
 
-#: longTimeFormat
-msgid "#1:#2:#3"
-msgstr "#1:#2:#3"
+#. # LOCALIZATION NOTE (timePair): #1 time number; #2 time unit
+#. # example: 1 minute; 11 hours
+#: timePair
+msgctxt "timePair"
+msgid "#1 #2"
+msgstr "#1 #2"
 
-#: shortTimeFormat
-msgid "#2:#3"
-msgstr "#2:#3"
+#. # LOCALIZATION NOTE (timeLeftSingle): #1 time left
+#. # example: 1 minute remaining; 11 hours remaining
+#: timeLeftSingle
+msgid "#1 remaining"
+msgstr ""
+
+#. # LOCALIZATION NOTE (timeLeftDouble): #1 time left; #2 time left sub units
+#. # example: 11 hours, 2 minutes remaining; 1 day, 22 hours remaining
+#: timeLeftDouble
+msgid "#1, #2 remaining"
+msgstr ""
+
+#: timeFewSeconds
+msgid "A few seconds remaining"
+msgstr ""
+
+#: timeUnknown
+msgid "Unknown time remaining"
+msgstr ""
+
+#. # LOCALIZATION NOTE (doneStatus): — is the "em dash" (long dash)
+#. # #1 download size for FINISHED or download state; #2 host (e.g., eTLD + 1, IP)
+#. # #2 can also be doneScheme or doneFileScheme for special URIs like file:
+#. # examples: 1.1 MB — website2.com; Canceled — 222.net
+#: doneStatus
+msgid "#1 — #2"
+msgstr ""
+
+#. # LOCALIZATION NOTE (doneSize): #1 size number; #2 size unit
+#: doneSize
+msgctxt "doneSize"
+msgid "#1 #2"
+msgstr "#1 #2"
+
+#: doneSizeUnknown
+msgid "Unknown size"
+msgstr ""
+
+#. # LOCALIZATION NOTE (doneScheme): #1 URI scheme like data: jar: about:
+#: doneScheme
+msgid "#1 resource"
+msgstr ""
+
+#. # LOCALIZATION NOTE (doneFileScheme): Special case of doneScheme for file:
+#. # This is used as an eTLD replacement for local files, so make it lower case
+#: doneFileScheme
+msgid "local file"
+msgstr ""
+
+#: stateFailed
+msgctxt "stateFailed"
+msgid "Failed"
+msgstr "Misluk"
+
+#: stateCanceled
+msgctxt "stateCanceled"
+msgid "Canceled"
+msgstr "Gekanselleer"
+
+#. # LOCALIZATION NOTE (stateBlocked): 'Parental Controls' should be capitalized
+#: stateBlocked
+msgid "Blocked by Parental Controls"
+msgstr ""
+
+#: stateDirty
+msgid "Blocked: Download may contain a virus or spyware"
+msgstr ""
+
+#. # LOCALIZATION NOTE (yesterday): Displayed time for files finished yesterday
+#: yesterday
+msgid "Yesterday"
+msgstr "Gister"
+
+#. # LOCALIZATION NOTE (monthDate): #1 month name; #2 date number; e.g., January 22
+#: monthDate
+msgctxt "monthDate"
+msgid "#1 #2"
+msgstr "#1 #2"
 
 #: fileDoesNotExistOpenTitle
 msgid "Cannot Open %S"
@@ -180,16 +297,20 @@ msgstr ""
 "is."
 
 #: chooseAppFilePickerTitle
-msgid "Open With..."
-msgstr "Open met..."
+msgid "Open With…"
+msgstr "Open met…"
 
-#: downloadsTitle
-msgid "%S%% of 1 file - Downloads"
-msgstr "%S%% van 1 lêer - Aflaaie"
+#. # LOCALIZATION NOTE (downloadsTitleFiles, downloadsTitlePercent): Semi-colon list of
+#. # plural forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 number of files; #2 overall download percent (only for downloadsTitlePercent)
+#. # examples: 2% of 1 file - Downloads; 22% of 11 files - Downloads
+#: downloadsTitleFiles
+msgid "#1 file - Downloads;#1 files - Downloads"
+msgstr ""
 
-#: downloadsTitleMultiple
-msgid "%S%% of %S files - Downloads"
-msgstr "%S%% van %S lêers - Aflaaie"
+#: downloadsTitlePercent
+msgid "#2% of #1 file - Downloads;#2% of #1 files - Downloads"
+msgstr ""
 
 #: fileExecutableSecurityWarning
 msgid ""
@@ -212,3 +333,47 @@ msgstr "Moenie my weer vra nie"
 #: displayNameDesktop
 msgid "Desktop"
 msgstr "Werkskerm"
+
+#. # Desktop folder name for downloaded files
+#: downloadsFolder
+msgid "Downloads"
+msgstr "Aflaaie"
+
+#~ msgid "%1SKB of %2SKB"
+#~ msgstr "%1SKB van %2SKB"
+
+#~ msgid "#1 of #2 KB"
+#~ msgstr "#1 van #2 KB"
+
+#~ msgid "#1 KB of #2 MB"
+#~ msgstr "#1 KB van #2 MB"
+
+#~ msgid "#1 of #2 MB"
+#~ msgstr "#1 van #2 MB"
+
+#~ msgid "#1 KB"
+#~ msgstr "#1 KB"
+
+#~ msgid "#1 MB"
+#~ msgstr "#1 MB"
+
+#~ msgid "remain"
+#~ msgstr "oor"
+
+#~ msgid "unknown file size"
+#~ msgstr "onbekende lêergrootte"
+
+#~ msgid "#1 at #2 KB/sec; #3"
+#~ msgstr "#1 teen #2 KB/s; #3"
+
+#~ msgid "#1:#2:#3"
+#~ msgstr "#1:#2:#3"
+
+#~ msgid "#2:#3"
+#~ msgstr "#2:#3"
+
+#~ msgid "%S%% of 1 file - Downloads"
+#~ msgstr "%S%% van 1 lêer - Aflaaie"
+
+#~ msgid "%S%% of %S files - Downloads"
+#~ msgstr "%S%% van %S lêers - Aflaaie"

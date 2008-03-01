@@ -39,7 +39,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-07 11:12+0200\n"
+"POT-Creation-Date: 2008-02-29 14:07+0200\n"
 "PO-Revision-Date: 2007-10-08 15:00+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"X-Generator: Translate Toolkit 1.1.1rc3\n"
 "X-Accelerator-Marker: &\n"
 
 #: SignedBy
@@ -126,31 +126,23 @@ msgid "Certificate for this certificate authority was not found"
 msgstr "Sertifikaat vir hierdie sertifikaatowerheid kon nie gevind word nie"
 
 #. #For Deleting Certificates
-#: deleteSslCertFlag
-msgid "deleteSslFlag"
-msgstr "deleteSslFlag"
+#: deleteSslCertConfirm3
+#, fuzzy
+msgid "Are you sure you want to delete these server exceptions?"
+msgstr "Is u seker dat u hierdie sertifikate wil skrap?"
 
-#: deleteSslCertConfirm
-msgid "Are you sure you want to delete these web site certificates?"
-msgstr "Is u seker dat u hierdie webwerfsertifikate wil skrap?"
-
-#: deleteSslCertImpact
+#: deleteSslCertImpact3
 msgid ""
-"If you delete a web site certificate, you will be asked to accept it again "
-"the next time you visit the web site."
+"If you delete a server exception, you restore the usual security checks for "
+"that server and require it uses a valid certificate."
 msgstr ""
-"As u 'n webwerfsertifikaat skrap, sal u die volgende keer wat u die webwerf "
-"besoek, weer gevra word om dit te aanvaar."
 
-#: deleteSslCertTitle
-msgid "Delete Web Site Certificates"
-msgstr "Skrap webwerfsertifikate"
-
-#: deleteUserCertFlag
-msgid "deleteUserFlag"
-msgstr "deleteUserFlag"
+#: deleteSslCertTitle3
+msgid "Delete Server Certificate Exceptions"
+msgstr ""
 
 #: deleteUserCertConfirm
+msgctxt "deleteUserCertConfirm"
 msgid "Are you sure you want to delete these certificates?"
 msgstr "Is u seker dat u hierdie sertifikate wil skrap?"
 
@@ -166,18 +158,15 @@ msgstr ""
 msgid "Delete your Certificates"
 msgstr "Skrap u sertifikate"
 
-#: deleteCaCertFlag
-msgid "deleteCaFlag"
-msgstr "deleteCaFlag"
-
 #: deleteCaCertConfirm
 msgid "Are you sure you want to delete these CA certificates?"
 msgstr "Is u seker dat u hierdie SO-sertifikate wil skrap?"
 
-#: deleteCaCertImpact
+#: deleteCaCertImpactX
+#, fuzzy
 msgid ""
-"If you delete a certificate authority (CA) certificate, your browser will no "
-"longer trust any certificates issued by that CA."
+"If you delete a certificate authority (CA) certificate, this application "
+"will no longer trust any certificates issued by that CA."
 msgstr ""
 "As u 'n sertifikaat van 'n sertifikaatowerheid (SO) skrap, sal u blaaier nie "
 "enige sertifikate wat deur daardie SO uitgereik is, vertrou nie."
@@ -186,18 +175,15 @@ msgstr ""
 msgid "Delete CA Certificates"
 msgstr "Skrap SO-sertifikate"
 
-#: deleteEmailCertFlag
-msgid "deleteEmailFlag"
-msgstr "deleteEmailFlag"
-
 #: deleteEmailCertConfirm
 msgid "Are you sure you want to delete these people's e-mail certificates?"
 msgstr "Is u seker dat u hierdie persone se e-possertifikate wil skrap?"
 
-#: deleteEmailCertImpact
+#: deleteEmailCertImpactDesc
+#, fuzzy
 msgid ""
-"If you delete an e-mail certificate, your will no longer be able to send "
-"encrypted e-mail to those people."
+"If you delete a person's e-mail certificate, you will no longer be able to "
+"send encrypted e-mail to that person."
 msgstr ""
 "Indien u 'n e-possertifikaat skrap, sal u nie meer geënkripteerde e-pos aan "
 "daardie mense kan stuur nie."
@@ -205,6 +191,16 @@ msgstr ""
 #: deleteEmailCertTitle
 msgid "Delete E-Mail Certificates"
 msgstr "Skrap e-possertifikate"
+
+#: deleteOrphanCertConfirm
+msgctxt "deleteOrphanCertConfirm"
+msgid "Are you sure you want to delete these certificates?"
+msgstr "Is u seker dat u hierdie sertifikate wil skrap?"
+
+#: deleteOrphanCertTitle
+#, fuzzy
+msgid "Delete Certificates"
+msgstr "Skrap SO-sertifikate"
 
 #. #PKCS#12 file dialogs
 #: chooseP12RestoreFileDialog
@@ -218,60 +214,6 @@ msgstr "Lêernaam om te rugsteun"
 #: file_browse_PKCS12_spec
 msgid "PKCS12 Files"
 msgstr "PKCS12-lêers"
-
-#. #Mismatch Domain Dialg
-#: mismatchDomainMsg1
-msgid ""
-"You have attempted to establish a connection with \"%S\".  However, the "
-"security certificate presented belongs to \"%S\".  It is possible, though "
-"unlikely, that someone may be trying to intercept your communication with "
-"this web site."
-msgstr ""
-"U het probeer om 'n verbinding met \"%S\" te bewerkstellig.  Die "
-"sekuriteitsertifikaat behoort egter aan \"%S\".  Dit is moontlik, maar "
-"onwaarskynlik, dat iemand probeer om u kommunikasie met hierdie webwerf te "
-"onderskep."
-
-#: mismatchDomainMsg2
-msgid ""
-"If you suspect the certificate shown does not belong to \"%S\", please "
-"cancel the connection and notify the site administrator."
-msgstr ""
-"Indien u vermoed dat die vertoonde sertifikaat nie aan \"%S\" behoort nie, "
-"kanselleer die verbinding en stel die werfadministrateur in kennis."
-
-#. #Server Cert expired
-#: serverCertExpiredMsg1
-msgid ""
-"\"%S\" is a site that uses a security certificate to encrypt data during "
-"transmission, but its certificate expired on %S."
-msgstr ""
-"\"%S\" is 'n werf wat 'n sekuriteitsertifikaat gebruik om data tydens "
-"versending te enkripteer, maar sy sertifikaat het op %S verval."
-
-#: serverCertExpiredTitle
-msgid "Server Certificate Expired"
-msgstr "Bedienersertifikaat het verval"
-
-#: serverCertNotYetValedMsg1
-msgid ""
-"\"%S\" is a site that uses a security certificate to encrypt data during "
-"transmission, but its certificate will not be valid until %S."
-msgstr ""
-"\"%S\" is 'n werf wat 'n sekuriteitsertifikaat gebruik om data tydens "
-"versending te enkripteer, maar sy sertifikaat word eers geldig op %S."
-
-#: serverCertNotYetValidTitle
-msgid "Server Certificate Not Yet Valid"
-msgstr "Bedienersertifikaat nog nie geldig nie"
-
-#: serverCertExpiredMsg2
-msgid ""
-"You should check to make sure that your computer's time (currently set to %"
-"S) is correct."
-msgstr ""
-"U behoort te kontroleer om seker te maak dat u rekenaar se tyd (tans op %S "
-"gestel) korrek is."
 
 #. #Preferences
 #: resetPreferences
@@ -594,13 +536,6 @@ msgstr "URL oorspronklik gehaal van"
 msgid "URL advertised by the CA"
 msgstr "URL geadverteer deur die SO"
 
-#: CrlUpdatePrefsSetConfirmation
-msgid ""
-"Automatic update preferences will take effect when you restart the browser."
-msgstr ""
-"Voorkeure vir outomatiese bywerking sal in werking tree wanneer u u blaaier "
-"herbegin."
-
 #: crlAutoUpdateDayCntError
 msgid "Number of days before next update must be a number greater than zero."
 msgstr "Getal dae voor volgende bywerking moet 'n getal groter as nul wees."
@@ -618,11 +553,11 @@ msgid "Automatic Update is enabled for this CRL."
 msgstr "Outomatiese bywerking is geaktiveer vir hierdie SOL."
 
 #: crlAutoupdateQuestion1
-msgid "Would would like to enable automatic update?"
+msgid "Would you like to enable automatic update?"
 msgstr "Wil u graag outomatiese bywerking aktiveer?"
 
 #: crlAutoupdateQuestion2
-msgid "Would would like to view the automatic update settings?"
+msgid "Would you like to view the automatic update settings?"
 msgstr "Wil u graag die opstelling vir outomatiese bywerking bekyk?"
 
 #: undefinedValStr
@@ -682,8 +617,9 @@ msgstr "Kies lêer wat iemand se e-possertifikaat bevat om in te voer"
 msgid "Select File containing CA certificate(s) to import"
 msgstr "Kies lêer wat SO-sertifikaat(e) bevat om in te voer"
 
-#: importWebSiteCertPrompt
-msgid "Select File containing Web Site certificate to import"
+#: importServerCertPrompt
+#, fuzzy
+msgid "Select File containing Server certificate to import"
 msgstr "Kies lêer wat webwerfsertifikaat bevat om in te voer"
 
 #: file_browse_Certificate_spec
@@ -694,6 +630,203 @@ msgstr "Sertifikaatlêers"
 #: formSigningIntro
 msgid "The site '%S' has requested that you sign the following text message:"
 msgstr "Die werf '%S' het versoek dat u die volgende boodskap onderteken:"
+
+#. # Cert export
+#: SaveCertAs
+msgid "Save Certificate To File"
+msgstr ""
+
+#: CertFormatBase64
+msgid "X.509 Certificate (PEM)"
+msgstr ""
+
+#: CertFormatBase64Chain
+msgid "X.509 Certificate with chain (PEM)"
+msgstr ""
+
+#: CertFormatDER
+msgid "X.509 Certificate (DER)"
+msgstr ""
+
+#: CertFormatPKCS7
+msgid "X.509 Certificate (PKCS#7)"
+msgstr ""
+
+#: CertFormatPKCS7Chain
+msgid "X.509 Certificate with chain (PKCS#7)"
+msgstr ""
+
+#: writeFileFailure
+msgid "File Error"
+msgstr ""
+
+#: writeFileFailed
+msgid ""
+"Can't write to file %S:\n"
+"%S."
+msgstr ""
+
+#: writeFileAccessDenied
+msgid "Access denied"
+msgstr "Toegang geweier"
+
+#: writeFileIsLocked
+msgid "File is locked"
+msgstr ""
+
+#: writeFileNoDeviceSpace
+msgid "No space left on device"
+msgstr ""
+
+#: writeFileUnknownError
+msgid "Unknown error"
+msgstr "Onbekende probleem"
+
+#. #Add Security Exception dialog
+#: addExceptionBrandedWarning2
+msgid "You are about to override how %S identifies this site."
+msgstr ""
+
+#: addExceptionInvalidHeader
+msgid "This site attempts to identity itself with invalid information."
+msgstr ""
+
+#: addExceptionDomainMismatchShort
+msgid "Wrong Site"
+msgstr ""
+
+#: addExceptionDomainMismatchLong
+msgid ""
+"Certificate belongs to a different site, which could indicate an identity "
+"theft."
+msgstr ""
+
+#: addExceptionExpiredShort
+msgid "Outdated Information"
+msgstr ""
+
+#: addExceptionExpiredLong
+msgid ""
+"Certificate is not currently valid. It is impossible to verify whether this "
+"identity was reported as stolen or lost."
+msgstr ""
+
+#: addExceptionUnverifiedShort
+msgid "Unknown Identity"
+msgstr ""
+
+#: addExceptionUnverifiedLong
+msgid ""
+"Certificate is not trusted, because it hasn't been verified by a recognized "
+"authority."
+msgstr ""
+
+#: addExceptionValidShort
+msgid "Valid Certificate"
+msgstr ""
+
+#: addExceptionValidLong
+msgid ""
+"This site provides valid, verified identification.  There is no need to add "
+"an exception."
+msgstr ""
+
+#: addExceptionCheckingShort
+msgid "Checking Information"
+msgstr ""
+
+#: addExceptionCheckingLong
+msgid "Attempting to identify the site…"
+msgstr ""
+
+#: addExceptionNoCertShort
+msgid "No Information Available"
+msgstr ""
+
+#: addExceptionNoCertLong
+msgid "Unable to obtain identification status for the given site."
+msgstr ""
+
+#: addExceptionConnectionFailed
+msgid "Connection Failed"
+msgstr ""
+
+#~ msgid "deleteSslFlag"
+#~ msgstr "deleteSslFlag"
+
+#~ msgid "Are you sure you want to delete these web site certificates?"
+#~ msgstr "Is u seker dat u hierdie webwerfsertifikate wil skrap?"
+
+#~ msgid ""
+#~ "If you delete a web site certificate, you will be asked to accept it "
+#~ "again the next time you visit the web site."
+#~ msgstr ""
+#~ "As u 'n webwerfsertifikaat skrap, sal u die volgende keer wat u die "
+#~ "webwerf besoek, weer gevra word om dit te aanvaar."
+
+#~ msgid "Delete Web Site Certificates"
+#~ msgstr "Skrap webwerfsertifikate"
+
+#~ msgid "deleteUserFlag"
+#~ msgstr "deleteUserFlag"
+
+#~ msgid "deleteCaFlag"
+#~ msgstr "deleteCaFlag"
+
+#~ msgid "deleteEmailFlag"
+#~ msgstr "deleteEmailFlag"
+
+#~ msgid ""
+#~ "You have attempted to establish a connection with \"%S\".  However, the "
+#~ "security certificate presented belongs to \"%S\".  It is possible, though "
+#~ "unlikely, that someone may be trying to intercept your communication with "
+#~ "this web site."
+#~ msgstr ""
+#~ "U het probeer om 'n verbinding met \"%S\" te bewerkstellig.  Die "
+#~ "sekuriteitsertifikaat behoort egter aan \"%S\".  Dit is moontlik, maar "
+#~ "onwaarskynlik, dat iemand probeer om u kommunikasie met hierdie webwerf "
+#~ "te onderskep."
+
+#~ msgid ""
+#~ "If you suspect the certificate shown does not belong to \"%S\", please "
+#~ "cancel the connection and notify the site administrator."
+#~ msgstr ""
+#~ "Indien u vermoed dat die vertoonde sertifikaat nie aan \"%S\" behoort "
+#~ "nie, kanselleer die verbinding en stel die werfadministrateur in kennis."
+
+#~ msgid ""
+#~ "\"%S\" is a site that uses a security certificate to encrypt data during "
+#~ "transmission, but its certificate expired on %S."
+#~ msgstr ""
+#~ "\"%S\" is 'n werf wat 'n sekuriteitsertifikaat gebruik om data tydens "
+#~ "versending te enkripteer, maar sy sertifikaat het op %S verval."
+
+#~ msgid "Server Certificate Expired"
+#~ msgstr "Bedienersertifikaat het verval"
+
+#~ msgid ""
+#~ "\"%S\" is a site that uses a security certificate to encrypt data during "
+#~ "transmission, but its certificate will not be valid until %S."
+#~ msgstr ""
+#~ "\"%S\" is 'n werf wat 'n sekuriteitsertifikaat gebruik om data tydens "
+#~ "versending te enkripteer, maar sy sertifikaat word eers geldig op %S."
+
+#~ msgid "Server Certificate Not Yet Valid"
+#~ msgstr "Bedienersertifikaat nog nie geldig nie"
+
+#~ msgid ""
+#~ "You should check to make sure that your computer's time (currently set to "
+#~ "%S) is correct."
+#~ msgstr ""
+#~ "U behoort te kontroleer om seker te maak dat u rekenaar se tyd (tans op %"
+#~ "S gestel) korrek is."
+
+#~ msgid ""
+#~ "Automatic update preferences will take effect when you restart the "
+#~ "browser."
+#~ msgstr ""
+#~ "Voorkeure vir outomatiese bywerking sal in werking tree wanneer u u "
+#~ "blaaier herbegin."
 
 #~ msgid "Signed by %S"
 #~ msgstr "Onderteken deur %S"
