@@ -1,9 +1,9 @@
-#, fuzzy
+#. extracted from en-US/toolkit/chrome/mozapps/downloads/downloads.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-22 16:55+0200\n"
+"POT-Creation-Date: 2008-03-13 11:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,12 +11,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.10.90\n"
+"X-Generator: Translate Toolkit 1.1.1rc3\n"
 "X-Accelerator-Marker: &\n"
 
-#: transferred
-msgid "%1SKB of %2SKB"
-msgstr "%1SKB of %2SKB"
+#. # LOCALIZATION NOTE (seconds, minutes, hours, days): Semi-colon list of plural
+#. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#: seconds
+msgid "second;seconds"
+msgstr "second;seconds"
+
+#: minutes
+msgid "minute;minutes"
+msgstr "minute;minutes"
+
+#: hours
+msgid "hour;hours"
+msgstr "hour;hours"
+
+#: days
+msgid "day;days"
+msgstr "day;days"
+
+#. # LOCALIZATION NOTE (paused): — is the "em dash" (long dash)
+#: paused
+msgid "Paused —  #1"
+msgstr "Paused   #1"
 
 #: downloading
 msgid "Downloading"
@@ -27,6 +46,7 @@ msgid "Not Started"
 msgstr "Not Started"
 
 #: failed
+msgctxt "failed"
 msgid "Failed"
 msgstr "Failed"
 
@@ -35,17 +55,31 @@ msgid "Finished"
 msgstr "Finished"
 
 #: canceled
+msgctxt "canceled"
 msgid "Canceled"
 msgstr "Cancelled"
+
+#: cannotPause
+msgid "This download cannot be paused"
+msgstr "This download cannot be paused"
 
 #: downloadErrorAlertTitle
 msgid "Download Error"
 msgstr "Download Error"
 
-#: quitCancelDownloadsAlertTitle
+#: downloadErrorGeneric
 msgid ""
-"_: quitCancelDownloadsAlertTitle\n"
-"Cancel All Downloads?"
+"The download cannot be saved because an unknown error occurred.\n"
+"\n"
+"Please try again."
+msgstr ""
+"The download cannot be saved because an unknown error occurred.\n"
+"\n"
+"Please try again."
+
+#: quitCancelDownloadsAlertTitle
+msgctxt "quitCancelDownloadsAlertTitle"
+msgid "Cancel All Downloads?"
 msgstr "Cancel All Downloads?"
 
 #: quitCancelDownloadsAlertMsg
@@ -77,18 +111,9 @@ msgstr ""
 "quit?"
 
 #: offlineCancelDownloadsAlertTitle
-msgid ""
-"_: offlineCancelDownloadsAlertTitle\n"
-"Cancel All Downloads?"
+msgctxt "offlineCancelDownloadsAlertTitle"
+msgid "Cancel All Downloads?"
 msgstr "Cancel All Downloads?"
-
-#: offlineCancelDownloadsAlertMsgMultiple
-msgid ""
-"If you go offline now, %S downloads will be canceled. Are you sure you want "
-"to go offline?"
-msgstr ""
-"If you go offline now, %S downloads will be cancelled. Are you sure you want "
-"to go offline?"
 
 #: offlineCancelDownloadsAlertMsg
 msgid ""
@@ -96,6 +121,14 @@ msgid ""
 "go offline?"
 msgstr ""
 "If you go offline now, 1 download will be cancelled. Are you sure you want "
+"to go offline?"
+
+#: offlineCancelDownloadsAlertMsgMultiple
+msgid ""
+"If you go offline now, %S downloads will be canceled. Are you sure you want "
+"to go offline?"
+msgstr ""
+"If you go offline now, %S downloads will be cancelled. Are you sure you want "
 "to go offline?"
 
 #: cancelDownloadsOKText
@@ -126,45 +159,130 @@ msgstr "Downloads Complete"
 msgid "All files have finished downloading."
 msgstr "All files have finished downloading."
 
-#: statusFormatKBKB
-msgid "#1 of #2 KB"
-msgstr "#1 of #2 KB"
+#. # LOCALIZATION NOTE (statusFormat2): — is the "em dash" (long dash)
+#. # #1 transfer progress; #2 rate number; #3 rate unit; #4 time left
+#. # example: 4 minutes left — 1.1 of 11.1 GB (2.2 MB/sec)
+#: statusFormat2
+msgid "#4 — #1 (#2 #3/sec)"
+msgstr "#4  #1 (#2 #3/sec)"
 
-#: statusFormatKBMB
-msgid "#1 KB of #2 MB"
-msgstr "#1 KB of #2 MB"
+#: bytes
+msgid "bytes"
+msgstr "bytes"
 
-#: statusFormatMBMB
-msgid "#1 of #2 MB"
-msgstr "#1 of #2 MB"
+#: kilobyte
+msgid "KB"
+msgstr "KB"
 
-#: statusFormatUnknownKB
-msgid "#1 KB"
-msgstr "#1 KB"
+#: megabyte
+msgid "MB"
+msgstr "MB"
 
-#: statusFormatUnknownMB
-msgid "#1 MB"
-msgstr "#1 MB"
+#: gigabyte
+msgid "GB"
+msgstr "GB"
 
-#: remain
-msgid "remain"
-msgstr "remain"
+#. # LOCALIZATION NOTE (transferSameUnits, transferDiffUnits, transferNoTotal):
+#. # #1 progress number; #2 progress unit; #3 total number; #4 total unit
+#. # examples: 1.1 of 333 MB; 11.1 MB of 3.3 GB; 111 KB
+#: transferSameUnits
+msgid "#1 of #3 #4"
+msgstr "#1 of #3 #4"
 
-#: unknownFilesize
-msgid "unknown file size"
-msgstr "unknown file size"
+#: transferDiffUnits
+msgid "#1 #2 of #3 #4"
+msgstr "#1 #2 of #3 #4"
 
-#: statusFormat
-msgid "#1 at #2 KB/sec; #3"
-msgstr "#1 at #2 KB/sec; #3"
+#: transferNoTotal
+msgctxt "transferNoTotal"
+msgid "#1 #2"
+msgstr "#1#2"
 
-#: longTimeFormat
-msgid "#1:#2:#3"
-msgstr "#1:#2:#3"
+#. # LOCALIZATION NOTE (timePair): #1 time number; #2 time unit
+#. # example: 1 minute; 11 hours
+#: timePair
+msgctxt "timePair"
+msgid "#1 #2"
+msgstr "#1#2"
 
-#: shortTimeFormat
-msgid "#2:#3"
-msgstr "#2:#3"
+#. # LOCALIZATION NOTE (timeLeftSingle): #1 time left
+#. # example: 1 minute remaining; 11 hours remaining
+#: timeLeftSingle
+msgid "#1 remaining"
+msgstr "#1 remaining"
+
+#. # LOCALIZATION NOTE (timeLeftDouble): #1 time left; #2 time left sub units
+#. # example: 11 hours, 2 minutes remaining; 1 day, 22 hours remaining
+#: timeLeftDouble
+msgid "#1, #2 remaining"
+msgstr "#1, #2 remaining"
+
+#: timeFewSeconds
+msgid "A few seconds remaining"
+msgstr "A few seconds remaining"
+
+#: timeUnknown
+msgid "Unknown time remaining"
+msgstr "Unknown time remaining"
+
+#. # LOCALIZATION NOTE (doneStatus): — is the "em dash" (long dash)
+#. # #1 download size for FINISHED or download state; #2 host (e.g., eTLD + 1, IP)
+#. # #2 can also be doneScheme or doneFileScheme for special URIs like file:
+#. # examples: 1.1 MB — website2.com; Canceled — 222.net
+#: doneStatus
+msgid "#1 — #2"
+msgstr "#1  #2"
+
+#. # LOCALIZATION NOTE (doneSize): #1 size number; #2 size unit
+#: doneSize
+msgctxt "doneSize"
+msgid "#1 #2"
+msgstr "#1#2"
+
+#: doneSizeUnknown
+msgid "Unknown size"
+msgstr "Unknown size"
+
+#. # LOCALIZATION NOTE (doneScheme): #1 URI scheme like data: jar: about:
+#: doneScheme
+msgid "#1 resource"
+msgstr "#1 resource"
+
+#. # LOCALIZATION NOTE (doneFileScheme): Special case of doneScheme for file:
+#. # This is used as an eTLD replacement for local files, so make it lower case
+#: doneFileScheme
+msgid "local file"
+msgstr "local file"
+
+#: stateFailed
+msgctxt "stateFailed"
+msgid "Failed"
+msgstr "Failed"
+
+#: stateCanceled
+msgctxt "stateCanceled"
+msgid "Canceled"
+msgstr "Cancelled"
+
+#. # LOCALIZATION NOTE (stateBlocked): 'Parental Controls' should be capitalized
+#: stateBlocked
+msgid "Blocked by Parental Controls"
+msgstr "Blocked by Parental Controls"
+
+#: stateDirty
+msgid "Blocked: Download may contain a virus or spyware"
+msgstr "Blocked: Download may contain a virus or spyware"
+
+#. # LOCALIZATION NOTE (yesterday): Displayed time for files finished yesterday
+#: yesterday
+msgid "Yesterday"
+msgstr "Yesterday"
+
+#. # LOCALIZATION NOTE (monthDate): #1 month name; #2 date number; e.g., January 22
+#: monthDate
+msgctxt "monthDate"
+msgid "#1 #2"
+msgstr "#1#2"
 
 #: fileDoesNotExistOpenTitle
 msgid "Cannot Open %S"
@@ -186,13 +304,17 @@ msgstr ""
 msgid "Open With…"
 msgstr "Open With…"
 
-#: downloadsTitle
-msgid "%S%% of 1 file - Downloads"
-msgstr "%S%% of 1 file - Downloads"
+#. # LOCALIZATION NOTE (downloadsTitleFiles, downloadsTitlePercent): Semi-colon list of
+#. # plural forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 number of files; #2 overall download percent (only for downloadsTitlePercent)
+#. # examples: 2% of 1 file - Downloads; 22% of 11 files - Downloads
+#: downloadsTitleFiles
+msgid "#1 file - Downloads;#1 files - Downloads"
+msgstr "#1 file - Downloads;#1 files - Downloads"
 
-#: downloadsTitleMultiple
-msgid "%S%% of %S files - Downloads"
-msgstr "%S%% of %S files - Downloads"
+#: downloadsTitlePercent
+msgid "#2% of #1 file - Downloads;#2% of #1 files - Downloads"
+msgstr "#2% of #1 file - Downloads;#2% of #1 files - Downloads"
 
 #: fileExecutableSecurityWarning
 msgid ""
@@ -215,3 +337,47 @@ msgstr "Don't ask me this again"
 #: displayNameDesktop
 msgid "Desktop"
 msgstr "Desktop"
+
+#. # Desktop folder name for downloaded files
+#: downloadsFolder
+msgid "Downloads"
+msgstr "Downloads"
+
+#~ msgid "%1SKB of %2SKB"
+#~ msgstr "%1SKB of %2SKB"
+
+#~ msgid "#1 of #2 KB"
+#~ msgstr "#1 of #2 KB"
+
+#~ msgid "#1 KB of #2 MB"
+#~ msgstr "#1 KB of #2 MB"
+
+#~ msgid "#1 of #2 MB"
+#~ msgstr "#1 of #2 MB"
+
+#~ msgid "#1 KB"
+#~ msgstr "#1 KB"
+
+#~ msgid "#1 MB"
+#~ msgstr "#1 MB"
+
+#~ msgid "remain"
+#~ msgstr "remain"
+
+#~ msgid "unknown file size"
+#~ msgstr "unknown file size"
+
+#~ msgid "#1 at #2 KB/sec; #3"
+#~ msgstr "#1 at #2 KB/sec; #3"
+
+#~ msgid "#1:#2:#3"
+#~ msgstr "#1:#2:#3"
+
+#~ msgid "#2:#3"
+#~ msgstr "#2:#3"
+
+#~ msgid "%S%% of 1 file - Downloads"
+#~ msgstr "%S%% of 1 file - Downloads"
+
+#~ msgid "%S%% of %S files - Downloads"
+#~ msgstr "%S%% of %S files - Downloads"

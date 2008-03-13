@@ -1,9 +1,49 @@
-#, fuzzy
+#. #
+#. # ***** BEGIN LICENSE BLOCK *****
+#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#. #
+#. # The contents of this file are subject to the Mozilla Public License Version
+#. # 1.1 (the "License"); you may not use this file except in compliance with
+#. # the License. You may obtain a copy of the License at
+#. # http://www.mozilla.org/MPL/
+#. #
+#. # Software distributed under the License is distributed on an "AS IS" basis,
+#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+#. # for the specific language governing rights and limitations under the
+#. # License.
+#. #
+#. # The Original Code is mozilla.org code.
+#. #
+#. # The Initial Developer of the Original Code is
+#. # Netscape Communications Corporation.
+#. # Portions created by the Initial Developer are Copyright (C) 1998
+#. # the Initial Developer. All Rights Reserved.
+#. #
+#. # Contributor(s):
+#. #   Javier Delgadillo <javi@netscape.com>
+#. #   Brian Ryner <bryner@brianryner.com>
+#. #   Terry Hayes <thayes@netscape.com>
+#. #   John Gardiner Myers <jgmyers@speakeasy.net>
+#. #
+#. # Alternatively, the contents of this file may be used under the terms of
+#. # either the GNU General Public License Version 2 or later (the "GPL"), or
+#. # the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+#. # in which case the provisions of the GPL or the LGPL are applicable instead
+#. # of those above. If you wish to allow use of your version of this file only
+#. # under the terms of either the GPL or the LGPL, and not to allow others to
+#. # use your version of this file under the terms of the MPL, indicate your
+#. # decision by deleting the provisions above and replace them with the notice
+#. # and other provisions required by the GPL or the LGPL. If you do not delete
+#. # the provisions above, a recipient may use your version of this file under
+#. # the terms of any one of the MPL, the GPL or the LGPL.
+#. #
+#. # ***** END LICENSE BLOCK *****
+#. extracted from en-US/security/manager/chrome/pipnss/pipnss.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-22 16:55+0200\n"
+"POT-Creation-Date: 2008-03-13 11:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +51,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.10.90\n"
+"X-Generator: Translate Toolkit 1.1.1rc3\n"
 "X-Accelerator-Marker: &\n"
 
 #: SignedBy
@@ -22,50 +62,72 @@ msgstr "Authenticated by %S"
 msgid "Please enter the master password for the %S."
 msgstr "Please enter the master password for the %S."
 
+#. # the following strings have special requirements:
+#. # they must fit in a 32 or 64 byte buffer after being translated
+#. # to UTF8.  Note to translator. It's not easy for you to figure
+#. # whether the escaped unicode string you produce will fit in 
+#. # the space allocated.
+#. #
+#. # 64 bytes long after conversion to UTF8
 #: RootCertModuleName
 msgid "Builtin Roots Module"
 msgstr "Builtin Roots Module"
 
+#. #
+#. # 32 bytes long after conversion to UTF8
 #: ManufacturerID
 msgid "Mozilla.org"
 msgstr "Mozilla.org"
 
+#. #
+#. # 32  bytes long after conversion to UTF8
 #: LibraryDescription
 msgid "PSM Internal Crypto Services"
 msgstr "PSM Internal Crypto Services"
 
+#. #
+#. # 32 bytes long after conversion to UTF8
 #: TokenDescription
 msgid "Generic Crypto Services"
 msgstr "Generic Crypto Services"
 
+#. #
+#. # 32 bytes long after conversion to UTF8
 #: PrivateTokenDescription
-msgid ""
-"_: PrivateTokenDescription\n"
-"Software Security Device"
+msgctxt "PrivateTokenDescription"
+msgid "Software Security Device"
 msgstr "Software Security Device"
 
+#. #
+#. # 64 bytes long after conversion to UTF8
 #: SlotDescription
 msgid "PSM Internal Cryptographic Services"
 msgstr "PSM Internal Cryptographic Services"
 
+#. #
+#. # 64 bytes long after conversion to UTF8
 #: PrivateSlotDescription
 msgid "PSM Private Keys"
 msgstr "PSM Private Keys"
 
-#: FipsSlotDescription
-msgid "PSM Internal FIPS-140-1 Cryptographic Services"
-msgstr "PSM Internal FIPS-140-1 Cryptographic Services"
+#. #
+#. # 32
+#: Fips140TokenDescription
+msgid "Software Security Device (FIPS)"
+msgstr "Software Security Device (FIPS)"
 
-#: FipsPrivateSlotDescription
-msgid "PSM FIPS-140-1 User Private Key Services"
-msgstr "PSM FIPS-140-1 User Private Key Services"
+#. # 64
+#: Fips140SlotDescription
+msgid "FIPS 140 Cryptographic, Key and Certificate Services"
+msgstr "FIPS 140 Cryptographic, Key and Certificate Services"
 
+#. # 32
 #: InternalToken
-msgid ""
-"_: InternalToken\n"
-"Software Security Device"
+msgctxt "InternalToken"
+msgid "Software Security Device"
 msgstr "Software Security Device"
 
+#. # End of size restriction.
 #: VerifySSLClient
 msgid "SSL Client Certificate"
 msgstr "SSL Client Certificate"
@@ -91,15 +153,13 @@ msgid "Email Recipient Certificate"
 msgstr "Email Recipient Certificate"
 
 #: VerifyProtectObjSign
-msgid ""
-"_: VerifyProtectObjSign\n"
-"Protected Object Signer"
+msgctxt "VerifyProtectObjSign"
+msgid "Protected Object Signer"
 msgstr "Protected Object Signer"
 
 #: VerifyObjSign
-msgid ""
-"_: VerifyObjSign\n"
-"Object Signer"
+msgctxt "VerifyObjSign"
+msgid "Object Signer"
 msgstr "Object Signer"
 
 #: VerifyUserImport
@@ -107,9 +167,8 @@ msgid "User Import Cert"
 msgstr "User Import Cert"
 
 #: VerifyCAVerifier
-msgid ""
-"_: VerifyCAVerifier\n"
-"CA Verifier"
+msgctxt "VerifyCAVerifier"
+msgid "CA Verifier"
 msgstr "CA Verifier"
 
 #: VerifyStatusResponder
@@ -121,12 +180,12 @@ msgid "Any Certificate Authority"
 msgstr "Any Certificate Authority"
 
 #: HighGrade
-msgid "2048 (High Grade)"
-msgstr "2048 (High Grade)"
+msgid "High Grade"
+msgstr "High Grade"
 
 #: MediumGrade
-msgid "1024 (Medium Grade)"
-msgstr "1024 (Medium Grade)"
+msgid "Medium Grade"
+msgstr "Medium Grade"
 
 #: nick_template
 msgid "%1$s's %2$s ID"
@@ -136,6 +195,7 @@ msgstr "%1$s's %2$s ID"
 msgid "%1$s's %2$s ID #%3$d"
 msgstr "%1$s's %2$s ID #%3$d"
 
+#. #These are the strings set for the ASN1 objects in a certificate.
 #: CertDumpCertificate
 msgid "Certificate"
 msgstr "Certificate"
@@ -284,6 +344,18 @@ msgstr "Algorithm Parameters"
 msgid "PKCS #1 RSA Encryption"
 msgstr "PKCS #1 RSA Encryption"
 
+#: CertDumpRSATemplate
+msgid ""
+"Modulus (%S bits):\n"
+"%S\n"
+"Exponent (%S bits):\n"
+"%S"
+msgstr ""
+"Modulus (%S bits):\n"
+"%S\n"
+"Exponent (%S bits):\n"
+"%S"
+
 #: CertDumpIssuerUniqueID
 msgid "Issuer Unique ID"
 msgstr "Issuer Unique ID"
@@ -413,6 +485,7 @@ msgid "ANSI X9.62 ECDSA Signature with SHA1"
 msgstr "ANSI X9.62 ECDSA Signature with SHA1"
 
 #: CertDumpCertTypeEmail
+msgctxt "CertDumpCertTypeEmail"
 msgid "Email"
 msgstr "Email"
 
@@ -663,6 +736,10 @@ msgstr "CA Issuers"
 #: CertDumpCPSPointer
 msgid "Certification Practice Statement pointer"
 msgstr "Certification Practice Statement pointer"
+
+#: CertDumpPolicyOidEV
+msgid "Extended Validation (EV) SSL Server Certificate"
+msgstr "Extended Validation (EV) SSL Server Certificate"
 
 #: CertDumpUserNotice
 msgid "User Notice"
@@ -941,15 +1018,13 @@ msgid "Encrypt"
 msgstr "Encrypt"
 
 #: VerifyProtectObjSign_p
-msgid ""
-"_: VerifyProtectObjSign_p\n"
-"Protected Object Signer"
+msgctxt "VerifyProtectObjSign_p"
+msgid "Protected Object Signer"
 msgstr "Protected Object Signer"
 
 #: VerifyObjSign_p
-msgid ""
-"_: VerifyObjSign_p\n"
-"Object Signer"
+msgctxt "VerifyObjSign_p"
+msgid "Object Signer"
 msgstr "Object Signer"
 
 #: VerifyUserImport_p
@@ -957,9 +1032,8 @@ msgid "User Import"
 msgstr "User Import"
 
 #: VerifyCAVerifier_p
-msgid ""
-"_: VerifyCAVerifier_p\n"
-"CA Verifier"
+msgctxt "VerifyCAVerifier_p"
+msgid "CA Verifier"
 msgstr "CA Verifier"
 
 #: VerifyStatusResponder_p
@@ -1113,84 +1187,19 @@ msgstr "(Unknown Organization)"
 msgid "%S = %S"
 msgstr "%S = %S"
 
-#: SSL_Disabled
-msgid ""
-"%1$S can't connect securely to %2$S because the SSL protocol has been "
-"disabled."
-msgstr "%1$S can't connect securely to %2$S because the SSL protocol has been "
-"disabled."
+#: PSMERR_SSL_Disabled
+msgid "Can't connect securely because the SSL protocol has been disabled."
+msgstr "Can't connect securely because the SSL protocol has been disabled."
 
-#: SSL2_Disabled
+#: PSMERR_SSL2_Disabled
 msgid ""
-"%1$S can't connect securely to %2$S because the site uses an older, insecure "
-"version of the SSL protocol."
-msgstr "%1$S can't connect securely to %2$S because the site uses an older, insecure"
-" version of the SSL protocol."
-
-#: SSL_NoMatchingCiphers
-msgid ""
-"%1$S can't connect securely to %2$S because the site uses a security "
-"protocol which isn't enabled."
-msgstr "%1$S can't connect securely to %2$S because the site uses a security "
-"protocol which isn't enabled."
-
-#: UsersCertRevoked
-msgid ""
-"Could not establish an encrypted connection with %S because your certificate "
-"has been revoked."
+"Can't connect securely because the site uses an older, insecure version of "
+"the SSL protocol."
 msgstr ""
-"Could not establish an encrypted connection with %S because your certificate "
-"has been revoked."
+"Can't connect securely because the site uses an older, insecure version of "
+"the SSL protocol."
 
-#: UsersCertExpired
-msgid ""
-"Could not establish an encrypted connection with %S because your certificate "
-"is expired."
-msgstr ""
-"Could not establish an encrypted connection with %S because your certificate "
-"is expired."
-
-#: UsersCertRejected
-msgid ""
-"Could not establish an encrypted connection because your certificate was "
-"rejected by %S. Error Code: %S."
-msgstr ""
-"Could not establish an encrypted connection because your certificate was "
-"rejected by %S. Error Code: %S."
-
-#: BadMac
-msgid ""
-"%S received a message with incorrect Message Authentication Code. If the "
-"error occurs frequently, contact the website administrator."
-msgstr ""
-"%S received a message with incorrect Message Authentication Code. If the "
-"error occurs frequently, contact the website administrator."
-
-#: PeerResetConnection
-msgid "%S has closed the connection. Error Code: %S"
-msgstr "%S has closed the connection. Error Code: %S"
-
-#: HostResetConnection
-msgid "The current transfer has been cancelled."
-msgstr "The current transfer has been cancelled."
-
-#: BadPassword
-msgid "An incorrect password was provided."
-msgstr "An incorrect password was provided."
-
-#: BadDatabase
-msgid "There is a problem with your certificate database [Error Code: %S]."
-msgstr "There is a problem with your certificate database [Error Code: %S]."
-
-#: BadServer
-msgid "%S has sent an incorrect or unexpected message. Error Code: %S"
-msgstr "%S has sent an incorrect or unexpected message. Error Code: %S"
-
-#: BadClient
-msgid "%S has received an incorrect or unexpected message. Error Code: %S"
-msgstr "%S has received an incorrect or unexpected message. Error Code: %S"
-
-#: HostReusedIssuerSerial
+#: PSMERR_HostReusedIssuerSerial
 msgid ""
 "You have received an invalid certificate.  Please contact the server "
 "administrator or email correspondent and give them the following "
@@ -1208,186 +1217,76 @@ msgstr ""
 "issued by the certificate authority.  Please get a new certificate "
 "containing a unique serial number."
 
-#: SSLGenericError
-msgid "Error establishing an encrypted connection to %S. Error Code: %S."
-msgstr "Error establishing an encrypted connection to %S. Error Code: %S."
+#: SSLConnectionErrorPrefix
+msgid "An error occurred during a connection to %S."
+msgstr "An error occurred during a connection to %S."
 
-#: TimeOut
-msgid "Connection request timed out."
-msgstr "Connection request timed out."
+#: certErrorIntro
+msgid "%S uses an invalid security certificate."
+msgstr "%S uses an invalid security certificate."
 
-#: PeersCertUntrusted
+#: certErrorTrust_SelfSigned
+msgid "The certificate is not trusted because it is self signed."
+msgstr "The certificate is not trusted because it is self signed."
+
+#: certErrorTrust_UnknownIssuer
 msgid ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S is not trusted."
+"The certificate is not trusted because the issuer certificate is unknown."
 msgstr ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S is not trusted."
+"The certificate is not trusted because the issuer certificate is unknown."
 
-#: PeersCertRevoked
+#: certErrorTrust_CaInvalid
 msgid ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S has been revoked."
-msgstr ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S has been revoked."
-
-#: PeersCertExpired
-msgid ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S has expired."
-msgstr ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S has expired."
-
-#: PeersCertWrongDomain
-msgid ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S is for a different domain."
-msgstr ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S is for a different domain."
-
-#: PeersCertBadSignature
-msgid ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S has an invalid signature."
-msgstr ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S has an invalid signature."
-
-#: PeersCertNoGood
-msgid ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S is invalid or corrupted. Error Code: %S"
-msgstr ""
-"Could not establish an encrypted connection because certificate presented by "
-"%S is invalid or corrupted. Error Code: %S"
-
-#: CRLExpired
-msgid ""
-"Certificate Revocation List (CRL) from the CA certifying %S is past its Next "
-"Update date. Please update the CRL."
-msgstr ""
-"Certificate Revocation List (CRL) from the CA certifying %S is past its Next "
-"Update date. Please update the CRL."
-
-#: CRLNotYetValid
-msgid ""
-"Certificate Revocation List (CRL) from the CA certifying %S is not yet "
-"valid. Please check your system clock."
-msgstr ""
-"Certificate Revocation List (CRL) from the CA certifying %S is not yet "
-"valid. Please check your system clock."
-
-#: CRLSigNotValid
-msgid ""
-"Certificate Revocation List (CRL) from the CA certifying %S has an invalid "
-"digital signature."
-msgstr ""
-"Certificate Revocation List (CRL) from the CA certifying %S has an invalid "
-"digital signature."
-
-#: CRLSNotValid
-msgid ""
-"Certificate Revocation List (CRL) from the CA certifying %S is not valid."
-msgstr ""
-"Certificate Revocation List (CRL) from the CA certifying %S is not valid."
-
-#: OCSPMalformedRequest
-msgid ""
-"Error trying to validate certificate from %S using OCSP - malformed request."
-msgstr ""
-"Error trying to validate certificate from %S using OCSP - malformed request."
-
-#: OCSPRequestNeedsSig
-msgid ""
-"Error trying to validate certificate from %S using OCSP - request needs "
-"signature."
-msgstr ""
-"Error trying to validate certificate from %S using OCSP - request needs "
-"signature."
-
-#: OCSPUnauthorizedReq
-msgid ""
-"Error trying to validate certificate from %S using OCSP - unauthorized "
-"request."
-msgstr ""
-"Error trying to validate certificate from %S using OCSP - unauthorised "
-"request."
-
-#: OCSPServerError
-msgid "Error trying to validate certificate from %S using OCSP - server error."
-msgstr ""
-"Error trying to validate certificate from %S using OCSP - server error."
-
-#: OCSPTryServerLater
-msgid ""
-"Error trying to validate certificate from %S using OCSP - server is busy. "
-"Please try again later."
-msgstr ""
-"Error trying to validate certificate from %S using OCSP - server is busy. "
-"Please try again later."
-
-#: OCSPFutureResponse
-msgid ""
-"Error trying to validate certificate from %S using OCSP - response contains "
-"a date which is in the future."
-msgstr ""
-"Error trying to validate certificate from %S using OCSP - response contains "
-"a date which is in the future."
-
-#: OCSPOldResponse
-msgid "Error trying to validate certificate from %S using OCSP - old response."
-msgstr ""
-"Error trying to validate certificate from %S using OCSP - old response."
-
-#: OCSPCorruptedResponse
-msgid ""
-"Error trying to validate certificate from %S using OCSP - corrupted or "
-"unknown response. Error Code: %S."
-msgstr ""
-"Error trying to validate certificate from %S using OCSP - corrupted or "
-"unknown response. Error Code: %S."
-
-#: OCSPUnauthorizedResponse
-msgid ""
-"Error trying to validate certificate from %S using OCSP - unauthorized "
-"response."
-msgstr ""
-"Error trying to validate certificate from %S using OCSP - unauthorised "
-"response."
-
-#: OCSPUnknownCert
-msgid ""
-"Error trying to validate certificate from %S using OCSP - unknown "
+"The certificate is not trusted because it was issued by an invalid CA "
 "certificate."
 msgstr ""
-"Error trying to validate certificate from %S using OCSP - unknown "
+"The certificate is not trusted because it was issued by an invalid CA "
 "certificate."
 
-#: OCSPNoDefaultResponder
+#: certErrorTrust_Issuer
 msgid ""
-"Error trying to validate certificate from %S using OCSP - no default "
-"responder specified."
+"The certificate is not trusted because the issuer certificate is not trusted."
 msgstr ""
-"Error trying to validate certificate from %S using OCSP - no default "
-"responder specified."
+"The certificate is not trusted because the issuer certificate is not "
+"trusted."
 
-#: OCSPDirLookup
+#: certErrorTrust_ExpiredIssuer
 msgid ""
-"Error trying to validate certificate from %S using OCSP - directory lookup "
-"error."
+"The certificate is not trusted because the issuer certificate has expired."
 msgstr ""
-"Error trying to validate certificate from %S using OCSP - directory lookup "
-"error."
+"The certificate is not trusted because the issuer certificate has expired."
 
-#: OCSPDeadlock
-msgid ""
-"An internal failure has been detected. It is not possible to complete the "
-"requested OCSP operation."
-msgstr "An internal failure has been detected. It is not possible to complete the "
-"requested OCSP operation."
+#: certErrorTrust_Untrusted
+msgid "The certificate does not come from a trusted source."
+msgstr "The certificate does not come from a trusted source."
+
+#: certErrorMismatch
+msgid "The certificate is not valid for the name %S."
+msgstr "The certificate is not valid for the name %S."
+
+#: certErrorMismatchSingle2
+msgid "The certificate is only valid for %S."
+msgstr "The certificate is only valid for %S."
+
+#: certErrorMismatchMultiple
+msgid "The certificate is only valid for the following names:"
+msgstr "The certificate is only valid for the following names:"
+
+#: certErrorMismatchNoNames
+msgid "The certificate is not valid for any server names."
+msgstr "The certificate is not valid for any server names."
+
+#: certErrorExpired
+msgid "The certificate expired on %S."
+msgstr "The certificate expired on %S."
+
+#: certErrorNotYetValid
+msgid "The certificate will not be valid until %S."
+msgstr "The certificate will not be valid until %S."
+
+#: certErrorCodePrefix
+msgid "(Error code: %S)"
+msgstr "(Error code: %S)"
 
 #: CertInfoIssuedFor
 msgid "Issued to:"
@@ -1413,6 +1312,11 @@ msgstr "to"
 msgid "Purposes"
 msgstr "Purposes"
 
+#: CertInfoEmail
+msgctxt "CertInfoEmail"
+msgid "Email"
+msgstr "Email"
+
 #: CertInfoStoredIn
 msgid "Stored in:"
 msgstr "Stored in:"
@@ -1421,15 +1325,9 @@ msgstr "Stored in:"
 msgid "Imported Certificate"
 msgstr "Imported Certificate"
 
-#: CrlImportSuccess
-msgid ""
-"The browser successfully imported the certificate revocation list (CRL)."
-msgstr ""
-"The browser successfully imported the certificate revocation list (CRL)."
-
-#: CrlImportFailure1
-msgid "The browser cannot import the Certificate Revocation List (CRL)."
-msgstr "The browser cannot import the Certificate Revocation List (CRL)."
+#: CrlImportFailure1x
+msgid "The application cannot import the Certificate Revocation List (CRL)."
+msgstr "The application cannot import the Certificate Revocation List (CRL)."
 
 #: CrlImportFailureExpired
 msgid "A more recent version of this CRL is available."
@@ -1463,21 +1361,21 @@ msgstr "Error Importing CRL to local Database. Error Code:"
 msgid "Please ask your system administrator for assistance."
 msgstr "Please ask your system administrator for assistance."
 
-#: NSSInitProblem
+#: NSSInitProblemX
 msgid ""
-"Could not initialize the browser's security component. The most likely cause "
-"is problems with files in your browser's profile directory. Please check "
-"that this directory has no read/write restrictions and your hard disk is not "
-"full or close to full. It is recommended that you exit the browser and fix "
-"the problem. If you continue to use this browser session, you might see "
-"incorrect browser behaviour when accessing security features."
+"Could not initialize the application's security component. The most likely "
+"cause is problems with files in your application's profile directory. Please "
+"check that this directory has no read/write restrictions and your hard disk "
+"is not full or close to full. It is recommended that you exit the "
+"application and fix the problem. If you continue to use this session, you "
+"might see incorrect application behaviour when accessing security features."
 msgstr ""
-"Could not initialise the browser's security component. The most likely cause "
-"is problems with files in your browser's profile directory. Please check "
-"that this directory has no read/write restrictions and your hard disk is not "
-"full or close to full. It is recommended that you exit the browser and fix "
-"the problem. If you continue to use this browser session, you might see "
-"incorrect browser behaviour when accessing security features."
+"Could not initialise the application's security component. The most likely "
+"cause is problems with files in your application's profile directory. Please "
+"check that this directory has no read/write restrictions and your hard disk "
+"is not full or close to full. It is recommended that you exit the "
+"application and fix the problem. If you continue to use this session, you "
+"might see incorrect application behaviour when accessing security features."
 
 #: ProfileSwitchSocketsStillActive
 msgid ""
@@ -1523,6 +1421,26 @@ msgstr "<Invalid CA>"
 msgid "<Unknown>"
 msgstr "<Unknown>"
 
+#: CertUser
+msgid "Your Cert"
+msgstr "Your Cert"
+
+#: CertCA
+msgid "CA (Certificate Authority)"
+msgstr "CA (Certificate Authority)"
+
+#: CertSSL
+msgid "SSL Server"
+msgstr "SSL Server"
+
+#: CertEmail
+msgid "Peer S/MIME"
+msgstr "Peer S/MIME"
+
+#: CertUnknown
+msgid "Unknown"
+msgstr "Unknown"
+
 #: CertNoNickname
 msgid "(no nickname)"
 msgstr "(no nickname)"
@@ -1547,7 +1465,8 @@ msgstr "This certificate is already installed as a certificate authority."
 msgid ""
 "This is not a certificate authority certificate, so it can't be imported "
 "into the certificate authority list."
-msgstr "This is not a certificate authority certificate, so it can't be imported "
+msgstr ""
+"This is not a certificate authority certificate, so it can't be imported "
 "into the certificate authority list."
 
 #: NotImportingUnverifiedCert
@@ -1555,16 +1474,18 @@ msgid ""
 "This certificate can't be verified and will not be imported. The certificate "
 "issuer might be unknown or untrusted, the certificate might have expired or "
 "been revoked, or the certificate might not have been approved."
-msgstr "This certificate can't be verified and will not be imported. The certificate"
-" issuer might be unknown or untrusted, the certificate might have expired or"
-" been revoked, or the certificate might not have been approved."
+msgstr ""
+"This certificate can't be verified and will not be imported. The certificate "
+"issuer might be unknown or untrusted, the certificate might have expired or "
+"been revoked, or the certificate might not have been approved."
 
 #: UserCertIgnoredNoPrivateKey
 msgid ""
 "This personal certificate can't be installed because you do not own the "
 "corresponding private key which was created when the certificate was "
 "requested."
-msgstr "This personal certificate can't be installed because you do not own the "
+msgstr ""
+"This personal certificate can't be installed because you do not own the "
 "corresponding private key which was created when the certificate was "
 "requested."
 
@@ -1572,8 +1493,256 @@ msgstr "This personal certificate can't be installed because you do not own the 
 msgid ""
 "Your personal certificate has been installed. You should keep a backup copy "
 "of this certificate."
-msgstr "Your personal certificate has been installed. You should keep a backup copy "
+msgstr ""
+"Your personal certificate has been installed. You should keep a backup copy "
 "of this certificate."
+
+#: CertOrgUnknown
+msgid "(Unknown)"
+msgstr "(Unknown)"
+
+#: CertNotStored
+msgid "(Not Stored)"
+msgstr "(Not Stored)"
+
+#: CertExceptionPermanent
+msgid "Permanent"
+msgstr "Permanent"
+
+#: CertExceptionTemporary
+msgid "Temporary"
+msgstr "Temporary"
+
+#~ msgid "PSM Internal FIPS-140-1 Cryptographic Services"
+#~ msgstr "PSM Internal FIPS-140-1 Cryptographic Services"
+
+#~ msgid "PSM FIPS-140-1 User Private Key Services"
+#~ msgstr "PSM FIPS-140-1 User Private Key Services"
+
+#~ msgid "2048 (High Grade)"
+#~ msgstr "2048 (High Grade)"
+
+#~ msgid "1024 (Medium Grade)"
+#~ msgstr "1024 (Medium Grade)"
+
+#~ msgid ""
+#~ "%1$S can't connect securely to %2$S because the site uses a security "
+#~ "protocol which isn't enabled."
+#~ msgstr ""
+#~ "%1$S can't connect securely to %2$S because the site uses a security "
+#~ "protocol which isn't enabled."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection with %S because your "
+#~ "certificate has been revoked."
+#~ msgstr ""
+#~ "Could not establish an encrypted connection with %S because your "
+#~ "certificate has been revoked."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection with %S because your "
+#~ "certificate is expired."
+#~ msgstr ""
+#~ "Could not establish an encrypted connection with %S because your "
+#~ "certificate is expired."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because your certificate was "
+#~ "rejected by %S. Error Code: %S."
+#~ msgstr ""
+#~ "Could not establish an encrypted connection because your certificate was "
+#~ "rejected by %S. Error Code: %S."
+
+#~ msgid ""
+#~ "%S received a message with incorrect Message Authentication Code. If the "
+#~ "error occurs frequently, contact the website administrator."
+#~ msgstr ""
+#~ "%S received a message with incorrect Message Authentication Code. If the "
+#~ "error occurs frequently, contact the website administrator."
+
+#~ msgid "%S has closed the connection. Error Code: %S"
+#~ msgstr "%S has closed the connection. Error Code: %S"
+
+#~ msgid "The current transfer has been cancelled."
+#~ msgstr "The current transfer has been cancelled."
+
+#~ msgid "An incorrect password was provided."
+#~ msgstr "An incorrect password was provided."
+
+#~ msgid "There is a problem with your certificate database [Error Code: %S]."
+#~ msgstr "There is a problem with your certificate database [Error Code: %S]."
+
+#~ msgid "%S has sent an incorrect or unexpected message. Error Code: %S"
+#~ msgstr "%S has sent an incorrect or unexpected message. Error Code: %S"
+
+#~ msgid "%S has received an incorrect or unexpected message. Error Code: %S"
+#~ msgstr "%S has received an incorrect or unexpected message. Error Code: %S"
+
+#~ msgid "Error establishing an encrypted connection to %S. Error Code: %S."
+#~ msgstr "Error establishing an encrypted connection to %S. Error Code: %S."
+
+#~ msgid "Connection request timed out."
+#~ msgstr "Connection request timed out."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S is not trusted."
+#~ msgstr ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S is not trusted."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S has been revoked."
+#~ msgstr ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S has been revoked."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S has expired."
+#~ msgstr ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S has expired."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S is for a different domain."
+#~ msgstr ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S is for a different domain."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S has an invalid signature."
+#~ msgstr ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S has an invalid signature."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S is invalid or corrupted. Error Code: %S"
+#~ msgstr ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S is invalid or corrupted. Error Code: %S"
+
+#~ msgid ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S is past its "
+#~ "Next Update date. Please update the CRL."
+#~ msgstr ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S is past its "
+#~ "Next Update date. Please update the CRL."
+
+#~ msgid ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S is not yet "
+#~ "valid. Please check your system clock."
+#~ msgstr ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S is not yet "
+#~ "valid. Please check your system clock."
+
+#~ msgid ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S has an "
+#~ "invalid digital signature."
+#~ msgstr ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S has an "
+#~ "invalid digital signature."
+
+#~ msgid ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S is not valid."
+#~ msgstr ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S is not valid."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - malformed "
+#~ "request."
+#~ msgstr ""
+#~ "Error trying to validate certificate from %S using OCSP - malformed "
+#~ "request."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - request needs "
+#~ "signature."
+#~ msgstr ""
+#~ "Error trying to validate certificate from %S using OCSP - request needs "
+#~ "signature."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - unauthorized "
+#~ "request."
+#~ msgstr ""
+#~ "Error trying to validate certificate from %S using OCSP - unauthorised "
+#~ "request."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - server error."
+#~ msgstr ""
+#~ "Error trying to validate certificate from %S using OCSP - server error."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - server is busy. "
+#~ "Please try again later."
+#~ msgstr ""
+#~ "Error trying to validate certificate from %S using OCSP - server is busy. "
+#~ "Please try again later."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - response "
+#~ "contains a date which is in the future."
+#~ msgstr ""
+#~ "Error trying to validate certificate from %S using OCSP - response "
+#~ "contains a date which is in the future."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - old response."
+#~ msgstr ""
+#~ "Error trying to validate certificate from %S using OCSP - old response."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - corrupted or "
+#~ "unknown response. Error Code: %S."
+#~ msgstr ""
+#~ "Error trying to validate certificate from %S using OCSP - corrupted or "
+#~ "unknown response. Error Code: %S."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - unauthorized "
+#~ "response."
+#~ msgstr ""
+#~ "Error trying to validate certificate from %S using OCSP - unauthorised "
+#~ "response."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - unknown "
+#~ "certificate."
+#~ msgstr ""
+#~ "Error trying to validate certificate from %S using OCSP - unknown "
+#~ "certificate."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - no default "
+#~ "responder specified."
+#~ msgstr ""
+#~ "Error trying to validate certificate from %S using OCSP - no default "
+#~ "responder specified."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - directory "
+#~ "lookup error."
+#~ msgstr ""
+#~ "Error trying to validate certificate from %S using OCSP - directory "
+#~ "lookup error."
+
+#~ msgid ""
+#~ "An internal failure has been detected. It is not possible to complete the "
+#~ "requested OCSP operation."
+#~ msgstr ""
+#~ "An internal failure has been detected. It is not possible to complete the "
+#~ "requested OCSP operation."
+
+#~ msgid ""
+#~ "The browser successfully imported the certificate revocation list (CRL)."
+#~ msgstr ""
+#~ "The browser successfully imported the certificate revocation list (CRL)."
 
 #~ msgid "Signed by %S"
 #~ msgstr "Signed by %S"

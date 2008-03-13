@@ -1,9 +1,45 @@
-#, fuzzy
+#. # ***** BEGIN LICENSE BLOCK *****
+#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#. #
+#. # The contents of this file are subject to the Mozilla Public License Version
+#. # 1.1 (the "License"); you may not use this file except in compliance with
+#. # the License. You may obtain a copy of the License at
+#. # http://www.mozilla.org/MPL/
+#. #
+#. # Software distributed under the License is distributed on an "AS IS" basis,
+#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+#. # for the specific language governing rights and limitations under the
+#. # License.
+#. #
+#. # The Original Code is mozilla.org code.
+#. #
+#. # The Initial Developer of the Original Code is
+#. # Netscape Communications Corporation.
+#. # Portions created by the Initial Developer are Copyright (C) 1998
+#. # the Initial Developer. All Rights Reserved.
+#. #
+#. # Contributor(s):
+#. #   Roland Mainz <roland.mainz@informatik.med.uni-giessen.de>
+#. #
+#. # Alternatively, the contents of this file may be used under the terms of
+#. # either of the GNU General Public License Version 2 or later (the "GPL"),
+#. # or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+#. # in which case the provisions of the GPL or the LGPL are applicable instead
+#. # of those above. If you wish to allow use of your version of this file only
+#. # under the terms of either the GPL or the LGPL, and not to allow others to
+#. # use your version of this file under the terms of the MPL, indicate your
+#. # decision by deleting the provisions above and replace them with the notice
+#. # and other provisions required by the GPL or the LGPL. If you do not delete
+#. # the provisions above, a recipient may use your version of this file under
+#. # the terms of any one of the MPL, the GPL or the LGPL.
+#. #
+#. # ***** END LICENSE BLOCK *****
+#. extracted from en-US/dom/chrome/layout/printing.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-11-22 16:55+0200\n"
+"POT-Creation-Date: 2008-03-13 11:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,24 +47,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.10.90\n"
+"X-Generator: Translate Toolkit 1.1.1rc3\n"
 "X-Accelerator-Marker: &\n"
 
+#. # Page number formating
+#. ## @page_number The current page number
+#. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
+#. # Place the word %ld where the page number and number of pages should be
+#. # The first %ld will receive the the page number
 #: pagenumber
 msgid "%1$d"
 msgstr "%1$d"
 
+#. # Page number formating
+#. ## @page_number The current page number
+#. ## @page_total The total number of pages
+#. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
+#. # Place the word %ld where the page number and number of pages should be
+#. # The first %ld will receive the the page number
+#. # the second %ld will receive the total number of pages
 #: pageofpages
 msgid "%1$d of %2$d"
 msgstr "%1$d of %2$d"
-
-#: fontname
-msgid "serif"
-msgstr "serif"
-
-#: fontsize
-msgid "10"
-msgstr "10"
 
 #: noPrintFilename.title
 msgid "Filename is missing"
@@ -38,6 +78,7 @@ msgstr "Filename is missing"
 msgid "You have selected \"Print To: File\", and the filename is empty!"
 msgstr "You have selected \"Print To: File\", and the filename is empty!"
 
+#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -46,6 +87,7 @@ msgstr ""
 "%S already exists.\n"
 "Do you want to replace it?"
 
+#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "Printer Error"
@@ -189,16 +231,6 @@ msgid ""
 msgstr ""
 "There was a problem printing. The printer driver is not properly configured."
 
-#: NS_ERROR_GFX_PRINTER_XPRINT_BROKEN_XPRT
-msgid ""
-"A broken version of the X print server (Xprt) has been detected. Note that "
-"printing using this Xprt server may not work properly. Please contact the "
-"server vendor for a fixed version."
-msgstr ""
-"A broken version of the X print server (Xprt) has been detected. Note that "
-"printing using this Xprt server may not work properly. Please contact the "
-"server vendor for a fixed version."
-
 #: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
 msgid ""
 "The browser cannot print preview right now.\n"
@@ -231,20 +263,6 @@ msgstr "The Printing Prompt Service is missing."
 msgid "We are unable to Print or Print Preview this page."
 msgstr "We are unable to Print or Print Preview this page."
 
-#: NS_ERROR_GFX_PRINTER_XPRINT_NO_XPRINT_SERVERS_FOUND
-msgid ""
-"There was a problem printing. No Xprint server(s) could be found.\n"
-"Check whether the XPSERVERLIST environment variable contains any valid "
-"Xprint servers.\n"
-"For further information see http://xprint.mozdev.org/ or http://www.mozilla."
-"org/projects/xprint/"
-msgstr ""
-"There was a problem printing. No Xprint server(s) could be found.\n"
-"Check whether the XPSERVERLIST environment variable contains any valid "
-"Xprint servers.\n"
-"For further information see http://xprint.mozdev.org/ or http://www.mozilla."
-"org/projects/xprint/"
-
 #: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
 msgid ""
 "There was a problem printing because the plex mode you specified is not "
@@ -273,6 +291,7 @@ msgstr ""
 "There was a problem printing because the resolution/quality mode you "
 "specified is not supported by your printer."
 
+#. # No printers available
 #: noprinter
 msgid "No printers available."
 msgstr "No printers available."
@@ -280,3 +299,31 @@ msgstr "No printers available."
 #: PrintToFile
 msgid "Print To File"
 msgstr "Print To File"
+
+#~ msgid "serif"
+#~ msgstr "serif"
+
+#~ msgid "10"
+#~ msgstr "10"
+
+#~ msgid ""
+#~ "A broken version of the X print server (Xprt) has been detected. Note "
+#~ "that printing using this Xprt server may not work properly. Please "
+#~ "contact the server vendor for a fixed version."
+#~ msgstr ""
+#~ "A broken version of the X print server (Xprt) has been detected. Note "
+#~ "that printing using this Xprt server may not work properly. Please "
+#~ "contact the server vendor for a fixed version."
+
+#~ msgid ""
+#~ "There was a problem printing. No Xprint server(s) could be found.\n"
+#~ "Check whether the XPSERVERLIST environment variable contains any valid "
+#~ "Xprint servers.\n"
+#~ "For further information see http://xprint.mozdev.org/ or http://www."
+#~ "mozilla.org/projects/xprint/"
+#~ msgstr ""
+#~ "There was a problem printing. No Xprint server(s) could be found.\n"
+#~ "Check whether the XPSERVERLIST environment variable contains any valid "
+#~ "Xprint servers.\n"
+#~ "For further information see http://xprint.mozdev.org/ or http://www."
+#~ "mozilla.org/projects/xprint/"
