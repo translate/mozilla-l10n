@@ -113,14 +113,13 @@ msgstr "PSB- private sleutels"
 #. #
 #. # 32
 #: Fips140TokenDescription
-#, fuzzy
 msgid "Software Security Device (FIPS)"
-msgstr "Sagtewaresekuriteitstoestel"
+msgstr "Sagtewaresekuriteitstoestel (FIPS)"
 
 #. # 64
 #: Fips140SlotDescription
 msgid "FIPS 140 Cryptographic, Key and Certificate Services"
-msgstr ""
+msgstr "FIPS 140-kriptografiese, sleutel- en sertifikaatdienste"
 
 #. # 32
 #: InternalToken
@@ -352,6 +351,10 @@ msgid ""
 "Exponent (%S bits):\n"
 "%S"
 msgstr ""
+"Modulus (%S bisse):\n"
+"%S\n"
+"Eksponent (%S bisse):\n"
+"%S"
 
 #: CertDumpIssuerUniqueID
 msgid "Issuer Unique ID"
@@ -736,7 +739,7 @@ msgstr "Sertifiseringspraktyk-stellinginleiding"
 
 #: CertDumpPolicyOidEV
 msgid "Extended Validation (EV) SSL Server Certificate"
-msgstr ""
+msgstr "SSL-bedienersertifikaat vir uitgebreide validering (EV)"
 
 #: CertDumpUserNotice
 msgid "User Notice"
@@ -1189,20 +1192,16 @@ msgid "%S = %S"
 msgstr "%S = %S"
 
 #: PSMERR_SSL_Disabled
-#, fuzzy
 msgid "Can't connect securely because the SSL protocol has been disabled."
-msgstr ""
-"%1$S kan nie beveiligd aan %2$S koppel nie omdat die SSL-protokol "
-"gedeaktiveer is."
+msgstr "Kan nie beveilig koppel nie omdat die SSL-protokol gedeaktiveer is."
 
 #: PSMERR_SSL2_Disabled
-#, fuzzy
 msgid ""
 "Can't connect securely because the site uses an older, insecure version of "
 "the SSL protocol."
 msgstr ""
-"%1$S kan nie beveiligd aan %2$S koppel nie omdat die werf 'n ouer, onveilige "
-"weergawe van die SSL-protokol gebruik."
+"Kan nie beveilig koppel nie omdat die werf 'n ouer, onveilige weergawe van "
+"die SSL-protokol gebruik."
 
 #: PSMERR_HostReusedIssuerSerial
 msgid ""
@@ -1223,69 +1222,76 @@ msgstr ""
 
 #: SSLConnectionErrorPrefix
 msgid "An error occurred during a connection to %S."
-msgstr ""
+msgstr "Kon nie aan %S koppel nie."
 
 #: certErrorIntro
 msgid "%S uses an invalid security certificate."
-msgstr ""
+msgstr "%S gebruik 'n ongeldige sekuriteitsertifikaat."
 
 #: certErrorTrust_SelfSigned
 msgid "The certificate is not trusted because it is self signed."
-msgstr ""
+msgstr "Die sertifikaat word nie vertrou nie omdat dit selfonderteken is."
 
 #: certErrorTrust_UnknownIssuer
 msgid ""
 "The certificate is not trusted because the issuer certificate is unknown."
 msgstr ""
+"Die sertifikaat word nie vertrou nie omdat die uitreikersertifikaat onbekend "
+"is."
 
 #: certErrorTrust_CaInvalid
 msgid ""
 "The certificate is not trusted because it was issued by an invalid CA "
 "certificate."
 msgstr ""
+"Die sertifikaat word nie vertrou nie omdat dit deur 'n ongeldige CA-"
+"sertifikaat uitgereik is."
 
 #: certErrorTrust_Issuer
 msgid ""
 "The certificate is not trusted because the issuer certificate is not trusted."
 msgstr ""
+"Die sertifikaat word nie vertrou nie omdat die uitreikersertifikaat nie "
+"vertrou word nie."
 
 #: certErrorTrust_ExpiredIssuer
 msgid ""
 "The certificate is not trusted because the issuer certificate has expired."
 msgstr ""
+"Die sertifikaat word nie vertrou nie omdat die uitreikersertifikaat verval "
+"het."
 
 #: certErrorTrust_Untrusted
 msgid "The certificate does not come from a trusted source."
-msgstr ""
+msgstr "Die sertifikaat kom nie van 'n vertroude bron nie."
 
 #: certErrorMismatch
 msgid "The certificate is not valid for the name %S."
-msgstr ""
+msgstr "Die sertifikaat is nie geldig vir die naam %S nie."
 
 #: certErrorMismatchSingle2
 msgid "The certificate is only valid for %S."
-msgstr ""
+msgstr "Die sertifikaat is net geldig vir %S."
 
 #: certErrorMismatchMultiple
 msgid "The certificate is only valid for the following names:"
-msgstr ""
+msgstr "Die sertifikaat is net geldig vir die volgende name:"
 
 #: certErrorMismatchNoNames
 msgid "The certificate is not valid for any server names."
-msgstr ""
+msgstr "Die sertifikaat is nie geldig vir enige bedienername."
 
 #: certErrorExpired
 msgid "The certificate expired on %S."
-msgstr ""
+msgstr "Die sertifikaat verval op %S."
 
 #: certErrorNotYetValid
 msgid "The certificate will not be valid until %S."
-msgstr ""
+msgstr "Die sertifikaat is nie geldig voor %S nie."
 
 #: certErrorCodePrefix
-#, fuzzy
 msgid "(Error code: %S)"
-msgstr "Foutkode: %S"
+msgstr "(Foutkode: %S)"
 
 #: CertInfoIssuedFor
 msgid "Issued to:"
@@ -1325,9 +1331,8 @@ msgid "Imported Certificate"
 msgstr "Ingevoerde sertifikaat"
 
 #: CrlImportFailure1x
-#, fuzzy
 msgid "The application cannot import the Certificate Revocation List (CRL)."
-msgstr "Die blaaier kan nie die sertifikaatopheffingslys (SOL) invoer nie."
+msgstr "Die toepassing kan nie die sertifikaatopheffingslys (CRL) invoer nie."
 
 #: CrlImportFailureExpired
 msgid "A more recent version of this CRL is available."
@@ -1362,7 +1367,6 @@ msgid "Please ask your system administrator for assistance."
 msgstr "Vra u stelseladministrateur vir bystand."
 
 #: NSSInitProblemX
-#, fuzzy
 msgid ""
 "Could not initialize the application's security component. The most likely "
 "cause is problems with files in your application's profile directory. Please "
@@ -1424,25 +1428,23 @@ msgstr "<Onbekend>"
 
 #: CertUser
 msgid "Your Cert"
-msgstr ""
+msgstr "U sert"
 
 #: CertCA
-#, fuzzy
 msgid "CA (Certificate Authority)"
-msgstr "SSL-sertifikaatowerheid"
+msgstr "CA (sertifikaatowerheid)"
 
 #: CertSSL
 msgid "SSL Server"
-msgstr ""
+msgstr "SSL-bediener"
 
 #: CertEmail
 msgid "Peer S/MIME"
-msgstr ""
+msgstr "Eweknie-S/MIME"
 
 #: CertUnknown
-#, fuzzy
 msgid "Unknown"
-msgstr "<Onbekend>"
+msgstr "Onbekend"
 
 #: CertNoNickname
 msgid "(no nickname)"
@@ -1502,21 +1504,20 @@ msgstr ""
 "sertifikaat te maak."
 
 #: CertOrgUnknown
-#, fuzzy
 msgid "(Unknown)"
-msgstr "<Onbekend>"
+msgstr "(Onbekend)"
 
 #: CertNotStored
 msgid "(Not Stored)"
-msgstr ""
+msgstr "(Nie gestoor nie)"
 
 #: CertExceptionPermanent
 msgid "Permanent"
-msgstr ""
+msgstr "Permanent"
 
 #: CertExceptionTemporary
 msgid "Temporary"
-msgstr ""
+msgstr "Tydelik"
 
 #~ msgid "PSM Internal FIPS-140-1 Cryptographic Services"
 #~ msgstr "PSB- interne FIPS-140-1-kriptografiedienste"
