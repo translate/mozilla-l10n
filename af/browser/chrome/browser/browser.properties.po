@@ -1,18 +1,17 @@
 #. extracted from en-US/browser/chrome/browser/browser.properties
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-02 11:19+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2008-11-07 15:19+0200\n"
+"PO-Revision-Date: 2008-11-08 14:03+0200\n"
+"Last-Translator: Samuel Murray <samuel at translate.org.za>\n"
+"Language-Team: I have a very cool team\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.1.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Translate Toolkit 1.2.0\n"
 "X-Accelerator-Marker: &\n"
 
 #: nv_done
@@ -39,10 +38,6 @@ msgstr "Laat los 'n skakel om dit te boekmerk"
 msgid "Drop a link or file to download it"
 msgstr "Laat los 'n skakel of lêer om dit af te laai"
 
-#: droponnewtabbutton
-msgid "Drop a link or file to open it in a new tab"
-msgstr "Laat los 'n skakel of lêer om dit in 'n nuwe oortjie te open"
-
 #: droponnewwindowbutton
 msgid "Drop a link or file to open it in a new window"
 msgstr "Laat los 'n skakel of lêer om dit in 'n nuwe venster te open"
@@ -63,6 +58,11 @@ msgstr "Wil u hê dat hierdie dokument u nuwe tuisblad moet wees?"
 #: contextMenuSearchText
 msgid "Search %S for \"%S\""
 msgstr "Deursoek %S vir \"%S\""
+
+#: contextMenuSearchText.accesskey
+msgctxt "contextMenuSearchText.accesskey"
+msgid "S"
+msgstr "W"
 
 #: blockImages
 msgid "Block Images from %S"
@@ -212,13 +212,13 @@ msgid "U"
 msgstr "O"
 
 #. # Sanitize
-#: sanitizeWithPromptLabel
-msgid "Clear Private Data…"
-msgstr "Skrap private data…"
+#: sanitizeWithPromptLabel2
+msgid "Clear Recent History…"
+msgstr "Maak onlangse geskiedenis skoon…"
 
-#: sanitizeButton
-msgid "Clear Private Data Now"
-msgstr "Skrap private data nou"
+#: sanitizeButton2
+msgid "Clear Private Data"
+msgstr "Skrap private data"
 
 #. # Check for Updates
 #: updatesItem_default
@@ -276,6 +276,7 @@ msgid "Open All in Tabs"
 msgstr "Open almal in oortjies"
 
 #: menuOpenAllInTabs.accesskey
+msgctxt "menuOpenAllInTabs.accesskey"
 msgid "o"
 msgstr "O"
 
@@ -351,6 +352,7 @@ msgid "Not Now"
 msgstr "Nie nou nie"
 
 #: offlineApps.notNowAccessKey
+msgctxt "offlineApps.notNowAccessKey"
 msgid "N"
 msgstr "N"
 
@@ -367,6 +369,7 @@ msgid "Show settings"
 msgstr "Wys instellings"
 
 #: offlineApps.manageUsageAccessKey
+msgctxt "offlineApps.manageUsageAccessKey"
 msgid "S"
 msgstr "W"
 
@@ -432,6 +435,113 @@ msgstr "Boekmerk verwyder"
 #: editBookmarkPanel.editBookmarkTitle
 msgid "Edit This Bookmark"
 msgstr "Redigeer hierdie boekmerk"
+
+#. # Geolocation UI
+#. # LOCALIZATION NOTE (exactLocation, neighborhoodLocation): These do not have to be
+#. # exact value, instead approximations would be fine.
+#. # examples: Neighborhood (within 2 km)
+#. #           Exact Location (within 3 m)
+#. #
+#: geolocation.exactLocation
+msgid "Exact Location (within 10 feet)"
+msgstr "Presiese ligging (binne 3 meter)"
+
+#: geolocation.exactLocationKey
+msgid "E"
+msgstr "P"
+
+#: geolocation.neighborhoodLocation
+msgid "Neighborhood (within 1 mile)"
+msgstr "Buurt (binne 2 km)"
+
+#: geolocation.neighborhoodLocationKey
+msgctxt "geolocation.neighborhoodLocationKey"
+msgid "N"
+msgstr "B"
+
+#: geolocation.nothingLocation
+msgid "Nothing"
+msgstr "Niks"
+
+#: geolocation.nothingLocationKey
+msgctxt "geolocation.nothingLocationKey"
+msgid "o"
+msgstr "i"
+
+#: geolocation.requestMessage
+msgid "%S wants to know where you are.  Tell them:"
+msgstr "%S wil weet waar u is.  Vertel hulle:"
+
+#. # Phishing/Malware Notification Bar.
+#. # LOCALIZATION NOTE (notAForgery, notAnAttack)
+#. # The two button strings will never be shown at the same time, so
+#. # it's okay for them to have the same access key
+#: safebrowsing.getMeOutOfHereButton.label
+msgid "Get me out of here!"
+msgstr "Eina! Laat ek weg wees!"
+
+#: safebrowsing.getMeOutOfHereButton.accessKey
+msgid "G"
+msgstr "L"
+
+#: safebrowsing.reportedWebForgery
+msgid "Reported Web Forgery!"
+msgstr "Rapporteer webnamaaksel!"
+
+#: safebrowsing.notAForgeryButton.label
+msgid "This isn't a web forgery…"
+msgstr "Dit is nie 'n kwaadwillige webnamaaksel nie…"
+
+#: safebrowsing.notAForgeryButton.accessKey
+msgid "F"
+msgstr "k"
+
+#: safebrowsing.reportedAttackSite
+msgid "Reported Attack Site!"
+msgstr "'n Geraporteerde aanvalswerf!"
+
+#: safebrowsing.notAnAttackButton.label
+msgid "This isn't an attack site…"
+msgstr "Hierdie is nie 'n aanvalswerf nie…"
+
+#: safebrowsing.notAnAttackButton.accessKey
+msgctxt "safebrowsing.notAnAttackButton.accessKey"
+msgid "A"
+msgstr "A"
+
+#. # Private Browsing Confirmation dialog
+#. # LOCALIZATION NOTE (privateBrowsingMessage): %S will be replaced
+#. # by the name of the application.
+#. # LOCALIZATION NOTE (privateBrowsingYesTitle, privateBrowsingNoTitle, privateBrowsingNeverAsk):
+#. # Access keys are specified by prefixing the desired letter with an ampersand.
+#: privateBrowsingDialogTitle
+msgid "Start Private Browsing"
+msgstr "Begin privaat blaai"
+
+#: privateBrowsingMessage
+msgid ""
+"%S will save your current tabs for when you are done with your Private "
+"Browsing session."
+msgstr ""
+"%S sal u huidige oortjies vir u stoor wanneer u klaar privaat geblaai het."
+
+#: privateBrowsingYesTitle
+msgid "&Start Private Browsing"
+msgstr "&Begin privaat blaai"
+
+#: privateBrowsingNoTitle
+msgid "&Cancel"
+msgstr "&Kanselleer"
+
+#: privateBrowsingNeverAsk
+msgid "&Do not show this message again"
+msgstr "&Moenie my weer vertel nie"
+
+#~ msgid "Drop a link or file to open it in a new tab"
+#~ msgstr "Laat los 'n skakel of lêer om dit in 'n nuwe oortjie te open"
+
+#~ msgid "Clear Private Data Now"
+#~ msgstr "Skrap private data nou"
 
 #~ msgid "(no information provided)"
 #~ msgstr "(geen inligting verskaf nie)"

@@ -1,19 +1,24 @@
 #. extracted from en-US/browser/chrome/browser/browser.dtd
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-05 20:50+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2008-11-07 15:19+0200\n"
+"PO-Revision-Date: 2008-11-08 14:03+0200\n"
+"Last-Translator: Samuel Murray <samuel at translate.org.za>\n"
+"Language-Team: I have a very cool team\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.1.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Translate Toolkit 1.2.0\n"
 "X-Accelerator-Marker: &\n"
+
+#. This will be appended to the window's title
+#. inside the private browsing mode
+#: mainWindowPrivateBrowsing.titlemodifier
+msgid "&mainWindow.titlemodifier; (Private Browsing)"
+msgstr "&mainWindow.titlemodifier; (private blaaiery)"
 
 #: tabCmd.label tabCmd.accesskey
 msgid "New &Tab"
@@ -400,9 +405,13 @@ msgstr "&Opsies…"
 msgid "Prefere&nces"
 msgstr "Voor&keure"
 
-#: clearPrivateDataCmd.label clearPrivateDataCmd.accesskey
-msgid "Clear &Private Data"
-msgstr "Skrap &private data"
+#: clearRecentHistoryCmd.label clearRecentHistoryCmd.accesskey
+msgid "Clear Recent &History"
+msgstr "Maak onlangse &geskiedenis skoon"
+
+#: privateBrowsingCmd.label privateBrowsingCmd.accesskey
+msgid "Private &Browsing"
+msgstr "Private &blaaiery"
 
 #: viewMenu.label viewMenu.accesskey
 msgid "&View"
@@ -518,6 +527,8 @@ msgstr "Bekyk bron van gemerkte deel"
 msgid "View MathML Source"
 msgstr "Bekyk MathML-bron"
 
+#. This accesskey is used for both
+#. viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label
 #: viewPartialSourceCmd.accesskey
 msgctxt "viewPartialSourceCmd.accesskey"
 msgid "e"
@@ -539,13 +550,17 @@ msgstr "Bekyk bladsy&info"
 msgid "View Frame &Info"
 msgstr "Bekyk raam&info"
 
-#: showImageCmd.label showImageCmd.accesskey
-msgid "&Show Image"
-msgstr "&Wys prent"
+#: reloadImageCmd.label reloadImageCmd.accesskey
+msgid "&Reload Image"
+msgstr "&Herlaai prent"
 
 #: viewImageCmd.label viewImageCmd.accesskey
 msgid "View &Image"
 msgstr "Bekyk &prent"
+
+#: viewVideoCmd.label viewVideoCmd.accesskey
+msgid "V&iew Video"
+msgstr "Bekyk v&ideo"
 
 #: viewBGImageCmd.label viewBGImageCmd.accesskey
 msgid "Vie&w Background Image"
@@ -605,9 +620,25 @@ msgstr "St&uur skakel…"
 msgid "Sa&ve Image As…"
 msgstr "St&oor prent as…"
 
+#: saveVideoCmd.label saveVideoCmd.accesskey
+msgid "Save &Video As…"
+msgstr "Stoor &video as…"
+
+#: saveAudioCmd.label saveAudioCmd.accesskey
+msgid "Sa&ve Audio As…"
+msgstr "St&oor klank as…"
+
 #: sendImageCmd.label sendImageCmd.accesskey
 msgid "Se&nd Image…"
 msgstr "Gest&uurde prent…"
+
+#: sendVideoCmd.label sendVideoCmd.accesskey
+msgid "Se&nd Video…"
+msgstr "St&uur video…"
+
+#: sendAudioCmd.label sendAudioCmd.accesskey
+msgid "Se&nd Audio…"
+msgstr "St&uur klank…"
 
 #: copyLinkCmd.label copyLinkCmd.accesskey
 msgid "Copy Link Loc&ation"
@@ -625,6 +656,14 @@ msgstr "K&opieer prentligging"
 msgid "Cop&y Image"
 msgstr "&Kopieer prent"
 
+#: copyVideoURLCmd.label copyVideoURLCmd.accesskey
+msgid "C&opy Video Location"
+msgstr "K&opieer videoligging"
+
+#: copyAudioURLCmd.label copyAudioURLCmd.accesskey
+msgid "C&opy Audio Location"
+msgstr "K&opieer klankligging"
+
 #: blockImageCmd.accesskey
 msgctxt "blockImageCmd.accesskey"
 msgid "B"
@@ -641,6 +680,31 @@ msgstr "Kopieer &e-posadres"
 #: thisFrameMenu.label thisFrameMenu.accesskey
 msgid "T&his Frame"
 msgstr "H&ierdie raam"
+
+#. Media (video/audio) controls
+#: mediaPlay.label mediaPlay.accesskey
+msgid "&Play"
+msgstr "&Speel"
+
+#: mediaPause.label mediaPause.accesskey
+msgid "&Pause"
+msgstr "&Laat wag"
+
+#: mediaMute.label mediaMute.accesskey
+msgid "&Mute"
+msgstr "&Dower"
+
+#: mediaUnmute.label mediaUnmute.accesskey
+msgid "Un&mute"
+msgstr "Ont&dower"
+
+#: mediaShowControls.label mediaShowControls.accesskey
+msgid "Show &Controls"
+msgstr "&Wys kontroles"
+
+#: mediaHideControls.label mediaHideControls.accesskey
+msgid "Hide &Controls"
+msgstr "&Versteek kontroles"
 
 #. LOCALIZATION NOTE :
 #. fullZoomEnlargeCmd.commandkey3, fullZoomReduceCmd.commandkey2 and
@@ -661,8 +725,7 @@ msgid "="
 msgstr "="
 
 #: fullZoomEnlargeCmd.commandkey3
-msgid ""
-"_: fullZoomEnlargeCmd.commandkey3\n"
+msgid "_: fullZoomEnlargeCmd.commandkey3\n"
 msgstr ""
 
 #: fullZoomReduceCmd.label fullZoomReduceCmd.accesskey
@@ -674,8 +737,8 @@ msgid "-"
 msgstr "-"
 
 #: fullZoomReduceCmd.commandkey2
+msgctxt "fullZoomReduceCmd.commandkey2"
 msgid ""
-"_: fullZoomReduceCmd.commandkey2\n"
 msgstr ""
 
 #: fullZoomResetCmd.label fullZoomResetCmd.accesskey
@@ -687,8 +750,8 @@ msgid "0"
 msgstr "0"
 
 #: fullZoomResetCmd.commandkey2
+msgctxt "fullZoomResetCmd.commandkey2"
 msgid ""
-"_: fullZoomResetCmd.commandkey2\n"
 msgstr ""
 
 #: fullZoomToggleCmd.label fullZoomToggleCmd.accesskey
@@ -698,10 +761,6 @@ msgstr "Zoem net &teks"
 #: fullZoom.label fullZoom.accesskey
 msgid "&Zoom"
 msgstr "&Zoem"
-
-#: newTabButton.tooltip
-msgid "Open a new tab"
-msgstr "Open 'n nuwe oortjie"
 
 #: newWindowButton.tooltip
 msgid "Open a new window"
@@ -878,6 +937,19 @@ msgstr "Meer inligting…"
 #: downloadMonitor2.tooltip
 msgid "Click to open downloads window"
 msgstr "Klik om aflaaivenster te open"
+
+#: ctrlTab.search.emptyText
+msgid "Search Tabs"
+msgstr "Deursoek oortjies"
+
+#~ msgid "Clear &Private Data"
+#~ msgstr "Skrap &private data"
+
+#~ msgid "&Show Image"
+#~ msgstr "&Wys prent"
+
+#~ msgid "Open a new tab"
+#~ msgstr "Open 'n nuwe oortjie"
 
 #~ msgid "You are connected to an unverified site."
 #~ msgstr "U is aan 'n ongeverifieerde werf gekoppel."
