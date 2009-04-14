@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-07 15:19+0200\n"
+"POT-Creation-Date: 2009-03-24 13:39+0200\n"
 "PO-Revision-Date: 2008-11-08 14:04+0200\n"
 "Last-Translator: Samuel Murray <samuel at translate.org.za>\n"
 "Language-Team: I have a very cool team\n"
@@ -11,12 +11,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.2.0\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
 "X-Accelerator-Marker: &\n"
 
-#: sanitizePrefs.title
-msgid "Clear Private Data"
-msgstr "Skrap private data"
+#: sanitizePrefs2.title
+msgid "Settings for Clearing History"
+msgstr "Instellings om geskiedenis te wis"
 
 #: sanitizeDialog2.title
 msgid "Clear Recent History"
@@ -33,35 +33,53 @@ msgstr ""
 "skoon te maak:"
 
 #. XXX rearrange entities to match physical layout when l10n isn't an issue
-#: clearDuration.label
-msgid "Remove "
-msgstr "Verwyder "
+#. LOCALIZATION NOTE (clearTimeDuration.*): "Time range to clear" dropdown.
+#. See UI mockup at bug 480169
+#: clearTimeDuration.label clearTimeDuration.accesskey
+msgid "&Time range to clear: "
+msgstr "&Tydomvang om te wis: "
 
-#: clearDuration.lastHour
-msgid "the last hour"
-msgstr "die afgelope uur"
+#: clearTimeDuration.lastHour
+msgid "Last Hour"
+msgstr "Vorige uur"
 
-#: clearDuration.last2Hours
-msgid "the last 2 hours"
-msgstr "die afgelope 2 uur"
+#: clearTimeDuration.last2Hours
+msgid "Last Two Hours"
+msgstr "Vorige twee uur"
 
-#: clearDuration.last4Hours
-msgid "the last 4 hours"
-msgstr "die afgelope 4 uur"
+#: clearTimeDuration.last4Hours
+msgid "Last Four Hours"
+msgstr "Vorige vier uur"
 
-#: clearDuration.today
-msgid "my history for today"
-msgstr "my geskiedenis vir vandag"
+#: clearTimeDuration.today
+msgid "Today"
+msgstr "Vandag"
 
-#: clearDuration.everything
-msgid "my entire history"
-msgstr "my hele geskiedenis"
+#: clearTimeDuration.everything
+msgid "Everything"
+msgstr "Alles"
 
-#. Localization note (clearDuration.suffix) - trailing entity for languages
+#. Localization note (clearTimeDuration.suffix) - trailing entity for languages
 #. that require it.
-#: clearDuration.suffix
-msgid "_: clearDuration.suffix\n"
+#: clearTimeDuration.suffix
+msgid "_: clearTimeDuration.suffix\n"
 msgstr ""
+
+#: clearTimeDuration.dateColumn
+msgid "Visit Date"
+msgstr "Besoekdatum"
+
+#: clearTimeDuration.nameColumn
+msgid "Name"
+msgstr "Naam"
+
+#. LOCALIZATION NOTE (detailsProgressiveDisclosure.*): Labels and accesskeys
+#. of the "Details" progressive disclosure button.  See UI mockup at bug
+#. 480169
+#: detailsProgressiveDisclosure.label detailsProgressiveDisclosure.accesskey
+#, fuzzy
+msgid "D&etails"
+msgstr "Besonderhede"
 
 #: historySection.label
 msgid "History"
@@ -71,13 +89,20 @@ msgstr "Geskiedenis"
 msgid "Data"
 msgstr "Data"
 
-#: itemVisitedPages.label itemVisitedPages.accesskey
-msgid "&Visited Pages"
-msgstr "&Besoekte bladsye"
+#. LOCALIZATION NOTE (item*): itemHistoryAndDownloads.* and
+#. itemBrowsingHistory.* will never be used at the same time, so they can
+#. have the same accesskey.
+#: itemHistoryAndDownloads.label itemHistoryAndDownloads.accesskey
+msgid "&Browsing and Download History"
+msgstr "&Blaai- en aflaaigeskiedenis"
 
-#: itemFormSearchEntries.label itemFormSearchEntries.accesskey
-msgid "&Form &amp; Search Entries"
-msgstr "&Vorm- en soekinskrywings"
+#: itemBrowsingHistory.label itemBrowsingHistory.accesskey
+msgid "&Browsing History"
+msgstr "&Blaaiergeskiedenis"
+
+#: itemFormSearchHistory.label itemFormSearchHistory.accesskey
+msgid "&Form &amp; Search History"
+msgstr "&Vorm- en soekgeskiedenis"
 
 #: itemPasswords.label itemPasswords.accesskey
 msgid "Saved &Passwords"
@@ -87,25 +112,38 @@ msgstr "&Wagwoorde gestoor"
 msgid "&Cookies"
 msgstr "&Koekies"
 
-#: itemWebCache.label itemWebCache.accesskey
-msgid "&Web Cache"
-msgstr "&Webkas"
+#: itemCache.label itemCache.accesskey
+msgid "C&ache"
+msgstr "K&as"
 
 #: itemOfflineApps.label itemOfflineApps.accesskey
 msgid "&Offline Website Data"
 msgstr "&Vanlyn webwerfdata"
 
-#: itemDownloadList.label itemDownloadList.accesskey
-msgid "&Download List"
+#: itemDownloadHistory.label itemDownloadHistory.accesskey
+#, fuzzy
+msgid "&Download History"
 msgstr "&Laai lys af"
 
 #: itemActiveLogins.label itemActiveLogins.accesskey
 msgid "Active &Logins"
 msgstr "Aktiewe &aanmeldings"
 
+#: itemSitePreferences.label itemSitePreferences.accesskey
+msgid "&Site Preferences"
+msgstr "&Werfvoorkeure"
+
+#. Second warning paragraph
+#. that appears when "Time range to clear" is set to "Everything".  See UI
+#. mockup at bug 480169
+#: sanitizeEverythingUndoWarning
+msgid "This action cannot be undone."
+msgstr "Hierdie aksie kan nie ontdoen word nie."
+
 #. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
-#: window.width
-msgid "30em"
+#: dialog.width
+#, fuzzy
+msgid "32em"
 msgstr "30em"
 
 #. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
@@ -113,20 +151,44 @@ msgstr "30em"
 msgid "14em"
 msgstr "14em"
 
+#~ msgid "Clear Private Data"
+#~ msgstr "Skrap private data"
+
+#~ msgid "Remove "
+#~ msgstr "Verwyder "
+
+#~ msgid "the last hour"
+#~ msgstr "die afgelope uur"
+
+#~ msgid "the last 2 hours"
+#~ msgstr "die afgelope 2 uur"
+
+#~ msgid "the last 4 hours"
+#~ msgstr "die afgelope 4 uur"
+
+#~ msgid "my history for today"
+#~ msgstr "my geskiedenis vir vandag"
+
+#~ msgid "my entire history"
+#~ msgstr "my hele geskiedenis"
+
+#~ msgid "&Visited Pages"
+#~ msgstr "&Besoekte bladsye"
+
+#~ msgid "&Form &amp; Search Entries"
+#~ msgstr "&Vorm- en soekinskrywings"
+
+#~ msgid "&Web Cache"
+#~ msgstr "&Webkas"
+
 #~ msgid ""
 #~ "When I ask &brandShortName; to clear my private data, it should erase:"
 #~ msgstr ""
 #~ "Wanneer ek &brandShortName; vra om my private data te skrap, moet dit die "
 #~ "volgende skrap:"
 
-#~ msgid "&Browsing History"
-#~ msgstr "&Blaaiergeskiedenis"
-
 #~ msgid "Saved &Form and Search History"
 #~ msgstr "Gestoorde &vorm- en soekgeskiedenis"
-
-#~ msgid "C&ache"
-#~ msgstr "K&as"
 
 #~ msgid "Authenticated &Sessions"
 #~ msgstr "Stawing&sessies"
