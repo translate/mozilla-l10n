@@ -1,9 +1,10 @@
+#. extracted from en-US/browser/chrome/browser/browser.dtd
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-01 23:32+0200\n"
+"POT-Creation-Date: 2009-03-24 13:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,15 +12,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
+"X-Accelerator-Marker: &\n"
 
-#: viewsourcetitle.preface
-msgid "Source for: "
-msgstr "Mothopo wa: "
+#. This will be appended to the window's title
+#. inside the private browsing mode
+#: mainWindow.titlePrivateBrowsingSuffix
+msgid "(Private Browsing)"
+msgstr ""
 
-#: nothingAvailable.label
-msgid "(Nothing Available)"
-msgstr "(Ga go na seo se lego gona)"
+#. LOCALIZATION NOTE (mainWindowPrivateBrowsing.titlemodifier): DONT_TRANSLATE
+#: mainWindow.titlemodifierPrivateBrowsing
+msgid "&mainWindow.titlemodifier; &mainWindow.titlePrivateBrowsingSuffix;"
+msgstr ""
 
 #: tabCmd.label tabCmd.accesskey
 msgid "New &Tab"
@@ -38,6 +43,7 @@ msgid "&Open File…"
 msgstr "&Bula Faele…"
 
 #: openFileCmd.commandkey
+msgctxt "openFileCmd.commandkey"
 msgid "o"
 msgstr "o"
 
@@ -54,9 +60,8 @@ msgid "&Print…"
 msgstr "&Gatiša…"
 
 #: printCmd.commandkey
-msgid ""
-"_: printCmd.commandkey\n"
-"p"
+msgctxt "printCmd.commandkey"
+msgid "p"
 msgstr "p"
 
 #: import.label import.accesskey
@@ -96,9 +101,8 @@ msgid "Page &Info"
 msgstr "&Tshedimošo ya Letlakala"
 
 #: pageInfoCmd.commandkey
-msgid ""
-"_: pageInfoCmd.commandkey\n"
-"i"
+msgctxt "pageInfoCmd.commandkey"
+msgid "i"
 msgstr "i"
 
 #: fullScreenCmd.label fullScreenCmd.accesskey
@@ -117,30 +121,58 @@ msgstr "Boloka"
 msgid "Close"
 msgstr "Tswalela"
 
-#: closeWindow.label
-msgid "Close Window"
+#: fullScreenAutohide.label fullScreenAutohide.accesskey
+#, fuzzy
+msgid "&Hide Toolbars"
+msgstr "Fihla Thulupaa"
+
+#: fullScreenExit.label fullScreenExit.accesskey
+msgid "Exit &Full Screen Mode"
+msgstr ""
+
+#: closeWindow.label closeWindow.accesskey
+#, fuzzy
+msgid "Close Win&dow"
 msgstr "Tswalela Lefasetere"
 
 #: bookmarksMenu.label bookmarksMenu.accesskey
 msgid "&Bookmarks"
 msgstr "&Dipukuswao"
 
-#: addCurPageAsCmd.label
-msgid "Bookmark This Page…"
-msgstr ""
+#: bookmarkThisPageCmd.label
+#, fuzzy
+msgid "Bookmark This Page"
+msgstr "Swa&ya Letlakala Le…"
 
-#: addCurPageAsCmd.commandkey
-msgid ""
-"_: addCurPageAsCmd.commandkey\n"
-"d"
+#: bookmarkThisPageCmd.commandkey
+msgctxt "bookmarkThisPageCmd.commandkey"
+msgid "d"
 msgstr "d"
 
-#: manBookmarksCmd.label manBookmarksCmd.accesskey
-msgid "&Manage Bookmarks…"
-msgstr "&Laola Dipukuswao…"
+#: subscribeToPageMenupopup.label
+msgid "Subscribe to This Page"
+msgstr ""
+
+#: subscribeToPageMenuitem.label
+msgid "Subscribe to This Page…"
+msgstr ""
+
+#: addCurPagesCmd.label
+msgctxt "addCurPagesCmd.label"
+msgid "Bookmark All Tabs…"
+msgstr ""
+
+#: organizeBookmarks.label
+msgid "Organize Bookmarks…"
+msgstr ""
 
 #: bookmarkAllCmd.label
+msgctxt "bookmarkAllCmd.label"
 msgid "Bookmark All Tabs…"
+msgstr ""
+
+#: bookmarksToolbarChevron.tooltip
+msgid "Show more bookmarks"
 msgstr ""
 
 #: backCmd.label backCmd.accesskey
@@ -158,6 +190,11 @@ msgstr "&Pele"
 #: forwardButton.tooltip
 msgid "Go forward one page"
 msgstr "Eya pele letlakala le tee"
+
+#: backForwardMenu.tooltip
+#, fuzzy
+msgid "Recent pages"
+msgstr "Matlakala a Bjale"
 
 #: reloadCmd.label reloadCmd.accesskey
 msgid "&Reload"
@@ -179,13 +216,9 @@ msgstr "."
 msgid "Stop loading this page"
 msgstr "Emiša go hlahlela letlakala le"
 
-#: goButton.label
-msgid "Go"
-msgstr "Tšwelapele"
-
-#: goButton.tooltip
-msgid "Type a location in the address field, then click Go"
-msgstr "Thaepa lefelo ka go lefelo la aterese, gomme o kgotla Tšwelapele"
+#: goEndCap.tooltip
+msgid "Go to the address in the Location Bar"
+msgstr ""
 
 #: printButton.label
 msgid "Print"
@@ -208,31 +241,19 @@ msgid "Activity Indicator"
 msgstr "Selaetša Phethagatšo"
 
 #: bookmarksItem.title
-msgid ""
-"_: bookmarksItem.title\n"
-"Bookmarks"
+msgctxt "bookmarksItem.title"
+msgid "Bookmarks"
 msgstr "Dipukuswao"
 
-#: updatesItem.title
-msgid "Updates"
-msgstr "Bea tshedimošo nakong ya bjale"
-
-#: throbber.tooltip
-msgid "Go to the &brandShortName; home page"
-msgstr "Eya go &brandShortName; letlakala la mathomo"
-
-#: proxyIcon.tooltip
-msgid "Drag and drop this icon to create a link to this page"
-msgstr "Goga o be o weše leswao le go hlama kgokagano go letlakala le"
-
+#. Toolbar items
 #: homeButton.label
+msgctxt "homeButton.label"
 msgid "Home"
 msgstr "Lapeng"
 
 #: bookmarksButton.label
-msgid ""
-"_: bookmarksButton.label\n"
-"Bookmarks"
+msgctxt "bookmarksButton.label"
+msgid "Bookmarks"
 msgstr "Dipukuswao"
 
 #: bookmarksButton.tooltip
@@ -240,6 +261,7 @@ msgid "Display your bookmarks"
 msgstr "Bontšha dipukuswao tša gago"
 
 #: bookmarksSidebarCmd.accesskey
+msgctxt "bookmarksSidebarCmd.accesskey"
 msgid "B"
 msgstr "B"
 
@@ -247,10 +269,17 @@ msgstr "B"
 msgid "b"
 msgstr "b"
 
+#. This command
+#. -  key should not contain the letters A-F, since these are reserved
+#. -  shortcut keys on Linux.
+#: bookmarksSidebarGtkCmd.commandkey
+msgctxt "bookmarksSidebarGtkCmd.commandkey"
+msgid "o"
+msgstr "o"
+
 #: bookmarksSidebarWinCmd.commandkey
-msgid ""
-"_: bookmarksSidebarWinCmd.commandkey\n"
-"i"
+msgctxt "bookmarksSidebarWinCmd.commandkey"
+msgid "i"
 msgstr "i"
 
 #: historyButton.label
@@ -262,9 +291,8 @@ msgid "Display pages you've viewed recently"
 msgstr "Bontšha matlakala ao a a bonego kgauswinyana"
 
 #: historySidebarCmd.accesskey
-msgid ""
-"_: historySidebarCmd.accesskey\n"
-"s"
+msgctxt "historySidebarCmd.accesskey"
+msgid "s"
 msgstr "s"
 
 #: historySidebarCmd.commandKey
@@ -292,46 +320,35 @@ msgid "Display the progress of ongoing downloads"
 msgstr "Bontšha kgatelopele ya dipulo tše di phelago di le gona"
 
 #: downloads.commandkey
-msgid ""
-"_: downloads.commandkey\n"
-"j"
+msgctxt "downloads.commandkey"
+msgid "j"
 msgstr "j"
 
 #: downloadsUnix.commandkey
 msgid "y"
 msgstr "y"
 
-#: extensions.label extensions.accesskey
-msgid "&Extensions"
-msgstr "&Dikoketšo"
+#: addons.label addons.accesskey
+msgid "&Add-ons"
+msgstr ""
 
-#: extensions.tooltip
-msgid "Show and Manage installed Extensions"
+#: addons.tooltip
+#, fuzzy
+msgid "Show and Manage installed Add-ons"
 msgstr "Laetša le go Laola Dikoketšo tšeo di loketšwego"
 
-#: themes.label themes.accesskey
-msgid "&Themes"
-msgstr "&Dihlogo"
+#: errorConsoleCmd.label errorConsoleCmd.accesskey
+msgid "Error &Console"
+msgstr ""
 
-#: themes.tooltip
-msgid "Change the Theme"
-msgstr "Fetola Hlogo"
-
-#: javaConsoleCmd.label javaConsoleCmd.accesskey
-msgid "&Java Console"
-msgstr "&Java Khonsole"
-
-#: javaScriptConsoleCmd.label javaScriptConsoleCmd.accesskey
-msgid "JavaScript &Console"
-msgstr "JavaScript &Khonsole"
+#: errorConsoleCmd.commandkey
+msgctxt "errorConsoleCmd.commandkey"
+msgid "j"
+msgstr "j"
 
 #: fileMenu.label fileMenu.accesskey
 msgid "&File"
 msgstr "&Faele"
-
-#: newMenu.label newMenu.accesskey
-msgid "&New"
-msgstr "&Mpsha"
 
 #: newNavigatorCmd.label newNavigatorCmd.accesskey
 msgid "&New Window"
@@ -346,6 +363,7 @@ msgid "&Edit"
 msgstr "&Rulaganya"
 
 #: undoCmd.label undoCmd.accesskey
+msgctxt "undoCmd.label undoCmd.accesskey"
 msgid "&Undo"
 msgstr "&Dirolla"
 
@@ -366,9 +384,8 @@ msgid "Cu&t"
 msgstr "Rip&a"
 
 #: cutCmd.key
-msgid ""
-"_: cutCmd.key\n"
-"X"
+msgctxt "cutCmd.key"
+msgid "X"
 msgstr "X"
 
 #: copyCmd.label copyCmd.accesskey
@@ -392,9 +409,8 @@ msgid "&Delete"
 msgstr "&Phumula"
 
 #: deleteCmd.key
-msgid ""
-"_: deleteCmd.key\n"
-"D"
+msgctxt "deleteCmd.key"
+msgid "D"
 msgstr "D"
 
 #: selectAllCmd.label selectAllCmd.accesskey
@@ -413,9 +429,23 @@ msgstr "&Dikgetho…"
 msgid "Prefere&nces"
 msgstr "Dipharo&logantšho"
 
-#: clearPrivateDataCmd.label clearPrivateDataCmd.accesskey
-msgid "Clear &Private Data"
+#: clearRecentHistoryCmd.label clearRecentHistoryCmd.accesskey
+msgid "Clear Recent &History"
 msgstr ""
+
+#. LOCALIZATION NOTE : These two strings can share an access key beause they never appear together on the menu
+#: privateBrowsingCmd.start.label privateBrowsingCmd.start.accesskey
+msgid "Start &Private Browsing"
+msgstr ""
+
+#: privateBrowsingCmd.stop.label privateBrowsingCmd.stop.accesskey
+msgid "Stop &Private Browsing"
+msgstr ""
+
+#: privateBrowsingCmd.commandkey
+msgctxt "privateBrowsingCmd.commandkey"
+msgid "P"
+msgstr "P"
 
 #: viewMenu.label viewMenu.accesskey
 msgid "&View"
@@ -433,46 +463,91 @@ msgstr "Saet&epaa"
 msgid "&Customize…"
 msgstr "&Beakanya…"
 
-#: goMenu.label goMenu.accesskey
-msgid "&Go"
-msgstr "&Tšwelapele"
+#: historyMenu.label historyMenu.accesskey
+#, fuzzy
+msgid "Hi&story"
+msgstr "Histori"
 
-#: goHomeCmd.label goHomeCmd.accesskey
-msgid "&Home"
-msgstr "&Lapa"
+#: historyUndoMenu.label
+msgid "Recently Closed Tabs"
+msgstr ""
 
-#: earlierHistory.label
-msgid "Earlier History"
-msgstr "Histori ya Pele"
+#. LOCALIZATION NOTE (historyUndoWindowMenu): see bug 394759
+#: historyUndoWindowMenu.label
+msgid "Recently Closed Windows"
+msgstr ""
 
-#: releaseCmd.label releaseCmd.accesskey
-msgid "&Release Notes"
-msgstr "&Ntšha Dikgakollo"
+#: historyHomeCmd.label
+msgctxt "historyHomeCmd.label"
+msgid "Home"
+msgstr "Lapeng"
+
+#: showAllHistoryCmd2.label
+msgid "Show All History"
+msgstr ""
+
+#: showAllHistoryCmd.commandkey
+msgid "H"
+msgstr ""
 
 #: openCmd.commandkey
 msgid "l"
 msgstr "l"
 
+#: urlbar.emptyText
+msgctxt "urlbar.emptyText"
+msgid "Search Bookmarks and History"
+msgstr ""
+
+#: urlbar.bookmarkhistory.emptyText
+msgctxt "urlbar.bookmarkhistory.emptyText"
+msgid "Search Bookmarks and History"
+msgstr ""
+
+#: urlbar.bookmark.emptyText
+#, fuzzy
+msgid "Search Bookmarks"
+msgstr "&Nyaka Dipukuswao…"
+
+#: urlbar.history.emptyText
+msgid "Search History"
+msgstr ""
+
+#: urlbar.none.emptyText
+msgid "Type a Web address"
+msgstr ""
+
 #: urlbar.accesskey
-msgid ""
-"_: urlbar.accesskey\n"
-"d"
+msgctxt "urlbar.accesskey"
+msgid "d"
 msgstr "d"
 
+#. Comment duplicated from browser-sets.inc:
+#. Search Command Key Logic works like this:
+#. Unix: Ctrl+J (0.8, 0.9 support)
+#. Ctrl+K (cross platform binding)
+#. Mac:  Ctrl+K (cross platform binding)
+#. Win:  Ctrl+K (cross platform binding)
+#. Ctrl+E (IE compat)
+#. We support Ctrl+K on all platforms now and advertise it in the menu since it is
+#. our standard - it is a "safe" choice since it is near no harmful keys like "W" as
+#. "E" is. People mourning the loss of Ctrl+K for emacs compat can switch their GTK
+#. system setting to use emacs emulation, and we should respect it. Focus-Search-Box
+#. is a fundamental keybinding and we are maintaining a XP binding so that it is easy
+#. for people to switch to Linux.
+#. Do *not* tamper with these values without talking to ben@mozilla.org
 #: searchFocus.commandkey
 msgid "k"
 msgstr "k"
 
 #: searchFocus.commandkey2
-msgid ""
-"_: searchFocus.commandkey2\n"
-"e"
+msgctxt "searchFocus.commandkey2"
+msgid "e"
 msgstr "e"
 
 #: searchFocusUnix.commandkey
-msgid ""
-"_: searchFocusUnix.commandkey\n"
-"j"
+msgctxt "searchFocusUnix.commandkey"
+msgid "j"
 msgstr "j"
 
 #: openLinkCmd.label openLinkCmd.accesskey
@@ -483,10 +558,6 @@ msgstr "Bula Kgokagano ka go Mpsha &Lefasetere"
 msgid "Open Link in New &Tab"
 msgstr "Bula Kgokagano ka go Mpsha &Thepe"
 
-#: openLinkInWindowCmd.label openLinkInWindowCmd.accesskey
-msgid "O&pen"
-msgstr "B&ula"
-
 #: openFrameCmd.label openFrameCmd.accesskey
 msgid "Open Frame in New &Window"
 msgstr "Bula Foreime ka go Mpsha &Lefasetere"
@@ -496,7 +567,8 @@ msgid "Open Frame in New &Tab"
 msgstr "Bula Foreime ka go Mpsha &Thepe"
 
 #: showOnlyThisFrameCmd.label showOnlyThisFrameCmd.accesskey
-msgid "Sho&w Only This Frame"
+#, fuzzy
+msgid "&Show Only This Frame"
 msgstr "Laetš&a Feela Foreime ye"
 
 #: reloadCmd.commandkey
@@ -515,10 +587,11 @@ msgstr "Lebelela Mothopo wa Kgetho"
 msgid "View MathML Source"
 msgstr "Lebelela Mothopo wa Lebeledišiša MathML"
 
+#. This accesskey is used for both
+#. viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label
 #: viewPartialSourceCmd.accesskey
-msgid ""
-"_: viewPartialSourceCmd.accesskey\n"
-"e"
+msgctxt "viewPartialSourceCmd.accesskey"
+msgid "e"
 msgstr "e"
 
 #: viewPageSourceCmd.label viewPageSourceCmd.accesskey
@@ -537,9 +610,18 @@ msgstr "Lebelela Letlakala &Tshedimošo"
 msgid "View Frame &Info"
 msgstr "Lebelela Foreime &Tshedimošo"
 
+#: reloadImageCmd.label reloadImageCmd.accesskey
+#, fuzzy
+msgid "&Reload Image"
+msgstr "&Hlahlela Foreime gape"
+
 #: viewImageCmd.label viewImageCmd.accesskey
 msgid "View &Image"
 msgstr "Lebelela &Seswantšho"
+
+#: viewVideoCmd.label viewVideoCmd.accesskey
+msgid "V&iew Video"
+msgstr ""
 
 #: viewBGImageCmd.label viewBGImageCmd.accesskey
 msgid "Vie&w Background Image"
@@ -549,16 +631,19 @@ msgstr "Lebel&ela Seswantšho sa ka Morago"
 msgid "&Set As Desktop Background…"
 msgstr "&Beakanya go ba Bokamorago bja Tesekethopo…"
 
-#: bookmarkPageCmd.label bookmarkPageCmd.accesskey
-msgid "Book&mark This Page…"
+#: bookmarkPageCmd2.label bookmarkPageCmd2.accesskey
+#, fuzzy
+msgid "Book&mark This Page"
 msgstr "Swa&ya Letlakala Le…"
 
-#: bookmarkLinkCmd.label bookmarkLinkCmd.accesskey
-msgid "Bookmark This &Link…"
+#: bookmarkThisLinkCmd.label bookmarkThisLinkCmd.accesskey
+#, fuzzy
+msgid "Bookmark This &Link"
 msgstr "Swaya &Kgokagano ye…"
 
-#: bookmarkFrameCmd.label bookmarkFrameCmd.accesskey
-msgid "Bookmark This &Frame…"
+#: bookmarkThisFrameCmd.label bookmarkThisFrameCmd.accesskey
+#, fuzzy
+msgid "Book&mark This Frame"
 msgstr "Swaya &Foreime Ye…"
 
 #: sendPageCmd.label sendPageCmd.accesskey
@@ -569,15 +654,25 @@ msgstr "R&omela Kgokagano…"
 msgid "Save Page &As…"
 msgstr "Boloka Letlakala &Bjalo ka…"
 
+#. alternate for content area context menu
+#: savePageCmd.accesskey2
+msgctxt "savePageCmd.accesskey2"
+msgid "P"
+msgstr "P"
+
 #: savePageCmd.commandkey
-msgid ""
-"_: savePageCmd.commandkey\n"
-"s"
+msgctxt "savePageCmd.commandkey"
+msgid "s"
 msgstr "s"
 
 #: saveFrameCmd.label saveFrameCmd.accesskey
 msgid "Save &Frame As…"
 msgstr "Boloka &Foreime Bjalo ka…"
+
+#: printFrameCmd.label printFrameCmd.accesskey
+#, fuzzy
+msgid "&Print Frame…"
+msgstr "Gatiša Diforeimi"
 
 #: saveLinkCmd.label saveLinkCmd.accesskey
 msgid "Save Lin&k As…"
@@ -591,13 +686,34 @@ msgstr "Romel&a Kgokagano…"
 msgid "Sa&ve Image As…"
 msgstr "Bolo&ka Seswantšho Bjalo ka…"
 
+#: saveVideoCmd.label saveVideoCmd.accesskey
+msgid "Save &Video As…"
+msgstr ""
+
+#: saveAudioCmd.label saveAudioCmd.accesskey
+msgid "Sa&ve Audio As…"
+msgstr ""
+
 #: sendImageCmd.label sendImageCmd.accesskey
 msgid "Se&nd Image…"
 msgstr "Rome&la Seswantšho…"
 
+#: sendVideoCmd.label sendVideoCmd.accesskey
+msgid "Se&nd Video…"
+msgstr ""
+
+#: sendAudioCmd.label sendAudioCmd.accesskey
+msgid "Se&nd Audio…"
+msgstr ""
+
 #: copyLinkCmd.label copyLinkCmd.accesskey
-msgid "&Copy Link Location"
+#, fuzzy
+msgid "Copy Link Loc&ation"
 msgstr "&Khopa Lefelo la Kgokagano"
+
+#: copyLinkTextCmd.label copyLinkTextCmd.accesskey
+msgid "Copy Link Te&xt"
+msgstr ""
 
 #: copyImageCmd.label copyImageCmd.accesskey
 msgid "C&opy Image Location"
@@ -607,11 +723,20 @@ msgstr "Kh&opa Lefelo la Seswantšho"
 msgid "Cop&y Image"
 msgstr "Khop&a Seswantšho"
 
+#: copyVideoURLCmd.label copyVideoURLCmd.accesskey
+#, fuzzy
+msgid "C&opy Video Location"
+msgstr "Kh&opa Lefelo la Seswantšho"
+
+#: copyAudioURLCmd.label copyAudioURLCmd.accesskey
+#, fuzzy
+msgid "C&opy Audio Location"
+msgstr "Kh&opa Lefelo la Seswantšho"
+
 #: blockImageCmd.accesskey
-msgid ""
-"_: blockImageCmd.accesskey\n"
-"g"
-msgstr "g"
+msgctxt "blockImageCmd.accesskey"
+msgid "B"
+msgstr "B"
 
 #: metadataCmd.label metadataCmd.accesskey
 msgid "&Properties"
@@ -625,69 +750,90 @@ msgstr "Khopa &Aterese ya Eposo"
 msgid "T&his Frame"
 msgstr "Foreime Y&e"
 
-#: textZoomEnlargeCmd.label textZoomEnlargeCmd.accesskey
-msgid "&Increase"
-msgstr "&Oketša"
+#. Media (video/audio) controls
+#: mediaPlay.label mediaPlay.accesskey
+msgid "&Play"
+msgstr ""
 
-#: textZoomEnlargeCmd.commandkey
+#: mediaPause.label mediaPause.accesskey
+msgid "&Pause"
+msgstr "&Khutša"
+
+#: mediaMute.label mediaMute.accesskey
+msgid "&Mute"
+msgstr ""
+
+#: mediaUnmute.label mediaUnmute.accesskey
+msgid "Un&mute"
+msgstr ""
+
+#: mediaShowControls.label mediaShowControls.accesskey
+msgid "Show &Controls"
+msgstr ""
+
+#: mediaHideControls.label mediaHideControls.accesskey
+msgid "Hide &Controls"
+msgstr ""
+
+#. LOCALIZATION NOTE :
+#. fullZoomEnlargeCmd.commandkey3, fullZoomReduceCmd.commandkey2 and
+#. fullZoomResetCmd.commandkey2 are alternative acceleration keys for zoom.
+#. If shift key is needed with your locale popular keyboard for them,
+#. you can use these alternative items. Otherwise, their values should be empty.
+#: fullZoomEnlargeCmd.label fullZoomEnlargeCmd.accesskey
+#, fuzzy
+msgid "Zoom &In"
+msgstr "Bušetša ka Gare"
+
+#: fullZoomEnlargeCmd.commandkey
 msgid "+"
 msgstr "+"
 
-#: textZoomEnlargeCmd.commandkey2
+#. + is above this key on many keyboards
+#: fullZoomEnlargeCmd.commandkey2
 msgid "="
 msgstr "="
 
-#: textZoomReduceCmd.label textZoomReduceCmd.accesskey
-msgid "&Decrease"
-msgstr "&Fokotša"
+#: fullZoomEnlargeCmd.commandkey3
+#, fuzzy
+msgid "_: fullZoomEnlargeCmd.commandkey3\n"
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-02-01 23:32+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Translate Toolkit 0.8rc3\n"
 
-#: textZoomReduceCmd.commandkey
+#: fullZoomReduceCmd.label fullZoomReduceCmd.accesskey
+#, fuzzy
+msgid "Zoom &Out"
+msgstr "Bušetša Ntle"
+
+#: fullZoomReduceCmd.commandkey
 msgid "-"
 msgstr "-"
 
-#: textZoomResetCmd.commandkey
+#: fullZoomResetCmd.label fullZoomResetCmd.accesskey
+msgid "&Reset"
+msgstr "&Beakanya lefsa"
+
+#: fullZoomResetCmd.commandkey
 msgid "0"
 msgstr "0"
 
-#: textZoomResetCmd.label textZoomResetCmd.accesskey
-msgid "&Normal"
-msgstr "&Tlwaelo"
+#: fullZoomToggleCmd.label fullZoomToggleCmd.accesskey
+msgid "Zoom &Text Only"
+msgstr ""
 
-#: textSize.label textSize.accesskey
-msgid "Text Si&ze"
-msgstr "Sae&se ya Sengwalwa"
-
-#: mailMenu.label mailMenu.accesskey
-msgid "&Mail &amp; News"
-msgstr "&Poso &amp; Ditaba"
-
-#: mailButton.label
-msgid "Mail"
-msgstr "Poso"
-
-#: mailButton.tooltip
-msgid "Read and Send Mail"
-msgstr "Bala le go Romela Poso"
-
-#: mailButton.readMail.label mailButton.readMail.accesskey
-msgid "Read &Mail"
-msgstr "Bala &Posa"
-
-#: mailButton.newMessage.label mailButton.newMessage.accesskey
-msgid "Ne&w Message…"
-msgstr "Molaetša o Mo&fsa…"
-
-#: mailButton.sendLink.label mailButton.sendLink.accesskey
-msgid "Send &Link…"
-msgstr "Romela &Kgokagano…"
-
-#: mailButton.readNews.label mailButton.readNews.accesskey
-msgid "Read &News"
-msgstr "Bala &Ditaba"
-
-#: sendMessage.commandkey
-msgid "m"
-msgstr "m"
+#: fullZoom.label fullZoom.accesskey
+msgid "&Zoom"
+msgstr ""
 
 #: newTabButton.tooltip
 msgid "Open a new tab"
@@ -729,6 +875,15 @@ msgstr "]"
 msgid "&Quit"
 msgstr "&Tloga"
 
+#: quitApplicationCmdMac.label
+#, fuzzy
+msgid "Quit &brandShortName;"
+msgstr "Ka ga &brandShortName;"
+
+#: quitApplicationCmdMac.key
+msgid "Q"
+msgstr "Q"
+
 #: closeCmd.label closeCmd.accesskey
 msgid "&Close"
 msgstr "&Tswalela"
@@ -741,10 +896,6 @@ msgstr "W"
 msgid "Page St&yle"
 msgstr "Seta&ele sa Letlakala"
 
-#: pageStyleButton.label
-msgid "Page Styles"
-msgstr "Ditaele tša Matlakala"
-
 #: pageStyleNoStyle.label pageStyleNoStyle.accesskey
 msgid "&No Style"
 msgstr "&Ga go setaele"
@@ -753,32 +904,32 @@ msgstr "&Ga go setaele"
 msgid "&Basic Page Style"
 msgstr "&Setaele sa Letlakala sa Motheo"
 
-#: pageStyleIcon.tooltip
-msgid "Switch to an alternate page style"
-msgstr "Switšha go setaele sa letlakala se sengwe"
-
 #: pageReportIcon.tooltip
-msgid "Change popup blocking settings for this web site"
+#, fuzzy
+msgid "Change pop-up blocking settings for this web site"
 msgstr "Fetola dipeakanyo tša thibelo ya phophapo tša wepe saete ye"
 
 #: allowPopups.accesskey
-msgid ""
-"_: allowPopups.accesskey\n"
-"p"
+msgctxt "allowPopups.accesskey"
+msgid "p"
 msgstr "p"
 
+#. On Windows we use the term "Options" to describe settings, but
+#. on Linux and Mac OS X we use "Preferences" - carry that distinction
+#. over into this string, which is used in the "popup blocked" info bar .
 #: editPopupSettingsUnix.label
-msgid "Edit Popup Blocker Preferences…"
+#, fuzzy
+msgid "Edit Pop-up Blocker Preferences…"
 msgstr "Rulaganya Dipharologantšho tša Sethibela Phophapo…"
 
 #: editPopupSettings.label editPopupSettings.accesskey
-msgid "&Edit Popup Blocker Options…"
+#, fuzzy
+msgid "&Edit Pop-up Blocker Options…"
 msgstr "&Rulaganya Dikgetho tša Sethibela Phophapo…"
 
 #: dontShowMessage.accesskey
-msgid ""
-"_: dontShowMessage.accesskey\n"
-"D"
+msgctxt "dontShowMessage.accesskey"
+msgid "D"
 msgstr "D"
 
 #: bidiSwitchPageDirectionItem.label bidiSwitchPageDirectionItem.accesskey
@@ -790,9 +941,8 @@ msgid "S&witch Text Direction"
 msgstr "S&witšha Tšhupetšo ya Sengwalwa"
 
 #: bidiSwitchTextDirectionItem.commandkey
-msgid ""
-"_: bidiSwitchTextDirectionItem.commandkey\n"
-"X"
+msgctxt "bidiSwitchTextDirectionItem.commandkey"
+msgid "X"
 msgstr "X"
 
 #: findOnCmd.label findOnCmd.accesskey
@@ -808,14 +958,171 @@ msgid "Find A&gain"
 msgstr "Hwetša G&ape"
 
 #: findAgainCmd.commandkey
-msgid ""
-"_: findAgainCmd.commandkey\n"
-"g"
+msgid "g"
 msgstr "g"
 
 #: findAgainCmd.commandkey2
 msgid "VK_F3"
 msgstr "VK_F3"
+
+#: spellAddDictionaries.label spellAddDictionaries.accesskey
+msgid "&Add Dictionaries…"
+msgstr ""
+
+#: editBookmark.done.label
+#, fuzzy
+msgid "Done"
+msgstr "&Dirile"
+
+#: editBookmark.cancel.label
+msgid "Cancel"
+msgstr "Khansela"
+
+#: editBookmark.removeBookmark.accessKey
+msgid "R"
+msgstr "R"
+
+#: editBookmark.undo.label editBookmark.undo.accessKey
+msgctxt "editBookmark.undo.label editBookmark.undo.accessKey"
+msgid "&Undo"
+msgstr "&Dirolla"
+
+#: editBookmark.edit.label editBookmark.edit.accessKey
+#, fuzzy
+msgid "&Edit…"
+msgstr "&Rulaganya"
+
+#: identity.unverifiedsite2
+msgid "This web site does not supply identity information."
+msgstr ""
+
+#: identity.connectedTo
+msgid "You are connected to"
+msgstr ""
+
+#. Localization note (identity.runBy) : This string appears between a
+#. domain name (above) and an organization name (below). E.g.
+#. example.com
+#. which is run by
+#. Example Enterprises, Inc.
+#. The layout of the identity dialog prevents combining this into a single string with
+#. substitution variables.  If it is difficult to translate the sense of the string
+#. with that structure, consider a translation which ignores the preceding domain and
+#. just addresses the organization to follow, e.g. "This site is run by "
+#: identity.runBy
+msgid "which is run by"
+msgstr ""
+
+#: identity.moreInfoLinkText
+msgid "More Information…"
+msgstr "Tshedimošo ka Botlalo…"
+
+#: downloadMonitor2.tooltip
+msgid "Click to open downloads window"
+msgstr ""
+
+#: ctrlTab.search.emptyText
+msgid "Search Tabs"
+msgstr ""
+
+#~ msgid "Source for: "
+#~ msgstr "Mothopo wa: "
+
+#~ msgid "(Nothing Available)"
+#~ msgstr "(Ga go na seo se lego gona)"
+
+#~ msgid "&Manage Bookmarks…"
+#~ msgstr "&Laola Dipukuswao…"
+
+#~ msgid "Go"
+#~ msgstr "Tšwelapele"
+
+#~ msgid "Type a location in the address field, then click Go"
+#~ msgstr "Thaepa lefelo ka go lefelo la aterese, gomme o kgotla Tšwelapele"
+
+#~ msgid "Updates"
+#~ msgstr "Bea tshedimošo nakong ya bjale"
+
+#~ msgid "Go to the &brandShortName; home page"
+#~ msgstr "Eya go &brandShortName; letlakala la mathomo"
+
+#~ msgid "Drag and drop this icon to create a link to this page"
+#~ msgstr "Goga o be o weše leswao le go hlama kgokagano go letlakala le"
+
+#~ msgid "&Extensions"
+#~ msgstr "&Dikoketšo"
+
+#~ msgid "&Themes"
+#~ msgstr "&Dihlogo"
+
+#~ msgid "Change the Theme"
+#~ msgstr "Fetola Hlogo"
+
+#~ msgid "&Java Console"
+#~ msgstr "&Java Khonsole"
+
+#~ msgid "JavaScript &Console"
+#~ msgstr "JavaScript &Khonsole"
+
+#~ msgid "&New"
+#~ msgstr "&Mpsha"
+
+#~ msgid "&Go"
+#~ msgstr "&Tšwelapele"
+
+#~ msgid "&Home"
+#~ msgstr "&Lapa"
+
+#~ msgid "Earlier History"
+#~ msgstr "Histori ya Pele"
+
+#~ msgid "&Release Notes"
+#~ msgstr "&Ntšha Dikgakollo"
+
+#~ msgid "O&pen"
+#~ msgstr "B&ula"
+
+#~ msgid "&Increase"
+#~ msgstr "&Oketša"
+
+#~ msgid "&Decrease"
+#~ msgstr "&Fokotša"
+
+#~ msgid "&Normal"
+#~ msgstr "&Tlwaelo"
+
+#~ msgid "Text Si&ze"
+#~ msgstr "Sae&se ya Sengwalwa"
+
+#~ msgid "&Mail &amp; News"
+#~ msgstr "&Poso &amp; Ditaba"
+
+#~ msgid "Mail"
+#~ msgstr "Poso"
+
+#~ msgid "Read and Send Mail"
+#~ msgstr "Bala le go Romela Poso"
+
+#~ msgid "Read &Mail"
+#~ msgstr "Bala &Posa"
+
+#~ msgid "Ne&w Message…"
+#~ msgstr "Molaetša o Mo&fsa…"
+
+#~ msgid "Send &Link…"
+#~ msgstr "Romela &Kgokagano…"
+
+#~ msgid "Read &News"
+#~ msgstr "Bala &Ditaba"
+
+#~ msgid "m"
+#~ msgstr "m"
+
+#~ msgid "Page Styles"
+#~ msgstr "Ditaele tša Matlakala"
+
+#~ msgid "Switch to an alternate page style"
+#~ msgstr "Switšha go setaele sa letlakala se sengwe"
 
 #~ msgid "&Bookmark This Page..."
 #~ msgstr "&Swaya Letlakala Le..."
