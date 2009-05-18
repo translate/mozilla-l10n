@@ -1,9 +1,10 @@
+#. extracted from en-US/toolkit/chrome/mozapps/extensions/extensions.dtd
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-01 23:32+0200\n"
+"POT-Creation-Date: 2009-03-24 13:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,12 +12,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc5\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
 "X-Accelerator-Marker: &\n"
 
-#: extensions.title
-msgid "Extensions"
-msgstr "Izithasiselo"
+#: addons.title
+msgid "Add-ons"
+msgstr ""
+
+#. Default window size for the addon manager in pixels
+#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
+#: em.width
+msgid "520"
+msgstr ""
+
+#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
+#: em.height
+msgid "380"
+msgstr "380"
 
 #: cmd.info.commandKey
 msgid "i"
@@ -30,26 +42,117 @@ msgstr ","
 msgid "w"
 msgstr "w"
 
-#: cmd.uninstall.label
-#: cmd.uninstall.accesskey
-msgid "Un&install"
-msgstr "Khip&ha okufakelwe"
+#. View labels
+#: search.label
+msgid "Get Add-ons"
+msgstr ""
 
-#: cmd.uninstall.tooltip
-msgid "Uninstalls the selected Extension"
-msgstr "Khipha Isithasiselo segama esifakiwe"
+#: extensions.label
+msgid "Extensions"
+msgstr "Izithasiselo"
 
-#: cmd.update.label
-#: cmd.update.accesskey
-msgid "Find &Updates"
-msgstr "Thola &Lungisa"
+#: themes.label
+msgid "Themes"
+msgstr "Izihloko"
 
-#: cmd.update.tooltip
-msgid "Finds Updates to your Extensions"
+#: locales.label
+msgid "Languages"
+msgstr "Izilimi"
+
+#: plugins.label
+#, fuzzy
+msgid "Plugins"
+msgstr "Xhuma Izintambo Epulagini:"
+
+#: update.label
+msgid "Updates"
+msgstr "Okufakelwe Muva"
+
+#: install.label
+msgid "Installation"
+msgstr "Ukufakela"
+
+#. Command Bar items
+#: cmd.checkUpdatesAll.label cmd.checkUpdatesAll.accesskey
+#, fuzzy
+msgid "&Find Updates"
+msgstr "&Thola Ukulungisa Okwenziwe"
+
+#: cmd.checkUpdatesAllAddon.tooltip
+#, fuzzy
+msgid "Finds Updates to your Add-ons"
 msgstr "Thola Olungisiwe Esithasiselweni segama"
 
-#: cmd.useTheme.label
-#: cmd.useTheme.accesskey
+#: cmd.checkUpdatesAllTheme.tooltip
+#, fuzzy
+msgid "Finds Updates to your Themes"
+msgstr "Thola Olungisiwe Esithasiselweni segama"
+
+#: cmd.installLocalFile.label cmd.installLocalFile.accesskey
+#, fuzzy
+msgid "I&nstall…"
+msgstr "F&akela"
+
+#: cmd.installFileAddon.tooltip
+msgid "Install an Add-on"
+msgstr ""
+
+#: cmd.installFileTheme.tooltip
+msgid "Install a Theme"
+msgstr "Faka Isihloko"
+
+#: cmd.installUpdatesAll.label cmd.installUpdatesAll.accesskey
+#, fuzzy
+msgid "&Install Updates"
+msgstr "Ifakela Okufakwe Muva"
+
+#: cmd.installUpdatesAll.tooltip
+msgid "Installs the selected updates"
+msgstr ""
+
+#: cmd.restartApp2.label cmd.restartApp2.accesskey
+#, fuzzy
+msgid "&Restart &brandShortName;"
+msgstr "Qala &brandShortName;"
+
+#: cmd.restartApp2.tooltip
+msgid "Restart &brandShortName; to apply changes"
+msgstr ""
+
+#: cmd.skip.label cmd.skip.accesskey
+msgid "S&kip"
+msgstr ""
+
+#: cmd.skip.tooltip
+msgid "Skip these updates"
+msgstr ""
+
+#: cmd.continue.label cmd.continue.accesskey
+msgid "&Continue"
+msgstr "&Qhubeka"
+
+#: cmd.continue.tooltip
+msgid "Continue loading &brandShortName;"
+msgstr ""
+
+#: cmd.enableAll.label cmd.enableAll.accesskey
+msgid "Enable &All"
+msgstr ""
+
+#: cmd.enableAll.tooltip
+msgid "Enable all displayed Add-ons"
+msgstr ""
+
+#: cmd.disableAll.label cmd.disableAll.accesskey
+msgid "Di&sable All"
+msgstr ""
+
+#: cmd.disableAll.tooltip
+msgid "Disable all displayed Add-ons"
+msgstr ""
+
+#. Displayed in the selected Add-on's richlistitem and context menu
+#: cmd.useTheme.label cmd.useTheme.accesskey
 msgid "Use &Theme"
 msgstr "Sebenzisa &Isihloko"
 
@@ -57,17 +160,7 @@ msgstr "Sebenzisa &Isihloko"
 msgid "Changes &brandShortName;'s Theme"
 msgstr "Ishintsha Isihloko se-&brandShortName;"
 
-#: cmd.install.label
-#: cmd.install.accesskey
-msgid "I&nstall"
-msgstr "F&akela"
-
-#: cmd.install.tooltip
-msgid "Install an Extension"
-msgstr "Faka Isithasiselo segama"
-
-#: cmd.options.label
-#: cmd.options.accesskey
+#: cmd.options.label cmd.options.accesskey
 msgid "&Options"
 msgstr "&Ongakhetha Kukho"
 
@@ -75,8 +168,7 @@ msgstr "&Ongakhetha Kukho"
 msgid "Set Options for the selected Extension"
 msgstr "Hlela Okungakhethwa Kukho kwezithasiselo zamagama athile"
 
-#: cmd.optionsUnix.label
-#: cmd.optionsUnix.accesskey
+#: cmd.optionsUnix.label cmd.optionsUnix.accesskey
 msgid "P&references"
 msgstr "O&kuthandwayo"
 
@@ -84,86 +176,288 @@ msgstr "O&kuthandwayo"
 msgid "Edit Preferences for the selected Extension"
 msgstr "Lungisa Okukhethwayo Kwezithasiselo ezithile zamagama"
 
-#: cmd.homepage.label
-#: cmd.homepage.accesskey
-msgid "Visit &Home Page"
-msgstr "Iya &Ekhasini Lokuqala"
-
-#: cmd.about.label
-#: cmd.about.accesskey
-msgid "&About this Extension"
-msgstr "&Ngalesisithasiselo"
-
-#: cmd.updateAddon.label
-#: cmd.updateAddon.accesskey
-msgid "&Find Update"
-msgstr "&Thola Ukulungisa Okwenziwe"
-
-#: cmd.enable.label
-#: cmd.enable.accesskey
+#: cmd.enable.label cmd.enable.accesskey
 msgid "&Enable"
 msgstr "&Yenza Kusebenze"
 
-#: cmd.disable.label
-#: cmd.disable.accesskey
+#: cmd.enable.tooltip
+msgid "Enable this Add-on when &brandShortName; is restarted"
+msgstr ""
+
+#: cmd.disable.label cmd.disable.accesskey
 msgid "&Disable"
 msgstr "&Yenza Kungasebenzi"
 
-#: cmd.moveToTop.label
-#: cmd.moveToTop.accesskey
-msgid "Move to &Top"
-msgstr "Iya &Phezulu"
+#: cmd.disable.tooltip
+msgid "Disable this Add-on when &brandShortName; is restarted"
+msgstr ""
 
-#: cmd.moveUp.label
-#: cmd.moveUp.accesskey
-msgid "Move U&p"
-msgstr "Yisa &Phezulu"
+#: cmd.uninstall.label
+#, fuzzy
+msgid "Uninstall"
+msgstr "Khip&ha okufakelwe"
 
-#: cmd.moveDn.label
-#: cmd.moveDn.accesskey
-msgid "Move Do&wn"
-msgstr "Yisa Ph&ansi"
+#: cmd.uninstall2.accesskey
+msgid "U"
+msgstr "U"
 
-#: cmd.showFolder.label
-#: cmd.showFolder.accesskey
-msgid "Show Item &Contents…"
-msgstr "Bonisa &Okuqukethwe…"
+#: cmd.uninstall2.tooltip
+msgid "Uninstall this Add-on when &brandShortName; is restarted"
+msgstr ""
 
-#: options.tooltip
-msgid "Options"
-msgstr "Ongakhetha Kukho"
+#: cmd.cancelUninstall.label cmd.cancelUninstall.accesskey
+msgid "&Cancel Uninstall"
+msgstr ""
 
-#: optionsUnix.tooltip
-msgid "Preferences"
-msgstr "Okuthandwayo"
+#: cmd.cancelUninstall.tooltip
+msgid "Cancel the uninstall of this Add-on"
+msgstr ""
 
-#: about.tooltip
-msgid "About"
-msgstr "Mayelana"
+#: cmd.cancelInstall.label cmd.cancelInstall.accesskey
+msgid "&Cancel Install"
+msgstr ""
 
-#: homepage.tooltip
-msgid "Home Page"
-msgstr "Ikhasi Lasekhaya"
+#: cmd.cancelInstall.tooltip
+msgid "Cancel the install of this Add-on"
+msgstr ""
 
-#: installNow.label
-msgid "Update Now"
-msgstr "Lungisa Manje"
+#: cmd.cancelUpgrade.label cmd.cancelUpgrade.accesskey
+msgid "&Cancel Upgrade"
+msgstr ""
 
-#: getMoreExtensions.label
-msgid "Get More Extensions"
-msgstr "Thola Izithasiselo Ezengeziwe"
+#: cmd.cancelUpgrade.tooltip
+msgid "Cancel the upgrade of this Add-on"
+msgstr ""
 
-#: getMoreExtensions.tooltip
-msgid "Get More Extensions from addons.mozilla.org"
-msgstr "Thola Izithasiselo Ezengeziwe e-addons.mozilla.org"
+#: cmd.installUpdate.label cmd.installUpdate.accesskey
+msgid "&Install Update"
+msgstr ""
 
-#: getMoreThemes.label
-msgid "Get More Themes"
-msgstr "Thola Izihloko Ezengeziwe"
+#: cmd.installUpdate.tooltip
+msgid "Install an update for this Add-on"
+msgstr ""
 
-#: getMoreThemes.tooltip
-msgid "Get More Themes from addons.mozilla.org"
-msgstr "Thola Izihloko Ezengeziwe e- addons.mozilla.org"
+#: cmd.showUpdateInfo.label cmd.showUpdateInfo.accesskey
+msgid "&Show Information"
+msgstr ""
+
+#: cmd.showUpdateInfo.tooltip
+#, fuzzy
+msgid "Show more information about these updates"
+msgstr "Bheka okunye ukwaziswa ngalokhu kulungiswa"
+
+#: cmd.hideUpdateInfo.label cmd.hideUpdateInfo.accesskey
+#, fuzzy
+msgid "&Hide Information"
+msgstr "Ukwaziswa Okwengeziwe"
+
+#: cmd.hideUpdateInfo.tooltip
+msgid "Hide information about these updates"
+msgstr ""
+
+#: cmd.installSearchResult.label cmd.installSearchResult.accesskey
+#, fuzzy
+msgid "&Add to &brandShortName;…"
+msgstr "&Ngokuphathelene ne-&brandShortName;"
+
+#: cmd.installSearchResult.tooltip
+msgid "Download and install this add-on"
+msgstr ""
+
+#. The selected add-on's cancel action button label
+#: cancel.label cancel.accesskey
+msgctxt "cancel.label cancel.accesskey"
+msgid "&Cancel"
+msgstr "&Khansela"
+
+#: cancelInstall.label cancelInstall.accesskey
+msgctxt "cancelInstall.label cancelInstall.accesskey"
+msgid "&Cancel"
+msgstr "&Khansela"
+
+#: cancelUpgrade.label cancelUpgrade.accesskey
+msgctxt "cancelUpgrade.label cancelUpgrade.accesskey"
+msgid "&Cancel"
+msgstr "&Khansela"
+
+#. Only displayed in the selected Add-on's context menu
+#: cmd.homepage.label cmd.homepage.accesskey
+msgid "Visit &Home Page"
+msgstr "Iya &Ekhasini Lokuqala"
+
+#: cmd.about2.label
+msgid "About this Add-on"
+msgstr ""
+
+#: cmd.about.accesskey
+msgid "A"
+msgstr "N"
+
+#: cmd.checkUpdate.label cmd.checkUpdate.accesskey
+msgid "&Find Update"
+msgstr "&Thola Ukulungisa Okwenziwe"
+
+#: cmd.includeUpdate.label cmd.includeUpdate.accesskey
+msgid "I&nclude Update"
+msgstr ""
+
+#: includeUpdate.label includeUpdate.accesskey
+msgid "I&nclude this update"
+msgstr ""
+
+#: includeUpdate.tooltip
+msgid "Include this Add-on when installing the updates"
+msgstr ""
+
+#. Status Messsages
+#: insecureUpdate.label
+msgid "Does not provide secure updates."
+msgstr ""
+
+#: needsDependencies.label
+msgid "Requires additional items."
+msgstr ""
+
+#: blocklisted.label
+msgid "Disabled for your protection."
+msgstr ""
+
+#: softBlocklisted.label
+msgid "Known to cause security or stability issues."
+msgstr ""
+
+#: toBeDisabled.label
+msgid "This add-on will be disabled when &brandShortName; is restarted."
+msgstr ""
+
+#: toBeEnabled.label
+msgid "This add-on will be enabled when &brandShortName; is restarted."
+msgstr ""
+
+#: toBeInstalled.label
+msgid "This add-on will be installed when &brandShortName; is restarted."
+msgstr ""
+
+#: toBeUninstalled.label
+msgid "This add-on will be uninstalled when &brandShortName; is restarted."
+msgstr ""
+
+#: toBeUpdated.label
+msgid "This add-on will be updated when &brandShortName; is restarted."
+msgstr ""
+
+#: getExtensions.label
+#, fuzzy
+msgid "Get Extensions"
+msgstr "Izithasiselo zamagama ezindala"
+
+#: getThemes.label
+msgid "Get Themes"
+msgstr ""
+
+#: getPlugins.label
+msgid "Get Plugins"
+msgstr ""
+
+#: searchAddons.label
+msgctxt "searchAddons.label"
+msgid "Search All Add-ons"
+msgstr ""
+
+#: browseAddons.label
+msgid "Browse All Add-ons"
+msgstr ""
+
+#: searchFailed.label
+msgid "&brandShortName; couldn't retrieve add-ons"
+msgstr ""
+
+#: recommendedHeader.label
+#, fuzzy
+msgid "Recommended"
+msgstr "(okutuswayo)"
+
+#: recommendedThrobber.label
+msgid "Retrieving recommended add-ons"
+msgstr ""
+
+#: searchThrobber.label
+msgid "Searching add-ons"
+msgstr ""
+
+#: resetSearch.label
+msgid "Clear Results"
+msgstr ""
+
+#: noSearchResults.label
+msgid "All results are already installed or incompatible."
+msgstr ""
+
+#: noRecommendedResults.label
+msgid "All recommendations are already installed or incompatible."
+msgstr ""
+
+#: emptySearch.label
+msgid "No matching add-ons"
+msgstr ""
+
+#: emptySearch.button
+msgctxt "emptySearch.button"
+msgid "OK"
+msgstr "Kulungile"
+
+#: cancelSearch.button
+msgid "Cancel"
+msgstr "Khansela"
+
+#: searchFailed.button
+msgctxt "searchFailed.button"
+msgid "OK"
+msgstr "Kulungile"
+
+#: searchResultHomepage.value
+msgid "Learn More"
+msgstr ""
+
+#: searchBox.label
+msgctxt "searchBox.label"
+msgid "Search All Add-ons"
+msgstr ""
+
+#: recommendedResults.label
+msgid "See All Recommended Add-ons"
+msgstr ""
+
+#: searchResultConnecting.label
+#, fuzzy
+msgid "Connecting…"
+msgstr "&Ukuxhuma…"
+
+#: searchResultInstalling.label
+msgctxt "searchResultInstalling.label"
+msgid "Installing…"
+msgstr "Iyafakela…"
+
+#: searchResultFailed.label
+msgid "Install Failed"
+msgstr "Ukufakelwa Kuhlulekile"
+
+#: searchResultInstalled.label
+msgid "Install Complete"
+msgstr "Ukufakela Sekuphelile"
+
+#: addonTypeExtension.label
+#, fuzzy
+msgid "Extension"
+msgstr "Izithasiselo"
+
+#: addonTypeTheme.label
+msgid "Theme"
+msgstr "Isihloko"
+
+#: missingThumbnail.label
+msgid "No Preview"
+msgstr ""
 
 #: previewNoThemeSelected.label
 msgid "No Theme Selected"
@@ -173,3 +467,138 @@ msgstr "Asikho Isihloko Esikhethiwe"
 msgid "This Theme does not have a Preview Image"
 msgstr "Akunandlela Yokubona Ukuthi Lesihloko Sizobukeka Kanjani"
 
+#: moreInfo.label
+msgid "More Information"
+msgstr "Ukwaziswa Okwengeziwe"
+
+#: infoNoAddonSelected.label
+msgid "No Update Selected"
+msgstr ""
+
+#: infoNoUpdateInfo.label
+msgid "This update does not have any additional information"
+msgstr ""
+
+#: infoUpdateInfoError.label
+msgid "There was an error loading the information about this update"
+msgstr ""
+
+#: updateSuccess.label
+#, fuzzy
+msgid "Update completed successfully."
+msgstr "Ukufakwa kokwaziswa kuqedwe ngempumelelo"
+
+#: installSuccess.label
+#, fuzzy
+msgid "Install completed successfully."
+msgstr "Ukufakwa kokwaziswa kuqedwe ngempumelelo"
+
+#: installSuccessRestart.label
+msgid "Restart to complete the installation."
+msgstr ""
+
+#: updateSuccessRestart.label
+msgid "Restart to complete the update."
+msgstr ""
+
+#: installWaiting.label
+msgid "Waiting…"
+msgstr "Lindile…"
+
+#: installIncompatibleUpdate.label
+msgid "Checking compatibility…"
+msgstr ""
+
+#: installFinishing.label
+msgctxt "installFinishing.label"
+msgid "Installing…"
+msgstr "Iyafakela…"
+
+#: installFailure.label
+#, fuzzy
+msgid "Install failed."
+msgstr "Ukufakelwa Kuhlulekile"
+
+#: progressStatus.label
+#, fuzzy
+msgid "Checking For Updates"
+msgstr "Ihlola Okufakwe Muva"
+
+#: eula.title
+msgid "End-User License Agreement"
+msgstr ""
+
+#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
+#: eula.width
+msgid "560px"
+msgstr ""
+
+#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
+#: eula.height
+msgid "400px"
+msgstr "400px"
+
+#: eula.accept
+msgid "Accept and Install…"
+msgstr ""
+
+#: blocklist.blocked.label
+#, fuzzy
+msgid "Blocked"
+msgstr "khiyiwe"
+
+#: blocklist.checkbox.label
+#, fuzzy
+msgid "Disable"
+msgstr "&Yenza Kungasebenzi"
+
+#~ msgid "Uninstalls the selected Extension"
+#~ msgstr "Khipha Isithasiselo segama esifakiwe"
+
+#~ msgid "Find &Updates"
+#~ msgstr "Thola &Lungisa"
+
+#~ msgid "Install an Extension"
+#~ msgstr "Faka Isithasiselo segama"
+
+#~ msgid "&About this Extension"
+#~ msgstr "&Ngalesisithasiselo"
+
+#~ msgid "Move to &Top"
+#~ msgstr "Iya &Phezulu"
+
+#~ msgid "Move U&p"
+#~ msgstr "Yisa &Phezulu"
+
+#~ msgid "Move Do&wn"
+#~ msgstr "Yisa Ph&ansi"
+
+#~ msgid "Show Item &Contents…"
+#~ msgstr "Bonisa &Okuqukethwe…"
+
+#~ msgid "Options"
+#~ msgstr "Ongakhetha Kukho"
+
+#~ msgid "Preferences"
+#~ msgstr "Okuthandwayo"
+
+#~ msgid "About"
+#~ msgstr "Mayelana"
+
+#~ msgid "Home Page"
+#~ msgstr "Ikhasi Lasekhaya"
+
+#~ msgid "Update Now"
+#~ msgstr "Lungisa Manje"
+
+#~ msgid "Get More Extensions"
+#~ msgstr "Thola Izithasiselo Ezengeziwe"
+
+#~ msgid "Get More Extensions from addons.mozilla.org"
+#~ msgstr "Thola Izithasiselo Ezengeziwe e-addons.mozilla.org"
+
+#~ msgid "Get More Themes"
+#~ msgstr "Thola Izihloko Ezengeziwe"
+
+#~ msgid "Get More Themes from addons.mozilla.org"
+#~ msgstr "Thola Izihloko Ezengeziwe e- addons.mozilla.org"
