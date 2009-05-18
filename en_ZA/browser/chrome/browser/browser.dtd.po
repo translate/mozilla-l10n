@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-13 11:19+0200\n"
+"POT-Creation-Date: 2009-03-24 13:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,8 +11,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.1.1rc3\n"
+"X-Generator: Translate Toolkit 1.3.0\n"
 "X-Accelerator-Marker: &\n"
+
+#. This will be appended to the window's title
+#. inside the private browsing mode
+#: mainWindow.titlePrivateBrowsingSuffix
+msgid "(Private Browsing)"
+msgstr ""
+
+#. LOCALIZATION NOTE (mainWindowPrivateBrowsing.titlemodifier): DONT_TRANSLATE
+#: mainWindow.titlemodifierPrivateBrowsing
+msgid "&mainWindow.titlemodifier; &mainWindow.titlePrivateBrowsingSuffix;"
+msgstr ""
 
 #: tabCmd.label tabCmd.accesskey
 msgid "New &Tab"
@@ -31,6 +42,7 @@ msgid "&Open File…"
 msgstr "&Open File…"
 
 #: openFileCmd.commandkey
+msgctxt "openFileCmd.commandkey"
 msgid "o"
 msgstr "o"
 
@@ -146,14 +158,19 @@ msgctxt "addCurPagesCmd.label"
 msgid "Bookmark All Tabs…"
 msgstr "Bookmark All Tabs…"
 
-#: showAllBookmarksCmd2.label
-msgid "Organize Bookmarks"
+#: organizeBookmarks.label
+#, fuzzy
+msgid "Organize Bookmarks…"
 msgstr "Organize Bookmarks"
 
 #: bookmarkAllCmd.label
 msgctxt "bookmarkAllCmd.label"
 msgid "Bookmark All Tabs…"
 msgstr "Bookmark All Tabs…"
+
+#: bookmarksToolbarChevron.tooltip
+msgid "Show more bookmarks"
+msgstr ""
 
 #: backCmd.label backCmd.accesskey
 msgid "&Back"
@@ -170,6 +187,11 @@ msgstr "&Forward"
 #: forwardButton.tooltip
 msgid "Go forward one page"
 msgstr "Go forward one page"
+
+#: backForwardMenu.tooltip
+#, fuzzy
+msgid "Recent pages"
+msgstr "Recent Pages"
 
 #: reloadCmd.label reloadCmd.accesskey
 msgid "&Reload"
@@ -243,6 +265,14 @@ msgstr "B"
 #: bookmarksSidebarCmd.commandkey
 msgid "b"
 msgstr "b"
+
+#. This command
+#. -  key should not contain the letters A-F, since these are reserved
+#. -  shortcut keys on Linux.
+#: bookmarksSidebarGtkCmd.commandkey
+msgctxt "bookmarksSidebarGtkCmd.commandkey"
+msgid "o"
+msgstr "o"
 
 #: bookmarksSidebarWinCmd.commandkey
 msgctxt "bookmarksSidebarWinCmd.commandkey"
@@ -395,9 +425,23 @@ msgstr "&Options…"
 msgid "Prefere&nces"
 msgstr "Prefere&nces"
 
-#: clearPrivateDataCmd.label clearPrivateDataCmd.accesskey
-msgid "Clear &Private Data"
-msgstr "Clear &Private Data"
+#: clearRecentHistoryCmd.label clearRecentHistoryCmd.accesskey
+msgid "Clear Recent &History"
+msgstr ""
+
+#. LOCALIZATION NOTE : These two strings can share an access key beause they never appear together on the menu
+#: privateBrowsingCmd.start.label privateBrowsingCmd.start.accesskey
+msgid "Start &Private Browsing"
+msgstr ""
+
+#: privateBrowsingCmd.stop.label privateBrowsingCmd.stop.accesskey
+msgid "Stop &Private Browsing"
+msgstr ""
+
+#: privateBrowsingCmd.commandkey
+msgctxt "privateBrowsingCmd.commandkey"
+msgid "P"
+msgstr "P"
 
 #: viewMenu.label viewMenu.accesskey
 msgid "&View"
@@ -423,6 +467,11 @@ msgstr "Hi&story"
 msgid "Recently Closed Tabs"
 msgstr "Recently Closed Tabs"
 
+#. LOCALIZATION NOTE (historyUndoWindowMenu): see bug 394759
+#: historyUndoWindowMenu.label
+msgid "Recently Closed Windows"
+msgstr ""
+
 #: historyHomeCmd.label
 msgctxt "historyHomeCmd.label"
 msgid "Home"
@@ -441,8 +490,27 @@ msgid "l"
 msgstr "l"
 
 #: urlbar.emptyText
+msgctxt "urlbar.emptyText"
 msgid "Search Bookmarks and History"
 msgstr "Search Bookmarks and History"
+
+#: urlbar.bookmarkhistory.emptyText
+msgctxt "urlbar.bookmarkhistory.emptyText"
+msgid "Search Bookmarks and History"
+msgstr "Search Bookmarks and History"
+
+#: urlbar.bookmark.emptyText
+#, fuzzy
+msgid "Search Bookmarks"
+msgstr "&Search in Bookmarks…"
+
+#: urlbar.history.emptyText
+msgid "Search History"
+msgstr ""
+
+#: urlbar.none.emptyText
+msgid "Type a Web address"
+msgstr ""
 
 #: urlbar.accesskey
 msgctxt "urlbar.accesskey"
@@ -513,6 +581,8 @@ msgstr "View Selection Source"
 msgid "View MathML Source"
 msgstr "View MathML Source"
 
+#. This accesskey is used for both
+#. viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label
 #: viewPartialSourceCmd.accesskey
 msgctxt "viewPartialSourceCmd.accesskey"
 msgid "e"
@@ -534,13 +604,18 @@ msgstr "View Page &Info"
 msgid "View Frame &Info"
 msgstr "View Frame &Info"
 
-#: showImageCmd.label showImageCmd.accesskey
-msgid "&Show Image"
-msgstr "&Show Image"
+#: reloadImageCmd.label reloadImageCmd.accesskey
+#, fuzzy
+msgid "&Reload Image"
+msgstr "&Reload Frame"
 
 #: viewImageCmd.label viewImageCmd.accesskey
 msgid "View &Image"
 msgstr "View &Image"
+
+#: viewVideoCmd.label viewVideoCmd.accesskey
+msgid "V&iew Video"
+msgstr ""
 
 #: viewBGImageCmd.label viewBGImageCmd.accesskey
 msgid "Vie&w Background Image"
@@ -572,6 +647,7 @@ msgstr "Save Page &As…"
 
 #. alternate for content area context menu
 #: savePageCmd.accesskey2
+msgctxt "savePageCmd.accesskey2"
 msgid "P"
 msgstr "P"
 
@@ -600,9 +676,25 @@ msgstr "Sen&d Link…"
 msgid "Sa&ve Image As…"
 msgstr "Sa&ve Image As…"
 
+#: saveVideoCmd.label saveVideoCmd.accesskey
+msgid "Save &Video As…"
+msgstr ""
+
+#: saveAudioCmd.label saveAudioCmd.accesskey
+msgid "Sa&ve Audio As…"
+msgstr ""
+
 #: sendImageCmd.label sendImageCmd.accesskey
 msgid "Se&nd Image…"
 msgstr "Se&nd Image…"
+
+#: sendVideoCmd.label sendVideoCmd.accesskey
+msgid "Se&nd Video…"
+msgstr ""
+
+#: sendAudioCmd.label sendAudioCmd.accesskey
+msgid "Se&nd Audio…"
+msgstr ""
 
 #: copyLinkCmd.label copyLinkCmd.accesskey
 msgid "Copy Link Loc&ation"
@@ -619,6 +711,16 @@ msgstr "C&opy Image Location"
 #: copyImageContentsCmd.label copyImageContentsCmd.accesskey
 msgid "Cop&y Image"
 msgstr "Cop&y Image"
+
+#: copyVideoURLCmd.label copyVideoURLCmd.accesskey
+#, fuzzy
+msgid "C&opy Video Location"
+msgstr "C&opy Image Location"
+
+#: copyAudioURLCmd.label copyAudioURLCmd.accesskey
+#, fuzzy
+msgid "C&opy Audio Location"
+msgstr "C&opy Image Location"
 
 #: blockImageCmd.accesskey
 msgctxt "blockImageCmd.accesskey"
@@ -637,6 +739,36 @@ msgstr "Copy &Email Address"
 msgid "T&his Frame"
 msgstr "T&his Frame"
 
+#. Media (video/audio) controls
+#: mediaPlay.label mediaPlay.accesskey
+msgid "&Play"
+msgstr ""
+
+#: mediaPause.label mediaPause.accesskey
+msgid "&Pause"
+msgstr "&Pause"
+
+#: mediaMute.label mediaMute.accesskey
+msgid "&Mute"
+msgstr ""
+
+#: mediaUnmute.label mediaUnmute.accesskey
+msgid "Un&mute"
+msgstr ""
+
+#: mediaShowControls.label mediaShowControls.accesskey
+msgid "Show &Controls"
+msgstr ""
+
+#: mediaHideControls.label mediaHideControls.accesskey
+msgid "Hide &Controls"
+msgstr ""
+
+#. LOCALIZATION NOTE :
+#. fullZoomEnlargeCmd.commandkey3, fullZoomReduceCmd.commandkey2 and
+#. fullZoomResetCmd.commandkey2 are alternative acceleration keys for zoom.
+#. If shift key is needed with your locale popular keyboard for them,
+#. you can use these alternative items. Otherwise, their values should be empty.
 #: fullZoomEnlargeCmd.label fullZoomEnlargeCmd.accesskey
 msgid "Zoom &In"
 msgstr "Zoom &In"
@@ -650,6 +782,10 @@ msgstr "+"
 msgid "="
 msgstr "="
 
+#: fullZoomEnlargeCmd.commandkey3
+msgid "_: fullZoomEnlargeCmd.commandkey3\n"
+msgstr ""
+
 #: fullZoomReduceCmd.label fullZoomReduceCmd.accesskey
 msgid "Zoom &Out"
 msgstr "Zoom &Out"
@@ -658,13 +794,13 @@ msgstr "Zoom &Out"
 msgid "-"
 msgstr "-"
 
-#: fullZoomResetCmd.commandkey
-msgid "0"
-msgstr "0"
-
 #: fullZoomResetCmd.label fullZoomResetCmd.accesskey
 msgid "&Reset"
 msgstr "&Reset"
+
+#: fullZoomResetCmd.commandkey
+msgid "0"
+msgstr "0"
 
 #: fullZoomToggleCmd.label fullZoomToggleCmd.accesskey
 msgid "Zoom &Text Only"
@@ -812,9 +948,9 @@ msgstr "Done"
 msgid "Cancel"
 msgstr "Cancel"
 
-#: editBookmark.removeBookmark.label editBookmark.removeBookmark.accessKey
-msgid "&Remove Bookmark"
-msgstr "&Remove Bookmark"
+#: editBookmark.removeBookmark.accessKey
+msgid "R"
+msgstr "R"
 
 #: editBookmark.undo.label editBookmark.undo.accessKey
 msgctxt "editBookmark.undo.label editBookmark.undo.accessKey"
@@ -854,6 +990,19 @@ msgstr "More Information"
 msgid "Click to open downloads window"
 msgstr "Click to open downloads window"
 
+#: ctrlTab.search.emptyText
+msgid "Search Tabs"
+msgstr ""
+
+#~ msgid "Clear &Private Data"
+#~ msgstr "Clear &Private Data"
+
+#~ msgid "&Show Image"
+#~ msgstr "&Show Image"
+
+#~ msgid "&Remove Bookmark"
+#~ msgstr "&Remove Bookmark"
+
 #~ msgid "Source for: "
 #~ msgstr "Source for: "
 
@@ -868,9 +1017,6 @@ msgstr "Click to open downloads window"
 
 #~ msgid "Bookmark All &Tabs…"
 #~ msgstr "Bookmark All &Tabs…"
-
-#~ msgid "&Search in Bookmarks…"
-#~ msgstr "&Search in Bookmarks…"
 
 #~ msgid "Go"
 #~ msgstr "Go"
