@@ -41,7 +41,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-07 11:12+0200\n"
+"POT-Creation-Date: 2009-10-30 13:04+0200\n"
 "PO-Revision-Date: 2007-10-08 15:00+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.0.2\n"
+"X-Generator: Translate Toolkit 1.4.1\n"
 "X-Accelerator-Marker: &\n"
 
 #. #
@@ -64,26 +64,26 @@ msgid "%S, %S"
 msgstr "%S, %S"
 
 #: firstLastFormat
-msgid "%S %S"
-msgstr "%S %S"
+msgid "%S %S  "
+msgstr ""
 
-#: newCardTitle
-msgid "New Card"
-msgstr "Nuwe kaart"
+#: newContactTitle
+msgid "New Contact"
+msgstr ""
 
-#. # %S will be the card's display name
-#: newCardTitleWithDisplayName
-msgid "New Card for %S"
-msgstr "Nuwe kaart vir %S"
+#. # %S will be the contact's display name
+#: newContactTitleWithDisplayName
+msgid "New Contact for %S"
+msgstr ""
 
-#: editCardTitle
-msgid "Edit Card"
-msgstr "Redigeer kaart"
+#: editContactTitle
+msgid "Edit Contact"
+msgstr ""
 
-#. # %S will be the card's display name
-#: editCardTitleWithDisplayName
-msgid "Edit Card for %S"
-msgstr "Redigeer kaart vir %S"
+#. # %S will be the contact's display name
+#: editContactTitleWithDisplayName
+msgid "Edit Contact for %S"
+msgstr ""
 
 #. # don't translate vCard
 #: editVCardTitle
@@ -116,10 +116,6 @@ msgstr "Die primêre e-posadres moet in die vorm gebruiker@gasheer wees."
 msgid "Incorrect Email Address Format"
 msgstr "Verkeerde e-posadresformaat"
 
-#: viewCardTitle
-msgid "Card for %S"
-msgstr "Kaart vir %S"
-
 #: viewListTitle
 msgid "Mailing List: %S"
 msgstr "Poslys: %S"
@@ -135,10 +131,6 @@ msgstr ""
 "'n Poslys met daardie naam bestaan reeds. Gebruik asseblief 'n ander naam."
 
 #. # used in the addressbook
-#: cannotDeleteTitle
-msgid "Delete Failed"
-msgstr "Kon nie skrap nie"
-
 #: confirmDeleteMailingListTitle
 msgid "Delete Mailing List"
 msgstr "Skrap poslys"
@@ -163,8 +155,10 @@ msgstr ""
 msgid "Are you sure you want to delete the selected mailing list?"
 msgstr "Is u seker u wil die geselekteerde poslys skrap?"
 
-#: confirmDeleteListsAndCards
-msgid "Are you sure you want to delete the selected cards and mailing lists?"
+#: confirmDeleteListsAndContacts
+#, fuzzy
+msgid ""
+"Are you sure you want to delete the selected contacts and mailing lists?"
 msgstr "Is u seker u wil die geselekteerde kaarte en poslyste skrap?"
 
 #: confirmDeleteMailingLists
@@ -217,6 +211,10 @@ msgstr "Selfoon"
 msgid "Pager"
 msgstr "Roeper"
 
+#: propertyBirthday
+msgid "Birthday"
+msgstr ""
+
 #: propertyCustom1
 msgid "Custom 1"
 msgstr "Doelmaak 1"
@@ -232,6 +230,15 @@ msgstr "Doelmaak 3"
 #: propertyCustom4
 msgid "Custom 4"
 msgstr "Doelmaak 4"
+
+#. ## LOCALIZATION NOTE (dateformat)
+#. ## Only used if the year isn't present and should be in the format used by Date.toLocaleFormat
+#. ## see http://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Global_Objects/Date/toLocaleFormat
+#. ## %B is the month's localized name and %e is the day of the month [1-31]
+#. ## Separators (a space, dash, etc.) can be used
+#: dateformat
+msgid "%B %e"
+msgstr ""
 
 #. ## LOCALIZATION NOTE (cityAndStateAndZip): 
 #. ## %1$S is city, %2$S is state, %3$S is zip
@@ -251,14 +258,9 @@ msgstr "%1$S, %2$S"
 msgid "%1$S %2$S"
 msgstr "%1$S %2$S"
 
-#: cityStateSeparator
-msgid ","
-msgstr ","
-
 #: stateZipSeparator
+msgctxt "stateZipSeparator"
 msgid ""
-"_: stateZipSeparator\n"
-""
 msgstr ""
 
 #: prefixTo
@@ -273,14 +275,13 @@ msgstr "CC"
 msgid "Bcc"
 msgstr "BCC"
 
-#: emptyEmailCard
-msgid "Please remove the following cards with no email address :"
-msgstr ""
-"Verwyder asseblief die volgende kaarte wat geen e-posadresse bevat nie:"
-
 #: addressBook
 msgid "Address Book"
 msgstr "Adresboek"
+
+#: browsePhoto
+msgid "Contact Photo"
+msgstr ""
 
 #. # mailnews.js
 #: ldap_2.servers.pab.description
@@ -291,11 +292,17 @@ msgstr "Persoonlike adresboek"
 msgid "Collected Addresses"
 msgstr "Versamelde adresse"
 
+#. ## LOCALIZATION NOTE (ldap_2.servers.osx.description is only used on Mac OS X)
+#: ldap_2.servers.osx.description
+msgid "Mac OS X Address Book"
+msgstr ""
+
 #. # status bar stuff
-#. ## LOCALIZATION NOTE (totalCardStatus): 
-#. ## %1$S is address book name, %2$S is card count
-#: totalCardStatus
-msgid "Total Cards in %1$S: %2$S"
+#. ## LOCALIZATION NOTE (totalContactStatus):
+#. ## %1$S is address book name, %2$S is contact count
+#: totalContactStatus
+#, fuzzy
+msgid "Total contacts in %1$S: %2$S"
 msgstr "Totale kaarte in %1$S: %2$S"
 
 #. ## LOCALIZATION NOTE (matchesFound):  do not localize %S
@@ -311,27 +318,21 @@ msgstr "1 resultaat gevind"
 msgid "%S matches found"
 msgstr "%S resultate gevind"
 
-#: cardsCopied
-msgid "%S cards copied"
-msgstr "%S kaarte gekopieer"
+#. ## LOCALIZATION NOTE (contactsCopied): Semi-colon list of plural forms
+#. ## %1$S is the number of contacts that were copied. This should be used multiple
+#. ## times wherever you need it. Do not replace by %S.
+#: contactsCopied
+msgid "%1$S contact copied;%1$S contacts copied"
+msgstr ""
 
-#: cardCopied
-msgid "1 card copied"
-msgstr "1 kaart gekopieer"
-
-#: cardsMoved
-msgid "%S cards moved"
-msgstr "%S kaarte verskuif"
-
-#: cardMoved
-msgid "1 card moved"
-msgstr "1 kaart verskuif"
+#. ## LOCALIZATION NOTE (contactsMoved): Semi-colon list of plural forms
+#. ## %1$S is the number of contacts that were moved. This should be used multiple
+#. ## times wherever you need it. Do not replace by %S.
+#: contactsMoved
+msgid "%1$S contact moved;%1$S contacts moved"
+msgstr ""
 
 #. # LDAP directory stuff
-#: directoriesListItemNone
-msgid "None"
-msgstr "Geen"
-
 #: invalidName
 msgid "Please enter a valid Name."
 msgstr "Tik 'n geldige naam in."
@@ -401,10 +402,6 @@ msgid "Join+me+in+this+Chat."
 msgstr "Sluit+by+my+aan+in+hierdie+kletskamer."
 
 #. # For printing
-#: headingCardFor
-msgid "Card for"
-msgstr "Kaart vir"
-
 #: headingHome
 msgctxt "headingHome"
 msgid "Home"
@@ -467,6 +464,52 @@ msgid ""
 msgstr ""
 "Kon nie adresboeklêer %S laai nie. Dalk is dit 'n leesalleenlêer, of dalk "
 "word dit deur 'n ander program beset. Probeer later weer."
+
+#~ msgid "%S %S"
+#~ msgstr "%S %S"
+
+#~ msgid "New Card"
+#~ msgstr "Nuwe kaart"
+
+#~ msgid "New Card for %S"
+#~ msgstr "Nuwe kaart vir %S"
+
+#~ msgid "Edit Card"
+#~ msgstr "Redigeer kaart"
+
+#~ msgid "Edit Card for %S"
+#~ msgstr "Redigeer kaart vir %S"
+
+#~ msgid "Card for %S"
+#~ msgstr "Kaart vir %S"
+
+#~ msgid "Delete Failed"
+#~ msgstr "Kon nie skrap nie"
+
+#~ msgid ","
+#~ msgstr ","
+
+#~ msgid "Please remove the following cards with no email address :"
+#~ msgstr ""
+#~ "Verwyder asseblief die volgende kaarte wat geen e-posadresse bevat nie:"
+
+#~ msgid "%S cards copied"
+#~ msgstr "%S kaarte gekopieer"
+
+#~ msgid "1 card copied"
+#~ msgstr "1 kaart gekopieer"
+
+#~ msgid "%S cards moved"
+#~ msgstr "%S kaarte verskuif"
+
+#~ msgid "1 card moved"
+#~ msgstr "1 kaart verskuif"
+
+#~ msgid "None"
+#~ msgstr "Geen"
+
+#~ msgid "Card for"
+#~ msgstr "Kaart vir"
 
 #~ msgid "LDIF (*.ldi,*.ldif)"
 #~ msgstr "LDIF (*.ldi,*.ldif)"

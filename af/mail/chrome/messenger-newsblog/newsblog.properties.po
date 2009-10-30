@@ -1,10 +1,9 @@
-#. # Status strings used in the subscribe dialog
 #. extracted from en-US/mail/chrome/messenger-newsblog/newsblog.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-07 11:12+0200\n"
+"POT-Creation-Date: 2009-10-30 13:04+0200\n"
 "PO-Revision-Date: 2007-10-08 15:00+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,23 +11,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"X-Generator: Translate Toolkit 1.4.1\n"
 "X-Accelerator-Marker: &\n"
 
-#: subscribe-validating
-msgid "Verifying the RSS feed..."
-msgstr "Verifieer tans die RSS-nuusvoer..."
+#: subscribe-validating-feed
+msgid "Verifying the feed…"
+msgstr ""
 
 #: subscribe-cancelSubscription
 msgid "Are you sure you wish to cancel subscribing to the current feed?"
 msgstr "Is u seker u wil die intekening op die huidige nuusvoer kanselleer?"
 
 #: subscribe-cancelSubscriptionTitle
-msgid "Subscribing to a Feed..."
+#, fuzzy
+msgid "Subscribing to a Feed…"
 msgstr "Teken tans in op 'n nuusvoer..."
 
-#: subscribe-noFeedSelected
-msgid "<no RSS feed selected>"
+#: subscribe-noFeedIsSelected
+#, fuzzy
+msgid "<no feed selected>"
 msgstr "<geen RSS-nuusvoer gekies nie>"
 
 #: subscribe-feedAlreadySubscribed
@@ -47,15 +48,17 @@ msgstr "Kies OPML-lêer om in te voer"
 msgid "Export feeds as an OPML file"
 msgstr "Voer nuusvoer uit as 'n OPML-lêer"
 
-#: subscribe-OPMLExportFileTitle
-msgid "Thunderbird OPML Export"
-msgstr "Thunderbird-OPML-uitvoer"
+#. ## LOCALIZATION NOTE(subscribe-OPMLExportFileDialogTitle): %S is the brandShortName
+#: subscribe-OPMLExportFileDialogTitle
+msgid "%S OPML Export"
+msgstr ""
 
-#: subscribe-OPMLExportFileName
-msgid "MyThunderbirdFeeds.opml"
-msgstr "MyThunderbirdFeeds.opml"
+#. ## LOCALIZATION NOTE(subscribe-OPMLExportDefaultFileName): %S is the brandShortName
+#: subscribe-OPMLExportDefaultFileName
+msgid "My%SFeeds.opml"
+msgstr ""
 
-#. #LOCALIZATION NOTE: %S is the name of the OPML file the user tried to import.
+#. ## LOCALIZATION NOTE(subscribe-errorInvalidOPMLFile): %S is the name of the OPML file the user tried to import.
 #: subscribe-errorInvalidOPMLFile
 msgid ""
 "Either %S is not a valid OPML file or there was an error importing the file."
@@ -65,12 +68,12 @@ msgstr "%S is nie 'n geldige OPML-lêer nie, of kon nie die lêer invoer nie."
 msgid "OPML Files"
 msgstr "OPML-lêers"
 
-#. #LOCALIZATION NOTE: %S is the name of the feed the user wants to unsubscribe from.
-#: subsribe-confirmFeedDeletionTitle
+#: subscribe-confirmFeedDeletionTitle
 msgid "Remove Feed"
 msgstr "Verwyder nuusvoer"
 
-#: subsribe-confirmFeedDeletion
+#. ## LOCALIZATION NOTE(subscribe-confirmFeedDeletion): %S is the name of the feed the user wants to unsubscribe from.
+#: subscribe-confirmFeedDeletion
 msgid ""
 "Are you sure you want to unsubscribe from the feed: \n"
 " %S?"
@@ -78,26 +81,52 @@ msgstr ""
 "Is u seker dat u van die nuusvoer wil afteken? \n"
 " %S?"
 
-#. # when downloading new feed items from the subscribe dialog. 
-#. # LOCALIZATION NOTE: Do not translate %d in the following line.
-#. # The first %S will receive the number of messages received so far;
-#. # the second %S will receive the total number of messages
-#: subscribe-fetchingFeedItems
-msgid "Downloading feed articles (%S of %S)"
+#. ## LOCALIZATION NOTE(subscribe-gettingFeedItems):
+#. ##  - The first %S is the number of articles processed so far;
+#. ##  - The second %S is the total number of items
+#: subscribe-gettingFeedItems
+#, fuzzy
+msgid "Downloading feed articles (%S of %S)…"
 msgstr "Laai tans nuusvoerartikels af (%S of %S)"
 
 #: newsblog-noNewArticlesForFeed
 msgid "There are no new articles for this feed."
 msgstr "Daar is geen nuwe artikels vir hierdie nuusvoer nie."
 
+#: newsblog-networkErrorTitle
+msgid "Network Error"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(newsblog-networkError): %S is the feed URL
 #: newsblog-networkError
 msgid "%S could not be found. Please check the name and try again."
 msgstr "%S kon nie gevind word nie. Kontroleer die naam en probeer weer."
 
-#: newsblog-invalidFeed
-msgid "%S is not a valid RSS feed."
+#: newsblog-feedNotValidTitle
+msgid "Invalid Feed"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(newsblog-feedNotValid): %S is the feed URL
+#: newsblog-feedNotValid
+#, fuzzy
+msgid "%S is not a valid feed."
 msgstr "%S is nie 'n geldige RSS-nuusvoer nie."
 
-#: newsblog-getNewMailCheck
-msgid "Checking RSS feeds for new items"
+#: newsblog-getNewMsgsCheck
+#, fuzzy
+msgid "Checking feeds for new items…"
 msgstr "Kontroleer tans RSS-nuusvoer vir nuwe items"
+
+#. ## LOCALIZATION NOTE(feeds-accountname): This string should be the same as feeds.accountName in am-newsblog.dtd
+#: feeds-accountname
+msgid "Blogs & News Feeds"
+msgstr ""
+
+#~ msgid "Verifying the RSS feed..."
+#~ msgstr "Verifieer tans die RSS-nuusvoer..."
+
+#~ msgid "Thunderbird OPML Export"
+#~ msgstr "Thunderbird-OPML-uitvoer"
+
+#~ msgid "MyThunderbirdFeeds.opml"
+#~ msgstr "MyThunderbirdFeeds.opml"

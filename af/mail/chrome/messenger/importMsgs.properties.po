@@ -19,6 +19,7 @@
 #. # the Initial Developer. All Rights Reserved.
 #. #
 #. # Contributor(s):
+#. #     Jeff Beckley <beckley@qualcomm.com>
 #. #
 #. # Alternatively, the contents of this file may be used under the terms of
 #. # either the GNU General Public License Version 2 or later (the "GPL"), or
@@ -38,7 +39,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-08-07 11:12+0200\n"
+"POT-Creation-Date: 2009-10-30 13:04+0200\n"
 "PO-Revision-Date: 2007-10-08 15:00+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,13 +47,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.0.1\n"
+"X-Generator: Translate Toolkit 1.4.1\n"
 "X-Accelerator-Marker: &\n"
 
-#. #
 #. # The following are used by the import code to display status/error 
 #. # and informational messages
-#. #
 #. # Success message when no address books are found to import
 #. ## @name IMPORT_NO_ADDRBOOKS
 #. ## @loc None
@@ -60,7 +59,7 @@ msgstr ""
 msgid "No address books were found to import."
 msgstr "Geen adresboeke is gevind om in te voer nie."
 
-#. # Error: Address book import not intialized\t\t
+#. # Error: Address book import not intialized		
 #. ## @name IMPORT_ERROR_AB_NOTINITIALIZED
 #. ## @loc None
 #: 2001
@@ -89,7 +88,7 @@ msgstr "KOn nie %S invoer nie: kon nie adresbeoek skep nie."
 msgid "No mailboxes were found to import"
 msgstr "Geen posbusse is gevind om in te voer nie"
 
-#. # Error: Mailbox import not intialized\t\t
+#. # Error: Mailbox import not intialized		
 #. ## @name IMPORT_ERROR_MB_NOTINITIALIZED
 #. ## @loc None
 #: 2005
@@ -385,36 +384,18 @@ msgid "Custom 4"
 msgstr "Doelmaak 4"
 
 #. # Description: Address book field name
-#. ## @name IMPORT_FIELD_DESC_END
+#. ## @name IMPORT_FIELD_DESC
 #. ## @loc None
 #: 2135
 msgid "Notes"
 msgstr "Aantekeninge"
 
-#. # Description: Strings for the import dialog
-#: ImportMailDialogTitle
-msgid "Import Mail"
-msgstr "Pos invoer"
-
-#: ImportAddressBooksDialogTitle
-msgid "Import Address Books"
-msgstr "Adresboeke invoer"
-
-#: ImportSettingsDialogTitle
-msgid "Import Settings"
-msgstr "Invoeropstelling"
-
-#: ImportMailListLabel
-msgid "Select application to import mail from:"
-msgstr "Kies toepassing om van pos in te voer:"
-
-#: ImportAddressBooksListLabel
-msgid "Select address book format:"
-msgstr "Kies die adresboekformaat:"
-
-#: ImportSettingsListLabel
-msgid "Select application to import settings from:"
-msgstr "Kies toepassing om van opstelling in te voer:"
+#. # Description: Address book field name
+#. ## @name IMPORT_FIELD_DESC_END
+#. ## @loc None
+#: 2136
+msgid "Screen Name"
+msgstr ""
 
 #. #Error strings
 #: ImportAlreadyInProgress
@@ -468,12 +449,12 @@ msgstr ""
 msgid "Can't import empty address book %S."
 msgstr "Kan nie leë adresboek %S invoer nie."
 
-#. # LOCALIZATION NOTE : Do not translate the word "%S" below.
+#. # LOCALIZATION NOTE: Do not translate the word "%S" below.
 #: ImportMailFailed
 msgid "An error occurred importing mail from %S"
 msgstr "Kon nie pos van %S invoer nie"
 
-#. # LOCALIZATION NOTE : Do not translate the word "%S" below.
+#. # LOCALIZATION NOTE: Do not translate the word "%S" below.
 #: ImportMailSuccess
 msgid "Mail was successfully imported from %S"
 msgstr "Pos is suksesvol van %S af ingevoer"
@@ -501,15 +482,30 @@ msgstr "Kon nie adresse van %S invoer nie."
 msgid "Addresses successfully imported from %S."
 msgstr "Adresse is suksesvol van %S af ingevoer."
 
+#. # Error string for filters import
+#: ImportFiltersBadModule
+#, fuzzy
+msgid "Unable to load filters import module."
+msgstr "Kon nie posinvoermodule laai nie"
+
+#. # LOCALIZATION NOTE : The %S will get replaced by the name of the import module.
+#: ImportFiltersFailed
+#, fuzzy
+msgid "An error occurred importing filters from %S."
+msgstr "Kon nie adresse van %S invoer nie."
+
+#. # LOCALIZATION NOTE : The %S will get replaced by the name of the import module.
+#: ImportFiltersSuccess
+#, fuzzy
+msgid "Filters successfully imported from %S."
+msgstr "Pos is suksesvol van %S af ingevoer"
+
+#. # LOCALIZATION NOTE : The %S will get replaced by the name of the import module.
+#: ImportFiltersPartial
+msgid "Filters partially imported from %S.  Warnings below:"
+msgstr ""
+
 #. #Progress strings
-#: MailProgressTitle
-msgid "Importing Mail"
-msgstr "Voer tans pos in"
-
-#: AddrProgressTitle
-msgid "Importing Address Books"
-msgstr "Voer tans adresboeke in"
-
 #. # LOCALIZATION NOTE : Do not translate the word "%S" below.
 #: MailProgressMeterText
 msgid "Converting mailboxes from %S"
@@ -550,23 +546,15 @@ msgstr "Communicator 4.x"
 msgid "Communicator Address Book files (*.na2)"
 msgstr "Communicator-adresboeklêers (*.na2)"
 
-#: HomeButtonDesc
-msgid "Home"
-msgstr "Huis"
-
-#: WorkButtonDesc
-msgid "Work"
-msgstr "Werk"
-
 #. # Folder Names for imported Mail
 #: DefaultFolderName
 msgid "Imported Mail"
 msgstr "Ingevoerde pos"
 
 #. # LOCALIZATION NOTE: Do not translate the word "%S" below.
-#: ModuleFolderName
-msgid "%S Mail"
-msgstr "%S pos"
+#: ImportModuleFolderName
+msgid "%S Import"
+msgstr ""
 
 #. # LOCALIZATION NOTE : "Communicator 4.x" is the used for previous versions of Netscape Communicator
 #. # Please translate using the brandname in respective languages for Netscape Communicator 4 releases.
@@ -578,3 +566,36 @@ msgstr "Communicator 4.x-profiele"
 #: profileText
 msgid "Choose the profile that contains the Local Mail you want to import:"
 msgstr "Kies die profiel wat die plaaslike pos bevat wat u wil invoer:"
+
+#~ msgid "Import Mail"
+#~ msgstr "Pos invoer"
+
+#~ msgid "Import Address Books"
+#~ msgstr "Adresboeke invoer"
+
+#~ msgid "Import Settings"
+#~ msgstr "Invoeropstelling"
+
+#~ msgid "Select application to import mail from:"
+#~ msgstr "Kies toepassing om van pos in te voer:"
+
+#~ msgid "Select address book format:"
+#~ msgstr "Kies die adresboekformaat:"
+
+#~ msgid "Select application to import settings from:"
+#~ msgstr "Kies toepassing om van opstelling in te voer:"
+
+#~ msgid "Importing Mail"
+#~ msgstr "Voer tans pos in"
+
+#~ msgid "Importing Address Books"
+#~ msgstr "Voer tans adresboeke in"
+
+#~ msgid "Home"
+#~ msgstr "Huis"
+
+#~ msgid "Work"
+#~ msgstr "Werk"
+
+#~ msgid "%S Mail"
+#~ msgstr "%S pos"
