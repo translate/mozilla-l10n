@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-11-07 15:19+0200\n"
+"POT-Creation-Date: 2009-11-24 13:04+0200\n"
 "PO-Revision-Date: 2008-11-08 14:06+0200\n"
 "Last-Translator: Samuel Murray <samuel at translate.org.za>\n"
 "Language-Team: I have a very cool team\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.2.0\n"
+"X-Generator: Translate Toolkit 1.5.0\n"
 "X-Accelerator-Marker: &\n"
 
 #. # ***** BEGIN LICENSE BLOCK *****
@@ -98,17 +98,158 @@ msgstr ""
 msgid "Security Error: Content at %S may not load data from %S."
 msgstr "Sekuriteitsfout: Inhoud in %S sal moontlik nie data van %S oplaai nie."
 
+#. # LOCALIZATION NOTE (GetPropertyDeniedOrigins):
+#. # %1$S is the origin of the script which was denied access.
+#. # %2$S is the type of object it was.
+#. # %3$S is the property of that object that access was denied for.
+#. # %4$S is the origin of the object access was denied to.
 #: GetPropertyDeniedOrigins
-msgid "Permission denied for <%S> to get property %S.%S from <%S>."
+#, fuzzy
+msgid "Permission denied for <%1$S> to get property %2$S.%3$S from <%4$S>."
 msgstr "Toestemming vir <%S> geweier om eienskap %S.%S van <%S> te kry."
 
+#. # LOCALIZATION NOTE (GetPropertyDeniedOriginsSubjectDomain):
+#. # %1$S is the origin of the script which was denied access.
+#. # %2$S is the type of object it was.
+#. # %3$S is the property of that object that access was denied for.
+#. # %4$S is the origin of the object access was denied to.
+#. # %5$S is the value of document.domain for the script which was denied access;
+#. #      don't translate "document.domain".
+#: GetPropertyDeniedOriginsSubjectDomain
+msgid ""
+"Permission denied for <%1$S> (document.domain=<%5$S>) to get property %2$S.%3"
+"$S from <%4$S> (document.domain has not been set)."
+msgstr ""
+
+#. # LOCALIZATION NOTE (GetPropertyDeniedOriginsObjectDomain):
+#. # %1$S is the origin of the script which was denied access.
+#. # %2$S is the type of object it was.
+#. # %3$S is the property of that object that access was denied for.
+#. # %4$S is the origin of the object access was denied to.
+#. # %5$S is the value of document.domain for the object being accessed;
+#. #      don't translate "document.domain".
+#: GetPropertyDeniedOriginsObjectDomain
+msgid ""
+"Permission denied for <%1$S> (document.domain has not been set) to get "
+"property %2$S.%3$S from <%4$S> (document.domain=<%5$S>)."
+msgstr ""
+
+#. # LOCALIZATION NOTE (GetPropertyDeniedOriginsSubjectDomainObjectDomain):
+#. # %1$S is the origin of the script which was denied access.
+#. # %2$S is the type of object it was.
+#. # %3$S is the property of that object that access was denied for.
+#. # %4$S is the origin of the object access was denied to.
+#. # %5$S is the value of document.domain for the script which was denied access;
+#. #      don't translate "document.domain"
+#. # %6$S is the value of document.domain for the object being accessed;
+#. #      don't translate "document.domain".
+#: GetPropertyDeniedOriginsSubjectDomainObjectDomain
+msgid ""
+"Permission denied for <%1$S> (document.domain=<%5$S>) to get property %2$S.%3"
+"$S from <%4$S> (document.domain=<%6$S>)."
+msgstr ""
+
+#. # LOCALIZATION NOTE (SetPropertyDeniedOrigins):
+#. # %1$S is the origin of the script which was denied access.
+#. # %2$S is the type of object it was.
+#. # %3$S is the property of that object that access was denied for.
+#. # %4$S is the origin of the object access was denied to.
 #: SetPropertyDeniedOrigins
-msgid "Permission denied for <%S> to set property %S.%S on <%S>."
+#, fuzzy
+msgid "Permission denied for <%1$S> to set property %2$S.%3$S on <%4$S>."
 msgstr "Toestemming geweier vir <%S> om eienskap %S.%S van <%S> te stel."
 
+#. # LOCALIZATION NOTE (SetPropertyDeniedOriginsSubjectDomain):
+#. # %1$S is the origin of the script which was denied access.
+#. # %2$S is the type of object it was.
+#. # %3$S is the property of that object that access was denied for.
+#. # %4$S is the origin of the object access was denied to.
+#. # %5$S is the value of document.domain for the script which was denied access;
+#. #      don't translate "document.domain".
+#: SetPropertyDeniedOriginsSubjectDomain
+msgid ""
+"Permission denied for <%1$S> (document.domain=<%5$S>) to set property %2$S.%3"
+"$S on <%4$S> (document.domain has not been set)."
+msgstr ""
+
+#. # LOCALIZATION NOTE (SetPropertyDeniedOriginsObjectDomain):
+#. # %1$S is the origin of the script which was denied access.
+#. # %2$S is the type of object it was.
+#. # %3$S is the property of that object that access was denied for.
+#. # %4$S is the origin of the object access was denied to.
+#. # %5$S is the value of document.domain for the object being accessed;
+#. #      don't translate "document.domain".
+#: SetPropertyDeniedOriginsObjectDomain
+msgid ""
+"Permission denied for <%1$S> (document.domain has not been set) to set "
+"property %2$S.%3$S on <%4$S> (document.domain=<%5$S>)."
+msgstr ""
+
+#. # LOCALIZATION NOTE (SetPropertyDeniedOriginsSubjectDomainObjectDomain):
+#. # %1$S is the origin of the script which was denied access.
+#. # %2$S is the type of object it was.
+#. # %3$S is the property of that object that access was denied for.
+#. # %4$S is the origin of the object access was denied to.
+#. # %5$S is the value of document.domain for the script which was denied access;
+#. #      don't translate "document.domain"
+#. # %6$S is the value of document.domain for the object being accessed;
+#. #      don't translate "document.domain".
+#: SetPropertyDeniedOriginsSubjectDomainObjectDomain
+msgid ""
+"Permission denied for <%1$S> (document.domain=<%5$S>) to set property %2$S.%3"
+"$S on <%4$S> (document.domain=<%6$S>)."
+msgstr ""
+
+#. # LOCALIZATION NOTE (CallMethodDeniedOrigins):
+#. # %1$S is the origin of the script which was denied access.
+#. # %2$S is the type of object it was.
+#. # %3$S is the method of that object that access was denied for.
+#. # %4$S is the origin of the object access was denied to.
 #: CallMethodDeniedOrigins
-msgid "Permission denied for <%S> to call method %S.%S on <%S>."
+#, fuzzy
+msgid "Permission denied for <%1$S> to call method %2$S.%3$S on <%4$S>."
 msgstr "Toestemming geweier vir <%S> om metode %S.%S van <%S> te roep."
+
+#. # LOCALIZATION NOTE (CallMethodDeniedOriginsSubjectDomain):
+#. # %1$S is the origin of the script which was denied access.
+#. # %2$S is the type of object it was.
+#. # %3$S is the method of that object that access was denied for.
+#. # %4$S is the origin of the object access was denied to.
+#. # %5$S is the value of document.domain for the script which was denied access;
+#. #      don't translate "document.domain".
+#: CallMethodDeniedOriginsSubjectDomain
+msgid ""
+"Permission denied for <%1$S> (document.domain=<%5$S>) to call method %2$S.%3"
+"$S on <%4$S> (document.domain has not been set)."
+msgstr ""
+
+#. # LOCALIZATION NOTE (CallMethodDeniedOriginsObjectDomain):
+#. # %1$S is the origin of the script which was denied access.
+#. # %2$S is the type of object it was.
+#. # %3$S is the method of that object that access was denied for.
+#. # %4$S is the origin of the object access was denied to.
+#. # %5$S is the value of document.domain for the object being accessed;
+#. #      don't translate "document.domain".
+#: CallMethodDeniedOriginsObjectDomain
+msgid ""
+"Permission denied for <%1$S> (document.domain has not been set) to call "
+"method %2$S.%3$S on <%4$S> (document.domain=<%5$S>)."
+msgstr ""
+
+#. # LOCALIZATION NOTE (CallMethodDeniedOriginsSubjectDomainObjectDomain):
+#. # %1$S is the origin of the script which was denied access.
+#. # %2$S is the type of object it was.
+#. # %3$S is the method of that object that access was denied for.
+#. # %4$S is the origin of the object access was denied to.
+#. # %5$S is the value of document.domain for the script which was denied access;
+#. #      don't translate "document.domain"
+#. # %6$S is the value of document.domain for the object being accessed;
+#. #      don't translate "document.domain".
+#: CallMethodDeniedOriginsSubjectDomainObjectDomain
+msgid ""
+"Permission denied for <%1$S> (document.domain=<%5$S>) to call method %2$S.%3"
+"$S on <%4$S> (document.domain=<%6$S>)."
+msgstr ""
 
 #: GetPropertyDeniedOriginsOnlySubject
 msgid "Permission denied for <%S> to get property %S.%S"

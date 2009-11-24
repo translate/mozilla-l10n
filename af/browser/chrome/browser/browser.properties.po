@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-05-18 16:03+0200\n"
+"POT-Creation-Date: 2009-11-24 13:04+0200\n"
 "PO-Revision-Date: 2008-11-08 14:03+0200\n"
 "Last-Translator: Samuel Murray <samuel at translate.org.za>\n"
 "Language-Team: I have a very cool team\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.3.0\n"
+"X-Generator: Translate Toolkit 1.5.0\n"
 "X-Accelerator-Marker: &\n"
 
 #: nv_done
@@ -116,6 +116,46 @@ msgstr "Aktiveer"
 msgid "n"
 msgstr "n"
 
+#. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
+#. # the host name of the site.
+#: lwthemeInstallRequest.message
+msgid "This site (%S) attempted to install a theme."
+msgstr ""
+
+#: lwthemeInstallRequest.allowButton
+#, fuzzy
+msgctxt "lwthemeInstallRequest.allowButton"
+msgid "Allow"
+msgstr "Toelaat"
+
+#: lwthemeInstallRequest.allowButton.accesskey
+msgctxt "lwthemeInstallRequest.allowButton.accesskey"
+msgid "a"
+msgstr ""
+
+#: lwthemePostInstallNotification.message
+msgid "A new theme has been installed."
+msgstr ""
+
+#: lwthemePostInstallNotification.undoButton
+#, fuzzy
+msgctxt "lwthemePostInstallNotification.undoButton"
+msgid "Undo"
+msgstr "Ontdoen"
+
+#: lwthemePostInstallNotification.undoButton.accesskey
+msgctxt "lwthemePostInstallNotification.undoButton.accesskey"
+msgid "U"
+msgstr ""
+
+#: lwthemePostInstallNotification.manageButton
+msgid "Manage Themes…"
+msgstr ""
+
+#: lwthemePostInstallNotification.manageButton.accesskey
+msgid "M"
+msgstr ""
+
 #: popupWarning
 msgid "%S prevented this site from opening a pop-up window."
 msgstr "%S het hierdie werf daarvan weerhou om 'n opspringer te open."
@@ -169,6 +209,8 @@ msgid "%S will now allow images from %S."
 msgstr "%S sal nou altyd prente van %S toelaat."
 
 #: undo
+#, fuzzy
+msgctxt "undo"
 msgid "Undo"
 msgstr "Ontdoen"
 
@@ -191,6 +233,21 @@ msgstr "Installeer vermiste inproppe…"
 msgid "I"
 msgstr "I"
 
+#: outdatedpluginsMessage.title
+msgid "Some plugins used by this page are out of date."
+msgstr ""
+
+#: outdatedpluginsMessage.updateButton.label
+#, fuzzy
+msgctxt "outdatedpluginsMessage.updateButton.label"
+msgid "Update Plugins…"
+msgstr "Werk inproppe by…"
+
+#: outdatedpluginsMessage.updateButton.accesskey
+msgctxt "outdatedpluginsMessage.updateButton.accesskey"
+msgid "U"
+msgstr ""
+
 #: blockedpluginsMessage.title
 msgid ""
 "Some plugins required by this page have been blocked for your protection."
@@ -203,10 +260,14 @@ msgid "Details…"
 msgstr "Detail…"
 
 #: blockedpluginsMessage.infoButton.accesskey
+#, fuzzy
+msgctxt "blockedpluginsMessage.infoButton.accesskey"
 msgid "D"
 msgstr "D"
 
 #: blockedpluginsMessage.searchButton.label
+#, fuzzy
+msgctxt "blockedpluginsMessage.searchButton.label"
 msgid "Update Plugins…"
 msgstr "Werk inproppe by…"
 
@@ -231,30 +292,23 @@ msgstr "Wis hele geskiedenis"
 msgid "Clear Now"
 msgstr "Skrap nou"
 
-#. # LOCALIZATION NOTE (sanitizeEverythingWarning): Warning that appears when "Time
-#. # range to clear" is set to "Everything" in Clear Recent History dialog.  UI
-#. # mockup at bug 480169.  This value is a semi-colon list of plural forms.  #1 is
-#. # replaced with the number of history visits. %S is replaced with the date of
-#. # the oldest visit.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#: sanitizeEverythingWarning
-msgid ""
-"All history will be cleared.  Your history includes one page visit since %"
-"S.;All history will be cleared.  Your history includes #1 page visits since "
-"%S."
-msgstr ""
-"Alle geskiedenis sal gewis word.  U geskiedenis sluit een bladsybesoek in "
-"sedert %S.;Alle geskiedenis sal gewis word.  U geskiedenis sluit #1 "
-"bladsybesoeke in sedert %S."
-
-#. # LOCALIZATION NOTE (sanitizeEverythingNoVisitsWarning): Used in same context
-#. # as sanitizeEverythingWarning except this is shown instead when there are no
-#. # visits in the user's history.
-#: sanitizeEverythingNoVisitsWarning
+#. # LOCALIZATION NOTE (sanitizeEverythingWarning2): Warning that appears when
+#. # "Time range to clear" is set to "Everything" in Clear Recent History dialog,
+#. # provided that the user has not modified the default set of history items to clear.
+#: sanitizeEverythingWarning2
 msgid "All history will be cleared."
 msgstr "Alle geskiedenis sal gewis word."
 
+#. # LOCALIZATION NOTE (sanitizeSelectedWarning): Warning that appears when
+#. # "Time range to clear" is set to "Everything" in Clear Recent History dialog,
+#. # provided that the user has modified the default set of history items to clear.
+#: sanitizeSelectedWarning
+msgid "All selected items will be cleared."
+msgstr ""
+
 #. # Check for Updates
+#. # LOCALIZATION NOTE (updatesItem_*): these are alternative labels for Check for Update item in Help menu.
+#. # Which one is used depends on Update process state.
 #: updatesItem_default
 msgctxt "updatesItem_default"
 msgid "Check for Updates…"
@@ -265,6 +319,10 @@ msgctxt "updatesItem_defaultFallback"
 msgid "Check for Updates…"
 msgstr "Kontroleer vir bywerkings…"
 
+#: updatesItem_default.accesskey
+msgid "C"
+msgstr ""
+
 #: updatesItem_downloading
 msgid "Downloading %S…"
 msgstr "Laai tans %S af…"
@@ -273,6 +331,11 @@ msgstr "Laai tans %S af…"
 msgid "Downloading Update…"
 msgstr "Laai tans bywerking af…"
 
+#: updatesItem_downloading.accesskey
+msgctxt "updatesItem_downloading.accesskey"
+msgid "D"
+msgstr ""
+
 #: updatesItem_resume
 msgid "Resume Downloading %S…"
 msgstr "Hervat aflaai van %S…"
@@ -280,6 +343,11 @@ msgstr "Hervat aflaai van %S…"
 #: updatesItem_resumeFallback
 msgid "Resume Downloading Update…"
 msgstr "Hervat aflaai van bywerking…"
+
+#: updatesItem_resume.accesskey
+msgctxt "updatesItem_resume.accesskey"
+msgid "D"
+msgstr ""
 
 #: updatesItem_pending
 msgctxt "updatesItem_pending"
@@ -291,28 +359,29 @@ msgctxt "updatesItem_pendingFallback"
 msgid "Apply Downloaded Update Now…"
 msgstr "Pas afgelaaide bywerking nou toe…"
 
-#. # RSS Pretty Print
-#: feedNoFeeds
-msgid "Page has no feeds"
-msgstr "Bladsy het geen voer nie"
+#: updatesItem_pending.accesskey
+msgctxt "updatesItem_pending.accesskey"
+msgid "D"
+msgstr ""
 
+#. # RSS Pretty Print
 #: feedShowFeedNew
 msgid "Subscribe to '%S'…"
 msgstr "Teken in op '%S'…"
 
-#: feedHasFeedsNew
-msgid "Subscribe to this page…"
-msgstr "Teken in op hierdie bladsy…"
-
-#. # History menu
 #: menuOpenAllInTabs.label
 msgid "Open All in Tabs"
 msgstr "Open almal in oortjies"
 
-#: menuOpenAllInTabs.accesskey
-msgctxt "menuOpenAllInTabs.accesskey"
-msgid "o"
-msgstr "O"
+#. # History menu
+#: menuRestoreAllTabs.label
+msgid "Restore All Tabs"
+msgstr ""
+
+#: menuRestoreAllTabs.accesskey
+msgctxt "menuRestoreAllTabs.accesskey"
+msgid "R"
+msgstr ""
 
 #. # LOCALIZATION NOTE (menuRestoreAllWindows, menuUndoCloseWindowLabel, menuUndoCloseWindowSingleTabLabel):
 #. # see bug 394759
@@ -321,6 +390,8 @@ msgid "Restore All Windows"
 msgstr "Laai alle vensters terug"
 
 #: menuRestoreAllWindows.accesskey
+#, fuzzy
+msgctxt "menuRestoreAllWindows.accesskey"
 msgid "R"
 msgstr "L"
 
@@ -432,7 +503,8 @@ msgid "Verified by: %S"
 msgstr "Geverifieer deur: %S"
 
 #: identity.identified.verified_by_you
-msgid "You have added a security exception for this site"
+#, fuzzy
+msgid "You have added a security exception for this site."
 msgstr "U het 'n sekuriteitsuitsondering vir hierdie werf bygevoeg"
 
 #: identity.identified.state_and_country
@@ -451,6 +523,12 @@ msgstr ""
 #: identity.unencrypted
 msgid "Your connection to this web site is not encrypted."
 msgstr "U verbinding aan hierdie webwerf is nie geënkripteer nie."
+
+#: identity.mixed_content
+msgid ""
+"Your connection to this site is only partially encrypted, and does not "
+"prevent eavesdropping."
+msgstr ""
 
 #: identity.unknown.tooltip
 msgid "This web site does not supply identity information."
@@ -493,8 +571,11 @@ msgstr "Redigeer hierdie boekmerk"
 #. # LOCALIZATION NOTE (editBookmark.removeBookmarks.label)
 #. # Semi-colon list of plural forms. Replacement for #1 is
 #. # the number of bookmarks to be removed.
+#. # If this causes problems with localization you can also do "Remove Bookmarks (#1)"
+#. # instead of "Remove #1 Bookmarks".
 #: editBookmark.removeBookmarks.label
-msgid "Remove Bookmark;Remove Bookmarks (#1)"
+#, fuzzy
+msgid "Remove Bookmark;Remove #1 Bookmarks"
 msgstr "Verwyder boekmerk;Verwyder boekmerke (#1)"
 
 #. # Geolocation UI
@@ -505,6 +586,8 @@ msgid "Share Location"
 msgstr "Deel ligging"
 
 #: geolocation.shareLocation.accesskey
+#, fuzzy
+msgctxt "geolocation.shareLocation.accesskey"
 msgid "a"
 msgstr "e"
 
@@ -513,7 +596,7 @@ msgid "Don't Share"
 msgstr "Moenie deel nie"
 
 #: geolocation.dontShareLocation.accesskey
-msgctxt "geolocation.dontShareLocation.accesskey"
+#, fuzzy
 msgid "o"
 msgstr "o"
 
@@ -530,6 +613,11 @@ msgstr "Leer meer…"
 #: geolocation.remember
 msgid "Remember for this site"
 msgstr "Onthou vir hierdie werf"
+
+#: geolocation.remember.accesskey
+msgctxt "geolocation.remember.accesskey"
+msgid "R"
+msgstr ""
 
 #. # Phishing/Malware Notification Bar.
 #. # LOCALIZATION NOTE (notAForgery, notAnAttack)
@@ -599,6 +687,43 @@ msgstr "&Kanselleer"
 #: privateBrowsingNeverAsk
 msgid "&Do not show this message again"
 msgstr "&Moenie my weer vertel nie"
+
+#. # Ctrl-Tab
+#. # LOCALIZATION NOTE (ctrlTab.showAll.label): #1 represents the number
+#. # of tabs in the current browser window. It will always be 2 at least.
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#: ctrlTab.showAll.label
+msgid ";Show all #1 tabs"
+msgstr ""
+
+#. # LOCALIZATION NOTE (addKeywordTitleAutoFill): %S will be replaced by the page's title
+#. # Used as the bookmark name when saving a keyword for a search field.
+#: addKeywordTitleAutoFill
+msgid "Search %S"
+msgstr ""
+
+#: extensions.{972ce4c6-7e08-4474-a285-3208198ce6fd}.name
+msgid "Default"
+msgstr ""
+
+#: extensions.{972ce4c6-7e08-4474-a285-3208198ce6fd}.description
+msgid "The default theme."
+msgstr ""
+
+#~ msgid ""
+#~ "All history will be cleared.  Your history includes one page visit since %"
+#~ "S.;All history will be cleared.  Your history includes #1 page visits "
+#~ "since %S."
+#~ msgstr ""
+#~ "Alle geskiedenis sal gewis word.  U geskiedenis sluit een bladsybesoek in "
+#~ "sedert %S.;Alle geskiedenis sal gewis word.  U geskiedenis sluit #1 "
+#~ "bladsybesoeke in sedert %S."
+
+#~ msgid "Page has no feeds"
+#~ msgstr "Bladsy het geen voer nie"
+
+#~ msgid "Subscribe to this page…"
+#~ msgstr "Teken in op hierdie bladsy…"
 
 #~ msgid "Tell them"
 #~ msgstr "Vertel hulle"
