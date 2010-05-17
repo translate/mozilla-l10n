@@ -40,7 +40,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-30 13:04+0200\n"
+"POT-Creation-Date: 2010-05-12 17:06+0200\n"
 "PO-Revision-Date: 2009-11-02 14:34+0200\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: translate-discuss-af@lists.sourceforge.net\n"
@@ -49,7 +49,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.4.1\n"
+"X-Generator: Translate Toolkit 1.6.1\n"
 "X-Accelerator-Marker: &\n"
 
 #. #
@@ -58,7 +58,6 @@ msgstr ""
 #. # Status - opening folder
 #. ## @name IMAP_STATUS_SELECTING_MAILBOX
 #. ## @loc None
-#. ## The following are used by the imap code to display progress/status/error messages#
 #: 5000
 msgid "Opening folder %S…"
 msgstr "Open tans vouer %S…"
@@ -208,18 +207,20 @@ msgstr "Hierdie deel van die lyf sal op versoek afgelaai word."
 
 #. ## @name IMAP_RECEIVING_MESSAGE_HEADERS_OF
 #. ## @loc None
-#. # LOCALIZATION NOTE (Error 5036): Do not translate the word "%S" or "%lu" below.
-#. # Place the word %S in your translation where the name of the server should appear.
-#. # Place the word %lu where the number of headers should appear.
+#. # LOCALIZATION NOTE (Error 5036): Do not translate the word "%1$S", "%2$lu" or "%3$lu" below.
+#. # Place the word %1$S in your translation where the name of the server should appear.
+#. # Place the word %2$lu where the number of the header currently being downloaded should appear.
+#. # Place the word %3$lu where the number of headers should appear.
 #: 5036
 msgid "%S Downloading message header %lu of %lu"
 msgstr "%S laai tans boodskapkopskrif %lu van %lu af"
 
 #. ## @name IMAP_RECEIVING_MESSAGE_FLAGS_OF
 #. ## @loc None
-#. # LOCALIZATION NOTE (Error 5037): Do not translate the word "%S" or "%lu" below.
-#. # Place the word %S in your translation where the name of the server should appear.
-#. # Place the word %lu where the number of flags should appear.
+#. # LOCALIZATION NOTE (Error 5037): Do not translate the word "%1$S", "%2$lu" or "%3$lu" below.
+#. # Place the word %1$S in your translation where the name of the server should appear.
+#. # Place the word %2$lu where the number of the flag currently being downloaded should appear.
+#. # Place the word %3$lu where the number of flags should appear.
 #: 5037
 msgid "%S Downloading message flag %lu of %lu"
 msgstr "%S laai tans boodskapvlag %lu van %lu af"
@@ -360,24 +361,6 @@ msgid ""
 msgstr ""
 "As u die snippermandjie leeg maak, sal %S en alle boodskappe wat dit bevat, "
 "geskrap word. Wil u hierdie vouer skrap?"
-
-#. ## @name IMAP_PERSONAL_FILING_CABINET
-#. ## @loc None
-#: 5062
-msgid "Personal Filing Cabinet"
-msgstr "Persoonlike liasseerkabinet"
-
-#. ## @name IMAP_PFC_READ_MAIL
-#. ## @loc None
-#: 5063
-msgid "Read Mail"
-msgstr "Geleesde pos"
-
-#. ## @name IMAP_PFC_SENT_MAIL
-#. ## @loc None
-#: 5064
-msgid "Sent Mail"
-msgstr "Gestuurde pos"
 
 #. ## @name IMAP_SPECIAL_CHAR
 #. ## @loc None
@@ -555,20 +538,6 @@ msgstr "Daar is geen stoorkwotas op hierdie vouer nie."
 msgid "Application is out of memory."
 msgstr "Die toepassing se geheue is op."
 
-#. ## @name IMAP_AUTH_SECURE_NOTSUPPORTED
-#. ## @loc None
-#: 5102
-msgid ""
-"You cannot log in to %S because you have enabled secure authentication and "
-"this server does not support it.\n"
-"\n"
-"To log in, turn off secure authentication for this account."
-msgstr ""
-"U kan nie by %S aanmeld nie omdat u beveiligde magtiging geaktiveer het, en "
-"hierdie bediener werk nie daarmee nie.\n"
-"\n"
-"Om aan te meld, skakel beveiligde magtiging vir hierdie rekening af."
-
 #. ## @name IMAP_COPYING_MESSAGE_OF
 #. ## @loc None
 #. # LOCALIZATION NOTE (Error 5103): Do not translate the word "%S" below.
@@ -613,10 +582,72 @@ msgstr "Skrap vouer"
 msgid "&Delete Folder"
 msgstr "&Skrap vouer"
 
+#. ## @name IMAP_AUTH_CHANGE_ENCRYPT_TO_PLAIN_SSL
+#. ## @loc None
+#. # LOCALIZATION NOTE (5110): %S is the server hostname
+#: 5110
+msgid ""
+"The IMAP server %S does not seem to support encrypted passwords. If you just "
+"set up this account, please try changing to 'Normal password' as the "
+"'Authentication method' in the 'Account Settings | Server settings'. If it "
+"used to work and now suddenly fails, please contact your email administrator "
+"or provider."
+msgstr ""
+
+#. ## @name IMAP_AUTH_CHANGE_PLAIN_TO_ENCRYPT
+#. ## @loc None
+#. # LOCALIZATION NOTE (5111): %S is the server hostname
+#: 5111
+msgid ""
+"The IMAP server %S does not allow plaintext passwords. Please try changing "
+"to 'Encrypted password' as the 'Authentication method' in the 'Account "
+"Settings | Server settings'."
+msgstr ""
+
+#. ## @name IMAP_AUTH_CHANGE_ENCRYPT_TO_PLAIN_NO_SSL
+#. ## @loc None
+#. # LOCALIZATION NOTE (5112): %S is the server hostname
+#: 5112
+msgid ""
+"The IMAP server %S does not seem to support encrypted passwords. If you just "
+"set up the account, please try changing to 'Password, transmitted "
+"insecurely' as the 'Authentication method' in the 'Account Settings | Server "
+"settings'. If it used to work and now suddenly fails, this is a common "
+"scenario how someone could steal your password."
+msgstr ""
+
+#. ## @name IMAP_AUTH_MECH_NOT_SUPPORTED
+#. ## @loc None
+#. # LOCALIZATION NOTE (5113): %S is the server hostname
+#: 5113
+msgid ""
+"The IMAP server %S does not support the selected authentication method. "
+"Please change the 'Authentication method' in the 'Account Settings | Server "
+"settings'."
+msgstr ""
+
+#. ## @name IMAP_AUTH_MECH_FAILED
+#. ## @loc None
+#. # LOCALIZATION NOTE (5114): %S is the server hostname
+#: 5114
+msgid ""
+"All login mechanisms for %S failed. Please check the password or change the "
+"'Authentication method' in the 'Account Settings | Server settings'."
+msgstr ""
+
+#. ## @name IMAP_AUTH_GSSAPI_FAILED
+#. ## @loc None
+#. # LOCALIZATION NOTE (5115): %S is the server hostname
+#: 5115
+msgid ""
+"The Kerberos/GSSAPI ticket was not accepted by the IMAP server %S. Please "
+"check that you are logged in to the Kerberos/GSSAPI realm."
+msgstr ""
+
 #. ## @name IMAP_LOGIN_DISABLED
 #. ## @loc None
-#. # LOCALIZATION NOTE (5109): %S is the server address
-#: 5109
+#. # LOCALIZATION NOTE (5116): %S is the account name
+#: 5116
 msgid ""
 "You cannot log in to %S because the server doesn't allow plaintext "
 "authentication without STARTTLS or SSL/TLS. Try enabling connection security "
@@ -625,6 +656,58 @@ msgstr ""
 "U kan nie by %S aanmeld nie want die bediener laat nie skoonteksmagtiging "
 "sonder STARTTLS of SSL/TLS toe nie. Probeer verbindingsekuriteit of "
 "beveiligde magtiging in die rekeninginstellings aktiveer."
+
+#. ## @name IMAP_SERVER_COMMAND_FAILED
+#. ## @loc None
+#. # LOCALIZATION NOTE (5117): 
+#. # Place the word %1$S in your translation where the name of the account name should appear.
+#. # Place the word %2$S in your translation where the server response should appear.
+#: 5117
+msgid ""
+"The current command did not succeed. The mail server for account %1$S "
+"responded: %2$S "
+msgstr ""
+
+#. ## @name IMAP_FOLDER_COMMAND_FAILED
+#. ## @loc None
+#. # LOCALIZATION NOTE (5118): Do not translate the word %S below.
+#. # Place the word %1$S in your translation where the name of the account should appear.
+#. # Place the word %2$S in your translation where the name of the folder should appear.
+#. # Place the word %3$S in your translation where the server response should appear.
+#: 5118
+msgid ""
+"The current operation on '%2$S' did not succeed. The mail server for account "
+"%1$S responded: %3$S"
+msgstr ""
+
+#. ## @name IMAP_SERVER_ALERT
+#. ## @loc None
+#. # LOCALIZATION NOTE (5119):
+#. # Place the word %1$S in your translation where the name of the account should appear.
+#. # Place the word %2$S in your translation where the alert from the server should appear.
+#: 5119
+msgid "Alert from account %1$S: %2$S"
+msgstr ""
+
+#~ msgid "Personal Filing Cabinet"
+#~ msgstr "Persoonlike liasseerkabinet"
+
+#~ msgid "Read Mail"
+#~ msgstr "Geleesde pos"
+
+#~ msgid "Sent Mail"
+#~ msgstr "Gestuurde pos"
+
+#~ msgid ""
+#~ "You cannot log in to %S because you have enabled secure authentication "
+#~ "and this server does not support it.\n"
+#~ "\n"
+#~ "To log in, turn off secure authentication for this account."
+#~ msgstr ""
+#~ "U kan nie by %S aanmeld nie omdat u beveiligde magtiging geaktiveer het, "
+#~ "en hierdie bediener werk nie daarmee nie.\n"
+#~ "\n"
+#~ "Om aan te meld, skakel beveiligde magtiging vir hierdie rekening af."
 
 #~ msgid "Opening folder..."
 #~ msgstr "Open tans vouer..."

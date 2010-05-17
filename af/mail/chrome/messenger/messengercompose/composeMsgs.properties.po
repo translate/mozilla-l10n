@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-30 13:04+0200\n"
+"POT-Creation-Date: 2010-05-12 17:06+0200\n"
 "PO-Revision-Date: 2007-10-08 15:00+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,21 +46,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.4.1\n"
+"X-Generator: Translate Toolkit 1.6.1\n"
 "X-Accelerator-Marker: &\n"
 
 #. #
 #. # The following are used by the compose back end
 #. #
-#. ## @name NS_MSG_UNABLE_TO_OPEN_FILE
-#: 12500
-msgid "Unable to open the file %P0%."
+#. ## LOCALIZATION NOTE (unableToOpenFile, unableToOpenTmpFile):
+#. ## %S will be replaced with the name of file that could not be opened
+#: unableToOpenFile
+#, fuzzy
+msgid "Unable to open the file %S."
 msgstr "Kon nie die lêer %P0% open nie."
 
-#. ## @name NS_MSG_UNABLE_TO_OPEN_TMP_FILE
-#: 12501
+#: unableToOpenTmpFile
+#, fuzzy
 msgid ""
-"Unable to open the temporary file %P0%. Check your 'Temporary Directory' "
+"Unable to open the temporary file %S. Check your 'Temporary Directory' "
 "setting."
 msgstr ""
 "Kon nie die tydelike lêer %P0% open nie. Gaan u 'Tydelike subgids'-"
@@ -431,45 +433,6 @@ msgstr ""
 "Daar het fout gegaan met die stuur van die pos. Die posbediener se respons "
 "is:  %1$s. Gaan die boodskapontvanger %2$s na, en probeer weer."
 
-#. ## @name NS_ERROR_COULD_NOT_LOGIN_TO_SMTP_SERVER_INSECAUTH
-#: 12579
-msgid ""
-"An error occurred sending mail: Unable to authenticate to SMTP server %S. "
-"The server does not support any compatible insecure authentication mechanism "
-"but you have chosen insecure authentication. Try switching on secure "
-"authentication or contact your service provider."
-msgstr ""
-"Daar het fout gegaan met die stuur van die pos: Kon nie by SMTP-bediener %S "
-"magtig nie. Die bediener werk nie met enige versoenbare onbeveiligde "
-"magtigingsmeganisme nie, en u het onbeveiligde magtiging gekies. Probeer "
-"beveiligde magtiging aanskakel, of kontak jou diensverskaffer."
-
-#. ## @name NS_ERROR_COULD_NOT_LOGIN_TO_SMTP_SERVER_SECAUTH
-#: 12580
-msgid ""
-"An error occurred sending mail: Unable to authenticate to SMTP server %S. "
-"The server does not support any compatible secure authentication mechanism "
-"but you have chosen secure authentication. Try switching off secure "
-"authentication or contact your service provider."
-msgstr ""
-"Daar het fout gegaan met die stuur van die pos: Kon nie by SMTP-bediener %S "
-"magtig nie. Die bediener werk nie met enige versoenbare beveiligde "
-"magtigingsmeganisme nie, en u het beveiligde magtiging gekies. Probeer "
-"onbeveiligde magtiging aanskakel, of kontak jou diensverskaffer."
-
-#. ## @name NS_ERROR_COULD_NOT_LOGIN_TO_SMTP_SERVER_AUTH_NONE
-#: 12581
-msgid ""
-"An error occurred sending mail: Unable to authenticate to SMTP server %S. It "
-"does not support authentication (SMTP-AUTH) but you have chosen to use "
-"authentication. Uncheck 'Use name and password' for that server or contact "
-"your service provider."
-msgstr ""
-"Daar het fout gegaan met die stuur van die pos: Kon nie by SMTP-bediener %S "
-"magtig nie. Dit werk nie met magtiging (SMTP-AUTH) nie, en u het gekies om "
-"magtiging te gebruik. Ontmerk 'Gebruik naam en wagwoord' vir daardie "
-"bediener, of kontak jou diensverskaffer."
-
 #. ## @name NS_ERROR_STARTTLS_FAILED_EHLO_STARTTLS
 #: 12582
 msgid ""
@@ -481,17 +444,6 @@ msgstr ""
 "met SMTP-bediener %S met STARTTLS bewerkstellig nie, omdat dit nie daardie "
 "kenmerk adverteer nie. Skakel STARTTLS vir daardie bediener af, of kontak "
 "jou diensverskaffer."
-
-#. ## @name NS_ERROR_COULD_NOT_LOGIN_TO_SMTP_SERVER
-#: 12583
-msgid ""
-"An error occurred sending mail: Unable to log in to SMTP server %S. The "
-"server may be incorrectly configured. Please verify that your SMTP server "
-"settings are correct and try again."
-msgstr ""
-"Daar het fout gegaan met die stuur van die pos: Kon nie by die SMTP-bediener "
-"%S aanmeld nie. Die bediener is dalk verkeerd opgestel. Maak seker dat u "
-"SMTP-bedienerinstellings korrek is, en probeer weer."
 
 #. ## @name NS_ERROR_SMTP_PASSWORD_UNDEFINED
 #: 12584
@@ -592,6 +544,73 @@ msgstr ""
 "rede. Maak seker dat u SMTP-bedienerinstellings korrek is, en probeer weer, "
 "of kontak u netwerkadministrateur."
 
+#. ## @name NS_ERROR_SMTP_AUTH_CHANGE_ENCRYPT_TO_PLAIN_NO_SSL
+#. # LOCALIZATION NOTE (12594): $S is server hostname
+#: 12594
+msgid ""
+"The SMTP server %S does not seem to support encrypted passwords. If you just "
+"set up the account, please try changing to 'Password, transmitted "
+"insecurely' as the 'Authentication method' in the 'Account Settings | Server "
+"settings'. If it used to work and now suddenly fails, this is a common "
+"scenario how someone could steal your password."
+msgstr ""
+
+#. ## @name NS_ERROR_SMTP_AUTH_CHANGE_ENCRYPT_TO_PLAIN_SSL
+#. # LOCALIZATION NOTE (12595): $S is server hostname
+#: 12595
+msgid ""
+"The SMTP server %S does not seem to support encrypted passwords. If you just "
+"set up this account, please try changing to 'Normal password' as the "
+"'Authentication method' in the 'Account Settings | Server settings'. If it "
+"used to work and now suddenly fails, please contact your email administrator "
+"or provider."
+msgstr ""
+
+#. ## @name NS_ERROR_SMTP_AUTH_CHANGE_PLAIN_TO_ENCRYPT
+#. # LOCALIZATION NOTE (12596): $S is server hostname
+#: 12596
+msgid ""
+"The SMTP server %S does not allow plaintext passwords. Please try changing "
+"to 'Encrypted password' as the 'Authentication method' in the 'Account "
+"Settings | Server settings'."
+msgstr ""
+
+#. ## @name NS_ERROR_SMTP_AUTH_FAILURE
+#. # LOCALIZATION NOTE (12597): $S is server hostname
+#: 12597
+msgid ""
+"Unable to authenticate to SMTP server %S. Please check the password, and "
+"verify the 'Authentication method' in 'Account Settings | Outgoing server "
+"(SMTP)'."
+msgstr ""
+
+#. ## @name NS_ERROR_SMTP_AUTH_GSSAPI
+#. # LOCALIZATION NOTE (12598): $S is server hostname
+#: 12598
+msgid ""
+"The Kerberos/GSSAPI ticket was not accepted by the SMTP server %S. Please "
+"check that you are logged in to the Kerberos/GSSAPI realm."
+msgstr ""
+
+#. ## @name NS_ERROR_SMTP_AUTH_MECH_NOT_SUPPORTED
+#. # LOCALIZATION NOTE (12599): $S is server hostname
+#: 12599
+msgid ""
+"The SMTP server %S does not support the selected authentication method. "
+"Please change the 'Authentication method' in the 'Account Settings | "
+"Outgoing Server (SMTP)'."
+msgstr ""
+
+#. ## @name NS_ERROR_SMTP_AUTH_NOT_SUPPORTED
+#. # LOCALIZATION NOTE (12600): $S is server hostname
+#: 12600
+msgid ""
+"Unable to authenticate to SMTP server %S. It does not support authentication "
+"(SMTP-AUTH) but you have chosen to use authentication. Please change the "
+"'Authentication method' to 'None' in the 'Account Settings | Outgoing Server "
+"(SMTP)' or contact your email service provider for instructions."
+msgstr ""
+
 #. ## Strings use for the save message dialog shown when the user close a message compose window
 #: saveDlogTitle
 msgctxt "saveDlogTitle"
@@ -687,12 +706,10 @@ msgstr "Aangehegde boodskapdeel"
 msgid "Message Compose"
 msgstr "Skryf 'n boodskap"
 
-#. ## LOCALIZATION NOTE (initErrorDlogMessage): %1$s will be replaced by the error string.  do not translate \n
-#: initErrorDlogMessage
+#: initErrorDlgMessage
+#, fuzzy
 msgid ""
-"An error occurred while creating a message compose window. Please try "
-"again.\n"
-"%1$s"
+"An error occurred while creating a message compose window. Please try again."
 msgstr ""
 "Kon nie 'n briefskryf-venster skep nie. Probeer gerus weer.\n"
 "%1$s"
@@ -780,9 +797,9 @@ msgstr "Nuwe aanhegselnaam:"
 #: mail.compose.attachment_reminder_keywords
 msgid ".doc,.pdf,attachment,attach,attached,attaching,enclosed,CV,cover letter"
 msgstr ""
-".doc,.pdf,attachment,attach,attached,attaching,enclosed,CV,cover letter, "
-".odt,.xls,aanhegsel,aanheg,aangeheg,aanheging,ingesluit,résumé,dekbrief, "
-".txt,.ppt,aanhangsel,aanhang,aangehang"
+".doc,.pdf,attachment,attach,attached,attaching,enclosed,CV,cover letter, ."
+"odt,.xls,aanhegsel,aanheg,aangeheg,aanheging,ingesluit,résumé,dekbrief, ."
+"txt,.ppt,aanhangsel,aanhang,aangehang"
 
 #: addAttachmentButton
 msgid "Add Attachment…"
@@ -843,6 +860,48 @@ msgstr "Tik u wagwoord vir %2$S op %1$S in:"
 #: smtpEnterPasswordPromptTitle
 msgid "SMTP Server Password Required"
 msgstr "SMTP-bedienerwagwoord verlang"
+
+#~ msgid ""
+#~ "An error occurred sending mail: Unable to authenticate to SMTP server %S. "
+#~ "The server does not support any compatible insecure authentication "
+#~ "mechanism but you have chosen insecure authentication. Try switching on "
+#~ "secure authentication or contact your service provider."
+#~ msgstr ""
+#~ "Daar het fout gegaan met die stuur van die pos: Kon nie by SMTP-bediener %"
+#~ "S magtig nie. Die bediener werk nie met enige versoenbare onbeveiligde "
+#~ "magtigingsmeganisme nie, en u het onbeveiligde magtiging gekies. Probeer "
+#~ "beveiligde magtiging aanskakel, of kontak jou diensverskaffer."
+
+#~ msgid ""
+#~ "An error occurred sending mail: Unable to authenticate to SMTP server %S. "
+#~ "The server does not support any compatible secure authentication "
+#~ "mechanism but you have chosen secure authentication. Try switching off "
+#~ "secure authentication or contact your service provider."
+#~ msgstr ""
+#~ "Daar het fout gegaan met die stuur van die pos: Kon nie by SMTP-bediener %"
+#~ "S magtig nie. Die bediener werk nie met enige versoenbare beveiligde "
+#~ "magtigingsmeganisme nie, en u het beveiligde magtiging gekies. Probeer "
+#~ "onbeveiligde magtiging aanskakel, of kontak jou diensverskaffer."
+
+#~ msgid ""
+#~ "An error occurred sending mail: Unable to authenticate to SMTP server %S. "
+#~ "It does not support authentication (SMTP-AUTH) but you have chosen to use "
+#~ "authentication. Uncheck 'Use name and password' for that server or "
+#~ "contact your service provider."
+#~ msgstr ""
+#~ "Daar het fout gegaan met die stuur van die pos: Kon nie by SMTP-bediener %"
+#~ "S magtig nie. Dit werk nie met magtiging (SMTP-AUTH) nie, en u het gekies "
+#~ "om magtiging te gebruik. Ontmerk 'Gebruik naam en wagwoord' vir daardie "
+#~ "bediener, of kontak jou diensverskaffer."
+
+#~ msgid ""
+#~ "An error occurred sending mail: Unable to log in to SMTP server %S. The "
+#~ "server may be incorrectly configured. Please verify that your SMTP server "
+#~ "settings are correct and try again."
+#~ msgstr ""
+#~ "Daar het fout gegaan met die stuur van die pos: Kon nie by die SMTP-"
+#~ "bediener %S aanmeld nie. Die bediener is dalk verkeerd opgestel. Maak "
+#~ "seker dat u SMTP-bedienerinstellings korrek is, en probeer weer."
 
 #~ msgid "Error getting mail password."
 #~ msgstr "Kon nie poswagwoord kry nie."

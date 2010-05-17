@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-30 13:04+0200\n"
+"POT-Creation-Date: 2010-05-12 17:06+0200\n"
 "PO-Revision-Date: 2009-10-30 18:03+0200\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: translate-discuss-af@lists.sourceforge.net\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.4.1\n"
+"X-Generator: Translate Toolkit 1.6.1\n"
 "X-Accelerator-Marker: &\n"
 
 #: messengerWindow.title
@@ -318,9 +318,9 @@ msgstr "&Boodskappaneel"
 msgid "&Folders"
 msgstr "&Vouers"
 
-#: smartFolders.label smartFolders.accesskey
-msgid "&Smart"
-msgstr "&Slim"
+#: unifiedFolders.label unifiedFolders.accesskey
+msgid "U&nified"
+msgstr ""
 
 #: allFolders.label allFolders.accesskey
 msgctxt "allFolders.label allFolders.accesskey"
@@ -1005,8 +1005,19 @@ msgid "&Open Message"
 msgstr "&Open boodskap"
 
 #: openMessageWindowCmd.key
+#, fuzzy
+msgctxt "openMessageWindowCmd.key"
 msgid "o"
 msgstr "o"
+
+#: openConversationCmd.label openConversationCmd.accesskey
+msgid "Open in Conver&sation"
+msgstr ""
+
+#: openConversationCmd.key
+msgctxt "openConversationCmd.key"
+msgid "o"
+msgstr ""
 
 #: openFeedMessage.label openFeedMessage.accesskey
 msgid "&Open Feed Message"
@@ -1053,6 +1064,15 @@ msgstr "&Byvoegings"
 #: activitymanager.label activitymanager.accesskey
 msgid "Acti&vity Manager"
 msgstr "&Aktiwiteitbestuurder"
+
+#: savedFiles.label savedFiles.accesskey
+msgid "Saved Fi&les"
+msgstr ""
+
+#: savedFiles.key
+msgctxt "savedFiles.key"
+msgid "j"
+msgstr ""
 
 #: filtersCmd.label filtersCmd.accesskey
 msgid "Message &Filters…"
@@ -1619,6 +1639,10 @@ msgstr "Open boodskap in nuwe &venster"
 msgid "Open Message in New &Tab"
 msgstr "Open boodskap in nuwe &oortjie"
 
+#: contextOpenConversation.label contextOpenConversation.accesskey
+msgid "Ope&n Message in Conversation"
+msgstr ""
+
 #: contextEditAsNew.label contextEditAsNew.accesskey
 msgid "&Edit As New…"
 msgstr "R&edigeer as nuwe…"
@@ -1685,6 +1709,57 @@ msgctxt "contextPrintPreview.label contextPrintPreview.accesskey"
 msgid "Print Pre&view"
 msgstr "Druk&voorskou"
 
+#. Thread Pane Column Picker
+#. This option in the thread pane column picker causes us to reset the
+#. customizations for the thread pane columns in this folder to their default.
+#: columnPicker.resetToInbox.label
+msgid "Reset columns to default"
+msgstr ""
+
+#. This option in the thread pane column picker pops up a sub-menu containing
+#. the "columnPicker.applyToFolder.label" and
+#. "columnPicker.applyToFolderAndChildren.label" options.  This item indicates
+#. a desire to apply the currently displayed set of columns to some other
+#. folder(s).  The sub-menu items indicate whether we want to apply it to just
+#. a folder or also its children.
+#: columnPicker.applyTo.label
+msgid "Apply columns to…"
+msgstr ""
+
+#. This option in the thread pane column picker is found on a sub-menu beneath
+#. the "columnPicker.applyTo.label" alongside
+#. "columnPicker.applyToFolderAndChildren.label".  It indicates a desire to
+#. apply the currently display thread pane column settings to a single folder
+#. that the user selects using the same widget as the move to/copy to
+#. mechanism (via a series of popups).
+#: columnPicker.applyToFolder.label
+#, fuzzy
+msgid "Folder…"
+msgstr "&Vouer…"
+
+#. This option in the thread pane column picker is found on a sub-menu beneath
+#. the "columnPicker.applyTo.label" alongside
+#. "columnPicker.applyToFolder.label".  It indicates a desire to
+#. apply the currently display thread pane column settings to a folder and all
+#. of its descendents.  The user selects the folder using the same widget as the
+#. move to/copy to mechanism (via a series of popups).
+#: columnPicker.applyToFolderAndChildren.label
+msgid "Folder and its children…"
+msgstr ""
+
+#. This is used in the folder selection widget for the
+#. "columnPicker.applyToFolder.label" and
+#. "columnPicker.applyToFolderAndChildren.label" menu options.  Whenever
+#. a folder has children, it results in a menu popup; the first menu item
+#. in that popup is given this label to indicate that that folder should be
+#. selected.  For example, if folder "A" has two children, "B" and "C", then
+#. when the user hovers over "A", a new popup menu will be displayed whose
+#. items are "This folder", "B", and "C".  This is the equivalent of the
+#. "File here" option for the move to/copy to widge.t
+#: columnPicker.thisFolder.label
+msgid "This folder"
+msgstr ""
+
 #. Media (video/audio) controls
 #: contextPlay.label contextPlay.accesskey
 msgid "&Play"
@@ -1742,20 +1817,56 @@ msgstr "Ignoreer waarskuwing"
 msgid "This message doesn't appear to be a scam."
 msgstr "Hierdie boodskap lyk nie na swendelary nie."
 
-#. Message Header Button Box (to show hidden email addresses)
-#: more.label
-msgid "more"
-msgstr "meer"
+#. MDN Bar
+#: mdnBarMessage.label
+msgid ""
+"The sender of this message has asked to be notified when you read this "
+"message. Do you wish to notify the sender?"
+msgstr ""
+
+#: mdnBarIgnoreButton.label
+msgid "Ignore Request"
+msgstr ""
+
+#: mdnBarSendButton.label
+msgid "Send Receipt"
+msgstr ""
 
 #. Quick Search Bar
+#. This is actually the key used for the global message search box; we have
+#. not changed
 #: quickSearchCmd.key
 msgctxt "quickSearchCmd.key"
 msgid "k"
 msgstr "k"
 
-#: searchAllMessages.label
-msgid "Search all messages"
+#. This is the base of the empty text for the global search box.  We replace
+#. #1 with the contents of the appropriate
+#. searchAllMessages.keyLabel2.* value for the platform.
+#. The goal is to convey to the user that typing in the box will allow them
+#. to search for messages globally and that there is a hotkey they can press
+#. to get to the box faster.  If the global indexer is disabled, the search
+#. box will be collapsed and the user will never see this message.
+#: searchAllMessages.label.base
+#, fuzzy
+msgid "Search all messages… #1"
 msgstr "Deursoek alle boodskappe"
+
+#. LOCALIZATION NOTE (searchAllMessages.keyLabel.nonmac):
+#. The description of the key-binding to get into the global search box on
+#. windows and linux (which use the control key).  We use the key defined in
+#. the quickSearchCmd.key entity defined above, the letter should match it.
+#: searchAllMessages.keyLabel2.nonmac
+msgid "&lt;Ctrl+K&gt;"
+msgstr ""
+
+#. LOCALIZATION NOTE (searchAllMessages.keyLabel.mac):
+#. The description of the key-binding to get into the global search box on mac
+#. systems.  We use the key defined in the quickSearchCmd.key entity defined
+#. above, the letter should match it.
+#: searchAllMessages.keyLabel2.mac
+msgid "&lt;&#x2318;K&gt;"
+msgstr ""
 
 #. Message Header Context Menu
 #: AddToAddressBook.label AddToAddressBook.accesskey
@@ -1831,9 +1942,9 @@ msgstr "Kies &almal"
 msgid "&Copy Link Location"
 msgstr "&Kopieer skakelligging"
 
-#: copyImageCmd.label copyImageCmd.accesskey
-msgid "Copy &Image Location"
-msgstr "Kopieer &prentligging"
+#: copyImageAllCmd.label copyImageAllCmd.accesskey
+msgid "Copy &Image"
+msgstr ""
 
 #: copyEmailCmd.label copyEmailCmd.accesskey
 msgid "Copy &Email Address"
@@ -1926,6 +2037,15 @@ msgstr ""
 #: showAllAppsCmdMac.label
 msgid "Show All"
 msgstr "Wys almal"
+
+#~ msgid "&Smart"
+#~ msgstr "&Slim"
+
+#~ msgid "more"
+#~ msgstr "meer"
+
+#~ msgid "Copy &Image Location"
+#~ msgstr "Kopieer &prentligging"
 
 #~ msgid "&Folder..."
 #~ msgstr "&Vouer..."

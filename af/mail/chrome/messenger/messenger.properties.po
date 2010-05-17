@@ -41,7 +41,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-30 13:04+0200\n"
+"POT-Creation-Date: 2010-05-12 17:06+0200\n"
 "PO-Revision-Date: 2009-11-24 17:17+0200\n"
 "Last-Translator: Administrator <>\n"
 "Language-Team: translate-discuss-af@lists.sourceforge.net\n"
@@ -50,7 +50,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.0-rc1\n"
+"X-Generator: Translate Toolkit 1.6.1\n"
 "X-Accelerator-Marker: &\n"
 
 #. # The following are used by the messenger application
@@ -119,8 +119,8 @@ msgstr "Poslêers"
 msgid "Open Message"
 msgstr "Open boodskap"
 
-#. # LOCALIZATION NOTE(defaultSaveMessageAsFileName): Do not translate ".eml" 
-#. # in the line below.  Also, the complete file name should 8.3
+#. # LOCALIZATION NOTE(defaultSaveMessageAsFileName): Do not translate ".eml"
+#. # in the line below. Also, the complete file name should be 8.3.
 #: defaultSaveMessageAsFileName
 msgid "message.eml"
 msgstr "boodskap.eml"
@@ -136,6 +136,10 @@ msgstr "Stoor aanhegsel"
 #: SaveAllAttachments
 msgid "Save All Attachments"
 msgstr "Stoor alle aanhegsels"
+
+#: ChooseFolder
+msgid "Choose Folder"
+msgstr ""
 
 #: LoadingMessageToPrint
 msgid "Loading message to print…"
@@ -470,6 +474,43 @@ msgid ""
 msgstr ""
 "Is u seker u wil die bediener skrap: \n"
 " %S?"
+
+#. # Account Settings - Both Incoming and SMTP server
+#: authNo
+msgid "No authentication"
+msgstr ""
+
+#: authOld
+msgid "Password, original method (insecure)"
+msgstr ""
+
+#: authPasswordCleartextInsecurely
+msgid "Password, transmitted insecurely"
+msgstr ""
+
+#: authPasswordCleartextViaSSL
+msgid "Normal password"
+msgstr ""
+
+#: authPasswordEncrypted
+msgid "Encrypted password"
+msgstr ""
+
+#: authKerberos
+msgid "Kerberos / GSSAPI"
+msgstr ""
+
+#: authNTLM
+msgid "NTLM"
+msgstr ""
+
+#: authAnySecure
+msgid "Any secure method (deprecated)"
+msgstr ""
+
+#: authAny
+msgid "Any method (insecure)"
+msgstr ""
 
 #. # LOCALIZATION NOTE(serverType-nntp): Do not translate "NNTP" in the line below
 #: serverType-nntp
@@ -835,10 +876,10 @@ msgid ""
 "Disk Space preference to prevent the downloading of large messages."
 msgstr ""
 "Die lyf van hierdie boodskap is nie van die bediener afgelaai vir aflyn lees "
-"nie. Om hierdie boodskap te lees, moet u weer aan die netwerk koppel, en "
-"dan 'Aflyn' uit die Lêer-kieslys kies en 'Werk aflyn' ontmerk. In die "
-"toekoms kan u kies watter boodskappe of vouers u aflyn wil lees. Om dit te "
-"doen, kies 'Aflyn' uit die Lêer-kieslys en merk 'Sinchroniseer'. U kan die "
+"nie. Om hierdie boodskap te lees, moet u weer aan die netwerk koppel, en dan "
+"'Aflyn' uit die Lêer-kieslys kies en 'Werk aflyn' ontmerk. In die toekoms "
+"kan u kies watter boodskappe of vouers u aflyn wil lees. Om dit te doen, "
+"kies 'Aflyn' uit die Lêer-kieslys en merk 'Sinchroniseer'. U kan die "
 "skyfspasievoorkeure aanpas om te voorkom dat u groot boodskappe aflaai."
 
 #. # accountCentral
@@ -891,6 +932,8 @@ msgid "Save As…"
 msgstr "Stoor as…"
 
 #: saveLabelAccesskey
+#, fuzzy
+msgctxt "saveLabelAccesskey"
 msgid "A"
 msgstr "A"
 
@@ -1198,31 +1241,31 @@ msgid "D"
 msgstr "D"
 
 #. # Folder Pane Header Title Strings
-#: folderPaneHeader_all
+#: folderPaneModeHeader_all
 msgid "All Folders"
 msgstr "Alle vouers"
 
-#: folderPaneHeader_unread
+#: folderPaneModeHeader_unread
 msgid "Unread Folders"
 msgstr "Ongelese vouers"
 
-#: folderPaneHeader_favorite
+#: folderPaneModeHeader_favorite
 msgid "Favorite Folders"
 msgstr "Gunstling-vouers"
 
-#: folderPaneHeader_recent
+#: folderPaneModeHeader_recent
 msgid "Recent Folders"
 msgstr "Onlangse vouers"
 
-#: folderPaneHeader_smart
-msgctxt "folderPaneHeader_smart"
-msgid "Smart Folders"
-msgstr "Slim vouers"
+#: folderPaneModeHeader_smart
+msgctxt "folderPaneModeHeader_smart"
+msgid "Unified Folders"
+msgstr ""
 
-#: smartAccountName
-msgctxt "smartAccountName"
-msgid "Smart Folders"
-msgstr "Slim vouers"
+#: unifiedAccountName
+msgctxt "unifiedAccountName"
+msgid "Unified Folders"
+msgstr ""
 
 #. # Copy / Move to Folder Again
 #. #LOCALIZATION NOTE %1$S is the name of the folder we will move to. moveToFolderAgainAccessKey
@@ -1325,6 +1368,17 @@ msgstr "Lêer leeg"
 msgid "The file %S is empty."
 msgstr "Die lêer %S is leeg."
 
+#. # LOCALIZATION NOTE (headerMoreAddrs): semicolon separated list of plural
+#. # forms of the word "more" as used after the number of addresses
+#. # currently hidden while displaying a header such as "to", "cc", or "bcc"
+#. # in the message header box.  English has two identical forms here, so it will
+#. # construct strings that look like (for example) "1 more" or "20 more".
+#. # <http://developer.mozilla.org/en/docs/Localization_and_Plurals> has details
+#. # on this mechanism.
+#: headerMoreAddrs
+msgid "#1 more;#1 more"
+msgstr ""
+
 #. # LOCALIZATION NOTE (headertoFieldYou): second person prepositional object
 #. # pronoun used in the "to" header of the message header pane.  This is also
 #. # used for the fallback case if a header-specific localization is not
@@ -1366,6 +1420,47 @@ msgstr "U"
 #: loadingTab
 msgid "Loading…"
 msgstr "Laai tans…"
+
+#. # LOCALIZATION NOTE (xpinstallPromptWarning):
+#. # %1$S is replaced by brandShortName, %2$S is replaced by the host name of the
+#. # site.
+#: xpinstallPromptWarning
+msgid ""
+"%1$S prevented the site (%2$S) from asking you to install software on your "
+"computer."
+msgstr ""
+
+#: xpinstallPromptAllowButton
+msgctxt "xpinstallPromptAllowButton"
+msgid "Allow"
+msgstr ""
+
+#. # LOCALIZATION NOTE (xpinstallPromptAllowButton.accesskey):
+#. # Accessibility Note:
+#. # Be sure you do not choose an accesskey that is used elsewhere in the active
+#. # context (e.g. main menu bar, submenu of the warning popup button).
+#. # See http://www.mozilla.org/access/keyboard/accesskey for details
+#: xpinstallPromptAllowButton.accesskey
+msgctxt "xpinstallPromptAllowButton.accesskey"
+msgid "A"
+msgstr ""
+
+#: xpinstallDisabledMessageLocked
+msgid "Software installation has been disabled by your system administrator."
+msgstr ""
+
+#: xpinstallDisabledMessage
+msgid ""
+"Software installation is currently disabled. Click Enable and try again."
+msgstr ""
+
+#: xpinstallDisabledButton
+msgid "Enable"
+msgstr ""
+
+#: xpinstallDisabledButton.accesskey
+msgid "n"
+msgstr ""
 
 #: applyToCollapsedMsgsTitle
 msgid "Confirm Delete of Messages in Collapsed Thread(s)"
@@ -1409,6 +1504,95 @@ msgstr "Verstek"
 #: extensions.{972ce4c6-7e08-4474-a285-3208198ce6fd}.description
 msgid "The default theme."
 msgstr "Die verstektema."
+
+#. # LOCALIZATION NOTE (threadPane.columnPicker.confirmFolder.noChildren.title):
+#. # When the user selects a folder to apply the currently displayed columns to
+#. # via the "columnPicker.applyToFolder.label" menu option, this is the title of
+#. # the confirmation dialog used to verify they selected the correct folder.  This
+#. # is the case in which we apply the columns only to the folder and not to any of
+#. # its children.
+#: threadPane.columnPicker.confirmFolder.noChildren.title
+msgctxt "threadPane.columnPicker.confirmFolder.noChildren.title"
+msgid "Apply Changes?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (threadPane.columnPicker.confirmFolder.noChildren.message):
+#. # When the user selects a folder to apply the currently displayed columns to
+#. # via the "columnPicker.applyToFolder.label" menu option, this is the text of
+#. # the confirmation dialog used to verify they selected the correct folder.  The
+#. # string '%S' is replaced with the name of the folder the user selected in
+#. # order to help them confirm they picked what they thought they picked.  This
+#. # is the case in which we apply the columns only to the folder and not to any of
+#. # its children.
+#: threadPane.columnPicker.confirmFolder.noChildren.message
+msgid "Apply the current folder's columns to %S?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (threadPane.columnPicker.confirmFolder.withChildren.title):
+#. # When the user selects a folder to apply the currently displayed columns to via
+#. # the "columnPicker.applyToFolderAndChildren.label" menu option, this is the
+#. # title of the confirmation dialog used to verify they selected the correct
+#. # folder.  This is the case in which we apply the columns to the folder and all
+#. # of its children.
+#: threadPane.columnPicker.confirmFolder.withChildren.title
+msgctxt "threadPane.columnPicker.confirmFolder.withChildren.title"
+msgid "Apply Changes?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (threadPane.columnPicker.confirmFolder.withChildren.message):
+#. # When the user selects a folder to apply the currently displayed columns to via
+#. # the "columnPicker.applyToFolderAndChildren.label" menu option, this is the
+#. # text of the confirmation dialog used to verify they selected the correct
+#. # folder.  The string '%S' is replaced with the name of the folder the user
+#. # selected in order to help them confirm they picked what they thought they
+#. # picked.  This is the case in which we apply the columns to the folder and all
+#. # of its children.
+#: threadPane.columnPicker.confirmFolder.withChildren.message
+msgid "Apply the current folder's columns to %S and its children?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
+#. # the host name of the site.
+#: lwthemeInstallRequest.message
+msgid "This site (%S) attempted to install a theme."
+msgstr ""
+
+#: lwthemeInstallRequest.allowButton
+msgctxt "lwthemeInstallRequest.allowButton"
+msgid "Allow"
+msgstr ""
+
+#: lwthemeInstallRequest.allowButton.accesskey
+msgid "a"
+msgstr ""
+
+#: lwthemePostInstallNotification.message
+msgid "A new theme has been installed."
+msgstr ""
+
+#: lwthemePostInstallNotification.undoButton
+msgid "Undo"
+msgstr ""
+
+#: lwthemePostInstallNotification.undoButton.accesskey
+msgid "U"
+msgstr ""
+
+#: lwthemePostInstallNotification.manageButton
+msgid "Manage Themes…"
+msgstr ""
+
+#: lwthemePostInstallNotification.manageButton.accesskey
+msgid "M"
+msgstr ""
+
+#~ msgctxt "folderPaneHeader_smart"
+#~ msgid "Smart Folders"
+#~ msgstr "Slim vouers"
+
+#~ msgctxt "smartAccountName"
+#~ msgid "Smart Folders"
+#~ msgstr "Slim vouers"
 
 #~ msgid "Rename Account..."
 #~ msgstr "Hernoem rekening..."

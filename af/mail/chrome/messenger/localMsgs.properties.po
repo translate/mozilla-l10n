@@ -39,7 +39,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-30 13:04+0200\n"
+"POT-Creation-Date: 2010-05-12 17:06+0200\n"
 "PO-Revision-Date: 2009-11-02 13:36+0200\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: translate-discuss-af@lists.sourceforge.net\n"
@@ -48,13 +48,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.4.1\n"
+"X-Generator: Translate Toolkit 1.6.1\n"
 "X-Accelerator-Marker: &\n"
 
 #. #
 #. # The following are used by the local mail code to display progress/status/error messages
 #. #
-#. ## The following are used by the local mail code to display progress/status/error messages#
 #: pop3EnterPasswordPromptTitle
 msgid "Enter your password"
 msgstr "Tik u wagwoord"
@@ -253,13 +252,6 @@ msgstr ""
 "Hierdie vouer word tans verwerk. Wag asseblief totdat die verwerking "
 "afgehandel is voor u boodskappe kry."
 
-#. # secure authentication failed
-#. ## @name CANNOT_PROCESS_SECURE_AUTH
-#. ## @loc None
-#: 4030
-msgid "Mail server does not support secure authentication."
-msgstr "Posbediener werk nie met beveiligde magtiging nie."
-
 #. ## @name MOVEMAIL_CANT_OPEN_SPOOL_FILE
 #. ## @loc None
 #: 4033
@@ -330,8 +322,8 @@ msgstr ""
 "Die POP3-posbediener (%S) werk nie met UIDL of XTND XLST nie, wat vereis "
 "word om die ''Laat op bediener''-, ''Maksimum boodskapgrootte'' of ''Kry net "
 "kopskrifte''-opsies te implementeer. Om u pos af te laai, skakel hierdie "
-"opsies in u posbediener se Bedienerinstellings af in die "
-"Rekeninginstellings-venster."
+"opsies in u posbediener se Bedienerinstellings af in die Rekeninginstellings-"
+"venster."
 
 #. # Status - the server doesn't support the top command
 #. ## @name POP3_SERVER_DOES_NOT_SUPPORT_THE_TOP_COMMAND
@@ -351,20 +343,6 @@ msgstr ""
 "nie hiermee werk nie, kan die ''Maksimum boodskapgrootte'' of ''Kry net "
 "kopskrifte''-voorkeure nie geïmplementeer word nie.  Hierdie opsie is "
 "gedeaktiveer, en boodskappe sal afgelaai word ongeag die grootte."
-
-#. # secure authentication failed and unsure why
-#. ## @name CANNOT_PROCESS_APOP_AUTH
-#. ## @loc None
-#: 4042
-msgid ""
-"The mail server does not support secure authentication or you have entered "
-"an incorrect password. Please check your password, or turn off secure "
-"authentication in the Server Settings for your mail server in the Account "
-"Settings window.\n"
-msgstr "Die posbediener werk nie met beveiligde magtiging nie, of u het 'n verkeerde "
-"wagwoord ingetik. Kontroleer dus u wagwoord, of skakel beveiligde magtiging "
-"in u posbediener se Bedienerinstellings af in die Rekeninginstellings-"
-"venster.\n"
 
 #. ## @name NS_ERROR_COULD_NOT_CONNECT_VIA_TLS
 #. ## @loc None
@@ -399,6 +377,78 @@ msgstr "Skrap vouer"
 #: 4046
 msgid "&Delete Folder"
 msgstr "&Skrap vouer"
+
+#. ## @name POP3_AUTH_INTERNAL_ERROR
+#. ## @loc None
+#: 4047
+msgid ""
+"Internal state error during POP3 server authentication. This is an internal, "
+"unexpected error in the application, please report it as bug."
+msgstr ""
+
+#. ## @name POP3_AUTH_CHANGE_ENCRYPT_TO_PLAIN_NO_SSL
+#. ## @loc None
+#: 4048
+msgid ""
+"This POP3 server does not seem to support encrypted passwords. If you just "
+"set up the account, please try changing to 'Password, transmitted "
+"insecurely' as the 'Authentication method' in the 'Account Settings | Server "
+"settings'. If it used to work and now suddenly fails, this is a common "
+"scenario how someone could steal your password."
+msgstr ""
+
+#. ## @name POP3_AUTH_CHANGE_ENCRYPT_TO_PLAIN_SSL
+#. ## @loc None
+#: 4049
+msgid ""
+"This POP3 server does not seem to support encrypted passwords. If you just "
+"set up this account, please try changing to 'Normal password' as the "
+"'Authentication method' in the 'Account Settings | Server settings'. If it "
+"used to work and now suddenly fails, please contact your email administrator "
+"or provider."
+msgstr ""
+
+#. ## @name POP3_AUTH_CHANGE_PLAIN_TO_ENCRYPT
+#. ## @loc None
+#: 4050
+msgid ""
+"This POP3 server does not allow plaintext passwords. Please try changing to "
+"'Encrypted password' as the 'Authentication method' in the 'Account Settings "
+"| Server settings'."
+msgstr ""
+
+#. # Authentication server caps and pref don't match
+#. ## @name POP3_AUTH_MECH_NOT_SUPPORTED
+#. ## @loc None
+#: 4051
+msgid ""
+"The server does not support the selected authentication method. Please "
+"change the 'Authentication method' in the 'Account Settings | Server "
+"settings'."
+msgstr ""
+
+#. # Status - Could not log in to GSSAPI, and it was the only method
+#. ## @name POP3_GSSAPI_FAILURE
+#. ## @loc None
+#: 4052
+msgid ""
+"The Kerberos/GSSAPI ticket was not accepted by the POP server. Please check "
+"that you are logged in to the Kerberos/GSSAPI realm."
+msgstr ""
+
+#~ msgid "Mail server does not support secure authentication."
+#~ msgstr "Posbediener werk nie met beveiligde magtiging nie."
+
+#~ msgid ""
+#~ "The mail server does not support secure authentication or you have "
+#~ "entered an incorrect password. Please check your password, or turn off "
+#~ "secure authentication in the Server Settings for your mail server in the "
+#~ "Account Settings window.\n"
+#~ msgstr ""
+#~ "Die posbediener werk nie met beveiligde magtiging nie, of u het 'n "
+#~ "verkeerde wagwoord ingetik. Kontroleer dus u wagwoord, of skakel "
+#~ "beveiligde magtiging in u posbediener se Bedienerinstellings af in die "
+#~ "Rekeninginstellings-venster.\n"
 
 #~ msgid "Application is out of memory."
 #~ msgstr "Die toepassing se geheue is op."
