@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-11 22:37+0200\n"
+"POT-Creation-Date: 2010-08-11 23:03+0200\n"
 "PO-Revision-Date: 2010-07-30 09:08+0200\n"
 "Last-Translator: admin <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,20 +37,54 @@ msgstr "Go hwetša laesense ya %S %S…"
 msgid "Getting more details about %S %S…"
 msgstr "Go hwetša dintlha ka botlalo ka %S %S…"
 
-#: intro_major_app_and_version
-msgid "Do you want to upgrade to %S %S now?"
-msgstr "Na o nyaka go mpshafatša go %S %S gona bjale?"
+#. # LOCALIZATION NOTE: When present
+#. # %1$S is the brandShortName. Ex: MyApplication
+#. # %2$S is the update version - provided by the update xml. Ex: version 10.0.5
+#. # %3$S is the build identifier - provided by the update xml. Ex: 20081022033543
+#: updateNightlyName
+msgid "%1$S %2$S %3$S nightly"
+msgstr ""
 
-#. # LOCALIZATION NOTE: The 1st %S is brandShortName and 2nd %S is update version
-#. # and the 3rd %S is brandShortName. where update version from the update xml
-#: incompatibleAddons_major
+#: incompatAddons_major
+#, fuzzy
 msgid ""
-"Some of your add-ons won't work with %S %S, and will be disabled. As soon as "
-"they are made compatible, %S will update and re-enable these add-ons:"
+"Some of your add-ons won't work with %1$S %2$S, and will be disabled. As "
+"soon as they are made compatible, %1$S will update and re-enable these add-"
+"ons:"
 msgstr ""
 "Ditlaleletši tše dingwe tša gago di ka se šome ka %S %S, gomme di tla "
 "šitišwa. Ka pejana ka morago ga ge di dirilwe gore di swanelane, %S e tla "
 "mpshafatša le go kgonagatša ditlaleletši tše gape:"
+
+#: incompatAddons_minor
+#, fuzzy
+msgid ""
+"Some of your add-ons won't work with this update, and will be disabled. As "
+"soon as they are made compatible, %1$S will update and re-enable these add-"
+"ons:"
+msgstr ""
+"Ditlaleletši tše dingwe tša gago di ka se šome ka kaonafatšo ye, gomme di "
+"swanetše go šitišwa. Ka pejana ka morago ga ge di dirilwe gore di swanelane, "
+"%S e tla mpshafatša le go kgonagatša ditlaleletši tše gape:"
+
+#: intro_major
+#, fuzzy
+msgid "Do you want to upgrade to %1$S %2$S now?"
+msgstr "Na o nyaka go mpshafatša go %S %S gona bjale?"
+
+#: intro_minor
+#, fuzzy
+msgid "A security and stability update for %1$S is available:"
+msgstr "Kaonafatšo ya tšhireletšo le go tia tša %S e a hwetšagala:"
+
+#. # LOCALIZATION NOTE:
+#. # %1$S is the add-on name
+#. # Example: My Addon
+#. # %2$S is the add-on version.
+#. # Example: 2.1.5
+#: addonLabel
+msgid "%1$S %2$S"
+msgstr "%1$S %2$S"
 
 #: updateType_major
 msgid "New Version"
@@ -61,19 +95,6 @@ msgid "Security Update"
 msgstr "Kaonafatšo ya tšhireletšo"
 
 #. # LOCALIZATION NOTE: When present %S is brandShortName
-#: incompatibleAddons_minor
-msgid ""
-"Some of your add-ons won't work with this update, and must be disabled. As "
-"soon as they are made compatible, %S will update and re-enable these add-ons:"
-msgstr ""
-"Ditlaleletši tše dingwe tša gago di ka se šome ka kaonafatšo ye, gomme di "
-"swanetše go šitišwa. Ka pejana ka morago ga ge di dirilwe gore di swanelane, "
-"%S e tla mpshafatša le go kgonagatša ditlaleletši tše gape:"
-
-#: intro_minor_app
-msgid "A security and stability update for %S is available:"
-msgstr "Kaonafatšo ya tšhireletšo le go tia tša %S e a hwetšagala:"
-
 #: verificationError
 msgid "%S could not confirm the integrity of the update package."
 msgstr "%S e be e ka se kgonthišetše potego ya sephuthelwana sa kaonafatšo."
@@ -245,14 +266,6 @@ msgstr "Kaonafatšo ga se e lokelwe (tirišo ya go phetša e paletšwe)"
 
 #. # LOCALIZATION NOTE: When present %S is the update name provided by the remote
 #. # update xml for the following
-#: downloadingPrefix
-msgid "Downloading %S…"
-msgstr "Go laolla %S…"
-
-#: pausedName
-msgid "Paused downloading %S"
-msgstr "E khutšitše go laolla %S"
-
 #: updateAvailable_minor.title
 msgctxt "updateAvailable_minor.title"
 msgid "%S available"
@@ -290,10 +303,11 @@ msgid "Install the new version…"
 msgstr "Lokela kgatišo e mpsha…"
 
 #. # LOCALIZATION NOTE: %S is the amount downloaded so far
-#. # example: Downloaded 879 KB of 2.1 MB
-#: pausedStatus
-msgid "Downloaded %S"
-msgstr "Laollotše %S"
+#. # example: Paused —  879 KB of 2.1 MB
+#: downloadPausedStatus
+#, fuzzy
+msgid "Paused —  %S"
+msgstr "Khutšitše —  #1"
 
 #: check_error-200
 msgid "Update XML file malformed (200)"
@@ -371,6 +385,15 @@ msgstr ""
 #: check_error-verification_failed
 msgid "The integrity of the update could not be verified"
 msgstr "Potego ya kaonafatšo e be e ka se netefatšwe"
+
+#~ msgid "Downloading %S…"
+#~ msgstr "Go laolla %S…"
+
+#~ msgid "Paused downloading %S"
+#~ msgstr "E khutšitše go laolla %S"
+
+#~ msgid "Downloaded %S"
+#~ msgstr "Laollotše %S"
 
 #~ msgid "An important Security Update for %S is available:"
 #~ msgstr "Kaonafatšo ya Tšhireletšo ye bohlokwa ya %S e gona:"
