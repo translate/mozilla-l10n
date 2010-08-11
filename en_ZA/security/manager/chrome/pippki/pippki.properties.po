@@ -34,12 +34,12 @@
 #. # the terms of any one of the MPL, the GPL or the LGPL.
 #. #
 #. # ***** END LICENSE BLOCK *****
-#. extracted from en-US/security/manager/chrome/pippki/pippki.properties
+#. extracted from /home/rail/pootle/translate-toolkit-mozilla/out/mozilla-central/mozilla-l10n/en-US/security/manager/chrome/pippki/pippki.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-24 13:39+0200\n"
+"POT-Creation-Date: 2010-07-25 00:06+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.3.0\n"
+"X-Generator: Translate Toolkit 1.5.3\n"
 "X-Accelerator-Marker: &\n"
 
 #: SignedBy
@@ -159,21 +159,25 @@ msgstr ""
 msgid "Delete your Certificates"
 msgstr "Delete your Certificates"
 
-#: deleteCaCertConfirm
-msgid "Are you sure you want to delete these CA certificates?"
-msgstr "Are you sure you want to delete these CA certificates?"
-
-#: deleteCaCertImpactX
+#: deleteCaCertConfirm2
 msgid ""
-"If you delete a certificate authority (CA) certificate, this application "
-"will no longer trust any certificates issued by that CA."
+"You have requested to delete these CA certificates. For built-in "
+"certificates all trust will be removed, which has the same effect. Are you "
+"sure you want to delete or distrust?"
+msgstr ""
+
+#: deleteCaCertImpactX2
+#, fuzzy
+msgid ""
+"If you delete or distrust a certificate authority (CA) certificate, this "
+"application will no longer trust any certificates issued by that CA."
 msgstr ""
 "If you delete a certificate authority (CA) certificate, this application "
 "will no longer trust any certificates issued by that CA."
 
-#: deleteCaCertTitle
-msgid "Delete CA Certificates"
-msgstr "Delete CA Certificates"
+#: deleteCaCertTitle2
+msgid "Delete or Distrust CA Certificates"
+msgstr ""
 
 #: deleteEmailCertConfirm
 msgid "Are you sure you want to delete these people's e-mail certificates?"
@@ -298,9 +302,10 @@ msgstr ""
 "The web site %S does not support encryption for the page you are viewing."
 
 #: pageInfo_Privacy_None2
+#, fuzzy
 msgid ""
 "Information sent over the Internet without encryption can be seen by other "
-"people while it is in transit."
+"people while it is in transit. "
 msgstr ""
 "Information sent over the Internet without encryption can be seen by other "
 "people while it is in transit."
@@ -309,8 +314,11 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "The page you are viewing is not encrypted."
 
-#: pageInfo_StrongEncryption
-msgid "Connection Encrypted: High-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_StrongEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 msgstr "Connection Encrypted: High-grade Encryption (%S %S bit)"
 
 #: pageInfo_Privacy_Strong1
@@ -331,8 +339,11 @@ msgstr ""
 "information travelling between computers. It is therefore very unlikely that "
 "anyone read this page as it travelled across the network."
 
-#: pageInfo_WeakEncryption
-msgid "Connection Encrypted: Low-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_WeakEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
 msgstr "Connection Encrypted: Low-grade Encryption (%S %S bit)"
 
 #: pageInfo_Privacy_Weak1
@@ -402,7 +413,8 @@ msgid "Master Password successfully changed."
 msgstr "Master Password successfully changed."
 
 #: pw_erased_ok
-msgid "Warning! You have deleted your Master Password."
+#, fuzzy
+msgid "Warning! You have deleted your Master Password. "
 msgstr "Warning! You have deleted your Master Password."
 
 #: pw_not_wanted
@@ -506,6 +518,12 @@ msgid ""
 msgstr ""
 "FIPS mode requires that you have a Master Password set for each security "
 "device. Please set the password before trying to enable FIPS mode."
+
+#: unable_to_toggle_fips
+msgid ""
+"Unable to change the FIPS mode for the security device. It is recommended "
+"that you exit and restart this application."
+msgstr ""
 
 #. # CRL next update.
 #: crlNextUpdateMsg1
@@ -752,6 +770,12 @@ msgstr "Unable to obtain identification status for the given site."
 #: addExceptionConnectionFailed
 msgid "Connection Failed"
 msgstr "Connection Failed"
+
+#~ msgid "Are you sure you want to delete these CA certificates?"
+#~ msgstr "Are you sure you want to delete these CA certificates?"
+
+#~ msgid "Delete CA Certificates"
+#~ msgstr "Delete CA Certificates"
 
 #~ msgid "deleteSslFlag"
 #~ msgstr "deleteSslFlag"

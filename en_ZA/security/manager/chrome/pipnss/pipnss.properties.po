@@ -38,12 +38,12 @@
 #. # the terms of any one of the MPL, the GPL or the LGPL.
 #. #
 #. # ***** END LICENSE BLOCK *****
-#. extracted from en-US/security/manager/chrome/pipnss/pipnss.properties
+#. extracted from /home/rail/pootle/translate-toolkit-mozilla/out/mozilla-central/mozilla-l10n/en-US/security/manager/chrome/pipnss/pipnss.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-24 13:39+0200\n"
+"POT-Creation-Date: 2010-06-25 12:58+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.3.0\n"
+"X-Generator: Translate Toolkit 1.5.3\n"
 "X-Accelerator-Marker: &\n"
 
 #: SignedBy
@@ -308,6 +308,15 @@ msgstr "DN"
 #: CertDumpAVADC
 msgid "DC"
 msgstr "DC"
+
+#: CertDumpSurname
+#, fuzzy
+msgid "Surname"
+msgstr "Suriname"
+
+#: CertDumpGivenName
+msgid "Given Name"
+msgstr ""
 
 #: CertDumpValidity
 msgid "Validity"
@@ -1241,6 +1250,12 @@ msgid ""
 msgstr ""
 "The certificate is not trusted because the issuer certificate is unknown."
 
+#: certErrorTrust_MissingChain
+#, fuzzy
+msgid "The certificate is not trusted because no issuer chain was provided."
+msgstr ""
+"The certificate is not trusted because the issuer certificate has expired."
+
 #: certErrorTrust_CaInvalid
 msgid ""
 "The certificate is not trusted because it was issued by an invalid CA "
@@ -1272,8 +1287,8 @@ msgstr "The certificate is not valid for the name %S."
 #. # LOCALIZATION NOTE (certErrorMismatchSingle2): Do not translate <a id="cert_domain_link" title="%1$S">%1$S</a>
 #: certErrorMismatchSingle2
 msgid ""
-"The certificate is only valid for <a id=\"cert_domain_link\" title=\"%1$S\">%"
-"1$S</a>"
+"The certificate is only valid for <a id=\"cert_domain_link\" title=\"%1$S\">"
+"%1$S</a>"
 msgstr ""
 
 #: certErrorMismatchSinglePlain
@@ -1289,13 +1304,15 @@ msgstr "The certificate is only valid for the following names:"
 msgid "The certificate is not valid for any server names."
 msgstr "The certificate is not valid for any server names."
 
-#: certErrorExpired
-msgid "The certificate expired on %S."
-msgstr "The certificate expired on %S."
+#. # LOCALIZATION NOTE (certErrorExpiredNow): Do not translate %1$S (date+time of expired certificate) or %2$S (current date+time)
+#: certErrorExpiredNow
+msgid "The certificate expired on %1$S. The current time is %2$S."
+msgstr ""
 
-#: certErrorNotYetValid
-msgid "The certificate will not be valid until %S."
-msgstr "The certificate will not be valid until %S."
+#. # LOCALIZATION NOTE (certErrorNotYetValidNow): Do not translate %1$S (date+time certificate will become valid) or %2$S (current date+time)
+#: certErrorNotYetValidNow
+msgid "The certificate will not be valid until %1$S. The current time is %2$S."
+msgstr ""
 
 #: certErrorCodePrefix
 msgid "(Error code: %S)"
@@ -1367,7 +1384,8 @@ msgid "Download of the CRL failed due to Network problems."
 msgstr "Download of the CRL failed due to Network problems."
 
 #: CrlImportFailureReasonUnknown
-msgid "Error Importing CRL to local Database. Error Code:"
+#, fuzzy
+msgid "Error Importing CRL to local Database. Error Code: "
 msgstr "Error Importing CRL to local Database. Error Code:"
 
 #: CrlImportFailure2
@@ -1525,6 +1543,12 @@ msgstr "Permanent"
 #: CertExceptionTemporary
 msgid "Temporary"
 msgstr "Temporary"
+
+#~ msgid "The certificate expired on %S."
+#~ msgstr "The certificate expired on %S."
+
+#~ msgid "The certificate will not be valid until %S."
+#~ msgstr "The certificate will not be valid until %S."
 
 #~ msgid "%1$s's %2$s ID #%3$d"
 #~ msgstr "%1$s's %2$s ID #%3$d"

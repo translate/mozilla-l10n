@@ -1,9 +1,9 @@
-#. extracted from en-US/toolkit/chrome/mozapps/update/updates.properties
+#. extracted from /home/rail/pootle/translate-toolkit-mozilla/out/mozilla-central/mozilla-l10n/en-US/toolkit/chrome/mozapps/update/updates.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-24 13:39+0200\n"
+"POT-Creation-Date: 2010-06-25 12:58+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.3.0\n"
+"X-Generator: Translate Toolkit 1.5.3\n"
 "X-Accelerator-Marker: &\n"
 
 #. # LOCALIZATION NOTE: The 1st %S is the update name and the 2nd %S is the build
@@ -36,17 +36,44 @@ msgstr "Getting licence for %S %S…"
 msgid "Getting more details about %S %S…"
 msgstr "Getting more details about %S %S…"
 
-#: intro_major_app_and_version
-msgid "Do you want to upgrade to %S %S now?"
+#. # LOCALIZATION NOTE: When present
+#. # %1$S is the brandShortName. Ex: MyApplication
+#. # %2$S is the update version - provided by the update xml. Ex: version 10.0.5
+#. # %3$S is the build identifier - provided by the update xml. Ex: 20081022033543
+#: updateNightlyName
+msgid "%1$S %2$S %3$S nightly"
 msgstr ""
 
-#. # LOCALIZATION NOTE: The 1st %S is brandShortName and 2nd %S is update version
-#. # and the 3rd %S is brandShortName. where update version from the update xml
-#: incompatibleAddons_major
+#: incompatAddons_major
 msgid ""
-"Some of your add-ons won't work with %S %S, and will be disabled. As soon as "
-"they are made compatible, %S will update and re-enable these add-ons:"
+"Some of your add-ons won't work with %1$S %2$S, and will be disabled. As "
+"soon as they are made compatible, %1$S will update and re-enable these add-"
+"ons:"
 msgstr ""
+
+#: incompatAddons_minor
+msgid ""
+"Some of your add-ons won't work with this update, and will be disabled. As "
+"soon as they are made compatible, %1$S will update and re-enable these add-"
+"ons:"
+msgstr ""
+
+#: intro_major
+msgid "Do you want to upgrade to %1$S %2$S now?"
+msgstr ""
+
+#: intro_minor
+msgid "A security and stability update for %1$S is available:"
+msgstr ""
+
+#. # LOCALIZATION NOTE:
+#. # %1$S is the add-on name
+#. # Example: My Addon
+#. # %2$S is the add-on version.
+#. # Example: 2.1.5
+#: addonLabel
+msgid "%1$S %2$S"
+msgstr "%1$S %2$S"
 
 #: updateType_major
 msgid "New Version"
@@ -57,16 +84,6 @@ msgid "Security Update"
 msgstr "Security Update"
 
 #. # LOCALIZATION NOTE: When present %S is brandShortName
-#: incompatibleAddons_minor
-msgid ""
-"Some of your add-ons won't work with this update, and must be disabled. As "
-"soon as they are made compatible, %S will update and re-enable these add-ons:"
-msgstr ""
-
-#: intro_minor_app
-msgid "A security and stability update for %S is available:"
-msgstr ""
-
 #: verificationError
 msgid "%S could not confirm the integrity of the update package."
 msgstr "%S could not confirm the integrity of the update package."
@@ -85,11 +102,11 @@ msgstr ""
 
 #: updateMoreInfoContentNotFound
 msgid ""
-"Additional details about this version could not be found. Please visit the %"
-"S homepage for more information."
+"Additional details about this version could not be found. Please visit the "
+"%S homepage for more information."
 msgstr ""
-"Additional details about this version could not be found. Please visit the %"
-"S homepage for more information."
+"Additional details about this version could not be found. Please visit the "
+"%S homepage for more information."
 
 #: resumePausedAfterCloseTitle
 msgid "Software Update"
@@ -241,14 +258,6 @@ msgstr "The Update could not be installed (Patch Apply Failed)"
 
 #. # LOCALIZATION NOTE: When present %S is the update name provided by the remote
 #. # update xml for the following
-#: downloadingPrefix
-msgid "Downloading %S…"
-msgstr "Downloading %S…"
-
-#: pausedName
-msgid "Paused downloading %S"
-msgstr "Paused downloading %S"
-
 #: updateAvailable_minor.title
 msgctxt "updateAvailable_minor.title"
 msgid "%S available"
@@ -286,11 +295,11 @@ msgid "Install the new version…"
 msgstr "Install the new version"
 
 #. # LOCALIZATION NOTE: %S is the amount downloaded so far
-#. # example: Downloaded 879 KB of 2.1 MB
-#: pausedStatus
+#. # example: Paused —  879 KB of 2.1 MB
+#: downloadPausedStatus
 #, fuzzy
-msgid "Downloaded %S"
-msgstr "Downloading %S"
+msgid "Paused —  %S"
+msgstr "Paused   #1"
 
 #: check_error-200
 #, fuzzy
@@ -375,6 +384,12 @@ msgstr ""
 #: check_error-verification_failed
 msgid "The integrity of the update could not be verified"
 msgstr ""
+
+#~ msgid "Downloading %S…"
+#~ msgstr "Downloading %S…"
+
+#~ msgid "Paused downloading %S"
+#~ msgstr "Paused downloading %S"
 
 #~ msgid "An update for %S is available:"
 #~ msgstr "An update for %S is available:"
@@ -524,18 +539,18 @@ msgstr ""
 #~ "then restart %S to try again."
 
 #~ msgid ""
-#~ "The update you just downloaded will be installed the next time you start %"
-#~ "S."
+#~ "The update you just downloaded will be installed the next time you start "
+#~ "%S."
 #~ msgstr ""
-#~ "The update you just downloaded will be installed the next time you start %"
-#~ "S."
+#~ "The update you just downloaded will be installed the next time you start "
+#~ "%S."
 
 #~ msgid ""
-#~ "https://aus.mozilla.org/update2/0/%PRODUCT%/%VERSION%/%BUILD_ID%/%"
-#~ "BUILD_TARGET%/%LOCALE%/update.xml"
+#~ "https://aus.mozilla.org/update2/0/%PRODUCT%/%VERSION%/%BUILD_ID%/"
+#~ "%BUILD_TARGET%/%LOCALE%/update.xml"
 #~ msgstr ""
-#~ "https://aus.mozilla.org/update2/0/%PRODUCT%/%VERSION%/%BUILD_ID%/%"
-#~ "BUILD_TARGET%/%LOCALE%/update.xml"
+#~ "https://aus.mozilla.org/update2/0/%PRODUCT%/%VERSION%/%BUILD_ID%/"
+#~ "%BUILD_TARGET%/%LOCALE%/update.xml"
 
 #~ msgid "http://www.mozilla.org/update"
 #~ msgstr "http://www.mozilla.org/update"
