@@ -39,7 +39,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-11 22:37+0200\n"
+"POT-Creation-Date: 2010-08-11 23:03+0200\n"
 "PO-Revision-Date: 2010-07-30 09:08+0200\n"
 "Last-Translator: admin <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,25 +161,26 @@ msgstr ""
 msgid "Delete your Certificates"
 msgstr "Phumola Disetifikheiti tša gago"
 
-#: deleteCaCertConfirm
-msgid "Are you sure you want to delete these CA certificates?"
+#: deleteCaCertConfirm2
+msgid ""
+"You have requested to delete these CA certificates. For built-in "
+"certificates all trust will be removed, which has the same effect. Are you "
+"sure you want to delete or distrust?"
 msgstr ""
-"E ka ba o na le bonnete bja gore o nyaka go phumola disetifikheiti tše tša "
-"CA?"
 
-#: deleteCaCertImpactX
+#: deleteCaCertImpactX2
 #, fuzzy
 msgid ""
-"If you delete a certificate authority (CA) certificate, this application "
-"will no longer trust any certificates issued by that CA."
+"If you delete or distrust a certificate authority (CA) certificate, this "
+"application will no longer trust any certificates issued by that CA."
 msgstr ""
 "Ge o phumola stifikheiti sa taolo ya setifikheiti (CA), sefetleki sa gago se "
 "ka se sa tshepha setifikheiti se sengwe le se sengwe seo se ntšhwago ke CA "
 "yeo."
 
-#: deleteCaCertTitle
-msgid "Delete CA Certificates"
-msgstr "Phumola Disetifikheiti tša CA"
+#: deleteCaCertTitle2
+msgid "Delete or Distrust CA Certificates"
+msgstr ""
 
 #: deleteEmailCertConfirm
 msgid "Are you sure you want to delete these people's e-mail certificates?"
@@ -333,8 +334,11 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Letlakala leo o le lebeletšego ga se la enkripthiwa."
 
-#: pageInfo_StrongEncryption
-msgid "Connection Encrypted: High-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_StrongEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 msgstr ""
 "Kgokaganyo e Enkripthilwe: Go Enkripthiwa ga maemo a Godimo (piti %S %S)"
 
@@ -357,8 +361,11 @@ msgstr ""
 "kgonagale gore motho o mongwe le o mongwe a bale letlakala le bjalo ka ge le "
 "sepela ka dikgokaganyo tša megala."
 
-#: pageInfo_WeakEncryption
-msgid "Connection Encrypted: Low-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_WeakEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
 msgstr "Kgokaganyo e Enkripthilwe: Enkripšene ya maemo a fase (piti %S %S)"
 
 #: pageInfo_Privacy_Weak1
@@ -539,6 +546,12 @@ msgstr ""
 "beakanyeditšwego bakeng sa setlabakelo se sengwe le se sengwe sa "
 "tšhireletšo. Ka kgopelo beakanya lentšuphetetšo pele o ka palediša mokgwa wa "
 "FIPS."
+
+#: unable_to_toggle_fips
+msgid ""
+"Unable to change the FIPS mode for the security device. It is recommended "
+"that you exit and restart this application."
+msgstr ""
 
 #. # CRL next update.
 #: crlNextUpdateMsg1
@@ -787,6 +800,14 @@ msgstr ""
 #: addExceptionConnectionFailed
 msgid "Connection Failed"
 msgstr ""
+
+#~ msgid "Are you sure you want to delete these CA certificates?"
+#~ msgstr ""
+#~ "E ka ba o na le bonnete bja gore o nyaka go phumola disetifikheiti tše "
+#~ "tša CA?"
+
+#~ msgid "Delete CA Certificates"
+#~ msgstr "Phumola Disetifikheiti tša CA"
 
 #~ msgid "Signed by %S"
 #~ msgstr "Saennwe ke %S"
