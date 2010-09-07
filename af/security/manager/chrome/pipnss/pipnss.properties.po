@@ -43,7 +43,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-24 13:04+0200\n"
+"POT-Creation-Date: 2010-09-04 06:28+0200\n"
 "PO-Revision-Date: 2009-11-24 16:45+0200\n"
 "Last-Translator: Administrator <>\n"
 "Language-Team: I have a very cool team\n"
@@ -52,7 +52,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.0-rc1\n"
+"X-Generator: Translate Toolkit 1.8.0\n"
 "X-Accelerator-Marker: &\n"
 
 #: SignedBy
@@ -66,7 +66,7 @@ msgstr "Tik die meesterwagwoord vir die %S in."
 #. # the following strings have special requirements:
 #. # they must fit in a 32 or 64 byte buffer after being translated
 #. # to UTF8.  Note to translator. It's not easy for you to figure
-#. # whether the escaped unicode string you produce will fit in
+#. # whether the escaped unicode string you produce will fit in 
 #. # the space allocated.
 #. #
 #. # 64 bytes long after conversion to UTF8
@@ -1257,6 +1257,13 @@ msgstr ""
 "Die sertifikaat word nie vertrou nie omdat die uitreikersertifikaat onbekend "
 "is."
 
+#: certErrorTrust_MissingChain
+#, fuzzy
+msgid "The certificate is not trusted because no issuer chain was provided."
+msgstr ""
+"Die sertifikaat word nie vertrou nie omdat die uitreikersertifikaat verval "
+"het."
+
 #: certErrorTrust_CaInvalid
 msgid ""
 "The certificate is not trusted because it was issued by an invalid CA "
@@ -1290,11 +1297,11 @@ msgstr "Die sertifikaat is nie geldig vir die naam %S nie."
 #. # LOCALIZATION NOTE (certErrorMismatchSingle2): Do not translate <a id="cert_domain_link" title="%1$S">%1$S</a>
 #: certErrorMismatchSingle2
 msgid ""
-"The certificate is only valid for <a id=\"cert_domain_link\" title=\"%1$S\">%"
-"1$S</a>"
+"The certificate is only valid for <a id=\"cert_domain_link\" title=\"%1$S\">"
+"%1$S</a>"
 msgstr ""
-"Die sertifikaat is net geldig vir <a id=\"cert_domain_link\" title=\"%1$S\">%"
-"1$S</a>"
+"Die sertifikaat is net geldig vir <a id=\"cert_domain_link\" title=\"%1$S\">"
+"%1$S</a>"
 
 #: certErrorMismatchSinglePlain
 msgid "The certificate is only valid for %S"
@@ -1308,13 +1315,15 @@ msgstr "Die sertifikaat is net geldig vir die volgende name:"
 msgid "The certificate is not valid for any server names."
 msgstr "Die sertifikaat is nie geldig vir enige bedienername."
 
-#: certErrorExpired
-msgid "The certificate expired on %S."
-msgstr "Die sertifikaat verval op %S."
+#. # LOCALIZATION NOTE (certErrorExpiredNow): Do not translate %1$S (date+time of expired certificate) or %2$S (current date+time)
+#: certErrorExpiredNow
+msgid "The certificate expired on %1$S. The current time is %2$S."
+msgstr ""
 
-#: certErrorNotYetValid
-msgid "The certificate will not be valid until %S."
-msgstr "Die sertifikaat is nie geldig voor %S nie."
+#. # LOCALIZATION NOTE (certErrorNotYetValidNow): Do not translate %1$S (date+time certificate will become valid) or %2$S (current date+time)
+#: certErrorNotYetValidNow
+msgid "The certificate will not be valid until %1$S. The current time is %2$S."
+msgstr ""
 
 #: certErrorCodePrefix
 msgid "(Error code: %S)"
@@ -1545,6 +1554,12 @@ msgstr "Permanent"
 #: CertExceptionTemporary
 msgid "Temporary"
 msgstr "Tydelik"
+
+#~ msgid "The certificate expired on %S."
+#~ msgstr "Die sertifikaat verval op %S."
+
+#~ msgid "The certificate will not be valid until %S."
+#~ msgstr "Die sertifikaat is nie geldig voor %S nie."
 
 #~ msgid "%1$s's %2$s ID #%3$d"
 #~ msgstr "%1$s se %2$s-ID #%3$d"

@@ -39,7 +39,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-24 13:04+0200\n"
+"POT-Creation-Date: 2010-09-04 06:28+0200\n"
 "PO-Revision-Date: 2008-11-08 14:10+0200\n"
 "Last-Translator: Samuel Murray <samuel at translate.org.za>\n"
 "Language-Team: I have a very cool team\n"
@@ -47,7 +47,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.5.0\n"
+"X-Generator: Translate Toolkit 1.8.0\n"
 "X-Accelerator-Marker: &\n"
 
 #: SignedBy
@@ -160,21 +160,25 @@ msgstr ""
 msgid "Delete your Certificates"
 msgstr "Skrap u sertifikate"
 
-#: deleteCaCertConfirm
-msgid "Are you sure you want to delete these CA certificates?"
-msgstr "Is u seker dat u hierdie SO-sertifikate wil skrap?"
-
-#: deleteCaCertImpactX
+#: deleteCaCertConfirm2
 msgid ""
-"If you delete a certificate authority (CA) certificate, this application "
-"will no longer trust any certificates issued by that CA."
+"You have requested to delete these CA certificates. For built-in "
+"certificates all trust will be removed, which has the same effect. Are you "
+"sure you want to delete or distrust?"
+msgstr ""
+
+#: deleteCaCertImpactX2
+#, fuzzy
+msgid ""
+"If you delete or distrust a certificate authority (CA) certificate, this "
+"application will no longer trust any certificates issued by that CA."
 msgstr ""
 "As u 'n sertifikaat van 'n sertifikaatowerheid (CA) skrap, sal u blaaier nie "
 "meer enige sertifikate wat deur daardie CA uitgereik is, vertrou nie."
 
-#: deleteCaCertTitle
-msgid "Delete CA Certificates"
-msgstr "Skrap SO-sertifikate"
+#: deleteCaCertTitle2
+msgid "Delete or Distrust CA Certificates"
+msgstr ""
 
 #: deleteEmailCertConfirm
 msgid "Are you sure you want to delete these people's e-mail certificates?"
@@ -202,9 +206,9 @@ msgid "Delete Certificates"
 msgstr "Skrap sertifikate"
 
 #. #PKCS#12 file dialogs
-#: chooseP12RestoreFileDialog
-msgid "File Name to Restore"
-msgstr "Lêernaam om te terugkopieer"
+#: chooseP12RestoreFileDialog2
+msgid "Certificate File to Import"
+msgstr ""
 
 #: chooseP12BackupFileDialog
 msgid "File Name to Backup"
@@ -318,8 +322,11 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Die bladsy wat u bekyk, is nie geënkripteer nie."
 
-#: pageInfo_StrongEncryption
-msgid "Connection Encrypted: High-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_StrongEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 msgstr "Verbinding geënkripteer: Hoëgraadse enkripsie (%S %S-bis)"
 
 #: pageInfo_Privacy_Strong1
@@ -339,8 +346,11 @@ msgstr ""
 "tussen rekenaars beweeg, te bekyk. Dit is dus baie onwaarskynlik dat enige "
 "iemand hierdie bladsy lees wanneer dit oor die netwerk oorgedra word."
 
-#: pageInfo_WeakEncryption
-msgid "Connection Encrypted: Low-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_WeakEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
 msgstr "Verbinding geënkripteer: Laegraadse enkripsie (%S %S bis)"
 
 #: pageInfo_Privacy_Weak1
@@ -515,6 +525,12 @@ msgid ""
 msgstr ""
 "FIPS-modus vereis dat u 'n meesterwagwoord vir elke sekuriteitstoestel "
 "opstel. Stel die wagwoord op voor u probeer om FIPS-modus te aktiveer."
+
+#: unable_to_toggle_fips
+msgid ""
+"Unable to change the FIPS mode for the security device. It is recommended "
+"that you exit and restart this application."
+msgstr ""
 
 #. # CRL next update.
 #: crlNextUpdateMsg1
@@ -760,6 +776,15 @@ msgstr "Kon nie identifikasiestatus vir gegewe werf verkry nie."
 msgid "Connection Failed"
 msgstr "Kon nie koppel nie"
 
+#~ msgid "Are you sure you want to delete these CA certificates?"
+#~ msgstr "Is u seker dat u hierdie SO-sertifikate wil skrap?"
+
+#~ msgid "Delete CA Certificates"
+#~ msgstr "Skrap SO-sertifikate"
+
+#~ msgid "File Name to Restore"
+#~ msgstr "Lêernaam om te terugkopieer"
+
 #~ msgid "deleteSslFlag"
 #~ msgstr "deleteSslFlag"
 
@@ -827,8 +852,8 @@ msgstr "Kon nie koppel nie"
 #~ "You should check to make sure that your computer's time (currently set to "
 #~ "%S) is correct."
 #~ msgstr ""
-#~ "U behoort te kontroleer om seker te maak dat u rekenaar se tyd (tans op %"
-#~ "S gestel) korrek is."
+#~ "U behoort te kontroleer om seker te maak dat u rekenaar se tyd (tans op "
+#~ "%S gestel) korrek is."
 
 #~ msgid ""
 #~ "Automatic update preferences will take effect when you restart the "
