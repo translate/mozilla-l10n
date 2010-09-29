@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-10 18:42+0200\n"
+"POT-Creation-Date: 2010-09-29 10:10+0200\n"
 "PO-Revision-Date: 2009-11-24 16:30+0200\n"
 "Last-Translator: Administrator <>\n"
 "Language-Team: I have a very cool team\n"
@@ -34,10 +34,6 @@ msgstr "Herlaai &alle oortjies"
 msgid "Close &Other Tabs"
 msgstr "Sluit &ander oortjies"
 
-#: openTabInNewWindow.label openTabInNewWindow.accesskey
-msgid "Open in a New &Window"
-msgstr "Open in 'n nuwe &venster"
-
 #. LOCALIZATION NOTE (pinAppTab.label, unpinAppTab.label): "Pin" is being
 #. used as a metaphor for expressing the fact that these tabs are "pinned" to the
 #. left edge of the tabstrip. Really we just want the string to express the idea
@@ -58,6 +54,10 @@ msgstr "&Skuif na groep"
 #: moveToNewGroup.label
 msgid "New Group"
 msgstr "Nuwe groep"
+
+#: moveToNewWindow.label moveToNewWindow.accesskey
+msgid "Move to New &Window"
+msgstr ""
 
 #: bookmarkAllTabs.label bookmarkAllTabs.accesskey
 msgid "Bookmark All &Tabs…"
@@ -137,9 +137,9 @@ msgstr "&Boekmerknutsbalk"
 msgid "Bookmarks Toolbar Items"
 msgstr "Boekmerknutsbalk-items"
 
-#: taskbarCmd.label taskbarCmd.accesskey
-msgid "Status &Bar"
-msgstr "Status&staaf"
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "Add-on &Bar"
+msgstr ""
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -280,10 +280,6 @@ msgstr "Hou op om hierdie bladsy te laai"
 msgid "Go to the address in the Location Bar"
 msgstr "Gaan na die adres in die adresbalk"
 
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "Teken in op hierdie bladsy…"
-
 #: printButton.label
 msgid "Print"
 msgstr "Druk"
@@ -314,18 +310,35 @@ msgid "Bookmarks"
 msgstr "Boekmerke"
 
 #. Toolbar items
+#: appMenuButton.label
+msgid "Menu"
+msgstr ""
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr ""
+
 #: homeButton.label
 msgctxt "homeButton.label"
 msgid "Home"
 msgstr "Tuis"
 
-#: tabViewButton2.label
+#: tabGroupsButton.label
 msgid "Tab Groups"
 msgstr "Oortjie-groepe"
 
-#: tabViewButton2.tooltip
-msgid "Group Your Tabs"
+#: tabGroupsButton.tooltip
+#, fuzzy
+msgid "Group your tabs"
 msgstr "Groepeer jou oortjies"
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "Inteken"
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "Teken in op hierdie bladsy…"
 
 #: bookmarksButton.label bookmarksButton.accesskey
 msgctxt "bookmarksButton.label bookmarksButton.accesskey"
@@ -594,9 +607,10 @@ msgstr "b"
 msgid "&View"
 msgstr "Be&kyk"
 
-#: showTabView2.label showTabView2.accesskey
-msgid "&Group Your Tabs…"
-msgstr "&Groepeer jou oortjies..."
+#: viewTabGroups.label viewTabGroups.accesskey
+#, fuzzy
+msgid "Tab &Groups"
+msgstr "Oortjie-groepe"
 
 #: viewToolbarsMenu.label viewToolbarsMenu.accesskey
 msgid "&Toolbars"
@@ -626,6 +640,10 @@ msgstr "Onlangs gesluite oortjies"
 #: historyUndoWindowMenu.label
 msgid "Recently Closed Windows"
 msgstr "Onlangs gesluite vensters"
+
+#: historyRestoreLastSession.label
+msgid "Restore Previous Session"
+msgstr ""
 
 #: historyHomeCmd.label
 msgctxt "historyHomeCmd.label"
@@ -665,13 +683,17 @@ msgstr "Vind…"
 msgid "Unsorted Bookmarks"
 msgstr "Ongeliasseerde boekmerke"
 
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr ""
+
 #: appMenuGettingStarted.label
 msgid "Getting Started"
 msgstr "Hoe om te begin"
 
-#: developerMenu.label
-msgid "Developer"
-msgstr "Ontwikkelaar"
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr ""
 
 #: openCmd.commandkey
 msgid "l"
@@ -694,31 +716,30 @@ msgstr "Verwissel na oortjie:"
 #. Search Command Key Logic works like this:
 #. Unix: Ctrl+J (0.8, 0.9 support)
 #. Ctrl+K (cross platform binding)
-#. Mac:  Ctrl+K (cross platform binding)
+#. Mac:  Cmd+K (cross platform binding)
+#. Cmd+Opt+F (platform convention)
 #. Win:  Ctrl+K (cross platform binding)
-#. Ctrl+E (IE compat)
 #. We support Ctrl+K on all platforms now and advertise it in the menu since it is
 #. our standard - it is a "safe" choice since it is near no harmful keys like "W" as
 #. "E" is. People mourning the loss of Ctrl+K for emacs compat can switch their GTK
 #. system setting to use emacs emulation, and we should respect it. Focus-Search-Box
 #. is a fundamental keybinding and we are maintaining a XP binding so that it is easy
 #. for people to switch to Linux.
-#. Do *not* tamper with these values without talking to ben@mozilla.org
 #: searchFocus.commandkey
 #, fuzzy
 msgctxt "searchFocus.commandkey"
 msgid "k"
 msgstr "k"
 
-#: searchFocus.commandkey2
-msgctxt "searchFocus.commandkey2"
-msgid "e"
-msgstr "e"
-
 #: searchFocusUnix.commandkey
 msgctxt "searchFocusUnix.commandkey"
 msgid "j"
 msgstr "j"
+
+#: tabView.commandkey
+msgctxt "tabView.commandkey"
+msgid "e"
+msgstr ""
 
 #: openLinkCmdInTab.label openLinkCmdInTab.accesskey
 msgid "Open Link in New &Tab"
@@ -1021,6 +1042,20 @@ msgstr "Plak"
 msgid "Display the window in full screen"
 msgstr "Wys die venster in volskerm"
 
+#: zoomOutButton.tooltip
+#, fuzzy
+msgid "Zoom out"
+msgstr "Zoem &uit"
+
+#: zoomInButton.tooltip
+#, fuzzy
+msgid "Zoom in"
+msgstr "Zoem &in"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr ""
+
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
 msgstr "Af&sluit"
@@ -1091,7 +1126,8 @@ msgid "D"
 msgstr "D"
 
 #: bidiSwitchPageDirectionItem.label bidiSwitchPageDirectionItem.accesskey
-msgid "Switch Pa&ge Direction"
+#, fuzzy
+msgid "Switch Page &Direction"
 msgstr "Wysig bla&dsyrigting"
 
 #: bidiSwitchTextDirectionItem.label bidiSwitchTextDirectionItem.accesskey
@@ -1195,19 +1231,10 @@ msgid "Tabs From Other Computers"
 msgstr "Oortjies van ander rekenaars"
 
 #: syncBrand.shortName.label
+#, fuzzy
+msgctxt "syncBrand.shortName.label"
 msgid "Sync"
 msgstr "Sync"
-
-#: syncMenu.label
-msgid "&syncBrand.shortName.label;"
-msgstr "&syncBrand.shortName.label;"
-
-#. LOCALIZATION NOTE (sync.menu.accesskey): This is part of the tools menu, so
-#. don't use a conflicting access key
-#: syncMenu.accesskey
-msgctxt "syncMenu.accesskey"
-msgid "Y"
-msgstr "Y"
 
 #: syncSetup.label
 msgid "Set Up &syncBrand.shortName.label;…"
@@ -1218,17 +1245,40 @@ msgctxt "syncSetup.accesskey"
 msgid "Y"
 msgstr "Y"
 
-#: syncLogInItem.label syncLogInItem.accesskey
-msgid "&Connect"
-msgstr "&Koppel"
-
-#: syncLogOutItem.label syncLogOutItem.accesskey
-msgid "&Disconnect"
-msgstr "&Ontkoppel"
-
 #: syncSyncNowItem.label syncSyncNowItem.accesskey
 msgid "&Sync Now"
 msgstr "&Sinkroniseer nou"
+
+#: syncToolbarButton.label
+#, fuzzy
+msgctxt "syncToolbarButton.label"
+msgid "Sync"
+msgstr "Sync"
+
+#~ msgid "Open in a New &Window"
+#~ msgstr "Open in 'n nuwe &venster"
+
+#~ msgid "Status &Bar"
+#~ msgstr "Status&staaf"
+
+#~ msgid "&Group Your Tabs…"
+#~ msgstr "&Groepeer jou oortjies..."
+
+#~ msgid "Developer"
+#~ msgstr "Ontwikkelaar"
+
+#~ msgid "&syncBrand.shortName.label;"
+#~ msgstr "&syncBrand.shortName.label;"
+
+#~ msgctxt "syncMenu.accesskey"
+#~ msgid "Y"
+#~ msgstr "Y"
+
+#~ msgid "&Connect"
+#~ msgstr "&Koppel"
+
+#~ msgid "&Disconnect"
+#~ msgstr "&Ontkoppel"
 
 #~ msgid "Organize Bookmarks…"
 #~ msgstr "Organiseer boekmerke…"
