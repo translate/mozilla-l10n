@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-23 05:33+0200\n"
+"POT-Creation-Date: 2011-01-13 15:49+0200\n"
 "PO-Revision-Date: 2010-08-11 23:02+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.8.0\n"
+"X-Generator: Translate Toolkit 1.9.0-beta1\n"
 "X-Accelerator-Marker: &\n"
 
 #: accountSetupTitle.label
@@ -31,10 +31,14 @@ msgstr ""
 msgid "Create a New Account"
 msgstr "Hlama akhaonte e mpsha"
 
-#: button.haveAccount.label
+#: setup.haveAccount.label
 #, fuzzy
-msgid "I Have a &syncBrand.fullName.label; Account"
+msgid "I already have a &syncBrand.fullName.label; account."
 msgstr "Akhaonto ya &syncBrand.fullName.label;"
+
+#: button.connect.label
+msgid "Connect"
+msgstr "Gokaganya"
 
 #: setup.choicePage.title.label
 msgid "Have you used &syncBrand.fullName.label; before?"
@@ -58,21 +62,22 @@ msgstr "Sebara"
 msgid "&syncBrand.fullName.label; Server"
 msgstr "Akhaonto ya &syncBrand.fullName.label;"
 
-#: serverType.custom.label
-msgid "Use a custom server"
+#: serverType.custom2.label
+msgid "Use a custom server…"
 msgstr ""
 
-#: signIn.account.label signIn.account.accesskey
-msgid "&Email Address / User Name"
-msgstr ""
+#: signIn.account2.label signIn.account2.accesskey
+#, fuzzy
+msgid "&Account"
+msgstr "&Akhaonte:"
 
 #: signIn.password.label signIn.password.accesskey
 #, fuzzy
 msgid "&Password"
 msgstr "Lentšuphetišo"
 
-#: signIn.serverURL.label signIn.serverURL.accesskey
-msgid "Server UR&L"
+#: signIn.syncKey.label signIn.syncKey.accesskey
+msgid "Sync &Key"
 msgstr ""
 
 #. New Account Page 1: Basic Account Info
@@ -161,47 +166,83 @@ msgstr "&Boloka"
 msgid "Please Confirm You're Not a Robot"
 msgstr ""
 
-#. Existing Account Page 1: Login
-#: setup.existingAccount.title.label
-msgid "Enter Account Information"
+#. Existing Account Page 1: Add Device (incl. Add a Device dialog strings)
+#: addDevice.title.label
+msgid "Add a Device"
 msgstr ""
 
-#: resetPassword.label
-msgid "Reset Password"
+#: addDevice.showMeHow.label
+msgid "Show me how."
 msgstr ""
 
-#: connecting.label
-msgid "Connecting…"
-msgstr "Go kgokaganya…"
-
-#. Existing Account Page 2: Sync Key
-#: setup.existingSyncKeyPage.title
-msgid "Please Enter Your Sync Key"
+#: addDevice.dontHaveDevice.label
+msgid "I don't have the device with me"
 msgstr ""
 
-#: setup.existingSyncKeyPage.description
+#: addDevice.setup.description.label
 msgid ""
-"The Sync Key was generated for you, or you entered your own, when you first "
-"signed up for &syncBrand.fullName.label;. It is not the same as your "
-"password."
+"To activate, go to &syncBrand.shortName.label; Options on your other device "
+"and select &#x0022;Add a Device&#x0022;."
 msgstr ""
 
-#: existingSyncKeyHelp.description
+#: addDevice.setup.enterCode.label
+msgid "Then, enter this code:"
+msgstr ""
+
+#: addDevice.dialog.description.label
 msgid ""
-"You can find your saved Sync Key by going to your other computer and "
-"checking the Saved Passwords under Security. If you still cannot get the "
-"correct Sync Key, you can choose to reset it, but you will lose any data "
-"stored on the server."
+"To activate your new device, go to &syncBrand.shortName.label; Options on "
+"the device and select &#x0022;Connect.&#x0022;"
 msgstr ""
 
-#: lostSyncKey.label
-msgid "I have lost my Sync Key"
+#: addDevice.dialog.enterCode.label
+msgid "Enter the code that the device provides:"
+msgstr ""
+
+#: addDevice.dialog.tryAgain.label
+msgid "Please try again."
+msgstr ""
+
+#: addDevice.dialog.successful.label
+msgid ""
+"The device has been successfully added. The initial synchronization can take "
+"several minutes and will finish in the background."
+msgstr ""
+
+#: addDevice.dialog.syncKey.label
+msgid ""
+"To activate your device you will need to enter your Sync Key. Please print "
+"or save this key and take it with you."
+msgstr ""
+
+#: addDevice.dialog.connected.label
+msgid "Device Connected"
+msgstr ""
+
+#. Existing Account Page 2: Manual Login
+#: setup.signInPage.title.label
+msgid "Sign In"
+msgstr ""
+
+#: existingSyncKey.description
+msgid ""
+"You can get a copy of your Sync Key by going to &syncBrand.shortName.label; "
+"Options on your other device, and selecting  &#x0022;My Sync Key&#x0022; "
+"under &#x0022;Manage Account&#x0022;."
 msgstr ""
 
 #: verifying.label
 #, fuzzy
 msgid "Verifying…"
 msgstr "Go netefatša"
+
+#: resetPassword.label
+msgid "Reset Password"
+msgstr ""
+
+#: lostSyncKey.label
+msgid "I have lost my Sync Key"
+msgstr ""
 
 #. Sync Options
 #: setup.optionsPage.title
@@ -215,7 +256,7 @@ msgstr "Leina la &khomphutha:"
 
 #: syncMy.label
 msgid "Sync My"
-msgstr ""
+msgstr "Nyalantšha yaka"
 
 #: engine.bookmarks.label engine.bookmarks.accesskey
 #, fuzzy
@@ -273,10 +314,10 @@ msgid ""
 "into your Sync account."
 msgstr ""
 
-#: confirm.client.label
+#: confirm.client2.label
 msgid ""
-"All &brandShortName; data on this computer will be deleted, including the "
-"following:"
+"Warning: The following &brandShortName; data on this computer will be "
+"deleted:"
 msgstr ""
 
 #: confirm.client.moreinfo.label
@@ -285,20 +326,9 @@ msgid ""
 "computer."
 msgstr ""
 
-#: confirm.client.warning.label
+#: confirm.server2.label
 msgid ""
-"WARNING: This will result in all &brandShortName; data on this computer "
-"being replaced!"
-msgstr ""
-
-#: confirm.server.label
-msgid "The following devices will be overwritten with your local data:"
-msgstr ""
-
-#: confirm.server.warning.label
-msgid ""
-"WARNING: Your local data will replace all &brandShortName; data on these "
-"devices!"
+"Warning: The following devices will be overwritten with your local data:"
 msgstr ""
 
 #. New & Existing Account: Setup Complete
@@ -313,3 +343,6 @@ msgstr ""
 #: continueUsing.label
 msgid "You may now continue using &brandShortName;."
 msgstr ""
+
+#~ msgid "Connecting…"
+#~ msgstr "Go kgokaganya…"

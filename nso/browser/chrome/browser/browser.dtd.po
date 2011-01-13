@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-23 05:33+0200\n"
+"POT-Creation-Date: 2011-01-13 15:49+0200\n"
 "PO-Revision-Date: 2010-10-09 12:52+0200\n"
 "Last-Translator: Dwayne Bailey <dwayne@translate.org.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.1.1\n"
+"X-Generator: Translate Toolkit 1.9.0-beta1\n"
 "X-Accelerator-Marker: &\n"
 
 #. This will be appended to the window's title
@@ -137,9 +137,9 @@ msgstr "&Thulupaa ya dipukutshwayo"
 msgid "Bookmarks Toolbar Items"
 msgstr "Diaetheme tša thulupaa ya dipukutshwayo"
 
-#: taskbarCmd.label taskbarCmd.accesskey
-msgid "Status &Bar"
-msgstr "&Para ya boemo"
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr ""
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -223,8 +223,9 @@ msgctxt "addCurPagesCmd.label"
 msgid "Bookmark All Tabs…"
 msgstr "Pukuswaya dithepo tšohle…"
 
-#: showAllBookmarks.label
-msgid "Show All Bookmarks…"
+#: showAllBookmarks2.label
+#, fuzzy
+msgid "Show All Bookmarks"
 msgstr "Laetša dipukutshwayo tšohle..."
 
 #: bookmarkAllCmd.label
@@ -251,10 +252,6 @@ msgstr "&Pele"
 #: forwardButton.tooltip
 msgid "Go forward one page"
 msgstr "Eya pele letlakala le tee"
-
-#: backForwardMenu.tooltip
-msgid "Recent pages"
-msgstr "Matlakala a moragobjale"
 
 #: reloadCmd.label reloadCmd.accesskey
 msgid "&Reload"
@@ -314,6 +311,10 @@ msgstr "Dipukutshwayo"
 msgid "Menu"
 msgstr "Lelokelelo"
 
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr ""
+
 #: homeButton.label
 msgctxt "homeButton.label"
 msgid "Home"
@@ -358,6 +359,12 @@ msgstr "Dipukutshwayo"
 msgctxt "bookmarksMenuButton.tooltip"
 msgid "Display your bookmarks"
 msgstr "Bontšha dipukutshwayo tša gago"
+
+#: bookmarksMenuButton.unsorted.label
+#, fuzzy
+msgctxt "bookmarksMenuButton.unsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "Dipukutshwayo tše sa latelantšwago"
 
 #: viewBookmarksSidebar.label
 msgid "Show in Sidebar"
@@ -510,7 +517,7 @@ msgid "&Edit"
 msgstr "&Lokiša"
 
 #: undoCmd.label undoCmd.accesskey
-msgctxt "undoCmd.label undoCmd.accesskey"
+#, fuzzy
 msgid "&Undo"
 msgstr "&Dirolla"
 
@@ -570,8 +577,9 @@ msgctxt "selectAllCmd.key"
 msgid "A"
 msgstr "A"
 
-#: preferencesCmd.label preferencesCmd.accesskey
-msgid "&Options…"
+#: preferencesCmd2.label preferencesCmd2.accesskey
+#, fuzzy
+msgid "&Options"
 msgstr "&Dikgetho…"
 
 #: preferencesCmdUnix.label preferencesCmdUnix.accesskey
@@ -671,6 +679,8 @@ msgid "Find…"
 msgstr "Hwetša..."
 
 #: appMenuUnsorted.label
+#, fuzzy
+msgctxt "appMenuUnsorted.label"
 msgid "Unsorted Bookmarks"
 msgstr "Dipukutshwayo tše sa latelantšwago"
 
@@ -707,30 +717,29 @@ msgstr "Fetogela go thepo:"
 #. Search Command Key Logic works like this:
 #. Unix: Ctrl+J (0.8, 0.9 support)
 #. Ctrl+K (cross platform binding)
-#. Mac:  Ctrl+K (cross platform binding)
+#. Mac:  Cmd+K (cross platform binding)
+#. Cmd+Opt+F (platform convention)
 #. Win:  Ctrl+K (cross platform binding)
-#. Ctrl+E (IE compat)
 #. We support Ctrl+K on all platforms now and advertise it in the menu since it is
 #. our standard - it is a "safe" choice since it is near no harmful keys like "W" as
 #. "E" is. People mourning the loss of Ctrl+K for emacs compat can switch their GTK
 #. system setting to use emacs emulation, and we should respect it. Focus-Search-Box
 #. is a fundamental keybinding and we are maintaining a XP binding so that it is easy
 #. for people to switch to Linux.
-#. Do *not* tamper with these values without talking to ben@mozilla.org
 #: searchFocus.commandkey
 msgctxt "searchFocus.commandkey"
 msgid "k"
 msgstr "k"
 
-#: searchFocus.commandkey2
-msgctxt "searchFocus.commandkey2"
-msgid "e"
-msgstr "e"
-
 #: searchFocusUnix.commandkey
 msgctxt "searchFocusUnix.commandkey"
 msgid "j"
 msgstr "j"
+
+#: tabView.commandkey
+msgctxt "tabView.commandkey"
+msgid "e"
+msgstr ""
 
 #: openLinkCmdInTab.label openLinkCmdInTab.accesskey
 msgid "Open Link in New &Tab"
@@ -1164,15 +1173,6 @@ msgstr "Khansela"
 msgid "R"
 msgstr "R"
 
-#: editBookmark.undo.label editBookmark.undo.accessKey
-msgctxt "editBookmark.undo.label editBookmark.undo.accessKey"
-msgid "&Undo"
-msgstr "&Dirolla"
-
-#: editBookmark.edit.label editBookmark.edit.accessKey
-msgid "&Edit…"
-msgstr "&Lokiša…"
-
 #: identity.unverifiedsite2
 msgid "This web site does not supply identity information."
 msgstr "Wepesaete ye ga e fane ka tshedimošo ya boitsebišo."
@@ -1239,6 +1239,23 @@ msgstr "Ny&alantšha gona bjale"
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "Nyalantšha"
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr ""
+
+#~ msgid "Status &Bar"
+#~ msgstr "&Para ya boemo"
+
+#~ msgid "Recent pages"
+#~ msgstr "Matlakala a moragobjale"
+
+#~ msgctxt "editBookmark.undo.label editBookmark.undo.accessKey"
+#~ msgid "&Undo"
+#~ msgstr "&Dirolla"
+
+#~ msgid "&Edit…"
+#~ msgstr "&Lokiša…"
 
 #~ msgid "Open in a New &Window"
 #~ msgstr "Bula go &lefasetere le leswa"
