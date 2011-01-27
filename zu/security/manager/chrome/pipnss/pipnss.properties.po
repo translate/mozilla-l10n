@@ -44,7 +44,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-24 13:39+0200\n"
+"POT-Creation-Date: 2011-01-27 13:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.3.0\n"
+"X-Generator: Translate Toolkit 1.9.0-beta2\n"
 "X-Accelerator-Marker: &\n"
 
 #: SignedBy
@@ -310,6 +310,14 @@ msgstr "DN"
 #: CertDumpAVADC
 msgid "DC"
 msgstr "DC"
+
+#: CertDumpSurname
+msgid "Surname"
+msgstr ""
+
+#: CertDumpGivenName
+msgid "Given Name"
+msgstr ""
 
 #: CertDumpValidity
 msgid "Validity"
@@ -1242,6 +1250,10 @@ msgid ""
 "The certificate is not trusted because the issuer certificate is unknown."
 msgstr ""
 
+#: certErrorTrust_MissingChain
+msgid "The certificate is not trusted because no issuer chain was provided."
+msgstr ""
+
 #: certErrorTrust_CaInvalid
 msgid ""
 "The certificate is not trusted because it was issued by an invalid CA "
@@ -1269,8 +1281,8 @@ msgstr ""
 #. # LOCALIZATION NOTE (certErrorMismatchSingle2): Do not translate <a id="cert_domain_link" title="%1$S">%1$S</a>
 #: certErrorMismatchSingle2
 msgid ""
-"The certificate is only valid for <a id=\"cert_domain_link\" title=\"%1$S\">%"
-"1$S</a>"
+"The certificate is only valid for <a id=\"cert_domain_link\" title=\"%1$S\">"
+"%1$S</a>"
 msgstr ""
 
 #: certErrorMismatchSinglePlain
@@ -1285,12 +1297,14 @@ msgstr ""
 msgid "The certificate is not valid for any server names."
 msgstr ""
 
-#: certErrorExpired
-msgid "The certificate expired on %S."
+#. # LOCALIZATION NOTE (certErrorExpiredNow): Do not translate %1$S (date+time of expired certificate) or %2$S (current date+time)
+#: certErrorExpiredNow
+msgid "The certificate expired on %1$S. The current time is %2$S."
 msgstr ""
 
-#: certErrorNotYetValid
-msgid "The certificate will not be valid until %S."
+#. # LOCALIZATION NOTE (certErrorNotYetValidNow): Do not translate %1$S (date+time certificate will become valid) or %2$S (current date+time)
+#: certErrorNotYetValidNow
+msgid "The certificate will not be valid until %1$S. The current time is %2$S."
 msgstr ""
 
 #: certErrorCodePrefix
@@ -1364,7 +1378,8 @@ msgid "Download of the CRL failed due to Network problems."
 msgstr "Ukufakwa kwe-CRL kwehlulekile ngenxa yezinkinga zeNethiwekhi."
 
 #: CrlImportFailureReasonUnknown
-msgid "Error Importing CRL to local Database. Error Code:"
+#, fuzzy
+msgid "Error Importing CRL to local Database. Error Code: "
 msgstr "Iphutha Ekuletheni i-CRL eKwazisweni kwendawo. Ikhodi Yephutha:"
 
 #: CrlImportFailure2
@@ -1590,13 +1605,13 @@ msgstr ""
 
 #~ msgid "%S has sent an incorrect or unexpected message. Error Code: %S"
 #~ msgstr ""
-#~ "I-%S ithumele umyalezo okungewona noma ongalindelekile. Ikhodi Yephutha: %"
-#~ "S"
+#~ "I-%S ithumele umyalezo okungewona noma ongalindelekile. Ikhodi Yephutha: "
+#~ "%S"
 
 #~ msgid "%S has received an incorrect or unexpected message. Error Code: %S"
 #~ msgstr ""
-#~ "I-%S yamukele umyalezo okungewona noma ongalindelekile. Ikhodi Yephutha: %"
-#~ "S"
+#~ "I-%S yamukele umyalezo okungewona noma ongalindelekile. Ikhodi Yephutha: "
+#~ "%S"
 
 #~ msgid "Error establishing an encrypted connection to %S. Error Code: %S."
 #~ msgstr ""

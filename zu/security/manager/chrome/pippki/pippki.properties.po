@@ -40,7 +40,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-24 13:39+0200\n"
+"POT-Creation-Date: 2011-01-27 13:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.3.0\n"
+"X-Generator: Translate Toolkit 1.9.0-beta2\n"
 "X-Accelerator-Marker: &\n"
 
 #: SignedBy
@@ -158,22 +158,25 @@ msgstr ""
 msgid "Delete your Certificates"
 msgstr "Cisha iZitifiketi zakho"
 
-#: deleteCaCertConfirm
-msgid "Are you sure you want to delete these CA certificates?"
-msgstr "Uyaqiniseka yini ukuthi ufuna ukuzicisha lezi zitifiketi ze-CA?"
+#: deleteCaCertConfirm2
+msgid ""
+"You have requested to delete these CA certificates. For built-in "
+"certificates all trust will be removed, which has the same effect. Are you "
+"sure you want to delete or distrust?"
+msgstr ""
 
-#: deleteCaCertImpactX
+#: deleteCaCertImpactX2
 #, fuzzy
 msgid ""
-"If you delete a certificate authority (CA) certificate, this application "
-"will no longer trust any certificates issued by that CA."
+"If you delete or distrust a certificate authority (CA) certificate, this "
+"application will no longer trust any certificates issued by that CA."
 msgstr ""
 "Uma ucisha isitifiketi segunya lesitifiketi (CA), okokubheka kwakho ngeke "
 "kuphinde kwethembe noma yisiphi isitifiketi esikhishwa yileyo CA."
 
-#: deleteCaCertTitle
-msgid "Delete CA Certificates"
-msgstr "Cisha iZitifiketi ze-CA"
+#: deleteCaCertTitle2
+msgid "Delete or Distrust CA Certificates"
+msgstr ""
 
 #: deleteEmailCertConfirm
 msgid "Are you sure you want to delete these people's e-mail certificates?"
@@ -205,9 +208,9 @@ msgid "Delete Certificates"
 msgstr "Cisha iZitifiketi ze-CA"
 
 #. #PKCS#12 file dialogs
-#: chooseP12RestoreFileDialog
-msgid "File Name to Restore"
-msgstr "Igama Lefayela Lokuyibuyisela"
+#: chooseP12RestoreFileDialog2
+msgid "Certificate File to Import"
+msgstr ""
 
 #: chooseP12BackupFileDialog
 msgid "File Name to Backup"
@@ -302,9 +305,10 @@ msgstr ""
 "Le ngosi %S does ayikusekeli ukubhalwa ngokucashile kwaleli khasi olibukayo."
 
 #: pageInfo_Privacy_None2
+#, fuzzy
 msgid ""
 "Information sent over the Internet without encryption can be seen by other "
-"people while it is in transit."
+"people while it is in transit. "
 msgstr ""
 "Ukwaziswa okuthunyelwe nge-Inthanethi ngaphandle kokubhalwa ngokucashile "
 "kungabonwa ngabanye abantu ngesikhathi kuhamba."
@@ -313,8 +317,11 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Leli khasi olibukayo alibhaliwe ngokucashile."
 
-#: pageInfo_StrongEncryption
-msgid "Connection Encrypted: High-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_StrongEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 msgstr ""
 "Ukuxhumana Kubhalwe ngokucashile: Ukubhala ngokucashile Okusezingeni "
 "Eliphezulu (%S %S bit)"
@@ -338,8 +345,11 @@ msgstr ""
 "mancane amathuba okuba kube khona ofunda leli khasi lapho lihamba "
 "kunethiwekhi."
 
-#: pageInfo_WeakEncryption
-msgid "Connection Encrypted: Low-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_WeakEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
 msgstr ""
 "Ukuxhumana Kubhalwe ngokucashile: Ukubhala ngokucashile Okusezingeni "
 "Eliphansi (%S %S bit)"
@@ -412,7 +422,8 @@ msgid "Master Password successfully changed."
 msgstr "Igama Lokungena Eliphethe lishintshwe ngempumelelo."
 
 #: pw_erased_ok
-msgid "Warning! You have deleted your Master Password."
+#, fuzzy
+msgid "Warning! You have deleted your Master Password. "
 msgstr "Isixwayiso! Usulicishile Igama Lokungena Eliphethe."
 
 #: pw_not_wanted
@@ -518,6 +529,12 @@ msgstr ""
 "Ukuba ku-FIPS kudinga ukuba ube neGama Lokungena Eliphethe elihleliwe "
 "entweni ngayinye yokuvikela. Sicela uhlela igama lokungena ngaphambi kokuba "
 "uyenze isebenze ku-FIPS."
+
+#: unable_to_toggle_fips
+msgid ""
+"Unable to change the FIPS mode for the security device. It is recommended "
+"that you exit and restart this application."
+msgstr ""
 
 #. # CRL next update.
 #: crlNextUpdateMsg1
@@ -762,6 +779,15 @@ msgstr ""
 #: addExceptionConnectionFailed
 msgid "Connection Failed"
 msgstr ""
+
+#~ msgid "Are you sure you want to delete these CA certificates?"
+#~ msgstr "Uyaqiniseka yini ukuthi ufuna ukuzicisha lezi zitifiketi ze-CA?"
+
+#~ msgid "Delete CA Certificates"
+#~ msgstr "Cisha iZitifiketi ze-CA"
+
+#~ msgid "File Name to Restore"
+#~ msgstr "Igama Lefayela Lokuyibuyisela"
 
 #~ msgid "Signed by %S"
 #~ msgstr "Isayinwe ngu-%S"

@@ -39,7 +39,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-24 13:39+0200\n"
+"POT-Creation-Date: 2011-01-27 13:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.3.0\n"
+"X-Generator: Translate Toolkit 1.9.0-beta2\n"
 "X-Accelerator-Marker: &\n"
 
 #. # LOCALIZATION NOTE:
@@ -90,10 +90,6 @@ msgstr "Uhlobo Lokuhlelwa"
 msgid "Choose setup options"
 msgstr "Khetha okokuhlela ongakhetha kukho."
 
-#: OPTIONS_MAKE_DEFAULT
-msgid "&Use $BrandShortName as my default web browser"
-msgstr ""
-
 #: SHORTCUTS_PAGE_TITLE
 msgid "Set Up Shortcuts"
 msgstr "Hlela Izindlela Ezinqamulelayo"
@@ -125,13 +121,18 @@ msgstr ""
 msgid "A restart of your computer may be required to complete the uninstall."
 msgstr ""
 
-#: SUMMARY_MAKE_DEFAULT
-msgid "$BrandShortName will be set as your default web browser."
+#: SUMMARY_TAKE_DEFAULTS
+msgid "U&se $BrandShortName as my default web browser"
 msgstr ""
 
-#: SUMMARY_CLICK
+#: SUMMARY_INSTALL_CLICK
 #, fuzzy
 msgid "Click Install to continue."
+msgstr "Chofoza Okulandelayo ukuze uqhubeke."
+
+#: SUMMARY_UPGRADE_CLICK
+#, fuzzy
+msgid "Click Upgrade to continue."
 msgstr "Chofoza Okulandelayo ukuze uqhubeke."
 
 #: SURVEY_TEXT
@@ -198,10 +199,10 @@ msgid ""
 "Click OK to select a different location."
 msgstr ""
 
-#: WARN_UNSUPPORTED_MSG
+#: WARN_MIN_SUPPORTED_OS_MSG
 msgid ""
 "Sorry, $BrandShortName can't be installed. This version of $BrandShortName "
-"requires ${MinUnsupportedVer} or newer."
+"requires ${MinSupportedVer} or newer."
 msgstr ""
 
 #: WARN_RESTART_REQUIRED_UNINSTALL
@@ -239,8 +240,9 @@ msgid "$BrandShortName will be uninstalled from the following location:"
 msgstr ""
 
 #: UN_CONFIRM_CLICK
+#, fuzzy
 msgid "Click Uninstall to continue."
-msgstr ""
+msgstr "Chofoza Okulandelayo ukuze uqhubeke."
 
 #: UN_REMOVE_PROFILES
 msgid "&Remove my $BrandShortName personal data and customizations"
@@ -267,8 +269,9 @@ msgid "Installing Language Files (${AB_CD})…"
 msgstr ""
 
 #: STATUS_UNINSTALL_MAIN
+#, fuzzy
 msgid "Uninstalling $BrandShortName…"
-msgstr ""
+msgstr "Ifakela i-$ProductShortName$…"
 
 #: STATUS_CLEANUP
 msgid "A Little Housekeeping…"
@@ -303,6 +306,14 @@ msgstr ""
 #: OPTION_CUSTOM_RADIO
 msgid "&Custom"
 msgstr "&Indlela Evamile"
+
+#. # LOCALIZATION NOTE:
+#. # The following text replaces the Install button text on the summary page.
+#. # Verify that the access key for InstallBtn (in override.properties) and
+#. # UPGRADE_BUTTON is not already used by SUMMARY_TAKE_DEFAULTS.
+#: UPGRADE_BUTTON
+msgid "&Upgrade"
+msgstr ""
 
 #~ msgid ""
 #~ "You have removed header from the list. This may require resetting of the "

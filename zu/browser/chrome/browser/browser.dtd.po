@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-24 13:39+0200\n"
+"POT-Creation-Date: 2011-01-27 13:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.3.0\n"
+"X-Generator: Translate Toolkit 1.9.0-beta2\n"
 "X-Accelerator-Marker: &\n"
 
 #. This will be appended to the window's title
@@ -21,9 +21,59 @@ msgstr ""
 msgid "(Private Browsing)"
 msgstr ""
 
-#. LOCALIZATION NOTE (mainWindowPrivateBrowsing.titlemodifier): DONT_TRANSLATE
-#: mainWindow.titlemodifierPrivateBrowsing
-msgid "&mainWindow.titlemodifier; &mainWindow.titlePrivateBrowsingSuffix;"
+#. Tab context menu
+#: reloadTab.label reloadTab.accesskey
+msgid "&Reload Tab"
+msgstr "&Layisha Isigqebhe Futhi"
+
+#: reloadAllTabs.label reloadAllTabs.accesskey
+msgid "Reload &All Tabs"
+msgstr "Layisha Futhi &Zonke Izigqebhe"
+
+#: closeOtherTabs.label closeOtherTabs.accesskey
+msgid "Close &Other Tabs"
+msgstr "Vala &Ezinye Izigqebhe"
+
+#. LOCALIZATION NOTE (pinAppTab.label, unpinAppTab.label): "Pin" is being
+#. used as a metaphor for expressing the fact that these tabs are "pinned" to the
+#. left edge of the tabstrip. Really we just want the string to express the idea
+#. that this is a lightweight and reversible action that keeps your tab where you
+#. can reach it easily.
+#: pinAppTab.label pinAppTab.accesskey
+msgid "&Pin as App Tab"
+msgstr ""
+
+#: unpinAppTab.label unpinAppTab.accesskey
+msgid "Unpin Ta&b"
+msgstr ""
+
+#: moveToGroup.label moveToGroup.accesskey
+msgid "&Move to Group"
+msgstr ""
+
+#: moveToNewGroup.label
+msgid "New Group"
+msgstr ""
+
+#: moveToNewWindow.label moveToNewWindow.accesskey
+msgid "Move to New &Window"
+msgstr ""
+
+#: bookmarkAllTabs.label bookmarkAllTabs.accesskey
+#, fuzzy
+msgid "Bookmark All &Tabs…"
+msgstr "Phawula Wonke Amathebhu…"
+
+#: undoCloseTab.label undoCloseTab.accesskey
+msgid "&Undo Close Tab"
+msgstr ""
+
+#: closeTab.label closeTab.accesskey
+msgid "&Close Tab"
+msgstr "&Vala Isigqebhe"
+
+#: listAllTabs.label
+msgid "List all tabs"
 msgstr ""
 
 #: tabCmd.label tabCmd.accesskey
@@ -72,6 +122,11 @@ msgstr "&Yamukela…"
 msgid "&Work Offline"
 msgstr "&Sebenza Ngaphandle Kwe-Inthanethi"
 
+#: menubarCmd.label menubarCmd.accesskey
+#, fuzzy
+msgid "&Menu Bar"
+msgstr "Ibha Yohlu Lokukhona"
+
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "&Ibha Yamathuluzi Okunavigeyitha"
@@ -84,9 +139,9 @@ msgstr "&Ibha Yamathuluzi Ezimpawu Zokubekisa"
 msgid "Bookmarks Toolbar Items"
 msgstr "Izinto Zebha Yamathuluzi Okuphawula"
 
-#: taskbarCmd.label taskbarCmd.accesskey
-msgid "Status &Bar"
-msgstr "Ibha &Yesimo"
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr ""
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -106,8 +161,19 @@ msgid "i"
 msgstr "i"
 
 #: fullScreenCmd.label fullScreenCmd.accesskey
+#, fuzzy
+msgctxt "fullScreenCmd.label fullScreenCmd.accesskey"
 msgid "&Full Screen"
 msgstr "&Iskrini Esigcwele"
+
+#: fullScreenCmd.macCommandKey
+msgctxt "fullScreenCmd.macCommandKey"
+msgid "f"
+msgstr ""
+
+#: showAllTabsCmd.label showAllTabsCmd.accesskey
+msgid "Show &All Tabs"
+msgstr ""
 
 #: fullScreenMinimize.tooltip
 msgid "Minimize"
@@ -136,6 +202,8 @@ msgid "Close Win&dow"
 msgstr "Vala Ifasitela"
 
 #: bookmarksMenu.label bookmarksMenu.accesskey
+#, fuzzy
+msgctxt "bookmarksMenu.label bookmarksMenu.accesskey"
 msgid "&Bookmarks"
 msgstr "&Izimpawu Zokubekisa"
 
@@ -162,8 +230,8 @@ msgctxt "addCurPagesCmd.label"
 msgid "Bookmark All Tabs…"
 msgstr "Phawula Wonke Amathebhu…"
 
-#: organizeBookmarks.label
-msgid "Organize Bookmarks…"
+#: showAllBookmarks2.label
+msgid "Show All Bookmarks"
 msgstr ""
 
 #: bookmarkAllCmd.label
@@ -190,11 +258,6 @@ msgstr "&Phambili"
 #: forwardButton.tooltip
 msgid "Go forward one page"
 msgstr "Yiya phambili ngekhasi elilodwa"
-
-#: backForwardMenu.tooltip
-#, fuzzy
-msgid "Recent pages"
-msgstr "Amakhasi Amuva"
 
 #: reloadCmd.label reloadCmd.accesskey
 msgid "&Reload"
@@ -228,6 +291,10 @@ msgstr "Printa"
 msgid "Print this page"
 msgstr "Printa leli khasi"
 
+#: backForwardItem.title
+msgid "Back/Forward"
+msgstr ""
+
 #: locationItem.title
 msgid "Location"
 msgstr "Indawo"
@@ -246,41 +313,89 @@ msgid "Bookmarks"
 msgstr "Izimpawu Zokubekisa"
 
 #. Toolbar items
+#: appMenuButton.label
+msgid "Menu"
+msgstr ""
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr ""
+
 #: homeButton.label
 msgctxt "homeButton.label"
 msgid "Home"
 msgstr "Ekhaya"
 
-#: bookmarksButton.label
-msgctxt "bookmarksButton.label"
-msgid "Bookmarks"
-msgstr "Izimpawu Zokubekisa"
+#: tabGroupsButton.label
+msgid "Tab Groups"
+msgstr ""
+
+#: tabGroupsButton.tooltip
+msgid "Group your tabs"
+msgstr ""
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "Bhalisela Ukuthunyelelwa"
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr ""
+
+#: bookmarksButton.label bookmarksButton.accesskey
+#, fuzzy
+msgctxt "bookmarksButton.label bookmarksButton.accesskey"
+msgid "&Bookmarks"
+msgstr "&Izimpawu Zokubekisa"
 
 #: bookmarksButton.tooltip
+#, fuzzy
+msgctxt "bookmarksButton.tooltip"
 msgid "Display your bookmarks"
 msgstr "Bonisa okokuphawula"
 
-#: bookmarksSidebarCmd.accesskey
-msgctxt "bookmarksSidebarCmd.accesskey"
-msgid "B"
-msgstr "B"
-
-#: bookmarksSidebarCmd.commandkey
+#: bookmarksCmd.commandkey
 msgid "b"
-msgstr "b"
+msgstr ""
 
-#. This command
+#: bookmarksMenuButton.label
+#, fuzzy
+msgctxt "bookmarksMenuButton.label"
+msgid "Bookmarks"
+msgstr "Izimpawu Zokubekisa"
+
+#: bookmarksMenuButton.tooltip
+#, fuzzy
+msgctxt "bookmarksMenuButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "Bonisa okokuphawula"
+
+#: bookmarksMenuButton.unsorted.label
+msgctxt "bookmarksMenuButton.unsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr ""
+
+#: viewBookmarksSidebar.label
+msgid "Show in Sidebar"
+msgstr ""
+
+#: viewBookmarksToolbar.label
+#, fuzzy
+msgid "View Bookmarks Toolbar"
+msgstr "&Ibha Yamathuluzi Ezimpawu Zokubekisa"
+
+#. LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
 #. -  key should not contain the letters A-F, since these are reserved
 #. -  shortcut keys on Linux.
-#: bookmarksSidebarGtkCmd.commandkey
-msgctxt "bookmarksSidebarGtkCmd.commandkey"
+#: bookmarksGtkCmd.commandkey
+msgctxt "bookmarksGtkCmd.commandkey"
 msgid "o"
-msgstr "o"
+msgstr ""
 
-#: bookmarksSidebarWinCmd.commandkey
-msgctxt "bookmarksSidebarWinCmd.commandkey"
+#: bookmarksWinCmd.commandkey
+msgctxt "bookmarksWinCmd.commandkey"
 msgid "i"
-msgstr "i"
+msgstr ""
 
 #: historyButton.label
 msgid "History"
@@ -332,10 +447,10 @@ msgstr "y"
 msgid "&Add-ons"
 msgstr ""
 
-#: addons.tooltip
-#, fuzzy
-msgid "Show and Manage installed Add-ons"
-msgstr "Bonisa futhi Uqondise Izithasiselo Ezifakelwe"
+#: addons.commandkey
+msgctxt "addons.commandkey"
+msgid "A"
+msgstr ""
 
 #: errorConsoleCmd.label errorConsoleCmd.accesskey
 msgid "Error &Console"
@@ -345,6 +460,58 @@ msgstr ""
 msgctxt "errorConsoleCmd.commandkey"
 msgid "j"
 msgstr "j"
+
+#: webConsoleCmd.label webConsoleCmd.accesskey
+msgid "&Web Console"
+msgstr ""
+
+#: webConsoleCmd.commandkey
+msgctxt "webConsoleCmd.commandkey"
+msgid "k"
+msgstr ""
+
+#: inspectMenu.label inspectMenu.accesskey
+msgid "Inspec&t"
+msgstr ""
+
+#: inspectMenu.commandkey
+msgid "I"
+msgstr ""
+
+#: inspectPanelTitle.label
+msgid "HTML"
+msgstr "HTML"
+
+#: inspectButton.label inspectButton.accesskey
+#, fuzzy
+msgid "&Inspect"
+msgstr "&Faka"
+
+#: inspectNextButton.label inspectNextButton.accesskey
+msgid "&Next"
+msgstr "&Okulandelayo"
+
+#: inspectPreviousButton.label inspectPreviousButton.accesskey
+msgid "&Previous"
+msgstr "&Okwandulelayo"
+
+#: inspectStyleButton.label inspectStyleButton.accesskey
+msgid "&Style"
+msgstr ""
+
+#: inspectStylePanelTitle.label
+#, fuzzy
+msgid "Style"
+msgstr "Isitayela:"
+
+#. This button label
+#. -  appears on the Inspector's toolbar. It is used to open and close the Object
+#. -  panel. There is also a label in inspector.properties for the panel
+#. -  titlebar: object.objectPanelTitle.
+#: inspectObjectButton.label inspectObjectButton.accesskey
+#, fuzzy
+msgid "&Object"
+msgstr "Okuhloswe Ukwenziwa"
 
 #: fileMenu.label fileMenu.accesskey
 msgid "&File"
@@ -363,7 +530,7 @@ msgid "&Edit"
 msgstr "&Lungisa"
 
 #: undoCmd.label undoCmd.accesskey
-msgctxt "undoCmd.label undoCmd.accesskey"
+#, fuzzy
 msgid "&Undo"
 msgstr "&Susa Okwenzile"
 
@@ -376,6 +543,8 @@ msgid "&Redo"
 msgstr "&Buyisela okususile"
 
 #: redoCmd.key
+#, fuzzy
+msgctxt "redoCmd.key"
 msgid "Y"
 msgstr "Y"
 
@@ -418,19 +587,22 @@ msgid "Select &All"
 msgstr "Khetha &Konke"
 
 #: selectAllCmd.key
+#, fuzzy
+msgctxt "selectAllCmd.key"
 msgid "A"
 msgstr "A"
 
-#: preferencesCmd.label preferencesCmd.accesskey
-msgid "&Options…"
+#: preferencesCmd2.label preferencesCmd2.accesskey
+#, fuzzy
+msgid "&Options"
 msgstr "&Okukhethwa Kukho…"
 
 #: preferencesCmdUnix.label preferencesCmdUnix.accesskey
 msgid "Prefere&nces"
 msgstr "Okuthand&wayo"
 
-#: clearRecentHistoryCmd.label clearRecentHistoryCmd.accesskey
-msgid "Clear Recent &History"
+#: clearRecentHistory.label clearRecentHistory.accesskey
+msgid "Clear Recent &History…"
 msgstr ""
 
 #. LOCALIZATION NOTE : These two strings can share an access key beause they never appear together on the menu
@@ -451,6 +623,10 @@ msgstr "P"
 msgid "&View"
 msgstr "&Bheka"
 
+#: viewTabGroups.label viewTabGroups.accesskey
+msgid "Tab &Groups"
+msgstr ""
+
 #: viewToolbarsMenu.label viewToolbarsMenu.accesskey
 msgid "&Toolbars"
 msgstr "&Amabha Amathuluzi"
@@ -462,6 +638,10 @@ msgstr "Ibha &Esohlangothini"
 #: viewCustomizeToolbar.label viewCustomizeToolbar.accesskey
 msgid "&Customize…"
 msgstr "&Yenza Okujwayelekile…"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr ""
 
 #: historyMenu.label historyMenu.accesskey
 #, fuzzy
@@ -477,6 +657,10 @@ msgstr ""
 msgid "Recently Closed Windows"
 msgstr ""
 
+#: historyRestoreLastSession.label
+msgid "Restore Previous Session"
+msgstr ""
+
 #: historyHomeCmd.label
 msgctxt "historyHomeCmd.label"
 msgid "Home"
@@ -490,31 +674,53 @@ msgstr ""
 msgid "H"
 msgstr ""
 
+#: appMenuEdit.label
+#, fuzzy
+msgid "Edit"
+msgstr "&Lungisa"
+
+#: appMenuCustomize.label
+#, fuzzy
+msgid "Customize"
+msgstr "&Yenza Okujwayelekile…"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr ""
+
+#: appMenuSidebars.label
+#, fuzzy
+msgid "Sidebars"
+msgstr "Ibha &Esohlangothini"
+
+#: appMenuFind.label
+#, fuzzy
+msgid "Find…"
+msgstr "Thola"
+
+#: appMenuUnsorted.label
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr ""
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr ""
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr ""
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr ""
+
 #: openCmd.commandkey
 msgid "l"
 msgstr "l"
 
-#: urlbar.emptyText
-msgctxt "urlbar.emptyText"
-msgid "Search Bookmarks and History"
-msgstr ""
-
-#: urlbar.bookmarkhistory.emptyText
-msgctxt "urlbar.bookmarkhistory.emptyText"
-msgid "Search Bookmarks and History"
-msgstr ""
-
-#: urlbar.bookmark.emptyText
-#, fuzzy
-msgid "Search Bookmarks"
-msgstr "&Funa Izimpawu Zokubekisa…"
-
-#: urlbar.history.emptyText
-msgid "Search History"
-msgstr ""
-
-#: urlbar.none.emptyText
-msgid "Type a Web address"
+#: urlbar.placeholder
+msgid "Go to a Web Site"
 msgstr ""
 
 #: urlbar.accesskey
@@ -522,49 +728,58 @@ msgctxt "urlbar.accesskey"
 msgid "d"
 msgstr "d"
 
+#: urlbar.switchToTab.label
+msgid "Switch to tab:"
+msgstr ""
+
 #. Comment duplicated from browser-sets.inc:
 #. Search Command Key Logic works like this:
 #. Unix: Ctrl+J (0.8, 0.9 support)
 #. Ctrl+K (cross platform binding)
-#. Mac:  Ctrl+K (cross platform binding)
+#. Mac:  Cmd+K (cross platform binding)
+#. Cmd+Opt+F (platform convention)
 #. Win:  Ctrl+K (cross platform binding)
-#. Ctrl+E (IE compat)
 #. We support Ctrl+K on all platforms now and advertise it in the menu since it is
 #. our standard - it is a "safe" choice since it is near no harmful keys like "W" as
 #. "E" is. People mourning the loss of Ctrl+K for emacs compat can switch their GTK
 #. system setting to use emacs emulation, and we should respect it. Focus-Search-Box
 #. is a fundamental keybinding and we are maintaining a XP binding so that it is easy
 #. for people to switch to Linux.
-#. Do *not* tamper with these values without talking to ben@mozilla.org
 #: searchFocus.commandkey
+#, fuzzy
+msgctxt "searchFocus.commandkey"
 msgid "k"
 msgstr "k"
-
-#: searchFocus.commandkey2
-msgctxt "searchFocus.commandkey2"
-msgid "e"
-msgstr "e"
 
 #: searchFocusUnix.commandkey
 msgctxt "searchFocusUnix.commandkey"
 msgid "j"
 msgstr "j"
 
-#: openLinkCmd.label openLinkCmd.accesskey
-msgid "Open Link in New &Window"
-msgstr "Vula Isixhumo Efasiteleni &Elisha"
+#: tabView.commandkey
+msgctxt "tabView.commandkey"
+msgid "e"
+msgstr ""
 
 #: openLinkCmdInTab.label openLinkCmdInTab.accesskey
 msgid "Open Link in New &Tab"
 msgstr "Vula Isixhumo Esigqebheni &Esisha"
 
-#: openFrameCmd.label openFrameCmd.accesskey
-msgid "Open Frame in New &Window"
-msgstr "Vula Uhlaka Efasiteleni &Elisha"
+#: openLinkCmd.label openLinkCmd.accesskey
+msgid "Open Link in New &Window"
+msgstr "Vula Isixhumo Efasiteleni &Elisha"
+
+#: openLinkCmdInCurrent.label openLinkCmdInCurrent.accesskey
+msgid "&Open Link"
+msgstr ""
 
 #: openFrameCmdInTab.label openFrameCmdInTab.accesskey
 msgid "Open Frame in New &Tab"
 msgstr "Vula Uhlaka Kwisigqebhe &Esisha"
+
+#: openFrameCmd.label openFrameCmd.accesskey
+msgid "Open Frame in New &Window"
+msgstr "Vula Uhlaka Efasiteleni &Elisha"
 
 #: showOnlyThisFrameCmd.label showOnlyThisFrameCmd.accesskey
 #, fuzzy
@@ -618,6 +833,11 @@ msgstr "&Phinda Ulayishe Uhlaka"
 #: viewImageCmd.label viewImageCmd.accesskey
 msgid "View &Image"
 msgstr "Bheka &Isithombe"
+
+#: viewImageInfoCmd.label viewImageInfoCmd.accesskey
+#, fuzzy
+msgid "View Image In&fo"
+msgstr "Bheka Ukwaziswa &Kwekhasi"
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -711,10 +931,6 @@ msgstr ""
 msgid "Copy Link Loc&ation"
 msgstr "&Kopisha Indawo Yesixhumo"
 
-#: copyLinkTextCmd.label copyLinkTextCmd.accesskey
-msgid "Copy Link Te&xt"
-msgstr ""
-
 #: copyImageCmd.label copyImageCmd.accesskey
 msgid "C&opy Image Location"
 msgstr "K&opisha Indawo Yesithombe"
@@ -732,15 +948,6 @@ msgstr "K&opisha Indawo Yesithombe"
 #, fuzzy
 msgid "C&opy Audio Location"
 msgstr "K&opisha Indawo Yesithombe"
-
-#: blockImageCmd.accesskey
-msgctxt "blockImageCmd.accesskey"
-msgid "B"
-msgstr "B"
-
-#: metadataCmd.label metadataCmd.accesskey
-msgid "&Properties"
-msgstr "&Izici"
 
 #: copyEmailCmd.label copyEmailCmd.accesskey
 msgid "Copy &Email Address"
@@ -775,6 +982,12 @@ msgstr ""
 msgid "Hide &Controls"
 msgstr ""
 
+#: videoFullScreen.label videoFullScreen.accesskey
+#, fuzzy
+msgctxt "videoFullScreen.label videoFullScreen.accesskey"
+msgid "&Full Screen"
+msgstr "&Iskrini Esigcwele"
+
 #. LOCALIZATION NOTE :
 #. fullZoomEnlargeCmd.commandkey3, fullZoomReduceCmd.commandkey2 and
 #. fullZoomResetCmd.commandkey2 are alternative acceleration keys for zoom.
@@ -795,7 +1008,8 @@ msgid "="
 msgstr "="
 
 #: fullZoomEnlargeCmd.commandkey3
-msgid "_: fullZoomEnlargeCmd.commandkey3\n"
+msgctxt "fullZoomEnlargeCmd.commandkey3fullZoomEnlargeCmd.commandkey3"
+msgid ""
 msgstr ""
 
 #: fullZoomReduceCmd.label fullZoomReduceCmd.accesskey
@@ -807,6 +1021,11 @@ msgstr "Hlehla Esithombeni"
 msgid "-"
 msgstr "-"
 
+#: fullZoomReduceCmd.commandkey2
+msgctxt "fullZoomReduceCmd.commandkey2"
+msgid ""
+msgstr ""
+
 #: fullZoomResetCmd.label fullZoomResetCmd.accesskey
 msgid "&Reset"
 msgstr "&Qalisa Phansi"
@@ -814,6 +1033,11 @@ msgstr "&Qalisa Phansi"
 #: fullZoomResetCmd.commandkey
 msgid "0"
 msgstr "0"
+
+#: fullZoomResetCmd.commandkey2
+msgctxt "fullZoomResetCmd.commandkey2"
+msgid ""
+msgstr ""
 
 #: fullZoomToggleCmd.label fullZoomToggleCmd.accesskey
 msgid "Zoom &Text Only"
@@ -847,6 +1071,24 @@ msgstr "Kopisha"
 #: pasteButton.tooltip
 msgid "Paste"
 msgstr "Namathisela"
+
+#: fullScreenButton.tooltip
+msgid "Display the window in full screen"
+msgstr ""
+
+#: zoomOutButton.tooltip
+#, fuzzy
+msgid "Zoom out"
+msgstr "Hlehla Esithombeni"
+
+#: zoomInButton.tooltip
+#, fuzzy
+msgid "Zoom in"
+msgstr "Sondela Eduze Kwesithombe"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr ""
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -922,7 +1164,8 @@ msgid "D"
 msgstr "D"
 
 #: bidiSwitchPageDirectionItem.label bidiSwitchPageDirectionItem.accesskey
-msgid "Switch Pa&ge Direction"
+#, fuzzy
+msgid "Switch Page &Direction"
 msgstr "Shintsha In&dlela Yekhasi"
 
 #: bidiSwitchTextDirectionItem.label bidiSwitchTextDirectionItem.accesskey
@@ -939,6 +1182,8 @@ msgid "&Find in This Page…"
 msgstr "&Thola Kuleli Khasi…"
 
 #: findOnCmd.commandkey
+#, fuzzy
+msgctxt "findOnCmd.commandkey"
 msgid "f"
 msgstr "f"
 
@@ -970,16 +1215,6 @@ msgstr "Khansela"
 msgid "R"
 msgstr "Q"
 
-#: editBookmark.undo.label editBookmark.undo.accessKey
-msgctxt "editBookmark.undo.label editBookmark.undo.accessKey"
-msgid "&Undo"
-msgstr "&Susa Okwenzile"
-
-#: editBookmark.edit.label editBookmark.edit.accessKey
-#, fuzzy
-msgid "&Edit…"
-msgstr "&Lungisa"
-
 #: identity.unverifiedsite2
 msgid "This web site does not supply identity information."
 msgstr ""
@@ -1009,9 +1244,93 @@ msgstr "Ukwaziswa Okwengeziwe…"
 msgid "Click to open downloads window"
 msgstr ""
 
-#: ctrlTab.search.emptyText
+#: allTabs.filter.emptyText
 msgid "Search Tabs"
 msgstr ""
+
+#. Name for the tabs toolbar as spoken by screen readers.
+#. The word "toolbar" is appended automatically and should not be contained below!
+#: tabsToolbar.label
+msgid "Browser tabs"
+msgstr ""
+
+#. This appears in the history menu
+#: syncTabsMenu.label
+msgid "Tabs From Other Computers"
+msgstr ""
+
+#: syncBrand.shortName.label
+msgctxt "syncBrand.shortName.label"
+msgid "Sync"
+msgstr ""
+
+#: syncSetup.label
+msgid "Set Up &syncBrand.shortName.label;…"
+msgstr ""
+
+#: syncSetup.accesskey
+msgctxt "syncSetup.accesskey"
+msgid "Y"
+msgstr ""
+
+#: syncSyncNowItem.label syncSyncNowItem.accesskey
+msgid "&Sync Now"
+msgstr ""
+
+#: syncToolbarButton.label
+msgctxt "syncToolbarButton.label"
+msgid "Sync"
+msgstr ""
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr ""
+
+#~ msgid "Status &Bar"
+#~ msgstr "Ibha &Yesimo"
+
+#, fuzzy
+#~ msgid "Recent pages"
+#~ msgstr "Amakhasi Amuva"
+
+#~ msgctxt "bookmarksButton.label"
+#~ msgid "Bookmarks"
+#~ msgstr "Izimpawu Zokubekisa"
+
+#~ msgctxt "bookmarksSidebarCmd.accesskey"
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgctxt "bookmarksSidebarGtkCmd.commandkey"
+#~ msgid "o"
+#~ msgstr "o"
+
+#~ msgctxt "bookmarksSidebarWinCmd.commandkey"
+#~ msgid "i"
+#~ msgstr "i"
+
+#, fuzzy
+#~ msgid "Show and Manage installed Add-ons"
+#~ msgstr "Bonisa futhi Uqondise Izithasiselo Ezifakelwe"
+
+#, fuzzy
+#~ msgid "Search Bookmarks"
+#~ msgstr "&Funa Izimpawu Zokubekisa…"
+
+#~ msgctxt "blockImageCmd.accesskey"
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid "&Properties"
+#~ msgstr "&Izici"
+
+#~ msgctxt "editBookmark.undo.label editBookmark.undo.accessKey"
+#~ msgid "&Undo"
+#~ msgstr "&Susa Okwenzile"
+
+#, fuzzy
+#~ msgid "&Edit…"
+#~ msgstr "&Lungisa"
 
 #~ msgid "Source for: "
 #~ msgstr "Umthombo we-: "
