@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-10 21:27+0200\n"
+"POT-Creation-Date: 2011-01-14 01:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.8.0\n"
+"X-Generator: Translate Toolkit 1.9.0-beta1\n"
 "X-Accelerator-Marker: &\n"
 
 #: addons.windowTitle
@@ -52,8 +52,12 @@ msgstr "Could not find any matching add-ons"
 msgid "Learn more about add-ons"
 msgstr "Learn more about add-ons"
 
-#: installFromFile.label installFromFile.accesskey
-msgid "&Install From File…"
+#: installAddonFromFile.label installAddonFromFile.accesskey
+msgid "&Install Add-on From File…"
+msgstr ""
+
+#: toolsMenu.tooltip
+msgid "Tools for all add-ons"
 msgstr ""
 
 #: cmd.back.tooltip
@@ -67,12 +71,13 @@ msgstr "Go forward one page"
 #. global warnings
 #: warning.safemode.label
 msgid "All add-ons have been disabled by safe mode."
-msgstr ""
+msgstr "All add-ons have been disabled by safe mode."
 
 #: warning.checkcompatibility.label
 msgid ""
 "Add-on compatibility checking is disabled. You may have incompatible add-ons."
 msgstr ""
+"Add-on compatibility checking is disabled. You may have incompatible add-ons."
 
 #: warning.checkcompatibility.enable.label
 #, fuzzy
@@ -89,6 +94,8 @@ msgid ""
 "Add-on update security checking is disabled. You may be compromised by "
 "updates."
 msgstr ""
+"Add-on update security checking is disabled. You may be compromised by "
+"updates."
 
 #: warning.updatesecurity.enable.label
 #, fuzzy
@@ -137,26 +144,38 @@ msgstr "Recent Updates"
 msgid "Available Updates"
 msgstr "Available Updates"
 
-#: view.utilites.preferences.tooltip
-msgid "Options for all add-ons"
-msgstr ""
-
-#: view.utilites.preferencesUnix.tooltip
-msgid "Preferences for all add-ons"
-msgstr ""
-
 #. addon updates
-#: updates.updateAddonsNow.label updates.updateAddonsNow.accesskey
-msgid "&Update Add-ons Now"
-msgstr "&Update Add-ons Now"
+#: updates.checkForUpdates.label updates.checkForUpdates.accesskey
+#, fuzzy
+msgid "&Check for Updates"
+msgstr "Check For Updates"
 
 #: updates.viewUpdates.label updates.viewUpdates.accesskey
 msgid "&View Recent Updates"
 msgstr "&View Recent Updates"
 
-#: updates.backgroudUpdateCheck.label updates.backgroudUpdateCheck.accesskey
-msgid "&Check for Updates Automatically"
-msgstr "&Check for Updates Automatically"
+#. This menu item
+#. is a checkbox that toggles the default global behavior for add-on update
+#. checking.
+#: updates.updateAddonsAutomatically.label
+#: updates.updateAddonsAutomatically.accesskey
+msgid "Update &Add-ons Automatically"
+msgstr ""
+
+#. LOCALIZATION NOTE (updates.resetUpdatesToAutomatic.label, updates.resetUpdatesToManual.label):
+#. Specific addons can have custom update checking behaviors ("Manually",
+#. "Automatically", "Use default global behavior"). These menu items reset the
+#. update checking behavior for all add-ons to the default global behavior
+#. (which itself is either "Automatically" or "Manually", controlled by the
+#. updates.updateAddonsAutomatically.label menu item).
+#: updates.resetUpdatesToAutomatic.label
+#: updates.resetUpdatesToAutomatic.accesskey
+msgid "&Reset All Add-ons to Update Automatically"
+msgstr ""
+
+#: updates.resetUpdatesToManual.label updates.resetUpdatesToManual.accesskey
+msgid "&Reset All Add-ons to Update Manually"
+msgstr ""
 
 #: updates.updating.label
 msgid "Updating add-ons"
@@ -288,6 +307,27 @@ msgstr "Hide Release Notes"
 msgid "Hide the release notes for this update"
 msgstr "Hide the release notes for this update"
 
+#. discovery view
+#. LOCALIZATION NOTE (discover.title,discover.description,discover.footer):
+#. Displayed in the center of the Get Add-ons view, see bug 601143 for mockups.
+#: discover.title
+msgid "What are Add-ons?"
+msgstr ""
+
+#: discover.description2
+msgid ""
+"Add-ons are applications that let you personalize &brandShortName; with \n"
+"extra functionality or style. Try a time-saving sidebar, a weather notifier, "
+"or a themed look to make &brandShortName; \n"
+"your own."
+msgstr ""
+
+#: discover.footer
+msgid ""
+"When you're connected to the internet, this pane will feature \n"
+"some of the best and most popular add-ons for you to try out."
+msgstr ""
+
 #. detail view
 #: detail.version.label
 msgid "Version"
@@ -320,6 +360,14 @@ msgstr ""
 
 #: detail.updateType
 msgid "Automatic Updates"
+msgstr ""
+
+#: detail.updateDefault.label
+msgid "Default"
+msgstr "Default"
+
+#: detail.updateDefault.tooltip
+msgid "Automatically install updates only if that's the default"
 msgstr ""
 
 #: detail.updateAutomatic.label
@@ -425,6 +473,15 @@ msgstr ""
 #: sort.relevance.tooltip
 msgid "Sort by relevance"
 msgstr ""
+
+#: sort.price.label
+msgid "Price"
+msgstr ""
+
+#: sort.price.tooltip
+#, fuzzy
+msgid "Sort by price"
+msgstr "Sort by size"
 
 #: search.filter2.label
 #, fuzzy
@@ -551,6 +608,30 @@ msgstr "Sorry, but there was an error loading the release notes."
 msgid "By "
 msgstr "By "
 
+#: eula.title
+msgid "End-User License Agreement"
+msgstr "End-User License Agreement"
+
+#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
+#: eula.width
+msgid "560px"
+msgstr "560px"
+
+#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
+#: eula.height
+msgid "400px"
+msgstr "400px"
+
+#: eula.accept
+msgid "Accept and Install…"
+msgstr "Accept and Install"
+
+#~ msgid "&Update Add-ons Now"
+#~ msgstr "&Update Add-ons Now"
+
+#~ msgid "&Check for Updates Automatically"
+#~ msgstr "&Check for Updates Automatically"
+
 #~ msgid "Themes"
 #~ msgstr "Themes"
 
@@ -578,9 +659,6 @@ msgstr "By "
 
 #~ msgid "Rating:"
 #~ msgstr "Rating:"
-
-#~ msgid "Sort by size"
-#~ msgstr "Sort by size"
 
 #~ msgid "Sort by average rating"
 #~ msgstr "Sort by average rating"
@@ -909,18 +987,6 @@ msgstr "By "
 
 #~ msgid "Install failed."
 #~ msgstr "Install failed."
-
-#~ msgid "End-User License Agreement"
-#~ msgstr "End-User License Agreement"
-
-#~ msgid "560px"
-#~ msgstr "560px"
-
-#~ msgid "400px"
-#~ msgstr "400px"
-
-#~ msgid "Accept and Install…"
-#~ msgstr "Accept and Install"
 
 #~ msgid "I"
 #~ msgstr "I"

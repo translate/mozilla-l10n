@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-10 21:27+0200\n"
+"POT-Creation-Date: 2011-01-14 01:37+0200\n"
 "PO-Revision-Date: 2010-06-25 12:58+0400\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -11,19 +11,25 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.8.0\n"
+"X-Generator: Translate Toolkit 1.9.0-beta1\n"
 "X-Accelerator-Marker: &\n"
 
 #: error.login.reason.network
 msgid "Failed to connect to the server"
 msgstr "Failed to connect to the server"
 
-#: error.login.reason.passphrase
-msgid "Wrong secret phrase"
-msgstr "Wrong secret phrase"
+#: error.login.reason.synckey
+msgid "Wrong Sync Key"
+msgstr ""
 
+#. # error.login.reason.password is deprecated.
 #: error.login.reason.password
 msgid "Incorrect username or password"
+msgstr "Incorrect username or password"
+
+#: error.login.reason.account
+#, fuzzy
+msgid "Incorrect account name or password"
 msgstr "Incorrect username or password"
 
 #: error.login.reason.no_password
@@ -33,11 +39,6 @@ msgstr "No saved password to use"
 #: error.login.reason.no_synckey
 msgid "No saved Sync Key to use"
 msgstr ""
-
-#. # the following one is deprecated
-#: error.login.reason.no_passphrase
-msgid "No saved secret phrase to use"
-msgstr "No saved secret phrase to use"
 
 #: error.login.reason.server
 msgid "Server incorrectly configured"
@@ -61,8 +62,9 @@ msgid "Unknown error"
 msgstr "Unknown error"
 
 #: change.synckey.sameAsSyncKey
+#, fuzzy
 msgid "The new Sync Key cannot be the same as your Sync Key"
-msgstr ""
+msgstr "The secret phrase cannot be the same as your password"
 
 #: change.synckey.sameAsPassword
 #, fuzzy
@@ -74,41 +76,20 @@ msgstr "The secret phrase cannot be the same as your password"
 msgid "The Sync Key cannot be the same as your user name"
 msgstr "The secret phrase cannot be the same as your user name"
 
+#: change.synckey.sameAsEmail
+#, fuzzy
+msgid "The Sync Key cannot be the same as your email address"
+msgstr "The secret phrase cannot be the same as your password"
+
 #: change.synckey.tooShort
 #, fuzzy
 msgid "The Sync Key entered is too short"
 msgstr "The password entered is too short"
 
-#. # these are all deprecated:
-#: change.passphrase.ppSameAsPassphrase
-msgid "The secret phrase cannot be the same as your current secret phrase"
-msgstr "The secret phrase cannot be the same as your current secret phrase"
-
-#: change.passphrase.ppSameAsPassword
-msgid "The secret phrase cannot be the same as your password"
-msgstr "The secret phrase cannot be the same as your password"
-
-#: change.passphrase.ppSameAsUsername
-msgid "The secret phrase cannot be the same as your user name"
-msgstr "The secret phrase cannot be the same as your user name"
-
-#: change.passphrase.mismatch
-msgid "The phrases entered do not match"
-msgstr "The phrases entered do not match"
-
-#: change.passphrase.tooShort
-msgid "The secret phrase entered is too short"
-msgstr "The secret phrase entered is too short"
-
 #: change.password.pwSameAsSyncKey
 #, fuzzy
 msgid "Password can't match your Sync Key"
 msgstr "Password can't match your user name"
-
-#. # the following one is deprecated
-#: change.password.pwSameAsPassphrase
-msgid "Password can't match secret phrase"
-msgstr "Password can't match secret phrase"
 
 #: change.password.pwSameAsPassword
 msgid "Password can't match current password"
@@ -118,6 +99,10 @@ msgstr "Password can't match current password"
 msgid "Password can't match your user name"
 msgstr "Password can't match your user name"
 
+#: change.password.pwSameAsEmail
+msgid "Password can't match your email address"
+msgstr ""
+
 #: change.password.mismatch
 msgid "The passwords entered do not match"
 msgstr "The passwords entered do not match"
@@ -125,3 +110,27 @@ msgstr "The passwords entered do not match"
 #: change.password.tooShort
 msgid "The password entered is too short"
 msgstr "The password entered is too short"
+
+#~ msgid "Wrong secret phrase"
+#~ msgstr "Wrong secret phrase"
+
+#~ msgid "No saved secret phrase to use"
+#~ msgstr "No saved secret phrase to use"
+
+#~ msgid "The secret phrase cannot be the same as your current secret phrase"
+#~ msgstr "The secret phrase cannot be the same as your current secret phrase"
+
+#~ msgid "The secret phrase cannot be the same as your password"
+#~ msgstr "The secret phrase cannot be the same as your password"
+
+#~ msgid "The secret phrase cannot be the same as your user name"
+#~ msgstr "The secret phrase cannot be the same as your user name"
+
+#~ msgid "The phrases entered do not match"
+#~ msgstr "The phrases entered do not match"
+
+#~ msgid "The secret phrase entered is too short"
+#~ msgstr "The secret phrase entered is too short"
+
+#~ msgid "Password can't match secret phrase"
+#~ msgstr "Password can't match secret phrase"

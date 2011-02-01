@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-10 21:27+0200\n"
+"POT-Creation-Date: 2011-01-14 01:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.8.0\n"
+"X-Generator: Translate Toolkit 1.9.0-beta1\n"
 "X-Accelerator-Marker: &\n"
 
 #: nv_done
@@ -29,26 +29,6 @@ msgstr "Stopped"
 #: openFile
 msgid "Open File"
 msgstr "Open File"
-
-#: droponbookmarksbutton
-msgid "Drop a link to bookmark it"
-msgstr "Drop a link to bookmark it"
-
-#: dropondownloadsbutton
-msgid "Drop a link or file to download it"
-msgstr "Drop a link or file to download it"
-
-#: droponnewtabbutton
-msgid "Drop a link or file to open it in a new tab"
-msgstr "Drop a link or file to open it in a new tab"
-
-#: droponnewwindowbutton
-msgid "Drop a link or file to open it in a new window"
-msgstr "Drop a link or file to open it in a new window"
-
-#: droponhomebutton
-msgid "Drop a link or file to make it your home page"
-msgstr "Drop a link or file to make it your home page"
 
 #: droponhometitle
 msgid "Set Home Page"
@@ -113,6 +93,32 @@ msgstr "Enable"
 #: xpinstallDisabledButton.accesskey
 msgid "n"
 msgstr "n"
+
+#. # LOCALIZATION NOTE (addonDownloading, addonDownloadCancelled, addonDownloadRestart):
+#. # Semi-colon list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # Also see https://bugzilla.mozilla.org/show_bug.cgi?id=570012 for mockups
+#: addonDownloading
+msgid "Add-on downloading;Add-ons downloading"
+msgstr ""
+
+#: addonDownloadCancelled
+msgid "Add-on download cancelled.;Add-on downloads cancelled."
+msgstr ""
+
+#: addonDownloadRestart
+msgid "Restart Download;Restart Downloads"
+msgstr ""
+
+#: addonDownloadRestart.accessKey
+msgctxt "addonDownloadRestart.accessKey"
+msgid "R"
+msgstr ""
+
+#: addonDownloadCancelTooltip
+#, fuzzy
+msgid "Cancel"
+msgstr "&Cancel"
 
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semi-colon list of plural forms. See:
@@ -311,8 +317,9 @@ msgstr "Block pop-ups for %S"
 msgid "Don't show this message when pop-ups are blocked"
 msgstr "Don't show this message when pop-ups are blocked"
 
-#: popupWarningDontShowFromStatusbar
-msgid "Don't show info message when pop-ups are blocked"
+#: popupWarningDontShowFromLocationbar
+#, fuzzy
+msgid "Don't show info bar when pop-ups are blocked"
 msgstr "Don't show info message when pop-ups are blocked"
 
 #: popupShowPopupPrefix
@@ -425,63 +432,65 @@ msgstr "All history will be cleared."
 msgid "All selected items will be cleared."
 msgstr "All selected items will be cleared."
 
-#. # Check for Updates
-#. # LOCALIZATION NOTE (updatesItem_*): these are alternative labels for Check for Update item in Help menu.
-#. # Which one is used depends on Update process state.
-#: updatesItem_default
-msgctxt "updatesItem_default"
-msgid "Check for Updates…"
+#. # Check for Updates in the About Dialog - button labels and accesskeys
+#. # LOCALIZATION NOTE - all of the following update buttons labels will only be
+#. # displayed one at a time. So, if a button is displayed nothing else will
+#. # be displayed alongside of the button. The button when displayed is located
+#. # directly under the Firefox version in the about dialog (see bug 596813 for
+#. # screenshots).
+#: update.checkInsideButton.label
+#, fuzzy
+msgid "Check for Updates"
 msgstr "Check for Updates…"
 
-#: updatesItem_defaultFallback
-msgctxt "updatesItem_defaultFallback"
-msgid "Check for Updates…"
-msgstr "Check for Updates…"
-
-#: updatesItem_default.accesskey
+#: update.checkInsideButton.accesskey
 msgid "C"
-msgstr "C"
+msgstr ""
 
-#: updatesItem_downloading
-msgid "Downloading %S…"
-msgstr "Downloading %S…"
-
-#: updatesItem_downloadingFallback
-msgid "Downloading Update…"
-msgstr "Downloading Update…"
-
-#: updatesItem_downloading.accesskey
-msgctxt "updatesItem_downloading.accesskey"
-msgid "D"
-msgstr "D"
-
-#: updatesItem_resume
+#: update.resumeButton.label
 msgid "Resume Downloading %S…"
 msgstr "Resume Downloading %S…"
 
-#: updatesItem_resumeFallback
-msgid "Resume Downloading Update…"
-msgstr "Resume Downloading Update…"
-
-#: updatesItem_resume.accesskey
-msgctxt "updatesItem_resume.accesskey"
+#: update.resumeButton.accesskey
+msgctxt "update.resumeButton.accesskey"
 msgid "D"
-msgstr "D"
+msgstr ""
 
-#: updatesItem_pending
-msgctxt "updatesItem_pending"
-msgid "Apply Downloaded Update Now…"
-msgstr "Apply Downloaded Update Now…"
+#: update.openUpdateUI.applyButton.label
+msgid "Apply Update…"
+msgstr ""
 
-#: updatesItem_pendingFallback
-msgctxt "updatesItem_pendingFallback"
-msgid "Apply Downloaded Update Now…"
-msgstr "Apply Downloaded Update Now…"
+#: update.openUpdateUI.applyButton.accesskey
+msgctxt "update.openUpdateUI.applyButton.accesskey"
+msgid "A"
+msgstr ""
 
-#: updatesItem_pending.accesskey
-msgctxt "updatesItem_pending.accesskey"
-msgid "D"
-msgstr "D"
+#: update.restart.applyButton.label
+msgid "Apply Update"
+msgstr ""
+
+#: update.restart.applyButton.accesskey
+msgctxt "update.restart.applyButton.accesskey"
+msgid "A"
+msgstr ""
+
+#: update.openUpdateUI.upgradeButton.label
+msgid "Upgrade Now…"
+msgstr ""
+
+#: update.openUpdateUI.upgradeButton.accesskey
+msgctxt "update.openUpdateUI.upgradeButton.accesskey"
+msgid "U"
+msgstr ""
+
+#: update.restart.upgradeButton.label
+msgid "Upgrade Now"
+msgstr ""
+
+#: update.restart.upgradeButton.accesskey
+msgctxt "update.restart.upgradeButton.accesskey"
+msgid "U"
+msgstr ""
 
 #. # RSS Pretty Print
 #: feedShowFeedNew
@@ -526,6 +535,11 @@ msgstr "Go back to this page"
 #: tabHistory.goForward
 msgid "Go forward to this page"
 msgstr "Go forward to this page"
+
+#. # URL Bar
+#: pasteAndGo.label
+msgid "Paste & Go"
+msgstr ""
 
 #. # Block autorefresh
 #: refreshBlocked.goButton
@@ -866,6 +880,75 @@ msgstr "Default"
 #: extensions.{972ce4c6-7e08-4474-a285-3208198ce6fd}.description
 msgid "The default theme."
 msgstr "The default theme."
+
+#. # safeModeRestart
+#: safeModeRestartPromptTitle
+msgid "Restart with Add-ons Disabled"
+msgstr ""
+
+#: safeModeRestartPromptMessage
+msgid "Are you sure you want to disable all add-ons and restart?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
+#. # "true" (spelled and capitalized exactly that way) to show the "Character
+#. # Encoding" menu in the main Firefox button on Windows. Any other value will
+#. # hide it. Regardless of the value of this setting, the "Character Encoding"
+#. # menu will always be accessible via the "Web Developer" menu.
+#. # This is not a string to translate; it just controls whether the menu shows
+#. # up in the Firefox button. If users frequently use the "Character Encoding"
+#. # menu, set this to "true". Otherwise, you can leave it as "false".
+#: browser.menu.showCharacterEncoding
+msgid "false"
+msgstr "false"
+
+#~ msgid "Drop a link to bookmark it"
+#~ msgstr "Drop a link to bookmark it"
+
+#~ msgid "Drop a link or file to download it"
+#~ msgstr "Drop a link or file to download it"
+
+#~ msgid "Drop a link or file to open it in a new tab"
+#~ msgstr "Drop a link or file to open it in a new tab"
+
+#~ msgid "Drop a link or file to open it in a new window"
+#~ msgstr "Drop a link or file to open it in a new window"
+
+#~ msgid "Drop a link or file to make it your home page"
+#~ msgstr "Drop a link or file to make it your home page"
+
+#~ msgctxt "updatesItem_defaultFallback"
+#~ msgid "Check for Updates…"
+#~ msgstr "Check for Updates…"
+
+#~ msgid "Downloading %S…"
+#~ msgstr "Downloading %S…"
+
+#~ msgid "Downloading Update…"
+#~ msgstr "Downloading Update…"
+
+#~ msgctxt "updatesItem_downloading.accesskey"
+#~ msgid "D"
+#~ msgstr "D"
+
+#~ msgid "Resume Downloading Update…"
+#~ msgstr "Resume Downloading Update…"
+
+#~ msgctxt "updatesItem_resume.accesskey"
+#~ msgid "D"
+#~ msgstr "D"
+
+#~ msgctxt "updatesItem_pending"
+#~ msgid "Apply Downloaded Update Now…"
+#~ msgstr "Apply Downloaded Update Now…"
+
+#~ msgctxt "updatesItem_pendingFallback"
+#~ msgid "Apply Downloaded Update Now…"
+#~ msgstr "Apply Downloaded Update Now…"
+
+#~ msgctxt "updatesItem_pending.accesskey"
+#~ msgid "D"
+#~ msgstr "D"
 
 #~ msgctxt "menuRestoreAllTabs.accesskey"
 #~ msgid "R"
