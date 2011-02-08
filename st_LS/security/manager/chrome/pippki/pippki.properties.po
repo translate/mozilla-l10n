@@ -1,9 +1,46 @@
+#. #
+#. # ***** BEGIN LICENSE BLOCK *****
+#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#. #
+#. # The contents of this file are subject to the Mozilla Public License Version
+#. # 1.1 (the "License"); you may not use this file except in compliance with
+#. # the License. You may obtain a copy of the License at
+#. # http://www.mozilla.org/MPL/
+#. #
+#. # Software distributed under the License is distributed on an "AS IS" basis,
+#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+#. # for the specific language governing rights and limitations under the
+#. # License.
+#. #
+#. # The Original Code is mozilla.org code.
+#. #
+#. # The Initial Developer of the Original Code is
+#. # Netscape Communications Corporation.
+#. # Portions created by the Initial Developer are Copyright (C) 1998
+#. # the Initial Developer. All Rights Reserved.
+#. #
+#. # Contributor(s):
+#. #
+#. # Alternatively, the contents of this file may be used under the terms of
+#. # either the GNU General Public License Version 2 or later (the "GPL"), or
+#. # the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+#. # in which case the provisions of the GPL or the LGPL are applicable instead
+#. # of those above. If you wish to allow use of your version of this file only
+#. # under the terms of either the GPL or the LGPL, and not to allow others to
+#. # use your version of this file under the terms of the MPL, indicate your
+#. # decision by deleting the provisions above and replace them with the notice
+#. # and other provisions required by the GPL or the LGPL. If you do not delete
+#. # the provisions above, a recipient may use your version of this file under
+#. # the terms of any one of the MPL, the GPL or the LGPL.
+#. #
+#. # ***** END LICENSE BLOCK *****
+#. extracted from en-US/security/manager/chrome/pippki/pippki.properties
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 14:29+0200\n"
+"POT-Creation-Date: 2011-02-08 10:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,18 +48,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 1.9.0-beta2\n"
+"X-Accelerator-Marker: &\n"
 
 #: SignedBy
-msgid "Signed by %S"
-msgstr "E saennoe ke %S"
+msgid "Authenticated by %S"
+msgstr ""
 
 #: CertPassPrompt
-msgid "Please enter the Personal Security Password for the PSM Private Keys security device."
+msgid ""
+"Please enter the Personal Security Password for the PSM Private Keys "
+"security device."
 msgstr ""
 "Ka kopo kenea Phaseoete ea Tšireletso ea Hao bakeng sa sesebelisoa "
 "tšireletseho sa Likonopo tsa Poraefete tsa PSM."
 
+#. #These are for dialogs
+#. #Download Cert dialog
 #: newCAMessage1
 msgid "Do you want to trust \"%S\" for the following purposes?"
 msgstr "Na o batla ho tšepa \"%S\" bakeng sa merero elatelang?"
@@ -31,6 +73,7 @@ msgstr "Na o batla ho tšepa \"%S\" bakeng sa merero elatelang?"
 msgid "Certificate Authority (unnamed)"
 msgstr "Taolo ea Setifikeiti (ha se na lebitso)"
 
+#. #For editing cert trust
 #: editTrustWindowTitle
 msgid "Edit certificate trust"
 msgstr "Lokisa tšepeho ea setifikeiti"
@@ -40,33 +83,40 @@ msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Setifikeiti sa \"%S\" se emetse Tumello ea Setifikeiti."
 
 #: editTrustSSL
-msgid ""
-"_: editTrustSSL\n"
-"The certificate \"%S\" was issued by:"
+msgctxt "editTrustSSL"
+msgid "The certificate \"%S\" was issued by:"
 msgstr "Setifikeiti sa \"%S\" se fanoe ke:"
 
 #: editTrustEmail
-msgid ""
-"_: editTrustEmail\n"
-"The certificate \"%S\" was issued by:"
+msgctxt "editTrustEmail"
+msgid "The certificate \"%S\" was issued by:"
 msgstr "Setifikeiti sa \"%S\" se fanoe ke:"
 
 #: issuerNotTrusted
-msgid "Because you do not trust the certificate authority that issued this certificate, you do not trust the authenticity of this certificate unless otherwise indicated here."
+msgid ""
+"Because you do not trust the certificate authority that issued this "
+"certificate, you do not trust the authenticity of this certificate unless "
+"otherwise indicated here."
 msgstr ""
 "Hobane o sa tšepe taolo ea setifikeiti se faneng ka setifikeiti sena, ha o "
 "tšepe bonnete ba setifikeiti sena ntle le haeba ho hlalositsoe ka tsela e "
 "fapaneng mona."
 
 #: issuerTrusted
-msgid "Because you trust the certificate authority that issued this certificate, you trust the authenticity of this certificate unless otherwise indicated here."
+msgid ""
+"Because you trust the certificate authority that issued this certificate, "
+"you trust the authenticity of this certificate unless otherwise indicated "
+"here."
 msgstr ""
 "Hobane o tšepa taolo ea setifikeiti se faneng ka setifikeiti sena, o tšepa "
 "bonnete ba setifikeiti sena ntle le haeba ho hlalositsoe ka tsela e fapaneng "
 "mona."
 
 #: issuerNotKnown
-msgid "Because you do not know the certificate authority that issued this certificate, you do not trust the authenticity of this certificate unless otherwise indicated here."
+msgid ""
+"Because you do not know the certificate authority that issued this "
+"certificate, you do not trust the authenticity of this certificate unless "
+"otherwise indicated here."
 msgstr ""
 "Hobane o sa tšepe taolo ea setifikeiti se faneng ka setifikeiti sena, ha o "
 "tšepe bonnete ba setifikeiti sena ntle le haeba ho hlalositsoe ka tsela e "
@@ -76,35 +126,32 @@ msgstr ""
 msgid "Certificate for this certificate authority was not found"
 msgstr "Setifikeiti bakeng sa taolo ea setifikeiti sena ha e a fumanoa"
 
-#: deleteSslCertFlag
-msgid "deleteSslFlag"
-msgstr "phumulaSslFlag"
+#. #For Deleting Certificates
+#: deleteSslCertConfirm3
+#, fuzzy
+msgid "Are you sure you want to delete these server exceptions?"
+msgstr "Na o tiile o batla ho phumula lisetifiketiti tsee?"
 
-#: deleteSslCertConfirm
-msgid "Are you sure you want to delete these web site certificates?"
+#: deleteSslCertImpact3
+msgid ""
+"If you delete a server exception, you restore the usual security checks for "
+"that server and require it uses a valid certificate."
 msgstr ""
-"Na o tiile o batla ho phumula lisetifikeiti tsee tsa litša tsa inthanete?"
 
-#: deleteSslCertImpact
-msgid "If you delete a web site certificate, you will be asked to accept it again the next time you visit the web site."
+#: deleteSslCertTitle3
+msgid "Delete Server Certificate Exceptions"
 msgstr ""
-"Haeba o phumula setifikeiti sa setša sa inthanete, o tla kotjoa ho se "
-"amohela hape lekhetlo le tlang ha o etela setša seo sa inthanete."
-
-#: deleteSslCertTitle
-msgid "Delete Web Site Certificates"
-msgstr "Phumula Lisetifikeiti tsa Setša sa Inthanete"
-
-#: deleteUserCertFlag
-msgid "deleteUserFlag"
-msgstr "phumulaUserFlag"
 
 #: deleteUserCertConfirm
+#, fuzzy
+msgctxt "deleteUserCertConfirm"
 msgid "Are you sure you want to delete these certificates?"
 msgstr "Na o tiile o batla ho phumula lisetifiketiti tsee?"
 
 #: deleteUserCertImpact
-msgid "If you delete one of your own certificates, you can no longer use it to identify yourself."
+msgid ""
+"If you delete one of your own certificates, you can no longer use it to "
+"identify yourself."
 msgstr ""
 "Haeba o phumula se seng sa lisetifikeiti tsa hao, o ke ke oa hlola o se "
 "sebelisa ho itsebahatsa."
@@ -113,28 +160,26 @@ msgstr ""
 msgid "Delete your Certificates"
 msgstr "Phumula Lisetifikeiti tsa hao"
 
-#: deleteCaCertFlag
-msgid "deleteCaFlag"
-msgstr "phumulaCAFolakha"
+#: deleteCaCertConfirm2
+msgid ""
+"You have requested to delete these CA certificates. For built-in "
+"certificates all trust will be removed, which has the same effect. Are you "
+"sure you want to delete or distrust?"
+msgstr ""
 
-#: deleteCaCertConfirm
-msgid "Are you sure you want to delete these CA certificates?"
-msgstr "Na o tiile o batla ho phumula lisetifikeiti tsee tsa CA?"
-
-#: deleteCaCertImpact
-msgid "If you delete a certificate authority (CA) certificate, your browser will no longer trust any certificates issued by that CA."
+#: deleteCaCertImpactX2
+#, fuzzy
+msgid ""
+"If you delete or distrust a certificate authority (CA) certificate, this "
+"application will no longer trust any certificates issued by that CA."
 msgstr ""
 "Haeba o phumula setifikeiti sa taolo ea setifikeiti (Certificate Authority - "
 "CA), sebali sa hao se ke ke sa hlola se khona ho tšepa lisetifikeiti life "
 "kapa life tse fanoeng ke CA eo."
 
-#: deleteCaCertTitle
-msgid "Delete CA Certificates"
-msgstr "Phumula Lisetifikeiti tsa CA"
-
-#: deleteEmailCertFlag
-msgid "deleteEmailFlag"
-msgstr "phumulaImeileFolakha"
+#: deleteCaCertTitle2
+msgid "Delete or Distrust CA Certificates"
+msgstr ""
 
 #: deleteEmailCertConfirm
 msgid "Are you sure you want to delete these people's e-mail certificates?"
@@ -142,8 +187,11 @@ msgstr ""
 "Na o na le bonnete ba hore o batla ho phumula lisetifikeiti tsa imeile tsa "
 "batho baa?"
 
-#: deleteEmailCertImpact
-msgid "If you delete an e-mail certificate, your will no longer be able to send encrypted e-mail to those people."
+#: deleteEmailCertImpactDesc
+#, fuzzy
+msgid ""
+"If you delete a person's e-mail certificate, you will no longer be able to "
+"send encrypted e-mail to that person."
 msgstr ""
 "Haeba o phumula lisetifitketi tsa imeile tsa batho bana, o ke ke oa hlola o "
 "khona ho romela liimeile tse enkriptiloeng bathong bao."
@@ -152,9 +200,21 @@ msgstr ""
 msgid "Delete E-Mail Certificates"
 msgstr "Phumula Lisetifikeiti tsa Imeile"
 
-#: chooseP12RestoreFileDialog
-msgid "File Name to Restore"
-msgstr "Lebitso la Faele le Khutlisoang"
+#: deleteOrphanCertConfirm
+#, fuzzy
+msgctxt "deleteOrphanCertConfirm"
+msgid "Are you sure you want to delete these certificates?"
+msgstr "Na o tiile o batla ho phumula lisetifiketiti tsee?"
+
+#: deleteOrphanCertTitle
+#, fuzzy
+msgid "Delete Certificates"
+msgstr "Phumula Lisetifikeiti tsa CA"
+
+#. #PKCS#12 file dialogs
+#: chooseP12RestoreFileDialog2
+msgid "Certificate File to Import"
+msgstr ""
 
 #: chooseP12BackupFileDialog
 msgid "File Name to Backup"
@@ -164,53 +224,15 @@ msgstr "Lebitso la Faele le Etsoang Backup"
 msgid "PKCS12 Files"
 msgstr "Lifaele tsa PKCS12"
 
-#: mismatchDomainMsg1
-msgid "You have attempted to establish a connection with \"%S\".  However, the security certificate presented belongs to \"%S\".  It is possible, though unlikely, that someone may be trying to intercept your communication with this web site."
-msgstr ""
-"O lekile ho theaha khokelo ho \"%S\".  Leha ho le joalo, setifikeiti sa "
-"tšireletseho se fanoeng ke sa \"%S\".  Ho ka khoneha, leha monyetla fokola, "
-"hore ebe motho e mong o leka ho kenella khokahano ea hao le setša sena sa "
-"inthanete."
-
-#: mismatchDomainMsg2
-msgid "If you suspect the certificate shown does not belong to \"%S\", please cancel the connection and notify the site administrator."
-msgstr ""
-"Haeba o belaela hore setifikeiti sena se bontšitsoeng ha se sa \"%S\", ka kopo "
-"k'hansela khokelo ebe o tsebisa motsamaisi oa setša."
-
-#: serverCertExpiredMsg1
-msgid "\"%S\" is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on %S."
-msgstr ""
-"\"%S\" ke setša se sebelisang setifikeiti sa tšireletseho ho enkripta data ka "
-"nako ea phetiso, empa setifikeiti sa sona se feletsoe ke matla ka la %S."
-
-#: serverCertExpiredTitle
-msgid "Server Certificate Expired"
-msgstr "Setifikeiti sa Seva se Feletsoe ke Nako"
-
-#: serverCertNotYetValedMsg1
-msgid "\"%S\" is a site that uses a security certificate to encrypt data during transmission, but its certificate will not be valid until %S."
-msgstr ""
-"\"%S\" ke setša se sebelisang setifikeiti sa tšireletseho ho enkripta data ka "
-"nako ea phetiso, empa setifikeiti sa sona ha se na ho ba le matla ho fihlela "
-"ka la %S."
-
-#: serverCertNotYetValidTitle
-msgid "Server Certificate Not Yet Valid"
-msgstr "Setifikeiti sa Seva ha se Eso Loke"
-
-#: serverCertExpiredMsg2
-msgid "You should check to make sure that your computer's time (currently set to %S) is correct."
-msgstr ""
-"O lokela ho hlahloba ho etsa bonnete ba hore nako ea k'homphuta ea hao (eo "
-"hajoale e setetsoeng ho %S) e nepahetse."
-
+#. #Preferences
 #: resetPreferences
-msgid "Use this button to reset %S's security preferences to their factory settings."
+msgid ""
+"Use this button to reset %S's security preferences to their factory settings."
 msgstr ""
 "Sebelisa konopo ea ho qala bocha ho seta bocha boikhethelo ba tšireletseho "
 "ba %S ho ba li-setting tsa tsoang femeng."
 
+#. #Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr ""
@@ -222,7 +244,8 @@ msgstr "Setifikeiti sena ha se a khona ho tiisetsoa hobane se hlakotsoe."
 
 #: certNotVerified_CertExpired
 msgid "Could not verify this certificate because it has expired."
-msgstr "Setifikeiti sena ha se a khona ho tiisetsoa hobane se feletsoe ke nako."
+msgstr ""
+"Setifikeiti sena ha se a khona ho tiisetsoa hobane se feletsoe ke nako."
 
 #: certNotVerified_CertNotTrusted
 msgid "Could not verify this certificate because it is not trusted."
@@ -230,14 +253,16 @@ msgstr "Setifikeiti sena ha se a khona ho tiisetsoa hobane ha se tšetjoe."
 
 #: certNotVerified_IssuerNotTrusted
 msgid "Could not verify this certificate because the issuer is not trusted."
-msgstr "Setifikeiti sena ha se a khona ho tiisetsoa hobane mofani ha a tšetjoe."
+msgstr ""
+"Setifikeiti sena ha se a khona ho tiisetsoa hobane mofani ha a tšetjoe."
 
 #: certNotVerified_IssuerUnknown
 msgid "Could not verify this certificate because the issuer is unknown."
 msgstr "Setifikeiti sena ha se a khona ho tiisetsoa hobane mofani ha a tsejoe."
 
 #: certNotVerified_CAInvalid
-msgid "Could not verify this certificate because the CA certificate is invalid."
+msgid ""
+"Could not verify this certificate because the CA certificate is invalid."
 msgstr ""
 "Setifikeiti sena ha se a khona ho tiisetsoa hobane setifikeiti sa CA se "
 "fosahetse."
@@ -246,6 +271,7 @@ msgstr ""
 msgid "Could not verify this certificate for unknown reasons."
 msgstr "Setifikeiti sena ha se a khona ho tiisetsoa ka mabaka a sa tsejoeng."
 
+#. #Client auth
 #: clientAuthMessage1
 msgid "Organization: \"%S\""
 msgstr "Mokhatlo: \"%S\""
@@ -254,6 +280,7 @@ msgstr "Mokhatlo: \"%S\""
 msgid "Issued Under: \"%S\""
 msgstr "Se Fanoe Tlasa: \"%S\""
 
+#. #Page Info
 #: pageInfo_SiteNotVerified
 msgid "Web Site Identity Not Verified"
 msgstr "Boitsebiso ba Setša ha Bo a Tiisoa"
@@ -263,7 +290,10 @@ msgid "Web Site Identity Verified"
 msgstr "Boitsebiso ba Setša Bo a Tiisitsoe"
 
 #: pageInfo_Identity_Verified
-msgid "The web site %S supports authentication for the page you are viewing. The identity of this web site has been verified by %S, a certificate authority you trust for this purpose."
+msgid ""
+"The web site %S supports authentication for the page you are viewing. The "
+"identity of this web site has been verified by %S, a certificate authority "
+"you trust for this purpose."
 msgstr ""
 "Setša sa inthanete se tšehetsa netefatso ea %S bakeng sa leqephe leo o le "
 "shebileng. Boitsebiso ba setša sena sa inthanete bo tiisitsoe ke %S, taolo "
@@ -272,21 +302,24 @@ msgstr ""
 #: pageInfo_ViewCertificate
 msgid "View the security certificate that verifies this web site's identity."
 msgstr ""
-"Sheba lisetifikeiti tsa tšireletseho tse tiisetsang boitsebiso ba setša "
-"sena."
+"Sheba lisetifikeiti tsa tšireletseho tse tiisetsang boitsebiso ba setša sena."
 
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Khokelo Ha e a Enkriptoa"
 
 #: pageInfo_Privacy_None1
-msgid "The web site %S does not support encryption for the page you are viewing."
+msgid ""
+"The web site %S does not support encryption for the page you are viewing."
 msgstr ""
 "Setša sa inthanete sa %S ha se tšehetse ho enkriptoa bakeng sa leqephe leo o "
 "le shebileng."
 
 #: pageInfo_Privacy_None2
-msgid "Information sent over the Internet without encryption can be seen by other people while it is in transit."
+#, fuzzy
+msgid ""
+"Information sent over the Internet without encryption can be seen by other "
+"people while it is in transit. "
 msgstr ""
 "Tlhahisoleseling e rometsoeng ka inthanete e sa enkriptoa e ka bonoa ke "
 "batho ba bang ha e le tseleng."
@@ -295,37 +328,65 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Leqephe leo o le shebileng ha le a enkriptoa."
 
-#: pageInfo_StrongEncryption
-msgid "Connection Encrypted: High-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_StrongEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 msgstr "Khokelo e Enkriptiloe: Ho Enkripta ha Boemo bo Phahameng (%S %S bit)"
 
 #: pageInfo_Privacy_Strong1
-msgid "The page you are viewing was encrypted before being transmitted over the Internet."
-msgstr "Leqephe leo o le shebileng le enkriptiloe pele le fetisoa ka inthanete."
+msgid ""
+"The page you are viewing was encrypted before being transmitted over the "
+"Internet."
+msgstr ""
+"Leqephe leo o le shebileng le enkriptiloe pele le fetisoa ka inthanete."
 
 #: pageInfo_Privacy_Strong2
-msgid "Encryption makes it very difficult for unauthorized people to view information traveling between computers. It is therefore very unlikely that anyone read this page as it traveled across the network."
+msgid ""
+"Encryption makes it very difficult for unauthorized people to view "
+"information traveling between computers. It is therefore very unlikely that "
+"anyone read this page as it traveled across the network."
 msgstr ""
 "Ho enkripta ho etsa hore ho be thata ho batho ba se nang tumello ho sheba "
 "tlhahisoleseling e fetang lipakeng tsa lik'homphuta. Ka hona ha ho bonolo "
 "hore ebe motho e mong o balile leqephe lena ha le le tseleng netoekeng."
 
-#: pageInfo_WeakEncryption
-msgid "Connection Encrypted: Low-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_WeakEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
 msgstr "Khokelo e Enkriptiloe: Ho Enkripta ha Boemo bo Tlase (%S %S bit)"
 
 #: pageInfo_Privacy_Weak1
-msgid "The web site %S is using low-grade encryption for the page you are viewing."
+msgid ""
+"The web site %S is using low-grade encryption for the page you are viewing."
 msgstr ""
 "Setša sena sa inthanete %S se sebelisa ho enkripta ha boemo bo tlase bakeng "
 "sa leqephe leo o le shebileng."
 
 #: pageInfo_Privacy_Weak2
-msgid "Low-grade encryption may allow some unauthorized people to view this information."
+msgid ""
+"Low-grade encryption may allow some unauthorized people to view this "
+"information."
 msgstr ""
 "Ho enkripta ha boemo bo tlase ho ka lumella batho ba se nang tumello ho "
 "sheba tlhahisoleseling ena."
 
+#: pageInfo_MixedContent
+msgid "Connection Partially Encrypted"
+msgstr ""
+
+#: pageInfo_Privacy_Mixed1
+#, fuzzy
+msgid ""
+"Parts of the page you are viewing were not encrypted before being "
+"transmitted over the Internet."
+msgstr ""
+"Leqephe leo o le shebileng le enkriptiloe pele le fetisoa ka inthanete."
+
+#. #Cert Viewer
 #: certDetails
 msgid "Certificate Viewer:"
 msgstr "Seshebi sa Setifikeiti:"
@@ -339,11 +400,14 @@ msgid "<Unknown Issuer>"
 msgstr "<Mofani ea sa Tsejoeng>"
 
 #: escrowFinalMessage
-msgid "You should click OK only if you trust \"%S\" to protect your encryption private key."
+msgid ""
+"You should click OK only if you trust \"%S\" to protect your encryption "
+"private key."
 msgstr ""
 "O lokela ho tlelika OK feela haeba o tšepa \"%S\" ho sireletsa konopo ea hao "
 "ea ho ekripta ea poraefete."
 
+#. #Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(ha e a setoa)"
@@ -353,7 +417,8 @@ msgid "Unable to change Master Password."
 msgstr "Ha e khone ho fetola Phaseoete e Kholo."
 
 #: incorrect_pw
-msgid "You did not enter the correct current Master Password. Please try again."
+msgid ""
+"You did not enter the correct current Master Password. Please try again."
 msgstr ""
 "Ha o a kenea Phaseoete e Kholo e nepahetseng ea hajoale. Ka kopo leka hape."
 
@@ -362,7 +427,8 @@ msgid "Master Password successfully changed."
 msgstr "Phaseoete e Kholo e fetotsoe ka katleho."
 
 #: pw_erased_ok
-msgid "Warning! You have deleted your Master Password."
+#, fuzzy
+msgid "Warning! You have deleted your Master Password. "
 msgstr "Tlhokomeliso! O phumutse Phaseoete e Kholo ea hao."
 
 #: pw_not_wanted
@@ -370,13 +436,16 @@ msgid "Warning! You have decided not to use a Master Password."
 msgstr "Tlhokomeliso! O nkile qeto ea ho se sebelise Phaseoete e Kholo ea hao."
 
 #: pw_empty_warning
-msgid "Your stored web and email passwords, form data, and private keys will not be protected."
+msgid ""
+"Your stored web and email passwords, form data, and private keys will not be "
+"protected."
 msgstr ""
 "O bolokile liphaseoete tsa oebe le imeile, data ea foromo, le likonopo tsa "
 "poraefete li ke ke tsa sireletsoa."
 
 #: pw_change2empty_in_fips_mode
-msgid "You are currently in FIPS mode. FIPS requires a non-empty Master Password."
+msgid ""
+"You are currently in FIPS mode. FIPS requires a non-empty Master Password."
 msgstr ""
 "Hajoale o mokhoeng oa FIPS. FIPS e hloka Phaseoete e Kholo e seng lephaka."
 
@@ -457,12 +526,21 @@ msgid "Disable FIPS"
 msgstr "Koala FIPS"
 
 #: fips_nonempty_password_required
-msgid "FIPS mode requires that you have a Master Password set for each security device. Please set the password before trying to enable FIPS mode."
+msgid ""
+"FIPS mode requires that you have a Master Password set for each security "
+"device. Please set the password before trying to enable FIPS mode."
 msgstr ""
 "Mokhoa oa FIPS o hloka hore o be le Phaseoete e Kholo e setiloeng bakeng sa "
 "sesebelisoa sa setifikeiti sa tšireletseho ka seng. Ka kopo seta phaseoete "
 "pele o leka ho bulela mokhoa oa FIPS."
 
+#: unable_to_toggle_fips
+msgid ""
+"Unable to change the FIPS mode for the security device. It is recommended "
+"that you exit and restart this application."
+msgstr ""
+
+#. # CRL next update.
 #: crlNextUpdateMsg1
 msgid "%S cannot establish an encrypted connection with \"%S\"."
 msgstr "%S ha e khone ho thepa khokelo e enkriptiloeng ho \"%S\"."
@@ -485,12 +563,6 @@ msgstr "URL e qalile ho latoa ho"
 msgid "URL advertised by the CA"
 msgstr "URL e bapalitsoe ke qalile ho latoa ho CA"
 
-#: CrlUpdatePrefsSetConfirmation
-msgid "Automatic update preferences will take effect when you restart the browser."
-msgstr ""
-"Boikhethelo ba liapdeite tse iketsang bo tla kena tšebetsong ha o qala "
-"sebali sa hao bocha."
-
 #: crlAutoUpdateDayCntError
 msgid "Number of days before next update must be a number greater than zero."
 msgstr ""
@@ -511,11 +583,13 @@ msgid "Automatic Update is enabled for this CRL."
 msgstr "Apelite e Iketsang e a buletsoe bakeng sa CRL ena."
 
 #: crlAutoupdateQuestion1
-msgid "Would would like to enable automatic update?"
+#, fuzzy
+msgid "Would you like to enable automatic update?"
 msgstr "Na o batla ho bulela apdeite e iketsang?"
 
 #: crlAutoupdateQuestion2
-msgid "Would would like to view the automatic update settings?"
+#, fuzzy
+msgid "Would you like to view the automatic update settings?"
 msgstr "Na o batla ho sheba li-setting tsa apdeite e iketsang?"
 
 #: undefinedValStr
@@ -566,6 +640,7 @@ msgstr "Lenane la Ho Hlakoloa ha Lisetifikeiti tsa Thomelo-kahare"
 msgid "Import the CRL from:"
 msgstr "Romela-kahare CRL ho tsoa ho:"
 
+#. #Import certificate(s) file dialog
 #: importEmailCertPrompt
 msgid "Select File containing somebody's Email certificate to import"
 msgstr ""
@@ -576,8 +651,9 @@ msgstr ""
 msgid "Select File containing CA certificate(s) to import"
 msgstr "Khetha Faele e nang le (li)setifikeiti tsa CA tse romeloang kahare"
 
-#: importWebSiteCertPrompt
-msgid "Select File containing Web Site certificate to import"
+#: importServerCertPrompt
+#, fuzzy
+msgid "Select File containing Server certificate to import"
 msgstr ""
 "Khetha Faele e nang le setifikeiti sa Setša sa Inthanete se romeloang kahare"
 
@@ -585,6 +661,221 @@ msgstr ""
 msgid "Certificate Files"
 msgstr "Lifaele tsa Setifikeite"
 
+#. # Form Signing confirmation prompt
 #: formSigningIntro
 msgid "The site '%S' has requested that you sign the following text message:"
 msgstr "Setša sa '%S' se kopile hore o saene molaetsa o latelang:"
+
+#. # Cert export
+#: SaveCertAs
+msgid "Save Certificate To File"
+msgstr ""
+
+#: CertFormatBase64
+msgid "X.509 Certificate (PEM)"
+msgstr ""
+
+#: CertFormatBase64Chain
+msgid "X.509 Certificate with chain (PEM)"
+msgstr ""
+
+#: CertFormatDER
+msgid "X.509 Certificate (DER)"
+msgstr ""
+
+#: CertFormatPKCS7
+msgid "X.509 Certificate (PKCS#7)"
+msgstr ""
+
+#: CertFormatPKCS7Chain
+msgid "X.509 Certificate with chain (PKCS#7)"
+msgstr ""
+
+#: writeFileFailure
+msgid "File Error"
+msgstr ""
+
+#: writeFileFailed
+msgid ""
+"Can't write to file %S:\n"
+"%S."
+msgstr ""
+
+#: writeFileAccessDenied
+msgid "Access denied"
+msgstr "Phihlello e hanetsoe"
+
+#: writeFileIsLocked
+msgid "File is locked"
+msgstr ""
+
+#: writeFileNoDeviceSpace
+msgid "No space left on device"
+msgstr ""
+
+#: writeFileUnknownError
+msgid "Unknown error"
+msgstr "Phoso e sa tsejoeng"
+
+#. #Add Security Exception dialog
+#: addExceptionBrandedWarning2
+msgid "You are about to override how %S identifies this site."
+msgstr ""
+
+#: addExceptionInvalidHeader
+msgid "This site attempts to identify itself with invalid information."
+msgstr ""
+
+#: addExceptionDomainMismatchShort
+msgid "Wrong Site"
+msgstr ""
+
+#: addExceptionDomainMismatchLong
+msgid ""
+"Certificate belongs to a different site, which could indicate an identity "
+"theft."
+msgstr ""
+
+#: addExceptionExpiredShort
+msgid "Outdated Information"
+msgstr ""
+
+#: addExceptionExpiredLong
+msgid ""
+"Certificate is not currently valid. It is impossible to verify whether this "
+"identity was reported as stolen or lost."
+msgstr ""
+
+#: addExceptionUnverifiedShort
+msgid "Unknown Identity"
+msgstr ""
+
+#: addExceptionUnverifiedLong
+msgid ""
+"Certificate is not trusted, because it hasn't been verified by a recognized "
+"authority."
+msgstr ""
+
+#: addExceptionValidShort
+msgid "Valid Certificate"
+msgstr ""
+
+#: addExceptionValidLong
+msgid ""
+"This site provides valid, verified identification.  There is no need to add "
+"an exception."
+msgstr ""
+
+#: addExceptionCheckingShort
+msgid "Checking Information"
+msgstr ""
+
+#: addExceptionCheckingLong
+msgid "Attempting to identify the site…"
+msgstr ""
+
+#: addExceptionNoCertShort
+msgid "No Information Available"
+msgstr ""
+
+#: addExceptionNoCertLong
+msgid "Unable to obtain identification status for the given site."
+msgstr ""
+
+#: addExceptionConnectionFailed
+msgid "Connection Failed"
+msgstr ""
+
+#~ msgid "Signed by %S"
+#~ msgstr "E saennoe ke %S"
+
+#~ msgid ""
+#~ "_: editTrustEmail\n"
+#~ "The certificate \"%S\" was issued by:"
+#~ msgstr "Setifikeiti sa \"%S\" se fanoe ke:"
+
+#~ msgid "deleteSslFlag"
+#~ msgstr "phumulaSslFlag"
+
+#~ msgid "Are you sure you want to delete these web site certificates?"
+#~ msgstr ""
+#~ "Na o tiile o batla ho phumula lisetifikeiti tsee tsa litša tsa inthanete?"
+
+#~ msgid ""
+#~ "If you delete a web site certificate, you will be asked to accept it "
+#~ "again the next time you visit the web site."
+#~ msgstr ""
+#~ "Haeba o phumula setifikeiti sa setša sa inthanete, o tla kotjoa ho se "
+#~ "amohela hape lekhetlo le tlang ha o etela setša seo sa inthanete."
+
+#~ msgid "Delete Web Site Certificates"
+#~ msgstr "Phumula Lisetifikeiti tsa Setša sa Inthanete"
+
+#~ msgid "deleteUserFlag"
+#~ msgstr "phumulaUserFlag"
+
+#~ msgid "deleteCaFlag"
+#~ msgstr "phumulaCAFolakha"
+
+#~ msgid "Are you sure you want to delete these CA certificates?"
+#~ msgstr "Na o tiile o batla ho phumula lisetifikeiti tsee tsa CA?"
+
+#~ msgid "deleteEmailFlag"
+#~ msgstr "phumulaImeileFolakha"
+
+#~ msgid "File Name to Restore"
+#~ msgstr "Lebitso la Faele le Khutlisoang"
+
+#~ msgid ""
+#~ "You have attempted to establish a connection with \"%S\".  However, the "
+#~ "security certificate presented belongs to \"%S\".  It is possible, though "
+#~ "unlikely, that someone may be trying to intercept your communication with "
+#~ "this web site."
+#~ msgstr ""
+#~ "O lekile ho theaha khokelo ho \"%S\".  Leha ho le joalo, setifikeiti sa "
+#~ "tšireletseho se fanoeng ke sa \"%S\".  Ho ka khoneha, leha monyetla "
+#~ "fokola, hore ebe motho e mong o leka ho kenella khokahano ea hao le setša "
+#~ "sena sa inthanete."
+
+#~ msgid ""
+#~ "If you suspect the certificate shown does not belong to \"%S\", please "
+#~ "cancel the connection and notify the site administrator."
+#~ msgstr ""
+#~ "Haeba o belaela hore setifikeiti sena se bontšitsoeng ha se sa \"%S\", ka "
+#~ "kopo k'hansela khokelo ebe o tsebisa motsamaisi oa setša."
+
+#~ msgid ""
+#~ "\"%S\" is a site that uses a security certificate to encrypt data during "
+#~ "transmission, but its certificate expired on %S."
+#~ msgstr ""
+#~ "\"%S\" ke setša se sebelisang setifikeiti sa tšireletseho ho enkripta "
+#~ "data ka nako ea phetiso, empa setifikeiti sa sona se feletsoe ke matla ka "
+#~ "la %S."
+
+#~ msgid "Server Certificate Expired"
+#~ msgstr "Setifikeiti sa Seva se Feletsoe ke Nako"
+
+#~ msgid ""
+#~ "\"%S\" is a site that uses a security certificate to encrypt data during "
+#~ "transmission, but its certificate will not be valid until %S."
+#~ msgstr ""
+#~ "\"%S\" ke setša se sebelisang setifikeiti sa tšireletseho ho enkripta "
+#~ "data ka nako ea phetiso, empa setifikeiti sa sona ha se na ho ba le matla "
+#~ "ho fihlela ka la %S."
+
+#~ msgid "Server Certificate Not Yet Valid"
+#~ msgstr "Setifikeiti sa Seva ha se Eso Loke"
+
+#~ msgid ""
+#~ "You should check to make sure that your computer's time (currently set to "
+#~ "%S) is correct."
+#~ msgstr ""
+#~ "O lokela ho hlahloba ho etsa bonnete ba hore nako ea k'homphuta ea hao "
+#~ "(eo hajoale e setetsoeng ho %S) e nepahetse."
+
+#~ msgid ""
+#~ "Automatic update preferences will take effect when you restart the "
+#~ "browser."
+#~ msgstr ""
+#~ "Boikhethelo ba liapdeite tse iketsang bo tla kena tšebetsong ha o qala "
+#~ "sebali sa hao bocha."

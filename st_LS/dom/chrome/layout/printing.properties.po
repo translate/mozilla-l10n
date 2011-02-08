@@ -1,9 +1,46 @@
+#. # ***** BEGIN LICENSE BLOCK *****
+#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#. #
+#. # The contents of this file are subject to the Mozilla Public License Version
+#. # 1.1 (the "License"); you may not use this file except in compliance with
+#. # the License. You may obtain a copy of the License at
+#. # http://www.mozilla.org/MPL/
+#. #
+#. # Software distributed under the License is distributed on an "AS IS" basis,
+#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+#. # for the specific language governing rights and limitations under the
+#. # License.
+#. #
+#. # The Original Code is mozilla.org code.
+#. #
+#. # The Initial Developer of the Original Code is
+#. # Netscape Communications Corporation.
+#. # Portions created by the Initial Developer are Copyright (C) 1998
+#. # the Initial Developer. All Rights Reserved.
+#. #
+#. # Contributor(s):
+#. #   Roland Mainz <roland.mainz@informatik.med.uni-giessen.de>
+#. #
+#. # Alternatively, the contents of this file may be used under the terms of
+#. # either of the GNU General Public License Version 2 or later (the "GPL"),
+#. # or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+#. # in which case the provisions of the GPL or the LGPL are applicable instead
+#. # of those above. If you wish to allow use of your version of this file only
+#. # under the terms of either the GPL or the LGPL, and not to allow others to
+#. # use your version of this file under the terms of the MPL, indicate your
+#. # decision by deleting the provisions above and replace them with the notice
+#. # and other provisions required by the GPL or the LGPL. If you do not delete
+#. # the provisions above, a recipient may use your version of this file under
+#. # the terms of any one of the MPL, the GPL or the LGPL.
+#. #
+#. # ***** END LICENSE BLOCK *****
+#. extracted from en-US/dom/chrome/layout/printing.properties
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 14:29+0200\n"
+"POT-Creation-Date: 2011-02-08 10:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,23 +48,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 1.9.0-beta2\n"
+"X-Accelerator-Marker: &\n"
 
+#. # Page number formating
+#. ## @page_number The current page number
+#. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
+#. # Place the word %ld where the page number and number of pages should be
+#. # The first %ld will receive the the page number
 #: pagenumber
 msgid "%1$d"
 msgstr "%1$d"
 
+#. # Page number formating
+#. ## @page_number The current page number
+#. ## @page_total The total number of pages
+#. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
+#. # Place the word %ld where the page number and number of pages should be
+#. # The first %ld will receive the the page number
+#. # the second %ld will receive the total number of pages
 #: pageofpages
 msgid "%1$d of %2$d"
 msgstr "%1$d ea %2$d"
-
-#: fontname
-msgid "serif"
-msgstr "serif"
-
-#: fontsize
-msgid "10"
-msgstr "10"
 
 #: noPrintFilename.title
 msgid "Filename is missing"
@@ -37,13 +79,16 @@ msgstr "Lebitso la faele ha leyo"
 msgid "You have selected \"Print To: File\", and the filename is empty!"
 msgstr "O khethile \"Printa Ho: Faele\", 'me lebitso la faele ha le a tšela!"
 
+#. # File confirm
 #: fileConfirm.exists
-msgid "%S already exists.\n"
+msgid ""
+"%S already exists.\n"
 "Do you want to replace it?"
 msgstr ""
 "%S e se ntse e le teng.\n"
 "Na o batla ho le tlosa?"
 
+#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "Phoso ea Printara"
@@ -53,12 +98,15 @@ msgid "Print Preview Error"
 msgstr "Phoso ea Tekolopele ea Ho Printa"
 
 #: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid "There was a problem printing. The printer doesn't support a printing command."
+msgid ""
+"There was a problem printing. The printer doesn't support a printing command."
 msgstr ""
 "Ho bile le bothata ba ho printa. Printa ha e tšehetse taelo ea ho printa."
 
 #: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid "There was a problem printing. An instruction that was sent to the printer failed."
+msgid ""
+"There was a problem printing. An instruction that was sent to the printer "
+"failed."
 msgstr ""
 "Ho bile le bothata ba ho printa. Taelo e rometsoeng printeng e hlolehile."
 
@@ -75,7 +123,8 @@ msgid "There was a problem printing. Access to the printer was denied."
 msgstr "Ho bile le bothata ba ho printa. Phihlello ho printara e hanetsoe."
 
 #: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid "There was a problem printing. Tried to set an invalid printer attribute."
+msgid ""
+"There was a problem printing. Tried to set an invalid printer attribute."
 msgstr ""
 "Ho bile le bothata ba ho printa. O lekile ho seta semelo se fosahetseng sa "
 "printara."
@@ -94,7 +143,8 @@ msgstr "Ho bile le bothata ba ho printa. Phoso ea printara ea I/O."
 
 #: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
 msgid "There was a problem printing. The output file could not be opened."
-msgstr "Ho bile le bothata ba ho printa. Faele ea output ha e a khona ho buloa."
+msgstr ""
+"Ho bile le bothata ba ho printa. Faele ea output ha e a khona ho buloa."
 
 #: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
 msgid "There was an error writing the printing output file."
@@ -118,7 +168,8 @@ msgstr ""
 
 #: NS_ERROR_NOT_IMPLEMENTED
 msgid "Some printing functionality is not implemented yet."
-msgstr "Tšebetso e itseng ea ho printa ha eso kenngoe tšebetsong ho fihla mona."
+msgstr ""
+"Tšebetso e itseng ea ho printa ha eso kenngoe tšebetsong ho fihla mona."
 
 #: NS_ERROR_NOT_AVAILABLE
 msgid "Not available"
@@ -153,19 +204,25 @@ msgid "You cannot print while in print preview."
 msgstr "O ke ke oa printa ha o ntse o le ho tekolopele ea ho printa."
 
 #: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid "There was a problem printing because the paper size you specified is not supported by your printer."
+msgid ""
+"There was a problem printing because the paper size you specified is not "
+"supported by your printer."
 msgstr ""
 "Ho bile le bothata ba ho printa hobane saese ea pampiri eo o e boletseng ha "
 "e tšehetsoe ke printa ea hao."
 
 #: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid "There was a problem printing because the page orientation you specified is not supported by your printer."
+msgid ""
+"There was a problem printing because the page orientation you specified is "
+"not supported by your printer."
 msgstr ""
 "Ho bile le bothata ba ho printa hobane tloaetso ea leqephe eo o e boletseng "
 "hae tšehetsoe ke printara ea hao."
 
 #: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid "There was a problem printing because the print job requires color capabilities that your printer does not support."
+msgid ""
+"There was a problem printing because the print job requires color "
+"capabilities that your printer does not support."
 msgstr ""
 "Ho bile le bothata ba ho printa hobane mosebetsi oa ho printa o hloka "
 "bokhoni ba mebala eo printara ea hao e sa e tšehetseng."
@@ -177,34 +234,31 @@ msgstr ""
 "tekanyo."
 
 #: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid "There was a problem printing. The printer driver is not properly configured."
+msgid ""
+"There was a problem printing. The printer driver is not properly configured."
 msgstr ""
 "Ho bile le bothata ba ho printa. Driver ea printara ha e a etsoa phetolo e "
 "nepahetseng."
 
-#: NS_ERROR_GFX_PRINTER_XPRINT_BROKEN_XPRT
-msgid "A broken version of the X print server (Xprt) has been detected. Note that printing using this Xprt server may not work properly. Please contact the server vendor for a fixed version."
-msgstr ""
-"Moetso o robehileng oa seva ea X print (Xprt) o fumanoe. Hlokomela hore ho "
-"printa ka ho sebelisa Xprt server ena ho ka 'na ha se sebetse hantle. Ka "
-"kopo ikopanye le morekisi oa seva bakeng sa moetso o tsitsitseng."
-
 #: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid "The browser cannot print preview right now.\n"
+msgid ""
+"The browser cannot print preview right now.\n"
 "Please try again when the page has finished loading."
 msgstr ""
 "Sebali se ke ke sa printa hona joale.\n"
 "Ka kopo leka hape ha leqephe le qetile ho jaroa."
 
 #: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid "The page was replaced while you were trying to print.\n"
+msgid ""
+"The page was replaced while you were trying to print.\n"
 "Please try again."
 msgstr ""
 "Leqephe le tlositsoe nakong eo o lekang ho printa.\n"
 "Ka kopo leka hape."
 
 #: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid "Either pluggable dialogs were not properly installed\n"
+msgid ""
+"Either pluggable dialogs were not properly installed\n"
 "Or this GFX Toolkit no longer supports native Print Dialogs"
 msgstr ""
 "E ka 'na ea ba lipuisano tse polakehang li ne li sa kenngoa hantle\n"
@@ -219,19 +273,10 @@ msgid "We are unable to Print or Print Preview this page."
 msgstr ""
 "Ha re khone ho Printa kapa ho etsa Tekolopele ea ho Printa leqepheng lena."
 
-#: NS_ERROR_GFX_PRINTER_XPRINT_NO_XPRINT_SERVERS_FOUND
-msgid "There was a problem printing. No Xprint server(s) could be found.\n"
-"Check whether the XPSERVERLIST environment variable contains any valid Xprint servers.\n"
-"For further information see http://xprint.mozdev.org/ or http://www.mozilla.org/projects/xprint/"
-msgstr ""
-"Bo bile le bothata ba ho printa. Ha ho (li)seva tsa Xprint tse fumanoeng.\n"
-"Hlahloba hore na li-variable tsa tikoloho tsa XPSERVERLIST li na le liseva "
-"tsa Xprint tse nepahetseng.\n"
-"Bakeng sa tlhahisoleseling e feletseng sheba http://xprint.mozdev.org/ kapa "
-"http://www.mozilla.org/projects/xprint/"
-
 #: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid "There was a problem printing because the plex mode you specified is not supported by your printer."
+msgid ""
+"There was a problem printing because the plex mode you specified is not "
+"supported by your printer."
 msgstr ""
 "Ho bile le bothata ba ho printa hobane mokhoa oa plex oo o boletseng ha o "
 "tšehetsoe ke printa ea hao."
@@ -249,11 +294,14 @@ msgid "The requested print module cannot be loaded."
 msgstr "Mojule o kopiloeng o ke ke oa jaroa."
 
 #: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid "There was a problem printing because the resolution/quality mode you specified is not supported by your printer."
+msgid ""
+"There was a problem printing because the resolution/quality mode you "
+"specified is not supported by your printer."
 msgstr ""
 "Ho bile le bothata ba ho printa hobane mokhoa oa ho hlaka/k'hoalithi oo o "
 "faneng ka wona ha o tšehetsoe ke printara ea hao."
 
+#. # No printers available
 #: noprinter
 msgid "No printers available."
 msgstr "Ha ho liprintara tse fumanehang."
@@ -261,3 +309,32 @@ msgstr "Ha ho liprintara tse fumanehang."
 #: PrintToFile
 msgid "Print To File"
 msgstr "Printa Ho ea Ka Faele"
+
+#~ msgid "serif"
+#~ msgstr "serif"
+
+#~ msgid "10"
+#~ msgstr "10"
+
+#~ msgid ""
+#~ "A broken version of the X print server (Xprt) has been detected. Note "
+#~ "that printing using this Xprt server may not work properly. Please "
+#~ "contact the server vendor for a fixed version."
+#~ msgstr ""
+#~ "Moetso o robehileng oa seva ea X print (Xprt) o fumanoe. Hlokomela hore "
+#~ "ho printa ka ho sebelisa Xprt server ena ho ka 'na ha se sebetse hantle. "
+#~ "Ka kopo ikopanye le morekisi oa seva bakeng sa moetso o tsitsitseng."
+
+#~ msgid ""
+#~ "There was a problem printing. No Xprint server(s) could be found.\n"
+#~ "Check whether the XPSERVERLIST environment variable contains any valid "
+#~ "Xprint servers.\n"
+#~ "For further information see http://xprint.mozdev.org/ or http://www."
+#~ "mozilla.org/projects/xprint/"
+#~ msgstr ""
+#~ "Bo bile le bothata ba ho printa. Ha ho (li)seva tsa Xprint tse "
+#~ "fumanoeng.\n"
+#~ "Hlahloba hore na li-variable tsa tikoloho tsa XPSERVERLIST li na le "
+#~ "liseva tsa Xprint tse nepahetseng.\n"
+#~ "Bakeng sa tlhahisoleseling e feletseng sheba http://xprint.mozdev.org/ "
+#~ "kapa http://www.mozilla.org/projects/xprint/"

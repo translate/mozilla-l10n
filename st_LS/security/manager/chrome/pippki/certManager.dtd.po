@@ -1,9 +1,10 @@
+#. extracted from en-US/security/manager/chrome/pippki/certManager.dtd
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 14:29+0200\n"
+"POT-Creation-Date: 2011-02-08 10:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,8 +12,45 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 1.9.0-beta2\n"
+"X-Accelerator-Marker: &\n"
 
+#. ***** BEGIN LICENSE BLOCK *****
+#. - Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#. -
+#. - The contents of this file are subject to the Mozilla Public License Version
+#. - 1.1 (the "License"); you may not use this file except in compliance with
+#. - the License. You may obtain a copy of the License at
+#. - http://www.mozilla.org/MPL/
+#. -
+#. - Software distributed under the License is distributed on an "AS IS" basis,
+#. - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+#. - for the specific language governing rights and limitations under the
+#. - License.
+#. -
+#. - The Original Code is mozilla.org code.
+#. -
+#. - The Initial Developer of the Original Code is
+#. - Netscape Communications Corp.
+#. - Portions created by the Initial Developer are Copyright (C) 2001
+#. - the Initial Developer. All Rights Reserved.
+#. -
+#. - Contributor(s):
+#. -   Ian McGreer <mcgreer@netscape.com>
+#. -
+#. - Alternatively, the contents of this file may be used under the terms of
+#. - either the GNU General Public License Version 2 or later (the "GPL"), or
+#. - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+#. - in which case the provisions of the GPL or the LGPL are applicable instead
+#. - of those above. If you wish to allow use of your version of this file only
+#. - under the terms of either the GPL or the LGPL, and not to allow others to
+#. - use your version of this file under the terms of the MPL, indicate your
+#. - decision by deleting the provisions above and replace them with the notice
+#. - and other provisions required by the GPL or the LGPL. If you do not delete
+#. - the provisions above, a recipient may use your version of this file under
+#. - the terms of any one of the MPL, the GPL or the LGPL.
+#. -
+#. - ***** END LICENSE BLOCK *****
 #: certmgr.title
 msgid "Certificate Manager"
 msgstr "Taolo ea Setifikeiti"
@@ -21,17 +59,23 @@ msgstr "Taolo ea Setifikeiti"
 msgid "Your Certificates"
 msgstr "Litefikeiti tsa Hao"
 
-#: certmgr.tab.others
-msgid "Other People's"
-msgstr "Tsa Batho ba bang"
+#: certmgr.tab.others2
+msgid "People"
+msgstr ""
 
-#: certmgr.tab.websites
-msgid "Web Sites"
-msgstr "Litša tsa Inthanete"
+#: certmgr.tab.websites3
+#, fuzzy
+msgid "Servers"
+msgstr "Seva"
 
 #: certmgr.tab.ca
 msgid "Authorities"
 msgstr "Bolaoli"
+
+#: certmgr.tab.orphan2
+#, fuzzy
+msgid "Others"
+msgstr "Tse ling:"
 
 #: certmgr.ca.builtins
 msgid "Built-in CAs"
@@ -49,24 +93,37 @@ msgstr "O na le lisetefikeiti tse tsoang mekhatlong ena tse o tsebahatsang:"
 msgid "You have certificates on file that identify these people:"
 msgstr "O na le lisetefikeiti faeleng tse tsebahatsang batho bana:"
 
-#: certmgr.websites
-msgid "You have certificates on file that identify these web sites:"
-msgstr ""
-"O na le lisetefikeiti faeleng tse tsebahatsang litša tsena tsa inthanete:"
+#: certmgr.websites2
+#, fuzzy
+msgid "You have certificates on file that identify these servers:"
+msgstr "O na le lisetefikeiti faeleng tse tsebahatsang batho bana:"
 
 #: certmgr.cas
-msgid "You have certificates on file that identify these certificate authorities:"
+msgid ""
+"You have certificates on file that identify these certificate authorities:"
 msgstr ""
 "O na le lisetefikeiti faeleng tse tsebahatsang lisetifikeiti tsena tsa "
 "bolaoli:"
 
-#: certmgr.detail.general_tab.title
-msgid "General"
+#: certmgr.orphans
+msgid ""
+"You have certificates on file that do not fit in any of the other categories:"
+msgstr ""
+
+#: certmgr.detail.general_tab.title certmgr.detail.general_tab.accesskey
+#, fuzzy
+msgid "&General"
 msgstr "Tse akaretsang"
 
 #: certmgr.detail.prettyprint_tab.title
-msgid "Details"
+#: certmgr.detail.prettyprint_tab.accesskey
+#, fuzzy
+msgid "&Details"
 msgstr "Lintlha"
+
+#: certmgr.pending.label
+msgid "Currently verifying certificate…"
+msgstr ""
 
 #: certmgr.subjectinfo.label
 msgid "Issued To"
@@ -101,9 +158,8 @@ msgid "Organizational Unit (OU)"
 msgstr "Yuniti ea Mokhatlo (OU)"
 
 #: certmgr.certdetail.serialnumber
-msgid ""
-"_: certmgr.certdetail.serialnumber\n"
-"Serial Number"
+msgctxt "certmgr.certdetail.serialnumber"
+msgid "Serial Number"
 msgstr "Nomoro ea Seriale"
 
 #: certmgr.certdetail.sha1fingerprint
@@ -143,21 +199,18 @@ msgid "This certificate can identify software makers."
 msgstr "Setefikeiti sena se ka khetholla baetsi ba lisebelisoanolo."
 
 #: certmgr.editsslcert.edittrust
-msgid ""
-"_: certmgr.editsslcert.edittrust\n"
-"Edit certificate trust settings:"
+msgctxt "certmgr.editsslcert.edittrust"
+msgid "Edit certificate trust settings:"
 msgstr "Elita lisetoa tsa tšepeho ea setefikeiti:"
 
 #: certmgr.editsslcert.dotrust
-msgid ""
-"_: certmgr.editsslcert.dotrust\n"
-"Trust the authenticity of this certificate."
+msgctxt "certmgr.editsslcert.dotrust"
+msgid "Trust the authenticity of this certificate."
 msgstr "Tšepa bonnete ba setefikeiti sena."
 
 #: certmgr.editsslcert.donttrust
-msgid ""
-"_: certmgr.editsslcert.donttrust\n"
-"Do not trust the authenticity of this certificate."
+msgctxt "certmgr.editsslcert.donttrust"
+msgid "Do not trust the authenticity of this certificate."
 msgstr "Se tšepe bonnete ba setefikeiti sena."
 
 #: certmgr.editemailcert.title
@@ -165,21 +218,18 @@ msgid "Edit email certificate trust settings"
 msgstr "Elita tšepahalo ea litlhophiso tsa setefikeiti sena bakeng sa emeili"
 
 #: certmgr.editemailcert.edittrust
-msgid ""
-"_: certmgr.editemailcert.edittrust\n"
-"Edit certificate trust settings:"
+msgctxt "certmgr.editemailcert.edittrust"
+msgid "Edit certificate trust settings:"
 msgstr "Elita tšepahalo ea litlhophiso tsa setefikeiti:"
 
 #: certmgr.editemailcert.dotrust
-msgid ""
-"_: certmgr.editemailcert.dotrust\n"
-"Trust the authenticity of this certificate."
+msgctxt "certmgr.editemailcert.dotrust"
+msgid "Trust the authenticity of this certificate."
 msgstr "Tšepa bonnete ba setefikeiti sena."
 
 #: certmgr.editemailcert.donttrust
-msgid ""
-"_: certmgr.editemailcert.donttrust\n"
-"Do not trust the authenticity of this certificate."
+msgctxt "certmgr.editemailcert.donttrust"
+msgid "Do not trust the authenticity of this certificate."
 msgstr "Se tšepe bonnete ba setefikeiti sena."
 
 #: certmgr.deletecert.title
@@ -203,7 +253,9 @@ msgid "You have requested to delete the certificate:"
 msgstr "O kopile ho phumula setefikeiti sena:"
 
 #: certmgr.deleteusercert.aftername
-msgid "Once you have deleted this certificate, you will not be able to read mail that has been encrypted with it."
+msgid ""
+"Once you have deleted this certificate, you will not be able to read mail "
+"that has been encrypted with it."
 msgstr ""
 "Hoba o hlakole setefikeiti sena ha o sa tla khona ho bala meile ea hao e "
 "enkriptiloeng."
@@ -212,13 +264,19 @@ msgstr ""
 msgid "Certificate Name"
 msgstr "Lebitso la Setefikeiti"
 
+#: certmgr.certserver
+#, fuzzy
+msgctxt "certmgr.certserver"
+msgid "Server"
+msgstr "Seva"
+
+#: certmgr.override_lifetime
+msgid "Lifetime"
+msgstr ""
+
 #: certmgr.tokenname
 msgid "Security Device"
 msgstr "Sesebelisoa sa Tšireletseho"
-
-#: certmgr.purpose
-msgid "Purposes"
-msgstr "Sepheo"
 
 #: certmgr.issued
 msgid "Issued On"
@@ -233,61 +291,169 @@ msgid "E-Mail Address"
 msgstr "Aterese ea Imeile"
 
 #: certmgr.serial
-msgid ""
-"_: certmgr.serial\n"
-"Serial Number"
+msgctxt "certmgr.serial"
+msgid "Serial Number"
 msgstr "Nomoro ea Seriale"
 
-#: certmgr.ocsp_info
-msgid "Certificates have not been validated with OCSP. Click View to do so."
-msgstr ""
-"Lisetefikeiti ha li a hlahlojoa ka OCSP. Tobetsa Tlelika Sheba ho etsa "
-"joalo."
-
-#: certmgr.close.label
-msgid "Close"
+#: certmgr.close.label certmgr.close.accesskey
+#, fuzzy
+msgid "&Close"
 msgstr "Koala"
 
-#: certmgr.view.label
-msgid "View"
-msgstr "Sheba"
+#: certmgr.view2.label certmgr.view2.accesskey
+#, fuzzy
+msgid "&View…"
+msgstr "&Sheba"
 
-#: certmgr.edit.label
-msgid "Edit"
-msgstr "Elita"
+#: certmgr.edit3.label certmgr.edit3.accesskey
+msgid "&Edit Trust…"
+msgstr ""
 
-#: certmgr.editca.label
-msgid "Edit CA Trust"
+#: certmgr.editca.label certmgr.editca.accesskey
+#, fuzzy
+msgid "E&dit CA Trust"
 msgstr "Likosa Tšepeho ea CA"
 
-#: certmgr.add.label
-msgid "Add"
+#: certmgr.add.label certmgr.add.accesskey
+#, fuzzy
+msgid "&Add"
 msgstr "Eketsa"
 
-#: certmgr.delete.label
-msgid "Delete"
+#: certmgr.export.label certmgr.export.accesskey
+#, fuzzy
+msgid "E&xport…"
+msgstr "R&omela-ntle"
+
+#: certmgr.delete2.label certmgr.delete2.accesskey
+#, fuzzy
+msgid "&Delete…"
 msgstr "Phumula"
 
-#: certmgr.backup.label
-msgid "Backup"
+#: certmgr.delete_builtin.label certmgr.delete_builtin.accesskey
+msgid "&Delete or Distrust…"
+msgstr ""
+
+#: certmgr.backup2.label certmgr.backup2.accesskey
+#, fuzzy
+msgid "&Backup…"
 msgstr "Bekapo"
 
-#: certmgr.backupall.label
-msgid "Backup All"
+#: certmgr.backupall2.label certmgr.backupall2.accesskey
+#, fuzzy
+msgid "Bac&kup All…"
 msgstr "Etsa Bekapo ea Tsohle"
 
-#: certmgr.restore.label
-msgid "Import"
+#: certmgr.restore2.label certmgr.restore2.accesskey
+#, fuzzy
+msgid "I&mport…"
 msgstr "Romela-kahare"
 
-#: certmgr.details.label
-msgid "Certificate Fields"
+#: certmgr.details.label certmgr.details.accesskey
+#, fuzzy
+msgid "Certificate &Fields"
 msgstr "Libaka tsa Setefikeiti"
 
-#: certmgr.fields.label
-msgid "Field Value"
+#: certmgr.fields.label certmgr.fields.accesskey
+#, fuzzy
+msgid "Field &Value"
 msgstr "Palo ea Sebaka"
 
-#: certmgr.hierarchy.label
-msgid "Certificate Hierarchy"
+#: certmgr.hierarchy.label certmgr.hierarchy.accesskey
+#, fuzzy
+msgid "&Certificate Hierarchy"
 msgstr "Tlhatlhamano ea Setefikeiti"
+
+#: certmgr.addException.label certmgr.addException.accesskey
+msgid "Add E&xception…"
+msgstr ""
+
+#: exceptionMgr.title
+msgid "Add Security Exception"
+msgstr ""
+
+#: exceptionMgr.exceptionButton.label exceptionMgr.exceptionButton.accesskey
+msgid "&Confirm Security Exception"
+msgstr ""
+
+#: exceptionMgr.supplementalWarning
+msgid ""
+"Legitimate banks, stores, and other public sites will not ask you to do this."
+msgstr ""
+
+#: exceptionMgr.certlocation.caption2
+#, fuzzy
+msgctxt "exceptionMgr.certlocation.caption2"
+msgid "Server"
+msgstr "Seva"
+
+#: exceptionMgr.certlocation.url
+#, fuzzy
+msgid "Location:"
+msgstr "Tulo"
+
+#: exceptionMgr.certlocation.download
+#, fuzzy
+msgid "Get Certificate"
+msgstr "Phumula Setefikeiti"
+
+#: exceptionMgr.certlocation.accesskey
+msgid "G"
+msgstr ""
+
+#: exceptionMgr.certstatus.caption
+msgid "Certificate Status"
+msgstr ""
+
+#: exceptionMgr.certstatus.viewCert
+#, fuzzy
+msgid "View…"
+msgstr "Sheba"
+
+#: exceptionMgr.certstatus.accesskey
+msgid "V"
+msgstr ""
+
+#: exceptionMgr.permanent.label exceptionMgr.permanent.accesskey
+msgid "&Permanently store this exception"
+msgstr ""
+
+#~ msgid "Other People's"
+#~ msgstr "Tsa Batho ba bang"
+
+#~ msgid "Web Sites"
+#~ msgstr "Litša tsa Inthanete"
+
+#~ msgid "You have certificates on file that identify these web sites:"
+#~ msgstr ""
+#~ "O na le lisetefikeiti faeleng tse tsebahatsang litša tsena tsa inthanete:"
+
+#~ msgid ""
+#~ "_: certmgr.editemailcert.edittrust\n"
+#~ "Edit certificate trust settings:"
+#~ msgstr "Elita tšepahalo ea litlhophiso tsa setefikeiti:"
+
+#~ msgid ""
+#~ "_: certmgr.editemailcert.dotrust\n"
+#~ "Trust the authenticity of this certificate."
+#~ msgstr "Tšepa bonnete ba setefikeiti sena."
+
+#~ msgid ""
+#~ "_: certmgr.editemailcert.donttrust\n"
+#~ "Do not trust the authenticity of this certificate."
+#~ msgstr "Se tšepe bonnete ba setefikeiti sena."
+
+#~ msgid "Purposes"
+#~ msgstr "Sepheo"
+
+#~ msgid ""
+#~ "_: certmgr.serial\n"
+#~ "Serial Number"
+#~ msgstr "Nomoro ea Seriale"
+
+#~ msgid "Certificates have not been validated with OCSP. Click View to do so."
+#~ msgstr ""
+#~ "Lisetefikeiti ha li a hlahlojoa ka OCSP. Tobetsa Tlelika Sheba ho etsa "
+#~ "joalo."
+
+#~ msgid "Edit"
+#~ msgstr "Elita"
