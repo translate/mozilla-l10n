@@ -1,8 +1,9 @@
+#. extracted from en-US/browser/chrome/overrides/netError.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-09-16 00:26+0200\n"
+"POT-Creation-Date: 2011-06-02 20:46+0200\n"
 "PO-Revision-Date: 2009-12-19 22:20+0200\n"
 "Last-Translator: Alf@net <alfanet@anafa.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +12,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.0\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: &\n"
 
 #. %brandDTD;
 #: loadError.label
@@ -127,10 +129,15 @@ msgstr "&sharedLongDesc;"
 msgid "Offline mode"
 msgstr "Anamu jokkoodiku"
 
-#: netOffline.longDesc
+#. <!-- LOCALIZATION NOTE (netOffline.overrideLongDesc) - This string should
+#. indicate that "Work Offline" is a menu item without being too specific,
+#. since it could be in either the normal menu (Mac/Linux) or the Firefox button
+#. menu (Windows).
+#: netOffline.overrideLongDesc
+#, fuzzy
 msgid ""
 "<ul> \n"
-"<li>Uncheck &quot;Work Offline&quot; in the File menu, then try again.</li> \n"
+"<li>Uncheck the &quot;Work Offline&quot; menu item, then try again.</li> \n"
 "</ul>"
 msgstr ""
 "<ul> \n"
@@ -199,7 +206,8 @@ msgid ""
 "</ul>"
 msgstr ""
 "<ul> \n"
-"<li>Da nga war samp beneen jëfekaay ngir mëna ubbi giiru makkaan bile.</li> \n"
+"<li>Da nga war samp beneen jëfekaay ngir mëna ubbi giiru makkaan bile.</"
+"li> \n"
 "</ul>"
 
 #: proxyConnectFailure.title
@@ -228,7 +236,8 @@ msgstr "Kenn mënula gis serwëër proxy bi"
 msgid ""
 "<ul> \n"
 "<li>Check the proxy settings to make sure that they are correct.</li> \n"
-"<li>Check to make sure your computer has a working network connection.</li> \n"
+"<li>Check to make sure your computer has a working network connection.</"
+"li> \n"
 "<li>If your computer or network is protected by a firewall or proxy, make "
 "sure \n"
 "that &brandShortName; is permitted to access the Web.</li> \n"
@@ -249,7 +258,8 @@ msgstr "Xët wi kenn jubaluko bu baax"
 #: redirectLoop.longDesc
 msgid ""
 "<ul> \n"
-"<li>This problem can sometimes be caused by disabling or refusing to accept \n"
+"<li>This problem can sometimes be caused by disabling or refusing to "
+"accept \n"
 "cookies.</li> \n"
 "</ul>"
 msgstr ""
@@ -306,7 +316,8 @@ msgstr "Lajjum jokkoo bu and ak kaarange"
 #: nssBadCert.longDesc2
 msgid ""
 "<ul> \n"
-"<li>This could be a problem with the server's configuration, or it could be \n"
+"<li>This could be a problem with the server's configuration, or it could "
+"be \n"
 "someone trying to impersonate the server.</li> \n"
 "<li>If you have connected to this server successfully in the past, the error "
 "may \n"
@@ -352,10 +363,10 @@ msgid ""
 "site in error may <a href='http://www.stopbadware.org/home/reviewinfo' "
 ">request a review</a>.</p>"
 msgstr ""
-"<p>Ay dal yu bon ñi ngiy jéema samp ay porogaraam yuy sacc say xibaari "
-"bopp,di jëfandikoo sa ordinatëër ngir song yeneen walla yaq sa doxalin.</p> \n"
-"<p>Boroom dal yi fook ni da ñu leen tuumaal <a "
-"href='http://www.stopbadware.org/home/reviewinfo'>ab nafar</a>.</p>"
+"<p>Ay dal yu bon ñi ngiy jéema samp ay porogaraam yuy sacc say xibaari bopp,"
+"di jëfandikoo sa ordinatëër ngir song yeneen walla yaq sa doxalin.</p> \n"
+"<p>Boroom dal yi fook ni da ñu leen tuumaal <a href='http://www.stopbadware."
+"org/home/reviewinfo'>ab nafar</a>.</p>"
 
 #: phishingBlocked.title
 msgid "Suspected Web Forgery!"
@@ -366,13 +377,23 @@ msgid ""
 "<p>Entering any personal information on this page may result in identity "
 "theft or other fraud.</p> \n"
 "<p>These types of web forgeries are used in scams known as phishing attacks, "
-"in which fraudulent web pages and emails are used to imitate sources you "
-"may trust.</p>"
+"in which fraudulent web pages and emails are used to imitate sources you may "
+"trust.</p>"
 msgstr ""
 "<p>Dugal say xibaari bopp ci xët bile mën na tax ñu sacc sa dantite walla "
 "beneen foród.</p> \n"
 "<p>Giiri dali royaal yu ni mel dañu leen di jëfandikoo ci ay e mail foród "
 "ngir di song songu dolinka, da ñuy toppandoo ay cosaan yoo wóolu .</p>"
+
+#: cspFrameAncestorBlocked.title
+msgid "Blocked by Content Security Policy"
+msgstr ""
+
+#: cspFrameAncestorBlocked.longDesc
+msgid ""
+"<p>&brandShortName; prevented this page from loading in this way because the "
+"page has a content security policy that disallows it.</p>"
+msgstr ""
 
 #: securityOverride.linkText
 msgid "Or you can add an exception…"
@@ -386,30 +407,56 @@ msgstr "Génnal xët wi !"
 msgid "Add Exception…"
 msgstr "Yokk lu kenn tëgaalewul..."
 
-#. <!-- LOCALIZATION NOTE (securityOverride.warningText) - Do not translate the
-#. contents of the <xul:button> tags.  The only language content is the label= field,
-#. which uses strings already defined above. The button is included here (instead of
-#. netError.xhtml) because it exposes functionality specific to firefox.
-#: securityOverride.warningText
+#. <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
+#. contents of the <button> tags. It uses strings already defined above. The
+#. button is included here (instead of netError.xhtml) because it exposes
+#. functionality specific to firefox.
+#: securityOverride.warningContent
 msgid ""
 "<p>You should not add an exception if you are using an internet connection "
 "that you do not trust completely or if you are not used to seeing a warning "
 "for this server.</p> \n"
 " \n"
-"<xul:button "
-"xmlns:xul='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul' "
-"id='getMeOutOfHereButton' label='&securityOverride.getMeOutOfHereButton;'/> \n"
-"<xul:button "
-"xmlns:xul='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul' "
-"id='exceptionDialogButton' label='&securityOverride.exceptionButtonLabel;'/>"
+"<button id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</"
+"button> \n"
+"<button id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</"
+"button>"
 msgstr ""
-"<p>Vous ne devez pas ajouter d'exception si vous utilisez une connexion à "
-"Internet en laquelle vous n'avez pas totalement confiance ou si vous n'avez "
-"pas l'habitude de recevoir un avertissement pour ce serveur.</p> \n"
-"\n"
-"<xul:button "
-"xmlns:xul='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul' "
-"id='getMeOutOfHereButton' label='&securityOverride.getMeOutOfHereButton;'/> \n"
-"<xul:button "
-"xmlns:xul='http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul' "
-"id='exceptionDialogButton' label='&securityOverride.exceptionButtonLabel;'/>"
+
+#: remoteXUL.title
+msgid "Remote XUL"
+msgstr ""
+
+#: remoteXUL.longDesc
+#, fuzzy
+msgid ""
+"<p><ul><li>Please contact the website owners to inform them of this problem."
+"</li></ul></p>"
+msgstr ""
+"<ul> \n"
+"<li>Veuillez contacter les propriétaires du site Web pour les informer de ce "
+"problème.</li> \n"
+"</ul>"
+
+#~ msgid ""
+#~ "<p>You should not add an exception if you are using an internet "
+#~ "connection that you do not trust completely or if you are not used to "
+#~ "seeing a warning for this server.</p> \n"
+#~ " \n"
+#~ "<xul:button xmlns:xul='http://www.mozilla.org/keymaster/gatekeeper/there."
+#~ "is.only.xul' id='getMeOutOfHereButton' label='&securityOverride."
+#~ "getMeOutOfHereButton;'/> \n"
+#~ "<xul:button xmlns:xul='http://www.mozilla.org/keymaster/gatekeeper/there."
+#~ "is.only.xul' id='exceptionDialogButton' label='&securityOverride."
+#~ "exceptionButtonLabel;'/>"
+#~ msgstr ""
+#~ "<p>Vous ne devez pas ajouter d'exception si vous utilisez une connexion à "
+#~ "Internet en laquelle vous n'avez pas totalement confiance ou si vous "
+#~ "n'avez pas l'habitude de recevoir un avertissement pour ce serveur.</p> \n"
+#~ "\n"
+#~ "<xul:button xmlns:xul='http://www.mozilla.org/keymaster/gatekeeper/there."
+#~ "is.only.xul' id='getMeOutOfHereButton' label='&securityOverride."
+#~ "getMeOutOfHereButton;'/> \n"
+#~ "<xul:button xmlns:xul='http://www.mozilla.org/keymaster/gatekeeper/there."
+#~ "is.only.xul' id='exceptionDialogButton' label='&securityOverride."
+#~ "exceptionButtonLabel;'/>"

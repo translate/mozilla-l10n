@@ -1,8 +1,44 @@
+#. # ***** BEGIN LICENSE BLOCK *****
+#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#. #
+#. # The contents of this file are subject to the Mozilla Public License Version
+#. # 1.1 (the "License"); you may not use this file except in compliance with
+#. # the License. You may obtain a copy of the License at
+#. # http://www.mozilla.org/MPL/
+#. #
+#. # Software distributed under the License is distributed on an "AS IS" basis,
+#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+#. # for the specific language governing rights and limitations under the
+#. # License.
+#. #
+#. # The Original Code is css.properties.
+#. #
+#. # The Initial Developer of the Original Code is Netscape Communications
+#. # Corporation.  Portions created by the Initial Developer are Copyright
+#. # (C) 2002 Netscape Communications Corporation.  All Rights Reserved.
+#. #
+#. # Contributor(s):
+#. #   L. David Baron <dbaron@dbaron.org> (original author)
+#. #
+#. # Alternatively, the contents of this file may be used under the terms of
+#. # either the GNU General Public License Version 2 or later (the "GPL"), or
+#. # the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+#. # in which case the provisions of the GPL or the LGPL are applicable instead
+#. # of those above. If you wish to allow use of your version of this file only
+#. # under the terms of either the GPL or the LGPL, and not to allow others to
+#. # use your version of this file under the terms of the MPL, indicate your
+#. # decision by deleting the provisions above and replace them with the notice
+#. # and other provisions required by the GPL or the LGPL. If you do not delete
+#. # the provisions above, a recipient may use your version of this file under
+#. # the terms of any one of the MPL, the GPL or the LGPL.
+#. #
+#. # ***** END LICENSE BLOCK *****
+#. extracted from en-US/dom/chrome/layout/css.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-27 01:32+0200\n"
+"POT-Creation-Date: 2011-06-02 20:46+0200\n"
 "PO-Revision-Date: 2009-11-01 04:52+0200\n"
 "Last-Translator: Alf@net <alfanet@anafa.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +47,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: &\n"
 
 #: MimeNotCss
 msgid ""
@@ -23,11 +60,11 @@ msgstr ""
 
 #: MimeNotCssWarn
 msgid ""
-"The stylesheet %1$S was loaded as CSS even though its MIME type, \"%2$S\", is "
-"not \"text/css\"."
+"The stylesheet %1$S was loaded as CSS even though its MIME type, \"%2$S\", "
+"is not \"text/css\"."
 msgstr ""
-"The stylesheet %1$S was loaded as CSS even though its MIME type, \"%2$S\", is "
-"not \"text/css\"."
+"The stylesheet %1$S was loaded as CSS even though its MIME type, \"%2$S\", "
+"is not \"text/css\"."
 
 #: PEUnexpEOF2
 msgid "Unexpected end of file while searching for %1$S."
@@ -91,6 +128,10 @@ msgstr "Expected identifier in media list but found '%1$S'."
 msgid "Expected URI in @import rule but found '%1$S'."
 msgstr "Expected URI in @import rule but found '%1$S'."
 
+#: PEImportBadURI
+msgid "Invalid URI in @import rule: '%1$S'."
+msgstr ""
+
 #: PEImportUnexpected
 msgid "Found unexpected '%1$S' within @import."
 msgstr "Found unexpected '%1$S' within @import."
@@ -99,17 +140,26 @@ msgstr "Found unexpected '%1$S' within @import."
 msgid "end of @media or @-moz-document rule"
 msgstr "end of @media or @-moz-document rule"
 
+#: PEGroupRuleNestedAtRule
+msgid "%1$S rule not allowed within @media or @-moz-document rule."
+msgstr ""
+
 #: PEMozDocRuleBadFunc
 msgid ""
-"Expected url(), url-prefix(), or domain() in @-moz-document rule but found '"
-"%1$S'."
+"Expected url(), url-prefix(), or domain() in @-moz-document rule but found "
+"'%1$S'."
 msgstr ""
-"Expected url(), url-prefix(), or domain() in @-moz-document rule but found '"
-"%1$S'."
+"Expected url(), url-prefix(), or domain() in @-moz-document rule but found "
+"'%1$S'."
 
 #: PEMozDocRuleNotURI
 msgid "Expected URI in @-moz-document rule but found '%1$S'."
 msgstr "Expected URI in @-moz-document rule but found '%1$S'."
+
+#: PEMozDocRuleNotString
+msgid ""
+"Expected string in @-moz-document rule regexp() function but found '%1$S'."
+msgstr ""
 
 #: PEAtNSPrefixEOF
 #, fuzzy
@@ -117,12 +167,25 @@ msgid "namespace prefix in @namespace rule"
 msgstr "namespace prefix in @namespace rule"
 
 #: PEAtNSURIEOF
+#, fuzzy
 msgid "namespace URI in @namespace rule"
-msgstr ""
+msgstr "namespace prefix in @namespace rule"
 
 #: PEAtNSUnexpected
 msgid "Unexpected token within @namespace: '%1$S'."
 msgstr "Unexpected token within @namespace: '%1$S'."
+
+#: PEKeyframeNameEOF
+msgid "name of @keyframes rule."
+msgstr ""
+
+#: PEKeyframeBadName
+msgid "Expected identifier for name of @keyframes rule."
+msgstr ""
+
+#: PEKeyframeBrace
+msgid "Expected opening { of @keyframes rule."
+msgstr ""
 
 #: PESkipDeclBraceEOF
 msgid "closing } of declaration block"
@@ -135,6 +198,10 @@ msgstr "closing } of invalid rule set"
 #: PEBadSelectorRSIgnored
 msgid "Ruleset ignored due to bad selector."
 msgstr "Ruleset ignored due to bad selector."
+
+#: PEBadSelectorKeyframeRuleIgnored
+msgid "Keyframe rule ignored due to bad selector."
+msgstr ""
 
 #: PESelectorListExtraEOF
 msgid "',' or '{'"
@@ -212,11 +279,11 @@ msgstr "Expected ']' to terminate attribute selector but found '%1$S'."
 
 #: PEAttSelBadValue
 msgid ""
-"Expected identifier or string for value in attribute selector but found '%"
-"1$S'."
+"Expected identifier or string for value in attribute selector but found "
+"'%1$S'."
 msgstr ""
-"Expected identifier or string for value in attribute selector but found '%"
-"1$S'."
+"Expected identifier or string for value in attribute selector but found "
+"'%1$S'."
 
 #: PEPseudoSelEOF
 msgid "name of pseudo-class or pseudo-element"
@@ -451,10 +518,15 @@ msgid "Found invalid value for media feature."
 msgstr ""
 
 #: PEBadFontBlockStart
+#, fuzzy
 msgid "Expected '{' to begin @font-face rule but found '%1$S'."
-msgstr ""
+msgstr "Expected ';' to terminate declaration but found '%1$S'."
 
 #: PEBadFontBlockEnd
 #, fuzzy
 msgid "Expected '}' to end @font-face rule but found '%1$S'."
 msgstr "Expected ';' to terminate declaration but found '%1$S'."
+
+#: PEAnonBoxNotAlone
+msgid "Did not expect anonymous box."
+msgstr ""

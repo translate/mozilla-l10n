@@ -1,8 +1,9 @@
+#. extracted from en-US/toolkit/chrome/mozapps/extensions/extensions.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-18 01:01+0200\n"
+"POT-Creation-Date: 2011-06-02 20:46+0200\n"
 "PO-Revision-Date: 2009-11-01 04:23+0200\n"
 "Last-Translator: Alf@net <alfanet@anafa.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,533 +12,585 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: &\n"
 
-#: addons.title
-msgid "Add-ons"
-msgstr "Modili mottali"
+#: addons.windowTitle
+msgid "Add-ons Manager"
+msgstr ""
 
-#. Default window size for the addon manager in pixels
-#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
-#: em.width
-msgid "520"
-msgstr "520"
+#: search.placeholder
+#, fuzzy
+msgid "Search all add-ons"
+msgstr "Wut ci biir modili yokk yépp"
 
-#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
-#: em.height
-msgid "380"
-msgstr "380"
+#: loading.label
+msgctxt "loading.label"
+msgid "Loading…"
+msgstr ""
 
-#: cmd.info.commandKey
-msgid "i"
-msgstr "i"
+#: listEmpty.installed.label
+msgid "You don't have any add-ons of this type installed"
+msgstr ""
 
-#: cmd.options.commandKey
-msgid ","
-msgstr ","
+#: listEmpty.availableUpdates.label
+msgctxt "listEmpty.availableUpdates.label"
+msgid "No updates found"
+msgstr ""
 
-#: cmd.close.commandKey
-msgid "w"
-msgstr "w"
+#: listEmpty.recentUpdates.label
+msgid "You haven't recently updated any add-ons"
+msgstr ""
 
-#. View labels
-#: search.label
+#: listEmpty.findUpdates.label
+#, fuzzy
+msgid "Check For Updates"
+msgstr "Wut ay yeesal"
+
+#: listEmpty.search.label
+msgid "Could not find any matching add-ons"
+msgstr ""
+
+#: listEmpty.button.label
+msgid "Learn more about add-ons"
+msgstr ""
+
+#: installAddonFromFile.label installAddonFromFile.accesskey
+msgid "&Install Add-on From File…"
+msgstr ""
+
+#: toolsMenu.tooltip
+msgid "Tools for all add-ons"
+msgstr ""
+
+#: cmd.back.tooltip
+msgid "Go back one page"
+msgstr ""
+
+#: cmd.forward.tooltip
+msgid "Go forward one page"
+msgstr ""
+
+#. global warnings
+#: warning.safemode.label
+msgid "All add-ons have been disabled by safe mode."
+msgstr ""
+
+#: warning.checkcompatibility.label
+msgid ""
+"Add-on compatibility checking is disabled. You may have incompatible add-ons."
+msgstr ""
+
+#: warning.checkcompatibility.enable.label
+#, fuzzy
+msgctxt "warning.checkcompatibility.enable.label"
+msgid "Enable"
+msgstr "&Suqali"
+
+#: warning.checkcompatibility.enable.tooltip
+msgid "Enable add-on compatibility checking"
+msgstr ""
+
+#: warning.updatesecurity.label
+msgid ""
+"Add-on update security checking is disabled. You may be compromised by "
+"updates."
+msgstr ""
+
+#: warning.updatesecurity.enable.label
+#, fuzzy
+msgctxt "warning.updatesecurity.enable.label"
+msgid "Enable"
+msgstr "&Suqali"
+
+#: warning.updatesecurity.enable.tooltip
+msgid "Enable add-on update security checking"
+msgstr ""
+
+#. global informations
+#: info.plugincheck.label
+msgctxt "info.plugincheck.label"
+msgid "Check to see if your plugins are up to date"
+msgstr ""
+
+#: info.plugincheck.tooltip
+msgctxt "info.plugincheck.tooltip"
+msgid "Check to see if your plugins are up to date"
+msgstr ""
+
+#. categories / views
+#: view.search.label
+msgid "Search"
+msgstr ""
+
+#: view.discover.label
 msgid "Get Add-ons"
 msgstr "Katalog"
 
-#: extensions.label
-msgid "Extensions"
-msgstr "Yokk yi"
+#: view.recentUpdates.label
+msgid "Recent Updates"
+msgstr ""
 
-#: themes.label
-msgid "Themes"
-msgstr "Tem yi"
+#: view.availableUpdates.label
+msgid "Available Updates"
+msgstr ""
 
-#: locales.label
-msgid "Languages"
-msgstr "Lammiñ yi"
+#. addon updates
+#: updates.checkForUpdates.label updates.checkForUpdates.accesskey
+#, fuzzy
+msgid "&Check for Updates"
+msgstr "Wut ay yeesal"
 
-#: plugins.label
-msgid "Plugins"
-msgstr "Plugins"
+#: updates.viewUpdates.label updates.viewUpdates.accesskey
+msgid "&View Recent Updates"
+msgstr ""
 
-#: update.label
-msgid "Updates"
-msgstr "Yeesal yi"
+#. This menu item
+#. is a checkbox that toggles the default global behavior for add-on update
+#. checking.
+#: updates.updateAddonsAutomatically.label
+#: updates.updateAddonsAutomatically.accesskey
+msgid "Update &Add-ons Automatically"
+msgstr ""
 
-#: install.label
-msgid "Installation"
-msgstr "Samp wi"
+#. LOCALIZATION NOTE (updates.resetUpdatesToAutomatic.label, updates.resetUpdatesToManual.label):
+#. Specific addons can have custom update checking behaviors ("Manually",
+#. "Automatically", "Use default global behavior"). These menu items reset the
+#. update checking behavior for all add-ons to the default global behavior
+#. (which itself is either "Automatically" or "Manually", controlled by the
+#. updates.updateAddonsAutomatically.label menu item).
+#: updates.resetUpdatesToAutomatic.label
+#: updates.resetUpdatesToAutomatic.accesskey
+msgid "&Reset All Add-ons to Update Automatically"
+msgstr ""
 
-#. Command Bar items
-#: cmd.checkUpdatesAll.label
-#: cmd.checkUpdatesAll.accesskey
+#: updates.resetUpdatesToManual.label updates.resetUpdatesToManual.accesskey
+msgid "&Reset All Add-ons to Update Manually"
+msgstr ""
+
+#: updates.updating.label
+msgid "Updating add-ons"
+msgstr ""
+
+#: updates.installed.label
+msgid "Your add-ons have been updated."
+msgstr ""
+
+#: updates.downloaded.label
+msgid "Your add-on updates have been downloaded."
+msgstr ""
+
+#: updates.restart.label
+#, fuzzy
+msgid "Restart now to complete installation"
+msgstr "Tambaliwaatal ngir sottal samp wi."
+
+#: updates.noneFound.label
+msgctxt "updates.noneFound.label"
+msgid "No updates found"
+msgstr ""
+
+#: updates.manualUpdatesFound.label
+msgid "View Available Updates"
+msgstr ""
+
+#: updates.updateSelected.label
+#, fuzzy
+msgid "Install Updates"
+msgstr "&Samp yeesal yi"
+
+#: updates.updateSelected.tooltip
+msgid "Install available updates in this list"
+msgstr ""
+
+#. addon actions
+#: cmd.showDetails.label cmd.showDetails.accesskey
+#, fuzzy
+msgid "&Show More Information"
+msgstr "&Wone xibaar yi"
+
+#: cmd.findUpdates.label cmd.findUpdates.accesskey
 msgid "&Find Updates"
 msgstr "Wut &yeesal yi"
 
-#: cmd.checkUpdatesAllAddon.tooltip
-msgid "Finds Updates to your Add-ons"
-msgstr "Wut ay yeesal ngir say modili mottali"
-
-#: cmd.checkUpdatesAllTheme.tooltip
-msgid "Finds Updates to your Themes"
-msgstr "Wut ay yeesal ngir say tem"
-
-#: cmd.checkUpdatesAllPlugin.tooltip
-msgid "Finds Updates to your Plugins"
-msgstr "Wut ay yeesal ngir say plugins"
-
-#: cmd.installLocalFile.label
-#: cmd.installLocalFile.accesskey
-msgid "I&nstall…"
-msgstr "&Samp..."
-
-#: cmd.installFileAddon.tooltip
-msgid "Install an Add-on"
-msgstr "Samp modilu motali"
-
-#: cmd.installFileTheme.tooltip
-msgid "Install a Theme"
-msgstr "Samp benn tem"
-
-#: cmd.installUpdatesAll2.label
-#: cmd.installUpdatesAll2.accesskey
-msgid "&Install Updates"
-msgstr "&Samp yeesal yi"
-
-#: cmd.installUpdatesAll2.tooltip
-msgid "Install the selected updates"
-msgstr "Samp yeesal yi falu"
-
-#: cmd.restartApp2.label
-#: cmd.restartApp2.accesskey
-msgid "&Restart &brandShortName;"
-msgstr "&Tambaliwaat &brandShortName;"
-
-#: cmd.restartApp2.tooltip
-msgid "Restart &brandShortName; to apply changes"
-msgstr "Tambaliwaat &brandShortName; ngir soppeeku yi taxaw"
-
-#: cmd.skip.label
-#: cmd.skip.accesskey
-msgid "S&kip"
-msgstr "&Bul faale"
-
-#: cmd.skip.tooltip
-msgid "Skip these updates"
-msgstr "Bul faale yeesal yi"
-
-#: cmd.continue.label
-#: cmd.continue.accesskey
-msgid "&Continue"
-msgstr "&Kontineel"
-
-#: cmd.continue.tooltip
-msgid "Continue loading &brandShortName;"
-msgstr "Kontineel fatum &brandShortName;"
-
-#: cmd.enableAll.label
-#: cmd.enableAll.accesskey
-msgid "Enable &All"
-msgstr "Suq&ali lépp"
-
-#: cmd.enableAll.tooltip
-msgid "Enable all displayed Add-ons"
-msgstr "Suqali modil yi wonewu"
-
-#: cmd.disableAll.label
-#: cmd.disableAll.accesskey
-msgid "Di&sable All"
-msgstr "&Suuxal lépp"
-
-#: cmd.disableAll.tooltip
-msgid "Disable all displayed Add-ons"
-msgstr "Suxal modil yi wonewu"
-
-#. Displayed in the selected Add-on's richlistitem and context menu
-#: cmd.useTheme.label
-#: cmd.useTheme.accesskey
-msgid "Use &Theme"
-msgstr "Jëfandikoo &tem bi"
-
-#: cmd.useTheme.tooltip
-msgid "Changes &brandShortName;'s Theme"
-msgstr "Soppi temu &brandShortName;"
-
-#: cmd.options.label
-#: cmd.options.accesskey
+#: cmd.preferencesWin.label cmd.preferencesWin.accesskey
+#, fuzzy
+msgctxt "cmd.preferencesWin.label cmd.preferencesWin.accesskey"
 msgid "&Options"
 msgstr "&Tannéef yi"
 
-#: cmd.options.tooltip
-msgid "Set Options for the selected Extension"
-msgstr "Saytu tanneefu yokk yi falu"
-
-#: cmd.optionsUnix.label
-#: cmd.optionsUnix.accesskey
-msgid "P&references"
+#: cmd.preferencesUnix.label cmd.preferencesUnix.accesskey
+#, fuzzy
+msgctxt "cmd.preferencesUnix.label cmd.preferencesUnix.accesskey"
+msgid "&Preferences"
 msgstr "&Taamu yi"
 
-#: cmd.optionsUnix.tooltip
-msgid "Edit Preferences for the selected Extension"
-msgstr "Saytu taamu yokk bi falu"
+#: cmd.about.label cmd.about.accesskey
+msgid "&About"
+msgstr ""
 
-#: cmd.enable.label
-#: cmd.enable.accesskey
+#: cmd.enableAddon.label cmd.enableAddon.accesskey
 msgid "&Enable"
 msgstr "&Suqali"
 
-#: cmd.enable.tooltip
-msgid "Enable this Add-on when &brandShortName; is restarted"
-msgstr "Suqali modil bi bu &brandShortName;tambaliwaatee"
-
-#: cmd.disable.label
-#: cmd.disable.accesskey
+#: cmd.disableAddon.label cmd.disableAddon.accesskey
 msgid "&Disable"
 msgstr "S&uuxal"
 
-#: cmd.disable.tooltip
-msgid "Disable this Add-on when &brandShortName; is restarted"
-msgstr "Suuxal modil bi  bu &brandShortName; tambaliwaatee"
-
-#: cmd.uninstall.label
-msgid "Uninstall"
-msgstr "Simpi"
-
-#: cmd.uninstall2.accesskey
-msgid "U"
-msgstr "U"
-
-#: cmd.uninstall2.tooltip
-msgid "Uninstall this Add-on when &brandShortName; is restarted"
-msgstr "Simpi modil bi bu  &brandShortName; tambaliwaatee"
-
-#: cmd.cancelUninstall.label
-#: cmd.cancelUninstall.accesskey
-msgid "&Cancel Uninstall"
-msgstr "&Neenal simpi mi"
-
-#: cmd.cancelUninstall.tooltip
-msgid "Cancel the uninstall of this Add-on"
-msgstr "Neenal simpi modil bi"
-
-#: cmd.cancelInstall.label
-#: cmd.cancelInstall.accesskey
-msgid "&Cancel Install"
-msgstr "&Neenal samp mi"
-
-#: cmd.cancelInstall.tooltip
-msgid "Cancel the install of this Add-on"
-msgstr "Neenal sampum modil bi"
-
-#: cmd.cancelUpgrade.label
-#: cmd.cancelUpgrade.accesskey
-msgid "&Cancel Upgrade"
-msgstr "&Neenal yeesal bi"
-
-#: cmd.cancelUpgrade.tooltip
-msgid "Cancel the upgrade of this Add-on"
-msgstr "Neenal yeesalu modil bi"
-
-#: cmd.installUpdate.label
-#: cmd.installUpdate.accesskey
-msgid "&Install Update"
-msgstr "&Samp benn yeesal"
-
-#: cmd.installUpdate.tooltip
-msgid "Install an update for this Add-on"
-msgstr "Samp benn yeesal pur modil bi"
-
-#: cmd.showUpdateInfo.label
-#: cmd.showUpdateInfo.accesskey
-msgid "&Show Information"
-msgstr "&Wone xibaar yi"
-
-#: cmd.showUpdateInfo.tooltip
-msgid "Show more information about these updates"
-msgstr "Wone yeneen xibaar ci yeesal yi"
-
-#: cmd.hideUpdateInfo.label
-#: cmd.hideUpdateInfo.accesskey
-msgid "&Hide Information"
-msgstr "&Nëbb xibaar yi"
-
-#: cmd.hideUpdateInfo.tooltip
-msgid "Hide information about these updates"
-msgstr "Nëbb xibaar yi jëm ci yeesal yi"
-
-#: cmd.installSearchResult.label
-#: cmd.installSearchResult.accesskey
-msgid "&Add to &brandShortName;…"
-msgstr "&Yokk ci &brandShortName;…"
-
-#: cmd.installSearchResult.tooltip
-msgid "Download and install this add-on"
-msgstr "Yokk ak samp modilu mottali bi"
-
-#. The selected add-on's cancel action button label
-#: cancel.label
-#: cancel.accesskey
-msgctxt "cancel.label cancel.accesskey"
-msgid "&Cancel"
-msgstr "&Neenal"
-
-#: cancelInstall.label
-#: cancelInstall.accesskey
-msgctxt "cancelInstall.label cancelInstall.accesskey"
-msgid "&Cancel"
-msgstr "&Neenal"
-
-#: cancelUpgrade.label
-#: cancelUpgrade.accesskey
-msgctxt "cancelUpgrade.label cancelUpgrade.accesskey"
-msgid "&Cancel"
-msgstr "&Neenal"
-
-#. Only displayed in the selected Add-on's context menu
-#: cmd.homepage.label
-#: cmd.homepage.accesskey
-msgid "Visit &Home Page"
-msgstr "&Gane dalub web bi"
-
-#: cmd.about2.label
-msgid "About this Add-on"
-msgstr "Ci mbiri modil bi"
-
-#: cmd.about.accesskey
-msgid "A"
-msgstr "A"
-
-#: cmd.checkUpdate.label
-#: cmd.checkUpdate.accesskey
-msgid "&Find Update"
-msgstr "&Wut benn yeesal"
-
-#: cmd.includeUpdate.label
-#: cmd.includeUpdate.accesskey
-msgid "I&nclude Update"
-msgstr "&Boole ci benn yeesal"
-
-#: includeUpdate.label
-#: includeUpdate.accesskey
-msgid "I&nclude this update"
-msgstr "B&oole ci yeesal bii"
-
-#: includeUpdate.tooltip
-msgid "Include this Add-on when installing the updates"
-msgstr "Boole ci modil bi bu ñu dee samp yeesal yi"
-
-#. Status Messsages
-#: insecureUpdate.label
-msgid "Does not provide secure updates."
-msgstr "Du joxe ay yeesal yu am kaarange"
-
-#: needsDependencies.label
-msgid "Requires additional items."
-msgstr "Faww mu am ay yokk."
-
-#: blocklisted.label
-msgid "Disabled for your protection."
-msgstr "Dafa suux ngir sa kaarange."
-
-#: softBlocklisted.label
-msgid "Known to cause security or stability issues."
+#: cmd.enableTheme.label cmd.enableTheme.accesskey
+msgid "&Wear Theme"
 msgstr ""
-"Dafa siiw ndax ndax tolof tolof yi muy indi ci wallu kaarange ak taxawaay"
 
-#: outdated.label
-msgid "A newer, safer version is available."
-msgstr "Sumb bu bees te gëna wóor am na"
+#: cmd.disableTheme.label cmd.disableTheme.accesskey
+msgid "Stop &Wearing Theme"
+msgstr ""
 
-#: toBeDisabled.label
-msgid "This add-on will be disabled when &brandShortName; is restarted."
-msgstr "Modil bi dina suux bu &brandShortName; tambaliwaatee."
+#: cmd.installAddon.label cmd.installAddon.accesskey
+msgid "&Install"
+msgstr ""
 
-#: toBeEnabled.label
-msgid "This add-on will be enabled when &brandShortName; is restarted."
-msgstr "Modil bi dina suqaliku bu &brandShortName; tambaliwaatee."
+#: cmd.uninstallAddon.label cmd.uninstallAddon.accesskey
+msgid "&Remove"
+msgstr ""
 
-#: toBeInstalled.label
-msgid "This add-on will be installed when &brandShortName; is restarted."
-msgstr "Modil bi dina sampu bu &brandShortName; tambaliwaatee."
+#: cmd.showPreferencesWin.label
+#, fuzzy
+msgid "Options"
+msgstr "&Tannéef yi"
 
-#: toBeUninstalled.label
-msgid "This add-on will be uninstalled when &brandShortName; is restarted."
-msgstr "Modil bi dina simpeeku bu &brandShortName; tambaliwaatee."
+#: cmd.showPreferencesWin.tooltip
+msgctxt "cmd.showPreferencesWin.tooltip"
+msgid "Change this add-on's options"
+msgstr ""
 
-#: toBeUpdated.label
-msgid "This add-on will be updated when &brandShortName; is restarted."
-msgstr "Modil bi dina yees bu &brandShortName; tambaliwaatee."
+#: cmd.showPreferencesUnix.label
+#, fuzzy
+msgid "Preferences"
+msgstr "&Taamu yi"
 
-#: getExtensions.label
-msgid "Get Extensions"
-msgstr "Am ay yokk"
+#: cmd.showPreferencesUnix.tooltip
+msgctxt "cmd.showPreferencesUnix.tooltip"
+msgid "Change this add-on's preferences"
+msgstr ""
 
-#: getThemes.label
-msgid "Get Themes"
-msgstr "Am ay tem"
+#: cmd.contribute.label cmd.contribute.accesskey
+msgid "&Contribute"
+msgstr ""
 
-#: getPlugins.label
-msgid "Get Plugins"
-msgstr "Am ay plugins"
+#: cmd.contribute.tooltip
+msgid "Contribute to the development of this add-on"
+msgstr ""
 
-#: searchAddons.label
-msgctxt "searchAddons.label"
-msgid "Search All Add-ons"
-msgstr "Wut ci biir modili yokk yépp"
+#: cmd.showReleaseNotes.label
+msgid "Show Release Notes"
+msgstr ""
 
-#: browseAddons.label
-msgid "Browse All Add-ons"
-msgstr "Doxantu ci modili yokk yépp"
+#: cmd.showReleaseNotes.tooltip
+msgid "Show the release notes for this update"
+msgstr ""
 
-#: searchFailed.label
-msgid "&brandShortName; couldn't retrieve add-ons"
-msgstr "&brandShortName; gisul ay modili yokk"
+#: cmd.hideReleaseNotes.label
+msgid "Hide Release Notes"
+msgstr ""
 
-#: recommendedHeader.label
-msgid "Recommended"
-msgstr "Santaane nañu leen"
+#: cmd.hideReleaseNotes.tooltip
+msgid "Hide the release notes for this update"
+msgstr ""
 
-#: recommendedThrobber.label
-msgid "Retrieving recommended add-ons"
-msgstr "Gis modili yokk yi ñu santaane"
+#. discovery view
+#. LOCALIZATION NOTE (discover.title,discover.description,discover.footer):
+#. Displayed in the center of the Get Add-ons view, see bug 601143 for mockups.
+#: discover.title
+msgid "What are Add-ons?"
+msgstr ""
 
-#: searchThrobber.label
-msgid "Searching add-ons"
-msgstr "Wutum modil"
+#: discover.description2
+msgid ""
+"Add-ons are applications that let you personalize &brandShortName; with \n"
+"extra functionality or style. Try a time-saving sidebar, a weather notifier, "
+"or a themed look to make &brandShortName; \n"
+"your own."
+msgstr ""
 
-#: resetSearch.label
-msgid "Clear Results"
-msgstr "Far jéexit yi"
+#: discover.footer
+msgid ""
+"When you're connected to the internet, this pane will feature \n"
+"some of the best and most popular add-ons for you to try out."
+msgstr ""
 
-#: noSearchResults.label
-msgid "All results are already installed or incompatible."
-msgstr "Jéexit yépp sampu nanu walla andu ñu"
+#. detail view
+#: detail.version.label
+msgid "Version"
+msgstr ""
 
-#: noRecommendedResults.label
-msgid "All recommendations are already installed or incompatible."
-msgstr "Diktal yépp sampu nanu walla andu ñu"
+#: detail.lastupdated.label
+msgctxt "detail.lastupdated.label"
+msgid "Last Updated"
+msgstr ""
 
-#: emptySearch.label
-msgid "No matching add-ons"
-msgstr "Gisuñu dara lu mengoo"
+#: detail.creator.label
+msgid "Developer"
+msgstr ""
 
-#: emptySearch.button
-msgctxt "emptySearch.button"
-msgid "OK"
-msgstr "OK"
+#: detail.homepage.label
+msgctxt "detail.homepage.label"
+msgid "Homepage"
+msgstr ""
 
-#: cancelSearch.button
+#: detail.numberOfDownloads.label
+msgid "Downloads"
+msgstr ""
+
+#: detail.contributions.description
+msgid ""
+"The developer of this add-on asks that you help support its continued "
+"development by making a small contribution."
+msgstr ""
+
+#: detail.updateType
+msgid "Automatic Updates"
+msgstr ""
+
+#: detail.updateDefault.label
+msgid "Default"
+msgstr ""
+
+#: detail.updateDefault.tooltip
+msgid "Automatically install updates only if that's the default"
+msgstr ""
+
+#: detail.updateAutomatic.label
+msgid "On"
+msgstr ""
+
+#: detail.updateAutomatic.tooltip
+msgid "Automatically install updates"
+msgstr ""
+
+#: detail.updateManual.label
+msgid "Off"
+msgstr ""
+
+#: detail.updateManual.tooltip
+msgid "Don't automatically install updates"
+msgstr ""
+
+#: detail.home
+msgctxt "detail.home"
+msgid "Homepage"
+msgstr ""
+
+#: detail.repository
+msgid "Add-on Profile"
+msgstr ""
+
+#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
+#: detail.size
+msgid "Size"
+msgstr ""
+
+#: detail.checkForUpdates.label detail.checkForUpdates.accesskey
+#, fuzzy
+msgid "Check &for Updates"
+msgstr "Wut ay yeesal"
+
+#: detail.checkForUpdates.tooltip
+msgid "Check for updates for this add-on"
+msgstr ""
+
+#: detail.showPreferencesWin.label detail.showPreferencesWin.accesskey
+#, fuzzy
+msgctxt "detail.showPreferencesWin.label detail.showPreferencesWin.accesskey"
+msgid "&Options"
+msgstr "&Tannéef yi"
+
+#: detail.showPreferencesWin.tooltip
+msgctxt "detail.showPreferencesWin.tooltip"
+msgid "Change this add-on's options"
+msgstr ""
+
+#: detail.showPreferencesUnix.label detail.showPreferencesUnix.accesskey
+#, fuzzy
+msgctxt "detail.showPreferencesUnix.label detail.showPreferencesUnix.accesskey"
+msgid "&Preferences"
+msgstr "&Taamu yi"
+
+#: detail.showPreferencesUnix.tooltip
+msgctxt "detail.showPreferencesUnix.tooltip"
+msgid "Change this add-on's preferences"
+msgstr ""
+
+#. ratings
+#: rating2.label
+msgid "Rating"
+msgstr ""
+
+#. download/install progress
+#: progress.pause.tooltip
+msgid "Pause"
+msgstr ""
+
+#: progress.cancel.tooltip
 msgid "Cancel"
 msgstr "Neenal"
 
-#: searchFailed.button
-msgctxt "searchFailed.button"
-msgid "OK"
-msgstr "OK"
+#. list sorting
+#: sort.name.label
+msgid "Name"
+msgstr ""
 
-#: searchResultHomepage.value
-msgid "Learn More"
-msgstr "Gën cee jàngaat"
+#: sort.name.tooltip
+msgid "Sort by name"
+msgstr ""
 
-#: searchBox.label
-msgctxt "searchBox.label"
-msgid "Search All Add-ons"
-msgstr "Wut ci biir modili yokk yépp"
+#: sort.dateUpdated.label
+msgctxt "sort.dateUpdated.label"
+msgid "Last Updated"
+msgstr ""
 
-#: recommendedResults.label
-msgid "See All Recommended Add-ons"
-msgstr "Xool modili yokk yépp yi ñu santaane"
+#: sort.dateUpdated.tooltip
+msgid "Sort by date updated"
+msgstr ""
 
-#: searchResultConnecting.label
-msgid "Connecting…"
-msgstr "Jokkoo…"
+#: sort.relevance.label
+msgid "Best match"
+msgstr ""
 
-#: searchResultInstalling.label
-msgctxt "searchResultInstalling.label"
-msgid "Installing…"
-msgstr "Samp waa ngiy dox"
+#: sort.relevance.tooltip
+msgid "Sort by relevance"
+msgstr ""
 
-#: searchResultFailed.label
-msgid "Install Failed"
-msgstr "Samp wi lajj na."
+#: sort.price.label
+msgid "Price"
+msgstr ""
 
-#: searchResultInstalled.label
-msgid "Install Complete"
-msgstr "Samp wi sotti na"
+#: sort.price.tooltip
+msgid "Sort by price"
+msgstr ""
 
-#: addonTypeExtension.label
-msgid "Extension"
-msgstr "Yokk"
+#: search.filter2.label
+msgid "Search:"
+msgstr ""
 
-#: addonTypeTheme.label
-msgid "Theme"
-msgstr "Tem"
+#: search.filter2.installed.label
+msgid "My Add-ons"
+msgstr ""
 
-#: missingThumbnail.label
-msgid "No Preview"
-msgstr "Amul séen"
+#: search.filter2.installed.tooltip
+msgid "Show installed add-ons"
+msgstr ""
 
-#: previewNoThemeSelected.label
-msgid "No Theme Selected"
-msgstr "Amul tem bu falu"
+#: search.filter2.available.label
+msgid "Available Add-ons"
+msgstr ""
 
-#: previewNoPreviewImage.label
-msgid "This Theme does not have a Preview Image"
-msgstr "Amul benn nataalu séen bu feex pur tem bi"
+#: search.filter2.available.tooltip
+msgid "Show add-ons available to install"
+msgstr ""
 
-#: moreInfo.label
-msgid "More Information"
-msgstr "Detaay yu gën bari"
+#: addon.homepage
+msgctxt "addon.homepage"
+msgid "Homepage"
+msgstr ""
 
-#: infoNoAddonSelected.label
-msgid "No Update Selected"
-msgstr "Benn yeesal faluwul"
+#: addon.details.label
+msgid "More"
+msgstr ""
 
-#: infoNoUpdateInfo.label
-msgid "This update does not have any additional information"
-msgstr "Amul benn xibaaru mottali pur yeesal bile"
+#: addon.details.tooltip
+msgid "Show more details about this add-on"
+msgstr ""
 
-#: infoUpdateInfoError.label
-msgid "There was an error loading the information about this update"
-msgstr "Benn jnumte am na bi ñuy yeb xibaar yi jëm ci yeesal bile"
+#: addon.unknownDate
+msgid "Unknown"
+msgstr ""
 
-#: updateSuccess.label
-msgid "Update completed successfully."
-msgstr "Yeesal bi sotti na ak ndam."
+#. This is used in a normal list
+#. to signify that an add-on is disabled, in the form
+#. "<Addon name> <1.0> (disabled)"
+#: addon.disabled.postfix
+msgid "(disabled)"
+msgstr ""
 
-#: installSuccess.label
-msgid "Install completed successfully."
-msgstr "Samp wi sotti na ak ndam."
+#. This is used in the available
+#. updates list to signify that an item is an update, in the form
+#. "<Addon name> <1.1> Update". It is fine to use constructs like brackets if
+#. necessary
+#: addon.update.postfix
+#, fuzzy
+msgid "Update"
+msgstr "Yeesal yi"
 
-#: installSuccessRestart.label
-msgid "Restart to complete the installation."
-msgstr "Tambaliwaatal ngir sottal samp wi."
+#: addon.undoAction.label
+msgctxt "addon.undoAction.label"
+msgid "Undo"
+msgstr ""
 
-#: updateSuccessRestart.label
-msgid "Restart to complete the update."
-msgstr "Tambaliwaatal ngir sottal yeesal bi"
+#: addon.undoAction.tooltip
+msgid "Undo this action"
+msgstr ""
 
-#: installWaiting.label
-msgid "Waiting…"
-msgstr "Xaar..."
+#: addon.undoRemove.label
+msgctxt "addon.undoRemove.label"
+msgid "Undo"
+msgstr ""
 
-#: installIncompatibleUpdate.label
-msgid "Checking compatibility…"
-msgstr "Seet dëppale gi..."
+#: addon.undoRemove.tooltip
+msgid "Keep this add-on installed"
+msgstr ""
 
-#: installFinishing.label
-msgctxt "installFinishing.label"
-msgid "Installing…"
-msgstr "Samp waa ngi ci yoon..."
+#: addon.restartNow.label
+msgid "Restart now"
+msgstr ""
 
-#: installFailure.label
-msgid "Install failed."
-msgstr "Samp wi lajj na."
+#: addon.install.label
+#, fuzzy
+msgid "Install"
+msgstr "&Samp..."
 
-#: progressStatus.label
-msgid "Checking For Updates"
+#: addon.install.tooltip
+msgid "Install this add-on"
+msgstr ""
+
+#: addon.updateNow.label
+msgid "Update Now"
+msgstr ""
+
+#: addon.updateNow.tooltip
+#, fuzzy
+msgid "Install the update for this add-on"
+msgstr "Samp benn yeesal pur modil bi"
+
+#: addon.includeUpdate.label
+#, fuzzy
+msgid "Include in Update"
+msgstr "&Boole ci benn yeesal"
+
+#: addon.updateAvailable.label
+msgid "An update is available"
+msgstr ""
+
+#: addon.checkingForUpdates.label
+#, fuzzy
+msgid "Checking for updates…"
 msgstr "Wut ay yeesal"
+
+#: addon.releaseNotes.label
+msgid "Release Notes:"
+msgstr ""
+
+#: addon.loadingReleaseNotes.label
+msgctxt "addon.loadingReleaseNotes.label"
+msgid "Loading…"
+msgstr ""
+
+#: addon.errorLoadingReleaseNotes.label
+msgid "Sorry, but there was an error loading the release notes."
+msgstr ""
+
+#: addon.createdBy.label
+msgid "By "
+msgstr ""
 
 #: eula.title
 msgid "End-User License Agreement"
@@ -557,10 +610,329 @@ msgstr "400px"
 msgid "Accept and Install…"
 msgstr "Nangu te samp..."
 
-#: blocklist.blocked.label
-msgid "Blocked"
-msgstr "Caŋ"
+#~ msgid "Add-ons"
+#~ msgstr "Modili mottali"
 
-#: blocklist.checkbox.label
-msgid "Disable"
-msgstr "Suuxal"
+#~ msgid "520"
+#~ msgstr "520"
+
+#~ msgid "380"
+#~ msgstr "380"
+
+#~ msgid "i"
+#~ msgstr "i"
+
+#~ msgid ","
+#~ msgstr ","
+
+#~ msgid "w"
+#~ msgstr "w"
+
+#~ msgid "Extensions"
+#~ msgstr "Yokk yi"
+
+#~ msgid "Themes"
+#~ msgstr "Tem yi"
+
+#~ msgid "Languages"
+#~ msgstr "Lammiñ yi"
+
+#~ msgid "Plugins"
+#~ msgstr "Plugins"
+
+#~ msgid "Installation"
+#~ msgstr "Samp wi"
+
+#~ msgid "Finds Updates to your Add-ons"
+#~ msgstr "Wut ay yeesal ngir say modili mottali"
+
+#~ msgid "Finds Updates to your Themes"
+#~ msgstr "Wut ay yeesal ngir say tem"
+
+#~ msgid "Finds Updates to your Plugins"
+#~ msgstr "Wut ay yeesal ngir say plugins"
+
+#~ msgid "Install an Add-on"
+#~ msgstr "Samp modilu motali"
+
+#~ msgid "Install a Theme"
+#~ msgstr "Samp benn tem"
+
+#~ msgid "Install the selected updates"
+#~ msgstr "Samp yeesal yi falu"
+
+#~ msgid "&Restart &brandShortName;"
+#~ msgstr "&Tambaliwaat &brandShortName;"
+
+#~ msgid "Restart &brandShortName; to apply changes"
+#~ msgstr "Tambaliwaat &brandShortName; ngir soppeeku yi taxaw"
+
+#~ msgid "S&kip"
+#~ msgstr "&Bul faale"
+
+#~ msgid "Skip these updates"
+#~ msgstr "Bul faale yeesal yi"
+
+#~ msgid "&Continue"
+#~ msgstr "&Kontineel"
+
+#~ msgid "Continue loading &brandShortName;"
+#~ msgstr "Kontineel fatum &brandShortName;"
+
+#~ msgid "Enable &All"
+#~ msgstr "Suq&ali lépp"
+
+#~ msgid "Enable all displayed Add-ons"
+#~ msgstr "Suqali modil yi wonewu"
+
+#~ msgid "Di&sable All"
+#~ msgstr "&Suuxal lépp"
+
+#~ msgid "Disable all displayed Add-ons"
+#~ msgstr "Suxal modil yi wonewu"
+
+#~ msgid "Use &Theme"
+#~ msgstr "Jëfandikoo &tem bi"
+
+#~ msgid "Changes &brandShortName;'s Theme"
+#~ msgstr "Soppi temu &brandShortName;"
+
+#~ msgid "Set Options for the selected Extension"
+#~ msgstr "Saytu tanneefu yokk yi falu"
+
+#~ msgid "Edit Preferences for the selected Extension"
+#~ msgstr "Saytu taamu yokk bi falu"
+
+#~ msgid "Enable this Add-on when &brandShortName; is restarted"
+#~ msgstr "Suqali modil bi bu &brandShortName;tambaliwaatee"
+
+#~ msgid "Disable this Add-on when &brandShortName; is restarted"
+#~ msgstr "Suuxal modil bi  bu &brandShortName; tambaliwaatee"
+
+#~ msgid "Uninstall"
+#~ msgstr "Simpi"
+
+#~ msgid "U"
+#~ msgstr "U"
+
+#~ msgid "Uninstall this Add-on when &brandShortName; is restarted"
+#~ msgstr "Simpi modil bi bu  &brandShortName; tambaliwaatee"
+
+#~ msgid "&Cancel Uninstall"
+#~ msgstr "&Neenal simpi mi"
+
+#~ msgid "Cancel the uninstall of this Add-on"
+#~ msgstr "Neenal simpi modil bi"
+
+#~ msgid "&Cancel Install"
+#~ msgstr "&Neenal samp mi"
+
+#~ msgid "Cancel the install of this Add-on"
+#~ msgstr "Neenal sampum modil bi"
+
+#~ msgid "&Cancel Upgrade"
+#~ msgstr "&Neenal yeesal bi"
+
+#~ msgid "Cancel the upgrade of this Add-on"
+#~ msgstr "Neenal yeesalu modil bi"
+
+#~ msgid "&Install Update"
+#~ msgstr "&Samp benn yeesal"
+
+#~ msgid "Show more information about these updates"
+#~ msgstr "Wone yeneen xibaar ci yeesal yi"
+
+#~ msgid "&Hide Information"
+#~ msgstr "&Nëbb xibaar yi"
+
+#~ msgid "Hide information about these updates"
+#~ msgstr "Nëbb xibaar yi jëm ci yeesal yi"
+
+#~ msgid "&Add to &brandShortName;…"
+#~ msgstr "&Yokk ci &brandShortName;…"
+
+#~ msgid "Download and install this add-on"
+#~ msgstr "Yokk ak samp modilu mottali bi"
+
+#~ msgctxt "cancel.label cancel.accesskey"
+#~ msgid "&Cancel"
+#~ msgstr "&Neenal"
+
+#~ msgctxt "cancelInstall.label cancelInstall.accesskey"
+#~ msgid "&Cancel"
+#~ msgstr "&Neenal"
+
+#~ msgctxt "cancelUpgrade.label cancelUpgrade.accesskey"
+#~ msgid "&Cancel"
+#~ msgstr "&Neenal"
+
+#~ msgid "Visit &Home Page"
+#~ msgstr "&Gane dalub web bi"
+
+#~ msgid "About this Add-on"
+#~ msgstr "Ci mbiri modil bi"
+
+#~ msgid "A"
+#~ msgstr "A"
+
+#~ msgid "&Find Update"
+#~ msgstr "&Wut benn yeesal"
+
+#~ msgid "I&nclude this update"
+#~ msgstr "B&oole ci yeesal bii"
+
+#~ msgid "Include this Add-on when installing the updates"
+#~ msgstr "Boole ci modil bi bu ñu dee samp yeesal yi"
+
+#~ msgid "Does not provide secure updates."
+#~ msgstr "Du joxe ay yeesal yu am kaarange"
+
+#~ msgid "Requires additional items."
+#~ msgstr "Faww mu am ay yokk."
+
+#~ msgid "Disabled for your protection."
+#~ msgstr "Dafa suux ngir sa kaarange."
+
+#~ msgid "Known to cause security or stability issues."
+#~ msgstr ""
+#~ "Dafa siiw ndax ndax tolof tolof yi muy indi ci wallu kaarange ak taxawaay"
+
+#~ msgid "A newer, safer version is available."
+#~ msgstr "Sumb bu bees te gëna wóor am na"
+
+#~ msgid "This add-on will be disabled when &brandShortName; is restarted."
+#~ msgstr "Modil bi dina suux bu &brandShortName; tambaliwaatee."
+
+#~ msgid "This add-on will be enabled when &brandShortName; is restarted."
+#~ msgstr "Modil bi dina suqaliku bu &brandShortName; tambaliwaatee."
+
+#~ msgid "This add-on will be installed when &brandShortName; is restarted."
+#~ msgstr "Modil bi dina sampu bu &brandShortName; tambaliwaatee."
+
+#~ msgid "This add-on will be uninstalled when &brandShortName; is restarted."
+#~ msgstr "Modil bi dina simpeeku bu &brandShortName; tambaliwaatee."
+
+#~ msgid "This add-on will be updated when &brandShortName; is restarted."
+#~ msgstr "Modil bi dina yees bu &brandShortName; tambaliwaatee."
+
+#~ msgid "Get Extensions"
+#~ msgstr "Am ay yokk"
+
+#~ msgid "Get Themes"
+#~ msgstr "Am ay tem"
+
+#~ msgid "Get Plugins"
+#~ msgstr "Am ay plugins"
+
+#~ msgid "Browse All Add-ons"
+#~ msgstr "Doxantu ci modili yokk yépp"
+
+#~ msgid "&brandShortName; couldn't retrieve add-ons"
+#~ msgstr "&brandShortName; gisul ay modili yokk"
+
+#~ msgid "Recommended"
+#~ msgstr "Santaane nañu leen"
+
+#~ msgid "Retrieving recommended add-ons"
+#~ msgstr "Gis modili yokk yi ñu santaane"
+
+#~ msgid "Searching add-ons"
+#~ msgstr "Wutum modil"
+
+#~ msgid "Clear Results"
+#~ msgstr "Far jéexit yi"
+
+#~ msgid "All results are already installed or incompatible."
+#~ msgstr "Jéexit yépp sampu nanu walla andu ñu"
+
+#~ msgid "All recommendations are already installed or incompatible."
+#~ msgstr "Diktal yépp sampu nanu walla andu ñu"
+
+#~ msgid "No matching add-ons"
+#~ msgstr "Gisuñu dara lu mengoo"
+
+#~ msgctxt "emptySearch.button"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgctxt "searchFailed.button"
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Learn More"
+#~ msgstr "Gën cee jàngaat"
+
+#~ msgctxt "searchBox.label"
+#~ msgid "Search All Add-ons"
+#~ msgstr "Wut ci biir modili yokk yépp"
+
+#~ msgid "See All Recommended Add-ons"
+#~ msgstr "Xool modili yokk yépp yi ñu santaane"
+
+#~ msgid "Connecting…"
+#~ msgstr "Jokkoo…"
+
+#~ msgctxt "searchResultInstalling.label"
+#~ msgid "Installing…"
+#~ msgstr "Samp waa ngiy dox"
+
+#~ msgid "Install Failed"
+#~ msgstr "Samp wi lajj na."
+
+#~ msgid "Install Complete"
+#~ msgstr "Samp wi sotti na"
+
+#~ msgid "Extension"
+#~ msgstr "Yokk"
+
+#~ msgid "Theme"
+#~ msgstr "Tem"
+
+#~ msgid "No Preview"
+#~ msgstr "Amul séen"
+
+#~ msgid "No Theme Selected"
+#~ msgstr "Amul tem bu falu"
+
+#~ msgid "This Theme does not have a Preview Image"
+#~ msgstr "Amul benn nataalu séen bu feex pur tem bi"
+
+#~ msgid "More Information"
+#~ msgstr "Detaay yu gën bari"
+
+#~ msgid "No Update Selected"
+#~ msgstr "Benn yeesal faluwul"
+
+#~ msgid "This update does not have any additional information"
+#~ msgstr "Amul benn xibaaru mottali pur yeesal bile"
+
+#~ msgid "There was an error loading the information about this update"
+#~ msgstr "Benn jnumte am na bi ñuy yeb xibaar yi jëm ci yeesal bile"
+
+#~ msgid "Update completed successfully."
+#~ msgstr "Yeesal bi sotti na ak ndam."
+
+#~ msgid "Install completed successfully."
+#~ msgstr "Samp wi sotti na ak ndam."
+
+#~ msgid "Restart to complete the update."
+#~ msgstr "Tambaliwaatal ngir sottal yeesal bi"
+
+#~ msgid "Waiting…"
+#~ msgstr "Xaar..."
+
+#~ msgid "Checking compatibility…"
+#~ msgstr "Seet dëppale gi..."
+
+#~ msgctxt "installFinishing.label"
+#~ msgid "Installing…"
+#~ msgstr "Samp waa ngi ci yoon..."
+
+#~ msgid "Install failed."
+#~ msgstr "Samp wi lajj na."
+
+#~ msgid "Blocked"
+#~ msgstr "Caŋ"
+
+#~ msgid "Disable"
+#~ msgstr "Suuxal"

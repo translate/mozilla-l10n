@@ -1,8 +1,49 @@
+#. #
+#. # ***** BEGIN LICENSE BLOCK *****
+#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#. #
+#. # The contents of this file are subject to the Mozilla Public License Version
+#. # 1.1 (the "License"); you may not use this file except in compliance with
+#. # the License. You may obtain a copy of the License at
+#. # http://www.mozilla.org/MPL/
+#. #
+#. # Software distributed under the License is distributed on an "AS IS" basis,
+#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+#. # for the specific language governing rights and limitations under the
+#. # License.
+#. #
+#. # The Original Code is mozilla.org code.
+#. #
+#. # The Initial Developer of the Original Code is
+#. # Netscape Communications Corporation.
+#. # Portions created by the Initial Developer are Copyright (C) 1998
+#. # the Initial Developer. All Rights Reserved.
+#. #
+#. # Contributor(s):
+#. #   Javier Delgadillo <javi@netscape.com>
+#. #   Brian Ryner <bryner@brianryner.com>
+#. #   Terry Hayes <thayes@netscape.com>
+#. #   John Gardiner Myers <jgmyers@speakeasy.net>
+#. #
+#. # Alternatively, the contents of this file may be used under the terms of
+#. # either the GNU General Public License Version 2 or later (the "GPL"), or
+#. # the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+#. # in which case the provisions of the GPL or the LGPL are applicable instead
+#. # of those above. If you wish to allow use of your version of this file only
+#. # under the terms of either the GPL or the LGPL, and not to allow others to
+#. # use your version of this file under the terms of the MPL, indicate your
+#. # decision by deleting the provisions above and replace them with the notice
+#. # and other provisions required by the GPL or the LGPL. If you do not delete
+#. # the provisions above, a recipient may use your version of this file under
+#. # the terms of any one of the MPL, the GPL or the LGPL.
+#. #
+#. # ***** END LICENSE BLOCK *****
+#. extracted from en-US/security/manager/chrome/pipnss/pipnss.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-27 01:27+0200\n"
+"POT-Creation-Date: 2011-06-02 20:46+0200\n"
 "PO-Revision-Date: 2009-11-01 04:50+0200\n"
 "Last-Translator: Alf@net <alfanet@anafa.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +52,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: &\n"
 
 #: SignedBy
 msgid "Authenticated by %S"
@@ -72,8 +114,9 @@ msgstr "PSM Private Keys"
 #. #
 #. # 32
 #: Fips140TokenDescription
+#, fuzzy
 msgid "Software Security Device (FIPS)"
-msgstr ""
+msgstr "Software Security Device"
 
 #. # 64
 #: Fips140SlotDescription
@@ -160,8 +203,9 @@ msgid "Certificate"
 msgstr ""
 
 #: CertDumpVersion
+#, fuzzy
 msgid "Version"
-msgstr ""
+msgstr "Version 1"
 
 #: CertDumpVersion1
 msgid "Version 1"
@@ -311,6 +355,10 @@ msgstr "Algorithm Parameters"
 msgid "PKCS #1 RSA Encryption"
 msgstr "PKCS #1 RSA Encryption"
 
+#: CertDumpRSAPSSSignature
+msgid "PKCS #1 RSASSA-PSS Signature"
+msgstr ""
+
 #: CertDumpRSATemplate
 msgid ""
 "Modulus (%S bits):\n"
@@ -456,9 +504,10 @@ msgid "ANSI X9.62 ECDSA Signature with SHA1"
 msgstr "ANSI X9.62 ECDSA Signature with SHA1"
 
 #: CertDumpCertTypeEmail
+#, fuzzy
 msgctxt "CertDumpCertTypeEmail"
 msgid "Email"
-msgstr ""
+msgstr "E-Mail Address"
 
 #: CertDumpEmailCA
 msgid "Email Certificate Authority"
@@ -1033,7 +1082,8 @@ msgstr "The password entered was incorrect."
 
 #: SuccessfulP12Backup
 msgid "Successfully backed up your security certificate(s) and private key(s)."
-msgstr "Successfully backed up your security certificate(s) and private key(s)."
+msgstr ""
+"Successfully backed up your security certificate(s) and private key(s)."
 
 #: SuccessfulP12Restore
 msgid "Successfully restored your security certificate(s) and private key(s)."
@@ -1206,6 +1256,10 @@ msgid ""
 "The certificate is not trusted because the issuer certificate is unknown."
 msgstr ""
 
+#: certErrorTrust_MissingChain
+msgid "The certificate is not trusted because no issuer chain was provided."
+msgstr ""
+
 #: certErrorTrust_CaInvalid
 msgid ""
 "The certificate is not trusted because it was issued by an invalid CA "
@@ -1214,8 +1268,7 @@ msgstr ""
 
 #: certErrorTrust_Issuer
 msgid ""
-"The certificate is not trusted because the issuer certificate is not "
-"trusted."
+"The certificate is not trusted because the issuer certificate is not trusted."
 msgstr ""
 
 #: certErrorTrust_ExpiredIssuer
@@ -1234,8 +1287,8 @@ msgstr ""
 #. # LOCALIZATION NOTE (certErrorMismatchSingle2): Do not translate <a id="cert_domain_link" title="%1$S">%1$S</a>
 #: certErrorMismatchSingle2
 msgid ""
-"The certificate is only valid for <a id=\"cert_domain_link\" title=\"%1$S\">%"
-"1$S</a>"
+"The certificate is only valid for <a id=\"cert_domain_link\" title=\"%1$S\">"
+"%1$S</a>"
 msgstr ""
 
 #: certErrorMismatchSinglePlain
@@ -1250,12 +1303,14 @@ msgstr ""
 msgid "The certificate is not valid for any server names."
 msgstr ""
 
-#: certErrorExpired
-msgid "The certificate expired on %S."
+#. # LOCALIZATION NOTE (certErrorExpiredNow): Do not translate %1$S (date+time of expired certificate) or %2$S (current date+time)
+#: certErrorExpiredNow
+msgid "The certificate expired on %1$S. The current time is %2$S."
 msgstr ""
 
-#: certErrorNotYetValid
-msgid "The certificate will not be valid until %S."
+#. # LOCALIZATION NOTE (certErrorNotYetValidNow): Do not translate %1$S (date+time certificate will become valid) or %2$S (current date+time)
+#: certErrorNotYetValidNow
+msgid "The certificate will not be valid until %1$S. The current time is %2$S."
 msgstr ""
 
 #: certErrorCodePrefix
@@ -1396,8 +1451,9 @@ msgid "Your Cert"
 msgstr ""
 
 #: CertCA
+#, fuzzy
 msgid "CA (Certificate Authority)"
-msgstr ""
+msgstr "SSL Certificate Authority"
 
 #: CertSSL
 msgid "SSL Server"

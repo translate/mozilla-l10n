@@ -1,8 +1,45 @@
+#. #
+#. # ***** BEGIN LICENSE BLOCK *****
+#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#. #
+#. # The contents of this file are subject to the Mozilla Public License Version
+#. # 1.1 (the "License"); you may not use this file except in compliance with
+#. # the License. You may obtain a copy of the License at
+#. # http://www.mozilla.org/MPL/
+#. #
+#. # Software distributed under the License is distributed on an "AS IS" basis,
+#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+#. # for the specific language governing rights and limitations under the
+#. # License.
+#. #
+#. # The Original Code is mozilla.org code.
+#. #
+#. # The Initial Developer of the Original Code is
+#. # Netscape Communications Corporation.
+#. # Portions created by the Initial Developer are Copyright (C) 1998
+#. # the Initial Developer. All Rights Reserved.
+#. #
+#. # Contributor(s):
+#. #
+#. # Alternatively, the contents of this file may be used under the terms of
+#. # either the GNU General Public License Version 2 or later (the "GPL"), or
+#. # the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+#. # in which case the provisions of the GPL or the LGPL are applicable instead
+#. # of those above. If you wish to allow use of your version of this file only
+#. # under the terms of either the GPL or the LGPL, and not to allow others to
+#. # use your version of this file under the terms of the MPL, indicate your
+#. # decision by deleting the provisions above and replace them with the notice
+#. # and other provisions required by the GPL or the LGPL. If you do not delete
+#. # the provisions above, a recipient may use your version of this file under
+#. # the terms of any one of the MPL, the GPL or the LGPL.
+#. #
+#. # ***** END LICENSE BLOCK *****
+#. extracted from en-US/security/manager/chrome/pippki/pippki.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-30 02:05+0200\n"
+"POT-Creation-Date: 2011-06-02 20:46+0200\n"
 "PO-Revision-Date: 2009-10-30 02:06+0200\n"
 "Last-Translator: Alf@net <alfanet@anafa.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +48,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 1.2.1\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: &\n"
 
 #: SignedBy
 msgid "Authenticated by %S"
@@ -91,8 +129,9 @@ msgstr "Certificate for this certificate authority was not found"
 
 #. #For Deleting Certificates
 #: deleteSslCertConfirm3
+#, fuzzy
 msgid "Are you sure you want to delete these server exceptions?"
-msgstr ""
+msgstr "Are you sure you want to delete these certificates?"
 
 #: deleteSslCertImpact3
 msgid ""
@@ -122,19 +161,22 @@ msgstr ""
 msgid "Delete your Certificates"
 msgstr "Delete your Certificates"
 
-#: deleteCaCertConfirm
-msgid "Are you sure you want to delete these CA certificates?"
-msgstr "Are you sure you want to delete these CA certificates?"
-
-#: deleteCaCertImpactX
+#: deleteCaCertConfirm2
 msgid ""
-"If you delete a certificate authority (CA) certificate, this application "
-"will no longer trust any certificates issued by that CA."
+"You have requested to delete these CA certificates. For built-in "
+"certificates all trust will be removed, which has the same effect. Are you "
+"sure you want to delete or distrust?"
 msgstr ""
 
-#: deleteCaCertTitle
-msgid "Delete CA Certificates"
-msgstr "Delete CA Certificates"
+#: deleteCaCertImpactX2
+msgid ""
+"If you delete or distrust a certificate authority (CA) certificate, this "
+"application will no longer trust any certificates issued by that CA."
+msgstr ""
+
+#: deleteCaCertTitle2
+msgid "Delete or Distrust CA Certificates"
+msgstr ""
 
 #: deleteEmailCertConfirm
 msgid "Are you sure you want to delete these people's e-mail certificates?"
@@ -161,9 +203,9 @@ msgid "Delete Certificates"
 msgstr "Delete your Certificates"
 
 #. #PKCS#12 file dialogs
-#: chooseP12RestoreFileDialog
-msgid "File Name to Restore"
-msgstr "File Name to Restore"
+#: chooseP12RestoreFileDialog2
+msgid "Certificate File to Import"
+msgstr ""
 
 #: chooseP12BackupFileDialog
 msgid "File Name to Backup"
@@ -176,11 +218,9 @@ msgstr "PKCS12 Files"
 #. #Preferences
 #: resetPreferences
 msgid ""
-"Use this button to reset %S's security preferences to their factory "
-"settings."
+"Use this button to reset %S's security preferences to their factory settings."
 msgstr ""
-"Use this button to reset %S's security preferences to their factory "
-"settings."
+"Use this button to reset %S's security preferences to their factory settings."
 
 #. #Cert verification
 #: certVerified
@@ -273,8 +313,11 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "The page you are viewing is not encrypted."
 
-#: pageInfo_StrongEncryption
-msgid "Connection Encrypted: High-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_StrongEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 msgstr "Connection Encrypted: High-grade Encryption (%S %S bit)"
 
 #: pageInfo_Privacy_Strong1
@@ -295,8 +338,11 @@ msgstr ""
 "information traveling between computers. It is therefore very unlikely that "
 "anyone read this page as it traveled across the network."
 
-#: pageInfo_WeakEncryption
-msgid "Connection Encrypted: Low-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_WeakEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
 msgstr "Connection Encrypted: Low-grade Encryption (%S %S bit)"
 
 #: pageInfo_Privacy_Weak1
@@ -470,6 +516,12 @@ msgid ""
 msgstr ""
 "FIPS mode requires that you have a Master Password set for each security "
 "device. Please set the password before trying to enable FIPS mode."
+
+#: unable_to_toggle_fips
+msgid ""
+"Unable to change the FIPS mode for the security device. It is recommended "
+"that you exit and restart this application."
+msgstr ""
 
 #. # CRL next update.
 #: crlNextUpdateMsg1
@@ -709,3 +761,12 @@ msgstr ""
 #: addExceptionConnectionFailed
 msgid "Connection Failed"
 msgstr ""
+
+#~ msgid "Are you sure you want to delete these CA certificates?"
+#~ msgstr "Are you sure you want to delete these CA certificates?"
+
+#~ msgid "Delete CA Certificates"
+#~ msgstr "Delete CA Certificates"
+
+#~ msgid "File Name to Restore"
+#~ msgstr "File Name to Restore"
