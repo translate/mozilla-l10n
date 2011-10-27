@@ -4,7 +4,7 @@ project=firefox
 langs=$*
 user=pootlesync
 local_copy=.pootle_phases_tmp
-phaselist=ff4.phaselist
+phaselist=firefox.phaselist
 
 if [ $# -lt 1 ]; then
 	echo "$(basename $0) [lang(s)]"
