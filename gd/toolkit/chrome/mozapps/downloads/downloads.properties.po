@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-05 11:27+0200\n"
+"POT-Creation-Date: 2011-11-28 14:49+0200\n"
 "PO-Revision-Date: 2011-10-07 16:40+0200\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.1.6\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: &\n"
 
 #. # LOCALIZATION NOTE (seconds, minutes, hours, days): Semi-colon list of plural
@@ -218,12 +218,12 @@ msgstr "A h-uile luchdadh a-nuas deiseil"
 msgid "All files have finished downloading. "
 msgstr "Tha gach faidhle air a luchdadh a-nuas. "
 
-#. # LOCALIZATION NOTE (statusFormat2): — is the "em dash" (long dash)
-#. # #1 transfer progress; #2 rate number; #3 rate unit; #4 time left
+#. # LOCALIZATION NOTE (statusFormat3): — is the "em dash" (long dash)
+#. # %1$S transfer progress; %2$S rate number; %3$S rate unit; %4$S time left
 #. # example: 4 minutes left — 1.1 of 11.1 GB (2.2 MB/sec)
-#: statusFormat2
-msgid "#4 — #1 (#2 #3/sec)"
-msgstr "#4 — #1 (#2 #3/diog)"
+#: statusFormat3
+msgid "%4$S — %1$S (%2$S %3$S/sec)"
+msgstr ""
 
 #: bytes
 msgid "bytes"
@@ -241,40 +241,50 @@ msgstr "MB"
 msgid "GB"
 msgstr "GB"
 
-#. # LOCALIZATION NOTE (transferSameUnits, transferDiffUnits, transferNoTotal):
-#. # #1 progress number; #2 progress unit; #3 total number; #4 total unit
-#. # examples: 1.1 of 333 MB; 11.1 MB of 3.3 GB; 111 KB
-#: transferSameUnits
-msgid "#1 of #3 #4"
-msgstr "#1 de #3 #4"
+#. # LOCALIZATION NOTE (transferSameUnits2):
+#. # %1$S progress number; %2$S total number; %3$S total unit
+#. # example: 1.1 of 333 MB
+#: transferSameUnits2
+#, fuzzy
+msgid "%1$S of %2$S %3$S"
+msgstr "%1$S (%2$S %3$S)"
 
-#: transferDiffUnits
-msgid "#1 #2 of #3 #4"
-msgstr "#1 #2 de #3 #4"
+#. # LOCALIZATION NOTE (transferDiffUnits2):
+#. # %1$S progress number; %2$S progress unit; %3$S total number; %4$S total unit
+#. # example: 11.1 MB of 3.3 GB
+#: transferDiffUnits2
+msgid "%1$S %2$S of %3$S %4$S"
+msgstr ""
 
-#: transferNoTotal
-msgctxt "transferNoTotal"
-msgid "#1 #2"
-msgstr "#1 #2"
+#. # LOCALIZATION NOTE (transferNoTotal2):
+#. # %1$S progress number; %2$S unit
+#. # example: 111 KB
+#: transferNoTotal2
+#, fuzzy
+msgctxt "transferNoTotal2"
+msgid "%1$S %2$S"
+msgstr "%1$S %2$S"
 
-#. # LOCALIZATION NOTE (timePair): #1 time number; #2 time unit
+#. # LOCALIZATION NOTE (timePair2): %1$S time number; %2$S time unit
 #. # example: 1 minute; 11 hours
-#: timePair
-msgctxt "timePair"
-msgid "#1 #2"
-msgstr "#1 #2"
+#: timePair2
+#, fuzzy
+msgctxt "timePair2"
+msgid "%1$S %2$S"
+msgstr "%1$S %2$S"
 
-#. # LOCALIZATION NOTE (timeLeftSingle): #1 time left
+#. # LOCALIZATION NOTE (timeLeftSingle2): %1$S time left
 #. # example: 1 minute remaining; 11 hours remaining
-#: timeLeftSingle
-msgid "#1 remaining"
+#: timeLeftSingle2
+#, fuzzy
+msgid "%1$S remaining"
 msgstr "#1 air fhàgail"
 
-#. # LOCALIZATION NOTE (timeLeftDouble): #1 time left; #2 time left sub units
+#. # LOCALIZATION NOTE (timeLeftDouble2): %1$S time left; %2$S time left sub units
 #. # example: 11 hours, 2 minutes remaining; 1 day, 22 hours remaining
-#: timeLeftDouble
-msgid "#1, #2 remaining"
-msgstr "#1, #2 air fhàgail"
+#: timeLeftDouble2
+msgid "%1$S, %2$S remaining"
+msgstr ""
 
 #: timeFewSeconds
 msgid "A few seconds remaining"
@@ -294,7 +304,7 @@ msgstr "#1 — #2"
 
 #. # LOCALIZATION NOTE (doneSize): #1 size number; #2 size unit
 #: doneSize
-msgctxt "doneSize"
+#, fuzzy
 msgid "#1 #2"
 msgstr "#1 #2"
 
@@ -303,8 +313,9 @@ msgid "Unknown size"
 msgstr "Chan eil fhios dè cho mòr 's a tha e"
 
 #. # LOCALIZATION NOTE (doneScheme): #1 URI scheme like data: jar: about:
-#: doneScheme
-msgid "#1 resource"
+#: doneScheme2
+#, fuzzy
+msgid "%1$S resource"
 msgstr "Goireas #1"
 
 #. # LOCALIZATION NOTE (doneFileScheme): Special case of doneScheme for file:
@@ -346,10 +357,11 @@ msgid "Yesterday"
 msgstr "An-dè"
 
 #. # LOCALIZATION NOTE (monthDate): #1 month name; #2 date number; e.g., January 22
-#: monthDate
-msgctxt "monthDate"
-msgid "#1 #2"
-msgstr "#2 #1"
+#: monthDate2
+#, fuzzy
+msgctxt "monthDate2"
+msgid "%1$S %2$S"
+msgstr "%1$S %2$S"
 
 #: fileDoesNotExistOpenTitle
 msgid "Cannot Open %S"
@@ -415,3 +427,27 @@ msgstr "Deasg"
 #: downloadsFolder
 msgid "Downloads"
 msgstr "Luchdaidhean a-nuas"
+
+#~ msgid "#4 — #1 (#2 #3/sec)"
+#~ msgstr "#4 — #1 (#2 #3/diog)"
+
+#~ msgid "#1 of #3 #4"
+#~ msgstr "#1 de #3 #4"
+
+#~ msgid "#1 #2 of #3 #4"
+#~ msgstr "#1 #2 de #3 #4"
+
+#~ msgctxt "timePair"
+#~ msgid "#1 #2"
+#~ msgstr "#1 #2"
+
+#~ msgid "#1, #2 remaining"
+#~ msgstr "#1, #2 air fhàgail"
+
+#~ msgctxt "doneSize"
+#~ msgid "#1 #2"
+#~ msgstr "#1 #2"
+
+#~ msgctxt "monthDate"
+#~ msgid "#1 #2"
+#~ msgstr "#2 #1"
