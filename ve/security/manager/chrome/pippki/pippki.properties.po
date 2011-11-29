@@ -1,9 +1,46 @@
+#. #
+#. # ***** BEGIN LICENSE BLOCK *****
+#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#. #
+#. # The contents of this file are subject to the Mozilla Public License Version
+#. # 1.1 (the "License"); you may not use this file except in compliance with
+#. # the License. You may obtain a copy of the License at
+#. # http://www.mozilla.org/MPL/
+#. #
+#. # Software distributed under the License is distributed on an "AS IS" basis,
+#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+#. # for the specific language governing rights and limitations under the
+#. # License.
+#. #
+#. # The Original Code is mozilla.org code.
+#. #
+#. # The Initial Developer of the Original Code is
+#. # Netscape Communications Corporation.
+#. # Portions created by the Initial Developer are Copyright (C) 1998
+#. # the Initial Developer. All Rights Reserved.
+#. #
+#. # Contributor(s):
+#. #
+#. # Alternatively, the contents of this file may be used under the terms of
+#. # either the GNU General Public License Version 2 or later (the "GPL"), or
+#. # the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+#. # in which case the provisions of the GPL or the LGPL are applicable instead
+#. # of those above. If you wish to allow use of your version of this file only
+#. # under the terms of either the GPL or the LGPL, and not to allow others to
+#. # use your version of this file under the terms of the MPL, indicate your
+#. # decision by deleting the provisions above and replace them with the notice
+#. # and other provisions required by the GPL or the LGPL. If you do not delete
+#. # the provisions above, a recipient may use your version of this file under
+#. # the terms of any one of the MPL, the GPL or the LGPL.
+#. #
+#. # ***** END LICENSE BLOCK *****
+#. extracted from en-US/security/manager/chrome/pippki/pippki.properties
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-01 23:32+0200\n"
+"POT-Creation-Date: 2011-11-29 12:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,11 +48,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: &\n"
 
 #: SignedBy
-msgid "Signed by %S"
-msgstr "Yo sainwa nga %S"
+msgid "Authenticated by %S"
+msgstr ""
 
 #: CertPassPrompt
 msgid ""
@@ -25,6 +63,8 @@ msgstr ""
 "Ni khou humbelwa uri ni dzhenise Phasiwede ya Tsireledzo Yanu Inwi Mune ya "
 "tshishumiswa tsha tsireledzo tsha Khii dza PSM dza Phuraivethe."
 
+#. #These are for dialogs
+#. #Download Cert dialog
 #: newCAMessage1
 msgid "Do you want to trust \"%S\" for the following purposes?"
 msgstr "Ni khou ṱoḓa u fulufhela \"%S\" u itela ndivho dzi tevhelaho?"
@@ -33,6 +73,7 @@ msgstr "Ni khou ṱoḓa u fulufhela \"%S\" u itela ndivho dzi tevhelaho?"
 msgid "Certificate Authority (unnamed)"
 msgstr "Mulanguli wa Ṱhanziela (ha ngo bulwa)"
 
+#. #For editing cert trust
 #: editTrustWindowTitle
 msgid "Edit certificate trust"
 msgstr "Lulamisani fulufhelo la ṱhanziela"
@@ -42,15 +83,13 @@ msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Ṱhanziela \"%S\" i imela Mulanguli wa Ṱhanziela."
 
 #: editTrustSSL
-msgid ""
-"_: editTrustSSL\n"
-"The certificate \"%S\" was issued by:"
+msgctxt "editTrustSSL"
+msgid "The certificate \"%S\" was issued by:"
 msgstr "Ṱhanziela \"%S\" i imela Mulanguli wa Ṱhanziela:"
 
 #: editTrustEmail
-msgid ""
-"_: editTrustEmail\n"
-"The certificate \"%S\" was issued by:"
+msgctxt "editTrustEmail"
+msgid "The certificate \"%S\" was issued by:"
 msgstr "Ṱhanziela \"%S\" i imela Mulanguli wa Ṱhanziela:"
 
 #: issuerNotTrusted
@@ -84,33 +123,26 @@ msgstr ""
 msgid "Certificate for this certificate authority was not found"
 msgstr "Ṱhanziela ya mulanguli wa hei ṱhanziela o yo ngo wanala"
 
-#: deleteSslCertFlag
-msgid "deleteSslFlag"
-msgstr "thuthaniFulagayaSsl"
-
-#: deleteSslCertConfirm
-msgid "Are you sure you want to delete these web site certificates?"
+#. #For Deleting Certificates
+#: deleteSslCertConfirm3
+#, fuzzy
+msgid "Are you sure you want to delete these server exceptions?"
 msgstr ""
-"Ni na vhuṱanzi ho fhelelaho ha uri ni khou toda u thutha ṱhanziela dza idzi "
-"webusaithi?"
+"Ni na vhuṱanizi ho fhelelaho ha uri ni khou toda u thutha idzi ṱhanziela?"
 
-#: deleteSslCertImpact
+#: deleteSslCertImpact3
 msgid ""
-"If you delete a web site certificate, you will be asked to accept it again "
-"the next time you visit the web site."
+"If you delete a server exception, you restore the usual security checks for "
+"that server and require it uses a valid certificate."
 msgstr ""
-"Arali na thutha webusaithi ya ṱhanziela, ni do humbeliwa u i ṱanganedza "
-"hafhu tshifhingani tshidaho musi ni tshi dalela webusaithi hafhu."
 
-#: deleteSslCertTitle
-msgid "Delete Web Site Certificates"
-msgstr "Thuthani Ṱhanziela dza Webusaithi"
-
-#: deleteUserCertFlag
-msgid "deleteUserFlag"
-msgstr "thuthaniFulagayaMushumisi"
+#: deleteSslCertTitle3
+msgid "Delete Server Certificate Exceptions"
+msgstr ""
 
 #: deleteUserCertConfirm
+#, fuzzy
+msgctxt "deleteUserCertConfirm"
 msgid "Are you sure you want to delete these certificates?"
 msgstr ""
 "Ni na vhuṱanizi ho fhelelaho ha uri ni khou toda u thutha idzi ṱhanziela?"
@@ -127,31 +159,26 @@ msgstr ""
 msgid "Delete your Certificates"
 msgstr "Thuthani Ṱhanziela dzanu"
 
-#: deleteCaCertFlag
-msgid "deleteCaFlag"
-msgstr "thuthaniFulagayaCa"
-
-#: deleteCaCertConfirm
-msgid "Are you sure you want to delete these CA certificates?"
-msgstr ""
-"Ni na vhuṱanzi ho fhelelaho ha uri ni khou toda u thutha thanziela dza CA?"
-
-#: deleteCaCertImpact
+#: deleteCaCertConfirm2
 msgid ""
-"If you delete a certificate authority (CA) certificate, your browser will no "
-"longer trust any certificates issued by that CA."
+"You have requested to delete these CA certificates. For built-in "
+"certificates all trust will be removed, which has the same effect. Are you "
+"sure you want to delete or distrust?"
+msgstr ""
+
+#: deleteCaCertImpactX2
+#, fuzzy
+msgid ""
+"If you delete or distrust a certificate authority (CA) certificate, this "
+"application will no longer trust any certificates issued by that CA."
 msgstr ""
 "Arali na thutha ṱhanziela ya mulanguli wa ṱhanziela (CA), tsha u swaswara "
 "tshanu tshi nga si tsha fulufhela na ṱhanziela na nthihi dzine dza bviswa "
 "nga CA."
 
-#: deleteCaCertTitle
-msgid "Delete CA Certificates"
-msgstr "Thuthani Ṱhanziela dza CA"
-
-#: deleteEmailCertFlag
-msgid "deleteEmailFlag"
-msgstr "thuthaniFulagayaEmeili"
+#: deleteCaCertTitle2
+msgid "Delete or Distrust CA Certificates"
+msgstr ""
 
 #: deleteEmailCertConfirm
 msgid "Are you sure you want to delete these people's e-mail certificates?"
@@ -159,10 +186,11 @@ msgstr ""
 "Ni na vhuṱanzi ho fhelelaho ha uri ni khou ṱoḓa u thutha ṱhanziela dza e-"
 "meili dza avha vhathu?"
 
-#: deleteEmailCertImpact
+#: deleteEmailCertImpactDesc
+#, fuzzy
 msgid ""
-"If you delete an e-mail certificate, your will no longer be able to send "
-"encrypted e-mail to those people."
+"If you delete a person's e-mail certificate, you will no longer be able to "
+"send encrypted e-mail to that person."
 msgstr ""
 "Arali na thutha hei ṱhanziela ya e-meili, a ni tsha do dovha hafhu na kona u "
 "rumela e-meili dzo nwalwaho nga khoudu kha vhenevho vhathu."
@@ -171,9 +199,22 @@ msgstr ""
 msgid "Delete E-Mail Certificates"
 msgstr "Thuthani Ṱhanziela dza E-meili"
 
-#: chooseP12RestoreFileDialog
-msgid "File Name to Restore"
-msgstr "Dzina la Faela line la khou ṱoḓa u Vhuedzedzwa"
+#: deleteOrphanCertConfirm
+#, fuzzy
+msgctxt "deleteOrphanCertConfirm"
+msgid "Are you sure you want to delete these certificates?"
+msgstr ""
+"Ni na vhuṱanizi ho fhelelaho ha uri ni khou toda u thutha idzi ṱhanziela?"
+
+#: deleteOrphanCertTitle
+#, fuzzy
+msgid "Delete Certificates"
+msgstr "Thuthani Ṱhanziela dza CA"
+
+#. #PKCS#12 file dialogs
+#: chooseP12RestoreFileDialog2
+msgid "Certificate File to Import"
+msgstr ""
 
 #: chooseP12BackupFileDialog
 msgid "File Name to Backup"
@@ -183,61 +224,7 @@ msgstr "Dzina ḽa Faela ḽine ḽa khou ṱoḓa u Tikedzwa"
 msgid "PKCS12 Files"
 msgstr "Faela dza PKCS12"
 
-#: mismatchDomainMsg1
-msgid ""
-"You have attempted to establish a connection with \"%S\".  However, the "
-"security certificate presented belongs to \"%S\".  It is possible, though "
-"unlikely, that someone may be trying to intercept your communication with "
-"this web site."
-msgstr ""
-"No lingedza u thoma vhuṱumani na  \"%S\". Fhedzi-ha, ṱhanziela ya tsireledzo "
-"yo netshedzwaho ndi ya \"%S\".  Zwi a itea, naho zwi songo dalelsa, zwauri "
-"munwe muthu a nga vha a tshi khou lingedza u khaulu nyambedzano yanu na hei "
-"webusaithi."
-
-#: mismatchDomainMsg2
-msgid ""
-"If you suspect the certificate shown does not belong to \"%S\", please "
-"cancel the connection and notify the site administrator."
-msgstr ""
-"Arali ni tshi khou humbulela uri ṱhanziela yo sumbedzwaho ndi ya \"%S\", ni "
-"khou humbelwa uri ni fhelise vhukwamani nahone ni divhadze mulanguli wa "
-"saithi."
-
-#: serverCertExpiredMsg1
-msgid ""
-"\"%S\" is a site that uses a security certificate to encrypt data during "
-"transmission, but its certificate expired on %S."
-msgstr ""
-"\"%S\" ndi saithi ine ya shumisa ṱhanziela ya tsireledzo u nwala vhutanzi "
-"nga khoudu musi u tshi khou rumelwa, fhedzi thanziela yayo i khou fhelelwa "
-"na %S."
-
-#: serverCertExpiredTitle
-msgid "Server Certificate Expired"
-msgstr "Ṱhanziela ya Seva yo Fhelelwa"
-
-#: serverCertNotYetValedMsg1
-msgid ""
-"\"%S\" is a site that uses a security certificate to encrypt data during "
-"transmission, but its certificate will not be valid until %S."
-msgstr ""
-"\"%S\" ndi saithi ine ya shumisa ṱhanziela ya tsireledzo u nwala vhutanzi "
-"nga khoudu musi u tshi khou rumelwa, fhedzi thanziela yayo a i nga vhi "
-"mulayoni u swikela nga %S."
-
-#: serverCertNotYetValidTitle
-msgid "Server Certificate Not Yet Valid"
-msgstr "Ṱhanziela ya Seva a i Athu u Vha Mulayoni"
-
-#: serverCertExpiredMsg2
-msgid ""
-"You should check to make sure that your computer's time (currently set to %"
-"S) is correct."
-msgstr ""
-"Ni tea u tola u itela u khwathisedza zwauri tshifhinga tsha khomphwutha yanu "
-"(nzudzanyo ya zwino kha %S) ndi tshone."
-
+#. #Preferences
 #: resetPreferences
 msgid ""
 "Use this button to reset %S's security preferences to their factory settings."
@@ -245,6 +232,7 @@ msgstr ""
 "Shumisani hei gunubu u dzudzanya hafhu zwitakalelwa zwa tsireledzo zwa %S "
 "kha nzudzanyo dzayo dza limagani."
 
+#. #Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr "Thanziela yo khwathisedzwa u itela u shumisa kha mishumo i tevhelaho:"
@@ -283,6 +271,7 @@ msgid "Could not verify this certificate for unknown reasons."
 msgstr ""
 "A yo ngo kona u khwaṱthisedza hei ṱhanziela nga ndivho dzi sa divheiho."
 
+#. #Client auth
 #: clientAuthMessage1
 msgid "Organization: \"%S\""
 msgstr "Dzangano: \"%S\""
@@ -291,18 +280,22 @@ msgstr "Dzangano: \"%S\""
 msgid "Issued Under: \"%S\""
 msgstr "Yo Bviswa Fhasi Ha: \"%S\""
 
+#. #Page Info
 #: pageInfo_SiteNotVerified
-msgid "Web Site Identity Not Verified"
+#, fuzzy
+msgid "Website Identity Not Verified"
 msgstr "Vhune ha Webusaithi a Vhu Ngo Khwaṱhisedzwa"
 
 #: pageInfo_WebSiteVerified
-msgid "Web Site Identity Verified"
+#, fuzzy
+msgid "Website Identity Verified"
 msgstr "Vhune ha Webusaithi ho Khwaṱhisedzwa"
 
 #: pageInfo_Identity_Verified
+#, fuzzy
 msgid ""
-"The web site %S supports authentication for the page you are viewing. The "
-"identity of this web site has been verified by %S, a certificate authority "
+"The website %S supports authentication for the page you are viewing. The "
+"identity of this website has been verified by %S, a certificate authority "
 "you trust for this purpose."
 msgstr ""
 "Webusaithi %S i tikedza vhukwae ha siatari line na khou li lavhelesa. Vhune "
@@ -310,7 +303,8 @@ msgstr ""
 "fulufhela kha hoyu mushumo."
 
 #: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this web site's identity."
+#, fuzzy
+msgid "View the security certificate that verifies this website's identity."
 msgstr ""
 "Lavhelesani thanziela ya tsireledzo ine ya khwathisedza vhune ha hei "
 "webusaithi."
@@ -320,16 +314,18 @@ msgid "Connection Not Encrypted"
 msgstr "Vhukwamani a Vhu Ngo Nwalwa nga Khoudu"
 
 #: pageInfo_Privacy_None1
+#, fuzzy
 msgid ""
-"The web site %S does not support encryption for the page you are viewing."
+"The website %S does not support encryption for the page you are viewing."
 msgstr ""
 "Webusaithi %S a i tikedzi u nwalwa nga khoudu ha siatari line na khou li "
 "lavhelesa."
 
 #: pageInfo_Privacy_None2
+#, fuzzy
 msgid ""
 "Information sent over the Internet without encryption can be seen by other "
-"people while it is in transit."
+"people while it is in transit. "
 msgstr ""
 "Mulaedza wo rumelwaho nga inthanete u songo nwala nga khoudu u nga kona u "
 "vhonwa nga vhanwe vhathu musi u ndilani."
@@ -338,11 +334,14 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Siatari line na khou li lavhelesa a lo ngo nwalwa nga khoudu."
 
-#: pageInfo_StrongEncryption
-msgid "Connection Encrypted: High-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_StrongEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 msgstr ""
-"Vhutumani ho Nwalwa nga Khoudu: U Nwalwa nga Khoudu ha Gireidi ya ntha (%S %"
-"S tshipida)"
+"Vhutumani ho Nwalwa nga Khoudu: U Nwalwa nga Khoudu ha Gireidi ya ntha (%S "
+"%S tshipida)"
 
 #: pageInfo_Privacy_Strong1
 msgid ""
@@ -363,15 +362,19 @@ msgstr ""
 "dzikhomphwutha. Zwino-ha, a zwi konadzei tshothe uri munwe muthu a nga kona "
 "vhala heli siatari musi li tshi khou enda vhukati ha dzi netiweke."
 
-#: pageInfo_WeakEncryption
-msgid "Connection Encrypted: Low-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#: pageInfo_WeakEncryptionWithBits
+#, fuzzy
+msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
 msgstr ""
-"Vhutumani ho Nwalwa nga Khoudu: U Nwalwa nga Khoudu ha Gireidi ya fhasi (%S %"
-"S tshipida)"
+"Vhutumani ho Nwalwa nga Khoudu: U Nwalwa nga Khoudu ha Gireidi ya fhasi (%S "
+"%S tshipida)"
 
 #: pageInfo_Privacy_Weak1
+#, fuzzy
 msgid ""
-"The web site %S is using low-grade encryption for the page you are viewing."
+"The website %S is using low-grade encryption for the page you are viewing."
 msgstr ""
 "Webisaithi %S i khou shumisa u nwala nga khoudu ha gireidi ya fhasi u itela "
 "siatari line na khou lavhelesa lone."
@@ -389,11 +392,15 @@ msgid "Connection Partially Encrypted"
 msgstr ""
 
 #: pageInfo_Privacy_Mixed1
+#, fuzzy
 msgid ""
 "Parts of the page you are viewing were not encrypted before being "
 "transmitted over the Internet."
 msgstr ""
+"Siatari line na khou li lavhelesa lo vha lo nwalwa nga khoudu musi li saathu "
+"u rumelwa nga kha inthanete."
 
+#. #Cert Viewer
 #: certDetails
 msgid "Certificate Viewer:"
 msgstr "Tshilavhelesi tsha Ṱhanziela:"
@@ -414,6 +421,7 @@ msgstr ""
 "Ni tea u kilika Zwo luga arali fhedzi ni tshi fulufhela \"%S\" u tsireledza "
 "khii ya u nwala nga khoudu yanu inwi mune."
 
+#. #Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(a yo dzudzanya)"
@@ -434,7 +442,8 @@ msgid "Master Password successfully changed."
 msgstr "Phasiwede Khulwane yo shandukiswa zwavhudi."
 
 #: pw_erased_ok
-msgid "Warning! You have deleted your Master Password."
+#, fuzzy
+msgid "Warning! You have deleted your Master Password. "
 msgstr "Tsivhudzo! No thutha Phasiwede yanu Khulwane."
 
 #: pw_not_wanted
@@ -541,6 +550,13 @@ msgstr ""
 "tshishumiswa tsha tsireledzo tshinwe na tshinwe. Ni khou humbelwa uri ni "
 "dzudzanye phasiwede musi ni saathu u tendela moudu wa FIPS."
 
+#: unable_to_toggle_fips
+msgid ""
+"Unable to change the FIPS mode for the security device. It is recommended "
+"that you exit and restart this application."
+msgstr ""
+
+#. # CRL next update.
 #: crlNextUpdateMsg1
 msgid "%S cannot establish an encrypted connection with \"%S\"."
 msgstr "%S a i koni u thoma vhutumani ho nwalwaho nga khoudu na \"%S\"."
@@ -562,13 +578,6 @@ msgstr "URL lwa tsiko yo dzhiiwa kha"
 msgid "URL advertised by the CA"
 msgstr "URL yo kunguwedzwa nga CA"
 
-#: CrlUpdatePrefsSetConfirmation
-msgid ""
-"Automatic update preferences will take effect when you restart the browser."
-msgstr ""
-"Zwitakalelwa zwo khwinifhadzeaho nga zwothe zwi do thoma u shuma musi ni "
-"tshi thoma hafhu tsha u swaswara."
-
 #: crlAutoUpdateDayCntError
 msgid "Number of days before next update must be a number greater than zero."
 msgstr ""
@@ -589,11 +598,13 @@ msgid "Automatic Update is enabled for this CRL."
 msgstr "Khwinifhadzo nga yone yo tendelwa kha hei CRL."
 
 #: crlAutoupdateQuestion1
-msgid "Would would like to enable automatic update?"
+#, fuzzy
+msgid "Would you like to enable automatic update?"
 msgstr "Ni khou takalela u tendela khwinifhadzo nga yone ine?"
 
 #: crlAutoupdateQuestion2
-msgid "Would would like to view the automatic update settings?"
+#, fuzzy
+msgid "Would you like to view the automatic update settings?"
 msgstr "Ni khou takalela u lavhelesa nzudzanyo dza khwinifhadzo nga yone ine?"
 
 #: undefinedValStr
@@ -644,6 +655,7 @@ msgstr "Ṱunḓani Mutevhe wa u Fhelisa Thanziela"
 msgid "Import the CRL from:"
 msgstr "Ṱunḓani CRL u bva kha:"
 
+#. #Import certificate(s) file dialog
 #: importEmailCertPrompt
 msgid "Select File containing somebody's Email certificate to import"
 msgstr ""
@@ -654,15 +666,234 @@ msgstr ""
 msgid "Select File containing CA certificate(s) to import"
 msgstr "Nangani Faela ine ya vha na ṱhanziela ya CA u itela u ṱunḓa"
 
-#: importWebSiteCertPrompt
-msgid "Select File containing Web Site certificate to import"
+#: importServerCertPrompt
+#, fuzzy
+msgid "Select File containing Server certificate to import"
 msgstr "Angani Faela ine ya vha na ṱhanziela ya Webusaithi u itela u ṱunda"
 
 #: file_browse_Certificate_spec
 msgid "Certificate Files"
 msgstr "Faela dza Ṱhanziela"
 
+#. # Form Signing confirmation prompt
 #: formSigningIntro
 msgid "The site '%S' has requested that you sign the following text message:"
 msgstr ""
 "Saithi '%S' yo humbela zwauri ni saine mulaedza wa linwalwa u tevhelaho:"
+
+#. # Cert export
+#: SaveCertAs
+msgid "Save Certificate To File"
+msgstr ""
+
+#: CertFormatBase64
+msgid "X.509 Certificate (PEM)"
+msgstr ""
+
+#: CertFormatBase64Chain
+msgid "X.509 Certificate with chain (PEM)"
+msgstr ""
+
+#: CertFormatDER
+msgid "X.509 Certificate (DER)"
+msgstr ""
+
+#: CertFormatPKCS7
+msgid "X.509 Certificate (PKCS#7)"
+msgstr ""
+
+#: CertFormatPKCS7Chain
+msgid "X.509 Certificate with chain (PKCS#7)"
+msgstr ""
+
+#: writeFileFailure
+msgid "File Error"
+msgstr ""
+
+#: writeFileFailed
+msgid ""
+"Can't write to file %S:\n"
+"%S."
+msgstr ""
+
+#: writeFileAccessDenied
+msgid "Access denied"
+msgstr "U swikelela ho haneliwa"
+
+#: writeFileIsLocked
+msgid "File is locked"
+msgstr ""
+
+#: writeFileNoDeviceSpace
+msgid "No space left on device"
+msgstr ""
+
+#: writeFileUnknownError
+msgid "Unknown error"
+msgstr "Vhukhakhi vhu sa ḓivhei"
+
+#. #Add Security Exception dialog
+#: addExceptionBrandedWarning2
+msgid "You are about to override how %S identifies this site."
+msgstr ""
+
+#: addExceptionInvalidHeader
+msgid "This site attempts to identify itself with invalid information."
+msgstr ""
+
+#: addExceptionDomainMismatchShort
+msgid "Wrong Site"
+msgstr ""
+
+#: addExceptionDomainMismatchLong
+msgid ""
+"Certificate belongs to a different site, which could indicate an identity "
+"theft."
+msgstr ""
+
+#: addExceptionExpiredShort
+msgid "Outdated Information"
+msgstr ""
+
+#: addExceptionExpiredLong
+msgid ""
+"Certificate is not currently valid. It is impossible to verify whether this "
+"identity was reported as stolen or lost."
+msgstr ""
+
+#: addExceptionUnverifiedShort
+msgid "Unknown Identity"
+msgstr ""
+
+#: addExceptionUnverifiedLong
+msgid ""
+"Certificate is not trusted, because it hasn't been verified by a recognized "
+"authority."
+msgstr ""
+
+#: addExceptionValidShort
+msgid "Valid Certificate"
+msgstr ""
+
+#: addExceptionValidLong
+msgid ""
+"This site provides valid, verified identification.  There is no need to add "
+"an exception."
+msgstr ""
+
+#: addExceptionCheckingShort
+msgid "Checking Information"
+msgstr ""
+
+#: addExceptionCheckingLong
+msgid "Attempting to identify the site…"
+msgstr ""
+
+#: addExceptionNoCertShort
+msgid "No Information Available"
+msgstr ""
+
+#: addExceptionNoCertLong
+msgid "Unable to obtain identification status for the given site."
+msgstr ""
+
+#: addExceptionConnectionFailed
+msgid "Connection Failed"
+msgstr ""
+
+#~ msgid "Signed by %S"
+#~ msgstr "Yo sainwa nga %S"
+
+#~ msgid ""
+#~ "_: editTrustEmail\n"
+#~ "The certificate \"%S\" was issued by:"
+#~ msgstr "Ṱhanziela \"%S\" i imela Mulanguli wa Ṱhanziela:"
+
+#~ msgid "deleteSslFlag"
+#~ msgstr "thuthaniFulagayaSsl"
+
+#~ msgid "Are you sure you want to delete these web site certificates?"
+#~ msgstr ""
+#~ "Ni na vhuṱanzi ho fhelelaho ha uri ni khou toda u thutha ṱhanziela dza "
+#~ "idzi webusaithi?"
+
+#~ msgid ""
+#~ "If you delete a web site certificate, you will be asked to accept it "
+#~ "again the next time you visit the web site."
+#~ msgstr ""
+#~ "Arali na thutha webusaithi ya ṱhanziela, ni do humbeliwa u i ṱanganedza "
+#~ "hafhu tshifhingani tshidaho musi ni tshi dalela webusaithi hafhu."
+
+#~ msgid "Delete Web Site Certificates"
+#~ msgstr "Thuthani Ṱhanziela dza Webusaithi"
+
+#~ msgid "deleteUserFlag"
+#~ msgstr "thuthaniFulagayaMushumisi"
+
+#~ msgid "deleteCaFlag"
+#~ msgstr "thuthaniFulagayaCa"
+
+#~ msgid "Are you sure you want to delete these CA certificates?"
+#~ msgstr ""
+#~ "Ni na vhuṱanzi ho fhelelaho ha uri ni khou toda u thutha thanziela dza CA?"
+
+#~ msgid "deleteEmailFlag"
+#~ msgstr "thuthaniFulagayaEmeili"
+
+#~ msgid "File Name to Restore"
+#~ msgstr "Dzina la Faela line la khou ṱoḓa u Vhuedzedzwa"
+
+#~ msgid ""
+#~ "You have attempted to establish a connection with \"%S\".  However, the "
+#~ "security certificate presented belongs to \"%S\".  It is possible, though "
+#~ "unlikely, that someone may be trying to intercept your communication with "
+#~ "this web site."
+#~ msgstr ""
+#~ "No lingedza u thoma vhuṱumani na  \"%S\". Fhedzi-ha, ṱhanziela ya "
+#~ "tsireledzo yo netshedzwaho ndi ya \"%S\".  Zwi a itea, naho zwi songo "
+#~ "dalelsa, zwauri munwe muthu a nga vha a tshi khou lingedza u khaulu "
+#~ "nyambedzano yanu na hei webusaithi."
+
+#~ msgid ""
+#~ "If you suspect the certificate shown does not belong to \"%S\", please "
+#~ "cancel the connection and notify the site administrator."
+#~ msgstr ""
+#~ "Arali ni tshi khou humbulela uri ṱhanziela yo sumbedzwaho ndi ya \"%S\", "
+#~ "ni khou humbelwa uri ni fhelise vhukwamani nahone ni divhadze mulanguli "
+#~ "wa saithi."
+
+#~ msgid ""
+#~ "\"%S\" is a site that uses a security certificate to encrypt data during "
+#~ "transmission, but its certificate expired on %S."
+#~ msgstr ""
+#~ "\"%S\" ndi saithi ine ya shumisa ṱhanziela ya tsireledzo u nwala vhutanzi "
+#~ "nga khoudu musi u tshi khou rumelwa, fhedzi thanziela yayo i khou "
+#~ "fhelelwa na %S."
+
+#~ msgid "Server Certificate Expired"
+#~ msgstr "Ṱhanziela ya Seva yo Fhelelwa"
+
+#~ msgid ""
+#~ "\"%S\" is a site that uses a security certificate to encrypt data during "
+#~ "transmission, but its certificate will not be valid until %S."
+#~ msgstr ""
+#~ "\"%S\" ndi saithi ine ya shumisa ṱhanziela ya tsireledzo u nwala vhutanzi "
+#~ "nga khoudu musi u tshi khou rumelwa, fhedzi thanziela yayo a i nga vhi "
+#~ "mulayoni u swikela nga %S."
+
+#~ msgid "Server Certificate Not Yet Valid"
+#~ msgstr "Ṱhanziela ya Seva a i Athu u Vha Mulayoni"
+
+#~ msgid ""
+#~ "You should check to make sure that your computer's time (currently set to "
+#~ "%S) is correct."
+#~ msgstr ""
+#~ "Ni tea u tola u itela u khwathisedza zwauri tshifhinga tsha khomphwutha "
+#~ "yanu (nzudzanyo ya zwino kha %S) ndi tshone."
+
+#~ msgid ""
+#~ "Automatic update preferences will take effect when you restart the "
+#~ "browser."
+#~ msgstr ""
+#~ "Zwitakalelwa zwo khwinifhadzeaho nga zwothe zwi do thoma u shuma musi ni "
+#~ "tshi thoma hafhu tsha u swaswara."

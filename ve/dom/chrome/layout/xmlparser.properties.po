@@ -1,9 +1,45 @@
+#. # ***** BEGIN LICENSE BLOCK *****
+#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#. #
+#. # The contents of this file are subject to the Mozilla Public License Version
+#. # 1.1 (the "License"); you may not use this file except in compliance with
+#. # the License. You may obtain a copy of the License at
+#. # http://www.mozilla.org/MPL/
+#. #
+#. # Software distributed under the License is distributed on an "AS IS" basis,
+#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+#. # for the specific language governing rights and limitations under the
+#. # License.
+#. #
+#. # The Original Code is mozilla.org code.
+#. #
+#. # The Initial Developer of the Original Code is
+#. # Netscape Communications Corporation.
+#. # Portions created by the Initial Developer are Copyright (C) 2001
+#. # the Initial Developer. All Rights Reserved.
+#. #
+#. # Contributor(s):
+#. #
+#. # Alternatively, the contents of this file may be used under the terms of
+#. # either of the GNU General Public License Version 2 or later (the "GPL"),
+#. # or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+#. # in which case the provisions of the GPL or the LGPL are applicable instead
+#. # of those above. If you wish to allow use of your version of this file only
+#. # under the terms of either the GPL or the LGPL, and not to allow others to
+#. # use your version of this file under the terms of the MPL, indicate your
+#. # decision by deleting the provisions above and replace them with the notice
+#. # and other provisions required by the GPL or the LGPL. If you do not delete
+#. # the provisions above, a recipient may use your version of this file under
+#. # the terms of any one of the MPL, the GPL or the LGPL.
+#. #
+#. # ***** END LICENSE BLOCK *****
+#. extracted from en-US/dom/chrome/layout/xmlparser.properties
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 14:29+0200\n"
+"POT-Creation-Date: 2011-11-29 12:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,8 +47,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: &\n"
 
+#. # Map Expat error codes to error strings
 #: 1
 msgid "out of memory"
 msgstr "yo fhelelwa nga muhumbulo"
@@ -78,8 +116,8 @@ msgid "reference to external entity in attribute"
 msgstr "vhuimo kha vhuimo ha nga nnda kha tshitenwa"
 
 #: 17
-msgid "xml declaration not at start of external entity"
-msgstr "ndivhadzo ya xml hu si mathomoni a tshipida tsha nga nnda"
+msgid "XML or text declaration not at start of entity"
+msgstr ""
 
 #: 18
 msgid "unknown encoding"
@@ -113,25 +151,68 @@ msgstr "tshipida tsho buliwa kha tshipida tsha pharamitha"
 msgid "prefix not bound to a namespace"
 msgstr "thangi a yo ngo vhofhelelwa kha dzina la tshikhala"
 
+#: 28
+msgid "must not undeclare prefix"
+msgstr ""
+
 #: 29
-msgid "reserved prefix (xml) must not be undeclared or bound to another namespace URI"
-msgstr "thangi yo humiselwaho murahu (xml) a yo ngo tea u sa buliwa kana u vhofhelelwa kha linwe dzina la tshikhala URI"
+msgid "incomplete markup in parameter entity"
+msgstr ""
 
 #: 30
-msgid "reserved prefix (xmlns) must not be declared or undeclared"
-msgstr "thangi yo humiselwaho murahu (xmlns) a yo ngo tea u sa buliwa kana u sa buliwa"
+msgid "XML declaration not well-formed"
+msgstr ""
 
 #: 31
-msgid "prefix must not be bound to one of the reserved namespace URIs"
-msgstr "thangi a yo ngo tea u vhofhelelwa kha linwe la madzina a tshikhala o vhewaho a dziURI"
+msgid "text declaration not well-formed"
+msgstr ""
 
+#: 32
+msgid "illegal character(s) in public id"
+msgstr ""
+
+#: 38
+#, fuzzy
+msgid ""
+"reserved prefix (xml) must not be undeclared or bound to another namespace "
+"name"
+msgstr ""
+"thangi yo humiselwaho murahu (xml) a yo ngo tea u sa buliwa kana u "
+"vhofhelelwa kha linwe dzina la tshikhala URI"
+
+#: 39
+msgid "reserved prefix (xmlns) must not be declared or undeclared"
+msgstr ""
+"thangi yo humiselwaho murahu (xmlns) a yo ngo tea u sa buliwa kana u sa "
+"buliwa"
+
+#: 40
+#, fuzzy
+msgid "prefix must not be bound to one of the reserved namespace names"
+msgstr ""
+"thangi a yo ngo tea u vhofhelelwa kha linwe la madzina a tshikhala o vhewaho "
+"a dziURI"
+
+#. # %1$S is replaced by the Expat error string, may be followed by Expected (see below)
+#. # %2$S is replaced by URL
+#. # %3$u is replaced by line number
+#. # %4$u is replaced by column number
 #: XMLParsingError
-msgid "XML Parsing Error: %1$S\n"
+#, fuzzy
+msgid ""
+"XML Parsing Error: %1$S\n"
 "Location: %2$S\n"
-"Line Number %3$d, Column %4$d:"
-msgstr "XML Vhukhakhi ha u Parser: %1$S\nVhupo: %2$S\nNomboro ya Laini %3$d, Kholomu %4$d:"
+"Line Number %3$u, Column %4$u:"
+msgstr ""
+"XML Vhukhakhi ha u Parser: %1$S\n"
+"Vhupo: %2$S\n"
+"Nomboro ya Laini %3$d, Kholomu %4$d:"
 
+#. # %S is replaced by a tag name.
+#. # This gets appended to the error string if the error is mismatched tag.
 #: Expected
 msgid ". Expected: </%S>."
 msgstr ". Yo Lavhelelwaho: </%S>."
 
+#~ msgid "xml declaration not at start of external entity"
+#~ msgstr "ndivhadzo ya xml hu si mathomoni a tshipida tsha nga nnda"

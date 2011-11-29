@@ -1,9 +1,45 @@
+#. # ***** BEGIN LICENSE BLOCK *****
+#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#. #
+#. # The contents of this file are subject to the Mozilla Public License Version
+#. # 1.1 (the "License"); you may not use this file except in compliance with
+#. # the License. You may obtain a copy of the License at
+#. # http://www.mozilla.org/MPL/
+#. #
+#. # Software distributed under the License is distributed on an "AS IS" basis,
+#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+#. # for the specific language governing rights and limitations under the
+#. # License.
+#. #
+#. # The Original Code is mozilla.org code.
+#. #
+#. # The Initial Developer of the Original Code is
+#. # Netscape Communications Corporation.
+#. # Portions created by the Initial Developer are Copyright (C) 1998
+#. # the Initial Developer. All Rights Reserved.
+#. #
+#. # Contributor(s):
+#. #
+#. # Alternatively, the contents of this file may be used under the terms of
+#. # either of the GNU General Public License Version 2 or later (the "GPL"),
+#. # or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+#. # in which case the provisions of the GPL or the LGPL are applicable instead
+#. # of those above. If you wish to allow use of your version of this file only
+#. # under the terms of either the GPL or the LGPL, and not to allow others to
+#. # use your version of this file under the terms of the MPL, indicate your
+#. # decision by deleting the provisions above and replace them with the notice
+#. # and other provisions required by the GPL or the LGPL. If you do not delete
+#. # the provisions above, a recipient may use your version of this file under
+#. # the terms of any one of the MPL, the GPL or the LGPL.
+#. #
+#. # ***** END LICENSE BLOCK *****
+#. extracted from en-US/browser/chrome/overrides/appstrings.properties
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-01 23:32+0200\n"
+"POT-Creation-Date: 2011-11-29 12:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +47,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: &\n"
 
 #: malformedURI
 msgid "The URL is not valid and cannot be loaded."
@@ -49,29 +86,16 @@ msgid ""
 "address in a way that will never complete."
 msgstr ""
 
-#: repost
+#. ## LOCALIZATION NOTE (confirmRepostPrompt): In this item, don't translate "%S"
+#: confirmRepostPrompt
 msgid ""
-"The page you are trying to view contains POSTDATA that has expired from "
-"cache. If you resend the data, any action the form carried out (such as a "
-"search or online purchase) will be repeated. To resend the data, click OK. "
-"Otherwise, click Cancel."
+"To display this page, %S must send information that will repeat any action "
+"(such as a search or order confirmation) that was performed earlier."
 msgstr ""
-"Siaṱari ḽine na khou lingedza u ḽi lavhelesa ḽi na VHUṰANZI HA KALE ho "
-"fhelelwaho nga tshifhinga tsha u vhulungwa. Arali na rumela hafhu vhuṱanzi, "
-"nyito iṅwe na iṅwe ine tshivhumbeo tsha ḓo vha tshi nayo (sa ṱoḓani kana u "
-"renga ḽainini) zwi ḓo dovhololwa. U rumela hafhu mulaedza, kiḽikani EE. Nga "
-"nnḓa ha zwenezwo, kiḽikani Thutha."
 
-#: repostConfirm
-msgid ""
-"The page you are trying to view contains POSTDATA. If you resend the data, "
-"any action the form carried out (such as a search or online purchase) will "
-"be repeated. To resend the data, click OK. Otherwise, click Cancel."
+#: resendButton.label
+msgid "Resend"
 msgstr ""
-"Siaṱari ḽine na khou lingedza u ḽi lavhelesa ḽi na VHUṰANZI HA KALE. Arali "
-"na rumela hafhu vhuṱanzi, nyito iṅwe na iṅwe ine tshivhumbeo tsha ḓo vha "
-"tshi nayo (sa ṱoḓani kana u renga ḽainini) zwi ḓo dovhololwa. U rumela hafhu "
-"mulaedza, kilikani EE. Nga nnḓa ha zwenezwo, kiḽikani Thutha."
 
 #: unknownSocketType
 msgid "Firefox doesn't know how to communicate with the server."
@@ -79,6 +103,10 @@ msgstr ""
 
 #: netReset
 msgid "The connection to the server was reset while the page was loading."
+msgstr ""
+
+#: notCached
+msgid "This document is no longer available."
 msgstr ""
 
 #: netOffline
@@ -105,23 +133,39 @@ msgid ""
 "Firefox is configured to use a proxy server that is refusing connections."
 msgstr ""
 
+#: contentEncodingError
+msgid ""
+"The page you are trying to view cannot be shown because it uses an invalid "
+"or unsupported form of compression."
+msgstr ""
+
+#: unsafeContentType
+msgid ""
+"The page you are trying to view cannot be shown because it is contained in a "
+"file type that may not be safe to open. Please contact the website owners to "
+"inform them of this problem."
+msgstr ""
+
 #: externalProtocolTitle
 msgid "External Protocol Request"
 msgstr "Nyimele ya Nnda yo Humbeliwa"
 
 #: externalProtocolPrompt
+#, fuzzy
 msgid ""
-"An external application must be launched to handle %1$S: links. Requested "
-"link:\n"
+"An external application must be launched to handle %1$S: links.\n"
 "\n"
+"\n"
+"Requested link:\n"
 "\n"
 "%2$S\n"
+"\n"
 "Application: %3$S\n"
 "\n"
 "\n"
 "If you were not expecting this request it may be an attempt to exploit a "
 "weakness in that other program. Cancel this request unless you are sure it "
-"is not malicious."
+"is not malicious.\n"
 msgstr ""
 "Nyito ya nga nnda i fanela u thomiwa u itela u fara thumanyo dza %1$S: "
 "Ṱhumanyo yo humbeliwaho:\n"
@@ -135,6 +179,7 @@ msgstr ""
 "lingedza u tshinyadza vhuṱudzeṱudze kha iṅwe mbekanyamushumo. Thuthani hei "
 "khumbelo nga nnḓa ha musi ni na vhuṱanzi ho fhelelaho ha uri a khombo."
 
+#. #LOCALIZATION NOTE (externalProtocolUnknown): The following string is shown if the application name can't be determined
 #: externalProtocolUnknown
 msgid "<Unknown>"
 msgstr "<A i Ḓivhei>"
@@ -146,6 +191,59 @@ msgstr "Humbulani khetho yanga kha thumanyo dzoṱhe dza lushaka luno."
 #: externalProtocolLaunchBtn
 msgid "Launch application"
 msgstr "Nyito ya u thoma"
+
+#: malwareBlocked
+msgid ""
+"The site at %S has been reported as an attack site and has been blocked "
+"based on your security preferences."
+msgstr ""
+
+#: phishingBlocked
+msgid ""
+"The website at %S has been reported as a web forgery designed to trick users "
+"into sharing personal or financial information."
+msgstr ""
+
+#: cspFrameAncestorBlocked
+msgid ""
+"This page has a content security policy that prevents it from being embedded "
+"in this way."
+msgstr ""
+
+#: corruptedContentError
+msgid ""
+"The page you are trying to view cannot be shown because an error in the data "
+"transmission was detected."
+msgstr ""
+
+#: remoteXUL
+msgid ""
+"This page uses an unsupported technology that is no longer available by "
+"default in Firefox."
+msgstr ""
+
+#~ msgid ""
+#~ "The page you are trying to view contains POSTDATA that has expired from "
+#~ "cache. If you resend the data, any action the form carried out (such as a "
+#~ "search or online purchase) will be repeated. To resend the data, click "
+#~ "OK. Otherwise, click Cancel."
+#~ msgstr ""
+#~ "Siaṱari ḽine na khou lingedza u ḽi lavhelesa ḽi na VHUṰANZI HA KALE ho "
+#~ "fhelelwaho nga tshifhinga tsha u vhulungwa. Arali na rumela hafhu "
+#~ "vhuṱanzi, nyito iṅwe na iṅwe ine tshivhumbeo tsha ḓo vha tshi nayo (sa "
+#~ "ṱoḓani kana u renga ḽainini) zwi ḓo dovhololwa. U rumela hafhu mulaedza, "
+#~ "kiḽikani EE. Nga nnḓa ha zwenezwo, kiḽikani Thutha."
+
+#~ msgid ""
+#~ "The page you are trying to view contains POSTDATA. If you resend the "
+#~ "data, any action the form carried out (such as a search or online "
+#~ "purchase) will be repeated. To resend the data, click OK. Otherwise, "
+#~ "click Cancel."
+#~ msgstr ""
+#~ "Siaṱari ḽine na khou lingedza u ḽi lavhelesa ḽi na VHUṰANZI HA KALE. "
+#~ "Arali na rumela hafhu vhuṱanzi, nyito iṅwe na iṅwe ine tshivhumbeo tsha "
+#~ "ḓo vha tshi nayo (sa ṱoḓani kana u renga ḽainini) zwi ḓo dovhololwa. U "
+#~ "rumela hafhu mulaedza, kilikani EE. Nga nnḓa ha zwenezwo, kiḽikani Thutha."
 
 #~ msgid ""
 #~ "The file %S cannot be found. Please check the location and try again."
