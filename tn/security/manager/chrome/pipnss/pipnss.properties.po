@@ -1,9 +1,50 @@
+#. #
+#. # ***** BEGIN LICENSE BLOCK *****
+#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
+#. #
+#. # The contents of this file are subject to the Mozilla Public License Version
+#. # 1.1 (the "License"); you may not use this file except in compliance with
+#. # the License. You may obtain a copy of the License at
+#. # http://www.mozilla.org/MPL/
+#. #
+#. # Software distributed under the License is distributed on an "AS IS" basis,
+#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+#. # for the specific language governing rights and limitations under the
+#. # License.
+#. #
+#. # The Original Code is mozilla.org code.
+#. #
+#. # The Initial Developer of the Original Code is
+#. # Netscape Communications Corporation.
+#. # Portions created by the Initial Developer are Copyright (C) 1998
+#. # the Initial Developer. All Rights Reserved.
+#. #
+#. # Contributor(s):
+#. #   Javier Delgadillo <javi@netscape.com>
+#. #   Brian Ryner <bryner@brianryner.com>
+#. #   Terry Hayes <thayes@netscape.com>
+#. #   John Gardiner Myers <jgmyers@speakeasy.net>
+#. #
+#. # Alternatively, the contents of this file may be used under the terms of
+#. # either the GNU General Public License Version 2 or later (the "GPL"), or
+#. # the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+#. # in which case the provisions of the GPL or the LGPL are applicable instead
+#. # of those above. If you wish to allow use of your version of this file only
+#. # under the terms of either the GPL or the LGPL, and not to allow others to
+#. # use your version of this file under the terms of the MPL, indicate your
+#. # decision by deleting the provisions above and replace them with the notice
+#. # and other provisions required by the GPL or the LGPL. If you do not delete
+#. # the provisions above, a recipient may use your version of this file under
+#. # the terms of any one of the MPL, the GPL or the LGPL.
+#. #
+#. # ***** END LICENSE BLOCK *****
+#. extracted from en-US/security/manager/chrome/pipnss/pipnss.properties
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 14:29+0200\n"
+"POT-Creation-Date: 2011-12-07 12:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,58 +52,84 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: &\n"
 
 #: SignedBy
-msgid "Signed by %S"
-msgstr "E saenilwe ke %S"
+msgid "Authenticated by %S"
+msgstr ""
 
 #: CertPassPrompt
 msgid "Please enter the master password for the %S."
 msgstr "Tsweetswee tsenya khunololamoraba e kgolo ya %S."
 
+#. # the following strings have special requirements:
+#. # they must fit in a 32 or 64 byte buffer after being translated
+#. # to UTF8.  Note to translator. It's not easy for you to figure
+#. # whether the escaped unicode string you produce will fit in 
+#. # the space allocated.
+#. #
+#. # 64 bytes long after conversion to UTF8
 #: RootCertModuleName
 msgid "Builtin Roots Module"
 msgstr "Mmojule wa Modi o o Ageletsweng"
 
+#. #
+#. # 32 bytes long after conversion to UTF8
 #: ManufacturerID
 msgid "Mozilla.org"
 msgstr "Mozilla.org"
 
+#. #
+#. # 32  bytes long after conversion to UTF8
 #: LibraryDescription
 msgid "PSM Internal Crypto Services"
 msgstr "Ditirelo tsa ka fa teng tsa Sephiri tsa PSM"
 
+#. #
+#. # 32 bytes long after conversion to UTF8
 #: TokenDescription
 msgid "Generic Crypto Services"
 msgstr "Ditirelo tsa Sephiri tsa Kakaretso"
 
+#. #
+#. # 32 bytes long after conversion to UTF8
 #: PrivateTokenDescription
-msgid "_: PrivateTokenDescription\n"
-"Software Security Device"
+msgctxt "PrivateTokenDescription"
+msgid "Software Security Device"
 msgstr "Sediriswa sa Pabalesego sa Serweboleta"
 
+#. #
+#. # 64 bytes long after conversion to UTF8
 #: SlotDescription
 msgid "PSM Internal Cryptographic Services"
 msgstr "Ditirelo tsa ka fa teng tsa Thanololo tsa PSM"
 
+#. #
+#. # 64 bytes long after conversion to UTF8
 #: PrivateSlotDescription
 msgid "PSM Private Keys"
 msgstr "Ditaetsi tsa Poraefete tsa PSM"
 
-#: FipsSlotDescription
-msgid "PSM Internal FIPS-140-1 Cryptographic Services"
-msgstr "Ditirelo tsa Thanololo tsa PSM tsa ka fa gare tsa FIPS-140-1"
-
-#: FipsPrivateSlotDescription
-msgid "PSM FIPS-140-1 User Private Key Services"
-msgstr "Ditirelo tsa Ditaetsi tsa Poraefete tsa Modirisi tsa PSM FIPS-140-1"
-
-#: InternalToken
-msgid "_: InternalToken\n"
-"Software Security Device"
+#. #
+#. # 32
+#: Fips140TokenDescription
+#, fuzzy
+msgid "Software Security Device (FIPS)"
 msgstr "Sediriswa sa Pabalesego sa Serweboleta"
 
+#. # 64
+#: Fips140SlotDescription
+msgid "FIPS 140 Cryptographic, Key and Certificate Services"
+msgstr ""
+
+#. # 32
+#: InternalToken
+msgctxt "InternalToken"
+msgid "Software Security Device"
+msgstr "Sediriswa sa Pabalesego sa Serweboleta"
+
+#. # End of size restriction.
 #: VerifySSLClient
 msgid "SSL Client Certificate"
 msgstr "Setifikeiti sa Modirelwa sa SSL"
@@ -88,13 +155,13 @@ msgid "Email Recipient Certificate"
 msgstr "Setifikeiti sa Moamogedi sa Poso ya Eleketoroniki"
 
 #: VerifyProtectObjSign
-msgid "_: VerifyProtectObjSign\n"
-"Protected Object Signer"
+msgctxt "VerifyProtectObjSign"
+msgid "Protected Object Signer"
 msgstr "Sesaeni sa Dilo se se Sireleditsweng"
 
 #: VerifyObjSign
-msgid "_: VerifyObjSign\n"
-"Object Signer"
+msgctxt "VerifyObjSign"
+msgid "Object Signer"
 msgstr "Sesaini sa Dilo"
 
 #: VerifyUserImport
@@ -102,8 +169,8 @@ msgid "User Import Cert"
 msgstr "Setifikeiti sa Tlisoteng sa Modirisi"
 
 #: VerifyCAVerifier
-msgid "_: VerifyCAVerifier\n"
-"CA Verifier"
+msgctxt "VerifyCAVerifier"
+msgid "CA Verifier"
 msgstr "Setlhomamisi sa CA"
 
 #: VerifyStatusResponder
@@ -115,21 +182,19 @@ msgid "Any Certificate Authority"
 msgstr "Bothati Bongwe le mongwe jwa Setifikeiti"
 
 #: HighGrade
-msgid "2048 (High Grade)"
-msgstr "2048 (Kereiti e e kwa Godimo)"
+msgid "High Grade"
+msgstr ""
 
 #: MediumGrade
-msgid "1024 (Medium Grade)"
-msgstr "1024 (Kereiti e e Magareng)"
+msgid "Medium Grade"
+msgstr ""
 
+#. # LOCALIZATION NOTE (nick_template): $1s is the common name from a cert (e.g. "Mozilla"), $2s is the CA name (e.g. VeriSign)
 #: nick_template
 msgid "%1$s's %2$s ID"
 msgstr "%1$s's %2$s BOITSHUPO"
 
-#: nick_template_with_num
-msgid "%1$s's %2$s ID #%3$d"
-msgstr "%1$s's %2$s BOITSHUPO #%3$d"
-
+#. #These are the strings set for the ASN1 objects in a certificate.
 #: CertDumpCertificate
 msgid "Certificate"
 msgstr "Setifikeiti"
@@ -246,6 +311,14 @@ msgstr "DN"
 msgid "DC"
 msgstr "DC"
 
+#: CertDumpSurname
+msgid "Surname"
+msgstr ""
+
+#: CertDumpGivenName
+msgid "Given Name"
+msgstr ""
+
 #: CertDumpValidity
 msgid "Validity"
 msgstr "Boammaaruri"
@@ -277,6 +350,26 @@ msgstr "Diparametara tsa Algorithm"
 #: CertDumpRSAEncr
 msgid "PKCS #1 RSA Encryption"
 msgstr "Mokgwatshireletso wa RSA wa PKCS #1"
+
+#: CertDumpRSAPSSSignature
+msgid "PKCS #1 RSASSA-PSS Signature"
+msgstr ""
+
+#: CertDumpRSATemplate
+msgid ""
+"Modulus (%S bits):\n"
+"%S\n"
+"Exponent (%S bits):\n"
+"%S"
+msgstr ""
+
+#: CertDumpECTemplate
+msgid ""
+"Key size: %S bits\n"
+"Base point order length: %S bits\n"
+"Public value:\n"
+"%S"
+msgstr ""
 
 #: CertDumpIssuerUniqueID
 msgid "Issuer Unique ID"
@@ -407,6 +500,8 @@ msgid "ANSI X9.62 ECDSA Signature with SHA1"
 msgstr "Mosaeno wa ANSI X9.62 ECDSA o o nang le SHA1"
 
 #: CertDumpCertTypeEmail
+#, fuzzy
+msgctxt "CertDumpCertTypeEmail"
 msgid "Email"
 msgstr "Poso ya Eleketoroniki"
 
@@ -462,6 +557,462 @@ msgstr "Boleng jwa Mosaeno wa Setifikeiti"
 msgid "Error: Unable to process extension"
 msgstr "Phoso: Ga e kgone go diragatsa katoloso to process extension"
 
+#: CertDumpIsCA
+#, fuzzy
+msgid "Is a Certificate Authority"
+msgstr "Bothati jwa Setifikeiti sa SSL"
+
+#: CertDumpIsNotCA
+#, fuzzy
+msgid "Is not a Certificate Authority"
+msgstr "Bothati Bongwe le mongwe jwa Setifikeiti"
+
+#: CertDumpPathLen
+msgid "Maximum number of intermediate CAs: %S"
+msgstr ""
+
+#: CertDumpPathLenUnlimited
+msgid "unlimited"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_5_5_7_3_1
+msgid "TLS Web Server Authentication"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_5_5_7_3_2
+msgid "TLS Web Client Authentication"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_5_5_7_3_3
+msgid "Code Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_5_5_7_3_4
+msgid "E-mail protection"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_5_5_7_3_8
+msgid "Time Stamping"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_5_5_7_3_9
+msgid "OCSP Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_2_1_21
+msgid "Microsoft Individual Code Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_2_1_22
+msgid "Microsoft Commercial Code Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_1
+msgid "Microsoft Trust List Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_2
+msgid "Microsoft Time Stamping"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_3
+msgid "Microsoft Server Gated Crypto"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_4
+msgid "Microsoft Encrypting File System"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_4_1
+msgid "Microsoft File Recovery"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_5
+msgid "Microsoft Windows Hardware Driver Verification"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_10
+msgid "Microsoft Qualified Subordination"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_11
+msgid "Microsoft Key Recovery"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_12
+msgid "Microsoft Document Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_10_3_13
+msgid "Microsoft Lifetime Signing"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_20_2_2
+msgid "Microsoft Smart Card Logon"
+msgstr ""
+
+#: CertDumpEKU_1_3_6_1_4_1_311_21_6
+msgid "Microsoft Key Recovery Agent"
+msgstr ""
+
+#: CertDumpMSCerttype
+msgid "Microsoft Certificate Template Name"
+msgstr ""
+
+#: CertDumpMSNTPrincipal
+msgid "Microsoft Principal Name"
+msgstr ""
+
+#: CertDumpMSCAVersion
+msgid "Microsoft CA Version"
+msgstr ""
+
+#: CertDumpMSDomainGUID
+msgid "Microsoft Domain GUID"
+msgstr ""
+
+#: CertDumpEKU_2_16_840_1_113730_4_1
+msgid "Netscape Server Gated Crypto"
+msgstr ""
+
+#: CertDumpRFC822Name
+msgid "E-Mail Address"
+msgstr "Aterese ya Poso ya Eleketoroniki"
+
+#: CertDumpDNSName
+msgid "DNS Name"
+msgstr ""
+
+#: CertDumpX400Address
+msgid "X.400 Address"
+msgstr ""
+
+#: CertDumpDirectoryName
+msgid "X.500 Name"
+msgstr ""
+
+#: CertDumpEDIPartyName
+msgid "EDI Party Name"
+msgstr ""
+
+#: CertDumpURI
+msgid "URI"
+msgstr ""
+
+#: CertDumpIPAddress
+msgid "IP Address"
+msgstr ""
+
+#: CertDumpRegisterID
+msgid "Registered OID"
+msgstr ""
+
+#: CertDumpKeyID
+msgid "Key ID"
+msgstr ""
+
+#: CertDumpVerisignNotices
+msgid "Verisign User Notices"
+msgstr ""
+
+#: CertDumpUnused
+msgid "Unused"
+msgstr ""
+
+#: CertDumpKeyCompromise
+msgid "Key Compromise"
+msgstr ""
+
+#: CertDumpCACompromise
+msgid "CA Compromise"
+msgstr ""
+
+#: CertDumpAffiliationChanged
+msgid "Affiliation Changed"
+msgstr ""
+
+#: CertDumpSuperseded
+msgid "Superseded"
+msgstr ""
+
+#: CertDumpCessation
+msgid "Cessation of Operation"
+msgstr ""
+
+#: CertDumpHold
+#, fuzzy
+msgid "Certificate Hold"
+msgstr "Mafelo a Ditifikeiti"
+
+#: CertDumpOCSPResponder
+msgid "OCSP"
+msgstr "OCSP"
+
+#: CertDumpCAIssuers
+msgid "CA Issuers"
+msgstr ""
+
+#: CertDumpCPSPointer
+msgid "Certification Practice Statement pointer"
+msgstr ""
+
+#: CertDumpPolicyOidEV
+msgid "Extended Validation (EV) SSL Server Certificate"
+msgstr ""
+
+#: CertDumpUserNotice
+msgid "User Notice"
+msgstr ""
+
+#: CertDumpLogotype
+msgid "Logotype"
+msgstr ""
+
+#: CertDumpECPublicKey
+msgid "Elliptic Curve Public Key"
+msgstr ""
+
+#: CertDumpECDSAWithSHA1
+#, fuzzy
+msgid "X9.62 ECDSA Signature with SHA1"
+msgstr "Mosaeno wa ANSI X9.62 ECDSA o o nang le SHA1"
+
+#: CertDumpECprime192v1
+msgid "ANSI X9.62 elliptic curve prime192v1 (aka secp192r1, NIST P-192)"
+msgstr ""
+
+#: CertDumpECprime192v2
+msgid "ANSI X9.62 elliptic curve prime192v2"
+msgstr ""
+
+#: CertDumpECprime192v3
+msgid "ANSI X9.62 elliptic curve prime192v3"
+msgstr ""
+
+#: CertDumpECprime239v1
+msgid "ANSI X9.62 elliptic curve prime239v1"
+msgstr ""
+
+#: CertDumpECprime239v2
+msgid "ANSI X9.62 elliptic curve prime239v2"
+msgstr ""
+
+#: CertDumpECprime239v3
+msgid "ANSI X9.62 elliptic curve prime239v3"
+msgstr ""
+
+#: CertDumpECprime256v1
+msgid "ANSI X9.62 elliptic curve prime256v1 (aka secp256r1, NIST P-256)"
+msgstr ""
+
+#: CertDumpECsecp112r1
+msgid "SECG elliptic curve secp112r1"
+msgstr ""
+
+#: CertDumpECsecp112r2
+msgid "SECG elliptic curve secp112r2"
+msgstr ""
+
+#: CertDumpECsecp128r1
+msgid "SECG elliptic curve secp128r1"
+msgstr ""
+
+#: CertDumpECsecp128r2
+msgid "SECG elliptic curve secp128r2"
+msgstr ""
+
+#: CertDumpECsecp160k1
+msgid "SECG elliptic curve secp160k1"
+msgstr ""
+
+#: CertDumpECsecp160r1
+msgid "SECG elliptic curve secp160r1"
+msgstr ""
+
+#: CertDumpECsecp160r2
+msgid "SECG elliptic curve secp160r2"
+msgstr ""
+
+#: CertDumpECsecp192k1
+msgid "SECG elliptic curve secp192k1"
+msgstr ""
+
+#: CertDumpECsecp224k1
+msgid "SECG elliptic curve secp224k1"
+msgstr ""
+
+#: CertDumpECsecp224r1
+msgid "SECG elliptic curve secp224r1 (aka NIST P-224)"
+msgstr ""
+
+#: CertDumpECsecp256k1
+msgid "SECG elliptic curve secp256k1"
+msgstr ""
+
+#: CertDumpECsecp384r1
+msgid "SECG elliptic curve secp384r1 (aka NIST P-384)"
+msgstr ""
+
+#: CertDumpECsecp521r1
+msgid "SECG elliptic curve secp521r1 (aka NIST P-521)"
+msgstr ""
+
+#: CertDumpECc2pnb163v1
+msgid "ANSI X9.62 elliptic curve c2pnb163v1"
+msgstr ""
+
+#: CertDumpECc2pnb163v2
+msgid "ANSI X9.62 elliptic curve c2pnb163v2"
+msgstr ""
+
+#: CertDumpECc2pnb163v3
+msgid "ANSI X9.62 elliptic curve c2pnb163v3"
+msgstr ""
+
+#: CertDumpECc2pnb176v1
+msgid "ANSI X9.62 elliptic curve c2pnb176v1"
+msgstr ""
+
+#: CertDumpECc2tnb191v1
+msgid "ANSI X9.62 elliptic curve c2tnb191v1"
+msgstr ""
+
+#: CertDumpECc2tnb191v2
+msgid "ANSI X9.62 elliptic curve c2tnb191v2"
+msgstr ""
+
+#: CertDumpECc2tnb191v3
+msgid "ANSI X9.62 elliptic curve c2tnb191v3"
+msgstr ""
+
+#: CertDumpECc2onb191v4
+msgid "ANSI X9.62 elliptic curve c2onb191v4"
+msgstr ""
+
+#: CertDumpECc2onb191v5
+msgid "ANSI X9.62 elliptic curve c2onb191v5"
+msgstr ""
+
+#: CertDumpECc2pnb208w1
+msgid "ANSI X9.62 elliptic curve c2pnb208w1"
+msgstr ""
+
+#: CertDumpECc2tnb239v1
+msgid "ANSI X9.62 elliptic curve c2tnb239v1"
+msgstr ""
+
+#: CertDumpECc2tnb239v2
+msgid "ANSI X9.62 elliptic curve c2tnb239v2"
+msgstr ""
+
+#: CertDumpECc2tnb239v3
+msgid "ANSI X9.62 elliptic curve c2tnb239v3"
+msgstr ""
+
+#: CertDumpECc2onb239v4
+msgid "ANSI X9.62 elliptic curve c2onb239v4"
+msgstr ""
+
+#: CertDumpECc2onb239v5
+msgid "ANSI X9.62 elliptic curve c2onb239v5"
+msgstr ""
+
+#: CertDumpECc2pnb272w1
+msgid "ANSI X9.62 elliptic curve c2pnb272w1"
+msgstr ""
+
+#: CertDumpECc2pnb304w1
+msgid "ANSI X9.62 elliptic curve c2pnb304w1"
+msgstr ""
+
+#: CertDumpECc2tnb359v1
+msgid "ANSI X9.62 elliptic curve c2tnb359v1"
+msgstr ""
+
+#: CertDumpECc2pnb368w1
+msgid "ANSI X9.62 elliptic curve c2pnb368w1"
+msgstr ""
+
+#: CertDumpECc2tnb431r1
+msgid "ANSI X9.62 elliptic curve c2tnb431r1"
+msgstr ""
+
+#: CertDumpECsect113r1
+msgid "SECG elliptic curve sect113r1"
+msgstr ""
+
+#: CertDumpECsect113r2
+msgid "SECG elliptic curve sect113r2"
+msgstr ""
+
+#: CertDumpECsect131r1
+msgid "SECG elliptic curve sect131r1"
+msgstr ""
+
+#: CertDumpECsect131r2
+msgid "SECG elliptic curve sect131r2"
+msgstr ""
+
+#: CertDumpECsect163k1
+msgid "SECG elliptic curve sect163k1 (aka NIST K-163)"
+msgstr ""
+
+#: CertDumpECsect163r1
+msgid "SECG elliptic curve sect163r1"
+msgstr ""
+
+#: CertDumpECsect163r2
+msgid "SECG elliptic curve sect163r2 (aka NIST B-163)"
+msgstr ""
+
+#: CertDumpECsect193r1
+msgid "SECG elliptic curve sect193r1"
+msgstr ""
+
+#: CertDumpECsect193r2
+msgid "SECG elliptic curve sect193r2"
+msgstr ""
+
+#: CertDumpECsect233k1
+msgid "SECG elliptic curve sect233k1 (aka NIST K-233)"
+msgstr ""
+
+#: CertDumpECsect233r1
+msgid "SECG elliptic curve sect233r1 (aka NIST B-233)"
+msgstr ""
+
+#: CertDumpECsect239k1
+msgid "SECG elliptic curve sect239k1"
+msgstr ""
+
+#: CertDumpECsect283k1
+msgid "SECG elliptic curve sect283k1 (aka NIST K-283)"
+msgstr ""
+
+#: CertDumpECsect283r1
+msgid "SECG elliptic curve sect283r1 (aka NIST B-283)"
+msgstr ""
+
+#: CertDumpECsect409k1
+msgid "SECG elliptic curve sect409k1 (aka NIST K-409)"
+msgstr ""
+
+#: CertDumpECsect409r1
+msgid "SECG elliptic curve sect409r1 (aka NIST B-409)"
+msgstr ""
+
+#: CertDumpECsect571k1
+msgid "SECG elliptic curve sect571k1 (aka NIST K-571)"
+msgstr ""
+
+#: CertDumpECsect571r1
+msgid "SECG elliptic curve sect571r1 (aka NIST B-571)"
+msgstr ""
+
+#: CertDumpRawBytesHeader
+msgid "Size: %S Bytes / %S Bits"
+msgstr ""
+
 #: VerifySSLClient_p
 msgid "Client"
 msgstr "Modirelwa"
@@ -487,13 +1038,13 @@ msgid "Encrypt"
 msgstr "Sireletsa"
 
 #: VerifyProtectObjSign_p
-msgid "_: VerifyProtectObjSign_p\n"
-"Protected Object Signer"
+msgctxt "VerifyProtectObjSign_p"
+msgid "Protected Object Signer"
 msgstr "Sesaeni se se Sireleditsweng sa Selo"
 
 #: VerifyObjSign_p
-msgid "_: VerifyObjSign_p\n"
-"Object Signer"
+msgctxt "VerifyObjSign_p"
+msgid "Object Signer"
 msgstr "Sesaeni sa Selo"
 
 #: VerifyUserImport_p
@@ -501,8 +1052,8 @@ msgid "User Import"
 msgstr "Tlisoteng ya Modirisi"
 
 #: VerifyCAVerifier_p
-msgid "_: VerifyCAVerifier_p\n"
-"CA Verifier"
+msgctxt "VerifyCAVerifier_p"
+msgid "CA Verifier"
 msgstr "Setlhotlhomisi sa CA"
 
 #: VerifyStatusResponder_p
@@ -527,39 +1078,61 @@ msgstr "Khunololamoraba e e tsentsweng e ne e fosagetse."
 
 #: SuccessfulP12Backup
 msgid "Successfully backed up your security certificate(s) and private key(s)."
-msgstr "Bolokile ka katlego ditifikeiti tsa gago tsa pabalesego le dinotlolo tsa poraefete."
+msgstr ""
+"Bolokile ka katlego ditifikeiti tsa gago tsa pabalesego le dinotlolo tsa "
+"poraefete."
 
 #: SuccessfulP12Restore
 msgid "Successfully restored your security certificate(s) and private key(s)."
-msgstr "Buseditse ka katlego ditifikeiti tsa gago tsa pabalesego le dinotlolo tsa poraefete."
+msgstr ""
+"Buseditse ka katlego ditifikeiti tsa gago tsa pabalesego le dinotlolo tsa "
+"poraefete."
 
 #: PKCS12PasswordInvalid
-msgid "Could not decode PKCS #12 file.  Perhaps the password you entered was incorrect?"
-msgstr "Ga e a kgona go ranolola faele ya PKCS #12.  Gongwe khunololamoraba e o e tsentseng e ne e sa siama?"
+msgid ""
+"Could not decode PKCS #12 file.  Perhaps the password you entered was "
+"incorrect?"
+msgstr ""
+"Ga e a kgona go ranolola faele ya PKCS #12.  Gongwe khunololamoraba e o e "
+"tsentseng e ne e sa siama?"
 
 #: PKCS12DecodeErr
-msgid "Failed to decode the file.  Either it is not in PKCS #12 format, has been corrupted, or the password you entered was incorrect."
-msgstr "E reteletswe go ranolola faele.  E ka ne e le gore fa mo fometeng ya PKCS #12 , e senyegile, gongwe khunololamoraba e o e tsentseng e ne e sa siama."
+msgid ""
+"Failed to decode the file.  Either it is not in PKCS #12 format, has been "
+"corrupted, or the password you entered was incorrect."
+msgstr ""
+"E reteletswe go ranolola faele.  E ka ne e le gore fa mo fometeng ya PKCS "
+"#12 , e senyegile, gongwe khunololamoraba e o e tsentseng e ne e sa siama."
 
 #: PKCS12UnknownErrRestore
 msgid "Failed to restore the PKCS #12 file for unknown reasons."
-msgstr "E reteletswe ke go busetsa faele ya PKCS #12 ka ntlha ya mabaka a a sa itsiweng."
+msgstr ""
+"E reteletswe ke go busetsa faele ya PKCS #12 ka ntlha ya mabaka a a sa "
+"itsiweng."
 
 #: PKCS12UnknownErrBackup
 msgid "Failed to create the PKCS #12 backup file for unknown reasons."
-msgstr "E reteletswe ke go tlhama faele ya PKCS #12 ka ntlha ya mabaka a a sa itsiweng."
+msgstr ""
+"E reteletswe ke go tlhama faele ya PKCS #12 ka ntlha ya mabaka a a sa "
+"itsiweng."
 
 #: PKCS12UnknownErr
 msgid "The PKCS #12 operation failed for unknown reasons."
 msgstr "Tiro ya PKCS #12 e reteletswe ka ntlha ya mabaka a a sa itsiweng."
 
 #: PKCS12InfoNoSmartcardBackup
-msgid "It is not possible to back up certificates from a hardware security device such as a smart card."
-msgstr "Ga go kgonege go boloka ditifikeiti go tswa mo sedirisweng sa pabalesego sa serwethata se tshwana le karata ya eleketoroniki."
+msgid ""
+"It is not possible to back up certificates from a hardware security device "
+"such as a smart card."
+msgstr ""
+"Ga go kgonege go boloka ditifikeiti go tswa mo sedirisweng sa pabalesego sa "
+"serwethata se tshwana le karata ya eleketoroniki."
 
 #: PKCS12DupData
 msgid "The certificate and private key already exist on the security device."
-msgstr "Setifikeiti le senotlolo sa poraefete di setse di le gona mo sedirisweng sa pabalesego."
+msgstr ""
+"Setifikeiti le senotlolo sa poraefete di setse di le gona mo sedirisweng sa "
+"pabalesego."
 
 #: AddModulePrompt
 msgid "Are you sure you want to install this security module?"
@@ -606,16 +1179,33 @@ msgid "External security module successfully deleted"
 msgstr "Mmojule wa pabalesego wa ka fa ntle o phimotswe ka katlego"
 
 #: ForcedBackup1
-msgid "You should make a password-protected backup copy of your new security certificate and its associated private key."
-msgstr "O tshwanetse go dira khopi ya poloko e e sireleditsweng ka khunololamoraba ya setifikeiti sa gago se sentšhwa le dintotlolo tsa poraefete tse di amanang le sona."
+msgid ""
+"You should make a password-protected backup copy of your new security "
+"certificate and its associated private key."
+msgstr ""
+"O tshwanetse go dira khopi ya poloko e e sireleditsweng ka khunololamoraba "
+"ya setifikeiti sa gago se sentšhwa le dintotlolo tsa poraefete tse di "
+"amanang le sona."
 
 #: ForcedBackup2
-msgid "If you ever lose access to your private key by forgetting your personal security password, or by experiencing file corruption, you can restore this private key and certificate from this backup copy."
-msgstr "Fa o ka bo wa latlhegelwa ke tetlelesego ya senotlolo sa gago sa poraefete ka ntlha ya go lebala khunololamoraba ya gago ya pabalesego ya sebele, gongwe ka go itemogela go senyega ga faele, o ka busetsa senotlolo seno sa poraefete le setifikeiti go tswa mo khoping eno ya poloko."
+msgid ""
+"If you ever lose access to your private key by forgetting your personal "
+"security password, or by experiencing file corruption, you can restore this "
+"private key and certificate from this backup copy."
+msgstr ""
+"Fa o ka bo wa latlhegelwa ke tetlelesego ya senotlolo sa gago sa poraefete "
+"ka ntlha ya go lebala khunololamoraba ya gago ya pabalesego ya sebele, "
+"gongwe ka go itemogela go senyega ga faele, o ka busetsa senotlolo seno sa "
+"poraefete le setifikeiti go tswa mo khoping eno ya poloko."
 
 #: ForcedBackup3
-msgid "To make a copy, click OK. If possible, you should save your backup copy on a floppy disk that you keep in a safe location."
-msgstr "Go dira khopi, tobetsa OK. Fa go kgonagala, o tshwanetse go boloka khopi ya gago ya poloko mo disiking ya folopi e o e bayang mo lefelong le le bolokegileng."
+msgid ""
+"To make a copy, click OK. If possible, you should save your backup copy on a "
+"floppy disk that you keep in a safe location."
+msgstr ""
+"Go dira khopi, tobetsa OK. Fa go kgonagala, o tshwanetse go boloka khopi ya "
+"gago ya poloko mo disiking ya folopi e o e bayang mo lefelong le le "
+"bolokegileng."
 
 #: UnknownCertIssuer
 msgid "(Unknown Issuer)"
@@ -629,159 +1219,107 @@ msgstr "(Setlamo se se sa Itsiweng)"
 msgid "%S = %S"
 msgstr "%S = %S"
 
-#: SSLDisabled
-msgid "You cannot connect to %S because SSL is disabled."
-msgstr "O ka seke wa kgona go golagana le %S gonne SSL e koafaditswe."
+#: PSMERR_SSL_Disabled
+msgid "Can't connect securely because the SSL protocol has been disabled."
+msgstr ""
 
-#: SSL2Disabled
-msgid "You cannot connect to %S because SSL version 2 is disabled."
-msgstr "O ka seke wa kgona go golagana le %S gonne mofuta wa 2 wa SSL o koafaditswe."
+#: PSMERR_SSL2_Disabled
+msgid ""
+"Can't connect securely because the site uses an older, insecure version of "
+"the SSL protocol."
+msgstr ""
 
-#: SSLNoMatchingCiphers
-msgid "%S and %S cannot communicate securely because they have no common encryption algorithms."
-msgstr "%S le %S ga di kgone go tlhaeletsana ka pabalesego gonne ga di na dialgorithm tse di tshwanang."
-
-#: UsersCertRevoked
-msgid "Could not establish an encrypted connection with %S because your certificate has been revoked."
-msgstr "Ga e a kgona go dira kgolagano e e sireleditsweng le %S gonne setifikeiti sa gago se phimotswe."
-
-#: UsersCertExpired
-msgid "Could not establish an encrypted connection with %S because your certificate is expired."
-msgstr "Ga e a kgona go dira kgolagano e e sireleditsweng le %S gonne setifikeiti sa gago se feletswe ke nako."
-
-#: UsersCertRejected
-msgid "Could not establish an encrypted connection because your certificate was rejected by %S. Error Code: %S."
-msgstr "Ga e a kgona go dira kgolagano e e sireleditsweng le %S gonne setifikeiti sa gago se gannwe ke %S. Khoutu ya phoso ya: %S."
-
-#: BadMac
-msgid "%S received a message with incorrect Message Authentication Code. If the error occurs frequently, contact the website administrator."
-msgstr "%S e amogetse molaetsa o o nang le Khoutu ya go Rurifatsa Molaetsa e e sa siamang. Fa phoso e diragala gangwe le gape, golagana le motsamaisi wa setsha sa inthanete."
-
-#: PeerResetConnection
-msgid "%S has closed the connection. Error Code: %S"
-msgstr "%S e tswetse kgolagano. Khoutu ya phoso ya: %S"
-
-#: HostResetConnection
-msgid "The current transfer has been cancelled."
-msgstr "Phetiso ya ga jaana e khansetswe."
-
-#: BadPassword
-msgid "An incorrect password was provided."
-msgstr "Go tlametswe ka khunololamoraba e e sa siamang."
-
-#: BadDatabase
-msgid "There is a problem with your certificate database [Error Code: %S]."
-msgstr "Go na le bothata ka banka ya gago ya tshedimosetso ya setifikeiti [Khoutu ya Phoso: %S]."
-
-#: BadServer
-msgid "%S has sent an incorrect or unexpected message. Error Code: %S"
-msgstr "%S e rometse molaetsa o o sa siamang gongwe o o sa solofelwang. Khoutu ya Phoso: %S"
-
-#: BadClient
-msgid "%S has received an incorrect or unexpected message. Error Code: %S"
-msgstr "%S e amogetse molaetsa o o sa siamang gongwe o o sa solofelwang. Khoutu ya Phoso: %S"
-
-#: HostReusedIssuerSerial
-msgid "You have received an invalid certificate.  Please contact the server administrator or email correspondent and give them the following information:\n"
+#: PSMERR_HostReusedIssuerSerial
+msgid ""
+"You have received an invalid certificate.  Please contact the server "
+"administrator or email correspondent and give them the following "
+"information:\n"
 "\n"
-"Your certificate contains the same serial number as another certificate issued by the certificate authority.  Please get a new certificate containing a unique serial number."
-msgstr "O amogetse setifikeiti se e seng sa boammaruri.  Tsweetswee golagana le motsamaisi wa dikgatlhong gongwe mokwaledi wa poso ya eleketoroniki mme o ba neye tshedimosetso e e latelang:\n\nSetifikeiti sa gago se na le palopopo e e tshwanang le ya setifikeiti se sengwe se se rebotgsweng ke bothati jwa setifikeiti.  Tsweetswee bona setifikeiti se sentšhwa se se nang le palopopo e e kgethegileng."
+"Your certificate contains the same serial number as another certificate "
+"issued by the certificate authority.  Please get a new certificate "
+"containing a unique serial number."
+msgstr ""
+"O amogetse setifikeiti se e seng sa boammaruri.  Tsweetswee golagana le "
+"motsamaisi wa dikgatlhong gongwe mokwaledi wa poso ya eleketoroniki mme o ba "
+"neye tshedimosetso e e latelang:\n"
+"\n"
+"Setifikeiti sa gago se na le palopopo e e tshwanang le ya setifikeiti se "
+"sengwe se se rebotgsweng ke bothati jwa setifikeiti.  Tsweetswee bona "
+"setifikeiti se sentšhwa se se nang le palopopo e e kgethegileng."
 
-#: SSLGenericError
-msgid "Error establishing an encrypted connection to %S. Error Code: %S."
-msgstr "Phoso go dira kgolagano e e sireleditsweng mo %S. Khoutu ya Phoso: %S."
+#: SSLConnectionErrorPrefix
+msgid "An error occurred during a connection to %S."
+msgstr ""
 
-#: TimeOut
-msgid "Connection request timed out."
-msgstr "Kopo ya kgolagano e feletswe ke nako."
+#: certErrorIntro
+msgid "%S uses an invalid security certificate."
+msgstr ""
 
-#: PeersCertUntrusted
-msgid "Could not establish an encrypted connection because certificate presented by %S is not trusted."
-msgstr "Ga e a kgona go dira kgolagano e e sireleditsweng gonne setifikeiti se se tlhagisitsweng ke %S ga se ikanngwe."
+#: certErrorTrust_SelfSigned
+msgid "The certificate is not trusted because it is self-signed."
+msgstr ""
 
-#: PeersCertRevoked
-msgid "Could not establish an encrypted connection because certificate presented by %S has been revoked."
-msgstr "Ga e a kgona go dira kgolagano e e sireleditsweng gonne setifikeiti se se tlhagisitsweng ke %S se phimotswe."
+#: certErrorTrust_UnknownIssuer
+msgid ""
+"The certificate is not trusted because the issuer certificate is unknown."
+msgstr ""
 
-#: PeersCertExpired
-msgid "Could not establish an encrypted connection because certificate presented by %S has expired."
-msgstr "Ga e a kgona go dira kgolagano e e sireleditsweng gonne setifikeiti se se tlhagisitsweng ke %S se feletswe ke nako."
+#: certErrorTrust_MissingChain
+msgid "The certificate is not trusted because no issuer chain was provided."
+msgstr ""
 
-#: PeersCertWrongDomain
-msgid "Could not establish an encrypted connection because certificate presented by %S is for a different domain."
-msgstr "Ga e a kgona go dira kgolagano e e sireleditsweng gonne setifikeiti se se tlhagisitsweng ke %S ke sa motlaagana o mongwe."
+#: certErrorTrust_CaInvalid
+msgid ""
+"The certificate is not trusted because it was issued by an invalid CA "
+"certificate."
+msgstr ""
 
-#: PeersCertBadSignature
-msgid "Could not establish an encrypted connection because certificate presented by %S has an invalid signature."
-msgstr "Ga e a kgona go dira kgolagano e e sireleditsweng gonne setifikeiti se se tlhagisitsweng ke %S se na le mosaeno o e seng wa boammaaruri."
+#: certErrorTrust_Issuer
+msgid ""
+"The certificate is not trusted because the issuer certificate is not trusted."
+msgstr ""
 
-#: PeersCertNoGood
-msgid "Could not establish an encrypted connection because certificate presented by %S is invalid or corrupted. Error Code: %S"
-msgstr "Ga e a kgona go dira kgolagano e e sireleditsweng gonne setifikeiti se se tlhagisitsweng ke %S ga se sa boammaaruri gongwe se senyegile. Khoutu ya Phoso: %S"
+#: certErrorTrust_ExpiredIssuer
+msgid ""
+"The certificate is not trusted because the issuer certificate has expired."
+msgstr ""
 
-#: CRLExpired
-msgid "Certificate Revocation List (CRL) from the CA certifying %S is past its Next Update date. Please update the CRL."
-msgstr "Lenaane la Phimolo ya Setifikeiti (CRL) go tswa mo CA e e tlhomamisang %S e fetetswe ke letlha le le Latelang la Ntšhwafatso. Tsweetswee ntšhwafatsa CRL."
+#: certErrorTrust_Untrusted
+msgid "The certificate does not come from a trusted source."
+msgstr ""
 
-#: CRLNotYetValid
-msgid "Certificate Revocation List (CRL) from the CA certifying %S is not yet valid. Please check your system clock."
-msgstr "Lenaane la Phimolo ya Setifikeiti (CRL) go tswa mo CA e e tlhomamisang %S ga le ise le nne la boammaaruri. Tsweetswee tlhola tshupanako ya tsamaiso ya gago."
+#: certErrorMismatch
+msgid "The certificate is not valid for the name %S."
+msgstr ""
 
-#: CRLSigNotValid
-msgid "Certificate Revocation List (CRL) from the CA certifying %S has an invalid digital signature."
-msgstr "Lenaane la Phimolo ya Setifikeiti (CRL) go tswa mo CA e e tlhomamisang %S le na le mosaeno o e seng wa boammaaruri wa dijitale."
+#. # LOCALIZATION NOTE (certErrorMismatchSingle2): Do not translate <a id="cert_domain_link" title="%1$S">%1$S</a>
+#: certErrorMismatchSingle2
+msgid ""
+"The certificate is only valid for <a id=\"cert_domain_link\" title=\"%1$S\">"
+"%1$S</a>"
+msgstr ""
 
-#: CRLSNotValid
-msgid "Certificate Revocation List (CRL) from the CA certifying %S is not valid."
-msgstr "Lenaane la Phimolo ya Setifikeiti (CRL) go tswa mo CA e e tlhomamisang %S ga se la boammaaruri."
+#: certErrorMismatchMultiple
+msgid "The certificate is only valid for the following names:"
+msgstr ""
 
-#: OCSPMalformedRequest
-msgid "Error trying to validate certificate from %S using OCSP - malformed request."
-msgstr "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa OCSP - kopo e e sa tlhamiwang sentle."
+#: certErrorMismatchNoNames
+msgid "The certificate is not valid for any server names."
+msgstr ""
 
-#: OCSPRequestNeedsSig
-msgid "Error trying to validate certificate from %S using OCSP - request needs signature."
-msgstr "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa OCSP - kopo e tlhoka mosaeno."
+#. # LOCALIZATION NOTE (certErrorExpiredNow): Do not translate %1$S (date+time of expired certificate) or %2$S (current date+time)
+#: certErrorExpiredNow
+msgid "The certificate expired on %1$S. The current time is %2$S."
+msgstr ""
 
-#: OCSPUnauthorizedReq
-msgid "Error trying to validate certificate from %S using OCSP - unauthorized request."
-msgstr "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa OCSP - Kopo e e sa laolelwang."
+#. # LOCALIZATION NOTE (certErrorNotYetValidNow): Do not translate %1$S (date+time certificate will become valid) or %2$S (current date+time)
+#: certErrorNotYetValidNow
+msgid "The certificate will not be valid until %1$S. The current time is %2$S."
+msgstr ""
 
-#: OCSPServerError
-msgid "Error trying to validate certificate from %S using OCSP - server error."
-msgstr "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa OCSP - phoso ya dikgatlho."
-
-#: OCSPTryServerLater
-msgid "Error trying to validate certificate from %S using OCSP - server is busy. Please try again later."
-msgstr "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa OCSP - dikgatlho di a dira. Tsweetswee leka gape kgantele."
-
-#: OCSPFutureResponse
-msgid "Error trying to validate certificate from %S using OCSP - response contains a date which is in the future."
-msgstr "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa OCSP - tsibogo e na le letlha la isago."
-
-#: OCSPOldResponse
-msgid "Error trying to validate certificate from %S using OCSP - old response."
-msgstr "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa OCSP - tsibogo ya bogologolo."
-
-#: OCSPCorruptedResponse
-msgid "Error trying to validate certificate from %S using OCSP - corrupted or unknown response. Error Code: %S."
-msgstr "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa OCSP - tsibogo e e senyegileng gongwe e e sa itsiweng. Khoutu ya Phoso: %S."
-
-#: OCSPUnauthorizedResponse
-msgid "Error trying to validate certificate from %S using OCSP - unauthorized response."
-msgstr "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa OCSP - tsibogo e e sa laolelwang."
-
-#: OCSPUnknownCert
-msgid "Error trying to validate certificate from %S using OCSP - unknown certificate."
-msgstr "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa OCSP - setifikeiti se se sa itsiweng."
-
-#: OCSPNoDefaultResponder
-msgid "Error trying to validate certificate from %S using OCSP - no default responder specified."
-msgstr "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa OCSP - ga gona setsibogi se se rulaganyeditsweng ruri."
-
-#: OCSPDirLookup
-msgid "Error trying to validate certificate from %S using OCSP - directory lookup error."
-msgstr "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa OCSP - phoso ya go batla lenanefaele."
+#: certErrorCodePrefix
+msgid "(Error code: %S)"
+msgstr ""
 
 #: CertInfoIssuedFor
 msgid "Issued to:"
@@ -807,6 +1345,12 @@ msgstr "go ya go"
 msgid "Purposes"
 msgstr "Mabaka"
 
+#: CertInfoEmail
+#, fuzzy
+msgctxt "CertInfoEmail"
+msgid "Email"
+msgstr "Poso ya Eleketoroniki"
+
 #: CertInfoStoredIn
 msgid "Stored in:"
 msgstr "Bolokilwe mo:"
@@ -815,13 +1359,11 @@ msgstr "Bolokilwe mo:"
 msgid "Imported Certificate"
 msgstr "Setifikeiti se se Tlisitsweng teng"
 
-#: CrlImportSuccess
-msgid "The browser successfully imported the certificate revocation list (CRL)."
-msgstr "Sebatli se atlegile go tlisa teng Lenane la Phimolo ya Setifikeiti (CRL)."
-
-#: CrlImportFailure1
-msgid "The browser cannot import the Certificate Revocation List (CRL)."
-msgstr "Sebatli ga se kgone go tlisa teng Lenane la Phimolo ya Setifikeiti (CRL)."
+#: CrlImportFailure1x
+#, fuzzy
+msgid "The application cannot import the Certificate Revocation List (CRL)."
+msgstr ""
+"Sebatli ga se kgone go tlisa teng Lenane la Phimolo ya Setifikeiti (CRL)."
 
 #: CrlImportFailureExpired
 msgid "A more recent version of this CRL is available."
@@ -841,31 +1383,59 @@ msgstr "CRL e ntšhwa e kgologolo go na le ya ga jaana."
 
 #: CrlImportFailureNotYetValid
 msgid "The CRL is not yet valid. You might want to check your system clock."
-msgstr "CRL ga e ise e nne ya boammaaruri. O ka batla go tlhola tshupanako ya tsamaiso ya gago ya khomphiutara."
+msgstr ""
+"CRL ga e ise e nne ya boammaaruri. O ka batla go tlhola tshupanako ya "
+"tsamaiso ya gago ya khomphiutara."
 
 #: CrlImportFailureNetworkProblem
 msgid "Download of the CRL failed due to Network problems."
 msgstr "Kopololo ya CRL e reteletswe ka ntlha ya mathata a Letloatiro."
 
 #: CrlImportFailureReasonUnknown
-msgid "Error Importing CRL to local Database. Error Code:"
-msgstr "Phoso fa go tlisiwateng CRL mo Bankeng ya Tshedimosetso ya selegae. Khoutu ya Phoso:"
+#, fuzzy
+msgid "Error Importing CRL to local Database. Error Code: "
+msgstr ""
+"Phoso fa go tlisiwateng CRL mo Bankeng ya Tshedimosetso ya selegae. Khoutu "
+"ya Phoso:"
 
 #: CrlImportFailure2
 msgid "Please ask your system administrator for assistance."
-msgstr "Tsweetswee kopa motsamaisi wa tsamaiso ya gago ya khomphiutara go go thusa."
+msgstr ""
+"Tsweetswee kopa motsamaisi wa tsamaiso ya gago ya khomphiutara go go thusa."
 
-#: NSSInitProblem
-msgid "Could not initialize the browser's security component. The most likely cause is problems with files in your browser's profile directory. Please check that this directory has no read/write restrictions and your hard disk is not full or close to full. It is recommended that you exit the browser and fix the problem. If you continue to use this browser session, you might see incorrect browser behaviour when accessing security features."
-msgstr "Ga e a kgona go baakanyetsa tiriso ya karolo ya pabalesego ya sebatli. Se se ka neng se bakile seno e ka nna bothata ka difaele tse di mo lenanefaeleng la porofaele ya sebatli sa gago. Tsweetswee tlhola gore lenanefaele ga le na ditekanyetso tsa go buisa/go kwala mme disiki ya gago e e ageletsweng ga e a tlala gongwe e tloga e tlala. Go atlenegisiwa gore o tswe mo sebatling mme o baakanye bothata. Fa o tswelela go dirisa paka eno ya sebatli, o ka bona maitsholo a a sa siamang a sebatli fa o tsena mo diponagalong tsa pabalesego."
+#: NSSInitProblemX
+#, fuzzy
+msgid ""
+"Could not initialize the application's security component. The most likely "
+"cause is problems with files in your application's profile directory. Please "
+"check that this directory has no read/write restrictions and your hard disk "
+"is not full or close to full. It is recommended that you exit the "
+"application and fix the problem. If you continue to use this session, you "
+"might see incorrect application behaviour when accessing security features."
+msgstr ""
+"Ga e a kgona go baakanyetsa tiriso ya karolo ya pabalesego ya sebatli. Se se "
+"ka neng se bakile seno e ka nna bothata ka difaele tse di mo lenanefaeleng "
+"la porofaele ya sebatli sa gago. Tsweetswee tlhola gore lenanefaele ga le na "
+"ditekanyetso tsa go buisa/go kwala mme disiki ya gago e e ageletsweng ga e a "
+"tlala gongwe e tloga e tlala. Go atlenegisiwa gore o tswe mo sebatling mme o "
+"baakanye bothata. Fa o tswelela go dirisa paka eno ya sebatli, o ka bona "
+"maitsholo a a sa siamang a sebatli fa o tsena mo diponagalong tsa pabalesego."
 
 #: ProfileSwitchSocketsStillActive
-msgid "The operation can not be completed because of an internal failure. A secure network communication has not been cleaned up correctly."
-msgstr "Tiro ga e kgone go fediwa gonne go na le thetelelo ya ka fa gare. Tlhaeletsano e e babalesegileng ya letloatiro ga e a phepafadiwa sentle."
+msgid ""
+"The operation can not be completed because of an internal failure. A secure "
+"network communication has not been cleaned up correctly."
+msgstr ""
+"Tiro ga e kgone go fediwa gonne go na le thetelelo ya ka fa gare. "
+"Tlhaeletsano e e babalesegileng ya letloatiro ga e a phepafadiwa sentle."
 
 #: ProfileSwitchCryptoUIActive
-msgid "This operation is impossible at the current time. Please complete the operation that requests your attention in one of the other open windows."
-msgstr "Tiro ga e kgonagale ka nako ya ga jaana. Tsweetswee feleletsa tiro e e kopang gore o e ele tlhoko mo nngweng ya difensetere tse di butsweng."
+msgid ""
+"This operation is impossible at the current time. Please complete the "
+"operation that requests your attention in one of the other open windows."
+msgstr ""
+"Tiro ga e kgonagale ka nako ya ga jaana. Tsweetswee feleletsa tiro e e "
+"kopang gore o e ele tlhoko mo nngweng ya difensetere tse di butsweng."
 
 #: VerifyExpired
 msgid "<Expired>"
@@ -895,6 +1465,28 @@ msgstr "<CA e e seng ya Boammaaruri>"
 msgid "<Unknown>"
 msgstr "<Ga e Itsiwe>"
 
+#: CertUser
+msgid "Your Cert"
+msgstr ""
+
+#: CertCA
+#, fuzzy
+msgid "CA (Certificate Authority)"
+msgstr "Bothati jwa Setifikeiti sa SSL"
+
+#: CertSSL
+msgid "SSL Server"
+msgstr ""
+
+#: CertEmail
+msgid "Peer S/MIME"
+msgstr ""
+
+#: CertUnknown
+#, fuzzy
+msgid "Unknown"
+msgstr "<Ga e Itsiwe>"
+
 #: CertNoNickname
 msgid "(no nickname)"
 msgstr "(ga gona leina la metshameko)"
@@ -903,3 +1495,330 @@ msgstr "(ga gona leina la metshameko)"
 msgid "(no email address)"
 msgstr "(ga gona aterese ya poso ya eleketoroniki)"
 
+#: NicknameExpired
+msgid "(expired)"
+msgstr ""
+
+#: NicknameNotYetValid
+msgid "(not yet valid)"
+msgstr ""
+
+#: CaCertExists
+msgid "This certificate is already installed as a certificate authority."
+msgstr ""
+
+#: NotACACert
+msgid ""
+"This is not a certificate authority certificate, so it can't be imported "
+"into the certificate authority list."
+msgstr ""
+
+#: NotImportingUnverifiedCert
+msgid ""
+"This certificate can't be verified and will not be imported. The certificate "
+"issuer might be unknown or untrusted, the certificate might have expired or "
+"been revoked, or the certificate might not have been approved."
+msgstr ""
+
+#: UserCertIgnoredNoPrivateKey
+msgid ""
+"This personal certificate can't be installed because you do not own the "
+"corresponding private key which was created when the certificate was "
+"requested."
+msgstr ""
+
+#: UserCertImported
+msgid ""
+"Your personal certificate has been installed. You should keep a backup copy "
+"of this certificate."
+msgstr ""
+
+#: CertOrgUnknown
+#, fuzzy
+msgid "(Unknown)"
+msgstr "<Ga e Itsiwe>"
+
+#: CertNotStored
+msgid "(Not Stored)"
+msgstr ""
+
+#: CertExceptionPermanent
+msgid "Permanent"
+msgstr ""
+
+#: CertExceptionTemporary
+msgid "Temporary"
+msgstr ""
+
+#~ msgid "Signed by %S"
+#~ msgstr "E saenilwe ke %S"
+
+#~ msgid "PSM Internal FIPS-140-1 Cryptographic Services"
+#~ msgstr "Ditirelo tsa Thanololo tsa PSM tsa ka fa gare tsa FIPS-140-1"
+
+#~ msgid "PSM FIPS-140-1 User Private Key Services"
+#~ msgstr "Ditirelo tsa Ditaetsi tsa Poraefete tsa Modirisi tsa PSM FIPS-140-1"
+
+#~ msgid ""
+#~ "_: InternalToken\n"
+#~ "Software Security Device"
+#~ msgstr "Sediriswa sa Pabalesego sa Serweboleta"
+
+#~ msgid "2048 (High Grade)"
+#~ msgstr "2048 (Kereiti e e kwa Godimo)"
+
+#~ msgid "1024 (Medium Grade)"
+#~ msgstr "1024 (Kereiti e e Magareng)"
+
+#~ msgid "%1$s's %2$s ID #%3$d"
+#~ msgstr "%1$s's %2$s BOITSHUPO #%3$d"
+
+#~ msgid ""
+#~ "_: VerifyProtectObjSign_p\n"
+#~ "Protected Object Signer"
+#~ msgstr "Sesaeni se se Sireleditsweng sa Selo"
+
+#~ msgid ""
+#~ "_: VerifyObjSign_p\n"
+#~ "Object Signer"
+#~ msgstr "Sesaeni sa Selo"
+
+#~ msgid ""
+#~ "_: VerifyCAVerifier_p\n"
+#~ "CA Verifier"
+#~ msgstr "Setlhotlhomisi sa CA"
+
+#~ msgid "You cannot connect to %S because SSL is disabled."
+#~ msgstr "O ka seke wa kgona go golagana le %S gonne SSL e koafaditswe."
+
+#~ msgid "You cannot connect to %S because SSL version 2 is disabled."
+#~ msgstr ""
+#~ "O ka seke wa kgona go golagana le %S gonne mofuta wa 2 wa SSL o "
+#~ "koafaditswe."
+
+#~ msgid ""
+#~ "%S and %S cannot communicate securely because they have no common "
+#~ "encryption algorithms."
+#~ msgstr ""
+#~ "%S le %S ga di kgone go tlhaeletsana ka pabalesego gonne ga di na "
+#~ "dialgorithm tse di tshwanang."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection with %S because your "
+#~ "certificate has been revoked."
+#~ msgstr ""
+#~ "Ga e a kgona go dira kgolagano e e sireleditsweng le %S gonne setifikeiti "
+#~ "sa gago se phimotswe."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection with %S because your "
+#~ "certificate is expired."
+#~ msgstr ""
+#~ "Ga e a kgona go dira kgolagano e e sireleditsweng le %S gonne setifikeiti "
+#~ "sa gago se feletswe ke nako."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because your certificate was "
+#~ "rejected by %S. Error Code: %S."
+#~ msgstr ""
+#~ "Ga e a kgona go dira kgolagano e e sireleditsweng le %S gonne setifikeiti "
+#~ "sa gago se gannwe ke %S. Khoutu ya phoso ya: %S."
+
+#~ msgid ""
+#~ "%S received a message with incorrect Message Authentication Code. If the "
+#~ "error occurs frequently, contact the website administrator."
+#~ msgstr ""
+#~ "%S e amogetse molaetsa o o nang le Khoutu ya go Rurifatsa Molaetsa e e sa "
+#~ "siamang. Fa phoso e diragala gangwe le gape, golagana le motsamaisi wa "
+#~ "setsha sa inthanete."
+
+#~ msgid "%S has closed the connection. Error Code: %S"
+#~ msgstr "%S e tswetse kgolagano. Khoutu ya phoso ya: %S"
+
+#~ msgid "The current transfer has been cancelled."
+#~ msgstr "Phetiso ya ga jaana e khansetswe."
+
+#~ msgid "An incorrect password was provided."
+#~ msgstr "Go tlametswe ka khunololamoraba e e sa siamang."
+
+#~ msgid "There is a problem with your certificate database [Error Code: %S]."
+#~ msgstr ""
+#~ "Go na le bothata ka banka ya gago ya tshedimosetso ya setifikeiti [Khoutu "
+#~ "ya Phoso: %S]."
+
+#~ msgid "%S has sent an incorrect or unexpected message. Error Code: %S"
+#~ msgstr ""
+#~ "%S e rometse molaetsa o o sa siamang gongwe o o sa solofelwang. Khoutu ya "
+#~ "Phoso: %S"
+
+#~ msgid "%S has received an incorrect or unexpected message. Error Code: %S"
+#~ msgstr ""
+#~ "%S e amogetse molaetsa o o sa siamang gongwe o o sa solofelwang. Khoutu "
+#~ "ya Phoso: %S"
+
+#~ msgid "Error establishing an encrypted connection to %S. Error Code: %S."
+#~ msgstr ""
+#~ "Phoso go dira kgolagano e e sireleditsweng mo %S. Khoutu ya Phoso: %S."
+
+#~ msgid "Connection request timed out."
+#~ msgstr "Kopo ya kgolagano e feletswe ke nako."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S is not trusted."
+#~ msgstr ""
+#~ "Ga e a kgona go dira kgolagano e e sireleditsweng gonne setifikeiti se se "
+#~ "tlhagisitsweng ke %S ga se ikanngwe."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S has been revoked."
+#~ msgstr ""
+#~ "Ga e a kgona go dira kgolagano e e sireleditsweng gonne setifikeiti se se "
+#~ "tlhagisitsweng ke %S se phimotswe."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S has expired."
+#~ msgstr ""
+#~ "Ga e a kgona go dira kgolagano e e sireleditsweng gonne setifikeiti se se "
+#~ "tlhagisitsweng ke %S se feletswe ke nako."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S is for a different domain."
+#~ msgstr ""
+#~ "Ga e a kgona go dira kgolagano e e sireleditsweng gonne setifikeiti se se "
+#~ "tlhagisitsweng ke %S ke sa motlaagana o mongwe."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S has an invalid signature."
+#~ msgstr ""
+#~ "Ga e a kgona go dira kgolagano e e sireleditsweng gonne setifikeiti se se "
+#~ "tlhagisitsweng ke %S se na le mosaeno o e seng wa boammaaruri."
+
+#~ msgid ""
+#~ "Could not establish an encrypted connection because certificate presented "
+#~ "by %S is invalid or corrupted. Error Code: %S"
+#~ msgstr ""
+#~ "Ga e a kgona go dira kgolagano e e sireleditsweng gonne setifikeiti se se "
+#~ "tlhagisitsweng ke %S ga se sa boammaaruri gongwe se senyegile. Khoutu ya "
+#~ "Phoso: %S"
+
+#~ msgid ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S is past its "
+#~ "Next Update date. Please update the CRL."
+#~ msgstr ""
+#~ "Lenaane la Phimolo ya Setifikeiti (CRL) go tswa mo CA e e tlhomamisang %S "
+#~ "e fetetswe ke letlha le le Latelang la Ntšhwafatso. Tsweetswee "
+#~ "ntšhwafatsa CRL."
+
+#~ msgid ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S is not yet "
+#~ "valid. Please check your system clock."
+#~ msgstr ""
+#~ "Lenaane la Phimolo ya Setifikeiti (CRL) go tswa mo CA e e tlhomamisang %S "
+#~ "ga le ise le nne la boammaaruri. Tsweetswee tlhola tshupanako ya tsamaiso "
+#~ "ya gago."
+
+#~ msgid ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S has an "
+#~ "invalid digital signature."
+#~ msgstr ""
+#~ "Lenaane la Phimolo ya Setifikeiti (CRL) go tswa mo CA e e tlhomamisang %S "
+#~ "le na le mosaeno o e seng wa boammaaruri wa dijitale."
+
+#~ msgid ""
+#~ "Certificate Revocation List (CRL) from the CA certifying %S is not valid."
+#~ msgstr ""
+#~ "Lenaane la Phimolo ya Setifikeiti (CRL) go tswa mo CA e e tlhomamisang %S "
+#~ "ga se la boammaaruri."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - malformed "
+#~ "request."
+#~ msgstr ""
+#~ "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa "
+#~ "OCSP - kopo e e sa tlhamiwang sentle."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - request needs "
+#~ "signature."
+#~ msgstr ""
+#~ "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa "
+#~ "OCSP - kopo e tlhoka mosaeno."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - unauthorized "
+#~ "request."
+#~ msgstr ""
+#~ "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa "
+#~ "OCSP - Kopo e e sa laolelwang."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - server error."
+#~ msgstr ""
+#~ "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa "
+#~ "OCSP - phoso ya dikgatlho."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - server is busy. "
+#~ "Please try again later."
+#~ msgstr ""
+#~ "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa "
+#~ "OCSP - dikgatlho di a dira. Tsweetswee leka gape kgantele."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - response "
+#~ "contains a date which is in the future."
+#~ msgstr ""
+#~ "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa "
+#~ "OCSP - tsibogo e na le letlha la isago."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - old response."
+#~ msgstr ""
+#~ "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa "
+#~ "OCSP - tsibogo ya bogologolo."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - corrupted or "
+#~ "unknown response. Error Code: %S."
+#~ msgstr ""
+#~ "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa "
+#~ "OCSP - tsibogo e e senyegileng gongwe e e sa itsiweng. Khoutu ya Phoso: "
+#~ "%S."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - unauthorized "
+#~ "response."
+#~ msgstr ""
+#~ "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa "
+#~ "OCSP - tsibogo e e sa laolelwang."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - unknown "
+#~ "certificate."
+#~ msgstr ""
+#~ "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa "
+#~ "OCSP - setifikeiti se se sa itsiweng."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - no default "
+#~ "responder specified."
+#~ msgstr ""
+#~ "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa "
+#~ "OCSP - ga gona setsibogi se se rulaganyeditsweng ruri."
+
+#~ msgid ""
+#~ "Error trying to validate certificate from %S using OCSP - directory "
+#~ "lookup error."
+#~ msgstr ""
+#~ "Phoso fa go lekwa go tlhomamisa setifikeiti go tswa mo %S go dirisiwa "
+#~ "OCSP - phoso ya go batla lenanefaele."
+
+#~ msgid ""
+#~ "The browser successfully imported the certificate revocation list (CRL)."
+#~ msgstr ""
+#~ "Sebatli se atlegile go tlisa teng Lenane la Phimolo ya Setifikeiti (CRL)."
