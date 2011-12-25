@@ -1,6 +1,8 @@
 #!/bin/bash
 
 project=firefox
+# Use instance: pootle or testpootle (2.1 and 2.2 instances)
+instance=pootle
 langs=$*
 user=pootlesync
 local_copy=.pootle_tmp
@@ -23,11 +25,11 @@ done
 
 option_project="--project=$project"
 
-sync_command="python /var/www/sites/pootle/Pootle/manage.py sync_stores $option_project $option_langs"
-pootle_dir=/var/www/sites/pootle/podirectory/$project
+sync_command="python /var/www/sites/$instance/Pootle/manage.py sync_stores $option_project $option_langs"
+pootle_dir=/var/www/sites/$instance/podirectory/$project
 
 # Sync project
-ssh $user@pootle.locamotion.org $sync_command
+ssh $user@pootle.locamotion.org $sync_command || exit
 
 # Copy files across and disassemble phases
 mkdir -p $local_copy/$project
