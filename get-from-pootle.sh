@@ -23,6 +23,13 @@ do
 	option_langs="$option_langs --language=$lang"
 done
 
+for lang in $langs
+do
+	if [ -d $lang/.svn -o ! -d $lang ]; then
+		svn up $lang
+	fi
+done
+
 option_project="--project=$project"
 
 sync_command="python /var/www/sites/$instance/Pootle/manage.py sync_stores $option_project $option_langs"
