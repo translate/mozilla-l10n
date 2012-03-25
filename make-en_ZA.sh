@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Make sure we're up-to-date
+svn up en_ZA
+
 # First deal with the untranslated strings
 pofilter --progress=none -t untranslated en_ZA en_ZA-untrans
 sed -i "/^# (pofilter)/d" $(find en_ZA-untrans -name "*.po")
