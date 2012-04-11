@@ -53,6 +53,6 @@ done
 for lang in $langs
 do
 	# FIXME only sync if we copied up correctly, this way we catch permission errors quickly
-	rsync -az --no-g --no-times --include="*.po" --delete $local_copy/$lang $user@pootle.locamotion.org:$pootle_dir/
+	rsync -az --no-g --no-p --chmod=Dg+s,ug+rw,o-rw,Fug+rw,o-rw --include="*.po" --delete $local_copy/$lang $user@pootle.locamotion.org:$pootle_dir/
 	ssh $user@pootle.locamotion.org "$update_command --language=$lang"
 done
