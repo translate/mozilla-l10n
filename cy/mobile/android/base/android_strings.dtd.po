@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-05 13:17-0700\n"
+"POT-Creation-Date: 2012-06-05 02:30-0700\n"
 "PO-Revision-Date: 2012-05-20 18:52+0200\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,9 +12,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.1.6\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: &\n"
 
+#. This Source Code Form is subject to the terms of the Mozilla Public
+#. - License, v. 2.0. If a copy of the MPL was not distributed with this
+#. - file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #: splash_settingup
 msgid "Setting up your &brandShortName;"
 msgstr "Gosod &brandShortName;"
@@ -78,6 +81,8 @@ msgid "Include page address"
 msgstr "Cynnwys tudalen cyfeiriad"
 
 #: crash_close_label
+#, fuzzy
+msgctxt "crash_close_label"
 msgid "Close"
 msgstr "Cau"
 
@@ -162,9 +167,20 @@ msgstr "Ail-lwytho"
 msgid "Forward"
 msgstr "Ymlaen"
 
+#: close_tab
+#, fuzzy
+msgid "Close Tab"
+msgstr "&Cau Tab"
+
 #: new_tab
 msgid "New Tab"
 msgstr "Tab Newydd"
+
+#. Localization note (num_tabs) : Number of tabs is always more than one.
+#. We can't use android plural forms, sadly. See bug #753859.
+#: num_tabs
+msgid "&#037;d tabs"
+msgstr ""
 
 #: new_tab_opened
 msgid "New tab opened"
@@ -318,11 +334,48 @@ msgstr "Rhannu drwy"
 msgid "Save as PDF"
 msgstr "Cadw fel PDF"
 
+#: find_in_page
+#, fuzzy
+msgctxt "find_in_page"
+msgid "Find in Page"
+msgstr "Canfod yn y Dudalen"
+
+#. Localization note (find_text, find_prev, find_next, find_close) : These strings are used
+#. as alternate text for accessibility. They are not visible in the UI.
+#: find_text
+#, fuzzy
+msgctxt "find_text"
+msgid "Find in Page"
+msgstr "Canfod yn y Dudalen"
+
+#: find_prev
+#, fuzzy
+msgid "Previous"
+msgstr "&Blaenorol"
+
+#: find_next
+msgid "Next"
+msgstr "Nesaf"
+
+#: find_close
+#, fuzzy
+msgctxt "find_close"
+msgid "Close"
+msgstr "Cau"
+
 #: contextmenu_open_new_tab
 msgid "Open in New Tab"
 msgstr "Agor mewn Tab Newydd"
 
+#: contextmenu_remove_history
+#, fuzzy
+msgctxt "contextmenu_remove_history"
+msgid "Remove"
+msgstr "Tynnu"
+
 #: contextmenu_remove_bookmark
+#, fuzzy
+msgctxt "contextmenu_remove_bookmark"
 msgid "Remove"
 msgstr "Tynnu"
 
@@ -338,6 +391,12 @@ msgstr "Rhannu"
 #: contextmenu_edit_bookmark
 msgid "Edit"
 msgstr "Golygu"
+
+#. Localization note (history_removed) : Shown in a toast notificaion
+#. after a page is removed from browser history.
+#: history_removed
+msgid "Page removed"
+msgstr ""
 
 #: bookmark_edit_title
 msgid "Edit Bookmark"
@@ -371,6 +430,23 @@ msgstr "Clirio"
 #: site_settings_no_settings
 msgid "There are no settings to clear."
 msgstr "Does dim gosodiadau i’w clirio."
+
+#: add_to_reading_list
+msgid "Add to Reading List"
+msgstr ""
+
+#: reading_list_added
+msgid "Page added to your Reading List"
+msgstr ""
+
+#: reading_list_removed
+msgid "Page removed from your Reading List"
+msgstr ""
+
+#: reader_mode
+#, fuzzy
+msgid "Reader Mode"
+msgstr "Modd Llunio:"
 
 #: masterpassword_create_title
 msgid "Create Master Password"
@@ -454,6 +530,24 @@ msgstr "Dewis neu dynnu llun"
 #: filepicker_video_title
 msgid "Choose or record a video"
 msgstr "Dewis neu recordio fideo"
+
+#. Site identity popup
+#: identity_connected_to
+msgid "You are connected to"
+msgstr "Rydych wedi cysylltu â"
+
+#. Localization note (identity_run_by) : This string appears between a
+#. domain name (above) and an organization name (below). E.g.
+#. example.com
+#. which is run by
+#. Example Enterprises, Inc.
+#. The layout of the identity dialog prevents combining this into a single string with
+#. substitution variables.  If it is difficult to translate the sense of the string
+#. with that structure, consider a translation which ignores the preceding domain and
+#. just addresses the organization to follow, e.g. "This site is run by "
+#: identity_run_by
+msgid "which is run by"
+msgstr "sy'n cael ei redeg gan"
 
 #~ msgid "Setting up &brandShortName;\\u2026"
 #~ msgstr "Gosofd &brandShortName;\\u2026"

@@ -1,48 +1,13 @@
 # Michael Bauer <fios@akerbeltz.org>, 2011, 2012.
-#. # ***** BEGIN LICENSE BLOCK *****
-#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
-#. #
-#. # The contents of this file are subject to the Mozilla Public License Version
-#. # 1.1 (the "License"); you may not use this file except in compliance with
-#. # the License. You may obtain a copy of the License at
-#. # http://www.mozilla.org/MPL/
-#. #
-#. # Software distributed under the License is distributed on an "AS IS" basis,
-#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
-#. # for the specific language governing rights and limitations under the
-#. # License.
-#. #
-#. # The Original Code is mozilla.org code.
-#. #
-#. # The Initial Developer of the Original Code is
-#. # Netscape Communications Corporation.
-#. # Portions created by the Initial Developer are Copyright (C) 2001
-#. # the Initial Developer. All Rights Reserved.
-#. #
-#. # Contributor(s):
-#. #   Mitch <mstoltz@netscape.com> (original author)
-#. #   Ehsan Akhgari <ehsan.akhgari@gmail.com>
-#. #   Ms2ger <ms2ger@gmail.com>
-#. #
-#. # Alternatively, the contents of this file may be used under the terms of
-#. # either of the GNU General Public License Version 2 or later (the "GPL"),
-#. # or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
-#. # in which case the provisions of the GPL or the LGPL are applicable instead
-#. # of those above. If you wish to allow use of your version of this file only
-#. # under the terms of either the GPL or the LGPL, and not to allow others to
-#. # use your version of this file under the terms of the MPL, indicate your
-#. # decision by deleting the provisions above and replace them with the notice
-#. # and other provisions required by the GPL or the LGPL. If you do not delete
-#. # the provisions above, a recipient may use your version of this file under
-#. # the terms of any one of the MPL, the GPL or the LGPL.
-#. #
-#. # ***** END LICENSE BLOCK *****
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #. extracted from en-US/dom/chrome/dom/dom.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-05-10 12:47-0700\n"
+"POT-Creation-Date: 2012-06-05 02:30-0700\n"
 "PO-Revision-Date: 2012-06-01 15:48+0200\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -52,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.1.6\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Project-Style: mozilla\n"
 
@@ -143,15 +108,6 @@ msgid ""
 msgstr ""
 "Chaidh am feart neo-bhun-tomhasach \"document.all\" a chleachdadh. Cleachd "
 "an tionndadh bun-tomhasach W3C \"document.getElementById()\" 'na àite."
-
-#: GlobalScopeElementReference
-msgid ""
-"Element referenced by ID/NAME in the global scope. Use W3C standard document."
-"getElementById() instead."
-msgstr ""
-"Chaidh iomradh a dhèanamh air eileamaid le ID/NAME san sgòp uile-"
-"choitcheann. Cleachd document.getElementById() a tha a-rèir bun-tomhas W3C "
-"'na àite."
 
 #: UseOfCaptureEventsWarning
 msgid ""
@@ -549,6 +505,12 @@ msgstr ""
 "Chan eil taic ann ri tachartasan MozBeforePaint tuilleadh.  Feumar "
 "mozRequestAnimationFrame a shìneadh a-null gu argamaid callback non-null."
 
+#: FullScreenDeniedBlocked
+msgid ""
+"Request for full-screen was denied because this domain has been blocked from "
+"full-screen by user."
+msgstr ""
+
 #: FullScreenDeniedDisabled
 msgid ""
 "Request for full-screen was denied because full-screen API is disabled by "
@@ -728,13 +690,21 @@ msgid "Invalid URI. Load of media resource %S failed."
 msgstr "URI mì-dhligheach. Dh'fhàillig luchdadh a' ghoireis mheadhain %S."
 
 #. # LOCALIZATION NOTE: %1$S is the media resource's format/codec type (basically equivalent to the file type, e.g. MP4,AVI,WMV,MOV etc), %2$S is the URL of the media resource which failed to load.
-#: MediaLoadUnsupportedType
+#: MediaLoadUnsupportedTypeAttribute
+#, fuzzy
 msgid ""
-"Specified \"type\" of \"%1$S\" is not supported. Load of media resource %2$S "
-"failed."
+"Specified \"type\" attribute of \"%1$S\" is not supported. Load of media "
+"resource %2$S failed."
 msgstr ""
 "Chan eil taic ann dhan \"type\" de \"%1$S\" a chaidh a shònrachadh. "
 "Dh'fhàillig luchdadh a' ghoireis mheadhain %2$S."
+
+#. # LOCALIZATION NOTE: %1$S is the "media" attribute value of the <source> element. It is a media query. %2$S is the URL of the media resource which failed to load.
+#: MediaLoadSourceMediaNotMatched
+msgid ""
+"Specified \"media\" attribute of \"%1$S\" does not match the environment. "
+"Load of media resource %2$S failed."
+msgstr ""
 
 #. # LOCALIZATION NOTE: %1$S is the MIME type HTTP header being sent by the web server, %2$S is the URL of the media resource which failed to load.
 #: MediaLoadUnsupportedMimeType
@@ -764,15 +734,39 @@ msgstr ""
 "Chan eil cleachdadh na buaidh còd DOMException 'ga mholadh tuilleadh. "
 "Cleachd ainm 'na àite."
 
-#. # LOCALIZATION NOTE: Do not translate "java" or "Packages".
-#: JavaPackagesWarning
+#. # LOCALIZATION NOTE: Do not translate "__exposedProps__"
+#: NoExposedPropsWarning
 msgid ""
-"Use of the 'java' and 'Packages' DOM objects to access Java functionality is "
-"deprecated. Support will be removed soon."
+"Exposing chrome JS objects to content without __exposedProps__ is insecure "
+"and deprecated. See https://developer.mozilla.org/en/XPConnect_wrappers for "
+"more information."
 msgstr ""
-"Chan eil cleachdadh nan oibseactan DOM 'java' agus 'Packages' 'ga mholadh "
-"tuilleadh gus inntrigeadh a dhèanamh gu Java. Cha bhi taic ann dhaibh "
-"tuilleadh a dh'aithghearr."
+
+#. # LOCALIZATION NOTE: Do not translate "Mutation Event" and "MutationObserver"
+#: MutationEventWarning
+msgid "Use of Mutation Events is deprecated. Use MutationObserver instead."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "Blob", "mozSlice", or "slice"
+#: MozSliceWarning
+msgid "Use of mozSlice on the Blob object is deprecated.  Use slice instead."
+msgstr ""
+
+#~ msgid ""
+#~ "Element referenced by ID/NAME in the global scope. Use W3C standard "
+#~ "document.getElementById() instead."
+#~ msgstr ""
+#~ "Chaidh iomradh a dhèanamh air eileamaid le ID/NAME san sgòp uile-"
+#~ "choitcheann. Cleachd document.getElementById() a tha a-rèir bun-tomhas "
+#~ "W3C 'na àite."
+
+#~ msgid ""
+#~ "Use of the 'java' and 'Packages' DOM objects to access Java functionality "
+#~ "is deprecated. Support will be removed soon."
+#~ msgstr ""
+#~ "Chan eil cleachdadh nan oibseactan DOM 'java' agus 'Packages' 'ga mholadh "
+#~ "tuilleadh gus inntrigeadh a dhèanamh gu Java. Cha bhi taic ann dhaibh "
+#~ "tuilleadh a dh'aithghearr."
 
 #~ msgid "Use of globalStorage is deprecated. Please use localStorage instead."
 #~ msgstr ""
