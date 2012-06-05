@@ -23,6 +23,7 @@ done
 podebug --progress=none --rewrite=en en_ZA-fuzzy en_ZA-fuzzy-en
 pofilter --progress=none -t musttranslatewords --musttranslatefile=words-must-en_ZA en_ZA-fuzzy-en en_ZA-fuzzy-en-must
 vim $(find en_ZA-fuzzy-en-must -name "*.po")
+sed -i "/^# (pofilter)/d" $(find en_ZA-fuzzy-em-must -name "*.po")
 pomerge --progress=none -t en_ZA-fuzzy-en en_ZA-fuzzy-en-must en_ZA-fuzzy-en
 pomerge --progress=none -t en_ZA en_ZA-fuzzy-en en_ZA
 
