@@ -2,11 +2,14 @@
 
 project=firefox
 # Use instance: pootle or testpootle (2.1 and 2.2 instances)
-instance=pootle
+instance=mozilla
 langs=$*
 user=pootlesync
+server=pootle.locamotion.org
 local_copy=.pootle_phases_tmp
 phaselist=firefox.phaselist
+manage_py_verbosity=2
+precommand=". ~andy/.virtualenvs/pootle/bin/activate;"
 
 if [ $# -lt 1 ]; then
 	echo "$(basename $0) [lang(s)]"
@@ -26,12 +29,12 @@ done
 
 option_project="--project=$project"
 
-sync_command="python /var/www/sites/$instance/Pootle/manage.py sync_stores $option_project $option_langs"
-update_command="python /var/www/sites/$instance/Pootle/manage.py update_stores $option_project"
+sync_command="$precommand python /var/www/sites/$instance/Pootle/manage.py sync_stores --verbosity=${manage_py_verbosity} $option_project $option_langs"
+update_command="$precommand python /var/www/sites/$instance/Pootle/manage.py update_stores $option_project"
 pootle_dir=/var/www/sites/$instance/podirectory/$project
 
 # Sync project
-ssh $user@pootle.locamotion.org $sync_command
+ssh $user@$server $sync_command
 
 read -p "Do you wish to proceed? Do not if new translations have sync'd for your language." -N1 answer
 if [ "$answer" != "y" ]; then
@@ -53,6 +56,6 @@ done
 for lang in $langs
 do
 	# FIXME only sync if we copied up correctly, this way we catch permission errors quickly
-	rsync -az --no-g --chmod=Dg+s,ug+rw,o-rw,Fug+rw,o-rw --include="*.po" --delete $local_copy/$lang $user@pootle.locamotion.org:$pootle_dir/
-	ssh $user@pootle.locamotion.org "$update_command --language=$lang"
+	rsync -az --no-g --chmod=Dg+s,ug+rw,o-rw,Fug+rw,o-rw --include="*.po" --delete $local_copy/$lang $user@$server:$pootle_dir/
+	ssh $user@$server "$update_command --language=$lang"
 done

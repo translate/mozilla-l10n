@@ -2,10 +2,13 @@
 
 project=firefox
 # Use instance: pootle or testpootle (2.1 and 2.2 instances)
-instance=pootle
+instance=mozilla
 langs=$*
 user=pootlesync
+server=pootle.locamotion.org
 local_copy=.pootle_tmp
+manage_py_verbosity=2
+precommand=". ~andy/.virtualenvs/pootle/bin/activate;"
 
 if [ $# -lt 1 ]; then
 	echo "$(basename $0) [lang(s)]"
@@ -32,15 +35,15 @@ done
 
 option_project="--project=$project"
 
-sync_command="python /var/www/sites/$instance/Pootle/manage.py sync_stores $option_project $option_langs"
+sync_command="$precommand python /var/www/sites/$instance/Pootle/manage.py sync_stores --verbosity=$manage_py_verbosity $option_project $option_langs"
 pootle_dir=/var/www/sites/$instance/podirectory/$project
 
 # Sync project
-ssh $user@pootle.locamotion.org $sync_command || exit
+ssh $user@$server $sync_command || exit
 
 # Copy files across and disassemble phases
 mkdir -p $local_copy/$project
-rsync -az --delete --exclude=".translation_index" $user@pootle.locamotion.org:$pootle_dir/$bashlangs $local_copy/$project/ || exit
+rsync -az --delete --exclude=".translation_index" $user@$server:$pootle_dir/$bashlangs $local_copy/$project/ || exit
 
 svndir=$(pwd)
 cd $local_copy/$project
