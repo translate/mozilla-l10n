@@ -8,7 +8,7 @@ user=pootlesync
 server=pootle.locamotion.org
 local_copy=.pootle_tmp
 manage_py_verbosity=2
-precommand=". ~andy/.virtualenvs/pootle/bin/activate;"
+precommand=". /var/www/sites/mozilla/env/bin/activate;"
 
 if [ $# -lt 1 ]; then
 	echo "$(basename $0) [lang(s)]"
