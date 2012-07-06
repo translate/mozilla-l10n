@@ -20,7 +20,7 @@ function process()
 	sed -i "/^# (pofilter)/d" $(find en_ZA-$testtype-en-must -name "*.po")
 	pomerge --progress=none -t en_ZA-$testtype-en en_ZA-$testtype-en-must en_ZA-$testtype-en
 	pomerge --progress=none -t en_ZA en_ZA-$testtype-en en_ZA
-	#rm -rf en_ZA-$testtype*
+	rm -rf en_ZA-$testtype*
 }
 
 process untranslated
