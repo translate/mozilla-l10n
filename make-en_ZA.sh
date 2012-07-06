@@ -13,7 +13,8 @@ function process()
 		msgattrib --clear-fuzzy $po > $po.2
 		mv $po.2 $po
 	done
-	podebug --progress=none --rewrite=en en_ZA-$testtype en_ZA-$testtype-en
+	podebug --progress=none --rewrite=blank en_ZA-$testtype en_ZA-$testtype-blank
+	podebug --progress=none --rewrite=en en_ZA-$testtype-blank en_ZA-$testtype-en
 	pofilter --progress=none -t musttranslatewords --musttranslatefile=words-must-en_ZA en_ZA-$testtype-en en_ZA-$testtype-en-must
 	vim $(find en_ZA-$testtype-en-must -name "*.po")
 	sed -i "/^# (pofilter)/d" $(find en_ZA-$testtype-en-must -name "*.po")
@@ -24,3 +25,4 @@ function process()
 
 process untranslated
 process isfuzzy
+./cleanup-msgcat.sh
