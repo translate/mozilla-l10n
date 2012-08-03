@@ -7,6 +7,7 @@ langs=$*
 user=pootlesync
 server=pootle.locamotion.org
 local_copy=.pootle_tmp
+manage_command="/var/www/sites/$instance/pootle/pootle/manage.py"
 manage_py_verbosity=2
 precommand=". /var/www/sites/mozilla/env/bin/activate;"
 
@@ -35,7 +36,7 @@ done
 
 option_project="--project=$project"
 
-sync_command="$precommand python /var/www/sites/$instance/Pootle/manage.py sync_stores --verbosity=$manage_py_verbosity $option_project $option_langs"
+sync_command="$precommand python $manage_command sync_stores --verbosity=$manage_py_verbosity $option_project $option_langs"
 pootle_dir=/var/www/sites/$instance/podirectory/$project
 
 # Sync project
@@ -43,7 +44,7 @@ ssh $user@$server $sync_command || exit
 
 # Copy files across and disassemble phases
 mkdir -p $local_copy/$project
-rsync -az --delete --exclude=".translation_index" $user@$server:$pootle_dir/$bashlangs $local_copy/$project/ || exit
+rsync -az --delete --exclude=".translation_index" --exclude=pootle-terminology.po $user@$server:$pootle_dir/$bashlangs $local_copy/$project/ || exit
 
 svndir=$(pwd)
 cd $local_copy/$project
