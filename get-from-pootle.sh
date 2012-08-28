@@ -54,14 +54,18 @@ do
 	cd $lang
 	for phase in $(ls)
 	do
-	        cd $phase
-	        echo "Phase: $phase"
-	        for po in $(find . -name "*.po")
-	        do
-	                mkdir -p $svndir/$lang/$(dirname $po)
-	                mv $po $svndir/$lang/$po
-	        done
-	        cd ..
+		if [ -d $phase ]; then
+	        	cd $phase
+	        	echo "Phase: $phase"
+	        	for po in $(find . -name "*.po")
+	        	do
+	        	        mkdir -p $svndir/$lang/$(dirname $po)
+	        	        mv $po $svndir/$lang/$po
+	        	done
+	        	cd ..
+		else
+			mv $phase $svndir/$lang
+		fi
 	done
 	cd ..
 done
