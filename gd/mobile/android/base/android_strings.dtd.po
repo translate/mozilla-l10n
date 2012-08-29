@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-06 06:56-0700\n"
+"POT-Creation-Date: 2012-08-28 11:34-0700\n"
 "PO-Revision-Date: 2012-08-07 23:43+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.2.0-alpha1a\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
 "X-Project-Style: mozilla\n"
 "X-POOTLE-MTIME: 1344383038.0\n"
@@ -162,6 +162,14 @@ msgstr "7 làithean air ais"
 #: history_older_section
 msgid "Older than 7 days"
 msgstr "Nas sine na 7 làithean"
+
+#: go
+msgid "Go"
+msgstr "Rach ann"
+
+#: search
+msgid "Search"
+msgstr "Lorg"
 
 #: reload
 msgid "Reload"
@@ -311,6 +319,29 @@ msgstr "Mòr"
 msgid "Extra Large"
 msgstr "Anabarrach mòr"
 
+#: pref_font_size_set
+msgid "Set"
+msgstr ""
+
+#. Localization note (pref_font_size_adjust_char): A button with a small version of this character
+#. (or combination of characters) is used to decrease the preview font size; a larger version of the
+#. same character/combination is used to increase the preview font size. It should be a concise
+#. representation of the language it is used in that will help show the text in the preview will change
+#. size.
+#: pref_font_size_adjust_char
+msgid "A"
+msgstr ""
+
+#. Localization note (pref_font_size_preview_text): This paragraph is used as an example to
+#. demonstrate the font size setting.  It is meant to be whimsical and fun.
+#: pref_font_size_preview_text
+msgid ""
+"The quick orange fox jumps over your expectations with more speed, more "
+"flexibility and more security. As a non-profit, we\\'re free to innovate on "
+"your behalf without any pressure to compromise. That means a better "
+"experience for you and a brighter future for the Web."
+msgstr ""
+
 #: pref_use_master_password
 msgid "Use master password"
 msgstr "Cleachd facal-faire maighstir"
@@ -335,9 +366,9 @@ msgstr "Eachdraidh a' bhrabhsaidh ⁊ nan rudan a chaidh a luchdadh a-nuas"
 msgid "Form &amp; search history"
 msgstr "Eachdraidh nam foirm ⁊ nan lorg"
 
-#: pref_private_data_cookies
-msgid "Cookies"
-msgstr "Briosgaidean"
+#: pref_private_data_cookies2
+msgid "Cookies &amp; active logins"
+msgstr ""
 
 #: pref_private_data_passwords
 msgid "Saved passwords"
@@ -346,10 +377,6 @@ msgstr "Faclan-faire air an sàbhaladh"
 #: pref_private_data_cache
 msgid "Cache"
 msgstr "An tasgadan"
-
-#: pref_private_data_sessions
-msgid "Active logins"
-msgstr "Logadh a-steach beò sam bith"
 
 #: pref_private_data_offlineApps
 msgid "Offline website data"
@@ -486,9 +513,9 @@ msgstr "Àite"
 msgid "Keyword"
 msgstr "Facal-luirg"
 
-#: site_settings_title
-msgid "Clear Site Settings"
-msgstr "Glan roghainnean na làraich"
+#: site_settings_title2
+msgid "Site Settings…"
+msgstr ""
 
 #: site_settings_cancel
 msgctxt "site_settings_cancel"
@@ -576,23 +603,37 @@ msgstr "Sàr-làraichean"
 msgid "Browse all your top sites"
 msgstr "Brabhsaich gach sàr-làrach agad"
 
-#: abouthome_no_top_sites
-msgid "You do not have any top sites yet. Tap the Title Bar to start browsing."
-msgstr ""
-"Chan eil sàr-làrach agad fhathast. Gnog air a' bhàr-tiotail gus tòiseachadh "
-"air brabhsadh."
-
-#: abouthome_about_sync
+#. Localization note (abouthome_about_sync3, abouthome_about_apps2): The
+#. chevron (ex: "»"; unicode= U+00BB) is used as an arrow to show that
+#. clicking this text in the promotions box will perform some action. Note
+#. that a non-breaking space (unicode= U+00A0) should be used between this
+#. character and the remainder of the string to prevent word wrap.
+#: abouthome_about_sync3
+#, fuzzy
 msgid ""
 "Set up Firefox Sync to access bookmarks, history and tabs from your other "
-"devices"
+"devices&#x00A0;»"
 msgstr ""
 "Suidhich sioncronachadh Firefox gus cothrom fhaighinn air na comharran-lìn, "
 "an eachdraidh 's na tabaichean agad o innealan eile agad"
 
+#: abouthome_about_apps2
+msgid ""
+"Get apps from the Mozilla Marketplace and discover the best the Web has to "
+"offer&#x00A0;»"
+msgstr ""
+
+#. Localization note (abouthome_sync_bold_name, abouthome_apps_bold_name):
+#. These strings are accentuated as bold text in the "abouthome_about_..."
+#. strings above. These strings should be a subset of the strings above and
+#. generally be the name of the product the string describes.
 #: abouthome_sync_bold_name
 msgid "Firefox Sync"
 msgstr "Co-shioncronachadh Firefox"
+
+#: abouthome_apps_bold_name
+msgid "Mozilla Marketplace"
+msgstr ""
 
 #: filepicker_title
 msgctxt "filepicker_title"
@@ -672,6 +713,21 @@ msgstr "Fuirich ort…"
 #: webapp_generic_name
 msgid "App"
 msgstr "Aplacaid"
+
+#~ msgid "Cookies"
+#~ msgstr "Briosgaidean"
+
+#~ msgid "Active logins"
+#~ msgstr "Logadh a-steach beò sam bith"
+
+#~ msgid "Clear Site Settings"
+#~ msgstr "Glan roghainnean na làraich"
+
+#~ msgid ""
+#~ "You do not have any top sites yet. Tap the Title Bar to start browsing."
+#~ msgstr ""
+#~ "Chan eil sàr-làrach agad fhathast. Gnog air a' bhàr-tiotail gus "
+#~ "tòiseachadh air brabhsadh."
 
 #~ msgid "Add to Reading List"
 #~ msgstr "Cuir ris an liosta leughaidh"
