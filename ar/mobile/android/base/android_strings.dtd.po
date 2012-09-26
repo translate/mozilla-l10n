@@ -1,10 +1,10 @@
 # Khaled Hosny <khaledhosny@eglug.org>, 2012.
-#. extracted from l10n/en-US/mobile/android/base/android_strings.dtd
+#. extracted from en-US/mobile/android/base/android_strings.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-28 12:25+0200\n"
+"POT-Creation-Date: 2012-09-26 13:30+0200\n"
 "PO-Revision-Date: 2012-07-28 12:30+0200\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Virtaal 0.7.0\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
 "X-Project-Style: mozilla\n"
 
@@ -156,6 +156,14 @@ msgstr "منذ 7 أيام"
 #: history_older_section
 msgid "Older than 7 days"
 msgstr "أقدم من 7 أيام"
+
+#: go
+msgid "Go"
+msgstr "اذهب"
+
+#: search
+msgid "Search"
+msgstr "بحث"
 
 #: reload
 msgid "Reload"
@@ -305,6 +313,30 @@ msgstr "كبير"
 msgid "Extra Large"
 msgstr "كبير جدا"
 
+#: pref_font_size_set
+#, fuzzy
+msgid "Set"
+msgstr "مُرسَل"
+
+#. Localization note (pref_font_size_adjust_char): A button with a small version of this character
+#. (or combination of characters) is used to decrease the preview font size; a larger version of the
+#. same character/combination is used to increase the preview font size. It should be a concise
+#. representation of the language it is used in that will help show the text in the preview will change
+#. size.
+#: pref_font_size_adjust_char
+msgid "A"
+msgstr ""
+
+#. Localization note (pref_font_size_preview_text): This paragraph is used as an example to
+#. demonstrate the font size setting.  It is meant to be whimsical and fun.
+#: pref_font_size_preview_text
+msgid ""
+"The quick orange fox jumps over your expectations with more speed, more "
+"flexibility and more security. As a non-profit, we\\'re free to innovate on "
+"your behalf without any pressure to compromise. That means a better "
+"experience for you and a brighter future for the Web."
+msgstr ""
+
 #: pref_use_master_password
 msgid "Use master password"
 msgstr "استخدم كلمة سر رئيسة"
@@ -329,9 +361,9 @@ msgstr "تأريخ التصفح والتنزيلات"
 msgid "Form &amp; search history"
 msgstr "تأريخ البحث والنماذج"
 
-#: pref_private_data_cookies
-msgid "Cookies"
-msgstr "الكعكات"
+#: pref_private_data_cookies2
+msgid "Cookies &amp; active logins"
+msgstr ""
 
 #: pref_private_data_passwords
 msgid "Saved passwords"
@@ -340,10 +372,6 @@ msgstr "كلمات السر المحفوظة"
 #: pref_private_data_cache
 msgid "Cache"
 msgstr "الخبيئة"
-
-#: pref_private_data_sessions
-msgid "Active logins"
-msgstr "الولوجات النشِطة"
 
 #: pref_private_data_offlineApps
 msgid "Offline website data"
@@ -480,9 +508,9 @@ msgstr "المكان"
 msgid "Keyword"
 msgstr "كلمة مفتاحية"
 
-#: site_settings_title
-msgid "Clear Site Settings"
-msgstr "امسح إعدادات الموقع"
+#: site_settings_title2
+msgid "Site Settings…"
+msgstr ""
 
 #: site_settings_cancel
 msgctxt "site_settings_cancel"
@@ -570,20 +598,36 @@ msgstr "المواقع الأكثر زيارة"
 msgid "Browse all your top sites"
 msgstr "تصفّح كل مواقعك الأكثر زيارة"
 
-#: abouthome_no_top_sites
-msgid "You do not have any top sites yet. Tap the Title Bar to start browsing."
-msgstr "لم تزر الكثير من المواقع بعد. انقر على شريط العنوان للبدء في التصفح."
-
-#: abouthome_about_sync
+#. Localization note (abouthome_about_sync3, abouthome_about_apps2): The
+#. chevron (ex: "»"; unicode= U+00BB) is used as an arrow to show that
+#. clicking this text in the promotions box will perform some action. Note
+#. that a non-breaking space (unicode= U+00A0) should be used between this
+#. character and the remainder of the string to prevent word wrap.
+#: abouthome_about_sync3
+#, fuzzy
 msgid ""
 "Set up Firefox Sync to access bookmarks, history and tabs from your other "
-"devices"
+"devices&#x00A0;»"
 msgstr ""
 "اضبط تزامُن فيَرفُكس للوصول إلى العلامات والتأريخ والألسنة من أجهزتك الأخرى."
 
+#: abouthome_about_apps2
+msgid ""
+"Get apps from the Mozilla Marketplace and discover the best the Web has to "
+"offer&#x00A0;»"
+msgstr ""
+
+#. Localization note (abouthome_sync_bold_name, abouthome_apps_bold_name):
+#. These strings are accentuated as bold text in the "abouthome_about_..."
+#. strings above. These strings should be a subset of the strings above and
+#. generally be the name of the product the string describes.
 #: abouthome_sync_bold_name
 msgid "Firefox Sync"
 msgstr "تزامُن فَيَرفُكس"
+
+#: abouthome_apps_bold_name
+msgid "Mozilla Marketplace"
+msgstr ""
 
 #: filepicker_title
 msgctxt "filepicker_title"
@@ -663,6 +707,75 @@ msgstr "انتظر من فضلك..."
 #: webapp_generic_name
 msgid "App"
 msgstr "تطبيق"
+
+#. Updater notifications
+#: updater_start_title
+#, fuzzy
+msgctxt "updater_start_title"
+msgid "&brandShortName;"
+msgstr "&brandShortName;"
+
+#: updater_start_ticker
+msgctxt "updater_start_ticker"
+msgid "&brandShortName; update available&#8230;"
+msgstr ""
+
+#: updater_start_select
+msgid "Select to download update."
+msgstr ""
+
+#: updater_downloading_title
+msgid "Downloading &brandShortName;"
+msgstr "تنزيل &brandShortName;"
+
+#: updater_downloading_ticker
+msgid "Downloading &brandShortName; update&#8230;"
+msgstr ""
+
+#: updater_downloading_ticker_failed
+msgid "Failed to download &brandShortName; update&#8230;"
+msgstr ""
+
+#: updater_downloading_select
+msgid "Select to apply update when complete."
+msgstr ""
+
+#: updater_downloading_retry
+msgid "Select to retry update download."
+msgstr ""
+
+#: updater_downloading_willapply
+msgid "Waiting for download to complete."
+msgstr ""
+
+#: updater_apply_title
+#, fuzzy
+msgctxt "updater_apply_title"
+msgid "&brandShortName;"
+msgstr "&brandShortName;"
+
+#: updater_apply_ticker
+msgctxt "updater_apply_ticker"
+msgid "&brandShortName; update available&#8230;"
+msgstr ""
+
+#: updater_apply_select
+msgid "Select to apply downloaded update."
+msgstr ""
+
+#~ msgid "Cookies"
+#~ msgstr "الكعكات"
+
+#~ msgid "Active logins"
+#~ msgstr "الولوجات النشِطة"
+
+#~ msgid "Clear Site Settings"
+#~ msgstr "امسح إعدادات الموقع"
+
+#~ msgid ""
+#~ "You do not have any top sites yet. Tap the Title Bar to start browsing."
+#~ msgstr ""
+#~ "لم تزر الكثير من المواقع بعد. انقر على شريط العنوان للبدء في التصفح."
 
 #~ msgid "Clear history"
 #~ msgstr "امسح التأريخ"
