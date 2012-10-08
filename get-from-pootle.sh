@@ -27,10 +27,10 @@ do
 	option_langs="$option_langs --language=$lang"
 done
 
-git stash
+git stash --quiet
 git pull --rebase
 git checkout
-git stash pop
+git stash pop --quiet
 
 option_project="--project=$project"
 
