@@ -27,12 +27,10 @@ do
 	option_langs="$option_langs --language=$lang"
 done
 
-for lang in $langs
-do
-	if [ -d $lang/.svn -o ! -d $lang ]; then
-		svn up $lang
-	fi
-done
+git stash
+git pull --rebase
+git checkout
+git stash pop
 
 option_project="--project=$project"
 
