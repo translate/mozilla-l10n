@@ -57,6 +57,6 @@ done
 for lang in $langs
 do
 	# FIXME only sync if we copied up correctly, this way we catch permission errors quickly
-	rsync -az --no-g --chmod=Dg+s,ug+rw,o-rw,Fug+rw,o-rw --include="*.po" --exclude=pootle-terminology.po --delete $local_copy/$lang $user@$server:$pootle_dir/
+	rsync -az --no-g --chmod=Dg+s,ug+rw,o-rw,Fug+rw,o-rw --include="*.po" --exclude=pootle-terminology.po --exclude=.translation_index --delete $local_copy/$lang $user@$server:$pootle_dir/
 	ssh $user@$server "$update_command --language=$lang"
 done
