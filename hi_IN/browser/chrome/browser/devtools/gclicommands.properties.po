@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-28 11:34-0700\n"
+"POT-Creation-Date: 2012-10-10 17:43+0200\n"
 "PO-Revision-Date: 2012-08-01 08:47+0000\n"
 "Last-Translator: RAJESH <rajeshkajha@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,6 +101,44 @@ msgid ""
 "screenshot."
 msgstr "फ़ाइल का नाम ('.png' एक्सटेंशन रहना चाहिए) जिसमें हमने स्क्रीनशॉट लिखा."
 
+#. # LOCALIZATION NOTE (screenshotClipboardDesc) A very short string to describe
+#. # the 'clipboard' parameter to the 'screenshot' command, which is displayed in
+#. # a dialog when the user is using this command.
+#: screenshotClipboardDesc
+msgid "Copy screenshot to clipboard? (true/false)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotClipboardManual) A fuller description of the
+#. # 'clipboard' parameter to the 'screenshot' command, displayed when the user
+#. # asks for help on what it does.
+#: screenshotClipboardManual
+msgid "True if you want to copy the screenshot instead of saving it to a file."
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotChromeDesc) A very short string to describe
+#. # the 'chrome' parameter to the 'screenshot' command, which is displayed in
+#. # a dialog when the user is using this command.
+#: screenshotChromeDesc
+msgid "Capture Firefox chrome window? (true/false)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotChromeManual) A fuller description of the
+#. # 'chrome' parameter to the 'screenshot' command, displayed when the user
+#. # asks for help on what it does.
+#: screenshotChromeManual
+msgid ""
+"True if you want to take the screenshot of the Firefox window rather than "
+"the web page's content window."
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotGroupOptions) A label for the optional options of
+#. # the screenshot command.
+#: screenshotGroupOptions
+#, fuzzy
+msgctxt "screenshotGroupOptions"
+msgid "Options"
+msgstr "विकल्प"
+
 #. # LOCALIZATION NOTE (screenshotDelayDesc) A very short string to describe
 #. # the 'delay' parameter to the 'screenshot' command, which is displayed in
 #. # a dialog when the user is using this command.
@@ -132,6 +170,46 @@ msgid ""
 msgstr ""
 "सही यदि स्क्रीनशॉट उस वेबपेज का हिस्सा भी शामिल करना चाहिए जो मौजूदा स्क्रॉल किए "
 "बाउंड के बाहर रहता है."
+
+#. # LOCALIZATION NOTE (screenshotSelectorChromeConflict) Exception thwon when user
+#. # tries to use 'selector' option along with 'chrome' option of the screenshot
+#. # command. Refer: https://bugzilla.mozilla.org/show_bug.cgi?id=659268#c7
+#: screenshotSelectorChromeConflict
+msgid "selector option is not supported when chrome option is true"
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotGeneratedFilename) The auto generated filename
+#. # when no file name is provided. the first argument (%1$S) is the date string
+#. # in yyyy-mm-dd format and the second argument (%2$S) is the time string
+#. # in HH.MM.SS format. Please don't add the extension here.
+#: screenshotGeneratedFilename
+msgid "Screen Shot %1$S at %2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotErrorSavingToFile) Text displayed to user upon
+#. # encountering error while saving the screenshot to the file specified.
+#: screenshotErrorSavingToFile
+#, fuzzy
+msgid "Error saving to"
+msgstr "%S सहेजने में त्रुटि"
+
+#. # LOCALIZATION NOTE (screenshotSavedToFile) Text displayed to user when the
+#. # screenshot is successfully saved to the file specified.
+#: screenshotSavedToFile
+msgid "Saved to"
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotErrorCopying) Text displayed to user upon
+#. # encountering error while copying the screenshot to clipboard.
+#: screenshotErrorCopying
+msgid "Error occurred while copying to clipboard."
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotCopied) Text displayed to user when the
+#. # screenshot is successfully copied to the clipboard.
+#: screenshotCopied
+msgid "Copied to clipboard."
+msgstr ""
 
 #. # LOCALIZATION NOTE (restartFirefoxDesc) A very short description of the
 #. # 'restart' command. This string is designed to be shown in a menu alongside the
@@ -518,6 +596,18 @@ msgstr ""
 "मुख्य लड़ी को बाधित करने या पुनर्बहाल करने के लिए कमांड, अंदर आएँ, बाहर जाएँ और कोड "
 "ओवरलाइन करें"
 
+#. # LOCALIZATION NOTE (dbgOpen) A very short string used to describe the function
+#. # of the dbg open command.
+#: dbgOpen
+msgid "Open the debugger"
+msgstr ""
+
+#. # LOCALIZATION NOTE (dbgClose) A very short string used to describe the function
+#. # of the dbg close command.
+#: dbgClose
+msgid "Close the debugger"
+msgstr ""
+
 #. # LOCALIZATION NOTE (dbgInterrupt) A very short string used to describe the
 #. # function of the dbg interrupt command.
 #: dbgInterrupt
@@ -558,7 +648,7 @@ msgstr ""
 "तो डिबगर पूरे फ़ंक्शन को निस्पादित करता है और फ़ंक्शन कॉल के बाद अगले कथन पर रुकता है"
 
 #. # LOCALIZATION NOTE (dbgStepInDesc) A very short string used to describe the
-#. # function of the dbg step over command.
+#. # function of the dbg step in command.
 #: dbgStepInDesc
 msgid ""
 "Executes the current statement and then stops at the next statement. If the "
@@ -569,7 +659,7 @@ msgstr ""
 "तो डिबगर पूरे फ़ंक्शन में जाता है, अन्यथा अगले कथन पर रुकता है"
 
 #. # LOCALIZATION NOTE (dbgStepOutDesc) A very short string used to describe the
-#. # function of the dbg step over command.
+#. # function of the dbg step out command.
 #: dbgStepOutDesc
 msgid ""
 "Steps out of the current function and up one level if the function is "
@@ -966,7 +1056,8 @@ msgstr "चयनक द्वारा मिलान किया तत्�
 #. # a menu alongside the command name, which is why it should be as short as
 #. # possible.
 #: pagemodRemoveAttributeDesc
-msgid "Remove matching atributes"
+#, fuzzy
+msgid "Remove matching attributes"
 msgstr "मिलान हुए गुण हटाएँ"
 
 #. # LOCALIZATION NOTE (pagemodRemoveAttributeSearchAttributesDesc) A very short
@@ -1120,6 +1211,8 @@ msgstr "सेट करने के लिए कुकी का मान"
 #. # LOCALIZATION NOTE (cookieSetOptionsDesc) The title of a set of options to
 #. # the 'cookie set' command, displayed as a heading to the list of option.
 #: cookieSetOptionsDesc
+#, fuzzy
+msgctxt "cookieSetOptionsDesc"
 msgid "Options"
 msgstr "विकल्प"
 
@@ -1190,13 +1283,12 @@ msgid ""
 "The chars used to indent each line. The possible choices are space or tab."
 msgstr "हर पंक्ति को हाशियाकृत करने के लिए प्रयुक्त वर्ण, संभावित विकल्प स्थान या टैब हैं."
 
-#. # LOCALIZATION NOTE (jsbPreserveNewlinesDesc) A very short description of the
-#. # 'jsb <jsbPreserveNewlines>' parameter. This string is designed to be shown
-#. # in a menu alongside the command name, which is why it should be as short as
-#. # possible.
-#: jsbPreserveNewlinesDesc
-msgid "Keep existing line breaks?"
-msgstr "मौजूदा पंक्ति अंतराल बनाए रखें?"
+#. # the 'jsb <doNotPreserveNewlines>' parameter. This string is designed to be
+#. # shown in a menu alongside the command name, which is why it should be as short
+#. # as possible.
+#: jsbDoNotPreserveNewlinesDesc
+msgid "Do not preserve line breaks"
+msgstr ""
 
 #. # LOCALIZATION NOTE (jsbPreserveNewlinesManual) A fuller description of the
 #. # 'jsb <jsbPreserveNewlines>' parameter, displayed when the user asks for help
@@ -1240,32 +1332,49 @@ msgstr "सही पर सेट किए जाने पर, jslint-स्�
 #. # in a menu alongside the command name, which is why it should be as short as
 #. # possible.
 #: jsbBraceStyleDesc
-msgid "Collapse, expand, end-expand, expand-strict"
-msgstr "संकुचित, विस्तारित, अंत विस्तार और विस्तार-प्रतिबंधित"
+msgid "Select the coding style of braces"
+msgstr ""
 
 #. # LOCALIZATION NOTE (jsbBraceStyleManual) A fuller description of the
 #. # 'jsb <braceStyle>' parameter, displayed when the user asks for help
 #. # on what it does.
 #: jsbBraceStyleManual
 msgid ""
-"The coding style of braces. Either collapse, expand, end-expand or expand-"
-"strict"
-msgstr "कोष्ठक की कोडिंग शैली. संकुचित, विस्तारित, अंत विस्तारित या विस्तारित-प्रतिबंधित"
+"<p class=\"nowrap\">The coding style of braces. Select from one of the "
+"following:</p><ul><li>collapse<br/><pre>if (x == 1) {\n"
+"  ...\n"
+"} else {\n"
+"  ...\n"
+"}</pre></li><li>expand<br/><pre>if (x == 1)\n"
+"{\n"
+"  ...\n"
+"}\n"
+"else\n"
+"{\n"
+"  ...\n"
+"}</pre></li><li>end-expand<br/><pre>if (x == 1) {\n"
+"  ...\n"
+"}\n"
+"else {\n"
+"  ...\n"
+"}</pre></li><li>expand-strict<br/><pre>if (x == 1)\n"
+"{\n"
+"  return // This option can break scripts\n"
+"  {\n"
+"    a: 1\n"
+"  };\n"
+"} else {\n"
+"  ...\n"
+"}</pre></li></ul>"
+msgstr ""
 
-#. # LOCALIZATION NOTE (jsbSpaceBeforeConditionalDesc) A very short description of
-#. # the 'jsb <spaceBeforeConditional>' parameter. This string is designed to be
-#. # shown in a menu alongside the command name, which is why it should be as short
-#. # as possible.
-#: jsbSpaceBeforeConditionalDesc
-msgid "Space before if statements?"
-msgstr "यदि कथन होता है तो पहले स्थान डालें?"
-
-#. # LOCALIZATION NOTE (jsbSpaceBeforeConditionalManual) A fuller description of
-#. # the 'jsb <spaceBeforeConditional>' parameter, displayed when the user asks for
-#. # help on what it does.
-#: jsbSpaceBeforeConditionalManual
-msgid "Should a space be added before conditional statements?"
-msgstr "सशर्त कथन के लिए स्थान जोड़ा जाना चाहिए?"
+#. # LOCALIZATION NOTE (jsbNoSpaceBeforeConditionalDesc) A very short description
+#. # of the 'jsb <noSpaceBeforeConditional>' parameter. This string is designed to
+#. # be shown in a menu alongside the command name, which is why it should be as
+#. # short as possible.
+#: jsbNoSpaceBeforeConditionalDesc
+msgid "No space before conditional statements"
+msgstr ""
 
 #. # LOCALIZATION NOTE (jsbUnescapeStringsDesc) A very short description of the
 #. # 'jsb <unescapeStrings>' parameter. This string is designed to be shown
@@ -1291,6 +1400,14 @@ msgstr ""
 #: jsbInvalidURL
 msgid "Please enter a valid URL"
 msgstr "कृपया एक वैध URL दाखिल करें"
+
+#. # LOCALIZATION NOTE (jsbOptionsDesc) The title of a set of options to
+#. # the 'jsb' command, displayed as a heading to the list of options.
+#: jsbOptionsDesc
+#, fuzzy
+msgctxt "jsbOptionsDesc"
+msgid "Options"
+msgstr "विकल्प"
 
 #. # LOCALIZATION NOTE (calllogDesc) A very short description of the
 #. # 'calllog' command. This string is designed to be shown in a menu
@@ -1426,10 +1543,10 @@ msgid "Variable not found in chrome window."
 msgstr ""
 
 #. # LOCALIZATION NOTE (callLogChromeEvalException) A string displayed as the
-#. # result of the 'calllog chromestart' command with a source type of javascript
+#. # result of the 'calllog chromestart' command with a source type of JavaScript
 #. # and invalid JavaScript code.
 #: callLogChromeEvalException
-msgid "Evaluated javascript threw the following exception"
+msgid "Evaluated JavaScript threw the following exception"
 msgstr ""
 
 #. # LOCALIZATION NOTE (callLogChromeEvalNeedsObject) A string displayed as the
@@ -1440,6 +1557,24 @@ msgid ""
 "The JavaScript source must evaluate to an object whose method calls are to "
 "be logged e.g. \"({a1: function() {this.a2()},a2: function() {}});\""
 msgstr ""
+
+#~ msgid "Keep existing line breaks?"
+#~ msgstr "मौजूदा पंक्ति अंतराल बनाए रखें?"
+
+#~ msgid "Collapse, expand, end-expand, expand-strict"
+#~ msgstr "संकुचित, विस्तारित, अंत विस्तार और विस्तार-प्रतिबंधित"
+
+#~ msgid ""
+#~ "The coding style of braces. Either collapse, expand, end-expand or expand-"
+#~ "strict"
+#~ msgstr ""
+#~ "कोष्ठक की कोडिंग शैली. संकुचित, विस्तारित, अंत विस्तारित या विस्तारित-प्रतिबंधित"
+
+#~ msgid "Space before if statements?"
+#~ msgstr "यदि कथन होता है तो पहले स्थान डालें?"
+
+#~ msgid "Should a space be added before conditional statements?"
+#~ msgstr "सशर्त कथन के लिए स्थान जोड़ा जाना चाहिए?"
 
 #~ msgid ""
 #~ "Edit one of the resources that is part of this page (or maybe any generic "

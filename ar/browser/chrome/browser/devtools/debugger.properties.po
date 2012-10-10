@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-26 13:30+0200\n"
+"POT-Creation-Date: 2012-10-10 17:43+0200\n"
 "PO-Revision-Date: 2012-09-26 20:19+0000\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.2.0-alpha1a\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
 "X-Project-Style: mozilla\n"
 "X-POOTLE-MTIME: 1348690785.0\n"
@@ -90,17 +90,48 @@ msgstr "لم يُعثر على الخادوم. أأعيد المحاولة (مس
 msgid "Could not find a server at the specified hostname and port number."
 msgstr "لم يُعثر على خادوم في اسم المستضيف ورقم المنفذ المحددين."
 
+#. # LOCALIZATION NOTE (collapsePanes): This is the tooltip for the button
+#. # that collapses the left and right panes in the debugger UI. -->
+#: collapsePanes
+msgid "Collapse panes"
+msgstr ""
+
+#. # LOCALIZATION NOTE (expandPanes): This is the tooltip for the button
+#. # that expands the left and right panes in the debugger UI. -->
+#: expandPanes
+msgid "Expand panes"
+msgstr ""
+
 #. # LOCALIZATION NOTE (pauseLabel): The label that is displayed on the pause
 #. # button when the debugger is in a running state.
-#: pauseTooltip
-msgid "Click to pause"
-msgstr "انقر للإلباث"
+#: pauseButtonTooltip
+msgid "Click to pause (%S)"
+msgstr ""
 
 #. # LOCALIZATION NOTE (resumeLabel): The label that is displayed on the pause
 #. # button when the debugger is in a paused state.
-#: resumeTooltip
-msgid "Click to resume"
+#: resumeButtonTooltip
+#, fuzzy
+msgid "Click to resume (%S)"
 msgstr "انقر للاستكمال"
+
+#. # LOCALIZATION NOTE (stepOverTooltip): The label that is displayed on the
+#. # button that steps over a function call.
+#: stepOverTooltip
+msgid "Step Over (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (stepInTooltip): The label that is displayed on the
+#. # button that steps into a function call.
+#: stepInTooltip
+msgid "Step In (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (stepOutTooltip): The label that is displayed on the
+#. # button that steps out of a function call.
+#: stepOutTooltip
+msgid "Step Out (%S)"
+msgstr ""
 
 #. # LOCALIZATION NOTE (emptyStackText): The text that is displayed in the stack
 #. # frames list when there are no frames to display.
@@ -125,6 +156,30 @@ msgstr "لا سكربتات"
 #: noMatchingScriptsText
 msgid "No matching scripts"
 msgstr "لا سكربتات مطابقة"
+
+#. # LOCALIZATION NOTE (emptyFilterText): This is the text that appears in the
+#. # filter text box when it is empty.
+#: emptyFilterText
+msgid "Filter scripts (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (searchPanelGlobal): This is the text that appears in the
+#. # filter panel popup for the global search operation.
+#: searchPanelGlobal
+msgid "Search in all files (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (searchPanelToken): This is the text that appears in the
+#. # filter panel popup for the token search operation.
+#: searchPanelToken
+msgid "Find in this file (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (searchPanelLine): This is the text that appears in the
+#. # filter panel popup for the line search operation.
+#: searchPanelLine
+msgid "Jump to line (%S)"
+msgstr ""
 
 #. # LOCALIZATION NOTE (breakpointMenuItem): The text for all the elements that
 #. # are displayed in the breakpoints menu item popup.
@@ -179,29 +234,6 @@ msgstr "يُحمل…"
 msgid "Error loading %1$S: %2$S"
 msgstr "عطل أثناء تحميل %1$S:‏ %2$S"
 
-#. # LOCALIZATION NOTE (remoteIncomingPromptTitle): The title displayed on the
-#. # dialog that prompts the user to allow the incoming connection.
-#: remoteIncomingPromptTitle
-msgid "Incoming Connection"
-msgstr "اتصال وارِد"
-
-#. # LOCALIZATION NOTE (remoteIncomingPromptMessage): The message displayed on the
-#. # dialog that prompts the user to allow the incoming connection.
-#: remoteIncomingPromptMessage
-msgid ""
-"An incoming request to permit remote debugging connection was detected. A "
-"remote client can take complete control over your browser! Allow connection?"
-msgstr ""
-"ورَد طلب للسماح  باتصال تنقيح بعيد. يُمكن للعميل البعيد التحكم الكامل بمتصفحك! "
-"أأسمح بالاتصال؟"
-
-#. # LOCALIZATION NOTE (remoteIncomingPromptDisable): The label displayed on the
-#. # third button in the incoming connection dialog that lets the user disable the
-#. # remote debugger server.
-#: remoteIncomingPromptDisable
-msgid "Disable"
-msgstr "عطّل"
-
 #. # LOCALIZATION NOTE (emptyVariablesText): The text that is displayed in the
 #. # variables pane when there are no variables to display.
 #: emptyVariablesText
@@ -221,3 +253,20 @@ msgstr "مجال %S"
 #: globalScopeLabel
 msgid "Global"
 msgstr "عام"
+
+#~ msgid "Click to pause"
+#~ msgstr "انقر للإلباث"
+
+#~ msgid "Incoming Connection"
+#~ msgstr "اتصال وارِد"
+
+#~ msgid ""
+#~ "An incoming request to permit remote debugging connection was detected. A "
+#~ "remote client can take complete control over your browser! Allow "
+#~ "connection?"
+#~ msgstr ""
+#~ "ورَد طلب للسماح  باتصال تنقيح بعيد. يُمكن للعميل البعيد التحكم الكامل "
+#~ "بمتصفحك! أأسمح بالاتصال؟"
+
+#~ msgid "Disable"
+#~ msgstr "عطّل"

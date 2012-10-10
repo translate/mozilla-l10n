@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-08 17:25+0200\n"
+"POT-Creation-Date: 2012-10-10 17:43+0200\n"
 "PO-Revision-Date: 2012-10-09 12:40+0000\n"
 "Last-Translator: Mahay Alam <mahayalamkhan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.2.0-alpha1a\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
 "X-POOTLE-MTIME: 1349786455.0\n"
 
@@ -142,15 +142,6 @@ msgstr "এখন পুনরায় শুরু"
 msgctxt "addonInstallRestartButton.accesskey"
 msgid "R"
 msgstr "R"
-
-#: addonInstallManage
-msgid "Open Add-ons Manager"
-msgstr "অ্যাড-অন ব্যবস্থাপক খুলুন"
-
-#: addonInstallManage.accesskey
-msgctxt "addonInstallManage.accesskey"
-msgid "O"
-msgstr "O"
 
 #. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
 #. # #1 is the add-on name, #2 is the host name, #3 is the application name
@@ -406,7 +397,7 @@ msgstr "R"
 msgid "Would you like to activate the plugins on this page?"
 msgstr "আপনি কি এই পৃষ্ঠার প্লাগইন সক্রিয় করতে ইচ্ছুক?"
 
-#: activatePluginsMessage.label
+#: activateAllPluginsMessage.label
 msgid "Activate All Plugins"
 msgstr "সকল প্লাগইন সক্রিয় করুন"
 
@@ -986,6 +977,24 @@ msgctxt "syncPromoNotification.learnMoreLinkText"
 msgid "Learn More"
 msgstr "আরও জানুন…"
 
+#. # LOCALIZATION NOTE (syncPromoNotification.addons.label): This appears in
+#. # the add-on install complete panel when Sync isn't set.
+#. # %S will be replaced by syncBrandShortName.
+#. # The final space separates this text from the Learn More link.
+#: syncPromoNotification.addons.description
+#, fuzzy
+msgid "You can access your add-ons on all your devices with %S. "
+msgstr "আপনি %S এর সাহায্যে আপনার সকল ডিভাইসে পাসওয়ার্ড একসেস করতে পারবেন।"
+
+#. # LOCALIZATION NOTE (syncPromoNotification.addons-sync-disabled.label):
+#. # This appears in the add-on install complete panel when Sync is set
+#. # but addons sync is not. %S will be replaced by syncBrandShortName.
+#. # The final space separates this text from the Learn More link.
+#: syncPromoNotification.addons-sync-disabled.description
+msgid ""
+"You can use your %S account to synchronize add-ons across multiple devices. "
+msgstr ""
+
 #. # Telemetry prompt
 #. # LOCALIZATION NOTE (telemetryOptInPrompt): %1$S will be replaced by
 #. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner
@@ -1038,15 +1047,6 @@ msgstr "আপনি কি (%2$S) সাইট থেকে  \"%1$S\" ইনস
 #: webapps.install.success
 msgid "Application Installed"
 msgstr "অ্যাপ্লিকেশন ইনস্টল হয়েছে"
-
-#. # LOCALIZATION NOTE (webapps.uninstall.notification): %S will be replaced with the name of the uninstalled web app
-#: webapps.uninstall.notification
-msgid "%S has been uninstalled from your computer."
-msgstr "%S আপনার কম্পিউটার থেকে আনইনস্টল হয়েছে।"
-
-#: webapps.uninstall.label
-msgid "Uninstall App"
-msgstr "অ্যাপ্লিকেশন আনইনস্টল করুন"
 
 #. # Telemetry opt-out prompt for Aurora and Nightly
 #. # LOCALIZATION NOTE (telemetryOptOutPrompt): %1$S and %3$S will be replaced by
@@ -1123,6 +1123,7 @@ msgstr "সেবার শর্ত"
 msgid "Privacy Policy"
 msgstr "গোপনীয়তার নীতি"
 
+#. # LOCALIZATION NOTE (identity.chooseIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
 #: identity.chooseIdentity.description
 msgid "Sign in to %S"
 msgstr "%S এ সাইন ইন করুন"
@@ -1144,7 +1145,7 @@ msgstr "e"
 msgid "Email"
 msgstr "ইমেইল"
 
-#. # LOCALIZATION NOTE (identity.newIdentity.description, identity.chooseIdentity.description): %S is the website origin (ie. https://www.mozilla.org) shown in popup notifications.
+#. # LOCALIZATION NOTE (identity.newIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
 #: identity.newIdentity.description
 msgid "Enter your email address to sign in to %S"
 msgstr "%S এ সাইন ইন করার জন্য আপনার ইমেইল আইডি প্রবেশ করান"
@@ -1159,7 +1160,7 @@ msgid "n"
 msgstr "n"
 
 #. # LOCALIZATION NOTE: shown in the popup notification when a user successfully logs into a website
-#. # LOCALIZATION NOTE (identity.loggedIn.description): %S is the website origin (ie. https://www.mozilla.org)
+#. # LOCALIZATION NOTE (identity.loggedIn.description): %S is the user's identity (e.g. user@example.com)
 #: identity.loggedIn.description
 msgid "Signed in as: %S"
 msgstr "সাইন ইন হয়েছে: %S হিসেবে"
@@ -1172,3 +1173,63 @@ msgstr "সাইন আউট"
 msgctxt "identity.loggedIn.signOut.accessKey"
 msgid "O"
 msgstr "O"
+
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareMicrophone.message, getUserMedia.shareSpecificMicrophone.label): %S is the website origin (e.g. www.mozilla.org)
+#: getUserMedia.shareCamera.message
+#, fuzzy
+msgid "Would you like to share your camera with %S?"
+msgstr "আপনি কি %S এর সাথে আপনার অবস্থান শেয়ার করতে চান?"
+
+#: getUserMedia.shareCamera.label
+msgid "Share Camera"
+msgstr ""
+
+#: getUserMedia.shareCamera.accesskey
+msgctxt "getUserMedia.shareCamera.accesskey"
+msgid "S"
+msgstr ""
+
+#: getUserMedia.shareSpecificCamera.label
+msgid "Share Camera: %S"
+msgstr ""
+
+#: getUserMedia.shareMicrophone.message
+#, fuzzy
+msgid "Would you like to share your microphone with %S?"
+msgstr "আপনি কি %S এর সাথে আপনার অবস্থান শেয়ার করতে চান?"
+
+#: getUserMedia.shareMicrophone.label
+msgid "Share Microphone"
+msgstr ""
+
+#: getUserMedia.shareMicrophone.accesskey
+msgctxt "getUserMedia.shareMicrophone.accesskey"
+msgid "S"
+msgstr ""
+
+#: getUserMedia.shareSpecificMicrophone.label
+msgid "Share Microphone: %S"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.message
+msgid "Would you like to share your camera and microphone with %S?"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.label
+msgid "Share Camera and Microphone"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.accesskey
+msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
+msgid "S"
+msgstr ""
+
+#~ msgid "Open Add-ons Manager"
+#~ msgstr "অ্যাড-অন ব্যবস্থাপক খুলুন"
+
+#~ msgid "%S has been uninstalled from your computer."
+#~ msgstr "%S আপনার কম্পিউটার থেকে আনইনস্টল হয়েছে।"
+
+#~ msgid "Uninstall App"
+#~ msgstr "অ্যাপ্লিকেশন আনইনস্টল করুন"

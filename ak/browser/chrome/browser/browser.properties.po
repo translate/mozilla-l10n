@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-08 17:25+0200\n"
+"POT-Creation-Date: 2012-10-10 17:43+0200\n"
 "PO-Revision-Date: 2012-09-10 00:04+0000\n"
 "Last-Translator: Delalorm <delalorm.kpeli@kasahorow.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -143,15 +143,6 @@ msgstr "San-hyɛ-ase seiseiara"
 msgctxt "addonInstallRestartButton.accesskey"
 msgid "R"
 msgstr "R"
-
-#: addonInstallManage
-msgid "Open Add-ons Manager"
-msgstr "Bue Nkaho Hwɛsofo"
-
-#: addonInstallManage.accesskey
-msgctxt "addonInstallManage.accesskey"
-msgid "O"
-msgstr "O"
 
 #. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
 #. # #1 is the add-on name, #2 is the host name, #3 is the application name
@@ -408,7 +399,7 @@ msgstr "R"
 msgid "Would you like to activate the plugins on this page?"
 msgstr "Wo bɛ pɛ sɛ wo bɛkenyan mplagin wɔ krataafa yi so?"
 
-#: activatePluginsMessage.label
+#: activateAllPluginsMessage.label
 #, fuzzy
 msgid "Activate All Plugins"
 msgstr "Kenyan mplagin"
@@ -995,6 +986,26 @@ msgctxt "syncPromoNotification.learnMoreLinkText"
 msgid "Learn More"
 msgstr "Sua bio ka ho"
 
+#. # LOCALIZATION NOTE (syncPromoNotification.addons.label): This appears in
+#. # the add-on install complete panel when Sync isn't set.
+#. # %S will be replaced by syncBrandShortName.
+#. # The final space separates this text from the Learn More link.
+#: syncPromoNotification.addons.description
+#, fuzzy
+msgid "You can access your add-ons on all your devices with %S. "
+msgstr ""
+"Wo bɛtumi de %S enya wo ehintansɛmfua nyinara ho kwan wɔ wo ndivaes nyinara "
+"so."
+
+#. # LOCALIZATION NOTE (syncPromoNotification.addons-sync-disabled.label):
+#. # This appears in the add-on install complete panel when Sync is set
+#. # but addons sync is not. %S will be replaced by syncBrandShortName.
+#. # The final space separates this text from the Learn More link.
+#: syncPromoNotification.addons-sync-disabled.description
+msgid ""
+"You can use your %S account to synchronize add-ons across multiple devices. "
+msgstr ""
+
 #. # Telemetry prompt
 #. # LOCALIZATION NOTE (telemetryOptInPrompt): %1$S will be replaced by
 #. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner
@@ -1047,15 +1058,6 @@ msgstr "Wopɛ sɛ wo instɔɔle \"%1$S\" efi (%2$S) saet yi?"
 #: webapps.install.success
 msgid "Application Installed"
 msgstr "Einstɔl aplekehyɛn"
-
-#. # LOCALIZATION NOTE (webapps.uninstall.notification): %S will be replaced with the name of the uninstalled web app
-#: webapps.uninstall.notification
-msgid "%S has been uninstalled from your computer."
-msgstr "Wɔn eyi %S instɔlehyɛn efi wo kɔmputa no so."
-
-#: webapps.uninstall.label
-msgid "Uninstall App"
-msgstr "Yi app instɔlehyɛn"
 
 #. # Telemetry opt-out prompt for Aurora and Nightly
 #. # LOCALIZATION NOTE (telemetryOptOutPrompt): %1$S and %3$S will be replaced by
@@ -1132,6 +1134,7 @@ msgstr "Ɛfene a yɛde som wo"
 msgid "Privacy Policy"
 msgstr "Siesɛm mbra"
 
+#. # LOCALIZATION NOTE (identity.chooseIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
 #: identity.chooseIdentity.description
 msgid "Sign in to %S"
 msgstr "Kyerɛw wo din bra %S mu"
@@ -1153,7 +1156,7 @@ msgstr "e"
 msgid "Email"
 msgstr "Emel"
 
-#. # LOCALIZATION NOTE (identity.newIdentity.description, identity.chooseIdentity.description): %S is the website origin (ie. https://www.mozilla.org) shown in popup notifications.
+#. # LOCALIZATION NOTE (identity.newIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
 #: identity.newIdentity.description
 msgid "Enter your email address to sign in to %S"
 msgstr "Bɔ wo emel adrɛs de kyerɛw wo din bra mu sɛ %S"
@@ -1168,7 +1171,7 @@ msgid "n"
 msgstr "n"
 
 #. # LOCALIZATION NOTE: shown in the popup notification when a user successfully logs into a website
-#. # LOCALIZATION NOTE (identity.loggedIn.description): %S is the website origin (ie. https://www.mozilla.org)
+#. # LOCALIZATION NOTE (identity.loggedIn.description): %S is the user's identity (e.g. user@example.com)
 #: identity.loggedIn.description
 msgid "Signed in as: %S"
 msgstr "Woakyerɛw wo din aba mu sɛ: %S"
@@ -1181,6 +1184,66 @@ msgstr "San firi mu"
 msgctxt "identity.loggedIn.signOut.accessKey"
 msgid "O"
 msgstr "O"
+
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareMicrophone.message, getUserMedia.shareSpecificMicrophone.label): %S is the website origin (e.g. www.mozilla.org)
+#: getUserMedia.shareCamera.message
+#, fuzzy
+msgid "Would you like to share your camera with %S?"
+msgstr "Wo bɛ pɛ sɛ wo ne %S bɛkyɛ wo lokehyɛn anaa?"
+
+#: getUserMedia.shareCamera.label
+msgid "Share Camera"
+msgstr ""
+
+#: getUserMedia.shareCamera.accesskey
+msgctxt "getUserMedia.shareCamera.accesskey"
+msgid "S"
+msgstr ""
+
+#: getUserMedia.shareSpecificCamera.label
+msgid "Share Camera: %S"
+msgstr ""
+
+#: getUserMedia.shareMicrophone.message
+#, fuzzy
+msgid "Would you like to share your microphone with %S?"
+msgstr "Wo bɛ pɛ sɛ wo ne %S bɛkyɛ wo lokehyɛn anaa?"
+
+#: getUserMedia.shareMicrophone.label
+msgid "Share Microphone"
+msgstr ""
+
+#: getUserMedia.shareMicrophone.accesskey
+msgctxt "getUserMedia.shareMicrophone.accesskey"
+msgid "S"
+msgstr ""
+
+#: getUserMedia.shareSpecificMicrophone.label
+msgid "Share Microphone: %S"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.message
+msgid "Would you like to share your camera and microphone with %S?"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.label
+msgid "Share Camera and Microphone"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.accesskey
+msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
+msgid "S"
+msgstr ""
+
+#~ msgid "Open Add-ons Manager"
+#~ msgstr "Bue Nkaho Hwɛsofo"
+
+#~ msgid "%S has been uninstalled from your computer."
+#~ msgstr "Wɔn eyi %S instɔlehyɛn efi wo kɔmputa no so."
+
+#~ msgid "Uninstall App"
+#~ msgstr "Yi app instɔlehyɛn"
 
 #~ msgid "Share this"
 #~ msgstr "Kyɛ yi"
