@@ -48,6 +48,9 @@ do
 	rm -rf $local_copy/$lang
 	cat $phaselist | while read phase file
 	do
+		if [ $lang == "pot" -o $lang == "templates" ]; then
+			file=${file}t
+		fi
 		mkdir -p $local_copy/$lang/$phase/$(dirname $file)
 		cp -p $lang/$file $local_copy/$lang/$phase/$file
 	done
