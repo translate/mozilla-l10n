@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-08 17:25+0200\n"
+"POT-Creation-Date: 2012-10-10 17:13+0200\n"
 "PO-Revision-Date: 2012-10-08 18:46+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.2.0-alpha1a\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
 "X-POOTLE-MTIME: 1349722009.0\n"
 
@@ -154,15 +154,6 @@ msgstr "Ath-thòisich an-dràsta"
 msgctxt "addonInstallRestartButton.accesskey"
 msgid "R"
 msgstr "r"
-
-#: addonInstallManage
-msgid "Open Add-ons Manager"
-msgstr "Fosgail manaidsear nan tuilleadan"
-
-#: addonInstallManage.accesskey
-msgctxt "addonInstallManage.accesskey"
-msgid "O"
-msgstr "o"
 
 #. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
 #. # #1 is the add-on name, #2 is the host name, #3 is the application name
@@ -439,7 +430,7 @@ msgstr "A"
 msgid "Would you like to activate the plugins on this page?"
 msgstr "A bheil thu airson na plugain air an duilleag seo a chur an gnìomh?"
 
-#: activatePluginsMessage.label
+#: activateAllPluginsMessage.label
 msgid "Activate All Plugins"
 msgstr "Cuir gach plugan an gnìomh"
 
@@ -1039,6 +1030,26 @@ msgctxt "syncPromoNotification.learnMoreLinkText"
 msgid "Learn More"
 msgstr "Barrachd fiosrachaidh"
 
+#. # LOCALIZATION NOTE (syncPromoNotification.addons.label): This appears in
+#. # the add-on install complete panel when Sync isn't set.
+#. # %S will be replaced by syncBrandShortName.
+#. # The final space separates this text from the Learn More link.
+#: syncPromoNotification.addons.description
+#, fuzzy
+msgid "You can access your add-ons on all your devices with %S. "
+msgstr ""
+"'S urrainn dhut na faclan-faire agad fhaighinn air gach inneal agad air a "
+"bheil %S. "
+
+#. # LOCALIZATION NOTE (syncPromoNotification.addons-sync-disabled.label):
+#. # This appears in the add-on install complete panel when Sync is set
+#. # but addons sync is not. %S will be replaced by syncBrandShortName.
+#. # The final space separates this text from the Learn More link.
+#: syncPromoNotification.addons-sync-disabled.description
+msgid ""
+"You can use your %S account to synchronize add-ons across multiple devices. "
+msgstr ""
+
 #. # Telemetry prompt
 #. # LOCALIZATION NOTE (telemetryOptInPrompt): %1$S will be replaced by
 #. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner
@@ -1091,15 +1102,6 @@ msgstr "A bheil thu airson \"%1$S\" a stàladh on làrach seo (%2$S)?"
 #: webapps.install.success
 msgid "Application Installed"
 msgstr "Aplacaid air a stàladh"
-
-#. # LOCALIZATION NOTE (webapps.uninstall.notification): %S will be replaced with the name of the uninstalled web app
-#: webapps.uninstall.notification
-msgid "%S has been uninstalled from your computer."
-msgstr "Chaidh %S a dhì-stàladh on choimpiutair agad."
-
-#: webapps.uninstall.label
-msgid "Uninstall App"
-msgstr "Dì-stàlaich an aplacaid"
 
 #. # Telemetry opt-out prompt for Aurora and Nightly
 #. # LOCALIZATION NOTE (telemetryOptOutPrompt): %1$S and %3$S will be replaced by
@@ -1176,6 +1178,7 @@ msgstr "Teirmichean na Seirbheise"
 msgid "Privacy Policy"
 msgstr "Am poileasaidh prìobhaideachd"
 
+#. # LOCALIZATION NOTE (identity.chooseIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
 #: identity.chooseIdentity.description
 msgid "Sign in to %S"
 msgstr "Clàraich a-steach gu %S"
@@ -1197,7 +1200,7 @@ msgstr "e"
 msgid "Email"
 msgstr "Post-dealain"
 
-#. # LOCALIZATION NOTE (identity.newIdentity.description, identity.chooseIdentity.description): %S is the website origin (ie. https://www.mozilla.org) shown in popup notifications.
+#. # LOCALIZATION NOTE (identity.newIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
 #: identity.newIdentity.description
 msgid "Enter your email address to sign in to %S"
 msgstr "Cuir a-steach an seòladh puist-d agad gus clàradh a-steach gu %S"
@@ -1212,7 +1215,7 @@ msgid "n"
 msgstr "n"
 
 #. # LOCALIZATION NOTE: shown in the popup notification when a user successfully logs into a website
-#. # LOCALIZATION NOTE (identity.loggedIn.description): %S is the website origin (ie. https://www.mozilla.org)
+#. # LOCALIZATION NOTE (identity.loggedIn.description): %S is the user's identity (e.g. user@example.com)
 #: identity.loggedIn.description
 msgid "Signed in as: %S"
 msgstr "Chlàraich thu a-steach mar: %S"
@@ -1225,6 +1228,66 @@ msgstr "Clàraich a-mach"
 msgctxt "identity.loggedIn.signOut.accessKey"
 msgid "O"
 msgstr "O"
+
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareMicrophone.message, getUserMedia.shareSpecificMicrophone.label): %S is the website origin (e.g. www.mozilla.org)
+#: getUserMedia.shareCamera.message
+#, fuzzy
+msgid "Would you like to share your camera with %S?"
+msgstr "A bheil thu airson d' àite a nochdadh ri %S?"
+
+#: getUserMedia.shareCamera.label
+msgid "Share Camera"
+msgstr ""
+
+#: getUserMedia.shareCamera.accesskey
+msgctxt "getUserMedia.shareCamera.accesskey"
+msgid "S"
+msgstr ""
+
+#: getUserMedia.shareSpecificCamera.label
+msgid "Share Camera: %S"
+msgstr ""
+
+#: getUserMedia.shareMicrophone.message
+#, fuzzy
+msgid "Would you like to share your microphone with %S?"
+msgstr "A bheil thu airson d' àite a nochdadh ri %S?"
+
+#: getUserMedia.shareMicrophone.label
+msgid "Share Microphone"
+msgstr ""
+
+#: getUserMedia.shareMicrophone.accesskey
+msgctxt "getUserMedia.shareMicrophone.accesskey"
+msgid "S"
+msgstr ""
+
+#: getUserMedia.shareSpecificMicrophone.label
+msgid "Share Microphone: %S"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.message
+msgid "Would you like to share your camera and microphone with %S?"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.label
+msgid "Share Camera and Microphone"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.accesskey
+msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
+msgid "S"
+msgstr ""
+
+#~ msgid "Open Add-ons Manager"
+#~ msgstr "Fosgail manaidsear nan tuilleadan"
+
+#~ msgid "%S has been uninstalled from your computer."
+#~ msgstr "Chaidh %S a dhì-stàladh on choimpiutair agad."
+
+#~ msgid "Uninstall App"
+#~ msgstr "Dì-stàlaich an aplacaid"
 
 #~ msgid "Share this"
 #~ msgstr "Co-roinn seo"
