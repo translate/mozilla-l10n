@@ -3,16 +3,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-08 07:45+0100\n"
+"POT-Creation-Date: 2012-10-11 13:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
 
+#. This Source Code Form is subject to the terms of the Mozilla Public
+#. - License, v. 2.0. If a copy of the MPL was not distributed with this
+#. - file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #. LOCALIZATION NOTE : FILE This file contains the Scratchpad window strings
 #. LOCALIZATION NOTE : FILE Do not translate commandkeys
 #. LOCALIZATION NOTE : FILE The correct localization of this file might be to
@@ -31,7 +34,7 @@ msgstr ""
 #. -  "simple discardable text editor".
 #: window.title
 msgid "Scratchpad"
-msgstr "Scratchpad"
+msgstr "Աշխատագոտի"
 
 #: fileMenu.label fileMenu.accesskey
 msgid "&File"
@@ -52,6 +55,14 @@ msgstr "&Բացել ֆայլ…"
 #: openFileCmd.commandkey
 msgid "o"
 msgstr "o"
+
+#: openRecentMenu.label openRecentMenu.accesskey
+msgid "Open &Recent"
+msgstr "Open &Recent"
+
+#: revertCmd.label revertCmd.accesskey
+msgid "Rever&t…"
+msgstr ""
 
 #: saveFileCmd.label saveFileCmd.accesskey
 msgid "&Save"
@@ -77,97 +88,14 @@ msgstr "W"
 msgid "&Edit"
 msgstr "&Խմբագրել"
 
-#: undoCmd.label undoCmd.accesskey
-msgid "&Undo"
-msgstr "&Հետ"
-
-#: undoCmd.key
-msgid "Z"
-msgstr "Հ"
-
-#: redoCmd.label redoCmd.accesskey
-msgid "&Redo"
-msgstr "&Կրկնել"
-
-#: redoCmd.key
-msgid "Y"
-msgstr "Կ"
-
-#: cutCmd.label cutCmd.accesskey
-msgid "Cu&t"
-msgstr "&Կտրել"
-
-#: cutCmd.key
-msgid "X"
-msgstr "Կ"
-
-#: copyCmd.label copyCmd.accesskey
-msgid "&Copy"
-msgstr "&Պատճենել"
-
-#: copyCmd.key
-msgid "C"
-msgstr "Պ"
-
-#: pasteCmd.label pasteCmd.accesskey
-msgid "&Paste"
-msgstr "&Տեղադրել"
-
-#: pasteCmd.key
-msgid "V"
-msgstr "Տ"
-
-#: selectAllCmd.label selectAllCmd.accesskey
-msgid "Select &All"
-msgstr "&Նշել բոլորը"
-
-#: selectAllCmd.key
-msgid "A"
-msgstr "A"
-
-#: findCmd.label findCmd.accesskey
-#, fuzzy
-msgid "&Find…"
-msgstr "Գտնել…"
-
-#: findCmd.key
-msgid "F"
-msgstr ""
-
-#: findAgainCmd.label findAgainCmd.accesskey
-msgid "Find A&gain…"
-msgstr ""
-
-#. This key is used only on Macs.
-#. -  Windows and Linux builds use the F3 key which is not localizable on purpose.
-#: findAgainCmd.key
-msgctxt "findAgainCmd.key"
-msgid "G"
-msgstr ""
-
-#. This key is used only on Macs.
-#. -  Windows and Linux builds use the Shift-F3 key which is not localizable on
-#. -  purpose.
-#: findPreviousCmd.key
-msgctxt "findPreviousCmd.key"
-msgid "G"
-msgstr ""
-
-#: gotoLineCmd.label gotoLineCmd.accesskey
-msgid "&Jump to line…"
-msgstr ""
-
-#: gotoLineCmd.key
-msgid "J"
-msgstr ""
-
 #: run.label run.accesskey
 msgid "&Run"
-msgstr "&Run"
+msgstr "&Վազք"
 
 #: run.key
+msgctxt "run.key"
 msgid "r"
-msgstr "r"
+msgstr "Վ"
 
 #: inspect.label inspect.accesskey
 msgid "&Inspect"
@@ -179,11 +107,11 @@ msgstr "Հ"
 
 #: display.label display.accesskey
 msgid "&Display"
-msgstr "&Display"
+msgstr "&Ցուցադրել"
 
 #: display.key
 msgid "l"
-msgstr "l"
+msgstr "Ց"
 
 #. LOCALIZATION NOTE (environmentMenu.label, accesskey): This menu item was
 #. -  renamed from "Context" to avoid confusion with the right-click context
@@ -192,7 +120,7 @@ msgstr "l"
 #. -  (browser).
 #: environmentMenu.label environmentMenu.accesskey
 msgid "E&nvironment"
-msgstr "E&nvironment"
+msgstr "&Միջավայր"
 
 #: contentContext.label contentContext.accesskey
 msgid "&Content"
@@ -205,17 +133,42 @@ msgstr "&Պարունակությունը"
 #. -  was called "Chrome".
 #: browserContext.label browserContext.accesskey
 msgid "&Browser"
-msgstr "&Browser"
+msgstr "&Դիտարկիչ"
+
+#. LOCALIZATION NOTE some localizations of Windows (ex:french, german) use "?"
+#. -  for the help button in the menubar but Gnome does not.
+#: helpMenu.label helpMenu.accesskey
+msgctxt "helpMenu.label helpMenu.accesskey"
+msgid "&Help"
+msgstr "&Օգնություն"
+
+#: helpMenuWin.label helpMenuWin.accesskey
+msgctxt "helpMenuWin.label helpMenuWin.accesskey"
+msgid "&Help"
+msgstr "&Օգնություն"
+
+#: documentationLink.label documentationLink.accesskey
+msgid "Scratchpad Help on M&DN"
+msgstr "Scratchpad Help on M&DN"
 
 #. This command allows the developer
 #. -  to reset/clear the global object of the environment where the code executes.
 #: resetContext2.label resetContext2.accesskey
 msgid "Rese&t Variables"
+msgstr "Rese&t Variables"
+
+#: reloadAndRun.label reloadAndRun.accesskey
+msgid "R&eload And Run"
+msgstr ""
+
+#: reloadAndRun.key
+msgctxt "reloadAndRun.key"
+msgid "r"
 msgstr ""
 
 #: executeMenu.label executeMenu.accesskey
 msgid "E&xecute"
-msgstr "E&xecute"
+msgstr "կատարել"
 
 #. This command key launches
 #. -  the browser Error Console, the key should be identical to the property of
@@ -230,15 +183,3 @@ msgstr "Ս"
 #: webConsoleCmd.commandkey
 msgid "k"
 msgstr "Վ"
-
-#~ msgid "&Reset"
-#~ msgstr "&Բերել նախնականի"
-
-#~ msgid "&Tools"
-#~ msgstr "&Գործիքներ"
-
-#~ msgid "Error &Console"
-#~ msgstr "&Սխալների ցուցակ"
-
-#~ msgid "&Web Console"
-#~ msgstr "&Վեբ կոնսոլ"
