@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-03 00:58-0700\n"
+"POT-Creation-Date: 2012-10-11 10:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,6 +82,8 @@ msgid "Enable"
 msgstr "చేతనం"
 
 #: xpinstallDisabledButton.accesskey
+#, fuzzy
+msgctxt "xpinstallDisabledButton.accesskey"
 msgid "n"
 msgstr "n"
 
@@ -137,15 +139,6 @@ msgstr "ఇప్పుడు పునఃప్రారంభించుమ�
 msgctxt "addonInstallRestartButton.accesskey"
 msgid "R"
 msgstr "R"
-
-#: addonInstallManage
-msgid "Open Add-ons Manager"
-msgstr "పొడిగింతలు నిర్వాహికను తెరువుము"
-
-#: addonInstallManage.accesskey
-msgctxt "addonInstallManage.accesskey"
-msgid "O"
-msgstr "O"
 
 #. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
 #. # #1 is the add-on name, #2 is the host name, #3 is the application name
@@ -399,8 +392,9 @@ msgstr "R"
 msgid "Would you like to activate the plugins on this page?"
 msgstr "ఈ పేజీపై మీరు ప్లగిన్లను క్రియాశీలం చేయుటకు యిష్టపడతారా?"
 
-#: activatePluginsMessage.label
-msgid "Activate plugins"
+#: activateAllPluginsMessage.label
+#, fuzzy
+msgid "Activate All Plugins"
 msgstr "ప్లగిన్స్ క్రియాశీలంచేయి"
 
 #: activatePluginsMessage.accesskey
@@ -424,6 +418,41 @@ msgstr "ఈ సైటు కొరకు ప్లగిన్లను యె�
 msgctxt "activatePluginsMessage.never.accesskey"
 msgid "N"
 msgstr "N"
+
+#: activateSinglePlugin
+msgid "Activate"
+msgstr "చెతనంచేయి"
+
+#: PluginClickToPlay
+#, fuzzy
+msgid "Click here to activate the %S plugin."
+msgstr "చొప్పింతను క్రియాశీలం చేయుటకు యిచట తట్టండి."
+
+#. # LOCALIZATION NOTE - "vulnerable" indicates there is a security bug in the
+#. # plugin that is being exploited by attackers.
+#: PluginVulnerableUpdatable
+msgid "This plugin is vulnerable and should be updated."
+msgstr ""
+
+#: PluginVulnerableNoUpdate
+msgid "This plugin has security vulnerabilities."
+msgstr ""
+
+#: vulnerableUpdatablePluginWarning
+msgid "Outdated Version!"
+msgstr ""
+
+#: vulnerableNoUpdatePluginWarning
+msgid "Vulnerable Plugin!"
+msgstr ""
+
+#: vulnerablePluginsMessage
+msgid "Some plugins have been deactivated for your safety."
+msgstr ""
+
+#: pluginInfo.unknownPlugin
+msgid "Unknown"
+msgstr "తెలియని"
 
 #. # Sanitize
 #. # LOCALIZATION NOTE (sanitizeDialog2.everything.title): When "Time range to
@@ -462,6 +491,8 @@ msgid "Check for Updates"
 msgstr "నవీకరణల కొరకు పరిశీలించుము"
 
 #: update.checkInsideButton.accesskey
+#, fuzzy
+msgctxt "update.checkInsideButton.accesskey"
 msgid "C"
 msgstr "C"
 
@@ -609,6 +640,8 @@ msgid "Never for This Site"
 msgstr "ఈసైటుకు ఎప్పటికికాదు"
 
 #: offlineApps.neverAccessKey
+#, fuzzy
+msgctxt "offlineApps.neverAccessKey"
 msgid "e"
 msgstr "e"
 
@@ -939,6 +972,24 @@ msgctxt "syncPromoNotification.learnMoreLinkText"
 msgid "Learn More"
 msgstr "మరింత నేర్చుకోండి"
 
+#. # LOCALIZATION NOTE (syncPromoNotification.addons.label): This appears in
+#. # the add-on install complete panel when Sync isn't set.
+#. # %S will be replaced by syncBrandShortName.
+#. # The final space separates this text from the Learn More link.
+#: syncPromoNotification.addons.description
+#, fuzzy
+msgid "You can access your add-ons on all your devices with %S. "
+msgstr "%S తోటి మీరు మీ సంకేతపదాలు అన్ని పరికరములపైనా యాక్సెస్ చేసుకొనగలరు. "
+
+#. # LOCALIZATION NOTE (syncPromoNotification.addons-sync-disabled.label):
+#. # This appears in the add-on install complete panel when Sync is set
+#. # but addons sync is not. %S will be replaced by syncBrandShortName.
+#. # The final space separates this text from the Learn More link.
+#: syncPromoNotification.addons-sync-disabled.description
+msgid ""
+"You can use your %S account to synchronize add-ons across multiple devices. "
+msgstr ""
+
 #. # Telemetry prompt
 #. # LOCALIZATION NOTE (telemetryOptInPrompt): %1$S will be replaced by
 #. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner
@@ -1013,14 +1064,173 @@ msgstr "%S యిప్పుడు నిండుతెరలో వుంద�
 msgid "Remember decision for %S"
 msgstr "%S కొరకు నిర్ణయాన్ని గుర్తుంచుకో."
 
-#: social.shareButton.tooltip
-msgid "Share this"
-msgstr "దీనిని పంచు"
+#. # LOCALIZATION NOTE (social.toggle.label): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
+#: social.toggle.label
+#, fuzzy
+msgid "%1$S for %2$S"
+msgstr "%1$S — %2$S"
 
-#: social.shareButton.sharedtooltip
-msgid "You shared this"
-msgstr "మీరు దీనిని పంచినారు"
+#: social.toggle.accesskey
+msgid "f"
+msgstr ""
 
-#: social.pageShared.label
-msgid "Page shared"
-msgstr "పేజీ పంచబడింది"
+#. # LOCALIZATION NOTE (social.activated.description): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
+#: social.activated.description
+msgid "You've turned on %1$S for %2$S."
+msgstr ""
+
+#. # LOCALIZATION NOTE (social.error.message): %1$S is brandShortName (e.g. Firefox), %2$S is the name of the social provider
+#: social.error.message
+msgid "%1$S is unable to connect with %2$S right now."
+msgstr ""
+
+#: social.error.tryAgain.label
+#, fuzzy
+msgid "Try Again"
+msgstr "మరలా ప్రయత్నించు"
+
+#: social.error.tryAgain.accesskey
+msgid "T"
+msgstr ""
+
+#: social.error.ok.label
+msgid "OK"
+msgstr ""
+
+#: social.error.ok.accesskey
+msgctxt "social.error.ok.accesskey"
+msgid "O"
+msgstr ""
+
+#: social.error.closeSidebar.label
+msgid "Close This Sidebar"
+msgstr ""
+
+#: social.error.closeSidebar.accesskey
+msgctxt "social.error.closeSidebar.accesskey"
+msgid "C"
+msgstr ""
+
+#. # Identity notifications popups
+#: identity.termsOfService
+msgid "Terms of Service"
+msgstr ""
+
+#: identity.privacyPolicy
+msgid "Privacy Policy"
+msgstr ""
+
+#. # LOCALIZATION NOTE (identity.chooseIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
+#: identity.chooseIdentity.description
+msgid "Sign in to %S"
+msgstr ""
+
+#: identity.chooseIdentity.label
+msgid "Use an existing email"
+msgstr ""
+
+#: identity.newIdentity.label
+msgid "Use a different email"
+msgstr ""
+
+#: identity.newIdentity.accessKey
+msgctxt "identity.newIdentity.accessKey"
+msgid "e"
+msgstr ""
+
+#: identity.newIdentity.email.placeholder
+msgid "Email"
+msgstr "ఇమెయిల్"
+
+#. # LOCALIZATION NOTE (identity.newIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
+#: identity.newIdentity.description
+msgid "Enter your email address to sign in to %S"
+msgstr ""
+
+#: identity.next.label
+#, fuzzy
+msgid "Next"
+msgstr "నెట్"
+
+#: identity.next.accessKey
+msgctxt "identity.next.accessKey"
+msgid "n"
+msgstr ""
+
+#. # LOCALIZATION NOTE: shown in the popup notification when a user successfully logs into a website
+#. # LOCALIZATION NOTE (identity.loggedIn.description): %S is the user's identity (e.g. user@example.com)
+#: identity.loggedIn.description
+msgid "Signed in as: %S"
+msgstr ""
+
+#: identity.loggedIn.signOut.label
+msgid "Sign Out"
+msgstr ""
+
+#: identity.loggedIn.signOut.accessKey
+msgctxt "identity.loggedIn.signOut.accessKey"
+msgid "O"
+msgstr ""
+
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareMicrophone.message, getUserMedia.shareSpecificMicrophone.label): %S is the website origin (e.g. www.mozilla.org)
+#: getUserMedia.shareCamera.message
+#, fuzzy
+msgid "Would you like to share your camera with %S?"
+msgstr "%S తోటి మీరు మీ స్థానమును పంచుకొనవలెనని అనుకొనుచున్నారా?"
+
+#: getUserMedia.shareCamera.label
+msgid "Share Camera"
+msgstr ""
+
+#: getUserMedia.shareCamera.accesskey
+msgctxt "getUserMedia.shareCamera.accesskey"
+msgid "S"
+msgstr ""
+
+#: getUserMedia.shareSpecificCamera.label
+msgid "Share Camera: %S"
+msgstr ""
+
+#: getUserMedia.shareMicrophone.message
+#, fuzzy
+msgid "Would you like to share your microphone with %S?"
+msgstr "%S తోటి మీరు మీ స్థానమును పంచుకొనవలెనని అనుకొనుచున్నారా?"
+
+#: getUserMedia.shareMicrophone.label
+msgid "Share Microphone"
+msgstr ""
+
+#: getUserMedia.shareMicrophone.accesskey
+msgctxt "getUserMedia.shareMicrophone.accesskey"
+msgid "S"
+msgstr ""
+
+#: getUserMedia.shareSpecificMicrophone.label
+msgid "Share Microphone: %S"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.message
+msgid "Would you like to share your camera and microphone with %S?"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.label
+msgid "Share Camera and Microphone"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.accesskey
+msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
+msgid "S"
+msgstr ""
+
+#~ msgid "Open Add-ons Manager"
+#~ msgstr "పొడిగింతలు నిర్వాహికను తెరువుము"
+
+#~ msgid "Share this"
+#~ msgstr "దీనిని పంచు"
+
+#~ msgid "You shared this"
+#~ msgstr "మీరు దీనిని పంచినారు"
+
+#~ msgid "Page shared"
+#~ msgstr "పేజీ పంచబడింది"

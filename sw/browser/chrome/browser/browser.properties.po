@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-28 20:23-0700\n"
+"POT-Creation-Date: 2012-10-11 10:17+0200\n"
 "PO-Revision-Date: 2012-03-12 19:31+0200\n"
 "Last-Translator: Boniface <bonifacechallo@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,15 +148,6 @@ msgstr "Anza upya Sasa"
 msgctxt "addonInstallRestartButton.accesskey"
 msgid "R"
 msgstr "R"
-
-#: addonInstallManage
-msgid "Open Add-ons Manager"
-msgstr "Fungua Msimamizi wa Vifaa vya nyongeza"
-
-#: addonInstallManage.accesskey
-msgctxt "addonInstallManage.accesskey"
-msgid "O"
-msgstr "O"
 
 #. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
 #. # #1 is the add-on name, #2 is the host name, #3 is the application name
@@ -432,8 +423,8 @@ msgstr "R"
 msgid "Would you like to activate the plugins on this page?"
 msgstr ""
 
-#: activatePluginsMessage.label
-msgid "Activate plugins"
+#: activateAllPluginsMessage.label
+msgid "Activate All Plugins"
 msgstr ""
 
 #: activatePluginsMessage.accesskey
@@ -457,6 +448,41 @@ msgstr ""
 msgctxt "activatePluginsMessage.never.accesskey"
 msgid "N"
 msgstr ""
+
+#: activateSinglePlugin
+msgid "Activate"
+msgstr "Amilisha"
+
+#: PluginClickToPlay
+msgid "Click here to activate the %S plugin."
+msgstr ""
+
+#. # LOCALIZATION NOTE - "vulnerable" indicates there is a security bug in the
+#. # plugin that is being exploited by attackers.
+#: PluginVulnerableUpdatable
+msgid "This plugin is vulnerable and should be updated."
+msgstr ""
+
+#: PluginVulnerableNoUpdate
+msgid "This plugin has security vulnerabilities."
+msgstr ""
+
+#: vulnerableUpdatablePluginWarning
+msgid "Outdated Version!"
+msgstr ""
+
+#: vulnerableNoUpdatePluginWarning
+msgid "Vulnerable Plugin!"
+msgstr ""
+
+#: vulnerablePluginsMessage
+msgid "Some plugins have been deactivated for your safety."
+msgstr ""
+
+#: pluginInfo.unknownPlugin
+#, fuzzy
+msgid "Unknown"
+msgstr "(Isiyojulikana)"
 
 #. # Sanitize
 #. # LOCALIZATION NOTE (sanitizeDialog2.everything.title): When "Time range to
@@ -980,6 +1006,24 @@ msgctxt "syncPromoNotification.learnMoreLinkText"
 msgid "Learn More"
 msgstr "Jifunze Zaidi"
 
+#. # LOCALIZATION NOTE (syncPromoNotification.addons.label): This appears in
+#. # the add-on install complete panel when Sync isn't set.
+#. # %S will be replaced by syncBrandShortName.
+#. # The final space separates this text from the Learn More link.
+#: syncPromoNotification.addons.description
+#, fuzzy
+msgid "You can access your add-ons on all your devices with %S. "
+msgstr "Unaweza kufikia nywila zako kwenye vifaa vyako vyote kwa %S. "
+
+#. # LOCALIZATION NOTE (syncPromoNotification.addons-sync-disabled.label):
+#. # This appears in the add-on install complete panel when Sync is set
+#. # but addons sync is not. %S will be replaced by syncBrandShortName.
+#. # The final space separates this text from the Learn More link.
+#: syncPromoNotification.addons-sync-disabled.description
+msgid ""
+"You can use your %S account to synchronize add-ons across multiple devices. "
+msgstr ""
+
 #. # Telemetry prompt
 #. # LOCALIZATION NOTE (telemetryOptInPrompt): %1$S will be replaced by
 #. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner
@@ -1029,15 +1073,6 @@ msgstr ""
 
 #: webapps.install.success
 msgid "Application Installed"
-msgstr ""
-
-#. # LOCALIZATION NOTE (webapps.uninstall.notification): %S will be replaced with the name of the uninstalled web app
-#: webapps.uninstall.notification
-msgid "%S has been uninstalled from your computer."
-msgstr ""
-
-#: webapps.uninstall.label
-msgid "Uninstall App"
 msgstr ""
 
 #. # Telemetry opt-out prompt for Aurora and Nightly
@@ -1113,6 +1148,7 @@ msgstr "Masharti ya Huduma"
 msgid "Privacy Policy"
 msgstr "Sera ya Faragha"
 
+#. # LOCALIZATION NOTE (identity.chooseIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
 #: identity.chooseIdentity.description
 msgid "Sign in to %S"
 msgstr ""
@@ -1135,7 +1171,7 @@ msgstr ""
 msgid "Email"
 msgstr "Gmail"
 
-#. # LOCALIZATION NOTE (identity.newIdentity.description, identity.chooseIdentity.description): %S is the website origin (ie. https://www.mozilla.org) shown in popup notifications.
+#. # LOCALIZATION NOTE (identity.newIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
 #: identity.newIdentity.description
 msgid "Enter your email address to sign in to %S"
 msgstr ""
@@ -1150,7 +1186,7 @@ msgid "n"
 msgstr ""
 
 #. # LOCALIZATION NOTE: shown in the popup notification when a user successfully logs into a website
-#. # LOCALIZATION NOTE (identity.loggedIn.description): %S is the website origin (ie. https://www.mozilla.org)
+#. # LOCALIZATION NOTE (identity.loggedIn.description): %S is the user's identity (e.g. user@example.com)
 #: identity.loggedIn.description
 msgid "Signed in as: %S"
 msgstr ""
@@ -1163,6 +1199,60 @@ msgstr ""
 msgctxt "identity.loggedIn.signOut.accessKey"
 msgid "O"
 msgstr ""
+
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareMicrophone.message, getUserMedia.shareSpecificMicrophone.label): %S is the website origin (e.g. www.mozilla.org)
+#: getUserMedia.shareCamera.message
+#, fuzzy
+msgid "Would you like to share your camera with %S?"
+msgstr "Ungependa kushiriki eneo lako na %S?"
+
+#: getUserMedia.shareCamera.label
+msgid "Share Camera"
+msgstr ""
+
+#: getUserMedia.shareCamera.accesskey
+msgctxt "getUserMedia.shareCamera.accesskey"
+msgid "S"
+msgstr ""
+
+#: getUserMedia.shareSpecificCamera.label
+msgid "Share Camera: %S"
+msgstr ""
+
+#: getUserMedia.shareMicrophone.message
+#, fuzzy
+msgid "Would you like to share your microphone with %S?"
+msgstr "Ungependa kushiriki eneo lako na %S?"
+
+#: getUserMedia.shareMicrophone.label
+msgid "Share Microphone"
+msgstr ""
+
+#: getUserMedia.shareMicrophone.accesskey
+msgctxt "getUserMedia.shareMicrophone.accesskey"
+msgid "S"
+msgstr ""
+
+#: getUserMedia.shareSpecificMicrophone.label
+msgid "Share Microphone: %S"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.message
+msgid "Would you like to share your camera and microphone with %S?"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.label
+msgid "Share Camera and Microphone"
+msgstr ""
+
+#: getUserMedia.shareCameraAndMicrophone.accesskey
+msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
+msgid "S"
+msgstr ""
+
+#~ msgid "Open Add-ons Manager"
+#~ msgstr "Fungua Msimamizi wa Vifaa vya nyongeza"
 
 #~ msgid "Apply Update"
 #~ msgstr "Tekeleza Kisasaisho"

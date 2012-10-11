@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-03 00:58-0700\n"
+"POT-Creation-Date: 2012-10-11 10:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,8 +78,9 @@ msgstr "పేజీ యొక్క ప్రతిరూపంను దాయ
 #. # LOCALIZATION NOTE (screenshotManual) A fuller description of the 'screenshot'
 #. # command, displayed when the user asks for help on what it does.
 #: screenshotManual
+#, fuzzy
 msgid ""
-"Save an PNG image of the entire visible window (optionally after a delay)"
+"Save a PNG image of the entire visible window (optionally after a delay)"
 msgstr "కనిపించుచున్న మొత్తం విండో యొక్క PNG ప్రతిరూపం దాయుము (ఐచ్చికంగా వొక ఆలస్యం తరువాత)"
 
 #. # LOCALIZATION NOTE (screenshotFilenameDesc) A very short string to describe
@@ -97,6 +98,44 @@ msgid ""
 "The name of the file (should have a '.png' extension) to which we write the "
 "screenshot."
 msgstr "మనం స్క్రీన్‌షాట్ వ్రాయబోవు ఫైలు యొక్క పేరు ('.png' పొడిగింపును) కలిగివుండాలి."
+
+#. # LOCALIZATION NOTE (screenshotClipboardDesc) A very short string to describe
+#. # the 'clipboard' parameter to the 'screenshot' command, which is displayed in
+#. # a dialog when the user is using this command.
+#: screenshotClipboardDesc
+msgid "Copy screenshot to clipboard? (true/false)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotClipboardManual) A fuller description of the
+#. # 'clipboard' parameter to the 'screenshot' command, displayed when the user
+#. # asks for help on what it does.
+#: screenshotClipboardManual
+msgid "True if you want to copy the screenshot instead of saving it to a file."
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotChromeDesc) A very short string to describe
+#. # the 'chrome' parameter to the 'screenshot' command, which is displayed in
+#. # a dialog when the user is using this command.
+#: screenshotChromeDesc
+msgid "Capture Firefox chrome window? (true/false)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotChromeManual) A fuller description of the
+#. # 'chrome' parameter to the 'screenshot' command, displayed when the user
+#. # asks for help on what it does.
+#: screenshotChromeManual
+msgid ""
+"True if you want to take the screenshot of the Firefox window rather than "
+"the web page's content window."
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotGroupOptions) A label for the optional options of
+#. # the screenshot command.
+#: screenshotGroupOptions
+#, fuzzy
+msgctxt "screenshotGroupOptions"
+msgid "Options"
+msgstr "ఐచ్చికాలు"
 
 #. # LOCALIZATION NOTE (screenshotDelayDesc) A very short string to describe
 #. # the 'delay' parameter to the 'screenshot' command, which is displayed in
@@ -127,6 +166,46 @@ msgid ""
 "True if the screenshot should also include parts of the webpage which are "
 "outside the current scrolled bounds."
 msgstr "ప్రస్తుతం స్క్రాల్ చేసిన హద్దుల బయటవున్న వెబ్‌పేజీ బాగాలను కూడా చేర్చవలెనంటే True అయివుండాలి."
+
+#. # LOCALIZATION NOTE (screenshotSelectorChromeConflict) Exception thwon when user
+#. # tries to use 'selector' option along with 'chrome' option of the screenshot
+#. # command. Refer: https://bugzilla.mozilla.org/show_bug.cgi?id=659268#c7
+#: screenshotSelectorChromeConflict
+msgid "selector option is not supported when chrome option is true"
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotGeneratedFilename) The auto generated filename
+#. # when no file name is provided. the first argument (%1$S) is the date string
+#. # in yyyy-mm-dd format and the second argument (%2$S) is the time string
+#. # in HH.MM.SS format. Please don't add the extension here.
+#: screenshotGeneratedFilename
+msgid "Screen Shot %1$S at %2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotErrorSavingToFile) Text displayed to user upon
+#. # encountering error while saving the screenshot to the file specified.
+#: screenshotErrorSavingToFile
+#, fuzzy
+msgid "Error saving to"
+msgstr "%S భద్రపరుచుటలో దోషం"
+
+#. # LOCALIZATION NOTE (screenshotSavedToFile) Text displayed to user when the
+#. # screenshot is successfully saved to the file specified.
+#: screenshotSavedToFile
+msgid "Saved to"
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotErrorCopying) Text displayed to user upon
+#. # encountering error while copying the screenshot to clipboard.
+#: screenshotErrorCopying
+msgid "Error occurred while copying to clipboard."
+msgstr ""
+
+#. # LOCALIZATION NOTE (screenshotCopied) Text displayed to user when the
+#. # screenshot is successfully copied to the clipboard.
+#: screenshotCopied
+msgid "Copied to clipboard."
+msgstr ""
 
 #. # LOCALIZATION NOTE (restartFirefoxDesc) A very short description of the
 #. # 'restart' command. This string is designed to be shown in a menu alongside the
@@ -182,8 +261,9 @@ msgstr "CSS యెంపికకారి"
 #. # parameter to the 'inspect' command, displayed when the user asks for help
 #. # on what it does.
 #: inspectNodeManual
+#, fuzzy
 msgid ""
-"A CSS selector for use with Document.querySelector which identifies a single "
+"A CSS selector for use with document.querySelector which identifies a single "
 "element"
 msgstr "Document.querySelector తో వుపయోగించుటకు వొంటరి మూలకం గుర్తించు వొక CSS యెంపికకారి"
 
@@ -373,8 +453,10 @@ msgstr "దర్శనీయత తెరిచివుంటే మూయు�
 #. # LOCALIZATION NOTE (tiltCloseManual) A fuller description of the 'tilt close'
 #. # command, displayed when the user asks for help on what it does.
 #: tiltCloseManual
+#, fuzzy
 msgid ""
-"Close the visualization and switch back to the Inspector default highlighter"
+"Close the visualization and switch back to the Inspector's default "
+"highlighter"
 msgstr "దృశ్యనీయత మూసివేయి మరియు విచారణి అప్రమేయ ఉద్దీపనికు మారుము"
 
 #. # LOCALIZATION NOTE (breakDesc) A very short string used to describe the
@@ -501,6 +583,18 @@ msgid ""
 msgstr ""
 "ముఖ్య త్రెడ్, స్టెప్ యిన్, అవుట్ మరియు వోవర్ కోడ్ లైన్స్ ఆటంకపరచుటకు లేదా తిరిగి కొనసాగించుటకు ఆదేశాలు."
 
+#. # LOCALIZATION NOTE (dbgOpen) A very short string used to describe the function
+#. # of the dbg open command.
+#: dbgOpen
+msgid "Open the debugger"
+msgstr ""
+
+#. # LOCALIZATION NOTE (dbgClose) A very short string used to describe the function
+#. # of the dbg close command.
+#: dbgClose
+msgid "Close the debugger"
+msgstr ""
+
 #. # LOCALIZATION NOTE (dbgInterrupt) A very short string used to describe the
 #. # function of the dbg interrupt command.
 #: dbgInterrupt
@@ -542,7 +636,7 @@ msgstr ""
 "తరువాత ఆగును"
 
 #. # LOCALIZATION NOTE (dbgStepInDesc) A very short string used to describe the
-#. # function of the dbg step over command.
+#. # function of the dbg step in command.
 #: dbgStepInDesc
 msgid ""
 "Executes the current statement and then stops at the next statement. If the "
@@ -553,7 +647,7 @@ msgstr ""
 "అయితే, అప్పుడు డీబగ్గర్ ఆ ఫంక్షన్‌లోకి వెళ్ళును, లేకపోతే అది తరువాతి స్టెట్‌మెంట్ వద్ద అగును"
 
 #. # LOCALIZATION NOTE (dbgStepOutDesc) A very short string used to describe the
-#. # function of the dbg step over command.
+#. # function of the dbg step out command.
 #: dbgStepOutDesc
 msgid ""
 "Steps out of the current function and up one level if the function is "
@@ -707,7 +801,8 @@ msgstr "సంస్థాపిత పొడిగింతల జాబిత�
 #. # 'addon list <type>' command. This string is designed to be shown in a menu
 #. # alongside the command name, which is why it should be as short as possible.
 #: addonListTypeDesc
-msgid "Select an addon type"
+#, fuzzy
+msgid "Select an add-on type"
 msgstr "పొడిగింత రకం యెంపికచేయి"
 
 #. # LOCALIZATION NOTE (addonListDictionaryHeading, addonListExtensionHeading,
@@ -735,15 +830,17 @@ msgid "The following themes are currently installed:"
 msgstr "కింది థీమ్స్ ప్రస్తుతం సంస్థాపించబడెను:"
 
 #: addonListAllHeading
-msgid "The following addons are currently installed:"
+#, fuzzy
+msgid "The following add-ons are currently installed:"
 msgstr "కింది పొడిగింతలు ప్రస్తుతం సంస్థాపించబడెను:"
 
 #: addonListUnknownHeading
-msgid "The following addons of the selected type are currently installed:"
+#, fuzzy
+msgid "The following add-ons of the selected type are currently installed:"
 msgstr "ఎంపికచేసిన రకం యొక్క కింది పొడిగింతలు ప్రస్తుతం సంస్థాపించబడెను:"
 
 #. # LOCALIZATION NOTE (addonNameDesc) A very short description of the
-#. # name parameter of numerous addon commands. This string is designed to be shown
+#. # name parameter of numerous add-on commands. This string is designed to be shown
 #. # in a menu alongside the command name, which is why it should be as short as
 #. # possible.
 #: addonNameDesc
@@ -751,9 +848,10 @@ msgid "The name of the add-on"
 msgstr "పొడిగింత పేరు"
 
 #. # LOCALIZATION NOTE (addonNoneOfType) Used in the output of the 'addon list'
-#. # command when a search for addons of a particular type were not found.
+#. # command when a search for add-ons of a particular type were not found.
 #: addonNoneOfType
-msgid "There are no addons of that type installed."
+#, fuzzy
+msgid "There are no add-ons of that type installed."
 msgstr "సంస్థాపిత రకం యొక్క పొడిగింతలు లేవు."
 
 #. # LOCALIZATION NOTE (addonEnableDesc) A very short description of the
@@ -764,14 +862,14 @@ msgid "Enable the specified add-on"
 msgstr "తెలుపబడిన పొడిగింత చేతనంచేయి"
 
 #. # LOCALIZATION NOTE (addonAlreadyEnabled) Used in the output of the
-#. # 'addon enable' command when an attempt is made to enable an addon is already
-#. # enabled.
+#. # 'addon enable' command when an attempt is made to enable an add-on that is
+#. # already enabled.
 #: addonAlreadyEnabled
 msgid "%S is already enabled."
 msgstr "%S యిప్పటికే చేతనం చేయబడివుంది."
 
 #. # LOCALIZATION NOTE (addonEnabled) Used in the output of the 'addon enable'
-#. # command when an addon is enabled.
+#. # command when an add-on is enabled.
 #: addonEnabled
 msgid "%S enabled."
 msgstr "%S చేతనమైంది."
@@ -784,14 +882,14 @@ msgid "Disable the specified add-on"
 msgstr "తెలుపబడిన పొడిగింత చేతనంచేయి"
 
 #. # LOCALIZATION NOTE (addonAlreadyDisabled) Used in the output of the
-#. # 'addon disable' command when an attempt is made to disable an addon is already
-#. # disabled.
+#. # 'addon disable' command when an attempt is made to disable an add-on that is
+#. # already disabled.
 #: addonAlreadyDisabled
 msgid "%S is already disabled."
 msgstr "%S యిప్పటికే అచేతనంచేయబడింది."
 
 #. # LOCALIZATION NOTE (addonDisabled) Used in the output of the 'addon disable'
-#. # command when an addon is disabled.
+#. # command when an add-on is disabled.
 #: addonDisabled
 msgid "%S disabled."
 msgstr "%S అచేతనమైంది."
@@ -945,7 +1043,8 @@ msgstr "ఎంపకిచే సరిపోలిన మూలకాలు: %1
 #. # a menu alongside the command name, which is why it should be as short as
 #. # possible.
 #: pagemodRemoveAttributeDesc
-msgid "Remove matching atributes"
+#, fuzzy
+msgid "Remove matching attributes"
 msgstr "సరిపోలిన యాట్రిబ్యూట్లను తీసివేయి"
 
 #. # LOCALIZATION NOTE (pagemodRemoveAttributeSearchAttributesDesc) A very short
@@ -1075,8 +1174,9 @@ msgstr "ఒక కుకీ అమర్చు"
 #. # LOCALIZATION NOTE (cookieSetManual) A fuller description of the 'cookie set'
 #. # command, displayed when the user asks for help on what it does.
 #: cookieSetManual
+#, fuzzy
 msgid ""
-"Set a cookie by specifying a key name, it's value and optionally one or more "
+"Set a cookie by specifying a key name, its value and optionally one or more "
 "of the following attributes: expires (max-age in seconds or the expires date "
 "in GMTString format), path, domain, secure"
 msgstr ""
@@ -1101,6 +1201,8 @@ msgstr "అమర్చుటకు కుకీ విలువ"
 #. # LOCALIZATION NOTE (cookieSetOptionsDesc) The title of a set of options to
 #. # the 'cookie set' command, displayed as a heading to the list of option.
 #: cookieSetOptionsDesc
+#, fuzzy
+msgctxt "cookieSetOptionsDesc"
 msgid "Options"
 msgstr "ఐచ్చికాలు"
 
@@ -1129,14 +1231,16 @@ msgstr "https నందు మాత్రమే బదిలీకరించ�
 #. # 'jsb' command. This string is designed to be shown in a menu
 #. # alongside the command name, which is why it should be as short as possible.
 #: jsbDesc
-msgid "Javascript beautifier"
+#, fuzzy
+msgid "JavaScript beautifier"
 msgstr "జావాస్క్రిప్ట్ బ్యూటిఫైయిర్"
 
 #. # LOCALIZATION NOTE (jsbUrlDesc) A very short description of the
 #. # 'jsb <url>' parameter. This string is designed to be shown in a menu
 #. # alongside the command name, which is why it should be as short as possible.
 #: jsbUrlDesc
-msgid "The URL of the JS file to prettify"
+#, fuzzy
+msgid "The URL of the JS file to beautify"
 msgstr "అందంగా మలచుటకు JS ఫైలు URL"
 
 #. # LOCALIZATION NOTE (jsbIndentSizeDesc) A very short description of the
@@ -1164,17 +1268,17 @@ msgstr "ప్రతివరుసను యిండెంట్ చేయు�
 #. # 'jsb <indentChar>' parameter, displayed when the user asks for help on what it
 #. # does.
 #: jsbIndentCharManual
+#, fuzzy
 msgid ""
-"The chars used to indent each line, the possible choices are space or tab."
+"The chars used to indent each line. The possible choices are space or tab."
 msgstr "ప్రతి వరుసను యిండెంట్ చేయుటకు వుపయోగించు అక్షరాలు, సాధ్యమగు ఐచ్చికాలు స్పేస్ లేదా టాబ్."
 
-#. # LOCALIZATION NOTE (jsbPreserveNewlinesDesc) A very short description of the
-#. # 'jsb <jsbPreserveNewlines>' parameter. This string is designed to be shown
-#. # in a menu alongside the command name, which is why it should be as short as
-#. # possible.
-#: jsbPreserveNewlinesDesc
-msgid "Keep existing line breaks?"
-msgstr "ఉన్న లైన్‌బ్రేక్స్ వుంచాలా?"
+#. # the 'jsb <doNotPreserveNewlines>' parameter. This string is designed to be
+#. # shown in a menu alongside the command name, which is why it should be as short
+#. # as possible.
+#: jsbDoNotPreserveNewlinesDesc
+msgid "Do not preserve line breaks"
+msgstr ""
 
 #. # LOCALIZATION NOTE (jsbPreserveNewlinesManual) A fuller description of the
 #. # 'jsb <jsbPreserveNewlines>' parameter, displayed when the user asks for help
@@ -1218,32 +1322,49 @@ msgstr "true యెప్పుడు వుంచాలి, jslint-stricter వ
 #. # in a menu alongside the command name, which is why it should be as short as
 #. # possible.
 #: jsbBraceStyleDesc
-msgid "Collapse, expand, end-expand, expand-strict"
-msgstr "Collapse, expand, end-expand, expand-strict"
+msgid "Select the coding style of braces"
+msgstr ""
 
 #. # LOCALIZATION NOTE (jsbBraceStyleManual) A fuller description of the
 #. # 'jsb <braceStyle>' parameter, displayed when the user asks for help
 #. # on what it does.
 #: jsbBraceStyleManual
 msgid ""
-"The coding style of braces. Either collapse, expand, end-expand or expand-"
-"strict"
-msgstr "బ్రెసెస్ యొక్క కోడింగ్ శైలి. కూల్చు, విస్తరించు, అంత్య-విస్తరింపు, నిర్ధిష్ట-విస్తరింపు యెదోవొకటి"
+"<p class=\"nowrap\">The coding style of braces. Select from one of the "
+"following:</p><ul><li>collapse<br/><pre>if (x == 1) {\n"
+"  ...\n"
+"} else {\n"
+"  ...\n"
+"}</pre></li><li>expand<br/><pre>if (x == 1)\n"
+"{\n"
+"  ...\n"
+"}\n"
+"else\n"
+"{\n"
+"  ...\n"
+"}</pre></li><li>end-expand<br/><pre>if (x == 1) {\n"
+"  ...\n"
+"}\n"
+"else {\n"
+"  ...\n"
+"}</pre></li><li>expand-strict<br/><pre>if (x == 1)\n"
+"{\n"
+"  return // This option can break scripts\n"
+"  {\n"
+"    a: 1\n"
+"  };\n"
+"} else {\n"
+"  ...\n"
+"}</pre></li></ul>"
+msgstr ""
 
-#. # LOCALIZATION NOTE (jsbSpaceBeforeConditionalDesc) A very short description of
-#. # the 'jsb <spaceBeforeConditional>' parameter. This string is designed to be
-#. # shown in a menu alongside the command name, which is why it should be as short
-#. # as possible.
-#: jsbSpaceBeforeConditionalDesc
-msgid "Space before if statements?"
-msgstr "if స్టేట్‌మెంట్స్ ముందు ఖాళీ?"
-
-#. # LOCALIZATION NOTE (jsbSpaceBeforeConditionalManual) A fuller description of
-#. # the 'jsb <spaceBeforeConditional>' parameter, displayed when the user asks for
-#. # help on what it does.
-#: jsbSpaceBeforeConditionalManual
-msgid "Should a space be added before conditional statements?"
-msgstr "నిభందన స్టేట్‌మెంట్స్ ముందు ఖాళీ జతచేయాలా?"
+#. # LOCALIZATION NOTE (jsbNoSpaceBeforeConditionalDesc) A very short description
+#. # of the 'jsb <noSpaceBeforeConditional>' parameter. This string is designed to
+#. # be shown in a menu alongside the command name, which is why it should be as
+#. # short as possible.
+#: jsbNoSpaceBeforeConditionalDesc
+msgid "No space before conditional statements"
+msgstr ""
 
 #. # LOCALIZATION NOTE (jsbUnescapeStringsDesc) A very short description of the
 #. # 'jsb <unescapeStrings>' parameter. This string is designed to be shown
@@ -1268,6 +1389,14 @@ msgstr "స్ట్రింగ్స్ నందు \\xNN నొటేషన�
 msgid "Please enter a valid URL"
 msgstr "చెల్లునటువంటి URL ప్రవేశపెట్టుము"
 
+#. # LOCALIZATION NOTE (jsbOptionsDesc) The title of a set of options to
+#. # the 'jsb' command, displayed as a heading to the list of options.
+#: jsbOptionsDesc
+#, fuzzy
+msgctxt "jsbOptionsDesc"
+msgid "Options"
+msgstr "ఐచ్చికాలు"
+
 #. # LOCALIZATION NOTE (calllogDesc) A very short description of the
 #. # 'calllog' command. This string is designed to be shown in a menu
 #. # alongside the command name, which is why it should be as short as possible.
@@ -1285,6 +1414,8 @@ msgstr "ఫంక్షన్ కాల్సును కన్సోల్‌�
 #. # LOCALIZATION NOTE (calllogStartReply) A string displayed as the result of
 #. # the 'calllog start' command.
 #: calllogStartReply
+#, fuzzy
+msgctxt "calllogStartReply"
 msgid "Call logging started."
 msgstr "కాల్ లాగింగ్ ప్రారంభమైంది."
 
@@ -1292,6 +1423,8 @@ msgstr "కాల్ లాగింగ్ ప్రారంభమైంది.
 #. # 'calllog stop' command. This string is designed to be shown in a menu
 #. # alongside the command name, which is why it should be as short as possible.
 #: calllogStopDesc
+#, fuzzy
+msgctxt "calllogStopDesc"
 msgid "Stop function call logging"
 msgstr "ఫంక్షన్ కాల్ లాగింగ్ ఆపుము"
 
@@ -1304,5 +1437,128 @@ msgstr "ఏ కాల్ లాగింగ్ ప్రస్తుతం క�
 #. # LOCALIZATION NOTE (calllogStopReply) A string displayed as the result of
 #. # the 'calllog stop' command when there are logging actions to stop.
 #: calllogStopReply
+#, fuzzy
+msgctxt "calllogStopReply"
 msgid "Stopped call logging. Active contexts: %1$S."
 msgstr "కాల్ లాగింగ్ ఆపివేసెను. క్రియాశీల కాంటెక్ట్స్: %1$S."
+
+#. # LOCALIZATION NOTE (calllogStartChromeDesc) A very short description of the
+#. # 'calllog chromestart' command. This string is designed to be shown in a menu
+#. # alongside the command name, which is why it should be as short as possible.
+#: calllogChromeStartDesc
+msgid "Start logging function calls for chrome code to the console"
+msgstr ""
+
+#. # LOCALIZATION NOTE (calllogChromeSourceTypeDesc) A very short description of the
+#. # 'calllog chromestart <sourceType>' parameter. This string is designed to be
+#. # shown in a menu alongside the command name, which is why it should be as short as possible.
+#: calllogChromeSourceTypeDesc
+msgid "Global object, JSM URI, or JS to get a global object from"
+msgstr ""
+
+#. # LOCALIZATION NOTE (calllogChromeSourceTypeDesc) A very short description of the
+#. # 'calllog chromestart' command. This string is designed to be shown in a menu
+#. # alongside the command name, which is why it should be as short as possible.
+#: calllogChromeSourceTypeManual
+msgid ""
+"The global object, URI of a JSM, or JS to execute in the chrome window from "
+"which to obtain a global object"
+msgstr ""
+
+#. # LOCALIZATION NOTE (calllogChromeStartReply) A string displayed as the result
+#. # of the 'calllog chromestart' command.
+#: calllogChromeStartReply
+#, fuzzy
+msgctxt "calllogChromeStartReply"
+msgid "Call logging started."
+msgstr "కాల్ లాగింగ్ ప్రారంభమైంది."
+
+#. # LOCALIZATION NOTE (calllogChromeStopDesc) A very short description of the
+#. # 'calllog chromestop' command. This string is designed to be shown in a menu
+#. # alongside the command name, which is why it should be as short as possible.
+#: calllogChromeStopDesc
+#, fuzzy
+msgctxt "calllogChromeStopDesc"
+msgid "Stop function call logging"
+msgstr "ఫంక్షన్ కాల్ లాగింగ్ ఆపుము"
+
+#. # LOCALIZATION NOTE (calllogChromeStopNoLogging) A string displayed as the
+#. # result of the 'calllog chromestop' command when there is nothing to stop.
+#: calllogChromeStopNoLogging
+msgid "No call logging for chrome code is currently active"
+msgstr ""
+
+#. # LOCALIZATION NOTE (calllogStopReply) A string displayed as the result of
+#. # the 'calllog chromestop' command when there are logging actions to stop.
+#: calllogChromeStopReply
+#, fuzzy
+msgctxt "calllogChromeStopReply"
+msgid "Stopped call logging. Active contexts: %1$S."
+msgstr "కాల్ లాగింగ్ ఆపివేసెను. క్రియాశీల కాంటెక్ట్స్: %1$S."
+
+#. # LOCALIZATION NOTE (callLogChromeAnonFunction) A string displayed as the result
+#. # of the 'calllog chromestart' command when an anonymouse function is to be
+#. # logged.
+#: callLogChromeAnonFunction
+msgid "<anonymous>"
+msgstr "<పేరులేని>"
+
+#. # LOCALIZATION NOTE (callLogChromeMethodCall) A string displayed as the result
+#. # of the 'calllog chromestart' command to proceed a method name when it is to be
+#. # logged.
+#: callLogChromeMethodCall
+msgid "Method call"
+msgstr ""
+
+#. # LOCALIZATION NOTE (callLogChromeInvalidJSM) A string displayed as the result
+#. # of the 'calllog chromestart' command with an invalid JSM or JSM path.
+#: callLogChromeInvalidJSM
+msgid "Invalid JSM!"
+msgstr ""
+
+#. # LOCALIZATION NOTE (callLogChromeVarNotFoundContent) A string displayed as the
+#. # result of the 'calllog chromestart' command with a source type of
+#. # content-variable and an invalid variable name.
+#: callLogChromeVarNotFoundContent
+msgid "Variable not found in content window."
+msgstr ""
+
+#. # LOCALIZATION NOTE (callLogChromeVarNotFoundChrome) A string displayed as the
+#. # result of the 'calllog chromestart' command with a source type of
+#. # chrome-variable and an invalid variable name.
+#: callLogChromeVarNotFoundChrome
+msgid "Variable not found in chrome window."
+msgstr ""
+
+#. # LOCALIZATION NOTE (callLogChromeEvalException) A string displayed as the
+#. # result of the 'calllog chromestart' command with a source type of JavaScript
+#. # and invalid JavaScript code.
+#: callLogChromeEvalException
+msgid "Evaluated JavaScript threw the following exception"
+msgstr ""
+
+#. # LOCALIZATION NOTE (callLogChromeEvalNeedsObject) A string displayed as the
+#. # result of passing a non-JavaScript object creating source via the
+#. # 'calllog chromestart javascript' command.
+#: callLogChromeEvalNeedsObject
+msgid ""
+"The JavaScript source must evaluate to an object whose method calls are to "
+"be logged e.g. \"({a1: function() {this.a2()},a2: function() {}});\""
+msgstr ""
+
+#~ msgid "Keep existing line breaks?"
+#~ msgstr "ఉన్న లైన్‌బ్రేక్స్ వుంచాలా?"
+
+#~ msgid "Collapse, expand, end-expand, expand-strict"
+#~ msgstr "Collapse, expand, end-expand, expand-strict"
+
+#~ msgid ""
+#~ "The coding style of braces. Either collapse, expand, end-expand or expand-"
+#~ "strict"
+#~ msgstr "బ్రెసెస్ యొక్క కోడింగ్ శైలి. కూల్చు, విస్తరించు, అంత్య-విస్తరింపు, నిర్ధిష్ట-విస్తరింపు యెదోవొకటి"
+
+#~ msgid "Space before if statements?"
+#~ msgstr "if స్టేట్‌మెంట్స్ ముందు ఖాళీ?"
+
+#~ msgid "Should a space be added before conditional statements?"
+#~ msgstr "నిభందన స్టేట్‌మెంట్స్ ముందు ఖాళీ జతచేయాలా?"
