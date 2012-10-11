@@ -22,8 +22,9 @@ user1 - anything that appears when first starting, using menus or browsing the w
        Excluded: some configuration menus that are too complicated, e.g. character set selection
        * One entry needed from ext ext/rep/ch/report* that appears in the help menu "Report Broken Web Sites
 
-lang - only do the most important languages (also read regions), your languages and languages commonly refered to 
-       or used by your users.  DO NOT translate everything!
+lang - only do the most important languages (also read regions)
+       i.e. your language and languages commonly refered to 
+       or used by your users.  *DO NOT* translate everything!
 
 user2 - Extensions/addons, Download manager, Bookmarks, Places, File browsing/downloading, Private Browsing, Session Restore, Sync, Video, PDF viewer
 
