@@ -1,0 +1,255 @@
+#. # This Source Code Form is subject to the terms of the Mozilla Public# License, v. 2.0. If a copy of the MPL was not distributed with this# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ../l10n/en-US/dom/chrome/security/csp.properties, ../l10n/id/dom/chrome/security/csp.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-23 21:09+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Accelerator-Marker: &\n"
+
+#. # CSP Warnings:
+#. # LOCALIZATION NOTE (directiveViolated):
+#. # %1$S is the directive that has been violated.
+#: directiveViolated
+msgid "Directive %1$S violated"
+msgstr "Direktif %1$S dilanggar"
+
+#. # LOCALIZATION NOTE (directiveViolatedWithURI):
+#. # %1$S is the directive that has been violated.
+#. # %2$S is the URI of the resource which violated the directive.
+#: directiveViolatedWithURI
+msgid "Directive %1$S violated by %2$S"
+msgstr "Direktif %1$S dilanggar oleh %2$S"
+
+#. # LOCALIZATION NOTE (triedToSendReport):
+#. # %1$S is the URI we attempted to send a report to.
+#: triedToSendReport
+msgid "Tried to send report to invalid URI: \"%1$S\""
+msgstr "Mencoba mengirimkan laporan ke URI yang tidak valid: \"%1$S\""
+
+#. # LOCALIZATION NOTE (errorWas):
+#. # %1$S is the error resulting from attempting to send the report
+#: errorWas
+msgid "error was: \"%1$S\""
+msgstr "galat sebelumnya: \"%1$S\""
+
+#. # LOCALIZATION NOTE (couldNotParseReportURI):
+#. # %1$S is the report URI that could not be parsed
+#: couldNotParseReportURI
+msgid "couldn't parse report URI: %1$S"
+msgstr "tidak dapat mengurai URI laporan: %1$S"
+
+#. # LOCALIZATION NOTE (couldNotProcessUnknownDirective):
+#. # %1$S is the unknown directive
+#: couldNotProcessUnknownDirective
+msgid "Couldn't process unknown directive '%1$S'"
+msgstr "Tidak dapat memproses direktif tidak dikenal '%1$S'"
+
+#. # LOCALIZATION NOTE (doNotUnderstandOption):
+#. # %1$S is the option that could not be understood
+#: doNotUnderstandOption
+msgid "don't understand option '%1$S'.  Ignoring it."
+msgstr "tidak memahami opsi '%1$S'.  Diabaikan."
+
+#. # LOCALIZATION NOTE (notETLDPlus1):
+#. # %1$S is the ETLD of the report URI that could not be used
+#: notETLDPlus1
+msgid "can't use report URI from non-matching eTLD+1: %1$S"
+msgstr "tidak dapat menggunakan URI laporan pada eTLD+1 yang tidak cocok: %1$S"
+
+#. # LOCALIZATION NOTE (notSameScheme):
+#. # %1$S is the report URI that could not be used
+#: notSameScheme
+msgid ""
+"can't use report URI with different scheme from originating document: %1$S"
+msgstr ""
+"tidak dapat menggunakan URI laporan yang menggunakan skema berbeda dengan "
+"dokumen awal: %1$S"
+
+#. # LOCALIZATION NOTE (notSamePort):
+#. # %1$S is the report URI that could not be used
+#: notSamePort
+msgid ""
+"can't use report URI with different port from originating document: %1$S"
+msgstr ""
+"tidak dapat menggunakan URI laporan yang memakai port berbeda dengan dokumen "
+"awal: %1$S"
+
+#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
+#. # %1$S is the URI of the page with the policy
+#. # %2$S is the report URI that could not be used
+#: pageCannotSendReportsTo
+msgid "page on %1$S cannot send reports to %2$S"
+msgstr "laman pada %1$S tidak dapat mengirim laporan ke %2$S"
+
+#: allowOrDefaultSrcRequired
+msgid ""
+"'allow' or 'default-src' directive required but not present.  Reverting to "
+"\"default-src 'none'\""
+msgstr ""
+"direktif 'allow' atau 'default-src' wajib ada, tapi tidak tersedia. Kembali "
+"ke \"default-src 'none'\""
+
+#. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
+#. # %1$S is the CSP Source that could not be parsed
+#: failedToParseUnrecognizedSource
+msgid "Failed to parse unrecognized source %1$S"
+msgstr "Gagal mengurai sumber tak dikenal %1$S"
+
+#. # LOCALIZATION NOTE (reportPostRedirect):
+#. # %1$S is the specified report URI before redirect
+#: reportPostRedirect
+msgid "Post of violation report to %1$S failed, as a redirect occurred"
+msgstr ""
+"Pengiriman laporan pelanggaran ke %1$S gagal karena terjadi pengarahan ulang"
+
+#. # LOCALIZATION NOTE (allowDirectiveDeprecated):
+#: allowDirectiveDeprecated
+msgid ""
+"allow directive is deprecated, use the equivalent default-source directive "
+"instead"
+msgstr ""
+
+#. # CSP Errors:
+#: policyURINotAlone
+msgid "policy-uri directive can only appear alone"
+msgstr "Direktif policy-uri hanya dapat tampil mandiri"
+
+#: noParentRequest
+msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+msgstr "policy-uri tidak dapat diambil tanpa adanya permintaan induk dan CSP."
+
+#. # LOCALIZATION NOTE (policyURIParseError):
+#. # %1$S is the URI that could not be parsed
+#: policyURIParseError
+msgid "could not parse URI in policy URI: %1$S"
+msgstr "tidak dapat mengurai URI pada URI kebijakan: %1$S"
+
+#. # LOCALIZATION NOTE (nonMatchingHost):
+#. # %1$S is the URI host that does not match
+#: nonMatchingHost
+msgid "can't fetch policy uri from non-matching hostname: %1$S"
+msgstr ""
+"tidak dapat mengambil URI kebijakan dari nama inang yang tidak cocok: %1$S"
+
+#. # LOCALIZATION NOTE (nonMatchingPort):
+#. # %1$S is the URI port that does not match
+#: nonMatchingPort
+msgid "can't fetch policy uri from non-matching port: %1$S"
+msgstr "tidak dapat mengambil URI kebijakan dari port yang tidak cocok: %1$S"
+
+#. # LOCALIZATION NOTE (nonMatchingScheme):
+#. # %1$S is the URI scheme that does not match
+#: nonMatchingScheme
+msgid "can't fetch policy uri from non-matching scheme: %1$S"
+msgstr "tidak dapat mengambil URI kebijakan dari skema yang tidak cocok: %1$S"
+
+#. # LOCALIZATION NOTE (errorFetchingPolicy):
+#. # %1$S is the error that caused fetching to fail
+#: errorFetchingPolicy
+msgid "Error fetching policy-uri: %1$S"
+msgstr "Gagal mengambil policy-uri: %1$S"
+
+#: cspSourceNotURI
+msgid "Provided argument is not an nsIURI"
+msgstr "Argumen yang disediakan bukan nsIURI"
+
+#: argumentIsNotString
+msgid "Provided argument is not a string"
+msgstr "Argumen yang disediakan bukan string"
+
+#: selfDataNotProvided
+msgid "Can't use 'self' if self data is not provided"
+msgstr "Tidak dapat menggunakan 'self' jika datanya tidak disediakan"
+
+#. # LOCALIZATION NOTE (uriWithoutScheme):
+#. # %1$S is the URI without a scheme
+#: uriWithoutScheme
+msgid "can't parse a URI without a scheme: %1$S"
+msgstr "tidak dapat mengurai URL tanpa skema: %1$S"
+
+#: selfKeywordNoSelfData
+msgid "self keyword used, but no self data specified"
+msgstr "kata kunci self digunakan tapi data pada self tidak ditentukan"
+
+#. # LOCALIZATION NOTE (couldntParseInvalidSource):
+#. # %1$S is the source that could not be parsed
+#: couldntParseInvalidSource
+msgid "Couldn't parse invalid source %1$S"
+msgstr "Tidak dapat mengurai sumber yang tidak valid %1$S"
+
+#. # LOCALIZATION NOTE (hostSourceWithoutData):
+#. # %1$S is the source
+#: hostSourceWithoutData
+msgid "Can't create host-only source %1$S without 'self' data"
+msgstr "Tidak dapat membuat sumber inang-saja %1$S tanpa data 'self'"
+
+#. # LOCALIZATION NOTE (sourceWithoutData):
+#. # %1$S is the source
+#: sourceWithoutData
+msgid "Can't create source %1$S without 'self' data"
+msgstr "Tidak dapat membuat sumber %1$S tanpa data 'self'"
+
+#. # LOCALIZATION NOTE (couldntParseInvalidHost):
+#. # %1$S is the host that's invalid
+#: couldntParseInvalidHost
+msgid "Couldn't parse invalid host %1$S"
+msgstr "Tidak dapat mengurai inang yang tidak valid %1$S"
+
+#. # LOCALIZATION NOTE (couldntParseScheme):
+#. # %1$S is the string source
+#: couldntParseScheme
+msgid "Couldn't parse scheme in %1$S"
+msgstr "Tidak dapat mengurai skema pada %1$S"
+
+#. # LOCALIZATION NOTE (couldntParsePort):
+#. # %1$S is the string source
+#: couldntParsePort
+msgid "Couldn't parse port in %1$S"
+msgstr "Tidak dapat mengurai port pada %1$S"
+
+#. # LOCALIZATION NOTE (notIntersectPort):
+#. # %1$S is one source we tried to intersect
+#. # %2$S is the other
+#: notIntersectPort
+msgid "Could not intersect %1$S with %2$S due to port problems."
+msgstr ""
+"Tidak dapat mengintersesksi %1$S dengan %2$S karena ada masalah pada port."
+
+#. # LOCALIZATION NOTE (notIntersectScheme):
+#. # %1$S is one source we tried to intersect
+#. # %2$S is the other
+#: notIntersectScheme
+msgid "Could not intersect %1$S with %2$S due to scheme problems."
+msgstr ""
+"Tidak dapat menginterseksi %1$S dengan %2$S karena ada masalah pada skema."
+
+#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
+#. # %1$S is the source
+#: intersectingSourceWithUndefinedHost
+msgid "intersecting source with undefined host: %1$S"
+msgstr "menginterseksi sumber dengan inang yang tidak didefinisikan: %1$S"
+
+#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
+#. # %1$S is the first source
+#. # %2$S is the second source
+#: intersectingSourcesWithUndefinedHosts
+msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+msgstr ""
+"mengintersesksi dua sumber dengan inang yang tidak didefinisikan: %1$S dan "
+"%2$S"
+
+#. # LOCALIZATION NOTE (duplicateDirective):
+#. # %1$S is the name of the duplicate directive
+#: duplicateDirective
+msgid ""
+"Duplicate %1$S directives detected.  All but the first instance will be "
+"ignored."
+msgstr ""
