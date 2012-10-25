@@ -54,25 +54,35 @@ Must Translate
 
 Optional
 --------
-mobile - all additional files required for Firefox Mobile/Fennec. If you want to get onto 
-         Android then do this file.  You will also need most of the rest of Firefox.
 
-developers - all web developer centric parts if Firefox.  If you web developers who speak your 
-             language mostly work in English then rather leave this untranslated.
-
-other,1 - Everything not yet classified
++------------+------------------------------------------------------------------------------------+
+| Phase      | Details                                                                            |
++============+====================================================================================+
+| mobile     | all additional files required for Firefox Mobile/Fennec. If you want to get onto   |
+|            | Android then do this file.  You will also need most of the rest of Firefox.        |
++------------+------------------------------------------------------------------------------------+
+| developers | all web developer centric parts if Firefox.  If you web developers who speak your  |
+|            | language mostly work in English then rather leave this untranslated.               |
++------------+------------------------------------------------------------------------------------+
+| other,1    | Everything not yet classified                                                      |
++------------+------------------------------------------------------------------------------------+
 
 Safely Ignore
 -------------
-security - Certificate lists, etc.  Since most of this is not understood by anyone in English
-           and most users will never see it rather leave it untranslated.  If someone does
-           see something here like an error it will make more sense to see it in English
-           so that they can search the Internet for the error.
 
-notnb - not important stuff that you can safely leave right till the end.  These are things like
-        jokes and pages that nobody will ever see.  Rather focus on areas that impact your
-        users.
-
-never - things that we will never translate.  Examples of things that you will see here are XML
-        error messages.  Since these are only translated into French, German and some other
-        languages for the XML spec leave them untranslated.
++----------+------------------------------------------------------------------------------------+
+| Phase    | Details                                                                            |
++==========+====================================================================================+
+| security | Certificate lists, etc.  Since most of this is not understood by anyone in English |
+|          | and most users will never see it rather leave it untranslated.  If someone does    |
+|          | see something here like an error it will make more sense to see it in English      |
+|          | so that they can search the Internet for the error.                                |
++----------+------------------------------------------------------------------------------------+
+| notnb    | not important stuff that you can safely leave right till the end.  These are things|
+|          | like jokes and pages that nobody will ever see.  Rather focus on areas that impact |
+|          | your users.                                                                        |
++----------+------------------------------------------------------------------------------------+
+| never    | things that we will never translate.  Examples of things that you will see here are|
+|          | XML error messages.  Since these are only translated into French, German and some  |
+|          | other languages for the XML spec leave them untranslated.                          |
++----------+------------------------------------------------------------------------------------+
