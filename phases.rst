@@ -11,36 +11,46 @@ into new strings that your user will actually see.
 
 Phases
 ======
-The following are to be don in the order that we list below.  We give the phase name
-as well as a secription of white might appear in that phase.
+The following are to be completed in the order that we list below.  We give the phase name
+as well as a description of what might appear in that phase.
 
 Must Translate
 --------------
-user1 - anything that appears when first starting, using menus or browsing the web in normal use.
-       e.g. File, Edit, View menus; Find bar at bottom, error pages, first run dialogues (Moving from
-       secure to insecure pages, browsing offline, etc), About page, Rights notification
-       Excluded: some configuration menus that are too complicated, e.g. character set selection
-       * One entry needed from ext ext/rep/ch/report* that appears in the help menu "Report Broken Web Sites
 
-lang - only do the most important languages (also read regions)
-       i.e. your language and languages commonly refered to 
-       or used by your users.  *DO NOT* translate everything!
-
-user2 - Extensions/addons, Download manager, Bookmarks, Places, File browsing/downloading, Private Browsing, Session Restore, Sync, Video, PDF viewer
-
-user3 - Still focused on use: print dialogue, other XXX... menus accesible, Tab Groups
-
-config1 - First layer of Preference dialog is translated including dropdowns
-
-user4 - Page info, page source, page properties, report broken websites, dom inspector, about:rights page, about:permissions, profile reset, WebApps
-
-config2 - All XXXX... are translated, e.g. Cookies, charset names, Advanced settings
-
-install - Anything related to installation.  Not critical as mostly people use language packs
-          but allows a team to focus on installation when needed. Also include migration
-
-platform - platform specific configuration
-
++========+========================================================================================+
+| Phase  |                                                                                        |
++========+========================================================================================+
+| user1  |                                                                                        |
++--------+----------------------------------------------------------------------------------------+
+| user1  | Anything that appears when first starting, using menus or browsing the web in normal   |
+|        | use e.g. File, Edit, View menus; Find bar at bottom, error pages, first run dialogues  |
+|        | (Moving from secure to insecure pages, browsing offline, etc), About page, Rights      |
+|        | notification. Excluded: some configuration menus that are too complicated, e.g.        |
+|        | character set selection                                                                |
+|        | * One entry needed from ext ext/rep/ch/report* that appears in the help menu           |
+|        | "Report Broken Web Sites"                                                              |
++--------+----------------------------------------------------------------------------------------+
+| lang   | only do the most important languages (also read regions)                               |
+|        | i.e. your language and languages commonly refered to                                   |
+|        | or used by your users.  *DO NOT* translate everything!                                 |
++--------+----------------------------------------------------------------------------------------+
+| user2  | Extensions/addons, Download manager, Bookmarks, Places, File browsing/downloading,     |
+|        | Private Browsing, Session Restore, Sync, Video, PDF viewer                             |
++--------+----------------------------------------------------------------------------------------+
+| user3  | Still focused on use: print dialogue, other XXX... menus accesible, Tab Groups         |
++--------+----------------------------------------------------------------------------------------+
+| config1| First layer of Preference dialog is translated including dropdowns                     |
++--------+----------------------------------------------------------------------------------------+
+| user4  | Page info, page source, page properties, report broken websites, dom inspector,        |
+|        | about:rights page, about:permissions, profile reset, WebApps                           |
++--------+----------------------------------------------------------------------------------------+
+| config2| All XXXX... are translated, e.g. Cookies, charset names, Advanced settings             |
++--------+----------------------------------------------------------------------------------------+
+| install| Anything related to installation.  Not critical as mostly people use language packs    |
+|        | but allows a team to focus on installation when needed. Also include migration         |
++--------+----------------------------------------------------------------------------------------+
+|platform| platform specific configuration                                                        |
++--------+----------------------------------------------------------------------------------------+
 
 Optional
 --------
