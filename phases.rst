@@ -16,6 +16,9 @@ as well as a description of what might appear in that phase.
 
 Must Translate
 --------------
+These are phases that we must complete to be included in a Firefox release. When translating
+new strings follow this order. Also when reviewing checks you can use this order so that you
+focus on the most important translations first.
 
 +--------+----------------------------------------------------------------------------------------+
 | Phase  | Details                                                                                |
@@ -51,9 +54,12 @@ Must Translate
 +--------+----------------------------------------------------------------------------------------+
 |platform| platform specific configuration                                                        |
 +--------+----------------------------------------------------------------------------------------+
+| other,1| Everything not yet classified                                                          |
++--------+----------------------------------------------------------------------------------------+
 
 Optional
 --------
+These you can do if you are targetting the specific audience mentioned.
 
 +------------+------------------------------------------------------------------------------------+
 | Phase      | Details                                                                            |
@@ -64,11 +70,10 @@ Optional
 | developers | all web developer centric parts if Firefox.  If you web developers who speak your  |
 |            | language mostly work in English then rather leave this untranslated.               |
 +------------+------------------------------------------------------------------------------------+
-| other,1    | Everything not yet classified                                                      |
-+------------+------------------------------------------------------------------------------------+
 
 Safely Ignore
 -------------
+You can safely ignore any strings that appear in these phases.
 
 +----------+------------------------------------------------------------------------------------+
 | Phase    | Details                                                                            |
