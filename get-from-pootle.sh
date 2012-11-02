@@ -7,7 +7,7 @@ langs=$*
 user=pootlesync
 server=pootle.locamotion.org
 local_copy=.pootle_tmp
-manage_command="/var/www/sites/$instance/pootle/pootle/manage.py"
+manage_command="/var/www/sites/$instance/src/pootle/manage.py"
 manage_py_verbosity=2
 precommand=". /var/www/sites/mozilla/env/bin/activate;"
 
@@ -35,7 +35,7 @@ git stash pop --quiet
 option_project="--project=$project"
 
 sync_command="$precommand python $manage_command sync_stores --verbosity=$manage_py_verbosity $option_project $option_langs"
-pootle_dir=/var/www/sites/$instance/podirectory/$project
+pootle_dir=/var/www/sites/$instance/translations/$project
 
 # Sync project
 ssh $user@$server $sync_command || exit
