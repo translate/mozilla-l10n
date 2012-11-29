@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-11 06:58-0700\n"
+"POT-Creation-Date: 2012-11-27 22:17-0700\n"
 "PO-Revision-Date: 2012-02-29 17:52+0300\n"
 "Last-Translator: Maxi <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
 "X-Project-Style: mozilla\n"
 
@@ -111,6 +111,7 @@ msgstr ""
 "\n"
 "Tim ber i tem doki."
 
+#. # LOCALIZATION NOTE: we don't have proper plural support in the CPP code; bug 463102
 #: quitCancelDownloadsAlertTitle
 msgctxt "quitCancelDownloadsAlertTitle"
 msgid "Cancel All Downloads?"
@@ -203,6 +204,24 @@ msgstr ""
 "Ka i weko kit yeny pa dano kombedi, golo %S bi juke woko. I moko ada ni i "
 "mito weko kit yeny pa dano?"
 
+#: leavePrivateBrowsingWindowsCancelDownloadsAlertMsg
+#, fuzzy
+msgid ""
+"If you close all Private Browsing windows now, 1 download will be canceled. "
+"Are you sure you want to leave the Private Browsing mode?"
+msgstr ""
+"Ka i weko kit me yeny pa dano kombedi, golo 1 bi juke woko. I moko ada ni i "
+"mito weko kit yeny pa dano woko?"
+
+#: leavePrivateBrowsingWindowsCancelDownloadsAlertMsgMultiple
+#, fuzzy
+msgid ""
+"If you close all Private Browsing windows now, %S downloads will be "
+"canceled. Are you sure you want to leave the Private Browsing mode?"
+msgstr ""
+"Ka i weko kit yeny pa dano kombedi, golo %S bi juke woko. I moko ada ni i "
+"mito weko kit yeny pa dano?"
+
 #: cancelDownloadsOKText
 msgid "Cancel 1 Download"
 msgstr "Juk Gam 1"
@@ -245,6 +264,14 @@ msgstr "Pwail weng dong otyeko gam. "
 #: statusFormat3
 msgid "%4$S — %1$S (%2$S %3$S/sec)"
 msgstr "%4$S — %1$S (%2$S %3$S/ceken)"
+
+#. # LOCALIZATION NOTE (statusFormatNoRate): — is the "em dash" (long dash)
+#. # %1$S transfer progress; %2$S time left
+#. # example: 4 minutes left — 1.1 of 11.1 GB
+#: statusFormatNoRate
+#, fuzzy
+msgid "%2$S — %1$S"
+msgstr "%1$S — %2$S"
 
 #: bytes
 msgid "bytes"

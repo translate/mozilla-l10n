@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-05 02:30-0700\n"
+"POT-Creation-Date: 2012-11-27 22:17-0700\n"
 "PO-Revision-Date: 2012-02-17 13:57+0200\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
 
 #. # LOCALIZATION NOTE (seconds, minutes, hours, days): Semi-colon list of plural
@@ -82,6 +82,7 @@ msgstr ""
 "\n"
 "Probeer weer."
 
+#. # LOCALIZATION NOTE: we don't have proper plural support in the CPP code; bug 463102
 #: quitCancelDownloadsAlertTitle
 msgctxt "quitCancelDownloadsAlertTitle"
 msgid "Cancel All Downloads?"
@@ -176,6 +177,24 @@ msgstr ""
 "As u die privateblaai-modus nou verlaat, sal %S aflaaie gekanselleer word. "
 "Is u seker u wil die privateblaai-modus verlaat?"
 
+#: leavePrivateBrowsingWindowsCancelDownloadsAlertMsg
+#, fuzzy
+msgid ""
+"If you close all Private Browsing windows now, 1 download will be canceled. "
+"Are you sure you want to leave the Private Browsing mode?"
+msgstr ""
+"As u die privateblaai-modus nou verlaat, sal 1 aflaai gekanselleer word. Is "
+"u seker u wil die privateblaai-modus verlaat?"
+
+#: leavePrivateBrowsingWindowsCancelDownloadsAlertMsgMultiple
+#, fuzzy
+msgid ""
+"If you close all Private Browsing windows now, %S downloads will be "
+"canceled. Are you sure you want to leave the Private Browsing mode?"
+msgstr ""
+"As u die privateblaai-modus nou verlaat, sal %S aflaaie gekanselleer word. "
+"Is u seker u wil die privateblaai-modus verlaat?"
+
 #: cancelDownloadsOKText
 msgid "Cancel 1 Download"
 msgstr "Kanselleer 1 aflaai"
@@ -218,6 +237,14 @@ msgstr "Alle lêers is klaar afgelaai. "
 #: statusFormat3
 msgid "%4$S — %1$S (%2$S %3$S/sec)"
 msgstr "%4$S — %1$S (%2$S %3$S/s)"
+
+#. # LOCALIZATION NOTE (statusFormatNoRate): — is the "em dash" (long dash)
+#. # %1$S transfer progress; %2$S time left
+#. # example: 4 minutes left — 1.1 of 11.1 GB
+#: statusFormatNoRate
+#, fuzzy
+msgid "%2$S — %1$S"
+msgstr "%1$S — %2$S"
 
 #: bytes
 msgid "bytes"
