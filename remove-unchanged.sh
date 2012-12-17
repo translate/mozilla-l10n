@@ -11,3 +11,9 @@ do
 	pomerge $progress --mergecomments=no -t $lang $lang-unchanged-blank $lang
 	rm -rf $lang-unchanged*
 done
+
+cd $lang
+git checkout \
+browser/branding/official/brand.dtd.po \
+browser/branding/official/brand.properties.po \
+browser/chrome/browser-region/region.properties.po
