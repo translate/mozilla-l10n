@@ -37,7 +37,7 @@ pootle_dir=/var/www/sites/$instance/translations/$project
 # Sync project
 ssh $user@$server $sync_command
 
-read -p "Do you wish to proceed? Do not if new translations have sync'd for your language." -N1 answer
+read -p "Do you wish to proceed? Do not if new translations have sync'd for your language." -n1 answer
 if [ "$answer" != "y" ]; then
 	exit
 fi
