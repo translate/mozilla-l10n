@@ -1,7 +1,7 @@
 #!/bin/bash
 
 zip=$*
-lang=$(echo $zip | sed "s/Firefox Aurora-\(.*\)\.zip/\1/")
+lang=$(echo $zip | sed "s/.*Firefox Aurora-\(.*\)\.zip/\1/")
 
 # Make sure we have the Mercurial repo updated
 (cd ../l10n/; ./get-and-reset-lang.sh $lang)
