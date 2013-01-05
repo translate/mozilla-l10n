@@ -12,23 +12,19 @@ manage_command="/var/www/sites/$instance/src/manage.py"
 manage_py_verbosity=2
 precommand=". /var/www/sites/mozilla/env/bin/activate;"
 
-if [ $# -lt 1 ]; then
-	echo "$(basename $0) [lang(s)]"
-	exit
+option_project="--project=$project"
+
+if [ $# -eq 0 ]; then
+	langs=$(ssh $user@$server $precommand python $manage_command list_languages --verbosity=$manage_py_verbosity $option_project)
 fi
 
-if [ $# -eq 1 ]; then
-	bashlangs=$langs
-else
-	bashlangs="{$(echo $langs | sed "s/ /,/g")}"
-fi
+bashlangs="{$(echo $langs | sed "s/ /,/g")}"
 
 for lang in $langs
 do
 	option_langs="$option_langs --language=$lang"
 done
 
-option_project="--project=$project"
 
 sync_command="$precommand python $manage_command sync_stores --verbosity=${manage_py_verbosity} $option_project $option_langs"
 update_command="$precommand python $manage_command update_stores $option_project"
