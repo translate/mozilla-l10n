@@ -18,7 +18,11 @@ if [ $# -eq 0 ]; then
 	langs=$(ssh $user@$server $precommand python $manage_command list_languages --verbosity=$manage_py_verbosity $option_project)
 fi
 
-bashlangs="{$(echo $langs | sed "s/ /,/g")}"
+if [ "$(echo $langs | egrep " ")" != "" ]; then
+	bashlangs="{$(echo $langs | sed "s/ /,/g")}"
+else
+	bashlangs=$langs
+fi
 
 for lang in $langs
 do
