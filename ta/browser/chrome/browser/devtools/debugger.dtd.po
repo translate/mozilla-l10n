@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 22:17-0700\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: 2013-01-03 09:36+0000\n"
 "Last-Translator: Shantha <shantha.thamizh@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,8 +12,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1357205808.0\n"
 
 #. This Source Code Form is subject to the terms of the Mozilla Public
@@ -64,6 +65,12 @@ msgid "Close"
 msgstr "மூடு"
 
 #. This is the tooltip for
+#. -  the button that toggles the panes visible or hidden in the debugger UI.
+#: debuggerUI.panesButton.tooltip
+msgid "Toggle panes"
+msgstr ""
+
+#. This is the tooltip for
 #. -  the button that opens up an options context menu for the debugger UI.
 #: debuggerUI.optsButton.tooltip
 msgid "Debugger Options"
@@ -76,6 +83,8 @@ msgid "Pause on exceptions"
 msgstr "விலக்கங்களில் இடைநிறுத்து"
 
 #: debuggerUI.pauseExceptions.key
+#, fuzzy
+msgctxt "debuggerUI.pauseExceptions.key"
 msgid "E"
 msgstr "E"
 
@@ -91,31 +100,89 @@ msgid "S"
 msgstr "S"
 
 #. This is the label for the
-#. -  checkbox that toggles visibility of a designated variables searchbox.
-#: debuggerUI.showVarsSearch
-msgid "Show variables searchbox"
-msgstr "மாறிகள் தேடல் பெட்டியைக் காண்பி"
+#. -  checkbox that toggles visibility of a designated variables filter box.
+#: debuggerUI.showVarsFilter
+msgid "Show variables filter box"
+msgstr ""
 
-#: debuggerUI.showVarsSearch.key
+#: debuggerUI.showVarsFilter.key
+msgctxt "debuggerUI.showVarsFilter.key"
 msgid "V"
-msgstr "V"
+msgstr ""
 
 #. This is the label for the
 #. -  checkbox that toggles visibility of hidden (non-enumerable) variables and
-#. -  properties in stack views.
-#: debuggerUI.showNonEnums
-msgid "Show hidden properties"
-msgstr "மறைந்துள்ள பண்புகளைக் காண்பி"
+#. -  properties in stack views. The "enumerable" flag is a state of a property
+#. -  defined in JavaScript. When in doubt, leave untranslated.
+#: debuggerUI.showOnlyEnum
+msgid "Show only enumerable properties"
+msgstr ""
 
-#: debuggerUI.showNonEnums.key
+#: debuggerUI.showOnlyEnum.key
+msgctxt "debuggerUI.showOnlyEnum.key"
 msgid "P"
-msgstr "P"
+msgstr ""
 
 #. This is the text that
 #. -  appears in the filter panel popup as a description.
 #: debuggerUI.searchPanelTitle
 msgid "Operators"
 msgstr "ஆப்ரேட்டர்கள்"
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the scripts search operation.
+#: debuggerUI.searchFile
+msgid "Filter scripts"
+msgstr ""
+
+#: debuggerUI.searchFile.key
+msgctxt "debuggerUI.searchFile.key"
+msgid "P"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the global search operation.
+#: debuggerUI.searchGlobal
+#, fuzzy
+msgid "Search in all files"
+msgstr "எல்லாக் கோப்புகளிலும் தேடு (%S)"
+
+#: debuggerUI.searchGlobal.key
+msgctxt "debuggerUI.searchGlobal.key"
+msgid "F"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the token search operation.
+#: debuggerUI.searchToken
+msgid "Find"
+msgstr "கண்டுபிடி"
+
+#: debuggerUI.searchToken.key
+msgctxt "debuggerUI.searchToken.key"
+msgid "F"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the line search operation.
+#: debuggerUI.searchLine
+msgid "Jump to line..."
+msgstr ""
+
+#: debuggerUI.searchLine.key
+msgid "J"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the variables search operation.
+#: debuggerUI.searchVariable
+msgid "Filter variables"
+msgstr "மாறிகளை வடிகட்டு"
+
+#: debuggerUI.searchVariable.key
+msgctxt "debuggerUI.searchVariable.key"
+msgid "V"
+msgstr ""
 
 #. This is the text that
 #. -  appears in the conditional breakpoint panel popup as a description.
@@ -131,9 +198,88 @@ msgstr ""
 msgid "Add breakpoint"
 msgstr "ப்ரேக்பாயின்ட்டைச் சேர்"
 
+#: debuggerUI.seMenuBreak.key
+msgctxt "debuggerUI.seMenuBreak.key"
+msgid "B"
+msgstr ""
+
 #. This is the text that
 #. -  appears in the source editor context menu for adding a conditional
 #. -  breakpoint.
 #: debuggerUI.seMenuCondBreak
 msgid "Add conditional breakpoint"
 msgstr "நிபந்தனையுள்ள ப்ரேக்பாயின்ட்டைச் சேர்"
+
+#: debuggerUI.seMenuCondBreak.key
+msgctxt "debuggerUI.seMenuCondBreak.key"
+msgid "B"
+msgstr ""
+
+#. This is the text that
+#. -  appears in the source editor context menu for adding an expression.
+#: debuggerUI.seMenuAddWatch
+msgid "Selection to watch expression"
+msgstr ""
+
+#: debuggerUI.seMenuAddWatch.key
+msgctxt "debuggerUI.seMenuAddWatch.key"
+msgid "E"
+msgstr ""
+
+#. This is the text that
+#. -  appears in the watch expressions context menu for adding an expression.
+#: debuggerUI.addWatch
+msgid "Add watch expression"
+msgstr "கவனிப்பு தொடரைச் சேர்"
+
+#: debuggerUI.addWatch.key
+msgctxt "debuggerUI.addWatch.key"
+msgid "E"
+msgstr ""
+
+#. LOCALIZATION NOTE (debuggerUI.removeWatch): This is the text that
+#. -  appears in the watch expressions context menu for removing all expressions.
+#: debuggerUI.removeAllWatch
+msgid "Remove all watch expressions"
+msgstr ""
+
+#: debuggerUI.removeAllWatch.key
+msgctxt "debuggerUI.removeAllWatch.key"
+msgid "E"
+msgstr ""
+
+#. LOCALIZATION NOTE (debuggerUI.stepping): These are the keycodes that
+#. -  control the stepping commands in the debugger (continue, step over,
+#. -  step in and step out).
+#: debuggerUI.stepping.resume
+#, fuzzy
+msgid "VK_F6"
+msgstr "VK_F3"
+
+#: debuggerUI.stepping.stepOver
+msgid "VK_F7"
+msgstr "VK_F7"
+
+#: debuggerUI.stepping.stepIn
+#, fuzzy
+msgctxt "debuggerUI.stepping.stepIn"
+msgid "VK_F8"
+msgstr "VK_F3"
+
+#: debuggerUI.stepping.stepOut
+#, fuzzy
+msgctxt "debuggerUI.stepping.stepOut"
+msgid "VK_F8"
+msgstr "VK_F3"
+
+#~ msgid "Show variables searchbox"
+#~ msgstr "மாறிகள் தேடல் பெட்டியைக் காண்பி"
+
+#~ msgid "V"
+#~ msgstr "V"
+
+#~ msgid "Show hidden properties"
+#~ msgstr "மறைந்துள்ள பண்புகளைக் காண்பி"
+
+#~ msgid "P"
+#~ msgstr "P"

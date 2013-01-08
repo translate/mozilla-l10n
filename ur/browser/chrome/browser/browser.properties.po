@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-04 07:22-0700\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: 2012-12-19 16:20+0000\n"
 "Last-Translator: Huda Sarfraz <huda.sarfraz@gmail.com>\n"
 "Language-Team: none\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1355934010.0\n"
@@ -724,19 +724,6 @@ msgstr "یہ ویب سائٹ شناخت کی معلومات نہیں دیتی۔"
 msgid "(unknown)"
 msgstr "(نا معلوم)"
 
-#. # Downloads Monitor Panel
-#. # LOCALIZATION NOTE (activeDownloads1, pausedDownloads1): Semi-colon list of plural
-#. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of downloads; #2 time left
-#. # examples: 1 active download (2 minutes remaining); 11 paused downloads
-#: activeDownloads1
-msgid "1 active download (#2);#1 active downloads (#2)"
-msgstr "1 متحرک ڈاون لوڈ (#2);#1 متحرک ڈاون لوڈ (#2)"
-
-#: pausedDownloads1
-msgid "1 paused download;#1 paused downloads"
-msgstr "1 توقف ڈاون لوڈ؛#1 1 توقف ڈاون لوڈ"
-
 #. # Edit Bookmark UI
 #: editBookmarkPanel.pageBookmarkedTitle
 msgid "Page Bookmarked"
@@ -1090,7 +1077,7 @@ msgstr "ایپلی کیشن تنصیب ہو گئی"
 
 #. # Telemetry opt-out prompt for Aurora and Nightly
 #. # LOCALIZATION NOTE (telemetryOptOutPrompt): %1$S and %3$S will be replaced by
-#. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
+#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
 #: telemetryOptOutPrompt
 msgid ""
 "%1$S sends information about performance, hardware, usage and customizations "
@@ -1246,54 +1233,31 @@ msgctxt "identity.loggedIn.signOut.accessKey"
 msgid "O"
 msgstr "ل"
 
-#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
-#. # LOCALIZATION NOTE (getUserMedia.shareMicrophone.message, getUserMedia.shareSpecificMicrophone.label): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message, getUserMedia.sharingCamera.message, getUserMedia.sharingMicrophone.message, getUserMedia.sharingCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
+#. # Semi-colon list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # The number of devices can be either one or two.
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
 msgstr "کیا آپ اپنا کیمرہ %S کے ساتھ شیئر کرنا چاہتے ہیں؟"
-
-#: getUserMedia.shareCamera.label
-msgid "Share Camera"
-msgstr "کیمرہ شیئر کریں"
-
-#: getUserMedia.shareCamera.accesskey
-msgctxt "getUserMedia.shareCamera.accesskey"
-msgid "S"
-msgstr "ش"
-
-#: getUserMedia.shareSpecificCamera.label
-msgid "Share Camera: %S"
-msgstr "کیمرہ شیئر کریں: %S"
 
 #: getUserMedia.shareMicrophone.message
 msgid "Would you like to share your microphone with %S?"
 msgstr "کیا آپ اپنا مائیکروفون %S کے ساتھ شیئر کرنا چاہتے ہیں؟"
 
-#: getUserMedia.shareMicrophone.label
-msgid "Share Microphone"
-msgstr "مائیکروفون شیئر کریں"
-
-#: getUserMedia.shareMicrophone.accesskey
-msgctxt "getUserMedia.shareMicrophone.accesskey"
-msgid "S"
-msgstr "ش"
-
-#: getUserMedia.shareSpecificMicrophone.label
-msgid "Share Microphone: %S"
-msgstr "مائیکروفون شیئر کریں: %S"
-
 #: getUserMedia.shareCameraAndMicrophone.message
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "کیا آپ اپنا کیمرہ اور مائیکروفون %S کے ساتھ شیئر کرنا چاہتے ہیں؟"
 
-#: getUserMedia.shareCameraAndMicrophone.label
-msgid "Share Camera and Microphone"
-msgstr "کیمرہ اور مائیکروفون شیئر کریں"
+#: getUserMedia.shareSelectedDevices.label
+msgid "Share Selected Device;Share Selected Devices"
+msgstr ""
 
-#: getUserMedia.shareCameraAndMicrophone.accesskey
-msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
+#: getUserMedia.shareSelectedDevices.accesskey
+msgctxt "getUserMedia.shareSelectedDevices.accesskey"
 msgid "S"
-msgstr "ش"
+msgstr ""
 
 #: getUserMedia.denyRequest.label
 msgid "Don't Share"
@@ -1303,6 +1267,51 @@ msgstr "شیئر مت کریں"
 msgctxt "getUserMedia.denyRequest.accesskey"
 msgid "D"
 msgstr "م"
+
+#: getUserMedia.sharingCamera.message
+msgid "You are currently sharing your camera with %S."
+msgstr ""
+
+#: getUserMedia.sharingMicrophone.message
+msgid "You are currently sharing your microphone with %S."
+msgstr ""
+
+#: getUserMedia.sharingCameraAndMicrophone.message
+msgid "You are currently sharing your camera and microphone with %S."
+msgstr ""
+
+#~ msgid "1 active download (#2);#1 active downloads (#2)"
+#~ msgstr "1 متحرک ڈاون لوڈ (#2);#1 متحرک ڈاون لوڈ (#2)"
+
+#~ msgid "1 paused download;#1 paused downloads"
+#~ msgstr "1 توقف ڈاون لوڈ؛#1 1 توقف ڈاون لوڈ"
+
+#~ msgid "Share Camera"
+#~ msgstr "کیمرہ شیئر کریں"
+
+#~ msgctxt "getUserMedia.shareCamera.accesskey"
+#~ msgid "S"
+#~ msgstr "ش"
+
+#~ msgid "Share Camera: %S"
+#~ msgstr "کیمرہ شیئر کریں: %S"
+
+#~ msgid "Share Microphone"
+#~ msgstr "مائیکروفون شیئر کریں"
+
+#~ msgctxt "getUserMedia.shareMicrophone.accesskey"
+#~ msgid "S"
+#~ msgstr "ش"
+
+#~ msgid "Share Microphone: %S"
+#~ msgstr "مائیکروفون شیئر کریں: %S"
+
+#~ msgid "Share Camera and Microphone"
+#~ msgstr "کیمرہ اور مائیکروفون شیئر کریں"
+
+#~ msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
+#~ msgid "S"
+#~ msgstr "ش"
 
 #~ msgid "%1$S for %2$S"
 #~ msgstr "%2$S کے لیے %1$S"
