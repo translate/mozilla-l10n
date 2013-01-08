@@ -6,15 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-11 10:29+0200\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: addonsConfirmInstall.title
 #, fuzzy
@@ -53,17 +54,14 @@ msgstr "Qorolım Temam"
 msgid "Installation failed"
 msgstr ""
 
-#: alertDownloads
-msgid "Downloads"
-msgstr "İñdírmeler"
-
-#: alertDownloadsStart
-msgid "Downloading: %S"
-msgstr "Yöklene: %S"
-
-#: alertDownloadsDone
-msgid "%S has finished downloading"
+#: alertDownloadsStart2
+msgid "Download starting"
 msgstr ""
+
+#: alertDownloadsDone2
+#, fuzzy
+msgid "Download complete"
+msgstr "İñdírmeler Temam"
 
 #: alertCantOpenDownload
 msgid "Can't open file. Tap to save it."
@@ -231,6 +229,20 @@ msgctxt "telemetry.optin.no"
 msgid "No"
 msgstr "Yuq"
 
+#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
+#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
+#: telemetry.optout.message
+msgid ""
+"%1$S sends information about performance, hardware, usage and customizations "
+"back to %2$S to help improve %3$S."
+msgstr ""
+"%1$S, başqaru, donanım, qullanım we şexsileştírmeler xaqındağı meğlümatnı "
+"%3$S uyğulamasın yaxşırtu öçön %2$S serveríne kirí ciberír."
+
+#: telemetry.optout.ok
+msgid "OK"
+msgstr "Temam"
+
 #. # XPInstall
 #: xpinstallPromptWarning2
 #, fuzzy
@@ -354,11 +366,15 @@ msgid "Don't ask again for this site"
 msgstr ""
 
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
 msgid "New tab opened;#1 new tabs opened"
+msgstr ""
+
+#: newprivatetabpopup.opened
+msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
 #. # Error Console
@@ -577,6 +593,10 @@ msgstr ""
 msgid "Open Link in New Tab"
 msgstr "Bocranı Yaña Í&lmekte Aç"
 
+#: contextmenu.openInPrivateTab
+msgid "Open Link in Private Tab"
+msgstr ""
+
 #: contextmenu.share
 msgctxt "contextmenu.share"
 msgid "Share"
@@ -632,9 +652,32 @@ msgstr "Suretní Saqla"
 msgid "Save Image"
 msgstr "Suretní Saqla"
 
+#: contextmenu.setWallpaper
+msgid "Set as Wallpaper"
+msgstr ""
+
 #: contextmenu.addSearchEngine
 msgid "Add Search Engine"
 msgstr "Qıdırma Motorı Ekle"
+
+#: contextmenu.playMedia
+msgid "Play"
+msgstr "Uynat"
+
+#: contextmenu.pauseMedia
+#, fuzzy
+msgid "Pause"
+msgstr "&Tınışla"
+
+#: contextmenu.shareMedia
+#, fuzzy
+msgid "Share Video"
+msgstr "Videonı Saqla"
+
+#: contextmenu.showControls2
+#, fuzzy
+msgid "Show Controls"
+msgstr "&Kontrollerní Kürset"
 
 #: contextmenu.copy
 msgid "Copy"
@@ -839,6 +882,25 @@ msgctxt "helperapps.never"
 msgid "Never"
 msgstr ""
 
+#. #Lightweight themes
+#. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
+#. # the host name of the site.
+#: lwthemeInstallRequest.message
+msgid "This site (%S) attempted to install a theme."
+msgstr "Bu sayt (%S) bír tema qororğa talpındı."
+
+#: lwthemeInstallRequest.allowButton
+#, fuzzy
+msgctxt "lwthemeInstallRequest.allowButton"
+msgid "Allow"
+msgstr "Röxset it"
+
+#~ msgid "Downloads"
+#~ msgstr "İñdírmeler"
+
+#~ msgid "Downloading: %S"
+#~ msgstr "Yöklene: %S"
+
 #~ msgid "Timed Out"
 #~ msgstr "Zaman Aşıldı"
 
@@ -911,13 +973,6 @@ msgstr ""
 #~ msgctxt "addonInstallManage.accesskey"
 #~ msgid "O"
 #~ msgstr "A"
-
-#~ msgid "This site (%S) attempted to install a theme."
-#~ msgstr "Bu sayt (%S) bír tema qororğa talpındı."
-
-#~ msgctxt "lwthemeInstallRequest.allowButton"
-#~ msgid "Allow"
-#~ msgstr "Röxset it"
 
 #~ msgctxt "lwthemeInstallRequest.allowButton.accesskey"
 #~ msgid "a"
@@ -1422,13 +1477,6 @@ msgstr ""
 
 #~ msgid "Do you want to install \"%1$S\" from this site (%2$S)?"
 #~ msgstr "\"%1$S\" östemesín bu sayttan (%2$S) qororğa tíliysízmí?"
-
-#~ msgid ""
-#~ "%1$S sends information about performance, hardware, usage and "
-#~ "customizations back to %2$S to help improve %3$S."
-#~ msgstr ""
-#~ "%1$S, başqaru, donanım, qullanım we şexsileştírmeler xaqındağı meğlümatnı "
-#~ "%3$S uyğulamasın yaxşırtu öçön %2$S serveríne kirí ciberír."
 
 #~ msgid "Do not show me this dialog box again."
 #~ msgstr "Do not show me this dialog box again."

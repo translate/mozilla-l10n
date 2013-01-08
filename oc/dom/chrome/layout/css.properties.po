@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-04 07:22-0700\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: 2012-09-09 16:02+0000\n"
 "Last-Translator: Cédric <cvalmary@yahoo.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1347206573.0\n"
@@ -64,9 +64,9 @@ msgstr "Error dins l'analisi de la valor de '%1$S'."
 msgid "Expected end of value but found '%1$S'."
 msgstr "Fin de valor esperada mas '%1$S' trobat."
 
-#: PESkipAtRuleEOF
-msgid "end of unknown at-rule"
-msgstr "Fin de règla « at » desconeguda"
+#: PESkipAtRuleEOF2
+msgid "end of at-rule"
+msgstr ""
 
 #: PEUnknownAtRule
 msgid "Unrecognized at-rule or error parsing at-rule '%1$S'."
@@ -519,23 +519,25 @@ msgid "Expected 'ltr' or 'rtl' in direction selector but found '%1$S'."
 msgstr ""
 "« ltr » o « rtl » esperat dins lo selector de direccion, mas « %1$S » trobat."
 
-#: PESupportsConditionStartEOF
-msgid "'not' or '('"
-msgstr "« not » o « ( »"
+#: PESupportsConditionStartEOF2
+msgid "'not', '(', or function"
+msgstr ""
 
-#: PESupportsConditionInParensStartEOF
-msgid "'not', '(' or identifier"
-msgstr "« not », « ( » o identificador"
+#: PESupportsConditionInParensEOF
+msgid "')'"
+msgstr ""
 
 #: PESupportsConditionNotEOF
 msgid "'not'"
 msgstr "« not »"
 
-#: PESupportsConditionExpectedOpenParen
-msgid "Expected '(' while parsing supports condition but found '%1$S'."
+#: PESupportsConditionExpectedOpenParenOrFunction
+#, fuzzy
+msgid ""
+"Expected '(' or function while parsing supports condition but found '%1$S'."
 msgstr ""
-"« ( » esperada al moment de l'analisi de la condicion de @supports, mas "
-"« %1$S » trobat."
+"« not » o « ( » esperat al moment de l'analisi de la condicion de @supports, "
+"mas « %1$S » trobat."
 
 #: PESupportsConditionExpectedCloseParen
 msgid "Expected ')' while parsing supports condition but found '%1$S'."
@@ -543,9 +545,11 @@ msgstr ""
 "« ) » esperada al moment de l'analisi de la condicion de @supports, mas « "
 "%1$S » trobat."
 
-#: PESupportsConditionExpectedStart
+#: PESupportsConditionExpectedStart2
+#, fuzzy
 msgid ""
-"Expected 'not' or '(' while parsing supports condition but found '%1$S'."
+"Expected 'not', '(', or function while parsing supports condition but found "
+"'%1$S'."
 msgstr ""
 "« not » o « ( » esperat al moment de l'analisi de la condicion de @supports, "
 "mas « %1$S » trobat."
@@ -559,3 +563,17 @@ msgstr ""
 #: PESupportsGroupRuleStart
 msgid "Expected '{' to begin @supports rule but found '%1$S'."
 msgstr "Esperàvem '{' per començar la règla @font-face mas avèm trobat '%1$S'."
+
+#~ msgid "end of unknown at-rule"
+#~ msgstr "Fin de règla « at » desconeguda"
+
+#~ msgid "'not' or '('"
+#~ msgstr "« not » o « ( »"
+
+#~ msgid "'not', '(' or identifier"
+#~ msgstr "« not », « ( » o identificador"
+
+#~ msgid "Expected '(' while parsing supports condition but found '%1$S'."
+#~ msgstr ""
+#~ "« ( » esperada al moment de l'analisi de la condicion de @supports, mas "
+#~ "« %1$S » trobat."

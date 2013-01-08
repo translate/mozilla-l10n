@@ -6,15 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-11 10:29+0200\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: addonsConfirmInstall.title
 #, fuzzy
@@ -53,17 +54,14 @@ msgstr "Uninstallation Complete"
 msgid "Installation failed"
 msgstr "Installation Aborted"
 
-#: alertDownloads
-msgid "Downloads"
-msgstr "డౌన్‌లోడ్లు"
-
-#: alertDownloadsStart
-msgid "Downloading: %S"
-msgstr "డౌనులోడుచేస్తున్నది: %S"
-
-#: alertDownloadsDone
-msgid "%S has finished downloading"
+#: alertDownloadsStart2
+msgid "Download starting"
 msgstr ""
+
+#: alertDownloadsDone2
+#, fuzzy
+msgid "Download complete"
+msgstr "డౌనులోడ్సు  పూర్తైనాయి"
 
 #: alertCantOpenDownload
 msgid "Can't open file. Tap to save it."
@@ -225,6 +223,20 @@ msgctxt "telemetry.optin.no"
 msgid "No"
 msgstr "No"
 
+#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
+#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
+#: telemetry.optout.message
+msgid ""
+"%1$S sends information about performance, hardware, usage and customizations "
+"back to %2$S to help improve %3$S."
+msgstr ""
+"%3$S మెరుగుపరచుటలో దోహద పడుటకు %1$S అనునది పనితనం, హార్డువేర్, వాడుక మరియు మలచినతీరుల "
+"సమాచారంను %2$S కు పంపును."
+
+#: telemetry.optout.ok
+msgid "OK"
+msgstr ""
+
 #. # XPInstall
 #: xpinstallPromptWarning2
 #, fuzzy
@@ -345,11 +357,15 @@ msgid "Don't ask again for this site"
 msgstr ""
 
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
 msgid "New tab opened;#1 new tabs opened"
+msgstr ""
+
+#: newprivatetabpopup.opened
+msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
 #. # Error Console
@@ -568,6 +584,10 @@ msgstr ""
 msgid "Open Link in New Tab"
 msgstr "లింకుని కొత్త  టాబ్ నందు తెరువుము"
 
+#: contextmenu.openInPrivateTab
+msgid "Open Link in Private Tab"
+msgstr ""
+
 #: contextmenu.share
 msgctxt "contextmenu.share"
 msgid "Share"
@@ -623,9 +643,32 @@ msgstr "చిత్రాన్ని  భద్రపరచు"
 msgid "Save Image"
 msgstr "చిత్రాన్ని  భద్రపరచు"
 
+#: contextmenu.setWallpaper
+msgid "Set as Wallpaper"
+msgstr ""
+
 #: contextmenu.addSearchEngine
 msgid "Add Search Engine"
 msgstr "శోధన యంత్రాన్ని కలుపు"
+
+#: contextmenu.playMedia
+msgid "Play"
+msgstr "ఆడు"
+
+#: contextmenu.pauseMedia
+#, fuzzy
+msgid "Pause"
+msgstr "నిలిపివుంచబడెను"
+
+#: contextmenu.shareMedia
+#, fuzzy
+msgid "Share Video"
+msgstr "దృశ్యాన్ని  భద్రపరచు "
+
+#: contextmenu.showControls2
+#, fuzzy
+msgid "Show Controls"
+msgstr "మీటలు చూపు"
 
 #: contextmenu.copy
 msgid "Copy"
@@ -832,6 +875,25 @@ msgctxt "helperapps.never"
 msgid "Never"
 msgstr ""
 
+#. #Lightweight themes
+#. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
+#. # the host name of the site.
+#: lwthemeInstallRequest.message
+msgid "This site (%S) attempted to install a theme."
+msgstr "(%S) సైటు  ఒక రూపలావణ్య పధ్దతిని  స్థాపించటానికి ప్రయత్నంచింది."
+
+#: lwthemeInstallRequest.allowButton
+#, fuzzy
+msgctxt "lwthemeInstallRequest.allowButton"
+msgid "Allow"
+msgstr "అనుమతించు"
+
+#~ msgid "Downloads"
+#~ msgstr "డౌన్‌లోడ్లు"
+
+#~ msgid "Downloading: %S"
+#~ msgstr "డౌనులోడుచేస్తున్నది: %S"
+
 #~ msgid "Timed Out"
 #~ msgstr "కాలము అయిపోయింది"
 
@@ -900,13 +962,6 @@ msgstr ""
 #~ msgctxt "addonInstallManage.accesskey"
 #~ msgid "O"
 #~ msgstr "O"
-
-#~ msgid "This site (%S) attempted to install a theme."
-#~ msgstr "(%S) సైటు  ఒక రూపలావణ్య పధ్దతిని  స్థాపించటానికి ప్రయత్నంచింది."
-
-#~ msgctxt "lwthemeInstallRequest.allowButton"
-#~ msgid "Allow"
-#~ msgstr "అనుమతించు"
 
 #~ msgctxt "lwthemeInstallRequest.allowButton.accesskey"
 #~ msgid "a"
@@ -1392,13 +1447,6 @@ msgstr ""
 
 #~ msgid "Application Installed"
 #~ msgstr "అనువర్తనం స్థాపించబడింది."
-
-#~ msgid ""
-#~ "%1$S sends information about performance, hardware, usage and "
-#~ "customizations back to %2$S to help improve %3$S."
-#~ msgstr ""
-#~ "%3$S మెరుగుపరచుటలో దోహద పడుటకు %1$S అనునది పనితనం, హార్డువేర్, వాడుక మరియు మలచినతీరుల "
-#~ "సమాచారంను %2$S కు పంపును."
 
 #~ msgid "%S is now fullscreen."
 #~ msgstr "%S యిప్పుడు నిండుతెరలో వుంది."

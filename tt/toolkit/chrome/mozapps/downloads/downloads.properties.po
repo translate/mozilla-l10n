@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-18 09:51-0700\n"
+"POT-Creation-Date: 2012-12-04 07:22-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,6 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #. # LOCALIZATION NOTE (seconds, minutes, hours, days): Semi-colon list of plural
 #. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -79,6 +80,7 @@ msgstr ""
 "\n"
 "Lütfen tekrar deneyin."
 
+#. # LOCALIZATION NOTE: we don't have proper plural support in the CPP code; bug 463102
 #: quitCancelDownloadsAlertTitle
 #, fuzzy
 msgctxt "quitCancelDownloadsAlertTitle"
@@ -174,6 +176,24 @@ msgstr ""
 "Şimdi Hususiy Kezinüv tarzını terk etseñiz, %S endirmeden vazgeçilecek. "
 "Hususiy Kezinüv tarzından çıqmağa istegeniñizden eminsiñizmi?"
 
+#: leavePrivateBrowsingWindowsCancelDownloadsAlertMsg
+#, fuzzy
+msgid ""
+"If you close all Private Browsing windows now, 1 download will be canceled. "
+"Are you sure you want to leave the Private Browsing mode?"
+msgstr ""
+"Şimdi Hususiy Kezinüv tarzını terk etseñiz, 1 endirmeden vazgeçilecek. "
+"Hususiy Kezinüv tarzından çıqmağa istegeniñizden eminsiñizmi?"
+
+#: leavePrivateBrowsingWindowsCancelDownloadsAlertMsgMultiple
+#, fuzzy
+msgid ""
+"If you close all Private Browsing windows now, %S downloads will be "
+"canceled. Are you sure you want to leave the Private Browsing mode?"
+msgstr ""
+"Şimdi Hususiy Kezinüv tarzını terk etseñiz, %S endirmeden vazgeçilecek. "
+"Hususiy Kezinüv tarzından çıqmağa istegeniñizden eminsiñizmi?"
+
 #: cancelDownloadsOKText
 msgid "Cancel 1 Download"
 msgstr "Bír İñdírmeden Waz kiç"
@@ -216,6 +236,14 @@ msgstr "Dosyelerníñ hemmesí iñdírílgen bula."
 #: statusFormat3
 msgid "%4$S — %1$S (%2$S %3$S/sec)"
 msgstr "%4$S — %1$S (%2$S %3$S/san)"
+
+#. # LOCALIZATION NOTE (statusFormatNoRate): — is the "em dash" (long dash)
+#. # %1$S transfer progress; %2$S time left
+#. # example: 4 minutes left — 1.1 of 11.1 GB
+#: statusFormatNoRate
+#, fuzzy
+msgid "%2$S — %1$S"
+msgstr "%1$S — %2$S"
 
 #: bytes
 msgid "bytes"
@@ -456,9 +484,6 @@ msgstr "İñdírmeler"
 
 #~ msgid "%1$Sd"
 #~ msgstr "%1$Sk"
-
-#~ msgid "%1$S — %2$S"
-#~ msgstr "%1$S — %2$S"
 
 #~ msgid "%1$S —  %2$S"
 #~ msgstr "%1$S —  %2$S"
