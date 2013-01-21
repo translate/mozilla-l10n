@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 22:17-0700\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: 2012-12-14 05:36+0000\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -17,8 +17,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
 "X-POOTLE-MTIME: 1355463399.0\n"
 
@@ -726,23 +727,6 @@ msgstr "لا يعطي هذا الموقع معلومات عن هويته."
 msgid "(unknown)"
 msgstr "(مجهول)"
 
-#. # Downloads Monitor Panel
-#. # LOCALIZATION NOTE (activeDownloads1, pausedDownloads1): Semi-colon list of plural
-#. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of downloads; #2 time left
-#. # examples: 1 active download (2 minutes remaining); 11 paused downloads
-#: activeDownloads1
-msgid "1 active download (#2);#1 active downloads (#2)"
-msgstr ""
-"تنزيل واحد نشط (#2);تنزيلان نشطان (#2);#1 تنزيلات نشطة (#2);#1 تنزيلًا نشطًا "
-"(#2);#1 تنزيل نشط (#2);لا تنزيلات نشطة (#2)"
-
-#: pausedDownloads1
-msgid "1 paused download;#1 paused downloads"
-msgstr ""
-"تنزيل واحد مُلبث;تنزيلان مُلبثان;#1 تنزيلات مُلبثة;#1 تنزيلًا مُلبثًا;#1 تنزيل "
-"مُلبث;لا تنزيلات مُلبثة"
-
 #. # Edit Bookmark UI
 #: editBookmarkPanel.pageBookmarkedTitle
 msgid "Page Bookmarked"
@@ -1098,7 +1082,7 @@ msgstr "ثُبّت التطبيق"
 
 #. # Telemetry opt-out prompt for Aurora and Nightly
 #. # LOCALIZATION NOTE (telemetryOptOutPrompt): %1$S and %3$S will be replaced by
-#. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
+#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
 #: telemetryOptOutPrompt
 msgid ""
 "%1$S sends information about performance, hardware, usage and customizations "
@@ -1254,54 +1238,31 @@ msgctxt "identity.loggedIn.signOut.accessKey"
 msgid "O"
 msgstr "ج"
 
-#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
-#. # LOCALIZATION NOTE (getUserMedia.shareMicrophone.message, getUserMedia.shareSpecificMicrophone.label): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message, getUserMedia.sharingCamera.message, getUserMedia.sharingMicrophone.message, getUserMedia.sharingCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
+#. # Semi-colon list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # The number of devices can be either one or two.
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
 msgstr "أتريد أن تشارك كمرتك مع %S؟"
-
-#: getUserMedia.shareCamera.label
-msgid "Share Camera"
-msgstr "شارك الكمرة"
-
-#: getUserMedia.shareCamera.accesskey
-msgctxt "getUserMedia.shareCamera.accesskey"
-msgid "S"
-msgstr "ش"
-
-#: getUserMedia.shareSpecificCamera.label
-msgid "Share Camera: %S"
-msgstr "شارك الكمرة: %S"
 
 #: getUserMedia.shareMicrophone.message
 msgid "Would you like to share your microphone with %S?"
 msgstr "أتريد أن تشارك ميكروفونك مع %S؟"
 
-#: getUserMedia.shareMicrophone.label
-msgid "Share Microphone"
-msgstr "شارك الميكروفون"
-
-#: getUserMedia.shareMicrophone.accesskey
-msgctxt "getUserMedia.shareMicrophone.accesskey"
-msgid "S"
-msgstr "ش"
-
-#: getUserMedia.shareSpecificMicrophone.label
-msgid "Share Microphone: %S"
-msgstr "شارك الميكروفون: %S"
-
 #: getUserMedia.shareCameraAndMicrophone.message
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "أتريد أن تشارك كمرتك وميكروفونك مع %S؟"
 
-#: getUserMedia.shareCameraAndMicrophone.label
-msgid "Share Camera and Microphone"
-msgstr "شارك الكمرة والميكروفون"
+#: getUserMedia.shareSelectedDevices.label
+msgid "Share Selected Device;Share Selected Devices"
+msgstr ""
 
-#: getUserMedia.shareCameraAndMicrophone.accesskey
-msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
+#: getUserMedia.shareSelectedDevices.accesskey
+msgctxt "getUserMedia.shareSelectedDevices.accesskey"
 msgid "S"
-msgstr "ش"
+msgstr ""
 
 #: getUserMedia.denyRequest.label
 msgid "Don't Share"
@@ -1311,6 +1272,55 @@ msgstr "لا تنشر"
 msgctxt "getUserMedia.denyRequest.accesskey"
 msgid "D"
 msgstr "ن"
+
+#: getUserMedia.sharingCamera.message
+msgid "You are currently sharing your camera with %S."
+msgstr ""
+
+#: getUserMedia.sharingMicrophone.message
+msgid "You are currently sharing your microphone with %S."
+msgstr ""
+
+#: getUserMedia.sharingCameraAndMicrophone.message
+msgid "You are currently sharing your camera and microphone with %S."
+msgstr ""
+
+#~ msgid "1 active download (#2);#1 active downloads (#2)"
+#~ msgstr ""
+#~ "تنزيل واحد نشط (#2);تنزيلان نشطان (#2);#1 تنزيلات نشطة (#2);#1 تنزيلًا "
+#~ "نشطًا (#2);#1 تنزيل نشط (#2);لا تنزيلات نشطة (#2)"
+
+#~ msgid "1 paused download;#1 paused downloads"
+#~ msgstr ""
+#~ "تنزيل واحد مُلبث;تنزيلان مُلبثان;#1 تنزيلات مُلبثة;#1 تنزيلًا مُلبثًا;#1 تنزيل "
+#~ "مُلبث;لا تنزيلات مُلبثة"
+
+#~ msgid "Share Camera"
+#~ msgstr "شارك الكمرة"
+
+#~ msgctxt "getUserMedia.shareCamera.accesskey"
+#~ msgid "S"
+#~ msgstr "ش"
+
+#~ msgid "Share Camera: %S"
+#~ msgstr "شارك الكمرة: %S"
+
+#~ msgid "Share Microphone"
+#~ msgstr "شارك الميكروفون"
+
+#~ msgctxt "getUserMedia.shareMicrophone.accesskey"
+#~ msgid "S"
+#~ msgstr "ش"
+
+#~ msgid "Share Microphone: %S"
+#~ msgstr "شارك الميكروفون: %S"
+
+#~ msgid "Share Camera and Microphone"
+#~ msgstr "شارك الكمرة والميكروفون"
+
+#~ msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
+#~ msgid "S"
+#~ msgstr "ش"
 
 #~ msgid "%1$S for %2$S"
 #~ msgstr "%1$S ل‍%2$S"

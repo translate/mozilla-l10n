@@ -3,15 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-01 10:44+0200\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #. This Source Code Form is subject to the terms of the Mozilla Public
 #. - License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -184,19 +185,15 @@ msgstr "Կայքի անվտանգությունը"
 msgid "Close Tab"
 msgstr "Փակել Էջը"
 
-#: new_tab
-msgid "New Tab"
-msgstr "Նոր էջ"
-
 #: one_tab
 msgid "1 tab"
 msgstr "1 tab"
 
-#. Localization note (num_tabs) : Number of tabs is always more than one.
+#. Localization note (num_tabs2) : Number of tabs is always more than one.
 #. We can't use android plural forms, sadly. See bug #753859.
-#: num_tabs
-msgid "&#037;d tabs"
-msgstr "&#037;d էջեր"
+#: num_tabs2
+msgid "&formatD; tabs"
+msgstr ""
 
 #: new_tab_opened
 msgid "New tab opened"
@@ -244,9 +241,25 @@ msgstr "Ուղարկել արտադրողականության տվյալը"
 msgid "Remember passwords"
 msgstr "Հիշել գաղտնաբառը"
 
-#: pref_cookies
-msgid "Enable cookies"
-msgstr "Միացնել cookie-ները"
+#: pref_cookies_menu
+msgid "Cookies"
+msgstr "Պատրաստուքներ"
+
+#: pref_cookies_accept_all
+#, fuzzy
+msgctxt "pref_cookies_accept_all"
+msgid "Enabled"
+msgstr "Միացված"
+
+#: pref_cookies_not_accept_foreign
+msgid "Enabled, excluding 3rd party"
+msgstr ""
+
+#: pref_cookies_disabled
+#, fuzzy
+msgctxt "pref_cookies_disabled"
+msgid "Disabled"
+msgstr "Անջատված"
 
 #: pref_char_encoding
 msgid "Character encoding"
@@ -269,6 +282,8 @@ msgid "Plugins"
 msgstr "Պլագիններ"
 
 #: pref_plugins_enabled
+#, fuzzy
+msgctxt "pref_plugins_enabled"
 msgid "Enabled"
 msgstr "Միացված"
 
@@ -277,12 +292,18 @@ msgid "Tap to play"
 msgstr "Խաղարկել"
 
 #: pref_plugins_disabled
+#, fuzzy
+msgctxt "pref_plugins_disabled"
 msgid "Disabled"
 msgstr "Անջատված"
 
 #: pref_text_size
 msgid "Text size"
 msgstr "Տեքստի չափը"
+
+#: pref_reflow_on_zoom2
+msgid "Pinch to reflow text"
+msgstr ""
 
 #: pref_font_size_tiny
 msgid "Tiny"
@@ -380,6 +401,27 @@ msgstr "Offline website data"
 msgid "Site preferences"
 msgstr "Site preferences"
 
+#: pref_update_autodownload
+#, fuzzy
+msgid "Automatic updates"
+msgstr "Ավտոմատ Թարմացումներ"
+
+#: pref_update_autodownload_wifi
+msgid "Only over Wi-Fi"
+msgstr ""
+
+#: pref_update_autodownload_disabled
+#, fuzzy
+msgctxt "pref_update_autodownload_disabled"
+msgid "Disabled"
+msgstr "Անջատված"
+
+#: pref_update_autodownload_enabled
+#, fuzzy
+msgctxt "pref_update_autodownload_enabled"
+msgid "Enabled"
+msgstr "Միացված"
+
 #: quit
 msgid "Quit"
 msgstr "Փակել"
@@ -430,6 +472,42 @@ msgstr "Request Desktop Site"
 msgid "Tools"
 msgstr "Գործիքներ"
 
+#: new_tab
+msgid "New Tab"
+msgstr "Նոր էջ"
+
+#: new_private_tab
+msgid "New Private Tab"
+msgstr ""
+
+#: close_all_tabs
+msgid "Close All Tabs"
+msgstr ""
+
+#: tabs_normal
+msgid "Tabs"
+msgstr "Ներդիրներ"
+
+#: tabs_private
+msgid "Private"
+msgstr ""
+
+#: tabs_synced
+msgid "Synced"
+msgstr ""
+
+#: wallpaper_success
+msgid "Wallpaper updated"
+msgstr ""
+
+#: wallpaper_progress
+msgid "Setting wallpaper"
+msgstr ""
+
+#: wallpaper_fail
+msgid "Unable to set wallpaper"
+msgstr ""
+
 #. Localization note (find_text, find_prev, find_next, find_close) : These strings are used
 #. as alternate text for accessibility. They are not visible in the UI.
 #: find_text
@@ -453,6 +531,10 @@ msgstr "Փակել"
 #: contextmenu_open_new_tab
 msgid "Open in New Tab"
 msgstr "Բացել նոր էջում"
+
+#: contextmenu_open_private_tab
+msgid "Open in Private Tab"
+msgstr ""
 
 #: contextmenu_open_in_reader
 msgid "Open in Reader"
@@ -490,11 +572,11 @@ msgid "Copy Address"
 msgstr "Copy Address"
 
 #: contextmenu_edit_bookmark
+#, fuzzy
+msgctxt "contextmenu_edit_bookmark"
 msgid "Edit"
 msgstr "Խմբագրել"
 
-#. Localization note (history_removed) : Shown in a toast notificaion
-#. after a page is removed from browser history.
 #: history_removed
 msgid "Page removed"
 msgstr "Էջը ջնջվել է"
@@ -623,9 +705,23 @@ msgstr "Բացել վերջին բոլոր էջերը"
 msgid "Top sites"
 msgstr "Հայտնի կայքերը"
 
-#: abouthome_top_sites_browse
-msgid "Browse all your top sites"
-msgstr "Բացել բոլոր հայտնի կայքերը"
+#: abouthome_topsites_edit
+#, fuzzy
+msgctxt "abouthome_topsites_edit"
+msgid "Edit"
+msgstr "Խմբագրել"
+
+#: abouthome_topsites_pin
+msgid "Pin Site"
+msgstr ""
+
+#: abouthome_topsites_unpin
+msgid "Unpin Site"
+msgstr ""
+
+#: abouthome_topsites_unpinall
+msgid "Unpin All"
+msgstr ""
 
 #. Localization note (abouthome_about_sync3, abouthome_about_apps2): The
 #. chevron (ex: "»"; unicode= U+00BB) is used as an arrow to show that
@@ -736,11 +832,10 @@ msgstr ""
 msgid "Please wait..."
 msgstr "Please wait..."
 
-#. Localization note (suggestions_prompt): The placeholder (&#037;s) should
-#. be kept in the string; this will be replaced with the name of the search
-#. engine.
-#: suggestions_prompt
-msgid "Would you like to turn on &#037;s search suggestions?"
+#. Localization note (suggestions_prompt2): The placeholder &formatS; will be
+#. replaced with the name of the search engine.
+#: suggestions_prompt2
+msgid "Would you like to turn on &formatS; search suggestions?"
 msgstr ""
 
 #: webapp_generic_name
@@ -787,6 +882,15 @@ msgstr "&brandShortName;"
 #: updater_apply_select2
 msgid "Touch to update"
 msgstr "Select to apply downloaded update."
+
+#~ msgid "&#037;d tabs"
+#~ msgstr "&#037;d էջեր"
+
+#~ msgid "Enable cookies"
+#~ msgstr "Միացնել cookie-ները"
+
+#~ msgid "Browse all your top sites"
+#~ msgstr "Բացել բոլոր հայտնի կայքերը"
 
 #~ msgid "Mozilla Marketplace"
 #~ msgstr "Mozilla Marketplace"
