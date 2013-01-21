@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-11 13:24+0200\n"
+"POT-Creation-Date: 2012-12-04 07:22-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,6 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #. # LOCALIZATION NOTE (seconds, minutes, hours, days): Semi-colon list of plural
 #. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -79,6 +80,7 @@ msgstr ""
 "\n"
 "Կրկին փորձեք:"
 
+#. # LOCALIZATION NOTE: we don't have proper plural support in the CPP code; bug 463102
 #: quitCancelDownloadsAlertTitle
 msgctxt "quitCancelDownloadsAlertTitle"
 msgid "Cancel All Downloads?"
@@ -167,6 +169,24 @@ msgstr ""
 "Եթե դուք հիմա լքեք գաղտնի նավարկման ռեժիմը, ապա %S բեռնումներ կդադարեն: Դուք "
 "համոզվա՞ծ էք, որ ցանկանում էք լքել գաղտնի նավարկման ռեժիմը:"
 
+#: leavePrivateBrowsingWindowsCancelDownloadsAlertMsg
+#, fuzzy
+msgid ""
+"If you close all Private Browsing windows now, 1 download will be canceled. "
+"Are you sure you want to leave the Private Browsing mode?"
+msgstr ""
+"Եթե դուք լքեք գաղտնի նավարկման ռեժիմը հիմա, ապա 1 բեռնում կդադարի: Դուք "
+"համոզվա՞ծ էք, որ ցանկանում էք լքել գաղտնի նավարկման ռեժիմը:"
+
+#: leavePrivateBrowsingWindowsCancelDownloadsAlertMsgMultiple
+#, fuzzy
+msgid ""
+"If you close all Private Browsing windows now, %S downloads will be "
+"canceled. Are you sure you want to leave the Private Browsing mode?"
+msgstr ""
+"Եթե դուք հիմա լքեք գաղտնի նավարկման ռեժիմը, ապա %S բեռնումներ կդադարեն: Դուք "
+"համոզվա՞ծ էք, որ ցանկանում էք լքել գաղտնի նավարկման ռեժիմը:"
+
 #: cancelDownloadsOKText
 msgid "Cancel 1 Download"
 msgstr "Դադարեցնել 1 բեռնավորում"
@@ -209,6 +229,14 @@ msgstr "Բոլոր ֆայլերը բեռնվեցին:"
 #: statusFormat3
 msgid "%4$S — %1$S (%2$S %3$S/sec)"
 msgstr "%4$S — %1$S (%2$S %3$S/վայր)"
+
+#. # LOCALIZATION NOTE (statusFormatNoRate): — is the "em dash" (long dash)
+#. # %1$S transfer progress; %2$S time left
+#. # example: 4 minutes left — 1.1 of 11.1 GB
+#: statusFormatNoRate
+#, fuzzy
+msgid "%2$S — %1$S"
+msgstr "%1$S — %2$S"
 
 #: bytes
 msgid "bytes"

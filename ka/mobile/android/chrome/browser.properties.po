@@ -6,15 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-10 17:43+0200\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: addonsConfirmInstall.title
 #, fuzzy
@@ -52,18 +53,14 @@ msgstr "ჩადგმა დასრულდა"
 msgid "Installation failed"
 msgstr ""
 
-#: alertDownloads
-msgid "Downloads"
-msgstr "ჩამოტვირთვები"
-
-#: alertDownloadsStart
-#, fuzzy
-msgid "Downloading: %S"
-msgstr "ჩამოტვირთვა - %S…"
-
-#: alertDownloadsDone
-msgid "%S has finished downloading"
+#: alertDownloadsStart2
+msgid "Download starting"
 msgstr ""
+
+#: alertDownloadsDone2
+#, fuzzy
+msgid "Download complete"
+msgstr "ჩამოტვირთვები დასრულდა"
 
 #: alertCantOpenDownload
 msgid "Can't open file. Tap to save it."
@@ -230,6 +227,18 @@ msgctxt "telemetry.optin.no"
 msgid "No"
 msgstr "არა"
 
+#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
+#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
+#: telemetry.optout.message
+msgid ""
+"%1$S sends information about performance, hardware, usage and customizations "
+"back to %2$S to help improve %3$S."
+msgstr ""
+
+#: telemetry.optout.ok
+msgid "OK"
+msgstr "დიახ"
+
 #. # XPInstall
 #: xpinstallPromptWarning2
 #, fuzzy
@@ -353,11 +362,15 @@ msgid "Don't ask again for this site"
 msgstr ""
 
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
 msgid "New tab opened;#1 new tabs opened"
+msgstr ""
+
+#: newprivatetabpopup.opened
+msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
 #. # Error Console
@@ -575,6 +588,10 @@ msgstr ""
 msgid "Open Link in New Tab"
 msgstr "ბმის ახალ დაფაზე გახსნა"
 
+#: contextmenu.openInPrivateTab
+msgid "Open Link in Private Tab"
+msgstr ""
+
 #: contextmenu.share
 msgctxt "contextmenu.share"
 msgid "Share"
@@ -632,9 +649,31 @@ msgstr "ნახატის შენახვა"
 msgid "Save Image"
 msgstr "ნახატის შენახვა"
 
+#: contextmenu.setWallpaper
+msgid "Set as Wallpaper"
+msgstr ""
+
 #: contextmenu.addSearchEngine
 msgid "Add Search Engine"
 msgstr "საძიებო სისტემის დამატება"
+
+#: contextmenu.playMedia
+msgid "Play"
+msgstr "დაკვრა"
+
+#: contextmenu.pauseMedia
+msgid "Pause"
+msgstr "პაუზა"
+
+#: contextmenu.shareMedia
+#, fuzzy
+msgid "Share Video"
+msgstr "ვიდეოს შენახვა"
+
+#: contextmenu.showControls2
+#, fuzzy
+msgid "Show Controls"
+msgstr "პულტის ჩვენება"
 
 #: contextmenu.copy
 msgid "Copy"
@@ -841,6 +880,26 @@ msgctxt "helperapps.never"
 msgid "Never"
 msgstr ""
 
+#. #Lightweight themes
+#. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
+#. # the host name of the site.
+#: lwthemeInstallRequest.message
+msgid "This site (%S) attempted to install a theme."
+msgstr "ეს საიტი (%S) თემის ჩადგმას ცდილობს."
+
+#: lwthemeInstallRequest.allowButton
+#, fuzzy
+msgctxt "lwthemeInstallRequest.allowButton"
+msgid "Allow"
+msgstr "ნების დართვა"
+
+#~ msgid "Downloads"
+#~ msgstr "ჩამოტვირთვები"
+
+#, fuzzy
+#~ msgid "Downloading: %S"
+#~ msgstr "ჩამოტვირთვა - %S…"
+
 #~ msgid "Timed Out"
 #~ msgstr "ვადაგასულია"
 
@@ -887,13 +946,6 @@ msgstr ""
 
 #~ msgid "n"
 #~ msgstr "n"
-
-#~ msgid "This site (%S) attempted to install a theme."
-#~ msgstr "ეს საიტი (%S) თემის ჩადგმას ცდილობს."
-
-#~ msgctxt "lwthemeInstallRequest.allowButton"
-#~ msgid "Allow"
-#~ msgstr "ნებართვა"
 
 #~ msgctxt "lwthemeInstallRequest.allowButton.accesskey"
 #~ msgid "a"

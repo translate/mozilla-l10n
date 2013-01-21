@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-11 17:22+0200\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: 2011-05-11 21:21+0200\n"
 "Last-Translator: Dwayne Bailey <dwayne@translate.org.za>\n"
 "Language-Team: South African English translate-devel@lists.sourceforge.net\n"
@@ -16,8 +16,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
 
 #: MimeNotCss
@@ -64,9 +65,9 @@ msgstr "Error in parsing value for '%1$S'."
 msgid "Expected end of value but found '%1$S'."
 msgstr "Expected end of value but found '%1$S'."
 
-#: PESkipAtRuleEOF
-msgid "end of unknown at-rule"
-msgstr "end of unknown at-rule"
+#: PESkipAtRuleEOF2
+msgid "end of at-rule"
+msgstr ""
 
 #: PEUnknownAtRule
 msgid "Unrecognized at-rule or error parsing at-rule '%1$S'."
@@ -497,29 +498,31 @@ msgstr "Did not expect anonymous box."
 msgid "Expected 'ltr' or 'rtl' in direction selector but found '%1$S'."
 msgstr ""
 
-#: PESupportsConditionStartEOF
-msgid "'not' or '('"
+#: PESupportsConditionStartEOF2
+msgid "'not', '(', or function"
 msgstr ""
 
-#: PESupportsConditionInParensStartEOF
-msgid "'not', '(' or identifier"
+#: PESupportsConditionInParensEOF
+msgid "')'"
 msgstr ""
 
 #: PESupportsConditionNotEOF
 msgid "'not'"
 msgstr ""
 
-#: PESupportsConditionExpectedOpenParen
-msgid "Expected '(' while parsing supports condition but found '%1$S'."
+#: PESupportsConditionExpectedOpenParenOrFunction
+msgid ""
+"Expected '(' or function while parsing supports condition but found '%1$S'."
 msgstr ""
 
 #: PESupportsConditionExpectedCloseParen
 msgid "Expected ')' while parsing supports condition but found '%1$S'."
 msgstr ""
 
-#: PESupportsConditionExpectedStart
+#: PESupportsConditionExpectedStart2
 msgid ""
-"Expected 'not' or '(' while parsing supports condition but found '%1$S'."
+"Expected 'not', '(', or function while parsing supports condition but found "
+"'%1$S'."
 msgstr ""
 
 #: PESupportsConditionExpectedNot
@@ -530,6 +533,9 @@ msgstr ""
 #, fuzzy
 msgid "Expected '{' to begin @supports rule but found '%1$S'."
 msgstr "Expected '{' to begin @font-face rule but found '%1$S'."
+
+#~ msgid "end of unknown at-rule"
+#~ msgstr "end of unknown at-rule"
 
 #~ msgid "Expected end of value for property but found '%1$S'."
 #~ msgstr "Expected end of value for property but found '%1$S'."

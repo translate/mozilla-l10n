@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-04 07:22-0700\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: 2012-12-26 19:08+0000\n"
 "Last-Translator: haryati <haryati.salehin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1356548903.0\n"
@@ -65,6 +65,12 @@ msgid "Close"
 msgstr "Tutup"
 
 #. This is the tooltip for
+#. -  the button that toggles the panes visible or hidden in the debugger UI.
+#: debuggerUI.panesButton.tooltip
+msgid "Toggle panes"
+msgstr ""
+
+#. This is the tooltip for
 #. -  the button that opens up an options context menu for the debugger UI.
 #: debuggerUI.optsButton.tooltip
 msgid "Debugger Options"
@@ -77,6 +83,8 @@ msgid "Pause on exceptions"
 msgstr "Henti pada kecualian"
 
 #: debuggerUI.pauseExceptions.key
+#, fuzzy
+msgctxt "debuggerUI.pauseExceptions.key"
 msgid "E"
 msgstr "E"
 
@@ -92,31 +100,89 @@ msgid "S"
 msgstr "P"
 
 #. This is the label for the
-#. -  checkbox that toggles visibility of a designated variables searchbox.
-#: debuggerUI.showVarsSearch
-msgid "Show variables searchbox"
-msgstr "Pamer variables searchbox"
+#. -  checkbox that toggles visibility of a designated variables filter box.
+#: debuggerUI.showVarsFilter
+msgid "Show variables filter box"
+msgstr ""
 
-#: debuggerUI.showVarsSearch.key
+#: debuggerUI.showVarsFilter.key
+msgctxt "debuggerUI.showVarsFilter.key"
 msgid "V"
-msgstr "V"
+msgstr ""
 
 #. This is the label for the
 #. -  checkbox that toggles visibility of hidden (non-enumerable) variables and
-#. -  properties in stack views.
-#: debuggerUI.showNonEnums
-msgid "Show hidden properties"
-msgstr "Pamer hidden properties"
+#. -  properties in stack views. The "enumerable" flag is a state of a property
+#. -  defined in JavaScript. When in doubt, leave untranslated.
+#: debuggerUI.showOnlyEnum
+msgid "Show only enumerable properties"
+msgstr ""
 
-#: debuggerUI.showNonEnums.key
+#: debuggerUI.showOnlyEnum.key
+msgctxt "debuggerUI.showOnlyEnum.key"
 msgid "P"
-msgstr "P"
+msgstr ""
 
 #. This is the text that
 #. -  appears in the filter panel popup as a description.
 #: debuggerUI.searchPanelTitle
 msgid "Operators"
 msgstr "Pengendali"
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the scripts search operation.
+#: debuggerUI.searchFile
+msgid "Filter scripts"
+msgstr ""
+
+#: debuggerUI.searchFile.key
+msgctxt "debuggerUI.searchFile.key"
+msgid "P"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the global search operation.
+#: debuggerUI.searchGlobal
+#, fuzzy
+msgid "Search in all files"
+msgstr "Cari dalam semua fail (%S)"
+
+#: debuggerUI.searchGlobal.key
+msgctxt "debuggerUI.searchGlobal.key"
+msgid "F"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the token search operation.
+#: debuggerUI.searchToken
+msgid "Find"
+msgstr "Cari"
+
+#: debuggerUI.searchToken.key
+msgctxt "debuggerUI.searchToken.key"
+msgid "F"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the line search operation.
+#: debuggerUI.searchLine
+msgid "Jump to line..."
+msgstr ""
+
+#: debuggerUI.searchLine.key
+msgid "J"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the variables search operation.
+#: debuggerUI.searchVariable
+msgid "Filter variables"
+msgstr "Penapis variables"
+
+#: debuggerUI.searchVariable.key
+msgctxt "debuggerUI.searchVariable.key"
+msgid "V"
+msgstr ""
 
 #. This is the text that
 #. -  appears in the conditional breakpoint panel popup as a description.
@@ -133,9 +199,88 @@ msgstr ""
 msgid "Add breakpoint"
 msgstr "Tambah breakpoint"
 
+#: debuggerUI.seMenuBreak.key
+msgctxt "debuggerUI.seMenuBreak.key"
+msgid "B"
+msgstr ""
+
 #. This is the text that
 #. -  appears in the source editor context menu for adding a conditional
 #. -  breakpoint.
 #: debuggerUI.seMenuCondBreak
 msgid "Add conditional breakpoint"
 msgstr "Tambah breakpoint bersyarat"
+
+#: debuggerUI.seMenuCondBreak.key
+msgctxt "debuggerUI.seMenuCondBreak.key"
+msgid "B"
+msgstr ""
+
+#. This is the text that
+#. -  appears in the source editor context menu for adding an expression.
+#: debuggerUI.seMenuAddWatch
+msgid "Selection to watch expression"
+msgstr ""
+
+#: debuggerUI.seMenuAddWatch.key
+msgctxt "debuggerUI.seMenuAddWatch.key"
+msgid "E"
+msgstr ""
+
+#. This is the text that
+#. -  appears in the watch expressions context menu for adding an expression.
+#: debuggerUI.addWatch
+msgid "Add watch expression"
+msgstr "Tambah watch expression"
+
+#: debuggerUI.addWatch.key
+msgctxt "debuggerUI.addWatch.key"
+msgid "E"
+msgstr ""
+
+#. LOCALIZATION NOTE (debuggerUI.removeWatch): This is the text that
+#. -  appears in the watch expressions context menu for removing all expressions.
+#: debuggerUI.removeAllWatch
+msgid "Remove all watch expressions"
+msgstr ""
+
+#: debuggerUI.removeAllWatch.key
+msgctxt "debuggerUI.removeAllWatch.key"
+msgid "E"
+msgstr ""
+
+#. LOCALIZATION NOTE (debuggerUI.stepping): These are the keycodes that
+#. -  control the stepping commands in the debugger (continue, step over,
+#. -  step in and step out).
+#: debuggerUI.stepping.resume
+#, fuzzy
+msgid "VK_F6"
+msgstr "VK_F3"
+
+#: debuggerUI.stepping.stepOver
+msgid "VK_F7"
+msgstr "VK_F7"
+
+#: debuggerUI.stepping.stepIn
+#, fuzzy
+msgctxt "debuggerUI.stepping.stepIn"
+msgid "VK_F8"
+msgstr "VK_F3"
+
+#: debuggerUI.stepping.stepOut
+#, fuzzy
+msgctxt "debuggerUI.stepping.stepOut"
+msgid "VK_F8"
+msgstr "VK_F3"
+
+#~ msgid "Show variables searchbox"
+#~ msgstr "Pamer variables searchbox"
+
+#~ msgid "V"
+#~ msgstr "V"
+
+#~ msgid "Show hidden properties"
+#~ msgstr "Pamer hidden properties"
+
+#~ msgid "P"
+#~ msgstr "P"

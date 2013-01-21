@@ -6,15 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-01 10:44+0200\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: nv_timeout
 msgid "Timed Out"
@@ -33,17 +34,16 @@ msgid "Do you want this document to be your new home page?"
 msgstr "Ցանկանու՞մ էք այս փաստաթուղթը լինի Ձեր նոր սկզբնական էջը:"
 
 #. # context menu strings
-#. # LOCALIZATION NOTE (contextMenuSearchText): %1$S is the search engine,
+#. # LOCALIZATION NOTE (contextMenuSearch): %1$S is the search engine,
 #. # %2$S is the selection string.
-#: contextMenuSearchText
+#: contextMenuSearch
 msgid "Search %1$S for \"%2$S\""
 msgstr "Փնտրել %S «%S» -ում"
 
-#: contextMenuSearchText.accesskey
-#, fuzzy
-msgctxt "contextMenuSearchText.accesskey"
+#: contextMenuSearch.accesskey
+msgctxt "contextMenuSearch.accesskey"
 msgid "S"
-msgstr "S"
+msgstr ""
 
 #. # bookmark dialog strings
 #: bookmarkAllTabsDefault
@@ -737,19 +737,6 @@ msgstr "Այս վեբ կայքը չի տրամադրում ին նույնացմ
 msgid "(unknown)"
 msgstr "(անհայտ)"
 
-#. # Downloads Monitor Panel
-#. # LOCALIZATION NOTE (activeDownloads1, pausedDownloads1): Semi-colon list of plural
-#. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of downloads; #2 time left
-#. # examples: 1 active download (2 minutes remaining); 11 paused downloads
-#: activeDownloads1
-msgid "1 active download (#2);#1 active downloads (#2)"
-msgstr "1 ակտիվ բեռնում(#2);#1 ակտիվ բեռնումներ (#2)"
-
-#: pausedDownloads1
-msgid "1 paused download;#1 paused downloads"
-msgstr "1 բեռնում դադարում;#1 բեռնումների դադարի մեջ"
-
 #. # Edit Bookmark UI
 #: editBookmarkPanel.pageBookmarkedTitle
 msgid "Page Bookmarked"
@@ -1037,6 +1024,8 @@ msgid "Yes, I want to help"
 msgstr "այո, ես ցանկանում եմ օգնել"
 
 #: telemetryYesButtonAccessKey
+#, fuzzy
+msgctxt "telemetryYesButtonAccessKey"
 msgid "Y"
 msgstr "Y"
 
@@ -1048,6 +1037,37 @@ msgstr "Ոչ՜"
 msgctxt "telemetryNoButtonAccessKey"
 msgid "N"
 msgstr "N"
+
+#. # Keyword.URL reset prompt
+#. # LOCALIZATION NOTE (keywordPrompt.message):
+#. #  - %1$S is brandShortName
+#. #  - %2$S is a host name (e.g. "somewebsearch.com") from the current value of keyword.URL
+#. #  - %3$S is the name of the default search engine (e.g. "Google")
+#: keywordPrompt.message
+msgid ""
+"%1$S is using '%2$S' for searches from the location bar. Would you like to "
+"restore the default search (%3$S)?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (keywordPrompt.yesButton): %1$S is the name of the default search engine
+#: keywordPrompt.yesButton
+msgid "Yes, use %1$S"
+msgstr ""
+
+#: keywordPrompt.yesButton.accessKey
+msgctxt "keywordPrompt.yesButton.accessKey"
+msgid "Y"
+msgstr ""
+
+#. # LOCALIZATION NOTE (keywordPrompt.noButton): %1$S is a host name (e.g. "somewebsearch.com") from the current value of keyword.URL
+#: keywordPrompt.noButton
+msgid "No, continue using '%1$S'"
+msgstr ""
+
+#: keywordPrompt.noButton.accessKey
+msgctxt "keywordPrompt.noButton.accessKey"
+msgid "N"
+msgstr ""
 
 #. # Webapps notification popup
 #: webapps.install
@@ -1070,7 +1090,7 @@ msgstr "Application Installed"
 
 #. # Telemetry opt-out prompt for Aurora and Nightly
 #. # LOCALIZATION NOTE (telemetryOptOutPrompt): %1$S and %3$S will be replaced by
-#. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
+#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
 #: telemetryOptOutPrompt
 msgid ""
 "%1$S sends information about performance, hardware, usage and customizations "
@@ -1088,15 +1108,6 @@ msgstr "%S is now fullscreen."
 #: fullscreen.rememberDecision
 msgid "Remember decision for %S"
 msgstr "Remember decision for %S"
-
-#. # LOCALIZATION NOTE (social.toggle.label): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
-#: social.toggle.label
-msgid "%1$S for %2$S"
-msgstr "%1$S for %2$S"
-
-#: social.toggle.accesskey
-msgid "f"
-msgstr "f"
 
 #. # LOCALIZATION NOTE (social.activated.description): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
 #: social.activated.description
@@ -1123,6 +1134,26 @@ msgstr ""
 msgid "Remove %S"
 msgstr ""
 
+#. # LOCALIZATION NOTE (social.turnOff.label): %S is the name of the social provider
+#: social.turnOff.label
+msgid "Turn off %S"
+msgstr ""
+
+#: social.turnOff.accesskey
+msgctxt "social.turnOff.accesskey"
+msgid "T"
+msgstr ""
+
+#. # LOCALIZATION NOTE (social.turnOn.label): %S is the name of the social provider
+#: social.turnOn.label
+msgid "Turn on %S"
+msgstr ""
+
+#: social.turnOn.accesskey
+msgctxt "social.turnOn.accesskey"
+msgid "T"
+msgstr ""
+
 #. # LOCALIZATION NOTE (social.error.message): %1$S is brandShortName (e.g. Firefox), %2$S is the name of the social provider
 #: social.error.message
 msgid "%1$S is unable to connect with %2$S right now."
@@ -1133,6 +1164,8 @@ msgid "Try Again"
 msgstr "Կրկին փորձել"
 
 #: social.error.tryAgain.accesskey
+#, fuzzy
+msgctxt "social.error.tryAgain.accesskey"
 msgid "T"
 msgstr "T"
 
@@ -1214,54 +1247,64 @@ msgctxt "identity.loggedIn.signOut.accessKey"
 msgid "O"
 msgstr "O"
 
-#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
-#. # LOCALIZATION NOTE (getUserMedia.shareMicrophone.message, getUserMedia.shareSpecificMicrophone.label): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message, getUserMedia.sharingCamera.message, getUserMedia.sharingMicrophone.message, getUserMedia.sharingCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
+#. # Semi-colon list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # The number of devices can be either one or two.
 #: getUserMedia.shareCamera.message
 #, fuzzy
 msgid "Would you like to share your camera with %S?"
 msgstr "Ոզո՞ւմ եք հայտնել %S-ին ձեր գտնվելու վայրը։"
-
-#: getUserMedia.shareCamera.label
-msgid "Share Camera"
-msgstr ""
-
-#: getUserMedia.shareCamera.accesskey
-msgctxt "getUserMedia.shareCamera.accesskey"
-msgid "S"
-msgstr ""
-
-#: getUserMedia.shareSpecificCamera.label
-msgid "Share Camera: %S"
-msgstr ""
 
 #: getUserMedia.shareMicrophone.message
 #, fuzzy
 msgid "Would you like to share your microphone with %S?"
 msgstr "Ոզո՞ւմ եք հայտնել %S-ին ձեր գտնվելու վայրը։"
 
-#: getUserMedia.shareMicrophone.label
-msgid "Share Microphone"
-msgstr ""
-
-#: getUserMedia.shareMicrophone.accesskey
-msgctxt "getUserMedia.shareMicrophone.accesskey"
-msgid "S"
-msgstr ""
-
-#: getUserMedia.shareSpecificMicrophone.label
-msgid "Share Microphone: %S"
-msgstr ""
-
 #: getUserMedia.shareCameraAndMicrophone.message
 #, fuzzy
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "Ոզո՞ւմ եք հայտնել %S-ին ձեր գտնվելու վայրը։"
 
-#: getUserMedia.shareCameraAndMicrophone.label
-msgid "Share Camera and Microphone"
+#: getUserMedia.shareSelectedDevices.label
+msgid "Share Selected Device;Share Selected Devices"
 msgstr ""
 
-#: getUserMedia.shareCameraAndMicrophone.accesskey
-msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
+#: getUserMedia.shareSelectedDevices.accesskey
+msgctxt "getUserMedia.shareSelectedDevices.accesskey"
 msgid "S"
 msgstr ""
+
+#: getUserMedia.denyRequest.label
+msgid "Don't Share"
+msgstr "Չկիսվել"
+
+#: getUserMedia.denyRequest.accesskey
+msgctxt "getUserMedia.denyRequest.accesskey"
+msgid "D"
+msgstr ""
+
+#: getUserMedia.sharingCamera.message
+msgid "You are currently sharing your camera with %S."
+msgstr ""
+
+#: getUserMedia.sharingMicrophone.message
+msgid "You are currently sharing your microphone with %S."
+msgstr ""
+
+#: getUserMedia.sharingCameraAndMicrophone.message
+msgid "You are currently sharing your camera and microphone with %S."
+msgstr ""
+
+#~ msgid "1 active download (#2);#1 active downloads (#2)"
+#~ msgstr "1 ակտիվ բեռնում(#2);#1 ակտիվ բեռնումներ (#2)"
+
+#~ msgid "1 paused download;#1 paused downloads"
+#~ msgstr "1 բեռնում դադարում;#1 բեռնումների դադարի մեջ"
+
+#~ msgid "%1$S for %2$S"
+#~ msgstr "%1$S for %2$S"
+
+#~ msgid "f"
+#~ msgstr "f"

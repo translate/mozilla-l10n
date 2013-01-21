@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-04 07:22-0700\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: 2012-06-06 18:20+0200\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: none\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -66,6 +66,12 @@ msgid "Close"
 msgstr "Dùin"
 
 #. This is the tooltip for
+#. -  the button that toggles the panes visible or hidden in the debugger UI.
+#: debuggerUI.panesButton.tooltip
+msgid "Toggle panes"
+msgstr ""
+
+#. This is the tooltip for
 #. -  the button that opens up an options context menu for the debugger UI.
 #: debuggerUI.optsButton.tooltip
 msgid "Debugger Options"
@@ -78,6 +84,7 @@ msgid "Pause on exceptions"
 msgstr "Cuir 'na stad ma thachras eisgeachd"
 
 #: debuggerUI.pauseExceptions.key
+msgctxt "debuggerUI.pauseExceptions.key"
 msgid "E"
 msgstr ""
 
@@ -93,23 +100,26 @@ msgid "S"
 msgstr ""
 
 #. This is the label for the
-#. -  checkbox that toggles visibility of a designated variables searchbox.
-#: debuggerUI.showVarsSearch
-msgid "Show variables searchbox"
+#. -  checkbox that toggles visibility of a designated variables filter box.
+#: debuggerUI.showVarsFilter
+msgid "Show variables filter box"
 msgstr ""
 
-#: debuggerUI.showVarsSearch.key
+#: debuggerUI.showVarsFilter.key
+msgctxt "debuggerUI.showVarsFilter.key"
 msgid "V"
 msgstr ""
 
 #. This is the label for the
 #. -  checkbox that toggles visibility of hidden (non-enumerable) variables and
-#. -  properties in stack views.
-#: debuggerUI.showNonEnums
-msgid "Show hidden properties"
+#. -  properties in stack views. The "enumerable" flag is a state of a property
+#. -  defined in JavaScript. When in doubt, leave untranslated.
+#: debuggerUI.showOnlyEnum
+msgid "Show only enumerable properties"
 msgstr ""
 
-#: debuggerUI.showNonEnums.key
+#: debuggerUI.showOnlyEnum.key
+msgctxt "debuggerUI.showOnlyEnum.key"
 msgid "P"
 msgstr ""
 
@@ -117,6 +127,60 @@ msgstr ""
 #. -  appears in the filter panel popup as a description.
 #: debuggerUI.searchPanelTitle
 msgid "Operators"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the scripts search operation.
+#: debuggerUI.searchFile
+msgid "Filter scripts"
+msgstr "Sgriobtaichean criathraidh"
+
+#: debuggerUI.searchFile.key
+msgctxt "debuggerUI.searchFile.key"
+msgid "P"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the global search operation.
+#: debuggerUI.searchGlobal
+msgid "Search in all files"
+msgstr ""
+
+#: debuggerUI.searchGlobal.key
+msgctxt "debuggerUI.searchGlobal.key"
+msgid "F"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the token search operation.
+#: debuggerUI.searchToken
+msgid "Find"
+msgstr "Lorg"
+
+#: debuggerUI.searchToken.key
+msgctxt "debuggerUI.searchToken.key"
+msgid "F"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the line search operation.
+#: debuggerUI.searchLine
+msgid "Jump to line..."
+msgstr ""
+
+#: debuggerUI.searchLine.key
+msgid "J"
+msgstr ""
+
+#. This is the text that appears
+#. -  in the source editor's context menu for the variables search operation.
+#: debuggerUI.searchVariable
+msgid "Filter variables"
+msgstr ""
+
+#: debuggerUI.searchVariable.key
+msgctxt "debuggerUI.searchVariable.key"
+msgid "V"
 msgstr ""
 
 #. This is the text that
@@ -133,12 +197,79 @@ msgstr ""
 msgid "Add breakpoint"
 msgstr "Chaidh puing-bhrisidh a chur ris"
 
+#: debuggerUI.seMenuBreak.key
+msgctxt "debuggerUI.seMenuBreak.key"
+msgid "B"
+msgstr ""
+
 #. This is the text that
 #. -  appears in the source editor context menu for adding a conditional
 #. -  breakpoint.
 #: debuggerUI.seMenuCondBreak
 msgid "Add conditional breakpoint"
 msgstr ""
+
+#: debuggerUI.seMenuCondBreak.key
+msgctxt "debuggerUI.seMenuCondBreak.key"
+msgid "B"
+msgstr ""
+
+#. This is the text that
+#. -  appears in the source editor context menu for adding an expression.
+#: debuggerUI.seMenuAddWatch
+msgid "Selection to watch expression"
+msgstr ""
+
+#: debuggerUI.seMenuAddWatch.key
+msgctxt "debuggerUI.seMenuAddWatch.key"
+msgid "E"
+msgstr ""
+
+#. This is the text that
+#. -  appears in the watch expressions context menu for adding an expression.
+#: debuggerUI.addWatch
+msgid "Add watch expression"
+msgstr ""
+
+#: debuggerUI.addWatch.key
+msgctxt "debuggerUI.addWatch.key"
+msgid "E"
+msgstr ""
+
+#. LOCALIZATION NOTE (debuggerUI.removeWatch): This is the text that
+#. -  appears in the watch expressions context menu for removing all expressions.
+#: debuggerUI.removeAllWatch
+msgid "Remove all watch expressions"
+msgstr ""
+
+#: debuggerUI.removeAllWatch.key
+msgctxt "debuggerUI.removeAllWatch.key"
+msgid "E"
+msgstr ""
+
+#. LOCALIZATION NOTE (debuggerUI.stepping): These are the keycodes that
+#. -  control the stepping commands in the debugger (continue, step over,
+#. -  step in and step out).
+#: debuggerUI.stepping.resume
+#, fuzzy
+msgid "VK_F6"
+msgstr "VK_F3"
+
+#: debuggerUI.stepping.stepOver
+msgid "VK_F7"
+msgstr "VK_F7"
+
+#: debuggerUI.stepping.stepIn
+#, fuzzy
+msgctxt "debuggerUI.stepping.stepIn"
+msgid "VK_F8"
+msgstr "VK_F3"
+
+#: debuggerUI.stepping.stepOut
+#, fuzzy
+msgctxt "debuggerUI.stepping.stepOut"
+msgid "VK_F8"
+msgstr "VK_F3"
 
 #~ msgid "Step Over"
 #~ msgstr "Gabh ceum thairis air"
@@ -157,9 +288,6 @@ msgstr ""
 
 #~ msgid "Scope variables"
 #~ msgstr "Caochladairean sgòip"
-
-#~ msgid "Filter scripts"
-#~ msgstr "Sgriobtaichean criathraidh"
 
 #, fuzzy
 #~ msgid "No scripts"
