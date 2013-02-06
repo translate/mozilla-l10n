@@ -7,6 +7,7 @@ langs=$*
 user=pootlesync
 server=pootle.locamotion.org
 local_copy=.pootle_tmp
+phaselist=firefox.phaselist
 manage_command="/var/www/sites/$instance/src/manage.py"
 manage_py_verbosity=2
 precommand=". /var/www/sites/mozilla/env/bin/activate;"
@@ -50,21 +51,29 @@ for lang in $langs
 do
 	echo "Language: $lang"
 	cd $lang
-	for phase in $(ls)
-	do
-		if [ -d $phase ]; then
-	        	cd $phase
-	        	echo "Phase: $phase"
-	        	for po in $(find . -name "*.po")
-	        	do
-	        	        mkdir -p $svndir/$lang/$(dirname $po)
-	        	        mv $po $svndir/$lang/$po
-	        	done
-	        	cd ..
-		else
-			mv $phase $svndir/$lang
-		fi
-	done
+	if [ -f "$svndir/$phaselist" ]; then
+		for phase in $(ls)
+		do
+			if [ -d $phase ]; then
+		        	cd $phase
+		        	echo "Phase: $phase"
+		        	for po in $(find . -name "*.po")
+		        	do
+		        	        mkdir -p $svndir/$lang/$(dirname $po)
+		        	        mv $po $svndir/$lang/$po
+		        	done
+		        	cd ..
+			else
+				mv $phase $svndir/$lang
+			fi
+		done
+	else
+	       	for po in $(find . -name "*.po")
+	       	do
+	       	        mkdir -p $svndir/$lang/$(dirname $po)
+	       	        mv $po $svndir/$lang/$po
+	       	done
+	fi
 	cd ..
 done
 cd ../..
