@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-30 20:54-0700\n"
+"POT-Creation-Date: 2013-01-07 23:24+0100\n"
 "PO-Revision-Date: 2013-01-06 00:43+0000\n"
 "Last-Translator: Dwayne Bailey <dwayne@translate.org.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -953,7 +953,7 @@ msgid "You can access your passwords on all your devices with %S. "
 msgstr "คุณสามารถเข้าถึงรหัสผ่านของคุณบนอุปกรณ์ต่างๆ ด้วย %S. "
 
 #: syncPromoNotification.learnMoreLinkText
-#, fuzzy
+msgctxt "syncPromoNotification.learnMoreLinkText"
 msgid "Learn More"
 msgstr "เรียนรู้เพิ่ม"
 
@@ -974,21 +974,41 @@ msgid ""
 "You can use your %S account to synchronize add-ons across multiple devices. "
 msgstr "คุณสามารถใช้บัญชี %S ของคุณเพื่อเชื่อมโยงการติดตั้งส่วนเสริมระหว่างอุปกรณ์ต่างๆ ได้. "
 
-#. # Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
-#: dataReportingNotification.message
+#. # Telemetry prompt
+#. # LOCALIZATION NOTE (telemetryOptInPrompt): %1$S will be replaced by
+#. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner
+#. # preference.
+#: telemetryOptInPrompt
 msgid ""
-"%1$S automatically sends some data to %2$S so that we can improve your "
-"experience."
+"Will you help improve %1$S by sending information about performance, "
+"hardware, usage, and customizations to %2$S?"
 msgstr ""
+"คุณอยากช่วยปรับปรุง %1$S โดยส่งข้อมูลเกี่ยวกับประสิทธิภาพ, อุปกรณ์, การใช้งาน และการปรับแต่ง "
+"มาที่ %2$S หรือไม่?"
 
-#: dataReportingNotification.button.label
-msgid "Choose What I Share"
-msgstr ""
+#: telemetryLinkLabel
+msgctxt "telemetryLinkLabel"
+msgid "Learn More"
+msgstr "เรียนรู้เพิ่ม"
 
-#: dataReportingNotification.button.accessKey
-msgctxt "dataReportingNotification.button.accessKey"
-msgid "C"
-msgstr ""
+#: telemetryYesButtonLabel2
+msgid "Yes, I want to help"
+msgstr "ใช่ ฉันต้องการเข้าร่วม"
+
+#: telemetryYesButtonAccessKey
+#, fuzzy
+msgctxt "telemetryYesButtonAccessKey"
+msgid "Y"
+msgstr "ช"
+
+#: telemetryNoButtonLabel
+msgid "No"
+msgstr "ไม่"
+
+#: telemetryNoButtonAccessKey
+msgctxt "telemetryNoButtonAccessKey"
+msgid "N"
+msgstr "ม"
 
 #. # Keyword.URL reset prompt
 #. # LOCALIZATION NOTE (keywordPrompt.message):
@@ -1007,6 +1027,7 @@ msgid "Yes, use %1$S"
 msgstr ""
 
 #: keywordPrompt.yesButton.accessKey
+msgctxt "keywordPrompt.yesButton.accessKey"
 msgid "Y"
 msgstr ""
 
@@ -1038,6 +1059,17 @@ msgstr "คุณต้องการติดตั้ง \"%1$S\" จาก�
 #: webapps.install.success
 msgid "Application Installed"
 msgstr "ติดตั้งแอปแล้ว"
+
+#. # Telemetry opt-out prompt for Aurora and Nightly
+#. # LOCALIZATION NOTE (telemetryOptOutPrompt): %1$S and %3$S will be replaced by
+#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
+#: telemetryOptOutPrompt
+msgid ""
+"%1$S sends information about performance, hardware, usage and customizations "
+"back to %2$S to help improve %3$S."
+msgstr ""
+"%1$S ส่งข้อมูลด้านประสิทธิภาพ, ฮาร์ดแวร์, การใช้งานและการปรับแต่ง กลับไปยัง %2$S "
+"เพื่อปรับปรุง %3$S"
 
 #. # LOCALIZATION NOTE (fullscreen.entered): displayed when we enter HTML5 fullscreen mode, %S is the domain name of the focused website (e.g. mozilla.com).
 #: fullscreen.entered
@@ -1233,39 +1265,6 @@ msgstr ""
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr ""
-
-#~ msgid ""
-#~ "Will you help improve %1$S by sending information about performance, "
-#~ "hardware, usage, and customizations to %2$S?"
-#~ msgstr ""
-#~ "คุณอยากช่วยปรับปรุง %1$S โดยส่งข้อมูลเกี่ยวกับประสิทธิภาพ, อุปกรณ์, การใช้งาน "
-#~ "และการปรับแต่ง มาที่ %2$S หรือไม่?"
-
-#~ msgctxt "telemetryLinkLabel"
-#~ msgid "Learn More"
-#~ msgstr "เรียนรู้เพิ่ม"
-
-#~ msgid "Yes, I want to help"
-#~ msgstr "ใช่ ฉันต้องการเข้าร่วม"
-
-#, fuzzy
-#~ msgctxt "telemetryYesButtonAccessKey"
-#~ msgid "Y"
-#~ msgstr "ช"
-
-#~ msgid "No"
-#~ msgstr "ไม่"
-
-#~ msgctxt "telemetryNoButtonAccessKey"
-#~ msgid "N"
-#~ msgstr "ม"
-
-#~ msgid ""
-#~ "%1$S sends information about performance, hardware, usage and "
-#~ "customizations back to %2$S to help improve %3$S."
-#~ msgstr ""
-#~ "%1$S ส่งข้อมูลด้านประสิทธิภาพ, ฮาร์ดแวร์, การใช้งานและการปรับแต่ง กลับไปยัง %2$S "
-#~ "เพื่อปรับปรุง %3$S"
 
 #~ msgid "1 active download (#2);#1 active downloads (#2)"
 #~ msgstr "กำลังดาวน์โหลด 1 แฟ้ม (#2);กำลังดาวน์โหลด #1 แฟ้ม (#2)"
