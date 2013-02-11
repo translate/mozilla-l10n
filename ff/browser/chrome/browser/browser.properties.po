@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-30 20:54-0700\n"
+"POT-Creation-Date: 2012-12-04 07:22-0700\n"
 "PO-Revision-Date: 2012-12-06 21:47+0000\n"
 "Last-Translator: Ibrahima <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULA LOCALIZATION\n"
@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.9.1-pre\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -723,6 +723,19 @@ msgstr "Ndee lowre geese hokkataa humpito innitol."
 msgid "(unknown)"
 msgstr "(anndaaka)"
 
+#. # Downloads Monitor Panel
+#. # LOCALIZATION NOTE (activeDownloads1, pausedDownloads1): Semi-colon list of plural
+#. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 number of downloads; #2 time left
+#. # examples: 1 active download (2 minutes remaining); 11 paused downloads
+#: activeDownloads1
+msgid "1 active download (#2);#1 active downloads (#2)"
+msgstr "1 awwtannde saasnde (#2);#1 aawtanɗe caasɗe (#2)"
+
+#: pausedDownloads1
+msgid "1 paused download;#1 paused downloads"
+msgstr "1 aawtannde sabbinaade;#1 aawtanɗe cabbinaade"
+
 #. # Edit Bookmark UI
 #: editBookmarkPanel.pageBookmarkedTitle
 msgid "Page Bookmarked"
@@ -962,7 +975,7 @@ msgid "You can access your passwords on all your devices with %S. "
 msgstr "Aɗa waawi heɓde finndeeji maa e kaɓirkon maa kala e %S. "
 
 #: syncPromoNotification.learnMoreLinkText
-#, fuzzy
+msgctxt "syncPromoNotification.learnMoreLinkText"
 msgid "Learn More"
 msgstr "Ɓeydu Humpito"
 
@@ -984,21 +997,40 @@ msgid ""
 msgstr ""
 "Aɗa waawi huutoraade konte maa %S ngam sanngoɗinde ceŋe hakkunde kaɓirɗi. "
 
-#. # Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
-#: dataReportingNotification.message
+#. # Telemetry prompt
+#. # LOCALIZATION NOTE (telemetryOptInPrompt): %1$S will be replaced by
+#. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner
+#. # preference.
+#: telemetryOptInPrompt
 msgid ""
-"%1$S automatically sends some data to %2$S so that we can improve your "
-"experience."
+"Will you help improve %1$S by sending information about performance, "
+"hardware, usage, and customizations to %2$S?"
 msgstr ""
+"Aɗa yiɗi wallude ɓamtude %1$S so neldude humpito baɗte moƴƴugol, fannuuji "
+"njamndeeri, kuutorogol e keertingol to %2$S?"
 
-#: dataReportingNotification.button.label
-msgid "Choose What I Share"
-msgstr ""
+#: telemetryLinkLabel
+msgctxt "telemetryLinkLabel"
+msgid "Learn More"
+msgstr "Ɓeydu Humpito"
 
-#: dataReportingNotification.button.accessKey
-msgctxt "dataReportingNotification.button.accessKey"
-msgid "C"
-msgstr ""
+#: telemetryYesButtonLabel2
+msgid "Yes, I want to help"
+msgstr "Eey, miɗo yiɗi wallude"
+
+#: telemetryYesButtonAccessKey
+msgctxt "telemetryYesButtonAccessKey"
+msgid "Y"
+msgstr "Y"
+
+#: telemetryNoButtonLabel
+msgid "No"
+msgstr "Alaa"
+
+#: telemetryNoButtonAccessKey
+msgctxt "telemetryNoButtonAccessKey"
+msgid "N"
+msgstr "A"
 
 #. # Keyword.URL reset prompt
 #. # LOCALIZATION NOTE (keywordPrompt.message):
@@ -1019,7 +1051,7 @@ msgid "Yes, use %1$S"
 msgstr "Eey, huutoro %1$S"
 
 #: keywordPrompt.yesButton.accessKey
-#, fuzzy
+msgctxt "keywordPrompt.yesButton.accessKey"
 msgid "Y"
 msgstr "Y"
 
@@ -1051,6 +1083,17 @@ msgstr "Aɗa yiɗi aafde \"%1$S\" iwde e ndee lowre (%2$S)?"
 #: webapps.install.success
 msgid "Application Installed"
 msgstr "Jaaɓnirgal Aafaama"
+
+#. # Telemetry opt-out prompt for Aurora and Nightly
+#. # LOCALIZATION NOTE (telemetryOptOutPrompt): %1$S and %3$S will be replaced by
+#. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
+#: telemetryOptOutPrompt
+msgid ""
+"%1$S sends information about performance, hardware, usage and customizations "
+"back to %2$S to help improve %3$S."
+msgstr ""
+"%1$S ena nelda humpito baɗte moƴƴungol, masiŋeeri, kuutoragol e keertingol to"
+"%2$S ngam wallude moƴƴitinde %3$S."
 
 #. # LOCALIZATION NOTE (fullscreen.entered): displayed when we enter HTML5 fullscreen mode, %S is the domain name of the focused website (e.g. mozilla.com).
 #: fullscreen.entered
@@ -1199,31 +1242,54 @@ msgctxt "identity.loggedIn.signOut.accessKey"
 msgid "O"
 msgstr "S"
 
-#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message, getUserMedia.sharingCamera.message, getUserMedia.sharingMicrophone.message, getUserMedia.sharingCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
-#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
-#. # Semi-colon list of plural forms. See:
-#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # The number of devices can be either one or two.
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareMicrophone.message, getUserMedia.shareSpecificMicrophone.label): %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
 msgstr "Aɗa yiɗi hollude %S kameraa maa?"
+
+#: getUserMedia.shareCamera.label
+msgid "Share Camera"
+msgstr "Hollir Kameraa"
+
+#: getUserMedia.shareCamera.accesskey
+msgctxt "getUserMedia.shareCamera.accesskey"
+msgid "S"
+msgstr "K"
+
+#: getUserMedia.shareSpecificCamera.label
+msgid "Share Camera: %S"
+msgstr "Hollir Kameraa: %S"
 
 #: getUserMedia.shareMicrophone.message
 msgid "Would you like to share your microphone with %S?"
 msgstr "Aɗa yiɗi hollude %S mikkoroo maa?"
 
+#: getUserMedia.shareMicrophone.label
+msgid "Share Microphone"
+msgstr "Hollir Mikkoroo"
+
+#: getUserMedia.shareMicrophone.accesskey
+msgctxt "getUserMedia.shareMicrophone.accesskey"
+msgid "S"
+msgstr "M"
+
+#: getUserMedia.shareSpecificMicrophone.label
+msgid "Share Microphone: %S"
+msgstr "Hollir Mikkoroo: %S"
+
 #: getUserMedia.shareCameraAndMicrophone.message
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "Aɗa yiɗi hollude %S mikkoroo e kameraa maa?"
 
-#: getUserMedia.shareSelectedDevices.label
-msgid "Share Selected Device;Share Selected Devices"
-msgstr ""
+#: getUserMedia.shareCameraAndMicrophone.label
+msgid "Share Camera and Microphone"
+msgstr "Hollir Kameraa e Mikkoroo"
 
-#: getUserMedia.shareSelectedDevices.accesskey
-msgctxt "getUserMedia.shareSelectedDevices.accesskey"
+#: getUserMedia.shareCameraAndMicrophone.accesskey
+msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
 msgid "S"
-msgstr ""
+msgstr "H"
 
 #: getUserMedia.denyRequest.label
 msgid "Don't Share"
@@ -1233,83 +1299,6 @@ msgstr "Hoto Simin"
 msgctxt "getUserMedia.denyRequest.accesskey"
 msgid "D"
 msgstr "N"
-
-#: getUserMedia.sharingCamera.message
-msgid "You are currently sharing your camera with %S."
-msgstr ""
-
-#: getUserMedia.sharingMicrophone.message
-msgid "You are currently sharing your microphone with %S."
-msgstr ""
-
-#: getUserMedia.sharingCameraAndMicrophone.message
-msgid "You are currently sharing your camera and microphone with %S."
-msgstr ""
-
-#~ msgid ""
-#~ "Will you help improve %1$S by sending information about performance, "
-#~ "hardware, usage, and customizations to %2$S?"
-#~ msgstr ""
-#~ "Aɗa yiɗi wallude ɓamtude %1$S so neldude humpito baɗte moƴƴugol, fannuuji "
-#~ "njamndeeri, kuutorogol e keertingol to %2$S?"
-
-#~ msgctxt "telemetryLinkLabel"
-#~ msgid "Learn More"
-#~ msgstr "Ɓeydu Humpito"
-
-#~ msgid "Yes, I want to help"
-#~ msgstr "Eey, miɗo yiɗi wallude"
-
-#~ msgid "No"
-#~ msgstr "Alaa"
-
-#~ msgctxt "telemetryNoButtonAccessKey"
-#~ msgid "N"
-#~ msgstr "A"
-
-#~ msgctxt "keywordPrompt.yesButton.accessKey"
-#~ msgid "Y"
-#~ msgstr "Y"
-
-#~ msgid ""
-#~ "%1$S sends information about performance, hardware, usage and "
-#~ "customizations back to %2$S to help improve %3$S."
-#~ msgstr ""
-#~ "%1$S ena nelda humpito baɗte moƴƴungol, masiŋeeri, kuutoragol e "
-#~ "keertingol to%2$S ngam wallude moƴƴitinde %3$S."
-
-#~ msgid "1 active download (#2);#1 active downloads (#2)"
-#~ msgstr "1 awwtannde saasnde (#2);#1 aawtanɗe caasɗe (#2)"
-
-#~ msgid "1 paused download;#1 paused downloads"
-#~ msgstr "1 aawtannde sabbinaade;#1 aawtanɗe cabbinaade"
-
-#~ msgid "Share Camera"
-#~ msgstr "Hollir Kameraa"
-
-#~ msgctxt "getUserMedia.shareCamera.accesskey"
-#~ msgid "S"
-#~ msgstr "K"
-
-#~ msgid "Share Camera: %S"
-#~ msgstr "Hollir Kameraa: %S"
-
-#~ msgid "Share Microphone"
-#~ msgstr "Hollir Mikkoroo"
-
-#~ msgctxt "getUserMedia.shareMicrophone.accesskey"
-#~ msgid "S"
-#~ msgstr "M"
-
-#~ msgid "Share Microphone: %S"
-#~ msgstr "Hollir Mikkoroo: %S"
-
-#~ msgid "Share Camera and Microphone"
-#~ msgstr "Hollir Kameraa e Mikkoroo"
-
-#~ msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
-#~ msgid "S"
-#~ msgstr "H"
 
 #~ msgid "%1$S for %2$S"
 #~ msgstr "%1$S mo %2$S"
