@@ -12,5 +12,10 @@ manage_py_verbosity=2
 precommand=". /var/www/sites/mozilla/env/bin/activate;"
 
 option_project="--project=$project"
+option_change_id=""
 
-ssh $user@$server $precommand python $manage_command list_languages --verbosity=$manage_py_verbosity $option_project
+if [ $# -eq 1 ]; then
+	option_change_id="--modified-since=$1"
+fi
+
+ssh $user@$server $precommand python $manage_command list_languages --verbosity=$manage_py_verbosity $option_project $option_change_id
