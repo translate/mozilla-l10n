@@ -15,7 +15,9 @@ do
 	browser/branding/official/brand.dtd.po \
 	browser/branding/official/brand.properties.po \
 	browser/chrome/browser-region/region.properties.po \
-	toolkit/chrome/global/intl.properties.po)
+	toolkit/chrome/global/intl.properties.po \
+	browser/chrome/browser/aboutRobots.dtd.po \
+	dom/chrome/global.dtd.po)
 
 	rm -rf $lang-unchanged*
 done
