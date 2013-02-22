@@ -68,6 +68,8 @@ These you can do if you are targetting the specific audience mentioned.
 | developers | all web developer centric parts if Firefox.  If you web developers who speak your  |
 |            | language mostly work in English then rather leave this untranslated.               |
 +------------+------------------------------------------------------------------------------------+
+| metro      | Firefox fir Windows 8. We'll move this into user1 once stable                      |
++------------+------------------------------------------------------------------------------------+
 
 Safely Ignore
 -------------
