@@ -1,15 +1,16 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/browser/chrome/browser/browser.properties
+#. extracted from templates-en-US/browser/chrome/browser/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-30 20:54-0700\n"
+"POT-Creation-Date: 2013-02-22 11:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: hy_AM\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -444,10 +445,9 @@ msgstr "N"
 msgid "Activate"
 msgstr "Ակտիվացնել"
 
-#: PluginClickToPlay
-#, fuzzy
-msgid "Click here to activate the %S plugin."
-msgstr "Click here to activate plugin."
+#: PluginClickToActivate
+msgid "Activate %S."
+msgstr ""
 
 #. # LOCALIZATION NOTE - "vulnerable" indicates there is a security bug in the
 #. # plugin that is being exploited by attackers.
@@ -869,39 +869,6 @@ msgctxt "safebrowsing.notAnAttackButton.accessKey"
 msgid "A"
 msgstr "A"
 
-#. # Private Browsing Confirmation dialog
-#. # LOCALIZATION NOTE (privateBrowsingMessage): %S will be replaced
-#. # by the name of the application.
-#. # LOCALIZATION NOTE (privateBrowsingYesTitle, privateBrowsingNoTitle, privateBrowsingNeverAsk):
-#. # Access keys are specified by prefixing the desired letter with an ampersand.
-#: privateBrowsingDialogTitle
-msgid "Start Private Browsing"
-msgstr "Սկսել Գաղտնի Նավարկում"
-
-#: privateBrowsingMessageHeader
-msgid "Would you like to start Private Browsing?"
-msgstr "Կցանկանա՞յիք սկսել գաղտնի նավարկում:"
-
-#: privateBrowsingMessage
-msgid ""
-"%S will save your current tabs for when you are done with your Private "
-"Browsing session."
-msgstr ""
-"%S-ը կհիշի ձեր ընթացիկ էջադիրները երբ դուք վերջացնեք ձեր գաղտնի նավարկման "
-"սեսիան:"
-
-#: privateBrowsingYesTitle
-msgid "&Start Private Browsing"
-msgstr "Սկսել Գաղտնի Նավարկում"
-
-#: privateBrowsingNoTitle
-msgid "&Cancel"
-msgstr "Չեղարկել"
-
-#: privateBrowsingNeverAsk
-msgid "&Do not show this message again"
-msgstr "Այլևս չույց չտալ այս հաղորդագրությունը"
-
 #. # Ctrl-Tab
 #. # LOCALIZATION NOTE (ctrlTab.showAll.label): #1 represents the number
 #. # of tabs in the current browser window. It will always be 2 at least.
@@ -1082,13 +1049,14 @@ msgstr "Remember decision for %S"
 msgid "You've turned on %1$S for %2$S."
 msgstr "You've turned on %1$S for %2$S."
 
-#. # LOCALIZATION NOTE (social.remove.label): %S = brandShortName
-#: social.remove.label
-msgid "Remove from %S"
+#. # LOCALIZATION NOTE (social.removeProvider.label): %S is the name of the social provider
+#: social.removeProvider.label
+msgctxt "social.removeProvider.label"
+msgid "Remove %S"
 msgstr ""
 
-#: social.remove.accesskey
-msgctxt "social.remove.accesskey"
+#: social.removeProvider.accesskey
+msgctxt "social.removeProvider.accesskey"
 msgid "R"
 msgstr ""
 
@@ -1099,6 +1067,7 @@ msgstr ""
 
 #. # LOCALIZATION NOTE (social.remove.confirmationOK): %S is the name of the social provider
 #: social.remove.confirmationOK
+msgctxt "social.remove.confirmationOK"
 msgid "Remove %S"
 msgstr ""
 
@@ -1154,6 +1123,12 @@ msgstr "Close This Sidebar"
 msgctxt "social.error.closeSidebar.accesskey"
 msgid "C"
 msgstr "C"
+
+#. # LOCALIZATION NOTE: %1$S is the label for the toolbar button, %2$S is the associated badge numbering that the social provider may provide.
+#: social.aria.toolbarButtonBadgeText
+#, fuzzy
+msgid "%1$S (%2$S)"
+msgstr "%1$S %2$S"
 
 #. # Identity notifications popups
 #: identity.termsOfService
@@ -1235,6 +1210,14 @@ msgstr "Ոզո՞ւմ եք հայտնել %S-ին ձեր գտնվելու վայ�
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "Ոզո՞ւմ եք հայտնել %S-ին ձեր գտնվելու վայրը։"
 
+#: getUserMedia.noVideo.label
+msgid "No Video"
+msgstr ""
+
+#: getUserMedia.noAudio.label
+msgid "No Audio"
+msgstr ""
+
 #: getUserMedia.shareSelectedDevices.label
 msgid "Share Selected Device;Share Selected Devices"
 msgstr ""
@@ -1264,6 +1247,77 @@ msgstr ""
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr ""
+
+#. # Mixed Content Blocker Doorhanger Notification
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: mixedContentBlocked.message
+msgid "%S has blocked content that isn't secure."
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.label
+msgid "Keep Blocking"
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.accesskey
+msgid "B"
+msgstr ""
+
+#: mixedContentBlocked.unblock.label
+msgid "Disable Protection on This Page"
+msgstr ""
+
+#: mixedContentBlocked.unblock.accesskey
+msgctxt "mixedContentBlocked.unblock.accesskey"
+msgid "D"
+msgstr ""
+
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: slowStartup.message
+msgid "%S seems slow… to… start."
+msgstr ""
+
+#: slowStartup.helpButton.label
+msgid "Learn How to Speed It Up"
+msgstr ""
+
+#: slowStartup.helpButton.accesskey
+msgid "L"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.label
+msgid "Don't Tell Me Again"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.accesskey
+msgctxt "slowStartup.disableNotificationButton.accesskey"
+msgid "A"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Click here to activate the %S plugin."
+#~ msgstr "Click here to activate plugin."
+
+#~ msgid "Start Private Browsing"
+#~ msgstr "Սկսել Գաղտնի Նավարկում"
+
+#~ msgid "Would you like to start Private Browsing?"
+#~ msgstr "Կցանկանա՞յիք սկսել գաղտնի նավարկում:"
+
+#~ msgid ""
+#~ "%S will save your current tabs for when you are done with your Private "
+#~ "Browsing session."
+#~ msgstr ""
+#~ "%S-ը կհիշի ձեր ընթացիկ էջադիրները երբ դուք վերջացնեք ձեր գաղտնի նավարկման "
+#~ "սեսիան:"
+
+#~ msgid "&Start Private Browsing"
+#~ msgstr "Սկսել Գաղտնի Նավարկում"
+
+#~ msgid "&Cancel"
+#~ msgstr "Չեղարկել"
+
+#~ msgid "&Do not show this message again"
+#~ msgstr "Այլևս չույց չտալ այս հաղորդագրությունը"
 
 #~ msgid ""
 #~ "Will you help improve %1$S by sending information about performance, "

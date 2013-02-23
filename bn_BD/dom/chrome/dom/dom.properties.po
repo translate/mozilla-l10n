@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/dom/chrome/dom/dom.properties
+#. extracted from templates-en-US/dom/chrome/dom/dom.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-07 23:24+0100\n"
+"POT-Creation-Date: 2013-02-22 11:39+0100\n"
 "PO-Revision-Date: 2012-12-05 05:49+0000\n"
 "Last-Translator: Robin <robin@ankur.org.bd>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -244,26 +244,27 @@ msgstr "অনুগ্রহ করে অনুরোধকৃত বিন্
 msgid "Please match the requested format: %S."
 msgstr "অনুগ্রহ করে অনুরোধকৃত বিন্যাসের সাথে মিল রাখুন : %S "
 
-#. # LOCALIZATION NOTE (FormValidationRangeOverflow): %S can be a number or a date.
+#. # LOCALIZATION NOTE (FormValidationRangeOverflow): %S can be a number, a date or a time.
 #: FormValidationRangeOverflow
 msgid "Please select a value that is lower than %S."
 msgstr "অনুগ্রহ করে একটি মান নির্বাচন করুন যার মান %S এর থেকে কম।"
 
-#. # LOCALIZATION NOTE (FormValidationRangeUnderflow): %S can be a number or a date.
+#. # LOCALIZATION NOTE (FormValidationRangeUnderflow): %S can be a number, a date or a time.
 #: FormValidationRangeUnderflow
 msgid "Please select a value that is higher than %S."
 msgstr "অনুগ্রহ করে একটি মান নির্বাচন করুন যার মান %S এর থেকে বেশী।"
 
-#. # LOCALIZATION NOTE (FormValidationStepMismatch): both %S can be a number or a date.
+#. # LOCALIZATION NOTE (FormValidationStepMismatch): both %S can be a number, a date or a time.
 #: FormValidationStepMismatch
 msgid ""
 "Please select a valid value. The two nearest valid values are %S and %S."
 msgstr "একটি বৈধ মান নির্বাচন করুন। কাছাকাছি দুটি মান হল %2$S এবং %1$S।"
 
-#. # LOCALIZATION NOTE (FormValidationStepMismatchWitoutMax): %S can be a number or a date. This is called instead of FormValidationStepMismatch when the second value isn't valid because it's higher than the maximum allowed value.
-#: FormValidationStepMismatchWithoutMax
+#. # LOCALIZATION NOTE (FormValidationStepMismatchOneValue): %S can be a number, a date or a time. This is called instead of FormValidationStepMismatch when the second value is the same as the first.
+#: FormValidationStepMismatchOneValue
+#, fuzzy
 msgid "Please select a valid value. The nearest valid value is %S."
-msgstr "একটি বৈধ মান নির্বাচন করুন। কাছাকাছি মান হল %S।"
+msgstr "একটি বৈধ মান নির্বাচন করুন। কাছাকাছি দুটি মান হল %2$S এবং %1$S।"
 
 #: GetAttributeNodeWarning
 msgid "Use of getAttributeNode() is deprecated. Use getAttribute() instead."
@@ -536,6 +537,28 @@ msgstr ""
 "VXMLHttpRequest ব্যবহার করে JSON কে পুনরুদ্ধার করার জন্য non-UTF-8 এনকোডিং ঘোষনা "
 "দেয়ার প্রচেষ্টা করা হয়েছিল। কেবলমাত্র UTF-8 সমর্থিত JSON ডিকোডিং এর জন্য।"
 
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataUnknownContentType
+msgid "The buffer passed to decodeAudioData contains an unknown content type."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataUnknownError
+msgid "An unknown error occured while processing decodeAudioData."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataInvalidContent
+msgid ""
+"The buffer passed to decodeAudioData contains invalid content which cannot "
+"be decoded successfully."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataNoAudio
+msgid "The buffer passed to decodeAudioData does not contain any audio."
+msgstr ""
+
 #: MediaLoadExhaustedCandidates
 msgid "All candidate resources failed to load. Media load paused."
 msgstr "সকল প্রার্থী রিসোর্স লোড করতে ব্যর্থ হয়েছে।মিডিয়া লোড করা স্থগিত করা হয়েছে।"
@@ -652,6 +675,22 @@ msgid ""
 msgstr ""
 "'mozHidden' এবং 'mozVisibilityState' অবচিত হয়েছে।     পরিবর্তে অনুগ্রহ করে "
 "প্রারম্ভে 'hidden' এবং 'visibilityState' যুক্ত নয় এমন উপসর্গ ব্যবহার করুন।"
+
+#. # LOCALIZATION NOTE: Do not translate "X-Content-Security-Policy", "X-Content-Security-Policy-Report-Only",  "Content-Security-Policy" or "Content-Security-Policy-Report-Only"
+#: OldCSPHeaderDeprecated
+msgid ""
+"The X-Content-Security-Policy and X-Content-Security-Report-Only headers "
+"will be deprecated in the future. Please use the Content-Security-Policy and "
+"Content-Security-Report-Only headers with CSP spec compliant syntax instead."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "X-Content-Security-Policy/Report-Only" or "Content-Security-Policy/Report-Only"
+#: BothCSPHeadersPresent
+msgid ""
+"This site specified both an X-Content-Security-Policy/Report-Only header and "
+"a Content-Security-Policy/Report-Only header. The X-Content-Security-Policy/"
+"Report-Only header(s) will be ignored."
+msgstr ""
 
 #~ msgid ""
 #~ "Use of attributes' nodeName attribute is deprecated. Use name instead."

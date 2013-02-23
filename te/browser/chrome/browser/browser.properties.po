@@ -2,23 +2,23 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/browser/chrome/browser/browser.properties
+#. extracted from templates-en-US/browser/chrome/browser/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-30 20:54-0700\n"
+"POT-Creation-Date: 2013-02-22 11:39+0100\n"
 "PO-Revision-Date: 2013-02-21 16:48+0530\n"
 "Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <Fedora-trans-te@redhat.com>\n"
+"Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"Language: te\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: nv_timeout
 msgid "Timed Out"
@@ -425,9 +425,9 @@ msgstr "N"
 msgid "Activate"
 msgstr "చెతనంచేయి"
 
-#: PluginClickToPlay
-msgid "Click here to activate the %S plugin."
-msgstr "%S చొప్పింతను క్రియాశీలం చేయుటకు యిచట తట్టండి."
+#: PluginClickToActivate
+msgid "Activate %S."
+msgstr ""
 
 #. # LOCALIZATION NOTE - "vulnerable" indicates there is a security bug in the
 #. # plugin that is being exploited by attackers.
@@ -846,37 +846,6 @@ msgctxt "safebrowsing.notAnAttackButton.accessKey"
 msgid "A"
 msgstr "A"
 
-#. # Private Browsing Confirmation dialog
-#. # LOCALIZATION NOTE (privateBrowsingMessage): %S will be replaced
-#. # by the name of the application.
-#. # LOCALIZATION NOTE (privateBrowsingYesTitle, privateBrowsingNoTitle, privateBrowsingNeverAsk):
-#. # Access keys are specified by prefixing the desired letter with an ampersand.
-#: privateBrowsingDialogTitle
-msgid "Start Private Browsing"
-msgstr "గోప్య  వీక్షణము"
-
-#: privateBrowsingMessageHeader
-msgid "Would you like to start Private Browsing?"
-msgstr "గోప్య వీక్షణం ను ప్రారంభించదలచారా?"
-
-#: privateBrowsingMessage
-msgid ""
-"%S will save your current tabs for when you are done with your Private "
-"Browsing session."
-msgstr "%S , మీ  గోప్య వీక్షణ సభ  పూర్తైన  తర్వాత మీ ప్రస్తుత టాబ్లను దాచుతుంది ."
-
-#: privateBrowsingYesTitle
-msgid "&Start Private Browsing"
-msgstr "గోప్య  వీక్షణాన్ని మొదలుపెట్టండి(&S) "
-
-#: privateBrowsingNoTitle
-msgid "&Cancel"
-msgstr "రద్దు చేయు (&C) "
-
-#: privateBrowsingNeverAsk
-msgid "&Do not show this message again"
-msgstr "ఇక ముందు అడగవద్దు (&D) "
-
 #. # Ctrl-Tab
 #. # LOCALIZATION NOTE (ctrlTab.showAll.label): #1 represents the number
 #. # of tabs in the current browser window. It will always be 2 at least.
@@ -899,7 +868,7 @@ msgstr "%S - మీ టాబ్‌లను సమూహంచేయి"
 
 #. # LOCALIZATION NOTE (tabview.moveToUnnamedGroup.label): Semi-colon list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 is the page title of the first tab in the unnamed group,
+#. # #1 is the page title of the first tab in the unnamed group, 
 #. # #2 is the number of remaining tabs.
 #: tabview.moveToUnnamedGroup.label
 msgid "#1 and 1 more;#1 and #2 more"
@@ -1055,15 +1024,17 @@ msgstr "%S కొరకు నిర్ణయాన్ని గుర్తు�
 msgid "You've turned on %1$S for %2$S."
 msgstr "మీరు %1$S ను %2$S కొరకు ఆన్ చేసారు."
 
-#. # LOCALIZATION NOTE (social.remove.label): %S = brandShortName
-#: social.remove.label
-msgid "Remove from %S"
-msgstr "%S నుండి తీసివేయి"
+#. # LOCALIZATION NOTE (social.removeProvider.label): %S is the name of the social provider
+#: social.removeProvider.label
+#, fuzzy
+msgctxt "social.removeProvider.label"
+msgid "Remove %S"
+msgstr "%S తీసివేయి"
 
-#: social.remove.accesskey
-msgctxt "social.remove.accesskey"
+#: social.removeProvider.accesskey
+msgctxt "social.removeProvider.accesskey"
 msgid "R"
-msgstr "R"
+msgstr ""
 
 #. # LOCALIZATION NOTE (social.remove.confirmationLabel): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
 #: social.remove.confirmationLabel
@@ -1072,6 +1043,8 @@ msgstr "మీరు %1$S ను %2$S కొరకు తీసివేయా�
 
 #. # LOCALIZATION NOTE (social.remove.confirmationOK): %S is the name of the social provider
 #: social.remove.confirmationOK
+#, fuzzy
+msgctxt "social.remove.confirmationOK"
 msgid "Remove %S"
 msgstr "%S తీసివేయి"
 
@@ -1126,6 +1099,12 @@ msgstr "ఈ పక్కపట్టీ మూయి"
 msgctxt "social.error.closeSidebar.accesskey"
 msgid "C"
 msgstr "C"
+
+#. # LOCALIZATION NOTE: %1$S is the label for the toolbar button, %2$S is the associated badge numbering that the social provider may provide.
+#: social.aria.toolbarButtonBadgeText
+#, fuzzy
+msgid "%1$S (%2$S)"
+msgstr "%1$S %2$S"
 
 #. # Identity notifications popups
 #: identity.termsOfService
@@ -1204,6 +1183,14 @@ msgstr "మీరు మీ మైక్రోఫోన్‌ను %S తోట
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "మీరు మీ కేమెరా మరియు మైక్రోఫోన్‌ను %S తోటి పంచుకొనవలెనని అనుకొనుచున్నారా?"
 
+#: getUserMedia.noVideo.label
+msgid "No Video"
+msgstr ""
+
+#: getUserMedia.noAudio.label
+msgid "No Audio"
+msgstr ""
+
 #: getUserMedia.shareSelectedDevices.label
 msgid "Share Selected Device;Share Selected Devices"
 msgstr "ఎంపికచేసిన పరికరం పంచుకొను;ఎంపికచేసిన పరికరాలు పంచుకొను"
@@ -1233,6 +1220,81 @@ msgstr "మీరు ప్రస్తుతం మీ మైక్రోఫో
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr "మీరు ప్రస్తుతం మీ కేమెరా మరియు మైక్రోఫోన్‌ను %S తో పంచుకొనుచున్నారు."
+
+#. # Mixed Content Blocker Doorhanger Notification
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: mixedContentBlocked.message
+msgid "%S has blocked content that isn't secure."
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.label
+msgid "Keep Blocking"
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.accesskey
+msgid "B"
+msgstr ""
+
+#: mixedContentBlocked.unblock.label
+msgid "Disable Protection on This Page"
+msgstr ""
+
+#: mixedContentBlocked.unblock.accesskey
+msgctxt "mixedContentBlocked.unblock.accesskey"
+msgid "D"
+msgstr ""
+
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: slowStartup.message
+msgid "%S seems slow… to… start."
+msgstr ""
+
+#: slowStartup.helpButton.label
+msgid "Learn How to Speed It Up"
+msgstr ""
+
+#: slowStartup.helpButton.accesskey
+msgid "L"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.label
+msgid "Don't Tell Me Again"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.accesskey
+msgctxt "slowStartup.disableNotificationButton.accesskey"
+msgid "A"
+msgstr ""
+
+#~ msgid "Click here to activate the %S plugin."
+#~ msgstr "%S చొప్పింతను క్రియాశీలం చేయుటకు యిచట తట్టండి."
+
+#~ msgid "Start Private Browsing"
+#~ msgstr "గోప్య  వీక్షణము"
+
+#~ msgid "Would you like to start Private Browsing?"
+#~ msgstr "గోప్య వీక్షణం ను ప్రారంభించదలచారా?"
+
+#~ msgid ""
+#~ "%S will save your current tabs for when you are done with your Private "
+#~ "Browsing session."
+#~ msgstr "%S , మీ  గోప్య వీక్షణ సభ  పూర్తైన  తర్వాత మీ ప్రస్తుత టాబ్లను దాచుతుంది ."
+
+#~ msgid "&Start Private Browsing"
+#~ msgstr "గోప్య  వీక్షణాన్ని మొదలుపెట్టండి(&S) "
+
+#~ msgid "&Cancel"
+#~ msgstr "రద్దు చేయు (&C) "
+
+#~ msgid "&Do not show this message again"
+#~ msgstr "ఇక ముందు అడగవద్దు (&D) "
+
+#~ msgid "Remove from %S"
+#~ msgstr "%S నుండి తీసివేయి"
+
+#~ msgctxt "social.remove.accesskey"
+#~ msgid "R"
+#~ msgstr "R"
 
 #~ msgid ""
 #~ "Will you help improve %1$S by sending information about performance, "
