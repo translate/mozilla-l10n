@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/browser/chrome/browser/browser.properties
+#. extracted from templates-en-US/browser/chrome/browser/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-30 20:54-0700\n"
+"POT-Creation-Date: 2013-02-22 11:39+0100\n"
 "PO-Revision-Date: 2013-02-08 10:32+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1360319569.0\n"
@@ -444,9 +444,9 @@ msgstr "N"
 msgid "Activate"
 msgstr "Gweithredu"
 
-#: PluginClickToPlay
-msgid "Click here to activate the %S plugin."
-msgstr "Cliciwch yma i gychwyn ategyn %S."
+#: PluginClickToActivate
+msgid "Activate %S."
+msgstr ""
 
 #. # LOCALIZATION NOTE - "vulnerable" indicates there is a security bug in the
 #. # plugin that is being exploited by attackers.
@@ -870,39 +870,6 @@ msgctxt "safebrowsing.notAnAttackButton.accessKey"
 msgid "A"
 msgstr "A"
 
-#. # Private Browsing Confirmation dialog
-#. # LOCALIZATION NOTE (privateBrowsingMessage): %S will be replaced
-#. # by the name of the application.
-#. # LOCALIZATION NOTE (privateBrowsingYesTitle, privateBrowsingNoTitle, privateBrowsingNeverAsk):
-#. # Access keys are specified by prefixing the desired letter with an ampersand.
-#: privateBrowsingDialogTitle
-msgid "Start Private Browsing"
-msgstr "Dechrau Pori Preifat"
-
-#: privateBrowsingMessageHeader
-msgid "Would you like to start Private Browsing?"
-msgstr "Hoffech chi ddechrau Pori Preifat?"
-
-#: privateBrowsingMessage
-msgid ""
-"%S will save your current tabs for when you are done with your Private "
-"Browsing session."
-msgstr ""
-"Bydd %S yn cadw eich tabiau cyfredol pan fyddwch wedi gorffen eich sesiwn "
-"Pori Preifat."
-
-#: privateBrowsingYesTitle
-msgid "&Start Private Browsing"
-msgstr "&Dechrau Pori Preifat"
-
-#: privateBrowsingNoTitle
-msgid "&Cancel"
-msgstr "D&iddymu"
-
-#: privateBrowsingNeverAsk
-msgid "&Do not show this message again"
-msgstr "&Peidio dangos y neges hon eto"
-
 #. # Ctrl-Tab
 #. # LOCALIZATION NOTE (ctrlTab.showAll.label): #1 represents the number
 #. # of tabs in the current browser window. It will always be 2 at least.
@@ -1089,15 +1056,17 @@ msgstr "Cofio'r penderfyniad am %S"
 msgid "You've turned on %1$S for %2$S."
 msgstr "Rydych wedi cychwyn %1$S ar gyfer %2$S."
 
-#. # LOCALIZATION NOTE (social.remove.label): %S = brandShortName
-#: social.remove.label
-msgid "Remove from %S"
-msgstr "Tynnu o %S"
+#. # LOCALIZATION NOTE (social.removeProvider.label): %S is the name of the social provider
+#: social.removeProvider.label
+#, fuzzy
+msgctxt "social.removeProvider.label"
+msgid "Remove %S"
+msgstr "Tynnu %S"
 
-#: social.remove.accesskey
-msgctxt "social.remove.accesskey"
+#: social.removeProvider.accesskey
+msgctxt "social.removeProvider.accesskey"
 msgid "R"
-msgstr "R"
+msgstr ""
 
 #. # LOCALIZATION NOTE (social.remove.confirmationLabel): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
 #: social.remove.confirmationLabel
@@ -1106,6 +1075,8 @@ msgstr "Ydych chi'n siŵr eich bod am dynnu %1$S ar gyfer %2$S?"
 
 #. # LOCALIZATION NOTE (social.remove.confirmationOK): %S is the name of the social provider
 #: social.remove.confirmationOK
+#, fuzzy
+msgctxt "social.remove.confirmationOK"
 msgid "Remove %S"
 msgstr "Tynnu %S"
 
@@ -1160,6 +1131,12 @@ msgstr "Cau'r Bar Ochr"
 msgctxt "social.error.closeSidebar.accesskey"
 msgid "C"
 msgstr "C"
+
+#. # LOCALIZATION NOTE: %1$S is the label for the toolbar button, %2$S is the associated badge numbering that the social provider may provide.
+#: social.aria.toolbarButtonBadgeText
+#, fuzzy
+msgid "%1$S (%2$S)"
+msgstr "%1$S %2$S"
 
 #. # Identity notifications popups
 #: identity.termsOfService
@@ -1238,6 +1215,14 @@ msgstr "Hoffech chi rannu eich meicroffon gyda %S?"
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "Hoffech chi rannu eich camera a meicroffon gyda %S?"
 
+#: getUserMedia.noVideo.label
+msgid "No Video"
+msgstr ""
+
+#: getUserMedia.noAudio.label
+msgid "No Audio"
+msgstr ""
+
 #: getUserMedia.shareSelectedDevices.label
 msgid "Share Selected Device;Share Selected Devices"
 msgstr "Rhannu Dyfais Dewisol;Rhannu Dyfeisiau Dewisol"
@@ -1267,6 +1252,83 @@ msgstr "Ar hyn o bryd rydych yn rhannu eich meicroffon gyda %S."
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr "Ar hyn o bryd rydych yn rhannu eich camera a'ch meicroffon gyda %S."
+
+#. # Mixed Content Blocker Doorhanger Notification
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: mixedContentBlocked.message
+msgid "%S has blocked content that isn't secure."
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.label
+msgid "Keep Blocking"
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.accesskey
+msgid "B"
+msgstr ""
+
+#: mixedContentBlocked.unblock.label
+msgid "Disable Protection on This Page"
+msgstr ""
+
+#: mixedContentBlocked.unblock.accesskey
+msgctxt "mixedContentBlocked.unblock.accesskey"
+msgid "D"
+msgstr ""
+
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: slowStartup.message
+msgid "%S seems slow… to… start."
+msgstr ""
+
+#: slowStartup.helpButton.label
+msgid "Learn How to Speed It Up"
+msgstr ""
+
+#: slowStartup.helpButton.accesskey
+msgid "L"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.label
+msgid "Don't Tell Me Again"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.accesskey
+msgctxt "slowStartup.disableNotificationButton.accesskey"
+msgid "A"
+msgstr ""
+
+#~ msgid "Click here to activate the %S plugin."
+#~ msgstr "Cliciwch yma i gychwyn ategyn %S."
+
+#~ msgid "Start Private Browsing"
+#~ msgstr "Dechrau Pori Preifat"
+
+#~ msgid "Would you like to start Private Browsing?"
+#~ msgstr "Hoffech chi ddechrau Pori Preifat?"
+
+#~ msgid ""
+#~ "%S will save your current tabs for when you are done with your Private "
+#~ "Browsing session."
+#~ msgstr ""
+#~ "Bydd %S yn cadw eich tabiau cyfredol pan fyddwch wedi gorffen eich sesiwn "
+#~ "Pori Preifat."
+
+#~ msgid "&Start Private Browsing"
+#~ msgstr "&Dechrau Pori Preifat"
+
+#~ msgid "&Cancel"
+#~ msgstr "D&iddymu"
+
+#~ msgid "&Do not show this message again"
+#~ msgstr "&Peidio dangos y neges hon eto"
+
+#~ msgid "Remove from %S"
+#~ msgstr "Tynnu o %S"
+
+#~ msgctxt "social.remove.accesskey"
+#~ msgid "R"
+#~ msgstr "R"
 
 #~ msgid ""
 #~ "Will you help improve %1$S by sending information about performance, "

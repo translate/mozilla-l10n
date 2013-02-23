@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/browser/chrome/browser/browser.properties
+#. extracted from templates-en-US/browser/chrome/browser/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-30 20:54-0700\n"
+"POT-Creation-Date: 2013-02-22 11:39+0100\n"
 "PO-Revision-Date: 2013-01-30 09:00+0000\n"
 "Last-Translator: Jojoo <jojoo.imbeah@suuch.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -430,9 +430,9 @@ msgstr "N"
 msgid "Activate"
 msgstr "Kenyan"
 
-#: PluginClickToPlay
-msgid "Click here to activate the %S plugin."
-msgstr "Klike ha fa kenyan %S plagin."
+#: PluginClickToActivate
+msgid "Activate %S."
+msgstr ""
 
 #. # LOCALIZATION NOTE - "vulnerable" indicates there is a security bug in the
 #. # plugin that is being exploited by attackers.
@@ -856,39 +856,6 @@ msgctxt "safebrowsing.notAnAttackButton.accessKey"
 msgid "A"
 msgstr "A"
 
-#. # Private Browsing Confirmation dialog
-#. # LOCALIZATION NOTE (privateBrowsingMessage): %S will be replaced
-#. # by the name of the application.
-#. # LOCALIZATION NOTE (privateBrowsingYesTitle, privateBrowsingNoTitle, privateBrowsingNeverAsk):
-#. # Access keys are specified by prefixing the desired letter with an ampersand.
-#: privateBrowsingDialogTitle
-msgid "Start Private Browsing"
-msgstr "Hyɛ Brawsen Praevet Ase"
-
-#: privateBrowsingMessageHeader
-msgid "Would you like to start Private Browsing?"
-msgstr "Wo pɛ sɛ wo hyɛ Brawsen Praevet Ase?"
-
-#: privateBrowsingMessage
-msgid ""
-"%S will save your current tabs for when you are done with your Private "
-"Browsing session."
-msgstr ""
-"%S besie wo ntab a wo ebue no seisei ara sɛ wo wie sɛ wo reyɛ Brawsen "
-"Praevet a."
-
-#: privateBrowsingYesTitle
-msgid "&Start Private Browsing"
-msgstr "Hyɛ Braw&sen Praevet Ase"
-
-#: privateBrowsingNoTitle
-msgid "&Cancel"
-msgstr "T&wa-mu"
-
-#: privateBrowsingNeverAsk
-msgid "&Do not show this message again"
-msgstr "Ɛn&nkyerɛ nkrato yi bio"
-
 #. # Ctrl-Tab
 #. # LOCALIZATION NOTE (ctrlTab.showAll.label): #1 represents the number
 #. # of tabs in the current browser window. It will always be 2 at least.
@@ -1073,15 +1040,17 @@ msgstr "Kae gyinato ma %S"
 msgid "You've turned on %1$S for %2$S."
 msgstr "Woasɔw %1$S ama %2$S."
 
-#. # LOCALIZATION NOTE (social.remove.label): %S = brandShortName
-#: social.remove.label
-msgid "Remove from %S"
-msgstr "Yi firi %S"
+#. # LOCALIZATION NOTE (social.removeProvider.label): %S is the name of the social provider
+#: social.removeProvider.label
+#, fuzzy
+msgctxt "social.removeProvider.label"
+msgid "Remove %S"
+msgstr "Yi %S"
 
-#: social.remove.accesskey
-msgctxt "social.remove.accesskey"
+#: social.removeProvider.accesskey
+msgctxt "social.removeProvider.accesskey"
 msgid "R"
-msgstr "R"
+msgstr ""
 
 #. # LOCALIZATION NOTE (social.remove.confirmationLabel): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
 #: social.remove.confirmationLabel
@@ -1090,6 +1059,8 @@ msgstr "Wo gye di sɛ wo pɛ sɛ wo yi %1$S firi %2$S mu?"
 
 #. # LOCALIZATION NOTE (social.remove.confirmationOK): %S is the name of the social provider
 #: social.remove.confirmationOK
+#, fuzzy
+msgctxt "social.remove.confirmationOK"
 msgid "Remove %S"
 msgstr "Yi %S"
 
@@ -1145,6 +1116,12 @@ msgstr "Ka saedbaa yi to mu"
 msgctxt "social.error.closeSidebar.accesskey"
 msgid "C"
 msgstr "C"
+
+#. # LOCALIZATION NOTE: %1$S is the label for the toolbar button, %2$S is the associated badge numbering that the social provider may provide.
+#: social.aria.toolbarButtonBadgeText
+#, fuzzy
+msgid "%1$S (%2$S)"
+msgstr "%1$S %2$S"
 
 #. # Identity notifications popups
 #: identity.termsOfService
@@ -1223,6 +1200,14 @@ msgstr "Wo bɛ pɛ sɛ wo ne %S bɛkyɛ wo maek anaa?"
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "Wo bɛ pɛ sɛ wo ne %S bɛkyɛ wo mfonin-fidie ne maek anaa?"
 
+#: getUserMedia.noVideo.label
+msgid "No Video"
+msgstr ""
+
+#: getUserMedia.noAudio.label
+msgid "No Audio"
+msgstr ""
+
 #: getUserMedia.shareSelectedDevices.label
 msgid "Share Selected Device;Share Selected Devices"
 msgstr ""
@@ -1252,6 +1237,83 @@ msgstr ""
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr ""
+
+#. # Mixed Content Blocker Doorhanger Notification
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: mixedContentBlocked.message
+msgid "%S has blocked content that isn't secure."
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.label
+msgid "Keep Blocking"
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.accesskey
+msgid "B"
+msgstr ""
+
+#: mixedContentBlocked.unblock.label
+msgid "Disable Protection on This Page"
+msgstr ""
+
+#: mixedContentBlocked.unblock.accesskey
+msgctxt "mixedContentBlocked.unblock.accesskey"
+msgid "D"
+msgstr ""
+
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: slowStartup.message
+msgid "%S seems slow… to… start."
+msgstr ""
+
+#: slowStartup.helpButton.label
+msgid "Learn How to Speed It Up"
+msgstr ""
+
+#: slowStartup.helpButton.accesskey
+msgid "L"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.label
+msgid "Don't Tell Me Again"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.accesskey
+msgctxt "slowStartup.disableNotificationButton.accesskey"
+msgid "A"
+msgstr ""
+
+#~ msgid "Click here to activate the %S plugin."
+#~ msgstr "Klike ha fa kenyan %S plagin."
+
+#~ msgid "Start Private Browsing"
+#~ msgstr "Hyɛ Brawsen Praevet Ase"
+
+#~ msgid "Would you like to start Private Browsing?"
+#~ msgstr "Wo pɛ sɛ wo hyɛ Brawsen Praevet Ase?"
+
+#~ msgid ""
+#~ "%S will save your current tabs for when you are done with your Private "
+#~ "Browsing session."
+#~ msgstr ""
+#~ "%S besie wo ntab a wo ebue no seisei ara sɛ wo wie sɛ wo reyɛ Brawsen "
+#~ "Praevet a."
+
+#~ msgid "&Start Private Browsing"
+#~ msgstr "Hyɛ Braw&sen Praevet Ase"
+
+#~ msgid "&Cancel"
+#~ msgstr "T&wa-mu"
+
+#~ msgid "&Do not show this message again"
+#~ msgstr "Ɛn&nkyerɛ nkrato yi bio"
+
+#~ msgid "Remove from %S"
+#~ msgstr "Yi firi %S"
+
+#~ msgctxt "social.remove.accesskey"
+#~ msgid "R"
+#~ msgstr "R"
 
 #~ msgid ""
 #~ "Will you help improve %1$S by sending information about performance, "

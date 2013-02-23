@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/browser/chrome/browser/browser.properties
+#. extracted from templates-en-US/browser/chrome/browser/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-30 20:54-0700\n"
+"POT-Creation-Date: 2013-02-22 11:39+0100\n"
 "PO-Revision-Date: 2013-01-23 16:03+0000\n"
 "Last-Translator: romi <romihardiyanto@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -437,9 +437,9 @@ msgstr "J"
 msgid "Activate"
 msgstr "Aktifkan"
 
-#: PluginClickToPlay
-msgid "Click here to activate the %S plugin."
-msgstr "Klik di sini untuk mengaktifkan plugin %S."
+#: PluginClickToActivate
+msgid "Activate %S."
+msgstr ""
 
 #. # LOCALIZATION NOTE - "vulnerable" indicates there is a security bug in the
 #. # plugin that is being exploited by attackers.
@@ -862,39 +862,6 @@ msgctxt "safebrowsing.notAnAttackButton.accessKey"
 msgid "A"
 msgstr "y"
 
-#. # Private Browsing Confirmation dialog
-#. # LOCALIZATION NOTE (privateBrowsingMessage): %S will be replaced
-#. # by the name of the application.
-#. # LOCALIZATION NOTE (privateBrowsingYesTitle, privateBrowsingNoTitle, privateBrowsingNeverAsk):
-#. # Access keys are specified by prefixing the desired letter with an ampersand.
-#: privateBrowsingDialogTitle
-msgid "Start Private Browsing"
-msgstr "Mulai Mode Penjelajahan Pribadi"
-
-#: privateBrowsingMessageHeader
-msgid "Would you like to start Private Browsing?"
-msgstr "Apakah Anda ingin memulai Mode Penjelajahan Pribadi?"
-
-#: privateBrowsingMessage
-msgid ""
-"%S will save your current tabs for when you are done with your Private "
-"Browsing session."
-msgstr ""
-"%S akan menyimpan tab yang ada sekarang untuk dibuka lagi setelah Anda "
-"mengakhiri sesi Mode Penjelajahan Pribadi."
-
-#: privateBrowsingYesTitle
-msgid "&Start Private Browsing"
-msgstr "&Mulai Mode Penjelajahan Pribadi"
-
-#: privateBrowsingNoTitle
-msgid "&Cancel"
-msgstr "&Batal"
-
-#: privateBrowsingNeverAsk
-msgid "&Do not show this message again"
-msgstr "&Jangan tampilkan pesan ini lagi"
-
 #. # Ctrl-Tab
 #. # LOCALIZATION NOTE (ctrlTab.showAll.label): #1 represents the number
 #. # of tabs in the current browser window. It will always be 2 at least.
@@ -1080,15 +1047,17 @@ msgstr "Ingat setelan untuk %S"
 msgid "You've turned on %1$S for %2$S."
 msgstr "Anda mengaktifkan  %1$S untuk %2$S."
 
-#. # LOCALIZATION NOTE (social.remove.label): %S = brandShortName
-#: social.remove.label
-msgid "Remove from %S"
-msgstr "Hapus dari %S"
+#. # LOCALIZATION NOTE (social.removeProvider.label): %S is the name of the social provider
+#: social.removeProvider.label
+#, fuzzy
+msgctxt "social.removeProvider.label"
+msgid "Remove %S"
+msgstr "Hapus %S"
 
-#: social.remove.accesskey
-msgctxt "social.remove.accesskey"
+#: social.removeProvider.accesskey
+msgctxt "social.removeProvider.accesskey"
 msgid "R"
-msgstr "H"
+msgstr ""
 
 #. # LOCALIZATION NOTE (social.remove.confirmationLabel): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
 #: social.remove.confirmationLabel
@@ -1097,6 +1066,8 @@ msgstr "Yakin ingin menghapus %1$S untuk %2$S?"
 
 #. # LOCALIZATION NOTE (social.remove.confirmationOK): %S is the name of the social provider
 #: social.remove.confirmationOK
+#, fuzzy
+msgctxt "social.remove.confirmationOK"
 msgid "Remove %S"
 msgstr "Hapus %S"
 
@@ -1151,6 +1122,12 @@ msgstr "Tutup Bilah Samping Ini"
 msgctxt "social.error.closeSidebar.accesskey"
 msgid "C"
 msgstr "T"
+
+#. # LOCALIZATION NOTE: %1$S is the label for the toolbar button, %2$S is the associated badge numbering that the social provider may provide.
+#: social.aria.toolbarButtonBadgeText
+#, fuzzy
+msgid "%1$S (%2$S)"
+msgstr "%1$S %2$S"
 
 #. # Identity notifications popups
 #: identity.termsOfService
@@ -1229,6 +1206,14 @@ msgstr "Ingin berbagi mikrofon Anda dengan %S?"
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "Ingin berbagi kamera dan mikrofon Anda dengan %S?"
 
+#: getUserMedia.noVideo.label
+msgid "No Video"
+msgstr ""
+
+#: getUserMedia.noAudio.label
+msgid "No Audio"
+msgstr ""
+
 #: getUserMedia.shareSelectedDevices.label
 msgid "Share Selected Device;Share Selected Devices"
 msgstr "Bagikan Perangkat Terpilih;Bagikan Perangkat Terpilih"
@@ -1258,6 +1243,83 @@ msgstr "Anda sedang berbagi mikorofon dengan %S."
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr "Anda sedang berbagi kamera dan mikorofon dengan %S."
+
+#. # Mixed Content Blocker Doorhanger Notification
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: mixedContentBlocked.message
+msgid "%S has blocked content that isn't secure."
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.label
+msgid "Keep Blocking"
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.accesskey
+msgid "B"
+msgstr ""
+
+#: mixedContentBlocked.unblock.label
+msgid "Disable Protection on This Page"
+msgstr ""
+
+#: mixedContentBlocked.unblock.accesskey
+msgctxt "mixedContentBlocked.unblock.accesskey"
+msgid "D"
+msgstr ""
+
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: slowStartup.message
+msgid "%S seems slow… to… start."
+msgstr ""
+
+#: slowStartup.helpButton.label
+msgid "Learn How to Speed It Up"
+msgstr ""
+
+#: slowStartup.helpButton.accesskey
+msgid "L"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.label
+msgid "Don't Tell Me Again"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.accesskey
+msgctxt "slowStartup.disableNotificationButton.accesskey"
+msgid "A"
+msgstr ""
+
+#~ msgid "Click here to activate the %S plugin."
+#~ msgstr "Klik di sini untuk mengaktifkan plugin %S."
+
+#~ msgid "Start Private Browsing"
+#~ msgstr "Mulai Mode Penjelajahan Pribadi"
+
+#~ msgid "Would you like to start Private Browsing?"
+#~ msgstr "Apakah Anda ingin memulai Mode Penjelajahan Pribadi?"
+
+#~ msgid ""
+#~ "%S will save your current tabs for when you are done with your Private "
+#~ "Browsing session."
+#~ msgstr ""
+#~ "%S akan menyimpan tab yang ada sekarang untuk dibuka lagi setelah Anda "
+#~ "mengakhiri sesi Mode Penjelajahan Pribadi."
+
+#~ msgid "&Start Private Browsing"
+#~ msgstr "&Mulai Mode Penjelajahan Pribadi"
+
+#~ msgid "&Cancel"
+#~ msgstr "&Batal"
+
+#~ msgid "&Do not show this message again"
+#~ msgstr "&Jangan tampilkan pesan ini lagi"
+
+#~ msgid "Remove from %S"
+#~ msgstr "Hapus dari %S"
+
+#~ msgctxt "social.remove.accesskey"
+#~ msgid "R"
+#~ msgstr "H"
 
 #~ msgid ""
 #~ "Will you help improve %1$S by sending information about performance, "

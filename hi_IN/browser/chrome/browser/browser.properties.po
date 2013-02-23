@@ -2,12 +2,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/browser/chrome/browser/browser.properties
+#. extracted from templates-en-US/browser/chrome/browser/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-30 20:54-0700\n"
+"POT-Creation-Date: 2013-02-22 11:39+0100\n"
 "PO-Revision-Date: 2012-11-18 10:40+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh>\n"
 "Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
@@ -434,9 +434,9 @@ msgstr "N"
 msgid "Activate"
 msgstr "सक्रिय करें"
 
-#: PluginClickToPlay
-msgid "Click here to activate the %S plugin."
-msgstr "%S प्लगइन को सक्रिय करने के लिए यहाँ क्लिक करें."
+#: PluginClickToActivate
+msgid "Activate %S."
+msgstr ""
 
 #. # LOCALIZATION NOTE - "vulnerable" indicates there is a security bug in the
 #. # plugin that is being exploited by attackers.
@@ -855,37 +855,6 @@ msgctxt "safebrowsing.notAnAttackButton.accessKey"
 msgid "A"
 msgstr "A"
 
-#. # Private Browsing Confirmation dialog
-#. # LOCALIZATION NOTE (privateBrowsingMessage): %S will be replaced
-#. # by the name of the application.
-#. # LOCALIZATION NOTE (privateBrowsingYesTitle, privateBrowsingNoTitle, privateBrowsingNeverAsk):
-#. # Access keys are specified by prefixing the desired letter with an ampersand.
-#: privateBrowsingDialogTitle
-msgid "Start Private Browsing"
-msgstr "निजी ब्राउज़िंग आरंभ करें"
-
-#: privateBrowsingMessageHeader
-msgid "Would you like to start Private Browsing?"
-msgstr "क्या आप निजी ब्राउज़िंग आरंभ करना चाहेंगे?"
-
-#: privateBrowsingMessage
-msgid ""
-"%S will save your current tabs for when you are done with your Private "
-"Browsing session."
-msgstr "%S आपके मौजूदा टैब को सहेजेगा जब आप अपना निजी ब्राउज़िंग सत्र समाप्त कर लेंगे."
-
-#: privateBrowsingYesTitle
-msgid "&Start Private Browsing"
-msgstr "निजी ब्राउज़िंग आरंभ करें (&S)"
-
-#: privateBrowsingNoTitle
-msgid "&Cancel"
-msgstr "रद्द करें (&C)"
-
-#: privateBrowsingNeverAsk
-msgid "&Do not show this message again"
-msgstr "इस संदेश को फिर मत दिखाएँ (&D)"
-
 #. # Ctrl-Tab
 #. # LOCALIZATION NOTE (ctrlTab.showAll.label): #1 represents the number
 #. # of tabs in the current browser window. It will always be 2 at least.
@@ -1063,15 +1032,17 @@ msgstr "%S के लिए निर्णय याद रखें"
 msgid "You've turned on %1$S for %2$S."
 msgstr "You've turned on %1$S for %2$S."
 
-#. # LOCALIZATION NOTE (social.remove.label): %S = brandShortName
-#: social.remove.label
-msgid "Remove from %S"
-msgstr "%S से हटाएँ"
+#. # LOCALIZATION NOTE (social.removeProvider.label): %S is the name of the social provider
+#: social.removeProvider.label
+#, fuzzy
+msgctxt "social.removeProvider.label"
+msgid "Remove %S"
+msgstr "%S हटाएँ"
 
-#: social.remove.accesskey
-msgctxt "social.remove.accesskey"
+#: social.removeProvider.accesskey
+msgctxt "social.removeProvider.accesskey"
 msgid "R"
-msgstr "R"
+msgstr ""
 
 #. # LOCALIZATION NOTE (social.remove.confirmationLabel): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
 #: social.remove.confirmationLabel
@@ -1080,6 +1051,8 @@ msgstr "क्या आप वाकई %1$S को %2$S के लिए ह�
 
 #. # LOCALIZATION NOTE (social.remove.confirmationOK): %S is the name of the social provider
 #: social.remove.confirmationOK
+#, fuzzy
+msgctxt "social.remove.confirmationOK"
 msgid "Remove %S"
 msgstr "%S हटाएँ"
 
@@ -1135,6 +1108,12 @@ msgstr "इस बाज़ूपट्टी को हटाएँ"
 msgctxt "social.error.closeSidebar.accesskey"
 msgid "C"
 msgstr "C"
+
+#. # LOCALIZATION NOTE: %1$S is the label for the toolbar button, %2$S is the associated badge numbering that the social provider may provide.
+#: social.aria.toolbarButtonBadgeText
+#, fuzzy
+msgid "%1$S (%2$S)"
+msgstr "%1$S %2$S"
 
 #. # Identity notifications popups
 #: identity.termsOfService
@@ -1213,6 +1192,14 @@ msgstr "क्या आप %S के साथ अपना माइक्र�
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "क्या आप %S के साथ अपना कैमरा और माइक्रोफोन साझा करना चाहेंगे?"
 
+#: getUserMedia.noVideo.label
+msgid "No Video"
+msgstr ""
+
+#: getUserMedia.noAudio.label
+msgid "No Audio"
+msgstr ""
+
 #: getUserMedia.shareSelectedDevices.label
 msgid "Share Selected Device;Share Selected Devices"
 msgstr ""
@@ -1242,6 +1229,81 @@ msgstr ""
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr ""
+
+#. # Mixed Content Blocker Doorhanger Notification
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: mixedContentBlocked.message
+msgid "%S has blocked content that isn't secure."
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.label
+msgid "Keep Blocking"
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.accesskey
+msgid "B"
+msgstr ""
+
+#: mixedContentBlocked.unblock.label
+msgid "Disable Protection on This Page"
+msgstr ""
+
+#: mixedContentBlocked.unblock.accesskey
+msgctxt "mixedContentBlocked.unblock.accesskey"
+msgid "D"
+msgstr ""
+
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: slowStartup.message
+msgid "%S seems slow… to… start."
+msgstr ""
+
+#: slowStartup.helpButton.label
+msgid "Learn How to Speed It Up"
+msgstr ""
+
+#: slowStartup.helpButton.accesskey
+msgid "L"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.label
+msgid "Don't Tell Me Again"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.accesskey
+msgctxt "slowStartup.disableNotificationButton.accesskey"
+msgid "A"
+msgstr ""
+
+#~ msgid "Click here to activate the %S plugin."
+#~ msgstr "%S प्लगइन को सक्रिय करने के लिए यहाँ क्लिक करें."
+
+#~ msgid "Start Private Browsing"
+#~ msgstr "निजी ब्राउज़िंग आरंभ करें"
+
+#~ msgid "Would you like to start Private Browsing?"
+#~ msgstr "क्या आप निजी ब्राउज़िंग आरंभ करना चाहेंगे?"
+
+#~ msgid ""
+#~ "%S will save your current tabs for when you are done with your Private "
+#~ "Browsing session."
+#~ msgstr "%S आपके मौजूदा टैब को सहेजेगा जब आप अपना निजी ब्राउज़िंग सत्र समाप्त कर लेंगे."
+
+#~ msgid "&Start Private Browsing"
+#~ msgstr "निजी ब्राउज़िंग आरंभ करें (&S)"
+
+#~ msgid "&Cancel"
+#~ msgstr "रद्द करें (&C)"
+
+#~ msgid "&Do not show this message again"
+#~ msgstr "इस संदेश को फिर मत दिखाएँ (&D)"
+
+#~ msgid "Remove from %S"
+#~ msgstr "%S से हटाएँ"
+
+#~ msgctxt "social.remove.accesskey"
+#~ msgid "R"
+#~ msgstr "R"
 
 #~ msgid ""
 #~ "Will you help improve %1$S by sending information about performance, "

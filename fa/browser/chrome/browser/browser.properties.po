@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/browser/chrome/browser/browser.properties
+#. extracted from templates-en-US/browser/chrome/browser/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-30 20:54-0700\n"
+"POT-Creation-Date: 2013-02-22 11:39+0100\n"
 "PO-Revision-Date: 2013-01-08 12:57+0000\n"
 "Last-Translator: Mohammad Reza <katsuyori@mail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -442,9 +442,9 @@ msgstr "N"
 msgid "Activate"
 msgstr "فعال‌سازی"
 
-#: PluginClickToPlay
-msgid "Click here to activate the %S plugin."
-msgstr "برای فعال‌کردن افزودنی %S، کلیک کنید."
+#: PluginClickToActivate
+msgid "Activate %S."
+msgstr ""
 
 #. # LOCALIZATION NOTE - "vulnerable" indicates there is a security bug in the
 #. # plugin that is being exploited by attackers.
@@ -865,39 +865,6 @@ msgctxt "safebrowsing.notAnAttackButton.accessKey"
 msgid "A"
 msgstr "ت"
 
-#. # Private Browsing Confirmation dialog
-#. # LOCALIZATION NOTE (privateBrowsingMessage): %S will be replaced
-#. # by the name of the application.
-#. # LOCALIZATION NOTE (privateBrowsingYesTitle, privateBrowsingNoTitle, privateBrowsingNeverAsk):
-#. # Access keys are specified by prefixing the desired letter with an ampersand.
-#: privateBrowsingDialogTitle
-msgid "Start Private Browsing"
-msgstr "شروع مرور خصوصی"
-
-#: privateBrowsingMessageHeader
-msgid "Would you like to start Private Browsing?"
-msgstr "آیا مایل به شروع مرور خصوصی هستید؟"
-
-#: privateBrowsingMessage
-msgid ""
-"%S will save your current tabs for when you are done with your Private "
-"Browsing session."
-msgstr ""
-"%S زبانه‌های فعلی شما را برای زمانی که نشست مرور خصوصی‌تان تمام شود ذخیره "
-"می‌کند."
-
-#: privateBrowsingYesTitle
-msgid "&Start Private Browsing"
-msgstr "&شروع مرور خصوصی"
-
-#: privateBrowsingNoTitle
-msgid "&Cancel"
-msgstr "ا&نصراف"
-
-#: privateBrowsingNeverAsk
-msgid "&Do not show this message again"
-msgstr "&دیگر این پیغام نمایش داده نشود"
-
 #. # Ctrl-Tab
 #. # LOCALIZATION NOTE (ctrlTab.showAll.label): #1 represents the number
 #. # of tabs in the current browser window. It will always be 2 at least.
@@ -1083,15 +1050,17 @@ msgstr "انتخاب من را برای %S به خاطر بسپار"
 msgid "You've turned on %1$S for %2$S."
 msgstr "شما %1$S را برای %2$S روشن کرده‌اید."
 
-#. # LOCALIZATION NOTE (social.remove.label): %S = brandShortName
-#: social.remove.label
-msgid "Remove from %S"
-msgstr "حذف از %S"
+#. # LOCALIZATION NOTE (social.removeProvider.label): %S is the name of the social provider
+#: social.removeProvider.label
+#, fuzzy
+msgctxt "social.removeProvider.label"
+msgid "Remove %S"
+msgstr "حذف %S"
 
-#: social.remove.accesskey
-msgctxt "social.remove.accesskey"
+#: social.removeProvider.accesskey
+msgctxt "social.removeProvider.accesskey"
 msgid "R"
-msgstr "R"
+msgstr ""
 
 #. # LOCALIZATION NOTE (social.remove.confirmationLabel): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
 #: social.remove.confirmationLabel
@@ -1100,6 +1069,8 @@ msgstr "آیا مطمئن هستید که می‌خواهید %1$S را برای
 
 #. # LOCALIZATION NOTE (social.remove.confirmationOK): %S is the name of the social provider
 #: social.remove.confirmationOK
+#, fuzzy
+msgctxt "social.remove.confirmationOK"
 msgid "Remove %S"
 msgstr "حذف %S"
 
@@ -1154,6 +1125,12 @@ msgstr "بستن نوار کناری"
 msgctxt "social.error.closeSidebar.accesskey"
 msgid "C"
 msgstr "C"
+
+#. # LOCALIZATION NOTE: %1$S is the label for the toolbar button, %2$S is the associated badge numbering that the social provider may provide.
+#: social.aria.toolbarButtonBadgeText
+#, fuzzy
+msgid "%1$S (%2$S)"
+msgstr "%1$S %2$S"
 
 #. # Identity notifications popups
 #: identity.termsOfService
@@ -1232,6 +1209,14 @@ msgstr "آیا مایلید که میکروفون‌تان را با %S به ا�
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "آیا می‌خواهید دوربین و میکروفون خود را با %S به اشتراک بگذارید؟"
 
+#: getUserMedia.noVideo.label
+msgid "No Video"
+msgstr ""
+
+#: getUserMedia.noAudio.label
+msgid "No Audio"
+msgstr ""
+
 #: getUserMedia.shareSelectedDevices.label
 msgid "Share Selected Device;Share Selected Devices"
 msgstr ""
@@ -1261,6 +1246,83 @@ msgstr ""
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr ""
+
+#. # Mixed Content Blocker Doorhanger Notification
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: mixedContentBlocked.message
+msgid "%S has blocked content that isn't secure."
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.label
+msgid "Keep Blocking"
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.accesskey
+msgid "B"
+msgstr ""
+
+#: mixedContentBlocked.unblock.label
+msgid "Disable Protection on This Page"
+msgstr ""
+
+#: mixedContentBlocked.unblock.accesskey
+msgctxt "mixedContentBlocked.unblock.accesskey"
+msgid "D"
+msgstr ""
+
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: slowStartup.message
+msgid "%S seems slow… to… start."
+msgstr ""
+
+#: slowStartup.helpButton.label
+msgid "Learn How to Speed It Up"
+msgstr ""
+
+#: slowStartup.helpButton.accesskey
+msgid "L"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.label
+msgid "Don't Tell Me Again"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.accesskey
+msgctxt "slowStartup.disableNotificationButton.accesskey"
+msgid "A"
+msgstr ""
+
+#~ msgid "Click here to activate the %S plugin."
+#~ msgstr "برای فعال‌کردن افزودنی %S، کلیک کنید."
+
+#~ msgid "Start Private Browsing"
+#~ msgstr "شروع مرور خصوصی"
+
+#~ msgid "Would you like to start Private Browsing?"
+#~ msgstr "آیا مایل به شروع مرور خصوصی هستید؟"
+
+#~ msgid ""
+#~ "%S will save your current tabs for when you are done with your Private "
+#~ "Browsing session."
+#~ msgstr ""
+#~ "%S زبانه‌های فعلی شما را برای زمانی که نشست مرور خصوصی‌تان تمام شود ذخیره "
+#~ "می‌کند."
+
+#~ msgid "&Start Private Browsing"
+#~ msgstr "&شروع مرور خصوصی"
+
+#~ msgid "&Cancel"
+#~ msgstr "ا&نصراف"
+
+#~ msgid "&Do not show this message again"
+#~ msgstr "&دیگر این پیغام نمایش داده نشود"
+
+#~ msgid "Remove from %S"
+#~ msgstr "حذف از %S"
+
+#~ msgctxt "social.remove.accesskey"
+#~ msgid "R"
+#~ msgstr "R"
 
 #~ msgid ""
 #~ "Will you help improve %1$S by sending information about performance, "

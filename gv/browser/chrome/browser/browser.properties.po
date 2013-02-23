@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/browser/chrome/browser/browser.properties
+#. extracted from templates-en-US/browser/chrome/browser/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-30 20:54-0700\n"
+"POT-Creation-Date: 2013-02-22 11:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -469,8 +469,8 @@ msgstr ""
 msgid "Activate"
 msgstr "Cur jantys er"
 
-#: PluginClickToPlay
-msgid "Click here to activate the %S plugin."
+#: PluginClickToActivate
+msgid "Activate %S."
 msgstr ""
 
 #. # LOCALIZATION NOTE - "vulnerable" indicates there is a security bug in the
@@ -949,46 +949,6 @@ msgctxt "safebrowsing.notAnAttackButton.accessKey"
 msgid "A"
 msgstr ""
 
-#. # Private Browsing Confirmation dialog
-#. # LOCALIZATION NOTE (privateBrowsingMessage): %S will be replaced
-#. # by the name of the application.
-#. # LOCALIZATION NOTE (privateBrowsingYesTitle, privateBrowsingNoTitle, privateBrowsingNeverAsk):
-#. # Access keys are specified by prefixing the desired letter with an ampersand.
-#: privateBrowsingDialogTitle
-#, fuzzy
-msgid "Start Private Browsing"
-msgstr "Goaill toshiagh er jeeaghyn trooid eddyr-voggyl persoonagh"
-
-#: privateBrowsingMessageHeader
-#, fuzzy
-msgid "Would you like to start Private Browsing?"
-msgstr ""
-"Vel oo gearree goll toshiaght er jeeagh trooid yn eddyr-voggyl dy persoonagh"
-
-#: privateBrowsingMessage
-#, fuzzy
-msgid ""
-"%S will save your current tabs for when you are done with your Private "
-"Browsing session."
-msgstr ""
-"Be %S sauail oilley ny tabyn 'sy traa t'ayn ayd's traa tou jeant lesh "
-"jeeaghyn trooid eddyr-voggyl dy peroonagh"
-
-#: privateBrowsingYesTitle
-#, fuzzy
-msgid "&Start Private Browsing"
-msgstr "&Goaill toshiaght ec jeeaghyn trooid dy persoonagh"
-
-#: privateBrowsingNoTitle
-#, fuzzy
-msgid "&Cancel"
-msgstr "&Cur ass"
-
-#: privateBrowsingNeverAsk
-#, fuzzy
-msgid "&Do not show this message again"
-msgstr "&Ny jean soilshaghey yn chaghteragh shoh reesht"
-
 #. # Ctrl-Tab
 #. # LOCALIZATION NOTE (ctrlTab.showAll.label): #1 represents the number
 #. # of tabs in the current browser window. It will always be 2 at least.
@@ -1178,13 +1138,14 @@ msgstr ""
 msgid "You've turned on %1$S for %2$S."
 msgstr ""
 
-#. # LOCALIZATION NOTE (social.remove.label): %S = brandShortName
-#: social.remove.label
-msgid "Remove from %S"
+#. # LOCALIZATION NOTE (social.removeProvider.label): %S is the name of the social provider
+#: social.removeProvider.label
+msgctxt "social.removeProvider.label"
+msgid "Remove %S"
 msgstr ""
 
-#: social.remove.accesskey
-msgctxt "social.remove.accesskey"
+#: social.removeProvider.accesskey
+msgctxt "social.removeProvider.accesskey"
 msgid "R"
 msgstr ""
 
@@ -1195,6 +1156,7 @@ msgstr ""
 
 #. # LOCALIZATION NOTE (social.remove.confirmationOK): %S is the name of the social provider
 #: social.remove.confirmationOK
+msgctxt "social.remove.confirmationOK"
 msgid "Remove %S"
 msgstr ""
 
@@ -1250,6 +1212,11 @@ msgstr ""
 #: social.error.closeSidebar.accesskey
 msgctxt "social.error.closeSidebar.accesskey"
 msgid "C"
+msgstr ""
+
+#. # LOCALIZATION NOTE: %1$S is the label for the toolbar button, %2$S is the associated badge numbering that the social provider may provide.
+#: social.aria.toolbarButtonBadgeText
+msgid "%1$S (%2$S)"
 msgstr ""
 
 #. # Identity notifications popups
@@ -1332,6 +1299,14 @@ msgstr ""
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr ""
 
+#: getUserMedia.noVideo.label
+msgid "No Video"
+msgstr ""
+
+#: getUserMedia.noAudio.label
+msgid "No Audio"
+msgstr ""
+
 #: getUserMedia.shareSelectedDevices.label
 msgid "Share Selected Device;Share Selected Devices"
 msgstr ""
@@ -1362,3 +1337,78 @@ msgstr ""
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr ""
+
+#. # Mixed Content Blocker Doorhanger Notification
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: mixedContentBlocked.message
+msgid "%S has blocked content that isn't secure."
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.label
+msgid "Keep Blocking"
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.accesskey
+msgid "B"
+msgstr ""
+
+#: mixedContentBlocked.unblock.label
+msgid "Disable Protection on This Page"
+msgstr ""
+
+#: mixedContentBlocked.unblock.accesskey
+msgctxt "mixedContentBlocked.unblock.accesskey"
+msgid "D"
+msgstr ""
+
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: slowStartup.message
+msgid "%S seems slow… to… start."
+msgstr ""
+
+#: slowStartup.helpButton.label
+msgid "Learn How to Speed It Up"
+msgstr ""
+
+#: slowStartup.helpButton.accesskey
+msgid "L"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.label
+msgid "Don't Tell Me Again"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.accesskey
+msgctxt "slowStartup.disableNotificationButton.accesskey"
+msgid "A"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Start Private Browsing"
+#~ msgstr "Goaill toshiagh er jeeaghyn trooid eddyr-voggyl persoonagh"
+
+#, fuzzy
+#~ msgid "Would you like to start Private Browsing?"
+#~ msgstr ""
+#~ "Vel oo gearree goll toshiaght er jeeagh trooid yn eddyr-voggyl dy "
+#~ "persoonagh"
+
+#, fuzzy
+#~ msgid ""
+#~ "%S will save your current tabs for when you are done with your Private "
+#~ "Browsing session."
+#~ msgstr ""
+#~ "Be %S sauail oilley ny tabyn 'sy traa t'ayn ayd's traa tou jeant lesh "
+#~ "jeeaghyn trooid eddyr-voggyl dy peroonagh"
+
+#, fuzzy
+#~ msgid "&Start Private Browsing"
+#~ msgstr "&Goaill toshiaght ec jeeaghyn trooid dy persoonagh"
+
+#, fuzzy
+#~ msgid "&Cancel"
+#~ msgstr "&Cur ass"
+
+#, fuzzy
+#~ msgid "&Do not show this message again"
+#~ msgstr "&Ny jean soilshaghey yn chaghteragh shoh reesht"
