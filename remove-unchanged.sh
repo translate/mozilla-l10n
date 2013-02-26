@@ -12,8 +12,12 @@ do
 
 	(cd $lang
 	git checkout \
+	browser/chrome/branding/brand.dtd.po \
+	browser/chrome/branding/brand.properties.po \
 	browser/branding/official/brand.dtd.po \
 	browser/branding/official/brand.properties.po \
+	toolkit/chrome/global-region/region.dtd.po \
+	mobile/chrome/region.properties.po
 	browser/chrome/browser-region/region.properties.po \
 	toolkit/chrome/global/intl.properties.po \
 	browser/chrome/browser/aboutRobots.dtd.po \
