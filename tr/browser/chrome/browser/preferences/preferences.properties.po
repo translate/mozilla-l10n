@@ -1,19 +1,21 @@
-#. #### Security
-#. extracted from en-US/browser/chrome/browser/preferences/preferences.properties
+#. # This Source Code Form is subject to the terms of the Mozilla Public# License, v. 2.0. If a copy of the MPL was not distributed with this# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from templates-en-US/browser/chrome/browser/preferences/preferences.properties, ../l10n/tr/browser/chrome/browser/preferences/preferences.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-17 13:18+0200\n"
+"POT-Creation-Date: 2013-03-01 10:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
+#. #### Security
 #. # LOCALIZATION NOTE: phishBefore uses %S to represent the name of the provider
 #. #                    whose privacy policy must be accepted (for enabling
 #. #                    check-every-page-as-I-load-it phishing protection).
@@ -29,7 +31,7 @@ msgstr ""
 #. #### Fonts
 #: labelDefaultFont
 msgid "Default (%S)"
-msgstr "Öntanımlı (%S)"
+msgstr "Varsayılan (%S)"
 
 #. #### Permissions Manager
 #: cookiepermissionstext
@@ -86,7 +88,7 @@ msgstr "Ayrıcalıklar - Resimler"
 
 #: invalidURI
 msgid "Please enter a valid hostname"
-msgstr "Lütfen geçerli bir makine ismi verin"
+msgstr "Lütfen geçerli bir sunucu ismi girin"
 
 #: invalidURITitle
 msgid "Invalid Hostname Entered"
@@ -145,7 +147,7 @@ msgstr "%S kullanılsın"
 
 #: useDefault
 msgid "Use %S (default)"
-msgstr "%S kullanılsın (öntanımlı)"
+msgstr "%S kullanılsın (varsayılan)"
 
 #: useOtherApp
 msgid "Use other…"
@@ -165,15 +167,19 @@ msgstr "Web beslemesi"
 
 #: videoPodcastFeed
 msgid "Video Podcast"
-msgstr "Video pod yayını"
+msgstr "Video podyayını"
 
 #: audioPodcastFeed
 msgid "Podcast"
-msgstr "Pod yayını"
+msgstr "Podyayını"
 
 #: alwaysAsk
 msgid "Always ask"
 msgstr "Daima sor"
+
+#: portableDocumentFormat
+msgid "Portable Document Format (PDF)"
+msgstr "Taşınabilir Belge Biçimi (PDF)"
 
 #. # LOCALIZATION NOTE (usePluginIn):
 #. # %1$S = plugin name (for example "QuickTime Plugin-in 7.2")
@@ -185,7 +191,7 @@ msgstr "%S kullan (%S içinde)"
 #. # LOCALIZATION NOTE (previewInApp, addLiveBookmarksInApp): %S = brandShortName
 #: previewInApp
 msgid "Preview in %S"
-msgstr "%S ile önizleme yap"
+msgstr "%S ile ön izleme yap"
 
 #: addLiveBookmarksInApp
 msgid "Add Live Bookmarks in %S"
@@ -201,7 +207,7 @@ msgstr "%S (%S)"
 #. #### Cookie Viewer
 #: hostColon
 msgid "Host:"
-msgstr "Makine adı:"
+msgstr "Sunucu:"
 
 #: domainColon
 msgid "Domain:"
@@ -253,8 +259,8 @@ msgid ""
 "After removing this data, %S will not be available offline.  Are you sure "
 "you want to remove this offline website?"
 msgstr ""
-"%S bu veriler silindikten sonra çevrim dışı kullanılamaz. Bu çevrim dışı "
-"siteyi silmek istediğinizden emin misiniz?"
+"Bu veriler silindikten sonra %S çevrim dışı kullanılamayacaktır. Bu çevrim "
+"dışı siteyi silmek istediğinizden emin misiniz?"
 
 #: offlineAppRemoveConfirm
 msgid "Remove offline data"
@@ -279,13 +285,22 @@ msgid "Offline Data"
 msgstr "Çevrim dışı veri"
 
 #. ####Preferences::Advanced::Network
-#. #LOCALIZATION NOTE: The next string is for the disk usage of the http cache.
-#. #   e.g., "Your cache is currently using 200 MB"
+#. #LOCALIZATION NOTE: The next string is for the disk usage of the web content cache.
+#. #   e.g., "Your web content cache is currently using 200 MB"
 #. #   %1$S = size
 #. #   %2$S = unit (MB, KB, etc.)
-#: actualCacheSize
-msgid "Your cache is currently using %1$S %2$S of disk space"
-msgstr "Önbelleğiniz hâlihazırda %1$S %2$S disk alanı kullanıyor"
+#: actualDiskCacheSize
+msgid "Your web content cache is currently using %1$S %2$S of disk space"
+msgstr "Web içeriği önbelleğiniz şu anda %1$S %2$S disk alanı kullanıyor"
+
+#. ####Preferences::Advanced::Network
+#. #LOCALIZATION NOTE: The next string is for the disk usage of the application cache.
+#. #   e.g., "Your application cache is currently using 200 MB"
+#. #   %1$S = size
+#. #   %2$S = unit (MB, KB, etc.)
+#: actualAppCacheSize
+msgid "Your application cache is currently using %1$S %2$S of disk space"
+msgstr "Uygulama önbelleğiniz şu anda %1$S %2$S disk alanı kullanıyor"
 
 #: syncUnlink.title
 msgid "Do you want to unlink your device?"
@@ -303,3 +318,16 @@ msgstr ""
 #: syncUnlinkConfirm.label
 msgid "Unlink"
 msgstr "Bağlantıyı kes"
+
+#. # LOCALIZATION NOTE (featureEnableRequiresRestart, featureDisableRequiresRestart, restartTitle): %S = brandShortName
+#: featureEnableRequiresRestart
+msgid "%S must restart to enable this feature."
+msgstr "%S bu özelliği etkinleştirmek için yeniden başlatılmalıdır."
+
+#: featureDisableRequiresRestart
+msgid "%S must restart to disable this feature."
+msgstr "%S bu özelliği devre dışı bırakmak için yeniden başlatılmalıdır."
+
+#: shouldRestartTitle
+msgid "Restart %S"
+msgstr "%S uygulamasını yeniden başlat"
