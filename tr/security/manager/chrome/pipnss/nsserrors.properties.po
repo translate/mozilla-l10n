@@ -1,17 +1,19 @@
-#. extracted from en-US/security/manager/chrome/pipnss/nsserrors.properties
+#. # This Source Code Form is subject to the terms of the Mozilla Public# License, v. 2.0. If a copy of the MPL was not distributed with this# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from templates-en-US/security/manager/chrome/pipnss/nsserrors.properties, ../l10n/tr/security/manager/chrome/pipnss/nsserrors.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-17 13:18+0200\n"
+"POT-Creation-Date: 2013-03-01 10:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: SSL_ERROR_EXPORT_ONLY_SERVER
 msgid ""
@@ -46,6 +48,11 @@ msgstr ""
 "Karşı tarafla güvenli iletişim kurulamadı: Karşı tarafın onay belgesi "
 "reddedildi."
 
+#: SSL_ERROR_UNUSED_5
+msgctxt "SSL_ERROR_UNUSED_5"
+msgid "Unrecognized SSL error code."
+msgstr "Tanınmayan SSL hata kodu."
+
 #: SSL_ERROR_BAD_CLIENT
 msgid "The server has encountered bad data from the client."
 msgstr "Sunucu istemcide kötü veri ile karşılaştı."
@@ -62,6 +69,11 @@ msgstr "Desteklenmeyen onay belgesi türü."
 msgid "Peer using unsupported version of security protocol."
 msgstr "Karşı taraf desteklenmeyen bir güvenlik iletişim kuralı kullanıyor."
 
+#: SSL_ERROR_UNUSED_10
+msgctxt "SSL_ERROR_UNUSED_10"
+msgid "Unrecognized SSL error code."
+msgstr "Tanınmayan SSL hata kodu."
+
 #: SSL_ERROR_WRONG_CERTIFICATE
 msgid ""
 "Client authentication failed: private key in key database does not match "
@@ -77,6 +89,11 @@ msgid ""
 msgstr ""
 "Karşı tarafla güvenli iletişim kurulamadı: Çağrılan alan adı ile sunucunun "
 "onay belgesi eşleşmiyor."
+
+#: SSL_ERROR_POST_WARNING
+msgctxt "SSL_ERROR_POST_WARNING"
+msgid "Unrecognized SSL error code."
+msgstr "Tanınmayan SSL hata kodu."
 
 #: SSL_ERROR_SSL2_DISABLED
 msgid "Peer only supports SSL version 2, which is locally disabled."
@@ -495,27 +512,19 @@ msgid "SSL peer reported bad certificate hash value."
 msgstr "SSL eşi bozulmuş onay belgesi özeti olduğunu bildirdi."
 
 #: SSL_ERROR_RX_UNEXPECTED_NEW_SESSION_TICKET
-msgid ""
-"SSL received an unexpected New Session Ticket handshake "
-"message.                             "
+msgid "SSL received an unexpected New Session Ticket handshake message."
 msgstr "SSL beklenmeyen bir Yeni Oturum Talebi el sıkışma iletisi aldı."
 
 #: SSL_ERROR_RX_MALFORMED_NEW_SESSION_TICKET
-msgid ""
-"SSL received a malformed New Session Ticket handshake "
-"message.                                "
+msgid "SSL received a malformed New Session Ticket handshake message."
 msgstr "SSL kusurlu bir Yeni Oturum Talebi el sıkışma iletisi aldı."
 
 #: SSL_ERROR_DECOMPRESSION_FAILURE
-msgid ""
-"SSL received a compressed record that could not be "
-"decompressed.                                        "
+msgid "SSL received a compressed record that could not be decompressed."
 msgstr "SSL çözülemeyen bir sıkıştırılmış kayıt aldı."
 
 #: SSL_ERROR_RENEGOTIATION_NOT_ALLOWED
-msgid ""
-"Renegotiation is not allowed on this SSL "
-"socket.                                                    "
+msgid "Renegotiation is not allowed on this SSL socket."
 msgstr "Bu SSL soketinde yeniden işleme izin verilmiyor."
 
 #: SSL_ERROR_UNSAFE_NEGOTIATION
@@ -534,6 +543,22 @@ msgid ""
 msgstr ""
 "SSL, Sunucu Anahtarı Değişimi el sıkışma iletisinde zayıf bir geçici Diffie-"
 "Hellman anahtarı aldı."
+
+#: SSL_ERROR_NEXT_PROTOCOL_DATA_INVALID
+msgid "SSL received invalid NPN extension data."
+msgstr "SSL, geçersiz NPN uzantı verisi aldı."
+
+#: SSL_ERROR_FEATURE_NOT_SUPPORTED_FOR_SSL2
+msgid "SSL feature not supported for SSL 2.0 connections."
+msgstr "SSL 2.0 bağlantıları için SSL özelliği desteklenmiyor."
+
+#: SSL_ERROR_FEATURE_NOT_SUPPORTED_FOR_SERVERS
+msgid "SSL feature not supported for servers."
+msgstr "Sunucular için SSL özelliği desteklenmiyor."
+
+#: SSL_ERROR_FEATURE_NOT_SUPPORTED_FOR_CLIENTS
+msgid "SSL feature not supported for clients."
+msgstr "İstemciler için SSL özelliği desteklenmiyor."
 
 #: SEC_ERROR_IO
 msgid "An I/O error occurred during security authorization."
@@ -1103,7 +1128,7 @@ msgstr "Bu işlemi gerçekleştirmeden önce OCSP'yi devreye sokmalısınız."
 msgid ""
 "You must set the OCSP default responder before performing this operation."
 msgstr ""
-"Bu işlemi gerçekleştirmeden önce OCSP'yi öntanımlı yanıt verici olarak "
+"Bu işlemi gerçekleştirmeden önce OCSP'yi varsayılan yanıt verici olarak "
 "ayarlamalısınız."
 
 #: SEC_ERROR_OCSP_MALFORMED_RESPONSE
@@ -1273,7 +1298,7 @@ msgid "Bad information access location in cert extension"
 msgstr "Onay belgesi uzantısında hatalı bilgiye erişim konumu"
 
 #: SEC_ERROR_LIBPKIX_INTERNAL
-msgid "Libpkix internal error occured during cert validation."
+msgid "Libpkix internal error occurred during cert validation."
 msgstr "Onay belgesi doğrulaması sırasında dahili Libpkix hatası oluştu."
 
 #: SEC_ERROR_PKCS11_GENERAL_ERROR
@@ -1308,3 +1333,27 @@ msgstr "Onay belgesi uzantısında bilinmeyen bilgiye erişime yöntemi."
 #: SEC_ERROR_CRL_IMPORT_FAILED
 msgid "Error attempting to import a CRL."
 msgstr "Hükümsüz onay belgesi içe alınırken hata oluştu."
+
+#: SEC_ERROR_EXPIRED_PASSWORD
+msgid "The password expired."
+msgstr "Parola zaman aşımına uğradı."
+
+#: SEC_ERROR_LOCKED_PASSWORD
+msgid "The password is locked."
+msgstr "Parola kilitli."
+
+#: SEC_ERROR_UNKNOWN_PKCS11_ERROR
+msgid "Unknown PKCS #11 error."
+msgstr "Bilinmeyen PKCS #11 hatası."
+
+#: SEC_ERROR_BAD_CRL_DP_URL
+msgid "Invalid or unsupported URL in CRL distribution point name."
+msgstr "CRL dağıtım noktası isminde geçersiz veya desteklenmeyen URL."
+
+#: SEC_ERROR_CERT_SIGNATURE_ALGORITHM_DISABLED
+msgid ""
+"The certificate was signed using a signature algorithm that is disabled "
+"because it is not secure."
+msgstr ""
+"Onay belgesi, güvenli olmadığı için devre dışı bırakılan bir imza "
+"algoritmasıyla imzalandı."

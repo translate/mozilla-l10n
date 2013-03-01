@@ -1,21 +1,25 @@
-#. extracted from en-US/toolkit/chrome/global/aboutSupport.dtd
+#. extracted from templates-en-US/toolkit/chrome/global/aboutSupport.dtd, ../l10n/tr/toolkit/chrome/global/aboutSupport.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-17 13:18+0200\n"
+"POT-Creation-Date: 2013-03-01 10:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
+#. This Source Code Form is subject to the terms of the Mozilla Public
+#. - License, v. 2.0. If a copy of the MPL was not distributed with this
+#. - file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #: aboutSupport.pageTitle
 msgid "Troubleshooting Information"
-msgstr "Sorun çözme bilgisi"
+msgstr "Sorun giderme bilgileri"
 
 #. don't change the 'supportLink' id.
 #: aboutSupport.pageSubtitle
@@ -71,6 +75,12 @@ msgstr "Sürüm"
 msgid "Profile Directory"
 msgstr "Kimlik dizini"
 
+#. This is the Windows- and Mac-specific variant of aboutSupport.appBasicsProfileDir.
+#. Windows/Mac use the term "Folder" instead of "Directory"
+#: aboutSupport.appBasicsProfileDirWinMac
+msgid "Profile Folder"
+msgstr "Profil klasörü"
+
 #: aboutSupport.appBasicsEnabledPlugins
 msgid "Enabled Plugins"
 msgstr "Devredeki yan uygulamalar"
@@ -91,20 +101,26 @@ msgstr "Çökme Raporları"
 msgid "Memory Use"
 msgstr "Bellek kullanımı"
 
-#: aboutSupport.show.label
-msgid "Open Containing Folder"
-msgstr "Bulunduğu dizini aç"
+#: aboutSupport.showDir.label
+msgid "Open Directory"
+msgstr "Dizini aç"
 
 #. This is the Mac-specific
-#. variant of aboutSupport.show.label.  This allows us to use the preferred
+#. variant of aboutSupport.showDir.label.  This allows us to use the preferred
 #. "Finder" terminology on Mac.
 #: aboutSupport.showMac.label
 msgid "Show in Finder"
 msgstr "Finder'da göster"
 
-#: aboutSupport.modifiedPrefsTitle
-msgid "Modified Preferences"
-msgstr "Değiştirilen tercihler"
+#. This is the Windows-specific
+#. variant of aboutSupport.showDir.label.
+#: aboutSupport.showWin.label
+msgid "Show Folder"
+msgstr "Klasörü göster"
+
+#: aboutSupport.modifiedKeyPrefsTitle
+msgid "Important Modified Preferences"
+msgstr "Değiştirilmiş önemli tercihler"
 
 #: aboutSupport.modifiedPrefsName
 msgctxt "aboutSupport.modifiedPrefsName"
@@ -115,9 +131,46 @@ msgstr "Adı"
 msgid "Value"
 msgstr "Değer"
 
+#. LOCALIZATION NOTE (aboutSupport.userJSTitle, aboutSupport.userJSDescription): user.js is the name of the preference override file being checked.
+#: aboutSupport.userJSTitle
+msgid "user.js Preferences"
+msgstr "user.js Tercihleri"
+
+#: aboutSupport.userJSDescription
+msgid ""
+"Your profile folder contains a <a id='prefs-user-js-link'>user.js file</a>, "
+"which includes preferences that were not created by &brandShortName;."
+msgstr ""
+"Profil klasörünüz, &brandShortName; tarafından oluşturulmamış tercihler "
+"içeren bir <a id='prefs-user-js-link'>user.js dosyası</a> içeriyor."
+
 #: aboutSupport.graphicsTitle
 msgid "Graphics"
 msgstr "Çizimler"
+
+#: aboutSupport.jsTitle
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: aboutSupport.jsIncrementalGC
+msgid "Incremental GC"
+msgstr "Artırımlı GC"
+
+#: aboutSupport.a11yTitle
+msgid "Accessibility"
+msgstr "Erişilebilirlik"
+
+#: aboutSupport.a11yActivated
+msgid "Activated"
+msgstr "Etkinleştirildi"
+
+#: aboutSupport.a11yForceDisabled
+msgid "Prevent Accessibility"
+msgstr "Erişilebilirliği engelle"
+
+#: aboutSupport.libraryVersionsTitle
+msgid "Library Versions"
+msgstr "Kitaplık sürümleri"
 
 #: aboutSupport.installationHistoryTitle
 msgid "Installation History"
@@ -125,8 +178,12 @@ msgstr "Kurulum tarihçesi"
 
 #: aboutSupport.updateHistoryTitle
 msgid "Update History"
-msgstr "Güncelleme geçmişi"
+msgstr "Güncelleme Geçmişi"
 
-#: aboutSupport.copyToClipboard.label
-msgid "Copy all to clipboard"
-msgstr "Tümünü panoya kopyala"
+#: aboutSupport.copyTextToClipboard.label
+msgid "Copy text to clipboard"
+msgstr "Metni panoya kopyala"
+
+#: aboutSupport.copyRawDataToClipboard.label
+msgid "Copy raw data to clipboard"
+msgstr "Ham metni panoya kopyala"

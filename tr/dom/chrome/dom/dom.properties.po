@@ -1,55 +1,19 @@
-#. # ***** BEGIN LICENSE BLOCK *****
-#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
-#. #
-#. # The contents of this file are subject to the Mozilla Public License Version
-#. # 1.1 (the "License"); you may not use this file except in compliance with
-#. # the License. You may obtain a copy of the License at
-#. # http://www.mozilla.org/MPL/
-#. #
-#. # Software distributed under the License is distributed on an "AS IS" basis,
-#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
-#. # for the specific language governing rights and limitations under the
-#. # License.
-#. #
-#. # The Original Code is mozilla.org code.
-#. #
-#. # The Initial Developer of the Original Code is
-#. # Netscape Communications Corporation.
-#. # Portions created by the Initial Developer are Copyright (C) 2001
-#. # the Initial Developer. All Rights Reserved.
-#. #
-#. # Contributor(s):
-#. #   Mitch <mstoltz@netscape.com> (original author)
-#. #   Ehsan Akhgari <ehsan.akhgari@gmail.com>
-#. #   Ms2ger <ms2ger@gmail.com>
-#. #
-#. # Alternatively, the contents of this file may be used under the terms of
-#. # either of the GNU General Public License Version 2 or later (the "GPL"),
-#. # or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
-#. # in which case the provisions of the GPL or the LGPL are applicable instead
-#. # of those above. If you wish to allow use of your version of this file only
-#. # under the terms of either the GPL or the LGPL, and not to allow others to
-#. # use your version of this file under the terms of the MPL, indicate your
-#. # decision by deleting the provisions above and replace them with the notice
-#. # and other provisions required by the GPL or the LGPL. If you do not delete
-#. # the provisions above, a recipient may use your version of this file under
-#. # the terms of any one of the MPL, the GPL or the LGPL.
-#. #
-#. # ***** END LICENSE BLOCK *****
-#. extracted from en-US/dom/chrome/dom/dom.properties
+#. # This Source Code Form is subject to the terms of the Mozilla Public# License, v. 2.0. If a copy of the MPL was not distributed with this# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from templates-en-US/dom/chrome/dom/dom.properties, ../l10n/tr/dom/chrome/dom/dom.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-17 13:18+0200\n"
+"POT-Creation-Date: 2013-03-01 10:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -61,9 +25,9 @@ msgid ""
 "can stop the script now, or you can continue to see if the script will "
 "complete."
 msgstr ""
-"Bu sayfadaki bir betik meşgul ya da artık yanıt vermiyor olabilir. "
-"İsterseniz betiği şimdi durdurabilir, isterseniz sürecin tamamlanmasını "
-"görmek için bekleyebilirsiniz."
+"Bu sayfadaki bir betik meşgul veya artık yanıt vermiyor olabilir. İsterseniz "
+"betiği şimdi durdurabilir veya sürecin tamamlanmasını görmek için "
+"bekleyebilirsiniz."
 
 #: KillScriptWithDebugMessage
 msgid ""
@@ -88,6 +52,7 @@ msgid "Debug script"
 msgstr "Betikteki hataları gider"
 
 #: WaitForScriptButton
+msgctxt "WaitForScriptButton"
 msgid "Continue"
 msgstr "Devam et"
 
@@ -101,7 +66,7 @@ msgid ""
 "in a window displaying content from another host\n"
 "was blocked by the security manager."
 msgstr ""
-"JavaScript yürütme girişimi: Başka bir makinedeki\n"
+"JavaScript yükleme girişimi: Başka bir sunucudaki\n"
 "içeriği gösteren bir penceredeki URL, güvenlik\n"
 "yöneticisi tarafından engellendi."
 
@@ -135,14 +100,6 @@ msgid ""
 "getElementById() instead."
 msgstr ""
 "Standartlaşmamış olan \"document.all\" özelliği kullanıldı. Bunun yerine W3C "
-"standardı olan \"document.getElementById()\" özelliğini kullanın."
-
-#: GlobalScopeElementReference
-msgid ""
-"Element referenced by ID/NAME in the global scope. Use W3C standard document."
-"getElementById() instead."
-msgstr ""
-"Bileşene ID/NAME tarafından küresel düzeyde başvuruldu. Bunun yerine W3C "
 "standardı olan \"document.getElementById()\" özelliğini kullanın."
 
 #: UseOfCaptureEventsWarning
@@ -206,8 +163,8 @@ msgid ""
 "canvas: an attempt to set strokeStyle or fillStyle to a value that is "
 "neither a string, a CanvasGradient, or a CanvasPattern was ignored."
 msgstr ""
-"canvas: an attempt to set strokeStyle or fillStyle to a value that is "
-"neither a string, a CanvasGradient, or a CanvasPattern was ignored."
+"canvas: dizgi, CanvasGradient veya CanvasPattern olmayan bir değere "
+"strokeStyle veya fillStyle uygulama girişimi görmezden gelindi."
 
 #: EmptyGetElementByIdParam
 msgid "Empty string passed to getElementById()."
@@ -284,25 +241,50 @@ msgstr "Lütfen istenen biçime uyun."
 msgid "Please match the requested format: %S."
 msgstr "Lütfen istenen biçime uyun: %S."
 
+#. # LOCALIZATION NOTE (FormValidationRangeOverflow): %S can be a number, a date or a time.
+#: FormValidationRangeOverflow
+msgid "Please select a value that is lower than %S."
+msgstr "Lütfen %S değerinden daha düşük bir değer seçin."
+
+#. # LOCALIZATION NOTE (FormValidationRangeUnderflow): %S can be a number, a date or a time.
+#: FormValidationRangeUnderflow
+msgid "Please select a value that is higher than %S."
+msgstr "Lütfen %S değerinden daha yüksek bir değer seçin."
+
+#. # LOCALIZATION NOTE (FormValidationStepMismatch): both %S can be a number, a date or a time.
+#: FormValidationStepMismatch
+msgid ""
+"Please select a valid value. The two nearest valid values are %S and %S."
+msgstr "Lütfen geçerli bir değer seçin. En yakın iki geçerli değer %S ve %S."
+
+#. # LOCALIZATION NOTE (FormValidationStepMismatchOneValue): %S can be a number, a date or a time. This is called instead of FormValidationStepMismatch when the second value is the same as the first.
+#: FormValidationStepMismatchOneValue
+msgid "Please select a valid value. The nearest valid value is %S."
+msgstr ""
+
 #: GetAttributeNodeWarning
 msgid "Use of getAttributeNode() is deprecated. Use getAttribute() instead."
-msgstr "Use of getAttributeNode() is deprecated. Use getAttribute() instead."
+msgstr ""
+"getAttributeNode() kullanımı eskimiştir. Onun yerine getAttribute() kullanın."
 
 #: SetAttributeNodeWarning
 msgid "Use of setAttributeNode() is deprecated. Use setAttribute() instead."
-msgstr "Use of setAttributeNode() is deprecated. Use setAttribute() instead."
+msgstr ""
+"setAttributeNode() kullanımı eskimiştir. Onun yerine setAttribute() kullanın."
 
 #: GetAttributeNodeNSWarning
 msgid ""
 "Use of getAttributeNodeNS() is deprecated. Use getAttributeNS() instead."
 msgstr ""
-"Use of getAttributeNodeNS() is deprecated. Use getAttributeNS() instead."
+"getAttributeNodeNS() kullanımı eskimiştir. Onun yerine getAttributeNS() "
+"kullanın."
 
 #: SetAttributeNodeNSWarning
 msgid ""
 "Use of setAttributeNodeNS() is deprecated. Use setAttributeNS() instead."
 msgstr ""
-"Use of setAttributeNodeNS() is deprecated. Use setAttributeNS() instead."
+"setAttributeNodeNS() kullanımı eskimiştir. Onun yerine setAttributeNS() "
+"kullanın."
 
 #: RemoveAttributeNodeWarning
 msgid ""
@@ -338,134 +320,12 @@ msgstr ""
 msgid "Use of attributes' ownerElement attribute is deprecated."
 msgstr "Özniteliklerin ownerElement özniteliğinin kullanımı eskimiştir."
 
-#: NodeNameWarning
-msgid "Use of attributes' nodeName attribute is deprecated. Use name instead."
-msgstr ""
-"Özniteliklerin nodeElement özniteliğinin kullanımı eskimiştir. Onun yerine "
-"isim kullanın."
-
 #: NodeValueWarning
 msgid ""
 "Use of attributes' nodeValue attribute is deprecated. Use value instead."
 msgstr ""
 "Özniteliklerin nodeValue özniteliğinin kullanımı eskimiştir. Onun yerine "
 "value kullanın."
-
-#: NodeTypeWarning
-msgid ""
-"Use of attributes' nodeType attribute is deprecated. It always returns 2."
-msgstr ""
-"Use of attributes' nodeType attribute is deprecated. It always returns 2."
-
-#: ParentNodeWarning
-msgid ""
-"Use of attributes' parentNode attribute is deprecated. It always returns "
-"null."
-msgstr ""
-"Use of attributes' parentNode attribute is deprecated. It always returns "
-"null."
-
-#: ChildNodesWarning
-msgid ""
-"Use of attributes' childNodes attribute is deprecated. It always returns "
-"null."
-msgstr ""
-"Use of attributes' childNodes attribute is deprecated. It always returns "
-"null."
-
-#: HasChildNodesWarning
-msgid ""
-"Use of attributes' hasChildNodes() is deprecated. It always returns false."
-msgstr ""
-"Use of attributes' hasChildNodes() is deprecated. It always returns false."
-
-#: HasAttributesWarning
-msgid ""
-"Use of attributes' hasAttributes() is deprecated. It always returns false."
-msgstr ""
-"Use of attributes' hasAttributes() is deprecated. It always returns false."
-
-#: FirstChildWarning
-msgid ""
-"Use of attributes' firstChild attribute is deprecated. Use value instead."
-msgstr ""
-"Özniteliklerin firstChild özniteliğinin kullanılması eskimiştir. Onun yerine "
-"lütfen değer kullanın."
-
-#: LastChildWarning
-msgid ""
-"Use of attributes' lastChild attribute is deprecated. Use value instead."
-msgstr ""
-"Özniteliklerin lastChild özniteliğinin kullanılması eskimiştir. Onun yerine "
-"lütfen değer kullanın."
-
-#: PreviousSiblingWarning
-msgid ""
-"Use of attributes' previousSibling attribute is deprecated. It always "
-"returns null."
-msgstr ""
-"Özniteliklerin previousSibling özniteliğinin kullanılması eskimiştir. Her "
-"zaman boş döner."
-
-#: NextSiblingWarning
-msgid ""
-"Use of attributes' nextSibling attribute is deprecated. It always returns "
-"null."
-msgstr ""
-"Özniteliklerin nextSibling özniteliğinin kullanılması eskimiştir. Her zaman "
-"boş döner."
-
-#: AttributesWarning
-msgid ""
-"Use of attributes' attributes attribute is deprecated. It always returns "
-"null."
-msgstr ""
-"Özniteliklerin attributes özniteliğinin kullanılması eskimiştir. Her zaman "
-"boş döner."
-
-#: InsertBeforeWarning
-msgid "Use of attributes' insertBefore() is deprecated. Use value instead."
-msgstr ""
-"Özniteliklerde insertBefore() kullanılması eskimiştir. Onun yerine lütfen "
-"değer kullanın."
-
-#: ReplaceChildWarning
-msgid "Use of attributes' replaceChild() is deprecated. Use value instead."
-msgstr ""
-"Özniteliklerde replaceChild() kullanılması eskimiştir. Onun yerine lütfen "
-"değer kullanın."
-
-#: RemoveChildWarning
-msgid "Use of attributes' removeChild() is deprecated. Use value instead."
-msgstr ""
-"Özniteliklerde removeChild() kullanılması eskimiştir. Onun yerine lütfen "
-"değer kullanın."
-
-#: AppendChildWarning
-msgid "Use of attributes' appendChild() is deprecated. Use value instead."
-msgstr ""
-"Özniteliklerde appendChild() kullanılması eskimiştir. Onun yerine lütfen "
-"değer kullanın."
-
-#: CloneNodeWarning
-msgid "Use of attributes' cloneNode() is deprecated."
-msgstr "Özniteliklerde cloneNode() kullanılması eskimiştir."
-
-#: OwnerDocumentWarning
-msgid "Use of attributes' ownerDocument attribute is deprecated."
-msgstr "Özniteliklerde ownerDocument özniteliğinin kullanılması eskimiştir."
-
-#: NormalizeWarning
-msgid "Use of attributes' normalize() is deprecated."
-msgstr "Özniteliklerde normalize() kullanılması eskimiştir."
-
-#: IsSupportedWarning
-msgid "Use of attributes' isSupported() is deprecated."
-msgstr "Özniteliklerde isSupported() kullanılması eskimiştir."
-
-#: IsEqualNodeWarning
-msgid "Use of attributes' isEqualNode() is deprecated."
-msgstr "Özniteliklerde isEqualNode() kullanılması eskimiştir."
 
 #: TextContentWarning
 msgid ""
@@ -482,55 +342,354 @@ msgstr ""
 "enablePrivilage kullanımı eskimiştir. Onun yerine lütfen sistem prensibiyle "
 "çalışan kodlar (örn. bir uzantı) kullanın."
 
+#: PositionWarning
+msgid ""
+"Use of XMLHttpRequest's progress events' position attribute is deprecated."
+msgstr ""
+"XMLHttpRequest progress olaylarının position özniteliğinin kullanımı "
+"eskimiştir."
+
+#: TotalSizeWarning
+msgid ""
+"Use of XMLHttpRequest's progress events' totalSize attribute is deprecated."
+msgstr ""
+"XMLHttpRequest progress olaylarının totalSize özniteliğinin kullanımı "
+"eskimiştir."
+
 #: nsIJSONDecodeDeprecatedWarning
 msgid "nsIJSON.decode is deprecated.  Please use JSON.parse instead."
-msgstr "nsIJSON.decode is deprecated.  Please use JSON.parse instead."
+msgstr "nsIJSON.decode eskimiştir. Onun yerine lütfen JSON.parse kullanın."
 
 #: nsIJSONEncodeDeprecatedWarning
 msgid "nsIJSON.encode is deprecated.  Please use JSON.stringify instead."
-msgstr "nsIJSON.encode is deprecated.  Please use JSON.stringify instead."
+msgstr "nsIJSON.encode eskimiştir. Onun yerine lütfen JSON.stringify kullanın."
 
 #: nsIDOMWindowInternalWarning
 msgid "Use of nsIDOMWindowInternal is deprecated. Use nsIDOMWindow instead."
-msgstr "Use of nsIDOMWindowInternal is deprecated. Use nsIDOMWindow instead."
-
-#: IsSameNodeWarning
-msgid ""
-"Use of isSameNode is deprecated.  Please use A == B to test for equality "
-"instead."
 msgstr ""
-"Use of isSameNode is deprecated.  Please use A == B to test for equality "
-"instead."
-
-#: ReplaceWholeTextWarning
-msgid ""
-"Use of replaceWholeText is deprecated. Please call normalize() on the parent "
-"and set the data attribute, or use textContent instead."
-msgstr ""
-"Use of replaceWholeText is deprecated. Please call normalize() on the parent "
-"and set the data attribute, or use textContent instead."
-
-#: XmlEncodingWarning
-msgid "Use of xmlEncoding is deprecated."
-msgstr "xmlEncoding kullanımı eskimiştir."
-
-#: XmlVersionWarning
-msgid "Use of xmlVersion is deprecated."
-msgstr "xmlVersion kullanımı eskimiştir."
+"nsIDOMWindowInternal kullanımı eskimiştir. Onun yerine lütfen nsIDOMWindow "
+"kullanın."
 
 #: InputEncodingWarning
 msgid "Use of inputEncoding is deprecated."
 msgstr "inputEncoding kullanımı eskimiştir."
 
-#: XmlStandaloneWarning
-msgid "Use of xmlStandalone is deprecated."
-msgstr "xmlStandalone kullanımı eskimiştir."
-
-#: IsElementContentWhitespaceWarning
-msgid "Use of isElementContentWhitespaceWarning is deprecated."
-msgstr "isElementContentWhitespaceWarning kullanımı eskimiştir."
-
-#: GlobalStorageWarning
-msgid "Use of globalStorage is deprecated. Please use localStorage instead."
+#. # LOCALIZATION NOTE: Do not translate "MozBeforePaint" and "mozRequestAnimationFrame"
+#: MozBeforePaintWarning
+msgid ""
+"MozBeforePaint events are no longer supported.  mozRequestAnimationFrame "
+"must be passed a non-null callback argument."
 msgstr ""
-"globalStorage kullanımı eskimiştir. Onun yerine lütfen localStorage kullanın."
+"MozBeforePaint olayları artık desteklenmiyor. mozRequestAnimationFrame boş "
+"olmayan bir çağrı argümanına aktarılmalıdır."
+
+#: FullScreenDeniedBlocked
+msgid ""
+"Request for full-screen was denied because this domain has been blocked from "
+"full-screen by user."
+msgstr ""
+"Tam ekran isteği reddedildi çünkü bu alan adının tam ekran kullanımı "
+"kullanıcı tarafından engellenmiş."
+
+#: FullScreenDeniedDisabled
+msgid ""
+"Request for full-screen was denied because full-screen API is disabled by "
+"user preference."
+msgstr ""
+"Tam ekran isteği reddedildi çünkü tam API'si kullanıcı tercihlerinde devre "
+"dışı bırakılmış."
+
+#: FullScreenDeniedFocusedPlugin
+msgid ""
+"Request for full-screen was denied because a windowed plugin is focused."
+msgstr ""
+"Tam ekran isteği reddedildi çünkü pencereli bir yan uygulamaya odaklanılmış."
+
+#: FullScreenDeniedHidden
+msgid ""
+"Request for full-screen was denied because the document is no longer visible."
+msgstr "Tam ekran isteği reddedildi çünkü belge artık görünür değil."
+
+#: FullScreenDeniedIframeNotAllowed
+msgid ""
+"Request for full-screen was denied because at least one of the document's "
+"containing iframes does not have an \"allowfullscreen\" attribute."
+msgstr ""
+"Tam ekran isteği, belgenin içeridiği iframe'lerden en az birinin "
+"\"allowfullscreen\" özniteliği bulunmadığı için reddedildi."
+
+#: FullScreenDeniedNotInputDriven
+msgid ""
+"Request for full-screen was denied because Element.mozRequestFullScreen() "
+"was not called from inside a short running user-generated event handler."
+msgstr ""
+"Tam ekran isteği reddedildi çünkü Element.mozRequestFullScreen() kısa "
+"çalışan kullanıcı tanımlı olay işleyici içinden çağrılmadı."
+
+#: FullScreenDeniedNotInDocument
+msgid ""
+"Request for full-screen was denied because requesting element is no longer "
+"in its document."
+msgstr ""
+"Tam ekran isteği reddedildi çünkü isteği yapan element artık belge içinde "
+"değil."
+
+#: FullScreenDeniedMovedDocument
+msgid ""
+"Request for full-screen was denied because requesting element has moved "
+"document."
+msgstr ""
+"Tam ekran isteği reddedildi çünkü isteği yapan element belge değiştirdi."
+
+#: FullScreenDeniedLostWindow
+msgid "Request for full-screen was denied because we no longer have a window."
+msgstr "Tam ekran isteği reddedildi çünkü artık pencere yok."
+
+#: FullScreenDeniedSubDocFullScreen
+msgid ""
+"Request for full-screen was denied because a subdocument of the document "
+"requesting full-screen is already full-screen."
+msgstr ""
+"Tam ekran isteği reddedildi çünkü isteği yapan belgenin bir alt belgesi "
+"zaten tam ekranda."
+
+#: FullScreenDeniedNotDescendant
+msgid ""
+"Request for full-screen was denied because requesting element is not a "
+"descendant of the current full-screen element."
+msgstr ""
+"Tam ekran isteği reddedildi çünkü isteği yapan element şu anki tam ekran "
+"elementin altında değil."
+
+#: FullScreenDeniedNotFocusedTab
+msgid ""
+"Request for full-screen was denied because requesting element is not in the "
+"currently focused tab."
+msgstr ""
+"Tam ekran isteği reddedildi çünkü isteği yapan element şu anda odakta olan "
+"sekmede değil."
+
+#: RemovedFullScreenElement
+msgid ""
+"Exited full-screen because full-screen element was removed from document."
+msgstr "Tam ekrandan çıkıldı çünkü tam ekran elementi belgeden çıkarıldı."
+
+#: FocusedWindowedPluginWhileFullScreen
+msgid "Exited full-screen because windowed plugin was focused."
+msgstr "Tam ekrandan çıkıldı çünkü pencereli yan uygulamaya odaklanıldı."
+
+#: HTMLMultipartXHRWarning
+msgid ""
+"HTML parsing in XMLHttpRequest is not supported for multipart responses."
+msgstr "Çok parçalı yanıtlar için XMLHttpRequest'te HTML işleme desteklenmez."
+
+#: HTMLSyncXHRWarning
+msgid ""
+"HTML parsing in XMLHttpRequest is not supported in the synchronous mode."
+msgstr "Anuyumlu kipte XMLHttpRequest'te HTML işleme desteklenmez."
+
+#: InvalidRedirectChannelWarning
+msgid ""
+"Unable to redirect to %S because the channel doesn't implement "
+"nsIWritablePropertyBag2."
+msgstr ""
+"Kanalda nsIWritablePropertyBag2 kullanılmadığı için %S yönlendirmesi "
+"yapılamadı."
+
+#: ReportOnlyCSPIgnored
+msgid ""
+"Report-only CSP policy will be ignored because there are other non-report-"
+"only CSP policies applied."
+msgstr ""
+"Salt raporlu CSP ilkesi görmezden gelinecek çünkü salt raporlu olmayan başka "
+"CSP ilkeleri uygulanmış."
+
+#: ResponseTypeSyncXHRWarning
+msgid ""
+"Use of XMLHttpRequest's responseType attribute is no longer supported in the "
+"synchronous mode in window context."
+msgstr ""
+"Anuyumlu kipte pencere içeriğinde XMLHttpRequest'in responseType özniteliği "
+"artık desteklenmemektedir."
+
+#: WithCredentialsSyncXHRWarning
+msgid ""
+"Use of XMLHttpRequest's withCredentials attribute is no longer supported in "
+"the synchronous mode in window context."
+msgstr ""
+"Anuyumlu kipte pencere içeriğinde XMLHttpRequest'in withCredentials "
+"özniteliği artık desteklenmemektedir."
+
+#: TimeoutSyncXHRWarning
+msgid ""
+"Use of XMLHttpRequest's timeout attribute is not supported in the "
+"synchronous mode in window context."
+msgstr ""
+"XMLHttpRequest timeout özniteliği, senkronize modda pencere bağlamında "
+"desteklenmez."
+
+#: JSONCharsetWarning
+msgid ""
+"An attempt was made to declare a non-UTF-8 encoding for JSON retrieved using "
+"XMLHttpRequest. Only UTF-8 is supported for decoding JSON."
+msgstr ""
+"XMLHttpRequest ile alınan JSON için UTF-8 olmayan bir kodlama tanımlama "
+"girişiminde bulunuldu. JSON çözümlemesi için yalnızca UTF-8 desteklenir."
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataUnknownContentType
+msgid "The buffer passed to decodeAudioData contains an unknown content type."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataUnknownError
+msgid "An unknown error occured while processing decodeAudioData."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataInvalidContent
+msgid ""
+"The buffer passed to decodeAudioData contains invalid content which cannot "
+"be decoded successfully."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataNoAudio
+msgid "The buffer passed to decodeAudioData does not contain any audio."
+msgstr ""
+
+#: MediaLoadExhaustedCandidates
+msgid "All candidate resources failed to load. Media load paused."
+msgstr ""
+"Tüm aday kaynakların yüklenmesi başarısız oldu. Ortam yüklemesi duraklatıldı."
+
+#: MediaLoadSourceMissingSrc
+msgid "<source> element has no \"src\" attribute. Media resource load failed."
+msgstr ""
+"<source> elementinin \"src\" özniteliği yok. Ortam kaynağı yüklemesi "
+"başarısız oldu."
+
+#. # LOCALIZATION NOTE: %1$S is the Http error code the server returned (e.g. 404, 500, etc), %2$S is the URL of the media resource which failed to load.
+#: MediaLoadHttpError
+msgid "HTTP load failed with status %1$S. Load of media resource %2$S failed."
+msgstr ""
+"HTTP yüklemesi %1$S durum koduyla başarısız oldu. %2$S adresli ortam kaynağı "
+"yüklemesi başarısız oldu."
+
+#. # LOCALIZATION NOTE: %S is the URL of the media resource which failed to load.
+#: MediaLoadInvalidURI
+msgid "Invalid URI. Load of media resource %S failed."
+msgstr "Geçersiz URI. %S adresli ortam kaynağı yüklemesi başarısız oldu."
+
+#. # LOCALIZATION NOTE: %1$S is the media resource's format/codec type (basically equivalent to the file type, e.g. MP4,AVI,WMV,MOV etc), %2$S is the URL of the media resource which failed to load.
+#: MediaLoadUnsupportedTypeAttribute
+msgid ""
+"Specified \"type\" attribute of \"%1$S\" is not supported. Load of media "
+"resource %2$S failed."
+msgstr ""
+"\"%1$S\" için belirtilen \"type\" özniteliği desteklenmiyor. %2$S ortam "
+"kaynağının yüklenmesi başarısız oldu."
+
+#. # LOCALIZATION NOTE: %1$S is the "media" attribute value of the <source> element. It is a media query. %2$S is the URL of the media resource which failed to load.
+#: MediaLoadSourceMediaNotMatched
+msgid ""
+"Specified \"media\" attribute of \"%1$S\" does not match the environment. "
+"Load of media resource %2$S failed."
+msgstr ""
+"\"%1$S\" için belirtilen \"media\" özniteliği ortamla eşleşmiyor. %2$S ortam "
+"kaynağının yüklenmesi başarısız oldu."
+
+#. # LOCALIZATION NOTE: %1$S is the MIME type HTTP header being sent by the web server, %2$S is the URL of the media resource which failed to load.
+#: MediaLoadUnsupportedMimeType
+msgid ""
+"HTTP \"Content-Type\" of \"%1$S\" is not supported. Load of media resource "
+"%2$S failed."
+msgstr ""
+"\"%1$S\" için bu HTTP \"Content-Type\" desteklenmiyor. %2$S adresli ortam "
+"kaynağının yüklenmesi başarısız oldu."
+
+#. # LOCALIZATION NOTE: %S is the URL of the media resource which failed to load because of error in decoding.
+#: MediaLoadDecodeError
+msgid "Media resource %S could not be decoded."
+msgstr "%S adresli ortam kaynağı çözülemedi."
+
+#. # LOCALIZATION NOTE: Do not translate "DOMException", "code" and "name"
+#: DOMExceptionCodeWarning
+msgid "Use of DOMException's code attribute is deprecated. Use name instead."
+msgstr ""
+"DOMException'ıns code özniteliği eskimiştir. Onun yerine name kullanın."
+
+#. # LOCALIZATION NOTE: Do not translate "__exposedProps__"
+#: NoExposedPropsWarning
+msgid ""
+"Exposing chrome JS objects to content without __exposedProps__ is insecure "
+"and deprecated. See https://developer.mozilla.org/en/XPConnect_wrappers for "
+"more information."
+msgstr ""
+"Chrome JS nesnelerinin __exposedProps__ olmadan içeriğe aktarılması "
+"güvensizdir ve eskimiştir. Daha fazla bilgi için https://developer.mozilla."
+"org/en/XPConnect_wrappers adresine bakın."
+
+#. # LOCALIZATION NOTE: Do not translate "Mutation Event" and "MutationObserver"
+#: MutationEventWarning
+msgid "Use of Mutation Events is deprecated. Use MutationObserver instead."
+msgstr ""
+"Mutation Event kullanımı eskimiştir. Onun yerine MutationObserver kullanın."
+
+#. # LOCALIZATION NOTE: Do not translate "Blob", "mozSlice", or "slice"
+#: MozSliceWarning
+msgid "Use of mozSlice on the Blob object is deprecated.  Use slice instead."
+msgstr ""
+"Blob nesnesinde mozSlice kullanımı eskimiştir. Onun yerine slice kullanın."
+
+#. # LOCALIZATION NOTE: Do not translate "Components"
+#: ComponentsWarning
+msgid "The Components object is deprecated. It will soon be removed."
+msgstr "Components nesnesi eskimiştir ve yakında kaldırılacaktır."
+
+#: PluginHangUITitle
+msgid "Warning: Unresponsive plugin"
+msgstr "Uyarı: Yanıt vermeyen yan uygulama"
+
+#: PluginHangUIMessage
+msgid ""
+"%S may be busy, or it may have stopped responding. You can stop the plugin "
+"now, or you can continue to see if the plugin will complete."
+msgstr ""
+"%S meşgul veya yanıt vermeyi durdurmuş olabilir. Yan uygulamayı şimdi "
+"durdurabilir veya işlemin tamamlanıp tamamlanmayacığını görmek için devam "
+"edebilirsiniz."
+
+#: PluginHangUIWaitButton
+msgctxt "PluginHangUIWaitButton"
+msgid "Continue"
+msgstr "Devam et"
+
+#: PluginHangUIStopButton
+msgid "Stop plugin"
+msgstr "Yan uygulamaları durdur"
+
+#. # LOCALIZATION NOTE: Do not translate "mozHidden", "mozVisibilityState", "hidden", or "visibilityState"
+#: PrefixedVisibilityApiWarning
+msgid ""
+"'mozHidden' and 'mozVisibilityState' are deprecated.  Please use the "
+"unprefixed 'hidden' and 'visibilityState' instead."
+msgstr ""
+"'mozHidden' ve 'mozVisibilityState' kullanımdan kaldırıldı. Lütfen bunların "
+"yerine ön eksiz 'hidden' ve 'visibilityState' kullanın."
+
+#. # LOCALIZATION NOTE: Do not translate "X-Content-Security-Policy", "X-Content-Security-Policy-Report-Only",  "Content-Security-Policy" or "Content-Security-Policy-Report-Only"
+#: OldCSPHeaderDeprecated
+msgid ""
+"The X-Content-Security-Policy and X-Content-Security-Report-Only headers "
+"will be deprecated in the future. Please use the Content-Security-Policy and "
+"Content-Security-Report-Only headers with CSP spec compliant syntax instead."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "X-Content-Security-Policy/Report-Only" or "Content-Security-Policy/Report-Only"
+#: BothCSPHeadersPresent
+msgid ""
+"This site specified both an X-Content-Security-Policy/Report-Only header and "
+"a Content-Security-Policy/Report-Only header. The X-Content-Security-Policy/"
+"Report-Only header(s) will be ignored."
+msgstr ""
