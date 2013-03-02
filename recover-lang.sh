@@ -9,5 +9,6 @@ for lang in $langs
 do
 	moz2po --progress=none --exclude=".hgtags" -t templates-en-US ../l10n/$lang $lang
 done
+rm $(find $lang -type f | egrep -v "\.po$")
 
 ./cleanup-msgcat.sh $langs
