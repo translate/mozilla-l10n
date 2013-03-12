@@ -1,13 +1,13 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/dom/chrome/dom/dom.properties
+#. extracted from ./dom/chrome/dom/dom.properties
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 22:17-0700\n"
+"POT-Creation-Date: 2013-03-01 10:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -52,6 +53,8 @@ msgid "Debug script"
 msgstr ""
 
 #: WaitForScriptButton
+#, fuzzy
+msgctxt "WaitForScriptButton"
 msgid "Continue"
 msgstr "Isani phanḓa"
 
@@ -217,24 +220,24 @@ msgstr ""
 msgid "Please match the requested format: %S."
 msgstr ""
 
-#. # LOCALIZATION NOTE (FormValidationRangeOverflow): %S can be a number or a date.
+#. # LOCALIZATION NOTE (FormValidationRangeOverflow): %S can be a number, a date or a time.
 #: FormValidationRangeOverflow
 msgid "Please select a value that is lower than %S."
 msgstr ""
 
-#. # LOCALIZATION NOTE (FormValidationRangeUnderflow): %S can be a number or a date.
+#. # LOCALIZATION NOTE (FormValidationRangeUnderflow): %S can be a number, a date or a time.
 #: FormValidationRangeUnderflow
 msgid "Please select a value that is higher than %S."
 msgstr ""
 
-#. # LOCALIZATION NOTE (FormValidationStepMismatch): both %S can be a number or a date.
+#. # LOCALIZATION NOTE (FormValidationStepMismatch): both %S can be a number, a date or a time.
 #: FormValidationStepMismatch
 msgid ""
 "Please select a valid value. The two nearest valid values are %S and %S."
 msgstr ""
 
-#. # LOCALIZATION NOTE (FormValidationStepMismatchWitoutMax): %S can be a number or a date. This is called instead of FormValidationStepMismatch when the second value isn't valid because it's higher than the maximum allowed value.
-#: FormValidationStepMismatchWithoutMax
+#. # LOCALIZATION NOTE (FormValidationStepMismatchOneValue): %S can be a number, a date or a time. This is called instead of FormValidationStepMismatch when the second value is the same as the first.
+#: FormValidationStepMismatchOneValue
 msgid "Please select a valid value. The nearest valid value is %S."
 msgstr ""
 
@@ -454,6 +457,28 @@ msgid ""
 "XMLHttpRequest. Only UTF-8 is supported for decoding JSON."
 msgstr ""
 
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataUnknownContentType
+msgid "The buffer passed to decodeAudioData contains an unknown content type."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataUnknownError
+msgid "An unknown error occured while processing decodeAudioData."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataInvalidContent
+msgid ""
+"The buffer passed to decodeAudioData contains invalid content which cannot "
+"be decoded successfully."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataNoAudio
+msgid "The buffer passed to decodeAudioData does not contain any audio."
+msgstr ""
+
 #: MediaLoadExhaustedCandidates
 msgid "All candidate resources failed to load. Media load paused."
 msgstr ""
@@ -526,11 +551,52 @@ msgstr ""
 msgid "The Components object is deprecated. It will soon be removed."
 msgstr ""
 
+#: PluginHangUITitle
+#, fuzzy
+msgid "Warning: Unresponsive plugin"
+msgstr "Tsivhudzo: Ḽiṅwalwa ḽi sa vulei"
+
+#: PluginHangUIMessage
+#, fuzzy
+msgid ""
+"%S may be busy, or it may have stopped responding. You can stop the plugin "
+"now, or you can continue to see if the plugin will complete."
+msgstr ""
+"Ḽiṅwalwa kha heḽi siaṱari ḽi nga vha ḽi tshi khou shuma, kana ḽi nga vha ḽo "
+"tou litsha u fhindula. Ni na imisa ḽiṅwalwa zwino, kana ni nga isa phanda u "
+"itela u vhona arali ḽiṅwalwa ḽi tshi ḓo fhedzisa."
+
+#: PluginHangUIWaitButton
+#, fuzzy
+msgctxt "PluginHangUIWaitButton"
+msgid "Continue"
+msgstr "Isani phanḓa"
+
+#: PluginHangUIStopButton
+msgid "Stop plugin"
+msgstr ""
+
 #. # LOCALIZATION NOTE: Do not translate "mozHidden", "mozVisibilityState", "hidden", or "visibilityState"
 #: PrefixedVisibilityApiWarning
 msgid ""
 "'mozHidden' and 'mozVisibilityState' are deprecated.  Please use the "
 "unprefixed 'hidden' and 'visibilityState' instead."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "X-Content-Security-Policy", "X-Content-Security-Policy-Report-Only",  "Content-Security-Policy" or "Content-Security-Policy-Report-Only"
+#: OldCSPHeaderDeprecated
+msgid ""
+"The X-Content-Security-Policy and X-Content-Security-Report-Only headers "
+"will be deprecated in the future. Please use the Content-Security-Policy and "
+"Content-Security-Report-Only headers with CSP spec compliant syntax instead."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "X-Content-Security-Policy/Report-Only" or "Content-Security-Policy/Report-Only"
+#: BothCSPHeadersPresent
+msgid ""
+"This site specified both an X-Content-Security-Policy/Report-Only header and "
+"a Content-Security-Policy/Report-Only header. The X-Content-Security-Policy/"
+"Report-Only header(s) will be ignored."
 msgstr ""
 
 #~ msgid ""

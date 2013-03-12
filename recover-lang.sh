@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source build_common.inc.sh
+
 langs=$*
 
 export PYTHONPATH=../tools/translate:$PYTHONPATH
@@ -11,4 +13,4 @@ do
 done
 rm $(find $lang -type f | egrep -v "\.po$")
 
-./cleanup-msgcat.sh $langs
+clean_po $langs
