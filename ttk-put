@@ -1,0 +1,13 @@
+#!/bin/bash
+
+source ttk.inc.sh
+
+langs=$*
+option_project="--project=$project"
+
+if [ $# -eq 0 ]; then
+	langs=$(all_langs)
+fi
+
+sync_stores $langs
+rsync_files_put $langs
