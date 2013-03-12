@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source build_common.inc.sh
+
 xpi=$1
 lang=$(basename $xpi .xpi)
 l10n_dir=../l10n
@@ -50,7 +52,7 @@ pocount $po_dir/$lang-xpi-1st | tail
 
 # Migrate to latest templates and structure
 pomigrate2 --quiet --pot2po $lang-xpi-1st $lang templates
-./cleanup-msgcat.sh $langs
+clean_po $langs
 
 # Remove any non-PO files
 rm $(find $lang -type f | egrep -v "\.po$")

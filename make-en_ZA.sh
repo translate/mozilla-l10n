@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source build_common.inc.sh
+
 # Make sure we're up-to-date
 svn up en_ZA
 
@@ -25,4 +27,4 @@ function process()
 
 process untranslated
 process isfuzzy
-./cleanup-msgcat.sh
+clean_po en_ZA

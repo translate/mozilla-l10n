@@ -1,13 +1,13 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/browser/chrome/browser/browser.properties
+#. extracted from ./browser/chrome/browser/browser.properties
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 22:17-0700\n"
+"POT-Creation-Date: 2013-03-01 10:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: nv_timeout
 msgid "Timed Out"
@@ -439,8 +440,8 @@ msgstr ""
 msgid "Activate"
 msgstr "Shumisani"
 
-#: PluginClickToPlay
-msgid "Click here to activate the %S plugin."
+#: PluginClickToActivate
+msgid "Activate %S."
 msgstr ""
 
 #. # LOCALIZATION NOTE - "vulnerable" indicates there is a security bug in the
@@ -730,19 +731,6 @@ msgstr ""
 msgid "(unknown)"
 msgstr ""
 
-#. # Downloads Monitor Panel
-#. # LOCALIZATION NOTE (activeDownloads1, pausedDownloads1): Semi-colon list of plural
-#. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of downloads; #2 time left
-#. # examples: 1 active download (2 minutes remaining); 11 paused downloads
-#: activeDownloads1
-msgid "1 active download (#2);#1 active downloads (#2)"
-msgstr ""
-
-#: pausedDownloads1
-msgid "1 paused download;#1 paused downloads"
-msgstr ""
-
 #. # Edit Bookmark UI
 #: editBookmarkPanel.pageBookmarkedTitle
 msgid "Page Bookmarked"
@@ -877,38 +865,6 @@ msgctxt "safebrowsing.notAnAttackButton.accessKey"
 msgid "A"
 msgstr ""
 
-#. # Private Browsing Confirmation dialog
-#. # LOCALIZATION NOTE (privateBrowsingMessage): %S will be replaced
-#. # by the name of the application.
-#. # LOCALIZATION NOTE (privateBrowsingYesTitle, privateBrowsingNoTitle, privateBrowsingNeverAsk):
-#. # Access keys are specified by prefixing the desired letter with an ampersand.
-#: privateBrowsingDialogTitle
-msgid "Start Private Browsing"
-msgstr ""
-
-#: privateBrowsingMessageHeader
-msgid "Would you like to start Private Browsing?"
-msgstr ""
-
-#: privateBrowsingMessage
-msgid ""
-"%S will save your current tabs for when you are done with your Private "
-"Browsing session."
-msgstr ""
-
-#: privateBrowsingYesTitle
-msgid "&Start Private Browsing"
-msgstr ""
-
-#: privateBrowsingNoTitle
-#, fuzzy
-msgid "&Cancel"
-msgstr "Fhelisani"
-
-#: privateBrowsingNeverAsk
-msgid "&Do not show this message again"
-msgstr ""
-
 #. # Ctrl-Tab
 #. # LOCALIZATION NOTE (ctrlTab.showAll.label): #1 represents the number
 #. # of tabs in the current browser window. It will always be 2 at least.
@@ -987,7 +943,6 @@ msgid "You can access your passwords on all your devices with %S. "
 msgstr ""
 
 #: syncPromoNotification.learnMoreLinkText
-msgctxt "syncPromoNotification.learnMoreLinkText"
 msgid "Learn More"
 msgstr ""
 
@@ -1008,37 +963,20 @@ msgid ""
 "You can use your %S account to synchronize add-ons across multiple devices. "
 msgstr ""
 
-#. # Telemetry prompt
-#. # LOCALIZATION NOTE (telemetryOptInPrompt): %1$S will be replaced by
-#. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner
-#. # preference.
-#: telemetryOptInPrompt
+#. # Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
+#: dataReportingNotification.message
 msgid ""
-"Will you help improve %1$S by sending information about performance, "
-"hardware, usage, and customizations to %2$S?"
+"%1$S automatically sends some data to %2$S so that we can improve your "
+"experience."
 msgstr ""
 
-#: telemetryLinkLabel
-msgctxt "telemetryLinkLabel"
-msgid "Learn More"
+#: dataReportingNotification.button.label
+msgid "Choose What I Share"
 msgstr ""
 
-#: telemetryYesButtonLabel2
-msgid "Yes, I want to help"
-msgstr ""
-
-#: telemetryYesButtonAccessKey
-msgctxt "telemetryYesButtonAccessKey"
-msgid "Y"
-msgstr ""
-
-#: telemetryNoButtonLabel
-msgid "No"
-msgstr "Hai"
-
-#: telemetryNoButtonAccessKey
-msgctxt "telemetryNoButtonAccessKey"
-msgid "N"
+#: dataReportingNotification.button.accessKey
+msgctxt "dataReportingNotification.button.accessKey"
+msgid "C"
 msgstr ""
 
 #. # Keyword.URL reset prompt
@@ -1058,7 +996,6 @@ msgid "Yes, use %1$S"
 msgstr ""
 
 #: keywordPrompt.yesButton.accessKey
-msgctxt "keywordPrompt.yesButton.accessKey"
 msgid "Y"
 msgstr ""
 
@@ -1091,15 +1028,6 @@ msgstr ""
 msgid "Application Installed"
 msgstr ""
 
-#. # Telemetry opt-out prompt for Aurora and Nightly
-#. # LOCALIZATION NOTE (telemetryOptOutPrompt): %1$S and %3$S will be replaced by
-#. # brandFullName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetryOptOutPrompt
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-
 #. # LOCALIZATION NOTE (fullscreen.entered): displayed when we enter HTML5 fullscreen mode, %S is the domain name of the focused website (e.g. mozilla.com).
 #: fullscreen.entered
 msgid "%S is now fullscreen."
@@ -1115,13 +1043,14 @@ msgstr ""
 msgid "You've turned on %1$S for %2$S."
 msgstr ""
 
-#. # LOCALIZATION NOTE (social.remove.label): %S = brandShortName
-#: social.remove.label
-msgid "Remove from %S"
+#. # LOCALIZATION NOTE (social.removeProvider.label): %S is the name of the social provider
+#: social.removeProvider.label
+msgctxt "social.removeProvider.label"
+msgid "Remove %S"
 msgstr ""
 
-#: social.remove.accesskey
-msgctxt "social.remove.accesskey"
+#: social.removeProvider.accesskey
+msgctxt "social.removeProvider.accesskey"
 msgid "R"
 msgstr ""
 
@@ -1132,6 +1061,7 @@ msgstr ""
 
 #. # LOCALIZATION NOTE (social.remove.confirmationOK): %S is the name of the social provider
 #: social.remove.confirmationOK
+msgctxt "social.remove.confirmationOK"
 msgid "Remove %S"
 msgstr ""
 
@@ -1187,6 +1117,11 @@ msgstr ""
 msgctxt "social.error.closeSidebar.accesskey"
 msgid "C"
 msgstr ""
+
+#. # LOCALIZATION NOTE: %1$S is the label for the toolbar button, %2$S is the associated badge numbering that the social provider may provide.
+#: social.aria.toolbarButtonBadgeText
+msgid "%1$S (%2$S)"
+msgstr "%1$S (%2$S)"
 
 #. # Identity notifications popups
 #: identity.termsOfService
@@ -1250,52 +1185,37 @@ msgctxt "identity.loggedIn.signOut.accessKey"
 msgid "O"
 msgstr ""
 
-#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
-#. # LOCALIZATION NOTE (getUserMedia.shareMicrophone.message, getUserMedia.shareSpecificMicrophone.label): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message, getUserMedia.sharingCamera.message, getUserMedia.sharingMicrophone.message, getUserMedia.sharingCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
+#. # Semi-colon list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # The number of devices can be either one or two.
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
-msgstr ""
-
-#: getUserMedia.shareCamera.label
-msgid "Share Camera"
-msgstr ""
-
-#: getUserMedia.shareCamera.accesskey
-msgctxt "getUserMedia.shareCamera.accesskey"
-msgid "S"
-msgstr ""
-
-#: getUserMedia.shareSpecificCamera.label
-msgid "Share Camera: %S"
 msgstr ""
 
 #: getUserMedia.shareMicrophone.message
 msgid "Would you like to share your microphone with %S?"
 msgstr ""
 
-#: getUserMedia.shareMicrophone.label
-msgid "Share Microphone"
-msgstr ""
-
-#: getUserMedia.shareMicrophone.accesskey
-msgctxt "getUserMedia.shareMicrophone.accesskey"
-msgid "S"
-msgstr ""
-
-#: getUserMedia.shareSpecificMicrophone.label
-msgid "Share Microphone: %S"
-msgstr ""
-
 #: getUserMedia.shareCameraAndMicrophone.message
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr ""
 
-#: getUserMedia.shareCameraAndMicrophone.label
-msgid "Share Camera and Microphone"
+#: getUserMedia.noVideo.label
+msgid "No Video"
 msgstr ""
 
-#: getUserMedia.shareCameraAndMicrophone.accesskey
-msgctxt "getUserMedia.shareCameraAndMicrophone.accesskey"
+#: getUserMedia.noAudio.label
+msgid "No Audio"
+msgstr ""
+
+#: getUserMedia.shareSelectedDevices.label
+msgid "Share Selected Device;Share Selected Devices"
+msgstr ""
+
+#: getUserMedia.shareSelectedDevices.accesskey
+msgctxt "getUserMedia.shareSelectedDevices.accesskey"
 msgid "S"
 msgstr ""
 
@@ -1308,6 +1228,70 @@ msgstr "Ni Songo Vhulunga"
 msgctxt "getUserMedia.denyRequest.accesskey"
 msgid "D"
 msgstr ""
+
+#: getUserMedia.sharingCamera.message
+msgid "You are currently sharing your camera with %S."
+msgstr ""
+
+#: getUserMedia.sharingMicrophone.message
+msgid "You are currently sharing your microphone with %S."
+msgstr ""
+
+#: getUserMedia.sharingCameraAndMicrophone.message
+msgid "You are currently sharing your camera and microphone with %S."
+msgstr ""
+
+#. # Mixed Content Blocker Doorhanger Notification
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: mixedContentBlocked.message
+msgid "%S has blocked content that isn't secure."
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.label
+msgid "Keep Blocking"
+msgstr ""
+
+#: mixedContentBlocked.keepBlockingButton.accesskey
+msgid "B"
+msgstr ""
+
+#: mixedContentBlocked.unblock.label
+msgid "Disable Protection on This Page"
+msgstr ""
+
+#: mixedContentBlocked.unblock.accesskey
+msgctxt "mixedContentBlocked.unblock.accesskey"
+msgid "D"
+msgstr ""
+
+#. # LOCALIZATION NOTE - %S is brandShortName
+#: slowStartup.message
+msgid "%S seems slow… to… start."
+msgstr ""
+
+#: slowStartup.helpButton.label
+msgid "Learn How to Speed It Up"
+msgstr ""
+
+#: slowStartup.helpButton.accesskey
+msgid "L"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.label
+msgid "Don't Tell Me Again"
+msgstr ""
+
+#: slowStartup.disableNotificationButton.accesskey
+msgctxt "slowStartup.disableNotificationButton.accesskey"
+msgid "A"
+msgstr ""
+
+#, fuzzy
+#~ msgid "&Cancel"
+#~ msgstr "Fhelisani"
+
+#~ msgid "No"
+#~ msgstr "Hai"
 
 #, fuzzy
 #~ msgid "%1$S for %2$S"

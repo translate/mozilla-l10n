@@ -62,9 +62,6 @@ These you can do if you are targetting the specific audience mentioned.
 +------------+------------------------------------------------------------------------------------+
 | Phase      | Details                                                                            |
 +============+====================================================================================+
-| mobile     | all additional files required for Firefox Mobile/Fennec. If you want to get onto   |
-|            | Android then do this file.  You will also need most of the rest of Firefox.        |
-+------------+------------------------------------------------------------------------------------+
 | developers | all web developer centric parts if Firefox.  If you web developers who speak your  |
 |            | language mostly work in English then rather leave this untranslated.               |
 +------------+------------------------------------------------------------------------------------+
