@@ -1,0 +1,14 @@
+#!/bin/bash
+
+source ttk.inc.sh
+
+if [ $# -eq 1 ]; then
+	workon $1
+elif [ $# -eq 0 ]; then
+	workon_list
+else
+	echo "Usage:"
+	echo "  $(basename $0) [project] - to set the current project to 'project'"
+	echo "  $(basename $0) - to list available projects"
+	exit 1
+fi
