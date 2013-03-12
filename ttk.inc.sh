@@ -7,6 +7,16 @@
 # 3: Debug - shout it out
 opt_verbose=0
 
+# FIXME these need to be managed and seitched by a --verbose setting
+progress=none
+errorlevel=traceback
+export USECPO=0
+hgverbosity="--quiet" # --verbose to make it noisy
+gitverbosity="--quiet" # --verbose to make it noisy
+pomigrate2verbosity="--quiet"
+get_moz_enUS_verbosity=""
+easy_install_verbosity="--quiet"
+
 
 function all_langs() {
 	# Retrieves all the languages enabled for the active project
