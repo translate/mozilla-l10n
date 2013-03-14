@@ -119,13 +119,6 @@ PRODUCT_DIRS="browser dom netwerk security services/sync toolkit mobile embeddin
 RETIRED_PRODUCT_DIRS="other-licenses/branding/firefox extensions/reporter"
 LANGPACK_DIR="${BUILD_DIR}/xpi"
 
-# Include current dir in path (for buildxpi and others)
-CURDIR=$(dirname $0)
-if [ "$CURDIR" == "" -o  "$CURDIR" == '.' ]; then
-    CURDIR=$(pwd)
-fi
-PATH=${CURDIR}:${PATH}
-
 if [ $opt_vc ]; then
 	verbose "${MOZ_DIR} - update/pull using Mercurial"
 	if [ -d "${MOZCENTRAL_DIR}/.hg" ]; then
