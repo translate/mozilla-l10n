@@ -127,11 +127,6 @@ fi
 PATH=${CURDIR}:${PATH}
 
 if [ $opt_vc ]; then
-	verbose "Compare-Locales - update if needed"
-	easy_install $easy_install_verbosity --upgrade compare-locales
-fi
-
-if [ $opt_vc ]; then
 	verbose "${MOZ_DIR} - update/pull using Mercurial"
 	if [ -d "${MOZCENTRAL_DIR}/.hg" ]; then
 		cd ${MOZCENTRAL_DIR}
