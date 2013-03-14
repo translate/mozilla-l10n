@@ -84,10 +84,8 @@ done
 
 if [ $# -eq 0 ]; then
 	HG_LANGS=$(all_langs)
-	COUNT_LANGS=25
 else
 	HG_LANGS=$*
-	COUNT_LANGS=$#
 fi
 
 for lang in $HG_LANGS
@@ -234,7 +232,7 @@ do
 	if [ "$lang" == "templates" ]; then
 		continue
 	fi
-	[ $COUNT_LANGS -gt 1 ] && echo "Language: $lang"
+	log_info "Language: $lang"
         polang=$(echo $lang|sed "s/-/_/g")
 	verbose "Migrate - update PO files to new POT files"
 	tempdir=`mktemp -d tmp.XXXXXXXXXX`
