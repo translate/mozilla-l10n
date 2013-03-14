@@ -166,6 +166,7 @@ rsync_files_put() {
 	done
 	
 	
+	# FIXME we can probably do this in one go
 	for lang in $langs
 	do
 		# FIXME only sync if we copied up correctly, this way we catch permission errors quickly
