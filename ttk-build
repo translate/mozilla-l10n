@@ -294,8 +294,13 @@ do
 	if [ $opt_tarball ]; then
 		log_info "Creating tarball of target format"
 		mkdir -p ${TARBALL_DIR}
+		# Name will be e.g.: af-21.0a2-20130213T1234-xxxxxxx.tar.bz2
+		version=$(cat ${MOZCENTRAL_DIR}/browser/config/version.txt)
+		build_date=$(date +%Y%m%dT%H%M)
+		vc_hash=$(get_hash ${PO_DIR}/${polang})
+		tarball_name=${mozlang}-$version-$build_date-$vc_hash.tar.bz2
 		(cd ${L10N_DIR}
-		tar c${tar_verbosity}jf ${TARBALL_DIR}/${mozlang}-$(cat ${MOZCENTRAL_DIR}/browser/config/version.txt).tar.bz2 ${mozlang_product_dirs})
+		tar c${tar_verbosity}jf ${TARBALL_DIR}/$tarball_name ${mozlang_product_dirs})
 	fi
 	)
 
