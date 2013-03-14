@@ -56,13 +56,15 @@ function _get_language_line() {
 	project_mappings=${config_dir}/languages.txt
 	for mapping in $project_mappings $default_mappings
 	do
-		line=$(cat $mapping |
-		       egrep -v "^#" |
-		       sed "s/\t/:/g" |
-		       egrep "(^|:|,)${queried_lang}(,|:|$)")
-		if [ ! -z $line ]; then
-			echo $line
-			return 0
+		if [ -f $mapping ]; then
+			line=$(cat $mapping |
+			       egrep -v "^#" |
+			       sed "s/\t/:/g" |
+			       egrep "(^|:|,)${queried_lang}(,|:|$)")
+			if [ ! -z $line ]; then
+				echo $line
+				return 0
+			fi
 		fi
 	done
 	echo ${queried_lang}:${queried_lang}
