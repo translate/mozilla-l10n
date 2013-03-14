@@ -203,11 +203,11 @@ if [ $opt_vc ]; then
 	
 	verbose "Extract the en-US source files from the repo into localisation structure"
 	rm -rf ${L10N_ENUS} ${PO_DIR}/en-US
-	get_moz_enUS.py $get_moz_enUS_verbosity -s ../${MOZ_DIR} -d ${PO_DIR} -p browser
-	get_moz_enUS.py $get_moz_enUS_verbosity -s ../${MOZ_DIR} -d ${PO_DIR} -p mobile
+	get_moz_enUS.py $get_moz_enUS_verbosity -s ${MOZCENTRAL_DIR} -d ${PO_DIR} -p browser
+	get_moz_enUS.py $get_moz_enUS_verbosity -s ${MOZCENTRAL_DIR} -d ${PO_DIR} -p mobile
 	mv ${PO_DIR}/en-US ${L10N_ENUS}
 	
-	verbose "moz2po - Create POT files from n-US"
+	verbose "moz2po - Create POT files from en-US"
 	(cd ${L10N_ENUS}
 	moz2po --errorlevel=$errorlevel --progress=$progress -P --duplicates=msgctxt --exclude '.hg'  . ${POT_DIR}
 	)
