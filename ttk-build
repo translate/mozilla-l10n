@@ -99,11 +99,14 @@ do
 done
 
 # FIXME lets make this the execution directory
-BUILD_DIR="$(pwd)"
+BASE_DIR=$(pwd)
+BUILD_DIR="${BASE_DIR}/build"
+SOURCE_DIR="${BASE_DIR}/source"
 MOZ_DIR="mozilla-aurora"
-MOZCENTRAL_DIR="${BUILD_DIR}/${MOZ_DIR}"
+# FIXME rename this
+MOZCENTRAL_DIR="${SOURCE_DIR}/${MOZ_DIR}"
 L10N_DIR="${BUILD_DIR}/l10n"
-PO_DIR="${BUILD_DIR}/po"
+PO_DIR="${BASE_DIR}"
 L10N_ENUS="${PO_DIR}/templates-en-US"
 POT_DIR="${PO_DIR}/templates"
 TOOLS_DIR="${BUILD_DIR}/tools"
