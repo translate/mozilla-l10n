@@ -252,8 +252,8 @@ do
 		)
 	fi
 
-	revert_unchanged_po_git ${polang}
-	vc_addremove_git ${polang}
+	revert_unchanged_po_git ${PO_DIR} ${polang}
+	vc_addremove_git ${PO_DIR} ${polang}
 
 	verbose "Pre-po2moz hacks"
 	lang_product_dirs=
