@@ -29,6 +29,7 @@ abs_start_time=$(date +%s)
 start_time=$abs_start_time
 opt_vc=""
 opt_build_xpi=""
+opt_tarball=""
 opt_compare_locales="yes"
 opt_copyfiles="yes"
 opt_time=""
@@ -41,6 +42,7 @@ gitverbosity="--quiet" # --verbose to make it noisy
 pomigrate2verbosity="--quiet"
 get_moz_enUS_verbosity=""
 easy_install_verbosity="--quiet"
+tar_verbosity=""
 
 
 for option in $*
@@ -49,6 +51,9 @@ do
 		case $option in
 			--xpi)
 				opt_build_xpi="yes"
+			;;
+			--tarball)
+				opt_tarball="yes"
 			;;
 			--vc)
 				opt_vc="yes"
@@ -67,6 +72,7 @@ do
 				pomigrate2verbosity=""
 				get_moz_enUS_verbosity="-v"
 				easy_install_verbosity="--verbose"
+				tar_verbosity="v"
 			;;
 			--time)
 				opt_time="yes"
@@ -100,6 +106,7 @@ done
 require git hg moz2po po2moz get_moz_enUS.py
 [ opt_compare_locales ] && require compare-locales
 [ opt_build_xpi ] && require buildxpi.py
+[ opt_tarball ] && require tar
 
 
 # FIXME lets make this the execution directory
@@ -118,6 +125,7 @@ PRODUCT_DIRS="browser dom netwerk security services/sync toolkit mobile embeddin
 # Directories in language repositories to clear before running po2moz
 RETIRED_PRODUCT_DIRS="other-licenses/branding/firefox extensions/reporter"
 LANGPACK_DIR="${BUILD_DIR}/xpi"
+TARBALL_DIR="${BUILD_DIR}/tarball"
 
 if [ $opt_vc ]; then
 	verbose "${MOZ_DIR} - update/pull using Mercurial"
@@ -227,14 +235,14 @@ do
 	vc_addremove_git ${PO_DIR} ${polang}
 
 	verbose "Pre-po2moz hacks"
-	lang_product_dirs=
+	mozlang_product_dirs=
 	for dir in ${PRODUCT_DIRS}
 	do
-		lang_product_dirs="${lang_product_dirs} ${L10N_DIR}/$mozlang/$dir"
+		mozlang_product_dirs="${mozlang_product_dirs} $mozlang/$dir"
 	done
-	for product_dir in ${lang_product_dirs}
+	for product_dir in ${mozlang_product_dirs}
 	do
-		[ -d ${product_dir} ] && find ${product_dir} \( -name '*.dtd' -o -name '*.properties' \) -exec rm -f {} \;
+		[ -d ${L10N_DIR}/${product_dir} ] && find ${L10N_DIR}/${product_dir} \( -name '*.dtd' -o -name '*.properties' \) -exec rm -f {} \;
 	done
 
 	verbose "po2moz - Create Mozilla l10n layout from migrated PO files."
@@ -280,6 +288,14 @@ do
 		else
 			echo "Can't run compare-locales without ${MOZCENTRAL_DIR} checkout"
 		fi
+	fi
+
+	# Make a tarball
+	if [ $opt_tarball ]; then
+		log_info "Creating tarball of target format"
+		mkdir -p ${TARBALL_DIR}
+		(cd ${L10N_DIR}
+		tar c${tar_verbosity}jf ${TARBALL_DIR}/${mozlang}-$(cat ${MOZCENTRAL_DIR}/browser/config/version.txt).tar.bz2 ${mozlang_product_dirs})
 	fi
 	)
 
