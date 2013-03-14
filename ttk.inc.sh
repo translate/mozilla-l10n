@@ -451,6 +451,14 @@ function vc_addremove_git {
 	fi
 }
 
+function get_hash() {
+	# Get the hash value for a version control system
+	# FIXME - need to make other hashes for other VC systems
+	local location=$1
+	cd $location
+	git rev-parse --short HEAD
+}
+
 
 #####################################
 # Copying files from source to target
