@@ -179,16 +179,17 @@ disassemble_phase() {
 	local langs=$(get_language_pootle $*)
 	(
 	cd $local_copy/$project
+	log_info "Disassemling phases"
 	for lang in $langs
 	do
-		log_info "Language: $lang"
+		log_debug "Language: $lang"
 		cd $lang
 		if [ -f "$config_dir/$phaselist" ]; then
 			for phase in $(ls)
 			do
 				if [ -d $phase ]; then
 			        	cd $phase
-			        	log_info "Phase: $phase"
+			        	log_debug "Phase: $phase"
 			        	for po in $(find . -name "*.po")
 			        	do
 			        	        mkdir -p $local_trans_dir/$lang/$(dirname $po)
@@ -220,7 +221,7 @@ function clean_po {
 	require msgcat
 
 	# FIXME - only really need to run this is USECPO=0
-	log_info "Cleanup - fix Gettext PO file formatting using msgcat"
+	log_info "Reflow Gettext PO file formatting"
 	for po in $(find $dirs -name "*.po" -o -name "*.pot")
 	do
 		msgcat -o $po.2 $po 2> >(egrep -v "internationali[sz]ed messages should not contain the .* escape sequence" >&2 ) && mv $po.2 $po
@@ -399,10 +400,12 @@ function revert_unchanged_po_git {
 	shift
 	local dirs=$*
 
-	log_info "Migration cleanup - revert files with only PO header changes"
+	log_info "Revert files that only have header changes"
+	log_debug "Reverting in '$location' for '$dirs'"
 	(cd $location
 	for dir in $dirs
 	do
+		log_debug "Reverting files in '$dir'"
 		[ "$(git status --porcelain ${dir})" != "?? ${dir}/" ] && git checkout $gitverbosity -- $(git difftool -y -x 'diff --unified=3 --ignore-matching-lines=POT-Creation --ignore-matching-lines=X-Generator --ignore-matching-lines="#. extracted from" -s' ${dir} |
 		egrep "are identical$" |
 		sed "s/^Files.*.\.po[t]\? and //;s/\(\.po[t]\?\).*/\1/") || echo "No header only changes, so no reverts needed"
