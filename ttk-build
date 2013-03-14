@@ -217,9 +217,8 @@ if [ $opt_vc ]; then
 		)
 	fi
 	pot_dir=$(basename ${POT_DIR})
-	(cd ${POT_DIR}/..
-	revert_unchanged_po_git ${pot_dir}
-	)
+	# FIXME need to be selective based on product dirs
+	revert_unchanged_po_git ${POT_DIR}/.. ${pot_dir}
 fi
 
 verbose "Update ${PO_DIR} in case any changes are in version control"
