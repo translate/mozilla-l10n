@@ -300,7 +300,7 @@ function workon_list() {
 	# List all the current settings
 	_find_config_base_dir
 	echo "Project configs:"
-	(cd $config_base_dir; ls -1p | egrep "/" | cut -d"/" -f1)
+	(cd $config_base_dir; ls -1p | egrep "/" | cut -d"/" -f1 | egrep -v "default")
 	echo "Current acive: $(basename $(ls $config_base_dir/*.workon 2>/dev/null || echo "None.workon") .workon)"
 	echo "Default: $(basename $(ls $config_base_dir/*.default 2>/dev/null || echo "None.default") .default)"
 }
