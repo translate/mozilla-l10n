@@ -406,6 +406,86 @@ function revert_unchanged_po_git {
 }
 
 
+function vc_addremove_git {
+	# Add and remove (obsolete) translation files
+	local dir=$1
+	verbose "Move old files to obsolete/ and add new files"
+	if [ "$(git status --porcelain ${dir})" == "?? ${dir}/" ]; then
+		# Not VC managed, assume it's a new language
+		# FIXME does this actually work? Surely we need to traverse the
+		# folder? or don't need the *.po bit
+		git add ${dir}/\*.po
+	else
+		(cd ${dir}
+		for newfile in $(git status --porcelain $PRODUCT_DIRS | egrep "^\?\?" | sed "s/^??\w*[^\/]*\///")
+		do
+			if [ -f $newfile -a "$(basename $newfile | cut -d"." -f3)" = "po" ]; then
+				git add $newfile
+			elif [ -d $newfile -a "$(find $newfiles -name '*.po' -o -name "*.pot")" ]; then
+				git add $newfile
+			fi
+		done
+
+		for oldfile in $(git status --porcelain $PRODUCT_DIRS $RETIRED_PRODUCT_DIRS | egrep "^ D" | sed "s/^ D\w*[^\/]*\///")
+		do
+			if [ "$(basename $oldfile | cut -d'.' -f3 | cut -c-2)" = "po" ]; then
+				git checkout $gitverbosity -- $oldfile
+				mkdir -p obsolete/$(dirname $oldfile)
+				git mv $oldfile obsolete/$oldfile
+			fi
+		done
+		clean_po obsolete
+		)
+	fi
+}
+
+
+#####################################
+# Copying files from source to target
+#####################################
+
+# TODO - abstract the source and target directories so they don't have build in
+# assumptions e.g. $SOURCE rather then $L10N_ENUS 
+function copyfile {
+	filename=$1
+	language=$2
+	directory=$(dirname $filename)
+	if [ -f ${L10N_ENUS}/$filename ]; then
+		mkdir -p ${L10N_DIR}/$language/$directory
+		cp -p ${L10N_ENUS}/$filename ${L10N_DIR}/$language/$directory
+	fi
+}
+
+function copyfileifmissing {
+	filename=$1
+	language=$2
+	if [ ! -f ${L10N_DIR}/$language/$filename ]; then
+		copyfile $1 $2
+	fi
+}
+
+function copyfiletype {
+	filetype=$1
+	language=$2
+	files=$(cd ${L10N_ENUS}; find . -name "$filetype")
+	for file in $files
+	do
+		copyfile $file $language
+	done
+}
+
+function copydir {
+	dir=$1
+	language=$2
+	if [ -d ${L10N_ENUS}/$dir ]; then
+		files=$(cd ${L10N_ENUS}/$dir && find . -type f)
+		for file in $files
+		do
+			copyfile $dir/$file $language
+		done
+	fi
+}
+
 
 ##### MAIN #####
 source_config 
