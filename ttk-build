@@ -205,7 +205,8 @@ do
 		continue
 	fi
 	log_info "Language: $lang"
-        polang=$(echo $lang|sed "s/-/_/g")
+	polang=$(get_language_pootle $lang)
+	mozlang=$(get_language_upstream $lang)
 	verbose "Migrate - update PO files to new POT files"
 	tempdir=`mktemp -d tmp.XXXXXXXXXX`
 	if [ -d ${PO_DIR}/${polang} ]; then
@@ -227,7 +228,10 @@ do
 
 	verbose "Pre-po2moz hacks"
 	lang_product_dirs=
-	for dir in ${PRODUCT_DIRS}; do lang_product_dirs="${lang_product_dirs} ${L10N_DIR}/$lang/$dir"; done
+	for dir in ${PRODUCT_DIRS}
+	do
+		lang_product_dirs="${lang_product_dirs} ${L10N_DIR}/$mozlang/$dir"
+	done
 	for product_dir in ${lang_product_dirs}
 	do
 		[ -d ${product_dir} ] && find ${product_dir} \( -name '*.dtd' -o -name '*.properties' \) -exec rm -f {} \;
@@ -240,21 +244,21 @@ do
 	done
 	echo $excludes
 	po2moz --progress=$progress --errorlevel=$errorlevel --exclude=".git" --exclude=".hg" --exclude=".hgtags" --exclude="obsolete" --exclude="editor" --exclude="mail" --exclude="thunderbird" --exclude="chat" --exclude="*~" $excludes \
-		-t ${L10N_ENUS} -i ${PO_DIR}/${polang} -o ${L10N_DIR}/${lang}
+		-t ${L10N_ENUS} -i ${PO_DIR}/${polang} -o ${L10N_DIR}/${mozlang}
 
 	if [ $opt_copyfiles ]; then
 		verbose "Copy files not handled by moz2po/po2moz"
-		copyfileifmissing toolkit/chrome/mozapps/help/welcome.xhtml ${lang}
-		copyfileifmissing toolkit/chrome/mozapps/help/help-toc.rdf ${lang}
-		copyfile browser/firefox-l10n.js ${lang}
-		copyfile browser/profile/chrome/userChrome-example.css ${lang}
-		copyfile browser/profile/chrome/userContent-example.css ${lang}
-		copyfileifmissing toolkit/chrome/global/intl.css ${lang}
+		copyfileifmissing toolkit/chrome/mozapps/help/welcome.xhtml ${mozlang}
+		copyfileifmissing toolkit/chrome/mozapps/help/help-toc.rdf ${mozlang}
+		copyfile browser/firefox-l10n.js ${mozlang}
+		copyfile browser/profile/chrome/userChrome-example.css ${mozlang}
+		copyfile browser/profile/chrome/userContent-example.css ${mozlang}
+		copyfileifmissing toolkit/chrome/global/intl.css ${mozlang}
 		# This one needs special approval but we need it to pass and compile
-		copyfileifmissing browser/searchplugins/list.txt ${lang}
+		copyfileifmissing browser/searchplugins/list.txt ${mozlang}
 		# Revert some files that need careful human review or authorisation
-		if [ -d ${L10N_DIR}/${lang}/.hg ]; then
-			(cd ${L10N_DIR}/${lang}
+		if [ -d ${L10N_DIR}/${mozlang}/.hg ]; then
+			(cd ${L10N_DIR}/${mozlang}
 			hg revert $hgverbosity --no-backup browser/chrome/browser-region/region.properties browser/searchplugins/list.txt
 			)
 		fi
@@ -264,15 +268,15 @@ do
 	if [ $opt_build_xpi ]; then
 		mkdir -p ${LANGPACK_DIR}
 		verbose "Language Pack - create an XPI"
-		buildxpi.py -d -L ${L10N_DIR} -s ${MOZCENTRAL_DIR} -o ${LANGPACK_DIR} ${lang}
+		buildxpi.py -d -L ${L10N_DIR} -s ${MOZCENTRAL_DIR} -o ${LANGPACK_DIR} ${mozlang}
 	fi
 
 	# COMPARE LOCALES
 	if [ $opt_compare_locales ]; then
 		verbose "Compare-Locales - to find errors"
 		if [ -f ${MOZCENTRAL_DIR}/browser/locales/l10n.ini ]; then
-			compare-locales ${MOZCENTRAL_DIR}/browser/locales/l10n.ini ${L10N_DIR} $lang
-			compare-locales ${MOZCENTRAL_DIR}/mobile/locales/l10n.ini ${L10N_DIR} $lang
+			compare-locales ${MOZCENTRAL_DIR}/browser/locales/l10n.ini ${L10N_DIR} $mozlang
+			compare-locales ${MOZCENTRAL_DIR}/mobile/locales/l10n.ini ${L10N_DIR} $mozlang
 		else
 			echo "Can't run compare-locales without ${MOZCENTRAL_DIR} checkout"
 		fi
