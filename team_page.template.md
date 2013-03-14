@@ -2,7 +2,7 @@ _Our team_
 ========
 
 - [Mozilla contacts page](https://wiki.mozilla.org/L10n%3ATeams%3Aach) -
-  _please check and update tis page_
+  _please check and update this page_
 
 _Replace this with a description of how people can join your team_
 
