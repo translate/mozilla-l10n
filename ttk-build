@@ -96,6 +96,12 @@ do
 	fi
 done
 
+# Check requirements:
+require git hg moz2po po2moz get_moz_enUS.py
+[ opt_compare_locales ] && require compare-locales
+[ opt_build_xpi ] && require buildxpi.py
+
+
 # FIXME lets make this the execution directory
 BASE_DIR=$(pwd)
 BUILD_DIR="${BASE_DIR}/build"
