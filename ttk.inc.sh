@@ -416,7 +416,10 @@ function revert_unchanged_po_git {
 
 function vc_addremove_git {
 	# Add and remove (obsolete) translation files
-	local dir=$1
+	# FIXME make this more generic so that you can somehow get and set
+	# PRODUCT_DIRS
+	local location=$1
+	local dir=$2
 	verbose "Move old files to obsolete/ and add new files"
 	if [ "$(git status --porcelain ${dir})" == "?? ${dir}/" ]; then
 		# Not VC managed, assume it's a new language
@@ -424,7 +427,7 @@ function vc_addremove_git {
 		# folder? or don't need the *.po bit
 		git add ${dir}/\*.po
 	else
-		(cd ${dir}
+		(cd ${location}/${dir}
 		for newfile in $(git status --porcelain $PRODUCT_DIRS | egrep "^\?\?" | sed "s/^??\w*[^\/]*\///")
 		do
 			if [ -f $newfile -a "$(basename $newfile | cut -d"." -f3)" = "po" ]; then
