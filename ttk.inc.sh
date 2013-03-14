@@ -35,6 +35,10 @@ get_moz_enUS_verbosity=""
 easy_install_verbosity="--quiet"
 
 
+############################
+# Language and language code
+############################
+
 function all_langs() {
 	# Retrieves all the languages enabled for the active project
 	option_change_id=""
@@ -97,6 +101,10 @@ _create_option_langs() {
 	done
 }
 
+
+#####################
+# Pootle interactions
+#####################
 sync_stores() {
 	local langs=$*
 	_create_option_langs $langs
@@ -226,7 +234,9 @@ function clean_po_location {
 }
 
 
+#########
 # Helpers
+#########
 
 function require() {
 	# Check that a command is in the path
@@ -239,7 +249,10 @@ function require() {
 
 }
 
+#########
 # Logging
+#########
+
 # TODO - introduce some sense of INFO, DEBUG, ERROR
 # TODO - move the variables to set this into the common folder.
 function logger() {
@@ -371,7 +384,9 @@ function source_config() {
 	fi
 }
 
+#################
 # Version Control
+#################
 
 function revert_unchanged_po_git {
 	# Revert changes to PO files that are only header changes
