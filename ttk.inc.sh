@@ -28,6 +28,37 @@ function all_langs() {
 	ssh $user@$server $precommand python $manage_command list_languages --verbosity=$manage_py_verbosity $option_project $option_change_id
 }
 
+function _get_language_line() {
+	_find_config_base_dir
+	local queried_lang=$1
+	default_mappings=${config_base_dir}/default/languages.txt
+	project_mappings=${config_dir}/languages.txt
+	for mapping in $project_mappings $default_mappings
+	do
+		line=$(cat $mapping |
+		       egrep -v "^#" |
+		       sed "s/\t/:/g" |
+		       egrep "(^|:|,)${queried_lang}(,|:|$)")
+		if [ ! -z $line ]; then
+			echo $line
+			return 0
+		fi
+	done
+	echo ${queried_lang}:${queried_lang}
+}
+
+function get_language_upstream() {
+	# Determine the uptream language from the one supplied
+	local queried_lang=$1
+	_get_language_line $queried_lang | cut -d":" -f2
+}
+
+function get_language_pootle() {
+	# Determine the pootle language from the one supplied
+	local queried_lang=$1
+	_get_language_line $queried_lang | cut -d":" -f1
+}
+
 create_bashlangs() {
 	# Converted the list of supplied languages into the bash form
 	# e.g. af ach fr -> af,ach,fr
