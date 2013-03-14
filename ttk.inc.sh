@@ -78,8 +78,13 @@ function get_language_upstream() {
 
 function get_language_pootle() {
 	# Determine the pootle language from the one supplied
-	local queried_lang=$1
-	_get_language_line $queried_lang | cut -d":" -f1
+	local queried_langs=$*
+	local pootle_langs=""
+	for lang in $queried_langs
+	do
+		pootle_langs="$pootle_langs $(_get_language_line $lang | cut -d":" -f1)"
+	done
+	echo $pootle_langs
 }
 
 create_bashlangs() {
