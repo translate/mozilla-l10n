@@ -113,17 +113,14 @@ _create_option_langs() {
 # Pootle interactions
 #####################
 sync_stores() {
-	local langs=$*
-	_create_option_langs $langs
+	_create_option_langs $(get_language_pootle $*)
 	sync_command="$precommand python $manage_command sync_stores --verbosity=$manage_py_verbosity $option_project $option_langs"
 	
 	ssh $user@$server $sync_command || exit
 	
 }
 rsync_files_get() {
-	local langs=$*
-
-	create_bashlangs $langs
+	create_bashlangs $(get_language_pootle $*)
 	mkdir -p $local_copy/$project
 	pootle_dir=/var/www/sites/$instance/translations/$project
 	rsync -az --delete --exclude=".translation_index" --exclude=pootle-terminology.po $user@$server:$pootle_dir/$bashlangs $local_copy/$project/ || exit
@@ -179,7 +176,7 @@ rsync_files_put() {
 
 disassemble_phase() {
 	# Break up a phase baesd sync into normal structure
-	local langs=$*
+	local langs=$(get_language_pootle $*)
 	(
 	cd $local_copy/$project
 	for lang in $langs
