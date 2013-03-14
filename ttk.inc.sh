@@ -258,7 +258,8 @@ function require() {
 function logger() {
 	# Log to the console
 	local level=$1
-	local msg=$2
+	shift
+	local msg=$*
 
 	# FIXME do the colour highlighting and timing again
 	#if [ "$opt_time" ]; then
@@ -311,7 +312,7 @@ function verbose() {
 }
 
 function log_debug() {
-	log 'debug' $1
+	log 'debug' $*
 }
 
 function log_info() {
