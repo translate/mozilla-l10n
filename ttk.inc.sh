@@ -225,7 +225,9 @@ function clean_po {
 	log_info "Reflow Gettext PO file formatting"
 	for po in $(find $dirs -name "*.po" -o -name "*.pot")
 	do
-		msgcat -o $po.2 $po 2> >(egrep -v "internationali[sz]ed messages should not contain the .* escape sequence" >&2 ) && mv $po.2 $po
+		if [ -s $po ]; then
+			msgcat -o $po.2 $po 2> >(egrep -v "internationali[sz]ed messages should not contain the .* escape sequence" >&2 ) && mv $po.2 $po
+		fi
 	done
 }
 
