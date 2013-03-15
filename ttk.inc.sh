@@ -141,15 +141,15 @@ rsync_files_put() {
 	# Copy files across and disassemble phases
 	for lang in $langs
 	do
-		rm -rf $local_copy/$lang
+		rm -rf $local_copy/$project/$lang
 		if [ -f "$config_dir/$phaselist" ]; then
 			cat $config_dir/$phaselist | while read phase file
 			do
 				if [ $lang == "pot" -o $lang == "templates" ]; then
 					file=${file}t
 				fi
-				mkdir -p $local_copy/$lang/$phase/$(dirname $file)
-				cp -p $lang/$file $local_copy/$lang/$phase/$file
+				mkdir -p $local_copy/$project/$lang/$phase/$(dirname $file)
+				cp -p $lang/$file $local_copy/$project/$lang/$phase/$file
 			done
 		else
 			(cd $lang
@@ -159,8 +159,8 @@ rsync_files_put() {
 				find $PRODUCT_DIRS -name "*.po"
 			fi) | while read file
 			do
-				mkdir -p $local_copy/$lang/$(dirname $file)
-				cp -p $lang/$file $local_copy/$lang/$file
+				mkdir -p $local_copy/$project/$lang/$(dirname $file)
+				cp -p $lang/$file $local_copy/$project/$lang/$file
 			done
 		fi
 	done
@@ -170,7 +170,7 @@ rsync_files_put() {
 	for lang in $langs
 	do
 		# FIXME only sync if we copied up correctly, this way we catch permission errors quickly
-		rsync -az --no-g --chmod=Dg+s,ug+rw,o-rw,Fug+rw,o-rw --include="*.po" --exclude=pootle-terminology.po --exclude=.translation_index --delete $local_copy/$lang $user@$server:$pootle_dir/
+		rsync -az --no-g --chmod=Dg+s,ug+rw,o-rw,Fug+rw,o-rw --include="*.po" --exclude=pootle-terminology.po --exclude=.translation_index --delete $local_copy/$project/$lang $user@$server:$pootle_dir/
 		ssh $user@$server "$update_command --language=$lang"
 	done
 }
