@@ -13,4 +13,4 @@ local_trans_dir=$base_dir
 # Directories in language repositories to clear before running po2moz
 PRODUCT_DIRS="mobile embedding"
 # Directories in language repositories to clear before running po2moz
-RETIRED_PRODUCT_DIRS="other-licenses/branding/firefox extensions/reporter"
+RETIRED_PRODUCT_DIRS=""
