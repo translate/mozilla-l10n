@@ -8,3 +8,9 @@ manage_command="/var/www/sites/$instance/src/manage.py"
 manage_py_verbosity=2
 precommand=". /var/www/sites/mozilla/env/bin/activate;"
 local_trans_dir=$base_dir
+opt_verbose=3
+
+# FIXME we should build this from the get_moz_enUS script
+PRODUCT_DIRS="browser dom netwerk security services/sync toolkit" # Directories in language repositories to clear before running po2moz
+# Directories in language repositories to clear before running po2moz
+RETIRED_PRODUCT_DIRS="other-licenses/branding/firefox extensions/reporter"
