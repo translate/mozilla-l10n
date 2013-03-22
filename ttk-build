@@ -90,6 +90,8 @@ done
 
 if [ $# -eq 0 ]; then
 	HG_LANGS=$(all_langs)
+elif [ $# -eq 1 -a -z "${1//[0-9]/}" ]; then
+	HG_LANGS=$(all_langs $1)
 else
 	HG_LANGS=$*
 fi
