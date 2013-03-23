@@ -197,12 +197,14 @@ if [ $opt_vc ]; then
 	revert_unchanged_po_git ${POT_DIR}/.. ${pot_dir}
 fi
 
-verbose "Update ${PO_DIR} in case any changes are in version control"
-(cd ${PO_DIR};
-git stash $gitverbosity
-git pull $gitverbosity --rebase
-git checkout $gitverbosity
-git stash pop $gitverbosity || true)
+if [ $opt_vc ]; then
+	verbose "Update ${PO_DIR} in case any changes are in version control"
+	(cd ${PO_DIR};
+	git stash $gitverbosity
+	git pull $gitverbosity --rebase
+	git checkout $gitverbosity
+	git stash pop $gitverbosity || true)
+fi
 
 verbose "Translations - build l10n/ files"
 for lang in ${HG_LANGS}
