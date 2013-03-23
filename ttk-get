@@ -7,6 +7,8 @@ option_project="--project=$project"
 
 if [ $# -eq 0 ]; then
 	langs=$(all_langs)
+elif [ $# -eq 1 -a -z "${1//[0-9]/}" ]; then
+	langs=$(all_langs $1)
 fi
 
 git stash --quiet
