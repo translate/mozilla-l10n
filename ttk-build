@@ -223,6 +223,7 @@ do
 		(cd ${PO_DIR}/${polang}; rm $(find ${PRODUCT_DIRS} ${RETIRED_PRODUCT_DIR} -type f -name "*.po"))
 	fi
 	pomigrate2 --use-compendium --pot2po $pomigrate2verbosity ${tempdir}/${polang} ${PO_DIR}/${polang} ${POT_DIR}
+	# FIXME we should revert stuff that wasn't part of this migration e.g. mobile
 	rm -rf ${tempdir}
 
 	(cd ${PO_DIR}
