@@ -113,6 +113,7 @@ _create_option_langs() {
 # Pootle interactions
 #####################
 sync_stores() {
+	log_info "Syncing files to Pootle's filesystem"
 	_create_option_langs $(get_language_pootle $*)
 	sync_command="$precommand python $manage_command sync_stores --verbosity=$manage_py_verbosity $option_project $option_langs"
 	
@@ -120,6 +121,7 @@ sync_stores() {
 	
 }
 rsync_files_get() {
+	log_info "rsync copying files on Pootle to local filesystem"
 	create_bashlangs $(get_language_pootle $*)
 	mkdir -p $local_copy/$project
 	pootle_dir=/var/www/sites/$instance/translations/$project
@@ -127,6 +129,7 @@ rsync_files_get() {
 }
 
 rsync_files_put() {
+	log_info "rsync copying files on local filesystem to Pootle"
 	local langs=$*
 
 	update_command="$precommand python $manage_command update_stores $option_project"
@@ -139,6 +142,7 @@ rsync_files_put() {
 	fi
 	
 	# Copy files across and disassemble phases
+	log_debug "Creating local copies of languages for syncing"
 	for lang in $langs
 	do
 		rm -rf $local_copy/$project/$lang
@@ -167,9 +171,11 @@ rsync_files_put() {
 	
 	
 	# FIXME we can probably do this in one go
+	log_debug "rsync file to Pootle"
 	for lang in $langs
 	do
 		# FIXME only sync if we copied up correctly, this way we catch permission errors quickly
+	        log_debug "rsyncing: $lang"
 		rsync -az --no-g --chmod=Dg+s,ug+rw,o-rw,Fug+rw,o-rw --include="*.po" --exclude=pootle-terminology.po --exclude=.translation_index --delete $local_copy/$project/$lang $user@$server:$pootle_dir/
 		ssh $user@$server "$update_command --language=$lang"
 	done
@@ -180,7 +186,7 @@ disassemble_phase() {
 	local langs=$(get_language_pootle $*)
 	(
 	cd $local_copy/$project
-	log_info "Disassemling phases"
+	log_info "Disassembling phases"
 	for lang in $langs
 	do
 		log_debug "Language: $lang"
