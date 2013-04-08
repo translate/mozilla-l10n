@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/browser/chrome/browser/browser.properties
+#. extracted from ./browser/chrome/browser/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:53-0700\n"
 "PO-Revision-Date: 2012-12-12 05:29+0000\n"
 "Last-Translator: newton <newton@ankur.org.bd>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1355290185.0\n"
@@ -255,13 +255,13 @@ msgctxt "lwthemeNeedsRestart.accesskey"
 msgid "R"
 msgstr "R"
 
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S এই সাইটকে একটি পপ-আপ উইন্ডো খুলতে বাধা দিয়েছে।"
-
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S এই সাইটকে %Sটি পপ-আপ উইন্ডো খুলতে বাধা দিয়েছে।"
+#. # LOCALIZATION NOTE (popupWarning.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popupWarning.message
+msgid ""
+"#1 prevented this site from opening a pop-up window.;#1 prevented this site "
+"from opening #2 pop-up windows."
+msgstr ""
 
 #: popupWarningButton
 msgid "Options"
@@ -379,20 +379,6 @@ msgstr "S"
 msgctxt "crashedpluginsMessage.learnMore"
 msgid "Learn More…"
 msgstr "আরও জানুন…"
-
-#: carbonFailurePluginsMessage.message
-msgid "This page asks to use a plugin that can only run in 32-bit mode"
-msgstr ""
-"এই পৃষ্ঠা এমন একটি প্লাগইন ব্যবহার করতে চাচ্ছে যা শুধুমাত্র ৩২-বিট মোডে রান করে"
-
-#: carbonFailurePluginsMessage.restartButton.label
-msgid "Restart in 32-bit mode"
-msgstr "৩২ বিট এ পুরনায় চালু (R)"
-
-#: carbonFailurePluginsMessage.restartButton.accesskey
-msgctxt "carbonFailurePluginsMessage.restartButton.accesskey"
-msgid "R"
-msgstr "R"
 
 #: activatePluginsMessage.message
 msgid "Would you like to activate the plugins on this page?"
@@ -815,6 +801,71 @@ msgctxt "geolocation.learnMore"
 msgid "Learn More…"
 msgstr "আরও তথ্য…"
 
+#: webNotifications.showForSession
+msgid "Show for this session"
+msgstr ""
+
+#: webNotifications.showForSession.accesskey
+msgid "s"
+msgstr ""
+
+#: webNotifications.alwaysShow
+msgid "Always Show Notifications"
+msgstr ""
+
+#: webNotifications.alwaysShow.accesskey
+msgctxt "webNotifications.alwaysShow.accesskey"
+msgid "A"
+msgstr ""
+
+#: webNotifications.neverShow
+msgid "Always Block Notifications"
+msgstr ""
+
+#: webNotifications.neverShow.accesskey
+msgctxt "webNotifications.neverShow.accesskey"
+msgid "N"
+msgstr ""
+
+#: webNotifications.showFromSite
+msgid "Would you like to show notifications from %S?"
+msgstr ""
+
+#. # Pointer lock UI
+#: pointerLock.allow
+msgid "Hide mouse cursor"
+msgstr ""
+
+#: pointerLock.allow.accesskey
+msgid "H"
+msgstr ""
+
+#: pointerLock.alwaysAllow
+msgid "Always allow hiding"
+msgstr ""
+
+#: pointerLock.alwaysAllow.accesskey
+msgctxt "pointerLock.alwaysAllow.accesskey"
+msgid "A"
+msgstr ""
+
+#: pointerLock.neverAllow
+msgid "Never allow hiding"
+msgstr ""
+
+#: pointerLock.neverAllow.accesskey
+msgctxt "pointerLock.neverAllow.accesskey"
+msgid "N"
+msgstr ""
+
+#: pointerLock.title
+msgid "Would you like to allow the mouse cursor to be hidden on %S?"
+msgstr ""
+
+#: pointerLock.autoLock.title
+msgid "%S will hide the mouse cursor."
+msgstr ""
+
 #. # Phishing/Malware Notification Bar.
 #. # LOCALIZATION NOTE (notAForgery, notAnAttack)
 #. # The two button strings will never be shown at the same time, so
@@ -1033,30 +1084,6 @@ msgstr "%S এর জন্য সিদ্ধান্ত মনে রাখ�
 msgid "You've turned on %1$S for %2$S."
 msgstr "আপনি %2$S এর জন্য %1$S চালু করুন।"
 
-#. # LOCALIZATION NOTE (social.removeProvider.label): %S is the name of the social provider
-#: social.removeProvider.label
-#, fuzzy
-msgctxt "social.removeProvider.label"
-msgid "Remove %S"
-msgstr "%S মুছে ফেলুন"
-
-#: social.removeProvider.accesskey
-msgctxt "social.removeProvider.accesskey"
-msgid "R"
-msgstr ""
-
-#. # LOCALIZATION NOTE (social.remove.confirmationLabel): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
-#: social.remove.confirmationLabel
-msgid "Are you sure you want to remove %1$S for %2$S?"
-msgstr "আপনি কি %2$S এর জন্য %1$S অপসারণ করার জন্য নিশ্চিত?"
-
-#. # LOCALIZATION NOTE (social.remove.confirmationOK): %S is the name of the social provider
-#: social.remove.confirmationOK
-#, fuzzy
-msgctxt "social.remove.confirmationOK"
-msgid "Remove %S"
-msgstr "%S মুছে ফেলুন"
-
 #. # LOCALIZATION NOTE (social.turnOff.label): %S is the name of the social provider
 #: social.turnOff.label
 msgid "Turn off %S"
@@ -1090,15 +1117,6 @@ msgstr "পুনরায় চেষ্টা করুন"
 msgctxt "social.error.tryAgain.accesskey"
 msgid "T"
 msgstr "T"
-
-#: social.error.ok.label
-msgid "OK"
-msgstr "ঠিক আছে"
-
-#: social.error.ok.accesskey
-msgctxt "social.error.ok.accesskey"
-msgid "O"
-msgstr "O"
 
 #: social.error.closeSidebar.label
 msgid "Close This Sidebar"
@@ -1220,15 +1238,15 @@ msgstr "D"
 
 #: getUserMedia.sharingCamera.message
 msgid "You are currently sharing your camera with %S."
-msgstr ""
+msgstr "আপনি বর্তমানে %S এর সাথে ক্যামেরা শেয়ার করেছেন"
 
 #: getUserMedia.sharingMicrophone.message
 msgid "You are currently sharing your microphone with %S."
-msgstr ""
+msgstr "আপনি বর্তমানে %S এর সাথে মাইক্রোফোন শেয়ার করেছেন"
 
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
-msgstr ""
+msgstr "আপনি বর্তমানে %S এর সাথে ক্যামেরা এবং মাইক্রোফোন শেয়ার করেছেন"
 
 #. # Mixed Content Blocker Doorhanger Notification
 #. # LOCALIZATION NOTE - %S is brandShortName
@@ -1274,6 +1292,43 @@ msgstr ""
 msgctxt "slowStartup.disableNotificationButton.accesskey"
 msgid "A"
 msgstr ""
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S এই সাইটকে একটি পপ-আপ উইন্ডো খুলতে বাধা দিয়েছে।"
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "%S এই সাইটকে %Sটি পপ-আপ উইন্ডো খুলতে বাধা দিয়েছে।"
+
+#~ msgid "This page asks to use a plugin that can only run in 32-bit mode"
+#~ msgstr ""
+#~ "এই পৃষ্ঠা এমন একটি প্লাগইন ব্যবহার করতে চাচ্ছে যা শুধুমাত্র ৩২-বিট মোডে রান করে"
+
+#~ msgid "Restart in 32-bit mode"
+#~ msgstr "৩২ বিট এ পুরনায় চালু (R)"
+
+#~ msgctxt "carbonFailurePluginsMessage.restartButton.accesskey"
+#~ msgid "R"
+#~ msgstr "R"
+
+#, fuzzy
+#~ msgctxt "social.removeProvider.label"
+#~ msgid "Remove %S"
+#~ msgstr "%S মুছে ফেলুন"
+
+#~ msgid "Are you sure you want to remove %1$S for %2$S?"
+#~ msgstr "আপনি কি %2$S এর জন্য %1$S অপসারণ করার জন্য নিশ্চিত?"
+
+#, fuzzy
+#~ msgctxt "social.remove.confirmationOK"
+#~ msgid "Remove %S"
+#~ msgstr "%S মুছে ফেলুন"
+
+#~ msgid "OK"
+#~ msgstr "ঠিক আছে"
+
+#~ msgctxt "social.error.ok.accesskey"
+#~ msgid "O"
+#~ msgstr "O"
 
 #~ msgid "Click here to activate the %S plugin."
 #~ msgstr "%S প্লাগইন সক্রিয় করতে এখানে ক্লিক করুন।"
