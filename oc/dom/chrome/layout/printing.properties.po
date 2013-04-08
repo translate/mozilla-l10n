@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: 2013-03-03 14:38+0000\n"
 "Last-Translator: Cédric <cvalmary@yahoo.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,12 +15,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0-beta1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1362321505.0\n"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
 #. # Place the word %ld where the page number and number of pages should be
@@ -29,7 +29,7 @@ msgstr ""
 msgid "%1$d"
 msgstr "%1$d"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. ## @page_total The total number of pages
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
@@ -40,17 +40,27 @@ msgstr "%1$d"
 msgid "%1$d of %2$d"
 msgstr "%1$d sus %2$d"
 
+#: noprinter
+#, fuzzy
+msgctxt "noprinter"
+msgid "No printers available."
+msgstr "Cap d'estampaira pas disponibla."
+
+#: PrintToFile
+msgid "Print To File"
+msgstr "Imprimir dins un fichièr"
+
 #: noPrintFilename.title
 msgid "Filename is missing"
 msgstr "Nom de fichièr mancant"
 
 #: noPrintFilename.alert
-msgid "You have selected \"Print To: File\", and the filename is empty!"
+#, fuzzy
+msgid "You have selected \"Print To File\", and the filename is empty!"
 msgstr ""
 "Avètz seleccionat « Imprimir dins un fichièr » mas lo nom del fichièr de "
 "sortida es mancant !"
 
-#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -59,7 +69,6 @@ msgstr ""
 "%S existís ja.\n"
 "Lo volètz remplaçar ?"
 
-#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "Error d'estampatge"
@@ -68,217 +77,246 @@ msgstr "Error d'estampatge"
 msgid "Print Preview Error"
 msgstr "Error de previsualizacion"
 
-#: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid ""
-"There was a problem printing. The printer doesn't support a printing command."
-msgstr ""
-"I a agut un problèma d'estampatge. L'estampaira pòt pas gerir una comanda "
-"d'estampatge."
+#. # Printing error messages.
+#. #LOCALIZATION NOTE: Some of these messages come in pairs, one
+#. # for printing and one for print previewing.  You can remove that
+#. # distinction in your language by removing the entity with the _PP
+#. # suffix; then the entity without a suffix will be used for both.
+#. # You can also add that distinction to any of the messages that don't
+#. # already have it by adding a new entity with a _PP suffix.
+#. #
+#. # For instance, if you delete PERR_GFX_PRINTER_DOC_IS_BUSY_PP, then
+#. # the PERR_GFX_PRINTER_DOC_IS_BUSY message will be used for that error
+#. # condition when print previewing as well as when printing.  If you
+#. # add PERR_FAILURE_PP, then PERR_FAILURE will only be used when
+#. # printing, and PERR_FAILURE_PP will be used under the same conditions
+#. # when print previewing.
+#. #
+#: PERR_FAILURE
+#, fuzzy
+msgid "An error occurred while printing."
+msgstr "Una error desconeguda s'es producha pendent l'estampatge."
 
-#: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid ""
-"There was a problem printing. An instruction that was sent to the printer "
-"failed."
-msgstr ""
-"I a agut un problèma d'estampatge. Una instruccion mandada a l'estampaira a "
-"fracassat."
-
-#: NS_ERROR_GFX_PRINTER_NO_PRINTER_AVAILABLE
-msgid "There was a problem printing. No printer could be found."
-msgstr "I a agut un problèma d'estampatge. Cap d'estampaira pas trobada."
-
-#: NS_ERROR_GFX_PRINTER_NAME_NOT_FOUND
-msgid "There was a problem printing. The printer could not be found."
-msgstr "I a agut un problèma d'estampatge. Impossible de trobar l'estampaira."
-
-#: NS_ERROR_GFX_PRINTER_ACCESS_DENIED
-msgid "There was a problem printing. Access to the printer was denied."
-msgstr "I a agut un problèma d'estampatge. Accès a l'estampaira refusat."
-
-#: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid ""
-"There was a problem printing. Tried to set an invalid printer attribute."
-msgstr "I a agut un problèma d'estampatge. Atribut d'estampatge invalid."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_NOT_READY
-msgid "There was a problem printing. The printer not ready."
-msgstr "I a agut un problèma d'estampatge. L'estampaira es pas prèsta."
-
-#: NS_ERROR_GFX_PRINTER_OUT_OF_PAPER
-msgid "There was a problem printing. The printer is out of paper."
-msgstr "I a agut un problème d'estampatge. L'estampaira a pas pus de papièr."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_IO_ERROR
-msgid "There was a problem printing. Printer I/O error."
-msgstr ""
-"I a agut un problèma d'estampatge. Error de dintrada/sortida de l'estampaira"
-
-#: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
-msgid "There was a problem printing. The output file could not be opened."
-msgstr ""
-"I a agut un problèma d'estampatge. Impossible de dobrir lo fichièr de "
-"sortida."
-
-#: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
-msgid "There was an error writing the printing output file."
-msgstr ""
-"I a agut un problèma al moment d'escriure lo fichièr de sortida d'estampatge."
-
-#: NS_ERROR_GFX_PRINTER_PRINTPREVIEW
-msgid "There must be at least one printer available to show Print Preview."
-msgstr ""
-"I deu aver al mens una imprimenta disponibla per visualizar l'apercebut "
-"abans impression."
-
-#: NS_ERROR_UNEXPECTED
-msgid "There was an unexpected problem when printing."
-msgstr "I a agut un problèma inesperat al moment d'estampar."
-
-#: NS_ERROR_OUT_OF_MEMORY
-msgid "There was a problem printing. There is not enough free memory to print."
-msgstr ""
-"I a agut un problèma d'impression. I a pas pro de memòria liura per imprimir."
-
-#: NS_ERROR_NOT_IMPLEMENTED
-msgid "Some printing functionality is not implemented yet."
-msgstr "D'unas foncionalitats d'estampatge son pas encara implementadas."
-
-#: NS_ERROR_NOT_AVAILABLE
-msgid "Not available"
-msgstr "Pas disponible"
-
-#: NS_ERROR_ABORT
+#: PERR_ABORT
 msgid "The print job was aborted, or canceled."
 msgstr "Lo trabalh d'estampatge es estat arrestat o anullat."
 
-#: NS_ERROR_FAILURE
-msgid "An unknown error occurred while printing."
-msgstr "Una error desconeguda s'es producha pendent l'estampatge."
-
-#: NS_ERROR_GFX_PRINTER_STARTDOC
-msgid "Printing failed when starting the document."
-msgstr "L'estampatge a pas capitat al començament del document."
-
-#: NS_ERROR_GFX_PRINTER_ENDDOC
-msgid "Printing failed when completing the document."
-msgstr "L'estampatge a pas capitat a la fin del document."
-
-#: NS_ERROR_GFX_PRINTER_STARTPAGE
-msgid "Printing failed when starting the page."
-msgstr "L'estampatge a pas capitat en debuta de pagina."
-
-#: NS_ERROR_GFX_PRINTER_ENDPAGE
-msgid "Printing failed when completing the page."
-msgstr "L'estampatge a pas capitat en fin de pagina."
-
-#: NS_ERROR_GFX_PRINTER_PRINT_WHILE_PREVIEW
-msgid "You cannot print while in print preview."
-msgstr "Podètz pas imprimir quand previsualizatz."
-
-#: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the paper size you specified is not "
-"supported by your printer."
+#: PERR_NOT_AVAILABLE
+msgid "Some printing functionality is not currently available."
 msgstr ""
-"I a agut un problèma d'impression perque la talha de papièr qu'avètz "
-"especificada es pas suportada per vòstra imprimenta."
 
-#: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the page orientation you specified is "
-"not supported by your printer."
+#: PERR_NOT_IMPLEMENTED
+msgid "Some printing functionality is not implemented yet."
+msgstr "D'unas foncionalitats d'estampatge son pas encara implementadas."
+
+#: PERR_OUT_OF_MEMORY
+msgid "There is not enough free memory to print."
 msgstr ""
-"I a agut un problèma d'impression perque l'orientacion del papièr qu'avètz "
-"especificada es pas suportada per vòstra imprimenta."
 
-#: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the print job requires color "
-"capabilities that your printer does not support."
-msgstr ""
-"I a agut un problèma d'impression perque lo trabalh d'impression a besonh de "
-"la color e que vòstra imprimenta ne pòt pas far."
+#: PERR_UNEXPECTED
+#, fuzzy
+msgid "There was an unexpected problem while printing."
+msgstr "I a agut un problèma inesperat al moment d'estampar."
 
-#: NS_ERROR_GFX_PRINTER_TOO_MANY_COPIES
-msgid "There was a problem printing because you requested too many copies."
-msgstr ""
-"I a agut un problèma d'estampatge perque avètz demandat tròp de còpias."
-
-#: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid ""
-"There was a problem printing. The printer driver is not properly configured."
-msgstr ""
-"I a agut un problèma d'estampatge. Lo pilòt d'estampatge es pas configurat "
-"corrèctament."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid ""
-"The browser cannot print preview right now.\n"
-"Please try again when the page has finished loading."
-msgstr ""
-"Lo navigador pòt pas previsualizar pel moment.\n"
-"Poiretz ensajar tornamai quand la pagina serà cargada completament."
-
-#: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid ""
-"The page was replaced while you were trying to print.\n"
-"Please try again."
-msgstr ""
-"La pagina a cambiat mentre qu'eretz a l'estampar.\n"
-"Tornatz començar."
-
-#: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
-msgstr ""
-"Siá los dialògs enfichables se son pas installats coma cal,\n"
-"siá aquesta bóstia d'aisinas graficas supòrta pas pus los dialògs "
-"d'estampatge natius."
-
-#: NS_ERROR_GFX_NO_PRINTROMPTSERVICE
-msgid "The Printing Prompt Service is missing."
-msgstr "Lo servici de demanda d'estampatge es absent."
-
-#: NS_ERROR_GFX_PRINTER_NO_XUL
-msgid "We are unable to Print or Print Preview this page."
-msgstr ""
-"Impossible d'imprimir o de realizar un apercebut abans impression d'aquesta "
-"pagina."
-
-#: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the plex mode you specified is not "
-"supported by your printer."
-msgstr ""
-"I a agut un problèma d'impression perque lo mòde de plexatge qu'avètz "
-"especificat es pas suportat per vòstra imprimenta."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY
-msgid "The browser cannot print the document while it is being loaded."
-msgstr "Lo navigador pòt pas imprimir lo document pendent son cargament."
-
-#: NS_ERROR_GFX_PRINTING_NOT_IMPLEMENTED
-msgid "Printing is not implemented."
-msgstr "L'estampatge es pas implementat."
-
-#: NS_ERROR_GFX_COULD_NOT_LOAD_PRINT_MODULE
-msgid "The requested print module cannot be loaded."
-msgstr "Lo modul d'estampatge demandat pòt pas èsser cargat."
-
-#: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the resolution/quality mode you "
-"specified is not supported by your printer."
-msgstr ""
-"I a agut un problèma al moment de l'impression perque la resolucion/qualitat "
-"qu'avètz causida es pas suportada per vòstra imprimenta."
-
-#. # No printers available
-#: noprinter
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE
+#, fuzzy
+msgctxt "PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE"
 msgid "No printers available."
 msgstr "Cap d'estampaira pas disponibla."
 
-#: PrintToFile
-msgid "Print To File"
-msgstr "Imprimir dins un fichièr"
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE_PP
+msgid "No printers available, cannot show print preview."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NAME_NOT_FOUND
+msgid "The selected printer could not be found."
+msgstr ""
+
+#: PERR_GFX_PRINTER_COULD_NOT_OPEN_FILE
+msgid "Failed to open output file for print to file."
+msgstr ""
+
+#: PERR_GFX_PRINTER_STARTDOC
+#, fuzzy
+msgid "Printing failed while starting the print job."
+msgstr "L'estampatge a pas capitat en debuta de pagina."
+
+#: PERR_GFX_PRINTER_ENDDOC
+#, fuzzy
+msgid "Printing failed while completing the print job."
+msgstr "L'estampatge a pas capitat en fin de pagina."
+
+#: PERR_GFX_PRINTER_STARTPAGE
+#, fuzzy
+msgid "Printing failed while starting a new page."
+msgstr "L'estampatge a pas capitat en debuta de pagina."
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY
+msgid "Cannot print this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY_PP
+msgid "Cannot print-preview this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NO_XUL
+msgid "Printing XUL documents is not supported."
+msgstr ""
+
+#~ msgid ""
+#~ "There was a problem printing. The printer doesn't support a printing "
+#~ "command."
+#~ msgstr ""
+#~ "I a agut un problèma d'estampatge. L'estampaira pòt pas gerir una comanda "
+#~ "d'estampatge."
+
+#~ msgid ""
+#~ "There was a problem printing. An instruction that was sent to the printer "
+#~ "failed."
+#~ msgstr ""
+#~ "I a agut un problèma d'estampatge. Una instruccion mandada a l'estampaira "
+#~ "a fracassat."
+
+#~ msgid "There was a problem printing. No printer could be found."
+#~ msgstr "I a agut un problèma d'estampatge. Cap d'estampaira pas trobada."
+
+#~ msgid "There was a problem printing. The printer could not be found."
+#~ msgstr ""
+#~ "I a agut un problèma d'estampatge. Impossible de trobar l'estampaira."
+
+#~ msgid "There was a problem printing. Access to the printer was denied."
+#~ msgstr "I a agut un problèma d'estampatge. Accès a l'estampaira refusat."
+
+#~ msgid ""
+#~ "There was a problem printing. Tried to set an invalid printer attribute."
+#~ msgstr "I a agut un problèma d'estampatge. Atribut d'estampatge invalid."
+
+#~ msgid "There was a problem printing. The printer not ready."
+#~ msgstr "I a agut un problèma d'estampatge. L'estampaira es pas prèsta."
+
+#~ msgid "There was a problem printing. The printer is out of paper."
+#~ msgstr ""
+#~ "I a agut un problème d'estampatge. L'estampaira a pas pus de papièr."
+
+#~ msgid "There was a problem printing. Printer I/O error."
+#~ msgstr ""
+#~ "I a agut un problèma d'estampatge. Error de dintrada/sortida de "
+#~ "l'estampaira"
+
+#~ msgid "There was a problem printing. The output file could not be opened."
+#~ msgstr ""
+#~ "I a agut un problèma d'estampatge. Impossible de dobrir lo fichièr de "
+#~ "sortida."
+
+#~ msgid "There was an error writing the printing output file."
+#~ msgstr ""
+#~ "I a agut un problèma al moment d'escriure lo fichièr de sortida "
+#~ "d'estampatge."
+
+#~ msgid "There must be at least one printer available to show Print Preview."
+#~ msgstr ""
+#~ "I deu aver al mens una imprimenta disponibla per visualizar l'apercebut "
+#~ "abans impression."
+
+#~ msgid ""
+#~ "There was a problem printing. There is not enough free memory to print."
+#~ msgstr ""
+#~ "I a agut un problèma d'impression. I a pas pro de memòria liura per "
+#~ "imprimir."
+
+#~ msgid "Not available"
+#~ msgstr "Pas disponible"
+
+#~ msgid "Printing failed when starting the document."
+#~ msgstr "L'estampatge a pas capitat al començament del document."
+
+#~ msgid "Printing failed when completing the document."
+#~ msgstr "L'estampatge a pas capitat a la fin del document."
+
+#~ msgid "You cannot print while in print preview."
+#~ msgstr "Podètz pas imprimir quand previsualizatz."
+
+#~ msgid ""
+#~ "There was a problem printing because the paper size you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "I a agut un problèma d'impression perque la talha de papièr qu'avètz "
+#~ "especificada es pas suportada per vòstra imprimenta."
+
+#~ msgid ""
+#~ "There was a problem printing because the page orientation you specified "
+#~ "is not supported by your printer."
+#~ msgstr ""
+#~ "I a agut un problèma d'impression perque l'orientacion del papièr "
+#~ "qu'avètz especificada es pas suportada per vòstra imprimenta."
+
+#~ msgid ""
+#~ "There was a problem printing because the print job requires color "
+#~ "capabilities that your printer does not support."
+#~ msgstr ""
+#~ "I a agut un problèma d'impression perque lo trabalh d'impression a besonh "
+#~ "de la color e que vòstra imprimenta ne pòt pas far."
+
+#~ msgid "There was a problem printing because you requested too many copies."
+#~ msgstr ""
+#~ "I a agut un problèma d'estampatge perque avètz demandat tròp de còpias."
+
+#~ msgid ""
+#~ "There was a problem printing. The printer driver is not properly "
+#~ "configured."
+#~ msgstr ""
+#~ "I a agut un problèma d'estampatge. Lo pilòt d'estampatge es pas "
+#~ "configurat corrèctament."
+
+#~ msgid ""
+#~ "The browser cannot print preview right now.\n"
+#~ "Please try again when the page has finished loading."
+#~ msgstr ""
+#~ "Lo navigador pòt pas previsualizar pel moment.\n"
+#~ "Poiretz ensajar tornamai quand la pagina serà cargada completament."
+
+#~ msgid ""
+#~ "The page was replaced while you were trying to print.\n"
+#~ "Please try again."
+#~ msgstr ""
+#~ "La pagina a cambiat mentre qu'eretz a l'estampar.\n"
+#~ "Tornatz començar."
+
+#~ msgid ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+#~ msgstr ""
+#~ "Siá los dialògs enfichables se son pas installats coma cal,\n"
+#~ "siá aquesta bóstia d'aisinas graficas supòrta pas pus los dialògs "
+#~ "d'estampatge natius."
+
+#~ msgid "The Printing Prompt Service is missing."
+#~ msgstr "Lo servici de demanda d'estampatge es absent."
+
+#~ msgid "We are unable to Print or Print Preview this page."
+#~ msgstr ""
+#~ "Impossible d'imprimir o de realizar un apercebut abans impression "
+#~ "d'aquesta pagina."
+
+#~ msgid ""
+#~ "There was a problem printing because the plex mode you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "I a agut un problèma d'impression perque lo mòde de plexatge qu'avètz "
+#~ "especificat es pas suportat per vòstra imprimenta."
+
+#~ msgid "The browser cannot print the document while it is being loaded."
+#~ msgstr "Lo navigador pòt pas imprimir lo document pendent son cargament."
+
+#~ msgid "Printing is not implemented."
+#~ msgstr "L'estampatge es pas implementat."
+
+#~ msgid "The requested print module cannot be loaded."
+#~ msgstr "Lo modul d'estampatge demandat pòt pas èsser cargat."
+
+#~ msgid ""
+#~ "There was a problem printing because the resolution/quality mode you "
+#~ "specified is not supported by your printer."
+#~ msgstr ""
+#~ "I a agut un problèma al moment de l'impression perque la resolucion/"
+#~ "qualitat qu'avètz causida es pas suportada per vòstra imprimenta."
