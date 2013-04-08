@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,11 +14,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
 #. # Place the word %ld where the page number and number of pages should be
@@ -27,7 +27,7 @@ msgstr ""
 msgid "%1$d"
 msgstr "%1$d"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. ## @page_total The total number of pages
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
@@ -38,15 +38,25 @@ msgstr "%1$d"
 msgid "%1$d of %2$d"
 msgstr "%1$d  من %2$d"
 
+#: noprinter
+#, fuzzy
+msgctxt "noprinter"
+msgid "No printers available."
+msgstr "لا تتوفّر طابعات."
+
+#: PrintToFile
+msgid "Print To File"
+msgstr "اطبع إلى ملف"
+
 #: noPrintFilename.title
 msgid "Filename is missing"
 msgstr "اسم الملفّ مفقود"
 
 #: noPrintFilename.alert
-msgid "You have selected \"Print To: File\", and the filename is empty!"
+#, fuzzy
+msgid "You have selected \"Print To File\", and the filename is empty!"
 msgstr "اخترت \"اطبع إلى ملفّ\"، و اسم الملفّ فارغ!"
 
-#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -55,7 +65,6 @@ msgstr ""
 "‏%S موجودٌ مسبقًا.\n"
 "أتريد استبداله؟"
 
-#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "خطأ طابعة"
@@ -64,192 +73,217 @@ msgstr "خطأ طابعة"
 msgid "Print Preview Error"
 msgstr "خطأ في معاينة الطّباعة"
 
-#: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid ""
-"There was a problem printing. The printer doesn't support a printing command."
-msgstr "حدثت مشكلة في الطّباعة. لا تدعم الطّابعة أمر طباعة."
+#. # Printing error messages.
+#. #LOCALIZATION NOTE: Some of these messages come in pairs, one
+#. # for printing and one for print previewing.  You can remove that
+#. # distinction in your language by removing the entity with the _PP
+#. # suffix; then the entity without a suffix will be used for both.
+#. # You can also add that distinction to any of the messages that don't
+#. # already have it by adding a new entity with a _PP suffix.
+#. #
+#. # For instance, if you delete PERR_GFX_PRINTER_DOC_IS_BUSY_PP, then
+#. # the PERR_GFX_PRINTER_DOC_IS_BUSY message will be used for that error
+#. # condition when print previewing as well as when printing.  If you
+#. # add PERR_FAILURE_PP, then PERR_FAILURE will only be used when
+#. # printing, and PERR_FAILURE_PP will be used under the same conditions
+#. # when print previewing.
+#. #
+#: PERR_FAILURE
+#, fuzzy
+msgid "An error occurred while printing."
+msgstr "حدث خطأ غير معروف أثناء الطّباعة."
 
-#: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid ""
-"There was a problem printing. An instruction that was sent to the printer "
-"failed."
-msgstr "حدثت مشكلة في الطّباعة. فشلت تعليمة أُرسلت إلى الطّابعة."
-
-#: NS_ERROR_GFX_PRINTER_NO_PRINTER_AVAILABLE
-msgid "There was a problem printing. No printer could be found."
-msgstr "حدثت مشكلة في الطّباعة. تعذّر إيجاد طابعة."
-
-#: NS_ERROR_GFX_PRINTER_NAME_NOT_FOUND
-msgid "There was a problem printing. The printer could not be found."
-msgstr "حدثت مشكلة في الطّباعة. تعذّر إيجاد الطّابعة."
-
-#: NS_ERROR_GFX_PRINTER_ACCESS_DENIED
-msgid "There was a problem printing. Access to the printer was denied."
-msgstr "حدثت مشكلة في الطّباعة. رُفض الوصول إلى الطّابعة."
-
-#: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid ""
-"There was a problem printing. Tried to set an invalid printer attribute."
-msgstr "حدثت مشكلة في الطّباعة. محاولة للوصول لخاصّة طابعة غير صالحة."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_NOT_READY
-msgid "There was a problem printing. The printer not ready."
-msgstr "حدثت مشكلة في الطّباعة. الطّابعة غير جاهزة."
-
-#: NS_ERROR_GFX_PRINTER_OUT_OF_PAPER
-msgid "There was a problem printing. The printer is out of paper."
-msgstr "حدثت مشكلة في الطّباعة. انتهى ورق الطّابعة."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_IO_ERROR
-msgid "There was a problem printing. Printer I/O error."
-msgstr "حدثت مشكلة في الطّباعة. خطأ دخْل/خرْج في الطّابعة."
-
-#: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
-msgid "There was a problem printing. The output file could not be opened."
-msgstr "حدثت مشكلة في الطّباعة. تعذّر فتح ملفّ الخرْج."
-
-#: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
-msgid "There was an error writing the printing output file."
-msgstr "حدث خطأ في كتابة ملفّ خرْج الطّباعة."
-
-#: NS_ERROR_GFX_PRINTER_PRINTPREVIEW
-msgid "There must be at least one printer available to show Print Preview."
-msgstr "يجب وجود طابعة واحدة على الأقلّ لعرض معاينة الطّباعة."
-
-#: NS_ERROR_UNEXPECTED
-msgid "There was an unexpected problem when printing."
-msgstr "حدثت مشكلة غير متوقّعة في الطّباعة."
-
-#: NS_ERROR_OUT_OF_MEMORY
-msgid "There was a problem printing. There is not enough free memory to print."
-msgstr "حدثت مشكلة في الطّباعة. لا توجد ذاكرة خالية كافية للطّباعة."
-
-#: NS_ERROR_NOT_IMPLEMENTED
-msgid "Some printing functionality is not implemented yet."
-msgstr "بعض وظيفيّة الطباعة غير منفّذ."
-
-#: NS_ERROR_NOT_AVAILABLE
-msgid "Not available"
-msgstr "غير متوفّر"
-
-#: NS_ERROR_ABORT
+#: PERR_ABORT
 msgid "The print job was aborted, or canceled."
 msgstr "أُحبط أو أُلغي عمل الطّباعة."
 
-#: NS_ERROR_FAILURE
-msgid "An unknown error occurred while printing."
-msgstr "حدث خطأ غير معروف أثناء الطّباعة."
-
-#: NS_ERROR_GFX_PRINTER_STARTDOC
-msgid "Printing failed when starting the document."
-msgstr "فشلت الطّباعة عند بدء المستند."
-
-#: NS_ERROR_GFX_PRINTER_ENDDOC
-msgid "Printing failed when completing the document."
-msgstr "فشلت الطّباعة عند إكمال المستند."
-
-#: NS_ERROR_GFX_PRINTER_STARTPAGE
-msgid "Printing failed when starting the page."
-msgstr "فشلت الطّباعة عند بدء الصّفحة."
-
-#: NS_ERROR_GFX_PRINTER_ENDPAGE
-msgid "Printing failed when completing the page."
-msgstr "فشلت الطّباعة عند إنهاء الصّفحة."
-
-#: NS_ERROR_GFX_PRINTER_PRINT_WHILE_PREVIEW
-msgid "You cannot print while in print preview."
-msgstr "لا يُمكنك أن تطبع أثناء معاينة الطّباعة."
-
-#: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the paper size you specified is not "
-"supported by your printer."
-msgstr "حدثت مشكلة في الطّباعة لأن حجم الورق الذي حدّدته غير مدعوم من طابعتك."
-
-#: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the page orientation you specified is "
-"not supported by your printer."
-msgstr "حدثت مشكلة في الطّباعة لأن اتّجاه الورق الذي حدّدته لا تدعمه طابعتك."
-
-#: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the print job requires color "
-"capabilities that your printer does not support."
+#: PERR_NOT_AVAILABLE
+msgid "Some printing functionality is not currently available."
 msgstr ""
-"حدثت مشكلة في الطّباعة لأن عمل الطّباعة يتطلّب إمكانيّات لونيّة لا تدعمها طابعتك."
 
-#: NS_ERROR_GFX_PRINTER_TOO_MANY_COPIES
-msgid "There was a problem printing because you requested too many copies."
-msgstr "حدثت مشكلة في الطّباعة لأنك طلبت عددًا كبيرًا جدًّا من النسخ."
+#: PERR_NOT_IMPLEMENTED
+msgid "Some printing functionality is not implemented yet."
+msgstr "بعض وظيفيّة الطباعة غير منفّذ."
 
-#: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid ""
-"There was a problem printing. The printer driver is not properly configured."
-msgstr "حدثت مشكلة في الطّباعة. برنامج تشغيل الطّابعة غير معدّ بشكل جيّد."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid ""
-"The browser cannot print preview right now.\n"
-"Please try again when the page has finished loading."
+#: PERR_OUT_OF_MEMORY
+msgid "There is not enough free memory to print."
 msgstr ""
-"لا يستطع المتصفّح معاينة الطّباعة الآن.\n"
-"الرّجاء المحاولة مرّة ثانية عند انتهاء تحميل الصّفحة."
 
-#: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid ""
-"The page was replaced while you were trying to print.\n"
-"Please try again."
-msgstr ""
-"استبدلت الصّفحة أثناء محاولتك طباعتها.\n"
-"الرّجاء المحاولة مرّة أخرى."
+#: PERR_UNEXPECTED
+#, fuzzy
+msgid "There was an unexpected problem while printing."
+msgstr "حدثت مشكلة غير متوقّعة في الطّباعة."
 
-#: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
-msgstr ""
-"إمّا أن الحوارات القابلة للإلحاق غير مثبّتة بشكل جيّد\n"
-"أو أنّ عدّة GFX لا تدعم الحوارات الأصليّة بعد الآن"
-
-#: NS_ERROR_GFX_NO_PRINTROMPTSERVICE
-msgid "The Printing Prompt Service is missing."
-msgstr "خدمة طلب الطّباعة مفقودة."
-
-#: NS_ERROR_GFX_PRINTER_NO_XUL
-msgid "We are unable to Print or Print Preview this page."
-msgstr "لم نتمكّن من طباعة أو معاينة هذه الصّفحة للطّباعة."
-
-#: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the plex mode you specified is not "
-"supported by your printer."
-msgstr "حدثت مشكلة في الطّباعة لأنّ وضع بليكس الذي حدّدته لا تدعمه طابعتك."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY
-msgid "The browser cannot print the document while it is being loaded."
-msgstr "لا يستطيع المتصفّح أن يطبع المستند أثناء تحميله."
-
-#: NS_ERROR_GFX_PRINTING_NOT_IMPLEMENTED
-msgid "Printing is not implemented."
-msgstr "الطّباعة غير منفّذة."
-
-#: NS_ERROR_GFX_COULD_NOT_LOAD_PRINT_MODULE
-msgid "The requested print module cannot be loaded."
-msgstr "تعذّر تحميل وحدة الطّباعة المطلوبة."
-
-#: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the resolution/quality mode you "
-"specified is not supported by your printer."
-msgstr ""
-"هناك مشكلة في الطّباعة لأن وضع الدّقّة أو الجّودة المحدد غير مدعوم من الطّابعة."
-
-#. # No printers available
-#: noprinter
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE
+#, fuzzy
+msgctxt "PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE"
 msgid "No printers available."
 msgstr "لا تتوفّر طابعات."
 
-#: PrintToFile
-msgid "Print To File"
-msgstr "اطبع إلى ملف"
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE_PP
+msgid "No printers available, cannot show print preview."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NAME_NOT_FOUND
+msgid "The selected printer could not be found."
+msgstr ""
+
+#: PERR_GFX_PRINTER_COULD_NOT_OPEN_FILE
+msgid "Failed to open output file for print to file."
+msgstr ""
+
+#: PERR_GFX_PRINTER_STARTDOC
+#, fuzzy
+msgid "Printing failed while starting the print job."
+msgstr "فشلت الطّباعة عند بدء الصّفحة."
+
+#: PERR_GFX_PRINTER_ENDDOC
+#, fuzzy
+msgid "Printing failed while completing the print job."
+msgstr "فشلت الطّباعة عند إنهاء الصّفحة."
+
+#: PERR_GFX_PRINTER_STARTPAGE
+#, fuzzy
+msgid "Printing failed while starting a new page."
+msgstr "فشلت الطّباعة عند بدء الصّفحة."
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY
+msgid "Cannot print this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY_PP
+msgid "Cannot print-preview this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NO_XUL
+msgid "Printing XUL documents is not supported."
+msgstr ""
+
+#~ msgid ""
+#~ "There was a problem printing. The printer doesn't support a printing "
+#~ "command."
+#~ msgstr "حدثت مشكلة في الطّباعة. لا تدعم الطّابعة أمر طباعة."
+
+#~ msgid ""
+#~ "There was a problem printing. An instruction that was sent to the printer "
+#~ "failed."
+#~ msgstr "حدثت مشكلة في الطّباعة. فشلت تعليمة أُرسلت إلى الطّابعة."
+
+#~ msgid "There was a problem printing. No printer could be found."
+#~ msgstr "حدثت مشكلة في الطّباعة. تعذّر إيجاد طابعة."
+
+#~ msgid "There was a problem printing. The printer could not be found."
+#~ msgstr "حدثت مشكلة في الطّباعة. تعذّر إيجاد الطّابعة."
+
+#~ msgid "There was a problem printing. Access to the printer was denied."
+#~ msgstr "حدثت مشكلة في الطّباعة. رُفض الوصول إلى الطّابعة."
+
+#~ msgid ""
+#~ "There was a problem printing. Tried to set an invalid printer attribute."
+#~ msgstr "حدثت مشكلة في الطّباعة. محاولة للوصول لخاصّة طابعة غير صالحة."
+
+#~ msgid "There was a problem printing. The printer not ready."
+#~ msgstr "حدثت مشكلة في الطّباعة. الطّابعة غير جاهزة."
+
+#~ msgid "There was a problem printing. The printer is out of paper."
+#~ msgstr "حدثت مشكلة في الطّباعة. انتهى ورق الطّابعة."
+
+#~ msgid "There was a problem printing. Printer I/O error."
+#~ msgstr "حدثت مشكلة في الطّباعة. خطأ دخْل/خرْج في الطّابعة."
+
+#~ msgid "There was a problem printing. The output file could not be opened."
+#~ msgstr "حدثت مشكلة في الطّباعة. تعذّر فتح ملفّ الخرْج."
+
+#~ msgid "There was an error writing the printing output file."
+#~ msgstr "حدث خطأ في كتابة ملفّ خرْج الطّباعة."
+
+#~ msgid "There must be at least one printer available to show Print Preview."
+#~ msgstr "يجب وجود طابعة واحدة على الأقلّ لعرض معاينة الطّباعة."
+
+#~ msgid ""
+#~ "There was a problem printing. There is not enough free memory to print."
+#~ msgstr "حدثت مشكلة في الطّباعة. لا توجد ذاكرة خالية كافية للطّباعة."
+
+#~ msgid "Not available"
+#~ msgstr "غير متوفّر"
+
+#~ msgid "Printing failed when starting the document."
+#~ msgstr "فشلت الطّباعة عند بدء المستند."
+
+#~ msgid "Printing failed when completing the document."
+#~ msgstr "فشلت الطّباعة عند إكمال المستند."
+
+#~ msgid "You cannot print while in print preview."
+#~ msgstr "لا يُمكنك أن تطبع أثناء معاينة الطّباعة."
+
+#~ msgid ""
+#~ "There was a problem printing because the paper size you specified is not "
+#~ "supported by your printer."
+#~ msgstr "حدثت مشكلة في الطّباعة لأن حجم الورق الذي حدّدته غير مدعوم من طابعتك."
+
+#~ msgid ""
+#~ "There was a problem printing because the page orientation you specified "
+#~ "is not supported by your printer."
+#~ msgstr "حدثت مشكلة في الطّباعة لأن اتّجاه الورق الذي حدّدته لا تدعمه طابعتك."
+
+#~ msgid ""
+#~ "There was a problem printing because the print job requires color "
+#~ "capabilities that your printer does not support."
+#~ msgstr ""
+#~ "حدثت مشكلة في الطّباعة لأن عمل الطّباعة يتطلّب إمكانيّات لونيّة لا تدعمها "
+#~ "طابعتك."
+
+#~ msgid "There was a problem printing because you requested too many copies."
+#~ msgstr "حدثت مشكلة في الطّباعة لأنك طلبت عددًا كبيرًا جدًّا من النسخ."
+
+#~ msgid ""
+#~ "There was a problem printing. The printer driver is not properly "
+#~ "configured."
+#~ msgstr "حدثت مشكلة في الطّباعة. برنامج تشغيل الطّابعة غير معدّ بشكل جيّد."
+
+#~ msgid ""
+#~ "The browser cannot print preview right now.\n"
+#~ "Please try again when the page has finished loading."
+#~ msgstr ""
+#~ "لا يستطع المتصفّح معاينة الطّباعة الآن.\n"
+#~ "الرّجاء المحاولة مرّة ثانية عند انتهاء تحميل الصّفحة."
+
+#~ msgid ""
+#~ "The page was replaced while you were trying to print.\n"
+#~ "Please try again."
+#~ msgstr ""
+#~ "استبدلت الصّفحة أثناء محاولتك طباعتها.\n"
+#~ "الرّجاء المحاولة مرّة أخرى."
+
+#~ msgid ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+#~ msgstr ""
+#~ "إمّا أن الحوارات القابلة للإلحاق غير مثبّتة بشكل جيّد\n"
+#~ "أو أنّ عدّة GFX لا تدعم الحوارات الأصليّة بعد الآن"
+
+#~ msgid "The Printing Prompt Service is missing."
+#~ msgstr "خدمة طلب الطّباعة مفقودة."
+
+#~ msgid "We are unable to Print or Print Preview this page."
+#~ msgstr "لم نتمكّن من طباعة أو معاينة هذه الصّفحة للطّباعة."
+
+#~ msgid ""
+#~ "There was a problem printing because the plex mode you specified is not "
+#~ "supported by your printer."
+#~ msgstr "حدثت مشكلة في الطّباعة لأنّ وضع بليكس الذي حدّدته لا تدعمه طابعتك."
+
+#~ msgid "The browser cannot print the document while it is being loaded."
+#~ msgstr "لا يستطيع المتصفّح أن يطبع المستند أثناء تحميله."
+
+#~ msgid "Printing is not implemented."
+#~ msgstr "الطّباعة غير منفّذة."
+
+#~ msgid "The requested print module cannot be loaded."
+#~ msgstr "تعذّر تحميل وحدة الطّباعة المطلوبة."
+
+#~ msgid ""
+#~ "There was a problem printing because the resolution/quality mode you "
+#~ "specified is not supported by your printer."
+#~ msgstr ""
+#~ "هناك مشكلة في الطّباعة لأن وضع الدّقّة أو الجّودة المحدد غير مدعوم من الطّابعة."
