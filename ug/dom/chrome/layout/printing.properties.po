@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: printing\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: 2013-03-02 15:45+0600\n"
 "Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -14,11 +14,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
 #. # Place the word %ld where the page number and number of pages should be
@@ -27,7 +27,7 @@ msgstr ""
 msgid "%1$d"
 msgstr "%1$d"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. ## @page_total The total number of pages
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
@@ -38,15 +38,25 @@ msgstr "%1$d"
 msgid "%1$d of %2$d"
 msgstr "%1$d- بەت جەمئى %2$d بەت"
 
+#: noprinter
+#, fuzzy
+msgctxt "noprinter"
+msgid "No printers available."
+msgstr "پرىنتېر مەۋجۇت ئەمەس."
+
+#: PrintToFile
+msgid "Print To File"
+msgstr "ھۆججەتكە باس"
+
 #: noPrintFilename.title
 msgid "Filename is missing"
 msgstr "ھۆججەت نامى يوقالغان"
 
 #: noPrintFilename.alert
-msgid "You have selected \"Print To: File\", and the filename is empty!"
+#, fuzzy
+msgid "You have selected \"Print To File\", and the filename is empty!"
 msgstr "«ھۆججەتكە باس» نى تاللىدىڭىز، ئەمما ھۆججەت ئاتى بوش!"
 
-#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -55,7 +65,6 @@ msgstr ""
 "%S مەۋجۇد.\n"
 "ئۇنى قاپلىۋېتەمسىز؟"
 
-#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "پرىنتېر خاتالىقى"
@@ -64,205 +73,231 @@ msgstr "پرىنتېر خاتالىقى"
 msgid "Print Preview Error"
 msgstr "بېسىشنى ئالدىن كۆزىتىش خاتالىقى"
 
-#: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid ""
-"There was a problem printing. The printer doesn't support a printing command."
-msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېر بېسىش بۇيرۇقىدىن بىرنى قوللىمايدۇ."
+#. # Printing error messages.
+#. #LOCALIZATION NOTE: Some of these messages come in pairs, one
+#. # for printing and one for print previewing.  You can remove that
+#. # distinction in your language by removing the entity with the _PP
+#. # suffix; then the entity without a suffix will be used for both.
+#. # You can also add that distinction to any of the messages that don't
+#. # already have it by adding a new entity with a _PP suffix.
+#. #
+#. # For instance, if you delete PERR_GFX_PRINTER_DOC_IS_BUSY_PP, then
+#. # the PERR_GFX_PRINTER_DOC_IS_BUSY message will be used for that error
+#. # condition when print previewing as well as when printing.  If you
+#. # add PERR_FAILURE_PP, then PERR_FAILURE will only be used when
+#. # printing, and PERR_FAILURE_PP will be used under the same conditions
+#. # when print previewing.
+#. #
+#: PERR_FAILURE
+#, fuzzy
+msgid "An error occurred while printing."
+msgstr "بېسىشتا نامەلۇم خاتالىق يۈز بەردى."
 
-#: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid ""
-"There was a problem printing. An instruction that was sent to the printer "
-"failed."
-msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېرغا بۇيرۇق يوللاش مەغلۇپ بولدى."
-
-#: NS_ERROR_GFX_PRINTER_NO_PRINTER_AVAILABLE
-msgid "There was a problem printing. No printer could be found."
-msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېرنى تاپالمىدى."
-
-#: NS_ERROR_GFX_PRINTER_NAME_NOT_FOUND
-msgid "There was a problem printing. The printer could not be found."
-msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېرنى تاپالمىدى."
-
-#: NS_ERROR_GFX_PRINTER_ACCESS_DENIED
-msgid "There was a problem printing. Access to the printer was denied."
-msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېرنى زىيارەت قىلىش رەت قىلىندى."
-
-#: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid ""
-"There was a problem printing. Tried to set an invalid printer attribute."
-msgstr "باسقاندا مەسىلە كۆرۈلدى. ئىناۋەتلىك پرىنتېر خاسلىقىنى تەڭشەشنى سىناڭ."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_NOT_READY
-msgid "There was a problem printing. The printer not ready."
-msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېر تېخى تەييارلانمىدى."
-
-#: NS_ERROR_GFX_PRINTER_OUT_OF_PAPER
-msgid "There was a problem printing. The printer is out of paper."
-msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېردا قەغەز يوق."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_IO_ERROR
-msgid "There was a problem printing. Printer I/O error."
-msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېر I/O خاتالىقى."
-
-#: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
-msgid "There was a problem printing. The output file could not be opened."
-msgstr "باسقاندا مەسىلە كۆرۈلدى. چىقىرىش ھۆججىتىنى ئاچالمىدى."
-
-#: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
-msgid "There was an error writing the printing output file."
-msgstr "بىېسىپ چىقىرىش ھۆججىتىگە يېزىشتا خاتالىق كۆرۈلدى."
-
-#: NS_ERROR_GFX_PRINTER_PRINTPREVIEW
-msgid "There must be at least one printer available to show Print Preview."
-msgstr ""
-"ئىشلەتكىلى بولىدىغان پرىنتېردىن ئاز دېگەندە بىرسى بولغاندا ئاندىن بېسىشنى "
-"ئالدىن كۆزىتىشنى كۆرگىلى بولىدۇ."
-
-#: NS_ERROR_UNEXPECTED
-msgid "There was an unexpected problem when printing."
-msgstr "باسقاندا تاسادىپىي مەسىلە كۆرۈلدى."
-
-#: NS_ERROR_OUT_OF_MEMORY
-msgid "There was a problem printing. There is not enough free memory to print."
-msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېر ئىچكى ساقلىغۇچىسى يېتىشمىدى."
-
-#: NS_ERROR_NOT_IMPLEMENTED
-msgid "Some printing functionality is not implemented yet."
-msgstr "بەزى بېسىش ئىقتىدارى تېخى ئەمەلگە ئاشمىغان."
-
-#: NS_ERROR_NOT_AVAILABLE
-msgid "Not available"
-msgstr "ئىشلەتكىلى بولمايدۇ"
-
-#: NS_ERROR_ABORT
+#: PERR_ABORT
 msgid "The print job was aborted, or canceled."
 msgstr "بېسىش ۋەزىپىسى توختىتىلدى ياكى بىكار قىلىندى."
 
-#: NS_ERROR_FAILURE
-msgid "An unknown error occurred while printing."
-msgstr "بېسىشتا نامەلۇم خاتالىق يۈز بەردى."
-
-#: NS_ERROR_GFX_PRINTER_STARTDOC
-msgid "Printing failed when starting the document."
-msgstr "بۇ ھۆججەتنى باشلىغاندا بېسىش مەغلۇپ بولدى."
-
-#: NS_ERROR_GFX_PRINTER_ENDDOC
-msgid "Printing failed when completing the document."
-msgstr "بۇ ھۆججەتنى تاماملاۋاتقاندا بېسىش مەغلۇپ بولدى."
-
-#: NS_ERROR_GFX_PRINTER_STARTPAGE
-msgid "Printing failed when starting the page."
-msgstr "بۇ بەتنى باشلىغاندا بېسىش مەغلۇپ بولدى."
-
-#: NS_ERROR_GFX_PRINTER_ENDPAGE
-msgid "Printing failed when completing the page."
-msgstr "بۇ بەتنى تاماملاۋاتقاندا بېسىش مەغلۇپ بولدى."
-
-#: NS_ERROR_GFX_PRINTER_PRINT_WHILE_PREVIEW
-msgid "You cannot print while in print preview."
-msgstr "بېسىشنى ئالدىن كۆرۈۋاتقاندا بېسىپ چىقىرالمايسىز."
-
-#: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the paper size you specified is not "
-"supported by your printer."
+#: PERR_NOT_AVAILABLE
+msgid "Some printing functionality is not currently available."
 msgstr ""
-"پرىنتېر كۆرسەتكەن قەغىزىڭىزنىڭ ھەجمىنى قوللىمىغانلىقتىن بېسىپ چىقارغاندا "
-"مەسىلە كۆرۈلدى."
 
-#: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the page orientation you specified is "
-"not supported by your printer."
+#: PERR_NOT_IMPLEMENTED
+msgid "Some printing functionality is not implemented yet."
+msgstr "بەزى بېسىش ئىقتىدارى تېخى ئەمەلگە ئاشمىغان."
+
+#: PERR_OUT_OF_MEMORY
+msgid "There is not enough free memory to print."
 msgstr ""
-"پرىنتېر سىز كۆرسەتكەن بەت يۆنىلىشىنى قوللىمىغانلىقتىن بېسىپ چىقارغاندا "
-"مەسىلە كۆرۈلدى."
 
-#: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the print job requires color "
-"capabilities that your printer does not support."
-msgstr ""
-"پرىنتېرىڭىز لازىملىق رەڭنى قوللىمىغانلىقتىن بېسىپ چىقارغاندا مەسىلە كۆرۈلدى."
+#: PERR_UNEXPECTED
+#, fuzzy
+msgid "There was an unexpected problem while printing."
+msgstr "باسقاندا تاسادىپىي مەسىلە كۆرۈلدى."
 
-#: NS_ERROR_GFX_PRINTER_TOO_MANY_COPIES
-msgid "There was a problem printing because you requested too many copies."
-msgstr ""
-"سىز تەلەپ قىلغان نۇسخا سانى بەك كۆپ بولغانلىقتىن بېسىپ چىقارغاندا مەسىلە "
-"كۆرۈلدى."
-
-#: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid ""
-"There was a problem printing. The printer driver is not properly configured."
-msgstr ""
-"بېسىپ چىقارغاندا  مەسىلە كۆرۈلدى. پرىنتېرنىڭ قوزغىتىش پروگراممىسى توغرا "
-"قاچىلانمىغان."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid ""
-"The browser cannot print preview right now.\n"
-"Please try again when the page has finished loading."
-msgstr ""
-"توركۆرگۈ ھازىر ئالدىن كۆزىتىشنى باسالمايدۇ.\n"
-" تور بەت تولۇق يۈكلىنىپ بولغاندىن كېيىن قايتا سىناڭ."
-
-#: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid ""
-"The page was replaced while you were trying to print.\n"
-"Please try again."
-msgstr ""
-"سىز باسماقچى بولغاندا بەت ئالمىشىپ كەتتى.\n"
-" قايتا سىناڭ."
-
-#: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
-msgstr ""
-"قىستۇرۇش رامكىسى توغرا قاچىلانمىغان\n"
-" ياكى GFX قورالدان يەرلىك بېسىش رامكىسىنى قوللىمايدۇ"
-
-#: NS_ERROR_GFX_NO_PRINTROMPTSERVICE
-msgid "The Printing Prompt Service is missing."
-msgstr "بېسىش ئەسكەرتمە مۇلازىمىتى تېپىلمىدى."
-
-#: NS_ERROR_GFX_PRINTER_NO_XUL
-msgid "We are unable to Print or Print Preview this page."
-msgstr "بىز نۆۋەتتىكى بەتنى تەقلىدى كۆرسىتىش ياكى بېسىشقا ئامالسىز."
-
-#: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the plex mode you specified is not "
-"supported by your printer."
-msgstr ""
-"پرىنتېرىڭىز كۆرسەتكەن plex ھالىتىنى قوللىمىغانلىقتىن بېسىپ چىقارغاندا مەسىلە "
-"كۆرۈلدى."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY
-msgid "The browser cannot print the document while it is being loaded."
-msgstr "يۈكلىنىۋاتقان ھۆججەتنى بېسىپ چىقارغىلى بولمايدۇ."
-
-#: NS_ERROR_GFX_PRINTING_NOT_IMPLEMENTED
-msgid "Printing is not implemented."
-msgstr "بېسىپ چىقارغىلى بولمىدى."
-
-#: NS_ERROR_GFX_COULD_NOT_LOAD_PRINT_MODULE
-msgid "The requested print module cannot be loaded."
-msgstr "لازىملىق بېسش بۆلىكى يۈكلەنمىدى."
-
-#: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the resolution/quality mode you "
-"specified is not supported by your printer."
-msgstr ""
-"سىز كۆرسەتكەن ئىنىقلىق-سۈپەت ھالىتىنى پرىنتېرىڭىز قوللىمىغانلىقتىن "
-"بېسىۋاتقاندا مەسىلە كۇرۈلدى."
-
-#. # No printers available
-#: noprinter
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE
+#, fuzzy
+msgctxt "PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE"
 msgid "No printers available."
 msgstr "پرىنتېر مەۋجۇت ئەمەس."
 
-#: PrintToFile
-msgid "Print To File"
-msgstr "ھۆججەتكە باس"
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE_PP
+msgid "No printers available, cannot show print preview."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NAME_NOT_FOUND
+msgid "The selected printer could not be found."
+msgstr ""
+
+#: PERR_GFX_PRINTER_COULD_NOT_OPEN_FILE
+msgid "Failed to open output file for print to file."
+msgstr ""
+
+#: PERR_GFX_PRINTER_STARTDOC
+#, fuzzy
+msgid "Printing failed while starting the print job."
+msgstr "بۇ بەتنى باشلىغاندا بېسىش مەغلۇپ بولدى."
+
+#: PERR_GFX_PRINTER_ENDDOC
+#, fuzzy
+msgid "Printing failed while completing the print job."
+msgstr "بۇ بەتنى تاماملاۋاتقاندا بېسىش مەغلۇپ بولدى."
+
+#: PERR_GFX_PRINTER_STARTPAGE
+#, fuzzy
+msgid "Printing failed while starting a new page."
+msgstr "بۇ بەتنى باشلىغاندا بېسىش مەغلۇپ بولدى."
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY
+msgid "Cannot print this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY_PP
+msgid "Cannot print-preview this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NO_XUL
+msgid "Printing XUL documents is not supported."
+msgstr ""
+
+#~ msgid ""
+#~ "There was a problem printing. The printer doesn't support a printing "
+#~ "command."
+#~ msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېر بېسىش بۇيرۇقىدىن بىرنى قوللىمايدۇ."
+
+#~ msgid ""
+#~ "There was a problem printing. An instruction that was sent to the printer "
+#~ "failed."
+#~ msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېرغا بۇيرۇق يوللاش مەغلۇپ بولدى."
+
+#~ msgid "There was a problem printing. No printer could be found."
+#~ msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېرنى تاپالمىدى."
+
+#~ msgid "There was a problem printing. The printer could not be found."
+#~ msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېرنى تاپالمىدى."
+
+#~ msgid "There was a problem printing. Access to the printer was denied."
+#~ msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېرنى زىيارەت قىلىش رەت قىلىندى."
+
+#~ msgid ""
+#~ "There was a problem printing. Tried to set an invalid printer attribute."
+#~ msgstr ""
+#~ "باسقاندا مەسىلە كۆرۈلدى. ئىناۋەتلىك پرىنتېر خاسلىقىنى تەڭشەشنى سىناڭ."
+
+#~ msgid "There was a problem printing. The printer not ready."
+#~ msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېر تېخى تەييارلانمىدى."
+
+#~ msgid "There was a problem printing. The printer is out of paper."
+#~ msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېردا قەغەز يوق."
+
+#~ msgid "There was a problem printing. Printer I/O error."
+#~ msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېر I/O خاتالىقى."
+
+#~ msgid "There was a problem printing. The output file could not be opened."
+#~ msgstr "باسقاندا مەسىلە كۆرۈلدى. چىقىرىش ھۆججىتىنى ئاچالمىدى."
+
+#~ msgid "There was an error writing the printing output file."
+#~ msgstr "بىېسىپ چىقىرىش ھۆججىتىگە يېزىشتا خاتالىق كۆرۈلدى."
+
+#~ msgid "There must be at least one printer available to show Print Preview."
+#~ msgstr ""
+#~ "ئىشلەتكىلى بولىدىغان پرىنتېردىن ئاز دېگەندە بىرسى بولغاندا ئاندىن بېسىشنى "
+#~ "ئالدىن كۆزىتىشنى كۆرگىلى بولىدۇ."
+
+#~ msgid ""
+#~ "There was a problem printing. There is not enough free memory to print."
+#~ msgstr "باسقاندا مەسىلە كۆرۈلدى. پرىنتېر ئىچكى ساقلىغۇچىسى يېتىشمىدى."
+
+#~ msgid "Not available"
+#~ msgstr "ئىشلەتكىلى بولمايدۇ"
+
+#~ msgid "Printing failed when starting the document."
+#~ msgstr "بۇ ھۆججەتنى باشلىغاندا بېسىش مەغلۇپ بولدى."
+
+#~ msgid "Printing failed when completing the document."
+#~ msgstr "بۇ ھۆججەتنى تاماملاۋاتقاندا بېسىش مەغلۇپ بولدى."
+
+#~ msgid "You cannot print while in print preview."
+#~ msgstr "بېسىشنى ئالدىن كۆرۈۋاتقاندا بېسىپ چىقىرالمايسىز."
+
+#~ msgid ""
+#~ "There was a problem printing because the paper size you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "پرىنتېر كۆرسەتكەن قەغىزىڭىزنىڭ ھەجمىنى قوللىمىغانلىقتىن بېسىپ چىقارغاندا "
+#~ "مەسىلە كۆرۈلدى."
+
+#~ msgid ""
+#~ "There was a problem printing because the page orientation you specified "
+#~ "is not supported by your printer."
+#~ msgstr ""
+#~ "پرىنتېر سىز كۆرسەتكەن بەت يۆنىلىشىنى قوللىمىغانلىقتىن بېسىپ چىقارغاندا "
+#~ "مەسىلە كۆرۈلدى."
+
+#~ msgid ""
+#~ "There was a problem printing because the print job requires color "
+#~ "capabilities that your printer does not support."
+#~ msgstr ""
+#~ "پرىنتېرىڭىز لازىملىق رەڭنى قوللىمىغانلىقتىن بېسىپ چىقارغاندا مەسىلە "
+#~ "كۆرۈلدى."
+
+#~ msgid "There was a problem printing because you requested too many copies."
+#~ msgstr ""
+#~ "سىز تەلەپ قىلغان نۇسخا سانى بەك كۆپ بولغانلىقتىن بېسىپ چىقارغاندا مەسىلە "
+#~ "كۆرۈلدى."
+
+#~ msgid ""
+#~ "There was a problem printing. The printer driver is not properly "
+#~ "configured."
+#~ msgstr ""
+#~ "بېسىپ چىقارغاندا  مەسىلە كۆرۈلدى. پرىنتېرنىڭ قوزغىتىش پروگراممىسى توغرا "
+#~ "قاچىلانمىغان."
+
+#~ msgid ""
+#~ "The browser cannot print preview right now.\n"
+#~ "Please try again when the page has finished loading."
+#~ msgstr ""
+#~ "توركۆرگۈ ھازىر ئالدىن كۆزىتىشنى باسالمايدۇ.\n"
+#~ " تور بەت تولۇق يۈكلىنىپ بولغاندىن كېيىن قايتا سىناڭ."
+
+#~ msgid ""
+#~ "The page was replaced while you were trying to print.\n"
+#~ "Please try again."
+#~ msgstr ""
+#~ "سىز باسماقچى بولغاندا بەت ئالمىشىپ كەتتى.\n"
+#~ " قايتا سىناڭ."
+
+#~ msgid ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+#~ msgstr ""
+#~ "قىستۇرۇش رامكىسى توغرا قاچىلانمىغان\n"
+#~ " ياكى GFX قورالدان يەرلىك بېسىش رامكىسىنى قوللىمايدۇ"
+
+#~ msgid "The Printing Prompt Service is missing."
+#~ msgstr "بېسىش ئەسكەرتمە مۇلازىمىتى تېپىلمىدى."
+
+#~ msgid "We are unable to Print or Print Preview this page."
+#~ msgstr "بىز نۆۋەتتىكى بەتنى تەقلىدى كۆرسىتىش ياكى بېسىشقا ئامالسىز."
+
+#~ msgid ""
+#~ "There was a problem printing because the plex mode you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "پرىنتېرىڭىز كۆرسەتكەن plex ھالىتىنى قوللىمىغانلىقتىن بېسىپ چىقارغاندا "
+#~ "مەسىلە كۆرۈلدى."
+
+#~ msgid "The browser cannot print the document while it is being loaded."
+#~ msgstr "يۈكلىنىۋاتقان ھۆججەتنى بېسىپ چىقارغىلى بولمايدۇ."
+
+#~ msgid "Printing is not implemented."
+#~ msgstr "بېسىپ چىقارغىلى بولمىدى."
+
+#~ msgid "The requested print module cannot be loaded."
+#~ msgstr "لازىملىق بېسش بۆلىكى يۈكلەنمىدى."
+
+#~ msgid ""
+#~ "There was a problem printing because the resolution/quality mode you "
+#~ "specified is not supported by your printer."
+#~ msgstr ""
+#~ "سىز كۆرسەتكەن ئىنىقلىق-سۈپەت ھالىتىنى پرىنتېرىڭىز قوللىمىغانلىقتىن "
+#~ "بېسىۋاتقاندا مەسىلە كۇرۈلدى."
