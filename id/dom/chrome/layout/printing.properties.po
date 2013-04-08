@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/dom/chrome/layout/printing.properties
+#. extracted from ./dom/chrome/layout/printing.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,11 +14,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
 #. # Place the word %ld where the page number and number of pages should be
@@ -27,7 +27,7 @@ msgstr ""
 msgid "%1$d"
 msgstr "%1$d"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. ## @page_total The total number of pages
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
@@ -38,17 +38,27 @@ msgstr "%1$d"
 msgid "%1$d of %2$d"
 msgstr "%1$d dari %2$d"
 
+#: noprinter
+#, fuzzy
+msgctxt "noprinter"
+msgid "No printers available."
+msgstr "Tidak ada printer."
+
+#: PrintToFile
+msgid "Print To File"
+msgstr "Cetak menjadi Berkas"
+
 #: noPrintFilename.title
 msgid "Filename is missing"
 msgstr "Nama berkas tidak ada"
 
 #: noPrintFilename.alert
-msgid "You have selected \"Print To: File\", and the filename is empty!"
+#, fuzzy
+msgid "You have selected \"Print To File\", and the filename is empty!"
 msgstr ""
 "Anda memilih \"Cetak ke: Berkas\", tetapi nama berkas yang diperlukan tidak "
 "ada!"
 
-#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -57,7 +67,6 @@ msgstr ""
 "%S sudah ada.\n"
 "Apakah Anda ingin menggantinya?"
 
-#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "Kesalahan Printer"
@@ -66,215 +75,241 @@ msgstr "Kesalahan Printer"
 msgid "Print Preview Error"
 msgstr "Kesalahan Pratinjau"
 
-#: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid ""
-"There was a problem printing. The printer doesn't support a printing command."
-msgstr ""
-"Terjadi kesalahan saat mencetak. Printer tidak mendukung perintah pencetakan."
+#. # Printing error messages.
+#. #LOCALIZATION NOTE: Some of these messages come in pairs, one
+#. # for printing and one for print previewing.  You can remove that
+#. # distinction in your language by removing the entity with the _PP
+#. # suffix; then the entity without a suffix will be used for both.
+#. # You can also add that distinction to any of the messages that don't
+#. # already have it by adding a new entity with a _PP suffix.
+#. #
+#. # For instance, if you delete PERR_GFX_PRINTER_DOC_IS_BUSY_PP, then
+#. # the PERR_GFX_PRINTER_DOC_IS_BUSY message will be used for that error
+#. # condition when print previewing as well as when printing.  If you
+#. # add PERR_FAILURE_PP, then PERR_FAILURE will only be used when
+#. # printing, and PERR_FAILURE_PP will be used under the same conditions
+#. # when print previewing.
+#. #
+#: PERR_FAILURE
+#, fuzzy
+msgid "An error occurred while printing."
+msgstr "Terjadi kesalahan yang tidak tahu asal-usulnya saat mencetak."
 
-#: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid ""
-"There was a problem printing. An instruction that was sent to the printer "
-"failed."
-msgstr ""
-"Terjadi kesalahan saat mencetak. Semua perintah yang dikirim ke Printer "
-"gagal."
-
-#: NS_ERROR_GFX_PRINTER_NO_PRINTER_AVAILABLE
-msgid "There was a problem printing. No printer could be found."
-msgstr "Terjadi kesalahan saat mencetak. Tidak Printer yang bisa ditemukan."
-
-#: NS_ERROR_GFX_PRINTER_NAME_NOT_FOUND
-msgid "There was a problem printing. The printer could not be found."
-msgstr "Terjadi kesalahan saat mencetak. Printer tidak ditemukan."
-
-#: NS_ERROR_GFX_PRINTER_ACCESS_DENIED
-msgid "There was a problem printing. Access to the printer was denied."
-msgstr ""
-"Terjadi kesalahan saat mencetak. Akses mencetak pada Printer tersebut "
-"ditolak."
-
-#: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid ""
-"There was a problem printing. Tried to set an invalid printer attribute."
-msgstr ""
-"Terjadi kesalahan saat mencetak. Mencoba menyetel atribut Printer yang tidak "
-"valid."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_NOT_READY
-msgid "There was a problem printing. The printer not ready."
-msgstr "Terjadi kesalahan saat mencetak. Printer tidak siap."
-
-#: NS_ERROR_GFX_PRINTER_OUT_OF_PAPER
-msgid "There was a problem printing. The printer is out of paper."
-msgstr "Terjadi kesalahan saat mencetak. Printer kehabisan kertas."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_IO_ERROR
-msgid "There was a problem printing. Printer I/O error."
-msgstr ""
-"Terjadi kesalahan saat mencetak. Terjadi kesalahan pada sistem I/O Printer ."
-
-#: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
-msgid "There was a problem printing. The output file could not be opened."
-msgstr "Terjadi kesalahan saat mencetak. Berkas keluaran tidak bisa dibuka."
-
-#: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
-msgid "There was an error writing the printing output file."
-msgstr "Terjadi kesalahan saat menyimpan berkas keluaran Printer."
-
-#: NS_ERROR_GFX_PRINTER_PRINTPREVIEW
-msgid "There must be at least one printer available to show Print Preview."
-msgstr ""
-"Paling sedikit harus ada sebuah printer yang disediakan untuk melihat "
-"Pratinjau Cetak."
-
-#: NS_ERROR_UNEXPECTED
-msgid "There was an unexpected problem when printing."
-msgstr "Terjadi kesalahan yang tidak diharapkan saat mencetak."
-
-#: NS_ERROR_OUT_OF_MEMORY
-msgid "There was a problem printing. There is not enough free memory to print."
-msgstr "Terjadi kesalahan saat mencetak. Tidak cukup memori untuk mencetak."
-
-#: NS_ERROR_NOT_IMPLEMENTED
-msgid "Some printing functionality is not implemented yet."
-msgstr "Beberapa aspek fungsi pencetakan masih belum diimplementasikan."
-
-#: NS_ERROR_NOT_AVAILABLE
-msgid "Not available"
-msgstr "Tidak tersedia"
-
-#: NS_ERROR_ABORT
+#: PERR_ABORT
 msgid "The print job was aborted, or canceled."
 msgstr "Pekerjaan pencetakan dibatalkan."
 
-#: NS_ERROR_FAILURE
-msgid "An unknown error occurred while printing."
-msgstr "Terjadi kesalahan yang tidak tahu asal-usulnya saat mencetak."
-
-#: NS_ERROR_GFX_PRINTER_STARTDOC
-msgid "Printing failed when starting the document."
-msgstr "Pencetakan gagal saat memulai dokumen."
-
-#: NS_ERROR_GFX_PRINTER_ENDDOC
-msgid "Printing failed when completing the document."
-msgstr "Pencetakan gagal saat mengakhiri dokumen."
-
-#: NS_ERROR_GFX_PRINTER_STARTPAGE
-msgid "Printing failed when starting the page."
-msgstr "Pencetakan gagal saat memulai laman."
-
-#: NS_ERROR_GFX_PRINTER_ENDPAGE
-msgid "Printing failed when completing the page."
-msgstr "Pencetakan gagal saat mengakhiri laman."
-
-#: NS_ERROR_GFX_PRINTER_PRINT_WHILE_PREVIEW
-msgid "You cannot print while in print preview."
+#: PERR_NOT_AVAILABLE
+msgid "Some printing functionality is not currently available."
 msgstr ""
-"Anda tidak dapat mencetak pada saat sedang menggunakan pratinjau cetak."
 
-#: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the paper size you specified is not "
-"supported by your printer."
+#: PERR_NOT_IMPLEMENTED
+msgid "Some printing functionality is not implemented yet."
+msgstr "Beberapa aspek fungsi pencetakan masih belum diimplementasikan."
+
+#: PERR_OUT_OF_MEMORY
+msgid "There is not enough free memory to print."
 msgstr ""
-"Terjadi kesalahan saat mencetak karena ukuran kertas yang Anda pilih tidak "
-"didukung oleh Printer Anda."
 
-#: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the page orientation you specified is "
-"not supported by your printer."
-msgstr ""
-"Terjadi kesalahan saat mencetak karena orientasi kertas yang Anda pilih "
-"tidak didukung oleh Printer Anda."
+#: PERR_UNEXPECTED
+#, fuzzy
+msgid "There was an unexpected problem while printing."
+msgstr "Terjadi kesalahan yang tidak diharapkan saat mencetak."
 
-#: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the print job requires color "
-"capabilities that your printer does not support."
-msgstr ""
-"Terjadi kesalahan saat mencetak karena mode pewarnaan tidak didukung oleh "
-"Printer Anda."
-
-#: NS_ERROR_GFX_PRINTER_TOO_MANY_COPIES
-msgid "There was a problem printing because you requested too many copies."
-msgstr ""
-"Terjadi kesalahan saat mencetak karena Anda meminta jumlah laman yang "
-"terlalu banyak."
-
-#: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid ""
-"There was a problem printing. The printer driver is not properly configured."
-msgstr ""
-"Terjadi kesalahan saat mencetak. Driver Printer tidak dikonfigurasi dengan "
-"benar."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid ""
-"The browser cannot print preview right now.\n"
-"Please try again when the page has finished loading."
-msgstr ""
-"Program tidak dapat melakukan pratinjau sekarang. Silakan dicoba lagi "
-"setelah laman selesai dimuat."
-
-#: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid ""
-"The page was replaced while you were trying to print.\n"
-"Please try again."
-msgstr ""
-"Laman telah diganti ketika Anda mencoba memulai pencetakan. Silakan dicoba "
-"lagi."
-
-#: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
-msgstr ""
-"Dialog yang terpasang atau program Toolkit GFX tidak lagi mendukung Dialog "
-"Pencetakan versi sistem operasi."
-
-#: NS_ERROR_GFX_NO_PRINTROMPTSERVICE
-msgid "The Printing Prompt Service is missing."
-msgstr "Layanan Pemberitahuan Pencetakan tidak ada."
-
-#: NS_ERROR_GFX_PRINTER_NO_XUL
-msgid "We are unable to Print or Print Preview this page."
-msgstr "Program tidak dapat mencetak atau membuat pratinjau laman ini."
-
-#: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the plex mode you specified is not "
-"supported by your printer."
-msgstr ""
-"Terjadi kesalahan saat mencetak karena mode plex yang ditentukan tidak "
-"didukung Printer."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY
-msgid "The browser cannot print the document while it is being loaded."
-msgstr "Program tidak dapat mencetak dokumen saat sedang memuat dokumen."
-
-#: NS_ERROR_GFX_PRINTING_NOT_IMPLEMENTED
-msgid "Printing is not implemented."
-msgstr "Pencetakan tidak diimplementasikan."
-
-#: NS_ERROR_GFX_COULD_NOT_LOAD_PRINT_MODULE
-msgid "The requested print module cannot be loaded."
-msgstr "Modul pencetak yang diminta tidak dapat dimuat."
-
-#: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the resolution/quality mode you "
-"specified is not supported by your printer."
-msgstr ""
-"Terjadi kesalahan saat mencetak karena pilihan resolusi/kualitas yang "
-"diminta tidak didukung Printer."
-
-#. # No printers available
-#: noprinter
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE
+#, fuzzy
+msgctxt "PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE"
 msgid "No printers available."
 msgstr "Tidak ada printer."
 
-#: PrintToFile
-msgid "Print To File"
-msgstr "Cetak menjadi Berkas"
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE_PP
+msgid "No printers available, cannot show print preview."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NAME_NOT_FOUND
+msgid "The selected printer could not be found."
+msgstr ""
+
+#: PERR_GFX_PRINTER_COULD_NOT_OPEN_FILE
+msgid "Failed to open output file for print to file."
+msgstr ""
+
+#: PERR_GFX_PRINTER_STARTDOC
+#, fuzzy
+msgid "Printing failed while starting the print job."
+msgstr "Pencetakan gagal saat memulai laman."
+
+#: PERR_GFX_PRINTER_ENDDOC
+#, fuzzy
+msgid "Printing failed while completing the print job."
+msgstr "Pencetakan gagal saat mengakhiri laman."
+
+#: PERR_GFX_PRINTER_STARTPAGE
+#, fuzzy
+msgid "Printing failed while starting a new page."
+msgstr "Pencetakan gagal saat memulai laman."
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY
+msgid "Cannot print this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY_PP
+msgid "Cannot print-preview this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NO_XUL
+msgid "Printing XUL documents is not supported."
+msgstr ""
+
+#~ msgid ""
+#~ "There was a problem printing. The printer doesn't support a printing "
+#~ "command."
+#~ msgstr ""
+#~ "Terjadi kesalahan saat mencetak. Printer tidak mendukung perintah "
+#~ "pencetakan."
+
+#~ msgid ""
+#~ "There was a problem printing. An instruction that was sent to the printer "
+#~ "failed."
+#~ msgstr ""
+#~ "Terjadi kesalahan saat mencetak. Semua perintah yang dikirim ke Printer "
+#~ "gagal."
+
+#~ msgid "There was a problem printing. No printer could be found."
+#~ msgstr "Terjadi kesalahan saat mencetak. Tidak Printer yang bisa ditemukan."
+
+#~ msgid "There was a problem printing. The printer could not be found."
+#~ msgstr "Terjadi kesalahan saat mencetak. Printer tidak ditemukan."
+
+#~ msgid "There was a problem printing. Access to the printer was denied."
+#~ msgstr ""
+#~ "Terjadi kesalahan saat mencetak. Akses mencetak pada Printer tersebut "
+#~ "ditolak."
+
+#~ msgid ""
+#~ "There was a problem printing. Tried to set an invalid printer attribute."
+#~ msgstr ""
+#~ "Terjadi kesalahan saat mencetak. Mencoba menyetel atribut Printer yang "
+#~ "tidak valid."
+
+#~ msgid "There was a problem printing. The printer not ready."
+#~ msgstr "Terjadi kesalahan saat mencetak. Printer tidak siap."
+
+#~ msgid "There was a problem printing. The printer is out of paper."
+#~ msgstr "Terjadi kesalahan saat mencetak. Printer kehabisan kertas."
+
+#~ msgid "There was a problem printing. Printer I/O error."
+#~ msgstr ""
+#~ "Terjadi kesalahan saat mencetak. Terjadi kesalahan pada sistem I/O "
+#~ "Printer ."
+
+#~ msgid "There was a problem printing. The output file could not be opened."
+#~ msgstr "Terjadi kesalahan saat mencetak. Berkas keluaran tidak bisa dibuka."
+
+#~ msgid "There was an error writing the printing output file."
+#~ msgstr "Terjadi kesalahan saat menyimpan berkas keluaran Printer."
+
+#~ msgid "There must be at least one printer available to show Print Preview."
+#~ msgstr ""
+#~ "Paling sedikit harus ada sebuah printer yang disediakan untuk melihat "
+#~ "Pratinjau Cetak."
+
+#~ msgid ""
+#~ "There was a problem printing. There is not enough free memory to print."
+#~ msgstr "Terjadi kesalahan saat mencetak. Tidak cukup memori untuk mencetak."
+
+#~ msgid "Not available"
+#~ msgstr "Tidak tersedia"
+
+#~ msgid "Printing failed when starting the document."
+#~ msgstr "Pencetakan gagal saat memulai dokumen."
+
+#~ msgid "Printing failed when completing the document."
+#~ msgstr "Pencetakan gagal saat mengakhiri dokumen."
+
+#~ msgid "You cannot print while in print preview."
+#~ msgstr ""
+#~ "Anda tidak dapat mencetak pada saat sedang menggunakan pratinjau cetak."
+
+#~ msgid ""
+#~ "There was a problem printing because the paper size you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "Terjadi kesalahan saat mencetak karena ukuran kertas yang Anda pilih "
+#~ "tidak didukung oleh Printer Anda."
+
+#~ msgid ""
+#~ "There was a problem printing because the page orientation you specified "
+#~ "is not supported by your printer."
+#~ msgstr ""
+#~ "Terjadi kesalahan saat mencetak karena orientasi kertas yang Anda pilih "
+#~ "tidak didukung oleh Printer Anda."
+
+#~ msgid ""
+#~ "There was a problem printing because the print job requires color "
+#~ "capabilities that your printer does not support."
+#~ msgstr ""
+#~ "Terjadi kesalahan saat mencetak karena mode pewarnaan tidak didukung oleh "
+#~ "Printer Anda."
+
+#~ msgid "There was a problem printing because you requested too many copies."
+#~ msgstr ""
+#~ "Terjadi kesalahan saat mencetak karena Anda meminta jumlah laman yang "
+#~ "terlalu banyak."
+
+#~ msgid ""
+#~ "There was a problem printing. The printer driver is not properly "
+#~ "configured."
+#~ msgstr ""
+#~ "Terjadi kesalahan saat mencetak. Driver Printer tidak dikonfigurasi "
+#~ "dengan benar."
+
+#~ msgid ""
+#~ "The browser cannot print preview right now.\n"
+#~ "Please try again when the page has finished loading."
+#~ msgstr ""
+#~ "Program tidak dapat melakukan pratinjau sekarang. Silakan dicoba lagi "
+#~ "setelah laman selesai dimuat."
+
+#~ msgid ""
+#~ "The page was replaced while you were trying to print.\n"
+#~ "Please try again."
+#~ msgstr ""
+#~ "Laman telah diganti ketika Anda mencoba memulai pencetakan. Silakan "
+#~ "dicoba lagi."
+
+#~ msgid ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+#~ msgstr ""
+#~ "Dialog yang terpasang atau program Toolkit GFX tidak lagi mendukung "
+#~ "Dialog Pencetakan versi sistem operasi."
+
+#~ msgid "The Printing Prompt Service is missing."
+#~ msgstr "Layanan Pemberitahuan Pencetakan tidak ada."
+
+#~ msgid "We are unable to Print or Print Preview this page."
+#~ msgstr "Program tidak dapat mencetak atau membuat pratinjau laman ini."
+
+#~ msgid ""
+#~ "There was a problem printing because the plex mode you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "Terjadi kesalahan saat mencetak karena mode plex yang ditentukan tidak "
+#~ "didukung Printer."
+
+#~ msgid "The browser cannot print the document while it is being loaded."
+#~ msgstr "Program tidak dapat mencetak dokumen saat sedang memuat dokumen."
+
+#~ msgid "Printing is not implemented."
+#~ msgstr "Pencetakan tidak diimplementasikan."
+
+#~ msgid "The requested print module cannot be loaded."
+#~ msgstr "Modul pencetak yang diminta tidak dapat dimuat."
+
+#~ msgid ""
+#~ "There was a problem printing because the resolution/quality mode you "
+#~ "specified is not supported by your printer."
+#~ msgstr ""
+#~ "Terjadi kesalahan saat mencetak karena pilihan resolusi/kualitas yang "
+#~ "diminta tidak didukung Printer."

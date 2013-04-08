@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: 2013-01-04 16:55+0000\n"
 "Last-Translator: Dwayne Bailey <dwayne@translate.org.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1357318538.0\n"
@@ -33,6 +33,12 @@ msgstr ""
 #: canonDescNone
 msgid "(No description)"
 msgstr "(விளக்கம் இல்லை)"
+
+#. # LOCALIZATION NOTE (canonDefaultGroupName): The default name for a group of
+#. # parameters.
+#: canonDefaultGroupName
+msgid "Options"
+msgstr "விருப்பங்கள்"
 
 #. # LOCALIZATION NOTE (cliEvalJavascript): The special '{' command allows entry
 #. # of JavaScript like traditional developer tool command lines. This describes
@@ -140,6 +146,13 @@ msgstr "%1$S ஆனது அனுமதிக்கப்பட்ட அத�
 #: typesNumberMin
 msgid "%1$S is smaller than minimum allowed: %2$S."
 msgstr "%1$S ஆனது அனுமதிக்கப்பட்ட குறைந்தபட்ச மதிப்பு %2$S ஐ விட சிறியது."
+
+#. # LOCALIZATION NOTE (typesNumberNotInt2): When the command line is passed a
+#. # number, but the number has a decimal part and floats are not allowed.
+#: typesNumberNotInt2
+#, fuzzy
+msgid "Can't convert \"%S\" to an integer."
+msgstr "\"%S\" ஐ ஒரு எண்ணாக மாற்ற முடியவில்லை"
 
 #. # LOCALIZATION NOTE (typesSelectionNomatch): When the command line is passed
 #. # an option with a limited number of correct values, but the passed value is
@@ -361,6 +374,14 @@ msgstr "காண்பிக்க வேண்டிய அமைப்பு"
 msgid "The name of the setting to display"
 msgstr "காண்பிக்க வேண்டிய அமைப்பின் பெயர்"
 
+#. # LOCALIZATION NOTE (prefShowSettingValue): This is used to show the
+#. # preference name and the associated preference value. %1$S is replaced with
+#. # the preference name and %2$S is replaced with the preference value.
+#: prefShowSettingValue
+#, fuzzy
+msgid "%1$S: %2$S"
+msgstr "%1$S %2$S"
+
 #. # LOCALIZATION NOTE (prefSetDesc): A very short description of the 'pref set'
 #. # command. This string is designed to be shown in a menu alongside the command
 #. # name, which is why it should be as short as possible. See prefSetManual for
@@ -500,42 +521,44 @@ msgstr ""
 "புதிய பனர்கள் 'புரிந்தது!' என்ற பொத்தானைக் கிளிக் செய்யும் வரை காண்பிக்கப்படும் செய்தியை "
 "மீண்டும் காண்பி"
 
-#. # LOCALIZATION NOTE (introTextOpening): The 'intro text' opens when the user
+#. # LOCALIZATION NOTE (introTextOpening2): The 'intro text' opens when the user
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button. This
 #. # string is the opening paragraph of the intro text.
-#: introTextOpening
+#: introTextOpening2
+#, fuzzy
 msgid ""
-"The Firefox command line is designed for developers. It focuses on speed of "
-"input over JavaScript syntax and a rich display over monospace output."
+"This command line is designed for developers. It focuses on speed of input "
+"over JavaScript syntax and a rich display over monospace output."
 msgstr ""
 "Firefox கட்டளைவரியானது டெவலப்பர்களுக்காக வடிவமைக்கப்பட்டது. JavaScript தொடரியலில் "
 "உள்ளீட்டின் வேகம் மற்றும் மோனோஸ்பேஸ் வெளியீட்டிலான உயர் தர காட்சிப்படுத்தல் ஆகியவற்றில் கவனம் "
 "செலுத்தி உருவாக்கப்பட்டது."
 
 #. # LOCALIZATION NOTE (introTextCommands): For information about the 'intro
-#. # text' see introTextOpening. The second paragraph is in 2 sections, the first
-#. # section points the user to the 'help' command.
+#. # text' see introTextOpening2. The second paragraph is in 2 sections, the
+#. # first section points the user to the 'help' command.
 #: introTextCommands
 msgid "For a list of commands type"
 msgstr "கட்டளைகளின் பட்டியலுக்கு இதைத் தட்டச்சு செய்யவும்"
 
-#. # LOCALIZATION NOTE (introTextKeys): For information about the 'intro text'
-#. # see introTextOpening. The second section in the second paragraph points the
+#. # LOCALIZATION NOTE (introTextKeys2): For information about the 'intro text'
+#. # see introTextOpening2. The second section in the second paragraph points the
 #. # user to the F1/Escape keys which show and hide hints.
-#: introTextKeys
-msgid "or to show/hide command hints press"
+#: introTextKeys2
+#, fuzzy
+msgid ", or to show/hide command hints press"
 msgstr "அல்லது கட்டளைக் குறிப்புகளைக் காண்பிக்க/மறைக்க இதை அழுத்தவும்"
 
 #. # LOCALIZATION NOTE (introTextF1Escape): For information about the 'intro
-#. # text' see introTextOpening. This string is used with introTextKeys, and
+#. # text' see introTextOpening2. This string is used with introTextKeys2, and
 #. # contains the keys that are pressed to open and close hints.
 #: introTextF1Escape
 msgid "F1/Escape"
 msgstr "F1/Escape"
 
 #. # LOCALIZATION NOTE (introTextGo): For information about the 'intro text' see
-#. # introTextOpening. The text on the button that dismisses the intro text.
+#. # introTextOpening2. The text on the button that dismisses the intro text.
 #: introTextGo
 msgid "Got it!"
 msgstr "புரிந்தது!"
