@@ -3,12 +3,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/dom/chrome/layout/printing.properties
+#. extracted from ./dom/chrome/layout/printing.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: 2010-01-11 20:28+0200\n"
 "Last-Translator: kasahorow <kasahorow@suuch.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
 #. # Place the word %ld where the page number and number of pages should be
@@ -30,7 +30,7 @@ msgstr ""
 msgid "%1$d"
 msgstr "%1$d"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. ## @page_total The total number of pages
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
@@ -41,15 +41,25 @@ msgstr "%1$d"
 msgid "%1$d of %2$d"
 msgstr "%1$d wɔ %2$d"
 
+#: noprinter
+#, fuzzy
+msgctxt "noprinter"
+msgid "No printers available."
+msgstr "Prent-mfidie biara nni hɔ."
+
+#: PrintToFile
+msgid "Print To File"
+msgstr "Prente Kɔ Fael mu"
+
 #: noPrintFilename.title
 msgid "Filename is missing"
 msgstr "Fael din no ayera"
 
 #: noPrintFilename.alert
-msgid "You have selected \"Print To: File\", and the filename is empty!"
+#, fuzzy
+msgid "You have selected \"Print To File\", and the filename is empty!"
 msgstr "Wo apaw \"Prente Kɔ: Fael\", na fael din biara nni hɔ!"
 
-#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -58,7 +68,6 @@ msgstr ""
 "%S wɔ hɔ dadaw.\n"
 "Wo pɛ sɛ wo hyɛ no anan mu?"
 
-#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "Prent-fidie Mfomso"
@@ -67,220 +76,246 @@ msgstr "Prent-fidie Mfomso"
 msgid "Print Preview Error"
 msgstr "Prent Priviw Mfomso"
 
-#: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid ""
-"There was a problem printing. The printer doesn't support a printing command."
-msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so. Prent-fidie no nngye prent "
-"kɔmand bi nnto mu."
+#. # Printing error messages.
+#. #LOCALIZATION NOTE: Some of these messages come in pairs, one
+#. # for printing and one for print previewing.  You can remove that
+#. # distinction in your language by removing the entity with the _PP
+#. # suffix; then the entity without a suffix will be used for both.
+#. # You can also add that distinction to any of the messages that don't
+#. # already have it by adding a new entity with a _PP suffix.
+#. #
+#. # For instance, if you delete PERR_GFX_PRINTER_DOC_IS_BUSY_PP, then
+#. # the PERR_GFX_PRINTER_DOC_IS_BUSY message will be used for that error
+#. # condition when print previewing as well as when printing.  If you
+#. # add PERR_FAILURE_PP, then PERR_FAILURE will only be used when
+#. # printing, and PERR_FAILURE_PP will be used under the same conditions
+#. # when print previewing.
+#. #
+#: PERR_FAILURE
+#, fuzzy
+msgid "An error occurred while printing."
+msgstr "Mfomso bi sii wɔ bere a prent dwumadi rekɔ so."
 
-#: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid ""
-"There was a problem printing. An instruction that was sent to the printer "
-"failed."
-msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so. Akwankyerɛ a wɔde soma kɔɔ prent-"
-"fidie no so annkɔ yie."
-
-#: NS_ERROR_GFX_PRINTER_NO_PRINTER_AVAILABLE
-msgid "There was a problem printing. No printer could be found."
-msgstr "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Ennhu prent-fidie biara."
-
-#: NS_ERROR_GFX_PRINTER_NAME_NOT_FOUND
-msgid "There was a problem printing. The printer could not be found."
-msgstr "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Ennhu prent-fidie no."
-
-#: NS_ERROR_GFX_PRINTER_ACCESS_DENIED
-msgid "There was a problem printing. Access to the printer was denied."
-msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so. Wɔamma prent-fidie ho kwan."
-
-#: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid ""
-"There was a problem printing. Tried to set an invalid printer attribute."
-msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so. Wɔyɛɛ sɛ wɔbɛhyɛ su bi a ɔnndi "
-"mu ama prent-fidie no."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_NOT_READY
-msgid "There was a problem printing. The printer not ready."
-msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so. Prent-fidie no nnsiesiee ne ho "
-"nnwiei."
-
-#: NS_ERROR_GFX_PRINTER_OUT_OF_PAPER
-msgid "There was a problem printing. The printer is out of paper."
-msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so. Krataa biara nni prent-fidie no "
-"mu bio."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_IO_ERROR
-msgid "There was a problem printing. Printer I/O error."
-msgstr "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Prent-fidie mfomso I/O."
-
-#: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
-msgid "There was a problem printing. The output file could not be opened."
-msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so. Enntumi emmbue fael a wɔepue no."
-
-#: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
-msgid "There was an error writing the printing output file."
-msgstr "Mfomso bi bae wɔ bere a wɔreprente fael a wɔepue no."
-
-#: NS_ERROR_GFX_PRINTER_PRINTPREVIEW
-msgid "There must be at least one printer available to show Print Preview."
-msgstr ""
-"Annyɛ koraa no, ɛwɔ sɛ prent-fidie baako da hɔ a wɔbɛkyerɛ no wɔ Prent "
-"Priviw mu."
-
-#: NS_ERROR_UNEXPECTED
-msgid "There was an unexpected problem when printing."
-msgstr "Haw a eni nnda so bi bae wɔ bere a prent dwumadi rekɔ so."
-
-#: NS_ERROR_OUT_OF_MEMORY
-msgid "There was a problem printing. There is not enough free memory to print."
-msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so. Mɛmri a ɛda hɔ kwa nndɔɔso a "
-"ɛbɛma ho kwan ma prent dwumadi akɔ so."
-
-#: NS_ERROR_NOT_IMPLEMENTED
-msgid "Some printing functionality is not implemented yet."
-msgstr "Wɔnnya mmfaa prent nkongyaa bi mmbae."
-
-#: NS_ERROR_NOT_AVAILABLE
-msgid "Not available"
-msgstr "Nni hɔ"
-
-#: NS_ERROR_ABORT
+#: PERR_ABORT
 msgid "The print job was aborted, or canceled."
 msgstr "Wɔtwaa prent dwumadi no mu."
 
-#: NS_ERROR_FAILURE
-msgid "An unknown error occurred while printing."
-msgstr "Mfomso bi sii wɔ bere a prent dwumadi rekɔ so."
-
-#: NS_ERROR_GFX_PRINTER_STARTDOC
-msgid "Printing failed when starting the document."
-msgstr "Prent dwumadi dii nkugu wɔ bere a ɔrehyɛ dɔkumɛnt no ase."
-
-#: NS_ERROR_GFX_PRINTER_ENDDOC
-msgid "Printing failed when completing the document."
-msgstr "Prent dwumadi dii nkugu wɔ bere a ɔrewie dɔkumɛnt no."
-
-#: NS_ERROR_GFX_PRINTER_STARTPAGE
-msgid "Printing failed when starting the page."
-msgstr "Prent dwumadi no dii nkugu wɔ bere a ɔrehyɛ krataafa no ase."
-
-#: NS_ERROR_GFX_PRINTER_ENDPAGE
-msgid "Printing failed when completing the page."
-msgstr "Prent dwumadi no dii nkugu wɔ bere ɔrewie krataafa no."
-
-#: NS_ERROR_GFX_PRINTER_PRINT_WHILE_PREVIEW
-msgid "You cannot print while in print preview."
-msgstr "Wo renntumi mmprente wɔ bere a wo wɔ prent priviw."
-
-#: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the paper size you specified is not "
-"supported by your printer."
+#: PERR_NOT_AVAILABLE
+msgid "Some printing functionality is not currently available."
 msgstr ""
-"Haw bi bae wɔ bere a wo reprente efiri sɛ wo prent-fidie nngye krataafa "
-"kɛseyɛ wo kyerɛɛ no nnto mu."
 
-#: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the page orientation you specified is "
-"not supported by your printer."
+#: PERR_NOT_IMPLEMENTED
+msgid "Some printing functionality is not implemented yet."
+msgstr "Wɔnnya mmfaa prent nkongyaa bi mmbae."
+
+#: PERR_OUT_OF_MEMORY
+msgid "There is not enough free memory to print."
 msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so efiri sɛ wo prent-fidie nngye "
-"krataafa ne danebea wo kyerɛɛ no nnto mu."
 
-#: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the print job requires color "
-"capabilities that your printer does not support."
-msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so efiri sɛ prent-dwumadi no hia "
-"ahosu tumidi a wo prent-fidie no nni."
+#: PERR_UNEXPECTED
+#, fuzzy
+msgid "There was an unexpected problem while printing."
+msgstr "Haw a eni nnda so bi bae wɔ bere a prent dwumadi rekɔ so."
 
-#: NS_ERROR_GFX_PRINTER_TOO_MANY_COPIES
-msgid "There was a problem printing because you requested too many copies."
-msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so efiri sɛ wo bisaa sɛso bebree "
-"dodow."
-
-#: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid ""
-"There was a problem printing. The printer driver is not properly configured."
-msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so. Wɔnhyɛɛ prent-fidie sɔftwɛɛ no "
-"yie."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid ""
-"The browser cannot print preview right now.\n"
-"Please try again when the page has finished loading."
-msgstr ""
-"Brawsa no nntumi nnyɛ prente priviw seiseiara.\n"
-"Yɛsrɛ wo bɔ mbɔden bio sɛ krataafa no wie sɛ ɔreloode a."
-
-#: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid ""
-"The page was replaced while you were trying to print.\n"
-"Please try again."
-msgstr ""
-"Wɔhyɛ krataafa no anan mu wɔ bere a wo rebɔ mbɔden aprente no.\n"
-"Yɛsrɛ wo bɔ mbɔden prente bio."
-
-#: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
-msgstr ""
-"Wɔenntumi enninstɔle ndaelɔg a wɔde di dwuma no yie\n"
-"Anaaso GFX Toolkit no nngye Prent Ndaelɔg nnto mu bio"
-
-#: NS_ERROR_GFX_NO_PRINTROMPTSERVICE
-msgid "The Printing Prompt Service is missing."
-msgstr "Printing Prompt Service no ayera."
-
-#: NS_ERROR_GFX_PRINTER_NO_XUL
-msgid "We are unable to Print or Print Preview this page."
-msgstr "Yenntumi nnyɛ Prent anaaso Prent Priviw wɔ krataafa yi so."
-
-#: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the plex mode you specified is not "
-"supported by your printer."
-msgstr ""
-"Haw bi bae wɔ bere a prente dwumadi rekɔ so efiri sɛ wo prent-fidie no nngye "
-"plex tebea a wo kyerɛɛ no nnto mu."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY
-msgid "The browser cannot print the document while it is being loaded."
-msgstr "Brawsa no nntumi mmprente dɔkumɛnt no wɔ bere a wɔreloode no."
-
-#: NS_ERROR_GFX_PRINTING_NOT_IMPLEMENTED
-msgid "Printing is not implemented."
-msgstr "Wɔnnsii prent dwumadi no pi."
-
-#: NS_ERROR_GFX_COULD_NOT_LOAD_PRINT_MODULE
-msgid "The requested print module cannot be loaded."
-msgstr "Wɔnntumi nnloode prent mɔdul a wɔbisaa no."
-
-#: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the resolution/quality mode you "
-"specified is not supported by your printer."
-msgstr ""
-"Haw bi bae wɔ bere a prent dwumadi rekɔ so efiri sɛ wo prent-fidie nngye "
-"enimanoɔden a wo kyerɛɛ no nnto mu."
-
-#. # No printers available
-#: noprinter
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE
+#, fuzzy
+msgctxt "PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE"
 msgid "No printers available."
 msgstr "Prent-mfidie biara nni hɔ."
 
-#: PrintToFile
-msgid "Print To File"
-msgstr "Prente Kɔ Fael mu"
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE_PP
+msgid "No printers available, cannot show print preview."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NAME_NOT_FOUND
+msgid "The selected printer could not be found."
+msgstr ""
+
+#: PERR_GFX_PRINTER_COULD_NOT_OPEN_FILE
+msgid "Failed to open output file for print to file."
+msgstr ""
+
+#: PERR_GFX_PRINTER_STARTDOC
+#, fuzzy
+msgid "Printing failed while starting the print job."
+msgstr "Prent dwumadi no dii nkugu wɔ bere a ɔrehyɛ krataafa no ase."
+
+#: PERR_GFX_PRINTER_ENDDOC
+#, fuzzy
+msgid "Printing failed while completing the print job."
+msgstr "Prent dwumadi no dii nkugu wɔ bere ɔrewie krataafa no."
+
+#: PERR_GFX_PRINTER_STARTPAGE
+#, fuzzy
+msgid "Printing failed while starting a new page."
+msgstr "Prent dwumadi no dii nkugu wɔ bere a ɔrehyɛ krataafa no ase."
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY
+msgid "Cannot print this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY_PP
+msgid "Cannot print-preview this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NO_XUL
+msgid "Printing XUL documents is not supported."
+msgstr ""
+
+#~ msgid ""
+#~ "There was a problem printing. The printer doesn't support a printing "
+#~ "command."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Prent-fidie no nngye prent "
+#~ "kɔmand bi nnto mu."
+
+#~ msgid ""
+#~ "There was a problem printing. An instruction that was sent to the printer "
+#~ "failed."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Akwankyerɛ a wɔde soma kɔɔ "
+#~ "prent-fidie no so annkɔ yie."
+
+#~ msgid "There was a problem printing. No printer could be found."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Ennhu prent-fidie biara."
+
+#~ msgid "There was a problem printing. The printer could not be found."
+#~ msgstr "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Ennhu prent-fidie no."
+
+#~ msgid "There was a problem printing. Access to the printer was denied."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Wɔamma prent-fidie ho kwan."
+
+#~ msgid ""
+#~ "There was a problem printing. Tried to set an invalid printer attribute."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Wɔyɛɛ sɛ wɔbɛhyɛ su bi a "
+#~ "ɔnndi mu ama prent-fidie no."
+
+#~ msgid "There was a problem printing. The printer not ready."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Prent-fidie no nnsiesiee ne "
+#~ "ho nnwiei."
+
+#~ msgid "There was a problem printing. The printer is out of paper."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Krataa biara nni prent-fidie "
+#~ "no mu bio."
+
+#~ msgid "There was a problem printing. Printer I/O error."
+#~ msgstr "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Prent-fidie mfomso I/O."
+
+#~ msgid "There was a problem printing. The output file could not be opened."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Enntumi emmbue fael a wɔepue "
+#~ "no."
+
+#~ msgid "There was an error writing the printing output file."
+#~ msgstr "Mfomso bi bae wɔ bere a wɔreprente fael a wɔepue no."
+
+#~ msgid "There must be at least one printer available to show Print Preview."
+#~ msgstr ""
+#~ "Annyɛ koraa no, ɛwɔ sɛ prent-fidie baako da hɔ a wɔbɛkyerɛ no wɔ Prent "
+#~ "Priviw mu."
+
+#~ msgid ""
+#~ "There was a problem printing. There is not enough free memory to print."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Mɛmri a ɛda hɔ kwa nndɔɔso a "
+#~ "ɛbɛma ho kwan ma prent dwumadi akɔ so."
+
+#~ msgid "Not available"
+#~ msgstr "Nni hɔ"
+
+#~ msgid "Printing failed when starting the document."
+#~ msgstr "Prent dwumadi dii nkugu wɔ bere a ɔrehyɛ dɔkumɛnt no ase."
+
+#~ msgid "Printing failed when completing the document."
+#~ msgstr "Prent dwumadi dii nkugu wɔ bere a ɔrewie dɔkumɛnt no."
+
+#~ msgid "You cannot print while in print preview."
+#~ msgstr "Wo renntumi mmprente wɔ bere a wo wɔ prent priviw."
+
+#~ msgid ""
+#~ "There was a problem printing because the paper size you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a wo reprente efiri sɛ wo prent-fidie nngye krataafa "
+#~ "kɛseyɛ wo kyerɛɛ no nnto mu."
+
+#~ msgid ""
+#~ "There was a problem printing because the page orientation you specified "
+#~ "is not supported by your printer."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so efiri sɛ wo prent-fidie nngye "
+#~ "krataafa ne danebea wo kyerɛɛ no nnto mu."
+
+#~ msgid ""
+#~ "There was a problem printing because the print job requires color "
+#~ "capabilities that your printer does not support."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so efiri sɛ prent-dwumadi no hia "
+#~ "ahosu tumidi a wo prent-fidie no nni."
+
+#~ msgid "There was a problem printing because you requested too many copies."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so efiri sɛ wo bisaa sɛso bebree "
+#~ "dodow."
+
+#~ msgid ""
+#~ "There was a problem printing. The printer driver is not properly "
+#~ "configured."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so. Wɔnhyɛɛ prent-fidie sɔftwɛɛ "
+#~ "no yie."
+
+#~ msgid ""
+#~ "The browser cannot print preview right now.\n"
+#~ "Please try again when the page has finished loading."
+#~ msgstr ""
+#~ "Brawsa no nntumi nnyɛ prente priviw seiseiara.\n"
+#~ "Yɛsrɛ wo bɔ mbɔden bio sɛ krataafa no wie sɛ ɔreloode a."
+
+#~ msgid ""
+#~ "The page was replaced while you were trying to print.\n"
+#~ "Please try again."
+#~ msgstr ""
+#~ "Wɔhyɛ krataafa no anan mu wɔ bere a wo rebɔ mbɔden aprente no.\n"
+#~ "Yɛsrɛ wo bɔ mbɔden prente bio."
+
+#~ msgid ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+#~ msgstr ""
+#~ "Wɔenntumi enninstɔle ndaelɔg a wɔde di dwuma no yie\n"
+#~ "Anaaso GFX Toolkit no nngye Prent Ndaelɔg nnto mu bio"
+
+#~ msgid "The Printing Prompt Service is missing."
+#~ msgstr "Printing Prompt Service no ayera."
+
+#~ msgid "We are unable to Print or Print Preview this page."
+#~ msgstr "Yenntumi nnyɛ Prent anaaso Prent Priviw wɔ krataafa yi so."
+
+#~ msgid ""
+#~ "There was a problem printing because the plex mode you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prente dwumadi rekɔ so efiri sɛ wo prent-fidie no "
+#~ "nngye plex tebea a wo kyerɛɛ no nnto mu."
+
+#~ msgid "The browser cannot print the document while it is being loaded."
+#~ msgstr "Brawsa no nntumi mmprente dɔkumɛnt no wɔ bere a wɔreloode no."
+
+#~ msgid "Printing is not implemented."
+#~ msgstr "Wɔnnsii prent dwumadi no pi."
+
+#~ msgid "The requested print module cannot be loaded."
+#~ msgstr "Wɔnntumi nnloode prent mɔdul a wɔbisaa no."
+
+#~ msgid ""
+#~ "There was a problem printing because the resolution/quality mode you "
+#~ "specified is not supported by your printer."
+#~ msgstr ""
+#~ "Haw bi bae wɔ bere a prent dwumadi rekɔ so efiri sɛ wo prent-fidie nngye "
+#~ "enimanoɔden a wo kyerɛɛ no nnto mu."
