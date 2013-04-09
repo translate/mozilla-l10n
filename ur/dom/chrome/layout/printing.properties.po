@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: 2012-12-22 12:48+0000\n"
 "Last-Translator: Faisal <faisalaziz4ever@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,12 +14,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1356180506.0\n"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
 #. # Place the word %ld where the page number and number of pages should be
@@ -28,7 +28,7 @@ msgstr ""
 msgid "%1$d"
 msgstr "%1$d"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. ## @page_total The total number of pages
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
@@ -39,15 +39,25 @@ msgstr "%1$d"
 msgid "%1$d of %2$d"
 msgstr "%2$d کا %1$d"
 
+#: noprinter
+#, fuzzy
+msgctxt "noprinter"
+msgid "No printers available."
+msgstr "کوئی پرنٹر دستیاب نہیں۔"
+
+#: PrintToFile
+msgid "Print To File"
+msgstr "مسل میں چھاپیں"
+
 #: noPrintFilename.title
 msgid "Filename is missing"
 msgstr "فائل کا نام غائب ہے"
 
 #: noPrintFilename.alert
-msgid "You have selected \"Print To: File\", and the filename is empty!"
+#, fuzzy
+msgid "You have selected \"Print To File\", and the filename is empty!"
 msgstr "آپ نے \"چھاپیں بطرف: مسل\" منتخب کیا ہے اور نام مسل خالی ہے!"
 
-#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -56,7 +66,6 @@ msgstr ""
 "%S پہلے ہی موجود ہے۔\n"
 "کیا آپ اسے بدلنا چاہتے ہیں؟"
 
-#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "پرنٹر نقص"
@@ -65,206 +74,231 @@ msgstr "پرنٹر نقص"
 msgid "Print Preview Error"
 msgstr "چھپائی پیش نظارہ نقص"
 
-#: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid ""
-"There was a problem printing. The printer doesn't support a printing command."
-msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر کسی چھپائی حکم کی معاونت نہیں کرتا۔"
+#. # Printing error messages.
+#. #LOCALIZATION NOTE: Some of these messages come in pairs, one
+#. # for printing and one for print previewing.  You can remove that
+#. # distinction in your language by removing the entity with the _PP
+#. # suffix; then the entity without a suffix will be used for both.
+#. # You can also add that distinction to any of the messages that don't
+#. # already have it by adding a new entity with a _PP suffix.
+#. #
+#. # For instance, if you delete PERR_GFX_PRINTER_DOC_IS_BUSY_PP, then
+#. # the PERR_GFX_PRINTER_DOC_IS_BUSY message will be used for that error
+#. # condition when print previewing as well as when printing.  If you
+#. # add PERR_FAILURE_PP, then PERR_FAILURE will only be used when
+#. # printing, and PERR_FAILURE_PP will be used under the same conditions
+#. # when print previewing.
+#. #
+#: PERR_FAILURE
+#, fuzzy
+msgid "An error occurred while printing."
+msgstr "چھپائی کے دوران ایک نامعلوم نقص واقع ہوا۔"
 
-#: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid ""
-"There was a problem printing. An instruction that was sent to the printer "
-"failed."
-msgstr ""
-"چھپائی میں ایک مسئلہ تھا۔ ایک ہدایت جو پرنٹر کو بھیجی گئی تھی، ناکام ہوئی۔"
-
-#: NS_ERROR_GFX_PRINTER_NO_PRINTER_AVAILABLE
-msgid "There was a problem printing. No printer could be found."
-msgstr "چھپائی میں ایک مسئلہ تھا۔ کوئی پرنٹر نہیں مل سکا۔"
-
-#: NS_ERROR_GFX_PRINTER_NAME_NOT_FOUND
-msgid "There was a problem printing. The printer could not be found."
-msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر نہیں مل سکا۔"
-
-#: NS_ERROR_GFX_PRINTER_ACCESS_DENIED
-msgid "There was a problem printing. Access to the printer was denied."
-msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر تک رسائی سے انکار ہوا۔"
-
-#: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid ""
-"There was a problem printing. Tried to set an invalid printer attribute."
-msgstr ""
-"چھپائی میں ایک مسئلہ تھا۔ ایک ناجائز پرنٹر وصف سیٹ کرنے کی کوشش کی گئی۔"
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_NOT_READY
-msgid "There was a problem printing. The printer not ready."
-msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر تیار نہیں۔"
-
-#: NS_ERROR_GFX_PRINTER_OUT_OF_PAPER
-msgid "There was a problem printing. The printer is out of paper."
-msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر میں کاغذ نہیں۔"
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_IO_ERROR
-msgid "There was a problem printing. Printer I/O error."
-msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر ان پٹ/آؤٹ پٹ نقص۔"
-
-#: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
-msgid "There was a problem printing. The output file could not be opened."
-msgstr "چھپائی میں ایک مسئلہ تھا۔ آؤٹ پٹ مسل نہیں کھل سکی۔"
-
-#: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
-msgid "There was an error writing the printing output file."
-msgstr "چھپائی آؤٹ پٹ مسل لکھنے میں ایک نقص تھا۔"
-
-#: NS_ERROR_GFX_PRINTER_PRINTPREVIEW
-msgid "There must be at least one printer available to show Print Preview."
-msgstr ""
-"چھپائی پیش نظارہ نمائش کرنے کے لیے کم از کم ایک پرنٹر دستیاب ہونا چاہیے۔"
-
-#: NS_ERROR_UNEXPECTED
-msgid "There was an unexpected problem when printing."
-msgstr "چھاپتے ہوئے ایک غیر متوقع مسئلہ تھا۔"
-
-#: NS_ERROR_OUT_OF_MEMORY
-msgid "There was a problem printing. There is not enough free memory to print."
-msgstr "چھپائی میں ایک مسئلہ تھا۔ چھپائی کے لیے آزاد میموری کافی نہیں۔"
-
-#: NS_ERROR_NOT_IMPLEMENTED
-msgid "Some printing functionality is not implemented yet."
-msgstr "کچھ چھپائی فعلیت ابھی اطلاق شدہ نہیں ہے۔"
-
-#: NS_ERROR_NOT_AVAILABLE
-msgid "Not available"
-msgstr "دستیاب نہیں"
-
-#: NS_ERROR_ABORT
+#: PERR_ABORT
 msgid "The print job was aborted, or canceled."
 msgstr "پرنٹ جاب ساقط، یا منسوخ کر دی گئی تھی۔"
 
-#: NS_ERROR_FAILURE
-msgid "An unknown error occurred while printing."
-msgstr "چھپائی کے دوران ایک نامعلوم نقص واقع ہوا۔"
-
-#: NS_ERROR_GFX_PRINTER_STARTDOC
-msgid "Printing failed when starting the document."
-msgstr "دستاویز شروع کرتے ہوئے چھپائی ناکام ہوئی۔"
-
-#: NS_ERROR_GFX_PRINTER_ENDDOC
-msgid "Printing failed when completing the document."
-msgstr "دستاویز مکمل کرتے ہوئے چھپائی ناکام ہوئی۔"
-
-#: NS_ERROR_GFX_PRINTER_STARTPAGE
-msgid "Printing failed when starting the page."
-msgstr "صفحہ شروع کرتے ہوئے چھپائی ناکام ہوئی۔"
-
-#: NS_ERROR_GFX_PRINTER_ENDPAGE
-msgid "Printing failed when completing the page."
-msgstr "صفحہ مکمل کرتے ہوئے چھپائی ناکام ہوئی۔"
-
-#: NS_ERROR_GFX_PRINTER_PRINT_WHILE_PREVIEW
-msgid "You cannot print while in print preview."
-msgstr "پرنٹ پیش نظارے کے دوران آپ چھاپ نہیں سکتے۔"
-
-#: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the paper size you specified is not "
-"supported by your printer."
+#: PERR_NOT_AVAILABLE
+msgid "Some printing functionality is not currently available."
 msgstr ""
-"چھپائی میں ایک مسئلہ تھا کیونکہ آپ کا اختصاصی صفحہ سائز آپ کے پرنٹر سے "
-"معاونت شدہ نہیں ہے۔"
 
-#: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the page orientation you specified is "
-"not supported by your printer."
+#: PERR_NOT_IMPLEMENTED
+msgid "Some printing functionality is not implemented yet."
+msgstr "کچھ چھپائی فعلیت ابھی اطلاق شدہ نہیں ہے۔"
+
+#: PERR_OUT_OF_MEMORY
+msgid "There is not enough free memory to print."
 msgstr ""
-"چھپائی میں ایک مسئلہ تھا کیونکہ آپ کی اختصاصی صفحہ سمت بندی آپ کے پرنٹر سے "
-"معاونت شدہ نہیں ہے۔"
 
-#: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the print job requires color "
-"capabilities that your printer does not support."
-msgstr ""
-"چھپائی میں ایک مسئلہ تھا کیونکہ چھپائی کارگہی کو رنگ اہلیتیں درکار ہیں جو آپ "
-"کا پرنٹر معاونت نہیں کرتا۔"
+#: PERR_UNEXPECTED
+#, fuzzy
+msgid "There was an unexpected problem while printing."
+msgstr "چھاپتے ہوئے ایک غیر متوقع مسئلہ تھا۔"
 
-#: NS_ERROR_GFX_PRINTER_TOO_MANY_COPIES
-msgid "There was a problem printing because you requested too many copies."
-msgstr "چھپائی میں ایک مسئلہ تھا کیونکہ آپ نے بہت زیادہ نقول کی فرمائش کی۔"
-
-#: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid ""
-"There was a problem printing. The printer driver is not properly configured."
-msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر ڈرائیور صحیح طرح سے تشکیل کردہ نہیں۔"
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid ""
-"The browser cannot print preview right now.\n"
-"Please try again when the page has finished loading."
-msgstr ""
-"براؤزر ابھی چھپائی کا پیش نظارہ نہیں کر سکتا۔\n"
-" جب صفحے لوڈ ہونا مکمل ہو جائے تو دوبارہ کوشش کریں۔"
-
-#: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid ""
-"The page was replaced while you were trying to print.\n"
-"Please try again."
-msgstr ""
-"صفحہ بدل دیا گیا تھا جب آپ چھپائی کرنے کی کوشش کر رہے تھے۔\n"
-"دوبارہ کوشش کریں۔"
-
-#: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
-msgstr ""
-"یا اتصال پذیر مکالمے صحیح طرح سے تنصیب شدہ نہیں تھے \n"
-"یا یہ جی ایف ایکس ٹول کٹ مقامی پرنٹ مکالمے کو اب معاونت نہیں کرتا"
-
-#: NS_ERROR_GFX_NO_PRINTROMPTSERVICE
-msgid "The Printing Prompt Service is missing."
-msgstr "چھپائی پرامپٹ خدمت غائب ہے۔"
-
-#: NS_ERROR_GFX_PRINTER_NO_XUL
-msgid "We are unable to Print or Print Preview this page."
-msgstr "ہم یہ صفحہ چھاپنے یا پیش نظارہ کرنے میں ناکام ہیں۔"
-
-#: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the plex mode you specified is not "
-"supported by your printer."
-msgstr ""
-"چھپائی میں ایک مسئلہ تھا کیونکہ آپ کا اختصاصی پلیکس موڈ آپ کے پرنٹر سے "
-"معاونت شدہ نہیں ہے۔"
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY
-msgid "The browser cannot print the document while it is being loaded."
-msgstr "براؤزر دستاویز کے لوڈ ہونے کے دوران اسے پرنٹ نہیں کر سکتا۔"
-
-#: NS_ERROR_GFX_PRINTING_NOT_IMPLEMENTED
-msgid "Printing is not implemented."
-msgstr "چھپائی اطلاق شدہ نہیں ہے۔"
-
-#: NS_ERROR_GFX_COULD_NOT_LOAD_PRINT_MODULE
-msgid "The requested print module cannot be loaded."
-msgstr "فرمائشی چھپائی ماڈیول لوڈ نہیں کیا جا سکتا۔"
-
-#: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the resolution/quality mode you "
-"specified is not supported by your printer."
-msgstr ""
-"چھپائی میں ایک مسئلہ تھا کیونکہ آپ کا اختصاصی جزیات کاری/کوالٹی موڈ آپ کے "
-"پرنٹر سے معاونت شدہ نہیں ہے۔"
-
-#. # No printers available
-#: noprinter
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE
+#, fuzzy
+msgctxt "PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE"
 msgid "No printers available."
 msgstr "کوئی پرنٹر دستیاب نہیں۔"
 
-#: PrintToFile
-msgid "Print To File"
-msgstr "مسل میں چھاپیں"
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE_PP
+msgid "No printers available, cannot show print preview."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NAME_NOT_FOUND
+msgid "The selected printer could not be found."
+msgstr ""
+
+#: PERR_GFX_PRINTER_COULD_NOT_OPEN_FILE
+msgid "Failed to open output file for print to file."
+msgstr ""
+
+#: PERR_GFX_PRINTER_STARTDOC
+#, fuzzy
+msgid "Printing failed while starting the print job."
+msgstr "صفحہ شروع کرتے ہوئے چھپائی ناکام ہوئی۔"
+
+#: PERR_GFX_PRINTER_ENDDOC
+#, fuzzy
+msgid "Printing failed while completing the print job."
+msgstr "صفحہ مکمل کرتے ہوئے چھپائی ناکام ہوئی۔"
+
+#: PERR_GFX_PRINTER_STARTPAGE
+#, fuzzy
+msgid "Printing failed while starting a new page."
+msgstr "صفحہ شروع کرتے ہوئے چھپائی ناکام ہوئی۔"
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY
+msgid "Cannot print this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY_PP
+msgid "Cannot print-preview this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NO_XUL
+msgid "Printing XUL documents is not supported."
+msgstr ""
+
+#~ msgid ""
+#~ "There was a problem printing. The printer doesn't support a printing "
+#~ "command."
+#~ msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر کسی چھپائی حکم کی معاونت نہیں کرتا۔"
+
+#~ msgid ""
+#~ "There was a problem printing. An instruction that was sent to the printer "
+#~ "failed."
+#~ msgstr ""
+#~ "چھپائی میں ایک مسئلہ تھا۔ ایک ہدایت جو پرنٹر کو بھیجی گئی تھی، ناکام ہوئی۔"
+
+#~ msgid "There was a problem printing. No printer could be found."
+#~ msgstr "چھپائی میں ایک مسئلہ تھا۔ کوئی پرنٹر نہیں مل سکا۔"
+
+#~ msgid "There was a problem printing. The printer could not be found."
+#~ msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر نہیں مل سکا۔"
+
+#~ msgid "There was a problem printing. Access to the printer was denied."
+#~ msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر تک رسائی سے انکار ہوا۔"
+
+#~ msgid ""
+#~ "There was a problem printing. Tried to set an invalid printer attribute."
+#~ msgstr ""
+#~ "چھپائی میں ایک مسئلہ تھا۔ ایک ناجائز پرنٹر وصف سیٹ کرنے کی کوشش کی گئی۔"
+
+#~ msgid "There was a problem printing. The printer not ready."
+#~ msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر تیار نہیں۔"
+
+#~ msgid "There was a problem printing. The printer is out of paper."
+#~ msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر میں کاغذ نہیں۔"
+
+#~ msgid "There was a problem printing. Printer I/O error."
+#~ msgstr "چھپائی میں ایک مسئلہ تھا۔ پرنٹر ان پٹ/آؤٹ پٹ نقص۔"
+
+#~ msgid "There was a problem printing. The output file could not be opened."
+#~ msgstr "چھپائی میں ایک مسئلہ تھا۔ آؤٹ پٹ مسل نہیں کھل سکی۔"
+
+#~ msgid "There was an error writing the printing output file."
+#~ msgstr "چھپائی آؤٹ پٹ مسل لکھنے میں ایک نقص تھا۔"
+
+#~ msgid "There must be at least one printer available to show Print Preview."
+#~ msgstr ""
+#~ "چھپائی پیش نظارہ نمائش کرنے کے لیے کم از کم ایک پرنٹر دستیاب ہونا چاہیے۔"
+
+#~ msgid ""
+#~ "There was a problem printing. There is not enough free memory to print."
+#~ msgstr "چھپائی میں ایک مسئلہ تھا۔ چھپائی کے لیے آزاد میموری کافی نہیں۔"
+
+#~ msgid "Not available"
+#~ msgstr "دستیاب نہیں"
+
+#~ msgid "Printing failed when starting the document."
+#~ msgstr "دستاویز شروع کرتے ہوئے چھپائی ناکام ہوئی۔"
+
+#~ msgid "Printing failed when completing the document."
+#~ msgstr "دستاویز مکمل کرتے ہوئے چھپائی ناکام ہوئی۔"
+
+#~ msgid "You cannot print while in print preview."
+#~ msgstr "پرنٹ پیش نظارے کے دوران آپ چھاپ نہیں سکتے۔"
+
+#~ msgid ""
+#~ "There was a problem printing because the paper size you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "چھپائی میں ایک مسئلہ تھا کیونکہ آپ کا اختصاصی صفحہ سائز آپ کے پرنٹر سے "
+#~ "معاونت شدہ نہیں ہے۔"
+
+#~ msgid ""
+#~ "There was a problem printing because the page orientation you specified "
+#~ "is not supported by your printer."
+#~ msgstr ""
+#~ "چھپائی میں ایک مسئلہ تھا کیونکہ آپ کی اختصاصی صفحہ سمت بندی آپ کے پرنٹر "
+#~ "سے معاونت شدہ نہیں ہے۔"
+
+#~ msgid ""
+#~ "There was a problem printing because the print job requires color "
+#~ "capabilities that your printer does not support."
+#~ msgstr ""
+#~ "چھپائی میں ایک مسئلہ تھا کیونکہ چھپائی کارگہی کو رنگ اہلیتیں درکار ہیں جو "
+#~ "آپ کا پرنٹر معاونت نہیں کرتا۔"
+
+#~ msgid "There was a problem printing because you requested too many copies."
+#~ msgstr "چھپائی میں ایک مسئلہ تھا کیونکہ آپ نے بہت زیادہ نقول کی فرمائش کی۔"
+
+#~ msgid ""
+#~ "There was a problem printing. The printer driver is not properly "
+#~ "configured."
+#~ msgstr ""
+#~ "چھپائی میں ایک مسئلہ تھا۔ پرنٹر ڈرائیور صحیح طرح سے تشکیل کردہ نہیں۔"
+
+#~ msgid ""
+#~ "The browser cannot print preview right now.\n"
+#~ "Please try again when the page has finished loading."
+#~ msgstr ""
+#~ "براؤزر ابھی چھپائی کا پیش نظارہ نہیں کر سکتا۔\n"
+#~ " جب صفحے لوڈ ہونا مکمل ہو جائے تو دوبارہ کوشش کریں۔"
+
+#~ msgid ""
+#~ "The page was replaced while you were trying to print.\n"
+#~ "Please try again."
+#~ msgstr ""
+#~ "صفحہ بدل دیا گیا تھا جب آپ چھپائی کرنے کی کوشش کر رہے تھے۔\n"
+#~ "دوبارہ کوشش کریں۔"
+
+#~ msgid ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+#~ msgstr ""
+#~ "یا اتصال پذیر مکالمے صحیح طرح سے تنصیب شدہ نہیں تھے \n"
+#~ "یا یہ جی ایف ایکس ٹول کٹ مقامی پرنٹ مکالمے کو اب معاونت نہیں کرتا"
+
+#~ msgid "The Printing Prompt Service is missing."
+#~ msgstr "چھپائی پرامپٹ خدمت غائب ہے۔"
+
+#~ msgid "We are unable to Print or Print Preview this page."
+#~ msgstr "ہم یہ صفحہ چھاپنے یا پیش نظارہ کرنے میں ناکام ہیں۔"
+
+#~ msgid ""
+#~ "There was a problem printing because the plex mode you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "چھپائی میں ایک مسئلہ تھا کیونکہ آپ کا اختصاصی پلیکس موڈ آپ کے پرنٹر سے "
+#~ "معاونت شدہ نہیں ہے۔"
+
+#~ msgid "The browser cannot print the document while it is being loaded."
+#~ msgstr "براؤزر دستاویز کے لوڈ ہونے کے دوران اسے پرنٹ نہیں کر سکتا۔"
+
+#~ msgid "Printing is not implemented."
+#~ msgstr "چھپائی اطلاق شدہ نہیں ہے۔"
+
+#~ msgid "The requested print module cannot be loaded."
+#~ msgstr "فرمائشی چھپائی ماڈیول لوڈ نہیں کیا جا سکتا۔"
+
+#~ msgid ""
+#~ "There was a problem printing because the resolution/quality mode you "
+#~ "specified is not supported by your printer."
+#~ msgstr ""
+#~ "چھپائی میں ایک مسئلہ تھا کیونکہ آپ کا اختصاصی جزیات کاری/کوالٹی موڈ آپ کے "
+#~ "پرنٹر سے معاونت شدہ نہیں ہے۔"
 
 #~ msgid "serif"
 #~ msgstr "serif"
