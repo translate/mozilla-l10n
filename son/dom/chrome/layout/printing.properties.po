@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: 2012-06-04 14:55+0200\n"
 "Last-Translator: Mohomodou  <mh@bollag-areal.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
 #. # Place the word %ld where the page number and number of pages should be
@@ -30,7 +30,7 @@ msgstr ""
 msgid "%1$d"
 msgstr "%1$d"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. ## @page_total The total number of pages
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
@@ -41,15 +41,25 @@ msgstr "%1$d"
 msgid "%1$d of %2$d"
 msgstr "%1$d hun %2$d ra"
 
+#: noprinter
+#, fuzzy
+msgctxt "noprinter"
+msgid "No printers available."
+msgstr "Kar maršin kul ši duwandi."
+
+#: PrintToFile
+msgid "Print To File"
+msgstr "Kar tuku foo ra"
+
 #: noPrintFilename.title
 msgid "Filename is missing"
 msgstr "Tukumaa jaŋay"
 
 #: noPrintFilename.alert
-msgid "You have selected \"Print To: File\", and the filename is empty!"
+#, fuzzy
+msgid "You have selected \"Print To File\", and the filename is empty!"
 msgstr "War na \"Kar ga; Tuku\" suuba, amma maaɲoo ga koonu!"
 
-#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -58,7 +68,6 @@ msgstr ""
 "%S ga bara ka ben.\n"
 "War ga baa k'a barmay?"
 
-#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "Kar maršin firka"
@@ -67,203 +76,227 @@ msgstr "Kar maršin firka"
 msgid "Print Preview Error"
 msgstr "Kar moo-fur firka"
 
-#: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid ""
-"There was a problem printing. The printer doesn't support a printing command."
-msgstr "Karyanoo dii šenday. Kar maršinoo ši koy nda kar juwal foo."
+#. # Printing error messages.
+#. #LOCALIZATION NOTE: Some of these messages come in pairs, one
+#. # for printing and one for print previewing.  You can remove that
+#. # distinction in your language by removing the entity with the _PP
+#. # suffix; then the entity without a suffix will be used for both.
+#. # You can also add that distinction to any of the messages that don't
+#. # already have it by adding a new entity with a _PP suffix.
+#. #
+#. # For instance, if you delete PERR_GFX_PRINTER_DOC_IS_BUSY_PP, then
+#. # the PERR_GFX_PRINTER_DOC_IS_BUSY message will be used for that error
+#. # condition when print previewing as well as when printing.  If you
+#. # add PERR_FAILURE_PP, then PERR_FAILURE will only be used when
+#. # printing, and PERR_FAILURE_PP will be used under the same conditions
+#. # when print previewing.
+#. #
+#: PERR_FAILURE
+#, fuzzy
+msgid "An error occurred while printing."
+msgstr "Firka šibayante bangay karyanoo waate."
 
-#: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid ""
-"There was a problem printing. An instruction that was sent to the printer "
-"failed."
-msgstr ""
-"Karyanoo dii šenday. Yaamar foo kaŋ sanbandi kar maršinoo doo mana too."
-
-#: NS_ERROR_GFX_PRINTER_NO_PRINTER_AVAILABLE
-msgid "There was a problem printing. No printer could be found."
-msgstr "Karyanoo dii šenday. Kar maršin kul mana hin ka duwandi."
-
-#: NS_ERROR_GFX_PRINTER_NAME_NOT_FOUND
-msgid "There was a problem printing. The printer could not be found."
-msgstr "Karyanoo dii šenday. Kar maršinoo mana hin ka duwandi."
-
-#: NS_ERROR_GFX_PRINTER_ACCESS_DENIED
-msgid "There was a problem printing. Access to the printer was denied."
-msgstr "Karyanoo dii šenday. Kar maršinoo ši nda fondo."
-
-#: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid ""
-"There was a problem printing. Tried to set an invalid printer attribute."
-msgstr ""
-"Karyanoo dii šenday. A n' ka ceeci ka kar maršin alhaali laala kayandi."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_NOT_READY
-msgid "There was a problem printing. The printer not ready."
-msgstr "Karyanoo dii šenday. Kar maršinoo mana soolu."
-
-#: NS_ERROR_GFX_PRINTER_OUT_OF_PAPER
-msgid "There was a problem printing. The printer is out of paper."
-msgstr "Karyanoo dii šenday. Kar maršinoo ši nda kaddasu."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_IO_ERROR
-msgid "There was a problem printing. Printer I/O error."
-msgstr "Karyanoo dii šenday. Kar maršin I/O firka."
-
-#: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
-msgid "There was a problem printing. The output file could not be opened."
-msgstr "Karyanoo dii šenday. Fattari tukoo ši hin ka feera."
-
-#: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
-msgid "There was an error writing the printing output file."
-msgstr "Firka bangay kar fattari tukoo hantumyanoo ra."
-
-#: NS_ERROR_GFX_PRINTER_PRINTPREVIEW
-msgid "There must be at least one printer available to show Print Preview."
-msgstr "Kar maršin foo ga hima ka bara, ka kar moo-fur cebe."
-
-#: NS_ERROR_UNEXPECTED
-msgid "There was an unexpected problem when printing."
-msgstr "Šenday foo bangay karyanoo ra kaŋ mana naanandi."
-
-#: NS_ERROR_OUT_OF_MEMORY
-msgid "There was a problem printing. There is not enough free memory to print."
-msgstr "Karyanoo dii šenday. Lakkaloo ši wasa ka kara."
-
-#: NS_ERROR_NOT_IMPLEMENTED
-msgid "Some printing functionality is not implemented yet."
-msgstr "Karyan goy sahã tana mana huru goy jina."
-
-#: NS_ERROR_NOT_AVAILABLE
-msgid "Not available"
-msgstr "Ši duwandi"
-
-#: NS_ERROR_ABORT
+#: PERR_ABORT
 msgid "The print job was aborted, or canceled."
 msgstr "Kar goyoo munandi wala n' ka naŋandi."
 
-#: NS_ERROR_FAILURE
-msgid "An unknown error occurred while printing."
-msgstr "Firka šibayante bangay karyanoo waate."
-
-#: NS_ERROR_GFX_PRINTER_STARTDOC
-msgid "Printing failed when starting the document."
-msgstr "Karyanoo kay takaddaa sintinoo ga."
-
-#: NS_ERROR_GFX_PRINTER_ENDDOC
-msgid "Printing failed when completing the document."
-msgstr "Karyanoo kay takaddaa benantaa ga."
-
-#: NS_ERROR_GFX_PRINTER_STARTPAGE
-msgid "Printing failed when starting the page."
-msgstr "Karyanoo kay moɲoo sintinoo ga."
-
-#: NS_ERROR_GFX_PRINTER_ENDPAGE
-msgid "Printing failed when completing the page."
-msgstr "Karyanoo kay moɲoo benantaa ga."
-
-#: NS_ERROR_GFX_PRINTER_PRINT_WHILE_PREVIEW
-msgid "You cannot print while in print preview."
-msgstr "War ši hin ka kar moo-furyanoo waate."
-
-#: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the paper size you specified is not "
-"supported by your printer."
+#: PERR_NOT_AVAILABLE
+msgid "Some printing functionality is not currently available."
 msgstr ""
-"Karyanoo dii šenday zama takkada adadoo kaŋ war n'a tabatandi kar maršinoo "
-"se ši nda gaakašinay."
 
-#: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the page orientation you specified is "
-"not supported by your printer."
+#: PERR_NOT_IMPLEMENTED
+msgid "Some printing functionality is not implemented yet."
+msgstr "Karyan goy sahã tana mana huru goy jina."
+
+#: PERR_OUT_OF_MEMORY
+msgid "There is not enough free memory to print."
 msgstr ""
-"Karyanoo dii šenday zama moo honnandiyanoo kaŋ war n'a tabatandi kar "
-"maršinoo se ši nda gaakašinay."
 
-#: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the print job requires color "
-"capabilities that your printer does not support."
-msgstr ""
-"Karyanoo dii šenday zama kar goyoo ga baa noone hinayyaŋ kaŋ se war kar "
-"maršinoo ši nda faaba."
+#: PERR_UNEXPECTED
+#, fuzzy
+msgid "There was an unexpected problem while printing."
+msgstr "Šenday foo bangay karyanoo ra kaŋ mana naanandi."
 
-#: NS_ERROR_GFX_PRINTER_TOO_MANY_COPIES
-msgid "There was a problem printing because you requested too many copies."
-msgstr "Karyanoo dii šenday zama war na berandi booboyaŋ wiri."
-
-#: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid ""
-"There was a problem printing. The printer driver is not properly configured."
-msgstr "Karyanoo dii šenday. Kar maršinoo mana hanse ka boori."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid ""
-"The browser cannot print preview right now.\n"
-"Please try again when the page has finished loading."
-msgstr ""
-"Interneti-ceecikaa mana hin ka kar moo-fur sohõda.\n"
-"Taare a tee taaga waati kaŋ moɲoo zumandi ka ben."
-
-#: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid ""
-"The page was replaced while you were trying to print.\n"
-"Please try again."
-msgstr ""
-"Moɲoo barmay waatoo kaŋ no war ceeci ka kara.\n"
-"Taare a tee taaga."
-
-#: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
-msgstr ""
-"A ga hin ka faakaray sukantey mana sinji ka boori\n"
-"Wala bii-goybataa woo ši hin ka lasal kar faakarawey goyandi."
-
-#: NS_ERROR_GFX_NO_PRINTROMPTSERVICE
-msgid "The Printing Prompt Service is missing."
-msgstr "Kar hãayan zuu ši bara."
-
-#: NS_ERROR_GFX_PRINTER_NO_XUL
-msgid "We are unable to Print or Print Preview this page."
-msgstr "Ir ši hin ka moɲoo woo kar wala ka moo fur a ga."
-
-#: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the plex mode you specified is not "
-"supported by your printer."
-msgstr ""
-"Karyanoo dii šenday zama cerebande-heenandi alhaaloo kaŋ war n'a tabatandi "
-"war kar maršinoo se ši nda gaakašinay."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY
-msgid "The browser cannot print the document while it is being loaded."
-msgstr ""
-"Interneti-ceecikaa ši hin ka takaddaa kar zama a mma bara n'a ga zumandi."
-
-#: NS_ERROR_GFX_PRINTING_NOT_IMPLEMENTED
-msgid "Printing is not implemented."
-msgstr "Karyanoo mana goy ka ben."
-
-#: NS_ERROR_GFX_COULD_NOT_LOAD_PRINT_MODULE
-msgid "The requested print module cannot be loaded."
-msgstr "Kar dunboo kaŋ hãandi ši hin ka zumandi."
-
-#: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the resolution/quality mode you "
-"specified is not supported by your printer."
-msgstr ""
-"Karyanoo dii šenday zama bii-sahã/hennari alhaaloo kaŋ war n'a tabatandi war "
-"kar maršinoo se ši nda gaakašinay."
-
-#. # No printers available
-#: noprinter
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE
+#, fuzzy
+msgctxt "PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE"
 msgid "No printers available."
 msgstr "Kar maršin kul ši duwandi."
 
-#: PrintToFile
-msgid "Print To File"
-msgstr "Kar tuku foo ra"
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE_PP
+msgid "No printers available, cannot show print preview."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NAME_NOT_FOUND
+msgid "The selected printer could not be found."
+msgstr ""
+
+#: PERR_GFX_PRINTER_COULD_NOT_OPEN_FILE
+msgid "Failed to open output file for print to file."
+msgstr ""
+
+#: PERR_GFX_PRINTER_STARTDOC
+#, fuzzy
+msgid "Printing failed while starting the print job."
+msgstr "Karyanoo kay moɲoo sintinoo ga."
+
+#: PERR_GFX_PRINTER_ENDDOC
+#, fuzzy
+msgid "Printing failed while completing the print job."
+msgstr "Karyanoo kay moɲoo benantaa ga."
+
+#: PERR_GFX_PRINTER_STARTPAGE
+#, fuzzy
+msgid "Printing failed while starting a new page."
+msgstr "Karyanoo kay moɲoo sintinoo ga."
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY
+msgid "Cannot print this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY_PP
+msgid "Cannot print-preview this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NO_XUL
+msgid "Printing XUL documents is not supported."
+msgstr ""
+
+#~ msgid ""
+#~ "There was a problem printing. The printer doesn't support a printing "
+#~ "command."
+#~ msgstr "Karyanoo dii šenday. Kar maršinoo ši koy nda kar juwal foo."
+
+#~ msgid ""
+#~ "There was a problem printing. An instruction that was sent to the printer "
+#~ "failed."
+#~ msgstr ""
+#~ "Karyanoo dii šenday. Yaamar foo kaŋ sanbandi kar maršinoo doo mana too."
+
+#~ msgid "There was a problem printing. No printer could be found."
+#~ msgstr "Karyanoo dii šenday. Kar maršin kul mana hin ka duwandi."
+
+#~ msgid "There was a problem printing. The printer could not be found."
+#~ msgstr "Karyanoo dii šenday. Kar maršinoo mana hin ka duwandi."
+
+#~ msgid "There was a problem printing. Access to the printer was denied."
+#~ msgstr "Karyanoo dii šenday. Kar maršinoo ši nda fondo."
+
+#~ msgid ""
+#~ "There was a problem printing. Tried to set an invalid printer attribute."
+#~ msgstr ""
+#~ "Karyanoo dii šenday. A n' ka ceeci ka kar maršin alhaali laala kayandi."
+
+#~ msgid "There was a problem printing. The printer not ready."
+#~ msgstr "Karyanoo dii šenday. Kar maršinoo mana soolu."
+
+#~ msgid "There was a problem printing. The printer is out of paper."
+#~ msgstr "Karyanoo dii šenday. Kar maršinoo ši nda kaddasu."
+
+#~ msgid "There was a problem printing. Printer I/O error."
+#~ msgstr "Karyanoo dii šenday. Kar maršin I/O firka."
+
+#~ msgid "There was a problem printing. The output file could not be opened."
+#~ msgstr "Karyanoo dii šenday. Fattari tukoo ši hin ka feera."
+
+#~ msgid "There was an error writing the printing output file."
+#~ msgstr "Firka bangay kar fattari tukoo hantumyanoo ra."
+
+#~ msgid "There must be at least one printer available to show Print Preview."
+#~ msgstr "Kar maršin foo ga hima ka bara, ka kar moo-fur cebe."
+
+#~ msgid ""
+#~ "There was a problem printing. There is not enough free memory to print."
+#~ msgstr "Karyanoo dii šenday. Lakkaloo ši wasa ka kara."
+
+#~ msgid "Not available"
+#~ msgstr "Ši duwandi"
+
+#~ msgid "Printing failed when starting the document."
+#~ msgstr "Karyanoo kay takaddaa sintinoo ga."
+
+#~ msgid "Printing failed when completing the document."
+#~ msgstr "Karyanoo kay takaddaa benantaa ga."
+
+#~ msgid "You cannot print while in print preview."
+#~ msgstr "War ši hin ka kar moo-furyanoo waate."
+
+#~ msgid ""
+#~ "There was a problem printing because the paper size you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "Karyanoo dii šenday zama takkada adadoo kaŋ war n'a tabatandi kar "
+#~ "maršinoo se ši nda gaakašinay."
+
+#~ msgid ""
+#~ "There was a problem printing because the page orientation you specified "
+#~ "is not supported by your printer."
+#~ msgstr ""
+#~ "Karyanoo dii šenday zama moo honnandiyanoo kaŋ war n'a tabatandi kar "
+#~ "maršinoo se ši nda gaakašinay."
+
+#~ msgid ""
+#~ "There was a problem printing because the print job requires color "
+#~ "capabilities that your printer does not support."
+#~ msgstr ""
+#~ "Karyanoo dii šenday zama kar goyoo ga baa noone hinayyaŋ kaŋ se war kar "
+#~ "maršinoo ši nda faaba."
+
+#~ msgid "There was a problem printing because you requested too many copies."
+#~ msgstr "Karyanoo dii šenday zama war na berandi booboyaŋ wiri."
+
+#~ msgid ""
+#~ "There was a problem printing. The printer driver is not properly "
+#~ "configured."
+#~ msgstr "Karyanoo dii šenday. Kar maršinoo mana hanse ka boori."
+
+#~ msgid ""
+#~ "The browser cannot print preview right now.\n"
+#~ "Please try again when the page has finished loading."
+#~ msgstr ""
+#~ "Interneti-ceecikaa mana hin ka kar moo-fur sohõda.\n"
+#~ "Taare a tee taaga waati kaŋ moɲoo zumandi ka ben."
+
+#~ msgid ""
+#~ "The page was replaced while you were trying to print.\n"
+#~ "Please try again."
+#~ msgstr ""
+#~ "Moɲoo barmay waatoo kaŋ no war ceeci ka kara.\n"
+#~ "Taare a tee taaga."
+
+#~ msgid ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+#~ msgstr ""
+#~ "A ga hin ka faakaray sukantey mana sinji ka boori\n"
+#~ "Wala bii-goybataa woo ši hin ka lasal kar faakarawey goyandi."
+
+#~ msgid "The Printing Prompt Service is missing."
+#~ msgstr "Kar hãayan zuu ši bara."
+
+#~ msgid "We are unable to Print or Print Preview this page."
+#~ msgstr "Ir ši hin ka moɲoo woo kar wala ka moo fur a ga."
+
+#~ msgid ""
+#~ "There was a problem printing because the plex mode you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "Karyanoo dii šenday zama cerebande-heenandi alhaaloo kaŋ war n'a "
+#~ "tabatandi war kar maršinoo se ši nda gaakašinay."
+
+#~ msgid "The browser cannot print the document while it is being loaded."
+#~ msgstr ""
+#~ "Interneti-ceecikaa ši hin ka takaddaa kar zama a mma bara n'a ga zumandi."
+
+#~ msgid "Printing is not implemented."
+#~ msgstr "Karyanoo mana goy ka ben."
+
+#~ msgid "The requested print module cannot be loaded."
+#~ msgstr "Kar dunboo kaŋ hãandi ši hin ka zumandi."
+
+#~ msgid ""
+#~ "There was a problem printing because the resolution/quality mode you "
+#~ "specified is not supported by your printer."
+#~ msgstr ""
+#~ "Karyanoo dii šenday zama bii-sahã/hennari alhaaloo kaŋ war n'a tabatandi "
+#~ "war kar maršinoo se ši nda gaakašinay."

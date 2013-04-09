@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/dom/chrome/dom/dom.properties
+#. extracted from ./dom/chrome/dom/dom.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: 2012-12-20 17:12+0000\n"
 "Last-Translator: hainp <hainp2604@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1356023560.0\n"
@@ -143,16 +143,16 @@ msgid ""
 "Event=%S, use of preventBubble() is deprecated. Use W3C standard "
 "stopPropagation() instead."
 msgstr ""
-"Event=%S, không nên dùng preventBubble(). Dùng chuẩn W3C là "
-"stopPropagation() thay vào."
+"Event=%S, không nên dùng preventBubble(). Dùng chuẩn W3C là stopPropagation"
+"() thay vào."
 
 #: UseOfPreventCaptureWarning
 msgid ""
 "Event=%S, use of preventCapture() is deprecated. Use W3C standard "
 "stopPropagation() instead."
 msgstr ""
-"Event=%S, không nên dùng preventCapture(). Dùng chuẩn W3C là "
-"stopPropagation() thay vào."
+"Event=%S, không nên dùng preventCapture(). Dùng chuẩn W3C là stopPropagation"
+"() thay vào."
 
 #: UseOfDOM3LoadMethodWarning
 msgid ""
@@ -310,8 +310,8 @@ msgstr ""
 
 #: CreateAttributeNSWarning
 msgid ""
-"Use of document.createAttributeNS() is deprecated. Use element."
-"setAttributeNS() instead."
+"Use of document.createAttributeNS() is deprecated. Use element.setAttributeNS"
+"() instead."
 msgstr ""
 "Việc dùng document.createAttributeNS() bị phản đối. Hãy dùng element."
 "setAttributeNS() thay thế."
@@ -348,20 +348,6 @@ msgid ""
 msgstr ""
 "Việc dùng enablePrivilege bị phản đối. Vui lòng dùng đoạn mã chạy với thành "
 "phần chính hệ thống (vd. một phần mở rộng)."
-
-#: PositionWarning
-msgid ""
-"Use of XMLHttpRequest's progress events' position attribute is deprecated."
-msgstr ""
-"Không nên sử dụng thuộc tính position trong progress event của "
-"XMLHttpRequest."
-
-#: TotalSizeWarning
-msgid ""
-"Use of XMLHttpRequest's progress events' totalSize attribute is deprecated."
-msgstr ""
-"Không nên sử dụng thuộc tính totalSize trong progress event của  "
-"XMLHttpRequest."
 
 #: nsIJSONDecodeDeprecatedWarning
 msgid "nsIJSON.decode is deprecated.  Please use JSON.parse instead."
@@ -475,6 +461,12 @@ msgstr ""
 "Yêu cầu hiện toàn màn hình bị từ chối vì phần tử yêu cầu không ở trong thẻ "
 "hiện hành."
 
+#: FullScreenDeniedContentOnly
+msgid ""
+"Request for full-screen was denied because requesting element is in the "
+"chrome document and the fullscreen API is configured for content only."
+msgstr ""
+
 #: RemovedFullScreenElement
 msgid ""
 "Exited full-screen because full-screen element was removed from document."
@@ -486,13 +478,6 @@ msgid "Exited full-screen because windowed plugin was focused."
 msgstr ""
 "Thoát khỏi chế độ toàn màn hình vì một phần mở rộng không toàn màn hình đã "
 "được chọn."
-
-#: HTMLMultipartXHRWarning
-msgid ""
-"HTML parsing in XMLHttpRequest is not supported for multipart responses."
-msgstr ""
-"Việc phân tích HTML trong XMLHttpRequest không được hỗ trợ cho các phản hồi "
-"multipart."
 
 #: HTMLSyncXHRWarning
 msgid ""
@@ -547,6 +532,11 @@ msgid ""
 msgstr ""
 "Sử dụng mã hóa không phải UTF-8 để nhận JSON bằng XMLHttpRequest là vi phạm. "
 "Việc giải mã JSON chỉ hỗ trợ UTF-8."
+
+#. # LOCALIZATION NOTE: Do not translate AudioBufferSourceNode
+#: MediaBufferSourceNodeResampleOutOfMemory
+msgid "Insufficient memory to resample the AudioBufferSourceNode for playback."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate decodeAudioData.
 #: MediaDecodeAudioDataUnknownContentType
@@ -703,3 +693,27 @@ msgid ""
 "a Content-Security-Policy/Report-Only header. The X-Content-Security-Policy/"
 "Report-Only header(s) will be ignored."
 msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "NodeIterator" or "detach()".
+#: NodeIteratorDetachWarning
+msgid "Calling detach() on a NodeIterator no longer has an effect."
+msgstr ""
+
+#~ msgid ""
+#~ "Use of XMLHttpRequest's progress events' position attribute is deprecated."
+#~ msgstr ""
+#~ "Không nên sử dụng thuộc tính position trong progress event của "
+#~ "XMLHttpRequest."
+
+#~ msgid ""
+#~ "Use of XMLHttpRequest's progress events' totalSize attribute is "
+#~ "deprecated."
+#~ msgstr ""
+#~ "Không nên sử dụng thuộc tính totalSize trong progress event của  "
+#~ "XMLHttpRequest."
+
+#~ msgid ""
+#~ "HTML parsing in XMLHttpRequest is not supported for multipart responses."
+#~ msgstr ""
+#~ "Việc phân tích HTML trong XMLHttpRequest không được hỗ trợ cho các phản "
+#~ "hồi multipart."
