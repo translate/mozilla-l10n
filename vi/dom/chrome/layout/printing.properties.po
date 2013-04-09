@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/dom/chrome/layout/printing.properties
+#. extracted from ./dom/chrome/layout/printing.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: 2012-12-20 17:11+0000\n"
 "Last-Translator: hainp <hainp2604@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,12 +15,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1356023477.0\n"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
 #. # Place the word %ld where the page number and number of pages should be
@@ -29,7 +29,7 @@ msgstr ""
 msgid "%1$d"
 msgstr "%1$d"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. ## @page_total The total number of pages
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
@@ -40,15 +40,25 @@ msgstr "%1$d"
 msgid "%1$d of %2$d"
 msgstr "%1$d trong %2$d"
 
+#: noprinter
+#, fuzzy
+msgctxt "noprinter"
+msgid "No printers available."
+msgstr "Không có máy in."
+
+#: PrintToFile
+msgid "Print To File"
+msgstr "In thành Tập tin"
+
 #: noPrintFilename.title
 msgid "Filename is missing"
 msgstr "Thiếu tên tập tin"
 
 #: noPrintFilename.alert
-msgid "You have selected \"Print To: File\", and the filename is empty!"
+#, fuzzy
+msgid "You have selected \"Print To File\", and the filename is empty!"
 msgstr "Bạn đã chọn \"In thành: Tập tin\", mà tên tập tin lại để trống!"
 
-#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -57,7 +67,6 @@ msgstr ""
 "%S đã có sẵn.\n"
 "Bạn có muốn thay thế nó không?"
 
-#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "Lỗi Máy In"
@@ -66,202 +75,227 @@ msgstr "Lỗi Máy In"
 msgid "Print Preview Error"
 msgstr "Lỗi Xem Trước Bản In"
 
-#: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid ""
-"There was a problem printing. The printer doesn't support a printing command."
-msgstr "Gặp vấn đề khi in. Máy in không hỗ trợ một lệnh in nào đó."
+#. # Printing error messages.
+#. #LOCALIZATION NOTE: Some of these messages come in pairs, one
+#. # for printing and one for print previewing.  You can remove that
+#. # distinction in your language by removing the entity with the _PP
+#. # suffix; then the entity without a suffix will be used for both.
+#. # You can also add that distinction to any of the messages that don't
+#. # already have it by adding a new entity with a _PP suffix.
+#. #
+#. # For instance, if you delete PERR_GFX_PRINTER_DOC_IS_BUSY_PP, then
+#. # the PERR_GFX_PRINTER_DOC_IS_BUSY message will be used for that error
+#. # condition when print previewing as well as when printing.  If you
+#. # add PERR_FAILURE_PP, then PERR_FAILURE will only be used when
+#. # printing, and PERR_FAILURE_PP will be used under the same conditions
+#. # when print previewing.
+#. #
+#: PERR_FAILURE
+#, fuzzy
+msgid "An error occurred while printing."
+msgstr "Không xác định được lỗi gì đã xảy ra trong khi in."
 
-#: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid ""
-"There was a problem printing. An instruction that was sent to the printer "
-"failed."
-msgstr "Gặp vấn đề khi in. Thất bại khi gửi lệnh cho máy in."
-
-#: NS_ERROR_GFX_PRINTER_NO_PRINTER_AVAILABLE
-msgid "There was a problem printing. No printer could be found."
-msgstr "Gặp vấn đề khi in. Không có máy in."
-
-#: NS_ERROR_GFX_PRINTER_NAME_NOT_FOUND
-msgid "There was a problem printing. The printer could not be found."
-msgstr "Gặp vấn đề khi in. Không tìm thấy máy in."
-
-#: NS_ERROR_GFX_PRINTER_ACCESS_DENIED
-msgid "There was a problem printing. Access to the printer was denied."
-msgstr "Gặp vấn đề khi in. Truy cập vào máy in bị từ chối."
-
-#: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid ""
-"There was a problem printing. Tried to set an invalid printer attribute."
-msgstr ""
-"Gặp vấn đề khi in. Cố gắng thiết lập một thuộc tính không tồn tại trên máy "
-"in."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_NOT_READY
-msgid "There was a problem printing. The printer not ready."
-msgstr "Gặp vấn đề khi in. Máy in không sẵn sàng."
-
-#: NS_ERROR_GFX_PRINTER_OUT_OF_PAPER
-msgid "There was a problem printing. The printer is out of paper."
-msgstr "Gặp vấn đề khi in. Máy in hết giấy."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_IO_ERROR
-msgid "There was a problem printing. Printer I/O error."
-msgstr "Gặp vấn đề khi in. Lỗi I/O của máy in."
-
-#: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
-msgid "There was a problem printing. The output file could not be opened."
-msgstr "Gặp vấn đề khi in. Không thể mở tập tin đầu ra."
-
-#: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
-msgid "There was an error writing the printing output file."
-msgstr "Gặp lỗi khi in tập tin đầu ra."
-
-#: NS_ERROR_GFX_PRINTER_PRINTPREVIEW
-msgid "There must be at least one printer available to show Print Preview."
-msgstr "Phải có ít nhất một máy in để hiển thị Xem trước Bản in."
-
-#: NS_ERROR_UNEXPECTED
-msgid "There was an unexpected problem when printing."
-msgstr "Gặp vấn đề đột xuất khi in."
-
-#: NS_ERROR_OUT_OF_MEMORY
-msgid "There was a problem printing. There is not enough free memory to print."
-msgstr "Gặp vấn đề khi in. Không đủ bộ nhớ trống để in."
-
-#: NS_ERROR_NOT_IMPLEMENTED
-msgid "Some printing functionality is not implemented yet."
-msgstr "Một vài tính năng in ấn chưa được bổ sung."
-
-#: NS_ERROR_NOT_AVAILABLE
-msgid "Not available"
-msgstr "Không tồn tại"
-
-#: NS_ERROR_ABORT
+#: PERR_ABORT
 msgid "The print job was aborted, or canceled."
 msgstr "Việc in ấn đã bị hủy bỏ."
 
-#: NS_ERROR_FAILURE
-msgid "An unknown error occurred while printing."
-msgstr "Không xác định được lỗi gì đã xảy ra trong khi in."
-
-#: NS_ERROR_GFX_PRINTER_STARTDOC
-msgid "Printing failed when starting the document."
-msgstr "Việc in thất bại khi bắt đầu tài liệu."
-
-#: NS_ERROR_GFX_PRINTER_ENDDOC
-msgid "Printing failed when completing the document."
-msgstr "Việc in thất bại khi hoàn tất tài liệu."
-
-#: NS_ERROR_GFX_PRINTER_STARTPAGE
-msgid "Printing failed when starting the page."
-msgstr "Việc in thất bại khi bắt đầu trang."
-
-#: NS_ERROR_GFX_PRINTER_ENDPAGE
-msgid "Printing failed when completing the page."
-msgstr "Việc in thất bại khi hoàn tất trang."
-
-#: NS_ERROR_GFX_PRINTER_PRINT_WHILE_PREVIEW
-msgid "You cannot print while in print preview."
-msgstr "Bạn không thể in khi đang xem trước bản in."
-
-#: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the paper size you specified is not "
-"supported by your printer."
+#: PERR_NOT_AVAILABLE
+msgid "Some printing functionality is not currently available."
 msgstr ""
-"Gặp vấn đề khi in vì cỡ giấy bạn chỉ định không được máy in của bạn hỗ trợ."
 
-#: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the page orientation you specified is "
-"not supported by your printer."
+#: PERR_NOT_IMPLEMENTED
+msgid "Some printing functionality is not implemented yet."
+msgstr "Một vài tính năng in ấn chưa được bổ sung."
+
+#: PERR_OUT_OF_MEMORY
+msgid "There is not enough free memory to print."
 msgstr ""
-"Gặp vấn đề khi in vì hướng giấy bạn chỉ định không được máy in của bạn hỗ "
-"trợ."
 
-#: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the print job requires color "
-"capabilities that your printer does not support."
-msgstr ""
-"Gặp vấn đề khi in vì việc in ấn yêu cầu khả năng in màu nhưng không được máy "
-"in của bạn hỗ trợ."
+#: PERR_UNEXPECTED
+#, fuzzy
+msgid "There was an unexpected problem while printing."
+msgstr "Gặp vấn đề đột xuất khi in."
 
-#: NS_ERROR_GFX_PRINTER_TOO_MANY_COPIES
-msgid "There was a problem printing because you requested too many copies."
-msgstr "Gặp vấn đề khi in vì bạn yêu cầu quá nhiều bản sao."
-
-#: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid ""
-"There was a problem printing. The printer driver is not properly configured."
-msgstr ""
-"Gặp vấn đề khi in. Trình điều khiển máy in không được cấu hình thích hợp."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid ""
-"The browser cannot print preview right now.\n"
-"Please try again when the page has finished loading."
-msgstr ""
-"Không thể xem trước bản in vào lúc này.\n"
-"Hãy thử lại khi đã tải xong trang."
-
-#: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid ""
-"The page was replaced while you were trying to print.\n"
-"Please try again."
-msgstr ""
-"Trang đã bị thay thế trong khi bạn đang in nó ra.\n"
-"Hãy thử lại."
-
-#: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
-msgstr ""
-"Hộp thoại rút cắm được không được cài đặt thích hợp\n"
-"hoặc Bộ công cụ GFX này không còn hỗ trợ Hộp in ấn này nữa"
-
-#: NS_ERROR_GFX_NO_PRINTROMPTSERVICE
-msgid "The Printing Prompt Service is missing."
-msgstr "Thiếu Dịch Vụ Printing Prompt."
-
-#: NS_ERROR_GFX_PRINTER_NO_XUL
-msgid "We are unable to Print or Print Preview this page."
-msgstr "Không thể In hoặc Xem trước Bản in trang này."
-
-#: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the plex mode you specified is not "
-"supported by your printer."
-msgstr ""
-"Gặp vấn đề khi in vì chế độ plex bạn chỉ định không được máy in của bạn hỗ "
-"trợ."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY
-msgid "The browser cannot print the document while it is being loaded."
-msgstr "Trình duyệt không thể in tài liệu trong khi nó đang được tải."
-
-#: NS_ERROR_GFX_PRINTING_NOT_IMPLEMENTED
-msgid "Printing is not implemented."
-msgstr "In ấn chưa được hỗ trợ."
-
-#: NS_ERROR_GFX_COULD_NOT_LOAD_PRINT_MODULE
-msgid "The requested print module cannot be loaded."
-msgstr "Module in ấn cần thiết không thể nạp được."
-
-#: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the resolution/quality mode you "
-"specified is not supported by your printer."
-msgstr ""
-"Gặp vấn đề khi in vì chế độ phân giải / chất lượng mà bạn chọn không được "
-"máy in của bạn hỗ trợ."
-
-#. # No printers available
-#: noprinter
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE
+#, fuzzy
+msgctxt "PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE"
 msgid "No printers available."
 msgstr "Không có máy in."
 
-#: PrintToFile
-msgid "Print To File"
-msgstr "In thành Tập tin"
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE_PP
+msgid "No printers available, cannot show print preview."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NAME_NOT_FOUND
+msgid "The selected printer could not be found."
+msgstr ""
+
+#: PERR_GFX_PRINTER_COULD_NOT_OPEN_FILE
+msgid "Failed to open output file for print to file."
+msgstr ""
+
+#: PERR_GFX_PRINTER_STARTDOC
+#, fuzzy
+msgid "Printing failed while starting the print job."
+msgstr "Việc in thất bại khi bắt đầu trang."
+
+#: PERR_GFX_PRINTER_ENDDOC
+#, fuzzy
+msgid "Printing failed while completing the print job."
+msgstr "Việc in thất bại khi hoàn tất trang."
+
+#: PERR_GFX_PRINTER_STARTPAGE
+#, fuzzy
+msgid "Printing failed while starting a new page."
+msgstr "Việc in thất bại khi bắt đầu trang."
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY
+msgid "Cannot print this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY_PP
+msgid "Cannot print-preview this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NO_XUL
+msgid "Printing XUL documents is not supported."
+msgstr ""
+
+#~ msgid ""
+#~ "There was a problem printing. The printer doesn't support a printing "
+#~ "command."
+#~ msgstr "Gặp vấn đề khi in. Máy in không hỗ trợ một lệnh in nào đó."
+
+#~ msgid ""
+#~ "There was a problem printing. An instruction that was sent to the printer "
+#~ "failed."
+#~ msgstr "Gặp vấn đề khi in. Thất bại khi gửi lệnh cho máy in."
+
+#~ msgid "There was a problem printing. No printer could be found."
+#~ msgstr "Gặp vấn đề khi in. Không có máy in."
+
+#~ msgid "There was a problem printing. The printer could not be found."
+#~ msgstr "Gặp vấn đề khi in. Không tìm thấy máy in."
+
+#~ msgid "There was a problem printing. Access to the printer was denied."
+#~ msgstr "Gặp vấn đề khi in. Truy cập vào máy in bị từ chối."
+
+#~ msgid ""
+#~ "There was a problem printing. Tried to set an invalid printer attribute."
+#~ msgstr ""
+#~ "Gặp vấn đề khi in. Cố gắng thiết lập một thuộc tính không tồn tại trên "
+#~ "máy in."
+
+#~ msgid "There was a problem printing. The printer not ready."
+#~ msgstr "Gặp vấn đề khi in. Máy in không sẵn sàng."
+
+#~ msgid "There was a problem printing. The printer is out of paper."
+#~ msgstr "Gặp vấn đề khi in. Máy in hết giấy."
+
+#~ msgid "There was a problem printing. Printer I/O error."
+#~ msgstr "Gặp vấn đề khi in. Lỗi I/O của máy in."
+
+#~ msgid "There was a problem printing. The output file could not be opened."
+#~ msgstr "Gặp vấn đề khi in. Không thể mở tập tin đầu ra."
+
+#~ msgid "There was an error writing the printing output file."
+#~ msgstr "Gặp lỗi khi in tập tin đầu ra."
+
+#~ msgid "There must be at least one printer available to show Print Preview."
+#~ msgstr "Phải có ít nhất một máy in để hiển thị Xem trước Bản in."
+
+#~ msgid ""
+#~ "There was a problem printing. There is not enough free memory to print."
+#~ msgstr "Gặp vấn đề khi in. Không đủ bộ nhớ trống để in."
+
+#~ msgid "Not available"
+#~ msgstr "Không tồn tại"
+
+#~ msgid "Printing failed when starting the document."
+#~ msgstr "Việc in thất bại khi bắt đầu tài liệu."
+
+#~ msgid "Printing failed when completing the document."
+#~ msgstr "Việc in thất bại khi hoàn tất tài liệu."
+
+#~ msgid "You cannot print while in print preview."
+#~ msgstr "Bạn không thể in khi đang xem trước bản in."
+
+#~ msgid ""
+#~ "There was a problem printing because the paper size you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "Gặp vấn đề khi in vì cỡ giấy bạn chỉ định không được máy in của bạn hỗ "
+#~ "trợ."
+
+#~ msgid ""
+#~ "There was a problem printing because the page orientation you specified "
+#~ "is not supported by your printer."
+#~ msgstr ""
+#~ "Gặp vấn đề khi in vì hướng giấy bạn chỉ định không được máy in của bạn hỗ "
+#~ "trợ."
+
+#~ msgid ""
+#~ "There was a problem printing because the print job requires color "
+#~ "capabilities that your printer does not support."
+#~ msgstr ""
+#~ "Gặp vấn đề khi in vì việc in ấn yêu cầu khả năng in màu nhưng không được "
+#~ "máy in của bạn hỗ trợ."
+
+#~ msgid "There was a problem printing because you requested too many copies."
+#~ msgstr "Gặp vấn đề khi in vì bạn yêu cầu quá nhiều bản sao."
+
+#~ msgid ""
+#~ "There was a problem printing. The printer driver is not properly "
+#~ "configured."
+#~ msgstr ""
+#~ "Gặp vấn đề khi in. Trình điều khiển máy in không được cấu hình thích hợp."
+
+#~ msgid ""
+#~ "The browser cannot print preview right now.\n"
+#~ "Please try again when the page has finished loading."
+#~ msgstr ""
+#~ "Không thể xem trước bản in vào lúc này.\n"
+#~ "Hãy thử lại khi đã tải xong trang."
+
+#~ msgid ""
+#~ "The page was replaced while you were trying to print.\n"
+#~ "Please try again."
+#~ msgstr ""
+#~ "Trang đã bị thay thế trong khi bạn đang in nó ra.\n"
+#~ "Hãy thử lại."
+
+#~ msgid ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+#~ msgstr ""
+#~ "Hộp thoại rút cắm được không được cài đặt thích hợp\n"
+#~ "hoặc Bộ công cụ GFX này không còn hỗ trợ Hộp in ấn này nữa"
+
+#~ msgid "The Printing Prompt Service is missing."
+#~ msgstr "Thiếu Dịch Vụ Printing Prompt."
+
+#~ msgid "We are unable to Print or Print Preview this page."
+#~ msgstr "Không thể In hoặc Xem trước Bản in trang này."
+
+#~ msgid ""
+#~ "There was a problem printing because the plex mode you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "Gặp vấn đề khi in vì chế độ plex bạn chỉ định không được máy in của bạn "
+#~ "hỗ trợ."
+
+#~ msgid "The browser cannot print the document while it is being loaded."
+#~ msgstr "Trình duyệt không thể in tài liệu trong khi nó đang được tải."
+
+#~ msgid "Printing is not implemented."
+#~ msgstr "In ấn chưa được hỗ trợ."
+
+#~ msgid "The requested print module cannot be loaded."
+#~ msgstr "Module in ấn cần thiết không thể nạp được."
+
+#~ msgid ""
+#~ "There was a problem printing because the resolution/quality mode you "
+#~ "specified is not supported by your printer."
+#~ msgstr ""
+#~ "Gặp vấn đề khi in vì chế độ phân giải / chất lượng mà bạn chọn không được "
+#~ "máy in của bạn hỗ trợ."

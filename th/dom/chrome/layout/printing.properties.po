@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/dom/chrome/layout/printing.properties
+#. extracted from ./dom/chrome/layout/printing.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,11 +14,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
 #. # Place the word %ld where the page number and number of pages should be
@@ -27,7 +27,7 @@ msgstr ""
 msgid "%1$d"
 msgstr "%1$d"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. ## @page_total The total number of pages
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
@@ -38,15 +38,25 @@ msgstr "%1$d"
 msgid "%1$d of %2$d"
 msgstr "%1$d จาก %2$d"
 
+#: noprinter
+#, fuzzy
+msgctxt "noprinter"
+msgid "No printers available."
+msgstr "ไม่มีเครื่องพิมพ์"
+
+#: PrintToFile
+msgid "Print To File"
+msgstr "พิมพ์เป็นแฟ้ม"
+
 #: noPrintFilename.title
 msgid "Filename is missing"
 msgstr "ไม่มีชื่อแฟ้ม"
 
 #: noPrintFilename.alert
-msgid "You have selected \"Print To: File\", and the filename is empty!"
+#, fuzzy
+msgid "You have selected \"Print To File\", and the filename is empty!"
 msgstr "คุณได้ทำการเลือก \"พิมพ์ไปยัง: แฟ้ม\" แต่ไม่ได้กำหนดชื่อแฟ้ม!"
 
-#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -55,7 +65,6 @@ msgstr ""
 "มี %S อยู่แล้ว\n"
 "ต้องการแทนที่?"
 
-#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "เครื่องพิมพ์ผิดพลาด"
@@ -64,190 +73,214 @@ msgstr "เครื่องพิมพ์ผิดพลาด"
 msgid "Print Preview Error"
 msgstr "ตัวอย่างก่อนพิมพ์ผิดพลาด"
 
-#: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid ""
-"There was a problem printing. The printer doesn't support a printing command."
-msgstr "มีปัญหาในการพิมพ์ เครื่องพิมพ์ไม่รองรับคำสั่งการพิมพ์"
+#. # Printing error messages.
+#. #LOCALIZATION NOTE: Some of these messages come in pairs, one
+#. # for printing and one for print previewing.  You can remove that
+#. # distinction in your language by removing the entity with the _PP
+#. # suffix; then the entity without a suffix will be used for both.
+#. # You can also add that distinction to any of the messages that don't
+#. # already have it by adding a new entity with a _PP suffix.
+#. #
+#. # For instance, if you delete PERR_GFX_PRINTER_DOC_IS_BUSY_PP, then
+#. # the PERR_GFX_PRINTER_DOC_IS_BUSY message will be used for that error
+#. # condition when print previewing as well as when printing.  If you
+#. # add PERR_FAILURE_PP, then PERR_FAILURE will only be used when
+#. # printing, and PERR_FAILURE_PP will be used under the same conditions
+#. # when print previewing.
+#. #
+#: PERR_FAILURE
+#, fuzzy
+msgid "An error occurred while printing."
+msgstr "ปัญหาที่ไม่ทราบสาเหตุเกิดขึ้นขณะพิมพ์"
 
-#: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid ""
-"There was a problem printing. An instruction that was sent to the printer "
-"failed."
-msgstr "มีปัญหาในการพิมพ์ ไม่สามารถส่งคำสั่งไปยังเครื่องพิมพ์ได้"
-
-#: NS_ERROR_GFX_PRINTER_NO_PRINTER_AVAILABLE
-msgid "There was a problem printing. No printer could be found."
-msgstr "มีปัญหาในการพิมพ์ ไม่พบเครื่องพิมพ์"
-
-#: NS_ERROR_GFX_PRINTER_NAME_NOT_FOUND
-msgid "There was a problem printing. The printer could not be found."
-msgstr "มีปัญหาในการพิมพ์ ไม่พบเครื่องพิมพ์"
-
-#: NS_ERROR_GFX_PRINTER_ACCESS_DENIED
-msgid "There was a problem printing. Access to the printer was denied."
-msgstr "มีปัญหาในการพิมพ์ ไม่มีสิทธิเข้าถึงเครื่องพิมพ์"
-
-#: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid ""
-"There was a problem printing. Tried to set an invalid printer attribute."
-msgstr "มีปัญหาในการพิมพ์ พยายามตั้งค่าเครื่องพิมพ์ด้วยค่าที่ไม่ถูกต้อง"
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_NOT_READY
-msgid "There was a problem printing. The printer not ready."
-msgstr "มีปัญหาในการพิมพ์ เครื่องพิมพ์ยังไม่พร้อม"
-
-#: NS_ERROR_GFX_PRINTER_OUT_OF_PAPER
-msgid "There was a problem printing. The printer is out of paper."
-msgstr "มีปัญหาในการพิมพ์ เครื่องพิมพ์ไม่มีกระดาษ"
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_IO_ERROR
-msgid "There was a problem printing. Printer I/O error."
-msgstr "มีปัญหาในการพิมพ์ I/O ของเครื่องพิมพ์มีปัญหา"
-
-#: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
-msgid "There was a problem printing. The output file could not be opened."
-msgstr "มีปัญหาในการพิมพ์ ไม่สามารถสร้างแฟ้มได้"
-
-#: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
-msgid "There was an error writing the printing output file."
-msgstr "มีปัญหาในการพิมพ์แฟ้มออก"
-
-#: NS_ERROR_GFX_PRINTER_PRINTPREVIEW
-msgid "There must be at least one printer available to show Print Preview."
-msgstr "จะต้องมีอย่างน้อยหนึ่งเครื่องพิมพ์เพื่อแสดงตัวอย่างก่อนพิมพ์"
-
-#: NS_ERROR_UNEXPECTED
-msgid "There was an unexpected problem when printing."
-msgstr "มีปัญหาที่ไม่คาดคิดเกิดขึ้นขณะกำลังพิมพ์"
-
-#: NS_ERROR_OUT_OF_MEMORY
-msgid "There was a problem printing. There is not enough free memory to print."
-msgstr "มีปัญหาในการพิมพ์ หน่วยความจำไม่พอในการพิมพ์"
-
-#: NS_ERROR_NOT_IMPLEMENTED
-msgid "Some printing functionality is not implemented yet."
-msgstr "บางความสามารถในการพิมพ์ยังไม่มีให้ใช้งาน"
-
-#: NS_ERROR_NOT_AVAILABLE
-msgid "Not available"
-msgstr "ไม่ว่าง"
-
-#: NS_ERROR_ABORT
+#: PERR_ABORT
 msgid "The print job was aborted, or canceled."
 msgstr "งานพิมพ์ถูกขัดขวางหรือยกเลิก"
 
-#: NS_ERROR_FAILURE
-msgid "An unknown error occurred while printing."
-msgstr "ปัญหาที่ไม่ทราบสาเหตุเกิดขึ้นขณะพิมพ์"
-
-#: NS_ERROR_GFX_PRINTER_STARTDOC
-msgid "Printing failed when starting the document."
-msgstr "การพิมพ์ล้มเหลวขณะกำลังเริ่มพิมพ์เอกสาร"
-
-#: NS_ERROR_GFX_PRINTER_ENDDOC
-msgid "Printing failed when completing the document."
-msgstr "การพิมพ์ล้มเหลวขณะกำลังเสร็จสิ้นการพิมพ์เอกสาร"
-
-#: NS_ERROR_GFX_PRINTER_STARTPAGE
-msgid "Printing failed when starting the page."
-msgstr "การพิมพ์ล้มเหลวขณะกำลังพิมพ์หน้าเอกสาร"
-
-#: NS_ERROR_GFX_PRINTER_ENDPAGE
-msgid "Printing failed when completing the page."
-msgstr "การพิมพ์ล้มเหลวขณะกำลังเสร็จสิ้นการพิมพ์หน้าเอกสาร"
-
-#: NS_ERROR_GFX_PRINTER_PRINT_WHILE_PREVIEW
-msgid "You cannot print while in print preview."
-msgstr "คุณไม่สามารถสั่งพิมพ์ได้ในขณะที่อยู่ในตัวอย่างก่อนพิมพ์"
-
-#: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the paper size you specified is not "
-"supported by your printer."
-msgstr "มีปัญหาในการพิมพ์เพราะเครื่องพิมพ์ของคุณไม่รองรับขนาดกระดาษที่คุณกำหนดไว้"
-
-#: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the page orientation you specified is "
-"not supported by your printer."
-msgstr "มีปัญหาในการพิมพ์เพราะเครื่องพิมพ์ของคุณไม่รองรับการวางหน้าที่คุณกำหนดไว้"
-
-#: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the print job requires color "
-"capabilities that your printer does not support."
-msgstr "มีปัญหาในการพิมพ์เพราะเครื่องพิมพ์ของคุณไม่รองรับการจัดการสีที่คุณกำหนดไว้"
-
-#: NS_ERROR_GFX_PRINTER_TOO_MANY_COPIES
-msgid "There was a problem printing because you requested too many copies."
-msgstr "มีปัญหาในการพิมพ์เพราะคุณร้องขอให้พิมพ์มากชุดเกินไป"
-
-#: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid ""
-"There was a problem printing. The printer driver is not properly configured."
-msgstr "มีปัญหาในการพิมพ์ ไดร์เวอร์เครื่องพิมพ์ถูกตั้งค่าไว้ไม่ถูกต้อง"
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid ""
-"The browser cannot print preview right now.\n"
-"Please try again when the page has finished loading."
+#: PERR_NOT_AVAILABLE
+msgid "Some printing functionality is not currently available."
 msgstr ""
-"เบราว์เซอร์ไม่สามารถแสดงตัวอย่างก่อนพิมพ์ได้\n"
-"โปรดลองอีกครั้งเมื่อเบราว์เซอร์โหลดหน้าเว็บเสร็จสิ้น"
 
-#: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid ""
-"The page was replaced while you were trying to print.\n"
-"Please try again."
+#: PERR_NOT_IMPLEMENTED
+msgid "Some printing functionality is not implemented yet."
+msgstr "บางความสามารถในการพิมพ์ยังไม่มีให้ใช้งาน"
+
+#: PERR_OUT_OF_MEMORY
+msgid "There is not enough free memory to print."
 msgstr ""
-"หน้าที่คุณต้องการจะพิมพ์ถูกแทนที่ด้วยหน้าอื่น\n"
-"โปรดลองอีกครั้ง"
 
-#: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
-msgstr ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
+#: PERR_UNEXPECTED
+#, fuzzy
+msgid "There was an unexpected problem while printing."
+msgstr "มีปัญหาที่ไม่คาดคิดเกิดขึ้นขณะกำลังพิมพ์"
 
-#: NS_ERROR_GFX_NO_PRINTROMPTSERVICE
-msgid "The Printing Prompt Service is missing."
-msgstr "The Printing Prompt Service is missing."
-
-#: NS_ERROR_GFX_PRINTER_NO_XUL
-msgid "We are unable to Print or Print Preview this page."
-msgstr "เราไม่สามารถพิมพ์หรือแสดงตัวอย่างก่อนพิมพ์หน้านี้ได้"
-
-#: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the plex mode you specified is not "
-"supported by your printer."
-msgstr "มีปัญหาในการพิมพ์เพราะเครื่องพิมพ์ของคุณไม่รองรับรูปแบบการสื่อสารที่กำหนด"
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY
-msgid "The browser cannot print the document while it is being loaded."
-msgstr "เบราว์เซอร์ไม่สามารถสั่งพิมพ์หน้าที่กำลังโหลดอยู่ได้"
-
-#: NS_ERROR_GFX_PRINTING_NOT_IMPLEMENTED
-msgid "Printing is not implemented."
-msgstr "ไม่มีการพิมพ์ให้ใช้"
-
-#: NS_ERROR_GFX_COULD_NOT_LOAD_PRINT_MODULE
-msgid "The requested print module cannot be loaded."
-msgstr "ไม่สามารถเรียกโมดูลการพิมพ์ที่ร้องขอได้"
-
-#: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the resolution/quality mode you "
-"specified is not supported by your printer."
-msgstr "มีปัญหาในการพิมพ์เพราะเครื่องพิมพ์ของคุณไม่รองรับความละเอียด/คุณภาพที่กำหนด"
-
-#. # No printers available
-#: noprinter
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE
+#, fuzzy
+msgctxt "PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE"
 msgid "No printers available."
 msgstr "ไม่มีเครื่องพิมพ์"
 
-#: PrintToFile
-msgid "Print To File"
-msgstr "พิมพ์เป็นแฟ้ม"
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE_PP
+msgid "No printers available, cannot show print preview."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NAME_NOT_FOUND
+msgid "The selected printer could not be found."
+msgstr ""
+
+#: PERR_GFX_PRINTER_COULD_NOT_OPEN_FILE
+msgid "Failed to open output file for print to file."
+msgstr ""
+
+#: PERR_GFX_PRINTER_STARTDOC
+#, fuzzy
+msgid "Printing failed while starting the print job."
+msgstr "การพิมพ์ล้มเหลวขณะกำลังพิมพ์หน้าเอกสาร"
+
+#: PERR_GFX_PRINTER_ENDDOC
+#, fuzzy
+msgid "Printing failed while completing the print job."
+msgstr "การพิมพ์ล้มเหลวขณะกำลังเสร็จสิ้นการพิมพ์หน้าเอกสาร"
+
+#: PERR_GFX_PRINTER_STARTPAGE
+#, fuzzy
+msgid "Printing failed while starting a new page."
+msgstr "การพิมพ์ล้มเหลวขณะกำลังพิมพ์หน้าเอกสาร"
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY
+msgid "Cannot print this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY_PP
+msgid "Cannot print-preview this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NO_XUL
+msgid "Printing XUL documents is not supported."
+msgstr ""
+
+#~ msgid ""
+#~ "There was a problem printing. The printer doesn't support a printing "
+#~ "command."
+#~ msgstr "มีปัญหาในการพิมพ์ เครื่องพิมพ์ไม่รองรับคำสั่งการพิมพ์"
+
+#~ msgid ""
+#~ "There was a problem printing. An instruction that was sent to the printer "
+#~ "failed."
+#~ msgstr "มีปัญหาในการพิมพ์ ไม่สามารถส่งคำสั่งไปยังเครื่องพิมพ์ได้"
+
+#~ msgid "There was a problem printing. No printer could be found."
+#~ msgstr "มีปัญหาในการพิมพ์ ไม่พบเครื่องพิมพ์"
+
+#~ msgid "There was a problem printing. The printer could not be found."
+#~ msgstr "มีปัญหาในการพิมพ์ ไม่พบเครื่องพิมพ์"
+
+#~ msgid "There was a problem printing. Access to the printer was denied."
+#~ msgstr "มีปัญหาในการพิมพ์ ไม่มีสิทธิเข้าถึงเครื่องพิมพ์"
+
+#~ msgid ""
+#~ "There was a problem printing. Tried to set an invalid printer attribute."
+#~ msgstr "มีปัญหาในการพิมพ์ พยายามตั้งค่าเครื่องพิมพ์ด้วยค่าที่ไม่ถูกต้อง"
+
+#~ msgid "There was a problem printing. The printer not ready."
+#~ msgstr "มีปัญหาในการพิมพ์ เครื่องพิมพ์ยังไม่พร้อม"
+
+#~ msgid "There was a problem printing. The printer is out of paper."
+#~ msgstr "มีปัญหาในการพิมพ์ เครื่องพิมพ์ไม่มีกระดาษ"
+
+#~ msgid "There was a problem printing. Printer I/O error."
+#~ msgstr "มีปัญหาในการพิมพ์ I/O ของเครื่องพิมพ์มีปัญหา"
+
+#~ msgid "There was a problem printing. The output file could not be opened."
+#~ msgstr "มีปัญหาในการพิมพ์ ไม่สามารถสร้างแฟ้มได้"
+
+#~ msgid "There was an error writing the printing output file."
+#~ msgstr "มีปัญหาในการพิมพ์แฟ้มออก"
+
+#~ msgid "There must be at least one printer available to show Print Preview."
+#~ msgstr "จะต้องมีอย่างน้อยหนึ่งเครื่องพิมพ์เพื่อแสดงตัวอย่างก่อนพิมพ์"
+
+#~ msgid ""
+#~ "There was a problem printing. There is not enough free memory to print."
+#~ msgstr "มีปัญหาในการพิมพ์ หน่วยความจำไม่พอในการพิมพ์"
+
+#~ msgid "Not available"
+#~ msgstr "ไม่ว่าง"
+
+#~ msgid "Printing failed when starting the document."
+#~ msgstr "การพิมพ์ล้มเหลวขณะกำลังเริ่มพิมพ์เอกสาร"
+
+#~ msgid "Printing failed when completing the document."
+#~ msgstr "การพิมพ์ล้มเหลวขณะกำลังเสร็จสิ้นการพิมพ์เอกสาร"
+
+#~ msgid "You cannot print while in print preview."
+#~ msgstr "คุณไม่สามารถสั่งพิมพ์ได้ในขณะที่อยู่ในตัวอย่างก่อนพิมพ์"
+
+#~ msgid ""
+#~ "There was a problem printing because the paper size you specified is not "
+#~ "supported by your printer."
+#~ msgstr "มีปัญหาในการพิมพ์เพราะเครื่องพิมพ์ของคุณไม่รองรับขนาดกระดาษที่คุณกำหนดไว้"
+
+#~ msgid ""
+#~ "There was a problem printing because the page orientation you specified "
+#~ "is not supported by your printer."
+#~ msgstr "มีปัญหาในการพิมพ์เพราะเครื่องพิมพ์ของคุณไม่รองรับการวางหน้าที่คุณกำหนดไว้"
+
+#~ msgid ""
+#~ "There was a problem printing because the print job requires color "
+#~ "capabilities that your printer does not support."
+#~ msgstr "มีปัญหาในการพิมพ์เพราะเครื่องพิมพ์ของคุณไม่รองรับการจัดการสีที่คุณกำหนดไว้"
+
+#~ msgid "There was a problem printing because you requested too many copies."
+#~ msgstr "มีปัญหาในการพิมพ์เพราะคุณร้องขอให้พิมพ์มากชุดเกินไป"
+
+#~ msgid ""
+#~ "There was a problem printing. The printer driver is not properly "
+#~ "configured."
+#~ msgstr "มีปัญหาในการพิมพ์ ไดร์เวอร์เครื่องพิมพ์ถูกตั้งค่าไว้ไม่ถูกต้อง"
+
+#~ msgid ""
+#~ "The browser cannot print preview right now.\n"
+#~ "Please try again when the page has finished loading."
+#~ msgstr ""
+#~ "เบราว์เซอร์ไม่สามารถแสดงตัวอย่างก่อนพิมพ์ได้\n"
+#~ "โปรดลองอีกครั้งเมื่อเบราว์เซอร์โหลดหน้าเว็บเสร็จสิ้น"
+
+#~ msgid ""
+#~ "The page was replaced while you were trying to print.\n"
+#~ "Please try again."
+#~ msgstr ""
+#~ "หน้าที่คุณต้องการจะพิมพ์ถูกแทนที่ด้วยหน้าอื่น\n"
+#~ "โปรดลองอีกครั้ง"
+
+#~ msgid ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+#~ msgstr ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+
+#~ msgid "The Printing Prompt Service is missing."
+#~ msgstr "The Printing Prompt Service is missing."
+
+#~ msgid "We are unable to Print or Print Preview this page."
+#~ msgstr "เราไม่สามารถพิมพ์หรือแสดงตัวอย่างก่อนพิมพ์หน้านี้ได้"
+
+#~ msgid ""
+#~ "There was a problem printing because the plex mode you specified is not "
+#~ "supported by your printer."
+#~ msgstr "มีปัญหาในการพิมพ์เพราะเครื่องพิมพ์ของคุณไม่รองรับรูปแบบการสื่อสารที่กำหนด"
+
+#~ msgid "The browser cannot print the document while it is being loaded."
+#~ msgstr "เบราว์เซอร์ไม่สามารถสั่งพิมพ์หน้าที่กำลังโหลดอยู่ได้"
+
+#~ msgid "Printing is not implemented."
+#~ msgstr "ไม่มีการพิมพ์ให้ใช้"
+
+#~ msgid "The requested print module cannot be loaded."
+#~ msgstr "ไม่สามารถเรียกโมดูลการพิมพ์ที่ร้องขอได้"
+
+#~ msgid ""
+#~ "There was a problem printing because the resolution/quality mode you "
+#~ "specified is not supported by your printer."
+#~ msgstr "มีปัญหาในการพิมพ์เพราะเครื่องพิมพ์ของคุณไม่รองรับความละเอียด/คุณภาพที่กำหนด"
