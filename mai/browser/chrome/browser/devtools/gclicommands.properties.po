@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/browser/chrome/browser/devtools/gclicommands.properties
+#. extracted from ./browser/chrome/browser/devtools/gclicommands.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: 2012-09-11 03:23+0000\n"
 "Last-Translator: Sangeeta <sangeeta_0975@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1347333811.0\n"
@@ -118,17 +118,19 @@ msgstr ""
 #. # LOCALIZATION NOTE (screenshotChromeDesc) A very short string to describe
 #. # the 'chrome' parameter to the 'screenshot' command, which is displayed in
 #. # a dialog when the user is using this command.
-#: screenshotChromeDesc
-msgid "Capture Firefox chrome window? (true/false)"
+#. # The argument (%1$S) is the browser name.
+#: screenshotChromeDesc2
+msgid "Capture %1$S chrome window? (true/false)"
 msgstr ""
 
 #. # LOCALIZATION NOTE (screenshotChromeManual) A fuller description of the
 #. # 'chrome' parameter to the 'screenshot' command, displayed when the user
 #. # asks for help on what it does.
-#: screenshotChromeManual
+#. # The argument (%1$S) is the browser name.
+#: screenshotChromeManual2
 msgid ""
-"True if you want to take the screenshot of the Firefox window rather than "
-"the web page's content window."
+"True if you want to take the screenshot of the %1$S window rather than the "
+"web page's content window."
 msgstr ""
 
 #. # LOCALIZATION NOTE (screenshotGroupOptions) A label for the optional options of
@@ -211,32 +213,34 @@ msgstr ""
 msgid "Copied to clipboard."
 msgstr ""
 
-#. # LOCALIZATION NOTE (restartFirefoxDesc) A very short description of the
+#. # LOCALIZATION NOTE (restartBrowserDesc) A very short description of the
 #. # 'restart' command. This string is designed to be shown in a menu alongside the
 #. # command name, which is why it should be as short as possible.
-#: restartFirefoxDesc
-msgid "Restart Firefox"
-msgstr "फायरफाक्स फेर चालू करू"
+#. # The argument (%1$S) is the browser name.
+#: restartBrowserDesc
+#, fuzzy
+msgid "Restart %1$S"
+msgstr "%S फेर आरंभ  करू "
 
-#. # LOCALIZATION NOTE (restartFirefoxNocacheDesc) A very short string to
+#. # LOCALIZATION NOTE (restartBrowserNocacheDesc) A very short string to
 #. # describe the 'nocache' parameter to the 'restart' command, which is
 #. # displayed in a dialog when the user is using this command.
-#: restartFirefoxNocacheDesc
+#: restartBrowserNocacheDesc
 msgid "Disables loading content from cache upon restart"
 msgstr "फेर आरंभ होबासँ कैशे सँ अंतर्वस्तुक लोडिंग निष्क्रिय करैत अछि"
 
-#. # LOCALIZATION NOTE (restartFirefoxRequestCancelled) A string displayed to the
+#. # LOCALIZATION NOTE (restartBrowserRequestCancelled) A string displayed to the
 #. # user when a scheduled restart has been aborted by the user.
-#: restartFirefoxRequestCancelled
+#: restartBrowserRequestCancelled
 msgid "Restart request cancelled by user."
 msgstr "प्रयोक्ताक द्वारा फेर आरंभ करू आग्रह रद्द कएल गेल."
 
-#. # LOCALIZATION NOTE (restartFirefoxRestarting) A string displayed to the
+#. # LOCALIZATION NOTE (restartBrowserRestarting) A string displayed to the
 #. # user when a restart has been initiated without a delay.
-#: restartFirefoxRestarting
-#, fuzzy
-msgid "Restarting Firefox…"
-msgstr "फायरफाक्स फेर आरंभ कए रहल अछि..."
+#. # The argument (%1$S) is the browser name.
+#: restartBrowserRestarting
+msgid "Restarting %1$S…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (inspectDesc) A very short description of the 'inspect'
 #. # command. See inspectManual for a fuller description of what it does. This
@@ -797,11 +801,13 @@ msgstr "अनुक्रियात्मक डिजायन अवस्�
 
 #. # LOCALIZATION NOTE (resizeModeManual) A fuller description of the 'resize'
 #. # command, displayed when the user asks for help on what it does.
-#: resizeModeManual
+#. # The argument (%1$S) is the browser name.
+#: resizeModeManual2
+#, fuzzy
 msgid ""
 "Responsive websites respond to their environment, so they look good on a "
 "mobile display, a cinema display and everything in-between. Responsive "
-"Design Mode allows you to easily test a variety of page sizes in Firefox "
+"Design Mode allows you to easily test a variety of page sizes in %1$S "
 "without needing to resize your whole browser."
 msgstr ""
 "अनुक्रियात्मक वेबसाइट अपन वातावरणक अनुसार प्रतिक्रिया दैछ, इएल लेल ओ मोबाइल प्रदर्शन, "
@@ -1148,23 +1154,51 @@ msgstr "कुकीज देखाउ"
 msgid "Display a list of the cookies relevant to the current page."
 msgstr "मोजुदा पृष्ठसँ संबंधित कुकीजक सूची देखाउ"
 
-#. # LOCALIZATION NOTE (cookieListOutKey) A heading used in the output from the
-#. # 'cookie list' command above a list of cookie keys
-#: cookieListOutKey
-msgid "Key"
-msgstr "कुंजी"
+#. # LOCALIZATION NOTE (cookieListOutHost,cookieListOutPath,cookieListOutExpires,cookieListOutAttributes):
+#. # The 'cookie list' command has a number of headings for cookie properties.
+#. # Particular care should be taken in translating these strings as they have
+#. # references to names in the cookies spec.
+#: cookieListOutHost
+msgid "Host:"
+msgstr ""
 
-#. # LOCALIZATION NOTE (cookieListOutValue) A heading used in the output from the
-#. # 'cookie list' command above a list of cookie values
-#: cookieListOutValue
-msgid "Value"
-msgstr "मान"
+#: cookieListOutPath
+msgid "Path:"
+msgstr "पथ:"
 
-#. # LOCALIZATION NOTE (cookieListOutActions) A heading used in the output from the
-#. # 'cookie list' command above a list of actions to take on cookies
-#: cookieListOutActions
-msgid "Actions"
-msgstr "क्रिया"
+#: cookieListOutExpires
+msgid "Expires:"
+msgstr ""
+
+#: cookieListOutAttributes
+msgid "Attributes:"
+msgstr ""
+
+#. # LOCALIZATION NOTE (cookieListOutNone) The output of the 'cookie list' command
+#. # uses this string when no cookie attributes (like httpOnly, secure, etc) apply
+#: cookieListOutNone
+msgid "None"
+msgstr "कोनो नहि"
+
+#. # LOCALIZATION NOTE (cookieListOutSession) The output of the 'cookie list'
+#. # command uses this string to describe a cookie with an expiry value of '0'
+#. # that is to say it is a session cookie
+#: cookieListOutSession
+msgid "At browser exit (session)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (cookieListOutNonePage) The output of the 'cookie list'
+#. # command uses this string for pages like 'about:blank' which can't contain
+#. # cookies
+#: cookieListOutNonePage
+msgid "No cookies found for this page"
+msgstr ""
+
+#. # LOCALIZATION NOTE (cookieListOutNoneHost) The output of the 'cookie list'
+#. # command uses this string when there are no cookies on a given web page
+#: cookieListOutNoneHost
+msgid "No cookies found for host %1$S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (cookieListOutEdit) A title used in the output from the
 #. # 'cookie list' command on a button which can be used to edit cookie values
@@ -1259,6 +1293,27 @@ msgstr "सेट करबाक लेल कूकीक डोमेन"
 msgid "Only transmitted over https"
 msgstr "केवल https पर प्रेषित कएल जाइछ"
 
+#. # LOCALIZATION NOTE (cookieSetHttpOnlyDesc) A very short string to describe the
+#. # 'httpOnly' parameter to the 'cookie set' command, which is displayed in a dialog
+#. # when the user is using this command.
+#: cookieSetHttpOnlyDesc
+msgid "Not accessible from client side script"
+msgstr ""
+
+#. # LOCALIZATION NOTE (cookieSetSessionDesc) A very short string to describe the
+#. # 'session' parameter to the 'cookie set' command, which is displayed in a dialog
+#. # when the user is using this command.
+#: cookieSetSessionDesc
+msgid "Only valid for the lifetime of the browser session"
+msgstr ""
+
+#. # LOCALIZATION NOTE (cookieSetExpiresDesc) A very short string to describe the
+#. # 'expires' parameter to the 'cookie set' command, which is displayed in a dialog
+#. # when the user is using this command.
+#: cookieSetExpiresDesc
+msgid "The expiry date of the cookie (quoted RFC2822 or ISO 8601 date)"
+msgstr ""
+
 #. # LOCALIZATION NOTE (jsbDesc) A very short description of the
 #. # 'jsb' command. This string is designed to be shown in a menu
 #. # alongside the command name, which is why it should be as short as possible.
@@ -1346,22 +1401,28 @@ msgstr "jslint-stricter अवस्था बाध्यकारी बना
 msgid "When set to true, jslint-stricter mode is enforced"
 msgstr "सही पर सेट कएल जाए पर, jslint-स्ट्रिक्टर अवस्था बाधित अछि"
 
-#. # LOCALIZATION NOTE (jsbBraceStyleDesc) A very short description of the
+#. # LOCALIZATION NOTE (jsbBraceStyleDesc2) A very short description of the
 #. # 'jsb <braceStyle>' parameter. This string is designed to be shown
 #. # in a menu alongside the command name, which is why it should be as short as
 #. # possible.
-#: jsbBraceStyleDesc
-msgid "Collapse, expand, end-expand, expand-strict"
-msgstr "संकुचित, विस्तारित, अंत-विस्तार आओर विस्तार-प्रतिबंधित"
+#: jsbBraceStyleDesc2
+msgid "Select the coding style of braces"
+msgstr ""
 
-#. # LOCALIZATION NOTE (jsbBraceStyleManual) A fuller description of the
+#. # LOCALIZATION NOTE (jsbBraceStyleManual2) A fuller description of the
 #. # 'jsb <braceStyle>' parameter, displayed when the user asks for help
 #. # on what it does.
-#: jsbBraceStyleManual
+#. #
+#. # NOTES: The keywords collapse, expand, end-expand and expand-strict should not
+#. # be translated. "even if it will break your code" means that the resulting code
+#. # may no longer be functional.
+#: jsbBraceStyleManual2
 msgid ""
-"The coding style of braces. Either collapse, expand, end-expand or expand-"
-"strict"
-msgstr "कोष्ठकक कोडिंग शैली. संकुचित, विस्तारित, अंत विस्तारित अथवा विस्तारित-प्रतिबंधित"
+"Select the coding style of braces: collapse - put braces on the same line as "
+"control statements; expand - put braces on own line (Allman / ANSI style); "
+"end-expand - put end braces on own line; expand-strict - put braces on own "
+"line even if it will break your code."
+msgstr ""
 
 #. # LOCALIZATION NOTE (jsbNoSpaceBeforeConditionalDesc) A very short description
 #. # of the 'jsb <noSpaceBeforeConditional>' parameter. This string is designed to
@@ -1555,6 +1616,170 @@ msgstr ""
 #: scratchpadOpenTooltip
 msgid "Scratchpad"
 msgstr "स्क्रैचपैड"
+
+#. # LOCALIZATION NOTE (paintflashingDesc) A very short string used to describe the
+#. # function of the "paintflashing" command
+#: paintflashingDesc
+msgctxt "paintflashingDesc"
+msgid "Highlight painted area"
+msgstr ""
+
+#. # LOCALIZATION NOTE (paintflashingOnDesc) A very short string used to describe the
+#. # function of the "paintflashing on" command.
+#: paintflashingOnDesc
+msgid "Turn on paint flashing"
+msgstr ""
+
+#. # LOCALIZATION NOTE (paintflashingOffDesc) A very short string used to describe the
+#. # function of the "paintflashing off" command.
+#: paintflashingOffDesc
+msgid "Turn off paint flashing"
+msgstr ""
+
+#. # LOCALIZATION NOTE (paintflashingChrome) A very short string used to describe the
+#. # function of the "paintflashing on/off chrome" command.
+#: paintflashingChromeDesc
+msgid "chrome frames"
+msgstr ""
+
+#. # LOCALIZATION NOTE (paintflashingManual) A longer description describing the
+#. # set of commands that control paint flashing.
+#: paintflashingManual
+msgid "Draw repainted areas in different colors"
+msgstr ""
+
+#. # LOCALIZATION NOTE (paintflashingTooltip) A string displayed as the
+#. # tooltip of button in devtools toolbox which toggles paint flashing.
+#: paintflashingTooltip
+msgctxt "paintflashingTooltip"
+msgid "Highlight painted area"
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerDesc) A very short string used to describe the
+#. # function of the profiler command.
+#: profilerDesc
+msgid "Manage profiler"
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerManual) A longer description describing the
+#. # set of commands that control the profiler.
+#: profilerManual
+msgid "Commands to start or stop a JavaScript profiler"
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerOpen) A very short string used to describe the function
+#. # of the profiler open command.
+#: profilerOpenDesc
+msgid "Open the profiler"
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerClose) A very short string used to describe the function
+#. # of the profiler close command.
+#: profilerCloseDesc
+msgid "Close the profiler"
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerStart) A very short string used to describe the function
+#. # of the profiler start command.
+#: profilerStartDesc
+msgid "Start profiling"
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerStop) A very short string used to describe the function
+#. # of the profiler stop command.
+#: profilerStopDesc
+msgid "Stop profiling"
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerList) A very short string used to describe the function
+#. # of the profiler list command.
+#: profilerListDesc
+msgid "List all profiles"
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerShow) A very short string used to describe the function
+#. # of the profiler show command.
+#: profilerShowDesc
+msgid "Show individual profile"
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerAlreadyStarted) A message that is displayed whenever
+#. # an operation cannot be completed because the profile in question has already
+#. # been started.
+#: profilerAlreadyStarted
+msgid "This profile has already been started"
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerAlreadyFinished) A message that is displayed whenever
+#. # an operation cannot be completed because the profile in question has already
+#. # been finished. It also contains a hint to use the 'profile show' command to see
+#. # the profiling results.
+#: profilerAlreadyFinished
+msgid ""
+"This profile has already been completed. Use 'profile show' command to see "
+"its results"
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerNotFound) A message that is displayed whenever
+#. # an operation cannot be completed because the profile in question could not be
+#. # found.
+#: profilerNotFound
+#, fuzzy
+msgid "Profile not found"
+msgstr "फाइल नहि भेटल"
+
+#. # LOCALIZATION NOTE (profilerNotStarted) A message that is displayed whenever
+#. # an operation cannot be completed because the profile in question has not been
+#. # started yet. It also contains a hint to use the 'profile start' command to
+#. # start the profiler.
+#: profilerNotStarted
+msgid ""
+"This profile has not been started yet. Use 'profile start' to start "
+"profliling"
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerStarting) A very short string that indicates that
+#. # we're starting the profiler.
+#: profilerStarting
+msgid "Starting..."
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerStopping) A very short string that indicates that
+#. # we're stopping the profiler.
+#: profilerStopping
+msgid "Stopping..."
+msgstr ""
+
+#. # LOCALIZATION NOTE (profilerNotReady) A message that is displayed whenever
+#. # an operation cannot be completed because the profiler has not been opened yet.
+#: profilerNotReady
+msgid "For this command to work you need to open the profiler first"
+msgstr ""
+
+#~ msgid "Restart Firefox"
+#~ msgstr "फायरफाक्स फेर चालू करू"
+
+#, fuzzy
+#~ msgid "Restarting Firefox…"
+#~ msgstr "फायरफाक्स फेर आरंभ कए रहल अछि..."
+
+#~ msgid "Key"
+#~ msgstr "कुंजी"
+
+#~ msgid "Value"
+#~ msgstr "मान"
+
+#~ msgid "Actions"
+#~ msgstr "क्रिया"
+
+#~ msgid "Collapse, expand, end-expand, expand-strict"
+#~ msgstr "संकुचित, विस्तारित, अंत-विस्तार आओर विस्तार-प्रतिबंधित"
+
+#~ msgid ""
+#~ "The coding style of braces. Either collapse, expand, end-expand or expand-"
+#~ "strict"
+#~ msgstr ""
+#~ "कोष्ठकक कोडिंग शैली. संकुचित, विस्तारित, अंत विस्तारित अथवा विस्तारित-प्रतिबंधित"
 
 #~ msgid "Keep existing line breaks?"
 #~ msgstr "मोजुदा पंक्ति अंतराल बनैने राखू?"

@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/dom/chrome/layout/printing.properties
+#. extracted from ./dom/chrome/layout/printing.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: 2010-07-30 09:08+0200\n"
 "Last-Translator: admin <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,11 +15,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
 #. # Place the word %ld where the page number and number of pages should be
@@ -28,7 +28,7 @@ msgstr ""
 msgid "%1$d"
 msgstr "%1$d"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. ## @page_total The total number of pages
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
@@ -39,15 +39,25 @@ msgstr "%1$d"
 msgid "%1$d of %2$d"
 msgstr "%1$d ya %2$d"
 
+#: noprinter
+#, fuzzy
+msgctxt "noprinter"
+msgid "No printers available."
+msgstr "Ga go na digatiši tše di lego gona."
+
+#: PrintToFile
+msgid "Print To File"
+msgstr "Gatiša go faele"
+
 #: noPrintFilename.title
 msgid "Filename is missing"
 msgstr "Leina la faele le timetše"
 
 #: noPrintFilename.alert
-msgid "You have selected \"Print To: File\", and the filename is empty!"
+#, fuzzy
+msgid "You have selected \"Print To File\", and the filename is empty!"
 msgstr "O kgethile \"Gatiša go: Faele\", gomme leina la faele ga le na selo!"
 
-#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -56,7 +66,6 @@ msgstr ""
 "%S e šetše e le gona.\n"
 "Na o nyaka go bea e nngwe legatong la yona?"
 
-#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "Phošo ya segatiši"
@@ -65,218 +74,245 @@ msgstr "Phošo ya segatiši"
 msgid "Print Preview Error"
 msgstr "Phošo ya tebelelo pele ya kgatišo"
 
-#: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid ""
-"There was a problem printing. The printer doesn't support a printing command."
-msgstr ""
-"Go bile le bothata bja go gatiša. Segatiši ga se thekge taelo ya go gatiša."
+#. # Printing error messages.
+#. #LOCALIZATION NOTE: Some of these messages come in pairs, one
+#. # for printing and one for print previewing.  You can remove that
+#. # distinction in your language by removing the entity with the _PP
+#. # suffix; then the entity without a suffix will be used for both.
+#. # You can also add that distinction to any of the messages that don't
+#. # already have it by adding a new entity with a _PP suffix.
+#. #
+#. # For instance, if you delete PERR_GFX_PRINTER_DOC_IS_BUSY_PP, then
+#. # the PERR_GFX_PRINTER_DOC_IS_BUSY message will be used for that error
+#. # condition when print previewing as well as when printing.  If you
+#. # add PERR_FAILURE_PP, then PERR_FAILURE will only be used when
+#. # printing, and PERR_FAILURE_PP will be used under the same conditions
+#. # when print previewing.
+#. #
+#: PERR_FAILURE
+#, fuzzy
+msgid "An error occurred while printing."
+msgstr "Phošo e sa tsebjego e tšweletše ge go gatišwa."
 
-#: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid ""
-"There was a problem printing. An instruction that was sent to the printer "
-"failed."
-msgstr ""
-"Go bile le bothata bja go gatiša. Taelo yeo e rometšwego go segatiši e "
-"paletšwe."
-
-#: NS_ERROR_GFX_PRINTER_NO_PRINTER_AVAILABLE
-msgid "There was a problem printing. No printer could be found."
-msgstr "Go bile le bothata bja go gatiša. Ga go segatiši se se hweditšwego."
-
-#: NS_ERROR_GFX_PRINTER_NAME_NOT_FOUND
-msgid "There was a problem printing. The printer could not be found."
-msgstr "Go bile le bothata bja go gatiša. Segatiši ga se sa hwetšwa."
-
-#: NS_ERROR_GFX_PRINTER_ACCESS_DENIED
-msgid "There was a problem printing. Access to the printer was denied."
-msgstr "Go bile le bothata bja go gatiša. Phihlelelo ya segatiši e gannwe."
-
-#: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid ""
-"There was a problem printing. Tried to set an invalid printer attribute."
-msgstr ""
-"Go bile le bothata bja go gatiša. Go lekilwe go beakanya sebopego se sa "
-"šomego sa segatiši."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_NOT_READY
-msgid "There was a problem printing. The printer not ready."
-msgstr "Go bile le bothata bja go gatiša. Segatiši ga se sa itokišetša."
-
-#: NS_ERROR_GFX_PRINTER_OUT_OF_PAPER
-msgid "There was a problem printing. The printer is out of paper."
-msgstr "Go bile le bothata bja go gatiša. Segatiši se feletšwe ke dipampiri."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_IO_ERROR
-msgid "There was a problem printing. Printer I/O error."
-msgstr "Go bile le bothata bja go gatiša. Phošo ya I/O ya segatiši."
-
-#: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
-msgid "There was a problem printing. The output file could not be opened."
-msgstr "Go bile le bothata bja go gatiša. Faele ya go ntšha ga se ya bulega."
-
-#: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
-msgid "There was an error writing the printing output file."
-msgstr "Go bile le phošo ya go ngwala faele ya seo se tšwago go segatišwa."
-
-#: NS_ERROR_GFX_PRINTER_PRINTPREVIEW
-msgid "There must be at least one printer available to show Print Preview."
-msgstr ""
-"Bonyenyane go swanetše go ba le segatiši se tee seo se lego gona go laetša "
-"tebelelo pele ya kgatišo."
-
-#: NS_ERROR_UNEXPECTED
-msgid "There was an unexpected problem when printing."
-msgstr "Go bile le bothata bjo bo bego bo sa letelwa ge go gatišwa."
-
-#: NS_ERROR_OUT_OF_MEMORY
-msgid "There was a problem printing. There is not enough free memory to print."
-msgstr ""
-"Go bile le bothata bja go gatiša. Ga go na polokelo e lekanego yeo e se nago "
-"selo go ka gatiša."
-
-#: NS_ERROR_NOT_IMPLEMENTED
-msgid "Some printing functionality is not implemented yet."
-msgstr "Go šoma go gongwe ga kgatišo ga go sešo gwa thomološwa."
-
-#: NS_ERROR_NOT_AVAILABLE
-msgid "Not available"
-msgstr "Ga e hwetšagale"
-
-#: NS_ERROR_ABORT
+#: PERR_ABORT
 msgid "The print job was aborted, or canceled."
 msgstr "Mošomo wa kgatišo o fedišitšwe, goba o khansetšwe."
 
-#: NS_ERROR_FAILURE
-msgid "An unknown error occurred while printing."
-msgstr "Phošo e sa tsebjego e tšweletše ge go gatišwa."
-
-#: NS_ERROR_GFX_PRINTER_STARTDOC
-msgid "Printing failed when starting the document."
-msgstr "Kgatišo e padile ge go thongwa tokumente."
-
-#: NS_ERROR_GFX_PRINTER_ENDDOC
-msgid "Printing failed when completing the document."
-msgstr "Kgatišo e padile ge go phethwa tokumente."
-
-#: NS_ERROR_GFX_PRINTER_STARTPAGE
-msgid "Printing failed when starting the page."
-msgstr "Kgatišo e padile ge go thongwa letlakala."
-
-#: NS_ERROR_GFX_PRINTER_ENDPAGE
-msgid "Printing failed when completing the page."
-msgstr "Kgatišo e padile ge go phethwa letlakala."
-
-#: NS_ERROR_GFX_PRINTER_PRINT_WHILE_PREVIEW
-msgid "You cannot print while in print preview."
-msgstr "O ka se gatiše o dutše o le go tebelelo pele ya kgatišo."
-
-#: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the paper size you specified is not "
-"supported by your printer."
+#: PERR_NOT_AVAILABLE
+msgid "Some printing functionality is not currently available."
 msgstr ""
-"Go bile le bothata bja go gatiša ka gobane bogolo bja letlakala bjo o bo "
-"laeditšego ga bo thekgwe ke segatiši sa gago."
 
-#: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the page orientation you specified is "
-"not supported by your printer."
+#: PERR_NOT_IMPLEMENTED
+msgid "Some printing functionality is not implemented yet."
+msgstr "Go šoma go gongwe ga kgatišo ga go sešo gwa thomološwa."
+
+#: PERR_OUT_OF_MEMORY
+msgid "There is not enough free memory to print."
 msgstr ""
-"Go bile le bothata bja go gatiša ka gobane tlhahlo ya letlakala yeo o e "
-"laeditšego ga e thekgwe ke segatiši sa gago."
 
-#: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the print job requires color "
-"capabilities that your printer does not support."
-msgstr ""
-"Go bile le bothata bja go gatiša ka gobane mošomo wa kgatišo o nyaka bokgoni "
-"bja mebala yeo segatiši sa gago se sa e thekgego."
+#: PERR_UNEXPECTED
+#, fuzzy
+msgid "There was an unexpected problem while printing."
+msgstr "Go bile le bothata bjo bo bego bo sa letelwa ge go gatišwa."
 
-#: NS_ERROR_GFX_PRINTER_TOO_MANY_COPIES
-msgid "There was a problem printing because you requested too many copies."
-msgstr ""
-"Go bile le bothata bja go gatiša ka gobane o kgopetše dikopi tše dintši."
-
-#: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid ""
-"There was a problem printing. The printer driver is not properly configured."
-msgstr ""
-"Go bile le bothata bja go gatiša. Selaola-segatiši ga se a rulaganywa "
-"gabotse."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid ""
-"The browser cannot print preview right now.\n"
-"Please try again when the page has finished loading."
-msgstr ""
-"Praosara e ka se gatiše tebelelo pele ya kgatišo gona bjale.\n"
-"Hle leka gape ge letlakala le feditše go hlahlela."
-
-#: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid ""
-"The page was replaced while you were trying to print.\n"
-"Please try again."
-msgstr ""
-"Letlakala le ile la tšeelwa legato ge o be o leka go gatiša.\n"
-"Hle leka gape."
-
-#: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
-msgstr ""
-"E ka ba e le gore dipoledišano tšeo di tsenyegago ga se tša lokelwa ka "
-"tshwanelo\n"
-"goba ditlabakelo tše tša GFX ga di sa thekga dipoledišano tša segatiši"
-
-#: NS_ERROR_GFX_NO_PRINTROMPTSERVICE
-msgid "The Printing Prompt Service is missing."
-msgstr "Tirelo ya teko ya kgatišo e timetše."
-
-#: NS_ERROR_GFX_PRINTER_NO_XUL
-msgid "We are unable to Print or Print Preview this page."
-msgstr ""
-"Re palelwa ke go gatiša goba go dira tebelelo pele ya kgatišo ya letlakala "
-"le."
-
-#: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the plex mode you specified is not "
-"supported by your printer."
-msgstr ""
-"Go bile le bothata bja go gatiša ka gobane mokgwa wa plekse wo o o "
-"laeditšego ga o thekgwe ke segatiši sa gago."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY
-msgid "The browser cannot print the document while it is being loaded."
-msgstr "Praosara e ka se gatiše tokumente ge e dutše e hlahlelwa."
-
-#: NS_ERROR_GFX_PRINTING_NOT_IMPLEMENTED
-msgid "Printing is not implemented."
-msgstr "Kgatišo ga e sešo ya thomološwa."
-
-#: NS_ERROR_GFX_COULD_NOT_LOAD_PRINT_MODULE
-msgid "The requested print module cannot be loaded."
-msgstr "Mokgwa wa kgatišo wo o kgopetšwego o ka se ke wa hlahlelwa."
-
-#: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the resolution/quality mode you "
-"specified is not supported by your printer."
-msgstr ""
-"Go bile le bothata bja go gatiša ka gobane mokgwa wa phethagatšo/boleng wo o "
-"o laeditšego ga o thekgwe ke segatiši sa gago."
-
-#. # No printers available
-#: noprinter
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE
+#, fuzzy
+msgctxt "PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE"
 msgid "No printers available."
 msgstr "Ga go na digatiši tše di lego gona."
 
-#: PrintToFile
-msgid "Print To File"
-msgstr "Gatiša go faele"
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE_PP
+msgid "No printers available, cannot show print preview."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NAME_NOT_FOUND
+msgid "The selected printer could not be found."
+msgstr ""
+
+#: PERR_GFX_PRINTER_COULD_NOT_OPEN_FILE
+msgid "Failed to open output file for print to file."
+msgstr ""
+
+#: PERR_GFX_PRINTER_STARTDOC
+#, fuzzy
+msgid "Printing failed while starting the print job."
+msgstr "Kgatišo e padile ge go thongwa letlakala."
+
+#: PERR_GFX_PRINTER_ENDDOC
+#, fuzzy
+msgid "Printing failed while completing the print job."
+msgstr "Kgatišo e padile ge go phethwa letlakala."
+
+#: PERR_GFX_PRINTER_STARTPAGE
+#, fuzzy
+msgid "Printing failed while starting a new page."
+msgstr "Kgatišo e padile ge go thongwa letlakala."
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY
+msgid "Cannot print this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY_PP
+msgid "Cannot print-preview this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NO_XUL
+msgid "Printing XUL documents is not supported."
+msgstr ""
+
+#~ msgid ""
+#~ "There was a problem printing. The printer doesn't support a printing "
+#~ "command."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša. Segatiši ga se thekge taelo ya go "
+#~ "gatiša."
+
+#~ msgid ""
+#~ "There was a problem printing. An instruction that was sent to the printer "
+#~ "failed."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša. Taelo yeo e rometšwego go segatiši e "
+#~ "paletšwe."
+
+#~ msgid "There was a problem printing. No printer could be found."
+#~ msgstr "Go bile le bothata bja go gatiša. Ga go segatiši se se hweditšwego."
+
+#~ msgid "There was a problem printing. The printer could not be found."
+#~ msgstr "Go bile le bothata bja go gatiša. Segatiši ga se sa hwetšwa."
+
+#~ msgid "There was a problem printing. Access to the printer was denied."
+#~ msgstr "Go bile le bothata bja go gatiša. Phihlelelo ya segatiši e gannwe."
+
+#~ msgid ""
+#~ "There was a problem printing. Tried to set an invalid printer attribute."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša. Go lekilwe go beakanya sebopego se sa "
+#~ "šomego sa segatiši."
+
+#~ msgid "There was a problem printing. The printer not ready."
+#~ msgstr "Go bile le bothata bja go gatiša. Segatiši ga se sa itokišetša."
+
+#~ msgid "There was a problem printing. The printer is out of paper."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša. Segatiši se feletšwe ke dipampiri."
+
+#~ msgid "There was a problem printing. Printer I/O error."
+#~ msgstr "Go bile le bothata bja go gatiša. Phošo ya I/O ya segatiši."
+
+#~ msgid "There was a problem printing. The output file could not be opened."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša. Faele ya go ntšha ga se ya bulega."
+
+#~ msgid "There was an error writing the printing output file."
+#~ msgstr "Go bile le phošo ya go ngwala faele ya seo se tšwago go segatišwa."
+
+#~ msgid "There must be at least one printer available to show Print Preview."
+#~ msgstr ""
+#~ "Bonyenyane go swanetše go ba le segatiši se tee seo se lego gona go "
+#~ "laetša tebelelo pele ya kgatišo."
+
+#~ msgid ""
+#~ "There was a problem printing. There is not enough free memory to print."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša. Ga go na polokelo e lekanego yeo e se "
+#~ "nago selo go ka gatiša."
+
+#~ msgid "Not available"
+#~ msgstr "Ga e hwetšagale"
+
+#~ msgid "Printing failed when starting the document."
+#~ msgstr "Kgatišo e padile ge go thongwa tokumente."
+
+#~ msgid "Printing failed when completing the document."
+#~ msgstr "Kgatišo e padile ge go phethwa tokumente."
+
+#~ msgid "You cannot print while in print preview."
+#~ msgstr "O ka se gatiše o dutše o le go tebelelo pele ya kgatišo."
+
+#~ msgid ""
+#~ "There was a problem printing because the paper size you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša ka gobane bogolo bja letlakala bjo o bo "
+#~ "laeditšego ga bo thekgwe ke segatiši sa gago."
+
+#~ msgid ""
+#~ "There was a problem printing because the page orientation you specified "
+#~ "is not supported by your printer."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša ka gobane tlhahlo ya letlakala yeo o e "
+#~ "laeditšego ga e thekgwe ke segatiši sa gago."
+
+#~ msgid ""
+#~ "There was a problem printing because the print job requires color "
+#~ "capabilities that your printer does not support."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša ka gobane mošomo wa kgatišo o nyaka "
+#~ "bokgoni bja mebala yeo segatiši sa gago se sa e thekgego."
+
+#~ msgid "There was a problem printing because you requested too many copies."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša ka gobane o kgopetše dikopi tše dintši."
+
+#~ msgid ""
+#~ "There was a problem printing. The printer driver is not properly "
+#~ "configured."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša. Selaola-segatiši ga se a rulaganywa "
+#~ "gabotse."
+
+#~ msgid ""
+#~ "The browser cannot print preview right now.\n"
+#~ "Please try again when the page has finished loading."
+#~ msgstr ""
+#~ "Praosara e ka se gatiše tebelelo pele ya kgatišo gona bjale.\n"
+#~ "Hle leka gape ge letlakala le feditše go hlahlela."
+
+#~ msgid ""
+#~ "The page was replaced while you were trying to print.\n"
+#~ "Please try again."
+#~ msgstr ""
+#~ "Letlakala le ile la tšeelwa legato ge o be o leka go gatiša.\n"
+#~ "Hle leka gape."
+
+#~ msgid ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+#~ msgstr ""
+#~ "E ka ba e le gore dipoledišano tšeo di tsenyegago ga se tša lokelwa ka "
+#~ "tshwanelo\n"
+#~ "goba ditlabakelo tše tša GFX ga di sa thekga dipoledišano tša segatiši"
+
+#~ msgid "The Printing Prompt Service is missing."
+#~ msgstr "Tirelo ya teko ya kgatišo e timetše."
+
+#~ msgid "We are unable to Print or Print Preview this page."
+#~ msgstr ""
+#~ "Re palelwa ke go gatiša goba go dira tebelelo pele ya kgatišo ya "
+#~ "letlakala le."
+
+#~ msgid ""
+#~ "There was a problem printing because the plex mode you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša ka gobane mokgwa wa plekse wo o o "
+#~ "laeditšego ga o thekgwe ke segatiši sa gago."
+
+#~ msgid "The browser cannot print the document while it is being loaded."
+#~ msgstr "Praosara e ka se gatiše tokumente ge e dutše e hlahlelwa."
+
+#~ msgid "Printing is not implemented."
+#~ msgstr "Kgatišo ga e sešo ya thomološwa."
+
+#~ msgid "The requested print module cannot be loaded."
+#~ msgstr "Mokgwa wa kgatišo wo o kgopetšwego o ka se ke wa hlahlelwa."
+
+#~ msgid ""
+#~ "There was a problem printing because the resolution/quality mode you "
+#~ "specified is not supported by your printer."
+#~ msgstr ""
+#~ "Go bile le bothata bja go gatiša ka gobane mokgwa wa phethagatšo/boleng "
+#~ "wo o o laeditšego ga o thekgwe ke segatiši sa gago."
 
 #~ msgid "serif"
 #~ msgstr "serifi"
