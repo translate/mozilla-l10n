@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/dom/chrome/layout/printing.properties
+#. extracted from ./dom/chrome/layout/printing.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,11 +14,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
 #. # Place the word %ld where the page number and number of pages should be
@@ -27,7 +27,7 @@ msgstr ""
 msgid "%1$d"
 msgstr "%1$d"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. ## @page_total The total number of pages
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
@@ -38,15 +38,25 @@ msgstr "%1$d"
 msgid "%1$d of %2$d"
 msgstr "%1$d ya %2$d"
 
+#: noprinter
+#, fuzzy
+msgctxt "noprinter"
+msgid "No printers available."
+msgstr "Nta mucapyi ziriho."
+
+#: PrintToFile
+msgid "Print To File"
+msgstr "Gucapa Ku Dosiye"
+
 #: noPrintFilename.title
 msgid "Filename is missing"
 msgstr "Izina rya dosiye rirabura"
 
 #: noPrintFilename.alert
-msgid "You have selected \"Print To: File\", and the filename is empty!"
+#, fuzzy
+msgid "You have selected \"Print To File\", and the filename is empty!"
 msgstr "Watoranyije \"Gucapa Ku: Dosiye\", none izina rya dosiye ririmo ubusa!"
 
-#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -55,7 +65,6 @@ msgstr ""
 "%S isanzweho.\n"
 "Urifuza kuyisimbura?"
 
-#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "Ikosa muri Mucapyi"
@@ -64,207 +73,233 @@ msgstr "Ikosa muri Mucapyi"
 msgid "Print Preview Error"
 msgstr "Ikosa mu Igaragazambere ry'Ibicapwa"
 
-#: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid ""
-"There was a problem printing. The printer doesn't support a printing command."
-msgstr "Habaye ikibazo mu gucapa. Mucapyi ntiyemera ibwiriza ry'icapa."
+#. # Printing error messages.
+#. #LOCALIZATION NOTE: Some of these messages come in pairs, one
+#. # for printing and one for print previewing.  You can remove that
+#. # distinction in your language by removing the entity with the _PP
+#. # suffix; then the entity without a suffix will be used for both.
+#. # You can also add that distinction to any of the messages that don't
+#. # already have it by adding a new entity with a _PP suffix.
+#. #
+#. # For instance, if you delete PERR_GFX_PRINTER_DOC_IS_BUSY_PP, then
+#. # the PERR_GFX_PRINTER_DOC_IS_BUSY message will be used for that error
+#. # condition when print previewing as well as when printing.  If you
+#. # add PERR_FAILURE_PP, then PERR_FAILURE will only be used when
+#. # printing, and PERR_FAILURE_PP will be used under the same conditions
+#. # when print previewing.
+#. #
+#: PERR_FAILURE
+#, fuzzy
+msgid "An error occurred while printing."
+msgstr "Habaye ikosa ritazwi mu gihe cyo gucapa."
 
-#: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid ""
-"There was a problem printing. An instruction that was sent to the printer "
-"failed."
-msgstr ""
-"Habaye ikibazo mu gucapa. Ibwiriza ryoherejwe muri mucapyi ntiryakurikijwe."
-
-#: NS_ERROR_GFX_PRINTER_NO_PRINTER_AVAILABLE
-msgid "There was a problem printing. No printer could be found."
-msgstr "Habaye ikibazo mu gucapa. Nta n'imwe mucapyi yashoboye kuboneka."
-
-#: NS_ERROR_GFX_PRINTER_NAME_NOT_FOUND
-msgid "There was a problem printing. The printer could not be found."
-msgstr "Habaye ikibazo mu gucapa. Mucapyi ntiyashoboye kuboneka."
-
-#: NS_ERROR_GFX_PRINTER_ACCESS_DENIED
-msgid "There was a problem printing. Access to the printer was denied."
-msgstr "Habaye ikibazo mu gucapa. Kugera kuri mucapyi byanze."
-
-#: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid ""
-"There was a problem printing. Tried to set an invalid printer attribute."
-msgstr ""
-"Habaye ikibazo mu gucapa. Hageragejwe gushyiraho ikiranga mucapyi kitari cyo."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_NOT_READY
-msgid "There was a problem printing. The printer not ready."
-msgstr "Habaye ikibazo mu gucapa. Mucapyi ntirimo gukora."
-
-#: NS_ERROR_GFX_PRINTER_OUT_OF_PAPER
-msgid "There was a problem printing. The printer is out of paper."
-msgstr "Habaye ikibazo mu gucapa. Nta mpapuro ziri muri mucapyi."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_IO_ERROR
-msgid "There was a problem printing. Printer I/O error."
-msgstr "Habaye ikibazo mu gucapa. Ikosa I/O rya mucapyi."
-
-#: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
-msgid "There was a problem printing. The output file could not be opened."
-msgstr ""
-"Habaye ikibazo mu gucapa. Dosiye igomba gucapwa ntiyashoboye gufungurwa."
-
-#: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
-msgid "There was an error writing the printing output file."
-msgstr "Habaye ikosa mu kwandika icapwa rya dosiye igomba igomba gucapwa."
-
-#: NS_ERROR_GFX_PRINTER_PRINTPREVIEW
-msgid "There must be at least one printer available to show Print Preview."
-msgstr ""
-"Hagomba kubaho nibura mucapyi imwe kugira ngo bishobora kwerekana "
-"Igaragazambere ry'Ibicapwa."
-
-#: NS_ERROR_UNEXPECTED
-msgid "There was an unexpected problem when printing."
-msgstr "Habaye ikibazo gitunguranye mu gihe cyo gucapa."
-
-#: NS_ERROR_OUT_OF_MEMORY
-msgid "There was a problem printing. There is not enough free memory to print."
-msgstr "Habaye ikibazo mu gucapa. Nta bubikoremezo buhagije bwo gucapiramo."
-
-#: NS_ERROR_NOT_IMPLEMENTED
-msgid "Some printing functionality is not implemented yet."
-msgstr "Hari imwe mu mikorere y'icapa itarakorwa."
-
-#: NS_ERROR_NOT_AVAILABLE
-msgid "Not available"
-msgstr "Ntibonetse"
-
-#: NS_ERROR_ABORT
+#: PERR_ABORT
 msgid "The print job was aborted, or canceled."
 msgstr "Igicapwa cyanze, cyangwa cyahagaritswe."
 
-#: NS_ERROR_FAILURE
-msgid "An unknown error occurred while printing."
-msgstr "Habaye ikosa ritazwi mu gihe cyo gucapa."
-
-#: NS_ERROR_GFX_PRINTER_STARTDOC
-msgid "Printing failed when starting the document."
-msgstr "Gucapa byanze igihe inyandiko yatangizwaga."
-
-#: NS_ERROR_GFX_PRINTER_ENDDOC
-msgid "Printing failed when completing the document."
-msgstr "Gucapa byanze igihe inyandiko yarangizwaga."
-
-#: NS_ERROR_GFX_PRINTER_STARTPAGE
-msgid "Printing failed when starting the page."
-msgstr "Gucapa byanze igihe paji yatangizwaga."
-
-#: NS_ERROR_GFX_PRINTER_ENDPAGE
-msgid "Printing failed when completing the page."
-msgstr "Gucapa byanze igihe paji yarangizwaga."
-
-#: NS_ERROR_GFX_PRINTER_PRINT_WHILE_PREVIEW
-msgid "You cannot print while in print preview."
-msgstr "Ntushobora gucapa igihe uri mu igaragazambere ry'ibicapwa."
-
-#: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the paper size you specified is not "
-"supported by your printer."
+#: PERR_NOT_AVAILABLE
+msgid "Some printing functionality is not currently available."
 msgstr ""
-"Habaye ikibazo mu gucapa kubera ko ingano y'urupapuro wagaragaje itemewe na "
-"mucapyi yawe."
 
-#: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the page orientation you specified is "
-"not supported by your printer."
+#: PERR_NOT_IMPLEMENTED
+msgid "Some printing functionality is not implemented yet."
+msgstr "Hari imwe mu mikorere y'icapa itarakorwa."
+
+#: PERR_OUT_OF_MEMORY
+msgid "There is not enough free memory to print."
 msgstr ""
-"Habaye ikibazo mu gucapa kubera ko icyerekezo cy'urupapuro wagaragaje "
-"kitemewe na mucapyi yawe."
 
-#: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the print job requires color "
-"capabilities that your printer does not support."
-msgstr ""
-"Habaye ikibazo mu gucapa kubera ko igicapwa gisaba ubushobozi mabara "
-"butemewe na mucapyi yawe."
+#: PERR_UNEXPECTED
+#, fuzzy
+msgid "There was an unexpected problem while printing."
+msgstr "Habaye ikibazo gitunguranye mu gihe cyo gucapa."
 
-#: NS_ERROR_GFX_PRINTER_TOO_MANY_COPIES
-msgid "There was a problem printing because you requested too many copies."
-msgstr ""
-"Habaye ikibazo mu gucapa kubera ko wasabye amakopi akabije kuba menshi."
-
-#: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid ""
-"There was a problem printing. The printer driver is not properly configured."
-msgstr "Habaye ikibazo mu gucapa. Musoma mucapyi ntabwo yabonejwe neza."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid ""
-"The browser cannot print preview right now.\n"
-"Please try again when the page has finished loading."
-msgstr ""
-"Mucukumbuzi ntishobora kugaragaza mbere ibicapwa ubu.\n"
-"Usabwe kongera kugerageza igihe paji izarangiza gufunguka."
-
-#: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid ""
-"The page was replaced while you were trying to print.\n"
-"Please try again."
-msgstr ""
-"Paji yasimbuwe igihe wageragezaga gucapa.\n"
-"Usabwe kongera kugerageza."
-
-#: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
-msgstr ""
-"Birashoboka ko udusanduku biganiro ducomekwa tutinjijwemo neza\n"
-"Cyangwa ibi bikoresho biherekeza GFX ntibicyemera Udusanduku Biganiro "
-"tw'Icapa kavukire"
-
-#: NS_ERROR_GFX_NO_PRINTROMPTSERVICE
-msgid "The Printing Prompt Service is missing."
-msgstr "Serivisi Itangiza Icapa irabura."
-
-#: NS_ERROR_GFX_PRINTER_NO_XUL
-msgid "We are unable to Print or Print Preview this page."
-msgstr "Kuri Cyangwa iyi Paji"
-
-#: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the plex mode you specified is not "
-"supported by your printer."
-msgstr ""
-"Habaye ikibazo mu gucapa kubera ko uburyo bwa pelegisi watanze butemewe na "
-"mucapyi yawe."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY
-msgid "The browser cannot print the document while it is being loaded."
-msgstr "Mucukumbuzi ntishobora gucapa inyandiko igihe irimo gufungurwa."
-
-#: NS_ERROR_GFX_PRINTING_NOT_IMPLEMENTED
-msgid "Printing is not implemented."
-msgstr "Gucapwa ntibyakozwe."
-
-#: NS_ERROR_GFX_COULD_NOT_LOAD_PRINT_MODULE
-msgid "The requested print module cannot be loaded."
-msgstr "Igice cy'icapa cyasabwe ntigishobora gufungurwa."
-
-#: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the resolution/quality mode you "
-"specified is not supported by your printer."
-msgstr ""
-"Havutse ikibazo mu gushyira ku rupapuro kubera ko uburyo bw'imikemurirwe/"
-"by'ingenzi watanzentibwemerewe n'Imashini-NshyiraRupapuro yawe."
-
-#. # No printers available
-#: noprinter
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE
+#, fuzzy
+msgctxt "PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE"
 msgid "No printers available."
 msgstr "Nta mucapyi ziriho."
 
-#: PrintToFile
-msgid "Print To File"
-msgstr "Gucapa Ku Dosiye"
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE_PP
+msgid "No printers available, cannot show print preview."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NAME_NOT_FOUND
+msgid "The selected printer could not be found."
+msgstr ""
+
+#: PERR_GFX_PRINTER_COULD_NOT_OPEN_FILE
+msgid "Failed to open output file for print to file."
+msgstr ""
+
+#: PERR_GFX_PRINTER_STARTDOC
+#, fuzzy
+msgid "Printing failed while starting the print job."
+msgstr "Gucapa byanze igihe paji yatangizwaga."
+
+#: PERR_GFX_PRINTER_ENDDOC
+#, fuzzy
+msgid "Printing failed while completing the print job."
+msgstr "Gucapa byanze igihe paji yarangizwaga."
+
+#: PERR_GFX_PRINTER_STARTPAGE
+#, fuzzy
+msgid "Printing failed while starting a new page."
+msgstr "Gucapa byanze igihe paji yatangizwaga."
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY
+msgid "Cannot print this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY_PP
+msgid "Cannot print-preview this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NO_XUL
+msgid "Printing XUL documents is not supported."
+msgstr ""
+
+#~ msgid ""
+#~ "There was a problem printing. The printer doesn't support a printing "
+#~ "command."
+#~ msgstr "Habaye ikibazo mu gucapa. Mucapyi ntiyemera ibwiriza ry'icapa."
+
+#~ msgid ""
+#~ "There was a problem printing. An instruction that was sent to the printer "
+#~ "failed."
+#~ msgstr ""
+#~ "Habaye ikibazo mu gucapa. Ibwiriza ryoherejwe muri mucapyi "
+#~ "ntiryakurikijwe."
+
+#~ msgid "There was a problem printing. No printer could be found."
+#~ msgstr "Habaye ikibazo mu gucapa. Nta n'imwe mucapyi yashoboye kuboneka."
+
+#~ msgid "There was a problem printing. The printer could not be found."
+#~ msgstr "Habaye ikibazo mu gucapa. Mucapyi ntiyashoboye kuboneka."
+
+#~ msgid "There was a problem printing. Access to the printer was denied."
+#~ msgstr "Habaye ikibazo mu gucapa. Kugera kuri mucapyi byanze."
+
+#~ msgid ""
+#~ "There was a problem printing. Tried to set an invalid printer attribute."
+#~ msgstr ""
+#~ "Habaye ikibazo mu gucapa. Hageragejwe gushyiraho ikiranga mucapyi kitari "
+#~ "cyo."
+
+#~ msgid "There was a problem printing. The printer not ready."
+#~ msgstr "Habaye ikibazo mu gucapa. Mucapyi ntirimo gukora."
+
+#~ msgid "There was a problem printing. The printer is out of paper."
+#~ msgstr "Habaye ikibazo mu gucapa. Nta mpapuro ziri muri mucapyi."
+
+#~ msgid "There was a problem printing. Printer I/O error."
+#~ msgstr "Habaye ikibazo mu gucapa. Ikosa I/O rya mucapyi."
+
+#~ msgid "There was a problem printing. The output file could not be opened."
+#~ msgstr ""
+#~ "Habaye ikibazo mu gucapa. Dosiye igomba gucapwa ntiyashoboye gufungurwa."
+
+#~ msgid "There was an error writing the printing output file."
+#~ msgstr "Habaye ikosa mu kwandika icapwa rya dosiye igomba igomba gucapwa."
+
+#~ msgid "There must be at least one printer available to show Print Preview."
+#~ msgstr ""
+#~ "Hagomba kubaho nibura mucapyi imwe kugira ngo bishobora kwerekana "
+#~ "Igaragazambere ry'Ibicapwa."
+
+#~ msgid ""
+#~ "There was a problem printing. There is not enough free memory to print."
+#~ msgstr "Habaye ikibazo mu gucapa. Nta bubikoremezo buhagije bwo gucapiramo."
+
+#~ msgid "Not available"
+#~ msgstr "Ntibonetse"
+
+#~ msgid "Printing failed when starting the document."
+#~ msgstr "Gucapa byanze igihe inyandiko yatangizwaga."
+
+#~ msgid "Printing failed when completing the document."
+#~ msgstr "Gucapa byanze igihe inyandiko yarangizwaga."
+
+#~ msgid "You cannot print while in print preview."
+#~ msgstr "Ntushobora gucapa igihe uri mu igaragazambere ry'ibicapwa."
+
+#~ msgid ""
+#~ "There was a problem printing because the paper size you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "Habaye ikibazo mu gucapa kubera ko ingano y'urupapuro wagaragaje itemewe "
+#~ "na mucapyi yawe."
+
+#~ msgid ""
+#~ "There was a problem printing because the page orientation you specified "
+#~ "is not supported by your printer."
+#~ msgstr ""
+#~ "Habaye ikibazo mu gucapa kubera ko icyerekezo cy'urupapuro wagaragaje "
+#~ "kitemewe na mucapyi yawe."
+
+#~ msgid ""
+#~ "There was a problem printing because the print job requires color "
+#~ "capabilities that your printer does not support."
+#~ msgstr ""
+#~ "Habaye ikibazo mu gucapa kubera ko igicapwa gisaba ubushobozi mabara "
+#~ "butemewe na mucapyi yawe."
+
+#~ msgid "There was a problem printing because you requested too many copies."
+#~ msgstr ""
+#~ "Habaye ikibazo mu gucapa kubera ko wasabye amakopi akabije kuba menshi."
+
+#~ msgid ""
+#~ "There was a problem printing. The printer driver is not properly "
+#~ "configured."
+#~ msgstr "Habaye ikibazo mu gucapa. Musoma mucapyi ntabwo yabonejwe neza."
+
+#~ msgid ""
+#~ "The browser cannot print preview right now.\n"
+#~ "Please try again when the page has finished loading."
+#~ msgstr ""
+#~ "Mucukumbuzi ntishobora kugaragaza mbere ibicapwa ubu.\n"
+#~ "Usabwe kongera kugerageza igihe paji izarangiza gufunguka."
+
+#~ msgid ""
+#~ "The page was replaced while you were trying to print.\n"
+#~ "Please try again."
+#~ msgstr ""
+#~ "Paji yasimbuwe igihe wageragezaga gucapa.\n"
+#~ "Usabwe kongera kugerageza."
+
+#~ msgid ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+#~ msgstr ""
+#~ "Birashoboka ko udusanduku biganiro ducomekwa tutinjijwemo neza\n"
+#~ "Cyangwa ibi bikoresho biherekeza GFX ntibicyemera Udusanduku Biganiro "
+#~ "tw'Icapa kavukire"
+
+#~ msgid "The Printing Prompt Service is missing."
+#~ msgstr "Serivisi Itangiza Icapa irabura."
+
+#~ msgid "We are unable to Print or Print Preview this page."
+#~ msgstr "Kuri Cyangwa iyi Paji"
+
+#~ msgid ""
+#~ "There was a problem printing because the plex mode you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "Habaye ikibazo mu gucapa kubera ko uburyo bwa pelegisi watanze butemewe "
+#~ "na mucapyi yawe."
+
+#~ msgid "The browser cannot print the document while it is being loaded."
+#~ msgstr "Mucukumbuzi ntishobora gucapa inyandiko igihe irimo gufungurwa."
+
+#~ msgid "Printing is not implemented."
+#~ msgstr "Gucapwa ntibyakozwe."
+
+#~ msgid "The requested print module cannot be loaded."
+#~ msgstr "Igice cy'icapa cyasabwe ntigishobora gufungurwa."
+
+#~ msgid ""
+#~ "There was a problem printing because the resolution/quality mode you "
+#~ "specified is not supported by your printer."
+#~ msgstr ""
+#~ "Havutse ikibazo mu gushyira ku rupapuro kubera ko uburyo bw'imikemurirwe/"
+#~ "by'ingenzi watanzentibwemerewe n'Imashini-NshyiraRupapuro yawe."
