@@ -62,7 +62,7 @@ These you can do if you are targetting the specific audience mentioned.
 +------------+------------------------------------------------------------------------------------+
 | Phase      | Details                                                                            |
 +============+====================================================================================+
-| developers | all web developer centric parts if Firefox.  If you web developers who speak your  |
+| developers | all web developer centric parts if Firefox.  If web developers who speak your      |
 |            | language mostly work in English then rather leave this untranslated.               |
 +------------+------------------------------------------------------------------------------------+
 
