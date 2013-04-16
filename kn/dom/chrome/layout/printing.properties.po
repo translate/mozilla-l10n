@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/dom/chrome/layout/printing.properties
+#. extracted from ./dom/chrome/layout/printing.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,11 +14,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
 #. # Place the word %ld where the page number and number of pages should be
@@ -27,7 +27,7 @@ msgstr ""
 msgid "%1$d"
 msgstr "%1$d"
 
-#. # Page number formating
+#. # Page number formatting
 #. ## @page_number The current page number
 #. ## @page_total The total number of pages
 #. #LOCALIZATION NOTE (pageofpages): Do not translate %ld in the following line.
@@ -38,15 +38,25 @@ msgstr "%1$d"
 msgid "%1$d of %2$d"
 msgstr "%2$d ರಲ್ಲಿ %1$d"
 
+#: noprinter
+#, fuzzy
+msgctxt "noprinter"
+msgid "No printers available."
+msgstr "ಯಾವುದೆ ಮುದ್ರಕ ಲಭ್ಯವಿಲ್ಲ."
+
+#: PrintToFile
+msgid "Print To File"
+msgstr "ಕಡತಕ್ಕೆ ಮುದ್ರಿಸು"
+
 #: noPrintFilename.title
 msgid "Filename is missing"
 msgstr "ಕಡತದ ಹೆಸರು ಕಾಣೆಯಾಗಿದೆ"
 
 #: noPrintFilename.alert
-msgid "You have selected \"Print To: File\", and the filename is empty!"
+#, fuzzy
+msgid "You have selected \"Print To File\", and the filename is empty!"
 msgstr "ನೀವು\"ಇಲ್ಲಿಗೆ ಮುದ್ರಿಸು: ಕಡತಕ್ಕೆ\" ಆರಿಸಿದ್ದೀರಿ , ಆದರೆ ಕಡತದ ಹೆಸರು ಖಾಲಿ ಇದೆ!"
 
-#. # File confirm
 #: fileConfirm.exists
 msgid ""
 "%S already exists.\n"
@@ -55,7 +65,6 @@ msgstr ""
 "%S ವು  ಈಗಾಗಲೆ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ.\n"
 "ನೀವದನ್ನು ಬದಲಾಯಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
-#. # Print error codes
 #: print_error_dialog_title
 msgid "Printer Error"
 msgstr "ಮುದ್ರಣದೋಷ"
@@ -64,209 +73,233 @@ msgstr "ಮುದ್ರಣದೋಷ"
 msgid "Print Preview Error"
 msgstr "ಮುದ್ರಣ ಮುನ್ನೋಟದ ದೋಷ"
 
-#: NS_ERROR_GFX_PRINTER_CMD_NOT_FOUND
-msgid ""
-"There was a problem printing. The printer doesn't support a printing command."
-msgstr ""
-"ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ. ಮುದ್ರಕವು ಒಂದು ಮುದ್ರಣ ಆಜ್ಞೆಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತಿಲ್ಲ."
+#. # Printing error messages.
+#. #LOCALIZATION NOTE: Some of these messages come in pairs, one
+#. # for printing and one for print previewing.  You can remove that
+#. # distinction in your language by removing the entity with the _PP
+#. # suffix; then the entity without a suffix will be used for both.
+#. # You can also add that distinction to any of the messages that don't
+#. # already have it by adding a new entity with a _PP suffix.
+#. #
+#. # For instance, if you delete PERR_GFX_PRINTER_DOC_IS_BUSY_PP, then
+#. # the PERR_GFX_PRINTER_DOC_IS_BUSY message will be used for that error
+#. # condition when print previewing as well as when printing.  If you
+#. # add PERR_FAILURE_PP, then PERR_FAILURE will only be used when
+#. # printing, and PERR_FAILURE_PP will be used under the same conditions
+#. # when print previewing.
+#. #
+#: PERR_FAILURE
+#, fuzzy
+msgid "An error occurred while printing."
+msgstr "ಮುದ್ರಿಸುವಾಗ ಒಂದು ಅಜ್ಞಾತ ದೋಷ ಎದುರಾಗಿದೆ."
 
-#: NS_ERROR_GFX_PRINTER_CMD_FAILURE
-msgid ""
-"There was a problem printing. An instruction that was sent to the printer "
-"failed."
-msgstr ""
-"ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ. ಮುದ್ರಕಕ್ಕೆ ಕಳುಹಿಸಿದ ಒಂದು ಸೂಚನೆಯು ವಿಫಲಗೊಂಡಿದೆ."
-
-#: NS_ERROR_GFX_PRINTER_NO_PRINTER_AVAILABLE
-msgid "There was a problem printing. No printer could be found."
-msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ. ಯಾವುದೆ ಮುದ್ರಕವು ಕಂಡು ಬಂದಿಲ್ಲ."
-
-#: NS_ERROR_GFX_PRINTER_NAME_NOT_FOUND
-msgid "There was a problem printing. The printer could not be found."
-msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಮುದ್ರಕವು ಕಂಡು ಬಂದಿಲ್ಲ."
-
-#: NS_ERROR_GFX_PRINTER_ACCESS_DENIED
-msgid "There was a problem printing. Access to the printer was denied."
-msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಮುದ್ರಕಕ್ಕೆಅನುಮತಿಯನ್ನು ನಿರಾಕರಿಸಲ್ಪಟ್ಟಿದೆ."
-
-#: NS_ERROR_GFX_PRINTER_INVALID_ATTRIBUTE
-msgid ""
-"There was a problem printing. Tried to set an invalid printer attribute."
-msgstr ""
-"ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಒಂದು ಅಮಾನ್ಯ ಮುದ್ರಕ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಹೊಂದಿಸಲು "
-"ಪ್ರಯತ್ನಿಸಲಾಗಿದೆ."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_NOT_READY
-msgid "There was a problem printing. The printer not ready."
-msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಮುದ್ರಕವು ತಯಾರಾಗಿಲ್ಲ."
-
-#: NS_ERROR_GFX_PRINTER_OUT_OF_PAPER
-msgid "There was a problem printing. The printer is out of paper."
-msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಮುದ್ರಕದಲ್ಲಿ ಹಾಳೆಗಳು ಖಾಲಿಯಾಗಿವೆ."
-
-#: NS_ERROR_GFX_PRINTER_PRINTER_IO_ERROR
-msgid "There was a problem printing. Printer I/O error."
-msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಮುದ್ರಕ ದ I/O ದೋಷ."
-
-#: NS_ERROR_GFX_PRINTER_COULD_NOT_OPEN_FILE
-msgid "There was a problem printing. The output file could not be opened."
-msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಔಟ್‌ಪುಟ್ ಕಡತವನ್ನು ತೆರೆಯಲಾಗಿಲ್ಲ."
-
-#: NS_ERROR_GFX_PRINTER_FILE_IO_ERROR
-msgid "There was an error writing the printing output file."
-msgstr "ಮುದ್ರಣ ಔಟ್‌ಪುಟ್ ಕಡತವನ್ನು ಬರೆಯುವಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ."
-
-#: NS_ERROR_GFX_PRINTER_PRINTPREVIEW
-msgid "There must be at least one printer available to show Print Preview."
-msgstr "ಮುದ್ರಣ ಮುನ್ನೋಟವನ್ನು ತೋರಿಸಲು ಕನಿಷ್ಟ ಒಂದು ಮುದ್ರಕ ಇರುವುದು ಅಗತ್ಯವಾಗುತ್ತದೆ."
-
-#: NS_ERROR_UNEXPECTED
-msgid "There was an unexpected problem when printing."
-msgstr "ಮುದ್ರಿಸುವಾಗ ಒಂದು ಅನಿರೀಕ್ಷಿತ ತೊಂದರೆ ಎದುರಾಗಿದೆ."
-
-#: NS_ERROR_OUT_OF_MEMORY
-msgid "There was a problem printing. There is not enough free memory to print."
-msgstr ""
-"ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಮುದ್ರಿಸಲು ಸಾಕಷ್ಟು ಮುಕ್ತವಿರುವ ಮೆಮೊರಿಯು ಲಭ್ಯವಿಲ್ಲ."
-
-#: NS_ERROR_NOT_IMPLEMENTED
-msgid "Some printing functionality is not implemented yet."
-msgstr "ಕೆಲವೊಂದು ಮುದ್ರಣ ಕಾರ್ಯಶೀಲತೆಯು  ಇನ್ನೂ ಅನ್ವಯಿಸಲಾಗಿಲ್ಲ."
-
-#: NS_ERROR_NOT_AVAILABLE
-msgid "Not available"
-msgstr "ಲಭ್ಯವಿಲ್ಲ"
-
-#: NS_ERROR_ABORT
+#: PERR_ABORT
 msgid "The print job was aborted, or canceled."
 msgstr "ಮುದ್ರಣ ಕಾರ್ಯವು ಭಂಗಗೊಂಡಿದೆ, ಅಥವ  ರದ್ದಾಗಿದೆ."
 
-#: NS_ERROR_FAILURE
-msgid "An unknown error occurred while printing."
-msgstr "ಮುದ್ರಿಸುವಾಗ ಒಂದು ಅಜ್ಞಾತ ದೋಷ ಎದುರಾಗಿದೆ."
-
-#: NS_ERROR_GFX_PRINTER_STARTDOC
-msgid "Printing failed when starting the document."
-msgstr "ದಸ್ತಾವೇಜನ್ನು ಆರಂಭಿಸುವಾಗ ಮುದ್ರಣವು ವಿಫಲಗೊಂಡಿದೆ."
-
-#: NS_ERROR_GFX_PRINTER_ENDDOC
-msgid "Printing failed when completing the document."
-msgstr "ದಸ್ತಾವೇಜನ್ನು ಪೂರ್ಣಗೊಳಿಸುವಾಗ ಮುದ್ರಣವು ವಿಫಲಗೊಂಡಿದೆ."
-
-#: NS_ERROR_GFX_PRINTER_STARTPAGE
-msgid "Printing failed when starting the page."
-msgstr "ಪುಟವನ್ನು ಆರಂಭಿಸುವಾಗ ಮುದ್ರಣವು ವಿಫಲಗೊಂಡಿದೆ."
-
-#: NS_ERROR_GFX_PRINTER_ENDPAGE
-msgid "Printing failed when completing the page."
-msgstr "ಪುಟವನ್ನು ಪೂರ್ಣಗೊಳಿಸುವಾಗ ಮುದ್ರಣವು ವಿಫಲಗೊಂಡಿದೆ."
-
-#: NS_ERROR_GFX_PRINTER_PRINT_WHILE_PREVIEW
-msgid "You cannot print while in print preview."
-msgstr "ಮುದ್ರಣ ಮುನ್ನೋಟದಲ್ಲಿ ಇರುವಾಗ ನೀವು ಮುದ್ರಿಸಲಾಗುವುದಿಲ್ಲ."
-
-#: NS_ERROR_GFX_PRINTER_PAPER_SIZE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the paper size you specified is not "
-"supported by your printer."
+#: PERR_NOT_AVAILABLE
+msgid "Some printing functionality is not currently available."
 msgstr ""
-"ಮುದ್ರಿಸುವಾಗ ಒಂದು ತೊಂದರೆ ಕಂಡು ಬಂದಿದೆ ಏಕೆಂದರೆ ನೀವು ಸೂಚಿಸಿದ ಹಾಳೆಯ ಗಾತ್ರವು "
-"ಮುದ್ರಕದಿಂದ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
 
-#: NS_ERROR_GFX_PRINTER_ORIENTATION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the page orientation you specified is "
-"not supported by your printer."
+#: PERR_NOT_IMPLEMENTED
+msgid "Some printing functionality is not implemented yet."
+msgstr "ಕೆಲವೊಂದು ಮುದ್ರಣ ಕಾರ್ಯಶೀಲತೆಯು  ಇನ್ನೂ ಅನ್ವಯಿಸಲಾಗಿಲ್ಲ."
+
+#: PERR_OUT_OF_MEMORY
+msgid "There is not enough free memory to print."
 msgstr ""
-"ಮುದ್ರಿಸುವಾಗ ಒಂದು ತೊಂದರೆ ಕಂಡು ಬಂದಿದೆ ಏಕೆಂದರೆ  ನೀವು ಸೂಚಿಸಿದ ನಿಲುವು (ಓರಿಯಂಟೇಶನ್ ) "
-"ಮುದ್ರಕದಿಂದ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
 
-#: NS_ERROR_GFX_PRINTER_COLORSPACE_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the print job requires color "
-"capabilities that your printer does not support."
-msgstr ""
-"ಮುದ್ರಿಸುವಾಗ ಒಂದು ತೊಂದರೆ ಕಂಡು ಬಂದಿದೆ ಏಕೆಂದರೆ  ಮುದ್ರಣ ಕಾರ್ಯಕ್ಕೆ ಬಣ್ಣ ಸಾಮರ್ಥ್ಯತೆಗಳು "
-"ಅಗತ್ಯವಿದೆ ಆದರೆ ಅದಕ್ಕೆ ನಿಮ್ಮ ಮುದ್ರಕದಲ್ಲಿ ಬೆಂಬಲವಿಲ್ಲ."
+#: PERR_UNEXPECTED
+#, fuzzy
+msgid "There was an unexpected problem while printing."
+msgstr "ಮುದ್ರಿಸುವಾಗ ಒಂದು ಅನಿರೀಕ್ಷಿತ ತೊಂದರೆ ಎದುರಾಗಿದೆ."
 
-#: NS_ERROR_GFX_PRINTER_TOO_MANY_COPIES
-msgid "There was a problem printing because you requested too many copies."
-msgstr ""
-"ಮುದ್ರಿಸುವಾಗ ಒಂದು ತೊಂದರೆ ಕಂಡು ಬಂದಿದೆ ಏಕೆಂದರೆ  ನೀವು ಬಹು ಸಂಖ್ಯೆಯ ಪ್ರತಿಗಳಿಗೆ ಮನವಿ "
-"ಸಲ್ಲಿಸಿದ್ದೀರಿ."
-
-#: NS_ERROR_GFX_PRINTER_DRIVER_CONFIGURATION_ERROR
-msgid ""
-"There was a problem printing. The printer driver is not properly configured."
-msgstr ""
-"ಮುದ್ರಿಸುವಾಗ ಒಂದು ತೊಂದರೆ ಕಂಡು ಬಂದಿದೆ . ಮುದ್ರಕ ಚಾಲಕವು ಸರಿಯಾಗಿ ಸಂರಚಿತಗೊಂಡಿಲ್ಲ."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY_PP
-msgid ""
-"The browser cannot print preview right now.\n"
-"Please try again when the page has finished loading."
-msgstr ""
-"ವೀಕ್ಷಕವು ಈಗಲೆ ಮುದ್ರಣ ಮುನ್ನೋಟವನ್ನು ತೋರಿಸಲಾಗುವುದಿಲ್ಲ.\n"
-"ಪುಟವು ಲೋಡ್‍ ಆಗುವುದು ಮುಗಿದ ನಂತರ ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
-
-#: NS_ERROR_GFX_PRINTER_DOC_WAS_DESTORYED
-msgid ""
-"The page was replaced while you were trying to print.\n"
-"Please try again."
-msgstr ""
-"ನೀವು ಮುದ್ರಿಸಲು ಪ್ರಯತ್ನಿಸಿದಾಗ ಪುಟವು ಬದಲಾಯಿಸಲ್ಪಟ್ಟಿದೆ.\n"
-"ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
-
-#: NS_ERROR_GFX_NO_PRINTDIALOG_IN_TOOLKIT
-msgid ""
-"Either pluggable dialogs were not properly installed\n"
-"Or this GFX Toolkit no longer supports native Print Dialogs"
-msgstr ""
-"ಪ್ಲಗ್‍ ಮಾಡಲಾದ ಸಂವಾದಗಳು ಸರಿಯಾಗಿ ಅನುಸ್ಥಾಪಿತಗೊಂಡಿಲ್ಲ ಇಲ್ಲವೆ\n"
-" ಈ GFX ಉಪಕರಣ ಕಿಟ್  ಸ್ಥಳೀಯ ಮುದ್ರಣ ಸಂವಾದಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತಿಲ್ಲ"
-
-#: NS_ERROR_GFX_NO_PRINTROMPTSERVICE
-msgid "The Printing Prompt Service is missing."
-msgstr "ಮುದ್ರಣ ಪ್ರಾಂಪ್ಟ್‍ ಸೇವೆಯು ಕಾಣೆಯಾಗಿದೆ."
-
-#: NS_ERROR_GFX_PRINTER_NO_XUL
-msgid "We are unable to Print or Print Preview this page."
-msgstr ""
-"ಈ ಪುಟವನ್ನು ಮುದ್ರಿಸಲಾಗಲಿ ಅಥವ ಮುದ್ರಣ ಮುನ್ನೋಟವನ್ನು ತೋರಿಸಲಾಗಲಿ ನಮಗೆ ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ."
-
-#: NS_ERROR_GFX_PRINTER_PLEX_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the plex mode you specified is not "
-"supported by your printer."
-msgstr ""
-"ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ತೊಂದರೆ ಉಂಟಾಗಿದೆ ಏಕೆಂದರೆ  ನೀವು ಸೂಚಿಸಿದ ಪ್ಲೆಕ್ಸ್‍(plex)ಕ್ರಮವು ನಿಮ್ಮ "
-"ಮುದ್ರಕದಿಂದ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
-
-#: NS_ERROR_GFX_PRINTER_DOC_IS_BUSY
-msgid "The browser cannot print the document while it is being loaded."
-msgstr "ದಸ್ತಾವೇಜು ಲೋಡ್‍ ಆಗುತ್ತಿರುವಾಗ ಅದನ್ನು ಮುದ್ರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
-
-#: NS_ERROR_GFX_PRINTING_NOT_IMPLEMENTED
-msgid "Printing is not implemented."
-msgstr "ಮುದ್ರಣವು ಅನ್ವಯಿತಗೊಂಡಿಲ್ಲ."
-
-#: NS_ERROR_GFX_COULD_NOT_LOAD_PRINT_MODULE
-msgid "The requested print module cannot be loaded."
-msgstr "ಮನವಿ ಸಲ್ಲಿಸಲಾದ ಮುದ್ರಣ ಘಟಕವನ್ನು(ಮಾಡ್ಯೂಲ್) ಲೋಡ್ ಮಾಡಲಾಗಿಲ್ಲ."
-
-#: NS_ERROR_GFX_PRINTER_RESOLUTION_NOT_SUPPORTED
-msgid ""
-"There was a problem printing because the resolution/quality mode you "
-"specified is not supported by your printer."
-msgstr ""
-"ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ತೊಂದರೆ ಉಂಟಾಗಿದೆ ಏಕೆಂದರೆ ನೀವು ಸೂಚಿಸಿದ ರೆಸಲ್ಯೂಶನ್/ಗುಣಮಟ್ಟ ಕ್ರಮವು "
-"ಮುದ್ರಕದಿಂದ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
-
-#. # No printers available
-#: noprinter
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE
+#, fuzzy
+msgctxt "PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE"
 msgid "No printers available."
 msgstr "ಯಾವುದೆ ಮುದ್ರಕ ಲಭ್ಯವಿಲ್ಲ."
 
-#: PrintToFile
-msgid "Print To File"
-msgstr "ಕಡತಕ್ಕೆ ಮುದ್ರಿಸು"
+#: PERR_GFX_PRINTER_NO_PRINTER_AVAILABLE_PP
+msgid "No printers available, cannot show print preview."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NAME_NOT_FOUND
+msgid "The selected printer could not be found."
+msgstr ""
+
+#: PERR_GFX_PRINTER_COULD_NOT_OPEN_FILE
+msgid "Failed to open output file for print to file."
+msgstr ""
+
+#: PERR_GFX_PRINTER_STARTDOC
+#, fuzzy
+msgid "Printing failed while starting the print job."
+msgstr "ಪುಟವನ್ನು ಆರಂಭಿಸುವಾಗ ಮುದ್ರಣವು ವಿಫಲಗೊಂಡಿದೆ."
+
+#: PERR_GFX_PRINTER_ENDDOC
+#, fuzzy
+msgid "Printing failed while completing the print job."
+msgstr "ಪುಟವನ್ನು ಪೂರ್ಣಗೊಳಿಸುವಾಗ ಮುದ್ರಣವು ವಿಫಲಗೊಂಡಿದೆ."
+
+#: PERR_GFX_PRINTER_STARTPAGE
+#, fuzzy
+msgid "Printing failed while starting a new page."
+msgstr "ಪುಟವನ್ನು ಆರಂಭಿಸುವಾಗ ಮುದ್ರಣವು ವಿಫಲಗೊಂಡಿದೆ."
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY
+msgid "Cannot print this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_DOC_IS_BUSY_PP
+msgid "Cannot print-preview this document yet, it is still being loaded."
+msgstr ""
+
+#: PERR_GFX_PRINTER_NO_XUL
+msgid "Printing XUL documents is not supported."
+msgstr ""
+
+#~ msgid ""
+#~ "There was a problem printing. The printer doesn't support a printing "
+#~ "command."
+#~ msgstr ""
+#~ "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ. ಮುದ್ರಕವು ಒಂದು ಮುದ್ರಣ ಆಜ್ಞೆಗೆ ಪ್ರತಿಕ್ರಿಯಿಸುತ್ತಿಲ್ಲ."
+
+#~ msgid ""
+#~ "There was a problem printing. An instruction that was sent to the printer "
+#~ "failed."
+#~ msgstr ""
+#~ "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ. ಮುದ್ರಕಕ್ಕೆ ಕಳುಹಿಸಿದ ಒಂದು ಸೂಚನೆಯು ವಿಫಲಗೊಂಡಿದೆ."
+
+#~ msgid "There was a problem printing. No printer could be found."
+#~ msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ. ಯಾವುದೆ ಮುದ್ರಕವು ಕಂಡು ಬಂದಿಲ್ಲ."
+
+#~ msgid "There was a problem printing. The printer could not be found."
+#~ msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಮುದ್ರಕವು ಕಂಡು ಬಂದಿಲ್ಲ."
+
+#~ msgid "There was a problem printing. Access to the printer was denied."
+#~ msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಮುದ್ರಕಕ್ಕೆಅನುಮತಿಯನ್ನು ನಿರಾಕರಿಸಲ್ಪಟ್ಟಿದೆ."
+
+#~ msgid ""
+#~ "There was a problem printing. Tried to set an invalid printer attribute."
+#~ msgstr ""
+#~ "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಒಂದು ಅಮಾನ್ಯ ಮುದ್ರಕ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಹೊಂದಿಸಲು "
+#~ "ಪ್ರಯತ್ನಿಸಲಾಗಿದೆ."
+
+#~ msgid "There was a problem printing. The printer not ready."
+#~ msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಮುದ್ರಕವು ತಯಾರಾಗಿಲ್ಲ."
+
+#~ msgid "There was a problem printing. The printer is out of paper."
+#~ msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಮುದ್ರಕದಲ್ಲಿ ಹಾಳೆಗಳು ಖಾಲಿಯಾಗಿವೆ."
+
+#~ msgid "There was a problem printing. Printer I/O error."
+#~ msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಮುದ್ರಕ ದ I/O ದೋಷ."
+
+#~ msgid "There was a problem printing. The output file could not be opened."
+#~ msgstr "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಔಟ್‌ಪುಟ್ ಕಡತವನ್ನು ತೆರೆಯಲಾಗಿಲ್ಲ."
+
+#~ msgid "There was an error writing the printing output file."
+#~ msgstr "ಮುದ್ರಣ ಔಟ್‌ಪುಟ್ ಕಡತವನ್ನು ಬರೆಯುವಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ."
+
+#~ msgid "There must be at least one printer available to show Print Preview."
+#~ msgstr "ಮುದ್ರಣ ಮುನ್ನೋಟವನ್ನು ತೋರಿಸಲು ಕನಿಷ್ಟ ಒಂದು ಮುದ್ರಕ ಇರುವುದು ಅಗತ್ಯವಾಗುತ್ತದೆ."
+
+#~ msgid ""
+#~ "There was a problem printing. There is not enough free memory to print."
+#~ msgstr ""
+#~ "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ.  ಮುದ್ರಿಸಲು ಸಾಕಷ್ಟು ಮುಕ್ತವಿರುವ ಮೆಮೊರಿಯು ಲಭ್ಯವಿಲ್ಲ."
+
+#~ msgid "Not available"
+#~ msgstr "ಲಭ್ಯವಿಲ್ಲ"
+
+#~ msgid "Printing failed when starting the document."
+#~ msgstr "ದಸ್ತಾವೇಜನ್ನು ಆರಂಭಿಸುವಾಗ ಮುದ್ರಣವು ವಿಫಲಗೊಂಡಿದೆ."
+
+#~ msgid "Printing failed when completing the document."
+#~ msgstr "ದಸ್ತಾವೇಜನ್ನು ಪೂರ್ಣಗೊಳಿಸುವಾಗ ಮುದ್ರಣವು ವಿಫಲಗೊಂಡಿದೆ."
+
+#~ msgid "You cannot print while in print preview."
+#~ msgstr "ಮುದ್ರಣ ಮುನ್ನೋಟದಲ್ಲಿ ಇರುವಾಗ ನೀವು ಮುದ್ರಿಸಲಾಗುವುದಿಲ್ಲ."
+
+#~ msgid ""
+#~ "There was a problem printing because the paper size you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "ಮುದ್ರಿಸುವಾಗ ಒಂದು ತೊಂದರೆ ಕಂಡು ಬಂದಿದೆ ಏಕೆಂದರೆ ನೀವು ಸೂಚಿಸಿದ ಹಾಳೆಯ ಗಾತ್ರವು "
+#~ "ಮುದ್ರಕದಿಂದ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
+
+#~ msgid ""
+#~ "There was a problem printing because the page orientation you specified "
+#~ "is not supported by your printer."
+#~ msgstr ""
+#~ "ಮುದ್ರಿಸುವಾಗ ಒಂದು ತೊಂದರೆ ಕಂಡು ಬಂದಿದೆ ಏಕೆಂದರೆ  ನೀವು ಸೂಚಿಸಿದ ನಿಲುವು "
+#~ "(ಓರಿಯಂಟೇಶನ್ ) ಮುದ್ರಕದಿಂದ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
+
+#~ msgid ""
+#~ "There was a problem printing because the print job requires color "
+#~ "capabilities that your printer does not support."
+#~ msgstr ""
+#~ "ಮುದ್ರಿಸುವಾಗ ಒಂದು ತೊಂದರೆ ಕಂಡು ಬಂದಿದೆ ಏಕೆಂದರೆ  ಮುದ್ರಣ ಕಾರ್ಯಕ್ಕೆ ಬಣ್ಣ ಸಾಮರ್ಥ್ಯತೆಗಳು "
+#~ "ಅಗತ್ಯವಿದೆ ಆದರೆ ಅದಕ್ಕೆ ನಿಮ್ಮ ಮುದ್ರಕದಲ್ಲಿ ಬೆಂಬಲವಿಲ್ಲ."
+
+#~ msgid "There was a problem printing because you requested too many copies."
+#~ msgstr ""
+#~ "ಮುದ್ರಿಸುವಾಗ ಒಂದು ತೊಂದರೆ ಕಂಡು ಬಂದಿದೆ ಏಕೆಂದರೆ  ನೀವು ಬಹು ಸಂಖ್ಯೆಯ ಪ್ರತಿಗಳಿಗೆ "
+#~ "ಮನವಿ ಸಲ್ಲಿಸಿದ್ದೀರಿ."
+
+#~ msgid ""
+#~ "There was a problem printing. The printer driver is not properly "
+#~ "configured."
+#~ msgstr ""
+#~ "ಮುದ್ರಿಸುವಾಗ ಒಂದು ತೊಂದರೆ ಕಂಡು ಬಂದಿದೆ . ಮುದ್ರಕ ಚಾಲಕವು ಸರಿಯಾಗಿ ಸಂರಚಿತಗೊಂಡಿಲ್ಲ."
+
+#~ msgid ""
+#~ "The browser cannot print preview right now.\n"
+#~ "Please try again when the page has finished loading."
+#~ msgstr ""
+#~ "ವೀಕ್ಷಕವು ಈಗಲೆ ಮುದ್ರಣ ಮುನ್ನೋಟವನ್ನು ತೋರಿಸಲಾಗುವುದಿಲ್ಲ.\n"
+#~ "ಪುಟವು ಲೋಡ್‍ ಆಗುವುದು ಮುಗಿದ ನಂತರ ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+
+#~ msgid ""
+#~ "The page was replaced while you were trying to print.\n"
+#~ "Please try again."
+#~ msgstr ""
+#~ "ನೀವು ಮುದ್ರಿಸಲು ಪ್ರಯತ್ನಿಸಿದಾಗ ಪುಟವು ಬದಲಾಯಿಸಲ್ಪಟ್ಟಿದೆ.\n"
+#~ "ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+
+#~ msgid ""
+#~ "Either pluggable dialogs were not properly installed\n"
+#~ "Or this GFX Toolkit no longer supports native Print Dialogs"
+#~ msgstr ""
+#~ "ಪ್ಲಗ್‍ ಮಾಡಲಾದ ಸಂವಾದಗಳು ಸರಿಯಾಗಿ ಅನುಸ್ಥಾಪಿತಗೊಂಡಿಲ್ಲ ಇಲ್ಲವೆ\n"
+#~ " ಈ GFX ಉಪಕರಣ ಕಿಟ್  ಸ್ಥಳೀಯ ಮುದ್ರಣ ಸಂವಾದಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತಿಲ್ಲ"
+
+#~ msgid "The Printing Prompt Service is missing."
+#~ msgstr "ಮುದ್ರಣ ಪ್ರಾಂಪ್ಟ್‍ ಸೇವೆಯು ಕಾಣೆಯಾಗಿದೆ."
+
+#~ msgid "We are unable to Print or Print Preview this page."
+#~ msgstr ""
+#~ "ಈ ಪುಟವನ್ನು ಮುದ್ರಿಸಲಾಗಲಿ ಅಥವ ಮುದ್ರಣ ಮುನ್ನೋಟವನ್ನು ತೋರಿಸಲಾಗಲಿ ನಮಗೆ ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ."
+
+#~ msgid ""
+#~ "There was a problem printing because the plex mode you specified is not "
+#~ "supported by your printer."
+#~ msgstr ""
+#~ "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ತೊಂದರೆ ಉಂಟಾಗಿದೆ ಏಕೆಂದರೆ  ನೀವು ಸೂಚಿಸಿದ ಪ್ಲೆಕ್ಸ್‍(plex)ಕ್ರಮವು "
+#~ "ನಿಮ್ಮ ಮುದ್ರಕದಿಂದ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."
+
+#~ msgid "The browser cannot print the document while it is being loaded."
+#~ msgstr "ದಸ್ತಾವೇಜು ಲೋಡ್‍ ಆಗುತ್ತಿರುವಾಗ ಅದನ್ನು ಮುದ್ರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
+
+#~ msgid "Printing is not implemented."
+#~ msgstr "ಮುದ್ರಣವು ಅನ್ವಯಿತಗೊಂಡಿಲ್ಲ."
+
+#~ msgid "The requested print module cannot be loaded."
+#~ msgstr "ಮನವಿ ಸಲ್ಲಿಸಲಾದ ಮುದ್ರಣ ಘಟಕವನ್ನು(ಮಾಡ್ಯೂಲ್) ಲೋಡ್ ಮಾಡಲಾಗಿಲ್ಲ."
+
+#~ msgid ""
+#~ "There was a problem printing because the resolution/quality mode you "
+#~ "specified is not supported by your printer."
+#~ msgstr ""
+#~ "ಮುದ್ರಣದಲ್ಲಿ ಒಂದು ತೊಂದರೆ ಉಂಟಾಗಿದೆ ಏಕೆಂದರೆ ನೀವು ಸೂಚಿಸಿದ ರೆಸಲ್ಯೂಶನ್/ಗುಣಮಟ್ಟ ಕ್ರಮವು "
+#~ "ಮುದ್ರಕದಿಂದ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ."

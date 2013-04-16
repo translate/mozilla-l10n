@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/browser/chrome/browser/devtools/gcli.properties
+#. extracted from ./browser/chrome/browser/devtools/gcli.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-04-07 20:54-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -31,6 +31,12 @@ msgstr ""
 #: canonDescNone
 msgid "(No description)"
 msgstr "(ಯಾವುದೆ ವಿವರಣೆ ಇಲ್ಲ)"
+
+#. # LOCALIZATION NOTE (canonDefaultGroupName): The default name for a group of
+#. # parameters.
+#: canonDefaultGroupName
+msgid "Options"
+msgstr "ಆಯ್ಕೆಗಳು"
 
 #. # LOCALIZATION NOTE (cliEvalJavascript): The special '{' command allows entry
 #. # of JavaScript like traditional developer tool command lines. This describes
@@ -138,6 +144,13 @@ msgstr "%1$S ಎನ್ನುವುದು ಗರಿಷ್ಟ ಅನುಮತಿ �
 #: typesNumberMin
 msgid "%1$S is smaller than minimum allowed: %2$S."
 msgstr "%1$S ಎನ್ನುವುದು ಕನಿಷ್ಟ ಅನುಮತಿ ಇರುವದಕ್ಕಿಂತ ಚಿಕ್ಕದಾಗಿದೆ: %2$S."
+
+#. # LOCALIZATION NOTE (typesNumberNotInt2): When the command line is passed a
+#. # number, but the number has a decimal part and floats are not allowed.
+#: typesNumberNotInt2
+#, fuzzy
+msgid "Can't convert \"%S\" to an integer."
+msgstr "\"%S\" ಅನ್ನು ಒಂದು ಸಂಖ್ಯೆಯಾಗಿ ಪರಿವರ್ತಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
 #. # LOCALIZATION NOTE (typesSelectionNomatch): When the command line is passed
 #. # an option with a limited number of correct values, but the passed value is
@@ -362,6 +375,14 @@ msgstr "ಒಂದು ಪ್ರದರ್ಶಕವನ್ನು ಸಿದ್ಧಗ�
 msgid "The name of the setting to display"
 msgstr "ತೋರಿಸಬೇಕಿರುವ ಸಿದ್ಧತೆಯ ಹೆಸರು"
 
+#. # LOCALIZATION NOTE (prefShowSettingValue): This is used to show the
+#. # preference name and the associated preference value. %1$S is replaced with
+#. # the preference name and %2$S is replaced with the preference value.
+#: prefShowSettingValue
+#, fuzzy
+msgid "%1$S: %2$S"
+msgstr "%1$S %2$S"
+
 #. # LOCALIZATION NOTE (prefSetDesc): A very short description of the 'pref set'
 #. # command. This string is designed to be shown in a menu alongside the command
 #. # name, which is why it should be as short as possible. See prefSetManual for
@@ -502,42 +523,44 @@ msgstr ""
 "ಹೊಸ ಬಳಕೆದಾರರು 'ಅರ್ಥವಾಯಿತು!' ಎನ್ನುವ ಗುಂಡಿಯನ್ನು ಒತ್ತುವವರೆಗೆ ತೋರಿಸಲಾದ ಸಂದೇಶವನ್ನೇ "
 "ಪುನಃ ತೋರಿಸು"
 
-#. # LOCALIZATION NOTE (introTextOpening): The 'intro text' opens when the user
+#. # LOCALIZATION NOTE (introTextOpening2): The 'intro text' opens when the user
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button. This
 #. # string is the opening paragraph of the intro text.
-#: introTextOpening
+#: introTextOpening2
+#, fuzzy
 msgid ""
-"The Firefox command line is designed for developers. It focuses on speed of "
-"input over JavaScript syntax and a rich display over monospace output."
+"This command line is designed for developers. It focuses on speed of input "
+"over JavaScript syntax and a rich display over monospace output."
 msgstr ""
 "ಫೈರ್ಫಾಕ್ಸ್ ಆಜ್ಞಾ ಸಾಲನ್ನು ವಿಕಸನೆಗಾರರಿಗಾಗಿ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ. ಇದು JavaScript "
 "ಸಿಂಟ್ಯಾಕ್ಸಿನಲ್ಲಿ ಬದಲಿಗೆ ಇನ್‌ಪುಟ್‌ನ ವೇಗದ ಮೇಲೆ ಮತ್ತು ಮೊನೊಸ್ಪೇಸ್‌ ಔಟ್‌ಪುಟ್ ಬದಲಿಗೆ ಸಮೃದ್ಧವಾದ "
 "ಪ್ರದರ್ಶಕದ ಮೇಲೆ  ಕೇಂದ್ರೀಕರಿಸುತ್ತದೆ ."
 
 #. # LOCALIZATION NOTE (introTextCommands): For information about the 'intro
-#. # text' see introTextOpening. The second paragraph is in 2 sections, the first
-#. # section points the user to the 'help' command.
+#. # text' see introTextOpening2. The second paragraph is in 2 sections, the
+#. # first section points the user to the 'help' command.
 #: introTextCommands
 msgid "For a list of commands type"
 msgstr "ಆಜ್ಞೆಗಳ ಒಂದು ಪಟ್ಟಿಗಾಗಿ"
 
-#. # LOCALIZATION NOTE (introTextKeys): For information about the 'intro text'
-#. # see introTextOpening. The second section in the second paragraph points the
+#. # LOCALIZATION NOTE (introTextKeys2): For information about the 'intro text'
+#. # see introTextOpening2. The second section in the second paragraph points the
 #. # user to the F1/Escape keys which show and hide hints.
-#: introTextKeys
-msgid "or to show/hide command hints press"
+#: introTextKeys2
+#, fuzzy
+msgid ", or to show/hide command hints press"
 msgstr "ಅಥವ ಆಜ್ಞೆಗಳ ಕುರಿತಾದ ಸುಳಿವುಗಳನ್ನು ತೋರಿಸಲು/ಅಡಗಿಸಲು ಇದನ್ನು ಒತ್ತಿ"
 
 #. # LOCALIZATION NOTE (introTextF1Escape): For information about the 'intro
-#. # text' see introTextOpening. This string is used with introTextKeys, and
+#. # text' see introTextOpening2. This string is used with introTextKeys2, and
 #. # contains the keys that are pressed to open and close hints.
 #: introTextF1Escape
 msgid "F1/Escape"
 msgstr "F1/ಎಸ್ಕೇಪ್"
 
 #. # LOCALIZATION NOTE (introTextGo): For information about the 'intro text' see
-#. # introTextOpening. The text on the button that dismisses the intro text.
+#. # introTextOpening2. The text on the button that dismisses the intro text.
 #: introTextGo
 msgid "Got it!"
 msgstr "ಅರ್ಥವಾಯಿತು!"
