@@ -258,7 +258,7 @@ function require() {
 	local cmd
 	for cmd in $commands
 	do
-		which $cmd >/dev/null || log_error "Missing: $cmd"
+		which $cmd >/dev/null || log_error "Missing tool: $cmd"
 	done
 
 }
