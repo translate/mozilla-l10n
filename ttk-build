@@ -158,19 +158,20 @@ mkdir -p ${L10N_DIR}
 cd ${L10N_DIR}
 for lang in ${HG_LANGS}
 do
+	mozlang=$(get_language_upstream $lang)
 	if [ $opt_vc ]; then
-		verbose "Update l10n/$lang"
-		if [ -d ${lang} ]; then
-			if [ -d ${lang}/.hg ]; then
-			        (cd ${lang}
+		verbose "Update l10n/$mozlang"
+		if [ -d ${mozlang} ]; then
+			if [ -d ${mozlang}/.hg ]; then
+			        (cd ${mozlang}
 				hg revert $hgverbosity --no-backup --all -r default
 				hg pull $hgverbosity -u
 				hg update $hgverbosity -C)
 			else
-			        rm -rf ${lang}/* 
+			        rm -rf ${mozlang}/* 
 			fi
 		else
-		    hg clone $hgverbosity http://hg.mozilla.org/releases/l10n/${MOZ_DIR}/${lang} ${lang} || mkdir ${lang}
+		    hg clone $hgverbosity http://hg.mozilla.org/releases/l10n/${MOZ_DIR}/${mozlang} ${mozlang} || mkdir ${mozlang}
 		fi
 	fi
 done
