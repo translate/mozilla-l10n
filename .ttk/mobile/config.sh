@@ -15,3 +15,5 @@ opt_verbose=3
 PRODUCT_DIRS="mobile embedding"
 # Directories in language repositories to clear before running po2moz
 RETIRED_PRODUCT_DIRS=""
+
+MOZ_PRODUCT=mobile

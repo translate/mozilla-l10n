@@ -14,3 +14,5 @@ opt_verbose=3
 PRODUCT_DIRS="browser dom netwerk security services/sync toolkit" # Directories in language repositories to clear before running po2moz
 # Directories in language repositories to clear before running po2moz
 RETIRED_PRODUCT_DIRS="other-licenses/branding/firefox extensions/reporter"
+
+MOZ_PRODUCT=browser
