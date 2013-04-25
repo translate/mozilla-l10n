@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-04-25 19:15+0200\n"
 "PO-Revision-Date: 2013-02-24 00:25+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1361665512.0\n"
@@ -30,21 +30,9 @@ msgid "Install"
 msgstr "Stàlaich"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "Tuilleadain"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "A' luchdadh a-nuas an tuilleadain"
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "A' stàladh tuilleadan"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
-msgstr "Deiseil leis an stàladh. Tha feum air ath-thòiseachadh."
 
 #: alertAddonsInstalledNoRestart
 msgid "Installation complete"
@@ -168,12 +156,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr "Ath-thoisich gus na dh'atharraich thu a thoirt gu buil."
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr ""
-"Tuilleadain air an ùrachadh. Ath-thoisich gus na dh'atharraich thu a thoirt "
-"gu buil."
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr ""
@@ -185,25 +167,28 @@ msgid "Restart"
 msgstr "Ath-thòisich"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "Cha do leig %S leis an làrach seo priob-uinneag fhosgladh."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "Cha do leig %S leis an làrach seo %S priob-uinneagan fhosgladh."
+#: popup.dontAskAgain
+#, fuzzy
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Na faighnich dhìom a-rithist airson na làraich seo"
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "Seall"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr "Seall an-còmhnaidh"
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
-msgstr "Na seall idir"
+#: popup.dontShow
+msgid "Don't show"
+msgstr ""
 
 #. # SafeBrowsing
 #: safeBrowsingDoorhanger
@@ -230,22 +215,21 @@ msgstr "An cuidich thu leinn le leasachadh %2$S 's tu a' cur dàta gu %1$S?"
 msgid "Learn more"
 msgstr "Barrachd fiosrachaidh"
 
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "Cuidichidh"
+#: telemetry.optin.send
+msgid "Send"
+msgstr "Cuir"
 
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "Cha chuidich"
+#: telemetry.optin.dontSend
+msgid "Don't send"
+msgstr ""
 
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
+#. # LOCALIZATION NOTE (telemetry.optout.message2): %1$S and %3$S will be replaced by
 #. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
+#: telemetry.optout.message2
+#, fuzzy
 msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
+"%1$S sends information about performance, stability, hardware, usage and "
+"customizations back to %2$S to help improve %3$S."
 msgstr ""
 "Cuiridh %1$S fiosrachadh mu dhèanadas, bathar-cruaidh, cleachdadh is "
 "gnàthachaidhean air ais gu %2$S gus taic a chumail ri leasachadh %3$S."
@@ -318,17 +302,9 @@ msgstr "Co-roinn"
 msgid "Don't share"
 msgstr "Na co-roinn"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr "Nochd an-còmhnaidh"
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr "Na nochd idir"
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
-msgstr "Tha %S ag iarraidh fios mun àite far a bheil thu."
+#: geolocation.ask
+msgid "Share your location with %S?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
 #. # site settings dialog.
@@ -350,12 +326,14 @@ msgid "Allow"
 msgstr "Ceadaich"
 
 #: desktopNotification.dontAllow
+#, fuzzy
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr "Na ceadaich"
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
-msgstr "Tha %S airson brathan a chleachdadh."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
 #. # used in site settings dialog.
@@ -387,36 +365,30 @@ msgstr ""
 "fhosgladh;Chaidh #1 tabaichean prìobhaideach ùr fhosgladh;Chaidh #1 taba "
 "prìobhaideach ùr fhosgladh"
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "Mearachd:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "Rabhadh:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+#, fuzzy
+msgid "Allow %S to store data on your device for offline use?"
 msgstr ""
 "Tha %S ag iarraidh dàta a stòradh air an uidheam agad a chum cleachdadh far "
 "loidhne."
+
+#: offlineApps.dontAskAgain
+#, fuzzy
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Na faighnich dhìom a-rithist airson na làraich seo"
 
 #: offlineApps.allow
 msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "Ceadaich"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+#, fuzzy
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr "Na ceadaich"
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "Chan ann an-dràsta"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -424,157 +396,32 @@ msgstr "Chan ann an-dràsta"
 msgid "Store Offline Data"
 msgstr "Stòir dàta far loidhne"
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr "Na ceadaich"
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr ""
-"Tha %S ag iarraidh dàta a stòradh air an uidheam agad a chum cleachdadh far "
-"loidhne."
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "Ceadaich"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr "Na ceadaich"
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 "Tha %S ag iarraidh dàta a stòradh air an uidheam agad a chum cleachdadh far "
 "loidhne."
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "Ceadaich"
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+#, fuzzy
+msgid "Save Password"
+msgstr "Faclan-faire air an sàbhaladh"
 
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr "Na ceadaich"
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
+msgstr "Sàbhail"
 
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr "Tha %S ag iarraidh aplacaidean air an uidheam agad a stiùireadh."
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "Cuimhnich am facal-faire"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "Cum an cuimhne"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr "Chan ann idir"
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr "Comharraidhean-lìn air an deasg"
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "Dearbhaidh a dhùnadh"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr ""
-"NOT USED;Tha thu an impis #1 thaba a dhùnadh. A bheil thu airson leantainn "
-"ort?;Tha thu an impis #1 tabaichean a dhùnadh. A bheil thu airson leantainn "
-"ort?;Tha thu an impis #1 taba a dhùnadh. A bheil thu airson leantainn ort?"
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "Dùin na tabaichean"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "Thoir rabhadh dhomh mus dùin mi iomadh taba còmhla"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr "Duilich!"
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr "Chaidh rudeigin cearr le sealltainn na duilleige-lìn."
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "Cuir aithisg tuislidh gu Mozilla"
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "Dùin an taba"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "Ath-luchdaich an taba"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr "Duilleag ghnàthaichte"
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "Lorg le:"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr "Lorg airson \"%S\""
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr "Fosgail san %S App"
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr "Fosgail ann an App eile"
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr "Falamhaich an dàta prìobhaideach"
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
-msgstr ""
-"A bheil thu airson an eachdraidh brabhsaidh 's na roghainnean agad, a' "
-"gabhail a-steach faclan-faire is briosgaidean, a sguabadh às?"
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+#, fuzzy
+msgid "Don't save"
+msgstr "Na co-roinn"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -591,11 +438,6 @@ msgstr "breugach"
 #: intl.charsetmenu.browser.static
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
-
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "Barrachd"
 
 #. # Text Selection
 #: selectionHelper.textCopied
@@ -805,19 +647,18 @@ msgid "Could not download manifest"
 msgstr "Cha b\\' urrainn dhuinn am manifest a luchdadh a-nuas"
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+#, fuzzy
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr "Tha susbaint plugain ann an%S. Am bu mhath leat a chluich?"
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "Bu mhath"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr "Cuir beò"
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "Cha bu mhath"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -828,9 +669,9 @@ msgstr "Na faighnich dhìom a-rithist airson na làraich seo"
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr "Cluich na plugain"
+#: clickToPlayPlugins.activatePlugins
+msgid "Activate Plugins"
+msgstr "Cuir na plugain an gnìomh"
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -893,7 +734,7 @@ msgid "Always"
 msgstr "An-còmhnaidh"
 
 #: helperapps.never
-msgctxt "helperapps.never"
+#, fuzzy
 msgid "Never"
 msgstr "Chan ann idir"
 
@@ -944,6 +785,177 @@ msgstr "Tha thu a' co-roinneadh a' mhicreofoin agad le %S an-dràsta."
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr ""
 "Tha thu a' co-roinneadh a' chamara 's a' mhicreofoin agad le %S an-dràsta."
+
+#~ msgid "Add-ons"
+#~ msgstr "Tuilleadain"
+
+#~ msgid "Installing add-on"
+#~ msgstr "A' stàladh tuilleadan"
+
+#~ msgid "Installation complete. Restart required."
+#~ msgstr "Deiseil leis an stàladh. Tha feum air ath-thòiseachadh."
+
+#~ msgid "Add-ons updated. Restart to complete changes."
+#~ msgstr ""
+#~ "Tuilleadain air an ùrachadh. Ath-thoisich gus na dh'atharraich thu a "
+#~ "thoirt gu buil."
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "Cha do leig %S leis an làrach seo priob-uinneag fhosgladh."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "Cha do leig %S leis an làrach seo %S priob-uinneagan fhosgladh."
+
+#~ msgid "Always Show"
+#~ msgstr "Seall an-còmhnaidh"
+
+#~ msgid "Never Show"
+#~ msgstr "Na seall idir"
+
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "Cuidichidh"
+
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "Cha chuidich"
+
+#~ msgid "Always Share"
+#~ msgstr "Nochd an-còmhnaidh"
+
+#~ msgid "Never Share"
+#~ msgstr "Na nochd idir"
+
+#~ msgid "%S wants your location."
+#~ msgstr "Tha %S ag iarraidh fios mun àite far a bheil thu."
+
+#~ msgid "%S wants to use notifications."
+#~ msgstr "Tha %S airson brathan a chleachdadh."
+
+#~ msgid "Error:"
+#~ msgstr "Mearachd:"
+
+#~ msgid "Warning:"
+#~ msgstr "Rabhadh:"
+
+#~ msgctxt "offlineApps.never"
+#~ msgid "Don't Allow"
+#~ msgstr "Na ceadaich"
+
+#~ msgid "Not Now"
+#~ msgstr "Chan ann an-dràsta"
+
+#~ msgctxt "offlineApps.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Na ceadaich"
+
+#~ msgctxt "offlineApps.wantsTo"
+#~ msgid "%S wants to store data on your device for offline use."
+#~ msgstr ""
+#~ "Tha %S ag iarraidh dàta a stòradh air an uidheam agad a chum cleachdadh "
+#~ "far loidhne."
+
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "Ceadaich"
+
+#~ msgctxt "indexedDBQuota.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Na ceadaich"
+
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "Ceadaich"
+
+#~ msgctxt "openWebappsManage.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Na ceadaich"
+
+#~ msgid "%S wants to manage applications on your device."
+#~ msgstr "Tha %S ag iarraidh aplacaidean air an uidheam agad a stiùireadh."
+
+#~ msgid "Remember Password"
+#~ msgstr "Cuimhnich am facal-faire"
+
+#~ msgid "Remember"
+#~ msgstr "Cum an cuimhne"
+
+#~ msgid "Desktop Bookmarks"
+#~ msgstr "Comharraidhean-lìn air an deasg"
+
+#~ msgid "Confirm close"
+#~ msgstr "Dearbhaidh a dhùnadh"
+
+#~ msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#~ msgstr ""
+#~ "NOT USED;Tha thu an impis #1 thaba a dhùnadh. A bheil thu airson "
+#~ "leantainn ort?;Tha thu an impis #1 tabaichean a dhùnadh. A bheil thu "
+#~ "airson leantainn ort?;Tha thu an impis #1 taba a dhùnadh. A bheil thu "
+#~ "airson leantainn ort?"
+
+#~ msgid "Close tabs"
+#~ msgstr "Dùin na tabaichean"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "Thoir rabhadh dhomh mus dùin mi iomadh taba còmhla"
+
+#~ msgid "Sorry!"
+#~ msgstr "Duilich!"
+
+#~ msgid "Something went wrong while displaying a web page."
+#~ msgstr "Chaidh rudeigin cearr le sealltainn na duilleige-lìn."
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "Cuir aithisg tuislidh gu Mozilla"
+
+#~ msgid "Close tab"
+#~ msgstr "Dùin an taba"
+
+#~ msgid "Reload tab"
+#~ msgstr "Ath-luchdaich an taba"
+
+#~ msgid "Custom Page"
+#~ msgstr "Duilleag ghnàthaichte"
+
+#~ msgid "Search With:"
+#~ msgstr "Lorg le:"
+
+#~ msgid "Search for \"%S\""
+#~ msgstr "Lorg airson \"%S\""
+
+#~ msgid "Open in %S App"
+#~ msgstr "Fosgail san %S App"
+
+#~ msgid "Open in Another App"
+#~ msgstr "Fosgail ann an App eile"
+
+#~ msgid "Clear Private Data"
+#~ msgstr "Falamhaich an dàta prìobhaideach"
+
+#~ msgid ""
+#~ "Delete your browsing history and settings, including passwords and "
+#~ "cookies?"
+#~ msgstr ""
+#~ "A bheil thu airson an eachdraidh brabhsaidh 's na roghainnean agad, a' "
+#~ "gabhail a-steach faclan-faire is briosgaidean, a sguabadh às?"
+
+#~ msgid "More"
+#~ msgstr "Barrachd"
+
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "Bu mhath"
+
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "Cha bu mhath"
+
+#~ msgid "Play Plugins"
+#~ msgstr "Cluich na plugain"
+
+#~ msgctxt "helperapps.never"
+#~ msgid "Never"
+#~ msgstr "Chan ann idir"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "Chaidh coltas ùr a stàladh."
