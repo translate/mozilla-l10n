@@ -451,7 +451,7 @@ function vc_addremove_git {
 			if [ "$(basename $oldfile | cut -d'.' -f3 | cut -c-2)" = "po" ]; then
 				git checkout $gitverbosity -- $oldfile
 				mkdir -p obsolete/$(dirname $oldfile)
-				git mv $oldfile obsolete/$oldfile
+				git mv -f $oldfile obsolete/$oldfile
 			fi
 		done
 		clean_po obsolete
