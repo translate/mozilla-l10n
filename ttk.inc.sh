@@ -130,7 +130,7 @@ rsync_files_get() {
 
 rsync_files_put() {
 	log_info "rsync copying files on local filesystem to Pootle"
-	local langs=$*
+	local langs=$(get_language_pootle $*)
 
 	update_command="$precommand python $manage_command update_stores $option_project"
 	pootle_dir=/var/www/sites/$instance/translations/$project
