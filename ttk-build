@@ -150,14 +150,14 @@ if [ "$opt_vc" -o ! -d "${PO_DIR}" ]; then
 	done
 fi
 
-verbose "Localisations - update Mercurial-managed languages in l10n/"
+verbose "Localisations - update Mercurial-managed languages in ${L10N_DIR}"
 mkdir -p ${L10N_DIR}
 cd ${L10N_DIR}
 for lang in ${HG_LANGS}
 do
 	mozlang=$(get_language_upstream $lang)
 	if [ $opt_vc ]; then
-		verbose "Update l10n/$mozlang"
+		verbose "Update ${L10N_DIR}/$mozlang"
 		if [ -d ${mozlang} ]; then
 			if [ -d ${mozlang}/.hg ]; then
 			        (cd ${mozlang}
@@ -204,7 +204,7 @@ if [ $opt_vc ]; then
 	git stash pop $gitverbosity || true)
 fi
 
-verbose "Translations - build l10n/ files"
+verbose "Translations - build Mozilla files in ${L10N_DIR}"
 for lang in ${HG_LANGS}
 do
 	if [ "$lang" == "templates" ]; then
