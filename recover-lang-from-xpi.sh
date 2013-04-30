@@ -22,6 +22,10 @@ unzip -q -u -d $merge_dir/$lang "$xpi"
 
 # Check we have an en-US XPI to merge against
 version=$(egrep "em:version" $merge_dir/$lang/install.rdf | cut -d'"' -f2)
+if [ "$version" == "" ]; then
+	echo "Unable to determine version.  Most likely really old XPI"
+	exit
+fi
 if [ ! -f "$merge_dir/en-US/en-US-$version.xpi" ]; then
 	echo "Please download an en-US.xpi to $merge_dir/en-US/en-US-$version.xpi"
 	echo "Try: wget ftp://ftp.mozilla.org/pub/mozilla.org/firefox/releases/${version}/linux-i686/xpi/en-US.xpi"
