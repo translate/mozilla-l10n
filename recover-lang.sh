@@ -4,9 +4,6 @@ source ttk.inc.sh
 
 langs=$*
 
-export PYTHONPATH=../translate:$PYTHONPATH
-export PATH=../translate/translate/convert:$PATH
-
 for lang in $langs
 do
 	hg_lang=$(echo $lang | tr "_" "-")
