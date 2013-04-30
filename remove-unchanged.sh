@@ -1,6 +1,7 @@
 #!/bin/bash
 
-progress="--progress=none"
+source ttk.inc.sh
+progress="--progress=$progress"
 
 langs=$*
 
