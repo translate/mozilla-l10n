@@ -187,7 +187,7 @@ function assemble_phase() {
 
 
 disassemble_phase() {
-	# Break up a phase baesd sync into normal structure
+	# Break up a phase based sync into normal structure
 	local langs=$(get_language_pootle $*)
 	(
 	cd $local_copy/$project
