@@ -6,9 +6,10 @@ langs=$*
 
 for lang in $langs
 do
-	hg_lang=$(echo $lang | tr "_" "-")
-	moz2po --progress=none --exclude=".hgtags" -t templates-en-US build/l10n/$hg_lang $lang
+	mozlang=$(get_language_upstream $lang)
+	polang=$(get_language_pootle $lang)
+	moz2po --progress=$progress --errorlevel=$errorlevel --exclude=".hgtags" -t templates-en-US build/l10n/$mozlang $polang
 done
-rm $(find $lang -type f | egrep -v "\.po$")
+rm $(find $polang -type f | egrep -v "\.po$")
 
 clean_po $langs
