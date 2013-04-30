@@ -141,8 +141,23 @@ rsync_files_put() {
 		exit
 	fi
 	
-	# Copy files across and disassemble phases
-	log_debug "Creating local copies of languages for syncing"
+	assemble_phase $langs
+
+	# FIXME we can probably do this in one go
+	log_debug "rsync file to Pootle"
+	for lang in $langs
+	do
+		# FIXME only sync if we copied up correctly, this way we catch permission errors quickly
+	        log_debug "rsyncing: $lang"
+		rsync -az --no-g --chmod=Dg+s,ug+rw,o-rw,Fug+rw,o-rw --include="*.po" --exclude=pootle-terminology.po --exclude=.translation_index --delete $local_copy/$project/$lang $user@$server:$pootle_dir/
+		ssh $user@$server "$update_command --language=$lang"
+	done
+}
+
+function assemble_phase() {
+	# Create phases for a phase baesd sync
+	local langs=$(get_language_pootle $*)
+	log_debug "Assembling phases"
 	for lang in $langs
 	do
 		rm -rf $local_copy/$project/$lang
@@ -168,18 +183,8 @@ rsync_files_put() {
 			done
 		fi
 	done
-	
-	
-	# FIXME we can probably do this in one go
-	log_debug "rsync file to Pootle"
-	for lang in $langs
-	do
-		# FIXME only sync if we copied up correctly, this way we catch permission errors quickly
-	        log_debug "rsyncing: $lang"
-		rsync -az --no-g --chmod=Dg+s,ug+rw,o-rw,Fug+rw,o-rw --include="*.po" --exclude=pootle-terminology.po --exclude=.translation_index --delete $local_copy/$project/$lang $user@$server:$pootle_dir/
-		ssh $user@$server "$update_command --language=$lang"
-	done
 }
+
 
 disassemble_phase() {
 	# Break up a phase baesd sync into normal structure
