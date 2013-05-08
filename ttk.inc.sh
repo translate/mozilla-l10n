@@ -431,6 +431,32 @@ function source_config() {
 	fi
 }
 
+function source_script() {
+	script=$1
+	_find_config_base_dir
+	local workon=$(ls $config_base_dir/*.workon 2>/dev/null)
+	local default=$(ls $config_base_dir/*.default 2>/dev/null)
+	possible_config_dirs=""
+	if [ -f "$workon" ]; then
+		possible_config_dirs="$possible_config_dirs $config_base_dir/$(basename $workon .workon)"
+	fi
+	if [ -f "$default" ]; then
+		possible_config_dirs="$possible_config_dirs $config_base_dir/$(basename $default .default)"
+	fi
+	possible_config_dirs="$possible_config_dirs $config_base_dir/default"
+	for possible in $possible_config_dirs
+	do
+		if [ -f $possible/$script ]; then
+			found=$possible/$script
+			echo $found
+			return 0
+		fi
+	done
+	if [ ! $found ]; then
+		log_error "No script '$script' found."
+	fi
+}
+
 #################
 # Version Control
 #################
