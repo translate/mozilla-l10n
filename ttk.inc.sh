@@ -185,10 +185,10 @@ function assemble_phase() {
 					file=${file}t
 				fi
 				mkdir -p $local_copy/$project/$lang/$phase/$(dirname $file)
-				cp -p $lang/$file $local_copy/$project/$lang/$phase/$file
+				cp -p $translation_dir/$lang/$file $local_copy/$project/$lang/$phase/$file
 			done
 		else
-			(cd $lang
+			(cd $translation_dir/$lang
 			if [ $lang == "pot" -o $lang == "templates" ]; then
 				find $PRODUCT_DIRS -name "*.pot"
 			else
@@ -196,7 +196,7 @@ function assemble_phase() {
 			fi) | while read file
 			do
 				mkdir -p $local_copy/$project/$lang/$(dirname $file)
-				cp -p $lang/$file $local_copy/$project/$lang/$file
+				cp -p $translation_dir/$lang/$file $local_copy/$project/$lang/$file
 			done
 		fi
 	done
@@ -221,26 +221,26 @@ disassemble_phase() {
 			        	log_debug "Phase: $phase"
 			        	for po in $(find . -name "*.po")
 			        	do
-			        	        mkdir -p $local_trans_dir/$lang/$(dirname $po)
-			        	        mv $po $local_trans_dir/$lang/$po
+					        mkdir -p $translation_dir/$lang/$(dirname $po)
+					        cp -p $po $translation_dir/$lang/$po
 			        	done
 			        	cd ..
 				else
-					mv $phase $local_trans_dir/$lang
+					cp -p $phase $translation_dir/$lang
 				fi
 			done
 		else
 		       	for po in $(find . -name "*.po")
 		       	do
-		       	        mkdir -p $local_trans_dir/$lang/$(dirname $po)
-		       	        mv $po $local_trans_dir/$lang/$po
+				mkdir -p $translation_dir/$lang/$(dirname $po)
+				cp -p $po $translation_dir/$lang/$po
 		       	done
 		fi
 		cd ..
 	done
 	)
-	clean_po_location $local_trans_dir $langs
-	revert_unchanged_po_git $local_trans_dir $langs
+	clean_po_location $translation_dir $langs
+	revert_unchanged_po_git $translation_dir $langs
 }
 
 
