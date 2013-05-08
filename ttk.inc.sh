@@ -208,6 +208,8 @@ disassemble_phase() {
 	local langs=$(get_language_pootle $*)
 	(
 	cd $local_copy/$project
+	# FIXME bail out early so that we don't report disassembling if there
+	# is no phase
 	log_info "Disassembling phases"
 	for lang in $langs
 	do
