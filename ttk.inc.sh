@@ -166,7 +166,7 @@ rsync_files_put() {
 	do
 		# FIXME only sync if we copied up correctly, this way we catch permission errors quickly
 	        log_debug "rsyncing: $lang"
-		rsync -az --no-g --chmod=Dg+s,ug+rw,o-rw,Fug+rw,o-rw --include="*.po" --exclude=pootle-terminology.po --exclude=.translation_index --delete $local_copy/$project/$lang $user@$server:$pootle_dir/
+		rsync -az --no-g --chmod=Dg+s,ug+rw,o-rw,Fug+rw,o-rw --include="*.$translation_file_ext" --exclude=pootle-terminology.po --exclude=.translation_index --delete $local_copy/$project/$lang $user@$server:$pootle_dir/
 		ssh $user@$server "$update_command --language=$lang"
 	done
 }
@@ -190,9 +190,9 @@ function assemble_phase() {
 		else
 			(cd $translation_dir/$lang
 			if [ $lang == "pot" -o $lang == "templates" ]; then
-				find $PRODUCT_DIRS -name "*.pot"
+				find $PRODUCT_DIRS -name "*.$translation_templates_ext"
 			else
-				find $PRODUCT_DIRS -name "*.po"
+				find $PRODUCT_DIRS -name "*.$translation_file_ext"
 			fi) | while read file
 			do
 				mkdir -p $local_copy/$project/$lang/$(dirname $file)
@@ -219,7 +219,7 @@ disassemble_phase() {
 				if [ -d $phase ]; then
 			        	cd $phase
 			        	log_debug "Phase: $phase"
-			        	for po in $(find . -name "*.po")
+					for po in $(find . -name "*.$translation_file_ext")
 			        	do
 					        mkdir -p $translation_dir/$lang/$(dirname $po)
 					        cp -p $po $translation_dir/$lang/$po
@@ -230,7 +230,7 @@ disassemble_phase() {
 				fi
 			done
 		else
-		       	for po in $(find . -name "*.po")
+			for po in $(find . -name "*.$translation_file_ext")
 		       	do
 				mkdir -p $translation_dir/$lang/$(dirname $po)
 				cp -p $po $translation_dir/$lang/$po
@@ -248,10 +248,14 @@ function clean_po {
 	# dirs - one or more directories within which to search for PO files
 	local dirs=$*
 	require msgcat
+	if [ $translation_file_ext != "po" ]; then
+		exit
+	fi
+
 
 	# FIXME - only really need to run this is USECPO=0
 	log_info "Reflow Gettext PO file formatting"
-	for po in $(find $dirs -name "*.po" -o -name "*.pot")
+	for po in $(find $dirs -name "*.$translation_file_ext" -o -name "*.$translation_template_ext")
 	do
 		if [ -s $po ]; then
 			msgcat -o $po.2 $po 2> >(egrep -v "internationali[sz]ed messages should not contain the .* escape sequence" >&2 ) && mv $po.2 $po
@@ -430,6 +434,9 @@ function revert_unchanged_po_git {
 	local location=$1
 	shift
 	local dirs=$*
+	if [ $translation_file_ext != "po" ]; then
+		exit
+	fi
 
 	log_info "Revert files that only have header changes"
 	log_debug "Reverting in '$location' for '$dirs'"
@@ -456,14 +463,14 @@ function vc_addremove_git {
 		# Not VC managed, assume it's a new language
 		# FIXME does this actually work? Surely we need to traverse the
 		# folder? or don't need the *.po bit
-		git add ${dir}/\*.po
+		git add ${dir}/\*.$translation_file_ext
 	else
 		(cd ${location}/${dir}
 		for newfile in $(git status --porcelain $PRODUCT_DIRS | egrep "^\?\?" | sed "s/^??\w*[^\/]*\///")
 		do
 			if [ -f $newfile -a "$(basename $newfile | cut -d"." -f3)" = "po" ]; then
 				git add $newfile
-			elif [ -d $newfile -a "$(find $newfiles -name '*.po' -o -name "*.pot")" ]; then
+			elif [ -d $newfile -a "$(find $newfiles -name '*.$translation_file_ext' -o -name "*.$translation_template_ext")" ]; then
 				git add $newfile
 			fi
 		done
