@@ -130,6 +130,7 @@ _create_option_langs() {
 sync_stores() {
 	log_info "Syncing files to Pootle's filesystem"
 	_create_option_langs $(get_language_pootle $*)
+	option_project="--project=$project"
 	sync_command="$precommand python $manage_command sync_stores --verbosity=$manage_py_verbosity $option_project $option_langs"
 	
 	ssh $user@$server $sync_command || exit
@@ -147,6 +148,7 @@ rsync_files_put() {
 	log_info "rsync copying files on local filesystem to Pootle"
 	local langs=$(get_language_pootle $*)
 
+	option_project="--project=$project"
 	update_command="$precommand python $manage_command update_stores $option_project"
 	pootle_dir=/var/www/sites/$instance/translations/$project
 	
