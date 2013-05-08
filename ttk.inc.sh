@@ -71,9 +71,10 @@ function _get_language_line() {
 	for mapping in $project_mappings $default_mappings
 	do
 		if [ -f $mapping ]; then
+			# s/\t/:/ - since BSD sed doens't seem to to manage \t use real {TAB}
 			line=$(cat $mapping |
 			       egrep -v "^#" |
-			       sed "s/\t/:/g" |
+			       sed "s/	/:/g" |
 			       egrep "(^|:|,)${queried_lang}(,|:|$)")
 			if [ ! -z $line ]; then
 				echo $line
