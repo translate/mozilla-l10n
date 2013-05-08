@@ -2,14 +2,6 @@
 
 source ttk.inc.sh
 
-langs=$*
-option_project="--project=$project"
-
-if [ $# -eq 0 ]; then
-	langs=$(all_langs)
-elif [ $# -eq 1 -a -z "${1//[0-9]/}" ]; then
-	langs=$(all_langs $1)
-fi
-
+langs=$(which_langs $*)
 sync_stores $langs
 rsync_files_put $langs

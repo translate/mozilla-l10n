@@ -39,6 +39,20 @@ easy_install_verbosity="--quiet"
 # Language and language code
 ############################
 
+function which_langs() {
+	# Detemine which languages we want to work on. Either:
+	# 1) Mutliple specified languages
+	# 2) Languages identified by a specific change ID
+	# 3) All languages for the project
+	langs=$*
+	if [ $# -eq 0 ]; then
+		langs=$(all_langs)
+	elif [ $# -eq 1 -a -z "${1//[0-9]/}" ]; then
+		langs=$(all_langs $1)
+	fi
+	echo $langs
+}
+
 function all_langs() {
 	# Retrieves all the languages enabled for the active project
 	option_change_id=""
