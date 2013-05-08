@@ -127,6 +127,10 @@ _create_option_langs() {
 #####################
 # Pootle interactions
 #####################
+latest_change_id() {
+	ssh $user@$server $precommand python $manage_command latest_change_id --verbosity=$manage_py_verbosity
+}
+
 sync_stores() {
 	log_info "Syncing files to Pootle's filesystem"
 	_create_option_langs $(get_language_pootle $*)
