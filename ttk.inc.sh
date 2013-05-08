@@ -537,6 +537,18 @@ function copydir {
 }
 
 
+####### Standard Settings #############
+# Standard file locations
+_find_config_base_dir
+translation_dir=$base_dir
+templates=$translation_dir/templates
+
+# Standard settings
+translation_file_ext=po
+translation_template_ext=pot
+PRODUCT_DIRS=.
+phaselist=
+
 ##### MAIN #####
 source_config 
 
