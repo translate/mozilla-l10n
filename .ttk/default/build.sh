@@ -83,16 +83,10 @@ do
 	fi
 done
 
-if [ $# -eq 0 ]; then
-	HG_LANGS=$(all_langs)
-elif [ $# -eq 1 -a -z "${1//[0-9]/}" ]; then
-	HG_LANGS=$(all_langs $1)
-else
-	HG_LANGS=$*
-fi
-log_info "Processing languages '$HG_LANGS'"
+LANGS=$(which_langs $*)
+log_info "Processing languages '$LANGS'"
 
-for lang in $HG_LANGS
+for lang in $LANGS
 do
 	if [ "$lang" == "templates" ]; then
 		opt_vc="yes"
@@ -151,7 +145,7 @@ fi
 verbose "Localisations - update Mercurial-managed languages in ${L10N_DIR}"
 mkdir -p ${L10N_DIR}
 cd ${L10N_DIR}
-for lang in ${HG_LANGS}
+for lang in ${LANGS}
 do
 	mozlang=$(get_language_upstream $lang)
 	if [ $opt_vc ]; then
@@ -203,7 +197,7 @@ if [ $opt_vc ]; then
 fi
 
 verbose "Translations - build Mozilla files in ${L10N_DIR}"
-for lang in ${HG_LANGS}
+for lang in ${LANGS}
 do
 	if [ "$lang" == "templates" ]; then
 		continue
