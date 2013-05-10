@@ -33,6 +33,7 @@ gitverbosity="--quiet" # --verbose to make it noisy
 pomigrate2verbosity="--quiet"
 get_moz_enUS_verbosity=""
 easy_install_verbosity="--quiet"
+use_color="yes"
 
 
 ############################
@@ -307,16 +308,27 @@ function logger() {
 	shift
 	local msg=$*
 
-	# FIXME do the colour highlighting and timing again
-	#if [ "$opt_time" ]; then
-	#	info_color=32 # Green
-	#	time_color=34 # Blue
-	#	end_time=$(date +%s)
-	#	time_diff=$(($end_time - $start_time))
-	#	echo -e "\033[${info_color}mINFO:\033[0m $1 [previous step \033[${time_color}m$time_diff sec\033[0m]"
-	#	start_time=$end_time
-	#fi
-	echo "${level}: $msg"
+	red=31
+	green=32
+	blue=34
+	purple=35
+
+	if [ $use_color ]; then
+		case $level in
+			'debug')
+				color=$purple
+				;;
+			'info')
+				color=$green
+				;;
+			'warning'|'error')
+				color=$red
+				;;
+		esac
+		echo -e "\033[${color}m${level}:\033[0m $msg"
+	else
+		echo "${level}: $msg"
+	fi
 }
 
 function log() {
