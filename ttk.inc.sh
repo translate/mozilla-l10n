@@ -296,6 +296,31 @@ function require() {
 
 }
 
+#######################
+# Language config files
+#######################
+
+function _search_language_config() {
+	# Find if a feature is present
+	local language=$1
+	local searchstring=$2
+	local field=$3
+	cat $config_dir/language_config.txt |
+	egrep -v "^#" |
+	egrep "^$language	" |
+	cut -d"	" -f$field |
+	egrep $searchstring
+}
+
+function check_permission() {
+	# Check that we have permission to execute this
+	local language=$1
+	local user=$(whoami)
+	if [ "$(_search_language_config $language $user 2)" ]; then
+		echo "yes"
+	fi
+}
+
 #########
 # Logging
 #########
