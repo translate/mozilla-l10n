@@ -321,6 +321,14 @@ function check_permission() {
 	fi
 }
 
+function should_build() {
+	local language=$1
+	local target=$2
+	if [ "$(_search_language_config $language $target 3)" ]; then
+		echo "yes"
+	fi
+}
+
 #########
 # Logging
 #########
