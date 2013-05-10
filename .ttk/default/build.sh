@@ -97,6 +97,7 @@ do
 done
 
 # Check requirements:
+# FIXME we don't check if we're using language_options.txt
 require git hg moz2po po2moz get_moz_enUS.py
 [ opt_compare_locales ] && require compare-locales
 [ opt_build_xpi ] && require buildxpi.py
@@ -275,7 +276,7 @@ do
 	fi
 
 	## CREATE XPI LANGPACK
-	if [ $opt_build_xpi ]; then
+	if [ "$opt_build_xpi" -o "$(should_build $lang xpi)" ]; then
 		mkdir -p ${LANGPACK_DIR}
 		verbose "Language Pack - create an XPI"
 		buildxpi.py -d -L ${L10N_DIR} -s ${MOZCENTRAL_DIR} -o ${LANGPACK_DIR} ${mozlang}
@@ -292,7 +293,7 @@ do
 	fi
 
 	# Make a tarball
-	if [ $opt_tarball ]; then
+	if [ "$opt_tarball" -o "$(should_build $lang tarball)" ]; then
 		log_info "Creating tarball of target format"
 		mkdir -p ${TARBALL_DIR}
 		# Name will be e.g.: af-21.0a2-20130213T1234-xxxxxxx.tar.bz2
