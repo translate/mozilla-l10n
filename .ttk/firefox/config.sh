@@ -14,4 +14,6 @@ PRODUCT_DIRS="browser dom netwerk security services/sync toolkit" # Directories 
 # Directories in language repositories to clear before running po2moz
 RETIRED_PRODUCT_DIRS="other-licenses/branding/firefox extensions/reporter"
 
+OTHER_EXCLUDED_DIRS="editor mail thunderbird chat mobile embedding"
+
 MOZ_PRODUCT=browser

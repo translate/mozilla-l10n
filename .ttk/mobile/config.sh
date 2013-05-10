@@ -15,4 +15,6 @@ PRODUCT_DIRS="mobile embedding"
 # Directories in language repositories to clear before running po2moz
 RETIRED_PRODUCT_DIRS=""
 
+OTHER_EXCLUDED_DIRS="editor mail thunderbird chat"
+
 MOZ_PRODUCT=mobile

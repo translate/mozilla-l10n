@@ -209,7 +209,16 @@ do
 	tempdir=`mktemp -d tmp.XXXXXXXXXX`
 	if [ -d ${PO_DIR}/${polang} ]; then
 		cp -R ${PO_DIR}/${polang} ${tempdir}/${polang}
-		(cd ${PO_DIR}/${polang}; rm $(find ${PRODUCT_DIRS} ${RETIRED_PRODUCT_DIR} -type f -name "*.po"))
+		(
+		cd ${PO_DIR}/${polang}
+		for dir in  ${PRODUCT_DIRS} ${RETIRED_PRODUCT_DIRS}
+		do
+			if [ -d $dir ]; then
+				dirs="$dirs $dir"
+			fi
+		done
+		rm $(find $dirs -type f -name "*.po")
+		)
 	fi
 	pomigrate2 --use-compendium --pot2po $pomigrate2verbosity ${tempdir}/${polang} ${PO_DIR}/${polang} ${POT_DIR}
 	# FIXME we should revert stuff that wasn't part of this migration e.g. mobile
@@ -237,12 +246,11 @@ do
 	done
 
 	verbose "po2moz - Create Mozilla l10n layout from migrated PO files."
-	for exclude in $RETIRED_PRODUCT_DIR
+	for exclude in $RETIRED_PRODUCT_DIRS $OTHER_EXCLUDED_DIRS
 	do
-		excludes=$(echo '$excludes --exclude="$exclude"')
+		excludes="$excludes --exclude=$exclude"
 	done
-	echo $excludes
-	po2moz --progress=$progress --errorlevel=$errorlevel --exclude=".git" --exclude=".hg" --exclude=".hgtags" --exclude="obsolete" --exclude="editor" --exclude="mail" --exclude="thunderbird" --exclude="chat" --exclude="*~" $excludes \
+	po2moz --progress=$progress --errorlevel=$errorlevel --exclude=".git" --exclude=".hg" --exclude=".hgtags" --exclude="obsolete" --exclude="*~" $excludes \
 		-t ${L10N_ENUS} -i ${PO_DIR}/${polang} -o ${L10N_DIR}/${mozlang}
 
 	if [ $opt_copyfiles ]; then
