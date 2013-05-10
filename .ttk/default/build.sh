@@ -88,9 +88,11 @@ log_info "Processing languages '$LANGS'"
 
 for lang in $LANGS
 do
+	if [ ! "$(check_permission $lang)" ]; then
+		log_warning "You do not have permission to work on '$lang' please check"
+	fi
 	if [ "$lang" == "templates" ]; then
 		opt_vc="yes"
-		break
 	fi
 done
 
