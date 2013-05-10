@@ -25,8 +25,6 @@
 
 source ttk.inc.sh
 
-abs_start_time=$(date +%s)
-start_time=$abs_start_time
 opt_vc=""
 opt_build_xpi=""
 opt_tarball=""
@@ -308,6 +306,3 @@ done
 
 # Cleanup rubbish we seem to leave behind
 rm -rf ${L10N_DIR}/tmp*
-abs_end_time=$(date +%s)
-total_time=$(($abs_end_time - $abs_start_time))
-verbose "Total time $(date --date="@$total_time" +%M:%S)"
