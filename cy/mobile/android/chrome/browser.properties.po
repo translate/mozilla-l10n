@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-05-11 01:46+0100\n"
 "PO-Revision-Date: 2013-05-02 18:22+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1367518930.0\n"
@@ -29,21 +29,9 @@ msgid "Install"
 msgstr "Gosod"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "Ychwanegion"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "Llwytho ychwanegyn i lawr"
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "Gosod ychwanegyn"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
-msgstr "Gosod wedi ei gwblhau. Angen ailgychwyn."
 
 #: alertAddonsInstalledNoRestart
 msgid "Installation complete"
@@ -160,10 +148,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr "Ailgychwyn i gwblhau'r newidiadau."
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr "Ychwanegyn wedi ei ddiweddaru. Ailgychwyn i gwblhau'r newidiadau."
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr "Ychwanegyn anniogel wedi ei osod. Ailgychwyn i'w analluogi."
@@ -173,25 +157,28 @@ msgid "Restart"
 msgstr "Ailgychwyn"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "Rhwystrodd %S y wefan rhag agor llamlen."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "Rhwystrodd %S y wefan rhag agor %S llamlenni."
+#: popup.dontAskAgain
+#, fuzzy
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Peidio gofyn eto am y wefan"
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "Dangos"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr "Dangos bob Tro"
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
-msgstr "Peidio Dangos"
+#: popup.dontShow
+msgid "Don't show"
+msgstr ""
 
 #. # SafeBrowsing
 #: safeBrowsingDoorhanger
@@ -218,22 +205,21 @@ msgstr "Anfon gwybodaeth at %1$S fel bo modd gwella %2$S?"
 msgid "Learn more"
 msgstr "Dysgu rhagor"
 
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "Iawn"
+#: telemetry.optin.send
+msgid "Send"
+msgstr "Anfon"
 
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "Na"
+#: telemetry.optin.dontSend
+msgid "Don't send"
+msgstr ""
 
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
+#. # LOCALIZATION NOTE (telemetry.optout.message2): %1$S and %3$S will be replaced by
 #. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
+#: telemetry.optout.message2
+#, fuzzy
 msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
+"%1$S sends information about performance, stability, hardware, usage and "
+"customizations back to %2$S to help improve %3$S."
 msgstr ""
 "Mae %1$S yn anfon gwybodaeth am berfformiad, caledwedd, defnydd a chyfaddasu "
 "nôl i %2$S er mwyn gwella %3$S."
@@ -305,17 +291,9 @@ msgstr "Rhannu"
 msgid "Don't share"
 msgstr "Peidio rhannu"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr "Rhannu bob Tro"
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr "Peidio Rhannu Byth"
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
-msgstr "Mae %S eisiau eich lleoliad."
+#: geolocation.ask
+msgid "Share your location with %S?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
 #. # site settings dialog.
@@ -337,12 +315,14 @@ msgid "Allow"
 msgstr "Caniatáu"
 
 #: desktopNotification.dontAllow
+#, fuzzy
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr "Peidio caniatâu"
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
-msgstr "Mae %S eisiau defnyddio hysbysiadau."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
 #. # used in site settings dialog.
@@ -369,34 +349,28 @@ msgstr "Tab newydd wedi ei agor;#1 tabiau newydd wedi eu hagor"
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr "Agorwyd tab preifat newydd;#1 agorwyd tabiau preifat newydd"
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "Gwall:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "Rhybudd:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+#, fuzzy
+msgid "Allow %S to store data on your device for offline use?"
 msgstr "Mae %S eisiau cadw data ar eich dyfais ar gyfer defnydd all-lein."
+
+#: offlineApps.dontAskAgain
+#, fuzzy
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Peidio gofyn eto am y wefan"
 
 #: offlineApps.allow
 msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "Caniatáu"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
-msgstr "Peidio caniatáu"
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "Nid Nawr"
+#: offlineApps.dontAllow2
+#, fuzzy
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
+msgstr "Peidio caniatâu"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -404,149 +378,31 @@ msgstr "Nid Nawr"
 msgid "Store Offline Data"
 msgstr "Cadw Data All-lein"
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr "Peidio caniatáu"
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr "Mae %S eisiau cadw data ar eich dyfais ar gyfer defnydd all-lein."
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "Caniatáu"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr "Peidio caniatáu"
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 "Mae %S eisiau cadw llawer o ddata ar eich dyfais ar gyfer defnydd all-lein."
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "Caniatáu"
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+#, fuzzy
+msgid "Save Password"
+msgstr "Cyfrineiriau a Gadwyd"
 
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr "Peidio caniatáu"
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
+msgstr "Cadw"
 
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr "Mae %S eisiau rheoli rhaglenni ar eich dyfais."
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "Cofio Cyfrinair"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "Cofio"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr "Byth"
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr "Nodau Tudalen Bwrdd Gwaith"
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "Cadarnhau cau"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr "HEB EI DDEFNYDDIO;Rydych ar fin cau #1 tab. Parhau?"
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "Cau tabiau"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "Rhybuddio pan fyddai'n cau tabiau niferus"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr "Ymddiheuriadau!"
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr "Aeth rhywbeth o'i le wrth arddangos tudalen gwe."
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "Anfon adroddiad gwall at Mozilla"
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "Cau tab"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "Ail-lwytho tab"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr "Tudalen Addasu"
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "Chwilio Gyda:"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr "Chwilio am \"%S\""
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr "Agor o fewn Ap %S"
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr "Agor mewn Ap Arall"
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr "Clirio Data Preifat"
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
-msgstr "Dileu eich gosodiadau a hanes pori, gan gynnwys cyfrineiriau a chwcis?"
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+#, fuzzy
+msgid "Don't save"
+msgstr "Peidio rhannu"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -563,11 +419,6 @@ msgstr "false"
 #: intl.charsetmenu.browser.static
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
-
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "Rhagor"
 
 #. # Text Selection
 #: selectionHelper.textCopied
@@ -777,19 +628,18 @@ msgid "Could not download manifest"
 msgstr "Methu llwytho i lawr y cofnod"
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+#, fuzzy
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr "Mae %S yn cynnwys cynnwys ategyn. Hoffech chi ei chwarae?"
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "Iawn"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr "Gweithredu"
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "Na"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -800,9 +650,9 @@ msgstr "Peidio gofyn eto am y wefan"
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr "Chwarae Ategion"
+#: clickToPlayPlugins.activatePlugins
+msgid "Activate Plugins"
+msgstr "Gweithredu'r ategyn"
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -864,7 +714,7 @@ msgid "Always"
 msgstr "Bob tro"
 
 #: helperapps.never
-msgctxt "helperapps.never"
+#, fuzzy
 msgid "Never"
 msgstr "Byth"
 
@@ -913,6 +763,168 @@ msgstr "Ar hyn o bryd rydych yn rhannu eich meicroffon gyda %S."
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr "Ar hyn o bryd rydych yn rhannu eich camera a'ch meicroffon gyda %S."
+
+#~ msgid "Add-ons"
+#~ msgstr "Ychwanegion"
+
+#~ msgid "Installing add-on"
+#~ msgstr "Gosod ychwanegyn"
+
+#~ msgid "Installation complete. Restart required."
+#~ msgstr "Gosod wedi ei gwblhau. Angen ailgychwyn."
+
+#~ msgid "Add-ons updated. Restart to complete changes."
+#~ msgstr "Ychwanegyn wedi ei ddiweddaru. Ailgychwyn i gwblhau'r newidiadau."
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "Rhwystrodd %S y wefan rhag agor llamlen."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "Rhwystrodd %S y wefan rhag agor %S llamlenni."
+
+#~ msgid "Always Show"
+#~ msgstr "Dangos bob Tro"
+
+#~ msgid "Never Show"
+#~ msgstr "Peidio Dangos"
+
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "Iawn"
+
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "Na"
+
+#~ msgid "Always Share"
+#~ msgstr "Rhannu bob Tro"
+
+#~ msgid "Never Share"
+#~ msgstr "Peidio Rhannu Byth"
+
+#~ msgid "%S wants your location."
+#~ msgstr "Mae %S eisiau eich lleoliad."
+
+#~ msgid "%S wants to use notifications."
+#~ msgstr "Mae %S eisiau defnyddio hysbysiadau."
+
+#~ msgid "Error:"
+#~ msgstr "Gwall:"
+
+#~ msgid "Warning:"
+#~ msgstr "Rhybudd:"
+
+#~ msgctxt "offlineApps.never"
+#~ msgid "Don't Allow"
+#~ msgstr "Peidio caniatáu"
+
+#~ msgid "Not Now"
+#~ msgstr "Nid Nawr"
+
+#~ msgctxt "offlineApps.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Peidio caniatáu"
+
+#~ msgctxt "offlineApps.wantsTo"
+#~ msgid "%S wants to store data on your device for offline use."
+#~ msgstr "Mae %S eisiau cadw data ar eich dyfais ar gyfer defnydd all-lein."
+
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "Caniatáu"
+
+#~ msgctxt "indexedDBQuota.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Peidio caniatáu"
+
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "Caniatáu"
+
+#~ msgctxt "openWebappsManage.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Peidio caniatáu"
+
+#~ msgid "%S wants to manage applications on your device."
+#~ msgstr "Mae %S eisiau rheoli rhaglenni ar eich dyfais."
+
+#~ msgid "Remember Password"
+#~ msgstr "Cofio Cyfrinair"
+
+#~ msgid "Remember"
+#~ msgstr "Cofio"
+
+#~ msgid "Desktop Bookmarks"
+#~ msgstr "Nodau Tudalen Bwrdd Gwaith"
+
+#~ msgid "Confirm close"
+#~ msgstr "Cadarnhau cau"
+
+#~ msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#~ msgstr "HEB EI DDEFNYDDIO;Rydych ar fin cau #1 tab. Parhau?"
+
+#~ msgid "Close tabs"
+#~ msgstr "Cau tabiau"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "Rhybuddio pan fyddai'n cau tabiau niferus"
+
+#~ msgid "Sorry!"
+#~ msgstr "Ymddiheuriadau!"
+
+#~ msgid "Something went wrong while displaying a web page."
+#~ msgstr "Aeth rhywbeth o'i le wrth arddangos tudalen gwe."
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "Anfon adroddiad gwall at Mozilla"
+
+#~ msgid "Close tab"
+#~ msgstr "Cau tab"
+
+#~ msgid "Reload tab"
+#~ msgstr "Ail-lwytho tab"
+
+#~ msgid "Custom Page"
+#~ msgstr "Tudalen Addasu"
+
+#~ msgid "Search With:"
+#~ msgstr "Chwilio Gyda:"
+
+#~ msgid "Search for \"%S\""
+#~ msgstr "Chwilio am \"%S\""
+
+#~ msgid "Open in %S App"
+#~ msgstr "Agor o fewn Ap %S"
+
+#~ msgid "Open in Another App"
+#~ msgstr "Agor mewn Ap Arall"
+
+#~ msgid "Clear Private Data"
+#~ msgstr "Clirio Data Preifat"
+
+#~ msgid ""
+#~ "Delete your browsing history and settings, including passwords and "
+#~ "cookies?"
+#~ msgstr ""
+#~ "Dileu eich gosodiadau a hanes pori, gan gynnwys cyfrineiriau a chwcis?"
+
+#~ msgid "More"
+#~ msgstr "Rhagor"
+
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "Iawn"
+
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "Na"
+
+#~ msgid "Play Plugins"
+#~ msgstr "Chwarae Ategion"
+
+#~ msgctxt "helperapps.never"
+#~ msgid "Never"
+#~ msgstr "Byth"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "Mae thema newydd wedi ei gosod."
