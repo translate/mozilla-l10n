@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/mobile/android/chrome/browser.properties
+#. extracted from ./mobile/android/chrome/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-05-11 01:46+0100\n"
 "PO-Revision-Date: 2012-12-20 17:12+0000\n"
 "Last-Translator: hainp <hainp2604@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1356023524.0\n"
@@ -29,21 +29,9 @@ msgid "Install"
 msgstr "Cài đặt"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "Tiện ích"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "Đang tải tiện ích"
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "Cài đặt tiện ích"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
-msgstr "Cài đặt hoàn tất. Cần khởi động lại."
 
 #: alertAddonsInstalledNoRestart
 msgid "Installation complete"
@@ -156,10 +144,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr "Khởi động lại để hoàn tất thay đổi."
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr "Tiện ích đã được cập nhật. Khởi động lại để hoàn tất thay đổi."
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr "Đã cài đặt tiện ích không an toàn. Khởi động lại để vô hiệu hóa."
@@ -169,25 +153,27 @@ msgid "Restart"
 msgstr "Khởi động lại"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S đã ngăn trang này bật một cửa sổ popup."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S đã ngăn trang này bật %S cửa sổ popup."
+#: popup.dontAskAgain
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr ""
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "Hiện"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr "Luôn hiện"
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
-msgstr "Không bao giờ hiện"
+#: popup.dontShow
+msgid "Don't show"
+msgstr ""
 
 #. # SafeBrowsing
 #: safeBrowsingDoorhanger
@@ -213,23 +199,21 @@ msgstr ""
 msgid "Learn more"
 msgstr "Tìm hiểu Thêm"
 
-#: telemetry.optin.yes
-#, fuzzy
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "Có"
-
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
+#: telemetry.optin.send
+msgid "Send"
 msgstr ""
 
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
+#: telemetry.optin.dontSend
+msgid "Don't send"
+msgstr ""
+
+#. # LOCALIZATION NOTE (telemetry.optout.message2): %1$S and %3$S will be replaced by
 #. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
+#: telemetry.optout.message2
+#, fuzzy
 msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
+"%1$S sends information about performance, stability, hardware, usage and "
+"customizations back to %2$S to help improve %3$S."
 msgstr ""
 "%1$S sẽ gửi thông tin về việc sử dụng, hiệu suất, phần cứng và các tùy chỉnh "
 "đến %2$S để cải thiện %3$S."
@@ -302,17 +286,8 @@ msgstr "Chia sẻ"
 msgid "Don't share"
 msgstr "Không chia sẻ"
 
-#: geolocation.alwaysAllow
-#, fuzzy
-msgid "Always Share"
-msgstr "Luôn hiện"
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr ""
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
+#: geolocation.ask
+msgid "Share your location with %S?"
 msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
@@ -335,11 +310,13 @@ msgid "Allow"
 msgstr "Cho phép"
 
 #: desktopNotification.dontAllow
+#, fuzzy
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr "Không cho phép"
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
 msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
@@ -368,19 +345,14 @@ msgstr "Thẻ mới được mở;#1 thẻ mới được mở"
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "Lỗi:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "Cảnh báo:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+msgid "Allow %S to store data on your device for offline use?"
+msgstr ""
+
+#: offlineApps.dontAskAgain
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
 msgstr ""
 
 #: offlineApps.allow
@@ -388,15 +360,11 @@ msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "Cho phép"
 
-#: offlineApps.never
+#: offlineApps.dontAllow2
 #, fuzzy
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr "Không cho phép"
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "Không phải Bây giờ"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -404,155 +372,30 @@ msgstr "Không phải Bây giờ"
 msgid "Store Offline Data"
 msgstr ""
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-#, fuzzy
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr "Không cho phép"
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr ""
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-#, fuzzy
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "Cho phép"
-
-#: indexedDBQuota.dontAllow
-#, fuzzy
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr "Không cho phép"
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
 #, fuzzy
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "Cho phép"
+msgid "Save Password"
+msgstr "Mật khẩu đã lưu"
 
-#: openWebappsManage.dontAllow
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
+msgstr "Lưu"
+
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
 #, fuzzy
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr "Không cho phép"
-
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr ""
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "Ghi nhớ Mật khẩu"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "Ghi nhớ"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-#, fuzzy
-msgctxt "password.never"
-msgid "Never"
-msgstr "Không bao giờ"
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr "Trang đánh dấu Desktop"
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "Xác nhận đóng"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr "KHÔNG DÙNG;Bạn sắp sửa đóng #1 thẻ. Tiếp tục?"
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "Đóng thẻ"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "Cảnh báo khi tôi định đóng nhiều thẻ"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr "Xin lỗi!"
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr "Có vấn đề khi đang hiển thị một trang web."
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "Gửi Mozilla một báo cáo đổ vỡ"
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "Đóng thẻ"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "Tải lại thẻ"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr "Trang tùy biến"
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "Tìm kiếm Với:"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr "Tìm kiếm \"%S\""
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr "Mở trong Ứng dụng %S"
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr "Mở trong Ứng dụng Khác"
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr "Xóa các Dữ liệu Cá nhân"
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
-msgstr ""
-"Xóa dữ liệu duyệt web và thiết lập của bạn, bao gồm mật khẩu và cookie?"
+msgid "Don't save"
+msgstr "Không chia sẻ"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -569,11 +412,6 @@ msgstr "true"
 #: intl.charsetmenu.browser.static
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr "iso-8859-1,utf-8,x-gbk,big5,iso-2022-jp,shift_jis,euc-jp"
-
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "Thêm"
 
 #. # Text Selection
 #: selectionHelper.textCopied
@@ -737,7 +575,7 @@ msgstr "Hủy bỏ"
 
 #: inputWidgetHelper.set
 msgid "Set"
-msgstr ""
+msgstr "Thiết lập"
 
 #: inputWidgetHelper.clear
 msgid "Clear"
@@ -789,19 +627,16 @@ msgid "Could not download manifest"
 msgstr ""
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr ""
 
-#: clickToPlayPlugins.yes
-#, fuzzy
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "Có"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr "Kích hoạt"
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
 msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
@@ -813,9 +648,9 @@ msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr ""
+#: clickToPlayPlugins.activatePlugins
+msgid "Activate Plugins"
+msgstr "Kích hoạt Plugins"
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -877,11 +712,10 @@ msgstr "Mở trong Ứng dụng %S"
 
 #: helperapps.always
 msgid "Always"
-msgstr ""
+msgstr "Luôn luôn"
 
 #: helperapps.never
 #, fuzzy
-msgctxt "helperapps.never"
 msgid "Never"
 msgstr "Không bao giờ"
 
@@ -924,15 +758,160 @@ msgstr "Chia sẻ"
 
 #: getUserMedia.sharingCamera.message
 msgid "You are currently sharing your camera with %S."
-msgstr ""
+msgstr "Bạn đang chia sẻ camera với %S."
 
 #: getUserMedia.sharingMicrophone.message
 msgid "You are currently sharing your microphone with %S."
-msgstr ""
+msgstr "Bạn đang chia sẻ mic với %S."
 
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
-msgstr ""
+msgstr "Bạn đang chia sẻ camera và mic với %S."
+
+#~ msgid "Add-ons"
+#~ msgstr "Tiện ích"
+
+#~ msgid "Installing add-on"
+#~ msgstr "Cài đặt tiện ích"
+
+#~ msgid "Installation complete. Restart required."
+#~ msgstr "Cài đặt hoàn tất. Cần khởi động lại."
+
+#~ msgid "Add-ons updated. Restart to complete changes."
+#~ msgstr "Tiện ích đã được cập nhật. Khởi động lại để hoàn tất thay đổi."
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S đã ngăn trang này bật một cửa sổ popup."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "%S đã ngăn trang này bật %S cửa sổ popup."
+
+#~ msgid "Always Show"
+#~ msgstr "Luôn hiện"
+
+#~ msgid "Never Show"
+#~ msgstr "Không bao giờ hiện"
+
+#, fuzzy
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "Có"
+
+#, fuzzy
+#~ msgid "Always Share"
+#~ msgstr "Luôn hiện"
+
+#~ msgid "Error:"
+#~ msgstr "Lỗi:"
+
+#~ msgid "Warning:"
+#~ msgstr "Cảnh báo:"
+
+#, fuzzy
+#~ msgctxt "offlineApps.never"
+#~ msgid "Don't Allow"
+#~ msgstr "Không cho phép"
+
+#~ msgid "Not Now"
+#~ msgstr "Không phải Bây giờ"
+
+#, fuzzy
+#~ msgctxt "offlineApps.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Không cho phép"
+
+#, fuzzy
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "Cho phép"
+
+#, fuzzy
+#~ msgctxt "indexedDBQuota.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Không cho phép"
+
+#, fuzzy
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "Cho phép"
+
+#, fuzzy
+#~ msgctxt "openWebappsManage.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Không cho phép"
+
+#~ msgid "Remember Password"
+#~ msgstr "Ghi nhớ Mật khẩu"
+
+#~ msgid "Remember"
+#~ msgstr "Ghi nhớ"
+
+#~ msgid "Desktop Bookmarks"
+#~ msgstr "Trang đánh dấu Desktop"
+
+#~ msgid "Confirm close"
+#~ msgstr "Xác nhận đóng"
+
+#~ msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#~ msgstr "KHÔNG DÙNG;Bạn sắp sửa đóng #1 thẻ. Tiếp tục?"
+
+#~ msgid "Close tabs"
+#~ msgstr "Đóng thẻ"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "Cảnh báo khi tôi định đóng nhiều thẻ"
+
+#~ msgid "Sorry!"
+#~ msgstr "Xin lỗi!"
+
+#~ msgid "Something went wrong while displaying a web page."
+#~ msgstr "Có vấn đề khi đang hiển thị một trang web."
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "Gửi Mozilla một báo cáo đổ vỡ"
+
+#~ msgid "Close tab"
+#~ msgstr "Đóng thẻ"
+
+#~ msgid "Reload tab"
+#~ msgstr "Tải lại thẻ"
+
+#~ msgid "Custom Page"
+#~ msgstr "Trang tùy biến"
+
+#~ msgid "Search With:"
+#~ msgstr "Tìm kiếm Với:"
+
+#~ msgid "Search for \"%S\""
+#~ msgstr "Tìm kiếm \"%S\""
+
+#~ msgid "Open in %S App"
+#~ msgstr "Mở trong Ứng dụng %S"
+
+#~ msgid "Open in Another App"
+#~ msgstr "Mở trong Ứng dụng Khác"
+
+#~ msgid "Clear Private Data"
+#~ msgstr "Xóa các Dữ liệu Cá nhân"
+
+#~ msgid ""
+#~ "Delete your browsing history and settings, including passwords and "
+#~ "cookies?"
+#~ msgstr ""
+#~ "Xóa dữ liệu duyệt web và thiết lập của bạn, bao gồm mật khẩu và cookie?"
+
+#~ msgid "More"
+#~ msgstr "Thêm"
+
+#, fuzzy
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "Có"
+
+#, fuzzy
+#~ msgctxt "helperapps.never"
+#~ msgid "Never"
+#~ msgstr "Không bao giờ"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "Một giao diện mới đã được cài đặt."
