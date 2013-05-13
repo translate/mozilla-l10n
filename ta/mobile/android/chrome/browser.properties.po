@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-05-11 01:46+0100\n"
 "PO-Revision-Date: 2013-03-17 15:17+0000\n"
 "Last-Translator: Arun <arunprakash.pts@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1363533437.0\n"
@@ -29,20 +29,8 @@ msgid "Install"
 msgstr "நிறுவு"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "கூடுதல் இணைப்புகள்"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
-msgstr ""
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "துணை நிரலை நிறுவுகிறது"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
 msgstr ""
 
 #: alertAddonsInstalledNoRestart
@@ -157,10 +145,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr ""
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr ""
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr ""
@@ -170,24 +154,26 @@ msgid "Restart"
 msgstr "மறுதுவக்கு"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S ஒரு பாப்பப் சாளரத்தை திறப்பதிலிருந்து இந்த இணையதளத்தை தடுக்கிறது."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S இந்த இணைய தளத்தை %S பாப்பப் சாளரங்களை திறப்பதிலிருந்து தடுக்கிறது."
+#: popup.dontAskAgain
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr ""
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "காண்பி"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr ""
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
+#: popup.dontShow
+msgid "Don't show"
 msgstr ""
 
 #. # SafeBrowsing
@@ -213,22 +199,20 @@ msgstr ""
 msgid "Learn more"
 msgstr "மேலும் அறிய"
 
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "ஆம்"
+#: telemetry.optin.send
+msgid "Send"
+msgstr ""
 
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "இல்லை"
+#: telemetry.optin.dontSend
+msgid "Don't send"
+msgstr ""
 
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
+#. # LOCALIZATION NOTE (telemetry.optout.message2): %1$S and %3$S will be replaced by
 #. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
+#: telemetry.optout.message2
 msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
+"%1$S sends information about performance, stability, hardware, usage and "
+"customizations back to %2$S to help improve %3$S."
 msgstr ""
 
 #: telemetry.optout.ok
@@ -291,24 +275,17 @@ msgstr "(தெரியாதது)"
 
 #. # Geolocation UI
 #: geolocation.allow
+#, fuzzy
 msgctxt "geolocation.allow"
 msgid "Share"
-msgstr ""
+msgstr "பகிர்"
 
 #: geolocation.dontAllow
 msgid "Don't share"
 msgstr "பகிர வேண்டாம்"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr ""
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr ""
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
+#: geolocation.ask
+msgid "Share your location with %S?"
 msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
@@ -331,11 +308,12 @@ msgid "Allow"
 msgstr "அனுமதி"
 
 #: desktopNotification.dontAllow
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr ""
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
 msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
@@ -363,19 +341,14 @@ msgstr ""
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "பிழை:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "எச்சரிக்கை:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+msgid "Allow %S to store data on your device for offline use?"
+msgstr ""
+
+#: offlineApps.dontAskAgain
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
 msgstr ""
 
 #: offlineApps.allow
@@ -383,14 +356,10 @@ msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "அனுமதி"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr ""
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "இப்போது இல்லை"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -398,148 +367,30 @@ msgstr "இப்போது இல்லை"
 msgid "Store Offline Data"
 msgstr ""
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr ""
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "அனுமதி"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "அனுமதி"
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+#, fuzzy
+msgid "Save Password"
+msgstr "சேமிக்கப்பட்ட கடவுச்சொற்கள்"
 
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr ""
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
+msgstr "சேமி"
 
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr ""
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "கடவுசொல்லை நினைவுப்படுத்து"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "நினைவுகொள்"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr ""
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr ""
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "மூடுதலை உறுதிப்படுத்தவும்"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr ""
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "தத்தல்களை மூடு"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "பல தத்தல்களை மூட முயற்சிக்கும் போது எச்சரிக்கவும்"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr ""
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr ""
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr ""
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "தத்தலை மூடு"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "தத்தலை மீளேற்று"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr ""
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "இத்துடன் தேடு:"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr ""
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr ""
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr ""
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr ""
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
-msgstr ""
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+#, fuzzy
+msgid "Don't save"
+msgstr "பகிர வேண்டாம்"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -557,15 +408,10 @@ msgstr "தவறு"
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr ""
 
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "இன்னும்"
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
-msgstr ""
+msgstr "உரை ஒட்டுப்பலகைக்கு நகலெடுக்கப்பட்டது"
 
 #. # Context menu
 #: contextmenu.openInNewTab
@@ -577,9 +423,10 @@ msgid "Open Link in Private Tab"
 msgstr ""
 
 #: contextmenu.share
+#, fuzzy
 msgctxt "contextmenu.share"
 msgid "Share"
-msgstr ""
+msgstr "பகிர்"
 
 #: contextmenu.copyLink
 msgid "Copy Link"
@@ -770,19 +617,17 @@ msgid "Could not download manifest"
 msgstr ""
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr ""
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "ஆம்"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr "செயல்படுத்து"
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "இல்லை"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -793,9 +638,9 @@ msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr ""
+#: clickToPlayPlugins.activatePlugins
+msgid "Activate Plugins"
+msgstr "செருகுநிரல்களைச் செயல்படுத்து"
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -855,12 +700,11 @@ msgstr ""
 
 #: helperapps.always
 msgid "Always"
-msgstr ""
+msgstr "எப்போதும்"
 
 #: helperapps.never
-msgctxt "helperapps.never"
 msgid "Never"
-msgstr ""
+msgstr "ஒரு போதும் இல்லை"
 
 #. #Lightweight themes
 #. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
@@ -877,36 +721,109 @@ msgstr "அனுமதி"
 #. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message, getUserMedia.sharingCamera.message, getUserMedia.sharingMicrophone.message, getUserMedia.sharingCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
-msgstr ""
+msgstr "நீங்கள் %S உடன் உங்கள் கேமராவை பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
 
 #: getUserMedia.shareMicrophone.message
 msgid "Would you like to share your microphone with %S?"
-msgstr ""
+msgstr "நீங்கள் %S உடன் உங்கள் மைக்ரோபோனை பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
 
 #: getUserMedia.shareCameraAndMicrophone.message
 msgid "Would you like to share your camera and microphone with %S?"
-msgstr ""
+msgstr "நீங்கள் %S உடன் உங்கள் கேமராவை மற்றும் மைக்ரோபோனை பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
 
 #: getUserMedia.denyRequest.label
 msgid "Don't Share"
 msgstr "பகிர வேண்டாம்"
 
 #: getUserMedia.shareRequest.label
+#, fuzzy
 msgctxt "getUserMedia.shareRequest.label"
 msgid "Share"
-msgstr ""
+msgstr "பகிர்"
 
 #: getUserMedia.sharingCamera.message
 msgid "You are currently sharing your camera with %S."
-msgstr ""
+msgstr "தற்போது நீங்கள் உங்கள் கேமராவை %S உடன் பகிர்கிறீர்கள்."
 
 #: getUserMedia.sharingMicrophone.message
 msgid "You are currently sharing your microphone with %S."
-msgstr ""
+msgstr "தற்போது நீங்கள் உங்கள் மைக்ரோஃபோனை %S உடன் பகிர்கிறீர்கள்."
 
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
-msgstr ""
+msgstr "தற்போது நீங்கள் உங்கள் கேமராவையும் மைக்ரோஃபோனையும் %S உடன் பகிர்கிறீர்கள்."
+
+#~ msgid "Add-ons"
+#~ msgstr "கூடுதல் இணைப்புகள்"
+
+#~ msgid "Installing add-on"
+#~ msgstr "துணை நிரலை நிறுவுகிறது"
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S ஒரு பாப்பப் சாளரத்தை திறப்பதிலிருந்து இந்த இணையதளத்தை தடுக்கிறது."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "%S இந்த இணைய தளத்தை %S பாப்பப் சாளரங்களை திறப்பதிலிருந்து தடுக்கிறது."
+
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "ஆம்"
+
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "இல்லை"
+
+#~ msgid "Error:"
+#~ msgstr "பிழை:"
+
+#~ msgid "Warning:"
+#~ msgstr "எச்சரிக்கை:"
+
+#~ msgid "Not Now"
+#~ msgstr "இப்போது இல்லை"
+
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "அனுமதி"
+
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "அனுமதி"
+
+#~ msgid "Remember Password"
+#~ msgstr "கடவுசொல்லை நினைவுப்படுத்து"
+
+#~ msgid "Remember"
+#~ msgstr "நினைவுகொள்"
+
+#~ msgid "Confirm close"
+#~ msgstr "மூடுதலை உறுதிப்படுத்தவும்"
+
+#~ msgid "Close tabs"
+#~ msgstr "தத்தல்களை மூடு"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "பல தத்தல்களை மூட முயற்சிக்கும் போது எச்சரிக்கவும்"
+
+#~ msgid "Close tab"
+#~ msgstr "தத்தலை மூடு"
+
+#~ msgid "Reload tab"
+#~ msgstr "தத்தலை மீளேற்று"
+
+#~ msgid "Search With:"
+#~ msgstr "இத்துடன் தேடு:"
+
+#~ msgid "More"
+#~ msgstr "இன்னும்"
+
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "ஆம்"
+
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "இல்லை"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "ஒரு புதிய தீம் நிறுவப்படும்."
