@@ -305,6 +305,7 @@ function _search_language_config() {
 	local language=$1
 	local searchstring=$2
 	local field=$3
+	[ -f $config_dir/language_config.txt ] &&
 	cat $config_dir/language_config.txt |
 	egrep -v "^#" |
 	egrep "^$language	" |
@@ -316,7 +317,7 @@ function check_permission() {
 	# Check that we have permission to execute this
 	local language=$1
 	local user=$(whoami)
-	if [ "$(_search_language_config $language $user 2)" ]; then
+	if [ ! -f $config_dir/language_config.txt -o "$(_search_language_config $language $user 2)" ]; then
 		echo "yes"
 	fi
 }
