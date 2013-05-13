@@ -60,7 +60,7 @@ do
 				opt_copyfiles=""
 			;;
 			--verbose)
-				opt_verbose="yes"
+				opt_verbose=3
 				hgverbosity="--verbose"
 				gitverbosity=""
 				progress=bar
