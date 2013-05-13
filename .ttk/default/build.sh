@@ -211,19 +211,18 @@ do
 	verbose "Migrate - update PO files to new POT files"
 	tmp_podir=`mktemp -d tmp.XXXXXXXXXX`
 	tmp_templatedir=`mktemp -d tmp.XXXXXXXXXX`
-	if [ -d ${PO_DIR}/${polang} ]; then
-		for pdir in ${PRODUCT_DIRS} ${RETIRED_PRODUCT_DIRS}
-		do
-			if [ -d  ${PO_DIR}/${polang}/$pdir ]; then
-				mkdir -p  ${tmp_podir}/${polang}/$pdir
-				cp -rp ${PO_DIR}/${polang}/$pdir/ ${tmp_podir}/${polang}/$pdir
-			fi
+	for pdir in ${PRODUCT_DIRS} ${RETIRED_PRODUCT_DIRS}
+	do
+		if [ -d  ${PO_DIR}/${polang}/$pdir ]; then
+			mkdir -p  ${tmp_podir}/${polang}/$pdir
+			cp -rp ${PO_DIR}/${polang}/$pdir/ ${tmp_podir}/${polang}/$pdir
+			rm $(find  ${PO_DIR}/${polang}/$pdir -type f -name "*.po")
+		fi
+		if [ -d  ${POT_DIR}/$pdir ]; then
 			mkdir -p  ${tmp_templatedir}/$pdir
 			cp -rp ${POT_DIR}/$pdir/ ${tmp_templatedir}/$pdir
-			pdirs="$pdirs $pdir"
-		done
-		(cd ${PO_DIR}/${polang}; rm $(find $pdirs -type f -name "*.po"))
-	fi
+		fi
+	done
 	pomigrate2 --use-compendium --pot2po $pomigrate2verbosity ${tmp_podir}/${polang} ${PO_DIR}/${polang} ${tmp_templatedir}
 	rm -r ${tmp_podir} ${tmp_templatedir}
 
