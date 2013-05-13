@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-05-11 01:46+0100\n"
 "PO-Revision-Date: 2013-04-07 13:47+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1365342461.0\n"
@@ -29,21 +29,9 @@ msgid "Install"
 msgstr "Kur"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "Eklentiler"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "Eklenti indirme"
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "Eklenti kurulumu"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
-msgstr "Kurulum tamamlandı. Yeniden başlatma gerekli."
 
 #: alertAddonsInstalledNoRestart
 msgid "Installation complete"
@@ -154,11 +142,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr "Değişiklikleri tamamlamak için yeniden başlatın."
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr ""
-"Eklentiler güncellendi. Değişiklikleri tamamlamak için yeniden başlatın."
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr "Güvensiz eklentiler kuruldu. Devre dışı bırakmak için baştan başlatın."
@@ -168,25 +151,28 @@ msgid "Restart"
 msgstr "Yeniden başlat"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S bu sitenin istenmeyen pencere açmasını engelledi."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S bu sitenin %S istenmeyen pencere açmasını engelledi."
+#: popup.dontAskAgain
+#, fuzzy
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Bu site için tekrar sorma"
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "Göster"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr "Her zaman göster"
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
-msgstr "Asla gösterme"
+#: popup.dontShow
+msgid "Don't show"
+msgstr ""
 
 #. # SafeBrowsing
 #: safeBrowsingDoorhanger
@@ -213,22 +199,21 @@ msgstr "%2$S'u geliştirmemiz için %1$S'ya bilgi gönderilsin mi?"
 msgid "Learn more"
 msgstr "Daha fazla bilgi"
 
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "Evet"
+#: telemetry.optin.send
+msgid "Send"
+msgstr "Gönder"
 
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "Hayır"
+#: telemetry.optin.dontSend
+msgid "Don't send"
+msgstr ""
 
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
+#. # LOCALIZATION NOTE (telemetry.optout.message2): %1$S and %3$S will be replaced by
 #. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
+#: telemetry.optout.message2
+#, fuzzy
 msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
+"%1$S sends information about performance, stability, hardware, usage and "
+"customizations back to %2$S to help improve %3$S."
 msgstr ""
 "%1$S uygulaması %3$S tarayıcısının gelişimine katkıda bulunmak için "
 "performans, donanım, kullanım ve özelleştirme hakkında bazı bilgileri %2$S "
@@ -301,17 +286,9 @@ msgstr "Paylaş"
 msgid "Don't share"
 msgstr "Paylaşma"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr "Her zaman paylaş"
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr "Asla paylaşma"
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
-msgstr "%S konumunuzu bilmek istiyor."
+#: geolocation.ask
+msgid "Share your location with %S?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
 #. # site settings dialog.
@@ -333,12 +310,14 @@ msgid "Allow"
 msgstr "İzin ver"
 
 #: desktopNotification.dontAllow
+#, fuzzy
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr "İzin verme"
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
-msgstr "%S bildirimleri kullanmak istiyor."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
 #. # used in site settings dialog.
@@ -365,34 +344,28 @@ msgstr "Yeni sekme açıldı;#1 yeni sekme açıldı"
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr "Yeni gizli sekme açıldı;#1 yeni gizli sekme açıldı"
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "Hata:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "Uyarı:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+#, fuzzy
+msgid "Allow %S to store data on your device for offline use?"
 msgstr "%S çevrim dışı kullanım için aygıtınızda bilgi depolamak istiyor."
+
+#: offlineApps.dontAskAgain
+#, fuzzy
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Bu site için tekrar sorma"
 
 #: offlineApps.allow
 msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "İzin ver"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+#, fuzzy
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr "İzin verme"
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "Şimdi değil"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -400,151 +373,31 @@ msgstr "Şimdi değil"
 msgid "Store Offline Data"
 msgstr "Çevrim dışı veri depola"
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr "İzin verme"
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr "%S çevrim dışı kullanım için aygıtınızda veri depolamak istiyor."
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "İzin ver"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr "İzin verme"
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 "%S çevrim dışı kullanım için aygıtınızda çok fazla veri depolamak istiyor."
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "İzin ver"
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+#, fuzzy
+msgid "Save Password"
+msgstr "Kayıtlı parolalar"
 
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr "İzin verme"
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
+msgstr "Kaydet"
 
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr "%S aygıtınızdaki uygulamaları yönetmek istiyor."
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "Parolayı hatırla"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "Hatırla"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr "Asla"
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr "Masaüstü bilgisayarın yer imleri"
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "Kapatma onayı"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr "NOT USED; #1 sekmeyi kapatmak üzeresiniz. Devam edilsin mi?"
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "Sekmeleri kapat"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "Çok sayıda sekmeyi kapatmaya çalıştığımda beni uyar"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr "Özür dileriz!"
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr "Bir web sayfası görüntülenirken bir şeyler yanlış gitti."
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "Mozilla'ya çökme bildirimi gönder"
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "Sekmeyi kapat"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "Sekmeyi tazele"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr "Özel sayfa"
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "Bununla ara:"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr "\"%S\" terimini ara"
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr "%S ile aç"
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr "Başka uygulamayla aç"
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr "Özel bilgileri sil"
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
-msgstr ""
-"Parolalarınızın ve çerezlerin de dâhil olduğu ayarlarınız ve tarama "
-"geçmişiniz silinsin mi?"
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+#, fuzzy
+msgid "Don't save"
+msgstr "Paylaşma"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -561,11 +414,6 @@ msgstr "false"
 #: intl.charsetmenu.browser.static
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr "iso-8859-9,iso-8859-1,utf-8,x-gbk,big5,iso-2022-jp,shift_jis,euc-jp"
-
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "Daha fazla ayrıntı"
 
 #. # Text Selection
 #: selectionHelper.textCopied
@@ -775,19 +623,18 @@ msgid "Could not download manifest"
 msgstr "Uygulama tanımı indirilemedi"
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+#, fuzzy
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr "%S yan uygulama içeriğine sahip. Oynatmak ister misiniz?"
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "Evet"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr "Etkinleştir"
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "Hayır"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -798,9 +645,9 @@ msgstr "Bu site için tekrar sorma"
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr "Yan uygulamaları oynat"
+#: clickToPlayPlugins.activatePlugins
+msgid "Activate Plugins"
+msgstr "Yan uygulamaları etkinleştir"
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -863,7 +710,7 @@ msgid "Always"
 msgstr "Her zaman"
 
 #: helperapps.never
-msgctxt "helperapps.never"
+#, fuzzy
 msgid "Never"
 msgstr "Asla"
 
@@ -912,3 +759,167 @@ msgstr "Şu anda mikrofonunuzu %S ile paylaşıyorsunuz."
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr "Şu anda kamera ve mikrofonunuzu %S ile paylaşıyorsunuz."
+
+#~ msgid "Add-ons"
+#~ msgstr "Eklentiler"
+
+#~ msgid "Installing add-on"
+#~ msgstr "Eklenti kurulumu"
+
+#~ msgid "Installation complete. Restart required."
+#~ msgstr "Kurulum tamamlandı. Yeniden başlatma gerekli."
+
+#~ msgid "Add-ons updated. Restart to complete changes."
+#~ msgstr ""
+#~ "Eklentiler güncellendi. Değişiklikleri tamamlamak için yeniden başlatın."
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S bu sitenin istenmeyen pencere açmasını engelledi."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "%S bu sitenin %S istenmeyen pencere açmasını engelledi."
+
+#~ msgid "Always Show"
+#~ msgstr "Her zaman göster"
+
+#~ msgid "Never Show"
+#~ msgstr "Asla gösterme"
+
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "Evet"
+
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "Hayır"
+
+#~ msgid "Always Share"
+#~ msgstr "Her zaman paylaş"
+
+#~ msgid "Never Share"
+#~ msgstr "Asla paylaşma"
+
+#~ msgid "%S wants your location."
+#~ msgstr "%S konumunuzu bilmek istiyor."
+
+#~ msgid "%S wants to use notifications."
+#~ msgstr "%S bildirimleri kullanmak istiyor."
+
+#~ msgid "Error:"
+#~ msgstr "Hata:"
+
+#~ msgid "Warning:"
+#~ msgstr "Uyarı:"
+
+#~ msgctxt "offlineApps.never"
+#~ msgid "Don't Allow"
+#~ msgstr "İzin verme"
+
+#~ msgid "Not Now"
+#~ msgstr "Şimdi değil"
+
+#~ msgctxt "offlineApps.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "İzin verme"
+
+#~ msgctxt "offlineApps.wantsTo"
+#~ msgid "%S wants to store data on your device for offline use."
+#~ msgstr "%S çevrim dışı kullanım için aygıtınızda veri depolamak istiyor."
+
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "İzin ver"
+
+#~ msgctxt "indexedDBQuota.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "İzin verme"
+
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "İzin ver"
+
+#~ msgctxt "openWebappsManage.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "İzin verme"
+
+#~ msgid "%S wants to manage applications on your device."
+#~ msgstr "%S aygıtınızdaki uygulamaları yönetmek istiyor."
+
+#~ msgid "Remember Password"
+#~ msgstr "Parolayı hatırla"
+
+#~ msgid "Remember"
+#~ msgstr "Hatırla"
+
+#~ msgid "Desktop Bookmarks"
+#~ msgstr "Masaüstü bilgisayarın yer imleri"
+
+#~ msgid "Confirm close"
+#~ msgstr "Kapatma onayı"
+
+#~ msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#~ msgstr "NOT USED; #1 sekmeyi kapatmak üzeresiniz. Devam edilsin mi?"
+
+#~ msgid "Close tabs"
+#~ msgstr "Sekmeleri kapat"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "Çok sayıda sekmeyi kapatmaya çalıştığımda beni uyar"
+
+#~ msgid "Sorry!"
+#~ msgstr "Özür dileriz!"
+
+#~ msgid "Something went wrong while displaying a web page."
+#~ msgstr "Bir web sayfası görüntülenirken bir şeyler yanlış gitti."
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "Mozilla'ya çökme bildirimi gönder"
+
+#~ msgid "Close tab"
+#~ msgstr "Sekmeyi kapat"
+
+#~ msgid "Reload tab"
+#~ msgstr "Sekmeyi tazele"
+
+#~ msgid "Custom Page"
+#~ msgstr "Özel sayfa"
+
+#~ msgid "Search With:"
+#~ msgstr "Bununla ara:"
+
+#~ msgid "Search for \"%S\""
+#~ msgstr "\"%S\" terimini ara"
+
+#~ msgid "Open in %S App"
+#~ msgstr "%S ile aç"
+
+#~ msgid "Open in Another App"
+#~ msgstr "Başka uygulamayla aç"
+
+#~ msgid "Clear Private Data"
+#~ msgstr "Özel bilgileri sil"
+
+#~ msgid ""
+#~ "Delete your browsing history and settings, including passwords and "
+#~ "cookies?"
+#~ msgstr ""
+#~ "Parolalarınızın ve çerezlerin de dâhil olduğu ayarlarınız ve tarama "
+#~ "geçmişiniz silinsin mi?"
+
+#~ msgid "More"
+#~ msgstr "Daha fazla ayrıntı"
+
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "Evet"
+
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "Hayır"
+
+#~ msgid "Play Plugins"
+#~ msgstr "Yan uygulamaları oynat"
+
+#~ msgctxt "helperapps.never"
+#~ msgid "Never"
+#~ msgstr "Asla"
