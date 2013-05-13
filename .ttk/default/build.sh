@@ -209,23 +209,25 @@ do
 	polang=$(get_language_pootle $lang)
 	mozlang=$(get_language_upstream $lang)
 	verbose "Migrate - update PO files to new POT files"
-	tempdir=`mktemp -d tmp.XXXXXXXXXX`
+	tmp_podir=`mktemp -d tmp.XXXXXXXXXX`
+	tmp_templatedir=`mktemp -d tmp.XXXXXXXXXX`
 	if [ -d ${PO_DIR}/${polang} ]; then
-		cp -R ${PO_DIR}/${polang} ${tempdir}/${polang}
-		(
-		cd ${PO_DIR}/${polang}
-		for dir in  ${PRODUCT_DIRS} ${RETIRED_PRODUCT_DIRS}
+		mkdir -p ${tmp_podir}/${polang}
+		for pdir in ${PRODUCT_DIRS} ${RETIRED_PRODUCT_DIRS}
 		do
-			if [ -d $dir ]; then
-				dirs="$dirs $dir"
+			if [ ! -d  ${PO_DIR}/${polang}/$pdir ]; then
+				continue
 			fi
+			mkdir -p  ${tmp_podir}/${polang}/$pdir
+			mkdir -p  ${tmp_templatedir}/$pdir
+			cp -rp ${PO_DIR}/${polang}/$pdir/ ${tmp_podir}/${polang}/$pdir
+			cp -rp ${POT_DIR}/$pdir/ ${tmp_templatedir}/$pdir
+			pdirs="$pdirs $pdir"
 		done
-		rm $(find $dirs -type f -name "*.po")
-		)
+		(cd  ${PO_DIR}/${polang}; rm $(find $pdirs -type f -name "*.po"))
 	fi
-	pomigrate2 --use-compendium --pot2po $pomigrate2verbosity ${tempdir}/${polang} ${PO_DIR}/${polang} ${POT_DIR}
-	# FIXME we should revert stuff that wasn't part of this migration e.g. mobile
-	rm -rf ${tempdir}
+	pomigrate2 --use-compendium --pot2po $pomigrate2verbosity ${tmp_podir}/${polang} ${PO_DIR}/${polang} ${tmp_templatedir}
+	rm -r ${tmp_podir} ${tmp_templatedir}
 
 	(cd ${PO_DIR}
 	if [ $USECPO -eq 0 ]; then
