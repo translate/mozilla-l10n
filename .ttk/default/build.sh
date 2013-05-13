@@ -310,6 +310,3 @@ do
 	)
 
 done
-
-# Cleanup rubbish we seem to leave behind
-rm -rf ${L10N_DIR}/tmp*
