@@ -172,9 +172,14 @@ if [ $opt_vc ]; then
 	[ -d ${POT_DIR} ] && rm -rf ${POT_DIR}/
 	
 	verbose "Extract the en-US source files from the repo into localisation structure"
-	rm -rf ${L10N_ENUS} ${PO_DIR}/en-US
+	for pdir in ${PRODUCT_DIRS} ${RETIRED_PRODUCT_DIRS}
+	do
+		rm -rf ${L10N_ENUS}/$pdir
+	done
+	rm -rf ${PO_DIR}/en-US
 	get_moz_enUS.py $get_moz_enUS_verbosity -s ${MOZCENTRAL_DIR} -d ${PO_DIR} -p ${MOZ_PRODUCT}
-	mv ${PO_DIR}/en-US ${L10N_ENUS}
+	mv ${PO_DIR}/en-US/* ${L10N_ENUS}/
+	rm -rf ${PO_DIR}/en-US
 	
 	verbose "moz2po - Create POT files from en-US"
 	(cd ${L10N_ENUS}
