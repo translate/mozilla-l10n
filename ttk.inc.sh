@@ -548,7 +548,7 @@ function vc_addremove_git {
 		do
 			if [ -f $newfile -a "$(basename $newfile | cut -d"." -f3)" = "po" ]; then
 				git add $newfile
-			elif [ -d $newfile -a "$(find $newfiles -name '*.$translation_file_ext' -o -name "*.$translation_template_ext")" ]; then
+			elif [ -d $newfile -a "$(find $newfile -name "*.$translation_file_ext" -o -name "*.$translation_template_ext")" ]; then
 				git add $newfile
 			fi
 		done
@@ -558,7 +558,7 @@ function vc_addremove_git {
 			if [ "$(basename $oldfile | cut -d'.' -f3 | cut -c-2)" = "po" ]; then
 				git checkout $gitverbosity -- $oldfile
 				mkdir -p obsolete/$(dirname $oldfile)
-				git mv -f $oldfile obsolete/$oldfile
+				git mv -f $oldfile obsolete/$oldfile || log_warning "obsolete/$oldfile - already exists"
 			fi
 		done
 		clean_po obsolete
