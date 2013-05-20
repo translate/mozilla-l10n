@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-07 20:54-0700\n"
+"POT-Creation-Date: 2013-05-17 16:32+0200\n"
 "PO-Revision-Date: 2013-03-04 12:07+0000\n"
 "Last-Translator: ngoswami <ngoswami@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,31 +26,38 @@ msgstr ""
 #. # A good criteria is the language in which you'd find the best
 #. # documentation on web development on the web.
 #: typeError
-msgid "Error: "
+#, fuzzy
+msgid "Error:"
 msgstr "ত্ৰুটি: "
 
 #: typeWarning
-msgid "Warning: "
+#, fuzzy
+msgid "Warning:"
 msgstr "সতৰ্কবাৰ্তা: "
 
 #: typeNetwork
-msgid "Network: "
+#, fuzzy
+msgid "Network:"
 msgstr "নেটৱাৰ্ক: "
 
 #: typeException
-msgid "Exception:  "
+#, fuzzy
+msgid "Exception:"
 msgstr "ব্যাতিক্ৰম:  "
 
 #: typeCssParser
-msgid "CSS Parser: "
+#, fuzzy
+msgid "CSS Parser:"
 msgstr "CSS বিশ্লেষক: "
 
 #: typeStrict
-msgid "Strict Warning: "
+#, fuzzy
+msgid "Strict Warning:"
 msgstr "কঠোৰ সতৰ্কবাৰ্তা: "
 
 #: msgCategory
-msgid "Category: "
+#, fuzzy
+msgid "Category:"
 msgstr "বিভাগ: "
 
 #: errLine
@@ -124,34 +131,6 @@ msgstr "k"
 #: webConsoleCmd.accesskey
 msgid "W"
 msgstr "W"
-
-#. # LOCALIZATION NOTE FOR `jsPropertyTitle` AND `jsPropertyInspectTitle`:
-#. #
-#. # The "PropertyPanel" is used to display a JS object to the user.
-#. # If it is clear which object is being inspected (e.g., window, document object)
-#. # the title of the panel is based on the `jsPropertyInspectTitle` string.
-#. # If it isn't clear which object is being inspected, the `jsPropertyTitle` string
-#. # gets used. This can be the case when the user logs an object to the WebConsole
-#. # output using the console.log(aObjectToInspect) method.
-#. #
-#. # You can find a screenshot of the PropertyPanel here:
-#. #   https://bug585030.bugzilla.mozilla.org/attachment.cgi?id=464034
-#: jsPropertyTitle
-msgid "Object Inspector"
-msgstr "অবজেক্ট নীৰিক্ষক"
-
-#. # LOCALIZATION NOTE (jsPropertyInspectTitle):
-#. #
-#. # The %S is replaced by the evaluated code the user clicked on in the console.
-#. #
-#. # Example: The user executed `window.document` in the WebConsole. The `document`
-#. # object is written to the output. If the user clicks on the `document` output
-#. # in the console, a PropertyPanel will show up. The title of the PropertyPanel
-#. # is set to `Inspect: window.document` because the clicked `document` object was
-#. # evaluated based on the `window.document` string.
-#: jsPropertyInspectTitle
-msgid "Inspect: %S"
-msgstr "নীৰিক্ষণ কৰক: %S"
 
 #. # LOCALIZATION NOTE (timestampFormat): %1$02S = hours (24-hour clock),
 #. # %2$02S = minutes, %3$02S = seconds, %4$03S = milliseconds.
@@ -318,14 +297,21 @@ msgstr "আপুনি সংলগ্ন কৰিব বিচৰা টে�
 msgid "*Global Console*"
 msgstr "*বিশ্বব্যাপী কনচৌল*"
 
-#. # LOCALIZATION NOTE (ToolboxWebconsole.label):
-#. # This string is displayed in the title of the tab when the web console is
-#. # displayed inside the developer tools window it is probably the same string
-#. # as webConsoleWindowTitleAndURL before the '-'
-#: ToolboxWebconsole.label
-msgctxt "ToolboxWebconsole.label"
+#. # LOCALIZATION NOTE (MenuWebconsole.label):
+#. # This string is displayed in the Tools menu as a shortcut to open the devtools
+#. # with the web console tab selected.
+#: MenuWebconsole.label
+#, fuzzy
+msgctxt "MenuWebconsole.label"
 msgid "Web Console"
 msgstr "ৱেব কনচৌল"
+
+#. # LOCALIZATION NOTE (ToolboxTabWebconsole.label):
+#. # This string is displayed as the label of the tab in the devtools window.
+#: ToolboxTabWebconsole.label
+#, fuzzy
+msgid "Console"
+msgstr "কনচৌল:"
 
 #. # LOCALIZATION NOTE (ToolboxWebconsole.tooltip):
 #. # This string is displayed in the tooltip of the tab when the web console is
@@ -341,6 +327,14 @@ msgstr "ৱেব কনচৌল"
 #: longStringEllipsis
 msgid "[…]"
 msgstr "[…]"
+
+#. # LOCALIZATION NOTE (longStringTooLong): The string displayed after the user
+#. # tries to expand a long string.
+#: longStringTooLong
+msgid ""
+"The string you are trying to view is too long to be displayed by the Web "
+"Console."
+msgstr ""
 
 #. # LOCALIZATION NOTE (executeEmptyInput): This is displayed when the user tries
 #. # to execute code, but the input is empty.
@@ -371,6 +365,25 @@ msgid ""
 msgstr ""
 "সংযোগৰ সময়অন্ত হল। বিভৱীয় ত্ৰুটি বাৰ্তাসমূহৰ বাবে দুয়ো প্ৰান্তৰ ত্ৰুটি কনচৌল নীৰিক্ষণ "
 "কৰক। পুনৰ চেষ্টা কৰিবলে ৱেব কনচৌল পুনৰ খোলক।"
+
+#. # LOCALIZATION NOTE (propertiesFilterPlaceholder): This is the text that
+#. # appears in the filter text box for the properties view container.
+#: propertiesFilterPlaceholder
+#, fuzzy
+msgid "Filter properties"
+msgstr "প্ৰিন্টাৰৰ বৈশিষ্ট"
+
+#. # LOCALIZATION NOTE (emptyPropertiesList): The text that is displayed in the
+#. # properties pane when there are no properties to display.
+#: emptyPropertiesList
+msgid "No properties to display"
+msgstr ""
+
+#~ msgid "Object Inspector"
+#~ msgstr "অবজেক্ট নীৰিক্ষক"
+
+#~ msgid "Inspect: %S"
+#~ msgstr "নীৰিক্ষণ কৰক: %S"
 
 #~ msgid "Autocomplete popup"
 #~ msgstr "স্বসম্পূৰ্ণ পপআপ"

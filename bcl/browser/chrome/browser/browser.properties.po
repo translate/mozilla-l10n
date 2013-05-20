@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-05-17 16:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -90,7 +90,7 @@ msgid "n"
 msgstr "n"
 
 #. # LOCALIZATION NOTE (addonDownloading, addonDownloadCancelled, addonDownloadRestart):
-#. # Semi-colon list of plural forms. See:
+#. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # Also see https://bugzilla.mozilla.org/show_bug.cgi?id=570012 for mockups
 #: addonDownloading
@@ -115,7 +115,7 @@ msgid "Cancel"
 msgstr ""
 
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
-#. # Semi-colon list of plural forms. See:
+#. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 first add-on's name, #2 number of add-ons, #3 application name
 #: addonsInstalled
@@ -255,12 +255,13 @@ msgctxt "lwthemeNeedsRestart.accesskey"
 msgid "R"
 msgstr "R"
 
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr ""
-
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
+#. # LOCALIZATION NOTE (popupWarning.message): Semicolon-separated list of plural forms.
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popupWarning.message
+msgid ""
+"#1 prevented this site from opening a pop-up window.;#1 prevented this site "
+"from opening #2 pop-up windows."
 msgstr ""
 
 #: popupWarningButton
@@ -301,18 +302,29 @@ msgid "Show '%S'"
 msgstr "Show '%S'"
 
 #. # missing plugin installer
-#: missingpluginsMessage.title
-msgid "Additional plugins are required to display all the media on this page."
-msgstr "Additional plugins are required to display all the media on this page."
+#: installPlugin.message
+msgid ""
+"Would you like to install the plugin needed to display the media on this "
+"page?"
+msgstr ""
 
-#: missingpluginsMessage.button.label
-msgid "Install Missing Plugins…"
-msgstr "Install Missing Plugins…"
+#: installPlugin.button.label
+msgid "Install %S"
+msgstr ""
 
-#: missingpluginsMessage.button.accesskey
-msgctxt "missingpluginsMessage.button.accesskey"
+#: installPlugin.button.accesskey
+msgctxt "installPlugin.button.accesskey"
 msgid "I"
-msgstr "I"
+msgstr ""
+
+#: installPlugin.ignoreButton.label
+msgid "Don't ask again"
+msgstr ""
+
+#: installPlugin.ignoreButton.accesskey
+msgctxt "installPlugin.ignoreButton.accesskey"
+msgid "N"
+msgstr ""
 
 #: outdatedpluginsMessage.title
 msgid "Some plugins used by this page are out of date."
@@ -384,19 +396,6 @@ msgstr "S"
 msgctxt "crashedpluginsMessage.learnMore"
 msgid "Learn More…"
 msgstr "Learn More…"
-
-#: carbonFailurePluginsMessage.message
-msgid "This page asks to use a plugin that can only run in 32-bit mode"
-msgstr "This page asks to use a plugin that can only run in 32-bit mode"
-
-#: carbonFailurePluginsMessage.restartButton.label
-msgid "Restart in 32-bit mode"
-msgstr "Restart in 32-bit mode"
-
-#: carbonFailurePluginsMessage.restartButton.accesskey
-msgctxt "carbonFailurePluginsMessage.restartButton.accesskey"
-msgid "R"
-msgstr "R"
 
 #: activatePluginsMessage.message
 msgid "Would you like to activate the plugins on this page?"
@@ -474,6 +473,13 @@ msgstr "Clear All History"
 #: sanitizeButtonOK
 msgid "Clear Now"
 msgstr "Clear Now"
+
+#. # LOCALIZATION NOTE (sanitizeButtonClearing): The label for the default
+#. # button between the user clicking it and the window closing.  Indicates the
+#. # items are being cleared.
+#: sanitizeButtonClearing
+msgid "Clearing"
+msgstr ""
 
 #. # LOCALIZATION NOTE (sanitizeEverythingWarning2): Warning that appears when
 #. # "Time range to clear" is set to "Everything" in Clear Recent History dialog,
@@ -569,7 +575,7 @@ msgstr "Restore All Tabs"
 msgid "Restore All Windows"
 msgstr "Restore All Windows"
 
-#. # LOCALIZATION NOTE (menuUndoCloseWindowLabel): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (menuUndoCloseWindowLabel): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 Window Title, #2 Number of tabs
 #: menuUndoCloseWindowLabel
@@ -741,9 +747,9 @@ msgstr "Bookmark Removed"
 msgid "Edit This Bookmark"
 msgstr "Edit This Bookmark"
 
-#. # LOCALIZATION NOTE (editBookmark.removeBookmarks.label)
-#. # Semi-colon list of plural forms. Replacement for #1 is
-#. # the number of bookmarks to be removed.
+#. # LOCALIZATION NOTE (editBookmark.removeBookmarks.label): Semicolon-separated list of plural forms.
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # Replacement for #1 is the number of bookmarks to be removed.
 #. # If this causes problems with localization you can also do "Remove Bookmarks (#1)"
 #. # instead of "Remove #1 Bookmarks".
 #: editBookmark.removeBookmarks.label
@@ -821,6 +827,71 @@ msgctxt "geolocation.learnMore"
 msgid "Learn More…"
 msgstr "Learn More…"
 
+#: webNotifications.showForSession
+msgid "Show for this session"
+msgstr ""
+
+#: webNotifications.showForSession.accesskey
+msgid "s"
+msgstr ""
+
+#: webNotifications.alwaysShow
+msgid "Always Show Notifications"
+msgstr ""
+
+#: webNotifications.alwaysShow.accesskey
+msgctxt "webNotifications.alwaysShow.accesskey"
+msgid "A"
+msgstr ""
+
+#: webNotifications.neverShow
+msgid "Always Block Notifications"
+msgstr ""
+
+#: webNotifications.neverShow.accesskey
+msgctxt "webNotifications.neverShow.accesskey"
+msgid "N"
+msgstr ""
+
+#: webNotifications.showFromSite
+msgid "Would you like to show notifications from %S?"
+msgstr ""
+
+#. # Pointer lock UI
+#: pointerLock.allow2
+msgid "Hide pointer"
+msgstr ""
+
+#: pointerLock.allow2.accesskey
+msgid "H"
+msgstr ""
+
+#: pointerLock.alwaysAllow
+msgid "Always allow hiding"
+msgstr ""
+
+#: pointerLock.alwaysAllow.accesskey
+msgctxt "pointerLock.alwaysAllow.accesskey"
+msgid "A"
+msgstr ""
+
+#: pointerLock.neverAllow
+msgid "Never allow hiding"
+msgstr ""
+
+#: pointerLock.neverAllow.accesskey
+msgctxt "pointerLock.neverAllow.accesskey"
+msgid "N"
+msgstr ""
+
+#: pointerLock.title2
+msgid "Would you like to allow the pointer to be hidden on %S?"
+msgstr ""
+
+#: pointerLock.autoLock.title2
+msgid "%S will hide the pointer."
+msgstr ""
+
 #. # Phishing/Malware Notification Bar.
 #. # LOCALIZATION NOTE (notAForgery, notAnAttack)
 #. # The two button strings will never be shown at the same time, so
@@ -878,7 +949,7 @@ msgstr "Search %S"
 msgid "%S - Group Your Tabs"
 msgstr "%S - Group Your Tabs"
 
-#. # LOCALIZATION NOTE (tabview.moveToUnnamedGroup.label): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (tabview.moveToUnnamedGroup.label): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 is the page title of the first tab in the unnamed group, 
 #. # #2 is the number of remaining tabs.
@@ -971,39 +1042,6 @@ msgctxt "dataReportingNotification.button.accessKey"
 msgid "C"
 msgstr ""
 
-#. # Keyword.URL reset prompt
-#. # LOCALIZATION NOTE (keywordPrompt.message):
-#. #  - %1$S is brandShortName
-#. #  - %2$S is a host name (e.g. "somewebsearch.com") from the current value of keyword.URL
-#. #  - %3$S is the name of the default search engine (e.g. "Google")
-#: keywordPrompt.message
-msgid ""
-"%1$S is using '%2$S' for searches from the location bar. Would you like to "
-"restore the default search (%3$S)?"
-msgstr ""
-"%1$S is using '%2$S' for searches from the location bar. Would you like to "
-"restore the default search (%3$S)?"
-
-#. # LOCALIZATION NOTE (keywordPrompt.yesButton): %1$S is the name of the default search engine
-#: keywordPrompt.yesButton
-msgid "Yes, use %1$S"
-msgstr "Yes, use %1$S"
-
-#: keywordPrompt.yesButton.accessKey
-#, fuzzy
-msgid "Y"
-msgstr "Y"
-
-#. # LOCALIZATION NOTE (keywordPrompt.noButton): %1$S is a host name (e.g. "somewebsearch.com") from the current value of keyword.URL
-#: keywordPrompt.noButton
-msgid "No, continue using '%1$S'"
-msgstr "No, continue using '%1$S'"
-
-#: keywordPrompt.noButton.accessKey
-msgctxt "keywordPrompt.noButton.accessKey"
-msgid "N"
-msgstr "N"
-
 #. # Webapps notification popup
 #: webapps.install
 msgid "Install"
@@ -1033,34 +1071,36 @@ msgstr "%S is now fullscreen."
 msgid "Remember decision for %S"
 msgstr "Remember decision for %S"
 
-#. # LOCALIZATION NOTE (social.activated.description): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
-#: social.activated.description
-msgid "You've turned on %1$S for %2$S."
-msgstr "You've turned on %1$S for %2$S."
-
-#. # LOCALIZATION NOTE (social.removeProvider.label): %S is the name of the social provider
-#: social.removeProvider.label
-#, fuzzy
-msgctxt "social.removeProvider.label"
-msgid "Remove %S"
-msgstr "Remove %S"
-
-#: social.removeProvider.accesskey
-msgctxt "social.removeProvider.accesskey"
-msgid "R"
+#: service.toolbarbutton.label
+msgctxt "service.toolbarbutton.label"
+msgid "Services"
 msgstr ""
 
-#. # LOCALIZATION NOTE (social.remove.confirmationLabel): %1$S is the name of the social provider, %2$S is brandShortName (e.g. Firefox)
-#: social.remove.confirmationLabel
-msgid "Are you sure you want to remove %1$S for %2$S?"
-msgstr "Are you sure you want to remove %1$S for %2$S?"
+#: service.toolbarbutton.tooltiptext
+msgctxt "service.toolbarbutton.tooltiptext"
+msgid "Services"
+msgstr ""
 
-#. # LOCALIZATION NOTE (social.remove.confirmationOK): %S is the name of the social provider
-#: social.remove.confirmationOK
+#. # LOCALIZATION NOTE (social.install.description): %1$S is the hostname of the social provider, %2$S is brandShortName (e.g. Firefox)
+#: service.install.description
+msgid ""
+"Would you like to enable services from %1$S to display in your %2$S toolbar "
+"and sidebar?"
+msgstr ""
+
+#: service.install.ok.label
+msgid "Enable Services"
+msgstr ""
+
+#: service.install.ok.accesskey
+msgid "E"
+msgstr ""
+
+#: service.install.learnmore
 #, fuzzy
-msgctxt "social.remove.confirmationOK"
-msgid "Remove %S"
-msgstr "Remove %S"
+msgctxt "service.install.learnmore"
+msgid "Learn More…"
+msgstr "Learn More…"
 
 #. # LOCALIZATION NOTE (social.turnOff.label): %S is the name of the social provider
 #: social.turnOff.label
@@ -1082,6 +1122,24 @@ msgctxt "social.turnOn.accesskey"
 msgid "T"
 msgstr "T"
 
+#. # LOCALIZATION NOTE (social.markpage.label): %S is the name of the social provider
+#: social.markpage.label
+msgid "Send Page to %S"
+msgstr ""
+
+#: social.unmarkpage.label
+msgid "Remove Page from %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (social.marklink.label): %S is the name of the social provider
+#: social.marklink.label
+msgid "Send Link to %S"
+msgstr ""
+
+#: social.unmarklink.label
+msgid "Remove Link from %S"
+msgstr ""
+
 #. # LOCALIZATION NOTE (social.error.message): %1$S is brandShortName (e.g. Firefox), %2$S is the name of the social provider
 #: social.error.message
 msgid "%1$S is unable to connect with %2$S right now."
@@ -1095,15 +1153,6 @@ msgstr "Try Again"
 msgctxt "social.error.tryAgain.accesskey"
 msgid "T"
 msgstr "T"
-
-#: social.error.ok.label
-msgid "OK"
-msgstr "OK"
-
-#: social.error.ok.accesskey
-msgctxt "social.error.ok.accesskey"
-msgid "O"
-msgstr "O"
 
 #: social.error.closeSidebar.label
 msgid "Close This Sidebar"
@@ -1182,7 +1231,7 @@ msgstr "O"
 
 #. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message, getUserMedia.sharingCamera.message, getUserMedia.sharingMicrophone.message, getUserMedia.sharingCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
 #. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
-#. # Semi-colon list of plural forms. See:
+#. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # The number of devices can be either one or two.
 #: getUserMedia.shareCamera.message
@@ -1280,6 +1329,68 @@ msgstr ""
 msgctxt "slowStartup.disableNotificationButton.accesskey"
 msgid "A"
 msgstr ""
+
+#~ msgid ""
+#~ "Additional plugins are required to display all the media on this page."
+#~ msgstr ""
+#~ "Additional plugins are required to display all the media on this page."
+
+#~ msgid "Install Missing Plugins…"
+#~ msgstr "Install Missing Plugins…"
+
+#~ msgid "This page asks to use a plugin that can only run in 32-bit mode"
+#~ msgstr "This page asks to use a plugin that can only run in 32-bit mode"
+
+#~ msgid "Restart in 32-bit mode"
+#~ msgstr "Restart in 32-bit mode"
+
+#~ msgctxt "carbonFailurePluginsMessage.restartButton.accesskey"
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid ""
+#~ "%1$S is using '%2$S' for searches from the location bar. Would you like "
+#~ "to restore the default search (%3$S)?"
+#~ msgstr ""
+#~ "%1$S is using '%2$S' for searches from the location bar. Would you like "
+#~ "to restore the default search (%3$S)?"
+
+#~ msgid "Yes, use %1$S"
+#~ msgstr "Yes, use %1$S"
+
+#, fuzzy
+#~ msgid "Y"
+#~ msgstr "Y"
+
+#~ msgid "No, continue using '%1$S'"
+#~ msgstr "No, continue using '%1$S'"
+
+#~ msgctxt "keywordPrompt.noButton.accessKey"
+#~ msgid "N"
+#~ msgstr "N"
+
+#~ msgid "You've turned on %1$S for %2$S."
+#~ msgstr "You've turned on %1$S for %2$S."
+
+#, fuzzy
+#~ msgctxt "social.removeProvider.label"
+#~ msgid "Remove %S"
+#~ msgstr "Remove %S"
+
+#~ msgid "Are you sure you want to remove %1$S for %2$S?"
+#~ msgstr "Are you sure you want to remove %1$S for %2$S?"
+
+#, fuzzy
+#~ msgctxt "social.remove.confirmationOK"
+#~ msgid "Remove %S"
+#~ msgstr "Remove %S"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgctxt "social.error.ok.accesskey"
+#~ msgid "O"
+#~ msgstr "O"
 
 #~ msgid "Click here to activate the %S plugin."
 #~ msgstr "Click here to activate the %S plugin."
