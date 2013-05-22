@@ -169,12 +169,10 @@ do
 done
 
 if [ $opt_vc ]; then
-	[ -d ${POT_DIR} ] && rm -rf ${POT_DIR}/
-	
 	verbose "Extract the en-US source files from the repo into localisation structure"
 	for pdir in ${PRODUCT_DIRS} ${RETIRED_PRODUCT_DIRS}
 	do
-		rm -rf ${L10N_ENUS}/$pdir
+		rm -rf ${POT_DIR}/$pdir ${L10N_ENUS}/$pdir
 	done
 	rm -rf ${PO_DIR}/en-US
 	get_moz_enUS.py $get_moz_enUS_verbosity -s ${MOZCENTRAL_DIR} -d ${PO_DIR} -p ${MOZ_PRODUCT}
