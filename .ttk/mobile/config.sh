@@ -13,8 +13,8 @@ opt_verbose=3
 # Directories in language repositories to clear before running po2moz
 PRODUCT_DIRS="mobile"
 # Directories in language repositories to clear before running po2moz
-RETIRED_PRODUCT_DIRS=""
+RETIRED_PRODUCT_DIRS="embedding"
 
-OTHER_EXCLUDED_DIRS="editor mail thunderbird chat browser dom security services toolkit embedding"
+OTHER_EXCLUDED_DIRS="editor mail thunderbird chat browser dom security services toolkit"
 
 MOZ_PRODUCT=mobile
