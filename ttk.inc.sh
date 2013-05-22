@@ -195,7 +195,7 @@ function assemble_phase() {
 		else
 			(cd $translation_dir/$lang
 			if [ $lang == "pot" -o $lang == "templates" ]; then
-				find $PRODUCT_DIRS -name "*.$translation_templates_ext"
+				find $PRODUCT_DIRS -name "*.$translation_template_ext"
 			else
 				find $PRODUCT_DIRS -name "*.$translation_file_ext"
 			fi) | while read file
