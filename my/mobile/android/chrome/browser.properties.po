@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-05-22 14:30+0100\n"
 "PO-Revision-Date: 2013-02-14 14:47+0000\n"
 "Last-Translator: Tin Aung <tinaunglinn.eng91@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1360853255.0\n"
@@ -28,20 +28,8 @@ msgid "Install"
 msgstr "တပ်ဆင်ပါ"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr ""
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
-msgstr ""
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "အတ်အွန်အားတပ်ဆင်နေသည်"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
 msgstr ""
 
 #: alertAddonsInstalledNoRestart
@@ -159,10 +147,6 @@ msgstr "#1အား ၎င်းတွင်လုံခြုံရေးအရ
 msgid "Restart to complete changes."
 msgstr ""
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr ""
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr ""
@@ -172,25 +156,27 @@ msgid "Restart"
 msgstr "ပြန်လည်စတင်မည်။"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "ဤဝတ်ဆိုက်အား pop-up အသစ်များအား%S မှတားဆီးထားသည်။"
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "ဤ ဝတ်ဆိုက်အား %S မှာ %Spop-up အသစ်များ ပြုလုပ်ခြင်းကိုတားဆီထားသည်။"
+#: popup.dontAskAgain
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr ""
 
-#: popupButtonAllowOnce
+#: popup.show
 #, fuzzy
 msgid "Show"
 msgstr "ဖေါ်ပြပါ -"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr ""
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
+#: popup.dontShow
+msgid "Don't show"
 msgstr ""
 
 #. # SafeBrowsing
@@ -205,43 +191,6 @@ msgstr ""
 #: blockPopups.label
 msgid "Block Popups"
 msgstr ""
-
-#. # Telemetry
-#. # %1$S = server owner (Mozilla); %2$S = product name (Firefox)
-#: telemetry.optin.message2
-msgid "Send info to %1$S so that we can improve %2$S?"
-msgstr ""
-
-#: telemetry.optin.learnMore
-#, fuzzy
-msgid "Learn more"
-msgstr "ဆက်လက်ဖတ်ရှူရန်"
-
-#: telemetry.optin.yes
-#, fuzzy
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "ကောင်းပြီ"
-
-#: telemetry.optin.no
-#, fuzzy
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "မလုပ်ဘူး"
-
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
-#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-"%3$S တိုးတက်စေရန် ကူညီဖို့ အတွက် %1$S က စွမ်းဆောင်ရည်၊ ဟာဒ့်ဝဲ၊ အသုံးအနှုန်း နဲ့ စိတ်ကြိုက်ပြင်ဆင်မှု "
-"သတင်းအချက်အလက်တွေကို %2$S ဆီ ပြန်ပို့ပေးနေပါတယ်။"
-
-#: telemetry.optout.ok
-msgid "OK"
-msgstr "OK"
 
 #. # XPInstall
 #: xpinstallPromptWarning2
@@ -309,16 +258,8 @@ msgstr ""
 msgid "Don't share"
 msgstr "မမျှဝေပေးပါနှင့်။"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr ""
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr ""
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
+#: geolocation.ask
+msgid "Share your location with %S?"
 msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
@@ -342,11 +283,12 @@ msgid "Allow"
 msgstr "ခွင့်ပြုပါ"
 
 #: desktopNotification.dontAllow
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr ""
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
 msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
@@ -364,7 +306,7 @@ msgid "Don't ask again for this site"
 msgstr ""
 
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
@@ -375,19 +317,14 @@ msgstr ""
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "အမှား၊"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "သတိ​ပေးချက်၊"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+msgid "Allow %S to store data on your device for offline use?"
+msgstr ""
+
+#: offlineApps.dontAskAgain
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
 msgstr ""
 
 #: offlineApps.allow
@@ -395,14 +332,10 @@ msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "ခွင့်ပြုပါ"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr ""
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "ယခု မဟုတ်သေးဘူး"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -410,153 +343,29 @@ msgstr "ယခု မဟုတ်သေးဘူး"
 msgid "Store Offline Data"
 msgstr ""
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr ""
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-#, fuzzy
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "ခွင့်ပြုပါ"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+msgid "Save Password"
+msgstr ""
+
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
+msgstr ""
+
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
 #, fuzzy
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "ခွင့်ပြုပါ"
-
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr ""
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "လျှို့၀က်စကားလုံးအားမှတ်ထားပါ။"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-#, fuzzy
-msgid "Remember"
-msgstr "မှတ်ထားပါ"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr ""
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr ""
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "ပိတ်ဖို့ အတည်ပြုပါ"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr ""
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "စာအမှတ်များကို ပိတ်ပါ"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "စာအမှတ်များ တခုလုံး ပိတ်ဖို့ ကြိုးစားတဲ့အခါ ကျွန်ပ်ကို သတိပေးပါ"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr ""
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr ""
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "Mozilla ဆီကို crash report ပို့ပေးပါ"
-
-#: tabs.crashClose
-#, fuzzy
-msgid "Close tab"
-msgstr "စာအမှတ်များကို ပိတ်ပါ"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "တဗ်အားပြန်တောင်းယူ"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr ""
-
-#. # Open Search
-#: opensearch.searchWith
-#, fuzzy
-msgid "Search With:"
-msgstr "ဆိုက်အားရှာဖွေပါ"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr ""
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr ""
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr ""
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr ""
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
-msgstr ""
+msgid "Don't save"
+msgstr "မမျှဝေပေးပါနှင့်။"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -574,11 +383,6 @@ msgstr "မှားတယ်"
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr ""
 
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "ပိုမို၍"
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
@@ -592,6 +396,10 @@ msgstr "အချိတ်အဆက်ကို စာအမှတ်သစ်�
 
 #: contextmenu.openInPrivateTab
 msgid "Open Link in Private Tab"
+msgstr ""
+
+#: contextmenu.addToReadingList
+msgid "Add to Reading List"
 msgstr ""
 
 #: contextmenu.share
@@ -793,21 +601,17 @@ msgid "Could not download manifest"
 msgstr ""
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr ""
 
-#: clickToPlayPlugins.yes
-#, fuzzy
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "ကောင်းပြီ"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr ""
 
-#: clickToPlayPlugins.no
-#, fuzzy
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "မလုပ်ဘူး"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -818,8 +622,8 @@ msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
+#: clickToPlayPlugins.activatePlugins
+msgid "Activate Plugins"
 msgstr ""
 
 #. # Site settings dialog
@@ -881,7 +685,6 @@ msgid "Always"
 msgstr ""
 
 #: helperapps.never
-msgctxt "helperapps.never"
 msgid "Never"
 msgstr ""
 
@@ -933,6 +736,101 @@ msgstr "ယခု သင်သည် %S နှင့် မိုက်ကရိ
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr "ယခု သင်သည် %S နှင့် မိုက်ကရိုဖုန်း ကင်မရာများအား မျှသုံးနေသှ်"
+
+#~ msgid "Installing add-on"
+#~ msgstr "အတ်အွန်အားတပ်ဆင်နေသည်"
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "ဤဝတ်ဆိုက်အား pop-up အသစ်များအား%S မှတားဆီးထားသည်။"
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "ဤ ဝတ်ဆိုက်အား %S မှာ %Spop-up အသစ်များ ပြုလုပ်ခြင်းကိုတားဆီထားသည်။"
+
+#, fuzzy
+#~ msgid "Learn more"
+#~ msgstr "ဆက်လက်ဖတ်ရှူရန်"
+
+#, fuzzy
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "ကောင်းပြီ"
+
+#, fuzzy
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "မလုပ်ဘူး"
+
+#~ msgid ""
+#~ "%1$S sends information about performance, hardware, usage and "
+#~ "customizations back to %2$S to help improve %3$S."
+#~ msgstr ""
+#~ "%3$S တိုးတက်စေရန် ကူညီဖို့ အတွက် %1$S က စွမ်းဆောင်ရည်၊ ဟာဒ့်ဝဲ၊ အသုံးအနှုန်း နဲ့ စိတ်ကြိုက်ပြင်ဆင်မှု "
+#~ "သတင်းအချက်အလက်တွေကို %2$S ဆီ ပြန်ပို့ပေးနေပါတယ်။"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Error:"
+#~ msgstr "အမှား၊"
+
+#~ msgid "Warning:"
+#~ msgstr "သတိ​ပေးချက်၊"
+
+#~ msgid "Not Now"
+#~ msgstr "ယခု မဟုတ်သေးဘူး"
+
+#, fuzzy
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "ခွင့်ပြုပါ"
+
+#, fuzzy
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "ခွင့်ပြုပါ"
+
+#~ msgid "Remember Password"
+#~ msgstr "လျှို့၀က်စကားလုံးအားမှတ်ထားပါ။"
+
+#, fuzzy
+#~ msgid "Remember"
+#~ msgstr "မှတ်ထားပါ"
+
+#~ msgid "Confirm close"
+#~ msgstr "ပိတ်ဖို့ အတည်ပြုပါ"
+
+#~ msgid "Close tabs"
+#~ msgstr "စာအမှတ်များကို ပိတ်ပါ"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "စာအမှတ်များ တခုလုံး ပိတ်ဖို့ ကြိုးစားတဲ့အခါ ကျွန်ပ်ကို သတိပေးပါ"
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "Mozilla ဆီကို crash report ပို့ပေးပါ"
+
+#, fuzzy
+#~ msgid "Close tab"
+#~ msgstr "စာအမှတ်များကို ပိတ်ပါ"
+
+#~ msgid "Reload tab"
+#~ msgstr "တဗ်အားပြန်တောင်းယူ"
+
+#, fuzzy
+#~ msgid "Search With:"
+#~ msgstr "ဆိုက်အားရှာဖွေပါ"
+
+#~ msgid "More"
+#~ msgstr "ပိုမို၍"
+
+#, fuzzy
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "ကောင်းပြီ"
+
+#, fuzzy
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "မလုပ်ဘူး"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "အခင်းအကျင်းသစ်အားတပ်ဆင်ပြီး။"

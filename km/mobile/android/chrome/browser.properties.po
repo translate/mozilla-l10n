@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-05-22 14:30+0100\n"
 "PO-Revision-Date: 2013-03-13 09:24+0000\n"
 "Last-Translator: Khoem <sokhem@open.org.kh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1363166681.0\n"
@@ -29,21 +29,9 @@ msgid "Install"
 msgstr "ដំឡើង"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "កម្មវិធី​បន្ថែម"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "កំពុង​ទាញ​យក​កម្មវិធី​បន្ថែម"
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "ដំឡើង​កម្មវិធី​បន្ថែម"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
-msgstr "បាន​បញ្ចប់​ការ​ដំឡើង ។ តម្រូវឲ្យ​ចាប់ផ្ដើម​ឡើងវិញ ។"
 
 #: alertAddonsInstalledNoRestart
 msgid "Installation complete"
@@ -152,10 +140,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr "ចាប់ផ្ដើម​ឡើងវិញ​ដើម្បី​បញ្ចប់​ការ​ផ្លាស់ប្ដូរ ។"
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr "បាន​ធ្វើ​បច្ចុប្បន្នភាព​កម្មវិធី​បន្ថែម ។ ចាប់ផ្ដើម​ឡើងវិញ​ដើម្បី​បញ្ចប់​ការ​ផ្លាស់ប្ដូរ ។"
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr "បាន​ដំឡើង​កម្មវិធី​បន្ថែម​ដែល​គ្មាន​សុវត្ថិភាព ។ ចាប់ផ្ដើម​ឡើងវិញ​ដើម្បី​បិទ​វា ។"
@@ -165,25 +149,28 @@ msgid "Restart"
 msgstr "ចាប់ផ្ដើម​ឡើង​វិញ​"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S បាន​រារាំង​តំបន់​បណ្ដាញ​នេះ​មិន​ឲ្យ​បើក​បង្អួច​លេចឡើង ។"
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S បាន​រារាំង​តំបន់​បណ្ដាញ​នេះ​មិន​ឲ្យ​បើក %S បង្អួច​លេចឡើង ។"
+#: popup.dontAskAgain
+#, fuzzy
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "កុំ​សួរ​ម្ដងទៀត​អំពី​តំបន់​បណ្ដាញ​នេះ ។"
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "បង្ហាញ"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr "បង្ហាញ​ជានិច្ច"
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
-msgstr "កុំ​បង្ហាញ"
+#: popup.dontShow
+msgid "Don't show"
+msgstr ""
 
 #. # SafeBrowsing
 #: safeBrowsingDoorhanger
@@ -198,40 +185,6 @@ msgstr ""
 #: blockPopups.label
 msgid "Block Popups"
 msgstr "ទប់ស្កាត់​ការ​លេចឡើង"
-
-#. # Telemetry
-#. # %1$S = server owner (Mozilla); %2$S = product name (Firefox)
-#: telemetry.optin.message2
-msgid "Send info to %1$S so that we can improve %2$S?"
-msgstr "ផ្ញើ​ព័ត៌មាន​​ទៅ %1$S ដូច្នេះ​យើង​អាច​ធ្វើឲ្យ %2$S ប្រសើរ​ឡើង ?"
-
-#: telemetry.optin.learnMore
-msgid "Learn more"
-msgstr "ស្វែងយល់​បន្ថែម"
-
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "បាទ/ចាស"
-
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "ទេ"
-
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
-#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-"%1$S ផ្ញើ​ព័ត៌មាន​អំពី​ដំណើរការ​ផ្នែក​រឹង ការ​ប្រើប្រាស់ និង​ការ​ប្ដូរ​តាមបំណង​ត្រឡប់​ទៅកាន់ %2$S ដើម្បី​ជួយ​"
-"ធ្វើឲ្យ %3$S ប្រសើរ​ឡើង ។"
-
-#: telemetry.optout.ok
-msgid "OK"
-msgstr "យល់ព្រម"
 
 #. # XPInstall
 #: xpinstallPromptWarning2
@@ -293,17 +246,9 @@ msgstr "ចែករំលែក"
 msgid "Don't share"
 msgstr "កុំ​ចែករំលែក"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr "ចែករំលែក​ជានិច្ច"
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr "កុំ​ចែករំលែក"
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
-msgstr "%S ចង់បាន​ទីតាំង​របស់​អ្នក ។"
+#: geolocation.ask
+msgid "Share your location with %S?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
 #. # site settings dialog.
@@ -325,12 +270,14 @@ msgid "Allow"
 msgstr "អនុញ្ញាត"
 
 #: desktopNotification.dontAllow
+#, fuzzy
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr "មិន​អនុញ្ញាត"
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
-msgstr "%S ចង់​ប្រើ​ការ​ជូនដំណឹង ។"
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
 #. # used in site settings dialog.
@@ -346,7 +293,7 @@ msgid "Don't ask again for this site"
 msgstr "កុំ​សួរ​ម្ដងទៀត​អំពី​តំបន់​បណ្ដាញ​នេះ ។"
 
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
@@ -357,34 +304,28 @@ msgstr "បាន​បើក​ផ្ទាំង​ថ្មី បាន​�
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr "បាន​បើក​ផ្ទាំង​ឯកជន​ថ្មី បាន​បើក​ផ្ទាំង​ឯកជន​ថ្មី​ចំនួន #1"
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "កំហុស ៖"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "ការ​ព្រមាន ៖"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+#, fuzzy
+msgid "Allow %S to store data on your device for offline use?"
 msgstr "%S ចង់​ផ្ទុក​ទិន្នន័យ​នៅ​លើ​ឧបករណ៍​របស់​អ្នក​សម្រាប់​ការ​ប្រើ​ក្រៅ​បណ្ដាញ ។"
+
+#: offlineApps.dontAskAgain
+#, fuzzy
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "កុំ​សួរ​ម្ដងទៀត​អំពី​តំបន់​បណ្ដាញ​នេះ ។"
 
 #: offlineApps.allow
 msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "អនុញ្ញាត"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+#, fuzzy
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr "មិន​អនុញ្ញាត"
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "មិន​មែន​ឥឡូវ​នេះ​ទេ"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -392,148 +333,30 @@ msgstr "មិន​មែន​ឥឡូវ​នេះ​ទេ"
 msgid "Store Offline Data"
 msgstr "ផ្ទុក​ទិន្នន័យ​ក្រៅ​បណ្ដាញ"
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr "មិន​អនុញ្ញាត"
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr "%S ចង់​ផ្ទុក​ទិន្នន័យ​នៅ​លើ​ឧបករណ៍​របស់​អ្នក​សម្រាប់​ការ​ប្រើ​កៅ​បណ្ដាញ ។"
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "អនុញ្ញាត"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr "មិន​អនុញ្ញាត"
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr "%S ចង់​ផ្ទុក​ទិន្នន័យ​ច្រើន​នៅ​លើ​ឧបករណ៍​របស់​អ្នក​សម្រាប់​ការ​ប្រើ​ក្រៅ​បណ្ដាញ ។"
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "អនុញ្ញាត"
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+#, fuzzy
+msgid "Save Password"
+msgstr "ពាក្យ​សម្ងាត់​បាន​រក្សារ​ទុក"
 
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr "មិន​អនុញ្ញាត"
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
+msgstr ""
 
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr "%S ចង់​គ្រប់គ្រង​កម្មវិធី​នៅ​លើ​ឧបករណ៍​របស់​អ្នក ។"
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "ចងចាំ​ពាក្យសម្ងាត់"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "ចងចាំ"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr "កុំ"
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr "ចំណាំ​ផ្ទៃតុ"
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "អះអាង​កូដ"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr "មិន​បាន​ប្រើ អ្នក​ហៀបនឹង​បិទ #1 ផ្ទាំង ។ បន្ត​ទៀត​ឬ ?"
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "បិទ​ផ្ទាំង"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "ព្រមាន​ខ្ញុំ នៅ​ពេល​អ្នក​ខ្ញុំ​ប៉ុនប៉ង​បិទ​ផ្ទាំង​ច្រើន ។"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr "សុំទោស !"
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr "មាន​អ្វី​ម្យ៉ាង​ខុស​ប្រក្រតី នៅ​ពេល​បង្ហាញ​ទំព័រ​បណ្ដាញ ។"
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "ផ្ញើ​របាយការណ៍​គាំង​ទៅ Mozilla"
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "បិទ​ផ្ទាំង"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "ផ្ទុក​ផ្ទាំង​ឡើងវិញ"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr "ទំព័រ​ផ្ទាល់ខ្លួន"
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "ស្វែងរក​ជាមួយ ៖"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr "ស្វែងរក \"%S\""
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr "បើក​នៅ​ក្នុង​កម្មវិធី %S"
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr "បើក​នៅ​ក្នុង​កម្មវិធី​ផ្សេង"
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr "សម្អាត​ទិន្នន័យ​ឯកជន"
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
-msgstr "លុប​ការ​កំណត់ និង​ប្រវត្តិ​ការ​រុករក​របស់​អ្នក​រួមបញ្ចូល​ទាំង​ខូគី និង​ពាក្យសម្ងាត់​ឬ ?"
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+#, fuzzy
+msgid "Don't save"
+msgstr "កុំ​ចែករំលែក"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -551,11 +374,6 @@ msgstr "មិន​ពិត"
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "ច្រើន​ទៀត"
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
@@ -569,6 +387,10 @@ msgstr "បើក​តំណ​ក្នុង​ផ្ទាំង​ថ្ម
 #: contextmenu.openInPrivateTab
 msgid "Open Link in Private Tab"
 msgstr "បើក​តំណ​នៅ​ក្នុង​ផ្ទាំង​ឯកជន"
+
+#: contextmenu.addToReadingList
+msgid "Add to Reading List"
+msgstr ""
 
 #: contextmenu.share
 msgctxt "contextmenu.share"
@@ -764,19 +586,18 @@ msgid "Could not download manifest"
 msgstr "មិន​អាច​ទាញ​យក​របាយការណ៍"
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+#, fuzzy
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr "%S មាន​មាតិកា​កម្មវិធី​ជំនួយ ។ តើ​អ្នក​ចង់​ចាក់​វា​ទេ ?"
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "បាទ/ចាស"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr "ធ្វើ​ឲ្យ​សកម្ម"
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "ទេ"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -787,9 +608,10 @@ msgstr "កុំ​សួរ​ម្ដងទៀត​សម្រាប់​
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr "ចាក់​កម្មវិធី​ជំនួយ"
+#: clickToPlayPlugins.activatePlugins
+#, fuzzy
+msgid "Activate Plugins"
+msgstr "ធ្វើ​ឲ្យ​កម្មវិធី​ជំនួយ​ទាំងអស់​សកម្ម"
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -851,7 +673,7 @@ msgid "Always"
 msgstr "ជានិច្ច"
 
 #: helperapps.never
-msgctxt "helperapps.never"
+#, fuzzy
 msgid "Never"
 msgstr "កុំ"
 
@@ -900,6 +722,183 @@ msgstr "បច្ចុប្បន្ន​អ្នក​កំពុង​ច
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr "បច្ចុប្បន្ន​អ្នក​កំពុង​ចែករំលែក​ម៉ាស៊ីន​ថត និង​មីក្រូហ្វូន​ជាមួយ %S ។"
+
+#~ msgid "Add-ons"
+#~ msgstr "កម្មវិធី​បន្ថែម"
+
+#~ msgid "Installing add-on"
+#~ msgstr "ដំឡើង​កម្មវិធី​បន្ថែម"
+
+#~ msgid "Installation complete. Restart required."
+#~ msgstr "បាន​បញ្ចប់​ការ​ដំឡើង ។ តម្រូវឲ្យ​ចាប់ផ្ដើម​ឡើងវិញ ។"
+
+#~ msgid "Add-ons updated. Restart to complete changes."
+#~ msgstr "បាន​ធ្វើ​បច្ចុប្បន្នភាព​កម្មវិធី​បន្ថែម ។ ចាប់ផ្ដើម​ឡើងវិញ​ដើម្បី​បញ្ចប់​ការ​ផ្លាស់ប្ដូរ ។"
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S បាន​រារាំង​តំបន់​បណ្ដាញ​នេះ​មិន​ឲ្យ​បើក​បង្អួច​លេចឡើង ។"
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "%S បាន​រារាំង​តំបន់​បណ្ដាញ​នេះ​មិន​ឲ្យ​បើក %S បង្អួច​លេចឡើង ។"
+
+#~ msgid "Always Show"
+#~ msgstr "បង្ហាញ​ជានិច្ច"
+
+#~ msgid "Never Show"
+#~ msgstr "កុំ​បង្ហាញ"
+
+#~ msgid "Send info to %1$S so that we can improve %2$S?"
+#~ msgstr "ផ្ញើ​ព័ត៌មាន​​ទៅ %1$S ដូច្នេះ​យើង​អាច​ធ្វើឲ្យ %2$S ប្រសើរ​ឡើង ?"
+
+#~ msgid "Learn more"
+#~ msgstr "ស្វែងយល់​បន្ថែម"
+
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "បាទ/ចាស"
+
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "ទេ"
+
+#~ msgid ""
+#~ "%1$S sends information about performance, hardware, usage and "
+#~ "customizations back to %2$S to help improve %3$S."
+#~ msgstr ""
+#~ "%1$S ផ្ញើ​ព័ត៌មាន​អំពី​ដំណើរការ​ផ្នែក​រឹង ការ​ប្រើប្រាស់ និង​ការ​ប្ដូរ​តាមបំណង​ត្រឡប់​ទៅកាន់ %2$S ដើម្បី​"
+#~ "ជួយ​ធ្វើឲ្យ %3$S ប្រសើរ​ឡើង ។"
+
+#~ msgid "OK"
+#~ msgstr "យល់ព្រម"
+
+#~ msgid "Always Share"
+#~ msgstr "ចែករំលែក​ជានិច្ច"
+
+#~ msgid "Never Share"
+#~ msgstr "កុំ​ចែករំលែក"
+
+#~ msgid "%S wants your location."
+#~ msgstr "%S ចង់បាន​ទីតាំង​របស់​អ្នក ។"
+
+#~ msgid "%S wants to use notifications."
+#~ msgstr "%S ចង់​ប្រើ​ការ​ជូនដំណឹង ។"
+
+#~ msgid "Error:"
+#~ msgstr "កំហុស ៖"
+
+#~ msgid "Warning:"
+#~ msgstr "ការ​ព្រមាន ៖"
+
+#~ msgctxt "offlineApps.never"
+#~ msgid "Don't Allow"
+#~ msgstr "មិន​អនុញ្ញាត"
+
+#~ msgid "Not Now"
+#~ msgstr "មិន​មែន​ឥឡូវ​នេះ​ទេ"
+
+#~ msgctxt "offlineApps.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "មិន​អនុញ្ញាត"
+
+#~ msgctxt "offlineApps.wantsTo"
+#~ msgid "%S wants to store data on your device for offline use."
+#~ msgstr "%S ចង់​ផ្ទុក​ទិន្នន័យ​នៅ​លើ​ឧបករណ៍​របស់​អ្នក​សម្រាប់​ការ​ប្រើ​កៅ​បណ្ដាញ ។"
+
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "អនុញ្ញាត"
+
+#~ msgctxt "indexedDBQuota.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "មិន​អនុញ្ញាត"
+
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "អនុញ្ញាត"
+
+#~ msgctxt "openWebappsManage.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "មិន​អនុញ្ញាត"
+
+#~ msgid "%S wants to manage applications on your device."
+#~ msgstr "%S ចង់​គ្រប់គ្រង​កម្មវិធី​នៅ​លើ​ឧបករណ៍​របស់​អ្នក ។"
+
+#~ msgid "Remember Password"
+#~ msgstr "ចងចាំ​ពាក្យសម្ងាត់"
+
+#~ msgid "Remember"
+#~ msgstr "ចងចាំ"
+
+#~ msgid "Desktop Bookmarks"
+#~ msgstr "ចំណាំ​ផ្ទៃតុ"
+
+#~ msgid "Confirm close"
+#~ msgstr "អះអាង​កូដ"
+
+#~ msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#~ msgstr "មិន​បាន​ប្រើ អ្នក​ហៀបនឹង​បិទ #1 ផ្ទាំង ។ បន្ត​ទៀត​ឬ ?"
+
+#~ msgid "Close tabs"
+#~ msgstr "បិទ​ផ្ទាំង"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "ព្រមាន​ខ្ញុំ នៅ​ពេល​អ្នក​ខ្ញុំ​ប៉ុនប៉ង​បិទ​ផ្ទាំង​ច្រើន ។"
+
+#~ msgid "Sorry!"
+#~ msgstr "សុំទោស !"
+
+#~ msgid "Something went wrong while displaying a web page."
+#~ msgstr "មាន​អ្វី​ម្យ៉ាង​ខុស​ប្រក្រតី នៅ​ពេល​បង្ហាញ​ទំព័រ​បណ្ដាញ ។"
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "ផ្ញើ​របាយការណ៍​គាំង​ទៅ Mozilla"
+
+#~ msgid "Close tab"
+#~ msgstr "បិទ​ផ្ទាំង"
+
+#~ msgid "Reload tab"
+#~ msgstr "ផ្ទុក​ផ្ទាំង​ឡើងវិញ"
+
+#~ msgid "Custom Page"
+#~ msgstr "ទំព័រ​ផ្ទាល់ខ្លួន"
+
+#~ msgid "Search With:"
+#~ msgstr "ស្វែងរក​ជាមួយ ៖"
+
+#~ msgid "Search for \"%S\""
+#~ msgstr "ស្វែងរក \"%S\""
+
+#~ msgid "Open in %S App"
+#~ msgstr "បើក​នៅ​ក្នុង​កម្មវិធី %S"
+
+#~ msgid "Open in Another App"
+#~ msgstr "បើក​នៅ​ក្នុង​កម្មវិធី​ផ្សេង"
+
+#~ msgid "Clear Private Data"
+#~ msgstr "សម្អាត​ទិន្នន័យ​ឯកជន"
+
+#~ msgid ""
+#~ "Delete your browsing history and settings, including passwords and "
+#~ "cookies?"
+#~ msgstr "លុប​ការ​កំណត់ និង​ប្រវត្តិ​ការ​រុករក​របស់​អ្នក​រួមបញ្ចូល​ទាំង​ខូគី និង​ពាក្យសម្ងាត់​ឬ ?"
+
+#~ msgid "More"
+#~ msgstr "ច្រើន​ទៀត"
+
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "បាទ/ចាស"
+
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "ទេ"
+
+#~ msgid "Play Plugins"
+#~ msgstr "ចាក់​កម្មវិធី​ជំនួយ"
+
+#~ msgctxt "helperapps.never"
+#~ msgid "Never"
+#~ msgstr "កុំ"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "ស្បែក​ថ្មី​ត្រូវ​បាន​ដំឡើង ។"
@@ -1109,9 +1108,6 @@ msgstr "បច្ចុប្បន្ន​អ្នក​កំពុង​ច
 #~ msgid "Would you like to activate the plugins on this page?"
 #~ msgstr "តើ​អ្នក​ចង់ឲ្យ​កម្មវិធី​ជំនួយ​សកម្ម​នៅ​លើ​ទំព័រ​នេះ​ដែរ​ឬទេ?"
 
-#~ msgid "Activate All Plugins"
-#~ msgstr "ធ្វើ​ឲ្យ​កម្មវិធី​ជំនួយ​ទាំងអស់​សកម្ម"
-
 #~ msgctxt "activatePluginsMessage.accesskey"
 #~ msgid "A"
 #~ msgstr "ធ"
@@ -1130,9 +1126,6 @@ msgstr "បច្ចុប្បន្ន​អ្នក​កំពុង​ច
 #~ "accesskey"
 #~ msgid "N"
 #~ msgstr "ក"
-
-#~ msgid "Activate"
-#~ msgstr "ធ្វើ​ឲ្យ​សកម្ម"
 
 #~ msgid "Click here to activate the %S plugin."
 #~ msgstr "ចុច​ទីនេះ ដើម្បី​ធ្វើ​ឲ្យ​កម្មវិធី​ជំនួយ %S សកម្ម។"

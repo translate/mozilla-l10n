@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-05-22 14:30+0100\n"
 "PO-Revision-Date: 2012-06-25 00:02+0200\n"
 "Last-Translator: Mohomodou  <mh@bollag-areal.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1340575360.0\n"
@@ -29,21 +29,9 @@ msgid "Install"
 msgstr "Sinji"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "Tontoney"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "Tontoni zumandiyan"
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "Tontoni sinjiyan"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
-msgstr "Sinjiyanoo timme. Tunandi taaga ga waažibi."
 
 #: alertAddonsInstalledNoRestart
 msgid "Installation complete"
@@ -157,10 +145,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr "Tunandi taaga ka war barmawey timmandi."
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr "Tontontey taagandi. Tunandi taaga ka barmawey timmandi."
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr "Tontoni kaŋyaŋ ši nda naanay. Tunandi taaga k'a wii."
@@ -170,25 +154,28 @@ msgid "Restart"
 msgstr "Tunandi taaga"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S na nungoo woo ganji a ma biiboŋ bata zanfun feeri."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S na nungoo woo ganji a ma %S biiboŋ bata zanfuney feeri."
+#: popup.dontAskAgain
+#, fuzzy
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Ma ši hãa koyne nungoo woo še"
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "Cebe"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr "Cebe waati kul"
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
-msgstr "Ma ši cebe abada"
+#: popup.dontShow
+msgid "Don't show"
+msgstr ""
 
 #. # SafeBrowsing
 #: safeBrowsingDoorhanger
@@ -202,40 +189,6 @@ msgstr ""
 #: blockPopups.label
 msgid "Block Popups"
 msgstr "Biiboŋ bata gagay"
-
-#. # Telemetry
-#. # %1$S = server owner (Mozilla); %2$S = product name (Firefox)
-#: telemetry.optin.message2
-msgid "Send info to %1$S so that we can improve %2$S?"
-msgstr "Alhabar sanba %1$S do k'ir faaba ka %2$S boryandi ka tonton?"
-
-#: telemetry.optin.learnMore
-msgid "Learn more"
-msgstr "Ka bay ka tonton"
-
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "Ayyo"
-
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "Kalaa"
-
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
-#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-"%1$S ga alhabar williandi teeyan sahã, jinay šenda alhaali, goyyan nda boŋše "
-"hanseyan misey ra %2$S feršikaa do ka faaba ka %3$S boryandi ka tonton."
-
-#: telemetry.optout.ok
-msgid "OK"
-msgstr "Ayyo"
 
 #. # XPInstall
 #: xpinstallPromptWarning2
@@ -299,17 +252,9 @@ msgstr "Žemna"
 msgid "Don't share"
 msgstr "Ma ši žemna"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr "Žemna waati kul"
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr "Ši žemna abada"
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
-msgstr "%S ga boona war gorodogoo."
+#: geolocation.ask
+msgid "Share your location with %S?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
 #. # site settings dialog.
@@ -331,12 +276,14 @@ msgid "Allow"
 msgstr "Noo fondo"
 
 #: desktopNotification.dontAllow
+#, fuzzy
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr "Ma ši noo fondo"
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
-msgstr "%S ga baa ka goy nda bangandiyaney."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
 #. # used in site settings dialog.
@@ -352,7 +299,7 @@ msgid "Don't ask again for this site"
 msgstr "Ma ši hãa koyne nungoo woo še"
 
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
@@ -363,34 +310,28 @@ msgstr "Nor loku taaga feerante; nor loku taaga feerante #1"
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "Firka:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "Yaamar:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+#, fuzzy
+msgid "Allow %S to store data on your device for offline use?"
 msgstr "%S ga boona ka bayhayey jiši war jinaa ga bila nda ciyari goy še."
+
+#: offlineApps.dontAskAgain
+#, fuzzy
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Ma ši hãa koyne nungoo woo še"
 
 #: offlineApps.allow
 msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "Noo fondo"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+#, fuzzy
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr "Ma ši noo fondo"
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "Manti sohõ"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -398,152 +339,30 @@ msgstr "Manti sohõ"
 msgid "Store Offline Data"
 msgstr "Bila nda ciyari bayhaya jišiyan"
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr "Ma ši noo fondo"
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr "%S ga boona ka bayhayey jiši war jinaa ga bila nda ciyari goy še."
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "Noo fondo"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr "Ma ši noo fondo"
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 "%S ga boona ka bayhayey boobo jiši war jinaa ga bila nda ciyari goy še."
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "Noo fondo"
-
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr "Ma ši noo fondo"
-
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr "%S ga boona ka porogaramey juwal war jinaa ga."
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "Honga šennikufal"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "Hongu"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-#, fuzzy
-msgctxt "password.never"
-msgid "Never"
-msgstr "Abada"
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr "Goytaabal doo-šilbawey"
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "Daaburoo tabatandi"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr "NOT USED;War ga sooluu ka nor loku #1 daabu? Koy jine?"
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "Nor lokey daabu"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "Ay yaamar nd'ay ga baa ka nor loku booboyaŋ daabu"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr "Alhaa naŋ!"
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr "Haya laala foo bangay waati kaŋ Interneti moo foo ga cebe."
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "Kaŋyan bayrandi sanba Mozilla še"
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "Nor lokoo daabu"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "Nor lokoo dam taaga"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr "Moo kaŋ hanse war boŋ še"
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "Ceeci nda:"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr "\"%S\" ceeci"
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr "Feeri nda %S"
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr "Feeri porogaram tana foo ra"
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr "Sutura bayhayey tuusu"
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+msgid "Save Password"
 msgstr ""
-"War ceeciyan taariki nda kayandiyaney tuusu, nda šennikufaley nda aleewawey "
-"da?"
+
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
+msgstr ""
+
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+#, fuzzy
+msgid "Don't save"
+msgstr "Ma ši žemna"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -561,11 +380,6 @@ msgstr "taari"
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "Ka tonton"
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
@@ -579,6 +393,10 @@ msgstr "Doboo feeri nor loku taaga ra"
 #: contextmenu.openInPrivateTab
 msgid "Open Link in Private Tab"
 msgstr ""
+
+#: contextmenu.addToReadingList
+msgid "Add to Reading List"
+msgstr "Tonton caw maašeedaa ga"
 
 #: contextmenu.share
 #, fuzzy
@@ -645,7 +463,7 @@ msgstr "Ceecijinay tonton"
 
 #: contextmenu.playMedia
 msgid "Play"
-msgstr ""
+msgstr "Hẽenandi"
 
 #: contextmenu.pauseMedia
 msgid "Pause"
@@ -779,19 +597,18 @@ msgid "Could not download manifest"
 msgstr ""
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+#, fuzzy
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr "%S goo nda sukari gundekuna. War ga baa k'a hẽenandi?"
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "Ayyo"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr ""
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "Kalaa"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -802,9 +619,10 @@ msgstr "Ma ši hãa koyne nungoo woo še"
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr "Sukarey hẽenandi"
+#: clickToPlayPlugins.activatePlugins
+#, fuzzy
+msgid "Activate Plugins"
+msgstr "Ciyari goyantey"
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -870,7 +688,6 @@ msgstr ""
 
 #: helperapps.never
 #, fuzzy
-msgctxt "helperapps.never"
 msgid "Never"
 msgstr "Abada"
 
@@ -924,6 +741,187 @@ msgstr ""
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr ""
+
+#~ msgid "Add-ons"
+#~ msgstr "Tontoney"
+
+#~ msgid "Installing add-on"
+#~ msgstr "Tontoni sinjiyan"
+
+#~ msgid "Installation complete. Restart required."
+#~ msgstr "Sinjiyanoo timme. Tunandi taaga ga waažibi."
+
+#~ msgid "Add-ons updated. Restart to complete changes."
+#~ msgstr "Tontontey taagandi. Tunandi taaga ka barmawey timmandi."
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S na nungoo woo ganji a ma biiboŋ bata zanfun feeri."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "%S na nungoo woo ganji a ma %S biiboŋ bata zanfuney feeri."
+
+#~ msgid "Always Show"
+#~ msgstr "Cebe waati kul"
+
+#~ msgid "Never Show"
+#~ msgstr "Ma ši cebe abada"
+
+#~ msgid "Send info to %1$S so that we can improve %2$S?"
+#~ msgstr "Alhabar sanba %1$S do k'ir faaba ka %2$S boryandi ka tonton?"
+
+#~ msgid "Learn more"
+#~ msgstr "Ka bay ka tonton"
+
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "Ayyo"
+
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "Kalaa"
+
+#~ msgid ""
+#~ "%1$S sends information about performance, hardware, usage and "
+#~ "customizations back to %2$S to help improve %3$S."
+#~ msgstr ""
+#~ "%1$S ga alhabar williandi teeyan sahã, jinay šenda alhaali, goyyan nda "
+#~ "boŋše hanseyan misey ra %2$S feršikaa do ka faaba ka %3$S boryandi ka "
+#~ "tonton."
+
+#~ msgid "OK"
+#~ msgstr "Ayyo"
+
+#~ msgid "Always Share"
+#~ msgstr "Žemna waati kul"
+
+#~ msgid "Never Share"
+#~ msgstr "Ši žemna abada"
+
+#~ msgid "%S wants your location."
+#~ msgstr "%S ga boona war gorodogoo."
+
+#~ msgid "%S wants to use notifications."
+#~ msgstr "%S ga baa ka goy nda bangandiyaney."
+
+#~ msgid "Error:"
+#~ msgstr "Firka:"
+
+#~ msgid "Warning:"
+#~ msgstr "Yaamar:"
+
+#~ msgctxt "offlineApps.never"
+#~ msgid "Don't Allow"
+#~ msgstr "Ma ši noo fondo"
+
+#~ msgid "Not Now"
+#~ msgstr "Manti sohõ"
+
+#~ msgctxt "offlineApps.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Ma ši noo fondo"
+
+#~ msgctxt "offlineApps.wantsTo"
+#~ msgid "%S wants to store data on your device for offline use."
+#~ msgstr "%S ga boona ka bayhayey jiši war jinaa ga bila nda ciyari goy še."
+
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "Noo fondo"
+
+#~ msgctxt "indexedDBQuota.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Ma ši noo fondo"
+
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "Noo fondo"
+
+#~ msgctxt "openWebappsManage.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Ma ši noo fondo"
+
+#~ msgid "%S wants to manage applications on your device."
+#~ msgstr "%S ga boona ka porogaramey juwal war jinaa ga."
+
+#~ msgid "Remember Password"
+#~ msgstr "Honga šennikufal"
+
+#~ msgid "Remember"
+#~ msgstr "Hongu"
+
+#~ msgid "Desktop Bookmarks"
+#~ msgstr "Goytaabal doo-šilbawey"
+
+#~ msgid "Confirm close"
+#~ msgstr "Daaburoo tabatandi"
+
+#~ msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#~ msgstr "NOT USED;War ga sooluu ka nor loku #1 daabu? Koy jine?"
+
+#~ msgid "Close tabs"
+#~ msgstr "Nor lokey daabu"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "Ay yaamar nd'ay ga baa ka nor loku booboyaŋ daabu"
+
+#~ msgid "Sorry!"
+#~ msgstr "Alhaa naŋ!"
+
+#~ msgid "Something went wrong while displaying a web page."
+#~ msgstr "Haya laala foo bangay waati kaŋ Interneti moo foo ga cebe."
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "Kaŋyan bayrandi sanba Mozilla še"
+
+#~ msgid "Close tab"
+#~ msgstr "Nor lokoo daabu"
+
+#~ msgid "Reload tab"
+#~ msgstr "Nor lokoo dam taaga"
+
+#~ msgid "Custom Page"
+#~ msgstr "Moo kaŋ hanse war boŋ še"
+
+#~ msgid "Search With:"
+#~ msgstr "Ceeci nda:"
+
+#~ msgid "Search for \"%S\""
+#~ msgstr "\"%S\" ceeci"
+
+#~ msgid "Open in %S App"
+#~ msgstr "Feeri nda %S"
+
+#~ msgid "Open in Another App"
+#~ msgstr "Feeri porogaram tana foo ra"
+
+#~ msgid "Clear Private Data"
+#~ msgstr "Sutura bayhayey tuusu"
+
+#~ msgid ""
+#~ "Delete your browsing history and settings, including passwords and "
+#~ "cookies?"
+#~ msgstr ""
+#~ "War ceeciyan taariki nda kayandiyaney tuusu, nda šennikufaley nda "
+#~ "aleewawey da?"
+
+#~ msgid "More"
+#~ msgstr "Ka tonton"
+
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "Ayyo"
+
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "Kalaa"
+
+#~ msgid "Play Plugins"
+#~ msgstr "Sukarey hẽenandi"
+
+#, fuzzy
+#~ msgctxt "helperapps.never"
+#~ msgid "Never"
+#~ msgstr "Abada"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "Furari taaga sinjandi."

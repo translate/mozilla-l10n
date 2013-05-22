@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/mobile/android/chrome/browser.properties
+#. extracted from ./mobile/android/chrome/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-05-22 14:30+0100\n"
 "PO-Revision-Date: 2012-12-24 05:47+0000\n"
 "Last-Translator: syafiqmazli <creativeneuron8@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1356328027.0\n"
@@ -30,22 +30,8 @@ msgid "Install"
 msgstr "Instalasi"
 
 #. # Alerts
-#: alertAddons
-#, fuzzy
-msgid "Add-ons"
-msgstr "&Add-ons"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
-msgstr ""
-
-#: alertAddonsInstalling
-#, fuzzy
-msgid "Installing add-on"
-msgstr "Memasang Add-on"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
 msgstr ""
 
 #: alertAddonsInstalledNoRestart
@@ -171,10 +157,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr ""
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr ""
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr ""
@@ -184,25 +166,27 @@ msgid "Restart"
 msgstr "Muat semula"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S dihalang untuk laman ini daripada membuka tetingkap pop-up."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S menghalang untuk laman ini daripada membuka %S tetingkap pop-up."
+#: popup.dontAskAgain
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr ""
 
-#: popupButtonAllowOnce
+#: popup.show
 #, fuzzy
 msgid "Show"
 msgstr "Tunjuk:"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr ""
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
+#: popup.dontShow
+msgid "Don't show"
 msgstr ""
 
 #. # SafeBrowsing
@@ -217,43 +201,6 @@ msgstr ""
 #: blockPopups.label
 msgid "Block Popups"
 msgstr ""
-
-#. # Telemetry
-#. # %1$S = server owner (Mozilla); %2$S = product name (Firefox)
-#: telemetry.optin.message2
-msgid "Send info to %1$S so that we can improve %2$S?"
-msgstr ""
-
-#: telemetry.optin.learnMore
-#, fuzzy
-msgid "Learn more"
-msgstr "Ketahui lebih Lanjut"
-
-#: telemetry.optin.yes
-#, fuzzy
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "Ya"
-
-#: telemetry.optin.no
-#, fuzzy
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "Tidak"
-
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
-#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-"%1$S menghantar informasi mengenai prestasi, perkakasan, penggunaan dan "
-"penyesuaian kembali pada %2$S untuk membantu lebih baik %3$S."
-
-#: telemetry.optout.ok
-msgid "OK"
-msgstr "OK"
 
 #. # XPInstall
 #: xpinstallPromptWarning2
@@ -326,16 +273,8 @@ msgstr ""
 msgid "Don't share"
 msgstr "Jangan Kongsi"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr ""
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr ""
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
+#: geolocation.ask
+msgid "Share your location with %S?"
 msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
@@ -359,11 +298,12 @@ msgid "Allow"
 msgstr "Benarkan"
 
 #: desktopNotification.dontAllow
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr ""
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
 msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
@@ -381,7 +321,7 @@ msgid "Don't ask again for this site"
 msgstr ""
 
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
@@ -392,19 +332,14 @@ msgstr ""
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "Ralat:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "Amaran:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+msgid "Allow %S to store data on your device for offline use?"
+msgstr ""
+
+#: offlineApps.dontAskAgain
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
 msgstr ""
 
 #: offlineApps.allow
@@ -412,14 +347,10 @@ msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "Benarkan"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr ""
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "Bukan Sekarang"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -427,156 +358,30 @@ msgstr "Bukan Sekarang"
 msgid "Store Offline Data"
 msgstr ""
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr ""
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-#, fuzzy
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "Benarkan"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
 #, fuzzy
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "Benarkan"
+msgid "Save Password"
+msgstr "Kata laluan Disimpan"
 
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
 msgstr ""
 
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr ""
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "Ingat Kata Laluan"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
 #, fuzzy
-msgid "Remember"
-msgstr "Ingat"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr ""
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr ""
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "Memastikan penutupan"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr ""
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "Tutup kesemua tab"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr ""
-"Memberi amaran kepada saya apabila saya cuba untuk menutup beberapa tab "
-"sekali gus"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr ""
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr ""
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr ""
-
-#: tabs.crashClose
-#, fuzzy
-msgid "Close tab"
-msgstr "Tutup kesemua tab"
-
-#: tabs.crashReload
-#, fuzzy
-msgid "Reload tab"
-msgstr "Memuat semula tab"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr ""
-
-#. # Open Search
-#: opensearch.searchWith
-#, fuzzy
-msgid "Search With:"
-msgstr "Laman Carian"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr ""
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr ""
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr ""
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr ""
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
-msgstr ""
+msgid "Don't save"
+msgstr "Jangan Kongsi"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -594,11 +399,6 @@ msgstr "Tidak benar"
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr ""
 
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "Lebih banyak"
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
@@ -612,6 +412,10 @@ msgstr "Buka Pautan dalam Tab Baru"
 
 #: contextmenu.openInPrivateTab
 msgid "Open Link in Private Tab"
+msgstr ""
+
+#: contextmenu.addToReadingList
+msgid "Add to Reading List"
 msgstr ""
 
 #: contextmenu.share
@@ -814,21 +618,17 @@ msgid "Could not download manifest"
 msgstr ""
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr ""
 
-#: clickToPlayPlugins.yes
-#, fuzzy
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "Ya"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr "Aktifkan"
 
-#: clickToPlayPlugins.no
-#, fuzzy
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "Tidak"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -839,9 +639,10 @@ msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr ""
+#: clickToPlayPlugins.activatePlugins
+#, fuzzy
+msgid "Activate Plugins"
+msgstr "Aktifkan Semua Plugin"
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -905,7 +706,6 @@ msgid "Always"
 msgstr ""
 
 #: helperapps.never
-msgctxt "helperapps.never"
 msgid "Never"
 msgstr ""
 
@@ -955,6 +755,106 @@ msgstr ""
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Add-ons"
+#~ msgstr "&Add-ons"
+
+#, fuzzy
+#~ msgid "Installing add-on"
+#~ msgstr "Memasang Add-on"
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S dihalang untuk laman ini daripada membuka tetingkap pop-up."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "%S menghalang untuk laman ini daripada membuka %S tetingkap pop-up."
+
+#, fuzzy
+#~ msgid "Learn more"
+#~ msgstr "Ketahui lebih Lanjut"
+
+#, fuzzy
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "Ya"
+
+#, fuzzy
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "Tidak"
+
+#~ msgid ""
+#~ "%1$S sends information about performance, hardware, usage and "
+#~ "customizations back to %2$S to help improve %3$S."
+#~ msgstr ""
+#~ "%1$S menghantar informasi mengenai prestasi, perkakasan, penggunaan dan "
+#~ "penyesuaian kembali pada %2$S untuk membantu lebih baik %3$S."
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Error:"
+#~ msgstr "Ralat:"
+
+#~ msgid "Warning:"
+#~ msgstr "Amaran:"
+
+#~ msgid "Not Now"
+#~ msgstr "Bukan Sekarang"
+
+#, fuzzy
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "Benarkan"
+
+#, fuzzy
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "Benarkan"
+
+#~ msgid "Remember Password"
+#~ msgstr "Ingat Kata Laluan"
+
+#, fuzzy
+#~ msgid "Remember"
+#~ msgstr "Ingat"
+
+#~ msgid "Confirm close"
+#~ msgstr "Memastikan penutupan"
+
+#~ msgid "Close tabs"
+#~ msgstr "Tutup kesemua tab"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr ""
+#~ "Memberi amaran kepada saya apabila saya cuba untuk menutup beberapa tab "
+#~ "sekali gus"
+
+#, fuzzy
+#~ msgid "Close tab"
+#~ msgstr "Tutup kesemua tab"
+
+#, fuzzy
+#~ msgid "Reload tab"
+#~ msgstr "Memuat semula tab"
+
+#, fuzzy
+#~ msgid "Search With:"
+#~ msgstr "Laman Carian"
+
+#~ msgid "More"
+#~ msgstr "Lebih banyak"
+
+#, fuzzy
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "Ya"
+
+#, fuzzy
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "Tidak"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "Sebuah tema baru sudah dipasang."
@@ -1168,9 +1068,6 @@ msgstr ""
 #~ msgid "Would you like to activate the plugins on this page?"
 #~ msgstr "Anda ingin untuk mengaktifkan plugin pada halaman ini?"
 
-#~ msgid "Activate All Plugins"
-#~ msgstr "Aktifkan Semua Plugin"
-
 #~ msgctxt "activatePluginsMessage.accesskey"
 #~ msgid "A"
 #~ msgstr "A"
@@ -1190,9 +1087,6 @@ msgstr ""
 #~ "never.accesskey"
 #~ msgid "N"
 #~ msgstr "N"
-
-#~ msgid "Activate"
-#~ msgstr "Aktifkan"
 
 #~ msgid "Click here to activate the %S plugin."
 #~ msgstr "Klik sini untuk mengaktifkan plugin %S."
