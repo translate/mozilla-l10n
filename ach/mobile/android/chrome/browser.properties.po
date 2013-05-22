@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/mobile/android/chrome/browser.properties
+#. extracted from ./mobile/android/chrome/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-05-22 14:30+0100\n"
 "PO-Revision-Date: 2012-08-17 09:06+0000\n"
 "Last-Translator: George Patrick <chanchumgpa@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1345194400.0\n"
@@ -29,21 +29,9 @@ msgid "Install"
 msgstr "Ket"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "Lamed-ikome"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "Golo lamed-ikome"
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "Keto lamed- ikome"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
-msgstr "Keto otyeko. mito ni i cak nitit."
 
 #: alertAddonsInstalledNoRestart
 msgid "Installation complete"
@@ -177,10 +165,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr "Cak nitit me tyeko aloka loka."
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr "Ki mino ngec me lamed-ikome. Cak nitit me tyeko aloka loka."
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr "Kiketo lamed-ikome ma pe ogwoke kakare. Cak nitit we i juk woko."
@@ -190,25 +174,28 @@ msgid "Restart"
 msgstr "Cak nitit"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S Otyeko gengo di bar man ki yabo Dirija mapye iwiye."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S Otyeko gengo di bar man ki yabo %S Dirija mapye iwiye."
+#: popup.dontAskAgain
+#, fuzzy
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Pe i peny dok pi dyer bar man"
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "Nyuti"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr "Nyut jwijwi"
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
-msgstr "Pe i nyut matwal"
+#: popup.dontShow
+msgid "Don't show"
+msgstr ""
 
 #. # SafeBrowsing
 #: safeBrowsingDoorhanger
@@ -222,40 +209,6 @@ msgstr ""
 #: blockPopups.label
 msgid "Block Popups"
 msgstr "Geng gin mapye"
-
-#. # Telemetry
-#. # %1$S = server owner (Mozilla); %2$S = product name (Firefox)
-#: telemetry.optin.message2
-msgid "Send info to %1$S so that we can improve %2$S?"
-msgstr "Cwal ngec bot %1$S wek wa yub %2$S?"
-
-#: telemetry.optin.learnMore
-msgid "Learn more"
-msgstr "Nong ngec mapol"
-
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "Eyo"
-
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "Ku//Pe"
-
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
-#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-"%1$S cwal ngec ikom kit matiyo kwede, nyonyo, tice ki ketone mamegi cen bot "
-"%2$S pi konyo yiko %3$S."
-
-#: telemetry.optout.ok
-msgid "OK"
-msgstr ""
 
 #. # XPInstall
 #: xpinstallPromptWarning2
@@ -320,17 +273,9 @@ msgstr "Nywak"
 msgid "Don't share"
 msgstr "Pe I nywak"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr "Nywak Pol kare"
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr "Pe I nywak"
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
-msgstr "%S mito kabedo pari."
+#: geolocation.ask
+msgid "Share your location with %S?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
 #. # site settings dialog.
@@ -353,12 +298,14 @@ msgid "Allow"
 msgstr "Weki"
 
 #: desktopNotification.dontAllow
+#, fuzzy
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr "Pe i wek"
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
-msgstr "%S mito tic ki mino ngec."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
 #. # used in site settings dialog.
@@ -375,7 +322,7 @@ msgid "Don't ask again for this site"
 msgstr "Pe i peny dok pi dyer bar man"
 
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
@@ -386,34 +333,28 @@ msgstr "Kiyabo tab manyen;#1 kiyabo tab manyen"
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "Bal:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "Cik:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+#, fuzzy
+msgid "Allow %S to store data on your device for offline use?"
 msgstr "%S mito gwoko tic ikom nyonyo mamegi pi tic ma ipe iwi yamo."
+
+#: offlineApps.dontAskAgain
+#, fuzzy
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Pe i peny dok pi dyer bar man"
 
 #: offlineApps.allow
 msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "Wek"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
-msgstr "Pe I wek"
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "Pe kombedi"
+#: offlineApps.dontAllow2
+#, fuzzy
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
+msgstr "Pe i wek"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -421,150 +362,29 @@ msgstr "Pe kombedi"
 msgid "Store Offline Data"
 msgstr "Gwok Tic mape iwiyamo"
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr "Pe I wek"
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr "%S mito gwoko tic i kom nyonyo mamegi pi tic ma pe iwi yamo."
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "Weki"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr "Pe I wek"
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr "%S mito gwoko lwak tic i kom nyonyo mamegi pi tic ma pe iwi yamo."
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "Weki"
-
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr "Pe I wek"
-
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr "%S mito lono teko pa purugram i kom nyonyo mamegi."
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "Poyo I cwil me dony"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "Poyo"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-#, fuzzy
-msgctxt "password.never"
-msgid "Never"
-msgstr "Pe"
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr "Alama buk me Cal ma i kompiuta"
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "Mok Cego"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr "NOT USED; I cok dong ki cego tab me #1. Mede anyim?"
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "Ceg tab"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "Cika ka atemo me cego tab mapol"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr "Akwayo kica!"
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr "Gin mo obedo marac kun yaro pot buk me web."
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "Cwal ngec me poto atura bot Mozilla"
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "Ceg tab"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "pang Tab nitit"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr "Pot buk pari"
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "Yeny Kwede:"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr "Yeny pi \"%S\""
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr "Yab i Tic me %S"
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr "Yab i Tic mukene"
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr "Ywe woko Tic pa Dano"
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+msgid "Save Password"
 msgstr ""
-"Jwa layeny mamegi mukato ki tero, medo ie ki i cwil me donyo ki Layeny?"
+
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
+msgstr ""
+
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+#, fuzzy
+msgid "Don't save"
+msgstr "Pe I nywak"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -582,11 +402,6 @@ msgstr "goba"
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr "iso-8859-1,utf-8,x-gbk,big5,iso-2022-jp,shift_jis,euc-jp"
 
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "Mukene"
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
@@ -600,6 +415,10 @@ msgstr "Yab kakube i Lanyik manyen"
 #: contextmenu.openInPrivateTab
 msgid "Open Link in Private Tab"
 msgstr ""
+
+#: contextmenu.addToReadingList
+msgid "Add to Reading List"
+msgstr "Med ikom Nying jami me akwana"
 
 #: contextmenu.share
 #, fuzzy
@@ -677,8 +496,9 @@ msgid "Share Video"
 msgstr "Nywak Video"
 
 #: contextmenu.showControls2
+#, fuzzy
 msgid "Show Controls"
-msgstr ""
+msgstr "Nyut &Gengo"
 
 #: contextmenu.saveVideo
 #, fuzzy
@@ -805,19 +625,18 @@ msgid "Could not download manifest"
 msgstr ""
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+#, fuzzy
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr "%S tye ki rwak ie tye ki jami manonge iye. Onyo ce imito tuku ne?"
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "Eyo"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr ""
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "Ku//Pe"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -829,9 +648,10 @@ msgstr "Pe i peny dok pi dyer bar man"
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr "Tuk Rwako iyie"
+#: clickToPlayPlugins.activatePlugins
+#, fuzzy
+msgid "Activate Plugins"
+msgstr "Tye ka tic Dony iyie"
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -869,7 +689,7 @@ msgstr "Kijuko woko"
 #. # Helper apps
 #: helperapps.open
 msgid "Open"
-msgstr ""
+msgstr "Yab"
 
 #: helperapps.ignore
 msgid "Ignore"
@@ -897,7 +717,6 @@ msgstr ""
 
 #: helperapps.never
 #, fuzzy
-msgctxt "helperapps.never"
 msgid "Never"
 msgstr "Pe"
 
@@ -952,6 +771,182 @@ msgstr ""
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr ""
+
+#~ msgid "Add-ons"
+#~ msgstr "Lamed-ikome"
+
+#~ msgid "Installing add-on"
+#~ msgstr "Keto lamed- ikome"
+
+#~ msgid "Installation complete. Restart required."
+#~ msgstr "Keto otyeko. mito ni i cak nitit."
+
+#~ msgid "Add-ons updated. Restart to complete changes."
+#~ msgstr "Ki mino ngec me lamed-ikome. Cak nitit me tyeko aloka loka."
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S Otyeko gengo di bar man ki yabo Dirija mapye iwiye."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "%S Otyeko gengo di bar man ki yabo %S Dirija mapye iwiye."
+
+#~ msgid "Always Show"
+#~ msgstr "Nyut jwijwi"
+
+#~ msgid "Never Show"
+#~ msgstr "Pe i nyut matwal"
+
+#~ msgid "Send info to %1$S so that we can improve %2$S?"
+#~ msgstr "Cwal ngec bot %1$S wek wa yub %2$S?"
+
+#~ msgid "Learn more"
+#~ msgstr "Nong ngec mapol"
+
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "Eyo"
+
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "Ku//Pe"
+
+#~ msgid ""
+#~ "%1$S sends information about performance, hardware, usage and "
+#~ "customizations back to %2$S to help improve %3$S."
+#~ msgstr ""
+#~ "%1$S cwal ngec ikom kit matiyo kwede, nyonyo, tice ki ketone mamegi cen "
+#~ "bot %2$S pi konyo yiko %3$S."
+
+#~ msgid "Always Share"
+#~ msgstr "Nywak Pol kare"
+
+#~ msgid "Never Share"
+#~ msgstr "Pe I nywak"
+
+#~ msgid "%S wants your location."
+#~ msgstr "%S mito kabedo pari."
+
+#~ msgid "%S wants to use notifications."
+#~ msgstr "%S mito tic ki mino ngec."
+
+#~ msgid "Error:"
+#~ msgstr "Bal:"
+
+#~ msgid "Warning:"
+#~ msgstr "Cik:"
+
+#~ msgctxt "offlineApps.never"
+#~ msgid "Don't Allow"
+#~ msgstr "Pe I wek"
+
+#~ msgid "Not Now"
+#~ msgstr "Pe kombedi"
+
+#~ msgctxt "offlineApps.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Pe I wek"
+
+#~ msgctxt "offlineApps.wantsTo"
+#~ msgid "%S wants to store data on your device for offline use."
+#~ msgstr "%S mito gwoko tic i kom nyonyo mamegi pi tic ma pe iwi yamo."
+
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "Weki"
+
+#~ msgctxt "indexedDBQuota.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Pe I wek"
+
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "Weki"
+
+#~ msgctxt "openWebappsManage.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Pe I wek"
+
+#~ msgid "%S wants to manage applications on your device."
+#~ msgstr "%S mito lono teko pa purugram i kom nyonyo mamegi."
+
+#~ msgid "Remember Password"
+#~ msgstr "Poyo I cwil me dony"
+
+#~ msgid "Remember"
+#~ msgstr "Poyo"
+
+#~ msgid "Desktop Bookmarks"
+#~ msgstr "Alama buk me Cal ma i kompiuta"
+
+#~ msgid "Confirm close"
+#~ msgstr "Mok Cego"
+
+#~ msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#~ msgstr "NOT USED; I cok dong ki cego tab me #1. Mede anyim?"
+
+#~ msgid "Close tabs"
+#~ msgstr "Ceg tab"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "Cika ka atemo me cego tab mapol"
+
+#~ msgid "Sorry!"
+#~ msgstr "Akwayo kica!"
+
+#~ msgid "Something went wrong while displaying a web page."
+#~ msgstr "Gin mo obedo marac kun yaro pot buk me web."
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "Cwal ngec me poto atura bot Mozilla"
+
+#~ msgid "Close tab"
+#~ msgstr "Ceg tab"
+
+#~ msgid "Reload tab"
+#~ msgstr "pang Tab nitit"
+
+#~ msgid "Custom Page"
+#~ msgstr "Pot buk pari"
+
+#~ msgid "Search With:"
+#~ msgstr "Yeny Kwede:"
+
+#~ msgid "Search for \"%S\""
+#~ msgstr "Yeny pi \"%S\""
+
+#~ msgid "Open in %S App"
+#~ msgstr "Yab i Tic me %S"
+
+#~ msgid "Open in Another App"
+#~ msgstr "Yab i Tic mukene"
+
+#~ msgid "Clear Private Data"
+#~ msgstr "Ywe woko Tic pa Dano"
+
+#~ msgid ""
+#~ "Delete your browsing history and settings, including passwords and "
+#~ "cookies?"
+#~ msgstr ""
+#~ "Jwa layeny mamegi mukato ki tero, medo ie ki i cwil me donyo ki Layeny?"
+
+#~ msgid "More"
+#~ msgstr "Mukene"
+
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "Eyo"
+
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "Ku//Pe"
+
+#~ msgid "Play Plugins"
+#~ msgstr "Tuk Rwako iyie"
+
+#, fuzzy
+#~ msgctxt "helperapps.never"
+#~ msgid "Never"
+#~ msgstr "Pe"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "Gin me aloka manyen kityeko keto woko."

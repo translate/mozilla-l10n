@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-05-22 14:30+0100\n"
 "PO-Revision-Date: 2013-01-30 08:40+0000\n"
 "Last-Translator: OLWENY <sjolweny85@yahoo.co.uk>\n"
 "Language-Team: none\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1359535241.0\n"
@@ -28,21 +28,9 @@ msgid "Install"
 msgstr "Tekamu"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "Ebigattibwako"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "Okuwanula ekyongerwako"
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "Okuteekamu Ekigattibwako"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
-msgstr "Okuteekamu kuwedde. Okutandika nate kwetagisa."
 
 #: alertAddonsInstalledNoRestart
 msgid "Installation complete"
@@ -162,10 +150,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr "Ttandika bupya okumaliriza okukyusa."
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr "Ebyongerwako bituusiddwa. Tandika nate okumaliriza okukyusa."
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr "Ebyongerwako ebitakakasibwa bitereddwamu. Tandika bupya okubijjako."
@@ -175,25 +159,28 @@ msgid "Restart"
 msgstr "Tandiika bupya"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S elemeseza ekifo kino okugulawo eddirisa lya bwereeta-bwokka."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S ekibanja kino kiremeseddwa okugulawo %S amaddirisa ageleeta gokka."
+#: popup.dontAskAgain
+#, fuzzy
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Tobuuza nate ku kibanja kino"
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "Laga"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr "Laga Bulikiseera"
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
-msgstr "Tolagirakoddala"
+#: popup.dontShow
+msgid "Don't show"
+msgstr ""
 
 #. # SafeBrowsing
 #: safeBrowsingDoorhanger
@@ -207,40 +194,6 @@ msgstr ""
 #: blockPopups.label
 msgid "Block Popups"
 msgstr "Zziyiza Obudirisa Obwefulumya"
-
-#. # Telemetry
-#. # %1$S = server owner (Mozilla); %2$S = product name (Firefox)
-#: telemetry.optin.message2
-msgid "Send info to %1$S so that we can improve %2$S?"
-msgstr "Weereza obubaka eri %1$S tusoobole okulongosa mu %2$S?"
-
-#: telemetry.optin.learnMore
-msgid "Learn more"
-msgstr "Manya ebisingawo"
-
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "Yee"
-
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "Nedda"
-
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
-#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-"%1$S ewereza obubaka obukwata ku nkola, ebyuma, enkozesa ne entegeka eri "
-"%2$S okuyamba mukulongosa %3$S."
-
-#: telemetry.optout.ok
-msgid "OK"
-msgstr "OK"
 
 #. # XPInstall
 #: xpinstallPromptWarning2
@@ -308,17 +261,9 @@ msgstr "Gaabana"
 msgid "Don't share"
 msgstr "Togabana"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr "Bulijjo Gabana"
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr "Ttogabananga"
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
-msgstr "%S eyagala wooli."
+#: geolocation.ask
+msgid "Share your location with %S?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
 #. # site settings dialog.
@@ -340,12 +285,14 @@ msgid "Allow"
 msgstr "Kkiriza"
 
 #: desktopNotification.dontAllow
+#, fuzzy
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr "Tokiriza"
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
-msgstr "%S eyagala okukoozesa ebyokuteegeza."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
 #. # used in site settings dialog.
@@ -361,7 +308,7 @@ msgid "Don't ask again for this site"
 msgstr "Tobuuza nate ku kibanja kino"
 
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
@@ -372,35 +319,29 @@ msgstr "Awadirira awapya waguddwawo;#1 awadirira awapya awapya waguddwawo"
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "Nsobbi:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "Okulabula:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+#, fuzzy
+msgid "Allow %S to store data on your device for offline use?"
 msgstr ""
 "%S eyagala okutereka bwino ku kyuma kyo owokukozesa nga toyungidwa kulutimbe."
+
+#: offlineApps.dontAskAgain
+#, fuzzy
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Tobuuza nate ku kibanja kino"
 
 #: offlineApps.allow
 msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "Kkiriza"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+#, fuzzy
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr "Tokiriza"
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "Ssi Kati"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -408,154 +349,32 @@ msgstr "Ssi Kati"
 msgid "Store Offline Data"
 msgstr "Tereka Bwino ku Kompyuta yo"
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr "Tokiriza"
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr ""
-"%S eyagala okutereka bwino ku kyuma kyo owokukozesa nga toyungidwa kulutimbe."
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "Kkiriza"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr "Tokiriza"
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 "%S eyagala okutereka bwino mungi ku kyuma kyo owokukozesa nga toyungidwa "
 "kulutimbe."
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "Kkiriza"
-
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr "Tokiriza"
-
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr "%S eyagala kudukanya pulogulamu eziri ku kyuma kyo."
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "Jjukira Akasumuluzo"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "Jjukira"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
 #, fuzzy
-msgctxt "password.never"
-msgid "Never"
-msgstr "Tekibangawo"
+msgid "Save Password"
+msgstr "Obusumulizzo obu terekeddwa"
 
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr "Obulambe bwo Kumeza"
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "Kakase kuggalawo"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr "TE KIKOZESEDDWA;Osemberedde okugalawo awadirira #1. Genda mumaaso?"
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "Ggalawo awaddirira"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "Ndabula bwemba ŋŋenda kuggalawo awaddirira mu butundutundu"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr "Ngolabye!"
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr "Wabadewo  ekikyamu mukulaga omuko."
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "Wereeza Mozilla alipota yokuzikirira"
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "Ggalawo awaddirisa"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "Ddamu otikke awaddirira"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr "Omuko Gwewetegekedde"
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "Noonya Ne:"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr "Noonyeza \"%S\""
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr "Gulirawo mu Pulogulamu ya %S"
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr "Gulirawo mu Pulogulamu Endala"
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr "Ssangula Bwiino Owobwananyini"
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
 msgstr ""
-"Sangula ebibaddewo mu kunonya ne muntegeka zo, nga mwotwalidde nobusumuluzo "
-"ne kukizi?"
+
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+#, fuzzy
+msgid "Don't save"
+msgstr "Togabana"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -573,11 +392,6 @@ msgstr "false"
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "Ebisingawo"
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
@@ -591,6 +405,10 @@ msgstr "Ggulawo Akayungiro mu Waddirira Awapya"
 #: contextmenu.openInPrivateTab
 msgid "Open Link in Private Tab"
 msgstr ""
+
+#: contextmenu.addToReadingList
+msgid "Add to Reading List"
+msgstr "Yongera ku Lukalala Lwe'byokusooma"
 
 #: contextmenu.share
 msgctxt "contextmenu.share"
@@ -791,19 +609,18 @@ msgid "Could not download manifest"
 msgstr ""
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+#, fuzzy
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr "%S elimu ebyomunda bye'ekyongerwako. Wandiyagadde obizanya?"
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "Yee"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr ""
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "Nedda"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -814,9 +631,10 @@ msgstr "Tobuuza nate ku kibanja kino"
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr "Zanya Ebyongerwamu"
+#: clickToPlayPlugins.activatePlugins
+#, fuzzy
+msgid "Activate Plugins"
+msgstr "Abalimunda kakano"
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -880,7 +698,6 @@ msgstr ""
 
 #: helperapps.never
 #, fuzzy
-msgctxt "helperapps.never"
 msgid "Never"
 msgstr "Tekibangawo"
 
@@ -934,6 +751,189 @@ msgstr ""
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr ""
+
+#~ msgid "Add-ons"
+#~ msgstr "Ebigattibwako"
+
+#~ msgid "Installing add-on"
+#~ msgstr "Okuteekamu Ekigattibwako"
+
+#~ msgid "Installation complete. Restart required."
+#~ msgstr "Okuteekamu kuwedde. Okutandika nate kwetagisa."
+
+#~ msgid "Add-ons updated. Restart to complete changes."
+#~ msgstr "Ebyongerwako bituusiddwa. Tandika nate okumaliriza okukyusa."
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S elemeseza ekifo kino okugulawo eddirisa lya bwereeta-bwokka."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr ""
+#~ "%S ekibanja kino kiremeseddwa okugulawo %S amaddirisa ageleeta gokka."
+
+#~ msgid "Always Show"
+#~ msgstr "Laga Bulikiseera"
+
+#~ msgid "Never Show"
+#~ msgstr "Tolagirakoddala"
+
+#~ msgid "Send info to %1$S so that we can improve %2$S?"
+#~ msgstr "Weereza obubaka eri %1$S tusoobole okulongosa mu %2$S?"
+
+#~ msgid "Learn more"
+#~ msgstr "Manya ebisingawo"
+
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "Yee"
+
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "Nedda"
+
+#~ msgid ""
+#~ "%1$S sends information about performance, hardware, usage and "
+#~ "customizations back to %2$S to help improve %3$S."
+#~ msgstr ""
+#~ "%1$S ewereza obubaka obukwata ku nkola, ebyuma, enkozesa ne entegeka eri "
+#~ "%2$S okuyamba mukulongosa %3$S."
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Always Share"
+#~ msgstr "Bulijjo Gabana"
+
+#~ msgid "Never Share"
+#~ msgstr "Ttogabananga"
+
+#~ msgid "%S wants your location."
+#~ msgstr "%S eyagala wooli."
+
+#~ msgid "%S wants to use notifications."
+#~ msgstr "%S eyagala okukoozesa ebyokuteegeza."
+
+#~ msgid "Error:"
+#~ msgstr "Nsobbi:"
+
+#~ msgid "Warning:"
+#~ msgstr "Okulabula:"
+
+#~ msgctxt "offlineApps.never"
+#~ msgid "Don't Allow"
+#~ msgstr "Tokiriza"
+
+#~ msgid "Not Now"
+#~ msgstr "Ssi Kati"
+
+#~ msgctxt "offlineApps.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Tokiriza"
+
+#~ msgctxt "offlineApps.wantsTo"
+#~ msgid "%S wants to store data on your device for offline use."
+#~ msgstr ""
+#~ "%S eyagala okutereka bwino ku kyuma kyo owokukozesa nga toyungidwa "
+#~ "kulutimbe."
+
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "Kkiriza"
+
+#~ msgctxt "indexedDBQuota.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Tokiriza"
+
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "Kkiriza"
+
+#~ msgctxt "openWebappsManage.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Tokiriza"
+
+#~ msgid "%S wants to manage applications on your device."
+#~ msgstr "%S eyagala kudukanya pulogulamu eziri ku kyuma kyo."
+
+#~ msgid "Remember Password"
+#~ msgstr "Jjukira Akasumuluzo"
+
+#~ msgid "Remember"
+#~ msgstr "Jjukira"
+
+#~ msgid "Desktop Bookmarks"
+#~ msgstr "Obulambe bwo Kumeza"
+
+#~ msgid "Confirm close"
+#~ msgstr "Kakase kuggalawo"
+
+#~ msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#~ msgstr "TE KIKOZESEDDWA;Osemberedde okugalawo awadirira #1. Genda mumaaso?"
+
+#~ msgid "Close tabs"
+#~ msgstr "Ggalawo awaddirira"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "Ndabula bwemba ŋŋenda kuggalawo awaddirira mu butundutundu"
+
+#~ msgid "Sorry!"
+#~ msgstr "Ngolabye!"
+
+#~ msgid "Something went wrong while displaying a web page."
+#~ msgstr "Wabadewo  ekikyamu mukulaga omuko."
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "Wereeza Mozilla alipota yokuzikirira"
+
+#~ msgid "Close tab"
+#~ msgstr "Ggalawo awaddirisa"
+
+#~ msgid "Reload tab"
+#~ msgstr "Ddamu otikke awaddirira"
+
+#~ msgid "Custom Page"
+#~ msgstr "Omuko Gwewetegekedde"
+
+#~ msgid "Search With:"
+#~ msgstr "Noonya Ne:"
+
+#~ msgid "Search for \"%S\""
+#~ msgstr "Noonyeza \"%S\""
+
+#~ msgid "Open in %S App"
+#~ msgstr "Gulirawo mu Pulogulamu ya %S"
+
+#~ msgid "Open in Another App"
+#~ msgstr "Gulirawo mu Pulogulamu Endala"
+
+#~ msgid "Clear Private Data"
+#~ msgstr "Ssangula Bwiino Owobwananyini"
+
+#~ msgid ""
+#~ "Delete your browsing history and settings, including passwords and "
+#~ "cookies?"
+#~ msgstr ""
+#~ "Sangula ebibaddewo mu kunonya ne muntegeka zo, nga mwotwalidde "
+#~ "nobusumuluzo ne kukizi?"
+
+#~ msgid "More"
+#~ msgstr "Ebisingawo"
+
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "Yee"
+
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "Nedda"
+
+#~ msgid "Play Plugins"
+#~ msgstr "Zanya Ebyongerwamu"
+
+#, fuzzy
+#~ msgctxt "helperapps.never"
+#~ msgid "Never"
+#~ msgstr "Tekibangawo"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "Omulamwa omuppya kussiddwako"

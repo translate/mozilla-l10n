@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/mobile/android/chrome/browser.properties
+#. extracted from ./mobile/android/chrome/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2013-05-22 14:30+0100\n"
 "PO-Revision-Date: 2013-03-12 09:57+0000\n"
 "Last-Translator: Istiaque  <istiaqueahamed@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1363082261.0\n"
@@ -28,21 +28,9 @@ msgid "Install"
 msgstr "ইনস্টল"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "অ্যাড-অন"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "অ্যাড-অন ডাউনলোড করা হচ্ছে"
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "অ্যাড-অন ইনস্টল করা হচ্ছে"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
-msgstr "ইনস্টল সম্পন্ন। পুনরায় আরম্ভ করা প্রয়োজন।"
 
 #: alertAddonsInstalledNoRestart
 msgid "Installation complete"
@@ -150,10 +138,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr "পরিবর্তন সম্পন্ন করতে পুনরায় চালু করুন"
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr "অ্যাড-অন হালনাগাদ করা হয়েছে। পরিবর্তন সম্পন্ন করতে পুনরায় চালু করুন।"
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr "অনিরাপদ অ্যাড-অন ইনস্টল করা হয়েছে। নিষ্ক্রিয় করতে পুনরায় চালু করুন।"
@@ -163,25 +147,28 @@ msgid "Restart"
 msgstr "পুনরায় শুরু করুন"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S এই সাইটকে একটি পপ-আপ উইন্ডো খুলতে বাধা দিয়েছে।"
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S এই সাইটকে %Sটি পপ-আপ উইন্ডো খুলতে বাধা দিয়েছে।"
+#: popup.dontAskAgain
+#, fuzzy
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "এই সাইট সম্পর্কে পুনরায় জিজ্ঞাসা করা হবে না"
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "প্রদর্শন করুন"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr "সবসময় প্রদর্শন"
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
-msgstr "কখনও প্রদর্শিত হবে না"
+#: popup.dontShow
+msgid "Don't show"
+msgstr ""
 
 #. # SafeBrowsing
 #: safeBrowsingDoorhanger
@@ -197,40 +184,6 @@ msgstr ""
 #: blockPopups.label
 msgid "Block Popups"
 msgstr "পপআপ ব্লক করা হবে"
-
-#. # Telemetry
-#. # %1$S = server owner (Mozilla); %2$S = product name (Firefox)
-#: telemetry.optin.message2
-msgid "Send info to %1$S so that we can improve %2$S?"
-msgstr "%1$S এ তথ্য পাঠানো হবে যাতে আমরা %2$S উন্নত করতে পারি?"
-
-#: telemetry.optin.learnMore
-msgid "Learn more"
-msgstr "আরও জানুন"
-
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "হ্যাঁ"
-
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "না"
-
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
-#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-"%1$S কার্যকারতা, হার্ডওয়্যার,ব্যবহার এবং স্বনির্বাচিত তথ্য %2$S দিয়ে %3$S এর "
-"মানোন্নয়নে সাহায্য করেছে।"
-
-#: telemetry.optout.ok
-msgid "OK"
-msgstr "ঠিক আছে"
 
 #. # XPInstall
 #: xpinstallPromptWarning2
@@ -296,17 +249,9 @@ msgstr "শেয়ার"
 msgid "Don't share"
 msgstr "শেয়ার করা হবে না"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr "সবসময় শেয়ার করা হবে"
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr "কখনও শেয়ার করা হবে না"
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
-msgstr "%S আপনার অবস্থান জানতে চায়"
+#: geolocation.ask
+msgid "Share your location with %S?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
 #. # site settings dialog.
@@ -328,12 +273,14 @@ msgid "Allow"
 msgstr "অনুমোদন করা হবে"
 
 #: desktopNotification.dontAllow
+#, fuzzy
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr "অনুমোদন করা হবে না"
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
-msgstr "%S নটিফিকেশন ব্যবহার করতে চায়।"
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
 #. # used in site settings dialog.
@@ -349,7 +296,7 @@ msgid "Don't ask again for this site"
 msgstr "এই সাইট সম্পর্কে পুনরায় জিজ্ঞাসা করা হবে না"
 
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
@@ -360,34 +307,28 @@ msgstr "নতুন ট্যাব খোলা হয়েছে;#1 নতু�
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr "নতুন ব্যক্তিগত ট্যাব খোলা হয়েছে;#১টা নতুন ব্যক্তিগত ট্যাব খোলা হয়েছে"
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "ত্রুটি:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "সতর্কীকরণ:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+#, fuzzy
+msgid "Allow %S to store data on your device for offline use?"
 msgstr "%S অফলাইনে ব্যবহারের জন্য আপনার ডিভাইসে ডাটা স্টোর করতে চায়।"
+
+#: offlineApps.dontAskAgain
+#, fuzzy
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "এই সাইট সম্পর্কে পুনরায় জিজ্ঞাসা করা হবে না"
 
 #: offlineApps.allow
 msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "অনুমোদন করা হবে"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+#, fuzzy
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr "অনুমোদন করা হবে না"
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "এই মূহুর্তে নয় (N)"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -395,148 +336,30 @@ msgstr "এই মূহুর্তে নয় (N)"
 msgid "Store Offline Data"
 msgstr "অফলাইন ডাটা স্টোর করা হবে"
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr "অনুমোদন করা হবে না"
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr "%S অফলাইনে ব্যবহারের জন্য আপনার ডিভাইসে ডাটা স্টোর করতে চায়।"
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "‌অনুমোদন"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr "অনুমোদন করা হবে না"
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr "%S অফলাইনে ব্যবহারের জন্য আপনার ডিভাইসে প্রচুর ডাটা স্টোর করতে চায়।"
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "অনুমোদন"
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+#, fuzzy
+msgid "Save Password"
+msgstr "সংরক্ষিত পাসওয়ার্ড"
 
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr "অনুমোদন করা হবে না"
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
+msgstr ""
 
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr "%S আপনার ডিভাইসে অ্যাপ্লিকেশন ব্যবস্থাপনা করতে চায়।"
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "পাসওয়ার্ড মনে রাখুন"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "মনে রাখা হবে"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr "কখনো না"
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr "ডেস্কটপ বুকমার্ক"
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "বন্ধ করা নিশ্চিতকরণ"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr "অব্যবহৃত; আপনি #1 ট্যাব বন্ধ করতে যাচ্ছেন। চালিয়ে যেতে চান?"
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "সব ট্যাব বন্ধ করা হোক"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "একাধিক ট্যাব বন্ধ করার চেষ্টা করলে আমাকে সতর্ক করা হবে"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr "দুঃখিত!"
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr "ওয়েব পেজ প্রদর্শনের সময় কিছু একটা সমস্যা হয়েছে।"
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "মোজিলা কে ক্র্যাশ প্রতিবেদন পাঠানো হবে"
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "ট্যাব বন্ধ করুন"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "ট্যাব নতুন করে লোড করা হবে"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr "স্বনির্বাচিত পেজ"
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "যার মাধ্যমে অনুসন্ধান করা হবে"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr "\"%S\" এর জন্য অনুসন্ধান করা হবে"
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr "%S অ্যাপ এ খোলা হবে"
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr "অন্য অ্যাপ এ খোলা হবে"
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr "ব্যক্তিগত ডাটা মুছে ফেলা হবে"
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
-msgstr "আপনার ব্রাউজিং ইতিহাস এবং সেটিং, সাথে পাসওয়ার্ড এবং কুকি মুছে ফেলা হবে?"
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+#, fuzzy
+msgid "Don't save"
+msgstr "শেয়ার করা হবে না"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -554,11 +377,6 @@ msgstr "ভুল"
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "আরও"
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
@@ -572,6 +390,10 @@ msgstr "নতুন ট্যাবে লিংক খোলা হবে"
 #: contextmenu.openInPrivateTab
 msgid "Open Link in Private Tab"
 msgstr "লিংকটি ব্যাক্তিগত ট্যাবে খুলুন"
+
+#: contextmenu.addToReadingList
+msgid "Add to Reading List"
+msgstr ""
 
 #: contextmenu.share
 msgctxt "contextmenu.share"
@@ -769,19 +591,18 @@ msgid "Could not download manifest"
 msgstr "মেনিফেস্ট ডাউনলোড করা যায়নি"
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+#, fuzzy
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr "%S এ প্লাগইন বিষয়বস্তু রয়েছে। আপনি কি এটি প্লে করতে চান?"
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "হ্যাঁ"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr ""
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "না"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -792,9 +613,9 @@ msgstr "সাইটের ব্যাপারে পুনরায় জিজ
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr "প্লাগইন প্লে করা হবে"
+#: clickToPlayPlugins.activatePlugins
+msgid "Activate Plugins"
+msgstr ""
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -856,7 +677,7 @@ msgid "Always"
 msgstr "সবসময়"
 
 #: helperapps.never
-msgctxt "helperapps.never"
+#, fuzzy
 msgid "Never"
 msgstr "কখনো নয়"
 
@@ -907,6 +728,183 @@ msgstr "আপনি বর্তমানে %S এর সাথে মাই�
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr "আপনি বর্তমানে %S এর সাথে ক্যামেরা এবং মাইক্রোফোন শেয়ার করেছেন"
+
+#~ msgid "Add-ons"
+#~ msgstr "অ্যাড-অন"
+
+#~ msgid "Installing add-on"
+#~ msgstr "অ্যাড-অন ইনস্টল করা হচ্ছে"
+
+#~ msgid "Installation complete. Restart required."
+#~ msgstr "ইনস্টল সম্পন্ন। পুনরায় আরম্ভ করা প্রয়োজন।"
+
+#~ msgid "Add-ons updated. Restart to complete changes."
+#~ msgstr "অ্যাড-অন হালনাগাদ করা হয়েছে। পরিবর্তন সম্পন্ন করতে পুনরায় চালু করুন।"
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S এই সাইটকে একটি পপ-আপ উইন্ডো খুলতে বাধা দিয়েছে।"
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "%S এই সাইটকে %Sটি পপ-আপ উইন্ডো খুলতে বাধা দিয়েছে।"
+
+#~ msgid "Always Show"
+#~ msgstr "সবসময় প্রদর্শন"
+
+#~ msgid "Never Show"
+#~ msgstr "কখনও প্রদর্শিত হবে না"
+
+#~ msgid "Send info to %1$S so that we can improve %2$S?"
+#~ msgstr "%1$S এ তথ্য পাঠানো হবে যাতে আমরা %2$S উন্নত করতে পারি?"
+
+#~ msgid "Learn more"
+#~ msgstr "আরও জানুন"
+
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "হ্যাঁ"
+
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "না"
+
+#~ msgid ""
+#~ "%1$S sends information about performance, hardware, usage and "
+#~ "customizations back to %2$S to help improve %3$S."
+#~ msgstr ""
+#~ "%1$S কার্যকারতা, হার্ডওয়্যার,ব্যবহার এবং স্বনির্বাচিত তথ্য %2$S দিয়ে %3$S এর "
+#~ "মানোন্নয়নে সাহায্য করেছে।"
+
+#~ msgid "OK"
+#~ msgstr "ঠিক আছে"
+
+#~ msgid "Always Share"
+#~ msgstr "সবসময় শেয়ার করা হবে"
+
+#~ msgid "Never Share"
+#~ msgstr "কখনও শেয়ার করা হবে না"
+
+#~ msgid "%S wants your location."
+#~ msgstr "%S আপনার অবস্থান জানতে চায়"
+
+#~ msgid "%S wants to use notifications."
+#~ msgstr "%S নটিফিকেশন ব্যবহার করতে চায়।"
+
+#~ msgid "Error:"
+#~ msgstr "ত্রুটি:"
+
+#~ msgid "Warning:"
+#~ msgstr "সতর্কীকরণ:"
+
+#~ msgctxt "offlineApps.never"
+#~ msgid "Don't Allow"
+#~ msgstr "অনুমোদন করা হবে না"
+
+#~ msgid "Not Now"
+#~ msgstr "এই মূহুর্তে নয় (N)"
+
+#~ msgctxt "offlineApps.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "অনুমোদন করা হবে না"
+
+#~ msgctxt "offlineApps.wantsTo"
+#~ msgid "%S wants to store data on your device for offline use."
+#~ msgstr "%S অফলাইনে ব্যবহারের জন্য আপনার ডিভাইসে ডাটা স্টোর করতে চায়।"
+
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "‌অনুমোদন"
+
+#~ msgctxt "indexedDBQuota.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "অনুমোদন করা হবে না"
+
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "অনুমোদন"
+
+#~ msgctxt "openWebappsManage.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "অনুমোদন করা হবে না"
+
+#~ msgid "%S wants to manage applications on your device."
+#~ msgstr "%S আপনার ডিভাইসে অ্যাপ্লিকেশন ব্যবস্থাপনা করতে চায়।"
+
+#~ msgid "Remember Password"
+#~ msgstr "পাসওয়ার্ড মনে রাখুন"
+
+#~ msgid "Remember"
+#~ msgstr "মনে রাখা হবে"
+
+#~ msgid "Desktop Bookmarks"
+#~ msgstr "ডেস্কটপ বুকমার্ক"
+
+#~ msgid "Confirm close"
+#~ msgstr "বন্ধ করা নিশ্চিতকরণ"
+
+#~ msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#~ msgstr "অব্যবহৃত; আপনি #1 ট্যাব বন্ধ করতে যাচ্ছেন। চালিয়ে যেতে চান?"
+
+#~ msgid "Close tabs"
+#~ msgstr "সব ট্যাব বন্ধ করা হোক"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "একাধিক ট্যাব বন্ধ করার চেষ্টা করলে আমাকে সতর্ক করা হবে"
+
+#~ msgid "Sorry!"
+#~ msgstr "দুঃখিত!"
+
+#~ msgid "Something went wrong while displaying a web page."
+#~ msgstr "ওয়েব পেজ প্রদর্শনের সময় কিছু একটা সমস্যা হয়েছে।"
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "মোজিলা কে ক্র্যাশ প্রতিবেদন পাঠানো হবে"
+
+#~ msgid "Close tab"
+#~ msgstr "ট্যাব বন্ধ করুন"
+
+#~ msgid "Reload tab"
+#~ msgstr "ট্যাব নতুন করে লোড করা হবে"
+
+#~ msgid "Custom Page"
+#~ msgstr "স্বনির্বাচিত পেজ"
+
+#~ msgid "Search With:"
+#~ msgstr "যার মাধ্যমে অনুসন্ধান করা হবে"
+
+#~ msgid "Search for \"%S\""
+#~ msgstr "\"%S\" এর জন্য অনুসন্ধান করা হবে"
+
+#~ msgid "Open in %S App"
+#~ msgstr "%S অ্যাপ এ খোলা হবে"
+
+#~ msgid "Open in Another App"
+#~ msgstr "অন্য অ্যাপ এ খোলা হবে"
+
+#~ msgid "Clear Private Data"
+#~ msgstr "ব্যক্তিগত ডাটা মুছে ফেলা হবে"
+
+#~ msgid ""
+#~ "Delete your browsing history and settings, including passwords and "
+#~ "cookies?"
+#~ msgstr "আপনার ব্রাউজিং ইতিহাস এবং সেটিং, সাথে পাসওয়ার্ড এবং কুকি মুছে ফেলা হবে?"
+
+#~ msgid "More"
+#~ msgstr "আরও"
+
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "হ্যাঁ"
+
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "না"
+
+#~ msgid "Play Plugins"
+#~ msgstr "প্লাগইন প্লে করা হবে"
+
+#~ msgctxt "helperapps.never"
+#~ msgid "Never"
+#~ msgstr "কখনো নয়"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "একটি নতুন থিম ইনস্টল করা হয়েছে।"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-05-22 14:30+0100\n"
 "PO-Revision-Date: 2013-03-02 09:05+0000\n"
 "Last-Translator: Cédric <cvalmary@yahoo.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1362215117.0\n"
@@ -29,21 +29,9 @@ msgid "Install"
 msgstr "Installar"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "Moduls complementaris"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "Telecargament del modul"
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "Installacion del modul"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
-msgstr "Installacion acabada. Reaviada necessària."
 
 #: alertAddonsInstalledNoRestart
 msgid "Installation complete"
@@ -167,11 +155,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr "Tornar aviar per aplicar vòstres cambiaments."
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr ""
-"Modul(s) complementari(s) meses a jorn. Reaviar per aplicar los cambiaments."
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr "Moduls pas segurs installats. Reaviar per los desactivar."
@@ -181,25 +164,28 @@ msgid "Restart"
 msgstr "Tornar aviar"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S a empachat aqueste sit de dobrir una fenèstra sorgissenta."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S a empachat aqueste sit de dobrir %S fenèstras sorgissentas."
+#: popup.dontAskAgain
+#, fuzzy
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Demandar pas mai per aqueste site"
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "Afichar"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr "Afichar totjorn"
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
-msgstr "Pas jamai"
+#: popup.dontShow
+msgid "Don't show"
+msgstr ""
 
 #. # SafeBrowsing
 #: safeBrowsingDoorhanger
@@ -215,40 +201,6 @@ msgstr ""
 #: blockPopups.label
 msgid "Block Popups"
 msgstr "Blocar los popups"
-
-#. # Telemetry
-#. # %1$S = server owner (Mozilla); %2$S = product name (Firefox)
-#: telemetry.optin.message2
-msgid "Send info to %1$S so that we can improve %2$S?"
-msgstr "Volètz mandar d'informacions a %1$S per nos ajudar a melhorar %2$S ?"
-
-#: telemetry.optin.learnMore
-msgid "Learn more"
-msgstr "Ne saber mai…"
-
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "Òc"
-
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "Non"
-
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
-#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-"%1$S manda d'informacions sus las performàncias, lo material, l'utilizacion "
-"e las personalizacions al servidor %2$S per ajudar al melhorament de %3$S."
-
-#: telemetry.optout.ok
-msgid "OK"
-msgstr "D'acòrdi"
 
 #. # XPInstall
 #: xpinstallPromptWarning2
@@ -316,17 +268,9 @@ msgstr "Partejar sa localizacion"
 msgid "Don't share"
 msgstr "Pas de partiment"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr "Partejar totjorn"
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr "Partejar pas jamai"
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
-msgstr "%S voldriá saber ont vos trobatz."
+#: geolocation.ask
+msgid "Share your location with %S?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
 #. # site settings dialog.
@@ -348,12 +292,14 @@ msgid "Allow"
 msgstr "Autorizar"
 
 #: desktopNotification.dontAllow
+#, fuzzy
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr "Interdire"
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
-msgstr "%S desira utilizar de notificacions."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
 #. # used in site settings dialog.
@@ -369,7 +315,7 @@ msgid "Don't ask again for this site"
 msgstr "Demandar pasmai per aqueste site"
 
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
@@ -381,36 +327,30 @@ msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 "Novèl onglet de nav. privada dobèrt;#1 novèls onglets de nav. privada dobèrts"
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "Error :"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "Avertiment :"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+#, fuzzy
+msgid "Allow %S to store data on your device for offline use?"
 msgstr ""
 "%S vòl emmagazinar de donadas sus vòstre aparelh per un usatge fòra "
 "connexion."
+
+#: offlineApps.dontAskAgain
+#, fuzzy
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Demandar pas mai per aqueste site"
 
 #: offlineApps.allow
 msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "Autorizar"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+#, fuzzy
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr "Interdire"
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "Pas ara"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -418,154 +358,32 @@ msgstr "Pas ara"
 msgid "Store Offline Data"
 msgstr "Emmagazinatge de donadas fòra connexion"
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr "Interdire"
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr ""
-"%S vòl emmagazinar de donadas sus vòstre aparelh per un usatge fòra "
-"connexion."
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "Autorizar"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr "Interdire"
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 "%S vòl emmagazinar fòrça donadas sus vòstre aparelh per un usatge fòra "
 "connexion."
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "Autorizar"
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+#, fuzzy
+msgid "Save Password"
+msgstr "Senhals enregistrats"
 
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr "Interdire"
-
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr "%S desira gerir d'aplicacions sus vòstre aparelh."
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "Enregistrament dels senhals"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "Memorizar"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr "Pas jamai"
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr "Marcapaginas"
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "Confirmar la tampadura"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr "NOT USED;Sètz a mand de tampar #1 onglets. Contunhar ?"
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "Tampar los onglets"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "M'alertar quand ensagi de tampar mai d'un onglet"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr "O planhèm !"
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr "Quicòm s'es mal passat al moment de l'afichatge de la pagina."
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "Mandar un rapòrt de plantatge a Mozilla"
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "Tampar l'onglet"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "Tornar cargar l'onglet"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr "Pagina personalizada"
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "Recercar amb :"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr "Recercar « %S »"
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr "Dobrir amb %S"
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr "Bobrir dins una autra aplicacion"
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr "Escafar mas traças"
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
 msgstr ""
-"Suprimir vòstre istoric e vòstres paramètres de navigacion, incluses los "
-"cookies e senhals ?"
+
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+#, fuzzy
+msgid "Don't save"
+msgstr "Pas de partiment"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -583,11 +401,6 @@ msgstr "fals"
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr "iso-8859-1,utf-8,iso-8859-15,x-gbk,big5,iso-2022-jp,shift_jis,euc-jp"
 
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "Mai"
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
@@ -601,6 +414,10 @@ msgstr "Dobrir dins un onglet novèl"
 #: contextmenu.openInPrivateTab
 msgid "Open Link in Private Tab"
 msgstr "Dobrir en navigacion privada"
+
+#: contextmenu.addToReadingList
+msgid "Add to Reading List"
+msgstr ""
 
 #: contextmenu.share
 msgctxt "contextmenu.share"
@@ -796,19 +613,18 @@ msgid "Could not download manifest"
 msgstr "Impossible de telecargar lo manifèste"
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+#, fuzzy
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr "%S necessita un plugin. Lo volètz utilizar ?"
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "Òc"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr ""
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "Non"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -819,9 +635,10 @@ msgstr "Demandar pas mai per aqueste site"
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr "Utilizar los plugins"
+#: clickToPlayPlugins.activatePlugins
+#, fuzzy
+msgid "Activate Plugins"
+msgstr "Connexions activas"
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -884,7 +701,7 @@ msgid "Always"
 msgstr "Totjorn"
 
 #: helperapps.never
-msgctxt "helperapps.never"
+#, fuzzy
 msgid "Never"
 msgstr "Pas jamai"
 
@@ -933,6 +750,191 @@ msgstr "Actualament, partejatz vòstre microfòn amb %S."
 #: getUserMedia.sharingCameraAndMicrophone.message
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr "Actualament, partejatz vòstra webcam e vòstre microfòn amb %S."
+
+#~ msgid "Add-ons"
+#~ msgstr "Moduls complementaris"
+
+#~ msgid "Installing add-on"
+#~ msgstr "Installacion del modul"
+
+#~ msgid "Installation complete. Restart required."
+#~ msgstr "Installacion acabada. Reaviada necessària."
+
+#~ msgid "Add-ons updated. Restart to complete changes."
+#~ msgstr ""
+#~ "Modul(s) complementari(s) meses a jorn. Reaviar per aplicar los "
+#~ "cambiaments."
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S a empachat aqueste sit de dobrir una fenèstra sorgissenta."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "%S a empachat aqueste sit de dobrir %S fenèstras sorgissentas."
+
+#~ msgid "Always Show"
+#~ msgstr "Afichar totjorn"
+
+#~ msgid "Never Show"
+#~ msgstr "Pas jamai"
+
+#~ msgid "Send info to %1$S so that we can improve %2$S?"
+#~ msgstr ""
+#~ "Volètz mandar d'informacions a %1$S per nos ajudar a melhorar %2$S ?"
+
+#~ msgid "Learn more"
+#~ msgstr "Ne saber mai…"
+
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "Òc"
+
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "Non"
+
+#~ msgid ""
+#~ "%1$S sends information about performance, hardware, usage and "
+#~ "customizations back to %2$S to help improve %3$S."
+#~ msgstr ""
+#~ "%1$S manda d'informacions sus las performàncias, lo material, "
+#~ "l'utilizacion e las personalizacions al servidor %2$S per ajudar al "
+#~ "melhorament de %3$S."
+
+#~ msgid "OK"
+#~ msgstr "D'acòrdi"
+
+#~ msgid "Always Share"
+#~ msgstr "Partejar totjorn"
+
+#~ msgid "Never Share"
+#~ msgstr "Partejar pas jamai"
+
+#~ msgid "%S wants your location."
+#~ msgstr "%S voldriá saber ont vos trobatz."
+
+#~ msgid "%S wants to use notifications."
+#~ msgstr "%S desira utilizar de notificacions."
+
+#~ msgid "Error:"
+#~ msgstr "Error :"
+
+#~ msgid "Warning:"
+#~ msgstr "Avertiment :"
+
+#~ msgctxt "offlineApps.never"
+#~ msgid "Don't Allow"
+#~ msgstr "Interdire"
+
+#~ msgid "Not Now"
+#~ msgstr "Pas ara"
+
+#~ msgctxt "offlineApps.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Interdire"
+
+#~ msgctxt "offlineApps.wantsTo"
+#~ msgid "%S wants to store data on your device for offline use."
+#~ msgstr ""
+#~ "%S vòl emmagazinar de donadas sus vòstre aparelh per un usatge fòra "
+#~ "connexion."
+
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "Autorizar"
+
+#~ msgctxt "indexedDBQuota.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Interdire"
+
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "Autorizar"
+
+#~ msgctxt "openWebappsManage.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Interdire"
+
+#~ msgid "%S wants to manage applications on your device."
+#~ msgstr "%S desira gerir d'aplicacions sus vòstre aparelh."
+
+#~ msgid "Remember Password"
+#~ msgstr "Enregistrament dels senhals"
+
+#~ msgid "Remember"
+#~ msgstr "Memorizar"
+
+#~ msgid "Desktop Bookmarks"
+#~ msgstr "Marcapaginas"
+
+#~ msgid "Confirm close"
+#~ msgstr "Confirmar la tampadura"
+
+#~ msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#~ msgstr "NOT USED;Sètz a mand de tampar #1 onglets. Contunhar ?"
+
+#~ msgid "Close tabs"
+#~ msgstr "Tampar los onglets"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "M'alertar quand ensagi de tampar mai d'un onglet"
+
+#~ msgid "Sorry!"
+#~ msgstr "O planhèm !"
+
+#~ msgid "Something went wrong while displaying a web page."
+#~ msgstr "Quicòm s'es mal passat al moment de l'afichatge de la pagina."
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "Mandar un rapòrt de plantatge a Mozilla"
+
+#~ msgid "Close tab"
+#~ msgstr "Tampar l'onglet"
+
+#~ msgid "Reload tab"
+#~ msgstr "Tornar cargar l'onglet"
+
+#~ msgid "Custom Page"
+#~ msgstr "Pagina personalizada"
+
+#~ msgid "Search With:"
+#~ msgstr "Recercar amb :"
+
+#~ msgid "Search for \"%S\""
+#~ msgstr "Recercar « %S »"
+
+#~ msgid "Open in %S App"
+#~ msgstr "Dobrir amb %S"
+
+#~ msgid "Open in Another App"
+#~ msgstr "Bobrir dins una autra aplicacion"
+
+#~ msgid "Clear Private Data"
+#~ msgstr "Escafar mas traças"
+
+#~ msgid ""
+#~ "Delete your browsing history and settings, including passwords and "
+#~ "cookies?"
+#~ msgstr ""
+#~ "Suprimir vòstre istoric e vòstres paramètres de navigacion, incluses los "
+#~ "cookies e senhals ?"
+
+#~ msgid "More"
+#~ msgstr "Mai"
+
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "Òc"
+
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "Non"
+
+#~ msgid "Play Plugins"
+#~ msgstr "Utilizar los plugins"
+
+#~ msgctxt "helperapps.never"
+#~ msgid "Never"
+#~ msgstr "Pas jamai"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "Un tèma novèl s'es installat."

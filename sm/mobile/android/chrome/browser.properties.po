@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2013-05-22 14:30+0100\n"
 "PO-Revision-Date: 2013-02-11 19:35+0000\n"
 "Last-Translator: Chris <edresources@bickersc.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1360611330.0\n"
@@ -29,21 +29,9 @@ msgid "Install"
 msgstr "Fa'anofo"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "Fa'aopoopoga"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "'Auinaga atu le fa'aopoopoga"
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "Fa'anofoga le fa'aopoopoga"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
-msgstr "Fa'anofonōfoga māe'a. Mana'omiaina toe 'āmata."
 
 #: alertAddonsInstalledNoRestart
 msgid "Installation complete"
@@ -166,10 +154,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr "Toe 'āmata ma māe'a le suiga."
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr "Toe fa'afou 'uma le fa'aopoopoga. A māe'a le suiga toe 'āmata."
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr "fa'aopoopoga e lē saogālemū fa'anofoina. E lē mafai mai le toe 'āmata."
@@ -179,25 +163,28 @@ msgid "Restart"
 msgstr "Toe 'āmata"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S vavaoina tatala le fa'amalama tu'uoso o le site lea."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S vavaoina tatale %S fa'amalama tu'uoso o le site lea."
+#: popup.dontAskAgain
+#, fuzzy
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "'Aua ne'i fesili mai le site lea"
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "Fa'aali"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr "Fa'aali taimi lava"
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
-msgstr "'Aua lava ne'i fa'aali"
+#: popup.dontShow
+msgid "Don't show"
+msgstr ""
 
 #. # SafeBrowsing
 #: safeBrowsingDoorhanger
@@ -211,40 +198,6 @@ msgstr ""
 #: blockPopups.label
 msgid "Block Popups"
 msgstr "Pūnitia le tu'uoso"
-
-#. # Telemetry
-#. # %1$S = server owner (Mozilla); %2$S = product name (Firefox)
-#: telemetry.optin.message2
-msgid "Send info to %1$S so that we can improve %2$S?"
-msgstr "'Ave le fa'amatala i le %1$S e fesoasoani fa'alelei le %2$S?"
-
-#: telemetry.optin.learnMore
-msgid "Learn more"
-msgstr "Mālamalama atili"
-
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "Ioe"
-
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "Leai"
-
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
-#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-"E lafo mai e le %1$S le fa'amatalaga fa'atatau fa'aaliga, hardware, "
-"meafa'aaogā ma fetu'una'iina i tua le %2$S fesoasoani e solo i luma le %3$S."
-
-#: telemetry.optout.ok
-msgid "OK"
-msgstr "OK"
 
 #. # XPInstall
 #: xpinstallPromptWarning2
@@ -308,17 +261,9 @@ msgstr "Tufatufa"
 msgid "Don't share"
 msgstr "'Aua tufatufa"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr "Tufatufa taimi lava"
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr "'Aua lava ne'i tufatufa"
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
-msgstr "%S e te mana'o lou tūlaga."
+#: geolocation.ask
+msgid "Share your location with %S?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
 #. # site settings dialog.
@@ -340,12 +285,14 @@ msgid "Allow"
 msgstr "Fa'ataga"
 
 #: desktopNotification.dontAllow
+#, fuzzy
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr "'Aua fa'ataga"
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
-msgstr "E te mana'o ona fai %S le notifications."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
 #. # used in site settings dialog.
@@ -361,7 +308,7 @@ msgid "Don't ask again for this site"
 msgstr "'Aua ne'i fesili mai le site lea"
 
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
@@ -372,34 +319,28 @@ msgstr "Tama'i-ufitaga fou e tatala;#1 tama'i-ufitaga fou e tatala"
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "Sesē:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "Lapata'iga:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+#, fuzzy
+msgid "Allow %S to store data on your device for offline use?"
 msgstr "E te mana'o ona teuga %S le data i lou togafiti e faia laina-'ese."
+
+#: offlineApps.dontAskAgain
+#, fuzzy
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "'Aua ne'i fesili mai le site lea"
 
 #: offlineApps.allow
 msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "Fa'ataga"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+#, fuzzy
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr "'Aua fa'ataga"
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "Leai Se Taimi Nei"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -407,150 +348,31 @@ msgstr "Leai Se Taimi Nei"
 msgid "Store Offline Data"
 msgstr "Teuga Data Laina-'ese"
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr "'Aua Fa'ataga"
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr "E te mana'o ona teuga %S le data i lou togafiti e faia laina-'ese."
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "Fa'ataga"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr "'Aua fa'ataga"
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 "E te mana'o ona teuga %S le data telē i lou togafiti e faia laina-'ese."
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "Fa'ataga"
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+#, fuzzy
+msgid "Save Password"
+msgstr "'Upulilo teuga"
 
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr "'Aua fa'ataga"
-
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr "E te mana'o ona pūlea %S le polokalame-komepiuta i lou togafiti."
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "Mānatua 'Upulilo"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "Mānatua"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr "'Aua lava ne'i"
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr "Tusi-togi o le Laulau-luga"
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "Fa'amausalī tāpuniga"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr "E LĒ FA'AAOGĀ; E fia tāpuni 'oe le #1 tama'i-ufitaga. Fa'aauau?"
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "Tāpuni 'uma tama'i-ufitaga"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "Lapata'i mai pe 'ā 'ou taumafai e tāpuni ia tama'i-ufitaga 'uma"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr "Fa'amālūlū atu!"
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr "Sesē i le taimi fā'aliga le itūlau web."
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "'Ave i le Mozilla le līpoti o le palasi"
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "Tāpuni tama'i-ufitaga"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "Toe la'u le tama'i-ufitaga"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr "Itūlau Fetu'una'i"
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "Su'e mai le:"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr "Su'e mo \"%S\""
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr "Tatala i le App %S"
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr "Tatala i le isi App"
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr "Fa'amamā le data patino"
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
 msgstr ""
-"Tia'i lou sā'ili mea tuana'i ma fa'atonutonu, aofia ai le 'upulilo ma kuki?"
+
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+#, fuzzy
+msgid "Don't save"
+msgstr "'Aua tufatufa"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -568,11 +390,6 @@ msgstr "lē moni"
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "Isi mea"
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
@@ -586,6 +403,10 @@ msgstr "Tatala Noataga i le Tusi-togi Fou"
 #: contextmenu.openInPrivateTab
 msgid "Open Link in Private Tab"
 msgstr "Tatala le noataga i le tama'i-ufitaga patino"
+
+#: contextmenu.addToReadingList
+msgid "Add to Reading List"
+msgstr ""
 
 #: contextmenu.share
 msgctxt "contextmenu.share"
@@ -782,19 +603,18 @@ msgid "Could not download manifest"
 msgstr "E lē mafai ona 'auina atu le manifest"
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+#, fuzzy
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr "I totonu le %S e le sulu-totonu. E fia fa'aola le mea?"
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "Ioe"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr ""
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "Leai"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -805,9 +625,9 @@ msgstr "'Aua ne'i fesili mai le site lea"
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr "Fa'aola sulu-totonu"
+#: clickToPlayPlugins.activatePlugins
+msgid "Activate Plugins"
+msgstr ""
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -870,7 +690,7 @@ msgid "Always"
 msgstr "So'o se taimi"
 
 #: helperapps.never
-msgctxt "helperapps.never"
+#, fuzzy
 msgid "Never"
 msgstr "'Aua lava ne'i"
 
@@ -922,6 +742,186 @@ msgstr "O lo'o 'e fa'aaogāina lau meafa'aleotele leo fa'atasi ma %S"
 msgid "You are currently sharing your camera and microphone with %S."
 msgstr ""
 "O lo'o 'e fa'aaogāina lau meapue'ata ma meafa'aleotele leo fa'atasi ma %S"
+
+#~ msgid "Add-ons"
+#~ msgstr "Fa'aopoopoga"
+
+#~ msgid "Installing add-on"
+#~ msgstr "Fa'anofoga le fa'aopoopoga"
+
+#~ msgid "Installation complete. Restart required."
+#~ msgstr "Fa'anofonōfoga māe'a. Mana'omiaina toe 'āmata."
+
+#~ msgid "Add-ons updated. Restart to complete changes."
+#~ msgstr "Toe fa'afou 'uma le fa'aopoopoga. A māe'a le suiga toe 'āmata."
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S vavaoina tatala le fa'amalama tu'uoso o le site lea."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "%S vavaoina tatale %S fa'amalama tu'uoso o le site lea."
+
+#~ msgid "Always Show"
+#~ msgstr "Fa'aali taimi lava"
+
+#~ msgid "Never Show"
+#~ msgstr "'Aua lava ne'i fa'aali"
+
+#~ msgid "Send info to %1$S so that we can improve %2$S?"
+#~ msgstr "'Ave le fa'amatala i le %1$S e fesoasoani fa'alelei le %2$S?"
+
+#~ msgid "Learn more"
+#~ msgstr "Mālamalama atili"
+
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "Ioe"
+
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "Leai"
+
+#~ msgid ""
+#~ "%1$S sends information about performance, hardware, usage and "
+#~ "customizations back to %2$S to help improve %3$S."
+#~ msgstr ""
+#~ "E lafo mai e le %1$S le fa'amatalaga fa'atatau fa'aaliga, hardware, "
+#~ "meafa'aaogā ma fetu'una'iina i tua le %2$S fesoasoani e solo i luma le "
+#~ "%3$S."
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Always Share"
+#~ msgstr "Tufatufa taimi lava"
+
+#~ msgid "Never Share"
+#~ msgstr "'Aua lava ne'i tufatufa"
+
+#~ msgid "%S wants your location."
+#~ msgstr "%S e te mana'o lou tūlaga."
+
+#~ msgid "%S wants to use notifications."
+#~ msgstr "E te mana'o ona fai %S le notifications."
+
+#~ msgid "Error:"
+#~ msgstr "Sesē:"
+
+#~ msgid "Warning:"
+#~ msgstr "Lapata'iga:"
+
+#~ msgctxt "offlineApps.never"
+#~ msgid "Don't Allow"
+#~ msgstr "'Aua fa'ataga"
+
+#~ msgid "Not Now"
+#~ msgstr "Leai Se Taimi Nei"
+
+#~ msgctxt "offlineApps.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "'Aua Fa'ataga"
+
+#~ msgctxt "offlineApps.wantsTo"
+#~ msgid "%S wants to store data on your device for offline use."
+#~ msgstr "E te mana'o ona teuga %S le data i lou togafiti e faia laina-'ese."
+
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "Fa'ataga"
+
+#~ msgctxt "indexedDBQuota.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "'Aua fa'ataga"
+
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "Fa'ataga"
+
+#~ msgctxt "openWebappsManage.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "'Aua fa'ataga"
+
+#~ msgid "%S wants to manage applications on your device."
+#~ msgstr "E te mana'o ona pūlea %S le polokalame-komepiuta i lou togafiti."
+
+#~ msgid "Remember Password"
+#~ msgstr "Mānatua 'Upulilo"
+
+#~ msgid "Remember"
+#~ msgstr "Mānatua"
+
+#~ msgid "Desktop Bookmarks"
+#~ msgstr "Tusi-togi o le Laulau-luga"
+
+#~ msgid "Confirm close"
+#~ msgstr "Fa'amausalī tāpuniga"
+
+#~ msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#~ msgstr "E LĒ FA'AAOGĀ; E fia tāpuni 'oe le #1 tama'i-ufitaga. Fa'aauau?"
+
+#~ msgid "Close tabs"
+#~ msgstr "Tāpuni 'uma tama'i-ufitaga"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "Lapata'i mai pe 'ā 'ou taumafai e tāpuni ia tama'i-ufitaga 'uma"
+
+#~ msgid "Sorry!"
+#~ msgstr "Fa'amālūlū atu!"
+
+#~ msgid "Something went wrong while displaying a web page."
+#~ msgstr "Sesē i le taimi fā'aliga le itūlau web."
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "'Ave i le Mozilla le līpoti o le palasi"
+
+#~ msgid "Close tab"
+#~ msgstr "Tāpuni tama'i-ufitaga"
+
+#~ msgid "Reload tab"
+#~ msgstr "Toe la'u le tama'i-ufitaga"
+
+#~ msgid "Custom Page"
+#~ msgstr "Itūlau Fetu'una'i"
+
+#~ msgid "Search With:"
+#~ msgstr "Su'e mai le:"
+
+#~ msgid "Search for \"%S\""
+#~ msgstr "Su'e mo \"%S\""
+
+#~ msgid "Open in %S App"
+#~ msgstr "Tatala i le App %S"
+
+#~ msgid "Open in Another App"
+#~ msgstr "Tatala i le isi App"
+
+#~ msgid "Clear Private Data"
+#~ msgstr "Fa'amamā le data patino"
+
+#~ msgid ""
+#~ "Delete your browsing history and settings, including passwords and "
+#~ "cookies?"
+#~ msgstr ""
+#~ "Tia'i lou sā'ili mea tuana'i ma fa'atonutonu, aofia ai le 'upulilo ma "
+#~ "kuki?"
+
+#~ msgid "More"
+#~ msgstr "Isi mea"
+
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "Ioe"
+
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "Leai"
+
+#~ msgid "Play Plugins"
+#~ msgstr "Fa'aola sulu-totonu"
+
+#~ msgctxt "helperapps.never"
+#~ msgid "Never"
+#~ msgstr "'Aua lava ne'i"
 
 #~ msgid "A new theme has been installed."
 #~ msgstr "Ua 'uma ona fa'anofoina le 'autū fou."
