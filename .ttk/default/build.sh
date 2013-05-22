@@ -178,12 +178,19 @@ if [ $opt_vc ]; then
 	done
 	rm -rf ${PO_DIR}/en-US
 	get_moz_enUS.py $get_moz_enUS_verbosity -s ${MOZCENTRAL_DIR} -d ${PO_DIR} -p ${MOZ_PRODUCT}
-	mv ${PO_DIR}/en-US/* ${L10N_ENUS}/
+	for pdir in ${PRODUCT_DIRS}
+	do
+		mv ${PO_DIR}/en-US/$pdir ${L10N_ENUS}/
+	done
 	rm -rf ${PO_DIR}/en-US
 	
 	verbose "moz2po - Create POT files from en-US"
+	for exclude in $RETIRED_PRODUCT_DIRS $OTHER_EXCLUDED_DIRS ".hg"
+	do
+		excludes="$excludes --exclude=$exclude"
+	done
 	(cd ${L10N_ENUS}
-	moz2po --errorlevel=$errorlevel --progress=$progress -P --duplicates=msgctxt --exclude '.hg'  . ${POT_DIR}
+	moz2po --errorlevel=$errorlevel --progress=$progress $excludes -P --duplicates=msgctxt . ${POT_DIR}
 	)
 	if [ $USECPO -eq 0 ]; then
 		(cd ${POT_DIR}

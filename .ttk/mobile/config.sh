@@ -11,10 +11,10 @@ opt_verbose=3
 
 # FIXME we should build this from the get_moz_enUS script
 # Directories in language repositories to clear before running po2moz
-PRODUCT_DIRS="mobile embedding"
+PRODUCT_DIRS="mobile"
 # Directories in language repositories to clear before running po2moz
 RETIRED_PRODUCT_DIRS=""
 
-OTHER_EXCLUDED_DIRS="editor mail thunderbird chat browser dom security services toolkit"
+OTHER_EXCLUDED_DIRS="editor mail thunderbird chat browser dom security services toolkit embedding"
 
 MOZ_PRODUCT=mobile
