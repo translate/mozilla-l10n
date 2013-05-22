@@ -166,7 +166,7 @@ rsync_files_put() {
 	assemble_phase $langs
 
 	# FIXME we can probably do this in one go
-	log_debug "rsync file to Pootle"
+	log_debug "rsync file to Pootle and update_stores"
 	for lang in $langs
 	do
 		# FIXME only sync if we copied up correctly, this way we catch permission errors quickly
