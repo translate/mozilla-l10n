@@ -98,7 +98,7 @@ done
 
 # Check requirements:
 # FIXME we don't check if we're using language_options.txt
-require git hg moz2po po2moz get_moz_enUS.py
+require git hg moz2po po2moz get_moz_enUS.py pomigrate2
 [ opt_compare_locales ] && require compare-locales
 [ opt_build_xpi ] && require buildxpi.py
 [ opt_tarball ] && require tar
