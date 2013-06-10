@@ -178,7 +178,8 @@ if [ $opt_vc ]; then
 	get_moz_enUS.py $get_moz_enUS_verbosity -s ${MOZCENTRAL_DIR} -d ${PO_DIR} -p ${MOZ_PRODUCT}
 	for pdir in ${PRODUCT_DIRS}
 	do
-		mv ${PO_DIR}/en-US/$pdir ${L10N_ENUS}/
+		mkdir -p  ${L10N_ENUS}/$pdir
+		mv ${PO_DIR}/en-US/$pdir/* ${L10N_ENUS}/$pdir/
 	done
 	rm -rf ${PO_DIR}/en-US
 	
