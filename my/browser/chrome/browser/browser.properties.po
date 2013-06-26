@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-17 16:32+0200\n"
+"POT-Creation-Date: 2013-06-26 14:48+0100\n"
 "PO-Revision-Date: 2013-06-05 11:17+0000\n"
 "Last-Translator: Kyaw Zwa <kyawzwathant@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1370431029.000000\n"
@@ -332,45 +332,6 @@ msgctxt "installPlugin.ignoreButton.accesskey"
 msgid "N"
 msgstr "N"
 
-#: outdatedpluginsMessage.title
-msgid "Some plugins used by this page are out of date."
-msgstr "ဤစာမျက်နှာတွင်အသုံးပြုထားသောအချို့သောပလပ်အင်များသည် ဗားရှင်းနောက်ကျလျှက်ရှိသည်။"
-
-#: outdatedpluginsMessage.updateButton.label
-msgctxt "outdatedpluginsMessage.updateButton.label"
-msgid "Update Plugins…"
-msgstr "ပလပ်အင်များအားအဆင့်မြှင့်တင်လျှက်"
-
-#: outdatedpluginsMessage.updateButton.accesskey
-msgctxt "outdatedpluginsMessage.updateButton.accesskey"
-msgid "U"
-msgstr "U"
-
-#: blockedpluginsMessage.title
-msgid ""
-"Some plugins required by this page have been blocked for your protection."
-msgstr "ဤဝတ်စာမျက်နှာမှလိုအပ်နေသောအချို့ပလပ်အင်များအားသင်၏လုံခြုံရေးကိုကာကွယ်သောအားဖြင့်ပိတ်ပင်ထားပါသည်။"
-
-#: blockedpluginsMessage.infoButton.label
-msgctxt "blockedpluginsMessage.infoButton.label"
-msgid "Details…"
-msgstr "အသေးစိတ်..."
-
-#: blockedpluginsMessage.infoButton.accesskey
-msgctxt "blockedpluginsMessage.infoButton.accesskey"
-msgid "D"
-msgstr "D"
-
-#: blockedpluginsMessage.searchButton.label
-msgctxt "blockedpluginsMessage.searchButton.label"
-msgid "Update Plugins…"
-msgstr "ပလပ်အင်များအားအဆင့်မြှင့်တင်လျှက်"
-
-#: blockedpluginsMessage.searchButton.accesskey
-msgctxt "blockedpluginsMessage.searchButton.accesskey"
-msgid "U"
-msgstr "U"
-
 #: crashedpluginsMessage.title
 msgid "The %S plugin has crashed."
 msgstr "The %S plugin has crashed."
@@ -398,69 +359,149 @@ msgctxt "crashedpluginsMessage.learnMore"
 msgid "Learn More…"
 msgstr "ဆက်လက်လေ့လာပါ။"
 
-#: activatePluginsMessage.message
-msgid "Would you like to activate the plugins on this page?"
-msgstr "သင်တက်လာသော ပလပ်အင်အား ယခုစာမျက်နှာအတွက် အသုံးပြုမည်လား ?"
+#. ## Plugin doorhanger strings
+#. # LOCALIZATION NOTE (pluginActivateNw.message): Used for newly-installed
+#. # plugins which are not known to be unsafe. %1$S is the plugin name and %2$S
+#. # is the site domain.
+#: pluginActivateNew.message
+msgid "Allow %2$S to run \"%1$S\"?"
+msgstr ""
 
-#: activateAllPluginsMessage.label
-msgid "Activate All Plugins"
-msgstr "ပလပ်အင် အားလုံးအား အသုံးပြုမည်။"
+#: pluginActivateMultiple.message
+msgid "Allow %S to run plugins?"
+msgstr ""
 
-#: activatePluginsMessage.accesskey
-msgctxt "activatePluginsMessage.accesskey"
-msgid "A"
-msgstr "A"
+#: pluginActivate.learnMore
+#, fuzzy
+msgctxt "pluginActivate.learnMore"
+msgid "Learn More…"
+msgstr "ဆက်လက်လေ့လာပါ။"
 
-#: activatePluginsMessage.always
-msgid "Always activate plugins for this site"
-msgstr "ဒီ ဝဘ်ဆိုက်အတွက် ပလပ်အင်တွေကို အမြဲဖွင့်ထားမယ်"
+#. # LOCALIZATION NOTE (pluginActivateOutdated.message, pluginActivateOutdated.label):
+#. # These strings are used when an unsafe plugin has an update available.
+#. # %1$S is the plugin name, %2$S is the domain, and %3$S is brandShortName.
+#: pluginActivateOutdated.message
+msgid "%3$S has prevented the outdated plugin \"%1$S\" from running on %2$S."
+msgstr ""
 
-#: activatePluginsMessage.always.accesskey
-msgid "c"
-msgstr "c"
+#: pluginActivateOutdated.label
+msgid "Outdated plugin"
+msgstr ""
 
-#: activatePluginsMessage.never
-msgid "Never activate plugins for this site"
-msgstr "ဒီဝဘ်ဆိုက်အတွက် ပလပ်အင်တွေကို လုံး၀မဖွင့်ပါ"
+#: pluginActivate.updateLabel
+#, fuzzy
+msgid "Update now…"
+msgstr "ယခုအဆင့်မြှင့်တင်ပါ"
 
-#: activatePluginsMessage.never.accesskey
-msgctxt "activatePluginsMessage.never.accesskey"
+#. # LOCALIZATION NOTE (pluginActivateVulnerable.message, pluginActivateVulnerable.label):
+#. # These strings are used when an unsafe plugin has no update available.
+#. # %1$S is the plugin name, %2$S is the domain, and %3$S is brandShortName.
+#: pluginActivateVulnerable.message
+msgid "%3$S has prevented the unsafe plugin \"%1$S\" from running on %2$S."
+msgstr ""
+
+#: pluginActivateVulnerable.label
+#, fuzzy
+msgid "Vulnerable plugin!"
+msgstr "အန္တရာယ်ရှိသော ပလပ်အင်!"
+
+#: pluginActivate.riskLabel
+msgid "What's the risk?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (pluginActivateBlocked.message): %1$S is the plugin name, %2$S is brandShortName
+#: pluginActivateBlocked.message
+msgid "%2$S has blocked \"%1$S\" for your protection."
+msgstr ""
+
+#: pluginActivateBlocked.label
+msgid "Blocked for your protection"
+msgstr ""
+
+#: pluginActivateDisabled.message
+msgid "\"%S\" is disabled."
+msgstr ""
+
+#: pluginActivateDisabled.label
+msgid "Disabled"
+msgstr "ပိတ်ထားတယ်"
+
+#: pluginActivateDisabled.manage
+msgid "Manage plugins…"
+msgstr "ပလပ်အင်များအားစီမံမည်"
+
+#: pluginEnabled.message
+msgid "\"%S\" is enabled on %S."
+msgstr ""
+
+#: pluginEnabledOutdated.message
+msgid "Outdated plugin \"%S\" is enabled on %S."
+msgstr ""
+
+#: pluginEnabledVulnerable.message
+msgid "Insecure plugin \"%S\" is enabled on %S."
+msgstr ""
+
+#: pluginInfo.unknownPlugin
+msgid "Unknown"
+msgstr "မသိသော"
+
+#. # LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.dtd
+#. # LOCALIZATION NOTE (pluginActivateNow.label): This button will enable the
+#. # plugin in the current session for an short time (about an hour), auto-renewed
+#. # if the site keeps using the plugin.
+#: pluginActivateNow.label
+msgid "Allow Now"
+msgstr ""
+
+#: pluginActivateNow.accesskey
+msgctxt "pluginActivateNow.accesskey"
 msgid "N"
-msgstr "N"
+msgstr ""
 
-#: activateSinglePlugin
-msgid "Activate"
-msgstr "ဖွင့်ထားပါ"
+#. # LOCALIZATION NOTE (pluginActivateAlways.label): This button will enable the
+#. # plugin for a long while (90 days), auto-renewed if the site keeps using the
+#. # plugin.
+#: pluginActivateAlways.label
+msgid "Allow and Remember"
+msgstr ""
 
+#: pluginActivateAlways.accesskey
+msgctxt "pluginActivateAlways.accesskey"
+msgid "R"
+msgstr ""
+
+#: pluginBlockNow.label
+msgid "Block Plugin"
+msgstr ""
+
+#: pluginBlockNow.accesskey
+msgctxt "pluginBlockNow.accesskey"
+msgid "B"
+msgstr ""
+
+#: pluginContinue.label
+msgid "Continue Allowing"
+msgstr ""
+
+#: pluginContinue.accesskey
+msgctxt "pluginContinue.accesskey"
+msgid "C"
+msgstr ""
+
+#. # in-page UI
 #: PluginClickToActivate
 msgid "Activate %S."
 msgstr "%S  အတည်ပြု"
 
-#. # LOCALIZATION NOTE - "vulnerable" indicates there is a security bug in the
-#. # plugin that is being exploited by attackers.
 #: PluginVulnerableUpdatable
-msgid "This plugin is vulnerable and should be updated."
+#, fuzzy
+msgid "Thus plugin is vulnerable and should be updated."
 msgstr "ဤ ပလပ်အင်သည် လုံခြုံရေး ထိခိုက်နိုင်ဖွယ်ရှိပြီး အဆင့်မြှင်တင်သင့်ပါသည်။"
 
 #: PluginVulnerableNoUpdate
 msgid "This plugin has security vulnerabilities."
 msgstr "ယခု ပလပ်အင်တွင် လုံခြုံရေးဆိုင်ရာ အားနည်းချက်များ ရှိနေပါသည်။"
-
-#: vulnerableUpdatablePluginWarning
-msgid "Outdated Version!"
-msgstr "ဟောင်းနွမ်းနေသော မူသတ်မှတ်ချက်!"
-
-#: vulnerableNoUpdatePluginWarning
-msgid "Vulnerable Plugin!"
-msgstr "အန္တရာယ်ရှိသော ပလပ်အင်!"
-
-#: vulnerablePluginsMessage
-msgid "Some plugins have been deactivated for your safety."
-msgstr "အချို့သောပလပ်အင်အချို့အား သင့်လုံခြုံရေးအတွက် ပိတ်ထားလိုက်သည်။"
-
-#: pluginInfo.unknownPlugin
-msgid "Unknown"
-msgstr "မသိသော"
 
 #. # Sanitize
 #. # LOCALIZATION NOTE (sanitizeDialog2.everything.title): When "Time range to
@@ -754,7 +795,7 @@ msgstr "မှတ်သားချက်အားဖယ်ပါ;မှတ်�
 
 #. # Post Update Notifications
 #: pu.notifyButton.label
-msgctxt "pu.notifyButton.label"
+#, fuzzy
 msgid "Details…"
 msgstr "အသေးစိတ်..."
 
@@ -1224,7 +1265,7 @@ msgctxt "identity.loggedIn.signOut.accessKey"
 msgid "O"
 msgstr "O"
 
-#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message, getUserMedia.sharingCamera.message, getUserMedia.sharingMicrophone.message, getUserMedia.sharingCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
 #. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -1267,16 +1308,19 @@ msgctxt "getUserMedia.denyRequest.accesskey"
 msgid "D"
 msgstr "D"
 
-#: getUserMedia.sharingCamera.message
-msgid "You are currently sharing your camera with %S."
+#: getUserMedia.sharingCamera.message2
+#, fuzzy
+msgid "You are currently sharing your camera with this page."
 msgstr "ယခု သင်သည် %S နှင့် မိုက်ကရိုဖုန်းအား မျှသုံးနေသှ်။"
 
-#: getUserMedia.sharingMicrophone.message
-msgid "You are currently sharing your microphone with %S."
+#: getUserMedia.sharingMicrophone.message2
+#, fuzzy
+msgid "You are currently sharing your microphone with this page."
 msgstr "ယခု သင်သည် %S နှင့် မိုက်ကရိုဖုန်းအား မျှသုံးနေသှ်။"
 
-#: getUserMedia.sharingCameraAndMicrophone.message
-msgid "You are currently sharing your camera and microphone with %S."
+#: getUserMedia.sharingCameraAndMicrophone.message2
+#, fuzzy
+msgid "You are currently sharing your camera and microphone with this page."
 msgstr "ယခု သင်သည် %S နှင့် မိုက်ကရိုဖုန်း ကင်မရာများအား မျှသုံးနေသှ်"
 
 #. # Mixed Content Blocker Doorhanger Notification
@@ -1290,6 +1334,8 @@ msgid "Keep Blocking"
 msgstr "ပိတ်ဆို့နေ"
 
 #: mixedContentBlocked.keepBlockingButton.accesskey
+#, fuzzy
+msgctxt "mixedContentBlocked.keepBlockingButton.accesskey"
 msgid "B"
 msgstr "B"
 
@@ -1324,6 +1370,65 @@ msgstr "နောက်တစ်ကြိမ်ထပ်မပြောနှင
 msgctxt "slowStartup.disableNotificationButton.accesskey"
 msgid "A"
 msgstr "A"
+
+#~ msgid "Some plugins used by this page are out of date."
+#~ msgstr "ဤစာမျက်နှာတွင်အသုံးပြုထားသောအချို့သောပလပ်အင်များသည် ဗားရှင်းနောက်ကျလျှက်ရှိသည်။"
+
+#~ msgctxt "outdatedpluginsMessage.updateButton.label"
+#~ msgid "Update Plugins…"
+#~ msgstr "ပလပ်အင်များအားအဆင့်မြှင့်တင်လျှက်"
+
+#~ msgctxt "outdatedpluginsMessage.updateButton.accesskey"
+#~ msgid "U"
+#~ msgstr "U"
+
+#~ msgid ""
+#~ "Some plugins required by this page have been blocked for your protection."
+#~ msgstr "ဤဝတ်စာမျက်နှာမှလိုအပ်နေသောအချို့ပလပ်အင်များအားသင်၏လုံခြုံရေးကိုကာကွယ်သောအားဖြင့်ပိတ်ပင်ထားပါသည်။"
+
+#~ msgctxt "blockedpluginsMessage.searchButton.label"
+#~ msgid "Update Plugins…"
+#~ msgstr "ပလပ်အင်များအားအဆင့်မြှင့်တင်လျှက်"
+
+#~ msgctxt "blockedpluginsMessage.searchButton.accesskey"
+#~ msgid "U"
+#~ msgstr "U"
+
+#~ msgid "Would you like to activate the plugins on this page?"
+#~ msgstr "သင်တက်လာသော ပလပ်အင်အား ယခုစာမျက်နှာအတွက် အသုံးပြုမည်လား ?"
+
+#~ msgid "Activate All Plugins"
+#~ msgstr "ပလပ်အင် အားလုံးအား အသုံးပြုမည်။"
+
+#~ msgctxt "activatePluginsMessage.accesskey"
+#~ msgid "A"
+#~ msgstr "A"
+
+#~ msgid "Always activate plugins for this site"
+#~ msgstr "ဒီ ဝဘ်ဆိုက်အတွက် ပလပ်အင်တွေကို အမြဲဖွင့်ထားမယ်"
+
+#~ msgid "c"
+#~ msgstr "c"
+
+#~ msgid "Never activate plugins for this site"
+#~ msgstr "ဒီဝဘ်ဆိုက်အတွက် ပလပ်အင်တွေကို လုံး၀မဖွင့်ပါ"
+
+#~ msgctxt "activatePluginsMessage.never.accesskey"
+#~ msgid "N"
+#~ msgstr "N"
+
+#~ msgid "Activate"
+#~ msgstr "ဖွင့်ထားပါ"
+
+#~ msgid "Outdated Version!"
+#~ msgstr "ဟောင်းနွမ်းနေသော မူသတ်မှတ်ချက်!"
+
+#~ msgid "Some plugins have been deactivated for your safety."
+#~ msgstr "အချို့သောပလပ်အင်အချို့အား သင့်လုံခြုံရေးအတွက် ပိတ်ထားလိုက်သည်။"
+
+#~ msgctxt "pu.notifyButton.label"
+#~ msgid "Details…"
+#~ msgstr "အသေးစိတ်..."
 
 #~ msgid ""
 #~ "Additional plugins are required to display all the media on this page."
