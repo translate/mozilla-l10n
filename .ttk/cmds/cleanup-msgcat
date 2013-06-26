@@ -1,0 +1,21 @@
+#!/bin/bash
+
+require msgcat
+
+function usage() {
+	echo "Usage: cleanup-msgcat [language(s)]"
+	exit
+}
+
+function cleanup-msgcat() {
+	_find_config_base_dir
+	local langs=$*
+	for lang in $langs
+	do
+		polang=$(get_language_pootle $lang)
+		for po in $(find $base_dir/$polang -name "*.po")
+		do
+			msgcat -o $po.2 $po 2> >(egrep -v "internationali[sz]ed messages should not contain the .* escape sequence" >&2) && mv $po.2 $po
+		done
+	done
+}
