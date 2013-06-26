@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# FIXME this should come from config
+MOZCENTRAL_DIR=${base_dir}/source/mozilla-aurora
+L10N_DIR=${base_dir}/build/l10n
+
+require compare-locales
+
+function usage() {
+	echo "Usage: compare-locales [language(s)]"
+	exit
+}
+
+function compare-locale() {
+	#compare-locales ${SOURCE_DIR}/${MOZ_PRODUCT}/locales/l10n.ini ${L10N_DIR} $*
+	langs=$*
+	for lang in $langs
+	do
+		mozlangs="$mozlangs $(get_language_upstream $lang)"
+	done
+	compare-locales ${MOZCENTRAL_DIR}/${MOZ_PRODUCT}/locales/l10n.ini ${L10N_DIR} $mozlangs
+}
