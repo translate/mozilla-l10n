@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-17 16:32+0200\n"
+"POT-Creation-Date: 2013-06-26 14:48+0100\n"
 "PO-Revision-Date: 2013-05-09 17:14+0000\n"
 "Last-Translator: anipeter <peter.ani@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -175,6 +175,30 @@ msgstr "അനുവദിച്ചിരിയ്ക്കുന്നതിന
 msgid "Can't convert \"%S\" to an integer."
 msgstr "\"%S\"-നെ ഒരു ഇന്റിജറായി വേര്‍തിരിയ്ക്കുവാന്‍ സാധ്യമല്ല."
 
+#. # LOCALIZATION NOTE (typesDateNan): When the command line is passed a date,
+#. # however the input string is not a valid date, this error message is
+#. # displayed.
+#: typesDateNan
+#, fuzzy
+msgid "Can't convert \"%S\" to a date."
+msgstr "\"%S\"-നെ ഒരു അക്കമായി വേര്‍തിരിയ്ക്കുവാന്‍ സാധ്യമല്ല."
+
+#. # LOCALIZATION NOTE (typesDateMax): When the command line is passed a date,
+#. # but the number is later than the latest allowed date, this error message is
+#. # displayed.
+#: typesDateMax
+#, fuzzy
+msgid "%1$S is later than maximum allowed: %2$S."
+msgstr "അനുവദിച്ചിരിയ്ക്കുന്നതിനേക്കാള്‍ കൂടുതലാകുന്നു %1$S: %2$S."
+
+#. # LOCALIZATION NOTE (typesDateMin): When the command line is passed a date,
+#. # but the date is earlier than the earliest allowed number, this error message
+#. # is displayed.
+#: typesDateMin
+#, fuzzy
+msgid "%1$S is earlier than minimum allowed: %2$S."
+msgstr "അനുവദിച്ചിരിയ്ക്കുന്നതിനേക്കാള്‍ ചെറുതാകുന്നു %1$S: %2$S."
+
 #. # LOCALIZATION NOTE (typesSelectionNomatch): When the command line is passed
 #. # an option with a limited number of correct values, but the passed value is
 #. # not one of them, this error message is displayed.
@@ -288,7 +312,8 @@ msgstr "'%1$S'-ല്‍ ആരംഭിയ്ക്കുന്ന കമാന
 
 #. # LOCALIZATION NOTE (helpManRequired): When the 'help x' command wants to show
 #. # the manual for the 'x' command it needs to be able to describe the
-#. # parameters as either required or optional. See also 'helpManOptional'.
+#. # parameters as either required or optional, or if they have a default value.
+#. # See also 'helpManOptional' and 'helpManDefault'.
 #: helpManRequired
 msgid "required"
 msgstr "ആവശ്യമുള്ളവ"
@@ -297,6 +322,12 @@ msgstr "ആവശ്യമുള്ളവ"
 #: helpManOptional
 msgid "optional"
 msgstr "നിര്‍ബന്ധമല്ല"
+
+#. # LOCALIZATION NOTE (helpManDefault): See description of 'helpManRequired'. %1$
+#. # S is the default value
+#: helpManDefault
+msgid "optional, default=%1$S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (subCommands): Text shown as part of the output of the
 #. # 'help' command when the command in question has sub-commands, before a list
@@ -441,10 +472,25 @@ msgctxt "disconnectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr ""
 
+#. # LOCALIZATION NOTE (disconnectForceDesc): A short description of the 'force'
+#. # parameter to the 'disconnect' command. This string is designed to be shown
+#. # in a dialog with restricted space, which is why it should be as short as
+#. # possible.
+#: disconnectForceDesc
+msgid "Ignore outstanding requests"
+msgstr ""
+
 #. # LOCALIZATION NOTE (disconnectReply): The output of the 'disconnect' command,
 #. # telling the user what it's done.
 #: disconnectReply
 msgid "Removed %S commands."
+msgstr ""
+
+#. # LOCALIZATION NOTE (disconnectOutstanding): An error message displayed when
+#. # the user attempts to disconnect before all requests have completed. %1$S is
+#. # a list of commands which are incomplete
+#: disconnectOutstanding
+msgid "Outstanding requests (%1$S)"
 msgstr ""
 
 #. # LOCALIZATION NOTE (prefDesc): A very short description of the 'pref'
@@ -719,7 +765,9 @@ msgid "Show the initial welcome message"
 msgstr "പ്രാരംഭ സ്വാഗത സന്ദേശം കാണിയ്ക്കുക"
 
 #. # LOCALIZATION NOTE (eagerHelperDesc): Short description of the 'eagerHelper'
-#. # setting. Displayed when the user asks for help on the settings.
+#. # setting. Displayed when the user asks for help on the settings. eagerHelper
+#. # allows users to select between showing no tooltips, permanent tooltips, and
+#. # only important tooltips
 #: eagerHelperDesc
 msgid "How eager are the tooltips"
 msgstr "സൂചികകള്‍ സഹാകരമാണോ?"
