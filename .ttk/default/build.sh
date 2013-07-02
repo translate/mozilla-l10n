@@ -263,7 +263,7 @@ do
 	do
 		excludes="$excludes --exclude=$exclude"
 	done
-	po2moz --progress=$progress --errorlevel=$errorlevel --exclude=".git" --exclude=".hg" --exclude=".hgtags" --exclude="obsolete" --exclude="*~" $excludes \
+	po2moz --removeuntranslated --progress=$progress --errorlevel=$errorlevel --exclude=".git" --exclude=".hg" --exclude=".hgtags" --exclude="obsolete" --exclude="*~" $excludes \
 		-t ${L10N_ENUS} -i ${PO_DIR}/${polang} -o ${L10N_DIR}/${mozlang}
 
 	if [ $opt_copyfiles ]; then
