@@ -1,0 +1,35 @@
+#!/bin/bash
+
+require moz2po
+
+_find_config_base_dir
+BUILD_DIR="${base_dir}/build"
+L10N_DIR="${BUILD_DIR}/l10n"
+PO_DIR="${base_dir}"
+L10N_ENUS="${PO_DIR}/templates-en-US"
+
+function usage() {
+	echo "Usage: recover-lang [option] [language(s)]"
+	echo
+	echo "By default recover from an already checked our Mercurial repo"
+	exit 1
+# TODO
+#--xpi - do a recovery from an XPI
+#--narro-zip - do a recovery from a Narro ZIP file
+}
+
+
+function recover-lang() {
+	local langs=$*
+	for lang in $langs
+	do
+		mozlang=$(get_language_upstream $lang)
+		polang=$(get_language_pootle $lang)
+		moz2po --progress=$progress --errorlevel=$errorlevel --exclude=".hgtags" -t $L10N_ENUS $L10N_DIR/$mozlang $PO_DIR/$polang
+	done
+
+	# Remove any non-PO files
+	[ -d  $PO_DIR/$polang ] && rm $(find $PO_DIR/$polang -type f | egrep -v "\.po$")
+	
+	clean_po_location $PO_DIR $langs
+}
