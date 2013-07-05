@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-05-22 14:30+0100\n"
+"POT-Creation-Date: 2013-07-05 14:33+0100\n"
 "PO-Revision-Date: 2013-06-10 21:06+0000\n"
 "Last-Translator: Khaled <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -58,7 +58,7 @@ msgid "Switch to tab"
 msgstr "انتقل للسان"
 
 #: crash_reporter_title
-msgctxt "crash_reporter_title"
+#, fuzzy
 msgid "&brandShortName; Crash Reporter"
 msgstr "مبلغ انهيارات &brandShortName;"
 
@@ -70,9 +70,9 @@ msgstr ""
 "انهار &brandShortName;. ستجد ألسنتك مسرودة في صفحة بداية &brandShortName; "
 "عندما تعيد تشغيله."
 
-#: crash_send_report_message2
-msgid "Tell Mozilla about this crash so they can fix it"
-msgstr "أبلغ موزيلا بهذا الانهيار ليُمكنهم إصلاحه"
+#: crash_send_report_message3
+msgid "Tell &vendorShortName; about this crash so they can fix it"
+msgstr ""
 
 #: crash_include_url2
 msgid "Include the address of the page I was on"
@@ -86,9 +86,9 @@ msgstr "نعتذر"
 msgid "Add a comment (comments are publicly visible)"
 msgstr "ضع تعليقًا (التعليقات ظاهرة للعموم)"
 
-#: crash_allow_contact
-msgid "Allow Mozilla to contact me about this report"
-msgstr "اسمح لموزيلا بالتواصل معي بخصوص هذا البلاغ"
+#: crash_allow_contact2
+msgid "Allow &vendorShortName; to contact me about this report"
+msgstr ""
 
 #: crash_email
 msgid "Your email"
@@ -155,6 +155,10 @@ msgstr "أُزيلت العلامة"
 #: bookmark_updated
 msgid "Bookmark updated"
 msgstr "حُدّثت العلامة"
+
+#: bookmark_options
+msgid "Options"
+msgstr "الخيارات"
 
 #: history_today_section
 msgid "Today"
@@ -350,9 +354,9 @@ msgstr "مُعطّلة"
 msgid "Text size"
 msgstr "حجم النص"
 
-#: pref_reflow_on_zoom2
-msgid "Pinch to reflow text"
-msgstr "اقرص لتغيير انسياب النص"
+#: pref_reflow_on_zoom3
+msgid "Double tap to reflow text"
+msgstr ""
 
 #: pref_font_size_tiny
 msgid "Tiny"
@@ -454,6 +458,10 @@ msgstr "الملفّات المُنزّلة"
 msgid "&brandShortName; stats &amp; data"
 msgstr "بيانات و إحصائيات &brandShortName;"
 
+#: datareporting_notification_action_long
+msgid "Choose what information to share"
+msgstr ""
+
 #: datareporting_notification_action
 msgid "Choose what to share"
 msgstr " اختر ما الذي تريد مشاركته"
@@ -470,22 +478,30 @@ msgstr ""
 msgid "To improve your experience, &brandShortName;…"
 msgstr "لتَحسين استخدامك له، &brandShortName;…"
 
-#. Localization note (datareporting_fhr_title, datareporting_fhr_summary,
+#: datareporting_notification_ticker_text
+msgid ""
+"&datareporting_notification_title;: &datareporting_notification_action_long;"
+msgstr ""
+
+#. Localization note (datareporting_fhr_title, datareporting_fhr_summary2,
 #. reporting_telemetry_title, datareporting_telemetry_summary,
 #. datareporting_crashreporter_summary) : These match the strings in
-#. chrome/browser/preferences/advanced.dtd (healthReportSection.label,
+#. en-US/chrome/browser/preferences/advanced.dtd (healthReportSection.label,
 #. healthReportDesc.label, telemetrySection.label, telemetryDesc.label,
 #. crashReporterDesc.label).
 #: datareporting_fhr_title
 msgid "&brandShortName; Health Report"
 msgstr "تقرير حالة &brandShortName;"
 
-#: datareporting_fhr_summary
+#: datareporting_fhr_summary2
 msgid ""
-"Helps you understand your browser performance and shares data with "
-"&vendorShortName; about your browser health"
+"Shares data with &vendorShortName; about your browser health and helps you "
+"understand your browser performance"
 msgstr ""
-"يساعدك في تفحص أداء متصفحك ومشاركة بيانات حالة المتصفح مع &vendorShortName;"
+
+#: datareporting_abouthr_title
+msgid "View my Health Report"
+msgstr ""
 
 #: datareporting_telemetry_title
 msgid "Telemetry"
@@ -507,13 +523,21 @@ msgstr ""
 "يُرسل &brandShortName; بلاغات الانهيار إلى &vendorShortName; للمساعدة في "
 "تحسين أداء متصفحك و استقراره"
 
-#. Localization note (datareporting_crashreporter_title) : This string matches
-#. (crashReporterSection.label) in chrome/browser/preferences/advanced.dtd
-#. except in branding.
-#: datareporting_crashreporter_title
-msgctxt "datareporting_crashreporter_title"
-msgid "&brandShortName; Crash Reporter"
-msgstr "مبلغ انهيارات &brandShortName;"
+#. Localization note (datareporting_crashreporter_title_short) : This string matches
+#. (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.
+#: datareporting_crashreporter_title_short
+msgid "Crash Reporter"
+msgstr ""
+
+#: datareporting_wifi_title
+msgid "&vendorShortName; location services"
+msgstr ""
+
+#: datareporting_wifi_summary
+msgid ""
+"Help improve geolocation services for the Open Web by letting "
+"&brandShortName; collect and send anonymous cellular tower data"
+msgstr ""
 
 #: pref_update_autodownload
 msgid "Automatic updates"
@@ -917,6 +941,37 @@ msgstr "تتصل ب‍"
 msgid "which is run by"
 msgstr "والذي يعمل ب‍"
 
+#. Mixed content notifications in site identity popup
+#: loaded_mixed_content_message
+msgid "This page is displaying content that isn't secure."
+msgstr ""
+
+#: blocked_mixed_content_message_top
+msgid "&brandShortName; has blocked content that isn't secure."
+msgstr ""
+
+#: blocked_mixed_content_message_bottom
+msgid ""
+"Most websites will still work properly even when this content is blocked."
+msgstr ""
+
+#: learn_more
+#, fuzzy
+msgid "Learn More"
+msgstr "اطّلع على المزيد…"
+
+#: enable_protection
+msgid "Enable protection"
+msgstr ""
+
+#: disable_protection
+msgid "Disable protection"
+msgstr ""
+
+#: keep_blocking
+msgid "Keep blocking"
+msgstr ""
+
 #: private_data_success
 msgid "Private data cleared"
 msgstr "مُسحت البيانات الخاصة"
@@ -1005,6 +1060,26 @@ msgstr "يتوفر تحديث &brandShortName;"
 #: updater_apply_select2
 msgid "Touch to update"
 msgstr "المس للتحديث"
+
+#~ msgid "Tell Mozilla about this crash so they can fix it"
+#~ msgstr "أبلغ موزيلا بهذا الانهيار ليُمكنهم إصلاحه"
+
+#~ msgid "Allow Mozilla to contact me about this report"
+#~ msgstr "اسمح لموزيلا بالتواصل معي بخصوص هذا البلاغ"
+
+#~ msgid "Pinch to reflow text"
+#~ msgstr "اقرص لتغيير انسياب النص"
+
+#~ msgid ""
+#~ "Helps you understand your browser performance and shares data with "
+#~ "&vendorShortName; about your browser health"
+#~ msgstr ""
+#~ "يساعدك في تفحص أداء متصفحك ومشاركة بيانات حالة المتصفح مع "
+#~ "&vendorShortName;"
+
+#~ msgctxt "datareporting_crashreporter_title"
+#~ msgid "&brandShortName; Crash Reporter"
+#~ msgstr "مبلغ انهيارات &brandShortName;"
 
 #~ msgid "Please help us fix this problem!"
 #~ msgstr "ساعِدنا على حل هذه المشكلة!"
