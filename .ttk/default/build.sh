@@ -289,7 +289,7 @@ do
 	if [ "$opt_build_xpi" -o "$(should_build $lang xpi)" ]; then
 		mkdir -p ${LANGPACK_DIR}
 		verbose "Language Pack - create an XPI"
-		buildxpi.py -d -L ${L10N_DIR} -s ${MOZCENTRAL_DIR} -o ${LANGPACK_DIR} ${mozlang}
+		buildxpi.py -d -L ${L10N_DIR} -s ${MOZCENTRAL_DIR} -o ${LANGPACK_DIR} --soft-max-version ${mozlang}
 	fi
 
 	# COMPARE LOCALES
