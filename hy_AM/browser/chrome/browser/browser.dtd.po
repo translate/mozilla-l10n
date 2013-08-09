@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2013-07-14 09:40+0000\n"
 "Last-Translator: Hrant <hrant@freenet.am>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1373794813.000000\n"
@@ -75,6 +75,15 @@ msgstr "&Էջանշել բոլոր էջերը"
 msgid "&Undo Close Tab"
 msgstr "&Վերականգնել փակված էջը"
 
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
+msgstr "&Վերականգնել փակված էջը"
+
 #: closeTab.label closeTab.accesskey
 msgid "&Close Tab"
 msgstr "&Փակել էջը"
@@ -129,6 +138,10 @@ msgstr "Աշխա&տել անցանց "
 msgid "&Menu Bar"
 msgstr "&Ընտրացանկի վահանակ"
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "&Ուղղորդման Վահանակ"
@@ -140,10 +153,6 @@ msgstr "&Էջանիշերի Վահանակ"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "Էջանիշերի Վահանակի տարրերը"
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr "&Հավելումների ցուցափեղկ"
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -214,13 +223,9 @@ msgstr "Թույլատրել"
 msgid "Deny"
 msgstr "Արգելել"
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr "Թույլատրե՞լ Ամբողջ Էկրանով։"
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
-msgstr "Սեղմեք ESC՝ Ամբողջ էկրանով վիճակից դուրս գալու համար"
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -365,26 +370,14 @@ msgstr "Հասցե"
 msgid "Search"
 msgstr "Որոնում"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "Գործողության ինդիկատոր"
-
 #: bookmarksItem.title
 msgctxt "bookmarksItem.title"
 msgid "Bookmarks"
 msgstr "Էջանիշեր"
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr "Ընտրացանկը"
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr "Բացել &brandShortName; ընտրացանկը"
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "Տուն"
 
@@ -396,23 +389,10 @@ msgstr "Էջանիշի խմբեր"
 msgid "Group your tabs"
 msgstr "Խմբավորեք Ձեր էջերը"
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "Բաժանորդագրվել"
-
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "Բաժանորդագրվել այս էջին..."
-
 #: bookmarksButton.label
 msgctxt "bookmarksButton.label"
 msgid "Bookmarks"
 msgstr "Էջանիշներ"
-
-#: bookmarksButton.tooltip
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "Ցուցադրել ձեր էջանիշները"
 
 #: bookmarksCmd.commandkey
 msgid "b"
@@ -458,10 +438,6 @@ msgstr "i"
 msgid "History"
 msgstr "Պատմություն"
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "Ցուցադրել ձեր այցելած վերջին էջերը"
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -473,10 +449,6 @@ msgstr "&Գործիքներ"
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "Ավելացնել &Բանալի այս Որոնմանը…"
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "Որոնում &Ցանցում"
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -507,6 +479,15 @@ msgstr "A"
 #: webDeveloperMenu.label webDeveloperMenu.accesskey
 msgid "&Web Developer"
 msgstr "&Վեբ ծրագրավորող"
+
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F2"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
 
 #: devtoolsConnect.label devtoolsConnect.accesskey
 msgid "Conn&ect…"
@@ -594,6 +575,16 @@ msgstr "F2"
 #: devToolboxMenuItem.label devToolboxMenuItem.accesskey
 msgid "&Toggle Tools"
 msgstr "&Ցուցադրել/Թաքցնել գործիքները"
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
+msgstr ""
 
 #: devToolbarToolsButton.tooltip
 msgid "Toggle developer tools"
@@ -724,10 +715,6 @@ msgstr "Կողային &վահանակ"
 msgid "&Customize…"
 msgstr "&Հարմարեցնել…"
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr "&Ներդիրները վերևում"
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "Պա&տմություն"
@@ -745,11 +732,6 @@ msgstr "Վերջին փակված պատուհանները"
 msgid "Restore Previous Session"
 msgstr "Վերականգնել նախորդ սեսիան"
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "Տուն"
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "Ցուցադրել ամբողջ պատմությունը"
@@ -758,42 +740,9 @@ msgstr "Ցուցադրել ամբողջ պատմությունը"
 msgid "H"
 msgstr "H"
 
-#: appMenuEdit.label
-msgid "Edit"
-msgstr "Խմբագրել"
-
 #: appMenuCustomize.label
 msgid "Customize"
 msgstr "Կազմաձևել"
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr "Գործիքադարակի դասավորություն…"
-
-#: appMenuSidebars.label
-msgid "Sidebars"
-msgstr "Կողային վահանակներ"
-
-#: appMenuFind.label
-msgid "Find…"
-msgstr "Գտնել…"
-
-#: appMenuUnsorted.label
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "Չկարգավորված Էջանիշեր"
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr "Վեբ ծրագրավորող"
-
-#: appMenuGettingStarted.label
-msgid "Getting Started"
-msgstr "Աշխատանքի Սկիզբը"
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr "&Վերագործարկել հավելումներն անջատված…"
 
 #: openCmd.commandkey
 msgctxt "openCmd.commandkey"
@@ -924,6 +873,10 @@ msgstr "Նայել &Նկարը"
 #: viewImageInfoCmd.label viewImageInfoCmd.accesskey
 msgid "View Image In&fo"
 msgstr "&Տեղեկություն Նկարի Մասին"
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -1185,33 +1138,9 @@ msgstr "Նոր պատուհան բացել"
 msgid "Close sidebar"
 msgstr "Փակել կողավահանակը"
 
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "Կտրել"
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "Պատճենել"
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "Մեջբերել"
-
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
 msgstr "Ցուցադրել պատուհանը որջ էկրանով"
-
-#: zoomOutButton.tooltip
-msgid "Zoom out"
-msgstr "Մանրացնել"
-
-#: zoomInButton.tooltip
-msgid "Zoom in"
-msgstr "Խոշորացնել"
-
-#: zoomControls.label
-msgid "Zoom Controls"
-msgstr "Խոշորացման ղեկավարում"
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -1359,6 +1288,10 @@ msgstr "որը ղեկավարվում է"
 msgid "More Information…"
 msgstr "Մանրամասն..."
 
+#: identity.permissions
+msgid "Permissions"
+msgstr "Իրավունքներ"
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1392,14 +1325,6 @@ msgstr "&Սինք"
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "Սինք"
-
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr "Փակեք հավելումնների ցուցափեղկը"
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr "/"
 
 #: socialToolbar.title
 msgid "Social Toolbar Button"
@@ -1511,6 +1436,121 @@ msgstr "Թույլատրել և Հիշել"
 #: pluginBlockNow.label
 msgid "Block Plugin"
 msgstr "Արգելել բաղադրիչը"
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr "&Հավելումների ցուցափեղկ"
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "Գործողության ինդիկատոր"
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr "Ընտրացանկը"
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr "Բացել &brandShortName; ընտրացանկը"
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "Բաժանորդագրվել"
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "Բաժանորդագրվել այս էջին..."
+
+#: bookmarksButton.tooltip
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "Ցուցադրել ձեր էջանիշները"
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "Ցուցադրել ձեր այցելած վերջին էջերը"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr "&Ներդիրները վերևում"
+
+#: appMenuEdit.label
+msgid "Edit"
+msgstr "Խմբագրել"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr "Գործիքադարակի դասավորություն…"
+
+#: appMenuSidebars.label
+msgid "Sidebars"
+msgstr "Կողային վահանակներ"
+
+#: appMenuFind.label
+msgid "Find…"
+msgstr "Գտնել…"
+
+#: appMenuUnsorted.label
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "Չկարգավորված Էջանիշեր"
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr "Վեբ ծրագրավորող"
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr "Աշխատանքի Սկիզբը"
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr "&Վերագործարկել հավելումներն անջատված…"
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "Կտրել"
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "Պատճենել"
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "Մեջբերել"
+
+#: zoomOutButton.tooltip
+msgid "Zoom out"
+msgstr "Մանրացնել"
+
+#: zoomInButton.tooltip
+msgid "Zoom in"
+msgstr "Խոշորացնել"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr "Խոշորացման ղեկավարում"
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr "Փակեք հավելումնների ցուցափեղկը"
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr "/"
+
+#~ msgid "Allow fullscreen?"
+#~ msgstr "Թույլատրե՞լ Ամբողջ Էկրանով։"
+
+#~ msgid "Press ESC at any time to exit fullscreen."
+#~ msgstr "Սեղմեք ESC՝ Ամբողջ էկրանով վիճակից դուրս գալու համար"
+
+#~ msgid "Web &Search"
+#~ msgstr "Որոնում &Ցանցում"
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "Տուն"
 
 #~ msgctxt "errorConsoleCmd.commandkey"
 #~ msgid "j"

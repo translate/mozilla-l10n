@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2013-06-26 17:24+0000\n"
 "Last-Translator: Cédric <cvalmary@yahoo.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1372267491.000000\n"
@@ -76,6 +76,15 @@ msgstr "&Marcar totes los marcapaginas…"
 msgid "&Undo Close Tab"
 msgstr "An&ullar la tampadura de l'onglet"
 
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
+msgstr "An&ullar la tampadura de l'onglet"
+
 #: closeTab.label closeTab.accesskey
 msgid "&Close Tab"
 msgstr "&Tampar l'onglet"
@@ -130,6 +139,10 @@ msgstr "Trabalhar des&connectat"
 msgid "&Menu Bar"
 msgstr "Barra de &menús"
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "Barra de &navigacion"
@@ -141,10 +154,6 @@ msgstr "Barra de marcapagina&s"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "Elements de la barra personala"
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr "Barra &dels moduls"
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -215,13 +224,9 @@ msgstr "Autorizar"
 msgid "Deny"
 msgstr "Interdire"
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr "Autorizar lo mòde ecran complet ?"
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
-msgstr "Quichatz sus Escap a tot moment per quitar lo mòde ecran complet."
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -368,26 +373,14 @@ msgstr "Emplaçament"
 msgid "Search"
 msgstr "Recercar"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "Indicador d'activitat"
-
 #: bookmarksItem.title
 msgctxt "bookmarksItem.title"
 msgid "Bookmarks"
 msgstr "Marcapaginas"
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr "Menú"
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr "Dobrir lo menú &brandShortName;"
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "Acuèlh"
 
@@ -399,23 +392,10 @@ msgstr "Gropes d'onglets"
 msgid "Group your tabs"
 msgstr "Organizar los onglets per gropes"
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "S'abonar"
-
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "S'abonar a aquesta pagina…"
-
 #: bookmarksButton.label
 msgctxt "bookmarksButton.label"
 msgid "Bookmarks"
 msgstr "Marcapaginas"
-
-#: bookmarksButton.tooltip
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "Afichar lo panèl dels marcapaginas"
 
 #: bookmarksCmd.commandkey
 msgid "b"
@@ -461,10 +441,6 @@ msgstr "i"
 msgid "History"
 msgstr "Istoric"
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "Visualizar las paginas visitadas recentament"
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -476,10 +452,6 @@ msgstr "&Aisinas"
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "Apondre un mot &clau per aquesta recèrca..."
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "&Recercar sus internet"
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -510,6 +482,15 @@ msgstr "A"
 #: webDeveloperMenu.label webDeveloperMenu.accesskey
 msgid "&Web Developer"
 msgstr "Desvolopaire &Web"
+
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F2"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
 
 #: devtoolsConnect.label devtoolsConnect.accesskey
 msgid "Conn&ect…"
@@ -598,6 +579,16 @@ msgstr "F2"
 #: devToolboxMenuItem.label devToolboxMenuItem.accesskey
 msgid "&Toggle Tools"
 msgstr "Ai&sinas"
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
+msgstr ""
 
 #: devToolbarToolsButton.tooltip
 msgid "Toggle developer tools"
@@ -729,10 +720,6 @@ msgstr "Panèl lat&eral"
 msgid "&Customize…"
 msgstr "&Personalizar..."
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr "B&arra dels onglets en dessús"
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "I&storic"
@@ -750,11 +737,6 @@ msgstr "Fenèstras tampadas recentament"
 msgid "Restore Previous Session"
 msgstr "Restablir la sesilha precedenta"
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "Acuèlh"
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "Visualizar tot l'istoric"
@@ -763,42 +745,9 @@ msgstr "Visualizar tot l'istoric"
 msgid "H"
 msgstr "i"
 
-#: appMenuEdit.label
-msgid "Edit"
-msgstr "Edicion"
-
 #: appMenuCustomize.label
 msgid "Customize"
 msgstr "Personalizar"
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr "Personalizar las barras d'aisinas…"
-
-#: appMenuSidebars.label
-msgid "Sidebars"
-msgstr "Panèl lateral"
-
-#: appMenuFind.label
-msgid "Find…"
-msgstr "Recercar dins la pagina..."
-
-#: appMenuUnsorted.label
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "Marcapaginas pas triats"
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr "Desvolopament Web"
-
-#: appMenuGettingStarted.label
-msgid "Getting Started"
-msgstr "Per començar"
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr "&Reaviar amb los moduls desactivats…"
 
 #: openCmd.commandkey
 msgctxt "openCmd.commandkey"
@@ -929,6 +878,10 @@ msgstr "V&isualizar l'imatge"
 #: viewImageInfoCmd.label viewImageInfoCmd.accesskey
 msgid "View Image In&fo"
 msgstr "Visualizar las en&tresenhas de l'imatge"
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -1190,33 +1143,9 @@ msgstr "Dobrir una fenèstra novèla"
 msgid "Close sidebar"
 msgstr "Tampar lo panèl lateral"
 
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "Talhar"
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "Copiar"
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "Pegar"
-
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
 msgstr "Visualizar la fenèstra en ecran complet"
-
-#: zoomOutButton.tooltip
-msgid "Zoom out"
-msgstr "Zoom arrièr"
-
-#: zoomInButton.tooltip
-msgid "Zoom in"
-msgstr "Zoom avant"
-
-#: zoomControls.label
-msgid "Zoom Controls"
-msgstr "Nivèl de zoom"
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -1367,6 +1296,10 @@ msgstr "que lo detentor n'es"
 msgid "More Information…"
 msgstr "Mai d'entresenhas..."
 
+#: identity.permissions
+msgid "Permissions"
+msgstr "Permissions"
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1400,14 +1333,6 @@ msgstr "&Sincronizar ara"
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "Sincronizar"
-
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr "Tampar la barra dels moduls"
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr "/"
 
 #: socialToolbar.title
 msgid "Social Toolbar Button"
@@ -1520,6 +1445,121 @@ msgstr ""
 #: pluginBlockNow.label
 msgid "Block Plugin"
 msgstr ""
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr "Barra &dels moduls"
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "Indicador d'activitat"
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr "Menú"
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr "Dobrir lo menú &brandShortName;"
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "S'abonar"
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "S'abonar a aquesta pagina…"
+
+#: bookmarksButton.tooltip
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "Afichar lo panèl dels marcapaginas"
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "Visualizar las paginas visitadas recentament"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr "B&arra dels onglets en dessús"
+
+#: appMenuEdit.label
+msgid "Edit"
+msgstr "Edicion"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr "Personalizar las barras d'aisinas…"
+
+#: appMenuSidebars.label
+msgid "Sidebars"
+msgstr "Panèl lateral"
+
+#: appMenuFind.label
+msgid "Find…"
+msgstr "Recercar dins la pagina..."
+
+#: appMenuUnsorted.label
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "Marcapaginas pas triats"
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr "Desvolopament Web"
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr "Per començar"
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr "&Reaviar amb los moduls desactivats…"
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "Talhar"
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "Copiar"
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "Pegar"
+
+#: zoomOutButton.tooltip
+msgid "Zoom out"
+msgstr "Zoom arrièr"
+
+#: zoomInButton.tooltip
+msgid "Zoom in"
+msgstr "Zoom avant"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr "Nivèl de zoom"
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr "Tampar la barra dels moduls"
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr "/"
+
+#~ msgid "Allow fullscreen?"
+#~ msgstr "Autorizar lo mòde ecran complet ?"
+
+#~ msgid "Press ESC at any time to exit fullscreen."
+#~ msgstr "Quichatz sus Escap a tot moment per quitar lo mòde ecran complet."
+
+#~ msgid "Web &Search"
+#~ msgstr "&Recercar sus internet"
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "Acuèlh"
 
 #~ msgctxt "errorConsoleCmd.commandkey"
 #~ msgid "j"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2013-02-15 14:59+0000\n"
 "Last-Translator: Musa <musa.haidari@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1360940351.000000\n"
@@ -75,6 +75,15 @@ msgstr "&نشانک‌گذاری همهٔ زبانه‌ها…"
 msgid "&Undo Close Tab"
 msgstr "&واگرد بستن زبانه"
 
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
+msgstr "&واگرد بستن زبانه"
+
 #: closeTab.label closeTab.accesskey
 msgid "&Close Tab"
 msgstr "&بستن تب"
@@ -129,6 +138,10 @@ msgstr "&کار منفصل"
 msgid "&Menu Bar"
 msgstr "نوار &مینو"
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "&نوار ابزار هدایت"
@@ -140,10 +153,6 @@ msgstr "نو&ار ابزار نشانه ها"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "آیتم های نوارابزار نشانه ها"
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr "نوار ا&فزودنی‌ها"
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -216,12 +225,8 @@ msgstr "اجازه دادن"
 msgid "Deny"
 msgstr "رد کردن"
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr ""
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
 msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
@@ -369,26 +374,14 @@ msgstr "موقعیت"
 msgid "Search"
 msgstr "جستجو"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "شاخص فعالیت"
-
 #: bookmarksItem.title
 msgctxt "bookmarksItem.title"
 msgid "Bookmarks"
 msgstr "نشانه ها"
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr "منو"
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr "باز کردن منوی &brandShortName;"
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "خانه"
 
@@ -400,23 +393,10 @@ msgstr "گروه‌بندی زبانه‌ها"
 msgid "Group your tabs"
 msgstr "زبانه‌های موجود را گروه‌بندی کنید"
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "مشترک شدن"
-
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "آبونه شدن این صفحه…"
-
 #: bookmarksButton.label
 msgctxt "bookmarksButton.label"
 msgid "Bookmarks"
 msgstr "نشانه ها"
-
-#: bookmarksButton.tooltip
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "نمایش نشانک‌ها"
 
 #: bookmarksCmd.commandkey
 msgid "b"
@@ -462,10 +442,6 @@ msgstr "i"
 msgid "History"
 msgstr "تاریخچه"
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "نمایش صفحه‌هایی که اخیراً دیده‌اید"
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -477,10 +453,6 @@ msgstr "&ابزارها"
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "&اضافه کردن یک کلیدواژه به این جست‌وجو…"
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "جست‌&وجوی وب"
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -512,6 +484,15 @@ msgstr "A"
 #, fuzzy
 msgid "&Web Developer"
 msgstr "توسعه‌دهندگان وب"
+
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F2"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
 
 #: devtoolsConnect.label devtoolsConnect.accesskey
 #, fuzzy
@@ -600,6 +581,16 @@ msgstr "F2"
 
 #: devToolboxMenuItem.label devToolboxMenuItem.accesskey
 msgid "&Toggle Tools"
+msgstr ""
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
 msgstr ""
 
 #: devToolbarToolsButton.tooltip
@@ -735,10 +726,6 @@ msgstr "نوار جانبی"
 msgid "&Customize…"
 msgstr "&سفارشی‌سازی…"
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr "ز&بانه‌ها در بالا"
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "&تاریخچه"
@@ -756,11 +743,6 @@ msgstr "پنجره‌های تازه بسته شده"
 msgid "Restore Previous Session"
 msgstr "بازآوری نشست قبلی"
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "خانه"
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "نمایش تمام تاریخچه"
@@ -769,42 +751,9 @@ msgstr "نمایش تمام تاریخچه"
 msgid "H"
 msgstr "H"
 
-#: appMenuEdit.label
-msgid "Edit"
-msgstr "ویرایش"
-
 #: appMenuCustomize.label
 msgid "Customize"
 msgstr "سفارشی‌سازی"
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr "ساختار نوار ابزار…"
-
-#: appMenuSidebars.label
-msgid "Sidebars"
-msgstr "نوارهای کناری"
-
-#: appMenuFind.label
-msgid "Find…"
-msgstr "پیدا کردن…"
-
-#: appMenuUnsorted.label
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "نشانک‌های مرتب نشده"
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr "توسعه‌دهندگان وب"
-
-#: appMenuGettingStarted.label
-msgid "Getting Started"
-msgstr "راهنماع شروع به کار"
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr "راه‌اندازی &مجدد به همراه غیرفعال کردن افزودنی‌ها…"
 
 #: openCmd.commandkey
 msgctxt "openCmd.commandkey"
@@ -936,6 +885,10 @@ msgstr "نمایش &تصویر"
 #: viewImageInfoCmd.label viewImageInfoCmd.accesskey
 msgid "View Image In&fo"
 msgstr "نمایش اطلاعات ت&صویر"
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -1197,33 +1150,9 @@ msgstr "باز کردن یک پنجرهٔ جدید"
 msgid "Close sidebar"
 msgstr "بستن نوار کناری"
 
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "بریدن"
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "رونوشت برداشتن"
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "چسباندن"
-
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
 msgstr "نمایش پنجره در حالت تمام‌صفحه"
-
-#: zoomOutButton.tooltip
-msgid "Zoom out"
-msgstr "کوچک‌نمایی"
-
-#: zoomInButton.tooltip
-msgid "Zoom in"
-msgstr "بزرگ‌نمایی"
-
-#: zoomControls.label
-msgid "Zoom Controls"
-msgstr "کنترل‌های زوم"
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -1371,6 +1300,10 @@ msgstr "اداره کننده:"
 msgid "More Information…"
 msgstr "اطلاعات بیشتر…"
 
+#: identity.permissions
+msgid "Permissions"
+msgstr "مجوزها"
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1404,14 +1337,6 @@ msgstr "&همگام سازی در حال حاضر"
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "هم‌گام‌سازی"
-
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr "بستن نوار افزودنی‌ها"
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr "/"
 
 #: socialToolbar.title
 msgid "Social Toolbar Button"
@@ -1523,6 +1448,115 @@ msgstr ""
 #: pluginBlockNow.label
 msgid "Block Plugin"
 msgstr ""
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr "نوار ا&فزودنی‌ها"
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "شاخص فعالیت"
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr "منو"
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr "باز کردن منوی &brandShortName;"
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "مشترک شدن"
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "آبونه شدن این صفحه…"
+
+#: bookmarksButton.tooltip
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "نمایش نشانک‌ها"
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "نمایش صفحه‌هایی که اخیراً دیده‌اید"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr "ز&بانه‌ها در بالا"
+
+#: appMenuEdit.label
+msgid "Edit"
+msgstr "ویرایش"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr "ساختار نوار ابزار…"
+
+#: appMenuSidebars.label
+msgid "Sidebars"
+msgstr "نوارهای کناری"
+
+#: appMenuFind.label
+msgid "Find…"
+msgstr "پیدا کردن…"
+
+#: appMenuUnsorted.label
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "نشانک‌های مرتب نشده"
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr "توسعه‌دهندگان وب"
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr "راهنماع شروع به کار"
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr "راه‌اندازی &مجدد به همراه غیرفعال کردن افزودنی‌ها…"
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "بریدن"
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "رونوشت برداشتن"
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "چسباندن"
+
+#: zoomOutButton.tooltip
+msgid "Zoom out"
+msgstr "کوچک‌نمایی"
+
+#: zoomInButton.tooltip
+msgid "Zoom in"
+msgstr "بزرگ‌نمایی"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr "کنترل‌های زوم"
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr "بستن نوار افزودنی‌ها"
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr "/"
+
+#~ msgid "Web &Search"
+#~ msgstr "جست‌&وجوی وب"
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "خانه"
 
 #~ msgctxt "errorConsoleCmd.commandkey"
 #~ msgid "j"

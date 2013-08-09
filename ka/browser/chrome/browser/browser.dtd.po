@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2013-06-11 00:40+0000\n"
 "Last-Translator: DrAcid <acidlabz@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,6 +76,15 @@ msgstr "ყველა დაფის ჩა&ნიშვნა…"
 msgid "&Undo Close Tab"
 msgstr "დაფის ხელახლა გახსნა"
 
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
+msgstr "დაფის ხელახლა გახსნა"
+
 #: closeTab.label closeTab.accesskey
 msgid "&Close Tab"
 msgstr "დაფის დახურვა"
@@ -130,6 +139,10 @@ msgstr "&კავშირგარეშე რეჟიმი"
 msgid "&Menu Bar"
 msgstr "მენიუს პანელი"
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "ნავიგატორის  პულტი"
@@ -141,10 +154,6 @@ msgstr "სანიშნეების პულტი"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "სანიშნეების პულტის ელემენტები"
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr "&დანამატების ზოლი"
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -215,13 +224,9 @@ msgstr "ნების დართვა"
 msgid "Deny"
 msgstr "უარყოფა"
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr "გსურთ მთელ ეკრანზე გაშლის ნებადართვა?"
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
-msgstr "დააჭირეთ ESC როცა გსურთ გახვიდეთ სრულეკრანიანი რეჟიმიდან."
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -371,26 +376,14 @@ msgstr "მისამართი"
 msgid "Search"
 msgstr "ძიება"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "ქმედების მაჩვენებელი"
-
 #: bookmarksItem.title
 msgctxt "bookmarksItem.title"
 msgid "Bookmarks"
 msgstr "სანიშნეები"
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr "მენიუ"
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr "გაიხსნას მენიუ &brandShortName;"
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "თავფურცელი"
 
@@ -402,23 +395,10 @@ msgstr "დაფების ჯგუფები"
 msgid "Group your tabs"
 msgstr "დააჯგუფეთ დაფები"
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "ხელმოწერა"
-
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "ხელმოწერა ამ გვერდზე…"
-
 #: bookmarksButton.label
 msgctxt "bookmarksButton.label"
 msgid "Bookmarks"
 msgstr "სანიშნეები"
-
-#: bookmarksButton.tooltip
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "თქვენი სანიშნეების ჩვენება"
 
 #: bookmarksCmd.commandkey
 msgid "b"
@@ -464,10 +444,6 @@ msgstr "i"
 msgid "History"
 msgstr "ისტორია"
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "ბოლოს მონახულებული ვებგვერდების ჩვენება"
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -479,10 +455,6 @@ msgstr "ხელსაწყოები"
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "საძიებო საკვანძო სიტყვის დამატება…"
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "ვებ ძიება"
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -513,6 +485,15 @@ msgstr "A"
 #: webDeveloperMenu.label webDeveloperMenu.accesskey
 msgid "&Web Developer"
 msgstr "&Web შემუშავება"
+
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F2"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
 
 #: devtoolsConnect.label devtoolsConnect.accesskey
 msgid "Conn&ect…"
@@ -603,6 +584,16 @@ msgstr "F2"
 #: devToolboxMenuItem.label devToolboxMenuItem.accesskey
 msgid "&Toggle Tools"
 msgstr "ხელსაწყოების &გადართვა"
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
+msgstr ""
 
 #: devToolbarToolsButton.tooltip
 msgid "Toggle developer tools"
@@ -739,10 +730,6 @@ msgstr "გვერდითი პანელი"
 msgid "&Customize…"
 msgstr "მორგება…"
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr ""
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "ისტორია"
@@ -760,11 +747,6 @@ msgstr "ბოლოს დახურული სარკმლები"
 msgid "Restore Previous Session"
 msgstr ""
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "თავფურცელი"
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "სრული ისტორიის ჩვენება…"
@@ -773,46 +755,10 @@ msgstr "სრული ისტორიის ჩვენება…"
 msgid "H"
 msgstr "H"
 
-#: appMenuEdit.label
-#, fuzzy
-msgid "Edit"
-msgstr "რედაქტირება"
-
 #: appMenuCustomize.label
 #, fuzzy
 msgid "Customize"
 msgstr "მორგება…"
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr ""
-
-#: appMenuSidebars.label
-#, fuzzy
-msgid "Sidebars"
-msgstr "გვერდითი პანელი"
-
-#: appMenuFind.label
-msgid "Find…"
-msgstr "ძიება…"
-
-#: appMenuUnsorted.label
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "დაუხარისხებელი სანიშნეები"
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr "&Web შემუშავება"
-
-#: appMenuGettingStarted.label
-#, fuzzy
-msgid "Getting Started"
-msgstr "დამწყებთათვის"
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr "&ხელახლა გახსნა ამორთული დანამატებით..."
 
 #: openCmd.commandkey
 msgctxt "openCmd.commandkey"
@@ -944,6 +890,10 @@ msgstr "ნახატის ჩვენება"
 #: viewImageInfoCmd.label viewImageInfoCmd.accesskey
 msgid "View Image In&fo"
 msgstr "გამოსახულების მონაცემთა ჩვენება"
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -1208,35 +1158,9 @@ msgstr "ახალი სარკმლის გახსნა"
 msgid "Close sidebar"
 msgstr "გვერდითი პანელის დახურვა"
 
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "ამოჭრა"
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "კოპირება"
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "ჩასმა"
-
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
 msgstr "სარკმლის სრულ ეკრანზე ჩვენება"
-
-#: zoomOutButton.tooltip
-#, fuzzy
-msgid "Zoom out"
-msgstr "შემცირება"
-
-#: zoomInButton.tooltip
-#, fuzzy
-msgid "Zoom in"
-msgstr "გაზრდა"
-
-#: zoomControls.label
-msgid "Zoom Controls"
-msgstr ""
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -1387,6 +1311,10 @@ msgstr "რომლის მფლობელიცაა"
 msgid "More Information…"
 msgstr "დაწვრილებით…"
 
+#: identity.permissions
+msgid "Permissions"
+msgstr "უფლებები"
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1423,14 +1351,6 @@ msgstr ""
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "სინქრონიზება"
-
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr ""
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr ""
 
 #: socialToolbar.title
 msgid "Social Toolbar Button"
@@ -1541,6 +1461,126 @@ msgstr ""
 #: pluginBlockNow.label
 msgid "Block Plugin"
 msgstr ""
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr "&დანამატების ზოლი"
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "ქმედების მაჩვენებელი"
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr "მენიუ"
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr "გაიხსნას მენიუ &brandShortName;"
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "ხელმოწერა"
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "ხელმოწერა ამ გვერდზე…"
+
+#: bookmarksButton.tooltip
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "თქვენი სანიშნეების ჩვენება"
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "ბოლოს მონახულებული ვებგვერდების ჩვენება"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr ""
+
+#: appMenuEdit.label
+#, fuzzy
+msgid "Edit"
+msgstr "რედაქტირება"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr ""
+
+#: appMenuSidebars.label
+#, fuzzy
+msgid "Sidebars"
+msgstr "გვერდითი პანელი"
+
+#: appMenuFind.label
+msgid "Find…"
+msgstr "ძიება…"
+
+#: appMenuUnsorted.label
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "დაუხარისხებელი სანიშნეები"
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr "&Web შემუშავება"
+
+#: appMenuGettingStarted.label
+#, fuzzy
+msgid "Getting Started"
+msgstr "დამწყებთათვის"
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr "&ხელახლა გახსნა ამორთული დანამატებით..."
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "ამოჭრა"
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "კოპირება"
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "ჩასმა"
+
+#: zoomOutButton.tooltip
+#, fuzzy
+msgid "Zoom out"
+msgstr "შემცირება"
+
+#: zoomInButton.tooltip
+#, fuzzy
+msgid "Zoom in"
+msgstr "გაზრდა"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr ""
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr ""
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr ""
+
+#~ msgid "Allow fullscreen?"
+#~ msgstr "გსურთ მთელ ეკრანზე გაშლის ნებადართვა?"
+
+#~ msgid "Press ESC at any time to exit fullscreen."
+#~ msgstr "დააჭირეთ ESC როცა გსურთ გახვიდეთ სრულეკრანიანი რეჟიმიდან."
+
+#~ msgid "Web &Search"
+#~ msgstr "ვებ ძიება"
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "თავფურცელი"
 
 #~ msgctxt "errorConsoleCmd.commandkey"
 #~ msgid "j"

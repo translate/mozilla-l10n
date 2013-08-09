@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2013-08-01 05:41+0000\n"
 "Last-Translator: Mautematico <mautematico@mozilla-mexico.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1375335675.000000\n"
@@ -75,6 +75,15 @@ msgstr "Agregar &Pestañas a marcadores…"
 msgid "&Undo Close Tab"
 msgstr "&Deshacer el cierre de la última pestaña"
 
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
+msgstr "&Deshacer el cierre de la última pestaña"
+
 #: closeTab.label closeTab.accesskey
 msgid "&Close Tab"
 msgstr "&Cerrar pestaña"
@@ -129,6 +138,10 @@ msgstr "Trabajar sin cone&xión"
 msgid "&Menu Bar"
 msgstr "Barra de &menú"
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "&Navegación"
@@ -140,10 +153,6 @@ msgstr "&Marcadores"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "Elementos de la barra de marcadores"
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr "B&arra de complemento"
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -214,13 +223,9 @@ msgstr "Permitir"
 msgid "Deny"
 msgstr "Denegar"
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr "¿Permitir pantalla completa?"
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
-msgstr "Presiona ESC en cualquier momento para salir de pantalla completa."
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -365,26 +370,14 @@ msgstr "Ubicación"
 msgid "Search"
 msgstr "Buscar"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "Progreso"
-
 #: bookmarksItem.title
 msgctxt "bookmarksItem.title"
 msgid "Bookmarks"
 msgstr "Marcadores"
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr "Menú"
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr "Abrir menú &brandShortName;"
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "Inicio"
 
@@ -396,23 +389,10 @@ msgstr "Pestañas Grupos"
 msgid "Group your tabs"
 msgstr "Agrupa tus pestañas"
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "Suscribir"
-
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "Suscribirse a esta página…"
-
 #: bookmarksButton.label
 msgctxt "bookmarksButton.label"
 msgid "Bookmarks"
 msgstr "Marcadores"
-
-#: bookmarksButton.tooltip
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "Mostrar tus marcadores"
 
 #: bookmarksCmd.commandkey
 msgid "b"
@@ -458,10 +438,6 @@ msgstr "i"
 msgid "History"
 msgstr "Historial"
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "Mostrar las páginas vistas recientemente"
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -473,10 +449,6 @@ msgstr "Herramien&tas"
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "Establecer una &palabra clave para esta búsqueda…"
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "&Buscar en la web"
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -507,6 +479,15 @@ msgstr "A"
 #: webDeveloperMenu.label webDeveloperMenu.accesskey
 msgid "&Web Developer"
 msgstr "Desarrollador &Web"
+
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F2"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
 
 #: devtoolsConnect.label devtoolsConnect.accesskey
 msgid "Conn&ect…"
@@ -594,6 +575,16 @@ msgstr "F2"
 #: devToolboxMenuItem.label devToolboxMenuItem.accesskey
 msgid "&Toggle Tools"
 msgstr "Mos&trar herramientas"
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
+msgstr ""
 
 #: devToolbarToolsButton.tooltip
 msgid "Toggle developer tools"
@@ -724,10 +715,6 @@ msgstr "Barra &lateral"
 msgid "&Customize…"
 msgstr "&Personalizar…"
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr "&Pestañas arriba"
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "&Historial"
@@ -745,11 +732,6 @@ msgstr "Ventanas cerradas recientemente"
 msgid "Restore Previous Session"
 msgstr "Restaurar sesión anterior"
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "Inicio"
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "Mostrar todo el historial"
@@ -758,42 +740,9 @@ msgstr "Mostrar todo el historial"
 msgid "H"
 msgstr "H"
 
-#: appMenuEdit.label
-msgid "Edit"
-msgstr "Editar"
-
 #: appMenuCustomize.label
 msgid "Customize"
 msgstr "Personalizar"
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr "Capas de la barra de herramientas…"
-
-#: appMenuSidebars.label
-msgid "Sidebars"
-msgstr "Barras laterales"
-
-#: appMenuFind.label
-msgid "Find…"
-msgstr "Buscar…"
-
-#: appMenuUnsorted.label
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "Marcadores sin clasificar"
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr "Desarrollador Web"
-
-#: appMenuGettingStarted.label
-msgid "Getting Started"
-msgstr "Primeros pasos"
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr "&Reiniciar con complementos deshabilitados…"
 
 #: openCmd.commandkey
 msgctxt "openCmd.commandkey"
@@ -924,6 +873,10 @@ msgstr "Ver &imagen"
 #: viewImageInfoCmd.label viewImageInfoCmd.accesskey
 msgid "View Image In&fo"
 msgstr "Ver in&formación de la imagen"
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -1185,33 +1138,9 @@ msgstr "Abrir una ventana nueva"
 msgid "Close sidebar"
 msgstr "Cerrar barra lateral"
 
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "Cortar"
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "Copiar"
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "Pegar"
-
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
 msgstr "Mostrar ventana en pantalla completa"
-
-#: zoomOutButton.tooltip
-msgid "Zoom out"
-msgstr "Reducir Zoom"
-
-#: zoomInButton.tooltip
-msgid "Zoom in"
-msgstr "Aumentar Zoom"
-
-#: zoomControls.label
-msgid "Zoom Controls"
-msgstr "Controles de Zoom"
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -1360,6 +1289,10 @@ msgstr "que pertenece a"
 msgid "More Information…"
 msgstr "Más información…"
 
+#: identity.permissions
+msgid "Permissions"
+msgstr "Permisos"
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1393,14 +1326,6 @@ msgstr "&Sincronizar ahora"
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "Sync"
-
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr "Cerra la barra de complementos"
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr "/"
 
 #: socialToolbar.title
 msgid "Social Toolbar Button"
@@ -1513,6 +1438,121 @@ msgstr "Permitir y recordar"
 #: pluginBlockNow.label
 msgid "Block Plugin"
 msgstr "Bloquear plugin"
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr "B&arra de complemento"
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "Progreso"
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr "Menú"
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr "Abrir menú &brandShortName;"
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "Suscribir"
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "Suscribirse a esta página…"
+
+#: bookmarksButton.tooltip
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "Mostrar tus marcadores"
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "Mostrar las páginas vistas recientemente"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr "&Pestañas arriba"
+
+#: appMenuEdit.label
+msgid "Edit"
+msgstr "Editar"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr "Capas de la barra de herramientas…"
+
+#: appMenuSidebars.label
+msgid "Sidebars"
+msgstr "Barras laterales"
+
+#: appMenuFind.label
+msgid "Find…"
+msgstr "Buscar…"
+
+#: appMenuUnsorted.label
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "Marcadores sin clasificar"
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr "Desarrollador Web"
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr "Primeros pasos"
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr "&Reiniciar con complementos deshabilitados…"
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "Cortar"
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "Copiar"
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "Pegar"
+
+#: zoomOutButton.tooltip
+msgid "Zoom out"
+msgstr "Reducir Zoom"
+
+#: zoomInButton.tooltip
+msgid "Zoom in"
+msgstr "Aumentar Zoom"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr "Controles de Zoom"
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr "Cerra la barra de complementos"
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr "/"
+
+#~ msgid "Allow fullscreen?"
+#~ msgstr "¿Permitir pantalla completa?"
+
+#~ msgid "Press ESC at any time to exit fullscreen."
+#~ msgstr "Presiona ESC en cualquier momento para salir de pantalla completa."
+
+#~ msgid "Web &Search"
+#~ msgstr "&Buscar en la web"
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "Inicio"
 
 #~ msgctxt "errorConsoleCmd.commandkey"
 #~ msgid "j"

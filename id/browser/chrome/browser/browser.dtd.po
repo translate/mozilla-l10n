@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2013-07-28 08:46+0000\n"
 "Last-Translator: romi <romihardiyanto@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1375001186.000000\n"
@@ -76,6 +76,15 @@ msgstr "Markahi &Semua Tab…"
 msgid "&Undo Close Tab"
 msgstr "Urun&gkan Menutup Tab"
 
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
+msgstr "Urun&gkan Menutup Tab"
+
 #: closeTab.label closeTab.accesskey
 msgid "&Close Tab"
 msgstr "T&utup Tab"
@@ -130,6 +139,10 @@ msgstr "Bekerja &Luring"
 msgid "&Menu Bar"
 msgstr "Bilah &Menu"
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "Bilah Alat &Navigasi"
@@ -141,10 +154,6 @@ msgstr "&Bilah Alat Markah"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "Nama Markah"
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr "Bilah &Pengaya"
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -215,13 +224,9 @@ msgstr "Izinkan"
 msgid "Deny"
 msgstr "Tolak"
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr "Izinkan mode layar penuh?"
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
-msgstr "Tekan ESC untuk keluar dari mode layar penuh"
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -366,26 +371,14 @@ msgstr "Lokasi"
 msgid "Search"
 msgstr "Cari"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "Indikator Aktivitas"
-
 #: bookmarksItem.title
 msgctxt "bookmarksItem.title"
 msgid "Bookmarks"
 msgstr "Markah"
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr "Menu"
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr "Tampilkan menu &brandShortName;"
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "Beranda"
 
@@ -397,23 +390,10 @@ msgstr "Kelompok Tab"
 msgid "Group your tabs"
 msgstr "Kelompokkan tab peramban"
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "Langganan"
-
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "Berlangganan laman ini…"
-
 #: bookmarksButton.label
 msgctxt "bookmarksButton.label"
 msgid "Bookmarks"
 msgstr "Markah"
-
-#: bookmarksButton.tooltip
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "Menampilkan markah Anda"
 
 #: bookmarksCmd.commandkey
 msgid "b"
@@ -459,10 +439,6 @@ msgstr "h"
 msgid "History"
 msgstr "Riwayat"
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "Menampilkan riwayat laman yang baru saja dilihat"
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -474,10 +450,6 @@ msgstr "&Alat"
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "Tambahkan &Kata Kunci untuk Pencarian ini…"
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "&Cari di Web"
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -508,6 +480,15 @@ msgstr "A"
 #: webDeveloperMenu.label webDeveloperMenu.accesskey
 msgid "&Web Developer"
 msgstr "Pengembang &Web"
+
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F2"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
 
 #: devtoolsConnect.label devtoolsConnect.accesskey
 msgid "Conn&ect…"
@@ -596,6 +577,16 @@ msgstr "F2"
 #: devToolboxMenuItem.label devToolboxMenuItem.accesskey
 msgid "&Toggle Tools"
 msgstr "&Aktif/Nonaktifkan Alat"
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
+msgstr ""
 
 #: devToolbarToolsButton.tooltip
 msgid "Toggle developer tools"
@@ -726,10 +717,6 @@ msgstr "Bilah Sa&mping"
 msgid "&Customize…"
 msgstr "&Suka-suka…"
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr "T&ab di bagian atas"
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "&Riwayat"
@@ -747,11 +734,6 @@ msgstr "Jendela yang Baru Saja Ditutup"
 msgid "Restore Previous Session"
 msgstr "Pulihkan Sesi Sebelumnya"
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "Beranda"
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "Tampilkan Semua Riwayat"
@@ -760,42 +742,9 @@ msgstr "Tampilkan Semua Riwayat"
 msgid "H"
 msgstr "H"
 
-#: appMenuEdit.label
-msgid "Edit"
-msgstr "Edit"
-
 #: appMenuCustomize.label
 msgid "Customize"
 msgstr "Ubahsuai"
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr "Tata Letak Bilah Alat…"
-
-#: appMenuSidebars.label
-msgid "Sidebars"
-msgstr "Bilah Samping"
-
-#: appMenuFind.label
-msgid "Find…"
-msgstr "Cari…"
-
-#: appMenuUnsorted.label
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "Markah Belum Diurut"
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr "Pengembang Web"
-
-#: appMenuGettingStarted.label
-msgid "Getting Started"
-msgstr "Memulai"
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr "Mulai Ula&ng dengan Pengaya Dinonaktifkan…"
 
 #: openCmd.commandkey
 msgctxt "openCmd.commandkey"
@@ -926,6 +875,10 @@ msgstr "Lihat &Gambar"
 #: viewImageInfoCmd.label viewImageInfoCmd.accesskey
 msgid "View Image In&fo"
 msgstr "Lihat Infor&masi Gambar"
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -1187,33 +1140,9 @@ msgstr "Buka jendela baru"
 msgid "Close sidebar"
 msgstr "Tutup bilah samping"
 
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "Potong"
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "Salin"
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "Tempel"
-
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
 msgstr "Tampilkan jendela dalam mode layar penuh"
-
-#: zoomOutButton.tooltip
-msgid "Zoom out"
-msgstr "Perkecil"
-
-#: zoomInButton.tooltip
-msgid "Zoom in"
-msgstr "Perbesar"
-
-#: zoomControls.label
-msgid "Zoom Controls"
-msgstr "Kendali Perbesaran"
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -1361,6 +1290,10 @@ msgstr "yang dijalankan oleh"
 msgid "More Information…"
 msgstr "Informasi lebih lanjut…"
 
+#: identity.permissions
+msgid "Permissions"
+msgstr "Hak Akses"
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1394,14 +1327,6 @@ msgstr "&Sinkronkan Sekarang"
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "Sinkronkan"
-
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr "Tutup Bilah Pengaya"
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr "/"
 
 #: socialToolbar.title
 msgid "Social Toolbar Button"
@@ -1507,11 +1432,126 @@ msgstr "Izinkan Saat Ini"
 
 #: pluginActivateAlways.label
 msgid "Allow and Remember"
-msgstr ""
+msgstr "Izinkan dan Ingat Izinnya"
 
 #: pluginBlockNow.label
 msgid "Block Plugin"
-msgstr ""
+msgstr "Blokir Plugin"
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr "Bilah &Pengaya"
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "Indikator Aktivitas"
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr "Menu"
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr "Tampilkan menu &brandShortName;"
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "Langganan"
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "Berlangganan laman ini…"
+
+#: bookmarksButton.tooltip
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "Menampilkan markah Anda"
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "Menampilkan riwayat laman yang baru saja dilihat"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr "T&ab di bagian atas"
+
+#: appMenuEdit.label
+msgid "Edit"
+msgstr "Edit"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr "Tata Letak Bilah Alat…"
+
+#: appMenuSidebars.label
+msgid "Sidebars"
+msgstr "Bilah Samping"
+
+#: appMenuFind.label
+msgid "Find…"
+msgstr "Cari…"
+
+#: appMenuUnsorted.label
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "Markah Belum Diurut"
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr "Pengembang Web"
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr "Memulai"
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr "Mulai Ula&ng dengan Pengaya Dinonaktifkan…"
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "Potong"
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "Salin"
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "Tempel"
+
+#: zoomOutButton.tooltip
+msgid "Zoom out"
+msgstr "Perkecil"
+
+#: zoomInButton.tooltip
+msgid "Zoom in"
+msgstr "Perbesar"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr "Kendali Perbesaran"
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr "Tutup Bilah Pengaya"
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr "/"
+
+#~ msgid "Allow fullscreen?"
+#~ msgstr "Izinkan mode layar penuh?"
+
+#~ msgid "Press ESC at any time to exit fullscreen."
+#~ msgstr "Tekan ESC untuk keluar dari mode layar penuh"
+
+#~ msgid "Web &Search"
+#~ msgstr "&Cari di Web"
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "Beranda"
 
 #~ msgctxt "errorConsoleCmd.commandkey"
 #~ msgid "j"

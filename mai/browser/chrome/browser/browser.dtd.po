@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2013-06-10 12:55+0000\n"
 "Last-Translator: Dwayne Bailey <dwayne@translate.org.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1370868955.000000\n"
@@ -75,6 +75,15 @@ msgstr "सभटा टैब पुस्तकचिह्नित करू
 msgid "&Undo Close Tab"
 msgstr "बन्न टैब वापिस लिअ'"
 
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
+msgstr "बन्न टैब वापिस लिअ'"
+
 #: closeTab.label closeTab.accesskey
 msgid "&Close Tab"
 msgstr "टैब बंद करू"
@@ -129,6 +138,10 @@ msgstr "ऑफ़लाइन काम करू (&k)"
 msgid "&Menu Bar"
 msgstr "मेन्यू पट्टी"
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "संचरण अओजारपट्टी"
@@ -140,10 +153,6 @@ msgstr "पुस्तकचिह्नित अओजारपट्टी"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "अओजारपट्टी मद पुस्तकचिह्नित करैता अछि"
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr "सहयुक्ति पट्टी"
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -214,13 +223,9 @@ msgstr "स्वीकारू"
 msgid "Deny"
 msgstr "मना करू "
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr "पूर्णस्क्रीन स्वीकारू?"
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
-msgstr "पूर्णस्क्रीनसँ बाहर निकलबाक लेल ESC केँ कोनो दबाउ."
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -365,26 +370,14 @@ msgstr "स्थान"
 msgid "Search"
 msgstr "खोज"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "क्रियाकलाप संकेतक"
-
 #: bookmarksItem.title
 msgctxt "bookmarksItem.title"
 msgid "Bookmarks"
 msgstr "पुस्तकचिह्न"
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr "मेन्यू"
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr "&brandShortName; मेन्यू खोलू"
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "घर"
 
@@ -396,23 +389,10 @@ msgstr "टैब समूह"
 msgid "Group your tabs"
 msgstr "अपन टैबक समूह बनाउ"
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "सदस्यता लिअ' "
-
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "ई पृष्ठ क सदस्यता लिअ'…"
-
 #: bookmarksButton.label
 msgctxt "bookmarksButton.label"
 msgid "Bookmarks"
 msgstr "पुस्तकचिह्न"
-
-#: bookmarksButton.tooltip
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "अपन पुस्तकचिह्न देखाउ"
 
 #: bookmarksCmd.commandkey
 msgid "b"
@@ -458,10 +438,6 @@ msgstr "i"
 msgid "History"
 msgstr "इतिहास"
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "पृष्ठ देखाउ जकरा अहाँ हाल मे देखने छी"
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -473,10 +449,6 @@ msgstr "अओजार"
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "ई खोज के लिए बीजशब्द जोडू…"
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "वेब खोज"
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -507,6 +479,15 @@ msgstr "A"
 #: webDeveloperMenu.label webDeveloperMenu.accesskey
 msgid "&Web Developer"
 msgstr "वेब डेवलेपर"
+
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F2"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
 
 #: devtoolsConnect.label devtoolsConnect.accesskey
 msgid "Conn&ect…"
@@ -595,6 +576,16 @@ msgstr "F2"
 #: devToolboxMenuItem.label devToolboxMenuItem.accesskey
 msgid "&Toggle Tools"
 msgstr "टॉगल औजार (&T)"
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
+msgstr ""
 
 #: devToolbarToolsButton.tooltip
 msgid "Toggle developer tools"
@@ -725,10 +716,6 @@ msgstr "बाज़ू पट्टी"
 msgid "&Customize…"
 msgstr "मनपसिन्न बनाउ…"
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr "शीर्ष पर टैब"
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "इतिहास"
@@ -746,11 +733,6 @@ msgstr "हाल मे बंद विंडो"
 msgid "Restore Previous Session"
 msgstr "पछिला सत्र फेर बहाल करू"
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "घर"
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "सभटा इतिहास देखाउ"
@@ -759,42 +741,9 @@ msgstr "सभटा इतिहास देखाउ"
 msgid "H"
 msgstr "H"
 
-#: appMenuEdit.label
-msgid "Edit"
-msgstr "संपादन"
-
 #: appMenuCustomize.label
 msgid "Customize"
 msgstr "मनपसिन्न करू"
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr "अओजारपट्टी ख़ाका…"
-
-#: appMenuSidebars.label
-msgid "Sidebars"
-msgstr "कतका पट्टी"
-
-#: appMenuFind.label
-msgid "Find…"
-msgstr "ताकू…"
-
-#: appMenuUnsorted.label
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "बिन छाँटल पुस्तकचिह्न"
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr "वेब डेवलेपर"
-
-#: appMenuGettingStarted.label
-msgid "Getting Started"
-msgstr "आरंभन"
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr "निष्क्रिय सहयुक्ति सँ फेर आरंभ करू…"
 
 #: openCmd.commandkey
 msgctxt "openCmd.commandkey"
@@ -925,6 +874,10 @@ msgstr "छवि देखू"
 #: viewImageInfoCmd.label viewImageInfoCmd.accesskey
 msgid "View Image In&fo"
 msgstr "छवि सूचना देखू"
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -1186,33 +1139,9 @@ msgstr "नव विंडो खोलू"
 msgid "Close sidebar"
 msgstr "बाजू पट्टी बन्न करू"
 
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "काटू"
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "नकल करू"
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "साटू"
-
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
 msgstr "पूर्ण स्क्रीन मे विंडो देखाउ"
-
-#: zoomOutButton.tooltip
-msgid "Zoom out"
-msgstr "पैघ करू"
-
-#: zoomInButton.tooltip
-msgid "Zoom in"
-msgstr "छोट करू"
-
-#: zoomControls.label
-msgid "Zoom Controls"
-msgstr "आकार नियंत्रण"
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -1360,6 +1289,10 @@ msgstr "कओन एकरा द्वारा चलैता अछि"
 msgid "More Information…"
 msgstr "बेसी सूचना…"
 
+#: identity.permissions
+msgid "Permissions"
+msgstr "अनुमति"
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1393,14 +1326,6 @@ msgstr "आब तुल्यकालित करू"
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "तुल्यकालित करू"
-
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr "सहयुक्ति पट्टी बन्न करू"
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr "/"
 
 #: socialToolbar.title
 msgid "Social Toolbar Button"
@@ -1510,6 +1435,121 @@ msgstr ""
 #: pluginBlockNow.label
 msgid "Block Plugin"
 msgstr ""
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr "सहयुक्ति पट्टी"
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "क्रियाकलाप संकेतक"
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr "मेन्यू"
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr "&brandShortName; मेन्यू खोलू"
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "सदस्यता लिअ' "
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "ई पृष्ठ क सदस्यता लिअ'…"
+
+#: bookmarksButton.tooltip
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "अपन पुस्तकचिह्न देखाउ"
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "पृष्ठ देखाउ जकरा अहाँ हाल मे देखने छी"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr "शीर्ष पर टैब"
+
+#: appMenuEdit.label
+msgid "Edit"
+msgstr "संपादन"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr "अओजारपट्टी ख़ाका…"
+
+#: appMenuSidebars.label
+msgid "Sidebars"
+msgstr "कतका पट्टी"
+
+#: appMenuFind.label
+msgid "Find…"
+msgstr "ताकू…"
+
+#: appMenuUnsorted.label
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "बिन छाँटल पुस्तकचिह्न"
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr "वेब डेवलेपर"
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr "आरंभन"
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr "निष्क्रिय सहयुक्ति सँ फेर आरंभ करू…"
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "काटू"
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "नकल करू"
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "साटू"
+
+#: zoomOutButton.tooltip
+msgid "Zoom out"
+msgstr "पैघ करू"
+
+#: zoomInButton.tooltip
+msgid "Zoom in"
+msgstr "छोट करू"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr "आकार नियंत्रण"
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr "सहयुक्ति पट्टी बन्न करू"
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr "/"
+
+#~ msgid "Allow fullscreen?"
+#~ msgstr "पूर्णस्क्रीन स्वीकारू?"
+
+#~ msgid "Press ESC at any time to exit fullscreen."
+#~ msgstr "पूर्णस्क्रीनसँ बाहर निकलबाक लेल ESC केँ कोनो दबाउ."
+
+#~ msgid "Web &Search"
+#~ msgstr "वेब खोज"
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "घर"
 
 #~ msgctxt "errorConsoleCmd.commandkey"
 #~ msgid "j"
