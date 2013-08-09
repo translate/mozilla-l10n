@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2013-02-28 08:40+0000\n"
 "Last-Translator: milossh <mdinic@mozilla.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1362040837.000000\n"
@@ -77,6 +77,15 @@ msgstr "Забележи све &језичке…"
 msgid "&Undo Close Tab"
 msgstr "&Врати затворен језичак"
 
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
+msgstr "&Врати затворен језичак"
+
 #: closeTab.label closeTab.accesskey
 msgid "&Close Tab"
 msgstr "&Затвори језичак"
@@ -131,6 +140,10 @@ msgstr "Рад ва&н мреже"
 msgid "&Menu Bar"
 msgstr "&Трака са менијем"
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "Трака за &навигацију"
@@ -142,10 +155,6 @@ msgstr "Трака са &забелешкама"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "Забележи ставке из алатне траке"
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr "Трака са &додацима"
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -219,12 +228,8 @@ msgstr "Дозволи"
 msgid "Deny"
 msgstr "Забрани"
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr ""
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
 msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
@@ -371,26 +376,14 @@ msgstr "Адреса"
 msgid "Search"
 msgstr "Претрага"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "Показивач активности"
-
 #: bookmarksItem.title
 msgctxt "bookmarksItem.title"
 msgid "Bookmarks"
 msgstr "Забелешке"
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr "Мени"
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr "Отвори мени &brandShortName;-а"
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "Мој календар"
 
@@ -402,23 +395,10 @@ msgstr "Групе језичака"
 msgid "Group your tabs"
 msgstr "Групишите своје језичке"
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "Праћење"
-
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "Претплата на ову страну…"
-
 #: bookmarksButton.label
 msgctxt "bookmarksButton.label"
 msgid "Bookmarks"
 msgstr "Забелешке"
-
-#: bookmarksButton.tooltip
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "Приказује ваше забелешке"
 
 #: bookmarksCmd.commandkey
 #, fuzzy
@@ -465,10 +445,6 @@ msgstr "i"
 msgid "History"
 msgstr "Историјат"
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "Приказује списак недавно посећених страна"
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -480,10 +456,6 @@ msgstr "&Алатке"
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "&Додај кључну реч за ову претрагу…"
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "Веб &претрага"
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -514,6 +486,15 @@ msgstr "A"
 #: webDeveloperMenu.label webDeveloperMenu.accesskey
 msgid "&Web Developer"
 msgstr "&Веб развијач"
+
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F4"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
 
 #: devtoolsConnect.label devtoolsConnect.accesskey
 #, fuzzy
@@ -602,6 +583,16 @@ msgstr "F2"
 
 #: devToolboxMenuItem.label devToolboxMenuItem.accesskey
 msgid "&Toggle Tools"
+msgstr ""
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
 msgstr ""
 
 #: devToolbarToolsButton.tooltip
@@ -737,10 +728,6 @@ msgstr "&Бочна трака"
 msgid "&Customize…"
 msgstr "&Подешавања…"
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr "&Језичци на врху"
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "&Историјат"
@@ -758,11 +745,6 @@ msgstr "Недавно затворени прозори"
 msgid "Restore Previous Session"
 msgstr "Обнови претходну сесију"
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "Мој календар"
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "Преглед целог историјата"
@@ -771,42 +753,9 @@ msgstr "Преглед целог историјата"
 msgid "H"
 msgstr "H"
 
-#: appMenuEdit.label
-msgid "Edit"
-msgstr "Уређивање"
-
 #: appMenuCustomize.label
 msgid "Customize"
 msgstr "Прилагоди"
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr "Распоред на алатној траци…"
-
-#: appMenuSidebars.label
-msgid "Sidebars"
-msgstr "Бочне траке"
-
-#: appMenuFind.label
-msgid "Find…"
-msgstr "Пронађи…"
-
-#: appMenuUnsorted.label
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "Неразврстане забелешке"
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr "Веб програмер"
-
-#: appMenuGettingStarted.label
-msgid "Getting Started"
-msgstr "Како почети"
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr "По&ново покрени са искљученим додацима"
 
 #: openCmd.commandkey
 msgctxt "openCmd.commandkey"
@@ -938,6 +887,10 @@ msgstr "При&кажи слику"
 #: viewImageInfoCmd.label viewImageInfoCmd.accesskey
 msgid "View Image In&fo"
 msgstr "Прегле&д података о слици"
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -1200,33 +1153,9 @@ msgstr "Отвара нови прозор"
 msgid "Close sidebar"
 msgstr "Затвори бочну траку"
 
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "Исеци"
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "Копирај"
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "Убаци"
-
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
 msgstr "Прикажи прозор преко целог екрана"
-
-#: zoomOutButton.tooltip
-msgid "Zoom out"
-msgstr "Удаљи"
-
-#: zoomInButton.tooltip
-msgid "Zoom in"
-msgstr "Увећај"
-
-#: zoomControls.label
-msgid "Zoom Controls"
-msgstr "Контроле увећања"
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -1377,6 +1306,10 @@ msgstr "којим управља"
 msgid "More Information…"
 msgstr "Више података…"
 
+#: identity.permissions
+msgid "Permissions"
+msgstr "Дозволе"
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1410,14 +1343,6 @@ msgstr "&Усклади сада"
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "Усклађивање"
-
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr "Затвори траку са додацима"
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr "/"
 
 #: socialToolbar.title
 msgid "Social Toolbar Button"
@@ -1528,6 +1453,115 @@ msgstr ""
 #: pluginBlockNow.label
 msgid "Block Plugin"
 msgstr ""
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr "Трака са &додацима"
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "Показивач активности"
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr "Мени"
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr "Отвори мени &brandShortName;-а"
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "Праћење"
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "Претплата на ову страну…"
+
+#: bookmarksButton.tooltip
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "Приказује ваше забелешке"
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "Приказује списак недавно посећених страна"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr "&Језичци на врху"
+
+#: appMenuEdit.label
+msgid "Edit"
+msgstr "Уређивање"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr "Распоред на алатној траци…"
+
+#: appMenuSidebars.label
+msgid "Sidebars"
+msgstr "Бочне траке"
+
+#: appMenuFind.label
+msgid "Find…"
+msgstr "Пронађи…"
+
+#: appMenuUnsorted.label
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "Неразврстане забелешке"
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr "Веб програмер"
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr "Како почети"
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr "По&ново покрени са искљученим додацима"
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "Исеци"
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "Копирај"
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "Убаци"
+
+#: zoomOutButton.tooltip
+msgid "Zoom out"
+msgstr "Удаљи"
+
+#: zoomInButton.tooltip
+msgid "Zoom in"
+msgstr "Увећај"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr "Контроле увећања"
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr "Затвори траку са додацима"
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr "/"
+
+#~ msgid "Web &Search"
+#~ msgstr "Веб &претрага"
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "Мој календар"
 
 #~ msgctxt "errorConsoleCmd.commandkey"
 #~ msgid "j"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2013-06-18 07:17+0000\n"
 "Last-Translator: Robin <robin@ankur.org.bd>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1371539870.000000\n"
@@ -75,6 +75,15 @@ msgstr "সব ট্যাব বুকমার্ক করা… (&T)"
 msgid "&Undo Close Tab"
 msgstr "ট্যাব বন্ধ করা থেকে পূর্বাবস্থায় ফিরে যাওয়া &U"
 
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
+msgstr "ট্যাব বন্ধ করা থেকে পূর্বাবস্থায় ফিরে যাওয়া &U"
+
 #: closeTab.label closeTab.accesskey
 msgid "&Close Tab"
 msgstr "ট্যাব বন্ধ (&C)"
@@ -129,6 +138,10 @@ msgstr "অফলাইন অবস্থায় কাজ &k"
 msgid "&Menu Bar"
 msgstr "মেনু বার (&M)"
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "ন্যাভিগেশন টুলবার (&N)"
@@ -140,10 +153,6 @@ msgstr "বুকমার্ক টুলবার (&B)"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "বুকমার্ক টুলবারের আইটেম"
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr "অ্যাড-অন বার"
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -214,13 +223,9 @@ msgstr "অনুমোদন"
 msgid "Deny"
 msgstr "প্রত্যাখ্যান"
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr "পূর্ণ পর্দাজুড়ে প্রদর্শন মোড অনুমোদন করা হবে?"
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
-msgstr "পূর্ণ পর্দার মোড বন্ধ করতে যে কোন সময় ESC কী চাপুন।"
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -365,26 +370,14 @@ msgstr "অবস্থান"
 msgid "Search"
 msgstr "অনুসন্ধান"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "ব্যস্তচিহ্ন"
-
 #: bookmarksItem.title
 msgctxt "bookmarksItem.title"
 msgid "Bookmarks"
 msgstr "বুকমার্ক"
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr "মেনু"
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr "&brandShortName;মেনু খুলুন "
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "হোম"
 
@@ -396,23 +389,10 @@ msgstr "ট্যাব গ্রুপ"
 msgid "Group your tabs"
 msgstr "আপনার ট্যাবের গ্রুপ"
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "গ্রাহক হওয়া"
-
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "এই পৃষ্ঠায় সাবস্ক্রাইব করুন…"
-
 #: bookmarksButton.label
 msgctxt "bookmarksButton.label"
 msgid "Bookmarks"
 msgstr "বুকমার্ক"
-
-#: bookmarksButton.tooltip
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "আপনার বুকমার্কগুলো প্রদর্শন করা হবে"
 
 #: bookmarksCmd.commandkey
 msgid "b"
@@ -458,10 +438,6 @@ msgstr "i"
 msgid "History"
 msgstr "ইতিহাস"
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "সম্প্রতি পরিদর্শিত পৃষ্ঠা প্রদর্শন করা হবে"
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -473,10 +449,6 @@ msgstr "টুল (&T)"
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "অনুসন্ধানের জন্য কীওয়ার্ড যোগ করুন… (&K)"
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "ওয়েবে অনুসন্ধান (&S)"
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -507,6 +479,15 @@ msgstr "A"
 #: webDeveloperMenu.label webDeveloperMenu.accesskey
 msgid "&Web Developer"
 msgstr "ওয়েব ডেভেলপার &W"
+
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F2"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
 
 #: devtoolsConnect.label devtoolsConnect.accesskey
 msgid "Conn&ect…"
@@ -595,6 +576,16 @@ msgstr "F2"
 #: devToolboxMenuItem.label devToolboxMenuItem.accesskey
 msgid "&Toggle Tools"
 msgstr "ট্যোগল টুল &T"
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
+msgstr ""
 
 #: devToolbarToolsButton.tooltip
 msgid "Toggle developer tools"
@@ -726,10 +717,6 @@ msgstr "সাইডবার (&e)"
 msgid "&Customize…"
 msgstr "স্বনির্ধারণ… (&C)"
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr "শীর্ষ ট্যাব (&T)"
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "ইতিহাস (&s)"
@@ -747,11 +734,6 @@ msgstr "সম্প্রতি বন্ধ করা উইন্ডো"
 msgid "Restore Previous Session"
 msgstr "পূর্ববর্তী সেশন পুনরুদ্ধার"
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "হোম"
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "সব ইতিহাস প্রদর্শন"
@@ -760,42 +742,9 @@ msgstr "সব ইতিহাস প্রদর্শন"
 msgid "H"
 msgstr "H"
 
-#: appMenuEdit.label
-msgid "Edit"
-msgstr "সম্পাদনা"
-
 #: appMenuCustomize.label
 msgid "Customize"
 msgstr "স্বনির্ধারণ"
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr "টুলবারের বহির্বিন্যাস…"
-
-#: appMenuSidebars.label
-msgid "Sidebars"
-msgstr "সাইডবার"
-
-#: appMenuFind.label
-msgid "Find…"
-msgstr "খোঁজা…"
-
-#: appMenuUnsorted.label
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "অগোছানো বুকমার্ক"
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr "ওয়েব ডেভেলপার"
-
-#: appMenuGettingStarted.label
-msgid "Getting Started"
-msgstr "শুরু করা হচ্ছে"
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr "নিস্ক্রিয় অ্যাড-অনসহ পুনরায় শুরু…(&R)"
 
 #: openCmd.commandkey
 msgctxt "openCmd.commandkey"
@@ -927,6 +876,10 @@ msgstr "ছবি প্রদর্শন (&I)"
 #: viewImageInfoCmd.label viewImageInfoCmd.accesskey
 msgid "View Image In&fo"
 msgstr "ছবির তথ্য প্রদর্শন (&f)"
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -1189,33 +1142,9 @@ msgstr "নতুন উইন্ডো খোলা হবে"
 msgid "Close sidebar"
 msgstr "সাইডবার বন্ধ করুন"
 
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "কাটা"
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "অনুলিপি"
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "প্রতিলেপন"
-
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
 msgstr "পূর্ণ পর্দায় উইন্ডো প্রদর্শন"
-
-#: zoomOutButton.tooltip
-msgid "Zoom out"
-msgstr "ছোট আকারে প্রদর্শন"
-
-#: zoomInButton.tooltip
-msgid "Zoom in"
-msgstr "বড় আকারে প্রদর্শন"
-
-#: zoomControls.label
-msgid "Zoom Controls"
-msgstr "বড় আকারে প্রদর্শন কন্ট্রোল"
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -1363,6 +1292,10 @@ msgstr "উপরোক্ত সাইটটির পরিচালক"
 msgid "More Information…"
 msgstr "আরও তথ্য…"
 
+#: identity.permissions
+msgid "Permissions"
+msgstr "অনুমোদন (P)"
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1396,14 +1329,6 @@ msgstr "এখন সিঙ্ক (&S)"
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "সিঙ্ক"
-
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr "অ্যাড-অন বার বন্ধ"
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr "/"
 
 #: socialToolbar.title
 msgid "Social Toolbar Button"
@@ -1513,6 +1438,121 @@ msgstr ""
 #: pluginBlockNow.label
 msgid "Block Plugin"
 msgstr ""
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr "অ্যাড-অন বার"
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "ব্যস্তচিহ্ন"
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr "মেনু"
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr "&brandShortName;মেনু খুলুন "
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "গ্রাহক হওয়া"
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "এই পৃষ্ঠায় সাবস্ক্রাইব করুন…"
+
+#: bookmarksButton.tooltip
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "আপনার বুকমার্কগুলো প্রদর্শন করা হবে"
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "সম্প্রতি পরিদর্শিত পৃষ্ঠা প্রদর্শন করা হবে"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr "শীর্ষ ট্যাব (&T)"
+
+#: appMenuEdit.label
+msgid "Edit"
+msgstr "সম্পাদনা"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr "টুলবারের বহির্বিন্যাস…"
+
+#: appMenuSidebars.label
+msgid "Sidebars"
+msgstr "সাইডবার"
+
+#: appMenuFind.label
+msgid "Find…"
+msgstr "খোঁজা…"
+
+#: appMenuUnsorted.label
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "অগোছানো বুকমার্ক"
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr "ওয়েব ডেভেলপার"
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr "শুরু করা হচ্ছে"
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr "নিস্ক্রিয় অ্যাড-অনসহ পুনরায় শুরু…(&R)"
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "কাটা"
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "অনুলিপি"
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "প্রতিলেপন"
+
+#: zoomOutButton.tooltip
+msgid "Zoom out"
+msgstr "ছোট আকারে প্রদর্শন"
+
+#: zoomInButton.tooltip
+msgid "Zoom in"
+msgstr "বড় আকারে প্রদর্শন"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr "বড় আকারে প্রদর্শন কন্ট্রোল"
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr "অ্যাড-অন বার বন্ধ"
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr "/"
+
+#~ msgid "Allow fullscreen?"
+#~ msgstr "পূর্ণ পর্দাজুড়ে প্রদর্শন মোড অনুমোদন করা হবে?"
+
+#~ msgid "Press ESC at any time to exit fullscreen."
+#~ msgstr "পূর্ণ পর্দার মোড বন্ধ করতে যে কোন সময় ESC কী চাপুন।"
+
+#~ msgid "Web &Search"
+#~ msgstr "ওয়েবে অনুসন্ধান (&S)"
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "হোম"
 
 #~ msgctxt "errorConsoleCmd.commandkey"
 #~ msgid "j"

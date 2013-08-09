@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: browser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2013-07-04 10:03+0000\n"
 "Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1372932227.000000\n"
@@ -76,6 +76,15 @@ msgstr "ھەممە بەتكۈچنى خەتكۈچكە قوش(&T)…"
 msgid "&Undo Close Tab"
 msgstr "بەتكۈچ تاقاشتىن يېنىۋال(&U)"
 
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
+msgstr "بەتكۈچ تاقاشتىن يېنىۋال(&U)"
+
 #: closeTab.label closeTab.accesskey
 msgid "&Close Tab"
 msgstr "بەتكۈچ ياپ(&C)"
@@ -130,6 +139,10 @@ msgstr "تورسىز خىزمەت(&K)"
 msgid "&Menu Bar"
 msgstr "تىزىملىك بالداق(&M)"
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "يولباشچى قورال بالداق(&N)"
@@ -141,10 +154,6 @@ msgstr "خەتكۈچ قورال بالداق(&B)"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "خەتكۈچ قورال بالداق تۈرى"
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr "قىستۇرما بالداق(&A)"
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -215,13 +224,9 @@ msgstr "يول قوي"
 msgid "Deny"
 msgstr "رەت قىل"
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr "پۈتۈن ئېكرانغا يول قويامدۇ؟"
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
-msgstr "خالىغان ۋاقىتتا ESC بېسىلسا پۈتۈن ئېكراندىن چېكىنىدۇ."
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -366,26 +371,14 @@ msgstr "ئورنى"
 msgid "Search"
 msgstr "ئىزدە"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "ھەرىكەت ئۆلچىمى"
-
 #: bookmarksItem.title
 msgctxt "bookmarksItem.title"
 msgid "Bookmarks"
 msgstr "خەتكۈچلەر"
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr "تىزىملىك"
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr "&brandShortName; تىزىملىكنى ئاچ"
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "باش بەت"
 
@@ -397,23 +390,10 @@ msgstr "بەتكۈچ گۇرۇپپىسى"
 msgid "Group your tabs"
 msgstr "بەتكۈچلىرىڭىزنى گۇرۇپپىلايدۇ"
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "مۇشتەرى بولۇش"
-
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "بۇ بەتكە مۇشتەرى بول…"
-
 #: bookmarksButton.label
 msgctxt "bookmarksButton.label"
 msgid "Bookmarks"
 msgstr "خەتكۈچلەر"
-
-#: bookmarksButton.tooltip
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "خەتكۈچىڭىزنى كۆرسىتىش"
 
 #: bookmarksCmd.commandkey
 msgid "b"
@@ -459,10 +439,6 @@ msgstr "i"
 msgid "History"
 msgstr "تارىخ"
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "يېقىندا كۆرگەن بەتلىرىڭىزنى كۆرسىتىدۇ"
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -474,10 +450,6 @@ msgstr "قوراللار(&T)"
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "بۇ ئىزدەشكە ھالقىلىق سۆز قوش(&K)…"
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "توردىن ئىزدە(&S)"
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -508,6 +480,15 @@ msgstr "A"
 #: webDeveloperMenu.label webDeveloperMenu.accesskey
 msgid "&Web Developer"
 msgstr "&Web ئىجادكارلار"
+
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F2"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
 
 #: devtoolsConnect.label devtoolsConnect.accesskey
 msgid "Conn&ect…"
@@ -595,6 +576,16 @@ msgstr "F2"
 #: devToolboxMenuItem.label devToolboxMenuItem.accesskey
 msgid "&Toggle Tools"
 msgstr "ئالماشتۇرۇش قورالى(&T)"
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
+msgstr ""
 
 #: devToolbarToolsButton.tooltip
 msgid "Toggle developer tools"
@@ -725,10 +716,6 @@ msgstr "يان قورال بالداق(&E)"
 msgid "&Customize…"
 msgstr "ئىختىيارىچە(&C)…"
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr "ئۈستىدىكى بەتكۈچلەر(&T)"
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "تارىخ(&S)"
@@ -746,11 +733,6 @@ msgstr "يېقىندا يېپىلغان كۆزنەك"
 msgid "Restore Previous Session"
 msgstr "ئالدىنقى سۆزلىشىشنى ئەسلىگە كەلتۈر"
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "باش بەت"
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "بارلىق تارىخنى كۆرسىتىش"
@@ -759,42 +741,9 @@ msgstr "بارلىق تارىخنى كۆرسىتىش"
 msgid "H"
 msgstr "H"
 
-#: appMenuEdit.label
-msgid "Edit"
-msgstr "تەھرىر"
-
 #: appMenuCustomize.label
 msgid "Customize"
 msgstr "ئىختىيارىچە"
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr "قورال بالداق ئۇسلۇبى…"
-
-#: appMenuSidebars.label
-msgid "Sidebars"
-msgstr "يان بالداق"
-
-#: appMenuFind.label
-msgid "Find…"
-msgstr "ئىزدە…"
-
-#: appMenuUnsorted.label
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "تەرتىپلەنمىگەن خەتكۈچلەر"
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr "Web ئىجادكارلار"
-
-#: appMenuGettingStarted.label
-msgid "Getting Started"
-msgstr "دەسلەپكى ئاساس"
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr "قىستۇرمىلارنى چەكلەپ قايتا قوزغات(&R)…"
 
 #: openCmd.commandkey
 msgctxt "openCmd.commandkey"
@@ -925,6 +874,10 @@ msgstr "سۈرەت كۆرسەت(&I)"
 #: viewImageInfoCmd.label viewImageInfoCmd.accesskey
 msgid "View Image In&fo"
 msgstr "سۈرەت ئۇچۇرىنى كۆرسەت(&F)"
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -1186,33 +1139,9 @@ msgstr "يېڭى بىر كۆزنەك ئاچ"
 msgid "Close sidebar"
 msgstr "يان بالداقنى تاقا"
 
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "كەس"
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "كۆچۈر"
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "چاپلا"
-
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
 msgstr "كۆزنەكنى پۈتۈن ئېكراندا كۆرسەت"
-
-#: zoomOutButton.tooltip
-msgid "Zoom out"
-msgstr "يىراقلات"
-
-#: zoomInButton.tooltip
-msgid "Zoom in"
-msgstr "يېقىنلات"
-
-#: zoomControls.label
-msgid "Zoom Controls"
-msgstr "يىراق-يېقىن تىزگىنى"
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -1360,6 +1289,10 @@ msgstr "ئىجرا قىلىدىغىنى"
 msgid "More Information…"
 msgstr "تېخىمۇ كۆپ ئۇچۇر…"
 
+#: identity.permissions
+msgid "Permissions"
+msgstr "ئىجازەت"
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1393,14 +1326,6 @@ msgstr "دەرھال قەدەمداشلا(&S)"
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "قەدەمداش"
-
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr "قىستۇرما بالداقنى ياپ"
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr "/"
 
 #: socialToolbar.title
 msgid "Social Toolbar Button"
@@ -1510,6 +1435,121 @@ msgstr "يول قوي ۋە ئەستە تۇت"
 #: pluginBlockNow.label
 msgid "Block Plugin"
 msgstr "بۆلەك قىستۇرما"
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr "قىستۇرما بالداق(&A)"
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "ھەرىكەت ئۆلچىمى"
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr "تىزىملىك"
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr "&brandShortName; تىزىملىكنى ئاچ"
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "مۇشتەرى بولۇش"
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "بۇ بەتكە مۇشتەرى بول…"
+
+#: bookmarksButton.tooltip
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "خەتكۈچىڭىزنى كۆرسىتىش"
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "يېقىندا كۆرگەن بەتلىرىڭىزنى كۆرسىتىدۇ"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr "ئۈستىدىكى بەتكۈچلەر(&T)"
+
+#: appMenuEdit.label
+msgid "Edit"
+msgstr "تەھرىر"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr "قورال بالداق ئۇسلۇبى…"
+
+#: appMenuSidebars.label
+msgid "Sidebars"
+msgstr "يان بالداق"
+
+#: appMenuFind.label
+msgid "Find…"
+msgstr "ئىزدە…"
+
+#: appMenuUnsorted.label
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "تەرتىپلەنمىگەن خەتكۈچلەر"
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr "Web ئىجادكارلار"
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr "دەسلەپكى ئاساس"
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr "قىستۇرمىلارنى چەكلەپ قايتا قوزغات(&R)…"
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "كەس"
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "كۆچۈر"
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "چاپلا"
+
+#: zoomOutButton.tooltip
+msgid "Zoom out"
+msgstr "يىراقلات"
+
+#: zoomInButton.tooltip
+msgid "Zoom in"
+msgstr "يېقىنلات"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr "يىراق-يېقىن تىزگىنى"
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr "قىستۇرما بالداقنى ياپ"
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr "/"
+
+#~ msgid "Allow fullscreen?"
+#~ msgstr "پۈتۈن ئېكرانغا يول قويامدۇ؟"
+
+#~ msgid "Press ESC at any time to exit fullscreen."
+#~ msgstr "خالىغان ۋاقىتتا ESC بېسىلسا پۈتۈن ئېكراندىن چېكىنىدۇ."
+
+#~ msgid "Web &Search"
+#~ msgstr "توردىن ئىزدە(&S)"
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "باش بەت"
 
 #~ msgctxt "errorConsoleCmd.commandkey"
 #~ msgid "j"

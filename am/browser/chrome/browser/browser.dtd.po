@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2011-03-04 09:46+0000\n"
 "Last-Translator: tami <atomictamirat@yahoo.com>\n"
 "Language-Team: ANLOC\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1299231962.000000\n"
@@ -78,6 +78,15 @@ msgstr "&ሁሉንም ትሮች እልባት አድርግ...   "
 msgid "&Undo Close Tab"
 msgstr "የተዘጋ ትር &ቀልብስ "
 
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
+msgstr "የተዘጋ ትር &ቀልብስ "
+
 #: closeTab.label closeTab.accesskey
 msgid "&Close Tab"
 msgstr "&ትር ዝጋ "
@@ -133,6 +142,10 @@ msgstr "ከመስመር ው&ጭ ስራ"
 msgid "&Menu Bar"
 msgstr "ም&ናሌ አሞሌ "
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "ዳ&ሳሽ  ሰሪ አሞሌ"
@@ -144,10 +157,6 @@ msgstr "የእልባቶች ሰሪ አሞ&ሌ"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "የእልባቶች ሰሪ አሞሌ ዓይነቶች "
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr "የእክሎች አሞሌ "
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -220,12 +229,8 @@ msgstr "ፍቀድ "
 msgid "Deny"
 msgstr ""
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr ""
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
 msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
@@ -373,26 +378,14 @@ msgstr "አቀማመጥ "
 msgid "Search"
 msgstr "ፈልግ "
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "እንቅስቃሴ አመልካች  "
-
 #: bookmarksItem.title
 msgctxt "bookmarksItem.title"
 msgid "Bookmarks"
 msgstr "እልባቶች    "
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr "ምናሌ"
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr "&brandShortName; ምናሌ ክፈት "
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "መነሻ "
 
@@ -404,24 +397,11 @@ msgstr "የትር ቡድኖች "
 msgid "Group your tabs"
 msgstr "ትርህን ቦድን  "
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "ደንበኛ ሁን "
-
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "ለዚህ ገፅ ደንበኛ ሁን... "
-
 #: bookmarksButton.label
 #, fuzzy
 msgctxt "bookmarksButton.label"
 msgid "Bookmarks"
 msgstr "እልባቶች    "
-
-#: bookmarksButton.tooltip
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "እልባቶችህን አሳይ    "
 
 #: bookmarksCmd.commandkey
 msgid "b"
@@ -467,10 +447,6 @@ msgstr "i"
 msgid "History"
 msgstr "ታሪክ "
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "በቅርብ የተጎበኙ ገጾችን አሳይ "
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -482,10 +458,6 @@ msgstr "መሳሪያ&ዎች "
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "ለዚህ ፍለጋ ቁልፍ ቃል አክል…"
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "ድር &ፍለጋ  "
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -516,6 +488,15 @@ msgstr "A"
 #: webDeveloperMenu.label webDeveloperMenu.accesskey
 msgid "&Web Developer"
 msgstr "ድር &ገንቢ"
+
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F4"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr ""
 
 #: devtoolsConnect.label devtoolsConnect.accesskey
 msgid "Conn&ect…"
@@ -603,6 +584,16 @@ msgstr ""
 
 #: devToolboxMenuItem.label devToolboxMenuItem.accesskey
 msgid "&Toggle Tools"
+msgstr ""
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
 msgstr ""
 
 #: devToolbarToolsButton.tooltip
@@ -736,10 +727,6 @@ msgstr "የ&ጎን አሞሌ "
 msgid "&Customize…"
 msgstr "አብ&ጅ…   "
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr "ትሮች &ከላይ  "
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "ታሪ&ክ  "
@@ -757,11 +744,6 @@ msgstr "በቅርብ የተዘጉ መስኮቶች  "
 msgid "Restore Previous Session"
 msgstr "የቀድሞዉን ክፍለ ጊዜ እነበረበት መልስ  "
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "መንሻ "
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "ሁሉንም ታሪኮች አሳይ "
@@ -770,42 +752,9 @@ msgstr "ሁሉንም ታሪኮች አሳይ "
 msgid "H"
 msgstr "H"
 
-#: appMenuEdit.label
-msgid "Edit"
-msgstr "አርትእ  "
-
 #: appMenuCustomize.label
 msgid "Customize"
 msgstr "አብጅ    "
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr "የሰሪ አሞሌ  አቀማመጥ… "
-
-#: appMenuSidebars.label
-msgid "Sidebars"
-msgstr "የጎን አሞሌዎች  "
-
-#: appMenuFind.label
-msgid "Find…"
-msgstr "ፈልግ… "
-
-#: appMenuUnsorted.label
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "ያልተደረደሩ አልባቶች  "
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr "ድር ገንቢ "
-
-#: appMenuGettingStarted.label
-msgid "Getting Started"
-msgstr "መጀመር        "
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr "ከቦዘኑ እክሎች ጋር  እ&ንደገና ጀምር…  "
 
 #: openCmd.commandkey
 #, fuzzy
@@ -939,6 +888,10 @@ msgstr "ምስሉን &ተመልከት  "
 #: viewImageInfoCmd.label viewImageInfoCmd.accesskey
 msgid "View Image In&fo"
 msgstr "የ&ምስል  መረጃዉን ተመልከት  "
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -1202,33 +1155,9 @@ msgstr "አዲስ መስኮት ክፈት "
 msgid "Close sidebar"
 msgstr "ጎን አሞሌዉን ዝጋ   "
 
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "ቁረጥ  "
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "ቅዳ  "
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "ለጥፍ "
-
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
 msgstr "መስኮቱን በሙሉ ማያ  አሳይ "
-
-#: zoomOutButton.tooltip
-msgid "Zoom out"
-msgstr "አሳንስ  "
-
-#: zoomInButton.tooltip
-msgid "Zoom in"
-msgstr "አጉላ  "
-
-#: zoomControls.label
-msgid "Zoom Controls"
-msgstr "መቆጣጠሪያዎቹን አጉላ   "
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -1378,6 +1307,10 @@ msgstr "ይሄ የሚከናወነዉ"
 msgid "More Information…"
 msgstr "የበለጠ መረጃ… "
 
+#: identity.permissions
+msgid "Permissions"
+msgstr ""
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1411,14 +1344,6 @@ msgstr "አሁ&ን አስምር "
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "አስምር  "
-
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr "እክል አሞሌ ዝጋ  "
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr "/"
 
 #: socialToolbar.title
 msgid "Social Toolbar Button"
@@ -1529,6 +1454,115 @@ msgstr ""
 #: pluginBlockNow.label
 msgid "Block Plugin"
 msgstr ""
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr "የእክሎች አሞሌ "
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "እንቅስቃሴ አመልካች  "
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr "ምናሌ"
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr "&brandShortName; ምናሌ ክፈት "
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "ደንበኛ ሁን "
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "ለዚህ ገፅ ደንበኛ ሁን... "
+
+#: bookmarksButton.tooltip
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "እልባቶችህን አሳይ    "
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "በቅርብ የተጎበኙ ገጾችን አሳይ "
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr "ትሮች &ከላይ  "
+
+#: appMenuEdit.label
+msgid "Edit"
+msgstr "አርትእ  "
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr "የሰሪ አሞሌ  አቀማመጥ… "
+
+#: appMenuSidebars.label
+msgid "Sidebars"
+msgstr "የጎን አሞሌዎች  "
+
+#: appMenuFind.label
+msgid "Find…"
+msgstr "ፈልግ… "
+
+#: appMenuUnsorted.label
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "ያልተደረደሩ አልባቶች  "
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr "ድር ገንቢ "
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr "መጀመር        "
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr "ከቦዘኑ እክሎች ጋር  እ&ንደገና ጀምር…  "
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "ቁረጥ  "
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "ቅዳ  "
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "ለጥፍ "
+
+#: zoomOutButton.tooltip
+msgid "Zoom out"
+msgstr "አሳንስ  "
+
+#: zoomInButton.tooltip
+msgid "Zoom in"
+msgstr "አጉላ  "
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr "መቆጣጠሪያዎቹን አጉላ   "
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr "እክል አሞሌ ዝጋ  "
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr "/"
+
+#~ msgid "Web &Search"
+#~ msgstr "ድር &ፍለጋ  "
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "መንሻ "
 
 #~ msgctxt "errorConsoleCmd.commandkey"
 #~ msgid "j"

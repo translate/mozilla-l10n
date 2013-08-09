@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2013-06-18 07:17+0000\n"
 "Last-Translator: Robin <robin@ankur.org.bd>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,215 +27,221 @@ msgstr ""
 #. # You want to make that choice consistent across the developer tools.
 #. # A good criteria is the language in which you'd find the best
 #. # documentation on web development on the web.
-#. # LOCALIZATION NOTE (canonDescNone): Short string used to describe any command
-#. # or command parameter when no description has been provided.
+#. # For each command there are in general two strings. As an example consider
+#. # the 'pref' command.
+#. # commandDesc (e.g. prefDesc for the command 'pref'): this string contains a
+#. # very short description of the command. It's designed to be shown in a menu
+#. # alongside the command name, which is why it should be as short as possible.
+#. # commandManual (e.g. prefManual for the command 'pref'): this string will
+#. # contain a fuller description of the command. It's diplayed when the user
+#. # asks for help about a specific command (e.g. 'help pref').
+#. # LOCALIZATION NOTE: This message is used to describe any command or command
+#. # parameter when no description has been provided.
 #: canonDescNone
 msgid "(No description)"
 msgstr "(কোন বিবরণ নেই)"
 
-#. # LOCALIZATION NOTE (canonDefaultGroupName): The default name for a group of
-#. # parameters.
+#. # LOCALIZATION NOTE: The default name for a group of parameters.
 #: canonDefaultGroupName
 msgid "Options"
 msgstr "অপশন"
 
-#. # LOCALIZATION NOTE (canonProxyDesc): A very short description of a set of
-#. # remote commands. This string is designed to be shown in a menu alongside the
-#. # command name, which is why it should be as short as possible. See
-#. # canonProxyManual for a fuller description of what it does.
+#. # LOCALIZATION NOTE (canonProxyDesc, canonProxyManual): These commands are
+#. # used to execute commands on a remote system (using a proxy). Parameters: %S
+#. # is the name of the remote system.
 #: canonProxyDesc
 msgid "Execute a command on %S"
 msgstr "%S এ কমান্ড কার্যকর করা হবে"
 
-#. # LOCALIZATION NOTE (canonProxyManual): A fuller description of a set of
-#. # remote commands. Displayed when the user asks for help on what it does.
 #: canonProxyManual
 msgid ""
 "A set of commands that are executed on a remote system. The remote system is "
 "reached via %S"
 msgstr ""
 
-#. # LOCALIZATION NOTE (canonProxyExists): An error message displayed when we try
-#. # to add new command (via a proxy) where one already exists in that name.
+#. # LOCALIZATION NOTE: This error message is displayed when we try to add a new
+#. # command (using a proxy) where one already exists with the same name.
 #: canonProxyExists
 msgid "There is already a command called '%S'"
 msgstr "'%S' নামক একটি কমান্ড ইতোমধ্যে বিদ্যমান"
 
-#. # LOCALIZATION NOTE (cliEvalJavascript): The special '{' command allows entry
-#. # of JavaScript like traditional developer tool command lines. This describes
-#. # the '{' command.
+#. # LOCALIZATION NOTE: This message describes the '{' command, which allows
+#. # entry of JavaScript like traditional developer tool command lines.
 #: cliEvalJavascript
 msgid "Enter JavaScript directly"
 msgstr "জাভাস্ক্রিপ্টে সরাসরি প্রবেশ করুন"
 
-#. # LOCALIZATION NOTE (cliUnusedArg): When the command line has more arguments
-#. # than the current command can understand this is the error message shown to
-#. # the user.
+#. # LOCALIZATION NOTE: This message is displayed when the command line has more
+#. # arguments than the current command can understand.
 #: cliUnusedArg
 msgid "Too many arguments"
 msgstr "অনেক আর্গুমেন্ট"
 
-#. # LOCALIZATION NOTE (cliOptions): The title of the dialog which displays the
-#. # options that are available to the current command.
+#. # LOCALIZATION NOTE: The title of the dialog which displays the options that
+#. # are available to the current command.
 #: cliOptions
 msgid "Available Options"
 msgstr "বিদ্যমান অপশন"
 
-#. # LOCALIZATION NOTE (fieldSelectionSelect): When a command has a parameter
-#. # that has a number of pre-defined options the user interface presents these
-#. # in a drop-down menu, where the first 'option' is an indicator that a
-#. # selection should be made. This string describes that first option.
+#. # LOCALIZATION NOTE: Error message given when a file argument points to a file
+#. # that does not exist, but should (e.g. for use with File->Open) %1$S is a
+#. # filename
+#: fileErrNotExists
+msgid "'%1$S' doesn't exist"
+msgstr ""
+
+#. # LOCALIZATION NOTE: Error message given when a file argument points to a file
+#. # that exists, but should not (e.g. for use with File->Save As) %1$S is a
+#. # filename
+#: fileErrExists
+msgid "'%1$S' already exists"
+msgstr ""
+
+#. # LOCALIZATION NOTE: Error message given when a file argument points to a
+#. # non-file, when a file is needed. %1$S is a filename
+#: fileErrIsNotFile
+msgid "'%1$S' is not a file"
+msgstr ""
+
+#. # LOCALIZATION NOTE: Error message given when a file argument points to a
+#. # non-directory, when a directory is needed (e.g. for use with 'cd') %1$S is a
+#. # filename
+#: fileErrIsNotDirectory
+msgid "'%1$S' is not a directory"
+msgstr ""
+
+#. # LOCALIZATION NOTE: Error message given when a file argument does not match
+#. # the specified regular expression %1$S is a filename %2$S is a regular
+#. # expression
+#: fileErrDoesntMatch
+msgid "'%1$S' does not match '%2$S'"
+msgstr ""
+
+#. # LOCALIZATION NOTE: When a command has a parameter that has a number of
+#. # pre-defined options the user interface presents these in a drop-down menu,
+#. # where the first 'option' is an indicator that a selection should be made.
+#. # This string describes that first option.
 #: fieldSelectionSelect
 msgid "Select a %S…"
 msgstr "একটি %S নির্বাচন করুন…"
 
-#. # LOCALIZATION NOTE (fieldArrayAdd): When a command has a parameter that can
-#. # be repeated a number of times (e.g. like the 'cat a.txt b.txt' command) the
-#. # user interface presents buttons to add and remove arguments. This string is
-#. # used to add arguments.
+#. # LOCALIZATION NOTE (fieldArrayAdd, fieldArrayDel): When a command has a
+#. # parameter that can be repeated multiple times (e.g. like the 'cat a.txt
+#. # b.txt' command) the user interface presents buttons to add and remove
+#. # arguments. This string is used to add arguments.
 #: fieldArrayAdd
 msgid "Add"
 msgstr "যোগ"
 
-#. # LOCALIZATION NOTE (fieldArrayDel): When a command has a parameter that can
-#. # be repeated a number of times (e.g. like the 'cat a.txt b.txt' command) the
-#. # user interface presents buttons to add and remove arguments. This string is
-#. # used to remove arguments.
 #: fieldArrayDel
 msgid "Delete"
 msgstr "মুছে ফেলুন"
 
-#. # LOCALIZATION NOTE (fieldMenuMore): When the menu has displayed all the
-#. # matches that it should (i.e. about 10 items) then we display this to alert
-#. # the user that more matches are available.
+#. # LOCALIZATION NOTE: When the menu has displayed all the matches that it
+#. # should (i.e. about 10 items) then we display this to alert the user that
+#. # more matches are available.
 #: fieldMenuMore
 msgid "More matches, keep typing"
 msgstr "আরো মিল, টাইপ করতে থাকুন"
 
-#. # LOCALIZATION NOTE (jstypeParseScope): The command line provides completion
-#. # for JavaScript commands, however there are times when the scope of what
-#. # we're completing against can't be used. This error message is displayed when
-#. # this happens.
+#. # LOCALIZATION NOTE: The command line provides completion for JavaScript
+#. # commands, however there are times when the scope of what we're completing
+#. # against can't be used. This error message is displayed when this happens.
 #: jstypeParseScope
 msgid "Scope lost"
 msgstr "সুযোগ হারিয়ে গেছে"
 
-#. # LOCALIZATION NOTE (jstypeParseMissing): When the command line is doing
-#. # JavaScript completion, sometimes the property to be completed does not
-#. # exist. This error message is displayed when this happens.
+#. # LOCALIZATION NOTE (jstypeParseMissing, jstypeBeginSyntax,
+#. # jstypeBeginUnterm): These error messages are displayed when the command line
+#. # is doing JavaScript completion and encounters errors.
 #: jstypeParseMissing
 msgid "Can't find property '%S'"
 msgstr "'%S' বৈশিষ্ট্য পাওয়া যায়নি"
 
-#. # LOCALIZATION NOTE (jstypeBeginSyntax): When the command line is doing
-#. # JavaScript completion using invalid JavaScript, this error message is
-#. # displayed.
 #: jstypeBeginSyntax
 msgid "Syntax error"
 msgstr "সিনট্যাক্স ত্রুটি"
 
-#. # LOCALIZATION NOTE (jstypeBeginUnterm): When the command line is doing
-#. # JavaScript completion using a string that is not properly terminated, this
-#. # error message is displayed.
 #: jstypeBeginUnterm
 msgid "Unterminated string literal"
 msgstr "অনঅবসিত স্ট্রিং লিটারেল"
 
-#. # LOCALIZATION NOTE (jstypeParseError): If the system for providing JavaScript
-#. # completions encounters and error it displays this.
+#. # LOCALIZATION NOTE: This message is displayed if the system for providing
+#. # JavaScript completions encounters and error it displays this.
 #: jstypeParseError
 msgid "Error"
 msgstr "ত্রুটি"
 
-#. # LOCALIZATION NOTE (typesNumberNan): When the command line is passed a
-#. # number, however the input string is not a valid number, this error message
-#. # is displayed.
+#. # LOCALIZATION NOTE (typesNumberNan, typesNumberNotInt2, typesDateNan): These
+#. # error messages are displayed when the command line is passed a variable
+#. # which has the wrong format and can't be converted. Parameters: %S is the
+#. # passed variable.
 #: typesNumberNan
 msgid "Can't convert \"%S\" to a number."
 msgstr "\"%S\" একটি নাম্বারে রূপান্তরিত করা যাবে না।"
 
-#. # LOCALIZATION NOTE (typesNumberMax): When the command line is passed a
-#. # number, but the number is bigger than the largest allowed number, this error
-#. # message is displayed.
-#: typesNumberMax
-msgid "%1$S is greater than maximum allowed: %2$S."
-msgstr "%1$S সর্বোচ্চ অনুমোদিত থেকে বড়: %2$S।"
-
-#. # LOCALIZATION NOTE (typesNumberMin): When the command line is passed a
-#. # number, but the number is lower than the smallest allowed number, this error
-#. # message is displayed.
-#: typesNumberMin
-msgid "%1$S is smaller than minimum allowed: %2$S."
-msgstr "%1$S সর্বনিম্ন অনুমোদন থেকে ছোট: %2$S।"
-
-#. # LOCALIZATION NOTE (typesNumberNotInt2): When the command line is passed a
-#. # number, but the number has a decimal part and floats are not allowed.
 #: typesNumberNotInt2
 msgid "Can't convert \"%S\" to an integer."
 msgstr "\"%S\" একটি নাম্বারে রূপান্তরিত করা যাবে না।"
 
-#. # LOCALIZATION NOTE (typesDateNan): When the command line is passed a date,
-#. # however the input string is not a valid date, this error message is
-#. # displayed.
 #: typesDateNan
 #, fuzzy
 msgid "Can't convert \"%S\" to a date."
 msgstr "\"%S\" একটি নাম্বারে রূপান্তরিত করা যাবে না।"
 
-#. # LOCALIZATION NOTE (typesDateMax): When the command line is passed a date,
-#. # but the number is later than the latest allowed date, this error message is
-#. # displayed.
+#. # LOCALIZATION NOTE (typesNumberMax, typesNumberMin, typesDateMax,
+#. # typesDateMin): These error messages are displayed when the command line is
+#. # passed a variable which has a value out of range (number or date).
+#. # Parameters: %1$S is the passed variable, %2$S is the limit value.
+#: typesNumberMax
+msgid "%1$S is greater than maximum allowed: %2$S."
+msgstr "%1$S সর্বোচ্চ অনুমোদিত থেকে বড়: %2$S।"
+
+#: typesNumberMin
+msgid "%1$S is smaller than minimum allowed: %2$S."
+msgstr "%1$S সর্বনিম্ন অনুমোদন থেকে ছোট: %2$S।"
+
 #: typesDateMax
 #, fuzzy
 msgid "%1$S is later than maximum allowed: %2$S."
 msgstr "%1$S সর্বোচ্চ অনুমোদিত থেকে বড়: %2$S।"
 
-#. # LOCALIZATION NOTE (typesDateMin): When the command line is passed a date,
-#. # but the date is earlier than the earliest allowed number, this error message
-#. # is displayed.
 #: typesDateMin
 #, fuzzy
 msgid "%1$S is earlier than minimum allowed: %2$S."
 msgstr "%1$S সর্বনিম্ন অনুমোদন থেকে ছোট: %2$S।"
 
-#. # LOCALIZATION NOTE (typesSelectionNomatch): When the command line is passed
-#. # an option with a limited number of correct values, but the passed value is
-#. # not one of them, this error message is displayed.
+#. # LOCALIZATION NOTE: This error message is displayed when the command line is
+#. # passed an option with a limited number of correct values, but the passed
+#. # value is not one of them.
 #: typesSelectionNomatch
 msgid "Can't use '%S'."
 msgstr "'%S' ব্যবহার করা যাচ্ছে না।"
 
-#. # LOCALIZATION NOTE (nodeParseSyntax): When the command line is expecting a
-#. # CSS query string, however the passed string is not valid, this error message
-#. # is displayed.
+#. # LOCALIZATION NOTE: This error message is displayed when the command line is
+#. # expecting a CSS query string, however the passed string is not valid.
 #: nodeParseSyntax
 msgid "Syntax error in CSS query"
 msgstr "CSS কোয়েরিতে সিনট্যাক্স ত্রুটি"
 
-#. # LOCALIZATION NOTE (nodeParseMultiple): When the command line is expecting a
-#. # CSS string that matches a single node, but more than one node matches, this
-#. # error message is displayed.
+#. # LOCALIZATION NOTE (nodeParseMultiple, nodeParseNone): These error messages
+#. # are displayed when the command line is expecting a CSS string that matches a
+#. # single node, but more nodes (or none) match.
 #: nodeParseMultiple
 msgid "Too many matches (%S)"
 msgstr "অনেক বেশি মিল (%S)"
 
-#. # LOCALIZATION NOTE (nodeParseNone): When the command line is expecting a CSS
-#. # string that matches a single node, but no nodes match, this error message is
-#. # displayed.
 #: nodeParseNone
 msgid "No matches"
 msgstr "কোনো মিল নেই"
 
-#. # LOCALIZATION NOTE (helpDesc): A very short description of the 'help'
-#. # command. This string is designed to be shown in a menu alongside the command
-#. # name, which is why it should be as short as possible. See helpManual for a
-#. # fuller description of what it does.
+#. # LOCALIZATION NOTE (helpDesc, helpManual, helpSearchDesc, helpSearchManual3):
+#. # These strings describe the "help" command, used to display a description of
+#. # a command (e.g. "help pref"), and its parameter 'search'.
 #: helpDesc
 msgid "Get help on the available commands"
 msgstr "বিদ্যমান কমান্ড থেকে সহায়তা নিন"
 
-#. # LOCALIZATION NOTE (helpManual): A fuller description of the 'help' command.
-#. # Displayed when the user asks for help on what it does.
 #: helpManual
 msgid ""
 "Provide help either on a specific command (if a search string is provided "
@@ -246,17 +252,10 @@ msgstr ""
 "যায়) অথবা উপলব্ধ কমান্ডে (যদি একটি অনুসন্ধান স্ট্রিং দেওয়া না হয়, অথবা যদি কোন "
 "সঠিক মিল পাওয়া না যায়) সাহায্য প্রদান করুন।"
 
-#. # LOCALIZATION NOTE (helpSearchDesc): A very short description of the 'search'
-#. # parameter to the 'help' command. See helpSearchManual3 for a fuller
-#. # description of what it does. This string is designed to be shown in a dialog
-#. # with restricted space, which is why it should be as short as possible.
 #: helpSearchDesc
 msgid "Search string"
 msgstr "স্ট্রিং খুঁজুন"
 
-#. # LOCALIZATION NOTE (helpSearchManual3): A fuller description of the 'search'
-#. # parameter to the 'help' command. Displayed when the user asks for help on
-#. # what it does.
 #: helpSearchManual3
 msgid ""
 "search string to use in narrowing down the displayed commands. Regular "
@@ -264,262 +263,209 @@ msgid ""
 msgstr ""
 "প্রদর্শিত কমান্ড সংকীর্ণ ব্যবহার করার জন্য স্ট্রিং খুঁজুন। রেগুলার এক্সপ্রেশন সমর্থিত নয়।"
 
-#. # LOCALIZATION NOTE (helpManSynopsis): A heading shown at the top of a help
-#. # page for a command in the console It labels a summary of the parameters to
-#. # the command
+#. # LOCALIZATION NOTE (helpManSynopsis, helpManDescription, helpManParameters):
+#. # These strings are displayed in the help page for a command in the console.
 #: helpManSynopsis
 msgid "Synopsis"
 msgstr "সারসংক্ষেপ"
 
-#. # LOCALIZATION NOTE (helpManDescription): A heading shown in a help page for a
-#. # command in the console. This heading precedes the top level description.
 #: helpManDescription
 msgid "Description"
 msgstr "বিবরণ"
 
-#. # LOCALIZATION NOTE (helpManParameters): A heading shown above the parameters
-#. # in a help page for a command in the console.
 #: helpManParameters
 msgid "Parameters"
 msgstr "স্থিতিমাপসমূহ"
 
-#. # LOCALIZATION NOTE (helpManNone): Some text shown under the parameters
-#. # heading in a help page for a command which has no parameters.
+#. # LOCALIZATION NOTE: This message is displayed in the help page if the command
+#. # has no parameters.
 #: helpManNone
 msgctxt "helpManNone"
 msgid "None"
 msgstr "কোনটি না"
 
-#. # LOCALIZATION NOTE (helpListAll): The heading shown in response to the 'help'
+#. # LOCALIZATION NOTE: This message is displayed in response to the 'help'
 #. # command when used without a filter, just above the list of known commands.
 #: helpListAll
 msgid "Available Commands:"
 msgstr "বিদ্যমান কমান্ড:"
 
-#. # LOCALIZATION NOTE (helpListPrefix): The heading shown in response to the
-#. # 'help <search>' command (i.e. with a search string), just above the list of
-#. # matching commands.
+#. # LOCALIZATION NOTE (helpListPrefix, helpListNone): These messages are
+#. # displayed in response to the 'help <search>' command (i.e. with a search
+#. # string), just above the list of matching commands. Parameters: %S is the
+#. # search string.
 #: helpListPrefix
-msgid "Commands starting with '%1$S':"
+#, fuzzy
+msgid "Commands starting with '%S':"
 msgstr "কমান্ড '%1$S' এর সাথে শুরু হয়েছে:"
 
-#. # LOCALIZATION NOTE (helpListNone): The heading shown in response to the 'help
-#. # <search>' command (i.e. with a search string), when there are no matching
-#. # commands.
 #: helpListNone
-msgid "No commands starting with '%1$S'"
+#, fuzzy
+msgid "No commands starting with '%S'"
 msgstr "কোন কমান্ড '%1$S' এর সাথে শুরু হয়নি"
 
-#. # LOCALIZATION NOTE (helpManRequired): When the 'help x' command wants to show
-#. # the manual for the 'x' command it needs to be able to describe the
-#. # parameters as either required or optional, or if they have a default value.
-#. # See also 'helpManOptional' and 'helpManDefault'.
+#. # LOCALIZATION NOTE (helpManRequired, helpManOptional, helpManDefault): When
+#. # the 'help x' command wants to show the manual for the 'x' command, it needs
+#. # to be able to describe the parameters as either required or optional, or if
+#. # they have a default value.
 #: helpManRequired
 msgid "required"
 msgstr "আবশ্যকীয়"
 
-#. # LOCALIZATION NOTE (helpManOptional): See description of 'helpManRequired'
 #: helpManOptional
 msgid "optional"
 msgstr "ঐচ্ছিক"
 
-#. # LOCALIZATION NOTE (helpManDefault): See description of 'helpManRequired'. %1$
-#. # S is the default value
 #: helpManDefault
-msgid "optional, default=%1$S"
+msgid "optional, default=%S"
 msgstr ""
 
-#. # LOCALIZATION NOTE (subCommands): Text shown as part of the output of the
-#. # 'help' command when the command in question has sub-commands, before a list
-#. # of the matching sub-commands
+#. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
+#. # when the command in question has sub-commands, before a list of the matching
+#. # sub-commands.
 #: subCommands
 msgid "Sub-Commands"
 msgstr "সাব-কমান্ড"
 
-#. # LOCALIZATION NOTE (subCommandsNone): Text shown as part of the output of the
-#. # 'help' command when the command in question should have sub-commands but in
-#. # fact has none
+#. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
+#. # when the command in question should have sub-commands but in fact has none.
 #: subCommandsNone
 msgctxt "subCommandsNone"
 msgid "None"
 msgstr "কোনটি না"
 
-#. # LOCALIZATION NOTE (contextDesc): A very short description of the 'context'
-#. # command. This string is designed to be shown in a menu alongside the command
-#. # name, which is why it should be as short as possible. See contextManual for
-#. # a fuller description of what it does.
+#. # LOCALIZATION NOTE (contextDesc, contextManual, contextPrefixDesc): These
+#. # strings are used to describe the 'context' command and its 'prefix'
+#. # parameter. See localization comment for 'connect' for an explanation about
+#. # 'prefix'.
 #: contextDesc
 msgid "Concentrate on a group of commands"
 msgstr ""
 
-#. # LOCALIZATION NOTE (contextManual): A fuller description of the 'context'
-#. # command. Displayed when the user asks for help on what it does.
 #: contextManual
 msgid ""
 "Setup a default prefix to future commands. For example 'context git' would "
 "allow you to type 'commit' rather than 'git commit'."
 msgstr ""
 
-#. # LOCALIZATION NOTE (contextPrefixDesc): A short description of the 'prefix'
-#. # parameter to the 'context' command. This string is designed to be shown in a
-#. # dialog with restricted space, which is why it should be as short as
-#. # possible.
 #: contextPrefixDesc
 msgid "The command prefix"
 msgstr "কমান্ড প্রিফিক্স"
 
-#. # LOCALIZATION NOTE (contextNotParentError): An error message displayed during
-#. # the processing of the 'context' command, when the found command is not a
-#. # parent command.
+#. # LOCALIZATION NOTE: This message message displayed during the processing of
+#. # the 'context' command, when the found command is not a parent command.
 #: contextNotParentError
-msgid "Can't use '%1$S' as a prefix because it is not a parent command."
+msgid "Can't use '%S' as a prefix because it is not a parent command."
 msgstr ""
 
-#. # LOCALIZATION NOTE (contextReply): A message displayed during the processing
-#. # of the 'context' command, to indicate success.
+#. # LOCALIZATION NOTE (contextReply, contextEmptyReply): These messages are
+#. # displayed during the processing of the 'context' command, to indicate
+#. # success or that there is no command prefix.
 #: contextReply
-msgid "Using %1$S as a command prefix"
+#, fuzzy
+msgid "Using %S as a command prefix"
 msgstr "কমান্ড প্রিফিক্স হিসেবে %1$S ব্যবহার করা হচ্ছে"
 
-#. # LOCALIZATION NOTE (contextEmptyReply): A message displayed during the
-#. # processing of the 'context' command, to indicate that there is no command
-#. # prefix
 #: contextEmptyReply
 msgid "Command prefix is unset"
 msgstr ""
 
-#. # LOCALIZATION NOTE (connectDesc): A very short description of the 'connect'
-#. # command. This string is designed to be shown in a menu alongside the command
-#. # name, which is why it should be as short as possible. See connectManual for
-#. # a fuller description of what it does.
+#. # LOCALIZATION NOTE (connectDesc, connectManual, connectPrefixDesc,
+#. # connectPortDesc, connectHostDesc, connectDupReply): These strings describe
+#. # the 'connect' command and all its available parameters. A 'prefix' is an 
+#. # alias for the remote server (think of it as a "connection name"), and it
+#. # allows to identify a specific server when connected to multiple remote
+#. # servers.
 #: connectDesc
-msgctxt "connectDesc"
 msgid "Proxy commands to server"
 msgstr ""
 
-#. # LOCALIZATION NOTE (connectManual): A fuller description of the 'connect'
-#. # command. Displayed when the user asks for help on what it does.
 #: connectManual
-msgctxt "connectManual"
 msgid ""
 "Connect to the server, creating local versions of the commands on the "
 "server. Remote commands initially have a prefix to distinguish them from "
 "local commands (but see the context command to get past this)"
 msgstr ""
 
-#. # LOCALIZATION NOTE (connectPrefixDesc): A short description of the 'prefix'
-#. # parameter to the 'connect' command. This string is designed to be shown in a
-#. # dialog with restricted space, which is why it should be as short as
-#. # possible.
 #: connectPrefixDesc
 msgctxt "connectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr ""
 
-#. # LOCALIZATION NOTE (connectPortDesc): A short description of the 'port'
-#. # parameter to the 'connect' command. This string is designed to be shown in a
-#. # dialog with restricted space, which is why it should be as short as
-#. # possible.
 #: connectPortDesc
 msgid "The TCP port to listen on"
 msgstr ""
 
-#. # LOCALIZATION NOTE (connectHostDesc): A short description of the 'host'
-#. # parameter to the 'connect' command. This string is designed to be shown in a
-#. # dialog with restricted space, which is why it should be as short as
-#. # possible.
 #: connectHostDesc
 msgid "The hostname to bind to"
 msgstr ""
 
-#. # LOCALIZATION NOTE (connectDupReply): An error condition from executing the
-#. # 'connect' command
 #: connectDupReply
 msgid "Connection called %S already exists."
 msgstr ""
 
-#. # LOCALIZATION NOTE (connectReply): The output of the 'connect' command,
-#. # telling the user what it has done.
+#. # LOCALIZATION NOTE: The output of the 'connect' command, telling the user
+#. # what it has done. Parameters: %S is the prefix command. See localization
+#. # comment for 'connect' for an explanation about 'prefix'.
 #: connectReply
 msgid "Added %S commands."
 msgstr "%S কমান্ড যোগ করা হয়েছে"
 
-#. # LOCALIZATION NOTE (disconnectDesc): A very short description of the
-#. # 'disconnect' command. This string is designed to be shown in a menu
-#. # alongside the command name, which is why it should be as short as possible.
-#. # See connectManual for a fuller description of what it does.
-#: disconnectDesc
-msgctxt "disconnectDesc"
-msgid "Proxy commands to server"
+#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2, disconnectPrefixDesc,
+#. # disconnectForceDesc): These strings describe the 'disconnect' command and
+#. # all its available parameters. See localization comment for 'connect' for an
+#. # explanation about 'prefix'.
+#: disconnectDesc2
+msgid "Disconnect from server"
 msgstr ""
 
-#. # LOCALIZATION NOTE (disconnectManual): A fuller description of the
-#. # 'disconnect' command. Displayed when the user asks for help on what it does.
-#: disconnectManual
-msgctxt "disconnectManual"
+#: disconnectManual2
 msgid ""
-"Connect to the server, creating local versions of the commands on the "
-"server. Remote commands initially have a prefix to distinguish them from "
-"local commands (but see the context command to get past this)"
+"Disconnect from a server currently connected for remote commands execution"
 msgstr ""
 
-#. # LOCALIZATION NOTE (disconnectPrefixDesc): A short description of the
-#. # 'prefix' parameter to the 'disconnect' command. This string is designed to
-#. # be shown in a dialog with restricted space, which is why it should be as
-#. # short as possible.
 #: disconnectPrefixDesc
 msgctxt "disconnectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr ""
 
-#. # LOCALIZATION NOTE (disconnectForceDesc): A short description of the 'force'
-#. # parameter to the 'disconnect' command. This string is designed to be shown
-#. # in a dialog with restricted space, which is why it should be as short as
-#. # possible.
 #: disconnectForceDesc
 msgid "Ignore outstanding requests"
 msgstr ""
 
-#. # LOCALIZATION NOTE (disconnectReply): The output of the 'disconnect' command,
-#. # telling the user what it's done.
+#. # LOCALIZATION NOTE: This is the output of the 'disconnect' command,
+#. # explaining the user what has been done. Parameters: %S is the number of
+#. # commands removed.
 #: disconnectReply
 #, fuzzy
 msgid "Removed %S commands."
 msgstr "%S কমান্ড যোগ করা হয়েছে"
 
-#. # LOCALIZATION NOTE (disconnectOutstanding): An error message displayed when
-#. # the user attempts to disconnect before all requests have completed. %1$S is
-#. # a list of commands which are incomplete
+#. # LOCALIZATION NOTE: This error message is displayed when the user attempts to
+#. # disconnect before all requests have completed. Parameters: %S is a list of
+#. # incomplete requests.
 #: disconnectOutstanding
-msgid "Outstanding requests (%1$S)"
+msgid "Outstanding requests (%S)"
 msgstr ""
 
-#. # LOCALIZATION NOTE (prefDesc): A very short description of the 'pref'
-#. # command. This string is designed to be shown in a menu alongside the command
-#. # name, which is why it should be as short as possible. See prefManual for a
-#. # fuller description of what it does.
+#. # LOCALIZATION NOTE (prefDesc, prefManual, prefListDesc, prefListManual,
+#. # prefListSearchDesc, prefListSearchManual, prefShowDesc, prefShowManual,
+#. # prefShowSettingDesc, prefShowSettingManual): These strings describe the
+#. # 'pref' command and all its available sub-commands and parameters.
 #: prefDesc
 msgid "Commands to control settings"
 msgstr "কন্ট্রোল সেটিংসের জন্য কমান্ড"
 
-#. # LOCALIZATION NOTE (prefManual): A fuller description of the 'pref' command.
-#. # Displayed when the user asks for help on what it does.
 #: prefManual
 msgid ""
 "Commands to display and alter preferences both for GCLI and the surrounding "
 "environment"
 msgstr "GCLI ও পারিপার্শ্বিক পরিবেশ উভয়ের জন্য কমান্ড প্রর্দশন এবং পছন্দ পরিবর্তন করুন"
 
-#. # LOCALIZATION NOTE (prefListDesc): A very short description of the 'pref
-#. # list' command. This string is designed to be shown in a menu alongside the
-#. # command name, which is why it should be as short as possible. See
-#. # prefListManual for a fuller description of what it does.
 #: prefListDesc
 msgid "Display available settings"
 msgstr "বিদ্যমান সেটিং প্রদর্শন"
 
-#. # LOCALIZATION NOTE (prefListManual): A fuller description of the 'pref list'
-#. # command. Displayed when the user asks for help on what it does.
 #: prefListManual
 msgid ""
 "Display a list of preferences, optionally filtered when using the 'search' "
@@ -528,113 +474,72 @@ msgstr ""
 "পছন্দের তালিকা দেখান,যখন 'অনুসন্ধান' প্যারামিটার ব্যবহার করবে তখন ঐচ্ছিকভাবে "
 "ফিল্টার হবে"
 
-#. # LOCALIZATION NOTE (prefListSearchDesc): A short description of the 'search'
-#. # parameter to the 'pref list' command. See prefListSearchManual for a fuller
-#. # description of what it does. This string is designed to be shown in a dialog
-#. # with restricted space, which is why it should be as short as possible.
 #: prefListSearchDesc
 msgid "Filter the list of settings displayed"
 msgstr "প্রদর্শিত সেটিং তালিকা ফিল্টার করুন"
 
-#. # LOCALIZATION NOTE (prefListSearchManual): A fuller description of the
-#. # 'search' parameter to the 'pref list' command. Displayed when the user asks
-#. # for help on what it does.
 #: prefListSearchManual
 msgid "Search for the given string in the list of available preferences"
 msgstr "বিদ্যমান পছন্দ তালিকা থেকে প্রদত্ত স্ট্রিং অনুসন্ধান করুন"
 
-#. # LOCALIZATION NOTE (prefShowDesc): A very short description of the 'pref
-#. # show' command. This string is designed to be shown in a menu alongside the
-#. # command name, which is why it should be as short as possible. See
-#. # prefShowManual for a fuller description of what it does.
 #: prefShowDesc
 msgid "Display setting value"
 msgstr "সেটিং ভ্যালু প্রদর্শন করুন"
 
-#. # LOCALIZATION NOTE (prefShowManual): A fuller description of the 'pref show'
-#. # command. Displayed when the user asks for help on what it does.
 #: prefShowManual
 msgid "Display the value of a given preference"
 msgstr "প্রদত্ত পছন্দের তালিকার ভ্যালু প্রদর্শন করুন"
 
-#. # LOCALIZATION NOTE (prefShowSettingDesc): A short description of the
-#. # 'setting' parameter to the 'pref show' command. See prefShowSettingManual
-#. # for a fuller description of what it does. This string is designed to be
-#. # shown in a dialog with restricted space, which is why it should be as short
-#. # as possible.
 #: prefShowSettingDesc
 msgid "Setting to display"
 msgstr "প্রদর্শন সেটিং"
 
-#. # LOCALIZATION NOTE (prefShowSettingManual): A fuller description of the
-#. # 'setting' parameter to the 'pref show' command. Displayed when the user asks
-#. # for help on what it does.
 #: prefShowSettingManual
 msgid "The name of the setting to display"
 msgstr "সেটিং নামের প্রদর্শন করুন"
 
-#. # LOCALIZATION NOTE (prefShowSettingValue): This is used to show the
-#. # preference name and the associated preference value. %1$S is replaced with
-#. # the preference name and %2$S is replaced with the preference value.
+#. # LOCALIZATION NOTE: This message is used to show the preference name and the
+#. # associated preference value. Parameters: %1$S is the preference name, %2$S
+#. # is the preference value.
 #: prefShowSettingValue
 #, fuzzy
 msgid "%1$S: %2$S"
 msgstr "%1$S %2$S"
 
-#. # LOCALIZATION NOTE (prefSetDesc): A very short description of the 'pref set'
-#. # command. This string is designed to be shown in a menu alongside the command
-#. # name, which is why it should be as short as possible. See prefSetManual for
-#. # a fuller description of what it does.
+#. # LOCALIZATION NOTE (prefSetDesc, prefSetManual, prefSetSettingDesc,
+#. # prefSetSettingManual, prefSetValueDesc, prefSetValueManual): These strings
+#. # describe the 'pref set' command and all its parameters.
 #: prefSetDesc
 msgid "Alter a setting"
 msgstr "সেটিং পরিবর্তন করুন"
 
-#. # LOCALIZATION NOTE (prefSetManual): A fuller description of the 'pref set'
-#. # command. Displayed when the user asks for help on what it does.
 #: prefSetManual
 msgid "Alter preferences defined by the environment"
 msgstr "পরিবেশ দ্বারা সংজ্ঞায়িত পছন্দসমূহ পরিবর্তন করুন"
 
-#. # LOCALIZATION NOTE (prefSetSettingDesc): A short description of the 'setting'
-#. # parameter to the 'pref set' command. See prefSetSettingManual for a fuller
-#. # description of what it does. This string is designed to be shown in a dialog
-#. # with restricted space, which is why it should be as short as possible.
 #: prefSetSettingDesc
 msgid "Setting to alter"
 msgstr "সেটিং পরিবর্তন"
 
-#. # LOCALIZATION NOTE (prefSetSettingManual): A fuller description of the
-#. # 'setting' parameter to the 'pref set' command. Displayed when the user asks
-#. # for help on what it does.
 #: prefSetSettingManual
 msgid "The name of the setting to alter."
 msgstr "সেটিং এর নাম পরিবর্তন করুন।"
 
-#. # LOCALIZATION NOTE (prefSetValueDesc): A short description of the 'value'
-#. # parameter to the 'pref set' command. See prefSetValueManual for a fuller
-#. # description of what it does. This string is designed to be shown in a dialog
-#. # with restricted space, which is why it should be as short as possible.
 #: prefSetValueDesc
 msgid "New value for setting"
 msgstr "সেটিং এর জন্য নতুন মান"
 
-#. # LOCALIZATION NOTE (prefSetValueManual): A fuller description of the 'value'
-#. # parameter to the 'pref set' command. Displayed when the user asks for help
-#. # on what it does.
 #: prefSetValueManual
 msgid "The new value for the specified setting"
 msgstr "সুনির্দিষ্ট সেটিং এর জন্য নতুন মান"
 
-#. # LOCALIZATION NOTE (prefSetCheckHeading): Title displayed to the user the
-#. # first time they try to alter a setting This is displayed directly above
-#. # prefSetCheckBody and prefSetCheckGo.
+#. # LOCALIZATION NOTE (prefSetCheckHeading, prefSetCheckBody, prefSetCheckGo):
+#. # These strings are displayed to the user the first time they try to alter a
+#. # setting.
 #: prefSetCheckHeading
 msgid "This might void your warranty!"
 msgstr "এটি আপনার ওয়ারেন্টি বাতিল করে দিতে পারে!"
 
-#. # LOCALIZATION NOTE (prefSetCheckBody): The main text of the warning displayed
-#. # to the user the first time they try to alter a setting. See also
-#. # prefSetCheckHeading and prefSetCheckGo.
 #: prefSetCheckBody
 msgid ""
 "Changing these advanced settings can be harmful to the stability, security, "
@@ -644,74 +549,53 @@ msgstr ""
 "উচ্চ পর্যায়ের এই সেটিংসমূহ পরিবর্তনের ফলে অ্যাপ্লিকেশনের স্থায়ীত্ব, নিরাপত্তা ও "
 "কার্যকারিতা প্রভাবিত হতে পারে। আপনি সম্পূর্ণভাবে নিশ্চিত হলে তবেই এগিয়ে যান।"
 
-#. # LOCALIZATION NOTE (prefSetCheckGo): The text to enable preference editing.
-#. # Displayed in a button directly under prefSetCheckHeading and
-#. # prefSetCheckBody
 #: prefSetCheckGo
 msgid "I'll be careful, I promise!"
 msgstr "আমি আরো সাবধান হবো, প্রতিজ্ঞা করছি!"
 
-#. # LOCALIZATION NOTE (prefResetDesc): A very short description of the 'pref
-#. # reset' command. This string is designed to be shown in a menu alongside the
-#. # command name, which is why it should be as short as possible. See
-#. # prefResetManual for a fuller description of what it does.
+#. # LOCALIZATION NOTE (prefResetDesc, prefResetManual, prefResetSettingDesc,
+#. # prefResetSettingManual): These strings describe the 'pref reset' command and
+#. # all its parameters.
 #: prefResetDesc
 msgid "Reset a setting"
 msgstr "সেটিং পুনঃনির্ধারণ করুন"
 
-#. # LOCALIZATION NOTE (prefResetManual): A fuller description of the 'pref
-#. # reset' command. Displayed when the user asks for help on what it does.
 #: prefResetManual
 msgid "Reset the value of a setting to the system defaults"
 msgstr "পূর্বনির্ধারিত সিস্টেমে সেটং মান পুনঃনির্ধারণ করুন"
 
-#. # LOCALIZATION NOTE (prefResetSettingDesc): A short description of the
-#. # 'setting' parameter to the 'pref reset' command. See prefResetSettingManual
-#. # for a fuller description of what it does. This string is designed to be
-#. # shown in a dialog with restricted space, which is why it should be as short
-#. # as possible.
 #: prefResetSettingDesc
 msgid "Setting to reset"
 msgstr "পুনঃনির্ধারণের জন্য সেটিং"
 
-#. # LOCALIZATION NOTE (prefResetSettingManual): A fuller description of the
-#. # 'setting' parameter to the 'pref reset' command. Displayed when the user
-#. # asks for help on what it does.
 #: prefResetSettingManual
 msgid "The name of the setting to reset to the system default value"
 msgstr "সিস্টেম পূর্বনির্ধারিত মানে সেটিং এর নাম পুনঃনির্ধারণ করুন"
 
-#. # LOCALIZATION NOTE (prefOutputFilter): Displayed in the output from the 'pref
+#. # LOCALIZATION NOTE: This string is displayed in the output from the 'pref
 #. # list' command as a label to an input element that allows the user to filter
-#. # the results
+#. # the results.
 #: prefOutputFilter
 msgid "Filter"
 msgstr "ফিল্টার"
 
-#. # LOCALIZATION NOTE (prefOutputName): Displayed in the output from the 'pref
-#. # list' command as a heading to a table. The column contains the names of the
-#. # available preferences
+#. # LOCALIZATION NOTE (prefOutputName, prefOutputValue): These strings are
+#. # displayed in the output from the 'pref list' command as table headings.
 #: prefOutputName
 msgid "Name"
 msgstr "নাম"
 
-#. # LOCALIZATION NOTE (prefOutputValue): Displayed in the output from the 'pref
-#. # list' command as a heading to a table. The column contains the values of the
-#. # available preferences
 #: prefOutputValue
 msgid "Value"
 msgstr "মান"
 
-#. # LOCALIZATION NOTE (introDesc): A very short description of the 'intro'
-#. # command. This string is designed to be shown in a menu alongside the command
-#. # name, which is why it should be as short as possible. See introManual for a
-#. # fuller description of what it does.
+#. # LOCALIZATION NOTE (introDesc, introManual): These strings describe the
+#. # 'intro' command. The localization of 'Got it!' should be the same used in
+#. # introTextGo.
 #: introDesc
 msgid "Show the opening message"
 msgstr "খোলা বার্তা প্রদর্শন করুন"
 
-#. # LOCALIZATION NOTE (introManual): A fuller description of the 'intro'
-#. # command. Displayed when the user asks for help on what it does.
 #: introManual
 msgid ""
 "Redisplay the message that is shown to new users until they click the 'Got "
@@ -720,10 +604,10 @@ msgstr ""
 "নতুন ব্যবহারকারী যতক্ষণ না 'Got it!' বাটনে ক্লিক করছে ততক্ষন বার্তা প্রদর্শন করতে "
 "থাকবে"
 
-#. # LOCALIZATION NOTE (introTextOpening2): The 'intro text' opens when the user
+#. # LOCALIZATION NOTE (introTextOpening2, introTextCommands, introTextKeys2,
+#. # introTextF1Escape, introTextGo): These strings are displayed when the user
 #. # first opens the developer toolbar to explain the command line, and is shown
-#. # each time it is opened until the user clicks the 'Got it!' button. This
-#. # string is the opening paragraph of the intro text.
+#. # each time it is opened until the user clicks the 'Got it!' button.
 #: introTextOpening2
 #, fuzzy
 msgid ""
@@ -733,57 +617,45 @@ msgstr ""
 "ফায়ারফক্সের কমান্ড লাইন ডেভেলপারদের জন্য নির্মিত হয়েছে। এটা জাভাস্ক্রিপ্ট "
 "সিনট্যাক্সের ইনপুট গতির উপর গুরুত্ত্ব দেয় এবং মনোস্পেস আউটপুটের সমৃদ্ধ প্রদর্শন করে।"
 
-#. # LOCALIZATION NOTE (introTextCommands): For information about the 'intro
-#. # text' see introTextOpening2. The second paragraph is in 2 sections, the
-#. # first section points the user to the 'help' command.
 #: introTextCommands
 msgid "For a list of commands type"
 msgstr "কমান্ড টাইপ তালিকার জন্য"
 
-#. # LOCALIZATION NOTE (introTextKeys2): For information about the 'intro text'
-#. # see introTextOpening2. The second section in the second paragraph points the
-#. # user to the F1/Escape keys which show and hide hints.
 #: introTextKeys2
 #, fuzzy
 msgid ", or to show/hide command hints press"
 msgstr "অথবা দেখাতে/কমান্ড নির্দেশ প্রেস আড়াল করুন"
 
-#. # LOCALIZATION NOTE (introTextF1Escape): For information about the 'intro
-#. # text' see introTextOpening2. This string is used with introTextKeys2, and
-#. # contains the keys that are pressed to open and close hints.
 #: introTextF1Escape
 msgid "F1/Escape"
 msgstr "F1/Escape"
 
-#. # LOCALIZATION NOTE (introTextGo): For information about the 'intro text' see
-#. # introTextOpening2. The text on the button that dismisses the intro text.
 #: introTextGo
 msgid "Got it!"
 msgstr "এটি পেয়েছি!"
 
-#. # LOCALIZATION NOTE (hideIntroDesc): Short description of the 'hideIntro'
-#. # setting. Displayed when the user asks for help on the settings.
+#. # LOCALIZATION NOTE: This is a short description of the 'hideIntro' setting.
 #: hideIntroDesc
 msgid "Show the initial welcome message"
 msgstr "প্রারম্ভিক আগমনী বার্তাটি প্রদর্শন"
 
-#. # LOCALIZATION NOTE (eagerHelperDesc): Short description of the 'eagerHelper'
-#. # setting. Displayed when the user asks for help on the settings. eagerHelper
-#. # allows users to select between showing no tooltips, permanent tooltips, and
-#. # only important tooltips
+#. # LOCALIZATION NOTE: This is a description of the 'eagerHelper' setting. It's
+#. # displayed when the user asks for help on the settings. eagerHelper allows
+#. # users to select between showing no tooltips, permanent tooltips, and only
+#. # important tooltips.
 #: eagerHelperDesc
 msgid "How eager are the tooltips"
 msgstr "কিভাবে টুলটিপর্স আগ্রহী হয়"
 
-#. # LOCALIZATION NOTE (allowSetDesc): Short description of the 'allowSetDesc'
-#. # setting. Displayed when the user asks for help on the settings.
+#. # LOCALIZATION NOTE: This is a short description of the 'allowSetDesc'
+#. # setting.
 #: allowSetDesc
 msgid "Has the user enabled the 'pref set' command?"
 msgstr "ব্যবহারকারী কি 'pref set' কমান্ডটি সক্রিয় করেছেন?"
 
-#. # LOCALIZATION NOTE (introBody): The text displayed at the top of the output
-#. # for the help command, just before the list of commands. This text is wrapped
-#. # inside a link to a localized MDN article
+#. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
+#. # help command, just before the list of commands. This text is wrapped inside
+#. # a link to a localized MDN article.
 #: introBody
 msgid "For more information see MDN."
 msgstr "আরও তথ্যের জন্য MDN দেখুন।"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-26 14:48+0100\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: 2013-08-07 13:56+0000\n"
 "Last-Translator: Tumendelger <tumendelger.e@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1375883810.000000\n"
@@ -77,6 +77,15 @@ msgstr "Бүх самбарын хаягийг хадгал…"
 msgid "&Undo Close Tab"
 msgstr "Самбар хаасан ү&йлдлийг буц"
 
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
+msgstr "Самбар хаасан ү&йлдлийг буц"
+
 #: closeTab.label closeTab.accesskey
 msgid "&Close Tab"
 msgstr "&Самбарыг хаа"
@@ -132,6 +141,10 @@ msgstr "&Салангид ажиллах"
 msgid "&Menu Bar"
 msgstr ""
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "Хөтлөгч бага&жит самбар"
@@ -143,10 +156,6 @@ msgstr "Хаягийн Багажит са&мбар"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "Хаягийн багажит самбарын зүйлс"
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr ""
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -221,12 +230,8 @@ msgstr "Зөвшөөр"
 msgid "Deny"
 msgstr "Үгүй"
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr ""
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
 msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
@@ -377,26 +382,14 @@ msgstr "Байрлал"
 msgid "Search"
 msgstr "Хайх"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "Идэвхижлийн заалт"
-
 #: bookmarksItem.title
 msgctxt "bookmarksItem.title"
 msgid "Bookmarks"
 msgstr "Хаягнууд"
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr ""
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr ""
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "Эхлэл"
 
@@ -408,26 +401,11 @@ msgstr ""
 msgid "Group your tabs"
 msgstr ""
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "Бүртгүүл"
-
-#: feedButton.tooltip
-#, fuzzy
-msgid "Subscribe to this page…"
-msgstr "Энэ хуудсанд бүртгүүл…"
-
 #: bookmarksButton.label
 #, fuzzy
 msgctxt "bookmarksButton.label"
 msgid "Bookmarks"
 msgstr "Хаягнууд"
-
-#: bookmarksButton.tooltip
-#, fuzzy
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "Хаягийн жагсаалт"
 
 #: bookmarksCmd.commandkey
 msgid "b"
@@ -477,10 +455,6 @@ msgstr ""
 msgid "History"
 msgstr "Түүх"
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "Сүүлд зорчсон хуудсуудыг харуул"
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -492,10 +466,6 @@ msgstr "&Багаж"
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "Энэ хайлтад т&үлхүүр үг нэм…"
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "Вэб х&айлт"
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -526,6 +496,15 @@ msgstr ""
 #: webDeveloperMenu.label webDeveloperMenu.accesskey
 msgid "&Web Developer"
 msgstr ""
+
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F3"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
 
 #: devtoolsConnect.label devtoolsConnect.accesskey
 msgid "Conn&ect…"
@@ -614,6 +593,16 @@ msgstr "F2"
 
 #: devToolboxMenuItem.label devToolboxMenuItem.accesskey
 msgid "&Toggle Tools"
+msgstr ""
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
 msgstr ""
 
 #: devToolbarToolsButton.tooltip
@@ -751,10 +740,6 @@ msgstr "&Хажуу самбарт"
 msgid "&Customize…"
 msgstr "&Өөрчлөх…"
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr ""
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "Түү&х"
@@ -772,11 +757,6 @@ msgstr "Сүүлд хаагдсан самбарууд"
 msgid "Restore Previous Session"
 msgstr ""
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "Эхлэл"
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "Бүх зорчсон түүхийг харуул"
@@ -785,46 +765,10 @@ msgstr "Бүх зорчсон түүхийг харуул"
 msgid "H"
 msgstr "H"
 
-#: appMenuEdit.label
-#, fuzzy
-msgid "Edit"
-msgstr "&Засварла"
-
 #: appMenuCustomize.label
 #, fuzzy
 msgid "Customize"
 msgstr "&Өөрчлөх…"
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr ""
-
-#: appMenuSidebars.label
-msgid "Sidebars"
-msgstr "Хажуу самбарууд"
-
-#: appMenuFind.label
-#, fuzzy
-msgid "Find…"
-msgstr "Ол"
-
-#: appMenuUnsorted.label
-#, fuzzy
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "Эрэмбэлээгүй хаягнууд"
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr ""
-
-#: appMenuGettingStarted.label
-msgid "Getting Started"
-msgstr ""
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr ""
 
 #: openCmd.commandkey
 #, fuzzy
@@ -959,6 +903,10 @@ msgstr "&Зургийг харах"
 #, fuzzy
 msgid "View Image In&fo"
 msgstr "&Хуудасны мэдэгдлийг харах"
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
 
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
@@ -1223,33 +1171,8 @@ msgstr "Шинэ цонх нээ"
 msgid "Close sidebar"
 msgstr "Хажуу самбарыг хаана"
 
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "Тасдаж сана"
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "Сануул"
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "Санамж буулга"
-
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
-msgstr ""
-
-#: zoomOutButton.tooltip
-#, fuzzy
-msgid "Zoom out"
-msgstr "Ба&гасга"
-
-#: zoomInButton.tooltip
-msgid "Zoom in"
-msgstr "Томсгох"
-
-#: zoomControls.label
-msgid "Zoom Controls"
 msgstr ""
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
@@ -1404,6 +1327,10 @@ msgstr "ашиглаж буй сервер"
 msgid "More Information…"
 msgstr "Нэмэлт мэдээлэл…"
 
+#: identity.permissions
+msgid "Permissions"
+msgstr "Хандах эрх"
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1440,14 +1367,6 @@ msgstr ""
 msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr "Зэрэг Цагжуулах"
-
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr ""
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr ""
 
 #: socialToolbar.title
 msgid "Social Toolbar Button"
@@ -1558,6 +1477,121 @@ msgstr ""
 #: pluginBlockNow.label
 msgid "Block Plugin"
 msgstr ""
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr ""
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "Идэвхижлийн заалт"
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr ""
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr ""
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "Бүртгүүл"
+
+#: feedButton.tooltip
+#, fuzzy
+msgid "Subscribe to this page…"
+msgstr "Энэ хуудсанд бүртгүүл…"
+
+#: bookmarksButton.tooltip
+#, fuzzy
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "Хаягийн жагсаалт"
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "Сүүлд зорчсон хуудсуудыг харуул"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr ""
+
+#: appMenuEdit.label
+#, fuzzy
+msgid "Edit"
+msgstr "&Засварла"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr ""
+
+#: appMenuSidebars.label
+msgid "Sidebars"
+msgstr "Хажуу самбарууд"
+
+#: appMenuFind.label
+#, fuzzy
+msgid "Find…"
+msgstr "Ол"
+
+#: appMenuUnsorted.label
+#, fuzzy
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "Эрэмбэлээгүй хаягнууд"
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr ""
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr ""
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr "&Нэмэлтүүдийг идэвхижүүлээгүй горимд дахин эхлүүлэх…"
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "Тасдаж сана"
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "Сануул"
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "Санамж буулга"
+
+#: zoomOutButton.tooltip
+#, fuzzy
+msgid "Zoom out"
+msgstr "Ба&гасга"
+
+#: zoomInButton.tooltip
+msgid "Zoom in"
+msgstr "Томсгох"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr ""
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr ""
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr ""
+
+#~ msgid "Web &Search"
+#~ msgstr "Вэб х&айлт"
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "Эхлэл"
 
 #~ msgctxt "errorConsoleCmd.commandkey"
 #~ msgid "j"
