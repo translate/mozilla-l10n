@@ -1,13 +1,13 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/dom/chrome/dom/dom.properties
+#. extracted from ./dom/chrome/dom/dom.properties
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-27 22:17-0700\n"
+"POT-Creation-Date: 2013-08-07 20:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -52,6 +53,8 @@ msgid "Debug script"
 msgstr ""
 
 #: WaitForScriptButton
+#, fuzzy
+msgctxt "WaitForScriptButton"
 msgid "Continue"
 msgstr "Tswelela pele"
 
@@ -95,14 +98,6 @@ msgstr ""
 msgid "Leave Page"
 msgstr "Boloka Tsebe"
 
-#: DocumentAllUsed
-msgid ""
-"Non-standard document.all property was used. Use W3C standard document."
-"getElementById() instead."
-msgstr ""
-"Go dirisitswe ditlhagotshedimosetso tsa document.all e e sa tlhomamang. "
-"Bogolo dirisa W3C document.getElementById() e e tlhomameng."
-
 #: UseOfCaptureEventsWarning
 msgid ""
 "Use of captureEvents() is deprecated. To upgrade your code, use the DOM 2 "
@@ -115,25 +110,6 @@ msgid ""
 "Use of releaseEvents() is deprecated. To upgrade your code, use the DOM 2 "
 "removeEventListener() method. For more help http://developer.mozilla.org/en/"
 "docs/DOM:element.removeEventListener"
-msgstr ""
-
-#: UseOfRouteEventWarning
-msgid ""
-"Use of routeEvent() is deprecated. To upgrade your code, use the DOM 2 "
-"dispatchEvent() method. For more help http://developer.mozilla.org/en/docs/"
-"DOM:element.dispatchEvent"
-msgstr ""
-
-#: UseOfPreventBubbleWarning
-msgid ""
-"Event=%S, use of preventBubble() is deprecated. Use W3C standard "
-"stopPropagation() instead."
-msgstr ""
-
-#: UseOfPreventCaptureWarning
-msgid ""
-"Event=%S, use of preventCapture() is deprecated. Use W3C standard "
-"stopPropagation() instead."
 msgstr ""
 
 #: UseOfDOM3LoadMethodWarning
@@ -218,24 +194,24 @@ msgstr ""
 msgid "Please match the requested format: %S."
 msgstr ""
 
-#. # LOCALIZATION NOTE (FormValidationRangeOverflow): %S can be a number or a date.
+#. # LOCALIZATION NOTE (FormValidationRangeOverflow): %S can be a number, a date or a time.
 #: FormValidationRangeOverflow
 msgid "Please select a value that is lower than %S."
 msgstr ""
 
-#. # LOCALIZATION NOTE (FormValidationRangeUnderflow): %S can be a number or a date.
+#. # LOCALIZATION NOTE (FormValidationRangeUnderflow): %S can be a number, a date or a time.
 #: FormValidationRangeUnderflow
 msgid "Please select a value that is higher than %S."
 msgstr ""
 
-#. # LOCALIZATION NOTE (FormValidationStepMismatch): both %S can be a number or a date.
+#. # LOCALIZATION NOTE (FormValidationStepMismatch): both %S can be a number, a date or a time.
 #: FormValidationStepMismatch
 msgid ""
 "Please select a valid value. The two nearest valid values are %S and %S."
 msgstr ""
 
-#. # LOCALIZATION NOTE (FormValidationStepMismatchWitoutMax): %S can be a number or a date. This is called instead of FormValidationStepMismatch when the second value isn't valid because it's higher than the maximum allowed value.
-#: FormValidationStepMismatchWithoutMax
+#. # LOCALIZATION NOTE (FormValidationStepMismatchOneValue): %S can be a number, a date or a time. This is called instead of FormValidationStepMismatch when the second value is the same as the first.
+#: FormValidationStepMismatchOneValue
 msgid "Please select a valid value. The nearest valid value is %S."
 msgstr ""
 
@@ -270,8 +246,8 @@ msgstr ""
 
 #: CreateAttributeNSWarning
 msgid ""
-"Use of document.createAttributeNS() is deprecated. Use element.setAttributeNS"
-"() instead."
+"Use of document.createAttributeNS() is deprecated. Use element."
+"setAttributeNS() instead."
 msgstr ""
 
 #: SpecifiedWarning
@@ -297,16 +273,6 @@ msgstr ""
 msgid ""
 "Use of enablePrivilege is deprecated.  Please use code that runs with the "
 "system principal (e.g. an extension) instead."
-msgstr ""
-
-#: PositionWarning
-msgid ""
-"Use of XMLHttpRequest's progress events' position attribute is deprecated."
-msgstr ""
-
-#: TotalSizeWarning
-msgid ""
-"Use of XMLHttpRequest's progress events' totalSize attribute is deprecated."
 msgstr ""
 
 #: nsIJSONDecodeDeprecatedWarning
@@ -400,6 +366,12 @@ msgid ""
 "currently focused tab."
 msgstr ""
 
+#: FullScreenDeniedContentOnly
+msgid ""
+"Request for full-screen was denied because requesting element is in the "
+"chrome document and the fullscreen API is configured for content only."
+msgstr ""
+
 #: RemovedFullScreenElement
 msgid ""
 "Exited full-screen because full-screen element was removed from document."
@@ -407,11 +379,6 @@ msgstr ""
 
 #: FocusedWindowedPluginWhileFullScreen
 msgid "Exited full-screen because windowed plugin was focused."
-msgstr ""
-
-#: HTMLMultipartXHRWarning
-msgid ""
-"HTML parsing in XMLHttpRequest is not supported for multipart responses."
 msgstr ""
 
 #: HTMLSyncXHRWarning
@@ -423,12 +390,6 @@ msgstr ""
 msgid ""
 "Unable to redirect to %S because the channel doesn't implement "
 "nsIWritablePropertyBag2."
-msgstr ""
-
-#: ReportOnlyCSPIgnored
-msgid ""
-"Report-only CSP policy will be ignored because there are other non-report-"
-"only CSP policies applied."
 msgstr ""
 
 #: ResponseTypeSyncXHRWarning
@@ -453,6 +414,33 @@ msgstr ""
 msgid ""
 "An attempt was made to declare a non-UTF-8 encoding for JSON retrieved using "
 "XMLHttpRequest. Only UTF-8 is supported for decoding JSON."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate AudioBufferSourceNode
+#: MediaBufferSourceNodeResampleOutOfMemory
+msgid "Insufficient memory to resample the AudioBufferSourceNode for playback."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataUnknownContentType
+msgid "The buffer passed to decodeAudioData contains an unknown content type."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataUnknownError
+msgid "An unknown error occured while processing decodeAudioData."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataInvalidContent
+msgid ""
+"The buffer passed to decodeAudioData contains invalid content which cannot "
+"be decoded successfully."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate decodeAudioData.
+#: MediaDecodeAudioDataNoAudio
+msgid "The buffer passed to decodeAudioData does not contain any audio."
 msgstr ""
 
 #: MediaLoadExhaustedCandidates
@@ -527,12 +515,83 @@ msgstr ""
 msgid "The Components object is deprecated. It will soon be removed."
 msgstr ""
 
+#: PluginHangUITitle
+#, fuzzy
+msgid "Warning: Unresponsive plugin"
+msgstr "Tsiboso: Sekeripite se se sa tsibogeng"
+
+#: PluginHangUIMessage
+#, fuzzy
+msgid ""
+"%S may be busy, or it may have stopped responding. You can stop the plugin "
+"now, or you can continue to see if the plugin will complete."
+msgstr ""
+"Sekeripite se se mo tsebeng eno se ka ne se dira, gongwe se ka ne se "
+"emisitse go tsiboga. O ka emisa sekeripite jaanong, gongwe o ka tswelela "
+"pele go bona gore a sekeripite se tla fetsa."
+
+#: PluginHangUIWaitButton
+#, fuzzy
+msgctxt "PluginHangUIWaitButton"
+msgid "Continue"
+msgstr "Tswelela pele"
+
+#: PluginHangUIStopButton
+msgid "Stop plugin"
+msgstr ""
+
 #. # LOCALIZATION NOTE: Do not translate "mozHidden", "mozVisibilityState", "hidden", or "visibilityState"
 #: PrefixedVisibilityApiWarning
 msgid ""
 "'mozHidden' and 'mozVisibilityState' are deprecated.  Please use the "
 "unprefixed 'hidden' and 'visibilityState' instead."
 msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "NodeIterator" or "detach()".
+#: NodeIteratorDetachWarning
+msgid "Calling detach() on a NodeIterator no longer has an effect."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "Mozilla Audio Data API" and "Web Audio API".
+#: MozAudioDataWarning
+msgid ""
+"The Mozilla Audio Data API is deprecated.  Please use the Web Audio API "
+"instead."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "LenientThis" and "this"
+#: LenientThisWarning
+msgid ""
+"Ignoring get or set of property that has [LenientThis] because the \"this\" "
+"object is incorrect."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "nsIDOMWindowUtils", "getWindowWithOuterId", or "nsIWindowMediator"
+#: GetWindowWithOuterIdWarning
+msgid ""
+"Use of nsIDOMWindowUtils.getOuterWindowWithId() is deprecated.  Instead, use "
+"the nsIWindowMediator method of the same name."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "getPreventDefault" or "defaultPrevented".
+#: GetPreventDefaultWarning
+msgid ""
+"Use of getPreventDefault() is deprecated.  Use defaultPrevented instead."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "getUserData", "setUserData", "WeakMap", or "element.dataset".
+#: GetSetUserDataWarning
+msgid ""
+"Use of getUserData() or setUserData() is deprecated.  Use WeakMap or element."
+"dataset instead."
+msgstr ""
+
+#~ msgid ""
+#~ "Non-standard document.all property was used. Use W3C standard document."
+#~ "getElementById() instead."
+#~ msgstr ""
+#~ "Go dirisitswe ditlhagotshedimosetso tsa document.all e e sa tlhomamang. "
+#~ "Bogolo dirisa W3C document.getElementById() e e tlhomameng."
 
 #~ msgid ""
 #~ "Element referenced by ID/NAME in the global scope. Use W3C standard "
