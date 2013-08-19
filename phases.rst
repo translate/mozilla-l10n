@@ -36,7 +36,8 @@ focus on the most important translations first.
 |        | or used by your users.  *DO NOT* translate everything!                                 |
 +--------+----------------------------------------------------------------------------------------+
 | user2  | Extensions/addons, Download manager, Bookmarks, Places, File browsing/downloading,     |
-|        | Private Browsing, Session Restore, Sync, Video, PDF viewer, Health report              |
+|        | Private Browsing, Session Restore, Sync, Video, PDF viewer, Health report, Crash       |
+|        | reporter                                                                               |
 +--------+----------------------------------------------------------------------------------------+
 | user3  | Still focused on use: print dialogue, other XXX... menus accesible, Tab Groups         |
 +--------+----------------------------------------------------------------------------------------+
