@@ -18,5 +18,5 @@ function compare-locale() {
 	do
 		mozlangs="$mozlangs $(get_language_upstream $lang)"
 	done
-	compare-locales ${MOZCENTRAL_DIR}/${MOZ_PRODUCT}/locales/l10n.ini ${L10N_DIR} $mozlangs
+	compare-locales --ignore-missing ${MOZCENTRAL_DIR}/${MOZ_PRODUCT}/locales/l10n.ini ${L10N_DIR} $mozlangs
 }
