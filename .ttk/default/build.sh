@@ -280,7 +280,7 @@ do
 		# Revert some files that need careful human review or authorisation
 		if [ -d ${L10N_DIR}/${mozlang}/.hg ]; then
 			(cd ${L10N_DIR}/${mozlang}
-			hg revert $hgverbosity --no-backup browser/chrome/browser-region/region.properties browser/searchplugins/list.txt
+			hg revert $hgverbosity --no-backup browser/chrome/browser-region/region.properties browser/searchplugins/list.txt mobile/chrome/region.properties
 			)
 		fi
 	fi
