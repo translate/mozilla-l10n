@@ -1,9 +1,6 @@
 #!/bin/bash
 
-source build_common.inc.sh
-
-# Make sure we're up-to-date
-svn up en_ZA
+source ttk.inc.sh
 
 function process()
 {
@@ -25,6 +22,16 @@ function process()
 	rm -rf en_ZA-$testtype*
 }
 
-process untranslated
-process isfuzzy
-clean_po en_ZA
+function usage() {
+	echo "Usage: make-en_ZA"
+	echo
+	echo "Create an English (South Africa) version"
+	exit 1
+}
+
+function make-en_ZA() {
+	polang=$(get_language_pootle en_ZA)
+	process untranslated
+	process isfuzzy
+	clean_po $polang
+}
