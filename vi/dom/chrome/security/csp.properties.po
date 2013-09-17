@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-07 20:54-0700\n"
+"POT-Creation-Date: 2013-09-17 18:41+0100\n"
 "PO-Revision-Date: 2013-05-05 02:09+0000\n"
 "Last-Translator: hainp <hainp2604@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,18 +21,19 @@ msgstr ""
 "X-POOTLE-MTIME: 1367719762.0\n"
 
 #. # CSP Warnings:
-#. # LOCALIZATION NOTE (directiveViolated):
-#. # %1$S is the directive that has been violated.
-#: directiveViolated
-msgid "Directive %1$S violated"
-msgstr "Vi phạm chỉ dẫn %1$S"
+#. # LOCALIZATION NOTE (CSPViolation):
+#. # %1$S is the reason why the resource has not been loaded.
+#: CSPViolation
+msgid "The page's settings blocked the loading of a resource: %1$S"
+msgstr ""
 
-#. # LOCALIZATION NOTE (directiveViolatedWithURI):
+#. # LOCALIZATION NOTE (CSPViolationWithURI):
 #. # %1$S is the directive that has been violated.
 #. # %2$S is the URI of the resource which violated the directive.
-#: directiveViolatedWithURI
-msgid "Directive %1$S violated by %2$S"
-msgstr "%2$S vi phạm chỉ dẫn %1$S"
+#: CSPViolationWithURI
+msgid ""
+"The page's settings blocked the loading of a resource at %2$S (\"%1$S\")."
+msgstr ""
 
 #. # LOCALIZATION NOTE (triedToSendReport):
 #. # %1$S is the URI we attempted to send a report to.
@@ -58,31 +59,29 @@ msgstr "không thể phân tích URI của báo cáo: %1$S"
 msgid "Couldn't process unknown directive '%1$S'"
 msgstr "Không thể xử lý directive không rõ '%1$S'"
 
-#. # LOCALIZATION NOTE (doNotUnderstandOption):
+#. # LOCALIZATION NOTE (ignoringUnknownOption):
 #. # %1$S is the option that could not be understood
-#: doNotUnderstandOption
-msgid "don't understand option '%1$S'.  Ignoring it."
-msgstr "không hiểu tùy chọn '%1$S'. Bỏ qua nó."
+#: ignoringUnknownOption
+msgid "Ignoring unknown option %1$S"
+msgstr ""
 
-#. # LOCALIZATION NOTE (notETLDPlus1):
+#. # LOCALIZATION NOTE (reportURInotETLDPlus1):
 #. # %1$S is the ETLD of the report URI that could not be used
-#: notETLDPlus1
-msgid "can't use report URI from non-matching eTLD+1: %1$S"
-msgstr "không thể dùng URI báo cáo từ eTLD+1: %1$S không khớp"
+#: reportURInotETLDPlus1
+msgid "The report URI (%1$S) must be from the same eTLD+1."
+msgstr ""
 
-#. # LOCALIZATION NOTE (notSameScheme):
+#. # LOCALIZATION NOTE (reportURInotSameSchemeAsSelf, reportURInotSamePortAsSelf):
 #. # %1$S is the report URI that could not be used
-#: notSameScheme
+#: reportURInotSameSchemeAsSelf
 msgid ""
-"can't use report URI with different scheme from originating document: %1$S"
-msgstr "không thể dùng URI báo cáo với lược đồ khác từ tài liệu gốc: %1$S"
+"The report URI (%1$S) must use the same scheme as the originating document."
+msgstr ""
 
-#. # LOCALIZATION NOTE (notSamePort):
-#. # %1$S is the report URI that could not be used
-#: notSamePort
+#: reportURInotSamePortAsSelf
 msgid ""
-"can't use report URI with different port from originating document: %1$S"
-msgstr "không thể dùng URI báo cáo với cổng khác từ tài liệu gốc: %1$S"
+"The report URI (%1$S) must use the same port as the originating document."
+msgstr ""
 
 #. # LOCALIZATION NOTE (pageCannotSendReportsTo):
 #. # %1$S is the URI of the page with the policy
@@ -121,6 +120,26 @@ msgid ""
 msgstr ""
 "allow directive này sắp bỏ, hãy dùng default-src directive tương đương thay "
 "thế"
+
+#. # LOCALIZATION NOTE (inlineScriptBlocked):
+#. # inline script refers to JavaScript code that is embedded into the HTML document.
+#: inlineScriptBlocked
+msgid "An attempt to execute inline scripts has been blocked"
+msgstr ""
+
+#. # LOCALIZATION NOTE (inlineStyleBlocked):
+#. # inline style refers to CSS code that is embedded into the HTML document.
+#: inlineStyleBlocked
+msgid "An attempt to apply inline style sheets has been blocked"
+msgstr ""
+
+#. # LOCALIZATION NOTE (scriptFromStringBlocked):
+#. # eval is a name and should not be localized.
+#: scriptFromStringBlocked
+msgid ""
+"An attempt to call JavaScript from a string (by calling a function like "
+"eval) has been blocked"
+msgstr ""
 
 #. # CSP Errors:
 #: policyURINotAlone
@@ -253,3 +272,23 @@ msgid ""
 "Duplicate %1$S directives detected.  All but the first instance will be "
 "ignored."
 msgstr "Xác định %1$S directive trùng. Tất cả trừ bản đầu tiên sẽ được bỏ qua."
+
+#~ msgid "Directive %1$S violated"
+#~ msgstr "Vi phạm chỉ dẫn %1$S"
+
+#~ msgid "Directive %1$S violated by %2$S"
+#~ msgstr "%2$S vi phạm chỉ dẫn %1$S"
+
+#~ msgid "don't understand option '%1$S'.  Ignoring it."
+#~ msgstr "không hiểu tùy chọn '%1$S'. Bỏ qua nó."
+
+#~ msgid "can't use report URI from non-matching eTLD+1: %1$S"
+#~ msgstr "không thể dùng URI báo cáo từ eTLD+1: %1$S không khớp"
+
+#~ msgid ""
+#~ "can't use report URI with different scheme from originating document: %1$S"
+#~ msgstr "không thể dùng URI báo cáo với lược đồ khác từ tài liệu gốc: %1$S"
+
+#~ msgid ""
+#~ "can't use report URI with different port from originating document: %1$S"
+#~ msgstr "không thể dùng URI báo cáo với cổng khác từ tài liệu gốc: %1$S"
