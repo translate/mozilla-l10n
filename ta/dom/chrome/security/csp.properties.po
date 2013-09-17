@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-07 20:54-0700\n"
+"POT-Creation-Date: 2013-09-17 18:41+0100\n"
 "PO-Revision-Date: 2013-08-22 07:18+0000\n"
 "Last-Translator: thangamani-arun <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,24 +15,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1377155926.000000\n"
 
 #. # CSP Warnings:
-#. # LOCALIZATION NOTE (directiveViolated):
-#. # %1$S is the directive that has been violated.
-#: directiveViolated
-msgid "Directive %1$S violated"
-msgstr "அறிவுறுத்தல் %1$S மீறப்பட்டது"
+#. # LOCALIZATION NOTE (CSPViolation):
+#. # %1$S is the reason why the resource has not been loaded.
+#: CSPViolation
+msgid "The page's settings blocked the loading of a resource: %1$S"
+msgstr ""
 
-#. # LOCALIZATION NOTE (directiveViolatedWithURI):
+#. # LOCALIZATION NOTE (CSPViolationWithURI):
 #. # %1$S is the directive that has been violated.
 #. # %2$S is the URI of the resource which violated the directive.
-#: directiveViolatedWithURI
-msgid "Directive %1$S violated by %2$S"
-msgstr "%2$S அறிவுறுத்தல் %1$S ஐ மீறியது"
+#: CSPViolationWithURI
+msgid ""
+"The page's settings blocked the loading of a resource at %2$S (\"%1$S\")."
+msgstr ""
 
 #. # LOCALIZATION NOTE (triedToSendReport):
 #. # %1$S is the URI we attempted to send a report to.
@@ -58,35 +59,29 @@ msgstr "அறிக்கை URI ஐப் பாகுபடுத்த ம�
 msgid "Couldn't process unknown directive '%1$S'"
 msgstr "தெரியாத அறிவுறுத்தல் '%1$S' ஐ செயலாக்க முடியவில்லை"
 
-#. # LOCALIZATION NOTE (doNotUnderstandOption):
+#. # LOCALIZATION NOTE (ignoringUnknownOption):
 #. # %1$S is the option that could not be understood
-#: doNotUnderstandOption
-msgid "don't understand option '%1$S'.  Ignoring it."
-msgstr "'%1$S' விருப்பத்தைப் புரிந்துகொள்ள முடியவில்லை.  அதைப் புறக்கணிக்கிறது."
+#: ignoringUnknownOption
+msgid "Ignoring unknown option %1$S"
+msgstr ""
 
-#. # LOCALIZATION NOTE (notETLDPlus1):
+#. # LOCALIZATION NOTE (reportURInotETLDPlus1):
 #. # %1$S is the ETLD of the report URI that could not be used
-#: notETLDPlus1
-msgid "can't use report URI from non-matching eTLD+1: %1$S"
-msgstr "பொருந்தாத eTLD+1 கொண்ட அறிக்கை URI ஐப் பயன்படுத்த முடியாது: %1$S"
-
-#. # LOCALIZATION NOTE (notSameScheme):
-#. # %1$S is the report URI that could not be used
-#: notSameScheme
-msgid ""
-"can't use report URI with different scheme from originating document: %1$S"
+#: reportURInotETLDPlus1
+msgid "The report URI (%1$S) must be from the same eTLD+1."
 msgstr ""
-"உருவாகும் ஆவணத்திலிருந்து வேறுபட்ட திட்ட வடிவம் கொண்ட அறிக்கை URI ஐப் பயன்படுத்த "
-"முடியாது: %1$S"
 
-#. # LOCALIZATION NOTE (notSamePort):
+#. # LOCALIZATION NOTE (reportURInotSameSchemeAsSelf, reportURInotSamePortAsSelf):
 #. # %1$S is the report URI that could not be used
-#: notSamePort
+#: reportURInotSameSchemeAsSelf
 msgid ""
-"can't use report URI with different port from originating document: %1$S"
+"The report URI (%1$S) must use the same scheme as the originating document."
 msgstr ""
-"உருவாகும் ஆவணத்திலிருந்து வேறுபட்ட ஒரு முனையத்தைக் கொண்ட அறிக்கை URI ஐப் பயன்படுத்த "
-"முடியாது: %1$S"
+
+#: reportURInotSamePortAsSelf
+msgid ""
+"The report URI (%1$S) must use the same port as the originating document."
+msgstr ""
 
 #. # LOCALIZATION NOTE (pageCannotSendReportsTo):
 #. # %1$S is the URI of the page with the policy
@@ -125,6 +120,26 @@ msgid ""
 msgstr ""
 "allow அறிவுறுத்தல் வழக்கழிந்தது, அதற்கு பதிலாக அதற்கு சமமான default-src "
 "அறிவுறுத்தலைப் பயன்படுத்தவும்"
+
+#. # LOCALIZATION NOTE (inlineScriptBlocked):
+#. # inline script refers to JavaScript code that is embedded into the HTML document.
+#: inlineScriptBlocked
+msgid "An attempt to execute inline scripts has been blocked"
+msgstr ""
+
+#. # LOCALIZATION NOTE (inlineStyleBlocked):
+#. # inline style refers to CSS code that is embedded into the HTML document.
+#: inlineStyleBlocked
+msgid "An attempt to apply inline style sheets has been blocked"
+msgstr ""
+
+#. # LOCALIZATION NOTE (scriptFromStringBlocked):
+#. # eval is a name and should not be localized.
+#: scriptFromStringBlocked
+msgid ""
+"An attempt to call JavaScript from a string (by calling a function like "
+"eval) has been blocked"
+msgstr ""
 
 #. # CSP Errors:
 #: policyURINotAlone
@@ -260,3 +275,27 @@ msgid ""
 msgstr ""
 "நகல்பிரதி %1$S அறிவுறுத்தல் கண்டறியப்பட்டுள்ளது.  முதல் நேர்வு தவிற மற்றவை அனைத்தும் "
 "புறக்கணிக்கப்படும்."
+
+#~ msgid "Directive %1$S violated"
+#~ msgstr "அறிவுறுத்தல் %1$S மீறப்பட்டது"
+
+#~ msgid "Directive %1$S violated by %2$S"
+#~ msgstr "%2$S அறிவுறுத்தல் %1$S ஐ மீறியது"
+
+#~ msgid "don't understand option '%1$S'.  Ignoring it."
+#~ msgstr "'%1$S' விருப்பத்தைப் புரிந்துகொள்ள முடியவில்லை.  அதைப் புறக்கணிக்கிறது."
+
+#~ msgid "can't use report URI from non-matching eTLD+1: %1$S"
+#~ msgstr "பொருந்தாத eTLD+1 கொண்ட அறிக்கை URI ஐப் பயன்படுத்த முடியாது: %1$S"
+
+#~ msgid ""
+#~ "can't use report URI with different scheme from originating document: %1$S"
+#~ msgstr ""
+#~ "உருவாகும் ஆவணத்திலிருந்து வேறுபட்ட திட்ட வடிவம் கொண்ட அறிக்கை URI ஐப் பயன்படுத்த "
+#~ "முடியாது: %1$S"
+
+#~ msgid ""
+#~ "can't use report URI with different port from originating document: %1$S"
+#~ msgstr ""
+#~ "உருவாகும் ஆவணத்திலிருந்து வேறுபட்ட ஒரு முனையத்தைக் கொண்ட அறிக்கை URI ஐப் பயன்படுத்த "
+#~ "முடியாது: %1$S"

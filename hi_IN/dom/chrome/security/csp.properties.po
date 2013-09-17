@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-07 20:54-0700\n"
+"POT-Creation-Date: 2013-09-17 18:41+0100\n"
 "PO-Revision-Date: 2013-04-24 06:44+0000\n"
 "Last-Translator: chandan <chandankumar.093047@gmail.com>\n"
 "Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
@@ -22,18 +22,19 @@ msgstr ""
 "X-POOTLE-MTIME: 1366785874.0\n"
 
 #. # CSP Warnings:
-#. # LOCALIZATION NOTE (directiveViolated):
-#. # %1$S is the directive that has been violated.
-#: directiveViolated
-msgid "Directive %1$S violated"
-msgstr "डायरेक्टिव %1$S का उल्लंघन"
+#. # LOCALIZATION NOTE (CSPViolation):
+#. # %1$S is the reason why the resource has not been loaded.
+#: CSPViolation
+msgid "The page's settings blocked the loading of a resource: %1$S"
+msgstr ""
 
-#. # LOCALIZATION NOTE (directiveViolatedWithURI):
+#. # LOCALIZATION NOTE (CSPViolationWithURI):
 #. # %1$S is the directive that has been violated.
 #. # %2$S is the URI of the resource which violated the directive.
-#: directiveViolatedWithURI
-msgid "Directive %1$S violated by %2$S"
-msgstr "%2$S के द्वारा डायरेक्टिव %1$S का उल्लंघन"
+#: CSPViolationWithURI
+msgid ""
+"The page's settings blocked the loading of a resource at %2$S (\"%1$S\")."
+msgstr ""
 
 #. # LOCALIZATION NOTE (triedToSendReport):
 #. # %1$S is the URI we attempted to send a report to.
@@ -59,31 +60,29 @@ msgstr "रिपोर्ट URI विश्लेषित नहीं क�
 msgid "Couldn't process unknown directive '%1$S'"
 msgstr "अज्ञात निर्देशिका '%1$S' को प्रक्रमित नहीं कर सका"
 
-#. # LOCALIZATION NOTE (doNotUnderstandOption):
+#. # LOCALIZATION NOTE (ignoringUnknownOption):
 #. # %1$S is the option that could not be understood
-#: doNotUnderstandOption
-msgid "don't understand option '%1$S'.  Ignoring it."
-msgstr "विकल्प '%1$S' को नहीं समझ सका. इसे अनदेखा कर रहा है."
+#: ignoringUnknownOption
+msgid "Ignoring unknown option %1$S"
+msgstr ""
 
-#. # LOCALIZATION NOTE (notETLDPlus1):
+#. # LOCALIZATION NOTE (reportURInotETLDPlus1):
 #. # %1$S is the ETLD of the report URI that could not be used
-#: notETLDPlus1
-msgid "can't use report URI from non-matching eTLD+1: %1$S"
-msgstr "रिपोर्ट URI को गैर मिलानकारी eTLD+1 से उपयोग नहीं कर सकता है: %1$S"
+#: reportURInotETLDPlus1
+msgid "The report URI (%1$S) must be from the same eTLD+1."
+msgstr ""
 
-#. # LOCALIZATION NOTE (notSameScheme):
+#. # LOCALIZATION NOTE (reportURInotSameSchemeAsSelf, reportURInotSamePortAsSelf):
 #. # %1$S is the report URI that could not be used
-#: notSameScheme
+#: reportURInotSameSchemeAsSelf
 msgid ""
-"can't use report URI with different scheme from originating document: %1$S"
-msgstr "URI का उपयोग मूल दस्तावेज़ से अलग योजना के साथ नहीं कर सकता है: %1$S"
+"The report URI (%1$S) must use the same scheme as the originating document."
+msgstr ""
 
-#. # LOCALIZATION NOTE (notSamePort):
-#. # %1$S is the report URI that could not be used
-#: notSamePort
+#: reportURInotSamePortAsSelf
 msgid ""
-"can't use report URI with different port from originating document: %1$S"
-msgstr "URI का उपयोग मूल दस्तावेज़ से अलग पोर्ट के साथ नहीं कर सकता है: %1$S"
+"The report URI (%1$S) must use the same port as the originating document."
+msgstr ""
 
 #. # LOCALIZATION NOTE (pageCannotSendReportsTo):
 #. # %1$S is the URI of the page with the policy
@@ -121,6 +120,26 @@ msgid ""
 "instead"
 msgstr ""
 "स्वीकार डायरेक्टिव पदावनत किए गए हैं, समान तयशुदा-स्रोत डायरेक्टिव को बदले में उपयोग करें"
+
+#. # LOCALIZATION NOTE (inlineScriptBlocked):
+#. # inline script refers to JavaScript code that is embedded into the HTML document.
+#: inlineScriptBlocked
+msgid "An attempt to execute inline scripts has been blocked"
+msgstr ""
+
+#. # LOCALIZATION NOTE (inlineStyleBlocked):
+#. # inline style refers to CSS code that is embedded into the HTML document.
+#: inlineStyleBlocked
+msgid "An attempt to apply inline style sheets has been blocked"
+msgstr ""
+
+#. # LOCALIZATION NOTE (scriptFromStringBlocked):
+#. # eval is a name and should not be localized.
+#: scriptFromStringBlocked
+msgid ""
+"An attempt to call JavaScript from a string (by calling a function like "
+"eval) has been blocked"
+msgstr ""
 
 #. # CSP Errors:
 #: policyURINotAlone
@@ -254,3 +273,23 @@ msgid ""
 "ignored."
 msgstr ""
 "डुप्लीकेट %1$S डायरेक्टिव का पता किया गया.  पहले को छोड़ सभी उदाहरण अनदेखे किए गए."
+
+#~ msgid "Directive %1$S violated"
+#~ msgstr "डायरेक्टिव %1$S का उल्लंघन"
+
+#~ msgid "Directive %1$S violated by %2$S"
+#~ msgstr "%2$S के द्वारा डायरेक्टिव %1$S का उल्लंघन"
+
+#~ msgid "don't understand option '%1$S'.  Ignoring it."
+#~ msgstr "विकल्प '%1$S' को नहीं समझ सका. इसे अनदेखा कर रहा है."
+
+#~ msgid "can't use report URI from non-matching eTLD+1: %1$S"
+#~ msgstr "रिपोर्ट URI को गैर मिलानकारी eTLD+1 से उपयोग नहीं कर सकता है: %1$S"
+
+#~ msgid ""
+#~ "can't use report URI with different scheme from originating document: %1$S"
+#~ msgstr "URI का उपयोग मूल दस्तावेज़ से अलग योजना के साथ नहीं कर सकता है: %1$S"
+
+#~ msgid ""
+#~ "can't use report URI with different port from originating document: %1$S"
+#~ msgstr "URI का उपयोग मूल दस्तावेज़ से अलग पोर्ट के साथ नहीं कर सकता है: %1$S"

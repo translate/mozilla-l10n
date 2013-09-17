@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-07 20:54-0700\n"
+"POT-Creation-Date: 2013-09-17 18:41+0100\n"
 "PO-Revision-Date: 2013-02-06 13:38+0000\n"
 "Last-Translator: milossh <mdinic@mozilla.com>\n"
 "Language-Team: none\n"
@@ -22,18 +22,19 @@ msgstr ""
 "X-POOTLE-MTIME: 1360157884.0\n"
 
 #. # CSP Warnings:
-#. # LOCALIZATION NOTE (directiveViolated):
-#. # %1$S is the directive that has been violated.
-#: directiveViolated
-msgid "Directive %1$S violated"
-msgstr "Директива %1$S је прекршена"
+#. # LOCALIZATION NOTE (CSPViolation):
+#. # %1$S is the reason why the resource has not been loaded.
+#: CSPViolation
+msgid "The page's settings blocked the loading of a resource: %1$S"
+msgstr ""
 
-#. # LOCALIZATION NOTE (directiveViolatedWithURI):
+#. # LOCALIZATION NOTE (CSPViolationWithURI):
 #. # %1$S is the directive that has been violated.
 #. # %2$S is the URI of the resource which violated the directive.
-#: directiveViolatedWithURI
-msgid "Directive %1$S violated by %2$S"
-msgstr "Директива %1$S је прекршена од стране %2$S"
+#: CSPViolationWithURI
+msgid ""
+"The page's settings blocked the loading of a resource at %2$S (\"%1$S\")."
+msgstr ""
 
 #. # LOCALIZATION NOTE (triedToSendReport):
 #. # %1$S is the URI we attempted to send a report to.
@@ -59,30 +60,28 @@ msgstr "немогуће је обрадити УРИ за извештај: %1$
 msgid "Couldn't process unknown directive '%1$S'"
 msgstr "Немогуће је обрадити непознату директиву '%1$S'"
 
-#. # LOCALIZATION NOTE (doNotUnderstandOption):
+#. # LOCALIZATION NOTE (ignoringUnknownOption):
 #. # %1$S is the option that could not be understood
-#: doNotUnderstandOption
-msgid "don't understand option '%1$S'.  Ignoring it."
-msgstr "не разумем опцију '%1$S'.  Игнорисана је."
+#: ignoringUnknownOption
+msgid "Ignoring unknown option %1$S"
+msgstr ""
 
-#. # LOCALIZATION NOTE (notETLDPlus1):
+#. # LOCALIZATION NOTE (reportURInotETLDPlus1):
 #. # %1$S is the ETLD of the report URI that could not be used
-#: notETLDPlus1
-msgid "can't use report URI from non-matching eTLD+1: %1$S"
+#: reportURInotETLDPlus1
+msgid "The report URI (%1$S) must be from the same eTLD+1."
 msgstr ""
 
-#. # LOCALIZATION NOTE (notSameScheme):
+#. # LOCALIZATION NOTE (reportURInotSameSchemeAsSelf, reportURInotSamePortAsSelf):
 #. # %1$S is the report URI that could not be used
-#: notSameScheme
+#: reportURInotSameSchemeAsSelf
 msgid ""
-"can't use report URI with different scheme from originating document: %1$S"
+"The report URI (%1$S) must use the same scheme as the originating document."
 msgstr ""
 
-#. # LOCALIZATION NOTE (notSamePort):
-#. # %1$S is the report URI that could not be used
-#: notSamePort
+#: reportURInotSamePortAsSelf
 msgid ""
-"can't use report URI with different port from originating document: %1$S"
+"The report URI (%1$S) must use the same port as the originating document."
 msgstr ""
 
 #. # LOCALIZATION NOTE (pageCannotSendReportsTo):
@@ -117,6 +116,26 @@ msgstr ""
 msgid ""
 "allow directive is deprecated, use the equivalent default-src directive "
 "instead"
+msgstr ""
+
+#. # LOCALIZATION NOTE (inlineScriptBlocked):
+#. # inline script refers to JavaScript code that is embedded into the HTML document.
+#: inlineScriptBlocked
+msgid "An attempt to execute inline scripts has been blocked"
+msgstr ""
+
+#. # LOCALIZATION NOTE (inlineStyleBlocked):
+#. # inline style refers to CSS code that is embedded into the HTML document.
+#: inlineStyleBlocked
+msgid "An attempt to apply inline style sheets has been blocked"
+msgstr ""
+
+#. # LOCALIZATION NOTE (scriptFromStringBlocked):
+#. # eval is a name and should not be localized.
+#: scriptFromStringBlocked
+msgid ""
+"An attempt to call JavaScript from a string (by calling a function like "
+"eval) has been blocked"
 msgstr ""
 
 #. # CSP Errors:
@@ -252,3 +271,12 @@ msgid ""
 "Duplicate %1$S directives detected.  All but the first instance will be "
 "ignored."
 msgstr ""
+
+#~ msgid "Directive %1$S violated"
+#~ msgstr "Директива %1$S је прекршена"
+
+#~ msgid "Directive %1$S violated by %2$S"
+#~ msgstr "Директива %1$S је прекршена од стране %2$S"
+
+#~ msgid "don't understand option '%1$S'.  Ignoring it."
+#~ msgstr "не разумем опцију '%1$S'.  Игнорисана је."

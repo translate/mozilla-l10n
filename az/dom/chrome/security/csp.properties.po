@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-07 20:54-0700\n"
+"POT-Creation-Date: 2013-09-17 18:41+0100\n"
 "PO-Revision-Date: 2013-01-15 07:58+0000\n"
 "Last-Translator: Ismet <ismet.sadiqov@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,18 +21,19 @@ msgstr ""
 "X-POOTLE-MTIME: 1358236707.0\n"
 
 #. # CSP Warnings:
-#. # LOCALIZATION NOTE (directiveViolated):
-#. # %1$S is the directive that has been violated.
-#: directiveViolated
-msgid "Directive %1$S violated"
-msgstr "Direktiv %1$S pozulub"
+#. # LOCALIZATION NOTE (CSPViolation):
+#. # %1$S is the reason why the resource has not been loaded.
+#: CSPViolation
+msgid "The page's settings blocked the loading of a resource: %1$S"
+msgstr ""
 
-#. # LOCALIZATION NOTE (directiveViolatedWithURI):
+#. # LOCALIZATION NOTE (CSPViolationWithURI):
 #. # %1$S is the directive that has been violated.
 #. # %2$S is the URI of the resource which violated the directive.
-#: directiveViolatedWithURI
-msgid "Directive %1$S violated by %2$S"
-msgstr "Direktiv %1$S, %2$S tərəfindən pozulub"
+#: CSPViolationWithURI
+msgid ""
+"The page's settings blocked the loading of a resource at %2$S (\"%1$S\")."
+msgstr ""
 
 #. # LOCALIZATION NOTE (triedToSendReport):
 #. # %1$S is the URI we attempted to send a report to.
@@ -58,34 +59,29 @@ msgstr "hesabat ünvanı analiz edilə bilmədi: %1$S"
 msgid "Couldn't process unknown directive '%1$S'"
 msgstr "Naməlum '%1$S' direktivi analiz edilə bilmədi"
 
-#. # LOCALIZATION NOTE (doNotUnderstandOption):
+#. # LOCALIZATION NOTE (ignoringUnknownOption):
 #. # %1$S is the option that could not be understood
-#: doNotUnderstandOption
-msgid "don't understand option '%1$S'.  Ignoring it."
-msgstr "'%1$S' seçimi başa düşülmədi, yox sayılır."
+#: ignoringUnknownOption
+msgid "Ignoring unknown option %1$S"
+msgstr ""
 
-#. # LOCALIZATION NOTE (notETLDPlus1):
+#. # LOCALIZATION NOTE (reportURInotETLDPlus1):
 #. # %1$S is the ETLD of the report URI that could not be used
-#: notETLDPlus1
-msgid "can't use report URI from non-matching eTLD+1: %1$S"
+#: reportURInotETLDPlus1
+msgid "The report URI (%1$S) must be from the same eTLD+1."
 msgstr ""
-"uyğun gəlməyən eTLD+1-dən gələn hesabat ünvanı istifadə oluna bilməz: %1$S"
 
-#. # LOCALIZATION NOTE (notSameScheme):
+#. # LOCALIZATION NOTE (reportURInotSameSchemeAsSelf, reportURInotSamePortAsSelf):
 #. # %1$S is the report URI that could not be used
-#: notSameScheme
+#: reportURInotSameSchemeAsSelf
 msgid ""
-"can't use report URI with different scheme from originating document: %1$S"
+"The report URI (%1$S) must use the same scheme as the originating document."
 msgstr ""
-"qaynaq sənədin sxemindən fərqli hesabat ünvanı istifadə edilə bilməz: %1$S"
 
-#. # LOCALIZATION NOTE (notSamePort):
-#. # %1$S is the report URI that could not be used
-#: notSamePort
+#: reportURInotSamePortAsSelf
 msgid ""
-"can't use report URI with different port from originating document: %1$S"
+"The report URI (%1$S) must use the same port as the originating document."
 msgstr ""
-"qaynaq sənəddən fərqli porta sahib hesabat ünvanı istifadə edilə bilməz: %1$S"
 
 #. # LOCALIZATION NOTE (pageCannotSendReportsTo):
 #. # %1$S is the URI of the page with the policy
@@ -127,6 +123,26 @@ msgid ""
 msgstr ""
 "direktivlər icazə verir, direktiv yerinə ekvivalentdən mənbəyi susmaya görə "
 "istifadə etməyə tövsiyə edilir"
+
+#. # LOCALIZATION NOTE (inlineScriptBlocked):
+#. # inline script refers to JavaScript code that is embedded into the HTML document.
+#: inlineScriptBlocked
+msgid "An attempt to execute inline scripts has been blocked"
+msgstr ""
+
+#. # LOCALIZATION NOTE (inlineStyleBlocked):
+#. # inline style refers to CSS code that is embedded into the HTML document.
+#: inlineStyleBlocked
+msgid "An attempt to apply inline style sheets has been blocked"
+msgstr ""
+
+#. # LOCALIZATION NOTE (scriptFromStringBlocked):
+#. # eval is a name and should not be localized.
+#: scriptFromStringBlocked
+msgid ""
+"An attempt to call JavaScript from a string (by calling a function like "
+"eval) has been blocked"
+msgstr ""
 
 #. # CSP Errors:
 #: policyURINotAlone
@@ -260,3 +276,27 @@ msgid ""
 "ignored."
 msgstr ""
 "%1$S direktivinin kopyası aşkarlandı. Buna baxmayaraq əvvəlki yox sayılacaq"
+
+#~ msgid "Directive %1$S violated"
+#~ msgstr "Direktiv %1$S pozulub"
+
+#~ msgid "Directive %1$S violated by %2$S"
+#~ msgstr "Direktiv %1$S, %2$S tərəfindən pozulub"
+
+#~ msgid "don't understand option '%1$S'.  Ignoring it."
+#~ msgstr "'%1$S' seçimi başa düşülmədi, yox sayılır."
+
+#~ msgid "can't use report URI from non-matching eTLD+1: %1$S"
+#~ msgstr ""
+#~ "uyğun gəlməyən eTLD+1-dən gələn hesabat ünvanı istifadə oluna bilməz: %1$S"
+
+#~ msgid ""
+#~ "can't use report URI with different scheme from originating document: %1$S"
+#~ msgstr ""
+#~ "qaynaq sənədin sxemindən fərqli hesabat ünvanı istifadə edilə bilməz: %1$S"
+
+#~ msgid ""
+#~ "can't use report URI with different port from originating document: %1$S"
+#~ msgstr ""
+#~ "qaynaq sənəddən fərqli porta sahib hesabat ünvanı istifadə edilə bilməz: "
+#~ "%1$S"
