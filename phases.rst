@@ -37,7 +37,7 @@ focus on the most important translations first.
 +--------+----------------------------------------------------------------------------------------+
 | user2  | Extensions/addons, Download manager, Bookmarks, Places, File browsing/downloading,     |
 |        | Private Browsing, Session Restore, Sync, Video, PDF viewer, Health report, Crash       |
-|        | reporter                                                                               |
+|        | reporter, Windows Metro                                                                |
 +--------+----------------------------------------------------------------------------------------+
 | user3  | Still focused on use: print dialogue, other XXX... menus accesible, Tab Groups         |
 +--------+----------------------------------------------------------------------------------------+
