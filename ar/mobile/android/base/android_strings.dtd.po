@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-11 09:32+0100\n"
+"POT-Creation-Date: 2013-09-18 11:32+0100\n"
 "PO-Revision-Date: 2013-09-07 13:34+0000\n"
 "Last-Translator: Khaled <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -32,19 +32,23 @@ msgid ""
 "An error occurred when trying to load files required to run &brandShortName;"
 msgstr "حصل خطأ عند محاولة تحميل الملفات لتشغيل &brandShortName;"
 
-#: awesomebar_all_pages_title
-msgid "Top Sites"
-msgstr "المواقع الأكثر زيارة"
-
-#: awesomebar_bookmarks_title
+#. Localization note: These are used as the titles of different pages on the home screen.
+#. They are automatically converted to all caps by the Android platform.
+#: bookmarks_title
 msgid "Bookmarks"
 msgstr "العلامات"
 
-#: awesomebar_history_title
+#: history_title
+#, fuzzy
+msgctxt "history_title"
 msgid "History"
 msgstr "التأريخ"
 
-#: awesomebar_switch_to_tab
+#: reading_list_title
+msgid "Reading List"
+msgstr "قائمة القراءة"
+
+#: switch_to_tab
 msgid "Switch to tab"
 msgstr "انتقل للسان"
 
@@ -118,17 +122,9 @@ msgctxt "choose_file"
 msgid "Choose File"
 msgstr "اختر ملفًا"
 
-#: awesomebar_default_text
+#: url_bar_default_text
 msgid "Enter Search or Address"
 msgstr "أدخِل بحثًا أو عنوانًا"
-
-#: remote_tabs
-msgid "Synced Tabs"
-msgstr "الألسنة المُزامنة"
-
-#: remote_tabs_show_all
-msgid "Show all tabs"
-msgstr "أظهِر كل الألسنة"
 
 #: bookmark
 msgid "Bookmark"
@@ -262,6 +258,19 @@ msgstr "اختيارات البيانات"
 msgid "Installed search engines"
 msgstr "محركات البحث المُثبّتة"
 
+#: pref_category_add_search_providers
+msgid "Add more search providers"
+msgstr ""
+
+#. Localization note (pref_search_tip) : "TIP" as in "hint", "clue" etc. Displayed as an
+#. advisory message on the customise search providers settings page explaining how to add new
+#. search providers.
+#: pref_search_tip
+msgid ""
+"TIP: Add any website to your list of search providers by long-pressing on "
+"its search field."
+msgstr ""
+
 #: pref_category_devtools
 msgctxt "pref_category_devtools"
 msgid "Developer tools"
@@ -394,13 +403,9 @@ msgstr "الألسنة"
 msgid "Always restore"
 msgstr "استعد دائمًا"
 
-#: pref_restore_crash
-msgid "Restore after a crash"
-msgstr "استعد بعد الانهيار"
-
-#: pref_restore_never
-msgid "Never restore"
-msgstr "لا تستعد أبدًا"
+#: pref_restore_quit
+msgid "Don't restore after quitting &brandShortName;"
+msgstr ""
 
 #: pref_font_size_tiny
 msgid "Tiny"
@@ -509,6 +514,25 @@ msgstr "الأسئلة الأكثر شيوعًا"
 #: pref_vendor_feedback
 msgid "Give feedback"
 msgstr "أخبرنا بتعليقاتك"
+
+#: pref_search_set_default
+#, fuzzy
+msgid "Set as default"
+msgstr "اجعله المبدئي"
+
+#: pref_search_default
+msgid "Default"
+msgstr ""
+
+#: pref_search_remove
+#, fuzzy
+msgctxt "pref_search_remove"
+msgid "Remove"
+msgstr "أزِل"
+
+#: pref_search_last_toast
+msgid "You can't remove or disable your last search engine."
+msgstr ""
 
 #: datareporting_notification_title
 msgid "&brandShortName; stats &amp; data"
@@ -732,13 +756,9 @@ msgstr "افتح في لسان خاص"
 msgid "Open in Reader"
 msgstr "افتح في القارئ"
 
-#: contextmenu_remove_history
-msgctxt "contextmenu_remove_history"
-msgid "Remove"
-msgstr "أزِل"
-
-#: contextmenu_remove_bookmark
-msgctxt "contextmenu_remove_bookmark"
+#: contextmenu_remove
+#, fuzzy
+msgctxt "contextmenu_remove"
 msgid "Remove"
 msgstr "أزِل"
 
@@ -776,6 +796,20 @@ msgstr "اشترك بهذه الصفحة"
 msgid "Edit Site Settings"
 msgstr "حرر إعدادات الموقع"
 
+#: contextmenu_top_bookmarks_edit
+#, fuzzy
+msgctxt "contextmenu_top_bookmarks_edit"
+msgid "Edit"
+msgstr "حرِّر"
+
+#: contextmenu_top_bookmarks_pin
+msgid "Pin Site"
+msgstr "ثبّت الموقع"
+
+#: contextmenu_top_bookmarks_unpin
+msgid "Unpin Site"
+msgstr "افصل الموقع"
+
 #: pref_titlebar_mode
 msgid "Title bar"
 msgstr "شريط العنوان"
@@ -791,6 +825,10 @@ msgstr "أظهر مسار الصفحة"
 #: history_removed
 msgid "Page removed"
 msgstr "أزِيلت الصفحة"
+
+#: bookmark_add
+msgid "Add a bookmark"
+msgstr ""
 
 #: bookmark_edit_title
 msgid "Edit Bookmark"
@@ -827,10 +865,6 @@ msgstr "امسح"
 #: site_settings_no_settings
 msgid "There are no settings to clear."
 msgstr "لا إعدادات لمسحها."
-
-#: reading_list
-msgid "Reading List"
-msgstr "قائمة القراءة"
 
 #: reading_list_added
 msgid "Page added to your Reading List"
@@ -901,69 +935,66 @@ msgctxt "button_clear"
 msgid "Clear"
 msgstr "امسح"
 
-#: abouthome_addons_title
-msgid "Add-ons for your &brandShortName;"
-msgstr "إضافات &brandShortName;"
+#: home_history_title
+#, fuzzy
+msgctxt "home_history_title"
+msgid "History"
+msgstr "التأريخ"
 
-#: abouthome_addons_browse
-msgid "Browse all &brandShortName; add-ons"
-msgstr "تصفّح كل إضافات &brandShortName;"
-
-#: abouthome_last_tabs_title
-msgid "Your tabs from last time"
+#: home_last_tabs_title
+#, fuzzy
+msgid "Tabs from last time"
 msgstr "ألسنتك من المرة السابقة"
 
-#: abouthome_last_tabs_open
+#: home_last_tabs_open
 msgid "Open all tabs from last time"
 msgstr "افتح كل الألسنة من المرة السابقة"
 
-#: abouthome_top_sites_title
-msgid "Top sites"
-msgstr "المواقع الأكثر زيارة"
-
-#: abouthome_topsites_edit
-msgctxt "abouthome_topsites_edit"
-msgid "Edit"
-msgstr "حرِّر"
-
-#: abouthome_topsites_pin
-msgid "Pin Site"
-msgstr "ثبّت الموقع"
-
-#: abouthome_topsites_unpin
-msgid "Unpin Site"
-msgstr "افصل الموقع"
-
-#. Localization note (abouthome_about_sync3, abouthome_about_apps2): The
-#. chevron (ex: "»"; unicode= U+00BB) is used as an arrow to show that
-#. clicking this text in the promotions box will perform some action. Note
-#. that a non-breaking space (unicode= U+00A0) should be used between this
-#. character and the remainder of the string to prevent word wrap.
-#: abouthome_about_sync3
-msgid ""
-"Set up Firefox Sync to access bookmarks, history and tabs from your other "
-"devices&#x00A0;»"
+#: home_last_tabs_empty
+msgid "Your recent tabs show up here."
 msgstr ""
-"اضبط تزامُن فيَرفُكس للوصول إلى العلامات والتأريخ والألسنة من أجهزتك "
-"الأخرى&#x00A0;»"
 
-#: abouthome_about_apps3
+#: home_most_recent_title
+msgid "Most recent"
+msgstr ""
+
+#: home_most_recent_empty
+msgid "Websites you visited most recently show up here."
+msgstr ""
+
+#: home_most_visited_title
+msgid "Most visited"
+msgstr ""
+
+#: home_reading_list_empty
+msgid "Articles you save for later show up here."
+msgstr ""
+
+#. Localization note (home_reading_list_hint): The "TIP" string is synonymous to "hint", "clue", etc. This string is displayed
+#. as an advisory message on how to add content to the reading list when the reading list empty.
+#. The "&#37;I" in the string will be replaced by a small image of the icon described, and can be moved to wherever
+#. it is applicable. Please keep the spacing around the "&#37;I" string.
+#: home_reading_list_hint
 msgid ""
-"Get apps from the Firefox Marketplace and discover the best the Web has to "
-"offer&#x00A0;»"
-msgstr "احصل على التطبيقات من متجر فَيرفُكس واكتشف أفضل ما تقدمه الوب&#x00A0;»"
+"TIP: Save articles to your reading list by long pressing the %I icon when it "
+"appears in the title bar."
+msgstr ""
 
-#. Localization note (abouthome_sync_bold_name, abouthome_apps_bold_name):
-#. These strings are accentuated as bold text in the "abouthome_about_..."
-#. strings above. These strings should be a subset of the strings above and
-#. generally be the name of the product the string describes.
-#: abouthome_sync_bold_name
-msgid "Firefox Sync"
-msgstr "تزامُن فَيَرفُكس"
+#. Localization note (home_reading_list_hint_accessible): This string is used
+#. as alternate text for accessibility. It is not visible in the UI.
+#: home_reading_list_hint_accessible
+msgid ""
+"TIP: Save articles to your reading list by long pressing the reader mode "
+"button when it appears in the title bar."
+msgstr ""
 
-#: abouthome_apps_bold_name2
-msgid "Firefox Marketplace"
-msgstr "متجر فَيرفُكس"
+#: home_most_visited_empty
+msgid "Websites you visit most frequently show up here."
+msgstr ""
+
+#: pin_bookmark_dialog_hint
+msgid "Enter a search keyword"
+msgstr ""
 
 #: filepicker_title
 msgctxt "filepicker_title"
@@ -1076,6 +1107,13 @@ msgstr "انتظر من فضلك..."
 msgid "Would you like to turn on &formatS; search suggestions?"
 msgstr "أتريد تفعيل اقتراحات بحث &formatS;؟"
 
+#. Localization note (suggestion_for_engine): The placeholder &formatS1; will be
+#. replaced with the name of the search engine. The placeholder &formatS2; will be
+#. replaced with the search query.
+#: suggestion_for_engine
+msgid "Search &formatS1; for &formatS2;"
+msgstr ""
+
 #: webapp_generic_name
 msgid "App"
 msgstr "تطبيق"
@@ -1164,6 +1202,67 @@ msgstr "سيُعاد تشغيل &brandShortName; الآن"
 #: exit_guest_session_text
 msgid "The browsing data from this session will be deleted."
 msgstr "ستُحذف بيانات تصفح هذه الجلسة."
+
+#~ msgid "Top Sites"
+#~ msgstr "المواقع الأكثر زيارة"
+
+#~ msgid "Synced Tabs"
+#~ msgstr "الألسنة المُزامنة"
+
+#~ msgid "Show all tabs"
+#~ msgstr "أظهِر كل الألسنة"
+
+#~ msgid "Restore after a crash"
+#~ msgstr "استعد بعد الانهيار"
+
+#~ msgid "Never restore"
+#~ msgstr "لا تستعد أبدًا"
+
+#~ msgctxt "contextmenu_remove_bookmark"
+#~ msgid "Remove"
+#~ msgstr "أزِل"
+
+#~ msgid "Add-ons for your &brandShortName;"
+#~ msgstr "إضافات &brandShortName;"
+
+#~ msgid "Browse all &brandShortName; add-ons"
+#~ msgstr "تصفّح كل إضافات &brandShortName;"
+
+#~ msgid "Top sites"
+#~ msgstr "المواقع الأكثر زيارة"
+
+#~ msgctxt "abouthome_topsites_edit"
+#~ msgid "Edit"
+#~ msgstr "حرِّر"
+
+#~ msgid ""
+#~ "Set up Firefox Sync to access bookmarks, history and tabs from your other "
+#~ "devices&#x00A0;»"
+#~ msgstr ""
+#~ "اضبط تزامُن فيَرفُكس للوصول إلى العلامات والتأريخ والألسنة من أجهزتك "
+#~ "الأخرى&#x00A0;»"
+
+#~ msgid ""
+#~ "Get apps from the Firefox Marketplace and discover the best the Web has "
+#~ "to offer&#x00A0;»"
+#~ msgstr ""
+#~ "احصل على التطبيقات من متجر فَيرفُكس واكتشف أفضل ما تقدمه الوب&#x00A0;»"
+
+#~ msgid "Firefox Sync"
+#~ msgstr "تزامُن فَيَرفُكس"
+
+#~ msgid "Firefox Marketplace"
+#~ msgstr "متجر فَيرفُكس"
+
+#~ msgid "History"
+#~ msgstr "التأريخ"
+
+#~ msgctxt "contextmenu_remove_history"
+#~ msgid "Remove"
+#~ msgstr "أزِل"
+
+#~ msgid "Your tabs from last time"
+#~ msgstr "ألسنتك من المرة السابقة"
 
 #~ msgid "Setting up your &brandShortName;"
 #~ msgstr "إعداد &brandShortName;"

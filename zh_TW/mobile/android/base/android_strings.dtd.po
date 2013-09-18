@@ -1,31 +1,25 @@
-#. extracted from /home/dwayne/dev/mozilla/firefox/po/templates-en-US/mobile/android/base/android_strings.dtd, /home/dwayne/dev/mozilla/firefox/po/build/l10n/zh-TW/mobile/android/base/android_strings.dtd
+#. extracted from ./mobile/android/base/android_strings.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-20 13:57+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2013-09-18 11:32+0100\n"
+"PO-Revision-Date: 2013-08-21 14:23+0000\n"
+"Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
+"X-POOTLE-MTIME: 1377094987.000000\n"
 
 #. This Source Code Form is subject to the terms of the Mozilla Public
 #. - License, v. 2.0. If a copy of the MPL was not distributed with this
 #. - file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#: splash_settingup
-msgid "Setting up your &brandShortName;"
-msgstr ""
-
-#: splash_bookmarks_history
-msgid ""
-"We are updating your bookmarks and history, which may take a minute or so."
-msgstr ""
-
 #: no_space_to_start_error
 msgid "There is not enough space available for &brandShortName; to start."
 msgstr "空間不足，無法啟動 &brandShortName;。"
@@ -35,19 +29,23 @@ msgid ""
 "An error occurred when trying to load files required to run &brandShortName;"
 msgstr "嘗試讀取 &brandShortName; 執行所必需的檔案時發生錯誤。"
 
-#: awesomebar_all_pages_title
-msgid "Top Sites"
-msgstr "最常瀏覽"
-
-#: awesomebar_bookmarks_title
+#. Localization note: These are used as the titles of different pages on the home screen.
+#. They are automatically converted to all caps by the Android platform.
+#: bookmarks_title
 msgid "Bookmarks"
 msgstr "書籤"
 
-#: awesomebar_history_title
+#: history_title
+#, fuzzy
+msgctxt "history_title"
 msgid "History"
 msgstr "歷史記錄"
 
-#: awesomebar_switch_to_tab
+#: reading_list_title
+msgid "Reading List"
+msgstr "閱讀清單"
+
+#: switch_to_tab
 msgid "Switch to tab"
 msgstr "切換到分頁"
 
@@ -121,17 +119,9 @@ msgctxt "choose_file"
 msgid "Choose File"
 msgstr "選擇檔案"
 
-#: awesomebar_default_text
+#: url_bar_default_text
 msgid "Enter Search or Address"
 msgstr "輸入要搜尋的資料或網址"
-
-#: remote_tabs
-msgid "Synced Tabs"
-msgstr "已同步的分頁"
-
-#: remote_tabs_show_all
-msgid "Show all tabs"
-msgstr "顯示所有分頁"
 
 #: bookmark
 msgid "Bookmark"
@@ -229,50 +219,104 @@ msgctxt "settings_title"
 msgid "Settings"
 msgstr "設定"
 
-#: pref_category_general
-msgctxt "pref_category_general"
-msgid "General"
+#: pref_category_advanced
+msgid "Advanced"
 msgstr ""
 
-#: pref_category_privacy
-msgctxt "pref_category_privacy"
-msgid "Privacy &amp; Security"
+#: pref_category_customize
+msgctxt "pref_category_customize"
+msgid "Customize"
 msgstr ""
 
-#: pref_category_content
-msgctxt "pref_category_content"
-msgid "Content"
+#: pref_category_search2
+#, fuzzy
+msgid "Search settings"
+msgstr "搜尋設定"
+
+#: pref_category_display
+msgctxt "pref_category_display"
+msgid "Display"
 msgstr ""
 
-#. Localization note (datareporting_title) : This string matches
-#. (dataChoicesTab.label) in chrome/browser/preferences/advanced.dtd except in
-#. capitalization.
+#: pref_category_privacy_short
+msgctxt "pref_category_privacy_short"
+msgid "Privacy"
+msgstr ""
+
+#: pref_category_vendor
+#, fuzzy
+msgctxt "pref_category_vendor"
+msgid "&vendorShortName;"
+msgstr "&vendorShortName;"
+
 #: pref_category_datareporting
 msgid "Data choices"
 msgstr "資料選擇"
 
-#: pref_about_firefox
-msgid "About &brandShortName;"
-msgstr "關於 &brandShortName;"
+#: pref_category_installed_search_engines
+msgid "Installed search engines"
+msgstr ""
+
+#: pref_category_add_search_providers
+msgid "Add more search providers"
+msgstr ""
+
+#. Localization note (pref_search_tip) : "TIP" as in "hint", "clue" etc. Displayed as an
+#. advisory message on the customise search providers settings page explaining how to add new
+#. search providers.
+#: pref_search_tip
+msgid ""
+"TIP: Add any website to your list of search providers by long-pressing on "
+"its search field."
+msgstr ""
+
+#: pref_category_devtools
+msgctxt "pref_category_devtools"
+msgid "Developer tools"
+msgstr ""
+
+#: pref_developer_remotedebugging
+msgid "Remote debugging"
+msgstr ""
+
+#: pref_developer_remotedebugging_docs
+#, fuzzy
+msgid "Learn more"
+msgstr "更多資訊"
 
 #: pref_remember_signons
 msgid "Remember passwords"
 msgstr "記住密碼"
 
 #. Localization note: These are shown in the left sidebar on tablets
-#: pref_header_general
-msgctxt "pref_header_general"
-msgid "General"
+#: pref_header_customize
+msgctxt "pref_header_customize"
+msgid "Customize"
 msgstr ""
 
-#: pref_header_privacy
-msgctxt "pref_header_privacy"
-msgid "Privacy &amp; Security"
+#: pref_header_display
+msgctxt "pref_header_display"
+msgid "Display"
 msgstr ""
 
-#: pref_header_content
-msgctxt "pref_header_content"
-msgid "Content"
+#: pref_header_privacy_short
+msgctxt "pref_header_privacy_short"
+msgid "Privacy"
+msgstr ""
+
+#: pref_header_help
+msgid "Help"
+msgstr ""
+
+#: pref_header_vendor
+#, fuzzy
+msgctxt "pref_header_vendor"
+msgid "&vendorShortName;"
+msgstr "&vendorShortName;"
+
+#: pref_header_devtools
+msgctxt "pref_header_devtools"
+msgid "Developer tools"
 msgstr ""
 
 #: pref_cookies_menu
@@ -347,8 +391,22 @@ msgstr "停用"
 msgid "Text size"
 msgstr "文字大小"
 
-#: pref_reflow_on_zoom3
-msgid "Double tap to reflow text"
+#: pref_reflow_on_zoom4
+msgid "Text reflow"
+msgstr ""
+
+#: pref_restore
+#, fuzzy
+msgctxt "pref_restore"
+msgid "Tabs"
+msgstr "分頁"
+
+#: pref_restore_always
+msgid "Always restore"
+msgstr ""
+
+#: pref_restore_quit
+msgid "Don't restore after quitting &brandShortName;"
 msgstr ""
 
 #: pref_font_size_tiny
@@ -449,6 +507,38 @@ msgstr "網站設定"
 #: pref_private_data_downloadFiles
 msgid "Downloaded files"
 msgstr "已下載的檔案"
+
+#: pref_about_firefox
+msgid "About &brandShortName;"
+msgstr "關於 &brandShortName;"
+
+#: pref_vendor_faqs
+#, fuzzy
+msgid "FAQs"
+msgstr "常見問題集"
+
+#: pref_vendor_feedback
+msgid "Give feedback"
+msgstr "提供意見回饋"
+
+#: pref_search_set_default
+#, fuzzy
+msgid "Set as default"
+msgstr "設為預設值"
+
+#: pref_search_default
+msgid "Default"
+msgstr ""
+
+#: pref_search_remove
+#, fuzzy
+msgctxt "pref_search_remove"
+msgid "Remove"
+msgstr "移除"
+
+#: pref_search_last_toast
+msgid "You can't remove or disable your last search engine."
+msgstr ""
 
 #: datareporting_notification_title
 msgid "&brandShortName; stats &amp; data"
@@ -618,6 +708,8 @@ msgid "Close All Tabs"
 msgstr "關閉所有分頁"
 
 #: tabs_normal
+#, fuzzy
+msgctxt "tabs_normal"
 msgid "Tabs"
 msgstr "分頁"
 
@@ -629,16 +721,12 @@ msgstr "隱私"
 msgid "Synced"
 msgstr "同步"
 
-#: wallpaper_success
-msgid "Wallpaper updated"
+#: set_image_fail
+msgid "Unable to set image"
 msgstr ""
 
-#: wallpaper_progress
-msgid "Setting wallpaper"
-msgstr ""
-
-#: wallpaper_fail
-msgid "Unable to set wallpaper"
+#: set_image_chooser_title
+msgid "Set Image As"
 msgstr ""
 
 #. Localization note (find_text, find_prev, find_next, find_close) : These strings are used
@@ -673,13 +761,9 @@ msgstr "開啟於隱私分頁"
 msgid "Open in Reader"
 msgstr "在閱讀器中開啟"
 
-#: contextmenu_remove_history
-msgctxt "contextmenu_remove_history"
-msgid "Remove"
-msgstr "移除"
-
-#: contextmenu_remove_bookmark
-msgctxt "contextmenu_remove_bookmark"
+#: contextmenu_remove
+#, fuzzy
+msgctxt "contextmenu_remove"
 msgid "Remove"
 msgstr "移除"
 
@@ -717,6 +801,20 @@ msgstr "訂閱此頁面"
 msgid "Edit Site Settings"
 msgstr "編輯網站設定"
 
+#: contextmenu_top_bookmarks_edit
+#, fuzzy
+msgctxt "contextmenu_top_bookmarks_edit"
+msgid "Edit"
+msgstr "編輯"
+
+#: contextmenu_top_bookmarks_pin
+msgid "Pin Site"
+msgstr "釘選網站"
+
+#: contextmenu_top_bookmarks_unpin
+msgid "Unpin Site"
+msgstr "解除釘選網站"
+
 #: pref_titlebar_mode
 msgid "Title bar"
 msgstr "標題列"
@@ -732,6 +830,10 @@ msgstr "顯示頁面地址"
 #: history_removed
 msgid "Page removed"
 msgstr "已移除頁面"
+
+#: bookmark_add
+msgid "Add a bookmark"
+msgstr ""
 
 #: bookmark_edit_title
 msgid "Edit Bookmark"
@@ -769,10 +871,6 @@ msgstr "清除"
 msgid "There are no settings to clear."
 msgstr "沒有可清除的設定。"
 
-#: reading_list
-msgid "Reading List"
-msgstr "閱讀清單"
-
 #: reading_list_added
 msgid "Page added to your Reading List"
 msgstr "已將頁面加入至閱讀清單"
@@ -789,8 +887,10 @@ msgstr "將頁面新增至您的閱讀清單失敗"
 msgid "Page already in your Reading List"
 msgstr "頁面已存在於您的閱讀清單中"
 
-#: reader
-msgid "Reader"
+#. Localization note : These strings are used as alternate text for accessibility.
+#. They are not visible in the UI.
+#: page_action_dropmarker_description
+msgid "Additional Actions"
 msgstr ""
 
 #: masterpassword_create_title
@@ -840,68 +940,66 @@ msgctxt "button_clear"
 msgid "Clear"
 msgstr "清除"
 
-#: abouthome_addons_title
-msgid "Add-ons for your &brandShortName;"
-msgstr "給您 &brandShortName; 使用的附加元件"
+#: home_history_title
+#, fuzzy
+msgctxt "home_history_title"
+msgid "History"
+msgstr "歷史記錄"
 
-#: abouthome_addons_browse
-msgid "Browse all &brandShortName; add-ons"
-msgstr "瀏覽所有的 &brandShortName; 附加元件"
-
-#: abouthome_last_tabs_title
-msgid "Your tabs from last time"
+#: home_last_tabs_title
+#, fuzzy
+msgid "Tabs from last time"
 msgstr "上一次打開的分頁"
 
-#: abouthome_last_tabs_open
+#: home_last_tabs_open
 msgid "Open all tabs from last time"
 msgstr "打開上次開啟的所有分頁"
 
-#: abouthome_top_sites_title
-msgid "Top sites"
-msgstr "最常瀏覽的網站"
-
-#: abouthome_topsites_edit
-msgctxt "abouthome_topsites_edit"
-msgid "Edit"
-msgstr "編輯"
-
-#: abouthome_topsites_pin
-msgid "Pin Site"
-msgstr "釘選網站"
-
-#: abouthome_topsites_unpin
-msgid "Unpin Site"
-msgstr "解除釘選網站"
-
-#. Localization note (abouthome_about_sync3, abouthome_about_apps2): The
-#. chevron (ex: "»"; unicode= U+00BB) is used as an arrow to show that
-#. clicking this text in the promotions box will perform some action. Note
-#. that a non-breaking space (unicode= U+00A0) should be used between this
-#. character and the remainder of the string to prevent word wrap.
-#: abouthome_about_sync3
-msgid ""
-"Set up Firefox Sync to access bookmarks, history and tabs from your other "
-"devices&#x00A0;»"
+#: home_last_tabs_empty
+msgid "Your recent tabs show up here."
 msgstr ""
-"設定 Firefox Sync 以在您的其他裝置中存取書籤、歷史紀錄，以及分頁標籤&#x00A0;»"
 
-#: abouthome_about_apps3
+#: home_most_recent_title
+msgid "Most recent"
+msgstr ""
+
+#: home_most_recent_empty
+msgid "Websites you visited most recently show up here."
+msgstr ""
+
+#: home_most_visited_title
+msgid "Most visited"
+msgstr ""
+
+#: home_reading_list_empty
+msgid "Articles you save for later show up here."
+msgstr ""
+
+#. Localization note (home_reading_list_hint): The "TIP" string is synonymous to "hint", "clue", etc. This string is displayed
+#. as an advisory message on how to add content to the reading list when the reading list empty.
+#. The "&#37;I" in the string will be replaced by a small image of the icon described, and can be moved to wherever
+#. it is applicable. Please keep the spacing around the "&#37;I" string.
+#: home_reading_list_hint
 msgid ""
-"Get apps from the Firefox Marketplace and discover the best the Web has to "
-"offer&#x00A0;»"
-msgstr "到 Firefox 商城下載程式，探索網頁威力所在 &#x00A0;»"
+"TIP: Save articles to your reading list by long pressing the %I icon when it "
+"appears in the title bar."
+msgstr ""
 
-#. Localization note (abouthome_sync_bold_name, abouthome_apps_bold_name):
-#. These strings are accentuated as bold text in the "abouthome_about_..."
-#. strings above. These strings should be a subset of the strings above and
-#. generally be the name of the product the string describes.
-#: abouthome_sync_bold_name
-msgid "Firefox Sync"
-msgstr "Firefox Sync"
+#. Localization note (home_reading_list_hint_accessible): This string is used
+#. as alternate text for accessibility. It is not visible in the UI.
+#: home_reading_list_hint_accessible
+msgid ""
+"TIP: Save articles to your reading list by long pressing the reader mode "
+"button when it appears in the title bar."
+msgstr ""
 
-#: abouthome_apps_bold_name2
-msgid "Firefox Marketplace"
-msgstr "Firefox 商城"
+#: home_most_visited_empty
+msgid "Websites you visit most frequently show up here."
+msgstr ""
+
+#: pin_bookmark_dialog_hint
+msgid "Enter a search keyword"
+msgstr ""
 
 #: filepicker_title
 msgctxt "filepicker_title"
@@ -1008,6 +1106,13 @@ msgstr "請稍候…"
 msgid "Would you like to turn on &formatS; search suggestions?"
 msgstr "您想要開啟 &formatS; 的搜尋建議功能嗎？"
 
+#. Localization note (suggestion_for_engine): The placeholder &formatS1; will be
+#. replaced with the name of the search engine. The placeholder &formatS2; will be
+#. replaced with the search query.
+#: suggestion_for_engine
+msgid "Search &formatS1; for &formatS2;"
+msgstr ""
+
 #: webapp_generic_name
 msgid "App"
 msgstr "程式"
@@ -1015,6 +1120,10 @@ msgstr "程式"
 #: searchable_description
 msgid "Bookmarks and history"
 msgstr "書籤與歷史紀錄"
+
+#: devtools_remote_debugging_forward
+msgid "Don't forget to set up port forwarding!"
+msgstr ""
 
 #. Updater notifications
 #: updater_start_title2
@@ -1050,3 +1159,100 @@ msgstr "有可用的 &brandShortName; 更新"
 #: updater_apply_select2
 msgid "Touch to update"
 msgstr "選擇此處套用"
+
+#. Guest mode
+#: new_guest_session
+msgid "New Guest Session"
+msgstr ""
+
+#: exit_guest_session
+msgid "Exit Guest Session"
+msgstr ""
+
+#: guest_session_dialog_continue
+msgid "Continue"
+msgstr "繼續"
+
+#: guest_session_dialog_cancel
+#, fuzzy
+msgctxt "guest_session_dialog_cancel"
+msgid "Cancel"
+msgstr "取消"
+
+#: new_guest_session_title
+msgctxt "new_guest_session_title"
+msgid "&brandShortName; will now restart"
+msgstr ""
+
+#: new_guest_session_text
+msgid ""
+"The person using it will not be able to see any of your personal browsing "
+"data (like saved passwords, history or bookmarks).\\n\\nWhen your guest is "
+"done, their browsing data will be deleted and your session will be restored."
+msgstr ""
+
+#: exit_guest_session_title
+msgctxt "exit_guest_session_title"
+msgid "&brandShortName; will now restart"
+msgstr ""
+
+#: exit_guest_session_text
+msgid "The browsing data from this session will be deleted."
+msgstr ""
+
+#~ msgid "Top Sites"
+#~ msgstr "最常瀏覽"
+
+#~ msgid "Synced Tabs"
+#~ msgstr "已同步的分頁"
+
+#~ msgid "Show all tabs"
+#~ msgstr "顯示所有分頁"
+
+#~ msgctxt "contextmenu_remove_bookmark"
+#~ msgid "Remove"
+#~ msgstr "移除"
+
+#~ msgid "Add-ons for your &brandShortName;"
+#~ msgstr "給您 &brandShortName; 使用的附加元件"
+
+#~ msgid "Browse all &brandShortName; add-ons"
+#~ msgstr "瀏覽所有的 &brandShortName; 附加元件"
+
+#~ msgid "Top sites"
+#~ msgstr "最常瀏覽的網站"
+
+#~ msgctxt "abouthome_topsites_edit"
+#~ msgid "Edit"
+#~ msgstr "編輯"
+
+#~ msgid ""
+#~ "Set up Firefox Sync to access bookmarks, history and tabs from your other "
+#~ "devices&#x00A0;»"
+#~ msgstr ""
+#~ "設定 Firefox Sync 以在您的其他裝置中存取書籤、歷史紀錄，以及分頁標籤"
+#~ "&#x00A0;»"
+
+#~ msgid ""
+#~ "Get apps from the Firefox Marketplace and discover the best the Web has "
+#~ "to offer&#x00A0;»"
+#~ msgstr "到 Firefox 商城下載程式，探索網頁威力所在 &#x00A0;»"
+
+#~ msgid "Firefox Sync"
+#~ msgstr "Firefox Sync"
+
+#~ msgid "Firefox Marketplace"
+#~ msgstr "Firefox 商城"
+
+#~ msgid "History"
+#~ msgstr "歷史記錄"
+
+#~ msgid "Tabs"
+#~ msgstr "分頁"
+
+#~ msgctxt "contextmenu_remove_history"
+#~ msgid "Remove"
+#~ msgstr "移除"
+
+#~ msgid "Your tabs from last time"
+#~ msgstr "上一次打開的分頁"
