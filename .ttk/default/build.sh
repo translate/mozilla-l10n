@@ -47,8 +47,14 @@ do
 			--xpi)
 				opt_build_xpi="yes"
 			;;
+			--no-xpi)
+				opt_build_xpi="no"
+			;;
 			--tarball)
 				opt_tarball="yes"
+			;;
+			--no-tarball)
+				opt_tarball="no"
 			;;
 			--vc)
 				opt_vc="yes"
@@ -100,8 +106,8 @@ done
 # FIXME we don't check if we're using language_options.txt
 require git hg moz2po po2moz get_moz_enUS.py pomigrate2
 [ opt_compare_locales ] && require compare-locales
-[ opt_build_xpi ] && require buildxpi.py
-[ opt_tarball ] && require tar
+[ "opt_build_xpi" != "no" ] && require buildxpi.py
+[ "opt_tarball" != "no" ] && require tar
 
 
 # FIXME lets make this the execution directory
@@ -286,10 +292,12 @@ do
 	fi
 
 	## CREATE XPI LANGPACK
-	if [ "$opt_build_xpi" -o "$(should_build $lang xpi)" ]; then
-		mkdir -p ${LANGPACK_DIR}
-		verbose "Language Pack - create an XPI"
-		buildxpi.py -d -L ${L10N_DIR} -s ${MOZCENTRAL_DIR} -o ${LANGPACK_DIR} --soft-max-version ${mozlang}
+	if [ "$opt_build_xpi" != "no" ]; then
+		if [ "$opt_build_xpi" -o "$(should_build $lang xpi)" ]; then
+			mkdir -p ${LANGPACK_DIR}
+			verbose "Language Pack - create an XPI"
+			buildxpi.py -d -L ${L10N_DIR} -s ${MOZCENTRAL_DIR} -o ${LANGPACK_DIR} --soft-max-version ${mozlang}
+		fi
 	fi
 
 	# COMPARE LOCALES
@@ -303,17 +311,19 @@ do
 	fi
 
 	# Make a tarball
-	if [ "$opt_tarball" -o "$(should_build $lang tarball)" ]; then
-		log_info "Creating tarball of target format"
-		mkdir -p ${TARBALL_DIR}
-		# Name will be e.g.: af-21.0a2-20130213T1234-xxxxxxx.tar.bz2
-		# There is no mobile/config/version.txt so keep it pointing to browser
-		version=$(cat ${MOZCENTRAL_DIR}/browser/config/version.txt)
-		build_date=$(date +%Y%m%dT%H%M)
-		vc_hash=$(get_hash ${PO_DIR}/${polang})
-		tarball_name=${mozlang}-$version-$build_date-$vc_hash.tar.bz2
-		(cd ${L10N_DIR}
-		tar c${tar_verbosity}jf ${TARBALL_DIR}/$tarball_name ${mozlang_product_dirs})
+	if [ "$opt_tarball" != "no" ]; then
+		if [ "$opt_tarball" -o "$(should_build $lang tarball)" ]; then
+			log_info "Creating tarball of target format"
+			mkdir -p ${TARBALL_DIR}
+			# Name will be e.g.: af-21.0a2-20130213T1234-xxxxxxx.tar.bz2
+			# There is no mobile/config/version.txt so keep it pointing to browser
+			version=$(cat ${MOZCENTRAL_DIR}/browser/config/version.txt)
+			build_date=$(date +%Y%m%dT%H%M)
+			vc_hash=$(get_hash ${PO_DIR}/${polang})
+			tarball_name=${mozlang}-$version-$build_date-$vc_hash.tar.bz2
+			(cd ${L10N_DIR}
+			tar c${tar_verbosity}jf ${TARBALL_DIR}/$tarball_name ${mozlang_product_dirs})
+		fi
 	fi
 	)
 
