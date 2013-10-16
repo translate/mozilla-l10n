@@ -15,7 +15,7 @@ PRODUCT_DIRS="mobile"
 # Directories in language repositories to clear before running po2moz
 RETIRED_PRODUCT_DIRS="embedding"
 
-OTHER_EXCLUDED_DIRS="editor mail thunderbird chat browser dom security services sync toolkit"
+OTHER_EXCLUDED_DIRS="editor mail thunderbird chat browser dom netwerk security services sync toolkit webapprt"
 
 MOZ_PRODUCT=mobile
 
