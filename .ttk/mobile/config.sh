@@ -18,3 +18,5 @@ RETIRED_PRODUCT_DIRS="embedding"
 OTHER_EXCLUDED_DIRS="editor mail thunderbird chat browser dom security services sync toolkit"
 
 MOZ_PRODUCT=mobile
+
+MOZ_REPO=mozilla-aurora
