@@ -1,9 +1,12 @@
-#. extracted from en-US/mail/chrome/messenger/prefs.properties
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./mail/chrome/messenger/prefs.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-30 13:04+0200\n"
+"POT-Creation-Date: 2013-10-14 13:44+0100\n"
 "PO-Revision-Date: 2007-10-08 15:00+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,8 +14,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.4.1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #. # The following are used by the Account Wizard
 #. #
@@ -53,6 +57,41 @@ msgstr ""
 "Die bedienernaam-opstelling het verander. Kontroleer dat enige vouers wat "
 "deur filters gebruik word, op die bediener bestaan."
 
+#. # LOCALIZATION NOTE (junkSettingsBroken): %1$S is the account name
+#: junkSettingsBroken
+msgid ""
+"The Junk settings on account \"%1$S\" have a possible problem. Would you "
+"like to review them before saving Account Settings?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (localDirectoryChanged): %1$S is program name (&brandShortName;)
+#: localDirectoryChanged
+msgid ""
+"%1$S needs to restart now to apply the change to the Local directory setting."
+msgstr ""
+
+#: localDirectoryRestart
+msgid "Restart"
+msgstr ""
+
+#: userNameEmpty
+msgid "The user name can not be empty."
+msgstr ""
+
+#. # LOCALIZATION NOTE (localDirectoryInvalid): %1$S is path to folder
+#: localDirectoryInvalid
+msgid ""
+"The Local Directory path \"%1$S\" is invalid. Please pick a different "
+"directory."
+msgstr ""
+
+#. # LOCALIZATION NOTE (localDirectoryNotAllowed): %1$S is path to folder
+#: localDirectoryNotAllowed
+msgid ""
+"The Local Directory path \"%1$S\" is not suitable for message storage. "
+"Please choose another directory."
+msgstr ""
+
 #. # if the user chooses to cancel the wizard when no accounts are there throw a message
 #. # LOCALIZATION NOTE (cancelWizard)
 #. # do not localize "\n\n"
@@ -81,17 +120,14 @@ msgid "Cancel"
 msgstr "Kanselleer"
 
 #. # when the wizard already has a domain (Should we say something different?)
-#: enterValidHostname
-msgid "Please enter a valid hostname."
+#: enterValidServerName
+#, fuzzy
+msgid "Please enter a valid server name."
 msgstr "Tik 'n geldige gasheernaam in."
 
 #: failedRemoveAccount
 msgid "Failed to remove this account."
 msgstr "Kon nie hierdie rekening verwyder nie."
-
-#: failedDuplicateAccount
-msgid "Failed to duplicate this account."
-msgstr "Kon nie hierdie rekening dupliseer nie."
 
 #. #LOCALIZATION NOTE: confirmRemoveAccount: %S is the account pretty name
 #: confirmRemoveAccount
@@ -107,16 +143,20 @@ msgstr "Verwyder rekening"
 msgid "%1$S - %2$S"
 msgstr "%1$S - %2$S"
 
-#: confirmDeferAccount
+#. # LOCALIZATION NOTE: confirmDeferAccountWarning: do not localize "\n\n", it means a new empty line in the string.
+#: confirmDeferAccountWarning
+#, fuzzy
 msgid ""
 "If you store this account's new mail in a different account's Inbox, you "
 "will no longer be able to access already downloaded e-mail for this account. "
-"If you have mail in this account, please copy it to another account first. "
+"If you have mail in this account, please copy it to another account first.\n"
+"\n"
 "If you have filters that filter mail into this account, you should disable "
 "them or change the destination folder. If any accounts have special folders "
-"in this account (Sent, Drafts, Templates), you should change them to be in "
-"another account. Do you still want to store this account's e-mail in a "
-"different account?"
+"in this account (Sent, Drafts, Templates, Archives, Junk), you should change "
+"them to be in another account.\n"
+"\n"
+"Do you still want to store this account's e-mail in a different account?"
 msgstr ""
 "As u hierdie rekening se nuwe e-pos in 'n ander rekening se inkassie stoor, "
 "sal u nie meer toegang tot die e-pos wat reeds in hierdie rekening afgelaai "
@@ -131,12 +171,23 @@ msgstr ""
 msgid "Defer Account?"
 msgstr "Verwys rekening?"
 
-#: directoryUsedByOtherAccount
+#: directoryAlreadyUsedByOtherAccount
 msgid ""
-"This directory is already used by the %S account. Please pick a different "
-"directory."
+"The directory specified in the Local Directory setting is already used by "
+"the \"%S\" account. Please pick a different directory."
 msgstr ""
-"Hierdie gids word reeds gebruik deur die %S-rekening. Kies dus 'n ander gids."
+
+#: directoryParentUsedByOtherAccount
+msgid ""
+"A parent directory of the directory specified in the Local Directory setting "
+"is already used by the \"%S\" account. Please pick a different directory."
+msgstr ""
+
+#: directoryChildUsedByOtherAccount
+msgid ""
+"A subdirectory of the directory specified in the Local Directory setting is "
+"already used by the \"%S\" account. Please pick a different directory."
+msgstr ""
 
 #. #Provide default example values for sample email address
 #: exampleEmailUserName
@@ -213,9 +264,43 @@ msgstr "U moet 'n geldige e-posadres vir hierdie identiteit aandui."
 msgid "Error Creating Identity"
 msgstr "Kon nie identiteit skep nie"
 
+#. ## LOCALIZATION NOTE (identity-delete-confirm): %S is the identity name
+#. # and should be put on a new line. The new line is produced with the "\n" string.
+#: identity-delete-confirm
+#, fuzzy
+msgid ""
+"Are you sure you want to delete the identity\n"
+"%S?"
+msgstr ""
+"Is u seker u wil die bediener skrap: \n"
+" %S?"
+
+#. ## LOCALIZATION NOTE (identity-delete-confirm-title): %S is the account name
+#: identity-delete-confirm-title
+msgid "Deleting identity for %S"
+msgstr ""
+
+#: identity-delete-confirm-button
+msgid "Delete"
+msgstr "Skrap"
+
 #: choosefile
 msgid "Choose a file"
 msgstr "Kies 'n lêer"
+
+#: forAccount
+msgid "For account \"%S\""
+msgstr ""
+
+#~ msgid "Failed to duplicate this account."
+#~ msgstr "Kon nie hierdie rekening dupliseer nie."
+
+#~ msgid ""
+#~ "This directory is already used by the %S account. Please pick a different "
+#~ "directory."
+#~ msgstr ""
+#~ "Hierdie gids word reeds gebruik deur die %S-rekening. Kies dus 'n ander "
+#~ "gids."
 
 #~ msgid "Please enter a name for this account."
 #~ msgstr "Tik 'n naam vir hierdie rekening in."

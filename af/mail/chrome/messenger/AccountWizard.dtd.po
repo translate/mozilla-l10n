@@ -1,9 +1,9 @@
-#. extracted from en-US/mail/chrome/messenger/AccountWizard.dtd
+#. extracted from ./mail/chrome/messenger/AccountWizard.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-30 13:04+0200\n"
+"POT-Creation-Date: 2013-10-14 13:44+0100\n"
 "PO-Revision-Date: 2007-10-08 15:00+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,9 +11,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.4.1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
+#. This Source Code Form is subject to the terms of the Mozilla Public
+#. - License, v. 2.0. If a copy of the MPL was not distributed with this
+#. - file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #. Entities for AccountWizard
 #: windowTitle.label
 msgid "Account Wizard"
@@ -25,10 +29,9 @@ msgid "width: 40em; height: 38em;"
 msgstr "width: 40em; height: 38em;"
 
 #. Entities for Account Type page
-#: accountSetupInfo.label
-msgid ""
-"In order to receive messages, you first need to set up a Mail or Newsgroup "
-"account."
+#: accountSetupInfo2.label
+#, fuzzy
+msgid "In order to receive messages, you first need to set up an account."
 msgstr ""
 "Om boodskappe te kan ontvang, moet u eers 'n pos- of nuusgroeprekening "
 "opstel."
@@ -37,11 +40,12 @@ msgstr ""
 msgid "New Account Setup"
 msgstr "Stel nuwe rekening op"
 
-#: accountTypeDesc.label
+#: accountTypeDesc2.label
+#, fuzzy
 msgid ""
-"This Wizard will collect the information necessary to set up a Mail or "
-"Newsgroup account. If you do not know the information requested, please "
-"contact your System Administrator or Internet Service Provider."
+"This Wizard will collect the information necessary to set up an account. If "
+"you do not know the information requested, please contact your System "
+"Administrator or Internet Service Provider."
 msgstr ""
 "Hierdie programmetjie sal al die nodige inligting vir die opstel van 'n pos- "
 "of nuusgroeprekening versamel. Indien u onseker oor van die inligting is, "
@@ -74,9 +78,10 @@ msgstr ""
 
 #. do not translate two of "&quot;" in below line
 #: fullnameDesc.label
+#, fuzzy
 msgid ""
-"Enter the name you would like to appear in the &quot;From&quot; field of "
-"your outgoing messages"
+"Enter the name you would like to appear in the \"From\" field of your "
+"outgoing messages"
 msgstr ""
 "Tik die naam wat u wil hê in die &quot;Van&quot;-veld van u uitgaande "
 "boodskappe moet vertoon"
@@ -85,8 +90,8 @@ msgstr ""
 #. 1, do not translate two of "&quot;"
 #. 2, Use localized full name instead of "John Smith"
 #: fullnameExample.label
-msgid "(for example, &quot;John Smith&quot;)."
-msgstr "(byvoorbeeld, &quot;Jan van der Merwe&quot;)."
+msgid "(for example, \"John Smith\")."
+msgstr ""
 
 #: fullnameLabel.label fullnameLabel.accesskey
 msgid "&Your Name:"
@@ -96,53 +101,14 @@ msgstr "&U naam:"
 msgid "&Email Address:"
 msgstr "&E-posadres:"
 
-#. Entities for Server page
-#: serverTitle.label
-msgid "Server Information"
-msgstr "Bedienerinligting"
+#. Entities for Incoming Server page
+#: incomingTitle.label
+msgid "Incoming Server Information"
+msgstr ""
 
 #: incomingServerTypeDesc.label
 msgid "Select the type of incoming server you are using."
 msgstr "Selekteer die soort inkomende bediener wat u gebruik."
-
-#. Do not translate "&quot;pop.example.net&quot;" in below line
-#: incomingServerNameDesc.label
-msgid ""
-"Enter the name of your incoming server (for example, &quot;mail.example."
-"net&quot;)."
-msgstr ""
-"Tik die naam van u inkomende bediener in (byvoorbeeld, &quot;mail.voorbeeld."
-"net&quot;)."
-
-#: incomingServerLabel.label incomingServerLabel.accesskey
-msgid "Incoming &Server:"
-msgstr "Inkomende &bediener:"
-
-#. Do not translate "NNTP" or the "&quot;" entities in below line
-#: newsServerNameDesc.label
-msgid ""
-"Enter the name of your news server (NNTP) (for example, &quot;news.example."
-"net&quot;)."
-msgstr ""
-"Tik die naam van u nuusgroep-bediener (NNTP) in (byvoorbeeld, &quot;news."
-"voorbeeld.net&quot;)."
-
-#. Do not translate "SMTP" and "&quot;smtp.example.net&quot;" in below line
-#: smtpServerDesc.label
-msgid ""
-"Enter the name of your outgoing server (SMTP) (for example, &quot;smtp."
-"example.net&quot;)."
-msgstr ""
-"Tik die naam van u uitgaande bediener (SMTP) in (byvoorbeeld, &quot;smtp."
-"voorbeeld.net&quot;)."
-
-#: smtpServerLabel.label smtpServerLabel.accesskey
-msgid "&Outgoing Server:"
-msgstr "&Uitgaande bediener:"
-
-#: newsServerLabel.label newsServerLabel.accesskey
-msgid "Ne&wsgroup Server:"
-msgstr "&Nuusgroepbediener:"
 
 #. Do not translate "IMAP" in below line
 #: imapType.label imapType.accesskey
@@ -154,42 +120,85 @@ msgstr "&IMAP"
 msgid "&POP"
 msgstr "&POP"
 
-#. LOCALIZATION NOTE (haveSmtp1.prefix and haveSmtp1.suffix2) : Do not translate "SMTP" and "&quot;" in
-#. these variables. Also, translate haveSmtp1.prefix and haveSmtp1.suffix2 as a single sentence, inserting
-#. text after the "&quot;" entity in haveSmtp1.suffix2, if required grammatically.
-#: haveSmtp1.prefix
-msgid "Your existing outgoing server (SMTP), &quot;"
-msgstr "U bestaande uitgaande bediener (SMTP), &quot;"
+#: leaveMsgsOnSrvr.label leaveMsgsOnSrvr.accesskey
+#, fuzzy
+msgid "&Leave messages on server"
+msgstr "Laat boodsk&appe op bediener agter"
 
-#: haveSmtp1.suffix2
-msgctxt "haveSmtp1.suffix2"
+#: portNum.label portNum.accesskey
+msgid "P&ort:"
+msgstr "&Poort:"
+
+#: defaultPortLabel.label
+msgid "Default:"
+msgstr "Verstek:"
+
+#: defaultPortValue.label
+msgctxt "defaultPortValue.label"
 msgid ""
-"&quot;, will be used. You can change outgoing servers in the account "
-"settings."
 msgstr ""
-"&quot;, sal gebruik word. U kan die uitgaande bedieners in die "
-"rekeningopstelling wysig."
 
-#. Entities for Login page
-#: loginTitle.label
-msgid "User Names"
-msgstr "Gebruikername"
-
-#: usernameDesc.label
-msgid "Enter the incoming user name given to you by your email provider "
+#. LOCALIZATION NOTE (incomingServerNameDesc.label) : Do not translate "&quot;pop.example.net&quot;" in below line
+#: incomingServer.description
+#, fuzzy
+msgid ""
+"Enter the name of your incoming server (for example, \"mail.example.net\")."
 msgstr ""
-"Tik die inkomende gebruikernaam in wat u e-posverskaffer vir u gegee het "
+"Tik die naam van u inkomende bediener in (byvoorbeeld, &quot;mail.voorbeeld."
+"net&quot;)."
+
+#: incomingServer.label incomingServer.accesskey
+msgid "Incoming &Server:"
+msgstr "Inkomende &bediener:"
 
 #. do not translate "&quot;jsmith&quot;" in below line
-#: usernameExample.label
-msgid "(for example, &quot;jsmith&quot;)."
-msgstr "(byvoorbeeld, &quot;jvdm&quot;)."
+#: incomingUsername.description
+msgid ""
+"Enter the incoming user name given to you by your email provider (for "
+"example, \"jsmith\")."
+msgstr ""
 
-#: usernameLabel.label usernameLabel.accesskey
-msgid "&Incoming User Name:"
-msgstr "&Inkomende gebruikernaam:"
+#: incomingUsername.label incomingUsername.accesskey
+#, fuzzy
+msgid "&User Name:"
+msgstr "Gebruikername"
 
-#: usernameSmtpDesc.label
+#. Do not translate "NNTP" or the "&quot;" entities in below line
+#: newsServerNameDesc.label
+#, fuzzy
+msgid ""
+"Enter the name of your news server (NNTP) (for example, \"news.example.net"
+"\")."
+msgstr ""
+"Tik die naam van u nuusgroep-bediener (NNTP) in (byvoorbeeld, &quot;news."
+"voorbeeld.net&quot;)."
+
+#: newsServerLabel.label newsServerLabel.accesskey
+#, fuzzy
+msgid "Newsgroup &Server:"
+msgstr "&Nuusgroepbediener:"
+
+#. Entities for Outgoing Server page
+#: outgoingTitle.label
+msgid "Outgoing Server Information"
+msgstr ""
+
+#. Do not translate "SMTP" and "&quot;smtp.example.net&quot;" in below line
+#: outgoingServer.description
+#, fuzzy
+msgid ""
+"Enter the name of your outgoing server (SMTP) (for example, \"smtp.example."
+"net\")."
+msgstr ""
+"Tik die naam van u uitgaande bediener (SMTP) in (byvoorbeeld, &quot;smtp."
+"voorbeeld.net&quot;)."
+
+#: outgoingServer.label outgoingServer.accesskey
+#, fuzzy
+msgid "Outgoing &Server:"
+msgstr "&Uitgaande bediener:"
+
+#: outgoingUsername.description
 msgid ""
 "Enter the outgoing user name given to you by your email provider (this is "
 "typically the same as your incoming user name)."
@@ -197,42 +206,56 @@ msgstr ""
 "Tik die uitgaande gebruikernaam in wat u e-posbediener aan u gegee het (dit "
 "is gewoonlik dieselfde as u inkomende gebruikernaam)."
 
-#: usernameSmtpLabel.label usernameSmtpLabel.accesskey
-msgid "&Outgoing User Name:"
+#: outgoingUsername.label outgoingUsername.accesskey
+#, fuzzy
+msgid "Outgoing &User Name:"
 msgstr "&Uitgaande gebruikernaam:"
 
-#. LOCALIZATION NOTE (haveSmtp2.prefix and haveSmtp2.suffix2) : Do not translate "SMTP" and "&quot;" in
-#. these variables. Also, translate haveSmtp2.prefix and haveSmtp2.suffix2 as a single sentence, inserting
-#. text after the "&quot;" entity in haveSmtp2.suffix2, if required grammatically.
+#. This string will be appended after each of
+#. haveSmtp1.suffix3, haveSmtp2.suffix3, haveSmtp3.suffix3 .
+#: modifyOutgoing.suffix
+msgid "You can change outgoing servers in the account settings."
+msgstr ""
+
+#. LOCALIZATION NOTE (haveSmtp1.prefix and haveSmtp1.suffix3) : Do not translate "SMTP" and "&quot;" in
+#. these variables. Also, translate haveSmtp1.prefix and haveSmtp1.suffix3 as a single sentence, inserting
+#. text after the "&quot;" entity in haveSmtp1.suffix3, if required grammatically.
+#: haveSmtp1.prefix
+#, fuzzy
+msgid "Your existing outgoing server (SMTP), \""
+msgstr "U bestaande uitgaande bediener (SMTP), &quot;"
+
+#: haveSmtp1.suffix3
+msgctxt "haveSmtp1.suffix3"
+msgid "\", will be used."
+msgstr ""
+
+#. LOCALIZATION NOTE (haveSmtp2.prefix and haveSmtp2.suffix3) : Do not translate "SMTP" and "&quot;" in
+#. these variables. Also, translate haveSmtp2.prefix and haveSmtp2.suffix3 as a single sentence, inserting
+#. text after the "&quot;" entity in haveSmtp2.suffix3, if required grammatically.
 #: haveSmtp2.prefix
-msgid "Your existing outgoing (SMTP) username, &quot;"
+#, fuzzy
+msgid "Your existing outgoing (SMTP) username, \""
 msgstr "U bestaande uitgaande (SMTP) gebruikernaam, &quot;"
 
-#: haveSmtp2.suffix2
-msgctxt "haveSmtp2.suffix2"
-msgid ""
-"&quot;, will be used. You can change outgoing servers in the account "
-"settings."
+#: haveSmtp2.suffix3
+msgctxt "haveSmtp2.suffix3"
+msgid "\", will be used."
 msgstr ""
-"&quot;, sal gebruik word. U kan die uitgaande bedieners in die "
-"rekeningopstelling wysig."
 
-#. LOCALIZATION NOTE (haveSmtp3.prefix and haveSmtp3.suffix2) : Do not translate "SMTP" and "&quot;" in
-#. these variables. Also, translate haveSmtp3.prefix and haveSmtp3.suffix2 as a single sentence, inserting
-#. text after the "&quot;" entity in haveSmtp3.suffix2, if required grammatically.
+#. LOCALIZATION NOTE (haveSmtp3.prefix and haveSmtp3.suffix3) : Do not translate "SMTP" and "&quot;" in
+#. these variables. Also, translate haveSmtp3.prefix and haveSmtp3.suffix3 as a single sentence, inserting
+#. text after the "&quot;" entity in haveSmtp3.suffix3, if required grammatically.
 #: haveSmtp3.prefix
-msgid "Your outgoing (SMTP) server, &quot;"
+#, fuzzy
+msgid "Your outgoing (SMTP) server, \""
 msgstr "U uitgaande bediener (SMTP), &quot;"
 
-#: haveSmtp3.suffix2
+#: haveSmtp3.suffix3
 msgid ""
-"&quot;, is identical to your incoming server, your incoming user name will "
-"be used to access it. You can change outgoing servers in the account "
-"settings."
+"\", is identical to your incoming server, your incoming user name will be "
+"used to access it."
 msgstr ""
-"&quot;, is identies aan u inkomende bediener, en u inkomende gebruikernaam "
-"sal gebruik word om toegang daartoe te kry. U kan die uitgaande bedieners in "
-"die rekeningopstelling wysig."
 
 #. Entities for Account name page
 #: accnameTitle.label
@@ -241,10 +264,10 @@ msgstr "Rekeningnaam"
 
 #. do not translate any "&quot;" in below line
 #: accnameDesc.label
+#, fuzzy
 msgid ""
 "Enter the name by which you would like to refer to this account (for "
-"example, &quot;Work Account&quot;, &quot;Home Account&quot; or &quot;News "
-"Account&quot;)."
+"example, \"Work Account\", \"Home Account\" or \"News Account\")."
 msgstr ""
 "Tik die naam in om na hierdie rekening te verwys (byvoorbeeld, &quot;"
 "Werkspos&quot;, &quot;Huispos&quot; of &quot;Nuusgroepe&quot;)."
@@ -307,6 +330,47 @@ msgid "Click Done to save these settings and exit the Account Wizard."
 msgstr ""
 "Kliek Klaar om hierdie instellings te stoor en die rekeningslimmerd af te "
 "sluit."
+
+#~ msgid "(for example, &quot;John Smith&quot;)."
+#~ msgstr "(byvoorbeeld, &quot;Jan van der Merwe&quot;)."
+
+#~ msgid "Server Information"
+#~ msgstr "Bedienerinligting"
+
+#~ msgctxt "haveSmtp1.suffix2"
+#~ msgid ""
+#~ "&quot;, will be used. You can change outgoing servers in the account "
+#~ "settings."
+#~ msgstr ""
+#~ "&quot;, sal gebruik word. U kan die uitgaande bedieners in die "
+#~ "rekeningopstelling wysig."
+
+#~ msgid "Enter the incoming user name given to you by your email provider "
+#~ msgstr ""
+#~ "Tik die inkomende gebruikernaam in wat u e-posverskaffer vir u gegee het "
+
+#~ msgid "(for example, &quot;jsmith&quot;)."
+#~ msgstr "(byvoorbeeld, &quot;jvdm&quot;)."
+
+#~ msgid "&Incoming User Name:"
+#~ msgstr "&Inkomende gebruikernaam:"
+
+#~ msgctxt "haveSmtp2.suffix2"
+#~ msgid ""
+#~ "&quot;, will be used. You can change outgoing servers in the account "
+#~ "settings."
+#~ msgstr ""
+#~ "&quot;, sal gebruik word. U kan die uitgaande bedieners in die "
+#~ "rekeningopstelling wysig."
+
+#~ msgid ""
+#~ "&quot;, is identical to your incoming server, your incoming user name "
+#~ "will be used to access it. You can change outgoing servers in the account "
+#~ "settings."
+#~ msgstr ""
+#~ "&quot;, is identies aan u inkomende bediener, en u inkomende "
+#~ "gebruikernaam sal gebruik word om toegang daartoe te kry. U kan die "
+#~ "uitgaande bedieners in die rekeningopstelling wysig."
 
 #~ msgid ""
 #~ "Enter your email address; this is the address others will use to send "
