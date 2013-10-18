@@ -1,45 +1,13 @@
 # F Wolff <friedel@translate.org.za>, 2009, 2010.
-#. # ***** BEGIN LICENSE BLOCK *****
-#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
-#. #
-#. # The contents of this file are subject to the Mozilla Public License Version
-#. # 1.1 (the "License"); you may not use this file except in compliance with
-#. # the License. You may obtain a copy of the License at
-#. # http://www.mozilla.org/MPL/
-#. #
-#. # Software distributed under the License is distributed on an "AS IS" basis,
-#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
-#. # for the specific language governing rights and limitations under the
-#. # License.
-#. #
-#. # The Original Code is mozilla.org code.
-#. #
-#. # The Initial Developer of the Original Code is
-#. # Netscape Communications Corporation.
-#. # Portions created by the Initial Developer are Copyright (C) 1998
-#. # the Initial Developer. All Rights Reserved.
-#. #
-#. # Contributor(s):
-#. #
-#. # Alternatively, the contents of this file may be used under the terms of
-#. # either the GNU General Public License Version 2 or later (the "GPL"), or
-#. # the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
-#. # in which case the provisions of the GPL or the LGPL are applicable instead
-#. # of those above. If you wish to allow use of your version of this file only
-#. # under the terms of either the GPL or the LGPL, and not to allow others to
-#. # use your version of this file under the terms of the MPL, indicate your
-#. # decision by deleting the provisions above and replace them with the notice
-#. # and other provisions required by the GPL or the LGPL. If you do not delete
-#. # the provisions above, a recipient may use your version of this file under
-#. # the terms of any one of the MPL, the GPL or the LGPL.
-#. #
-#. # ***** END LICENSE BLOCK *****
-#. extracted from en-US/mail/chrome/messenger/localMsgs.properties
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./mail/chrome/messenger/localMsgs.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-12 17:06+0200\n"
+"POT-Creation-Date: 2013-10-14 13:44+0100\n"
 "PO-Revision-Date: 2010-05-17 23:08+0200\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: translate-discuss-af@lists.sourceforge.net\n"
@@ -48,12 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.6.0\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #. #
 #. # The following are used by the local mail code to display progress/status/error messages
 #. #
+#. # LOCALIZATION NOTE(pop3ErrorDialogTitle): Do not translate the word "%S"
+#. # below. Place the word %S where the account name should appear.
+#: pop3ErrorDialogTitle
+msgid "Error with account %S"
+msgstr ""
+
 #: pop3EnterPasswordPromptTitle
 msgid "Enter your password"
 msgstr "Tik u wagwoord"
@@ -72,9 +47,41 @@ msgstr "Tik u wagwoord vir %1$S op %2$S in:"
 msgid "Please enter a new password for user %1$S on %2$S:"
 msgstr "Tik 'n nuwe wagwoord vir gebruiker %1$S op %2$S:"
 
-#. ## @name MK_POP3_OUT_OF_DISK_SPACE
-#. ## @loc None
-#: -321
+#. # Status - Downloading message n of m to account
+#. #LOCALIZATION NOTE (receivingMsgs): Do not translate %1$S, %2$S, or %3$S in the following lines.
+#. # Place the word %1$S where the number of messages downloaded so far should appear.
+#. # Place the word %2$S where the total number of messages to receive should appear;
+#. # Place %3$S where the account name should appear.
+#: receivingMsgs
+#, fuzzy
+msgid "Downloading message %1$S of %2$S to %3$S"
+msgstr "Kopieer tans boodskap %1$S van %2$S na %3$S"
+
+#. # Status - connecting to host
+#. #LOCALIZATION NOTE : Do not translate %1$S in the following line.
+#. # Place %1$S where the account name should appear
+#: hostContacted
+#, fuzzy
+msgid "Connect: Host for %1$S contacted, sending login information…"
+msgstr "Koppel: Gasheer gekontak, stuur tans aanmeldinligting…"
+
+#. # Status - no messages to download 
+#. #LOCALIZATION NOTE : Do not translate %1$S in the following line.
+#. # Place %1$S where the account name should appear
+#: noMessages
+msgid "There are no new messages for %1$S."
+msgstr ""
+
+#. # Status - messages received after the download
+#. #LOCALIZATION NOTE : Do not translate %1$S, %2$S or %3$S in the following line.
+#. # %1$S will receive the number of messages received
+#. # %2$S will receive the total number of messages
+#. # Place %3$S where the account name should appear
+#: receivedMessages
+msgid "%3$S Received %1$S of %2$S messages"
+msgstr ""
+
+#: pop3OutOfDiskSpace
 msgid ""
 "There is not enough disk space to download new messages. Try deleting old "
 "mail, emptying the Trash folder, and compacting your mail folders, and then "
@@ -85,58 +92,37 @@ msgstr ""
 "weer."
 
 #. # Status - parsing folder
-#. ## @name LOCAL_STATUS_SELECTING_MAILBOX
-#. ## @loc None
-#. #LOCALIZATION NOTE (4000): Do not translate %s in the following line.
-#. # Place the word %s where the name of the mailbox should appear
-#: 4000
+#. #LOCALIZATION NOTE (buildingSummary): Do not translate %S in the following line.
+#. # Place the word %S where the name of the mailbox should appear
+#: buildingSummary
 msgid "Building summary file for %S…"
 msgstr "Bou tans opsomminglêer vir %S…"
 
 #. # Status - parsing folder
-#. ## @name LOCAL_STATUS_DOCUMENT_DONE
-#. ## @loc None
-#: 4001
+#: localStatusDocumentDone
 msgid "Done"
 msgstr "Klaar"
 
-#. # Status - receiving message n of m
-#. ## @name LOCAL_STATUS_RECEIVING_MESSAGE_OF
-#. ## @loc None
-#. #LOCALIZATION NOTE (4002): Do not translate %lu in the following line.
-#. # Place the word %lu where the number of messages should appear.
-#. # The first %lu will receive the number of messages received so far;
-#. # the second %lu will receive the total number of messages
-#: 4002
-msgid "Downloading message %S of %S"
-msgstr "Laai tans boodskap %S van %S af"
-
 #. # Status - pop3 server error
-#. ## @name POP3_SERVER_ERROR
-#. ## @loc None
-#. #LOCALIZATION NOTE (4003): Do not translate POP3 in the following line.
-#: 4003
+#. #LOCALIZATION NOTE (pop3ServerError): Do not translate POP3 in the following line.
+#: pop3ServerError
 msgid "An error occurred with the POP3 mail server."
 msgstr "Daar het fout gegaan met die POP3-posbediener."
 
 #. # Status - pop3 user name failed
-#. ## @name POP3_USERNAME_FAILURE
-#. ## @loc None
-#: 4004
+#: pop3UsernameFailure
 msgid "Sending of username did not succeed."
 msgstr "Kon nie gebruikernaam stuur nie."
 
 #. # Status - password failed
-#. ## @name POP3_PASSWORD_FAILURE
-#. ## @loc None
-#: 4005
-msgid "Sending of password did not succeed."
-msgstr "Kon nie wagwoord stuur nie."
+#. #LOCALIZATION NOTE (pop3PasswordFailed): Do not translate "%1$S" below.
+#. # Place the word %1$S where the user name should appear.
+#: pop3PasswordFailed
+msgid "Sending of password for user %1$S did not succeed."
+msgstr ""
 
 #. # Status - write error occurred
-#. ## @name POP3_MESSAGE_WRITE_ERROR
-#. ## @loc None
-#: 4006
+#: pop3MessageWriteError
 msgid ""
 "Unable to write the email to the mailbox. Make sure the file system allows "
 "you write privileges, and you have enough disk space to copy the mailbox."
@@ -144,50 +130,18 @@ msgstr ""
 "Kon nie die e-pos na die posbus skryf nie. Maak seker u het skryftoestemming "
 "op die lêerstelsel, en dat u genoeg skyfspasie het om die posbus te kopieer."
 
-#. # Status - connecting to host
-#. ## @name POP3_CONNECT_HOST_CONTACTED_SENDING_LOGIN_INFORMATION
-#. ## @loc None
-#: 4007
-msgid "Connect: Host contacted, sending login information…"
-msgstr "Koppel: Gasheer gekontak, stuur tans aanmeldinligting…"
-
-#. # Status - no messages to download
-#. ## @name POP3_NO_MESSAGES
-#. ## @loc None
-#: 4008
-msgid "There are no new messages on the server."
-msgstr "Daar is nie nuwe boodskappe op die bediener nie."
-
-#. # Status - messages received after the download
-#. ## @name POP3_DOWNLOAD_COUNT
-#. ## @loc None
-#. #LOCALIZATION NOTE (4009): Do not translate %ld in the following line.
-#. # Place the word %ld where the number of messages should appear.
-#. # The first %ld will receive the number of messages received so far;
-#. # the second %ld will receive the total number of messages
-#: 4009
-msgid "Received %ld of %ld messages"
-msgstr "Het %ld van %ld boodskappe ontvang"
-
 #. # Status - retr failure from the server
-#. ## @name POP3_RETR_FAILURE
-#. ## @loc None
-#. # LOCALIZATION NOTE(4012): Do not translate the word "POP3" below.
-#: 4012
+#: pop3RetrFailure
 msgid "The RETR command did not succeed. Error retrieving a message."
 msgstr "Die RETR-bevel het misluk. Kon nie 'n boodskap kry nie."
 
 #. # Status - password undefined
-#. ## @name POP3_PASSWORD_UNDEFINED
-#. ## @loc None
-#: 4013
+#: pop3PasswordUndefined
 msgid "Error getting mail password."
 msgstr "Kon nie poswagwoord kry nie."
 
 #. # Status - username undefined
-#. ## @name POP3_USERNAME_UNDEFINED
-#. ## @loc None
-#: 4014
+#: pop3UsernameUndefined
 msgid ""
 "You have not supplied a username for this server.  Please provide one in the "
 "account setup menu and try again."
@@ -196,71 +150,55 @@ msgstr ""
 "die rekeningopstellingkieslys en probeer weer."
 
 #. # Status - list failure
-#. ## @name POP3_LIST_FAILURE
-#. ## @loc None
-#. # LOCALIZATION NOTE(4015): Do not translate the word "POP3" below.
-#: 4015
+#: pop3ListFailure
 msgid ""
 "The LIST command did not succeed. Error getting the ID and size of a message."
 msgstr ""
 "Die LIST-bevel het misluk. Kon nie die ID en grootte van 'n boodskap kry nie."
 
 #. # Status - delete error
-#. ## @name POP3_DELE_FAILURE
-#. ## @loc None
-#. # LOCALIZATION NOTE(4016): Do not translate the word "POP3" below.
-#: 4016
+#: pop3DeleFailure
 msgid "The DELE command did not succeed. Error marking a message as deleted."
 msgstr "Die DELE-bevel het misluk. Kon nie 'n boodskap as geskrap merk nie."
 
 #. # Status - stat failed
-#. ## @name POP3_STAT
-#. ## @loc None
-#: 4024
+#: pop3StatFail
 msgid ""
 "The STAT command did not succeed. Error getting message number and sizes."
 msgstr ""
 "Die STAT-bevel het misluk. Kon nie die nommer en grootte van boodskappe kry "
 "nie."
 
-#. ## @name POP3_SERVER_SAID
-#. ## @loc None
-#: 4025
+#. #LOCALIZATION NOTE (pop3ServerSaid): Do not remove the leading space during translation.
+#: pop3ServerSaid
 msgid "Mail server %S responded: "
 msgstr "Posbediener %S se respons is: "
 
-#. ## @name COPYING_MSGS_STATUS
-#. ## @loc None
-#: 4027
+#: copyingMessagesStatus
 msgid "Copying %S of %S messages to %S"
 msgstr "Kopieer tans %S van %S boodskappe na %S"
 
-#. ## @name MOVING_MSGS_STATUS
-#. ## @loc None
-#: 4028
+#: movingMessagesStatus
 msgid "Moving %S of %S messages to %S"
 msgstr "Verskuif tans %S van %S boodskappe na %S"
 
 #. # Status - write error occurred
-#. ## @name POP3_MESSAGE_FOLDER_BUSY
-#. ## @loc None
-#: 4029
+#. # LOCALIZATION NOTE (pop3ServerBusy): Do not translate the word "%S" below.
+#. # Place %S where the account name should appear.
+#: pop3ServerBusy
+#, fuzzy
 msgid ""
-"This folder is being processed. Please wait until processing is complete to "
-"get messages."
+"The account %S is being processed. Please wait until processing is complete "
+"to get messages."
 msgstr ""
 "Hierdie vouer word tans verwerk. Wag asseblief totdat die verwerking "
 "afgehandel is voor u boodskappe kry."
 
-#. ## @name MOVEMAIL_CANT_OPEN_SPOOL_FILE
-#. ## @loc None
-#: 4033
+#: movemailCantOpenSpoolFile
 msgid "Unable to open mail spool file %S."
 msgstr "Kon nie die posspoollêer %S open nie."
 
-#. ## @name MOVEMAIL_CANT_CREATE_LOCK
-#. ## @loc None
-#: 4034
+#: movemailCantCreateLock
 msgid ""
 "Unable to create lock file %S. For movemail to work, it is necessary to "
 "create lock files in the mail spool directory. On many systems, this is best "
@@ -270,27 +208,24 @@ msgstr ""
 "posspoolgids geskep word. Op baie stelsels kan dit vermag word deur die "
 "spoolgids se modus na 01777 te verander."
 
-#. ## @name MOVEMAIL_CANT_DELETE_LOCK
-#. ## @loc None
-#: 4035
+#: movemailCantDeleteLock
 msgid "Unable to delete lock file %S."
 msgstr "Kon nie lêerslot %S skrap nie."
 
-#. ## @name MOVEMAIL_CANT_TRUNCATE_SPOOL_FILE
-#. ## @loc None
-#: 4036
+#: movemailCantTruncateSpoolFile
 msgid "Unable to truncate spool file %S."
 msgstr "Kon nie die spoollêer %S afknot nie."
 
-#. ## @name MOVEMAIL_SPOOL_FILE_NOT_FOUND
-#. ## @loc None
-#: 4037
+#: movemailSpoolFileNotFound
 msgid "Unable to locate mail spool file."
 msgstr "Kon nie die posspoollêer vind nie."
 
-#. ## @name POP3_TMP_DOWNLOAD_FAILED
-#. ## @loc None
-#: 4038
+#. #LOCALIZATION NOTE (movemailCantParseSpool): %S is file name
+#: movemailCantParseSpool
+msgid "Unable to parse spool file %S. The file may be corrupt or not valid."
+msgstr ""
+
+#: pop3TmpDownloadError
 msgid ""
 "There was an error downloading the following message:   \n"
 "From: %S\n"
@@ -305,13 +240,11 @@ msgstr ""
 "Slaan hierdie boodskap oor?"
 
 #. # Status - the server doesn't support UIDL…
-#. ## @name POP3_SERVER_DOES_NOT_SUPPORT_UIDL_ETC
-#. ## @loc None
-#. # LOCALIZATION NOTE(4010): The following sentence should be translated in this way:
+#. # LOCALIZATION NOTE(pop3ServerDoesNotSupportUidlEtc): The following sentence should be translated in this way:
 #. # Do not translate "POP3"
 #. # Do not translate "%S". Place %S in your translation where the name of the server should appear.
 #. # Do not translate "UIDL"
-#: 4040
+#: pop3ServerDoesNotSupportUidlEtc
 msgid ""
 "The POP3 mail server (%S) does not support UIDL or XTND XLST, which are "
 "required to implement the ``Leave on Server'', ``Maximum Message Size'' or "
@@ -326,13 +259,11 @@ msgstr ""
 "venster."
 
 #. # Status - the server doesn't support the top command
-#. ## @name POP3_SERVER_DOES_NOT_SUPPORT_THE_TOP_COMMAND
-#. ## @loc None
-#. # LOCALIZATION NOTE(4011): The following sentence should be translated in this way:
+#. # LOCALIZATION NOTE(pop3ServerDoesNotSupportTopCommand): The following sentence should be translated in this way:
 #. # Do not translate "POP3"
 #. # Do not translate "%S". Place %S in your translation where the name of the server should appear.
 #. # Do not translate "TOP"
-#: 4041
+#: pop3ServerDoesNotSupportTopCommand
 msgid ""
 "The POP3 mail server (%S) does not support the TOP command. Without server "
 "support for this, we cannot implement the ``Maximum Message Size'' or "
@@ -344,9 +275,7 @@ msgstr ""
 "kopskrifte''-voorkeure nie geïmplementeer word nie.  Hierdie opsie is "
 "gedeaktiveer, en boodskappe sal afgelaai word ongeag die grootte."
 
-#. ## @name NS_ERROR_COULD_NOT_CONNECT_VIA_TLS
-#. ## @loc None
-#: 4043
+#: nsErrorCouldNotConnectViaTls
 msgid ""
 "Unable to establish TLS connection to POP3 server. The server may be down or "
 "may be incorrectly configured. Please verify the correct configuration in "
@@ -358,29 +287,21 @@ msgstr ""
 "opstelling in u posbediener se Bedieneropstelling in die Rekeningopstelling-"
 "venster het, en probeer weer."
 
-#. ## @name POP3_MOVE_FOLDER_TO_TRASH
-#. ## @loc None
-#. # LOCALIZATION NOTE (4044): Do not translate the word %S below.
+#. # LOCALIZATION NOTE (pop3MoveFolderToTrash): Do not translate the word %S below.
 #. # "%S" is the the name of the folder.
-#: 4044
+#: pop3MoveFolderToTrash
 msgid "Are you sure you want to delete the folder '%S'?"
 msgstr "Is u seker u wil die vouer '%S' skrap?"
 
-#. ## @name POP3_DELETE_FOLDER_DIALOG_TITLE
-#. ## @loc None
-#: 4045
+#: pop3DeleteFolderDialogTitle
 msgid "Delete Folder"
 msgstr "Skrap vouer"
 
-#. ## @name POP3_DELETE_FOLDER_BUTTON_LABEL
-#. ## @loc None
-#: 4046
+#: pop3DeleteFolderButtonLabel
 msgid "&Delete Folder"
 msgstr "&Skrap vouer"
 
-#. ## @name POP3_AUTH_INTERNAL_ERROR
-#. ## @loc None
-#: 4047
+#: pop3AuthInternalError
 msgid ""
 "Internal state error during POP3 server authentication. This is an internal, "
 "unexpected error in the application, please report it as bug."
@@ -388,9 +309,7 @@ msgstr ""
 "Fout met die interne toestand tydens POP3-bedienermagtiging. Hierdie is 'n "
 "interne, onverwagse fout in die program. Rapporteer dit asb. as 'n fout."
 
-#. ## @name POP3_AUTH_CHANGE_ENCRYPT_TO_PLAIN_NO_SSL
-#. ## @loc None
-#: 4048
+#: pop3AuthChangeEncryptToPlainNoSSL
 msgid ""
 "This POP3 server does not seem to support encrypted passwords. If you just "
 "set up the account, please try changing to 'Password, transmitted "
@@ -404,9 +323,7 @@ msgstr ""
 "Bedieneropstelling'. As dit voorheen gewerk het en nou skielik misluk, is "
 "dit algemeen 'n geval hoe iemand u wagwoord kan steel."
 
-#. ## @name POP3_AUTH_CHANGE_ENCRYPT_TO_PLAIN_SSL
-#. ## @loc None
-#: 4049
+#: pop3AuthChangeEncryptToPlainSSL
 msgid ""
 "This POP3 server does not seem to support encrypted passwords. If you just "
 "set up this account, please try changing to 'Normal password' as the "
@@ -420,9 +337,7 @@ msgstr ""
 "Bedieneropstelling'. As dit voorheen gewerk het en nou skielik misluk, "
 "kontak u e-posadministrateur of -diensverskaffer."
 
-#. ## @name POP3_AUTH_CHANGE_PLAIN_TO_ENCRYPT
-#. ## @loc None
-#: 4050
+#: pop3AuthChangePlainToEncrypt
 msgid ""
 "This POP3 server does not allow plaintext passwords. Please try changing to "
 "'Encrypted password' as the 'Authentication method' in the 'Account Settings "
@@ -433,9 +348,7 @@ msgstr ""
 "Bedieneropstelling'."
 
 #. # Authentication server caps and pref don't match
-#. ## @name POP3_AUTH_MECH_NOT_SUPPORTED
-#. ## @loc None
-#: 4051
+#: pop3AuthMechNotSupported
 msgid ""
 "The server does not support the selected authentication method. Please "
 "change the 'Authentication method' in the 'Account Settings | Server "
@@ -445,15 +358,25 @@ msgstr ""
 "'Magtigingsmetode' by 'Rekeningopstelling | Bedieneropstelling'."
 
 #. # Status - Could not log in to GSSAPI, and it was the only method
-#. ## @name POP3_GSSAPI_FAILURE
-#. ## @loc None
-#: 4052
+#: pop3GssapiFailure
 msgid ""
 "The Kerberos/GSSAPI ticket was not accepted by the POP server. Please check "
 "that you are logged in to the Kerberos/GSSAPI realm."
 msgstr ""
 "Die Kerberos/GSSAPI-kaartjie is nie aanvaar deur die IMAP-bediener %S nie. "
 "Kontroleer dat u aangemeld is by die Kerberos/GSSAPI-gebied."
+
+#~ msgid "Downloading message %S of %S"
+#~ msgstr "Laai tans boodskap %S van %S af"
+
+#~ msgid "Sending of password did not succeed."
+#~ msgstr "Kon nie wagwoord stuur nie."
+
+#~ msgid "There are no new messages on the server."
+#~ msgstr "Daar is nie nuwe boodskappe op die bediener nie."
+
+#~ msgid "Received %ld of %ld messages"
+#~ msgstr "Het %ld van %ld boodskappe ontvang"
 
 #~ msgid "Mail server does not support secure authentication."
 #~ msgstr "Posbediener werk nie met beveiligde magtiging nie."

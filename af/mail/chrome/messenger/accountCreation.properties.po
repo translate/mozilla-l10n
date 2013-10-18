@@ -1,12 +1,15 @@
 # # accountCreation.properties
 # extracted from en-US/mail/chrome/messenger/accountCreation.properties
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #. # accountCreation.properties
-#. extracted from en-US/mail/chrome/messenger/accountCreation.properties
+#. extracted from ./mail/chrome/messenger/accountCreation.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-12 17:06+0200\n"
+"POT-Creation-Date: 2013-10-14 13:44+0100\n"
 "PO-Revision-Date: 2009-11-24 12:42+0200\n"
 "Last-Translator: Administrator <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +18,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.6.1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #. # LOCALIZATION NOTE(cleartext_warning): %1$S will be the hostname of the server the user was trying to connect to.
 #: cleartext_warning
@@ -54,6 +58,13 @@ msgstr ""
 msgid "(default)"
 msgstr "(verstek)"
 
+#. # LOCALIZATION NOTE(port_auto): It must be short (4-5 characters max.).
+#. # Content of server port field (usually a number), used when the user didn't
+#. # enter anything yet and we'll automatically detect it later.
+#: port_auto
+msgid "Auto"
+msgstr ""
+
 #. # config titles
 #. # LOCALIZATION NOTE(looking_up_settings_disk): Referring to Thunderbird installation folder on user's harddisk. %1$S will be the brandShortName.
 #: looking_up_settings_disk
@@ -64,7 +75,7 @@ msgstr "Kyk tans opstelling op:  %1$S-installasie"
 msgid "Looking up configuration: Email provider"
 msgstr "Kyk tans opstelling op: E-posverskaffer"
 
-#. # LOCALIZATION NOTE(looking_up_settings_db): Do not translate or replace Mozilla. It stands for the public project mozilla.org, not Mozilla Messaging. The database is a generic, public domain facility usable by any client.
+#. # LOCALIZATION NOTE(looking_up_settings_db): Do not translate or replace Mozilla. It stands for the public project mozilla.org, not Mozilla Corporation. The database is a generic, public domain facility usable by any client.
 #: looking_up_settings_db
 msgid "Looking up configuration: Mozilla ISP database"
 msgstr ""
@@ -75,27 +86,32 @@ msgstr ""
 msgid "Looking up configuration: Trying common server names"
 msgstr "Kyk tans konfigurasie op: Probeer tans algemene bedienername"
 
+#: looking_up_settings_halfmanual
+msgid "Looking up configuration: Probing server"
+msgstr ""
+
 #. # LOCALIZATION NOTE(found_settings_disk): Referring to Thunderbird installation folder on user's harddisk. %1$S will be the brandShortName.
 #: found_settings_disk
-msgid "The following settings were found on: %1$S installation"
-msgstr "Die volgende instellings is gevind: %1$S-installasie"
+msgid "Configuration found on %1$S installation"
+msgstr ""
 
 #: found_settings_isp
-msgid "The following settings were found from: Email provider"
-msgstr "Die volgende instellings is gevind vanaf: die e-posverskaffer"
-
-#. # LOCALIZATION NOTE(found_settings_db): Do not translate or replace Mozilla. It stands for the public project mozilla.org, not Mozilla Messaging. The database is a generic, public domain facility usable by any client.
-#: found_settings_db
-msgid "The following settings were found from: Mozilla ISP database"
+msgid "Configuration found at email provider"
 msgstr ""
-"Die volgende instellings is verkry vanaf: Mozilla se databasis van "
-"internetdiensverskaffers"
+
+#. # LOCALIZATION NOTE(found_settings_db): Do not translate or replace Mozilla. It stands for the public project mozilla.org, not Mozilla Corporation. The database is a generic, public domain facility usable by any client.
+#: found_settings_db
+msgid "Configuration found in Mozilla ISP database"
+msgstr ""
 
 #. # LOCALIZATION NOTE(found_settings_guess): We tried common mail server names and we found a mail server and talked to it and it responded properly, so we think we found a suitable configuration, but we are only about 80% certain that it is the correct setting for this email address. There's a chance that email address may not actually be served by this server and it won't work, or that there is a better server.
 #: found_settings_guess
-msgid "The following settings were found by trying common server names"
+msgid "Configuration found by trying common server names"
 msgstr ""
-"Die volgende instellings is verkry deur algemene bedienername te probeer"
+
+#: found_settings_halfmanual
+msgid "The following settings were found by probing the given server"
+msgstr ""
 
 #. # LOCALIZATION NOTE(failed_to_find_settings): %1$S will be the brandShortName.
 #: failed_to_find_settings
@@ -105,6 +121,13 @@ msgstr "%1$S kon nie die instellings vir u e-posrekening vind nie."
 #: manually_edit_config
 msgid "Editing Config"
 msgstr "Opstelling redigeer"
+
+#. # LOCALIZATION NOTE(guessed_settings_offline) User is offline, so we just took a wild guess and the user will have to enter the right settings.
+#: guessed_settings_offline
+msgid ""
+"You are offline. We guessed some settings but you will need to enter the "
+"right settings."
+msgstr ""
 
 #. # config subtitles
 #: check_preconfig
@@ -218,26 +241,117 @@ msgstr "Kon nie rekening skep nie"
 msgid "Incoming server already exists."
 msgstr "Inkomende bediener bestaan reeds."
 
-#. # LOCALIZATION NOTE(no_encryption): Neither SSL/TLS nor STARTTLS. Transmission of emails in cleartext over the Internet.
-#: no_encryption
-msgid "No encryption"
-msgstr "Geen enkripsie nie"
-
-#: ssl_tls
-msgid "SSL/TLS"
-msgstr "SSL/TLS"
-
-#: starttls
-msgid "STARTTLS"
-msgstr "STARTTLS"
-
 #: please_enter_name
 msgid "Please enter your name."
 msgstr "Tik u naam in."
 
 #: double_check_email
-msgid "Double check this email address!"
+#, fuzzy
+msgid "Double-check this email address!"
 msgstr "Kontroleer weer hierdie e-posadres!"
+
+#. #config result display
+#. # LOCALIZATION NOTE(resultUnknown): Displayed instead of resultIncoming,
+#. # resultOutgoing or resultUsername when we don't have a proper value.
+#: resultUnknown
+msgid "Unknown"
+msgstr "Onbekend"
+
+#. # LOCALIZATION NOTE(resultIncoming):
+#. # %1$S will be replaced with either resultIMAP, resultPOP3 or resultSMTP.
+#. # %2$S will be replaced with the server hostname
+#. #   with possibly a port appended as ":"+port.
+#. #   The domain part may be made bold.
+#. # %3$S will be replaced with either resultNoEncryption or resultSSL or
+#. #    resultSTARTTLS.
+#. # %4$S will be replaced with either resultSSLCertWeak or resultSSLCertOK
+#. #    (which should normally be empty)
+#. # You may adjust the strings to be a real sentence.
+#: resultIncoming
+#, fuzzy
+msgctxt "resultIncoming"
+msgid "%1$S, %2$S, %3$S%4$S"
+msgstr ""
+"%1$S %2$S: %3$S\n"
+"\n"
+" %4$S"
+
+#. # LOCALIZATION NOTE(resultOutgoing): see resultIncoming
+#: resultOutgoing
+#, fuzzy
+msgctxt "resultOutgoing"
+msgid "%1$S, %2$S, %3$S%4$S"
+msgstr ""
+"%1$S %2$S: %3$S\n"
+"\n"
+" %4$S"
+
+#: resultOutgoingExisting
+msgid "Use existing outgoing SMTP server"
+msgstr ""
+
+#: resultIMAP
+msgid "IMAP"
+msgstr "IMAP"
+
+#: resultPOP3
+#, fuzzy
+msgid "POP3"
+msgstr "POP"
+
+#: resultSMTP
+msgid "SMTP"
+msgstr "SMTP"
+
+#. # LOCALIZATION NOTE(resultNoEncryption): Neither SSL/TLS nor STARTTLS. Transmission of emails in cleartext over the Internet.
+#: resultNoEncryption
+#, fuzzy
+msgid "No Encryption"
+msgstr "Geen enkripsie nie"
+
+#: resultSSL
+msgid "SSL"
+msgstr "SSL"
+
+#: resultSTARTTLS
+msgid "STARTTLS"
+msgstr "STARTTLS"
+
+#. # LOCALIZATION NOTE(resultSSLCertWeak): \u0020 is just a space
+#: resultSSLCertWeak
+msgid " (Warning: Could not verify server)"
+msgstr ""
+
+#: resultSSLCertOK
+msgctxt "resultSSLCertOK"
+msgid ""
+msgstr ""
+
+#: resultUsernameBoth
+msgid "%1$S"
+msgstr ""
+
+#: resultUsernameDifferent
+msgid "Incoming: %1$S, Outgoing: %2$S"
+msgstr ""
+
+#~ msgid "The following settings were found on: %1$S installation"
+#~ msgstr "Die volgende instellings is gevind: %1$S-installasie"
+
+#~ msgid "The following settings were found from: Email provider"
+#~ msgstr "Die volgende instellings is gevind vanaf: die e-posverskaffer"
+
+#~ msgid "The following settings were found from: Mozilla ISP database"
+#~ msgstr ""
+#~ "Die volgende instellings is verkry vanaf: Mozilla se databasis van "
+#~ "internetdiensverskaffers"
+
+#~ msgid "The following settings were found by trying common server names"
+#~ msgstr ""
+#~ "Die volgende instellings is verkry deur algemene bedienername te probeer"
+
+#~ msgid "SSL/TLS"
+#~ msgstr "SSL/TLS"
 
 #~ msgid "%1$S is looking up the settings for your email account."
 #~ msgstr "%1$S kyk die instellings vir u e-posrekening op."

@@ -1,9 +1,12 @@
-#. extracted from en-US/mail/chrome/messenger/filter.properties
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./mail/chrome/messenger/filter.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-30 13:04+0200\n"
+"POT-Creation-Date: 2013-10-14 13:44+0100\n"
 "PO-Revision-Date: 2007-10-08 15:00+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,8 +14,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.4.1\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: mustSelectFolder
 msgid "You must select a target folder."
@@ -41,6 +45,17 @@ msgid ""
 msgstr ""
 "Die filternaam wat u ingetik het, bestaan reeds. Kies asseblief 'n ander "
 "filternaam."
+
+#: mustHaveFilterTypeTitle
+msgid "No filter event selected"
+msgstr ""
+
+#: mustHaveFilterTypeMessage
+msgid ""
+"You must select at least one event when this filter is applied. If you "
+"temporarily do not wish the filter to run at any event, uncheck its enabled "
+"state from the Message Filters dialog."
+msgstr ""
 
 #: deleteFilterConfirmation
 msgid "Are you sure you want to delete the selected filter(s)?"
@@ -138,13 +153,50 @@ msgstr "Moenie my weer vra nie"
 msgid "Search Terms Invalid"
 msgstr "Soekwoorde ongeldig"
 
-#: searchTermsInvalidMessage
+#. # LOCALIZATION NOTE(searchTermsInvalidRule)
+#. # %1$S=search attribute name from the invalid rule
+#. # %2$S=search operator from the bad rule
+#: searchTermsInvalidRule
+#, fuzzy
 msgid ""
-"This filter cannot be saved because some search terms are invalid in the "
-"current context."
+"This filter cannot be saved because the search term \"%1$S %2$S\" is invalid "
+"in the current context."
 msgstr ""
 "Hierdie filter kan nie gestoor word nie omdat van die soekwoorde ongeldig in "
 "hierdie konteks is."
+
+#. # LOCALIZATION NOTE(filterActionOrderExplanation)
+#. # Keep the \n\n that mean 2 linebreaks.
+#: filterActionOrderExplanation
+msgid ""
+"When a message matches this filter the actions will be run in this order:\n"
+"\n"
+msgstr ""
+
+#: filterActionOrderTitle
+msgid "Real action order"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(filterActionItem):
+#. # %1$S=sequence number of the action, %2$S=action text, %3$S=action argument
+#: filterActionItem
+#, fuzzy
+msgid "%1$S. %2$S %3$S\n"
+msgstr "%1$S %2$S: %3$S"
+
+#. ## LOCALIZATION NOTE(filterCountVisibleOfTotal):
+#. # %1$S=number of matching filters, %2$S=total number of filters
+#: filterCountVisibleOfTotal
+#, fuzzy
+msgid "%1$S of %2$S"
+msgstr "%1$S op %2$S"
+
+#. ## LOCALIZATION NOTE(filterCountItems): Semi-colon list of plural forms.
+#. ## See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. ## #1 is the count of items in the list.# filterCountItems is a pluralForm - see
+#: filterCountItems
+msgid "#1 item; #1 items"
+msgstr ""
 
 #. # for junk mail logging / mail filter logging
 #. # LOCALIZATION NOTE(junkLogDetectStr)
@@ -244,6 +296,11 @@ msgstr "gemerk"
 #: filterAction18
 msgid "ignored subthread"
 msgstr "geïgnoreerde subdraad"
+
+#: filterAction19
+#, fuzzy
+msgid "marked as unread"
+msgstr "gemerk as gelees"
 
 #. # LOCALIZATION NOTE(filterAutoNameStr)
 #. # %1$S=Header or item to match, e.g. "From", "Tag", "Age in days", etc.

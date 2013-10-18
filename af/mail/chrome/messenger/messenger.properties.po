@@ -1,47 +1,13 @@
 # F Wolff <friedel@translate.org.za>, 2009, 2010.
-#. # ***** BEGIN LICENSE BLOCK *****
-#. # Version: MPL 1.1/GPL 2.0/LGPL 2.1
-#. #
-#. # The contents of this file are subject to the Mozilla Public License Version
-#. # 1.1 (the "License"); you may not use this file except in compliance with
-#. # the License. You may obtain a copy of the License at
-#. # http://www.mozilla.org/MPL/
-#. #
-#. # Software distributed under the License is distributed on an "AS IS" basis,
-#. # WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
-#. # for the specific language governing rights and limitations under the
-#. # License.
-#. #
-#. # The Original Code is mozilla.org code.
-#. #
-#. # The Initial Developer of the Original Code is
-#. # Netscape Communications Corporation.
-#. # Portions created by the Initial Developer are Copyright (C) 1998
-#. # the Initial Developer. All Rights Reserved.
-#. #
-#. # Contributor(s):
-#. #   Seth Spitzer <sspitzer@netscape.com>
-#. #   Lorenzo Colitti <lorenzo@colitti.com>
-#. #
-#. # Alternatively, the contents of this file may be used under the terms of
-#. # either of the GNU General Public License Version 2 or later (the "GPL"),
-#. # or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
-#. # in which case the provisions of the GPL or the LGPL are applicable instead
-#. # of those above. If you wish to allow use of your version of this file only
-#. # under the terms of either the GPL or the LGPL, and not to allow others to
-#. # use your version of this file under the terms of the MPL, indicate your
-#. # decision by deleting the provisions above and replace them with the notice
-#. # and other provisions required by the GPL or the LGPL. If you do not delete
-#. # the provisions above, a recipient may use your version of this file under
-#. # the terms of any one of the MPL, the GPL or the LGPL.
-#. #
-#. # ***** END LICENSE BLOCK *****
-#. extracted from en-US/mail/chrome/messenger/messenger.properties
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./mail/chrome/messenger/messenger.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-05-12 17:06+0200\n"
+"POT-Creation-Date: 2013-10-14 13:44+0100\n"
 "PO-Revision-Date: 2010-05-17 22:41+0200\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: translate-discuss-af@lists.sourceforge.net\n"
@@ -50,8 +16,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.6.0\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #. # The following are used by the messenger application
 #. #
@@ -91,9 +58,11 @@ msgstr "Vouereienskappe"
 msgid "New Tag…"
 msgstr "Nuwe merker…"
 
-#: getNextNMessages
-msgid "Get Next %S News Messages"
-msgstr "Kry volgende %S nuusboodskappe"
+#. # LOCALIZATION NOTE (getNextNewsMessages): Semi-colon list of plural forms.
+#. # #1 is the number of news messages to get.
+#: getNextNewsMessages
+msgid "Get Next #1 News Message;Get Next #1 News Messages"
+msgstr ""
 
 #: advanceNextPrompt
 msgid "Advance to next unread message in %S?"
@@ -206,6 +175,11 @@ msgstr ""
 msgid "%S already exists. Do you want to replace it?"
 msgstr "%S bestaan reeds. Wil u dit vervang?"
 
+#. # LOCALIZATION NOTE(failedToReadFile): %1$S is replaced by the file name, %2$S is replaced by the reason the file load failed.
+#: failedToReadFile
+msgid "Failed to read file: %1$S reason: %2$S"
+msgstr ""
+
 #: downloadingNewsgroups
 msgid "Downloading Newsgroups for Offline Use"
 msgstr "Laai nuusgroepe af vir aflyngebruik"
@@ -254,7 +228,8 @@ msgid "Always ask me before compacting folders automatically"
 msgstr "Vra my altyd voor vouers outomaties gekompakteer word"
 
 #: compactNowButton
-msgid "Compact &Now"
+#, fuzzy
+msgid "Co&mpact Now"
 msgstr "Kompakteer &nou"
 
 #: confirmFolderDeletionForFilter
@@ -358,8 +333,9 @@ msgstr ""
 "kies Aflyn, en ontmerk 'Werk aflyn', en probeer weer."
 
 #: operationFailedFolderBusy
+#, fuzzy
 msgid ""
-"The operation failed because an other operation is using the folder. Please "
+"The operation failed because another operation is using the folder. Please "
 "wait for that operation to finish and then try again."
 msgstr ""
 "Die operasie het misluk omdat 'n ander operasie die vouer gebruik. Wag tot "
@@ -500,6 +476,10 @@ msgstr "Geënkripteerde wagwoord"
 msgid "Kerberos / GSSAPI"
 msgstr "Kerberos / GSSAPI"
 
+#: authExternal
+msgid "TLS Certificate"
+msgstr ""
+
 #: authNTLM
 msgid "NTLM"
 msgstr "NTLM"
@@ -549,7 +529,7 @@ msgstr "Reëls"
 
 #. # status feedback stuff
 #: documentDone
-msgctxt "documentDonedocumentDone"
+msgctxt "documentDone"
 msgid ""
 msgstr ""
 
@@ -615,16 +595,6 @@ msgstr "Gemors"
 msgid "Archives"
 msgstr "Argief"
 
-#. # Error message for special folder deletion on imap accounts
-#. # LOCALIZATION NOTE (specialFolderDeletionErr): Do not translate "IMAP" in the line below
-#: specialFolderDeletionErr
-msgid "Deletion of special folder %S is not allowed for IMAP accounts."
-msgstr "Kan nie spesiale vouer %S vir IMAP-rekeninge skrap nie."
-
-#: specialFolderDeletionErrTitle
-msgid "Special Folder Deletion"
-msgstr "Skrap van spesiale vouer"
-
 #. # "Normal" priority is often blank,
 #. # depending on the consumers of these strings
 #: priorityLowest
@@ -665,8 +635,8 @@ msgid "Two Weeks Ago"
 msgstr "Twee weke gelede"
 
 #: older
-msgid "Old Mail"
-msgstr "Ou pos"
+msgid "Older"
+msgstr ""
 
 #. #Grouped By Tags
 #: untaggedMessages
@@ -900,6 +870,10 @@ msgstr "Pos"
 msgid "News"
 msgstr "Nuus"
 
+#: feedsAcctType
+msgid "Feeds"
+msgstr ""
+
 #. # LOCALIZATION NOTE(nocachedbodytitle): Do not translate "<TITLE>" or "</TITLE>" in the line below
 #: nocachedbodytitle
 msgid "<TITLE>Go Online to View This Message</TITLE>\n"
@@ -918,12 +892,19 @@ msgstr "Is u seker dat u van %S wil afteken?"
 msgid "Are you sure you want to unsubscribe from these newsgroups?"
 msgstr "Is u seker dat u van hierdie nuusgroep wil afteken?"
 
+#: restoreAllTabs
+#, fuzzy
+msgid "Restore All Tabs"
+msgstr "Verwyder alle merkers"
+
 #. # msgHdrViewOverlay.js
 #: openLabel
 msgid "Open"
 msgstr "Open"
 
 #: openLabelAccesskey
+#, fuzzy
+msgctxt "openLabelAccesskey"
 msgid "O"
 msgstr "O"
 
@@ -946,6 +927,8 @@ msgid "D"
 msgstr "D"
 
 #: deleteLabel
+#, fuzzy
+msgctxt "deleteLabel"
 msgid "Delete"
 msgstr "Skrap"
 
@@ -989,6 +972,34 @@ msgstr ""
 "Vra gerus die persoon wat dit gestuur het.\n"
 "Maatskappye se brandmure of viruswering vernietig soms aanhegsels."
 
+#. # LOCALIZATION NOTE (attachmentCount): Semi-colon list of plural forms.
+#. # See: http://developer.mozilla.org/en/Localization_and_Plurals
+#. # #1 number of attachments
+#: attachmentCount
+msgid "#1 attachment;#1 attachments"
+msgstr ""
+
+#. # LOCALIZATION NOTE (attachmentCountSingle): This is the format for the
+#. # attachment header when a message has only one attachment. This is separate
+#. # from attachmentCount above, since attachmentCountSingle typically ends with a
+#. # colon.
+#: attachmentCountSingle
+msgid "1 attachment:"
+msgstr ""
+
+#. # LOCALIZATION NOTE (attachmentSizeUnknown): The string to show for the total
+#. # size of all attachments when none of the attachments' sizes can be detected.
+#: attachmentSizeUnknown
+msgid "size unknown"
+msgstr ""
+
+#. # LOCALIZATION NOTE (attachmentSizeAtLeast): The string to show for the total
+#. # size of all attachments when at least one (but not all) of the attachments'
+#. # sizes can't be detected. %1$S is the formatted size.
+#: attachmentSizeAtLeast
+msgid "at least %1$S"
+msgstr ""
+
 #. # This is the format for prepending accesskeys to the
 #. # each of the attachments in the file|attachments menu:
 #. #   ie: 1 file.txt
@@ -996,6 +1007,12 @@ msgstr ""
 #: attachmentDisplayNameFormat
 msgid "%S %S"
 msgstr "%S %S"
+
+#. # This is the heading for the attachment summary when printing an email
+#: attachmentsPrintHeader
+#, fuzzy
+msgid "Attachments:"
+msgstr "Aanhegsels"
 
 #. # Connection Error Messages
 #: 101
@@ -1031,14 +1048,22 @@ msgstr "het %1$S nuwe boodskap"
 msgid "has %1$S new messages"
 msgstr "het %1$S nuwe boodskappe"
 
-#. # LOCALIZATION NOTE(biffNotification): %1$S is the name of the account %2$S is the number of new messages
-#: newBiffNotification_message
-msgid "%1$S has %2$S new message"
-msgstr "%1$S het %2$S nuwe boodskap"
+#. # LOCALIZATION NOTE(newMailNotification_message): %1$S is the name of the account %2$S is the number of new messages
+#: newMailNotification_message
+msgid "%1$S received %2$S new message"
+msgstr ""
 
-#: newBiffNotification_messages
-msgid "%1$S has %2$S new messages"
-msgstr "%1$S het %2$S nuwe boodskappe"
+#. # LOCALIZATION NOTE(newMailNotification_messages): %1$S is the name of the account %2$S is the number of new messages
+#: newMailNotification_messages
+msgid "%1$S received %2$S new messages"
+msgstr ""
+
+#. # LOCALIZATION NOTE(newMailNotification_messagetitle): %1$S is subject of new message and %2$S is sender of new message.
+#. # This is UNIX only
+#: newMailNotification_messagetitle
+#, fuzzy
+msgid "%1$S from %2$S"
+msgstr "%1$S op %2$S"
 
 #. # LOCALIZATION NOTE(macBiffNotification is Mac only):
 #. #  %1$S is the number of new messages
@@ -1113,15 +1138,36 @@ msgstr "Tik u wagwoord vir %1$S op %2$S in:"
 msgid "Mail Server Password Required"
 msgstr "Posbedienerwagwoord verlang"
 
-#. # for checking if the user really wants to open lots of messages
+#. # for checking if the user really wants to open lots of messages in separate windows.
 #: openWindowWarningTitle
 msgctxt "openWindowWarningTitle"
 msgid "Confirm"
 msgstr "Bevestig"
 
-#: openWindowWarningText
-msgid "Opening %S messages may be slow.  Continue?"
-msgstr "Open van %S kan stadig wees.  Gaan voort?"
+#. # LOCALIZATION NOTE (openWindowWarningConfirmation): Semi-colon list of plural forms.
+#. # #1 is the number of messages the user is attempting to open.
+#: openWindowWarningConfirmation
+msgctxt "openWindowWarningConfirmation"
+msgid ""
+"Opening #1 message may be slow. Continue?;Opening #1 messages may be slow. "
+"Continue?"
+msgstr ""
+
+#. # for checking if the user really wants to open lots of messages in tabs.
+#: openTabWarningTitle
+#, fuzzy
+msgctxt "openTabWarningTitle"
+msgid "Confirm"
+msgstr "Bevestig"
+
+#. # LOCALIZATION NOTE (openTabWarningConfirmation): Semi-colon list of plural forms.
+#. # #1 is the number of messages the user is attempting to open.
+#: openTabWarningConfirmation
+msgctxt "openTabWarningConfirmation"
+msgid ""
+"Opening #1 message may be slow. Continue?;Opening #1 messages may be slow. "
+"Continue?"
+msgstr ""
 
 #. # for warning the user that a tag they're trying to create already exists
 #: tagExists
@@ -1146,15 +1192,23 @@ msgid ""
 msgstr ""
 "U moet ten minste een vouer kies om te soek vir die gestoorde soektogvouer."
 
-#. # These two are displayed in the message and folder pane windows
-#. # LOCALIZATION NOTE(????ByteAbbreviation): Do not translate %d below, it is the size of the message/folder
-#: kiloByteAbbreviation
-msgid "%dKB"
-msgstr "%d KG"
+#. # These are displayed in the message and folder pane windows
+#. # LOCALIZATION NOTE %.*f is the abbreviated size in the appropriate units
+#: byteAbbreviation2
+msgid "%.*f bytes"
+msgstr ""
 
-#: megaByteAbbreviation
-msgid "%dMB"
-msgstr "%d MG"
+#: kiloByteAbbreviation2
+msgid "%.*f KB"
+msgstr ""
+
+#: megaByteAbbreviation2
+msgid "%.*f MB"
+msgstr ""
+
+#: gigaByteAbbreviation2
+msgid "%.*f GB"
+msgstr ""
 
 #. # Error message if message for a message id wasn't found
 #: errorOpenMessageForMessageIdTitle
@@ -1195,6 +1249,8 @@ msgid "Check for Updates…"
 msgstr "Kontroleer vir bywerkings…"
 
 #: updatesItem_default.accesskey
+#, fuzzy
+msgctxt "updatesItem_default.accesskey"
 msgid "C"
 msgstr "K"
 
@@ -1212,6 +1268,8 @@ msgid "D"
 msgstr "D"
 
 #: updatesItem_resume
+#, fuzzy
+msgctxt "updatesItem_resume"
 msgid "Resume Downloading %S…"
 msgstr "Hervat aflaai van %S…"
 
@@ -1294,13 +1352,19 @@ msgstr "w"
 
 #. #LOCALIZATION NOTE %1$S is the e-mail address of the person we will allow remote content for
 #: alwaysLoadRemoteContentForSender2
-msgid "Always load remote content from %1$S "
+#, fuzzy
+msgid "Always load remote content from %1$S"
 msgstr "Laai altyd afgeleë inhoud van %1$S "
 
-#. # Strings for growl notifications on Mac OS X
-#: growlNotification
-msgid "New Mail"
-msgstr "Nuwe pos"
+#. #LOCALIZATION NOTE(mdnBarMessageNormal) %1$S is the name of the sender
+#: mdnBarMessageNormal
+msgid "%1$S has asked to be notified when you read this message."
+msgstr ""
+
+#. #LOCALIZATION NOTE(mdnBarMessageAddressDiffers) %1$S is the name of the sender, %2$S is the address(es) to send return receipt to
+#: mdnBarMessageAddressDiffers
+msgid "%1$S has asked to be notified (on %2$S) when you read this message."
+msgstr ""
 
 #. # mailCommands.js
 #: emptyJunkTitle
@@ -1372,48 +1436,67 @@ msgstr "Die lêer %S is leeg."
 #. # currently hidden while displaying a header such as "to", "cc", or "bcc"
 #. # in the message header box.  English has two identical forms here, so it will
 #. # construct strings that look like (for example) "1 more" or "20 more".
-#. # <http://developer.mozilla.org/en/docs/Localization_and_Plurals> has details
+#. # <http://developer.mozilla.org/en/Localization_and_Plurals> has details
 #. # on this mechanism.
 #: headerMoreAddrs
 msgid "#1 more;#1 more"
 msgstr "#1 meer;#1 meer"
 
-#. # LOCALIZATION NOTE (headertoFieldYou): second person prepositional object
+#. # LOCALIZATION NOTE (headerMoreAddrsTooltip): semicolon separated list of
+#. # plural forms of the phrase ", and #1 more" as used in the tooltip text
+#. # of the more widget displayed in the header pane (see headerMoreAddrs).
+#. # English has two identical forms here, so it will construct strings that
+#. # look like (for example) ", and 1 more" or ", and 20 more".
+#. # <http://developer.mozilla.org/en/Localization_and_Plurals> has details
+#. # on this mechanism.
+#: headerMoreAddrsTooltip
+msgid ", and #1 more;, and #1 more"
+msgstr ""
+
+#. # LOCALIZATION NOTE (headertoFieldMe): first person prepositional object
 #. # pronoun used in the "to" header of the message header pane.  This is also
 #. # used for the fallback case if a header-specific localization is not
 #. # available.
-#: headertoFieldYou
-msgctxt "headertoFieldYou"
-msgid "You"
-msgstr "U"
+#: headertoFieldMe
+msgctxt "headertoFieldMe"
+msgid "Me"
+msgstr ""
 
-#. # LOCALIZATION NOTE (headerfromFieldYou): second person prepositional object
+#. # LOCALIZATION NOTE (headerfromFieldMe): first person prepositional object
 #. # pronoun used in the "from" header of the message header pane.
-#: headerfromFieldYou
-msgctxt "headerfromFieldYou"
-msgid "You"
-msgstr "U"
+#: headerfromFieldMe
+msgctxt "headerfromFieldMe"
+msgid "Me"
+msgstr ""
 
-#. # LOCALIZATION NOTE (headerreply-toFieldYou): second person prepositional
+#. # LOCALIZATION NOTE (headerreply-toFieldMe): first person prepositional
 #. # object pronoun used in the "reply-to" header of the message header pane.
-#: headerreply-toFieldYou
-msgctxt "headerreply-toFieldYou"
-msgid "You"
-msgstr "U"
+#: headerreply-toFieldMe
+msgctxt "headerreply-toFieldMe"
+msgid "Me"
+msgstr ""
 
-#. # LOCALIZATION NOTE (headerccFieldYou): second person prepositional object
+#. # LOCALIZATION NOTE (headerccFieldMe): first person prepositional object
 #. # pronoun used in the "cc" header of the message header pane.
-#: headerccFieldYou
-msgctxt "headerccFieldYou"
-msgid "You"
-msgstr "U"
+#: headerccFieldMe
+msgctxt "headerccFieldMe"
+msgid "Me"
+msgstr ""
 
-#. # LOCALIZATION NOTE (headerbccFieldYou): second person prepositional object
+#. # LOCALIZATION NOTE (headerbccFieldMe): first person prepositional object
 #. # pronoun used in the "bcc" header of the message header pane.
-#: headerbccFieldYou
-msgctxt "headerbccFieldYou"
-msgid "You"
-msgstr "U"
+#: headerbccFieldMe
+msgctxt "headerbccFieldMe"
+msgid "Me"
+msgstr ""
+
+#: expandAttachmentPaneTooltip
+msgid "Show the attachment pane"
+msgstr ""
+
+#: collapseAttachmentPaneTooltip
+msgid "Hide the attachment pane"
+msgstr ""
 
 #. # Shown when content tabs are being loaded.
 #: loadingTab
@@ -1464,21 +1547,124 @@ msgstr "Aktiveer"
 msgid "n"
 msgstr "k"
 
-#: applyToCollapsedMsgsTitle
-msgid "Confirm Delete of Messages in Collapsed Thread(s)"
-msgstr "Bevestig boodskappe skrap in ingevoude draad(e)"
+#. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
+#. # Semi-colon list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 first add-on's name, #2 number of add-ons, #3 application name
+#: addonsInstalled
+msgid ""
+"#1 has been installed successfully.;#2 add-ons have been installed "
+"successfully."
+msgstr ""
 
-#: applyToCollapsedMsgs
-msgid "Warning - this will delete messages in collapsed thread(s)"
-msgstr "Let wel - dit sal boodskappe in ingevoude draad(e) skrap"
+#: addonsInstalledNeedsRestart
+msgid ""
+"#1 will be installed after you restart #3.;#2 add-ons will be installed "
+"after you restart #3."
+msgstr ""
 
-#: applyToCollapsedAlwaysAskCheckbox
-msgid "Always ask me before deleting messages in collapsed threads"
-msgstr "Vra altyd voor boodskappe in ingevoude drade skrap"
+#: addonInstallRestartButton
+msgid "Restart Now"
+msgstr ""
 
-#: applyNowButton
-msgid "Apply"
-msgstr "Toepas"
+#: addonInstallRestartButton.accesskey
+msgctxt "addonInstallRestartButton.accesskey"
+msgid "R"
+msgstr ""
+
+#: addonInstallManage
+msgid "Open Add-ons Manager"
+msgstr ""
+
+#: addonInstallManage.accesskey
+msgctxt "addonInstallManage.accesskey"
+msgid "O"
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#. # #1 is the add-on name, #2 is the host name, #3 is the application name
+#. # #4 is the application version
+#: addonError-1
+msgid ""
+"The add-on could not be downloaded because of a connection failure on #2."
+msgstr ""
+
+#: addonError-2
+msgid ""
+"The add-on from #2 could not be installed because it does not match the add-"
+"on #3 expected."
+msgstr ""
+
+#: addonError-3
+msgid ""
+"The add-on downloaded from #2 could not be installed because it appears to "
+"be corrupt."
+msgstr ""
+
+#: addonError-4
+msgctxt "addonError-4"
+msgid "#1 could not be installed because #3 cannot modify the needed file."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#. # #1 is the add-on name, #3 is the application name, #4 is the application version
+#: addonLocalError-1
+msgid "This add-on could not be installed because of a filesystem error."
+msgstr ""
+
+#: addonLocalError-2
+msgid ""
+"This add-on could not be installed because it does not match the add-on #3 "
+"expected."
+msgstr ""
+
+#: addonLocalError-3
+msgid "This add-on could not be installed because it appears to be corrupt."
+msgstr ""
+
+#: addonLocalError-4
+msgctxt "addonLocalError-4"
+msgid "#1 could not be installed because #3 cannot modify the needed file."
+msgstr ""
+
+#: addonErrorIncompatible
+msgid "#1 could not be installed because it is not compatible with #3 #4."
+msgstr ""
+
+#: addonErrorBlocklisted
+msgid ""
+"#1 could not be installed because it has a high risk of causing stability or "
+"security problems."
+msgstr ""
+
+#: confirmMsgDelete.title
+#, fuzzy
+msgid "Confirm Deletion"
+msgstr "Bevestig skrap"
+
+#: confirmMsgDelete.collapsed.desc
+msgid ""
+"This will delete messages in collapsed threads. Are you sure you want to "
+"continue?"
+msgstr ""
+
+#: confirmMsgDelete.deleteNoTrash.desc
+msgid ""
+"This will delete messages immediately, without saving a copy to Trash. Are "
+"you sure you want to continue?"
+msgstr ""
+
+#: confirmMsgDelete.dontAsk.label
+#, fuzzy
+msgctxt "confirmMsgDelete.dontAsk.label"
+msgid "Don't ask me again."
+msgstr "Moenie my weer vra nie."
+
+#: confirmMsgDelete.delete.label
+#, fuzzy
+msgctxt "confirmMsgDelete.delete.label"
+msgid "Delete"
+msgstr "Skrap"
 
 #: mailServerLoginFailedTitle
 msgid "Login Failed"
@@ -1577,6 +1763,8 @@ msgid "Undo"
 msgstr "Ontdoen"
 
 #: lwthemePostInstallNotification.undoButton.accesskey
+#, fuzzy
+msgctxt "lwthemePostInstallNotification.undoButton.accesskey"
 msgid "U"
 msgstr "O"
 
@@ -1587,6 +1775,333 @@ msgstr "Bestuur temas…"
 #: lwthemePostInstallNotification.manageButton.accesskey
 msgid "M"
 msgstr "B"
+
+#. # safeModeRestart
+#: safeModeRestartPromptTitle
+msgid "Restart with Add-ons Disabled"
+msgstr ""
+
+#: safeModeRestartPromptMessage
+msgid "Are you sure you want to disable all add-ons and restart?"
+msgstr ""
+
+#: safeModeRestartButton
+msgid "Restart"
+msgstr ""
+
+#. # Check for Updates in the About Dialog - button labels and accesskeys
+#. # LOCALIZATION NOTE - all of the following update buttons labels will only be
+#. # displayed one at a time. So, if a button is displayed nothing else will
+#. # be displayed alongside of the button. The button when displayed is located
+#. # directly under the Thunderbird version in the about dialog (see bug 596813 for
+#. # screenshots).
+#: update.checkInsideButton.label
+#, fuzzy
+msgid "Check for Updates"
+msgstr "Kontroleer vir bywerkings…"
+
+#: update.checkInsideButton.accesskey
+msgctxt "update.checkInsideButton.accesskey"
+msgid "C"
+msgstr ""
+
+#: update.resumeButton.label
+#, fuzzy
+msgctxt "update.resumeButton.label"
+msgid "Resume Downloading %S…"
+msgstr "Hervat aflaai van %S…"
+
+#: update.resumeButton.accesskey
+msgctxt "update.resumeButton.accesskey"
+msgid "D"
+msgstr ""
+
+#: update.openUpdateUI.applyButton.label
+msgid "Apply Update…"
+msgstr ""
+
+#: update.openUpdateUI.applyButton.accesskey
+msgctxt "update.openUpdateUI.applyButton.accesskey"
+msgid "A"
+msgstr ""
+
+#: update.restart.updateButton.label
+msgid "Restart to Update"
+msgstr ""
+
+#: update.restart.updateButton.accesskey
+msgctxt "update.restart.updateButton.accesskey"
+msgid "R"
+msgstr ""
+
+#: update.restart.restartButton.label
+msgid "Update & Restart"
+msgstr ""
+
+#: update.restart.restartButton.accesskey
+msgctxt "update.restart.restartButton.accesskey"
+msgid "R"
+msgstr ""
+
+#: update.openUpdateUI.upgradeButton.label
+msgid "Upgrade Now…"
+msgstr ""
+
+#: update.openUpdateUI.upgradeButton.accesskey
+msgctxt "update.openUpdateUI.upgradeButton.accesskey"
+msgid "U"
+msgstr ""
+
+#: update.restart.upgradeButton.label
+msgid "Upgrade Now"
+msgstr ""
+
+#: update.restart.upgradeButton.accesskey
+msgctxt "update.restart.upgradeButton.accesskey"
+msgid "U"
+msgstr ""
+
+#: websearch.setDefault
+msgid "Set this search engine as the default"
+msgstr ""
+
+#: websearch.isDefault
+msgid "This search engine is currently the default"
+msgstr ""
+
+#. # missing plugin installer
+#: missingpluginsMessage.title
+msgid "Additional plugins are required to display all the media on this page."
+msgstr ""
+
+#: missingpluginsMessage.button.label
+msgid "Install Missing Plugins…"
+msgstr ""
+
+#: missingpluginsMessage.button.accesskey
+msgid "I"
+msgstr ""
+
+#: outdatedpluginsMessage.title
+msgid "Some plugins used by this page are out of date."
+msgstr ""
+
+#: outdatedpluginsMessage.updateButton.label
+msgctxt "outdatedpluginsMessage.updateButton.label"
+msgid "Update Plugins…"
+msgstr ""
+
+#: outdatedpluginsMessage.updateButton.accesskey
+msgctxt "outdatedpluginsMessage.updateButton.accesskey"
+msgid "U"
+msgstr ""
+
+#: blockedpluginsMessage.title
+msgid ""
+"Some plugins required by this page have been blocked for your protection."
+msgstr ""
+
+#: blockedpluginsMessage.infoButton.label
+msgid "Details…"
+msgstr ""
+
+#: blockedpluginsMessage.infoButton.accesskey
+msgctxt "blockedpluginsMessage.infoButton.accesskey"
+msgid "D"
+msgstr ""
+
+#: blockedpluginsMessage.searchButton.label
+msgctxt "blockedpluginsMessage.searchButton.label"
+msgid "Update Plugins…"
+msgstr ""
+
+#: blockedpluginsMessage.searchButton.accesskey
+msgctxt "blockedpluginsMessage.searchButton.accesskey"
+msgid "U"
+msgstr ""
+
+#: crashedpluginsMessage.title
+msgid "The %S plugin has crashed."
+msgstr ""
+
+#: crashedpluginsMessage.reloadButton.label
+msgid "Reload page"
+msgstr ""
+
+#: crashedpluginsMessage.reloadButton.accesskey
+msgctxt "crashedpluginsMessage.reloadButton.accesskey"
+msgid "R"
+msgstr ""
+
+#: crashedpluginsMessage.submitButton.label
+msgid "Submit a crash report"
+msgstr ""
+
+#: crashedpluginsMessage.submitButton.accesskey
+msgid "S"
+msgstr ""
+
+#: crashedpluginsMessage.learnMore
+msgctxt "crashedpluginsMessage.learnMore"
+msgid "Learn More…"
+msgstr ""
+
+#: carbonFailurePluginsMessage.message
+msgid "This page asks to use a plugin that can only run in 32-bit mode"
+msgstr ""
+
+#: carbonFailurePluginsMessage.restartButton.label
+msgid "Restart in 32-bit mode"
+msgstr ""
+
+#: carbonFailurePluginsMessage.restartButton.accesskey
+msgctxt "carbonFailurePluginsMessage.restartButton.accesskey"
+msgid "R"
+msgstr ""
+
+#. # Sanitize
+#. # LOCALIZATION NOTE (sanitizeDialog2.everything.title): When "Time range to
+#. # clear" is set to "Everything", the Clear Recent History dialog's title is
+#. # changed to this.  See UI mockup and comment 11 at bug 480169 -->
+#: sanitizeDialog2.everything.title
+msgid "Clear All History"
+msgstr ""
+
+#: sanitizeButtonOK
+#, fuzzy
+msgid "Clear Now"
+msgstr "&Maak nou skoon"
+
+#. # LOCALIZATION NOTE (sanitizeEverythingWarning2): Warning that appears when
+#. # "Time range to clear" is set to "Everything" in Clear Recent History dialog,
+#. # provided that the user has not modified the default set of history items to clear.
+#: sanitizeEverythingWarning2
+msgid "All history will be cleared."
+msgstr ""
+
+#. # LOCALIZATION NOTE (sanitizeSelectedWarning): Warning that appears when
+#. # "Time range to clear" is set to "Everything" in Clear Recent History dialog,
+#. # provided that the user has modified the default set of history items to clear.
+#: sanitizeSelectedWarning
+msgid "All selected items will be cleared."
+msgstr ""
+
+#: learnMoreAboutIgnoreThread
+msgctxt "learnMoreAboutIgnoreThread"
+msgid "Learn More…"
+msgstr ""
+
+#: learnMoreAboutIgnoreThreadAccessKey
+msgid "L"
+msgstr ""
+
+#: undoIgnoreThread
+#, fuzzy
+msgid "Undo Ignore Thread"
+msgstr "Ignoreer subdraad"
+
+#: undoIgnoreThreadAccessKey
+msgctxt "undoIgnoreThreadAccessKey"
+msgid "U"
+msgstr ""
+
+#: undoIgnoreSubthread
+#, fuzzy
+msgid "Undo Ignore Subthread"
+msgstr "Ignoreer subdraad"
+
+#: undoIgnoreSubthreadAccessKey
+msgctxt "undoIgnoreSubthreadAccessKey"
+msgid "U"
+msgstr ""
+
+#. # LOCALIZATION NOTE (ignoredThreadFeedback): #1 is the message thread title
+#: ignoredThreadFeedback
+msgid "Replies to the thread \"#1\" will not be shown."
+msgstr ""
+
+#. # LOCALIZATION NOTE (ignoredSubthreadFeedback): #1 is the message subthread title
+#: ignoredSubthreadFeedback
+msgid "Replies to the subthread \"#1\" will not be shown."
+msgstr ""
+
+#. # LOCALIZATION NOTE (ignoredThreadsFeedback): Semi-colon list of plural forms.
+#. # #1 is the number of threads
+#: ignoredThreadsFeedback
+msgid ""
+"Replies to the thread that was selected will not be shown.;Replies to the #1 "
+"threads that were selected will not be shown."
+msgstr ""
+
+#. # LOCALIZATION NOTE (ignoredSubthreadsFeedback): Semi-colon list of plural forms.
+#. # #1 is number of subthreads
+#: ignoredSubthreadsFeedback
+msgid ""
+"Replies to the subthread that was selected will not be shown.;Replies to the "
+"#1 subthreads that were selected will not be shown."
+msgstr ""
+
+#~ msgid "Get Next %S News Messages"
+#~ msgstr "Kry volgende %S nuusboodskappe"
+
+#~ msgid "Deletion of special folder %S is not allowed for IMAP accounts."
+#~ msgstr "Kan nie spesiale vouer %S vir IMAP-rekeninge skrap nie."
+
+#~ msgid "Special Folder Deletion"
+#~ msgstr "Skrap van spesiale vouer"
+
+#~ msgid "Old Mail"
+#~ msgstr "Ou pos"
+
+#~ msgid "%1$S has %2$S new message"
+#~ msgstr "%1$S het %2$S nuwe boodskap"
+
+#~ msgid "%1$S has %2$S new messages"
+#~ msgstr "%1$S het %2$S nuwe boodskappe"
+
+#~ msgid "Opening %S messages may be slow.  Continue?"
+#~ msgstr "Open van %S kan stadig wees.  Gaan voort?"
+
+#~ msgid "%dKB"
+#~ msgstr "%d KG"
+
+#~ msgid "%dMB"
+#~ msgstr "%d MG"
+
+#~ msgid "New Mail"
+#~ msgstr "Nuwe pos"
+
+#~ msgctxt "headertoFieldYou"
+#~ msgid "You"
+#~ msgstr "U"
+
+#~ msgctxt "headerfromFieldYou"
+#~ msgid "You"
+#~ msgstr "U"
+
+#~ msgctxt "headerreply-toFieldYou"
+#~ msgid "You"
+#~ msgstr "U"
+
+#~ msgctxt "headerccFieldYou"
+#~ msgid "You"
+#~ msgstr "U"
+
+#~ msgctxt "headerbccFieldYou"
+#~ msgid "You"
+#~ msgstr "U"
+
+#~ msgid "Confirm Delete of Messages in Collapsed Thread(s)"
+#~ msgstr "Bevestig boodskappe skrap in ingevoude draad(e)"
+
+#~ msgid "Warning - this will delete messages in collapsed thread(s)"
+#~ msgstr "Let wel - dit sal boodskappe in ingevoude draad(e) skrap"
+
+#~ msgid "Always ask me before deleting messages in collapsed threads"
+#~ msgstr "Vra altyd voor boodskappe in ingevoude drade skrap"
+
+#~ msgid "Apply"
+#~ msgstr "Toepas"
 
 #~ msgctxt "folderPaneHeader_smart"
 #~ msgid "Smart Folders"
