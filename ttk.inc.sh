@@ -136,6 +136,7 @@ sync_stores() {
 	log_info "Syncing files to Pootle's filesystem"
 	_create_option_langs $(get_language_pootle $*)
 	option_project="--project=$project"
+	#sync_command="$precommand python $manage_command sync_stores --verbosity=$manage_py_verbosity --overwrite $option_project $option_langs"
 	sync_command="$precommand python $manage_command sync_stores --verbosity=$manage_py_verbosity $option_project $option_langs"
 	
 	ssh $user@$server $sync_command || exit
