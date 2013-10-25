@@ -288,9 +288,10 @@ do
 			(cd ${L10N_DIR}/${mozlang}
 			hg revert $hgverbosity --no-backup \
 				browser/chrome/browser-region/region.properties \
+				browser/metro/chrome/region.properties \
 				browser/searchplugins/list.txt \
 				mobile/chrome/region.properties \
-				browser/metro/chrome/region.properties
+				mail/chrome/messenger-region/region.properties.po
 			)
 		fi
 	fi
