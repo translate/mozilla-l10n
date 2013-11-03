@@ -1,0 +1,8 @@
+#!/bin/bash
+
+source ttk.inc.sh
+
+if [ $# -ne 0 ]; then
+	langs=$(which_langs $*)
+fi
+update_against_templates $langs
