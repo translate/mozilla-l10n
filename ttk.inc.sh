@@ -142,6 +142,17 @@ sync_stores() {
 	ssh $user@$server $sync_command || exit
 	
 }
+
+update_against_templates() {
+	log_info "Updating languages against templates"
+	_create_option_langs $(get_language_pootle $*)
+	option_project="--project=$project"
+	update_command="$precommand python $manage_command update_against_templates --verbosity=$manage_py_verbosity $option_project $option_langs"
+	
+	ssh $user@$server $update_command || exit
+	
+}
+
 rsync_files_get() {
 	log_info "rsync copying files on Pootle to local filesystem"
 	create_bashlangs $(get_language_pootle $*)
