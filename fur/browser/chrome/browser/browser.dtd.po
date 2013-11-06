@@ -1,17 +1,18 @@
-#. extracted from en-US/browser/chrome/browser/browser.dtd
+#. extracted from ./browser/chrome/browser/browser.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-11 10:29+0200\n"
+"POT-Creation-Date: 2013-10-29 11:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #. This will be appended to the window's title
 #. inside the private browsing mode
@@ -27,6 +28,13 @@ msgstr "To&rne a cjamâ lengute"
 #: reloadAllTabs.label reloadAllTabs.accesskey
 msgid "Reload &All Tabs"
 msgstr "Torne a cjamâ &dutis lis lengutis"
+
+#. This should indicate the
+#. direction in which tabs are closed, i.e. locales that use RTL mode should say
+#. left instead of right.
+#: closeTabsToTheEnd.label closeTabsToTheEnd.accesskey
+msgid "Close Tabs to the R&ight"
+msgstr ""
 
 #: closeOtherTabs.label closeOtherTabs.accesskey
 msgid "Close &Other Tabs"
@@ -64,6 +72,15 @@ msgstr "Zonte dutis lis lengutis ai segnelibris…"
 
 #: undoCloseTab.label undoCloseTab.accesskey
 msgid "&Undo Close Tab"
+msgstr "An&ule la sierade de lengute"
+
+#. This label is used
+#. when the previous tab-closing operation closed more than one tab. It
+#. replaces the undoCloseTab.label and will use the same accesskey as the
+#. undoCloseTab.label so users will not need to learn new keyboard controls.
+#: undoCloseTabs.label
+#, fuzzy
+msgid "Undo Close Tabs"
 msgstr "An&ule la sierade de lengute"
 
 #: closeTab.label closeTab.accesskey
@@ -113,13 +130,18 @@ msgid "p"
 msgstr "p"
 
 #: goOfflineCmd.label goOfflineCmd.accesskey
-msgid "&Work Offline"
+#, fuzzy
+msgid "Wor&k Offline"
 msgstr "La&vore fûr linie"
 
 #: menubarCmd.label menubarCmd.accesskey
 msgid "&Menu Bar"
 msgstr "Sbare dai &menù"
 
+#. LOCALIZATION NOTE: the following strings are unused in Australis, they're
+#. kept here to avoid warnings from l10n tools like compare-locales on
+#. l10n-central. They will be definitely removed when Australis is ready
+#. for mozilla-aurora.
 #: navbarCmd.label navbarCmd.accesskey
 msgid "&Navigation Toolbar"
 msgstr "Ba&nde di navigazion"
@@ -131,10 +153,6 @@ msgstr "&Bande dai Segnelibris"
 #: bookmarksToolbarItem.label
 msgid "Bookmarks Toolbar Items"
 msgstr "Elements de bande dai Segnelibris"
-
-#: addonBarCmd.label addonBarCmd.accesskey
-msgid "&Add-on Bar"
-msgstr ""
 
 #: pageSourceCmd.label pageSourceCmd.accesskey
 msgid "Page S&ource"
@@ -208,12 +226,8 @@ msgstr "Permet"
 msgid "Deny"
 msgstr "Nee"
 
-#: fullscreenApproval.value
-msgid "Allow fullscreen?"
-msgstr ""
-
-#: fullscreenExitHint.value
-msgid "Press ESC at any time to exit fullscreen."
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
 msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
@@ -226,7 +240,7 @@ msgid "Close Win&dow"
 msgstr "Siere il bar&con"
 
 #: bookmarksMenu.label bookmarksMenu.accesskey
-msgctxt "bookmarksMenu.label bookmarksMenu.accesskey"
+#, fuzzy
 msgid "&Bookmarks"
 msgstr "&Segnelibris"
 
@@ -239,9 +253,33 @@ msgctxt "bookmarkThisPageCmd.commandkey"
 msgid "d"
 msgstr "d"
 
-#: sharePageCmd.commandkey
-msgctxt "sharePageCmd.commandkey"
+#: markPageCmd.commandkey
+msgctxt "markPageCmd.commandkey"
 msgid "l"
+msgstr ""
+
+#: sharePageCmd.label sharePageCmd.accesskey
+msgid "&Share This Page"
+msgstr ""
+
+#: sharePageCmd.commandkey
+msgid "S"
+msgstr ""
+
+#: shareLinkCmd.label shareLinkCmd.accesskey
+msgid "&Share This Link"
+msgstr ""
+
+#: shareImageCmd.label shareImageCmd.accesskey
+msgid "&Share This Image"
+msgstr ""
+
+#: shareSelectCmd.label shareSelectCmd.accesskey
+msgid "&Share Selection"
+msgstr ""
+
+#: shareVideoCmd.label shareVideoCmd.accesskey
+msgid "&Share This Video"
 msgstr ""
 
 #: subscribeToPageMenupopup.label
@@ -339,10 +377,6 @@ msgstr "Direzion"
 msgid "Search"
 msgstr "Ricercje"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "Indicadôr di ativitât"
-
 #: bookmarksItem.title
 #, fuzzy
 msgctxt "bookmarksItem.title"
@@ -350,16 +384,8 @@ msgid "Bookmarks"
 msgstr "Segnelibris"
 
 #. Toolbar items
-#: appMenuButton.label
-msgid "Menu"
-msgstr ""
-
-#: appMenuButton.tooltip
-msgid "Open &brandShortName; menu"
-msgstr ""
-
 #: homeButton.label
-msgctxt "homeButton.label"
+#, fuzzy
 msgid "Home"
 msgstr "Cjase"
 
@@ -371,24 +397,11 @@ msgstr ""
 msgid "Group your tabs"
 msgstr ""
 
-#: feedButton.label
-msgid "Subscribe"
-msgstr "Notiti"
-
-#: feedButton.tooltip
-msgid "Subscribe to this page…"
-msgstr "Notiti a cheste pagjine…"
-
-#: bookmarksButton.label bookmarksButton.accesskey
-msgctxt "bookmarksButton.label bookmarksButton.accesskey"
-msgid "&Bookmarks"
-msgstr "Segneli&bris"
-
-#: bookmarksButton.tooltip
+#: bookmarksButton.label
 #, fuzzy
-msgctxt "bookmarksButton.tooltip"
-msgid "Display your bookmarks"
-msgstr "Fâs viodi i tiei segnelibris"
+msgctxt "bookmarksButton.label"
+msgid "Bookmarks"
+msgstr "Segnelibris"
 
 #: bookmarksCmd.commandkey
 msgid "b"
@@ -438,15 +451,6 @@ msgstr "i"
 msgid "History"
 msgstr "Cronologjie"
 
-#: historyButton.tooltip
-msgid "Display pages you've viewed recently"
-msgstr "Fâs viodi lis ultimis pagjinis che tu âs visitât"
-
-#: historySidebarCmd.accesskey
-msgctxt "historySidebarCmd.accesskey"
-msgid "s"
-msgstr "C"
-
 #: historySidebarCmd.commandKey
 msgid "h"
 msgstr "h"
@@ -458,10 +462,6 @@ msgstr "&Imprescj"
 #: keywordfield.label keywordfield.accesskey
 msgid "Add a &Keyword for this Search…"
 msgstr "Zonte une &peraule clâf par cheste ricercje…"
-
-#: search.label search.accesskey
-msgid "Web &Search"
-msgstr "Cî&r tal Web"
 
 #: downloads.label downloads.accesskey
 msgid "&Downloads"
@@ -493,30 +493,34 @@ msgstr ""
 msgid "&Web Developer"
 msgstr ""
 
+#: devToolsCmd.keycode
+#, fuzzy
+msgid "VK_F12"
+msgstr "VK_F3"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
+
+#: devtoolsConnect.label devtoolsConnect.accesskey
+msgid "Conn&ect…"
+msgstr ""
+
 #: errorConsoleCmd.label errorConsoleCmd.accesskey
 msgid "Error &Console"
 msgstr "&Console dai erôrs"
 
-#: errorConsoleCmd.commandkey
-msgctxt "errorConsoleCmd.commandkey"
+#: remoteWebConsoleCmd.label
+msgid "Remote Web Console"
+msgstr ""
+
+#: browserConsoleCmd.label browserConsoleCmd.accesskey
+msgid "&Browser Console"
+msgstr ""
+
+#: browserConsoleCmd.commandkey
+msgctxt "browserConsoleCmd.commandkey"
 msgid "j"
-msgstr "j"
-
-#: webConsoleCmd.label webConsoleCmd.accesskey
-msgid "&Web Console"
-msgstr ""
-
-#: webConsoleCmd.commandkey
-msgctxt "webConsoleCmd.commandkey"
-msgid "k"
-msgstr ""
-
-#: inspectMenu.label inspectMenu.accesskey
-msgid "&Inspect"
-msgstr ""
-
-#: inspectMenu.commandkey
-msgid "I"
 msgstr ""
 
 #: inspectContextMenu.label
@@ -533,7 +537,6 @@ msgid "&Responsive Design View"
 msgstr ""
 
 #: responsiveDesignTool.commandkey
-msgctxt "responsiveDesignTool.commandkey"
 msgid "M"
 msgstr ""
 
@@ -560,15 +563,11 @@ msgstr "VK_F3"
 msgid "F4"
 msgstr "F4"
 
-#: inspectCloseButton.tooltiptext
-msgid "Close Inspector"
+#. This is the label for the
+#. -  application menu item that opens the browser debugger UI in the Tools menu.
+#: chromeDebuggerMenu.label chromeDebuggerMenu.accesskey
+msgid "Brows&er Debugger"
 msgstr ""
-
-#: inspectSidebarCloseButton.tooltiptext
-#, fuzzy
-msgctxt "inspectSidebarCloseButton.tooltiptext"
-msgid "Close sidebar"
-msgstr "Siere il panel laterâl"
 
 #: devToolbarCloseButton.tooltiptext
 msgid "Close Developer Toolbar"
@@ -576,6 +575,10 @@ msgstr ""
 
 #: devToolbarMenu.label devToolbarMenu.accesskey
 msgid "De&veloper Toolbar"
+msgstr ""
+
+#: devAppMgrMenu.label devAppMgrMenu.accesskey
+msgid "&App Manager"
 msgstr ""
 
 #: devToolbar.keycode
@@ -587,47 +590,27 @@ msgstr "VK_F3"
 msgid "F2"
 msgstr "F2"
 
+#: devToolboxMenuItem.label devToolboxMenuItem.accesskey
+msgid "&Toggle Tools"
+msgstr ""
+
+#: devToolboxMenuItem.keycode
+msgctxt "devToolboxMenuItem.keycode"
+msgid "I"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgctxt "devToolboxMenuItem.keytext"
+msgid "I"
+msgstr ""
+
+#: devToolbarToolsButton.tooltip
+msgid "Toggle developer tools"
+msgstr ""
+
 #: devToolbarOtherToolsButton.label
 msgid "More Tools"
 msgstr ""
-
-#: inspectorHTMLCopyInner.label inspectorHTMLCopyInner.accesskey
-msgid "Copy &Inner HTML"
-msgstr ""
-
-#: inspectorHTMLCopyOuter.label inspectorHTMLCopyOuter.accesskey
-msgid "Copy &Outer HTML"
-msgstr ""
-
-#: inspectorHTMLDelete.label inspectorHTMLDelete.accesskey
-msgid "&Delete Node"
-msgstr ""
-
-#. This button shows an
-#. -  alternate view for the Inspector, creating a 3D visualization of the
-#. -  webpage.
-#: inspect3DViewButton.label inspect3DViewButton.accesskey
-msgid "3D Vie&w"
-msgstr ""
-
-#: inspectStyleButton.label inspectStyleButton.accesskey
-msgid "&Style"
-msgstr ""
-
-#. This menu item label appears
-#. -  in the Tools menu.
-#: styleeditor.label styleeditor.accesskey
-msgid "St&yle Editor"
-msgstr ""
-
-#: styleeditor.keycode
-#, fuzzy
-msgid "VK_F7"
-msgstr "VK_F3"
-
-#: styleeditor.keytext
-msgid "F7"
-msgstr "F7"
 
 #: getMoreDevtoolsCmd.label getMoreDevtoolsCmd.accesskey
 msgid "Get &More Tools"
@@ -645,13 +628,16 @@ msgstr "&Gnûf barcon"
 msgid "N"
 msgstr "N"
 
+#: newPrivateWindow.label newPrivateWindow.accesskey
+msgid "New Private &Window"
+msgstr ""
+
 #: editMenu.label editMenu.accesskey
 msgid "&Edit"
 msgstr "Modifich&e"
 
 #: undoCmd.label undoCmd.accesskey
 #, fuzzy
-msgctxt "undoCmd.label undoCmd.accesskey"
 msgid "&Undo"
 msgstr "Anu&le"
 
@@ -722,19 +708,10 @@ msgstr "&Opzions…"
 msgid "Prefere&nces"
 msgstr "&Preferencis"
 
-#: clearRecentHistory.label clearRecentHistory.accesskey
+#: clearRecentHistory.label
 #, fuzzy
-msgid "Clear Recent &History…"
+msgid "Clear Recent History…"
 msgstr "Nete fûr &cronologjie resinte"
-
-#. LOCALIZATION NOTE : These two strings can share an access key because they never appear together on the menu
-#: privateBrowsingCmd.start.label privateBrowsingCmd.start.accesskey
-msgid "Start &Private Browsing"
-msgstr "Tache la &navigazion privade"
-
-#: privateBrowsingCmd.stop.label privateBrowsingCmd.stop.accesskey
-msgid "Stop &Private Browsing"
-msgstr "Ferme &navigazion privade"
 
 #: privateBrowsingCmd.commandkey
 msgctxt "privateBrowsingCmd.commandkey"
@@ -761,10 +738,6 @@ msgstr "&Panel laterâl"
 msgid "&Customize…"
 msgstr "&Personalize…"
 
-#: viewTabsOnTop.label viewTabsOnTop.accesskey
-msgid "&Tabs on Top"
-msgstr ""
-
 #: historyMenu.label historyMenu.accesskey
 msgid "Hi&story"
 msgstr "&Cronologjie"
@@ -782,11 +755,6 @@ msgstr "Barcons sierâts che al è pôc"
 msgid "Restore Previous Session"
 msgstr ""
 
-#: historyHomeCmd.label
-msgctxt "historyHomeCmd.label"
-msgid "Home"
-msgstr "Cjase"
-
 #: showAllHistoryCmd2.label
 msgid "Show All History"
 msgstr "Visualize dute la cronologjie"
@@ -795,47 +763,10 @@ msgstr "Visualize dute la cronologjie"
 msgid "H"
 msgstr "H"
 
-#: appMenuEdit.label
-#, fuzzy
-msgid "Edit"
-msgstr "Modifich&e"
-
 #: appMenuCustomize.label
 #, fuzzy
 msgid "Customize"
 msgstr "&Personalize…"
-
-#: appMenuToolbarLayout.label
-msgid "Toolbar Layout…"
-msgstr ""
-
-#: appMenuSidebars.label
-#, fuzzy
-msgid "Sidebars"
-msgstr "&Panel laterâl"
-
-#: appMenuFind.label
-#, fuzzy
-msgid "Find…"
-msgstr "Cjate"
-
-#: appMenuUnsorted.label
-#, fuzzy
-msgctxt "appMenuUnsorted.label"
-msgid "Unsorted Bookmarks"
-msgstr "Segnelibris cence ordin"
-
-#: appMenuWebDeveloper.label
-msgid "Web Developer"
-msgstr ""
-
-#: appMenuGettingStarted.label
-msgid "Getting Started"
-msgstr ""
-
-#: appMenuSafeMode.label appMenuSafeMode.accesskey
-msgid "&Restart with Add-ons Disabled…"
-msgstr ""
 
 #: openCmd.commandkey
 #, fuzzy
@@ -843,8 +774,8 @@ msgctxt "openCmd.commandkey"
 msgid "l"
 msgstr "l"
 
-#: urlbar.placeholder
-msgid "Go to a Website"
+#: urlbar.placeholder2
+msgid "Search or enter address"
 msgstr ""
 
 #: urlbar.accesskey
@@ -872,7 +803,6 @@ msgstr ""
 #. for people to switch to Linux.
 #: searchFocus.commandkey
 #, fuzzy
-msgctxt "searchFocus.commandkey"
 msgid "k"
 msgstr "k"
 
@@ -897,6 +827,11 @@ msgstr "Vierç leam in&tune gnove lengute"
 
 #: openLinkCmd.label openLinkCmd.accesskey
 msgid "Open Link in New &Window"
+msgstr "Vierç leam intun gnûf barc&on"
+
+#: openLinkInPrivateWindowCmd.label openLinkInPrivateWindowCmd.accesskey
+#, fuzzy
+msgid "Open Link in New &Private Window"
 msgstr "Vierç leam intun gnûf barc&on"
 
 #: openLinkCmdInCurrent.label openLinkCmdInCurrent.accesskey
@@ -966,6 +901,10 @@ msgstr "Viôt la fi&gure"
 msgid "View Image In&fo"
 msgstr "Viôt in&formazions imagjine"
 
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
+
 #: viewVideoCmd.label viewVideoCmd.accesskey
 msgid "V&iew Video"
 msgstr "V&isualize video"
@@ -1005,7 +944,7 @@ msgid "P"
 msgstr "n"
 
 #: savePageCmd.commandkey
-msgctxt "savePageCmd.commandkey"
+#, fuzzy
 msgid "s"
 msgstr "s"
 
@@ -1043,6 +982,14 @@ msgstr ""
 
 #: emailAudioCmd.label emailAudioCmd.accesskey
 msgid "Email &Audio…"
+msgstr ""
+
+#: playPluginCmd.label playPluginCmd.accesskey
+msgid "A&ctivate this plugin"
+msgstr ""
+
+#: hidePluginCmd.label hidePluginCmd.accesskey
+msgid "&Hide this plugin"
 msgstr ""
 
 #: copyLinkCmd.label copyLinkCmd.accesskey
@@ -1095,6 +1042,29 @@ msgstr "Cence &audio"
 #: mediaUnmute.label mediaUnmute.accesskey
 msgid "Un&mute"
 msgstr "Scolte &audio"
+
+#: mediaPlaybackRate.label mediaPlaybackRate.accesskey
+msgid "P&lay Speed"
+msgstr ""
+
+#: mediaPlaybackRate050x.label mediaPlaybackRate050x.accesskey
+msgid "&Slow Motion (0.5×)"
+msgstr ""
+
+#: mediaPlaybackRate100x.label mediaPlaybackRate100x.accesskey
+msgid "&Normal Speed"
+msgstr ""
+
+#: mediaPlaybackRate150x.label mediaPlaybackRate150x.accesskey
+msgid "&High Speed (1.5×)"
+msgstr ""
+
+#. LOCALIZATION NOTE: "Ludicrous Speed" is a reference to the
+#. movie "Space Balls" and is meant to say that this speed is very
+#. fast.
+#: mediaPlaybackRate200x.label mediaPlaybackRate200x.accesskey
+msgid "&Ludicrous Speed (2×)"
+msgstr ""
 
 #. LOCALIZATION NOTE: The access keys for "Show Controls" and
 #. "Hide Controls" are the same because the two context-menu
@@ -1195,39 +1165,12 @@ msgstr "Vierç un gnûf barcon"
 
 #: sidebarCloseButton.tooltip
 #, fuzzy
-msgctxt "sidebarCloseButton.tooltip"
 msgid "Close sidebar"
 msgstr "Siere il panel laterâl"
-
-#: cutButton.tooltip
-msgid "Cut"
-msgstr "Taie"
-
-#: copyButton.tooltip
-msgid "Copy"
-msgstr "Copie"
-
-#: pasteButton.tooltip
-msgid "Paste"
-msgstr "Tache"
 
 #: fullScreenButton.tooltip
 msgid "Display the window in full screen"
 msgstr "Mostre il barcon a dut il visôr "
-
-#: zoomOutButton.tooltip
-#, fuzzy
-msgid "Zoom out"
-msgstr "&Plui piçul"
-
-#: zoomInButton.tooltip
-#, fuzzy
-msgid "Zoom in"
-msgstr "Plui &grant"
-
-#: zoomControls.label
-msgid "Zoom Controls"
-msgstr ""
 
 #: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
 msgid "E&xit"
@@ -1249,11 +1192,11 @@ msgstr "&Jes"
 msgid "Quit &brandShortName;"
 msgstr "Jes di &brandShortName;"
 
-#: quitApplicationCmdMac.key
-#, fuzzy
-msgctxt "quitApplicationCmdMac.key"
+#. This keyboard shortcut is used by both Linux and OSX builds.
+#: quitApplicationCmdUnix.key
+msgctxt "quitApplicationCmdUnix.key"
 msgid "Q"
-msgstr "Q"
+msgstr ""
 
 #: closeCmd.label closeCmd.accesskey
 msgid "&Close"
@@ -1378,13 +1321,16 @@ msgstr "che al è gjestît di"
 msgid "More Information…"
 msgstr "Altris informazions…"
 
-#: downloadMonitor2.tooltip
-msgid "Click to open downloads window"
-msgstr "Fâs clic par vierzi il barcon di discjamadis"
+#: identity.permissions
+msgid "Permissions"
+msgstr "Permès"
 
-#: allTabs.filter.emptyText
-msgid "Search Tabs"
-msgstr "Cîr tes lengutis"
+#. This string should be the
+#. localized title of this SUMO article
+#. https://support.mozilla.org/kb/how-do-i-tell-if-my-connection-is-secure
+#: identity.help.tooltip
+msgid "How do I tell if my connection to a website is secure?"
+msgstr ""
 
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
@@ -1420,28 +1366,6 @@ msgctxt "syncToolbarButton.label"
 msgid "Sync"
 msgstr ""
 
-#: addonBarCloseButton.tooltip
-msgid "Close Add-on Bar"
-msgstr ""
-
-#: toggleAddonBarCmd.key
-msgid "/"
-msgstr ""
-
-#. The markup button is the button
-#. located in front of the breadcrumbs display in the inspector toolbar. The button
-#. doesn't display any label, but exposes a label to screen-readers with "aria-label".
-#: markupButton.arialabel
-msgid "Markup"
-msgstr ""
-
-#. The key bound to the Markup panel's
-#. toolbar button
-#: markupButton.accesskey
-msgctxt "markupButton.accesskey"
-msgid "M"
-msgstr ""
-
 #: socialToolbar.title
 msgid "Social Toolbar Button"
 msgstr ""
@@ -1459,16 +1383,292 @@ msgstr ""
 msgid "&Show sidebar"
 msgstr ""
 
+#: social.addons.label
+msgid "Manage Services…"
+msgstr ""
+
 #: social.toggleNotifications.label social.toggleNotifications.accesskey
 msgid "Show desktop &notifications"
 msgstr ""
 
-#: social.activated.undobutton.label social.activated.undobutton.accesskey
+#: social.activated.description
+msgid ""
+"Services from <label/> have been enabled. You can change your settings for "
+"services in the <label class='text-link'>Add-on Manager</label>."
+msgstr ""
+
+#: social.activated.undo.label social.activated.undo.accesskey
+msgid "Oops, &undo this!"
+msgstr ""
+
+#: social.learnMore.label social.learnMore.accesskey
 #, fuzzy
-msgctxt ""
-"social.activated.undobutton.label social.activated.undobutton.accesskey"
-msgid "&Undo"
-msgstr "Anu&le"
+msgid "&Learn more…"
+msgstr "Par savênt di plui…"
+
+#: social.closeNotificationItem.label
+msgid "Not Now"
+msgstr "No cumò"
+
+#: social.chatBar.commandkey
+msgid "c"
+msgstr ""
+
+#: social.chatBar.label social.chatBar.accesskey
+msgid "Fo&cus chats"
+msgstr ""
+
+#: social.markpageMenu.label social.markpageMenu.accesskey
+msgid "Save &Page To…"
+msgstr ""
+
+#: social.marklinkMenu.label social.marklinkMenu.accesskey
+msgid "Save &Link To…"
+msgstr ""
+
+#: getUserMedia.selectCamera.label getUserMedia.selectCamera.accesskey
+msgid "&Camera to share:"
+msgstr ""
+
+#: getUserMedia.selectMicrophone.label getUserMedia.selectMicrophone.accesskey
+msgid "&Microphone to share:"
+msgstr ""
+
+#: webrtcIndicatorButton.label
+msgid "Camera / Microphone Access"
+msgstr ""
+
+#: webrtcIndicatorButton.tooltip
+msgid "Display sites you are currently sharing your camera or microphone with"
+msgstr ""
+
+#: mixedContentBlocked.helplink
+#, fuzzy
+msgid "Learn more"
+msgstr "Par savênt di plui…"
+
+#: mixedContentBlocked.moreinfo
+msgid ""
+"Most websites will still work properly even when this content is blocked."
+msgstr ""
+
+#: pointerLock.notification.message
+msgid "Press ESC at any time to show it again."
+msgstr ""
+
+#: pluginNotification.showAll.label pluginNotification.showAll.accesskey
+#, fuzzy
+msgid "&Show All"
+msgstr "Mostre dut"
+
+#. LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.properties
+#: pluginActivateNow.label
+msgid "Allow Now"
+msgstr ""
+
+#: pluginActivateAlways.label
+msgid "Allow and Remember"
+msgstr ""
+
+#: pluginBlockNow.label
+msgid "Block Plugin"
+msgstr ""
+
+#. This is used to determine the
+#. width of the plugin popup notification that can appear if a plugin has been
+#. blocked on a page. Should be wide enough to fit the pluginActivateNow.label
+#. and pluginActivateAlways.label strings above on a single line. This must be
+#. a CSS length value.
+#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
+#: pluginNotification.width
+msgid "28em"
+msgstr "28em"
+
+#: tabCrashed.header
+msgid "Tab crashed"
+msgstr ""
+
+#: tabCrashed.message
+msgid ""
+"Well, this is embarrassing. We tried to display this Web page, but it's not "
+"responding."
+msgstr ""
+
+#: tabCrashed.checkSendReport
+msgid "Tell &vendorShortName; about this crash so they can fix it."
+msgstr ""
+
+#: tabCrashed.tryAgain
+msgid "Try Again"
+msgstr "Torne a provâ"
+
+#: addonBarCmd.label addonBarCmd.accesskey
+msgid "&Add-on Bar"
+msgstr ""
+
+#: throbberItem.title
+msgid "Activity Indicator"
+msgstr "Indicadôr di ativitât"
+
+#: appMenuButton.label
+msgid "Menu"
+msgstr ""
+
+#: appMenuButton.tooltip
+msgid "Open &brandShortName; menu"
+msgstr ""
+
+#: feedButton.label
+msgid "Subscribe"
+msgstr "Notiti"
+
+#: feedButton.tooltip
+msgid "Subscribe to this page…"
+msgstr "Notiti a cheste pagjine…"
+
+#: bookmarksButton.tooltip
+#, fuzzy
+msgctxt "bookmarksButton.tooltip"
+msgid "Display your bookmarks"
+msgstr "Fâs viodi i tiei segnelibris"
+
+#: historyButton.tooltip
+msgid "Display pages you've viewed recently"
+msgstr "Fâs viodi lis ultimis pagjinis che tu âs visitât"
+
+#: viewTabsOnTop.label viewTabsOnTop.accesskey
+msgid "&Tabs on Top"
+msgstr ""
+
+#: appMenuEdit.label
+#, fuzzy
+msgid "Edit"
+msgstr "Modifich&e"
+
+#: appMenuToolbarLayout.label
+msgid "Toolbar Layout…"
+msgstr ""
+
+#: appMenuSidebars.label
+#, fuzzy
+msgid "Sidebars"
+msgstr "&Panel laterâl"
+
+#: appMenuFind.label
+#, fuzzy
+msgid "Find…"
+msgstr "Cjate"
+
+#: appMenuUnsorted.label
+#, fuzzy
+msgctxt "appMenuUnsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "Segnelibris cence ordin"
+
+#: appMenuWebDeveloper.label
+msgid "Web Developer"
+msgstr ""
+
+#: appMenuGettingStarted.label
+msgid "Getting Started"
+msgstr ""
+
+#: appMenuSafeMode.label appMenuSafeMode.accesskey
+msgid "&Restart with Add-ons Disabled…"
+msgstr ""
+
+#: cutButton.tooltip
+msgid "Cut"
+msgstr "Taie"
+
+#: copyButton.tooltip
+msgid "Copy"
+msgstr "Copie"
+
+#: pasteButton.tooltip
+msgid "Paste"
+msgstr "Tache"
+
+#: zoomOutButton.tooltip
+#, fuzzy
+msgid "Zoom out"
+msgstr "&Plui piçul"
+
+#: zoomInButton.tooltip
+#, fuzzy
+msgid "Zoom in"
+msgstr "Plui &grant"
+
+#: zoomControls.label
+msgid "Zoom Controls"
+msgstr ""
+
+#: addonBarCloseButton.tooltip
+msgid "Close Add-on Bar"
+msgstr ""
+
+#: toggleAddonBarCmd.key
+msgid "/"
+msgstr ""
+
+#~ msgctxt "bookmarksButton.label bookmarksButton.accesskey"
+#~ msgid "&Bookmarks"
+#~ msgstr "Segneli&bris"
+
+#~ msgid "Web &Search"
+#~ msgstr "Cî&r tal Web"
+
+#~ msgctxt "errorConsoleCmd.commandkey"
+#~ msgid "j"
+#~ msgstr "j"
+
+#, fuzzy
+#~ msgid "VK_F7"
+#~ msgstr "VK_F3"
+
+#~ msgid "F7"
+#~ msgstr "F7"
+
+#~ msgid "Start &Private Browsing"
+#~ msgstr "Tache la &navigazion privade"
+
+#~ msgid "Stop &Private Browsing"
+#~ msgstr "Ferme &navigazion privade"
+
+#~ msgctxt "historyHomeCmd.label"
+#~ msgid "Home"
+#~ msgstr "Cjase"
+
+#, fuzzy
+#~ msgctxt "searchFocus.commandkey"
+#~ msgid "k"
+#~ msgstr "k"
+
+#~ msgctxt "savePageCmd.commandkey"
+#~ msgid "s"
+#~ msgstr "s"
+
+#, fuzzy
+#~ msgctxt "sidebarCloseButton.tooltip"
+#~ msgid "Close sidebar"
+#~ msgstr "Siere il panel laterâl"
+
+#, fuzzy
+#~ msgctxt "quitApplicationCmdMac.key"
+#~ msgid "Q"
+#~ msgstr "Q"
+
+#~ msgid "Click to open downloads window"
+#~ msgstr "Fâs clic par vierzi il barcon di discjamadis"
+
+#~ msgid "Search Tabs"
+#~ msgstr "Cîr tes lengutis"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "social.activated.undobutton.label social.activated.undobutton.accesskey"
+#~ msgid "&Undo"
+#~ msgstr "Anu&le"
 
 #~ msgid "&Import…"
 #~ msgstr "&Impuarte…"
