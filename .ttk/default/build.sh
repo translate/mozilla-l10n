@@ -291,7 +291,7 @@ do
 				browser/metro/chrome/region.properties \
 				browser/searchplugins/list.txt \
 				mobile/chrome/region.properties \
-				mail/chrome/messenger-region/region.properties.po
+				mail/chrome/messenger-region/region.properties
 			)
 		fi
 	fi
