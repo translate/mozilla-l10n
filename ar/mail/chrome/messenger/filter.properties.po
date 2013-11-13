@@ -1,21 +1,21 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from l10n/en-US/mail/chrome/messenger/filter.properties
+#. extracted from ./mail/chrome/messenger/filter.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-28 12:16+0200\n"
+"POT-Creation-Date: 2013-10-14 13:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: mustSelectFolder
 msgid "You must select a target folder."
@@ -42,6 +42,20 @@ msgid ""
 "The filter name you entered already exists. Please enter a different filter "
 "name."
 msgstr "اسم المرشِّح الذي أدخلته موجود بالفعل. من فضلك أدخل اسم مرشِّح مختلف."
+
+#: mustHaveFilterTypeTitle
+msgid "No filter event selected"
+msgstr "لم يحدد أي حدث للمرشِّح"
+
+#: mustHaveFilterTypeMessage
+msgid ""
+"You must select at least one event when this filter is applied. If you "
+"temporarily do not wish the filter to run at any event, uncheck its enabled "
+"state from the Message Filters dialog."
+msgstr ""
+"عليك اختيار حدث واحد على الأقل يطبق عنده المرشِّح. إذا كنت تريد ألا يُطبق هذا "
+"المرشح عند أي حدث مؤقتا، فارفع التأشير عن حالة التفعيل في حوار مرشحات "
+"الرسائل."
 
 #: deleteFilterConfirmation
 msgid "Are you sure you want to delete the selected filter(s)?"
@@ -135,11 +149,48 @@ msgstr "لا تسألني مجددًا"
 msgid "Search Terms Invalid"
 msgstr "كلمات البحث غير صالحة"
 
-#: searchTermsInvalidMessage
+#. # LOCALIZATION NOTE(searchTermsInvalidRule)
+#. # %1$S=search attribute name from the invalid rule
+#. # %2$S=search operator from the bad rule
+#: searchTermsInvalidRule
 msgid ""
-"This filter cannot be saved because some search terms are invalid in the "
-"current context."
-msgstr "تعذر حفظ هذا المرشِّح لأن بعض كلماته لا تصلح في السياق الحالي."
+"This filter cannot be saved because the search term \"%1$S %2$S\" is invalid "
+"in the current context."
+msgstr ""
+"تعذر حفظ هذا المرشِّح لأن عبارة البحث \"%1$S %2$S\" لا تصلح في السياق الحالي."
+
+#. # LOCALIZATION NOTE(filterActionOrderExplanation)
+#. # Keep the \n\n that mean 2 linebreaks.
+#: filterActionOrderExplanation
+msgid ""
+"When a message matches this filter the actions will be run in this order:\n"
+"\n"
+msgstr ""
+"عندما تُطابق رسالة هذا المرشِّح، ستُطبّق الإجراءات بهذا الترتيب:\n"
+"\n"
+
+#: filterActionOrderTitle
+msgid "Real action order"
+msgstr "ترتيب الإجراءات الفعلي"
+
+#. ## LOCALIZATION NOTE(filterActionItem):
+#. # %1$S=sequence number of the action, %2$S=action text, %3$S=action argument
+#: filterActionItem
+msgid "%1$S. %2$S %3$S\n"
+msgstr "‏%1$S.‏ %2$S ‏%3$S\n"
+
+#. ## LOCALIZATION NOTE(filterCountVisibleOfTotal):
+#. # %1$S=number of matching filters, %2$S=total number of filters
+#: filterCountVisibleOfTotal
+msgid "%1$S of %2$S"
+msgstr "‏%1$S من %2$S"
+
+#. ## LOCALIZATION NOTE(filterCountItems): Semi-colon list of plural forms.
+#. ## See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. ## #1 is the count of items in the list.# filterCountItems is a pluralForm - see
+#: filterCountItems
+msgid "#1 item; #1 items"
+msgstr "عنصر واحد;عنصرين;#1 عناصر;#1 عنصرًا;#1 عنصر;لا عناصر"
 
 #. # for junk mail logging / mail filter logging
 #. # LOCALIZATION NOTE(junkLogDetectStr)
