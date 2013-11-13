@@ -1,21 +1,29 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from l10n/en-US/chat/irc.properties
+#. extracted from ./chat/irc.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-28 12:16+0200\n"
+"POT-Creation-Date: 2013-10-16 22:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Translate Toolkit 1.10.0\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+
+#. # LOCALIZATION NOTE (irc.usernameHint):
+#. #  This is displayed inside the accountUsernameInfoWithDescription
+#. #  string defined in imAccounts.properties when the user is
+#. #  configuring an IRC account.
+#: irc.usernameHint
+msgid "nick"
+msgstr "الكنية"
 
 #. # LOCALIZATION NOTE (connection.error.*):
 #. #   These will show in the account manager if the account is
@@ -28,9 +36,13 @@ msgstr "فُقِد الاتصال بالخادوم"
 msgid "Connection timed out"
 msgstr "‏انتهت مهلة الاتّصال"
 
-#: connection.error.certError
-msgid "Certification error when connecting to server"
-msgstr "خطأ في الشهادة أثناء الاتصال بالخادوم"
+#: connection.error.invalidPassword
+msgid "Invalid server password"
+msgstr "كلمة سر الخادوم غير صحيحة"
+
+#: connection.error.passwordRequired
+msgid "Password required"
+msgstr "كلمة السر مطلوبة"
 
 #. # LOCALIZATION NOTE (joinChat.*):
 #. #   These show up on the join chat menu. An underscore is for the access key.
@@ -85,8 +97,8 @@ msgstr "Ping reply from %1$S in #2 second.;Ping reply from %1$S in #2 seconds."
 #. #   %1$S is the nickname of the user whose version was requested.
 #. #   %2$S is the version response from the client.
 #: ctcp.version
-msgid "%1$S is using \"%2$S\""
-msgstr "‏%1$S يستخدم \"%2$S\""
+msgid "%1$S is using \"%2$S\"."
+msgstr "‏%1$S يستخدم \"%2$S\"."
 
 #. # LOCALIZATION NOTE (ctcp.time):
 #. #   %1$S is the nickname of the user whose time was requested.
@@ -139,10 +151,10 @@ msgstr ""
 
 #: command.join
 msgid ""
-"%S &lt;room1&gt;[,&lt;room2&gt;]* [&lt;key1&gt;[,&lt;key2&gt;]*]: Enter one "
+"%S &lt;room1&gt;[ &lt;key1&gt;][,&lt;room2&gt;[ &lt;key2&gt;]]*: Enter one "
 "or more channels, optionally providing a channel key for each if needed."
 msgstr ""
-"%S &lt;room1&gt;[,&lt;room2&gt;]* [&lt;key1&gt;[,&lt;key2&gt;]*]: Enter one "
+"%S &lt;room1&gt;[ &lt;key1&gt;][,&lt;room2&gt;[ &lt;key2&gt;]]*: Enter one "
 "or more channels, optionally providing a channel key for each if needed."
 
 #: command.kick
@@ -165,13 +177,17 @@ msgstr ""
 msgid "%S &lt;command&gt;: Send a command to MemoServ."
 msgstr "%S &lt;command&gt;: Send a command to MemoServ."
 
-#: command.mode
+#: command.modeUser
+msgid "%S (+|-)&lt;new mode&gt; [&lt;nick&gt;]: Set or unset a user's mode."
+msgstr "%S (+|-)&lt;new mode&gt; [&lt;nick&gt;]: Set or unset a user's mode."
+
+#: command.modeChannel
 msgid ""
-"%S [&lt;channel&gt;] [(+|-)&lt;new mode&gt;] [&lt;nick&gt;]: Set or unset a "
-"channel or user mode."
+"%S &lt;channel&gt;[ (+|-)&lt;new mode&gt; [&lt;parameter&gt;][,&lt;"
+"parameter&gt;]*]: Get, set or unset a channel mode."
 msgstr ""
-"%S [&lt;channel&gt;] [(+|-)&lt;new mode&gt;] [&lt;nick&gt;]: Set or unset a "
-"channel or user mode."
+"%S &lt;channel&gt;[ (+|-)&lt;new mode&gt; [&lt;parameter&gt;][,&lt;"
+"parameter&gt;]*]: Get, set or unset a channel mode."
 
 #: command.msg
 msgid ""
@@ -232,8 +248,8 @@ msgid "%S: Displays the current local time at the IRC server."
 msgstr "%S: Displays the current local time at the IRC server."
 
 #: command.topic
-msgid "%S [&lt;new topic&gt;]: View or change the channel topic."
-msgstr "%S [&lt;new topic&gt;]: View or change the channel topic."
+msgid "%S [&lt;new topic&gt;]: Set this channel's topic."
+msgstr "%S [&lt;new topic&gt;]: Set this channel's topic."
 
 #: command.umode
 msgid "%S (+|-)&lt;new mode&gt;: Set or unset a user mode."
@@ -251,23 +267,9 @@ msgstr ""
 "%S &lt;nick1&gt;[,&lt;nick2&gt;]*: Grant channel voice status to someone. "
 "You must be a channel operator to do this."
 
-#: command.wallops
-msgid ""
-"%S &lt;message&gt;: If you don't know what this is, you probably can't use "
-"it (sends a command to all connected with the +w flag and all operators on "
-"the server."
-msgstr ""
-"%S &lt;message&gt;: If you don't know what this is, you probably can't use "
-"it (sends a command to all connected with the +w flag and all operators on "
-"the server."
-
-#: command.whois
-msgid "%S &lt;nick&gt;: Get information on a user."
-msgstr "%S &lt;nick&gt;: Get information on a user."
-
-#: command.whowas
-msgid "%S &lt;nick&gt;: Get information on a user that has logged off."
-msgstr "%S &lt;nick&gt;: Get information on a user that has logged off."
+#: command.whois2
+msgid "%S [&lt;nick&gt;]: Get information on a user."
+msgstr "%S [&lt;nick&gt;]: Get information on a user."
 
 #. # LOCALIZATION NOTE (message.*):
 #. #    These are shown as system messages in the conversation.
@@ -275,6 +277,10 @@ msgstr "%S &lt;nick&gt;: Get information on a user that has logged off."
 #: message.join
 msgid "%1$S [%2$S] entered the room."
 msgstr "دخل %1$S ‏[%2$S] إلى الغرفة."
+
+#: message.rejoined
+msgid "You have rejoined the room."
+msgstr "لقد أعدت الانضمام إلى الغرفة."
 
 #. #    %1$S is the nick of who kicked you.
 #. #    %2$S is message.kicked.reason, if a kick message was given.
@@ -294,11 +300,21 @@ msgctxt "message.kicked.reason"
 msgid ": %S"
 msgstr ": %S"
 
-#. #    %1$S is the nickname of the user whose mode was changed, %2$S is the new
-#. #    mode and %3$S is who set the mode.
-#: message.mode
-msgid "mode (%1$S %2$S) by %3$S."
-msgstr "mode (%1$S %2$S) by %3$S."
+#. #    %1$S is the new mode, %2$S is the nickname of the user whose mode
+#. #    was changed, and %3$S is who set the mode.
+#: message.usermode
+msgid "Mode %1$S for %2$S set by %3$S."
+msgstr "Mode %1$S for %2$S set by %3$S."
+
+#. #    %1$S is the new channel mode and %2$S is who set the mode.
+#: message.channelmode
+msgid "Channel mode %1$S set by %2$S."
+msgstr "Channel mode %1$S set by %2$S."
+
+#. #    %S is the user's mode.
+#: message.yourmode
+msgid "Your mode is %S."
+msgstr "Your mode is %S."
 
 #. #    %1$S is the old nick and %2$S is the new nick.
 #: message.nick
@@ -310,7 +326,12 @@ msgstr "تغيّر اسم %1$S إلى %2$S."
 msgid "You are now known as %S."
 msgstr "تغيّر اسمك إلى %S."
 
-#. #    The paramter is the message.parted.reason, if a part message is given.
+#. #    Could not change the nickname. %S is the user's nick.
+#: message.nick.fail
+msgid "Could not use the specified nickname. Your nick remains %S."
+msgstr "تعذّر استخدام الكنية المحددة. تبقى كُنيتك %S."
+
+#. #    The parameter is the message.parted.reason, if a part message is given.
 #: message.parted.you
 msgid "You have left the room (Part%1$S)."
 msgstr "غادرت الغرفة (مغادرة%1$S)."
@@ -337,25 +358,11 @@ msgctxt "message.quit2"
 msgid ": %S"
 msgstr ": %S"
 
-#. #    %1$S is the user who changed the topic, %2$S is the new topic.
-#: message.topicChanged
-msgid "%1$S has changed the topic to: %2$S."
-msgstr "غيّر %1$S الموضوع إلى %2$S."
-
-#. #    %1$S is the user who cleared the topic.
-#: message.topicCleared
-msgid "%1$S has cleared the topic."
-msgstr "مسح %1$S الموضوع."
-
-#. #    %1$S is the conversation name, %2$S is the topic.
-#: message.topic
-msgid "The topic for %1$S is: %2$S."
-msgstr "موضوع %1$S هو: %2$S."
-
-#. #    %S is the conversation name.
-#: message.topicNotSet
-msgid "There is no topic for %S."
-msgstr "لا موضوع للغرفة %S."
+#. #    %1$S is the nickname of the user that invited us, %2$S is the conversation
+#. #    name.
+#: message.inviteReceived
+msgid "%1$S has invited you to %2$S."
+msgstr "لقد دعاكَ %1$S إلى %2$S."
 
 #. #    %1$S is the nickname of the invited user, %2$S is the conversation name
 #. #    they were invited to.
@@ -380,13 +387,42 @@ msgstr "‏%1$S غير متصل. معلومات WHOWAS ل‍ %1$S:"
 
 #. #    %1$S is the entry description (from tooltip.*), %2$S is its value.
 #: message.whoisEntry
-msgid "਀a0਀a0%1$S: %2$S"
+msgid "    %1$S: %2$S"
 msgstr "਀a0਀a0%1$S: %2$S"
 
 #. #    %S is the nickname that is not known to the server.
 #: message.unknownNick
 msgid "%S is an unknown nickname."
 msgstr "اسم كنية غير معروف: %S."
+
+#. #    %1$S is the nickname of the user who changed the mode and %2$S is the new
+#. #    channel key (password).
+#: message.channelKeyAdded
+msgid "%1$S changed the channel password to %2$S."
+msgstr "غيّر %1$S كلمة سر القناة إلى %2$S."
+
+#: message.channelKeyRemoved
+msgid "%S removed the channel password."
+msgstr "أزال %S كلمة سر القناة."
+
+#. #    This will be followed by a list of ban masks.
+#: message.banMasks
+msgid "Users connected from the following locations are banned from %S:"
+msgstr "المستخدمون المتصلون من الأماكن التالية محظورون من %S:"
+
+#: message.noBanMasks
+msgid "There are no banned locations for %S."
+msgstr "لا أماكن محظورة من %S."
+
+#: message.banMaskAdded
+msgid "Users connected from locations matching %1$S have been banned by %2$S."
+msgstr "المستخدمون المتصلون من الأماكن التي تطابق %1$S محظورون من %2$S."
+
+#: message.banMaskRemoved
+msgid ""
+"Users connected from locations matching %1$S are no longer banned by %2$S."
+msgstr ""
+"المستخدمون المتصلون من الأماكن التي تطابق %1$S لم يعودوا محظورين من %2$S."
 
 #. # LOCALIZATION NOTE (error.*):
 #. #    These are shown as error messages in the server tab.
@@ -404,6 +440,10 @@ msgstr "تعذّر الانضمام إلى %S؛ لقد انضممت إلى قن�
 #: error.nickCollision
 msgid "Nick already in use, changing nick to %1$S [%2$S]."
 msgstr "اسم الكنية مستخدم بالفعل، سيُغيّر إلى %1$S ‏[%2$S]."
+
+#: error.erroneousNickname
+msgid "%S is not an allowed nickname."
+msgstr "ليس مسموحا بالرمز %S في أسماء الكُنى."
 
 #: error.banned
 msgid "You are banned from this server."
@@ -448,6 +488,14 @@ msgstr ""
 msgid "You are not a channel operator on %S."
 msgstr "لست منظّم قناة على %S."
 
+#: error.notChannelOwner
+msgid "You are not a channel owner of %S."
+msgstr "You are not a channel owner of %S."
+
+#: error.wrongKey
+msgid "Cannot join %S, invalid channel password."
+msgstr "تعذّر الانضمام إلى %S لأن كلمة سر القناة غير صحيحة."
+
 #. # LOCALIZATION NOTE (tooltip.*):
 #. #    These are the descriptions given in a tooltip with information received
 #. #    from a whois response.
@@ -456,12 +504,28 @@ msgstr "لست منظّم قناة على %S."
 msgid "Name"
 msgstr "الاسم"
 
+#: tooltip.server
+msgid "Connected to"
+msgstr "متّصل ب‍"
+
 #. #    The username and hostname that the user connects from (usually based on the
 #. #    reverse DNS of the user's IP, but often mangled by the server to
 #. #    protect users).
 #: tooltip.connectedFrom
 msgid "Connected from"
 msgstr "متّصل من"
+
+#: tooltip.registered
+msgid "Registered"
+msgstr "مُسجّل"
+
+#: tooltip.registeredAs
+msgid "Registered as"
+msgstr "مُسجَل باسم"
+
+#: tooltip.secure
+msgid "Using a secure connection"
+msgstr "يستخدم اتصالا آمنًا"
 
 #. # The away message of the user
 #: tooltip.away
@@ -472,19 +536,30 @@ msgstr "غائب"
 msgid "IRC Operator"
 msgstr "منظِّم IRC"
 
-#: tooltip.channels
-msgid "Currently on"
-msgstr "حاليا على"
-
-#: tooltip.server
-msgid "Connected to"
-msgstr "متّصل ب‍"
-
-#. #    %1$S is the server name, %2$S is the server location.
-#: tooltip.serverValue
-msgid "%1$S (%2$S)"
-msgstr "%1$S (%2$S)"
+#: tooltip.bot
+msgid "Bot"
+msgstr "Bot"
 
 #: tooltip.idleTime
 msgid "Idle for"
 msgstr "خامل منذ"
+
+#: tooltip.channels
+msgid "Currently on"
+msgstr "حاليا على"
+
+#. #    %1$S is the server name, %2$S is some generic server information (usually a
+#. #    location or the date the user was last seen).
+#: tooltip.serverValue
+msgid "%1$S (%2$S)"
+msgstr "%1$S (%2$S)"
+
+#. # LOCALIZATION NOTE (yes, no):
+#. #  These are used to turn true/false values into a yes/no response.
+#: yes
+msgid "Yes"
+msgstr "نعم"
+
+#: no
+msgid "No"
+msgstr "لا"
