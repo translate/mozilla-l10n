@@ -188,6 +188,16 @@ if [ $opt_vc ]; then
 		mv ${PO_DIR}/en-US/$pdir/* ${L10N_ENUS}/$pdir/
 	done
 	rm -rf ${PO_DIR}/en-US
+	# Revert files that we don't want to maintain
+	for rmfile in browser/chrome/browser-region/region.properties \
+		      browser/metro/chrome/region.properties \
+		      browser/searchplugins/list.txt \
+		      browser/searchplugins/metrolist.txt \
+		      mobile/chrome/region.properties \
+		      mail/chrome/messenger-region/region.properties
+	do
+		rm -f ${L10N_ENUS}/${rmfile}
+	done
 	
 	verbose "moz2po - Create POT files from en-US"
 	for exclude in $RETIRED_PRODUCT_DIRS $OTHER_EXCLUDED_DIRS ".hg"
