@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-07 20:44+0100\n"
+"POT-Creation-Date: 2013-12-10 18:06+0100\n"
 "PO-Revision-Date: 2013-06-10 10:08+0000\n"
 "Last-Translator: Dwayne Bailey <dwayne@translate.org.za>\n"
 "Language-Team: South African English translate-devel@lists.sourceforge.net\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.11.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -298,13 +298,17 @@ msgstr "Pseudo-elements can't be negated '%1$S'."
 msgid "This pseudo-element must use the \"::\" form: '%1$S'."
 msgstr "This pseudo-element must use the \"::\" form: '%1$S'."
 
-#: PEPseudoSelTrailing
+#: PEPseudoSelEndOrUserActionPC
 msgid ""
-"Found trailing token after pseudo-element, which must be the last part of a "
-"selector:  '%1$S'."
+"Expected end of selector or a user action pseudo-class after pseudo-element "
+"but found '%1$S'."
 msgstr ""
-"Found trailing token after pseudo-element, which must be the last part of a "
-"selector:  '%1$S'."
+
+#: PEPseudoSelNoUserActionPC
+msgid ""
+"Expected end of selector after pseudo-element that does not support user "
+"action pseudo-classes but found '%1$S'."
+msgstr ""
 
 #: PEPseudoSelMultiplePE
 msgid "Extra pseudo-element '%1$S'."
@@ -349,6 +353,12 @@ msgstr "Missing closing ')' in pseudo-class, found '%1$S' instead."
 #: PEPseudoClassNoArg
 msgid "Missing argument in pseudo-class '%1$S'."
 msgstr "Missing argument in pseudo-class '%1$S'."
+
+#: PEPseudoClassNotUserAction
+msgid ""
+"Expected end of selector or a user action pseudo-class after pseudo-element "
+"but found pseudo-class '%1$S'."
+msgstr ""
 
 #: PESelectorEOF
 msgid "selector"
@@ -613,6 +623,13 @@ msgstr "Expected non-negative number or percentage."
 #: PEFilterFunctionArgumentsParsingError
 msgid "Error in parsing arguments for filter function."
 msgstr "Error in parsing arguments for filter function."
+
+#~ msgid ""
+#~ "Found trailing token after pseudo-element, which must be the last part of "
+#~ "a selector:  '%1$S'."
+#~ msgstr ""
+#~ "Found trailing token after pseudo-element, which must be the last part of "
+#~ "a selector:  '%1$S'."
 
 #~ msgid "end of unknown at-rule"
 #~ msgstr "end of unknown at-rule"
