@@ -2,6 +2,13 @@
 
 source ttk.inc.sh
 
+tmpkeep=${1/--keep=/}
+if [ -z "${tmpkeep//[0-9]}" ]; then
+	keep=$tmpkeep
+	shift 1
+fi
+
 langs=$(which_langs $*)
+
 sync_stores $langs
-rsync_files_put $langs
+rsync_files_put $keep $langs
