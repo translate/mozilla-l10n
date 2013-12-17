@@ -40,17 +40,35 @@ use_color="yes"
 # Language and language code
 ############################
 
+function _remove_alt_src_langs() {
+	# Remove alt-src langs
+	langs=$*
+	for alt in $alt_src
+	do
+		langs=${langs/$alt/""}
+	done
+	echo $langs
+}
+
 function which_langs() {
 	# Detemine which languages we want to work on. Either:
 	# 1) Mutliple specified languages
 	# 2) Languages identified by a specific change ID
 	# 3) All languages for the project
+	#
+	# * Special handling of alt-src languages we exclude them unless
+	#   specifically mentioned.
+	# * We replace alt-src with the languages in our alt-src config
 	langs=$*
 	if [ $# -eq 0 ]; then
-		langs=$(all_langs)
+		# None specific so we want tall languages
+		langs=$(_remove_alt_src_langs $(all_langs))
 	elif [ $# -eq 1 -a -z "${1//[0-9]/}" ]; then
-		langs=$(all_langs $1)
+		# Using a modified since number
+		langs=$(_remove_alt_src_langs $(all_langs $1))
 	fi
+	# Substitute alt-src with actual alt-src languages
+	langs=${langs/alt-src/$alt_src}
 	echo $langs
 }
 
