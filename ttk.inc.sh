@@ -45,7 +45,7 @@ function _remove_alt_src_langs() {
 	langs=$*
 	for alt in $alt_src
 	do
-		langs=${langs/$alt/""}
+		langs=$(echo $langs | sed "s/\b${alt}\b//")
 	done
 	echo $langs
 }
