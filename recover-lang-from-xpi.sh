@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ttk.inc.sh
+source $(dirname $0)/ttk.inc.sh
 
 xpi=$1
 lang=$(basename $xpi .xpi)
