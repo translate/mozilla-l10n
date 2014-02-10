@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2014-02-10 23:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -28,21 +28,8 @@ msgid "Install"
 msgstr "ସ୍ଥାପନ କରନ୍ତୁ"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr ""
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
-msgstr ""
-
-#: alertAddonsInstalling
-#, fuzzy
-msgid "Installing add-on"
-msgstr "ଏଡ-ଅନକୁ ସ୍ଥାପନ କରନ୍ତୁ"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
 msgstr ""
 
 #: alertAddonsInstalledNoRestart
@@ -80,8 +67,38 @@ msgstr ""
 msgid "Download started…"
 msgstr ""
 
+#: alertDownloadsPause
+msgctxt "alertDownloadsPause"
+msgid "Pause"
+msgstr ""
+
+#: alertDownloadsResume
+msgid "Resume"
+msgstr "ପୁନଃ ଚଳନ"
+
+#: alertDownloadsCancel
+#, fuzzy
+msgctxt "alertDownloadsCancel"
+msgid "Cancel"
+msgstr "ବାତିଲ କରନ୍ତୁ"
+
 #: alertFullScreenToast
 msgid "Press BACK to leave full-screen mode"
+msgstr ""
+
+#. # LOCALIZATION NOTE (alertSearchEngineAddedToast, alertSearchEngineErrorToast, alertSearchEngineDuplicateToast)
+#. # %S will be replaced by the name of the search engine (exposed by the current page)
+#. # that has been added; for example, 'Google'.
+#: alertSearchEngineAddedToast
+msgid "'%S' has been added as a search engine"
+msgstr ""
+
+#: alertSearchEngineErrorToast
+msgid "Couldn't add '%S' as a search engine"
+msgstr ""
+
+#: alertSearchEngineDuplicateToast
+msgid "'%S' is already one of your search engines"
 msgstr ""
 
 #: downloadCancelPromptTitle
@@ -156,10 +173,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr ""
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr ""
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr ""
@@ -169,25 +182,27 @@ msgid "Restart"
 msgstr "ପୁନଃଚାଳନ କରନ୍ତୁ"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S ଏହି ସାଇଟକୁ ଗୋଟିଏ ପପ୍-ଅପ୍ ୱିଣ୍ଡୋ ଖୋଲିବାରୁ ପ୍ରତିରୋଧ କରିଛି."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S ଏହି ସାଇଟକୁ %S ପପ୍-ଅପ୍ ୱିଣ୍ଡୋଗୁଡ଼ିକୁ ଖୋଲିବାରୁ ପ୍ରତିରୋଧ କରିଛି."
+#: popup.dontAskAgain
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr ""
 
-#: popupButtonAllowOnce
+#: popup.show
 #, fuzzy
 msgid "Show"
 msgstr "ଦର୍ଶାନ୍ତୁ:"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr ""
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
+#: popup.dontShow
+msgid "Don't show"
 msgstr ""
 
 #. # SafeBrowsing
@@ -201,43 +216,6 @@ msgstr ""
 #. # site settings dialog.
 #: blockPopups.label
 msgid "Block Popups"
-msgstr ""
-
-#. # Telemetry
-#. # %1$S = server owner (Mozilla); %2$S = product name (Firefox)
-#: telemetry.optin.message2
-msgid "Send info to %1$S so that we can improve %2$S?"
-msgstr ""
-
-#: telemetry.optin.learnMore
-#, fuzzy
-msgid "Learn more"
-msgstr "ଅଧିକ ଜ୍ଞାନ ଆହରଣ କରନ୍ତୁ"
-
-#: telemetry.optin.yes
-#, fuzzy
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "ହଁ"
-
-#: telemetry.optin.no
-#, fuzzy
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "ନାଁ"
-
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
-#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-"%1$S କାର୍ଯ୍ୟ ଦକ୍ଷତା, ହାର୍ଡୱେର, ଉପଯୋଗ ଏବଂ ଇଚ୍ଛାରୂପଣ ବିଷୟରେ ସଚନା %2$S ପାଖକୁ %3$S କୁ "
-"ଉନ୍ନତତର କରିବା ପାଇଁ ପଠାଇଥାଏ।"
-
-#: telemetry.optout.ok
-msgid "OK"
 msgstr ""
 
 #. # XPInstall
@@ -291,8 +269,9 @@ msgstr "%S (%S)"
 msgid "Encrypted"
 msgstr "ସଂଗୁପ୍ତ"
 
-#: identity.ownerUnknown2
-msgid "(unknown)"
+#: identity.ownerUnknown3
+#, fuzzy
+msgid "unknown"
 msgstr "(ଅଜଣା)"
 
 #. # Geolocation UI
@@ -306,16 +285,8 @@ msgstr ""
 msgid "Don't share"
 msgstr "ସହଭାଗ କରନ୍ତୁ ନାହିଁ"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr ""
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr ""
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
+#: geolocation.ask
+msgid "Share your location with %S?"
 msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
@@ -339,11 +310,12 @@ msgid "Allow"
 msgstr "ଅନୁମତି ଦିଅନ୍ତୁ"
 
 #: desktopNotification.dontAllow
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr ""
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
 msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
@@ -360,8 +332,31 @@ msgctxt "desktopNotification.dontAskAgain"
 msgid "Don't ask again for this site"
 msgstr ""
 
+#. # Contacts API
+#: contacts.allow
+#, fuzzy
+msgctxt "contacts.allow"
+msgid "Allow"
+msgstr "ଅନୁମତି ଦିଅନ୍ତୁ"
+
+#: contacts.dontAllow
+msgctxt "contacts.dontAllow"
+msgid "Don't allow"
+msgstr ""
+
+#: contacts.ask
+msgid "Allow %S to access your contacts?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (contacts.dontAskAgain): This label appears next to a
+#. # checkbox to indicate whether or not the user wants to make a permanent decision.
+#: contacts.dontAskAgain
+msgctxt "contacts.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr ""
+
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
@@ -372,19 +367,14 @@ msgstr ""
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "ତ୍ରୁଟି:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "ଚେତାବନୀ:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+msgid "Allow %S to store data on your device for offline use?"
+msgstr ""
+
+#: offlineApps.dontAskAgain
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
 msgstr ""
 
 #: offlineApps.allow
@@ -392,14 +382,10 @@ msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "ଅନୁମତି ଦିଅନ୍ତୁ"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr ""
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "ବର୍ତ୍ତମାନ ନୁହଁ"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -407,154 +393,29 @@ msgstr "ବର୍ତ୍ତମାନ ନୁହଁ"
 msgid "Store Offline Data"
 msgstr ""
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr ""
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-#, fuzzy
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "ଅନୁମତି ଦିଅନ୍ତୁ"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+msgid "Save Password"
+msgstr ""
+
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
+msgstr ""
+
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
 #, fuzzy
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "ଅନୁମତି ଦିଅନ୍ତୁ"
-
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr ""
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "ପ୍ରବେଶ ସଂକେତକୁ ମନେରଖନ୍ତୁ"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-#, fuzzy
-msgid "Remember"
-msgstr "ମନେରଖନ୍ତୁ (&R)"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr ""
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr ""
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "ବନ୍ଦକରିବାକୁ ନିଶ୍ଚିତକରନ୍ତୁ"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr ""
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "ଟ୍ୟାବ ବନ୍ଦକରନ୍ତୁ"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "ମୁଁ ଏକାଧିକ ଟ୍ୟାବକୁ ବନ୍ଦକରିବାକୁ ଚେଷ୍ଟାକଲାବେଳେ ମୋତେ ଚେତାବନୀ ଦିଅନ୍ତୁ"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr ""
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr ""
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr ""
-
-#: tabs.crashClose
-#, fuzzy
-msgid "Close tab"
-msgstr "ଟ୍ୟାବ ବନ୍ଦକରନ୍ତୁ"
-
-#: tabs.crashReload
-#, fuzzy
-msgid "Reload tab"
-msgstr "ଟ୍ୟାବଗୁଡ଼ିକୁ ପୁନର୍ଧାରଣ କରନ୍ତୁ "
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr ""
-
-#. # Open Search
-#: opensearch.searchWith
-#, fuzzy
-msgid "Search With:"
-msgstr "ଏଥିରେ ସନ୍ଧାନ କରନ୍ତୁ:"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr ""
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr ""
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr ""
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr ""
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
-msgstr ""
+msgid "Don't save"
+msgstr "ସହଭାଗ କରନ୍ତୁ ନାହିଁ"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -572,14 +433,14 @@ msgstr "false"
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr ""
 
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "ଅଧିକ"
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
+msgstr ""
+
+#. # Casting
+#: casting.prompt
+msgid "Cast to Device"
 msgstr ""
 
 #. # Context menu
@@ -590,6 +451,10 @@ msgstr "ସଂଯୋଗକୁ ନୂତନ ଟ୍ୟାବରେ ଖୋଲନ୍
 
 #: contextmenu.openInPrivateTab
 msgid "Open Link in Private Tab"
+msgstr ""
+
+#: contextmenu.addToReadingList
+msgid "Add to Reading List"
 msgstr ""
 
 #: contextmenu.share
@@ -643,12 +508,19 @@ msgstr "ପ୍ରତିଛବି ଅବସ୍ଥିତି ନକଲ କରନ୍
 msgid "Share Image"
 msgstr "ପ୍ରତିଛବି ସଂରକ୍ଷଣ କରନ୍ତୁ"
 
+#. # LOCALIZATION NOTE (contextmenu.search):
+#. # The label of the contextmenu item which allows you to search with your default search engine for
+#. # the text you have selected. %S is the name of the search engine. For example, "Google".
+#: contextmenu.search
+msgid "%S Search"
+msgstr ""
+
 #: contextmenu.saveImage
 msgid "Save Image"
 msgstr "ପ୍ରତିଛବି ସଂରକ୍ଷଣ କରନ୍ତୁ"
 
-#: contextmenu.setWallpaper
-msgid "Set as Wallpaper"
+#: contextmenu.setImageAs
+msgid "Set Image As"
 msgstr ""
 
 #: contextmenu.addSearchEngine
@@ -660,6 +532,7 @@ msgid "Play"
 msgstr "ଚଲାନ୍ତୁ"
 
 #: contextmenu.pauseMedia
+msgctxt "contextmenu.pauseMedia"
 msgid "Pause"
 msgstr ""
 
@@ -673,6 +546,16 @@ msgstr "ଭିଡ଼ିଓ ସଂରକ୍ଷଣ କରନ୍ତୁ"
 msgid "Show Controls"
 msgstr "ନିୟନ୍ତ୍ରଣଗୁଡ଼ିକୁ ଦର୍ଶାନ୍ତୁ"
 
+#: contextmenu.mute
+#, fuzzy
+msgid "Mute"
+msgstr "ନିଃଶବ୍ଦ କରନ୍ତୁ"
+
+#: contextmenu.unmute
+#, fuzzy
+msgid "Unmute"
+msgstr "ନିଃଶବ୍ଦ ବାତିଲ କରନ୍ତୁ"
+
 #: contextmenu.saveVideo
 #, fuzzy
 msgid "Save Video"
@@ -682,18 +565,22 @@ msgstr "ଭିଡ଼ିଓ ସଂରକ୍ଷଣ କରନ୍ତୁ"
 msgid "Save Audio"
 msgstr "ଧ୍ୱନି ସଂରକ୍ଷଣ କରନ୍ତୁ"
 
+#: contextmenu.addToContacts
+msgid "Add to Contacts"
+msgstr ""
+
+#: contextmenu.castToScreen
+msgid "Cast to Screen"
+msgstr ""
+
 #: contextmenu.copy
 #, fuzzy
 msgid "Copy"
 msgstr "ନକଲ କରନ୍ତୁ"
 
-#: contextmenu.copyAll
-msgid "Copy All"
-msgstr ""
-
-#: contextmenu.selectWord
-msgid "Select Word"
-msgstr ""
+#: contextmenu.cut
+msgid "Cut"
+msgstr "କାଟନ୍ତୁ"
 
 #: contextmenu.selectAll
 msgid "Select All"
@@ -736,6 +623,8 @@ msgid "Pick a month"
 msgstr ""
 
 #: inputWidgetHelper.cancel
+#, fuzzy
+msgctxt "inputWidgetHelper.cancel"
 msgid "Cancel"
 msgstr "ବାତିଲ କରନ୍ତୁ"
 
@@ -793,21 +682,17 @@ msgid "Could not download manifest"
 msgstr ""
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr ""
 
-#: clickToPlayPlugins.yes
-#, fuzzy
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "ହଁ"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr ""
 
-#: clickToPlayPlugins.no
-#, fuzzy
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "ନାଁ"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -818,9 +703,10 @@ msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr ""
+#: clickToPlayPlugins.activatePlugins
+#, fuzzy
+msgid "Activate Plugins"
+msgstr "ପ୍ଲଗଇନଗୁଡ଼ିକୁ ସକ୍ରିୟ କରନ୍ତୁ"
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -857,6 +743,34 @@ msgstr ""
 msgid "Disable"
 msgstr "ନିଷ୍କ୍ରିୟ"
 
+#: remoteIncomingPromptAccept
+msgctxt "remoteIncomingPromptAccept"
+msgid "OK"
+msgstr ""
+
+#: remoteIncomingPromptCancel
+#, fuzzy
+msgctxt "remoteIncomingPromptCancel"
+msgid "Cancel"
+msgstr "ବାତିଲ କରନ୍ତୁ"
+
+#. # LOCALIZATION NOTE (remoteNotificationTitle): %S is the name of the app.
+#: remoteNotificationTitle
+msgid "%S debugging enabled"
+msgstr ""
+
+#. # LOCALIZATION NOTE (remoteNotificationGenericName): a generic name to use
+#. # if the name of the app is not available.
+#: remoteNotificationGenericName
+msgid "App"
+msgstr ""
+
+#. # LOCALIZATION NOTE (remoteNotificationMessage): %S is the port on which
+#. # the remote debugger server is listening.
+#: remoteNotificationMessage
+msgid "Listening on port %S"
+msgstr ""
+
 #. # Helper apps
 #: helperapps.open
 #, fuzzy
@@ -881,12 +795,30 @@ msgid "Open With an App"
 msgstr ""
 
 #: helperapps.always
+msgctxt "helperapps.always"
 msgid "Always"
 msgstr ""
 
 #: helperapps.never
-msgctxt "helperapps.never"
 msgid "Never"
+msgstr ""
+
+#: helperapps.pick
+msgid "Complete action using"
+msgstr ""
+
+#: helperapps.saveToDisk
+#, fuzzy
+msgid "Download"
+msgstr "ଆହରଣଗୁଡ଼ିକ"
+
+#: helperapps.alwaysUse
+msgctxt "helperapps.alwaysUse"
+msgid "Always"
+msgstr ""
+
+#: helperapps.useJustOnce
+msgid "Just once"
 msgstr ""
 
 #. #Lightweight themes
@@ -928,20 +860,165 @@ msgctxt "getUserMedia.shareRequest.label"
 msgid "Share"
 msgstr ""
 
-#: getUserMedia.sharingCamera.message
-msgid "You are currently sharing your camera with %S."
+#: getUserMedia.videoDevice.default
+msgid "Camera %S"
 msgstr ""
 
-#: getUserMedia.sharingMicrophone.message
-msgid "You are currently sharing your microphone with %S."
+#: getUserMedia.videoDevice.front
+msgid "Front facing"
 msgstr ""
 
-#: getUserMedia.sharingCameraAndMicrophone.message
-msgid "You are currently sharing your camera and microphone with %S."
+#: getUserMedia.videoDevice.back
+msgid "Back facing"
 msgstr ""
 
-#~ msgid "Downloads"
-#~ msgstr "ଆହରଣଗୁଡ଼ିକ"
+#: getUserMedia.videoDevice.none
+msgid "No Video"
+msgstr ""
+
+#: getUserMedia.videoDevice.prompt
+msgid "Camera to use"
+msgstr ""
+
+#: getUserMedia.audioDevice.default
+msgid "Microphone %S"
+msgstr ""
+
+#: getUserMedia.audioDevice.none
+msgid "No Audio"
+msgstr ""
+
+#: getUserMedia.audioDevice.prompt
+msgid "Microphone to use"
+msgstr ""
+
+#: getUserMedia.sharingCamera.message2
+msgid "Camera is on"
+msgstr ""
+
+#: getUserMedia.sharingMicrophone.message2
+msgid "Microphone is on"
+msgstr ""
+
+#: getUserMedia.sharingCameraAndMicrophone.message2
+msgid "Camera and microphone are on"
+msgstr ""
+
+#. #Reader mode
+#: readerMode.enter
+msgid "Enter Reader Mode"
+msgstr ""
+
+#: readerMode.exit
+msgid "Exit Reader Mode"
+msgstr ""
+
+#. #Open in App
+#: openInApp.pageAction
+msgid "Open in App"
+msgstr ""
+
+#: openInApp.ok
+msgctxt "openInApp.ok"
+msgid "OK"
+msgstr ""
+
+#: openInApp.cancel
+#, fuzzy
+msgctxt "openInApp.cancel"
+msgid "Cancel"
+msgstr "ବାତିଲ କରନ୍ତୁ"
+
+#, fuzzy
+#~ msgid "Installing add-on"
+#~ msgstr "ଏଡ-ଅନକୁ ସ୍ଥାପନ କରନ୍ତୁ"
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S ଏହି ସାଇଟକୁ ଗୋଟିଏ ପପ୍-ଅପ୍ ୱିଣ୍ଡୋ ଖୋଲିବାରୁ ପ୍ରତିରୋଧ କରିଛି."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr "%S ଏହି ସାଇଟକୁ %S ପପ୍-ଅପ୍ ୱିଣ୍ଡୋଗୁଡ଼ିକୁ ଖୋଲିବାରୁ ପ୍ରତିରୋଧ କରିଛି."
+
+#, fuzzy
+#~ msgid "Learn more"
+#~ msgstr "ଅଧିକ ଜ୍ଞାନ ଆହରଣ କରନ୍ତୁ"
+
+#, fuzzy
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "ହଁ"
+
+#, fuzzy
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "ନାଁ"
+
+#~ msgid ""
+#~ "%1$S sends information about performance, hardware, usage and "
+#~ "customizations back to %2$S to help improve %3$S."
+#~ msgstr ""
+#~ "%1$S କାର୍ଯ୍ୟ ଦକ୍ଷତା, ହାର୍ଡୱେର, ଉପଯୋଗ ଏବଂ ଇଚ୍ଛାରୂପଣ ବିଷୟରେ ସଚନା %2$S ପାଖକୁ %3$S କୁ "
+#~ "ଉନ୍ନତତର କରିବା ପାଇଁ ପଠାଇଥାଏ।"
+
+#~ msgid "Error:"
+#~ msgstr "ତ୍ରୁଟି:"
+
+#~ msgid "Warning:"
+#~ msgstr "ଚେତାବନୀ:"
+
+#~ msgid "Not Now"
+#~ msgstr "ବର୍ତ୍ତମାନ ନୁହଁ"
+
+#, fuzzy
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "ଅନୁମତି ଦିଅନ୍ତୁ"
+
+#, fuzzy
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "ଅନୁମତି ଦିଅନ୍ତୁ"
+
+#~ msgid "Remember Password"
+#~ msgstr "ପ୍ରବେଶ ସଂକେତକୁ ମନେରଖନ୍ତୁ"
+
+#, fuzzy
+#~ msgid "Remember"
+#~ msgstr "ମନେରଖନ୍ତୁ (&R)"
+
+#~ msgid "Confirm close"
+#~ msgstr "ବନ୍ଦକରିବାକୁ ନିଶ୍ଚିତକରନ୍ତୁ"
+
+#~ msgid "Close tabs"
+#~ msgstr "ଟ୍ୟାବ ବନ୍ଦକରନ୍ତୁ"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "ମୁଁ ଏକାଧିକ ଟ୍ୟାବକୁ ବନ୍ଦକରିବାକୁ ଚେଷ୍ଟାକଲାବେଳେ ମୋତେ ଚେତାବନୀ ଦିଅନ୍ତୁ"
+
+#, fuzzy
+#~ msgid "Close tab"
+#~ msgstr "ଟ୍ୟାବ ବନ୍ଦକରନ୍ତୁ"
+
+#, fuzzy
+#~ msgid "Reload tab"
+#~ msgstr "ଟ୍ୟାବଗୁଡ଼ିକୁ ପୁନର୍ଧାରଣ କରନ୍ତୁ "
+
+#, fuzzy
+#~ msgid "Search With:"
+#~ msgstr "ଏଥିରେ ସନ୍ଧାନ କରନ୍ତୁ:"
+
+#~ msgid "More"
+#~ msgstr "ଅଧିକ"
+
+#, fuzzy
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "ହଁ"
+
+#, fuzzy
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "ନାଁ"
 
 #~ msgid "Downloading: %S"
 #~ msgstr "ଆହରଣ କରୁଅଛି: %S"
@@ -1152,9 +1229,6 @@ msgstr ""
 
 #~ msgid "Would you like to activate the plugins on this page?"
 #~ msgstr "ଏହି ପୃଷ୍ଠାରେ ଆପଣ ପ୍ଲଗଇନଗୁଡ଼ିକୁ ସକ୍ରିୟ କରିବା ପାଇଁ ଚାହୁଁଛନ୍ତି କି?"
-
-#~ msgid "Activate plugins"
-#~ msgstr "ପ୍ଲଗଇନଗୁଡ଼ିକୁ ସକ୍ରିୟ କରନ୍ତୁ"
 
 #~ msgctxt "activatePluginsMessage.accesskey"
 #~ msgid "A"
