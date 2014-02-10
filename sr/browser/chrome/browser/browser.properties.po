@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-10 18:06+0100\n"
+"POT-Creation-Date: 2014-02-10 14:41+0100\n"
 "PO-Revision-Date: 2013-02-28 08:40+0000\n"
 "Last-Translator: milossh <mdinic@mozilla.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.11.0-rc1\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1362040837.000000\n"
@@ -566,66 +566,17 @@ msgstr "Цео историјат ће бити очишћен."
 msgid "All selected items will be cleared."
 msgstr "Све изабране ставке ће бити уклоњене."
 
-#. # Check for Updates in the About Dialog - button labels and accesskeys
-#. # LOCALIZATION NOTE - all of the following update buttons labels will only be
-#. # displayed one at a time. So, if a button is displayed nothing else will
-#. # be displayed alongside of the button. The button when displayed is located
-#. # directly under the Firefox version in the about dialog (see bug 596813 for
-#. # screenshots).
-#: update.checkInsideButton.label
-msgid "Check for Updates"
-msgstr "Провера доградњи"
-
-#: update.checkInsideButton.accesskey
+#. # LOCALIZATION NOTE (downloadAndInstallButton.label): %S is replaced by the
+#. # version of the update: "Update to 28.0".
+#: update.downloadAndInstallButton.label
 #, fuzzy
-msgctxt "update.checkInsideButton.accesskey"
-msgid "C"
-msgstr "П"
+msgid "Update to %S"
+msgstr "Догради %S"
 
-#: update.resumeButton.label
-msgid "Resume Downloading %S…"
-msgstr "Наставак пријема: %S…"
-
-#: update.resumeButton.accesskey
-msgctxt "update.resumeButton.accesskey"
-msgid "D"
-msgstr "Н"
-
-#: update.openUpdateUI.applyButton.label
-msgid "Apply Update…"
-msgstr "Примени доградњу…"
-
-#: update.openUpdateUI.applyButton.accesskey
-msgctxt "update.openUpdateUI.applyButton.accesskey"
-msgid "A"
-msgstr "П"
-
-#: update.restart.updateButton.label
-msgid "Restart to Update"
-msgstr ""
-
-#: update.restart.updateButton.accesskey
-msgctxt "update.restart.updateButton.accesskey"
-msgid "R"
-msgstr ""
-
-#: update.openUpdateUI.upgradeButton.label
-msgid "Upgrade Now…"
-msgstr "Догради…"
-
-#: update.openUpdateUI.upgradeButton.accesskey
-msgctxt "update.openUpdateUI.upgradeButton.accesskey"
+#: update.downloadAndInstallButton.accesskey
+msgctxt "update.downloadAndInstallButton.accesskey"
 msgid "U"
-msgstr "Д"
-
-#: update.restart.upgradeButton.label
-msgid "Upgrade Now"
-msgstr "Догради"
-
-#: update.restart.upgradeButton.accesskey
-msgctxt "update.restart.upgradeButton.accesskey"
-msgid "U"
-msgstr "г"
+msgstr ""
 
 #. # RSS Pretty Print
 #: feedShowFeedNew
@@ -641,10 +592,23 @@ msgstr "Отвори све у језичцима"
 msgid "Restore All Tabs"
 msgstr "Врати све језичке"
 
+#. # LOCALIZATION NOTE (menuRestoreAllTabsSubview.label): like menuRestoreAllTabs.label,
+#. # but used in the history subview in the panel UI, so needs to mention these are *closed* tabs.
+#: menuRestoreAllTabsSubview.label
+msgid "Restore Closed Tabs"
+msgstr ""
+
 #. # LOCALIZATION NOTE (menuRestoreAllWindows, menuUndoCloseWindowLabel, menuUndoCloseWindowSingleTabLabel):
 #. # see bug 394759
 #: menuRestoreAllWindows.label
 msgid "Restore All Windows"
+msgstr "Обнови све прозоре"
+
+#. # LOCALIZATION NOTE (menuRestoreAllWindowsSubview.label): like menuRestoreAllWindows.label,
+#. # but used in the history subview in the panel UI, so needs to mention these are *closed* windows.
+#: menuRestoreAllWindowsSubview.label
+#, fuzzy
+msgid "Restore Closed Windows"
 msgstr "Обнови све прозоре"
 
 #. # LOCALIZATION NOTE (menuUndoCloseWindowLabel): Semicolon-separated list of plural forms.
@@ -696,6 +660,13 @@ msgstr "%S је спречио ову страницу да се аутомат�
 msgid "%S prevented this page from automatically redirecting to another page."
 msgstr "%S је спречио ову страницу да аутоматски проследи на другу страницу."
 
+#. # General bookmarks button
+#. # LOCALIZATION NOTE (bookmarksMenuButton.tooltip):
+#. # %S is the keyboard shortcut for "Show All Bookmarks"
+#: bookmarksMenuButton.tooltip
+msgid "Show your bookmarks (%S)"
+msgstr ""
+
 #. # Star button
 #: starButtonOn.tooltip
 msgid "Edit this bookmark"
@@ -704,6 +675,34 @@ msgstr "Уреди ову забелешку"
 #: starButtonOff.tooltip
 msgid "Bookmark this page"
 msgstr "Забележи ову страну"
+
+#: starButtonOverflowed.label
+#, fuzzy
+msgid "Bookmark This Page"
+msgstr "Забележи ову страну"
+
+#: starButtonOverflowedStarred.label
+#, fuzzy
+msgctxt "starButtonOverflowedStarred.label"
+msgid "Edit This Bookmark"
+msgstr "Уреди ову забелешку"
+
+#. # Print button tooltip on OS X
+#. # LOCALIZATION NOTE (printButton.tooltip):
+#. # Use the unicode ellipsis char, \u2026,
+#. # or use "..." if \u2026 doesn't suit traditions in your locale.
+#. # %S is the keyboard shortcut for "Print"
+#: printButton.tooltip
+msgid "Print this page… (%S)"
+msgstr ""
+
+#. # New Window button tooltip
+#. # LOCALIZATION NOTE (newWindowButton.tooltip):
+#. # %S is the keyboard shortcut for "New Window"
+#: newWindowButton.tooltip
+#, fuzzy
+msgid "Open a new window (%S)"
+msgstr "Отвара нови прозор"
 
 #. # Offline web applications
 #: offlineApps.available
@@ -828,6 +827,8 @@ msgid "Bookmark Removed"
 msgstr "Забелешка је уклоњена"
 
 #: editBookmarkPanel.editBookmarkTitle
+#, fuzzy
+msgctxt "editBookmarkPanel.editBookmarkTitle"
 msgid "Edit This Bookmark"
 msgstr "Уреди ову забелешку"
 
@@ -1039,6 +1040,12 @@ msgstr ""
 msgid "#1 and 1 more;#1 and #2 more"
 msgstr ""
 
+#. # LOCALIZATION NOTE (tabviewButton.tooltip): %S is the keyboard shortcut for tab groups
+#: tabviewButton.tooltip
+#, fuzzy
+msgid "Group your tabs (%S)"
+msgstr "Групишите своје језичке"
+
 #: extensions.{972ce4c6-7e08-4474-a285-3208198ce6fd}.name
 msgid "Default"
 msgstr "Изворно"
@@ -1157,6 +1164,12 @@ msgstr ""
 #: fullscreen.rememberDecision
 msgid "Remember decision for %S"
 msgstr ""
+
+#. # LOCALIZATION NOTE (fullscreenButton.tooltip): %S is the keyboard shortcut for full screen
+#: fullscreenButton.tooltip
+#, fuzzy
+msgid "Display the window in full screen (%S)"
+msgstr "Прикажи прозор преко целог екрана"
 
 #: service.toolbarbutton.label
 #, fuzzy
@@ -1378,6 +1391,24 @@ msgstr ""
 msgid "You are currently sharing your camera and microphone with this page."
 msgstr ""
 
+#: getUserMedia.continueSharing.label
+msgid "Continue Sharing"
+msgstr ""
+
+#: getUserMedia.continueSharing.accesskey
+msgctxt "getUserMedia.continueSharing.accesskey"
+msgid "C"
+msgstr ""
+
+#: getUserMedia.stopSharing.label
+msgid "Stop Sharing"
+msgstr ""
+
+#: getUserMedia.stopSharing.accesskey
+msgctxt "getUserMedia.stopSharing.accesskey"
+msgid "S"
+msgstr ""
+
 #. # Mixed Content Blocker Doorhanger Notification
 #. # LOCALIZATION NOTE - %S is brandShortName
 #: mixedContentBlocked.message
@@ -1423,6 +1454,56 @@ msgstr ""
 msgctxt "slowStartup.disableNotificationButton.accesskey"
 msgid "A"
 msgstr ""
+
+#. # LOCALIZATION NOTE(customizeTips.tip0): %1$S will be replaced with the text defined
+#. # in customizeTips.tip0.hint, %2$S will be replaced with brandShortName, %3$S will
+#. # be replaced with a hyperlink containing the text defined in customizeTips.tip0.learnMore.
+#: customizeTips.tip0
+msgid ""
+"%1$S: You can customize %2$S to work the way you do. Simply drag any of the "
+"above to the menu or toolbar. %3$S about customizing %2$S."
+msgstr ""
+
+#: customizeTips.tip0.hint
+msgid "Hint"
+msgstr ""
+
+#: customizeTips.tip0.learnMore
+#, fuzzy
+msgid "Learn more"
+msgstr "Сазнајте више"
+
+#~ msgid "Check for Updates"
+#~ msgstr "Провера доградњи"
+
+#, fuzzy
+#~ msgctxt "update.checkInsideButton.accesskey"
+#~ msgid "C"
+#~ msgstr "П"
+
+#~ msgid "Resume Downloading %S…"
+#~ msgstr "Наставак пријема: %S…"
+
+#~ msgid "Apply Update…"
+#~ msgstr "Примени доградњу…"
+
+#~ msgctxt "update.openUpdateUI.applyButton.accesskey"
+#~ msgid "A"
+#~ msgstr "П"
+
+#~ msgid "Upgrade Now…"
+#~ msgstr "Догради…"
+
+#~ msgctxt "update.openUpdateUI.upgradeButton.accesskey"
+#~ msgid "U"
+#~ msgstr "Д"
+
+#~ msgid "Upgrade Now"
+#~ msgstr "Догради"
+
+#~ msgctxt "update.restart.upgradeButton.accesskey"
+#~ msgid "U"
+#~ msgstr "г"
 
 #~ msgid ""
 #~ "Your connection to this website is encrypted to prevent eavesdropping."

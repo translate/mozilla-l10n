@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-15 17:48+0100\n"
+"POT-Creation-Date: 2014-02-10 14:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.11.0-rc1\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -195,6 +195,10 @@ msgstr "請選擇有效的值。最接近的有效值為 %S 與 %S。"
 msgid "Please select a valid value. The nearest valid value is %S."
 msgstr "請選擇有效的值。最接近的有效值為 %S。"
 
+#: FormValidationBadInputNumber
+msgid "Please enter a number."
+msgstr ""
+
 #: GetAttributeNodeWarning
 msgid "Use of getAttributeNode() is deprecated. Use getAttribute() instead."
 msgstr "已棄用 getAttributeNode()。請改用 getAttribute()。"
@@ -235,10 +239,6 @@ msgid ""
 "Use of attributes' specified attribute is deprecated. It always returns true."
 msgstr "已棄用屬性值的 specified 屬性方法。總是會回傳 true。"
 
-#: OwnerElementWarning
-msgid "Use of attributes' ownerElement attribute is deprecated."
-msgstr "已棄用屬性值的 ownerElement 屬性方法。"
-
 #: NodeValueWarning
 msgid ""
 "Use of attributes' nodeValue attribute is deprecated. Use value instead."
@@ -250,17 +250,20 @@ msgid ""
 msgstr "已棄用屬性值的 textContent 屬性方法。請改用 value。"
 
 #: EnablePrivilegeWarning
+#, fuzzy
 msgid ""
-"Use of enablePrivilege is deprecated.  Please use code that runs with the "
+"Use of enablePrivilege is deprecated. Please use code that runs with the "
 "system principal (e.g. an extension) instead."
 msgstr "已棄用 enablePrivilege。請改用以系統為主體（例如擴充套件）的程式碼。"
 
 #: nsIJSONDecodeDeprecatedWarning
-msgid "nsIJSON.decode is deprecated.  Please use JSON.parse instead."
+#, fuzzy
+msgid "nsIJSON.decode is deprecated. Please use JSON.parse instead."
 msgstr "已棄用 nsIJSON.decode。請改用 JSON.parse。"
 
 #: nsIJSONEncodeDeprecatedWarning
-msgid "nsIJSON.encode is deprecated.  Please use JSON.stringify instead."
+#, fuzzy
+msgid "nsIJSON.encode is deprecated. Please use JSON.stringify instead."
 msgstr "已棄用 nsIJSON.encode。請改用 JSON.stringify。"
 
 #: nsIDOMWindowInternalWarning
@@ -273,9 +276,10 @@ msgstr "已棄用 inputEncoding。"
 
 #. # LOCALIZATION NOTE: Do not translate "MozBeforePaint" and "mozRequestAnimationFrame"
 #: MozBeforePaintWarning
+#, fuzzy
 msgid ""
-"MozBeforePaint events are no longer supported.  mozRequestAnimationFrame "
-"must be passed a non-null callback argument."
+"MozBeforePaint events are no longer supported. mozRequestAnimationFrame must "
+"be passed a non-null callback argument."
 msgstr ""
 "已不再支援 MozBeforePaint。mozRequestAnimationFrame 必須由非 null 呼叫參數傳"
 "遞。"
@@ -505,7 +509,8 @@ msgstr "已棄用 Mutation Events。請改用 MutationObserver。"
 
 #. # LOCALIZATION NOTE: Do not translate "Blob", "mozSlice", or "slice"
 #: MozSliceWarning
-msgid "Use of mozSlice on the Blob object is deprecated.  Use slice instead."
+#, fuzzy
+msgid "Use of mozSlice on the Blob object is deprecated. Use slice instead."
 msgstr "已棄用對 Blob 物件使用 mozSlice 的方法。請改用 slice。"
 
 #. # LOCALIZATION NOTE: Do not translate "Components"
@@ -537,8 +542,9 @@ msgstr "結束外掛程式"
 
 #. # LOCALIZATION NOTE: Do not translate "mozHidden", "mozVisibilityState", "hidden", or "visibilityState"
 #: PrefixedVisibilityApiWarning
+#, fuzzy
 msgid ""
-"'mozHidden' and 'mozVisibilityState' are deprecated.  Please use the "
+"'mozHidden' and 'mozVisibilityState' are deprecated. Please use the "
 "unprefixed 'hidden' and 'visibilityState' instead."
 msgstr ""
 "已棄用「mozHidden」與「mozVisibilityState」，請改用沒有前綴的「hidden」與"
@@ -551,8 +557,9 @@ msgstr "對 NodeIterator 呼叫 detach() 將不再有效。"
 
 #. # LOCALIZATION NOTE: Do not translate "Mozilla Audio Data API" and "Web Audio API".
 #: MozAudioDataWarning
+#, fuzzy
 msgid ""
-"The Mozilla Audio Data API is deprecated.  Please use the Web Audio API "
+"The Mozilla Audio Data API is deprecated. Please use the Web Audio API "
 "instead."
 msgstr "已棄用 Mozilla Audio Data API，請改用 Web Audio API。"
 
@@ -566,8 +573,9 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "nsIDOMWindowUtils", "getWindowWithOuterId", or "nsIWindowMediator"
 #: GetWindowWithOuterIdWarning
+#, fuzzy
 msgid ""
-"Use of nsIDOMWindowUtils.getOuterWindowWithId() is deprecated.  Instead, use "
+"Use of nsIDOMWindowUtils.getOuterWindowWithId() is deprecated. Instead, use "
 "the nsIWindowMediator method of the same name."
 msgstr ""
 "已棄用 nsIDOMWindowUtils.getOuterWindowWithId()，請改用 nsIWindowMediator 方"
@@ -575,23 +583,25 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "getPreventDefault" or "defaultPrevented".
 #: GetPreventDefaultWarning
-msgid ""
-"Use of getPreventDefault() is deprecated.  Use defaultPrevented instead."
+#, fuzzy
+msgid "Use of getPreventDefault() is deprecated. Use defaultPrevented instead."
 msgstr "已棄用 getPreventDefault()。請改用 defaultPrevented。"
 
 #. # LOCALIZATION NOTE: Do not translate "getUserData", "setUserData", "WeakMap", or "element.dataset".
 #: GetSetUserDataWarning
+#, fuzzy
 msgid ""
-"Use of getUserData() or setUserData() is deprecated.  Use WeakMap or element."
+"Use of getUserData() or setUserData() is deprecated. Use WeakMap or element."
 "dataset instead."
 msgstr ""
 "已棄用 getUserData() 與 setUserData()。請改用 WeakMap 或 element.dataset。"
 
 #. # LOCALIZATION NOTE: Do not translate "mozGetAsFile" or "toBlob"
 #: MozGetAsFileWarning
+#, fuzzy
 msgid ""
-"The non-standard mozGetAsFile method is deprecated and will soon be "
-"removed.  Use the standard toBlob method instead."
+"The non-standard mozGetAsFile method is deprecated and will soon be removed. "
+"Use the standard toBlob method instead."
 msgstr ""
 "非標準的 mozGetAsFile 方法已被棄用，將被移除。請改用標準的 toBlob 方法。"
 
@@ -633,18 +643,10 @@ msgid ""
 "For more help https://developer.mozilla.org/en-US/docs/Web/API/Window.open"
 msgstr ""
 
-#. # LOCALIZATION NOTE: Do not translate "cloneNode()"
-#: UnsafeCloneNodeWarning
-msgid ""
-"The behavior of cloneNode() with no boolean argument is about to change from "
-"doing a deep clone to doing a shallow clone.  Make sure to pass an explicit "
-"boolean argument to keep your current behavior."
+#. # LOCALIZATION NOTE: Do not translate "window._content" or "window.content"
+#: Window_ContentWarning
+msgid "window._content is deprecated. Please use window.content instead."
 msgstr ""
 
-#. # LOCALIZATION NOTE: Do not translate "importNode()"
-#: UnsafeImportNodeWarning
-msgid ""
-"The behavior of importNode() with no boolean argument is about to change "
-"from doing a deep clone to doing a shallow clone.  Make sure to pass an "
-"explicit boolean argument to keep your current behavior."
-msgstr ""
+#~ msgid "Use of attributes' ownerElement attribute is deprecated."
+#~ msgstr "已棄用屬性值的 ownerElement 屬性方法。"
