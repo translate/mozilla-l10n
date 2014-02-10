@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-10 18:06+0100\n"
+"POT-Creation-Date: 2014-02-10 14:41+0100\n"
 "PO-Revision-Date: 2014-02-01 14:59+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Pootle 2.5.1-rc1\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1391266774.000000\n"
@@ -575,65 +575,17 @@ msgstr "Wša historija so wuprózdni"
 msgid "All selected items will be cleared."
 msgstr "Wšě wubrane zapiski so wotstronja."
 
-#. # Check for Updates in the About Dialog - button labels and accesskeys
-#. # LOCALIZATION NOTE - all of the following update buttons labels will only be
-#. # displayed one at a time. So, if a button is displayed nothing else will
-#. # be displayed alongside of the button. The button when displayed is located
-#. # directly under the Firefox version in the about dialog (see bug 596813 for
-#. # screenshots).
-#: update.checkInsideButton.label
-msgid "Check for Updates"
-msgstr "Aktualizacije pytać"
+#. # LOCALIZATION NOTE (downloadAndInstallButton.label): %S is replaced by the
+#. # version of the update: "Update to 28.0".
+#: update.downloadAndInstallButton.label
+#, fuzzy
+msgid "Update to %S"
+msgstr "%S aktualizować"
 
-#: update.checkInsideButton.accesskey
-msgctxt "update.checkInsideButton.accesskey"
-msgid "C"
-msgstr "A"
-
-#: update.resumeButton.label
-msgid "Resume Downloading %S…"
-msgstr "Ze sćehnjenjom %S pokročować…"
-
-#: update.resumeButton.accesskey
-msgctxt "update.resumeButton.accesskey"
-msgid "D"
-msgstr "s"
-
-#: update.openUpdateUI.applyButton.label
-msgid "Apply Update…"
-msgstr "Aktualizaciju nałožić…"
-
-#: update.openUpdateUI.applyButton.accesskey
-msgctxt "update.openUpdateUI.applyButton.accesskey"
-msgid "A"
-msgstr "n"
-
-#: update.restart.updateButton.label
-msgid "Restart to Update"
-msgstr "Za aktualizaciju znowa startować"
-
-#: update.restart.updateButton.accesskey
-msgctxt "update.restart.updateButton.accesskey"
-msgid "R"
-msgstr "z"
-
-#: update.openUpdateUI.upgradeButton.label
-msgid "Upgrade Now…"
-msgstr "Nětko aktualizować…"
-
-#: update.openUpdateUI.upgradeButton.accesskey
-msgctxt "update.openUpdateUI.upgradeButton.accesskey"
+#: update.downloadAndInstallButton.accesskey
+msgctxt "update.downloadAndInstallButton.accesskey"
 msgid "U"
-msgstr "N"
-
-#: update.restart.upgradeButton.label
-msgid "Upgrade Now"
-msgstr "Nětko aktualizować"
-
-#: update.restart.upgradeButton.accesskey
-msgctxt "update.restart.upgradeButton.accesskey"
-msgid "U"
-msgstr "N"
+msgstr ""
 
 #. # RSS Pretty Print
 #: feedShowFeedNew
@@ -649,10 +601,23 @@ msgstr "We wšěch rajtarkach wočinić"
 msgid "Restore All Tabs"
 msgstr "Wšě rajtarki wobnowić"
 
+#. # LOCALIZATION NOTE (menuRestoreAllTabsSubview.label): like menuRestoreAllTabs.label,
+#. # but used in the history subview in the panel UI, so needs to mention these are *closed* tabs.
+#: menuRestoreAllTabsSubview.label
+msgid "Restore Closed Tabs"
+msgstr ""
+
 #. # LOCALIZATION NOTE (menuRestoreAllWindows, menuUndoCloseWindowLabel, menuUndoCloseWindowSingleTabLabel):
 #. # see bug 394759
 #: menuRestoreAllWindows.label
 msgid "Restore All Windows"
+msgstr "Wšě wokna wobnowić"
+
+#. # LOCALIZATION NOTE (menuRestoreAllWindowsSubview.label): like menuRestoreAllWindows.label,
+#. # but used in the history subview in the panel UI, so needs to mention these are *closed* windows.
+#: menuRestoreAllWindowsSubview.label
+#, fuzzy
+msgid "Restore Closed Windows"
 msgstr "Wšě wokna wobnowić"
 
 #. # LOCALIZATION NOTE (menuUndoCloseWindowLabel): Semicolon-separated list of plural forms.
@@ -706,6 +671,13 @@ msgid "%S prevented this page from automatically redirecting to another page."
 msgstr ""
 "%S je tutu stronu při awtomatiskim dalesposrědkowanju k druhej stronje haćił."
 
+#. # General bookmarks button
+#. # LOCALIZATION NOTE (bookmarksMenuButton.tooltip):
+#. # %S is the keyboard shortcut for "Show All Bookmarks"
+#: bookmarksMenuButton.tooltip
+msgid "Show your bookmarks (%S)"
+msgstr ""
+
 #. # Star button
 #: starButtonOn.tooltip
 msgid "Edit this bookmark"
@@ -714,6 +686,34 @@ msgstr "Tutu zapołožku wobdźěłać"
 #: starButtonOff.tooltip
 msgid "Bookmark this page"
 msgstr "Tutu stronu jako zapołožku składować"
+
+#: starButtonOverflowed.label
+#, fuzzy
+msgid "Bookmark This Page"
+msgstr "Tutu stronu jako zapołožku składować"
+
+#: starButtonOverflowedStarred.label
+#, fuzzy
+msgctxt "starButtonOverflowedStarred.label"
+msgid "Edit This Bookmark"
+msgstr "Tutu zapołožku wobdźěłać"
+
+#. # Print button tooltip on OS X
+#. # LOCALIZATION NOTE (printButton.tooltip):
+#. # Use the unicode ellipsis char, \u2026,
+#. # or use "..." if \u2026 doesn't suit traditions in your locale.
+#. # %S is the keyboard shortcut for "Print"
+#: printButton.tooltip
+msgid "Print this page… (%S)"
+msgstr ""
+
+#. # New Window button tooltip
+#. # LOCALIZATION NOTE (newWindowButton.tooltip):
+#. # %S is the keyboard shortcut for "New Window"
+#: newWindowButton.tooltip
+#, fuzzy
+msgid "Open a new window (%S)"
+msgstr "Nowe wokno wočinić"
 
 #. # Offline web applications
 #: offlineApps.available
@@ -843,6 +843,8 @@ msgid "Bookmark Removed"
 msgstr "Zapołožka wotstronjena"
 
 #: editBookmarkPanel.editBookmarkTitle
+#, fuzzy
+msgctxt "editBookmarkPanel.editBookmarkTitle"
 msgid "Edit This Bookmark"
 msgstr "Tutu zapołožku wobdźěłać"
 
@@ -1056,6 +1058,12 @@ msgstr "%S - Waše rajtarki zeskupić"
 msgid "#1 and 1 more;#1 and #2 more"
 msgstr "#1 a 1 dalši;#1 a #2 dalšej;#1 a #2 dalše;#1 a #2 dalšich"
 
+#. # LOCALIZATION NOTE (tabviewButton.tooltip): %S is the keyboard shortcut for tab groups
+#: tabviewButton.tooltip
+#, fuzzy
+msgid "Group your tabs (%S)"
+msgstr "Waše rajtarki zeskupić"
+
 #: extensions.{972ce4c6-7e08-4474-a285-3208198ce6fd}.name
 msgid "Default"
 msgstr "Standard"
@@ -1174,6 +1182,12 @@ msgstr "%S je nětko w połnej wobrazowce."
 #: fullscreen.rememberDecision
 msgid "Remember decision for %S"
 msgstr "Rozsud za %S sej spomjatkować"
+
+#. # LOCALIZATION NOTE (fullscreenButton.tooltip): %S is the keyboard shortcut for full screen
+#: fullscreenButton.tooltip
+#, fuzzy
+msgid "Display the window in full screen (%S)"
+msgstr "Wokno na połnej wobrazowce zwobraznić"
 
 #: service.toolbarbutton.label
 msgctxt "service.toolbarbutton.label"
@@ -1391,6 +1405,24 @@ msgid "You are currently sharing your camera and microphone with this page."
 msgstr ""
 "Wužiwaće tuchwilu swoju kameru a swój mikrofon hromadźe z tutej stronu."
 
+#: getUserMedia.continueSharing.label
+msgid "Continue Sharing"
+msgstr ""
+
+#: getUserMedia.continueSharing.accesskey
+msgctxt "getUserMedia.continueSharing.accesskey"
+msgid "C"
+msgstr ""
+
+#: getUserMedia.stopSharing.label
+msgid "Stop Sharing"
+msgstr ""
+
+#: getUserMedia.stopSharing.accesskey
+msgctxt "getUserMedia.stopSharing.accesskey"
+msgid "S"
+msgstr ""
+
 #. # Mixed Content Blocker Doorhanger Notification
 #. # LOCALIZATION NOTE - %S is brandShortName
 #: mixedContentBlocked.message
@@ -1436,6 +1468,62 @@ msgstr "Hižo njeinformować"
 msgctxt "slowStartup.disableNotificationButton.accesskey"
 msgid "A"
 msgstr "H"
+
+#. # LOCALIZATION NOTE(customizeTips.tip0): %1$S will be replaced with the text defined
+#. # in customizeTips.tip0.hint, %2$S will be replaced with brandShortName, %3$S will
+#. # be replaced with a hyperlink containing the text defined in customizeTips.tip0.learnMore.
+#: customizeTips.tip0
+msgid ""
+"%1$S: You can customize %2$S to work the way you do. Simply drag any of the "
+"above to the menu or toolbar. %3$S about customizing %2$S."
+msgstr ""
+
+#: customizeTips.tip0.hint
+msgid "Hint"
+msgstr ""
+
+#: customizeTips.tip0.learnMore
+#, fuzzy
+msgid "Learn more"
+msgstr "Dalše informacije"
+
+#~ msgid "Check for Updates"
+#~ msgstr "Aktualizacije pytać"
+
+#~ msgctxt "update.checkInsideButton.accesskey"
+#~ msgid "C"
+#~ msgstr "A"
+
+#~ msgid "Resume Downloading %S…"
+#~ msgstr "Ze sćehnjenjom %S pokročować…"
+
+#~ msgid "Apply Update…"
+#~ msgstr "Aktualizaciju nałožić…"
+
+#~ msgctxt "update.openUpdateUI.applyButton.accesskey"
+#~ msgid "A"
+#~ msgstr "n"
+
+#~ msgid "Restart to Update"
+#~ msgstr "Za aktualizaciju znowa startować"
+
+#~ msgctxt "update.restart.updateButton.accesskey"
+#~ msgid "R"
+#~ msgstr "z"
+
+#~ msgid "Upgrade Now…"
+#~ msgstr "Nětko aktualizować…"
+
+#~ msgctxt "update.openUpdateUI.upgradeButton.accesskey"
+#~ msgid "U"
+#~ msgstr "N"
+
+#~ msgid "Upgrade Now"
+#~ msgstr "Nětko aktualizować"
+
+#~ msgctxt "update.restart.upgradeButton.accesskey"
+#~ msgid "U"
+#~ msgstr "N"
 
 #~ msgid "Do not show me this dialog box again."
 #~ msgstr "Tutón dialogowy kašćik wjace njepokazać."

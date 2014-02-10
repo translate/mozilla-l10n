@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-10 18:06+0100\n"
+"POT-Creation-Date: 2014-02-10 14:41+0100\n"
 "PO-Revision-Date: 2013-07-12 16:30+0000\n"
 "Last-Translator: Dwayne Bailey <dwayne@translate.org.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.11.0-rc1\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1373646657.000000\n"
@@ -570,65 +570,17 @@ msgstr "Wonke umlando uzosuswa."
 msgid "All selected items will be cleared."
 msgstr "Zonke izinto ezikhethiwe zizosuswa."
 
-#. # Check for Updates in the About Dialog - button labels and accesskeys
-#. # LOCALIZATION NOTE - all of the following update buttons labels will only be
-#. # displayed one at a time. So, if a button is displayed nothing else will
-#. # be displayed alongside of the button. The button when displayed is located
-#. # directly under the Firefox version in the about dialog (see bug 596813 for
-#. # screenshots).
-#: update.checkInsideButton.label
-msgid "Check for Updates"
-msgstr "Bheka ukuvuselelwa"
+#. # LOCALIZATION NOTE (downloadAndInstallButton.label): %S is replaced by the
+#. # version of the update: "Update to 28.0".
+#: update.downloadAndInstallButton.label
+#, fuzzy
+msgid "Update to %S"
+msgstr "Vuselela i-%S"
 
-#: update.checkInsideButton.accesskey
-msgctxt "update.checkInsideButton.accesskey"
-msgid "C"
-msgstr "C"
-
-#: update.resumeButton.label
-msgid "Resume Downloading %S…"
-msgstr "Qala futhi ukulayisha i-%S…"
-
-#: update.resumeButton.accesskey
-msgctxt "update.resumeButton.accesskey"
-msgid "D"
-msgstr "D"
-
-#: update.openUpdateUI.applyButton.label
-msgid "Apply Update…"
-msgstr "Sebenzisa ukuvuselelwa…"
-
-#: update.openUpdateUI.applyButton.accesskey
-msgctxt "update.openUpdateUI.applyButton.accesskey"
-msgid "A"
-msgstr "A"
-
-#: update.restart.updateButton.label
-msgid "Restart to Update"
-msgstr "Qala kabusha ukuze ufake ukwaziswa kamuva"
-
-#: update.restart.updateButton.accesskey
-msgctxt "update.restart.updateButton.accesskey"
-msgid "R"
-msgstr "R"
-
-#: update.openUpdateUI.upgradeButton.label
-msgid "Upgrade Now…"
-msgstr "Thuthukisa manje…"
-
-#: update.openUpdateUI.upgradeButton.accesskey
-msgctxt "update.openUpdateUI.upgradeButton.accesskey"
+#: update.downloadAndInstallButton.accesskey
+msgctxt "update.downloadAndInstallButton.accesskey"
 msgid "U"
-msgstr "U"
-
-#: update.restart.upgradeButton.label
-msgid "Upgrade Now"
-msgstr "Thuthukisa manje"
-
-#: update.restart.upgradeButton.accesskey
-msgctxt "update.restart.upgradeButton.accesskey"
-msgid "U"
-msgstr "U"
+msgstr ""
 
 #. # RSS Pretty Print
 #: feedShowFeedNew
@@ -644,10 +596,23 @@ msgstr "Vula konke komaki"
 msgid "Restore All Tabs"
 msgstr "Buyisela bonke omaki"
 
+#. # LOCALIZATION NOTE (menuRestoreAllTabsSubview.label): like menuRestoreAllTabs.label,
+#. # but used in the history subview in the panel UI, so needs to mention these are *closed* tabs.
+#: menuRestoreAllTabsSubview.label
+msgid "Restore Closed Tabs"
+msgstr ""
+
 #. # LOCALIZATION NOTE (menuRestoreAllWindows, menuUndoCloseWindowLabel, menuUndoCloseWindowSingleTabLabel):
 #. # see bug 394759
 #: menuRestoreAllWindows.label
 msgid "Restore All Windows"
+msgstr "Buyisela wonke ama-windi"
+
+#. # LOCALIZATION NOTE (menuRestoreAllWindowsSubview.label): like menuRestoreAllWindows.label,
+#. # but used in the history subview in the panel UI, so needs to mention these are *closed* windows.
+#: menuRestoreAllWindowsSubview.label
+#, fuzzy
+msgid "Restore Closed Windows"
 msgstr "Buyisela wonke ama-windi"
 
 #. # LOCALIZATION NOTE (menuUndoCloseWindowLabel): Semicolon-separated list of plural forms.
@@ -699,6 +664,13 @@ msgid "%S prevented this page from automatically redirecting to another page."
 msgstr ""
 "I-%S ivimbele le khasi ekuthumeleni kabusha ngokuzenzakalela kwelinye ikhasi."
 
+#. # General bookmarks button
+#. # LOCALIZATION NOTE (bookmarksMenuButton.tooltip):
+#. # %S is the keyboard shortcut for "Show All Bookmarks"
+#: bookmarksMenuButton.tooltip
+msgid "Show your bookmarks (%S)"
+msgstr ""
+
 #. # Star button
 #: starButtonOn.tooltip
 msgid "Edit this bookmark"
@@ -707,6 +679,34 @@ msgstr "Hlela lephawu lokubekisa"
 #: starButtonOff.tooltip
 msgid "Bookmark this page"
 msgstr "Phawula le khasi"
+
+#: starButtonOverflowed.label
+#, fuzzy
+msgid "Bookmark This Page"
+msgstr "Phawula le khasi"
+
+#: starButtonOverflowedStarred.label
+#, fuzzy
+msgctxt "starButtonOverflowedStarred.label"
+msgid "Edit This Bookmark"
+msgstr "Hlela lolu phawu lokubekisa"
+
+#. # Print button tooltip on OS X
+#. # LOCALIZATION NOTE (printButton.tooltip):
+#. # Use the unicode ellipsis char, \u2026,
+#. # or use "..." if \u2026 doesn't suit traditions in your locale.
+#. # %S is the keyboard shortcut for "Print"
+#: printButton.tooltip
+msgid "Print this page… (%S)"
+msgstr ""
+
+#. # New Window button tooltip
+#. # LOCALIZATION NOTE (newWindowButton.tooltip):
+#. # %S is the keyboard shortcut for "New Window"
+#: newWindowButton.tooltip
+#, fuzzy
+msgid "Open a new window (%S)"
+msgstr "Vula ifasitela elisha"
 
 #. # Offline web applications
 #: offlineApps.available
@@ -831,6 +831,8 @@ msgid "Bookmark Removed"
 msgstr "Uphawu lokubekisa lususiwe"
 
 #: editBookmarkPanel.editBookmarkTitle
+#, fuzzy
+msgctxt "editBookmarkPanel.editBookmarkTitle"
 msgid "Edit This Bookmark"
 msgstr "Hlela lolu phawu lokubekisa"
 
@@ -1041,6 +1043,12 @@ msgstr "I-%S - Faka kumaqembu omaki bakho"
 msgid "#1 and 1 more;#1 and #2 more"
 msgstr "#1 no-1 ngaphezulu;#1 no-#2 ngaphezulu"
 
+#. # LOCALIZATION NOTE (tabviewButton.tooltip): %S is the keyboard shortcut for tab groups
+#: tabviewButton.tooltip
+#, fuzzy
+msgid "Group your tabs (%S)"
+msgstr "Faka kumaqembu omaki bakho"
+
 #: extensions.{972ce4c6-7e08-4474-a285-3208198ce6fd}.name
 msgid "Default"
 msgstr "Okwakhona"
@@ -1163,6 +1171,12 @@ msgstr "I-%S manje isigcwele isikrini."
 #: fullscreen.rememberDecision
 msgid "Remember decision for %S"
 msgstr "Khumbula isinqumo se-%S"
+
+#. # LOCALIZATION NOTE (fullscreenButton.tooltip): %S is the keyboard shortcut for full screen
+#: fullscreenButton.tooltip
+#, fuzzy
+msgid "Display the window in full screen (%S)"
+msgstr "Bonisa ifasitela kusikrini esigcwele"
 
 #: service.toolbarbutton.label
 msgctxt "service.toolbarbutton.label"
@@ -1379,6 +1393,24 @@ msgstr "Okwamanje waba imayikrofoni yakho naleli khasi."
 msgid "You are currently sharing your camera and microphone with this page."
 msgstr "Okwamanje waba ikhamera nemayikrofoni yakho naleli khasi."
 
+#: getUserMedia.continueSharing.label
+msgid "Continue Sharing"
+msgstr ""
+
+#: getUserMedia.continueSharing.accesskey
+msgctxt "getUserMedia.continueSharing.accesskey"
+msgid "C"
+msgstr ""
+
+#: getUserMedia.stopSharing.label
+msgid "Stop Sharing"
+msgstr ""
+
+#: getUserMedia.stopSharing.accesskey
+msgctxt "getUserMedia.stopSharing.accesskey"
+msgid "S"
+msgstr ""
+
 #. # Mixed Content Blocker Doorhanger Notification
 #. # LOCALIZATION NOTE - %S is brandShortName
 #: mixedContentBlocked.message
@@ -1424,6 +1456,62 @@ msgstr "Ungangitsheli futhi"
 msgctxt "slowStartup.disableNotificationButton.accesskey"
 msgid "A"
 msgstr "A"
+
+#. # LOCALIZATION NOTE(customizeTips.tip0): %1$S will be replaced with the text defined
+#. # in customizeTips.tip0.hint, %2$S will be replaced with brandShortName, %3$S will
+#. # be replaced with a hyperlink containing the text defined in customizeTips.tip0.learnMore.
+#: customizeTips.tip0
+msgid ""
+"%1$S: You can customize %2$S to work the way you do. Simply drag any of the "
+"above to the menu or toolbar. %3$S about customizing %2$S."
+msgstr ""
+
+#: customizeTips.tip0.hint
+msgid "Hint"
+msgstr ""
+
+#: customizeTips.tip0.learnMore
+#, fuzzy
+msgid "Learn more"
+msgstr "Funda kabanzi"
+
+#~ msgid "Check for Updates"
+#~ msgstr "Bheka ukuvuselelwa"
+
+#~ msgctxt "update.checkInsideButton.accesskey"
+#~ msgid "C"
+#~ msgstr "C"
+
+#~ msgid "Resume Downloading %S…"
+#~ msgstr "Qala futhi ukulayisha i-%S…"
+
+#~ msgid "Apply Update…"
+#~ msgstr "Sebenzisa ukuvuselelwa…"
+
+#~ msgctxt "update.openUpdateUI.applyButton.accesskey"
+#~ msgid "A"
+#~ msgstr "A"
+
+#~ msgid "Restart to Update"
+#~ msgstr "Qala kabusha ukuze ufake ukwaziswa kamuva"
+
+#~ msgctxt "update.restart.updateButton.accesskey"
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "Upgrade Now…"
+#~ msgstr "Thuthukisa manje…"
+
+#~ msgctxt "update.openUpdateUI.upgradeButton.accesskey"
+#~ msgid "U"
+#~ msgstr "U"
+
+#~ msgid "Upgrade Now"
+#~ msgstr "Thuthukisa manje"
+
+#~ msgctxt "update.restart.upgradeButton.accesskey"
+#~ msgid "U"
+#~ msgstr "U"
 
 #~ msgid "Remove Page from %S"
 #~ msgstr "Susa ikhasi ku-%S"

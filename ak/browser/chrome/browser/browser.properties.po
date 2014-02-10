@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-10 18:06+0100\n"
+"POT-Creation-Date: 2014-02-10 14:41+0100\n"
 "PO-Revision-Date: 2013-09-27 01:39+0000\n"
 "Last-Translator: Jojoo <jojoo.imbeah@suuch.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Translate Toolkit 1.11.0-rc1\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1380245952.000000\n"
@@ -556,65 +556,17 @@ msgstr "Abakɔsɛm nyinara bɛpepa."
 msgid "All selected items will be cleared."
 msgstr "Wɔbɛpepa ndeɛma a wɔapaw nyinara."
 
-#. # Check for Updates in the About Dialog - button labels and accesskeys
-#. # LOCALIZATION NOTE - all of the following update buttons labels will only be
-#. # displayed one at a time. So, if a button is displayed nothing else will
-#. # be displayed alongside of the button. The button when displayed is located
-#. # directly under the Firefox version in the about dialog (see bug 596813 for
-#. # screenshots).
-#: update.checkInsideButton.label
-msgid "Check for Updates"
-msgstr "Hwehwɛ Ntoso…"
+#. # LOCALIZATION NOTE (downloadAndInstallButton.label): %S is replaced by the
+#. # version of the update: "Update to 28.0".
+#: update.downloadAndInstallButton.label
+#, fuzzy
+msgid "Update to %S"
+msgstr "To %S so"
 
-#: update.checkInsideButton.accesskey
-msgctxt "update.checkInsideButton.accesskey"
-msgid "C"
-msgstr "C"
-
-#: update.resumeButton.label
-msgid "Resume Downloading %S…"
-msgstr "Toa So Sɛ Woretwe %S…"
-
-#: update.resumeButton.accesskey
-msgctxt "update.resumeButton.accesskey"
-msgid "D"
-msgstr "D"
-
-#: update.openUpdateUI.applyButton.label
-msgid "Apply Update…"
-msgstr "Fa ntoso no di so…"
-
-#: update.openUpdateUI.applyButton.accesskey
-msgctxt "update.openUpdateUI.applyButton.accesskey"
-msgid "A"
-msgstr "A"
-
-#: update.restart.updateButton.label
-msgid "Restart to Update"
-msgstr "San-hyɛ ase fa to so"
-
-#: update.restart.updateButton.accesskey
-msgctxt "update.restart.updateButton.accesskey"
-msgid "R"
-msgstr "R"
-
-#: update.openUpdateUI.upgradeButton.label
-msgid "Upgrade Now…"
-msgstr "Pagya kɔ anim…"
-
-#: update.openUpdateUI.upgradeButton.accesskey
-msgctxt "update.openUpdateUI.upgradeButton.accesskey"
+#: update.downloadAndInstallButton.accesskey
+msgctxt "update.downloadAndInstallButton.accesskey"
 msgid "U"
-msgstr "U"
-
-#: update.restart.upgradeButton.label
-msgid "Upgrade Now"
-msgstr "Pagya kɔ anim"
-
-#: update.restart.upgradeButton.accesskey
-msgctxt "update.restart.upgradeButton.accesskey"
-msgid "U"
-msgstr "U"
+msgstr ""
 
 #. # RSS Pretty Print
 #: feedShowFeedNew
@@ -630,10 +582,23 @@ msgstr "Bue Wɔ Ntab Nyinara Mu"
 msgid "Restore All Tabs"
 msgstr "San bue Ntab Nyinara"
 
+#. # LOCALIZATION NOTE (menuRestoreAllTabsSubview.label): like menuRestoreAllTabs.label,
+#. # but used in the history subview in the panel UI, so needs to mention these are *closed* tabs.
+#: menuRestoreAllTabsSubview.label
+msgid "Restore Closed Tabs"
+msgstr ""
+
 #. # LOCALIZATION NOTE (menuRestoreAllWindows, menuUndoCloseWindowLabel, menuUndoCloseWindowSingleTabLabel):
 #. # see bug 394759
 #: menuRestoreAllWindows.label
 msgid "Restore All Windows"
+msgstr "San bue ntokura nyinara"
+
+#. # LOCALIZATION NOTE (menuRestoreAllWindowsSubview.label): like menuRestoreAllWindows.label,
+#. # but used in the history subview in the panel UI, so needs to mention these are *closed* windows.
+#: menuRestoreAllWindowsSubview.label
+#, fuzzy
+msgid "Restore Closed Windows"
 msgstr "San bue ntokura nyinara"
 
 #. # LOCALIZATION NOTE (menuUndoCloseWindowLabel): Semicolon-separated list of plural forms.
@@ -684,6 +649,13 @@ msgstr "%S siiw krataafa yi sɛ noara bebue ne ho bio."
 msgid "%S prevented this page from automatically redirecting to another page."
 msgstr "%S siiw krataafa yi sɛ ɔde ne ho bɛkɔ krataafa foforo so."
 
+#. # General bookmarks button
+#. # LOCALIZATION NOTE (bookmarksMenuButton.tooltip):
+#. # %S is the keyboard shortcut for "Show All Bookmarks"
+#: bookmarksMenuButton.tooltip
+msgid "Show your bookmarks (%S)"
+msgstr ""
+
 #. # Star button
 #: starButtonOn.tooltip
 msgid "Edit this bookmark"
@@ -692,6 +664,34 @@ msgstr "Sesa bukmaak yi"
 #: starButtonOff.tooltip
 msgid "Bookmark this page"
 msgstr "Bukmaake krataafa yi"
+
+#: starButtonOverflowed.label
+#, fuzzy
+msgid "Bookmark This Page"
+msgstr "Bukmaake krataafa yi"
+
+#: starButtonOverflowedStarred.label
+#, fuzzy
+msgctxt "starButtonOverflowedStarred.label"
+msgid "Edit This Bookmark"
+msgstr "Sesa Bukmaak Yi"
+
+#. # Print button tooltip on OS X
+#. # LOCALIZATION NOTE (printButton.tooltip):
+#. # Use the unicode ellipsis char, \u2026,
+#. # or use "..." if \u2026 doesn't suit traditions in your locale.
+#. # %S is the keyboard shortcut for "Print"
+#: printButton.tooltip
+msgid "Print this page… (%S)"
+msgstr ""
+
+#. # New Window button tooltip
+#. # LOCALIZATION NOTE (newWindowButton.tooltip):
+#. # %S is the keyboard shortcut for "New Window"
+#: newWindowButton.tooltip
+#, fuzzy
+msgid "Open a new window (%S)"
+msgstr "Bue tokura foforo"
 
 #. # Offline web applications
 #: offlineApps.available
@@ -820,6 +820,8 @@ msgid "Bookmark Removed"
 msgstr "Woeyi Bukmaak No"
 
 #: editBookmarkPanel.editBookmarkTitle
+#, fuzzy
+msgctxt "editBookmarkPanel.editBookmarkTitle"
 msgid "Edit This Bookmark"
 msgstr "Sesa Bukmaak Yi"
 
@@ -1030,6 +1032,12 @@ msgstr "%S - Boa boa wo ntab ano"
 msgid "#1 and 1 more;#1 and #2 more"
 msgstr "#1 ne 1 so bio;#1 ne #2 so bio"
 
+#. # LOCALIZATION NOTE (tabviewButton.tooltip): %S is the keyboard shortcut for tab groups
+#: tabviewButton.tooltip
+#, fuzzy
+msgid "Group your tabs (%S)"
+msgstr "Boa wo Ntab Ano"
+
 #: extensions.{972ce4c6-7e08-4474-a285-3208198ce6fd}.name
 msgid "Default"
 msgstr "Difɔlt"
@@ -1153,6 +1161,12 @@ msgstr "%S yɛ skreen-tɛtrɛtɛɛ"
 #: fullscreen.rememberDecision
 msgid "Remember decision for %S"
 msgstr "Kae gyinato ma %S"
+
+#. # LOCALIZATION NOTE (fullscreenButton.tooltip): %S is the keyboard shortcut for full screen
+#: fullscreenButton.tooltip
+#, fuzzy
+msgid "Display the window in full screen (%S)"
+msgstr "Kyerɛ tokura no wɔ skreen tɛtrɛtɛɛ mu"
 
 #: service.toolbarbutton.label
 msgctxt "service.toolbarbutton.label"
@@ -1369,6 +1383,24 @@ msgstr "Wo de wo kasamu-fidie rekyɛ krataafa yi."
 msgid "You are currently sharing your camera and microphone with this page."
 msgstr "Wo de wo mfonin-fidie ne kasamu-fidie rekyɛ krataafa yi."
 
+#: getUserMedia.continueSharing.label
+msgid "Continue Sharing"
+msgstr ""
+
+#: getUserMedia.continueSharing.accesskey
+msgctxt "getUserMedia.continueSharing.accesskey"
+msgid "C"
+msgstr ""
+
+#: getUserMedia.stopSharing.label
+msgid "Stop Sharing"
+msgstr ""
+
+#: getUserMedia.stopSharing.accesskey
+msgctxt "getUserMedia.stopSharing.accesskey"
+msgid "S"
+msgstr ""
+
 #. # Mixed Content Blocker Doorhanger Notification
 #. # LOCALIZATION NOTE - %S is brandShortName
 #: mixedContentBlocked.message
@@ -1414,6 +1446,62 @@ msgstr "Mma nnka nnkyerɛ me bio"
 msgctxt "slowStartup.disableNotificationButton.accesskey"
 msgid "A"
 msgstr "A"
+
+#. # LOCALIZATION NOTE(customizeTips.tip0): %1$S will be replaced with the text defined
+#. # in customizeTips.tip0.hint, %2$S will be replaced with brandShortName, %3$S will
+#. # be replaced with a hyperlink containing the text defined in customizeTips.tip0.learnMore.
+#: customizeTips.tip0
+msgid ""
+"%1$S: You can customize %2$S to work the way you do. Simply drag any of the "
+"above to the menu or toolbar. %3$S about customizing %2$S."
+msgstr ""
+
+#: customizeTips.tip0.hint
+msgid "Hint"
+msgstr ""
+
+#: customizeTips.tip0.learnMore
+#, fuzzy
+msgid "Learn more"
+msgstr "Sua bi ka ho"
+
+#~ msgid "Check for Updates"
+#~ msgstr "Hwehwɛ Ntoso…"
+
+#~ msgctxt "update.checkInsideButton.accesskey"
+#~ msgid "C"
+#~ msgstr "C"
+
+#~ msgid "Resume Downloading %S…"
+#~ msgstr "Toa So Sɛ Woretwe %S…"
+
+#~ msgid "Apply Update…"
+#~ msgstr "Fa ntoso no di so…"
+
+#~ msgctxt "update.openUpdateUI.applyButton.accesskey"
+#~ msgid "A"
+#~ msgstr "A"
+
+#~ msgid "Restart to Update"
+#~ msgstr "San-hyɛ ase fa to so"
+
+#~ msgctxt "update.restart.updateButton.accesskey"
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "Upgrade Now…"
+#~ msgstr "Pagya kɔ anim…"
+
+#~ msgctxt "update.openUpdateUI.upgradeButton.accesskey"
+#~ msgid "U"
+#~ msgstr "U"
+
+#~ msgid "Upgrade Now"
+#~ msgstr "Pagya kɔ anim"
+
+#~ msgctxt "update.restart.upgradeButton.accesskey"
+#~ msgid "U"
+#~ msgstr "U"
 
 #~ msgid ""
 #~ "Interactive content (such as script) that isn't encrypted has been "

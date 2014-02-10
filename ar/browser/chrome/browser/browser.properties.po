@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-10 18:06+0100\n"
+"POT-Creation-Date: 2014-02-10 14:41+0100\n"
 "PO-Revision-Date: 2013-12-26 12:19+0000\n"
 "Last-Translator: Khaled <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -561,65 +561,17 @@ msgstr "سوف يُمسح كل التأريخ."
 msgid "All selected items will be cleared."
 msgstr "سوف تُحذف كل العناصر المحدّدة."
 
-#. # Check for Updates in the About Dialog - button labels and accesskeys
-#. # LOCALIZATION NOTE - all of the following update buttons labels will only be
-#. # displayed one at a time. So, if a button is displayed nothing else will
-#. # be displayed alongside of the button. The button when displayed is located
-#. # directly under the Firefox version in the about dialog (see bug 596813 for
-#. # screenshots).
-#: update.checkInsideButton.label
-msgid "Check for Updates"
-msgstr "التمس التحديثات"
+#. # LOCALIZATION NOTE (downloadAndInstallButton.label): %S is replaced by the
+#. # version of the update: "Update to 28.0".
+#: update.downloadAndInstallButton.label
+#, fuzzy
+msgid "Update to %S"
+msgstr "حدّث %S"
 
-#: update.checkInsideButton.accesskey
-msgctxt "update.checkInsideButton.accesskey"
-msgid "C"
-msgstr "ث"
-
-#: update.resumeButton.label
-msgid "Resume Downloading %S…"
-msgstr "استكمِل تنزيل %S…"
-
-#: update.resumeButton.accesskey
-msgctxt "update.resumeButton.accesskey"
-msgid "D"
-msgstr "ك"
-
-#: update.openUpdateUI.applyButton.label
-msgid "Apply Update…"
-msgstr "طبِّق التحديث…"
-
-#: update.openUpdateUI.applyButton.accesskey
-msgctxt "update.openUpdateUI.applyButton.accesskey"
-msgid "A"
-msgstr "ط"
-
-#: update.restart.updateButton.label
-msgid "Restart to Update"
-msgstr "أعد التشغيل للتحديث"
-
-#: update.restart.updateButton.accesskey
-msgctxt "update.restart.updateButton.accesskey"
-msgid "R"
-msgstr "ع"
-
-#: update.openUpdateUI.upgradeButton.label
-msgid "Upgrade Now…"
-msgstr "رقِّ الآن…"
-
-#: update.openUpdateUI.upgradeButton.accesskey
-msgctxt "update.openUpdateUI.upgradeButton.accesskey"
+#: update.downloadAndInstallButton.accesskey
+msgctxt "update.downloadAndInstallButton.accesskey"
 msgid "U"
-msgstr "ر"
-
-#: update.restart.upgradeButton.label
-msgid "Upgrade Now"
-msgstr "رقِّ الآن"
-
-#: update.restart.upgradeButton.accesskey
-msgctxt "update.restart.upgradeButton.accesskey"
-msgid "U"
-msgstr "ر"
+msgstr ""
 
 #. # RSS Pretty Print
 #: feedShowFeedNew
@@ -635,10 +587,23 @@ msgstr "افتح الكل في ألسنة"
 msgid "Restore All Tabs"
 msgstr "استرجع كل الألسنة"
 
+#. # LOCALIZATION NOTE (menuRestoreAllTabsSubview.label): like menuRestoreAllTabs.label,
+#. # but used in the history subview in the panel UI, so needs to mention these are *closed* tabs.
+#: menuRestoreAllTabsSubview.label
+msgid "Restore Closed Tabs"
+msgstr ""
+
 #. # LOCALIZATION NOTE (menuRestoreAllWindows, menuUndoCloseWindowLabel, menuUndoCloseWindowSingleTabLabel):
 #. # see bug 394759
 #: menuRestoreAllWindows.label
 msgid "Restore All Windows"
+msgstr "استرجع كل النوافذ"
+
+#. # LOCALIZATION NOTE (menuRestoreAllWindowsSubview.label): like menuRestoreAllWindows.label,
+#. # but used in the history subview in the panel UI, so needs to mention these are *closed* windows.
+#: menuRestoreAllWindowsSubview.label
+#, fuzzy
+msgid "Restore Closed Windows"
 msgstr "استرجع كل النوافذ"
 
 #. # LOCALIZATION NOTE (menuUndoCloseWindowLabel): Semicolon-separated list of plural forms.
@@ -691,6 +656,13 @@ msgstr "منع %S هذه الصفحة من إعادة التحميل تلقائ�
 msgid "%S prevented this page from automatically redirecting to another page."
 msgstr "منع %S هذه الصفحة من إعادة التوجيه تلقائيًا إلى صفحة أخرى."
 
+#. # General bookmarks button
+#. # LOCALIZATION NOTE (bookmarksMenuButton.tooltip):
+#. # %S is the keyboard shortcut for "Show All Bookmarks"
+#: bookmarksMenuButton.tooltip
+msgid "Show your bookmarks (%S)"
+msgstr ""
+
 #. # Star button
 #: starButtonOn.tooltip
 msgid "Edit this bookmark"
@@ -699,6 +671,34 @@ msgstr "حرّر هذه العلامة"
 #: starButtonOff.tooltip
 msgid "Bookmark this page"
 msgstr "علّم هذه الصفحة"
+
+#: starButtonOverflowed.label
+#, fuzzy
+msgid "Bookmark This Page"
+msgstr "علّم هذه الصفحة"
+
+#: starButtonOverflowedStarred.label
+#, fuzzy
+msgctxt "starButtonOverflowedStarred.label"
+msgid "Edit This Bookmark"
+msgstr "حرّر هذه العلامة"
+
+#. # Print button tooltip on OS X
+#. # LOCALIZATION NOTE (printButton.tooltip):
+#. # Use the unicode ellipsis char, \u2026,
+#. # or use "..." if \u2026 doesn't suit traditions in your locale.
+#. # %S is the keyboard shortcut for "Print"
+#: printButton.tooltip
+msgid "Print this page… (%S)"
+msgstr ""
+
+#. # New Window button tooltip
+#. # LOCALIZATION NOTE (newWindowButton.tooltip):
+#. # %S is the keyboard shortcut for "New Window"
+#: newWindowButton.tooltip
+#, fuzzy
+msgid "Open a new window (%S)"
+msgstr "افتح نافذة جديدة"
 
 #. # Offline web applications
 #: offlineApps.available
@@ -824,6 +824,8 @@ msgid "Bookmark Removed"
 msgstr "أُزيلت العلامة"
 
 #: editBookmarkPanel.editBookmarkTitle
+#, fuzzy
+msgctxt "editBookmarkPanel.editBookmarkTitle"
 msgid "Edit This Bookmark"
 msgstr "حرّر هذه العلامة"
 
@@ -1040,6 +1042,12 @@ msgstr ""
 "‏#1 وواحد آخر;‏#1 واثنين آخرين;‏#1 و #2 أخرى;‏#1 و #2 أخرى;‏#1 و #2 أخرى;‏#1 ولا "
 "شيء آخر"
 
+#. # LOCALIZATION NOTE (tabviewButton.tooltip): %S is the keyboard shortcut for tab groups
+#: tabviewButton.tooltip
+#, fuzzy
+msgid "Group your tabs (%S)"
+msgstr "صنّف الألسنة في مجموعات"
+
 #: extensions.{972ce4c6-7e08-4474-a285-3208198ce6fd}.name
 msgid "Default"
 msgstr "المبدئية"
@@ -1156,6 +1164,12 @@ msgstr "‏%S يملء الشاشة الآن."
 #: fullscreen.rememberDecision
 msgid "Remember decision for %S"
 msgstr "تذكّر اختياري مع %S"
+
+#. # LOCALIZATION NOTE (fullscreenButton.tooltip): %S is the keyboard shortcut for full screen
+#: fullscreenButton.tooltip
+#, fuzzy
+msgid "Display the window in full screen (%S)"
+msgstr "اعرض النافذة ملء الشاشة"
 
 #: service.toolbarbutton.label
 msgctxt "service.toolbarbutton.label"
@@ -1371,6 +1385,24 @@ msgstr "تشارك حاليا ميكروفونك مع هذه الصفحة."
 msgid "You are currently sharing your camera and microphone with this page."
 msgstr "تشارك حاليا كمرتك و ميكروفونك مع هذه الصفحة."
 
+#: getUserMedia.continueSharing.label
+msgid "Continue Sharing"
+msgstr ""
+
+#: getUserMedia.continueSharing.accesskey
+msgctxt "getUserMedia.continueSharing.accesskey"
+msgid "C"
+msgstr ""
+
+#: getUserMedia.stopSharing.label
+msgid "Stop Sharing"
+msgstr ""
+
+#: getUserMedia.stopSharing.accesskey
+msgctxt "getUserMedia.stopSharing.accesskey"
+msgid "S"
+msgstr ""
+
 #. # Mixed Content Blocker Doorhanger Notification
 #. # LOCALIZATION NOTE - %S is brandShortName
 #: mixedContentBlocked.message
@@ -1416,6 +1448,62 @@ msgstr "لا تخبرني مرة أخرى"
 msgctxt "slowStartup.disableNotificationButton.accesskey"
 msgid "A"
 msgstr "م"
+
+#. # LOCALIZATION NOTE(customizeTips.tip0): %1$S will be replaced with the text defined
+#. # in customizeTips.tip0.hint, %2$S will be replaced with brandShortName, %3$S will
+#. # be replaced with a hyperlink containing the text defined in customizeTips.tip0.learnMore.
+#: customizeTips.tip0
+msgid ""
+"%1$S: You can customize %2$S to work the way you do. Simply drag any of the "
+"above to the menu or toolbar. %3$S about customizing %2$S."
+msgstr ""
+
+#: customizeTips.tip0.hint
+msgid "Hint"
+msgstr ""
+
+#: customizeTips.tip0.learnMore
+#, fuzzy
+msgid "Learn more"
+msgstr "اطّلع على المزيد"
+
+#~ msgid "Check for Updates"
+#~ msgstr "التمس التحديثات"
+
+#~ msgctxt "update.checkInsideButton.accesskey"
+#~ msgid "C"
+#~ msgstr "ث"
+
+#~ msgid "Resume Downloading %S…"
+#~ msgstr "استكمِل تنزيل %S…"
+
+#~ msgid "Apply Update…"
+#~ msgstr "طبِّق التحديث…"
+
+#~ msgctxt "update.openUpdateUI.applyButton.accesskey"
+#~ msgid "A"
+#~ msgstr "ط"
+
+#~ msgid "Restart to Update"
+#~ msgstr "أعد التشغيل للتحديث"
+
+#~ msgctxt "update.restart.updateButton.accesskey"
+#~ msgid "R"
+#~ msgstr "ع"
+
+#~ msgid "Upgrade Now…"
+#~ msgstr "رقِّ الآن…"
+
+#~ msgctxt "update.openUpdateUI.upgradeButton.accesskey"
+#~ msgid "U"
+#~ msgstr "ر"
+
+#~ msgid "Upgrade Now"
+#~ msgstr "رقِّ الآن"
+
+#~ msgctxt "update.restart.upgradeButton.accesskey"
+#~ msgid "U"
+#~ msgstr "ر"
 
 #~ msgid ""
 #~ "Interactive content (such as script) that isn't encrypted has been "
