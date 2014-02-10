@@ -1,19 +1,19 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from ./browser/chrome/browser/charsetMenu.properties
+#. extracted from ./toolkit/chrome/global/charsetMenu.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-20 19:49+0100\n"
+"POT-Creation-Date: 2014-02-10 14:41+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.11.0-rc1\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -21,6 +21,9 @@ msgstr ""
 #. # Localizations may add or delete properties where the property key ends with
 #. # ".key" as appropriate for the localization. The code that uses this data can
 #. # deal with the absence of an access key for an item.
+#. #
+#. # For gbk, gbk.bis and gbk.bis.key are used to trigger string changes in
+#. # localizations.
 #. # 
 #. # Make sure the keys defined here don't collide with
 #. # charsetMenuAutodet.accesskey in charsetMenu.dtd.
@@ -38,8 +41,57 @@ msgstr ""
 #. # CharsetMenu.jsm also recognize the delimiter your localization uses.
 #. # (When this code was developed, all localizations appeared to use
 #. # U+0028 LEFT PARENTHESIS for this purpose.)
+#. # Auto-Detect (sub)menu
+#: charsetMenuCharsets
+msgid "Character Encoding"
+msgstr ""
+
+#: charsetMenuAutodet
+msgid "Auto-Detect"
+msgstr ""
+
+#. # 'A' is reserved for Arabic:
+#: charsetMenuAutodet.key
+msgid "D"
+msgstr ""
+
+#: charsetMenuAutodet.off
+msgid "(off)"
+msgstr ""
+
+#: charsetMenuAutodet.off.key
+msgid "o"
+msgstr ""
+
+#: charsetMenuAutodet.ja
+msgid "Japanese"
+msgstr ""
+
+#: charsetMenuAutodet.ja.key
+msgctxt "charsetMenuAutodet.ja.key"
+msgid "J"
+msgstr ""
+
+#: charsetMenuAutodet.ru
+msgid "Russian"
+msgstr ""
+
+#: charsetMenuAutodet.ru.key
+msgid "R"
+msgstr ""
+
+#: charsetMenuAutodet.uk
+msgid "Ukrainian"
+msgstr ""
+
+#: charsetMenuAutodet.uk.key
+msgctxt "charsetMenuAutodet.uk.key"
+msgid "U"
+msgstr ""
+
 #. # Globally-relevant
 #: UTF-8.key
+msgctxt "UTF-8.key"
 msgid "U"
 msgstr ""
 
@@ -99,7 +151,21 @@ msgid "Central European (ISO)"
 msgstr ""
 
 #. # Chinese, Simplified
+#. # LOCALIZATION NOTE (gbk.bis.key):
+#. # gbk.bis.key never appears together with gbk.key and, hence, can be the same.
+#: gbk.bis.key
+msgctxt "gbk.bis.key"
+msgid "S"
+msgstr ""
+
+#: gbk.bis
+msgid "Chinese, Simplified"
+msgstr ""
+
+#. # The strings gbk.key, gbk and gb18030 are no longer used but are retained
+#. # in order to enable backout after string freeze, just in case.
 #: gbk.key
+msgctxt "gbk.key"
 msgid "S"
 msgstr ""
 
@@ -180,6 +246,7 @@ msgstr ""
 
 #. # Japanese
 #: Shift_JIS.key
+msgctxt "Shift_JIS.key"
 msgid "J"
 msgstr ""
 
