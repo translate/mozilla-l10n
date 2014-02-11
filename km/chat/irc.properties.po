@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-16 22:50+0100\n"
+"POT-Creation-Date: 2014-02-11 00:22+0100\n"
 "PO-Revision-Date: 2014-01-28 04:50+0000\n"
 "Last-Translator: soksophea <sksophea@gmail.com>\n"
 "Language-Team: none\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-rc1\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1390884637.000000\n"
@@ -88,13 +88,9 @@ msgstr "ផ្នែក​សារ"
 msgid "Show messages from the server"
 msgstr "បង្ហាញ​សារ​​ពី​ម៉ាស៊ីន​មេ"
 
-#. # LOCALIZATION NOTE (ctcp.ping): Semi-colon list of plural forms.
-#. #  See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. #   %1$S is the nickname of the user who was pinged.
-#. #   #2 is the delay (in seconds).
-#: ctcp.ping
-msgid "Ping reply from %1$S in #2 second.;Ping reply from %1$S in #2 seconds."
-msgstr "Ping ​ឆ្លើយ​តប​ពី %1$S ក្នុង​ពេល #2 វិនាទី។; Ping ​ឆ្លើយ​តប​ពី %1$S ក្នុង​ពេល #2 វិនាទី។"
+#: options.alternateNicks
+msgid "Alternate nicks"
+msgstr ""
 
 #. # LOCALIZATION NOTE (ctcp.version):
 #. #   %1$S is the nickname of the user whose version was requested.
@@ -143,13 +139,11 @@ msgstr ""
 "%S &lt;nick1&gt;[,&lt;nick2&gt;]*: លុប​ស្ថានភាព​សំឡេង​តាម​បណ្ដាញ​ពី​អ្នក​ណា​ម្នាក់ ទប់ស្កាត់​​វា​ពី​"
 "ការ​និយាយ ប្រសិនបើ​បណ្ដាញ​ត្រូវ​បាន​​សម្រួល (+m)។ អ្នក​ត្រូវតែ​ជា​ប្រតិបត្តិ​ករ​បណ្ដាញ​ដើម្បី​ធ្វើ​រឿង​នេះ។"
 
-#: command.invite
+#: command.invite2
 msgid ""
-"%S &lt;nick&gt; [&lt;room&gt;]: Invite someone to join you in the specified "
-"channel, or the current channel."
+"%S &lt;nick&gt;[ &lt;nick&gt;]* [&lt;channel&gt;]: Invite one or more nicks "
+"to join you in the current channel, or to join the specified channel."
 msgstr ""
-"%S &lt;nick&gt; [&lt;room&gt;]: អញ្ជើញ​អ្នក​ណា​ម្នាក់​ឲ្យ​ចូលរួម​ជាមួយ​អ្នក​នៅ​ក្នុង​ឆានែល​ដែល​បាន​"
-"បញ្ជាក់ ឬ​ឆានែល​បច្ចុប្បន្ន។"
 
 #: command.join
 msgid ""
@@ -367,6 +361,12 @@ msgstr "%1$S ​បាន​អញ្ជើញ​អ្នក​ឲ្យ​ច�
 msgid "%1$S was successfully invited to %2$S."
 msgstr "%1$S បាន​អញ្ជើញ​​ឲ្យ​ចូលរួម​ដោយ​ជោគជ័យ %2$S ។"
 
+#. #    %1$S is the nickname of the invited user, %2$S is the conversation name
+#. #    they were invited to but are already in
+#: message.alreadyInChannel
+msgid "%1$S is already in %2$S."
+msgstr ""
+
 #. #    %S is the nickname of the user who was summoned.
 #: message.summoned
 msgid "%S was summoned."
@@ -384,8 +384,8 @@ msgstr "%1$S ក្រៅ​បណ្ដាញ។ ព័ត៌មាន WHOWAS �
 
 #. #    %1$S is the entry description (from tooltip.*), %2$S is its value.
 #: message.whoisEntry
-msgid "    %1$S: %2$S"
-msgstr "    %1$S: %2$S"
+msgid "਀a0਀a0%1$S: %2$S"
+msgstr ""
 
 #. #    %S is the nickname that is not known to the server.
 #: message.unknownNick
@@ -419,6 +419,17 @@ msgstr "អ្នក​ប្រើ​បាន​ភ្ជាប់​ពី​
 msgid ""
 "Users connected from locations matching %1$S are no longer banned by %2$S."
 msgstr "អ្នក​ប្រើ​បាន​ភ្ជាប់​ពី​ទីតាំង​ដែល​ផ្គូផ្គង %1$S មិន​​បាន​ហាម​ដោយ %2$S ទៀត​ឡើយ។"
+
+#. # LOCALIZATION NOTE (message.ping): Semi-colon list of plural forms.
+#. #  See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. #   %1$S is the nickname of the user or the server that was pinged.
+#. #   #2 is the delay (in milliseconds).
+#: message.ping
+#, fuzzy
+msgid ""
+"Ping reply from %1$S in #2 millisecond.;Ping reply from %1$S in #2 "
+"milliseconds."
+msgstr "Ping ​ឆ្លើយ​តប​ពី %1$S ក្នុង​ពេល #2 វិនាទី។; Ping ​ឆ្លើយ​តប​ពី %1$S ក្នុង​ពេល #2 វិនាទី។"
 
 #. # LOCALIZATION NOTE (error.*):
 #. #    These are shown as error messages in the server tab.
@@ -491,6 +502,12 @@ msgstr "អ្នក​មិន​មែន​ជា​ម្ចាស់​ឆ
 msgid "Cannot join %S, invalid channel password."
 msgstr "មិន​អាច​ចូលរួម %S, ពាក្យ​សម្ងាត់​ឆានែល​មិន​ត្រឹមត្រូវ។"
 
+#: error.sendMessageFailed
+msgid ""
+"An error occurred while sending your last message. Please try again once the "
+"connection has been reestablished."
+msgstr ""
+
 #. # LOCALIZATION NOTE (tooltip.*):
 #. #    These are the descriptions given in a tooltip with information received
 #. #    from a whois response.
@@ -558,3 +575,13 @@ msgstr "បាទ/ចាស"
 #: no
 msgid "No"
 msgstr "ទេ"
+
+#~ msgid ""
+#~ "%S &lt;nick&gt; [&lt;room&gt;]: Invite someone to join you in the "
+#~ "specified channel, or the current channel."
+#~ msgstr ""
+#~ "%S &lt;nick&gt; [&lt;room&gt;]: អញ្ជើញ​អ្នក​ណា​ម្នាក់​ឲ្យ​ចូលរួម​ជាមួយ​អ្នក​នៅ​ក្នុង​ឆានែល​ដែល​"
+#~ "បាន​បញ្ជាក់ ឬ​ឆានែល​បច្ចុប្បន្ន។"
+
+#~ msgid "    %1$S: %2$S"
+#~ msgstr "    %1$S: %2$S"

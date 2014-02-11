@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-16 22:50+0100\n"
+"POT-Creation-Date: 2014-02-11 00:22+0100\n"
 "PO-Revision-Date: 2013-11-07 13:53+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1383832394.000000\n"
@@ -88,13 +88,9 @@ msgstr "Rhan o neges"
 msgid "Show messages from the server"
 msgstr "Dangos negeseuon o'r gweinydd"
 
-#. # LOCALIZATION NOTE (ctcp.ping): Semi-colon list of plural forms.
-#. #  See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. #   %1$S is the nickname of the user who was pinged.
-#. #   #2 is the delay (in seconds).
-#: ctcp.ping
-msgid "Ping reply from %1$S in #2 second.;Ping reply from %1$S in #2 seconds."
-msgstr "Pingio ateb o %1$S mewn #2 eiliad.;Pingio ateb o %1$S mewn #2 eiliad."
+#: options.alternateNicks
+msgid "Alternate nicks"
+msgstr ""
 
 #. # LOCALIZATION NOTE (ctcp.version):
 #. #   %1$S is the nickname of the user whose version was requested.
@@ -144,13 +140,11 @@ msgstr ""
 "eu hatal rhag siarad os yw'r sianel wedi ei gymedroli (+m). Rhaid eich bod "
 "yn weithredwr sianel i wneud hynny."
 
-#: command.invite
+#: command.invite2
 msgid ""
-"%S &lt;nick&gt; [&lt;room&gt;]: Invite someone to join you in the specified "
-"channel, or the current channel."
+"%S &lt;nick&gt;[ &lt;nick&gt;]* [&lt;channel&gt;]: Invite one or more nicks "
+"to join you in the current channel, or to join the specified channel."
 msgstr ""
-"%S &lt;nick&gt; [&lt;room&gt;]: Gwahodd rhywun i ymuno â chi mewn sianel "
-"penodol neu'r sianel gyfredol."
 
 #: command.join
 msgid ""
@@ -375,6 +369,12 @@ msgstr "Mae %1$S wedi eich gwahodd i %2$S."
 msgid "%1$S was successfully invited to %2$S."
 msgstr "Cafodd %1$S ei wahodd yn llwyddiannus i %2$S."
 
+#. #    %1$S is the nickname of the invited user, %2$S is the conversation name
+#. #    they were invited to but are already in
+#: message.alreadyInChannel
+msgid "%1$S is already in %2$S."
+msgstr ""
+
 #. #    %S is the nickname of the user who was summoned.
 #: message.summoned
 msgid "%S was summoned."
@@ -392,8 +392,8 @@ msgstr "Mae %1$S all-lein. Gwybodaeth WHOWAS am %1$S:"
 
 #. #    %1$S is the entry description (from tooltip.*), %2$S is its value.
 #: message.whoisEntry
-msgid "    %1$S: %2$S"
-msgstr "    %1$S: %2$S"
+msgid "਀a0਀a0%1$S: %2$S"
+msgstr ""
 
 #. #    %S is the nickname that is not known to the server.
 #: message.unknownNick
@@ -432,6 +432,17 @@ msgid ""
 msgstr ""
 "Nid yw defnyddwyr sydd wedi eu cysylltu o lleoliadau tebyg i %1$S wedi eu "
 "hatal bellach gan %2$S."
+
+#. # LOCALIZATION NOTE (message.ping): Semi-colon list of plural forms.
+#. #  See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. #   %1$S is the nickname of the user or the server that was pinged.
+#. #   #2 is the delay (in milliseconds).
+#: message.ping
+#, fuzzy
+msgid ""
+"Ping reply from %1$S in #2 millisecond.;Ping reply from %1$S in #2 "
+"milliseconds."
+msgstr "Pingio ateb o %1$S mewn #2 eiliad.;Pingio ateb o %1$S mewn #2 eiliad."
 
 #. # LOCALIZATION NOTE (error.*):
 #. #    These are shown as error messages in the server tab.
@@ -506,6 +517,12 @@ msgstr "Nid chi yw perchennog sianel %S."
 msgid "Cannot join %S, invalid channel password."
 msgstr "Methu ymuno â %S, cyfrinair sianel annilys."
 
+#: error.sendMessageFailed
+msgid ""
+"An error occurred while sending your last message. Please try again once the "
+"connection has been reestablished."
+msgstr ""
+
 #. # LOCALIZATION NOTE (tooltip.*):
 #. #    These are the descriptions given in a tooltip with information received
 #. #    from a whois response.
@@ -573,3 +590,13 @@ msgstr "Iawn"
 #: no
 msgid "No"
 msgstr "Na"
+
+#~ msgid ""
+#~ "%S &lt;nick&gt; [&lt;room&gt;]: Invite someone to join you in the "
+#~ "specified channel, or the current channel."
+#~ msgstr ""
+#~ "%S &lt;nick&gt; [&lt;room&gt;]: Gwahodd rhywun i ymuno â chi mewn sianel "
+#~ "penodol neu'r sianel gyfredol."
+
+#~ msgid "    %1$S: %2$S"
+#~ msgstr "    %1$S: %2$S"

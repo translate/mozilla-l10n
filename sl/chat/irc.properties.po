@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-16 22:50+0100\n"
+"POT-Creation-Date: 2014-02-11 00:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.11.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -86,14 +86,9 @@ msgstr "Sporočilo za slovo"
 msgid "Show messages from the server"
 msgstr "Prikaži sporočila iz strežnika"
 
-#. # LOCALIZATION NOTE (ctcp.ping): Semi-colon list of plural forms.
-#. #  See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. #   %1$S is the nickname of the user who was pinged.
-#. #   #2 is the delay (in seconds).
-#: ctcp.ping
-msgid "Ping reply from %1$S in #2 second.;Ping reply from %1$S in #2 seconds."
+#: options.alternateNicks
+msgid "Alternate nicks"
 msgstr ""
-"Ping odgovor od %1$ S v #2 sekundi.;. Ping odgovor od %1$S v #2 sekundah.."
 
 #. # LOCALIZATION NOTE (ctcp.version):
 #. #   %1$S is the nickname of the user whose version was requested.
@@ -144,13 +139,11 @@ msgstr ""
 "kanalu, da ne pride do besede, če je kanal moderiran (+ m). Morate biti "
 "operater kanala, da to lahko storite."
 
-#: command.invite
+#: command.invite2
 msgid ""
-"%S &lt;nick&gt; [&lt;room&gt;]: Invite someone to join you in the specified "
-"channel, or the current channel."
+"%S &lt;nick&gt;[ &lt;nick&gt;]* [&lt;channel&gt;]: Invite one or more nicks "
+"to join you in the current channel, or to join the specified channel."
 msgstr ""
-"%S &lt;vzdevek&gt; [&lt;soba&gt;]: Povabite nekoga, da se vam pridruži na "
-"določenem kanalu,  ali na trenutnem kanalu."
 
 #: command.join
 msgid ""
@@ -377,6 +370,12 @@ msgstr "%1$S vas je povabil v %2$S."
 msgid "%1$S was successfully invited to %2$S."
 msgstr "%1$S so uspešno povabili v %2$S."
 
+#. #    %1$S is the nickname of the invited user, %2$S is the conversation name
+#. #    they were invited to but are already in
+#: message.alreadyInChannel
+msgid "%1$S is already in %2$S."
+msgstr ""
+
 #. #    %S is the nickname of the user who was summoned.
 #: message.summoned
 msgid "%S was summoned."
@@ -394,8 +393,8 @@ msgstr "%1$S ni na spletu. WHOWAS podatki za %S:"
 
 #. #    %1$S is the entry description (from tooltip.*), %2$S is its value.
 #: message.whoisEntry
-msgid "    %1$S: %2$S"
-msgstr ""
+msgid "਀a0਀a0%1$S: %2$S"
+msgstr "਀a0਀a0%1$S: %2$S"
 
 #. #    %S is the nickname that is not known to the server.
 #: message.unknownNick
@@ -433,6 +432,18 @@ msgid ""
 msgstr ""
 "Uporabniki, ki so povezani iz mest, ki ustrezajo %1$S, niso več pregnani s "
 "strani %2$S."
+
+#. # LOCALIZATION NOTE (message.ping): Semi-colon list of plural forms.
+#. #  See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. #   %1$S is the nickname of the user or the server that was pinged.
+#. #   #2 is the delay (in milliseconds).
+#: message.ping
+#, fuzzy
+msgid ""
+"Ping reply from %1$S in #2 millisecond.;Ping reply from %1$S in #2 "
+"milliseconds."
+msgstr ""
+"Ping odgovor od %1$ S v #2 sekundi.;. Ping odgovor od %1$S v #2 sekundah.."
 
 #. # LOCALIZATION NOTE (error.*):
 #. #    These are shown as error messages in the server tab.
@@ -506,6 +517,12 @@ msgstr "Niste lastnik kanala za %S."
 msgid "Cannot join %S, invalid channel password."
 msgstr "Ni se mogoče pridružiti %S, ker je geslo za kanal neveljavno."
 
+#: error.sendMessageFailed
+msgid ""
+"An error occurred while sending your last message. Please try again once the "
+"connection has been reestablished."
+msgstr ""
+
 #. # LOCALIZATION NOTE (tooltip.*):
 #. #    These are the descriptions given in a tooltip with information received
 #. #    from a whois response.
@@ -574,5 +591,9 @@ msgstr "Da"
 msgid "No"
 msgstr "Ne"
 
-#~ msgid "਀a0਀a0%1$S: %2$S"
-#~ msgstr "਀a0਀a0%1$S: %2$S"
+#~ msgid ""
+#~ "%S &lt;nick&gt; [&lt;room&gt;]: Invite someone to join you in the "
+#~ "specified channel, or the current channel."
+#~ msgstr ""
+#~ "%S &lt;vzdevek&gt; [&lt;soba&gt;]: Povabite nekoga, da se vam pridruži na "
+#~ "določenem kanalu,  ali na trenutnem kanalu."
