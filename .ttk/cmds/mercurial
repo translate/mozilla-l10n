@@ -31,7 +31,13 @@ function _get_option() {
 	local option=$1
 	case $1 in
 		--clone)
-			command="_clone"
+			command="_clone _set_author _set_push_repo"
+			;;
+		--set-author)
+			command="_set_author"
+			;;
+		--set-push-repo)
+			command="_set_push_repo"
 			;;
 		*)
 			usage
@@ -48,6 +54,33 @@ function _clone(){
 	[ -f $L10N_DIR/$mozlang.hgrc ] && mv $L10N_DIR/$mozlang.hgrc $L10N_DIR/$mozlang/.hg/hgrc
 }
 
+function _set_push_repo(){
+	mozlang=$(get_language_upstream $*)
+	hgrc=$L10N_DIR/$mozlang/.hg/hgrc
+	current_pushrepo=$(egrep "^default-push" $hgrc)
+	if [ "$current_pushrepo" != "" ]; then
+		log_warning "Push repo already set set to $current_pushrepo"
+	else
+		current_defaultrepo=$(egrep "^default =" $hgrc)
+		new_pushrepo=$(sed -i "/default =/p;s/default/default-push/;s/http:/ssh:/" $hgrc)
+	fi
+}
+
+function _set_author(){
+	mozlang=$(get_language_upstream $*)
+	hgrc=$L10N_DIR/$mozlang/.hg/hgrc
+	current_username=$(egrep "^username" $hgrc)
+	if [ "$current_username" != "" ]; then
+		log_warning "Author already set set to $current_username"
+	else
+		cat >> $hgrc <<-EOF
+
+		[ui]
+		username = $mozlang team [Pootle] <https://wiki.mozilla.org/L10n:Teams:$mozlang>
+		EOF
+	fi
+}
+
 function mercurial() {
 	local option=$1
 	shift
@@ -57,6 +90,9 @@ function mercurial() {
 	local langs=$*
 	for lang in $langs
 	do
-		$command $lang
+		for cmd in $command
+		do
+			$cmd $lang
+		done
 	done
 }
