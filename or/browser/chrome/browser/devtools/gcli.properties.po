@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 18:42+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2013-12-06 06:11+0000\n"
 "Last-Translator: MANOJ KUMAR <mgiri@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1386310296.000000\n"
@@ -89,6 +89,11 @@ msgstr "ଉପଲବ୍ଧ ବିକଳ୍ପଗୁଡ଼ିକ"
 #: cliUnknownCommand
 msgid "Invalid Command"
 msgstr "ଅବୈଧ ନିର୍ଦ୍ଦେଶ"
+
+#. # LOCALIZATION NOTE: A parameter should have a value, but doesn't
+#: cliIncompleteParam
+msgid "Value required for '%1$S'."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a file
 #. # that does not exist, but should (e.g. for use with File->Open) %1$S is a
@@ -268,15 +273,11 @@ msgstr ""
 "ଦର୍ଶାଯାଇଥିବା ନିର୍ଦ୍ଦେଶଗୁଡ଼ିକୁ କମ କରିବା ପାଇଁ  ଏକ ସନ୍ଧାନ ବାକ୍ୟଖଣ୍ଡ ବ୍ୟବହାର କରାଯାଇଥାଏ। ସାଧାରଣ "
 "ଅଭିବ୍ୟକ୍ତିଗୁଡ଼ିକ ସହାୟତା ପ୍ରାପ୍ତ ନୁହଁ।"
 
-#. # LOCALIZATION NOTE (helpManSynopsis, helpManDescription): These strings are
-#. # displayed in the help page for a command in the console.
+#. # LOCALIZATION NOTE: These strings are displayed in the help page for a
+#. # command in the console.
 #: helpManSynopsis
 msgid "Synopsis"
 msgstr "ସାରାଂଶ"
-
-#: helpManDescription
-msgid "Description"
-msgstr "ବର୍ଣ୍ଣନା"
 
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
@@ -371,7 +372,7 @@ msgid "Command prefix is unset"
 msgstr "ନିର୍ଦ୍ଦେଶ ଉପସର୍ଗକୁ ସେଟ କରାଯାଇ ନାହିଁ"
 
 #. # LOCALIZATION NOTE (connectDesc, connectManual, connectPrefixDesc,
-#. # connectPortDesc, connectHostDesc, connectDupReply): These strings describe
+#. # connectMethodDesc, connectUrlDesc, connectDupReply): These strings describe
 #. # the 'connect' command and all its available parameters. A 'prefix' is an 
 #. # alias for the remote server (think of it as a "connection name"), and it
 #. # allows to identify a specific server when connected to multiple remote
@@ -395,13 +396,13 @@ msgctxt "connectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "ଆମଦାନୀ ହୋଇଥିବା ନିର୍ଦ୍ଦେଶଗୁଡ଼ିକ ପାଇଁ  ମୂଖ୍ୟ ଉପସର୍ଗ"
 
-#: connectPortDesc
-msgid "The TCP port to listen on"
-msgstr "ଶୁଣିବା ପାଇଁ TCP ପୋର୍ଟ"
+#: connectMethodDesc
+msgid "The method of connecting"
+msgstr ""
 
-#: connectHostDesc
-msgid "The hostname to bind to"
-msgstr "ବାନ୍ଧିବା ପାଇଁ ଥିବା ହୋଷ୍ଟ ନାମ"
+#: connectUrlDesc
+msgid "The URL to connect to"
+msgstr ""
 
 #: connectDupReply
 msgid "Connection called %S already exists."
@@ -449,6 +450,35 @@ msgstr "%S ନିର୍ଦ୍ଦେଶଗୁଡ଼ିକୁ ବାହାର କ�
 #: disconnectOutstanding
 msgid "Outstanding requests (%S)"
 msgstr "ବଳକା ଅନୁରୋଧ (%S)"
+
+#. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
+#. # strings describe the 'global' command and its parameters
+#: globalDesc
+msgid "Change the JS global"
+msgstr ""
+
+#: globalWindowDesc
+msgid "The new window/global"
+msgstr ""
+
+#: globalOutput
+msgid "JS global is now %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE: These strings describe the 'clear' command
+#: clearDesc
+msgid "Clear the output area"
+msgstr ""
+
+#. # LOCALIZATION NOTE (langDesc, langOutput): These strings describe the 'lang'
+#. # command and its parameters
+#: langDesc
+msgid "Enter commands in different languages"
+msgstr ""
+
+#: langOutput
+msgid "You are now using %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (prefDesc, prefManual, prefListDesc, prefListManual,
 #. # prefListSearchDesc, prefListSearchManual, prefShowDesc, prefShowManual,
@@ -603,17 +633,15 @@ msgid ""
 "it!' button"
 msgstr "ଚାଳକମାନଙ୍କୁ ସେମାନେ 'ବୁଝିଗଲୁ!' ବଟନ କ୍ଲିକ କରିବା ପର୍ଯ୍ୟନ୍ତ ସନ୍ଦେଶକୁ ପୁନଃ ଦର୍ଶାନ୍ତୁ"
 
-#. # LOCALIZATION NOTE (introTextOpening2, introTextCommands, introTextKeys2,
+#. # LOCALIZATION NOTE (introTextOpening3, introTextCommands, introTextKeys2,
 #. # introTextF1Escape, introTextGo): These strings are displayed when the user
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
-#: introTextOpening2
+#: introTextOpening3
 msgid ""
-"This command line is designed for developers. It focuses on speed of input "
-"over JavaScript syntax and a rich display over monospace output."
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
 msgstr ""
-"Firefox ନିର୍ଦ୍ଦେଶ ବିକାଶକାରୀମାନଙ୍କ ପାଇଁ ରଚନା କରାଯାଇଛି। ଏହା JavaScript ବାକ୍ୟ ବିନ୍ୟାସ "
-"ଉପରେ ନିବେଶର ଗତିକୁ ଲକ୍ଷ୍ଯ କରିଥାଏ ଏବଂ ମନୋସ୍ପେସ ଫଲାଫଳ ଉପରେ ଦର୍ଶାଇଥାଏ।"
 
 #: introTextCommands
 msgid "For a list of commands type"
@@ -644,15 +672,28 @@ msgstr "ପ୍ରାରମ୍ଭିକ ସ୍ୱାଗତ ସନ୍ଦେଶ ଦ
 msgid "How eager are the tooltips"
 msgstr "ଉପକରଣ ସୂଚନାଗୁଡ଼ିକ କେତେ ଉତ୍ସାହଜନକ ଅଟେ"
 
-#. # LOCALIZATION NOTE: This is a short description of the 'allowSetDesc'
-#. # setting.
-#: allowSetDesc
-msgid "Has the user enabled the 'pref set' command?"
-msgstr "ଚାଳକ 'pref set' ନିର୍ଦ୍ଦେଶକୁ ସକ୍ରିୟ କରିଛି କି?"
-
 #. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
 #. # help command, just before the list of commands. This text is wrapped inside
 #. # a link to a localized MDN article.
 #: introBody
 msgid "For more information see MDN."
 msgstr "ଅଧିକ ସୂଚନା ପାଇଁ MDN କୁ ଦେଖନ୍ତୁ।"
+
+#~ msgid "Description"
+#~ msgstr "ବର୍ଣ୍ଣନା"
+
+#~ msgid "The TCP port to listen on"
+#~ msgstr "ଶୁଣିବା ପାଇଁ TCP ପୋର୍ଟ"
+
+#~ msgid "The hostname to bind to"
+#~ msgstr "ବାନ୍ଧିବା ପାଇଁ ଥିବା ହୋଷ୍ଟ ନାମ"
+
+#~ msgid ""
+#~ "This command line is designed for developers. It focuses on speed of "
+#~ "input over JavaScript syntax and a rich display over monospace output."
+#~ msgstr ""
+#~ "Firefox ନିର୍ଦ୍ଦେଶ ବିକାଶକାରୀମାନଙ୍କ ପାଇଁ ରଚନା କରାଯାଇଛି। ଏହା JavaScript ବାକ୍ୟ ବିନ୍ୟାସ "
+#~ "ଉପରେ ନିବେଶର ଗତିକୁ ଲକ୍ଷ୍ଯ କରିଥାଏ ଏବଂ ମନୋସ୍ପେସ ଫଲାଫଳ ଉପରେ ଦର୍ଶାଇଥାଏ।"
+
+#~ msgid "Has the user enabled the 'pref set' command?"
+#~ msgstr "ଚାଳକ 'pref set' ନିର୍ଦ୍ଦେଶକୁ ସକ୍ରିୟ କରିଛି କି?"

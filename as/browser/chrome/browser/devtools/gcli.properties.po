@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 18:42+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2013-10-18 14:15+0000\n"
 "Last-Translator: ngoswami <ngoswami@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1382105705.000000\n"
@@ -90,6 +90,11 @@ msgstr "উপলব্ধ বিকল্পসমূহ"
 #: cliUnknownCommand
 msgid "Invalid Command"
 msgstr "অবৈধ কমান্ড"
+
+#. # LOCALIZATION NOTE: A parameter should have a value, but doesn't
+#: cliIncompleteParam
+msgid "Value required for '%1$S'."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a file
 #. # that does not exist, but should (e.g. for use with File->Open) %1$S is a
@@ -269,15 +274,11 @@ msgstr ""
 "প্ৰদৰ্শিত কমান্ডসমূহ সংক্ষিপ্ত কৰিবলে ব্যৱহৃত সন্ধান স্ট্ৰিং। সাধাৰণ অভিব্যক্তিসমূহ সমৰ্থিত "
 "নহয়।"
 
-#. # LOCALIZATION NOTE (helpManSynopsis, helpManDescription): These strings are
-#. # displayed in the help page for a command in the console.
+#. # LOCALIZATION NOTE: These strings are displayed in the help page for a
+#. # command in the console.
 #: helpManSynopsis
 msgid "Synopsis"
 msgstr "সাৰাংশ"
-
-#: helpManDescription
-msgid "Description"
-msgstr "বিৱৰণ"
 
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
@@ -373,7 +374,7 @@ msgid "Command prefix is unset"
 msgstr "কমান্ড উপসৰ্গ সংহিত নহয়"
 
 #. # LOCALIZATION NOTE (connectDesc, connectManual, connectPrefixDesc,
-#. # connectPortDesc, connectHostDesc, connectDupReply): These strings describe
+#. # connectMethodDesc, connectUrlDesc, connectDupReply): These strings describe
 #. # the 'connect' command and all its available parameters. A 'prefix' is an 
 #. # alias for the remote server (think of it as a "connection name"), and it
 #. # allows to identify a specific server when connected to multiple remote
@@ -397,13 +398,13 @@ msgctxt "connectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "ইমপোৰ্ট কৰা কমান্ডসমূহৰ বাবে উপধায়ক উপসৰ্গ"
 
-#: connectPortDesc
-msgid "The TCP port to listen on"
-msgstr "শুনিবলে TCP পোৰ্ট"
+#: connectMethodDesc
+msgid "The method of connecting"
+msgstr ""
 
-#: connectHostDesc
-msgid "The hostname to bind to"
-msgstr "বান্ধীবলে হস্টনাম"
+#: connectUrlDesc
+msgid "The URL to connect to"
+msgstr ""
 
 #: connectDupReply
 msgid "Connection called %S already exists."
@@ -452,6 +453,35 @@ msgstr "আতৰোৱা %S কমান্ডসমূহ।"
 #: disconnectOutstanding
 msgid "Outstanding requests (%S)"
 msgstr "অমীমাংসিত অনুৰোধসমূহ (%S)"
+
+#. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
+#. # strings describe the 'global' command and its parameters
+#: globalDesc
+msgid "Change the JS global"
+msgstr ""
+
+#: globalWindowDesc
+msgid "The new window/global"
+msgstr ""
+
+#: globalOutput
+msgid "JS global is now %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE: These strings describe the 'clear' command
+#: clearDesc
+msgid "Clear the output area"
+msgstr ""
+
+#. # LOCALIZATION NOTE (langDesc, langOutput): These strings describe the 'lang'
+#. # command and its parameters
+#: langDesc
+msgid "Enter commands in different languages"
+msgstr ""
+
+#: langOutput
+msgid "You are now using %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (prefDesc, prefManual, prefListDesc, prefListManual,
 #. # prefListSearchDesc, prefListSearchManual, prefShowDesc, prefShowManual,
@@ -610,17 +640,15 @@ msgstr ""
 "নতুন ব্যৱহাৰকাৰীসমূহলে দেখুৱা বাৰ্তা পুনৰ প্ৰদৰ্শন কৰক যেতিয়ালৈকে তেওলোকে 'বুজি "
 "পালো!' বুটাম ক্লিক নকৰে"
 
-#. # LOCALIZATION NOTE (introTextOpening2, introTextCommands, introTextKeys2,
+#. # LOCALIZATION NOTE (introTextOpening3, introTextCommands, introTextKeys2,
 #. # introTextF1Escape, introTextGo): These strings are displayed when the user
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
-#: introTextOpening2
+#: introTextOpening3
 msgid ""
-"This command line is designed for developers. It focuses on speed of input "
-"over JavaScript syntax and a rich display over monospace output."
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
 msgstr ""
-"এই কমান্ড শাৰী উন্নয়নকাৰীসমূহৰ বাবে ৰূপাঙ্কীত। ই JavaScript বাক্যবিন্যাসত ইনপুটৰ গতি "
-"আৰু এটা মনোস্পেইচ আউটপুটৰ উপৰত এটা ভাল প্ৰদৰ্শনৰ উপৰত মনোনিবেষ কৰে।"
 
 #: introTextCommands
 msgid "For a list of commands type"
@@ -651,18 +679,31 @@ msgstr "আৰম্ভণি অভিনন্দন বাৰ্তা দে
 msgid "How eager are the tooltips"
 msgstr "টুলটিপসমূহ কিমান আগ্ৰহী"
 
-#. # LOCALIZATION NOTE: This is a short description of the 'allowSetDesc'
-#. # setting.
-#: allowSetDesc
-msgid "Has the user enabled the 'pref set' command?"
-msgstr "ব্যৱহাৰকাৰীজনে 'pref set' কমান্ড সামৰ্থবান কৰিছে নে?"
-
 #. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
 #. # help command, just before the list of commands. This text is wrapped inside
 #. # a link to a localized MDN article.
 #: introBody
 msgid "For more information see MDN."
 msgstr "অধিক তথ্যৰ বাবে MDN চাওক।"
+
+#~ msgid "Description"
+#~ msgstr "বিৱৰণ"
+
+#~ msgid "The TCP port to listen on"
+#~ msgstr "শুনিবলে TCP পোৰ্ট"
+
+#~ msgid "The hostname to bind to"
+#~ msgstr "বান্ধীবলে হস্টনাম"
+
+#~ msgid ""
+#~ "This command line is designed for developers. It focuses on speed of "
+#~ "input over JavaScript syntax and a rich display over monospace output."
+#~ msgstr ""
+#~ "এই কমান্ড শাৰী উন্নয়নকাৰীসমূহৰ বাবে ৰূপাঙ্কীত। ই JavaScript বাক্যবিন্যাসত ইনপুটৰ "
+#~ "গতি আৰু এটা মনোস্পেইচ আউটপুটৰ উপৰত এটা ভাল প্ৰদৰ্শনৰ উপৰত মনোনিবেষ কৰে।"
+
+#~ msgid "Has the user enabled the 'pref set' command?"
+#~ msgstr "ব্যৱহাৰকাৰীজনে 'pref set' কমান্ড সামৰ্থবান কৰিছে নে?"
 
 #~ msgid "Parameters"
 #~ msgstr "প্ৰাচলসমূহ"

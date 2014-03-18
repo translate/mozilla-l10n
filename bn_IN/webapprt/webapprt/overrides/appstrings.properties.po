@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 14:41+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2014-01-17 10:23+0000\n"
 "Last-Translator: Biraj <brnet00@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,15 +15,45 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1389954228.000000\n"
 
-#: netReset
+#: malformedURI
+msgid "The URL is not valid and cannot be loaded."
+msgstr "URL-টি বৈধ নয় এবং লোড করা সম্ভব নয়।"
+
+#: fileNotFound
+msgid "The file %S cannot be found. Please check the location and try again."
+msgstr ""
+"%S ফাইলটি পাওয়া যায়নি। অনুগ্রহ করে অবস্থানটি পরীক্ষা করে পুনরায় প্রচেষ্টা করুন।"
+
+#: dnsNotFound
+msgid "%S could not be found. Please check the name and try again."
+msgstr "%S পাওয়া যায়নি। অনুগ্রহ করে নাম পরীক্ষা করে পুনরায় প্রচেষ্টা করুন।"
+
+#: unknownProtocolFound
 msgid ""
-"The connection to the server was reset while the application was loading."
-msgstr "অ্যাপ্লিকেশন লোড হওয়ার সময় সার্ভারের সাথে সংযোগ পুনঃস্থাপন করা হয়েছে।"
+"One of the following %S is not a registered protocol or is not allowed in "
+"this context."
+msgstr ""
+
+#: connectionFailure
+msgid "The connection was refused when attempting to contact %S."
+msgstr "%S-র সাথে যোগাযোগ করার সময় সংযোগ বিচ্ছিন্ন হয়েছে।"
+
+#: netInterrupt
+msgid ""
+"The connection to %S has terminated unexpectedly. Some data may have been "
+"transferred."
+msgstr ""
+"%S-র সাথে অপ্রত্যাশিতভাবে সংযোগ বিচ্ছিন্ন করা হয়েছে। সম্ভবত কিছু তথ্য আদান-প্রদান "
+"করা হয়েছে।"
+
+#: netTimeout
+msgid "The operation timed out when attempting to contact %S."
+msgstr "%S-র সাথে সংযোগ করার সময় কর্মের জন্য নির্ধারিত সময়সীমা পার হয়ে গেছে।"
 
 #: redirectLoop
 msgid "A server is redirecting a request in a way that will never complete."
@@ -38,9 +68,18 @@ msgstr ""
 "এই পৃষ্ঠা প্রদর্শনের জন্য, অ্যাপ্লিকেশন দ্বারা পূর্বে সঞ্চালিত কোনো কর্ম পুনরায় করা "
 "আবশ্যক হবে (যেমন কোনো অনুসন্ধান অথবা ক্রম নিশ্চিতকরণ)।"
 
+#: resendButton.label
+msgid "Resend"
+msgstr "পুনরায় পাঠানো হবে"
+
 #: unknownSocketType
 msgid "The application doesn't know how to communicate with the server."
 msgstr "এই অ্যাপ্লিকেশনের, সার্ভারের সাথে যোগাযোগের নিয়ম জানা নেই।"
+
+#: netReset
+msgid ""
+"The connection to the server was reset while the application was loading."
+msgstr "অ্যাপ্লিকেশন লোড হওয়ার সময় সার্ভারের সাথে সংযোগ পুনঃস্থাপন করা হয়েছে।"
 
 #: notCached
 msgid "The application requested a document which is no longer available."
@@ -50,6 +89,10 @@ msgstr "অ্যাপ্লিকেশনটি যে নথির জন্
 msgid ""
 "The application is currently in offline mode and can't access the network."
 msgstr "অ্যাপ্লিকেশনটি বর্তমানে অফলাইন মোডে আছে এবং নেটওয়ার্ক ব্যবহার করতে সক্ষম নয়|"
+
+#: isprinting
+msgid "The document cannot change while Printing or in Print Preview."
+msgstr "প্রিন্ট অথবা পূর্বপ্রদর্শনের সময় নথির মধ্যে কোনো পরিবর্তন করা সম্ভব নয়।"
 
 #: deniedPortAccess
 msgid ""
@@ -91,6 +134,55 @@ msgid ""
 msgstr ""
 "অ্যাপ্লিকেশনটি অবিরত করা যাচ্ছে না কারণ এটি এমন ধরনের ফাইলে প্রবেশ করেছে যা খোলা "
 "নিরাপদ নয়। এই সমস্যা কথা জানাতে অ্যাপ্লিকেশন লেখকের সাথে যোগাযোগ করুন।"
+
+#: externalProtocolTitle
+msgid "External Protocol Request"
+msgstr ""
+
+#: externalProtocolPrompt
+msgid ""
+"An external application must be launched to handle %1$S: links.\n"
+"\n"
+"\n"
+"Requested link:\n"
+"\n"
+"%2$S\n"
+"\n"
+"Application: %3$S\n"
+"\n"
+"\n"
+"If you were not expecting this request it may be an attempt to exploit a "
+"weakness in that other program. Cancel this request unless you are sure it "
+"is not malicious.\n"
+msgstr ""
+
+#. #LOCALIZATION NOTE (externalProtocolUnknown): The following string is shown if the application name can't be determined
+#: externalProtocolUnknown
+#, fuzzy
+msgid "<Unknown>"
+msgstr "অজানা"
+
+#: externalProtocolChkMsg
+msgid "Remember my choice for all links of this type."
+msgstr ""
+
+#: externalProtocolLaunchBtn
+msgid "Launch application"
+msgstr "অ্যাপ্লিকেশন আরম্ভ করুন"
+
+#: malwareBlocked
+msgid ""
+"The site at %S has been reported as an attack site and has been blocked "
+"based on your security preferences."
+msgstr ""
+"%S-এ উপস্থিত সাইটটি একটি বিপজ্জনক সাইট রূপে চিহ্নিত হয়েছে এবং আপনার নির্ধারিত "
+"সুরক্ষামূলক বৈশিষ্ট্য অনুযায়ী এটির প্রদর্শন প্রতিরোধ করা হয়েছে।"
+
+#: phishingBlocked
+msgid ""
+"The website at %S has been reported as a web forgery designed to trick users "
+"into sharing personal or financial information."
+msgstr ""
 
 #: cspFrameAncestorBlocked
 msgid ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 18:42+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2013-12-14 10:48+0000\n"
 "Last-Translator: Emin <mastizada@itu.edu.tr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1387018120.000000\n"
@@ -88,6 +88,11 @@ msgstr "İstifadə oluna biləcək seçimlər"
 #. # isn't registered
 #: cliUnknownCommand
 msgid "Invalid Command"
+msgstr ""
+
+#. # LOCALIZATION NOTE: A parameter should have a value, but doesn't
+#: cliIncompleteParam
+msgid "Value required for '%1$S'."
 msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a file
@@ -272,15 +277,11 @@ msgstr ""
 "search string to use in narrowing down the displayed commands. Regular "
 "expressions not supported."
 
-#. # LOCALIZATION NOTE (helpManSynopsis, helpManDescription): These strings are
-#. # displayed in the help page for a command in the console.
+#. # LOCALIZATION NOTE: These strings are displayed in the help page for a
+#. # command in the console.
 #: helpManSynopsis
 msgid "Synopsis"
 msgstr "Xülasə"
-
-#: helpManDescription
-msgid "Description"
-msgstr "Açıqlama"
 
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
@@ -375,7 +376,7 @@ msgid "Command prefix is unset"
 msgstr ""
 
 #. # LOCALIZATION NOTE (connectDesc, connectManual, connectPrefixDesc,
-#. # connectPortDesc, connectHostDesc, connectDupReply): These strings describe
+#. # connectMethodDesc, connectUrlDesc, connectDupReply): These strings describe
 #. # the 'connect' command and all its available parameters. A 'prefix' is an 
 #. # alias for the remote server (think of it as a "connection name"), and it
 #. # allows to identify a specific server when connected to multiple remote
@@ -396,12 +397,12 @@ msgctxt "connectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr ""
 
-#: connectPortDesc
-msgid "The TCP port to listen on"
+#: connectMethodDesc
+msgid "The method of connecting"
 msgstr ""
 
-#: connectHostDesc
-msgid "The hostname to bind to"
+#: connectUrlDesc
+msgid "The URL to connect to"
 msgstr ""
 
 #: connectDupReply
@@ -449,6 +450,35 @@ msgstr ""
 #. # incomplete requests.
 #: disconnectOutstanding
 msgid "Outstanding requests (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
+#. # strings describe the 'global' command and its parameters
+#: globalDesc
+msgid "Change the JS global"
+msgstr ""
+
+#: globalWindowDesc
+msgid "The new window/global"
+msgstr ""
+
+#: globalOutput
+msgid "JS global is now %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE: These strings describe the 'clear' command
+#: clearDesc
+msgid "Clear the output area"
+msgstr ""
+
+#. # LOCALIZATION NOTE (langDesc, langOutput): These strings describe the 'lang'
+#. # command and its parameters
+#: langDesc
+msgid "Enter commands in different languages"
+msgstr ""
+
+#: langOutput
+msgid "You are now using %S"
 msgstr ""
 
 #. # LOCALIZATION NOTE (prefDesc, prefManual, prefListDesc, prefListManual,
@@ -606,15 +636,15 @@ msgstr ""
 "Yeni istifadəçilərə göstərilən mesajı 'Anladım!' düyməsinə klikləyənə qədər "
 "təkrar göstər"
 
-#. # LOCALIZATION NOTE (introTextOpening2, introTextCommands, introTextKeys2,
+#. # LOCALIZATION NOTE (introTextOpening3, introTextCommands, introTextKeys2,
 #. # introTextF1Escape, introTextGo): These strings are displayed when the user
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
-#: introTextOpening2
+#: introTextOpening3
 msgid ""
-"This command line is designed for developers. It focuses on speed of input "
-"over JavaScript syntax and a rich display over monospace output."
-msgstr "Mövcud seçim siyahısı içində göstərilən sətri axtar"
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
+msgstr ""
 
 #: introTextCommands
 msgid "For a list of commands type"
@@ -646,18 +676,23 @@ msgstr "İlk qarşılama mesajını göstər"
 msgid "How eager are the tooltips"
 msgstr "İp uclarının nə qədər həvəsli olduğu"
 
-#. # LOCALIZATION NOTE: This is a short description of the 'allowSetDesc'
-#. # setting.
-#: allowSetDesc
-msgid "Has the user enabled the 'pref set' command?"
-msgstr "İstifadəçi 'pref set' əmrini aktivləşdirib?"
-
 #. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
 #. # help command, just before the list of commands. This text is wrapped inside
 #. # a link to a localized MDN article.
 #: introBody
 msgid "For more information see MDN."
 msgstr "Daha çox məlumat üçün MDN-ə baxın."
+
+#~ msgid "Description"
+#~ msgstr "Açıqlama"
+
+#~ msgid ""
+#~ "This command line is designed for developers. It focuses on speed of "
+#~ "input over JavaScript syntax and a rich display over monospace output."
+#~ msgstr "Mövcud seçim siyahısı içində göstərilən sətri axtar"
+
+#~ msgid "Has the user enabled the 'pref set' command?"
+#~ msgstr "İstifadəçi 'pref set' əmrini aktivləşdirib?"
 
 #~ msgid "Parameters"
 #~ msgstr "Parametrlər"

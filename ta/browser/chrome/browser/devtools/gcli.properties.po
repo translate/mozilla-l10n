@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 18:42+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2013-10-25 06:15+0000\n"
 "Last-Translator: SyedKhaleel <jskcse4@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1382681709.000000\n"
@@ -91,6 +91,11 @@ msgstr "இருக்கும் விருப்பங்கள்"
 #: cliUnknownCommand
 msgid "Invalid Command"
 msgstr "தவறான கட்டளை               "
+
+#. # LOCALIZATION NOTE: A parameter should have a value, but doesn't
+#: cliIncompleteParam
+msgid "Value required for '%1$S'."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a file
 #. # that does not exist, but should (e.g. for use with File->Open) %1$S is a
@@ -270,15 +275,11 @@ msgstr ""
 "காண்பிக்கப்படும் கட்டளைகளின் எண்ணிக்கையைக் குறைப்பதற்காக பயன்படுத்த வேண்டிய தேடல் சரம். "
 "வழக்கமான தொடர்கள் ஆதரிக்கப்படாது."
 
-#. # LOCALIZATION NOTE (helpManSynopsis, helpManDescription): These strings are
-#. # displayed in the help page for a command in the console.
+#. # LOCALIZATION NOTE: These strings are displayed in the help page for a
+#. # command in the console.
 #: helpManSynopsis
 msgid "Synopsis"
 msgstr "சுருக்கம்"
-
-#: helpManDescription
-msgid "Description"
-msgstr "விளக்கம்"
 
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
@@ -374,7 +375,7 @@ msgid "Command prefix is unset"
 msgstr "கட்டளை முன்னொட்டு அமைக்கப்படவில்லை"
 
 #. # LOCALIZATION NOTE (connectDesc, connectManual, connectPrefixDesc,
-#. # connectPortDesc, connectHostDesc, connectDupReply): These strings describe
+#. # connectMethodDesc, connectUrlDesc, connectDupReply): These strings describe
 #. # the 'connect' command and all its available parameters. A 'prefix' is an 
 #. # alias for the remote server (think of it as a "connection name"), and it
 #. # allows to identify a specific server when connected to multiple remote
@@ -398,13 +399,13 @@ msgctxt "connectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "இறக்குமதி செய்யப்பட்ட கட்டளைகளுக்கான தாய் முன்னொட்டு"
 
-#: connectPortDesc
-msgid "The TCP port to listen on"
-msgstr "கவனிக்க வேண்டிய TCP முனையம்"
+#: connectMethodDesc
+msgid "The method of connecting"
+msgstr ""
 
-#: connectHostDesc
-msgid "The hostname to bind to"
-msgstr "பிணைக்க வேண்டிய புரவலன் பெயர்"
+#: connectUrlDesc
+msgid "The URL to connect to"
+msgstr ""
 
 #: connectDupReply
 msgid "Connection called %S already exists."
@@ -452,6 +453,35 @@ msgstr "%S கட்டளைகள் நீக்கப்பட்டன."
 #: disconnectOutstanding
 msgid "Outstanding requests (%S)"
 msgstr "நிலுவையிலுள்ள கோரிக்கைகள் (%S)"
+
+#. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
+#. # strings describe the 'global' command and its parameters
+#: globalDesc
+msgid "Change the JS global"
+msgstr ""
+
+#: globalWindowDesc
+msgid "The new window/global"
+msgstr ""
+
+#: globalOutput
+msgid "JS global is now %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE: These strings describe the 'clear' command
+#: clearDesc
+msgid "Clear the output area"
+msgstr ""
+
+#. # LOCALIZATION NOTE (langDesc, langOutput): These strings describe the 'lang'
+#. # command and its parameters
+#: langDesc
+msgid "Enter commands in different languages"
+msgstr ""
+
+#: langOutput
+msgid "You are now using %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (prefDesc, prefManual, prefListDesc, prefListManual,
 #. # prefListSearchDesc, prefListSearchManual, prefShowDesc, prefShowManual,
@@ -609,18 +639,15 @@ msgstr ""
 "புதிய பனர்கள் 'புரிந்தது!' என்ற பொத்தானைக் கிளிக் செய்யும் வரை காண்பிக்கப்படும் செய்தியை "
 "மீண்டும் காண்பி"
 
-#. # LOCALIZATION NOTE (introTextOpening2, introTextCommands, introTextKeys2,
+#. # LOCALIZATION NOTE (introTextOpening3, introTextCommands, introTextKeys2,
 #. # introTextF1Escape, introTextGo): These strings are displayed when the user
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
-#: introTextOpening2
+#: introTextOpening3
 msgid ""
-"This command line is designed for developers. It focuses on speed of input "
-"over JavaScript syntax and a rich display over monospace output."
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
 msgstr ""
-"இந்தக் கட்டளைவரியானது டெவலப்பர்களுக்காக வடிவமைக்கப்பட்டது. JavaScript தொடரியலில் "
-"உள்ளீட்டின் வேகம் மற்றும் மோனோஸ்பேஸ் வெளியீட்டிலான உயர் தர காட்சிப்படுத்தல் ஆகியவற்றில் கவனம் "
-"செலுத்தி உருவாக்கப்பட்டது."
 
 #: introTextCommands
 msgid "For a list of commands type"
@@ -651,18 +678,32 @@ msgstr "தொடக்க வரவேற்பு செய்தியைக�
 msgid "How eager are the tooltips"
 msgstr "கருவிக்குறிப்புகள் எவ்வளவு ஆர்வமாக உள்ளன"
 
-#. # LOCALIZATION NOTE: This is a short description of the 'allowSetDesc'
-#. # setting.
-#: allowSetDesc
-msgid "Has the user enabled the 'pref set' command?"
-msgstr "பயனர் 'pref set' கட்டளையை செயல்படுத்தியுள்ளாரா?"
-
 #. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
 #. # help command, just before the list of commands. This text is wrapped inside
 #. # a link to a localized MDN article.
 #: introBody
 msgid "For more information see MDN."
 msgstr "மேலும் தகவலுக்கு MDN ஐக் காணவும்."
+
+#~ msgid "Description"
+#~ msgstr "விளக்கம்"
+
+#~ msgid "The TCP port to listen on"
+#~ msgstr "கவனிக்க வேண்டிய TCP முனையம்"
+
+#~ msgid "The hostname to bind to"
+#~ msgstr "பிணைக்க வேண்டிய புரவலன் பெயர்"
+
+#~ msgid ""
+#~ "This command line is designed for developers. It focuses on speed of "
+#~ "input over JavaScript syntax and a rich display over monospace output."
+#~ msgstr ""
+#~ "இந்தக் கட்டளைவரியானது டெவலப்பர்களுக்காக வடிவமைக்கப்பட்டது. JavaScript தொடரியலில் "
+#~ "உள்ளீட்டின் வேகம் மற்றும் மோனோஸ்பேஸ் வெளியீட்டிலான உயர் தர காட்சிப்படுத்தல் ஆகியவற்றில் "
+#~ "கவனம் செலுத்தி உருவாக்கப்பட்டது."
+
+#~ msgid "Has the user enabled the 'pref set' command?"
+#~ msgstr "பயனர் 'pref set' கட்டளையை செயல்படுத்தியுள்ளாரா?"
 
 #~ msgid "Parameters"
 #~ msgstr "அளவுருக்கள்"

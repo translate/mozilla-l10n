@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 18:42+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2014-03-07 17:46+0000\n"
 "Last-Translator: asadsajjad <asadsajjad49@gmail.com>\n"
 "Language-Team: none\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1394214377.000000\n"
@@ -89,6 +89,11 @@ msgstr "دستیاب اختیارات"
 #: cliUnknownCommand
 msgid "Invalid Command"
 msgstr "ناجائز حکم"
+
+#. # LOCALIZATION NOTE: A parameter should have a value, but doesn't
+#: cliIncompleteParam
+msgid "Value required for '%1$S'."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a file
 #. # that does not exist, but should (e.g. for use with File->Open) %1$S is a
@@ -267,15 +272,11 @@ msgstr ""
 "تلاش سلک کے ذریعے دکھانے جانے والے احکامات کی تخصیص کی جاسکتی ہے۔ باقاعدہ "
 "تراکیب کی معاونت موجود نہیں ہے۔"
 
-#. # LOCALIZATION NOTE (helpManSynopsis, helpManDescription): These strings are
-#. # displayed in the help page for a command in the console.
+#. # LOCALIZATION NOTE: These strings are displayed in the help page for a
+#. # command in the console.
 #: helpManSynopsis
 msgid "Synopsis"
 msgstr "خاکہ"
-
-#: helpManDescription
-msgid "Description"
-msgstr "تصریح"
 
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
@@ -370,7 +371,7 @@ msgid "Command prefix is unset"
 msgstr "سابقہ حکم ناسیٹ ہے"
 
 #. # LOCALIZATION NOTE (connectDesc, connectManual, connectPrefixDesc,
-#. # connectPortDesc, connectHostDesc, connectDupReply): These strings describe
+#. # connectMethodDesc, connectUrlDesc, connectDupReply): These strings describe
 #. # the 'connect' command and all its available parameters. A 'prefix' is an 
 #. # alias for the remote server (think of it as a "connection name"), and it
 #. # allows to identify a specific server when connected to multiple remote
@@ -394,13 +395,13 @@ msgctxt "connectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "درآمد شدہ کمانڈ کے لیے جد سابقہ"
 
-#: connectPortDesc
-msgid "The TCP port to listen on"
-msgstr "TCP پورٹ سن رہا ہے"
+#: connectMethodDesc
+msgid "The method of connecting"
+msgstr ""
 
-#: connectHostDesc
-msgid "The hostname to bind to"
-msgstr "باندھنیے کے لیے میزبان کا نام"
+#: connectUrlDesc
+msgid "The URL to connect to"
+msgstr ""
 
 #: connectDupReply
 msgid "Connection called %S already exists."
@@ -448,6 +449,35 @@ msgstr "ہٹا ہوا %S احکام۔"
 #: disconnectOutstanding
 msgid "Outstanding requests (%S)"
 msgstr "(%S) اخراج قائم فرمائشیں "
+
+#. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
+#. # strings describe the 'global' command and its parameters
+#: globalDesc
+msgid "Change the JS global"
+msgstr ""
+
+#: globalWindowDesc
+msgid "The new window/global"
+msgstr ""
+
+#: globalOutput
+msgid "JS global is now %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE: These strings describe the 'clear' command
+#: clearDesc
+msgid "Clear the output area"
+msgstr ""
+
+#. # LOCALIZATION NOTE (langDesc, langOutput): These strings describe the 'lang'
+#. # command and its parameters
+#: langDesc
+msgid "Enter commands in different languages"
+msgstr ""
+
+#: langOutput
+msgid "You are now using %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (prefDesc, prefManual, prefListDesc, prefListManual,
 #. # prefListSearchDesc, prefListSearchManual, prefShowDesc, prefShowManual,
@@ -604,17 +634,15 @@ msgstr ""
 "نئے صارفین کو یہ پیغامات اس وقت تک دکھائیں جب تک وہ \"پڑھ لیا\" بٹن پر کلک "
 "نہ کریں"
 
-#. # LOCALIZATION NOTE (introTextOpening2, introTextCommands, introTextKeys2,
+#. # LOCALIZATION NOTE (introTextOpening3, introTextCommands, introTextKeys2,
 #. # introTextF1Escape, introTextGo): These strings are displayed when the user
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
-#: introTextOpening2
+#: introTextOpening3
 msgid ""
-"This command line is designed for developers. It focuses on speed of input "
-"over JavaScript syntax and a rich display over monospace output."
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
 msgstr ""
-"یہ کمانڈ لائن تکمیل کاروں کے لیے ڈیزائن کی گیی ہے. یہ جاوا سکرپٹ میں ان پٹ "
-"رفتار اور ایک بھرا ہوا دکھائی مونو سپیسآؤٹ پٹ پر مرکوز کرتا ہے."
 
 #: introTextCommands
 msgid "For a list of commands type"
@@ -645,18 +673,31 @@ msgstr "ابتدائی خوش آمدید پیغاما دکھائیں"
 msgid "How eager are the tooltips"
 msgstr "ٹول ٹوٹکے کس قدر سرگرم ہیں"
 
-#. # LOCALIZATION NOTE: This is a short description of the 'allowSetDesc'
-#. # setting.
-#: allowSetDesc
-msgid "Has the user enabled the 'pref set' command?"
-msgstr "کیا صارف نے 'ترجیحات ترتیب' حکم کو اہل بنایا ہوا ہے؟"
-
 #. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
 #. # help command, just before the list of commands. This text is wrapped inside
 #. # a link to a localized MDN article.
 #: introBody
 msgid "For more information see MDN."
 msgstr "مزید معلومات MDN دیکہیں۔"
+
+#~ msgid "Description"
+#~ msgstr "تصریح"
+
+#~ msgid "The TCP port to listen on"
+#~ msgstr "TCP پورٹ سن رہا ہے"
+
+#~ msgid "The hostname to bind to"
+#~ msgstr "باندھنیے کے لیے میزبان کا نام"
+
+#~ msgid ""
+#~ "This command line is designed for developers. It focuses on speed of "
+#~ "input over JavaScript syntax and a rich display over monospace output."
+#~ msgstr ""
+#~ "یہ کمانڈ لائن تکمیل کاروں کے لیے ڈیزائن کی گیی ہے. یہ جاوا سکرپٹ میں ان "
+#~ "پٹ رفتار اور ایک بھرا ہوا دکھائی مونو سپیسآؤٹ پٹ پر مرکوز کرتا ہے."
+
+#~ msgid "Has the user enabled the 'pref set' command?"
+#~ msgstr "کیا صارف نے 'ترجیحات ترتیب' حکم کو اہل بنایا ہوا ہے؟"
 
 #~ msgid "Parameters"
 #~ msgstr "آزاد متغیرات"

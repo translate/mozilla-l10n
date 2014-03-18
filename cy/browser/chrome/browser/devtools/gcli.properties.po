@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 18:42+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2013-10-16 08:19+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1381911549.000000\n"
@@ -91,6 +91,11 @@ msgstr "Dewisiadau ar Gael"
 #: cliUnknownCommand
 msgid "Invalid Command"
 msgstr "Gorchymyn Annilys"
+
+#. # LOCALIZATION NOTE: A parameter should have a value, but doesn't
+#: cliIncompleteParam
+msgid "Value required for '%1$S'."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a file
 #. # that does not exist, but should (e.g. for use with File->Open) %1$S is a
@@ -270,15 +275,11 @@ msgstr ""
 "llinyn chwilio i'w ddefnyddio i leihau'r gorchmynion posib. Nid yw mynegiad "
 "rheolaidd yn cael eu cynnal."
 
-#. # LOCALIZATION NOTE (helpManSynopsis, helpManDescription): These strings are
-#. # displayed in the help page for a command in the console.
+#. # LOCALIZATION NOTE: These strings are displayed in the help page for a
+#. # command in the console.
 #: helpManSynopsis
 msgid "Synopsis"
 msgstr "Crynodeb"
-
-#: helpManDescription
-msgid "Description"
-msgstr "Disgrifiad"
 
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
@@ -374,7 +375,7 @@ msgid "Command prefix is unset"
 msgstr "Rhagddodiad y gorchymyn yw unset"
 
 #. # LOCALIZATION NOTE (connectDesc, connectManual, connectPrefixDesc,
-#. # connectPortDesc, connectHostDesc, connectDupReply): These strings describe
+#. # connectMethodDesc, connectUrlDesc, connectDupReply): These strings describe
 #. # the 'connect' command and all its available parameters. A 'prefix' is an 
 #. # alias for the remote server (think of it as a "connection name"), and it
 #. # allows to identify a specific server when connected to multiple remote
@@ -398,13 +399,13 @@ msgctxt "connectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "Rhagddodiad rhiant ar gyfer gorchmynion wedi eu mewnforio"
 
-#: connectPortDesc
-msgid "The TCP port to listen on"
-msgstr "Porth TCP i wrando arno"
+#: connectMethodDesc
+msgid "The method of connecting"
+msgstr ""
 
-#: connectHostDesc
-msgid "The hostname to bind to"
-msgstr "Yr enw gwesteiwr i rwymo iddo"
+#: connectUrlDesc
+msgid "The URL to connect to"
+msgstr ""
 
 #: connectDupReply
 msgid "Connection called %S already exists."
@@ -454,6 +455,35 @@ msgstr "Tynnwyd %S gorchymyn."
 #: disconnectOutstanding
 msgid "Outstanding requests (%S)"
 msgstr "Ceisiadau sy'n bodoli (%S)"
+
+#. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
+#. # strings describe the 'global' command and its parameters
+#: globalDesc
+msgid "Change the JS global"
+msgstr ""
+
+#: globalWindowDesc
+msgid "The new window/global"
+msgstr ""
+
+#: globalOutput
+msgid "JS global is now %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE: These strings describe the 'clear' command
+#: clearDesc
+msgid "Clear the output area"
+msgstr ""
+
+#. # LOCALIZATION NOTE (langDesc, langOutput): These strings describe the 'lang'
+#. # command and its parameters
+#: langDesc
+msgid "Enter commands in different languages"
+msgstr ""
+
+#: langOutput
+msgid "You are now using %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (prefDesc, prefManual, prefListDesc, prefListManual,
 #. # prefListSearchDesc, prefListSearchManual, prefShowDesc, prefShowManual,
@@ -612,18 +642,15 @@ msgstr ""
 "Ail ddangos y neges sy'n cael ei ddangos i ddefnyddwyr newydd nes iddynt "
 "glicio'r botwm 'Wedi ei gael'"
 
-#. # LOCALIZATION NOTE (introTextOpening2, introTextCommands, introTextKeys2,
+#. # LOCALIZATION NOTE (introTextOpening3, introTextCommands, introTextKeys2,
 #. # introTextF1Escape, introTextGo): These strings are displayed when the user
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
-#: introTextOpening2
+#: introTextOpening3
 msgid ""
-"This command line is designed for developers. It focuses on speed of input "
-"over JavaScript syntax and a rich display over monospace output."
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
 msgstr ""
-"Mae llinell orchymyn Firefox wedi ei gynllunio ar gyfer datblygwyr. Mae'n "
-"canolbwyntio ar gyflymder mewnbwn dros gystrawen JavaScript ac arddangosiad "
-"cyfoethog dros allbwn unlle."
 
 #: introTextCommands
 msgid "For a list of commands type"
@@ -654,18 +681,32 @@ msgstr "Dangos y neges croesawu cychwynnol"
 msgid "How eager are the tooltips"
 msgstr "Pa mor sydyn yw'r cynhorion"
 
-#. # LOCALIZATION NOTE: This is a short description of the 'allowSetDesc'
-#. # setting.
-#: allowSetDesc
-msgid "Has the user enabled the 'pref set' command?"
-msgstr "A yw'r defnyddiwr wedi galluogi gorchymyn 'pref set'?"
-
 #. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
 #. # help command, just before the list of commands. This text is wrapped inside
 #. # a link to a localized MDN article.
 #: introBody
 msgid "For more information see MDN."
 msgstr "Am rhagor o wybodaeth gweler MDN."
+
+#~ msgid "Description"
+#~ msgstr "Disgrifiad"
+
+#~ msgid "The TCP port to listen on"
+#~ msgstr "Porth TCP i wrando arno"
+
+#~ msgid "The hostname to bind to"
+#~ msgstr "Yr enw gwesteiwr i rwymo iddo"
+
+#~ msgid ""
+#~ "This command line is designed for developers. It focuses on speed of "
+#~ "input over JavaScript syntax and a rich display over monospace output."
+#~ msgstr ""
+#~ "Mae llinell orchymyn Firefox wedi ei gynllunio ar gyfer datblygwyr. Mae'n "
+#~ "canolbwyntio ar gyflymder mewnbwn dros gystrawen JavaScript ac "
+#~ "arddangosiad cyfoethog dros allbwn unlle."
+
+#~ msgid "Has the user enabled the 'pref set' command?"
+#~ msgstr "A yw'r defnyddiwr wedi galluogi gorchymyn 'pref set'?"
 
 #~ msgid "Parameters"
 #~ msgstr "Paramedrau"

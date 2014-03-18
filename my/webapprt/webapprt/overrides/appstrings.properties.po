@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 14:41+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,15 +14,41 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#: netReset
-#, fuzzy
+#: malformedURI
+msgid "The URL is not valid and cannot be loaded."
+msgstr "ဤဝတ်လိပ်စာ URL သည် ရှိမနေပါသဖြင့်မဖွင့်နိုင်ပါ။"
+
+#: fileNotFound
+msgid "The file %S cannot be found. Please check the location and try again."
+msgstr "%Sဖိုင်အားရှာမတွေ့ပါ။တည်နေရာအားစစ်ဆေးပြီးတစ်ခေါက်ပြန်လုပ်ကြည့်ပါ။"
+
+#: dnsNotFound
+msgid "%S could not be found. Please check the name and try again."
+msgstr "%S အားရှာမတွေ့ပါ။နာမည်အားစစ်ဆေးပြီးထပ်လုပ်ကြည့်ပါ။"
+
+#: unknownProtocolFound
 msgid ""
-"The connection to the server was reset while the application was loading."
-msgstr "အင်တာနက်ဆက်သွယ်မှူ သည် စာမျက်နှာအား ရယူနေစဉ် ပြတ်တောက်သွားသည်။"
+"One of the following %S is not a registered protocol or is not allowed in "
+"this context."
+msgstr ""
+
+#: connectionFailure
+msgid "The connection was refused when attempting to contact %S."
+msgstr "%S ဆီသို့ချိတ်ဆက်ရန်ကြိုးစားစဉ် ချိတ်ဆက်မှူငြင်းပယ်ခြင်းခံရသည်။"
+
+#: netInterrupt
+msgid ""
+"The connection to %S has terminated unexpectedly. Some data may have been "
+"transferred."
+msgstr "မမျှော်လင့်ပဲ%S သို့ချိတ်ဆက်မှူအဆုံးသတ်သွားသည်။အချို့အချက်အလက်များ ရယူပြီးဖြစ်နိုင်သည်။"
+
+#: netTimeout
+msgid "The operation timed out when attempting to contact %S."
+msgstr "%S သို့ဆက်သွယ်ရန်ကြိုးစားနေစဉ်လုပ်ဆောင်ခြင်း အချိန်ပြတ်တောက်သွားသည်"
 
 #: redirectLoop
 msgid "A server is redirecting a request in a way that will never complete."
@@ -37,10 +63,20 @@ msgstr ""
 "ဤဝတ်စာမျက်နှာအားဖော်ပြရန်အတွက်အက်ပလီကေးရှင်းသည်လုပ်ဆောက်ချက်အချို့(ဥပမာရှာဖွေခြင်းသို့အော်ဒါအတည်ပြုခြင်း)"
 "အားထပ်မံလုပ်ဆောင်စေမည့်အချက်အလက်အချို့ပို့ရမည်။"
 
+#: resendButton.label
+msgid "Resend"
+msgstr "ပြန်ပို့ပါ"
+
 #: unknownSocketType
 #, fuzzy
 msgid "The application doesn't know how to communicate with the server."
 msgstr "မီးမြေခွေးဟာ ယခုဆာဗာဖြင့် မည်သို့ဆက်သွယ်ဆက်ဆံရမည် ကိုမသိပါ။"
+
+#: netReset
+#, fuzzy
+msgid ""
+"The connection to the server was reset while the application was loading."
+msgstr "အင်တာနက်ဆက်သွယ်မှူ သည် စာမျက်နှာအား ရယူနေစဉ် ပြတ်တောက်သွားသည်။"
 
 #: notCached
 msgid "The application requested a document which is no longer available."
@@ -49,6 +85,10 @@ msgstr ""
 #: netOffline
 msgid ""
 "The application is currently in offline mode and can't access the network."
+msgstr ""
+
+#: isprinting
+msgid "The document cannot change while Printing or in Print Preview."
 msgstr ""
 
 #: deniedPortAccess
@@ -86,6 +126,56 @@ msgid ""
 "be safe to open. Please contact the application authors to inform them of "
 "this problem."
 msgstr ""
+
+#: externalProtocolTitle
+msgid "External Protocol Request"
+msgstr ""
+
+#: externalProtocolPrompt
+msgid ""
+"An external application must be launched to handle %1$S: links.\n"
+"\n"
+"\n"
+"Requested link:\n"
+"\n"
+"%2$S\n"
+"\n"
+"Application: %3$S\n"
+"\n"
+"\n"
+"If you were not expecting this request it may be an attempt to exploit a "
+"weakness in that other program. Cancel this request unless you are sure it "
+"is not malicious.\n"
+msgstr ""
+
+#. #LOCALIZATION NOTE (externalProtocolUnknown): The following string is shown if the application name can't be determined
+#: externalProtocolUnknown
+msgid "<Unknown>"
+msgstr "<အမည်မသိ>"
+
+#: externalProtocolChkMsg
+msgid "Remember my choice for all links of this type."
+msgstr "ဒီအမျိုးအစားရဲ့ အချိတ်အဆက်များ အားလုံးအတွက် ကျွန်ပ် ရွေးချယ်ချက်ကို မှတ်ထားပါ။"
+
+#: externalProtocolLaunchBtn
+msgid "Launch application"
+msgstr "လုပ်ငန်းသုံး ကိရိယာကို စဖွင့်ပါ"
+
+#: malwareBlocked
+msgid ""
+"The site at %S has been reported as an attack site and has been blocked "
+"based on your security preferences."
+msgstr ""
+"%S နေရာမှ ကွန်ရက်ကို တိုက်ခိုက်တဲ့ ကွန်ရက်အဖြစ် ထုတ်ပြန်ခံရတဲ့အတွက် သင့်ရဲ့ လုံခြုံရေး ဦး​စားပေးချက်များ အတိုင်း "
+"ပိတ်ဆို့ထားတယ်။"
+
+#: phishingBlocked
+msgid ""
+"The website at %S has been reported as a web forgery designed to trick users "
+"into sharing personal or financial information."
+msgstr ""
+"%S ရှိ၀တ်ဆိုက်သည်သုံးဆွဲသူများအားငွေးရေးကြေးရေးလိမ်လည်မှူများ "
+"တစ်ချို့လှည့်ဖျားမှူများလုပ်ဆောင်သည်ဟုသတင်ပေးခြင်းခံထားရသည်။"
 
 #: cspFrameAncestorBlocked
 msgid ""

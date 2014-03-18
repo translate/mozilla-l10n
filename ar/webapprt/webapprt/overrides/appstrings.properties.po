@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 14:41+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2014-02-05 09:31+0000\n"
 "Last-Translator: Khaled <khaledhosny@eglug.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1391592680.000000\n"
 
-#: netReset
+#: malformedURI
+msgid "The URL is not valid and cannot be loaded."
+msgstr ""
+
+#: fileNotFound
+msgid "The file %S cannot be found. Please check the location and try again."
+msgstr "تعذّر العثور على الملفّ %S. من فضلك تحقق من المكان ثم أعد المحاولة."
+
+#: dnsNotFound
+msgid "%S could not be found. Please check the name and try again."
+msgstr "تعذّر العثور على %S. من فضلك تحقق من المكان ثم أعد المحاولة."
+
+#: unknownProtocolFound
 msgid ""
-"The connection to the server was reset while the application was loading."
-msgstr "صُفِّر الاتصال بالخادوم أثناء تحميل التطبيق."
+"One of the following %S is not a registered protocol or is not allowed in "
+"this context."
+msgstr ""
+
+#: connectionFailure
+msgid "The connection was refused when attempting to contact %S."
+msgstr "رُفِض الاتصال عند محاولة التواصل مع %S."
+
+#: netInterrupt
+msgid ""
+"The connection to %S has terminated unexpectedly. Some data may have been "
+"transferred."
+msgstr "انتهى الاتصال مع %S بشكل غير متوقّع. ربما نُقلت بعض البيانات."
+
+#: netTimeout
+msgid "The operation timed out when attempting to contact %S."
+msgstr "انتهت مهلة العملية عند محاولة التواصل مع %S."
 
 #: redirectLoop
 msgid "A server is redirecting a request in a way that will never complete."
@@ -38,9 +65,18 @@ msgstr ""
 "للمواصلة، يجب أن يعيد التطبيق إرسال المعلومات التي ستكرر أي إجراءات (مثل "
 "البحث أو معلومات الطلب) التي أُجريت."
 
+#: resendButton.label
+msgid "Resend"
+msgstr ""
+
 #: unknownSocketType
 msgid "The application doesn't know how to communicate with the server."
 msgstr "لا يعرف التطبيق كيف يتصل بالخادوم."
+
+#: netReset
+msgid ""
+"The connection to the server was reset while the application was loading."
+msgstr "صُفِّر الاتصال بالخادوم أثناء تحميل التطبيق."
 
 #: notCached
 msgid "The application requested a document which is no longer available."
@@ -49,6 +85,10 @@ msgstr "طلب التطبيق مستندًا لم يعد موجودًا."
 #: netOffline
 msgid ""
 "The application is currently in offline mode and can't access the network."
+msgstr ""
+
+#: isprinting
+msgid "The document cannot change while Printing or in Print Preview."
 msgstr ""
 
 #: deniedPortAccess
@@ -79,6 +119,53 @@ msgid ""
 "The application cannot continue because it accessed a file type that may not "
 "be safe to open. Please contact the application authors to inform them of "
 "this problem."
+msgstr ""
+
+#: externalProtocolTitle
+msgid "External Protocol Request"
+msgstr "طلب بروتوكول خارجي"
+
+#: externalProtocolPrompt
+msgid ""
+"An external application must be launched to handle %1$S: links.\n"
+"\n"
+"\n"
+"Requested link:\n"
+"\n"
+"%2$S\n"
+"\n"
+"Application: %3$S\n"
+"\n"
+"\n"
+"If you were not expecting this request it may be an attempt to exploit a "
+"weakness in that other program. Cancel this request unless you are sure it "
+"is not malicious.\n"
+msgstr ""
+
+#. #LOCALIZATION NOTE (externalProtocolUnknown): The following string is shown if the application name can't be determined
+#: externalProtocolUnknown
+msgid "<Unknown>"
+msgstr "<مجهول>"
+
+#: externalProtocolChkMsg
+msgid "Remember my choice for all links of this type."
+msgstr "تذكّر اختياري لكل الوصلات من هذه الفئة."
+
+#: externalProtocolLaunchBtn
+#, fuzzy
+msgid "Launch application"
+msgstr "ابدأ التطبيق"
+
+#: malwareBlocked
+msgid ""
+"The site at %S has been reported as an attack site and has been blocked "
+"based on your security preferences."
+msgstr ""
+
+#: phishingBlocked
+msgid ""
+"The website at %S has been reported as a web forgery designed to trick users "
+"into sharing personal or financial information."
 msgstr ""
 
 #: cspFrameAncestorBlocked
