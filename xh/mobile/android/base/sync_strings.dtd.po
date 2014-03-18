@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 23:36+0100\n"
+"POT-Creation-Date: 2014-03-18 20:01+0100\n"
 "PO-Revision-Date: 2013-11-21 10:14+0000\n"
 "Last-Translator: Ian <ian.henderson@rubric.com>\n"
 "Language-Team: none\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1385028856.000000\n"
@@ -355,25 +355,7 @@ msgstr "Ithebhu yakho ithunyelwe!"
 msgid "There was a problem sending your tab."
 msgstr "Kubekho ingxaki ekuthumeleni ithebhu yakho."
 
-#. Firefox account strings.
-#. Localization note: these describe icons and graphics, and are
-#. consumed by assistive devices.
-#: fxaccount_checkbox_contentDescription2
-msgid "Firefox accounts checkbox graphic"
-msgstr "Igrafiki yokuhlola ii-akhawunti zikaFirefox"
-
-#: fxaccount_icon_contentDescription2
-msgid "Firefox accounts icon"
-msgstr "Iayikhoni yeeakhawunti zikaFirefox."
-
-#: fxaccount_intro_contentDescription2
-msgid "Firefox accounts introduction graphics"
-msgstr "Iigrafiki zentshayelelo yee-akhawunti zikaFirefox"
-
-#: fxaccount_mail_contentDescription2
-msgid "Firefox accounts envelope graphic"
-msgstr "Igrafiki yemvulophu yeeakhawunti zikaFirefox"
-
+#. Firefox Account strings.
 #. Localization note: these are shown in all screens that query the
 #. user for an email address and password. Hide and show are button
 #. labels.
@@ -401,11 +383,20 @@ msgstr "Bonisa"
 msgid "Back to browsing"
 msgstr "Buyela ekubhrawuzeni"
 
+#. Localization note: the following two strings are interpolated
+#. into fxaccount_create_account_policy_text2; see note for that
+#. string as well.  Compare fxaccount_status_{linktos,linkprivacy}:
+#. these strings are separated to accommodate languages that decline
+#. the two uses differently.
 #: fxaccount_policy_linktos
+#, fuzzy
+msgctxt "fxaccount_policy_linktos"
 msgid "Terms of Service"
 msgstr "Imiqathango yenkonzo"
 
 #: fxaccount_policy_linkprivacy
+#, fuzzy
+msgctxt "fxaccount_policy_linkprivacy"
 msgid "Privacy Notice"
 msgstr "Isaziso sabucala"
 
@@ -414,7 +405,8 @@ msgid "Welcome to &syncBrand.shortName.label;"
 msgstr "Wamkelekile kwi-&syncBrand.shortName.label;"
 
 #: fxaccount_getting_started_description
-msgid "Sign in to sync your tabs, bookmarks, passwords &amp; more."
+#, fuzzy
+msgid "Sign in to sync your tabs, bookmarks, passwords & more."
 msgstr ""
 "Ngena ukuze ungqamanise iithebhu, iibhukhmakhi, iipasiwedi &amp; nokunye "
 "okungakumbi."
@@ -429,9 +421,10 @@ msgstr "Usebenzisa uhlelo oludadlala lwe-&syncBrand.shortName.label;?"
 
 #. Localization note: the Firefox below should not change with the
 #. particular version of Firefox installed (Release, Beta, Aurora,
-#. etc).  The account remains a "Firefox" account.
-#: fxaccount_create_account_header
-msgid "Create a Firefox account"
+#. etc).  The account remains a "Firefox Account".
+#: fxaccount_create_account_header2
+#, fuzzy
+msgid "Create a Firefox Account"
 msgstr "Yenza i-akhawunti yeFirefox"
 
 #: fxaccount_create_account_password_length_restriction
@@ -443,9 +436,10 @@ msgid "Year of birth"
 msgstr "Unyaka wokuzalwa"
 
 #. Localization note: &formatS1; is fxaccount_policy_linktos, &formatS2; is fxaccount_policy_linkprivacy, both hyperlinked.
-#: fxaccount_create_account_policy_text
+#: fxaccount_create_account_policy_text2
+#, fuzzy
 msgid ""
-"By proceeding, I agree to the &formatS1; and &formatS2; of Firefox online "
+"By proceeding, I agree to the &formatS1; and &formatS2; of Firefox cloud "
 "services."
 msgstr ""
 "Ngokudlulela phambili, ndiyavumelana ne-&formatS1; ne-&formatS2; zeenkonzo "
@@ -487,7 +481,7 @@ msgstr "Funda okungakumbi"
 msgid "Confirm your account"
 msgstr "Qinisekisa i-akhawunti yakho"
 
-#. Localization note: &formatS; is the Firefox account's email address.
+#. Localization note: &formatS; is the Firefox Account's email address.
 #: fxaccount_confirm_account_verification_link
 msgid "A verification link has been sent to &formatS;"
 msgstr "Uthunyelelwe ikhonkco lokuqinisekisa kwi-&formatS;"
@@ -550,9 +544,14 @@ msgctxt "fxaccount_update_credentials_unknown_error"
 msgid "Could not sign in"
 msgstr "Awukwazanga ukungena"
 
-#: fxaccount_status_header
-msgid "Firefox account"
+#: fxaccount_status_header2
+#, fuzzy
+msgid "Firefox Account"
 msgstr "I-akhawunti kaFirefox"
+
+#: fxaccount_status_signed_in_as
+msgid "Signed in as"
+msgstr ""
 
 #: fxaccount_status_sync
 msgid "&syncBrand.shortName.label;"
@@ -599,17 +598,33 @@ msgstr "Vula iithebhu"
 msgid "Legal"
 msgstr "Isemthethweni"
 
+#. Localization note: when tapped, the following two strings link to
+#. external web pages.  Compare fxaccount_policy_{linktos,linkprivacy}:
+#. these strings are separated to accommodate languages that decline
+#. the two uses differently.
+#: fxaccount_status_linktos
+#, fuzzy
+msgctxt "fxaccount_status_linktos"
+msgid "Terms of Service"
+msgstr "Imiqathango yenkonzo"
+
+#: fxaccount_status_linkprivacy
+#, fuzzy
+msgctxt "fxaccount_status_linkprivacy"
+msgid "Privacy Notice"
+msgstr "Isaziso sabucala"
+
 #. Localization note: this is the name shown by the Android system
-#. itself for a Firefox account. Don't localize this.
+#. itself for a Firefox Account. Don't localize this.
 #: fxaccount_account_type_label
 msgid "Firefox"
 msgstr "IFirefox"
 
 #. Localization note: these are shown by the Android system itself,
 #. when the user navigates to the Android > Accounts > [Firefox
-#. Account] Screen. The link takes the user to the Firefox account
+#. Account] Screen. The link takes the user to the Firefox Account
 #. status activity, which lets them manage their Firefox
-#. account.
+#. Account.
 #: fxaccount_options_title
 msgid "&syncBrand.shortName.label; Options"
 msgstr "&syncBrand.shortName.label; Okukhethayo"
@@ -667,10 +682,22 @@ msgid "&syncBrand.shortName.label; is not connected"
 msgstr "I-&syncBrand.shortName.label; ayinxityelelaniswanga"
 
 #. Note to translators: the format string below will be replaced
-#. with the Firefox account's email address.
+#. with the Firefox Account's email address.
 #: fxaccount_sync_sign_in_error_notification_text2
 msgid "Tap to sign in as &formatS;"
 msgstr "Cofa ukuze ungene njenge-&formatS;"
+
+#~ msgid "Firefox accounts checkbox graphic"
+#~ msgstr "Igrafiki yokuhlola ii-akhawunti zikaFirefox"
+
+#~ msgid "Firefox accounts icon"
+#~ msgstr "Iayikhoni yeeakhawunti zikaFirefox."
+
+#~ msgid "Firefox accounts introduction graphics"
+#~ msgstr "Iigrafiki zentshayelelo yee-akhawunti zikaFirefox"
+
+#~ msgid "Firefox accounts envelope graphic"
+#~ msgstr "Igrafiki yemvulophu yeeakhawunti zikaFirefox"
 
 #~ msgctxt "sync.account.label.label"
 #~ msgid "&syncBrand.fullName.label;"

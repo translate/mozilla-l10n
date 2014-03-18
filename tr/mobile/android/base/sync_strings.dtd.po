@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 23:36+0100\n"
+"POT-Creation-Date: 2014-03-18 20:01+0100\n"
 "PO-Revision-Date: 2014-03-01 13:36+0000\n"
 "Last-Translator: Selim <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1393680963.000000\n"
@@ -355,25 +355,7 @@ msgstr "Sekmeniz gönderildi!"
 msgid "There was a problem sending your tab."
 msgstr "Sekmeniz gönderilirken bir sorun oluştu."
 
-#. Firefox account strings.
-#. Localization note: these describe icons and graphics, and are
-#. consumed by assistive devices.
-#: fxaccount_checkbox_contentDescription2
-msgid "Firefox accounts checkbox graphic"
-msgstr "Firefox hesapları onay kutusu grafiği"
-
-#: fxaccount_icon_contentDescription2
-msgid "Firefox accounts icon"
-msgstr "Firefox hesapları simgesi"
-
-#: fxaccount_intro_contentDescription2
-msgid "Firefox accounts introduction graphics"
-msgstr "Firefox hesapları tanıtım grafikleri"
-
-#: fxaccount_mail_contentDescription2
-msgid "Firefox accounts envelope graphic"
-msgstr "Firefox hesapları zarf grafiği"
-
+#. Firefox Account strings.
 #. Localization note: these are shown in all screens that query the
 #. user for an email address and password. Hide and show are button
 #. labels.
@@ -401,11 +383,20 @@ msgstr "Göster"
 msgid "Back to browsing"
 msgstr "Tarayıcıya dön"
 
+#. Localization note: the following two strings are interpolated
+#. into fxaccount_create_account_policy_text2; see note for that
+#. string as well.  Compare fxaccount_status_{linktos,linkprivacy}:
+#. these strings are separated to accommodate languages that decline
+#. the two uses differently.
 #: fxaccount_policy_linktos
+#, fuzzy
+msgctxt "fxaccount_policy_linktos"
 msgid "Terms of Service"
 msgstr "Hizmet koşulları"
 
 #: fxaccount_policy_linkprivacy
+#, fuzzy
+msgctxt "fxaccount_policy_linkprivacy"
 msgid "Privacy Notice"
 msgstr "Gizlilik ilkeleri"
 
@@ -414,7 +405,8 @@ msgid "Welcome to &syncBrand.shortName.label;"
 msgstr "&syncBrand.shortName.label;'e hoş geldiniz"
 
 #: fxaccount_getting_started_description
-msgid "Sign in to sync your tabs, bookmarks, passwords &amp; more."
+#, fuzzy
+msgid "Sign in to sync your tabs, bookmarks, passwords & more."
 msgstr ""
 "Sekmelerinizi, yer imlerinizi, parolalarınızı ve dahasını eşitlemek için "
 "oturum açın."
@@ -429,9 +421,10 @@ msgstr "&syncBrand.shortName.label;'in eski bir sürümünü mü kullanıyorsunu
 
 #. Localization note: the Firefox below should not change with the
 #. particular version of Firefox installed (Release, Beta, Aurora,
-#. etc).  The account remains a "Firefox" account.
-#: fxaccount_create_account_header
-msgid "Create a Firefox account"
+#. etc).  The account remains a "Firefox Account".
+#: fxaccount_create_account_header2
+#, fuzzy
+msgid "Create a Firefox Account"
 msgstr "Firefox hesabı açın"
 
 #: fxaccount_create_account_password_length_restriction
@@ -443,9 +436,10 @@ msgid "Year of birth"
 msgstr "Doğum yılı"
 
 #. Localization note: &formatS1; is fxaccount_policy_linktos, &formatS2; is fxaccount_policy_linkprivacy, both hyperlinked.
-#: fxaccount_create_account_policy_text
+#: fxaccount_create_account_policy_text2
+#, fuzzy
 msgid ""
-"By proceeding, I agree to the &formatS1; and &formatS2; of Firefox online "
+"By proceeding, I agree to the &formatS1; and &formatS2; of Firefox cloud "
 "services."
 msgstr ""
 "Devam ederek, Firefox çevrimiçi hizmetlerinin &formatS1; ve &formatS2;ni "
@@ -487,7 +481,7 @@ msgstr "Daha fazla bilgi"
 msgid "Confirm your account"
 msgstr "Hesabınızı doğrulayın"
 
-#. Localization note: &formatS; is the Firefox account's email address.
+#. Localization note: &formatS; is the Firefox Account's email address.
 #: fxaccount_confirm_account_verification_link
 msgid "A verification link has been sent to &formatS;"
 msgstr "&formatS adresine doğrulama bağlantısı gönderildi"
@@ -550,9 +544,14 @@ msgctxt "fxaccount_update_credentials_unknown_error"
 msgid "Could not sign in"
 msgstr "Oturum açılamadı"
 
-#: fxaccount_status_header
-msgid "Firefox account"
+#: fxaccount_status_header2
+#, fuzzy
+msgid "Firefox Account"
 msgstr "Firefox hesabı"
+
+#: fxaccount_status_signed_in_as
+msgid "Signed in as"
+msgstr ""
 
 #: fxaccount_status_sync
 msgid "&syncBrand.shortName.label;"
@@ -599,17 +598,33 @@ msgstr "Açık sekmeler"
 msgid "Legal"
 msgstr "Yasal"
 
+#. Localization note: when tapped, the following two strings link to
+#. external web pages.  Compare fxaccount_policy_{linktos,linkprivacy}:
+#. these strings are separated to accommodate languages that decline
+#. the two uses differently.
+#: fxaccount_status_linktos
+#, fuzzy
+msgctxt "fxaccount_status_linktos"
+msgid "Terms of Service"
+msgstr "Hizmet koşulları"
+
+#: fxaccount_status_linkprivacy
+#, fuzzy
+msgctxt "fxaccount_status_linkprivacy"
+msgid "Privacy Notice"
+msgstr "Gizlilik ilkeleri"
+
 #. Localization note: this is the name shown by the Android system
-#. itself for a Firefox account. Don't localize this.
+#. itself for a Firefox Account. Don't localize this.
 #: fxaccount_account_type_label
 msgid "Firefox"
 msgstr "Firefox"
 
 #. Localization note: these are shown by the Android system itself,
 #. when the user navigates to the Android > Accounts > [Firefox
-#. Account] Screen. The link takes the user to the Firefox account
+#. Account] Screen. The link takes the user to the Firefox Account
 #. status activity, which lets them manage their Firefox
-#. account.
+#. Account.
 #: fxaccount_options_title
 msgid "&syncBrand.shortName.label; Options"
 msgstr "&syncBrand.shortName.label; Seçenekleri"
@@ -667,10 +682,22 @@ msgid "&syncBrand.shortName.label; is not connected"
 msgstr "&syncBrand.shortName.label; bağlı değil"
 
 #. Note to translators: the format string below will be replaced
-#. with the Firefox account's email address.
+#. with the Firefox Account's email address.
 #: fxaccount_sync_sign_in_error_notification_text2
 msgid "Tap to sign in as &formatS;"
 msgstr "&formatS; olarak oturum açmak için dokunun"
+
+#~ msgid "Firefox accounts checkbox graphic"
+#~ msgstr "Firefox hesapları onay kutusu grafiği"
+
+#~ msgid "Firefox accounts icon"
+#~ msgstr "Firefox hesapları simgesi"
+
+#~ msgid "Firefox accounts introduction graphics"
+#~ msgstr "Firefox hesapları tanıtım grafikleri"
+
+#~ msgid "Firefox accounts envelope graphic"
+#~ msgstr "Firefox hesapları zarf grafiği"
 
 #~ msgctxt "sync.account.label.label"
 #~ msgid "&syncBrand.fullName.label;"
