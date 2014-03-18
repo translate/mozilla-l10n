@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 18:42+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2013-09-18 00:58+0000\n"
 "Last-Translator: Mohomodou  <mh@bollag-areal.ch>\n"
 "Language-Team: none\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1379465899.000000\n"
@@ -89,6 +89,11 @@ msgstr "Suubari barantey"
 #. # isn't registered
 #: cliUnknownCommand
 msgid "Invalid Command"
+msgstr ""
+
+#. # LOCALIZATION NOTE: A parameter should have a value, but doesn't
+#: cliIncompleteParam
+msgid "Value required for '%1$S'."
 msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a file
@@ -269,15 +274,11 @@ msgstr ""
 "ceeciyan tenjiri kaŋ nda juwal cebantey ga goyandi. Hankul kalimawey ši koy "
 "ne."
 
-#. # LOCALIZATION NOTE (helpManSynopsis, helpManDescription): These strings are
-#. # displayed in the help page for a command in the console.
+#. # LOCALIZATION NOTE: These strings are displayed in the help page for a
+#. # command in the console.
 #: helpManSynopsis
 msgid "Synopsis"
 msgstr "Duurandi"
-
-#: helpManDescription
-msgid "Description"
-msgstr "Šilbayyan"
 
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
@@ -372,7 +373,7 @@ msgid "Command prefix is unset"
 msgstr "Juwal jinkanji mana kayandi"
 
 #. # LOCALIZATION NOTE (connectDesc, connectManual, connectPrefixDesc,
-#. # connectPortDesc, connectHostDesc, connectDupReply): These strings describe
+#. # connectMethodDesc, connectUrlDesc, connectDupReply): These strings describe
 #. # the 'connect' command and all its available parameters. A 'prefix' is an 
 #. # alias for the remote server (think of it as a "connection name"), and it
 #. # allows to identify a specific server when connected to multiple remote
@@ -396,13 +397,13 @@ msgctxt "connectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "Ihayra jinkanji juwal cendantey še"
 
-#: connectPortDesc
-msgid "The TCP port to listen on"
-msgstr "TCP kotay-miɲoo ka haŋajer"
+#: connectMethodDesc
+msgid "The method of connecting"
+msgstr ""
 
-#: connectHostDesc
-msgid "The hostname to bind to"
-msgstr "Zunbudoo maa ka hawa"
+#: connectUrlDesc
+msgid "The URL to connect to"
+msgstr ""
 
 #: connectDupReply
 msgid "Connection called %S already exists."
@@ -451,6 +452,35 @@ msgstr "Na %S juwaley kaa."
 #: disconnectOutstanding
 msgid "Outstanding requests (%S)"
 msgstr "Hãayan cindey (%S)"
+
+#. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
+#. # strings describe the 'global' command and its parameters
+#: globalDesc
+msgid "Change the JS global"
+msgstr ""
+
+#: globalWindowDesc
+msgid "The new window/global"
+msgstr ""
+
+#: globalOutput
+msgid "JS global is now %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE: These strings describe the 'clear' command
+#: clearDesc
+msgid "Clear the output area"
+msgstr ""
+
+#. # LOCALIZATION NOTE (langDesc, langOutput): These strings describe the 'lang'
+#. # command and its parameters
+#: langDesc
+msgid "Enter commands in different languages"
+msgstr ""
+
+#: langOutput
+msgid "You are now using %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (prefDesc, prefManual, prefListDesc, prefListManual,
 #. # prefListSearchDesc, prefListSearchManual, prefShowDesc, prefShowManual,
@@ -607,17 +637,15 @@ msgstr ""
 "Batagaa kaŋ ga cebandi goykaw taagey še cebe taaga hala i ma \"Ay faham\" "
 "butoŋoo naagu"
 
-#. # LOCALIZATION NOTE (introTextOpening2, introTextCommands, introTextKeys2,
+#. # LOCALIZATION NOTE (introTextOpening3, introTextCommands, introTextKeys2,
 #. # introTextF1Escape, introTextGo): These strings are displayed when the user
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
-#: introTextOpening2
+#: introTextOpening3
 msgid ""
-"This command line is designed for developers. It focuses on speed of input "
-"over JavaScript syntax and a rich display over monospace output."
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
 msgstr ""
-"Firefox juwal bataa mana tee kala cinakey še. A hanga damhaya cahãri "
-"JavaScript nahaw bande nda hantum leebante ka bisa kayyan tabatante."
 
 #: introTextCommands
 msgid "For a list of commands type"
@@ -648,18 +676,31 @@ msgstr "Šintin kubayyan batagaa cebe"
 msgid "How eager are the tooltips"
 msgstr "Goyjinay yaamarey ga cahã de"
 
-#. # LOCALIZATION NOTE: This is a short description of the 'allowSetDesc'
-#. # setting.
-#: allowSetDesc
-msgid "Has the user enabled the 'pref set' command?"
-msgstr "Goykaa na 'pref set' juwal tunandi wala?"
-
 #. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
 #. # help command, just before the list of commands. This text is wrapped inside
 #. # a link to a localized MDN article.
 #: introBody
 msgid "For more information see MDN."
 msgstr "MDN guna ka bay ka tonton."
+
+#~ msgid "Description"
+#~ msgstr "Šilbayyan"
+
+#~ msgid "The TCP port to listen on"
+#~ msgstr "TCP kotay-miɲoo ka haŋajer"
+
+#~ msgid "The hostname to bind to"
+#~ msgstr "Zunbudoo maa ka hawa"
+
+#~ msgid ""
+#~ "This command line is designed for developers. It focuses on speed of "
+#~ "input over JavaScript syntax and a rich display over monospace output."
+#~ msgstr ""
+#~ "Firefox juwal bataa mana tee kala cinakey še. A hanga damhaya cahãri "
+#~ "JavaScript nahaw bande nda hantum leebante ka bisa kayyan tabatante."
+
+#~ msgid "Has the user enabled the 'pref set' command?"
+#~ msgstr "Goykaa na 'pref set' juwal tunandi wala?"
 
 #~ msgid "Parameters"
 #~ msgstr "Adadu hansarey"

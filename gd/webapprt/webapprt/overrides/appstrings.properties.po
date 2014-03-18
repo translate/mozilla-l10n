@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 14:41+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2014-02-15 01:20+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,17 +16,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1-rc1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1392427258.000000\n"
 
-#: netReset
-msgid ""
-"The connection to the server was reset while the application was loading."
+#: malformedURI
+msgid "The URL is not valid and cannot be loaded."
+msgstr "Chan e URL dligheach a tha ann is cha ghabh a luchdadh."
+
+#: fileNotFound
+msgid "The file %S cannot be found. Please check the location and try again."
 msgstr ""
-"Chaidh an ceangal ris an fhrithealaiche ath-shuidheachadh fhad 's a bha an "
-"aplacaid 'ga luchdadh."
+"Cha deach am faidhle %S a lorg. Dèan cinnteach gu bheil thu 'ga lorg san "
+"àite cheart is feuch ris a-rithist."
+
+#: dnsNotFound
+msgid "%S could not be found. Please check the name and try again."
+msgstr ""
+"Cha deach %S a lorg. Dèan cinnteach gu bheil an t-ainm ceart agad is feuch "
+"ris a-rithist."
+
+#: unknownProtocolFound
+msgid ""
+"One of the following %S is not a registered protocol or is not allowed in "
+"this context."
+msgstr ""
+
+#: connectionFailure
+msgid "The connection was refused when attempting to contact %S."
+msgstr "Chaidh an ceangal a dhiùltadh nuair a dh'iarradh inntrigeadh gu %S."
+
+#: netInterrupt
+msgid ""
+"The connection to %S has terminated unexpectedly. Some data may have been "
+"transferred."
+msgstr ""
+"Bhris an ceangal ri %S gu h-obann. Dh'fhaodadh gun deach cuid dhen dàta a "
+"thoirt seachad."
+
+#: netTimeout
+msgid "The operation timed out when attempting to contact %S."
+msgstr "Chaidh an gnìomh thar tìde nuair a dh'iarraidh inntrigeadh gu %S."
 
 #: redirectLoop
 msgid "A server is redirecting a request in a way that will never complete."
@@ -43,10 +74,21 @@ msgstr ""
 "chur ann gus gnìomh sam bith a chaidh a dhèanamh roimhe (m.e. lorg no "
 "dearbhadh òrduigh) a dhèanamh a-rithist."
 
+#: resendButton.label
+msgid "Resend"
+msgstr "Ath-sheòl"
+
 #: unknownSocketType
 msgid "The application doesn't know how to communicate with the server."
 msgstr ""
 "Chan eil fhios aig an aplacaid mar a nì e conaltradh leis an fhrithealaiche."
+
+#: netReset
+msgid ""
+"The connection to the server was reset while the application was loading."
+msgstr ""
+"Chaidh an ceangal ris an fhrithealaiche ath-shuidheachadh fhad 's a bha an "
+"aplacaid 'ga luchdadh."
 
 #: notCached
 msgid "The application requested a document which is no longer available."
@@ -58,6 +100,12 @@ msgid ""
 msgstr ""
 "Tha an aplacaid sa mhodh far loidhne an-dràsta 's chan fhaigh e cothrom air "
 "an lìonra."
+
+#: isprinting
+msgid "The document cannot change while Printing or in Print Preview."
+msgstr ""
+"Chan ghabh sgrìobhainn atharrachadh fhad 's a thathar 'ga chlò-bhualadh no "
+"fhad 's a thathar 'ga ro-shealladh."
 
 #: deniedPortAccess
 msgid ""
@@ -100,6 +148,71 @@ msgstr ""
 "Chan urrainn dhan aplacaid leantainn air adhart a chionn 's gun do "
 "dh'fhosgail e faidhle a dh'fhaodadh a bhith cunnartach. Cuir fios gu "
 "ùghdaran na h-aplacaid is innis dhaibh mun duilgheadas seo."
+
+#: externalProtocolTitle
+msgid "External Protocol Request"
+msgstr "Iarrtas air pròtacal on taobh a-muigh"
+
+#: externalProtocolPrompt
+msgid ""
+"An external application must be launched to handle %1$S: links.\n"
+"\n"
+"\n"
+"Requested link:\n"
+"\n"
+"%2$S\n"
+"\n"
+"Application: %3$S\n"
+"\n"
+"\n"
+"If you were not expecting this request it may be an attempt to exploit a "
+"weakness in that other program. Cancel this request unless you are sure it "
+"is not malicious.\n"
+msgstr ""
+"Tha feum air aplacaid eile gus na ceanglaichean %1$S: a làimhseachadh.\n"
+"\n"
+"\n"
+"Ceangal a dh'iarradh:\n"
+"\n"
+"%2$S\n"
+"\n"
+"Aplacaid: %3$S\n"
+"\n"
+"\n"
+"Mura robh dùil agad ris an iarrtas seo, dh'fhaodadh gu bheilear a' feuchainn "
+"ri fàth a ghabhail air laigse sa phrògram sin. Sguir dhen iarrtas seo mur "
+"eil thu cinnteach nach eil e droch rùnach.\n"
+
+#. #LOCALIZATION NOTE (externalProtocolUnknown): The following string is shown if the application name can't be determined
+#: externalProtocolUnknown
+msgid "<Unknown>"
+msgstr "<Neo-aithnichte>"
+
+#: externalProtocolChkMsg
+msgid "Remember my choice for all links of this type."
+msgstr "Cum an cuimhne mo roghainn airson gach ceangal dhen t-seòrsa seo."
+
+#: externalProtocolLaunchBtn
+#, fuzzy
+msgid "Launch application"
+msgstr "Tòisich aplacaid"
+
+#: malwareBlocked
+msgid ""
+"The site at %S has been reported as an attack site and has been blocked "
+"based on your security preferences."
+msgstr ""
+"Chaidh aithris gur e làrach ionnsaighe a tha san làrach %S is chaidh bacadh "
+"a chur air a-rèir do roghainnean tèarainteachd."
+
+#: phishingBlocked
+msgid ""
+"The website at %S has been reported as a web forgery designed to trick users "
+"into sharing personal or financial information."
+msgstr ""
+"Chaidh aithris gur e fallsaidheachd-lìn a tha san duilleag aig %S gus "
+"fiosrachadh pearsanta no ionmhasail fhaighinn o chleachdaichean tro "
+"mhealladh."
 
 #: cspFrameAncestorBlocked
 msgid ""

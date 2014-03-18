@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 14:41+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2014-02-21 11:00+0000\n"
 "Last-Translator: ngoswami <ngoswami@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,15 +14,42 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1392980430.000000\n"
 
-#: netReset
+#: malformedURI
+msgid "The URL is not valid and cannot be loaded."
+msgstr ""
+
+#: fileNotFound
+msgid "The file %S cannot be found. Please check the location and try again."
+msgstr "%S ফাইল পোৱা নাযায়। অৱস্থানৰ পৰীক্ষা কৰি পুনঃ চেষ্টা কৰক।"
+
+#: dnsNotFound
+msgid "%S could not be found. Please check the name and try again."
+msgstr "%S পোৱা নগল। অনুগ্ৰহ কৰি নাম পৰীক্ষা কৰি পুনঃ চেষ্টা কৰক।"
+
+#: unknownProtocolFound
 msgid ""
-"The connection to the server was reset while the application was loading."
-msgstr "এপ্লিকেচন ল'ড হৈ থাকোতে চাৰ্ভাৰৰ সৈতে সংযোগ পুনঃপ্ৰতিষ্ঠিত হৈছিল।"
+"One of the following %S is not a registered protocol or is not allowed in "
+"this context."
+msgstr ""
+
+#: connectionFailure
+msgid "The connection was refused when attempting to contact %S."
+msgstr "%S ৰ সৈতে সংযোগ স্থাপন কৰাৰ চেষ্টাত সংযোগ মনা নহল।"
+
+#: netInterrupt
+msgid ""
+"The connection to %S has terminated unexpectedly. Some data may have been "
+"transferred."
+msgstr "%S লৈ সংযোগ অপ্ৰত্যাশিতভাবে অন্ত হ'ল। কিছুমান তথ্য গমন কৰা হ'বও পাৰে।"
+
+#: netTimeout
+msgid "The operation timed out when attempting to contact %S."
+msgstr "%S ক সংযোগ কৰাৰ চেষ্টাত সময় বিৰতি হ'ল।"
 
 #: redirectLoop
 msgid "A server is redirecting a request in a way that will never complete."
@@ -36,9 +63,18 @@ msgstr ""
 "আগবাঢ়িবলৈ, এপ্লিকেচনে তথ্য পঠাব লাগিব যাৰ বাবে এটা কাৰ্য্যৰ পুনৰাবৃত্তি হব (যেনে "
 "এটা সন্ধান অথবা অৰডাৰ নিশ্চিতকৰণ) যি আগতে কৰা হৈছিল।"
 
+#: resendButton.label
+msgid "Resend"
+msgstr "পুনঃ পঠিয়াওক"
+
 #: unknownSocketType
 msgid "The application doesn't know how to communicate with the server."
 msgstr "এপ্লিকেচনে চাৰ্ভাৰৰ সৈতে কেনেকৈ যোগাযোগ কৰিব নাজানে।"
+
+#: netReset
+msgid ""
+"The connection to the server was reset while the application was loading."
+msgstr "এপ্লিকেচন ল'ড হৈ থাকোতে চাৰ্ভাৰৰ সৈতে সংযোগ পুনঃপ্ৰতিষ্ঠিত হৈছিল।"
 
 #: notCached
 msgid "The application requested a document which is no longer available."
@@ -48,6 +84,10 @@ msgstr "এপ্লিকেচনে এটা দস্তাবেজ অন
 msgid ""
 "The application is currently in offline mode and can't access the network."
 msgstr "এপ্লিকেচন বৰ্তমানে অফলাইন অৱস্থাত আছে আৰু নেটৱাৰ্ক অভিগম কৰিব নোৱাৰে।"
+
+#: isprinting
+msgid "The document cannot change while Printing or in Print Preview."
+msgstr ""
 
 #: deniedPortAccess
 msgid ""
@@ -88,6 +128,53 @@ msgstr ""
 "এপ্লিকেচন আগবাঢ়িব নোৱাৰে কাৰণ ই এটা ফাইল ধৰণ অভিগম কৰিছে যি খোলিবলৈ সুৰক্ষিত "
 "নহব পাৰে। এই সমস্যাৰ বিষয়ে জ্ঞাত কৰাবলৈ অনুগ্ৰহ কৰি এপ্লিকেচন লেখকসকলক যোগাযোগ "
 "কৰক।"
+
+#: externalProtocolTitle
+msgid "External Protocol Request"
+msgstr ""
+
+#: externalProtocolPrompt
+msgid ""
+"An external application must be launched to handle %1$S: links.\n"
+"\n"
+"\n"
+"Requested link:\n"
+"\n"
+"%2$S\n"
+"\n"
+"Application: %3$S\n"
+"\n"
+"\n"
+"If you were not expecting this request it may be an attempt to exploit a "
+"weakness in that other program. Cancel this request unless you are sure it "
+"is not malicious.\n"
+msgstr ""
+
+#. #LOCALIZATION NOTE (externalProtocolUnknown): The following string is shown if the application name can't be determined
+#: externalProtocolUnknown
+msgid "<Unknown>"
+msgstr "<অজ্ঞাত>"
+
+#: externalProtocolChkMsg
+msgid "Remember my choice for all links of this type."
+msgstr ""
+
+#: externalProtocolLaunchBtn
+#, fuzzy
+msgid "Launch application"
+msgstr "এপ্লিকেচন আৰম্ভ কৰক"
+
+#: malwareBlocked
+msgid ""
+"The site at %S has been reported as an attack site and has been blocked "
+"based on your security preferences."
+msgstr ""
+
+#: phishingBlocked
+msgid ""
+"The website at %S has been reported as a web forgery designed to trick users "
+"into sharing personal or financial information."
+msgstr ""
 
 #: cspFrameAncestorBlocked
 msgid ""

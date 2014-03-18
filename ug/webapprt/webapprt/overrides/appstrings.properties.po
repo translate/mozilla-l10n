@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 14:41+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2013-12-12 10:02+0000\n"
 "Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,16 +15,44 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1386842546.000000\n"
 
-#: netReset
+#: malformedURI
+msgid "The URL is not valid and cannot be loaded."
+msgstr "بۇ URL ئىناۋەتسىز يۈكلىگىلى بولمايدۇ."
+
+#: fileNotFound
+msgid "The file %S cannot be found. Please check the location and try again."
+msgstr "ھۆججەت %S تېپىلمىدى. ئورنىنى تەكشۈرۈپ قايتا سىناڭ."
+
+#: dnsNotFound
+msgid "%S could not be found. Please check the name and try again."
+msgstr "%S تېپىلمىدى. نامىنى تەكشۈرۈپ قايتا سىناڭ."
+
+#: unknownProtocolFound
 msgid ""
-"The connection to the server was reset while the application was loading."
+"One of the following %S is not a registered protocol or is not allowed in "
+"this context."
 msgstr ""
-"ئەپ يۈكلىنىۋاتقاندا مۇلازىمېتىر بىلەن بولغان باغلىنىش ئەسلىگە قايتۇرۇلدى."
+
+#: connectionFailure
+msgid "The connection was refused when attempting to contact %S."
+msgstr "%S بىلەن بولغان ئالاقە رەت قىلىندى."
+
+#: netInterrupt
+msgid ""
+"The connection to %S has terminated unexpectedly. Some data may have been "
+"transferred."
+msgstr ""
+"كۆتۈلمىگەندە %S بىلەن بولغان ئۇلىنىش ئۈزۈلدى. بىر قىسىم سانلىق مەلۇماتلار "
+"يوللىنىپ بولغان بۇلىشى مۇمكىن."
+
+#: netTimeout
+msgid "The operation timed out when attempting to contact %S."
+msgstr "%S بىلەن بولغان ئالاقىنىڭ ۋاقتى ئېشىپ كەتتى."
 
 #: redirectLoop
 msgid "A server is redirecting a request in a way that will never complete."
@@ -39,10 +67,20 @@ msgstr ""
 "بۇ بەتنى كۆرسىتىش ئۈچۈن، پروگرامما ئورۇنلىنىپ بولغان مەشغۇلاتلارنى "
 "تەكرارلايدىغان ئۇچۇرنى يوللىشى كېرەك."
 
+#: resendButton.label
+msgid "Resend"
+msgstr "قايتا يوللا"
+
 #: unknownSocketType
 #, fuzzy
 msgid "The application doesn't know how to communicate with the server."
 msgstr "Firefox مۇلازىمېتىر بىلەن قانداق ئالاقە قىلىشنى بىلەلمىدى."
+
+#: netReset
+msgid ""
+"The connection to the server was reset while the application was loading."
+msgstr ""
+"ئەپ يۈكلىنىۋاتقاندا مۇلازىمېتىر بىلەن بولغان باغلىنىش ئەسلىگە قايتۇرۇلدى."
 
 #: notCached
 msgid "The application requested a document which is no longer available."
@@ -52,6 +90,11 @@ msgstr ""
 msgid ""
 "The application is currently in offline mode and can't access the network."
 msgstr ""
+
+#: isprinting
+msgid "The document cannot change while Printing or in Print Preview."
+msgstr ""
+"ھۆججەتنى بېسىۋاتقان ياكى بېسىشنى ئالدىن كۆزىتىۋاتقاندا ئۆزگەرتكىلى بولمايدۇ."
 
 #: deniedPortAccess
 msgid ""
@@ -86,6 +129,70 @@ msgid ""
 "be safe to open. Please contact the application authors to inform them of "
 "this problem."
 msgstr ""
+
+#: externalProtocolTitle
+msgid "External Protocol Request"
+msgstr "سىرتقى كېلىشىم ئىلتىماسى"
+
+#: externalProtocolPrompt
+msgid ""
+"An external application must be launched to handle %1$S: links.\n"
+"\n"
+"\n"
+"Requested link:\n"
+"\n"
+"%2$S\n"
+"\n"
+"Application: %3$S\n"
+"\n"
+"\n"
+"If you were not expecting this request it may be an attempt to exploit a "
+"weakness in that other program. Cancel this request unless you are sure it "
+"is not malicious.\n"
+msgstr ""
+"سىز چوقۇم سىرتقى قوللىنىشچان پروگراممىدىن بىرنى قوزغىتىپ %1$S بىلەن بولغان "
+"ئۇلىنىشنى بىر تەرەپ قىلىڭ.\n"
+"\n"
+"\n"
+"ئىلتىماس ئۇلانمىسى:\n"
+"\n"
+"%2$S\n"
+"\n"
+"ئەپ:%3$S\n"
+"\n"
+"\n"
+"ئەگەر بۇ ئىلتىماسنىڭ باشقا پروگراممىلارنىڭ غەملەك ئېشىپ كېتىش يوچۇقىنى "
+"سىناشنى ئارزۇ قىلمىسىڭىز بۇ مەشغۇلاتنى بىكار قىلىڭ، بۇ ئۇلانمىنىڭ يامان "
+"غەرىزى يوقلۇقىنى جەزملىسىڭىز بۇ باشقا گەپ.\n"
+
+#. #LOCALIZATION NOTE (externalProtocolUnknown): The following string is shown if the application name can't be determined
+#: externalProtocolUnknown
+msgid "<Unknown>"
+msgstr "<نامەلۇم>"
+
+#: externalProtocolChkMsg
+msgid "Remember my choice for all links of this type."
+msgstr "بۇ خىلدىكى بارلىق ئۇلانمىلارغا نىسبەتەن تاللىشىمنى ئەستە تۇت."
+
+#: externalProtocolLaunchBtn
+msgid "Launch application"
+msgstr "قوللىنىشچان پروگراممىنى قوزغات"
+
+#: malwareBlocked
+msgid ""
+"The site at %S has been reported as an attack site and has been blocked "
+"based on your security preferences."
+msgstr ""
+"%S دىكى تور بېكەت ھۇجۇم خاراكتېرىدىكى بېكەت دەپ مەلۇم قىلىنغان، سىزنىڭ "
+"بىخەتەرلىك تاللانمىڭىزغا ئاساسەن چەكلەندى."
+
+#: phishingBlocked
+msgid ""
+"The website at %S has been reported as a web forgery designed to trick users "
+"into sharing personal or financial information."
+msgstr ""
+"%S دىكى تور بېكەت ئىشلەتكۈچىلەرنى شەخسىي ئۇچۇر ۋە پۇل-مۇئامىلە ئۇچۇرىنى "
+"كىرگۈزۈشكە قىزىقتۇرۇپ ئالدامچىلىق قىلىدىغان بېكەت ئىكەنلىكى مەلۇم قىلىنغان."
 
 #: cspFrameAncestorBlocked
 msgid ""

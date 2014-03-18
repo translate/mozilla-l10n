@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-10 14:41+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2014-03-15 09:58+0000\n"
 "Last-Translator: thangamani-arun <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,15 +15,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1394877491.000000\n"
 
-#: netReset
+#: malformedURI
+msgid "The URL is not valid and cannot be loaded."
+msgstr ""
+
+#: fileNotFound
+msgid "The file %S cannot be found. Please check the location and try again."
+msgstr "%S என்படும் கோப்பு காணப்படவில்லை. இடத்தை சரிபார்த்து மீண்டும் முயற்சிக்கவும்."
+
+#: dnsNotFound
+msgid "%S could not be found. Please check the name and try again."
+msgstr "%S கண்டுபிடிக்க முடியவில்லை. பெயர் சரிபார்த்து மீண்டும் முயற்சிக்கவும்."
+
+#: unknownProtocolFound
 msgid ""
-"The connection to the server was reset while the application was loading."
-msgstr "பக்கத்தை ஏற்றும் போது சேவயகத்தின் இணைப்பு மீட்டமைக்கப்பட்டது."
+"One of the following %S is not a registered protocol or is not allowed in "
+"this context."
+msgstr ""
+
+#: connectionFailure
+msgid "The connection was refused when attempting to contact %S."
+msgstr "%S தொடர்பு கொள்ள முயற்சிக்கும் போது இணைப்பு மறுத்து."
+
+#: netInterrupt
+msgid ""
+"The connection to %S has terminated unexpectedly. Some data may have been "
+"transferred."
+msgstr "%S இணைப்பு எதிர்பாராமல் முடிந்துவிட்டது. சில தரவு மாற்றப்பட்டுள்ளது."
+
+#: netTimeout
+msgid "The operation timed out when attempting to contact %S."
+msgstr "%S தொடர்பு கொள்ள முயற்சிக்கும் போது சர்வர் இயக்க நேரம் கடந்துவிட்டது."
 
 #: redirectLoop
 msgid "A server is redirecting a request in a way that will never complete."
@@ -38,9 +65,18 @@ msgstr ""
 "இந்த பக்கத்தைக் காண்பிக்க, முன்பு செய்யப்பட்ட எந்த செயலையும் (தேடல் அல்லது சீர்படுத்த "
 "உறுதிப்படுத்தல் போன்றவை) மீண்டும் செய்யக்கூடிய ஒரு தகவலை அனுப்ப வேண்டும்."
 
+#: resendButton.label
+msgid "Resend"
+msgstr "மீண்டும் அனுப்புக"
+
 #: unknownSocketType
 msgid "The application doesn't know how to communicate with the server."
 msgstr "பயர்பாக்ஸ்க்கு சேவகனுடன் எவ்வாறு தொடர்பு கொள்ள வேண்டும் எனத் தெரியாது."
+
+#: netReset
+msgid ""
+"The connection to the server was reset while the application was loading."
+msgstr "பக்கத்தை ஏற்றும் போது சேவயகத்தின் இணைப்பு மீட்டமைக்கப்பட்டது."
 
 #: notCached
 msgid "The application requested a document which is no longer available."
@@ -50,6 +86,10 @@ msgstr "இந்த பயன்பாடு கேட்ட ஒரு ஆவ�
 msgid ""
 "The application is currently in offline mode and can't access the network."
 msgstr "இந்த பயன்பாடானது இணையத்தில் இல்லை எனவே பிணையத்தை அனுக இயலாது."
+
+#: isprinting
+msgid "The document cannot change while Printing or in Print Preview."
+msgstr ""
 
 #: deniedPortAccess
 msgid ""
@@ -89,6 +129,57 @@ msgid ""
 msgstr ""
 "இந்த பயன்பாட்டை தொடர இயலாமது ஏனெனில் இது அனுகிய கோப்பு வகை பாதுகாப்பானதாக "
 "இருக்காது. தயவுச்செய்து பயன்பாட்டின் ஆசிரியர்களை அனுகி பிரச்சனையை தெரியப்படுத்தவும்."
+
+#: externalProtocolTitle
+msgid "External Protocol Request"
+msgstr "வெளியார்ந்த நெறிமுறை கோரிக்கை"
+
+#: externalProtocolPrompt
+msgid ""
+"An external application must be launched to handle %1$S: links.\n"
+"\n"
+"\n"
+"Requested link:\n"
+"\n"
+"%2$S\n"
+"\n"
+"Application: %3$S\n"
+"\n"
+"\n"
+"If you were not expecting this request it may be an attempt to exploit a "
+"weakness in that other program. Cancel this request unless you are sure it "
+"is not malicious.\n"
+msgstr ""
+
+#. #LOCALIZATION NOTE (externalProtocolUnknown): The following string is shown if the application name can't be determined
+#: externalProtocolUnknown
+#, fuzzy
+msgid "<Unknown>"
+msgstr "(தெரியாத)"
+
+#: externalProtocolChkMsg
+msgid "Remember my choice for all links of this type."
+msgstr "இந்த வகை இணைப்புகள் அனைத்துக்கும் என் விருப்பத்தை நினைவு கொள்ளவும்."
+
+#: externalProtocolLaunchBtn
+msgid "Launch application"
+msgstr "பயன்பாட்டைத் துவங்கு"
+
+#: malwareBlocked
+msgid ""
+"The site at %S has been reported as an attack site and has been blocked "
+"based on your security preferences."
+msgstr ""
+"%S இல் உள்ள தளம், ஒரு தாக்குதல் தளம் என்று அறிக்கையிடப்பட்டுள்ளது, உங்கள் பாதுகாப்பு "
+"முன்னுரிமைகளின் அடிப்படையில் அது தடுக்கபப்ட்டது."
+
+#: phishingBlocked
+msgid ""
+"The website at %S has been reported as a web forgery designed to trick users "
+"into sharing personal or financial information."
+msgstr ""
+"The web site at %S has been reported as a web forgery designed to trick "
+"users into sharing personal or financial information."
 
 #: cspFrameAncestorBlocked
 msgid ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 18:42+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2013-08-11 12:19+0000\n"
 "Last-Translator: pittaya <pittaya@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1376223564.000000\n"
@@ -88,6 +88,11 @@ msgstr "ตัวเลือกที่ใช้ได้"
 #. # isn't registered
 #: cliUnknownCommand
 msgid "Invalid Command"
+msgstr ""
+
+#. # LOCALIZATION NOTE: A parameter should have a value, but doesn't
+#: cliIncompleteParam
+msgid "Value required for '%1$S'."
 msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a file
@@ -265,15 +270,11 @@ msgid ""
 "expressions not supported."
 msgstr "คำค้นที่ใช้จำกัดการแสดงผลของคำสั่งที่มีให้แคบลง ไม่สนับสนุน Regular Expression"
 
-#. # LOCALIZATION NOTE (helpManSynopsis, helpManDescription): These strings are
-#. # displayed in the help page for a command in the console.
+#. # LOCALIZATION NOTE: These strings are displayed in the help page for a
+#. # command in the console.
 #: helpManSynopsis
 msgid "Synopsis"
 msgstr "สรุปความ"
-
-#: helpManDescription
-msgid "Description"
-msgstr "รายละเอียด"
 
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
@@ -368,7 +369,7 @@ msgid "Command prefix is unset"
 msgstr "ไม่ได้ตั้งคำนำหน้าคำสั่ง"
 
 #. # LOCALIZATION NOTE (connectDesc, connectManual, connectPrefixDesc,
-#. # connectPortDesc, connectHostDesc, connectDupReply): These strings describe
+#. # connectMethodDesc, connectUrlDesc, connectDupReply): These strings describe
 #. # the 'connect' command and all its available parameters. A 'prefix' is an 
 #. # alias for the remote server (think of it as a "connection name"), and it
 #. # allows to identify a specific server when connected to multiple remote
@@ -391,13 +392,13 @@ msgctxt "connectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "คำนำหน้าหลักสำหรับคำสั่งที่นำเข้า"
 
-#: connectPortDesc
-msgid "The TCP port to listen on"
-msgstr "The TCP port to listen on"
+#: connectMethodDesc
+msgid "The method of connecting"
+msgstr ""
 
-#: connectHostDesc
-msgid "The hostname to bind to"
-msgstr "The hostname to bind to"
+#: connectUrlDesc
+msgid "The URL to connect to"
+msgstr ""
 
 #: connectDupReply
 msgid "Connection called %S already exists."
@@ -445,6 +446,35 @@ msgstr "เอาคำสั่ง %S ออกแล้ว"
 #: disconnectOutstanding
 msgid "Outstanding requests (%S)"
 msgstr "การร้องขอที่ค้างอยู่ (%S)"
+
+#. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
+#. # strings describe the 'global' command and its parameters
+#: globalDesc
+msgid "Change the JS global"
+msgstr ""
+
+#: globalWindowDesc
+msgid "The new window/global"
+msgstr ""
+
+#: globalOutput
+msgid "JS global is now %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE: These strings describe the 'clear' command
+#: clearDesc
+msgid "Clear the output area"
+msgstr ""
+
+#. # LOCALIZATION NOTE (langDesc, langOutput): These strings describe the 'lang'
+#. # command and its parameters
+#: langDesc
+msgid "Enter commands in different languages"
+msgstr ""
+
+#: langOutput
+msgid "You are now using %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (prefDesc, prefManual, prefListDesc, prefListManual,
 #. # prefListSearchDesc, prefListSearchManual, prefShowDesc, prefShowManual,
@@ -597,18 +627,15 @@ msgid ""
 "it!' button"
 msgstr "แสดงข้อความต้อนรับที่ผู้ใช้ใหม่เห็นอีกครั้ง จนกว่าผู้ใช้จะกดปุ่ม 'เข้าใจแล้ว'"
 
-#. # LOCALIZATION NOTE (introTextOpening2, introTextCommands, introTextKeys2,
+#. # LOCALIZATION NOTE (introTextOpening3, introTextCommands, introTextKeys2,
 #. # introTextF1Escape, introTextGo): These strings are displayed when the user
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
-#: introTextOpening2
+#: introTextOpening3
 msgid ""
-"This command line is designed for developers. It focuses on speed of input "
-"over JavaScript syntax and a rich display over monospace output."
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
 msgstr ""
-"บรรทัดคำสั่งถูกออกแบบมาเพื่อนักพัฒนา "
-"โดยมุ่งเน้นความเร็วในการป้อนข้อมูลมากกว่าไวยากรณ์ของจาวาสคริปต์ "
-"และการแสดงผลที่สวยงามมากกว่าแบบข้อความล้วน"
 
 #: introTextCommands
 msgid "For a list of commands type"
@@ -639,18 +666,32 @@ msgstr "แสดงข้อความต้อนรับแรกเริ
 msgid "How eager are the tooltips"
 msgstr "How eager are the tooltips"
 
-#. # LOCALIZATION NOTE: This is a short description of the 'allowSetDesc'
-#. # setting.
-#: allowSetDesc
-msgid "Has the user enabled the 'pref set' command?"
-msgstr "ผู้ใช้เปิดการทำงานของคำสั่ง 'pref set' ไว้หรือไม่?"
-
 #. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
 #. # help command, just before the list of commands. This text is wrapped inside
 #. # a link to a localized MDN article.
 #: introBody
 msgid "For more information see MDN."
 msgstr "ดูข้อมูลเพิ่มเติมได้ที่ MDN."
+
+#~ msgid "Description"
+#~ msgstr "รายละเอียด"
+
+#~ msgid "The TCP port to listen on"
+#~ msgstr "The TCP port to listen on"
+
+#~ msgid "The hostname to bind to"
+#~ msgstr "The hostname to bind to"
+
+#~ msgid ""
+#~ "This command line is designed for developers. It focuses on speed of "
+#~ "input over JavaScript syntax and a rich display over monospace output."
+#~ msgstr ""
+#~ "บรรทัดคำสั่งถูกออกแบบมาเพื่อนักพัฒนา "
+#~ "โดยมุ่งเน้นความเร็วในการป้อนข้อมูลมากกว่าไวยากรณ์ของจาวาสคริปต์ "
+#~ "และการแสดงผลที่สวยงามมากกว่าแบบข้อความล้วน"
+
+#~ msgid "Has the user enabled the 'pref set' command?"
+#~ msgstr "ผู้ใช้เปิดการทำงานของคำสั่ง 'pref set' ไว้หรือไม่?"
 
 #~ msgid "Parameters"
 #~ msgstr "พารามิเตอร์"

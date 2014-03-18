@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-17 18:42+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: 2013-11-14 04:46+0000\n"
 "Last-Translator: Sutha <sutha@open.org.kh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1384404378.000000\n"
@@ -90,6 +90,11 @@ msgstr "ជម្រើស​​ដែល​មាន"
 #: cliUnknownCommand
 msgid "Invalid Command"
 msgstr "ពាក្យ​បញ្ជា​មិន​ត្រឹមត្រូវ"
+
+#. # LOCALIZATION NOTE: A parameter should have a value, but doesn't
+#: cliIncompleteParam
+msgid "Value required for '%1$S'."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a file
 #. # that does not exist, but should (e.g. for use with File->Open) %1$S is a
@@ -268,15 +273,11 @@ msgid ""
 msgstr ""
 "ឃ្លា​ស្វែងរក​ដែល​ត្រូវ​ប្រើ​ ដើម្បី​បន្ថយ​ពាក្យ​បញ្ជា​ដែល​បាន​​បង្ហាញ ។ កន្សោម​ធម្មតា​មិន​ត្រូវ​បាន​គាំទ្រ​ឡើយ ។"
 
-#. # LOCALIZATION NOTE (helpManSynopsis, helpManDescription): These strings are
-#. # displayed in the help page for a command in the console.
+#. # LOCALIZATION NOTE: These strings are displayed in the help page for a
+#. # command in the console.
 #: helpManSynopsis
 msgid "Synopsis"
 msgstr "សង្ខេប"
-
-#: helpManDescription
-msgid "Description"
-msgstr "សេចក្ដី​ពិពណ៌នា"
 
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
@@ -371,7 +372,7 @@ msgid "Command prefix is unset"
 msgstr "មិន​បាន​កំណត់​បុព្វបទ​ពាក្យ​បញ្ជា​"
 
 #. # LOCALIZATION NOTE (connectDesc, connectManual, connectPrefixDesc,
-#. # connectPortDesc, connectHostDesc, connectDupReply): These strings describe
+#. # connectMethodDesc, connectUrlDesc, connectDupReply): These strings describe
 #. # the 'connect' command and all its available parameters. A 'prefix' is an 
 #. # alias for the remote server (think of it as a "connection name"), and it
 #. # allows to identify a specific server when connected to multiple remote
@@ -394,13 +395,13 @@ msgctxt "connectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "បុព្វបទ​​មេ​សម្រាប់​ពាក្យ​បញ្ជា​ដែល​បាន​នាំចូល"
 
-#: connectPortDesc
-msgid "The TCP port to listen on"
-msgstr "ច្រក TCP សម្រាប់​ស្ដាប់"
+#: connectMethodDesc
+msgid "The method of connecting"
+msgstr ""
 
-#: connectHostDesc
-msgid "The hostname to bind to"
-msgstr "ឈ្មោះ​ម៉ាស៊ីន​ត្រូវ​ចង"
+#: connectUrlDesc
+msgid "The URL to connect to"
+msgstr ""
 
 #: connectDupReply
 msgid "Connection called %S already exists."
@@ -448,6 +449,35 @@ msgstr "បាន​លុប​ពាក្យ​បញ្ជា %S ។"
 #: disconnectOutstanding
 msgid "Outstanding requests (%S)"
 msgstr "សំណើ​ល្អ (%S)"
+
+#. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
+#. # strings describe the 'global' command and its parameters
+#: globalDesc
+msgid "Change the JS global"
+msgstr ""
+
+#: globalWindowDesc
+msgid "The new window/global"
+msgstr ""
+
+#: globalOutput
+msgid "JS global is now %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE: These strings describe the 'clear' command
+#: clearDesc
+msgid "Clear the output area"
+msgstr ""
+
+#. # LOCALIZATION NOTE (langDesc, langOutput): These strings describe the 'lang'
+#. # command and its parameters
+#: langDesc
+msgid "Enter commands in different languages"
+msgstr ""
+
+#: langOutput
+msgid "You are now using %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (prefDesc, prefManual, prefListDesc, prefListManual,
 #. # prefListSearchDesc, prefListSearchManual, prefShowDesc, prefShowManual,
@@ -600,17 +630,15 @@ msgid ""
 "it!' button"
 msgstr "បង្ហាញ​ឡើងវិញ​នូវ​សារ​ដែល​បាន​បង្ហាញ​ទៅកាន់​អ្នកប្រើ​ថ្មី​រហូត​ទាល់តែ​ពួកគេ​ចុច​ប៊ូតុង 'បាន​ទទួល'"
 
-#. # LOCALIZATION NOTE (introTextOpening2, introTextCommands, introTextKeys2,
+#. # LOCALIZATION NOTE (introTextOpening3, introTextCommands, introTextKeys2,
 #. # introTextF1Escape, introTextGo): These strings are displayed when the user
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
-#: introTextOpening2
+#: introTextOpening3
 msgid ""
-"This command line is designed for developers. It focuses on speed of input "
-"over JavaScript syntax and a rich display over monospace output."
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
 msgstr ""
-"បន្ទាត់​ពាក្យ​បញ្ជា​នេះ ត្រូវ​បាន​រចនា​ឡើង​សម្រាប់​អ្នក​អភិវឌ្ឍន៍ ។ វា​ផ្ដោត​លើ​ល្បឿន​នៃ​ការ​បញ្ចូល​ដោយ​ប្រើ​"
-"វាក្យសម្ពន្ធ​របស់ JavaScript និង​ការ​បង្ហាញ​សម្បូរ​បែប​ដោយ​ប្រើ monospace ។"
 
 #: introTextCommands
 msgid "For a list of commands type"
@@ -641,18 +669,31 @@ msgstr "បង្ហាញ​សារ​ស្វាគមន៍​ដំបូ
 msgid "How eager are the tooltips"
 msgstr "កម្រិត​សារទរ​របស់​ព័ត៌មាន​ជំនួយ"
 
-#. # LOCALIZATION NOTE: This is a short description of the 'allowSetDesc'
-#. # setting.
-#: allowSetDesc
-msgid "Has the user enabled the 'pref set' command?"
-msgstr "តើ​អ្នកប្រើ​បាន​បើក​ពាក្យ​បញ្ជា 'កំណត់​ចំណូលចិត្ត' ដែរ​ឬទេ ?"
-
 #. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
 #. # help command, just before the list of commands. This text is wrapped inside
 #. # a link to a localized MDN article.
 #: introBody
 msgid "For more information see MDN."
 msgstr "សម្រាប់​ព័ត៌មាន​បន្ថែម សូម​មើល MDN ។"
+
+#~ msgid "Description"
+#~ msgstr "សេចក្ដី​ពិពណ៌នា"
+
+#~ msgid "The TCP port to listen on"
+#~ msgstr "ច្រក TCP សម្រាប់​ស្ដាប់"
+
+#~ msgid "The hostname to bind to"
+#~ msgstr "ឈ្មោះ​ម៉ាស៊ីន​ត្រូវ​ចង"
+
+#~ msgid ""
+#~ "This command line is designed for developers. It focuses on speed of "
+#~ "input over JavaScript syntax and a rich display over monospace output."
+#~ msgstr ""
+#~ "បន្ទាត់​ពាក្យ​បញ្ជា​នេះ ត្រូវ​បាន​រចនា​ឡើង​សម្រាប់​អ្នក​អភិវឌ្ឍន៍ ។ វា​ផ្ដោត​លើ​ល្បឿន​នៃ​ការ​បញ្ចូល​ដោយ​ប្រើ​"
+#~ "វាក្យសម្ពន្ធ​របស់ JavaScript និង​ការ​បង្ហាញ​សម្បូរ​បែប​ដោយ​ប្រើ monospace ។"
+
+#~ msgid "Has the user enabled the 'pref set' command?"
+#~ msgstr "តើ​អ្នកប្រើ​បាន​បើក​ពាក្យ​បញ្ជា 'កំណត់​ចំណូលចិត្ត' ដែរ​ឬទេ ?"
 
 #~ msgid "Parameters"
 #~ msgstr "ប៉ារ៉ាម៉ែត្រ"
