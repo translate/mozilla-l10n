@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-11 00:07+0100\n"
+"POT-Creation-Date: 2014-03-19 10:33+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -201,13 +201,43 @@ msgctxt "monthlyEveryOfEveryNounclass2"
 msgid "every %1$S of every month;every %1$S of every #2 months"
 msgstr ""
 
-#. # LOCALIZATION NOTE (monthlyDayOfNth):
+#. # LOCALIZATION NOTE (monthlyDaysOfNth_ordSymbol):
 #. # Edit recurrence window -> Recurrence pattern -> Monthly repeat rules
-#. # %1$S - day of month
-#. # #2 - month interval
-#. # e.g. "day 3 of every 2 months"
-#: monthlyDayOfNth
-msgid "day %1$S of every month;day %1$S of every #2 months"
+#. # Allows to insert a string, a character or a symbol after the numbers of a day
+#. # in a monthly rule monthlyDaysOfNth in order to give to each day number the
+#. # meaning of ordinal number (e.g.  1 -> 1st; 2 -> 2nd etc.).
+#. # Use a single string if the symbol used is the same for every monthday, otherwise
+#. # write a sequence of _31_ strings (one for every monthday) separated with commas.
+#. # If your language doesn't require that in monthlyDaysOfNth, leave it empty.
+#. # e.g.
+#. # monthlyDaysOfNth_ordSymbol=.
+#. #    -> "Occurs days 1., 2., 10. and 11. of every 2 months"
+#. # monthlyDaysOfNth_ordSymbol=st,nd,rd,th,th,th,th,th,th,th,th,th,th,th,th,
+#. #                            th,th,th,th,th,st,nd,rd,th,th,th,th,th,th,th,st
+#. #    -> "Occurs days 1st, 2nd, 10th and 11th of every 2 months"
+#: monthlyDaysOfNth_ordSymbol
+msgctxt "monthlyDaysOfNth_ordSymbol"
+msgid ""
+msgstr ""
+
+#. # LOCALIZATION NOTE (monthlyDaysOfNth_day):
+#. # Edit recurrence window -> Recurrence pattern -> Monthly repeat rules
+#. # %1$S - day of month or a sequence of days of month, eventually with ordinal symbol
+#. #        coming from monthlyDaysOfNth_ordSymbol, separated with commas;
+#. # e.g. "days 3, 6 and 9" or "days 3rd, 6th and 9th"
+#: monthlyDaysOfNth_day
+msgid "day %1$S;days %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (monthlyDaysOfNth):
+#. # Edit recurrence window -> Recurrence pattern -> Monthly repeat rules
+#. # %1$S - it's the strig monthlyDaysOfNth_day: day of month or a sequence of days
+#. #        of month, eventually with ordinal symbol, separated with commas;
+#. # #2   - monthly interval
+#. # e.g. "days 3, 6, 9 and 12 of every 3 months"
+#: monthlyDaysOfNth
+msgctxt "monthlyDaysOfNth"
+msgid "%1$S of every month;%1$S of every #2 months"
 msgstr ""
 
 #. # LOCALIZATION NOTE (monthlyLastDayOfNth):
@@ -467,7 +497,7 @@ msgstr ""
 #. # %1%$ - A rule string (see above). This is the first line of the link
 #. # %2%$ - event start date (e.g. mm/gg/yyyy)
 #. # %3$S - event end date (e.g. mm/gg/yyyy)
-#. # e.g. with monthlyDayOfNth and all day event:
+#. # e.g. with monthlyDaysOfNth and all day event:
 #. # "Occurs day 3 of every 5 month
 #. #  effective 1/1/2009 until 1/1/2010"
 #: repeatDetailsUntilAllDay
@@ -482,7 +512,7 @@ msgstr ""
 #. # %2%$ - event start date (e.g. mm/gg/yyyy)
 #. # %3$S - event start time (e.g. hh:mm (PM/AM))
 #. # %4$S - event end time (e.g. hh:mm (PM/AM))
-#. # e.g. with monthlyDayOfNth:
+#. # e.g. with monthlyDaysOfNth:
 #. # "Occurs day 3 of every 5 month
 #. #  effective 1/1/2009
 #. #  from 5:00 PM to 6:00 PM"
@@ -497,7 +527,7 @@ msgstr ""
 #. # Edit recurrence window -> Recurrence details link on Event/Task dialog window
 #. # %1%$ - A rule string (see above). This is the first line of the link
 #. # %2%$ - event start date (e.g. mm/gg/yyyy)
-#. # e.g. with monthlyDayOfNth and all day event:
+#. # e.g. with monthlyDaysOfNth and all day event:
 #. # "Occurs day 3 of every 5 month
 #. #  effective 1/1/2009"
 #: repeatDetailsInfiniteAllDay
@@ -508,7 +538,7 @@ msgstr ""
 
 #. # LOCALIZATION NOTE (monthlyLastDay):
 #. # Edit recurrence window -> Recurrence details link on Event/Task dialog window
-#. # A monthly rule with one or more days of the month (monthlyDayOfNth) and the
+#. # A monthly rule with one or more days of the month (monthlyDaysOfNth) and the
 #. # string "the last day" of the month.
 #. # e.g.: "Occurs day 15, 20, 25 and the last day of every 3 months"
 #: monthlyLastDay
