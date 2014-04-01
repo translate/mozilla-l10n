@@ -114,11 +114,10 @@ require git hg moz2po po2moz get_moz_enUS.py pomigrate2
 _find_config_base_dir
 BUILD_DIR="${base_dir}/build"
 SOURCE_DIR="${base_dir}/source"
-MOZ_DIR="mozilla-aurora"
 # FIXME rename this
 MOZCENTRAL_DIR="${SOURCE_DIR}/${MOZ_REPO}"
-L10N_DIR="${BUILD_DIR}/l10n"
 PO_DIR="${base_dir}"
+L10N_DIR="${BUILD_DIR}/${L10N_VER}"
 L10N_ENUS="${PO_DIR}/templates-en-US"
 POT_DIR="${PO_DIR}/templates"
 LANGPACK_DIR="${BUILD_DIR}/xpi"
