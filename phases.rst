@@ -23,6 +23,8 @@ focus on the most important translations first.
 +--------+----------------------------------------------------------------------------------------+
 | Phase  | Details                                                                                |
 +========+========================================================================================+
+| shared | Shared between Desktop Firefox and Firefox Mobile.                                     |
++--------+----------------------------------------------------------------------------------------+
 | user1  | Anything that appears when first starting, using menus or browsing the web in normal   |
 |        | use e.g. File, Edit, View menus; Find bar at bottom, error pages, first run dialogues  |
 |        | (Moving from secure to insecure pages, browsing offline, etc), About page, Rights      |

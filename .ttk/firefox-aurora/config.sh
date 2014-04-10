@@ -19,5 +19,7 @@ OTHER_EXCLUDED_DIRS="editor mail thunderbird chat mobile embedding calendar"
 MOZ_PRODUCT=browser
 
 MOZ_REPO=mozilla-aurora
+MOZ_DIR="mozilla-aurora"
+L10N_VER=l10n
 
 alt_src="es fr ru"
