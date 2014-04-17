@@ -20,5 +20,7 @@ OTHER_EXCLUDED_DIRS="calendar editor mail thunderbird chat browser dom netwerk s
 MOZ_PRODUCT=mobile
 
 MOZ_REPO=mozilla-aurora
+MOZ_DIR="mozilla-aurora"
+L10N_VER=l10n
 
 alt_src="es fr ru"
