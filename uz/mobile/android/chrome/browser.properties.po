@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2014-03-18 20:01+0100\n"
 "PO-Revision-Date: 2014-04-13 05:43+0000\n"
 "Last-Translator: uzadmin <akmalxster@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1397367813.000000\n"
@@ -28,21 +28,9 @@ msgid "Install"
 msgstr "O‘rnatish"
 
 #. # Alerts
-#: alertAddons
-msgid "Add-ons"
-msgstr "Qo‘shimcha dasturlar"
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "Qo‘shimcha dasturlar yuklab olinmoqda"
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr "Qo‘shimcha dastur o‘rnatilmoqda"
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
-msgstr "O‘rnatish tugadi. O‘chirib-yoqishingiz kerak."
 
 #: alertAddonsInstalledNoRestart
 msgid "Installation complete"
@@ -76,9 +64,40 @@ msgstr "Yetarlicha bo‘sh joy yo‘q"
 msgid "Download started…"
 msgstr "Yuklab olish boshlandi..."
 
+#: alertDownloadsPause
+#, fuzzy
+msgctxt "alertDownloadsPause"
+msgid "Pause"
+msgstr "Pauza"
+
+#: alertDownloadsResume
+msgid "Resume"
+msgstr "Davom etish"
+
+#: alertDownloadsCancel
+#, fuzzy
+msgctxt "alertDownloadsCancel"
+msgid "Cancel"
+msgstr "Bekor qilish"
+
 #: alertFullScreenToast
 msgid "Press BACK to leave full-screen mode"
 msgstr "\"Butun ekranga\" usulidan chiqish uchun \"ORQAGA\"NI bosing"
+
+#. # LOCALIZATION NOTE (alertSearchEngineAddedToast, alertSearchEngineErrorToast, alertSearchEngineDuplicateToast)
+#. # %S will be replaced by the name of the search engine (exposed by the current page)
+#. # that has been added; for example, 'Google'.
+#: alertSearchEngineAddedToast
+msgid "'%S' has been added as a search engine"
+msgstr ""
+
+#: alertSearchEngineErrorToast
+msgid "Couldn't add '%S' as a search engine"
+msgstr ""
+
+#: alertSearchEngineDuplicateToast
+msgid "'%S' is already one of your search engines"
+msgstr ""
 
 #: downloadCancelPromptTitle
 msgid "Cancel Download"
@@ -157,11 +176,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr "O'zgarishlar tugashi uchun kompyuterni o'chirib yoqing"
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr ""
-"Qo‘shimcha dastur yangilandi. O‘zgarishlar tugashi uchun o‘chirib-yoqing."
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr ""
@@ -173,25 +187,28 @@ msgid "Restart"
 msgstr "Qayta ishga tushirish"
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
-msgstr "%S ushbu saytni o‘zi ochiluvchi oynalardan ochishdan to‘sib qo‘ydi."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
+msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
-msgstr "%S ushbu saytni %S o‘zi ochiluvchi oynalardan ochishdan to‘sib qo‘ydi."
+#: popup.dontAskAgain
+#, fuzzy
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Ushbu sayt uchun boshqa so‘ralmasin"
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr "Ko‘rsatish"
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr "Doimo ko‘rsatilsin"
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
-msgstr "Hech qachon ko‘rsatilmasin"
+#: popup.dontShow
+msgid "Don't show"
+msgstr ""
 
 #. # SafeBrowsing
 #: safeBrowsingDoorhanger
@@ -207,40 +224,6 @@ msgstr ""
 #: blockPopups.label
 msgid "Block Popups"
 msgstr "Paydo bo‘luvchi oynalarni to‘sib qo‘yish"
-
-#. # Telemetry
-#. # %1$S = server owner (Mozilla); %2$S = product name (Firefox)
-#: telemetry.optin.message2
-msgid "Send info to %1$S so that we can improve %2$S?"
-msgstr "Ma’lumot %1$Sga  biz %2$Sni yaxshilashimiz uchun jo‘natilsinmi?"
-
-#: telemetry.optin.learnMore
-msgid "Learn more"
-msgstr "Koʻproq o‘rganish"
-
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr "Ha"
-
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr "Yo‘q"
-
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
-#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-"%1$S %2$Sga %3$Sni yaxshilash uchun ishlashi, qurilma, foydalanish va "
-"moslashlar haqidagi ma’lumotlarni jo‘natib turadi."
-
-#: telemetry.optout.ok
-msgid "OK"
-msgstr "OK"
 
 #. # XPInstall
 #: xpinstallPromptWarning2
@@ -292,8 +275,9 @@ msgstr "%S (%S)"
 msgid "Encrypted"
 msgstr "Shifrlangan"
 
-#: identity.ownerUnknown2
-msgid "(unknown)"
+#: identity.ownerUnknown3
+#, fuzzy
+msgid "unknown"
 msgstr "(noma’lum)"
 
 #. # Geolocation UI
@@ -306,17 +290,9 @@ msgstr "Bo‘lishish"
 msgid "Don't share"
 msgstr "Bo‘lishilmasin"
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr "Doimo bo‘lishish"
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr "Hech qachon bo‘lishilmasin"
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
-msgstr "%S manzilingizni xohlaydi."
+#: geolocation.ask
+msgid "Share your location with %S?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
 #. # site settings dialog.
@@ -338,12 +314,14 @@ msgid "Allow"
 msgstr "Ruxsat berish"
 
 #: desktopNotification.dontAllow
+#, fuzzy
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr "Ruxsat berilmasin"
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
-msgstr "%S eslatmalardan foydalanishni xohlaydi."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
+msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
 #. # used in site settings dialog.
@@ -358,8 +336,33 @@ msgctxt "desktopNotification.dontAskAgain"
 msgid "Don't ask again for this site"
 msgstr "Ushbu sayt uchun boshqa so‘ralmasin"
 
+#. # Contacts API
+#: contacts.allow
+#, fuzzy
+msgctxt "contacts.allow"
+msgid "Allow"
+msgstr "Ruxsat berish"
+
+#: contacts.dontAllow
+#, fuzzy
+msgctxt "contacts.dontAllow"
+msgid "Don't allow"
+msgstr "Ruxsat berilmasin"
+
+#: contacts.ask
+msgid "Allow %S to access your contacts?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (contacts.dontAskAgain): This label appears next to a
+#. # checkbox to indicate whether or not the user wants to make a permanent decision.
+#: contacts.dontAskAgain
+#, fuzzy
+msgctxt "contacts.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Ushbu sayt uchun boshqa so‘ralmasin"
+
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
@@ -370,36 +373,30 @@ msgstr "Yangi ichki oyna ochildi;#1 ta yangi ichki oyna ochildi"
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr "Yangi maxfiy ichki oyna ochildi;#1 yangi maxfiy ichki oynalar ochildi"
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "Xato:"
-
-#: typeWarning
-msgid "Warning:"
-msgstr "Diqqat:"
-
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.ask
+#, fuzzy
+msgid "Allow %S to store data on your device for offline use?"
 msgstr ""
 "%S oflayn foydalanish uchun qurilmangizga ma’lumotlarni joylashtirishni "
 "xohlaydi."
+
+#: offlineApps.dontAskAgain
+#, fuzzy
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr "Ushbu sayt uchun boshqa so‘ralmasin"
 
 #: offlineApps.allow
 msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr "Ruxsat berish"
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
+#: offlineApps.dontAllow2
+#, fuzzy
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr "Ruxsat berilmasin"
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr "Hozir emas"
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
 #. # site settings dialog.
@@ -407,155 +404,32 @@ msgstr "Hozir emas"
 msgid "Store Offline Data"
 msgstr "Oflayn ma’lumotlarni joylashtirish"
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr "Ruxsat berilmasin"
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr ""
-"%S oflayn foydalanish uchun qurilmangizga ma’lumotlarni joylashtirishni "
-"xohlaydi."
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "Ruxsat berish"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr "Ruxsat berilmasin"
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 "%S qurilmangizga ko‘plab ma’lumotlarni oflayn foydalanish uchun "
 "joylashtirmoqchi."
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "Ruxsat berish"
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+#, fuzzy
+msgid "Save Password"
+msgstr "Saqlangan parollar"
 
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr "Ruxsat berilmasin"
-
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr "%S qurilmangizdagi ilova dasturlarni boshqarishni xohlaydi."
-
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr "Parolni eslab qolish"
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr "Eslab qolish"
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr "Hech qachon"
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr "Ish stoli xatcho‘plari"
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr "Yopishni tasdiqlash"
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
 msgstr ""
-"FOYDALANILMAYDI;Siz #1 ta ichki oynani yopish arafasidasiz. Davom "
-"ettirilsinmi?"
 
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr "Ichki oynalarni yopish"
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr "Bir necha ichki oynalarni yopayotganimda meni ogohlantir"
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr "Kechirasiz!"
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr "Veb sahifa ko‘rsatilayotganda qandaydir xato yuz berdi."
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr "Mozilla nosozlik ma’lumotini jo‘natish"
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr "Ichki oynani yopish"
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr "Ichki oynani qayta yuklash"
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr "Boshqa sahifa"
-
-#. # Open Search
-#: opensearch.searchWith
-msgid "Search With:"
-msgstr "Izlash:"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr "\"%S\"ni izlash"
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr "%S ilovada ochish"
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr "Boshqa ilova dasturda ochish"
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr "Maxfiy ma’lumotlarni tozalash"
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
-msgstr ""
-"Brauzer tarixi va sozlamalari bilan birga parollar va kukilar o‘chirilsinmi?"
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+#, fuzzy
+msgid "Don't save"
+msgstr "Bo‘lishilmasin"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
 #. # "true" (spelled and capitalized exactly that way) to show the "Character
@@ -573,15 +447,15 @@ msgstr "yolg‘on"
 msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 msgstr "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
 
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr "Ko‘proq"
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
 msgstr "Matn klipboardga nusxa olindi"
+
+#. # Casting
+#: casting.prompt
+msgid "Cast to Device"
+msgstr ""
 
 #. # Context menu
 #: contextmenu.openInNewTab
@@ -591,6 +465,10 @@ msgstr "Linkni yangi ichki oynada ochish"
 #: contextmenu.openInPrivateTab
 msgid "Open Link in Private Tab"
 msgstr "Linkni maxfiy ichki oynada ochish"
+
+#: contextmenu.addToReadingList
+msgid "Add to Reading List"
+msgstr ""
 
 #: contextmenu.share
 msgctxt "contextmenu.share"
@@ -641,13 +519,20 @@ msgstr "Rasm manzilidan nusxa olish"
 msgid "Share Image"
 msgstr "Rasmni bo‘lishish"
 
+#. # LOCALIZATION NOTE (contextmenu.search):
+#. # The label of the contextmenu item which allows you to search with your default search engine for
+#. # the text you have selected. %S is the name of the search engine. For example, "Google".
+#: contextmenu.search
+msgid "%S Search"
+msgstr ""
+
 #: contextmenu.saveImage
 msgid "Save Image"
 msgstr "Rasmni saqlash"
 
-#: contextmenu.setWallpaper
-msgid "Set as Wallpaper"
-msgstr "Orqa fon sifatida o‘rnatish"
+#: contextmenu.setImageAs
+msgid "Set Image As"
+msgstr ""
 
 #: contextmenu.addSearchEngine
 msgid "Add Search Engine"
@@ -658,6 +543,8 @@ msgid "Play"
 msgstr "Ijro etish"
 
 #: contextmenu.pauseMedia
+#, fuzzy
+msgctxt "contextmenu.pauseMedia"
 msgid "Pause"
 msgstr "Pauza"
 
@@ -669,6 +556,14 @@ msgstr "Videoni bo‘lishish"
 msgid "Show Controls"
 msgstr "Boshqaruvlarni koʻrsatish"
 
+#: contextmenu.mute
+msgid "Mute"
+msgstr ""
+
+#: contextmenu.unmute
+msgid "Unmute"
+msgstr ""
+
 #: contextmenu.saveVideo
 msgid "Save Video"
 msgstr "Videoni saqlash"
@@ -677,17 +572,21 @@ msgstr "Videoni saqlash"
 msgid "Save Audio"
 msgstr "Audioni saqlash"
 
+#: contextmenu.addToContacts
+msgid "Add to Contacts"
+msgstr ""
+
+#: contextmenu.castToScreen
+msgid "Cast to Screen"
+msgstr ""
+
 #: contextmenu.copy
 msgid "Copy"
 msgstr "Nusxa olish"
 
-#: contextmenu.copyAll
-msgid "Copy All"
-msgstr "Barchasidan nusxa olish"
-
-#: contextmenu.selectWord
-msgid "Select Word"
-msgstr "So‘zni tanlash"
+#: contextmenu.cut
+msgid "Cut"
+msgstr "Kesish"
 
 #: contextmenu.selectAll
 msgid "Select All"
@@ -730,6 +629,8 @@ msgid "Pick a month"
 msgstr "Oyni tanlash"
 
 #: inputWidgetHelper.cancel
+#, fuzzy
+msgctxt "inputWidgetHelper.cancel"
 msgid "Cancel"
 msgstr "Bekor qilish"
 
@@ -786,19 +687,18 @@ msgid "Could not download manifest"
 msgstr "Manifestni yuklab olib bo‘lmadi"
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+#, fuzzy
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr "%Sda plagin tarkibi bor. Uni ijro etilishini xohlaysizmi?"
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
-msgstr "Ha"
+#: clickToPlayPlugins.activate
+msgid "Activate"
+msgstr ""
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
-msgstr "Yo‘q"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
+msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -809,9 +709,9 @@ msgstr "Ushbu sayt uchun boshqa so‘ralmasin"
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
-msgstr "Plaginlarni ijro etish"
+#: clickToPlayPlugins.activatePlugins
+msgid "Activate Plugins"
+msgstr ""
 
 #. # Site settings dialog
 #. # LOCALIZATION NOTE (siteSettings.labelToValue): This string will be used to
@@ -847,6 +747,35 @@ msgstr ""
 msgid "Disable"
 msgstr "O‘chirib qo‘yish"
 
+#: remoteIncomingPromptAccept
+#, fuzzy
+msgctxt "remoteIncomingPromptAccept"
+msgid "OK"
+msgstr "OK"
+
+#: remoteIncomingPromptCancel
+#, fuzzy
+msgctxt "remoteIncomingPromptCancel"
+msgid "Cancel"
+msgstr "Bekor qilish"
+
+#. # LOCALIZATION NOTE (remoteNotificationTitle): %S is the name of the app.
+#: remoteNotificationTitle
+msgid "%S debugging enabled"
+msgstr ""
+
+#. # LOCALIZATION NOTE (remoteNotificationGenericName): a generic name to use
+#. # if the name of the app is not available.
+#: remoteNotificationGenericName
+msgid "App"
+msgstr "Ilova dastur"
+
+#. # LOCALIZATION NOTE (remoteNotificationMessage): %S is the port on which
+#. # the remote debugger server is listening.
+#: remoteNotificationMessage
+msgid "Listening on port %S"
+msgstr ""
+
 #. # Helper apps
 #: helperapps.open
 msgid "Open"
@@ -870,13 +799,34 @@ msgid "Open With an App"
 msgstr "Ilova dastur bilan ochish"
 
 #: helperapps.always
+#, fuzzy
+msgctxt "helperapps.always"
 msgid "Always"
 msgstr "Doimo"
 
 #: helperapps.never
-msgctxt "helperapps.never"
+#, fuzzy
 msgid "Never"
 msgstr "Hech qachon"
+
+#: helperapps.pick
+msgid "Complete action using"
+msgstr ""
+
+#: helperapps.saveToDisk
+#, fuzzy
+msgid "Download"
+msgstr "Yuklab olishlar"
+
+#: helperapps.alwaysUse
+#, fuzzy
+msgctxt "helperapps.alwaysUse"
+msgid "Always"
+msgstr "Doimo"
+
+#: helperapps.useJustOnce
+msgid "Just once"
+msgstr ""
 
 #. #Lightweight themes
 #. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
@@ -912,14 +862,295 @@ msgctxt "getUserMedia.shareRequest.label"
 msgid "Share"
 msgstr "Bo‘lishish"
 
-#: getUserMedia.sharingCamera.message
-msgid "You are currently sharing your camera with %S."
-msgstr "Siz hozirda kameringizni %S bilan bo‘lishyapsiz."
+#: getUserMedia.videoDevice.default
+msgid "Camera %S"
+msgstr ""
 
-#: getUserMedia.sharingMicrophone.message
-msgid "You are currently sharing your microphone with %S."
-msgstr "Siz hozirda mikrofoningizni %S bilan bo‘lishyapsiz."
+#: getUserMedia.videoDevice.front
+msgid "Front facing"
+msgstr ""
 
-#: getUserMedia.sharingCameraAndMicrophone.message
-msgid "You are currently sharing your camera and microphone with %S."
-msgstr "Siz hozird kamera va mikrofoningizni %S bilan bo‘lishyapsiz."
+#: getUserMedia.videoDevice.back
+msgid "Back facing"
+msgstr ""
+
+#: getUserMedia.videoDevice.none
+msgid "No Video"
+msgstr ""
+
+#: getUserMedia.videoDevice.prompt
+msgid "Camera to use"
+msgstr ""
+
+#: getUserMedia.audioDevice.default
+msgid "Microphone %S"
+msgstr ""
+
+#: getUserMedia.audioDevice.none
+msgid "No Audio"
+msgstr ""
+
+#: getUserMedia.audioDevice.prompt
+msgid "Microphone to use"
+msgstr ""
+
+#: getUserMedia.sharingCamera.message2
+msgid "Camera is on"
+msgstr ""
+
+#: getUserMedia.sharingMicrophone.message2
+msgid "Microphone is on"
+msgstr ""
+
+#: getUserMedia.sharingCameraAndMicrophone.message2
+msgid "Camera and microphone are on"
+msgstr ""
+
+#. #Reader mode
+#: readerMode.enter
+msgid "Enter Reader Mode"
+msgstr ""
+
+#: readerMode.exit
+msgid "Exit Reader Mode"
+msgstr ""
+
+#. #Open in App
+#: openInApp.pageAction
+#, fuzzy
+msgid "Open in App"
+msgstr "%S ilovada ochish"
+
+#: openInApp.ok
+#, fuzzy
+msgctxt "openInApp.ok"
+msgid "OK"
+msgstr "OK"
+
+#: openInApp.cancel
+#, fuzzy
+msgctxt "openInApp.cancel"
+msgid "Cancel"
+msgstr "Bekor qilish"
+
+#. #Tabs in context menus
+#: browser.menu.context.default
+msgid "Link"
+msgstr ""
+
+#: browser.menu.context.img
+msgid "Image"
+msgstr ""
+
+#: browser.menu.context.video
+msgid "Video"
+msgstr ""
+
+#: browser.menu.context.audio
+msgid "Audio"
+msgstr ""
+
+#: browser.menu.context.tel
+msgid "Phone"
+msgstr ""
+
+#: browser.menu.context.mailto
+msgid "Mail"
+msgstr ""
+
+#~ msgid "Add-ons"
+#~ msgstr "Qo‘shimcha dasturlar"
+
+#~ msgid "Installing add-on"
+#~ msgstr "Qo‘shimcha dastur o‘rnatilmoqda"
+
+#~ msgid "Installation complete. Restart required."
+#~ msgstr "O‘rnatish tugadi. O‘chirib-yoqishingiz kerak."
+
+#~ msgid "Add-ons updated. Restart to complete changes."
+#~ msgstr ""
+#~ "Qo‘shimcha dastur yangilandi. O‘zgarishlar tugashi uchun o‘chirib-yoqing."
+
+#~ msgid "%S prevented this site from opening a pop-up window."
+#~ msgstr "%S ushbu saytni o‘zi ochiluvchi oynalardan ochishdan to‘sib qo‘ydi."
+
+#~ msgid "%S prevented this site from opening %S pop-up windows."
+#~ msgstr ""
+#~ "%S ushbu saytni %S o‘zi ochiluvchi oynalardan ochishdan to‘sib qo‘ydi."
+
+#~ msgid "Always Show"
+#~ msgstr "Doimo ko‘rsatilsin"
+
+#~ msgid "Never Show"
+#~ msgstr "Hech qachon ko‘rsatilmasin"
+
+#~ msgid "Send info to %1$S so that we can improve %2$S?"
+#~ msgstr "Ma’lumot %1$Sga  biz %2$Sni yaxshilashimiz uchun jo‘natilsinmi?"
+
+#~ msgid "Learn more"
+#~ msgstr "Koʻproq o‘rganish"
+
+#~ msgctxt "telemetry.optin.yes"
+#~ msgid "Yes"
+#~ msgstr "Ha"
+
+#~ msgctxt "telemetry.optin.no"
+#~ msgid "No"
+#~ msgstr "Yo‘q"
+
+#~ msgid ""
+#~ "%1$S sends information about performance, hardware, usage and "
+#~ "customizations back to %2$S to help improve %3$S."
+#~ msgstr ""
+#~ "%1$S %2$Sga %3$Sni yaxshilash uchun ishlashi, qurilma, foydalanish va "
+#~ "moslashlar haqidagi ma’lumotlarni jo‘natib turadi."
+
+#~ msgid "Always Share"
+#~ msgstr "Doimo bo‘lishish"
+
+#~ msgid "Never Share"
+#~ msgstr "Hech qachon bo‘lishilmasin"
+
+#~ msgid "%S wants your location."
+#~ msgstr "%S manzilingizni xohlaydi."
+
+#~ msgid "%S wants to use notifications."
+#~ msgstr "%S eslatmalardan foydalanishni xohlaydi."
+
+#~ msgid "Error:"
+#~ msgstr "Xato:"
+
+#~ msgid "Warning:"
+#~ msgstr "Diqqat:"
+
+#~ msgctxt "offlineApps.never"
+#~ msgid "Don't Allow"
+#~ msgstr "Ruxsat berilmasin"
+
+#~ msgid "Not Now"
+#~ msgstr "Hozir emas"
+
+#~ msgctxt "offlineApps.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Ruxsat berilmasin"
+
+#~ msgctxt "offlineApps.wantsTo"
+#~ msgid "%S wants to store data on your device for offline use."
+#~ msgstr ""
+#~ "%S oflayn foydalanish uchun qurilmangizga ma’lumotlarni joylashtirishni "
+#~ "xohlaydi."
+
+#~ msgctxt "indexedDBQuota.allow"
+#~ msgid "Allow"
+#~ msgstr "Ruxsat berish"
+
+#~ msgctxt "indexedDBQuota.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Ruxsat berilmasin"
+
+#~ msgctxt "openWebappsManage.allow"
+#~ msgid "Allow"
+#~ msgstr "Ruxsat berish"
+
+#~ msgctxt "openWebappsManage.dontAllow"
+#~ msgid "Don't Allow"
+#~ msgstr "Ruxsat berilmasin"
+
+#~ msgid "%S wants to manage applications on your device."
+#~ msgstr "%S qurilmangizdagi ilova dasturlarni boshqarishni xohlaydi."
+
+#~ msgid "Remember Password"
+#~ msgstr "Parolni eslab qolish"
+
+#~ msgid "Remember"
+#~ msgstr "Eslab qolish"
+
+#~ msgid "Desktop Bookmarks"
+#~ msgstr "Ish stoli xatcho‘plari"
+
+#~ msgid "Confirm close"
+#~ msgstr "Yopishni tasdiqlash"
+
+#~ msgid "NOT USED;You are about to close #1 tabs. Continue?"
+#~ msgstr ""
+#~ "FOYDALANILMAYDI;Siz #1 ta ichki oynani yopish arafasidasiz. Davom "
+#~ "ettirilsinmi?"
+
+#~ msgid "Close tabs"
+#~ msgstr "Ichki oynalarni yopish"
+
+#~ msgid "Warn me when I attempt to close multiple tabs"
+#~ msgstr "Bir necha ichki oynalarni yopayotganimda meni ogohlantir"
+
+#~ msgid "Sorry!"
+#~ msgstr "Kechirasiz!"
+
+#~ msgid "Something went wrong while displaying a web page."
+#~ msgstr "Veb sahifa ko‘rsatilayotganda qandaydir xato yuz berdi."
+
+#~ msgid "Send Mozilla a crash report"
+#~ msgstr "Mozilla nosozlik ma’lumotini jo‘natish"
+
+#~ msgid "Close tab"
+#~ msgstr "Ichki oynani yopish"
+
+#~ msgid "Reload tab"
+#~ msgstr "Ichki oynani qayta yuklash"
+
+#~ msgid "Custom Page"
+#~ msgstr "Boshqa sahifa"
+
+#~ msgid "Search With:"
+#~ msgstr "Izlash:"
+
+#~ msgid "Search for \"%S\""
+#~ msgstr "\"%S\"ni izlash"
+
+#~ msgid "Open in Another App"
+#~ msgstr "Boshqa ilova dasturda ochish"
+
+#~ msgid "Clear Private Data"
+#~ msgstr "Maxfiy ma’lumotlarni tozalash"
+
+#~ msgid ""
+#~ "Delete your browsing history and settings, including passwords and "
+#~ "cookies?"
+#~ msgstr ""
+#~ "Brauzer tarixi va sozlamalari bilan birga parollar va kukilar "
+#~ "o‘chirilsinmi?"
+
+#~ msgid "More"
+#~ msgstr "Ko‘proq"
+
+#~ msgid "Set as Wallpaper"
+#~ msgstr "Orqa fon sifatida o‘rnatish"
+
+#~ msgid "Copy All"
+#~ msgstr "Barchasidan nusxa olish"
+
+#~ msgid "Select Word"
+#~ msgstr "So‘zni tanlash"
+
+#~ msgctxt "clickToPlayPlugins.yes"
+#~ msgid "Yes"
+#~ msgstr "Ha"
+
+#~ msgctxt "clickToPlayPlugins.no"
+#~ msgid "No"
+#~ msgstr "Yo‘q"
+
+#~ msgid "Play Plugins"
+#~ msgstr "Plaginlarni ijro etish"
+
+#~ msgctxt "helperapps.never"
+#~ msgid "Never"
+#~ msgstr "Hech qachon"
+
+#~ msgid "You are currently sharing your camera with %S."
+#~ msgstr "Siz hozirda kameringizni %S bilan bo‘lishyapsiz."
+
+#~ msgid "You are currently sharing your microphone with %S."
+#~ msgstr "Siz hozirda mikrofoningizni %S bilan bo‘lishyapsiz."
+
+#~ msgid "You are currently sharing your camera and microphone with %S."
+#~ msgstr "Siz hozird kamera va mikrofoningizni %S bilan bo‘lishyapsiz."
