@@ -282,27 +282,32 @@ do
 		-t ${L10N_ENUS} -i ${PO_DIR}/${polang} -o ${L10N_DIR}/${mozlang}
 
 	if [ $opt_copyfiles ]; then
-		# FIXME: work out how to break these apart so that mobile can build
 		verbose "Copy files not handled by moz2po/po2moz"
-		copyfileifmissing toolkit/chrome/mozapps/help/welcome.xhtml ${mozlang}
-		copyfileifmissing toolkit/chrome/mozapps/help/help-toc.rdf ${mozlang}
-		copyfile browser/firefox-l10n.js ${mozlang}
-		copyfile browser/profile/chrome/userChrome-example.css ${mozlang}
-		copyfile browser/profile/chrome/userContent-example.css ${mozlang}
-		copyfileifmissing toolkit/chrome/global/intl.css ${mozlang}
-		# This one needs special approval but we need it to pass and compile
-		copyfileifmissing browser/searchplugins/list.txt ${mozlang}
-		# Revert some files that need careful human review or authorisation
-		if [ -d ${L10N_DIR}/${mozlang}/.hg ]; then
-			(cd ${L10N_DIR}/${mozlang}
-			hg revert $hgverbosity --no-backup \
-				browser/chrome/browser-region/region.properties \
-				browser/metro/chrome/region.properties \
-				browser/searchplugins/list.txt \
-				mobile/chrome/region.properties \
-				mail/chrome/messenger-region/region.properties
-			)
+		if [ $MOZ_PRODUCT == "browser" ]; then
+			copyfileifmissing toolkit/chrome/mozapps/help/welcome.xhtml ${mozlang}
+			copyfileifmissing toolkit/chrome/mozapps/help/help-toc.rdf ${mozlang}
+			copyfile browser/firefox-l10n.js ${mozlang}
+			copyfile browser/profile/chrome/userChrome-example.css ${mozlang}
+			copyfile browser/profile/chrome/userContent-example.css ${mozlang}
+			copyfileifmissing toolkit/chrome/global/intl.css ${mozlang}
+			# This one needs special approval but we need it to pass and compile
+			copyfileifmissing browser/searchplugins/list.txt ${mozlang}
 		fi
+		if [ $MOZ_PRODUCT == "mobile" ]; then
+			copyfileifmissing mobile/android/chrome/notification.dtd ${mozlang}
+		fi
+	fi
+
+	# Revert some files that need careful human review or authorisation
+	if [ -d ${L10N_DIR}/${mozlang}/.hg ]; then
+		(cd ${L10N_DIR}/${mozlang}
+		hg revert $hgverbosity --no-backup \
+			browser/chrome/browser-region/region.properties \
+			browser/metro/chrome/region.properties \
+			browser/searchplugins/list.txt \
+			mobile/chrome/region.properties \
+			mail/chrome/messenger-region/region.properties
+		)
 	fi
 
 	## CREATE XPI LANGPACK
