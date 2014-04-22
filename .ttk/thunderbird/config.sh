@@ -19,3 +19,4 @@ OTHER_EXCLUDED_DIRS="browser dom netwerk security services/sync toolkit webapprt
 MOZ_PRODUCT=mail
 
 MOZ_REPO=comm-aurora
+L10N_VER=l10n
