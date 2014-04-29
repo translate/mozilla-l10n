@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-18 20:01+0100\n"
+"POT-Creation-Date: 2014-04-29 16:18+0100\n"
 "PO-Revision-Date: 2014-02-14 09:31+0000\n"
 "Last-Translator: pittaya <pittaya@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,9 +193,11 @@ msgstr "หยุด"
 msgid "Site Security"
 msgstr "ความปลอดภัยของเว็บไซต์"
 
-#: save
-msgid "Save"
-msgstr "บันทึก"
+#: edit_mode_cancel
+#, fuzzy
+msgctxt "edit_mode_cancel"
+msgid "Cancel"
+msgstr "ยกเลิก"
 
 #: close_tab
 msgid "Close Tab"
@@ -262,6 +264,10 @@ msgstr "&vendorShortName;"
 msgid "Data choices"
 msgstr "ตัวเลือกข้อมูล"
 
+#: pref_learn_more
+msgid "Learn more"
+msgstr "เรียนรู้เพิ่ม"
+
 #: pref_category_installed_search_engines
 msgid "Installed search engines"
 msgstr "เครื่องมือค้นหาที่ติดตั้งไว้"
@@ -303,10 +309,6 @@ msgstr "เครื่องมือนักพัฒนา"
 #: pref_developer_remotedebugging
 msgid "Remote debugging"
 msgstr "การดีบักผ่านเครือข่าย"
-
-#: pref_developer_remotedebugging_docs
-msgid "Learn more"
-msgstr "เรียนรู้เพิ่ม"
 
 #: pref_remember_signons
 msgid "Remember passwords"
@@ -550,10 +552,9 @@ msgstr "แสดงคำค้นหาแนะนำ"
 msgid "Import from Android"
 msgstr "นำเข้าจากแอนดรอยด์"
 
-#: pref_private_data_history
-#, fuzzy
-msgid "Browsing & download history"
-msgstr "ประวัติการท่องเว็บและการดาวน์โหลด"
+#: pref_private_data_history2
+msgid "Browsing history"
+msgstr ""
 
 #: pref_private_data_formdata
 #, fuzzy
@@ -581,9 +582,11 @@ msgstr "ข้อมูลเว็บไซต์ออฟไลน์"
 msgid "Site settings"
 msgstr "การตั้งค่ารายเว็บ"
 
-#: pref_private_data_downloadFiles
-msgid "Downloaded files"
-msgstr "แฟ้มที่ดาวน์โหลดแล้ว"
+#: pref_private_data_downloadFiles2
+#, fuzzy
+msgctxt "pref_private_data_downloadFiles2"
+msgid "Downloads"
+msgstr "ดาวน์โหลด"
 
 #: pref_about_firefox
 msgid "About &brandShortName;"
@@ -621,6 +624,18 @@ msgstr "แสดง"
 #: pref_panels_hide
 msgid "Hide"
 msgstr "ซ่อน"
+
+#: pref_panels_reorder
+msgid "Change order"
+msgstr ""
+
+#: pref_panels_move_up
+msgid "Move up"
+msgstr ""
+
+#: pref_panels_move_down
+msgid "Move down"
+msgstr ""
 
 #: datareporting_notification_title
 #, fuzzy
@@ -701,17 +716,16 @@ msgstr ""
 msgid "Crash Reporter"
 msgstr "ตัวรายงานข้อขัดข้อง"
 
-#: datareporting_wifi_title
-msgid "&vendorShortName; location services"
+#: datareporting_wifi_title2
+#, fuzzy
+msgid "&vendorShortName; Location Service"
 msgstr "&vendorShortName; บริการแจ้งตำแหน่ง"
 
-#: datareporting_wifi_summary
+#: datareporting_wifi_geolocation_summary
 msgid ""
-"Help improve geolocation services for the Open Web by letting "
-"&brandShortName; collect and send anonymous cellular tower data"
+"Receives Wi-Fi and cellular location data when running in the background and "
+"shares it with &vendorShortName; to improve our geolocation service"
 msgstr ""
-"ช่วยปรับปรุงบริการแจ้งตำแหน่งให้กับ Open Web โดยยินยอมให้ &brandShortName; "
-"เก็บและส่งข้อมูลโครงข่ายสัญญาณมือถือแบบไม่ระบุตัวตน"
 
 #. Localization note (pref_update_autodownload2) : This should mention downloading
 #. specifically, since the pref only prevents automatic downloads and not the
@@ -743,6 +757,8 @@ msgid "Add-ons"
 msgstr "ส่วนเสริม"
 
 #: downloads
+#, fuzzy
+msgctxt "downloads"
 msgid "Downloads"
 msgstr "ดาวน์โหลด"
 
@@ -986,10 +1002,6 @@ msgstr "ล้าง"
 msgid "There are no settings to clear."
 msgstr "ไม่มีการตั้งค่าให้ล้าง"
 
-#: reading_list_add
-msgid "Add to Reading List"
-msgstr "เพิ่งเข้ารายการอ่าน"
-
 #: reading_list_added
 msgid "Page added to your Reading List"
 msgstr "เพิ่มหน้าเว็บเข้ารายการอ่านของคุณแล้ว"
@@ -1127,6 +1139,12 @@ msgstr ""
 #. is no data to show in an about:home panel that was created by an add-on.
 #: home_default_empty
 msgid "No content could be found for this panel."
+msgstr ""
+
+#. Localization note (home_move_up_to_filter): The variable is replaced by the name of the
+#. previous location in the navigation, such as the previous folder
+#: home_move_up_to_filter
+msgid "Up to &formatS;"
 msgstr ""
 
 #: pin_site_dialog_hint
@@ -1339,6 +1357,14 @@ msgstr "&brandShortName; จะเริ่มทำงานใหม่"
 msgid "The browsing data from this session will be deleted."
 msgstr "ข้อมูลการท่องเว็บจากวาระนี้จะถูกลบ"
 
+#. Miscellaneous
+#. This text is appended to a piece of text that does not fit in the
+#. designated space. Use the unicode ellipsis char, \u2026, or use "..." if \u2026 doesn't suit
+#. traditions in your locale.
+#: ellipsis
+msgid "…"
+msgstr ""
+
 #. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
@@ -1349,6 +1375,26 @@ msgstr "เมนู"
 #: actionbar_done
 msgid "Done"
 msgstr "เสร็จ"
+
+#~ msgid "Save"
+#~ msgstr "บันทึก"
+
+#, fuzzy
+#~ msgid "Browsing & download history"
+#~ msgstr "ประวัติการท่องเว็บและการดาวน์โหลด"
+
+#~ msgid "Downloaded files"
+#~ msgstr "แฟ้มที่ดาวน์โหลดแล้ว"
+
+#~ msgid ""
+#~ "Help improve geolocation services for the Open Web by letting "
+#~ "&brandShortName; collect and send anonymous cellular tower data"
+#~ msgstr ""
+#~ "ช่วยปรับปรุงบริการแจ้งตำแหน่งให้กับ Open Web โดยยินยอมให้ &brandShortName; "
+#~ "เก็บและส่งข้อมูลโครงข่ายสัญญาณมือถือแบบไม่ระบุตัวตน"
+
+#~ msgid "Add to Reading List"
+#~ msgstr "เพิ่งเข้ารายการอ่าน"
 
 #~ msgid ""
 #~ "TIP: Add any website to your list of search providers by long-pressing on "

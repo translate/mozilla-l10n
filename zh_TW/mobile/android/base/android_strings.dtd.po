@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-18 20:01+0100\n"
+"POT-Creation-Date: 2014-04-29 16:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,9 +193,11 @@ msgstr "停止"
 msgid "Site Security"
 msgstr "網站安全"
 
-#: save
-msgid "Save"
-msgstr "儲存"
+#: edit_mode_cancel
+#, fuzzy
+msgctxt "edit_mode_cancel"
+msgid "Cancel"
+msgstr "取消"
 
 #: close_tab
 msgid "Close Tab"
@@ -263,6 +265,10 @@ msgstr "&vendorShortName;"
 msgid "Data choices"
 msgstr "資料選擇"
 
+#: pref_learn_more
+msgid "Learn more"
+msgstr "詳細資訊"
+
 #: pref_category_installed_search_engines
 msgid "Installed search engines"
 msgstr "已安裝的搜尋引擎"
@@ -305,10 +311,6 @@ msgstr "開發者工具"
 #: pref_developer_remotedebugging
 msgid "Remote debugging"
 msgstr "遠端除錯"
-
-#: pref_developer_remotedebugging_docs
-msgid "Learn more"
-msgstr "詳細資訊"
 
 #: pref_remember_signons
 msgid "Remember passwords"
@@ -551,10 +553,9 @@ msgstr "顯示搜尋建議"
 msgid "Import from Android"
 msgstr "自 Android 匯入"
 
-#: pref_private_data_history
-#, fuzzy
-msgid "Browsing & download history"
-msgstr "瀏覽與下載紀錄"
+#: pref_private_data_history2
+msgid "Browsing history"
+msgstr ""
 
 #: pref_private_data_formdata
 #, fuzzy
@@ -582,9 +583,11 @@ msgstr "網站離線資料"
 msgid "Site settings"
 msgstr "網站設定"
 
-#: pref_private_data_downloadFiles
-msgid "Downloaded files"
-msgstr "已下載的檔案"
+#: pref_private_data_downloadFiles2
+#, fuzzy
+msgctxt "pref_private_data_downloadFiles2"
+msgid "Downloads"
+msgstr "下載項目"
 
 #: pref_about_firefox
 msgid "About &brandShortName;"
@@ -622,6 +625,18 @@ msgstr "顯示"
 
 #: pref_panels_hide
 msgid "Hide"
+msgstr ""
+
+#: pref_panels_reorder
+msgid "Change order"
+msgstr ""
+
+#: pref_panels_move_up
+msgid "Move up"
+msgstr ""
+
+#: pref_panels_move_down
+msgid "Move down"
 msgstr ""
 
 #: datareporting_notification_title
@@ -700,17 +715,16 @@ msgstr ""
 msgid "Crash Reporter"
 msgstr "程式錯誤回報員"
 
-#: datareporting_wifi_title
-msgid "&vendorShortName; location services"
+#: datareporting_wifi_title2
+#, fuzzy
+msgid "&vendorShortName; Location Service"
 msgstr "&vendorShortName; 地理位置服務"
 
-#: datareporting_wifi_summary
+#: datareporting_wifi_geolocation_summary
 msgid ""
-"Help improve geolocation services for the Open Web by letting "
-"&brandShortName; collect and send anonymous cellular tower data"
+"Receives Wi-Fi and cellular location data when running in the background and "
+"shares it with &vendorShortName; to improve our geolocation service"
 msgstr ""
-"請讓 &brandShortName; 取得並匿名地傳送數據網路的基地台資料，幫助我們改善開放"
-"網路的地理位置"
 
 #. Localization note (pref_update_autodownload2) : This should mention downloading
 #. specifically, since the pref only prevents automatic downloads and not the
@@ -742,6 +756,8 @@ msgid "Add-ons"
 msgstr "附加元件"
 
 #: downloads
+#, fuzzy
+msgctxt "downloads"
 msgid "Downloads"
 msgstr "下載項目"
 
@@ -987,10 +1003,6 @@ msgstr "清除"
 msgid "There are no settings to clear."
 msgstr "沒有可清除的設定。"
 
-#: reading_list_add
-msgid "Add to Reading List"
-msgstr "新增至閱讀清單"
-
 #: reading_list_added
 msgid "Page added to your Reading List"
 msgstr "已將頁面加入至閱讀清單"
@@ -1127,6 +1139,12 @@ msgstr ""
 #. is no data to show in an about:home panel that was created by an add-on.
 #: home_default_empty
 msgid "No content could be found for this panel."
+msgstr ""
+
+#. Localization note (home_move_up_to_filter): The variable is replaced by the name of the
+#. previous location in the navigation, such as the previous folder
+#: home_move_up_to_filter
+msgid "Up to &formatS;"
 msgstr ""
 
 #: pin_site_dialog_hint
@@ -1333,6 +1351,14 @@ msgstr "&brandShortName; 現在將會重新啟動"
 msgid "The browsing data from this session will be deleted."
 msgstr "此瀏覽階段中的瀏覽資料將會被清除。"
 
+#. Miscellaneous
+#. This text is appended to a piece of text that does not fit in the
+#. designated space. Use the unicode ellipsis char, \u2026, or use "..." if \u2026 doesn't suit
+#. traditions in your locale.
+#: ellipsis
+msgid "…"
+msgstr ""
+
 #. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
@@ -1344,6 +1370,26 @@ msgstr "選單"
 #: actionbar_done
 msgid "Done"
 msgstr "完成"
+
+#~ msgid "Save"
+#~ msgstr "儲存"
+
+#, fuzzy
+#~ msgid "Browsing & download history"
+#~ msgstr "瀏覽與下載紀錄"
+
+#~ msgid "Downloaded files"
+#~ msgstr "已下載的檔案"
+
+#~ msgid ""
+#~ "Help improve geolocation services for the Open Web by letting "
+#~ "&brandShortName; collect and send anonymous cellular tower data"
+#~ msgstr ""
+#~ "請讓 &brandShortName; 取得並匿名地傳送數據網路的基地台資料，幫助我們改善開"
+#~ "放網路的地理位置"
+
+#~ msgid "Add to Reading List"
+#~ msgstr "新增至閱讀清單"
 
 #~ msgid ""
 #~ "TIP: Add any website to your list of search providers by long-pressing on "
