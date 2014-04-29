@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-03 20:37+0100\n"
+"POT-Creation-Date: 2014-04-29 20:25+0100\n"
 "PO-Revision-Date: 2014-04-26 15:06+0000\n"
 "Last-Translator: Raul <raul.malea@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1398524800.000000\n"
@@ -286,19 +286,6 @@ msgstr ""
 "Datele calendarului din profilul dumneavoastră au fost actualizate de o "
 "versiune mai nouă de %1$S și continuând riscați să pierdeți informațiile sau "
 "să le corupeți. %1$S va fi acum dezactivat și %2$S va fi repornit."
-
-#. # LOCALIZATION NOTE (tooNewSchemaErrorBoxTextSunbird):
-#. #    %1$S will be replaced with the name of the calendar application e.g. 'Sunbird'
-#. #    %2$S will be replaced with the name of the host application 'calendar'
-#: tooNewSchemaErrorBoxTextSunbird
-msgid ""
-"The calendar data in your profile was updated by a newer version of %1$S, "
-"and continuing will probably cause the information to be lost or corrupted. "
-"%1$S will now quit."
-msgstr ""
-"Datele calendarului din profilul dumneavoastră au fost actualizate de o "
-"versiune mai nouă de %1$S și continuând riscați să pierdeți sau să corupeți "
-"informațiile existente. %1$S va fi închis acum."
 
 #. # LOCALIZATION NOTE (tooNewSchemaButtonRestart):
 #. #    %1$S will be replaced with the name of the host application 'Calendar'
@@ -885,58 +872,6 @@ msgctxt "last2"
 msgid "last"
 msgstr "ultima"
 
-#. # Master Password
-#: changeMasterPassword
-msgid "Change Master Password…"
-msgstr "Schimbă parola generală…"
-
-#: pw_change2empty_in_fips_mode
-msgid ""
-"You are currently in FIPS mode. FIPS requires a non-empty Master Password."
-msgstr ""
-"Vă aflați în modul FIPS. Modul FIPS cere ca parola generală să nu fie vidă."
-
-#: pw_change_failed_title
-msgid "Password Change Failed"
-msgstr "Schimbarea parolei a eșuat"
-
-#. # Check for Updates     (SUNBIRD_ONLY)
-#: updatesItem_default
-msgctxt "updatesItem_default"
-msgid "Check for Updates…"
-msgstr "Caută actualizări…"
-
-#: updatesItem_defaultFallback
-msgctxt "updatesItem_defaultFallback"
-msgid "Check for Updates…"
-msgstr "Caută actualizări…"
-
-#: updatesItem_downloading
-msgid "Downloading %S…"
-msgstr "Se descarcă %S…"
-
-#: updatesItem_downloadingFallback
-msgid "Downloading Update…"
-msgstr "Se descarcă actualizarea…"
-
-#: updatesItem_resume
-msgid "Resume Downloading %S…"
-msgstr "Se reia descărcarea %S…"
-
-#: updatesItem_resumeFallback
-msgid "Resume Downloading Update…"
-msgstr "Se reia descărcarea actualizării..."
-
-#: updatesItem_pending
-msgctxt "updatesItem_pending"
-msgid "Apply Downloaded Update Now…"
-msgstr "Aplică actualizarea descărcată acum..."
-
-#: updatesItem_pendingFallback
-msgctxt "updatesItem_pendingFallback"
-msgid "Apply Downloaded Update Now…"
-msgstr "Aplică actualizarea descărcată acum..."
-
 #. # Alarm Dialog
 #. # LOCALIZATION NOTE (alarmWindowTitle.label): Semi-colon list of plural
 #. # forms. See: http://developer.mozilla.org/en/Localization_and_Plurals
@@ -983,15 +918,6 @@ msgstr "Descriere implicită Mozilla"
 #: alarmDefaultSummary
 msgid "Default Mozilla Summary"
 msgstr "Sumar implicit Mozilla"
-
-#. # offline support strings (SUNBIRD ONLY)
-#: offlineTooltip
-msgid "You are currently offline."
-msgstr "Sunteți offline."
-
-#: onlineTooltip
-msgid "You are currently online."
-msgstr "Sunteți online."
 
 #: taskDetailsStatusNeedsAction
 msgctxt "taskDetailsStatusNeedsAction"
@@ -1130,10 +1056,14 @@ msgstr "Săpt: %1$S-%2$S"
 #. # LOCALIZATION NOTE (dueInDays, dueInHours): Semi-colon list of plural
 #. # forms. See: http://developer.mozilla.org/en/Localization_and_Plurals
 #: dueInDays
+#, fuzzy
+msgctxt "dueInDays"
 msgid "#1 day;#1 days"
 msgstr "#1 zi;#1 zile"
 
 #: dueInHours
+#, fuzzy
+msgctxt "dueInHours"
 msgid "#1 hour;#1 hours"
 msgstr "#1 oră;#1 ore"
 
@@ -1347,3 +1277,76 @@ msgstr "Utilizând %1$S"
 #: extractUsingRegion
 msgid "Using %1$S (%2$S)"
 msgstr "Utilizează %1$S (%2$S)"
+
+#. # LOCALIZATION NOTE (unit)
+#. # Used to determine the correct plural form of a unit
+#: unitMinutes
+msgid "#1 minute;#1 minutes"
+msgstr "#1 minut;#1 minute"
+
+#: unitHours
+#, fuzzy
+msgctxt "unitHours"
+msgid "#1 hour;#1 hours"
+msgstr "#1 oră;#1 ore"
+
+#: unitDays
+#, fuzzy
+msgctxt "unitDays"
+msgid "#1 day;#1 days"
+msgstr "#1 zi;#1 zile"
+
+#~ msgid ""
+#~ "The calendar data in your profile was updated by a newer version of %1$S, "
+#~ "and continuing will probably cause the information to be lost or "
+#~ "corrupted. %1$S will now quit."
+#~ msgstr ""
+#~ "Datele calendarului din profilul dumneavoastră au fost actualizate de o "
+#~ "versiune mai nouă de %1$S și continuând riscați să pierdeți sau să "
+#~ "corupeți informațiile existente. %1$S va fi închis acum."
+
+#~ msgid "Change Master Password…"
+#~ msgstr "Schimbă parola generală…"
+
+#~ msgid ""
+#~ "You are currently in FIPS mode. FIPS requires a non-empty Master Password."
+#~ msgstr ""
+#~ "Vă aflați în modul FIPS. Modul FIPS cere ca parola generală să nu fie "
+#~ "vidă."
+
+#~ msgid "Password Change Failed"
+#~ msgstr "Schimbarea parolei a eșuat"
+
+#~ msgctxt "updatesItem_default"
+#~ msgid "Check for Updates…"
+#~ msgstr "Caută actualizări…"
+
+#~ msgctxt "updatesItem_defaultFallback"
+#~ msgid "Check for Updates…"
+#~ msgstr "Caută actualizări…"
+
+#~ msgid "Downloading %S…"
+#~ msgstr "Se descarcă %S…"
+
+#~ msgid "Downloading Update…"
+#~ msgstr "Se descarcă actualizarea…"
+
+#~ msgid "Resume Downloading %S…"
+#~ msgstr "Se reia descărcarea %S…"
+
+#~ msgid "Resume Downloading Update…"
+#~ msgstr "Se reia descărcarea actualizării..."
+
+#~ msgctxt "updatesItem_pending"
+#~ msgid "Apply Downloaded Update Now…"
+#~ msgstr "Aplică actualizarea descărcată acum..."
+
+#~ msgctxt "updatesItem_pendingFallback"
+#~ msgid "Apply Downloaded Update Now…"
+#~ msgstr "Aplică actualizarea descărcată acum..."
+
+#~ msgid "You are currently offline."
+#~ msgstr "Sunteți offline."
+
+#~ msgid "You are currently online."
+#~ msgstr "Sunteți online."

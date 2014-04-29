@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-03 20:37+0100\n"
+"POT-Creation-Date: 2014-04-29 20:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -271,18 +271,6 @@ msgid ""
 msgstr ""
 "您個人設定檔中的行事曆資料已被較新版本的 %1$S 所更新，繼續的話可能會導致資訊"
 "流失或損壞。現在將禁止使用 %1$S 並重新啟動 %2$S。"
-
-#. # LOCALIZATION NOTE (tooNewSchemaErrorBoxTextSunbird):
-#. #    %1$S will be replaced with the name of the calendar application e.g. 'Sunbird'
-#. #    %2$S will be replaced with the name of the host application 'calendar'
-#: tooNewSchemaErrorBoxTextSunbird
-msgid ""
-"The calendar data in your profile was updated by a newer version of %1$S, "
-"and continuing will probably cause the information to be lost or corrupted. "
-"%1$S will now quit."
-msgstr ""
-"您個人設定檔中的行事曆資料已被較新版本的 %1$S 所更新，繼續的話可能會導致資訊"
-"流失或損壞。現在將離開 %1$S。"
 
 #. # LOCALIZATION NOTE (tooNewSchemaButtonRestart):
 #. #    %1$S will be replaced with the name of the host application 'Calendar'
@@ -837,57 +825,6 @@ msgctxt "last2"
 msgid "last"
 msgstr "上一個"
 
-#. # Master Password
-#: changeMasterPassword
-msgid "Change Master Password…"
-msgstr "變更主控密碼…"
-
-#: pw_change2empty_in_fips_mode
-msgid ""
-"You are currently in FIPS mode. FIPS requires a non-empty Master Password."
-msgstr "目前是在 FIPS 模式。FIPS 需要設定一個不為空值的主控密碼。"
-
-#: pw_change_failed_title
-msgid "Password Change Failed"
-msgstr "變更密碼失敗"
-
-#. # Check for Updates     (SUNBIRD_ONLY)
-#: updatesItem_default
-msgctxt "updatesItem_default"
-msgid "Check for Updates…"
-msgstr "檢查更新…"
-
-#: updatesItem_defaultFallback
-msgctxt "updatesItem_defaultFallback"
-msgid "Check for Updates…"
-msgstr "檢查更新…"
-
-#: updatesItem_downloading
-msgid "Downloading %S…"
-msgstr "正在下載 %S…"
-
-#: updatesItem_downloadingFallback
-msgid "Downloading Update…"
-msgstr "正在下載更新檔…"
-
-#: updatesItem_resume
-msgid "Resume Downloading %S…"
-msgstr "繼續下載 %S…"
-
-#: updatesItem_resumeFallback
-msgid "Resume Downloading Update…"
-msgstr "正在繼續下載更新檔…"
-
-#: updatesItem_pending
-msgctxt "updatesItem_pending"
-msgid "Apply Downloaded Update Now…"
-msgstr "立即套用已下載的更新檔…"
-
-#: updatesItem_pendingFallback
-msgctxt "updatesItem_pendingFallback"
-msgid "Apply Downloaded Update Now…"
-msgstr "立即套用已下載的更新檔…"
-
 #. # Alarm Dialog
 #. # LOCALIZATION NOTE (alarmWindowTitle.label): Semi-colon list of plural
 #. # forms. See: http://developer.mozilla.org/en/Localization_and_Plurals
@@ -934,15 +871,6 @@ msgstr "預設 Mozilla 說明"
 #: alarmDefaultSummary
 msgid "Default Mozilla Summary"
 msgstr "預設 Mozilla 摘要"
-
-#. # offline support strings (SUNBIRD ONLY)
-#: offlineTooltip
-msgid "You are currently offline."
-msgstr "您目前處於離線狀態。"
-
-#: onlineTooltip
-msgid "You are currently online."
-msgstr "您目前在線上。"
 
 #: taskDetailsStatusNeedsAction
 msgctxt "taskDetailsStatusNeedsAction"
@@ -1081,10 +1009,14 @@ msgstr "週數範圍: %1$S-%2$S"
 #. # LOCALIZATION NOTE (dueInDays, dueInHours): Semi-colon list of plural
 #. # forms. See: http://developer.mozilla.org/en/Localization_and_Plurals
 #: dueInDays
+#, fuzzy
+msgctxt "dueInDays"
 msgid "#1 day;#1 days"
 msgstr "#1 日"
 
 #: dueInHours
+#, fuzzy
+msgctxt "dueInHours"
 msgid "#1 hour;#1 hours"
 msgstr "#1 小時"
 
@@ -1298,3 +1230,73 @@ msgstr "使用 %1$S"
 #: extractUsingRegion
 msgid "Using %1$S (%2$S)"
 msgstr "使用 %1$S (%2$S)"
+
+#. # LOCALIZATION NOTE (unit)
+#. # Used to determine the correct plural form of a unit
+#: unitMinutes
+msgid "#1 minute;#1 minutes"
+msgstr "#1 分鐘"
+
+#: unitHours
+#, fuzzy
+msgctxt "unitHours"
+msgid "#1 hour;#1 hours"
+msgstr "#1 小時"
+
+#: unitDays
+#, fuzzy
+msgctxt "unitDays"
+msgid "#1 day;#1 days"
+msgstr "#1 日"
+
+#~ msgid ""
+#~ "The calendar data in your profile was updated by a newer version of %1$S, "
+#~ "and continuing will probably cause the information to be lost or "
+#~ "corrupted. %1$S will now quit."
+#~ msgstr ""
+#~ "您個人設定檔中的行事曆資料已被較新版本的 %1$S 所更新，繼續的話可能會導致資"
+#~ "訊流失或損壞。現在將離開 %1$S。"
+
+#~ msgid "Change Master Password…"
+#~ msgstr "變更主控密碼…"
+
+#~ msgid ""
+#~ "You are currently in FIPS mode. FIPS requires a non-empty Master Password."
+#~ msgstr "目前是在 FIPS 模式。FIPS 需要設定一個不為空值的主控密碼。"
+
+#~ msgid "Password Change Failed"
+#~ msgstr "變更密碼失敗"
+
+#~ msgctxt "updatesItem_default"
+#~ msgid "Check for Updates…"
+#~ msgstr "檢查更新…"
+
+#~ msgctxt "updatesItem_defaultFallback"
+#~ msgid "Check for Updates…"
+#~ msgstr "檢查更新…"
+
+#~ msgid "Downloading %S…"
+#~ msgstr "正在下載 %S…"
+
+#~ msgid "Downloading Update…"
+#~ msgstr "正在下載更新檔…"
+
+#~ msgid "Resume Downloading %S…"
+#~ msgstr "繼續下載 %S…"
+
+#~ msgid "Resume Downloading Update…"
+#~ msgstr "正在繼續下載更新檔…"
+
+#~ msgctxt "updatesItem_pending"
+#~ msgid "Apply Downloaded Update Now…"
+#~ msgstr "立即套用已下載的更新檔…"
+
+#~ msgctxt "updatesItem_pendingFallback"
+#~ msgid "Apply Downloaded Update Now…"
+#~ msgstr "立即套用已下載的更新檔…"
+
+#~ msgid "You are currently offline."
+#~ msgstr "您目前處於離線狀態。"
+
+#~ msgid "You are currently online."
+#~ msgstr "您目前在線上。"
