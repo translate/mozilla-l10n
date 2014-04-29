@@ -1,27 +1,31 @@
-#. # This Source Code Form is subject to the terms of the Mozilla Public# License, v. 2.0. If a copy of the MPL was not distributed with this# file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from /Users/dwayne/dev/mozilla/firefox/templates-en-US/mail/chrome/messenger/messenger.properties, /Users/dwayne/dev/mozilla/firefox/build/l10n/ro/mail/chrome/messenger/messenger.properties
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./mail/chrome/messenger/messenger.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-01 16:23+0200\n"
+"POT-Creation-Date: 2014-04-29 17:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.11.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # The following are used by the messenger application#
+#. # The following are used by the messenger application
+#. #
 #. #LOCALIZATION NOTE(statusMessage): Do not translate the words
 #. # $1S and $2S below. Place the word $1S where account name should appear and $2S
 #. # where the status message should appear.
 #: statusMessage
+#, fuzzy
 msgid "%1$S: %2$S"
-msgstr ""
+msgstr "%1$S %2$S"
 
 #: removeAccount
 msgid "Delete Account…"
@@ -96,6 +100,12 @@ msgstr "Deschide mesajul"
 #: defaultSaveMessageAsFileName
 msgid "message.eml"
 msgstr "mesaj.eml"
+
+#. # LOCALIZATION NOTE(longMsgSubjectTruncator): A suffix string appended to the filename
+#. # (created from message subject) if it needed to be truncated due to length.
+#: longMsgSubjectTruncator
+msgid "..."
+msgstr ""
 
 #: SaveMailAs
 msgid "Save Message As"
@@ -200,6 +210,13 @@ msgid "A folder with that name already exists. Please enter a different name."
 msgstr ""
 "Există deja un dosar cu acest nume. Vă rugăm să introduceți un nume diferit."
 
+#. # LOCALIZATION NOTE(confirmDuplicateFolderRename): %1$S is name of folder being moved, %2$S is parent folder name, %3$S is proposed new folder name
+#: confirmDuplicateFolderRename
+msgid ""
+"A subfolder with the name '%1$S' already exists in the folder '%2$S'. Would "
+"you like to move this folder using the new name '%3$S'?"
+msgstr ""
+
 #: folderCreationFailed
 msgid ""
 "The folder could not be created because the folder name you specified "
@@ -268,9 +285,10 @@ msgstr ""
 "în curs de desfășurare."
 
 #: parsingFolderFailed
+#, fuzzy
 msgid ""
 "Unable to open the folder %S because it is in use by some other operation. "
-"Please wait for that operation to finish and then select the folder again. "
+"Please wait for that operation to finish and then select the folder again."
 msgstr ""
 "Nu se poate deschide dosarul %S deoarece este folosit în altă operație în "
 "curs de desfășurare. Vă rugăm să așteptați ca acea operație să se încheie și "
@@ -405,7 +423,8 @@ msgid "Has Attachment"
 msgstr "Are anexă"
 
 #: messageJunk
-msgctxt "messageJunkmessageJunk"
+#, fuzzy
+msgctxt "messageJunk"
 msgid "Junk"
 msgstr "Nesolicitat"
 
@@ -542,9 +561,10 @@ msgstr ""
 
 #. # Used to separate email addresses in a list.  Note the trailing space ', '
 #: getMsgButtonTooltip.listSeparator
+#, fuzzy
 msgctxt "getMsgButtonTooltip.listSeparator"
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #. # status feedback stuff
 #: documentDone
@@ -921,15 +941,16 @@ msgstr ""
 
 #: junkBarButton
 msgid "Not Junk"
-msgstr ""
+msgstr "Nu e nesolicitat"
 
 #: junkBarButtonKey
 msgid "N"
 msgstr ""
 
 #: junkBarInfoButton
+#, fuzzy
 msgid "Learn More"
-msgstr ""
+msgstr "Află mai multe…"
 
 #: junkBarInfoButtonKey
 msgctxt "junkBarInfoButtonKey"
@@ -942,9 +963,10 @@ msgid "To protect your privacy, %S has blocked remote content in this message."
 msgstr ""
 
 #: remoteContentPrefLabel
+#, fuzzy
 msgctxt "remoteContentPrefLabel"
 msgid "Options"
-msgstr ""
+msgstr "Opțiuni"
 
 #: remoteContentPrefAccesskey
 msgctxt "remoteContentPrefAccesskey"
@@ -952,13 +974,19 @@ msgid "O"
 msgstr ""
 
 #: remoteContentPrefLabelUnix
+#, fuzzy
 msgctxt "remoteContentPrefLabelUnix"
 msgid "Preferences"
-msgstr ""
+msgstr "Preferințe"
 
 #: remoteContentPrefAccesskeyUnix
 msgctxt "remoteContentPrefAccesskeyUnix"
 msgid "P"
+msgstr ""
+
+#. # LOCALIZATION NOTE(remoteAllow): %S is host name
+#: remoteAllow
+msgid "Allow remote content for %S"
 msgstr ""
 
 #: phishingBarMessage
@@ -966,9 +994,10 @@ msgid "This message may be a scam."
 msgstr ""
 
 #: phishingBarPrefLabel
+#, fuzzy
 msgctxt "phishingBarPrefLabel"
 msgid "Options"
-msgstr ""
+msgstr "Opțiuni"
 
 #: phishingBarPrefAccesskey
 msgctxt "phishingBarPrefAccesskey"
@@ -976,9 +1005,10 @@ msgid "O"
 msgstr ""
 
 #: phishingBarPrefLabelUnix
+#, fuzzy
 msgctxt "phishingBarPrefLabelUnix"
 msgid "Preferences"
-msgstr ""
+msgstr "Preferințe"
 
 #: phishingBarPrefAccesskeyUnix
 msgctxt "phishingBarPrefAccesskeyUnix"
@@ -999,7 +1029,6 @@ msgid "Send Receipt"
 msgstr ""
 
 #: mdnBarSendReqButtonKey
-msgctxt "mdnBarSendReqButtonKey"
 msgid "S"
 msgstr ""
 
@@ -1009,7 +1038,7 @@ msgstr ""
 
 #: draftMessageButton
 msgid "Edit"
-msgstr ""
+msgstr "Editare"
 
 #: draftMessageButtonKey
 msgctxt "draftMessageButtonKey"
@@ -1040,7 +1069,8 @@ msgid "Detach…"
 msgstr "Desprinde…"
 
 #: detachLabelAccesskey
-msgctxt "detachLabelAccesskeydetachLabelAccesskeydetachLabelAccesskeydetachLabelAccesskey"
+#, fuzzy
+msgctxt "detachLabelAccesskey"
 msgid "D"
 msgstr "D"
 
@@ -1134,7 +1164,8 @@ msgstr "Anexe:"
 
 #. # Connection Error Messages
 #: 101
-msgid "Unknown Error "
+#, fuzzy
+msgid "Unknown Error"
 msgstr "Eroare necunoscută"
 
 #: 102
@@ -1422,13 +1453,25 @@ msgstr "Toate dosarele"
 msgid "Unread Folders"
 msgstr "Dosare necitite"
 
+#: folderPaneModeHeader_unread_compact
+msgid "Unread Folders - Compact View"
+msgstr ""
+
 #: folderPaneModeHeader_favorite
 msgid "Favorite Folders"
 msgstr "Dosare favorite"
 
+#: folderPaneModeHeader_favorite_compact
+msgid "Favorite Folders - Compact View"
+msgstr ""
+
 #: folderPaneModeHeader_recent
 msgid "Recent Folders"
 msgstr "Dosare recente"
+
+#: folderPaneModeHeader_recent_compact
+msgid "Recent Folders - Compact View"
+msgstr ""
 
 #: folderPaneModeHeader_smart
 msgctxt "folderPaneModeHeader_smart"
@@ -1691,7 +1734,7 @@ msgid "Restart Now"
 msgstr "Repornește acum"
 
 #: addonInstallRestartButton.accesskey
-msgctxt "addonInstallRestartButton.accesskey"
+#, fuzzy
 msgid "R"
 msgstr "R"
 
@@ -1900,9 +1943,8 @@ msgid "Undo"
 msgstr "Anulează"
 
 #: lwthemePostInstallNotification.undoButton.accesskey
-msgctxt ""
-"lwthemePostInstallNotification.undoButton."
-"accesskeylwthemePostInstallNotification.undoButton.accesskey"
+#, fuzzy
+msgctxt "lwthemePostInstallNotification.undoButton.accesskey"
 msgid "U"
 msgstr "u"
 
@@ -1930,12 +1972,8 @@ msgstr "Repornește"
 #. # LOCALIZATION NOTE (downloadAndInstallButton.label): %S is replaced by the
 #. # version of the update: "Update to 28.0".
 #: update.downloadAndInstallButton.label
-msgid "Update to %S"
-msgstr ""
-
 #: update.downloadAndInstallButton.accesskey
-msgctxt "update.downloadAndInstallButton.accesskey"
-msgid "U"
+msgid "&Update to %S"
 msgstr ""
 
 #: websearch.setDefault
@@ -1953,27 +1991,23 @@ msgstr ""
 "Este nevoie de plugin-uri suplimentare pentru a afișa toate elementele "
 "multimedia de pe această pagină."
 
-#: missingpluginsMessage.button.label
-msgid "Install Missing Plugins…"
+#: missingpluginsMessage.button.label missingpluginsMessage.button.accesskey
+#, fuzzy
+msgid "&Install Missing Plugins…"
 msgstr "Instalează plugin-urile lipsă..."
-
-#: missingpluginsMessage.button.accesskey
-msgid "I"
-msgstr "I"
 
 #: outdatedpluginsMessage.title
 msgid "Some plugins used by this page are out of date."
 msgstr "Unele plugin-uri folosite pe această pagină sunt învechite."
 
 #: outdatedpluginsMessage.updateButton.label
-msgctxt "outdatedpluginsMessage.updateButton.label"
-msgid "Update Plugins…"
-msgstr "Actualizează plugin-urile"
-
 #: outdatedpluginsMessage.updateButton.accesskey
-msgctxt "outdatedpluginsMessage.updateButton.accesskey"
-msgid "U"
-msgstr "u"
+#, fuzzy
+msgctxt ""
+"outdatedpluginsMessage.updateButton.label outdatedpluginsMessage."
+"updateButton.accesskey"
+msgid "&Update Plugins…"
+msgstr "Actualizează plugin-urile"
 
 #: blockedpluginsMessage.title
 msgid ""
@@ -1983,45 +2017,35 @@ msgstr ""
 "fost blocate."
 
 #: blockedpluginsMessage.infoButton.label
-msgid "Details…"
+#: blockedpluginsMessage.infoButton.accesskey
+#, fuzzy
+msgid "&Details…"
 msgstr "Detalii..."
 
-#: blockedpluginsMessage.infoButton.accesskey
-msgctxt "blockedpluginsMessage.infoButton.accesskey"
-msgid "D"
-msgstr "D"
-
 #: blockedpluginsMessage.searchButton.label
-msgctxt "blockedpluginsMessage.searchButton.label"
-msgid "Update Plugins…"
-msgstr "Actualizează plugin-urile"
-
 #: blockedpluginsMessage.searchButton.accesskey
-msgctxt "blockedpluginsMessage.searchButton.accesskey"
-msgid "U"
-msgstr "u"
+#, fuzzy
+msgctxt ""
+"blockedpluginsMessage.searchButton.label blockedpluginsMessage.searchButton."
+"accesskey"
+msgid "&Update Plugins…"
+msgstr "Actualizează plugin-urile"
 
 #: crashedpluginsMessage.title
 msgid "The %S plugin has crashed."
 msgstr "Plugin-ul %S a fost închis din cauza unui defect."
 
 #: crashedpluginsMessage.reloadButton.label
-msgid "Reload page"
+#: crashedpluginsMessage.reloadButton.accesskey
+#, fuzzy
+msgid "&Reload page"
 msgstr "Reîncarcă pagina"
 
-#: crashedpluginsMessage.reloadButton.accesskey
-msgctxt "crashedpluginsMessage.reloadButton.accesskey"
-msgid "R"
-msgstr "R"
-
 #: crashedpluginsMessage.submitButton.label
-msgid "Submit a crash report"
-msgstr "Raportați defecțiunea"
-
 #: crashedpluginsMessage.submitButton.accesskey
-msgctxt "crashedpluginsMessage.submitButton.accesskey"
-msgid "S"
-msgstr "R"
+#, fuzzy
+msgid "&Submit a crash report"
+msgstr "Raportați defecțiunea"
 
 #: crashedpluginsMessage.learnMore
 msgctxt "crashedpluginsMessage.learnMore"
@@ -2034,13 +2058,10 @@ msgstr ""
 "Această pagină solicită să utilizeze un modul care poate rula doar pe 32 biți"
 
 #: carbonFailurePluginsMessage.restartButton.label
-msgid "Restart in 32-bit mode"
-msgstr "Repornește în modul 32 biți"
-
 #: carbonFailurePluginsMessage.restartButton.accesskey
-msgctxt "carbonFailurePluginsMessage.restartButton.accesskey"
-msgid "R"
-msgstr "R"
+#, fuzzy
+msgid "&Restart in 32-bit mode"
+msgstr "Repornește în modul 32 biți"
 
 #. # Sanitize
 #. # LOCALIZATION NOTE (sanitizeDialog2.everything.title): When "Time range to
@@ -2125,3 +2146,39 @@ msgid ""
 msgstr ""
 "Replies to the subthread that was selected will not be shown.;Replies to the "
 "#1 subthreads that were selected will not be shown."
+
+#. # LOCALIZATION NOTE (saveAsType): replace %S with the extension of the file to be saved.
+#: saveAsType
+msgid "%S file"
+msgstr "Fișier %S"
+
+#~ msgid "I"
+#~ msgstr "I"
+
+#~ msgctxt "outdatedpluginsMessage.updateButton.accesskey"
+#~ msgid "U"
+#~ msgstr "u"
+
+#~ msgctxt "blockedpluginsMessage.infoButton.accesskey"
+#~ msgid "D"
+#~ msgstr "D"
+
+#~ msgctxt "blockedpluginsMessage.searchButton.label"
+#~ msgid "Update Plugins…"
+#~ msgstr "Actualizează plugin-urile"
+
+#~ msgctxt "blockedpluginsMessage.searchButton.accesskey"
+#~ msgid "U"
+#~ msgstr "u"
+
+#~ msgctxt "crashedpluginsMessage.reloadButton.accesskey"
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgctxt "crashedpluginsMessage.submitButton.accesskey"
+#~ msgid "S"
+#~ msgstr "R"
+
+#~ msgctxt "carbonFailurePluginsMessage.restartButton.accesskey"
+#~ msgid "R"
+#~ msgstr "R"
