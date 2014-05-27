@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-01 10:39+0100\n"
+"POT-Creation-Date: 2014-04-29 16:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -27,21 +27,8 @@ msgid "Install"
 msgstr ""
 
 #. # Alerts
-#: alertAddons
-#, fuzzy
-msgid "Add-ons"
-msgstr "sts'akumtasobiltak "
-
 #: alertAddonsDownloading
 msgid "Downloading add-on"
-msgstr ""
-
-#: alertAddonsInstalling
-msgid "Installing add-on"
-msgstr ""
-
-#: alertAddonsInstalled
-msgid "Installation complete. Restart required."
 msgstr ""
 
 #: alertAddonsInstalledNoRestart
@@ -76,8 +63,37 @@ msgstr ""
 msgid "Download started…"
 msgstr ""
 
+#: alertDownloadsPause
+msgctxt "alertDownloadsPause"
+msgid "Pause"
+msgstr ""
+
+#: alertDownloadsResume
+msgid "Resume"
+msgstr ""
+
+#: alertDownloadsCancel
+msgctxt "alertDownloadsCancel"
+msgid "Cancel"
+msgstr ""
+
 #: alertFullScreenToast
 msgid "Press BACK to leave full-screen mode"
+msgstr ""
+
+#. # LOCALIZATION NOTE (alertSearchEngineAddedToast, alertSearchEngineErrorToast, alertSearchEngineDuplicateToast)
+#. # %S will be replaced by the name of the search engine (exposed by the current page)
+#. # that has been added; for example, 'Google'.
+#: alertSearchEngineAddedToast
+msgid "'%S' has been added as a search engine"
+msgstr ""
+
+#: alertSearchEngineErrorToast
+msgid "Couldn't add '%S' as a search engine"
+msgstr ""
+
+#: alertSearchEngineDuplicateToast
+msgid "'%S' is already one of your search engines"
 msgstr ""
 
 #: downloadCancelPromptTitle
@@ -148,10 +164,6 @@ msgstr ""
 msgid "Restart to complete changes."
 msgstr ""
 
-#: notificationRestart.update
-msgid "Add-ons updated. Restart to complete changes."
-msgstr ""
-
 #: notificationRestart.blocked
 msgid "Unsafe add-ons installed. Restart to disable."
 msgstr ""
@@ -161,24 +173,26 @@ msgid "Restart"
 msgstr ""
 
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
+#. # LOCALIZATION NOTE (popup.message): Semicolon-separated list of plural forms.
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popup.message
+msgid ""
+"#1 prevented this site from opening a pop-up window. Would you like to show "
+"it?;#1 prevented this site from opening #2 pop-up windows. Would you like to "
+"show them?"
 msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
+#: popup.dontAskAgain
+msgctxt "popup.dontAskAgain"
+msgid "Don't ask again for this site"
 msgstr ""
 
-#: popupButtonAllowOnce
+#: popup.show
 msgid "Show"
 msgstr ""
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
-msgstr ""
-
-#: popupButtonNeverWarn2
-msgid "Never Show"
+#: popup.dontShow
+msgid "Don't show"
 msgstr ""
 
 #. # SafeBrowsing
@@ -194,39 +208,6 @@ msgstr ""
 msgid "Block Popups"
 msgstr ""
 
-#. # Telemetry
-#. # %1$S = server owner (Mozilla); %2$S = product name (Firefox)
-#: telemetry.optin.message2
-msgid "Send info to %1$S so that we can improve %2$S?"
-msgstr ""
-
-#: telemetry.optin.learnMore
-#, fuzzy
-msgid "Learn more"
-msgstr "epal ayejetik"
-
-#: telemetry.optin.yes
-msgctxt "telemetry.optin.yes"
-msgid "Yes"
-msgstr ""
-
-#: telemetry.optin.no
-msgctxt "telemetry.optin.no"
-msgid "No"
-msgstr ""
-
-#. # LOCALIZATION NOTE (telemetry.optout.message): %1$S and %3$S will be replaced by
-#. # brandShortName, and %2$S by the value of the toolkit.telemetry.server_owner preference.
-#: telemetry.optout.message
-msgid ""
-"%1$S sends information about performance, hardware, usage and customizations "
-"back to %2$S to help improve %3$S."
-msgstr ""
-
-#: telemetry.optout.ok
-msgid "OK"
-msgstr ""
-
 #. # XPInstall
 #: xpinstallPromptWarning2
 msgid ""
@@ -234,11 +215,18 @@ msgid ""
 "device."
 msgstr ""
 
+#: xpinstallPromptWarningLocal
+msgid "%S prevented this add-on (%S) from installing on your device."
+msgstr ""
+
+#: xpinstallPromptWarningDirect
+msgid "%S prevented an add-on from installing on your device."
+msgstr ""
+
 #: xpinstallPromptAllowButton
-#, fuzzy
 msgctxt "xpinstallPromptAllowButton"
 msgid "Allow"
-msgstr "xu'"
+msgstr ""
 
 #: xpinstallDisabledMessageLocked
 msgid "Software installation has been disabled by your system administrator."
@@ -274,8 +262,8 @@ msgstr ""
 msgid "Encrypted"
 msgstr ""
 
-#: identity.ownerUnknown2
-msgid "(unknown)"
+#: identity.ownerUnknown3
+msgid "unknown"
 msgstr ""
 
 #. # Geolocation UI
@@ -288,23 +276,15 @@ msgstr ""
 msgid "Don't share"
 msgstr ""
 
-#: geolocation.alwaysAllow
-msgid "Always Share"
-msgstr ""
-
-#: geolocation.neverAllow
-msgid "Never Share"
-msgstr ""
-
-#: geolocation.wantsTo
-msgid "%S wants your location."
+#: geolocation.ask
+msgid "Share your location with %S?"
 msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.shareLocation): Label that will be used in
 #. # site settings dialog.
 #: geolocation.shareLocation
 msgid "Share Location"
-msgstr "ak'el ilel buy  "
+msgstr ""
 
 #. # LOCALIZATION NOTE (geolocation.dontAskAgain): This label appears next to a
 #. # checkbox to indicate whether or not the user wants to make a permanent decision.
@@ -315,17 +295,17 @@ msgstr ""
 
 #. # Desktop notification UI
 #: desktopNotification.allow
-#, fuzzy
 msgctxt "desktopNotification.allow"
 msgid "Allow"
-msgstr "xu'"
+msgstr ""
 
 #: desktopNotification.dontAllow
+msgctxt "desktopNotification.dontAllow"
 msgid "Don't allow"
 msgstr ""
 
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
+#: desktopNotification.ask
+msgid "Allow %S to use notifications?"
 msgstr ""
 
 #. # LOCALIZATION NOTE (desktopNotification.useNotifications): Label that will be
@@ -341,8 +321,30 @@ msgctxt "desktopNotification.dontAskAgain"
 msgid "Don't ask again for this site"
 msgstr ""
 
+#. # Contacts API
+#: contacts.allow
+msgctxt "contacts.allow"
+msgid "Allow"
+msgstr ""
+
+#: contacts.dontAllow
+msgctxt "contacts.dontAllow"
+msgid "Don't allow"
+msgstr ""
+
+#: contacts.ask
+msgid "Allow %S to access your contacts?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (contacts.dontAskAgain): This label appears next to a
+#. # checkbox to indicate whether or not the user wants to make a permanent decision.
+#: contacts.dontAskAgain
+msgctxt "contacts.dontAskAgain"
+msgid "Don't ask again for this site"
+msgstr ""
+
 #. # New Tab Popup
-#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (newtabpopup, newprivatetabpopup): Semicolon-separated list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 number of tabs
 #: newtabpopup.opened
@@ -353,34 +355,24 @@ msgstr ""
 msgid "New private tab opened;#1 new private tabs opened"
 msgstr ""
 
-#. # Error Console
-#: typeError
-msgid "Error:"
-msgstr "chabal lek"
-
-#: typeWarning
-msgid "Warning:"
+#. # Offline web applications
+#: offlineApps.ask
+msgid "Allow %S to store data on your device for offline use?"
 msgstr ""
 
-#. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
+#: offlineApps.dontAskAgain
+msgctxt "offlineApps.dontAskAgain"
+msgid "Don't ask again for this site"
 msgstr ""
 
 #: offlineApps.allow
-#, fuzzy
 msgctxt "offlineApps.allow"
 msgid "Allow"
-msgstr "xu'"
-
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
 msgstr ""
 
-#: offlineApps.notNow
-msgid "Not Now"
+#: offlineApps.dontAllow2
+msgctxt "offlineApps.dontAllow2"
+msgid "Don't allow"
 msgstr ""
 
 #. # LOCALIZATION NOTE (offlineApps.storeOfflineData): Label that will be used in
@@ -389,150 +381,27 @@ msgstr ""
 msgid "Store Offline Data"
 msgstr ""
 
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
-#: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
-msgid "%S wants to store data on your device for offline use."
-msgstr ""
-
 #. # IndexedDB Quota increases
-#: indexedDBQuota.allow
-#, fuzzy
-msgctxt "indexedDBQuota.allow"
-msgid "Allow"
-msgstr "xu'"
-
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
 msgstr ""
 
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-#, fuzzy
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr "xu'"
-
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
+#. # LOCALIZATION NOTE (password.savePassword): Label that will be used in
+#.  # site settings dialog.
+#: password.savePassword
+msgid "Save Password"
 msgstr ""
 
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
+#. # LOCALIZATION NOTE (password.save): This should match
+#. # saveButton in passwordmgr.properties
+#: password.save
+msgid "Save"
 msgstr ""
 
-#. # LOCALIZATION NOTE (password.rememberPassword): Label that will be used in
-#. # site settings dialog.
-#: password.rememberPassword
-msgid "Remember Password"
-msgstr ""
-
-#. # LOCALIZATION NOTE (password.remember): This should match
-#. # promptRememberButtonText in passwordmgr.properties
-#: password.remember
-msgid "Remember"
-msgstr ""
-
-#. # LOCALIZATION NOTE (password.never): This should match
-#. # promptNeverForSiteButtonText in passwordmgr.properties
-#: password.never
-msgctxt "password.never"
-msgid "Never"
-msgstr ""
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr ""
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr ""
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr ""
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr ""
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
-msgstr ""
-
-#: tabs.crashWarningTitle
-msgid "Sorry!"
-msgstr ""
-
-#: tabs.crashWarningMsg
-msgid "Something went wrong while displaying a web page."
-msgstr ""
-
-#: tabs.crashSubmitReport
-msgid "Send Mozilla a crash report"
-msgstr ""
-
-#: tabs.crashClose
-msgid "Close tab"
-msgstr ""
-
-#: tabs.crashReload
-msgid "Reload tab"
-msgstr ""
-
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr ""
-
-#. # Open Search
-#: opensearch.searchWith
-#, fuzzy
-msgid "Search With:"
-msgstr "Sa'el yaviletik ta web"
-
-#: opensearch.searchFor
-msgid "Search for \"%S\""
-msgstr ""
-
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
-msgstr ""
-
-#: openinapp.general
-msgid "Open in Another App"
-msgstr ""
-
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
-msgstr ""
-
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
+#. # LOCALIZATION NOTE (password.dontSave): This should match
+#. # dontSaveButton in passwordmgr.properties
+#: password.dontSave
+msgid "Don't save"
 msgstr ""
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
@@ -545,20 +414,14 @@ msgstr ""
 msgid "false"
 msgstr ""
 
-#. # LOCALIZATION NOTE (intl.charsetmenu.browser.static): Set to a series of comma separated
-#. # values for charsets that the user can select from in the Character Encoding menu.
-#: intl.charsetmenu.browser.static
-msgid "iso-8859-1,utf-8,big5,iso-2022-jp,shift_jis,euc-jp"
-msgstr ""
-
-#. # Application Menu
-#: appMenu.more
-msgid "More"
-msgstr ""
-
 #. # Text Selection
 #: selectionHelper.textCopied
 msgid "Text copied to clipboard"
+msgstr ""
+
+#. # Casting
+#: casting.prompt
+msgid "Cast to Device"
 msgstr ""
 
 #. # Context menu
@@ -568,6 +431,10 @@ msgstr ""
 
 #: contextmenu.openInPrivateTab
 msgid "Open Link in Private Tab"
+msgstr ""
+
+#: contextmenu.addToReadingList
+msgid "Add to Reading List"
 msgstr ""
 
 #: contextmenu.share
@@ -619,12 +486,19 @@ msgstr ""
 msgid "Share Image"
 msgstr ""
 
+#. # LOCALIZATION NOTE (contextmenu.search):
+#. # The label of the contextmenu item which allows you to search with your default search engine for
+#. # the text you have selected. %S is the name of the search engine. For example, "Google".
+#: contextmenu.search
+msgid "%S Search"
+msgstr ""
+
 #: contextmenu.saveImage
 msgid "Save Image"
 msgstr ""
 
-#: contextmenu.setWallpaper
-msgid "Set as Wallpaper"
+#: contextmenu.setImageAs
+msgid "Set Image As"
 msgstr ""
 
 #: contextmenu.addSearchEngine
@@ -636,6 +510,7 @@ msgid "Play"
 msgstr ""
 
 #: contextmenu.pauseMedia
+msgctxt "contextmenu.pauseMedia"
 msgid "Pause"
 msgstr ""
 
@@ -647,6 +522,14 @@ msgstr ""
 msgid "Show Controls"
 msgstr ""
 
+#: contextmenu.mute
+msgid "Mute"
+msgstr ""
+
+#: contextmenu.unmute
+msgid "Unmute"
+msgstr ""
+
 #: contextmenu.saveVideo
 msgid "Save Video"
 msgstr ""
@@ -655,16 +538,20 @@ msgstr ""
 msgid "Save Audio"
 msgstr ""
 
+#: contextmenu.addToContacts
+msgid "Add to Contacts"
+msgstr ""
+
+#: contextmenu.castToScreen
+msgid "Cast to Screen"
+msgstr ""
+
 #: contextmenu.copy
 msgid "Copy"
 msgstr ""
 
-#: contextmenu.copyAll
-msgid "Copy All"
-msgstr ""
-
-#: contextmenu.selectWord
-msgid "Select Word"
+#: contextmenu.cut
+msgid "Cut"
 msgstr ""
 
 #: contextmenu.selectAll
@@ -673,6 +560,10 @@ msgstr ""
 
 #: contextmenu.paste
 msgid "Paste"
+msgstr ""
+
+#: contextmenu.call
+msgid "Call"
 msgstr ""
 
 #. # Select UI
@@ -708,8 +599,9 @@ msgid "Pick a month"
 msgstr ""
 
 #: inputWidgetHelper.cancel
+msgctxt "inputWidgetHelper.cancel"
 msgid "Cancel"
-msgstr "Smakel"
+msgstr ""
 
 #: inputWidgetHelper.set
 msgid "Set"
@@ -764,18 +656,16 @@ msgid "Could not download manifest"
 msgstr ""
 
 #. # Click to play plugins
-#: clickToPlayPlugins.message1
-msgid "%S contains plugin content. Would you like to play it?"
+#: clickToPlayPlugins.message2
+msgid "%S contains plugin content. Would you like to activate it?"
 msgstr ""
 
-#: clickToPlayPlugins.yes
-msgctxt "clickToPlayPlugins.yes"
-msgid "Yes"
+#: clickToPlayPlugins.activate
+msgid "Activate"
 msgstr ""
 
-#: clickToPlayPlugins.no
-msgctxt "clickToPlayPlugins.no"
-msgid "No"
+#: clickToPlayPlugins.dontActivate
+msgid "Don't activate"
 msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.dontAskAgain): This label appears next to a
@@ -787,8 +677,8 @@ msgstr ""
 
 #. # LOCALIZATION NOTE (clickToPlayPlugins.playPlugins): Label that
 #. # will be used in site settings dialog.
-#: clickToPlayPlugins.playPlugins
-msgid "Play Plugins"
+#: clickToPlayPlugins.activatePlugins
+msgid "Activate Plugins"
 msgstr ""
 
 #. # Site settings dialog
@@ -822,6 +712,33 @@ msgstr ""
 msgid "Disable"
 msgstr ""
 
+#: remoteIncomingPromptAccept
+msgctxt "remoteIncomingPromptAccept"
+msgid "OK"
+msgstr ""
+
+#: remoteIncomingPromptCancel
+msgctxt "remoteIncomingPromptCancel"
+msgid "Cancel"
+msgstr ""
+
+#. # LOCALIZATION NOTE (remoteNotificationTitle): %S is the name of the app.
+#: remoteNotificationTitle
+msgid "%S debugging enabled"
+msgstr ""
+
+#. # LOCALIZATION NOTE (remoteNotificationGenericName): a generic name to use
+#. # if the name of the app is not available.
+#: remoteNotificationGenericName
+msgid "App"
+msgstr ""
+
+#. # LOCALIZATION NOTE (remoteNotificationMessage): %S is the port on which
+#. # the remote debugger server is listening.
+#: remoteNotificationMessage
+msgid "Listening on port %S"
+msgstr ""
+
 #. # Helper apps
 #: helperapps.open
 msgid "Open"
@@ -845,12 +762,29 @@ msgid "Open With an App"
 msgstr ""
 
 #: helperapps.always
+msgctxt "helperapps.always"
 msgid "Always"
 msgstr ""
 
 #: helperapps.never
-msgctxt "helperapps.never"
 msgid "Never"
+msgstr ""
+
+#: helperapps.pick
+msgid "Complete action using"
+msgstr ""
+
+#: helperapps.saveToDisk
+msgid "Download"
+msgstr ""
+
+#: helperapps.alwaysUse
+msgctxt "helperapps.alwaysUse"
+msgid "Always"
+msgstr ""
+
+#: helperapps.useJustOnce
+msgid "Just once"
 msgstr ""
 
 #. #Lightweight themes
@@ -861,10 +795,9 @@ msgid "This site (%S) attempted to install a theme."
 msgstr ""
 
 #: lwthemeInstallRequest.allowButton
-#, fuzzy
 msgctxt "lwthemeInstallRequest.allowButton"
 msgid "Allow"
-msgstr "xu'"
+msgstr ""
 
 #. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message, getUserMedia.sharingCamera.message, getUserMedia.sharingMicrophone.message, getUserMedia.sharingCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.shareCamera.message
@@ -888,14 +821,113 @@ msgctxt "getUserMedia.shareRequest.label"
 msgid "Share"
 msgstr ""
 
-#: getUserMedia.sharingCamera.message
-msgid "You are currently sharing your camera with %S."
+#: getUserMedia.videoDevice.default
+msgid "Camera %S"
 msgstr ""
 
-#: getUserMedia.sharingMicrophone.message
-msgid "You are currently sharing your microphone with %S."
+#: getUserMedia.videoDevice.frontCamera
+msgid "Front facing camera"
 msgstr ""
 
-#: getUserMedia.sharingCameraAndMicrophone.message
-msgid "You are currently sharing your camera and microphone with %S."
+#: getUserMedia.videoDevice.backCamera
+msgid "Back facing camera"
+msgstr ""
+
+#: getUserMedia.videoDevice.none
+msgid "No Video"
+msgstr ""
+
+#: getUserMedia.videoDevice.tabShare
+msgid "Choose a tab to stream"
+msgstr ""
+
+#: getUserMedia.videoDevice.prompt
+msgid "Video source"
+msgstr ""
+
+#: getUserMedia.audioDevice.default
+msgid "Microphone %S"
+msgstr ""
+
+#: getUserMedia.audioDevice.none
+msgid "No Audio"
+msgstr ""
+
+#: getUserMedia.audioDevice.prompt
+msgid "Microphone to use"
+msgstr ""
+
+#: getUserMedia.sharingCamera.message2
+msgid "Camera is on"
+msgstr ""
+
+#: getUserMedia.sharingMicrophone.message2
+msgid "Microphone is on"
+msgstr ""
+
+#: getUserMedia.sharingCameraAndMicrophone.message2
+msgid "Camera and microphone are on"
+msgstr ""
+
+#. #Reader mode
+#: readerMode.enter
+msgid "Enter Reader Mode"
+msgstr ""
+
+#: readerMode.exit
+msgid "Exit Reader Mode"
+msgstr ""
+
+#. #Open in App
+#: openInApp.pageAction
+msgid "Open in App"
+msgstr ""
+
+#: openInApp.ok
+msgctxt "openInApp.ok"
+msgid "OK"
+msgstr ""
+
+#: openInApp.cancel
+msgctxt "openInApp.cancel"
+msgid "Cancel"
+msgstr ""
+
+#. #Tab sharing
+#: tabshare.title
+msgid "\"Choose a tab to stream\""
+msgstr ""
+
+#. #Tabs in context menus
+#: browser.menu.context.default
+msgid "Link"
+msgstr ""
+
+#: browser.menu.context.img
+msgid "Image"
+msgstr ""
+
+#: browser.menu.context.video
+msgid "Video"
+msgstr ""
+
+#: browser.menu.context.audio
+msgid "Audio"
+msgstr ""
+
+#: browser.menu.context.tel
+msgid "Phone"
+msgstr ""
+
+#: browser.menu.context.mailto
+msgid "Mail"
+msgstr ""
+
+#. # "Subscribe to page" prompts created in FeedHandler.js
+#: feedHandler.chooseFeed
+msgid "Choose feed"
+msgstr ""
+
+#: feedHandler.subscribeWith
+msgid "Subscribe with"
 msgstr ""
