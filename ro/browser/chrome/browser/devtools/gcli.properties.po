@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-18 12:21+0100\n"
+"POT-Creation-Date: 2014-06-10 15:35+0100\n"
 "PO-Revision-Date: 2014-04-29 21:05+0000\n"
 "Last-Translator: Raul <raul.malea@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1398805547.000000\n"
@@ -131,26 +131,6 @@ msgstr "'%1$S' nu este un director"
 #: fileErrDoesntMatch
 msgid "'%1$S' does not match '%2$S'"
 msgstr "'%1$S' nu se potrivește cu '%2$S'"
-
-#. # LOCALIZATION NOTE: When a command has a parameter that has a number of
-#. # pre-defined options the user interface presents these in a drop-down menu,
-#. # where the first 'option' is an indicator that a selection should be made.
-#. # This string describes that first option.
-#: fieldSelectionSelect
-msgid "Select a %S…"
-msgstr "Selectează o %S ..."
-
-#. # LOCALIZATION NOTE (fieldArrayAdd, fieldArrayDel): When a command has a
-#. # parameter that can be repeated multiple times (e.g. like the 'cat a.txt
-#. # b.txt' command) the user interface presents buttons to add and remove
-#. # arguments. This string is used to add arguments.
-#: fieldArrayAdd
-msgid "Add"
-msgstr "Adaugă"
-
-#: fieldArrayDel
-msgid "Delete"
-msgstr "Șterge"
 
 #. # LOCALIZATION NOTE: When the menu has displayed all the matches that it
 #. # should (i.e. about 10 items) then we display this to alert the user that
@@ -285,7 +265,7 @@ msgstr "Rezumat"
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
 #: helpManNone
-msgctxt "helpManNone"
+#, fuzzy
 msgid "None"
 msgstr "Nici unul"
 
@@ -323,19 +303,21 @@ msgstr "opțional"
 msgid "optional, default=%S"
 msgstr "opțional, implicit=%S"
 
+#. # LOCALIZATION NOTE (helpIntro): This forms part of the output from the 'help'
+#. # command. 'GCLI' is a project name and should be left untranslated.
+#: helpIntro
+msgctxt "helpIntro"
+msgid ""
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
+msgstr ""
+
 #. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
 #. # when the command in question has sub-commands, before a list of the matching
 #. # sub-commands.
 #: subCommands
 msgid "Sub-Commands"
 msgstr "Subcomenzi"
-
-#. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
-#. # when the command in question should have sub-commands but in fact has none.
-#: subCommandsNone
-msgctxt "subCommandsNone"
-msgid "None"
-msgstr "Niciuna"
 
 #. # LOCALIZATION NOTE (contextDesc, contextManual, contextPrefixDesc): These
 #. # strings are used to describe the 'context' command and its 'prefix'
@@ -418,8 +400,8 @@ msgstr "Conexiunea chemată %S există deja."
 msgid "Added %S commands."
 msgstr "Adăugate %S comenzi."
 
-#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2, disconnectPrefixDesc,
-#. # disconnectForceDesc): These strings describe the 'disconnect' command and
+#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2,
+#. # disconnectPrefixDesc): These strings describe the 'disconnect' command and
 #. # all its available parameters. See localization comment for 'connect' for an
 #. # explanation about 'prefix'.
 #: disconnectDesc2
@@ -437,23 +419,12 @@ msgctxt "disconnectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "Parent prefix for imported commands"
 
-#: disconnectForceDesc
-msgid "Ignore outstanding requests"
-msgstr "Ignoră cererile restante"
-
 #. # LOCALIZATION NOTE: This is the output of the 'disconnect' command,
 #. # explaining the user what has been done. Parameters: %S is the number of
 #. # commands removed.
 #: disconnectReply
 msgid "Removed %S commands."
 msgstr "Eliminate %S comenzi."
-
-#. # LOCALIZATION NOTE: This error message is displayed when the user attempts to
-#. # disconnect before all requests have completed. Parameters: %S is a list of
-#. # incomplete requests.
-#: disconnectOutstanding
-msgid "Outstanding requests (%S)"
-msgstr "Cereri nesoluționate (%S)"
 
 #. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
 #. # strings describe the 'global' command and its parameters
@@ -570,27 +541,6 @@ msgstr "Valoarea nouă pentru setare"
 msgid "The new value for the specified setting"
 msgstr "Noua valoare pentru setarea specificată"
 
-#. # LOCALIZATION NOTE (prefSetCheckHeading, prefSetCheckBody, prefSetCheckGo):
-#. # These strings are displayed to the user the first time they try to alter a
-#. # setting.
-#: prefSetCheckHeading
-msgid "This might void your warranty!"
-msgstr "Acest lucru v-ar putea invalida garanția!"
-
-#: prefSetCheckBody
-msgid ""
-"Changing these advanced settings can be harmful to the stability, security, "
-"and performance of this application. You should only continue if you are "
-"sure of what you are doing."
-msgstr ""
-"Schimbarea valorilor acestor setări avansate poate dăuna stabilității, "
-"securității și performanței aplicației. Ar trebui să continuați doar dacă "
-"știți ce faceți."
-
-#: prefSetCheckGo
-msgid "I'll be careful, I promise!"
-msgstr "Voi avea grijă, promit!"
-
 #. # LOCALIZATION NOTE (prefResetDesc, prefResetManual, prefResetSettingDesc,
 #. # prefResetSettingManual): These strings describe the 'pref reset' command and
 #. # all its parameters.
@@ -648,6 +598,7 @@ msgstr ""
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
 #: introTextOpening3
+msgctxt "introTextOpening3"
 msgid ""
 "GCLI is an experiment to create a highly usable command line for web "
 "developers."
@@ -682,9 +633,39 @@ msgstr "Arată mesajul inițial de bun venit"
 msgid "How eager are the tooltips"
 msgstr "Cât de dese sunt sfaturile de ecran"
 
-#. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
-#. # help command, just before the list of commands. This text is wrapped inside
-#. # a link to a localized MDN article.
-#: introBody
-msgid "For more information see MDN."
-msgstr "Pentru mai multe informații vizitați saitul MDN."
+#~ msgid "Select a %S…"
+#~ msgstr "Selectează o %S ..."
+
+#~ msgid "Add"
+#~ msgstr "Adaugă"
+
+#~ msgid "Delete"
+#~ msgstr "Șterge"
+
+#~ msgctxt "subCommandsNone"
+#~ msgid "None"
+#~ msgstr "Niciuna"
+
+#~ msgid "Ignore outstanding requests"
+#~ msgstr "Ignoră cererile restante"
+
+#~ msgid "Outstanding requests (%S)"
+#~ msgstr "Cereri nesoluționate (%S)"
+
+#~ msgid "This might void your warranty!"
+#~ msgstr "Acest lucru v-ar putea invalida garanția!"
+
+#~ msgid ""
+#~ "Changing these advanced settings can be harmful to the stability, "
+#~ "security, and performance of this application. You should only continue "
+#~ "if you are sure of what you are doing."
+#~ msgstr ""
+#~ "Schimbarea valorilor acestor setări avansate poate dăuna stabilității, "
+#~ "securității și performanței aplicației. Ar trebui să continuați doar dacă "
+#~ "știți ce faceți."
+
+#~ msgid "I'll be careful, I promise!"
+#~ msgstr "Voi avea grijă, promit!"
+
+#~ msgid "For more information see MDN."
+#~ msgstr "Pentru mai multe informații vizitați saitul MDN."

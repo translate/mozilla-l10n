@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-18 12:21+0100\n"
+"POT-Creation-Date: 2014-06-10 15:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,26 +126,6 @@ msgstr "「%1$S」不是資料夾"
 #: fileErrDoesntMatch
 msgid "'%1$S' does not match '%2$S'"
 msgstr "「%1$S」不符合「%2$S」"
-
-#. # LOCALIZATION NOTE: When a command has a parameter that has a number of
-#. # pre-defined options the user interface presents these in a drop-down menu,
-#. # where the first 'option' is an indicator that a selection should be made.
-#. # This string describes that first option.
-#: fieldSelectionSelect
-msgid "Select a %S…"
-msgstr "選擇一個 %S…"
-
-#. # LOCALIZATION NOTE (fieldArrayAdd, fieldArrayDel): When a command has a
-#. # parameter that can be repeated multiple times (e.g. like the 'cat a.txt
-#. # b.txt' command) the user interface presents buttons to add and remove
-#. # arguments. This string is used to add arguments.
-#: fieldArrayAdd
-msgid "Add"
-msgstr "新增"
-
-#: fieldArrayDel
-msgid "Delete"
-msgstr "刪除"
 
 #. # LOCALIZATION NOTE: When the menu has displayed all the matches that it
 #. # should (i.e. about 10 items) then we display this to alert the user that
@@ -277,7 +257,7 @@ msgstr "簡介"
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
 #: helpManNone
-msgctxt "helpManNone"
+#, fuzzy
 msgid "None"
 msgstr "無"
 
@@ -315,19 +295,21 @@ msgstr "非必要"
 msgid "optional, default=%S"
 msgstr "非必填。預設值為 %1$S"
 
+#. # LOCALIZATION NOTE (helpIntro): This forms part of the output from the 'help'
+#. # command. 'GCLI' is a project name and should be left untranslated.
+#: helpIntro
+msgctxt "helpIntro"
+msgid ""
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
+msgstr ""
+
 #. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
 #. # when the command in question has sub-commands, before a list of the matching
 #. # sub-commands.
 #: subCommands
 msgid "Sub-Commands"
 msgstr "子命令"
-
-#. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
-#. # when the command in question should have sub-commands but in fact has none.
-#: subCommandsNone
-msgctxt "subCommandsNone"
-msgid "None"
-msgstr "無"
 
 #. # LOCALIZATION NOTE (contextDesc, contextManual, contextPrefixDesc): These
 #. # strings are used to describe the 'context' command and its 'prefix'
@@ -409,8 +391,8 @@ msgstr "%S 連線已存在。"
 msgid "Added %S commands."
 msgstr "已新增 %S 個指令。"
 
-#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2, disconnectPrefixDesc,
-#. # disconnectForceDesc): These strings describe the 'disconnect' command and
+#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2,
+#. # disconnectPrefixDesc): These strings describe the 'disconnect' command and
 #. # all its available parameters. See localization comment for 'connect' for an
 #. # explanation about 'prefix'.
 #: disconnectDesc2
@@ -427,23 +409,12 @@ msgctxt "disconnectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "已匯入指令的上層前綴字元"
 
-#: disconnectForceDesc
-msgid "Ignore outstanding requests"
-msgstr "忽略未處理的請求"
-
 #. # LOCALIZATION NOTE: This is the output of the 'disconnect' command,
 #. # explaining the user what has been done. Parameters: %S is the number of
 #. # commands removed.
 #: disconnectReply
 msgid "Removed %S commands."
 msgstr "已移除 %S 個指令。"
-
-#. # LOCALIZATION NOTE: This error message is displayed when the user attempts to
-#. # disconnect before all requests have completed. Parameters: %S is a list of
-#. # incomplete requests.
-#: disconnectOutstanding
-msgid "Outstanding requests (%S)"
-msgstr "未處理的請求（%1$S）"
 
 #. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
 #. # strings describe the 'global' command and its parameters
@@ -556,26 +527,6 @@ msgstr "設定值的新值"
 msgid "The new value for the specified setting"
 msgstr "指定的設定值的新值"
 
-#. # LOCALIZATION NOTE (prefSetCheckHeading, prefSetCheckBody, prefSetCheckGo):
-#. # These strings are displayed to the user the first time they try to alter a
-#. # setting.
-#: prefSetCheckHeading
-msgid "This might void your warranty!"
-msgstr "隨便亂搞會讓保固失效！"
-
-#: prefSetCheckBody
-msgid ""
-"Changing these advanced settings can be harmful to the stability, security, "
-"and performance of this application. You should only continue if you are "
-"sure of what you are doing."
-msgstr ""
-"變更這些進階的設定值可能會影響程式的穩定性、安全性及執行效能。在修改前請確定"
-"您知道您在做什麼，或者確定您所參考的文件值得信賴。"
-
-#: prefSetCheckGo
-msgid "I'll be careful, I promise!"
-msgstr "我發誓，我一定會小心的！"
-
 #. # LOCALIZATION NOTE (prefResetDesc, prefResetManual, prefResetSettingDesc,
 #. # prefResetSettingManual): These strings describe the 'pref reset' command and
 #. # all its parameters.
@@ -630,6 +581,7 @@ msgstr "在使用者點下「知道了！」按鈕前重複顯示訊息新給新
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
 #: introTextOpening3
+msgctxt "introTextOpening3"
 msgid ""
 "GCLI is an experiment to create a highly usable command line for web "
 "developers."
@@ -664,12 +616,41 @@ msgstr "顯示初始歡迎訊息"
 msgid "How eager are the tooltips"
 msgstr "工具提示要多熱心"
 
-#. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
-#. # help command, just before the list of commands. This text is wrapped inside
-#. # a link to a localized MDN article.
-#: introBody
-msgid "For more information see MDN."
-msgstr "若需詳情，請參考 MDN。"
+#~ msgid "Select a %S…"
+#~ msgstr "選擇一個 %S…"
+
+#~ msgid "Add"
+#~ msgstr "新增"
+
+#~ msgid "Delete"
+#~ msgstr "刪除"
+
+#~ msgctxt "subCommandsNone"
+#~ msgid "None"
+#~ msgstr "無"
+
+#~ msgid "Ignore outstanding requests"
+#~ msgstr "忽略未處理的請求"
+
+#~ msgid "Outstanding requests (%S)"
+#~ msgstr "未處理的請求（%1$S）"
+
+#~ msgid "This might void your warranty!"
+#~ msgstr "隨便亂搞會讓保固失效！"
+
+#~ msgid ""
+#~ "Changing these advanced settings can be harmful to the stability, "
+#~ "security, and performance of this application. You should only continue "
+#~ "if you are sure of what you are doing."
+#~ msgstr ""
+#~ "變更這些進階的設定值可能會影響程式的穩定性、安全性及執行效能。在修改前請確"
+#~ "定您知道您在做什麼，或者確定您所參考的文件值得信賴。"
+
+#~ msgid "I'll be careful, I promise!"
+#~ msgstr "我發誓，我一定會小心的！"
+
+#~ msgid "For more information see MDN."
+#~ msgstr "若需詳情，請參考 MDN。"
 
 #~ msgid "Description"
 #~ msgstr "說明"

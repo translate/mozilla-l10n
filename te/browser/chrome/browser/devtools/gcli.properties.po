@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-18 12:21+0100\n"
+"POT-Creation-Date: 2014-06-10 15:35+0100\n"
 "PO-Revision-Date: 2013-12-02 19:23+0630\n"
 "Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <kde-i18n-doc@kde.org>\n"
@@ -129,26 +129,6 @@ msgstr "'%1$S' అనేది సంచయం కాదు"
 #: fileErrDoesntMatch
 msgid "'%1$S' does not match '%2$S'"
 msgstr "'%1$S' అనునది '%2$S' తో పోలడంలేదు"
-
-#. # LOCALIZATION NOTE: When a command has a parameter that has a number of
-#. # pre-defined options the user interface presents these in a drop-down menu,
-#. # where the first 'option' is an indicator that a selection should be made.
-#. # This string describes that first option.
-#: fieldSelectionSelect
-msgid "Select a %S…"
-msgstr "%S యెంపికచేయి…"
-
-#. # LOCALIZATION NOTE (fieldArrayAdd, fieldArrayDel): When a command has a
-#. # parameter that can be repeated multiple times (e.g. like the 'cat a.txt
-#. # b.txt' command) the user interface presents buttons to add and remove
-#. # arguments. This string is used to add arguments.
-#: fieldArrayAdd
-msgid "Add"
-msgstr "జతచేయి"
-
-#: fieldArrayDel
-msgid "Delete"
-msgstr "తొలగించు"
 
 #. # LOCALIZATION NOTE: When the menu has displayed all the matches that it
 #. # should (i.e. about 10 items) then we display this to alert the user that
@@ -280,7 +260,7 @@ msgstr "తాత్పర్యం"
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
 #: helpManNone
-msgctxt "helpManNone"
+#, fuzzy
 msgid "None"
 msgstr "ఏదీకాదు"
 
@@ -318,19 +298,21 @@ msgstr "ఐచ్చిక"
 msgid "optional, default=%S"
 msgstr "ఐచ్చిక, అప్రమేయ=%S"
 
+#. # LOCALIZATION NOTE (helpIntro): This forms part of the output from the 'help'
+#. # command. 'GCLI' is a project name and should be left untranslated.
+#: helpIntro
+msgctxt "helpIntro"
+msgid ""
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
+msgstr ""
+
 #. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
 #. # when the command in question has sub-commands, before a list of the matching
 #. # sub-commands.
 #: subCommands
 msgid "Sub-Commands"
 msgstr "ఉప-ఆదేశాలు"
-
-#. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
-#. # when the command in question should have sub-commands but in fact has none.
-#: subCommandsNone
-msgctxt "subCommandsNone"
-msgid "None"
-msgstr "ఏదీకాదు"
 
 #. # LOCALIZATION NOTE (contextDesc, contextManual, contextPrefixDesc): These
 #. # strings are used to describe the 'context' command and its 'prefix'
@@ -413,8 +395,8 @@ msgstr "%S గా పిలువబడుచున్న అనుసంధా�
 msgid "Added %S commands."
 msgstr "%S ఆదేశాలను జతచేసెను."
 
-#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2, disconnectPrefixDesc,
-#. # disconnectForceDesc): These strings describe the 'disconnect' command and
+#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2,
+#. # disconnectPrefixDesc): These strings describe the 'disconnect' command and
 #. # all its available parameters. See localization comment for 'connect' for an
 #. # explanation about 'prefix'.
 #: disconnectDesc2
@@ -431,23 +413,12 @@ msgctxt "disconnectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "దిగుమతైన ఆదేశాల కొరకు పేరెంట్ ప్రిఫిక్స్"
 
-#: disconnectForceDesc
-msgid "Ignore outstanding requests"
-msgstr "బాకీవున్న అభ్యర్ధనలను విస్మరించు"
-
 #. # LOCALIZATION NOTE: This is the output of the 'disconnect' command,
 #. # explaining the user what has been done. Parameters: %S is the number of
 #. # commands removed.
 #: disconnectReply
 msgid "Removed %S commands."
 msgstr "తీసివేసిన %S ఆదేశాలు."
-
-#. # LOCALIZATION NOTE: This error message is displayed when the user attempts to
-#. # disconnect before all requests have completed. Parameters: %S is a list of
-#. # incomplete requests.
-#: disconnectOutstanding
-msgid "Outstanding requests (%S)"
-msgstr "బాకీవున్న అభ్యర్ధనలు (%S)"
 
 #. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
 #. # strings describe the 'global' command and its parameters
@@ -560,26 +531,6 @@ msgstr "అమరిక కొరకు కొత్త విలువ"
 msgid "The new value for the specified setting"
 msgstr "తెలుపబడిన అమరిక కొరకు కొత్త విలువ"
 
-#. # LOCALIZATION NOTE (prefSetCheckHeading, prefSetCheckBody, prefSetCheckGo):
-#. # These strings are displayed to the user the first time they try to alter a
-#. # setting.
-#: prefSetCheckHeading
-msgid "This might void your warranty!"
-msgstr "ఇది మీ హామీకు భంగం కలిగించవచ్చు!"
-
-#: prefSetCheckBody
-msgid ""
-"Changing these advanced settings can be harmful to the stability, security, "
-"and performance of this application. You should only continue if you are "
-"sure of what you are doing."
-msgstr ""
-"ఈ అధునాతన అమరికలను మార్చుటం అనేది యీ అనువర్తనం యొక్క స్థిరత్వమునకు, రక్షణకు, మరియు పనితనంకు "
-"హానికరం కాగలదు. మీరు యేమి చేస్తున్నారో మీకు ఖచ్చితంగా తెలిస్తేనే కొనసాగించండి."
-
-#: prefSetCheckGo
-msgid "I'll be careful, I promise!"
-msgstr "నేను జాగ్రత్తగా వుంటానని, మాటయిస్తున్నాను!"
-
 #. # LOCALIZATION NOTE (prefResetDesc, prefResetManual, prefResetSettingDesc,
 #. # prefResetSettingManual): These strings describe the 'pref reset' command and
 #. # all its parameters.
@@ -635,6 +586,7 @@ msgstr ""
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
 #: introTextOpening3
+msgctxt "introTextOpening3"
 msgid ""
 "GCLI is an experiment to create a highly usable command line for web "
 "developers."
@@ -669,12 +621,41 @@ msgstr "ప్రాధమిక స్వాగత సందేశం చూప
 msgid "How eager are the tooltips"
 msgstr "సాధనచిట్కాలు యెంత అత్రుతగా వున్నాయి"
 
-#. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
-#. # help command, just before the list of commands. This text is wrapped inside
-#. # a link to a localized MDN article.
-#: introBody
-msgid "For more information see MDN."
-msgstr "మరింత సమాచారం కొరకు MDN చూడండి."
+#~ msgid "Select a %S…"
+#~ msgstr "%S యెంపికచేయి…"
+
+#~ msgid "Add"
+#~ msgstr "జతచేయి"
+
+#~ msgid "Delete"
+#~ msgstr "తొలగించు"
+
+#~ msgctxt "subCommandsNone"
+#~ msgid "None"
+#~ msgstr "ఏదీకాదు"
+
+#~ msgid "Ignore outstanding requests"
+#~ msgstr "బాకీవున్న అభ్యర్ధనలను విస్మరించు"
+
+#~ msgid "Outstanding requests (%S)"
+#~ msgstr "బాకీవున్న అభ్యర్ధనలు (%S)"
+
+#~ msgid "This might void your warranty!"
+#~ msgstr "ఇది మీ హామీకు భంగం కలిగించవచ్చు!"
+
+#~ msgid ""
+#~ "Changing these advanced settings can be harmful to the stability, "
+#~ "security, and performance of this application. You should only continue "
+#~ "if you are sure of what you are doing."
+#~ msgstr ""
+#~ "ఈ అధునాతన అమరికలను మార్చుటం అనేది యీ అనువర్తనం యొక్క స్థిరత్వమునకు, రక్షణకు, మరియు "
+#~ "పనితనంకు హానికరం కాగలదు. మీరు యేమి చేస్తున్నారో మీకు ఖచ్చితంగా తెలిస్తేనే కొనసాగించండి."
+
+#~ msgid "I'll be careful, I promise!"
+#~ msgstr "నేను జాగ్రత్తగా వుంటానని, మాటయిస్తున్నాను!"
+
+#~ msgid "For more information see MDN."
+#~ msgstr "మరింత సమాచారం కొరకు MDN చూడండి."
 
 #~ msgid "Description"
 #~ msgstr "వివరణ"
