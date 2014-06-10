@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-29 16:18+0100\n"
+"POT-Creation-Date: 2014-06-10 22:26+0100\n"
 "PO-Revision-Date: 2014-05-14 06:15+0000\n"
 "Last-Translator: Ani <peter.ani@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1400048139.000000\n"
@@ -217,6 +217,17 @@ msgstr "&formatD; ടാബുകള്‍"
 msgid "New tab opened"
 msgstr "പുതിയ ടാബ് തുറന്നു"
 
+#: new_private_tab_opened
+msgid "New private tab opened"
+msgstr ""
+
+#. Localization note (switch_button_message): This string should be as short
+#. as possible because it's shown as a label in a toast.  Ideally, this string
+#. is upper-case, to match Google and Android's convention.
+#: switch_button_message
+msgid "SWITCH"
+msgstr ""
+
 #: settings
 msgctxt "settings"
 msgid "Settings"
@@ -235,6 +246,25 @@ msgstr "സങ്കീര്‍ണ്ണമായവ..."
 msgctxt "pref_category_customize"
 msgid "Customize"
 msgstr "ഇഷ്ടാനുസൃതമാക്കുക"
+
+#. Localization note (pref_category_language) : This is the preferences
+#. section in which the user picks the locale in which to display Firefox
+#. UI. The locale includes both language and region concepts.
+#: pref_category_language
+msgctxt "pref_category_language"
+msgid "Language"
+msgstr ""
+
+#: pref_browser_locale
+msgid "Browser language"
+msgstr ""
+
+#. Localization note (locale_system_default) : This string indicates that
+#. Firefox will use the locale currently selected in Android's settings
+#. to display browser chrome.
+#: locale_system_default
+msgid "System default"
+msgstr ""
 
 #: pref_category_search3
 msgctxt "pref_category_search3"
@@ -365,6 +395,17 @@ msgctxt "pref_home_updates_wifi"
 msgid "Only over Wi-Fi"
 msgstr "വൈ-ഫൈ വഴി മാത്രം"
 
+#: pref_home_suggested_sites
+#, fuzzy
+msgid "Show site suggestions"
+msgstr "തിരയല്‍ നിര്‍ദ്ദേശങ്ങള്‍ കാണിക്കുക"
+
+#: pref_home_suggested_sites_summary
+msgid ""
+"Display shortcuts to sites on your homepage that we think you might find "
+"interesting"
+msgstr ""
+
 #. Localization note: These are shown in the left sidebar on tablets
 #: pref_header_customize
 msgctxt "pref_header_customize"
@@ -382,8 +423,15 @@ msgid "Privacy"
 msgstr "സ്വകാര്യത"
 
 #: pref_header_help
+#, fuzzy
+msgctxt "pref_header_help"
 msgid "Help"
 msgstr "സഹായം"
+
+#: pref_header_language
+msgctxt "pref_header_language"
+msgid "Language"
+msgstr ""
 
 #: pref_header_vendor
 msgctxt "pref_header_vendor"
@@ -744,6 +792,13 @@ msgstr "ഒരിക്കലുമില്ല"
 msgid "Always"
 msgstr "എപ്പോഴും"
 
+#. Localization note (help_menu) : This string is used in the main menu
+#: help_menu
+#, fuzzy
+msgctxt "help_menu"
+msgid "Help"
+msgstr "സഹായം"
+
 #: quit
 msgid "Quit"
 msgstr "പുറത്തു കടക്കുക"
@@ -957,7 +1012,10 @@ msgstr "താളിന്റെ വിലാസം കാണിക്കുക"
 msgid "Scroll title bar"
 msgstr "തലക്കെട്ട് പട്ട നീരക്കുക"
 
-#: history_removed
+#. Localization note (page_removed): This string appears in a toast message when
+#. any page is removed frome about:home. This includes pages that are in history,
+#. bookmarks, or reading list.
+#: page_removed
 msgid "Page removed"
 msgstr "താൾ നീക്കം ചെയ്തു"
 
@@ -1000,10 +1058,6 @@ msgstr "വൃത്തിയാക്കാന്‍ സജ്ജീകരണ�
 #: reading_list_added
 msgid "Page added to your Reading List"
 msgstr "താൾ നിങ്ങളുടെ വായനാ പട്ടികയിൽ ചേർത്തു"
-
-#: reading_list_removed
-msgid "Page removed from your Reading List"
-msgstr "താൾ നിങ്ങളുടെ വായനാ പട്ടികയിൽ നിന്നും നീക്കം ചെയ്തു"
 
 #: reading_list_failed
 msgid "Failed to add page to your Reading List"
@@ -1080,6 +1134,14 @@ msgstr "ഒരു സൈറ്റ് ചേർക്കുക"
 msgctxt "home_history_title"
 msgid "History"
 msgstr "നാള്‍വഴി"
+
+#: home_clear_history_button
+msgid "Clear browsing history"
+msgstr ""
+
+#: home_clear_history_confirm
+msgid "Are you sure you want to clear your history?"
+msgstr ""
 
 #: home_bookmarks_empty
 msgid "Bookmarks you save show up here."
@@ -1370,6 +1432,19 @@ msgstr "മെനു"
 #: actionbar_done
 msgid "Done"
 msgstr "ചെയ്തു"
+
+#. Localization note (remote_tabs_last_synced): the variable is replaced by a
+#. "relative time span string" produced by Android.  This string describes the
+#. time the tabs were last synced relative to the current time; examples
+#. include "42 minutes ago", "4 days ago", "last week", etc. The subject of
+#. "Last synced" is one of the user's other Sync clients, typically Firefox on
+#. their desktop or laptop.
+#: remote_tabs_last_synced
+msgid "Last synced: &formatS;"
+msgstr ""
+
+#~ msgid "Page removed from your Reading List"
+#~ msgstr "താൾ നിങ്ങളുടെ വായനാ പട്ടികയിൽ നിന്നും നീക്കം ചെയ്തു"
 
 #~ msgid "Save"
 #~ msgstr "സംരക്ഷിക്കുക"
