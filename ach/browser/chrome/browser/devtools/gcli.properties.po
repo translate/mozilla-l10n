@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-18 12:21+0100\n"
+"POT-Creation-Date: 2014-06-10 15:35+0100\n"
 "PO-Revision-Date: 2013-07-31 09:12+0000\n"
 "Last-Translator: mofire <mofistone@gmail.com>\n"
 "Language-Team: none\n"
@@ -128,26 +128,6 @@ msgstr ""
 #: fileErrDoesntMatch
 msgid "'%1$S' does not match '%2$S'"
 msgstr ""
-
-#. # LOCALIZATION NOTE: When a command has a parameter that has a number of
-#. # pre-defined options the user interface presents these in a drop-down menu,
-#. # where the first 'option' is an indicator that a selection should be made.
-#. # This string describes that first option.
-#: fieldSelectionSelect
-msgid "Select a %S…"
-msgstr "Yer %S…"
-
-#. # LOCALIZATION NOTE (fieldArrayAdd, fieldArrayDel): When a command has a
-#. # parameter that can be repeated multiple times (e.g. like the 'cat a.txt
-#. # b.txt' command) the user interface presents buttons to add and remove
-#. # arguments. This string is used to add arguments.
-#: fieldArrayAdd
-msgid "Add"
-msgstr "Med"
-
-#: fieldArrayDel
-msgid "Delete"
-msgstr "Kwany woko"
 
 #. # LOCALIZATION NOTE: When the menu has displayed all the matches that it
 #. # should (i.e. about 10 items) then we display this to alert the user that
@@ -287,7 +267,7 @@ msgstr "Lok iye"
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
 #: helpManNone
-msgctxt "helpManNone"
+#, fuzzy
 msgid "None"
 msgstr "Peke"
 
@@ -327,19 +307,21 @@ msgstr "me ayera"
 msgid "optional, default=%S"
 msgstr ""
 
+#. # LOCALIZATION NOTE (helpIntro): This forms part of the output from the 'help'
+#. # command. 'GCLI' is a project name and should be left untranslated.
+#: helpIntro
+msgctxt "helpIntro"
+msgid ""
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
+msgstr ""
+
 #. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
 #. # when the command in question has sub-commands, before a list of the matching
 #. # sub-commands.
 #: subCommands
 msgid "Sub-Commands"
 msgstr "Nyig coc-Madito"
-
-#. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
-#. # when the command in question should have sub-commands but in fact has none.
-#: subCommandsNone
-msgctxt "subCommandsNone"
-msgid "None"
-msgstr "Peke"
 
 #. # LOCALIZATION NOTE (contextDesc, contextManual, contextPrefixDesc): These
 #. # strings are used to describe the 'context' command and its 'prefix'
@@ -417,8 +399,8 @@ msgstr ""
 msgid "Added %S commands."
 msgstr ""
 
-#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2, disconnectPrefixDesc,
-#. # disconnectForceDesc): These strings describe the 'disconnect' command and
+#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2,
+#. # disconnectPrefixDesc): These strings describe the 'disconnect' command and
 #. # all its available parameters. See localization comment for 'connect' for an
 #. # explanation about 'prefix'.
 #: disconnectDesc2
@@ -435,22 +417,11 @@ msgctxt "disconnectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr ""
 
-#: disconnectForceDesc
-msgid "Ignore outstanding requests"
-msgstr ""
-
 #. # LOCALIZATION NOTE: This is the output of the 'disconnect' command,
 #. # explaining the user what has been done. Parameters: %S is the number of
 #. # commands removed.
 #: disconnectReply
 msgid "Removed %S commands."
-msgstr ""
-
-#. # LOCALIZATION NOTE: This error message is displayed when the user attempts to
-#. # disconnect before all requests have completed. Parameters: %S is a list of
-#. # incomplete requests.
-#: disconnectOutstanding
-msgid "Outstanding requests (%S)"
 msgstr ""
 
 #. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
@@ -569,27 +540,6 @@ msgstr "Wel manyen pi atera"
 msgid "The new value for the specified setting"
 msgstr "Wel manyen pi tera ma kipoko yore"
 
-#. # LOCALIZATION NOTE (prefSetCheckHeading, prefSetCheckBody, prefSetCheckGo):
-#. # These strings are displayed to the user the first time they try to alter a
-#. # setting.
-#: prefSetCheckHeading
-msgid "This might void your warranty!"
-msgstr "Man romo gengo pora mamegi!"
-
-#: prefSetCheckBody
-msgid ""
-"Changing these advanced settings can be harmful to the stability, security, "
-"and performance of this application. You should only continue if you are "
-"sure of what you are doing."
-msgstr ""
-"Loko ter magi me rwom ma malu twero kelo bal i bedo mot, gwoko kuc, ki tic "
-"maber pi purugram man, I twero ka mede teki i moko adaa ngo ma in itye "
-"katimo."
-
-#: prefSetCheckGo
-msgid "I'll be careful, I promise!"
-msgstr "Abi gwoke matek atika, An acike!"
-
 #. # LOCALIZATION NOTE (prefResetDesc, prefResetManual, prefResetSettingDesc,
 #. # prefResetSettingManual): These strings describe the 'pref reset' command and
 #. # all its parameters.
@@ -646,6 +596,7 @@ msgstr ""
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
 #: introTextOpening3
+msgctxt "introTextOpening3"
 msgid ""
 "GCLI is an experiment to create a highly usable command line for web "
 "developers."
@@ -681,12 +632,36 @@ msgstr "Nyut kwena me jolo"
 msgid "How eager are the tooltips"
 msgstr "Kit mita ango ma diro me gin tic tye kwede"
 
-#. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
-#. # help command, just before the list of commands. This text is wrapped inside
-#. # a link to a localized MDN article.
-#: introBody
-msgid "For more information see MDN."
-msgstr "Pi ngec mukene mapol nen MDN."
+#~ msgid "Select a %S…"
+#~ msgstr "Yer %S…"
+
+#~ msgid "Add"
+#~ msgstr "Med"
+
+#~ msgid "Delete"
+#~ msgstr "Kwany woko"
+
+#~ msgctxt "subCommandsNone"
+#~ msgid "None"
+#~ msgstr "Peke"
+
+#~ msgid "This might void your warranty!"
+#~ msgstr "Man romo gengo pora mamegi!"
+
+#~ msgid ""
+#~ "Changing these advanced settings can be harmful to the stability, "
+#~ "security, and performance of this application. You should only continue "
+#~ "if you are sure of what you are doing."
+#~ msgstr ""
+#~ "Loko ter magi me rwom ma malu twero kelo bal i bedo mot, gwoko kuc, ki "
+#~ "tic maber pi purugram man, I twero ka mede teki i moko adaa ngo ma in "
+#~ "itye katimo."
+
+#~ msgid "I'll be careful, I promise!"
+#~ msgstr "Abi gwoke matek atika, An acike!"
+
+#~ msgid "For more information see MDN."
+#~ msgstr "Pi ngec mukene mapol nen MDN."
 
 #~ msgid "Description"
 #~ msgstr "Lok ikome"

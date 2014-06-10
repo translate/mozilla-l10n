@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-18 12:21+0100\n"
+"POT-Creation-Date: 2014-06-10 15:35+0100\n"
 "PO-Revision-Date: 2013-09-18 07:46+0000\n"
 "Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -130,26 +130,6 @@ msgstr "'%1$S' مۇندەرىجە ئەمەس"
 #: fileErrDoesntMatch
 msgid "'%1$S' does not match '%2$S'"
 msgstr "'%1$S' بىلەن '%2$S' ماسلاشمايدۇ"
-
-#. # LOCALIZATION NOTE: When a command has a parameter that has a number of
-#. # pre-defined options the user interface presents these in a drop-down menu,
-#. # where the first 'option' is an indicator that a selection should be made.
-#. # This string describes that first option.
-#: fieldSelectionSelect
-msgid "Select a %S…"
-msgstr "بىر %S تاللاڭ…"
-
-#. # LOCALIZATION NOTE (fieldArrayAdd, fieldArrayDel): When a command has a
-#. # parameter that can be repeated multiple times (e.g. like the 'cat a.txt
-#. # b.txt' command) the user interface presents buttons to add and remove
-#. # arguments. This string is used to add arguments.
-#: fieldArrayAdd
-msgid "Add"
-msgstr "قوش"
-
-#: fieldArrayDel
-msgid "Delete"
-msgstr "ئۆچۈر"
 
 #. # LOCALIZATION NOTE: When the menu has displayed all the matches that it
 #. # should (i.e. about 10 items) then we display this to alert the user that
@@ -285,7 +265,7 @@ msgstr "ئۈزۈندە"
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
 #: helpManNone
-msgctxt "helpManNone"
+#, fuzzy
 msgid "None"
 msgstr "يوق"
 
@@ -323,19 +303,21 @@ msgstr "تاللاشچان"
 msgid "optional, default=%S"
 msgstr "تاللاشچان، كۆڭۈلدىكى=%S"
 
+#. # LOCALIZATION NOTE (helpIntro): This forms part of the output from the 'help'
+#. # command. 'GCLI' is a project name and should be left untranslated.
+#: helpIntro
+msgctxt "helpIntro"
+msgid ""
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
+msgstr ""
+
 #. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
 #. # when the command in question has sub-commands, before a list of the matching
 #. # sub-commands.
 #: subCommands
 msgid "Sub-Commands"
 msgstr "تارماق بۇيرۇقلار"
-
-#. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
-#. # when the command in question should have sub-commands but in fact has none.
-#: subCommandsNone
-msgctxt "subCommandsNone"
-msgid "None"
-msgstr "يوق"
 
 #. # LOCALIZATION NOTE (contextDesc, contextManual, contextPrefixDesc): These
 #. # strings are used to describe the 'context' command and its 'prefix'
@@ -421,8 +403,8 @@ msgstr "%S ئاتلىق باغلىنىش مەۋجۇت."
 msgid "Added %S commands."
 msgstr "%S بۇيرۇقى قوشۇلدى."
 
-#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2, disconnectPrefixDesc,
-#. # disconnectForceDesc): These strings describe the 'disconnect' command and
+#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2,
+#. # disconnectPrefixDesc): These strings describe the 'disconnect' command and
 #. # all its available parameters. See localization comment for 'connect' for an
 #. # explanation about 'prefix'.
 #: disconnectDesc2
@@ -439,23 +421,12 @@ msgctxt "disconnectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "ئەكىرگەن بۇيرۇقلارنىڭ ئاتا ئالدى قوشۇلغۇچىسى"
 
-#: disconnectForceDesc
-msgid "Ignore outstanding requests"
-msgstr "تاماملانمىغان ئىلتىماسقا پەرۋا قىلما"
-
 #. # LOCALIZATION NOTE: This is the output of the 'disconnect' command,
 #. # explaining the user what has been done. Parameters: %S is the number of
 #. # commands removed.
 #: disconnectReply
 msgid "Removed %S commands."
 msgstr "%S بۇيرۇقى چىقىرىۋېتىلدى."
-
-#. # LOCALIZATION NOTE: This error message is displayed when the user attempts to
-#. # disconnect before all requests have completed. Parameters: %S is a list of
-#. # incomplete requests.
-#: disconnectOutstanding
-msgid "Outstanding requests (%S)"
-msgstr "تاماملانمىغان ئىلتىماسلار (%S)"
 
 #. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
 #. # strings describe the 'global' command and its parameters
@@ -573,27 +544,6 @@ msgstr "تەڭشەكنىڭ يېڭى قىممىتى"
 msgid "The new value for the specified setting"
 msgstr "بەلگىلەنگەن تەڭشەكنىڭ يېڭى قىممىتى"
 
-#. # LOCALIZATION NOTE (prefSetCheckHeading, prefSetCheckBody, prefSetCheckGo):
-#. # These strings are displayed to the user the first time they try to alter a
-#. # setting.
-#: prefSetCheckHeading
-msgid "This might void your warranty!"
-msgstr "بۇنداق بولغاندا كاپالەت يوقىلىشى مۇمكىن!"
-
-#: prefSetCheckBody
-msgid ""
-"Changing these advanced settings can be harmful to the stability, security, "
-"and performance of this application. You should only continue if you are "
-"sure of what you are doing."
-msgstr ""
-"بۇ ئالىي تەڭشەكلەر ئۆزگەرتىلسە مەزكۇر قوللىنىشنىڭ مۇقىملىقى، بىخەتەرلىكى "
-"شۇنداقلا ئۈنۈمىگە ناچار تەسىر پەيدا قىلىشى مۇمكىن. سىزگە ناھايىتى ئېنىق "
-"بولغان ئەھۋالدىلا داۋاملىق مەشغۇلات قىلىڭ."
-
-#: prefSetCheckGo
-msgid "I'll be careful, I promise!"
-msgstr "مەن ئېھتىيات قىلىمەن، ۋەدە بېرەي!"
-
 #. # LOCALIZATION NOTE (prefResetDesc, prefResetManual, prefResetSettingDesc,
 #. # prefResetSettingManual): These strings describe the 'pref reset' command and
 #. # all its parameters.
@@ -650,6 +600,7 @@ msgstr ""
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
 #: introTextOpening3
+msgctxt "introTextOpening3"
 msgid ""
 "GCLI is an experiment to create a highly usable command line for web "
 "developers."
@@ -684,12 +635,42 @@ msgstr "دەسلەپكى قارشى ئېلىش ئۇچۇرىنى كۆرسەت"
 msgid "How eager are the tooltips"
 msgstr "قورال ئەسكەرتىشىنىڭ جىددىيلىك دەرىجىسى"
 
-#. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
-#. # help command, just before the list of commands. This text is wrapped inside
-#. # a link to a localized MDN article.
-#: introBody
-msgid "For more information see MDN."
-msgstr "تېخىمۇ كۆپ ئۇچۇرنى MDN دىن كۆرۈڭ."
+#~ msgid "Select a %S…"
+#~ msgstr "بىر %S تاللاڭ…"
+
+#~ msgid "Add"
+#~ msgstr "قوش"
+
+#~ msgid "Delete"
+#~ msgstr "ئۆچۈر"
+
+#~ msgctxt "subCommandsNone"
+#~ msgid "None"
+#~ msgstr "يوق"
+
+#~ msgid "Ignore outstanding requests"
+#~ msgstr "تاماملانمىغان ئىلتىماسقا پەرۋا قىلما"
+
+#~ msgid "Outstanding requests (%S)"
+#~ msgstr "تاماملانمىغان ئىلتىماسلار (%S)"
+
+#~ msgid "This might void your warranty!"
+#~ msgstr "بۇنداق بولغاندا كاپالەت يوقىلىشى مۇمكىن!"
+
+#~ msgid ""
+#~ "Changing these advanced settings can be harmful to the stability, "
+#~ "security, and performance of this application. You should only continue "
+#~ "if you are sure of what you are doing."
+#~ msgstr ""
+#~ "بۇ ئالىي تەڭشەكلەر ئۆزگەرتىلسە مەزكۇر قوللىنىشنىڭ مۇقىملىقى، بىخەتەرلىكى "
+#~ "شۇنداقلا ئۈنۈمىگە ناچار تەسىر پەيدا قىلىشى مۇمكىن. سىزگە ناھايىتى ئېنىق "
+#~ "بولغان ئەھۋالدىلا داۋاملىق مەشغۇلات قىلىڭ."
+
+#~ msgid "I'll be careful, I promise!"
+#~ msgstr "مەن ئېھتىيات قىلىمەن، ۋەدە بېرەي!"
+
+#~ msgid "For more information see MDN."
+#~ msgstr "تېخىمۇ كۆپ ئۇچۇرنى MDN دىن كۆرۈڭ."
 
 #~ msgid "Description"
 #~ msgstr "چۈشەندۈرۈش"

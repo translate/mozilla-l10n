@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from templates-en-US/browser/metro/chrome/browser.properties
+#. extracted from ./browser/metro/chrome/browser.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-22 11:39+0100\n"
+"POT-Creation-Date: 2014-03-18 12:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,28 +14,86 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.10.0-rc1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # Default search engine
-#: browser.search.defaultenginename
-msgctxt "browser.search.defaultenginename"
-msgid "Bing"
+#. # LOCALIZATION NOTE : FILE Capitalized phrases like "Top Sites", "Bookmarks",
+#. # and "Recent History" are typically used as proper noun phrases to refer to
+#. # the specific visual set (usually displayed as a grid) of top sites,
+#. # bookmarks, etc. displayed on screen, rather than those concepts in general.
+#. # Buttons (like with contextAppbar2.pin.topSites) refer to actions against
+#. # the specific on-screen sets with similarly-named headings.
+#. # LOCALIZATION NOTE (browser.search.contextTextSearchLabel2): search context
+#. # menu item text will be: |Search (browser.search.defaultenginename) for "string"|
+#. # browser.search.defaultenginename is defined in region.properties
+#: browser.search.contextTextSearchLabel2
+msgid "Search %S for \"%S\""
 msgstr ""
 
-#. # Search engine order (order displayed in the search bar dropdown)s
-#: browser.search.order.1
-msgctxt "browser.search.order.1"
-msgid "Bing"
+#. # Contextual Appbar - Button Labels
+#: contextAppbar2.pin.topSites
+msgid "Pin to Top Sites"
 msgstr ""
 
-#: browser.search.order.2
-msgid "Google"
+#: contextAppbar2.pin.bookmarks
+msgid "Pin to Bookmarks"
 msgstr ""
 
-#: browser.search.order.3
-msgid "Yahoo"
+#: contextAppbar2.pin.recentHistory
+msgid "Pin to Recent History"
+msgstr ""
+
+#: contextAppbar2.pin.downloads
+msgid "Pin to Downloads"
+msgstr ""
+
+#: contextAppbar2.unpin.topSites
+msgid "Unpin from Top Sites"
+msgstr ""
+
+#: contextAppbar2.hide.bookmarks
+msgid "Hide Bookmark"
+msgstr ""
+
+#: contextAppbar2.hide.recentHistory
+msgid "Hide"
+msgstr ""
+
+#: contextAppbar2.unpin.downloads
+msgid "Unpin from Downloads"
+msgstr ""
+
+#. # LOCALIZATION NOTE (contextAppbar2.delete): Deletes selected pages.
+#: contextAppbar2.delete
+msgid "Delete"
+msgstr ""
+
+#. # LOCALIZATION NOTE (contextAppbar2.restore): Undoes a previous deletion.
+#. # Button with this label only appears immediately after a deletion.
+#: contextAppbar2.restore
+msgid "Undo delete"
+msgstr ""
+
+#. # LOCALIZATION NOTE (contextAppbar2.clear): Unselects pages without modification.
+#: contextAppbar2.clear
+msgid "Clear selection"
+msgstr ""
+
+#. # Clear private data
+#: clearPrivateData.clearButton
+msgid "Clear"
+msgstr ""
+
+#: clearPrivateData.title2
+msgid "Clear private data"
+msgstr ""
+
+#. # LOCALIZATION NOTE (clearPrivateData.message3): "Options" is the optionsCharm.
+#: clearPrivateData.message3
+msgid ""
+"This will permanently delete the private data you have selected in \"Options"
+"\"."
 msgstr ""
 
 #. # Settings Charms
@@ -47,18 +105,57 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
+#: searchCharm
+msgid "Search"
+msgstr ""
+
+#: feedbackCharm
+msgid "Feedback (online)"
+msgstr ""
+
 #: helpOnlineCharm
 msgid "Help (online)"
 msgstr ""
 
 #. # General
+#. # LOCALIZATION NOTE (browserForSaveLocation): Title for the "Save..." file picker dialog
 #: browserForSaveLocation
 msgid "Save Location"
+msgstr ""
+
+#. # LOCALIZATION NOTE (browserForSaveLocation): Title for the "Open..." file picker dialog
+#: browserForOpenLocation
+msgid "Open Location"
 msgstr ""
 
 #. # Download Manager
 #: downloadsUnknownSize
 msgid "Unknown size"
+msgstr ""
+
+#: downloadOpen
+msgid "Open"
+msgstr ""
+
+#: downloadSave
+msgid "Save"
+msgstr ""
+
+#: downloadCancel
+msgid "Cancel"
+msgstr ""
+
+#: downloadTryAgain
+msgid "Try Again"
+msgstr ""
+
+#: downloadOpenNow
+msgid "Open it now"
+msgstr ""
+
+#. # LOCALIZATION NOTE (downloadShowInFiles): 'Files' refers to the Windows 8 file explorer
+#: downloadShowInFiles
+msgid "Show in Files"
 msgstr ""
 
 #. # Alerts
@@ -78,8 +175,18 @@ msgstr ""
 msgid "%S has finished downloading"
 msgstr ""
 
-#: alertCantOpenDownload
-msgid "Can't open file. Tap to save it."
+#. # LOCALIZATION NOTE (alertDownloadsStart2): Used in a notification bar for download progress
+#. # #1 is the file name, #2 is the amount downloaded so far / total amount to download, and #3 is seconds remaining.
+#: alertDownloadsStart2
+msgid "Downloading #1, #2, #3"
+msgstr ""
+
+#: alertDownloadsDone2
+msgid "%S has been downloaded"
+msgstr ""
+
+#: alertTapToSave
+msgid "Tap to save this file."
 msgstr ""
 
 #: alertDownloadsSize
@@ -90,85 +197,75 @@ msgstr ""
 msgid "Not enough storage space"
 msgstr ""
 
+#. # LOCALIZATION NOTE (alertDownloadSave2): #1 is the file name, #2 is the file size, #3 is the file host
+#: alertDownloadSave2
+msgid "Do you want to open or save #1 (#2) from #3?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (alertDownloadMultiple): Semi-colon list of plural forms.
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is the number of files, #2 is (amount downloaded so far / total amount to download) and #3 is seconds remaining
+#: alertDownloadMultiple
+msgid "Downloading one file, #2, #3;Downloading #1 files, #2, #3"
+msgstr ""
+
+#. # LOCALIZATION NOTE (alertMultipleDownloadsComplete): Semi-colon list of plural forms.
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is the number of downloads completed
+#: alertMultipleDownloadsComplete
+msgid "One download has been completed;#1 downloads have been completed"
+msgstr ""
+
+#: alertDownloadFailed
+msgid "Sorry, downloading %S failed."
+msgstr ""
+
 #. # Popup Blocker
-#: popupWarning
-msgid "%S prevented this site from opening a pop-up window."
+#. # LOCALIZATION NOTE (popupWarning.message): Semi-colon list of plural forms.
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName and #2 is the number of pop-ups blocked.
+#: popupWarning.message
+msgid ""
+"#1 prevented this site from opening a pop-up window.;#1 prevented this site "
+"from opening #2 pop-up windows."
 msgstr ""
 
-#: popupWarningMultiple
-msgid "%S prevented this site from opening %S pop-up windows."
+#: popupButtonAllowOnce2
+msgid "Allow once"
 msgstr ""
 
-#: popupButtonAllowOnce
-msgid "Show"
+#: popupButtonAlwaysAllow3
+msgid "Always allow"
 msgstr ""
 
-#: popupButtonAlwaysAllow2
-msgid "Always Show"
+#: popupButtonNeverWarn3
+msgid "Never allow"
 msgstr ""
 
-#: popupButtonNeverWarn2
-msgid "Never Show"
+#. # ContentPermissionsPrompt
+#: contentPermissions.alwaysForSite
+msgid "Always for this site"
 msgstr ""
 
-#. # Site Identity
-#: identity.identified.verifier
-msgid "Verified by: %S"
-msgstr ""
-
-#: identity.identified.verified_by_you
-msgid "You have added a security exception for this site"
-msgstr ""
-
-#: identity.identified.state_and_country
-msgid "%S, %S"
-msgstr ""
-
-#: identity.identified.title_with_country
-msgid "%S (%S)"
-msgstr ""
-
-#: identity.encrypted2
-msgid "Encrypted"
-msgstr ""
-
-#: identity.unencrypted2
-msgid "Not encrypted"
-msgstr ""
-
-#: identity.unknown.tooltip
-msgid "This website does not supply identity information."
-msgstr ""
-
-#: identity.ownerUnknown2
-msgid "(unknown)"
+#: contentPermissions.neverForSite
+msgid "Never for this site"
 msgstr ""
 
 #. # Geolocation UI
-#: geolocation.allow
-msgid "Share"
+#. # LOCALIZATION NOTE (geolocation2.allow): If you're having trouble with the
+#. # word Share, please use Allow and Block in your language.
+#: geolocation2.allow
+msgid "Share location"
 msgstr ""
 
-#: geolocation.dontAllow
-msgid "Don't share"
+#. # LOCALIZATION NOTE (geolocation2.wantsTo offlineApps.wantsTo indexedDBQuota.wantsTo):
+#. # %S is the domain name of the web site.
+#: geolocation2.wantsTo
+msgid "Share your location with %S?"
 msgstr ""
 
-#: geolocation.wantsTo
-msgid "%S wants your location."
-msgstr ""
-
-#. # Desktop notification UI
-#: desktopNotification.allow
-msgctxt "desktopNotification.allow"
-msgid "Allow"
-msgstr ""
-
-#: desktopNotification.dontAllow
-msgid "Don't allow"
-msgstr ""
-
-#: desktopNotification.wantsTo
-msgid "%S wants to use notifications."
+#: geolocation.learnMore
+msgid "Learn more…"
 msgstr ""
 
 #. # Error Console
@@ -181,33 +278,12 @@ msgid "Warning:"
 msgstr ""
 
 #. # Offline web applications
-#: offlineApps.available2
-msgctxt "offlineApps.available2"
-msgid "%S wants to store data on your device for offline use."
-msgstr ""
-
 #: offlineApps.allow
 msgctxt "offlineApps.allow"
 msgid "Allow"
 msgstr ""
 
-#: offlineApps.never
-msgctxt "offlineApps.never"
-msgid "Don't Allow"
-msgstr ""
-
-#: offlineApps.notNow
-msgid "Not Now"
-msgstr ""
-
-#. # New-style ContentPermissionPrompt values
-#: offlineApps.dontAllow
-msgctxt "offlineApps.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
 #: offlineApps.wantsTo
-msgctxt "offlineApps.wantsTo"
 msgid "%S wants to store data on your device for offline use."
 msgstr ""
 
@@ -217,135 +293,49 @@ msgctxt "indexedDBQuota.allow"
 msgid "Allow"
 msgstr ""
 
-#: indexedDBQuota.dontAllow
-msgctxt "indexedDBQuota.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
 #: indexedDBQuota.wantsTo
 msgid "%S wants to store a lot of data on your device for offline use."
-msgstr ""
-
-#. # Open Web Apps management API
-#: openWebappsManage.allow
-msgctxt "openWebappsManage.allow"
-msgid "Allow"
-msgstr ""
-
-#: openWebappsManage.dontAllow
-msgctxt "openWebappsManage.dontAllow"
-msgid "Don't Allow"
-msgstr ""
-
-#: openWebappsManage.wantsTo
-msgid "%S wants to manage applications on your device."
-msgstr ""
-
-#. # Bookmark List
-#: bookmarkList.desktop
-msgid "Desktop Bookmarks"
-msgstr ""
-
-#. # Closing Tabs
-#: tabs.closeWarningTitle
-msgid "Confirm close"
-msgstr ""
-
-#. # LOCALIZATION NOTE (tabs.closeWarning): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of tabs (must be greater than 1)
-#: tabs.closeWarning
-msgid "NOT USED;You are about to close #1 tabs. Continue?"
-msgstr ""
-
-#: tabs.closeButton
-msgid "Close tabs"
-msgstr ""
-
-#: tabs.closeWarningPromptMe
-msgid "Warn me when I attempt to close multiple tabs"
 msgstr ""
 
 #: tabs.emptyTabTitle
 msgid "New Tab"
 msgstr ""
 
-#. # Homepage
-#. # LOCALIZATION NOTE: homepage.custom2 is the text displayed on the selector button if
-#. # the user selects a webpage to be the startpage. We can't display the entire URL
-#. # or webpage title on the menulist
-#: homepage.custom2
-msgid "Custom Page"
-msgstr ""
-
-#. # "Clear Permissions" items
-#: pageactions.geolocation
-msgid "Location"
-msgstr ""
-
-#: pageactions.popup
-msgid "Popups"
-msgstr ""
-
-#: pageactions.offline-app
-msgid "Offline Storage"
-msgstr ""
-
-#: pageactions.password
-msgid "Password"
-msgstr ""
-
-#: pageactions.desktop-notification
-msgid "Web Notifications"
-msgstr ""
-
-#: pageactions.openWebappsManage
-msgid "Manage Web Apps"
-msgstr ""
-
 #. # Open Search
-#: opensearch.search
-msgid "Search: %S"
+#. # LOCALIZATION NOTE (opensearch.search.header): %S is the word or phrase
+#. # typed by the user in the urlbar to search
+#: opensearch.search.header
+msgid "Search for “%S” on:"
 msgstr ""
 
-#. # Open in Another App
-#. # LOCALIZATION NOTE: openinapp.specific is the text displayed if there is a single external app
-#. # %S is the name of the app, like "YouTube" or "Picassa"
-#: openinapp.specific
-msgid "Open in %S App"
+#. # Check for Updates in the About Panel - button labels and accesskeys
+#. # LOCALIZATION NOTE - all of the following update buttons labels will only be
+#. # displayed one at a time. So, if a button is displayed nothing else will
+#. # be displayed alongside of the button. The button when displayed is located
+#. # directly under the Firefox version in the about dialog (see bug 596813 for
+#. # screenshots).
+#: update.checkInsideButton.label update.checkInsideButton.accesskey
+msgid "&Check for Updates"
 msgstr ""
 
-#: openinapp.general
-msgid "Open in Another App"
+#: update.resumeButton.label update.resumeButton.accesskey
+msgid "Resume &Downloading %S…"
 msgstr ""
 
-#. # Clear Private Data
-#: clearPrivateData.title
-msgid "Clear Private Data"
+#: update.openUpdateUI.applyButton.label
+#: update.openUpdateUI.applyButton.accesskey
+msgid "&Apply Update…"
 msgstr ""
 
-#: clearPrivateData.message
-msgid ""
-"Delete your browsing history and settings, including passwords and cookies?"
+#: update.restart.updateButton.label update.restart.updateButton.accesskey
+msgid "&Restart to Update"
 msgstr ""
 
-#. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
-#. # "true" (spelled and capitalized exactly that way) to show the "Character
-#. # Encoding" menu in the site menu. Any other value will hide it. Without this
-#. # setting, the "Character Encoding" menu must be enabled via Preferences.
-#. # This is not a string to translate. If users frequently use the "Character Encoding"
-#. # menu, set this to "true". Otherwise, you can leave it as "false".
-#: browser.menu.showCharacterEncoding
-msgid "false"
+#: update.openUpdateUI.upgradeButton.label
+#: update.openUpdateUI.upgradeButton.accesskey
+msgid "&Upgrade Now…"
 msgstr ""
 
-#. # LOCALIZATION NOTE (intl.charsetmenu.browser.static): Set to a series of comma separated
-#. # values for charsets that the user can select from in the Character Encoding menu.
-#: intl.charsetmenu.browser.static
-msgid "iso-8859-1,utf-8,x-gbk,big5,iso-2022-jp,shift_jis,euc-jp"
-msgstr ""
-
-#. #Text Selection
-#: selectionHelper.textCopied
-msgid "Text copied to clipboard"
+#: update.restart.upgradeButton.label update.restart.upgradeButton.accesskey
+msgid "&Upgrade Now"
 msgstr ""

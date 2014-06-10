@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-18 12:21+0100\n"
+"POT-Creation-Date: 2014-06-10 15:35+0100\n"
 "PO-Revision-Date: 2014-04-25 02:22+0000\n"
 "Last-Translator: Sutha <sutha@open.org.kh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1398392579.000000\n"
@@ -129,26 +129,6 @@ msgstr "'%1$S' មិនមែន​ជា​ថត"
 #: fileErrDoesntMatch
 msgid "'%1$S' does not match '%2$S'"
 msgstr "'%1$S' មិន​ផ្គូផ្គង​ជាមួយ '%2$S'"
-
-#. # LOCALIZATION NOTE: When a command has a parameter that has a number of
-#. # pre-defined options the user interface presents these in a drop-down menu,
-#. # where the first 'option' is an indicator that a selection should be made.
-#. # This string describes that first option.
-#: fieldSelectionSelect
-msgid "Select a %S…"
-msgstr "ជ្រើស %S ..."
-
-#. # LOCALIZATION NOTE (fieldArrayAdd, fieldArrayDel): When a command has a
-#. # parameter that can be repeated multiple times (e.g. like the 'cat a.txt
-#. # b.txt' command) the user interface presents buttons to add and remove
-#. # arguments. This string is used to add arguments.
-#: fieldArrayAdd
-msgid "Add"
-msgstr "បន្ថែម"
-
-#: fieldArrayDel
-msgid "Delete"
-msgstr "លុប"
 
 #. # LOCALIZATION NOTE: When the menu has displayed all the matches that it
 #. # should (i.e. about 10 items) then we display this to alert the user that
@@ -282,7 +262,7 @@ msgstr "សង្ខេប"
 #. # LOCALIZATION NOTE: This message is displayed in the help page if the command
 #. # has no parameters.
 #: helpManNone
-msgctxt "helpManNone"
+#, fuzzy
 msgid "None"
 msgstr "គ្មាន"
 
@@ -320,19 +300,22 @@ msgstr "ជា​ជម្រើស"
 msgid "optional, default=%S"
 msgstr "ជា​ជម្រើស, លំនាំដើម=%S"
 
+#. # LOCALIZATION NOTE (helpIntro): This forms part of the output from the 'help'
+#. # command. 'GCLI' is a project name and should be left untranslated.
+#: helpIntro
+#, fuzzy
+msgctxt "helpIntro"
+msgid ""
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
+msgstr "GCLI ជា​បទ​ពិសោធន៍​ក្នុង​ការ​បង្កើត​ពាក្យ​បញ្ជា​ដែល​អាច​ប្រើ​បាន​សម្រាប់​អ្នក​អភិវឌ្ឍន៍​បណ្ដាញ។"
+
 #. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
 #. # when the command in question has sub-commands, before a list of the matching
 #. # sub-commands.
 #: subCommands
 msgid "Sub-Commands"
 msgstr "ពាក្យ​បញ្ជា​រង"
-
-#. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
-#. # when the command in question should have sub-commands but in fact has none.
-#: subCommandsNone
-msgctxt "subCommandsNone"
-msgid "None"
-msgstr "គ្មាន"
 
 #. # LOCALIZATION NOTE (contextDesc, contextManual, contextPrefixDesc): These
 #. # strings are used to describe the 'context' command and its 'prefix'
@@ -414,8 +397,8 @@ msgstr "មាន %S ដែល​បាន​ហៅ​ការ​តភ្ជ�
 msgid "Added %S commands."
 msgstr "បាន​បន្ថែម​ពាក្យ​បញ្ជា %S ។"
 
-#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2, disconnectPrefixDesc,
-#. # disconnectForceDesc): These strings describe the 'disconnect' command and
+#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2,
+#. # disconnectPrefixDesc): These strings describe the 'disconnect' command and
 #. # all its available parameters. See localization comment for 'connect' for an
 #. # explanation about 'prefix'.
 #: disconnectDesc2
@@ -432,23 +415,12 @@ msgctxt "disconnectPrefixDesc"
 msgid "Parent prefix for imported commands"
 msgstr "បុព្វបទ​មេ​សម្រាប់​ពាក្យ​បញ្ជា​ដែល​បាន​នាំចូល"
 
-#: disconnectForceDesc
-msgid "Ignore outstanding requests"
-msgstr "មិន​អើពើ​សំណើ​ដែល​ល្អ"
-
 #. # LOCALIZATION NOTE: This is the output of the 'disconnect' command,
 #. # explaining the user what has been done. Parameters: %S is the number of
 #. # commands removed.
 #: disconnectReply
 msgid "Removed %S commands."
 msgstr "បាន​លុប​ពាក្យ​បញ្ជា %S ។"
-
-#. # LOCALIZATION NOTE: This error message is displayed when the user attempts to
-#. # disconnect before all requests have completed. Parameters: %S is a list of
-#. # incomplete requests.
-#: disconnectOutstanding
-msgid "Outstanding requests (%S)"
-msgstr "សំណើ​ល្អ (%S)"
 
 #. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
 #. # strings describe the 'global' command and its parameters
@@ -561,26 +533,6 @@ msgstr "តម្លៃ​ថ្មី​សម្រាប់​ការ​ក
 msgid "The new value for the specified setting"
 msgstr "តម្លៃ​ថ្មី​សម្រាបើ​ការ​កំណត់​ដែល​បាន​បញ្ជាក់"
 
-#. # LOCALIZATION NOTE (prefSetCheckHeading, prefSetCheckBody, prefSetCheckGo):
-#. # These strings are displayed to the user the first time they try to alter a
-#. # setting.
-#: prefSetCheckHeading
-msgid "This might void your warranty!"
-msgstr "នេះ​អាច​បណ្ដាល​ឲ្យ​ការ​ធានា​របស់​អ្នក​ក្លាយ​ជា​មោឃៈ !"
-
-#: prefSetCheckBody
-msgid ""
-"Changing these advanced settings can be harmful to the stability, security, "
-"and performance of this application. You should only continue if you are "
-"sure of what you are doing."
-msgstr ""
-"ការ​ផ្លាស់ប្ដូរ​ការ​កំណត់​កម្រិត​ខ្ពស់​ទាំងនេះ អាច​បណ្ដាល​ឲ្យ​អន្តរាយ​ដល់​ស្ថិរភាព សុវត្ថិភាព និង​ប្រតិបត្តិការ​របស់​"
-"កម្មវិធី ។ អ្នក​គួរតែ​បន្ត​ក្នុង​ករណី​ដែល​អ្នក​ប្រាកដ​ពី​អ្វី​ដែល​អ្នក​កំពុង​ធ្វើ​តែប៉ុណ្ណោះ ។"
-
-#: prefSetCheckGo
-msgid "I'll be careful, I promise!"
-msgstr "ខ្ញុំ​នឹង​ប្រុងប្រយ័ត្ន ខ្ញុំ​សន្យា!"
-
 #. # LOCALIZATION NOTE (prefResetDesc, prefResetManual, prefResetSettingDesc,
 #. # prefResetSettingManual): These strings describe the 'pref reset' command and
 #. # all its parameters.
@@ -635,6 +587,8 @@ msgstr "បង្ហាញ​ឡើងវិញ​នូវ​សារ​ដែ
 #. # first opens the developer toolbar to explain the command line, and is shown
 #. # each time it is opened until the user clicks the 'Got it!' button.
 #: introTextOpening3
+#, fuzzy
+msgctxt "introTextOpening3"
 msgid ""
 "GCLI is an experiment to create a highly usable command line for web "
 "developers."
@@ -669,12 +623,41 @@ msgstr "បង្ហាញ​សារ​ស្វាគមន៍​ដំបូ
 msgid "How eager are the tooltips"
 msgstr "កម្រិត​សារទរ​របស់​ព័ត៌មាន​ជំនួយ"
 
-#. # LOCALIZATION NOTE: This text is displayed at the top of the output for the
-#. # help command, just before the list of commands. This text is wrapped inside
-#. # a link to a localized MDN article.
-#: introBody
-msgid "For more information see MDN."
-msgstr "សម្រាប់​ព័ត៌មាន​បន្ថែម សូម​មើល MDN ។"
+#~ msgid "Select a %S…"
+#~ msgstr "ជ្រើស %S ..."
+
+#~ msgid "Add"
+#~ msgstr "បន្ថែម"
+
+#~ msgid "Delete"
+#~ msgstr "លុប"
+
+#~ msgctxt "subCommandsNone"
+#~ msgid "None"
+#~ msgstr "គ្មាន"
+
+#~ msgid "Ignore outstanding requests"
+#~ msgstr "មិន​អើពើ​សំណើ​ដែល​ល្អ"
+
+#~ msgid "Outstanding requests (%S)"
+#~ msgstr "សំណើ​ល្អ (%S)"
+
+#~ msgid "This might void your warranty!"
+#~ msgstr "នេះ​អាច​បណ្ដាល​ឲ្យ​ការ​ធានា​របស់​អ្នក​ក្លាយ​ជា​មោឃៈ !"
+
+#~ msgid ""
+#~ "Changing these advanced settings can be harmful to the stability, "
+#~ "security, and performance of this application. You should only continue "
+#~ "if you are sure of what you are doing."
+#~ msgstr ""
+#~ "ការ​ផ្លាស់ប្ដូរ​ការ​កំណត់​កម្រិត​ខ្ពស់​ទាំងនេះ អាច​បណ្ដាល​ឲ្យ​អន្តរាយ​ដល់​ស្ថិរភាព សុវត្ថិភាព និង​ប្រតិបត្តិការ​"
+#~ "របស់​កម្មវិធី ។ អ្នក​គួរតែ​បន្ត​ក្នុង​ករណី​ដែល​អ្នក​ប្រាកដ​ពី​អ្វី​ដែល​អ្នក​កំពុង​ធ្វើ​តែប៉ុណ្ណោះ ។"
+
+#~ msgid "I'll be careful, I promise!"
+#~ msgstr "ខ្ញុំ​នឹង​ប្រុងប្រយ័ត្ន ខ្ញុំ​សន្យា!"
+
+#~ msgid "For more information see MDN."
+#~ msgstr "សម្រាប់​ព័ត៌មាន​បន្ថែម សូម​មើល MDN ។"
 
 #~ msgid "Description"
 #~ msgstr "សេចក្ដី​ពិពណ៌នា"
