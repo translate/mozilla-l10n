@@ -1,0 +1,38 @@
+#!/bin/bash
+
+push="yes"
+
+source $(dirname $0)/ttk.inc.sh
+
+if [ $# -lt 1 ]; then
+	echo $(basename $0) [lang|changeid]
+	echo "We don't allow all commits as we might overwrite other peoples work"
+	exit 1
+fi
+
+langs=$(which_langs $*)
+
+for lang in $langs
+do
+	ttk-get $lang
+	# FIXME handle initialised languages
+	(
+		cd ${base_dir}/$lang
+		for dir in $PRODUCT_DIRS $RETIRED_PRODUCT_DIRS
+		do
+			git add -A $dir
+		done
+		git commit -m "[$lang] pull from Pootle ($project)"
+	)
+	ttk-build --no-xpi --no-tarball --no-compare-locales $lang
+	(cd ${base_dir}; git checkout $lang)
+	(
+		mozlang=$(get_language_upstream $lang)
+		cd ${base_dir}/build/${L10N_VER}/$mozlang
+		hg addremove $PRODUCT_DIRS $RETIRED_PRODUCT_DIRS
+		hg commit -m "[$mozlang] update from Pootle ($project)"
+		[[ $push ]] && hg push
+	)
+done
+
+[[ $push ]] && git push
