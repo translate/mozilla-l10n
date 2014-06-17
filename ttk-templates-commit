@@ -1,0 +1,20 @@
+#!/bin/bash
+
+source $(dirname $0)/ttk.inc.sh
+
+ttk-build templates
+git add -A templates templates-en-US
+git diff --quiet --cached --exit-code templates
+if [ $? -ne 0 ]; then
+	git commit -m "Templates: update ($project)" templates templates-en-US
+	ttk-put templates
+	id=$(ttk-changeid)
+	ttk-get
+	git add $(ttk-langs)
+	git commit -m "Various: pre templates update ($project)"
+	ttk-build --no-compare-locales --no-xpi --no-tarball
+	git add $(ttk-langs)
+	git commit -m "All: update against templates ($project)"
+	ttk-put --keep=$id
+fi
+git push
