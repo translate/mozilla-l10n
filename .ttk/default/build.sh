@@ -189,7 +189,6 @@ if [ $opt_vc ]; then
 	rm -rf ${PO_DIR}/en-US
 	# Revert files that we don't want to maintain
 	for rmfile in browser/chrome/browser-region/region.properties \
-		      browser/metro/chrome/region.properties \
 		      browser/searchplugins/list.txt \
 		      browser/searchplugins/metrolist.txt \
 		      mobile/chrome/region.properties \
@@ -303,7 +302,6 @@ do
 		(cd ${L10N_DIR}/${mozlang}
 		hg revert $hgverbosity --no-backup \
 			browser/chrome/browser-region/region.properties \
-			browser/metro/chrome/region.properties \
 			browser/searchplugins/list.txt \
 			mobile/chrome/region.properties \
 			mail/chrome/messenger-region/region.properties
