@@ -2,8 +2,19 @@
 
 source $(dirname $0)/ttk.inc.sh
 
+#push="yes"
+push=
+
 ttk-build templates
-git add -A templates templates-en-US
+(
+	for dir in $PRODUCT_DIRS $RETIRED_PRODUCT_DIRS
+	do
+		cd ${base_dir}/templates
+		git add -A $dir
+		cd ${base_dir}/templates-en-US
+		git add -A $dir
+	done
+)
 git diff --quiet --cached --exit-code templates
 if [ $? -ne 0 ]; then
 	git commit -m "Templates: update ($project)" templates templates-en-US
@@ -17,4 +28,4 @@ if [ $? -ne 0 ]; then
 	git commit -m "All: update against templates ($project)"
 	ttk-put --keep=$id
 fi
-git push
+[[ $push ]] && git push
