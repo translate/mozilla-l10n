@@ -1,6 +1,7 @@
 #!/bin/bash
 
 push="yes"
+#push=
 
 source $(dirname $0)/ttk.inc.sh
 
@@ -14,20 +15,21 @@ langs=$(which_langs $*)
 
 for lang in $langs
 do
+	mozlang=$(get_language_upstream $lang)
+	pootlelang=$(get_language_pootle $lang)
 	ttk-get $lang
 	# FIXME handle initialised languages
 	(
-		cd ${base_dir}/$lang
+		cd ${base_dir}/$pootlelang
 		for dir in $PRODUCT_DIRS $RETIRED_PRODUCT_DIRS
 		do
 			git add -A $dir
 		done
-		git commit -m "[$lang] pull from Pootle ($project)"
+		git commit -m "[$pootlelang] pull from Pootle ($project)"
 	)
 	ttk-build --no-xpi --no-tarball --no-compare-locales $lang
-	(cd ${base_dir}; git checkout $lang)
+	(cd ${base_dir}; git checkout $pootlelang)
 	(
-		mozlang=$(get_language_upstream $lang)
 		cd ${base_dir}/build/${L10N_VER}/$mozlang
 		hg addremove $PRODUCT_DIRS $RETIRED_PRODUCT_DIRS
 		hg commit -m "[$mozlang] update from Pootle ($project)"
