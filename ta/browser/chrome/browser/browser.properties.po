@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-10 15:35+0100\n"
+"POT-Creation-Date: 2014-07-22 13:39+0100\n"
 "PO-Revision-Date: 2014-07-03 04:06+0000\n"
 "Last-Translator: Arun Kumar <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1404360390.000000\n"
@@ -344,6 +344,33 @@ msgstr "முறிவுற்ற அறிக்கையை &சமர்ப
 msgctxt "crashedpluginsMessage.learnMore"
 msgid "Learn More…"
 msgstr "மேலும் அறிய…"
+
+#. # Keyword fixup messages
+#. # LOCALIZATION NOTE (keywordURIFixup.message): Used when the user tries to visit
+#. # a local host page, by the time the DNS request recognizes it, we have already
+#. # loaded a search page for the given word.  An infobar then asks to the user
+#. # whether he rather wanted to visit the host.  %S is the recognized host.
+#: keywordURIFixup.message
+msgid "Did you mean to go to %S?"
+msgstr ""
+
+#: keywordURIFixup.goTo
+msgid "Yes, take me to %S"
+msgstr ""
+
+#: keywordURIFixup.goTo.accesskey
+msgid "Y"
+msgstr ""
+
+#: keywordURIFixup.dismiss
+#, fuzzy
+msgid "No thanks"
+msgstr "இல்லை நன்றி"
+
+#: keywordURIFixup.dismiss.accesskey
+msgctxt "keywordURIFixup.dismiss.accesskey"
+msgid "N"
+msgstr ""
 
 #. ## Plugin doorhanger strings
 #. # LOCALIZATION NOTE (pluginActivateNew.message): Used for newly-installed
@@ -752,10 +779,6 @@ msgstr "இந்த இணைய தளத்தில் உங்கள் �
 #: identity.unknown.tooltip
 msgid "This website does not supply identity information."
 msgstr "இந்த இணைய தளம் அடையாள விவரங்களை கொடுக்கவில்லை."
-
-#: identity.ownerUnknown2
-msgid "(unknown)"
-msgstr "(தெரியாதது)"
 
 #. # LOCALIZATION NOTE (identity.chrome): %S is replaced with the brandShortName.
 #: identity.chrome
@@ -1186,11 +1209,10 @@ msgstr "இந்தப் பெயரில் உள்நுழைந்த�
 msgid "Sign &Out"
 msgstr "&வெளியேறு"
 
-#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
-#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
-#. # Semicolon-separated list of plural forms. See:
-#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # The number of devices can be either one or two.
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message,
+#. #                    getUserMedia.shareScreen.message, getUserMedia.shareCameraAndMicrophone.message,
+#. #                    getUserMedia.shareScreenAndMicrophone.message):
+#. #  %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
 msgstr "நீங்கள் %S உடன் உங்கள் கேமராவை பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
@@ -1199,22 +1221,56 @@ msgstr "நீங்கள் %S உடன் உங்கள் கேமரா
 msgid "Would you like to share your microphone with %S?"
 msgstr "நீங்கள் %S உடன் உங்கள் மைக்ரோபோனை பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
 
+#: getUserMedia.shareScreen.message
+#, fuzzy
+msgid "Would you like to share your screen with %S?"
+msgstr "நீங்கள் %S உடன் உங்கள் கேமராவை பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
+
 #: getUserMedia.shareCameraAndMicrophone.message
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "நீங்கள் %S உடன் உங்கள் கேமராவை மற்றும் மைக்ரோபோனை பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
+
+#: getUserMedia.shareScreenAndMicrophone.message
+#, fuzzy
+msgid "Would you like to share your microphone and screen with %S?"
+msgstr "நீங்கள் %S உடன் உங்கள் மைக்ரோபோனை பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
 
 #: getUserMedia.noVideo.label
 msgid "No Video"
 msgstr "வீடியோ இல்லை"
 
+#: getUserMedia.noWindowOrScreen.label
+msgid "No Window or Screen"
+msgstr ""
+
 #: getUserMedia.noAudio.label
 msgid "No Audio"
 msgstr "ஆடியோ இல்லை"
 
+#: getUserMedia.shareEntireScreen.label
+msgid "Entire screen"
+msgstr ""
+
+#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # The number of devices can be either one or two.
 #: getUserMedia.shareSelectedDevices.label
 #: getUserMedia.shareSelectedDevices.accesskey
 msgid "&Share Selected Device;Share Selected Devices"
 msgstr "தேர்ந்தெடுக்கப்பட்ட சாதனத்தைப் &பகிரவும்;தேர்ந்தெடுக்கப்பட்ட சாதனங்களைப் பகிரவும்"
+
+#: getUserMedia.shareScreen.label
+msgid "Share Screen"
+msgstr ""
+
+#: getUserMedia.shareWindow.label
+msgid "Share Selected Window"
+msgstr ""
+
+#: getUserMedia.shareSelectedItems.label
+msgid "Share Selected Items"
+msgstr ""
 
 #: getUserMedia.always.label getUserMedia.always.accesskey
 msgid "&Always Share"
@@ -1239,6 +1295,16 @@ msgstr "தற்போது நீங்கள் உங்கள் மைக
 #: getUserMedia.sharingCameraAndMicrophone.message2
 msgid "You are currently sharing your camera and microphone with this page."
 msgstr "தற்போது நீங்கள் உங்கள் கேமராவையும் மைக்ரோஃபோனையும் இந்தப் பக்கத்துடன் பகிர்கிறீர்கள்."
+
+#: getUserMedia.sharingScreen.message
+#, fuzzy
+msgid "You are currently sharing your screen with this page."
+msgstr "தற்போது நீங்கள் உங்கள் கேமராவை இந்தப் பக்கத்துடன் பகிர்கிறீர்கள்."
+
+#: getUserMedia.sharingWindow.message
+#, fuzzy
+msgid "You are currently sharing a window with this page."
+msgstr "தற்போது நீங்கள் உங்கள் கேமராவை இந்தப் பக்கத்துடன் பகிர்கிறீர்கள்."
 
 #: getUserMedia.continueSharing.label getUserMedia.continueSharing.accesskey
 msgid "&Continue Sharing"
@@ -1295,6 +1361,9 @@ msgstr "குறிப்பு"
 #: customizeTips.tip0.learnMore
 msgid "Learn more"
 msgstr "மேலும் அறிய"
+
+#~ msgid "(unknown)"
+#~ msgstr "(தெரியாதது)"
 
 #~ msgctxt "crashedpluginsMessage.reloadButton.accesskey"
 #~ msgid "R"
@@ -1576,9 +1645,6 @@ msgstr "மேலும் அறிய"
 
 #~ msgid "Yes, use %1$S"
 #~ msgstr "ஆம், %1$S ஐப் பயன்படுத்து"
-
-#~ msgid "Y"
-#~ msgstr "Y"
 
 #~ msgid "No, continue using '%1$S'"
 #~ msgstr "வேண்டாம் '%1$S' ஐயே தொடர்ந்து பயன்படுத்து"

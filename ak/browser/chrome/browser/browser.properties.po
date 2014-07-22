@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-10 15:35+0100\n"
+"POT-Creation-Date: 2014-07-22 13:39+0100\n"
 "PO-Revision-Date: 2014-02-13 13:55+0000\n"
 "Last-Translator: arky <hitmanarky@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -342,6 +342,33 @@ msgstr "Bɔ amande fa krahye ho"
 msgctxt "crashedpluginsMessage.learnMore"
 msgid "Learn More…"
 msgstr "Sua bio ka ho…"
+
+#. # Keyword fixup messages
+#. # LOCALIZATION NOTE (keywordURIFixup.message): Used when the user tries to visit
+#. # a local host page, by the time the DNS request recognizes it, we have already
+#. # loaded a search page for the given word.  An infobar then asks to the user
+#. # whether he rather wanted to visit the host.  %S is the recognized host.
+#: keywordURIFixup.message
+msgid "Did you mean to go to %S?"
+msgstr ""
+
+#: keywordURIFixup.goTo
+msgid "Yes, take me to %S"
+msgstr ""
+
+#: keywordURIFixup.goTo.accesskey
+msgid "Y"
+msgstr ""
+
+#: keywordURIFixup.dismiss
+#, fuzzy
+msgid "No thanks"
+msgstr "Me mmpɛ"
+
+#: keywordURIFixup.dismiss.accesskey
+msgctxt "keywordURIFixup.dismiss.accesskey"
+msgid "N"
+msgstr ""
 
 #. ## Plugin doorhanger strings
 #. # LOCALIZATION NOTE (pluginActivateNew.message): Used for newly-installed
@@ -765,10 +792,6 @@ msgstr "Wɔmmbɔɔ wo kɔnɛkhyɛn kɔ wɛbsaet yi ho ban."
 #: identity.unknown.tooltip
 msgid "This website does not supply identity information."
 msgstr "Wɛbsaet yi nnyi ne ho mma."
-
-#: identity.ownerUnknown2
-msgid "(unknown)"
-msgstr "(nnim)"
 
 #. # LOCALIZATION NOTE (identity.chrome): %S is replaced with the brandShortName.
 #: identity.chrome
@@ -1215,11 +1238,10 @@ msgstr "Woakyerɛw wo din aba mu sɛ: %S"
 msgid "Sign &Out"
 msgstr "San firi mu"
 
-#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
-#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
-#. # Semicolon-separated list of plural forms. See:
-#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # The number of devices can be either one or two.
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message,
+#. #                    getUserMedia.shareScreen.message, getUserMedia.shareCameraAndMicrophone.message,
+#. #                    getUserMedia.shareScreenAndMicrophone.message):
+#. #  %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
 msgstr "Wo bɛ pɛ sɛ wo ne %S bɛkyɛ wo mfonin-fidie anaa?"
@@ -1228,23 +1250,57 @@ msgstr "Wo bɛ pɛ sɛ wo ne %S bɛkyɛ wo mfonin-fidie anaa?"
 msgid "Would you like to share your microphone with %S?"
 msgstr "Wo bɛ pɛ sɛ wo ne %S bɛkyɛ wo maek anaa?"
 
+#: getUserMedia.shareScreen.message
+#, fuzzy
+msgid "Would you like to share your screen with %S?"
+msgstr "Wo bɛ pɛ sɛ wo ne %S bɛkyɛ wo mfonin-fidie anaa?"
+
 #: getUserMedia.shareCameraAndMicrophone.message
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "Wo bɛ pɛ sɛ wo ne %S bɛkyɛ wo mfonin-fidie ne maek anaa?"
+
+#: getUserMedia.shareScreenAndMicrophone.message
+#, fuzzy
+msgid "Would you like to share your microphone and screen with %S?"
+msgstr "Wo bɛ pɛ sɛ wo ne %S bɛkyɛ wo maek anaa?"
 
 #: getUserMedia.noVideo.label
 msgid "No Video"
 msgstr "Video biara nni hɔ"
 
+#: getUserMedia.noWindowOrScreen.label
+msgid "No Window or Screen"
+msgstr ""
+
 #: getUserMedia.noAudio.label
 msgid "No Audio"
 msgstr "Ɔdio biara nni hɔ"
 
+#: getUserMedia.shareEntireScreen.label
+msgid "Entire screen"
+msgstr ""
+
+#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # The number of devices can be either one or two.
 #: getUserMedia.shareSelectedDevices.label
 #: getUserMedia.shareSelectedDevices.accesskey
 #, fuzzy
 msgid "&Share Selected Device;Share Selected Devices"
 msgstr "Kyɛ divaes a wɔapaw;Kyɛ ndivaes a wɔapaw"
+
+#: getUserMedia.shareScreen.label
+msgid "Share Screen"
+msgstr ""
+
+#: getUserMedia.shareWindow.label
+msgid "Share Selected Window"
+msgstr ""
+
+#: getUserMedia.shareSelectedItems.label
+msgid "Share Selected Items"
+msgstr ""
 
 #: getUserMedia.always.label getUserMedia.always.accesskey
 #, fuzzy
@@ -1272,6 +1328,16 @@ msgstr "Wo de wo kasamu-fidie rekyɛ krataafa yi."
 #: getUserMedia.sharingCameraAndMicrophone.message2
 msgid "You are currently sharing your camera and microphone with this page."
 msgstr "Wo de wo mfonin-fidie ne kasamu-fidie rekyɛ krataafa yi."
+
+#: getUserMedia.sharingScreen.message
+#, fuzzy
+msgid "You are currently sharing your screen with this page."
+msgstr "Wo de wo mfonin-fidie rekyɛ krataafa yi."
+
+#: getUserMedia.sharingWindow.message
+#, fuzzy
+msgid "You are currently sharing a window with this page."
+msgstr "Wo de wo mfonin-fidie rekyɛ krataafa yi."
 
 #: getUserMedia.continueSharing.label getUserMedia.continueSharing.accesskey
 #, fuzzy
@@ -1335,6 +1401,9 @@ msgstr "Afon-bɔ"
 #: customizeTips.tip0.learnMore
 msgid "Learn more"
 msgstr "Sua bi ka ho"
+
+#~ msgid "(unknown)"
+#~ msgstr "(nnim)"
 
 #~ msgctxt "crashedpluginsMessage.reloadButton.accesskey"
 #~ msgid "R"
