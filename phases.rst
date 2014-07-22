@@ -32,6 +32,7 @@ focus on the most important translations first.
 |        | character set selection                                                                |
 |        | * One entry needed from ext ext/rep/ch/report* that appears in the help menu           |
 |        | "Report Broken Web Sites"                                                              |
+|        | Translation related feature.                                                           |
 +--------+----------------------------------------------------------------------------------------+
 | lang   | only do the most important languages (also read regions)                               |
 |        | i.e. your language and languages commonly refered to                                   |
@@ -39,9 +40,10 @@ focus on the most important translations first.
 +--------+----------------------------------------------------------------------------------------+
 | user2  | Extensions/addons, Download manager, Bookmarks, Places, File browsing/downloading,     |
 |        | Private Browsing, Session Restore, Sync, Video, PDF viewer, Health report, Crash       |
-|        | reporter, Windows Metro                                                                |
+|        | reporter                                                                               |
 +--------+----------------------------------------------------------------------------------------+
 | user3  | Still focused on use: print dialogue, other XXX... menus accesible, Tab Groups         |
+|        | WebRTC related features.                                                               |
 +--------+----------------------------------------------------------------------------------------+
 | config1| First layer of Preference dialog is translated including dropdowns                     |
 +--------+----------------------------------------------------------------------------------------+
