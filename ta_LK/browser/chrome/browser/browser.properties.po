@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-10 15:35+0100\n"
+"POT-Creation-Date: 2014-07-22 13:39+0100\n"
 "PO-Revision-Date: 2013-06-25 09:46+0000\n"
 "Last-Translator: Sarves <iamsarves@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -351,6 +351,32 @@ msgstr "முறிவடைவு அறிக்கையை சமர்ப�
 msgctxt "crashedpluginsMessage.learnMore"
 msgid "Learn More…"
 msgstr "மேலும் அறிய"
+
+#. # Keyword fixup messages
+#. # LOCALIZATION NOTE (keywordURIFixup.message): Used when the user tries to visit
+#. # a local host page, by the time the DNS request recognizes it, we have already
+#. # loaded a search page for the given word.  An infobar then asks to the user
+#. # whether he rather wanted to visit the host.  %S is the recognized host.
+#: keywordURIFixup.message
+msgid "Did you mean to go to %S?"
+msgstr ""
+
+#: keywordURIFixup.goTo
+msgid "Yes, take me to %S"
+msgstr ""
+
+#: keywordURIFixup.goTo.accesskey
+msgid "Y"
+msgstr ""
+
+#: keywordURIFixup.dismiss
+msgid "No thanks"
+msgstr ""
+
+#: keywordURIFixup.dismiss.accesskey
+msgctxt "keywordURIFixup.dismiss.accesskey"
+msgid "N"
+msgstr ""
 
 #. ## Plugin doorhanger strings
 #. # LOCALIZATION NOTE (pluginActivateNew.message): Used for newly-installed
@@ -770,10 +796,6 @@ msgstr "இத்தளத்திற்கான உங்கள் இணை�
 #: identity.unknown.tooltip
 msgid "This website does not supply identity information."
 msgstr "இந்த இணையதளம் அடையாள தகவலைக் கொடுக்கவில்லை."
-
-#: identity.ownerUnknown2
-msgid "(unknown)"
-msgstr "(தெரியாதது)"
 
 #. # LOCALIZATION NOTE (identity.chrome): %S is replaced with the brandShortName.
 #: identity.chrome
@@ -1221,11 +1243,10 @@ msgstr "இவராக உள்நுழைந்துள்ளீர்க�
 msgid "Sign &Out"
 msgstr "வெளியேறுக"
 
-#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
-#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
-#. # Semicolon-separated list of plural forms. See:
-#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # The number of devices can be either one or two.
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message,
+#. #                    getUserMedia.shareScreen.message, getUserMedia.shareCameraAndMicrophone.message,
+#. #                    getUserMedia.shareScreenAndMicrophone.message):
+#. #  %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
 msgstr "நீங்கள் %S உடன் உங்கள் கேமராவை பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
@@ -1234,23 +1255,57 @@ msgstr "நீங்கள் %S உடன் உங்கள் கேமரா
 msgid "Would you like to share your microphone with %S?"
 msgstr " %S உடன் உங்கள் ஒலிவாங்கியைப் பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
 
+#: getUserMedia.shareScreen.message
+#, fuzzy
+msgid "Would you like to share your screen with %S?"
+msgstr "நீங்கள் %S உடன் உங்கள் கேமராவை பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
+
 #: getUserMedia.shareCameraAndMicrophone.message
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "%S உடன் உங்கள் கேமராவை மற்றும் ஒலிவாங்கியைப் பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
+
+#: getUserMedia.shareScreenAndMicrophone.message
+#, fuzzy
+msgid "Would you like to share your microphone and screen with %S?"
+msgstr " %S உடன் உங்கள் ஒலிவாங்கியைப் பகிர்ந்து கொள்ள விரும்புகிறீர்களா?"
 
 #: getUserMedia.noVideo.label
 msgid "No Video"
 msgstr "வீடியோ இல்லை"
 
+#: getUserMedia.noWindowOrScreen.label
+msgid "No Window or Screen"
+msgstr ""
+
 #: getUserMedia.noAudio.label
 msgid "No Audio"
 msgstr "ஓடியோ இல்லை"
 
+#: getUserMedia.shareEntireScreen.label
+msgid "Entire screen"
+msgstr ""
+
+#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # The number of devices can be either one or two.
 #: getUserMedia.shareSelectedDevices.label
 #: getUserMedia.shareSelectedDevices.accesskey
 #, fuzzy
 msgid "&Share Selected Device;Share Selected Devices"
 msgstr "தெரிவுசெய்யப்பட்ட சாதனத்தைப் பகிரவும்;தெரிவுசெய்யப்பட்ட சாதனங்களைப் பகிரவும்"
+
+#: getUserMedia.shareScreen.label
+msgid "Share Screen"
+msgstr ""
+
+#: getUserMedia.shareWindow.label
+msgid "Share Selected Window"
+msgstr ""
+
+#: getUserMedia.shareSelectedItems.label
+msgid "Share Selected Items"
+msgstr ""
 
 #: getUserMedia.always.label getUserMedia.always.accesskey
 msgid "&Always Share"
@@ -1279,6 +1334,16 @@ msgstr "உங்கள் ஒலிவாங்கியை %S உடன் ப
 #, fuzzy
 msgid "You are currently sharing your camera and microphone with this page."
 msgstr "உங்கள் கேமராவையும் ஒலிவாங்கியையும் %S உடன் பகிர்ந்துள்ளீர்கள்."
+
+#: getUserMedia.sharingScreen.message
+#, fuzzy
+msgid "You are currently sharing your screen with this page."
+msgstr "நீங்கள் உங்கள் கேமராவை %S உடன் பகிர்ந்துள்ளீர்கள்."
+
+#: getUserMedia.sharingWindow.message
+#, fuzzy
+msgid "You are currently sharing a window with this page."
+msgstr "நீங்கள் உங்கள் கேமராவை %S உடன் பகிர்ந்துள்ளீர்கள்."
 
 #: getUserMedia.continueSharing.label getUserMedia.continueSharing.accesskey
 msgid "&Continue Sharing"
@@ -1338,6 +1403,9 @@ msgstr ""
 #, fuzzy
 msgid "Learn more"
 msgstr "மேலும் அறிய"
+
+#~ msgid "(unknown)"
+#~ msgstr "(தெரியாதது)"
 
 #~ msgctxt "crashedpluginsMessage.reloadButton.accesskey"
 #~ msgid "R"

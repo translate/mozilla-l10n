@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-10 15:35+0100\n"
+"POT-Creation-Date: 2014-07-22 13:39+0100\n"
 "PO-Revision-Date: 2014-06-15 19:20+0000\n"
 "Last-Translator: Hrant <hrant@freenet.am>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1402860043.000000\n"
@@ -342,6 +342,33 @@ msgstr "&Տեղեկացնել վթարի մասին"
 msgctxt "crashedpluginsMessage.learnMore"
 msgid "Learn More…"
 msgstr "Իմանալ Ավելին…"
+
+#. # Keyword fixup messages
+#. # LOCALIZATION NOTE (keywordURIFixup.message): Used when the user tries to visit
+#. # a local host page, by the time the DNS request recognizes it, we have already
+#. # loaded a search page for the given word.  An infobar then asks to the user
+#. # whether he rather wanted to visit the host.  %S is the recognized host.
+#: keywordURIFixup.message
+msgid "Did you mean to go to %S?"
+msgstr ""
+
+#: keywordURIFixup.goTo
+msgid "Yes, take me to %S"
+msgstr ""
+
+#: keywordURIFixup.goTo.accesskey
+msgid "Y"
+msgstr ""
+
+#: keywordURIFixup.dismiss
+#, fuzzy
+msgid "No thanks"
+msgstr "Ոչ, շնորհակալ եմ"
+
+#: keywordURIFixup.dismiss.accesskey
+msgctxt "keywordURIFixup.dismiss.accesskey"
+msgid "N"
+msgstr ""
 
 #. ## Plugin doorhanger strings
 #. # LOCALIZATION NOTE (pluginActivateNew.message): Used for newly-installed
@@ -753,10 +780,6 @@ msgstr "Այս կայքի հետ ձեր կապը գաղտնագրված չէ:"
 #: identity.unknown.tooltip
 msgid "This website does not supply identity information."
 msgstr "Այս վեբ կայքը չի տրամադրում իր նույնացման տեղեկատվությունը:"
-
-#: identity.ownerUnknown2
-msgid "(unknown)"
-msgstr "(անհայտ)"
 
 #. # LOCALIZATION NOTE (identity.chrome): %S is replaced with the brandShortName.
 #: identity.chrome
@@ -1190,11 +1213,10 @@ msgstr "Մուտք է գործվել որպես՝ %S"
 msgid "Sign &Out"
 msgstr "Դուրս &գրվել"
 
-#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
-#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
-#. # Semicolon-separated list of plural forms. See:
-#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # The number of devices can be either one or two.
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message,
+#. #                    getUserMedia.shareScreen.message, getUserMedia.shareCameraAndMicrophone.message,
+#. #                    getUserMedia.shareScreenAndMicrophone.message):
+#. #  %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
 msgstr "Թույլատրե՞լ %S-ին մուտքը ձեր ապարատին:"
@@ -1203,22 +1225,56 @@ msgstr "Թույլատրե՞լ %S-ին մուտքը ձեր ապարատին:"
 msgid "Would you like to share your microphone with %S?"
 msgstr "Թույլատրե՞լ %S-ին մուտքը ձեր բարձրախոսին:"
 
+#: getUserMedia.shareScreen.message
+#, fuzzy
+msgid "Would you like to share your screen with %S?"
+msgstr "Թույլատրե՞լ %S-ին մուտքը ձեր ապարատին:"
+
 #: getUserMedia.shareCameraAndMicrophone.message
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "Թույլատրե՞լ %S-ին մուտքը ձեր ապարատին և բարձրախոսին:"
+
+#: getUserMedia.shareScreenAndMicrophone.message
+#, fuzzy
+msgid "Would you like to share your microphone and screen with %S?"
+msgstr "Թույլատրե՞լ %S-ին մուտքը ձեր բարձրախոսին:"
 
 #: getUserMedia.noVideo.label
 msgid "No Video"
 msgstr "Չկա տեսապատկեր"
 
+#: getUserMedia.noWindowOrScreen.label
+msgid "No Window or Screen"
+msgstr ""
+
 #: getUserMedia.noAudio.label
 msgid "No Audio"
 msgstr "Չկա ձայն"
 
+#: getUserMedia.shareEntireScreen.label
+msgid "Entire screen"
+msgstr ""
+
+#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # The number of devices can be either one or two.
 #: getUserMedia.shareSelectedDevices.label
 #: getUserMedia.shareSelectedDevices.accesskey
 msgid "&Share Selected Device;Share Selected Devices"
 msgstr "&Տարածել ընտրված սարքը;Տարածել ընտրված սարքերը"
+
+#: getUserMedia.shareScreen.label
+msgid "Share Screen"
+msgstr ""
+
+#: getUserMedia.shareWindow.label
+msgid "Share Selected Window"
+msgstr ""
+
+#: getUserMedia.shareSelectedItems.label
+msgid "Share Selected Items"
+msgstr ""
 
 #: getUserMedia.always.label getUserMedia.always.accesskey
 msgid "&Always Share"
@@ -1243,6 +1299,16 @@ msgstr "Այժմ դուք թույլատրել եք մուտքը ձեր բարձ
 #: getUserMedia.sharingCameraAndMicrophone.message2
 msgid "You are currently sharing your camera and microphone with this page."
 msgstr "Այժմ դուք թույլատրել եք մուտքը ձեր ապարատին և բարձրախոսին այս էջում:"
+
+#: getUserMedia.sharingScreen.message
+#, fuzzy
+msgid "You are currently sharing your screen with this page."
+msgstr "Այժմ դուք թույլատրել եք մուտքը ձեր ապարատին:"
+
+#: getUserMedia.sharingWindow.message
+#, fuzzy
+msgid "You are currently sharing a window with this page."
+msgstr "Այժմ դուք թույլատրել եք մուտքը ձեր ապարատին:"
 
 #: getUserMedia.continueSharing.label getUserMedia.continueSharing.accesskey
 msgid "&Continue Sharing"
@@ -1299,6 +1365,9 @@ msgstr "Հուշում"
 #: customizeTips.tip0.learnMore
 msgid "Learn more"
 msgstr "Իմանալ ավելին"
+
+#~ msgid "(unknown)"
+#~ msgstr "(անհայտ)"
 
 #~ msgctxt "crashedpluginsMessage.reloadButton.accesskey"
 #~ msgid "R"
@@ -1582,9 +1651,6 @@ msgstr "Իմանալ ավելին"
 
 #~ msgid "Yes, use %1$S"
 #~ msgstr "Այո, օգտագործել %1$S"
-
-#~ msgid "Y"
-#~ msgstr "Y"
 
 #~ msgid "No, continue using '%1$S'"
 #~ msgstr "No, continue using '%1$S'"

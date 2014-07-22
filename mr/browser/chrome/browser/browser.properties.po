@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-10 15:35+0100\n"
+"POT-Creation-Date: 2014-07-22 13:39+0100\n"
 "PO-Revision-Date: 2014-05-20 05:37+0000\n"
 "Last-Translator: Sandeep <sandeep.shedmake@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -334,6 +334,33 @@ msgstr "क्रॅश अहवाल सादर करा"
 msgctxt "crashedpluginsMessage.learnMore"
 msgid "Learn More…"
 msgstr "अधिक शिका…"
+
+#. # Keyword fixup messages
+#. # LOCALIZATION NOTE (keywordURIFixup.message): Used when the user tries to visit
+#. # a local host page, by the time the DNS request recognizes it, we have already
+#. # loaded a search page for the given word.  An infobar then asks to the user
+#. # whether he rather wanted to visit the host.  %S is the recognized host.
+#: keywordURIFixup.message
+msgid "Did you mean to go to %S?"
+msgstr ""
+
+#: keywordURIFixup.goTo
+msgid "Yes, take me to %S"
+msgstr ""
+
+#: keywordURIFixup.goTo.accesskey
+msgid "Y"
+msgstr ""
+
+#: keywordURIFixup.dismiss
+#, fuzzy
+msgid "No thanks"
+msgstr "नाही धन्यवाद"
+
+#: keywordURIFixup.dismiss.accesskey
+msgctxt "keywordURIFixup.dismiss.accesskey"
+msgid "N"
+msgstr ""
 
 #. ## Plugin doorhanger strings
 #. # LOCALIZATION NOTE (pluginActivateNew.message): Used for newly-installed
@@ -743,10 +770,6 @@ msgstr "या संकेतस्थळावरील जुळवणी ए
 #: identity.unknown.tooltip
 msgid "This website does not supply identity information."
 msgstr "हे संकेत स्थळ ओळखविषयी माहिती पुरवित नाही."
-
-#: identity.ownerUnknown2
-msgid "(unknown)"
-msgstr "(अपरिचीत)"
 
 #. # LOCALIZATION NOTE (identity.chrome): %S is replaced with the brandShortName.
 #: identity.chrome
@@ -1173,11 +1196,10 @@ msgstr "असे प्रवेश केले: %S"
 msgid "Sign &Out"
 msgstr "बाहेर पडा"
 
-#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message, getUserMedia.shareCameraAndMicrophone.message): %S is the website origin (e.g. www.mozilla.org)
-#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
-#. # Semicolon-separated list of plural forms. See:
-#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # The number of devices can be either one or two.
+#. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message,
+#. #                    getUserMedia.shareScreen.message, getUserMedia.shareCameraAndMicrophone.message,
+#. #                    getUserMedia.shareScreenAndMicrophone.message):
+#. #  %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
 msgstr "%Sसह तुम्हाला कॅमेरा शेअर करायला आवडेल?"
@@ -1186,22 +1208,56 @@ msgstr "%Sसह तुम्हाला कॅमेरा शेअर कर
 msgid "Would you like to share your microphone with %S?"
 msgstr "%Sसह तुम्हाला माइक्रोफोन शेअर करायला आवडेल?"
 
+#: getUserMedia.shareScreen.message
+#, fuzzy
+msgid "Would you like to share your screen with %S?"
+msgstr "%Sसह तुम्हाला कॅमेरा शेअर करायला आवडेल?"
+
 #: getUserMedia.shareCameraAndMicrophone.message
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "%Sसह तुम्हाला कॅमेरा व माइक्रोफोन शेअर करायला आवडेल?"
+
+#: getUserMedia.shareScreenAndMicrophone.message
+#, fuzzy
+msgid "Would you like to share your microphone and screen with %S?"
+msgstr "%Sसह तुम्हाला माइक्रोफोन शेअर करायला आवडेल?"
 
 #: getUserMedia.noVideo.label
 msgid "No Video"
 msgstr "व्हिडिओ नाही"
 
+#: getUserMedia.noWindowOrScreen.label
+msgid "No Window or Screen"
+msgstr ""
+
 #: getUserMedia.noAudio.label
 msgid "No Audio"
 msgstr "ऑडिओ नाही"
 
+#: getUserMedia.shareEntireScreen.label
+msgid "Entire screen"
+msgstr ""
+
+#. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # The number of devices can be either one or two.
 #: getUserMedia.shareSelectedDevices.label
 #: getUserMedia.shareSelectedDevices.accesskey
 msgid "&Share Selected Device;Share Selected Devices"
 msgstr "निवडलेले साधन शेअर करा;निवडलेल्या साधनांना शेअर करा"
+
+#: getUserMedia.shareScreen.label
+msgid "Share Screen"
+msgstr ""
+
+#: getUserMedia.shareWindow.label
+msgid "Share Selected Window"
+msgstr ""
+
+#: getUserMedia.shareSelectedItems.label
+msgid "Share Selected Items"
+msgstr ""
 
 #: getUserMedia.always.label getUserMedia.always.accesskey
 msgid "&Always Share"
@@ -1226,6 +1282,16 @@ msgstr "तुम्ही आत्ता या पानासोबत आ�
 #: getUserMedia.sharingCameraAndMicrophone.message2
 msgid "You are currently sharing your camera and microphone with this page."
 msgstr "तुम्ही आत्ता या पानासोबत आपला कॅमेरा अाणि माईक्रोफोन शेअर करत आहात."
+
+#: getUserMedia.sharingScreen.message
+#, fuzzy
+msgid "You are currently sharing your screen with this page."
+msgstr "तुम्ही आत्ता या पानासोबत आपला कॅमेरा शेअर करत आहात."
+
+#: getUserMedia.sharingWindow.message
+#, fuzzy
+msgid "You are currently sharing a window with this page."
+msgstr "तुम्ही आत्ता या पानासोबत आपला कॅमेरा शेअर करत आहात."
 
 #: getUserMedia.continueSharing.label getUserMedia.continueSharing.accesskey
 msgid "&Continue Sharing"
@@ -1282,6 +1348,9 @@ msgstr "टीप"
 #: customizeTips.tip0.learnMore
 msgid "Learn more"
 msgstr "आणखी शिका"
+
+#~ msgid "(unknown)"
+#~ msgstr "(अपरिचीत)"
 
 #~ msgctxt "crashedpluginsMessage.reloadButton.accesskey"
 #~ msgid "R"
