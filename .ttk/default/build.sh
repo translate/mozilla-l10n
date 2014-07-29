@@ -283,6 +283,7 @@ do
 	if [ $opt_copyfiles ]; then
 		verbose "Copy files not handled by moz2po/po2moz"
 		if [ $MOZ_PRODUCT == "browser" ]; then
+			copyfileifmissing toolkit/chrome/formautofill/requestAutocomplete.dtd ${mozlang}
 			copyfileifmissing toolkit/chrome/mozapps/help/welcome.xhtml ${mozlang}
 			copyfileifmissing toolkit/chrome/mozapps/help/help-toc.rdf ${mozlang}
 			copyfile browser/firefox-l10n.js ${mozlang}
