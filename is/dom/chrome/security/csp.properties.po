@@ -1,17 +1,19 @@
-#. # This Source Code Form is subject to the terms of the Mozilla Public# License, v. 2.0. If a copy of the MPL was not distributed with this# file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from /home/dwayne/mozilla/firefox/templates-en-US/dom/chrome/security/csp.properties, /home/dwayne/mozilla/firefox/build/l10n/is/dom/chrome/security/csp.properties
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./dom/chrome/security/csp.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-25 16:36+0000\n"
+"POT-Creation-Date: 2014-06-10 15:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -20,7 +22,7 @@ msgstr ""
 #. # %1$S is the reason why the resource has not been loaded.
 #: CSPViolation
 msgid "The page's settings blocked the loading of a resource: %1$S"
-msgstr ""
+msgstr "Stillingar síðu lokuðu á niðurhal: %1$S"
 
 #. # LOCALIZATION NOTE (CSPViolationWithURI):
 #. # %1$S is the directive that has been violated.
@@ -28,7 +30,7 @@ msgstr ""
 #: CSPViolationWithURI
 msgid ""
 "The page's settings blocked the loading of a resource at %2$S (\"%1$S\")."
-msgstr ""
+msgstr "Stillingar síðu lokuðu á niðurhal á %2$S (\"%1$S\")."
 
 #. # LOCALIZATION NOTE (CSPROViolation):
 #. # %1$S is the reason why the resource has not been loaded.
@@ -37,6 +39,8 @@ msgid ""
 "A violation occurred for a report-only CSP policy (\"%1$S\"). The behavior "
 "was allowed, and a CSP report was sent."
 msgstr ""
+"Upp kom brot á report-only CSP stefnu (\"%1$S\"). Þetta ferli var leyft, og "
+"send var CSP skýrsla."
 
 #. # LOCALIZATION NOTE (CSPROViolationWithURI):
 #. # %1$S is the directive that has been violated.
@@ -46,42 +50,44 @@ msgid ""
 "The page's settings observed the loading of a resource at %2$S (\"%1$S\"). A "
 "CSP report is being sent."
 msgstr ""
+"Stillingar síðu tóku eftir niðurhali á gögnum frá %2$S (\"%1$S\"). Verið er "
+"að senda CSP skýrslu."
 
 #. # LOCALIZATION NOTE (triedToSendReport):
 #. # %1$S is the URI we attempted to send a report to.
 #: triedToSendReport
 msgid "Tried to send report to invalid URI: \"%1$S\""
-msgstr ""
+msgstr "Reyndi að senda skýrslu á ógilt URI: \"%1$S\""
 
 #. # LOCALIZATION NOTE (errorWas):
 #. # %1$S is the error resulting from attempting to send the report
 #: errorWas
 msgid "error was: \"%1$S\""
-msgstr ""
+msgstr "villan er: \"%1$S\""
 
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
 msgid "couldn't parse report URI: %1$S"
-msgstr ""
+msgstr "gat ekki lesið skýrslu URI: %1$S"
 
 #. # LOCALIZATION NOTE (couldNotProcessUnknownDirective):
 #. # %1$S is the unknown directive
 #: couldNotProcessUnknownDirective
 msgid "Couldn't process unknown directive '%1$S'"
-msgstr ""
+msgstr "Gat ekki lesið óþekkta skipun '%1$S'"
 
 #. # LOCALIZATION NOTE (ignoringUnknownOption):
 #. # %1$S is the option that could not be understood
 #: ignoringUnknownOption
 msgid "Ignoring unknown option %1$S"
-msgstr ""
+msgstr "Hunsa óþekktan valkost %1$S"
 
 #. # LOCALIZATION NOTE (reportURInotHttpsOrHttp2):
 #. # %1$S is the ETLD of the report URI that is not HTTP or HTTPS
 #: reportURInotHttpsOrHttp2
 msgid "The report URI (%1$S) should be an HTTP or HTTPS URI."
-msgstr ""
+msgstr "Skýrlu URI (%1$S) ætti að vera HTTP eða HTTPS URI."
 
 #. # LOCALIZATION NOTE (reportURInotInReportOnlyHeader):
 #. # %1$S is the ETLD of the page with the policy
@@ -90,31 +96,36 @@ msgid ""
 "This site (%1$S) has a Report-Only policy without a report URI. CSP will not "
 "block and cannot report violations of this policy."
 msgstr ""
+"Þetta vefsvæði (%1$S) er með Report-Only reglu án þess að vera með report "
+"URI. CSP getur ekki lokað á og getur ekki tilkynnt brot á þessari reglu."
 
 #. # LOCALIZATION NOTE (pageCannotSendReportsTo):
 #. # %1$S is the URI of the page with the policy
 #. # %2$S is the report URI that could not be used
 #: pageCannotSendReportsTo
 msgid "page on %1$S cannot send reports to %2$S"
-msgstr ""
+msgstr "síða frá %1$S getur ekki sent skýrslur til %2$S"
 
 #: allowOrDefaultSrcRequired
 msgid ""
 "'allow' or 'default-src' directive required but not present.  Reverting to "
 "\"default-src 'none'\""
 msgstr ""
+"'allow' eða 'default-src' skipun nauðsynleg en ekki notuð.  Fer til baka í "
+"\"default-src 'none'\""
 
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
-msgstr ""
+msgstr "Gat ekki þáttað óþekktan frumkóða %1$S"
 
 #. # LOCALIZATION NOTE (reportPostRedirect):
 #. # %1$S is the specified report URI before redirect
 #: reportPostRedirect
 msgid "Post of violation report to %1$S failed, as a redirect occurred"
 msgstr ""
+"Sending á villuskýrslu til %1$S mistókst, á meðan endursending var í gangi"
 
 #. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
 #. # Don't translate "allow" and "default-src" as they are keywords and part of
@@ -123,19 +134,19 @@ msgstr ""
 msgid ""
 "allow directive is deprecated, use the equivalent default-src directive "
 "instead"
-msgstr ""
+msgstr "allow skipun er úrelt, notaðu sambærilega skipun default-src í staðinn"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
 #: inlineScriptBlocked
 msgid "An attempt to execute inline scripts has been blocked"
-msgstr ""
+msgstr "Lokað var á tilraun til að keyra innfeldar skriftur"
 
 #. # LOCALIZATION NOTE (inlineStyleBlocked):
 #. # inline style refers to CSS code that is embedded into the HTML document.
 #: inlineStyleBlocked
 msgid "An attempt to apply inline style sheets has been blocked"
-msgstr ""
+msgstr "Lokað var á tilraun til að beita innfelldu stílsniði"
 
 #. # LOCALIZATION NOTE (scriptFromStringBlocked):
 #. # eval is a name and should not be localized.
@@ -144,6 +155,8 @@ msgid ""
 "An attempt to call JavaScript from a string (by calling a function like "
 "eval) has been blocked"
 msgstr ""
+"Lokað var á tilraun til að kalla í JavaScript frá streng (með því að kalla "
+"fall eins og eval)"
 
 #. # LOCALIZATION NOTE (hostNameMightBeKeyword):
 #. # %1$S is the hostname in question and %2$S is the keyword
@@ -152,123 +165,125 @@ msgid ""
 "Interpreting %1$S as a hostname, not a keyword. If you intended this to be a "
 "keyword, use '%2$S' (wrapped in single quotes)."
 msgstr ""
+"Túlka %1$S sem netþjónanafn, ekki sem stikkorð. Ef þú vilt nota þetta sem "
+"stikkorð, notaðu '%2$S' (milli einfaldra gæsalappa)."
 
 #. # CSP Errors:
 #: policyURINotAlone
 msgid "policy-uri directive can only appear alone"
-msgstr ""
+msgstr "policy-uri skipun má bara birtast einu sinni"
 
 #: noParentRequest
 msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr ""
+msgstr "Ekki er hægt að sækja policy-uri án foreldrabeiðni og CSP."
 
 #. # LOCALIZATION NOTE (policyURIParseError):
 #. # %1$S is the URI that could not be parsed
 #: policyURIParseError
 msgid "could not parse URI in policy URI: %1$S"
-msgstr ""
+msgstr "gat ekki þáttað URI í policy URI: %1$S"
 
 #. # LOCALIZATION NOTE (nonMatchingHost):
 #. # %1$S is the URI host that does not match
 #: nonMatchingHost
 msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr ""
+msgstr "get ekki náð í policy uri frá netþjóni sem passar ekki: %1$S"
 
 #. # LOCALIZATION NOTE (nonMatchingPort):
 #. # %1$S is the URI port that does not match
 #: nonMatchingPort
 msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr ""
+msgstr "get ekki náð í policy uri frá gátt sem passar ekki: %1$S"
 
 #. # LOCALIZATION NOTE (nonMatchingScheme):
 #. # %1$S is the URI scheme that does not match
 #: nonMatchingScheme
 msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr ""
+msgstr "get ekki náð í policy uri frá skema sem passar ekki: %1$S"
 
 #. # LOCALIZATION NOTE (errorFetchingPolicy):
 #. # %1$S is the error that caused fetching to fail
 #: errorFetchingPolicy
 msgid "Error fetching policy-uri: %1$S"
-msgstr ""
+msgstr "Villa við að ná í policy-uri: %1$S"
 
 #: cspSourceNotURI
 msgid "Provided argument is not an nsIURI"
-msgstr ""
+msgstr "Viðfang er ekki nsIURI"
 
 #: argumentIsNotString
 msgid "Provided argument is not a string"
-msgstr ""
+msgstr "Viðfang er ekki strengur"
 
 #: selfDataNotProvided
 msgid "Can't use 'self' if self data is not provided"
-msgstr ""
+msgstr "Get ekki notað 'self' ef gögn um self er ekki fáanlegt"
 
 #. # LOCALIZATION NOTE (uriWithoutScheme):
 #. # %1$S is the URI without a scheme
 #: uriWithoutScheme
 msgid "can't parse a URI without a scheme: %1$S"
-msgstr ""
+msgstr "get ekki þáttað URI án skema: %1$S"
 
 #: selfKeywordNoSelfData
 msgid "self keyword used, but no self data specified"
-msgstr ""
+msgstr "self heiti notað, en engin self gögn skilgreind"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
-msgstr ""
+msgstr "Gat ekki þáttað ógildan frumkóða %1$S"
 
 #. # LOCALIZATION NOTE (hostSourceWithoutData):
 #. # %1$S is the source
 #: hostSourceWithoutData
 msgid "Can't create host-only source %1$S without 'self' data"
-msgstr ""
+msgstr "Get ekki búið til host-only frumkóða %1$S án 'self' gagna"
 
 #. # LOCALIZATION NOTE (sourceWithoutData):
 #. # %1$S is the source
 #: sourceWithoutData
 msgid "Can't create source %1$S without 'self' data"
-msgstr ""
+msgstr "Get ekki búið til frumkóða %1$S án 'self' gagna"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
 #: couldntParseInvalidHost
 msgid "Couldn't parse invalid host %1$S"
-msgstr ""
+msgstr "Get ekki lesið ógildan netþjón %1$S"
 
 #. # LOCALIZATION NOTE (couldntParseScheme):
 #. # %1$S is the string source
 #: couldntParseScheme
 msgid "Couldn't parse scheme in %1$S"
-msgstr ""
+msgstr "Get ekki lesið skema í %1$S"
 
 #. # LOCALIZATION NOTE (couldntParsePort):
 #. # %1$S is the string source
 #: couldntParsePort
 msgid "Couldn't parse port in %1$S"
-msgstr ""
+msgstr "Get ekki lesið númer gáttar í %1$S"
 
 #. # LOCALIZATION NOTE (notIntersectPort):
 #. # %1$S is one source we tried to intersect
 #. # %2$S is the other
 #: notIntersectPort
 msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr ""
+msgstr "Get ekki myndað sniðmengi %1$S með %2$S vegna vandamáls við gátt."
 
 #. # LOCALIZATION NOTE (notIntersectScheme):
 #. # %1$S is one source we tried to intersect
 #. # %2$S is the other
 #: notIntersectScheme
 msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr ""
+msgstr "Get ekki myndað sniðmengi %1$S með %2$S vegna vandamáls í skema."
 
 #. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
 #. # %1$S is the source
 #: intersectingSourceWithUndefinedHost
 msgid "intersecting source with undefined host: %1$S"
-msgstr ""
+msgstr "mynda sniðmengi frumkóða með óþekktum netþjóni: %1$S"
 
 #. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
 #. # %1$S is the first source
@@ -276,6 +291,7 @@ msgstr ""
 #: intersectingSourcesWithUndefinedHosts
 msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
 msgstr ""
+"mynda sniðmengi með tveimur frumkóðum með óþekktum netþjóni: %1$S and %2$S"
 
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
@@ -283,4 +299,4 @@ msgstr ""
 msgid ""
 "Duplicate %1$S directives detected.  All but the first instance will be "
 "ignored."
-msgstr ""
+msgstr "Fann tvöföldar %1$S skipanir.  Allar nema sú fyrsta verður hunsuð."
