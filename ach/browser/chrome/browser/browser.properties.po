@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-22 13:39+0100\n"
+"POT-Creation-Date: 2014-09-04 11:03+0000\n"
 "PO-Revision-Date: 2014-08-01 10:45+0000\n"
 "Last-Translator: Denish <mofistone@gmail.com>\n"
 "Language-Team: Luganda\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -232,6 +232,8 @@ msgid "Undo"
 msgstr "Gony"
 
 #: lwthemePostInstallNotification.undoButton.accesskey
+#, fuzzy
+msgctxt "lwthemePostInstallNotification.undoButton.accesskey"
 msgid "U"
 msgstr "U"
 
@@ -305,6 +307,16 @@ msgstr "Pe inyut la yar ngec kace kigengo pye-malo woko"
 #: popupShowPopupPrefix
 msgid "Show '%S'"
 msgstr "Nyut '%S'"
+
+#. # Bad Content Blocker Doorhanger Notification
+#. # %S is brandShortName
+#: badContentBlocked.blocked.message
+msgid "%S is blocking content on this page."
+msgstr ""
+
+#: badContentBlocked.notblocked.message
+msgid "%S is not blocking any content on this page."
+msgstr ""
 
 #. # missing plugin installer
 #: installPlugin.message
@@ -1092,6 +1104,31 @@ msgstr "Kiketo Purugram"
 msgid "Installation in progress"
 msgstr "Keto tye ka wot anyim"
 
+#: webapps.uninstall
+#, fuzzy
+msgid "Uninstall"
+msgstr "&Kwany woko"
+
+#: webapps.uninstall.accesskey
+msgctxt "webapps.uninstall.accesskey"
+msgid "U"
+msgstr ""
+
+#: webapps.doNotUninstall
+#, fuzzy
+msgid "Don't Uninstall"
+msgstr "Pe Iket"
+
+#: webapps.doNotUninstall.accesskey
+msgid "D"
+msgstr ""
+
+#. #LOCALIZATION NOTE (webapps.requestUninstall) %1$S is the web app name
+#: webapps.requestUninstall
+#, fuzzy
+msgid "Do you want to uninstall \"%1$S\"?"
+msgstr "I mito keto %S?"
+
 #. # LOCALIZATION NOTE (fullscreen.entered): displayed when we enter HTML5 fullscreen mode, %S is the domain name of the focused website (e.g. mozilla.com).
 #: fullscreen.entered
 msgid "%S is now fullscreen."
@@ -1227,13 +1264,36 @@ msgstr "I mito nywako lamak cal kacel ki micropon mamegi ki %S?"
 msgid "Would you like to share your microphone and screen with %S?"
 msgstr "I mito nywako micropon ni ki %S?"
 
+#: getUserMedia.selectWindow.label getUserMedia.selectWindow.accesskey
+msgid "&Window to share:"
+msgstr ""
+
+#: getUserMedia.selectScreen.label getUserMedia.selectScreen.accesskey
+msgid "&Screen to share:"
+msgstr ""
+
+#: getUserMedia.selectApplication.label
+#: getUserMedia.selectApplication.accesskey
+msgid "&Application to share:"
+msgstr ""
+
 #: getUserMedia.noVideo.label
 msgid "No Video"
 msgstr "Video Pe"
 
-#: getUserMedia.noWindowOrScreen.label
-msgid "No Window or Screen"
-msgstr "Dirica onyo Wang kompiuta pe"
+#: getUserMedia.noApplication.label
+#, fuzzy
+msgid "No Application"
+msgstr "Med purugram"
+
+#: getUserMedia.noScreen.label
+msgid "No Screen"
+msgstr ""
+
+#: getUserMedia.noWindow.label
+#, fuzzy
+msgid "No Window"
+msgstr "Dirica manyen"
 
 #: getUserMedia.noAudio.label
 msgid "No Audio"
@@ -1242,6 +1302,15 @@ msgstr "Dwon Pe"
 #: getUserMedia.shareEntireScreen.label
 msgid "Entire screen"
 msgstr "Wang kompiuta weng"
+
+#. # LOCALIZATION NOTE (getUserMedia.shareApplicationWindowCount.label):
+#. # Semicolon-separated list of plural forms.
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # Replacement for #1 is the name of the application.
+#. # Replacement for #2 is the number of windows currently displayed by the application.
+#: getUserMedia.shareApplicationWindowCount.label
+msgid "#1 (#2 window);#1 (#2 windows)"
+msgstr ""
 
 #. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
 #. # Semicolon-separated list of plural forms. See:
@@ -1255,6 +1324,10 @@ msgstr "&Nywak nyonyo ma kiyero;Nywak nyonyo ma kiyero"
 #: getUserMedia.shareScreen.label
 msgid "Share Screen"
 msgstr "Nywak wang kompiuta"
+
+#: getUserMedia.shareApplication.label
+msgid "Share Selected Application"
+msgstr ""
 
 #: getUserMedia.shareWindow.label
 msgid "Share Selected Window"
@@ -1289,6 +1362,11 @@ msgid "You are currently sharing your camera and microphone with this page."
 msgstr ""
 "Kombedi i tye ka nywako lamak cal kacel ki micropon mamegi ki pot buk man."
 
+#: getUserMedia.sharingApplication.message
+#, fuzzy
+msgid "You are currently sharing an application with this page."
+msgstr "Kombedi i tye ka nywako dirica ki pot buk man."
+
 #: getUserMedia.sharingScreen.message
 msgid "You are currently sharing your screen with this page."
 msgstr "Kombedi i tye ka nywako wang kompiuta ni ki pot buk man."
@@ -1305,20 +1383,74 @@ msgstr "&Mede ki nywako"
 msgid "&Stop Sharing"
 msgstr "&Juk nywako"
 
-#. # Mixed Content Blocker Doorhanger Notification
-#. # LOCALIZATION NOTE - %S is brandShortName
-#: mixedContentBlocked.message
-msgid "%S has blocked content that isn't secure."
-msgstr "%S ogengo gin manonge iye ma pe ber."
+#: getUserMedia.sharingMenu.label getUserMedia.sharingMenu.accesskey
+msgid "Tabs sharing &devices"
+msgstr ""
 
-#: mixedContentBlocked.keepBlockingButton.label
-#: mixedContentBlocked.keepBlockingButton.accesskey
-msgid "Keep &Blocking"
-msgstr "Mede ki &Gengo"
+#. # LOCALIZATION NOTE (getUserMedia.sharingMenuCamera, getUserMedia.sharingMenuCamera,
+#. #                    getUserMedia.sharingMenuMicrophone, getUserMedia.sharingMenuApplication,
+#. #                    getUserMedia.sharingMenuScreen, getUserMedia.sharingMenuWindow,
+#. #                    getUserMedia.sharingMenuCameraMicrophone,
+#. #                    getUserMedia.sharingMenuCameraMicrophoneApplication,
+#. #                    getUserMedia.sharingMenuCameraMicrophoneScreen,
+#. #                    getUserMedia.sharingMenuCameraMicrophoneWindow,
+#. #                    getUserMedia.sharingMenuMicrophoneApplication,
+#. #                    getUserMedia.sharingMenuMicrophoneScreen,
+#. #                    getUserMedia.sharingMenuMicrophoneWindow):
+#. # %S is the website origin (e.g. www.mozilla.org)
+#: getUserMedia.sharingMenuCamera
+msgid "%S (camera)"
+msgstr ""
 
-#: mixedContentBlocked.unblock.label mixedContentBlocked.unblock.accesskey
-msgid "&Disable Protection on This Page"
-msgstr "&Juk gwokke i pot buk man"
+#: getUserMedia.sharingMenuMicrophone
+msgid "%S (microphone)"
+msgstr ""
+
+#: getUserMedia.sharingMenuApplication
+msgid "%S (application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuScreen
+msgid "%S (screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuWindow
+msgid "%S (window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophone
+msgid "%S (camera and microphone)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophoneApplication
+msgid "%S (camera, microphone and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophoneScreen
+msgid "%S (camera, microphone and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophoneWindow
+msgid "%S (camera, microphone and window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuMicrophoneApplication
+msgid "%S (microphone and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuMicrophoneScreen
+msgid "%S (microphone and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuMicrophoneWindow
+msgid "%S (microphone and window)"
+msgstr ""
+
+#. # LOCALIZATION NOTE(getUserMedia.sharingMenuUnknownHost): this is used for the website
+#. # origin for the sharing menu if no readable origin could be deduced from the URL.
+#: getUserMedia.sharingMenuUnknownHost
+msgid "Unknown origin"
+msgstr ""
 
 #. # LOCALIZATION NOTE - %S is brandShortName
 #: slowStartup.message
@@ -1352,6 +1484,18 @@ msgstr "Tam"
 #: customizeTips.tip0.learnMore
 msgid "Learn more"
 msgstr "Nong ngec mapol"
+
+#~ msgid "No Window or Screen"
+#~ msgstr "Dirica onyo Wang kompiuta pe"
+
+#~ msgid "%S has blocked content that isn't secure."
+#~ msgstr "%S ogengo gin manonge iye ma pe ber."
+
+#~ msgid "Keep &Blocking"
+#~ msgstr "Mede ki &Gengo"
+
+#~ msgid "&Disable Protection on This Page"
+#~ msgstr "&Juk gwokke i pot buk man"
 
 #~ msgid "(unknown)"
 #~ msgstr "(pe ngene)"

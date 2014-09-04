@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-22 13:39+0100\n"
+"POT-Creation-Date: 2014-09-04 11:03+0000\n"
 "PO-Revision-Date: 2014-08-08 10:11+0000\n"
 "Last-Translator: Emin <mastizada@itu.edu.tr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1407492692.000000\n"
@@ -229,6 +229,8 @@ msgid "Undo"
 msgstr "Ləğv et"
 
 #: lwthemePostInstallNotification.undoButton.accesskey
+#, fuzzy
+msgctxt "lwthemePostInstallNotification.undoButton.accesskey"
 msgid "U"
 msgstr "G"
 
@@ -302,6 +304,16 @@ msgstr "Avtomatik açılan pəncərələr bloklananda məlumat sətrini göstər
 #: popupShowPopupPrefix
 msgid "Show '%S'"
 msgstr "Göster: '%S'"
+
+#. # Bad Content Blocker Doorhanger Notification
+#. # %S is brandShortName
+#: badContentBlocked.blocked.message
+msgid "%S is blocking content on this page."
+msgstr ""
+
+#: badContentBlocked.notblocked.message
+msgid "%S is not blocking any content on this page."
+msgstr ""
 
 #. # missing plugin installer
 #: installPlugin.message
@@ -1097,6 +1109,31 @@ msgstr "Proqram yükləndi"
 msgid "Installation in progress"
 msgstr "Quraşdırma fəaliyyətdədir"
 
+#: webapps.uninstall
+#, fuzzy
+msgid "Uninstall"
+msgstr "&Sil"
+
+#: webapps.uninstall.accesskey
+msgctxt "webapps.uninstall.accesskey"
+msgid "U"
+msgstr ""
+
+#: webapps.doNotUninstall
+#, fuzzy
+msgid "Don't Uninstall"
+msgstr "Yükləmə"
+
+#: webapps.doNotUninstall.accesskey
+msgid "D"
+msgstr ""
+
+#. #LOCALIZATION NOTE (webapps.requestUninstall) %1$S is the web app name
+#: webapps.requestUninstall
+#, fuzzy
+msgid "Do you want to uninstall \"%1$S\"?"
+msgstr "%S proqramını yükləmək istəyirsiniz?"
+
 #. # LOCALIZATION NOTE (fullscreen.entered): displayed when we enter HTML5 fullscreen mode, %S is the domain name of the focused website (e.g. mozilla.com).
 #: fullscreen.entered
 msgid "%S is now fullscreen."
@@ -1232,13 +1269,36 @@ msgstr "Kamera və mikrofonunuzu %S ilə paylaşmaq istəyirsiniz?"
 msgid "Would you like to share your microphone and screen with %S?"
 msgstr "Mikrofon və ekranınızı %S ilə paylaşmaq istəyirsiniz?"
 
+#: getUserMedia.selectWindow.label getUserMedia.selectWindow.accesskey
+msgid "&Window to share:"
+msgstr ""
+
+#: getUserMedia.selectScreen.label getUserMedia.selectScreen.accesskey
+msgid "&Screen to share:"
+msgstr ""
+
+#: getUserMedia.selectApplication.label
+#: getUserMedia.selectApplication.accesskey
+msgid "&Application to share:"
+msgstr ""
+
 #: getUserMedia.noVideo.label
 msgid "No Video"
 msgstr "Video Yoxdur"
 
-#: getUserMedia.noWindowOrScreen.label
-msgid "No Window or Screen"
-msgstr "Pəncərə və ya Ekran tapılmadı"
+#: getUserMedia.noApplication.label
+#, fuzzy
+msgid "No Application"
+msgstr "Proqramı əlavə et"
+
+#: getUserMedia.noScreen.label
+msgid "No Screen"
+msgstr ""
+
+#: getUserMedia.noWindow.label
+#, fuzzy
+msgid "No Window"
+msgstr "Yeni pəncərə"
 
 #: getUserMedia.noAudio.label
 msgid "No Audio"
@@ -1247,6 +1307,15 @@ msgstr "Audio Yoxdur"
 #: getUserMedia.shareEntireScreen.label
 msgid "Entire screen"
 msgstr "Bütün ekran"
+
+#. # LOCALIZATION NOTE (getUserMedia.shareApplicationWindowCount.label):
+#. # Semicolon-separated list of plural forms.
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # Replacement for #1 is the name of the application.
+#. # Replacement for #2 is the number of windows currently displayed by the application.
+#: getUserMedia.shareApplicationWindowCount.label
+msgid "#1 (#2 window);#1 (#2 windows)"
+msgstr ""
 
 #. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
 #. # Semicolon-separated list of plural forms. See:
@@ -1260,6 +1329,10 @@ msgstr "Seçilmiş Cihazı &Paylaş;Seçilmiş Cihazları Paylaş"
 #: getUserMedia.shareScreen.label
 msgid "Share Screen"
 msgstr "Ekranı Paylaş"
+
+#: getUserMedia.shareApplication.label
+msgid "Share Selected Application"
+msgstr ""
 
 #: getUserMedia.shareWindow.label
 msgid "Share Selected Window"
@@ -1294,6 +1367,11 @@ msgid "You are currently sharing your camera and microphone with this page."
 msgstr ""
 "Siz hal-hazırda kameranızı və mikrofonunuzu bu səhifə ilə paylaşırsınız."
 
+#: getUserMedia.sharingApplication.message
+#, fuzzy
+msgid "You are currently sharing an application with this page."
+msgstr "Siz hal-hazırda bu səhifə ilə pəncərə paylaşırsınız."
+
 #: getUserMedia.sharingScreen.message
 msgid "You are currently sharing your screen with this page."
 msgstr "Siz hal-hazırda ekranınızı bu səhifə ilə paylaşırsınız."
@@ -1310,20 +1388,74 @@ msgstr "Paylaşmağa &Davam et"
 msgid "&Stop Sharing"
 msgstr "Paylaşmağı &Durdur"
 
-#. # Mixed Content Blocker Doorhanger Notification
-#. # LOCALIZATION NOTE - %S is brandShortName
-#: mixedContentBlocked.message
-msgid "%S has blocked content that isn't secure."
-msgstr "%S qorumalı olmayan məzmunu blokladı."
+#: getUserMedia.sharingMenu.label getUserMedia.sharingMenu.accesskey
+msgid "Tabs sharing &devices"
+msgstr ""
 
-#: mixedContentBlocked.keepBlockingButton.label
-#: mixedContentBlocked.keepBlockingButton.accesskey
-msgid "Keep &Blocking"
-msgstr "&Əngəlləməyə Davam et"
+#. # LOCALIZATION NOTE (getUserMedia.sharingMenuCamera, getUserMedia.sharingMenuCamera,
+#. #                    getUserMedia.sharingMenuMicrophone, getUserMedia.sharingMenuApplication,
+#. #                    getUserMedia.sharingMenuScreen, getUserMedia.sharingMenuWindow,
+#. #                    getUserMedia.sharingMenuCameraMicrophone,
+#. #                    getUserMedia.sharingMenuCameraMicrophoneApplication,
+#. #                    getUserMedia.sharingMenuCameraMicrophoneScreen,
+#. #                    getUserMedia.sharingMenuCameraMicrophoneWindow,
+#. #                    getUserMedia.sharingMenuMicrophoneApplication,
+#. #                    getUserMedia.sharingMenuMicrophoneScreen,
+#. #                    getUserMedia.sharingMenuMicrophoneWindow):
+#. # %S is the website origin (e.g. www.mozilla.org)
+#: getUserMedia.sharingMenuCamera
+msgid "%S (camera)"
+msgstr ""
 
-#: mixedContentBlocked.unblock.label mixedContentBlocked.unblock.accesskey
-msgid "&Disable Protection on This Page"
-msgstr "Bu Səhifədə Qorumanı &Qapat"
+#: getUserMedia.sharingMenuMicrophone
+msgid "%S (microphone)"
+msgstr ""
+
+#: getUserMedia.sharingMenuApplication
+msgid "%S (application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuScreen
+msgid "%S (screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuWindow
+msgid "%S (window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophone
+msgid "%S (camera and microphone)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophoneApplication
+msgid "%S (camera, microphone and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophoneScreen
+msgid "%S (camera, microphone and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophoneWindow
+msgid "%S (camera, microphone and window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuMicrophoneApplication
+msgid "%S (microphone and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuMicrophoneScreen
+msgid "%S (microphone and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuMicrophoneWindow
+msgid "%S (microphone and window)"
+msgstr ""
+
+#. # LOCALIZATION NOTE(getUserMedia.sharingMenuUnknownHost): this is used for the website
+#. # origin for the sharing menu if no readable origin could be deduced from the URL.
+#: getUserMedia.sharingMenuUnknownHost
+msgid "Unknown origin"
+msgstr ""
 
 #. # LOCALIZATION NOTE - %S is brandShortName
 #: slowStartup.message
@@ -1358,6 +1490,18 @@ msgstr "Məsləhət"
 #: customizeTips.tip0.learnMore
 msgid "Learn more"
 msgstr "Daha ətraflı"
+
+#~ msgid "No Window or Screen"
+#~ msgstr "Pəncərə və ya Ekran tapılmadı"
+
+#~ msgid "%S has blocked content that isn't secure."
+#~ msgstr "%S qorumalı olmayan məzmunu blokladı."
+
+#~ msgid "Keep &Blocking"
+#~ msgstr "&Əngəlləməyə Davam et"
+
+#~ msgid "&Disable Protection on This Page"
+#~ msgstr "Bu Səhifədə Qorumanı &Qapat"
 
 #~ msgid "(unknown)"
 #~ msgstr "(naməlumdur)"

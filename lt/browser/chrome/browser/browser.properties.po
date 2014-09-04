@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-22 13:39+0100\n"
+"POT-Creation-Date: 2014-09-04 11:03+0000\n"
 "PO-Revision-Date: 2014-07-29 11:52+0000\n"
 "Last-Translator: Rimas <rq@akl.lt>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406634768.000000\n"
@@ -243,6 +243,8 @@ msgid "Undo"
 msgstr "Atšaukti"
 
 #: lwthemePostInstallNotification.undoButton.accesskey
+#, fuzzy
+msgctxt "lwthemePostInstallNotification.undoButton.accesskey"
 msgid "U"
 msgstr "A"
 
@@ -317,6 +319,16 @@ msgstr "Užblokavus iškylančiuosius langus, nerodyti informacinės juostos"
 #: popupShowPopupPrefix
 msgid "Show '%S'"
 msgstr "Rodyti užblokuotą langą (%S)"
+
+#. # Bad Content Blocker Doorhanger Notification
+#. # %S is brandShortName
+#: badContentBlocked.blocked.message
+msgid "%S is blocking content on this page."
+msgstr ""
+
+#: badContentBlocked.notblocked.message
+msgid "%S is not blocking any content on this page."
+msgstr ""
 
 #. # missing plugin installer
 #: installPlugin.message
@@ -1127,6 +1139,31 @@ msgstr "Programa įdiegta"
 msgid "Installation in progress"
 msgstr "Programa diegiama"
 
+#: webapps.uninstall
+#, fuzzy
+msgid "Uninstall"
+msgstr "&Šalinti"
+
+#: webapps.uninstall.accesskey
+msgctxt "webapps.uninstall.accesskey"
+msgid "U"
+msgstr ""
+
+#: webapps.doNotUninstall
+#, fuzzy
+msgid "Don't Uninstall"
+msgstr "Neįdiegti"
+
+#: webapps.doNotUninstall.accesskey
+msgid "D"
+msgstr ""
+
+#. #LOCALIZATION NOTE (webapps.requestUninstall) %1$S is the web app name
+#: webapps.requestUninstall
+#, fuzzy
+msgid "Do you want to uninstall \"%1$S\"?"
+msgstr "Ar norite įdiegti programą „%S“?"
+
 #. # LOCALIZATION NOTE (fullscreen.entered): displayed when we enter HTML5 fullscreen mode, %S is the domain name of the focused website (e.g. mozilla.com).
 #: fullscreen.entered
 msgid "%S is now fullscreen."
@@ -1264,13 +1301,36 @@ msgstr ""
 "Ar suteiksite svetainei %S prieigą prie jūsų mikrofono ir ekrane rodomo "
 "vaizdo?"
 
+#: getUserMedia.selectWindow.label getUserMedia.selectWindow.accesskey
+msgid "&Window to share:"
+msgstr ""
+
+#: getUserMedia.selectScreen.label getUserMedia.selectScreen.accesskey
+msgid "&Screen to share:"
+msgstr ""
+
+#: getUserMedia.selectApplication.label
+#: getUserMedia.selectApplication.accesskey
+msgid "&Application to share:"
+msgstr ""
+
 #: getUserMedia.noVideo.label
 msgid "No Video"
 msgstr "Be vaizdo"
 
-#: getUserMedia.noWindowOrScreen.label
-msgid "No Window or Screen"
-msgstr "Be lango ar ekrano vaizdo"
+#: getUserMedia.noApplication.label
+#, fuzzy
+msgid "No Application"
+msgstr "Įtraukti programą"
+
+#: getUserMedia.noScreen.label
+msgid "No Screen"
+msgstr ""
+
+#: getUserMedia.noWindow.label
+#, fuzzy
+msgid "No Window"
+msgstr "naujame lange"
 
 #: getUserMedia.noAudio.label
 msgid "No Audio"
@@ -1279,6 +1339,15 @@ msgstr "Be garso"
 #: getUserMedia.shareEntireScreen.label
 msgid "Entire screen"
 msgstr "Visas ekranas"
+
+#. # LOCALIZATION NOTE (getUserMedia.shareApplicationWindowCount.label):
+#. # Semicolon-separated list of plural forms.
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # Replacement for #1 is the name of the application.
+#. # Replacement for #2 is the number of windows currently displayed by the application.
+#: getUserMedia.shareApplicationWindowCount.label
+msgid "#1 (#2 window);#1 (#2 windows)"
+msgstr ""
 
 #. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
 #. # Semicolon-separated list of plural forms. See:
@@ -1294,6 +1363,10 @@ msgstr ""
 #: getUserMedia.shareScreen.label
 msgid "Share Screen"
 msgstr "Suteikti prieigą prie ekrane rodomo vaizdo"
+
+#: getUserMedia.shareApplication.label
+msgid "Share Selected Application"
+msgstr ""
 
 #: getUserMedia.shareWindow.label
 msgid "Share Selected Window"
@@ -1329,6 +1402,13 @@ msgstr ""
 "Šiuo metu šiai svetainei leidžiate prieiti prie kompiuterio kameros ir "
 "mikrofono."
 
+#: getUserMedia.sharingApplication.message
+#, fuzzy
+msgid "You are currently sharing an application with this page."
+msgstr ""
+"Šiuo metu šiai svetainei leidžiate matyti jūsų kompiuterio ekrane rodomo "
+"lango vaizdą."
+
 #: getUserMedia.sharingScreen.message
 msgid "You are currently sharing your screen with this page."
 msgstr ""
@@ -1349,20 +1429,74 @@ msgstr "Toliau &leisti"
 msgid "&Stop Sharing"
 msgstr "&Nebeleisti"
 
-#. # Mixed Content Blocker Doorhanger Notification
-#. # LOCALIZATION NOTE - %S is brandShortName
-#: mixedContentBlocked.message
-msgid "%S has blocked content that isn't secure."
-msgstr "Programa „%S“ užblokavo nesaugų turinį."
+#: getUserMedia.sharingMenu.label getUserMedia.sharingMenu.accesskey
+msgid "Tabs sharing &devices"
+msgstr ""
 
-#: mixedContentBlocked.keepBlockingButton.label
-#: mixedContentBlocked.keepBlockingButton.accesskey
-msgid "Keep &Blocking"
-msgstr "&Blokuoti toliau"
+#. # LOCALIZATION NOTE (getUserMedia.sharingMenuCamera, getUserMedia.sharingMenuCamera,
+#. #                    getUserMedia.sharingMenuMicrophone, getUserMedia.sharingMenuApplication,
+#. #                    getUserMedia.sharingMenuScreen, getUserMedia.sharingMenuWindow,
+#. #                    getUserMedia.sharingMenuCameraMicrophone,
+#. #                    getUserMedia.sharingMenuCameraMicrophoneApplication,
+#. #                    getUserMedia.sharingMenuCameraMicrophoneScreen,
+#. #                    getUserMedia.sharingMenuCameraMicrophoneWindow,
+#. #                    getUserMedia.sharingMenuMicrophoneApplication,
+#. #                    getUserMedia.sharingMenuMicrophoneScreen,
+#. #                    getUserMedia.sharingMenuMicrophoneWindow):
+#. # %S is the website origin (e.g. www.mozilla.org)
+#: getUserMedia.sharingMenuCamera
+msgid "%S (camera)"
+msgstr ""
 
-#: mixedContentBlocked.unblock.label mixedContentBlocked.unblock.accesskey
-msgid "&Disable Protection on This Page"
-msgstr "&Išjungti apsaugą šiame tinklalapyje"
+#: getUserMedia.sharingMenuMicrophone
+msgid "%S (microphone)"
+msgstr ""
+
+#: getUserMedia.sharingMenuApplication
+msgid "%S (application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuScreen
+msgid "%S (screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuWindow
+msgid "%S (window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophone
+msgid "%S (camera and microphone)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophoneApplication
+msgid "%S (camera, microphone and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophoneScreen
+msgid "%S (camera, microphone and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophoneWindow
+msgid "%S (camera, microphone and window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuMicrophoneApplication
+msgid "%S (microphone and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuMicrophoneScreen
+msgid "%S (microphone and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuMicrophoneWindow
+msgid "%S (microphone and window)"
+msgstr ""
+
+#. # LOCALIZATION NOTE(getUserMedia.sharingMenuUnknownHost): this is used for the website
+#. # origin for the sharing menu if no readable origin could be deduced from the URL.
+#: getUserMedia.sharingMenuUnknownHost
+msgid "Unknown origin"
+msgstr ""
 
 #. # LOCALIZATION NOTE - %S is brandShortName
 #: slowStartup.message
@@ -1397,3 +1531,15 @@ msgstr "Patarimas"
 #: customizeTips.tip0.learnMore
 msgid "Learn more"
 msgstr "Sužinokite daugiau"
+
+#~ msgid "No Window or Screen"
+#~ msgstr "Be lango ar ekrano vaizdo"
+
+#~ msgid "%S has blocked content that isn't secure."
+#~ msgstr "Programa „%S“ užblokavo nesaugų turinį."
+
+#~ msgid "Keep &Blocking"
+#~ msgstr "&Blokuoti toliau"
+
+#~ msgid "&Disable Protection on This Page"
+#~ msgstr "&Išjungti apsaugą šiame tinklalapyje"

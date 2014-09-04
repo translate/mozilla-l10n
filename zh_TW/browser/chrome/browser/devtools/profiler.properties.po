@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-22 13:39+0100\n"
+"POT-Creation-Date: 2014-09-04 11:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,12 +14,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # LOCALIZATION NOTE These strings are used inside the Debugger
-#. # which is available from the Web Developer sub-menu -> 'Debugger'.
+#. # LOCALIZATION NOTE These strings are used inside the Profiler
+#. # which is available from the Web Developer sub-menu -> 'Profiler'.
 #. # The correct localization of this file might be to keep it in
 #. # English, or another language commonly spoken among web developers.
 #. # You want to make that choice consistent across the developer tools.
@@ -28,22 +28,25 @@ msgstr ""
 #. # LOCALIZATION NOTE (profiler.label):
 #. # This string is displayed in the title of the tab when the profiler is
 #. # displayed inside the developer tools window and in the Developer Tools Menu.
-#: profiler.label profiler.accesskey
-#, fuzzy
-msgid "&Profiler"
-msgstr "效能分析器"
+#: profiler.label2
+msgid "Performance"
+msgstr ""
 
 #. # LOCALIZATION NOTE (profiler.panelLabel):
 #. # This is used as the label for the toolbox panel.
-#: profiler.panelLabel
-msgid "Profiler Panel"
+#: profiler.panelLabel2
+msgid "Performance Panel"
 msgstr ""
 
 #. # LOCALIZATION NOTE (profiler2.commandkey, profiler.accesskey)
 #. # Used for the menuitem in the tool menu
-#: profiler2.commandkey
+#: profiler.commandkey2
 msgid "VK_F5"
 msgstr "VK_F5"
+
+#: profiler.accesskey
+msgid "P"
+msgstr ""
 
 #. # LOCALIZATION NOTE (profiler.tooltip2):
 #. # This string is displayed in the tooltip of the tab when the profiler is
@@ -52,128 +55,177 @@ msgstr "VK_F5"
 msgid "JavaScript Profiler"
 msgstr "JavaScript 效能分析器"
 
-#. # LOCALIZATION NOTE (profiler.profileName):
-#. # This string is the default name for new profiles. Its parameter is a number.
-#. # For example: "Profile 1", "Profile 2", etc.
-#: profiler.profileName
-msgid "Profile %S"
-msgstr "分析 %S"
-
-#. # LOCALIZATION NOTE (profiler.completeProfile):
-#. # This string is displayed as a tab in the profiler UI. Clicking on it
-#. # displays everything that the profiler has generated so far.
-#: profiler.completeProfile
-msgid "Complete Profile"
-msgstr "完整分析"
-
-#. # LOCALIZATION NOTE (profiler.sampleRange):
-#. # This string is displayed as a tab in the profiler UI. Clicking on it
-#. # displays a sample range of data selected by user themselves.
-#: profiler.sampleRange
-msgid "Sample Range"
-msgstr "取樣範圍"
-
-#. # LOCALIZATION NOTE (profiler.runningTime):
-#. # This string is displayed as a table header in the profiler UI.
-#: profiler.runningTime
-msgid "Running Time"
-msgstr "執行時間"
-
-#. # LOCALIZATION NOTE (profiler.self):
-#. # This string is displayed as a table header in the profiler UI.
-#. # "Self" is how much time was spent doing work directly in that function.
-#. # As opposed to the total time which is how much time was spent in that
-#. # function and in functions it called.
-#: profiler.self
-msgid "Self"
-msgstr "自己"
-
-#. # LOCALIZATION NOTE (profiler.symbolName)
-#. # This string is displayed as a table header in the profiler UI.
-#: profiler.symbolName
-msgid "Symbol Name"
-msgstr "符號名稱"
-
-#. # LOCALIZATION NOTE (profiler.start)
-#. # This string is displayed on the button that starts the profiler.
-#: profiler.start
-msgid "Start"
-msgstr "開始"
-
-#. # LOCALIZATION NOTE (profiler.stop)
-#. # This string is displayed on the button that stops the profiler.
-#: profiler.stop
-msgid "Stop"
-msgstr "停止"
-
-#. # LOCALIZATION NOTE (profiler.loading)
-#. # This string is displayed above the progress bar when the profiler
-#. # is busy loading and parsing the report.
-#: profiler.loading
-msgid "Loading profile…"
-msgstr "正在載入分析資料…"
-
-#. # LOCALIZATION NOTE (profiler.stateIdle)
-#. # This string is used to show that the profile in question is in IDLE
-#. # state meaning that it hasn't been started yet.
-#: profiler.stateIdle
-msgid "Idle"
-msgstr "閒置"
-
-#. # LOCALIZATION NOTE (profiler.stateRunning)
-#. # This string is used to show that the profile in question is in RUNNING
-#. # state meaning that it has been started and currently gathering profile data.
-#: profiler.stateRunning
-msgid "Running"
-msgstr "執行中"
-
-#. # LOCALIZATION NOTE (profiler.stateCompleted)
-#. # This string is used to show that the profile in question is in COMPLETED
-#. # state meaning that it has been started and stopped already.
-#: profiler.stateCompleted
-msgid "Completed"
-msgstr "已完成"
-
-#. # LOCALIZATION NOTE (profiler.sidebarNotice)
-#. # This string is displayed in the profiler sidebar when there are no
-#. # existing profiles to show (usually happens when the user opens the
-#. # profiler for the first time).
-#: profiler.sidebarNotice
+#. # LOCALIZATION NOTE (noRecordingsText): The text to display in the
+#. # recordings menu when there are no recorded profiles yet.
+#: noRecordingsText
 msgid "There are no profiles yet."
 msgstr "目前沒有檢測器。"
 
-#. # LOCALIZATION NOTE (profiler.startProfilerString)
-#. # This string is displayed on the profiler button when no active
-#. # profiling sessions are running
-#: profiler.startProfilerString
-msgid "Start profiling"
-msgstr "開始效能分析"
+#. # LOCALIZATION NOTE (recordingsList.itemLabel):
+#. # This string is displayed in the recordings list of the Profiler,
+#. # identifying a set of function calls.
+#: recordingsList.itemLabel
+msgid "Recording #%S"
+msgstr ""
 
-#. # LOCALIZATION NOTE (profiler.stopProfilerString)
-#. # This string is displayed on the profiler button when an active
-#. # profiling session is running
-#: profiler.stopProfilerString
-msgid "Stop profiling"
-msgstr "停止效能分析"
+#. # LOCALIZATION NOTE (recordingsList.recordingLabel):
+#. # This string is displayed in the recordings list of the Profiler,
+#. # for an item that has not finished recording.
+#: recordingsList.recordingLabel
+msgid "In progress…"
+msgstr ""
 
-#. # LOCALIZATION NOTE (profiler.save)
-#. # This string is displayed as a label for a button that opens a Save File
-#. # dialog where user can save generated profiler to a file.
-#: profiler.save
+#. # LOCALIZATION NOTE (recordingsList.durationLabel):
+#. # This string is displayed in the recordings list of the Profiler,
+#. # for an item that has finished recording.
+#: recordingsList.durationLabel
+msgid "%S ms"
+msgstr "%S ms"
+
+#. # LOCALIZATION NOTE (recordingsList.saveLabel):
+#. # This string is displayed in the recordings list of the Profiler,
+#. # for saving an item to disk.
+#: recordingsList.saveLabel
 msgid "Save"
 msgstr "儲存"
 
-#. # LOCALIZATION NOTE (profiler.saveFileAs)
-#. # This string as a title for a Save File dialog.
-#: profiler.saveFileAs
-msgid "Save Profile As"
-msgstr "另存設定檔為"
+#. # LOCALIZATION NOTE (profile.tab):
+#. # This string is displayed in the profile view for a tab, after the
+#. # recording has finished, as the recording 'start → stop' range in milliseconds.
+#: profile.tab
+msgid "%1$S ms → %2$S ms"
+msgstr ""
 
-#. # LOCALIZATION NOTE (profiler.openFile)
-#. # This string as a title for a Open File dialog.
-#: profiler.openFile
-msgid "Import Profile"
-msgstr "匯入設定檔"
+#. # LOCALIZATION NOTE (graphs.fps):
+#. # This string is displayed in the framerate graph of the Profiler,
+#. # as the unit used to measure frames per second. This label should be kept
+#. # AS SHORT AS POSSIBLE so it doesn't obstruct important parts of the graph.
+#: graphs.fps
+msgid "fps"
+msgstr ""
 
-#~ msgid "P"
-#~ msgstr "P"
+#. # LOCALIZATION NOTE (category.*):
+#. # These strings are displayed in the categories graph of the Profiler,
+#. # as the legend for each block in every bar. These labels should be kept
+#. # AS SHORT AS POSSIBLE so they don't obstruct important parts of the graph.
+#: category.other
+msgid "Gecko"
+msgstr ""
+
+#: category.css
+msgid "Styles"
+msgstr ""
+
+#: category.js
+msgid "JIT"
+msgstr ""
+
+#: category.gc
+msgid "GC"
+msgstr ""
+
+#: category.network
+msgid "Network"
+msgstr "網路"
+
+#: category.graphics
+msgid "Graphics"
+msgstr "圖形"
+
+#: category.storage
+msgid "Storage"
+msgstr "儲存空間"
+
+#: category.events
+msgid "Input & Events"
+msgstr ""
+
+#. # LOCALIZATION NOTE (table.root):
+#. # This string is displayed in the call tree for the root node.
+#: table.root
+msgid "(root)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (table.url.tooltiptext):
+#. # This string is displayed in the call tree as the tooltip text for the url
+#. # labels which, when clicked, jump to the debugger.
+#: table.url.tooltiptext
+msgid "View source in Debugger"
+msgstr ""
+
+#. # LOCALIZATION NOTE (table.zoom.tooltiptext):
+#. # This string is displayed in the call tree as the tooltip text for the 'zoom'
+#. # buttons (small magnifying glass icons) which spawn a new tab.
+#: table.zoom.tooltiptext
+msgid "Inspect frame in new tab"
+msgstr ""
+
+#. # LOCALIZATION NOTE (recordingsList.saveDialogTitle):
+#. # This string is displayed as a title for saving a recording to disk.
+#: recordingsList.saveDialogTitle
+msgid "Save profile…"
+msgstr ""
+
+#. # LOCALIZATION NOTE (recordingsList.saveDialogJSONFilter):
+#. # This string is displayed as a filter for saving a recording to disk.
+#: recordingsList.saveDialogJSONFilter
+msgid "JSON Files"
+msgstr ""
+
+#. # LOCALIZATION NOTE (recordingsList.saveDialogAllFilter):
+#. # This string is displayed as a filter for saving a recording to disk.
+#: recordingsList.saveDialogAllFilter
+msgid "All Files"
+msgstr "所有檔案"
+
+#, fuzzy
+#~ msgid "&Profiler"
+#~ msgstr "效能分析器"
+
+#~ msgid "Profile %S"
+#~ msgstr "分析 %S"
+
+#~ msgid "Complete Profile"
+#~ msgstr "完整分析"
+
+#~ msgid "Sample Range"
+#~ msgstr "取樣範圍"
+
+#~ msgid "Running Time"
+#~ msgstr "執行時間"
+
+#~ msgid "Self"
+#~ msgstr "自己"
+
+#~ msgid "Symbol Name"
+#~ msgstr "符號名稱"
+
+#~ msgid "Start"
+#~ msgstr "開始"
+
+#~ msgid "Stop"
+#~ msgstr "停止"
+
+#~ msgid "Loading profile…"
+#~ msgstr "正在載入分析資料…"
+
+#~ msgid "Idle"
+#~ msgstr "閒置"
+
+#~ msgid "Running"
+#~ msgstr "執行中"
+
+#~ msgid "Completed"
+#~ msgstr "已完成"
+
+#~ msgid "Start profiling"
+#~ msgstr "開始效能分析"
+
+#~ msgid "Stop profiling"
+#~ msgstr "停止效能分析"
+
+#~ msgid "Save Profile As"
+#~ msgstr "另存設定檔為"
+
+#~ msgid "Import Profile"
+#~ msgstr "匯入設定檔"
