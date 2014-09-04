@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-22 16:18+0100\n"
+"POT-Creation-Date: 2014-09-04 10:10+0000\n"
 "PO-Revision-Date: 2014-07-29 09:07+0000\n"
 "Last-Translator: Rimas <rq@akl.lt>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1406624863.000000\n"
@@ -29,6 +29,22 @@ msgstr "Neužtenka laisvos vietos programai „&brandShortName;“ paleisti."
 msgid ""
 "An error occurred when trying to load files required to run &brandShortName;"
 msgstr "Bandant įkelti „&brandShortName;“ darbui būtinus failus, įvyko klaida"
+
+#: onboard_start_message
+msgid "Welcome to &brandShortName;!"
+msgstr ""
+
+#: onboard_start_subtext
+msgid "Committed to you, your privacy, and an Open Web"
+msgstr ""
+
+#: onboard_start_button_account
+msgid "Sign in to &brandShortName;"
+msgstr ""
+
+#: onboard_start_button_browser
+msgid "Start Browsing"
+msgstr ""
 
 #. Localization note: These are used as the titles of different pages on the home screen.
 #. They are automatically converted to all caps by the Android platform.
@@ -124,11 +140,13 @@ msgctxt "choose_file"
 msgid "Choose File"
 msgstr "Parinkite failą"
 
-#: url_bar_default_text
-msgid "Enter Search or Address"
-msgstr "Įveskite adresą arba paieškos žodžius"
+#: url_bar_default_text2
+msgid "Search or enter address"
+msgstr ""
 
 #: bookmark
+#, fuzzy
+msgctxt "bookmark"
 msgid "Bookmark"
 msgstr "Adresyne"
 
@@ -270,6 +288,51 @@ msgstr "Naršyklės sąsajos kalba"
 #: locale_system_default
 msgid "System default"
 msgstr "Sistemos numatytoji"
+
+#. Localization note (overlay_share_label) : This is the label that appears
+#. in Android's intent chooser when sending a link to Firefox to bookmark,
+#. send to another device, or add to Reading List.
+#: overlay_share_label
+#, fuzzy
+msgid "Add to &brandShortName;"
+msgstr "Apie „&brandShortName;“"
+
+#. Localization note (overlay_share_bookmark_btn_label) : This string is
+#. used in the share overlay menu to select an action. It is the verb
+#. "to bookmark", not the noun "a bookmark".
+#: overlay_share_bookmark_btn_label
+#, fuzzy
+msgctxt "overlay_share_bookmark_btn_label"
+msgid "Bookmark"
+msgstr "Adresyne"
+
+#: overlay_share_reading_list_btn_label
+msgid "Add to Reading List"
+msgstr "Įtraukti į skaitinių sąrašą"
+
+#: overlay_share_send_other
+msgid "Send to other devices"
+msgstr ""
+
+#. Localization note (overlay_share_send_tab_btn_label) : Used on the
+#. share overlay menu to represent the "Send Tab" action when the user
+#. either has not set up Sync, or has no other devices to send a tab
+#. to.
+#: overlay_share_send_tab_btn_label
+msgid "Send to another device"
+msgstr ""
+
+#: overlay_share_no_url
+msgid "No link found in this share"
+msgstr ""
+
+#: overlay_share_retry
+msgid "Try again"
+msgstr "Bandyti vėl"
+
+#: overlay_share_select_device
+msgid "Select device"
+msgstr ""
 
 #: pref_category_search3
 msgctxt "pref_category_search3"
@@ -506,10 +569,11 @@ msgstr "Valyti privačius duomenis"
 msgid "Always clear when quitting"
 msgstr "Visada valyti baigiant darbą"
 
-#: pref_clear_on_exit_summary
+#: pref_clear_on_exit_summary2
+#, fuzzy
 msgid ""
 "&brandShortName; will automatically clear your data whenever you select "
-"\"Quit\" from the main menu"
+"\\u0022Quit\\u0022 from the main menu"
 msgstr ""
 "„&brandShortName;“ automatiškai išvalys privačius duomenis kaskart jums "
 "pasirinkus pagrindinio meniu punktą „Baigti darbą“"
@@ -604,10 +668,6 @@ msgstr "Įlinkdama fechtuotojo špaga sublykčiojusi pragręžė apvalų arbūz�
 #: pref_use_master_password
 msgid "Use master password"
 msgstr "Naudoti pagrindinį slaptažodį"
-
-#: pref_show_product_announcements
-msgid "Show product announcements"
-msgstr "Rodyti pranešimus apie produktus"
 
 #: pref_sync
 msgid "Sync"
@@ -933,10 +993,11 @@ msgctxt "find_close"
 msgid "Close"
 msgstr "Užverti"
 
-#. Localization note (media_casting_to, media_play, media_pause, media_stop) : These strings are used
+#. Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
 #. as alternate text for accessibility. They are not visible in the UI.
-#: media_casting_to
-msgid "Casting to Device"
+#: media_sending_to
+#, fuzzy
+msgid "Sending to Device"
 msgstr "Transliavimas į įrenginį"
 
 #: media_play
@@ -1028,11 +1089,15 @@ msgstr "Rodyti tinklalapio antraštę"
 msgid "Show page address"
 msgstr "Rodyti tinklalapio adresą"
 
-#. Localization note (pref_scroll_title_bar): Label for setting that controls
+#. Localization note (pref_scroll_title_bar2): Label for setting that controls
 #. whether or not the dynamic toolbar is enabled.
-#: pref_scroll_title_bar
-msgid "Scroll title bar"
-msgstr "Slinkti antraštės juostą"
+#: pref_scroll_title_bar2
+msgid "Full-screen browsing"
+msgstr ""
+
+#: pref_scroll_title_bar_summary
+msgid "Hide the &brandShortName; title bar when scrolling down a page"
+msgstr ""
 
 #. Localization note (page_removed): This string appears in a toast message when
 #. any page is removed frome about:home. This includes pages that are in history,
@@ -1462,6 +1527,10 @@ msgstr "Šio naršymo seanso duomenys bus pašalinti."
 msgid "…"
 msgstr "…"
 
+#: colon
+msgid ":"
+msgstr ""
+
 #. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
@@ -1482,3 +1551,12 @@ msgstr "Baigta"
 #: remote_tabs_last_synced
 msgid "Last synced: &formatS;"
 msgstr "Paskiausiai sinchronizuota: &formatS;"
+
+#~ msgid "Enter Search or Address"
+#~ msgstr "Įveskite adresą arba paieškos žodžius"
+
+#~ msgid "Show product announcements"
+#~ msgstr "Rodyti pranešimus apie produktus"
+
+#~ msgid "Scroll title bar"
+#~ msgstr "Slinkti antraštės juostą"
