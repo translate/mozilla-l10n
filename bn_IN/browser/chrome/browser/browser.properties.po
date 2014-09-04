@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-22 13:39+0100\n"
+"POT-Creation-Date: 2014-09-04 11:03+0000\n"
 "PO-Revision-Date: 2014-08-03 05:33+0000\n"
 "Last-Translator: Biraj <brnet00@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1407044039.000000\n"
@@ -240,6 +240,8 @@ msgid "Undo"
 msgstr "পূর্বাবস্থা"
 
 #: lwthemePostInstallNotification.undoButton.accesskey
+#, fuzzy
+msgctxt "lwthemePostInstallNotification.undoButton.accesskey"
 msgid "U"
 msgstr "U"
 
@@ -313,6 +315,16 @@ msgstr "পপ-আপ প্রদর্শনে বাধা প্রদা�
 #: popupShowPopupPrefix
 msgid "Show '%S'"
 msgstr "'%S' প্রদর্শন"
+
+#. # Bad Content Blocker Doorhanger Notification
+#. # %S is brandShortName
+#: badContentBlocked.blocked.message
+msgid "%S is blocking content on this page."
+msgstr ""
+
+#: badContentBlocked.notblocked.message
+msgid "%S is not blocking any content on this page."
+msgstr ""
 
 #. # missing plugin installer
 #: installPlugin.message
@@ -1104,6 +1116,31 @@ msgstr "অ্যাপ্লিকেশন ইনস্টল করা হয়
 msgid "Installation in progress"
 msgstr "ইনস্টলেশন চলছে"
 
+#: webapps.uninstall
+#, fuzzy
+msgid "Uninstall"
+msgstr "আন-ইনস্টল করুন (&U)"
+
+#: webapps.uninstall.accesskey
+msgctxt "webapps.uninstall.accesskey"
+msgid "U"
+msgstr ""
+
+#: webapps.doNotUninstall
+#, fuzzy
+msgid "Don't Uninstall"
+msgstr "অ্যাপ্লিকেশন ইনস্টল করা হবে না"
+
+#: webapps.doNotUninstall.accesskey
+msgid "D"
+msgstr ""
+
+#. #LOCALIZATION NOTE (webapps.requestUninstall) %1$S is the web app name
+#: webapps.requestUninstall
+#, fuzzy
+msgid "Do you want to uninstall \"%1$S\"?"
+msgstr "আপনি কি %S ইনস্টল করতে ইচ্ছুক?"
+
 #. # LOCALIZATION NOTE (fullscreen.entered): displayed when we enter HTML5 fullscreen mode, %S is the domain name of the focused website (e.g. mozilla.com).
 #: fullscreen.entered
 msgid "%S is now fullscreen."
@@ -1238,13 +1275,36 @@ msgstr "আপনি কি %S এর সাথে ক্যামেরা এ�
 msgid "Would you like to share your microphone and screen with %S?"
 msgstr "আপনি কি %S এর সাথে আপনার মাইক্রোফোন শেয়ার করতে চান?"
 
+#: getUserMedia.selectWindow.label getUserMedia.selectWindow.accesskey
+msgid "&Window to share:"
+msgstr ""
+
+#: getUserMedia.selectScreen.label getUserMedia.selectScreen.accesskey
+msgid "&Screen to share:"
+msgstr ""
+
+#: getUserMedia.selectApplication.label
+#: getUserMedia.selectApplication.accesskey
+msgid "&Application to share:"
+msgstr ""
+
 #: getUserMedia.noVideo.label
 msgid "No Video"
 msgstr "কোন ভিডিও নেই"
 
-#: getUserMedia.noWindowOrScreen.label
-msgid "No Window or Screen"
-msgstr "কোন উইন্ডো বা স্ক্রিন নেই"
+#: getUserMedia.noApplication.label
+#, fuzzy
+msgid "No Application"
+msgstr "অ্যাপ্লিকেশন যোগ করুন"
+
+#: getUserMedia.noScreen.label
+msgid "No Screen"
+msgstr ""
+
+#: getUserMedia.noWindow.label
+#, fuzzy
+msgid "No Window"
+msgstr "নতুন উইন্ডো"
 
 #: getUserMedia.noAudio.label
 msgid "No Audio"
@@ -1253,6 +1313,15 @@ msgstr "কোন অডিও নেই"
 #: getUserMedia.shareEntireScreen.label
 msgid "Entire screen"
 msgstr "সমস্ত স্ক্রিন"
+
+#. # LOCALIZATION NOTE (getUserMedia.shareApplicationWindowCount.label):
+#. # Semicolon-separated list of plural forms.
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # Replacement for #1 is the name of the application.
+#. # Replacement for #2 is the number of windows currently displayed by the application.
+#: getUserMedia.shareApplicationWindowCount.label
+msgid "#1 (#2 window);#1 (#2 windows)"
+msgstr ""
 
 #. # LOCALIZATION NOTE (getUserMedia.shareSelectedDevices.label):
 #. # Semicolon-separated list of plural forms. See:
@@ -1266,6 +1335,10 @@ msgstr "&নির্বাচিত ডিভাইসটি ভাগ কর�
 #: getUserMedia.shareScreen.label
 msgid "Share Screen"
 msgstr "স্ক্রিন শেয়ার করুন"
+
+#: getUserMedia.shareApplication.label
+msgid "Share Selected Application"
+msgstr ""
 
 #: getUserMedia.shareWindow.label
 msgid "Share Selected Window"
@@ -1299,6 +1372,11 @@ msgstr "আপনি বর্তমানে পেজের সঙ্গে �
 msgid "You are currently sharing your camera and microphone with this page."
 msgstr "আপনি বর্তমানে পেজের সঙ্গে আপনার ক্যামেরা এবং মাইক্রোফোন ভাগ করছেন।"
 
+#: getUserMedia.sharingApplication.message
+#, fuzzy
+msgid "You are currently sharing an application with this page."
+msgstr "আপনি বর্তমানে পেজের সঙ্গে আপনার ক্যামেরা শেয়ার করছেন। "
+
 #: getUserMedia.sharingScreen.message
 msgid "You are currently sharing your screen with this page."
 msgstr "আপনি বর্তমানে পেজের সঙ্গে আপনার ক্যামেরা শেয়ার করছেন।"
@@ -1315,20 +1393,74 @@ msgstr "শেয়ার করতে থাকুন"
 msgid "&Stop Sharing"
 msgstr "শেয়ার বন্ধ করুন"
 
-#. # Mixed Content Blocker Doorhanger Notification
-#. # LOCALIZATION NOTE - %S is brandShortName
-#: mixedContentBlocked.message
-msgid "%S has blocked content that isn't secure."
-msgstr "%S বিপজ্জনক সামগ্রী প্রতিরোধ করেছে।"
+#: getUserMedia.sharingMenu.label getUserMedia.sharingMenu.accesskey
+msgid "Tabs sharing &devices"
+msgstr ""
 
-#: mixedContentBlocked.keepBlockingButton.label
-#: mixedContentBlocked.keepBlockingButton.accesskey
-msgid "Keep &Blocking"
-msgstr "&প্রতিরোধ করা হোক"
+#. # LOCALIZATION NOTE (getUserMedia.sharingMenuCamera, getUserMedia.sharingMenuCamera,
+#. #                    getUserMedia.sharingMenuMicrophone, getUserMedia.sharingMenuApplication,
+#. #                    getUserMedia.sharingMenuScreen, getUserMedia.sharingMenuWindow,
+#. #                    getUserMedia.sharingMenuCameraMicrophone,
+#. #                    getUserMedia.sharingMenuCameraMicrophoneApplication,
+#. #                    getUserMedia.sharingMenuCameraMicrophoneScreen,
+#. #                    getUserMedia.sharingMenuCameraMicrophoneWindow,
+#. #                    getUserMedia.sharingMenuMicrophoneApplication,
+#. #                    getUserMedia.sharingMenuMicrophoneScreen,
+#. #                    getUserMedia.sharingMenuMicrophoneWindow):
+#. # %S is the website origin (e.g. www.mozilla.org)
+#: getUserMedia.sharingMenuCamera
+msgid "%S (camera)"
+msgstr ""
 
-#: mixedContentBlocked.unblock.label mixedContentBlocked.unblock.accesskey
-msgid "&Disable Protection on This Page"
-msgstr "&এই পৃষ্ঠাতে সুরক্ষা নিষ্ক্রিয় করুন"
+#: getUserMedia.sharingMenuMicrophone
+msgid "%S (microphone)"
+msgstr ""
+
+#: getUserMedia.sharingMenuApplication
+msgid "%S (application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuScreen
+msgid "%S (screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuWindow
+msgid "%S (window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophone
+msgid "%S (camera and microphone)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophoneApplication
+msgid "%S (camera, microphone and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophoneScreen
+msgid "%S (camera, microphone and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraMicrophoneWindow
+msgid "%S (camera, microphone and window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuMicrophoneApplication
+msgid "%S (microphone and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuMicrophoneScreen
+msgid "%S (microphone and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuMicrophoneWindow
+msgid "%S (microphone and window)"
+msgstr ""
+
+#. # LOCALIZATION NOTE(getUserMedia.sharingMenuUnknownHost): this is used for the website
+#. # origin for the sharing menu if no readable origin could be deduced from the URL.
+#: getUserMedia.sharingMenuUnknownHost
+msgid "Unknown origin"
+msgstr ""
 
 #. # LOCALIZATION NOTE - %S is brandShortName
 #: slowStartup.message
@@ -1362,6 +1494,18 @@ msgstr "ইঙ্গিত"
 #: customizeTips.tip0.learnMore
 msgid "Learn more"
 msgstr "আরও জানুন"
+
+#~ msgid "No Window or Screen"
+#~ msgstr "কোন উইন্ডো বা স্ক্রিন নেই"
+
+#~ msgid "%S has blocked content that isn't secure."
+#~ msgstr "%S বিপজ্জনক সামগ্রী প্রতিরোধ করেছে।"
+
+#~ msgid "Keep &Blocking"
+#~ msgstr "&প্রতিরোধ করা হোক"
+
+#~ msgid "&Disable Protection on This Page"
+#~ msgstr "&এই পৃষ্ঠাতে সুরক্ষা নিষ্ক্রিয় করুন"
 
 #~ msgid "(unknown)"
 #~ msgstr "(অজ্ঞাত)"

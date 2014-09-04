@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-22 13:39+0100\n"
+"POT-Creation-Date: 2014-09-04 11:03+0000\n"
 "PO-Revision-Date: 2014-07-22 13:39+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
+"X-Generator: Translate Toolkit 1.12.0\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -23,7 +23,44 @@ msgstr ""
 msgid "Share this link to invite someone to talk:"
 msgstr ""
 
+#. ## LOCALIZATION NOTE(invitee_name_label): Displayed when obtaining a url.
+#. ## See https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#precall-firstrun
+#. ## Click the label icon at the end of the url field.
+#: invitee_name_label
+msgid "Who are you inviting?"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(invitee_expire_days_label): Allows the user to adjust
+#. ## the expiry time. Click the label icon at the end of the url field to see where
+#. ## this is:
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#precall-firstrun
+#. ## Semicolon-separated list of plural forms. See:
+#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. ## In this item, don't translate the part between {{..}}
+#: invitee_expire_days_label
+msgid ""
+"Invitation will expire in {{expiry_time}} day;Invitation will expire in "
+"{{expiry_time}} days"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(invitee_expire_hours_label): Allows the user to adjust
+#. ## the expiry time. Click the label icon are the end of the url field to see where
+#. ## this is:
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#precall-firstrun
+#. ## Semicolon-separated list of plural forms. See:
+#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. ## In this item, don't translate the part between {{..}}
+#: invitee_expire_hours_label
+msgid ""
+"Invitation will expire in {{expiry_time}} hour;Invitation will expire in "
+"{{expiry_time}} hours"
+msgstr ""
+
 #. # Status text
+#: display_name_guest
+msgid "Guest"
+msgstr ""
+
 #: display_name_dnd_status
 msgid "Do Not Disturb"
 msgstr ""
@@ -32,29 +69,324 @@ msgstr ""
 msgid "Available"
 msgstr ""
 
+#. # Error bars
+#. ## LOCALIZATION NOTE(unable_retrieve_url,session_expired_error_description,could_not_authenticate,password_changed_question,try_again_later,could_not_connect,check_internet_connection,login_expired,service_not_available,problem_accessing_account):
+#. ## These may be displayed at the top of the panel here:
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#error
 #: unable_retrieve_url
 msgid "Sorry, we were unable to retrieve a call url."
 msgstr ""
 
+#: session_expired_error_description
+msgid ""
+"Session expired. All URLs you have previously created and shared will no "
+"longer work."
+msgstr ""
+
+#: could_not_authenticate
+msgid "Could Not Authenticate"
+msgstr ""
+
+#: password_changed_question
+msgid "Did you change your password?"
+msgstr ""
+
+#: try_again_later
+msgid "Please try again later"
+msgstr ""
+
+#: could_not_connect
+msgid "Could Not Connect To The Server"
+msgstr ""
+
+#: check_internet_connection
+msgid "Please check your internet connection"
+msgstr ""
+
+#: login_expired
+msgid "Your Login Has Expired"
+msgstr ""
+
+#: service_not_available
+msgid "Service Unavailable At This Time"
+msgstr ""
+
+#: problem_accessing_account
+msgid "There Was A Problem Accessing Your Account"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(retry_button): Displayed when there is an error to retry
+#. ## the appropriate action.
+#. ## See https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#error for location
+#: retry_button
+msgctxt "retry_button"
+msgid "Retry"
+msgstr ""
+
+#: share_email_subject3
+msgid "You have been invited to a conversation"
+msgstr ""
+
+#. ## LOCALIZATION NOTE (share_email_body3): In this item, don't translate the
+#. ## part between {{..}} and leave the \r\n\r\n part alone
+#: share_email_body3
+msgid ""
+"To accept this invitation, just copy or click this link to start your "
+"conversation:\r\n"
+"\r\n"
+"{{callUrl}}"
+msgstr ""
+
+#: share_button
+msgctxt "share_button"
+msgid "Email"
+msgstr ""
+
+#: copy_url_button
+#, fuzzy
+msgid "Copy"
+msgstr "&Ochelkuunsej"
+
+#: copied_url_button
+msgid "Copied!"
+msgstr ""
+
+#: panel_footer_signin_or_signup_link
+msgid "Sign In or Sign Up"
+msgstr ""
+
+#: settings_menu_item_account
+msgid "Account"
+msgstr ""
+
+#: settings_menu_item_settings
+#, fuzzy
+msgctxt "settings_menu_item_settings"
+msgid "Settings"
+msgstr "Chuka'anilo'ob"
+
+#: settings_menu_item_signout
+msgid "Sign Out"
+msgstr ""
+
+#: settings_menu_item_signin
+msgid "Sign In"
+msgstr ""
+
+#: settings_menu_button_tooltip
+#, fuzzy
+msgctxt "settings_menu_button_tooltip"
+msgid "Settings"
+msgstr "Chuka'anilo'ob"
+
+#. # Contact Strings (Panel)
+#. ## LOCALIZATION NOTE(contacts_search_placeholder): This is the placeholder text for
+#. ## the search field at https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#: contacts_search_placesholder
+#, fuzzy
+msgid "Search…"
+msgstr "Kaaxan"
+
+#. ## LOCALIZATION NOTE (new_contact_button): This is the button to open the
+#. ## new contact sub-panel.
+#. ## See https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#. ## for where this appears on the UI
+#: new_contact_button
+msgid "New Contact"
+msgstr ""
+
+#. ## LOCALIZATION NOTE (new_contact_name_placeholder, new_contact_email_placeholder):
+#. ## These are the placeholders for the fields for entering a new contact
+#. ## See https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#. ## and click the 'New Contact' button to see the fields.
+#: new_contact_name_placeholder
+#, fuzzy
+msgctxt "new_contact_name_placeholder"
+msgid "Name"
+msgstr "K'áaba'"
+
+#: new_contact_email_placeholder
+msgctxt "new_contact_email_placeholder"
+msgid "Email"
+msgstr ""
+
+#. ## LOCALIZATION NOTE (add_contact_button):
+#. ## This is the button to actually add the new contact
+#. ## See https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#. ## and click the 'New Contact' button to see the fields.
+#: add_contact_button
+msgid "Add Contact"
+msgstr ""
+
+#. ### LOCALIZATION NOTE (valid_email_text_description): This is displayed when
+#. ### the user enters an invalid email address, preventing the addition of the
+#. ### contact.
+#: valid_email_text_description
+msgid "Please enter a valid email address"
+msgstr ""
+
+#. ## LOCALIZATION NOTE (add_or_import_contact_title): This is the subtitle of the panel
+#. ## at https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#: add_or_import_contact_title
+msgid "Add or Import Contact"
+msgstr ""
+
+#. ## LOCALIZATION NOTE (import_contacts_button, importing_contacts_progress_button):
+#. ## See https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#. ## for where these appear on the UI
+#: import_contacts_button
+msgid "Import"
+msgstr ""
+
+#: importing_contacts_progress_button
+msgid "Importing…"
+msgstr "Tuxbij..."
+
+#. ## LOCALIZATION NOTE(sync_contacts_button): This button is displayed in place of
+#. ## importing_contacts_button once contacts have been imported once.
+#: sync_contacts_button
+msgid "Sync Contacts"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(import_failed_description simple): Displayed when an import of
+#. ## contacts fails. This is displayed in the error field here:
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#error
+#: import_failed_description_simple
+msgid "Sorry, contact import failed"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(import_failed_description): Displayed when an import of contacts
+#. ## fails and the user may need more help. In this item, don't translate the part between
+#. ## {{..}} because this will be replaced by the label from import_failed_support_link_label.
+#. ## This is displayed in the error field here:
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#error
+#: import_failed_description
+msgid ""
+"Sorry, contact import failed, please see our "
+"{{import_failed_support_link_label}} for help"
+msgstr ""
+
+#: import_failed_support_link_label
+msgid "support site"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(remove_contact_menu_button): Displayed in the contact list in
+#. ## a pop-up menu next to the contact's name.
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#: remove_contact_menu_button
+msgctxt "remove_contact_menu_button"
+msgid "Remove Contact"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(confirm_delete_contact_alert): This is an alert that is displayed
+#. ## to confirm deletion of a contact.
+#: confirm_delete_contact_alert
+msgid "Are you sure you want to delete this contact?"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(confirm_delete_contact_remove_button, confirm_delete_contact_cancel_button):
+#. ## These are displayed on the alert with confirm_delete_contact_alert
+#: confirm_delete_contact_remove_button
+msgctxt "confirm_delete_contact_remove_button"
+msgid "Remove Contact"
+msgstr ""
+
+#: confirm_delete_contact_cancel_button
+#, fuzzy
+msgctxt "confirm_delete_contact_cancel_button"
+msgid "Cancel"
+msgstr "Je'elsej"
+
+#. ## LOCALIZATION NOTE(block_contact_menu_button): Displayed in the contact list in
+#. ## a pop-up menu next to the contact's name, used to block a contact from calling
+#. ## the user. https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#: block_contact_menu_button
+msgid "Block Contact"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(unblock_contact_menu_button): Displayed in the contact list in
+#. ## a pop-up menu next to the contact's name, used to unblock a contact and allow them
+#. ## to call the user. https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#: unblock_contact_menu_button
+msgid "Unblock Contact"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(edit_contact_menu_button): Displayed in the contact list in a
+#. ## pop-up menu next to the contact's name.
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#: edit_contact_menu_button
+msgid "Edit Contact…"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(edit_contact_tile): This is the subtitle of the edit contact
+#. ## panel. It is displayed when Edit Contact is selected.
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#: edit_contact_title
+msgid "Edit Contact"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(edit_contact_name_label, edit_contact_email_label):
+#. ## These fields are display when the Edit Contact button is selected.
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#: edit_contact_name_label
+#, fuzzy
+msgctxt "edit_contact_name_label"
+msgid "Name"
+msgstr "K'áaba'"
+
+#: edit_contact_email_label
+msgctxt "edit_contact_email_label"
+msgid "Email"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(edit_contact_name_label, edit_contact_email_label):
+#. ## These button is displayed when the Edit Contact button is selected and is used
+#. ## to accept the change.
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#: edit_contact_done_button
+#, fuzzy
+msgid "Done"
+msgstr "Mix jump'éel"
+
+#. ## LOCALIZATION NOTE(audio_call_menu_button): Displayed in the contact list in a
+#. ## pop-up menu next to the contact's name.
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#: audio_call_menu_button
+msgid "Audio Conversation"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(video_call_menu_button): Displayed in the contact list in a
+#. ## pop-up menu next to the contact's name.
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#contacts
+#: video_call_menu_button
+msgid "Video Conversation"
+msgstr ""
+
 #. # Conversation Window Strings
-#: incoming_call_title
-msgid "Incoming Call…"
+#: initiate_call_button_label2
+msgid "Ready to start your conversation?"
 msgstr ""
 
-#: incoming_call
-msgid "Incoming call"
+#: incoming_call_title2
+msgid "Conversation Request"
 msgstr ""
 
-#: incoming_call_answer_button
-msgid "Answer"
+#: incoming_call_accept_button
+msgid "Accept"
 msgstr ""
 
-#: incoming_call_decline_button
-msgid "Decline"
+#: incoming_call_accept_audio_only_tooltip
+msgid "Accept with voice"
 msgstr ""
 
-#: incoming_call_ignore_button
-msgid "Ignore"
+#: incoming_call_cancel_button
+#, fuzzy
+msgctxt "incoming_call_cancel_button"
+msgid "Cancel"
+msgstr "Je'elsej"
+
+#: incoming_call_cancel_and_block_button
+msgid "Cancel and Block"
 msgstr ""
 
 #: incoming_call_block_button
@@ -62,8 +394,12 @@ msgid "Block"
 msgstr "Wool k'áalta'al"
 
 #: hangup_button_title
-msgid "Hangup"
+msgid "Hang up"
 msgstr ""
+
+#: hangup_button_caption2
+msgid "Exit"
+msgstr "Jóok'ol"
 
 #: mute_local_audio_button_title
 msgid "Mute your audio"
@@ -81,17 +417,107 @@ msgstr ""
 msgid "Unmute your video"
 msgstr ""
 
-#: peer_ended_conversation
-msgid "Your peer ended the conversation."
+#. ## LOCALIZATION NOTE (call_with_contact_title): The title displayed
+#. ## when calling a contact. Don't translate the part between {{..}} because
+#. ## this will be replaced by the contact's name.
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#call-outgoing
+#: call_with_contact_title
+msgid "Conversation with {{contactName}}"
 msgstr ""
 
-#: call_has_ended
-msgid "Your call has ended."
+#. # Outgoing conversation
+#: outgoing_call_title
+msgid "Start conversation?"
 msgstr ""
 
-#: close_window
-msgid "Close this window"
+#: initiate_audio_video_call_button2
+msgid "Start"
 msgstr ""
+
+#: initiate_audio_video_call_tooltip2
+msgid "Start a video conversation"
+msgstr ""
+
+#: initiate_audio_call_button2
+msgid "Voice conversation"
+msgstr ""
+
+#: initiate_call_cancel_button
+#, fuzzy
+msgctxt "initiate_call_cancel_button"
+msgid "Cancel"
+msgstr "Je'elsej"
+
+#. ## LOCALIZATION NOTE (call_progress_connecting_description): This is displayed
+#. ## whilst the client is contacting the client at the other end of the connection
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#call-outgoing
+#: call_progress_connecting_description
+msgid "Connecting…"
+msgstr "Táan u nuup..."
+
+#. ## LOCALIZATION NOTE (call_progress_ringing_description): This is displayed
+#. ## when the other client is actually ringing.
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#call-outgoing
+#: call_progress_ringing_description
+msgid "Ringing…"
+msgstr ""
+
+#: peer_ended_conversation2
+msgid "The person you were calling has ended the conversation."
+msgstr ""
+
+#: conversation_has_ended
+msgid "Your conversation has ended."
+msgstr ""
+
+#: restart_call
+msgctxt "restart_call"
+msgid "Rejoin"
+msgstr ""
+
+#: generic_failure_title
+msgid "Something went wrong."
+msgstr ""
+
+#: generic_failure_with_reason2
+msgid "You can try again or email a link to be reached at later."
+msgstr ""
+
+#: generic_failure_no_reason2
+msgid "Would you like to try again?"
+msgstr ""
+
+#. ## LOCALIZATION NOTE (contact_offline_title): Title for
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#link-prompt
+#. ## displayed when the contact is offline.
+#: contact_offline_title
+msgid "This person is not online"
+msgstr ""
+
+#. ## LOCALIZATION NOTE (call_timeout_notification_text): Title for
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#link-prompt
+#. ## displayed when the call didn't go through.
+#: call_timeout_notification_text
+msgid "Your call did not go through."
+msgstr ""
+
+#. ## LOCALIZATION NOTE (retry_call_button, cancel_button, email_link_button):
+#. ## These buttons are displayed when a call has failed:
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#link-prompt
+#: retry_call_button
+msgctxt "retry_call_button"
+msgid "Retry"
+msgstr ""
+
+#: email_link_button
+msgid "Email Link"
+msgstr ""
+
+#: cancel_button
+#, fuzzy
+msgctxt "cancel_button"
+msgid "Cancel"
+msgstr "Je'elsej"
 
 #: cannot_start_call_session_not_ready
 msgid "Can't start call, session is not ready."
@@ -105,11 +531,93 @@ msgstr ""
 msgid "Call failed; see console for details."
 msgstr ""
 
-#. ## LOCALIZATION NOTE (legal_text_and_links): In this item, don't translate the
-#. ## part between {{..}}
-#: legal_text_and_links
+#. ## LOCALIZATION NOTE (legal_text_and_links3): In this item, don't translate the
+#. ## parts between {{..}} because these will be replaced with links with the labels
+#. ## from legal_text_tos and legal_text_privacy. clientShortname will be replaced
+#. ## by the brand name, or fall back to client_shortname_fallback
+#: legal_text_and_links3
 msgid ""
-"By using this product you agree to the <a target=\"_blank\" href="
-"\"{{terms_of_use_url}}\">Terms of Use</a> and <a href="
-"\"{{privacy_notice_url}}\">Privacy Notice</a>."
+"By using {{clientShortname}} you agree to the {{terms_of_use}} and "
+"{{privacy_notice}}."
+msgstr ""
+
+#: legal_text_tos
+msgid "Terms of Use"
+msgstr ""
+
+#: legal_text_privacy
+msgid "Privacy Notice"
+msgstr ""
+
+#: client_shortname_fallback
+msgid "this product"
+msgstr ""
+
+#: feedback_call_experience_heading2
+msgid "How was your conversation?"
+msgstr ""
+
+#: feedback_what_makes_you_sad
+msgid "What makes you sad?"
+msgstr ""
+
+#: feedback_thank_you_heading
+msgid "Thank you for your feedback!"
+msgstr ""
+
+#: feedback_category_audio_quality
+msgid "Audio quality"
+msgstr ""
+
+#: feedback_category_video_quality
+msgid "Video quality"
+msgstr ""
+
+#: feedback_category_was_disconnected
+msgid "Was disconnected"
+msgstr ""
+
+#: feedback_category_confusing
+msgid "Confusing"
+msgstr ""
+
+#: feedback_category_other
+msgid "Other:"
+msgstr ""
+
+#: feedback_custom_category_text_placeholder
+msgid "What went wrong?"
+msgstr ""
+
+#: feedback_submit_button
+msgid "Submit"
+msgstr ""
+
+#: feedback_back_button
+#, fuzzy
+msgid "Back"
+msgstr "Súutpachil"
+
+#. ## LOCALIZATION NOTE (feedback_window_will_close_in2):
+#. ## Semicolon-separated list of plural forms. See:
+#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. ## In this item, don't translate the part between {{..}}
+#: feedback_window_will_close_in2
+msgid ""
+"This window will close in {{countdown}} second;This window will close in "
+"{{countdown}} seconds"
+msgstr ""
+
+#. ## LOCALIZATION_NOTE (feedback_rejoin_button): Displayed on the feedback form after
+#. ## a signed-in to signed-in user call.
+#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#feedback
+#: feedback_rejoin_button
+msgctxt "feedback_rejoin_button"
+msgid "Rejoin"
+msgstr ""
+
+#. ## LOCALIZATION NOTE (feedback_report_user_button): Used to report a user in the case of
+#. ## an abusive user.
+#: feedback_report_user_button
+msgid "Report User"
 msgstr ""
