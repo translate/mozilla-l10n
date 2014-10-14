@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2013-06-10 16:47+0000\n"
 "Last-Translator: Dwayne Bailey <dwayne@translate.org.za>\n"
 "Language-Team: none\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1370882844.000000\n"
@@ -58,12 +58,6 @@ msgstr ""
 msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr "Lekile go romela pego go URI e sa šomego: \"%1$S\""
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "phošo e be e le: \"%1$S\""
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -96,45 +90,11 @@ msgid ""
 "block and cannot report violations of this policy."
 msgstr ""
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "letlakala leo le lego go %1$S le ka se romele dipego go %2$S"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"go nyakega tšhupetšo ya 'dumelela' goba 'default-src' eupša ga e gona. E "
-"boela morago go \"default-src 'e sego selo'\" "
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "E paletšwe ke go arola mothopo o sa lemogwego wa %1$S"
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr ""
-"Go romelwa ga pego ya go hlaselwa go ya go %1$S go padile, ka ge go diregile "
-"tšhupetšo e nngwe"
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr ""
-"go dumelela tšhupetšo ga go hlohleletšwe, go e na le moo diriša tšhupetšo ya "
-"default-src"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -171,91 +131,11 @@ msgid "Not supporting directive '%1$S'. Directive and values will be ignored."
 msgstr ""
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "tšhupetšo ya policy-uri e ka tšwelela e le noši feela"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr "Policy-uri e ka se latwe ka ntle le kgopelo ya motswadi le CSP."
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr "e ka se arole URI go URI ya pholisi: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr ""
-"e ka se late uri ya pholisi go tšwa go leina la moamogedi leo le sa swanego: "
-"%1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr ""
-"e ka se late uri ya pholisi go tšwa go didirišwa tše kopantšwego le "
-"khomphutha tše sa swanego: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr "e ka se late uri ya pholisi go tšwa sekemeng se sa swanego:%1$S"
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "Phošo ya go lata pholisi ya uri:%1$S"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "Ngangišano e filwego ga se nsIURI"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "Ngangišano e filwego ga se thapo"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr "O ka se diriše 'nna' ge eba go sa fanwa ka tsebišo ya gago"
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "o ka se arole URI ka ntle le sekema: %1$S"
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr ""
-"go dirišitšwe lentšu la bohlokwa la nna, eupša ga go a laetšwa tsebišo ya "
-"gago"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "E ka se arole mothopo o sa šomego wa %1$S"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr ""
-"E ka se hlame mothopo wa moamogedi feela wa %1$S ka ntle le tsebišo ya "
-"'gago' "
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr "E ka se hlame mothopo wa %1$S ka ntle le tsebišo ya 'gago'"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -275,36 +155,6 @@ msgstr "E ka se arole sekema go %1$S"
 msgid "Couldn't parse port in %1$S"
 msgstr "E ka se arole didirišwa tše kopantšwego le khomphutha go %1$S"
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr ""
-"E ka se gahlanye %1$S le %2$S ka baka la mathata a didirišwa tše kopantšwego "
-"le khomphutha."
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr "E ka se gahlanye %1$S le %2$S ka baka la mathata a sekema."
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr "go gahlanya mothopo le moamogedi yo a sa hlaloswago: %1$S"
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr ""
-"go gahlanya methopo e mebedi le baamogedi ba sa hlaloswago: %1$S le %2$S"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -314,6 +164,96 @@ msgid ""
 msgstr ""
 "Go lemogilwe ditšhupetšo tše kopišitšwego tša %1$S. Tšohle eupša go sa "
 "akaretšwe ya pele di tla hlokomologwa."
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "phošo e be e le: \"%1$S\""
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "letlakala leo le lego go %1$S le ka se romele dipego go %2$S"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "go nyakega tšhupetšo ya 'dumelela' goba 'default-src' eupša ga e gona. E "
+#~ "boela morago go \"default-src 'e sego selo'\" "
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr ""
+#~ "Go romelwa ga pego ya go hlaselwa go ya go %1$S go padile, ka ge go "
+#~ "diregile tšhupetšo e nngwe"
+
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "go dumelela tšhupetšo ga go hlohleletšwe, go e na le moo diriša tšhupetšo "
+#~ "ya default-src"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "tšhupetšo ya policy-uri e ka tšwelela e le noši feela"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr "Policy-uri e ka se latwe ka ntle le kgopelo ya motswadi le CSP."
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr "e ka se arole URI go URI ya pholisi: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr ""
+#~ "e ka se late uri ya pholisi go tšwa go leina la moamogedi leo le sa "
+#~ "swanego: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr ""
+#~ "e ka se late uri ya pholisi go tšwa go didirišwa tše kopantšwego le "
+#~ "khomphutha tše sa swanego: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr "e ka se late uri ya pholisi go tšwa sekemeng se sa swanego:%1$S"
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "Phošo ya go lata pholisi ya uri:%1$S"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "Ngangišano e filwego ga se nsIURI"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "Ngangišano e filwego ga se thapo"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr "O ka se diriše 'nna' ge eba go sa fanwa ka tsebišo ya gago"
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "o ka se arole URI ka ntle le sekema: %1$S"
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr ""
+#~ "go dirišitšwe lentšu la bohlokwa la nna, eupša ga go a laetšwa tsebišo ya "
+#~ "gago"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr ""
+#~ "E ka se hlame mothopo wa moamogedi feela wa %1$S ka ntle le tsebišo ya "
+#~ "'gago' "
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr "E ka se hlame mothopo wa %1$S ka ntle le tsebišo ya 'gago'"
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr ""
+#~ "E ka se gahlanye %1$S le %2$S ka baka la mathata a didirišwa tše "
+#~ "kopantšwego le khomphutha."
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr "E ka se gahlanye %1$S le %2$S ka baka la mathata a sekema."
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr "go gahlanya mothopo le moamogedi yo a sa hlaloswago: %1$S"
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr ""
+#~ "go gahlanya methopo e mebedi le baamogedi ba sa hlaloswago: %1$S le %2$S"
 
 #~ msgid "Directive %1$S violated"
 #~ msgstr "Tšhupetšo ya %1$S e hlasetšwe"

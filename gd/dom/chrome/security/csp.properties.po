@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2014-09-06 21:43+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: none\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1410039783.000000\n"
@@ -66,12 +66,6 @@ msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr ""
 "Chaidh oidhirp a dhèanamh aithisg a chur gu URI mì-dhligheach: \"%1$S\""
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "B' e \"%1$S\" a' mhearachd"
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -108,44 +102,11 @@ msgstr ""
 "eil URI airson aithrisean aice. Cha chuir CSP casg agus chan urrainn dha "
 "aithris a dhèanamh air briseadh a' phoileasaidh seo."
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "Chan urrainn dhan duilleag air %1$S aithisgean a chur gu %2$S"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"Tha feum air steòrnadh \"allow\" no \"default-src\" ach chan eil e an "
-"làthair.  A' tilleadh gu \"default-src 'none'\""
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "Dh'fhàillig parsadh an tùis neo-aithnichte %1$S"
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr ""
-"Dh'fhàillig postadh aithisg a' bhrisidh %1$S air sgàth ath-threòrachaidh"
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr ""
-"Cha mholar cleachdadh an allow directive tuilleadh, cleachd a sheise de "
-"default-src directive 'na àite"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -190,90 +151,11 @@ msgid "Not supporting directive '%1$S'. Directive and values will be ignored."
 msgstr "Not supporting directive '%1$S'. Directive and values will be ignored."
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "Chan fhaod an steòrnadh policy-uri nochdadh ach 'na aonar"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr "Cha ghabh am policy-uri fhaighinn as aonais iarrtas pàraint agus CSP."
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr "Cha b' urrainn dhuinn an URI sa URI phoileasaidh a pharsadh: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr ""
-"Cha ghabh URI a' phoileasaidh fhaighinn o ainm òstair nach eil 'na mhaids: "
-"%1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr ""
-"Cha ghabh URI a' phoileasaidh fhaighinn ophort nach eil 'na mhaids: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr ""
-"Cha ghabh URI a' phoileasaidh fhaighinn o sgeama nach eil 'na mhaids: %1$S"
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "Mearachd a' faighinn policy-uri: %1$S"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "Chan eil an argamaid a shònraich thu 'na nsIURI"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "Chan eil an argamaid a shònraich thu 'na shreang"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr "Cha ghabh \"self\" a chleachdadh mur eil dàta \"self\" 'ga sholar"
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "Cha ghabh URI a pharsadh as aonais sgeama: %1$S"
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr ""
-"Chaidh facal-luirg \"self\" a chleachdadh ach cha deach dàta \"self\" a "
-"sholar"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "Cha b' urrainn dhuinn an tùs mì-dhligheach %1$S a pharsadh"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr ""
-"Cha ghabh tùs òstair-a-mhàin %1$S a chruthachadh as aonais dàta \"self\""
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr "Cha ghabh an tùs %1$S a chruthachadh as aonais dàta \"self\""
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -293,37 +175,6 @@ msgstr "Cha b' urrainn dhuinn an sgeama %1$S a pharsadh"
 msgid "Couldn't parse port in %1$S"
 msgstr "Cha b' urrainn dhuinn am post ann an %1$S a pharsadh"
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr ""
-"Cha do ghabh %1$S eadar-ghearradh le %2$S air sgàth duilgheadais leis a' "
-"phort."
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr ""
-"Cha do ghabh %1$S eadar-ghearradh le %2$S air sgàth duilgheadais leis an "
-"sgeama."
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr "Tùs eadar-ghearrte le òstair gun mhìneachadh: %1$S"
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr "Dà thùs eadar-ghearrte le òstair gun mhìneachadh: %1$S agus %2$S"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -333,6 +184,96 @@ msgid ""
 msgstr ""
 "Mhothaich sinn do dhùblachadh de dh'àitheantan %1$S.  Leigidh sinn seachad "
 "na h-uile ach a' chiad tè dhiubh."
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "B' e \"%1$S\" a' mhearachd"
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "Chan urrainn dhan duilleag air %1$S aithisgean a chur gu %2$S"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "Tha feum air steòrnadh \"allow\" no \"default-src\" ach chan eil e an "
+#~ "làthair.  A' tilleadh gu \"default-src 'none'\""
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr ""
+#~ "Dh'fhàillig postadh aithisg a' bhrisidh %1$S air sgàth ath-threòrachaidh"
+
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "Cha mholar cleachdadh an allow directive tuilleadh, cleachd a sheise de "
+#~ "default-src directive 'na àite"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "Chan fhaod an steòrnadh policy-uri nochdadh ach 'na aonar"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr ""
+#~ "Cha ghabh am policy-uri fhaighinn as aonais iarrtas pàraint agus CSP."
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr "Cha b' urrainn dhuinn an URI sa URI phoileasaidh a pharsadh: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr ""
+#~ "Cha ghabh URI a' phoileasaidh fhaighinn o ainm òstair nach eil 'na "
+#~ "mhaids: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr ""
+#~ "Cha ghabh URI a' phoileasaidh fhaighinn ophort nach eil 'na mhaids: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr ""
+#~ "Cha ghabh URI a' phoileasaidh fhaighinn o sgeama nach eil 'na mhaids: %1$S"
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "Mearachd a' faighinn policy-uri: %1$S"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "Chan eil an argamaid a shònraich thu 'na nsIURI"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "Chan eil an argamaid a shònraich thu 'na shreang"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr "Cha ghabh \"self\" a chleachdadh mur eil dàta \"self\" 'ga sholar"
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "Cha ghabh URI a pharsadh as aonais sgeama: %1$S"
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr ""
+#~ "Chaidh facal-luirg \"self\" a chleachdadh ach cha deach dàta \"self\" a "
+#~ "sholar"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr ""
+#~ "Cha ghabh tùs òstair-a-mhàin %1$S a chruthachadh as aonais dàta \"self\""
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr "Cha ghabh an tùs %1$S a chruthachadh as aonais dàta \"self\""
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr ""
+#~ "Cha do ghabh %1$S eadar-ghearradh le %2$S air sgàth duilgheadais leis a' "
+#~ "phort."
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr ""
+#~ "Cha do ghabh %1$S eadar-ghearradh le %2$S air sgàth duilgheadais leis an "
+#~ "sgeama."
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr "Tùs eadar-ghearrte le òstair gun mhìneachadh: %1$S"
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr "Dà thùs eadar-ghearrte le òstair gun mhìneachadh: %1$S agus %2$S"
 
 #~ msgid "The report URI (%1$S) must be from the same eTLD+1."
 #~ msgstr "Feumaidh URI na h-aithisge (%1$S) a bhith on aon eTLD+1."

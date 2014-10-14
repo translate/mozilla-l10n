@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2014-09-09 16:29+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: none\n"
@@ -16,15 +16,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1410280177.000000\n"
 
 #. # Panel Strings
+#. ## LOCALIZATION NOTE(clientShortname2): This should not be localized and
+#. ## should remain "Firefox Hello" for all locales.
+#: clientShortname2
+msgid "Firefox Hello"
+msgstr ""
+
+#. ## LOCALIZATION_NOTE(first_time_experience.title): clientShortname will be
+#. ## replaced by the brand name
+#: first_time_experience_title
+msgctxt "first_time_experience_title"
+msgid "{{clientShortname}} — Join the conversation"
+msgstr ""
+
+#: first_time_experience_button_label
+#, fuzzy
+msgid "Get Started"
+msgstr "Prěnje kroki"
+
 #: share_link_header_text
 msgid "Share this link to invite someone to talk:"
 msgstr "Dźělće tutón wotkaz, zo byšće někoho do rozmołwy přeprosył:"
+
+#: invite_header_text
+msgid "Invite someone to join you."
+msgstr ""
 
 #. ## LOCALIZATION NOTE(invitee_name_label): Displayed when obtaining a url.
 #. ## See https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#precall-firstrun
@@ -134,32 +156,49 @@ msgctxt "retry_button"
 msgid "Retry"
 msgstr "Hišće raz spytać"
 
-#: share_email_subject3
-msgid "You have been invited to a conversation"
-msgstr "Sće k rozmołwje přeprošeny"
-
-#. ## LOCALIZATION NOTE (share_email_body3): In this item, don't translate the
-#. ## part between {{..}} and leave the \r\n\r\n part alone
-#: share_email_body3
-msgid ""
-"To accept this invitation, just copy or click this link to start your "
-"conversation:\r\n"
-"\r\n"
-"{{callUrl}}"
+#: share_email_subject4
+msgctxt "share_email_subject4"
+msgid "{{clientShortname}} — Join the conversation"
 msgstr ""
-"Zo byšće tute přeprošenje přiwzał, kopěrujće tutón wotkaz abo klikńće prosće "
-"na njón, zo byšće rozmołwu započał: \n"
-"\n"
-"{{callUrl}}"
+
+#. ## LOCALIZATION NOTE (share_email_body4): In this item, don't translate the
+#. ## part between {{..}} and leave the \r\n\r\n part alone
+#: share_email_body4
+msgid ""
+"Hello!\r\n"
+"\r\n"
+"Join me for a video conversation using {{clientShortname}}:\r\n"
+"\r\n"
+"You don't have to download or install anything. Just copy and paste this URL "
+"into your browser:\r\n"
+"\r\n"
+"{{callUrl}}\r\n"
+"\r\n"
+"If you want, you can also learn more about {{clientShortname}} at "
+"{{learnMoreUrl}}\r\n"
+"\r\n"
+"Talk to you soon!"
+msgstr ""
 
 #: share_button
 msgctxt "share_button"
 msgid "Email"
 msgstr "E-mejl"
 
+#: share_button2
+#, fuzzy
+msgctxt "share_button2"
+msgid "Email Link"
+msgstr "Wotkaz e-mejlować"
+
 #: copy_url_button
 msgid "Copy"
 msgstr "Kopěrować"
+
+#: copy_url_button2
+msgctxt "copy_url_button2"
+msgid "Copy Link"
+msgstr ""
 
 #: copied_url_button
 msgid "Copied!"
@@ -219,6 +258,15 @@ msgstr "Mjeno"
 msgctxt "new_contact_email_placeholder"
 msgid "Email"
 msgstr "E-mejl"
+
+#: new_contact_phone_placeholder
+msgid "Firefox OS Phone"
+msgstr ""
+
+#: contacts_blocked_contacts
+#, fuzzy
+msgid "Blocked Contacts"
+msgstr "Kontakt blokować"
 
 #. ## LOCALIZATION NOTE (add_contact_button):
 #. ## This is the button to actually add the new contact
@@ -388,6 +436,11 @@ msgstr "Akceptować"
 msgid "Accept with voice"
 msgstr "Z hłosom akceptować"
 
+#: incoming_call_accept_audio_video_tooltip
+#, fuzzy
+msgid "Accept with video"
+msgstr "Z hłosom akceptować"
+
 #: incoming_call_cancel_button
 msgctxt "incoming_call_cancel_button"
 msgid "Cancel"
@@ -518,6 +571,8 @@ msgid "Retry"
 msgstr "Hišće raz spytać"
 
 #: email_link_button
+#, fuzzy
+msgctxt "email_link_button"
 msgid "Email Link"
 msgstr "Wotkaz e-mejlować"
 
@@ -541,7 +596,7 @@ msgstr "Zawołanje je so nimokuliło; hlejće konsolu za podrobnosće."
 #. ## LOCALIZATION NOTE (legal_text_and_links3): In this item, don't translate the
 #. ## parts between {{..}} because these will be replaced with links with the labels
 #. ## from legal_text_tos and legal_text_privacy. clientShortname will be replaced
-#. ## by the brand name, or fall back to client_shortname_fallback
+#. ## by the brand name.
 #: legal_text_and_links3
 msgid ""
 "By using {{clientShortname}} you agree to the {{terms_of_use}} and "
@@ -558,9 +613,17 @@ msgstr "Wužiwanske wuměnjenja"
 msgid "Privacy Notice"
 msgstr "Zdźělenka priwatnosće"
 
-#: client_shortname_fallback
-msgid "this product"
-msgstr "tutón produkt"
+#. ## LOCALIZATION NOTE (powered_by_beforeLogo, powered_by_afterLogo):
+#. ## These 2 strings are displayed before and after a 'Telefonica'
+#. ## logo.
+#: powered_by_beforeLogo
+msgid "Powered by"
+msgstr ""
+
+#: powered_by_afterLogo
+msgctxt "powered_by_afterLogo"
+msgid ""
+msgstr ""
 
 #: feedback_call_experience_heading2
 msgid "How was your conversation?"
@@ -632,6 +695,105 @@ msgstr "Zaso so přidružić"
 #: feedback_report_user_button
 msgid "Report User"
 msgstr "Wužiwarja zdźělić"
+
+#: help_label
+msgid "Help"
+msgstr "Pomoc"
+
+#: tour_label
+msgid "Tour"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(rooms_default_room_name_template): {{conversationLabel}}
+#. ## will be replaced by a number. For example "Conversation 1" or "Conversation 12".
+#: rooms_default_room_name_template
+msgid "Conversation {{conversationLabel}}"
+msgstr ""
+
+#: rooms_leave_button_label
+msgid "Leave"
+msgstr "Wopušćić"
+
+#: rooms_list_copy_url_tooltip
+msgctxt "rooms_list_copy_url_tooltip"
+msgid "Copy Link"
+msgstr ""
+
+#. ## LOCALIZATION NOTE (rooms_list_current_conversations):
+#. ## Semicolon-separated list of plural forms. See:
+#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. ## We prefer to have no number in the string, but if you need it for your
+#. ## language please use {{num}}.
+#: rooms_list_current_conversations
+msgid "Current conversation;Current conversations"
+msgstr ""
+
+#: rooms_list_delete_tooltip
+msgid "Delete conversation"
+msgstr ""
+
+#: rooms_list_deleteConfirmation_label
+msgid "Are you sure?"
+msgstr "Sće wěsty?"
+
+#: rooms_list_no_current_conversations
+msgid "No current conversations"
+msgstr ""
+
+#: rooms_name_this_room_label
+msgid "Name this conversation"
+msgstr ""
+
+#: rooms_new_room_button_label
+#, fuzzy
+msgid "Start a conversation"
+msgstr "Rozmołwu započeć?"
+
+#: rooms_only_occupant_label
+msgid "You're the first one here."
+msgstr ""
+
+#: rooms_panel_title
+msgid "Choose a conversation or start a new one"
+msgstr ""
+
+#: rooms_room_full_label
+msgid "There are already two people in this conversation."
+msgstr ""
+
+#: rooms_room_full_call_to_action_nonFx_label
+msgid "Download {{brandShortname}} to start your own"
+msgstr ""
+
+#: rooms_room_full_call_to_action_label
+msgid "Learn more about {{clientShortname}} »"
+msgstr ""
+
+#: rooms_room_joined_label
+msgid "Someone has joined the conversation!"
+msgstr ""
+
+#: rooms_room_join_label
+#, fuzzy
+msgid "Join the conversation"
+msgstr "Telefonowa rozmołwa"
+
+#~ msgid "You have been invited to a conversation"
+#~ msgstr "Sće k rozmołwje přeprošeny"
+
+#~ msgid ""
+#~ "To accept this invitation, just copy or click this link to start your "
+#~ "conversation:\r\n"
+#~ "\r\n"
+#~ "{{callUrl}}"
+#~ msgstr ""
+#~ "Zo byšće tute přeprošenje přiwzał, kopěrujće tutón wotkaz abo klikńće "
+#~ "prosće na njón, zo byšće rozmołwu započał: \n"
+#~ "\n"
+#~ "{{callUrl}}"
+
+#~ msgid "this product"
+#~ msgstr "tutón produkt"
 
 #~ msgid "Incoming Call…"
 #~ msgstr "Dochadźace zawołanje…"

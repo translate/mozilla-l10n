@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2014-10-09 15:35+0000\n"
 "Last-Translator: Nilamdyuti <ngoswami@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1412868906.000000\n"
@@ -61,12 +61,6 @@ msgstr ""
 msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr "অবৈধ URI লে সংবাদ পঠোৱাৰ চেষ্টা কৰিছিল: \"%1$S\""
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "ত্ৰুটি আছিল: \"%1$S\""
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -101,41 +95,11 @@ msgstr ""
 "এই ছাইট (%1$S) ৰ এটা সংবাদ URI নহোৱাকৈ এটা কেৱল-সংবাদ নীতি আছে। CSP প্ৰতিৰোধ "
 "নহব আৰু এই নীতিৰ অমান্যতা সংবাদ কৰিব নোৱাৰিব।"
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "%1$S ত থকা পৃষ্ঠায় %2$S লে সংবাদসমূহ পঠাব নোৱাৰে"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"'allow' অথবা 'default-src' নিৰ্দেশ প্ৰয়োজনীয় কিন্তু উপস্থিত নাই।  \"default-src "
-"'none'\" লে প্ৰত্যাবৰ্তন কৰা হৈছে"
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "অপৰিচিত উৎস %1$S বিশ্লেষণ কৰিবলে ব্যৰ্থ"
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr "%1$S লে উলংঘন সংবাদ জমা দিয়া ব্যৰ্থ হল, যিহেতু এটা পুনৰনিৰ্দেশ উপস্থিত হল"
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr "allow নিৰ্দেশ স্খলিত, ইয়াৰ পৰিবৰ্তে সমতূল্য default-src নিৰ্দেশ ব্যৱহাৰ কৰক"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -176,83 +140,11 @@ msgid "Not supporting directive '%1$S'. Directive and values will be ignored."
 msgstr "নিৰ্দেশ '%1$S' ক সমৰ্থন কৰা নহয়। নিৰ্দেশ আৰু মানসমূহক উপেক্ষা কৰা হব।"
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "policy-uri নিৰ্দেশ কেৱল অকলে উপস্থিত হব পাৰে"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr "policy-uri এটা উপধায়ক অনুৰোধ আৰু এটা CSP ৰ অৱিহনে প্ৰাপ্ত কৰিব নোৱাৰি।"
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr "URI: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr "মিল নখোৱা হস্টনামৰ পৰা নীতি uri প্ৰাপ্ত কৰিব নোৱাৰি: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr "মিল নখোৱা পৰ্টৰ পৰা নীতি uri প্ৰাপ্ত কৰিব নোৱাৰি: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr "মিল নখোৱা আঁচনিৰ পৰা নীতি uri প্ৰাপ্ত কৰিব নোৱাৰি: %1$S"
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "আঁচনি-uri প্ৰাপ্ত কৰোতে ত্ৰুটি: %1$S"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "প্ৰদান কৰা তৰ্ক এটা nsIURI নহয়"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "প্ৰদান কৰা তৰ্ক এটা স্ট্ৰিং নহয়"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr "স্ব তথ্য দিয়া নাথাকিলে 'self' ব্যৱহাৰ কৰিব নোৱাৰি"
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "এটা আঁচনিৰ অৱিহনে URI বিশ্লেষণ কৰিব নোৱাৰি: %1$S"
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr "স্ব কিৱাৰ্ড ব্যৱহৃত, কিন্তু কোনো স্ব তথ্য ধাৰ্য্যত নহয়"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "অবৈধ উৎস %1$S বিশ্লেষণ কৰিব নোৱাৰি"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr "'self' তথ্যৰ অৱিহনে কেৱল-হস্ট উৎস %1$S সৃষ্টি কৰিব নোৱাৰি"
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr "'self' তথ্যৰ অৱিহনে উৎস %1$S সৃষ্টি কৰিব নোৱাৰি"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -272,33 +164,6 @@ msgstr "%1$S ত আঁচনি বিশ্লেষণ কৰিব নো
 msgid "Couldn't parse port in %1$S"
 msgstr "%1$S ত পৰ্ট বিশ্লেষণ কৰিব নোৱাৰি"
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr "পৰ্ট সমস্যাবোৰৰ বাবে %2$S ৰ সৈতে %1$S ক ছেদ কৰিব নোৱাৰি।"
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr "আঁচনি সমস্যাবোৰৰ বাবে %2$S ৰ সৈতে %1$S ক ছেদ কৰিব নোৱাৰি।"
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr "অবিৱৰিত হস্টৰ সৈতে উৎস ছেদ কৰা: %1$S"
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr "অবিৱৰিত হস্টসমূহৰ সৈতে দুটা উৎস ছেদ কৰা: %1$S আৰু %2$S"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -308,6 +173,82 @@ msgid ""
 msgstr ""
 "প্ৰতিলিপিত %1$S নিৰ্দেশসমূহ চিনাক্ত কৰা হৈছে।  প্ৰথম উদাহৰণৰ বাহিৰে বাকি সকলো "
 "উপেক্ষা কৰা হব।"
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "ত্ৰুটি আছিল: \"%1$S\""
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "%1$S ত থকা পৃষ্ঠায় %2$S লে সংবাদসমূহ পঠাব নোৱাৰে"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "'allow' অথবা 'default-src' নিৰ্দেশ প্ৰয়োজনীয় কিন্তু উপস্থিত নাই।  \"default-"
+#~ "src 'none'\" লে প্ৰত্যাবৰ্তন কৰা হৈছে"
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr "%1$S লে উলংঘন সংবাদ জমা দিয়া ব্যৰ্থ হল, যিহেতু এটা পুনৰনিৰ্দেশ উপস্থিত হল"
+
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "allow নিৰ্দেশ স্খলিত, ইয়াৰ পৰিবৰ্তে সমতূল্য default-src নিৰ্দেশ ব্যৱহাৰ কৰক"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "policy-uri নিৰ্দেশ কেৱল অকলে উপস্থিত হব পাৰে"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr "policy-uri এটা উপধায়ক অনুৰোধ আৰু এটা CSP ৰ অৱিহনে প্ৰাপ্ত কৰিব নোৱাৰি।"
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr "URI: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr "মিল নখোৱা হস্টনামৰ পৰা নীতি uri প্ৰাপ্ত কৰিব নোৱাৰি: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr "মিল নখোৱা পৰ্টৰ পৰা নীতি uri প্ৰাপ্ত কৰিব নোৱাৰি: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr "মিল নখোৱা আঁচনিৰ পৰা নীতি uri প্ৰাপ্ত কৰিব নোৱাৰি: %1$S"
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "আঁচনি-uri প্ৰাপ্ত কৰোতে ত্ৰুটি: %1$S"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "প্ৰদান কৰা তৰ্ক এটা nsIURI নহয়"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "প্ৰদান কৰা তৰ্ক এটা স্ট্ৰিং নহয়"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr "স্ব তথ্য দিয়া নাথাকিলে 'self' ব্যৱহাৰ কৰিব নোৱাৰি"
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "এটা আঁচনিৰ অৱিহনে URI বিশ্লেষণ কৰিব নোৱাৰি: %1$S"
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr "স্ব কিৱাৰ্ড ব্যৱহৃত, কিন্তু কোনো স্ব তথ্য ধাৰ্য্যত নহয়"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr "'self' তথ্যৰ অৱিহনে কেৱল-হস্ট উৎস %1$S সৃষ্টি কৰিব নোৱাৰি"
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr "'self' তথ্যৰ অৱিহনে উৎস %1$S সৃষ্টি কৰিব নোৱাৰি"
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr "পৰ্ট সমস্যাবোৰৰ বাবে %2$S ৰ সৈতে %1$S ক ছেদ কৰিব নোৱাৰি।"
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr "আঁচনি সমস্যাবোৰৰ বাবে %2$S ৰ সৈতে %1$S ক ছেদ কৰিব নোৱাৰি।"
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr "অবিৱৰিত হস্টৰ সৈতে উৎস ছেদ কৰা: %1$S"
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr "অবিৱৰিত হস্টসমূহৰ সৈতে দুটা উৎস ছেদ কৰা: %1$S আৰু %2$S"
 
 #~ msgid "The report URI (%1$S) must be from the same eTLD+1."
 #~ msgstr "সংবাদ URl (%1$S) একেটা eTLD+1 ৰ পৰা হব লাগিব।"

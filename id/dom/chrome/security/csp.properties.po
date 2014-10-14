@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2013-07-28 09:21+0000\n"
 "Last-Translator: Dharma <dharmasaputro@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1375003267.000000\n"
@@ -58,12 +58,6 @@ msgstr ""
 msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr "Mencoba mengirimkan laporan ke URI yang tidak valid: \"%1$S\""
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "galat sebelumnya: \"%1$S\""
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -96,45 +90,11 @@ msgid ""
 "block and cannot report violations of this policy."
 msgstr ""
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "laman pada %1$S tidak dapat mengirim laporan ke %2$S"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"direktif 'allow' atau 'default-src' wajib ada, tapi tidak tersedia. Kembali "
-"ke \"default-src 'none'\""
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "Gagal mengurai sumber tak dikenal %1$S"
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr ""
-"Pengiriman laporan pelanggaran ke %1$S gagal karena terjadi pengarahan ulang"
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-#, fuzzy
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr ""
-"direktif allow tidak disarankan untuk digunakan, gunakan direktif default-"
-"source yang berarti sama"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -171,84 +131,11 @@ msgid "Not supporting directive '%1$S'. Directive and values will be ignored."
 msgstr ""
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "Direktif policy-uri hanya dapat tampil mandiri"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr "policy-uri tidak dapat diambil tanpa adanya permintaan induk dan CSP."
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr "tidak dapat mengurai URI pada URI kebijakan: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr ""
-"tidak dapat mengambil URI kebijakan dari nama inang yang tidak cocok: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr "tidak dapat mengambil URI kebijakan dari port yang tidak cocok: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr "tidak dapat mengambil URI kebijakan dari skema yang tidak cocok: %1$S"
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "Gagal mengambil policy-uri: %1$S"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "Argumen yang disediakan bukan nsIURI"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "Argumen yang disediakan bukan string"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr "Tidak dapat menggunakan 'self' jika datanya tidak disediakan"
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "tidak dapat mengurai URL tanpa skema: %1$S"
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr "kata kunci self digunakan tapi data pada self tidak ditentukan"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "Tidak dapat mengurai sumber yang tidak valid %1$S"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr "Tidak dapat membuat sumber inang-saja %1$S tanpa data 'self'"
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr "Tidak dapat membuat sumber %1$S tanpa data 'self'"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -268,37 +155,6 @@ msgstr "Tidak dapat mengurai skema pada %1$S"
 msgid "Couldn't parse port in %1$S"
 msgstr "Tidak dapat mengurai port pada %1$S"
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr ""
-"Tidak dapat mengintersesksi %1$S dengan %2$S karena ada masalah pada port."
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr ""
-"Tidak dapat menginterseksi %1$S dengan %2$S karena ada masalah pada skema."
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr "menginterseksi sumber dengan inang yang tidak didefinisikan: %1$S"
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr ""
-"mengintersesksi dua sumber dengan inang yang tidak didefinisikan: %1$S dan "
-"%2$S"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -308,6 +164,94 @@ msgid ""
 msgstr ""
 "Terdeteksi direktif %1$S ganda.  Hanya yang pertama yang akan berfungsi, "
 "yang lain akan diabaikan."
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "galat sebelumnya: \"%1$S\""
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "laman pada %1$S tidak dapat mengirim laporan ke %2$S"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "direktif 'allow' atau 'default-src' wajib ada, tapi tidak tersedia. "
+#~ "Kembali ke \"default-src 'none'\""
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr ""
+#~ "Pengiriman laporan pelanggaran ke %1$S gagal karena terjadi pengarahan "
+#~ "ulang"
+
+#, fuzzy
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "direktif allow tidak disarankan untuk digunakan, gunakan direktif default-"
+#~ "source yang berarti sama"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "Direktif policy-uri hanya dapat tampil mandiri"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr ""
+#~ "policy-uri tidak dapat diambil tanpa adanya permintaan induk dan CSP."
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr "tidak dapat mengurai URI pada URI kebijakan: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr ""
+#~ "tidak dapat mengambil URI kebijakan dari nama inang yang tidak cocok: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr ""
+#~ "tidak dapat mengambil URI kebijakan dari port yang tidak cocok: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr ""
+#~ "tidak dapat mengambil URI kebijakan dari skema yang tidak cocok: %1$S"
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "Gagal mengambil policy-uri: %1$S"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "Argumen yang disediakan bukan nsIURI"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "Argumen yang disediakan bukan string"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr "Tidak dapat menggunakan 'self' jika datanya tidak disediakan"
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "tidak dapat mengurai URL tanpa skema: %1$S"
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr "kata kunci self digunakan tapi data pada self tidak ditentukan"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr "Tidak dapat membuat sumber inang-saja %1$S tanpa data 'self'"
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr "Tidak dapat membuat sumber %1$S tanpa data 'self'"
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr ""
+#~ "Tidak dapat mengintersesksi %1$S dengan %2$S karena ada masalah pada port."
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr ""
+#~ "Tidak dapat menginterseksi %1$S dengan %2$S karena ada masalah pada skema."
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr "menginterseksi sumber dengan inang yang tidak didefinisikan: %1$S"
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr ""
+#~ "mengintersesksi dua sumber dengan inang yang tidak didefinisikan: %1$S "
+#~ "dan %2$S"
 
 #~ msgid "Directive %1$S violated"
 #~ msgstr "Direktif %1$S dilanggar"

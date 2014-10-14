@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2014-09-11 18:27+0000\n"
 "Last-Translator: Peter <peter@kihlstedt.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1410460075.000000\n"
@@ -63,12 +63,6 @@ msgstr ""
 msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr "Försökte skicka rapport till ogiltig URI: ”%1$S”"
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "fel: ”%1$S”"
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -103,45 +97,11 @@ msgstr ""
 "Webbplatsen (%1$S) har en Report-Only-policy utan en rapport-URI. CSP kommer "
 "inte att blockera och kan inte rapportera överträdelser av den här policyn."
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "sidan på %1$S kan inte skicka rapporter till %2$S"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"direktivet ”allow” eller ”default-src” krävs men finns inte. Faller tillbaka "
-"på ”default-src 'none'”"
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "Kunde inte tolka okänd källa %1$S"
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr ""
-"Sändning av överträdelserapport till %1$S misslyckades eftersom en "
-"omstyrning skedde"
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr ""
-"direktivet allow är förlegat, använd det likvärdiga direktivet default-src i "
-"stället"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -183,83 +143,11 @@ msgstr ""
 "Direktivet \"%1$S\" stöds inte. Direktivet och värden kommer ignoreras."
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "det får bara finnas ett policy-uri-direktiv"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr "Policy-uri kan inte hämtas utan en föräldraförfrågan och en CSP."
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr "Kunde inte tolka URI i policy-URI: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr "kan inte hämta policy uri från icke-matchande värdnamn: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr "kan inte hämta policy uri från icke-matchande port: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr "kan inte hämta policy uri från icke-matchande schema: %1$S"
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "Fel vid hämtning av policy-uri: %1$S"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "Det givna argumentet är inte en nsIURI"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "Det givna argumentet är inte en sträng"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr "Kan inte använda ”self” om self-data inte anges"
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "kan inte tolka URI utan ett schema: %1$S"
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr "nyckelordet self användes, men ingen self-data angavs"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "Kunde inte tolka ogiltig källa %1$S"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr "Kan inte skapa värdspecifik källa %1$S utan ”self”-data"
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr "Kan inte skapa %1$S utan ”self”-data"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -279,33 +167,6 @@ msgstr "Kan inte tolka schemat i %1$S"
 msgid "Couldn't parse port in %1$S"
 msgstr "Kan inte tolka porten i %1$S"
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr "Kan inte korsa %1$S med %2$S på grund av portproblem."
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr "Kan inte korsa %1$S med %2$S på grund av schemaproblem."
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr "korsar källan med odefinierad värd: %1$S"
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr "korsar två källor med odefinierade värdar: %1$S och %2$S"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -315,3 +176,82 @@ msgid ""
 msgstr ""
 "Duplicerat %1$S-direktiv hittades. Allt utom den första instansen kommer att "
 "ignoreras."
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "fel: ”%1$S”"
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "sidan på %1$S kan inte skicka rapporter till %2$S"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "direktivet ”allow” eller ”default-src” krävs men finns inte. Faller "
+#~ "tillbaka på ”default-src 'none'”"
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr ""
+#~ "Sändning av överträdelserapport till %1$S misslyckades eftersom en "
+#~ "omstyrning skedde"
+
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "direktivet allow är förlegat, använd det likvärdiga direktivet default-"
+#~ "src i stället"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "det får bara finnas ett policy-uri-direktiv"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr "Policy-uri kan inte hämtas utan en föräldraförfrågan och en CSP."
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr "Kunde inte tolka URI i policy-URI: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr "kan inte hämta policy uri från icke-matchande värdnamn: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr "kan inte hämta policy uri från icke-matchande port: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr "kan inte hämta policy uri från icke-matchande schema: %1$S"
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "Fel vid hämtning av policy-uri: %1$S"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "Det givna argumentet är inte en nsIURI"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "Det givna argumentet är inte en sträng"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr "Kan inte använda ”self” om self-data inte anges"
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "kan inte tolka URI utan ett schema: %1$S"
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr "nyckelordet self användes, men ingen self-data angavs"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr "Kan inte skapa värdspecifik källa %1$S utan ”self”-data"
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr "Kan inte skapa %1$S utan ”self”-data"
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr "Kan inte korsa %1$S med %2$S på grund av portproblem."
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr "Kan inte korsa %1$S med %2$S på grund av schemaproblem."
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr "korsar källan med odefinierad värd: %1$S"
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr "korsar två källor med odefinierade värdar: %1$S och %2$S"
