@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2014-09-01 15:55+0000\n"
 "Last-Translator: Sandeep <sandeep.shedmake@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1409586923.000000\n"
@@ -62,12 +62,6 @@ msgstr ""
 msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr "अवैध URI: \"%1$S\" करीता रिपोर्ट पाठवण्याचा प्रयत्न झाला"
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "त्रुटी: \"%1$S\" आहे"
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -102,42 +96,11 @@ msgstr ""
 "ह्या साइट (%1$S) कडे विना अहवाल URI फक्त-अहवाल सादर करणे धोरण सक्रीय आहे. CSP "
 "अडवणार नाही आणि ह्या धोरणाच्या गैर वापरविषयी कळवू शकत नाही."
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "%1$S वरील पृष्ठ %2$S करीता रिपोर्टस् पाठवणे अशक्य"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"'allow' किंवा 'default-src' डिरेक्टिव्ह आवश्यक परंतु आढळले नाही.  \"default-src "
-"'none'\" वापरत आहे"
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "अपरिचीत स्रोत %1$S वाचणे अशक्य"
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr "रिडिरेक्ट आढळल्यामुळे, %1$S करीता उल्लंघन रिपोर्ट पोस्ट करणे अपयशी"
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr ""
-"allow डिरेक्टिव्हचा वापर होत नाही, त्याऐवजी परस्पर default-src डिरेक्टिव्हचा वापर करा"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -178,83 +141,11 @@ msgid "Not supporting directive '%1$S'. Directive and values will be ignored."
 msgstr ""
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "policy-uri डिरेक्टिव्ह फक्त स्वतंत्रपणे वापरणे अशक्य"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr "पॅरेंट विनंती व CSP विना policy-uri प्राप्त करणे अशक्य."
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr "पॉलिसि URI: %1$S मध्ये URI वाचणे अशक्य"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr "विना जोड यजमाननाव: %1$S पासून पॉलिसि uri प्राप्त करणे अशक्य"
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr "विना जोड पोर्ट: %1$S पासून पॉलिसि uri प्राप्त करणे अशक्य"
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr "विना जोड सुत्रयोजना: %1$S पासून पॉलिसि uri प्राप्त करणे अशक्य"
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "policy-uri: %1$S प्राप्त करतेवेळी त्रुटी"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "पुरवलेले घटक nsIURI नाही"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "पुरवलेले घटक स्ट्रिंग नाही"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr "सेल्फ डाटा पुरवले नसल्यास 'self' चा वापर अशक्य"
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "सुत्रयोजना: %1$S विना URI वाचणे अशक्य"
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr "self मुख्यशब्दचा वापर झाले, परंतु self डाटा निर्देशीत केले नाही"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "अवैध स्रोत %1$S वाचणे अशक्य"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr "'self' डाटा विना फक्त यजमान स्रोत %1$S निर्माण करणे अशक्य"
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr "'self' डाटा विना स्रोत %1$S निर्माण करणे अशक्य"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -274,33 +165,6 @@ msgstr "%1$S मध्ये सुत्रयोजना वाचणे अ�
 msgid "Couldn't parse port in %1$S"
 msgstr "%1$S मध्ये पोर्ट वाचणे अशक्य"
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr "पोर्ट अडचणींमुळे %1$S चे %2$S सह छेदन अशक्य."
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr "स्किमा अडचणींमुळे %1$S चे %2$S सह छेदन अशक्य."
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr "अनिश्चित यजमान: %1$S सह स्रोतचे परस्परछेद"
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr "अनिश्चित यजमान: %1$S व %2$S सह दोन स्रोत परस्परछेद करत आहे"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -308,6 +172,83 @@ msgid ""
 "Duplicate %1$S directives detected.  All but the first instance will be "
 "ignored."
 msgstr "हुबेहुब %1$S डिरेक्टिव्ह्स आढळले.  सर्व परंतु पहिल्या घटनाकडे दुर्लक्ष केले जाईल."
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "त्रुटी: \"%1$S\" आहे"
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "%1$S वरील पृष्ठ %2$S करीता रिपोर्टस् पाठवणे अशक्य"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "'allow' किंवा 'default-src' डिरेक्टिव्ह आवश्यक परंतु आढळले नाही.  \"default-src "
+#~ "'none'\" वापरत आहे"
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr "रिडिरेक्ट आढळल्यामुळे, %1$S करीता उल्लंघन रिपोर्ट पोस्ट करणे अपयशी"
+
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "allow डिरेक्टिव्हचा वापर होत नाही, त्याऐवजी परस्पर default-src डिरेक्टिव्हचा वापर "
+#~ "करा"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "policy-uri डिरेक्टिव्ह फक्त स्वतंत्रपणे वापरणे अशक्य"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr "पॅरेंट विनंती व CSP विना policy-uri प्राप्त करणे अशक्य."
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr "पॉलिसि URI: %1$S मध्ये URI वाचणे अशक्य"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr "विना जोड यजमाननाव: %1$S पासून पॉलिसि uri प्राप्त करणे अशक्य"
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr "विना जोड पोर्ट: %1$S पासून पॉलिसि uri प्राप्त करणे अशक्य"
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr "विना जोड सुत्रयोजना: %1$S पासून पॉलिसि uri प्राप्त करणे अशक्य"
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "policy-uri: %1$S प्राप्त करतेवेळी त्रुटी"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "पुरवलेले घटक nsIURI नाही"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "पुरवलेले घटक स्ट्रिंग नाही"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr "सेल्फ डाटा पुरवले नसल्यास 'self' चा वापर अशक्य"
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "सुत्रयोजना: %1$S विना URI वाचणे अशक्य"
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr "self मुख्यशब्दचा वापर झाले, परंतु self डाटा निर्देशीत केले नाही"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr "'self' डाटा विना फक्त यजमान स्रोत %1$S निर्माण करणे अशक्य"
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr "'self' डाटा विना स्रोत %1$S निर्माण करणे अशक्य"
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr "पोर्ट अडचणींमुळे %1$S चे %2$S सह छेदन अशक्य."
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr "स्किमा अडचणींमुळे %1$S चे %2$S सह छेदन अशक्य."
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr "अनिश्चित यजमान: %1$S सह स्रोतचे परस्परछेद"
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr "अनिश्चित यजमान: %1$S व %2$S सह दोन स्रोत परस्परछेद करत आहे"
 
 #~ msgid "Directive %1$S violated"
 #~ msgstr "डिरेक्टिव्ह %1$S चे उल्लंघन झाले"

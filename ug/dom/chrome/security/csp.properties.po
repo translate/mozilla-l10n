@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: csp\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2013-09-18 07:46+0000\n"
 "Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1379490384.000000\n"
@@ -58,12 +58,6 @@ msgstr ""
 msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr "دوكلاتنى ئىناۋەتسىز URI غا يوللاشنى سىنىدى: \"%1$S\""
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "خاتالىق: \"%1$S\""
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -96,44 +90,11 @@ msgid ""
 "block and cannot report violations of this policy."
 msgstr ""
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "%1$S دىكى بەت %2$S غا دوكلات يوللىيالمايدۇ"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"'allow' ياكى 'default-src' بۇيرۇقى زۆرۈر ئەمما كۆرۈلمىدى. \"default-src "
-"'none'\" غا ئەسلىگە قايتۇرۇلىدۇ"
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "پەرقلەندۈرەلمەيدىغان مەنبە %1$S نى يېشەلمىدى"
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr ""
-"قائىدىگە خىلاپ دوكلاتنى %1$S غا يوللىيالمىدى، چۈنكى قايتا نىشانلاش كۆرۈلدى"
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr ""
-"يول قوي بۇيرۇقىنىڭ ۋاقتى ئۆتتى، ئوخشاش مەنىدىكى default-src بۇيرۇقى ئارقىلىق "
-"ئالماشتۇرۇلدى"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -170,85 +131,11 @@ msgid "Not supporting directive '%1$S'. Directive and values will be ignored."
 msgstr ""
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "policy-uri بۇيرۇقى پەقەت يالغۇز كۆرۈلىدۇ"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr ""
-"يۇقىرى دەرىجىلىك ئىلتىماس ۋە CSP يوق ئەھۋالدا policy-uri غا ئېرىشەلمەيدۇ."
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr "بۇ شەخسىيەت URI دىكى URI نى يېشەلمەيدۇ: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr ""
-"ماسلاشمىغان ئاساسىي ئاپپارات ئىسمىدىن شەخسىيەت uri غا ئېرىشەلمەيدۇ: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr "ماسلاشمىغان ئېغىزدىن شەخسىيەت uri غا ئېرىشەلمەيدۇ: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr "ماسلاشمىغان لايىھەدىن شەخسىيەت uri غا ئېرىشەلمەيدۇ: %1$S"
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "شەخسىيەت uri غا ئېرىشىشتە خاتالىق كۆرۈلدى: %1$S"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "تەمىنلەنگەن ئۆزگەرگۈچى nsIURI ئەمەس"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "تەمىنلەنگەن ئۆزگەرگۈچى ھەرپ تىزىقى ئەمەس"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr "ئەگەر self تەمىنلەنمىگەن بولسا 'self' نى ئىشلەتكىلى بولمايدۇ"
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "لايىھەسى يوق URI نى يېشەلمەيدۇ: %1$S"
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr "ئاچقۇچلۇق سۆز self ئىشلىتىلدى ئەمما self سانلىق مەلۇمات بەلگىلەنمىدى"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "ئىناۋەتسىز مەنبە %1$S نى يېشەلمىدى"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr "'self' سانلىق مەلۇماتى يوق host-only مەنبە %1$S نى قۇرالمايدۇ"
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr "'self' سانلىق مەلۇماتى يوق مەنبە %1$S نى قۇرالمايدۇ"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -268,35 +155,6 @@ msgstr "%1$S دىكى لايىھەنى يېشەلمىدى"
 msgid "Couldn't parse port in %1$S"
 msgstr "%1$S دىكى ئېغىزنى يېشەلمىدى"
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr "ئېغىز مەسىلىسى %1$S ۋە %2$S تۈپەيلىدىن كېسىشتۈرەلمەيدۇ."
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr "لايىھە مەسىلىسى %1$S ۋە %2$S تۈپەيلىدىن كېسىشتۈرەلمەيدۇ."
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr "كېسىشتۈرۈلگەن مەنبەدە ئېنىقلىما بېرىلمىگەن ئاساسىي ئاپپارات بار: %1$S"
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr ""
-"ئىككى مەنبە ئىېنىقلىما بېرىلمىگەن ئاساسىي ئاپپاراتنى كېسىشتۈرۈپ ئىشلەتكەن: "
-"%1$S ۋە %2$S"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -306,6 +164,90 @@ msgid ""
 msgstr ""
 "تەكرار بۇيرۇق %1$S بايقالدى. بىرىنچى بۇيرۇقتىن باشقا ھەممىسىگە پەرۋا "
 "قىلمايدۇ."
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "خاتالىق: \"%1$S\""
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "%1$S دىكى بەت %2$S غا دوكلات يوللىيالمايدۇ"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "'allow' ياكى 'default-src' بۇيرۇقى زۆرۈر ئەمما كۆرۈلمىدى. \"default-src "
+#~ "'none'\" غا ئەسلىگە قايتۇرۇلىدۇ"
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr ""
+#~ "قائىدىگە خىلاپ دوكلاتنى %1$S غا يوللىيالمىدى، چۈنكى قايتا نىشانلاش كۆرۈلدى"
+
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "يول قوي بۇيرۇقىنىڭ ۋاقتى ئۆتتى، ئوخشاش مەنىدىكى default-src بۇيرۇقى "
+#~ "ئارقىلىق ئالماشتۇرۇلدى"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "policy-uri بۇيرۇقى پەقەت يالغۇز كۆرۈلىدۇ"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr ""
+#~ "يۇقىرى دەرىجىلىك ئىلتىماس ۋە CSP يوق ئەھۋالدا policy-uri غا ئېرىشەلمەيدۇ."
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr "بۇ شەخسىيەت URI دىكى URI نى يېشەلمەيدۇ: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr ""
+#~ "ماسلاشمىغان ئاساسىي ئاپپارات ئىسمىدىن شەخسىيەت uri غا ئېرىشەلمەيدۇ: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr "ماسلاشمىغان ئېغىزدىن شەخسىيەت uri غا ئېرىشەلمەيدۇ: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr "ماسلاشمىغان لايىھەدىن شەخسىيەت uri غا ئېرىشەلمەيدۇ: %1$S"
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "شەخسىيەت uri غا ئېرىشىشتە خاتالىق كۆرۈلدى: %1$S"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "تەمىنلەنگەن ئۆزگەرگۈچى nsIURI ئەمەس"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "تەمىنلەنگەن ئۆزگەرگۈچى ھەرپ تىزىقى ئەمەس"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr "ئەگەر self تەمىنلەنمىگەن بولسا 'self' نى ئىشلەتكىلى بولمايدۇ"
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "لايىھەسى يوق URI نى يېشەلمەيدۇ: %1$S"
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr ""
+#~ "ئاچقۇچلۇق سۆز self ئىشلىتىلدى ئەمما self سانلىق مەلۇمات بەلگىلەنمىدى"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr "'self' سانلىق مەلۇماتى يوق host-only مەنبە %1$S نى قۇرالمايدۇ"
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr "'self' سانلىق مەلۇماتى يوق مەنبە %1$S نى قۇرالمايدۇ"
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr "ئېغىز مەسىلىسى %1$S ۋە %2$S تۈپەيلىدىن كېسىشتۈرەلمەيدۇ."
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr "لايىھە مەسىلىسى %1$S ۋە %2$S تۈپەيلىدىن كېسىشتۈرەلمەيدۇ."
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr ""
+#~ "كېسىشتۈرۈلگەن مەنبەدە ئېنىقلىما بېرىلمىگەن ئاساسىي ئاپپارات بار: %1$S"
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr ""
+#~ "ئىككى مەنبە ئىېنىقلىما بېرىلمىگەن ئاساسىي ئاپپاراتنى كېسىشتۈرۈپ "
+#~ "ئىشلەتكەن: %1$S ۋە %2$S"
 
 #~ msgid "Directive %1$S violated"
 #~ msgstr "%1$S بۇيرۇقى قائىدىگە خىلاپ"

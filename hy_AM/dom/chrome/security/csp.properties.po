@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2014-03-02 15:35+0000\n"
 "Last-Translator: Hrayr <hrayrohanyan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1393774556.000000\n"
@@ -57,12 +57,6 @@ msgstr ""
 msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr "Անվավեր URI-ին զեկույց ուղարկելու փորձ.\"%1$S\""
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "Սխալմունք.\"%1$S\""
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -95,45 +89,11 @@ msgid ""
 "block and cannot report violations of this policy."
 msgstr ""
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "%1$S-ում գտնվող էջը չի կարողանում ուղարկել զեկույցներ %2$S-ին"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"Պահանջվում են բացակայող 'allow' or 'default-src' հրահանգները:Վերադարձ է "
-"կատարվել \"default-src 'none'\"-ին"
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "Հնարավոր չեղավ վերլուծել չճանաչված %1$S աղբյուրը "
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr ""
-"                  Վերուղղորդման պատճառով  խախտման զեկույցի մասին "
-"հաղորդագրության ուղարկումը %1$S-ին ձախողվեց                "
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr ""
-"Թույլատրման հրահանգը հնացել է:Փոխարենը օգտագործեք համարժեք սկզբնադիր-src  "
-"հրահանգը"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -170,96 +130,11 @@ msgid "Not supporting directive '%1$S'. Directive and values will be ignored."
 msgstr ""
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "policy-uri հրահանգը կարող է միայն մենակ հայտնվել"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr ""
-"policy-uri-ն հնարավոր չէ դուրս բերել առանց ծնողական հարցման և CSP-"
-"ի:                "
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr "URI քաղաքականության մեջ հնարավոր չեղավ վերլուծել URI-ն.%1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr ""
-"                  Չհամընկնող հոսթի (սերվերի) անվանումից չհաջողվեց ստանալ uri "
-"քաղաքականությունը.%1$S                "
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr ""
-"Չհաջողվեց ստանալ uri քաղաքականությունը չհամընկնող միացքից."
-"%1$S                "
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr ""
-"Չի հաջողվում ստանալ uri քաղաքականությունը չհամընկնող սխեմայից."
-"%1$S                "
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "policy-uri-ի ստացման սխալ.%1$S"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "Տրամադրված փաստարկը nsIURI-ը չէ"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "Տրամադրված փաստարկը չի հանդիսանում տող"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr ""
-"Հնարավոր չէ օգտագործել 'self',եթե սեփական (ինքնակառավարման) տվյալները  չեն "
-"տրամադրվում                "
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "Առանց սխեմայի չի հաջողվում վերլուծել URI-ն.%1$S       "
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr ""
-"Օգտագործվել է ինքնակառավարման (self) հիմնաբառը,բայց չի նշված ինքնակառավարման "
-"(self) տվյալները"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "Չհաջողվեց վերլուծել անվավեր %1$S աղբյուրը"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr "Հնարավոր չէ ստեղծել միայն-հոսթ %1$S  աղբյուրը առանց 'self' տվյալների"
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr ""
-"Հնարավոր չէ ստեղծել %1$S աղբյուրը առանց 'self' տվյալների                "
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -279,36 +154,6 @@ msgstr "%1$S-ում չհաջողվեց վերլուծել սխեման"
 msgid "Couldn't parse port in %1$S"
 msgstr "                  Չհաջողվեց վերլուծել միացքը %1$S-ում                "
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr ""
-"Միացքի խնդիրների պատճառով չհաջողվեց հատել %1$S-ը %2$S-ի հետ:                "
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr "Սխեմայի խնդիրների պատճառով չհաջողվեց հատել %1$S-ը %2$S-ի հետ:"
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr ""
-"                                    Սկզբնաղբյուրի հատում չորոշված հոսթերի "
-"հետ.%1$S                                "
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr "Չորոշված հոսթերի հետ երկու սկզբնաղբյուրների հատում.%1$S և %2$S"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -318,6 +163,103 @@ msgid ""
 msgstr ""
 "Հայտնաբերվել է կրկնօրինակվող %1$S հրահանգներ:Բացի առաջինից բոլոր նմուշները  "
 "կմերժվեն:"
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "Սխալմունք.\"%1$S\""
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "%1$S-ում գտնվող էջը չի կարողանում ուղարկել զեկույցներ %2$S-ին"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "Պահանջվում են բացակայող 'allow' or 'default-src' հրահանգները:Վերադարձ է "
+#~ "կատարվել \"default-src 'none'\"-ին"
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr ""
+#~ "                  Վերուղղորդման պատճառով  խախտման զեկույցի մասին "
+#~ "հաղորդագրության ուղարկումը %1$S-ին ձախողվեց                "
+
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "Թույլատրման հրահանգը հնացել է:Փոխարենը օգտագործեք համարժեք սկզբնադիր-src  "
+#~ "հրահանգը"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "policy-uri հրահանգը կարող է միայն մենակ հայտնվել"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr ""
+#~ "policy-uri-ն հնարավոր չէ դուրս բերել առանց ծնողական հարցման և CSP-"
+#~ "ի:                "
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr "URI քաղաքականության մեջ հնարավոր չեղավ վերլուծել URI-ն.%1$S"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr ""
+#~ "                  Չհամընկնող հոսթի (սերվերի) անվանումից չհաջողվեց ստանալ "
+#~ "uri քաղաքականությունը.%1$S                "
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr ""
+#~ "Չհաջողվեց ստանալ uri քաղաքականությունը չհամընկնող միացքից."
+#~ "%1$S                "
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr ""
+#~ "Չի հաջողվում ստանալ uri քաղաքականությունը չհամընկնող սխեմայից."
+#~ "%1$S                "
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "policy-uri-ի ստացման սխալ.%1$S"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "Տրամադրված փաստարկը nsIURI-ը չէ"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "Տրամադրված փաստարկը չի հանդիսանում տող"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr ""
+#~ "Հնարավոր չէ օգտագործել 'self',եթե սեփական (ինքնակառավարման) տվյալները  "
+#~ "չեն տրամադրվում                "
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "Առանց սխեմայի չի հաջողվում վերլուծել URI-ն.%1$S       "
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr ""
+#~ "Օգտագործվել է ինքնակառավարման (self) հիմնաբառը,բայց չի նշված "
+#~ "ինքնակառավարման (self) տվյալները"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr ""
+#~ "Հնարավոր չէ ստեղծել միայն-հոսթ %1$S  աղբյուրը առանց 'self' տվյալների"
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr ""
+#~ "Հնարավոր չէ ստեղծել %1$S աղբյուրը առանց 'self' տվյալների                "
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr ""
+#~ "Միացքի խնդիրների պատճառով չհաջողվեց հատել %1$S-ը %2$S-ի "
+#~ "հետ:                "
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr "Սխեմայի խնդիրների պատճառով չհաջողվեց հատել %1$S-ը %2$S-ի հետ:"
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr ""
+#~ "                                    Սկզբնաղբյուրի հատում չորոշված հոսթերի "
+#~ "հետ.%1$S                                "
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr "Չորոշված հոսթերի հետ երկու սկզբնաղբյուրների հատում.%1$S և %2$S"
 
 #~ msgid "The report URI (%1$S) must be from the same eTLD+1."
 #~ msgstr "URI (%1$S) զեկույցը պետք է նույնը լինի, ինչ eTLD+1-ը:"

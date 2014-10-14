@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2014-09-01 17:20+0000\n"
 "Last-Translator: Balasankar <balasankarc@autistici.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1409592043.000000\n"
@@ -64,12 +64,6 @@ msgstr ""
 msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr "തെറ്റായ യുആര്‍ഐയിലേക്കു് റിപോര്‍ട്ട് അയയ്ക്കുവാന്‍ ശ്രമിച്ചു: \"%1$S\""
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "പിശക്: \"%1$S\""
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -104,42 +98,11 @@ msgstr ""
 "റിപോര്‍ട്ട് യുആര്‍ഐ ഇല്ലാത്തൊരു റിപോര്‍ട്ട് മാത്രമായ പോളിസി ഈ സൈറ്റിനുണ്ടു് (%1$S). സിഎസ്‌പി "
 "തടയുകയില്ല, കൂടാതെ ഈ പോളിസിയ്ക്കെതിരെയുള്ള മാറ്റങ്ങള്‍ രേഖപ്പെടുത്തുവാന്‍ സാധ്യമല്ല."
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "%1$S-ലുള്ള താളിനു് %2$S-ലേക്കു് റിപോര്‍ട്ടുകള്‍ അയയ്ക്കുവാന്‍ സാധ്യമല്ല"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"'allow' അല്ലെങ്കില്‍ 'default-src' ഡയറക്ടീവ് ആവശ്യമാണു്, പക്ഷേ ലഭ്യമല്ല.\"default-src "
-"'none'\" എന്നാക്കുന്നു."
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "അപരിചിതമായ ശ്രോതസ്സ്  %1$S പാഴ്സ് ചെയ്യുന്നതില്‍ പരാജയം"
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr "%1$S -ലേക്കുള്ള റിപോര്‍ട്ട് പരാജയപ്പെട്ടു."
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr ""
-"ഡയറക്ടീവ് അനുവദിയ്ക്കുന്നതു് ലഭ്യമല്ല, സമമായ സ്വതവേയുള്ള-എസ്ആര്‍സി ഡയറക്ടീവ് പകരം ഉപയോഗിയ്ക്കുന്നു"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -180,83 +143,11 @@ msgid "Not supporting directive '%1$S'. Directive and values will be ignored."
 msgstr ""
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "policy-uri ഡയറക്ടീവ് ഒറ്റയ്ക്കു് മാത്രം ലഭ്യമാക്കുവാന്‍ സാധ്യമുള്ളൂ"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr "ഒരു പ്രധാന ആവശ്യവും സിഎസ്‌പിയുമില്ലാതെ policy-uri ലഭ്യമാക്കുവാന്‍ സാധ്യമല്ല."
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr "പോളിസി യുആര്‍ഐയില്‍ യുആര്‍ഐ പാഴ്സ് ചെയ്യുവാന്‍ സാധ്യമല്ല: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr "പൊരുത്തപ്പെടാത്ത ഹോസ്റ്റ്നാമത്തില്‍ നിന്നും policy uri ലഭ്യമാക്കുവാന്‍ സാധ്യമല്ല: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr "പൊരുത്തപ്പെടാത്ത പോര്‍ട്ടില്‍ നിന്നും policy uri ലഭ്യമാക്കുവാന്‍ സാധ്യമല്ല: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr "പൊരുത്തപ്പെടാത്ത സ്കീമില്‍ നിന്നും policy uri ലഭ്യമാക്കുവാന്‍ സാധ്യമല്ല: %1$S"
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "policy-uri ലഭ്യമാക്കുന്നതില്‍ പിശക്: %1$S"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "ലഭ്യമാക്കിയ ആര്‍ഗ്യുമെന്റ് rovided argument is not an nsIURI"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "ആര്‍ഗ്യുമെന്റ് ഒരു സ്ട്രിങ് അല്ലാത്തിടത്തോളം"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr "സ്വയം ആവശ്യങ്ങള്‍ക്കുള്ള ഡേറ്റാ നല്‍കിയിട്ടില്ലെങ്കില്‍ 'self' ഉപയോഗിയ്ക്കുവാന്‍ സാധ്യമല്ല"
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "ഒരു സ്കീമില്ലാതെ ഒരു യുആര്‍ഐ പാഴ്സ് ചെയ്യുവാന്‍ സാധ്യമല്ല: %1$S"
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr "self കീബേര്‍ഡ് ഉപയോഗിച്ചിരിയ്ക്കുന്നു, പക്ഷേ ഡേറ്റാ നല്‍കിയിട്ടില്ല"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "തെറ്റായ ശ്രോതസ്സ്  %1$S പാഴ്സ് ചെയ്യുവാന്‍ സാധ്യമായില്ല"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr "'self' ഡേറ്റയില്ലാതെ ഹോസ്റ്റ് മാത്രമായ ശ്രോതസ്സ് %1$S തയ്യാറാക്കുവാന്‍ സാധ്യമല്ല"
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr "'self' ഡേറ്റയില്ലാതെ ശ്രോതസ്സ് %1$S തയ്യാറാക്കുവാന്‍ സാധ്യമല്ല"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -276,33 +167,6 @@ msgstr "%1$S-ല്‍ സ്കീം പാഴ്സ് ചെയ്യുവ�
 msgid "Couldn't parse port in %1$S"
 msgstr "%1$S-ല്‍ പോര്‍ട്ട് പാഴ്സ് ചെയ്യുവാന്‍ സാധ്യമായില്ല"
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr "പോര്‍ട്ട് പ്രശ്നങ്ങള്‍ കാരണം %2$S-മായി %1$S ചേര്‍ക്കുവാന്‍ സാധ്യമല്ല."
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr "സ്കീം പ്രശ്നങ്ങള്‍ കാരണം %2$S-മായി %1$S ചേര്‍ക്കുവാന്‍ സാധ്യമല്ല."
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr "നിഷ്കര്‍ഷിയ്ക്കാത്ത ഹോസ്റ്റുമായി കൂടിച്ചേരുന്ന ശ്രോതസ്സ്: %1$S"
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr "നിഷ്കര്‍ഷിയ്ക്കാത്ത ഹോസ്റ്റുകളുമായി കൂടിച്ചേരുന്ന ശ്രോതസ്സുകള്‍: %1$S, %2$S"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -312,6 +176,82 @@ msgid ""
 msgstr ""
 "ആവര്‍ത്തിച്ച %1$S ഡയറക്ടീവുകള്‍ ലഭ്യമായി.  ആദ്യത്തെ ഇന്‍സ്റ്റന്‍സ് ഒഴിച്ചു് ബാക്കിയെല്ലാം വേണ്ടെന്നു് "
 "വയ്ക്കുന്നു."
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "പിശക്: \"%1$S\""
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "%1$S-ലുള്ള താളിനു് %2$S-ലേക്കു് റിപോര്‍ട്ടുകള്‍ അയയ്ക്കുവാന്‍ സാധ്യമല്ല"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "'allow' അല്ലെങ്കില്‍ 'default-src' ഡയറക്ടീവ് ആവശ്യമാണു്, പക്ഷേ ലഭ്യമല്ല.\"default-src "
+#~ "'none'\" എന്നാക്കുന്നു."
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr "%1$S -ലേക്കുള്ള റിപോര്‍ട്ട് പരാജയപ്പെട്ടു."
+
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "ഡയറക്ടീവ് അനുവദിയ്ക്കുന്നതു് ലഭ്യമല്ല, സമമായ സ്വതവേയുള്ള-എസ്ആര്‍സി ഡയറക്ടീവ് പകരം ഉപയോഗിയ്ക്കുന്നു"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "policy-uri ഡയറക്ടീവ് ഒറ്റയ്ക്കു് മാത്രം ലഭ്യമാക്കുവാന്‍ സാധ്യമുള്ളൂ"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr "ഒരു പ്രധാന ആവശ്യവും സിഎസ്‌പിയുമില്ലാതെ policy-uri ലഭ്യമാക്കുവാന്‍ സാധ്യമല്ല."
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr "പോളിസി യുആര്‍ഐയില്‍ യുആര്‍ഐ പാഴ്സ് ചെയ്യുവാന്‍ സാധ്യമല്ല: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr "പൊരുത്തപ്പെടാത്ത ഹോസ്റ്റ്നാമത്തില്‍ നിന്നും policy uri ലഭ്യമാക്കുവാന്‍ സാധ്യമല്ല: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr "പൊരുത്തപ്പെടാത്ത പോര്‍ട്ടില്‍ നിന്നും policy uri ലഭ്യമാക്കുവാന്‍ സാധ്യമല്ല: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr "പൊരുത്തപ്പെടാത്ത സ്കീമില്‍ നിന്നും policy uri ലഭ്യമാക്കുവാന്‍ സാധ്യമല്ല: %1$S"
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "policy-uri ലഭ്യമാക്കുന്നതില്‍ പിശക്: %1$S"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "ലഭ്യമാക്കിയ ആര്‍ഗ്യുമെന്റ് rovided argument is not an nsIURI"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "ആര്‍ഗ്യുമെന്റ് ഒരു സ്ട്രിങ് അല്ലാത്തിടത്തോളം"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr "സ്വയം ആവശ്യങ്ങള്‍ക്കുള്ള ഡേറ്റാ നല്‍കിയിട്ടില്ലെങ്കില്‍ 'self' ഉപയോഗിയ്ക്കുവാന്‍ സാധ്യമല്ല"
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "ഒരു സ്കീമില്ലാതെ ഒരു യുആര്‍ഐ പാഴ്സ് ചെയ്യുവാന്‍ സാധ്യമല്ല: %1$S"
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr "self കീബേര്‍ഡ് ഉപയോഗിച്ചിരിയ്ക്കുന്നു, പക്ഷേ ഡേറ്റാ നല്‍കിയിട്ടില്ല"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr "'self' ഡേറ്റയില്ലാതെ ഹോസ്റ്റ് മാത്രമായ ശ്രോതസ്സ് %1$S തയ്യാറാക്കുവാന്‍ സാധ്യമല്ല"
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr "'self' ഡേറ്റയില്ലാതെ ശ്രോതസ്സ് %1$S തയ്യാറാക്കുവാന്‍ സാധ്യമല്ല"
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr "പോര്‍ട്ട് പ്രശ്നങ്ങള്‍ കാരണം %2$S-മായി %1$S ചേര്‍ക്കുവാന്‍ സാധ്യമല്ല."
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr "സ്കീം പ്രശ്നങ്ങള്‍ കാരണം %2$S-മായി %1$S ചേര്‍ക്കുവാന്‍ സാധ്യമല്ല."
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr "നിഷ്കര്‍ഷിയ്ക്കാത്ത ഹോസ്റ്റുമായി കൂടിച്ചേരുന്ന ശ്രോതസ്സ്: %1$S"
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr "നിഷ്കര്‍ഷിയ്ക്കാത്ത ഹോസ്റ്റുകളുമായി കൂടിച്ചേരുന്ന ശ്രോതസ്സുകള്‍: %1$S, %2$S"
 
 #~ msgid "Directive %1$S violated"
 #~ msgstr "ഡയറക്ടീവ് %1$S നിഷേധിച്ചിരിയ്ക്കുന്നു"

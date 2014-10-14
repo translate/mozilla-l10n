@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2014-07-22 13:39+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -14,13 +14,35 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
 #. # Panel Strings
+#. ## LOCALIZATION NOTE(clientShortname2): This should not be localized and
+#. ## should remain "Firefox Hello" for all locales.
+#: clientShortname2
+msgid "Firefox Hello"
+msgstr ""
+
+#. ## LOCALIZATION_NOTE(first_time_experience.title): clientShortname will be
+#. ## replaced by the brand name
+#: first_time_experience_title
+msgctxt "first_time_experience_title"
+msgid "{{clientShortname}} — Join the conversation"
+msgstr ""
+
+#: first_time_experience_button_label
+#, fuzzy
+msgid "Get Started"
+msgstr "شروع کریں"
+
 #: share_link_header_text
 msgid "Share this link to invite someone to talk:"
+msgstr ""
+
+#: invite_header_text
+msgid "Invite someone to join you."
 msgstr ""
 
 #. ## LOCALIZATION NOTE(invitee_name_label): Displayed when obtaining a url.
@@ -124,18 +146,28 @@ msgctxt "retry_button"
 msgid "Retry"
 msgstr "پھر کوشش کریں"
 
-#: share_email_subject3
-msgid "You have been invited to a conversation"
+#: share_email_subject4
+msgctxt "share_email_subject4"
+msgid "{{clientShortname}} — Join the conversation"
 msgstr ""
 
-#. ## LOCALIZATION NOTE (share_email_body3): In this item, don't translate the
+#. ## LOCALIZATION NOTE (share_email_body4): In this item, don't translate the
 #. ## part between {{..}} and leave the \r\n\r\n part alone
-#: share_email_body3
+#: share_email_body4
 msgid ""
-"To accept this invitation, just copy or click this link to start your "
-"conversation:\r\n"
+"Hello!\r\n"
 "\r\n"
-"{{callUrl}}"
+"Join me for a video conversation using {{clientShortname}}:\r\n"
+"\r\n"
+"You don't have to download or install anything. Just copy and paste this URL "
+"into your browser:\r\n"
+"\r\n"
+"{{callUrl}}\r\n"
+"\r\n"
+"If you want, you can also learn more about {{clientShortname}} at "
+"{{learnMoreUrl}}\r\n"
+"\r\n"
+"Talk to you soon!"
 msgstr ""
 
 #: share_button
@@ -144,9 +176,20 @@ msgctxt "share_button"
 msgid "Email"
 msgstr "ای میل"
 
+#: share_button2
+#, fuzzy
+msgctxt "share_button2"
+msgid "Email Link"
+msgstr "ای میل ربط"
+
 #: copy_url_button
 msgid "Copy"
 msgstr "نقل کریں"
+
+#: copy_url_button2
+msgctxt "copy_url_button2"
+msgid "Copy Link"
+msgstr ""
 
 #: copied_url_button
 msgid "Copied!"
@@ -212,6 +255,14 @@ msgstr "نام"
 msgctxt "new_contact_email_placeholder"
 msgid "Email"
 msgstr "ای میل"
+
+#: new_contact_phone_placeholder
+msgid "Firefox OS Phone"
+msgstr ""
+
+#: contacts_blocked_contacts
+msgid "Blocked Contacts"
+msgstr ""
 
 #. ## LOCALIZATION NOTE (add_contact_button):
 #. ## This is the button to actually add the new contact
@@ -385,6 +436,10 @@ msgstr ""
 msgid "Accept with voice"
 msgstr ""
 
+#: incoming_call_accept_audio_video_tooltip
+msgid "Accept with video"
+msgstr ""
+
 #: incoming_call_cancel_button
 #, fuzzy
 msgctxt "incoming_call_cancel_button"
@@ -517,6 +572,8 @@ msgid "Retry"
 msgstr "پھر کوشش کریں"
 
 #: email_link_button
+#, fuzzy
+msgctxt "email_link_button"
 msgid "Email Link"
 msgstr "ای میل ربط"
 
@@ -541,7 +598,7 @@ msgstr ""
 #. ## LOCALIZATION NOTE (legal_text_and_links3): In this item, don't translate the
 #. ## parts between {{..}} because these will be replaced with links with the labels
 #. ## from legal_text_tos and legal_text_privacy. clientShortname will be replaced
-#. ## by the brand name, or fall back to client_shortname_fallback
+#. ## by the brand name.
 #: legal_text_and_links3
 msgid ""
 "By using {{clientShortname}} you agree to the {{terms_of_use}} and "
@@ -556,8 +613,16 @@ msgstr ""
 msgid "Privacy Notice"
 msgstr "اطلاع نامہ نجی نوعیت"
 
-#: client_shortname_fallback
-msgid "this product"
+#. ## LOCALIZATION NOTE (powered_by_beforeLogo, powered_by_afterLogo):
+#. ## These 2 strings are displayed before and after a 'Telefonica'
+#. ## logo.
+#: powered_by_beforeLogo
+msgid "Powered by"
+msgstr ""
+
+#: powered_by_afterLogo
+msgctxt "powered_by_afterLogo"
+msgid ""
 msgstr ""
 
 #: feedback_call_experience_heading2
@@ -627,4 +692,84 @@ msgstr ""
 #. ## an abusive user.
 #: feedback_report_user_button
 msgid "Report User"
+msgstr ""
+
+#: help_label
+msgid "Help"
+msgstr "مدد"
+
+#: tour_label
+msgid "Tour"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(rooms_default_room_name_template): {{conversationLabel}}
+#. ## will be replaced by a number. For example "Conversation 1" or "Conversation 12".
+#: rooms_default_room_name_template
+msgid "Conversation {{conversationLabel}}"
+msgstr ""
+
+#: rooms_leave_button_label
+msgid "Leave"
+msgstr "چھوڑیں"
+
+#: rooms_list_copy_url_tooltip
+msgctxt "rooms_list_copy_url_tooltip"
+msgid "Copy Link"
+msgstr ""
+
+#. ## LOCALIZATION NOTE (rooms_list_current_conversations):
+#. ## Semicolon-separated list of plural forms. See:
+#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. ## We prefer to have no number in the string, but if you need it for your
+#. ## language please use {{num}}.
+#: rooms_list_current_conversations
+msgid "Current conversation;Current conversations"
+msgstr ""
+
+#: rooms_list_delete_tooltip
+msgid "Delete conversation"
+msgstr ""
+
+#: rooms_list_deleteConfirmation_label
+msgid "Are you sure?"
+msgstr ""
+
+#: rooms_list_no_current_conversations
+msgid "No current conversations"
+msgstr ""
+
+#: rooms_name_this_room_label
+msgid "Name this conversation"
+msgstr ""
+
+#: rooms_new_room_button_label
+msgid "Start a conversation"
+msgstr ""
+
+#: rooms_only_occupant_label
+msgid "You're the first one here."
+msgstr ""
+
+#: rooms_panel_title
+msgid "Choose a conversation or start a new one"
+msgstr ""
+
+#: rooms_room_full_label
+msgid "There are already two people in this conversation."
+msgstr ""
+
+#: rooms_room_full_call_to_action_nonFx_label
+msgid "Download {{brandShortname}} to start your own"
+msgstr ""
+
+#: rooms_room_full_call_to_action_label
+msgid "Learn more about {{clientShortname}} »"
+msgstr ""
+
+#: rooms_room_joined_label
+msgid "Someone has joined the conversation!"
+msgstr ""
+
+#: rooms_room_join_label
+msgid "Join the conversation"
 msgstr ""

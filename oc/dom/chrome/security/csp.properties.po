@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2014-03-19 12:36+0000\n"
 "Last-Translator: Cédric <cvalmary@yahoo.fr>\n"
 "Language-Team: none\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1395232595.000000\n"
@@ -61,12 +61,6 @@ msgstr ""
 msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr "A ensajat de mandar un rapòrt a una URI invalida : \"%1$S\""
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "l'error èra : « %1$S »"
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -101,45 +95,11 @@ msgstr ""
 "Aqueste site (%1$S) possedís una politica Report-Only sens URI de rapòrt. "
 "CSP blocarà pas aquesta politica e poirà pas raportar sas violacions."
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "La pagina sus %1$S pòt pas mandar cap de rapòrts a %2$S"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"Las directivas requesidas « allow » o « default-src » son absentas. Retorn a "
-"« default-src 'none' »"
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "Impossible d'analisar la font pas reconeguda %1$S"
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr ""
-"Lo mandadís del rapòrt de violacion a %1$S a fracassat, perque una "
-"redireccion s'es producha"
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr ""
-"la directiva « allow » es obsoleta, utilizatz la directiva equivalenta "
-"« default-source » a la plaça"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -182,94 +142,11 @@ msgid "Not supporting directive '%1$S'. Directive and values will be ignored."
 msgstr ""
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "La directiva « policy-uri » pòt solament aparéisser sola"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr ""
-"La « policy-uri » pòt pas èsser recuperada sens un CSP e la requèsta d'un "
-"parent."
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr ""
-"Impossible d'analisar l'URI dins l'URI de la politica de seguretat : %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr ""
-"Impossible de recuperar l'URI de la politica de seguretat dempuèi un nom "
-"d'òste que correspond pas : %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr ""
-"Impossible de recuperar l'URI de la politica de seguretat dempuèi un pòrt "
-"que correspond pas : %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr ""
-"Impossible de recuperar l'URI de la politica de seguretat dempuèi un esquèma "
-"que correspond pas : %1$S"
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "Error al moment de la recuperacion de la « policy-uri » : %1$S"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "L'argument provesit es pas una nsIURI"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "L'argument provesit es pas una cadena de caractèrs"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr "Impossible d'utilizar « self » se « self data » es pas provesit"
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "Impossible d'analisar l'URI sens un esquèma : %1$S"
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr ""
-"Mot clau « self » utilizat, mas cap de « self data » es pas especificada"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "Impossible d'analisar la font invalida %1$S"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr ""
-"Impossible de definir en « host-only » la font %1$S sens la donada « self »"
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr "Impossible de crear la font %1$S sens la donada « self »"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -289,33 +166,6 @@ msgstr "a pas pogut analisar lo rapòrt URI : %1$S"
 msgid "Couldn't parse port in %1$S"
 msgstr "Impossible d'analisar lo pòrt dins %1$S"
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr "Impossible de crosar %1$S amb %2$S a causa d'un problèma de pòrt."
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr "Impossible de crosar %1$S amb %2$S a causa d'un problèma d'esquèma."
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr "Crosament de la font amb l'òste pas definit : %1$S"
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr "Crosament de doas fonts amb d'òstes pas definits : %1$S e %2$S"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -325,6 +175,97 @@ msgid ""
 msgstr ""
 "Doblon de la directiva %1$S detectat. Totas las instàncias, levat la "
 "primièra, seràn ignoradas."
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "l'error èra : « %1$S »"
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "La pagina sus %1$S pòt pas mandar cap de rapòrts a %2$S"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "Las directivas requesidas « allow » o « default-src » son absentas. "
+#~ "Retorn a « default-src 'none' »"
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr ""
+#~ "Lo mandadís del rapòrt de violacion a %1$S a fracassat, perque una "
+#~ "redireccion s'es producha"
+
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "la directiva « allow » es obsoleta, utilizatz la directiva equivalenta "
+#~ "« default-source » a la plaça"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "La directiva « policy-uri » pòt solament aparéisser sola"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr ""
+#~ "La « policy-uri » pòt pas èsser recuperada sens un CSP e la requèsta d'un "
+#~ "parent."
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr ""
+#~ "Impossible d'analisar l'URI dins l'URI de la politica de seguretat : %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr ""
+#~ "Impossible de recuperar l'URI de la politica de seguretat dempuèi un nom "
+#~ "d'òste que correspond pas : %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr ""
+#~ "Impossible de recuperar l'URI de la politica de seguretat dempuèi un pòrt "
+#~ "que correspond pas : %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr ""
+#~ "Impossible de recuperar l'URI de la politica de seguretat dempuèi un "
+#~ "esquèma que correspond pas : %1$S"
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "Error al moment de la recuperacion de la « policy-uri » : %1$S"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "L'argument provesit es pas una nsIURI"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "L'argument provesit es pas una cadena de caractèrs"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr "Impossible d'utilizar « self » se « self data » es pas provesit"
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "Impossible d'analisar l'URI sens un esquèma : %1$S"
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr ""
+#~ "Mot clau « self » utilizat, mas cap de « self data » es pas especificada"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr ""
+#~ "Impossible de definir en « host-only » la font %1$S sens la donada "
+#~ "« self »"
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr "Impossible de crear la font %1$S sens la donada « self »"
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr "Impossible de crosar %1$S amb %2$S a causa d'un problèma de pòrt."
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr "Impossible de crosar %1$S amb %2$S a causa d'un problèma d'esquèma."
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr "Crosament de la font amb l'òste pas definit : %1$S"
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr "Crosament de doas fonts amb d'òstes pas definits : %1$S e %2$S"
 
 #~ msgid "Directive %1$S violated"
 #~ msgstr "Directiva %1$S violada"

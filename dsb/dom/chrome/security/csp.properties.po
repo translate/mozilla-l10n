@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2014-09-08 15:10+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: none\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1410189018.000000\n"
@@ -64,12 +64,6 @@ msgstr ""
 msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr "Jo se wopytało, rozpšawu na njepłaśiwy URI słaś: \"%1$S\""
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "Zmólka jo była: \"%1$S\""
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -104,45 +98,11 @@ msgstr ""
 "Toś to sedło (%1$S) jo pšawidła za samo rozpšawjenje bźez URI rozpšawy. CSP "
 "njebuźo blokěrowaś a njamóžo pśekśiwjenje toś tych pšawidłow k wěsći daś."
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "bok na %1$S njamóžo rozpšawy do %2$S słaś"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"směrnica 'allow' abo 'default-src' trěbna, ale felujo. Wrośa se \"default-"
-"src 'none'\""
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "Parsowanje njespóznatego žrědła %1$S njejo se raźiło"
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr ""
-"Słanje rozpšawy wó pśejźenju do %1$S njejo se raźiło, dokulaž "
-"dalejpósrědnjenje jo nastało"
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr ""
-"směrnica allow jo zestarjona, wužyjśo ekwiwalentnu směrnicu default-src "
-"město togo"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -184,87 +144,11 @@ msgstr ""
 "Direktiwa '%1$S' se njepódpěra. Direktiwa a gódnoty budu se ignorěrowaś."
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "směrnica policy-uri móžo se jano sama jawiś"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr ""
-"Směrnica policy-uri njedajo se bźez nadrědowanego napšašowanja a CSP-"
-"pšawidła wótewześ."
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr "URI njedajo se w URI pšawidłow pśeźěłaś: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr ""
-"URI pšawidła njedajo se z njewótpowědujucego hostowego mjenja wótewześ: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr "URI pšawidła njedajo se z njewótpowědujucego porta wótewześ: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr "URI pšawidła njedajo se z njewótpowědujuceje šemy wótewześ: %1$S"
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "Zmólka pśi wótwołowanju policy-uri: %1$S"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "Pódany argument njejo nsIURI"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "Pódany argument njejo znamuškowy rjeśazk"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr "'self' njedajo se wužywaś, jolic daty self se njepódawaju"
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "URI njedajo se bźez šemy parsowaś: %1$S"
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr "Klucowe słowo self se wužywa, ale daty self njejsu pódane"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "Njepłaśiwe žrědło %1$S njedajo se parsowaś"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr ""
-"Žrědło %1$S, kótarež jo jano na hosće, njedajo se bźez datow 'self' napóraś"
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr "Žrědło %1$S njedajo se bźez datow 'self' napóraś"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -284,33 +168,6 @@ msgstr "Šema w %1$S njedajo se parsowaś"
 msgid "Couldn't parse port in %1$S"
 msgstr "Port w %1$S njedajo se parsowaś"
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr "%1$S njedajo se portowych problemow dla z %2$S pśekśicowaś."
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr "%1$S njedajo se šemowych problemow dla z %2$S pśekśicowaś."
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr "pśekśicujo se z njedefiněrowanym hostom: %1$S"
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr "pśekśicujotej se dwě žrědle z njedefiněrowanyma hostoma: %1$S a %2$S"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -320,3 +177,89 @@ msgid ""
 msgstr ""
 "Duplikaty směrnice %1$S namakane. Wšykne mimo prědneje instance budu se "
 "ignorěrowaś."
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "Zmólka jo była: \"%1$S\""
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "bok na %1$S njamóžo rozpšawy do %2$S słaś"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "směrnica 'allow' abo 'default-src' trěbna, ale felujo. Wrośa se \"default-"
+#~ "src 'none'\""
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr ""
+#~ "Słanje rozpšawy wó pśejźenju do %1$S njejo se raźiło, dokulaž "
+#~ "dalejpósrědnjenje jo nastało"
+
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "směrnica allow jo zestarjona, wužyjśo ekwiwalentnu směrnicu default-src "
+#~ "město togo"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "směrnica policy-uri móžo se jano sama jawiś"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr ""
+#~ "Směrnica policy-uri njedajo se bźez nadrědowanego napšašowanja a CSP-"
+#~ "pšawidła wótewześ."
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr "URI njedajo se w URI pšawidłow pśeźěłaś: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr ""
+#~ "URI pšawidła njedajo se z njewótpowědujucego hostowego mjenja wótewześ: "
+#~ "%1$S"
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr "URI pšawidła njedajo se z njewótpowědujucego porta wótewześ: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr "URI pšawidła njedajo se z njewótpowědujuceje šemy wótewześ: %1$S"
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "Zmólka pśi wótwołowanju policy-uri: %1$S"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "Pódany argument njejo nsIURI"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "Pódany argument njejo znamuškowy rjeśazk"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr "'self' njedajo se wužywaś, jolic daty self se njepódawaju"
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "URI njedajo se bźez šemy parsowaś: %1$S"
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr "Klucowe słowo self se wužywa, ale daty self njejsu pódane"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr ""
+#~ "Žrědło %1$S, kótarež jo jano na hosće, njedajo se bźez datow 'self' "
+#~ "napóraś"
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr "Žrědło %1$S njedajo se bźez datow 'self' napóraś"
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr "%1$S njedajo se portowych problemow dla z %2$S pśekśicowaś."
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr "%1$S njedajo se šemowych problemow dla z %2$S pśekśicowaś."
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr "pśekśicujo se z njedefiněrowanym hostom: %1$S"
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr ""
+#~ "pśekśicujotej se dwě žrědle z njedefiněrowanyma hostoma: %1$S a %2$S"

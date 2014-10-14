@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2014-09-05 04:12+0000\n"
 "Last-Translator: Arun Kumar <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1409890375.000000\n"
@@ -62,12 +62,6 @@ msgstr ""
 msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr "செல்லுபடியாகாத URI க்கு அறிக்கையனுப்ப முயற்சித்தது: \"%1$S\""
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "இந்தப் பிழை ஏற்பட்டது: \"%1$S\""
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -102,43 +96,11 @@ msgstr ""
 "அறிக்கைக்கான URI இல்லாமலே இந்த தளம் (%1$S) அறிக்கை-மட்டுமே என்ற கொள்கையை "
 "வைத்திருக்கிறது. CSP ஆனது தடுக்காது மற்றும் இதன் கொள்கை மீறல்களை புகார் செய்யாது."
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "%1$S இல் உள்ள பக்கமானது %2$S க்கு அறிக்கைகளை அனுப்ப முடியாது"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"'allow' அல்லது 'default-src' அறிவுறுத்தல் தேவை, ஆனால் இல்லை.  \"default-src "
-"'none'\" க்கு மீட்டமைக்கிறது"
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "அடையாளம் காணப்படாத மூலம் %1$S ஐப் பாகுபடுத்துவதில் தோல்வியடைந்தது"
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr "%1$S க்கான மீறல் அறிக்கை இடுகையிடல் திருப்பிவிடல் ஏற்பட்டதால் தோல்வியடைந்தது"
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr ""
-"allow அறிவுறுத்தல் வழக்கழிந்தது, அதற்கு பதிலாக அதற்கு சமமான default-src "
-"அறிவுறுத்தலைப் பயன்படுத்தவும்"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -179,83 +141,11 @@ msgid "Not supporting directive '%1$S'. Directive and values will be ignored."
 msgstr "'%1$S' ஆதரிப்பதில்லை. அதுவும் அதன் மதிப்புகளும் தவிர்க்கப்படும்."
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "policy-uri அறிவுறுத்தல் தனியாக மட்டுமே இடம்பெறலாம்"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr "policy-uri ஆனது ஒரு பெற்றோர் கோரிக்கை மற்றும் CSP இன்றி பெறப்பட முடியாது."
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr "கொள்கை URI இல் உள்ள URI ஐப் பாகுபடுத்த முடியவில்லை: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr "பொருந்தாத வழங்கி பெயரிலிருந்து கொள்கை uri ஐப் பெற முடியவில்லை: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr "பொருந்தாத முனையத்திலிருந்து கொள்கை uri ஐப் பெற முடியவில்லை: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr "பொருந்தாத திட்டவடிவிலிருந்து கொள்கை uri ஐப் பெற முடியவில்லை: %1$S"
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "கொள்கை-uri ஐப் பெறுவதில் பிழை: %1$S"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "வழங்கப்பட்ட மதிப்புரு ஒரு nsIURI அல்ல"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "வழங்கப்பட்ட மதிப்புரு ஒரு சரமல்ல"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr "self தரவு வழங்கப்படாவிட்டால் 'self' ஐப் பயன்படுத்த முடியாது"
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "ஒரு திட்ட வடிவமின்றி URI ஐப் பாகுபடுத்த முடியாது: %1$S"
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr "self திறவுச்சொல் பயன்படுத்தப்பட்டுள்ளது, ஆனால் self தரவு குறிப்பிடப்படவில்லை"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "செல்லுபடியாகாத மூலம் %1$S ஐப் பாகுபடுத்த முடியவில்லை"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr "வழங்கி-மட்டும் மூலம் %1$S ஐ 'self' தரவின்றி உருவாக்க முடியாது"
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr "மூலம் %1$S ஐ 'self' தரவின்றி உருவாக்க முடியாது"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -275,34 +165,6 @@ msgstr "%1$S இல் உள்ள திட்டவடிவத்தைப�
 msgid "Couldn't parse port in %1$S"
 msgstr "%1$S இல் முனையத்தை பாகுபடுத்த முடியவில்லை"
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr "முனைய சிக்கல்களின் காரணமாக %1$S ஐ %2$S உடன் குறுக்குவெட்ட முடியவில்லை."
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr "திட்டவடிவ சிக்கல்களின் காரணமாக %1$S ஐ %2$S உடன் குறுக்குவெட்ட முடியவில்லை."
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr "வரையறுக்கப்படாத வழங்கியைக் கொண்ட மூலத்தை குறுக்குவெட்டுதல்: %1$S"
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr ""
-"வரையறுக்கப்படாத வழங்கிகளைக் கொண்ட இரு மூலங்களைக் குறுக்குவெட்டுதல்: %1$S மற்றும் %2$S"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -312,6 +174,84 @@ msgid ""
 msgstr ""
 "நகல்பிரதி %1$S அறிவுறுத்தல் கண்டறியப்பட்டுள்ளது.  முதல் நேர்வு தவிற மற்றவை அனைத்தும் "
 "புறக்கணிக்கப்படும்."
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "இந்தப் பிழை ஏற்பட்டது: \"%1$S\""
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "%1$S இல் உள்ள பக்கமானது %2$S க்கு அறிக்கைகளை அனுப்ப முடியாது"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "'allow' அல்லது 'default-src' அறிவுறுத்தல் தேவை, ஆனால் இல்லை.  \"default-src "
+#~ "'none'\" க்கு மீட்டமைக்கிறது"
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr "%1$S க்கான மீறல் அறிக்கை இடுகையிடல் திருப்பிவிடல் ஏற்பட்டதால் தோல்வியடைந்தது"
+
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "allow அறிவுறுத்தல் வழக்கழிந்தது, அதற்கு பதிலாக அதற்கு சமமான default-src "
+#~ "அறிவுறுத்தலைப் பயன்படுத்தவும்"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "policy-uri அறிவுறுத்தல் தனியாக மட்டுமே இடம்பெறலாம்"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr "policy-uri ஆனது ஒரு பெற்றோர் கோரிக்கை மற்றும் CSP இன்றி பெறப்பட முடியாது."
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr "கொள்கை URI இல் உள்ள URI ஐப் பாகுபடுத்த முடியவில்லை: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr "பொருந்தாத வழங்கி பெயரிலிருந்து கொள்கை uri ஐப் பெற முடியவில்லை: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr "பொருந்தாத முனையத்திலிருந்து கொள்கை uri ஐப் பெற முடியவில்லை: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr "பொருந்தாத திட்டவடிவிலிருந்து கொள்கை uri ஐப் பெற முடியவில்லை: %1$S"
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "கொள்கை-uri ஐப் பெறுவதில் பிழை: %1$S"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "வழங்கப்பட்ட மதிப்புரு ஒரு nsIURI அல்ல"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "வழங்கப்பட்ட மதிப்புரு ஒரு சரமல்ல"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr "self தரவு வழங்கப்படாவிட்டால் 'self' ஐப் பயன்படுத்த முடியாது"
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "ஒரு திட்ட வடிவமின்றி URI ஐப் பாகுபடுத்த முடியாது: %1$S"
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr "self திறவுச்சொல் பயன்படுத்தப்பட்டுள்ளது, ஆனால் self தரவு குறிப்பிடப்படவில்லை"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr "வழங்கி-மட்டும் மூலம் %1$S ஐ 'self' தரவின்றி உருவாக்க முடியாது"
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr "மூலம் %1$S ஐ 'self' தரவின்றி உருவாக்க முடியாது"
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr "முனைய சிக்கல்களின் காரணமாக %1$S ஐ %2$S உடன் குறுக்குவெட்ட முடியவில்லை."
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr "திட்டவடிவ சிக்கல்களின் காரணமாக %1$S ஐ %2$S உடன் குறுக்குவெட்ட முடியவில்லை."
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr "வரையறுக்கப்படாத வழங்கியைக் கொண்ட மூலத்தை குறுக்குவெட்டுதல்: %1$S"
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr ""
+#~ "வரையறுக்கப்படாத வழங்கிகளைக் கொண்ட இரு மூலங்களைக் குறுக்குவெட்டுதல்: %1$S மற்றும் %2$S"
 
 #~ msgid "The report URI (%1$S) must be from the same eTLD+1."
 #~ msgstr "அறிக்கை URI (%1$S) அதே eTLD+1 இலிருந்து இருக்க வேண்டும்."

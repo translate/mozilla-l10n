@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-10-14 09:51+0000\n"
 "PO-Revision-Date: 2014-10-07 02:41+0000\n"
 "Last-Translator: Baurzhan <baurthefirst@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1412649685.000000\n"
@@ -61,12 +61,6 @@ msgstr ""
 msgid "Tried to send report to invalid URI: \"%1$S\""
 msgstr "Есептемені қате URI-ға жіберу талабы: \"%1$S\""
 
-#. # LOCALIZATION NOTE (errorWas):
-#. # %1$S is the error resulting from attempting to send the report
-#: errorWas
-msgid "error was: \"%1$S\""
-msgstr "орын алған қате: \"%1$S\""
-
 #. # LOCALIZATION NOTE (couldNotParseReportURI):
 #. # %1$S is the report URI that could not be parsed
 #: couldNotParseReportURI
@@ -101,45 +95,11 @@ msgstr ""
 "Бұл сайтта (%1$S) хабарлау URI-сі көрсетілмеген Report-Only саясаты бар. CSP "
 "бұл саясаттың бұзылуын блоктамайды және ол туралы хабарлай алмайды."
 
-#. # LOCALIZATION NOTE (pageCannotSendReportsTo):
-#. # %1$S is the URI of the page with the policy
-#. # %2$S is the report URI that could not be used
-#: pageCannotSendReportsTo
-msgid "page on %1$S cannot send reports to %2$S"
-msgstr "%1$S жердегі парақ %2$S үшін есептемені жібере алмайды"
-
-#: allowOrDefaultSrcRequired
-msgid ""
-"'allow' or 'default-src' directive required but not present.  Reverting to "
-"\"default-src 'none'\""
-msgstr ""
-"'allow' не 'default-src' директивалары міндетті, бірақ табылмады. \"default-"
-"src 'none'\" етіп қайтару"
-
 #. # LOCALIZATION NOTE (failedToParseUnrecognizedSource):
 #. # %1$S is the CSP Source that could not be parsed
 #: failedToParseUnrecognizedSource
 msgid "Failed to parse unrecognized source %1$S"
 msgstr "Танылмаған %1$S қайнар көзін талдау мүмкін емес"
-
-#. # LOCALIZATION NOTE (reportPostRedirect):
-#. # %1$S is the specified report URI before redirect
-#: reportPostRedirect
-msgid "Post of violation report to %1$S failed, as a redirect occurred"
-msgstr ""
-"%1$S адресіне бұзу туралы есептемені жіберу қайта бағдарлау орын алған соң "
-"сәтсіз аяқталды"
-
-#. # LOCALIZATION NOTE (allowDirectiveIsDeprecated):
-#. # Don't translate "allow" and "default-src" as they are keywords and part of
-#. # the CSP protocol syntax.
-#: allowDirectiveIsDeprecated
-msgid ""
-"allow directive is deprecated, use the equivalent default-src directive "
-"instead"
-msgstr ""
-"directive директивасы ескірген, оның орнына оған сәйкес default-src "
-"директивасын қолданыңыз"
 
 #. # LOCALIZATION NOTE (inlineScriptBlocked):
 #. # inline script refers to JavaScript code that is embedded into the HTML document.
@@ -181,83 +141,11 @@ msgstr ""
 "'%1$S' директивасына қолдау жоқ. Директива мен оның мәндерін елемейміз."
 
 #. # CSP Errors:
-#: policyURINotAlone
-msgid "policy-uri directive can only appear alone"
-msgstr "policy-uri директивасы тек жалғыз ғана тұра алады"
-
-#: noParentRequest
-msgid "The policy-uri cannot be fetched without a parent request and a CSP."
-msgstr "policy-uri аталық сұраным мен CSP-сіз алынбайды."
-
-#. # LOCALIZATION NOTE (policyURIParseError):
-#. # %1$S is the URI that could not be parsed
-#: policyURIParseError
-msgid "could not parse URI in policy URI: %1$S"
-msgstr "Саясат URI ішінен URI-ді талдау мүмкін емес: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingHost):
-#. # %1$S is the URI host that does not match
-#: nonMatchingHost
-msgid "can't fetch policy uri from non-matching hostname: %1$S"
-msgstr "саясат uri-ін сәйкес келмейтін хост атынан алу мүмкін емес: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingPort):
-#. # %1$S is the URI port that does not match
-#: nonMatchingPort
-msgid "can't fetch policy uri from non-matching port: %1$S"
-msgstr "саясат uri-ін сәйкес келмейтін порттан алу мүмкін емес: %1$S"
-
-#. # LOCALIZATION NOTE (nonMatchingScheme):
-#. # %1$S is the URI scheme that does not match
-#: nonMatchingScheme
-msgid "can't fetch policy uri from non-matching scheme: %1$S"
-msgstr "саясат uri-ін сәйкес келмейтін схемадан алу мүмкін емес: %1$S"
-
-#. # LOCALIZATION NOTE (errorFetchingPolicy):
-#. # %1$S is the error that caused fetching to fail
-#: errorFetchingPolicy
-msgid "Error fetching policy-uri: %1$S"
-msgstr "policy-uri алу қатесі: %1$S"
-
-#: cspSourceNotURI
-msgid "Provided argument is not an nsIURI"
-msgstr "Ұсынылған аргумент nsIURI емес"
-
-#: argumentIsNotString
-msgid "Provided argument is not a string"
-msgstr "Ұсынылған аргумент жол емес"
-
-#: selfDataNotProvided
-msgid "Can't use 'self' if self data is not provided"
-msgstr "self мәліметтері қолданбаса, 'self' қолдануға болмайды"
-
-#. # LOCALIZATION NOTE (uriWithoutScheme):
-#. # %1$S is the URI without a scheme
-#: uriWithoutScheme
-msgid "can't parse a URI without a scheme: %1$S"
-msgstr "Схемасыз URI-ды талдау мүмкін емес: %1$S"
-
-#: selfKeywordNoSelfData
-msgid "self keyword used, but no self data specified"
-msgstr "self кілт сөзі қолданылған, бірақ self мәліметтері көрсетілмеген"
-
 #. # LOCALIZATION NOTE (couldntParseInvalidSource):
 #. # %1$S is the source that could not be parsed
 #: couldntParseInvalidSource
 msgid "Couldn't parse invalid source %1$S"
 msgstr "Қате қайнар көзін талдау мүмкін емес: %1$S"
-
-#. # LOCALIZATION NOTE (hostSourceWithoutData):
-#. # %1$S is the source
-#: hostSourceWithoutData
-msgid "Can't create host-only source %1$S without 'self' data"
-msgstr "'self' мәліметсіз host-only %1$S қайнар көзін жасауға болмайды"
-
-#. # LOCALIZATION NOTE (sourceWithoutData):
-#. # %1$S is the source
-#: sourceWithoutData
-msgid "Can't create source %1$S without 'self' data"
-msgstr "'self' мәліметсіз %1$S қайнар көзін жасауға болмайды"
 
 #. # LOCALIZATION NOTE (couldntParseInvalidHost):
 #. # %1$S is the host that's invalid
@@ -277,33 +165,6 @@ msgstr "%1$S ішіндегі схеманы талдау мүмкін емес"
 msgid "Couldn't parse port in %1$S"
 msgstr "%1$S ішіндегі портты талдау мүмкін емес"
 
-#. # LOCALIZATION NOTE (notIntersectPort):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectPort
-msgid "Could not intersect %1$S with %2$S due to port problems."
-msgstr "Порт мәселесі салдарынан %1$S және %2$S қиылыстыру мүмкін емес."
-
-#. # LOCALIZATION NOTE (notIntersectScheme):
-#. # %1$S is one source we tried to intersect
-#. # %2$S is the other
-#: notIntersectScheme
-msgid "Could not intersect %1$S with %2$S due to scheme problems."
-msgstr "Схема мәселесі салдарынан %1$S және %2$S қиылыстыру мүмкін емес."
-
-#. # LOCALIZATION NOTE (intersectingSourceWithUndefinedHost):
-#. # %1$S is the source
-#: intersectingSourceWithUndefinedHost
-msgid "intersecting source with undefined host: %1$S"
-msgstr "анықталмаған хосты бар қайнар көзінің қиылысуы: %1$S"
-
-#. # LOCALIZATION NOTE (intersectingSourcesWithUndefinedHosts):
-#. # %1$S is the first source
-#. # %2$S is the second source
-#: intersectingSourcesWithUndefinedHosts
-msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
-msgstr "анықталмаған хосттары бар екі қайнар көзінің қиылысуы: %1$S және %2$S"
-
 #. # LOCALIZATION NOTE (duplicateDirective):
 #. # %1$S is the name of the duplicate directive
 #: duplicateDirective
@@ -313,6 +174,86 @@ msgid ""
 msgstr ""
 "Қайталанатын %1$S директивалары анықталған.  Бірінші нұсқадан басқа барлық "
 "нұсқалар ескерілмейді."
+
+#~ msgid "error was: \"%1$S\""
+#~ msgstr "орын алған қате: \"%1$S\""
+
+#~ msgid "page on %1$S cannot send reports to %2$S"
+#~ msgstr "%1$S жердегі парақ %2$S үшін есептемені жібере алмайды"
+
+#~ msgid ""
+#~ "'allow' or 'default-src' directive required but not present.  Reverting "
+#~ "to \"default-src 'none'\""
+#~ msgstr ""
+#~ "'allow' не 'default-src' директивалары міндетті, бірақ табылмады. "
+#~ "\"default-src 'none'\" етіп қайтару"
+
+#~ msgid "Post of violation report to %1$S failed, as a redirect occurred"
+#~ msgstr ""
+#~ "%1$S адресіне бұзу туралы есептемені жіберу қайта бағдарлау орын алған "
+#~ "соң сәтсіз аяқталды"
+
+#~ msgid ""
+#~ "allow directive is deprecated, use the equivalent default-src directive "
+#~ "instead"
+#~ msgstr ""
+#~ "directive директивасы ескірген, оның орнына оған сәйкес default-src "
+#~ "директивасын қолданыңыз"
+
+#~ msgid "policy-uri directive can only appear alone"
+#~ msgstr "policy-uri директивасы тек жалғыз ғана тұра алады"
+
+#~ msgid "The policy-uri cannot be fetched without a parent request and a CSP."
+#~ msgstr "policy-uri аталық сұраным мен CSP-сіз алынбайды."
+
+#~ msgid "could not parse URI in policy URI: %1$S"
+#~ msgstr "Саясат URI ішінен URI-ді талдау мүмкін емес: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching hostname: %1$S"
+#~ msgstr "саясат uri-ін сәйкес келмейтін хост атынан алу мүмкін емес: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching port: %1$S"
+#~ msgstr "саясат uri-ін сәйкес келмейтін порттан алу мүмкін емес: %1$S"
+
+#~ msgid "can't fetch policy uri from non-matching scheme: %1$S"
+#~ msgstr "саясат uri-ін сәйкес келмейтін схемадан алу мүмкін емес: %1$S"
+
+#~ msgid "Error fetching policy-uri: %1$S"
+#~ msgstr "policy-uri алу қатесі: %1$S"
+
+#~ msgid "Provided argument is not an nsIURI"
+#~ msgstr "Ұсынылған аргумент nsIURI емес"
+
+#~ msgid "Provided argument is not a string"
+#~ msgstr "Ұсынылған аргумент жол емес"
+
+#~ msgid "Can't use 'self' if self data is not provided"
+#~ msgstr "self мәліметтері қолданбаса, 'self' қолдануға болмайды"
+
+#~ msgid "can't parse a URI without a scheme: %1$S"
+#~ msgstr "Схемасыз URI-ды талдау мүмкін емес: %1$S"
+
+#~ msgid "self keyword used, but no self data specified"
+#~ msgstr "self кілт сөзі қолданылған, бірақ self мәліметтері көрсетілмеген"
+
+#~ msgid "Can't create host-only source %1$S without 'self' data"
+#~ msgstr "'self' мәліметсіз host-only %1$S қайнар көзін жасауға болмайды"
+
+#~ msgid "Can't create source %1$S without 'self' data"
+#~ msgstr "'self' мәліметсіз %1$S қайнар көзін жасауға болмайды"
+
+#~ msgid "Could not intersect %1$S with %2$S due to port problems."
+#~ msgstr "Порт мәселесі салдарынан %1$S және %2$S қиылыстыру мүмкін емес."
+
+#~ msgid "Could not intersect %1$S with %2$S due to scheme problems."
+#~ msgstr "Схема мәселесі салдарынан %1$S және %2$S қиылыстыру мүмкін емес."
+
+#~ msgid "intersecting source with undefined host: %1$S"
+#~ msgstr "анықталмаған хосты бар қайнар көзінің қиылысуы: %1$S"
+
+#~ msgid "intersecting two sources with undefined hosts: %1$S and %2$S"
+#~ msgstr ""
+#~ "анықталмаған хосттары бар екі қайнар көзінің қиылысуы: %1$S және %2$S"
 
 #~ msgid "The report URI (%1$S) must be from the same eTLD+1."
 #~ msgstr "Есептеме URI (%1$S) дәл сол eTLD+1 шыққан болуы керек."
