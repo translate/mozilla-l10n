@@ -11,7 +11,6 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,12 +21,12 @@ msgstr ""
 #. # LOCALIZATION NOTE(cleartext_warning): %1$S will be the hostname of the server the user was trying to connect to.
 #: cleartext_warning
 msgid "%1$S does not use encryption."
-msgstr ""
+msgstr "%1$S не използва шифроване."
 
 #. # LOCALIZATION NOTE(selfsigned_warning): %1$S will be the hostname of the server the user was trying to connect to.
 #: selfsigned_warning
 msgid "%1$S does not use a trusted certificate."
-msgstr ""
+msgstr "%1$S не използва доверен сертификат."
 
 #: selfsigned_details
 msgid ""
@@ -35,6 +34,10 @@ msgid ""
 "that it is really the server it claims to be. The connection to the mail "
 "server will be encrypted but cannot be validated as being the correct server."
 msgstr ""
+"Обкновено, защитения пощенски сървър ще представи доверен сертификат, за да "
+"докаже, че той е наистина сървърът, за който сепредставя. Връзката до "
+"пощенският сървър ще бъде шифрована, но не може да бъде удостоверена като "
+"връзка до правилния сървър."
 
 #: cleartext_details
 msgid ""
@@ -42,74 +45,77 @@ msgid ""
 "passwords and private information. By connecting to this server you could "
 "expose your password and private information."
 msgstr ""
+"Незащитените пощенски сървъри не използват шифровани връзки, за да защитят "
+"вашите пароли и друга лична информация. Като се свързвате с такъв сървър вие "
+"излагате на показ лична информация."
 
 #. # LOCALIZATION NOTE(default_server_tag): Used to indicate the default smtp server in the server dropdown list.
 #: default_server_tag
 msgid "(default)"
-msgstr ""
+msgstr "(по подразбиране)"
 
 #. # LOCALIZATION NOTE(port_auto): It must be short (4-5 characters max.).
 #. # Content of server port field (usually a number), used when the user didn't
 #. # enter anything yet and we'll automatically detect it later.
 #: port_auto
 msgid "Auto"
-msgstr ""
+msgstr "Авто"
 
 #. # config titles
 #. # LOCALIZATION NOTE(looking_up_settings_disk): Referring to Thunderbird installation folder on user's harddisk. %1$S will be the brandShortName.
 #: looking_up_settings_disk
 msgid "Looking up configuration: %1$S installation"
-msgstr ""
+msgstr "Търсене на конфигурация: инсталация на %1$S"
 
 #: looking_up_settings_isp
 msgid "Looking up configuration: Email provider"
-msgstr ""
+msgstr "Търсене на конфигурация: Доставчик на е-поща"
 
 #. # LOCALIZATION NOTE(looking_up_settings_db): Do not translate or replace Mozilla. It stands for the public project mozilla.org, not Mozilla Corporation. The database is a generic, public domain facility usable by any client.
 #: looking_up_settings_db
 msgid "Looking up configuration: Mozilla ISP database"
-msgstr ""
+msgstr "Търсене на конфигурация: База от данни на Mozilla ISP"
 
 #. # LOCALIZATION NOTE(looking_up_settings_guess): We are checking common server names like pop., pop3., smtp., mail., without knowing whether they exist or really serve this email account. If a server responds, we try to talk to it via POP/IMAP/SMTP protocols and query its capabilities. If that succeeds, we assume we found a configuration. Of course, it may still be wrong, but it often works.
 #: looking_up_settings_guess
 msgid "Looking up configuration: Trying common server names"
-msgstr ""
+msgstr "Търсене на конфигурация: Изпробване на обичайни имена на сървъри"
 
 #: looking_up_settings_halfmanual
 msgid "Looking up configuration: Probing server"
-msgstr ""
+msgstr "Търсене на конфигурация: Изпробване на сървър"
 
 #. # LOCALIZATION NOTE(found_settings_disk): Referring to Thunderbird installation folder on user's harddisk. %1$S will be the brandShortName.
 #: found_settings_disk
 msgid "Configuration found on %1$S installation"
-msgstr ""
+msgstr "Открита е конфигурация при инсталация %1$S"
 
 #: found_settings_isp
 msgid "Configuration found at email provider"
-msgstr ""
+msgstr "Открита е конфигурация при доставчик на поща"
 
 #. # LOCALIZATION NOTE(found_settings_db): Do not translate or replace Mozilla. It stands for the public project mozilla.org, not Mozilla Corporation. The database is a generic, public domain facility usable by any client.
 #: found_settings_db
 msgid "Configuration found in Mozilla ISP database"
-msgstr ""
+msgstr "Открита е конфигурация в базата от данни за ISP на Мозила"
 
 #. # LOCALIZATION NOTE(found_settings_guess): We tried common mail server names and we found a mail server and talked to it and it responded properly, so we think we found a suitable configuration, but we are only about 80% certain that it is the correct setting for this email address. There's a chance that email address may not actually be served by this server and it won't work, or that there is a better server.
 #: found_settings_guess
 msgid "Configuration found by trying common server names"
-msgstr ""
+msgstr "Открита е конфигурация чрез изпробване на приети имена на сървъри"
 
 #: found_settings_halfmanual
 msgid "The following settings were found by probing the given server"
-msgstr ""
+msgstr "Следните настройки бяха открити при запитване на дадения сървър"
 
 #. # LOCALIZATION NOTE(failed_to_find_settings): %1$S will be the brandShortName.
 #: failed_to_find_settings
 msgid "%1$S failed to find the settings for your email account."
-msgstr ""
+msgstr "%1$S не успя да намери настройки за вашата регистрация."
 
 #: manually_edit_config
 msgid "Editing Config"
-msgstr ""
+msgstr "Редактиране на конфигурация"
 
 #. # LOCALIZATION NOTE(guessed_settings_offline) User is offline, so we just took a wild guess and the user will have to enter the right settings.
 #: guessed_settings_offline
@@ -117,123 +123,137 @@ msgid ""
 "You are offline. We guessed some settings but you will need to enter the "
 "right settings."
 msgstr ""
+"Вие сте извън линия. Ние опитахме някакви настройки, но сега ще трябва да "
+"въведете верните настройки."
 
 #. # config subtitles
 #: check_preconfig
 msgid "checking for pre-configuration…"
-msgstr ""
+msgstr "проверяване за предварителна конфигурация…"
 
 #: found_preconfig
 msgid "found pre-configuration"
-msgstr ""
+msgstr "открита предварителна конфигурация"
 
 #: checking_config
 msgid "checking configuration…"
-msgstr ""
+msgstr "проверяване на конфигурация…"
 
 #: found_config
 msgid "Found configuration of your account"
-msgstr ""
+msgstr "Открита е конфигурация за вашата регистрация"
 
 #: checking_mozilla_config
 msgid "checking Mozilla Community configurations…"
-msgstr ""
+msgstr "проверяване конфигурации от Mozilla Community…"
 
 #: found_isp_config
 msgid "found a configuration"
-msgstr ""
+msgstr "открита е конфигурация"
 
 #: probing_config
 msgid "probing configuration…"
-msgstr ""
+msgstr "тестване на конфигурацията…"
 
 #: guessing_from_email
 msgid "guessing configuration…"
-msgstr ""
+msgstr "определяне на конфигурацията…"
 
 #: config_details_found
 msgid "Your configuration details have been found!"
-msgstr ""
+msgstr "Открити са подробности около вашата конфигурация!"
 
 #: config_unverifiable
 msgid ""
 "Configuration could not be verified — is the username or password wrong?"
 msgstr ""
+"Конфигурацията не може да бъде проверена — грешни потребителско име или "
+"парола?\n"
 
 #: incoming_found_specify_outgoing
 msgid ""
 "Your incoming server configuration details have been found, please specify "
 "the sending hostname."
 msgstr ""
+"Открити са подробности за вашата конфигурация на входящият сървър, моля "
+"задайте име на хост за изпращане."
 
 #: outgoing_found_specify_incoming
 msgid ""
 "Your outgoing server configuration details have been found, please specify "
 "the receiving hostname."
 msgstr ""
+"Открити са подробности за вашата конфигурация на изходящият сървър, моля "
+"задайте име на хост за получаване."
 
 #: please_enter_missing_hostnames
 msgid "Could not guess settings — please enter missing hostnames."
 msgstr ""
+"Неуспешно определяне на настройки — моля въведете липсващите имена на "
+"хостове."
 
 #: incoming_failed_trying_outgoing
 msgid ""
 "Could not automatically configure incoming server, still trying for outgoing "
 "server."
 msgstr ""
+"Неуспешно атоматично конфигуриране на входящия сървър, продължават опитите "
+"за изходящия сървър."
 
 #: outgoing_failed_trying_incoming
 msgid ""
 "Could not automatically configure outgoing server, still trying for incoming "
 "server."
 msgstr ""
+"Неуспешно атоматично конфигуриране на изходящия сървър, продължават опитите "
+"за входящия сървър."
 
 #: checking_password
 msgid "Checking password…"
-msgstr ""
+msgstr "Проверяване на паролата…"
 
 #: password_ok
 msgid "Password ok!"
-msgstr ""
+msgstr "Паролата е правилна!"
 
 #: user_pass_invalid
 msgid "Username or password invalid"
-msgstr ""
+msgstr "Невалидни потребителско име или парола"
 
 #: check_server_details
 msgid "Checking server details"
-msgstr ""
+msgstr "Проверяване подробности за сървъра"
 
 #: check_in_server_details
 msgid "Checking incoming server details"
-msgstr ""
+msgstr "Проверяване подробности за входящия сървър"
 
 #: check_out_server_details
 msgid "Checking outgoing server details"
-msgstr ""
+msgstr "Проверяване подробности за изходящия сървър"
 
 #: error_creating_account
 msgid "Error Creating Account"
-msgstr ""
+msgstr "Грешка при създаване на регистрация"
 
 #: incoming_server_exists
 msgid "Incoming server already exists."
-msgstr ""
+msgstr "Входящият съръвр вече съществува."
 
 #: please_enter_name
 msgid "Please enter your name."
-msgstr ""
+msgstr "Моля, напишете името си."
 
 #: double_check_email
 msgid "Double-check this email address!"
-msgstr ""
+msgstr "Проверете още веднъж този ел. адрес!"
 
 #. #config result display
 #. # LOCALIZATION NOTE(resultUnknown): Displayed instead of resultIncoming,
 #. # resultOutgoing or resultUsername when we don't have a proper value.
 #: resultUnknown
 msgid "Unknown"
-msgstr ""
+msgstr "Неизвестен"
 
 #. # LOCALIZATION NOTE(resultIncoming):
 #. # %1$S will be replaced with either resultIMAP, resultPOP3 or resultSMTP.
@@ -248,47 +268,47 @@ msgstr ""
 #: resultIncoming
 msgctxt "resultIncoming"
 msgid "%1$S, %2$S, %3$S%4$S"
-msgstr ""
+msgstr "%1$S, %2$S, %3$S%4$S"
 
 #. # LOCALIZATION NOTE(resultOutgoing): see resultIncoming
 #: resultOutgoing
 msgctxt "resultOutgoing"
 msgid "%1$S, %2$S, %3$S%4$S"
-msgstr ""
+msgstr "%1$S, %2$S, %3$S%4$S"
 
 #: resultOutgoingExisting
 msgid "Use existing outgoing SMTP server"
-msgstr ""
+msgstr "Използване на съществуващ изходящ SMTP сървър"
 
 #: resultIMAP
 msgid "IMAP"
-msgstr ""
+msgstr "IMAP"
 
 #: resultPOP3
 msgid "POP3"
-msgstr ""
+msgstr "POP3"
 
 #: resultSMTP
 msgid "SMTP"
-msgstr ""
+msgstr "SMTP"
 
 #. # LOCALIZATION NOTE(resultNoEncryption): Neither SSL/TLS nor STARTTLS. Transmission of emails in cleartext over the Internet.
 #: resultNoEncryption
 msgid "No Encryption"
-msgstr ""
+msgstr "Без шифроване"
 
 #: resultSSL
 msgid "SSL"
-msgstr ""
+msgstr "SSL"
 
 #: resultSTARTTLS
 msgid "STARTTLS"
-msgstr ""
+msgstr "STARTTLS"
 
 #. # LOCALIZATION NOTE(resultSSLCertWeak): \u0020 is just a space
 #: resultSSLCertWeak
 msgid " (Warning: Could not verify server)"
-msgstr ""
+msgstr "(Внимание: невъзможна проверка на сървър)"
 
 #: resultSSLCertOK
 msgctxt "resultSSLCertOK"
@@ -297,8 +317,8 @@ msgstr ""
 
 #: resultUsernameBoth
 msgid "%1$S"
-msgstr ""
+msgstr "%1$S"
 
 #: resultUsernameDifferent
 msgid "Incoming: %1$S, Outgoing: %2$S"
-msgstr ""
+msgstr "Входящо: %1$S, изходящо: %2$S"
