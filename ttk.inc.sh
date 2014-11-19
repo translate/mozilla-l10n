@@ -23,6 +23,7 @@
 # 2: Info lots of stuff
 # 3: Debug - shout it out
 opt_verbose=0
+opt_yes=""
 
 # FIXME these need to be managed and switched by a --verbose setting
 progress=none
@@ -191,10 +192,12 @@ rsync_files_put() {
 	update_command="$precommand python $manage_command update_stores $option_project $option_keep"
 	pootle_dir=/var/www/sites/$instance/translations/$project
 	
-	read -p "Do you wish to proceed? Do not if new translations have sync'd for your language." -n1 answer
-	echo
-	if [ "$answer" != "y" ]; then
-		exit
+	if [[ $opt_yes ]]; then
+		read -p "Do you wish to proceed? Do not if new translations have sync'd for your language." -n1 answer
+		echo
+		if [ "$answer" != "y" ]; then
+			exit
+		fi
 	fi
 	
 	assemble_phase $langs
@@ -475,6 +478,37 @@ function log_error() {
 	log 'error' $*
 }
 
+
+##### log_file #########
+
+function _log_file_vars {
+	_find_config_base_dir
+	log_file_prefix=LOG_
+	log_filename=${log_file_prefix}$(workon_current)
+	log_file=$base_dir/${log_filename}
+}
+
+function logger_file() {
+	_log_file_vars
+	isodate=$(date --iso=seconds)
+	spacer="\t"
+	columns=$isodate
+	for column in $*
+	do
+		if [[ $column == '{' ]]; then
+			columns=$(echo -n "${columns}${spacer}")
+			spacer=" "
+			continue
+		elif [[ $column == '}' ]]; then
+			spacer="\t"
+			continue
+		fi
+		columns=$(echo -n "${columns}${spacer}${column}")
+	done
+	echo -e ${columns} >> $log_file
+}
+
+
 # Config loading
 function _find_config_base_dir() {
 	# Find the $config_dir directory from the current place	
@@ -513,6 +547,11 @@ function workon_list() {
 	(cd $config_base_dir; ls -1 */config.sh | cut -d"/" -f1 | egrep -v "default")
 	logger green "Default" "$(basename $(ls $config_base_dir/*.default 2>/dev/null || echo "None.default") .default)"
 	logger red "Current acive" "$(basename $(ls $config_base_dir/*.workon 2>/dev/null || echo "None.workon") .workon)"
+}
+
+function workon_current() {
+	# Find the currently active workon project
+	echo $(basename $(ls $config_base_dir/*.workon 2>/dev/null || echo "None.workon") .workon)
 }
 
 function source_config() {
@@ -677,6 +716,66 @@ function copydir {
 	fi
 }
 
+########### cron locks ##############
+
+function _lock_vars {
+	_find_config_base_dir
+	running_file_prefix=RUNNING_
+	running_file=$base_dir/${running_file_prefix}$(basename $0)
+	emergency_stop=$base_dir/STOP
+}
+
+function stop_if_running {
+	_lock_vars
+	if [[ -f $emergency_stop ]]; then
+		echo "Emergency stop in place"
+		exit 1
+	fi
+	if [[ $(find $base_dir -maxdepth 1 -name "$running_file_prefix*") ]]; then
+		echo "Already running: $(find $base_dir -name "${running_file_prefix}*")"
+		exit 1
+	fi
+}
+
+function mk_lock_file {
+	_lock_vars
+	touch $running_file
+}
+
+function rm_lock_file {
+	_lock_vars
+	rm $running_file
+}
+
+
+###### Last Commit ############
+
+
+function _last_commit_vars {
+	_find_config_base_dir
+	last_commit_file_prefix=LAST_COMMIT_
+	last_commit_filename=LAST_COMMIT_$(workon_current)_$(basename $0)
+	last_commit_file=$base_dir/${last_commit_filename}
+}
+
+function stop_if_no_last_commit {
+	_last_commit_vars
+	if [[ -z $(find $base_dir -maxdepth 1 -name "$last_commit_filename") ]]; then
+		echo "No last commit: please manually setup $last_commit_file"
+		exit 1
+	fi
+}
+
+function mk_new_commit_file {
+	_last_commit_vars
+	new_commit_file=$(mktemp)
+	latest_change_id > $new_commit_file
+}
+
+function update_last_commit_file {
+	_last_commit_vars
+	mv $new_commit_file $last_commit_file
+}
 
 ####### Standard Settings #############
 # Standard file locations

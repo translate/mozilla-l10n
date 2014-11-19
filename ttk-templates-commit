@@ -1,31 +1,48 @@
 #!/bin/bash
 
 source $(dirname $0)/ttk.inc.sh
+stop_if_running
+mk_lock_file
 
-#push="yes"
-push=
+push="yes"
+#push=
 
 ttk-build templates
 (
+if [[ $PRODUCT_DIRS ]]; then
 	for dir in $PRODUCT_DIRS $RETIRED_PRODUCT_DIRS
 	do
 		cd ${base_dir}/templates
 		git add -A $dir
-		cd ${base_dir}/templates-en-US
-		git add -A $dir
+		if [[ -d ${base_dir}/templates-en-US ]]; then
+			cd ${base_dir}/templates-en-US
+			git add -A $dir
+		fi
 	done
+else
+	git add templates
+fi
 )
 git diff --quiet --cached --exit-code templates
 if [ $? -ne 0 ]; then
-	git commit -m "Templates: update ($project)" templates templates-en-US
-	ttk-put templates
-	id=$(ttk-changeid)
-	ttk-get
-	git add $(ttk-langs)
-	git commit -m "Various: pre templates update ($project)"
-	ttk-build --no-compare-locales --no-xpi --no-tarball
-	git add $(ttk-langs)
-	git commit -m "All: update against templates ($project)"
-	ttk-put --keep=$id
+	git diff --cached --exit-code --name-pnly templates | egrep "\.pot$"
+	if [ $? -eq 0 ]; then
+		git commit -m "Templates: POT update ($project)" templates templates-en-US
+		ttk-put --yes templates
+		id=$(ttk-changeid)
+		logger_file templates POT $id
+		ttk-get
+		git add $(ttk-langs)
+		git commit -m "Various: pre templates update ($project)"
+		ttk-build --no-compare-locales --no-xpi --no-tarball
+		git add $(ttk-langs)
+		git commit -m "All: update against templates ($project)"
+		ttk-put --yes --keep=$id
+	else
+		git commit -m "Templates: non-POT update ($project)" templates templates-en-US
+		id=$(ttk-changeid)
+		logger_file templates non-POT $id
+	fi
 fi
 [[ $push ]] && git push
+rm_lock_file

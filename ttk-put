@@ -2,11 +2,22 @@
 
 source $(dirname $0)/ttk.inc.sh
 
-tmpkeep=${1/--keep=/}
-if [ -z "${tmpkeep//[0-9]}" ]; then
-	keep=$tmpkeep
-	shift 1
-fi
+for opt in $*
+do
+	case "$opt" in
+		--yes)
+			opt_yes=""
+			shift 1
+			;;
+		--keep=*)
+			tmpkeep=${opt/--keep=/}
+			if [ -z "${tmpkeep//[0-9]}" ]; then
+				keep=$tmpkeep
+				shift 1
+			fi
+			;;
+	esac
+done
 
 langs=$(which_langs $*)
 

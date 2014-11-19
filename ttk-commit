@@ -4,14 +4,31 @@ push="yes"
 #push=
 
 source $(dirname $0)/ttk.inc.sh
+stop_if_running
+mk_lock_file
 
-if [ $# -lt 1 ]; then
-	echo $(basename $0) [lang|changeid]
+if [[ $# -lt 1 ]]; then
+	echo "$(basename $0) <--since|[lang|changeid>"
 	echo "We don't allow all commits as we might overwrite other peoples work"
 	exit 1
 fi
 
-langs=$(which_langs $*)
+if [[ $1 == "--since" ]]; then
+	stop_if_no_last_commit
+	mk_new_commit_file
+	langs=$(which_langs $(cat $last_commit_file))
+	[[ $langs ]] && logger_file commit auto "$(cat $last_commit_file)>$(cat $new_commit_file)" "{ $langs }"
+	auto="yes"
+else
+	langs=$(which_langs $*)
+	[[ $langs ]] && logger_file commit manual "{ $* }" "{ $langs }"
+fi
+
+if [[ ! $langs ]]; then
+	rm_lock_file
+	exit
+fi
+
 
 for lang in $langs
 do
@@ -21,13 +38,17 @@ do
 	# FIXME handle initialised languages
 	(
 		cd ${base_dir}/$pootlelang
-		for dir in $PRODUCT_DIRS $RETIRED_PRODUCT_DIRS
-		do
-			git add -A $dir
-		done
+		if [[ $PRODUCT_DIRS ]]; then
+			for dir in $PRODUCT_DIRS $RETIRED_PRODUCT_DIRS
+			do
+				git add -A $dir
+			done
+		else
+			git add -A .
+		fi
 		git commit -m "[$pootlelang] pull from Pootle ($project)"
 	)
-	ttk-build --no-xpi --no-tarball --no-compare-locales $lang
+	ttk-build --vc $lang
 	(cd ${base_dir}; git checkout $pootlelang)
 	(
 		cd ${base_dir}/build/${L10N_VER}/$mozlang
@@ -38,3 +59,5 @@ do
 done
 
 [[ $push ]] && git push
+[[ $auto ]] && update_last_commit_file
+rm_lock_file
