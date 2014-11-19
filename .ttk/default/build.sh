@@ -201,10 +201,10 @@ if [ $opt_vc ]; then
 	done
 	
 	verbose "moz2po - Create POT files from en-US"
-	for exclude in $RETIRED_PRODUCT_DIRS $OTHER_EXCLUDED_DIRS ".hg"
-	do
-		excludes="$excludes --exclude=$exclude"
-	done
+	#for exclude in $RETIRED_PRODUCT_DIRS $OTHER_EXCLUDED_DIRS ".hg"
+	#do
+	#	excludes="$excludes --exclude=$exclude"
+	#done
 	(cd ${L10N_ENUS}
 	moz2po --errorlevel=$errorlevel --progress=$progress $excludes -P --duplicates=msgctxt . ${POT_DIR}
 	)
@@ -283,10 +283,10 @@ do
 	done
 
 	verbose "po2moz - Create Mozilla l10n layout from migrated PO files."
-	for exclude in $RETIRED_PRODUCT_DIRS $OTHER_EXCLUDED_DIRS
-	do
-		excludes="$excludes --exclude=$exclude"
-	done
+	#for exclude in $RETIRED_PRODUCT_DIRS $OTHER_EXCLUDED_DIRS
+	#do
+	#	excludes="$excludes --exclude=$exclude"
+	#done
 	po2moz --removeuntranslated --progress=$progress --errorlevel=$errorlevel --exclude=".git" --exclude=".hg" --exclude=".hgtags" --exclude="obsolete" --exclude="*~" $excludes \
 		-t ${L10N_ENUS} -i ${PO_DIR}/${polang} -o ${L10N_DIR}/${mozlang}
 
