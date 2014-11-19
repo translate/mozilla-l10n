@@ -5,9 +5,9 @@ server=mozilla.locamotion.org
 local_copy=$base_dir/.pootle_tmp
 phaselist=
 manage_command="/var/www/sites/$instance/src/manage.py"
-manage_py_verbosity=2
+manage_py_verbosity=0
 precommand=". /var/www/sites/$instance/env/bin/activate;"
-opt_verbose=3
+opt_verbose=0
 
 # FIXME we should build this from the get_moz_enUS script
 PRODUCT_DIRS="calendar" # Directories in language repositories to clear before running po2moz
