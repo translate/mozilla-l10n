@@ -192,7 +192,10 @@ if [ $opt_vc ]; then
 		      browser/searchplugins/list.txt \
 		      browser/searchplugins/metrolist.txt \
 		      mobile/chrome/region.properties \
-		      mail/chrome/messenger-region/region.properties
+		      mail/chrome/messenger-region/region.properties \
+                      suite/chrome/common/region.properties \
+                      suite/chrome/browser/region.properties \
+                      suite/chrome/mailnews/region.properties
 	do
 		rm -f ${L10N_ENUS}/${rmfile}
 	done
@@ -305,7 +308,10 @@ do
 			browser/chrome/browser-region/region.properties \
 			browser/searchplugins/list.txt \
 			mobile/chrome/region.properties \
-			mail/chrome/messenger-region/region.properties
+			mail/chrome/messenger-region/region.properties \
+                        suite/chrome/common/region.properties \
+                        suite/chrome/browser/region.properties \
+                        suite/chrome/mailnews/region.properties
 		)
 	fi
 
