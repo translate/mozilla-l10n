@@ -14,7 +14,7 @@ PRODUCT_DIRS="calendar" # Directories in language repositories to clear before r
 # Directories in language repositories to clear before running po2moz
 RETIRED_PRODUCT_DIRS=""
 
-OTHER_EXCLUDED_DIRS="browser dom netwerk security services/sync toolkit webapprt mobile embedding chat editor/ui mail other-licenses/branding/thunderbird"
+OTHER_EXCLUDED_DIRS="browser dom netwerk security services/sync toolkit webapprt mobile embedding chat editor/ui mail other-licenses/branding/thunderbird suite"
 
 MOZ_PRODUCT=calendar
 

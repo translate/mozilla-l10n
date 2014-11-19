@@ -14,7 +14,7 @@ PRODUCT_DIRS="chat editor/ui mail other-licenses/branding/thunderbird" # Directo
 # Directories in language repositories to clear before running po2moz
 RETIRED_PRODUCT_DIRS=""
 
-OTHER_EXCLUDED_DIRS="browser dom netwerk security services/sync toolkit webapprt mobile embedding calendar"
+OTHER_EXCLUDED_DIRS="browser dom netwerk security services/sync toolkit webapprt mobile embedding calendar suite"
 
 MOZ_PRODUCT=mail
 
