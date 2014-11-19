@@ -213,6 +213,13 @@ if [ $opt_vc ]; then
 		clean_po ${PRODUCT_DIRS}
 		)
 	fi
+	# FIXME hack around the fact we can't exclude subdir
+	(cd ${POT_DIR}
+	for pdir in $OTHER_EXCLUDED_DIRS
+	do
+		git checkout $pdir
+	done
+	)
 	pot_dir=$(basename ${POT_DIR})
 	# FIXME need to be selective based on product dirs
 	revert_unchanged_po_git ${POT_DIR}/.. ${pot_dir}
