@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-14 13:44+0100\n"
-"PO-Revision-Date: 2014-11-20 11:47+0000\n"
+"PO-Revision-Date: 2014-11-25 17:39+0000\n"
 "Last-Translator: Peter <peter_klofutar@telemach.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1416484048.000000\n"
+"X-POOTLE-MTIME: 1416937154.000000\n"
 
 #: mustSelectFolder
 msgid "You must select a target folder."
@@ -81,9 +81,10 @@ msgid ""
 "created and a backup of the old file, called rulesbackup.dat, will be "
 "created in the same directory."
 msgstr ""
-"Vaši filtri ne delujejo, ker se datoteke rules.dat, ki vsebuje filtre, ni "
-"dalo prebrati. V istem imeniku se bi ustvarilo novo datoteko rules.dat in "
-"varnostno kopijo prejšnje datoteke z imenom rulesbackup.dat."
+"Vaši filtri ne delujejo, ker se datoteke msgFilterRules.dat, ki vsebuje "
+"filtre, ni dalo prebrati. V isti mapi se bo ustvarila nova datoteka "
+"msgFilterRules.dat in varnostna kopija prejšnje datoteke z imenom "
+"rulesbackup.dat."
 
 #: customHeaderOverflow
 msgid ""
@@ -99,9 +100,9 @@ msgid ""
 "msgFilterRules.dat file, which contains your filters, to use fewer custom "
 "headers."
 msgstr ""
-"Vaši filtri so presegli mejo 50-ih glav po meri. Obdelajte datoteko rules."
-"dat, v kateri se vaši filtri nahajajo, tako da boste uporabljali manj glav "
-"po meri."
+"Vaši filtri so presegli mejo 50-ih glav po meri. Obdelajte datoteko "
+"msgFilterRules.dat, v kateri se vaši filtri nahajajo, tako da boste "
+"uporabljali manj glav po meri."
 
 #: invalidCustomHeader
 msgid ""
@@ -111,18 +112,17 @@ msgid ""
 "your filters, to remove invalid characters from your custom headers."
 msgstr ""
 "Eden od filtrov vsebuje glavo po meri, v kateri je neveljaven znak, kot "
-"denimo, ':' ali znak, ki se ga ne da natisniti, ali pa osem-bitni ASCII "
-"znak. Obdelajte msgFilterRules.dat, v kateri se vaši filtri nahajajo, in "
-"odstranite neveljavne znake iz glav po meri."
+"denimo, ':', nenatisljiv znak, znak, ki ni znak ASCII ali pa osem-bitni "
+"ASCII znak. Uredite datoteko msgFilterRules.dat, v kateri se vaši filtri "
+"nahajajo in odstranite neveljavne znake iz glav po meri."
 
 #: continueFilterExecution
 msgid "Applying filter %S failed. Would you like to continue applying filters?"
-msgstr ""
-"Uporaba filtra %S ni uspela. Ali želite, da uporabim še preostale filtre?"
+msgstr "Uporaba filtra %S ni uspela. Ali želite nadaljevati z uporabo filtrov?"
 
 #: promptTitle
 msgid "Running Filters"
-msgstr "Filtri tečejo"
+msgstr "Filtri se izvajajo"
 
 #: promptMsg
 msgid ""
@@ -130,7 +130,7 @@ msgid ""
 "Would you like to continue applying filters?"
 msgstr ""
 "Trenutno se filtrira vaša sporočila.\n"
-"Ali želite, da uporabim še preostale filtre?"
+"Ali želite nadaljevati z uporabo filtrov?"
 
 #: stopButtonLabel
 msgid "Stop"
@@ -145,16 +145,16 @@ msgid ""
 "This filter was probably created by future version of mozilla/netscape. You "
 "cannot enable this filter because we don't know how to apply it."
 msgstr ""
-"Ta filter verjetno izvira iz bodoče verzije mozilla/netscape. Tega filtra ne "
-"morete aktivirati, ker ne vem, kako naj ga uporabim."
+"Ta filter verjetno izvira iz bodoče različice mozilla/netscape. Tega filtra "
+"ne morete omogočiti, ker način njegove uporabe ni znan."
 
 #: dontWarnAboutDeleteCheckbox
 msgid "Don't ask me again"
-msgstr "Ne sprašuj me več."
+msgstr "Ne sprašuj več."
 
 #: searchTermsInvalidTitle
 msgid "Search Terms Invalid"
-msgstr "Pogoji iskanja neveljavni"
+msgstr "Neveljavni pogoji iskanja "
 
 #. # LOCALIZATION NOTE(searchTermsInvalidRule)
 #. # %1$S=search attribute name from the invalid rule
@@ -164,8 +164,8 @@ msgid ""
 "This filter cannot be saved because the search term \"%1$S %2$S\" is invalid "
 "in the current context."
 msgstr ""
-"Tega filtra ni mogoče shraniti, ker je pogoj za iskanje \"%1$S %2$S\" "
-"neveljaven v trenutnem kontekstu."
+"Tega filtra ni mogoče shraniti, ker je iskalni niz \"%1$S %2$S\" neveljaven "
+"v trenutnem kontekstu."
 
 #. # LOCALIZATION NOTE(filterActionOrderExplanation)
 #. # Keep the \n\n that mean 2 linebreaks.
@@ -206,29 +206,29 @@ msgstr "#1 predmet; Več predmetov (#1)"
 #. # %1$S=author, %2$S=subject, %3$S=date
 #: junkLogDetectStr
 msgid "Detected junk message from %1$S - %2$S at %3$S"
-msgstr "Naletel na neresno pošto od %1$S - %2$S pri %3$S"
+msgstr "Zaznana je bila neželena pošta od %1$S - %2$S ob %3$S"
 
 #. # LOCALIZATION NOTE(logMoveStr)
 #. # %1$S=message id, %2$S=folder URI
 #: logMoveStr
 msgid "moved message id = %1$S to %2$S"
-msgstr "Sporočilo id = %1$S je bilo premaklneno v %2$S"
+msgstr "Sporočilo id = %1$S je bilo premaknjeno v %2$S"
 
 #. # LOCALIZATION NOTE(logCopyStr)
 #. # %1$S=message id, %2$S=folder URI
 #: logCopyStr
 msgid "copied message id = %1$S to %2$S"
-msgstr "kopiral sporočilo id = %1$S v %2$S"
+msgstr "sporočilo id = %1$S kopirano v %2$S"
 
 #. # LOCALIZATION NOTE(filterLogDetectStr)
 #. # %1$S=filter name %2$S=author, %3$S=subject, %4$S=date
 #: filterLogDetectStr
 msgid "Applied filter \"%1$S\" to message from %2$S - %3$S at %4$S"
-msgstr "Uporabil filter \"%1$S\" za sporočilo %2$S - o %3$S dne %4$S"
+msgstr "Filter \"%1$S\" uporabljen za sporočilo %2$S - %3$S ob %4$S"
 
 #: filterMissingCustomAction
 msgid "Missing Custom Action"
-msgstr "Manjka uporabnikovo dejanje"
+msgstr "Manjka dejanje po meri"
 
 #: filterAction2
 msgid "priority changed"
@@ -248,7 +248,7 @@ msgstr "nit ukinjena"
 
 #: filterAction6
 msgid "thread watched"
-msgstr "nit se spremlja"
+msgstr "nit spremljana"
 
 #: filterAction7
 msgid "starred"
@@ -265,11 +265,11 @@ msgstr "odgovorjeno"
 
 #: filterAction10
 msgid "forwarded"
-msgstr "poslano dalje"
+msgstr "posredovano"
 
 #: filterAction11
 msgid "execution stopped"
-msgstr "izvajanje zaustavljeno."
+msgstr "izvajanje ustavljeno"
 
 #: filterAction12
 msgid "deleted from POP3 server"
@@ -281,7 +281,7 @@ msgstr "preostalo na strežniku POP3"
 
 #: filterAction14
 msgid "junk score"
-msgstr "ocena za neresno pošto"
+msgstr "ocena za neželeno pošto"
 
 #: filterAction15
 msgid "body fetched from POP3 server"
