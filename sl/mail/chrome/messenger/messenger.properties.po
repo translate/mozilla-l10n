@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-14 15:54+0000\n"
-"PO-Revision-Date: 2014-11-26 10:16+0000\n"
+"PO-Revision-Date: 2014-11-26 10:34+0000\n"
 "Last-Translator: Peter <peter_klofutar@telemach.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1416996976.000000\n"
+"X-POOTLE-MTIME: 1416998098.000000\n"
 
 #. # The following are used by the messenger application
 #. #
@@ -877,7 +877,7 @@ msgstr "."
 #. # leading zeros for day and month values, not used if mailnews.search_date_format is not zero
 #: mailnews.search_date_leading_zeros
 msgid "true"
-msgstr "true"
+msgstr "false"
 
 #. # offline msg
 #: nocachedbodybody
@@ -1129,7 +1129,7 @@ msgstr ""
 #. # #1 number of attachments
 #: attachmentCount
 msgid "#1 attachment;#1 attachments"
-msgstr "#1 priponka;#1 priponk"
+msgstr "#1 priponka;več priponk (#1)"
 
 #. # LOCALIZATION NOTE (attachmentCountSingle): This is the format for the
 #. # attachment header when a message has only one attachment. This is separate
@@ -1168,7 +1168,7 @@ msgstr "Priponke:"
 #. # Connection Error Messages
 #: 101
 msgid "Unknown Error"
-msgstr "Neznana napaka "
+msgstr "Neznana napaka"
 
 #: 102
 msgid "Failed to connect to server %S."
@@ -1202,18 +1202,18 @@ msgstr "ima %1$S novih sporočil"
 #. # LOCALIZATION NOTE(newMailNotification_message): %1$S is the name of the account %2$S is the number of new messages
 #: newMailNotification_message
 msgid "%1$S received %2$S new message"
-msgstr "%1$S ima nova sporočila - %2$S"
+msgstr "%1$S ima nova sporočila (%2$S)"
 
 #. # LOCALIZATION NOTE(newMailNotification_messages): %1$S is the name of the account %2$S is the number of new messages
 #: newMailNotification_messages
 msgid "%1$S received %2$S new messages"
-msgstr "%1$S ima nova sporočila - %2$S"
+msgstr "%1$S ima nova sporočila (%2$S)"
 
 #. # LOCALIZATION NOTE(newMailNotification_messagetitle): %1$S is subject of new message and %2$S is sender of new message.
 #. # This is UNIX only
 #: newMailNotification_messagetitle
 msgid "%1$S from %2$S"
-msgstr "za %1$S od %2$S"
+msgstr "%1$S od %2$S"
 
 #. # LOCALIZATION NOTE(macBiffNotification is Mac only):
 #. #  %1$S is the number of new messages
@@ -1225,11 +1225,11 @@ msgstr "%1$S novo sporočilo od %2$S."
 
 #: macBiffNotification_messages
 msgid "%1$S new messages from %2$S."
-msgstr "%1$S novih sporočil od %2$S."
+msgstr "več novih sporočil (%1$S) od %2$S."
 
 #: macBiffNotification_messages_extra
 msgid "%1$S new messages from %2$S and %3$S more."
-msgstr "%1$S novih sporočil od %2$S in %3$S več."
+msgstr "več novih sporočil (%1$S) od %2$S in %3$S več."
 
 #. # Used to separate names/email addresses in a list.  Note the trailing space ', '
 #: macBiffNotification_separator
@@ -1265,7 +1265,7 @@ msgstr "Potrdi"
 
 #: confirmViewDeleteMessage
 msgid "Are you sure you want to delete this view?"
-msgstr "Ali res želite izbrisati ta prikaz?"
+msgstr "Ali res želite izbrisati ta pogled?"
 
 #. # for virtual folders
 #: confirmSavedSearchTitle
@@ -1519,7 +1519,7 @@ msgstr "n"
 #. #LOCALIZATION NOTE %1$S is the e-mail address of the person we will allow remote content for
 #: alwaysLoadRemoteContentForSender2
 msgid "Always load remote content from %1$S"
-msgstr "Vedno naloži oddaljeno vsebino od %1$S "
+msgstr "Vedno naloži oddaljeno vsebino od %1$S"
 
 #. #LOCALIZATION NOTE(mdnBarMessageNormal) %1$S is the name of the sender
 #: mdnBarMessageNormal
@@ -1617,21 +1617,21 @@ msgstr ", in še #1;, in še #1"
 #: headertoFieldMe
 msgctxt "headertoFieldMe"
 msgid "Me"
-msgstr "Zame"
+msgstr "Mene"
 
 #. # LOCALIZATION NOTE (headerfromFieldMe): first person prepositional object
 #. # pronoun used in the "from" header of the message header pane.
 #: headerfromFieldMe
 msgctxt "headerfromFieldMe"
 msgid "Me"
-msgstr "Od mene"
+msgstr "Mene"
 
 #. # LOCALIZATION NOTE (headerreply-toFieldMe): first person prepositional
 #. # object pronoun used in the "reply-to" header of the message header pane.
 #: headerreply-toFieldMe
 msgctxt "headerreply-toFieldMe"
 msgid "Me"
-msgstr "Meni"
+msgstr "Mene"
 
 #. # LOCALIZATION NOTE (headerccFieldMe): first person prepositional object
 #. # pronoun used in the "cc" header of the message header pane.
@@ -1715,7 +1715,8 @@ msgstr "o"
 msgid ""
 "#1 has been installed successfully.;#2 add-ons have been installed "
 "successfully."
-msgstr "#1 je bil uspešno nameščen.; dodatki (#2) so bili uspešno nameščeni."
+msgstr ""
+"#1 je bil uspešno nameščen.; več dodatkov (#2) je bilo uspešno nameščenih."
 
 #: addonsInstalledNeedsRestart
 msgid ""
@@ -1764,7 +1765,7 @@ msgid ""
 "The add-on downloaded from #2 could not be installed because it appears to "
 "be corrupt."
 msgstr ""
-"Dodatka, prenesenega s/z #2, ni bilo mogoče namestiti, ker je izgleda "
+"Dodatka, prenesenega s/z #2, ni bilo mogoče namestiti, ker je videti "
 "poškodovan."
 
 #: addonError-4
@@ -1806,7 +1807,7 @@ msgid ""
 "security problems."
 msgstr ""
 "#1 ni bilo mogoče namestiti, ker predstavlja veliko tveganje za stabilnost "
-"ali ima težave z varnostjo. "
+"ali ima težave z varnostjo."
 
 #: confirmMsgDelete.title
 msgid "Confirm Deletion"
@@ -1835,7 +1836,7 @@ msgstr "Ne sprašuj več."
 #: confirmMsgDelete.delete.label
 msgctxt "confirmMsgDelete.delete.label"
 msgid "Delete"
-msgstr "Zbriši"
+msgstr "Izbriši"
 
 #: mailServerLoginFailedTitle
 msgid "Login Failed"
