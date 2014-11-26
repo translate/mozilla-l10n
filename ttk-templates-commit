@@ -23,9 +23,9 @@ else
 	git add templates
 fi
 )
-git diff --quiet --cached --exit-code templates
+git diff --quiet --cached --exit-code -- templates templates-en-US
 if [ $? -ne 0 ]; then
-	git diff --cached --exit-code --name-pnly templates | egrep "\.pot$"
+	git diff --cached --exit-code --name-only -- templates | egrep "\.pot$"
 	if [ $? -eq 0 ]; then
 		git commit -m "Templates: POT update ($project)" templates templates-en-US
 		ttk-put --yes templates
