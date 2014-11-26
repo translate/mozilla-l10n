@@ -26,7 +26,7 @@
 source ttk.inc.sh
 
 opt_vc=""
-opt_build_xpi=""
+opt_build_xpi="yes"
 opt_tarball=""
 opt_compare_locales="yes"
 opt_copyfiles="yes"
@@ -120,7 +120,7 @@ PO_DIR="${base_dir}"
 L10N_DIR="${BUILD_DIR}/${L10N_VER}"
 L10N_ENUS="${PO_DIR}/templates-en-US"
 POT_DIR="${PO_DIR}/templates"
-LANGPACK_DIR="${BUILD_DIR}/xpi"
+LANGPACK_DIR="/var/www/sites/mozilla/translations/POOTLE_EXPORT"
 TARBALL_DIR="${BUILD_DIR}/tarball"
 
 if [ $opt_vc ]; then
@@ -325,9 +325,14 @@ do
 	## CREATE XPI LANGPACK
 	if [ "$opt_build_xpi" != "no" ]; then
 		if [ "$opt_build_xpi" -o "$(should_build $lang xpi)" ]; then
-			mkdir -p ${LANGPACK_DIR}
+			mkdir -p ${LANGPACK_DIR}/$project/$lang
 			verbose "Language Pack - create an XPI"
-			buildxpi.py -d -L ${L10N_DIR} -s ${MOZCENTRAL_DIR} -o ${LANGPACK_DIR} --soft-max-version ${mozlang}
+			copyfileifmissing browser/chrome/browser-region/region.properties ${mozlang}
+			copyfileifmissing browser/searchplugins/list.txt ${mozlang}
+			buildxpi.py -d -L ${L10N_DIR} -s ${MOZCENTRAL_DIR} -o ${LANGPACK_DIR}/$project/$lang --soft-max-version ${mozlang} > ${LANGPACK_DIR}/$project/$lang/langpack-build.log 2>&1
+			hg revert  $hgverbosity --no-backup \
+				browser/chrome/browser-region/region.properties \
+				browser/searchplugins/list.txt 
 		fi
 	fi
 
