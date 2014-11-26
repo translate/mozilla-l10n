@@ -187,8 +187,9 @@ if [ $opt_vc ]; then
 		mv ${PO_DIR}/en-US/$pdir/* ${L10N_ENUS}/$pdir/
 	done
 	rm -rf ${PO_DIR}/en-US
-	# Revert files that we don't want to maintain
-	for rmfile in browser/chrome/browser-region/region.properties \
+	# Remove files from template-en-US that we don't want to maintain and
+	# that we don't need for langpack building
+	for rmfile in \
 		      browser/searchplugins/list.txt \
 		      browser/searchplugins/metrolist.txt \
 		      mobile/chrome/region.properties \
@@ -208,6 +209,13 @@ if [ $opt_vc ]; then
 	(cd ${L10N_ENUS}
 	moz2po --errorlevel=$errorlevel --progress=$progress $excludes -P --duplicates=msgctxt . ${POT_DIR}
 	)
+	# Remove files that we don't want to translate, but that we need for
+	# language packs. I.e. remove the .pot but keep the source file.
+	for rmpot in \
+                      browser/chrome/browser-region/region.properties.pot
+	do
+		rm -f ${POT_DIR}/${rmpot}
+	done
 	if [ $USECPO -eq 0 ]; then
 		(cd ${POT_DIR}
 		clean_po ${PRODUCT_DIRS}
