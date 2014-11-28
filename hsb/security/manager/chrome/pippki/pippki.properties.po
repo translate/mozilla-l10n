@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2014-05-21 15:33+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1400686397.000000\n"
@@ -289,13 +289,14 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Strona, kotruž sej wobhladujeće, njeje zaklučowana."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Zwisk zaklučowany: Wysoke zaklučowanje (kluče %1$S, %2$S bitow)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
@@ -303,48 +304,26 @@ msgstr ""
 "Strona, kotruž sej wobhladujeće, bu zaklučowana, prjedy hač buchu přez "
 "internet pósłane."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "Zaklučowanje poćežuje njeawtorizowanym wosobam informacije widźeć, kotrež so "
 "mjez ličakami wuměnjeja. Je tohodla prawdźe jara njepodobne, zo je něchtó "
 "tutu stronu přečitał, hdyž je wona syć přeprěčiła."
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Zwisk zaklučowany: Niske zaklučowanje (kluče %1$S, %2$S bitow)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"Websydło %S wužiwa niske zaklučowanje za stronu, kotruž sej runje "
-"wobhladujeće."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"Niske zaklučowanje móže někotrym njeawtorizowanym ludźom dowolić, sej tute "
-"informacije wobhladać."
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "Zwisk zdźěla zaklučowany"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"Dźěle strony, kotruž sej runje wobhladujeće, njebuchu zaklučowane, prjedy "
-"hač internet přepřěčichu."
 
 #. #Cert Viewer
 #: certDetails
@@ -594,33 +573,31 @@ msgstr "Tute sydło pospytuje so z njepłaćiwymi informacijemi identifikować."
 msgid "Wrong Site"
 msgstr "Wopačne sydło"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
-"Certifikat słuša k druhemu sydłu, štož móhło na padustwo identity pokazać."
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "Zestarjene informacije"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"Certifikat tuchwilu płaćiwy njeje. Je njemóžno pruwować, hač tuta identita "
-"bu jako pokradnjena abo zhubjena zdźělena."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "Njeznata identity"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
+#, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "Certifikat dowěry hódny njeje, dokelž njeje so přez připóznatu awtoritu z "
 "pomocu wěsteje signatury přepruwował."
@@ -641,16 +618,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "Informacije so kontroluja"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "Pospytuje so, sydło identifikować…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "Žane informacije k dispoziciji"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "Njeje móžno status identifikacije za date sydło nabyć."
 
 #: addExceptionConnectionFailed
@@ -665,6 +644,45 @@ msgstr "Certifikat eksistuje"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Certifikat hižo eksistuje."
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "Zwisk zaklučowany: Wysoke zaklučowanje (kluče %1$S, %2$S bitow)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "Zwisk zaklučowany: Niske zaklučowanje (kluče %1$S, %2$S bitow)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "Websydło %S wužiwa niske zaklučowanje za stronu, kotruž sej runje "
+#~ "wobhladujeće."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "Niske zaklučowanje móže někotrym njeawtorizowanym ludźom dowolić, sej "
+#~ "tute informacije wobhladać."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "Dźěle strony, kotruž sej runje wobhladujeće, njebuchu zaklučowane, prjedy "
+#~ "hač internet přepřěčichu."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr ""
+#~ "Certifikat słuša k druhemu sydłu, štož móhło na padustwo identity pokazać."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "Certifikat tuchwilu płaćiwy njeje. Je njemóžno pruwować, hač tuta "
+#~ "identita bu jako pokradnjena abo zhubjena zdźělena."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

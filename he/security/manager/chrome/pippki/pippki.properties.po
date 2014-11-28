@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -271,53 +271,38 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "הדף בו אתה צופה אינו מוצפן."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "חיבור מוצפן: הצפנה ברמה גבוהה (%1$S, מפתחות של %2$S סיביות)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr "הדף בו אתה צופה הוצפן לפני שהועבר דרך האינטרנט."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "הצפנה מקשה מאוד על אנשים לא מורשים לצפות במידע העובר בין מחשבים. מסיבה זו "
 "אין זה סביר שמישהו קורא דף זה כאשר הוא עובר דרך הרשת."
-
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "חיבור מוצפן: הצפנה ברמה נמוכה (%1$S, מפתחות של %2$S סיביות)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr "האתר %S משתמש בהצפנה ברמה נמוכה עבור הדף בו אתה צופה."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr "הצפנה ברמה נמוכה עשויה לאפשר לאנשים לא מורשים מסוימים לצפות במידע זה."
 
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "החיבור מוצפן באופן חלקי"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
-msgstr "חלקים מהדף שאתה צופה בו לא הוצפנו לפני שהועבר דרך האינטרנט."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
+msgstr ""
 
 #. #Cert Viewer
 #: certDetails
@@ -561,31 +546,30 @@ msgstr "אתר זה מנסה לזהות את עצמו עם מידע שגוי."
 msgid "Wrong Site"
 msgstr "אתר שגוי"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
-msgstr "האישור שייך לאתר אחר, דבר שעשוי להצביע על גניבת זהות."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
+msgstr ""
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "מידע לא עדכני"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"אישור זה אינו חוקי כרגע. לא ניתן לוודא אם זהות זו דווחה כגנובה או אבודה."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr ""
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 
 #: addExceptionValidShort
@@ -602,16 +586,18 @@ msgstr "אתר זה סיפק הזדהות מאומתת וחוקית. אין צו
 msgid "Checking Information"
 msgstr "בודק מידע"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "מנסה לזהות את האתר..."
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "אין מידע זמין"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "לא ניתן לקבל מצב זהות עבור האתר שסופק."
 
 #: addExceptionConnectionFailed
@@ -627,6 +613,38 @@ msgstr "קובצי אישורים"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr ""
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "חיבור מוצפן: הצפנה ברמה גבוהה (%1$S, מפתחות של %2$S סיביות)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "חיבור מוצפן: הצפנה ברמה נמוכה (%1$S, מפתחות של %2$S סיביות)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr "האתר %S משתמש בהצפנה ברמה נמוכה עבור הדף בו אתה צופה."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "הצפנה ברמה נמוכה עשויה לאפשר לאנשים לא מורשים מסוימים לצפות במידע זה."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr "חלקים מהדף שאתה צופה בו לא הוצפנו לפני שהועבר דרך האינטרנט."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr "האישור שייך לאתר אחר, דבר שעשוי להצביע על גניבת זהות."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "אישור זה אינו חוקי כרגע. לא ניתן לוודא אם זהות זו דווחה כגנובה או אבודה."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

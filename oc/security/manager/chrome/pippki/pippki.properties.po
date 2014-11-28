@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-11-05 06:15+0000\n"
 "Last-Translator: Cédric <cvalmary@yahoo.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1383632118.000000\n"
@@ -296,61 +296,41 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "La pagina que sètz a visualizar es pas criptada."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Connexion chifrada : chiframent de naut nivèl (claus %1$S, %2$S bits)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr ""
 "La pagina que vesètz es estada chifrada abans sa transmission sus Internet."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "Lo chiframent fa fòrt dificil a las personas pas autorizadas la "
 "visualizacion de la pagina durant son transit entre ordenadors. Doncas, es "
 "fòrt improbable que qualqu'un pòsca legir aquesta pagina durant son transit "
 "sus la ret."
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Connexion chifrada : chiframent de bas nivèl (claus %1$S, %2$S bits)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"Lo site Web %S utiliza un chiframent de bas nivèl per la pagina que vesètz."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"Un chiframent de bas nivèl pòt permetre a cèrtas personas pas autorizadas de "
-"veire las donadas transmesas."
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "Connexion parcialament chifrada"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"D'unas partidas de la pagina que visionatz son pas estadas chifradas abans "
-"d'èsser transmesas sus Internet."
 
 #. #Cert Viewer
 #: certDetails
@@ -599,34 +579,31 @@ msgstr ""
 msgid "Wrong Site"
 msgstr "Sit marrit"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
-"Lo certificat aparten a un sit diferent, aquò poiriá indicar una raubariá "
-"d'identitat."
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "Entresenhas obsoletas"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"Lo certificat es pas valid actualament. Es impossible de verificar s'aquesta "
-"identitat es estada senhalada coma raubada o perduda."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "Identitat desconeguda"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
+#, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "Lo certificat es pas segur perque es pas estat verificat per una autoritat "
 "reconeguda."
@@ -647,16 +624,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "Verificacion de las entresenhas"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "Temptativa d'identificacion del sit…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "Pas d'entresenhas disponiblas"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "Impossible d'obténer l'estat d'identificacion pel sit donat."
 
 #: addExceptionConnectionFailed
@@ -671,6 +650,48 @@ msgstr "Lo certificat existís"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Lo certificat exitís ja."
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr ""
+#~ "Connexion chifrada : chiframent de naut nivèl (claus %1$S, %2$S bits)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr ""
+#~ "Connexion chifrada : chiframent de bas nivèl (claus %1$S, %2$S bits)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "Lo site Web %S utiliza un chiframent de bas nivèl per la pagina que "
+#~ "vesètz."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "Un chiframent de bas nivèl pòt permetre a cèrtas personas pas autorizadas "
+#~ "de veire las donadas transmesas."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "D'unas partidas de la pagina que visionatz son pas estadas chifradas "
+#~ "abans d'èsser transmesas sus Internet."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr ""
+#~ "Lo certificat aparten a un sit diferent, aquò poiriá indicar una raubariá "
+#~ "d'identitat."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "Lo certificat es pas valid actualament. Es impossible de verificar "
+#~ "s'aquesta identitat es estada senhalada coma raubada o perduda."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

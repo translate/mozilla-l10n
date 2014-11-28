@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 09:51+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,6 +69,8 @@ msgid "Install and Run"
 msgstr "Instal·la i executa"
 
 #: projectMenu_play_accesskey
+#, fuzzy
+msgctxt "projectMenu_play_accesskey"
 msgid "I"
 msgstr "I"
 
@@ -108,6 +110,16 @@ msgstr "Preferències"
 #: projectMenu_showPrefs_accesskey
 msgid "e"
 msgstr "f"
+
+#: projectMenu_manageComponents_label
+msgctxt "projectMenu_manageComponents_label"
+msgid "Manage Extra Components"
+msgstr ""
+
+#: projectMenu_manageComponents_accesskey
+msgctxt "projectMenu_manageComponents_accesskey"
+msgid "M"
+msgstr ""
 
 #: runtimeMenu_label
 msgid "Runtime"
@@ -166,6 +178,17 @@ msgctxt "runtimeMenu_showMonitor_accesskey"
 msgid "M"
 msgstr "S"
 
+#: runtimeMenu_showDevicePrefs_label
+#, fuzzy
+msgctxt "runtimeMenu_showDevicePrefs_label"
+msgid "Device Preferences"
+msgstr "Preferències de&l lloc"
+
+#: runtimeMenu_showDevicePrefs_accesskey
+msgctxt "runtimeMenu_showDevicePrefs_accesskey"
+msgid "D"
+msgstr ""
+
 #: viewMenu_label
 msgid "View"
 msgstr "Visualitza"
@@ -183,15 +206,32 @@ msgctxt "viewMenu_toggleEditor_accesskey"
 msgid "E"
 msgstr "M"
 
-#: viewMenu_showAddons_label
-msgctxt "viewMenu_showAddons_label"
-msgid "Manage Simulators"
-msgstr "Gestiona els simuladors"
+#: viewMenu_zoomin_label
+msgid "Zoom In"
+msgstr "Apropa"
 
-#: viewMenu_showAddons_accesskey
-msgctxt "viewMenu_showAddons_accesskey"
-msgid "M"
-msgstr "G"
+#: viewMenu_zoomin_accesskey
+msgctxt "viewMenu_zoomin_accesskey"
+msgid "I"
+msgstr ""
+
+#: viewMenu_zoomout_label
+msgid "Zoom Out"
+msgstr "Allunya"
+
+#: viewMenu_zoomout_accesskey
+msgctxt "viewMenu_zoomout_accesskey"
+msgid "O"
+msgstr ""
+
+#: viewMenu_resetzoom_label
+msgid "Reset Zoom"
+msgstr ""
+
+#: viewMenu_resetzoom_accesskey
+msgctxt "viewMenu_resetzoom_accesskey"
+msgid "R"
+msgstr ""
 
 #: projectButton_label
 msgid "Open App"
@@ -229,6 +269,23 @@ msgstr "VK_F12"
 msgid "B"
 msgstr "B"
 
+#. zoom
+#: key_zoomin
+msgid "+"
+msgstr ""
+
+#: key_zoomin2
+msgid "="
+msgstr ""
+
+#: key_zoomout
+msgid "-"
+msgstr ""
+
+#: key_resetzoom
+msgid "0"
+msgstr ""
+
 #: projectPanel_myProjects
 msgid "My Projects"
 msgstr "Els meus projectes"
@@ -241,21 +298,22 @@ msgstr "Aplicacions de temps d'execució"
 msgid "Tabs"
 msgstr "Pestanyes"
 
-#: runtimePanel_USBDevices
+#: runtimePanel_usb
 msgid "USB Devices"
 msgstr "Dispositius USB"
 
-#: runtimePanel_WiFiDevices
+#: runtimePanel_wifi
 msgid "Wi-Fi Devices"
 msgstr "Dispositius Wi-Fi"
 
-#: runtimePanel_simulators
+#: runtimePanel_simulator
 msgid "Simulators"
 msgstr "Simuladors"
 
-#: runtimePanel_custom
-msgid "Custom"
-msgstr "Personalitzat"
+#: runtimePanel_other
+#, fuzzy
+msgid "Other"
+msgstr "Altres…"
 
 #: runtimePanel_installsimulator
 msgid "Install Simulator"
@@ -348,20 +406,10 @@ msgstr "General"
 msgid "Restore Defaults"
 msgstr "Restaura els valors per defecte"
 
-#: prefs_simulators
-msgctxt "prefs_simulators"
-msgid "Manage Simulators"
-msgstr "Gestiona els simuladors"
-
-#: prefs_options_enablelocalruntime
-msgid "Enable local runtime"
-msgstr "Permet el temps d'execució local"
-
-#: prefs_options_enablelocalruntime_tooltip
-msgid "Allow WebIDE to connect to its own runtime (running browser instance)"
+#: prefs_manage_components
+msgctxt "prefs_manage_components"
+msgid "Manage Extra Components"
 msgstr ""
-"Permet que el WebIDE es connecti al seu propi temps d'execució (en la "
-"instància del navegador en execució)"
 
 #: prefs_options_rememberlastproject
 msgid "Remember last project"
@@ -472,6 +520,50 @@ msgstr "sol·licita privilegis superiors"
 msgid "(Will reboot device. Requires root access.)"
 msgstr "(Es reiniciarà el dispositiu. Cal accés de root.)"
 
+#. Device Preferences
+#: devicepreferences_title
+#, fuzzy
+msgctxt "devicepreferences_title"
+msgid "Device Preferences"
+msgstr "Preferències de&l lloc"
+
+#: devicepreferences_search
+msgid "Search preferences"
+msgstr ""
+
+#: devicepreferences_newname
+msgid "New preference name"
+msgstr ""
+
+#: devicepreferences_newtext
+#, fuzzy
+msgid "Preference value"
+msgstr "Nom de la preferència"
+
+#: devicepreferences_addnew
+msgid "Add new preference"
+msgstr ""
+
+#: devicepreferences_typeboolean
+#, fuzzy
+msgid "Boolean"
+msgstr "&Booleà"
+
+#: devicepreferences_typenumber
+#, fuzzy
+msgid "Integer"
+msgstr "Ente&r"
+
+#: devicepreferences_typestring
+#, fuzzy
+msgid "String"
+msgstr "Cad&ena"
+
+#: devicepreferences_typenone
+#, fuzzy
+msgid "Select a type"
+msgstr "Seleccioneu un fitxer"
+
 #. Monitor
 #: monitor_title
 msgctxt "monitor_title"
@@ -481,3 +573,27 @@ msgstr "Supervisa"
 #: monitor_help
 msgid "Help"
 msgstr "Ajuda"
+
+#~ msgctxt "viewMenu_showAddons_label"
+#~ msgid "Manage Simulators"
+#~ msgstr "Gestiona els simuladors"
+
+#~ msgctxt "viewMenu_showAddons_accesskey"
+#~ msgid "M"
+#~ msgstr "G"
+
+#~ msgid "Custom"
+#~ msgstr "Personalitzat"
+
+#~ msgctxt "prefs_simulators"
+#~ msgid "Manage Simulators"
+#~ msgstr "Gestiona els simuladors"
+
+#~ msgid "Enable local runtime"
+#~ msgstr "Permet el temps d'execució local"
+
+#~ msgid ""
+#~ "Allow WebIDE to connect to its own runtime (running browser instance)"
+#~ msgstr ""
+#~ "Permet que el WebIDE es connecti al seu propi temps d'execució (en la "
+#~ "instància del navegador en execució)"

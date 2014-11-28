@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-10-19 17:46+0000\n"
 "Last-Translator: Amed Çeko <amedcj@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!= 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1382204803.000000\n"
@@ -276,58 +276,39 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Rûpela ku dixwazî bibînî binasnav e."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
-"Girêdan hate şîfrekirin: Şîfrekirina asta bilind (%1$S, %2$S bit kilîl)"
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr "Rûpela ku temaşe dikî, berî ku bê vexwendin, hatnasnavkirin."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "Şîfrekirin, nahêle ku kesên 3. ku desthilatiya wan tune, danûstandinên di "
 "navbera komputeran de bibînin. Ji ber vê, ne hêsan e ku ev rûpela ku ji Torê "
 "bê şandin, ji hêla kesên din ve bê dîtin."
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Girêdan hate şîfrekirin: Şîfrekirina asta nizm (%1$S, %2$S bit kilîl)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"Malpera %S , ji bo vê rûpela ku niha temaşe dikî, nasnavkirineke astnizm "
-"bikar tîne."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr "Şîfrekirina asta nizm. Kesên din dê dikaribin van agahiyan bibînin."
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "Girêdan Qismen Şîfrekirî ye"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"Parçeya rûpela dibînî beriya li ser înternetê bê şandin nehatiye şîfrekirin."
 
 #. #Cert Viewer
 #: certDetails
@@ -571,30 +552,31 @@ msgstr "Ev malper dike ku bi agahiyên çewt xwe bide nasandin."
 msgid "Wrong Site"
 msgstr "Malpera Çewt"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
-msgstr "Sertîfîka li malpereke cuda ku nasnameyeke kin nîşan dide tê."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
+msgstr ""
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "Agahiyên Demaborî"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
-msgstr "Sertîfîka bi temamî ne çewt e. Dibe ku hatibe divîn an jî windakirin."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
+msgstr ""
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "Nasnameya nenas"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
+#, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "Ji ber ku ev belgeya erêkirinê ji hêla rayedarekî/e nas ve bi îmzeyeke "
 "pêbawer nehatiye esehîkirin, bawerî pê nayê."
@@ -614,16 +596,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "Agahiyan Raçav Dike"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "Nasnameya malperê diceribîne..."
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "Tu Agahî Nîn e"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "Ji bo vê malperê bidestxistina rewşa nasnameyê gengaz e."
 
 #: addExceptionConnectionFailed
@@ -638,6 +622,43 @@ msgstr "Sertîfîka hene"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Ev sertîfîka jixwe heye."
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr ""
+#~ "Girêdan hate şîfrekirin: Şîfrekirina asta bilind (%1$S, %2$S bit kilîl)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr ""
+#~ "Girêdan hate şîfrekirin: Şîfrekirina asta nizm (%1$S, %2$S bit kilîl)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "Malpera %S , ji bo vê rûpela ku niha temaşe dikî, nasnavkirineke astnizm "
+#~ "bikar tîne."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr "Şîfrekirina asta nizm. Kesên din dê dikaribin van agahiyan bibînin."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "Parçeya rûpela dibînî beriya li ser înternetê bê şandin nehatiye "
+#~ "şîfrekirin."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr "Sertîfîka li malpereke cuda ku nasnameyeke kin nîşan dide tê."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "Sertîfîka bi temamî ne çewt e. Dibe ku hatibe divîn an jî windakirin."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

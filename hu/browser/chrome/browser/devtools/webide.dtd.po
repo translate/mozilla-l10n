@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 09:51+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,6 +69,8 @@ msgid "Install and Run"
 msgstr "Telepítés és futtatás"
 
 #: projectMenu_play_accesskey
+#, fuzzy
+msgctxt "projectMenu_play_accesskey"
 msgid "I"
 msgstr "f"
 
@@ -108,6 +110,16 @@ msgstr "Beállítások"
 #: projectMenu_showPrefs_accesskey
 msgid "e"
 msgstr "e"
+
+#: projectMenu_manageComponents_label
+msgctxt "projectMenu_manageComponents_label"
+msgid "Manage Extra Components"
+msgstr ""
+
+#: projectMenu_manageComponents_accesskey
+msgctxt "projectMenu_manageComponents_accesskey"
+msgid "M"
+msgstr ""
 
 #: runtimeMenu_label
 msgid "Runtime"
@@ -166,6 +178,17 @@ msgctxt "runtimeMenu_showMonitor_accesskey"
 msgid "M"
 msgstr "F"
 
+#: runtimeMenu_showDevicePrefs_label
+#, fuzzy
+msgctxt "runtimeMenu_showDevicePrefs_label"
+msgid "Device Preferences"
+msgstr "&Webhely beállításai"
+
+#: runtimeMenu_showDevicePrefs_accesskey
+msgctxt "runtimeMenu_showDevicePrefs_accesskey"
+msgid "D"
+msgstr ""
+
 #: viewMenu_label
 msgid "View"
 msgstr "Nézet"
@@ -183,15 +206,32 @@ msgctxt "viewMenu_toggleEditor_accesskey"
 msgid "E"
 msgstr "S"
 
-#: viewMenu_showAddons_label
-msgctxt "viewMenu_showAddons_label"
-msgid "Manage Simulators"
-msgstr "Szimulátorok kezelése"
+#: viewMenu_zoomin_label
+msgid "Zoom In"
+msgstr "Nagyítás"
 
-#: viewMenu_showAddons_accesskey
-msgctxt "viewMenu_showAddons_accesskey"
-msgid "M"
-msgstr "M"
+#: viewMenu_zoomin_accesskey
+msgctxt "viewMenu_zoomin_accesskey"
+msgid "I"
+msgstr ""
+
+#: viewMenu_zoomout_label
+msgid "Zoom Out"
+msgstr "Kicsinyítés"
+
+#: viewMenu_zoomout_accesskey
+msgctxt "viewMenu_zoomout_accesskey"
+msgid "O"
+msgstr ""
+
+#: viewMenu_resetzoom_label
+msgid "Reset Zoom"
+msgstr ""
+
+#: viewMenu_resetzoom_accesskey
+msgctxt "viewMenu_resetzoom_accesskey"
+msgid "R"
+msgstr ""
 
 #: projectButton_label
 msgid "Open App"
@@ -229,6 +269,23 @@ msgstr "VK_F12"
 msgid "B"
 msgstr "B"
 
+#. zoom
+#: key_zoomin
+msgid "+"
+msgstr ""
+
+#: key_zoomin2
+msgid "="
+msgstr ""
+
+#: key_zoomout
+msgid "-"
+msgstr ""
+
+#: key_resetzoom
+msgid "0"
+msgstr ""
+
 #: projectPanel_myProjects
 msgid "My Projects"
 msgstr "Projektjeim"
@@ -241,21 +298,21 @@ msgstr "Futtatókörnyezet appok"
 msgid "Tabs"
 msgstr "Lapok"
 
-#: runtimePanel_USBDevices
+#: runtimePanel_usb
 msgid "USB Devices"
 msgstr "USB eszközök"
 
-#: runtimePanel_WiFiDevices
+#: runtimePanel_wifi
 msgid "Wi-Fi Devices"
 msgstr "Wi-Fi eszközök"
 
-#: runtimePanel_simulators
+#: runtimePanel_simulator
 msgid "Simulators"
 msgstr "Szimulátorok"
 
-#: runtimePanel_custom
-msgid "Custom"
-msgstr "Egyéni"
+#: runtimePanel_other
+msgid "Other"
+msgstr "Egyéb"
 
 #: runtimePanel_installsimulator
 msgid "Install Simulator"
@@ -348,19 +405,10 @@ msgstr "Általános"
 msgid "Restore Defaults"
 msgstr "Alapértelmezések visszaállítása"
 
-#: prefs_simulators
-msgctxt "prefs_simulators"
-msgid "Manage Simulators"
-msgstr "Szimulátorok kezelése"
-
-#: prefs_options_enablelocalruntime
-msgid "Enable local runtime"
-msgstr "Helyi futtatókörnyezet engedélyezése"
-
-#: prefs_options_enablelocalruntime_tooltip
-msgid "Allow WebIDE to connect to its own runtime (running browser instance)"
+#: prefs_manage_components
+msgctxt "prefs_manage_components"
+msgid "Manage Extra Components"
 msgstr ""
-"A WebIDE csatlakozhat a saját futtatókörnyezetéhez (futó böngészőpéldány)"
 
 #: prefs_options_rememberlastproject
 msgid "Remember last project"
@@ -470,6 +518,50 @@ msgstr "magasabb jogosultságok kérése"
 msgid "(Will reboot device. Requires root access.)"
 msgstr "(Újraindítja az eszközt. Root hozzáférést igényel.)"
 
+#. Device Preferences
+#: devicepreferences_title
+#, fuzzy
+msgctxt "devicepreferences_title"
+msgid "Device Preferences"
+msgstr "&Webhely beállításai"
+
+#: devicepreferences_search
+msgid "Search preferences"
+msgstr ""
+
+#: devicepreferences_newname
+msgid "New preference name"
+msgstr ""
+
+#: devicepreferences_newtext
+#, fuzzy
+msgid "Preference value"
+msgstr "Beállítás neve"
+
+#: devicepreferences_addnew
+msgid "Add new preference"
+msgstr ""
+
+#: devicepreferences_typeboolean
+#, fuzzy
+msgid "Boolean"
+msgstr "&Logikai"
+
+#: devicepreferences_typenumber
+#, fuzzy
+msgid "Integer"
+msgstr "&Egész"
+
+#: devicepreferences_typestring
+#, fuzzy
+msgid "String"
+msgstr "&Karakterlánc"
+
+#: devicepreferences_typenone
+#, fuzzy
+msgid "Select a type"
+msgstr "Válasszon fájlt"
+
 #. Monitor
 #: monitor_title
 msgctxt "monitor_title"
@@ -479,3 +571,26 @@ msgstr "Figyelés"
 #: monitor_help
 msgid "Help"
 msgstr "Súgó"
+
+#~ msgctxt "viewMenu_showAddons_label"
+#~ msgid "Manage Simulators"
+#~ msgstr "Szimulátorok kezelése"
+
+#~ msgctxt "viewMenu_showAddons_accesskey"
+#~ msgid "M"
+#~ msgstr "M"
+
+#~ msgid "Custom"
+#~ msgstr "Egyéni"
+
+#~ msgctxt "prefs_simulators"
+#~ msgid "Manage Simulators"
+#~ msgstr "Szimulátorok kezelése"
+
+#~ msgid "Enable local runtime"
+#~ msgstr "Helyi futtatókörnyezet engedélyezése"
+
+#~ msgid ""
+#~ "Allow WebIDE to connect to its own runtime (running browser instance)"
+#~ msgstr ""
+#~ "A WebIDE csatlakozhat a saját futtatókörnyezetéhez (futó böngészőpéldány)"

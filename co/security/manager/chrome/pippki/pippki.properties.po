@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-09-17 23:48+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1379461725.000000\n"
@@ -284,59 +284,40 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "A pagine visualizata ind'istu momentu ùn hè ciffrata."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr "A pagine visualizata hè stata ciffrata prima d'esse trasmessa."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "A ciffratura rende assai difficiule à ossirvà e infurmazione scambiate trà "
 "urdinatori à parsone micca autorizate. Face ch'hè pocu faciule chì calchì "
 "unu sia riisciutu à leghje u cuntinutu di sta pagine durante u so transitu "
 "attravers'à a reta."
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr ""
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr "U situ %S adopra pà a pagine visualizata una ciffratura pocu efficace."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"Una ciffratura pocu efficace pudaria parmette di leghje ste infurmazione à "
-"parsone micca autorizate."
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "Cunnissione ciffrata in parte"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"Una parte di a pagine chì si fidieghja avà ùn hè stata ciffrata durante a "
-"trasmissione annant'à internet."
 
 #. #Cert Viewer
 #: certDetails
@@ -583,34 +564,30 @@ msgstr "U situ hà cercu d'idintificassi dendu infurmazione micca valide."
 msgid "Wrong Site"
 msgstr "Situ sbagliatu"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
-"U cirtificatu appartene à un situ diffarente, què pò esse una tintativa "
-"d'arrubecciu d'idintità."
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "Infurmazione trapassate"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"U cirtificatu ùn hè più validu. Ùn si pò virificà sì l'idintità data hè "
-"stata furata o persa."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr ""
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 
 #: addExceptionValidShort
@@ -629,16 +606,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "Cuntrollu di e infurmazione"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "Tintativa d'idintificazione di u situ…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "Nisuna infurmazione dispunibule"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "Ùn si pò ottene u statu di l'idintificazione pà u situ datu."
 
 #: addExceptionConnectionFailed
@@ -654,6 +633,39 @@ msgstr "Cartulare cirtificatu"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Ci hè dighjà u cirtificatu."
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "U situ %S adopra pà a pagine visualizata una ciffratura pocu efficace."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "Una ciffratura pocu efficace pudaria parmette di leghje ste infurmazione "
+#~ "à parsone micca autorizate."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "Una parte di a pagine chì si fidieghja avà ùn hè stata ciffrata durante a "
+#~ "trasmissione annant'à internet."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr ""
+#~ "U cirtificatu appartene à un situ diffarente, què pò esse una tintativa "
+#~ "d'arrubecciu d'idintità."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "U cirtificatu ùn hè più validu. Ùn si pò virificà sì l'idintità data hè "
+#~ "stata furata o persa."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

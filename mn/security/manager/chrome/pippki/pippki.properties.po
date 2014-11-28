@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-08-25 06:51+0000\n"
 "Last-Translator: Tsolmonkhuu <alex_tsolmoo@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1377413516.000000\n"
@@ -288,15 +288,14 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Таны үзэж буй хуудас нууцлалын хувиргуур хийгдээгүй."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-#, fuzzy
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
-"Нууцлалын хувиргууртай холболт: Өндөр түвшний нууцлалын хувиргуур (%S %S бит)"
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
@@ -304,52 +303,26 @@ msgstr ""
 "Таны үзэж байгаа хуудас интернэтээр дамжуулагдахаасаа өмнө нууцлалын "
 "хувиргалт хийгдсэн байна."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
 #, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "Нууцлалын хувиргуур нь компьютерийн хооронд эрхгүй хүмүүс мэдээлэл харахад "
 "хэцүү болгодог. Тийм учраас сүлжээгээр энэ мэдээлэл дамжигдахад хүн болгон "
 "уг мэдээг уншиж чадахгүй болно."
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-#, fuzzy
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Нууцлалын хувиргууртай холболт: Бага түвшний хувиргууртай (%S %S бит)"
-
-#: pageInfo_Privacy_Weak1
-#, fuzzy
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"Таны харж буй энэ вэб хуудас %S бага түвшний нууцлалын хувиргуур хэрэглэж "
-"байна."
-
-#: pageInfo_Privacy_Weak2
-#, fuzzy
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"Бага түвшний нууцлалын хувиргуур нь зарим эрхгүй хүмүүсд энэ мэдээллийг "
-"харуулахыг зөвшөөрч магадгүй."
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "Холболт зарим хэсэгтээ нууц хувиргалт хийгдсэн"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"Таны харж буй хуудасны зарим хэсэгт интернэтээр дамжуулагдахаасаа өмнө нууц "
-"хувиргалт хийгдээгүй байна"
 
 #. #Cert Viewer
 #: certDetails
@@ -596,35 +569,31 @@ msgstr ""
 msgid "Wrong Site"
 msgstr "Буруу хуудас"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
-"Энэ гэрчилгээ нь өөр хуудсанд хамаарагддаг болохоор энэ нь таних нэрийн "
-"хулгайн хэрэг байж болзошгүй."
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "Огноо нь хэтэрсэн мэдээлэл"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"Гэрчилгээ нь одоогоор хүчингүй. Энэ гэрчилгээг алдагдсан юмуу хулгайлагдсан "
-"гэж мэдэгдсэн эсэхийг шалгах боломжгүй байна."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "Үл мэдэгдэх таних нэр"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
 #, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "Энэ гэрчилгээ нь танигдах үйлдлээр шалгагдаагүй болохоор итгэлтэй гэж "
 "танигдсангүй."
@@ -645,16 +614,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "Мэдээллийг шалгаж байна"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "Хуудсыг танихаар оролдож байна…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "Ямар ч мэдээлэл алга байна"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "Өгөгдсөн хуудсанд таних нэрийн төлвийг авах боломжгүй байна."
 
 #: addExceptionConnectionFailed
@@ -670,6 +641,53 @@ msgstr "Гэрчилгээ файл"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Гэрчилгээ өмнө нь байна"
+
+#, fuzzy
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr ""
+#~ "Нууцлалын хувиргууртай холболт: Өндөр түвшний нууцлалын хувиргуур (%S %S "
+#~ "бит)"
+
+#, fuzzy
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr ""
+#~ "Нууцлалын хувиргууртай холболт: Бага түвшний хувиргууртай (%S %S бит)"
+
+#, fuzzy
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "Таны харж буй энэ вэб хуудас %S бага түвшний нууцлалын хувиргуур хэрэглэж "
+#~ "байна."
+
+#, fuzzy
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "Бага түвшний нууцлалын хувиргуур нь зарим эрхгүй хүмүүсд энэ мэдээллийг "
+#~ "харуулахыг зөвшөөрч магадгүй."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "Таны харж буй хуудасны зарим хэсэгт интернэтээр дамжуулагдахаасаа өмнө "
+#~ "нууц хувиргалт хийгдээгүй байна"
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr ""
+#~ "Энэ гэрчилгээ нь өөр хуудсанд хамаарагддаг болохоор энэ нь таних нэрийн "
+#~ "хулгайн хэрэг байж болзошгүй."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "Гэрчилгээ нь одоогоор хүчингүй. Энэ гэрчилгээг алдагдсан юмуу "
+#~ "хулгайлагдсан гэж мэдэгдсэн эсэхийг шалгах боломжгүй байна."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

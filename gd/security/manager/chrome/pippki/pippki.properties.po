@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-09-21 18:27+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1379788052.000000\n"
@@ -310,14 +310,14 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Chan eil an duilleag a tha thu a' coimhead air air a chrioptachadh."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
-"Ceangal crioptaichte: Sàr-chrioptachadh (%1$S, iuchraichean de %2$S biod)"
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
@@ -325,50 +325,26 @@ msgstr ""
 "Chaidh an duilleag a tha thu a' coimhead air a chrioptachadh mus deach a "
 "chur a-nall thairis air an lìon."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "Bidh e doirbh do dhaoine gun ùghdarras fiosrachadh a tha a' siubhal eadar "
 "coimpiutairean fhaicinn ma chaidh a chrioptachadh. Mar sin, chan eil coltas "
 "gun leugh duine sam bith an duilleag seo 's e a' siubhal an lìonraidh."
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr ""
-"Ceangal air a chrioptachadh: Sàr-chrioptachadh (%1$S, iuchraichean de %2$S "
-"biod)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"Tha an làrach-lìn %S a' cleachdadh crioptachadh de dh'ìre ìseal airson na "
-"duilleige a tha thu a' coimhead air."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"Dh'fhaodadh gum b' urrainn do chuid de dhaoine gun ùghdarras am fiosrachadh "
-"seo fhaicinn leis an ìre ìseal de chrioptachadh seo."
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "Ceangal air a chrioptachadh gu ìre"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"Cha deach cuid dhen duilleag a tha thu a' coimhead air a chrioptachadh mus "
-"deach a chur a-nall thairis air an lìon."
 
 #. #Cert Viewer
 #: certDetails
@@ -626,35 +602,31 @@ msgstr ""
 msgid "Wrong Site"
 msgstr "Làrach mhì-cheart"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
-"'S ann le làrach eile a tha an teisteanas, rud a dh'fhaodadh a bhith 'na "
-"chomharra air goid dearbh-aithne."
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "Fiosrachadh ro aosta"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"Chan eil an teisteanas èifeachdach aig an àm seo. Cha ghabh a dhearbhadh an "
-"deach aithris a dhèanamh gur e dearbh-aithne air a ghoid no air a chall a "
-"tha ann."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "Dearbh-aithne neo-aithnichte"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
+#, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "Chan eil earbsa san teisteanas a chionn 's nach deach a dhearbhadh le "
 "ùghdarras aithnichte le soidhneadh tèarainte."
@@ -675,16 +647,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "A' sgrùdadh an fhiosrachaidh"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "A' feuchainn ris an làrach aithneachadh…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "Chan eil fiosrachadh ri fhaighinn"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr ""
 "Cha ghabh inbhe na dearbh-aithne fhaighinn airson na làraich a chaidh a "
 "shònrachadh."
@@ -701,6 +675,50 @@ msgstr "Tha teisteanais ann"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Tha an teisteanas seo ann mu thràth."
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr ""
+#~ "Ceangal crioptaichte: Sàr-chrioptachadh (%1$S, iuchraichean de %2$S biod)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr ""
+#~ "Ceangal air a chrioptachadh: Sàr-chrioptachadh (%1$S, iuchraichean de "
+#~ "%2$S biod)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "Tha an làrach-lìn %S a' cleachdadh crioptachadh de dh'ìre ìseal airson na "
+#~ "duilleige a tha thu a' coimhead air."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "Dh'fhaodadh gum b' urrainn do chuid de dhaoine gun ùghdarras am "
+#~ "fiosrachadh seo fhaicinn leis an ìre ìseal de chrioptachadh seo."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "Cha deach cuid dhen duilleag a tha thu a' coimhead air a chrioptachadh "
+#~ "mus deach a chur a-nall thairis air an lìon."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr ""
+#~ "'S ann le làrach eile a tha an teisteanas, rud a dh'fhaodadh a bhith 'na "
+#~ "chomharra air goid dearbh-aithne."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "Chan eil an teisteanas èifeachdach aig an àm seo. Cha ghabh a dhearbhadh "
+#~ "an deach aithris a dhèanamh gur e dearbh-aithne air a ghoid no air a "
+#~ "chall a tha ann."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

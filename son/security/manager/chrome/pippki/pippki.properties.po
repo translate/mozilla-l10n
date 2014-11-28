@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-09-20 21:43+0000\n"
 "Last-Translator: Mohomodou  <mh@bollag-areal.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1379713423.000000\n"
@@ -286,58 +286,40 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Moɲoo kaŋ war g'a guna si hin ka tugandi."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Ciyari tugante: tuguyan sahãnte (hanti %1$S, %2$S)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr ""
 "Moɲoo kaŋ war g'a guna mana tugandi jina hal'a ma toonandi Interneti bande."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "Tuguyanoo g'a šendandi borey kaŋ ši nda fondo še, i ma dii alhabar kaŋ ga "
 "bisa ordinaterey game. Adiši, a ši hima, boro kul ma hin ka moɲoo woo caw "
 "waati kaŋ a ga bisa sankaa ra."
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Ciyari tugante: Tuguyan faalante (hanti %1$S, %2$S)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"Interneti nungoo %S ga goy nda tuguyan faala moɲoo kaŋ war g'a guna še."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"Tuguyan faala ga hin ka too borey kaŋ ši nda fondo ma dii alhabaroo woo."
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "Ciyari jere tugante"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"Moɲoo jerey kaŋ war g'i guna mana tugandi jina ka bisandi Interneti bande."
 
 #. #Cert Viewer
 #: certDetails
@@ -586,33 +568,31 @@ msgstr "Nungoo woo ka ceeci ka nga boŋ tammaasa nda alhabar laala."
 msgid "Wrong Site"
 msgstr "Nungu laala."
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
-"tabatiyan-tiira ti nungu waani foo wane, a ga hin ka cebe boŋtammaasa zayyan."
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "Alhabar žeena"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"Tabatiyan-tiiraa ši boori koyne sohõda. Boro ši hin ka cimandi wala "
-"boŋtammaasaa woo bayrandi ka tee a n'ka zaytarandi wala ka dere."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "Boŋtammaasa šibayante"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
+#, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "Tabatiyan-tiira manti naanante zama hini bayrante kul mana hin k'a koroši "
 "nda silbay saajante."
@@ -633,16 +613,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "Goo m'alhabar guna"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "Goo ma ceeci ka dii nungoo tammaasaa…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "Alhabar kul ši bara"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "Mana hin ka duu boŋtammaasa assariya nungu noontaa še."
 
 #: addExceptionConnectionFailed
@@ -657,6 +639,43 @@ msgstr "Tabatiyan-tiira goo"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Tabatiyan-tiiraa woo ga bara."
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "Ciyari tugante: tuguyan sahãnte (hanti %1$S, %2$S)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "Ciyari tugante: Tuguyan faalante (hanti %1$S, %2$S)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "Interneti nungoo %S ga goy nda tuguyan faala moɲoo kaŋ war g'a guna še."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "Tuguyan faala ga hin ka too borey kaŋ ši nda fondo ma dii alhabaroo woo."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "Moɲoo jerey kaŋ war g'i guna mana tugandi jina ka bisandi Interneti bande."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr ""
+#~ "tabatiyan-tiira ti nungu waani foo wane, a ga hin ka cebe boŋtammaasa "
+#~ "zayyan."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "Tabatiyan-tiiraa ši boori koyne sohõda. Boro ši hin ka cimandi wala "
+#~ "boŋtammaasaa woo bayrandi ka tee a n'ka zaytarandi wala ka dere."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

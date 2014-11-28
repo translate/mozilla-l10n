@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2014-04-20 08:03+0000\n"
 "Last-Translator: Khaled <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -274,54 +274,38 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "الصّفحة التي تعرضها غير مُعمّاة."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "الاتصال معمّى: تعمية عالية المستوى (%1$S، المفتاح %2$S بت)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr "عُمِّيت الصّفحة التي تعرضها قبل إرسالها عبر الإنترنت."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "تصعّب التعمية بشكل كبير اطلاع غير المخوّلين على المعلومات المرسلة بين "
 "الحواسيب. من غير المحتمل أنّ شخصًا ما يقرأ هذه الصّفحة بينما تنتقل عبر الشّبكة."
-
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "الاتصال معمّى: تعمية ضعيفة المستوى (%1$S، المفتاح %2$S بت)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr "يستخدم موقع الوِب %S تعمية منخفضة المستوى للصفحة التي تعرضها."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"قد تسمح التعمية منخفضة المستوى لبعض الأشخاص غير المخوّلين بعرض المعلومات."
 
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "الاتّصال مُعمّى جزئيّا"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
-msgstr "أجزاء من الصّفحة التي تعرضها لم تُعمّى قبل إرسالها عبر الإنترنت."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
+msgstr ""
 
 #. #Cert Viewer
 #: certDetails
@@ -564,32 +548,31 @@ msgstr "يحاول هذا الموقع تعريف نفسه بمعلومات غي
 msgid "Wrong Site"
 msgstr "الموقع الخطأ"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
-msgstr "تخص الشهادة موقعا مختلفا، مما قد يشير إلى سرقة هويّة."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
+msgstr ""
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "معلومات قديمة"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"الشهادة ليست صالحة حاليا. من غير الممكن التحقق إذا كان أُبلِغ عن سرقة هذه "
-"الهوية أم لا."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "هويّة مجهولة"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
+#, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "الشهادة ليست موثوقة، لأنه لم تتحقق منها سلطة معروفة تستخدم توقيعًا آمنًا."
 
@@ -607,16 +590,18 @@ msgstr "يعطي هذا الموقع شهادة صالحة، وهوية موثّ
 msgid "Checking Information"
 msgstr "يفحص المعلومات"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "يحاول التعرف على الموقع…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "لا توجد معلومات"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "تعذّر الحصول على حالة التعرف على الموقع المحدد."
 
 #: addExceptionConnectionFailed
@@ -631,6 +616,39 @@ msgstr "الشّهادة موجودة"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "هذه الشّهادة موجودة."
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "الاتصال معمّى: تعمية عالية المستوى (%1$S، المفتاح %2$S بت)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "الاتصال معمّى: تعمية ضعيفة المستوى (%1$S، المفتاح %2$S بت)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr "يستخدم موقع الوِب %S تعمية منخفضة المستوى للصفحة التي تعرضها."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "قد تسمح التعمية منخفضة المستوى لبعض الأشخاص غير المخوّلين بعرض المعلومات."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr "أجزاء من الصّفحة التي تعرضها لم تُعمّى قبل إرسالها عبر الإنترنت."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr "تخص الشهادة موقعا مختلفا، مما قد يشير إلى سرقة هويّة."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "الشهادة ليست صالحة حاليا. من غير الممكن التحقق إذا كان أُبلِغ عن سرقة هذه "
+#~ "الهوية أم لا."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

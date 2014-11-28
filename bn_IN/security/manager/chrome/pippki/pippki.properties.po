@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-11-01 07:04+0000\n"
 "Last-Translator: Biraj <brnet00@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1383289492.000000\n"
@@ -283,13 +283,14 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "আপনার সামনে প্রস্তুত করা পৃষ্ঠাটি এনক্রিপ্ট করা হয়নি।"
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "এনক্রিপ্ট করা সংযোগ: উচ্চক্ষমতাসম্পন্ন এনক্রিপশন (%1$S, %2$S বিট কি)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
@@ -297,48 +298,26 @@ msgstr ""
 "ইন্টারনেটের মাধ্যমে প্রেরণ করার পূর্বে, আপনার সামনে প্রদর্শিত পৃষ্ঠাটি এনক্রিপ্ট করা "
 "হয়েছিল।"
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "এনক্রিপশন ব্যবহারের ফলে বিভিন্ন কম্পিউটারের মধ্যে বিনিময় হওয়া তথ্য কোনো তৃতীয় "
 "ব্যক্তির দ্বারা অন্যায্যভাবে পাঠ করা কঠিন। এই কারণে নেটওয়ার্কে যাত্রাকালে সম্ভববত এই "
 "পৃষ্ঠাটি কারও দ্বারা পড়া হয়নি।"
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "এনক্রিপ্ট করা সংযোগ: নিম্নক্ষমতাসম্পন্ন এনক্রিপশন (%1$S, %2$S বিট কি)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"%S ওয়েব-সাইটের দ্বারা আপনার সামনে প্রদর্শিত পৃষ্ঠার জন্য নিম্ন-মানের এনক্রপিশন "
-"ব্যবহার করা হয়েছে।"
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"নিম্ন-মানের এনক্রিপশন ব্যবহার করা হলে কিছু তৃতীয় ব্যক্তিরা অন্যায্যরূপে এই তথ্য পড়তে "
-"সক্ষম হবেন।"
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "সংযোগ আংশিকরূপে এনক্রপিট করা"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"ইন্টারনেটের মাধ্যমে প্রেরণ করার পূর্বে, প্রদর্শিত পৃষ্ঠার কিছু অংশবিশেষ এনক্রিপ্ট করা "
-"হয়নি।"
 
 #. #Cert Viewer
 #: certDetails
@@ -589,34 +568,31 @@ msgstr "এই সাইট দ্বারা অবৈধ তথ্য সহ�
 msgid "Wrong Site"
 msgstr "সাইট সঠিক নয়"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
-"সার্টিফিকেট একটি ভিন্ন সাইটের ক্ষেত্রে প্রযোজ্য। সম্ভবত পরিচয় অপহরণের প্রচেষ্টা করা "
-"হয়েছে।"
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "মেয়াদোত্তীর্ণের তথ্য"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"এই সার্টিফিকেট বর্তমানে বৈধ নয়। পরিচয় সংক্রান্ত এই তথ্য হারিয়ে যাওয়া অথবা অপহরণ "
-"করা হয়েছিল কিনা তা বলা সম্ভব নয়।"
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "অজানা পরিচয়"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
+#, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "পরিচিত সার্টিফিকেট অথোরিটি দ্বারা নিরাপদ স্বাক্ষর সহ পরীক্ষিত না হওয়ার ফলে এই "
 "সার্টিফিকেটটি বিশ্বস্ত নয়।"
@@ -637,16 +613,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "তথ্য পরীক্ষা করা হচ্ছে"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "সাইটের পরিচয় নির্ধারণের প্রচেষ্টা করা হচ্ছে…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "কোনো তথ্য উপলব্ধ নেই"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "চিহ্নিত সাইটের পরিচয় নির্ধারণের অবস্থা সম্পর্কে তথ্য প্রাপ্ত করতে ব্যর্থ।"
 
 #: addExceptionConnectionFailed
@@ -661,6 +639,46 @@ msgstr "সার্টিফিকেট ফাইল"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "সার্টিফিকেট বর্তমানে উপস্থিত রয়েছে।"
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "এনক্রিপ্ট করা সংযোগ: উচ্চক্ষমতাসম্পন্ন এনক্রিপশন (%1$S, %2$S বিট কি)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "এনক্রিপ্ট করা সংযোগ: নিম্নক্ষমতাসম্পন্ন এনক্রিপশন (%1$S, %2$S বিট কি)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "%S ওয়েব-সাইটের দ্বারা আপনার সামনে প্রদর্শিত পৃষ্ঠার জন্য নিম্ন-মানের এনক্রপিশন "
+#~ "ব্যবহার করা হয়েছে।"
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "নিম্ন-মানের এনক্রিপশন ব্যবহার করা হলে কিছু তৃতীয় ব্যক্তিরা অন্যায্যরূপে এই তথ্য পড়তে "
+#~ "সক্ষম হবেন।"
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "ইন্টারনেটের মাধ্যমে প্রেরণ করার পূর্বে, প্রদর্শিত পৃষ্ঠার কিছু অংশবিশেষ এনক্রিপ্ট করা "
+#~ "হয়নি।"
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr ""
+#~ "সার্টিফিকেট একটি ভিন্ন সাইটের ক্ষেত্রে প্রযোজ্য। সম্ভবত পরিচয় অপহরণের প্রচেষ্টা "
+#~ "করা হয়েছে।"
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "এই সার্টিফিকেট বর্তমানে বৈধ নয়। পরিচয় সংক্রান্ত এই তথ্য হারিয়ে যাওয়া অথবা "
+#~ "অপহরণ করা হয়েছিল কিনা তা বলা সম্ভব নয়।"
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

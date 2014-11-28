@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-09-06 22:08+0000\n"
 "Last-Translator: Dwayne Bailey <dwayne@translate.org.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1378505291.000000\n"
@@ -300,67 +300,40 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Tsebe e o e lebeletseng ga e a sirelediwa."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-#, fuzzy
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
-"Kgolagano e Sireleditswe: Mokgwatshireletso wa Maemo a a kwa Godimo (%S %S "
-"bit)"
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr "Tsebe e o e lebileng e sireleditswe pele ga e ka romelwa ka Inthanete."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "Mokgwatshireletso o dira gore go nne boima gore batho ba ba se nang "
 "tetlelelo ba lebe tshedimosetso e e tsamayang magareng ga dikhomphiutara. Ka "
 "jalo ga gona kgonagalo e e kalo ya gore go mongwe yo o buisitseng tsebe eno "
 "fa e ne ele motseleng go ralala letloatiro."
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-#, fuzzy
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr ""
-"Kgolagano e Sireleditswe: Mokgwatshireletso wa Maemo a a kwa Tlase (%S %S "
-"bit)"
-
-#: pageInfo_Privacy_Weak1
-#, fuzzy
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"Setsha sa inthanete sa %S se dirisa mokgwatshireletso wa maemo a a kwa tlase "
-"mo tsebeng e o e lebeletseng."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"Mokgwatshireletso wa maemo a a kwa tlase o ka letlelela batho bangwe ba ba "
-"senang tetla go leba tshedimosetso eno."
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr ""
 
-#: pageInfo_Privacy_Mixed1
-#, fuzzy
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
-msgstr "Tsebe e o e lebileng e sireleditswe pele ga e ka romelwa ka Inthanete."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
+msgstr ""
 
 #. #Cert Viewer
 #: certDetails
@@ -611,30 +584,30 @@ msgstr ""
 msgid "Wrong Site"
 msgstr ""
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr ""
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr ""
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 
 #: addExceptionValidShort
@@ -652,16 +625,16 @@ msgstr ""
 msgid "Checking Information"
 msgstr "Tshedimosetso ya Laesense"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+msgid "Attempting to identify this site…"
 msgstr ""
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr ""
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+msgid "Unable to obtain identification status for this site."
 msgstr ""
 
 #: addExceptionConnectionFailed
@@ -677,6 +650,39 @@ msgstr "Difaele tsa Lenaane"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Setifikeiti se setse se le Gona."
+
+#, fuzzy
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr ""
+#~ "Kgolagano e Sireleditswe: Mokgwatshireletso wa Maemo a a kwa Godimo (%S "
+#~ "%S bit)"
+
+#, fuzzy
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr ""
+#~ "Kgolagano e Sireleditswe: Mokgwatshireletso wa Maemo a a kwa Tlase (%S %S "
+#~ "bit)"
+
+#, fuzzy
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "Setsha sa inthanete sa %S se dirisa mokgwatshireletso wa maemo a a kwa "
+#~ "tlase mo tsebeng e o e lebeletseng."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "Mokgwatshireletso wa maemo a a kwa tlase o ka letlelela batho bangwe ba "
+#~ "ba senang tetla go leba tshedimosetso eno."
+
+#, fuzzy
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "Tsebe e o e lebileng e sireleditswe pele ga e ka romelwa ka Inthanete."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

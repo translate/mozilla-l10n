@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pippki\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-12-12 08:58+0000\n"
 "Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1386838736.000000\n"
@@ -281,57 +281,39 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "سىز كۆرۈۋاتقان بەت شىفىرلانمىغان."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "ئۇلىنىش شىفىرلانغان: ئالىي دەرىجىلىك شىفىرلاش (%1$S, %2$S bit keys)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr "سىز كۆرۈۋاتقان بەت ئىنتېرنېتقا يوللىنىشتىن ئىلگىرىلا شىفىرلانغان."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "شىفىرلاش ئىجازەت بېرىلمىگەن كىشىلەرنىڭ كومپيۇتېرلار ئارىسىدىكى ساياھەت "
 "ئۇچۇرلىرىنى كۆرۈشى ئىنتايىن قىيىنغا توختايدۇ. شۇڭا بۇ بەت توردا يوللانغاندا "
 "باشقىلار تەرىپىدىن كۆرۈلۈشى ئانچە مۇمكىن ئەمەس."
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "ئۇلىنىش شىفىرلانغان: تۆۋەن دەرىجىلىك شىفىر (%1$S, %2$S bit keys)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"%S بۇ تور بېكەت ئاجىز شىفىرلاش ئارقىلىق سىز كۆرۈۋاتقان بەتنى شىفىرلىغان."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"ئاجىز شىفىرلاشتا بەزى ھوقۇق بېرىلمىگەن كىشىلەر بۇ بەتنى كۆرەلىشى مۇمكىن."
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "ئۇلىنىش قىسمەن شىفىرلاندى"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"سىز كۆرۈۋاتقان بەتنىڭ قىسمەن مەزمۇنى ئىنتېرنېتتا يوللانغاندا شىفىرلانمىغان."
 
 #. #Cert Viewer
 #: certDetails
@@ -577,33 +559,31 @@ msgstr "بۇ بېكەت ئىناۋەتسىز ئۇچۇر بىلەن ئۆزىنى 
 msgid "Wrong Site"
 msgstr "خاتا بېكەت"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
-"گۇۋاھنامە باشقا بىر بېكەتكە تەۋە، ئۇنىڭ بەلگىسى ئوغرىلانغان بولۇشى مۇمكىن."
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "ۋاقتى ئۆتكەن ئۇچۇر"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"نۆۋەتتە گۇۋاھنامە ئىناۋەتسىز. ھازىر بۇ بەلگىنىڭ ئوغرىلانغان ياكى "
-"يوقالغانلىقىنى دەلىللىگىلى بولمايدۇ."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "نامەلۇم بەلگە"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
+#, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "گۇۋاھنامە ئىشەنچسىز چۈنكى ئۇ سالاھىيىتى دەلىللەنگەن بىر تارقاتقۇچى تەرىپىدىن "
 "رەقەملىك ئىمزا ئارقىلىق جەزملەنمىگەن."
@@ -624,16 +604,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "ئۇچۇر تەكشۈرۈۋاتىدۇ"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "بۇ بېكەتنى ئىپادىلەۋاتىدۇ…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "ئىشلىتىشكە بولىدىغان ئۇچۇر يوق"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "بېرىلگەن بېكەتنىڭ بەلگە ھالىتىگە ئېرىشكىلى بولمىدى"
 
 #: addExceptionConnectionFailed
@@ -648,6 +630,43 @@ msgstr "گۇۋاھنامە مەۋجۇد"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "بۇ گۇۋاھنامە مەۋجۇد"
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "ئۇلىنىش شىفىرلانغان: ئالىي دەرىجىلىك شىفىرلاش (%1$S, %2$S bit keys)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "ئۇلىنىش شىفىرلانغان: تۆۋەن دەرىجىلىك شىفىر (%1$S, %2$S bit keys)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "%S بۇ تور بېكەت ئاجىز شىفىرلاش ئارقىلىق سىز كۆرۈۋاتقان بەتنى شىفىرلىغان."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "ئاجىز شىفىرلاشتا بەزى ھوقۇق بېرىلمىگەن كىشىلەر بۇ بەتنى كۆرەلىشى مۇمكىن."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "سىز كۆرۈۋاتقان بەتنىڭ قىسمەن مەزمۇنى ئىنتېرنېتتا يوللانغاندا "
+#~ "شىفىرلانمىغان."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr ""
+#~ "گۇۋاھنامە باشقا بىر بېكەتكە تەۋە، ئۇنىڭ بەلگىسى ئوغرىلانغان بولۇشى مۇمكىن."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "نۆۋەتتە گۇۋاھنامە ئىناۋەتسىز. ھازىر بۇ بەلگىنىڭ ئوغرىلانغان ياكى "
+#~ "يوقالغانلىقىنى دەلىللىگىلى بولمايدۇ."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"
