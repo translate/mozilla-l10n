@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 14:54+0000\n"
+"POT-Creation-Date: 2014-11-28 20:23+0000\n"
 "PO-Revision-Date: 2014-09-05 08:49+0000\n"
 "Last-Translator: Mahrazi Mohd Kamal <mahrazi@gmail.com>\n"
 "Language-Team: none\n"
@@ -560,21 +560,13 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "Dilumpuhkan"
 
-#: pref_donottrack_menu
-msgid "Tracking"
-msgstr "Penjejakan"
+#: pref_donottrack_title
+msgid "Do not track"
+msgstr ""
 
-#: pref_donottrack_disallow_tracking
-msgid "Tell sites that I do not want to be tracked"
-msgstr "Beritahu laman yang saya tidak mahu dijejaki"
-
-#: pref_donottrack_allow_tracking
-msgid "Tell sites that I want to be tracked"
-msgstr "Beritahu laman yang saya mahu dijejaki"
-
-#: pref_donottrack_no_pref
-msgid "Do not tell sites anything about my tracking preferences"
-msgstr "Jangan beritahu laman mengenai sebarang keutamaan penjejakan saya"
+#: pref_donottrack_summary
+msgid "&brandShortName; will tell sites that you do not want to be tracked"
+msgstr ""
 
 #: pref_char_encoding
 msgid "Character encoding"
@@ -699,6 +691,14 @@ msgstr ""
 "untung, kami bebas untuk melakukan pembaharuan bagi pihak anda tanpa "
 "sebarang tekanan untuk berkompromi. Ini bermakna pengalaman yang lebih baik "
 "untuk anda dan masa depan yang lebih cerah untuk Web."
+
+#: pref_media_autoplay_enabled
+msgid "Allow autoplay"
+msgstr ""
+
+#: pref_media_autoplay_enabled_summary
+msgid "Control if websites can autoplay videos and other media content"
+msgstr ""
 
 #: pref_use_master_password
 msgid "Use master password"
@@ -1191,13 +1191,20 @@ msgstr "Tiada tetapan untuk dibersihkan."
 msgid "Page added to your Reading List"
 msgstr "Laman ditambah ke Senarai Pembacaan anda"
 
-#: reading_list_failed
-msgid "Failed to add page to your Reading List"
-msgstr "Gagal untuk menambah halaman ke Senarai Pembacaan anda"
-
 #: reading_list_duplicate
 msgid "Page already in your Reading List"
 msgstr "Halaman telah sedia ada di Senarai Pembacaan anda"
+
+#. Localization note (reading_list_time_minutes2) : This string is used in the "Reading List"
+#. panel on the home page to give the user an estimate of how many minutes it will take to
+#. read an article. The word "minute" should be abbreviated if possible.
+#: reading_list_time_minutes2
+msgid "&formatD; min"
+msgstr ""
+
+#: reading_list_time_over_an_hour
+msgid "Over an hour"
+msgstr ""
 
 #. Localization note : These strings are used as alternate text for accessibility.
 #. They are not visible in the UI.
@@ -1262,6 +1269,12 @@ msgstr "Laman Web Popular"
 msgid "Add a site"
 msgstr "Tambah sebuah laman"
 
+#. Localization note (home_title): This string should be kept in sync
+#. with the page title defined in aboutHome.dtd
+#: home_title
+msgid "&brandShortName; Home"
+msgstr "&brandShortName; Utama"
+
 #: home_history_title
 msgctxt "home_history_title"
 msgid "History"
@@ -1299,6 +1312,13 @@ msgstr "Buka semua"
 msgid "Websites you visited most recently show up here."
 msgstr ""
 "Laman web yang kerap anda lawati baru-baru ini akan dipaparkan di sini."
+
+#. Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
+#. The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining.
+#: home_most_recent_emptyhint2
+msgid ""
+"Psst: using a &formatS1;New Private Tab&formatS2; won't save your history."
+msgstr ""
 
 #: home_reading_list_empty
 msgid "Articles you save for later show up here."
@@ -1457,6 +1477,14 @@ msgstr "Anda telah disambungkan ke"
 msgid "which is run by"
 msgstr "yang dijalankan oleh"
 
+#: identity_no_info
+msgid "This website does not supply identity information."
+msgstr "This web site does not supply identity information."
+
+#: identity_not_encrypted
+msgid "Your connection to this website is not encrypted."
+msgstr "Your connection to this web site is not encrypted."
+
 #. Mixed content notifications in site identity popup
 #: loaded_mixed_content_message
 msgid "This page is displaying content that isn't secure."
@@ -1473,6 +1501,24 @@ msgstr ""
 "Kebanyakan laman web akan masih berfungsi dengan baik walaupun kandungan ini "
 "disekat."
 
+#. Tracking content notifications in site identity popup
+#: loaded_tracking_content_message_top
+msgid "Tracking protection disabled."
+msgstr ""
+
+#: loaded_tracking_content_message_bottom
+msgid "Parts of this page may track your online activity."
+msgstr ""
+
+#: blocked_tracking_content_message_top2
+msgid "Tracking protection enabled."
+msgstr ""
+
+#: blocked_tracking_content_message_bottom2
+msgid "Parts of the page that track your online activity have been blocked."
+msgstr ""
+
+#. Common mixed and tracking content strings in site identity popup
 #: learn_more
 msgid "Learn More"
 msgstr "Ketahui Lanjut"
@@ -1547,10 +1593,6 @@ msgstr "App"
 #: searchable_description
 msgid "Bookmarks and history"
 msgstr "Penandabuku dan sejarah"
-
-#: devtools_remote_debugging_forward
-msgid "Don't forget to set up port forwarding!"
-msgstr "Jangan lupa untuk menetapkan port teraju!"
 
 #. Updater notifications
 #: updater_start_title2
@@ -1660,7 +1702,7 @@ msgstr "…"
 msgid ":"
 msgstr ":"
 
-#. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
+#. These are only used for accessibility for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
 msgctxt "actionbar_menu"
@@ -1680,6 +1722,31 @@ msgstr "Selesai"
 #: remote_tabs_last_synced
 msgid "Last synced: &formatS;"
 msgstr "Terakhir disync: &formatS;"
+
+#. Find-In-Page strings
+#. This is meant to appear as an icon that changes color
+#. if match-case is activated. i.e. No more than two letters, one uppercase, one lowercase.
+#: find_matchcase
+msgid "Aa"
+msgstr "Aa"
+
+#~ msgid "Tracking"
+#~ msgstr "Penjejakan"
+
+#~ msgid "Tell sites that I do not want to be tracked"
+#~ msgstr "Beritahu laman yang saya tidak mahu dijejaki"
+
+#~ msgid "Tell sites that I want to be tracked"
+#~ msgstr "Beritahu laman yang saya mahu dijejaki"
+
+#~ msgid "Do not tell sites anything about my tracking preferences"
+#~ msgstr "Jangan beritahu laman mengenai sebarang keutamaan penjejakan saya"
+
+#~ msgid "Failed to add page to your Reading List"
+#~ msgstr "Gagal untuk menambah halaman ke Senarai Pembacaan anda"
+
+#~ msgid "Don't forget to set up port forwarding!"
+#~ msgstr "Jangan lupa untuk menetapkan port teraju!"
 
 #~ msgid "Always clear when quitting"
 #~ msgstr "Sentiasa padam semasa keluar"

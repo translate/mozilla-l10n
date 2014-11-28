@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 14:54+0000\n"
+"POT-Creation-Date: 2014-11-28 20:23+0000\n"
 "PO-Revision-Date: 2014-10-29 10:08+0000\n"
 "Last-Translator: Arun Kumar <thangam.arunx@gmail.com>\n"
 "Language-Team: none\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1414577280.000000\n"
@@ -558,21 +558,13 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "முடக்கப்பட்டது"
 
-#: pref_donottrack_menu
-msgid "Tracking"
-msgstr "கண்காணிப்பு"
+#: pref_donottrack_title
+msgid "Do not track"
+msgstr ""
 
-#: pref_donottrack_disallow_tracking
-msgid "Tell sites that I do not want to be tracked"
-msgstr "நான் கண்காணிக்கப்படுவதை விரும்பவில்லை என்று வலைதளங்களிடம் கூறவும்"
-
-#: pref_donottrack_allow_tracking
-msgid "Tell sites that I want to be tracked"
-msgstr "நான் கண்காணிக்கப்படுவதை விரும்புகிறேன் என்று வலைதளங்களிடம் கூறவும்"
-
-#: pref_donottrack_no_pref
-msgid "Do not tell sites anything about my tracking preferences"
-msgstr "என்னுடைய கண்காணிப்பு விருப்ப முன்னுரிமைகளை வலைதளங்களிடம் சொல்ல வேண்டாம்"
+#: pref_donottrack_summary
+msgid "&brandShortName; will tell sites that you do not want to be tracked"
+msgstr ""
 
 #: pref_char_encoding
 msgid "Character encoding"
@@ -697,6 +689,14 @@ msgstr ""
 "சமரசமும் அழுத்தமும் இல்லாமல் உங்கள் சார்பாக கட்டற்று புத்தாக்கத்தை உருவாக்க இருக்கிறோம். "
 "அப்படி என்றால் உங்களுக்கு நல்லதொரு அனுபவம் மற்றும் இணையத்திற்கு ஒளிமையமான எதிர்காலமும் "
 "எனலாம்."
+
+#: pref_media_autoplay_enabled
+msgid "Allow autoplay"
+msgstr ""
+
+#: pref_media_autoplay_enabled_summary
+msgid "Control if websites can autoplay videos and other media content"
+msgstr ""
 
 #: pref_use_master_password
 msgid "Use master password"
@@ -1188,13 +1188,20 @@ msgstr "நீக்க எந்த அமைப்புகளும் இல
 msgid "Page added to your Reading List"
 msgstr "இப்பக்கம் உங்கள் வாசிப்பு பட்டியலில் சேர்க்கப்பட்டுள்ளது"
 
-#: reading_list_failed
-msgid "Failed to add page to your Reading List"
-msgstr "உங்கள் வாசிப்பு பட்டியலில் பக்கத்தைச் சேர்க்கமுடியவில்லை"
-
 #: reading_list_duplicate
 msgid "Page already in your Reading List"
 msgstr "இப்பக்கம் உங்கள் வாசிப்பு பட்டியலில் ஏற்கனவே உள்ளது"
+
+#. Localization note (reading_list_time_minutes2) : This string is used in the "Reading List"
+#. panel on the home page to give the user an estimate of how many minutes it will take to
+#. read an article. The word "minute" should be abbreviated if possible.
+#: reading_list_time_minutes2
+msgid "&formatD; min"
+msgstr ""
+
+#: reading_list_time_over_an_hour
+msgid "Over an hour"
+msgstr ""
 
 #. Localization note : These strings are used as alternate text for accessibility.
 #. They are not visible in the UI.
@@ -1259,6 +1266,13 @@ msgstr "அடிக்கடி பார்த்த இணையத்தள�
 msgid "Add a site"
 msgstr "ஒரு இணையத்தளத்தை சேர்"
 
+#. Localization note (home_title): This string should be kept in sync
+#. with the page title defined in aboutHome.dtd
+#: home_title
+#, fuzzy
+msgid "&brandShortName; Home"
+msgstr "&brandShortName;ஐ விட்டு வெளியேறு"
+
 #: home_history_title
 msgctxt "home_history_title"
 msgid "History"
@@ -1295,6 +1309,13 @@ msgstr "அனைத்தையும் திற"
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
 msgstr "நீங்கள் அண்மையில் பார்த்த இணையத்தளங்கள் இங்கே காண்பிக்கப்படும்."
+
+#. Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
+#. The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining.
+#: home_most_recent_emptyhint2
+msgid ""
+"Psst: using a &formatS1;New Private Tab&formatS2; won't save your history."
+msgstr ""
 
 #: home_reading_list_empty
 msgid "Articles you save for later show up here."
@@ -1455,6 +1476,14 @@ msgstr "நீங்கள் இதனுடன் இணைக்கப்ப�
 msgid "which is run by"
 msgstr "இதுவால் இயக்கப்படுகிறது"
 
+#: identity_no_info
+msgid "This website does not supply identity information."
+msgstr "இந்த இணைய தளம் அடையாள விவரங்களை கொடுக்கவில்லை."
+
+#: identity_not_encrypted
+msgid "Your connection to this website is not encrypted."
+msgstr "இந்த இணைய தளத்தில் உங்கள் இணைப்பு மறைகுறியாக்கப்படவில்லை."
+
 #. Mixed content notifications in site identity popup
 #: loaded_mixed_content_message
 msgid "This page is displaying content that isn't secure."
@@ -1471,6 +1500,24 @@ msgstr ""
 "இந்த உள்ளடக்கம் தடுக்கப்பட்ட போதிலும் பெரும்பான்மையான இணையத்தளங்கள் நன்றாக தான் வேலை "
 "செய்கிறது."
 
+#. Tracking content notifications in site identity popup
+#: loaded_tracking_content_message_top
+msgid "Tracking protection disabled."
+msgstr ""
+
+#: loaded_tracking_content_message_bottom
+msgid "Parts of this page may track your online activity."
+msgstr ""
+
+#: blocked_tracking_content_message_top2
+msgid "Tracking protection enabled."
+msgstr ""
+
+#: blocked_tracking_content_message_bottom2
+msgid "Parts of the page that track your online activity have been blocked."
+msgstr ""
+
+#. Common mixed and tracking content strings in site identity popup
 #: learn_more
 msgid "Learn More"
 msgstr "இன்னும் கற்க"
@@ -1545,10 +1592,6 @@ msgstr "பயன்பாடு"
 #: searchable_description
 msgid "Bookmarks and history"
 msgstr "புத்தகக்குறிகள் மற்றும் வரலாறு"
-
-#: devtools_remote_debugging_forward
-msgid "Don't forget to set up port forwarding!"
-msgstr "சேவை முனை முன்செலுத்தலை அமைக்க மறக்காதீர்கள்!"
 
 #. Updater notifications
 #: updater_start_title2
@@ -1657,7 +1700,7 @@ msgstr "…"
 msgid ":"
 msgstr ":"
 
-#. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
+#. These are only used for accessibility for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
 msgctxt "actionbar_menu"
@@ -1677,6 +1720,31 @@ msgstr "முடிந்தது"
 #: remote_tabs_last_synced
 msgid "Last synced: &formatS;"
 msgstr "கடைசி ஒத்தசைவு: &formatS;"
+
+#. Find-In-Page strings
+#. This is meant to appear as an icon that changes color
+#. if match-case is activated. i.e. No more than two letters, one uppercase, one lowercase.
+#: find_matchcase
+msgid "Aa"
+msgstr "அஆ"
+
+#~ msgid "Tracking"
+#~ msgstr "கண்காணிப்பு"
+
+#~ msgid "Tell sites that I do not want to be tracked"
+#~ msgstr "நான் கண்காணிக்கப்படுவதை விரும்பவில்லை என்று வலைதளங்களிடம் கூறவும்"
+
+#~ msgid "Tell sites that I want to be tracked"
+#~ msgstr "நான் கண்காணிக்கப்படுவதை விரும்புகிறேன் என்று வலைதளங்களிடம் கூறவும்"
+
+#~ msgid "Do not tell sites anything about my tracking preferences"
+#~ msgstr "என்னுடைய கண்காணிப்பு விருப்ப முன்னுரிமைகளை வலைதளங்களிடம் சொல்ல வேண்டாம்"
+
+#~ msgid "Failed to add page to your Reading List"
+#~ msgstr "உங்கள் வாசிப்பு பட்டியலில் பக்கத்தைச் சேர்க்கமுடியவில்லை"
+
+#~ msgid "Don't forget to set up port forwarding!"
+#~ msgstr "சேவை முனை முன்செலுத்தலை அமைக்க மறக்காதீர்கள்!"
 
 #~ msgid "Always clear when quitting"
 #~ msgstr "வெளியேறும்பொது துடை"
@@ -1863,11 +1931,6 @@ msgstr "கடைசி ஒத்தசைவு: &formatS;"
 #, fuzzy
 #~ msgid "Reader Mode"
 #~ msgstr "கொடுக்கும் முறை:"
-
-#, fuzzy
-#~ msgctxt "updater_start_title"
-#~ msgid "&brandShortName;"
-#~ msgstr "&brandShortName;ஐ விட்டு வெளியேறு"
 
 #, fuzzy
 #~ msgctxt "updater_apply_title"

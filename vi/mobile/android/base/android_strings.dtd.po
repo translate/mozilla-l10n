@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 14:54+0000\n"
+"POT-Creation-Date: 2014-11-28 20:23+0000\n"
 "PO-Revision-Date: 2014-02-19 10:13+0000\n"
 "Last-Translator: Đặng <thanhdd.it@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -571,20 +571,12 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "Bị Vô Hiệu"
 
-#: pref_donottrack_menu
-msgid "Tracking"
+#: pref_donottrack_title
+msgid "Do not track"
 msgstr ""
 
-#: pref_donottrack_disallow_tracking
-msgid "Tell sites that I do not want to be tracked"
-msgstr ""
-
-#: pref_donottrack_allow_tracking
-msgid "Tell sites that I want to be tracked"
-msgstr ""
-
-#: pref_donottrack_no_pref
-msgid "Do not tell sites anything about my tracking preferences"
+#: pref_donottrack_summary
+msgid "&brandShortName; will tell sites that you do not want to be tracked"
 msgstr ""
 
 #: pref_char_encoding
@@ -708,6 +700,14 @@ msgid ""
 "flexibility and more security. As a non-profit, we're free to innovate on "
 "your behalf without any pressure to compromise. That means a better "
 "experience for you and a brighter future for the Web."
+msgstr ""
+
+#: pref_media_autoplay_enabled
+msgid "Allow autoplay"
+msgstr ""
+
+#: pref_media_autoplay_enabled_summary
+msgid "Control if websites can autoplay videos and other media content"
 msgstr ""
 
 #: pref_use_master_password
@@ -1220,12 +1220,19 @@ msgstr ""
 msgid "Page added to your Reading List"
 msgstr ""
 
-#: reading_list_failed
-msgid "Failed to add page to your Reading List"
-msgstr ""
-
 #: reading_list_duplicate
 msgid "Page already in your Reading List"
+msgstr ""
+
+#. Localization note (reading_list_time_minutes2) : This string is used in the "Reading List"
+#. panel on the home page to give the user an estimate of how many minutes it will take to
+#. read an article. The word "minute" should be abbreviated if possible.
+#: reading_list_time_minutes2
+msgid "&formatD; min"
+msgstr ""
+
+#: reading_list_time_over_an_hour
+msgid "Over an hour"
 msgstr ""
 
 #. Localization note : These strings are used as alternate text for accessibility.
@@ -1295,6 +1302,12 @@ msgstr "Trang tốp"
 msgid "Add a site"
 msgstr ""
 
+#. Localization note (home_title): This string should be kept in sync
+#. with the page title defined in aboutHome.dtd
+#: home_title
+msgid "&brandShortName; Home"
+msgstr ""
+
 #: home_history_title
 #, fuzzy
 msgctxt "home_history_title"
@@ -1332,6 +1345,13 @@ msgstr ""
 
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
+msgstr ""
+
+#. Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
+#. The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining.
+#: home_most_recent_emptyhint2
+msgid ""
+"Psst: using a &formatS1;New Private Tab&formatS2; won't save your history."
 msgstr ""
 
 #: home_reading_list_empty
@@ -1485,6 +1505,14 @@ msgstr "Bạn đang kết nối đến"
 msgid "which is run by"
 msgstr "thuộc quyền kiểm soát của"
 
+#: identity_no_info
+msgid "This website does not supply identity information."
+msgstr ""
+
+#: identity_not_encrypted
+msgid "Your connection to this website is not encrypted."
+msgstr ""
+
 #. Mixed content notifications in site identity popup
 #: loaded_mixed_content_message
 msgid "This page is displaying content that isn't secure."
@@ -1499,6 +1527,24 @@ msgid ""
 "Most websites will still work properly even when this content is blocked."
 msgstr ""
 
+#. Tracking content notifications in site identity popup
+#: loaded_tracking_content_message_top
+msgid "Tracking protection disabled."
+msgstr ""
+
+#: loaded_tracking_content_message_bottom
+msgid "Parts of this page may track your online activity."
+msgstr ""
+
+#: blocked_tracking_content_message_top2
+msgid "Tracking protection enabled."
+msgstr ""
+
+#: blocked_tracking_content_message_bottom2
+msgid "Parts of the page that track your online activity have been blocked."
+msgstr ""
+
+#. Common mixed and tracking content strings in site identity popup
 #: learn_more
 msgid "Learn More"
 msgstr "Tìm hiểu Thêm"
@@ -1568,10 +1614,6 @@ msgstr ""
 
 #: searchable_description
 msgid "Bookmarks and history"
-msgstr ""
-
-#: devtools_remote_debugging_forward
-msgid "Don't forget to set up port forwarding!"
 msgstr ""
 
 #. Updater notifications
@@ -1680,7 +1722,7 @@ msgstr ""
 msgid ":"
 msgstr ""
 
-#. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
+#. These are only used for accessibility for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
 #, fuzzy
@@ -1700,6 +1742,13 @@ msgstr "Xong"
 #. their desktop or laptop.
 #: remote_tabs_last_synced
 msgid "Last synced: &formatS;"
+msgstr ""
+
+#. Find-In-Page strings
+#. This is meant to appear as an icon that changes color
+#. if match-case is activated. i.e. No more than two letters, one uppercase, one lowercase.
+#: find_matchcase
+msgid "Aa"
 msgstr ""
 
 #~ msgid "Enter Search or Address"

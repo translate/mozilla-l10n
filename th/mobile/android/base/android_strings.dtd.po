@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 14:54+0000\n"
+"POT-Creation-Date: 2014-11-28 20:23+0000\n"
 "PO-Revision-Date: 2014-02-14 09:31+0000\n"
 "Last-Translator: pittaya <pittaya@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -560,21 +560,13 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "ปิดใช้งาน"
 
-#: pref_donottrack_menu
-msgid "Tracking"
-msgstr "การติดตาม"
+#: pref_donottrack_title
+msgid "Do not track"
+msgstr ""
 
-#: pref_donottrack_disallow_tracking
-msgid "Tell sites that I do not want to be tracked"
-msgstr "บอกเว็บไซต์ต่าง ๆ ว่าไม่ต้องติดตามฉัน"
-
-#: pref_donottrack_allow_tracking
-msgid "Tell sites that I want to be tracked"
-msgstr "บอกเว็บไซต์ต่าง ๆ ว่าติดตามฉัน"
-
-#: pref_donottrack_no_pref
-msgid "Do not tell sites anything about my tracking preferences"
-msgstr "ไม่ต้องบอกเว็บไซต์ต่าง ๆ ทุกอย่างที่เกี่ยวกับการตั้งค่าการติดตามของฉัน"
+#: pref_donottrack_summary
+msgid "&brandShortName; will tell sites that you do not want to be tracked"
+msgstr ""
 
 #: pref_char_encoding
 msgid "Character encoding"
@@ -696,6 +688,14 @@ msgstr ""
 "และปลอดภัยกว่า เพราะเราเป็นองค์กรไม่แสวงหาผลกำไร เราจึงมีอิสระในการพัฒนาตามเพื่อคุณ "
 "โดยไม่มีแรงกดดันใด ๆ ซึ่งนั่นหมายความว่าคุณจะได้รับประสบการณ์ที่ดีกว่า "
 "และสร้างอนาคตที่สดใสกว่าให้กับเว็บ"
+
+#: pref_media_autoplay_enabled
+msgid "Allow autoplay"
+msgstr ""
+
+#: pref_media_autoplay_enabled_summary
+msgid "Control if websites can autoplay videos and other media content"
+msgstr ""
 
 #: pref_use_master_password
 msgid "Use master password"
@@ -1195,13 +1195,20 @@ msgstr "ไม่มีการตั้งค่าให้ล้าง"
 msgid "Page added to your Reading List"
 msgstr "เพิ่มหน้าเว็บเข้ารายการอ่านของคุณแล้ว"
 
-#: reading_list_failed
-msgid "Failed to add page to your Reading List"
-msgstr "ไม่สามารถเพิ่มหน้าเว็บเข้ารายการอ่านของคุณ"
-
 #: reading_list_duplicate
 msgid "Page already in your Reading List"
 msgstr "หน้าเว็บนี้มีอยู่ในรายการอ่านแล้ว"
+
+#. Localization note (reading_list_time_minutes2) : This string is used in the "Reading List"
+#. panel on the home page to give the user an estimate of how many minutes it will take to
+#. read an article. The word "minute" should be abbreviated if possible.
+#: reading_list_time_minutes2
+msgid "&formatD; min"
+msgstr ""
+
+#: reading_list_time_over_an_hour
+msgid "Over an hour"
+msgstr ""
 
 #. Localization note : These strings are used as alternate text for accessibility.
 #. They are not visible in the UI.
@@ -1266,6 +1273,12 @@ msgstr "เว็บเด่น"
 msgid "Add a site"
 msgstr "เพิ่มเว็บไซต์"
 
+#. Localization note (home_title): This string should be kept in sync
+#. with the page title defined in aboutHome.dtd
+#: home_title
+msgid "&brandShortName; Home"
+msgstr "หน้าหลัก &brandShortName;"
+
 #: home_history_title
 msgctxt "home_history_title"
 msgid "History"
@@ -1302,6 +1315,13 @@ msgstr ""
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
 msgstr "เว็บไซต์ที่คุณเพิ่งเข้าล่าสุดจะแสดงอยู่ตรงนี้"
+
+#. Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
+#. The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining.
+#: home_most_recent_emptyhint2
+msgid ""
+"Psst: using a &formatS1;New Private Tab&formatS2; won't save your history."
+msgstr ""
 
 #: home_reading_list_empty
 msgid "Articles you save for later show up here."
@@ -1456,6 +1476,14 @@ msgstr "กำลังเชื่อมต่อไปยัง"
 msgid "which is run by"
 msgstr "ให้บริการโดย"
 
+#: identity_no_info
+msgid "This website does not supply identity information."
+msgstr ""
+
+#: identity_not_encrypted
+msgid "Your connection to this website is not encrypted."
+msgstr ""
+
 #. Mixed content notifications in site identity popup
 #: loaded_mixed_content_message
 msgid "This page is displaying content that isn't secure."
@@ -1470,6 +1498,24 @@ msgid ""
 "Most websites will still work properly even when this content is blocked."
 msgstr "เว็บไซต์ส่วนใหญ่ยังสามารถทำงานได้ถูกต้องแม้เนื้อหานี้จะถูกปิดกั้น"
 
+#. Tracking content notifications in site identity popup
+#: loaded_tracking_content_message_top
+msgid "Tracking protection disabled."
+msgstr ""
+
+#: loaded_tracking_content_message_bottom
+msgid "Parts of this page may track your online activity."
+msgstr ""
+
+#: blocked_tracking_content_message_top2
+msgid "Tracking protection enabled."
+msgstr ""
+
+#: blocked_tracking_content_message_bottom2
+msgid "Parts of the page that track your online activity have been blocked."
+msgstr ""
+
+#. Common mixed and tracking content strings in site identity popup
 #: learn_more
 msgid "Learn More"
 msgstr "เรียนรู้เพิ่ม"
@@ -1545,10 +1591,6 @@ msgstr "แอป"
 #: searchable_description
 msgid "Bookmarks and history"
 msgstr "ที่คั่นหน้าและประวัติการท่องเว็บ"
-
-#: devtools_remote_debugging_forward
-msgid "Don't forget to set up port forwarding!"
-msgstr "อย่าลืมตั้งค่าการส่งต่อพอร์ต"
 
 #. Updater notifications
 #: updater_start_title2
@@ -1657,7 +1699,7 @@ msgstr ""
 msgid ":"
 msgstr ""
 
-#. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
+#. These are only used for accessibility for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
 msgctxt "actionbar_menu"
@@ -1677,6 +1719,31 @@ msgstr "เสร็จ"
 #: remote_tabs_last_synced
 msgid "Last synced: &formatS;"
 msgstr ""
+
+#. Find-In-Page strings
+#. This is meant to appear as an icon that changes color
+#. if match-case is activated. i.e. No more than two letters, one uppercase, one lowercase.
+#: find_matchcase
+msgid "Aa"
+msgstr "Aa"
+
+#~ msgid "Tracking"
+#~ msgstr "การติดตาม"
+
+#~ msgid "Tell sites that I do not want to be tracked"
+#~ msgstr "บอกเว็บไซต์ต่าง ๆ ว่าไม่ต้องติดตามฉัน"
+
+#~ msgid "Tell sites that I want to be tracked"
+#~ msgstr "บอกเว็บไซต์ต่าง ๆ ว่าติดตามฉัน"
+
+#~ msgid "Do not tell sites anything about my tracking preferences"
+#~ msgstr "ไม่ต้องบอกเว็บไซต์ต่าง ๆ ทุกอย่างที่เกี่ยวกับการตั้งค่าการติดตามของฉัน"
+
+#~ msgid "Failed to add page to your Reading List"
+#~ msgstr "ไม่สามารถเพิ่มหน้าเว็บเข้ารายการอ่านของคุณ"
+
+#~ msgid "Don't forget to set up port forwarding!"
+#~ msgstr "อย่าลืมตั้งค่าการส่งต่อพอร์ต"
 
 #~ msgid "Enter Search or Address"
 #~ msgstr "กรอกคำค้นหรือที่อยู่เว็บ"

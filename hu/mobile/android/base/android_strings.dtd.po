@@ -1,9 +1,9 @@
-#. extracted from /home/dwayne/mozilla/firefox/templates-en-US/mobile/android/base/android_strings.dtd, /home/dwayne/mozilla/firefox/build/l10n/hu/mobile/android/base/android_strings.dtd
+#. extracted from ./mobile/android/base/android_strings.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-26 09:35+0000\n"
+"POT-Creation-Date: 2014-11-28 20:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -553,21 +553,13 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "Tiltva"
 
-#: pref_donottrack_menu
-msgid "Tracking"
-msgstr "Követés"
+#: pref_donottrack_title
+msgid "Do not track"
+msgstr ""
 
-#: pref_donottrack_disallow_tracking
-msgid "Tell sites that I do not want to be tracked"
-msgstr "Nem akarom, hogy a webhelyek kövessenek"
-
-#: pref_donottrack_allow_tracking
-msgid "Tell sites that I want to be tracked"
-msgstr "Azt akarom, hogy a webhelyek kövessenek"
-
-#: pref_donottrack_no_pref
-msgid "Do not tell sites anything about my tracking preferences"
-msgstr "Az oldalakkal ne közölje a követési preferenciáimat"
+#: pref_donottrack_summary
+msgid "&brandShortName; will tell sites that you do not want to be tracked"
+msgstr ""
 
 #: pref_char_encoding
 msgid "Character encoding"
@@ -691,6 +683,14 @@ msgstr ""
 "megugorja várakozásait. Non-profit szervezetként szabadon innoválhatunk az "
 "Ön érdekében, nem kell semmilyen kompromisszumot kötnünk. Ez Önnek jobb "
 "élményt, a webnek pedig fényesebb jövőt jelent."
+
+#: pref_media_autoplay_enabled
+msgid "Allow autoplay"
+msgstr ""
+
+#: pref_media_autoplay_enabled_summary
+msgid "Control if websites can autoplay videos and other media content"
+msgstr ""
 
 #: pref_use_master_password
 msgid "Use master password"
@@ -1183,13 +1183,20 @@ msgstr "Nincsenek törölhető beállítások."
 msgid "Page added to your Reading List"
 msgstr "Az oldal hozzáadva az olvasási listához"
 
-#: reading_list_failed
-msgid "Failed to add page to your Reading List"
-msgstr "Az oldalt nem sikerült hozzáadni az olvasási listához"
-
 #: reading_list_duplicate
 msgid "Page already in your Reading List"
 msgstr "Az oldal már szerepel az Olvasási listában"
+
+#. Localization note (reading_list_time_minutes2) : This string is used in the "Reading List"
+#. panel on the home page to give the user an estimate of how many minutes it will take to
+#. read an article. The word "minute" should be abbreviated if possible.
+#: reading_list_time_minutes2
+msgid "&formatD; min"
+msgstr ""
+
+#: reading_list_time_over_an_hour
+msgid "Over an hour"
+msgstr ""
 
 #. Localization note : These strings are used as alternate text for accessibility.
 #. They are not visible in the UI.
@@ -1254,6 +1261,12 @@ msgstr "Népszerű"
 msgid "Add a site"
 msgstr "Oldal hozzáadása"
 
+#. Localization note (home_title): This string should be kept in sync
+#. with the page title defined in aboutHome.dtd
+#: home_title
+msgid "&brandShortName; Home"
+msgstr "&brandShortName; kezdőoldal"
+
 #: home_history_title
 msgctxt "home_history_title"
 msgid "History"
@@ -1290,6 +1303,13 @@ msgstr "Összes megnyitása"
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
 msgstr "A legutóbb meglátogatott weboldalak itt jelennek meg."
+
+#. Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
+#. The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining.
+#: home_most_recent_emptyhint2
+msgid ""
+"Psst: using a &formatS1;New Private Tab&formatS2; won't save your history."
+msgstr ""
 
 #: home_reading_list_empty
 msgid "Articles you save for later show up here."
@@ -1452,6 +1472,14 @@ msgstr "A következőhöz csatlakozott:"
 msgid "which is run by"
 msgstr "Működtetője:"
 
+#: identity_no_info
+msgid "This website does not supply identity information."
+msgstr ""
+
+#: identity_not_encrypted
+msgid "Your connection to this website is not encrypted."
+msgstr ""
+
 #. Mixed content notifications in site identity popup
 #: loaded_mixed_content_message
 msgid "This page is displaying content that isn't secure."
@@ -1467,6 +1495,24 @@ msgid ""
 msgstr ""
 "A legtöbb weboldal ezen tartalom blokkolása után is megfelelően fog működni."
 
+#. Tracking content notifications in site identity popup
+#: loaded_tracking_content_message_top
+msgid "Tracking protection disabled."
+msgstr ""
+
+#: loaded_tracking_content_message_bottom
+msgid "Parts of this page may track your online activity."
+msgstr ""
+
+#: blocked_tracking_content_message_top2
+msgid "Tracking protection enabled."
+msgstr ""
+
+#: blocked_tracking_content_message_bottom2
+msgid "Parts of the page that track your online activity have been blocked."
+msgstr ""
+
+#. Common mixed and tracking content strings in site identity popup
 #: learn_more
 msgid "Learn More"
 msgstr "További információ"
@@ -1541,10 +1587,6 @@ msgstr "Alkalmazás"
 #: searchable_description
 msgid "Bookmarks and history"
 msgstr "Könyvjelzők és előzmények"
-
-#: devtools_remote_debugging_forward
-msgid "Don't forget to set up port forwarding!"
-msgstr "Ne feledje el beállítani a porttovábbítást!"
 
 #. Updater notifications
 #: updater_start_title2
@@ -1654,7 +1696,7 @@ msgstr "…"
 msgid ":"
 msgstr ":"
 
-#. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
+#. These are only used for accessibility for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
 msgctxt "actionbar_menu"
@@ -1674,3 +1716,28 @@ msgstr "Kész"
 #: remote_tabs_last_synced
 msgid "Last synced: &formatS;"
 msgstr "Utolsó szinkronizálás: &formatS;"
+
+#. Find-In-Page strings
+#. This is meant to appear as an icon that changes color
+#. if match-case is activated. i.e. No more than two letters, one uppercase, one lowercase.
+#: find_matchcase
+msgid "Aa"
+msgstr "Aa"
+
+#~ msgid "Tracking"
+#~ msgstr "Követés"
+
+#~ msgid "Tell sites that I do not want to be tracked"
+#~ msgstr "Nem akarom, hogy a webhelyek kövessenek"
+
+#~ msgid "Tell sites that I want to be tracked"
+#~ msgstr "Azt akarom, hogy a webhelyek kövessenek"
+
+#~ msgid "Do not tell sites anything about my tracking preferences"
+#~ msgstr "Az oldalakkal ne közölje a követési preferenciáimat"
+
+#~ msgid "Failed to add page to your Reading List"
+#~ msgstr "Az oldalt nem sikerült hozzáadni az olvasási listához"
+
+#~ msgid "Don't forget to set up port forwarding!"
+#~ msgstr "Ne feledje el beállítani a porttovábbítást!"
