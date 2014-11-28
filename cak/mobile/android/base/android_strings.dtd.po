@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 14:54+0000\n"
+"POT-Creation-Date: 2014-11-28 20:23+0000\n"
 "PO-Revision-Date: 2014-08-10 01:02+0000\n"
 "Last-Translator: Juan Esteban <ajtzibsyan@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -563,23 +563,13 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "Man jaqäl ta"
 
-#: pref_donottrack_menu
-msgid "Tracking"
-msgstr "Rukanoxik"
-
-#: pref_donottrack_disallow_tracking
-msgid "Tell sites that I do not want to be tracked"
-msgstr "Tib'ïx chi ke ri ruxaq k'amaya'l chi man ninwajo' ta chi kikanöx"
-
-#: pref_donottrack_allow_tracking
-msgid "Tell sites that I want to be tracked"
-msgstr "Tib'ïx chi ke ri ruxaq k'amaya'l chi ninwajo' chi kikanöx"
-
-#: pref_donottrack_no_pref
-msgid "Do not tell sites anything about my tracking preferences"
+#: pref_donottrack_title
+msgid "Do not track"
 msgstr ""
-"Majun titzijöx chi ke ri taq ruxaq k'amaya'l chi kij ri taq wajowanik richin "
-"yikanöx"
+
+#: pref_donottrack_summary
+msgid "&brandShortName; will tell sites that you do not want to be tracked"
+msgstr ""
 
 #: pref_char_encoding
 msgid "Character encoding"
@@ -705,6 +695,14 @@ msgstr ""
 "uxlanib'äl qak'u'x richin niqutzilaj ri rub'i' majun niq'ax ta qatzij richin "
 "naya' atzij qik'in. Re tzij re' nuq'ajuj chi janila ütz nub'än ak'aslemal "
 "chuqa' jeb'ël ruk'aslem ri k'amaya'l ri chwa'q kab'ij"
+
+#: pref_media_autoplay_enabled
+msgid "Allow autoplay"
+msgstr ""
+
+#: pref_media_autoplay_enabled_summary
+msgid "Control if websites can autoplay videos and other media content"
+msgstr ""
 
 #: pref_use_master_password
 msgid "Use master password"
@@ -1197,14 +1195,20 @@ msgstr "Majun runuk'ulem k'o richin nijosq'ïx."
 msgid "Page added to your Reading List"
 msgstr "Ruxaq k'amaya'l tz'aqatisan pa rucholajem asik'inem"
 
-#: reading_list_failed
-msgid "Failed to add page to your Reading List"
-msgstr ""
-"Man xtikïr ta xutz'aqatisaj re ruxaq k'amaya'l re' pa rucholajem asik'inem  "
-
 #: reading_list_duplicate
 msgid "Page already in your Reading List"
 msgstr "Ruxaq k'amaya'l tz'aqatisan pa rucholajem asik'inem"
+
+#. Localization note (reading_list_time_minutes2) : This string is used in the "Reading List"
+#. panel on the home page to give the user an estimate of how many minutes it will take to
+#. read an article. The word "minute" should be abbreviated if possible.
+#: reading_list_time_minutes2
+msgid "&formatD; min"
+msgstr ""
+
+#: reading_list_time_over_an_hour
+msgid "Over an hour"
+msgstr ""
 
 #. Localization note : These strings are used as alternate text for accessibility.
 #. They are not visible in the UI.
@@ -1269,6 +1273,12 @@ msgstr "Junelïk taq ruxaq"
 msgid "Add a site"
 msgstr "Titz'aqatisäx pa ruxaq"
 
+#. Localization note (home_title): This string should be kept in sync
+#. with the page title defined in aboutHome.dtd
+#: home_title
+msgid "&brandShortName; Home"
+msgstr "Rutikirib'al &brandShortName;"
+
 #: home_history_title
 msgctxt "home_history_title"
 msgid "History"
@@ -1305,6 +1315,13 @@ msgstr "Kejaq konojel"
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
 msgstr "Ri taq ruxaq k'amaya'l k'ak'a' kitz'etik, xekeq'alajin pe wawe'."
+
+#. Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
+#. The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining.
+#: home_most_recent_emptyhint2
+msgid ""
+"Psst: using a &formatS1;New Private Tab&formatS2; won't save your history."
+msgstr ""
 
 #: home_reading_list_empty
 msgid "Articles you save for later show up here."
@@ -1465,6 +1482,14 @@ msgstr "At okinäq pa"
 msgid "which is run by"
 msgstr "Ri ichinan ruma ri"
 
+#: identity_no_info
+msgid "This website does not supply identity information."
+msgstr ""
+
+#: identity_not_encrypted
+msgid "Your connection to this website is not encrypted."
+msgstr ""
+
 #. Mixed content notifications in site identity popup
 #: loaded_mixed_content_message
 msgid "This page is displaying content that isn't secure."
@@ -1481,6 +1506,24 @@ msgstr ""
 "Konojel ri taq ruxaq k'amaya'l ütz yesamäj chuqa' re jun q'eleb'en  rupam "
 "re'."
 
+#. Tracking content notifications in site identity popup
+#: loaded_tracking_content_message_top
+msgid "Tracking protection disabled."
+msgstr ""
+
+#: loaded_tracking_content_message_bottom
+msgid "Parts of this page may track your online activity."
+msgstr ""
+
+#: blocked_tracking_content_message_top2
+msgid "Tracking protection enabled."
+msgstr ""
+
+#: blocked_tracking_content_message_bottom2
+msgid "Parts of the page that track your online activity have been blocked."
+msgstr ""
+
+#. Common mixed and tracking content strings in site identity popup
 #: learn_more
 msgid "Learn More"
 msgstr "Tetamäx ch'aqa' chik"
@@ -1553,10 +1596,6 @@ msgstr "Chokoyi'"
 #: searchable_description
 msgid "Bookmarks and history"
 msgstr "Yak'äl etal chuqa' k'ulwachinel"
-
-#: devtools_remote_debugging_forward
-msgid "Don't forget to set up port forwarding!"
-msgstr "¡Man tamestaj nab'än runuk'ulem ri rukamuluxik rutaqik ri b'ey!"
 
 #. Updater notifications
 #: updater_start_title2
@@ -1666,7 +1705,7 @@ msgstr "…"
 msgid ":"
 msgstr ""
 
-#. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
+#. These are only used for accessibility for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
 msgctxt "actionbar_menu"
@@ -1686,6 +1725,35 @@ msgstr "Tik'is"
 #: remote_tabs_last_synced
 msgid "Last synced: &formatS;"
 msgstr "Ruk'isib'al ximojri'ïl: &formatS;"
+
+#. Find-In-Page strings
+#. This is meant to appear as an icon that changes color
+#. if match-case is activated. i.e. No more than two letters, one uppercase, one lowercase.
+#: find_matchcase
+msgid "Aa"
+msgstr "Aa"
+
+#~ msgid "Tracking"
+#~ msgstr "Rukanoxik"
+
+#~ msgid "Tell sites that I do not want to be tracked"
+#~ msgstr "Tib'ïx chi ke ri ruxaq k'amaya'l chi man ninwajo' ta chi kikanöx"
+
+#~ msgid "Tell sites that I want to be tracked"
+#~ msgstr "Tib'ïx chi ke ri ruxaq k'amaya'l chi ninwajo' chi kikanöx"
+
+#~ msgid "Do not tell sites anything about my tracking preferences"
+#~ msgstr ""
+#~ "Majun titzijöx chi ke ri taq ruxaq k'amaya'l chi kij ri taq wajowanik "
+#~ "richin yikanöx"
+
+#~ msgid "Failed to add page to your Reading List"
+#~ msgstr ""
+#~ "Man xtikïr ta xutz'aqatisaj re ruxaq k'amaya'l re' pa rucholajem "
+#~ "asik'inem  "
+
+#~ msgid "Don't forget to set up port forwarding!"
+#~ msgstr "¡Man tamestaj nab'än runuk'ulem ri rukamuluxik rutaqik ri b'ey!"
 
 #~ msgid "Always clear when quitting"
 #~ msgstr "Jantape' jikïl toq k'o chi naya' kan ri sik'anïk"

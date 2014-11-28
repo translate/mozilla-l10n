@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 14:54+0000\n"
+"POT-Creation-Date: 2014-11-28 20:23+0000\n"
 "PO-Revision-Date: 2014-10-17 17:04+0000\n"
 "Last-Translator: Kristján  <kgm@kasma.is>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n%10!=1 || n%100==11);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1413565474.000000\n"
@@ -556,22 +556,13 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "Óvirkar"
 
-#: pref_donottrack_menu
-msgid "Tracking"
-msgstr "Eftirlit"
-
-#: pref_donottrack_disallow_tracking
-msgid "Tell sites that I do not want to be tracked"
-msgstr "Segja vefsvæðum að ég vilji ekki láta fylgjast með mér"
-
-#: pref_donottrack_allow_tracking
-msgid "Tell sites that I want to be tracked"
-msgstr "Segja vefsvæðum að ég vilji láta fylgjast með mér"
-
-#: pref_donottrack_no_pref
-msgid "Do not tell sites anything about my tracking preferences"
+#: pref_donottrack_title
+msgid "Do not track"
 msgstr ""
-"Ekki segja vefsvæðum frá því hvort ég hef valið að láta fylgjast með mér"
+
+#: pref_donottrack_summary
+msgid "&brandShortName; will tell sites that you do not want to be tracked"
+msgstr ""
 
 #: pref_char_encoding
 msgid "Character encoding"
@@ -696,6 +687,14 @@ msgstr ""
 "fyrir þína hönd án málamiðlunar því fyrirtækið okkar er ekki rekið í "
 "hagnaðarskyni. Þetta þýðir betri upplifun fyrir þig og bjartari framtíð "
 "fyrir vefinn."
+
+#: pref_media_autoplay_enabled
+msgid "Allow autoplay"
+msgstr ""
+
+#: pref_media_autoplay_enabled_summary
+msgid "Control if websites can autoplay videos and other media content"
+msgstr ""
 
 #: pref_use_master_password
 msgid "Use master password"
@@ -1187,13 +1186,20 @@ msgstr "Engar stillingar til að hreinsa."
 msgid "Page added to your Reading List"
 msgstr "Síðunni bætt við leslistann þinn"
 
-#: reading_list_failed
-msgid "Failed to add page to your Reading List"
-msgstr "Ekki tókst að bæta síðu við leslistann"
-
 #: reading_list_duplicate
 msgid "Page already in your Reading List"
 msgstr "Síðan er nú þegar á leslistanum þínum"
+
+#. Localization note (reading_list_time_minutes2) : This string is used in the "Reading List"
+#. panel on the home page to give the user an estimate of how many minutes it will take to
+#. read an article. The word "minute" should be abbreviated if possible.
+#: reading_list_time_minutes2
+msgid "&formatD; min"
+msgstr ""
+
+#: reading_list_time_over_an_hour
+msgid "Over an hour"
+msgstr ""
 
 #. Localization note : These strings are used as alternate text for accessibility.
 #. They are not visible in the UI.
@@ -1258,6 +1264,12 @@ msgstr "Vinsælustu svæðin"
 msgid "Add a site"
 msgstr "Bæta við svæði"
 
+#. Localization note (home_title): This string should be kept in sync
+#. with the page title defined in aboutHome.dtd
+#: home_title
+msgid "&brandShortName; Home"
+msgstr "&brandShortName; heim"
+
 #: home_history_title
 msgctxt "home_history_title"
 msgid "History"
@@ -1294,6 +1306,13 @@ msgstr "Opna allt"
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
 msgstr "Nýjustu svæðin sem þú hefur skoðað birtast hér."
+
+#. Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
+#. The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining.
+#: home_most_recent_emptyhint2
+msgid ""
+"Psst: using a &formatS1;New Private Tab&formatS2; won't save your history."
+msgstr ""
 
 #: home_reading_list_empty
 msgid "Articles you save for later show up here."
@@ -1456,6 +1475,14 @@ msgstr "Núverandi tenging við"
 msgid "which is run by"
 msgstr "sem er starfrækt af"
 
+#: identity_no_info
+msgid "This website does not supply identity information."
+msgstr ""
+
+#: identity_not_encrypted
+msgid "Your connection to this website is not encrypted."
+msgstr ""
+
 #. Mixed content notifications in site identity popup
 #: loaded_mixed_content_message
 msgid "This page is displaying content that isn't secure."
@@ -1471,6 +1498,24 @@ msgid ""
 msgstr ""
 "Flest svæði munu samt virka eðlilega þrátt fyrir að lokað sé á þetta efni."
 
+#. Tracking content notifications in site identity popup
+#: loaded_tracking_content_message_top
+msgid "Tracking protection disabled."
+msgstr ""
+
+#: loaded_tracking_content_message_bottom
+msgid "Parts of this page may track your online activity."
+msgstr ""
+
+#: blocked_tracking_content_message_top2
+msgid "Tracking protection enabled."
+msgstr ""
+
+#: blocked_tracking_content_message_bottom2
+msgid "Parts of the page that track your online activity have been blocked."
+msgstr ""
+
+#. Common mixed and tracking content strings in site identity popup
 #: learn_more
 msgid "Learn More"
 msgstr "Fræðast meira"
@@ -1545,10 +1590,6 @@ msgstr "Smáforrit"
 #: searchable_description
 msgid "Bookmarks and history"
 msgstr "Bókarmerki og ferill"
-
-#: devtools_remote_debugging_forward
-msgid "Don't forget to set up port forwarding!"
-msgstr "Ekki gleyma að stilla áframsendingu á porti!"
 
 #. Updater notifications
 #: updater_start_title2
@@ -1658,7 +1699,7 @@ msgstr "..."
 msgid ":"
 msgstr ":"
 
-#. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
+#. These are only used for accessibility for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
 msgctxt "actionbar_menu"
@@ -1678,6 +1719,32 @@ msgstr "Lokið"
 #: remote_tabs_last_synced
 msgid "Last synced: &formatS;"
 msgstr "Síðasta sync: &formatS;"
+
+#. Find-In-Page strings
+#. This is meant to appear as an icon that changes color
+#. if match-case is activated. i.e. No more than two letters, one uppercase, one lowercase.
+#: find_matchcase
+msgid "Aa"
+msgstr "Aa"
+
+#~ msgid "Tracking"
+#~ msgstr "Eftirlit"
+
+#~ msgid "Tell sites that I do not want to be tracked"
+#~ msgstr "Segja vefsvæðum að ég vilji ekki láta fylgjast með mér"
+
+#~ msgid "Tell sites that I want to be tracked"
+#~ msgstr "Segja vefsvæðum að ég vilji láta fylgjast með mér"
+
+#~ msgid "Do not tell sites anything about my tracking preferences"
+#~ msgstr ""
+#~ "Ekki segja vefsvæðum frá því hvort ég hef valið að láta fylgjast með mér"
+
+#~ msgid "Failed to add page to your Reading List"
+#~ msgstr "Ekki tókst að bæta síðu við leslistann"
+
+#~ msgid "Don't forget to set up port forwarding!"
+#~ msgstr "Ekki gleyma að stilla áframsendingu á porti!"
 
 #~ msgid "Always clear when quitting"
 #~ msgstr "Ætíð hreinsa við lokun"

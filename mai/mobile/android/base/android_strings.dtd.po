@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 14:54+0000\n"
+"POT-Creation-Date: 2014-11-28 20:23+0000\n"
 "PO-Revision-Date: 2014-05-19 07:54+0000\n"
 "Last-Translator: Rakesh <roshanr15@gmail.com>\n"
 "Language-Team: none\n"
@@ -561,21 +561,13 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "निष्क्रिय"
 
-#: pref_donottrack_menu
-msgid "Tracking"
-msgstr "ट्रैकिंग"
+#: pref_donottrack_title
+msgid "Do not track"
+msgstr ""
 
-#: pref_donottrack_disallow_tracking
-msgid "Tell sites that I do not want to be tracked"
-msgstr "वेबसाइट केँ बताउ जे अहाँकेँ ट्रैक नहि करै"
-
-#: pref_donottrack_allow_tracking
-msgid "Tell sites that I want to be tracked"
-msgstr "वेबसाइट केँ बताउ जे अहाँकेँ ट्रैक करै"
-
-#: pref_donottrack_no_pref
-msgid "Do not tell sites anything about my tracking preferences"
-msgstr "वेबसाइट केँ हमर ट्रैकिंग वरीयता नहि बताउ"
+#: pref_donottrack_summary
+msgid "&brandShortName; will tell sites that you do not want to be tracked"
+msgstr ""
 
 #: pref_char_encoding
 msgid "Character encoding"
@@ -697,6 +689,14 @@ msgstr ""
 "अहाँक ई फुर्तीला नारंगी लोमड़ी आब बेसी लोच आ सुरक्षा सँ लैस भकए अहाँक उम्मीद सँ भी बेसी तेज "
 "दौड़त अछि. लाभ-लोभ सँ अलग हम बिनु समझौता कएने अहाँक सेवा मे नवाचार कलेल आजाद अछि. "
 "आउ, विश्ववव्यापी वेब क उज्ज्वल भविष्य मे विचरबाक अद्वितीय आनंद उठाउ."
+
+#: pref_media_autoplay_enabled
+msgid "Allow autoplay"
+msgstr ""
+
+#: pref_media_autoplay_enabled_summary
+msgid "Control if websites can autoplay videos and other media content"
+msgstr ""
 
 #: pref_use_master_password
 msgid "Use master password"
@@ -1189,13 +1189,20 @@ msgstr "सफाइ कलेल कोनो सेटिंग नहि."
 msgid "Page added to your Reading List"
 msgstr "पाठ सूची मे पृष्ठ जुड़ल"
 
-#: reading_list_failed
-msgid "Failed to add page to your Reading List"
-msgstr "पाठ सूची मे पृष्ठ जोड़ए मे बिफल"
-
 #: reading_list_duplicate
 msgid "Page already in your Reading List"
 msgstr "पाठ सूची मे पृष्ठ पहिने सँ अछि"
+
+#. Localization note (reading_list_time_minutes2) : This string is used in the "Reading List"
+#. panel on the home page to give the user an estimate of how many minutes it will take to
+#. read an article. The word "minute" should be abbreviated if possible.
+#: reading_list_time_minutes2
+msgid "&formatD; min"
+msgstr ""
+
+#: reading_list_time_over_an_hour
+msgid "Over an hour"
+msgstr ""
 
 #. Localization note : These strings are used as alternate text for accessibility.
 #. They are not visible in the UI.
@@ -1260,6 +1267,13 @@ msgstr "टाप साइट"
 msgid "Add a site"
 msgstr "साइट जोड़ू"
 
+#. Localization note (home_title): This string should be kept in sync
+#. with the page title defined in aboutHome.dtd
+#: home_title
+#, fuzzy
+msgid "&brandShortName; Home"
+msgstr "&brandShortName; सँ बाहर जाउ"
+
 #: home_history_title
 msgctxt "home_history_title"
 msgid "History"
@@ -1296,6 +1310,13 @@ msgstr ""
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
 msgstr "अहाँक देखल सबसँ हालिया वेबसाइट एतय देखाओल गेल अछि."
+
+#. Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
+#. The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining.
+#: home_most_recent_emptyhint2
+msgid ""
+"Psst: using a &formatS1;New Private Tab&formatS2; won't save your history."
+msgstr ""
 
 #: home_reading_list_empty
 msgid "Articles you save for later show up here."
@@ -1451,6 +1472,14 @@ msgstr "अहाँ एतए कनेक्टेड छी"
 msgid "which is run by"
 msgstr "कथि एकरा द्वारा चलैत अछि"
 
+#: identity_no_info
+msgid "This website does not supply identity information."
+msgstr "ई वेबसाइट पहचान सूचनाक आपूर्ति नहि करैत अछि."
+
+#: identity_not_encrypted
+msgid "Your connection to this website is not encrypted."
+msgstr "ई वेबसाइट मे अहाँक कनेक्शन गोपित नहि अछि."
+
 #. Mixed content notifications in site identity popup
 #: loaded_mixed_content_message
 msgid "This page is displaying content that isn't secure."
@@ -1465,6 +1494,24 @@ msgid ""
 "Most websites will still work properly even when this content is blocked."
 msgstr "ई सामग्री क रोक-थाम क बावजूद बेसी वेबसाइट नीक सँ काम करताह."
 
+#. Tracking content notifications in site identity popup
+#: loaded_tracking_content_message_top
+msgid "Tracking protection disabled."
+msgstr ""
+
+#: loaded_tracking_content_message_bottom
+msgid "Parts of this page may track your online activity."
+msgstr ""
+
+#: blocked_tracking_content_message_top2
+msgid "Tracking protection enabled."
+msgstr ""
+
+#: blocked_tracking_content_message_bottom2
+msgid "Parts of the page that track your online activity have been blocked."
+msgstr ""
+
+#. Common mixed and tracking content strings in site identity popup
 #: learn_more
 msgid "Learn More"
 msgstr "आओर जानू"
@@ -1539,10 +1586,6 @@ msgstr "एप्प"
 #: searchable_description
 msgid "Bookmarks and history"
 msgstr "पुस्तकचिह्न आओर इतिहास"
-
-#: devtools_remote_debugging_forward
-msgid "Don't forget to set up port forwarding!"
-msgstr "पोर्ट फारवर्डिंग सेटअप कएनाइ नहि बिसरू!"
 
 #. Updater notifications
 #: updater_start_title2
@@ -1651,7 +1694,7 @@ msgstr "…"
 msgid ":"
 msgstr ""
 
-#. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
+#. These are only used for accessibility for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
 msgctxt "actionbar_menu"
@@ -1671,6 +1714,31 @@ msgstr "संपन्न"
 #: remote_tabs_last_synced
 msgid "Last synced: &formatS;"
 msgstr ""
+
+#. Find-In-Page strings
+#. This is meant to appear as an icon that changes color
+#. if match-case is activated. i.e. No more than two letters, one uppercase, one lowercase.
+#: find_matchcase
+msgid "Aa"
+msgstr "आ"
+
+#~ msgid "Tracking"
+#~ msgstr "ट्रैकिंग"
+
+#~ msgid "Tell sites that I do not want to be tracked"
+#~ msgstr "वेबसाइट केँ बताउ जे अहाँकेँ ट्रैक नहि करै"
+
+#~ msgid "Tell sites that I want to be tracked"
+#~ msgstr "वेबसाइट केँ बताउ जे अहाँकेँ ट्रैक करै"
+
+#~ msgid "Do not tell sites anything about my tracking preferences"
+#~ msgstr "वेबसाइट केँ हमर ट्रैकिंग वरीयता नहि बताउ"
+
+#~ msgid "Failed to add page to your Reading List"
+#~ msgstr "पाठ सूची मे पृष्ठ जोड़ए मे बिफल"
+
+#~ msgid "Don't forget to set up port forwarding!"
+#~ msgstr "पोर्ट फारवर्डिंग सेटअप कएनाइ नहि बिसरू!"
 
 #~ msgid ""
 #~ "Receives Wi-Fi and cellular location data when running in the background "
@@ -1775,11 +1843,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Reader Mode"
 #~ msgstr "रेंडर विधि:"
-
-#, fuzzy
-#~ msgctxt "updater_start_title"
-#~ msgid "&brandShortName;"
-#~ msgstr "&brandShortName; सँ बाहर जाउ"
 
 #, fuzzy
 #~ msgctxt "updater_apply_title"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 14:54+0000\n"
+"POT-Creation-Date: 2014-11-28 20:23+0000\n"
 "PO-Revision-Date: 2014-11-14 02:17+0000\n"
 "Last-Translator: Baurzhan <baurthefirst@gmail.com>\n"
 "Language-Team: none\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1415931439.000000\n"
@@ -558,21 +558,13 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "Сөндірілген"
 
-#: pref_donottrack_menu
-msgid "Tracking"
-msgstr "Бақылау"
+#: pref_donottrack_title
+msgid "Do not track"
+msgstr ""
 
-#: pref_donottrack_disallow_tracking
-msgid "Tell sites that I do not want to be tracked"
-msgstr "Веб сайттарға мені бақыламауды қалайтынымды айту"
-
-#: pref_donottrack_allow_tracking
-msgid "Tell sites that I want to be tracked"
-msgstr "Веб сайттарға мені бақылауды қалайтынымды айту"
-
-#: pref_donottrack_no_pref
-msgid "Do not tell sites anything about my tracking preferences"
-msgstr "Веб сайттарға менің бақылау баптауларым жөнінде ешнәрсе айтпау"
+#: pref_donottrack_summary
+msgid "&brandShortName; will tell sites that you do not want to be tracked"
+msgstr ""
 
 #: pref_char_encoding
 msgid "Character encoding"
@@ -696,6 +688,14 @@ msgstr ""
 "деңгейінен асып кетеді. Коммерциялы емес болған соң, біз инновациялар үшін "
 "ешбір кедергісіз ашықпыз. Бұл дегеніміз сіздің пайдасына және Интернеттің "
 "жарқын болашағы үшін арналған."
+
+#: pref_media_autoplay_enabled
+msgid "Allow autoplay"
+msgstr ""
+
+#: pref_media_autoplay_enabled_summary
+msgid "Control if websites can autoplay videos and other media content"
+msgstr ""
 
 #: pref_use_master_password
 msgid "Use master password"
@@ -1187,13 +1187,20 @@ msgstr "Тазарту үшін баптаулар жоқ."
 msgid "Page added to your Reading List"
 msgstr "Парақ сіздің Оқу тізіміңізге қосылды"
 
-#: reading_list_failed
-msgid "Failed to add page to your Reading List"
-msgstr "Парақты сіздің Оқу тізіміңізге қосу сәтсіз аяқталды"
-
 #: reading_list_duplicate
 msgid "Page already in your Reading List"
 msgstr "Парақ сіздің Оқу тізіміңізде бар болып тұр"
+
+#. Localization note (reading_list_time_minutes2) : This string is used in the "Reading List"
+#. panel on the home page to give the user an estimate of how many minutes it will take to
+#. read an article. The word "minute" should be abbreviated if possible.
+#: reading_list_time_minutes2
+msgid "&formatD; min"
+msgstr ""
+
+#: reading_list_time_over_an_hour
+msgid "Over an hour"
+msgstr ""
 
 #. Localization note : These strings are used as alternate text for accessibility.
 #. They are not visible in the UI.
@@ -1258,6 +1265,12 @@ msgstr "Топ сайттар"
 msgid "Add a site"
 msgstr "Сайтты қосу"
 
+#. Localization note (home_title): This string should be kept in sync
+#. with the page title defined in aboutHome.dtd
+#: home_title
+msgid "&brandShortName; Home"
+msgstr "&brandShortName; үй парағы"
+
 #: home_history_title
 msgctxt "home_history_title"
 msgid "History"
@@ -1294,6 +1307,13 @@ msgstr "Барлығын ашу"
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
 msgstr "Сіздің соңғы ашылған веб сайттарыңыз осында болады."
+
+#. Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
+#. The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining.
+#: home_most_recent_emptyhint2
+msgid ""
+"Psst: using a &formatS1;New Private Tab&formatS2; won't save your history."
+msgstr ""
 
 #: home_reading_list_empty
 msgid "Articles you save for later show up here."
@@ -1456,6 +1476,14 @@ msgstr "Сіз байланысқан"
 msgid "which is run by"
 msgstr "келесімен басқарылады"
 
+#: identity_no_info
+msgid "This website does not supply identity information."
+msgstr ""
+
+#: identity_not_encrypted
+msgid "Your connection to this website is not encrypted."
+msgstr ""
+
 #. Mixed content notifications in site identity popup
 #: loaded_mixed_content_message
 msgid "This page is displaying content that isn't secure."
@@ -1472,6 +1500,24 @@ msgstr ""
 "Веб-сайттардың көбі бұл құрама сөндірілген болса да, дұрыс жұмыс жасай "
 "береді."
 
+#. Tracking content notifications in site identity popup
+#: loaded_tracking_content_message_top
+msgid "Tracking protection disabled."
+msgstr ""
+
+#: loaded_tracking_content_message_bottom
+msgid "Parts of this page may track your online activity."
+msgstr ""
+
+#: blocked_tracking_content_message_top2
+msgid "Tracking protection enabled."
+msgstr ""
+
+#: blocked_tracking_content_message_bottom2
+msgid "Parts of the page that track your online activity have been blocked."
+msgstr ""
+
+#. Common mixed and tracking content strings in site identity popup
 #: learn_more
 msgid "Learn More"
 msgstr "Көбірек білу"
@@ -1542,10 +1588,6 @@ msgstr "Қолданба"
 #: searchable_description
 msgid "Bookmarks and history"
 msgstr "Тарих және бетбелгілер"
-
-#: devtools_remote_debugging_forward
-msgid "Don't forget to set up port forwarding!"
-msgstr "Порттарды бағдарлауды іске қосуды ұмытпаңыз!"
 
 #. Updater notifications
 #: updater_start_title2
@@ -1655,7 +1697,7 @@ msgstr "…"
 msgid ":"
 msgstr ":"
 
-#. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
+#. These are only used for accessibility for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
 msgctxt "actionbar_menu"
@@ -1675,6 +1717,31 @@ msgstr "Дайын"
 #: remote_tabs_last_synced
 msgid "Last synced: &formatS;"
 msgstr "Соңғы синхрондау: &formatS;"
+
+#. Find-In-Page strings
+#. This is meant to appear as an icon that changes color
+#. if match-case is activated. i.e. No more than two letters, one uppercase, one lowercase.
+#: find_matchcase
+msgid "Aa"
+msgstr "Аа"
+
+#~ msgid "Tracking"
+#~ msgstr "Бақылау"
+
+#~ msgid "Tell sites that I do not want to be tracked"
+#~ msgstr "Веб сайттарға мені бақыламауды қалайтынымды айту"
+
+#~ msgid "Tell sites that I want to be tracked"
+#~ msgstr "Веб сайттарға мені бақылауды қалайтынымды айту"
+
+#~ msgid "Do not tell sites anything about my tracking preferences"
+#~ msgstr "Веб сайттарға менің бақылау баптауларым жөнінде ешнәрсе айтпау"
+
+#~ msgid "Failed to add page to your Reading List"
+#~ msgstr "Парақты сіздің Оқу тізіміңізге қосу сәтсіз аяқталды"
+
+#~ msgid "Don't forget to set up port forwarding!"
+#~ msgstr "Порттарды бағдарлауды іске қосуды ұмытпаңыз!"
 
 #~ msgid "Always clear when quitting"
 #~ msgstr "Шыққанда әрқашан тазарту"

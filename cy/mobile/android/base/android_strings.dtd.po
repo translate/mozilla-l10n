@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 14:54+0000\n"
+"POT-Creation-Date: 2014-11-28 20:23+0000\n"
 "PO-Revision-Date: 2014-10-17 10:35+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1413542107.000000\n"
@@ -556,21 +556,13 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "Analluogwyd"
 
-#: pref_donottrack_menu
-msgid "Tracking"
-msgstr "Tracio"
+#: pref_donottrack_title
+msgid "Do not track"
+msgstr ""
 
-#: pref_donottrack_disallow_tracking
-msgid "Tell sites that I do not want to be tracked"
-msgstr "Dweud wrth wefannau: dim tracio"
-
-#: pref_donottrack_allow_tracking
-msgid "Tell sites that I want to be tracked"
-msgstr "Dweud wrth wefannau rwyf am gael fy nrhacio"
-
-#: pref_donottrack_no_pref
-msgid "Do not tell sites anything about my tracking preferences"
-msgstr "Dweud dim wrth wefannau am fy newisiadau tracio"
+#: pref_donottrack_summary
+msgid "&brandShortName; will tell sites that you do not want to be tracked"
+msgstr ""
 
 #: pref_char_encoding
 msgid "Character encoding"
@@ -694,6 +686,14 @@ msgstr ""
 "cyflym, mwy hyblyg a mwy diogel. Fel corff dim er elw rydym yn rhydd i fod "
 "yn ddyfeisgar ar eich rhan heb bwysau i gyfaddawdu. Mae hyn y golygu gwell "
 "profiad i chi a dyfodol mwy disglair i'r We."
+
+#: pref_media_autoplay_enabled
+msgid "Allow autoplay"
+msgstr ""
+
+#: pref_media_autoplay_enabled_summary
+msgid "Control if websites can autoplay videos and other media content"
+msgstr ""
 
 #: pref_use_master_password
 msgid "Use master password"
@@ -1185,13 +1185,20 @@ msgstr "Does dim gosodiadau i’w clirio."
 msgid "Page added to your Reading List"
 msgstr "Tudalen wedi ei hychwanegu at eich Rhestr Ddarllen"
 
-#: reading_list_failed
-msgid "Failed to add page to your Reading List"
-msgstr "Methwyd ychwanegu tudalen i'ch Rhestr Darllen"
-
 #: reading_list_duplicate
 msgid "Page already in your Reading List"
 msgstr "Tudalen eisoes ar eich Rhestr Ddarllen"
+
+#. Localization note (reading_list_time_minutes2) : This string is used in the "Reading List"
+#. panel on the home page to give the user an estimate of how many minutes it will take to
+#. read an article. The word "minute" should be abbreviated if possible.
+#: reading_list_time_minutes2
+msgid "&formatD; min"
+msgstr ""
+
+#: reading_list_time_over_an_hour
+msgid "Over an hour"
+msgstr ""
 
 #. Localization note : These strings are used as alternate text for accessibility.
 #. They are not visible in the UI.
@@ -1256,6 +1263,13 @@ msgstr "Hoff Wefannau"
 msgid "Add a site"
 msgstr "Ychwanegu gwefan"
 
+#. Localization note (home_title): This string should be kept in sync
+#. with the page title defined in aboutHome.dtd
+#: home_title
+#, fuzzy
+msgid "&brandShortName; Home"
+msgstr "Gadael &brandShortName;"
+
 #: home_history_title
 msgctxt "home_history_title"
 msgid "History"
@@ -1292,6 +1306,13 @@ msgstr "Agor y cyfan"
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
 msgstr "Bydd gwefannau diweddar i'w gweld yma."
+
+#. Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
+#. The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining.
+#: home_most_recent_emptyhint2
+msgid ""
+"Psst: using a &formatS1;New Private Tab&formatS2; won't save your history."
+msgstr ""
 
 #: home_reading_list_empty
 msgid "Articles you save for later show up here."
@@ -1452,6 +1473,14 @@ msgstr "Rydych wedi cysylltu â"
 msgid "which is run by"
 msgstr "sy'n cael ei redeg gan"
 
+#: identity_no_info
+msgid "This website does not supply identity information."
+msgstr "Nid yw'r wefan yn darparu gwybodaeth hunaniaeth."
+
+#: identity_not_encrypted
+msgid "Your connection to this website is not encrypted."
+msgstr ""
+
 #. Mixed content notifications in site identity popup
 #: loaded_mixed_content_message
 msgid "This page is displaying content that isn't secure."
@@ -1468,6 +1497,24 @@ msgstr ""
 "Bydd y rhan fwyaf o wefannau yn gweithio hyd yn oed pan fydd y cynnwys wedi "
 "ei rwystro."
 
+#. Tracking content notifications in site identity popup
+#: loaded_tracking_content_message_top
+msgid "Tracking protection disabled."
+msgstr ""
+
+#: loaded_tracking_content_message_bottom
+msgid "Parts of this page may track your online activity."
+msgstr ""
+
+#: blocked_tracking_content_message_top2
+msgid "Tracking protection enabled."
+msgstr ""
+
+#: blocked_tracking_content_message_bottom2
+msgid "Parts of the page that track your online activity have been blocked."
+msgstr ""
+
+#. Common mixed and tracking content strings in site identity popup
 #: learn_more
 msgid "Learn More"
 msgstr "Dysgu Rhagor"
@@ -1542,10 +1589,6 @@ msgstr "Ap"
 #: searchable_description
 msgid "Bookmarks and history"
 msgstr "Nodau Tudalen a hanes"
-
-#: devtools_remote_debugging_forward
-msgid "Don't forget to set up port forwarding!"
-msgstr "Peidiwch anghofio gosod blaenyrru porth!"
 
 #. Updater notifications
 #: updater_start_title2
@@ -1655,7 +1698,7 @@ msgstr "…"
 msgid ":"
 msgstr ":"
 
-#. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
+#. These are only used for accessibility for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
 msgctxt "actionbar_menu"
@@ -1675,6 +1718,31 @@ msgstr "Gorffen"
 #: remote_tabs_last_synced
 msgid "Last synced: &formatS;"
 msgstr "Cydweddwyd diwethaf: &formatS;"
+
+#. Find-In-Page strings
+#. This is meant to appear as an icon that changes color
+#. if match-case is activated. i.e. No more than two letters, one uppercase, one lowercase.
+#: find_matchcase
+msgid "Aa"
+msgstr "Aa"
+
+#~ msgid "Tracking"
+#~ msgstr "Tracio"
+
+#~ msgid "Tell sites that I do not want to be tracked"
+#~ msgstr "Dweud wrth wefannau: dim tracio"
+
+#~ msgid "Tell sites that I want to be tracked"
+#~ msgstr "Dweud wrth wefannau rwyf am gael fy nrhacio"
+
+#~ msgid "Do not tell sites anything about my tracking preferences"
+#~ msgstr "Dweud dim wrth wefannau am fy newisiadau tracio"
+
+#~ msgid "Failed to add page to your Reading List"
+#~ msgstr "Methwyd ychwanegu tudalen i'ch Rhestr Darllen"
+
+#~ msgid "Don't forget to set up port forwarding!"
+#~ msgstr "Peidiwch anghofio gosod blaenyrru porth!"
 
 #~ msgid "Always clear when quitting"
 #~ msgstr "Clirio wrth adael, bob tro"
@@ -1948,11 +2016,6 @@ msgstr "Cydweddwyd diwethaf: &formatS;"
 
 #~ msgid "Reader Mode"
 #~ msgstr "Modd Darllen"
-
-#, fuzzy
-#~ msgctxt "updater_start_title"
-#~ msgid "&brandShortName;"
-#~ msgstr "Gadael &brandShortName;"
 
 #, fuzzy
 #~ msgctxt "updater_apply_title"

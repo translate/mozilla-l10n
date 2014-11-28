@@ -1,9 +1,9 @@
-#. extracted from /home/dwayne/mozilla/firefox/templates-en-US/mobile/android/base/android_strings.dtd, /home/dwayne/mozilla/firefox/build/l10n/br/mobile/android/base/android_strings.dtd
+#. extracted from ./mobile/android/base/android_strings.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-07 13:56+0000\n"
+"POT-Creation-Date: 2014-11-28 20:23+0000\n"
 "PO-Revision-Date: 2014-11-08 10:55+0000\n"
 "Last-Translator: mnedeleg <mnedeleg@yahoo.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1415444116.000000\n"
@@ -561,21 +561,13 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "Diweredekaet"
 
-#: pref_donottrack_menu
-msgid "Tracking"
-msgstr "Heuliañ ho roudoù"
+#: pref_donottrack_title
+msgid "Do not track"
+msgstr ""
 
-#: pref_donottrack_disallow_tracking
-msgid "Tell sites that I do not want to be tracked"
-msgstr "Lavarout d'al lec'hiennoù ne fell ket din bezañ heuliet."
-
-#: pref_donottrack_allow_tracking
-msgid "Tell sites that I want to be tracked"
-msgstr "Lavarout d'al lec'hiennoù e fell din bezañ heuliet."
-
-#: pref_donottrack_no_pref
-msgid "Do not tell sites anything about my tracking preferences"
-msgstr "Na lavarout tra ebet d'al lec'hiennoù a-zivout ma gwellvezioù heuliañ."
+#: pref_donottrack_summary
+msgid "&brandShortName; will tell sites that you do not want to be tracked"
+msgstr ""
 
 #: pref_char_encoding
 msgid "Character encoding"
@@ -700,6 +692,14 @@ msgstr ""
 "arc'hant, neuze e c'hallomp neveziñ evel ma fell deomp hep bezañ levezonet e "
 "nep doare. Un arver gwellañ evidoc'h hag un dazont bravoc'h evit ar web a "
 "dalv an dra-mañ."
+
+#: pref_media_autoplay_enabled
+msgid "Allow autoplay"
+msgstr ""
+
+#: pref_media_autoplay_enabled_summary
+msgid "Control if websites can autoplay videos and other media content"
+msgstr ""
 
 #: pref_use_master_password
 msgid "Use master password"
@@ -1194,13 +1194,20 @@ msgstr "N'eus arventenn ebet da skarzhañ."
 msgid "Page added to your Reading List"
 msgstr "Pajennad ouzhpennet war ho roll lennadurioù"
 
-#: reading_list_failed
-msgid "Failed to add page to your Reading List"
-msgstr "C'hwitadenn war ouzhpennañ ar bajennad war ho roll lennadurioù"
-
 #: reading_list_duplicate
 msgid "Page already in your Reading List"
 msgstr "Emañ ar bajennad war ho roll lennadurioù endeo"
+
+#. Localization note (reading_list_time_minutes2) : This string is used in the "Reading List"
+#. panel on the home page to give the user an estimate of how many minutes it will take to
+#. read an article. The word "minute" should be abbreviated if possible.
+#: reading_list_time_minutes2
+msgid "&formatD; min"
+msgstr ""
+
+#: reading_list_time_over_an_hour
+msgid "Over an hour"
+msgstr ""
 
 #. Localization note : These strings are used as alternate text for accessibility.
 #. They are not visible in the UI.
@@ -1265,6 +1272,12 @@ msgstr "Lec'hiennoù e-touez re wellañ"
 msgid "Add a site"
 msgstr "Ouzhpennañ ul lec'hienn"
 
+#. Localization note (home_title): This string should be kept in sync
+#. with the page title defined in aboutHome.dtd
+#: home_title
+msgid "&brandShortName; Home"
+msgstr "Skoazell &brandShortName;"
+
 #: home_history_title
 msgctxt "home_history_title"
 msgid "History"
@@ -1301,6 +1314,13 @@ msgstr "Digeriñ an holl anezho"
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
 msgstr "Skrammet e vez al lec'hiennoù nevez gweladennet amañ."
+
+#. Localization note (home_most_recent_emptyhint2): "Psst" is a sound that might be used to attract someone's attention unobtrusively, and intended to hint at Private Browsing to the user.
+#. The placeholders &formatS1; and &formatS2; are used to mark the location of text underlining.
+#: home_most_recent_emptyhint2
+msgid ""
+"Psst: using a &formatS1;New Private Tab&formatS2; won't save your history."
+msgstr ""
 
 #: home_reading_list_empty
 msgid "Articles you save for later show up here."
@@ -1461,6 +1481,14 @@ msgstr "Kennasket oc'h ouzh"
 msgid "which is run by"
 msgstr "hag a zo lañset gant"
 
+#: identity_no_info
+msgid "This website does not supply identity information."
+msgstr ""
+
+#: identity_not_encrypted
+msgid "Your connection to this website is not encrypted."
+msgstr ""
+
 #. Mixed content notifications in site identity popup
 #: loaded_mixed_content_message
 msgid "This page is displaying content that isn't secure."
@@ -1477,6 +1505,24 @@ msgstr ""
 "An darn vrasañ eus al lec'hiennoù a yelo en-dro ent dereat ha pa vo harzet "
 "an endalc'had-mañ."
 
+#. Tracking content notifications in site identity popup
+#: loaded_tracking_content_message_top
+msgid "Tracking protection disabled."
+msgstr ""
+
+#: loaded_tracking_content_message_bottom
+msgid "Parts of this page may track your online activity."
+msgstr ""
+
+#: blocked_tracking_content_message_top2
+msgid "Tracking protection enabled."
+msgstr ""
+
+#: blocked_tracking_content_message_bottom2
+msgid "Parts of the page that track your online activity have been blocked."
+msgstr ""
+
+#. Common mixed and tracking content strings in site identity popup
 #: learn_more
 msgid "Learn More"
 msgstr "Gouzout hiroc'h"
@@ -1551,10 +1597,6 @@ msgstr "Arload"
 #: searchable_description
 msgid "Bookmarks and history"
 msgstr "Sinedoù ha roll istor"
-
-#: devtools_remote_debugging_forward
-msgid "Don't forget to set up port forwarding!"
-msgstr "N'ankouait ket kefluniañ ar porzh treuzkas !"
 
 #. Updater notifications
 #: updater_start_title2
@@ -1663,7 +1705,7 @@ msgstr "…"
 msgid ":"
 msgstr ":"
 
-#. These are only used for accessiblity for the done and overflow-menu buttons in the actionbar.
+#. These are only used for accessibility for the done and overflow-menu buttons in the actionbar.
 #. They are never shown to users
 #: actionbar_menu
 msgctxt "actionbar_menu"
@@ -1683,3 +1725,29 @@ msgstr "Graet"
 #: remote_tabs_last_synced
 msgid "Last synced: &formatS;"
 msgstr "Goubredañ diwezhañ : &formatS;"
+
+#. Find-In-Page strings
+#. This is meant to appear as an icon that changes color
+#. if match-case is activated. i.e. No more than two letters, one uppercase, one lowercase.
+#: find_matchcase
+msgid "Aa"
+msgstr "Aa"
+
+#~ msgid "Tracking"
+#~ msgstr "Heuliañ ho roudoù"
+
+#~ msgid "Tell sites that I do not want to be tracked"
+#~ msgstr "Lavarout d'al lec'hiennoù ne fell ket din bezañ heuliet."
+
+#~ msgid "Tell sites that I want to be tracked"
+#~ msgstr "Lavarout d'al lec'hiennoù e fell din bezañ heuliet."
+
+#~ msgid "Do not tell sites anything about my tracking preferences"
+#~ msgstr ""
+#~ "Na lavarout tra ebet d'al lec'hiennoù a-zivout ma gwellvezioù heuliañ."
+
+#~ msgid "Failed to add page to your Reading List"
+#~ msgstr "C'hwitadenn war ouzhpennañ ar bajennad war ho roll lennadurioù"
+
+#~ msgid "Don't forget to set up port forwarding!"
+#~ msgstr "N'ankouait ket kefluniañ ar porzh treuzkas !"
