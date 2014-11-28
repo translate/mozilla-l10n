@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-06-25 03:21+0000\n"
 "Last-Translator: Robert <robert.reyes@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1372130461.000000\n"
@@ -280,13 +280,14 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Ang pahinang binabasa mo ay hindi naka-encrypt."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
@@ -294,44 +295,23 @@ msgstr ""
 "Ang pahina na iyong tinitingnan ay naka-encrypt bago na ipinadala sa "
 "Internet."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr "Polisiya sa paggamit sa takbo ngan Mozilla sa Komunidad.!"
-
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr ""
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"The web site %S is using low-grade encryption for the page you are viewing."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"Mababang-grade na encryption ay maaaring pahintulutan ang ilang mga di-"
-"awtorisadong tao upang tingnan ang impormasyon na ito."
 
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "Bahaging Nakakripta ang Koneksiyon"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"Mga bahagi ng pahina na iyong tinitingnan ay hindi naka-encrypt bago na "
-"ipinadala sa Internet."
 
 #. #Cert Viewer
 #: certDetails
@@ -583,34 +563,30 @@ msgstr ""
 msgid "Wrong Site"
 msgstr "Maling Site"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
-"Sertipiko ay nabibilang sa iba't ibang mga site, na maaaring magpahiwatig ng "
-"isang pagnanakaw ng pagkakakilanlan."
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "Outdated na impormasyon"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"Sertipiko ay kasalukuyang hindi wasto. Ito ay imposibleng i-verify kung ang "
-"pagkakakilanlan ito ay iniuulat bilang ninakaw o nawala."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr ""
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 
 #: addExceptionValidShort
@@ -630,16 +606,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "Sinusuring Impormasyon"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "Sinusubukang kilalanin ang site."
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "Walang available na impormasyon"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "Hindi makuha ang katayuan ng pagkakakilanlan para sa naibigay na site."
 
 #: addExceptionConnectionFailed
@@ -655,6 +633,40 @@ msgstr "Mayroon na ang Certificate"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr ""
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "The web site %S is using low-grade encryption for the page you are "
+#~ "viewing."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "Mababang-grade na encryption ay maaaring pahintulutan ang ilang mga di-"
+#~ "awtorisadong tao upang tingnan ang impormasyon na ito."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "Mga bahagi ng pahina na iyong tinitingnan ay hindi naka-encrypt bago na "
+#~ "ipinadala sa Internet."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr ""
+#~ "Sertipiko ay nabibilang sa iba't ibang mga site, na maaaring magpahiwatig "
+#~ "ng isang pagnanakaw ng pagkakakilanlan."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "Sertipiko ay kasalukuyang hindi wasto. Ito ay imposibleng i-verify kung "
+#~ "ang pagkakakilanlan ito ay iniuulat bilang ninakaw o nawala."
 
 #~ msgid "None"
 #~ msgstr "Wala"

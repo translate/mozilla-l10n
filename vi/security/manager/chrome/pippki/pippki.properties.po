@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-10-16 14:31+0000\n"
 "Last-Translator: Đặng <thanhdd.it@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1381933904.000000\n"
@@ -281,61 +281,40 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Trang bạn đang xem không được mã hóa."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Kết nối được Mật hóa: Mật hóa Cấp cao (khóa %1$S, %2$S bit)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr ""
 "Trang bạn đang xem được mã hóa trước khi nó được truyền tải trên Internet."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "Việc mã hóa khiến cho những người - vốn không được phép - sẽ gặp nhiều khó "
 "khăn khi muốn xem thông tin truyền tải giữa các máy tính. Do đó ít khả năng "
 "có người nào đó đọc được trang này khi nó di chuyển qua các hệ thống mạng."
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Kết nối được Mật hóa: Mật hóa Cấp thấp (khóa %1$S, %2$S bit)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"Trang web %S đang dùng một phương pháp mã hóa mức thấp cho trang bạn đang "
-"xem."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"Mã hóa mức thấp có thể để cho một vài người - vốn không được phép - xem được "
-"thông tin này."
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "Kết nối được Mã hóa Từng phần"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"Một số phần của trang bạn đang xem không được mã hóa trước khi được truyền "
-"tải trên Internet."
 
 #. #Cert Viewer
 #: certDetails
@@ -581,33 +560,31 @@ msgstr "Trang này đang cố định danh chính nó bằng thông tin bất h�
 msgid "Wrong Site"
 msgstr "Sai Trang"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
-"Chứng thư thuộc về trang khác, cho thấy đây có thể là ăn cắp định danh."
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "Thông tin Lỗi thời"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"Chứng thư hiện tại không hợp lệ. Không thể xác minh được liệu định danh này "
-"có bị mất hoặc bị ăn cắp hay không."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "Định danh chưa biết"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
+#, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "Chứng thư không đáng tin vì không được chứng thực bằng chữ kí bảo mật bởi "
 "một hãng đã biết."
@@ -628,16 +605,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "Đang kiểm tra Thông tin"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "Đang cố định danh trang…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "Không có Thông tin Hiện hữu"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "Không thể thu thập tình trạng định danh cho trang được đưa ra."
 
 #: addExceptionConnectionFailed
@@ -652,6 +631,45 @@ msgstr "Chứng thư tồn tại"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Chứng chỉ đã tồn tại sẵn."
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "Kết nối được Mật hóa: Mật hóa Cấp cao (khóa %1$S, %2$S bit)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "Kết nối được Mật hóa: Mật hóa Cấp thấp (khóa %1$S, %2$S bit)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "Trang web %S đang dùng một phương pháp mã hóa mức thấp cho trang bạn đang "
+#~ "xem."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "Mã hóa mức thấp có thể để cho một vài người - vốn không được phép - xem "
+#~ "được thông tin này."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "Một số phần của trang bạn đang xem không được mã hóa trước khi được "
+#~ "truyền tải trên Internet."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr ""
+#~ "Chứng thư thuộc về trang khác, cho thấy đây có thể là ăn cắp định danh."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "Chứng thư hiện tại không hợp lệ. Không thể xác minh được liệu định danh "
+#~ "này có bị mất hoặc bị ăn cắp hay không."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

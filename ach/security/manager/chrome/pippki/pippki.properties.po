@@ -102,7 +102,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2014-06-29 19:19+0000\n"
 "Last-Translator: mofire <mofistone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,7 +111,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -370,54 +370,38 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Pot buk ma itye kaneno ni pe gicono."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Gi cono Kube: Coc me rwom-Ma lamal (%1$S, %2$S lagony me bit)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr "Pot buk ma itye kaneno gicono woko mapwod gicwalo iwi Intanet."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "Coyo mino bedo tek pi jo mape ki twero me neno ngec mawoto ikin kompiuta. "
 "Man pe romo mino dano mo kwano pot buk calo woto arii i kakube me wiyamo."
-
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Kicono Kube: Coc me rwom-Ma piny (%1$S, %2$S lagony bit)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"Kakube me web %S tye katic ki coc me rwom-ma piny pi pot buk ma itye kaneno."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr "Coc me rwom-ma piny romo weko jo mape ki twero me neno ngec man."
 
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "Kicono Kube Maber"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
-msgstr "Dul kom pot buk ma itye kaneno gucono woko mapwod gicwalo iwi intanet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
+msgstr ""
 
 #. #Cert Viewer
 #: certDetails
@@ -661,32 +645,31 @@ msgstr "Di bar man temo nyute kene kwede ngec mape tiyo."
 msgid "Wrong Site"
 msgstr "Di bar Marac"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
-msgstr "Waraga obedo pa di bar mukene, ma romo nyutu kwo me tikitiki."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
+msgstr ""
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "Ngec ma Kare ne okato"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"Waraga pe tye katic. Pe twere me moko ka tikitiki man gicwalo ngec ni "
-"gikwalo onyo orweny."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "Tikitiki Mape ngene"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
+#, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "Waraga ne pe gene, pien pe ki moko ada ne ki jang twero ma tiyo ki keto cing "
 "matye ki ber bedo."
@@ -705,16 +688,18 @@ msgstr "Di bar man poko matiyo, nyut ma gimoko.  Weko dong pe mite me ameda."
 msgid "Checking Information"
 msgstr "Tye ka roto Ngec"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "Tye ka temo nyutu di bar…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "Ngec pe tye"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "Pe romo bedo ki kit me nyut pi di bar ma ki miyo."
 
 #: addExceptionConnectionFailed
@@ -729,6 +714,41 @@ msgstr "Waraga tye"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Waraga dong bene dong tye."
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "Gi cono Kube: Coc me rwom-Ma lamal (%1$S, %2$S lagony me bit)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "Kicono Kube: Coc me rwom-Ma piny (%1$S, %2$S lagony bit)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "Kakube me web %S tye katic ki coc me rwom-ma piny pi pot buk ma itye "
+#~ "kaneno."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr "Coc me rwom-ma piny romo weko jo mape ki twero me neno ngec man."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "Dul kom pot buk ma itye kaneno gucono woko mapwod gicwalo iwi intanet."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr "Waraga obedo pa di bar mukene, ma romo nyutu kwo me tikitiki."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "Waraga pe tye katic. Pe twere me moko ka tikitiki man gicwalo ngec ni "
+#~ "gikwalo onyo orweny."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

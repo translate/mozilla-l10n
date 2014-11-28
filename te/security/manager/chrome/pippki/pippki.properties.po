@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-12-02 20:32+0630\n"
 "Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <kde-i18n-doc@kde.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1373625706.000000\n"
@@ -278,57 +278,39 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "మీరు  చూస్తున్నటువంటి  పేజీ ఎన్క్రిప్ట్  చేయబడిందికాదు."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "అనుసంధానం  ఎన్క్రిప్టుచేయబడింది:ఎక్కువ-గ్రేడ్  ఎన్క్రిప్షన్ (%1$S, %2$S bit keys)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr "ఇటర్నెట్‌ ద్వారా  బదిలికరణ  జరగకమునుపే  మీరు  చూస్తున్నటువంటి  పేజీ ఎన్క్రిప్టుచేయబడింది."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "సమాచారం  కంప్యూటర్ల  మద్య  ప్రయాణిస్తున్నప్పుడు  ఆధరైజేషన్  లేనివారు  దానిని  చూడుట  ఎన్క్రిప్షన్   "
 "కష్టతరం  చేస్తుంది.అందువలన  నెట్వర్క్ గుండా  ప్రయాణంచేస్తున్నప్పుడు  దీనిని  చదువుట  అసాధారణం  "
 "అవుతుంది."
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "అనుసంధానం  ఎన్క్రిప్టుచేయబడింది:తక్కువ-గ్రేడ్  ఎన్క్రిప్షన్ (%1$S, %2$S bit keys)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr "వెబ్ సైటు   %S మీరు  చూస్తన్నటువంటి  పేజీకి  తక్కువ-గ్రేడ్  ఎన్క్రిప్షన్‌ను  వుపయోగిస్తుంది."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"తక్కువ-గ్రేడు  ఎన్క్రిప్షన్  ఆధరైజ్డుకాని  కొంతమందిని  ఈ  సమచారం  దర్శించుటకు అనుమతినీయవచ్చు."
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "అనుసంధానం  పరోక్షంగా  ఎన్క్రిప్ట్  చేయబడింది."
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"అంతర్జాలమునందు  బదిలీకరించకమునుపు  మీరు  చూస్తున్నటువంటి  పేజీయొక్క  పార్టులు  "
-"ఎన్క్రిప్టుచేయబడలేదు."
 
 #. #Cert Viewer
 #: certDetails
@@ -573,32 +555,31 @@ msgstr "సరికాని సమాచారంతో ఈ సైటు త�
 msgid "Wrong Site"
 msgstr "తప్పు సైటు"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
-msgstr "ధృవీకరణపత్రం వేరొకసైటుకు చెందినది,ఇది గుర్తింపు దొంగతనాన్ని సూచిస్తోంది."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
+msgstr ""
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "కాలముమీరిన సమాచారం"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"ధృవీకరణపత్రం ప్రస్తుతం చెల్లునదికాదు.ఈగుర్తింపు దొంగిలించబడినదని నివేదించివుందా లేదా పోయినదని "
-"నివేదించివుందా అనునది నిర్ధారించుట అసాధ్యం."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "తెలియని గుర్తింపు"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
+#, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "ధృవీకరణపత్రం నమ్మలేము, ఎంచేతంటే ఇది గుర్తింపుపొందిన అధికారికంచేత సురక్షిత సంతకం వుపయోగించి "
 "నిర్ధారించబడలేదు."
@@ -617,16 +598,18 @@ msgstr "ఈ సైటు చెల్లునటువంటి, నిర్�
 msgid "Checking Information"
 msgstr "సమాచారాన్ని పరిశీలిస్తోంది"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "సైటును గుర్తించుటకు ప్రయత్నిస్తోంది…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "ఏ సమాచారం అందుబాటులోలేదు."
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "ఇచ్చిన సైటుకు గుర్తింపు స్థితిని పొందలేదు."
 
 #: addExceptionConnectionFailed
@@ -641,6 +624,42 @@ msgstr "ధృవీకరణపత్రం వుంది"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "ధృవీకరణపత్రం  ఇప్పటికే  వుంది."
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "అనుసంధానం  ఎన్క్రిప్టుచేయబడింది:ఎక్కువ-గ్రేడ్  ఎన్క్రిప్షన్ (%1$S, %2$S bit keys)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "అనుసంధానం  ఎన్క్రిప్టుచేయబడింది:తక్కువ-గ్రేడ్  ఎన్క్రిప్షన్ (%1$S, %2$S bit keys)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "వెబ్ సైటు   %S మీరు  చూస్తన్నటువంటి  పేజీకి  తక్కువ-గ్రేడ్  ఎన్క్రిప్షన్‌ను  వుపయోగిస్తుంది."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "తక్కువ-గ్రేడు  ఎన్క్రిప్షన్  ఆధరైజ్డుకాని  కొంతమందిని  ఈ  సమచారం  దర్శించుటకు అనుమతినీయవచ్చు."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "అంతర్జాలమునందు  బదిలీకరించకమునుపు  మీరు  చూస్తున్నటువంటి  పేజీయొక్క  పార్టులు  "
+#~ "ఎన్క్రిప్టుచేయబడలేదు."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr "ధృవీకరణపత్రం వేరొకసైటుకు చెందినది,ఇది గుర్తింపు దొంగతనాన్ని సూచిస్తోంది."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "ధృవీకరణపత్రం ప్రస్తుతం చెల్లునదికాదు.ఈగుర్తింపు దొంగిలించబడినదని నివేదించివుందా లేదా పోయినదని "
+#~ "నివేదించివుందా అనునది నిర్ధారించుట అసాధ్యం."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2014-09-30 08:52+0000\n"
 "Last-Translator: Kaniska <email@kaniska.in>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1412067136.000000\n"
@@ -278,57 +278,39 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "जेह्‌ड़ा सफा तुस दिक्खा करदे ओ, ओह् गुप्त-लिखत नेईं ऐ."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "कनैकेशन एन्क्रिप्ट: उच्च-ग्रेड एन्क्रिप्शन (%1$S, %2$S बिट कुंजियां)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr "जेह्‌ड़ा सफा तुस दिक्खा करदे ओ, उसगी  इंटरनैट्ट पर भेजने शा पैह्‌लें गुप्त-लिखत कीता हा."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "गुप्त-लेखन, बिजन अधिकार लोकें लेई कंप्यूटरें बश्कार चलदी जानकारी गी दिक्खना मुश्कल करी दिंदा "
 "ऐ. इस दी संभावना बड़ी घट्ट ऐ जे जिसलै एह् सफा सारे नैट्टवर्क उप्पर चलदा ऐ तां कोई इसी "
 "पढ़ी लै.  "
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "कनैकेशन एन्क्रिप्ट: घट्ट-ग्रेड एन्क्रिप्शन (%1$S, %2$S बिट कुंजियां)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"जेह्‌ड़ा सफा तुस दिक्खा करदे ओ %Sवैबसाइट उस सफे आस्तै घट्ट-ग्रेड एन्क्रिप्शन बरता करदी ऐ."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"होई सकदा ऐ जे घट्ट स्तर दा गुप्त-लेखन किश बिजन अधिकार लोकें एह् जानकारी दिक्खन देऐ. "
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "कनैक्शन आंशक तौरा पर गुप्त-लिखत"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"सफे दे ओह् हिस्से, जेह्‌ड़े तुस दिक्खा करदे ओ, इंटरनैट्ट पर भेजने शा पैह्‌लें गुप्त-लिखत नेईं कीते दे हे."
 
 #. #Cert Viewer
 #: certDetails
@@ -569,32 +551,31 @@ msgstr "एह् साइट अपनी शनाखत अमान्य �
 msgid "Wrong Site"
 msgstr "गल्त साइट"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "परानी जानकारी"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"सर्टिफिकेट इसलै मान्य नेईं ऐ.एह् पड़तालना नांमुमकन ऐ जे क्या इस शनाखत दी रपोट चोरी होए दे "
-"जां गुआचे दे तौर पर कीती गेई ही ."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "अनजांती शनाखत"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
+#, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "सर्टिफिकेट भरोसेमंद नेईं ऐ की जे सुरक्षत दस्खत बरतियै कुसै मान्यता-प्राप्त अथार्टी द्वारा इसदी "
 "तस्दीक नेईं कीती गेदी ."
@@ -615,16 +596,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "जाच जानकारी"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "साइट दी शनाखत करने दा प्रयास कीता जा करदा ऐ…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "कोई जानकारी उपलब्ध नेईं"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "दित्ती गेदी साइट लेई शनाखतीकरण वस्तु-स्थिति लैने च असमर्थ."
 
 #: addExceptionConnectionFailed
@@ -640,3 +623,34 @@ msgstr "सर्टिफिकेट फाइलां"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr ""
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "कनैकेशन एन्क्रिप्ट: उच्च-ग्रेड एन्क्रिप्शन (%1$S, %2$S बिट कुंजियां)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr "कनैकेशन एन्क्रिप्ट: घट्ट-ग्रेड एन्क्रिप्शन (%1$S, %2$S बिट कुंजियां)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "जेह्‌ड़ा सफा तुस दिक्खा करदे ओ %Sवैबसाइट उस सफे आस्तै घट्ट-ग्रेड एन्क्रिप्शन बरता करदी ऐ."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "होई सकदा ऐ जे घट्ट स्तर दा गुप्त-लेखन किश बिजन अधिकार लोकें एह् जानकारी दिक्खन देऐ. "
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "सफे दे ओह् हिस्से, जेह्‌ड़े तुस दिक्खा करदे ओ, इंटरनैट्ट पर भेजने शा पैह्‌लें गुप्त-लिखत नेईं कीते दे "
+#~ "हे."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "सर्टिफिकेट इसलै मान्य नेईं ऐ.एह् पड़तालना नांमुमकन ऐ जे क्या इस शनाखत दी रपोट चोरी "
+#~ "होए दे जां गुआचे दे तौर पर कीती गेई ही ."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-04 11:03+0000\n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
 "PO-Revision-Date: 2013-11-06 11:23+0000\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: I have a very cool team\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1383736984.000000\n"
@@ -292,60 +292,40 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Die bladsy wat u bekyk, is nie geënkripteer nie."
 
-#. # LOCALIZATION NOTE (pageInfo_StrongEncryptionWithBits): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
-#: pageInfo_StrongEncryptionWithBits
-msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Verbinding geënkripteer: Hoëgraad-enkripsie (%1$S, %2$S bissleutels)"
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr ""
 "Die bladsy wat u bekyk, is geënkripteer voor dit oor die internet versend is."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "Enkripsie maak dit baie moeilik vir ongemagtigde mense om inligting wat "
 "tussen rekenaars beweeg, te bekyk. Dit is dus baie onwaarskynlik dat enige "
 "iemand hierdie bladsy lees wanneer dit oor die netwerk oorgedra word."
 
-#. # LOCALIZATION NOTE (pageInfo_WeakEncryptionWithBits): %1$S is the name of the encryption standard,
-#. # %2$S is the key size of the cipher.
-#: pageInfo_WeakEncryptionWithBits
-msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
-msgstr "Verbinding geënkripteer: Laegraad-enkripsie (%1$S, %2$S bissleutels)"
-
-#: pageInfo_Privacy_Weak1
-msgid ""
-"The website %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"Die webwerf %S gebruik laegraadse enkripsie vir die bladsy wat u bekyk."
-
-#: pageInfo_Privacy_Weak2
-msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
-msgstr ""
-"Laegraadse enkripsie kan sekere ongemagtigde mense toelaat om hierdie "
-"inligting te gebruik."
-
 #: pageInfo_MixedContent
 msgid "Connection Partially Encrypted"
 msgstr "Verbinding gedeeltelik geënkripteer"
 
-#: pageInfo_Privacy_Mixed1
+#: pageInfo_Privacy_Broken1
 msgid ""
-"Parts of the page you are viewing were not encrypted before being "
-"transmitted over the Internet."
+"Parts of the page you are viewing were not encrypted or the encryption is "
+"not strong enough before being transmitted over the Internet."
 msgstr ""
-"Dele van die bladsy wat u bekyk, is nie geënkripteer voor dit oor die "
-"internet versend is nie."
 
 #. #Cert Viewer
 #: certDetails
@@ -592,34 +572,31 @@ msgstr "Hierdie werf probeer homself met ongeldige inligting identifiseer."
 msgid "Wrong Site"
 msgstr "Verkeerde werf"
 
-#: addExceptionDomainMismatchLong
+#: addExceptionDomainMismatchLong2
 msgid ""
-"Certificate belongs to a different site, which could indicate an identity "
-"theft."
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
 msgstr ""
-"Sertifikaat behoort aan 'n ander werf, wat op identiteitsdiefstal kan dui."
 
 #: addExceptionExpiredShort
 msgid "Outdated Information"
 msgstr "Verouderde inligting"
 
-#: addExceptionExpiredLong
+#: addExceptionExpiredLong2
 msgid ""
-"Certificate is not currently valid. It is impossible to verify whether this "
-"identity was reported as stolen or lost."
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
 msgstr ""
-"Sertifikaat is nie tans geldig nie. Dit is onmoontlik om te verifieer of "
-"hierdie identiteit as gesteel of vermis aangegee is."
 
 #: addExceptionUnverifiedOrBadSignatureShort
 msgid "Unknown Identity"
 msgstr "Onbekende identiteit"
 
-#: addExceptionUnverifiedOrBadSignatureLong
+#: addExceptionUnverifiedOrBadSignatureLong2
 #, fuzzy
 msgid ""
-"Certificate is not trusted, because it hasn't been verified by a recognized "
-"authority using a secure signature."
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
 msgstr ""
 "Sertifikaat nie vertrou nie omdat dit nie deur 'n erkende owerheid "
 "geverifieer is nie."
@@ -640,16 +617,18 @@ msgstr ""
 msgid "Checking Information"
 msgstr "Kontroleer van inligting"
 
-#: addExceptionCheckingLong
-msgid "Attempting to identify the site…"
+#: addExceptionCheckingLong2
+#, fuzzy
+msgid "Attempting to identify this site…"
 msgstr "Probeer tans die werf identifiseer…"
 
 #: addExceptionNoCertShort
 msgid "No Information Available"
 msgstr "Geen inligting beskikbaar nie"
 
-#: addExceptionNoCertLong
-msgid "Unable to obtain identification status for the given site."
+#: addExceptionNoCertLong2
+#, fuzzy
+msgid "Unable to obtain identification status for this site."
 msgstr "Kon nie identifikasiestatus vir gegewe werf verkry nie."
 
 #: addExceptionConnectionFailed
@@ -665,6 +644,46 @@ msgstr "Sertifikaatlêers"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Die sertifikaat bestaan reeds."
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr ""
+#~ "Verbinding geënkripteer: Hoëgraad-enkripsie (%1$S, %2$S bissleutels)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%1$S, %2$S bit keys)"
+#~ msgstr ""
+#~ "Verbinding geënkripteer: Laegraad-enkripsie (%1$S, %2$S bissleutels)"
+
+#~ msgid ""
+#~ "The website %S is using low-grade encryption for the page you are viewing."
+#~ msgstr ""
+#~ "Die webwerf %S gebruik laegraadse enkripsie vir die bladsy wat u bekyk."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "Laegraadse enkripsie kan sekere ongemagtigde mense toelaat om hierdie "
+#~ "inligting te gebruik."
+
+#~ msgid ""
+#~ "Parts of the page you are viewing were not encrypted before being "
+#~ "transmitted over the Internet."
+#~ msgstr ""
+#~ "Dele van die bladsy wat u bekyk, is nie geënkripteer voor dit oor die "
+#~ "internet versend is nie."
+
+#~ msgid ""
+#~ "Certificate belongs to a different site, which could indicate an identity "
+#~ "theft."
+#~ msgstr ""
+#~ "Sertifikaat behoort aan 'n ander werf, wat op identiteitsdiefstal kan dui."
+
+#~ msgid ""
+#~ "Certificate is not currently valid. It is impossible to verify whether "
+#~ "this identity was reported as stolen or lost."
+#~ msgstr ""
+#~ "Sertifikaat is nie tans geldig nie. Dit is onmoontlik om te verifieer of "
+#~ "hierdie identiteit as gesteel of vermis aangegee is."
 
 #~ msgid ""
 #~ "The site '%S' has requested that you sign the following text message:"
