@@ -1,21 +1,22 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/dom/chrome/layout/css.properties
+#. extracted from ./dom/chrome/layout/css.properties
 msgid ""
 msgstr ""
-"Project-Id-Version: l 10n\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-11 10:29+0200\n"
-"PO-Revision-Date: 2011-12-07 14:21+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: \n"
+"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ny\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.1-pre\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: MimeNotCss
 msgid ""
@@ -57,8 +58,12 @@ msgstr ""
 msgid "Expected end of value but found '%1$S'."
 msgstr ""
 
-#: PESkipAtRuleEOF
-msgid "end of unknown at-rule"
+#: PERuleTrailing
+msgid "Expected end of rule but found '%1$S'."
+msgstr ""
+
+#: PESkipAtRuleEOF2
+msgid "end of at-rule"
 msgstr ""
 
 #: PEUnknownAtRule
@@ -85,6 +90,18 @@ msgstr ""
 msgid "Expected identifier in media list but found '%1$S'."
 msgstr ""
 
+#: PEGatherMediaReservedMediaType
+msgid "Found reserved keyword '%1$S' when looking for media type."
+msgstr ""
+
+#: PEParseSourceSizeListEOF
+msgid "length value for matched media condition"
+msgstr ""
+
+#: PEParseSourceSizeListNotComma
+msgid "Expected ',' after value but found '%1$S'"
+msgstr ""
+
 #: PEImportNotURI
 msgid "Expected URI in @import rule but found '%1$S'."
 msgstr ""
@@ -105,10 +122,10 @@ msgstr ""
 msgid "%1$S rule not allowed within @media or @-moz-document rule."
 msgstr ""
 
-#: PEMozDocRuleBadFunc
+#: PEMozDocRuleBadFunc2
 msgid ""
-"Expected url(), url-prefix(), or domain() in @-moz-document rule but found "
-"'%1$S'."
+"Expected url(), url-prefix(), domain() or regexp() in @-moz-document rule "
+"but found '%1$S'."
 msgstr ""
 
 #: PEMozDocRuleNotURI
@@ -180,12 +197,50 @@ msgstr ""
 msgid "Dangling combinator."
 msgstr ""
 
+#: PECounterStyleNotIdent
+msgid "Expected identifier for name of @counter-style rule."
+msgstr ""
+
+#: PECounterStyleBadName
+msgid "Name of @counter-style rule can't be '%1$S'."
+msgstr ""
+
+#: PECounterStyleBadBlockStart
+msgid "Expected '{' to begin @counter-style rule but found '%1$S'."
+msgstr ""
+
+#: PECounterStyleEOF
+msgid "closing '}' of @counter-style block"
+msgstr ""
+
+#: PECounterDescExpected
+msgid "Expected counter descriptor but found '%1$S'."
+msgstr ""
+
+#: PEUnknownCounterDesc
+msgid "Unknown descriptor '%1$S' in @counter-style rule."
+msgstr ""
+
+#: PECounterExtendsNotIdent
+msgid "Expected identifier for extends system but found '%1$S'."
+msgstr ""
+
+#: PECounterASWeight
+msgid ""
+"Each weight in the additive-symbols descriptor must be smaller than the "
+"previous weight."
+msgstr ""
+
 #: PEClassSelEOF
 msgid "class name"
 msgstr ""
 
 #: PEClassSelNotIdent
 msgid "Expected identifier for class selector but found '%1$S'."
+msgstr ""
+
+#: PECoordinatePair
+msgid "Expected coordinate pair but found '%1$S'."
 msgstr ""
 
 #: PETypeSelEOF
@@ -273,10 +328,16 @@ msgstr ""
 msgid "This pseudo-element must use the \"::\" form: '%1$S'."
 msgstr ""
 
-#: PEPseudoSelTrailing
+#: PEPseudoSelEndOrUserActionPC
 msgid ""
-"Found trailing token after pseudo-element, which must be the last part of a "
-"selector:  '%1$S'."
+"Expected end of selector or a user action pseudo-class after pseudo-element "
+"but found '%1$S'."
+msgstr ""
+
+#: PEPseudoSelNoUserActionPC
+msgid ""
+"Expected end of selector after pseudo-element that does not support user "
+"action pseudo-classes but found '%1$S'."
 msgstr ""
 
 #: PEPseudoSelMultiplePE
@@ -321,6 +382,12 @@ msgstr ""
 
 #: PEPseudoClassNoArg
 msgid "Missing argument in pseudo-class '%1$S'."
+msgstr ""
+
+#: PEPseudoClassNotUserAction
+msgid ""
+"Expected end of selector or a user action pseudo-class after pseudo-element "
+"but found pseudo-class '%1$S'."
 msgstr ""
 
 #: PESelectorEOF
@@ -381,6 +448,18 @@ msgstr ""
 
 #: PEExpectedNumber
 msgid "Expected a number but found '%1$S'."
+msgstr ""
+
+#: PEPositionEOF
+msgid "<position>"
+msgstr ""
+
+#: PEExpectedPosition
+msgid "Expected <position> but found '%1$S'."
+msgstr ""
+
+#: PEExpectedRadius
+msgid "Expected radius but found '%1$S'."
 msgstr ""
 
 #: PEExpectedCloseParen
@@ -475,33 +554,84 @@ msgstr ""
 msgid "Did not expect anonymous box."
 msgstr ""
 
+#: PEFFVUnexpectedEOF
+msgid "Unexpected end of @font-feature-values rule."
+msgstr ""
+
+#: PEFFVBlockStart
+msgid "Expected opening { of @font-feature-values rule but found '%1$S'."
+msgstr ""
+
+#: PEFFVValueSetStart
+msgid "Expected opening { of feature value set but found '%1$S'."
+msgstr ""
+
+#: PEFFVNoFamily
+msgid ""
+"Expected font family list for @font-feature-values rule but found '%1$S'."
+msgstr ""
+
+#: PEFFVUnexpectedBlockEnd
+msgid "Expected '}' to end @font-feature-values rule but found '%1$S'."
+msgstr ""
+
+#: PEFFVUnknownFontVariantPropValue
+msgid "Unknown font-variant property value '%1$S'."
+msgstr ""
+
+#: PEFFVExpectedIdent
+msgid "Expected identifier but found '%1$S'."
+msgstr ""
+
+#: PEFFVExpectedValue
+msgid "Expected non-negative integer value but found '%1$S'."
+msgstr ""
+
+#: PEFFVTooManyValues
+msgid "Too many values for feature type '%1$S'."
+msgstr ""
+
+#: PEFFVGenericInFamilyList
+msgid "Family list cannot contain generic font family name."
+msgstr ""
+
+#: PEFFVValueDefinitionTrailing
+msgid "Expected end of value definition but found '%1$S'."
+msgstr ""
+
 #: PEBadDirValue
 msgid "Expected 'ltr' or 'rtl' in direction selector but found '%1$S'."
 msgstr ""
 
-#: PESupportsConditionStartEOF
-msgid "'not' or '('"
+#: PESupportsConditionStartEOF2
+msgid "'not', '(', or function"
 msgstr ""
 
-#: PESupportsConditionInParensStartEOF
-msgid "'not', '(' or identifier"
+#: PESupportsConditionInParensEOF
+msgid "')'"
 msgstr ""
 
 #: PESupportsConditionNotEOF
 msgid "'not'"
 msgstr ""
 
-#: PESupportsConditionExpectedOpenParen
-msgid "Expected '(' while parsing supports condition but found '%1$S'."
+#: PESupportsWhitespaceRequired
+msgid "Expected whitespace after 'not', 'and', or 'or'."
+msgstr ""
+
+#: PESupportsConditionExpectedOpenParenOrFunction
+msgid ""
+"Expected '(' or function while parsing supports condition but found '%1$S'."
 msgstr ""
 
 #: PESupportsConditionExpectedCloseParen
 msgid "Expected ')' while parsing supports condition but found '%1$S'."
 msgstr ""
 
-#: PESupportsConditionExpectedStart
+#: PESupportsConditionExpectedStart2
 msgid ""
-"Expected 'not' or '(' while parsing supports condition but found '%1$S'."
+"Expected 'not', '(', or function while parsing supports condition but found "
+"'%1$S'."
 msgstr ""
 
 #: PESupportsConditionExpectedNot
@@ -510,4 +640,70 @@ msgstr ""
 
 #: PESupportsGroupRuleStart
 msgid "Expected '{' to begin @supports rule but found '%1$S'."
+msgstr ""
+
+#: PEFilterEOF
+msgid "filter"
+msgstr ""
+
+#: PEExpectedNoneOrURL
+msgid "Expected 'none' or URL but found '%1$S'."
+msgstr ""
+
+#: PEExpectedNoneOrURLOrFilterFunction
+msgid "Expected 'none', URL, or filter function but found '%1$S'."
+msgstr ""
+
+#: PEExpectedNonnegativeNP
+msgid "Expected non-negative number or percentage."
+msgstr ""
+
+#: PEFilterFunctionArgumentsParsingError
+msgid "Error in parsing arguments for filter function."
+msgstr ""
+
+#: PEVariableEOF
+msgid "variable"
+msgstr ""
+
+#: PEVariableEmpty
+msgid "Expected variable value but found '%1$S'."
+msgstr ""
+
+#: PEValueWithVariablesParsingError
+msgid "Error in parsing value for '%1$S' after substituting variables."
+msgstr ""
+
+#: PEValueWithVariablesFallbackInherit
+msgid "Falling back to 'inherit'."
+msgstr ""
+
+#: PEValueWithVariablesFallbackInitial
+msgid "Falling back to 'initial'."
+msgstr ""
+
+#: PEInvalidVariableReference
+msgid "Property contained reference to invalid variable."
+msgstr ""
+
+#: PEInvalidVariableTokenFallback
+msgid "Found invalid token '%1$S' at top level of variable reference fallback."
+msgstr ""
+
+#: PEExpectedVariableNameEOF
+msgid "identifier for variable name"
+msgstr ""
+
+#: PEExpectedVariableName
+msgid "Expected identifier for variable name but found '%1$S'."
+msgstr ""
+
+#: PEExpectedVariableFallback
+msgid "Expected variable reference fallback after ','."
+msgstr ""
+
+#: PEExpectedVariableCommaOrCloseParen
+msgid ""
+"Expected ',' or ')' after variable name in variable reference but found "
+"'%1$S'."
 msgstr ""
