@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-19 10:33+0100\n"
+"POT-Creation-Date: 2015-01-13 03:52+0000\n"
 "PO-Revision-Date: 2014-12-28 17:00+0000\n"
 "Last-Translator: Rimas <rq@akl.lt>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1419786056.000000\n"
@@ -209,29 +209,10 @@ msgstr ""
 "kas #2 mėnesio kiekvieną %1$S;kas #2 mėnesio kiekvieną %1$S;kas #2 mėnesio "
 "kiekvieną %1$S"
 
-#. # LOCALIZATION NOTE (monthlyDaysOfNth_ordSymbol):
-#. # Edit recurrence window -> Recurrence pattern -> Monthly repeat rules
-#. # Allows to insert a string, a character or a symbol after the numbers of a day
-#. # in a monthly rule monthlyDaysOfNth in order to give to each day number the
-#. # meaning of ordinal number (e.g.  1 -> 1st; 2 -> 2nd etc.).
-#. # Use a single string if the symbol used is the same for every monthday, otherwise
-#. # write a sequence of _31_ strings (one for every monthday) separated with commas.
-#. # If your language doesn't require that in monthlyDaysOfNth, leave it empty.
-#. # e.g.
-#. # monthlyDaysOfNth_ordSymbol=.
-#. #    -> "Occurs days 1., 2., 10. and 11. of every 2 months"
-#. # monthlyDaysOfNth_ordSymbol=st,nd,rd,th,th,th,th,th,th,th,th,th,th,th,th,
-#. #                            th,th,th,th,th,st,nd,rd,th,th,th,th,th,th,th,st
-#. #    -> "Occurs days 1st, 2nd, 10th and 11th of every 2 months"
-#: monthlyDaysOfNth_ordSymbol
-msgctxt "monthlyDaysOfNth_ordSymbol"
-msgid ""
-msgstr " "
-
 #. # LOCALIZATION NOTE (monthlyDaysOfNth_day):
 #. # Edit recurrence window -> Recurrence pattern -> Monthly repeat rules
-#. # %1$S - day of month or a sequence of days of month, eventually with ordinal symbol
-#. #        coming from monthlyDaysOfNth_ordSymbol, separated with commas;
+#. # %1$S - day of month or a sequence of days of month, possibly followed by an ordinal symbol
+#. #        (depending on the string dayOrdinalSymbol in dateFormat.properties) separated with commas;
 #. # e.g. "days 3, 6 and 9" or "days 3rd, 6th and 9th"
 #: monthlyDaysOfNth_day
 msgid "day %1$S;days %1$S"
@@ -239,8 +220,8 @@ msgstr "%1$S dieną;%1$S dienomis"
 
 #. # LOCALIZATION NOTE (monthlyDaysOfNth):
 #. # Edit recurrence window -> Recurrence pattern -> Monthly repeat rules
-#. # %1$S - it's the strig monthlyDaysOfNth_day: day of month or a sequence of days
-#. #        of month, eventually with ordinal symbol, separated with commas;
+#. # %1$S - it's the string monthlyDaysOfNth_day: day of month or a sequence of days
+#. #        of month, possibly followed by an ordinal symbol, separated with commas;
 #. # #2   - monthly interval
 #. # e.g. "days 3, 6, 9 and 12 of every 3 months"
 #: monthlyDaysOfNth
@@ -341,10 +322,12 @@ msgstr "paskutinę"
 
 #. # LOCALIZATION NOTE (yearlyNthOn):
 #. # Edit recurrence window -> Recurrence pattern -> Yearly repeat rules
-#. # %1$S - month
-#. # %2$S - day of month
-#. # #3 - yearly interval
+#. # %1$S - month name
+#. # %2$S - day of month possibly followed by an ordinal symbol (depending on the string
+#. #           dayOrdinalSymbol in dateFormat.properties)
+#. # #3   - yearly interval
 #. # e.g. "every 3 years on December 14"
+#. #      "every 2 years on December 8th"
 #: yearlyNthOn
 msgid "every %1$S %2$S;every #3 years on %1$S %2$S"
 msgstr ""
@@ -380,7 +363,7 @@ msgstr ""
 "kas #4 metus, %1$S %3$S %2$S;kas #4 metų, %1$S %3$S %2$S;kas #4 metus, %1$S "
 "%3$S %2$S"
 
-#. # LOCALIZATION NOTE (yearlyOnEveryNthOfNthNounclass1):
+#. # LOCALIZATION NOTE (yearlyOnEveryNthOfNthNounclass...):
 #. # Edit recurrence window -> Recurrence pattern -> Yearly repeat rules
 #. # Translate these strings according to noun class/gender of weekday (%1$S)
 #. # set in 'repeadDetailsDay...Nounclass' strings.
@@ -407,6 +390,17 @@ msgid "every %1$S of %2$S;every #3 years on every %1$S of %2$S"
 msgstr ""
 "kas #4 metus, kiekvieną %2$S %1$S;kas #4 metų, kiekvieną %2$S %1$S;kas #4 "
 "metus, kiekvieną %2$S %1$S"
+
+#. #LOCALIZATION NOTE (yearlyEveryDayOf):
+#. # Edit recurrence window -> Recurrence pattern -> Yearly repeat rules
+#. # This string describes part of a yearly rule which includes every day of a month.
+#. # %1$S - month
+#. # #2   - yearly interval
+#. # e.g. "every day of December"
+#. # e.g. "every 3 years every day of December"
+#: yearlyEveryDayOf
+msgid "every day of %1$S;every #2 years every day of %1$S"
+msgstr ""
 
 #: repeatDetailsMonth1
 msgid "January"
@@ -747,3 +741,7 @@ msgstr "Neterminuotai"
 #: eventRecurrenceMonthlyLastDayLabel
 msgid "Last day"
 msgstr "Paskutinė diena"
+
+#~ msgctxt "monthlyDaysOfNth_ordSymbol"
+#~ msgid ""
+#~ msgstr " "

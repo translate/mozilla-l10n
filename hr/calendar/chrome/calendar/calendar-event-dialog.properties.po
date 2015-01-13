@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-19 10:33+0100\n"
+"POT-Creation-Date: 2015-01-13 03:52+0000\n"
 "PO-Revision-Date: 2014-03-23 20:24+0000\n"
 "Last-Translator: Mikeyy <mihovil.stanic@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1395606249.000000\n"
@@ -209,29 +209,10 @@ msgstr ""
 "svaku %1$S svakog mjeseca;svaku %1$S svaka #2 mjeseca;svaku %1$S svakih #2 "
 "mjeseci"
 
-#. # LOCALIZATION NOTE (monthlyDaysOfNth_ordSymbol):
-#. # Edit recurrence window -> Recurrence pattern -> Monthly repeat rules
-#. # Allows to insert a string, a character or a symbol after the numbers of a day
-#. # in a monthly rule monthlyDaysOfNth in order to give to each day number the
-#. # meaning of ordinal number (e.g.  1 -> 1st; 2 -> 2nd etc.).
-#. # Use a single string if the symbol used is the same for every monthday, otherwise
-#. # write a sequence of _31_ strings (one for every monthday) separated with commas.
-#. # If your language doesn't require that in monthlyDaysOfNth, leave it empty.
-#. # e.g.
-#. # monthlyDaysOfNth_ordSymbol=.
-#. #    -> "Occurs days 1., 2., 10. and 11. of every 2 months"
-#. # monthlyDaysOfNth_ordSymbol=st,nd,rd,th,th,th,th,th,th,th,th,th,th,th,th,
-#. #                            th,th,th,th,th,st,nd,rd,th,th,th,th,th,th,th,st
-#. #    -> "Occurs days 1st, 2nd, 10th and 11th of every 2 months"
-#: monthlyDaysOfNth_ordSymbol
-msgctxt "monthlyDaysOfNth_ordSymbol"
-msgid ""
-msgstr ""
-
 #. # LOCALIZATION NOTE (monthlyDaysOfNth_day):
 #. # Edit recurrence window -> Recurrence pattern -> Monthly repeat rules
-#. # %1$S - day of month or a sequence of days of month, eventually with ordinal symbol
-#. #        coming from monthlyDaysOfNth_ordSymbol, separated with commas;
+#. # %1$S - day of month or a sequence of days of month, possibly followed by an ordinal symbol
+#. #        (depending on the string dayOrdinalSymbol in dateFormat.properties) separated with commas;
 #. # e.g. "days 3, 6 and 9" or "days 3rd, 6th and 9th"
 #: monthlyDaysOfNth_day
 msgid "day %1$S;days %1$S"
@@ -239,8 +220,8 @@ msgstr "dan %1$S;dan %1$S;dan %1$S"
 
 #. # LOCALIZATION NOTE (monthlyDaysOfNth):
 #. # Edit recurrence window -> Recurrence pattern -> Monthly repeat rules
-#. # %1$S - it's the strig monthlyDaysOfNth_day: day of month or a sequence of days
-#. #        of month, eventually with ordinal symbol, separated with commas;
+#. # %1$S - it's the string monthlyDaysOfNth_day: day of month or a sequence of days
+#. #        of month, possibly followed by an ordinal symbol, separated with commas;
 #. # #2   - monthly interval
 #. # e.g. "days 3, 6, 9 and 12 of every 3 months"
 #: monthlyDaysOfNth
@@ -337,10 +318,12 @@ msgstr "zadnju"
 
 #. # LOCALIZATION NOTE (yearlyNthOn):
 #. # Edit recurrence window -> Recurrence pattern -> Yearly repeat rules
-#. # %1$S - month
-#. # %2$S - day of month
-#. # #3 - yearly interval
+#. # %1$S - month name
+#. # %2$S - day of month possibly followed by an ordinal symbol (depending on the string
+#. #           dayOrdinalSymbol in dateFormat.properties)
+#. # #3   - yearly interval
 #. # e.g. "every 3 years on December 14"
+#. #      "every 2 years on December 8th"
 #: yearlyNthOn
 msgid "every %1$S %2$S;every #3 years on %1$S %2$S"
 msgstr ""
@@ -375,7 +358,7 @@ msgstr ""
 "svaku %1$S %2$S u %3$S;svake #4 godine na %1$S %2$S u %3$S;svakih #4 godina "
 "na %1$S %2$S u %3$S"
 
-#. # LOCALIZATION NOTE (yearlyOnEveryNthOfNthNounclass1):
+#. # LOCALIZATION NOTE (yearlyOnEveryNthOfNthNounclass...):
 #. # Edit recurrence window -> Recurrence pattern -> Yearly repeat rules
 #. # Translate these strings according to noun class/gender of weekday (%1$S)
 #. # set in 'repeadDetailsDay...Nounclass' strings.
@@ -402,6 +385,17 @@ msgid "every %1$S of %2$S;every #3 years on every %1$S of %2$S"
 msgstr ""
 "svaku %1$S u %2$S;svake #3 godine na svaku %1$S u %2$S;svakih #3 godina na "
 "svaku %1$S u %2$S"
+
+#. #LOCALIZATION NOTE (yearlyEveryDayOf):
+#. # Edit recurrence window -> Recurrence pattern -> Yearly repeat rules
+#. # This string describes part of a yearly rule which includes every day of a month.
+#. # %1$S - month
+#. # #2   - yearly interval
+#. # e.g. "every day of December"
+#. # e.g. "every 3 years every day of December"
+#: yearlyEveryDayOf
+msgid "every day of %1$S;every #2 years every day of %1$S"
+msgstr ""
 
 #: repeatDetailsMonth1
 msgid "January"
