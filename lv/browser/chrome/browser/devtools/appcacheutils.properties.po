@@ -10,7 +10,6 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,7 +30,7 @@ msgstr ""
 #. # LOCALIZATION NOTE (noManifest): the specified page has no cache manifest.
 #: noManifest
 msgid "The specified page has no manifest."
-msgstr ""
+msgstr "Norādītajai lapai nav manifesta."
 
 #. # LOCALIZATION NOTE (notUTF8): the associated cache manifest has a character
 #. # encoding that is not UTF-8. Parameters: %S is the current encoding.
@@ -40,6 +39,8 @@ msgid ""
 "Manifest has a character encoding of %S. Manifests must have the utf-8 "
 "character encoding."
 msgstr ""
+"Manifestā ir simboli ar %S kodējumu. Manifestā jābūt vienīgi simboliem ar "
+"utf-8 kodējumu."
 
 #. # LOCALIZATION NOTE (badMimeType): the associated cache manifest has a
 #. # mimetype that is not text/cache-manifest. Parameters: %S is the current
@@ -49,6 +50,7 @@ msgid ""
 "Manifest has a mimetype of %S. Manifests must have a mimetype of text/cache-"
 "manifest."
 msgstr ""
+"Manifesta mimetips ir %S. Manifesta mimetipam jābūt text/cache-manifest."
 
 #. # LOCALIZATION NOTE (duplicateURI): the associated cache manifest references
 #. # the same URI from multiple locations. Parameters: %1$S is the URI, %2$S is a
@@ -56,7 +58,7 @@ msgstr ""
 #: duplicateURI
 msgid ""
 "URI %1$S is referenced in multiple locations. This is not allowed: %2$S."
-msgstr ""
+msgstr "Adrese %S ir pieminēta vairākās vietās. Tas nav atļauts: %S."
 
 #. # LOCALIZATION NOTE (networkBlocksURI, fallbackBlocksURI): the associated
 #. # cache manifest references the same URI in the NETWORK (or FALLBACK) section
@@ -68,12 +70,16 @@ msgid ""
 "NETWORK section line %1$S (%2$S) prevents caching of line %3$S (%4$S) in the "
 "%5$S section."
 msgstr ""
+"NETWORK sadaļas rindiņa %S (%S) liedz kešatmiņā saglabāt rindiņu %S (%S) no "
+"%S sadaļas."
 
 #: fallbackBlocksURI
 msgid ""
 "FALLBACK section line %1$S (%2$S) prevents caching of line %3$S (%4$S) in "
 "the %5$S section."
 msgstr ""
+"FALLBACK sadaļas rindiņa %S (%S) liedz kešatmiņā saglabāt rindiņu %S (%S) no "
+"%S sadaļas."
 
 #. # LOCALIZATION NOTE (fileChangedButNotManifest): the associated cache manifest
 #. # references a URI that has a file modified after the cache manifest.
@@ -84,6 +90,8 @@ msgid ""
 "The file %1$S was modified after %2$S. Unless the text in the manifest file "
 "is changed the cached version will be used instead at line %3$S."
 msgstr ""
+"Fails %S ir mainīts pēc %S. Ja vien nav mainīts manifesta fails, tiks "
+"izmantota faila versija no kešatmiņas nevis tā no %S rindiņas."
 
 #. # LOCALIZATION NOTE (cacheControlNoStore): the specified page has a header
 #. # preventing caching or storing information. Parameters: %1$S is the resource
@@ -93,23 +101,25 @@ msgid ""
 "%1$S has cache-control set to no-store. This will prevent the application "
 "cache from storing the file at line %2$S."
 msgstr ""
+"%S cache-control ir uzlikts uz no-store. Tas liegs aplikāciju kešatmiņai "
+"saglabāt failu no %S rindiņas."
 
 #. # LOCALIZATION NOTE (notAvailable): the specified resource is not available.
 #. # Parameters: %1$S is the resource name, %2$S is the line number.
 #: notAvailable
 msgid "%1$S points to a resource that is not available at line %2$S."
-msgstr ""
+msgstr "%S norāda uz resursu, kas nav pieejams %S rindiņā."
 
 #. # LOCALIZATION NOTE (invalidURI): it's used when an invalid URI is passed to
 #. # the appcache.
 #: invalidURI
 msgid "The URI passed to AppCacheUtils is invalid."
-msgstr ""
+msgstr "AppCacheUtils norādītā adrese nav derīga."
 
 #. # LOCALIZATION NOTE (noResults): it's used when a search returns no results.
 #: noResults
 msgid "Your search returned no results."
-msgstr ""
+msgstr "Jūsu vaicājumam nav rezultātu."
 
 #. # LOCALIZATION NOTE (cacheDisabled): it's used when the cache is disabled and
 #. # an attempt is made to view offline data.
@@ -118,6 +128,8 @@ msgid ""
 "Your disk cache is disabled. Please set browser.cache.disk.enable to true in "
 "about:config and try again."
 msgstr ""
+"Jūsu diska kešatmiņa ir deaktivēta. Lūdzu uzlieciet browser.cache.disk."
+"enable uz true iekš about:config un mēģiniet vēlreiz."
 
 #. # LOCALIZATION NOTE (firstLineMustBeCacheManifest): the associated cache
 #. # manifest has a first line that is not "CACHE MANIFEST". Parameters: %S is
@@ -125,6 +137,7 @@ msgstr ""
 #: firstLineMustBeCacheManifest
 msgid "The first line of the manifest must be \"CACHE MANIFEST\" at line %S."
 msgstr ""
+"Pirmajai rindiņai manifesta failā ir jābūt \"CACHE MANIFEST\" (%S rindiņa)."
 
 #. # LOCALIZATION NOTE (cacheManifestOnlyFirstLine2): the associated cache
 #. # manifest has "CACHE MANIFEST" on a line other than the first line.
@@ -133,6 +146,8 @@ msgstr ""
 msgid ""
 "\"CACHE MANIFEST\" is only valid on the first line but was found at line %S."
 msgstr ""
+"\"CACHE MANIFEST\" ir derīgs vienīgi pirmajā rindiņā, bet tika atrasts %S "
+"rindiņā."
 
 #. # LOCALIZATION NOTE (asteriskInWrongSection2): the associated cache manifest
 #. # has an asterisk (*) in a section other than the NETWORK section. Parameters:
@@ -145,20 +160,28 @@ msgid ""
 "NETWORK section. Otherwise such URIs will be treated as unavailable. Other "
 "uses of the * character are prohibited."
 msgstr ""
+"Zvaigznīte (*) ir lietota kā aizstājējzīme %1$S sadaļā %2$S rindiņā. Viena "
+"rindiņa ar zvaigznīti tiek saukta par baltā saraksta aizstājējzīmes karogu "
+"(online whitelist wildcard flag). Tā ir piejaujama vienīgi NETWORK sadaļā. "
+"Citi * simbola izmantojumi ir aizliegti. Šī karoga esamība norāda, ka "
+"jebkurai adresei, kas nav norādīta kā saglabāta kešatmiņā, jāuztver kā "
+"adrese no baltā saraksta vārdtelpas. Ja šī karoga nav, tad bloķējošais "
+"stāvoklis nozīmē, ka visas adreses, kas nav norādītas kā saglabātas "
+"kešatmiņā tiks uzskatītas par nepieejamām."
 
 #. # LOCALIZATION NOTE (escapeSpaces): the associated cache manifest has a space
 #. # in a URI. Spaces must be replaced with %20. Parameters: %S is the line
 #. # number where this error occurs.
 #: escapeSpaces
 msgid "Spaces in URIs need to be replaced with %20 at line %S."
-msgstr ""
+msgstr "Atstarpes adresēs jāaizstāj ar %20 %S rindiņā."
 
 #. # LOCALIZATION NOTE (slashDotDotSlashBad): the associated cache manifest has a
 #. # URI containing /../, which is invalid. Parameters: %S is the line number
 #. # where this error occurs.
 #: slashDotDotSlashBad
 msgid "/../ is not a valid URI prefix at line %S."
-msgstr ""
+msgstr "/../ nav derīgs adreses sākums %S rindiņā."
 
 #. # LOCALIZATION NOTE (tooManyDotDotSlashes): the associated cache manifest has
 #. # a URI containing too many ../ operators. Too many of these operators mean
@@ -166,7 +189,7 @@ msgstr ""
 #. # Parameters: %S is the line number where this error occurs.
 #: tooManyDotDotSlashes
 msgid "Too many dot dot slash operators (../) at line %S."
-msgstr ""
+msgstr "Pārāk daudz punktu slīpsvītras operators (../) %S rindiņā."
 
 #. # LOCALIZATION NOTE (fallbackUseSpaces): the associated cache manifest has a
 #. # FALLBACK section containing more or less than the standard two URIs
@@ -177,6 +200,8 @@ msgid ""
 "Only two URIs separated by spaces are allowed in the FALLBACK section at "
 "line %S."
 msgstr ""
+"FALLBACK sadaļā %S rindiņā ir atļautas tikai divas ar atstarpēm atdalītas "
+"adreses."
 
 #. # LOCALIZATION NOTE (fallbackAsterisk2): the associated cache manifest has a
 #. # FALLBACK section that attempts to use an asterisk (*) as a wildcard. In this
@@ -187,6 +212,8 @@ msgid ""
 "Asterisk (*) incorrectly used in the FALLBACK section at line %S. URIs in "
 "the FALLBACK section simply need to match a prefix of the request URI."
 msgstr ""
+"Zvaigsnīte (*) izmantota nepareizi kā aizstājējzīme FALLBACK sadaļā %S "
+"rindiņā. Adresēm sadaļā jāatbilst pieprasījuma adreses sākuma daļai."
 
 #. # LOCALIZATION NOTE (settingsBadValue): the associated cache manifest has a
 #. # SETTINGS section containing something other than the valid "prefer-online"
@@ -196,16 +223,18 @@ msgid ""
 "The SETTINGS section may only contain a single value, \"prefer-online\" or "
 "\"fast\" at line %S."
 msgstr ""
+"SETTINGS sadaļā drīkst būt tikai viena vērtība \"prefer-online\" vai \"fast"
+"\" %S rindiņā."
 
 #. # LOCALIZATION NOTE (invalidSectionName): the associated cache manifest
 #. # contains an invalid section name. Parameters: %1$S is the section name, %2$S
 #. # is the line number.
 #: invalidSectionName
 msgid "Invalid section name (%1$S) at line %2$S."
-msgstr ""
+msgstr "Nederīgs sadaļas nosaukums (%S) %S rindiņā. "
 
 #. # LOCALIZATION NOTE (entryNotFound): the requested cache entry that does not
 #. # exist.
 #: entryNotFound
 msgid "Entry not found."
-msgstr ""
+msgstr "Ieraksts nav atrasts."

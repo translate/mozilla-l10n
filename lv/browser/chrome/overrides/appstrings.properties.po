@@ -10,7 +10,6 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,15 +19,16 @@ msgstr ""
 
 #: malformedURI
 msgid "The URL is not valid and cannot be loaded."
-msgstr ""
+msgstr "URL ir nekorekts, un to nevar ielādēt."
 
 #: fileNotFound
 msgid "Firefox can't find the file at %S."
-msgstr ""
+msgstr "Nevar atrast failu %S. Lūdzu, pārbaudiet adresi un mēģiniet vēlreiz."
 
 #: dnsNotFound
 msgid "Firefox can't find the server at %S."
 msgstr ""
+"Nevar atrast serveri %S. Lūdzu, pārbaudiet tā nosaukumu un mēģiniet vēlreiz."
 
 #: unknownProtocolFound
 msgid ""
@@ -36,24 +36,28 @@ msgid ""
 "protocols (%S) isn't associated with any program or is not allowed in this "
 "context."
 msgstr ""
+"Firefox nezina kā atvērt šo adresi, jo viens no protokoliem (%S) nav saistīs "
+"ar nevienu programmu vai arī nav atļauts šajā kontekstā."
 
 #: connectionFailure
 msgid "Firefox can't establish a connection to the server at %S."
-msgstr ""
+msgstr "Savienojums tika atteikts, mēģinot sazināties ar %S."
 
 #: netInterrupt
 msgid "The connection to %S was interrupted while the page was loading."
-msgstr ""
+msgstr "Savienojums ar %S tika pārtraukts lapas ielādes laikā."
 
 #: netTimeout
 msgid "The server at %S is taking too long to respond."
-msgstr ""
+msgstr "Gaidot servera %S atbildi, iestājies noilgums."
 
 #: redirectLoop
 msgid ""
 "Firefox has detected that the server is redirecting the request for this "
 "address in a way that will never complete."
 msgstr ""
+"Pārsniegts pārvirzes limits šim URL. Nav iespējams ielādēt pieprasīto lapu. "
+"To var izraisīt bloķētas sīkdatnes."
 
 #. ## LOCALIZATION NOTE (confirmRepostPrompt): In this item, don't translate "%S"
 #: confirmRepostPrompt
@@ -61,51 +65,64 @@ msgid ""
 "To display this page, %S must send information that will repeat any action "
 "(such as a search or order confirmation) that was performed earlier."
 msgstr ""
+"Lai parādītu šo lapu, %S ir vēlreiz jānosūta informācija, kas izraisīs "
+"atkārtotu darbību (piemēram, meklēšanu vai pasūtījuma apstiprinājumu)."
 
 #: resendButton.label
 msgid "Resend"
-msgstr ""
+msgstr "Sūtīt vēlreiz"
 
 #: unknownSocketType
 msgid "Firefox doesn't know how to communicate with the server."
 msgstr ""
+"Dokumentu nevar attēlot, pirms nav instalēts Personīgais Drošības "
+"Pārvaldnieks (PSM). Lejupielādējiet un instalējiet PSM un mēģiniet vēlreiz, "
+"vai sazinieties ar sistēmas administratoru."
 
 #: netReset
 msgid "The connection to the server was reset while the page was loading."
-msgstr ""
+msgstr "Nav datu - savienojums ar serveri tika pārtraukts lapas ielādes laikā."
 
 #: notCached
 msgid "This document is no longer available."
-msgstr ""
+msgstr "Šis dokuments vairs nav pieejams."
 
 #: netOffline
 msgid "Firefox is currently in offline mode and can't browse the Web."
 msgstr ""
+"Šo dokumentu nevar attēlot nesaistes režīmā. Lai pārietu tiešsaistē, Faila "
+"izvēlnē atslēdziet Strādāt nesaistē."
 
 #: isprinting
 msgid "The document cannot change while Printing or in Print Preview."
-msgstr ""
+msgstr "Dokumentu nevar izmainīt, kamēr tas tiek drukāts vai priekšskatīts."
 
 #: deniedPortAccess
 msgid ""
 "This address uses a network port which is normally used for purposes other "
 "than Web browsing. Firefox has canceled the request for your protection."
-msgstr ""
+msgstr "Drošības apsvērumu dēļ pieeja šim porta numuram nav atļauta."
 
 #: proxyResolveFailure
 msgid "Firefox is configured to use a proxy server that can't be found."
 msgstr ""
+"Neizdevās atrast jūsu norādīto starpniekserveri. Lūdzu, pārbaudiet "
+"starpniekservera iestatījumus un mēģiniet vēlreiz."
 
 #: proxyConnectFailure
 msgid ""
 "Firefox is configured to use a proxy server that is refusing connections."
 msgstr ""
+"Neizdevās pieslēgties jūsu norādītajam starpniekserverim. Lūdzu, pārbaudiet "
+"starpniekservera iestatījumus un mēģiniet vēlreiz."
 
 #: contentEncodingError
 msgid ""
 "The page you are trying to view cannot be shown because it uses an invalid "
 "or unsupported form of compression."
 msgstr ""
+"Lapu, kuru jūs mēģināt aplūkot, nevar parādīt, jo tā izmanto nekorektu vai "
+"neatbalstītu kompresijas formu."
 
 #: unsafeContentType
 msgid ""
@@ -113,10 +130,13 @@ msgid ""
 "file type that may not be safe to open. Please contact the website owners to "
 "inform them of this problem."
 msgstr ""
+"Lapu, kuru jūs mēģināt aplūkot, nevar parādīt, jo tā satur faila tipu, ko "
+"nav droši atvērt. Lūdzu, sazinieties ar lapas autoriem un informējiet viņus "
+"par šo problēmu."
 
 #: externalProtocolTitle
 msgid "External Protocol Request"
-msgstr ""
+msgstr "Ārējs protokola pieprasījums"
 
 #: externalProtocolPrompt
 msgid ""
@@ -134,46 +154,65 @@ msgid ""
 "weakness in that other program. Cancel this request unless you are sure it "
 "is not malicious.\n"
 msgstr ""
+"Lai apstrādātu %1$S: saites, jāpalaiž kāda ārēja programma.\n"
+"\n"
+"\n"
+"Pieprasītā saite:\n"
+"\n"
+"%2$S\n"
+"\n"
+"Programma: %3$S\n"
+"\n"
+"\n"
+"Ja jūs negaidījāt šādu pieprasījumu, šis varētu būt mēģinājums izmantot "
+"drošības ievainojamību norādītajā programmā. Atceliet šī pieprasījuma "
+"izpildi, ja šaubāties par tā drošību.\n"
 
 #. #LOCALIZATION NOTE (externalProtocolUnknown): The following string is shown if the application name can't be determined
 #: externalProtocolUnknown
 msgid "<Unknown>"
-msgstr ""
+msgstr "<Nezināms>"
 
 #: externalProtocolChkMsg
 msgid "Remember my choice for all links of this type."
-msgstr ""
+msgstr "Atcerēties manu izvēli visām šāda veida saitēm."
 
 #: externalProtocolLaunchBtn
 msgid "Launch application"
-msgstr ""
+msgstr "Palaist programmu"
 
 #: malwareBlocked
 msgid ""
 "The site at %S has been reported as an attack site and has been blocked "
 "based on your security preferences."
 msgstr ""
+"Lietotāji lapu %S ir atzīmējuši kā bīstamu kaitnieku lapu. Balstoties uz "
+"jūsu drošības iestatījumiem, šī lapa ir bloķēta."
 
 #: phishingBlocked
 msgid ""
 "The website at %S has been reported as a web forgery designed to trick users "
 "into sharing personal or financial information."
 msgstr ""
+"Lietotāji lapu %S ir atzīmējuši kā aizdomīgu krāpnieku lapu, kas radīta, lai "
+"izmānītu no tās apmeklētājiem svarīgu personisko vai finanšu informāciju."
 
 #: cspBlocked
 msgid ""
 "This page has a content security policy that prevents it from being loaded "
 "in this way."
-msgstr ""
+msgstr "Šīs lapas drošības politika liedz to ielādēt korekti. "
 
 #: corruptedContentError
 msgid ""
 "The page you are trying to view cannot be shown because an error in the data "
 "transmission was detected."
-msgstr ""
+msgstr "Lapu, ko mēģināt apskatīt nevar attēlot datu pārraides kļūdas dēļ."
 
 #: remoteXUL
 msgid ""
 "This page uses an unsupported technology that is no longer available by "
 "default in Firefox."
 msgstr ""
+"Šī lapa izmanto neatbalstītu tehnoloģiju, kas pēc noklusējuma vairs nav "
+"pieejama Firefox komplektācijā."
