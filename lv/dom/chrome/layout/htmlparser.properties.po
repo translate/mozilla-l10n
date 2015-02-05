@@ -10,7 +10,6 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,6 +23,8 @@ msgid ""
 "The character encoding of a framed document was not declared. The document "
 "may appear different if viewed without the document framing it."
 msgstr ""
+"Simbolu kodējums ietvara dokumentam netika deklarēts. Dokuments var "
+"izskatīties atšķirīgi, ja to skatīsies bez aptverošā dokumenta."
 
 #: EncNoDeclarationPlain
 msgid ""
@@ -33,6 +34,11 @@ msgid ""
 "encoding of the file needs to be declared in the transfer protocol or file "
 "needs to use a byte order mark as an encoding signature."
 msgstr ""
+"Teksta dokumenta simbolu kodējums netika deklarēts. Dažās pārlūka "
+"konfigurācijās dokuments tiks attēlots kā nesaprotamu simbolu virkne, ja "
+"dokumentā ir simboli, kas neietilpst US-ASCII apgabalā. Faila simbolu "
+"kodējums jānorāda pārraides protokolā vai jāizmanto faila bitu secības "
+"atzīme (BOM) kodējuma noteikšanai."
 
 #: EncNoDeclaration
 msgid ""
@@ -41,6 +47,10 @@ msgid ""
 "contains characters from outside the US-ASCII range. The character encoding "
 "of the page must be declared in the document or in the transfer protocol."
 msgstr ""
+"HTML dokumenta kodējums netika deklarēts. Dažās pārlūka konfigurācijās "
+"dokuments tiks attēlots kā nesaprotamu simbolu virkne, ja dokumentā ir "
+"simboli, kas neietilpst US-ASCII apgabalā. Faila simbolu kodējums jānorāda "
+"pārraides protokolā."
 
 #: EncLateMetaFrame
 msgid ""
@@ -49,6 +59,9 @@ msgid ""
 "document framing it, the page will reload automatically. The encoding "
 "declaration needs to be moved to be within the first 1024 bytes of the file."
 msgstr ""
+"Simbolu kodējums ietvara HTML dokumentam netika atrasts pirmajos 1024 faila "
+"bitos. Aplūkojot dokumentu bez aptverošā dokumenta, lapa automātiski "
+"pārlādēsies. Kodējuma deklarācija jāpārceļ uz pirmajiem 1024 faila bitiem."
 
 #: EncLateMeta
 msgid ""
@@ -57,6 +70,9 @@ msgid ""
 "configured browser, this page will reload automatically. The encoding "
 "declaration needs to be moved to be within the first 1024 bytes of the file."
 msgstr ""
+"Simbolu kodējums ietvara HTML dokumentam netika atrasts pirmajos 1024 faila "
+"bitos. Aplūkojot dokumentu atšķirīgi konfigurētā pārlūkā, lapa automātiski "
+"pārlādēsies. Kodējuma deklarācija jāpārceļ uz pirmajiem 1024 faila bitiem."
 
 #: EncLateMetaReload
 msgid ""
@@ -65,6 +81,9 @@ msgid ""
 "file. The encoding declaration needs to be moved to be within the first 1024 "
 "bytes of the file."
 msgstr ""
+"Lapa tika pārlādēta, jo pirmajos 1024 faila bitos netika atrasta HTML "
+"dokumenta simbolu kodējuma deklarācija. Kodējuma deklarācija jāpārceļ uz "
+"pirmajiem 1024 faila bitiem."
 
 #: EncLateMetaTooLate
 msgid ""
@@ -72,18 +91,24 @@ msgid ""
 "take effect. The encoding declaration needs to be moved to be within the "
 "first 1024 bytes of the file."
 msgstr ""
+"Simbolu kodējuma deklarācija tika atrasta pārāk vēlu, lai to izmantotu. "
+"Kodējuma deklarācija jāpārceļ uz pirmajiem 1024 faila bitiem."
 
 #: EncMetaUnsupported
 msgid ""
 "An unsupported character encoding was declared for the HTML document using a "
 "meta tag. The declaration was ignored."
 msgstr ""
+"HTML dokumenta meta taga deklarācijā tika norādīts neatbalstīs kodējums. "
+"Deklarācija tika ignorēta."
 
 #: EncProtocolUnsupported
 msgid ""
 "An unsupported character encoding was declared on the transfer protocol "
 "level. The declaration was ignored."
 msgstr ""
+"Pārsūtīšanas protokolā tika norādīta neatbalstīts simbolu kodējuma "
+"deklarācija. Deklarācija tika ignorēta."
 
 #: EncBomlessUtf16
 msgid ""
@@ -92,12 +117,18 @@ msgid ""
 "UTF-16 is inefficient and the character encoding should have been declared "
 "in any case."
 msgstr ""
+"Atrasts UTF-16-kodēts Basic Latin-only teksts bez bitu secības atzīmes (BOM) "
+"un bez pārsūtīšanas protokola līmeņa deklarācijas. Satura kodēšana šādā "
+"veidā ir neefektīva un tai arī bez tā ir nepieciešama simbolu kodējuma "
+"deklarācija."
 
 #: EncMetaUtf16
 msgid ""
 "A meta tag was used to declare the character encoding as UTF-16. This was "
 "interpreted as an UTF-8 declaration instead."
 msgstr ""
+"Meta tagā tika norādīts UTF-16 kodējums. Šis tika interpretēts kā UTF-8 "
+"deklarācija."
 
 #: EncMetaUserDefined
 msgid ""
@@ -106,6 +137,9 @@ msgid ""
 "with intentionally mis-encoded legacy fonts. This site should migrate to "
 "Unicode."
 msgstr ""
+"Tika izmantots meta tags, lai deklarētu simbolu kodējumu x-user-defined. Tas "
+"savietojamībai ar nepareizi kodētiem vēsturiskajiem fontiem tika "
+"interpretēts kā windows-1252. Lapai vajadzētu pāriet uz Unicode kodējumu."
 
 #. # The bulk of the messages below are derived from 
 #. # http://hg.mozilla.org/projects/htmlparser/file/1f633cef7de7/src/nu/validator/htmlparser/impl/ErrorReportingTokenizer.java
@@ -113,475 +147,527 @@ msgstr ""
 #. # Tokenizer errors
 #: errGarbageAfterLtSlash
 msgid "Garbage after “</”."
-msgstr ""
+msgstr "Muļķības pēc “</”."
 
 #: errLtSlashGt
 msgid ""
 "Saw “</>”. Probable causes: Unescaped “<” (escape as “&lt;”) or mistyped end "
 "tag."
 msgstr ""
+"Atrasts “</>”. Iespējamie cēloņi: Neaizvērts “<” (aizvērts kā “&lt;”) vai "
+"trūkstošas taga beigas."
 
 #: errCharRefLacksSemicolon
 msgid "Character reference was not terminated by a semicolon."
-msgstr ""
+msgstr "Speciālā simbola kods nenoslēdzas ar semikolu."
 
 #: errNoDigitsInNCR
 msgid "No digits in numeric character reference."
-msgstr ""
+msgstr "Nav ciparu skaitliskajā speciālā simbola kodā."
 
 #: errGtInSystemId
 msgid "“>” in system identifier."
-msgstr ""
+msgstr "“>” sistēmas identifikatorā."
 
 #: errGtInPublicId
 msgid "“>” in public identifier."
-msgstr ""
+msgstr "“>” publiskajā identifikatorā."
 
 #: errNamelessDoctype
 msgid "Nameless doctype."
-msgstr ""
+msgstr "Nenosaukts doctype."
 
 #: errConsecutiveHyphens
 msgid ""
 "Consecutive hyphens did not terminate a comment. “--” is not permitted "
 "inside a comment, but e.g. “- -” is."
 msgstr ""
+"Secīgas domuzīmes nenoslēdz komentāru. “--” nav atļauts komentārā, bet "
+"piemēram “- -” ir."
 
 #: errPrematureEndOfComment
 msgid "Premature end of comment. Use “-->” to end a comment properly."
 msgstr ""
+"Priekšlaicīgas komentāra beigas. Izmantojiet “-->” komentāra beigās korekti."
 
 #: errBogusComment
 msgid "Bogus comment."
-msgstr ""
+msgstr "Neīsts komentārs."
 
 #: errUnquotedAttributeLt
 msgid ""
 "“<” in an unquoted attribute value. Probable cause: Missing “>” immediately "
 "before."
 msgstr ""
+"“<” unikālā atribūta vērtībā. Iespējamie cēloņi: Iztrūkstošs “>” tieši "
+"iepriekš."
 
 #: errUnquotedAttributeGrave
 msgid ""
 "“`” in an unquoted attribute value. Probable cause: Using the wrong "
 "character as a quote."
 msgstr ""
+"“`” unikālā atribūta vērtībā. Iespējamie cēloņi: Nepareizu simbolu "
+"izmantošana pēdiņas vietā."
 
 #: errUnquotedAttributeQuote
 msgid ""
 "Quote in an unquoted attribute value. Probable causes: Attributes running "
 "together or a URL query string in an unquoted attribute value."
 msgstr ""
+"Pēdiņa ne-pēdiņu atribūta vērtībā. Iespējamie cēloņi: Kopā sarakstīti "
+"atribūti vai URL vaicājums ne-pēdiņu atribūtā."
 
 #: errUnquotedAttributeEquals
 msgid ""
 "“=” in an unquoted attribute value. Probable causes: Attributes running "
 "together or a URL query string in an unquoted attribute value."
 msgstr ""
+"“=” ne-pēdiņu atribūta vērtībā. Iespējamie cēloņi: Kopā sarakstīti atribūti "
+"URL vaicājums ne-pēdiņu atribūtā."
 
 #: errSlashNotFollowedByGt
 msgid "A slash was not immediately followed by “>”."
-msgstr ""
+msgstr "Slīpsvītrai neseko “>”."
 
 #: errNoSpaceBetweenAttributes
 msgid "No space between attributes."
-msgstr ""
+msgstr "Starp atribūtiem nav atstarpes."
 
 #: errUnquotedAttributeStartLt
 msgid ""
 "“<” at the start of an unquoted attribute value. Probable cause: Missing “>” "
 "immediately before."
 msgstr ""
+"“<” ne-pēdiņu atribūta vērtības sākumā. Iespējamais cēlonis: Iztrūkstošs “>” "
+"tieši pirms"
 
 #: errUnquotedAttributeStartGrave
 msgid ""
 "“`” at the start of an unquoted attribute value. Probable cause: Using the "
 "wrong character as a quote."
 msgstr ""
+"“`” ne-pēdiņu atribūta vērtības sākumā. Iespējamais cēlonis: Tiek izmantots "
+"nepareizs simbols pēdiņas vietā."
 
 #: errUnquotedAttributeStartEquals
 msgid ""
 "“=” at the start of an unquoted attribute value. Probable cause: Stray "
 "duplicate equals sign."
 msgstr ""
+"“=” ne-pēdiņu atribūta vērtības sākumā. Iespējamais cēlonis: Nevietā divas "
+"vienādības zīmes."
 
 #: errAttributeValueMissing
 msgid "Attribute value missing."
-msgstr ""
+msgstr "Atribūtam trūkst vērtība."
 
 #: errBadCharBeforeAttributeNameLt
 msgid ""
 "Saw “<” when expecting an attribute name. Probable cause: Missing “>” "
 "immediately before."
 msgstr ""
+"Atrasts “<” gaidot atribūta nosaukumu. Iespējamais cēlonis: Trūkst “>” tieši "
+"pirms."
 
 #: errEqualsSignBeforeAttributeName
 msgid ""
 "Saw “=” when expecting an attribute name. Probable cause: Attribute name "
 "missing."
 msgstr ""
+"Atrasts “=” gaidot atribūta nosaukumu. Iespējamais cēlonis: Trūkst atribūta "
+"nosaukums."
 
 #: errBadCharAfterLt
 msgid ""
 "Bad character after “<”. Probable cause: Unescaped “<”. Try escaping it as "
 "“&lt;”."
 msgstr ""
+"Slikta rakstzīme pēc “<”. Iespējamais cēlonis: Neapstrādāts “<”. Mēģiniet to "
+"pārveidot par “&lt;”."
 
 #: errLtGt
 msgid ""
 "Saw “<>”. Probable causes: Unescaped “<” (escape as “&lt;”) or mistyped "
 "start tag."
 msgstr ""
+"Atrasts “<>”. Iespējamie cēloņi: Neapstrādāts “<” (pārveidojiet par “&lt;”) "
+"vai nepareizi pierakstīts sākuma tags."
 
 #: errProcessingInstruction
 msgid ""
 "Saw “<?”. Probable cause: Attempt to use an XML processing instruction in "
 "HTML. (XML processing instructions are not supported in HTML.)"
 msgstr ""
+"Atrast “<?”. Iespējamais cēlonis: Mēģinājums izmantot XML apstrādes "
+"instrukcijas HTML. (XML apstrādes instrukcijas HTML ietvaros netiek "
+"atbalstītas.)"
 
 #: errUnescapedAmpersandInterpretedAsCharacterReference
 msgid ""
 "The string following “&” was interpreted as a character reference. (“&” "
 "probably should have been escaped as “&amp;”.)"
 msgstr ""
+"Simbolu virkne pēc “&” tika uztverta kā speciālā simbola kods. (“&” "
+"visdrīzāk jāpārstrādā kā “&amp;”.)"
 
 #: errNotSemicolonTerminated
 msgid ""
 "Named character reference was not terminated by a semicolon. (Or “&” should "
 "have been escaped as “&amp;”.)"
 msgstr ""
+"Speciālā simbola kods nebeidzas ar semikolu. (Vai arī “&” vajadzētu "
+"pārveidot par “&amp;”.)"
 
 #: errNoNamedCharacterMatch
 msgid ""
 "“&” did not start a character reference. (“&” probably should have been "
 "escaped as “&amp;”.)"
 msgstr ""
+"“&” nesakrita ar speciālā simbola kodu. (visdrīzāk “&” vajadzētu pārveidot "
+"par “&amp;”.)"
 
 #: errQuoteBeforeAttributeName
 msgid ""
 "Saw a quote when expecting an attribute name. Probable cause: “=” missing "
 "immediately before."
 msgstr ""
+"Atrasta pēdiņa gaidot atribūta nosaukumu. Iespējamais cēlonis: Trūkstošs “=” "
+"tieši pirms."
 
 #: errLtInAttributeName
 msgid "“<” in attribute name. Probable cause: “>” missing immediately before."
 msgstr ""
+"“<” atribūta nosaukumā. Iespējamais cēlonis: Trūkstošs “>” tieši pirms."
 
 #: errQuoteInAttributeName
 msgid ""
 "Quote in attribute name. Probable cause: Matching quote missing somewhere "
 "earlier."
 msgstr ""
+"Pēdiņa atribūta nosaukumā. Iespējamais cēlonis: Trūkstoša atbilstošā pēdiņa "
+"kaut kur citur."
 
 #: errExpectedPublicId
 msgid "Expected a public identifier but the doctype ended."
-msgstr ""
+msgstr "Tika gaidīts publisks identifikators, bet doctype beidzās."
 
 #: errBogusDoctype
 msgid "Bogus doctype."
-msgstr ""
+msgstr "Viltus doctype."
 
 #: maybeErrAttributesOnEndTag
 msgid "End tag had attributes."
-msgstr ""
+msgstr "Beigu tagam bija atribūti."
 
 #: maybeErrSlashInEndTag
 msgid "Stray “/” at the end of an end tag."
-msgstr ""
+msgstr "Nevietā atrasts “/” beigu taga beigās."
 
 #: errNcrNonCharacter
 msgid "Character reference expands to a non-character."
-msgstr ""
+msgstr "Simbola kods tiek paplašināts līdz ne-simbolam."
 
 #: errNcrSurrogate
 msgid "Character reference expands to a surrogate."
-msgstr ""
+msgstr "Simbola kods tiek paplašināts līdz surogātam."
 
 #: errNcrControlChar
 msgid "Character reference expands to a control character."
-msgstr ""
+msgstr "Speciālā simbola kods paplašinās līdz kontroles simbolam."
 
 #: errNcrCr
 msgid "A numeric character reference expanded to carriage return."
-msgstr ""
+msgstr "Skaitliskās rakstzīmes kods paplašināts līdz jaunas rindas simbolam."
 
 #: errNcrInC1Range
 msgid "A numeric character reference expanded to the C1 controls range."
-msgstr ""
+msgstr "Skaitliskās rakstzīmes kods paplašināts līdz C1 kontroles apgabalam."
 
 #: errEofInPublicId
 msgid "End of file inside public identifier."
-msgstr ""
+msgstr "Faila beigas publiskajā identifikatorā."
 
 #: errEofInComment
 msgid "End of file inside comment."
-msgstr ""
+msgstr "Faila beigas komentārā."
 
 #: errEofInDoctype
 msgid "End of file inside doctype."
-msgstr ""
+msgstr "Faila beigas doctype ietvaros."
 
 #: errEofInAttributeValue
 msgid "End of file reached when inside an attribute value. Ignoring tag."
 msgstr ""
+"Sasniegtas faila beigas atribūta vērtības ietvaros. Tags tiek ignorēts."
 
 #: errEofInAttributeName
 msgid "End of file occurred in an attribute name. Ignoring tag."
 msgstr ""
+"Sasniegtas faila beigas atribūta nosaukuma ietvaros. Tags tiek ignorēts."
 
 #: errEofWithoutGt
 msgid "Saw end of file without the previous tag ending with “>”. Ignoring tag."
 msgstr ""
+"Atrastas faila beigas bez iepriekšējā taga beigām ar “>”. Tags tiek ignorēts."
 
 #: errEofInTagName
 msgid "End of file seen when looking for tag name. Ignoring tag."
-msgstr ""
+msgstr "Atrastas faila beigas meklējot taga nosaukumu. Tags tiek ignorēts."
 
 #: errEofInEndTag
 msgid "End of file inside end tag. Ignoring tag."
-msgstr ""
+msgstr "Atrastas faila beigas taga ietvaros. Tags tiek ignorēts."
 
 #: errEofAfterLt
 msgid "End of file after “<”."
-msgstr ""
+msgstr "Faila beigas pēc “<”."
 
 #: errNcrOutOfRange
 msgid "Character reference outside the permissible Unicode range."
-msgstr ""
+msgstr "Speciālā simbola kods ir ārpus pieļaujamā Unikoda simbolu apgabala."
 
 #: errNcrUnassigned
 msgid "Character reference expands to a permanently unassigned code point."
-msgstr ""
+msgstr "Speciālā simbola kods paplašina pastāvīgi nenorādīto koda punktu."
 
 #: errDuplicateAttribute
 msgid "Duplicate attribute."
-msgstr ""
+msgstr "Atribūts atkārtojas."
 
 #: errEofInSystemId
 msgid "End of file inside system identifier."
-msgstr ""
+msgstr "Faila beigas sistēmas identifikatora ietvaros."
 
 #: errExpectedSystemId
 msgid "Expected a system identifier but the doctype ended."
-msgstr ""
+msgstr "Tika gaidīts sistēmas identifikators, bet doctype beidzās."
 
 #: errMissingSpaceBeforeDoctypeName
 msgid "Missing space before doctype name."
-msgstr ""
+msgstr "Trūkst atstarpes pirms doctype nosaukuma."
 
 #: errHyphenHyphenBang
 msgid "“--!” found in comment."
-msgstr ""
+msgstr "Komentārā tika trasts “--!”."
 
 #: errNcrZero
 msgid "Character reference expands to zero."
-msgstr ""
+msgstr "Speciālā simbola kods paplašinās līdz nullei."
 
 #: errNoSpaceBetweenDoctypeSystemKeywordAndQuote
 msgid "No space between the doctype “SYSTEM” keyword and the quote."
-msgstr ""
+msgstr "Nav atstarpes starp doctype “SYSTEM” atslēgas vārdu un pēdiņu."
 
 #: errNoSpaceBetweenPublicAndSystemIds
 msgid "No space between the doctype public and system identifiers."
-msgstr ""
+msgstr "Nav atstarpes starp doctype publisko un sistēmas identifikatoru."
 
 #: errNoSpaceBetweenDoctypePublicKeywordAndQuote
 msgid "No space between the doctype “PUBLIC” keyword and the quote."
-msgstr ""
+msgstr "Nav atstarpes starp doctype “PUBLIC” atslēgas vārdu un pēdiņu."
 
 #. # Tree builder errors
 #: errStrayStartTag2
 msgid "Stray start tag “%1$S”."
-msgstr ""
+msgstr "Noklīdis sākuma tags “%1$S”."
 
 #: errStrayEndTag
 msgid "Stray end tag “%1$S”."
-msgstr ""
+msgstr "Noklīdis beigu tags “%1$S”."
 
 #: errUnclosedElements
 msgid "End tag “%1$S” seen, but there were open elements."
-msgstr ""
+msgstr "Beigu tags “%1$S” atrasts, bet bija citi atvērti elementi."
 
 #: errUnclosedElementsImplied
 msgid "End tag “%1$S” implied, but there were open elements."
-msgstr ""
+msgstr "Beigu tags “%1$S” tika iekļauts, bet bija citi atvērti elementi."
 
 #: errUnclosedElementsCell
 msgid "A table cell was implicitly closed, but there were open elements."
-msgstr ""
+msgstr "Tabulas šūna tika apzināti aizvērta, bet bija citi atvērti elementi."
 
 #: errStrayDoctype
 msgid "Stray doctype."
-msgstr ""
+msgstr "Noklīdis doctype."
 
 #: errAlmostStandardsDoctype
 msgid "Almost standards mode doctype. Expected “<!DOCTYPE html>”."
-msgstr ""
+msgstr "Gandrīz standarta režīma doctype. Tika gaidīts “<!DOCTYPE html>”."
 
 #: errQuirkyDoctype
 msgid "Quirky doctype. Expected “<!DOCTYPE html>”."
-msgstr ""
+msgstr "Piņķerīgs doctype. Tika gaidīts “<!DOCTYPE html>”."
 
 #: errNonSpaceInTrailer
 msgid "Non-space character in page trailer."
-msgstr ""
+msgstr "Nav atstarpes lapas treilerī."
 
 #: errNonSpaceAfterFrameset
 msgid "Non-space after “frameset”."
-msgstr ""
+msgstr "Nav atstarpes pēc “frameset”."
 
 #: errNonSpaceInFrameset
 msgid "Non-space in “frameset”."
-msgstr ""
+msgstr "Nav atstarpes iekš “frameset”."
 
 #: errNonSpaceAfterBody
 msgid "Non-space character after body."
-msgstr ""
+msgstr "Nav atstarpes pēc body."
 
 #: errNonSpaceInColgroupInFragment
 msgid "Non-space in “colgroup” when parsing fragment."
-msgstr ""
+msgstr "Nav atstarpes “colgroup” apstrādājot fragmentu."
 
 #: errNonSpaceInNoscriptInHead
 msgid "Non-space character inside “noscript” inside “head”."
-msgstr ""
+msgstr "Nav atstarpes simbola “noscript” ietvaros “head” daļā."
 
 #: errFooBetweenHeadAndBody
 msgid "“%1$S” element between “head” and “body”."
-msgstr ""
+msgstr "“%1$S” elements starp “head” un “body”."
 
 #: errStartTagWithoutDoctype
 msgid ""
 "Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”."
-msgstr ""
+msgstr "Sākuma tags bez doctype. Tika gaidīts “<!DOCTYPE html>”."
 
 #: errNoSelectInTableScope
 msgid "No “select” in table scope."
-msgstr ""
+msgstr "Nav “select” tabulas aptvērumā."
 
 #: errStartSelectWhereEndSelectExpected
 msgid "“select” start tag where end tag expected."
-msgstr ""
+msgstr "“select” sākuma tags, beigu taga vietā."
 
 #: errStartTagWithSelectOpen
 msgid "“%1$S” start tag with “select” open."
-msgstr ""
+msgstr "“%1$S” sākuma tags ar atvērtu “select”."
 
 #: errBadStartTagInHead2
 msgid "Bad start tag “%1$S” in “head”."
-msgstr ""
+msgstr "Slikts sākuma tags “%1$S” “head” ietvaros."
 
 #: errImage
 msgid "Saw a start tag “image”."
-msgstr ""
+msgstr "Atrasts sākuma tags “image”."
 
 #: errIsindex
 msgid "“isindex” seen."
-msgstr ""
+msgstr "Atrasts “isindex”."
 
 #: errFooSeenWhenFooOpen
 msgid ""
 "An “%1$S” start tag seen but an element of the same type was already open."
-msgstr ""
+msgstr "Atrasts “%1$S” sākuma tags, bet šāda tipa elements jau bija atvērts."
 
 #: errHeadingWhenHeadingOpen
 msgid "Heading cannot be a child of another heading."
-msgstr ""
+msgstr "Galvene nevar būt bērna elements citai galvenei."
 
 #: errFramesetStart
 msgid "“frameset” start tag seen."
-msgstr ""
+msgstr "Atrasts “frameset” sākuma tags."
 
 #: errNoCellToClose
 msgid "No cell to close."
-msgstr ""
+msgstr "Nav šūnas ko noslēgt."
 
 #: errStartTagInTable
 msgid "Start tag “%1$S” seen in “table”."
-msgstr ""
+msgstr "Atrasts “%1$S” sākuma tags “table” ietvaros."
 
 #: errFormWhenFormOpen
 msgid ""
 "Saw a “form” start tag, but there was already an active “form” element. "
 "Nested forms are not allowed. Ignoring the tag."
 msgstr ""
+"Atrasts “form” sākuma tags, bet cits “form” elements jau bija atvērts. "
+"Iekļautas formas nav atļautas. Šis tags tiek ignorēts."
 
 #: errTableSeenWhileTableOpen
 msgid "Start tag for “table” seen but the previous “table” is still open."
 msgstr ""
+"Atrasts “table” sākuma tags, bet iepriekšējais “table” tags joprojām ir "
+"atvērts."
 
 #: errStartTagInTableBody
 msgid "“%1$S” start tag in table body."
-msgstr ""
+msgstr "“%1$S” sākuma tags tabulas iekšienē."
 
 #: errEndTagSeenWithoutDoctype
 msgid ""
 "End tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”."
-msgstr ""
+msgstr "Atrasts beigu tags pirms doctype. Tiek gaidīts “<!DOCTYPE html>”."
 
 #: errEndTagAfterBody
 msgid "Saw an end tag after “body” had been closed."
-msgstr ""
+msgstr "Atrasts beigu tags pēc “body” aizvēršanas."
 
 #: errEndTagSeenWithSelectOpen
 msgid "“%1$S” end tag with “select” open."
-msgstr ""
+msgstr "“%1$S” beigu tags ar atvērtu “select”."
 
 #: errGarbageInColgroup
 msgid "Garbage in “colgroup” fragment."
-msgstr ""
+msgstr "Atkritumi “colgroup” fragmentā."
 
 #: errEndTagBr
 msgid "End tag “br”."
-msgstr ""
+msgstr "Beigu tags “br”."
 
 #: errNoElementToCloseButEndTagSeen
 msgid "No “%1$S” element in scope but a “%1$S” end tag seen."
-msgstr ""
+msgstr "Nav “%1$S” elementa, bet atrasts “%1$S” beigu tags."
 
 #: errHtmlStartTagInForeignContext
 msgid "HTML start tag “%1$S” in a foreign namespace context."
-msgstr ""
+msgstr "HTML sākuma tags “%1$S” svešas vārdtelpas kontekstā."
 
 #: errTableClosedWhileCaptionOpen
 msgid "“table” closed but “caption” was still open."
-msgstr ""
+msgstr "“table” tika aizvērta, bet “caption” joprojām ir atvērts."
 
 #: errNoTableRowToClose
 msgid "No table row to close."
-msgstr ""
+msgstr "Nav tabulas rindas ko aizvērt."
 
 #: errNonSpaceInTable
 msgid "Misplaced non-space characters inside a table."
-msgstr ""
+msgstr "Nepareizi novietots ne-atstarpes simbols tabulā."
 
 #: errUnclosedChildrenInRuby
 msgid "Unclosed children in “ruby”."
-msgstr ""
+msgstr "Neaizvērti bērnu elementi “ruby”."
 
 #: errStartTagSeenWithoutRuby
 msgid "Start tag “%1$S” seen without a “ruby” element being open."
-msgstr ""
+msgstr "Atrasts sākuma tags “%1$S” bez atvērta “ruby” elementa."
 
 #: errSelfClosing
 msgid ""
 "Self-closing syntax (“/>”) used on a non-void HTML element. Ignoring the "
 "slash and treating as a start tag."
 msgstr ""
+"Pašaizveroša sintakse (“/>”) izmantota nepiemērotam HTML elementam. "
+"Slīpsvītra tiek ignorēta, tags tiek uztverts kā sākuma tags."
 
 #: errNoCheckUnclosedElementsOnStack
 msgid "Unclosed elements on stack."
-msgstr ""
+msgstr "Stekā ir neaizvērti elementi."
 
 #: errEndTagDidNotMatchCurrentOpenElement
 msgid ""
 "End tag “%1$S” did not match the name of the current open element (“%2$S”)."
 msgstr ""
+"Beigu tags “%1$S” neatbilst nevienam no šajā brīdī atvērtajiem elementiem "
+"(“%2$S”)."
 
 #: errEndTagViolatesNestingRules
 msgid "End tag “%1$S” violates nesting rules."
-msgstr ""
+msgstr "Beigu tags “%1$S” pārkāpj iekļaušanas noteikumus."
 
 #: errEndWithUnclosedElements
 msgid "End tag for “%1$S” seen, but there were unclosed elements."
-msgstr ""
+msgstr "Atrasts beigu tags “%1$S”, bet ir arī citi neaizvērti elementi."
