@@ -1,8 +1,9 @@
+#. extracted from ./browser/chrome/browser/browser.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-21 17:05+0000\n"
+"POT-Creation-Date: 2015-02-22 00:20+0000\n"
 "PO-Revision-Date: 2014-02-16 17:29+0000\n"
 "Last-Translator: firebox <kyrgyzl10n@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,707 +17,1896 @@ msgstr ""
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1392571771.000000\n"
 
-#~ msgid "(Private Browsing)"
-#~ msgstr "(Жашыруун көрүү)"
+#. This will be appended to the window's title
+#. inside the private browsing mode
+#: mainWindow.titlePrivateBrowsingSuffix
+msgid "(Private Browsing)"
+msgstr "(Жашыруун көрүү)"
 
-#~ msgid "Open menu"
-#~ msgstr "Менюну ачуу"
+#: appmenu.tooltip
+msgid "Open menu"
+msgstr "Менюну ачуу"
 
-#~ msgid "More tools…"
-#~ msgstr "Көбүрөөк аспаптар…"
+#: navbarOverflow.label
+msgid "More tools…"
+msgstr "Көбүрөөк аспаптар…"
 
-#~ msgid "&Reload Tab"
-#~ msgstr "Салманы &кайта жүктөө"
+#. Tab context menu
+#: reloadTab.label reloadTab.accesskey
+msgid "&Reload Tab"
+msgstr "Салманы &кайта жүктөө"
 
+#: reloadAllTabs.label reloadAllTabs.accesskey
 #, fuzzy
-#~ msgctxt "reloadAllTabs.label reloadAllTabs.accesskey"
-#~ msgid "Reload &All Tabs"
-#~ msgstr "&Бардык салмаларды кайта жүктөө"
+msgctxt "reloadAllTabs.label reloadAllTabs.accesskey"
+msgid "Reload &All Tabs"
+msgstr "&Бардык салмаларды кайта жүктөө"
 
-#~ msgid "Close Tabs to the R&ight"
-#~ msgstr "&Оң тарабындагы салмаларды жабуу"
+#. This should indicate the
+#. direction in which tabs are closed, i.e. locales that use RTL mode should say
+#. left instead of right.
+#: closeTabsToTheEnd.label closeTabsToTheEnd.accesskey
+msgid "Close Tabs to the R&ight"
+msgstr "&Оң тарабындагы салмаларды жабуу"
 
+#: closeOtherTabs.label closeOtherTabs.accesskey
 #, fuzzy
-#~ msgid "Cl&ose Other Tabs"
-#~ msgstr "&Башка салмаларды жабуу"
+msgid "Cl&ose Other Tabs"
+msgstr "&Башка салмаларды жабуу"
 
-#~ msgid "&Pin Tab"
-#~ msgstr "Салманы &бекитүү"
+#. LOCALIZATION NOTE (pinTab.label, unpinTab.label): "Pin" is being
+#. used as a metaphor for expressing the fact that these tabs are "pinned" to the
+#. left edge of the tabstrip. Really we just want the string to express the idea
+#. that this is a lightweight and reversible action that keeps your tab where you
+#. can reach it easily.
+#: pinTab.label pinTab.accesskey
+msgid "&Pin Tab"
+msgstr "Салманы &бекитүү"
 
-#~ msgid "Unpin Ta&b"
-#~ msgstr "&Салманы бошотуу"
+#: unpinTab.label unpinTab.accesskey
+msgid "Unpin Ta&b"
+msgstr "&Салманы бошотуу"
 
-#~ msgid "&Move to Group"
-#~ msgstr "Топко &ташуу"
+#: moveToGroup.label moveToGroup.accesskey
+msgid "&Move to Group"
+msgstr "Топко &ташуу"
 
-#~ msgid "New Group"
-#~ msgstr "Жаңы топ"
+#: moveToNewGroup.label
+msgid "New Group"
+msgstr "Жаңы топ"
 
-#~ msgid "Move to New &Window"
-#~ msgstr "Жаңы &терезеге ташуу"
+#: moveToNewWindow.label moveToNewWindow.accesskey
+msgid "Move to New &Window"
+msgstr "Жаңы &терезеге ташуу"
 
+#: bookmarkAllTabs.label bookmarkAllTabs.accesskey
 #, fuzzy
-#~ msgctxt "bookmarkAllTabs.label bookmarkAllTabs.accesskey"
-#~ msgid "Bookmark All &Tabs…"
-#~ msgstr "Бардык салмаларды &чөп катка кошуу…"
+msgctxt "bookmarkAllTabs.label bookmarkAllTabs.accesskey"
+msgid "Bookmark All &Tabs…"
+msgstr "Бардык салмаларды &чөп катка кошуу…"
 
+#: undoCloseTab.label undoCloseTab.accesskey
 #, fuzzy
-#~ msgctxt "undoCloseTab.label undoCloseTab.accesskey"
-#~ msgid "&Undo Close Tab"
-#~ msgstr "Жабылган салманы &кайтаруу"
+msgctxt "undoCloseTab.label undoCloseTab.accesskey"
+msgid "&Undo Close Tab"
+msgstr "Жабылган салманы &кайтаруу"
 
-#~ msgid "&Close Tab"
-#~ msgstr "Салманы &жабуу"
+#: closeTab.label closeTab.accesskey
+msgid "&Close Tab"
+msgstr "Салманы &жабуу"
 
-#~ msgid "List all tabs"
-#~ msgstr "Бардык салмаларды тизип чыгуу"
+#: listAllTabs.label
+msgid "List all tabs"
+msgstr "Бардык салмаларды тизип чыгуу"
 
-#~ msgid "New &Tab"
-#~ msgstr "Жаңы &салма"
+#: tabCmd.label tabCmd.accesskey
+msgid "New &Tab"
+msgstr "Жаңы &салма"
 
-#~ msgid "t"
-#~ msgstr "t"
+#: tabCmd.commandkey
+msgid "t"
+msgstr ""
 
-#~ msgid "&Open File…"
-#~ msgstr "Файлды &ачуу…"
+#. "Open Location" is only
+#. displayed on OS X, and only on windows that aren't main browser windows, or
+#. when there are no windows but Firefox is still running.
+#: openLocationCmd.label
+msgid "Open Location…"
+msgstr ""
 
-#~ msgid "Page Set&up…"
-#~ msgstr "Барак жө&ндөөлөрү…"
+#: openFileCmd.label openFileCmd.accesskey
+msgid "&Open File…"
+msgstr "Файлды &ачуу…"
 
-#~ msgid "Print Pre&view"
-#~ msgstr "&Алдын ала кароо"
+#: openFileCmd.commandkey
+msgctxt "openFileCmd.commandkey"
+msgid "o"
+msgstr ""
 
-#~ msgid "&Print…"
-#~ msgstr "&Басып чыгаруу…"
+#: printSetupCmd.label printSetupCmd.accesskey
+msgid "Page Set&up…"
+msgstr "Барак жө&ндөөлөрү…"
 
-#~ msgctxt "printCmd.commandkey"
-#~ msgid "p"
-#~ msgstr "p"
+#: printPreviewCmd.label printPreviewCmd.accesskey
+msgid "Print Pre&view"
+msgstr "&Алдын ала кароо"
 
-#~ msgid "Wor&k Offline"
-#~ msgstr "Интернетсиз &иштөө"
+#: printCmd.label printCmd.accesskey
+msgid "&Print…"
+msgstr "&Басып чыгаруу…"
 
-#~ msgid "&Menu Bar"
-#~ msgstr "&Меню панели"
+#: printCmd.commandkey
+msgctxt "printCmd.commandkey"
+msgid "p"
+msgstr ""
 
+#: goOfflineCmd.label goOfflineCmd.accesskey
+msgid "Wor&k Offline"
+msgstr "Интернетсиз &иштөө"
+
+#: menubarCmd.label menubarCmd.accesskey
+msgid "&Menu Bar"
+msgstr "&Меню панели"
+
+#: navbarCmd.label
 #, fuzzy
-#~ msgid "Navigation Toolbar"
-#~ msgstr "&Навигация панели"
+msgid "Navigation Toolbar"
+msgstr "&Навигация панели"
 
-#~ msgid "&Bookmarks Toolbar"
-#~ msgstr "&Чөп кат панели"
+#: personalbarCmd.label personalbarCmd.accesskey
+msgid "&Bookmarks Toolbar"
+msgstr "&Чөп кат панели"
 
-#~ msgid "Bookmarks Toolbar Items"
-#~ msgstr "Чөп каттар панелинин элементтери"
+#: bookmarksToolbarItem.label
+msgid "Bookmarks Toolbar Items"
+msgstr "Чөп каттар панелинин элементтери"
 
+#: toolbarContextMenu.reloadAllTabs.label
+#: toolbarContextMenu.reloadAllTabs.accesskey
 #, fuzzy
-#~ msgctxt ""
-#~ "toolbarContextMenu.reloadAllTabs.label toolbarContextMenu.reloadAllTabs."
-#~ "accesskey"
-#~ msgid "Reload &All Tabs"
-#~ msgstr "&Бардык салмаларды кайта жүктөө"
+msgctxt ""
+"toolbarContextMenu.reloadAllTabs.label toolbarContextMenu.reloadAllTabs."
+"accesskey"
+msgid "Reload &All Tabs"
+msgstr "&Бардык салмаларды кайта жүктөө"
 
+#: toolbarContextMenu.bookmarkAllTabs.label
+#: toolbarContextMenu.bookmarkAllTabs.accesskey
 #, fuzzy
-#~ msgctxt ""
-#~ "toolbarContextMenu.bookmarkAllTabs.label toolbarContextMenu."
-#~ "bookmarkAllTabs.accesskey"
-#~ msgid "Bookmark All &Tabs…"
-#~ msgstr "Бардык салмаларды &чөп катка кошуу…"
+msgctxt ""
+"toolbarContextMenu.bookmarkAllTabs.label toolbarContextMenu.bookmarkAllTabs."
+"accesskey"
+msgid "Bookmark All &Tabs…"
+msgstr "Бардык салмаларды &чөп катка кошуу…"
 
+#: toolbarContextMenu.undoCloseTab.label
+#: toolbarContextMenu.undoCloseTab.accesskey
 #, fuzzy
-#~ msgctxt ""
-#~ "toolbarContextMenu.undoCloseTab.label toolbarContextMenu.undoCloseTab."
-#~ "accesskey"
-#~ msgid "&Undo Close Tab"
-#~ msgstr "Жабылган салманы &кайтаруу"
+msgctxt ""
+"toolbarContextMenu.undoCloseTab.label toolbarContextMenu.undoCloseTab."
+"accesskey"
+msgid "&Undo Close Tab"
+msgstr "Жабылган салманы &кайтаруу"
 
-#~ msgid "Page S&ource"
-#~ msgstr "Барактын &баштапкы коду"
+#: pageSourceCmd.label pageSourceCmd.accesskey
+msgid "Page S&ource"
+msgstr "Барактын &баштапкы коду"
 
-#~ msgid "u"
-#~ msgstr "u"
+#: pageSourceCmd.commandkey
+msgid "u"
+msgstr ""
 
-#~ msgid "Page &Info"
-#~ msgstr "Барак тууралуу &маалымат"
+#: pageInfoCmd.label pageInfoCmd.accesskey
+msgid "Page &Info"
+msgstr "Барак тууралуу &маалымат"
 
-#~ msgctxt "pageInfoCmd.commandkey"
-#~ msgid "i"
-#~ msgstr "i"
+#: pageInfoCmd.commandkey
+msgctxt "pageInfoCmd.commandkey"
+msgid "i"
+msgstr ""
 
-#~ msgid "Enter &Full Screen"
-#~ msgstr "&Толук экранга өтүү"
+#: mirrorTabCmd.label mirrorTabCmd.accesskey
+msgid "&Mirror Tab"
+msgstr ""
 
-#~ msgid "Exit &Full Screen"
-#~ msgstr "&Толук экрандан чыгуу"
+#. LOCALIZATION NOTE (enterFullScreenCmd.label, exitFullScreenCmd.label):
+#. These should match what Safari and other Apple applications use on OS X Lion.
+#: enterFullScreenCmd.label enterFullScreenCmd.accesskey
+msgid "Enter &Full Screen"
+msgstr "&Толук экранга өтүү"
 
-#~ msgctxt "fullScreenCmd.label fullScreenCmd.accesskey"
-#~ msgid "&Full Screen"
-#~ msgstr "&Толук экран"
+#: exitFullScreenCmd.label exitFullScreenCmd.accesskey
+msgid "Exit &Full Screen"
+msgstr "&Толук экрандан чыгуу"
 
-#~ msgctxt "fullScreenCmd.macCommandKey"
-#~ msgid "f"
-#~ msgstr "f"
+#: fullScreenCmd.label fullScreenCmd.accesskey
+msgctxt "fullScreenCmd.label fullScreenCmd.accesskey"
+msgid "&Full Screen"
+msgstr "&Толук экран"
 
-#~ msgid "Show &All Tabs"
-#~ msgstr "&Бардык салмаларды көрсөтүү"
+#: fullScreenCmd.macCommandKey
+msgctxt "fullScreenCmd.macCommandKey"
+msgid "f"
+msgstr ""
 
-#~ msgid "Sign in to &syncBrand.shortName.label;"
-#~ msgstr "&syncBrand.shortName.label; кызматына кирүү"
+#: showAllTabsCmd.label showAllTabsCmd.accesskey
+msgid "Show &All Tabs"
+msgstr "&Бардык салмаларды көрсөтүү"
 
-#~ msgid "Reconnect to &syncBrand.shortName.label;"
-#~ msgstr "&syncBrand.shortName.label; кызматына кайта туташуу"
+#: fxaSignIn.label
+msgid "Sign in to &syncBrand.shortName.label;"
+msgstr "&syncBrand.shortName.label; кызматына кирүү"
 
+#: fxaSignInError.label
+msgid "Reconnect to &syncBrand.shortName.label;"
+msgstr "&syncBrand.shortName.label; кызматына кайта туташуу"
+
+#: syncStartPanel2.heading
 #, fuzzy
-#~ msgid "&syncBrand.shortName.label; enabled"
-#~ msgstr "&syncBrand.shortName.label;"
+msgid "&syncBrand.shortName.label; enabled"
+msgstr "&syncBrand.shortName.label;"
 
+#: syncStartPanel2.subTitle
+msgid "&brandShortName; will begin syncing momentarily."
+msgstr ""
+
+#: syncErrorPanel.heading
 #, fuzzy
-#~ msgid "Cannot connect to &syncBrand.shortName.label;"
-#~ msgstr "&syncBrand.shortName.label; кызматына кайта туташуу"
+msgid "Cannot connect to &syncBrand.shortName.label;"
+msgstr "&syncBrand.shortName.label; кызматына кайта туташуу"
 
-#~ msgid "&Sign In"
-#~ msgstr "&Кирүү"
+#: syncErrorPanel.subTitle
+msgid "Please sign in to resume syncing."
+msgstr ""
 
-#~ msgid "Minimize"
-#~ msgstr "Түрүү"
+#: syncErrorPanel.signInButton.label syncErrorPanel.signInButton.accesskey
+msgid "&Sign In"
+msgstr "&Кирүү"
 
-#~ msgid "Restore"
-#~ msgstr "Калыбына келтирүү"
+#: fullScreenMinimize.tooltip
+msgid "Minimize"
+msgstr "Түрүү"
 
-#~ msgctxt "fullScreenClose.tooltip"
-#~ msgid "Close"
-#~ msgstr "Жабуу"
+#: fullScreenRestore.tooltip
+msgid "Restore"
+msgstr "Калыбына келтирүү"
 
+#: fullScreenClose.tooltip
+msgctxt "fullScreenClose.tooltip"
+msgid "Close"
+msgstr "Жабуу"
+
+#: fullScreenAutohide.label fullScreenAutohide.accesskey
+msgid "&Hide Toolbars"
+msgstr ""
+
+#: fullScreenExit.label fullScreenExit.accesskey
 #, fuzzy
-#~ msgid "Exit &Full Screen Mode"
-#~ msgstr "&Толук экрандан чыгуу"
+msgid "Exit &Full Screen Mode"
+msgstr "&Толук экрандан чыгуу"
 
-#~ msgid "Allow"
-#~ msgstr "Уруксат берүү"
+#: fullscreenAllowButton.label
+msgid "Allow"
+msgstr "Уруксат берүү"
 
-#~ msgid "Exit F&ull Screen"
-#~ msgstr "Т&олук экрандан чыгуу"
+#: fullscreenExitButton.label
+msgid "Deny"
+msgstr ""
 
-#~ msgid "Close Win&dow"
-#~ msgstr "Те&резени жабуу"
+#: fullscreenExitHint2.value
+msgid "Press ESC at any time to exit."
+msgstr ""
 
-#~ msgid "&Bookmarks"
-#~ msgstr "&Чөп каттар"
+#: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
+msgid "Exit F&ull Screen"
+msgstr "Т&олук экрандан чыгуу"
 
+#: closeWindow.label closeWindow.accesskey
+msgid "Close Win&dow"
+msgstr "Те&резени жабуу"
+
+#: bookmarksMenu.label bookmarksMenu.accesskey
+msgid "&Bookmarks"
+msgstr "&Чөп каттар"
+
+#: bookmarkThisPageCmd.label
 #, fuzzy
-#~ msgctxt "bookmarkThisPageCmd.label"
-#~ msgid "Bookmark This Page"
-#~ msgstr "Бул баракты чөп катка кошуу"
+msgctxt "bookmarkThisPageCmd.label"
+msgid "Bookmark This Page"
+msgstr "Бул баракты чөп катка кошуу"
 
-#~ msgid "Edit This Bookmark"
-#~ msgstr "Чөп катты түзөтүү"
+#: editThisBookmarkCmd.label
+msgid "Edit This Bookmark"
+msgstr "Чөп катты түзөтүү"
 
-#~ msgctxt "bookmarkThisPageCmd.commandkey"
-#~ msgid "d"
-#~ msgstr "d"
+#: bookmarkThisPageCmd.commandkey
+msgctxt "bookmarkThisPageCmd.commandkey"
+msgid "d"
+msgstr ""
 
-#~ msgctxt "markPageCmd.commandkey"
-#~ msgid "l"
-#~ msgstr "l"
+#: markPageCmd.commandkey
+msgctxt "markPageCmd.commandkey"
+msgid "l"
+msgstr ""
 
+#. -  Use the unicode ellipsis char, \u2026,
+#. -  or use "..." if \u2026 doesn't suit traditions in your locale.
+#: findShareServices.label
+msgid "Find more Share services…"
+msgstr ""
+
+#: sharePageCmd.label sharePageCmd.accesskey
 #, fuzzy
-#~ msgid "Share Thi&s Page"
-#~ msgstr "Бул барак менен &бөлүшүү"
+msgid "Share Thi&s Page"
+msgstr "Бул барак менен &бөлүшүү"
 
-#~ msgid "S"
-#~ msgstr "S"
+#: sharePageCmd.commandkey
+msgid "S"
+msgstr ""
 
+#. LOCALIZATION NOTE (shareLink.accesskey): must be different than the following share access keys
+#: shareLink.label shareLink.accesskey
 #, fuzzy
-#~ msgid "S&hare This Link"
-#~ msgstr "Бул шилтеме менен &бөлүшүү"
+msgid "S&hare This Link"
+msgstr "Бул шилтеме менен &бөлүшүү"
 
+#: shareImage.label shareImage.accesskey
 #, fuzzy
-#~ msgid "Sha&re This Image"
-#~ msgstr "Бул сүрөт менен &бөлүшүү"
+msgid "Sha&re This Image"
+msgstr "Бул сүрөт менен &бөлүшүү"
 
+#: shareSelect.label shareSelect.accesskey
 #, fuzzy
-#~ msgid "Sha&re Selection"
-#~ msgstr "Тандалган менен &бөлүшүү"
+msgid "Sha&re Selection"
+msgstr "Тандалган менен &бөлүшүү"
 
+#: shareVideo.label shareVideo.accesskey
 #, fuzzy
-#~ msgid "Sha&re This Video"
-#~ msgstr "Бул видео менен &бөлүшүү"
+msgid "Sha&re This Video"
+msgstr "Бул видео менен &бөлүшүү"
 
+#: feedsMenu.label
 #, fuzzy
-#~ msgid "Subscribe"
-#~ msgstr "Жазылуу"
+msgid "Subscribe"
+msgstr "Жазылуу"
 
-#~ msgid "Subscribe to This Page"
-#~ msgstr "Бул барагына жазылуу"
+#: subscribeToPageMenupopup.label
+msgid "Subscribe to This Page"
+msgstr "Бул барагына жазылуу"
 
-#~ msgid "Subscribe to This Page…"
-#~ msgstr "Бул баракка жазылуу…"
+#: subscribeToPageMenuitem.label
+msgid "Subscribe to This Page…"
+msgstr "Бул баракка жазылуу…"
 
-#~ msgid "Bookmark All Tabs…"
-#~ msgstr "Бардык салмаларды чөп катка кошуу…"
+#: addCurPagesCmd.label
+msgid "Bookmark All Tabs…"
+msgstr "Бардык салмаларды чөп катка кошуу…"
 
-#~ msgctxt "unsortedBookmarksCmd.label"
-#~ msgid "Unsorted Bookmarks"
-#~ msgstr "Сорттолбогон чөп каттар"
+#: showAllBookmarks2.label
+msgid "Show All Bookmarks"
+msgstr ""
 
-#~ msgid "Show more bookmarks"
-#~ msgstr "Чөп каттарды толугу менен көрсөтүү"
+#: unsortedBookmarksCmd.label
+msgctxt "unsortedBookmarksCmd.label"
+msgid "Unsorted Bookmarks"
+msgstr "Сорттолбогон чөп каттар"
 
+#: bookmarksToolbarChevron.tooltip
+msgid "Show more bookmarks"
+msgstr "Чөп каттарды толугу менен көрсөтүү"
+
+#: backCmd.label
 #, fuzzy
-#~ msgid "Back"
-#~ msgstr "&Артка"
+msgid "Back"
+msgstr "&Артка"
 
-#~ msgid "Go back one page"
-#~ msgstr "Бир барак артка баруу"
+#: backButton.tooltip
+msgid "Go back one page"
+msgstr "Бир барак артка баруу"
 
+#: forwardCmd.label
 #, fuzzy
-#~ msgid "Forward"
-#~ msgstr "А&лга"
+msgid "Forward"
+msgstr "А&лга"
 
-#~ msgid "Go forward one page"
-#~ msgstr "Бир барак алга баруу"
+#: forwardButton.tooltip
+msgid "Go forward one page"
+msgstr "Бир барак алга баруу"
 
-#~ msgid "Right-click or pull down to show history"
-#~ msgstr "Тарыхы үчүн оң жак менен чертиңиз же төмөн тартыңыз"
+#: backForwardButtonMenu.tooltip
+msgid "Right-click or pull down to show history"
+msgstr "Тарыхы үчүн оң жак менен чертиңиз же төмөн тартыңыз"
 
-#~ msgid "Pull down to show history"
-#~ msgstr "Тарыхы үчүн төмөн тартыңыз"
+#: backForwardButtonMenuMac.tooltip
+msgid "Pull down to show history"
+msgstr "Тарыхы үчүн төмөн тартыңыз"
 
+#: reloadCmd.label
 #, fuzzy
-#~ msgid "Reload"
-#~ msgstr "&Жаңыртуу"
+msgid "Reload"
+msgstr "&Жаңыртуу"
 
-#~ msgid "Reload current page"
-#~ msgstr "Кезектеги баракты жаңыртуу"
+#: reloadButton.tooltip
+msgid "Reload current page"
+msgstr "Кезектеги баракты жаңыртуу"
 
+#: stopCmd.label
 #, fuzzy
-#~ msgid "Stop"
-#~ msgstr "&Токтотуу"
+msgid "Stop"
+msgstr "&Токтотуу"
 
-#~ msgid "Go to the address in the Location Bar"
-#~ msgstr "Жайгашкан жери сабындагы дарегине баруу"
+#: stopCmd.macCommandKey
+msgid "."
+msgstr ""
 
-#~ msgid "Print"
-#~ msgstr "Басып чыгаруу"
+#: stopButton.tooltip
+msgid "Stop loading this page"
+msgstr ""
 
-#~ msgid "Print this page"
-#~ msgstr "Бул баракты басып чыгаруу"
+#: goEndCap.tooltip
+msgid "Go to the address in the Location Bar"
+msgstr "Жайгашкан жери сабындагы дарегине баруу"
 
-#~ msgid "Location"
-#~ msgstr "Жайгашкан жери"
+#: printButton.label
+msgid "Print"
+msgstr "Басып чыгаруу"
 
-#~ msgid "Search"
-#~ msgstr "Издөө"
+#: printButton.tooltip
+msgid "Print this page"
+msgstr "Бул баракты басып чыгаруу"
 
-#~ msgid "Home"
-#~ msgstr "Үй"
+#: locationItem.title
+msgid "Location"
+msgstr "Жайгашкан жери"
 
-#~ msgid "Tab Groups"
-#~ msgstr "Салма топтору"
+#: searchItem.title
+msgid "Search"
+msgstr "Издөө"
 
-#~ msgctxt "bookmarksButton.label"
-#~ msgid "Bookmarks"
-#~ msgstr "Чөп каттар"
+#. Toolbar items
+#: homeButton.label
+msgid "Home"
+msgstr "Үй"
 
-#~ msgid "b"
-#~ msgstr "b"
+#: tabGroupsButton.label
+msgid "Tab Groups"
+msgstr "Салма топтору"
 
-#~ msgctxt "bookmarksMenuButton.label"
-#~ msgid "Bookmarks"
-#~ msgstr "Чөп каттар"
+#: bookmarksButton.label
+msgctxt "bookmarksButton.label"
+msgid "Bookmarks"
+msgstr "Чөп каттар"
 
-#~ msgctxt "bookmarksMenuButton.unsorted.label"
-#~ msgid "Unsorted Bookmarks"
-#~ msgstr "Сорттолбогон чөп каттар"
+#: bookmarksCmd.commandkey
+msgid "b"
+msgstr ""
 
-#~ msgid "View Bookmarks Sidebar"
-#~ msgstr "Чөп каттардын каптал панелин кароо"
-
-#~ msgid "View Bookmarks Toolbar"
-#~ msgstr "Чөп каттардын аспап панелин кароо"
-
-#~ msgctxt "historyButton.label"
-#~ msgid "History"
-#~ msgstr "Тарыхы"
-
-#~ msgid "&Tools"
-#~ msgstr "&Шаймандар"
-
-#~ msgid "&Downloads"
-#~ msgstr "&Жүктөөлөр"
-
+#: bookmarksMenuButton.label
 #, fuzzy
-#~ msgid "&Add-ons"
-#~ msgstr "Кошумчалар"
+msgctxt "bookmarksMenuButton.label"
+msgid "Bookmarks"
+msgstr "Чөп каттар"
 
-#~ msgctxt "addons.commandkey"
-#~ msgid "A"
-#~ msgstr "A"
-
-#~ msgid "&Web Developer"
-#~ msgstr "&Веб-иштетүү"
-
-#~ msgid "VK_F12"
-#~ msgstr "VK_F12"
-
-#~ msgid "F12"
-#~ msgstr "F12"
-
-#~ msgid "Conn&ect…"
-#~ msgstr "Тута&шуу…"
-
-#~ msgid "Error &Console"
-#~ msgstr "Ката &консолу"
-
-#~ msgid "Remote Web Console"
-#~ msgstr "Алыскы веб-консолу"
-
-#~ msgid "&Browser Console"
-#~ msgstr "&Браузер консолу"
-
-#~ msgctxt "browserConsoleCmd.commandkey"
-#~ msgid "j"
-#~ msgstr "j"
-
+#: bookmarksMenuButton.unsorted.label
 #, fuzzy
-#~ msgid "VK_F4"
-#~ msgstr "VK_F2"
+msgctxt "bookmarksMenuButton.unsorted.label"
+msgid "Unsorted Bookmarks"
+msgstr "Сорттолбогон чөп каттар"
 
-#~ msgid "F4"
-#~ msgstr "F4"
+#: viewBookmarksSidebar2.label
+msgid "View Bookmarks Sidebar"
+msgstr "Чөп каттардын каптал панелин кароо"
 
-#~ msgid "De&veloper Toolbar"
-#~ msgstr "&Иштетүүчүнүн аспап панели"
+#: viewBookmarksToolbar.label
+msgid "View Bookmarks Toolbar"
+msgstr "Чөп каттардын аспап панелин кароо"
 
+#. LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
+#. -  key should not contain the letters A-F, since these are reserved
+#. -  shortcut keys on Linux.
+#: bookmarksGtkCmd.commandkey
+msgctxt "bookmarksGtkCmd.commandkey"
+msgid "o"
+msgstr ""
+
+#: bookmarksWinCmd.commandkey
+msgctxt "bookmarksWinCmd.commandkey"
+msgid "i"
+msgstr ""
+
+#: historyButton.label
+msgctxt "historyButton.label"
+msgid "History"
+msgstr "Тарыхы"
+
+#: historySidebarCmd.commandKey
+msgid "h"
+msgstr ""
+
+#: toolsMenu.label toolsMenu.accesskey
+msgid "&Tools"
+msgstr "&Шаймандар"
+
+#: keywordfield.label keywordfield.accesskey
+msgid "Add a &Keyword for this Search…"
+msgstr ""
+
+#: downloads.label downloads.accesskey
+msgid "&Downloads"
+msgstr "&Жүктөөлөр"
+
+#: downloads.commandkey
+msgctxt "downloads.commandkey"
+msgid "j"
+msgstr ""
+
+#: downloadsUnix.commandkey
+msgid "y"
+msgstr ""
+
+#: addons.label addons.accesskey
 #, fuzzy
-#~ msgid "&App Manager"
-#~ msgstr "&Тиркеме менеджери"
+msgid "&Add-ons"
+msgstr "Кошумчалар"
 
+#: addons.commandkey
+msgctxt "addons.commandkey"
+msgid "A"
+msgstr ""
+
+#: webapps.label webapps.accesskey
+msgid "A&pps"
+msgstr ""
+
+#: webDeveloperMenu.label webDeveloperMenu.accesskey
+msgid "&Web Developer"
+msgstr "&Веб-иштетүү"
+
+#: devToolsCmd.keycode
+msgid "VK_F12"
+msgstr "VK_F12"
+
+#: devToolsCmd.keytext
+msgid "F12"
+msgstr "F12"
+
+#: devtoolsConnect.label devtoolsConnect.accesskey
+msgid "Conn&ect…"
+msgstr "Тута&шуу…"
+
+#: errorConsoleCmd.label errorConsoleCmd.accesskey
+msgid "Error &Console"
+msgstr "Ката &консолу"
+
+#: remoteWebConsoleCmd.label
+msgid "Remote Web Console"
+msgstr "Алыскы веб-консолу"
+
+#: browserConsoleCmd.label browserConsoleCmd.accesskey
+msgid "&Browser Console"
+msgstr "&Браузер консолу"
+
+#: browserConsoleCmd.commandkey
+msgctxt "browserConsoleCmd.commandkey"
+msgid "j"
+msgstr ""
+
+#: inspectContextMenu.label
+msgid "Inspect Element"
+msgstr ""
+
+#: inspectContextMenu.accesskey
+msgctxt "inspectContextMenu.accesskey"
+msgid "Q"
+msgstr ""
+
+#: responsiveDesignTool.label responsiveDesignTool.accesskey
+msgid "&Responsive Design View"
+msgstr ""
+
+#: responsiveDesignTool.commandkey
+msgctxt "responsiveDesignTool.commandkey"
+msgid "M"
+msgstr ""
+
+#: eyedropper.label eyedropper.accesskey
+msgid "E&yedropper"
+msgstr ""
+
+#. This menu item label appears
+#. -  in the Tools menu. See bug 653093.
+#. -  The Scratchpad is intended to provide a simple text editor for creating
+#. -  and evaluating bits of JavaScript code for the purposes of function
+#. -  prototyping, experimentation and convenient scripting.
+#. -
+#. -  It's quite possible that you won't have a good analogue for the word
+#. -  "Scratchpad" in your locale. You should feel free to find a close
+#. -  approximation to it or choose a word (or words) that means
+#. -  "simple discardable text editor".
+#: scratchpad.label scratchpad.accesskey
+msgid "&Scratchpad"
+msgstr ""
+
+#: scratchpad.keycode
 #, fuzzy
-#~ msgid "VK_F8"
-#~ msgstr "VK_F2"
+msgid "VK_F4"
+msgstr "VK_F2"
 
-#~ msgid "F8"
-#~ msgstr "F8"
+#: scratchpad.keytext
+msgid "F4"
+msgstr "F4"
 
-#~ msgid "VK_F2"
-#~ msgstr "VK_F2"
+#. This is the label for the
+#. -  application menu item that opens the browser toolbox UI in the Tools menu.
+#: browserToolboxMenu.label browserToolboxMenu.accesskey
+msgid "Brows&er Toolbox"
+msgstr ""
 
-#~ msgid "F2"
-#~ msgstr "F2"
+#. This is the label for the
+#. -  application menu item that opens the browser content toolbox UI in the Tools menu.
+#. -  This toolbox allows to debug the chrome of the content process in multiprocess builds.
+#: browserContentToolboxMenu.label
+msgid "Browser Content Toolbox"
+msgstr ""
 
-#~ msgid "More Tools"
-#~ msgstr "Көбүрөөк шаймандар"
+#: devToolbarCloseButton.tooltiptext
+msgid "Close Developer Toolbar"
+msgstr ""
 
-#~ msgid "Get &More Tools"
-#~ msgstr "&Көбүрөөк шаймандарды алуу"
+#: devToolbarMenu.label devToolbarMenu.accesskey
+msgid "De&veloper Toolbar"
+msgstr "&Иштетүүчүнүн аспап панели"
 
-#~ msgid "&File"
-#~ msgstr "&Файл"
-
-#~ msgid "&New Window"
-#~ msgstr "&Жаңы терезе"
-
-#~ msgid "N"
-#~ msgstr "N"
-
-#~ msgid "New Private &Window"
-#~ msgstr "Жаңы жекелик &терезе"
-
-#~ msgid "&Edit"
-#~ msgstr "&Түзөтүү"
-
-#~ msgid "&Undo"
-#~ msgstr "&Жокко чыгаруу"
-
-#~ msgid "Z"
-#~ msgstr "Z"
-
-#~ msgid "&Redo"
-#~ msgstr "&Кайталоо"
-
-#~ msgctxt "redoCmd.key"
-#~ msgid "Y"
-#~ msgstr "Y"
-
-#~ msgid "Cu&t"
-#~ msgstr "&Кесүү"
-
-#~ msgctxt "cutCmd.key"
-#~ msgid "X"
-#~ msgstr "X"
-
-#~ msgid "&Copy"
-#~ msgstr "&Көчүрүү"
-
-#~ msgid "C"
-#~ msgstr "C"
-
-#~ msgid "&Paste"
-#~ msgstr "К&оюу"
-
-#~ msgid "V"
-#~ msgstr "V"
-
-#~ msgid "&Delete"
-#~ msgstr "Ө&чүрүү"
-
-#~ msgctxt "deleteCmd.key"
-#~ msgid "D"
-#~ msgstr "D"
-
-#~ msgid "Select &All"
-#~ msgstr "&Баарын тандоо"
-
-#~ msgctxt "selectAllCmd.key"
-#~ msgid "A"
-#~ msgstr "A"
-
-#~ msgid "&Options"
-#~ msgstr "&Жөндөөлөр"
-
-#~ msgid "Prefere&nces"
-#~ msgstr "&Жөндөөлөр"
-
-#~ msgctxt "clearRecentHistory.label"
-#~ msgid "Clear Recent History…"
-#~ msgstr "Соңку тарыхты өчүрүү…"
-
-#~ msgctxt "privateBrowsingCmd.commandkey"
-#~ msgid "P"
-#~ msgstr "P"
-
-#~ msgid "&View"
-#~ msgstr "&Түрү"
-
-#~ msgid "Tab &Groups"
-#~ msgstr "Салма &топтору"
-
-#~ msgid "&Toolbars"
-#~ msgstr "&Аспап панелдери"
-
-#~ msgid "Sid&ebar"
-#~ msgstr "&Каптал панель"
-
-#~ msgid "&Customize…"
-#~ msgstr "&Жөндөө…"
-
-#~ msgid "Hi&story"
-#~ msgstr "Т&арыхы"
-
-#~ msgid "Recently Closed Tabs"
-#~ msgstr "Жакында жабылган салмалар"
-
-#~ msgid "Recently Closed Windows"
-#~ msgstr "Жакында жабылган терезелер"
-
-#~ msgctxt "historyRestoreLastSession.label"
-#~ msgid "Restore Previous Session"
-#~ msgstr "Мурунку сессияны калыбына келтирүү"
-
-#~ msgctxt "showAllHistoryCmd2.label"
-#~ msgid "Show All History"
-#~ msgstr "Бүткүл тарыхты көрсөтүү"
-
-#~ msgid "H"
-#~ msgstr "H"
-
-#~ msgid "Customize"
-#~ msgstr "Жөндөө"
-
-#~ msgctxt "appMenuHistory.label"
-#~ msgid "History"
-#~ msgstr "Тарыхы"
-
+#: devAppMgrMenu.label devAppMgrMenu.accesskey
 #, fuzzy
-#~ msgctxt "appMenuHistory.showAll.label"
-#~ msgid "Show All History"
-#~ msgstr "Бүткүл тарыхты көрсөтүү"
+msgid "&App Manager"
+msgstr "&Тиркеме менеджери"
 
+#: webide.label webide.accesskey
+msgid "&WebIDE"
+msgstr ""
+
+#: webide.keycode
 #, fuzzy
-#~ msgctxt "appMenuHistory.clearRecent.label"
-#~ msgid "Clear Recent History…"
-#~ msgstr "Соңку тарыхты өчүрүү…"
+msgid "VK_F8"
+msgstr "VK_F2"
 
+#: webide.keytext
+msgid "F8"
+msgstr "F8"
+
+#: devToolbar.keycode
+msgid "VK_F2"
+msgstr "VK_F2"
+
+#: devToolbar.keytext
+msgid "F2"
+msgstr "F2"
+
+#: devToolboxMenuItem.label devToolboxMenuItem.accesskey
+msgid "&Toggle Tools"
+msgstr ""
+
+#: devToolboxMenuItem.keytext
+msgid "I"
+msgstr ""
+
+#: devToolbarToolsButton.tooltip
+msgid "Toggle developer tools"
+msgstr ""
+
+#: devToolbarOtherToolsButton.label
+msgid "More Tools"
+msgstr "Көбүрөөк шаймандар"
+
+#: getMoreDevtoolsCmd.label getMoreDevtoolsCmd.accesskey
+msgid "Get &More Tools"
+msgstr "&Көбүрөөк шаймандарды алуу"
+
+#: fileMenu.label fileMenu.accesskey
+msgid "&File"
+msgstr "&Файл"
+
+#: newNavigatorCmd.label newNavigatorCmd.accesskey
+msgid "&New Window"
+msgstr "&Жаңы терезе"
+
+#: newNavigatorCmd.key
+msgid "N"
+msgstr ""
+
+#: newPrivateWindow.label newPrivateWindow.accesskey
+msgid "New Private &Window"
+msgstr "Жаңы жекелик &терезе"
+
+#: editMenu.label editMenu.accesskey
+msgid "&Edit"
+msgstr "&Түзөтүү"
+
+#: undoCmd.label undoCmd.accesskey
+msgid "&Undo"
+msgstr "&Жокко чыгаруу"
+
+#: undoCmd.key
+msgid "Z"
+msgstr ""
+
+#: redoCmd.label redoCmd.accesskey
+msgid "&Redo"
+msgstr "&Кайталоо"
+
+#: redoCmd.key
+msgctxt "redoCmd.key"
+msgid "Y"
+msgstr ""
+
+#: cutCmd.label cutCmd.accesskey
+msgid "Cu&t"
+msgstr "&Кесүү"
+
+#: cutCmd.key
+msgctxt "cutCmd.key"
+msgid "X"
+msgstr ""
+
+#: copyCmd.label copyCmd.accesskey
+msgid "&Copy"
+msgstr "&Көчүрүү"
+
+#: copyCmd.key
+msgid "C"
+msgstr ""
+
+#: pasteCmd.label pasteCmd.accesskey
+msgid "&Paste"
+msgstr "К&оюу"
+
+#: pasteCmd.key
+msgid "V"
+msgstr ""
+
+#: deleteCmd.label deleteCmd.accesskey
+msgid "&Delete"
+msgstr "Ө&чүрүү"
+
+#: deleteCmd.key
+msgctxt "deleteCmd.key"
+msgid "D"
+msgstr ""
+
+#: selectAllCmd.label selectAllCmd.accesskey
+msgid "Select &All"
+msgstr "&Баарын тандоо"
+
+#: selectAllCmd.key
+msgctxt "selectAllCmd.key"
+msgid "A"
+msgstr ""
+
+#: preferencesCmd2.label preferencesCmd2.accesskey
+msgid "&Options"
+msgstr "&Жөндөөлөр"
+
+#: preferencesCmdUnix.label preferencesCmdUnix.accesskey
+msgid "Prefere&nces"
+msgstr "&Жөндөөлөр"
+
+#: clearRecentHistory.label
+msgctxt "clearRecentHistory.label"
+msgid "Clear Recent History…"
+msgstr "Соңку тарыхты өчүрүү…"
+
+#: privateBrowsingCmd.commandkey
+msgctxt "privateBrowsingCmd.commandkey"
+msgid "P"
+msgstr ""
+
+#: viewMenu.label viewMenu.accesskey
+msgid "&View"
+msgstr "&Түрү"
+
+#: viewTabGroups.label viewTabGroups.accesskey
+msgid "Tab &Groups"
+msgstr "Салма &топтору"
+
+#: viewToolbarsMenu.label viewToolbarsMenu.accesskey
+msgid "&Toolbars"
+msgstr "&Аспап панелдери"
+
+#: viewSidebarMenu.label viewSidebarMenu.accesskey
+msgid "Sid&ebar"
+msgstr "&Каптал панель"
+
+#: viewCustomizeToolbar.label viewCustomizeToolbar.accesskey
+msgid "&Customize…"
+msgstr "&Жөндөө…"
+
+#: historyMenu.label historyMenu.accesskey
+msgid "Hi&story"
+msgstr "Т&арыхы"
+
+#: historyUndoMenu.label
+msgid "Recently Closed Tabs"
+msgstr "Жакында жабылган салмалар"
+
+#. LOCALIZATION NOTE (historyUndoWindowMenu): see bug 394759
+#: historyUndoWindowMenu.label
+msgid "Recently Closed Windows"
+msgstr "Жакында жабылган терезелер"
+
+#: historyRestoreLastSession.label
+msgctxt "historyRestoreLastSession.label"
+msgid "Restore Previous Session"
+msgstr "Мурунку сессияны калыбына келтирүү"
+
+#: showAllHistoryCmd2.label
+msgctxt "showAllHistoryCmd2.label"
+msgid "Show All History"
+msgstr "Бүткүл тарыхты көрсөтүү"
+
+#: showAllHistoryCmd.commandkey
+msgid "H"
+msgstr ""
+
+#: appMenuCustomize.label
+msgid "Customize"
+msgstr "Жөндөө"
+
+#: appMenuCustomize.tooltip
+msgid "Customize the Menu and Toolbars"
+msgstr ""
+
+#: appMenuCustomizeExit.label
+msgid "Exit Customize"
+msgstr ""
+
+#: appMenuCustomizeExit.tooltip
+msgid "Finish Customizing"
+msgstr ""
+
+#: appMenuHistory.label
 #, fuzzy
-#~ msgctxt "appMenuHistory.restoreSession.label"
-#~ msgid "Restore Previous Session"
-#~ msgstr "Мурунку сессияны калыбына келтирүү"
+msgctxt "appMenuHistory.label"
+msgid "History"
+msgstr "Тарыхы"
 
-#~ msgid "Open Help Menu"
-#~ msgstr "Жардам менюсун ачуу"
-
-#~ msgid "&Remove from Toolbar"
-#~ msgstr "Шайман панелинен ө&чүрүү"
-
-#~ msgid "&Remove from Menu"
-#~ msgstr "Менюдан ө&чүрүү"
-
-#~ msgid "Search or enter address"
-#~ msgstr "Издеңиз же даректи киргизиңиз"
-
+#: appMenuHistory.showAll.label
 #, fuzzy
-#~ msgid "Search with:"
-#~ msgstr "Сайттарды издөө"
+msgctxt "appMenuHistory.showAll.label"
+msgid "Show All History"
+msgstr "Бүткүл тарыхты көрсөтүү"
 
-#~ msgid "Open Link in New &Tab"
-#~ msgstr "Шилтемени &жаңы салмадан ачуу"
-
-#~ msgid "Open Link in New &Window"
-#~ msgstr "Шилтемени жаңы &терезеден ачуу"
-
-#~ msgid "Open Link in New &Private Window"
-#~ msgstr "Шилтемени жаңы &жекелик терезеден ачуу"
-
-#~ msgid "Open Frame in New &Tab"
-#~ msgstr "Фреймди жаңы &салмадан ачуу"
-
-#~ msgid "Open Frame in New &Window"
-#~ msgstr "Фреймди жаңы &терезеден ачуу"
-
-#~ msgid "&Reload Frame"
-#~ msgstr "Фреймди &жаңыртуу"
-
-#~ msgid "&View Page Source"
-#~ msgstr "Барактын баштапкы кодун ка&роо"
-
-#~ msgid "&View Frame Source"
-#~ msgstr "Фреймдин баштапкы кодун ка&роо"
-
-#~ msgid "&Reload Image"
-#~ msgstr "&Сүрөтүү кайта жүктөө"
-
-#~ msgid "&Set As Desktop Background…"
-#~ msgstr "&Иштактанын фону катары коюу…"
-
+#: appMenuHistory.clearRecent.label
 #, fuzzy
-#~ msgctxt "bookmarkPageCmd2.label"
-#~ msgid "Bookmark This Page"
-#~ msgstr "Бул баракты чөп катка кошуу"
+msgctxt "appMenuHistory.clearRecent.label"
+msgid "Clear Recent History…"
+msgstr "Соңку тарыхты өчүрүү…"
 
-#~ msgid "Bookmark This &Link"
-#~ msgstr "Бул &шилтемени чөп катка кошуу "
-
+#: appMenuHistory.restoreSession.label
 #, fuzzy
-#~ msgid "Book&mark This Frame"
-#~ msgstr "Бул баракты чөп катка кошуу"
+msgctxt "appMenuHistory.restoreSession.label"
+msgid "Restore Previous Session"
+msgstr "Мурунку сессияны калыбына келтирүү"
 
+#: appMenuHistory.viewSidebar.label
+msgid "View History Sidebar"
+msgstr ""
+
+#: appMenuHelp.tooltip
+msgid "Open Help Menu"
+msgstr "Жардам менюсун ачуу"
+
+#: customizeMenu.addToToolbar.label customizeMenu.addToToolbar.accesskey
+msgid "&Add to Toolbar"
+msgstr ""
+
+#: customizeMenu.addToPanel.label customizeMenu.addToPanel.accesskey
+msgid "Add to &Menu"
+msgstr ""
+
+#: customizeMenu.moveToToolbar.label customizeMenu.moveToToolbar.accesskey
+msgid "M&ove to Toolbar"
+msgstr ""
+
+#. LOCALIZATION NOTE (customizeMenu.moveToPanel.accesskey) can appear on the
+#. same context menu as menubarCmd and personalbarCmd, so they should have
+#. different access keys. customizeMenu.moveToToolbar and
+#. customizeMenu.moveToPanel are mutually exclusive, so can share access
+#. keys.
+#: customizeMenu.moveToPanel.label customizeMenu.moveToPanel.accesskey
+msgid "M&ove to Menu"
+msgstr ""
+
+#: customizeMenu.removeFromToolbar.label
+#: customizeMenu.removeFromToolbar.accesskey
+msgid "&Remove from Toolbar"
+msgstr "Шайман панелинен ө&чүрүү"
+
+#: customizeMenu.removeFromMenu.label customizeMenu.removeFromMenu.accesskey
+msgid "&Remove from Menu"
+msgstr "Менюдан ө&чүрүү"
+
+#: customizeMenu.addMoreItems.label customizeMenu.addMoreItems.accesskey
+msgid "&Add More Items…"
+msgstr ""
+
+#: openCmd.commandkey
+msgctxt "openCmd.commandkey"
+msgid "l"
+msgstr ""
+
+#: urlbar.placeholder2
+msgid "Search or enter address"
+msgstr "Издеңиз же даректи киргизиңиз"
+
+#: urlbar.accesskey
+msgctxt "urlbar.accesskey"
+msgid "d"
+msgstr ""
+
+#: urlbar.switchToTab.label
+msgid "Switch to tab:"
+msgstr ""
+
+#. Comment duplicated from browser-sets.inc:
+#. Search Command Key Logic works like this:
+#. Unix: Ctrl+J (0.8, 0.9 support)
+#. Ctrl+K (cross platform binding)
+#. Mac:  Cmd+K (cross platform binding)
+#. Cmd+Opt+F (platform convention)
+#. Win:  Ctrl+K (cross platform binding)
+#. Ctrl+E (IE compat)
+#. We support Ctrl+K on all platforms now and advertise it in the menu since it is
+#. our standard - it is a "safe" choice since it is near no harmful keys like "W" as
+#. "E" is. People mourning the loss of Ctrl+K for emacs compat can switch their GTK
+#. system setting to use emacs emulation, and we should respect it. Focus-Search-Box
+#. is a fundamental keybinding and we are maintaining a XP binding so that it is easy
+#. for people to switch to Linux.
+#: searchFocus.commandkey
+msgid "k"
+msgstr ""
+
+#: searchFocus.commandkey2
+msgctxt "searchFocus.commandkey2"
+msgid "e"
+msgstr ""
+
+#: searchFocusUnix.commandkey
+msgctxt "searchFocusUnix.commandkey"
+msgid "j"
+msgstr ""
+
+#. LOCALIZATION NOTE (searchFor.label, searchWith.label):
+#. These two strings are used to build the header above the list of one-click
+#. search providers:  "Search for <used typed keywords> with:"
+#: searchFor.label
+msgid "Search for "
+msgstr ""
+
+#: searchWith.label
+msgid " with:"
+msgstr ""
+
+#. The wording of this string should be as close as possible to
+#. searchFor.label and searchWith.label. This string will be used instead of
+#. them when the user has not typed any keyword.
+#: searchWithHeader.label
 #, fuzzy
-#~ msgid "&Email Link…"
-#~ msgstr "Шилтемени эл. почтадан жиберүү…"
+msgid "Search with:"
+msgstr "Сайттарды издөө"
 
-#~ msgid "Copy &Email Address"
-#~ msgstr "&Эл. почтанын дарегин көчүрүү"
+#: changeSearchSettings.button
+msgid "Change Search Settings"
+msgstr ""
 
-#~ msgid "&Play"
-#~ msgstr "&Ойнотуу"
+#: tabView.commandkey
+msgctxt "tabView.commandkey"
+msgid "e"
+msgstr ""
 
-#~ msgid "&Pause"
-#~ msgstr "Бир азга &токтотуу"
+#: openLinkCmdInTab.label openLinkCmdInTab.accesskey
+msgid "Open Link in New &Tab"
+msgstr "Шилтемени &жаңы салмадан ачуу"
 
-#~ msgid "&Mute"
-#~ msgstr "Ү&нүн өчүрүү"
+#: openLinkCmd.label openLinkCmd.accesskey
+msgid "Open Link in New &Window"
+msgstr "Шилтемени жаңы &терезеден ачуу"
 
-#~ msgctxt "videoFullScreen.label videoFullScreen.accesskey"
-#~ msgid "&Full Screen"
-#~ msgstr "&Толук экран"
+#: openLinkInPrivateWindowCmd.label openLinkInPrivateWindowCmd.accesskey
+msgid "Open Link in New &Private Window"
+msgstr "Шилтемени жаңы &жекелик терезеден ачуу"
 
-#~ msgid "Zoom &In"
-#~ msgstr "Ч&оңойтуу"
+#: openLinkCmdInCurrent.label openLinkCmdInCurrent.accesskey
+msgid "&Open Link"
+msgstr ""
 
-#~ msgid "Zoom &Out"
-#~ msgstr "&Кичирейтүү"
+#: openFrameCmdInTab.label openFrameCmdInTab.accesskey
+msgid "Open Frame in New &Tab"
+msgstr "Фреймди жаңы &салмадан ачуу"
 
-#~ msgid "&Zoom"
-#~ msgstr "&Масштаб"
+#: openFrameCmd.label openFrameCmd.accesskey
+msgid "Open Frame in New &Window"
+msgstr "Фреймди жаңы &терезеден ачуу"
 
+#: showOnlyThisFrameCmd.label showOnlyThisFrameCmd.accesskey
+msgid "&Show Only This Frame"
+msgstr ""
+
+#: reloadCmd.commandkey
+msgid "r"
+msgstr ""
+
+#: reloadFrameCmd.label reloadFrameCmd.accesskey
+msgid "&Reload Frame"
+msgstr "Фреймди &жаңыртуу"
+
+#: viewPartialSourceForSelectionCmd.label
+msgid "View Selection Source"
+msgstr ""
+
+#: viewPartialSourceForMathMLCmd.label
+msgid "View MathML Source"
+msgstr ""
+
+#. This accesskey is used for both
+#. viewPartialSourceForSelectionCmd.label and viewPartialSourceForMathMLCmd.label
+#: viewPartialSourceCmd.accesskey
+msgctxt "viewPartialSourceCmd.accesskey"
+msgid "e"
+msgstr ""
+
+#: viewPageSourceCmd.label viewPageSourceCmd.accesskey
+msgid "&View Page Source"
+msgstr "Барактын баштапкы кодун ка&роо"
+
+#: viewFrameSourceCmd.label viewFrameSourceCmd.accesskey
+msgid "&View Frame Source"
+msgstr "Фреймдин баштапкы кодун ка&роо"
+
+#: viewPageInfoCmd.label viewPageInfoCmd.accesskey
+msgid "View Page &Info"
+msgstr ""
+
+#: viewFrameInfoCmd.label viewFrameInfoCmd.accesskey
+msgid "View Frame &Info"
+msgstr ""
+
+#: reloadImageCmd.label reloadImageCmd.accesskey
+msgid "&Reload Image"
+msgstr "&Сүрөтүү кайта жүктөө"
+
+#: viewImageCmd.label viewImageCmd.accesskey
+msgid "View &Image"
+msgstr ""
+
+#: viewImageInfoCmd.label viewImageInfoCmd.accesskey
+msgid "View Image In&fo"
+msgstr ""
+
+#: viewImageDescCmd.label viewImageDescCmd.accesskey
+msgid "View &Description"
+msgstr ""
+
+#: viewVideoCmd.label viewVideoCmd.accesskey
+msgid "V&iew Video"
+msgstr ""
+
+#: viewBGImageCmd.label viewBGImageCmd.accesskey
+msgid "Vie&w Background Image"
+msgstr ""
+
+#: setDesktopBackgroundCmd.label setDesktopBackgroundCmd.accesskey
+msgid "&Set As Desktop Background…"
+msgstr "&Иштактанын фону катары коюу…"
+
+#: bookmarkPageCmd2.label
 #, fuzzy
-#~ msgid "Exit &brandShortName;"
-#~ msgstr "&brandShortName; жашыруу"
+msgctxt "bookmarkPageCmd2.label"
+msgid "Bookmark This Page"
+msgstr "Бул баракты чөп катка кошуу"
 
+#: bookmarkThisLinkCmd.label bookmarkThisLinkCmd.accesskey
+msgid "Bookmark This &Link"
+msgstr "Бул &шилтемени чөп катка кошуу "
+
+#: bookmarkThisFrameCmd.label bookmarkThisFrameCmd.accesskey
 #, fuzzy
-#~ msgid "Quit &brandShortName;"
-#~ msgstr "&brandShortName; жашыруу"
+msgid "Book&mark This Frame"
+msgstr "Бул баракты чөп катка кошуу"
 
+#: emailPageCmd.label emailPageCmd.accesskey
 #, fuzzy
-#~ msgid "&Close"
-#~ msgstr "Жабуу"
+msgid "&Email Link…"
+msgstr "Шилтемени эл. почтадан жиберүү…"
 
+#: savePageCmd.label savePageCmd.accesskey
+msgid "Save Page &As…"
+msgstr ""
+
+#. alternate for content area context menu
+#: savePageCmd.accesskey2
+msgctxt "savePageCmd.accesskey2"
+msgid "P"
+msgstr ""
+
+#: savePageCmd.commandkey
+msgid "s"
+msgstr ""
+
+#: saveFrameCmd.label saveFrameCmd.accesskey
+msgid "Save &Frame As…"
+msgstr ""
+
+#: printFrameCmd.label printFrameCmd.accesskey
+msgid "&Print Frame…"
+msgstr ""
+
+#: saveLinkCmd.label saveLinkCmd.accesskey
+msgid "Save Lin&k As…"
+msgstr ""
+
+#: saveImageCmd.label saveImageCmd.accesskey
+msgid "Sa&ve Image As…"
+msgstr ""
+
+#: saveVideoCmd.label saveVideoCmd.accesskey
+msgid "Sa&ve Video As…"
+msgstr ""
+
+#: saveAudioCmd.label saveAudioCmd.accesskey
+msgid "Sa&ve Audio As…"
+msgstr ""
+
+#: emailImageCmd.label emailImageCmd.accesskey
+msgid "Email Ima&ge…"
+msgstr ""
+
+#: emailVideoCmd.label emailVideoCmd.accesskey
+msgid "Em&ail Video…"
+msgstr ""
+
+#: castVideoCmd.label castVideoCmd.accesskey
+msgid "S&end Video To Device"
+msgstr ""
+
+#: emailAudioCmd.label emailAudioCmd.accesskey
+msgid "Em&ail Audio…"
+msgstr ""
+
+#: playPluginCmd.label playPluginCmd.accesskey
+msgid "A&ctivate this plugin"
+msgstr ""
+
+#: hidePluginCmd.label hidePluginCmd.accesskey
+msgid "&Hide this plugin"
+msgstr ""
+
+#: copyLinkCmd.label copyLinkCmd.accesskey
+msgid "Copy Link Loc&ation"
+msgstr ""
+
+#: copyImageCmd.label copyImageCmd.accesskey
+msgid "C&opy Image Location"
+msgstr ""
+
+#: copyImageContentsCmd.label copyImageContentsCmd.accesskey
+msgid "Cop&y Image"
+msgstr ""
+
+#: copyVideoURLCmd.label copyVideoURLCmd.accesskey
+msgid "C&opy Video Location"
+msgstr ""
+
+#: copyAudioURLCmd.label copyAudioURLCmd.accesskey
+msgid "C&opy Audio Location"
+msgstr ""
+
+#: copyEmailCmd.label copyEmailCmd.accesskey
+msgid "Copy &Email Address"
+msgstr "&Эл. почтанын дарегин көчүрүү"
+
+#: thisFrameMenu.label thisFrameMenu.accesskey
+msgid "T&his Frame"
+msgstr ""
+
+#. Media (video/audio) controls
+#. LOCALIZATION NOTE: The access keys for "Play" and
+#. "Pause" are the same because the two context-menu
+#. items are mutually exclusive.
+#: mediaPlay.label mediaPlay.accesskey
+msgid "&Play"
+msgstr "&Ойнотуу"
+
+#: mediaPause.label mediaPause.accesskey
+msgid "&Pause"
+msgstr "Бир азга &токтотуу"
+
+#. LOCALIZATION NOTE: The access keys for "Mute" and
+#. "Unmute" are the same because the two context-menu
+#. items are mutually exclusive.
+#: mediaMute.label mediaMute.accesskey
+msgid "&Mute"
+msgstr "Ү&нүн өчүрүү"
+
+#: mediaUnmute.label mediaUnmute.accesskey
+msgid "Un&mute"
+msgstr ""
+
+#: mediaPlaybackRate.label mediaPlaybackRate.accesskey
+msgid "P&lay Speed"
+msgstr ""
+
+#: mediaPlaybackRate050x.label mediaPlaybackRate050x.accesskey
+msgid "&Slow Motion (0.5×)"
+msgstr ""
+
+#: mediaPlaybackRate100x.label mediaPlaybackRate100x.accesskey
+msgid "&Normal Speed"
+msgstr ""
+
+#: mediaPlaybackRate150x.label mediaPlaybackRate150x.accesskey
+msgid "&High Speed (1.5×)"
+msgstr ""
+
+#. LOCALIZATION NOTE: "Ludicrous Speed" is a reference to the
+#. movie "Space Balls" and is meant to say that this speed is very
+#. fast.
+#: mediaPlaybackRate200x.label mediaPlaybackRate200x.accesskey
+msgid "&Ludicrous Speed (2×)"
+msgstr ""
+
+#. LOCALIZATION NOTE: The access keys for "Show Controls" and
+#. "Hide Controls" are the same because the two context-menu
+#. items are mutually exclusive.
+#: mediaShowControls.label mediaShowControls.accesskey
+msgid "Show &Controls"
+msgstr ""
+
+#: mediaHideControls.label mediaHideControls.accesskey
+msgid "Hide &Controls"
+msgstr ""
+
+#: videoFullScreen.label videoFullScreen.accesskey
 #, fuzzy
-#~ msgid "VK_F3"
-#~ msgstr "VK_F2"
+msgctxt "videoFullScreen.label videoFullScreen.accesskey"
+msgid "&Full Screen"
+msgstr "&Толук экран"
 
-#~ msgid "Done"
-#~ msgstr "Даяр"
+#: videoSaveImage.label videoSaveImage.accesskey
+msgid "&Save Snapshot As…"
+msgstr ""
 
-#~ msgid "Cancel"
-#~ msgstr "Жокко чыгаруу"
+#. LOCALIZATION NOTE: The access keys for "Show Statistics" and
+#. "Hide Statistics" are the same because the two context-menu
+#. items are mutually exclusive.
+#: videoShowStats.label videoShowStats.accesskey
+msgid "Show S&tatistics"
+msgstr ""
 
-#~ msgid "This website does not supply identity information."
-#~ msgstr "Ушул веб-сайттын аныктыгы тууралуу маалымат жок."
+#: videoHideStats.label videoHideStats.accesskey
+msgid "Hide S&tatistics"
+msgstr ""
 
-#~ msgid "Permissions"
-#~ msgstr "Уруксаттар"
+#. LOCALIZATION NOTE :
+#. fullZoomEnlargeCmd.commandkey3, fullZoomReduceCmd.commandkey2 and
+#. fullZoomResetCmd.commandkey2 are alternative acceleration keys for zoom.
+#. If shift key is needed with your locale popular keyboard for them,
+#. you can use these alternative items. Otherwise, their values should be empty.
+#: fullZoomEnlargeCmd.label fullZoomEnlargeCmd.accesskey
+msgid "Zoom &In"
+msgstr "Ч&оңойтуу"
 
-#~ msgid "Browser tabs"
-#~ msgstr "Браузердин салмалары"
+#: fullZoomEnlargeCmd.commandkey
+msgid "+"
+msgstr ""
 
-#~ msgctxt "syncBrand.shortName.label"
-#~ msgid "Sync"
-#~ msgstr "Синхрондоштуруу"
+#. + is above this key on many keyboards
+#: fullZoomEnlargeCmd.commandkey2
+msgid "="
+msgstr ""
 
-#~ msgid "Set Up &syncBrand.shortName.label;…"
-#~ msgstr "&syncBrand.shortName.label;ну жөндөө…"
+#: fullZoomEnlargeCmd.commandkey3
+msgctxt "fullZoomEnlargeCmd.commandkey3"
+msgid ""
+msgstr ""
 
+#: fullZoomReduceCmd.label fullZoomReduceCmd.accesskey
+msgid "Zoom &Out"
+msgstr "&Кичирейтүү"
+
+#: fullZoomReduceCmd.commandkey
+msgid "-"
+msgstr ""
+
+#: fullZoomReduceCmd.commandkey2
+msgctxt "fullZoomReduceCmd.commandkey2"
+msgid ""
+msgstr ""
+
+#: fullZoomResetCmd.label fullZoomResetCmd.accesskey
+msgid "&Reset"
+msgstr ""
+
+#: fullZoomResetCmd.commandkey
+msgid "0"
+msgstr ""
+
+#: fullZoomResetCmd.commandkey2
+msgctxt "fullZoomResetCmd.commandkey2"
+msgid ""
+msgstr ""
+
+#: fullZoomToggleCmd.label fullZoomToggleCmd.accesskey
+msgid "Zoom &Text Only"
+msgstr ""
+
+#: fullZoom.label fullZoom.accesskey
+msgid "&Zoom"
+msgstr "&Масштаб"
+
+#: sidebarCloseButton.tooltip
+msgid "Close sidebar"
+msgstr ""
+
+#: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
+msgid "E&xit"
+msgstr ""
+
+#: quitApplicationCmdWin.tooltip
 #, fuzzy
-#~ msgid "&Reconnect to &syncBrand.shortName.label;…"
-#~ msgstr "&syncBrand.shortName.label; кызматына кайта туташуу"
+msgid "Exit &brandShortName;"
+msgstr "&brandShortName; жашыруу"
 
-#~ msgctxt "syncToolbarButton.label"
-#~ msgid "Sync"
-#~ msgstr "Синхрондоштуруу"
+#: goBackCmd.commandKey
+msgid "["
+msgstr ""
 
-#~ msgid "&Learn more…"
-#~ msgstr "&Толугу менен…"
+#: goForwardCmd.commandKey
+msgid "]"
+msgstr ""
 
-#~ msgid "Manage"
-#~ msgstr "Башкаруу"
+#: quitApplicationCmd.label quitApplicationCmd.accesskey
+msgid "&Quit"
+msgstr ""
 
+#: quitApplicationCmdMac.label
 #, fuzzy
-#~ msgctxt "mixedContentBlocked2.learnMore"
-#~ msgid "Learn More"
-#~ msgstr "Толугу менен"
+msgid "Quit &brandShortName;"
+msgstr "&brandShortName; жашыруу"
 
+#. This keyboard shortcut is used by both Linux and OSX builds.
+#: quitApplicationCmdUnix.key
+msgctxt "quitApplicationCmdUnix.key"
+msgid "Q"
+msgstr ""
+
+#: closeCmd.label closeCmd.accesskey
 #, fuzzy
-#~ msgctxt "mixedContentBlocked2.options"
-#~ msgid "Options"
-#~ msgstr "&Жөндөөлөр"
+msgid "&Close"
+msgstr "Жабуу"
 
+#: closeCmd.key
+msgid "W"
+msgstr ""
+
+#: pageStyleMenu.label pageStyleMenu.accesskey
+msgid "Page St&yle"
+msgstr ""
+
+#: pageStyleNoStyle.label pageStyleNoStyle.accesskey
+msgid "&No Style"
+msgstr ""
+
+#: pageStylePersistentOnly.label pageStylePersistentOnly.accesskey
+msgid "&Basic Page Style"
+msgstr ""
+
+#: pageReportIcon.tooltip
+msgid "Change pop-up blocking settings for this website"
+msgstr ""
+
+#: allowPopups.accesskey
+msgctxt "allowPopups.accesskey"
+msgid "p"
+msgstr ""
+
+#. On Windows we use the term "Options" to describe settings, but
+#. on Linux and Mac OS X we use "Preferences" - carry that distinction
+#. over into this string, which is used in the "popup blocked" info bar .
+#: editPopupSettingsUnix.label
+msgid "Edit Pop-up Blocker Preferences…"
+msgstr ""
+
+#: editPopupSettings.label editPopupSettings.accesskey
+msgid "&Edit Pop-up Blocker Options…"
+msgstr ""
+
+#: dontShowMessage.accesskey
+msgctxt "dontShowMessage.accesskey"
+msgid "D"
+msgstr ""
+
+#: bidiSwitchPageDirectionItem.label bidiSwitchPageDirectionItem.accesskey
+msgid "Switch Page &Direction"
+msgstr ""
+
+#: bidiSwitchTextDirectionItem.label bidiSwitchTextDirectionItem.accesskey
+msgid "S&witch Text Direction"
+msgstr ""
+
+#: bidiSwitchTextDirectionItem.commandkey
+msgctxt "bidiSwitchTextDirectionItem.commandkey"
+msgid "X"
+msgstr ""
+
+#: findOnCmd.label findOnCmd.accesskey
+msgid "&Find in This Page…"
+msgstr ""
+
+#: findOnCmd.commandkey
+msgctxt "findOnCmd.commandkey"
+msgid "f"
+msgstr ""
+
+#: findAgainCmd.label findAgainCmd.accesskey
+msgid "Find A&gain"
+msgstr ""
+
+#: findAgainCmd.commandkey
+msgid "g"
+msgstr ""
+
+#: findAgainCmd.commandkey2
 #, fuzzy
-#~ msgctxt "trackingContentBlocked.learnMore"
-#~ msgid "Learn More"
-#~ msgstr "Толугу менен"
+msgid "VK_F3"
+msgstr "VK_F2"
 
+#: findSelectionCmd.commandkey
+msgctxt "findSelectionCmd.commandkey"
+msgid "e"
+msgstr ""
+
+#: spellAddDictionaries.label spellAddDictionaries.accesskey
+msgid "&Add Dictionaries…"
+msgstr ""
+
+#: editBookmark.done.label
+msgid "Done"
+msgstr "Даяр"
+
+#: editBookmark.cancel.label
+msgid "Cancel"
+msgstr "Жокко чыгаруу"
+
+#: editBookmark.removeBookmark.accessKey
+msgid "R"
+msgstr ""
+
+#: identity.unverifiedsite2
+msgid "This website does not supply identity information."
+msgstr "Ушул веб-сайттын аныктыгы тууралуу маалымат жок."
+
+#: identity.connectedTo
+msgid "You are connected to"
+msgstr ""
+
+#. Localization note (identity.runBy) : This string appears between a
+#. domain name (above) and an organization name (below). E.g.
+#. example.com
+#. which is run by
+#. Example Enterprises, Inc.
+#. The layout of the identity dialog prevents combining this into a single string with
+#. substitution variables.  If it is difficult to translate the sense of the string
+#. with that structure, consider a translation which ignores the preceding domain and
+#. just addresses the organization to follow, e.g. "This site is run by "
+#: identity.runBy
+msgid "which is run by"
+msgstr ""
+
+#: identity.moreInfoLinkText
+msgid "More Information…"
+msgstr ""
+
+#: identity.permissions
+msgid "Permissions"
+msgstr "Уруксаттар"
+
+#. This string should be the
+#. localized title of this SUMO article
+#. https://support.mozilla.org/kb/how-do-i-tell-if-my-connection-is-secure
+#: identity.help.tooltip
+msgid "How do I tell if my connection to a website is secure?"
+msgstr ""
+
+#. Name for the tabs toolbar as spoken by screen readers.
+#. The word "toolbar" is appended automatically and should not be contained below!
+#: tabsToolbar.label
+msgid "Browser tabs"
+msgstr "Браузердин салмалары"
+
+#. This appears in the history menu
+#: syncTabsMenu2.label
+msgid "Tabs From Other Devices"
+msgstr ""
+
+#: syncBrand.shortName.label
+msgctxt "syncBrand.shortName.label"
+msgid "Sync"
+msgstr "Синхрондоштуруу"
+
+#: syncSetup.label
+msgid "Set Up &syncBrand.shortName.label;…"
+msgstr "&syncBrand.shortName.label;ну жөндөө…"
+
+#: syncSetup.accesskey
+msgctxt "syncSetup.accesskey"
+msgid "Y"
+msgstr ""
+
+#: syncSyncNowItem.label syncSyncNowItem.accesskey
+msgid "&Sync Now"
+msgstr ""
+
+#: syncReAuthItem.label syncReAuthItem.accesskey
 #, fuzzy
-#~ msgctxt "trackingContentBlocked.options"
-#~ msgid "Options"
-#~ msgstr "&Жөндөөлөр"
+msgid "&Reconnect to &syncBrand.shortName.label;…"
+msgstr "&syncBrand.shortName.label; кызматына кайта туташуу"
 
+#: syncToolbarButton.label
 #, fuzzy
-#~ msgid "&Show All"
-#~ msgstr "Баарын көрсөтүү"
+msgctxt "syncToolbarButton.label"
+msgid "Sync"
+msgstr "Синхрондоштуруу"
 
-#~ msgid "Try Again"
-#~ msgstr "Дагы аракет кылып көрүү"
+#: socialToolbar.title
+msgid "Social Toolbar Button"
+msgstr ""
 
+#: social.ok.label social.ok.accesskey
+msgid "&OK"
+msgstr ""
+
+#: social.toggleSidebar.label social.toggleSidebar.accesskey
+msgid "Show &sidebar"
+msgstr ""
+
+#: social.addons.label
+msgid "Manage Services…"
+msgstr ""
+
+#: social.toggleNotifications.label social.toggleNotifications.accesskey
+msgid "Show desktop &notifications"
+msgstr ""
+
+#: social.activated.description
+msgid ""
+"Services from <label/> have been enabled. You can change your settings for "
+"services in the <label class='text-link'>Add-on Manager</label>."
+msgstr ""
+
+#: social.activated.undo.label social.activated.undo.accesskey
+msgid "Oops, &undo this!"
+msgstr ""
+
+#: social.learnMore.label social.learnMore.accesskey
+msgid "&Learn more…"
+msgstr "&Толугу менен…"
+
+#: social.closeNotificationItem.label
+msgid "Not Now"
+msgstr ""
+
+#: social.directory.label
+msgid "Activations Directory"
+msgstr ""
+
+#: social.directory.text
+msgid "You can activate Share services from the directory."
+msgstr ""
+
+#: social.directory.button
+msgid "Take me there!"
+msgstr ""
+
+#: social.directory.introText
+msgid "Click on a service to add it to &brandShortName;."
+msgstr ""
+
+#: social.directory.viewmore.text
+msgid "View More"
+msgstr ""
+
+#: customizeMode.tabTitle
+msgid "Customize &brandShortName;"
+msgstr ""
+
+#: customizeMode.menuAndToolbars.header2
+msgid "Additional Tools and Features"
+msgstr ""
+
+#: customizeMode.menuAndToolbars.empty
+msgid "Want more tools?"
+msgstr ""
+
+#: customizeMode.menuAndToolbars.emptyLink
+msgid "Choose from thousands of add-ons"
+msgstr ""
+
+#: customizeMode.restoreDefaults
+msgid "Restore Defaults"
+msgstr ""
+
+#: customizeMode.toolbars
+msgid "Show / Hide Toolbars"
+msgstr ""
+
+#: customizeMode.titlebar
+msgid "Title Bar"
+msgstr ""
+
+#: customizeMode.lwthemes
+msgid "Themes"
+msgstr ""
+
+#: customizeMode.lwthemes.myThemes
+msgid "My Themes"
+msgstr ""
+
+#: customizeMode.lwthemes.recommended
+msgid "Recommended"
+msgstr ""
+
+#: customizeMode.lwthemes.menuManage
+msgid "Manage"
+msgstr "Башкаруу"
+
+#: customizeMode.lwthemes.menuManage.accessKey
+msgctxt "customizeMode.lwthemes.menuManage.accessKey"
+msgid "M"
+msgstr ""
+
+#: customizeMode.lwthemes.menuGetMore
+msgid "Get More Themes"
+msgstr ""
+
+#: customizeMode.lwthemes.menuGetMore.accessKey
+msgid "G"
+msgstr ""
+
+#: customizeMode.deveditionTheme.label2
+msgid "Use Developer Edition Theme"
+msgstr ""
+
+#: social.chatBar.commandkey
+msgid "c"
+msgstr ""
+
+#: social.chatBar.label social.chatBar.accesskey
+msgid "Fo&cus chats"
+msgstr ""
+
+#: social.markpageMenu.label social.markpageMenu.accesskey
+msgid "Save &Page To…"
+msgstr ""
+
+#: social.marklinkMenu.label social.marklinkMenu.accesskey
+msgid "Save &Link To…"
+msgstr ""
+
+#: getUserMedia.selectCamera.label getUserMedia.selectCamera.accesskey
+msgid "&Camera to share:"
+msgstr ""
+
+#: getUserMedia.selectMicrophone.label getUserMedia.selectMicrophone.accesskey
+msgid "&Microphone to share:"
+msgstr ""
+
+#: getUserMedia.allWindowsShared.message
+msgid "All visible windows on your screen will be shared."
+msgstr ""
+
+#. Bad Content Blocker Doorhanger Notification
+#: badContentBlocked.moreinfo
+msgid "Most websites will work properly even if content is blocked."
+msgstr ""
+
+#: mixedContentBlocked2.message
+msgid "Insecure content"
+msgstr ""
+
+#: mixedContentBlocked2.moreinfo
+msgid "Some unencrypted elements on this website have been blocked."
+msgstr ""
+
+#: mixedContentBlocked2.learnMore
 #, fuzzy
-#~ msgctxt "uiTour.infoPanel.close"
-#~ msgid "Close"
-#~ msgstr "Жабуу"
+msgctxt "mixedContentBlocked2.learnMore"
+msgid "Learn More"
+msgstr "Толугу менен"
 
+#: mixedContentBlocked2.options
 #, fuzzy
-#~ msgid "Sidebars"
-#~ msgstr "&Каптал панель"
+msgctxt "mixedContentBlocked2.options"
+msgid "Options"
+msgstr "&Жөндөөлөр"
+
+#: mixedContentBlocked2.unblock.label mixedContentBlocked2.unblock.accesskey
+msgid "&Disable protection for now"
+msgstr ""
+
+#: mixedContentBlocked2.block.label mixedContentBlocked2.block.accesskey
+msgctxt "mixedContentBlocked2.block.label mixedContentBlocked2.block.accesskey"
+msgid "&Enable protection"
+msgstr ""
+
+#: mixedContentBlocked2.disabled.message
+msgid "Protection is disabled"
+msgstr ""
+
+#: trackingContentBlocked.message
+msgid "Tracking"
+msgstr ""
+
+#: trackingContentBlocked.moreinfo
+msgid "Parts of the page that track your online activity have been blocked."
+msgstr ""
+
+#: trackingContentBlocked.learnMore
+#, fuzzy
+msgctxt "trackingContentBlocked.learnMore"
+msgid "Learn More"
+msgstr "Толугу менен"
+
+#: trackingContentBlocked.options
+#, fuzzy
+msgctxt "trackingContentBlocked.options"
+msgid "Options"
+msgstr "&Жөндөөлөр"
+
+#: trackingContentBlocked.unblock2.label
+#: trackingContentBlocked.unblock2.accesskey
+msgid "&Disable protection for this site"
+msgstr ""
+
+#: trackingContentBlocked.block.label trackingContentBlocked.block.accesskey
+msgctxt ""
+"trackingContentBlocked.block.label trackingContentBlocked.block.accesskey"
+msgid "&Enable protection"
+msgstr ""
+
+#: trackingContentBlocked.disabled.message
+msgid "Tracking protection is disabled"
+msgstr ""
+
+#: pointerLock.notification.message
+msgid "Press ESC at any time to show it again."
+msgstr ""
+
+#: pluginNotification.showAll.label pluginNotification.showAll.accesskey
+#, fuzzy
+msgid "&Show All"
+msgstr "Баарын көрсөтүү"
+
+#. LOCALIZATION NOTE (pluginActivateNow.label, pluginActivateAlways.label, pluginBlockNow.label): These should be the same as the matching strings in browser.properties
+#: pluginActivateNow.label
+msgid "Allow Now"
+msgstr ""
+
+#: pluginActivateAlways.label
+msgid "Allow and Remember"
+msgstr ""
+
+#: pluginBlockNow.label
+msgid "Block Plugin"
+msgstr ""
+
+#. This is used to determine the
+#. width of the plugin popup notification that can appear if a plugin has been
+#. blocked on a page. Should be wide enough to fit the pluginActivateNow.label
+#. and pluginActivateAlways.label strings above on a single line. This must be
+#. a CSS length value.
+#. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
+#: pluginNotification.width
+msgid "28em"
+msgstr ""
+
+#: tabCrashed.header
+msgid "Tab crashed"
+msgstr ""
+
+#: tabCrashed.message
+msgid ""
+"Well, this is embarrassing. We tried to display this Web page, but it's not "
+"responding."
+msgstr ""
+
+#: tabCrashed.checkSendReport
+msgid "Tell &vendorShortName; about this crash so they can fix it."
+msgstr ""
+
+#: tabCrashed.tryAgain
+msgid "Try Again"
+msgstr "Дагы аракет кылып көрүү"
+
+#: uiTour.infoPanel.close
+#, fuzzy
+msgctxt "uiTour.infoPanel.close"
+msgid "Close"
+msgstr "Жабуу"
+
+#: appMenuSidebars.label
+#, fuzzy
+msgid "Sidebars"
+msgstr "&Каптал панель"
+
+#: switchToMetroCmd2.label
+msgid "Relaunch in &brandShortName; for Windows 8 Touch"
+msgstr ""
+
+#. LOCALIZATION NOTE: (panicButton.view.mainTimeframeDesc, panicButton.view.5min, panicButton.view.2hr, panicButton.view.day):
+#. The .mainTimeframeDesc string combined with any of the 3 others is meant to form a complete sentence, e.g. "Forget the last: Five minutes".
+#. Please ensure that this remains the case in the translation.
+#: panicButton.view.mainTimeframeDesc
+msgid "Forget the last:"
+msgstr ""
+
+#: panicButton.view.5min
+msgid "Five minutes"
+msgstr ""
+
+#: panicButton.view.2hr
+msgid "Two hours"
+msgstr ""
+
+#: panicButton.view.day
+msgid "24 hours"
+msgstr ""
+
+#. LOCALIZATION NOTE: (panicButton.view.mainLabel, panicButton.view.deleteCookies, panicButton.view.deleteHistory, panicButton.view.deleteTabsAndWindows, panicButton.view.openNewWindow):
+#. The .mainActionDesc string combined with any of the 4 others is meant to form a complete sentence, e.g. "Proceeding will: Delete Recent Cookies".
+#. Note also that the deleteCookies, deleteHistory and deleteTabsAndWindows strings include <html:strong> tags for emphasis on the words "Cookies", "History", "Tabs" and "Windows".
+#. The translation should do the same.
+#: panicButton.view.mainActionDesc
+msgid "Proceeding will:"
+msgstr ""
+
+#: panicButton.view.deleteCookies
+msgid "Delete Recent <html:strong>Cookies</html:strong>"
+msgstr ""
+
+#: panicButton.view.deleteHistory
+msgid "Delete Recent <html:strong>History</html:strong>"
+msgstr ""
+
+#: panicButton.view.deleteTabsAndWindows
+msgid ""
+"Close all <html:strong>Tabs</html:strong> and <html:strong>Windows</html:"
+"strong>"
+msgstr ""
+
+#: panicButton.view.openNewWindow
+msgid "Open a new clean Window"
+msgstr ""
+
+#: panicButton.view.undoWarning
+msgid "This action cannot be undone."
+msgstr ""
+
+#: panicButton.view.forgetButton
+msgid "Forget!"
+msgstr ""
+
+#: panicButton.thankyou.msg1
+msgid "Your recent history is cleared."
+msgstr ""
+
+#: panicButton.thankyou.msg2
+msgid "Safe browsing!"
+msgstr ""
+
+#: panicButton.thankyou.buttonlabel
+msgid "Thanks!"
+msgstr ""
 
 #, fuzzy
 #~ msgid "Book&mark This Page"

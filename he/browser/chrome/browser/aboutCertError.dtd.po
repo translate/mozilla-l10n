@@ -1,8 +1,9 @@
+#. extracted from ./browser/chrome/browser/aboutCertError.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-21 16:48+0000\n"
+"POT-Creation-Date: 2015-02-22 00:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,66 +14,93 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#~ msgid "Untrusted Connection"
-#~ msgstr "חיבור לא בטוח"
+#. %brandDTD;
+#. These strings are used by Firefox's custom about:certerror page,
+#. a replacement for the standard security certificate errors produced
+#. by NSS/PSM via netError.xhtml.
+#: certerror.pagetitle
+msgid "Untrusted Connection"
+msgstr "חיבור לא בטוח"
 
-#~ msgid "This Connection is Untrusted"
-#~ msgstr "חיבור זה אינו בטוח"
+#: certerror.longpagetitle
+msgid "This Connection is Untrusted"
+msgstr "חיבור זה אינו בטוח"
 
-#~ msgid ""
-#~ "You have asked &brandShortName; to connect \n"
-#~ "securely to <b>#1</b>, but we can't confirm that your connection is "
-#~ "secure."
-#~ msgstr ""
-#~ "ביקשת מ־&brandShortName; להתחבר בצורה מאובטחת אל <b>#1</b>, אבל אנחנו לא "
-#~ "יכולים לאמת שהחיבור שלך אכן מאובטח."
+#. Localization note (certerror.introPara1) - The string "#1" will
+#. be replaced at runtime with the name of the server to which the user
+#. was trying to connect.
+#: certerror.introPara1
+msgid ""
+"You have asked &brandShortName; to connect \n"
+"securely to <b>#1</b>, but we can't confirm that your connection is secure."
+msgstr ""
+"ביקשת מ־&brandShortName; להתחבר בצורה מאובטחת אל <b>#1</b>, אבל אנחנו לא "
+"יכולים לאמת שהחיבור שלך אכן מאובטח."
 
-#~ msgid ""
-#~ "Normally, when you try to connect securely, \n"
-#~ "sites will present trusted identification to prove that you are \n"
-#~ "going to the right place. However, this site's identity can't be verified."
-#~ msgstr ""
-#~ "בדרך־כלל, כאשר אתה מנסה להתחבר בצורה מאובטחת, אתרים מציגים הזדהות מוסמכת "
-#~ "כדי להוכיח שאתה אכן מגיע למקום הנכון. למרות זאת, ההזדהות של אתר זה לא "
-#~ "ניתנת לווידוא."
+#: certerror.introPara2
+msgid ""
+"Normally, when you try to connect securely, \n"
+"sites will present trusted identification to prove that you are \n"
+"going to the right place. However, this site's identity can't be verified."
+msgstr ""
+"בדרך־כלל, כאשר אתה מנסה להתחבר בצורה מאובטחת, אתרים מציגים הזדהות מוסמכת כדי "
+"להוכיח שאתה אכן מגיע למקום הנכון. למרות זאת, ההזדהות של אתר זה לא ניתנת "
+"לווידוא."
 
-#~ msgid "What Should I Do?"
-#~ msgstr "מה ברצונך לעשות?"
+#: certerror.whatShouldIDo.heading
+msgid "What Should I Do?"
+msgstr "מה ברצונך לעשות?"
 
-#~ msgid ""
-#~ "If you usually connect to \n"
-#~ "this site without problems, this error could mean that someone is \n"
-#~ "trying to impersonate the site, and you shouldn't continue."
-#~ msgstr ""
-#~ "אם אתה בדרך־כלל מתחבר לאתר זה ללא בעיות, ייתכן שמישהו מנסה להזדהות בשם "
-#~ "האתר, ורצוי שלא תמשיך הלאה לאתר."
+#: certerror.whatShouldIDo.content
+msgid ""
+"If you usually connect to \n"
+"this site without problems, this error could mean that someone is \n"
+"trying to impersonate the site, and you shouldn't continue."
+msgstr ""
+"אם אתה בדרך־כלל מתחבר לאתר זה ללא בעיות, ייתכן שמישהו מנסה להזדהות בשם האתר, "
+"ורצוי שלא תמשיך הלאה לאתר."
 
-#~ msgid "Get me out of here!"
-#~ msgstr "קח אותי מפה!"
+#: certerror.whatShouldIDo.badStsCertExplanation
+msgid ""
+"This site uses HTTP \n"
+"Strict Transport Security (HSTS) to specify that &brandShortName; only "
+"connect \n"
+"to it securely. As a result, it is not possible to add an exception for "
+"this \n"
+"certificate."
+msgstr ""
 
-#~ msgid "I Understand the Risks"
-#~ msgstr "אני מבין את הסיכונים"
+#: certerror.getMeOutOfHere.label
+msgid "Get me out of here!"
+msgstr "קח אותי מפה!"
 
-#~ msgid ""
-#~ "If you understand what's going on, you \n"
-#~ "can tell &brandShortName; to start trusting this site's identification. \n"
-#~ "<b>Even if you trust the site, this error could mean that someone is \n"
-#~ "tampering with your connection.</b>"
-#~ msgstr ""
-#~ "אם אתה מבין מה קורה, אתה יכול להורות ל־&brandShortName; להתחיל לסמוך על "
-#~ "ההזדהות של אתר זה. \n"
-#~ "<b>אפילו אם אתה סומך על האתר, ייתכן ומשמעות השגיאה היא שמישהו מחבל "
-#~ "בקישוריות שלך.</b>"
+#: certerror.expert.heading
+msgid "I Understand the Risks"
+msgstr "אני מבין את הסיכונים"
 
-#~ msgid ""
-#~ "Don't add an exception unless \n"
-#~ "you know there's a good reason why this site doesn't use trusted "
-#~ "identification."
-#~ msgstr ""
-#~ "אל תוסיף חריגות אלא אם יש סיבה טובה לכך שהאתר לא משתמש בהזדהות נסמכת."
+#: certerror.expert.content
+msgid ""
+"If you understand what's going on, you \n"
+"can tell &brandShortName; to start trusting this site's identification. \n"
+"<b>Even if you trust the site, this error could mean that someone is \n"
+"tampering with your connection.</b>"
+msgstr ""
+"אם אתה מבין מה קורה, אתה יכול להורות ל־&brandShortName; להתחיל לסמוך על "
+"ההזדהות של אתר זה. \n"
+"<b>אפילו אם אתה סומך על האתר, ייתכן ומשמעות השגיאה היא שמישהו מחבל בקישוריות "
+"שלך.</b>"
 
-#~ msgid "Add Exception…"
-#~ msgstr "הוסף חריגה…"
+#: certerror.expert.contentPara2
+msgid ""
+"Don't add an exception unless \n"
+"you know there's a good reason why this site doesn't use trusted "
+"identification."
+msgstr "אל תוסיף חריגות אלא אם יש סיבה טובה לכך שהאתר לא משתמש בהזדהות נסמכת."
 
-#~ msgid "Technical Details"
-#~ msgstr "פרטים טכניים"
+#: certerror.addException.label
+msgid "Add Exception…"
+msgstr "הוסף חריגה…"
+
+#: certerror.technical.heading
+msgid "Technical Details"
+msgstr "פרטים טכניים"
