@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-12-05 17:52+0000\n"
 "Last-Translator: andpet <az@kth.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1417801967.000000\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Certifikatutfärdare (namnlös)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Redigera certifikattillit"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Certifikatet ”%S” representerar en certifikatutfärdare."
@@ -181,13 +177,13 @@ msgstr "Filnamn att säkerhetskopiera till"
 msgid "PKCS12 Files"
 msgstr "PKCS12-filer"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Använd denna knapp för att återställa %Ss säkerhetsinställningar till de "
-"ursprungliga värdena."
+"Ange det lösenord som användes för att kryptera denna säkerhetskopia av "
+"certifikat."
 
 #. #Cert verification
 #: certVerified
@@ -246,28 +242,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Utfärdat under: ”%S”"
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Webbplatsens identitet är ej verifierad"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Webbplatsens identitet är verifierad"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Webbplatsen %S stöder autentisering för sidan som visas. Identiteten hos "
-"denna webbplats har verifierats av %S, en certifikatutfärdare (CA) du litar "
-"på för detta syfte."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Visa certifikatet som verifierar denna webbplats identitet."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Anslutningen är ej krypterad"
@@ -289,11 +263,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Sidan som visas är inte krypterad."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Anslutning krypterad (%1$S, %2$S bitar, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Anslutning krypterad (%1$S, %2$S bitar, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -332,10 +312,6 @@ msgstr "Certifikatvisaren:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Ej del av certifikat>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Okänd utfärdare>"
 
 #: escrowFinalMessage
 msgid ""
@@ -628,10 +604,6 @@ msgstr "Ingen information tillgänglig"
 msgid "Unable to obtain identification status for this site."
 msgstr "Kunde inte erhålla identifieringsstatus för webbplatsen."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Anslutningen misslyckades"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -640,6 +612,40 @@ msgstr "Certifikat finns"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Certifikatet finns redan."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Redigera certifikattillit"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Använd denna knapp för att återställa %Ss säkerhetsinställningar till de "
+#~ "ursprungliga värdena."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Webbplatsens identitet är ej verifierad"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Webbplatsens identitet är verifierad"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Webbplatsen %S stöder autentisering för sidan som visas. Identiteten hos "
+#~ "denna webbplats har verifierats av %S, en certifikatutfärdare (CA) du "
+#~ "litar på för detta syfte."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Visa certifikatet som verifierar denna webbplats identitet."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Okänd utfärdare>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Anslutningen misslyckades"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

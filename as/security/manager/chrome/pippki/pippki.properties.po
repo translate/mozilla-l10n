@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-10-21 09:35+0000\n"
 "Last-Translator: ngoswami <ngoswami@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,10 +38,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "প্ৰমাণপত্ৰৰ কৰ্ত্তৃপক্ষ (নাম নোহোৱা)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "প্ৰমাণপত্ৰৰ বিশ্বাস সম্পাদন কৰক"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "\"%S\" প্ৰমাণপত্ৰই এটা প্ৰমাণপত্ৰৰ কৰ্ত্তৃপক্ষৰ প্ৰতিনিধি কৰে।"
@@ -175,11 +171,11 @@ msgstr "কপি কৰি ৰক্ষা কৰা ফাইলৰ নাম"
 msgid "PKCS12 Files"
 msgstr "PKCS12 ফাইল"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr "%S ৰ সুৰক্ষাৰ পছন্দক সিহঁতৰ কলঘৰৰ পছন্দলৈ পুনঃ স্থাপন কৰিবলৈ এই বুটাম টিপক।"
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "এই প্ৰমাণপত্ৰৰ বেক-আপ এনক্ৰিপ্ট কৰিবলৈ ব্যৱহাৰ কৰা পাছৱাৰ্ড দিয়ক।"
 
 #. #Cert verification
 #: certVerified
@@ -233,27 +229,6 @@ msgid "Issued Under: \"%S\""
 msgstr "প্ৰদান কৰা হৈছে: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "ৱেব ছাইটৰ পৰিচয় পৰীক্ষা কৰা হোৱা নাই"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "ৱেব ছাইটৰ পৰিচয় পৰীক্ষা কৰা হৈছে"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"আপুনি চোৱা পৃষ্ঠাৰ কাৰণে ৱেব ছাইট %S এ প্ৰমাণীকৰণৰ সমৰ্থন কৰে। %S এ এই ৱেব ছাইটৰ "
-"চিনাকি পৰীক্ষা কৰিছে, এই কাৰ্য্যৰ কাৰণে আপুনি বিশ্বাস কৰা প্ৰমাণপত্ৰৰ কৰ্ত্তৃপক্ষ।"
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "এই ৱেব ছাইটৰ পৰিচয় পৰীক্ষা কৰা সুৰক্ষাৰ প্ৰমাণপত্ৰ চাওক।"
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "সংযোগক এনক্ৰিপ্ট কৰা হোৱা নাই"
@@ -273,11 +248,16 @@ msgstr "এনক্ৰিপছন নোহোৱাকে ইন্টাৰ�
 msgid "The page you are viewing is not encrypted."
 msgstr "আপুনি চোৱা পৃষ্ঠা এনক্ৰিপ্টেড নহয়।"
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -314,10 +294,6 @@ msgstr "প্ৰমাণপত্ৰ প্ৰদৰ্শক:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<প্ৰমাণপত্ৰ অংশ নহয়>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<অজ্ঞাত প্ৰদানকৰোঁতা>"
 
 #: escrowFinalMessage
 msgid ""
@@ -606,10 +582,6 @@ msgstr "কোনো তথ্য নাই"
 msgid "Unable to obtain identification status for this site."
 msgstr "এই ছাইটৰ পৰিচয়ৰ অৱস্থা পাব নোৱাৰি।"
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "সংযোগ বিফল"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -618,6 +590,38 @@ msgstr "প্ৰমাণপত্ৰ অস্তিত্ববান"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "প্ৰমাণপত্ৰ ইতিমধ্যে অস্তিত্ববান।"
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "প্ৰমাণপত্ৰৰ বিশ্বাস সম্পাদন কৰক"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr "%S ৰ সুৰক্ষাৰ পছন্দক সিহঁতৰ কলঘৰৰ পছন্দলৈ পুনঃ স্থাপন কৰিবলৈ এই বুটাম টিপক।"
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "ৱেব ছাইটৰ পৰিচয় পৰীক্ষা কৰা হোৱা নাই"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "ৱেব ছাইটৰ পৰিচয় পৰীক্ষা কৰা হৈছে"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "আপুনি চোৱা পৃষ্ঠাৰ কাৰণে ৱেব ছাইট %S এ প্ৰমাণীকৰণৰ সমৰ্থন কৰে। %S এ এই ৱেব "
+#~ "ছাইটৰ চিনাকি পৰীক্ষা কৰিছে, এই কাৰ্য্যৰ কাৰণে আপুনি বিশ্বাস কৰা প্ৰমাণপত্ৰৰ "
+#~ "কৰ্ত্তৃপক্ষ।"
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "এই ৱেব ছাইটৰ পৰিচয় পৰীক্ষা কৰা সুৰক্ষাৰ প্ৰমাণপত্ৰ চাওক।"
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<অজ্ঞাত প্ৰদানকৰোঁতা>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "সংযোগ বিফল"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "সংযোগ ইনক্ৰিপটেড: উচ্চ-মানৰ ইনক্ৰিপষণ (%1$S, %2$S বিট কি'সমূহ)"

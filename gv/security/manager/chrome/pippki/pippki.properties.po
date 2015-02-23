@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-02-28 15:35+0000\n"
 "Last-Translator: greinneyder <greinneyder@mhf.org.im>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,11 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Kied Teisht (gyn ennym)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-#, fuzzy
-msgid "Edit certificate trust"
-msgstr "Caghlaa treisht teisht"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr ""
@@ -174,10 +169,9 @@ msgstr "Ennym Coadan dy Jannoo sauçhey"
 msgid "PKCS12 Files"
 msgstr "Coadanyn PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
 
 #. #Cert verification
@@ -232,25 +226,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Currit magh fo: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr ""
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr ""
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-
 #: pageInfo_NoEncryption
 #, fuzzy
 msgid "Connection Not Encrypted"
@@ -272,11 +247,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Cha nel yn ynnyd-eggey tou jeeaghyn er coadaghit"
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -313,10 +293,6 @@ msgstr "Jeeaghdeyr Teisht:"
 #, fuzzy
 msgid "<Not Part Of Certificate>"
 msgstr "<Cha nel eh paart jeh teisht>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr ""
 
 #: escrowFinalMessage
 msgid ""
@@ -642,11 +618,6 @@ msgstr "Cha nel fysseree ry-geddyn"
 msgid "Unable to obtain identification status for this site."
 msgstr ""
 
-#: addExceptionConnectionFailed
-#, fuzzy
-msgid "Connection Failed"
-msgstr "Cha ren yn cochiangley gobbraghey"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 #, fuzzy
@@ -656,6 +627,14 @@ msgstr "Coadanyn Teisht"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Edit certificate trust"
+#~ msgstr "Caghlaa treisht teisht"
+
+#, fuzzy
+#~ msgid "Connection Failed"
+#~ msgstr "Cha ren yn cochiangley gobbraghey"
 
 #, fuzzy
 #~ msgctxt "editTrustEmail"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-01-20 10:09+0000\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: I have a very cool team\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1421748542.000000\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Sertifikaatowerheid (onbenoemd)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Redigeer sertifikaatvertroue"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Die sertifikaat \"%S\" verteenwoordig 'n sertifikaatowerheid."
@@ -182,13 +178,13 @@ msgstr "Lêernaam om te rugsteun"
 msgid "PKCS12 Files"
 msgstr "PKCS12-lêers"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Gebruik hierdie knop om %S se sekuriteitsvoorkeure terug te stel na die "
-"fabrieksopstelling."
+"Tik die wagwoord in wat gebruik is om hierdie sertifikaatrugsteun te "
+"enkripteer."
 
 #. #Cert verification
 #: certVerified
@@ -246,29 +242,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Uitgereik onder: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Webwerfidentiteit nie gestaaf nie"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Webwerfidentiteit gestaaf"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Die webwerf %S ondersteun stawing vir die bladsy wat u bekyk. Die identiteit "
-"van hierdie webwerf is deur %S, 'n sertifikaatowerheid wat u vir hierdie "
-"doeleinde vertrou, gestaaf."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-"Bekyk die sekuriteitsertifikaat wat die webwerf se identiteit verifieer."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Verbinding nie geënkripteer nie"
@@ -291,11 +264,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Die bladsy wat u bekyk, is nie geënkripteer nie."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Verbinding geënkripteer (%1$S, %2$S-bissleutel, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Verbinding geënkripteer (%1$S, %2$S-bissleutel, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -335,10 +314,6 @@ msgstr "Sertifikaatkyker:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Nie deel van sertifikaat nie>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Onbekende uitreiker>"
 
 #: escrowFinalMessage
 msgid ""
@@ -633,10 +608,6 @@ msgstr "Geen inligting beskikbaar nie"
 msgid "Unable to obtain identification status for this site."
 msgstr "Kon nie identifikasiestatus vir gegewe werf verkry nie."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Kon nie koppel nie"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -645,6 +616,41 @@ msgstr "Sertifikaat bestaan"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Die sertifikaat bestaan reeds."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Redigeer sertifikaatvertroue"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Gebruik hierdie knop om %S se sekuriteitsvoorkeure terug te stel na die "
+#~ "fabrieksopstelling."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Webwerfidentiteit nie gestaaf nie"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Webwerfidentiteit gestaaf"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Die webwerf %S ondersteun stawing vir die bladsy wat u bekyk. Die "
+#~ "identiteit van hierdie webwerf is deur %S, 'n sertifikaatowerheid wat u "
+#~ "vir hierdie doeleinde vertrou, gestaaf."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Bekyk die sekuriteitsertifikaat wat die webwerf se identiteit verifieer."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Onbekende uitreiker>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Kon nie koppel nie"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

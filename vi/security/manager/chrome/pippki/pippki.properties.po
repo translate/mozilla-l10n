@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-10-16 14:31+0000\n"
 "Last-Translator: Đặng <thanhdd.it@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,10 +39,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Nhà thẩm định Chứng thư (không có tên)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Chỉnh độ tin cậy của chứng thư"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Chứng thư \"%S\" đại diện cho một Nhà thẩm định Chứng chỉ."
@@ -178,13 +174,11 @@ msgstr "Tên Tập Tin để Sao lưu"
 msgid "PKCS12 Files"
 msgstr "Các tệp PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr ""
-"Dùng nút bấm này để đặt lại thiết lập bảo mật của %S về thiết lập mặc định "
-"của nhà sản xuất."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "Hãy nhập mật khẩu dùng để mật hóa bản sao lưu chứng chỉ này."
 
 #. #Cert verification
 #: certVerified
@@ -238,28 +232,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Được cấp dưới: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Định danh Trang web Chưa được Xác minh"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Định danh Trang web Đã được Xác minh"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Trang web %S hỗ trợ xác thực cho trang bạn đang xem. Định danh của trang web "
-"này đã được xác minh bởi %S, một nhà thẩm định chứng chỉ mà bạn tin tưởng "
-"cho mục đích này."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Xem chứng chỉ bảo mật xác thực định danh của trang web này."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Kết nối Không được Mã hóa"
@@ -281,11 +253,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Trang bạn đang xem không được mã hóa."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -324,10 +301,6 @@ msgstr "Người xem Chứng chỉ:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Không thuộc Chứng chỉ>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Không rõ Người cấp>"
 
 #: escrowFinalMessage
 msgid ""
@@ -619,10 +592,6 @@ msgstr "Không có Thông tin Hiện hữu"
 msgid "Unable to obtain identification status for this site."
 msgstr "Không thể thu thập tình trạng định danh cho trang được đưa ra."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Kết nối Thất bại"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -631,6 +600,40 @@ msgstr "Chứng thư tồn tại"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Chứng chỉ đã tồn tại sẵn."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Chỉnh độ tin cậy của chứng thư"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Dùng nút bấm này để đặt lại thiết lập bảo mật của %S về thiết lập mặc "
+#~ "định của nhà sản xuất."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Định danh Trang web Chưa được Xác minh"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Định danh Trang web Đã được Xác minh"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Trang web %S hỗ trợ xác thực cho trang bạn đang xem. Định danh của trang "
+#~ "web này đã được xác minh bởi %S, một nhà thẩm định chứng chỉ mà bạn tin "
+#~ "tưởng cho mục đích này."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Xem chứng chỉ bảo mật xác thực định danh của trang web này."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Không rõ Người cấp>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Kết nối Thất bại"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "Kết nối được Mật hóa: Mật hóa Cấp cao (khóa %1$S, %2$S bit)"

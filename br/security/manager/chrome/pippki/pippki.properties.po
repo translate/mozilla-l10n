@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-12-14 18:57+0000\n"
 "Last-Translator: Alan <alan.monfort@free.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1418583444.000000\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Aotrouniezh testeniañ (anv ebet)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Embann un testeni a fiziañs"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Derc'houezañ a ra an testeni \"%S\" un aotrouniezh testeniañ."
@@ -182,13 +178,11 @@ msgstr "Anv ar restr da atoriñ"
 msgid "PKCS12 Files"
 msgstr "Restroù PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr ""
-"Arverañ an afell-mañ evit deraouekaat dibaboù gwell diogelroez %S gant o "
-"arventennoù greanti."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "Roit ar ger-tremen arveret evit enrinegañ an testeni atoriñ-mañ."
 
 #. #Cert verification
 #: certVerified
@@ -244,28 +238,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Skignet dindan : \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Hennad al lec'hienn n'eo ket bet gwiriet"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Hennad al lec'hienn bet gwiriet"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Skoret e vez an dilesa gant al lec'hienn %S evit ar pajennadoù emaoc'h o "
-"welout. Gwiriet eo bet hennad al lec'hienn gant %S, un aotrouniezh testeniañ "
-"hoc'h eus fiziañs ennañ evit ar palioù-mañ."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Gwelout an testeni diogelroez o wiriañ hennad al lec'hienn-mañ."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Kennaskañ dienrinek"
@@ -289,11 +261,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "N'eo ket bet enrineget ar bajennad emaoc'h o welout."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Kennask enrineget (%1$S, alc'hwez %2$S eizhbit, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Kennask enrineget (%1$S, alc'hwez %2$S eizhbit, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -335,10 +313,6 @@ msgstr "Skrammer testeni :"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<N'emañ ket war an testeni>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Skigner dianav>"
 
 #: escrowFinalMessage
 msgid ""
@@ -635,10 +609,6 @@ msgstr "N'eus stlennoù hegerz ebet"
 msgid "Unable to obtain identification status for this site."
 msgstr "N'haller ket kaout ar stad naoudiañ evit al lec'hienn lavaret."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "C'hwitadenn war ar c'hennaskañ"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -647,6 +617,40 @@ msgstr "An testeni zo anezhañ"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "An testeni zo anezhañ endeo."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Embann un testeni a fiziañs"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Arverañ an afell-mañ evit deraouekaat dibaboù gwell diogelroez %S gant o "
+#~ "arventennoù greanti."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Hennad al lec'hienn n'eo ket bet gwiriet"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Hennad al lec'hienn bet gwiriet"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Skoret e vez an dilesa gant al lec'hienn %S evit ar pajennadoù emaoc'h o "
+#~ "welout. Gwiriet eo bet hennad al lec'hienn gant %S, un aotrouniezh "
+#~ "testeniañ hoc'h eus fiziañs ennañ evit ar palioù-mañ."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Gwelout an testeni diogelroez o wiriañ hennad al lec'hienn-mañ."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Skigner dianav>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "C'hwitadenn war ar c'hennaskañ"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "Kennaskañ enrinek : Enrinegañ a live uhel (%1$S, %2$S a vitoù)"

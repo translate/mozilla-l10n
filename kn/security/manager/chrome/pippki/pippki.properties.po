@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-02-20 09:03+0000\n"
 "Last-Translator: shanky <prasad.mvs@gmail.com>\n"
 "Language-Team: Kannada <kde-i18n-doc@kde.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1424422998.000000\n"
@@ -41,10 +41,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "ಪ್ರಮಾಣಪತ್ರ ಅಥಾರಿಟಿ (ಹೆಸರಿಲ್ಲದ)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "ಪ್ರಮಾಣಪತ್ರ ನಂಬಿಕೆಯನ್ನು ಸಂಪಾದಿಸು(ಪರಿಷ್ಕರಿಸು)"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "ಪ್ರಮಾಣಪತ್ರ \"%S\" ವು ಒಂದು ಪ್ರಮಾಣಪತ್ರ ಅಥಾರಿಟಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ."
@@ -181,13 +177,12 @@ msgstr "ಬ್ಯಾಕ್‍ಅಪ್ ಮಾಡಬೇಕಿರುವ ಕಡತ�
 msgid "PKCS12 Files"
 msgstr "PKCS12 ಕಡತಗಳು"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"%S'ನ ಸುರಕ್ಷತಾ ಆದ್ಯತೆಗಳನ್ನು  ಅವುಗಳ ಕಾರ್ಖಾನೆಯ ಸಿದ್ಧತೆಗಳಿಗೆ ಮತ್ತೊಮ್ಮೆ ಹೊಂದಿಸಲು ಈ "
-"ಗುಂಡಿಯನ್ನು ಬಳಸಿ."
+"ದಯವಿಟ್ಟು ಈ ಪ್ರಮಾಣಪತ್ರದ ಬ್ಯಾಕ್ಅಪ್‍  ಅನ್ನು ಗೂಢಲಿಪೀಕರಿಸಲು ಬಳಸಲ್ಪಟ್ಟಂತಹ ಗುಪ್ತಪದವನ್ನು ದಾಖಲಿಸಿ."
 
 #. #Cert verification
 #: certVerified
@@ -242,27 +237,6 @@ msgid "Issued Under: \"%S\""
 msgstr "ಇದರ ಅಡಿಯಲ್ಲಿ ಒದಗಿಸಲಾಗಿದೆ: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "ಜಾಲತಾಣದ ಗುರುತನ್ನು ಪರಿಶೀಲಿಸಲಾಗಿಲ್ಲ"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "ಜಾಲತಾಣದ ಗುರುತನ್ನು ಪರಿಶೀಲಿಸಲಾಗಿದೆ"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"ಜಾಲತಾಣ %S ವು ನೀವು ನೋಡುತ್ತಿರುವ ಪುಟಕ್ಕೆ ದೃಢೀಕರಣವನ್ನು  ಬೆಂಬಲಿಸುತ್ತದೆ. ಈ ಜಾಲತಾಣದ "
-"ಗುರುತನ್ನು  ನೀವು ಈ ಕಾರ್ಯಕ್ಕೆ ನಂಬುವಂತಹ ಅಥಾರಿಟಿಯಾದ  %S ನಿಂದ ಪರಿಶೀಲಿಸಲ್ಪಟ್ಟಿದೆ."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "ಈ ಜಾಲತಾಣದ ಗುರುತನ್ನು ಪರಿಶೀಲಿಸುವ ಸುರಕ್ಷತಾ ಪ್ರಮಾಣಪತ್ರವನ್ನು  ನೋಡಿ."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "ಸಂಪರ್ಕವು ಗೂಢಲಿಪೀಕರಣಗೊಂಡಿಲ್ಲ"
@@ -284,11 +258,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "ನೀವು ನೋಡುತ್ತಿರುವ ಜಾಲಪುಟವು ಗೂಢಲಿಪೀಕರಣಗೊಂಡಿಲ್ಲ."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "ಸಂಪರ್ಕವನ್ನು ಗೂಢಲಿಪೀಕರಿಸಲಾಗಿದೆ (%1$S, %2$S ಬಿಟ್ ಕೀಲಿಗಳು, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "ಸಂಪರ್ಕವನ್ನು ಗೂಢಲಿಪೀಕರಿಸಲಾಗಿದೆ (%1$S, %2$S ಬಿಟ್ ಕೀಲಿಗಳು, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -329,10 +309,6 @@ msgstr "ಪ್ರಮಾಣಪತ್ರ ವೀಕ್ಷಕ:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<ಪ್ರಮಾಣಪತ್ರದ ಒಂದು ಭಾಗವಾಗಿಲ್ಲ>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<ಅಜ್ಞಾತ ಬಳಕೆದಾರ>"
 
 #: escrowFinalMessage
 msgid ""
@@ -628,10 +604,6 @@ msgstr "ಯಾವುದೆ ಮಾಹಿತಿ ಲಭ್ಯವಿಲ್ಲ"
 msgid "Unable to obtain identification status for this site."
 msgstr "ಒದಗಿಸಲಾದ ತಾಣಕ್ಕೆ ಗುರುತಿನ ಸ್ಥಿತಿಯನ್ನು ಪಡೆಯಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "ಸಂಪರ್ಕವು ವಿಫಲಗೊಂಡಿದೆ"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -640,6 +612,39 @@ msgstr "ಪ್ರಮಾಣಪತ್ರವು ಇದೆ"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "ಪ್ರಮಾಣಪತ್ರವು ಈಗಾಗಲೆ ಮುಚ್ಚಲ್ಪಟ್ಟಿದೆ."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "ಪ್ರಮಾಣಪತ್ರ ನಂಬಿಕೆಯನ್ನು ಸಂಪಾದಿಸು(ಪರಿಷ್ಕರಿಸು)"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "%S'ನ ಸುರಕ್ಷತಾ ಆದ್ಯತೆಗಳನ್ನು  ಅವುಗಳ ಕಾರ್ಖಾನೆಯ ಸಿದ್ಧತೆಗಳಿಗೆ ಮತ್ತೊಮ್ಮೆ ಹೊಂದಿಸಲು ಈ "
+#~ "ಗುಂಡಿಯನ್ನು ಬಳಸಿ."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "ಜಾಲತಾಣದ ಗುರುತನ್ನು ಪರಿಶೀಲಿಸಲಾಗಿಲ್ಲ"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "ಜಾಲತಾಣದ ಗುರುತನ್ನು ಪರಿಶೀಲಿಸಲಾಗಿದೆ"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "ಜಾಲತಾಣ %S ವು ನೀವು ನೋಡುತ್ತಿರುವ ಪುಟಕ್ಕೆ ದೃಢೀಕರಣವನ್ನು  ಬೆಂಬಲಿಸುತ್ತದೆ. ಈ ಜಾಲತಾಣದ "
+#~ "ಗುರುತನ್ನು  ನೀವು ಈ ಕಾರ್ಯಕ್ಕೆ ನಂಬುವಂತಹ ಅಥಾರಿಟಿಯಾದ  %S ನಿಂದ ಪರಿಶೀಲಿಸಲ್ಪಟ್ಟಿದೆ."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "ಈ ಜಾಲತಾಣದ ಗುರುತನ್ನು ಪರಿಶೀಲಿಸುವ ಸುರಕ್ಷತಾ ಪ್ರಮಾಣಪತ್ರವನ್ನು  ನೋಡಿ."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<ಅಜ್ಞಾತ ಬಳಕೆದಾರ>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "ಸಂಪರ್ಕವು ವಿಫಲಗೊಂಡಿದೆ"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

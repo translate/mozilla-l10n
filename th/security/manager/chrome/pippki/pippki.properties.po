@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-04-16 17:02+0000\n"
 "Last-Translator: Wichai <chengings@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Certificate Authority (ไม่ระบุชื่อ)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "แก้ไขการเชื่อถือใบรับรอง"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "ใบรับรอง \"%S\" เป็น Certificate Authority"
@@ -171,11 +167,11 @@ msgstr "ชื่อแฟ้มที่จะสำรอง"
 msgid "PKCS12 Files"
 msgstr "แฟ้ม PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr "ใช้ปุ่มนี้เพื่อล้างการตั้งค่าความปลอดภัยของ %S ให้เป็นค่าปริยาย"
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "โปรดป้อนรหัสผ่านเพื่อใช้เข้ารหัสลับการสำรองใบรับรอง"
 
 #. #Cert verification
 #: certVerified
@@ -229,27 +225,6 @@ msgid "Issued Under: \"%S\""
 msgstr "ออกให้ภายใต้: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "อัตลักษณ์ของเว็บไซต์ไม่ได้ถูกพิสูจน์"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "อัตลักษณ์ของเว็บไซต์ถูกพิสูจน์แล้ว"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"หน้าเว็บที่คุณกำลังดูในเว็บไซต์ %S รองรับการระบุตัวตน อัตลักษณ์ของเว็บไซต์นี้ได้ถูกพิสูจน์โดย %S "
-"ซึ่เป็นผู้ออกใบรับรองที่คุณเชื่อถือ"
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "เรียกดูใบรับรองความปลอดภัยที่ได้รับการพิสูจน์ให้เป็นอัตลักษณ์ของเว็บไซต์นี้"
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "การเชื่อมต่อไม่ได้ถูกเข้ารหัส"
@@ -269,11 +244,16 @@ msgstr "ข้อมูลถูกส่งไปในอินเทอร์
 msgid "The page you are viewing is not encrypted."
 msgstr "หน้าเว็บที่คุณเรียกดูอยู่ไม่ได้ทำการเข้ารหัส"
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -310,10 +290,6 @@ msgstr "ตัวดูใบรับรอง:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<ไม่ใช่ส่วนหนึ่งของใบรับรอง>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<ผู้ใบรับรองนิรนาม>"
 
 #: escrowFinalMessage
 msgid ""
@@ -597,10 +573,6 @@ msgstr "ไม่มีข้อมูล"
 msgid "Unable to obtain identification status for this site."
 msgstr "ไม่สามารถบอกถึงสถานะการระบุตัวตนของเว็บไซต์ได้"
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "การเชื่อมต่อล้มเหลว"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -609,6 +581,37 @@ msgstr "มีใบรับรอง"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "มีใบรับรองอยู่แล้ว"
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "แก้ไขการเชื่อถือใบรับรอง"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr "ใช้ปุ่มนี้เพื่อล้างการตั้งค่าความปลอดภัยของ %S ให้เป็นค่าปริยาย"
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "อัตลักษณ์ของเว็บไซต์ไม่ได้ถูกพิสูจน์"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "อัตลักษณ์ของเว็บไซต์ถูกพิสูจน์แล้ว"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "หน้าเว็บที่คุณกำลังดูในเว็บไซต์ %S รองรับการระบุตัวตน อัตลักษณ์ของเว็บไซต์นี้ได้ถูกพิสูจน์โดย %S "
+#~ "ซึ่เป็นผู้ออกใบรับรองที่คุณเชื่อถือ"
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "เรียกดูใบรับรองความปลอดภัยที่ได้รับการพิสูจน์ให้เป็นอัตลักษณ์ของเว็บไซต์นี้"
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<ผู้ใบรับรองนิรนาม>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "การเชื่อมต่อล้มเหลว"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "การเชื่อมต่อถูกเข้ารหัส: การเข้ารหัสระดับสูง (%1$S, %2$S bit keys)"

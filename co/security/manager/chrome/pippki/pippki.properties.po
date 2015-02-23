@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-09-17 23:48+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,10 +38,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Autorità di Cirtificazione (senza nome)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Mudificà a fiducia à u cirtificatu"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "U cirtificatu \"%S\" ripresenta un'Autorità di Cirtificazione."
@@ -174,13 +170,12 @@ msgstr "Nome di u cartulare da archivià"
 msgid "PKCS12 Files"
 msgstr "Cartulare PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Aduprà stu buttone par ristabulisce e prifirenze pridifinite di sicurità par "
-"%S."
+"Scrive u codice adupratu pà a copia di ricuparazione di stu cirtificatu."
 
 #. #Cert verification
 #: certVerified
@@ -240,29 +235,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Rilasciatu da: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Idintità di u situ web micca virificata"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Idintità di u situ web virificata"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"U situ web %S supporta l'autentificazione pà a pagine visualizata. "
-"L'idintità di stu situ web hè stata virificata da %S, un'Autorità di "
-"Cirtificazione ch'omu si ne hè fidati par què."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-"Vede u cirtificatu di sicurità chì virificheghja l'idintità di stu situ web."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Cunnissione micca ciffrata"
@@ -284,11 +256,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "A pagine visualizata ind'istu momentu ùn hè ciffrata."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -327,10 +304,6 @@ msgstr "Cirtificatu:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<micca inclusu in lu cirtificatu>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<emittente scunnisciutu>"
 
 #: escrowFinalMessage
 msgid ""
@@ -620,10 +593,6 @@ msgstr "Nisuna infurmazione dispunibule"
 msgid "Unable to obtain identification status for this site."
 msgstr "Ùn si pò ottene u statu di l'idintificazione pà u situ datu."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Cunnissione micca riisciuta"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 #, fuzzy
@@ -633,6 +602,42 @@ msgstr "Cartulare cirtificatu"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Ci hè dighjà u cirtificatu."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Mudificà a fiducia à u cirtificatu"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Aduprà stu buttone par ristabulisce e prifirenze pridifinite di sicurità "
+#~ "par %S."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Idintità di u situ web micca virificata"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Idintità di u situ web virificata"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "U situ web %S supporta l'autentificazione pà a pagine visualizata. "
+#~ "L'idintità di stu situ web hè stata virificata da %S, un'Autorità di "
+#~ "Cirtificazione ch'omu si ne hè fidati par què."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Vede u cirtificatu di sicurità chì virificheghja l'idintità di stu situ "
+#~ "web."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<emittente scunnisciutu>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Cunnissione micca riisciuta"
 
 #~ msgid ""
 #~ "The website %S is using low-grade encryption for the page you are viewing."

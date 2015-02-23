@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-02-23 09:49+0000\n"
 "Last-Translator: soksophea <sksophea@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1424684988.000000\n"
@@ -38,10 +38,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "ប្រភព​វិញ្ញាបនបត្រ (គ្មាន​ឈ្មោះ)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "កែសម្រួល​ទំនុកចិត្ត​លើ​វិញ្ញាបនបត្រ"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "វិញ្ញាបនបត្រ \"%S\" តំណាង​ឲ្យ​ប្រភព​វិញ្ញាបនបត្រ ។"
@@ -174,11 +170,11 @@ msgstr "ឈ្មោះ​ឯកសារ​ត្រូវ​បម្រុង
 msgid "PKCS12 Files"
 msgstr "ឯកសារ PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr "ប្រើ​ប៊ូតុង​នេះ​ដើម្បី​កំណត់​ឡើង​វិញ​នូវ​ចំណូលចិត្ត​សុវត្ថិភាព​របស់​​ %S ​ទៅជា​ការ​កំណត់​ដើម​របស់​វា ។"
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "សូម​បញ្ចូល​ពាក្យសម្ងាត់​ដែល​ធ្លាប់​បាន​ប្រើ​សម្រាប់​អ៊ិនគ្រីប​ការ​បម្រុងទុក​វិញ្ញាបនបត្រ​នេះ ។"
 
 #. #Cert verification
 #: certVerified
@@ -232,27 +228,6 @@ msgid "Issued Under: \"%S\""
 msgstr "បាន​ចេញ​ផ្សាយ​ក្រោម ៖ \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "អត្តសញ្ញាណ​តំបន់បណ្ដាញ​មិន​ទាន់​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "អត្តសញ្ញាណ​តំបន់បណ្ដាញ​មិន​ទាន់​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"តំបន់បណ្ដាញ %S គាំទ្រ​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​សម្រាប់​ទំព័រ​ដែល​អ្នក​កំពុងតែ​មើល ។ អត្តសញ្ញាណ​របស់​"
-"តំបន់បណ្ដាញ​នេះ​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់​ដោយ %S ជា​ប្រភព​វិញ្ញាបនបត្រ​ដែល​អ្នក​ទុកចិត្ត​សម្រាប់​គោលបំណង​នេះ ។"
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "មើល​វិញ្ញាបនបត្រ​សុវត្ថិភាព​ដែល​ផ្ទៀងផ្ទាត់​អត្តសញ្ញាណ​របស់​តំបន់​បណ្ដាញ​នេះ ។"
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "ការ​តភ្ជាប់​មិន​ត្រូវ​បាន​អ៊ិនគ្រីប"
@@ -274,11 +249,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "ទំព័រ​ដែល​អ្នក​កំពុង​មើល​ មិន​ទាន់​ត្រូវ​បាន​អ៊ិនគ្រីប​ទេ ។"
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "ការ​តភ្ជាប់​បាន​បម្លែង​ទៅ​ជា​កូដ (%1$S, %2$S bit keys, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "ការ​តភ្ជាប់​បាន​បម្លែង​ទៅ​ជា​កូដ (%1$S, %2$S bit keys, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -317,10 +298,6 @@ msgstr "កម្មវិធី​មើល​វិញ្ញាបនបត្
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<មិនមែន​ជា​ផ្នែក​នៃ​វិញ្ញាបនបត្រ>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<មិន​ស្គាល់​អ្នក​ចេញ​វិញ្ញាបនបត្រ>"
 
 #: escrowFinalMessage
 msgid ""
@@ -607,10 +584,6 @@ msgstr "គ្មាន​ព័ត៌មាន"
 msgid "Unable to obtain identification status for this site."
 msgstr "មិន​អាច​ទទួល​បាន​ស្ថានភាព​នៃ​ការ​កំណត់​អត្តសញ្ញាណ​សម្រាប់​តំបន់បណ្ដាញ​នេះ។"
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "ការ​តភ្ជាប់​បាន​បរាជ័យ"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -619,6 +592,37 @@ msgstr "មាន​វិញ្ញាបនបត្រ"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "វិញ្ញាបនបត្រ​មាន​រួច​ហើយ"
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "កែសម្រួល​ទំនុកចិត្ត​លើ​វិញ្ញាបនបត្រ"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr "ប្រើ​ប៊ូតុង​នេះ​ដើម្បី​កំណត់​ឡើង​វិញ​នូវ​ចំណូលចិត្ត​សុវត្ថិភាព​របស់​​ %S ​ទៅជា​ការ​កំណត់​ដើម​របស់​វា ។"
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "អត្តសញ្ញាណ​តំបន់បណ្ដាញ​មិន​ទាន់​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "អត្តសញ្ញាណ​តំបន់បណ្ដាញ​មិន​ទាន់​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "តំបន់បណ្ដាញ %S គាំទ្រ​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​សម្រាប់​ទំព័រ​ដែល​អ្នក​កំពុងតែ​មើល ។ អត្តសញ្ញាណ​របស់​"
+#~ "តំបន់បណ្ដាញ​នេះ​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់​ដោយ %S ជា​ប្រភព​វិញ្ញាបនបត្រ​ដែល​អ្នក​ទុកចិត្ត​សម្រាប់​គោលបំណង​នេះ ។"
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "មើល​វិញ្ញាបនបត្រ​សុវត្ថិភាព​ដែល​ផ្ទៀងផ្ទាត់​អត្តសញ្ញាណ​របស់​តំបន់​បណ្ដាញ​នេះ ។"
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<មិន​ស្គាល់​អ្នក​ចេញ​វិញ្ញាបនបត្រ>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "ការ​តភ្ជាប់​បាន​បរាជ័យ"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "ការ​តភ្ជាប់​ដែល​បាន​អ៊ិនគ្រីប ៖ ការ​អ៊ិនគ្រីប​កម្រិត​ខ្ពស់ (សោ​ប៊ីត %1$S, %2$S)"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-12-25 15:03+0000\n"
 "Last-Translator: Julen Ruiz Aizpuru <julenx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1419519786.000000\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Autoritate ziurtagiri emailea (izenik gabe)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Editatu ziurtagiriaren fidagarritasuna"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "\"%S\" ziurtagiriak autoritate ziurtagiri emaile bat adierazten du."
@@ -180,13 +176,11 @@ msgstr "Babeskopia egiteko fitxategi izena"
 msgid "PKCS12 Files"
 msgstr "PKCS12 fitxategiak"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr ""
-"Erabili botoi hau %S(r)en segurtasun hobespenei fabrika ezarpenak "
-"berrezartzeko."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "Idatzi ziurtagiri babeskopia hau zifratzeko erabili den pasahitza."
 
 #. #Cert verification
 #: certVerified
@@ -244,28 +238,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Honela jaulkia: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Webgunearen nortasuna egiaztatu gabe"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Webgunearen nortasuna egiaztatua"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"%S webguneak ikusten ari zaren orriaren autentifikazioa onartzen du. Webgune "
-"honen nortasuna %S(e)k egiaztatu du, zeregin horretarako zuretzat fidagarria "
-"den autoritate ziurtagiri emaile batek, alegia."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Ikusi webgune honen nortasuna egiaztatzen duen segurtasun-ziurtagiria."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Konexioa zifratu gabe"
@@ -287,11 +259,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Ikusten ari zaren orria ez dago zifratuta."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Konexioa zifratuta (%1$S, %2$S biteko gakoak, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Konexioa zifratuta (%1$S, %2$S biteko gakoak, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -331,10 +309,6 @@ msgstr "Ziurtagiri ikustatzailea:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Ez da ziurtagiriaren zatia>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Jaulkitzaile ezezaguna>"
 
 #: escrowFinalMessage
 msgid ""
@@ -629,10 +603,6 @@ msgstr "Ez dago informaziorik eskuragarri"
 msgid "Unable to obtain identification status for this site."
 msgstr "Ezin da eskuratu gune honetarako identifikazio-egoera."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Konexioak huts egin du"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -641,3 +611,38 @@ msgstr "Ziurtagiria badago"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Ziurtagiria lehendik dago."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Editatu ziurtagiriaren fidagarritasuna"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Erabili botoi hau %S(r)en segurtasun hobespenei fabrika ezarpenak "
+#~ "berrezartzeko."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Webgunearen nortasuna egiaztatu gabe"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Webgunearen nortasuna egiaztatua"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "%S webguneak ikusten ari zaren orriaren autentifikazioa onartzen du. "
+#~ "Webgune honen nortasuna %S(e)k egiaztatu du, zeregin horretarako zuretzat "
+#~ "fidagarria den autoritate ziurtagiri emaile batek, alegia."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Ikusi webgune honen nortasuna egiaztatzen duen segurtasun-ziurtagiria."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Jaulkitzaile ezezaguna>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Konexioak huts egin du"
