@@ -102,7 +102,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-12-04 11:36+0000\n"
 "Last-Translator: Denish <mofistone@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,7 +111,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -136,10 +136,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Twero me Waraga (pe kimino nying)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Yub gen me waraga"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Waraga \"%S\" nyutu Twero me Waraga."
@@ -270,12 +266,11 @@ msgstr "Nying Pwail me agwoko"
 msgid "PKCS12 Files"
 msgstr "Pwail me PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr ""
-"Tii ki baton man me tero %S en ma imito me gwoko tic bot tero ka yiko jami."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "Tim ber i ket mung me donyo ma onongo kitiyo kwede me cono waraga man."
 
 #. #Cert verification
 #: certVerified
@@ -329,27 +324,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Ki miyo ne Ite: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Tikitiki me Kakube me Web Pe Kimoko"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Tikitiki me Kakube me Web Kimoko"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Kakube %S cwako twero me pot buk ma itye kaneno. Tikitiki me di bar me Web "
-"gimoko gi %S, twero me waraga ma igeno pi tic man."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Nen waraga me gwoko kuc ma moko tikitiki me kakube man."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Kube Pe Kicono"
@@ -370,11 +344,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Pot buk ma itye kaneno ni pe gicono."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Kube kimungo woko (%1$S, %2$S bit keys, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Kube kimungo woko (%1$S, %2$S bit keys, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -413,10 +393,6 @@ msgstr "Lanen Waraga:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Pe Dul kom Waraga>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Lami ne mape ngene>"
 
 #: escrowFinalMessage
 msgid ""
@@ -705,10 +681,6 @@ msgstr "Ngec pe tye"
 msgid "Unable to obtain identification status for this site."
 msgstr "Pe romo nongo kit pa lanyut pi kakube man."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Kube okwero woko"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -717,6 +689,39 @@ msgstr "Waraga tye"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Waraga dong bene dong tye."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Yub gen me waraga"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Tii ki baton man me tero %S en ma imito me gwoko tic bot tero ka yiko "
+#~ "jami."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Tikitiki me Kakube me Web Pe Kimoko"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Tikitiki me Kakube me Web Kimoko"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Kakube %S cwako twero me pot buk ma itye kaneno. Tikitiki me di bar me "
+#~ "Web gimoko gi %S, twero me waraga ma igeno pi tic man."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Nen waraga me gwoko kuc ma moko tikitiki me kakube man."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Lami ne mape ngene>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Kube okwero woko"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "Gi cono Kube: Coc me rwom-Ma lamal (%1$S, %2$S lagony me bit)"

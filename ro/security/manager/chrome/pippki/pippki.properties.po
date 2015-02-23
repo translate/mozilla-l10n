@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-02-18 17:28+0000\n"
 "Last-Translator: Cristian <cristian.silaghi@mozilla.ro>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1424280537.000000\n"
@@ -39,10 +39,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Autoritate de certificare (fără nume)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Editare credit certificat"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Certificatul \"%S\" reprezintă o autoritate de certificare."
@@ -180,13 +176,12 @@ msgstr "Nume fișier de salvat"
 msgid "PKCS12 Files"
 msgstr "Fișiere PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Cu acest buton resetați preferințele de securitate pentru %S înapoi la cele "
-"din fabrică."
+"Parola cu care s-a criptat această copie de siguranță a certificatelor."
 
 #. #Cert verification
 #: certVerified
@@ -245,30 +240,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Emis sub: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Identitatea saitului web nu e verificată"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Identitatea saitului web verificată"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Saitul web %S suportă autentificare pentru pagina pe care o vedeți. "
-"Identitatea saitului web a fost verificată de %S, o autoritate de "
-"certificare în care aveți încredere pentru acest scop."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-"Vizualizați certificatul de securitate care verifică identitatea acestui "
-"sait web."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Conexiune necriptată"
@@ -290,11 +261,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Pagina pe care o vedeți nu este criptată."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Conexiune criptată (%1$S, chei pe %2$S biți, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Conexiune criptată (%1$S, chei pe %2$S biți, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -336,10 +313,6 @@ msgstr "Vizualizator certificate:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<nu este parte a certificatului>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Emitent necunoscut>"
 
 #: escrowFinalMessage
 msgid ""
@@ -638,10 +611,6 @@ msgstr "Nicio informație disponibilă"
 msgid "Unable to obtain identification status for this site."
 msgstr "Nu se poate obține identificarea pentru acest saitul."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Conexiune eșuată"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -650,6 +619,42 @@ msgstr "Certificatul există"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Certificatul există deja."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Editare credit certificat"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Cu acest buton resetați preferințele de securitate pentru %S înapoi la "
+#~ "cele din fabrică."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Identitatea saitului web nu e verificată"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Identitatea saitului web verificată"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Saitul web %S suportă autentificare pentru pagina pe care o vedeți. "
+#~ "Identitatea saitului web a fost verificată de %S, o autoritate de "
+#~ "certificare în care aveți încredere pentru acest scop."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Vizualizați certificatul de securitate care verifică identitatea acestui "
+#~ "sait web."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Emitent necunoscut>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Conexiune eșuată"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

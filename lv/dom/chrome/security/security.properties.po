@@ -1,9 +1,9 @@
-#. extracted from /home/dwayne/mozilla/firefox/templates-en-US/dom/chrome/security/security.properties, /home/dwayne/mozilla/firefox/build/l10n/lv/dom/chrome/security/security.properties
+#. extracted from ./dom/chrome/security/security.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-05 15:37+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-02-06 14:59+0000\n"
 "Last-Translator: raivisdejus <orvils@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1423234777.000000\n"
@@ -29,15 +29,79 @@ msgid "Blocked loading mixed active content \"%1$S\""
 msgstr "Bloķēta jaukta aktīvā satura ielāde \"%1$S\""
 
 #. # CORS
-#: CrossSiteRequestBlocked
+#. # LOCALIZATION NOTE: Do not translate "Access-Control-Allow-Origin", Access-Control-Allow-Credentials, Access-Control-Allow-Methods, Access-Control-Allow-Headers
+#: CORSDisabled
 msgid ""
 "Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
-"remote resource at %1$S. This can be fixed by moving the resource to the "
-"same domain or enabling CORS."
+"remote resource at %1$S. (Reason: CORS disabled)."
 msgstr ""
-"Atšķirīgu izcelsmju pieprasījums tika bloķēs: Vienas izcelsmes politika "
-"liedz lasīt attālināto resursu no %1$S. Šo var atrisināt pārceļot resursu uz "
-"šo domēnu, vai aktivizējot CORS."
+
+#: CORSRequestFailed
+msgid ""
+"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
+"remote resource at %1$S. (Reason: CORS request failed)."
+msgstr ""
+
+#: CORSRequestNotHttp
+msgid ""
+"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
+"remote resource at %1$S. (Reason: CORS request not http)."
+msgstr ""
+
+#: CORSMissingAllowOrigin
+msgid ""
+"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
+"remote resource at %1$S. (Reason: CORS header 'Access-Control-Allow-Origin' "
+"missing)."
+msgstr ""
+
+#: CORSAllowOriginNotMatchingOrigin
+msgid ""
+"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
+"remote resource at %1$S. (Reason: CORS header 'Access-Control-Allow-Origin' "
+"does not match '%2$S')."
+msgstr ""
+
+#: CORSMethodNotFound
+msgid ""
+"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
+"remote resource at %1$S. (Reason: Did not find method in CORS header 'Access-"
+"Control-Allow-Methods')."
+msgstr ""
+
+#: CORSMissingAllowCredentials
+msgid ""
+"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
+"remote resource at %1$S. (Reason: expected 'true' in CORS header 'Access-"
+"Control-Allow-Credentials')."
+msgstr ""
+
+#: CORSPreflightDidNotSucceed
+msgid ""
+"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
+"remote resource at %1$S. (Reason: CORS preflight channel did not succeed)."
+msgstr ""
+
+#: CORSInvalidAllowMethod
+msgid ""
+"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
+"remote resource at %1$S. (Reason: invalid token '%2$S' in CORS header "
+"'Access-Control-Allow-Methods')."
+msgstr ""
+
+#: CORSInvalidAllowHeader
+msgid ""
+"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
+"remote resource at %1$S. (Reason: invalid token '%2$S' in CORS header "
+"'Access-Control-Allow-Headers')."
+msgstr ""
+
+#: CORSMissingAllowHeaderFromPreflight
+msgid ""
+"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
+"remote resource at %1$S. (Reason: missing token '%2$S' in CORS header "
+"'Access-Control-Allow-Headers' from CORS preflight channel)."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "Strict-Transport-Security" or "HSTS"
 #: InvalidSTSHeaders
@@ -115,3 +179,12 @@ msgid ""
 "This site uses the cipher RC4 for encryption, which is deprecated and "
 "insecure."
 msgstr "Šī lapa izmanto šifrētāju RC4, kas ir novecojis un nav drošs. "
+
+#~ msgid ""
+#~ "Cross-Origin Request Blocked: The Same Origin Policy disallows reading "
+#~ "the remote resource at %1$S. This can be fixed by moving the resource to "
+#~ "the same domain or enabling CORS."
+#~ msgstr ""
+#~ "Atšķirīgu izcelsmju pieprasījums tika bloķēs: Vienas izcelsmes politika "
+#~ "liedz lasīt attālināto resursu no %1$S. Šo var atrisināt pārceļot resursu "
+#~ "uz šo domēnu, vai aktivizējot CORS."

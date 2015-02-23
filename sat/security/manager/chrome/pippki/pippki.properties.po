@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-12-01 08:30+0000\n"
 "Last-Translator: Chandrakant <cpdhutadmal@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1417422645.000000\n"
@@ -37,10 +37,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "पोरमान साकाम एमोगिच्  (बेगोर ञुतुम)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "पोरमान साकाम पा़तया़व सासापड़ाव ."
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "पोरमान साकाम\"%S\" मित्  पोरमान साकाम  एमोगिच् उदुक् आय काना ."
@@ -176,13 +172,13 @@ msgstr "नोकोल जोगाव ला़गित् रेत् ञ�
 msgid "PKCS12 Files"
 msgstr "PKCS12 रेत् को"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"आजाक् कारखाना साजाव को ला़गित्  %S's रेयाक् जा़पती कुसियाक् दोहड़ा साजाव ला़गित् नोवा "
-"बुता़म बेभार मे ."
+"दानाङ साबाद आदेर मे ओका नोवा पोरमान साकाम नोकोल जोगाव दानाङ होचो ला़गित् बेभार लेन "
+"ताहेंना ."
 
 #. #Cert verification
 #: certVerified
@@ -239,27 +235,6 @@ msgid "Issued Under: \"%S\""
 msgstr "ओना लोकाते एम लेना: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "वेब साइट उपरुम बाय ञेल मिला़वा"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "वेब साइट उपरुम ञेल मिला़वा"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"वेबसाइट% S आमेम ञेलेत् साहटा ला़गित् पोरमान एम गोड़ोवाक् आ. नोवा वेबसाइट रेयाक् उपरुम % S "
-"दाराय ते ञेल मिला़वाकाना, नोवा हुदिस ला़गित् आमेम पा़तया़वाय मित् पोरमान साकाम एमोगिच्."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "जा़पती पोरमान साकाम ञेल मे ओका नोवा वेबसाइट रेयाक् उपरुमे ञेल मिला़वा"
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "जोनोड़ाव बाय दानाङ."
@@ -281,11 +256,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "आमोम ञेलेत् साहटा बाय दानाङा."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -323,10 +303,6 @@ msgstr "पोरमान साकाम ञेञेल को :"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<पोरमान साकाम रेयाक् हा़टिञ बाङ>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<बाङ बाड़ाय एमोगिच्>"
 
 #: escrowFinalMessage
 msgid ""
@@ -617,10 +593,6 @@ msgstr "जाहान ला़य सोदोर बाय ञामोक�
 msgid "Unable to obtain identification status for this site."
 msgstr "एम आकान साइट ला़गित् एम उपरुम दोसा बाय ञाम होचो दाड़ेयाक् आ ."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "जोनोड़ाव डिगा़वेना "
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -629,6 +601,40 @@ msgstr "पोरमान साकाम मेनाक् आकात् �
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "पोरमान साकाम माड़ाङ खोन मेनाक् आकात् आ."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "पोरमान साकाम पा़तया़व सासापड़ाव ."
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "आजाक् कारखाना साजाव को ला़गित्  %S's रेयाक् जा़पती कुसियाक् दोहड़ा साजाव ला़गित् "
+#~ "नोवा बुता़म बेभार मे ."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "वेब साइट उपरुम बाय ञेल मिला़वा"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "वेब साइट उपरुम ञेल मिला़वा"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "वेबसाइट% S आमेम ञेलेत् साहटा ला़गित् पोरमान एम गोड़ोवाक् आ. नोवा वेबसाइट रेयाक् उपरुम "
+#~ "% S दाराय ते ञेल मिला़वाकाना, नोवा हुदिस ला़गित् आमेम पा़तया़वाय मित् पोरमान साकाम "
+#~ "एमोगिच्."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "जा़पती पोरमान साकाम ञेल मे ओका नोवा वेबसाइट रेयाक् उपरुमे ञेल मिला़वा"
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<बाङ बाड़ाय एमोगिच्>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "जोनोड़ाव डिगा़वेना "
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "जोनोड़ाव दानाङाकाना: चेतान-दारजा दानाङ (%1$S, %2$S बिट्स का़ठी को)"

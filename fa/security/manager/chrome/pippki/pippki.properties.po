@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-08-21 20:39+0000\n"
 "Last-Translator: reza <reza.habibi2008@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "مرجع صدور گواهی (بی‌نام)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "ویرایش گواهی"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "گواهی «%S» نمایندهٔ یک مرجع صدور گواهی است."
@@ -179,13 +175,12 @@ msgstr "نام پرونده‌ای که پشتیبان گرفته شود"
 msgid "PKCS12 Files"
 msgstr "پرونده‌های PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"برای برگرداندن ترجیحات امنیتی %S به تنظیمات کارخانه‌ای از این دکمه استفاده "
-"کنید."
+"لطفاً گذرواژه‌ای که برای رمزنگاری این پشتیبان گواهی استفاده شده را وارد کنید."
 
 #. #Cert verification
 #: certVerified
@@ -240,27 +235,6 @@ msgid "Issued Under: \"%S\""
 msgstr "صادر شده تحت: «%S»"
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "هویت وب‌گاه تأیید نشد"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "هویت وب‌گاه تأیید شد"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"وب‌گاه ‎%S تأیید هویت برای صفحه‌ای که در حال بازدید از آن هستید پشتیبانی می‌کند. "
-"هویت این وب‌گاه توسط %S ، یک مرجع صدور که به آن اعتماد دارید تأیید شده است."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "گواهی امنیتی که هویت این وب‌گاه را تأیید می‌کند نمایش داده شود."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "اتصال رمزنگاری نشده است"
@@ -283,11 +257,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "صفحه‌ای که در حال بازدید از آن هستید رمزنگاری نشده است."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -327,10 +306,6 @@ msgstr "نمایش‌دهندهٔ گواهی:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<جزء گواهی نیست>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<صادرکنندهٔ نامعلوم>"
 
 #: escrowFinalMessage
 msgid ""
@@ -624,10 +599,6 @@ msgstr "هیچ اطلاعاتی وجود ندارد"
 msgid "Unable to obtain identification status for this site."
 msgstr "تعیین وضعیت شناسایی این پایگاه ممکن نبود."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "برقراری اتصال با شکست مواجه شد"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 #, fuzzy
@@ -637,6 +608,40 @@ msgstr "پرونده‌های گواهی"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "این گواهی از قبل موجود است."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "ویرایش گواهی"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "برای برگرداندن ترجیحات امنیتی %S به تنظیمات کارخانه‌ای از این دکمه استفاده "
+#~ "کنید."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "هویت وب‌گاه تأیید نشد"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "هویت وب‌گاه تأیید شد"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "وب‌گاه ‎%S تأیید هویت برای صفحه‌ای که در حال بازدید از آن هستید پشتیبانی "
+#~ "می‌کند. هویت این وب‌گاه توسط %S ، یک مرجع صدور که به آن اعتماد دارید تأیید "
+#~ "شده است."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "گواهی امنیتی که هویت این وب‌گاه را تأیید می‌کند نمایش داده شود."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<صادرکنندهٔ نامعلوم>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "برقراری اتصال با شکست مواجه شد"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "اتصال رمزنگاری شده: رمزنگاره رده بالا  (کلید %1$S، %2$S بیتی)"

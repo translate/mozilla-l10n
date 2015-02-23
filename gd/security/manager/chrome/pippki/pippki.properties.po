@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-12-05 15:40+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1417794032.000000\n"
@@ -41,10 +41,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Ùghdarras teisteanachaidh (gun ainm)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Deasaich earbsa san teisteanas"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Tha an teisteanas \"%S\" a' riochdachadh ùghdarras teisteanachaidh."
@@ -191,13 +187,13 @@ msgstr "Ainm an fhaidhle a tha ri lethbhreac-ghlèidhidh"
 msgid "PKCS12 Files"
 msgstr "Faidhlichean PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Cleachd am putan seo gus roghainnean tèarainteachd %S aiseag dhan fheadhainn "
-"bhunaiteach."
+"Cuir a-steach am facal-faire a chleachd thu gus lethbhreac-glèidhidh an "
+"teisteanais seo a chrioptachadh."
 
 #. #Cert verification
 #: certVerified
@@ -263,30 +259,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Air fhoillseachadh fo: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Cha deach dearbh-aithne na làraich-lìn a dhearbhadh"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Chaidh dearbh-aithne na làraich-lìn a dhearbhadh"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Tha an làrach-lìn %S a' cur taic ri dearbhadh na duilleige a tha thu a' "
-"coimhead air. Chaidh dearbh-aithne na làraich-lìn seo a dhearbhadh le %S, "
-"ùghdarras teisteanachaidh anns a bheil earbsa agad a chum seo."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-"Seall an teisteanas tèarainteachd a dhearbhas dearbh-aithne na làraich-lìn "
-"seo."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Chan eil an ceangal air a chrioptachadh"
@@ -310,11 +282,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Chan eil an duilleag a tha thu a' coimhead air air a chrioptachadh."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Ceangal crioptaichte (%1$S, %2$S bit keys, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Ceangal crioptaichte (%1$S, %2$S bit keys, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -356,10 +334,6 @@ msgstr "Sealladair teisteanais:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Chan eil e 'na phàirt dhen teisteanas>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Foillsichear neo-aithnichte>"
 
 #: escrowFinalMessage
 msgid ""
@@ -667,10 +641,6 @@ msgstr ""
 "Cha ghabh inbhe na dearbh-aithne fhaighinn airson na làraich a chaidh a "
 "shònrachadh."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Dh'fhàillig an ceangal"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -679,6 +649,42 @@ msgstr "Tha teisteanais ann"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Tha an teisteanas seo ann mu thràth."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Deasaich earbsa san teisteanas"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Cleachd am putan seo gus roghainnean tèarainteachd %S aiseag dhan "
+#~ "fheadhainn bhunaiteach."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Cha deach dearbh-aithne na làraich-lìn a dhearbhadh"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Chaidh dearbh-aithne na làraich-lìn a dhearbhadh"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Tha an làrach-lìn %S a' cur taic ri dearbhadh na duilleige a tha thu a' "
+#~ "coimhead air. Chaidh dearbh-aithne na làraich-lìn seo a dhearbhadh le %S, "
+#~ "ùghdarras teisteanachaidh anns a bheil earbsa agad a chum seo."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Seall an teisteanas tèarainteachd a dhearbhas dearbh-aithne na làraich-"
+#~ "lìn seo."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Foillsichear neo-aithnichte>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Dh'fhàillig an ceangal"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

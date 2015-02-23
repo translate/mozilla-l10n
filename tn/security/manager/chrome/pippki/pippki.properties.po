@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-09-06 22:08+0000\n"
 "Last-Translator: Dwayne Bailey <dwayne@translate.org.za>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Bothati jwa Setifikeiti (ga bo na leina)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Tseleganya boikanyego jwa setifikeiti"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Setifikeiti sa \"%S\" se emetse Bothati jwa Setifikeiti."
@@ -183,13 +179,13 @@ msgstr "Leina la Faele e e tshwanetseng go Bolokiwa"
 msgid "PKCS12 Files"
 msgstr "Difaele tsa PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Dirisa konopo eno go tlhoma sešwa %S's diratwabogolo tsa pabalesego mo "
-"boalong jwa feme."
+"Tsweetswee tsenya khunololamoraba e e dirisitsweng go sireletsa poloko eno "
+"ya setifikeiti."
 
 #. #Cert verification
 #: certVerified
@@ -247,34 +243,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Rebotswe ka fa tlase ga: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-#, fuzzy
-msgid "Website Identity Not Verified"
-msgstr "Boitshupo jwa Setsha sa Inthanete ga Bo a Tlhomamisiwa"
-
-#: pageInfo_WebSiteVerified
-#, fuzzy
-msgid "Website Identity Verified"
-msgstr "Boitshupo jwa Setsha sa Inthanete Bo Tlhomamisitswe"
-
-#: pageInfo_Identity_Verified
-#, fuzzy
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Setsha sa Inthanete sa %S se tshegatsa go rurifadiwa ga tsebe e o e "
-"lebileng. Boitshupo jwa setsha seno sa inthanete bo tlhomamisitswe ke %S, e "
-"leng bothati jwa setifikeiti jo o bo ikanyang mo mabakeng ano."
-
-#: pageInfo_ViewCertificate
-#, fuzzy
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-"Leba setifikeiti sa pabalesego se se tlhomamisang boitshupo jwa setsha seno "
-"sa inthanete."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Kgolagano Ga e a Sirelediwa"
@@ -300,11 +268,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Tsebe e o e lebeletseng ga e a sirelediwa."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -343,10 +316,6 @@ msgstr "Selebi sa Setifikeiti:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Ga se Karolo ya Setifikeiti>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Morebodi yo o sa Itsiweng>"
 
 #: escrowFinalMessage
 msgid ""
@@ -637,10 +606,6 @@ msgstr ""
 msgid "Unable to obtain identification status for this site."
 msgstr ""
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr ""
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 #, fuzzy
@@ -650,6 +615,43 @@ msgstr "Difaele tsa Lenaane"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Setifikeiti se setse se le Gona."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Tseleganya boikanyego jwa setifikeiti"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Dirisa konopo eno go tlhoma sešwa %S's diratwabogolo tsa pabalesego mo "
+#~ "boalong jwa feme."
+
+#, fuzzy
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Boitshupo jwa Setsha sa Inthanete ga Bo a Tlhomamisiwa"
+
+#, fuzzy
+#~ msgid "Website Identity Verified"
+#~ msgstr "Boitshupo jwa Setsha sa Inthanete Bo Tlhomamisitswe"
+
+#, fuzzy
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Setsha sa Inthanete sa %S se tshegatsa go rurifadiwa ga tsebe e o e "
+#~ "lebileng. Boitshupo jwa setsha seno sa inthanete bo tlhomamisitswe ke %S, "
+#~ "e leng bothati jwa setifikeiti jo o bo ikanyang mo mabakeng ano."
+
+#, fuzzy
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Leba setifikeiti sa pabalesego se se tlhomamisang boitshupo jwa setsha "
+#~ "seno sa inthanete."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Morebodi yo o sa Itsiweng>"
 
 #, fuzzy
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-02-23 06:29+0000\n"
 "Last-Translator: Chandrakant <cpdhutadmal@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1424672941.000000\n"
@@ -37,10 +37,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr " سرٹیفیکیٹ ایتھارٹی (ناوئ روْستی)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "سرٹئفیكیٹ بروسئ  كریو ادارت"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "سرٹئفیكیٹ \"%S\" چھُ ہاوان سرٹئفیكیٹ ایتھارٹی"
@@ -157,10 +153,9 @@ msgstr "بیك اپ خٲطرئ فایل ناو"
 msgid "PKCS12 Files"
 msgstr "PKCS12 فایلس"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
 
 #. #Cert verification
@@ -193,9 +188,12 @@ msgstr ""
 "چھُ نئ  زئنكار"
 
 #: certNotVerified_CAInvalid
+#, fuzzy
 msgid ""
 "Could not verify this certificate because the CA certificate is invalid."
 msgstr ""
+"یئ سرٹئفیكیٹ ہیك نئ مولوم كریتھ كیازئ كئ یئم۪ی سرٹئفیكیٹ ہیوند جئری كرنئن وۄل "
+"چھُ نئ  زئنكار"
 
 #: certNotVerified_AlgorithmDisabled
 msgid ""
@@ -217,25 +215,6 @@ msgid "Issued Under: \"%S\""
 msgstr ": \"%S\" تہت جئری كرنئ آمئژ"
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "ویب سایٹ شناخت ہ۪یك نئ مولوم كر۪یتھ"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "ویب سایٹ شناخت كئر  مولوم "
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "حفاظتی سرٹیفیكیٹ وچھیو یوٛس یم۪ی ویب سایٹ۪ی ہِنز شناخت چھَ مولوم كران"
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "كنیكشن چھئنئ  ان كرپٹیڈ   "
@@ -255,11 +234,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "صفحئ یوْس تہئ وچھان چھئوئ چھُنئ اینكریپٹیڈ"
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -293,10 +277,6 @@ msgstr "سرٹئفیكیٹ وچھئن وۄل:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<سرٹئفیكیٹ ہیوند حصئ چھُنئ>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<نامولوم استیمال كرن وۄل >"
 
 #: escrowFinalMessage
 msgid ""
@@ -570,10 +550,6 @@ msgstr "كہین مولومات چھئ نئ دستیاب"
 msgid "Unable to obtain identification status for this site."
 msgstr ""
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "رئبطئ ناكام"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -582,3 +558,21 @@ msgstr "سرٹئفیكیٹ چھئ موجود"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "سرٹئفیكیٹ چھئ گوڈئی موجود"
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "سرٹئفیكیٹ بروسئ  كریو ادارت"
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "ویب سایٹ شناخت ہ۪یك نئ مولوم كر۪یتھ"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "ویب سایٹ شناخت كئر  مولوم "
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "حفاظتی سرٹیفیكیٹ وچھیو یوٛس یم۪ی ویب سایٹ۪ی ہِنز شناخت چھَ مولوم كران"
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<نامولوم استیمال كرن وۄل >"
+
+#~ msgid "Connection Failed"
+#~ msgstr "رئبطئ ناكام"

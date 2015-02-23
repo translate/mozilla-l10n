@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-07-03 07:57+0000\n"
 "Last-Translator: Ian <ian.henderson@rubric.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Ugunyaziwe Wesatifikethi (akanagama)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Hlela intembeko yesatifikethi"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Isatifikethi i- \"%S\" simele Ugunyaziwe Wesatifikethi."
@@ -182,13 +178,13 @@ msgstr "Igama Lefayili Egcinelwa Ikopi"
 msgid "PKCS12 Files"
 msgstr "Iifayili ze-PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Sebenzisa eli qhosha ukuphinda umisele izikhethwa zokhuseleko lwe-%S "
-"kwimimiselo yazo yefektri."
+"Nceda ngenisa igama lokugqithisa ebelisetyenziswa xa kusenziwa uguqulelo "
+"oluntsonkothileyo ngekopi egcinwayo yesi satifikethi."
 
 #. #Cert verification
 #: certVerified
@@ -242,33 +238,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Inikelwe Phantsi: kwe-\"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-#, fuzzy
-msgid "Website Identity Not Verified"
-msgstr "Uphawu Lwesiza Sothungelwano Aluqinisekiswanga"
-
-#: pageInfo_WebSiteVerified
-#, fuzzy
-msgid "Website Identity Verified"
-msgstr "Uphawu Lwesiza Sothungelwano Luqinisekisiwe"
-
-#: pageInfo_Identity_Verified
-#, fuzzy
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Isiza sothungelwano i-%S sixhasa ukunyaniseka kwekhasi olijongileyo. Uphawu "
-"lwesi siza sothungelwano luqinisekiswe yi-%S, ugunyaziwe wesatifiketi "
-"omthembayo malunga nale njongo."
-
-#: pageInfo_ViewCertificate
-#, fuzzy
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-"Jonga isatifikethi sokhuseleko esiqinisekisa uphawu lwesi siza sothungelwano."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Umdibaniso Awunanguqulelo Entsonkothileyo"
@@ -293,11 +262,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Ikhasi olijongileyo alinaluguqulelo oluntsonkothileyo."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -338,10 +312,6 @@ msgstr "Umbukeli Wesatifikethi:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Asiyonxalenye Yesatifikethi>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Umnikeli Ongaziwayo>"
 
 #: escrowFinalMessage
 msgid ""
@@ -636,10 +606,6 @@ msgstr ""
 msgid "Unable to obtain identification status for this site."
 msgstr ""
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr ""
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 #, fuzzy
@@ -649,6 +615,43 @@ msgstr "Iifayili Zesatifikethi"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Isatifikethi sesikhona."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Hlela intembeko yesatifikethi"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Sebenzisa eli qhosha ukuphinda umisele izikhethwa zokhuseleko lwe-%S "
+#~ "kwimimiselo yazo yefektri."
+
+#, fuzzy
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Uphawu Lwesiza Sothungelwano Aluqinisekiswanga"
+
+#, fuzzy
+#~ msgid "Website Identity Verified"
+#~ msgstr "Uphawu Lwesiza Sothungelwano Luqinisekisiwe"
+
+#, fuzzy
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Isiza sothungelwano i-%S sixhasa ukunyaniseka kwekhasi olijongileyo. "
+#~ "Uphawu lwesi siza sothungelwano luqinisekiswe yi-%S, ugunyaziwe "
+#~ "wesatifiketi omthembayo malunga nale njongo."
+
+#, fuzzy
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Jonga isatifikethi sokhuseleko esiqinisekisa uphawu lwesi siza "
+#~ "sothungelwano."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Umnikeli Ongaziwayo>"
 
 #, fuzzy
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"

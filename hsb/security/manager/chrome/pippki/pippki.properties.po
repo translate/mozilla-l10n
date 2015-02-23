@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-11-28 20:55+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1417208124.000000\n"
@@ -41,10 +41,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Certifikatowa awtorita (bjez mjena)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Dowěryhódnosć certifikata wobdźěłać"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Certifikat \"%S\" reprezentuje certifikatowu awtoritu."
@@ -181,13 +177,13 @@ msgstr "Datajowe mjeno za zawěsćenje"
 msgid "PKCS12 Files"
 msgstr "PKCS12-dataje"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Wužijće tute tłóčatko, zo byšće wěstotne nastajenja za %S na zawodne "
-"nastajenja wróćo stajił."
+"Prošu zapodajće hesło, kotrež bu za zaklučowanje tutoho zawěsćenja "
+"certifikata wužite."
 
 #. #Cert verification
 #: certVerified
@@ -244,28 +240,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Wudaty pod: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Identita websydła njepřepruwowana"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Identita websydła přepruwowana"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Websydło %S podpěruje awtentifikaciju za stronu, kotruž sej runje "
-"wobhladujeće. Identita tutoho websydła bu wot %S přepruwowana, certifikatowa "
-"awtorita, kotrejž za tutón zaměr dowěrjeće."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Wěstotny certifikat pokazać, kotryž identitu toho websydła přepruwuje."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Zwisk njezaklučowany"
@@ -289,11 +263,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Strona, kotruž sej wobhladujeće, njeje zaklučowana."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Zwisk zaklučowany (%1$S, bitowe kluče %2$S, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Zwisk zaklučowany (%1$S, bitowe kluče %2$S, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -334,10 +314,6 @@ msgstr "Wobhladowak certifiaktow:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Njeje dźěl certifikata>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Njeznaty wudawar>"
 
 #: escrowFinalMessage
 msgid ""
@@ -634,10 +610,6 @@ msgstr "Žane informacije k dispoziciji"
 msgid "Unable to obtain identification status for this site."
 msgstr "Njeje móžno status identifikacije za tute sydło nabyć."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Zwisk je so njeporadźił"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -646,6 +618,41 @@ msgstr "Certifikat eksistuje"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Certifikat hižo eksistuje."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Dowěryhódnosć certifikata wobdźěłać"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Wužijće tute tłóčatko, zo byšće wěstotne nastajenja za %S na zawodne "
+#~ "nastajenja wróćo stajił."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Identita websydła njepřepruwowana"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Identita websydła přepruwowana"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Websydło %S podpěruje awtentifikaciju za stronu, kotruž sej runje "
+#~ "wobhladujeće. Identita tutoho websydła bu wot %S přepruwowana, "
+#~ "certifikatowa awtorita, kotrejž za tutón zaměr dowěrjeće."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Wěstotny certifikat pokazać, kotryž identitu toho websydła přepruwuje."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Njeznaty wudawar>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Zwisk je so njeporadźił"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "Zwisk zaklučowany: Wysoke zaklučowanje (kluče %1$S, %2$S bitow)"

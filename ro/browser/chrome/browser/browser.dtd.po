@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-22 00:20+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-02-18 14:46+0000\n"
 "Last-Translator: Cristian <cristian.silaghi@mozilla.ro>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -972,6 +972,8 @@ msgstr " cu:"
 msgid "Search with:"
 msgstr "Caută cu:"
 
+#. This string won't wrap, so if the translated string is longer,
+#. consider translating it as if it said only "Search Settings".
 #: changeSearchSettings.button
 msgid "Change Search Settings"
 msgstr "Schimbați setările de căutare"
@@ -1323,12 +1325,13 @@ msgstr "&Mărime text"
 msgid "Close sidebar"
 msgstr "Închide bara laterală"
 
-#: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
+#: quitApplicationCmdWin2.label quitApplicationCmdWin2.accesskey
 msgid "E&xit"
 msgstr "I&eșire"
 
-#: quitApplicationCmdWin.tooltip
-msgid "Exit &brandShortName;"
+#: quitApplicationCmdWin2.tooltip
+#, fuzzy
+msgid "Exit &brandShorterName;"
 msgstr "Ieșire &brandShortName;"
 
 #: goBackCmd.commandKey
@@ -1343,8 +1346,9 @@ msgstr ""
 msgid "&Quit"
 msgstr "I&eșire"
 
-#: quitApplicationCmdMac.label
-msgid "Quit &brandShortName;"
+#: quitApplicationCmdMac2.label
+#, fuzzy
+msgid "Quit &brandShorterName;"
 msgstr "Ieșire din &brandShortName;"
 
 #. This keyboard shortcut is used by both Linux and OSX builds.
@@ -1451,6 +1455,7 @@ msgid "Cancel"
 msgstr "Renunță"
 
 #: editBookmark.removeBookmark.accessKey
+msgctxt "editBookmark.removeBookmark.accessKey"
 msgid "R"
 msgstr ""
 
@@ -1783,28 +1788,6 @@ msgstr "Blocare plugin"
 msgid "28em"
 msgstr "28em"
 
-#: tabCrashed.header
-msgid "Tab crashed"
-msgstr "Filă eronată"
-
-#: tabCrashed.message
-msgid ""
-"Well, this is embarrassing. We tried to display this Web page, but it's not "
-"responding."
-msgstr ""
-"Ei bine, acest lucru este jenant. Am încercat să afișez această pagină web, "
-"dar aceasta nu răspunde."
-
-#: tabCrashed.checkSendReport
-msgid "Tell &vendorShortName; about this crash so they can fix it."
-msgstr ""
-"Spune-ți &vendorShortName; despre această eroare pentru ca să o poată "
-"rezolva."
-
-#: tabCrashed.tryAgain
-msgid "Try Again"
-msgstr "Încercați din nou"
-
 #: uiTour.infoPanel.close
 #, fuzzy
 msgctxt "uiTour.infoPanel.close"
@@ -1885,6 +1868,94 @@ msgstr "Navigare sigură!"
 #: panicButton.thankyou.buttonlabel
 msgid "Thanks!"
 msgstr "Mulțumim!"
+
+#: processHang.terminateScript.label processHang.terminateScript.accessKey
+msgid "&Stop Script"
+msgstr ""
+
+#: processHang.debugScript.label processHang.debugScript.accessKey
+#, fuzzy
+msgid "&Debug Script"
+msgstr "Depanare script"
+
+#: processHang.terminatePlugin.label processHang.terminatePlugin.accessKey
+msgid "Kill &Plugin"
+msgstr ""
+
+#: processHang.terminateProcess.label processHang.terminateProcess.accessKey
+msgid "&Kill Web Process"
+msgstr ""
+
+#: emeLearnMoreContextMenu.label emeLearnMoreContextMenu.accesskey
+msgid "Learn more about &DRM…"
+msgstr ""
+
+#: emeNotificationsNotNow.label emeNotificationsNotNow.accesskey
+#, fuzzy
+msgid "&Not now"
+msgstr "Nu acum"
+
+#: emeNotificationsDontAskAgain.label emeNotificationsDontAskAgain.accesskey
+msgid "&Don't ask me again"
+msgstr ""
+
+#: readingList.label
+msgid "Reading List"
+msgstr ""
+
+#: readingList.sidebar.commandKey
+msgctxt "readingList.sidebar.commandKey"
+msgid "R"
+msgstr ""
+
+#. Pre-landed string for bug 1124400
+#: readingList.showSidebar.label
+msgid "Show Reading List Sidebar"
+msgstr ""
+
+#. Pre-landed string for bug 1124153
+#: readingList.sidebar.showMore.label
+msgid "Show more…"
+msgstr ""
+
+#. Pre-landed string for bug 1133662
+#: readingList.sidebar.emptyText
+msgid ""
+"Add articles to your Reading List to save them for later and find them "
+"easily when you need them."
+msgstr ""
+
+#. Pre-landed string for bug 1123525
+#: readingList.sidebar.delete.tooltip
+msgid "Remove this from your Reading List"
+msgstr ""
+
+#. Pre-landed strings for bug 1123519
+#: readingList.sidebar.add.label
+msgid "Add to Reading List"
+msgstr ""
+
+#: readingList.sidebar.add.tooltip
+msgid "Add this page to your Reading List"
+msgstr ""
+
+#~ msgid "Tab crashed"
+#~ msgstr "Filă eronată"
+
+#~ msgid ""
+#~ "Well, this is embarrassing. We tried to display this Web page, but it's "
+#~ "not responding."
+#~ msgstr ""
+#~ "Ei bine, acest lucru este jenant. Am încercat să afișez această pagină "
+#~ "web, dar aceasta nu răspunde."
+
+#~ msgid "Tell &vendorShortName; about this crash so they can fix it."
+#~ msgstr ""
+#~ "Spune-ți &vendorShortName; despre această eroare pentru ca să o poată "
+#~ "rezolva."
+
+#~ msgid "Try Again"
+#~ msgstr "Încercați din nou"
 
 #, fuzzy
 #~ msgid "Ena&ble protection"
@@ -2036,10 +2107,6 @@ msgstr "Mulțumim!"
 
 #~ msgid "Email &Audio…"
 #~ msgstr "Email &Audio…"
-
-#~ msgctxt "editBookmark.removeBookmark.accessKey"
-#~ msgid "R"
-#~ msgstr "R"
 
 #~ msgid "&Show sidebar"
 #~ msgstr "Arată &bara laterală"

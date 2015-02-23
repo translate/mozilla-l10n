@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-12-14 11:40+0000\n"
 "Last-Translator: Arun Kumar <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1418557210.000000\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "சான்றிதழ் ஆணையம் (பெயரிடாதது)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "சான்றிதழ் நம்பகத்தை திருத்து"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "இந்த \"%S\" சான்றிதழ் ஒரு சான்றிதழ் அங்கீகாரத்தை குறிக்கிறது."
@@ -177,13 +173,11 @@ msgstr "பின்சேமிக்க வேண்டிய கோப்ப�
 msgid "PKCS12 Files"
 msgstr "PKCS12 கோப்புகள்"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr ""
-"Use this button to reset %S's  security preferences to their factory "
-"settings."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "சான்றிதழ் காப்புகோப்பை குறியாக்கப்பயன்படும் கடவுச்சொல்லை தேர்வு செய்யவும்."
 
 #. #Cert verification
 #: certVerified
@@ -237,28 +231,6 @@ msgid "Issued Under: \"%S\""
 msgstr "இதன் கீழ் வழங்கப்பட்டது: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "இணைய தளம் அடையாளம் சரிபார்க்கப்படவில்லை"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "இணைய தள அடையாளம் சரிபார்க்கப்பட்டது"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"The web site %S supports authentication for the page you are viewing.  The "
-"identity of this web site has been verified by %S, a certificate authority "
-"you trust for this purpose."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "View the security certificate that  verifies this web site's identity."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "இணைப்பு குறிமுறையாக்கப்படவில்லை"
@@ -281,11 +253,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "நீங்கள் பார்வையிடும் பக்கம் குறிமுறையாக்கப்படவில்லை."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "இணைப்பு குறிமுறையாக்கப்பட்டது (%1$S, %2$S பிட் சாவிகள், %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "இணைப்பு குறிமுறையாக்கப்பட்டது (%1$S, %2$S பிட் சாவிகள், %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -326,10 +304,6 @@ msgstr "சான்றிதழ் காட்டி:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<சான்றிதழின் பகுதியல்ல>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<தெரியாத வழங்குனர்>"
 
 #: escrowFinalMessage
 msgid ""
@@ -625,10 +599,6 @@ msgstr "தகவல் எதுவும் இல்லை"
 msgid "Unable to obtain identification status for this site."
 msgstr "கொடுக்கப்பட்ட இணையதளத்திற்கு அடையாள நிலையை பெற முடியவில்லை."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "இணைப்பு துண்டிக்கப்பட்டது"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -637,6 +607,41 @@ msgstr "சான்றிதழ் உள்ளது"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "சான்றிதழ் ஏற்கனவே உள்ளது."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "சான்றிதழ் நம்பகத்தை திருத்து"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Use this button to reset %S's  security preferences to their factory "
+#~ "settings."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "இணைய தளம் அடையாளம் சரிபார்க்கப்படவில்லை"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "இணைய தள அடையாளம் சரிபார்க்கப்பட்டது"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "The web site %S supports authentication for the page you are viewing.  "
+#~ "The identity of this web site has been verified by %S, a certificate "
+#~ "authority you trust for this purpose."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "View the security certificate that  verifies this web site's identity."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<தெரியாத வழங்குனர்>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "இணைப்பு துண்டிக்கப்பட்டது"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "Connection Encrypted:  High-grade Encryption (%1$S, %2$S bit keys)"

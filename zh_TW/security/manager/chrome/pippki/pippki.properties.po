@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,10 +36,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "憑證機構 (未命名)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "編輯憑證信任關係"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "此憑證「%S」表示憑證機構。"
@@ -167,11 +163,11 @@ msgstr "備份檔名"
 msgid "PKCS12 Files"
 msgstr "PKCS12 檔案"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr "按下此按鈕以重設 %S 的安全性設定為預設值。"
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "請輸入用來加密此憑證備份的密碼。"
 
 #. #Cert verification
 #: certVerified
@@ -223,27 +219,6 @@ msgid "Issued Under: \"%S\""
 msgstr "簽發者:「%S」"
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "網站識別尚未驗證"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "網站識別已驗證"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"網站 %S 支援鑑別您正在檢視的網頁。此網站的識別資料已被您信任的憑證機構 %S 驗"
-"證過可用於此用途。"
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "檢視用來驗證此網頁識別資料的安全憑證。"
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "連線未加密"
@@ -263,11 +238,16 @@ msgstr "未加密就送至網路的資訊可能會在傳輸途中被其它人看
 msgid "The page you are viewing is not encrypted."
 msgstr "您正在檢視的頁面未加密。"
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -304,10 +284,6 @@ msgstr "憑證檢視器:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<非憑證部份>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<未知的簽發者>"
 
 #: escrowFinalMessage
 msgid ""
@@ -586,10 +562,6 @@ msgstr "無可用資訊"
 msgid "Unable to obtain identification status for this site."
 msgstr "無法獲得網站的身分識別狀態。"
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "連線失敗"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -598,6 +570,37 @@ msgstr "憑證已存在"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "該憑證已存在。"
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "編輯憑證信任關係"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr "按下此按鈕以重設 %S 的安全性設定為預設值。"
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "網站識別尚未驗證"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "網站識別已驗證"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "網站 %S 支援鑑別您正在檢視的網頁。此網站的識別資料已被您信任的憑證機構 %S "
+#~ "驗證過可用於此用途。"
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "檢視用來驗證此網頁識別資料的安全憑證。"
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<未知的簽發者>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "連線失敗"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "連線已加密：高級加密（%1$S，%2$S bit 金鑰）"
