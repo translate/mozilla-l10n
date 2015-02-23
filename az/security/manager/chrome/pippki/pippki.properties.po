@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-01-20 19:36+0000\n"
 "Last-Translator: Emin <mastizada@itu.edu.tr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1421782562.000000\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Təsdiq sənədi rəsmisi (adsız)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Təsdiq sənədi təhlükəsizliyini redaktə et"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Bu \"%S\" təsdiq sənədi bir təsdiq sənədi rəsmisini tanımır."
@@ -179,12 +175,13 @@ msgstr "Ehtiyatlama üçün fayl adı"
 msgid "PKCS12 Files"
 msgstr "PKSC12 Faylları"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"%S təhlükəsizlik nizamlarını geri qaytarmaq çüün bu düymədən itifadə edin."
+"Lütfən təhlükəsizlik təsdiq sənədini və onun xüsusi açarını ehtiyatlayan "
+"parolunuzu daxil edin."
 
 #. #Cert verification
 #: certVerified
@@ -239,28 +236,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Adı ilə yayımlandı: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Sayt kimliyi təsdiqlənə bilmədi"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Sayt kimliyi təsdiqləndi"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"%S saytı baxdığınız səhifə üçün icazə verməni dəstəkləyir. Bu saytın "
-"kimliyi, bu məqsədlə etibar etdiyiniz bir sertifikat rəsmisi olan %S "
-"tərəfindən təsdiqlənmişdir."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Bu saytın kimliyini təsdiqləyən sertifikata baxın."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Bağlantı şifrəlnmir"
@@ -282,11 +257,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Baxmaq istədiyiniz səhifə şifrəli deyil."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -324,10 +304,6 @@ msgstr "Təsdiq sənədi göstəricisi:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Təsdiq sənədinin hissəsi deyil>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Naməlum Yayımlayıcı>"
 
 #: escrowFinalMessage
 msgid ""
@@ -619,10 +595,6 @@ msgstr "Məlumat yoxdur"
 msgid "Unable to obtain identification status for this site."
 msgstr "Bu saytın təyin etmə statusu əl çatan deyil."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Bağlantı kəsildi"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -631,6 +603,39 @@ msgstr "Sertifikat mövcuddur"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Bu təsdiq sənədi daha əvvəl qeydiyyatdan keçib."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Təsdiq sənədi təhlükəsizliyini redaktə et"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "%S təhlükəsizlik nizamlarını geri qaytarmaq çüün bu düymədən itifadə edin."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Sayt kimliyi təsdiqlənə bilmədi"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Sayt kimliyi təsdiqləndi"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "%S saytı baxdığınız səhifə üçün icazə verməni dəstəkləyir. Bu saytın "
+#~ "kimliyi, bu məqsədlə etibar etdiyiniz bir sertifikat rəsmisi olan %S "
+#~ "tərəfindən təsdiqlənmişdir."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Bu saytın kimliyini təsdiqləyən sertifikata baxın."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Naməlum Yayımlayıcı>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Bağlantı kəsildi"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

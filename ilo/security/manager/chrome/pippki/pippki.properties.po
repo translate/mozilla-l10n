@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-09-18 00:12+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,10 +39,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Sertipikasion nga Awtoridad (di-napanaganan)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Baliwan ti talek ti sertipiko"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Isaup ti sertipiko a \"%S\" maysa a Sertipikasion nga Awtoridad."
@@ -176,13 +172,13 @@ msgstr "Nagan ti Pagtiponan"
 msgid "PKCS12 Files"
 msgstr "Intar a PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Aramaten daytoy a butones tapno masubli dagiti pagdumdumaan ti %S iti "
-"seguridad kadagiti sigud a pateg manipud ti pabrika."
+"Isuratyo man ti kontrasenias nga inaramat idi naikripta daytoy a "
+"pannakatipon ti sertipiko."
 
 #. #Cert verification
 #: certVerified
@@ -241,25 +237,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Naiparuar babaen ti: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr ""
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr ""
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Saan a Nakakripta ti Panilpo"
@@ -281,11 +258,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Saan a nakakripta ti panid a basbasaenyo."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -324,10 +306,6 @@ msgstr "Mangipakita ti Sertipiko:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Saan a Paset ti Sertipiko>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Saan nga Am-ammo ti Nangiparuar>"
 
 #: escrowFinalMessage
 msgid ""
@@ -615,10 +593,6 @@ msgstr "Awan ti Mabasa a Damag"
 msgid "Unable to obtain identification status for this site."
 msgstr "Saan a magun-od ti kasasaad ti panaglalasin daytoy a purok."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Napaay ti Panilpo"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 #, fuzzy
@@ -628,6 +602,22 @@ msgstr "Intar ti Sertipiko"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Panagaddan ti sertipiko."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Baliwan ti talek ti sertipiko"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Aramaten daytoy a butones tapno masubli dagiti pagdumdumaan ti %S iti "
+#~ "seguridad kadagiti sigud a pateg manipud ti pabrika."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Saan nga Am-ammo ti Nangiparuar>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Napaay ti Panilpo"
 
 #, fuzzy
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"

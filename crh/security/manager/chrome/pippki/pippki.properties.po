@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-02-20 02:32+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,11 +42,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Sertifika Yetkilisi (isimsiz)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-#, fuzzy
-msgid "Edit certificate trust"
-msgstr "Sertifika Güvenliğini Düzenle"
-
 #: editTrustCA
 #, fuzzy
 msgid "The certificate \"%S\" represents a Certificate Authority."
@@ -198,12 +193,10 @@ msgstr "Yedekleme için dosya adı"
 msgid "PKCS12 Files"
 msgstr "PKSC12 Dosyaları"
 
-#. #Preferences
-#: resetPreferences
-#, fuzzy
+#: getPKCS12FilePasswordMessage
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr "%S güvenlik ayarlarını geri almak için bu tuşu qullanıñız."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr ""
 
 #. #Cert verification
 #: certVerified
@@ -265,32 +258,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Adı altında yayınlandı: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-#, fuzzy
-msgid "Website Identity Not Verified"
-msgstr "İnternet Saytı Kimligi Doğrulanmağan"
-
-#: pageInfo_WebSiteVerified
-#, fuzzy
-msgid "Website Identity Verified"
-msgstr "İnternet sayfa kimliği onaylandı"
-
-#: pageInfo_Identity_Verified
-#, fuzzy
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"%S  baktığınız sayfada kimlik doğrulamayı destekliyor. Bu sayfanın kimliği "
-"güvenilir bir sertifika yetkilisi tarafından ( %S ) doğrulanmış."
-
-#: pageInfo_ViewCertificate
-#, fuzzy
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-"Bu İnternet saytınıñ kimligini doğrulağan emniyet şeadetnamesini köster."
-
 #: pageInfo_NoEncryption
 #, fuzzy
 msgid "Connection Not Encrypted"
@@ -316,11 +283,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Görmek istediğiniz sayfa şifreli değil."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -362,11 +334,6 @@ msgstr "Sertifika Görüntüleyicisi:"
 #, fuzzy
 msgid "<Not Part Of Certificate>"
 msgstr "<Sertifika Parçası değil>"
-
-#: unknownIssuer
-#, fuzzy
-msgid "<Unknown Issuer>"
-msgstr "<Bilinmeyen Yayınlayıcı>"
 
 #: escrowFinalMessage
 #, fuzzy
@@ -713,11 +680,6 @@ msgstr "Bilgi yok"
 msgid "Unable to obtain identification status for this site."
 msgstr "Bu sitenin tanımlanma durumuna ulaşılamıyor."
 
-#: addExceptionConnectionFailed
-#, fuzzy
-msgid "Connection Failed"
-msgstr "Bağlantı koptu"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 #, fuzzy
@@ -727,6 +689,46 @@ msgstr "Sertifika dosyaları"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Edit certificate trust"
+#~ msgstr "Sertifika Güvenliğini Düzenle"
+
+#, fuzzy
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr "%S güvenlik ayarlarını geri almak için bu tuşu qullanıñız."
+
+#, fuzzy
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "İnternet Saytı Kimligi Doğrulanmağan"
+
+#, fuzzy
+#~ msgid "Website Identity Verified"
+#~ msgstr "İnternet sayfa kimliği onaylandı"
+
+#, fuzzy
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "%S  baktığınız sayfada kimlik doğrulamayı destekliyor. Bu sayfanın "
+#~ "kimliği güvenilir bir sertifika yetkilisi tarafından ( %S ) doğrulanmış."
+
+#, fuzzy
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Bu İnternet saytınıñ kimligini doğrulağan emniyet şeadetnamesini köster."
+
+#, fuzzy
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Bilinmeyen Yayınlayıcı>"
+
+#, fuzzy
+#~ msgid "Connection Failed"
+#~ msgstr "Bağlantı koptu"
 
 #, fuzzy
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"

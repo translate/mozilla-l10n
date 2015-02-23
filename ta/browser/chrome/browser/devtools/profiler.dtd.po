@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-12 21:21+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-12-05 06:47+0000\n"
 "Last-Translator: Arun Kumar <thangam.arunx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,31 +79,37 @@ msgstr "சேமி"
 msgid "Clear"
 msgstr "துடை"
 
-#. This is the label shown next to
-#. -  a checkbox that inverts and un-inverts the profiler's call tree.
-#: profilerUI.invertTree
-msgid "Invert Call Tree"
-msgstr "அழைப்பு வரிசைகளை தலை கீழாக்கு"
+#. LOCALIZATION NOTE (profilerUI.toolbar.*): These strings are displayed
+#. -  in the toolbar on buttons that select which view is currently shown.
+#: profilerUI.toolbar.waterfall
+msgid "Timeline"
+msgstr "காலவரிசை"
 
-#. This is the tooltip
-#. -  for the tree-inverting checkbox's label.
-#: profilerUI.invertTree.tooltiptext
-msgid ""
-"Inverting the call tree displays the profiled call paths starting from the "
-"youngest frames and expanding out to the older frames."
+#: profilerUI.toolbar.js-calltree
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: profilerUI.toolbar.memory-calltree
+msgid "Memory"
+msgstr "நினைவகம்"
+
+#: profilerUI.toolbar.js-flamegraph
+msgid "JS Flame Chart"
 msgstr ""
-"இளம் சட்டங்களிலிருந்து தொடங்கி பழைய சட்டங்களாக வெளிப்படும் அழைப்பு பாதை "
-"விவரக்குறிப்புகளை வரிசைகளை தழைகீழாக்குகிறது."
+
+#: profilerUI.toolbar.memory-flamegraph
+msgid "Memory Flame Chart"
+msgstr ""
 
 #. LOCALIZATION NOTE (profilerUI.table.*): These strings are displayed
 #. -  in the call tree headers for a recording.
-#: profilerUI.table.totalDuration
-msgid "Total Time (ms)"
-msgstr "மொத்த நேரம் (மிவி)"
+#: profilerUI.table.totalDuration2
+msgid "Total Time"
+msgstr ""
 
-#: profilerUI.table.selfDuration
-msgid "Self Time (ms)"
-msgstr "சுய நேரம் (மிவி)"
+#: profilerUI.table.selfDuration2
+msgid "Self Time"
+msgstr ""
 
 #: profilerUI.table.totalPercentage
 msgid "Total Cost"
@@ -117,6 +123,14 @@ msgstr "சுய பணம்"
 msgid "Samples"
 msgstr "மாதிரிகள்"
 
+#: profilerUI.table.totalAlloc
+msgid "Total Allocations"
+msgstr ""
+
+#: profilerUI.table.selfAlloc
+msgid "Self Allocations"
+msgstr ""
+
 #: profilerUI.table.function
 msgid "Function"
 msgstr "செயல்"
@@ -126,6 +140,94 @@ msgstr "செயல்"
 #: profilerUI.newtab.tooltiptext
 msgid "Add new tab from selection"
 msgstr "தேர்விலிருந்து புதிய கீற்றை சேர்"
+
+#. This is the tooltip
+#. -  for the options button.
+#: profilerUI.options.tooltiptext
+msgid "Configure performance preferences."
+msgstr ""
+
+#. This is the label shown next to
+#. -  a checkbox that inverts and un-inverts the profiler's call tree.
+#: profilerUI.invertTree
+msgid "Invert Call Tree"
+msgstr "அழைப்பு வரிசைகளை தலை கீழாக்கு"
+
+#: profilerUI.invertTree.tooltiptext
+msgid ""
+"Inverting the call tree displays the profiled call paths starting from the "
+"youngest frames and expanding out to the older frames."
+msgstr ""
+"இளம் சட்டங்களிலிருந்து தொடங்கி பழைய சட்டங்களாக வெளிப்படும் அழைப்பு பாதை "
+"விவரக்குறிப்புகளை வரிசைகளை தழைகீழாக்குகிறது."
+
+#. This is the label shown next to
+#. -  a checkbox that inverts and un-inverts the profiler's flame graph.
+#: profilerUI.invertFlameGraph
+msgid "Invert Flame Chart"
+msgstr ""
+
+#: profilerUI.invertFlameGraph.tooltiptext
+#, fuzzy
+msgid ""
+"Inverting the flame chart displays the profiled call paths starting from the "
+"youngest frames and expanding out to the older frames."
+msgstr ""
+"இளம் சட்டங்களிலிருந்து தொடங்கி பழைய சட்டங்களாக வெளிப்படும் அழைப்பு பாதை "
+"விவரக்குறிப்புகளை வரிசைகளை தழைகீழாக்குகிறது."
+
+#. This is the
+#. -  label for the checkbox that toggles whether or not Gecko platform data
+#. -  is displayed in the profiler.
+#: profilerUI.showPlatformData
+#, fuzzy
+msgid "Show Gecko Platform Data"
+msgstr "கெக்கோ தளத்திற்க்கான தரவை காட்டு"
+
+#: profilerUI.showPlatformData.tooltiptext
+msgid ""
+"Showing platform data enables the JavaScript Profiler reports to include "
+"Gecko platform symbols."
+msgstr ""
+
+#. This is the
+#. -  label for the checkbox that toggles the flattening of tree recursion in inspected
+#. -  functions in the profiler.
+#: profilerUI.flattenTreeRecursion
+msgid "Flatten Tree Recursion"
+msgstr ""
+
+#: profilerUI.flattenTreeRecursion.tooltiptext
+msgid "Flatten recursion when inspecting functions."
+msgstr ""
+
+#. This string
+#. -  is displayed next to a checkbox determining whether or not memory
+#. -  measurements are enabled.
+#: profilerUI.enableMemory
+msgid "Record Memory"
+msgstr ""
+
+#: profilerUI.enableMemory.tooltiptext
+msgid "Record memory consumption while profiling."
+msgstr ""
+
+#. This string
+#. -  is displayed next to a checkbox determining whether or not framerate
+#. -  is recorded.
+#: profilerUI.enableFramerate
+msgid "Record Framerate"
+msgstr ""
+
+#: profilerUI.enableFramerate.tooltiptext
+msgid "Record framerate while profiling."
+msgstr ""
+
+#~ msgid "Total Time (ms)"
+#~ msgstr "மொத்த நேரம் (மிவி)"
+
+#~ msgid "Self Time (ms)"
+#~ msgstr "சுய நேரம் (மிவி)"
 
 #~ msgid "Cost"
 #~ msgstr "விலை"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-11-29 19:41+0000\n"
 "Last-Translator: Mihovil <mozilla@miho.im>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1417290065.000000\n"
@@ -41,10 +41,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Agencija certifikata (neimenovana)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Uredi povjerenje certifikata"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Certifikat \"%S\" predstavlja agenciju certifikata."
@@ -181,13 +177,13 @@ msgstr "Naziv datoteke za izradu sigurnosne kopije"
 msgid "PKCS12 Files"
 msgstr "PKCS12 Datoteke"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Upotrijebite ovu tipku da bi %S sigurnosne osobitosti vratio na tvorničke "
-"postavke."
+"Molim upišite lozinku s kojom je šifrirana sigurnosna kopija ovog "
+"certifikata."
 
 #. #Cert verification
 #: certVerified
@@ -241,29 +237,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Izdano pod: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Identitet web stranice nije ovjeren"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Identitet web stranice je ovjeren"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Web stranica %S podržava ovjeru za stranicu koju pregledavate. Identitet ove "
-"web stranice je ovjerio %S, agencija certifikata kojoj vjerujete za ovu "
-"namjenu."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-"Pogledajte sigurnosni certifikat koji potvrđuje identitet ove web stranice."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Nešifrirana veza"
@@ -285,11 +258,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Stranica koju pregledavate nije šifrirana."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Veza kriptirana (%1$S, %2$S bitni ključevi, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Veza kriptirana (%1$S, %2$S bitni ključevi, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -328,10 +307,6 @@ msgstr "Preglednik certifikata:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Nije dio certifikata>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Nepoznati izdavač>"
 
 #: escrowFinalMessage
 msgid ""
@@ -624,10 +599,6 @@ msgstr "Nema dostupnih informacija"
 msgid "Unable to obtain identification status for this site."
 msgstr "Nije moguće dobiti identifikacijski status za ovu stranicu."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Veza nije uspjela"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -636,6 +607,42 @@ msgstr "Certifikat postoji"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Certifikat već postoji."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Uredi povjerenje certifikata"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Upotrijebite ovu tipku da bi %S sigurnosne osobitosti vratio na tvorničke "
+#~ "postavke."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Identitet web stranice nije ovjeren"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Identitet web stranice je ovjeren"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Web stranica %S podržava ovjeru za stranicu koju pregledavate. Identitet "
+#~ "ove web stranice je ovjerio %S, agencija certifikata kojoj vjerujete za "
+#~ "ovu namjenu."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Pogledajte sigurnosni certifikat koji potvrđuje identitet ove web "
+#~ "stranice."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Nepoznati izdavač>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Veza nije uspjela"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

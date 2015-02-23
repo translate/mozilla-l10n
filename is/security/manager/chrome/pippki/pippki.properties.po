@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-12-04 12:34+0000\n"
 "Last-Translator: Kristján Bjarni <kristjanbjarni@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n%10!=1 || n%100==11);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1417696446.000000\n"
@@ -38,10 +38,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Vottunarstöð (ónefnt)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Breyta trausti skilríkis"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Skilríkið \"%S\" er fulltrúi fyrir vottunarstöð."
@@ -175,12 +171,12 @@ msgstr "Skráarnafn til að taka afrit af"
 msgid "PKCS12 Files"
 msgstr "PKCS12 skrár"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Notaðu þennan takka til að endursetja öryggisstillingar %S í upphafsgildi."
+"Sláðu inn lykilorðið sem var notað til að dulkóða öryggisafrit skilríkis."
 
 #. #Cert verification
 #: certVerified
@@ -239,28 +235,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Gefið út: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Auðkenni vefsvæðis ekki sannreynt"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Auðkenni vefsvæðis sannreynt"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Vefsvæðið %S styður auðkenni fyrir síðuna sem þú ert að skoða. Auðkenni "
-"vefsvæðisins hefur verið sannreynt af %S sem er vottunarstöð sem þú treystir "
-"í þessum efnum."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Skoða skilríki vefsvæðis sem staðfesta auðkenni þess."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Tenging ekki dulkóðuð"
@@ -282,11 +256,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Síðan sem þú ert að skoða er ekki dulkóðuð."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Tenging dulkóðuð (%1$S, %2$S bitalykill, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Tenging dulkóðuð (%1$S, %2$S bitalykill, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -326,10 +306,6 @@ msgstr "Skoða skilríki:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Ekki hluti af skilríki>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Óþekktur útgefandi>"
 
 #: escrowFinalMessage
 msgid ""
@@ -620,10 +596,6 @@ msgstr "Engar upplýsingar tiltækar"
 msgid "Unable to obtain identification status for this site."
 msgstr "Get ekki náð í stöðu auðkennis fyrir valið vefsvæði."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Villa við tengingu"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -632,6 +604,39 @@ msgstr "Skilríki er til"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Skilríkið er þegar til."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Breyta trausti skilríkis"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Notaðu þennan takka til að endursetja öryggisstillingar %S í upphafsgildi."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Auðkenni vefsvæðis ekki sannreynt"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Auðkenni vefsvæðis sannreynt"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Vefsvæðið %S styður auðkenni fyrir síðuna sem þú ert að skoða. Auðkenni "
+#~ "vefsvæðisins hefur verið sannreynt af %S sem er vottunarstöð sem þú "
+#~ "treystir í þessum efnum."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Skoða skilríki vefsvæðis sem staðfesta auðkenni þess."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Óþekktur útgefandi>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Villa við tengingu"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

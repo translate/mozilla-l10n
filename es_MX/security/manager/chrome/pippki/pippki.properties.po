@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-02-21 00:37+0000\n"
 "Last-Translator: Mauricio <mautematico@mozilla-mexico.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1424479026.000000\n"
@@ -39,10 +39,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Autoridad certificadora (sin nombre)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Editar confianza en el certificado"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "El certificado \"%S\" representa a una autoridad certificadora."
@@ -180,13 +176,13 @@ msgstr "Nombre del archivo a salvaguardar"
 msgid "PKCS12 Files"
 msgstr "Archivos PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Utilice este botón para reiniciar las preferencias de seguridad de %S a sus "
-"valores originales."
+"Introduce la contraseña que se utilizó para cifrar la copia de respaldo de "
+"este certificado."
 
 #. #Cert verification
 #: certVerified
@@ -243,29 +239,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Emitido bajo: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Identidad del sitio web no verificada"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Identidad del sitio web verificada"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"El sitio web %S admite identificación para la página que estás viendo. La "
-"identidad de este sitio web ha sido verificada por %S, una autoridad "
-"certificadora en la que confías para este propósito."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-"Ver el certificado de seguridad que verifica la identidad de este sitio web."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Conexión sin cifrar"
@@ -287,11 +260,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "La página que está viendo está sin cifrar."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Conección encriptada (%1$S, %2$S, llaves bit, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Conección encriptada (%1$S, %2$S, llaves bit, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -331,10 +310,6 @@ msgstr "Visor de certificados:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<No es parte de un certificado>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Emisor desconocido>"
 
 #: escrowFinalMessage
 msgid ""
@@ -631,10 +606,6 @@ msgstr "No hay información disponible"
 msgid "Unable to obtain identification status for this site."
 msgstr "No es posible obtener el estado de identificación para este sitio."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Conexión fallida"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -643,6 +614,42 @@ msgstr "Certificado existe"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "El certificado ya existe."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Editar confianza en el certificado"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Utilice este botón para reiniciar las preferencias de seguridad de %S a "
+#~ "sus valores originales."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Identidad del sitio web no verificada"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Identidad del sitio web verificada"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "El sitio web %S admite identificación para la página que estás viendo. La "
+#~ "identidad de este sitio web ha sido verificada por %S, una autoridad "
+#~ "certificadora en la que confías para este propósito."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Ver el certificado de seguridad que verifica la identidad de este sitio "
+#~ "web."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Emisor desconocido>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Conexión fallida"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

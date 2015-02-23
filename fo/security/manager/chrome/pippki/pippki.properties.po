@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-02-24 00:16+0000\n"
 "Last-Translator: Jógvan <jeggy@jebster.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,10 +38,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr ""
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr ""
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr ""
@@ -161,10 +157,9 @@ msgstr ""
 msgid "PKCS12 Files"
 msgstr ""
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
 
 #. #Cert verification
@@ -217,32 +212,6 @@ msgid "Issued Under: \"%S\""
 msgstr ""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-#, fuzzy
-msgid "Website Identity Not Verified"
-msgstr "Web Site Identity Not Verified"
-
-#: pageInfo_WebSiteVerified
-#, fuzzy
-msgid "Website Identity Verified"
-msgstr "Web Site Identity Verified"
-
-#: pageInfo_Identity_Verified
-#, fuzzy
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"The web site %S supports authentication for the page you are viewing. The "
-"identity of this web site has been verified by %S, a certificate authority "
-"you trust for this purpose."
-
-#: pageInfo_ViewCertificate
-#, fuzzy
-msgid "View the security certificate that verifies this website's identity."
-msgstr "View the security certificate that verifies this web site's identity."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr ""
@@ -264,11 +233,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr ""
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -301,10 +275,6 @@ msgstr ""
 
 #: notPresent
 msgid "<Not Part Of Certificate>"
-msgstr ""
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
 msgstr ""
 
 #: escrowFinalMessage
@@ -585,10 +555,6 @@ msgstr ""
 msgid "Unable to obtain identification status for this site."
 msgstr ""
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr ""
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -597,6 +563,29 @@ msgstr ""
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Web Site Identity Not Verified"
+
+#, fuzzy
+#~ msgid "Website Identity Verified"
+#~ msgstr "Web Site Identity Verified"
+
+#, fuzzy
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "The web site %S supports authentication for the page you are viewing. The "
+#~ "identity of this web site has been verified by %S, a certificate "
+#~ "authority you trust for this purpose."
+
+#, fuzzy
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "View the security certificate that verifies this web site's identity."
 
 #, fuzzy
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"

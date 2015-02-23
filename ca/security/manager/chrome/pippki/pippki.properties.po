@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-01-03 16:12+0000\n"
 "Last-Translator: Jordi <jordis@softcatala.cat>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1420301522.000000\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Entitat certificadora (sense nom)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Edita la confiança en els certificats"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "El certificat «%S» representa una entitat certificadora."
@@ -183,13 +179,13 @@ msgstr "Nom del fitxer a què s'ha de fer una còpia de seguretat"
 msgid "PKCS12 Files"
 msgstr "Fitxers PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Utilitzeu aquest botó per reiniciar els paràmetres de seguretat de %S i "
-"tornar-los a donar els valors de fàbrica."
+"Introduïu la contrasenya que es va utilitzar per xifrar la còpia de "
+"seguretat d'aquest certificat."
 
 #. #Cert verification
 #: certVerified
@@ -246,30 +242,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Emès sota: «%S»"
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "La identitat del lloc web no ha estat verificada"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "La identitat del lloc web ha estat verificada"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"El lloc web %S permet l'ús d'autenticació de la pàgina que esteu "
-"visualitzant. La identitat d'aquest lloc web ha estat verificada per %S, una "
-"entitat certificadora en què confieu per a aquesta finalitat."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-"Visualitza el certificat de seguretat que verifica la identitat d'aquest "
-"lloc web."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "La connexió no està xifrada"
@@ -293,11 +265,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "La pàgina que esteu visualitzant no està xifrada."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Connexió xifrada (%1$S, claus de %2$S bits, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Connexió xifrada (%1$S, claus de %2$S bits, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -338,10 +316,6 @@ msgstr "Visualitzador de certificats:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<No forma part del certificat>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Emissor desconegut>"
 
 #: escrowFinalMessage
 msgid ""
@@ -638,10 +612,6 @@ msgstr "No hi ha cap informació disponible"
 msgid "Unable to obtain identification status for this site."
 msgstr "No es pot obtenir l'estat d'identificació d'aquest lloc web."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Ha fallat la connexió"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -650,6 +620,42 @@ msgstr "El certificat existeix"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Ja existeix el certificat."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Edita la confiança en els certificats"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Utilitzeu aquest botó per reiniciar els paràmetres de seguretat de %S i "
+#~ "tornar-los a donar els valors de fàbrica."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "La identitat del lloc web no ha estat verificada"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "La identitat del lloc web ha estat verificada"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "El lloc web %S permet l'ús d'autenticació de la pàgina que esteu "
+#~ "visualitzant. La identitat d'aquest lloc web ha estat verificada per %S, "
+#~ "una entitat certificadora en què confieu per a aquesta finalitat."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Visualitza el certificat de seguretat que verifica la identitat d'aquest "
+#~ "lloc web."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Emissor desconegut>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Ha fallat la connexió"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "Connexió xifrada: xifratge d'alt nivell (%1$S, claus de %2$S bits)"
