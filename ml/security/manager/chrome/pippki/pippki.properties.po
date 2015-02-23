@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-12-04 16:48+0000\n"
 "Last-Translator: Ani <peter.ani@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,10 +39,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "സര്‍ട്ടിഫിക്കേറ്റ് അഥോറിറ്റി (പേരില്ലാത്ത)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "സര്‍ട്ടിഫിക്കേറ്റ് ട്രസ്റ്റ് ചിട്ടപ്പെടുത്തുക"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "സര്‍ട്ടിഫിക്കേറ്റ് \"%S\" ഒരു സര്‍ട്ടിഫിക്കേറ്റ് അഥോറിറ്റിയെ സൂചിപ്പിക്കുന്നു."
@@ -175,12 +171,11 @@ msgstr "ബാക്കപ്പ്‌ ചെയ്യേണ്ട ഫയലി�
 msgid "PKCS12 Files"
 msgstr "PKCS12 ഫയലുകള്‍"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr ""
-"%S-ന്റെ സുരക്ഷാ മുന്‍ഗണനകള്‍ വീണ്ടും പഴയതായി സജ്ജമാക്കുന്നതിനായി നിങ്ങള്‍ക്കു് ഈ ബട്ടണ്‍ ഉപയോഗിക്കാം."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "ഈ സര്‍ട്ടിഫിക്കേറ്റ് ബാക്കപ്പ് എന്‍ക്രിപ്റ്റ് ചെയ്തതിനു് ഉപയോഗിച്ച പാസ്‌വേര്‍ഡ് നല്‍കുക."
 
 #. #Cert verification
 #: certVerified
@@ -234,27 +229,6 @@ msgid "Issued Under: \"%S\""
 msgstr "ഇഷ്യൂ ചെയ്തിരിക്കുന്നതു്: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "വെബ് സൈറ്റിന്റെ തിരിച്ചറിയല്‍ ഉറപ്പു് വരുത്തിയിട്ടില്ല."
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "വെബ് സൈറ്റിന്റെ തിരിച്ചറില്‍ ഉറപ്പാക്കിയിരിക്കുന്നു."
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"നിങ്ങള്‍ കാണുന്ന താളിനുള്ള ആധികാരികത %S വെബ് സൈറ്റ് പിന്തുണയ്ക്കുന്നു. ഈ വെബ് സൈറ്റിനുള്ള "
-"തിരിച്ചറിയല്‍ %S ഉറപ്പാക്കിയിരിക്കുന്നു."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "വെബ് സൈറ്റ് തിരിച്ചറിയുന്നതിനുള്ള സുരക്ഷ സര്‍ട്ടിഫിക്കേറ്റ് കാണുക."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "കണക്ഷന്‍ എന്‍ക്രിപ്റ്റ് ചെയ്തിട്ടില്ല."
@@ -275,11 +249,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "നിങ്ങള്‍ സന്ദര്‍ശിക്കുന്ന താള്‍ എന്‍ക്രിപ്റ്റ് ചെയ്തിട്ടില്ല."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -318,10 +297,6 @@ msgstr "സര്‍ട്ടിഫിക്കേറ്റ വ്യൂവര�
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<സര്‍ട്ടിഫിക്കേറ്റിന്റെ ഭാഗമല്ല>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<അപരിചിതമായ ഇശ്യുവര്‍>"
 
 #: escrowFinalMessage
 msgid ""
@@ -612,10 +587,6 @@ msgstr "വിവരങ്ങള്‍ ലഭ്യമല്ല"
 msgid "Unable to obtain identification status for this site."
 msgstr "തന്നിരിക്കുന്ന സൈറ്റിന്റെ തിരിച്ചറിയല്‍ അവസ്ഥ ലഭ്യമാക്കുവാന്‍ സാധ്യമായില്ല."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "കണക്ഷന്‍ പരാജയപ്പെട്ടിരിക്കുന്നു"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -624,6 +595,39 @@ msgstr "സര്‍ട്ടിഫീക്കേറ്റ് നിലവി�
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "സര്‍ട്ടിഫിക്കേറ്റ് നിലവിലുണ്ടു്."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "സര്‍ട്ടിഫിക്കേറ്റ് ട്രസ്റ്റ് ചിട്ടപ്പെടുത്തുക"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "%S-ന്റെ സുരക്ഷാ മുന്‍ഗണനകള്‍ വീണ്ടും പഴയതായി സജ്ജമാക്കുന്നതിനായി നിങ്ങള്‍ക്കു് ഈ ബട്ടണ്‍ "
+#~ "ഉപയോഗിക്കാം."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "വെബ് സൈറ്റിന്റെ തിരിച്ചറിയല്‍ ഉറപ്പു് വരുത്തിയിട്ടില്ല."
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "വെബ് സൈറ്റിന്റെ തിരിച്ചറില്‍ ഉറപ്പാക്കിയിരിക്കുന്നു."
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "നിങ്ങള്‍ കാണുന്ന താളിനുള്ള ആധികാരികത %S വെബ് സൈറ്റ് പിന്തുണയ്ക്കുന്നു. ഈ വെബ് സൈറ്റിനുള്ള "
+#~ "തിരിച്ചറിയല്‍ %S ഉറപ്പാക്കിയിരിക്കുന്നു."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "വെബ് സൈറ്റ് തിരിച്ചറിയുന്നതിനുള്ള സുരക്ഷ സര്‍ട്ടിഫിക്കേറ്റ് കാണുക."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<അപരിചിതമായ ഇശ്യുവര്‍>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "കണക്ഷന്‍ പരാജയപ്പെട്ടിരിക്കുന്നു"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

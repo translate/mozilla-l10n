@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-12 21:21+0000\n"
+"POT-Creation-Date: 2015-02-23 18:17+0000\n"
 "PO-Revision-Date: 2015-01-14 17:23+0000\n"
 "Last-Translator: Kristján Bjarni <kristjanbjarni@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n%10!=1 || n%100==11);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1421256234.000000\n"
@@ -27,10 +27,22 @@ msgstr ""
 msgid "Firefox Hello"
 msgstr "Firefox Hello"
 
+#: clientSuperShortname
+msgid "Hello"
+msgstr "Hello"
+
+#: rooms_tab_button_tooltip
+msgid "Conversations"
+msgstr ""
+
+#: contacts_tab_button_tooltip
+msgid "Contacts"
+msgstr ""
+
 #. ## LOCALIZATION_NOTE(first_time_experience.title): clientShortname will be
 #. ## replaced by the brand name
 #: first_time_experience_title
-msgctxt "first_time_experience_title"
+#, fuzzy
 msgid "{{clientShortname}} — Join the conversation"
 msgstr "{{clientShortname}} — Taka þátt í samtali"
 
@@ -38,50 +50,9 @@ msgstr "{{clientShortname}} — Taka þátt í samtali"
 msgid "Get Started"
 msgstr "Byrja"
 
-#: share_link_header_text
-msgid "Share this link to invite someone to talk:"
-msgstr "Deildu þessum tengli til að bjóða einhverjum í samtal:"
-
 #: invite_header_text
 msgid "Invite someone to join you."
 msgstr "Bjóða einhverjum að taka þátt."
-
-#. ## LOCALIZATION NOTE(invitee_name_label): Displayed when obtaining a url.
-#. ## See https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#precall-firstrun
-#. ## Click the label icon at the end of the url field.
-#: invitee_name_label
-msgid "Who are you inviting?"
-msgstr "Hverjum ertu að bjóða?"
-
-#. ## LOCALIZATION NOTE(invitee_expire_days_label): Allows the user to adjust
-#. ## the expiry time. Click the label icon at the end of the url field to see where
-#. ## this is:
-#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#precall-firstrun
-#. ## Semicolon-separated list of plural forms. See:
-#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. ## In this item, don't translate the part between {{..}}
-#: invitee_expire_days_label
-msgid ""
-"Invitation will expire in {{expiry_time}} day;Invitation will expire in "
-"{{expiry_time}} days"
-msgstr ""
-"Fundarboð mun renna út eftir {{expiry_time}} dag;Fundarboð mun renna út "
-"eftir {{expiry_time}} daga"
-
-#. ## LOCALIZATION NOTE(invitee_expire_hours_label): Allows the user to adjust
-#. ## the expiry time. Click the label icon are the end of the url field to see where
-#. ## this is:
-#. ## https://people.mozilla.org/~dhenein/labs/loop-mvp-spec/#precall-firstrun
-#. ## Semicolon-separated list of plural forms. See:
-#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. ## In this item, don't translate the part between {{..}}
-#: invitee_expire_hours_label
-msgid ""
-"Invitation will expire in {{expiry_time}} hour;Invitation will expire in "
-"{{expiry_time}} hours"
-msgstr ""
-"Fundarboð mun renna út eftir {{expiry_time}} klukkutíma;Fundarboð mun renna "
-"út eftir {{expiry_time}} klukkutíma"
 
 #. # Status text
 #: display_name_guest
@@ -152,56 +123,36 @@ msgctxt "retry_button"
 msgid "Retry"
 msgstr "Reyna aftur"
 
-#: share_email_subject4
-msgctxt "share_email_subject4"
-msgid "{{clientShortname}} — Join the conversation"
+#: share_email_subject5
+#, fuzzy
+msgid "{{clientShortname2}} — Join the conversation"
 msgstr "{{clientShortname}} — Taka þátt í samtali"
 
 #. ## LOCALIZATION NOTE (share_email_body4): In this item, don't translate the
-#. ## part between {{..}} and leave the \r\n\r\n part alone
-#: share_email_body4
+#. ## part between {{..}} and leave the \n\n part alone
+#: share_email_body5
 msgid ""
-"Hello!\r\n"
-"\r\n"
-"Join me for a video conversation using {{clientShortname}}:\r\n"
-"\r\n"
-"You don't have to download or install anything. Just copy and paste this URL "
-"into your browser:\r\n"
-"\r\n"
-"{{callUrl}}\r\n"
-"\r\n"
-"If you want, you can also learn more about {{clientShortname}} at "
-"{{learnMoreUrl}}\r\n"
-"\r\n"
-"Talk to you soon!"
-msgstr ""
-"Halló!\n"
+"Hello!\n"
 "\n"
-"Taktu þátt í myndsamtali með því að nota {{clientShortname}}:\n"
+"Join me for a video conversation on {{clientShortname2}}.\n"
 "\n"
-"Þú þarft ekki að hala neinu niður eða setja neitt inn. Afritaðu bara þetta "
-"URL í vafrann:\n"
+"It's the easiest way to connect by video with anyone anywhere.  With "
+"{{clientSuperShortname}}, you don't have to download or install anything. "
+"Just click or paste this link into your {{brandShortname}}, Opera, or Chrome "
+"browser to join the conversation:\n"
 "\n"
 "{{callUrl}}\n"
 "\n"
-"Ef þú hefur áhuga geturðu fræðst meira um {{clientShortname}} á "
-"{{learnMoreUrl}}\n"
+"If you'd like to learn more about {{clientSuperShortname}} and how you can "
+"start your own free video conversations, visit {{learnMoreUrl}}\n"
 "\n"
-"Heyri fljótlega í þér!"
-
-#: share_button
-msgctxt "share_button"
-msgid "Email"
-msgstr "Tölvupóstur"
+"Talk to you soon!"
+msgstr ""
 
 #: share_button2
 msgctxt "share_button2"
 msgid "Email Link"
 msgstr "Senda tengil í pósti"
-
-#: copy_url_button
-msgid "Copy"
-msgstr "Copy"
 
 #: copy_url_button2
 msgctxt "copy_url_button2"
@@ -310,6 +261,21 @@ msgstr "Flytja inn"
 #: importing_contacts_progress_button
 msgid "Importing…"
 msgstr "Flyt inn…"
+
+#: import_contacts_failure_message
+msgid "Some contacts could not be imported. Please try again."
+msgstr ""
+
+#. ## LOCALIZATION NOTE(import_contacts_success_message): Success notification message
+#. ## when user's contacts have been successfully imported.
+#. ## Semicolon-separated list of plural forms. See:
+#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. ## In this item, don't translate the part between {{..}}
+#: import_contacts_success_message
+msgid ""
+"{{total}} contact was successfully imported.;{{total}} contacts were "
+"successfully imported."
+msgstr ""
 
 #. ## LOCALIZATION NOTE(sync_contacts_button): This button is displayed in place of
 #. ## importing_contacts_button once contacts have been imported once.
@@ -422,6 +388,27 @@ msgstr "Símtal"
 msgid "Video Conversation"
 msgstr "Skjásamtal"
 
+#. ## LOCALIZATION NOTE(gravatars_promo_message): The {{learn_more}} part will be
+#. ## replaced with a link with the text content of gravatars_promo_message_learnmore.
+#: gravatars_promo_message
+msgid ""
+"You can automatically add profile icons to your contacts by sharing their "
+"email addresses with Gravatar. {{learn_more}}."
+msgstr ""
+
+#: gravatars_promo_message_learnmore
+#, fuzzy
+msgid "Learn more"
+msgstr "Fræðast meira…"
+
+#: gravatars_promo_button_nothanks
+msgid "No Thanks"
+msgstr "Nei takk"
+
+#: gravatars_promo_button_use
+msgid "Use Profile Icons"
+msgstr ""
+
 #. # Conversation Window Strings
 #: initiate_call_button_label2
 msgid "Ready to start your conversation?"
@@ -479,6 +466,23 @@ msgstr "Slökkva á mynd"
 #: unmute_local_video_button_title
 msgid "Unmute your video"
 msgstr "Kveikja á mynd"
+
+#: active_screenshare_button_title
+#, fuzzy
+msgid "Stop sharing"
+msgstr "&Stöðva samnýtingu"
+
+#: inactive_screenshare_button_title
+msgid "Share your screen"
+msgstr ""
+
+#: share_tabs_button_title
+msgid "Share my Tabs"
+msgstr ""
+
+#: share_windows_button_title
+msgid "Share other Windows"
+msgstr ""
 
 #. ## LOCALIZATION NOTE (call_with_contact_title): The title displayed
 #. ## when calling a contact. Don't translate the part between {{..}} because
@@ -642,13 +646,14 @@ msgstr ""
 msgid "How was your conversation?"
 msgstr "Hvernig var samtalið?"
 
-#: feedback_what_makes_you_sad
-msgid "What makes you sad?"
-msgstr "Hvað gerir þig leiðan?"
-
 #: feedback_thank_you_heading
 msgid "Thank you for your feedback!"
 msgstr "Takk fyrir þín viðbrögð!"
+
+#: feedback_category_list_heading
+#, fuzzy
+msgid "What made you sad?"
+msgstr "Hvað gerir þig leiðan?"
 
 #: feedback_category_audio_quality
 msgid "Audio quality"
@@ -662,9 +667,9 @@ msgstr "Myndbandagæði"
 msgid "Was disconnected"
 msgstr "Tenging slitnaði"
 
-#: feedback_category_confusing
-msgid "Confusing"
-msgstr "Ruglingslegt"
+#: feedback_category_confusing2
+msgid "Confusing controls"
+msgstr ""
 
 #: feedback_category_other2
 msgid "Other"
@@ -800,6 +805,89 @@ msgstr "Taka þátt í samtali"
 #: rooms_signout_alert
 msgid "Open conversations will be closed"
 msgstr "Opnum samtölum verður lokað"
+
+#. # Infobar strings
+#: infobar_screenshare_browser_message
+msgid ""
+"Users in your conversation will now be able to see the contents of any tab "
+"you click on."
+msgstr ""
+
+#: infobar_button_gotit_label
+msgid "Got it!"
+msgstr "Got it!"
+
+#: infobar_button_gotit_accesskey
+msgid "G"
+msgstr ""
+
+#: infobar_menuitem_dontshowagain_label
+#, fuzzy
+msgid "Don't show this again"
+msgstr "Ekki spyrja að þessu aftur"
+
+#: infobar_menuitem_dontshowagain_accesskey
+msgid "D"
+msgstr ""
+
+#~ msgid "Share this link to invite someone to talk:"
+#~ msgstr "Deildu þessum tengli til að bjóða einhverjum í samtal:"
+
+#~ msgid "Who are you inviting?"
+#~ msgstr "Hverjum ertu að bjóða?"
+
+#~ msgid ""
+#~ "Invitation will expire in {{expiry_time}} day;Invitation will expire in "
+#~ "{{expiry_time}} days"
+#~ msgstr ""
+#~ "Fundarboð mun renna út eftir {{expiry_time}} dag;Fundarboð mun renna út "
+#~ "eftir {{expiry_time}} daga"
+
+#~ msgid ""
+#~ "Invitation will expire in {{expiry_time}} hour;Invitation will expire in "
+#~ "{{expiry_time}} hours"
+#~ msgstr ""
+#~ "Fundarboð mun renna út eftir {{expiry_time}} klukkutíma;Fundarboð mun "
+#~ "renna út eftir {{expiry_time}} klukkutíma"
+
+#~ msgctxt "share_email_subject4"
+#~ msgid "{{clientShortname}} — Join the conversation"
+#~ msgstr "{{clientShortname}} — Taka þátt í samtali"
+
+#~ msgid ""
+#~ "Hello!\r\n"
+#~ "\r\n"
+#~ "Join me for a video conversation using {{clientShortname}}:\r\n"
+#~ "\r\n"
+#~ "You don't have to download or install anything. Just copy and paste this "
+#~ "URL into your browser:\r\n"
+#~ "\r\n"
+#~ "{{callUrl}}\r\n"
+#~ "\r\n"
+#~ "If you want, you can also learn more about {{clientShortname}} at "
+#~ "{{learnMoreUrl}}\r\n"
+#~ "\r\n"
+#~ "Talk to you soon!"
+#~ msgstr ""
+#~ "Halló!\n"
+#~ "\n"
+#~ "Taktu þátt í myndsamtali með því að nota {{clientShortname}}:\n"
+#~ "\n"
+#~ "Þú þarft ekki að hala neinu niður eða setja neitt inn. Afritaðu bara "
+#~ "þetta URL í vafrann:\n"
+#~ "\n"
+#~ "{{callUrl}}\n"
+#~ "\n"
+#~ "Ef þú hefur áhuga geturðu fræðst meira um {{clientShortname}} á "
+#~ "{{learnMoreUrl}}\n"
+#~ "\n"
+#~ "Heyri fljótlega í þér!"
+
+#~ msgid "Copy"
+#~ msgstr "Copy"
+
+#~ msgid "Confusing"
+#~ msgstr "Ruglingslegt"
 
 #~ msgid ""
 #~ "Sorry, contact import failed, please see our "

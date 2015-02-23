@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,10 +38,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Mbaepuere güɨnoi ombocertifica vae (jeembae)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Eikuatía reyeko jese vae certificado pe"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Certificado \"%S\" oï ko mbaepuere güɨnoi ombocertica vae jekovia pe."
@@ -178,13 +174,13 @@ msgstr "Archivo jee oñovätu vaerä vae"
 msgid "PKCS12 Files"
 msgstr "Archivo reta PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Eiporu kuae botón remboɨpɨ vaerä reipota jëguambae vae reta %S pe iyɨpɨ yave "
-"ñogüɨnoi rami."
+"Eikuatía ndeño reikuaa oyeporu oipapa vaerä copia yemborɨ pegua kuae "
+"certificado güi."
 
 #. #Cert verification
 #: certVerified
@@ -239,28 +235,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Mbegüe yae omondo: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Web jenda oikuaa vae mbaetɨ ovae"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Web jenda omboyekuaa oñemae jesegüe ma"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Web jenda %S oasaño omboyekuaa kuae página remae reï jese vae. Kuae web "
-"jenda oechauka vae omae kavi ko jese %S, metei ipuere ombocertifica rerovia "
-"kuae peguarä vae."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Emae certificado jëguambae omae kuae web jenda re vae."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Ñemoïru oyepapambae"
@@ -280,11 +254,16 @@ msgstr "Internet rupi ombou omombeu oyepapambae vae ipuere vi oecha ïru reta."
 msgid "The page you are viewing is not encrypted."
 msgstr "Págian reecha renoi vae mbaetɨ oyepapa oï."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -322,10 +301,6 @@ msgstr "Certificado reta re ñañemomae vae:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Mbaetɨ ko metei certificado pegua>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Omombeu yaikuaambae vae>"
 
 #: escrowFinalMessage
 msgid ""
@@ -620,10 +595,6 @@ msgstr "Mbaetɨ yemombeu oïndaivi vae"
 msgid "Unable to obtain identification status for this site."
 msgstr "Ngaraa ipuere güɨnoi omboyekuaa kërai rupi oñemee jendarä vae pe."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Ñemoïru oyeavɨ vae"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -632,6 +603,40 @@ msgstr "Certificate Exists"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "The Certificate already exists."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Eikuatía reyeko jese vae certificado pe"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Eiporu kuae botón remboɨpɨ vaerä reipota jëguambae vae reta %S pe iyɨpɨ "
+#~ "yave ñogüɨnoi rami."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Web jenda oikuaa vae mbaetɨ ovae"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Web jenda omboyekuaa oñemae jesegüe ma"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Web jenda %S oasaño omboyekuaa kuae página remae reï jese vae. Kuae web "
+#~ "jenda oechauka vae omae kavi ko jese %S, metei ipuere ombocertifica "
+#~ "rerovia kuae peguarä vae."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Emae certificado jëguambae omae kuae web jenda re vae."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Omombeu yaikuaambae vae>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Ñemoïru oyeavɨ vae"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

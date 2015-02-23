@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-21 15:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-01-16 23:32+0000\n"
 "Last-Translator: Khaled <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -41,10 +41,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "سلطة شهادات (غير مسمّاة)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "حرّر الثقة في الشّهادة"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "تمثّل الشّهادة \"%S\" سلطة شهادات."
@@ -174,11 +170,12 @@ msgstr "اسم الملفّ المراد نسخه احتياطيًّا"
 msgid "PKCS12 Files"
 msgstr "ملفّات PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr "استخدم هذا الزّرّ لتصفير تفضيلات أمن %S لإعدادات المصنع."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr ""
+"الرّجاء إدخال كلمة السرّ التي استخدمت لتعمية النّسخة الاحتياطية من هذه الشّهادة."
 
 #. #Cert verification
 #: certVerified
@@ -232,27 +229,6 @@ msgid "Issued Under: \"%S\""
 msgstr "مُصدرة تحت: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "لم يُتحقق من هويّة موقع وِب"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "تمّ التّحقق من هويّة موقع وِب"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"يدعم موقع وِب %S الاستيثاق لصفحة وِب التي تعرضها. تحققت %S من هويّة الموقع، و "
-"هي سلطة شهادات تثق بها لهذا الغرض."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "اعرض شهادة الأمن التي تتحقّق من هويّة موقع وِب هذا."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "الاتّصال غير مُعمّى"
@@ -274,11 +250,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "الصّفحة التي تعرضها غير مُعمّاة."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "الاتصال مُعمّى (%1$S، مفاتيح %2$S بتة، %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "الاتصال مُعمّى (%1$S، مفاتيح %2$S بتة، %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -316,10 +298,6 @@ msgstr "عارض الشّهادات:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<ليس جزءًا من الشّهادة>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<مُصدِر مجهول>"
 
 #: escrowFinalMessage
 msgid ""
@@ -604,10 +582,6 @@ msgstr "لا توجد معلومات"
 msgid "Unable to obtain identification status for this site."
 msgstr "تعذّر الحصول على حالة التعرف على هذا الموقع."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "فشل الاتصال"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -616,6 +590,37 @@ msgstr "الشّهادة موجودة"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "هذه الشّهادة موجودة."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "حرّر الثقة في الشّهادة"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr "استخدم هذا الزّرّ لتصفير تفضيلات أمن %S لإعدادات المصنع."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "لم يُتحقق من هويّة موقع وِب"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "تمّ التّحقق من هويّة موقع وِب"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "يدعم موقع وِب %S الاستيثاق لصفحة وِب التي تعرضها. تحققت %S من هويّة الموقع، "
+#~ "و هي سلطة شهادات تثق بها لهذا الغرض."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "اعرض شهادة الأمن التي تتحقّق من هويّة موقع وِب هذا."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<مُصدِر مجهول>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "فشل الاتصال"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "الاتصال معمّى: تعمية عالية المستوى (%1$S، المفتاح %2$S بت)"

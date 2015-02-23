@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-12-01 10:14+0000\n"
 "Last-Translator: Mohomodou  <mh@bollag-areal.ch>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1417428876.000000\n"
@@ -41,10 +41,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Tabatiyan-tiira hini (bila-nda-maa)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Tabatiyan-tiira naanay fasal"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "\"%S\" tabatiyan-tiiraa ga kay tabatiyan-tiira foo dogoo ra."
@@ -182,11 +178,13 @@ msgstr "Tuku maa ka banda-gaabu"
 msgid "PKCS12 Files"
 msgstr "PKCS12 tukey"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr "Butoŋ ka %S saajaw ibaayey yeeri ngey izin alhaaley ga."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr ""
+"Taare šennikufaloo dam, kaŋ nda war na tabatiyan-tiira banda-gaaboo woo "
+"tugandi."
 
 #. #Cert verification
 #: certVerified
@@ -242,29 +240,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Kaataray sanda: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Interneti nungu boŋtammaasa mana korosandi"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Interneti nungu boŋtammaasa korosandi"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Interneti nungoo %S ga yadda moɲoo kaŋ war g'a guna lasal-tabatandiyanoo ga. "
-"%S mana Interneti nungoo woo boŋtammaasa koroši, tabatiyan-tiira hinoo kaŋ "
-"war ga naanay y'a almuraadoo woo še."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr ""
-"Guna saajaw tabatiyan-tiiraa kaŋ ga Interneti nungoo woo boŋtammaasaa koroši."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Ciyaroo mana tugandi"
@@ -286,11 +261,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Moɲoo kaŋ war g'a guna si hin ka tugandi."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Ciyari kufalante (cebsi kufal %1$S, %2$S, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Ciyari kufalante (cebsi kufal %1$S, %2$S, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -330,10 +311,6 @@ msgstr "Tabatiyan-tiira gunakaw:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Manti tabatiyan-tiiraa jere>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Kaataraykaw šibayante>"
 
 #: escrowFinalMessage
 msgid ""
@@ -629,10 +606,6 @@ msgstr "Alhabar kul ši bara"
 msgid "Unable to obtain identification status for this site."
 msgstr "Mana hin ka duu boŋtammaasa assariya nungoo woo se."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Ciyari kayante"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -641,6 +614,40 @@ msgstr "Tabatiyan-tiira goo"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Tabatiyan-tiiraa woo ga bara."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Tabatiyan-tiira naanay fasal"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr "Butoŋ ka %S saajaw ibaayey yeeri ngey izin alhaaley ga."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Interneti nungu boŋtammaasa mana korosandi"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Interneti nungu boŋtammaasa korosandi"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Interneti nungoo %S ga yadda moɲoo kaŋ war g'a guna lasal-tabatandiyanoo "
+#~ "ga. %S mana Interneti nungoo woo boŋtammaasa koroši, tabatiyan-tiira "
+#~ "hinoo kaŋ war ga naanay y'a almuraadoo woo še."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Guna saajaw tabatiyan-tiiraa kaŋ ga Interneti nungoo woo boŋtammaasaa "
+#~ "koroši."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Kaataraykaw šibayante>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Ciyari kayante"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "Ciyari tugante: tuguyan sahãnte (hanti %1$S, %2$S)"

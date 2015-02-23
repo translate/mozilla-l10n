@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-02-01 21:11+0000\n"
 "Last-Translator: romi <romihardiyanto@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1422825061.000000\n"
@@ -39,10 +39,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Otoritas Sertifikat (tanpa nama)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Ubah kepercayaan sertifikat"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Sertifikat \"%S\" mewakili Otoritas Sertifikat."
@@ -181,13 +177,11 @@ msgstr "Nama Berkas untuk Cadangan"
 msgid "PKCS12 Files"
 msgstr "Berkas PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr ""
-"Gunakan tombol ini untuk menyetel ulang pengaturan keamanan %S menjadi "
-"pengaturan awal lagi."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "Masukkan sandi yang digunakan untuk mengenkripsi cadangan sertifikat."
 
 #. #Cert verification
 #: certVerified
@@ -243,28 +237,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Diterbitkan oleh: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Identitas Situs Web Gagal Diverifikasi"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Identitas Situs Web Sukses Diverifikasi"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Situs web %S mendukung autentikasi laman yang Anda lihat. Identitas situs "
-"web telah diperiksa oleh %S, salah satu otoritas sertifikat yang Anda "
-"percaya untuk kegunaan ini."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Tampilkan sertifikat keamanan yang memeriksa identitas situs web ini."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Sambungan Tak Terenkripsi"
@@ -286,11 +258,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Laman yang ditampilkan tidak dienkripsi."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Sambungan Terenkripsi (%1$S, kunci %2$S bita, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Sambungan Terenkripsi (%1$S, kunci %2$S bita, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -329,10 +307,6 @@ msgstr "Penampil Sertifikat:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Bukan Bagian dari Sertifikat>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Penerbit Tidak Dikenali>"
 
 #: escrowFinalMessage
 msgid ""
@@ -631,10 +605,6 @@ msgstr "Tidak ada informasi tersedia"
 msgid "Unable to obtain identification status for this site."
 msgstr "Gagal mendapatkan status identifikasi situs ini."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Sambungan Gagal"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -643,3 +613,38 @@ msgstr "Sertifikat Sudah Ada"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Sertifikat sudah ada."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Ubah kepercayaan sertifikat"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Gunakan tombol ini untuk menyetel ulang pengaturan keamanan %S menjadi "
+#~ "pengaturan awal lagi."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Identitas Situs Web Gagal Diverifikasi"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Identitas Situs Web Sukses Diverifikasi"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Situs web %S mendukung autentikasi laman yang Anda lihat. Identitas situs "
+#~ "web telah diperiksa oleh %S, salah satu otoritas sertifikat yang Anda "
+#~ "percaya untuk kegunaan ini."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "Tampilkan sertifikat keamanan yang memeriksa identitas situs web ini."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Penerbit Tidak Dikenali>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Sambungan Gagal"

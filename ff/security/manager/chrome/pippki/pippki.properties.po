@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-02-10 22:21+0200\n"
 "Last-Translator: Ibrahima <ibrahima.sarr@pulaagu.com>\n"
 "Language-Team: FULAH LOCALIZATION\n"
@@ -16,7 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -41,10 +41,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Kohowo Seedamfaagu (innaaka)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Taƴto hoolaare seedamfaagu"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Seedamfaagu \"%S\" toɗɗii ko Kohowo Seedamfaagu."
@@ -178,11 +174,12 @@ msgstr "Innde Fiilde Restorteende"
 msgid "PKCS12 Files"
 msgstr "Piille PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr "Huutoro ndee ñiire ngam artirde cuɓoraaɗe kisal %S to teelte lisin."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr ""
+"Tiiɗno naatnu finnde huutoraande nde ngol dannditol seedamfaagu gannetee."
 
 #. #Cert verification
 #: certVerified
@@ -236,27 +233,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Bayyinaa Ko e: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Innitol Lowre Geese Ƴeewtaaka"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Innitol Lowre Geese Ƴeewtaama"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Lowre geese %S ndee ena jaɓa goongɗitinol e hello ngo ngon-ɗaa ngoo. Innitol "
-"ndee lowre ƴeewtii-ɗum ko %S, kohowo seedamfaagu ngu koolani-ɗaa ngal gollal."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Hollir seedamfaagu kisal ƴeewtiingu innitol ndee lowre."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Ceŋol Gannaaka"
@@ -278,11 +254,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Hello ngo ngon-ɗaa ngoo gannaaka."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Ceŋol Gannangol (%1$S, kelon %2$S bite, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Ceŋol Gannangol (%1$S, kelon %2$S bite, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -321,10 +303,6 @@ msgstr "Yiytorde seedamfaagu:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Jeyaaka e Seedamfaagu>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Bayyinɗo Anndaaka>"
 
 #: escrowFinalMessage
 msgid ""
@@ -616,10 +594,6 @@ msgstr "Alaa Humpito Woodi"
 msgid "Unable to obtain identification status for this site."
 msgstr "Horiima heɓde ngonka innitol ndee lowre."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Ceŋagol Woorii"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -628,6 +602,38 @@ msgstr "Seedamfaagu ena woodi"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Seedamfaagu nguu ena woodi kisa."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Taƴto hoolaare seedamfaagu"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr "Huutoro ndee ñiire ngam artirde cuɓoraaɗe kisal %S to teelte lisin."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Innitol Lowre Geese Ƴeewtaaka"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Innitol Lowre Geese Ƴeewtaama"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Lowre geese %S ndee ena jaɓa goongɗitinol e hello ngo ngon-ɗaa ngoo. "
+#~ "Innitol ndee lowre ƴeewtii-ɗum ko %S, kohowo seedamfaagu ngu koolani-ɗaa "
+#~ "ngal gollal."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Hollir seedamfaagu kisal ƴeewtiingu innitol ndee lowre."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Bayyinɗo Anndaaka>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Ceŋagol Woorii"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "Ceŋol ko Gannangol: Gannugol Toowngol (kele %1$S, %2$S bite)"

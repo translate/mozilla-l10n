@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-12-04 15:06+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1417705567.000000\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Awdurdod Tystysgrifo (dienw)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Golygu ymddiriedaeth y dystysgrif"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Mae Tystysgrif \"%S\" yn cynrychioli Awdurdod Tystysgrifo."
@@ -181,12 +177,12 @@ msgstr "Enw Ffeil i'w Gadw wrth Gefn"
 msgid "PKCS12 Files"
 msgstr "Ffeiliau PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Defnyddio'r botwm i ailosod dewisiadau diogelwch %S i'w gosodiadau ffatri."
+"Rhowch y cyfrinair ddefnyddiwyd i amgryptio'r ffeil tystysgrif wrth gefn."
 
 #. #Cert verification
 #: certVerified
@@ -243,28 +239,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Cyhoeddwyd o Dan: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Nid yw Hunaniaeth y Gwefan wedi ei Wirio"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Gwiriwyd Enw'r Gwefan"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Mae'r wefan %S yn cynnal dilysiad y dudalen rydych yn ei darllen. Mae "
-"hunaniaeth y wefan wedi cael ei wirio gan %S, yr awdurdod tystysgrifo a "
-"medrwch ymddiried ynddo ar gyfer y pwrpas."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Edrych ar dystysgrif diogelwch sy'n gwirio hunaniaeth y wefan."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Nid yw'r Cysylltiad wedi ei Amgryptio"
@@ -288,11 +262,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Nid yw'r dudalen rydych yn edrych arni wedi ei hamgryptio."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Mae'r Cysylltiad wedi ei Ammgryptio (%1$S, allweddi did %2$S, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Mae'r Cysylltiad wedi ei Ammgryptio (%1$S, allweddi did %2$S, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -333,10 +313,6 @@ msgstr "Gwyliwr Tystysgrif:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Nid yw'n Rhan o'r Dystysgrif>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "Cyhoeddwr Anhysbys>"
 
 #: escrowFinalMessage
 msgid ""
@@ -628,10 +604,6 @@ msgstr "Dim Gwybodaeth ar Gael"
 msgid "Unable to obtain identification status for this site."
 msgstr "Methu canfod statws dynodiad ar gyfer y wefan hon."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Methodd y Cysylltu"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -640,6 +612,39 @@ msgstr "Tystysgrif yn Bodoli"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Mae'r Dystysgrif yn bodoli eisoes."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Golygu ymddiriedaeth y dystysgrif"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Defnyddio'r botwm i ailosod dewisiadau diogelwch %S i'w gosodiadau ffatri."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Nid yw Hunaniaeth y Gwefan wedi ei Wirio"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Gwiriwyd Enw'r Gwefan"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Mae'r wefan %S yn cynnal dilysiad y dudalen rydych yn ei darllen. Mae "
+#~ "hunaniaeth y wefan wedi cael ei wirio gan %S, yr awdurdod tystysgrifo a "
+#~ "medrwch ymddiried ynddo ar gyfer y pwrpas."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Edrych ar dystysgrif diogelwch sy'n gwirio hunaniaeth y wefan."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "Cyhoeddwr Anhysbys>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Methodd y Cysylltu"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

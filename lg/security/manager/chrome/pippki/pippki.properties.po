@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-07-13 10:54+0000\n"
 "Last-Translator: kasiryemartin <gittas90@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,10 +39,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Obunyiza bwa Santifikati (ttenga yongendwawo)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Longosa santifikati ekakasee"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Santifikati \"%S\" ye mubakka wo bunyiza bwa Santifikati."
@@ -177,13 +173,12 @@ msgstr "Erinya lwa Fayiro Eliterekerwako koppi"
 msgid "PKCS12 Files"
 msgstr "PKCS12 Fayiro"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Kozesa epesa lino ku nddamu %S`s ebyagalwa ebyokwerinda ku ekolero ezi "
-"teegeka."
+"Please enter the password that was used to encrypt this certificate backup."
 
 #. #Cert verification
 #: certVerified
@@ -235,27 +230,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Ekiwerendwa Wasi yo: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Obumanye bwe ekyapa tebuyinza Ku Kakasibwa"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Obumanye bwe ekyapa Bukakasiddwa"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Ekyapa %S kkiwagira ekwekakasa okw'omuko gwo labaa. Ebikwata ku muko guno "
-"bikakasiddwa %S, evunayizibbwa ku satifikati gye wekakasa kulwensoga eno."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Laba satifikati ye byokwerinda ekakasa ebikwata ku muko guno."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Eggatta nga Ttekyakalanyi"
@@ -277,11 +251,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Ekyapa kyoli mu kulaba ttekyikyakalanyi."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -321,10 +300,6 @@ msgstr "Alaba Satifikati:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Sikitundu ku Satifikati>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Atamanyidwa omuteesa>"
 
 #: escrowFinalMessage
 msgid ""
@@ -617,10 +592,6 @@ msgstr "Ttewali Amawulire agaliko"
 msgid "Unable to obtain identification status for this site."
 msgstr "Tasobonde kufuna nnakkalazzi womuko oguweredwa."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Eggata Egganye"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 #, fuzzy
@@ -630,6 +601,39 @@ msgstr "Satifikati za Fayiro"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Satifiketi obweda weli."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Longosa santifikati ekakasee"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Kozesa epesa lino ku nddamu %S`s ebyagalwa ebyokwerinda ku ekolero ezi "
+#~ "teegeka."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Obumanye bwe ekyapa tebuyinza Ku Kakasibwa"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Obumanye bwe ekyapa Bukakasiddwa"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Ekyapa %S kkiwagira ekwekakasa okw'omuko gwo labaa. Ebikwata ku muko guno "
+#~ "bikakasiddwa %S, evunayizibbwa ku satifikati gye wekakasa kulwensoga eno."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Laba satifikati ye byokwerinda ekakasa ebikwata ku muko guno."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Atamanyidwa omuteesa>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Eggata Egganye"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

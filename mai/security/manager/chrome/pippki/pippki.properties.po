@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-05-18 07:41+0000\n"
 "Last-Translator: Sangeeta <sangeeta_0975@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,10 +37,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "प्रमाणपत्र प्राधिकार (अनाम)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "प्रमाणपत्र ट्रस्ट संपादित  करू "
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "प्रमाणपत्र \"%S\" सर्टिफिकेट आथोरिटी केँ प्रतिरूपित करैत अछि."
@@ -173,12 +169,11 @@ msgstr "बैकअपक लेल फाइलनाम"
 msgid "PKCS12 Files"
 msgstr "PKCS12 फाइल"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr ""
-"ई बटन क प्रयोग %S क सुरक्षा वरीयता केँ हिनकर फैक्टरी सेटिंग मे फेर सेट करबाक लेल करू ."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "गुड़किल्ली एतए डालू जे एहि प्रमाणपत्रक गोपनक लेल प्रयुक्त होइछ."
 
 #. #Cert verification
 #: certVerified
@@ -232,27 +227,6 @@ msgid "Issued Under: \"%S\""
 msgstr "एकरा अंतर्गत निर्गत: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "वेब साइट पहचान नहि जाँचल गेल"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "वेब साइट पहचान जाँचल गेल"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"वेब साइट %S अहाँक देखल पृष्ठक लेल सत्यापनक समर्थन करैत अछि. एहि वेब साइटक पहचान केँ %S क "
-"द्वारा जांचल गेल अछि, एकटा सर्टिफिकेट आथोरिटी जकरा अहाँ एहि उद्देश्यक लेल भरोस करैत छी."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "सुरक्षा प्रमाणपत्र देखू जे एहि वेब साइटक पहचानक जाँच करैत अछि."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "कनेक्शन गोपित नहि अछि "
@@ -274,11 +248,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "अहाँक द्वारा देखल जाए रहल पृष्ठ गोपित नहि अछि."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -315,10 +294,6 @@ msgstr "प्रमाणपत्र प्रदर्शक:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<प्रमाणपत्र क हिस्सा नहि>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<अनजान निर्गतकर्ता>"
 
 #: escrowFinalMessage
 msgid ""
@@ -606,10 +581,6 @@ msgstr "कोनो सूचना उपलब्ध नहि"
 msgid "Unable to obtain identification status for this site."
 msgstr "देल साइटक लेल पहचान स्थिति पाबैमे असमर्थ."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "कनेक्शन विफल"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -618,6 +589,39 @@ msgstr "प्रमाणपत्र  मोजुद अछि "
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "प्रमाणपत्र पहिने सँ  मोजुद अछि ."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "प्रमाणपत्र ट्रस्ट संपादित  करू "
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "ई बटन क प्रयोग %S क सुरक्षा वरीयता केँ हिनकर फैक्टरी सेटिंग मे फेर सेट करबाक लेल करू ."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "वेब साइट पहचान नहि जाँचल गेल"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "वेब साइट पहचान जाँचल गेल"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "वेब साइट %S अहाँक देखल पृष्ठक लेल सत्यापनक समर्थन करैत अछि. एहि वेब साइटक पहचान केँ "
+#~ "%S क द्वारा जांचल गेल अछि, एकटा सर्टिफिकेट आथोरिटी जकरा अहाँ एहि उद्देश्यक लेल भरोस "
+#~ "करैत छी."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "सुरक्षा प्रमाणपत्र देखू जे एहि वेब साइटक पहचानक जाँच करैत अछि."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<अनजान निर्गतकर्ता>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "कनेक्शन विफल"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"

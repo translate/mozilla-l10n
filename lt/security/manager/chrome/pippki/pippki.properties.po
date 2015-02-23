@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-01-05 09:28+0000\n"
 "Last-Translator: Paulius <ekstras@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1420450104.000000\n"
@@ -41,10 +41,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Liudijimų įstaiga (pavadinimo nėra)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Pasitikėjimo liudijimu nuostatos"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Liudijimas „%S“ atstovauja liudijimų įstaigą."
@@ -181,13 +177,12 @@ msgstr "Archyvuojamo failo vardas"
 msgid "PKCS12 Files"
 msgstr "PKCS12 failai"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Jei norite atstatyti %S numatytąsias saugumo nuostatas, spustelėkite šį "
-"mygtuką."
+"Surinkite slaptažodį su kuriuo buvo užšifruota liudijimo atsarginė kopija."
 
 #. #Cert verification
 #: certVerified
@@ -241,27 +236,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Kas išdavė: %S"
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Svetainės tapatumas nepatikrintas"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Svetainės tapatumas patikrintas"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Svetainė „%S“ gali nustatyti dabar žiūrimo tinklalapio tapatybę. Svetainės "
-"tapatumą patikrino LĮ %S, kuriai esate patikėję tokius veiksmus."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Rodyti liudijimą, kuris tikrina šios svetainės tapatumą."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Ryšys nešifruotas"
@@ -281,11 +255,17 @@ msgstr "Nešifruotą informaciją siuntimo metu gali perskaityti pašaliniai."
 msgid "The page you are viewing is not encrypted."
 msgstr "Tinklalapis, kurį dabar žiūrite, yra nešifruotas."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Ryšys užšifruotas (%1$S,%2$S bitų raktai, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Ryšys užšifruotas (%1$S,%2$S bitų raktai, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -325,10 +305,6 @@ msgstr "Liudijimų žiūriklis."
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Nėra liudijimo dalis>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Nežinomas išdavėjas>"
 
 #: escrowFinalMessage
 msgid ""
@@ -625,10 +601,6 @@ msgstr "Nėra duomenų"
 msgid "Unable to obtain identification status for this site."
 msgstr "Nepavyko sužinoti šios svetainės tapatybės duomenų."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Nepavyko prisijungti"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -637,6 +609,39 @@ msgstr "Liudijimas jau yra"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Toks liudijimas jau yra."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Pasitikėjimo liudijimu nuostatos"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Jei norite atstatyti %S numatytąsias saugumo nuostatas, spustelėkite šį "
+#~ "mygtuką."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Svetainės tapatumas nepatikrintas"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Svetainės tapatumas patikrintas"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Svetainė „%S“ gali nustatyti dabar žiūrimo tinklalapio tapatybę. "
+#~ "Svetainės tapatumą patikrino LĮ %S, kuriai esate patikėję tokius veiksmus."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Rodyti liudijimą, kuris tikrina šios svetainės tapatumą."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Nežinomas išdavėjas>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Nepavyko prisijungti"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "Šifruotas ryšys: aukšto lygio šifravimas (%1$S, %2$S bitų raktas)"

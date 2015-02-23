@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-08-25 06:51+0000\n"
 "Last-Translator: Tsolmonkhuu <alex_tsolmoo@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Гэрчилгээний эрх (нэргүй)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Гэрчилгээнд итгэх тохиргоог засварла"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "\"%S\" гэрчилгээ нь Гэрчилгээний эрхийг дахин харуулж байна."
@@ -180,13 +176,12 @@ msgstr "Нөөцлөх файлын нэр"
 msgid "PKCS12 Files"
 msgstr "PKCS12 файл"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"%S-н нууцлалын тохиргоог үйлдвэрийнх нь тохиргоонд шинэчлэхдээ энэ товчийг "
-"хэрэглэ."
+"Энэ гэрчилгээний нөөцийг нууцлахад хэрэглэж байсан нууц үгийг оруулна уу."
 
 #. #Cert verification
 #: certVerified
@@ -241,31 +236,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Зохиосон: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-#, fuzzy
-msgid "Website Identity Not Verified"
-msgstr "Вэб хуудасны таних нэр шалгагдаагүй"
-
-#: pageInfo_WebSiteVerified
-#, fuzzy
-msgid "Website Identity Verified"
-msgstr "Вэб хуудасны таних нэр шалгагдсан"
-
-#: pageInfo_Identity_Verified
-#, fuzzy
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Таны харж буй энэ %S хуудас нь таних үйлдэл хийдэг хуудас байна. %S-р энэ "
-"хуудсыг танисан ба, энэ зорилгоор гэрчилгээний эрхэнд та итгэсэн."
-
-#: pageInfo_ViewCertificate
-#, fuzzy
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Энэ хуудсыг шалгах нууцлалын гэрчилгээг харах"
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Холболт нууцлалын хувиргалт хийгдээгүй байна"
@@ -288,11 +258,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Таны үзэж буй хуудас нууцлалын хувиргуур хийгдээгүй."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -332,10 +307,6 @@ msgstr "Гэрчилгээ харагч:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Гэрчилгээний хэсэг биш>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Үл мэдэгдэх зохиогч>"
 
 #: escrowFinalMessage
 msgid ""
@@ -628,10 +599,6 @@ msgstr "Ямар ч мэдээлэл алга байна"
 msgid "Unable to obtain identification status for this site."
 msgstr "Өгөгдсөн хуудсанд таних нэрийн төлвийг авах боломжгүй байна."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "Холболтын алдаа"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 #, fuzzy
@@ -641,6 +608,43 @@ msgstr "Гэрчилгээ файл"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Гэрчилгээ өмнө нь байна"
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Гэрчилгээнд итгэх тохиргоог засварла"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "%S-н нууцлалын тохиргоог үйлдвэрийнх нь тохиргоонд шинэчлэхдээ энэ "
+#~ "товчийг хэрэглэ."
+
+#, fuzzy
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Вэб хуудасны таних нэр шалгагдаагүй"
+
+#, fuzzy
+#~ msgid "Website Identity Verified"
+#~ msgstr "Вэб хуудасны таних нэр шалгагдсан"
+
+#, fuzzy
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Таны харж буй энэ %S хуудас нь таних үйлдэл хийдэг хуудас байна. %S-р энэ "
+#~ "хуудсыг танисан ба, энэ зорилгоор гэрчилгээний эрхэнд та итгэсэн."
+
+#, fuzzy
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Энэ хуудсыг шалгах нууцлалын гэрчилгээг харах"
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Үл мэдэгдэх зохиогч>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "Холболтын алдаа"
 
 #, fuzzy
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pippki\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-12-12 08:58+0000\n"
 "Last-Translator: Abduqadir Abliz <sahran.ug@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -39,10 +39,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "گۇۋاھنامە ئورگىنى (نامسىز)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "گۇۋاھنامە ئىشەنچىسىنى تەھرىرلەش"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "بۇ \"%S\" گۇۋاھنامە گۇۋاھنامە ئىجازىتىگە ۋەكىللىك قىلىدۇ."
@@ -180,12 +176,11 @@ msgstr "زاپاسلايدىغان ھۆججەت نامى"
 msgid "PKCS12 Files"
 msgstr "PKCS12 ھۆججەت"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr ""
-"بۇ كۇنۇپكا ئىشلىتىلسە %S نىڭ بىخەتەرلىك مايىللىقى دەسلەپكى تەڭشەككە قايتىدۇ."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "بۇ گۇۋاھنامىنى شىفىرلاپ زاپاسلاش ئۈچۈن ئىم كىرگۈزۈڭ."
 
 #. #Cert verification
 #: certVerified
@@ -239,27 +234,6 @@ msgid "Issued Under: \"%S\""
 msgstr "\"%S\"تارقاتقۇچى:"
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Web Site Identity Not Verified"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "تور بېكەت بەلگىسى دەلىللەنگەن."
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"بۇ تور بېكەت %S سىز كۆرۈۋاتقان بەتنى شىفىرلاشنى قوللايدۇ. بۇ بېكەتنىڭ "
-"بەلگىسى %S تەرىپىدىن جەزملەندى، ئۇ سىز ئىشىنىدىغان گۇۋاھنامە ئىجازىتى."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "بۇ بېكەتنىڭ بەلگىسىنى دەلىللەيدىغان بىخەتەرلىك گۇۋاھنامىسىنى كۆرسەت."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "ئۇلىنىش شىفىرلانمىغان"
@@ -281,11 +255,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "سىز كۆرۈۋاتقان بەت شىفىرلانمىغان."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -323,10 +302,6 @@ msgstr "گۇۋاھنامە كۆرگۈچ:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<گۇۋاھنامە پارچىسى ئەمەس>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<نامەلۇم تارقاتقۇچى>"
 
 #: escrowFinalMessage
 msgid ""
@@ -618,10 +593,6 @@ msgstr "ئىشلىتىشكە بولىدىغان ئۇچۇر يوق"
 msgid "Unable to obtain identification status for this site."
 msgstr "بېرىلگەن بېكەتنىڭ بەلگە ھالىتىگە ئېرىشكىلى بولمىدى"
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "ئۇلىنىش مەغلۇپ بولدى"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -630,6 +601,40 @@ msgstr "گۇۋاھنامە مەۋجۇد"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "بۇ گۇۋاھنامە مەۋجۇد"
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "گۇۋاھنامە ئىشەنچىسىنى تەھرىرلەش"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "بۇ كۇنۇپكا ئىشلىتىلسە %S نىڭ بىخەتەرلىك مايىللىقى دەسلەپكى تەڭشەككە "
+#~ "قايتىدۇ."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Web Site Identity Not Verified"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "تور بېكەت بەلگىسى دەلىللەنگەن."
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "بۇ تور بېكەت %S سىز كۆرۈۋاتقان بەتنى شىفىرلاشنى قوللايدۇ. بۇ بېكەتنىڭ "
+#~ "بەلگىسى %S تەرىپىدىن جەزملەندى، ئۇ سىز ئىشىنىدىغان گۇۋاھنامە ئىجازىتى."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "بۇ بېكەتنىڭ بەلگىسىنى دەلىللەيدىغان بىخەتەرلىك گۇۋاھنامىسىنى كۆرسەت."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<نامەلۇم تارقاتقۇچى>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "ئۇلىنىش مەغلۇپ بولدى"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "ئۇلىنىش شىفىرلانغان: ئالىي دەرىجىلىك شىفىرلاش (%1$S, %2$S bit keys)"

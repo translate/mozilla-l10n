@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-04-27 02:05+0000\n"
 "Last-Translator: Jean Came <jcpoulard@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,10 +37,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr ""
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Modifye sètifika konfyans"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr ""
@@ -162,11 +158,11 @@ msgstr "Non Fichye pou Bakòp"
 msgid "PKCS12 Files"
 msgstr "Fichye PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr ""
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "Tanpri antre modpas ki itilize pou kripte sètifika bakòp sa a."
 
 #. #Cert verification
 #: certVerified
@@ -218,27 +214,6 @@ msgid "Issued Under: \"%S\""
 msgstr ""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "Idantite Sit Wèb Pa Verifye"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "Idantite Sit Wèb la Verifye"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Sit wèb %S sipòte idantifikasyon pou paj ou ap afiche a. Idantite sit wèb la "
-"te verifye pa %S, yon sètifika te yon otorite ou fè konfyans pou zafè sa a."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "Afiche sètifika sekirite ki verifye idantite sit wèb sa a."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr ""
@@ -258,11 +233,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr ""
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -296,10 +276,6 @@ msgstr "Siyatè Sètifika"
 
 #: notPresent
 msgid "<Not Part Of Certificate>"
-msgstr ""
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
 msgstr ""
 
 #: escrowFinalMessage
@@ -582,10 +558,6 @@ msgstr "Pa gen enfòmsyon disponib"
 msgid "Unable to obtain identification status for this site."
 msgstr ""
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr ""
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 #, fuzzy
@@ -595,6 +567,27 @@ msgstr "Chan Sèti&fika"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Sètifika a egziste deja."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Modifye sètifika konfyans"
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Idantite Sit Wèb Pa Verifye"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "Idantite Sit Wèb la Verifye"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "Sit wèb %S sipòte idantifikasyon pou paj ou ap afiche a. Idantite sit wèb "
+#~ "la te verifye pa %S, yon sètifika te yon otorite ou fè konfyans pou zafè "
+#~ "sa a."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "Afiche sètifika sekirite ki verifye idantite sit wèb sa a."
 
 #, fuzzy
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"

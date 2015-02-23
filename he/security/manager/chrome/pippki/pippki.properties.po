@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,10 +36,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "רשות אישורים (ללא שם)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "ערוך אמון באישור"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "האישור \"%S\" מייצג רשות אישורים."
@@ -171,11 +167,11 @@ msgstr "שם קובץ לגיבוי"
 msgid "PKCS12 Files"
 msgstr "קובצי PKCS12"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr "השתמש בכפתור זה כדי לאפס את העדפות האבטחה של %S להגדרות המקוריות."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "אנא הכנס את הססמה ששימשה להצפנת גיבוי אישור זה."
 
 #. #Cert verification
 #: certVerified
@@ -229,27 +225,6 @@ msgid "Issued Under: \"%S\""
 msgstr "הונפק תחת: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "זהות אתר לא אומתה"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "זהות אתר אומתה"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"האתר %S תומך בבדיקת מהימנות עבור הדף בו אתה צופה. זהות אתר זה אומתה על־ידי "
-"%S, רשות אישורים בה אתה נותן אמון למטרה זו."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "הצג את אישור האבטחה המאמת את זהות אתר זה."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "חיבור לא מוצפן"
@@ -271,11 +246,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "הדף בו אתה צופה אינו מוצפן."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -312,10 +292,6 @@ msgstr "מציג האישורים:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<לא חלק מהאישור>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<מנפיק לא מוכר>"
 
 #: escrowFinalMessage
 msgid ""
@@ -600,10 +576,6 @@ msgstr "אין מידע זמין"
 msgid "Unable to obtain identification status for this site."
 msgstr "לא ניתן לקבל מצב זהות עבור האתר שסופק."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "ההתחברות נכשלה"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 #, fuzzy
@@ -613,6 +585,37 @@ msgstr "קובצי אישורים"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr ""
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "ערוך אמון באישור"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr "השתמש בכפתור זה כדי לאפס את העדפות האבטחה של %S להגדרות המקוריות."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "זהות אתר לא אומתה"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "זהות אתר אומתה"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "האתר %S תומך בבדיקת מהימנות עבור הדף בו אתה צופה. זהות אתר זה אומתה על־"
+#~ "ידי %S, רשות אישורים בה אתה נותן אמון למטרה זו."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "הצג את אישור האבטחה המאמת את זהות אתר זה."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<מנפיק לא מוכר>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "ההתחברות נכשלה"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "חיבור מוצפן: הצפנה ברמה גבוהה (%1$S, מפתחות של %2$S סיביות)"

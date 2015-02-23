@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,10 +36,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "ପ୍ରମାଣପତ୍ର ଅଧିକାରୀ (ବେନାମୀ)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "ପ୍ରମାଣପତ୍ର ବିଶ୍ୱାସକୁ ସମ୍ପାଦନ କରନ୍ତୁ"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "ପ୍ରମାଣପତ୍ର \"%S\" ଗୋଟିଏ ପ୍ରମାଣପତ୍ର ଅଧିକାରୀକୁ ପ୍ରତିନିଧିତ୍ୱ କରୁଛି."
@@ -173,12 +169,12 @@ msgstr "ନକଲ ସଂରକ୍ଷଣ ପାଇଁ ଫାଇଲ ନାମ"
 msgid "PKCS12 Files"
 msgstr "PKCS12 ଫାଇଲଗୁଡ଼ିକ"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"%Sର ସୁରକ୍ଷା ପସନ୍ଦଗୁଡ଼ିକୁ ତାହାର କାରଖାନା ବିନ୍ୟାସରେ ପୁନର୍ବିନ୍ୟାସ କରିବା ପାଇଁ ଏହି ବଟନକୁ ବ୍ୟବହାର "
+"ଏହି ପ୍ରମାଣପତ୍ର ନକଲ ସଂରକ୍ଷଣକୁ ସଂଗୁପ୍ତ କରିବାରେ ବ୍ୟବହୃତ ହୋଇଥିବା ପ୍ରବେଶ ସଂକେତକୁ ଦୟାକରି ଭରଣ "
 "କରନ୍ତୁ."
 
 #. #Cert verification
@@ -233,28 +229,6 @@ msgid "Issued Under: \"%S\""
 msgstr "ଦିଆଯାଇଛି: \"%S\"ଅନ୍ତର୍ଗତରେ "
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "ୱେବ ସାଇଟ ପରିଚୟ ଯାଞ୍ଚ କରାଯାଇନାହିଁ"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "ୱେବ ସାଇଟ ପରିଚୟ ଯାଞ୍ଚ କରାଯାଇଛି"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"ୱେବ ସାଇଟ %S ଆପଣ ଦେଖୁଥିବା ପୃଷ୍ଠା ପାଇଁ ବୈଧିକରଣକୁ ସମର୍ଥନ କରେ. ଏହି ୱେବ ସାଇଟର ପରିଚୟ %S "
-"ଦ୍ୱାରା ଯାଞ୍ଚ କରାଯାଇଛି, ଏହା ଗୋଟିଏ ପ୍ରମାଣପତ୍ର ଅଧିକାରୀ ଯାହାକୁ ଆପଣ ଏହି ଉଦ୍ଦେଶ୍ୟ ପାଇଁ ଭରଷା "
-"କରନ୍ତି."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "ଏହି ୱେବ ସାଇଟର ପରିଚୟ ଯାଞ୍ଚ କରୁଥିବା ସୁରକ୍ଷା ପ୍ରମାଣପତ୍ରକୁ ଦେଖନ୍ତୁ."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "ସଂଯୋଗଟି ସଂଗୁପ୍ତ ନୁହଁ"
@@ -274,11 +248,16 @@ msgstr "ଇଣ୍ଟରନେଟରେ ସଂଗୁପ୍ତ ବିନା ପଠ
 msgid "The page you are viewing is not encrypted."
 msgstr "ଆପଣ ଦେଖୁଥିବା ପୃଷ୍ଠାଟି ସଂଗୁପ୍ତ ନୁହଁ."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -316,10 +295,6 @@ msgstr "ପ୍ରମାଣପତ୍ର ଦର୍ଶକ:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<ପ୍ରମାଣପତ୍ରର ଅଂଶ ନୁହଁ>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<ଅଜଣା ଦାତା>"
 
 #: escrowFinalMessage
 msgid ""
@@ -610,10 +585,6 @@ msgstr "କୌଣସି ସୂଚନା ଉପଲବ୍ଧ ନାହିଁ"
 msgid "Unable to obtain identification status for this site."
 msgstr "ପ୍ରଦତ୍ତ ସାଇଟ ପାଇଁ ପରିଚୟ ସ୍ଥିତି ପ୍ରାପ୍ତ କରିବାରେ ଅସମର୍ଥ."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "ସଂଯୋଗ ବିଫଳ"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -622,6 +593,40 @@ msgstr "ପ୍ରମାଣପତ୍ର ଅଛି"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "ପ୍ରମାଣପତ୍ର ପୂର୍ବରୁ ଅଛି।"
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "ପ୍ରମାଣପତ୍ର ବିଶ୍ୱାସକୁ ସମ୍ପାଦନ କରନ୍ତୁ"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "%Sର ସୁରକ୍ଷା ପସନ୍ଦଗୁଡ଼ିକୁ ତାହାର କାରଖାନା ବିନ୍ୟାସରେ ପୁନର୍ବିନ୍ୟାସ କରିବା ପାଇଁ ଏହି ବଟନକୁ ବ୍ୟବହାର "
+#~ "କରନ୍ତୁ."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "ୱେବ ସାଇଟ ପରିଚୟ ଯାଞ୍ଚ କରାଯାଇନାହିଁ"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "ୱେବ ସାଇଟ ପରିଚୟ ଯାଞ୍ଚ କରାଯାଇଛି"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "ୱେବ ସାଇଟ %S ଆପଣ ଦେଖୁଥିବା ପୃଷ୍ଠା ପାଇଁ ବୈଧିକରଣକୁ ସମର୍ଥନ କରେ. ଏହି ୱେବ ସାଇଟର ପରିଚୟ %S "
+#~ "ଦ୍ୱାରା ଯାଞ୍ଚ କରାଯାଇଛି, ଏହା ଗୋଟିଏ ପ୍ରମାଣପତ୍ର ଅଧିକାରୀ ଯାହାକୁ ଆପଣ ଏହି ଉଦ୍ଦେଶ୍ୟ ପାଇଁ ଭରଷା "
+#~ "କରନ୍ତି."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "ଏହି ୱେବ ସାଇଟର ପରିଚୟ ଯାଞ୍ଚ କରୁଥିବା ସୁରକ୍ଷା ପ୍ରମାଣପତ୍ରକୁ ଦେଖନ୍ତୁ."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<ଅଜଣା ଦାତା>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "ସଂଯୋଗ ବିଫଳ"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "ସଂଯୋଗଟି ସଂଗୁପ୍ତ ହୋଇଛି: ଉଚ୍ଚ-ସ୍ତରୀୟ ସଂଗୁପ୍ତ (%1$S, %2$S ବିଟ କିଗୁଡ଼ିକ)"

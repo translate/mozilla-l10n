@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2015-01-19 00:32+0000\n"
 "Last-Translator: Gayan <gkgkalhara@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1421627524.000000\n"
@@ -38,10 +38,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "සහතික අධිකාරිය (නිර්ණාමික)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "සහතිකය සංස්කරණය කරන්න"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "\"%S\" සහතිකය සහතික අධිකාරිය නියෝජය කරයි."
@@ -174,11 +170,11 @@ msgstr "රක්‍ෂිත ගොනු නාමය"
 msgid "PKCS12 Files"
 msgstr "PKCS12 ගොනු"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr "%S හි ආරක්‍ෂක අභිප්‍රේත එහි නිපැයුම් සැකසුම් වලට සැකසීමට මෙම බොත්තම භාවිත කරන්න."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "කරුණාකර බැකප් සහතිකය සංකේතාකනයට අවශ්‍ය රහස්පදය ඇතුළත් කරන්න."
 
 #. #Cert verification
 #: certVerified
@@ -232,27 +228,6 @@ msgid "Issued Under: \"%S\""
 msgstr "නිකුත් කළේ: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "වෙබ් අඩවියේ හදුනා ගැනීම සත්‍යපානය කර නැත"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "වෙබ් අඩවියේ හදුනා ගැනීම සත්‍යපානය කර ඇත"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"%S වෙබ් අඩවිය ඔබ නරඹමින් සිටින පිටුවේ සත්‍යාපනයට සහාය දක්වයි. මෙම අඩවියේ සත්‍යතාවය ඔබ විශ්වාස "
-"කරන සහතික අධිකාරියක් වන %S මගින් තහවුරු කරන ලදි."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "මෙම වෙබ් අඩවියේ හදුනාගැනීම සත්‍යාපනය කරන ආරක්‍ෂක සහතිකය බලන්න."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "සම්බන්ධතාවය සංකේතාංකනය කර නැත"
@@ -273,11 +248,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "ඔබ පිරික්සන පිටුව සංකේතාංකනය කර නැත."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "සම්බන්ධතාවය සංකේතාංකනයකර අැත(%1$S, %2$S bit keys, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "සම්බන්ධතාවය සංකේතාංකනයකර අැත(%1$S, %2$S bit keys, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -315,10 +296,6 @@ msgstr "සහතික දර්ශනය:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<සහතිකයේ කොටසක් නොවේ>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<නොදන්නා නිකුත් කිරීමක්>"
 
 #: escrowFinalMessage
 msgid ""
@@ -607,10 +584,6 @@ msgstr "තොරතුරු නැත"
 msgid "Unable to obtain identification status for this site."
 msgstr "ලබා දුන් අඩවිය සඳහා හදුනා ගැනිමේ තත්ත්වය ලබා ගත නොහැකි විය."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "සම්බන්ධතාවය බිදවැටින"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -619,6 +592,37 @@ msgstr "සහතිකය පිටවේ"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "සහතිකය දැනටමත් පවතී."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "සහතිකය සංස්කරණය කරන්න"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr "%S හි ආරක්‍ෂක අභිප්‍රේත එහි නිපැයුම් සැකසුම් වලට සැකසීමට මෙම බොත්තම භාවිත කරන්න."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "වෙබ් අඩවියේ හදුනා ගැනීම සත්‍යපානය කර නැත"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "වෙබ් අඩවියේ හදුනා ගැනීම සත්‍යපානය කර ඇත"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "%S වෙබ් අඩවිය ඔබ නරඹමින් සිටින පිටුවේ සත්‍යාපනයට සහාය දක්වයි. මෙම අඩවියේ සත්‍යතාවය ඔබ "
+#~ "විශ්වාස කරන සහතික අධිකාරියක් වන %S මගින් තහවුරු කරන ලදි."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "මෙම වෙබ් අඩවියේ හදුනාගැනීම සත්‍යාපනය කරන ආරක්‍ෂක සහතිකය බලන්න."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<නොදන්නා නිකුත් කිරීමක්>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "සම්බන්ධතාවය බිදවැටින"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"

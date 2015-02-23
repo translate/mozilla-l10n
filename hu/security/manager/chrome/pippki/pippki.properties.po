@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2014-12-28 21:26+0000\n"
 "Last-Translator: Gabor <kelemeng@ubuntu.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1419801962.000000\n"
@@ -40,10 +40,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Hitelesítésszolgáltató (névtelen)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Tanúsítvány-bizalom szerkesztése"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "A(z) „%S” tanúsítvány egy hitelesítésszolgáltatót reprezentál."
@@ -179,13 +175,13 @@ msgstr "Elmentendő fájl neve"
 msgid "PKCS12 Files"
 msgstr "PKCS12-fájlok"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"A gomb alkalmazásával %S biztonsági beállításai a gyári alapértékekre állnak "
-"vissza."
+"Adja meg a jelszót, amelyet ennek a tanúsítványokról készült biztonsági "
+"mentésnek a titkosításához használt."
 
 #. #Cert verification
 #: certVerified
@@ -242,28 +238,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Kibocsátó: „%S”"
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "A webhely hitelessége ellenőrizetlen"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "A webhely hitelessége ellenőrizve"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"A(z) %S webhely támogatja az éppen megtekintett oldal hitelesítését. Az "
-"oldal hitelességét egy megbízhatónak jelölt hitelesítésszolgáltató (%S) "
-"ellenőrizte."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "A weboldal hitelességi tanúsítványának megnézése."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "A kapcsolat nincs titkosítva"
@@ -285,11 +259,17 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "A megjelenített oldal nincsen titkosítva."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr "Kapcsolat titkosítva (%1$S, %2$S bites kulcsok, %3$S)"
+
+#: pageInfo_BrokenEncryption
+#, fuzzy
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr "Kapcsolat titkosítva (%1$S, %2$S bites kulcsok, %3$S)"
 
 #: pageInfo_Privacy_Encrypted1
@@ -329,10 +309,6 @@ msgstr "Tanúsítványmegjelenítő:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Nem része a tanúsítványnak>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Ismeretlen kibocsátó>"
 
 #: escrowFinalMessage
 msgid ""
@@ -626,10 +602,6 @@ msgstr "Nem áll rendelkezésre információ"
 msgid "Unable to obtain identification status for this site."
 msgstr "Nem lehet a webhely azonosítási állapotát lekérdezni."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "A kapcsolat sikertelen"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -638,6 +610,40 @@ msgstr "A tanúsítvány létezik"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "Már létezik ez a tanúsítvány."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Tanúsítvány-bizalom szerkesztése"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "A gomb alkalmazásával %S biztonsági beállításai a gyári alapértékekre "
+#~ "állnak vissza."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "A webhely hitelessége ellenőrizetlen"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "A webhely hitelessége ellenőrizve"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "A(z) %S webhely támogatja az éppen megtekintett oldal hitelesítését. Az "
+#~ "oldal hitelességét egy megbízhatónak jelölt hitelesítésszolgáltató (%S) "
+#~ "ellenőrizte."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "A weboldal hitelességi tanúsítványának megnézése."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Ismeretlen kibocsátó>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "A kapcsolat sikertelen"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr ""

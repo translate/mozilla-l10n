@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-02-20 02:18+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,11 +42,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "Certificate Authority (unnamed)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-#, fuzzy
-msgid "Edit certificate trust"
-msgstr "Edit certificate trust"
-
 #: editTrustCA
 #, fuzzy
 msgid "The certificate \"%S\" represents a Certificate Authority."
@@ -200,13 +195,10 @@ msgstr "File Name to Backup"
 msgid "PKCS12 Files"
 msgstr "PKCS12 Files"
 
-#. #Preferences
-#: resetPreferences
-#, fuzzy
+#: getPKCS12FilePasswordMessage
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Use this button to reset %S's security preferences to their factory settings."
 
 #. #Cert verification
 #: certVerified
@@ -269,32 +261,6 @@ msgid "Issued Under: \"%S\""
 msgstr "Issued Under: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-#, fuzzy
-msgid "Website Identity Not Verified"
-msgstr "Web Site Identity Not Verified"
-
-#: pageInfo_WebSiteVerified
-#, fuzzy
-msgid "Website Identity Verified"
-msgstr "Web Site Identity Verified"
-
-#: pageInfo_Identity_Verified
-#, fuzzy
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"The web site %S supports authentication for the page you are viewing. The "
-"identity of this web site has been verified by %S, a certificate authority "
-"you trust for this purpose."
-
-#: pageInfo_ViewCertificate
-#, fuzzy
-msgid "View the security certificate that verifies this website's identity."
-msgstr "View the security certificate that verifies this web site's identity."
-
 #: pageInfo_NoEncryption
 #, fuzzy
 msgid "Connection Not Encrypted"
@@ -321,11 +287,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "The page you are viewing is not encrypted."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -369,11 +340,6 @@ msgstr "Certificate Viewer:"
 #, fuzzy
 msgid "<Not Part Of Certificate>"
 msgstr "<Not Part Of Certificate>"
-
-#: unknownIssuer
-#, fuzzy
-msgid "<Unknown Issuer>"
-msgstr "<Unknown Issuer>"
 
 #: escrowFinalMessage
 #, fuzzy
@@ -719,11 +685,6 @@ msgstr "No Information Available"
 msgid "Unable to obtain identification status for this site."
 msgstr "Unable to obtain identification status for the given site."
 
-#: addExceptionConnectionFailed
-#, fuzzy
-msgid "Connection Failed"
-msgstr "Connection Failed"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 #, fuzzy
@@ -733,6 +694,49 @@ msgstr "Certificate Files"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr ""
+
+#, fuzzy
+#~ msgid "Edit certificate trust"
+#~ msgstr "Edit certificate trust"
+
+#, fuzzy
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+
+#, fuzzy
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "Web Site Identity Not Verified"
+
+#, fuzzy
+#~ msgid "Website Identity Verified"
+#~ msgstr "Web Site Identity Verified"
+
+#, fuzzy
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "The web site %S supports authentication for the page you are viewing. The "
+#~ "identity of this web site has been verified by %S, a certificate "
+#~ "authority you trust for this purpose."
+
+#, fuzzy
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr ""
+#~ "View the security certificate that verifies this web site's identity."
+
+#, fuzzy
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Unknown Issuer>"
+
+#, fuzzy
+#~ msgid "Connection Failed"
+#~ msgstr "Connection Failed"
 
 #, fuzzy
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"

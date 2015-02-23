@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-28 16:18+0000\n"
+"POT-Creation-Date: 2015-02-23 18:16+0000\n"
 "PO-Revision-Date: 2013-12-02 20:32+0630\n"
 "Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <kde-i18n-doc@kde.org>\n"
@@ -39,10 +39,6 @@ msgid "Certificate Authority (unnamed)"
 msgstr "ధృవీకరణపత్రం  అధారిటీ (నామములేని)"
 
 #. #For editing cert trust
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "ధృవీకరణపత్రం  నమ్మకంను  సరిచేయి"
-
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "ధృవీకరణపత్రం\"%S\" ధృవీకరణపత్రం అధారిటీని  తెలియజేస్తుంది."
@@ -176,12 +172,11 @@ msgstr "బ్యాక్అప్  తీయుటకు  ఫైల్ నా�
 msgid "PKCS12 Files"
 msgstr "PKCS12 ఫైళ్ళు"
 
-#. #Preferences
-#: resetPreferences
+#: getPKCS12FilePasswordMessage
+#, fuzzy
 msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr ""
-"%S యొక్క  భద్రతా  అభీష్టాలను  వాటిఫ్యాక్టరీ అమరికలకు  తిరిగివుంచుటకు  ఈ  బటన్‌ను  వుపయోగించుము."
+"Please enter the password that was used to encrypt this certificate backup:"
+msgstr "ఈ  ధృవీకరణపత్రం  బ్యాక్అప్‌ను  ఎన్క్రిప్ట్  చేయుటకు  ఉపయోగించిన  సంకేతపదాన్ని  ప్రవేశపెట్టండి."
 
 #. #Cert verification
 #: certVerified
@@ -235,28 +230,6 @@ msgid "Issued Under: \"%S\""
 msgstr "దీనికింద  ఇష్యూచేయబడింది: \"%S\""
 
 #. #Page Info
-#: pageInfo_SiteNotVerified
-msgid "Website Identity Not Verified"
-msgstr "వెబ్ సైటు  గుర్తింపు  నిర్ధారించబడలేదు"
-
-#: pageInfo_WebSiteVerified
-msgid "Website Identity Verified"
-msgstr "వెబ్ సైటు  గుర్తింపు  నిర్ధారించబడింది"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The website %S supports authentication for the page you are viewing. The "
-"identity of this website has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"The web site వెబ్ సైటు  %S మీరు  చూస్తున్నటువంటి  పేజీకి  ఆధెంటికేషన్  మద్దతునిస్తోంది.వెబ్ సైటు "
-"యొక్క  గుర్తుంపు   %Sచేత  నిర్ధారించబడింది,ఈ  ప్రయోజనం  కొరకు  మీరు  నమ్మాల్సిన  ధృవీకరణపత్ర  "
-"ఆధారిటీ."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this website's identity."
-msgstr "ఈ  వెబ్ సైటు  గుర్తింపును  నిర్దారిస్తున్నటువంటి  భద్రతా  ధృవీకరణపత్రాన్ని  దర్శించండి."
-
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "అనుసంధానం  ఎన్క్రిప్టుచేయబడలేదు"
@@ -278,11 +251,16 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "మీరు  చూస్తున్నటువంటి  పేజీ ఎన్క్రిప్ట్  చేయబడిందికాదు."
 
-#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol): %1$S is the name of the encryption standard,
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
 #. # %2$S is the key size of the cipher.
 #. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
 #: pageInfo_EncryptionWithBitsAndProtocol
 msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
 
 #: pageInfo_Privacy_Encrypted1
@@ -320,10 +298,6 @@ msgstr "ధృవీకరణపత్రం  దర్శని:"
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<ధృవీకరణపత్రం  యొక్క  భాగముకాదు>"
-
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<తెలియని  ఇష్యూయర్>"
 
 #: escrowFinalMessage
 msgid ""
@@ -612,10 +586,6 @@ msgstr "ఏ సమాచారం అందుబాటులోలేదు."
 msgid "Unable to obtain identification status for this site."
 msgstr "ఇచ్చిన సైటుకు గుర్తింపు స్థితిని పొందలేదు."
 
-#: addExceptionConnectionFailed
-msgid "Connection Failed"
-msgstr "అనుసంధానం విఫలమైంది"
-
 #. #Certificate Exists in database
 #: caCertExistsTitle
 msgid "Certificate Exists"
@@ -624,6 +594,39 @@ msgstr "ధృవీకరణపత్రం వుంది"
 #: caCertExistsMessage
 msgid "The Certificate already exists."
 msgstr "ధృవీకరణపత్రం  ఇప్పటికే  వుంది."
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "ధృవీకరణపత్రం  నమ్మకంను  సరిచేయి"
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "%S యొక్క  భద్రతా  అభీష్టాలను  వాటిఫ్యాక్టరీ అమరికలకు  తిరిగివుంచుటకు  ఈ  బటన్‌ను  వుపయోగించుము."
+
+#~ msgid "Website Identity Not Verified"
+#~ msgstr "వెబ్ సైటు  గుర్తింపు  నిర్ధారించబడలేదు"
+
+#~ msgid "Website Identity Verified"
+#~ msgstr "వెబ్ సైటు  గుర్తింపు  నిర్ధారించబడింది"
+
+#~ msgid ""
+#~ "The website %S supports authentication for the page you are viewing. The "
+#~ "identity of this website has been verified by %S, a certificate authority "
+#~ "you trust for this purpose."
+#~ msgstr ""
+#~ "The web site వెబ్ సైటు  %S మీరు  చూస్తున్నటువంటి  పేజీకి  ఆధెంటికేషన్  మద్దతునిస్తోంది.వెబ్ "
+#~ "సైటు యొక్క  గుర్తుంపు   %Sచేత  నిర్ధారించబడింది,ఈ  ప్రయోజనం  కొరకు  మీరు  నమ్మాల్సిన  "
+#~ "ధృవీకరణపత్ర  ఆధారిటీ."
+
+#~ msgid "View the security certificate that verifies this website's identity."
+#~ msgstr "ఈ  వెబ్ సైటు  గుర్తింపును  నిర్దారిస్తున్నటువంటి  భద్రతా  ధృవీకరణపత్రాన్ని  దర్శించండి."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<తెలియని  ఇష్యూయర్>"
+
+#~ msgid "Connection Failed"
+#~ msgstr "అనుసంధానం విఫలమైంది"
 
 #~ msgid "Connection Encrypted: High-grade Encryption (%1$S, %2$S bit keys)"
 #~ msgstr "అనుసంధానం  ఎన్క్రిప్టుచేయబడింది:ఎక్కువ-గ్రేడ్  ఎన్క్రిప్షన్ (%1$S, %2$S bit keys)"
