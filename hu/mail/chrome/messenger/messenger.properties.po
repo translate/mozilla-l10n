@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 15:54+0000\n"
+"POT-Creation-Date: 2015-02-24 01:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -323,6 +323,12 @@ msgstr ""
 "Ellenőrizze, hogy van-e elég hely a lemezen, és van-e joga írni a "
 "fájlrendszerre. Ezután próbálja újra."
 
+#: compactFolderInsufficientSpace
+msgid ""
+"Some folders (e.g. '%S') cannot be compacted because there is not enough "
+"free disk space. Please delete some files and try again."
+msgstr ""
+
 #: filterFolderHdrAddFailed
 msgid ""
 "The messages could not be filtered to folder '%S' because adding a message "
@@ -404,6 +410,15 @@ msgstr ""
 "A(z) %S mappa megtelt, nem lehet több üzenetet beletenni. Törölje a régi "
 "vagy feleslegessé vált leveleit, és tömörítse a mappát, hogy legyen hely az "
 "új üzeneteknek."
+
+#: outOfDiskSpace
+msgid ""
+"There is not enough disk space to download new messages. Try deleting old "
+"mail, emptying the Trash folder, and compacting your mail folders, and then "
+"try again."
+msgstr ""
+"Nincs elég hely a lemezen az új levelek letöltéséhez. Töröljön régi "
+"leveleket vagy ürítse ki a Törölt elemek mappát, hogy több helyet nyerjen."
 
 #: errorGettingDB
 msgid ""
@@ -510,6 +525,10 @@ msgstr "TLS-tanúsítvány"
 msgid "NTLM"
 msgstr "NTLM"
 
+#: authOAuth2
+msgid "OAuth2"
+msgstr ""
+
 #: authAnySecure
 msgid "Any secure method (deprecated)"
 msgstr "Bármilyen biztonságos módszer (elavult)"
@@ -517,6 +536,14 @@ msgstr "Bármilyen biztonságos módszer (elavult)"
 #: authAny
 msgid "Any method (insecure)"
 msgstr "Bármilyen módszer (nem biztonságos)"
+
+#. # OAuth2 window title
+#. # LOCALIZATION NOTE(oauth2WindowTitle):
+#. # %1$S is the username (or full email address) used for authentication.
+#. # %2$S is the hostname of the account being authenticated.
+#: oauth2WindowTitle
+msgid "Enter credentials for %1$S on %2$S"
+msgstr ""
 
 #. # LOCALIZATION NOTE(serverType-nntp): Do not translate "NNTP" in the line below
 #: serverType-nntp
@@ -1358,6 +1385,32 @@ msgstr "%.*f MB"
 msgid "%.*f GB"
 msgstr "%.*f GB"
 
+#. ## LOCALIZATION NOTE(folderWithAccount):
+#. ## This is used to show folder name together with an account name.
+#. ## %1$S = folder name
+#. ## %2$S = account name
+#: folderWithAccount
+#, fuzzy
+msgid "%1$S - %2$S"
+msgstr "%1$S a(z) %2$S helyen"
+
+#. ## LOCALIZATION NOTE(folderWithUnreadMsgs):
+#. ## This is a concatenation of two strings to compose a folder label with unread messages.
+#. ## %1$S = folder name
+#. ## %2$S = count of unread messages
+#: folderWithUnreadMsgs
+#, fuzzy
+msgid "%1$S (%2$S)"
+msgstr "%1$S %2$S"
+
+#. ## LOCALIZATION NOTE(summarizedValue):
+#. ## This string shows an indication that the value shown is actually a summary
+#. ## accumulated from all subfolders.
+#. ## %S = summarized value from all subfolders
+#: folderSummarizedValue
+msgid "*%S"
+msgstr ""
+
 #. # Error message if message for a message id wasn't found
 #: errorOpenMessageForMessageIdTitle
 msgid "Error opening message-id"
@@ -1962,14 +2015,6 @@ msgstr "Újraindítás"
 msgid "&Update to %S"
 msgstr "Frissítés erre: %S"
 
-#: websearch.setDefault
-msgid "Set this search engine as the default"
-msgstr "Ez a keresőszolgáltatás legyen az alapértelmezett"
-
-#: websearch.isDefault
-msgid "This search engine is currently the default"
-msgstr "Jelenleg ez a keresőszolgáltatás az alapértelmezett"
-
 #: outdatedpluginsMessage.title
 msgid "Some plugins used by this page are out of date."
 msgstr "Az oldal által használt egyes bővítmények elavultak."
@@ -2120,3 +2165,25 @@ msgstr ""
 #: saveAsType
 msgid "%S file"
 msgstr "%S fájl"
+
+#. # LOCALIZATION NOTE (openSearch.label): The label used in the autocomplete
+#. # widget to refer to a search on the web for a short string containing at most
+#. # 15 characters. %1$S is the search provider to use. %2$S is the string to
+#. # search for.
+#: openSearch.label
+msgid "Search %1$S for \"%2$S\""
+msgstr ""
+
+#. # LOCALIZATION NOTE (openSearch.label.truncated): The label used in the
+#. # autocomplete widget to refer to a search on the web for a short string
+#. # containing more than 15 characters. %1$S is the search provider to use. %2$S
+#. # is the string to search for, truncated to 15 characters.
+#: openSearch.label.truncated
+msgid "Search %1$S for \"%2$S…\""
+msgstr ""
+
+#~ msgid "Set this search engine as the default"
+#~ msgstr "Ez a keresőszolgáltatás legyen az alapértelmezett"
+
+#~ msgid "This search engine is currently the default"
+#~ msgstr "Jelenleg ez a keresőszolgáltatás az alapértelmezett"
