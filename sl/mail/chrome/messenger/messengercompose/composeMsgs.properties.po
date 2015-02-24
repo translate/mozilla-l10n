@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-24 01:00+0000\n"
-"PO-Revision-Date: 2015-02-24 09:23+0000\n"
+"PO-Revision-Date: 2015-02-24 09:47+0000\n"
 "Last-Translator: Peter <peter_klofutar@telemach.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sl\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1424769807.000000\n"
+"X-POOTLE-MTIME: 1424771233.000000\n"
 
 #. #
 #. # The following are used by the compose back end
@@ -291,15 +291,14 @@ msgstr ""
 
 #. ## LOCALIZATION NOTE (smtpSendFailedUnknownServer): argument %S is the Outgoing server (SMTP)
 #: smtpSendFailedUnknownServer
-#, fuzzy
 msgid ""
 "An error occurred while sending mail: Outgoing server (SMTP) %S is unknown. "
 "The server may be incorrectly configured. Please verify that your Outgoing "
 "server (SMTP) settings are correct and try again."
 msgstr ""
-"Pri pošiljanju pošte je prišlo do napake: strežnik SMTP %S ni znan. Morda "
-"strežnik ni pravilno nastavljen. Preverite ali so nastavitve vašega "
-"strežnika SMTP pravilne in poskusite znova."
+"Pri pošiljanju pošte je prišlo do napake: odhodni strežnik (SMTP) %S ni "
+"znan. Morda strežnik ni pravilno nastavljen. Preverite, ali so nastavitve "
+"vašega odhodnega strežnika(SMTP) pravilne in poskusite znova."
 
 #. ## LOCALIZATION NOTE (smtpSendRefused): argument %S is the Outgoing server (SMTP)
 #: smtpSendRefused
@@ -309,6 +308,10 @@ msgid ""
 "(SMTP) connections. Please verify that your Outgoing server (SMTP) settings "
 "are correct and try again."
 msgstr ""
+"Sporočila ni bilo mogoče poslati, ker je povezava z odhodnim strežnikom "
+"(SMTP) %S spodletela. Strežnik morda ni na voljo ali pa zavrača povezave. "
+"Preverite, ali so nastavitve odhodnega strežnika (SMTP) pravilne in "
+"poskusite znova."
 
 #. ## LOCALIZATION NOTE (smtpSendInterrupted): argument %S is the Outgoing server (SMTP)
 #: smtpSendInterrupted
@@ -316,6 +319,8 @@ msgid ""
 "The message could not be sent because the connection to Outgoing server "
 "(SMTP) %S was lost in the middle of the transaction. Try again."
 msgstr ""
+"Sporočila ni bilo mogoče poslati, ker je bila povezava z odhodnim strežnikom "
+"(SMTP) %S sredi prenosa izgubljena. Poskusite znova."
 
 #. ## LOCALIZATION NOTE (smtpSendTimeout): argument %S is the Outgoing server (SMTP)
 #: smtpSendTimeout
@@ -323,6 +328,8 @@ msgid ""
 "The message could not be sent because the connection to Outgoing server "
 "(SMTP) %S timed out. Try again."
 msgstr ""
+"Sporočila ni bilo mogoče poslati, ker je povezava z odhodnim strežnikom "
+"(SMTP) %S potekla. Poskusite znova."
 
 #. ## LOCALIZATION NOTE (smtpSendFailedUnknownReason): argument %S is the Outgoing server (SMTP)
 #: smtpSendFailedUnknownReason
@@ -331,6 +338,9 @@ msgid ""
 "reason. Please verify that your Outgoing server (SMTP) settings are correct "
 "and try again."
 msgstr ""
+"Sporočila ni bilo mogoče poslati preko odhodnega strežnika (SMTP) %S zaradi "
+"neznanega vzroka. Preverite, ali so nastavitve odhodnega strežnika (SMTP) "
+"pravilne in poskusite znova."
 
 #. # LOCALIZATION NOTE (smtpAuthChangeEncryptToPlainNoSsl): %S is the server hostname
 #: smtpAuthChangeEncryptToPlainNoSsl
@@ -341,6 +351,10 @@ msgid ""
 "If it used to work but now doesn't, you may be susceptible to getting your "
 "password stolen."
 msgstr ""
+"Videti je, da odhodni strežnik (SMTP) %S ne podpira šifriranih gesel. Če ste "
+"račun pravkar ustvarili, poskusite 'Metodo overitve' v 'Nastavitve računa | "
+"Nastavitve strežnika' spremeniti v 'Geslo, poslano nezaščiteno'. Če je prej "
+"delovalo in sedaj ne deluje več, je bilo vaše geslo morda ukradeno."
 
 #. # LOCALIZATION NOTE (smtpAuthChangeEncryptToPlainSsl): %S is the server hostname
 #: smtpAuthChangeEncryptToPlainSsl
@@ -349,6 +363,9 @@ msgid ""
 "If you just set up the account, try changing to the 'Authentication method' "
 "in 'Account settings | Server settings' to 'Normal password'."
 msgstr ""
+"Videti je, da odhodni strežnik (SMTP) %S ne podpira šifriranih gesel. Če ste "
+"račun pravkar ustvarili, poskusite 'Metodo overitve' v 'Nastavitve računa | "
+"Nastavitve strežnika' spremeniti v 'Običajno geslo'."
 
 #. # LOCALIZATION NOTE (smtpAuthChangePlainToEncrypt): %S is the server hostname
 #: smtpAuthChangePlainToEncrypt
@@ -357,27 +374,28 @@ msgid ""
 "changing the 'Authentication method' in 'Account Settings | Server settings' "
 "to 'Encrypted password'."
 msgstr ""
+"Odhodni strežnik (SMTP) ne dovoljuje gesel v golem beseilu. Poskusite "
+"'Metodo overitve' v 'Nastavitve računa | Nastavitve strežnika' spremeniti v "
+"'Šifrirano geslo'."
 
 #. # LOCALIZATION NOTE (smtpAuthFailure): %S is the server hostname
 #: smtpAuthFailure
-#, fuzzy
 msgid ""
 "Unable to authenticate to Outgoing server (SMTP) %S. Please check the "
 "password and verify the 'Authentication method' in 'Account Settings | "
 "Outgoing server (SMTP)'."
 msgstr ""
-"Strežnika SMTP %S ni mogoče overiti. Preverite geslo in preverite 'Metodo "
-"overitve' v Nastavitve računa | Odhodni strežnik (SMTP)."
+"Odhodnega strežnika (SMTP) %S ni mogoče overiti. Preverite geslo in 'Metodo "
+"overitve' v 'Nastavitve računa | Odhodni strežnik (SMTP)'."
 
 #. # LOCALIZATION NOTE (smtpAuthGssapi): %S is the server hostname
 #: smtpAuthGssapi
-#, fuzzy
 msgid ""
 "The Kerberos/GSSAPI ticket was not accepted by the Outgoing server (SMTP) "
 "%S. Please check that you are logged in to the Kerberos/GSSAPI realm."
 msgstr ""
-"Vstopnice Kerberos / GSSAPI strežnik SMTP %S ni sprejel. Preverite, ali ste "
-"prijavljeni na območje Kerberos / GSSAPI."
+"Vstopnice Kerberos/GSSAPI odhodni strežnik (SMTP) %S ni sprejel. Preverite, "
+"ali ste prijavljeni na območje Kerberos/GSSAPI."
 
 #. # LOCALIZATION NOTE (smtpAuthMechNotSupported): %S is the server hostname
 #: smtpAuthMechNotSupported
@@ -438,11 +456,8 @@ msgid "Attach File(s)"
 msgstr "Pripni datoteke"
 
 #: genericFailureExplanation
-#, fuzzy
 msgid "Please verify that your account settings are correct and try again."
-msgstr ""
-"Preverite ali so vaše nastavitve za pošto in novičarske skupine pravilne in "
-"poskusite znova."
+msgstr "Preverite, ali so vaše nastavitve računa pravilne in poskusite znova."
 
 #. ## LOCALIZATION NOTE (undisclosedRecipients): this string must use only US_ASCII characters
 #: undisclosedRecipients
@@ -673,12 +688,11 @@ msgstr "Filtriranje je spodletelo."
 #. ## LOCALIZATION NOTE (largeMessageSendWarning):
 #. ## Do not translate %S. It is the size of the message in user-friendly notation.
 #: largeMessageSendWarning
-#, fuzzy
 msgid ""
 "Warning! You are about to send a message of size %S. Are you sure you want "
 "to do this?"
 msgstr ""
-"Opozorilo! Poslati želite sporočilo %d bajtov. Ste zares prepričani, da to "
+"Opozorilo! Poslati želite sporočilo velikosti %S. Ali ste prepričani, da to "
 "želite?"
 
 #: sendingMessage
@@ -884,7 +898,6 @@ msgid "Uploaded to %S"
 msgstr "Preneseno na %S"
 
 #: cloudFileUploadingNotification
-#, fuzzy
 msgid ""
 "Your file is being linked. It will appear in the body of the message when "
 "it's done.;Your files are being linked. They will appear in the body of the "
@@ -892,7 +905,7 @@ msgid ""
 msgstr ""
 "Vaša datoteka se povezuje. Ko bo končano, se bo nahajala v telesu sporočila.;"
 "Vaši datoteki se povezujeta. Ko bo končano, se bosta nahajali v telesu "
-"sporočila;.Vaše datoteke se povezujejo. Ko bo končano, se bodo nahajale v "
+"sporočila.;Vaše datoteke se povezujejo. Ko bo končano, se bodo nahajale v "
 "telesu sporočila.;Vaše datoteke se povezujejo. Ko bo končano, se bodo "
 "nahajale v telesu sporočila."
 
@@ -923,7 +936,7 @@ msgstr "Vnesite svoje geslo za %2$S na %1$S:"
 
 #: smtpEnterPasswordPromptTitle
 msgid "Outgoing server (SMTP) Password Required"
-msgstr ""
+msgstr "Zahtevano je geslo odhodnega strežnika (SMTP)"
 
 #. # LOCALIZATION NOTE (removeAttachmentMsgs): Semi-colon list of plural forms.
 #. # See: http://developer.mozilla.org/en/Localization_and_Plurals
@@ -993,6 +1006,9 @@ msgid ""
 "the maximum file name length for %1$S. Please rename the file to have 120 "
 "characters or less in its name and upload again."
 msgstr ""
+"%2$S v svojem imenu vsebuje več kot 120 znakov, kar je več od največje "
+"dovoljene dolžine za %1$S. Preimenujte datoteko, da bo imela največ 120 "
+"znakov in jo ponovne prenesite."
 
 #: errorCloudFileLimit.title
 msgid "File Size Error"
