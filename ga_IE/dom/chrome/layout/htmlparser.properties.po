@@ -1,0 +1,661 @@
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./dom/chrome/layout/htmlparser.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: firefox\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-02 06:15+0000\n"
+"PO-Revision-Date: 2006-02-16 00:01-0000\n"
+"Last-Translator: Séamus Ó Ciardhuáin <seoc (at) iolfree (dot) ie>\n"
+"Language-Team: Irish\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+
+#. # Encoding warnings and errors
+#: EncNoDeclarationFrame
+msgid ""
+"The character encoding of a framed document was not declared. The document "
+"may appear different if viewed without the document framing it."
+msgstr ""
+
+#: EncNoDeclarationPlain
+msgid ""
+"The character encoding of the plain text document was not declared. The "
+"document will render with garbled text in some browser configurations if the "
+"document contains characters from outside the US-ASCII range. The character "
+"encoding of the file needs to be declared in the transfer protocol or file "
+"needs to use a byte order mark as an encoding signature."
+msgstr ""
+
+#: EncNoDeclaration
+msgid ""
+"The character encoding of the HTML document was not declared. The document "
+"will render with garbled text in some browser configurations if the document "
+"contains characters from outside the US-ASCII range. The character encoding "
+"of the page must be declared in the document or in the transfer protocol."
+msgstr ""
+
+#: EncLateMetaFrame
+msgid ""
+"The character encoding declaration of the framed HTML document was not found "
+"when prescanning the first 1024 bytes of the file. When viewed without the "
+"document framing it, the page will reload automatically. The encoding "
+"declaration needs to be moved to be within the first 1024 bytes of the file."
+msgstr ""
+
+#: EncLateMeta
+msgid ""
+"The character encoding declaration of the HTML document was not found when "
+"prescanning the first 1024 bytes of the file. When viewed in a differently-"
+"configured browser, this page will reload automatically. The encoding "
+"declaration needs to be moved to be within the first 1024 bytes of the file."
+msgstr ""
+
+#: EncLateMetaReload
+msgid ""
+"The page was reloaded, because the character encoding declaration of the "
+"HTML document was not found when prescanning the first 1024 bytes of the "
+"file. The encoding declaration needs to be moved to be within the first 1024 "
+"bytes of the file."
+msgstr ""
+
+#: EncLateMetaTooLate
+msgid ""
+"The character encoding declaration of document was found too late for it to "
+"take effect. The encoding declaration needs to be moved to be within the "
+"first 1024 bytes of the file."
+msgstr ""
+
+#: EncMetaUnsupported
+msgid ""
+"An unsupported character encoding was declared for the HTML document using a "
+"meta tag. The declaration was ignored."
+msgstr ""
+
+#: EncProtocolUnsupported
+msgid ""
+"An unsupported character encoding was declared on the transfer protocol "
+"level. The declaration was ignored."
+msgstr ""
+
+#: EncBomlessUtf16
+msgid ""
+"Detected UTF-16-encoded Basic Latin-only text without a byte order mark and "
+"without a transfer protocol-level declaration. Encoding this content in "
+"UTF-16 is inefficient and the character encoding should have been declared "
+"in any case."
+msgstr ""
+
+#: EncMetaUtf16
+msgid ""
+"A meta tag was used to declare the character encoding as UTF-16. This was "
+"interpreted as an UTF-8 declaration instead."
+msgstr ""
+
+#: EncMetaUserDefined
+msgid ""
+"A meta tag was used to declare the character encoding as x-user-defined. "
+"This was interpreted as a windows-1252 declaration instead for compatibility "
+"with intentionally mis-encoded legacy fonts. This site should migrate to "
+"Unicode."
+msgstr ""
+
+#. # The bulk of the messages below are derived from 
+#. # http://hg.mozilla.org/projects/htmlparser/file/1f633cef7de7/src/nu/validator/htmlparser/impl/ErrorReportingTokenizer.java
+#. # which is available under the MIT license.
+#. # Tokenizer errors
+#: errGarbageAfterLtSlash
+msgid "Garbage after “</”."
+msgstr "Bruscar tar éis “</”."
+
+#: errLtSlashGt
+msgid ""
+"Saw “</>”. Probable causes: Unescaped “<” (escape as “&lt;”) or mistyped end "
+"tag."
+msgstr ""
+"Chonacthas “</>”. Is dócha go raibh “<” gan éalúchán (úsáid “&lt;”) ann, nó "
+"is clib dheiridh bhriste é."
+
+#: errCharRefLacksSemicolon
+msgid "Character reference was not terminated by a semicolon."
+msgstr "Aonán carachtair gan leathstad ag a deireadh."
+
+#: errNoDigitsInNCR
+msgid "No digits in numeric character reference."
+msgstr "Aonán uimhriúil carachtair gan uimhreacha."
+
+#: errGtInSystemId
+msgid "“>” in system identifier."
+msgstr "“>” in aitheantóir córais."
+
+#: errGtInPublicId
+msgid "“>” in public identifier."
+msgstr "“>” in aitheantóir poiblí."
+
+#: errNamelessDoctype
+msgid "Nameless doctype."
+msgstr "Doctype gan ainm."
+
+#: errConsecutiveHyphens
+msgid ""
+"Consecutive hyphens did not terminate a comment. “--” is not permitted "
+"inside a comment, but e.g. “- -” is."
+msgstr ""
+"Dhá fhleiscín as a chéile ach níl siad ag deireadh nóta tráchta. Ní "
+"cheadaítear “--” laistigh de nóta tráchta, ach ceadaítear “- -” mar shampla."
+
+#: errPrematureEndOfComment
+msgid "Premature end of comment. Use “-->” to end a comment properly."
+msgstr ""
+"Deireadh nóta tráchta gan súil leis. Is ceart “-->” a úsáid ag deireadh nóta "
+"tráchta."
+
+#: errBogusComment
+msgid "Bogus comment."
+msgstr "Nóta tráchta mícheart."
+
+#: errUnquotedAttributeLt
+msgid ""
+"“<” in an unquoted attribute value. Probable cause: Missing “>” immediately "
+"before."
+msgstr ""
+"“<” in luach aitreabúide gan chomharthaí athfhriotail. Is dócha go bhfuil "
+"“>” ar iarraidh go díreach roimhe."
+
+#: errUnquotedAttributeGrave
+msgid ""
+"“`” in an unquoted attribute value. Probable cause: Using the wrong "
+"character as a quote."
+msgstr ""
+"“`” in luach aitreabúide gan chomharthaí athfhriotail. Is dócha gur baineadh "
+"úsáid as carachtar mícheart athfhriotail."
+
+#: errUnquotedAttributeQuote
+msgid ""
+"Quote in an unquoted attribute value. Probable causes: Attributes running "
+"together or a URL query string in an unquoted attribute value."
+msgstr ""
+"Comhartha athfhriotail in luach aitreabúide gan chomharthaí athfhriotail. Is "
+"dócha gur baineadh úsáid as carachtar mícheart athfhriotail."
+
+#: errUnquotedAttributeEquals
+msgid ""
+"“=” in an unquoted attribute value. Probable causes: Attributes running "
+"together or a URL query string in an unquoted attribute value."
+msgstr ""
+"“=” in luach aitreabúide gan chomharthaí athfhriotail. Is dócha go bhfuil "
+"dhá aitreabúid in aice a chéile, nó go bhfuil teaghrán iarratais URL in "
+"luach aitreabúide gan chomharthaí athfhriotail."
+
+#: errSlashNotFollowedByGt
+msgid "A slash was not immediately followed by “>”."
+msgstr "Chonacthas slais, ach ní raibh “>” díreach ina diaidh."
+
+#: errNoSpaceBetweenAttributes
+msgid "No space between attributes."
+msgstr "Gan spás idir aitreabúidí."
+
+#: errUnquotedAttributeStartLt
+#, fuzzy
+msgid ""
+"“<” at the start of an unquoted attribute value. Probable cause: Missing “>” "
+"immediately before."
+msgstr ""
+"“<” in luach aitreabúide gan chomharthaí athfhriotail. Is dócha go bhfuil "
+"“>” ar iarraidh go díreach roimhe."
+
+#: errUnquotedAttributeStartGrave
+msgid ""
+"“`” at the start of an unquoted attribute value. Probable cause: Using the "
+"wrong character as a quote."
+msgstr ""
+"“`” in luach aitreabúide gan chomharthaí athfhriotail (ag an tosach). Is "
+"dócha gur baineadh úsáid as carachtar mícheart athfhriotail."
+
+#: errUnquotedAttributeStartEquals
+msgid ""
+"“=” at the start of an unquoted attribute value. Probable cause: Stray "
+"duplicate equals sign."
+msgstr ""
+"“=” in luach aitreabúide gan chomharthaí athfhriotail (ag an tosach). Is "
+"dócha go bhfuil comhartha cothroime ar strae ann."
+
+#: errAttributeValueMissing
+msgid "Attribute value missing."
+msgstr "Aitreabúid gan luach."
+
+#: errBadCharBeforeAttributeNameLt
+msgid ""
+"Saw “<” when expecting an attribute name. Probable cause: Missing “>” "
+"immediately before."
+msgstr ""
+"Fuarthas “<” ach bhíothas ag súil le hainm aitreabúide. Is dócha go bhfuil "
+"“>” ar iarraidh go díreach roimhe."
+
+#: errEqualsSignBeforeAttributeName
+msgid ""
+"Saw “=” when expecting an attribute name. Probable cause: Attribute name "
+"missing."
+msgstr ""
+"Fuarthas “=” ach bhíothas ag súil le hainm aitreabúide. Is dócha go bhfuil "
+"ainm aitreabúide ar iarraidh."
+
+#: errBadCharAfterLt
+msgid ""
+"Bad character after “<”. Probable cause: Unescaped “<”. Try escaping it as "
+"“&lt;”."
+msgstr ""
+"Droch-charachtar tar éis “<”. Is dócha go raibh “<” gan éalúchán ann. Bain "
+"triail as “&lt;” ina ionad."
+
+#: errLtGt
+msgid ""
+"Saw “<>”. Probable causes: Unescaped “<” (escape as “&lt;”) or mistyped "
+"start tag."
+msgstr ""
+"Chonacthas “<>”. Is dócha go raibh “<” gan éalúchán (úsáid “&lt;”) ann, nó "
+"is clib thosaigh bhriste é."
+
+#: errProcessingInstruction
+msgid ""
+"Saw “<?”. Probable cause: Attempt to use an XML processing instruction in "
+"HTML. (XML processing instructions are not supported in HTML.)"
+msgstr ""
+"Chonacthas “<?”. Is dócha gur treoir XML i gcomhad HTML é seo. (Ní "
+"thacaítear le treoracha XML i gcomhad HTML.)"
+
+#: errUnescapedAmpersandInterpretedAsCharacterReference
+msgid ""
+"The string following “&” was interpreted as a character reference. (“&” "
+"probably should have been escaped as “&amp;”.)"
+msgstr ""
+"Glacadh leis an teaghrán tar éis “&” mar aonán carachtair. (Is ceart “&amp;” "
+"a úsáid in ionad “&”.)"
+
+#: errNotSemicolonTerminated
+msgid ""
+"Named character reference was not terminated by a semicolon. (Or “&” should "
+"have been escaped as “&amp;”.)"
+msgstr ""
+"Ní raibh leathstad ag deireadh an aonáin ainmnithe carachtair. (Is é sin, nó "
+"“&amp;” a úsáid in ionad “&”.)"
+
+#: errNoNamedCharacterMatch
+msgid ""
+"“&” did not start a character reference. (“&” probably should have been "
+"escaped as “&amp;”.)"
+msgstr ""
+"Chonacthas “&” ach ní raibh sé ag tús aonáin carachtair. (Is dócha gur chóir "
+"“&amp;” a bheith ann in ionad “&”.)"
+
+#: errQuoteBeforeAttributeName
+msgid ""
+"Saw a quote when expecting an attribute name. Probable cause: “=” missing "
+"immediately before."
+msgstr ""
+"Fuarthas comhartha athfhriotail ach bhíothas ag súil le hainm aitreabúide. "
+"Is dócha go bhfuil “=” ar iarraidh go díreach roimhe."
+
+#: errLtInAttributeName
+msgid "“<” in attribute name. Probable cause: “>” missing immediately before."
+msgstr ""
+"Fuarthas “<” in ainm aitreabúide. Is dócha go bhfuil “>” ar iarraidh go "
+"díreach roimhe."
+
+#: errQuoteInAttributeName
+msgid ""
+"Quote in attribute name. Probable cause: Matching quote missing somewhere "
+"earlier."
+msgstr ""
+"Chonacthas comhartha athfhriotail in ainm aitreabúide. Is dócha go raibh "
+"comhartha athfhriotail ar iarraidh níos luaithe."
+
+#: errExpectedPublicId
+msgid "Expected a public identifier but the doctype ended."
+msgstr ""
+"Bhíothas ag súil le haitheantóir poiblí, agus fuarthas deireadh an fhógra "
+"doctype."
+
+#: errBogusDoctype
+msgid "Bogus doctype."
+msgstr "Doctype mícheart."
+
+#: maybeErrAttributesOnEndTag
+msgid "End tag had attributes."
+msgstr "Aitreabúidí i gclib dheiridh."
+
+#: maybeErrSlashInEndTag
+msgid "Stray “/” at the end of an end tag."
+msgstr "“/” sa bhreis ag deireadh clibe deiridh."
+
+#: errNcrNonCharacter
+msgid "Character reference expands to a non-character."
+msgstr "Déanann an t-aonán carachtair tagairt do neamhcharachtar.."
+
+#: errNcrSurrogate
+msgid "Character reference expands to a surrogate."
+msgstr "Déanann an t-aonán carachtair tagairt do charachtar ionaid."
+
+#: errNcrControlChar
+msgid "Character reference expands to a control character."
+msgstr "Déanann an t-aonán carachtair tagairt do charachtar rialúcháin."
+
+#: errNcrCr
+msgid "A numeric character reference expanded to carriage return."
+msgstr "Rinne aonán uimhriúil tagairt d'aisfhilleadh carráiste."
+
+#: errNcrInC1Range
+msgid "A numeric character reference expanded to the C1 controls range."
+msgstr "Rinne aonán uimhriúil tagairt do charachtar sa raon C1-rialúcháin."
+
+#: errEofInPublicId
+msgid "End of file inside public identifier."
+msgstr "Fuarthas comhadchríoch laistigh d'aitheantóir poiblí."
+
+#: errEofInComment
+msgid "End of file inside comment."
+msgstr "Comhadchríoch taobh istigh de nóta tráchta."
+
+#: errEofInDoctype
+msgid "End of file inside doctype."
+msgstr "Comhadchríoch taobh istigh de doctype."
+
+#: errEofInAttributeValue
+msgid "End of file reached when inside an attribute value. Ignoring tag."
+msgstr ""
+"Comhadchríoch taobh istigh de luach aitreabúide. Déanfar neamhaird den chlib."
+
+#: errEofInAttributeName
+msgid "End of file occurred in an attribute name. Ignoring tag."
+msgstr ""
+"Comhadchríoch taobh istigh d'ainm aitreabúide. Déanfar neamhaird den chlib."
+
+#: errEofWithoutGt
+msgid "Saw end of file without the previous tag ending with “>”. Ignoring tag."
+msgstr ""
+"Chonacthas comhadchríoch ach bhí clib éigin oscailte fós. Déanfar neamhaird "
+"den chlib."
+
+#: errEofInTagName
+msgid "End of file seen when looking for tag name. Ignoring tag."
+msgstr ""
+"Chonacthas comhadchríoch ach bhí ainm clibe á lorg fós. Déanfar neamhaird "
+"den chlib."
+
+#: errEofInEndTag
+msgid "End of file inside end tag. Ignoring tag."
+msgstr ""
+"Comhadchríoch taobh istigh de chlib dheiridh. Déanfar neamhaird den chlib."
+
+#: errEofAfterLt
+msgid "End of file after “<”."
+msgstr "Comhadchríoch tar éis “<”."
+
+#: errNcrOutOfRange
+msgid "Character reference outside the permissible Unicode range."
+msgstr "Aonán carachtair lasmuigh den raon Unicode."
+
+#: errNcrUnassigned
+msgid "Character reference expands to a permanently unassigned code point."
+msgstr ""
+"Déanann an t-aonán carachtair tagairt do chódphointe gan sainmhíniú go buan."
+
+#: errDuplicateAttribute
+msgid "Duplicate attribute."
+msgstr "Aitreabúid dúblach."
+
+#: errEofInSystemId
+msgid "End of file inside system identifier."
+msgstr "Comhadchríoch taobh istigh d'aitheantóir an chórais."
+
+#: errExpectedSystemId
+msgid "Expected a system identifier but the doctype ended."
+msgstr ""
+"Bhíothas ag súil le haitheantóir córais, ach fuarthas deireadh an doctype."
+
+#: errMissingSpaceBeforeDoctypeName
+msgid "Missing space before doctype name."
+msgstr "Spás ar iarraidh roimh ainm an doctype."
+
+#: errHyphenHyphenBang
+msgid "“--!” found in comment."
+msgstr "Fuarthas “--!” i nóta tráchta."
+
+#: errNcrZero
+msgid "Character reference expands to zero."
+msgstr "Déanann an t-aonán carachtair tagairt do nialas."
+
+#: errNoSpaceBetweenDoctypeSystemKeywordAndQuote
+msgid "No space between the doctype “SYSTEM” keyword and the quote."
+msgstr ""
+"Níl aon spás idir an eochairfhocal doctype “SYSTEM” agus an comhartha "
+"athfhriotail."
+
+#: errNoSpaceBetweenPublicAndSystemIds
+msgid "No space between the doctype public and system identifiers."
+msgstr "Níl aon spás idir an doctype “PUBLIC” agus aitheantóirí an chórais."
+
+#: errNoSpaceBetweenDoctypePublicKeywordAndQuote
+msgid "No space between the doctype “PUBLIC” keyword and the quote."
+msgstr ""
+"Níl aon spás idir an eochairfhocal doctype “PUBLIC” agus an comhartha "
+"athfhriotail."
+
+#. # Tree builder errors
+#: errStrayStartTag2
+msgid "Stray start tag “%1$S”."
+msgstr "Clib thosaigh fhánach “%1$S”."
+
+#: errStrayEndTag
+msgid "Stray end tag “%1$S”."
+msgstr "Clib dheiridh fhánach “%1$S”."
+
+#: errUnclosedElements
+msgid "End tag “%1$S” seen, but there were open elements."
+msgstr "Chonacthas clib dheiridh “%1$S”, ach bhí eilimintí oscailte ann."
+
+#: errUnclosedElementsImplied
+msgid "End tag “%1$S” implied, but there were open elements."
+msgstr "Clib dheiridh “%1$S” intuigthe, ach bhí eilimintí oscailte ann."
+
+#: errUnclosedElementsCell
+msgid "A table cell was implicitly closed, but there were open elements."
+msgstr "Dúnadh cill i dtábla go tostach, ach bhí eilimintí oscailte ann."
+
+#: errStrayDoctype
+msgid "Stray doctype."
+msgstr "Doctype fánach."
+
+#: errAlmostStandardsDoctype
+msgid "Almost standards mode doctype. Expected “<!DOCTYPE html>”."
+msgstr ""
+"Doctype “beagnach caighdeánach”. Bhíothas ag súil le “<!DOCTYPE html>”."
+
+#: errQuirkyDoctype
+msgid "Quirky doctype. Expected “<!DOCTYPE html>”."
+msgstr ""
+"Doctype “comhoiriúnacht shiarghabhálach”. Bhíothas ag súil le “<!DOCTYPE "
+"html>”."
+
+#: errNonSpaceInTrailer
+msgid "Non-space character in page trailer."
+msgstr "Carachtar neamhspáis in eireaball an leathanaigh."
+
+#: errNonSpaceAfterFrameset
+msgid "Non-space after “frameset”."
+msgstr "Carachtar neamhspáis tar éis “frameset”."
+
+#: errNonSpaceInFrameset
+msgid "Non-space in “frameset”."
+msgstr "Carachtar neamhspáis laistigh de “frameset”."
+
+#: errNonSpaceAfterBody
+msgid "Non-space character after body."
+msgstr "Carachtar neamhspáis tar éis chorp an leathanaigh."
+
+#: errNonSpaceInColgroupInFragment
+msgid "Non-space in “colgroup” when parsing fragment."
+msgstr "Carachtar neamhspáis laistigh de “colgroup” agus blúire á pharsáil."
+
+#: errNonSpaceInNoscriptInHead
+msgid "Non-space character inside “noscript” inside “head”."
+msgstr "Carachtar neamhspáis laistigh de “noscript” laistigh de “head”."
+
+#: errFooBetweenHeadAndBody
+msgid "“%1$S” element between “head” and “body”."
+msgstr "Eilimint “%1$S” idir “head” agus “body”."
+
+#: errStartTagWithoutDoctype
+msgid ""
+"Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”."
+msgstr ""
+"Chonacthas clib thosaigh gan doctype. Bhíothas ag súil le “<!DOCTYPE html>”."
+
+#: errNoSelectInTableScope
+msgid "No “select” in table scope."
+msgstr "Gan “select” i scóip an tábla."
+
+#: errStartSelectWhereEndSelectExpected
+msgid "“select” start tag where end tag expected."
+msgstr ""
+"Chonacthas clib thosaigh “select” ach bhíothas ag súil le clib dheiridh."
+
+#: errStartTagWithSelectOpen
+msgid "“%1$S” start tag with “select” open."
+msgstr "Clib thosaigh “%1$S” le “select” oscailte."
+
+#: errBadStartTagInHead2
+msgid "Bad start tag “%1$S” in “head”."
+msgstr "Droch-chlib thosaigh “%1$S” in “head”."
+
+#: errImage
+msgid "Saw a start tag “image”."
+msgstr "Chonacthas clib thosaigh “image”."
+
+#: errIsindex
+msgid "“isindex” seen."
+msgstr "Chonacthas “isindex”."
+
+#: errFooSeenWhenFooOpen
+msgid ""
+"An “%1$S” start tag seen but an element of the same type was already open."
+msgstr ""
+"Chonacthas clib thosaigh “%1$S” ach bhí eilimint den chineál seo oscailte "
+"cheana."
+
+#: errHeadingWhenHeadingOpen
+msgid "Heading cannot be a child of another heading."
+msgstr "Ní cheadaítear ceanntásc mar mhac ceanntáisc eile."
+
+#: errFramesetStart
+msgid "“frameset” start tag seen."
+msgstr "Chonacthas clib thosaigh “frameset”."
+
+#: errNoCellToClose
+msgid "No cell to close."
+msgstr "Níl aon chill le dúnadh."
+
+#: errStartTagInTable
+msgid "Start tag “%1$S” seen in “table”."
+msgstr "Chonacthas clib thosaigh “%1$S” i “table”."
+
+#: errFormWhenFormOpen
+msgid ""
+"Saw a “form” start tag, but there was already an active “form” element. "
+"Nested forms are not allowed. Ignoring the tag."
+msgstr ""
+"Chonacthas clib thosaigh “form”, ach bhí eilimint oscailte “form” ann "
+"cheana. Ní cheadaítear foirmeacha neadaithe. Rinneadh neamhaird den chlib."
+
+#: errTableSeenWhileTableOpen
+msgid "Start tag for “table” seen but the previous “table” is still open."
+msgstr ""
+"Chonacthas clib thosaigh “table”, ach bhí an “table” roimhe sin oscailte fós."
+
+#: errStartTagInTableBody
+msgid "“%1$S” start tag in table body."
+msgstr "Clib thosaigh “%1$S” laistigh de chorp tábla."
+
+#: errEndTagSeenWithoutDoctype
+msgid ""
+"End tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”."
+msgstr ""
+"Chonacthas clib dheiridh gan doctype. Bhíothas ag súil le “<!DOCTYPE html>”."
+
+#: errEndTagAfterBody
+msgid "Saw an end tag after “body” had been closed."
+msgstr "Chonacthas clib dheiridh tar éis dheireadh an “body”."
+
+#: errEndTagSeenWithSelectOpen
+msgid "“%1$S” end tag with “select” open."
+msgstr "Chonacthas clib dheiridh “%1$S” ach bhí “select” oscailte fós."
+
+#: errGarbageInColgroup
+msgid "Garbage in “colgroup” fragment."
+msgstr "Bruscar i ngiota “colgroup”."
+
+#: errEndTagBr
+msgid "End tag “br”."
+msgstr "Clib dheiridh “br”."
+
+#: errNoElementToCloseButEndTagSeen
+msgid "No “%1$S” element in scope but a “%1$S” end tag seen."
+msgstr "Níl aon eilimint “%1$S” ann, ach chonacthas clib dheiridh “%1$S”."
+
+#: errHtmlStartTagInForeignContext
+msgid "HTML start tag “%1$S” in a foreign namespace context."
+msgstr "Clib thosaigh HTML “%1$S” in ainmspáis iasachta."
+
+#: errTableClosedWhileCaptionOpen
+msgid "“table” closed but “caption” was still open."
+msgstr "Dúnadh “table” ach bhí “caption” oscailte fós."
+
+#: errNoTableRowToClose
+msgid "No table row to close."
+msgstr "Níl aon ró le dúnadh."
+
+#: errNonSpaceInTable
+msgid "Misplaced non-space characters inside a table."
+msgstr "Carachtair neamhspáis as ionad, taobh istigh de thábla."
+
+#: errUnclosedChildrenInRuby
+msgid "Unclosed children in “ruby”."
+msgstr "Macnóid gan dúnadh laistigh de “ruby”."
+
+#: errStartTagSeenWithoutRuby
+msgid "Start tag “%1$S” seen without a “ruby” element being open."
+msgstr "Chonacthas clib thosaigh “%1$S” gan eilimint “ruby” oscailte."
+
+#: errSelfClosing
+msgid ""
+"Self-closing syntax (“/>”) used on a non-void HTML element. Ignoring the "
+"slash and treating as a start tag."
+msgstr ""
+"Úsáideadh an chomhréir fhéindúnta (“/>”) le heilimint neamhfholamh HTML. "
+"Rinneadh neamhaird den slais agus déileálfar leis mar chlib thosaigh."
+
+#: errNoCheckUnclosedElementsOnStack
+msgid "Unclosed elements on stack."
+msgstr "Eilimintí neamhdhúnta ar an gcruach."
+
+#: errEndTagDidNotMatchCurrentOpenElement
+msgid ""
+"End tag “%1$S” did not match the name of the current open element (“%2$S”)."
+msgstr ""
+"Ní ionann clib dheiridh “%1$S” agus ainm na heiliminte atá oscailte faoi "
+"láthair (“%2$S”)."
+
+#: errEndTagViolatesNestingRules
+msgid "End tag “%1$S” violates nesting rules."
+msgstr "Sáraíonn clib dheiridh “%1$S” rialacha a bhaineann le neadú."
+
+#: errEndWithUnclosedElements
+msgid "End tag for “%1$S” seen, but there were unclosed elements."
+msgstr "Chonacthas clib dheiridh “%1$S” ach bhí eilimintí gan dúnadh ann."
