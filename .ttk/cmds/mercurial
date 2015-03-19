@@ -4,7 +4,7 @@ require hg
 
 _find_config_base_dir
 BUILD_DIR="${base_dir}/build"
-L10N_DIR="${BUILD_DIR}/l10n"
+L10N_DIR="${BUILD_DIR}/${L10N_VER}"
 
 function usage() {
 	echo "Usage: mercurial [option] [language]"
@@ -50,7 +50,7 @@ function _clone(){
 	mozlang=$(get_language_upstream $*)
 	[ -f $L10N_DIR/$mozlang/.hg/hgrc ] && mv $L10N_DIR/$mozlang/.hg/hgrc $L10N_DIR/$mozlang.hgrc
 	rm -rf $L10N_DIR/$mozlang
-	hg clone http://hg.mozilla.org/releases/l10n/mozilla-aurora/$mozlang $L10N_DIR/$mozlang
+	hg clone http://hg.mozilla.org/releases/l10n/${MOZ_REPO}/$mozlang $L10N_DIR/$mozlang
 	[ -f $L10N_DIR/$mozlang.hgrc ] && mv $L10N_DIR/$mozlang.hgrc $L10N_DIR/$mozlang/.hg/hgrc
 }
 
