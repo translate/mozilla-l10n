@@ -34,7 +34,7 @@ focus on the most important translations first.
 |        | "Report Broken Web Sites"                                                              |
 |        | Translation related feature.                                                           |
 +--------+----------------------------------------------------------------------------------------+
-| lang   | only do the most important languages (also read regions)                               |
+| lang   | Only do the most important languages (also read regions)                               |
 |        | i.e. your language and languages commonly refered to                                   |
 |        | or used by your users.  *DO NOT* translate everything!                                 |
 +--------+----------------------------------------------------------------------------------------+
@@ -67,7 +67,7 @@ These you can do if you are targetting the specific audience mentioned.
 +------------+------------------------------------------------------------------------------------+
 | Phase      | Details                                                                            |
 +============+====================================================================================+
-| developers | all web developer centric parts if Firefox.  If web developers who speak your      |
+| developers | All web developer centric parts of Firefox.  If web developers who speak your      |
 |            | language mostly work in English then rather leave this untranslated.               |
 +------------+------------------------------------------------------------------------------------+
 
@@ -83,11 +83,11 @@ You can safely ignore any strings that appear in these phases.
 |          | see something here like an error it will make more sense to see it in English      |
 |          | so that they can search the Internet for the error.                                |
 +----------+------------------------------------------------------------------------------------+
-| notnb    | not important stuff that you can safely leave right till the end.  These are things|
+| notnb    | Not important stuff that you can safely leave right till the end.  These are things|
 |          | like jokes and pages that nobody will ever see.  Rather focus on areas that impact |
 |          | your users.                                                                        |
 +----------+------------------------------------------------------------------------------------+
-| never    | things that we will never translate.  Examples of things that you will see here are|
+| never    | Things that we will never translate.  Examples of things that you will see here are|
 |          | XML error messages.  Since these are only translated into French, German and some  |
 |          | other languages for the XML spec leave them untranslated.                          |
 +----------+------------------------------------------------------------------------------------+
