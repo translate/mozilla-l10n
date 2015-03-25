@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-29 20:25+0100\n"
-"PO-Revision-Date: 2014-04-29 20:25+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: \n"
+"POT-Creation-Date: 2015-02-24 01:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: dsb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0-alpha1\n"
+"X-Generator: Translate Toolkit 1.13.0-alpha1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
@@ -227,15 +227,40 @@ msgid ""
 "timezone."
 msgstr ""
 
-#: unsubscribeCalendarTitle
-msgid "Unsubscribe from Calendar"
+#. # The following strings are for the prompt to delete/unsubscribe from the calendar
+#: removeCalendarTitle
+msgid "Remove Calendar"
 msgstr ""
 
-#. # LOCALIZATION NOTE (unsubscribeCalendarMessage):
-#. # used for an message like 'Are you sure you want to unsubscribe from calendar "Home"?'
-#. #    %1$S will be replaced with the name of a calendar
-#: unsubscribeCalendarMessage
-msgid "Are you sure you want to unsubscribe from calendar \"%1$S\"?"
+#: removeCalendarButtonDelete
+msgid "Delete Calendar"
+msgstr ""
+
+#: removeCalendarButtonUnsubscribe
+msgid "Unsubscribe"
+msgstr ""
+
+#. # LOCALIZATION NOTE (removeCalendarMessageDeleteOrUnsubscribe): Shown for
+#. # calendar where both deleting and unsubscribing is possible.
+#. # %1$S:  The name of a calendar
+#: removeCalendarMessageDeleteOrUnsubscribe
+msgid ""
+"Do you want to remove the calendar \"%1$S\"? Unsubscribing will remove the "
+"calendar from the list, deleting will also permanently purge its data."
+msgstr ""
+
+#. # LOCALIZATION NOTE (removeCalendarMessageDelete): Shown for calendar where
+#. # deleting is the only option.
+#. # %1$S:  The name of a calendar
+#: removeCalendarMessageDelete
+msgid "Do you want to permanently delete the calendar \"%1$S\"?"
+msgstr ""
+
+#. # LOCALIZATION NOTE (removeCalendarMessageUnsubscribe): Shown for calendar
+#. # where unsubscribing is the only option.
+#. # %1$S:  The name of a calendar
+#: removeCalendarMessageUnsubscribe
+msgid "Do you want to unsubscribe from the calendar \"%1$S\"?"
 msgstr ""
 
 #: WeekTitle
@@ -534,6 +559,20 @@ msgstr ""
 
 #: caldavRequestStatusCodeString503
 msgid "Internal server error (Temporary server outage?)."
+msgstr ""
+
+#: caldavRedirectTitle
+msgid "Update location for calendar %1$S?"
+msgstr ""
+
+#: caldavRedirectText
+msgid ""
+"The requests for %1$S are being redirected to a new location. Would you like "
+"to change the location to the following value?"
+msgstr ""
+
+#: caldavRedirectDisableCalendar
+msgid "Disable Calendar"
 msgstr ""
 
 #. # LOCALIZATION NOTE (likelyTimezone):
@@ -1011,63 +1050,93 @@ msgctxt "monthInYear.monthFormat"
 msgid "nominative"
 msgstr ""
 
-#. # LOCALIZATION NOTE (dayIntervalInMonth):
+#. # LOCALIZATION NOTE (formatDateLong):
+#. # used for display dates in long format like 'Mon 15 Oct 2008' when it's
+#. # impossible to retrieve the formatatted date from the OS.
+#. #    %1$S will be replaced with name of the day in short format;
+#. #    %2$S will be replaced with the day-index of the month, possibly followed by an ordinal symbol
+#. #         (depending on the string dayOrdinalSymbol in dateFormat.properties);
+#. #    %3$S will be replaced with the name of the month in short format;
+#. #    %4$S will be replaced with the year.
+#: formatDateLong
+msgid "%1$S %2$S %3$S %4$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (dayHeaderLabel):
+#. # used for display the labels in the header of the days in day/week views in short
+#. # or long format. For example: 'Monday 6 Oct.' or 'Mon. 6 Oct.'
+#. #    %1$S will be replaced with name of the day in short or long format
+#. #    %2$S will be replaced with the day-index of the month, possibly followed by an ordinal symbol
+#. #         (depending on the string dayOrdinalSymbol in dateFormat.properties), plus the name
+#. #         of the month in short format (the day/month order depends on the OS settings).
+#: dayHeaderLabel
+msgctxt "dayHeaderLabel"
+msgid "%1$S %2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (daysIntervalInMonth):
 #. # used for display of intervals in the form of 'March 3 - 9, 2008'
 #. #    %1$S will be replaced with name of the month of the start date
-#. #    %2$S will be replaced with the day-index of the start date
-#. #    %3$S will be replaced with the day-index of the end date
+#. #    %2$S will be replaced with the day-index of the start date possibly followed by an ordinal symbol
+#. #    %3$S will be replaced with the day-index of the end date possibly followed by an ordinal symbol
 #. #    %4$S will be replaced with the common year of both dates
-#: dayIntervalInMonth
+#. # The presence of the ordinal symbol in the day-indexes depends on the string
+#. # dayOrdinalSymbol in dateFormat.properties
+#: daysIntervalInMonth
 msgid "%1$S %2$S – %3$S, %4$S"
 msgstr ""
 
-#. # LOCALIZATION NOTE (dayIntervalInMonth.monthFormat):
-#. # If your language requires a different declension, change this to 
+#. # LOCALIZATION NOTE (daysIntervalInMonth.monthFormat):
+#. # If your language requires a different declension, change this to
 #. # one of the values specified in dateFormat.properties.
 #. # In any case, DO NOT TRANSLATE.
-#: dayIntervalInMonth.monthFormat
-msgctxt "dayIntervalInMonth.monthFormat"
+#: daysIntervalInMonth.monthFormat
+msgctxt "daysIntervalInMonth.monthFormat"
 msgid "nominative"
 msgstr ""
 
-#. # LOCALIZATION NOTE (dayIntervalBetweenMonths):
+#. # LOCALIZATION NOTE (daysIntervalBetweenMonths):
 #. # used for display of intervals in the form 'September 29 - October 5, 2008'
 #. #    %1$S will be replaced with name of the month of the start date
-#. #    %2$S will be replaced with the day-index of the start date
+#. #    %2$S will be replaced with the day-index of the start date possibly followed by an ordinal symbol
 #. #    %3$S will be replaced with name of the month of the end date
-#. #    %4$S will be replaced with the day-index of the end date
+#. #    %4$S will be replaced with the day-index of the end date possibly followed by an ordinal symbol
 #. #    %5$S will be replaced with the commmon year of both dates
-#: dayIntervalBetweenMonths
+#. # The presence of the ordinal symbol in the day-indexes depends on the string
+#. # dayOrdinalSymbol in dateFormat.properties
+#: daysIntervalBetweenMonths
 msgid "%1$S %2$S – %3$S %4$S, %5$S"
 msgstr ""
 
-#. # LOCALIZATION NOTE (dayIntervalBetweenMonths.monthFormat):
+#. # LOCALIZATION NOTE (daysIntervalBetweenMonths.monthFormat):
 #. # If your language requires a different declension, change this to 
 #. # one of the values specified in dateFormat.properties.
 #. # In any case, DO NOT TRANSLATE.
-#: dayIntervalBetweenMonths.monthFormat
-msgctxt "dayIntervalBetweenMonths.monthFormat"
+#: daysIntervalBetweenMonths.monthFormat
+msgctxt "daysIntervalBetweenMonths.monthFormat"
 msgid "nominative"
 msgstr ""
 
-#. # LOCALIZATION NOTE (dayIntervalBetweenYears):
+#. # LOCALIZATION NOTE (daysIntervalBetweenYears):
 #. # used for display of intervals in the form 'December 29, 2008 - January 4, 2009'
 #. #    %1$S will be replaced with name of the month of the start date
-#. #    %2$S will be replaced with the day-index of the start date
+#. #    %2$S will be replaced with the day-index of the start date possibly followed by an ordinal symbol
 #. #    %3$S will be replaced with the year of the start date
 #. #    %4$S will be replaced with name of the month of the end date
-#. #    %5$S will be replaced with the day-index of the end date
+#. #    %5$S will be replaced with the day-index of the end date possibly followed by an ordinal symbol
 #. #    %6$S will be replaced with the year of the end date
-#: dayIntervalBetweenYears
+#. # The presence of the ordinal symbol in the day-indexes depends on the string
+#. # dayOrdinalSymbol in dateFormat.properties
+#: daysIntervalBetweenYears
 msgid "%1$S %2$S, %3$S – %4$S %5$S, %6$S"
 msgstr ""
 
-#. # LOCALIZATION NOTE (dayIntervalBetweenYears.monthFormat):
-#. # If your language requires a different declension, change this to 
+#. # LOCALIZATION NOTE (daysIntervalBetweenYears.monthFormat):
+#. # If your language requires a different declension, change this to
 #. # one of the values specified in dateFormat.properties.
 #. # In any case, DO NOT TRANSLATE.
-#: dayIntervalBetweenYears.monthFormat
-msgctxt "dayIntervalBetweenYears.monthFormat"
+#: daysIntervalBetweenYears.monthFormat
+msgctxt "daysIntervalBetweenYears.monthFormat"
 msgid "nominative"
 msgstr ""
 
@@ -1214,4 +1283,44 @@ msgstr ""
 #: unitDays
 msgctxt "unitDays"
 msgid "#1 day;#1 days"
+msgstr ""
+
+#: unitWeeks
+msgid "#1 week;#1 weeks"
+msgstr ""
+
+#. # LOCALIZATION NOTE (showCalendar)
+#. # Used in calendar list context menu
+#. #    %1$S will be replaced with the calendar name
+#. # uses the access key calendar.context.togglevisible.accesskey
+#: showCalendar
+msgid "Show %1$S"
+msgstr ""
+
+#: hideCalendar
+msgid "Hide %1$S"
+msgstr ""
+
+#. # uses the access key calendar.context.showonly.accesskey
+#: showOnlyCalendar
+msgid "Show Only %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (modifyConflict)
+#. # Used by the event dialog to resolve item modification conflicts.
+#: modifyConflictPromptTitle
+msgid "Item Modification Conflict"
+msgstr ""
+
+#: modifyConflictPromptMessage
+msgid ""
+"The item being edited in the dialog has been modified since it was opened."
+msgstr ""
+
+#: modifyConflictPromptButton1
+msgid "Overwrite the other changes"
+msgstr ""
+
+#: modifyConflictPromptButton2
+msgid "Discard these changes"
 msgstr ""
