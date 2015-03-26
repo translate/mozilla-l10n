@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-02 06:15+0000\n"
-"PO-Revision-Date: 2015-03-26 12:10+0000\n"
+"PO-Revision-Date: 2015-03-26 13:04+0000\n"
 "Last-Translator: Cristian <cristian.silaghi@mozilla.ro>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ro\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1427371817.000000\n"
+"X-POOTLE-MTIME: 1427375094.000000\n"
 
 #: MimeNotCss
 msgid ""
@@ -60,7 +60,7 @@ msgstr "Proprietate necunoscută „%1$S”."
 
 #: PEValueParsingError
 msgid "Error in parsing value for '%1$S'."
-msgstr "Eroare la interpretarea valorii pentru „%1$S”."
+msgstr "Eroare la analizarea valorii pentru „%1$S”."
 
 #: PEExpectEndValue
 msgid "Expected end of value but found '%1$S'."
@@ -360,16 +360,16 @@ msgid ""
 "Expected end of selector or a user action pseudo-class after pseudo-element "
 "but found '%1$S'."
 msgstr ""
-"Expected end of selector or a user action pseudo-class after pseudo-element "
-"but found '%1$S'."
+"Se aștepta sfârșitul unui selector sau pseudo-clasă după pseudo-element dar "
+"s-a găsit „%1$S”."
 
 #: PEPseudoSelNoUserActionPC
 msgid ""
 "Expected end of selector after pseudo-element that does not support user "
 "action pseudo-classes but found '%1$S'."
 msgstr ""
-"Expected end of selector after pseudo-element that does not support user "
-"action pseudo-classes but found '%1$S'."
+"Se aștepta sfârșitul unui selector după pseudo-elementul care nu suportă "
+"pseudo-clasele user action dar s-a găsit „%1$S”."
 
 #: PEPseudoSelMultiplePE
 msgid "Extra pseudo-element '%1$S'."
@@ -403,7 +403,7 @@ msgstr "argument pentru selectorul :lang"
 #: PEPseudoClassArgNotIdent
 msgid "Expected identifier for pseudo-class parameter but found '%1$S'."
 msgstr ""
-"Se aștepta identificator pentru parametrul pseudo-clasei lang, dar s-a găsit "
+"Se aștepta un identificator pentru parametrul pseudo-clasei, dar s-a găsit "
 "„%1$S”."
 
 #: PEPseudoClassArgNotNth
@@ -424,8 +424,8 @@ msgid ""
 "Expected end of selector or a user action pseudo-class after pseudo-element "
 "but found pseudo-class '%1$S'."
 msgstr ""
-"Expected end of selector or a user action pseudo-class after pseudo-element "
-"but found pseudo-class '%1$S'."
+"Se aștepta sfârșitul unui selector sau o pseudo-clasă user action după "
+"pseudo-element dar s-a găsit „%1$S”."
 
 #: PESelectorEOF
 msgid "selector"
@@ -599,15 +599,17 @@ msgstr "Nu se aștepta o căsuță anonimă."
 
 #: PEFFVUnexpectedEOF
 msgid "Unexpected end of @font-feature-values rule."
-msgstr "Unexpected end of @font-feature-values rule."
+msgstr "Sfârșit neașteptat a regulii @font-feature-values."
 
 #: PEFFVBlockStart
 msgid "Expected opening { of @font-feature-values rule but found '%1$S'."
-msgstr "Expected opening { of @font-feature-values rule but found '%1$S'."
+msgstr ""
+"Se aștepta deschiderea { a regulii @font-feature-values dar s-a găsit „%1$S”."
 
 #: PEFFVValueSetStart
 msgid "Expected opening { of feature value set but found '%1$S'."
-msgstr "Expected opening { of feature value set but found '%1$S'."
+msgstr ""
+"Se aștepta deschiderea { a setării valorii funcției dar s-a găsit „%1$S”."
 
 #: PEFFVNoFamily
 msgid ""
@@ -618,7 +620,9 @@ msgstr ""
 
 #: PEFFVUnexpectedBlockEnd
 msgid "Expected '}' to end @font-feature-values rule but found '%1$S'."
-msgstr "Expected '}' to end @font-feature-values rule but found '%1$S'."
+msgstr ""
+"Se aștepta „}” la sfârșitul regulii @font-feature-values dar s-a găsit "
+"„%1$S”."
 
 #: PEFFVUnknownFontVariantPropValue
 msgid "Unknown font-variant property value '%1$S'."
@@ -626,11 +630,12 @@ msgstr "Unknown font-variant property value '%1$S'."
 
 #: PEFFVExpectedIdent
 msgid "Expected identifier but found '%1$S'."
-msgstr "Identificator așteptat dar s-a găsit '%1$S'."
+msgstr "Se aștepta un identificator dar s-a găsit „%1$S”."
 
 #: PEFFVExpectedValue
 msgid "Expected non-negative integer value but found '%1$S'."
-msgstr "Expected non-negative integer value but found '%1$S'."
+msgstr ""
+"Se aștepta o valoare non-negativă a numărului întreg dar s-a găsit „%1$S”."
 
 #: PEFFVTooManyValues
 msgid "Too many values for feature type '%1$S'."
@@ -643,11 +648,12 @@ msgstr ""
 
 #: PEFFVValueDefinitionTrailing
 msgid "Expected end of value definition but found '%1$S'."
-msgstr "Expected end of value definition but found '%1$S'."
+msgstr "Se aștepta sfârșitul definiției valorii dar s-a găsit „%1$S”."
 
 #: PEBadDirValue
 msgid "Expected 'ltr' or 'rtl' in direction selector but found '%1$S'."
-msgstr "Expected 'ltr' or 'rtl' in direction selector but found '%1$S'."
+msgstr ""
+"Se aștepta „ltr” sau „rtl” în selectorul de direcție dar s-a găsit „%1$S”."
 
 #: PESupportsConditionStartEOF2
 msgid "'not', '(', or function"
@@ -663,33 +669,37 @@ msgstr "'not'"
 
 #: PESupportsWhitespaceRequired
 msgid "Expected whitespace after 'not', 'and', or 'or'."
-msgstr "Spațiu liber necesar după 'not', 'and', sau 'or'."
+msgstr "Se aștepta spațiu liber după „not”, „and”, sau „or”."
 
 #: PESupportsConditionExpectedOpenParenOrFunction
 msgid ""
 "Expected '(' or function while parsing supports condition but found '%1$S'."
 msgstr ""
-"Expected '(' or function while parsing supports condition but found '%1$S'."
+"Se aștepta „(” sau funcție în timpul analizării condiției supports dar s-a "
+"găsit „%1$S”."
 
 #: PESupportsConditionExpectedCloseParen
 msgid "Expected ')' while parsing supports condition but found '%1$S'."
-msgstr "Expected ')' while parsing supports condition but found '%1$S'."
+msgstr ""
+"Se aștepta „)” în timpul analizării condiției supports dar s-a găsit „%1$S”."
 
 #: PESupportsConditionExpectedStart2
 msgid ""
 "Expected 'not', '(', or function while parsing supports condition but found "
 "'%1$S'."
 msgstr ""
-"Expected 'not', '(', or function while parsing supports condition but found "
-"'%1$S'."
+"Se aștepta „not”, „(” sau funcție în timpul analizării condiției supports "
+"dar s-a găsit „%1$S”."
 
 #: PESupportsConditionExpectedNot
 msgid "Expected 'not' while parsing supports condition but found '%1$S'."
-msgstr "Expected 'not' while parsing supports condition but found '%1$S'."
+msgstr ""
+"Se aștepta „not” în timpul analizării condiției supports dar s-a găsit "
+"„%1$S”."
 
 #: PESupportsGroupRuleStart
 msgid "Expected '{' to begin @supports rule but found '%1$S'."
-msgstr "Expected '{' to begin @supports rule but found '%1$S'."
+msgstr "Se aștepta „{” pentru a începe regula @supports dar s-a găsit „%1$S”."
 
 #: PEFilterEOF
 msgid "filter"
@@ -697,19 +707,20 @@ msgstr "filtru"
 
 #: PEExpectedNoneOrURL
 msgid "Expected 'none' or URL but found '%1$S'."
-msgstr "Solicitat 'none' sau URL dar s-a găsit '%1$S'."
+msgstr "Se aștepta „none” sau adresă web dar s-a găsit „%1$S”."
 
 #: PEExpectedNoneOrURLOrFilterFunction
 msgid "Expected 'none', URL, or filter function but found '%1$S'."
-msgstr "Solicitat 'none', URL sau funcția filtru, dar s-a găsit '%1$S'."
+msgstr ""
+"Se aștepta „none”, adresă web sau funcția filtru, dar s-a găsit „%1$S”."
 
 #: PEExpectedNonnegativeNP
 msgid "Expected non-negative number or percentage."
-msgstr "Se aștepta un număr pozitiv sau procent."
+msgstr "Se aștepta un număr non-negativ sau procentaj."
 
 #: PEFilterFunctionArgumentsParsingError
 msgid "Error in parsing arguments for filter function."
-msgstr "Error in parsing arguments for filter function."
+msgstr "Eroare la analizarea argumentelor pentru funcția de filtrare."
 
 #: PEVariableEOF
 msgid "variable"
@@ -721,7 +732,8 @@ msgstr "Se aștepta valoarea variabilei, dar s-a găsit „%1$S”."
 
 #: PEValueWithVariablesParsingError
 msgid "Error in parsing value for '%1$S' after substituting variables."
-msgstr "Error in parsing value for '%1$S' after substituting variables."
+msgstr ""
+"Eroare la analizarea valorii pentru „%1$S” după substituirea variabilelor."
 
 #: PEValueWithVariablesFallbackInherit
 msgid "Falling back to 'inherit'."
@@ -739,7 +751,7 @@ msgstr "Property contained reference to invalid variable."
 msgid "Found invalid token '%1$S' at top level of variable reference fallback."
 msgstr ""
 "S-a găsit un token invalid „%1$S” la nivelul superior al rezervei pentru "
-"variabila de rezervă."
+"variabila de referință."
 
 #: PEExpectedVariableNameEOF
 msgid "identifier for variable name"
@@ -752,12 +764,12 @@ msgstr ""
 
 #: PEExpectedVariableFallback
 msgid "Expected variable reference fallback after ','."
-msgstr "Expected variable reference fallback after ','."
+msgstr "Se aștepta rezerva pentru variabila de referință după ','."
 
 #: PEExpectedVariableCommaOrCloseParen
 msgid ""
 "Expected ',' or ')' after variable name in variable reference but found "
 "'%1$S'."
 msgstr ""
-"Expected ',' or ')' after variable name in variable reference but found "
-"'%1$S'."
+"Se aștepta ',' sau ')' după numele variabilei în referința variabilei dar s-"
+"a găsit '%1$S'."
