@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-27 01:18+0000\n"
+"POT-Creation-Date: 2015-03-30 19:16+0000\n"
 "PO-Revision-Date: 2015-03-27 08:40+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1427445614.000000\n"
@@ -54,10 +54,10 @@ msgstr "t"
 msgid "[Folder Name]"
 msgstr "[Mjeno rjadowaka]"
 
-#: xpinstallPromptWarning
+#: xpinstallPromptMessage
+#, fuzzy
 msgid ""
-"%S prevented this site (%S) from asking you to install software on your "
-"computer."
+"%S prevented this site from asking you to install software on your computer."
 msgstr ""
 "%S haćeše tute sydło (%S), zo so was wo dowolnosć praša softwaru na wašim "
 "ličaku instalować."
@@ -95,36 +95,63 @@ msgstr "Zmóžnić"
 msgid "n"
 msgstr "m"
 
-#. # LOCALIZATION NOTE (addonDownloading, addonDownloadCancelled, addonDownloadRestart):
+#. # LOCALIZATION NOTE (addonDownloadingAndVerifying):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # Also see https://bugzilla.mozilla.org/show_bug.cgi?id=570012 for mockups
-#: addonDownloading
-msgid "Add-on downloading;Add-ons downloading"
+#: addonDownloadingAndVerifying
+msgid "Downloading and verifying add-on…;Downloading and verifying #1 add-ons…"
 msgstr ""
-"Sćehnjenje přidatka;Sćehnjenje přidatkow;Sćehnjenje přidatkow;Sćehnjenje "
-"přidatkow"
 
-#: addonDownloadCancelled
-msgid "Add-on download cancelled.;Add-on downloads cancelled."
-msgstr ""
-"Sćehnjenje přidatka přetorhnjene.;Sćehnjenje přidatkow přetorhnjene.;"
-"Sćehnjenje přidatkow přetorhnjene.;Sćehnjenje přidatkow přetorhnjene."
+#: addonDownloadVerifying
+msgid "Verifying"
+msgstr "Přepruwuje so"
 
-#: addonDownloadRestart
-msgid "Restart Download;Restart Downloads"
-msgstr ""
-"Sćehnjenje znowa startować;Sćehnjeni znowa startować;Sćehnjenja znowa "
-"startować;Sćehnjenja znowa startować"
-
-#: addonDownloadRestart.accessKey
-msgctxt "addonDownloadRestart.accessKey"
-msgid "R"
-msgstr "S"
-
-#: addonDownloadCancelTooltip
-msgid "Cancel"
+#: addonInstall.cancelButton.label addonInstall.cancelButton.accesskey
+#, fuzzy
+msgid "&Cancel"
 msgstr "Přetorhnyć"
+
+#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
+#, fuzzy
+msgid "&Install"
+msgstr "Instalować"
+
+#. # LOCALIZATION NOTE (addonConfirmInstallMessage):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName
+#. # #2 is the number of add-ons being installed
+#: addonConfirmInstall.message
+msgid ""
+"This site would like to install an add-on in #1:;This site would like to "
+"install #2 add-ons in #1:"
+msgstr ""
+
+#: addonwatch.slow
+msgid "%1$S might be making %2$S run slowly"
+msgstr ""
+
+#: addonwatch.disable.label addonwatch.disable.accesskey
+msgid "&Disable %S"
+msgstr ""
+
+#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
+msgid "&Ignore for now"
+msgstr ""
+
+#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
+msgid "Ignore &permanently"
+msgstr ""
+
+#: addonwatch.restart.message
+msgid "To disable %1$S you must restart %2$S"
+msgstr ""
+
+#: addonwatch.restart.label addonwatch.restart.accesskey
+#, fuzzy
+msgid "&Restart %S"
+msgstr "%S znowa startować"
 
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
@@ -222,6 +249,12 @@ msgid ""
 msgstr ""
 "#1 njeda so instalować, dokelž je wulke riziko, zo wón stabilnostne abo "
 "wěstotne problemy zawinuje."
+
+#. # LOCALIZATION NOTE (deveditionTheme.name): This should be nearly the brand name for aurora.
+#. # See browser/branding/aurora/locales/*/brand.properties
+#: deveditionTheme.name
+msgid "Developer Edition"
+msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
 #. # the host name of the site.
@@ -1023,12 +1056,12 @@ msgid "Restart"
 msgstr "Znowa startować"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
-#. # "true" (spelled and capitalized exactly that way) to show the "Character
+#. # "true" (spelled and capitalized exactly that way) to show the "Text
 #. # Encoding" menu in the main Firefox button on Windows. Any other value will
-#. # hide it. Regardless of the value of this setting, the "Character Encoding"
+#. # hide it. Regardless of the value of this setting, the "Text Encoding"
 #. # menu will always be accessible via the "Web Developer" menu.
 #. # This is not a string to translate; it just controls whether the menu shows
-#. # up in the Firefox button. If users frequently use the "Character Encoding"
+#. # up in the Firefox button. If users frequently use the "Text Encoding"
 #. # menu, set this to "true". Otherwise, you can leave it as "false".
 #: browser.menu.showCharacterEncoding
 msgid "false"
@@ -1835,6 +1868,21 @@ msgstr "Wjeselće so na webstronach bjez šmjatańcy z čitanskim napohladom"
 #: readingList.prepopulatedArticles.supportSync
 msgid "Access your Reading List anywhere with %S"
 msgstr "Mějće z %S wšudźe přistup na swoju čitansku lisćinu"
+
+#~ msgid "Add-on downloading;Add-ons downloading"
+#~ msgstr ""
+#~ "Sćehnjenje přidatka;Sćehnjenje přidatkow;Sćehnjenje přidatkow;Sćehnjenje "
+#~ "přidatkow"
+
+#~ msgid "Add-on download cancelled.;Add-on downloads cancelled."
+#~ msgstr ""
+#~ "Sćehnjenje přidatka přetorhnjene.;Sćehnjenje přidatkow přetorhnjene.;"
+#~ "Sćehnjenje přidatkow přetorhnjene.;Sćehnjenje přidatkow přetorhnjene."
+
+#~ msgid "Restart Download;Restart Downloads"
+#~ msgstr ""
+#~ "Sćehnjenje znowa startować;Sćehnjeni znowa startować;Sćehnjenja znowa "
+#~ "startować;Sćehnjenja znowa startować"
 
 #~ msgid ""
 #~ "This website (%1$S) is attempting to store more than %2$S MB of data on "

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-27 01:18+0000\n"
+"POT-Creation-Date: 2015-03-30 19:16+0000\n"
 "PO-Revision-Date: 2015-03-29 14:38+0000\n"
 "Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1427639906.000000\n"
@@ -53,10 +53,10 @@ msgstr "C"
 msgid "[Folder Name]"
 msgstr "[Enw Ffolder]"
 
-#: xpinstallPromptWarning
+#: xpinstallPromptMessage
+#, fuzzy
 msgid ""
-"%S prevented this site (%S) from asking you to install software on your "
-"computer."
+"%S prevented this site from asking you to install software on your computer."
 msgstr ""
 "Rhwystrodd %S y wefan (%S) rhag gofyn i chi osod meddalwedd ar eich "
 "cyfrifiadur."
@@ -92,30 +92,62 @@ msgstr "Galluogi"
 msgid "n"
 msgstr "G"
 
-#. # LOCALIZATION NOTE (addonDownloading, addonDownloadCancelled, addonDownloadRestart):
+#. # LOCALIZATION NOTE (addonDownloadingAndVerifying):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # Also see https://bugzilla.mozilla.org/show_bug.cgi?id=570012 for mockups
-#: addonDownloading
-msgid "Add-on downloading;Add-ons downloading"
-msgstr "Llwytho Ychwanegyn i Lawr;Llwytho Ychwanegion i Lawr"
+#: addonDownloadingAndVerifying
+msgid "Downloading and verifying add-on…;Downloading and verifying #1 add-ons…"
+msgstr ""
 
-#: addonDownloadCancelled
-msgid "Add-on download cancelled.;Add-on downloads cancelled."
-msgstr "Diddymu llwytho ychwanegyn i lawr;Diddymu llwytho ychwanegion i lawr."
+#: addonDownloadVerifying
+msgid "Verifying"
+msgstr "Dilysu"
 
-#: addonDownloadRestart
-msgid "Restart Download;Restart Downloads"
-msgstr "Ailgychwyn Llwytho i Lawr;Ailgychwyn Llwytho i Lawr"
+#: addonInstall.cancelButton.label addonInstall.cancelButton.accesskey
+msgid "&Cancel"
+msgstr "D&iddymu"
 
-#: addonDownloadRestart.accessKey
-msgctxt "addonDownloadRestart.accessKey"
-msgid "R"
-msgstr "A"
+#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
+#, fuzzy
+msgid "&Install"
+msgstr "Gosod"
 
-#: addonDownloadCancelTooltip
-msgid "Cancel"
-msgstr "Diddymu"
+#. # LOCALIZATION NOTE (addonConfirmInstallMessage):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName
+#. # #2 is the number of add-ons being installed
+#: addonConfirmInstall.message
+msgid ""
+"This site would like to install an add-on in #1:;This site would like to "
+"install #2 add-ons in #1:"
+msgstr ""
+
+#: addonwatch.slow
+msgid "%1$S might be making %2$S run slowly"
+msgstr ""
+
+#: addonwatch.disable.label addonwatch.disable.accesskey
+msgid "&Disable %S"
+msgstr ""
+
+#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
+msgid "&Ignore for now"
+msgstr ""
+
+#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
+msgid "Ignore &permanently"
+msgstr ""
+
+#: addonwatch.restart.message
+msgid "To disable %1$S you must restart %2$S"
+msgstr ""
+
+#: addonwatch.restart.label addonwatch.restart.accesskey
+#, fuzzy
+msgid "&Restart %S"
+msgstr "Ailgychwyn %S"
 
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
@@ -213,6 +245,12 @@ msgid ""
 msgstr ""
 "Nid oedd modd gosod #1 am fod risg uchel iddo achosi problemau sefydlogrwydd "
 "a diogelwch."
+
+#. # LOCALIZATION NOTE (deveditionTheme.name): This should be nearly the brand name for aurora.
+#. # See browser/branding/aurora/locales/*/brand.properties
+#: deveditionTheme.name
+msgid "Developer Edition"
+msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
 #. # the host name of the site.
@@ -1006,12 +1044,12 @@ msgid "Restart"
 msgstr "Ailgychwyn"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
-#. # "true" (spelled and capitalized exactly that way) to show the "Character
+#. # "true" (spelled and capitalized exactly that way) to show the "Text
 #. # Encoding" menu in the main Firefox button on Windows. Any other value will
-#. # hide it. Regardless of the value of this setting, the "Character Encoding"
+#. # hide it. Regardless of the value of this setting, the "Text Encoding"
 #. # menu will always be accessible via the "Web Developer" menu.
 #. # This is not a string to translate; it just controls whether the menu shows
-#. # up in the Firefox button. If users frequently use the "Character Encoding"
+#. # up in the Firefox button. If users frequently use the "Text Encoding"
 #. # menu, set this to "true". Otherwise, you can leave it as "false".
 #: browser.menu.showCharacterEncoding
 msgid "false"
@@ -1822,6 +1860,19 @@ msgstr "Mwynhewch dudalennau Gwe clir gyda'r Golwg Darllen"
 msgid "Access your Reading List anywhere with %S"
 msgstr "Cewch fynediad yn unman i'ch Rhestr Ddarllen gyda %S"
 
+#~ msgid "Add-on downloading;Add-ons downloading"
+#~ msgstr "Llwytho Ychwanegyn i Lawr;Llwytho Ychwanegion i Lawr"
+
+#~ msgid "Add-on download cancelled.;Add-on downloads cancelled."
+#~ msgstr ""
+#~ "Diddymu llwytho ychwanegyn i lawr;Diddymu llwytho ychwanegion i lawr."
+
+#~ msgid "Restart Download;Restart Downloads"
+#~ msgstr "Ailgychwyn Llwytho i Lawr;Ailgychwyn Llwytho i Lawr"
+
+#~ msgid "Cancel"
+#~ msgstr "Diddymu"
+
 #~ msgid ""
 #~ "This website (%1$S) is attempting to store more than %2$S MB of data on "
 #~ "your computer for offline use."
@@ -2222,9 +2273,6 @@ msgstr "Cewch fynediad yn unman i'ch Rhestr Ddarllen gyda %S"
 
 #~ msgid "&Start Private Browsing"
 #~ msgstr "&Dechrau Pori Preifat"
-
-#~ msgid "&Cancel"
-#~ msgstr "D&iddymu"
 
 #~ msgid "&Do not show this message again"
 #~ msgstr "&Peidio dangos y neges hon eto"
