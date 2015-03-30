@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-27 01:18+0000\n"
+"POT-Creation-Date: 2015-03-30 19:16+0000\n"
 "PO-Revision-Date: 2015-03-27 19:18+0000\n"
 "Last-Translator: Michael <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1427483910.000000\n"
@@ -55,10 +55,10 @@ msgstr "S"
 msgid "[Folder Name]"
 msgstr "[Ainm pasgain]"
 
-#: xpinstallPromptWarning
+#: xpinstallPromptMessage
+#, fuzzy
 msgid ""
-"%S prevented this site (%S) from asking you to install software on your "
-"computer."
+"%S prevented this site from asking you to install software on your computer."
 msgstr ""
 "Chum %S an làrach seo (%S) o iarrtas a chur thugad gus bathar-bog a stàladh "
 "air a' choimpiutair agad."
@@ -95,32 +95,62 @@ msgstr "Cuir an comas"
 msgid "n"
 msgstr "n"
 
-#. # LOCALIZATION NOTE (addonDownloading, addonDownloadCancelled, addonDownloadRestart):
+#. # LOCALIZATION NOTE (addonDownloadingAndVerifying):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # Also see https://bugzilla.mozilla.org/show_bug.cgi?id=570012 for mockups
-#: addonDownloading
-msgid "Add-on downloading;Add-ons downloading"
-msgstr "Tha tuilleadan 'ga luchdadh a-nuas;Tha tuilleadan 'gan luchdadh a-nuas"
-
-#: addonDownloadCancelled
-msgid "Add-on download cancelled.;Add-on downloads cancelled."
+#: addonDownloadingAndVerifying
+msgid "Downloading and verifying add-on…;Downloading and verifying #1 add-ons…"
 msgstr ""
-"Chaidh sgur de luchdadh a-nuas an tuilleadain.;Chaidh sgur de luchdadh a-"
-"nuas nan tuilleadan."
 
-#: addonDownloadRestart
-msgid "Restart Download;Restart Downloads"
-msgstr "Ath-thòisich air a luchdadh a-nuas;Ath-thòisich air an luchdadh a-nuas"
+#: addonDownloadVerifying
+msgid "Verifying"
+msgstr "'Ga dhearbhadh"
 
-#: addonDownloadRestart.accessKey
-msgctxt "addonDownloadRestart.accessKey"
-msgid "R"
-msgstr "R"
+#: addonInstall.cancelButton.label addonInstall.cancelButton.accesskey
+msgid "&Cancel"
+msgstr "&Sguir dheth"
 
-#: addonDownloadCancelTooltip
-msgid "Cancel"
-msgstr "Sguir dheth"
+#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
+#, fuzzy
+msgid "&Install"
+msgstr "Stàlaich"
+
+#. # LOCALIZATION NOTE (addonConfirmInstallMessage):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName
+#. # #2 is the number of add-ons being installed
+#: addonConfirmInstall.message
+msgid ""
+"This site would like to install an add-on in #1:;This site would like to "
+"install #2 add-ons in #1:"
+msgstr ""
+
+#: addonwatch.slow
+msgid "%1$S might be making %2$S run slowly"
+msgstr ""
+
+#: addonwatch.disable.label addonwatch.disable.accesskey
+msgid "&Disable %S"
+msgstr ""
+
+#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
+msgid "&Ignore for now"
+msgstr ""
+
+#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
+msgid "Ignore &permanently"
+msgstr ""
+
+#: addonwatch.restart.message
+msgid "To disable %1$S you must restart %2$S"
+msgstr ""
+
+#: addonwatch.restart.label addonwatch.restart.accesskey
+#, fuzzy
+msgid "&Restart %S"
+msgstr "Ath-thòisich %S"
 
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
@@ -228,6 +258,12 @@ msgid ""
 msgstr ""
 "Cha do ghabh #1 a stàladh a chionn 's bheil cunnart mòr gun adhbharaich e "
 "duilgheadasan seasmhachd no tèarainteachd."
+
+#. # LOCALIZATION NOTE (deveditionTheme.name): This should be nearly the brand name for aurora.
+#. # See browser/branding/aurora/locales/*/brand.properties
+#: deveditionTheme.name
+msgid "Developer Edition"
+msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
 #. # the host name of the site.
@@ -1036,12 +1072,12 @@ msgid "Restart"
 msgstr "Ath-thòisich"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
-#. # "true" (spelled and capitalized exactly that way) to show the "Character
+#. # "true" (spelled and capitalized exactly that way) to show the "Text
 #. # Encoding" menu in the main Firefox button on Windows. Any other value will
-#. # hide it. Regardless of the value of this setting, the "Character Encoding"
+#. # hide it. Regardless of the value of this setting, the "Text Encoding"
 #. # menu will always be accessible via the "Web Developer" menu.
 #. # This is not a string to translate; it just controls whether the menu shows
-#. # up in the Firefox button. If users frequently use the "Character Encoding"
+#. # up in the Firefox button. If users frequently use the "Text Encoding"
 #. # menu, set this to "true". Otherwise, you can leave it as "false".
 #: browser.menu.showCharacterEncoding
 msgid "false"
@@ -1871,6 +1907,22 @@ msgstr ""
 msgid "Access your Reading List anywhere with %S"
 msgstr "Faigh cothrom air an liosta-leughaidh agad àite sam bith le %S"
 
+#~ msgid "Add-on downloading;Add-ons downloading"
+#~ msgstr ""
+#~ "Tha tuilleadan 'ga luchdadh a-nuas;Tha tuilleadan 'gan luchdadh a-nuas"
+
+#~ msgid "Add-on download cancelled.;Add-on downloads cancelled."
+#~ msgstr ""
+#~ "Chaidh sgur de luchdadh a-nuas an tuilleadain.;Chaidh sgur de luchdadh a-"
+#~ "nuas nan tuilleadan."
+
+#~ msgid "Restart Download;Restart Downloads"
+#~ msgstr ""
+#~ "Ath-thòisich air a luchdadh a-nuas;Ath-thòisich air an luchdadh a-nuas"
+
+#~ msgid "Cancel"
+#~ msgstr "Sguir dheth"
+
 #~ msgid ""
 #~ "This website (%1$S) is attempting to store more than %2$S MB of data on "
 #~ "your computer for offline use."
@@ -2270,9 +2322,6 @@ msgstr "Faigh cothrom air an liosta-leughaidh agad àite sam bith le %S"
 
 #~ msgid "&Start Private Browsing"
 #~ msgstr "Tòi&sich air brabhsadh prìobhaideach"
-
-#~ msgid "&Cancel"
-#~ msgstr "&Sguir dheth"
 
 #~ msgid "&Do not show this message again"
 #~ msgstr "&Na seall an teachdaireachd seo a-rithist"

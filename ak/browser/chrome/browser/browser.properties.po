@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-27 01:18+0000\n"
+"POT-Creation-Date: 2015-03-30 19:16+0000\n"
 "PO-Revision-Date: 2014-02-13 13:55+0000\n"
 "Last-Translator: arky <hitmanarky@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,10 +53,10 @@ msgstr ""
 msgid "[Folder Name]"
 msgstr "[Folda Din]"
 
-#: xpinstallPromptWarning
+#: xpinstallPromptMessage
+#, fuzzy
 msgid ""
-"%S prevented this site (%S) from asking you to install software on your "
-"computer."
+"%S prevented this site from asking you to install software on your computer."
 msgstr ""
 "%S siiw saet yi (%S) sɛ obebisa wo sɛ wo pɛ sɛ wo instɔl sɔftwɛɛ gu wo "
 "kɔmputa no so."
@@ -91,30 +91,63 @@ msgstr "Kenyan"
 msgid "n"
 msgstr ""
 
-#. # LOCALIZATION NOTE (addonDownloading, addonDownloadCancelled, addonDownloadRestart):
+#. # LOCALIZATION NOTE (addonDownloadingAndVerifying):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # Also see https://bugzilla.mozilla.org/show_bug.cgi?id=570012 for mockups
-#: addonDownloading
-msgid "Add-on downloading;Add-ons downloading"
-msgstr "Nkaho no retwe;Nkaho nom retwe"
-
-#: addonDownloadCancelled
-msgid "Add-on download cancelled.;Add-on downloads cancelled."
-msgstr "Nkaho atwe no mu etwa.;Nkaho nom atwe mu etwa"
-
-#: addonDownloadRestart
-msgid "Restart Download;Restart Downloads"
-msgstr "Sanhyɛ atwe no ase;Sanhyɛ atwe nom ase"
-
-#: addonDownloadRestart.accessKey
-msgctxt "addonDownloadRestart.accessKey"
-msgid "R"
+#: addonDownloadingAndVerifying
+msgid "Downloading and verifying add-on…;Downloading and verifying #1 add-ons…"
 msgstr ""
 
-#: addonDownloadCancelTooltip
-msgid "Cancel"
-msgstr "Twa-mu"
+#: addonDownloadVerifying
+msgid "Verifying"
+msgstr "Regye-ato-mu"
+
+#: addonInstall.cancelButton.label addonInstall.cancelButton.accesskey
+msgid "&Cancel"
+msgstr "T&wa-mu"
+
+#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
+#, fuzzy
+msgid "&Install"
+msgstr "Instɔɔle"
+
+#. # LOCALIZATION NOTE (addonConfirmInstallMessage):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName
+#. # #2 is the number of add-ons being installed
+#: addonConfirmInstall.message
+msgid ""
+"This site would like to install an add-on in #1:;This site would like to "
+"install #2 add-ons in #1:"
+msgstr ""
+
+#: addonwatch.slow
+msgid "%1$S might be making %2$S run slowly"
+msgstr ""
+
+#: addonwatch.disable.label addonwatch.disable.accesskey
+#, fuzzy
+msgid "&Disable %S"
+msgstr "Dum %S"
+
+#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
+msgid "&Ignore for now"
+msgstr ""
+
+#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
+msgid "Ignore &permanently"
+msgstr ""
+
+#: addonwatch.restart.message
+msgid "To disable %1$S you must restart %2$S"
+msgstr ""
+
+#: addonwatch.restart.label addonwatch.restart.accesskey
+#, fuzzy
+msgid "&Restart %S"
+msgstr "San-hyɛ %s ase"
 
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
@@ -202,6 +235,12 @@ msgid ""
 "security problems."
 msgstr ""
 "Enntumi enninstɔl #1 efiri sɛ obetumi de faako-gyina ne bambɔ ho haw aba."
+
+#. # LOCALIZATION NOTE (deveditionTheme.name): This should be nearly the brand name for aurora.
+#. # See browser/branding/aurora/locales/*/brand.properties
+#: deveditionTheme.name
+msgid "Developer Edition"
+msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
 #. # the host name of the site.
@@ -1018,12 +1057,12 @@ msgid "Restart"
 msgstr "San-hyɛ-ase"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
-#. # "true" (spelled and capitalized exactly that way) to show the "Character
+#. # "true" (spelled and capitalized exactly that way) to show the "Text
 #. # Encoding" menu in the main Firefox button on Windows. Any other value will
-#. # hide it. Regardless of the value of this setting, the "Character Encoding"
+#. # hide it. Regardless of the value of this setting, the "Text Encoding"
 #. # menu will always be accessible via the "Web Developer" menu.
 #. # This is not a string to translate; it just controls whether the menu shows
-#. # up in the Firefox button. If users frequently use the "Character Encoding"
+#. # up in the Firefox button. If users frequently use the "Text Encoding"
 #. # menu, set this to "true". Otherwise, you can leave it as "false".
 #: browser.menu.showCharacterEncoding
 msgid "false"
@@ -1847,6 +1886,18 @@ msgstr ""
 msgid "Access your Reading List anywhere with %S"
 msgstr ""
 
+#~ msgid "Add-on downloading;Add-ons downloading"
+#~ msgstr "Nkaho no retwe;Nkaho nom retwe"
+
+#~ msgid "Add-on download cancelled.;Add-on downloads cancelled."
+#~ msgstr "Nkaho atwe no mu etwa.;Nkaho nom atwe mu etwa"
+
+#~ msgid "Restart Download;Restart Downloads"
+#~ msgstr "Sanhyɛ atwe no ase;Sanhyɛ atwe nom ase"
+
+#~ msgid "Cancel"
+#~ msgstr "Twa-mu"
+
 #~ msgid ""
 #~ "This website (%1$S) is attempting to store more than %2$S MB of data on "
 #~ "your computer for offline use."
@@ -2235,9 +2286,6 @@ msgstr ""
 
 #~ msgid "&Start Private Browsing"
 #~ msgstr "Hyɛ Braw&sen Praevet Ase"
-
-#~ msgid "&Cancel"
-#~ msgstr "T&wa-mu"
 
 #~ msgid "&Do not show this message again"
 #~ msgstr "Ɛn&nkyerɛ nkrato yi bio"

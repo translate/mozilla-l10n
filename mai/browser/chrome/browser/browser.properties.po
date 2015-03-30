@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-27 01:18+0000\n"
+"POT-Creation-Date: 2015-03-30 19:16+0000\n"
 "PO-Revision-Date: 2015-03-09 14:17+0000\n"
 "Last-Translator: Sangeeta <sangeeta_0975@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,10 +52,10 @@ msgstr "S"
 msgid "[Folder Name]"
 msgstr "[फोल्डर नाम]"
 
-#: xpinstallPromptWarning
+#: xpinstallPromptMessage
+#, fuzzy
 msgid ""
-"%S prevented this site (%S) from asking you to install software on your "
-"computer."
+"%S prevented this site from asking you to install software on your computer."
 msgstr ""
 "%S ने एहि साइट (%S) केँ अहाँक कंप्यूटर पर साफ्टवेयर संस्थापनक लेल अहाँसँ पूछब सँ रोकए अछि."
 
@@ -89,30 +89,62 @@ msgstr "सक्रिय करू "
 msgid "n"
 msgstr "n"
 
-#. # LOCALIZATION NOTE (addonDownloading, addonDownloadCancelled, addonDownloadRestart):
+#. # LOCALIZATION NOTE (addonDownloadingAndVerifying):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # Also see https://bugzilla.mozilla.org/show_bug.cgi?id=570012 for mockups
-#: addonDownloading
-msgid "Add-on downloading;Add-ons downloading"
-msgstr "सहयुक्ति डाउनलोडिंग;सहयुक्ति डाउनलोडिंग"
+#: addonDownloadingAndVerifying
+msgid "Downloading and verifying add-on…;Downloading and verifying #1 add-ons…"
+msgstr ""
 
-#: addonDownloadCancelled
-msgid "Add-on download cancelled.;Add-on downloads cancelled."
-msgstr "सहयुक्ति डाउनलोड रद्द.;सहयुक्ति डाउनलोड रद्द"
+#: addonDownloadVerifying
+msgid "Verifying"
+msgstr "जाँच रहल अछि"
 
-#: addonDownloadRestart
-msgid "Restart Download;Restart Downloads"
-msgstr "डाउनलोड फेर आरंभ करू ;डाउनलोड केँ फेर आरंभ करू "
+#: addonInstall.cancelButton.label addonInstall.cancelButton.accesskey
+msgid "&Cancel"
+msgstr "रद्द करू (&C)"
 
-#: addonDownloadRestart.accessKey
-msgctxt "addonDownloadRestart.accessKey"
-msgid "R"
-msgstr "R"
+#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
+#, fuzzy
+msgid "&Install"
+msgstr "संस्थापित करू"
 
-#: addonDownloadCancelTooltip
-msgid "Cancel"
-msgstr "रद्द करू "
+#. # LOCALIZATION NOTE (addonConfirmInstallMessage):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName
+#. # #2 is the number of add-ons being installed
+#: addonConfirmInstall.message
+msgid ""
+"This site would like to install an add-on in #1:;This site would like to "
+"install #2 add-ons in #1:"
+msgstr ""
+
+#: addonwatch.slow
+msgid "%1$S might be making %2$S run slowly"
+msgstr ""
+
+#: addonwatch.disable.label addonwatch.disable.accesskey
+msgid "&Disable %S"
+msgstr ""
+
+#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
+msgid "&Ignore for now"
+msgstr ""
+
+#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
+msgid "Ignore &permanently"
+msgstr ""
+
+#: addonwatch.restart.message
+msgid "To disable %1$S you must restart %2$S"
+msgstr ""
+
+#: addonwatch.restart.label addonwatch.restart.accesskey
+#, fuzzy
+msgid "&Restart %S"
+msgstr "%S फेर आरंभ  करू "
 
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
@@ -204,6 +236,12 @@ msgid ""
 msgstr ""
 "#1 संस्थापित नहि कएल जाए सकल की एकटा एकरा सँग स्थायित्व अथवा सुरक्षा समस्या क अत्यधिक "
 "जोखिम अछि."
+
+#. # LOCALIZATION NOTE (deveditionTheme.name): This should be nearly the brand name for aurora.
+#. # See browser/branding/aurora/locales/*/brand.properties
+#: deveditionTheme.name
+msgid "Developer Edition"
+msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
 #. # the host name of the site.
@@ -991,12 +1029,12 @@ msgid "Restart"
 msgstr "फेर आरंभ करू"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
-#. # "true" (spelled and capitalized exactly that way) to show the "Character
+#. # "true" (spelled and capitalized exactly that way) to show the "Text
 #. # Encoding" menu in the main Firefox button on Windows. Any other value will
-#. # hide it. Regardless of the value of this setting, the "Character Encoding"
+#. # hide it. Regardless of the value of this setting, the "Text Encoding"
 #. # menu will always be accessible via the "Web Developer" menu.
 #. # This is not a string to translate; it just controls whether the menu shows
-#. # up in the Firefox button. If users frequently use the "Character Encoding"
+#. # up in the Firefox button. If users frequently use the "Text Encoding"
 #. # menu, set this to "true". Otherwise, you can leave it as "false".
 #: browser.menu.showCharacterEncoding
 msgid "false"
@@ -1783,6 +1821,18 @@ msgstr ""
 msgid "Access your Reading List anywhere with %S"
 msgstr ""
 
+#~ msgid "Add-on downloading;Add-ons downloading"
+#~ msgstr "सहयुक्ति डाउनलोडिंग;सहयुक्ति डाउनलोडिंग"
+
+#~ msgid "Add-on download cancelled.;Add-on downloads cancelled."
+#~ msgstr "सहयुक्ति डाउनलोड रद्द.;सहयुक्ति डाउनलोड रद्द"
+
+#~ msgid "Restart Download;Restart Downloads"
+#~ msgstr "डाउनलोड फेर आरंभ करू ;डाउनलोड केँ फेर आरंभ करू "
+
+#~ msgid "Cancel"
+#~ msgstr "रद्द करू "
+
 #~ msgid ""
 #~ "This website (%1$S) is attempting to store more than %2$S MB of data on "
 #~ "your computer for offline use."
@@ -2080,9 +2130,6 @@ msgstr ""
 
 #~ msgid "&Start Private Browsing"
 #~ msgstr "निज ब्राउज़िंग आरंभ करू (&S)"
-
-#~ msgid "&Cancel"
-#~ msgstr "रद्द करू (&C)"
 
 #~ msgid "&Do not show this message again"
 #~ msgstr "ई संदेश केँ फेर नहि देखाउ (&D)"

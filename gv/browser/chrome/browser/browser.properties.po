@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-27 01:18+0000\n"
+"POT-Creation-Date: 2015-03-30 19:16+0000\n"
 "PO-Revision-Date: 2013-02-28 15:35+0000\n"
 "Last-Translator: greinneyder <greinneyder@mhf.org.im>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,11 +58,10 @@ msgstr ""
 msgid "[Folder Name]"
 msgstr "[Folder Name]"
 
-#: xpinstallPromptWarning
+#: xpinstallPromptMessage
 #, fuzzy
 msgid ""
-"%S prevented this site (%S) from asking you to install software on your "
-"computer."
+"%S prevented this site from asking you to install software on your computer."
 msgstr ""
 "%S prevented this site (%S) from asking you to install software on your "
 "computer."
@@ -102,36 +101,62 @@ msgstr "Enable"
 msgid "n"
 msgstr ""
 
-#. # LOCALIZATION NOTE (addonDownloading, addonDownloadCancelled, addonDownloadRestart):
+#. # LOCALIZATION NOTE (addonDownloadingAndVerifying):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # Also see https://bugzilla.mozilla.org/show_bug.cgi?id=570012 for mockups
-#: addonDownloading
-#, fuzzy
-msgid "Add-on downloading;Add-ons downloading"
-msgstr "Stoo dy cur er laadey neose;Stooyn dy cur er laadey neose"
-
-#: addonDownloadCancelled
-#, fuzzy
-msgid "Add-on download cancelled.;Add-on downloads cancelled."
-msgstr ""
-"Laadey neose red dy cur er currit ass.;Laadey neose stoo dy cur er currit "
-"ass."
-
-#: addonDownloadRestart
-#, fuzzy
-msgid "Restart Download;Restart Downloads"
-msgstr "Cur laadey neose er reesht;Cur laadeyn neose er reesht"
-
-#: addonDownloadRestart.accessKey
-msgctxt "addonDownloadRestart.accessKey"
-msgid "R"
+#: addonDownloadingAndVerifying
+msgid "Downloading and verifying add-on…;Downloading and verifying #1 add-ons…"
 msgstr ""
 
-#: addonDownloadCancelTooltip
+#: addonDownloadVerifying
+msgid "Verifying"
+msgstr ""
+
+#: addonInstall.cancelButton.label addonInstall.cancelButton.accesskey
 #, fuzzy
-msgid "Cancel"
-msgstr "Cur ass"
+msgid "&Cancel"
+msgstr "&Cur ass"
+
+#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
+#, fuzzy
+msgid "&Install"
+msgstr "Cur 'syn co`earrooder"
+
+#. # LOCALIZATION NOTE (addonConfirmInstallMessage):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName
+#. # #2 is the number of add-ons being installed
+#: addonConfirmInstall.message
+msgid ""
+"This site would like to install an add-on in #1:;This site would like to "
+"install #2 add-ons in #1:"
+msgstr ""
+
+#: addonwatch.slow
+msgid "%1$S might be making %2$S run slowly"
+msgstr ""
+
+#: addonwatch.disable.label addonwatch.disable.accesskey
+msgid "&Disable %S"
+msgstr ""
+
+#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
+msgid "&Ignore for now"
+msgstr ""
+
+#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
+msgid "Ignore &permanently"
+msgstr ""
+
+#: addonwatch.restart.message
+msgid "To disable %1$S you must restart %2$S"
+msgstr ""
+
+#: addonwatch.restart.label addonwatch.restart.accesskey
+msgid "&Restart %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
@@ -214,6 +239,12 @@ msgstr ""
 msgid ""
 "#1 could not be installed because it has a high risk of causing stability or "
 "security problems."
+msgstr ""
+
+#. # LOCALIZATION NOTE (deveditionTheme.name): This should be nearly the brand name for aurora.
+#. # See browser/branding/aurora/locales/*/brand.properties
+#: deveditionTheme.name
+msgid "Developer Edition"
 msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
@@ -1076,12 +1107,12 @@ msgid "Restart"
 msgstr "&Restart"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
-#. # "true" (spelled and capitalized exactly that way) to show the "Character
+#. # "true" (spelled and capitalized exactly that way) to show the "Text
 #. # Encoding" menu in the main Firefox button on Windows. Any other value will
-#. # hide it. Regardless of the value of this setting, the "Character Encoding"
+#. # hide it. Regardless of the value of this setting, the "Text Encoding"
 #. # menu will always be accessible via the "Web Developer" menu.
 #. # This is not a string to translate; it just controls whether the menu shows
-#. # up in the Firefox button. If users frequently use the "Character Encoding"
+#. # up in the Firefox button. If users frequently use the "Text Encoding"
 #. # menu, set this to "true". Otherwise, you can leave it as "false".
 #: browser.menu.showCharacterEncoding
 #, fuzzy
@@ -1873,6 +1904,24 @@ msgid "Access your Reading List anywhere with %S"
 msgstr ""
 
 #, fuzzy
+#~ msgid "Add-on downloading;Add-ons downloading"
+#~ msgstr "Stoo dy cur er laadey neose;Stooyn dy cur er laadey neose"
+
+#, fuzzy
+#~ msgid "Add-on download cancelled.;Add-on downloads cancelled."
+#~ msgstr ""
+#~ "Laadey neose red dy cur er currit ass.;Laadey neose stoo dy cur er currit "
+#~ "ass."
+
+#, fuzzy
+#~ msgid "Restart Download;Restart Downloads"
+#~ msgstr "Cur laadey neose er reesht;Cur laadeyn neose er reesht"
+
+#, fuzzy
+#~ msgid "Cancel"
+#~ msgstr "Cur ass"
+
+#, fuzzy
 #~ msgid ""
 #~ "This website (%1$S) is attempting to store more than %2$S MB of data on "
 #~ "your computer for offline use."
@@ -2008,10 +2057,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Start Private Browsing"
 #~ msgstr "&Goaill toshiaght ec jeeaghyn trooid dy persoonagh"
-
-#, fuzzy
-#~ msgid "&Cancel"
-#~ msgstr "&Cur ass"
 
 #, fuzzy
 #~ msgid "&Do not show this message again"
