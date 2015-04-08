@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-27 01:18+0000\n"
-"PO-Revision-Date: 2015-03-12 23:38+0000\n"
+"POT-Creation-Date: 2015-03-30 19:16+0000\n"
+"PO-Revision-Date: 2015-04-02 15:59+0000\n"
 "Last-Translator: Arash <mousavi.arash@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fa\n"
@@ -15,10 +15,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1426203504.000000\n"
+"X-POOTLE-MTIME: 1427990375.000000\n"
 
 #: nv_timeout
 msgid "Timed Out"
@@ -53,13 +53,12 @@ msgstr "S"
 msgid "[Folder Name]"
 msgstr "[نام پوشه]"
 
-#: xpinstallPromptWarning
+#: xpinstallPromptMessage
 msgid ""
-"%S prevented this site (%S) from asking you to install software on your "
-"computer."
+"%S prevented this site from asking you to install software on your computer."
 msgstr ""
-"برای حفاظت از رایانه‌تان، %S از درخواست نصب نرم‌افزار توسط این پایگاه (‪%S‬) "
-"جلوگیری کرد."
+"برای حفاظت از رایانه‌تان، %S از درخواست نصب نرم‌افزار توسط این پایگاه جلوگیری "
+"کرد."
 
 #: xpinstallPromptAllowButton
 msgctxt "xpinstallPromptAllowButton"
@@ -93,30 +92,62 @@ msgstr "فعال‌سازی"
 msgid "n"
 msgstr "n"
 
-#. # LOCALIZATION NOTE (addonDownloading, addonDownloadCancelled, addonDownloadRestart):
+#. # LOCALIZATION NOTE (addonDownloadingAndVerifying):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # Also see https://bugzilla.mozilla.org/show_bug.cgi?id=570012 for mockups
-#: addonDownloading
-msgid "Add-on downloading;Add-ons downloading"
-msgstr "در حال دریافت افزودنی‌ها"
+#: addonDownloadingAndVerifying
+msgid "Downloading and verifying add-on…;Downloading and verifying #1 add-ons…"
+msgstr "درحال بارگیری و تایید افزونه…;درحال بارگیری و تایید #1 افزونه…"
 
-#: addonDownloadCancelled
-msgid "Add-on download cancelled.;Add-on downloads cancelled."
-msgstr "بارگیری افزودنی‌ها لغو شد."
+#: addonDownloadVerifying
+msgid "Verifying"
+msgstr "در حال بررسی"
 
-#: addonDownloadRestart
-msgid "Restart Download;Restart Downloads"
-msgstr "ازسرگیری بارگیری"
+#: addonInstall.cancelButton.label addonInstall.cancelButton.accesskey
+msgid "&Cancel"
+msgstr "ا&نصراف"
 
-#: addonDownloadRestart.accessKey
-msgctxt "addonDownloadRestart.accessKey"
-msgid "R"
-msgstr "R"
+#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
+msgid "&Install"
+msgstr "&نصب"
 
-#: addonDownloadCancelTooltip
-msgid "Cancel"
-msgstr "انصراف"
+#. # LOCALIZATION NOTE (addonConfirmInstallMessage):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName
+#. # #2 is the number of add-ons being installed
+#: addonConfirmInstall.message
+msgid ""
+"This site would like to install an add-on in #1:;This site would like to "
+"install #2 add-ons in #1:"
+msgstr ""
+"این سایت تمایل به نصب افزونه بر روی #1 دارد:;این سایت تمایل به نصب #2 افزونه "
+"بر روی #1 دارد:"
+
+#: addonwatch.slow
+msgid "%1$S might be making %2$S run slowly"
+msgstr "%1$S امکان دارد باعث شود %2$S کند شود"
+
+#: addonwatch.disable.label addonwatch.disable.accesskey
+msgid "&Disable %S"
+msgstr "&غیر‌فعال کردن %S"
+
+#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
+msgid "&Ignore for now"
+msgstr "فعلا &چشم پوشی کن"
+
+#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
+msgid "Ignore &permanently"
+msgstr "&همیشه چشم پوشی کن"
+
+#: addonwatch.restart.message
+msgid "To disable %1$S you must restart %2$S"
+msgstr "برای غیرفعال کردن %1$S بایستی %2$S راه‌اندازی مجدد شود"
+
+#: addonwatch.restart.label addonwatch.restart.accesskey
+msgid "&Restart %S"
+msgstr "&راه‌اندازی مجدد %S"
 
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
@@ -212,6 +243,12 @@ msgid ""
 msgstr ""
 "امکان نصب #1 به دلیل خطر زیاد ایجاد مشکلات پایداری و امنیتی توسط آن وجود "
 "ندارد."
+
+#. # LOCALIZATION NOTE (deveditionTheme.name): This should be nearly the brand name for aurora.
+#. # See browser/branding/aurora/locales/*/brand.properties
+#: deveditionTheme.name
+msgid "Developer Edition"
+msgstr "نسخه توسعه‌دهندگان"
 
 #. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
 #. # the host name of the site.
@@ -863,7 +900,7 @@ msgstr "آیا مایلید مکان خود را با پروندۀ %S به اش�
 
 #: webNotifications.showForSession
 msgid "Show for this session"
-msgstr "نمایش در این نشست"
+msgstr "نمایش برای این نشست"
 
 #: webNotifications.showForSession.accesskey
 msgid "s"
@@ -871,7 +908,7 @@ msgstr "s"
 
 #: webNotifications.alwaysShow
 msgid "Always Show Notifications"
-msgstr "نمایش دائمی اعلان‌ها"
+msgstr "نمایش دائمی آگاه‌سازی"
 
 #: webNotifications.alwaysShow.accesskey
 msgctxt "webNotifications.alwaysShow.accesskey"
@@ -880,7 +917,7 @@ msgstr "A"
 
 #: webNotifications.neverShow
 msgid "Always Block Notifications"
-msgstr "مسدود کردن دائمی اعلان‌ها"
+msgstr "مسدود کردن دائمی آگاه‌سازی"
 
 #: webNotifications.neverShow.accesskey
 msgctxt "webNotifications.neverShow.accesskey"
@@ -1008,12 +1045,12 @@ msgid "Restart"
 msgstr "راه‌اندازی مجدد"
 
 #. # LOCALIZATION NOTE (browser.menu.showCharacterEncoding): Set to the string
-#. # "true" (spelled and capitalized exactly that way) to show the "Character
+#. # "true" (spelled and capitalized exactly that way) to show the "Text
 #. # Encoding" menu in the main Firefox button on Windows. Any other value will
-#. # hide it. Regardless of the value of this setting, the "Character Encoding"
+#. # hide it. Regardless of the value of this setting, the "Text Encoding"
 #. # menu will always be accessible via the "Web Developer" menu.
 #. # This is not a string to translate; it just controls whether the menu shows
-#. # up in the Firefox button. If users frequently use the "Character Encoding"
+#. # up in the Firefox button. If users frequently use the "Text Encoding"
 #. # menu, set this to "true". Otherwise, you can leave it as "false".
 #: browser.menu.showCharacterEncoding
 msgid "false"
@@ -1036,7 +1073,6 @@ msgstr ""
 "شما می‌توانید به گذرواژه‌های خود در تمام دستگا‌هایتان با %S دسترسی داشته باشید."
 
 #: syncPromoNotification.learnMoreLinkText
-#, fuzzy
 msgctxt "syncPromoNotification.learnMoreLinkText"
 msgid "Learn More"
 msgstr "بیشتر بدانید"
@@ -1078,13 +1114,12 @@ msgstr "&انتخاب چیزهایی که میخواهم به‌اشتراک‌ 
 #. # Process hang reporter
 #: processHang.message
 msgid "A web page is causing %1$S to run slowly. What would you like to do?"
-msgstr ""
+msgstr "یک سایت باعث شده است که %1$S به کندی عمل کند. تمایل دارید چه کار کنید؟"
 
 #: processHang.button.label processHang.button.accessKey
-#, fuzzy
 msgctxt "processHang.button.label processHang.button.accessKey"
 msgid "&Options"
-msgstr "گزینه‌ها"
+msgstr "&گزینه‌ها‌"
 
 #. # Webapps notification popup
 #: webapps.install
@@ -1161,7 +1196,7 @@ msgid ""
 "Would you like to enable services from %1$S to display in your %2$S toolbar "
 "and sidebar?"
 msgstr ""
-"آیا تمایل دارید جهت نمایش %2$S در نوار ابزار خود سرویسی از %1$S را فعال کنید؟"
+"آیا تمایل دارید جهت نمایش %2$S در نوار ابزارخود سرویسی از%1$S رافعال کنید؟"
 
 #: service.install.ok.label service.install.ok.accesskey
 msgid "&Enable Services"
@@ -1290,7 +1325,6 @@ msgid "No Screen"
 msgstr "بدون صفحه نمایش"
 
 #: getUserMedia.noWindow.label
-#, fuzzy
 msgid "No Window"
 msgstr "بدون پنجره"
 
@@ -1375,9 +1409,8 @@ msgid "You are currently sharing a window with this page."
 msgstr "شما هم اکنون یک پنجره را با این صفحه به اشتراک گذاشته اید."
 
 #: getUserMedia.sharingBrowser.message
-#, fuzzy
 msgid "You are currently sharing a tab with this page."
-msgstr "شما هم اکنون یک پنجره را با این صفحه به اشتراک گذاشته اید."
+msgstr "شما در حال حاضر یک زبانه را با این صفحه به اشتراک گذاشته‌اید."
 
 #: getUserMedia.continueSharing.label getUserMedia.continueSharing.accesskey
 msgid "&Continue Sharing"
@@ -1433,7 +1466,7 @@ msgstr "%S (پنجره)"
 
 #: getUserMedia.sharingMenuBrowser
 msgid "%S (tab)"
-msgstr ""
+msgstr "%S (زبانه)"
 
 #: getUserMedia.sharingMenuCameraMicrophone
 msgid "%S (camera and microphone)"
@@ -1452,9 +1485,8 @@ msgid "%S (camera, microphone and window)"
 msgstr "%S(دوربین, میکروفن و پنجره)"
 
 #: getUserMedia.sharingMenuCameraMicrophoneBrowser
-#, fuzzy
 msgid "%S (camera, microphone and tab)"
-msgstr "%S(دوربین, میکروفن و صفحه‌نمایش)"
+msgstr "%S(دوربین, میکروفن و زبانه)"
 
 #: getUserMedia.sharingMenuCameraApplication
 msgid "%S (camera and application)"
@@ -1470,7 +1502,7 @@ msgstr "%S(دوربین و پنجره)"
 
 #: getUserMedia.sharingMenuCameraBrowser
 msgid "%S (camera and tab)"
-msgstr ""
+msgstr "%S (دوربین و زبانه)"
 
 #: getUserMedia.sharingMenuMicrophoneApplication
 msgid "%S (microphone and application)"
@@ -1485,9 +1517,8 @@ msgid "%S (microphone and window)"
 msgstr "%S (میکروفون و پنجره)"
 
 #: getUserMedia.sharingMenuMicrophoneBrowser
-#, fuzzy
 msgid "%S (microphone and tab)"
-msgstr "%S (میکروفون و صفحه نمایش)"
+msgstr "%S (میکروفون و زبانه)"
 
 #. # LOCALIZATION NOTE(getUserMedia.sharingMenuUnknownHost): this is used for the website
 #. # origin for the sharing menu if no readable origin could be deduced from the URL.
@@ -1501,6 +1532,8 @@ msgid ""
 "Some audio or video on this site uses DRM software, which may limit what %S "
 "can let you do with it."
 msgstr ""
+"ویدئو یا صدا در این سایت به نرم‌افزار DRM نیاز دارد، که امکان دارد امکاناتی "
+"که %S به شما میدهد را محدود کند."
 
 #: emeNotifications.drmContentPlaying.button.label
 #: emeNotifications.drmContentPlaying.button.accesskey
@@ -1568,24 +1601,21 @@ msgstr ""
 
 #. # LOCALIZATION NOTE(emeNotifications.drmContentCDMNotSupported.unsupportedOS.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %1$S is brandShortName, %2$S is the name of the user's OS (Windows, Linux, Mac OS X), %3$S will be the 'learn more' link
 #: emeNotifications.drmContentCDMNotSupported.unsupportedOS.message
-#, fuzzy
 msgid ""
 "The audio or video on this page requires DRM software that %1$S does not "
 "support on %2$S. %3$S"
 msgstr ""
-"ویدئو یا صدا در این صفحه به نرم‌افزار DRMای احتیاج دارد که %1$S از آن "
-"پشتیبانی نمی‌کند. %2$S"
+"ویدئو یا صدا در این صفحه به نرم‌افزار DRM احتیاج دارد که %1$S از آن روی %2$S "
+"پشتیبانی نمی‌کند. %3$S"
 
 #: emeNotifications.optionsButton.label
 #: emeNotifications.optionsButton.accesskey
-#, fuzzy
 msgctxt ""
 "emeNotifications.optionsButton.label emeNotifications.optionsButton.accesskey"
 msgid "&Options"
-msgstr "گزینه‌ها"
+msgstr "&گزینه‌ها"
 
 #: emeNotifications.unknownDRMSoftware
-#, fuzzy
 msgctxt "emeNotifications.unknownDRMSoftware"
 msgid "Unknown"
 msgstr "نامعلوم"
@@ -1607,12 +1637,11 @@ msgstr "&مجددا به من گفته نشود"
 #. # LOCALIZATION NOTE  - %S is brandShortName
 #: flashHang.message
 msgid "%S changed some Adobe Flash settings to improve performance."
-msgstr ""
+msgstr "%S بعضی تنظیمات فلش را تغییر داد تا کارایی را افزایش دهد."
 
 #: flashHang.helpButton.label flashHang.helpButton.accesskey
-#, fuzzy
 msgid "&Learn More…"
-msgstr "بیشتر بدانید…"
+msgstr "&بیشتر بدانید…"
 
 #. # LOCALIZATION NOTE(customizeTips.tip0): %1$S will be replaced with the text defined
 #. # in customizeTips.tip0.hint, %2$S will be replaced with brandShortName, %3$S will
@@ -1662,20 +1691,20 @@ msgstr "دریافت بروزرسانی"
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #: readingList.sidebar.showMore.tooltip
 msgid "Show %S more item;Show %S more items"
-msgstr ""
+msgstr "نمایش %S مورد دیگر;نمایش %S مورد دیگر"
 
 #. # Pre-landed strings for bug 1131457 / bug 1131461
 #: readingList.urlbar.add
 msgid "Add page to Reading List"
-msgstr ""
+msgstr "اضافه کردن صفحه به فهرست مطالعه"
 
 #: readingList.urlbar.addDone
 msgid "Page added to Reading List"
-msgstr ""
+msgstr "صفحه به فهرست مطالعه اضافه شد"
 
 #: readingList.urlbar.remove
 msgid "Remove page from Reading List"
-msgstr ""
+msgstr "حذف صفحه از فهرست مطالعه"
 
 #: readingList.urlbar.removeDone
 msgid "Page removed from Reading List"
@@ -1737,29 +1766,29 @@ msgstr "فهرست خواندن"
 #: readingList.promo.firstUse.readingList.body
 msgid "Save articles for later and find them easily when you need them."
 msgstr ""
+"مقاله‌ها را برای بعد ذخیره کنید و آنها را در زمان احتیاج به راحتی پیدا کنید."
 
 #. # LOCALIZATION NOTE(readingList.promo.firstUse.readingList.moveToButton):
 #. # » is used as an indication that pressing this button progresses through the tour.
 #: readingList.promo.firstUse.readingList.moveToButton
 msgid "Next: Easy finding »"
-msgstr ""
+msgstr "بعدی: پیدا کردن راحت »"
 
 #: readingList.promo.firstUse.readerView.title
 msgid "Reader View"
-msgstr ""
+msgstr "نمای مطالعه"
 
 #: readingList.promo.firstUse.readerView.body
 msgid "Remove clutter so you can focus exactly on what you want to read."
-msgstr ""
+msgstr "زایده‌ها را حذف کنید تا بتوانید بر روی چیزی که میخوانید تمرکز کنید."
 
 #. # LOCALIZATION NOTE(readingList.promo.firstUse.readerView.moveToButton):
 #. # » is used as an indication that pressing this button progresses through the tour.
 #: readingList.promo.firstUse.readerView.moveToButton
 msgid "Next: Easy reading »"
-msgstr ""
+msgstr "بعدی: مطالعه راحت »"
 
 #: readingList.promo.firstUse.syncNotSignedIn.title
-#, fuzzy
 msgctxt "readingList.promo.firstUse.syncNotSignedIn.title"
 msgid "Sync"
 msgstr "هم‌گام‌سازی"
@@ -1768,11 +1797,12 @@ msgstr "هم‌گام‌سازی"
 #: readingList.promo.firstUse.syncNotSignedIn.body
 msgid "Sign in to access your Reading List everywhere you use %S."
 msgstr ""
+"اگر وارد شوید میتوانید به لیست مطالعه خود هر جا که از %S استفاده میکنید "
+"دسترسی داشته یاشید."
 
 #. # LOCALIZATION NOTE(readingList.promo.firstUse.syncNotSignedIn.moveToButton):
 #. # » is used as an indication that pressing this button progresses through the tour.
 #: readingList.promo.firstUse.syncNotSignedIn.moveToButton
-#, fuzzy
 msgctxt "readingList.promo.firstUse.syncNotSignedIn.moveToButton"
 msgid "Next: Easy access »"
 msgstr "مرحله بعد: دسترسی آسان »"
@@ -1804,21 +1834,21 @@ msgstr "مرحله بعد: دسترسی آسان »"
 #. # %S is brandShortName
 #: readingList.prepopulatedArticles.learnMore
 msgid "Learn how %S makes reading more pleasant"
-msgstr ""
+msgstr "ببینید چطور %S مطالعه را لذت بخشتر میکند"
 
 #. # LOCALIZATION NOTE(readingList.prepopulatedArticles.supportReadingList):
 #. # This will show as an item in the Reading List, and will link to a SUMO article describing the Reading List:
 #. #   https://support.mozilla.org/kb/save-sync-and-read-pages-anywhere-reading-list
 #: readingList.prepopulatedArticles.supportReadingList
 msgid "Save, sync and read pages anywhere with Reading List"
-msgstr ""
+msgstr "ذخیره، هم‌گام‌سازی و مطالعه صفحات در هرجا که هستید با \"لیست مطالعه\""
 
 #. # LOCALIZATION NOTE(readingList.prepopulatedArticles.supportReaderView):
 #. # This will show as an item in the Reading List, and will link to a SUMO article describing the Reader View:
 #. #   https://support.mozilla.org/kb/enjoy-clutter-free-web-pages-reader-view
 #: readingList.prepopulatedArticles.supportReaderView
 msgid "Enjoy clutter-free Web pages with Reader View"
-msgstr ""
+msgstr "با نمای مطالعه از صفحات وب بدون زایده لذت ببرید"
 
 #. # LOCALIZATION NOTE(readingList.prepopulatedArticles.learnMore):
 #. # This will show as an item in the Reading List, and will link to a SUMO article describing Sync:
@@ -1826,7 +1856,19 @@ msgstr ""
 #. # %S is syncBrandShortName
 #: readingList.prepopulatedArticles.supportSync
 msgid "Access your Reading List anywhere with %S"
-msgstr ""
+msgstr "در هرجا که هستید به وسیله %S به لیست مطالعه خود دسترسی داشته باشید"
+
+#~ msgid "Add-on downloading;Add-ons downloading"
+#~ msgstr "در حال دریافت افزودنی‌ها"
+
+#~ msgid "Add-on download cancelled.;Add-on downloads cancelled."
+#~ msgstr "بارگیری افزودنی‌ها لغو شد."
+
+#~ msgid "Restart Download;Restart Downloads"
+#~ msgstr "ازسرگیری بارگیری"
+
+#~ msgid "Cancel"
+#~ msgstr "انصراف"
 
 #~ msgid ""
 #~ "This website (%1$S) is attempting to store more than %2$S MB of data on "
@@ -2128,9 +2170,6 @@ msgstr ""
 
 #~ msgid "&Start Private Browsing"
 #~ msgstr "&شروع مرور خصوصی"
-
-#~ msgid "&Cancel"
-#~ msgstr "ا&نصراف"
 
 #~ msgid "&Do not show this message again"
 #~ msgstr "&دیگر این پیغام نمایش داده نشود"
