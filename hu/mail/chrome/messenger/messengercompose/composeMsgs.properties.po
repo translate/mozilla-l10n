@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-31 01:45+0000\n"
-"PO-Revision-Date: 2015-04-15 09:11+0000\n"
+"PO-Revision-Date: 2015-04-15 10:14+0000\n"
 "Last-Translator: Gabor <kelemeng@ubuntu.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1429089098.000000\n"
+"X-POOTLE-MTIME: 1429092896.000000\n"
 
 #. #
 #. # The following are used by the compose back end
@@ -88,8 +88,8 @@ msgid ""
 "An Outgoing server (SMTP) error occurred while sending mail. The server "
 "responded:  %s."
 msgstr ""
-"Kimenő kiszolgáló (SMTP) hiba történt a levél küldése közben. A kiszolgáló "
-"válasza: %s."
+"Levélküldő kiszolgáló (SMTP) hiba történt a levél küldése közben. A "
+"kiszolgáló válasza: %s."
 
 #. ## LOCALIZATION NOTE (errorSendingMessage): argument %s is the Outgoing server (SMTP) response
 #: errorSendingMessage
@@ -124,7 +124,7 @@ msgid ""
 "An error occurred while sending mail: Outgoing server (SMTP) error. The "
 "server responded:  %s."
 msgstr ""
-"Hiba történt a levél küldése közben: Kimenő kiszolgáló (SMTP) hiba. A "
+"Hiba történt a levél küldése közben: Levélküldő kiszolgáló (SMTP) hiba. A "
 "kiszolgáló válasza: %s."
 
 #: unableToSendLater
@@ -240,7 +240,7 @@ msgid ""
 "provider."
 msgstr ""
 "Hiba történt a levél küldésekor: Nem sikerült kapcsolódni a(z) %S kimenő "
-"(SMTP)kiszolgálóhoz a STARTTLS használatával, ugyanis az nem hirdeti ezt a "
+"(SMTP) kiszolgálóhoz a STARTTLS használatával, ugyanis az nem hirdeti ezt a "
 "funkciót. Kapcsolja ki a STARTTLS-t ehhez a kiszolgálóhoz, vagy forduljon a "
 "szolgáltatóhoz."
 
@@ -293,7 +293,7 @@ msgid ""
 "The server may be incorrectly configured. Please verify that your Outgoing "
 "server (SMTP) settings are correct and try again."
 msgstr ""
-"Hiba történt a levél küldésekor: a(z) %S kimenő (SMTP) kiszolgáló "
+"Hiba történt a levél küldésekor: a(z) %S levélküldő kiszolgáló (SMTP) "
 "ismeretlen. Lehet, hogy a kiszolgálót hibásan állították be. Ellenőrizze, "
 "hogy a kimenő (SMTP) kiszolgáló beállításai helyesek-e, és próbálja újra."
 
@@ -306,8 +306,8 @@ msgid ""
 "are correct and try again."
 msgstr ""
 "Az üzenet küldése sikertelen, mert nem lehetett kapcsolatot teremteni a "
-"kimenő (SMTP) kiszolgálóval (%S). A kiszolgáló elérhetetlen, vagy "
-"visszautasítja a kimenő (SMTP) kapcsolatokat. Ellenőrizze, hogy a kimenő "
+"levélküldő (SMTP) kiszolgálóval (%S). A kiszolgáló elérhetetlen, vagy "
+"visszautasítja a kimenő (SMTP) kapcsolatokat. Ellenőrizze, hogy a levélküldő "
 "(SMTP) kiszolgáló beállításai helyesek-e, és próbálja meg újra."
 
 #. ## LOCALIZATION NOTE (smtpSendInterrupted): argument %S is the Outgoing server (SMTP)
@@ -316,8 +316,8 @@ msgid ""
 "The message could not be sent because the connection to Outgoing server "
 "(SMTP) %S was lost in the middle of the transaction. Try again."
 msgstr ""
-"Az üzenet küldése sikertelen, mert a kimenő (SMTP) kiszolgálóval (%S) való "
-"kapcsolat megszakadt a tranzakció közben. Próbálja újra."
+"Az üzenet küldése sikertelen, mert a levélküldő (SMTP) kiszolgálóval (%S) "
+"való kapcsolat megszakadt a tranzakció közben. Próbálja újra."
 
 #. ## LOCALIZATION NOTE (smtpSendTimeout): argument %S is the Outgoing server (SMTP)
 #: smtpSendTimeout
@@ -325,8 +325,8 @@ msgid ""
 "The message could not be sent because the connection to Outgoing server "
 "(SMTP) %S timed out. Try again."
 msgstr ""
-"Az üzenet küldése sikertelen, mert a kimenő (SMTP) kiszolgálóval (%S) való "
-"kapcsolat időtúllépés miatt megszakadt. Próbálja újra."
+"Az üzenet küldése sikertelen, mert a levélküldő (SMTP) kiszolgálóval (%S) "
+"való kapcsolat időtúllépés miatt megszakadt. Próbálja újra."
 
 #. ## LOCALIZATION NOTE (smtpSendFailedUnknownReason): argument %S is the Outgoing server (SMTP)
 #: smtpSendFailedUnknownReason
@@ -335,8 +335,8 @@ msgid ""
 "reason. Please verify that your Outgoing server (SMTP) settings are correct "
 "and try again."
 msgstr ""
-"Az üzenet küldése a kimenő (SMTP) kiszolgálóval (%S) ismeretlen okból "
-"megszakadt. Ellenőrizze, hogy a kimenő (SMTP) kiszolgáló beállításai "
+"Az üzenet küldése a levélküldő (SMTP) kiszolgálóval (%S) ismeretlen okból "
+"megszakadt. Ellenőrizze, hogy a levélküldő (SMTP) kiszolgáló beállításai "
 "helyesek-e, és próbálja meg újra."
 
 #. # LOCALIZATION NOTE (smtpHintAuthEncryptToPlainNoSsl): %S is the server hostname
@@ -348,37 +348,35 @@ msgid ""
 "insecurely'. If it used to work but now doesn't, you may be susceptible to "
 "getting your password stolen."
 msgstr ""
-"Úgy tűnik, a kimenő (SMTP) kiszolgáló (%S) nem támogatja a titkosított "
+"Úgy tűnik, a levélküldő (SMTP) kiszolgáló (%S) nem támogatja a titkosított "
 "jelszavakat. Ha most állította be a fiókot, akkor próbálja meg módosítani a "
-"„Hitelesítési módszert” a „Postafiók beállításai | Kiszolgáló beállításai "
+"„Hitelesítési módszert” a „Postafiók beállításai | Levélküldő kiszolgáló "
 "(SMTP)” alatt a „Jelszó, nem biztonságos átvitellel” lehetőségre. Ha ez "
 "korábban működött, de már nem, akkor lehet, hogy ellopták a jelszavát."
 
 #. # LOCALIZATION NOTE (smtpHintAuthEncryptToPlainSsl): %S is the server hostname
 #: smtpHintAuthEncryptToPlainSsl
-#, fuzzy
 msgid ""
 "The Outgoing server (SMTP) %S does not seem to support encrypted passwords. "
 "If you just set up the account, try changing the 'Authentication method' in "
 "'Account settings | Outgoing server (SMTP)' to 'Normal password'."
 msgstr ""
-"A kimenő (SMTP) kiszolgáló (%S) nem támogatja a titkosított jelszavak "
+"A levélküldő (SMTP) kiszolgáló (%S) nem támogatja a titkosított jelszavak "
 "használatát. Ha most állította a be a fiókot, akkor próbálja megadni a "
 "„Normál jelszó” lehetőséget a „Hitelesítési módszer” beállításnál a "
-"„Postafiók beállításai | Kiszolgáló beállításai” alatt."
+"„Postafiók beállításai | Levélküldő kiszolgáló (SMTP)” alatt."
 
 #. # LOCALIZATION NOTE (smtpHintAuthPlainToEncrypt): %S is the server hostname
 #: smtpHintAuthPlainToEncrypt
-#, fuzzy
 msgid ""
 "The Outgoing server (SMTP) %S does not allow plaintext passwords. Please try "
 "changing the 'Authentication method' in 'Account Settings | Outgoing server "
 "(SMTP)' to 'Encrypted password'."
 msgstr ""
-"A kimenő (SMTP) kiszolgáló (%S) nem engedi meg a sima szöveges jelszavak "
+"A levélküldő (SMTP) kiszolgáló (%S) nem engedi meg a sima szöveges jelszavak "
 "használatát. Próbálja megadni a „Titkosított jelszó” lehetőséget a "
-"„Hitelesítési módszer” beállításnál a „Postafiók beállításai | Kiszolgáló "
-"beállításai” alatt. "
+"„Hitelesítési módszer” beállításnál a „Postafiók beállításai | Levélküldő "
+"kiszolgáló (SMTP)” alatt. "
 
 #. # LOCALIZATION NOTE (smtpAuthFailure): %S is the server hostname
 #: smtpAuthFailure
@@ -387,9 +385,9 @@ msgid ""
 "password and verify the 'Authentication method' in 'Account Settings | "
 "Outgoing server (SMTP)'."
 msgstr ""
-"Nem sikerült a hitelesítés a(z) %S kimenő (SMTP) kiszolgálóhoz. Ellenőrizze "
-"a jelszót és a „Hitelesítési módszer” beállítást a „Postafiók beállításai | "
-"Kimenő kiszolgáló (SMTP)” alatt."
+"Nem sikerült a hitelesítés a(z) %S levélküldő (SMTP) kiszolgálóhoz. "
+"Ellenőrizze a jelszót és a „Hitelesítési módszer” beállítást a „Postafiók "
+"beállításai | Levélküldő kiszolgáló (SMTP)” alatt."
 
 #. # LOCALIZATION NOTE (smtpAuthGssapi): %S is the server hostname
 #: smtpAuthGssapi
@@ -397,8 +395,9 @@ msgid ""
 "The Kerberos/GSSAPI ticket was not accepted by the Outgoing server (SMTP) "
 "%S. Please check that you are logged in to the Kerberos/GSSAPI realm."
 msgstr ""
-"A Kerberos/GSSAPI jegyet nem fogadta el a(z) %S kimenő (SMTP) kiszolgáló. "
-"Ellenőrizze, hogy be van-e jelentkezve a Kerberos/GSSAPI-tartományba."
+"A Kerberos/GSSAPI jegyet nem fogadta el a(z) %S levélküldő (SMTP) "
+"kiszolgáló. Ellenőrizze, hogy be van-e jelentkezve a Kerberos/GSSAPI-"
+"tartományba."
 
 #. # LOCALIZATION NOTE (smtpAuthMechNotSupported): %S is the server hostname
 #: smtpAuthMechNotSupported
@@ -407,9 +406,9 @@ msgid ""
 "method. Please change the 'Authentication method' in 'Account Settings | "
 "Outgoing Server (SMTP)'."
 msgstr ""
-"A kimenő (SMTP) kiszolgáló (%S) nem támogatja a kiválasztott hitelesítési "
-"módszert. Módosítsa a „Hitelesítési módszer” beállítást a „Postafiók "
-"beállításai | Kimenő kiszolgáló (SMTP)” alatt."
+"A levélküldő (SMTP) kiszolgáló (%S) nem támogatja a kiválasztott "
+"hitelesítési módszert. Módosítsa a „Hitelesítési módszer” beállítást a "
+"„Postafiók beállításai | Levélküldő kiszolgáló (SMTP)” alatt."
 
 #. # LOCALIZATION NOTE (smtpAuthNotSupported): %S is the server hostname
 #: smtpAuthNotSupported
@@ -420,11 +419,11 @@ msgid ""
 "'Account Settings | Outgoing Server (SMTP)' or contact your email service "
 "provider for instructions."
 msgstr ""
-"Nem sikerült a hitelesítés a(z) %S kimenő (SMTP) kiszolgálóhoz. Nem "
+"Nem sikerült a hitelesítés a(z) %S levélküldő (SMTP) kiszolgálóhoz. Nem "
 "támogatja a hitelesítést (kimenő kiszolgáló (SMTP)-AUTH), de Ön hitelesítés "
 "használatát választotta. Módosítsa a „Hitelesítési módszer” beállítást "
-"„Nincs”-re a „Postafiók beállításai | Kimenő kiszolgáló (SMTP)” alatt, vagy "
-"forduljon a szolgáltatójához további tanácsokért."
+"„Nincs”-re a „Postafiók beállításai | Levélküldő kiszolgáló (SMTP)” alatt, "
+"vagy forduljon a szolgáltatójához további tanácsokért."
 
 #. # LOCALIZATION NOTE (errorIllegalLocalPart): %s is an email address with an illegal localpart
 #: errorIllegalLocalPart
@@ -937,7 +936,7 @@ msgstr "Adja meg %2$S felhasználó jelszavát a(z) %1$S kiszolgálón:"
 
 #: smtpEnterPasswordPromptTitle
 msgid "Outgoing server (SMTP) Password Required"
-msgstr "Kimenő kiszolgáló (SMTP) jelszó szükséges"
+msgstr "Levélküldő kiszolgáló (SMTP) jelszó szükséges"
 
 #. # LOCALIZATION NOTE (removeAttachmentMsgs): Semi-colon list of plural forms.
 #. # See: http://developer.mozilla.org/en/Localization_and_Plurals
