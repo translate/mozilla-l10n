@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-31 02:26+0000\n"
-"PO-Revision-Date: 2015-04-29 17:07+0000\n"
+"PO-Revision-Date: 2015-04-30 21:07+0000\n"
 "Last-Translator: Marco Aurélio <ouesten@me.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1430327230.000000\n"
+"X-POOTLE-MTIME: 1430428048.000000\n"
 
 #. #
 #. # The following are used by the compose back end
@@ -113,7 +113,6 @@ msgstr ""
 "tente novamente."
 
 #: errorQueuedDeliveryFailed
-#, fuzzy
 msgid "An error occurred while delivering unsent messages."
 msgstr "Ocorreu um erro ao entregar mensagens não enviadas."
 
@@ -156,14 +155,14 @@ msgstr ""
 "conectar-se novamente."
 
 #: couldNotGetUsersMailAddress
-#, fuzzy
 msgid ""
 "An error occurred while sending mail:  the return mail address was invalid.  "
 "Please verify that your email address is correct in your Mail preferences "
 "and try again."
 msgstr ""
-"O endereço de retorno não era válido. Por favor verifique se o seu endereço "
-"de email está correto e tente novamente."
+"Ocorreu um erro ao enviar mensagem:  o endereço de e-mail de retorno é "
+"inválido.  Verifique se o seu endereço de e-mail está correto nas "
+"configurações da conta e tente novamente."
 
 #: mimeMpartAttachmentError
 msgid "Attachment error."
@@ -296,29 +295,28 @@ msgstr ""
 
 #. ## LOCALIZATION NOTE (smtpSendFailedUnknownServer): argument %S is the Outgoing server (SMTP)
 #: smtpSendFailedUnknownServer
-#, fuzzy
 msgid ""
 "An error occurred while sending mail: Outgoing server (SMTP) %S is unknown. "
 "The server may be incorrectly configured. Please verify that your Outgoing "
 "server (SMTP) settings are correct and try again."
 msgstr ""
-"Ocorreu um erro ao enviar a mensagem: o servidor de SMTP \"%S\" não é "
-"conhecido. O servidor pode estar mal-configurado. Por favor, verifique as "
-"configurações do seu servidor de SMTP e tente novamente."
+"Ocorreu um erro ao enviar mensagem: o servidor de envio (SMTP) %S é "
+"desconhecido. O servidor pode está configurado incorretamente. Por favor "
+"verifique se as configurações servidor de envio (SMTP) estão corretas e "
+"tente novamente."
 
 #. ## LOCALIZATION NOTE (smtpSendRefused): argument %S is the Outgoing server (SMTP)
 #: smtpSendRefused
-#, fuzzy
 msgid ""
 "The message could not be sent because connecting to Outgoing server (SMTP) "
 "%S failed. The server may be unavailable or is refusing Outgoing server "
 "(SMTP) connections. Please verify that your Outgoing server (SMTP) settings "
 "are correct and try again."
 msgstr ""
-"A mensagem não pôde ser postada porque houve falha na conexão ao servidor de "
-"notícias. O servidor pode estar indisponível ou recusando conexões. Por "
-"favor verifique se suas configurações de notícias estão corretas e tente de "
-"novo ou contate o administrador da rede."
+"Não foi possível enviar as mensagem porque a conexão ao servidor de envio "
+"(SMTP) %S falhou. O servidor pode não estar disponível ou recusando "
+"conexões. Por favor confirme se as configurações do servidor de envio (SMTP) "
+"estão corretas e tente novamente."
 
 #. ## LOCALIZATION NOTE (smtpSendInterrupted): argument %S is the Outgoing server (SMTP)
 #: smtpSendInterrupted
@@ -388,25 +386,23 @@ msgstr ""
 
 #. # LOCALIZATION NOTE (smtpAuthFailure): %S is the server hostname
 #: smtpAuthFailure
-#, fuzzy
 msgid ""
 "Unable to authenticate to Outgoing server (SMTP) %S. Please check the "
 "password, and verify the 'Authentication method' in 'Account Settings | "
 "Outgoing server (SMTP)'."
 msgstr ""
-"Não foi possível autenticar-se no servidor SMTP %S. Por favor, verifique sua "
-"senha e a opção “Modo de autenticação” em “Configurar contas | Servidor de "
-"envio (SMTP)”."
+"Não foi possível autenticar no servidor de envio (SMTP) %S. Por favor, "
+"verifique sua senha e o 'Modo de autenticação' em 'Configuração da contas | "
+"Servidor de envio (SMTP)'."
 
 #. # LOCALIZATION NOTE (smtpAuthGssapi): %S is the server hostname
 #: smtpAuthGssapi
-#, fuzzy
 msgid ""
 "The Kerberos/GSSAPI ticket was not accepted by the Outgoing server (SMTP) "
 "%S. Please check that you are logged in to the Kerberos/GSSAPI realm."
 msgstr ""
-"O ticket Kerberos/GSSAPI não foi aceito pelo servidor SMTP %S. Por favor, "
-"verifique se você está identificado no domínio Kerberos/GSSAPI."
+"O ticket Kerberos/GSSAPI não foi aceito pelo servidor de envio (SMTP) %S. "
+"Por favor verifique se tem acesso aos dados Kerberos/GSSAPI."
 
 #. # LOCALIZATION NOTE (smtpAuthMechNotSupported): %S is the server hostname
 #: smtpAuthMechNotSupported
@@ -421,7 +417,6 @@ msgstr ""
 
 #. # LOCALIZATION NOTE (smtpAuthNotSupported): %S is the server hostname
 #: smtpAuthNotSupported
-#, fuzzy
 msgid ""
 "Unable to authenticate to Outgoing server (SMTP) %S. It does not support "
 "authentication (Outgoing server (SMTP)-AUTH) but you have chosen to use "
@@ -429,10 +424,10 @@ msgid ""
 "'Account Settings | Outgoing server (SMTP)' or contact your email service "
 "provider for instructions."
 msgstr ""
-"Não foi possível autenticar-se no servidor SMTP %S. Ele não suporta "
+"Não foi possível autenticar no servidor de envio (SMTP) %S. Ele não suporta "
 "autenticação (SMTP-AUTH) mas você selecionou usá-la. Por favor, altere o "
-"“Modo de autenticação” para “Nenhum” em “Configurar contas | Servidor de "
-"envio (SMTP)” ou verifique as instruções junto ao serviço provedor de e-mail."
+"'Modo de autenticação' para 'Nenhum' em 'Configurar contas | Servidor de "
+"envio (SMTP)' ou verifique as instruções junto ao serviço provedor de e-mail."
 
 #. # LOCALIZATION NOTE (errorIllegalLocalPart): %s is an email address with an illegal localpart
 #: errorIllegalLocalPart
