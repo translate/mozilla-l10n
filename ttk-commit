@@ -53,6 +53,7 @@ do
 	(
 		cd ${base_dir}/build/${L10N_VER}/$mozlang
 		hg addremove $PRODUCT_DIRS $RETIRED_PRODUCT_DIRS
+		hg revert -C $OTHER_EXCLUDED_DIRS
 		hg commit -m "[$mozlang] update from Pootle ($project)"
 		[[ $push ]] && hg push
 	)
