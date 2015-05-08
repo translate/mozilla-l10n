@@ -337,6 +337,7 @@ do
 			verbose "Language Pack - create an XPI"
 			copyfileifmissing browser/chrome/browser-region/region.properties ${mozlang}
 			copyfileifmissing browser/searchplugins/list.txt ${mozlang}
+	                po2moz --progress=$progress --errorlevel=$errorlevel -t ${L10N_ENUS}/browser/profile/bookmarks.inc -i ${PO_DIR}/${polang}/browser/profile/bookmarks.inc.po -o ${L10N_DIR}/${mozlang}/browser/profile/bookmarks.inc
 			buildxpi.py -d -L ${L10N_DIR} -s ${MOZCENTRAL_DIR} -o ${LANGPACK_DIR}/$project/$lang --soft-max-version ${mozlang} > ${LANGPACK_DIR}/$project/$lang/langpack-build.log 2>&1
 			hg revert  $hgverbosity --no-backup \
 				browser/chrome/browser-region/region.properties \
