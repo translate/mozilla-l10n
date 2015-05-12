@@ -1,0 +1,701 @@
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./toolkit/chrome/global/devtools/gcli.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-11 20:18+0000\n"
+"PO-Revision-Date: 2014-09-01 17:58+0000\n"
+"Last-Translator: Sandeep <sandeep.shedmake@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+"X-POOTLE-MTIME: 1409594331.000000\n"
+
+#. # LOCALIZATION NOTE These strings are used inside the Web Console
+#. # command line which is available from the Web Developer sub-menu
+#. # -> 'Web Console'.
+#. # The correct localization of this file might be to keep it in
+#. # English, or another language commonly spoken among web developers.
+#. # You want to make that choice consistent across the developer tools.
+#. # A good criteria is the language in which you'd find the best
+#. # documentation on web development on the web.
+#. # For each command there are in general two strings. As an example consider
+#. # the 'pref' command.
+#. # commandDesc (e.g. prefDesc for the command 'pref'): this string contains a
+#. # very short description of the command. It's designed to be shown in a menu
+#. # alongside the command name, which is why it should be as short as possible.
+#. # commandManual (e.g. prefManual for the command 'pref'): this string will
+#. # contain a fuller description of the command. It's diplayed when the user
+#. # asks for help about a specific command (e.g. 'help pref').
+#. # LOCALIZATION NOTE: This message is used to describe any command or command
+#. # parameter when no description has been provided.
+#: canonDescNone
+msgid "(No description)"
+msgstr "(वर्णन आढळले नाही)"
+
+#. # LOCALIZATION NOTE: The default name for a group of parameters.
+#: canonDefaultGroupName
+msgid "Options"
+msgstr "पर्याय"
+
+#. # LOCALIZATION NOTE (canonProxyDesc, canonProxyManual): These commands are
+#. # used to execute commands on a remote system (using a proxy). Parameters: %S
+#. # is the name of the remote system.
+#: canonProxyDesc
+msgid "Execute a command on %S"
+msgstr "%S वर आदेश चालवा"
+
+#: canonProxyManual
+msgid ""
+"A set of commands that are executed on a remote system. The remote system is "
+"reached via %S"
+msgstr "दुरस्त प्रणालीवर चालवण्याजोगी आदेशांचा संच. दुरस्त प्रणाली %S तर्फे पोहचणे शक्य आहे"
+
+#. # LOCALIZATION NOTE: This error message is displayed when we try to add a new
+#. # command (using a proxy) where one already exists with the same name.
+#: canonProxyExists
+msgid "There is already a command called '%S'"
+msgstr "'%S' नावाचे आदेश आधीपासूनच अस्तित्वात आहे"
+
+#. # LOCALIZATION NOTE: This message describes the '{' command, which allows
+#. # entry of JavaScript like traditional developer tool command lines.
+#: cliEvalJavascript
+msgid "Enter JavaScript directly"
+msgstr "जावास्क्रिप्ट थेट भरा"
+
+#. # LOCALIZATION NOTE: This message is displayed when the command line has more
+#. # arguments than the current command can understand.
+#: cliUnusedArg
+msgid "Too many arguments"
+msgstr "एकापेक्षा जास्त घटके"
+
+#. # LOCALIZATION NOTE: The title of the dialog which displays the options that
+#. # are available to the current command.
+#: cliOptions
+msgid "Available Options"
+msgstr "उपलब्ध पर्याय"
+
+#. # LOCALIZATION NOTE: The error message when the user types a command that
+#. # isn't registered
+#: cliUnknownCommand2
+msgid "Invalid Command: '%1$S'."
+msgstr ""
+
+#. # LOCALIZATION NOTE: A parameter should have a value, but doesn't
+#: cliIncompleteParam
+msgid "Value required for '%1$S'."
+msgstr "'%1$S' करिता मूल्य आवश्यक."
+
+#. # LOCALIZATION NOTE: Error message given when a file argument points to a file
+#. # that does not exist, but should (e.g. for use with File->Open) %1$S is a
+#. # filename
+#: fileErrNotExists
+msgid "'%1$S' doesn't exist"
+msgstr "'%1$S' अस्तित्वात नाही"
+
+#. # LOCALIZATION NOTE: Error message given when a file argument points to a file
+#. # that exists, but should not (e.g. for use with File->Save As) %1$S is a
+#. # filename
+#: fileErrExists
+msgid "'%1$S' already exists"
+msgstr "'%1$S' आधीपासून अस्तित्वात आहे"
+
+#. # LOCALIZATION NOTE: Error message given when a file argument points to a
+#. # non-file, when a file is needed. %1$S is a filename
+#: fileErrIsNotFile
+msgid "'%1$S' is not a file"
+msgstr "'%1$S' ही फाइल नाही"
+
+#. # LOCALIZATION NOTE: Error message given when a file argument points to a
+#. # non-directory, when a directory is needed (e.g. for use with 'cd') %1$S is a
+#. # filename
+#: fileErrIsNotDirectory
+msgid "'%1$S' is not a directory"
+msgstr "'%1$S' ही डिरेक्टरी नाही"
+
+#. # LOCALIZATION NOTE: Error message given when a file argument does not match
+#. # the specified regular expression %1$S is a filename %2$S is a regular
+#. # expression
+#: fileErrDoesntMatch
+msgid "'%1$S' does not match '%2$S'"
+msgstr "'%1$S' हे '%2$S' शी जुळत नाही"
+
+#. # LOCALIZATION NOTE: When the menu has displayed all the matches that it
+#. # should (i.e. about 10 items) then we display this to alert the user that
+#. # more matches are available.
+#: fieldMenuMore
+msgid "More matches, keep typing"
+msgstr "आणखी जोड, प्रयत्न सुरू ठेवा"
+
+#. # LOCALIZATION NOTE: The command line provides completion for JavaScript
+#. # commands, however there are times when the scope of what we're completing
+#. # against can't be used. This error message is displayed when this happens.
+#: jstypeParseScope
+msgid "Scope lost"
+msgstr "व्याप्ति गमवली"
+
+#. # LOCALIZATION NOTE (jstypeParseMissing, jstypeBeginSyntax,
+#. # jstypeBeginUnterm): These error messages are displayed when the command line
+#. # is doing JavaScript completion and encounters errors.
+#: jstypeParseMissing
+msgid "Can't find property '%S'"
+msgstr "गुणधर्म '%S' सापडत नाही"
+
+#: jstypeBeginSyntax
+msgid "Syntax error"
+msgstr "सिंटॅक्स् एरर"
+
+#: jstypeBeginUnterm
+msgid "Unterminated string literal"
+msgstr "अनटर्मिनेटेड स्ट्रिंग लिटरल"
+
+#. # LOCALIZATION NOTE: This message is displayed if the system for providing
+#. # JavaScript completions encounters and error it displays this.
+#: jstypeParseError
+msgid "Error"
+msgstr "त्रुटी"
+
+#. # LOCALIZATION NOTE (typesNumberNan, typesNumberNotInt2, typesDateNan): These
+#. # error messages are displayed when the command line is passed a variable
+#. # which has the wrong format and can't be converted. Parameters: %S is the
+#. # passed variable.
+#: typesNumberNan
+msgid "Can't convert \"%S\" to a number."
+msgstr "\"%S\" ला संख्यामध्ये रूपांतरित करणे अशक्य."
+
+#: typesNumberNotInt2
+msgid "Can't convert \"%S\" to an integer."
+msgstr "\"%S\"ला इंटिजरमध्ये रूपांतर करणे अशक्य."
+
+#: typesDateNan
+msgid "Can't convert \"%S\" to a date."
+msgstr "\"%S\" ला दिनांक असे रूपांतरित करणे अशक्य."
+
+#. # LOCALIZATION NOTE (typesNumberMax, typesNumberMin, typesDateMax,
+#. # typesDateMin): These error messages are displayed when the command line is
+#. # passed a variable which has a value out of range (number or date).
+#. # Parameters: %1$S is the passed variable, %2$S is the limit value.
+#: typesNumberMax
+msgid "%1$S is greater than maximum allowed: %2$S."
+msgstr "%1$S अनुमत कमाल संख्या: %2$S पेक्षा जास्त आहे."
+
+#: typesNumberMin
+msgid "%1$S is smaller than minimum allowed: %2$S."
+msgstr "%1$S अनुमत किमान संख्या: %2$S पेक्षा कमी आहे."
+
+#: typesDateMax
+msgid "%1$S is later than maximum allowed: %2$S."
+msgstr "%1$S अनुमत कमाल संख्या: %2$S पेक्षा जास्त आहे."
+
+#: typesDateMin
+msgid "%1$S is earlier than minimum allowed: %2$S."
+msgstr "%1$S अनुमत किमान संख्या: %2$S पेक्षा कमी आहे."
+
+#. # LOCALIZATION NOTE: This error message is displayed when the command line is
+#. # passed an option with a limited number of correct values, but the passed
+#. # value is not one of them.
+#: typesSelectionNomatch
+msgid "Can't use '%S'."
+msgstr "'%S' चा वापर शक्य नाही."
+
+#. # LOCALIZATION NOTE: This error message is displayed when the command line is
+#. # expecting a CSS query string, however the passed string is not valid.
+#: nodeParseSyntax
+msgid "Syntax error in CSS query"
+msgstr "CSS क्वेरिमध्ये सिंटॅक्स् एरर आढळली"
+
+#. # LOCALIZATION NOTE (nodeParseMultiple, nodeParseNone): These error messages
+#. # are displayed when the command line is expecting a CSS string that matches a
+#. # single node, but more nodes (or none) match.
+#: nodeParseMultiple
+msgid "Too many matches (%S)"
+msgstr "एकापेक्षाजास्त जोड (%S) आढळली"
+
+#: nodeParseNone
+msgid "No matches"
+msgstr "जोड आढळली नाही"
+
+#. # LOCALIZATION NOTE (helpDesc, helpManual, helpSearchDesc, helpSearchManual3):
+#. # These strings describe the "help" command, used to display a description of
+#. # a command (e.g. "help pref"), and its parameter 'search'.
+#: helpDesc
+msgid "Get help on the available commands"
+msgstr "उपलब्ध आदेशांकरिता मदत प्राप्त करा"
+
+#: helpManual
+msgid ""
+"Provide help either on a specific command (if a search string is provided "
+"and an exact match is found) or on the available commands (if a search "
+"string is not provided, or if no exact match is found)."
+msgstr ""
+"एकतर ठराविक आदेशकरिता (शोध श्रृंखला पुरवले असल्यास व हुबेहुब जोड आढळल्यास) किंवा उपलब्ध "
+"आधेशकरिता (शोध श्रृंखला न पुरवल्यास, किंवा हुबेहुब जोड न आढळल्यास) मदत पुरवा."
+
+#: helpSearchDesc
+msgid "Search string"
+msgstr "शोध श्रृंखला"
+
+#: helpSearchManual3
+msgid ""
+"search string to use in narrowing down the displayed commands. Regular "
+"expressions not supported."
+msgstr ""
+"दाखवलेल्या आदेशांना अरूंदकरिता वापरण्याजोगी सर्च स्ट्रिंग. रेग्युलर एक्सप्रेशन्स समर्थीत नाही."
+
+#. # LOCALIZATION NOTE: These strings are displayed in the help page for a
+#. # command in the console.
+#: helpManSynopsis
+msgid "Synopsis"
+msgstr "सारांश"
+
+#. # LOCALIZATION NOTE: This message is displayed in the help page if the command
+#. # has no parameters.
+#: helpManNone
+msgid "None"
+msgstr "काहीही नाही"
+
+#. # LOCALIZATION NOTE: This message is displayed in response to the 'help'
+#. # command when used without a filter, just above the list of known commands.
+#: helpListAll
+msgid "Available Commands:"
+msgstr "उपलब्ध पर्याय:"
+
+#. # LOCALIZATION NOTE (helpListPrefix, helpListNone): These messages are
+#. # displayed in response to the 'help <search>' command (i.e. with a search
+#. # string), just above the list of matching commands. Parameters: %S is the
+#. # search string.
+#: helpListPrefix
+msgid "Commands starting with '%S':"
+msgstr "'%S' पासून सुरू होणारे आदेश:"
+
+#: helpListNone
+msgid "No commands starting with '%S'"
+msgstr "'%S' पासून सुरू होणारे आदेश आढळले नाही"
+
+#. # LOCALIZATION NOTE (helpManRequired, helpManOptional, helpManDefault): When
+#. # the 'help x' command wants to show the manual for the 'x' command, it needs
+#. # to be able to describe the parameters as either required or optional, or if
+#. # they have a default value.
+#: helpManRequired
+msgid "required"
+msgstr "आवश्यक"
+
+#: helpManOptional
+msgid "optional"
+msgstr "वैकल्पिक"
+
+#: helpManDefault
+msgid "optional, default=%S"
+msgstr "वैकल्पिक, default=%S"
+
+#. # LOCALIZATION NOTE: This forms part of the output from the 'help' command.
+#. # 'GCLI' is a project name and should be left untranslated.
+#: helpIntro
+msgctxt "helpIntro"
+msgid ""
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
+msgstr "GCLI हे प्रयोग, वेब डेव्हलपर्सकरिता वापरण्याजोगी आदेश ओळ निर्माण करण्यासाठी आहे."
+
+#. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
+#. # when the command in question has sub-commands, before a list of the matching
+#. # sub-commands.
+#: subCommands
+msgid "Sub-Commands"
+msgstr "उप-आदेश"
+
+#. # LOCALIZATION NOTE: This error message is displayed when the command line is
+#. # cannot find a match for the parse types.
+#: commandParseError
+msgid "Command line parsing error"
+msgstr "आदेश ओळ वाचतेवेळी त्रुटी"
+
+#. # LOCALIZATION NOTE (contextDesc, contextManual, contextPrefixDesc): These
+#. # strings are used to describe the 'context' command and its 'prefix'
+#. # parameter. See localization comment for 'connect' for an explanation about
+#. # 'prefix'.
+#: contextDesc
+msgid "Concentrate on a group of commands"
+msgstr "आदेशांच्या गटवर लक्ष केंद्रीत करा"
+
+#: contextManual
+msgid ""
+"Setup a default prefix to future commands. For example 'context git' would "
+"allow you to type 'commit' rather than 'git commit'."
+msgstr ""
+"भविष्यातील आदेशकरिता पूर्वनिर्धारित प्रिफिक्स सेटअप करा. उदाहरणार्थ 'context git' "
+"तुम्हाला 'git commit' ऐवजी 'commit' लिहण्यास परवानगी देईल."
+
+#: contextPrefixDesc
+msgid "The command prefix"
+msgstr "आदेश प्रिफिक्स"
+
+#. # LOCALIZATION NOTE: This message message displayed during the processing of
+#. # the 'context' command, when the found command is not a parent command.
+#: contextNotParentError
+msgid "Can't use '%S' as a prefix because it is not a parent command."
+msgstr "'%S' चे प्रिफिक्स म्हणून वापर अशक्य कारण ते पॅरेंट आदेश नाही."
+
+#. # LOCALIZATION NOTE (contextReply, contextEmptyReply): These messages are
+#. # displayed during the processing of the 'context' command, to indicate
+#. # success or that there is no command prefix.
+#: contextReply
+msgid "Using %S as a command prefix"
+msgstr "%S चा वापर आदेश प्रिफिक्स म्हणून करत आहे"
+
+#: contextEmptyReply
+msgid "Command prefix is unset"
+msgstr "आदेश प्रिफिक्स सेट केले नाही"
+
+#. # LOCALIZATION NOTE (connectDesc, connectManual, connectPrefixDesc,
+#. # connectMethodDesc, connectUrlDesc, connectDupReply): These strings describe
+#. # the 'connect' command and all its available parameters. A 'prefix' is an 
+#. # alias for the remote server (think of it as a "connection name"), and it
+#. # allows to identify a specific server when connected to multiple remote
+#. # servers.
+#: connectDesc
+msgid "Proxy commands to server"
+msgstr "सर्व्हरसाठी प्रॉक्सी आदेश"
+
+#: connectManual
+msgid ""
+"Connect to the server, creating local versions of the commands on the "
+"server. Remote commands initially have a prefix to distinguish them from "
+"local commands (but see the context command to get past this)"
+msgstr ""
+"सर्व्हरच्या आदेशांच्या स्थानिक आवृत्त्या बनवत, सर्व्हरला जोडा. रिमोट आदेशांना प्रारंभी "
+"पूर्वप्रत्यय असतो जो त्यांना स्थानिक आदेशांपासुन वेगळा करतो (पण यापुढे जाण्यासाठी मजकुर आदेश "
+"बघा)"
+
+#: connectPrefixDesc
+msgctxt "connectPrefixDesc"
+msgid "Parent prefix for imported commands"
+msgstr "आयात केलेल्या आदेशांकरिता पॅरेंट प्रिफिक्स"
+
+#: connectMethodDesc
+msgid "The method of connecting"
+msgstr "जोडणीकरिता पद्धत"
+
+#: connectUrlDesc
+msgid "The URL to connect to"
+msgstr "जोडणीकरिता URL"
+
+#: connectDupReply
+msgid "Connection called %S already exists."
+msgstr "%S नावाची जोडणी आधीपासून अस्तित्वात आहे."
+
+#. # LOCALIZATION NOTE: The output of the 'connect' command, telling the user
+#. # what it has done. Parameters: %S is the prefix command. See localization
+#. # comment for 'connect' for an explanation about 'prefix'.
+#: connectReply
+msgid "Added %S commands."
+msgstr "%S आदेश समाविष्ट केले."
+
+#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2,
+#. # disconnectPrefixDesc): These strings describe the 'disconnect' command and
+#. # all its available parameters. See localization comment for 'connect' for an
+#. # explanation about 'prefix'.
+#: disconnectDesc2
+msgid "Disconnect from server"
+msgstr "सर्व्हरशी जोडणी खंडीत करा"
+
+#: disconnectManual2
+msgid ""
+"Disconnect from a server currently connected for remote commands execution"
+msgstr "रिमोट आदेशांच्या पालनासाठी सध्या जोडलेल्या सर्व्हरशी जोडणी खंडीत करा"
+
+#: disconnectPrefixDesc
+msgctxt "disconnectPrefixDesc"
+msgid "Parent prefix for imported commands"
+msgstr "इम्पोर्टेड आदेशांकरिता पॅरेंट प्रिफिक्स"
+
+#. # LOCALIZATION NOTE: This is the output of the 'disconnect' command,
+#. # explaining the user what has been done. Parameters: %S is the number of
+#. # commands removed.
+#: disconnectReply
+msgid "Removed %S commands."
+msgstr "%S आदेश काढून टाकले."
+
+#. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
+#. # strings describe the 'global' command and its parameters
+#: globalDesc
+msgid "Change the JS global"
+msgstr "JS ग्लोबलमध्ये बदल करा"
+
+#: globalWindowDesc
+msgid "The new window/global"
+msgstr "नवीन ग्लेबल पटल"
+
+#: globalOutput
+msgid "JS global is now %S"
+msgstr "JS ग्लोबल आत्ता %S आहे"
+
+#. # LOCALIZATION NOTE: These strings describe the 'clear' command
+#: clearDesc
+msgid "Clear the output area"
+msgstr "आउटपुट क्षेत्र नष्ट करा"
+
+#. # LOCALIZATION NOTE (langDesc, langOutput): These strings describe the 'lang'
+#. # command and its parameters
+#: langDesc
+msgid "Enter commands in different languages"
+msgstr "विविध भाषांमध्ये आदेश द्या"
+
+#: langOutput
+msgid "You are now using %S"
+msgstr "तुम्ही आत्ता %S चा वापर करत आहात"
+
+#. # LOCALIZATION NOTE (prefDesc, prefManual, prefListDesc, prefListManual,
+#. # prefListSearchDesc, prefListSearchManual, prefShowDesc, prefShowManual,
+#. # prefShowSettingDesc, prefShowSettingManual): These strings describe the
+#. # 'pref' command and all its available sub-commands and parameters.
+#: prefDesc
+msgid "Commands to control settings"
+msgstr "सेटिंग्स् नियंत्रीत करण्यासाठी आदेश"
+
+#: prefManual
+msgid ""
+"Commands to display and alter preferences both for GCLI and the surrounding "
+"environment"
+msgstr "GCLI व परस्पर वातावरणकरीता पसंती दाखवणे व बदल करण्यासाठीचे आदेश"
+
+#: prefListDesc
+msgid "Display available settings"
+msgstr "उपलब्ध सेटिंग्स् दाखवा"
+
+#: prefListManual
+msgid ""
+"Display a list of preferences, optionally filtered when using the 'search' "
+"parameter"
+msgstr "'शोध' घटकाचा वापर करतेवेळी पसंतीची सूची दाखवा, वैकल्पिकरित्या फिल्टर केलेले"
+
+#: prefListSearchDesc
+msgid "Filter the list of settings displayed"
+msgstr "दाखवलेल्या सेटिंग्सची सूची फिल्टर करा"
+
+#: prefListSearchManual
+msgid "Search for the given string in the list of available preferences"
+msgstr "उपलब्ध पसंती सूचीमध्ये दिलेली स्ट्रिंग शोधा"
+
+#: prefShowDesc
+msgid "Display setting value"
+msgstr "सेटिंगचे मुल्य दाखवा"
+
+#: prefShowManual
+msgid "Display the value of a given preference"
+msgstr "दिलेल्या पसंतीचे मुल्य दाखवा"
+
+#: prefShowSettingDesc
+msgid "Setting to display"
+msgstr "दाखवण्याजोगी सेटिंग"
+
+#: prefShowSettingManual
+msgid "The name of the setting to display"
+msgstr "दाखवण्याजोगी सेटिंगचे नाव"
+
+#. # LOCALIZATION NOTE: This message is used to show the preference name and the
+#. # associated preference value. Parameters: %1$S is the preference name, %2$S
+#. # is the preference value.
+#: prefShowSettingValue
+msgid "%1$S: %2$S"
+msgstr "%1$S: %2$S"
+
+#. # LOCALIZATION NOTE (prefSetDesc, prefSetManual, prefSetSettingDesc,
+#. # prefSetSettingManual, prefSetValueDesc, prefSetValueManual): These strings
+#. # describe the 'pref set' command and all its parameters.
+#: prefSetDesc
+msgid "Alter a setting"
+msgstr "सेटिंग बदला"
+
+#: prefSetManual
+msgid "Alter preferences defined by the environment"
+msgstr "एंवार्यनमेंटतर्फे ठरवलेल्या पसंती बदला"
+
+#: prefSetSettingDesc
+msgid "Setting to alter"
+msgstr "बदलकरीता सेटिंग"
+
+#: prefSetSettingManual
+msgid "The name of the setting to alter."
+msgstr "बदलकरीता सेटिंगचे नाव."
+
+#: prefSetValueDesc
+msgid "New value for setting"
+msgstr "सेटिंगकरीता नविन मुल्य"
+
+#: prefSetValueManual
+msgid "The new value for the specified setting"
+msgstr "निर्देशीत सेटिंगकरीता नविन मुल्य"
+
+#. # LOCALIZATION NOTE (prefResetDesc, prefResetManual, prefResetSettingDesc,
+#. # prefResetSettingManual): These strings describe the 'pref reset' command and
+#. # all its parameters.
+#: prefResetDesc
+msgid "Reset a setting"
+msgstr "सेटिंग पूर्ववत् करा"
+
+#: prefResetManual
+msgid "Reset the value of a setting to the system defaults"
+msgstr "सेटिंगचे मुल्य प्रणाली पूर्वनिर्धारितसाठी पूर्ववत् करा"
+
+#: prefResetSettingDesc
+msgid "Setting to reset"
+msgstr "पूर्वस्थितीत नेण्यासाठी सेटिंग"
+
+#: prefResetSettingManual
+msgid "The name of the setting to reset to the system default value"
+msgstr "प्रणाली पूर्वनिर्धारित सेट करण्यासाठी मुल्याचे नाव"
+
+#. # LOCALIZATION NOTE: This string is displayed in the output from the 'pref
+#. # list' command as a label to an input element that allows the user to filter
+#. # the results.
+#: prefOutputFilter
+msgid "Filter"
+msgstr "फिल्टर"
+
+#. # LOCALIZATION NOTE (prefOutputName, prefOutputValue): These strings are
+#. # displayed in the output from the 'pref list' command as table headings.
+#: prefOutputName
+msgid "Name"
+msgstr "नाव"
+
+#: prefOutputValue
+msgid "Value"
+msgstr "मुल्य"
+
+#. # LOCALIZATION NOTE (introDesc, introManual): These strings describe the
+#. # 'intro' command. The localization of 'Got it!' should be the same used in
+#. # introTextGo.
+#: introDesc
+msgid "Show the opening message"
+msgstr "सुरवातीचे संदेश दाखवा"
+
+#: introManual
+msgid ""
+"Redisplay the message that is shown to new users until they click the 'Got "
+"it!' button"
+msgstr "'समझले!' बटनावर क्लिक करेपर्यंत नविन वापरकर्त्यांना दाखवण्याजोगी संदेश पुनः दाखवा"
+
+#. # LOCALIZATION NOTE (introTextOpening3, introTextCommands, introTextKeys2,
+#. # introTextF1Escape, introTextGo): These strings are displayed when the user
+#. # first opens the developer toolbar to explain the command line, and is shown
+#. # each time it is opened until the user clicks the 'Got it!' button.
+#: introTextOpening3
+msgctxt "introTextOpening3"
+msgid ""
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
+msgstr "GCLI हे प्रयोग, वेब डेव्हलपर्सकरिता वापरण्याजोगी आदेश ओळ निर्माण करण्यासाठी आहे."
+
+#: introTextCommands
+msgid "For a list of commands type"
+msgstr "आदेशांच्या सूचीकरीता टाइप करा"
+
+#: introTextKeys2
+msgid ", or to show/hide command hints press"
+msgstr ", किंवा आदेश टिपा दाखवणे किंवा लपवण्याकरिता दाबा"
+
+#: introTextF1Escape
+msgid "F1/Escape"
+msgstr "F1/एस्केप"
+
+#: introTextGo
+msgid "Got it!"
+msgstr "समजले!"
+
+#. # LOCALIZATION NOTE: This is a short description of the 'hideIntro' setting.
+#: hideIntroDesc
+msgid "Show the initial welcome message"
+msgstr "सुरवातीचे स्वागत संदेश दाखवा"
+
+#. # LOCALIZATION NOTE: This is a description of the 'eagerHelper' setting. It's
+#. # displayed when the user asks for help on the settings. eagerHelper allows
+#. # users to select between showing no tooltips, permanent tooltips, and only
+#. # important tooltips.
+#: eagerHelperDesc
+msgid "How eager are the tooltips"
+msgstr "टूलटिप्स् किती उत्सुक आहेत"
+
+#~ msgid "Invalid Command"
+#~ msgstr "अवैध आदेश"
+
+#~ msgid "Select a %S…"
+#~ msgstr "%S निवडा…"
+
+#~ msgid "Add"
+#~ msgstr "समाविष्ट करा"
+
+#~ msgid "Delete"
+#~ msgstr "नष्ट करा"
+
+#~ msgctxt "subCommandsNone"
+#~ msgid "None"
+#~ msgstr "काहिच नाही"
+
+#~ msgid "Ignore outstanding requests"
+#~ msgstr "असामान्य विनंतीकडे दुर्लक्ष करा"
+
+#~ msgid "Outstanding requests (%S)"
+#~ msgstr "असामान्य विनंती (%S)"
+
+#~ msgid "This might void your warranty!"
+#~ msgstr "यामुळे आश्वासन नाहीसे होऊ शकते!"
+
+#~ msgid ""
+#~ "Changing these advanced settings can be harmful to the stability, "
+#~ "security, and performance of this application. You should only continue "
+#~ "if you are sure of what you are doing."
+#~ msgstr ""
+#~ "या प्रगत सेटिंग्समध्ये केलेल्या बदलमुळे ॲप्लिकेशनची स्थिरता, सेक्युरिटि, व परफार्मंस प्रभावीत "
+#~ "होऊ शकते. संपूर्ण खात्री असल्यावरच पुढचे कार्य सुरू ठेवा."
+
+#~ msgid "I'll be careful, I promise!"
+#~ msgstr "मी खात्री देतो, कि काळजी घेईन!"
+
+#~ msgid "For more information see MDN."
+#~ msgstr "अधिक माहितीसाठी MDN पहा."
+
+#~ msgid "Description"
+#~ msgstr "वर्णन"
+
+#~ msgid "The TCP port to listen on"
+#~ msgstr "ऐकण्याजोगी TCP पोर्ट"
+
+#~ msgid "The hostname to bind to"
+#~ msgstr "बाइंडजोगी यजमाननाव"
+
+#~ msgid ""
+#~ "This command line is designed for developers. It focuses on speed of "
+#~ "input over JavaScript syntax and a rich display over monospace output."
+#~ msgstr ""
+#~ "ह्या आदेश ओळची रचना डेव्हलपर्सकरिता केली आहे. ते JavaScript मांडणीवरील इंपुटच्या "
+#~ "गतिवर व मोनोस्पेस आउटपुटवरील रिच डिस्पलेवर केंद्रीत असते."
+
+#~ msgid "Has the user enabled the 'pref set' command?"
+#~ msgstr "वापरकर्त्याने 'pref set' आदेश सुरू केले?"
+
+#~ msgid "Parameters"
+#~ msgstr "पॅरामिटर"
+
+#~ msgctxt "disconnectDesc"
+#~ msgid "Proxy commands to server"
+#~ msgstr "सर्व्हरकरिता प्रॉक्सी आदेश"
+
+#~ msgctxt "disconnectManual"
+#~ msgid ""
+#~ "Connect to the server, creating local versions of the commands on the "
+#~ "server. Remote commands initially have a prefix to distinguish them from "
+#~ "local commands (but see the context command to get past this)"
+#~ msgstr ""
+#~ "सर्व्हरशी जोडणी करा, सर्व्हरवर आदेशांची स्थानीय आवृत्ती निर्माण करा. स्थानीय "
+#~ "आदेशांपासून दूरस्त आदेशांना वेगळे करण्याकरिता दूरस्त आदेशांना प्रिफिक्स असते (परंतु "
+#~ "अपवादकरिता संदर्भ आदेश पहा)"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-30 19:16+0000\n"
+"POT-Creation-Date: 2015-05-11 20:18+0000\n"
 "PO-Revision-Date: 2013-09-27 16:17+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,24 +28,53 @@ msgstr ""
 #. - documentation on web development on the web.
 #. LOCALIZATION NOTE (profilerUI.emptyNotice1/2): This is the label shown
 #. -  in the call list view when empty.
+#. TODO remove
 #: profilerUI.emptyNotice1
 msgctxt "profilerUI.emptyNotice1"
 msgid "Click on the"
 msgstr ""
 
+#. TODO remove
 #: profilerUI.emptyNotice2
 msgid "button to start recording JavaScript function calls."
 msgstr ""
 
 #. LOCALIZATION NOTE (profilerUI.stopNotice1/2): This is the label shown
 #. -  in the call list view while recording a profile.
+#. TODO remove
 #: profilerUI.stopNotice1
 msgctxt "profilerUI.stopNotice1"
 msgid "Click on the"
 msgstr ""
 
+#. TODO remove
 #: profilerUI.stopNotice2
 msgid "button again to stop profiling."
+msgstr ""
+
+#. LOCALIZATION NOTE (profilerUI.startRecording/profilerUI.stopRecording): These are
+#. -  the labels shown on the main recording buttons to start/stop recording.
+#: profilerUI.startRecording
+msgid "Start Recording Performance"
+msgstr ""
+
+#: profilerUI.stopRecording
+msgid "Stop Recording Performance"
+msgstr ""
+
+#. This string
+#. -  is displayed as the tooltip for the buffer capacity during a recording.
+#: profilerUI.bufferStatusTooltip
+msgid ""
+"The profiler stores samples in a circular buffer, and once the buffer "
+"reaches the limit for a recording, newer samples begin to overwrite samples "
+"at the beginning of the recording."
+msgstr ""
+
+#. This string
+#. -  is displayed when the profiler's circular buffer has started to overlap.
+#: profilerUI.bufferStatusFull
+msgid "The buffer is full. Older samples are now being overwritten."
 msgstr ""
 
 #. This is the label shown
@@ -56,8 +85,15 @@ msgstr ""
 
 #. LOCALIZATION NOTE (profilerUI.recordButton): This string is displayed
 #. -  on a button that starts a new profile.
+#. TODO remove
 #: profilerUI.recordButton.tooltip
 msgid "Record JavaScript function calls."
+msgstr ""
+
+#. LOCALIZATION NOTE (profilerUI.recordButton2): This string is displayed
+#. -  on a button that starts a new profile.
+#: profilerUI.recordButton2.tooltip
+msgid "Toggle the recording state of a performance recording."
 msgstr ""
 
 #. This string is displayed
@@ -107,31 +143,57 @@ msgstr ""
 msgid "Total Time"
 msgstr ""
 
+#: profilerUI.table.totalDuration.tooltip
+msgid "The amount of time spent in this function and functions it calls."
+msgstr ""
+
 #: profilerUI.table.selfDuration2
 msgid "Self Time"
+msgstr ""
+
+#: profilerUI.table.selfDuration.tooltip
+msgid "The amount of time spent only within this function."
 msgstr ""
 
 #: profilerUI.table.totalPercentage
 msgid "Total Cost"
 msgstr ""
 
+#: profilerUI.table.totalPercentage.tooltip
+msgid "The percentage of time spent in this function and functions it calls."
+msgstr ""
+
 #: profilerUI.table.selfPercentage
 msgid "Self Cost"
+msgstr ""
+
+#: profilerUI.table.selfPercentage.tooltip
+msgid "The percentage of time spent only within this function."
 msgstr ""
 
 #: profilerUI.table.samples
 msgid "Samples"
 msgstr ""
 
+#: profilerUI.table.samples.tooltip
+msgid ""
+"The number of times this function was on the stack when the profiler took a "
+"sample."
+msgstr ""
+
 #: profilerUI.table.function
 msgid "Function"
+msgstr ""
+
+#: profilerUI.table.function.tooltip
+msgid "The name and source location of the sampled function."
 msgstr ""
 
 #: profilerUI.table.totalAlloc1
 msgid "Total Sampled Allocations"
 msgstr ""
 
-#: profilerUI.table.totalAllocTooltip
+#: profilerUI.table.totalAlloc.tooltip
 msgid ""
 "The total number of Object allocations sampled at this location and in "
 "callees."
@@ -141,7 +203,7 @@ msgstr ""
 msgid "Self Sampled Allocations"
 msgstr ""
 
-#: profilerUI.table.selfAllocTooltip
+#: profilerUI.table.selfAlloc.tooltip
 msgid "The number of Object allocations sampled at this location."
 msgstr ""
 
@@ -231,6 +293,47 @@ msgstr ""
 
 #: profilerUI.enableFramerate.tooltiptext
 msgid "Record framerate while profiling."
+msgstr ""
+
+#. This string
+#. -  is displayed next to a checkbox determining whether or not JIT optimization data
+#. -  should be shown.
+#: profilerUI.showJITOptimizations
+msgid "Show JIT Optimizations"
+msgstr ""
+
+#: profilerUI.showJITOptimizations.tooltiptext
+msgid "Show JIT optimization data sampled in each frame of the JS call tree."
+msgstr ""
+
+#. This string
+#. -  is displayed as the title of the JIT Optimizations panel.
+#: profilerUI.JITOptimizationsTitle
+msgid "JIT Optimizations"
+msgstr ""
+
+#. LOCALIZATION NOTE (profilerUI.console.recordingNoticeStart/recordingNoticeEnd):
+#. -  This string is displayed when a recording is selected that started via console.profile.
+#. -  Wraps the command used to start, like "Currently recording via console.profile("label")"
+#: profilerUI.console.recordingNoticeStart
+msgid "Currently recording via"
+msgstr ""
+
+#: profilerUI.console.recordingNoticeEnd
+msgctxt "profilerUI.console.recordingNoticeEnd"
+msgid ""
+msgstr ""
+
+#. LOCALIZATION NOTE (profilerUI.console.stopCommandStart/stopCommandEnd):
+#. -  This string is displayed when a recording is selected that started via console.profile.
+#. -  Indicates how to stop the recording, wrapping the command, like
+#. -  "Stop recording by entering console.profilEnd("label") into the console."
+#: profilerUI.console.stopCommandStart
+msgid "Stop recording by entering"
+msgstr ""
+
+#: profilerUI.console.stopCommandEnd
+msgid "into the console."
 msgstr ""
 
 #, fuzzy

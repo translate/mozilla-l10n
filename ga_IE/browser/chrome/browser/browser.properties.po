@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-30 19:16+0000\n"
+"POT-Creation-Date: 2015-05-11 20:18+0000\n"
 "PO-Revision-Date: 2015-03-31 01:23+0000\n"
 "Last-Translator: Kevin <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1427765038.000000\n"
@@ -113,6 +113,10 @@ msgstr ""
 msgid "Verifying"
 msgstr "Á Fhíorú"
 
+#: addonInstall.unsigned
+msgid "(Unverified)"
+msgstr ""
+
 #: addonInstall.cancelButton.label addonInstall.cancelButton.accesskey
 msgid "&Cancel"
 msgstr "&Cealaigh"
@@ -121,7 +125,7 @@ msgstr "&Cealaigh"
 msgid "&Install"
 msgstr "&Suiteáil"
 
-#. # LOCALIZATION NOTE (addonConfirmInstallMessage):
+#. # LOCALIZATION NOTE (addonConfirmInstallMessage,addonConfirmInstallUnsigned):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 is brandShortName
@@ -136,12 +140,31 @@ msgstr ""
 "bhreiseán a shuiteáil in #1;Tá an suíomh seo ag iarraidh #2 mbreiseán a "
 "shuiteáil in #1;Tá an suíomh seo ag iarraidh #2 breiseán a shuiteáil in #1"
 
+#: addonConfirmInstallUnsigned.message
+msgid ""
+"Caution: This site would like to install an unverified add-on in #1. Proceed "
+"at your own risk.;Caution: This site would like to install #2 unverified add-"
+"ons in #1. Proceed at your own risk."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonConfirmInstallSomeUnsigned.message):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName
+#. # #2 is the total number of add-ons being installed (at least 2)
+#: addonConfirmInstallSomeUnsigned.message
+msgid ""
+";Caution: This site would like to install #2 add-ons in #1, some of which "
+"are unverified. Proceed at your own risk."
+msgstr ""
+
 #: addonwatch.slow
 msgid "%1$S might be making %2$S run slowly"
 msgstr "Seans gurb é %1$S atá ag cur moille ar %2$S"
 
-#: addonwatch.disable.label addonwatch.disable.accesskey
-msgid "&Disable %S"
+#: addonwatch.disable.label
+#, fuzzy
+msgid "Disable %S"
 msgstr "&Díchumasaigh %S"
 
 #: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
@@ -200,7 +223,7 @@ msgstr "R"
 # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonErrorIncompatible, addonErrorBlocklisted):
 # #1 is the add-on name, #2 is the host name, #3 is the application name
 # #4 is the application version
-#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonError-5):
 #. # #1 is the add-on name, #2 is the host name, #3 is the application name
 #. # #4 is the application version
 #: addonError-1
@@ -232,7 +255,11 @@ msgstr ""
 "Níorbh fhéidir #1 a shuiteáil toisc nach bhfuil #3 in ann comhad riachtanach "
 "a athrú."
 
-#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#: addonError-5
+msgid "#3 has prevented this site from installing an unverified add-on."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonLocalError-5, addonErrorIncompatible, addonErrorBlocklisted):
 #. # #1 is the add-on name, #3 is the application name, #4 is the application version
 #: addonLocalError-1
 msgid "This add-on could not be installed because of a filesystem error."
@@ -261,6 +288,13 @@ msgstr ""
 "Níorbh fhéidir #1 a shuiteáil toisc nach bhfuil #3 in ann an comhad "
 "riachtanach a athrú."
 
+#: addonLocalError-5
+#, fuzzy
+msgid "This add-on could not be installed because it has not been verified."
+msgstr ""
+"Níorbh fhéidir an breiseán a shuiteáil toisc go ndealraíonn sé go bhfuil sé "
+"truaillithe."
+
 #: addonErrorIncompatible
 msgid "#1 could not be installed because it is not compatible with #3 #4."
 msgstr ""
@@ -273,6 +307,20 @@ msgid ""
 msgstr ""
 "Tá baol mór ann go mbeidh an breiseán #1 ina údár le fadhbanna slándála agus "
 "cobhsaíochta, agus ní féidir é a shuiteáil."
+
+#: unsignedAddonsDisabled.message
+msgid ""
+"One or more installed add-ons cannot be verified and have been disabled."
+msgstr ""
+
+#: unsignedAddonsDisabled.learnMore.label
+#: unsignedAddonsDisabled.learnMore.accesskey
+#, fuzzy
+msgctxt ""
+"unsignedAddonsDisabled.learnMore.label unsignedAddonsDisabled.learnMore."
+"accesskey"
+msgid "&Learn More"
+msgstr "&Tuilleadh Eolais…"
 
 #. # LOCALIZATION NOTE (deveditionTheme.name): This should be nearly the brand name for aurora.
 #. # See browser/branding/aurora/locales/*/brand.properties
@@ -996,6 +1044,39 @@ msgstr "N"
 msgid "Would you like to show notifications from %S?"
 msgstr "An bhfuil fonn ort fógraí ó %S a thaispeáint?"
 
+#. # Push Notifications
+#: push.allowForSession
+msgid "Allow for Session"
+msgstr "Ceadaigh don Seisiún"
+
+#: push.allowForSession.accesskey
+msgctxt "push.allowForSession.accesskey"
+msgid "S"
+msgstr ""
+
+#: push.alwaysAllow
+msgid "Always Allow Push Notifications"
+msgstr ""
+
+#: push.alwaysAllow.accesskey
+msgctxt "push.alwaysAllow.accesskey"
+msgid "A"
+msgstr ""
+
+#: push.alwaysBlock
+#, fuzzy
+msgid "Always Block Push Notifications"
+msgstr "Ná Taispeáin Fógraí Riamh"
+
+#: push.alwaysBlock.accesskey
+msgid "B"
+msgstr ""
+
+#: push.enablePush
+#, fuzzy
+msgid "Would you like to allow Push Notifications for %S?"
+msgstr "An bhfuil fonn ort fógraí ó %S a thaispeáint?"
+
 #. # Pointer lock UI
 #: pointerLock.allow2
 msgid "Hide pointer"
@@ -1058,6 +1139,10 @@ msgstr "Tuairiscíodh gur Suíomh Ionsaithe é seo!"
 #: safebrowsing.notAnAttackButton.accessKey
 msgid "This isn't &an attack site…"
 msgstr "Ní suíomh ions&aithe é seo…"
+
+#: safebrowsing.reportedUnwantedSite
+msgid "Reported Unwanted Software Site!"
+msgstr ""
 
 #. # Ctrl-Tab
 #. # LOCALIZATION NOTE (ctrlTab.listAllTabs.label): #1 represents the number
@@ -1950,6 +2035,80 @@ msgstr ""
 #: readingList.prepopulatedArticles.supportSync
 msgid "Access your Reading List anywhere with %S"
 msgstr "Is féidir teacht ar do Liosta Léitheoireachta aon áit le %S"
+
+#. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
+#. #                    e10s.offerPopup.highlight1
+#. #                    e10s.offerPopup.highlight2
+#. #                    e10s.offerPopup.enableAndRestart.label
+#. #                    e10s.offerPopup.enableAndRestart.accesskey
+#. #                    e10s.offerPopup.noThanks.label
+#. #                    e10s.offerPopup.noThanks.accesskey
+#. #                    e10s.postActivationInfobar.message
+#. #                    e10s.postActivationInfobar.learnMore.label
+#. #                    e10s.postActivationInfobar.learnMore.accesskey
+#. #                    e10s.accessibilityNotice.mainMessage
+#. #                    e10s.accessibilityNotice.disableAndRestart.label
+#. #                    e10s.accessibilityNotice.disableAndRestart.accesskey
+#. #                    e10s.accessibilityNotice.dontDisable.label
+#. #                    e10s.accessibilityNotice.dontDisable.accesskey):
+#. # These strings are related to the messages we display to offer e10s (Multi-process) to users
+#. # on the pre-release channels. They won't be used in release but they will likely be used in
+#. # beta starting from version 41, so it's still useful to have these strings properly localized.
+#. # %S is brandShortName
+#: e10s.offerPopup.mainMessage
+msgid ""
+"Multi-process is coming soon to %S. You can start using it now to get early "
+"access to some of the benefits:"
+msgstr ""
+
+#: e10s.offerPopup.highlight1
+msgid "Improved responsiveness"
+msgstr ""
+
+#: e10s.offerPopup.highlight2
+msgid "Fewer crashes"
+msgstr ""
+
+#: e10s.offerPopup.enableAndRestart.label
+#: e10s.offerPopup.enableAndRestart.accesskey
+msgid "&Enable and Restart"
+msgstr ""
+
+#: e10s.offerPopup.noThanks.label e10s.offerPopup.noThanks.accesskey
+#, fuzzy
+msgid "&No, thanks"
+msgstr "Níl"
+
+#: e10s.postActivationInfobar.message
+msgid ""
+"You're now helping to test multi-process in %S! Please report problems you "
+"find."
+msgstr ""
+
+#: e10s.postActivationInfobar.learnMore.label
+#: e10s.postActivationInfobar.learnMore.accesskey
+#, fuzzy
+msgctxt ""
+"e10s.postActivationInfobar.learnMore.label e10s.postActivationInfobar."
+"learnMore.accesskey"
+msgid "&Learn More"
+msgstr "&Tuilleadh Eolais…"
+
+#: e10s.accessibilityNotice.mainMessage
+msgid ""
+"Multi-process does not yet support accessibility features. Multi-process "
+"will be disabled if you restart %S. Would you like to restart?"
+msgstr ""
+
+#: e10s.accessibilityNotice.disableAndRestart.label
+#: e10s.accessibilityNotice.disableAndRestart.accesskey
+msgid "Disable and &Restart"
+msgstr ""
+
+#: e10s.accessibilityNotice.dontDisable.label
+#: e10s.accessibilityNotice.dontDisable.accesskey
+msgid "&Don't Disable"
+msgstr ""
 
 #~ msgid "Add-on downloading;Add-ons downloading"
 #~ msgstr ""

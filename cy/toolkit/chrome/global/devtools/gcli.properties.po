@@ -1,0 +1,731 @@
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./toolkit/chrome/global/devtools/gcli.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-11 20:18+0000\n"
+"PO-Revision-Date: 2015-04-14 16:54+0000\n"
+"Last-Translator: Rhoslyn <rprys@yahoo.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+"X-POOTLE-MTIME: 1429030446.000000\n"
+
+#. # LOCALIZATION NOTE These strings are used inside the Web Console
+#. # command line which is available from the Web Developer sub-menu
+#. # -> 'Web Console'.
+#. # The correct localization of this file might be to keep it in
+#. # English, or another language commonly spoken among web developers.
+#. # You want to make that choice consistent across the developer tools.
+#. # A good criteria is the language in which you'd find the best
+#. # documentation on web development on the web.
+#. # For each command there are in general two strings. As an example consider
+#. # the 'pref' command.
+#. # commandDesc (e.g. prefDesc for the command 'pref'): this string contains a
+#. # very short description of the command. It's designed to be shown in a menu
+#. # alongside the command name, which is why it should be as short as possible.
+#. # commandManual (e.g. prefManual for the command 'pref'): this string will
+#. # contain a fuller description of the command. It's diplayed when the user
+#. # asks for help about a specific command (e.g. 'help pref').
+#. # LOCALIZATION NOTE: This message is used to describe any command or command
+#. # parameter when no description has been provided.
+#: canonDescNone
+msgid "(No description)"
+msgstr "(Dim disgrifiad)"
+
+#. # LOCALIZATION NOTE: The default name for a group of parameters.
+#: canonDefaultGroupName
+msgid "Options"
+msgstr "Dewisiadau"
+
+#. # LOCALIZATION NOTE (canonProxyDesc, canonProxyManual): These commands are
+#. # used to execute commands on a remote system (using a proxy). Parameters: %S
+#. # is the name of the remote system.
+#: canonProxyDesc
+msgid "Execute a command on %S"
+msgstr "Gweithredwch orchymyn ar %S"
+
+#: canonProxyManual
+msgid ""
+"A set of commands that are executed on a remote system. The remote system is "
+"reached via %S"
+msgstr ""
+"Set o orchmynion sy'n cael eu gweithredu ar system bell. Mae modd cyrraedd y "
+"system bell drwy %S"
+
+#. # LOCALIZATION NOTE: This error message is displayed when we try to add a new
+#. # command (using a proxy) where one already exists with the same name.
+#: canonProxyExists
+msgid "There is already a command called '%S'"
+msgstr "Mae eisoes gorchymyn o'r enw '%S'"
+
+#. # LOCALIZATION NOTE: This message describes the '{' command, which allows
+#. # entry of JavaScript like traditional developer tool command lines.
+#: cliEvalJavascript
+msgid "Enter JavaScript directly"
+msgstr "Rhoi JavaScript i fewn yn uniongyrchol"
+
+#. # LOCALIZATION NOTE: This message is displayed when the command line has more
+#. # arguments than the current command can understand.
+#: cliUnusedArg
+msgid "Too many arguments"
+msgstr "Gormod o ymresymiadau"
+
+#. # LOCALIZATION NOTE: The title of the dialog which displays the options that
+#. # are available to the current command.
+#: cliOptions
+msgid "Available Options"
+msgstr "Dewisiadau Posib"
+
+#. # LOCALIZATION NOTE: The error message when the user types a command that
+#. # isn't registered
+#: cliUnknownCommand2
+msgid "Invalid Command: '%1$S'."
+msgstr ""
+
+#. # LOCALIZATION NOTE: A parameter should have a value, but doesn't
+#: cliIncompleteParam
+msgid "Value required for '%1$S'."
+msgstr "Y gwerth angenrheidiol ar gyfer '%1$S'."
+
+#. # LOCALIZATION NOTE: Error message given when a file argument points to a file
+#. # that does not exist, but should (e.g. for use with File->Open) %1$S is a
+#. # filename
+#: fileErrNotExists
+msgid "'%1$S' doesn't exist"
+msgstr "Nid yw '%1$S' yn bod"
+
+#. # LOCALIZATION NOTE: Error message given when a file argument points to a file
+#. # that exists, but should not (e.g. for use with File->Save As) %1$S is a
+#. # filename
+#: fileErrExists
+msgid "'%1$S' already exists"
+msgstr "Mae '%1$S' yn bodoli eisoes"
+
+#. # LOCALIZATION NOTE: Error message given when a file argument points to a
+#. # non-file, when a file is needed. %1$S is a filename
+#: fileErrIsNotFile
+msgid "'%1$S' is not a file"
+msgstr "Nid yw '%1$S' yn ffeil"
+
+#. # LOCALIZATION NOTE: Error message given when a file argument points to a
+#. # non-directory, when a directory is needed (e.g. for use with 'cd') %1$S is a
+#. # filename
+#: fileErrIsNotDirectory
+msgid "'%1$S' is not a directory"
+msgstr "Nid yw '%1$S' yn gyfarwyddiadur"
+
+#. # LOCALIZATION NOTE: Error message given when a file argument does not match
+#. # the specified regular expression %1$S is a filename %2$S is a regular
+#. # expression
+#: fileErrDoesntMatch
+msgid "'%1$S' does not match '%2$S'"
+msgstr "Nid yw '%1$S' yn cydweddu â '%2$S'"
+
+#. # LOCALIZATION NOTE: When the menu has displayed all the matches that it
+#. # should (i.e. about 10 items) then we display this to alert the user that
+#. # more matches are available.
+#: fieldMenuMore
+msgid "More matches, keep typing"
+msgstr "Mwy yn cydweddu, parhau i deipio"
+
+#. # LOCALIZATION NOTE: The command line provides completion for JavaScript
+#. # commands, however there are times when the scope of what we're completing
+#. # against can't be used. This error message is displayed when this happens.
+#: jstypeParseScope
+msgid "Scope lost"
+msgstr "Colli rhynchwant"
+
+#. # LOCALIZATION NOTE (jstypeParseMissing, jstypeBeginSyntax,
+#. # jstypeBeginUnterm): These error messages are displayed when the command line
+#. # is doing JavaScript completion and encounters errors.
+#: jstypeParseMissing
+msgid "Can't find property '%S'"
+msgstr "Methu canfod priodwedd '%S'"
+
+#: jstypeBeginSyntax
+msgid "Syntax error"
+msgstr "Gwall cystrawen"
+
+#: jstypeBeginUnterm
+msgid "Unterminated string literal"
+msgstr "Llythrennol llinyn heb derfynu"
+
+#. # LOCALIZATION NOTE: This message is displayed if the system for providing
+#. # JavaScript completions encounters and error it displays this.
+#: jstypeParseError
+msgid "Error"
+msgstr "Gwall"
+
+#. # LOCALIZATION NOTE (typesNumberNan, typesNumberNotInt2, typesDateNan): These
+#. # error messages are displayed when the command line is passed a variable
+#. # which has the wrong format and can't be converted. Parameters: %S is the
+#. # passed variable.
+#: typesNumberNan
+msgid "Can't convert \"%S\" to a number."
+msgstr "Methu trosi \"%S\" i rif."
+
+#: typesNumberNotInt2
+msgid "Can't convert \"%S\" to an integer."
+msgstr "Methu trosi \"%S\" i gyfanrif."
+
+#: typesDateNan
+msgid "Can't convert \"%S\" to a date."
+msgstr "Methu trosi \"%S\" i ddyddiad."
+
+#. # LOCALIZATION NOTE (typesNumberMax, typesNumberMin, typesDateMax,
+#. # typesDateMin): These error messages are displayed when the command line is
+#. # passed a variable which has a value out of range (number or date).
+#. # Parameters: %1$S is the passed variable, %2$S is the limit value.
+#: typesNumberMax
+msgid "%1$S is greater than maximum allowed: %2$S."
+msgstr "Mae %1$S yn fwy na'r uchafswm sy'n cael ei ganiatáu: %2$S."
+
+#: typesNumberMin
+msgid "%1$S is smaller than minimum allowed: %2$S."
+msgstr "Mae %1$S yn llai na'r lleiafswm sy'n cael ei ganiatáu: %2$S."
+
+#: typesDateMax
+msgid "%1$S is later than maximum allowed: %2$S."
+msgstr "Mae %1$S yn hwyrach na'r uchafswm sy'n cael ei ganiatáu: %2$S."
+
+#: typesDateMin
+msgid "%1$S is earlier than minimum allowed: %2$S."
+msgstr "Mae %1$S yn gynt na'r lleiafswm sy'n cael ei ganiatáu: %2$S."
+
+#. # LOCALIZATION NOTE: This error message is displayed when the command line is
+#. # passed an option with a limited number of correct values, but the passed
+#. # value is not one of them.
+#: typesSelectionNomatch
+msgid "Can't use '%S'."
+msgstr "Methu defnyddio '%S'."
+
+#. # LOCALIZATION NOTE: This error message is displayed when the command line is
+#. # expecting a CSS query string, however the passed string is not valid.
+#: nodeParseSyntax
+msgid "Syntax error in CSS query"
+msgstr "Gwall cystrawen mewn ymholiad CSS"
+
+#. # LOCALIZATION NOTE (nodeParseMultiple, nodeParseNone): These error messages
+#. # are displayed when the command line is expecting a CSS string that matches a
+#. # single node, but more nodes (or none) match.
+#: nodeParseMultiple
+msgid "Too many matches (%S)"
+msgstr "Gormod o gydweddu (%S)"
+
+#: nodeParseNone
+msgid "No matches"
+msgstr "Dim cydweddu"
+
+#. # LOCALIZATION NOTE (helpDesc, helpManual, helpSearchDesc, helpSearchManual3):
+#. # These strings describe the "help" command, used to display a description of
+#. # a command (e.g. "help pref"), and its parameter 'search'.
+#: helpDesc
+msgid "Get help on the available commands"
+msgstr "Cael cymorth gyda'r gorchmynion sydd ar gael"
+
+#: helpManual
+msgid ""
+"Provide help either on a specific command (if a search string is provided "
+"and an exact match is found) or on the available commands (if a search "
+"string is not provided, or if no exact match is found)."
+msgstr ""
+"Darparu cymorth un ai ar orchymyn penodol (os oes llinyn chwilio'n cael ei "
+"darparu ac mae cytunedd i'w weld) neu ar orchmynion sydd ar gael (os nad oes "
+"llinyn chwilio'n cael ei ddarparu, neu os nad oes cytunedd union)."
+
+#: helpSearchDesc
+msgid "Search string"
+msgstr "Llinyn chwilio"
+
+#: helpSearchManual3
+msgid ""
+"search string to use in narrowing down the displayed commands. Regular "
+"expressions not supported."
+msgstr ""
+"llinyn chwilio i'w ddefnyddio i leihau'r gorchmynion posib. Nid yw mynegiad "
+"rheolaidd yn cael eu cynnal."
+
+#. # LOCALIZATION NOTE: These strings are displayed in the help page for a
+#. # command in the console.
+#: helpManSynopsis
+msgid "Synopsis"
+msgstr "Crynodeb"
+
+#. # LOCALIZATION NOTE: This message is displayed in the help page if the command
+#. # has no parameters.
+#: helpManNone
+msgid "None"
+msgstr "Dim"
+
+#. # LOCALIZATION NOTE: This message is displayed in response to the 'help'
+#. # command when used without a filter, just above the list of known commands.
+#: helpListAll
+msgid "Available Commands:"
+msgstr "Gorchmynion Sydd ar Gael:"
+
+#. # LOCALIZATION NOTE (helpListPrefix, helpListNone): These messages are
+#. # displayed in response to the 'help <search>' command (i.e. with a search
+#. # string), just above the list of matching commands. Parameters: %S is the
+#. # search string.
+#: helpListPrefix
+msgid "Commands starting with '%S':"
+msgstr "Gorchmynion yn cychwyn gyda '%S':"
+
+#: helpListNone
+msgid "No commands starting with '%S'"
+msgstr "Dim gorchmynion yn cychwyn gyda '%S'"
+
+#. # LOCALIZATION NOTE (helpManRequired, helpManOptional, helpManDefault): When
+#. # the 'help x' command wants to show the manual for the 'x' command, it needs
+#. # to be able to describe the parameters as either required or optional, or if
+#. # they have a default value.
+#: helpManRequired
+msgid "required"
+msgstr "angenrheidiol"
+
+#: helpManOptional
+msgid "optional"
+msgstr "dewisol"
+
+#: helpManDefault
+msgid "optional, default=%S"
+msgstr "dewisol, rhagosodiad=%S"
+
+#. # LOCALIZATION NOTE: This forms part of the output from the 'help' command.
+#. # 'GCLI' is a project name and should be left untranslated.
+#: helpIntro
+msgctxt "helpIntro"
+msgid ""
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
+msgstr ""
+"Mae GCLI yn arbrawf er mwyn creu llinell orchymyn defnyddiol iawn ar gyfer "
+"datblygwyr gwe."
+
+#. # LOCALIZATION NOTE: Text shown as part of the output of the 'help' command
+#. # when the command in question has sub-commands, before a list of the matching
+#. # sub-commands.
+#: subCommands
+msgid "Sub-Commands"
+msgstr "Isorchmynion"
+
+#. # LOCALIZATION NOTE: This error message is displayed when the command line is
+#. # cannot find a match for the parse types.
+#: commandParseError
+msgid "Command line parsing error"
+msgstr "Gwall didoli llinell gorchymyn"
+
+#. # LOCALIZATION NOTE (contextDesc, contextManual, contextPrefixDesc): These
+#. # strings are used to describe the 'context' command and its 'prefix'
+#. # parameter. See localization comment for 'connect' for an explanation about
+#. # 'prefix'.
+#: contextDesc
+msgid "Concentrate on a group of commands"
+msgstr "Canolbwyntio ar grŵp o orchmynion"
+
+#: contextManual
+msgid ""
+"Setup a default prefix to future commands. For example 'context git' would "
+"allow you to type 'commit' rather than 'git commit'."
+msgstr ""
+"Gosod rhagosodiad rhagosodedig ar gyfer gorchmynion y dyfodol. Er enghraifft "
+"bydd 'context git' yn caniatáu i chi deipio 'commit' yn lle 'git commit'."
+
+#: contextPrefixDesc
+msgid "The command prefix"
+msgstr "Rhagddodiad y gorchymyn"
+
+#. # LOCALIZATION NOTE: This message message displayed during the processing of
+#. # the 'context' command, when the found command is not a parent command.
+#: contextNotParentError
+msgid "Can't use '%S' as a prefix because it is not a parent command."
+msgstr ""
+"Nid oes modd defnyddio '%S' fel rhagddodiad am nad yw'n orchymyn rhiant."
+
+#. # LOCALIZATION NOTE (contextReply, contextEmptyReply): These messages are
+#. # displayed during the processing of the 'context' command, to indicate
+#. # success or that there is no command prefix.
+#: contextReply
+msgid "Using %S as a command prefix"
+msgstr "Defnyddio %S fel rhagddodiad gorchymyn"
+
+#: contextEmptyReply
+msgid "Command prefix is unset"
+msgstr "Rhagddodiad y gorchymyn yw unset"
+
+#. # LOCALIZATION NOTE (connectDesc, connectManual, connectPrefixDesc,
+#. # connectMethodDesc, connectUrlDesc, connectDupReply): These strings describe
+#. # the 'connect' command and all its available parameters. A 'prefix' is an 
+#. # alias for the remote server (think of it as a "connection name"), and it
+#. # allows to identify a specific server when connected to multiple remote
+#. # servers.
+#: connectDesc
+msgid "Proxy commands to server"
+msgstr "Gorchmynion dirprwyol i weinydd"
+
+#: connectManual
+msgid ""
+"Connect to the server, creating local versions of the commands on the "
+"server. Remote commands initially have a prefix to distinguish them from "
+"local commands (but see the context command to get past this)"
+msgstr ""
+"Cysylltu â'r gweinydd, creu fersiwn lleol o orchmynion ar y gweinydd. Mae "
+"gan orchmynion pell ragddodiad i gychwyn i'w gwahaniaethu rhag gorchmynion "
+"lleol (ond gw. gorchmynion cyd-destun i osgoi hyn)"
+
+#: connectPrefixDesc
+msgctxt "connectPrefixDesc"
+msgid "Parent prefix for imported commands"
+msgstr "Rhagddodiad rhiant ar gyfer gorchmynion wedi eu mewnforio"
+
+#: connectMethodDesc
+msgid "The method of connecting"
+msgstr "Y dull o gysylltu"
+
+#: connectUrlDesc
+msgid "The URL to connect to"
+msgstr "Yr URL i gysylltu iddo"
+
+#: connectDupReply
+msgid "Connection called %S already exists."
+msgstr "Mae cysylltiad o'r enw %S yn bodoli eisoes."
+
+#. # LOCALIZATION NOTE: The output of the 'connect' command, telling the user
+#. # what it has done. Parameters: %S is the prefix command. See localization
+#. # comment for 'connect' for an explanation about 'prefix'.
+#: connectReply
+msgid "Added %S commands."
+msgstr "Ychwanegu %S gorchymyn."
+
+#. # LOCALIZATION NOTE (disconnectDesc2, disconnectManual2,
+#. # disconnectPrefixDesc): These strings describe the 'disconnect' command and
+#. # all its available parameters. See localization comment for 'connect' for an
+#. # explanation about 'prefix'.
+#: disconnectDesc2
+msgid "Disconnect from server"
+msgstr "Datgysylltu o'r gweinydd"
+
+#: disconnectManual2
+msgid ""
+"Disconnect from a server currently connected for remote commands execution"
+msgstr ""
+"Datgysylltwch o weinydd sydd wedi ei gysylltu ar hyn o bryd ar gyfer "
+"gweithredu gorchmynion o bell"
+
+#: disconnectPrefixDesc
+msgctxt "disconnectPrefixDesc"
+msgid "Parent prefix for imported commands"
+msgstr "Rhagddodiad rhiant ar gyfer gorchmynion wedi eu mewnforio"
+
+#. # LOCALIZATION NOTE: This is the output of the 'disconnect' command,
+#. # explaining the user what has been done. Parameters: %S is the number of
+#. # commands removed.
+#: disconnectReply
+msgid "Removed %S commands."
+msgstr "Tynnwyd %S gorchymyn."
+
+#. # LOCALIZATION NOTE (globalDesc, globalWindowDesc, globalOutput): These
+#. # strings describe the 'global' command and its parameters
+#: globalDesc
+msgid "Change the JS global"
+msgstr "Newid i'r JS eang"
+
+#: globalWindowDesc
+msgid "The new window/global"
+msgstr "Y ffenestrnewydd/global"
+
+#: globalOutput
+msgid "JS global is now %S"
+msgstr "%S yw'r JS eang"
+
+#. # LOCALIZATION NOTE: These strings describe the 'clear' command
+#: clearDesc
+msgid "Clear the output area"
+msgstr "Clirio'r maes allbwn"
+
+#. # LOCALIZATION NOTE (langDesc, langOutput): These strings describe the 'lang'
+#. # command and its parameters
+#: langDesc
+msgid "Enter commands in different languages"
+msgstr "Rhoi gorchmynion mewn ieithoedd gwahanol"
+
+#: langOutput
+msgid "You are now using %S"
+msgstr "Rydych nawr yn defnyddio %S"
+
+#. # LOCALIZATION NOTE (prefDesc, prefManual, prefListDesc, prefListManual,
+#. # prefListSearchDesc, prefListSearchManual, prefShowDesc, prefShowManual,
+#. # prefShowSettingDesc, prefShowSettingManual): These strings describe the
+#. # 'pref' command and all its available sub-commands and parameters.
+#: prefDesc
+msgid "Commands to control settings"
+msgstr "Gorchmynion i reoli gosodiadau"
+
+#: prefManual
+msgid ""
+"Commands to display and alter preferences both for GCLI and the surrounding "
+"environment"
+msgstr ""
+"Gorchmynion i ddangos a newid dewisiadau ar gyfer GCLI a'r amgylchedd o'i "
+"amgylch"
+
+#: prefListDesc
+msgid "Display available settings"
+msgstr "Dangos y gosodiadau sydd ar gael"
+
+#: prefListManual
+msgid ""
+"Display a list of preferences, optionally filtered when using the 'search' "
+"parameter"
+msgstr ""
+"Dangos rhestr o ddewisiadau, wedi eu hidlo'n ddewisol wrth ddefnyddio "
+"paramedr 'chwilio'"
+
+#: prefListSearchDesc
+msgid "Filter the list of settings displayed"
+msgstr "Hidlo'r rhestr o osodiadau sy'n cael eu dangos"
+
+#: prefListSearchManual
+msgid "Search for the given string in the list of available preferences"
+msgstr "Chwilio am y llinyn yn y rhestr o ddewisiadau sydd ar gael"
+
+#: prefShowDesc
+msgid "Display setting value"
+msgstr "Dangos gwerth gosodiad"
+
+#: prefShowManual
+msgid "Display the value of a given preference"
+msgstr "Dangos gwerth dewis penodol"
+
+#: prefShowSettingDesc
+msgid "Setting to display"
+msgstr "Gosodiadau i'w dangos"
+
+#: prefShowSettingManual
+msgid "The name of the setting to display"
+msgstr "Enw'r gosodiad i'w ddangos"
+
+#. # LOCALIZATION NOTE: This message is used to show the preference name and the
+#. # associated preference value. Parameters: %1$S is the preference name, %2$S
+#. # is the preference value.
+#: prefShowSettingValue
+msgid "%1$S: %2$S"
+msgstr "%1$S: %2$S"
+
+#. # LOCALIZATION NOTE (prefSetDesc, prefSetManual, prefSetSettingDesc,
+#. # prefSetSettingManual, prefSetValueDesc, prefSetValueManual): These strings
+#. # describe the 'pref set' command and all its parameters.
+#: prefSetDesc
+msgid "Alter a setting"
+msgstr "Ar ôl gosodiad"
+
+#: prefSetManual
+msgid "Alter preferences defined by the environment"
+msgstr "Newid dewisiadau wedi eu diffinio gan yr amgylchedd"
+
+#: prefSetSettingDesc
+msgid "Setting to alter"
+msgstr "Gosodiadau i'w newid"
+
+#: prefSetSettingManual
+msgid "The name of the setting to alter."
+msgstr "Enw'r gosodiad i'w newid."
+
+#: prefSetValueDesc
+msgid "New value for setting"
+msgstr "Gwerth newydd i'r gosodiad"
+
+#: prefSetValueManual
+msgid "The new value for the specified setting"
+msgstr "Gwerth newydd i'r gosodiad penodol"
+
+#. # LOCALIZATION NOTE (prefResetDesc, prefResetManual, prefResetSettingDesc,
+#. # prefResetSettingManual): These strings describe the 'pref reset' command and
+#. # all its parameters.
+#: prefResetDesc
+msgid "Reset a setting"
+msgstr "Ailosod gosodiad"
+
+#: prefResetManual
+msgid "Reset the value of a setting to the system defaults"
+msgstr "Ailosod gwerth gosodiad i ragosodiad y system"
+
+#: prefResetSettingDesc
+msgid "Setting to reset"
+msgstr "Gosodiad i'w ailosod"
+
+#: prefResetSettingManual
+msgid "The name of the setting to reset to the system default value"
+msgstr "Enw'r rhagosodiad i'w ailosod i werth rhagosodiad y system"
+
+#. # LOCALIZATION NOTE: This string is displayed in the output from the 'pref
+#. # list' command as a label to an input element that allows the user to filter
+#. # the results.
+#: prefOutputFilter
+msgid "Filter"
+msgstr "Hidl"
+
+#. # LOCALIZATION NOTE (prefOutputName, prefOutputValue): These strings are
+#. # displayed in the output from the 'pref list' command as table headings.
+#: prefOutputName
+msgid "Name"
+msgstr "Enw"
+
+#: prefOutputValue
+msgid "Value"
+msgstr "Gwerth"
+
+#. # LOCALIZATION NOTE (introDesc, introManual): These strings describe the
+#. # 'intro' command. The localization of 'Got it!' should be the same used in
+#. # introTextGo.
+#: introDesc
+msgid "Show the opening message"
+msgstr "Dangos y neges agor"
+
+#: introManual
+msgid ""
+"Redisplay the message that is shown to new users until they click the 'Got "
+"it!' button"
+msgstr ""
+"Ail ddangos y neges sy'n cael ei ddangos i ddefnyddwyr newydd nes iddynt "
+"glicio'r botwm 'Iawn'"
+
+#. # LOCALIZATION NOTE (introTextOpening3, introTextCommands, introTextKeys2,
+#. # introTextF1Escape, introTextGo): These strings are displayed when the user
+#. # first opens the developer toolbar to explain the command line, and is shown
+#. # each time it is opened until the user clicks the 'Got it!' button.
+#: introTextOpening3
+msgctxt "introTextOpening3"
+msgid ""
+"GCLI is an experiment to create a highly usable command line for web "
+"developers."
+msgstr ""
+"Mae GCLI y arbrawf er mwyn creu llinell orchymyn defnyddiol iawn ar gyfer "
+"datblygwyr gwe."
+
+#: introTextCommands
+msgid "For a list of commands type"
+msgstr "Am restr o fathau o orchmynion"
+
+#: introTextKeys2
+msgid ", or to show/hide command hints press"
+msgstr ", neu i ddangos/cuddio awgrymiadau gorchmynion pwyswch"
+
+#: introTextF1Escape
+msgid "F1/Escape"
+msgstr "F1/Escape"
+
+#: introTextGo
+msgid "Got it!"
+msgstr "Iawn!"
+
+#. # LOCALIZATION NOTE: This is a short description of the 'hideIntro' setting.
+#: hideIntroDesc
+msgid "Show the initial welcome message"
+msgstr "Dangos y neges croesawu cychwynnol"
+
+#. # LOCALIZATION NOTE: This is a description of the 'eagerHelper' setting. It's
+#. # displayed when the user asks for help on the settings. eagerHelper allows
+#. # users to select between showing no tooltips, permanent tooltips, and only
+#. # important tooltips.
+#: eagerHelperDesc
+msgid "How eager are the tooltips"
+msgstr "Pa mor sydyn yw'r cynhorion"
+
+#~ msgid "Invalid Command"
+#~ msgstr "Gorchymyn Annilys"
+
+#~ msgid "Select a %S…"
+#~ msgstr "Dewis %S…"
+
+#~ msgid "Add"
+#~ msgstr "Ychwanegu"
+
+#~ msgid "Delete"
+#~ msgstr "Dileu"
+
+#~ msgctxt "subCommandsNone"
+#~ msgid "None"
+#~ msgstr "Dim"
+
+#~ msgid "Ignore outstanding requests"
+#~ msgstr "Anwybyddwch ceisiadau sy'n bodoli"
+
+#~ msgid "Outstanding requests (%S)"
+#~ msgstr "Ceisiadau sy'n bodoli (%S)"
+
+#~ msgid "This might void your warranty!"
+#~ msgstr "Gall hyn ddiddymu eich gwarant!"
+
+#~ msgid ""
+#~ "Changing these advanced settings can be harmful to the stability, "
+#~ "security, and performance of this application. You should only continue "
+#~ "if you are sure of what you are doing."
+#~ msgstr ""
+#~ "Gall newid y gosodiadau uwch wneud niwed i sefydlogrwydd a pherfformiad y "
+#~ "rhaglen. Dylech barhau dim ond os ydych yn gwybod beth rydych yn ei wneud."
+
+#~ msgid "I'll be careful, I promise!"
+#~ msgstr "Bydda i'n ofalus, rwy'n addo!"
+
+#~ msgid "For more information see MDN."
+#~ msgstr "Am rhagor o wybodaeth gweler MDN."
+
+#~ msgid "Description"
+#~ msgstr "Disgrifiad"
+
+#~ msgid "The TCP port to listen on"
+#~ msgstr "Porth TCP i wrando arno"
+
+#~ msgid "The hostname to bind to"
+#~ msgstr "Yr enw gwesteiwr i rwymo iddo"
+
+#~ msgid ""
+#~ "This command line is designed for developers. It focuses on speed of "
+#~ "input over JavaScript syntax and a rich display over monospace output."
+#~ msgstr ""
+#~ "Mae llinell orchymyn Firefox wedi ei gynllunio ar gyfer datblygwyr. Mae'n "
+#~ "canolbwyntio ar gyflymder mewnbwn dros gystrawen JavaScript ac "
+#~ "arddangosiad cyfoethog dros allbwn unlle."
+
+#~ msgid "Has the user enabled the 'pref set' command?"
+#~ msgstr "A yw'r defnyddiwr wedi galluogi gorchymyn 'pref set'?"
+
+#~ msgid "Parameters"
+#~ msgstr "Paramedrau"
+
+#~ msgctxt "disconnectDesc"
+#~ msgid "Proxy commands to server"
+#~ msgstr "Gorchmynion dirprwyol i'r gweinydd"
+
+#~ msgctxt "disconnectManual"
+#~ msgid ""
+#~ "Connect to the server, creating local versions of the commands on the "
+#~ "server. Remote commands initially have a prefix to distinguish them from "
+#~ "local commands (but see the context command to get past this)"
+#~ msgstr ""
+#~ "Cysylltu i'r gweinydd, creu fersiynau lleol o'r gorchmynion ar y "
+#~ "gweinydd. Mae gan orchmynion pell ragddodiad i gychwyn i'w gwahaniaethu "
+#~ "oddi wrth gorchmynion lleol (ond gw. gorchmynion cyd-destun i osgoi hyn)"
+
+#~ msgid ""
+#~ "A search string to use in narrowing down the list of commands that are "
+#~ "displayed to the user. Any part of the command name can match, regular "
+#~ "expressions are not supported."
+#~ msgstr ""
+#~ "Llinyn chwilio i'w defnyddio ar gyfer lleihau'r rhestr o orchmynion sy'n "
+#~ "cael eu dangos i'r defnyddiwr. Gall unrhyw ran o'r enw gorchymyn fod yn "
+#~ "gytûn, nid yw mynegiadau rheolaidd yn cael eu cynnal."
+
+#~ msgid "Welcome to Firefox Developer Tools"
+#~ msgstr "Croeso i Offer Datblygwyr Firefox"
