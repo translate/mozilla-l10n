@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-30 19:16+0000\n"
+"POT-Creation-Date: 2015-05-11 20:18+0000\n"
 "PO-Revision-Date: 2015-04-21 10:23+0000\n"
 "Last-Translator: Chandrakant <cpdhutadmal@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1429611781.000000\n"
@@ -100,6 +100,10 @@ msgstr ""
 msgid "Verifying"
 msgstr "पारख"
 
+#: addonInstall.unsigned
+msgid "(Unverified)"
+msgstr ""
+
 #: addonInstall.cancelButton.label addonInstall.cancelButton.accesskey
 #, fuzzy
 msgid "&Cancel"
@@ -110,7 +114,7 @@ msgstr "रद्द"
 msgid "&Install"
 msgstr "स्थापीत करात"
 
-#. # LOCALIZATION NOTE (addonConfirmInstallMessage):
+#. # LOCALIZATION NOTE (addonConfirmInstallMessage,addonConfirmInstallUnsigned):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 is brandShortName
@@ -121,13 +125,32 @@ msgid ""
 "install #2 add-ons in #1:"
 msgstr ""
 
+#: addonConfirmInstallUnsigned.message
+msgid ""
+"Caution: This site would like to install an unverified add-on in #1. Proceed "
+"at your own risk.;Caution: This site would like to install #2 unverified add-"
+"ons in #1. Proceed at your own risk."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonConfirmInstallSomeUnsigned.message):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName
+#. # #2 is the total number of add-ons being installed (at least 2)
+#: addonConfirmInstallSomeUnsigned.message
+msgid ""
+";Caution: This site would like to install #2 add-ons in #1, some of which "
+"are unverified. Proceed at your own risk."
+msgstr ""
+
 #: addonwatch.slow
 msgid "%1$S might be making %2$S run slowly"
 msgstr ""
 
-#: addonwatch.disable.label addonwatch.disable.accesskey
-msgid "&Disable %S"
-msgstr ""
+#: addonwatch.disable.label
+#, fuzzy
+msgid "Disable %S"
+msgstr "एफआयपीएस अक्षम"
 
 #: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
 msgid "&Ignore for now"
@@ -174,7 +197,7 @@ msgctxt "addonInstallRestartButton.accesskey"
 msgid "R"
 msgstr "R"
 
-#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonError-5):
 #. # #1 is the add-on name, #2 is the host name, #3 is the application name
 #. # #4 is the application version
 #: addonError-1
@@ -200,7 +223,11 @@ msgctxt "addonError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "#1 स्थापीत करूंक जाले ना कारण #3 कडेन गरज आशिल्ली फायल फेरफार करूंक जाली ना."
 
-#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#: addonError-5
+msgid "#3 has prevented this site from installing an unverified add-on."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonLocalError-5, addonErrorIncompatible, addonErrorBlocklisted):
 #. # #1 is the add-on name, #3 is the application name, #4 is the application version
 #: addonLocalError-1
 msgid "This add-on could not be installed because of a filesystem error."
@@ -221,6 +248,11 @@ msgctxt "addonLocalError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "#1 स्थापीत करूंक जाले ना कारण #3 कडेन गरज आशिल्ली फायल फेरफार करूंक जाली ना."
 
+#: addonLocalError-5
+#, fuzzy
+msgid "This add-on could not be installed because it has not been verified."
+msgstr "हो ऍड-ऑन स्थापीत करूंक जालो ना कारण तो इबाडला अशें दिसता."
+
 #: addonErrorIncompatible
 msgid "#1 could not be installed because it is not compatible with #3 #4."
 msgstr "#1 स्थापीत करूंक जालें ना कारण ताका #3 #4 कडेन अनुरूपताय ना."
@@ -230,6 +262,20 @@ msgid ""
 "#1 could not be installed because it has a high risk of causing stability or "
 "security problems."
 msgstr "#1 प्रतिष्ठापित करपाक शकना कारण तातून स्थिरता वो सुरक्षा आडमेळांचो धोको आसा."
+
+#: unsignedAddonsDisabled.message
+msgid ""
+"One or more installed add-ons cannot be verified and have been disabled."
+msgstr ""
+
+#: unsignedAddonsDisabled.learnMore.label
+#: unsignedAddonsDisabled.learnMore.accesskey
+#, fuzzy
+msgctxt ""
+"unsignedAddonsDisabled.learnMore.label unsignedAddonsDisabled.learnMore."
+"accesskey"
+msgid "&Learn More"
+msgstr "अदिक शिकात..."
 
 #. # LOCALIZATION NOTE (deveditionTheme.name): This should be nearly the brand name for aurora.
 #. # See browser/branding/aurora/locales/*/brand.properties
@@ -908,6 +954,39 @@ msgstr "N"
 msgid "Would you like to show notifications from %S?"
 msgstr "तुमका %S तल्यान अधिसुचोवण्यो दाखोवपाच्यो आसात?"
 
+#. # Push Notifications
+#: push.allowForSession
+msgid "Allow for Session"
+msgstr "सत्राक मेकळीक दिवची"
+
+#: push.allowForSession.accesskey
+msgctxt "push.allowForSession.accesskey"
+msgid "S"
+msgstr ""
+
+#: push.alwaysAllow
+msgid "Always Allow Push Notifications"
+msgstr ""
+
+#: push.alwaysAllow.accesskey
+msgctxt "push.alwaysAllow.accesskey"
+msgid "A"
+msgstr ""
+
+#: push.alwaysBlock
+#, fuzzy
+msgid "Always Block Push Notifications"
+msgstr "सदाच अधिसुचोवण्यो आडयात"
+
+#: push.alwaysBlock.accesskey
+msgid "B"
+msgstr ""
+
+#: push.enablePush
+#, fuzzy
+msgid "Would you like to allow Push Notifications for %S?"
+msgstr "तुमका %S तल्यान अधिसुचोवण्यो दाखोवपाच्यो आसात?"
+
 #. # Pointer lock UI
 #: pointerLock.allow2
 msgid "Hide pointer"
@@ -969,6 +1048,10 @@ msgstr "आक्रमण करपी म्हूण कळिल्ल्य
 #: safebrowsing.notAnAttackButton.accessKey
 msgid "This isn't &an attack site…"
 msgstr "ही &हल्लो सायट न्ही...…"
+
+#: safebrowsing.reportedUnwantedSite
+msgid "Reported Unwanted Software Site!"
+msgstr ""
 
 #. # Ctrl-Tab
 #. # LOCALIZATION NOTE (ctrlTab.listAllTabs.label): #1 represents the number
@@ -1383,8 +1466,9 @@ msgid "You are currently sharing a window with this page."
 msgstr "तुमी सद्या विंडो ह्या पानासंयत वाटून घेता."
 
 #: getUserMedia.sharingBrowser.message
+#, fuzzy
 msgid "You are currently sharing a tab with this page."
-msgstr ""
+msgstr "तुमी सद्या विंडो ह्या पानासंयत वाटून घेता."
 
 #: getUserMedia.continueSharing.label getUserMedia.continueSharing.accesskey
 msgid "&Continue Sharing"
@@ -1459,8 +1543,9 @@ msgid "%S (camera, microphone and window)"
 msgstr "%S (कॅमेरा, मायक्रोफोन आनी विंडो)"
 
 #: getUserMedia.sharingMenuCameraMicrophoneBrowser
+#, fuzzy
 msgid "%S (camera, microphone and tab)"
-msgstr ""
+msgstr "%S (कॅमेरा, मायक्रोफोन आनी पड्डो)"
 
 #: getUserMedia.sharingMenuCameraApplication
 msgid "%S (camera and application)"
@@ -1491,8 +1576,9 @@ msgid "%S (microphone and window)"
 msgstr "%S (मायक्रोफोन आनी विंडो)"
 
 #: getUserMedia.sharingMenuMicrophoneBrowser
+#, fuzzy
 msgid "%S (microphone and tab)"
-msgstr ""
+msgstr "%S (मायक्रोफोन आनी पड्डो)"
 
 #. # LOCALIZATION NOTE(getUserMedia.sharingMenuUnknownHost): this is used for the website
 #. # origin for the sharing menu if no readable origin could be deduced from the URL.
@@ -1659,20 +1745,23 @@ msgstr ""
 
 #. # Pre-landed strings for bug 1131457 / bug 1131461
 #: readingList.urlbar.add
+#, fuzzy
 msgid "Add page to Reading List"
-msgstr ""
+msgstr "वाचपाच्या वळेरेक जोडटा"
 
 #: readingList.urlbar.addDone
 msgid "Page added to Reading List"
 msgstr ""
 
 #: readingList.urlbar.remove
+#, fuzzy
 msgid "Remove page from Reading List"
-msgstr ""
+msgstr "वाचपाच्या वळेरेतल्यान काडात"
 
 #: readingList.urlbar.removeDone
+#, fuzzy
 msgid "Page removed from Reading List"
-msgstr ""
+msgstr "वाचपाच्या वळेरेतल्यान काडात"
 
 #. # Pre-landed strings for bug 1133610 & bug 1133611
 #. # LOCALIZATION NOTE(readingList.promo.noSync.label): %S a link, using the text from readingList.promo.noSync.link
@@ -1815,6 +1904,80 @@ msgstr ""
 #. # %S is syncBrandShortName
 #: readingList.prepopulatedArticles.supportSync
 msgid "Access your Reading List anywhere with %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
+#. #                    e10s.offerPopup.highlight1
+#. #                    e10s.offerPopup.highlight2
+#. #                    e10s.offerPopup.enableAndRestart.label
+#. #                    e10s.offerPopup.enableAndRestart.accesskey
+#. #                    e10s.offerPopup.noThanks.label
+#. #                    e10s.offerPopup.noThanks.accesskey
+#. #                    e10s.postActivationInfobar.message
+#. #                    e10s.postActivationInfobar.learnMore.label
+#. #                    e10s.postActivationInfobar.learnMore.accesskey
+#. #                    e10s.accessibilityNotice.mainMessage
+#. #                    e10s.accessibilityNotice.disableAndRestart.label
+#. #                    e10s.accessibilityNotice.disableAndRestart.accesskey
+#. #                    e10s.accessibilityNotice.dontDisable.label
+#. #                    e10s.accessibilityNotice.dontDisable.accesskey):
+#. # These strings are related to the messages we display to offer e10s (Multi-process) to users
+#. # on the pre-release channels. They won't be used in release but they will likely be used in
+#. # beta starting from version 41, so it's still useful to have these strings properly localized.
+#. # %S is brandShortName
+#: e10s.offerPopup.mainMessage
+msgid ""
+"Multi-process is coming soon to %S. You can start using it now to get early "
+"access to some of the benefits:"
+msgstr ""
+
+#: e10s.offerPopup.highlight1
+msgid "Improved responsiveness"
+msgstr ""
+
+#: e10s.offerPopup.highlight2
+msgid "Fewer crashes"
+msgstr ""
+
+#: e10s.offerPopup.enableAndRestart.label
+#: e10s.offerPopup.enableAndRestart.accesskey
+msgid "&Enable and Restart"
+msgstr ""
+
+#: e10s.offerPopup.noThanks.label e10s.offerPopup.noThanks.accesskey
+#, fuzzy
+msgid "&No, thanks"
+msgstr "नाका धन्यवाद"
+
+#: e10s.postActivationInfobar.message
+msgid ""
+"You're now helping to test multi-process in %S! Please report problems you "
+"find."
+msgstr ""
+
+#: e10s.postActivationInfobar.learnMore.label
+#: e10s.postActivationInfobar.learnMore.accesskey
+#, fuzzy
+msgctxt ""
+"e10s.postActivationInfobar.learnMore.label e10s.postActivationInfobar."
+"learnMore.accesskey"
+msgid "&Learn More"
+msgstr "अदिक शिकात..."
+
+#: e10s.accessibilityNotice.mainMessage
+msgid ""
+"Multi-process does not yet support accessibility features. Multi-process "
+"will be disabled if you restart %S. Would you like to restart?"
+msgstr ""
+
+#: e10s.accessibilityNotice.disableAndRestart.label
+#: e10s.accessibilityNotice.disableAndRestart.accesskey
+msgid "Disable and &Restart"
+msgstr ""
+
+#: e10s.accessibilityNotice.dontDisable.label
+#: e10s.accessibilityNotice.dontDisable.accesskey
+msgid "&Don't Disable"
 msgstr ""
 
 #~ msgid "Add-on downloading;Add-ons downloading"

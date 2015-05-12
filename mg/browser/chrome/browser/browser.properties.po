@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-30 19:16+0000\n"
+"POT-Creation-Date: 2015-05-11 20:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,9 +57,10 @@ msgid ""
 msgstr ""
 
 #: xpinstallPromptAllowButton
+#, fuzzy
 msgctxt "xpinstallPromptAllowButton"
 msgid "Allow"
-msgstr ""
+msgstr "Omeo &alalana"
 
 #. # Accessibility Note:
 #. # Be sure you do not choose an accesskey that is used elsewhere in the active context (e.g. main menu bar, submenu of the warning popup button)
@@ -98,6 +99,10 @@ msgstr ""
 msgid "Verifying"
 msgstr ""
 
+#: addonInstall.unsigned
+msgid "(Unverified)"
+msgstr ""
+
 #: addonInstall.cancelButton.label addonInstall.cancelButton.accesskey
 msgid "&Cancel"
 msgstr ""
@@ -106,7 +111,7 @@ msgstr ""
 msgid "&Install"
 msgstr ""
 
-#. # LOCALIZATION NOTE (addonConfirmInstallMessage):
+#. # LOCALIZATION NOTE (addonConfirmInstallMessage,addonConfirmInstallUnsigned):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 is brandShortName
@@ -117,12 +122,30 @@ msgid ""
 "install #2 add-ons in #1:"
 msgstr ""
 
+#: addonConfirmInstallUnsigned.message
+msgid ""
+"Caution: This site would like to install an unverified add-on in #1. Proceed "
+"at your own risk.;Caution: This site would like to install #2 unverified add-"
+"ons in #1. Proceed at your own risk."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonConfirmInstallSomeUnsigned.message):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName
+#. # #2 is the total number of add-ons being installed (at least 2)
+#: addonConfirmInstallSomeUnsigned.message
+msgid ""
+";Caution: This site would like to install #2 add-ons in #1, some of which "
+"are unverified. Proceed at your own risk."
+msgstr ""
+
 #: addonwatch.slow
 msgid "%1$S might be making %2$S run slowly"
 msgstr ""
 
-#: addonwatch.disable.label addonwatch.disable.accesskey
-msgid "&Disable %S"
+#: addonwatch.disable.label
+msgid "Disable %S"
 msgstr ""
 
 #: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
@@ -167,7 +190,7 @@ msgctxt "addonInstallRestartButton.accesskey"
 msgid "R"
 msgstr ""
 
-#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonError-5):
 #. # #1 is the add-on name, #2 is the host name, #3 is the application name
 #. # #4 is the application version
 #: addonError-1
@@ -192,7 +215,11 @@ msgctxt "addonError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr ""
 
-#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#: addonError-5
+msgid "#3 has prevented this site from installing an unverified add-on."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonLocalError-5, addonErrorIncompatible, addonErrorBlocklisted):
 #. # #1 is the add-on name, #3 is the application name, #4 is the application version
 #: addonLocalError-1
 msgid "This add-on could not be installed because of a filesystem error."
@@ -213,6 +240,10 @@ msgctxt "addonLocalError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr ""
 
+#: addonLocalError-5
+msgid "This add-on could not be installed because it has not been verified."
+msgstr ""
+
 #: addonErrorIncompatible
 msgid "#1 could not be installed because it is not compatible with #3 #4."
 msgstr ""
@@ -221,6 +252,19 @@ msgstr ""
 msgid ""
 "#1 could not be installed because it has a high risk of causing stability or "
 "security problems."
+msgstr ""
+
+#: unsignedAddonsDisabled.message
+msgid ""
+"One or more installed add-ons cannot be verified and have been disabled."
+msgstr ""
+
+#: unsignedAddonsDisabled.learnMore.label
+#: unsignedAddonsDisabled.learnMore.accesskey
+msgctxt ""
+"unsignedAddonsDisabled.learnMore.label unsignedAddonsDisabled.learnMore."
+"accesskey"
+msgid "&Learn More"
 msgstr ""
 
 #. # LOCALIZATION NOTE (deveditionTheme.name): This should be nearly the brand name for aurora.
@@ -236,9 +280,10 @@ msgid "This site (%S) attempted to install a theme."
 msgstr ""
 
 #: lwthemeInstallRequest.allowButton
+#, fuzzy
 msgctxt "lwthemeInstallRequest.allowButton"
 msgid "Allow"
-msgstr ""
+msgstr "Omeo &alalana"
 
 #: lwthemeInstallRequest.allowButton.accesskey
 msgctxt "lwthemeInstallRequest.allowButton.accesskey"
@@ -250,8 +295,9 @@ msgid "A new theme has been installed."
 msgstr ""
 
 #: lwthemePostInstallNotification.undoButton
+#, fuzzy
 msgid "Undo"
-msgstr ""
+msgstr "&Avereno amin'ny teo aloha"
 
 #: lwthemePostInstallNotification.undoButton.accesskey
 msgctxt "lwthemePostInstallNotification.undoButton.accesskey"
@@ -293,15 +339,16 @@ msgstr ""
 
 #: popupWarningButton
 msgid "Options"
-msgstr ""
+msgstr "Safidy"
 
 #: popupWarningButton.accesskey
 msgid "O"
 msgstr ""
 
 #: popupWarningButtonUnix
+#, fuzzy
 msgid "Preferences"
-msgstr ""
+msgstr "Safidy ma&nokana"
 
 #: popupWarningButtonUnix.accesskey
 msgid "P"
@@ -343,8 +390,9 @@ msgstr ""
 
 #: crashedpluginsMessage.reloadButton.label
 #: crashedpluginsMessage.reloadButton.accesskey
+#, fuzzy
 msgid "&Reload page"
-msgstr ""
+msgstr "&Avereno aseho ity frame ity"
 
 #: crashedpluginsMessage.submitButton.label
 #: crashedpluginsMessage.submitButton.accesskey
@@ -511,8 +559,9 @@ msgstr ""
 #. # LOCALIZATION NOTE (pluginActivateTrigger): Use the unicode ellipsis char, \u2026,
 #. # or use "..." if \u2026 doesn't suit traditions in your locale.
 #: pluginActivateTrigger.label pluginActivateTrigger.accesskey
+#, fuzzy
 msgid "&Allow…"
-msgstr ""
+msgstr "Omeo &alalana"
 
 #. # Sanitize
 #. # LOCALIZATION NOTE (sanitizeDialog2.everything.title): When "Time range to
@@ -617,9 +666,10 @@ msgstr ""
 
 #. # Block autorefresh
 #: refreshBlocked.goButton
+#, fuzzy
 msgctxt "refreshBlocked.goButton"
 msgid "Allow"
-msgstr ""
+msgstr "Omeo &alalana"
 
 #: refreshBlocked.goButton.accesskey
 msgctxt "refreshBlocked.goButton.accesskey"
@@ -651,8 +701,9 @@ msgid "Bookmark this page (%S)"
 msgstr ""
 
 #: starButtonOverflowed.label
+#, fuzzy
 msgid "Bookmark This Page"
-msgstr ""
+msgstr "Raketo ity pejy ity..."
 
 #: starButtonOverflowedStarred.label
 msgctxt "starButtonOverflowedStarred.label"
@@ -663,8 +714,9 @@ msgstr ""
 #. # LOCALIZATION NOTE (downloads.tooltip):
 #. # %S is the keyboard shortcut for "Downloads"
 #: downloads.tooltip
+#, fuzzy
 msgid "Display the progress of ongoing downloads (%S)"
-msgstr ""
+msgstr "Mampiseho ny fivoaran'ny fampidinana atao"
 
 #. # Print button tooltip on OS X
 #. # LOCALIZATION NOTE (printButton.tooltip):
@@ -679,8 +731,9 @@ msgstr ""
 #. # LOCALIZATION NOTE (newWindowButton.tooltip):
 #. # %S is the keyboard shortcut for "New Window"
 #: newWindowButton.tooltip
+#, fuzzy
 msgid "Open a new window (%S)"
-msgstr ""
+msgstr "Manokafa fikandrana vaovao"
 
 #. # New Tab button tooltip
 #. # LOCALIZATION NOTE (newTabButton.tooltip):
@@ -696,9 +749,10 @@ msgid ""
 msgstr ""
 
 #: offlineApps.allow
+#, fuzzy
 msgctxt "offlineApps.allow"
 msgid "Allow"
-msgstr ""
+msgstr "Omeo &alalana"
 
 #: offlineApps.allowAccessKey
 msgctxt "offlineApps.allowAccessKey"
@@ -747,7 +801,7 @@ msgstr ""
 
 #: identity.identified.state_and_country
 msgid "%S, %S"
-msgstr ""
+msgstr "%S, %S"
 
 #: identity.encrypted2
 msgid "The connection to this website is secure."
@@ -892,6 +946,38 @@ msgstr ""
 msgid "Would you like to show notifications from %S?"
 msgstr ""
 
+#. # Push Notifications
+#: push.allowForSession
+#, fuzzy
+msgid "Allow for Session"
+msgstr "Omeo alalana mandritra ity &session ity"
+
+#: push.allowForSession.accesskey
+msgctxt "push.allowForSession.accesskey"
+msgid "S"
+msgstr ""
+
+#: push.alwaysAllow
+msgid "Always Allow Push Notifications"
+msgstr ""
+
+#: push.alwaysAllow.accesskey
+msgctxt "push.alwaysAllow.accesskey"
+msgid "A"
+msgstr ""
+
+#: push.alwaysBlock
+msgid "Always Block Push Notifications"
+msgstr ""
+
+#: push.alwaysBlock.accesskey
+msgid "B"
+msgstr ""
+
+#: push.enablePush
+msgid "Would you like to allow Push Notifications for %S?"
+msgstr ""
+
 #. # Pointer lock UI
 #: pointerLock.allow2
 msgid "Hide pointer"
@@ -952,6 +1038,10 @@ msgstr ""
 #: safebrowsing.notAnAttackButton.label
 #: safebrowsing.notAnAttackButton.accessKey
 msgid "This isn't &an attack site…"
+msgstr ""
+
+#: safebrowsing.reportedUnwantedSite
+msgid "Reported Unwanted Software Site!"
 msgstr ""
 
 #. # Ctrl-Tab
@@ -1074,9 +1164,10 @@ msgid "A web page is causing %1$S to run slowly. What would you like to do?"
 msgstr ""
 
 #: processHang.button.label processHang.button.accessKey
+#, fuzzy
 msgctxt "processHang.button.label processHang.button.accessKey"
 msgid "&Options"
-msgstr ""
+msgstr "Safidy"
 
 #. # Webapps notification popup
 #: webapps.install
@@ -1183,8 +1274,9 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: %1$S is the label for the toolbar button, %2$S is the associated badge numbering that the social provider may provide.
 #: social.aria.toolbarButtonBadgeText
+#, fuzzy
 msgid "%1$S (%2$S)"
-msgstr ""
+msgstr "%1$S  [%2$S]"
 
 #. # Identity notifications popups
 #: identity.termsOfService
@@ -1551,10 +1643,11 @@ msgstr ""
 
 #: emeNotifications.optionsButton.label
 #: emeNotifications.optionsButton.accesskey
+#, fuzzy
 msgctxt ""
 "emeNotifications.optionsButton.label emeNotifications.optionsButton.accesskey"
 msgid "&Options"
-msgstr ""
+msgstr "Safidy"
 
 #: emeNotifications.unknownDRMSoftware
 msgctxt "emeNotifications.unknownDRMSoftware"
@@ -1677,7 +1770,7 @@ msgstr ""
 
 #: readingList.promo.firstUse.exitTourButton
 msgid "Close"
-msgstr ""
+msgstr "Hidina"
 
 #. # LOCALIZATION NOTE(readingList.promo.firstUse.tourDoneButton):
 #. # » is used as an indication that pressing this button progresses through the tour.
@@ -1788,11 +1881,80 @@ msgstr ""
 msgid "Access your Reading List anywhere with %S"
 msgstr ""
 
+#. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
+#. #                    e10s.offerPopup.highlight1
+#. #                    e10s.offerPopup.highlight2
+#. #                    e10s.offerPopup.enableAndRestart.label
+#. #                    e10s.offerPopup.enableAndRestart.accesskey
+#. #                    e10s.offerPopup.noThanks.label
+#. #                    e10s.offerPopup.noThanks.accesskey
+#. #                    e10s.postActivationInfobar.message
+#. #                    e10s.postActivationInfobar.learnMore.label
+#. #                    e10s.postActivationInfobar.learnMore.accesskey
+#. #                    e10s.accessibilityNotice.mainMessage
+#. #                    e10s.accessibilityNotice.disableAndRestart.label
+#. #                    e10s.accessibilityNotice.disableAndRestart.accesskey
+#. #                    e10s.accessibilityNotice.dontDisable.label
+#. #                    e10s.accessibilityNotice.dontDisable.accesskey):
+#. # These strings are related to the messages we display to offer e10s (Multi-process) to users
+#. # on the pre-release channels. They won't be used in release but they will likely be used in
+#. # beta starting from version 41, so it's still useful to have these strings properly localized.
+#. # %S is brandShortName
+#: e10s.offerPopup.mainMessage
+msgid ""
+"Multi-process is coming soon to %S. You can start using it now to get early "
+"access to some of the benefits:"
+msgstr ""
+
+#: e10s.offerPopup.highlight1
+msgid "Improved responsiveness"
+msgstr ""
+
+#: e10s.offerPopup.highlight2
+msgid "Fewer crashes"
+msgstr ""
+
+#: e10s.offerPopup.enableAndRestart.label
+#: e10s.offerPopup.enableAndRestart.accesskey
+msgid "&Enable and Restart"
+msgstr ""
+
+#: e10s.offerPopup.noThanks.label e10s.offerPopup.noThanks.accesskey
+msgid "&No, thanks"
+msgstr ""
+
+#: e10s.postActivationInfobar.message
+msgid ""
+"You're now helping to test multi-process in %S! Please report problems you "
+"find."
+msgstr ""
+
+#: e10s.postActivationInfobar.learnMore.label
+#: e10s.postActivationInfobar.learnMore.accesskey
+msgctxt ""
+"e10s.postActivationInfobar.learnMore.label e10s.postActivationInfobar."
+"learnMore.accesskey"
+msgid "&Learn More"
+msgstr ""
+
+#: e10s.accessibilityNotice.mainMessage
+msgid ""
+"Multi-process does not yet support accessibility features. Multi-process "
+"will be disabled if you restart %S. Would you like to restart?"
+msgstr ""
+
+#: e10s.accessibilityNotice.disableAndRestart.label
+#: e10s.accessibilityNotice.disableAndRestart.accesskey
+msgid "Disable and &Restart"
+msgstr ""
+
+#: e10s.accessibilityNotice.dontDisable.label
+#: e10s.accessibilityNotice.dontDisable.accesskey
+msgid "&Don't Disable"
+msgstr ""
+
 #~ msgid "T"
 #~ msgstr "T"
-
-#~ msgid "B"
-#~ msgstr "B"
 
 #~ msgctxt "xpinstallPromptWarningButton.accesskey"
 #~ msgid "O"

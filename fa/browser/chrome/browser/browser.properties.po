@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-30 19:16+0000\n"
+"POT-Creation-Date: 2015-05-11 20:18+0000\n"
 "PO-Revision-Date: 2015-04-02 15:59+0000\n"
 "Last-Translator: Arash <mousavi.arash@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1427990375.000000\n"
@@ -104,6 +104,10 @@ msgstr "درحال بارگیری و تایید افزونه…;درحال با�
 msgid "Verifying"
 msgstr "در حال بررسی"
 
+#: addonInstall.unsigned
+msgid "(Unverified)"
+msgstr ""
+
 #: addonInstall.cancelButton.label addonInstall.cancelButton.accesskey
 msgid "&Cancel"
 msgstr "ا&نصراف"
@@ -112,7 +116,7 @@ msgstr "ا&نصراف"
 msgid "&Install"
 msgstr "&نصب"
 
-#. # LOCALIZATION NOTE (addonConfirmInstallMessage):
+#. # LOCALIZATION NOTE (addonConfirmInstallMessage,addonConfirmInstallUnsigned):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 is brandShortName
@@ -125,12 +129,31 @@ msgstr ""
 "این سایت تمایل به نصب افزونه بر روی #1 دارد:;این سایت تمایل به نصب #2 افزونه "
 "بر روی #1 دارد:"
 
+#: addonConfirmInstallUnsigned.message
+msgid ""
+"Caution: This site would like to install an unverified add-on in #1. Proceed "
+"at your own risk.;Caution: This site would like to install #2 unverified add-"
+"ons in #1. Proceed at your own risk."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonConfirmInstallSomeUnsigned.message):
+#. # Semicolon-separated list of plural forms. See:
+#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is brandShortName
+#. # #2 is the total number of add-ons being installed (at least 2)
+#: addonConfirmInstallSomeUnsigned.message
+msgid ""
+";Caution: This site would like to install #2 add-ons in #1, some of which "
+"are unverified. Proceed at your own risk."
+msgstr ""
+
 #: addonwatch.slow
 msgid "%1$S might be making %2$S run slowly"
 msgstr "%1$S امکان دارد باعث شود %2$S کند شود"
 
-#: addonwatch.disable.label addonwatch.disable.accesskey
-msgid "&Disable %S"
+#: addonwatch.disable.label
+#, fuzzy
+msgid "Disable %S"
 msgstr "&غیر‌فعال کردن %S"
 
 #: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
@@ -175,7 +198,7 @@ msgctxt "addonInstallRestartButton.accesskey"
 msgid "R"
 msgstr "R"
 
-#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonError-5):
 #. # #1 is the add-on name, #2 is the host name, #3 is the application name
 #. # #4 is the application version
 #: addonError-1
@@ -205,7 +228,11 @@ msgstr ""
 "#3 نتوانست پرونده‌های مورد نیاز را تغییر دهد، و به همین دلیل نصب #1 با مشکل "
 "مواجه شد."
 
-#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#: addonError-5
+msgid "#3 has prevented this site from installing an unverified add-on."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonLocalError-5, addonErrorIncompatible, addonErrorBlocklisted):
 #. # #1 is the add-on name, #3 is the application name, #4 is the application version
 #: addonLocalError-1
 msgid "This add-on could not be installed because of a filesystem error."
@@ -230,6 +257,11 @@ msgstr ""
 "#3 نتوانست پرونده‌های مورد نیاز را تغییر دهد، و به همین دلیل نصب #1 با مشکل "
 "مواجه شد."
 
+#: addonLocalError-5
+#, fuzzy
+msgid "This add-on could not be installed because it has not been verified."
+msgstr "این افزودنی به نظر خراب شده است، و امکان نصب آن وجود ندارد."
+
 #: addonErrorIncompatible
 msgid "#1 could not be installed because it is not compatible with #3 #4."
 msgstr ""
@@ -243,6 +275,20 @@ msgid ""
 msgstr ""
 "امکان نصب #1 به دلیل خطر زیاد ایجاد مشکلات پایداری و امنیتی توسط آن وجود "
 "ندارد."
+
+#: unsignedAddonsDisabled.message
+msgid ""
+"One or more installed add-ons cannot be verified and have been disabled."
+msgstr ""
+
+#: unsignedAddonsDisabled.learnMore.label
+#: unsignedAddonsDisabled.learnMore.accesskey
+#, fuzzy
+msgctxt ""
+"unsignedAddonsDisabled.learnMore.label unsignedAddonsDisabled.learnMore."
+"accesskey"
+msgid "&Learn More"
+msgstr "&بیشتر بدانید…"
 
 #. # LOCALIZATION NOTE (deveditionTheme.name): This should be nearly the brand name for aurora.
 #. # See browser/branding/aurora/locales/*/brand.properties
@@ -928,6 +974,39 @@ msgstr "N"
 msgid "Would you like to show notifications from %S?"
 msgstr "آیا میخواهید آگاه‌سازی ها  %S نمایش داده شوند؟"
 
+#. # Push Notifications
+#: push.allowForSession
+msgid "Allow for Session"
+msgstr "اجازه دادن برای نشست"
+
+#: push.allowForSession.accesskey
+msgctxt "push.allowForSession.accesskey"
+msgid "S"
+msgstr ""
+
+#: push.alwaysAllow
+msgid "Always Allow Push Notifications"
+msgstr ""
+
+#: push.alwaysAllow.accesskey
+msgctxt "push.alwaysAllow.accesskey"
+msgid "A"
+msgstr ""
+
+#: push.alwaysBlock
+#, fuzzy
+msgid "Always Block Push Notifications"
+msgstr "مسدود کردن دائمی آگاه‌سازی"
+
+#: push.alwaysBlock.accesskey
+msgid "B"
+msgstr ""
+
+#: push.enablePush
+#, fuzzy
+msgid "Would you like to allow Push Notifications for %S?"
+msgstr "آیا میخواهید آگاه‌سازی ها  %S نمایش داده شوند؟"
+
 #. # Pointer lock UI
 #: pointerLock.allow2
 msgid "Hide pointer"
@@ -989,6 +1068,10 @@ msgstr "وب‌گاه تهاجمی گزارش شده!"
 #: safebrowsing.notAnAttackButton.accessKey
 msgid "This isn't &an attack site…"
 msgstr "این &یک وبسایت تهاجمی نیست…"
+
+#: safebrowsing.reportedUnwantedSite
+msgid "Reported Unwanted Software Site!"
+msgstr ""
 
 #. # Ctrl-Tab
 #. # LOCALIZATION NOTE (ctrlTab.listAllTabs.label): #1 represents the number
@@ -1857,6 +1940,80 @@ msgstr "با نمای مطالعه از صفحات وب بدون زایده لذ
 #: readingList.prepopulatedArticles.supportSync
 msgid "Access your Reading List anywhere with %S"
 msgstr "در هرجا که هستید به وسیله %S به لیست مطالعه خود دسترسی داشته باشید"
+
+#. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
+#. #                    e10s.offerPopup.highlight1
+#. #                    e10s.offerPopup.highlight2
+#. #                    e10s.offerPopup.enableAndRestart.label
+#. #                    e10s.offerPopup.enableAndRestart.accesskey
+#. #                    e10s.offerPopup.noThanks.label
+#. #                    e10s.offerPopup.noThanks.accesskey
+#. #                    e10s.postActivationInfobar.message
+#. #                    e10s.postActivationInfobar.learnMore.label
+#. #                    e10s.postActivationInfobar.learnMore.accesskey
+#. #                    e10s.accessibilityNotice.mainMessage
+#. #                    e10s.accessibilityNotice.disableAndRestart.label
+#. #                    e10s.accessibilityNotice.disableAndRestart.accesskey
+#. #                    e10s.accessibilityNotice.dontDisable.label
+#. #                    e10s.accessibilityNotice.dontDisable.accesskey):
+#. # These strings are related to the messages we display to offer e10s (Multi-process) to users
+#. # on the pre-release channels. They won't be used in release but they will likely be used in
+#. # beta starting from version 41, so it's still useful to have these strings properly localized.
+#. # %S is brandShortName
+#: e10s.offerPopup.mainMessage
+msgid ""
+"Multi-process is coming soon to %S. You can start using it now to get early "
+"access to some of the benefits:"
+msgstr ""
+
+#: e10s.offerPopup.highlight1
+msgid "Improved responsiveness"
+msgstr ""
+
+#: e10s.offerPopup.highlight2
+msgid "Fewer crashes"
+msgstr ""
+
+#: e10s.offerPopup.enableAndRestart.label
+#: e10s.offerPopup.enableAndRestart.accesskey
+msgid "&Enable and Restart"
+msgstr ""
+
+#: e10s.offerPopup.noThanks.label e10s.offerPopup.noThanks.accesskey
+#, fuzzy
+msgid "&No, thanks"
+msgstr "خیر، متشکرم"
+
+#: e10s.postActivationInfobar.message
+msgid ""
+"You're now helping to test multi-process in %S! Please report problems you "
+"find."
+msgstr ""
+
+#: e10s.postActivationInfobar.learnMore.label
+#: e10s.postActivationInfobar.learnMore.accesskey
+#, fuzzy
+msgctxt ""
+"e10s.postActivationInfobar.learnMore.label e10s.postActivationInfobar."
+"learnMore.accesskey"
+msgid "&Learn More"
+msgstr "&بیشتر بدانید…"
+
+#: e10s.accessibilityNotice.mainMessage
+msgid ""
+"Multi-process does not yet support accessibility features. Multi-process "
+"will be disabled if you restart %S. Would you like to restart?"
+msgstr ""
+
+#: e10s.accessibilityNotice.disableAndRestart.label
+#: e10s.accessibilityNotice.disableAndRestart.accesskey
+msgid "Disable and &Restart"
+msgstr ""
+
+#: e10s.accessibilityNotice.dontDisable.label
+#: e10s.accessibilityNotice.dontDisable.accesskey
+msgid "&Don't Disable"
+msgstr ""
 
 #~ msgid "Add-on downloading;Add-ons downloading"
 #~ msgstr "در حال دریافت افزودنی‌ها"
