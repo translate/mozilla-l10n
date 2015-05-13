@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-12 04:50+0000\n"
-"PO-Revision-Date: 2015-05-01 15:01+0000\n"
+"PO-Revision-Date: 2015-05-13 08:43+0000\n"
 "Last-Translator: Sérgio <smarquespt@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
@@ -15,10 +15,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1430492486.000000\n"
+"X-POOTLE-MTIME: 1431506584.000000\n"
 
 #. #
 #. # The following are used by the compose back end
@@ -89,7 +89,9 @@ msgstr ""
 msgid ""
 "An Outgoing server (SMTP) error occurred while sending mail. The server "
 "responded:  %s."
-msgstr "Ocorreu um erro (SMTP) ao enviar o correio. O servidor respondeu: %s."
+msgstr ""
+"Ocorreu um erro no servidor de envio (SMTP) ao enviar o correio. O servidor "
+"respondeu: %s."
 
 #. ## LOCALIZATION NOTE (errorSendingMessage): argument %s is the Outgoing server (SMTP) response
 #: errorSendingMessage
@@ -242,7 +244,7 @@ msgid ""
 "provider."
 msgstr ""
 "Ocorreu um erro ao enviar o correio: Não foi possível estabelecer uma "
-"ligação segura com o servidor de saída (SMTP) %S utilizando o STARTTLS dado "
+"ligação segura com o servidor de envio (SMTP) %S utilizando o STARTTLS, dado "
 "que este não anuncia esta funcionalidade. Desative o STARTTLS para este "
 "servidor ou contacte o seu fornecedor do serviço."
 
@@ -296,24 +298,22 @@ msgid ""
 "The server may be incorrectly configured. Please verify that your Outgoing "
 "server (SMTP) settings are correct and try again."
 msgstr ""
-"Ocorreu um erro ao enviar o correio: o servidor de saída (SMTP) %S é "
-"desconhecido. O servidor pode estar incorretamente configurado. Por favor "
-"confirme se as definições do servidor de saída (SMTP) estão corretas e tente "
-"novamente."
+"Ocorreu um erro ao enviar o correio: o servidor de envio (SMTP) %S é "
+"desconhecido. O servidor pode estar mal configurado. Por favor confirme se "
+"as definições do servidor de envio (SMTP) estão corretas e tente novamente."
 
 #. ## LOCALIZATION NOTE (smtpSendRequestRefused): argument %S is the Outgoing server (SMTP)
 #: smtpSendRequestRefused
-#, fuzzy
 msgid ""
 "The message could not be sent because connecting to Outgoing server (SMTP) "
 "%S failed. The server may be unavailable or is refusing SMTP connections. "
 "Please verify that your Outgoing server (SMTP) settings are correct and try "
 "again."
 msgstr ""
-"Não foi possível enviar as mensagem porque a ligação ao servidor de saída "
-"(SMTP) %S falhou. O servidor pode não estar disponível ou está a recusar "
-"ligações em curso. Por favor confirme se as definições do servidor de saída "
-"(SMTP) estão corretas e tente novamente."
+"Não foi possível enviar a mensagem porque a ligação ao servidor de envio "
+"(SMTP) %S falhou. O servidor pode estar indisponível ou a recusar ligações "
+"SMTP. Por favor confirme se as definições do servidor de envio (SMTP) estão "
+"corretas e tente novamente."
 
 #. ## LOCALIZATION NOTE (smtpSendInterrupted): argument %S is the Outgoing server (SMTP)
 #: smtpSendInterrupted
@@ -321,8 +321,8 @@ msgid ""
 "The message could not be sent because the connection to Outgoing server "
 "(SMTP) %S was lost in the middle of the transaction. Try again."
 msgstr ""
-"Não foi possível enviar as mensagem porque a ligação ao servidor de saída "
-"(SMTP) %S foi perdida a meio da transação. Tente novamente."
+"Não foi possível enviar as mensagem porque a ligação ao servidor de envio "
+"(SMTP) %S foi perdida durante a transação. Tente novamente."
 
 #. ## LOCALIZATION NOTE (smtpSendTimeout): argument %S is the Outgoing server (SMTP)
 #: smtpSendTimeout
@@ -330,7 +330,7 @@ msgid ""
 "The message could not be sent because the connection to Outgoing server "
 "(SMTP) %S timed out. Try again."
 msgstr ""
-"Não foi possível enviar as mensagem porque a ligação ao servidor de saída "
+"Não foi possível enviar as mensagem porque a ligação ao servidor de envio "
 "(SMTP) %S expirou. Tente novamente."
 
 #. ## LOCALIZATION NOTE (smtpSendFailedUnknownReason): argument %S is the Outgoing server (SMTP)
@@ -340,9 +340,9 @@ msgid ""
 "reason. Please verify that your Outgoing server (SMTP) settings are correct "
 "and try again."
 msgstr ""
-"Não foi possível enviar as mensagem com recurso ao servidor de saída (SMTP) "
-"%S por um motivo desconhecido. Por favor confirme se as definições do "
-"servidor de saída (SMTP) estão corretas e tente novamente."
+"Não foi possível enviar as mensagem com recurso ao servidor de envio (SMTP) "
+"%S, por razões desconhecidas. Por favor confirme se as definições do "
+"servidor de envio (SMTP) estão corretas e tente novamente."
 
 #. # LOCALIZATION NOTE (smtpHintAuthEncryptToPlainNoSsl): %S is the server hostname
 #: smtpHintAuthEncryptToPlainNoSsl
@@ -353,11 +353,11 @@ msgid ""
 "insecurely'. If it used to work but now doesn't, you may be susceptible to "
 "getting your password stolen."
 msgstr ""
-"Parece que o servidor SMTP %S não tem suporte a palavras-passe cifradas. Se "
-"acabou de configurar a conta, tente mudar para 'Palavra-passe, envio sem "
-"segurança' como 'Método de autenticação' nas 'Definições da conta | "
-"Definições do servidor'. Se a aplicação funcionava e subitamente deixou de "
-"funcionar, pode ser que alguém se tenha apoderado da sua palavra-passe."
+"Parece que o servidor de envio (SMTP) %S não tem suporte a palavras-passe "
+"cifradas. Se acabou de configurar a conta, tente mudar para 'Palavra-passe, "
+"envio sem segurança' como 'Método de autenticação' nas 'Definições da conta "
+"| Servidor de envio (SMTP)'. Se a aplicação funcionava e subitamente deixou "
+"de funcionar, pode ser que alguém se tenha apoderado da sua palavra-passe."
 
 #. # LOCALIZATION NOTE (smtpHintAuthEncryptToPlainSsl): %S is the server hostname
 #: smtpHintAuthEncryptToPlainSsl
@@ -366,10 +366,10 @@ msgid ""
 "If you just set up the account, try changing the 'Authentication method' in "
 "'Account settings | Outgoing server (SMTP)' to 'Normal password'."
 msgstr ""
-"Parece que o servidor SMTP %S não tem suporte a palavras-passe encriptadas. "
-"Se acabou de configurar a conta, tente mudar para 'Palavra-passe normal' "
-"como 'Método de autenticação' nas 'Definições da conta | Definições do "
-"servidor'."
+"Parece que o servidor de envio (SMTP) %S não tem suporte a palavras-passe "
+"encriptadas. Se acabou de configurar a conta, tente mudar para 'Palavra-"
+"passe normal' como 'Método de autenticação' nas 'Definições da conta | "
+"Servidor de envio (SMTP)'."
 
 #. # LOCALIZATION NOTE (smtpHintAuthPlainToEncrypt): %S is the server hostname
 #: smtpHintAuthPlainToEncrypt
@@ -378,9 +378,9 @@ msgid ""
 "changing the 'Authentication method' in 'Account Settings | Outgoing server "
 "(SMTP)' to 'Encrypted password'."
 msgstr ""
-"O servidor SMTP %S não permite palavras-passe em texto simples. Por favor "
-"tente alterar para 'Palavra-passe encriptada' como 'Método de autenticação' "
-"nas 'Definições da conta | Definições do servidor'."
+"O servidor de envio (SMTP) %S não permite palavras-passe em texto simples. "
+"Por favor tente alterar para 'Palavra-passe encriptada' como 'Método de "
+"autenticação' nas 'Definições da conta | Servidor de envio (SMTP)'."
 
 #. # LOCALIZATION NOTE (smtpAuthFailure): %S is the server hostname
 #: smtpAuthFailure
@@ -391,7 +391,7 @@ msgid ""
 msgstr ""
 "Não foi possível autenticar no servidor de saída (SMTP) %S. Por favor "
 "confirme a palavra-passe e o 'Método de autenticação' nas 'Definições da "
-"conta | Servidor de saída (SMTP)'."
+"conta | Servidor de envio (SMTP)'."
 
 #. # LOCALIZATION NOTE (smtpAuthGssapi): %S is the server hostname
 #: smtpAuthGssapi
@@ -399,8 +399,8 @@ msgid ""
 "The Kerberos/GSSAPI ticket was not accepted by the Outgoing server (SMTP) "
 "%S. Please check that you are logged in to the Kerberos/GSSAPI realm."
 msgstr ""
-"Os dados Kerberos/GSSAPI não foram aceites pelo servidor SMTP %S. Por favor "
-"verifique se tem acesso aos dados Kerberos/GSSAPI."
+"Os dados Kerberos/GSSAPI não foram aceites pelo servidor de envio (SMTP) %S. "
+"Por favor verifique se tem acesso aos dados Kerberos/GSSAPI."
 
 #. # LOCALIZATION NOTE (smtpAuthMechNotSupported): %S is the server hostname
 #: smtpAuthMechNotSupported
@@ -409,23 +409,22 @@ msgid ""
 "method. Please change the 'Authentication method' in 'Account Settings | "
 "Outgoing server (SMTP)'."
 msgstr ""
-"O servidor de saída (SMTP) %S não suporta o método de autenticação "
+"O servidor de envio (SMTP) %S não tem suporte ao método de autenticação "
 "selecionado. Por favor altere o 'Método de autenticação' nas 'Definições da "
-"conta | Servidor de saída (SMTP)'."
+"conta | Servidor de envio (SMTP)'."
 
 #. # LOCALIZATION NOTE (smtpAuthenticationNotSupported): %S is the server hostname
 #: smtpAuthenticationNotSupported
-#, fuzzy
 msgid ""
 "Unable to authenticate to Outgoing server (SMTP) %S. It does not support "
 "authentication (SMTP-AUTH) but you have chosen to use authentication. Please "
 "change the 'Authentication method' to 'None' in 'Account Settings | Outgoing "
 "server (SMTP)' or contact your email service provider for instructions."
 msgstr ""
-"Não foi possível fazer a autenticação no servidor de saída (SMTP) %S. Este "
-"não suporta autenticação (servidor de saída (SMTP)-AUTH) mas você optou por "
+"Não foi possível fazer a autenticação no servidor de envio (SMTP) %S. O "
+"servidor não tem suporte a autenticação (SMTP-AUTH) mas você optou por "
 "utilizar autenticação. Por favor altere o 'Método de autenticação' nas "
-"'Definições da conta | Servidor de saída (SMTP)' ou contacte o seu "
+"'Definições da conta | Servidor de envio (SMTP)' ou contacte o seu "
 "fornecedor do serviço de correio eletrónico para instruções."
 
 #. # LOCALIZATION NOTE (errorIllegalLocalPart): %s is an email address with an illegal localpart
