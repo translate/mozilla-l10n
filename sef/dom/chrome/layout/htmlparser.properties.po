@@ -1,0 +1,587 @@
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./dom/chrome/layout/htmlparser.properties
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-23 04:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sef\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+
+#. # Encoding warnings and errors
+#: EncNoDeclarationFrame
+msgid ""
+"The character encoding of a framed document was not declared. The document "
+"may appear different if viewed without the document framing it."
+msgstr ""
+
+#: EncNoDeclarationPlain
+msgid ""
+"The character encoding of the plain text document was not declared. The "
+"document will render with garbled text in some browser configurations if the "
+"document contains characters from outside the US-ASCII range. The character "
+"encoding of the file needs to be declared in the transfer protocol or file "
+"needs to use a byte order mark as an encoding signature."
+msgstr ""
+
+#: EncNoDeclaration
+msgid ""
+"The character encoding of the HTML document was not declared. The document "
+"will render with garbled text in some browser configurations if the document "
+"contains characters from outside the US-ASCII range. The character encoding "
+"of the page must be declared in the document or in the transfer protocol."
+msgstr ""
+
+#: EncLateMetaFrame
+msgid ""
+"The character encoding declaration of the framed HTML document was not found "
+"when prescanning the first 1024 bytes of the file. When viewed without the "
+"document framing it, the page will reload automatically. The encoding "
+"declaration needs to be moved to be within the first 1024 bytes of the file."
+msgstr ""
+
+#: EncLateMeta
+msgid ""
+"The character encoding declaration of the HTML document was not found when "
+"prescanning the first 1024 bytes of the file. When viewed in a differently-"
+"configured browser, this page will reload automatically. The encoding "
+"declaration needs to be moved to be within the first 1024 bytes of the file."
+msgstr ""
+
+#: EncLateMetaReload
+msgid ""
+"The page was reloaded, because the character encoding declaration of the "
+"HTML document was not found when prescanning the first 1024 bytes of the "
+"file. The encoding declaration needs to be moved to be within the first 1024 "
+"bytes of the file."
+msgstr ""
+
+#: EncLateMetaTooLate
+msgid ""
+"The character encoding declaration of document was found too late for it to "
+"take effect. The encoding declaration needs to be moved to be within the "
+"first 1024 bytes of the file."
+msgstr ""
+
+#: EncMetaUnsupported
+msgid ""
+"An unsupported character encoding was declared for the HTML document using a "
+"meta tag. The declaration was ignored."
+msgstr ""
+
+#: EncProtocolUnsupported
+msgid ""
+"An unsupported character encoding was declared on the transfer protocol "
+"level. The declaration was ignored."
+msgstr ""
+
+#: EncBomlessUtf16
+msgid ""
+"Detected UTF-16-encoded Basic Latin-only text without a byte order mark and "
+"without a transfer protocol-level declaration. Encoding this content in "
+"UTF-16 is inefficient and the character encoding should have been declared "
+"in any case."
+msgstr ""
+
+#: EncMetaUtf16
+msgid ""
+"A meta tag was used to declare the character encoding as UTF-16. This was "
+"interpreted as an UTF-8 declaration instead."
+msgstr ""
+
+#: EncMetaUserDefined
+msgid ""
+"A meta tag was used to declare the character encoding as x-user-defined. "
+"This was interpreted as a windows-1252 declaration instead for compatibility "
+"with intentionally mis-encoded legacy fonts. This site should migrate to "
+"Unicode."
+msgstr ""
+
+#. # The bulk of the messages below are derived from 
+#. # http://hg.mozilla.org/projects/htmlparser/file/1f633cef7de7/src/nu/validator/htmlparser/impl/ErrorReportingTokenizer.java
+#. # which is available under the MIT license.
+#. # Tokenizer errors
+#: errGarbageAfterLtSlash
+msgid "Garbage after “</”."
+msgstr ""
+
+#: errLtSlashGt
+msgid ""
+"Saw “</>”. Probable causes: Unescaped “<” (escape as “&lt;”) or mistyped end "
+"tag."
+msgstr ""
+
+#: errCharRefLacksSemicolon
+msgid "Character reference was not terminated by a semicolon."
+msgstr ""
+
+#: errNoDigitsInNCR
+msgid "No digits in numeric character reference."
+msgstr ""
+
+#: errGtInSystemId
+msgid "“>” in system identifier."
+msgstr ""
+
+#: errGtInPublicId
+msgid "“>” in public identifier."
+msgstr ""
+
+#: errNamelessDoctype
+msgid "Nameless doctype."
+msgstr ""
+
+#: errConsecutiveHyphens
+msgid ""
+"Consecutive hyphens did not terminate a comment. “--” is not permitted "
+"inside a comment, but e.g. “- -” is."
+msgstr ""
+
+#: errPrematureEndOfComment
+msgid "Premature end of comment. Use “-->” to end a comment properly."
+msgstr ""
+
+#: errBogusComment
+msgid "Bogus comment."
+msgstr ""
+
+#: errUnquotedAttributeLt
+msgid ""
+"“<” in an unquoted attribute value. Probable cause: Missing “>” immediately "
+"before."
+msgstr ""
+
+#: errUnquotedAttributeGrave
+msgid ""
+"“`” in an unquoted attribute value. Probable cause: Using the wrong "
+"character as a quote."
+msgstr ""
+
+#: errUnquotedAttributeQuote
+msgid ""
+"Quote in an unquoted attribute value. Probable causes: Attributes running "
+"together or a URL query string in an unquoted attribute value."
+msgstr ""
+
+#: errUnquotedAttributeEquals
+msgid ""
+"“=” in an unquoted attribute value. Probable causes: Attributes running "
+"together or a URL query string in an unquoted attribute value."
+msgstr ""
+
+#: errSlashNotFollowedByGt
+msgid "A slash was not immediately followed by “>”."
+msgstr ""
+
+#: errNoSpaceBetweenAttributes
+msgid "No space between attributes."
+msgstr ""
+
+#: errUnquotedAttributeStartLt
+msgid ""
+"“<” at the start of an unquoted attribute value. Probable cause: Missing “>” "
+"immediately before."
+msgstr ""
+
+#: errUnquotedAttributeStartGrave
+msgid ""
+"“`” at the start of an unquoted attribute value. Probable cause: Using the "
+"wrong character as a quote."
+msgstr ""
+
+#: errUnquotedAttributeStartEquals
+msgid ""
+"“=” at the start of an unquoted attribute value. Probable cause: Stray "
+"duplicate equals sign."
+msgstr ""
+
+#: errAttributeValueMissing
+msgid "Attribute value missing."
+msgstr ""
+
+#: errBadCharBeforeAttributeNameLt
+msgid ""
+"Saw “<” when expecting an attribute name. Probable cause: Missing “>” "
+"immediately before."
+msgstr ""
+
+#: errEqualsSignBeforeAttributeName
+msgid ""
+"Saw “=” when expecting an attribute name. Probable cause: Attribute name "
+"missing."
+msgstr ""
+
+#: errBadCharAfterLt
+msgid ""
+"Bad character after “<”. Probable cause: Unescaped “<”. Try escaping it as "
+"“&lt;”."
+msgstr ""
+
+#: errLtGt
+msgid ""
+"Saw “<>”. Probable causes: Unescaped “<” (escape as “&lt;”) or mistyped "
+"start tag."
+msgstr ""
+
+#: errProcessingInstruction
+msgid ""
+"Saw “<?”. Probable cause: Attempt to use an XML processing instruction in "
+"HTML. (XML processing instructions are not supported in HTML.)"
+msgstr ""
+
+#: errUnescapedAmpersandInterpretedAsCharacterReference
+msgid ""
+"The string following “&” was interpreted as a character reference. (“&” "
+"probably should have been escaped as “&amp;”.)"
+msgstr ""
+
+#: errNotSemicolonTerminated
+msgid ""
+"Named character reference was not terminated by a semicolon. (Or “&” should "
+"have been escaped as “&amp;”.)"
+msgstr ""
+
+#: errNoNamedCharacterMatch
+msgid ""
+"“&” did not start a character reference. (“&” probably should have been "
+"escaped as “&amp;”.)"
+msgstr ""
+
+#: errQuoteBeforeAttributeName
+msgid ""
+"Saw a quote when expecting an attribute name. Probable cause: “=” missing "
+"immediately before."
+msgstr ""
+
+#: errLtInAttributeName
+msgid "“<” in attribute name. Probable cause: “>” missing immediately before."
+msgstr ""
+
+#: errQuoteInAttributeName
+msgid ""
+"Quote in attribute name. Probable cause: Matching quote missing somewhere "
+"earlier."
+msgstr ""
+
+#: errExpectedPublicId
+msgid "Expected a public identifier but the doctype ended."
+msgstr ""
+
+#: errBogusDoctype
+msgid "Bogus doctype."
+msgstr ""
+
+#: maybeErrAttributesOnEndTag
+msgid "End tag had attributes."
+msgstr ""
+
+#: maybeErrSlashInEndTag
+msgid "Stray “/” at the end of an end tag."
+msgstr ""
+
+#: errNcrNonCharacter
+msgid "Character reference expands to a non-character."
+msgstr ""
+
+#: errNcrSurrogate
+msgid "Character reference expands to a surrogate."
+msgstr ""
+
+#: errNcrControlChar
+msgid "Character reference expands to a control character."
+msgstr ""
+
+#: errNcrCr
+msgid "A numeric character reference expanded to carriage return."
+msgstr ""
+
+#: errNcrInC1Range
+msgid "A numeric character reference expanded to the C1 controls range."
+msgstr ""
+
+#: errEofInPublicId
+msgid "End of file inside public identifier."
+msgstr ""
+
+#: errEofInComment
+msgid "End of file inside comment."
+msgstr ""
+
+#: errEofInDoctype
+msgid "End of file inside doctype."
+msgstr ""
+
+#: errEofInAttributeValue
+msgid "End of file reached when inside an attribute value. Ignoring tag."
+msgstr ""
+
+#: errEofInAttributeName
+msgid "End of file occurred in an attribute name. Ignoring tag."
+msgstr ""
+
+#: errEofWithoutGt
+msgid "Saw end of file without the previous tag ending with “>”. Ignoring tag."
+msgstr ""
+
+#: errEofInTagName
+msgid "End of file seen when looking for tag name. Ignoring tag."
+msgstr ""
+
+#: errEofInEndTag
+msgid "End of file inside end tag. Ignoring tag."
+msgstr ""
+
+#: errEofAfterLt
+msgid "End of file after “<”."
+msgstr ""
+
+#: errNcrOutOfRange
+msgid "Character reference outside the permissible Unicode range."
+msgstr ""
+
+#: errNcrUnassigned
+msgid "Character reference expands to a permanently unassigned code point."
+msgstr ""
+
+#: errDuplicateAttribute
+msgid "Duplicate attribute."
+msgstr ""
+
+#: errEofInSystemId
+msgid "End of file inside system identifier."
+msgstr ""
+
+#: errExpectedSystemId
+msgid "Expected a system identifier but the doctype ended."
+msgstr ""
+
+#: errMissingSpaceBeforeDoctypeName
+msgid "Missing space before doctype name."
+msgstr ""
+
+#: errHyphenHyphenBang
+msgid "“--!” found in comment."
+msgstr ""
+
+#: errNcrZero
+msgid "Character reference expands to zero."
+msgstr ""
+
+#: errNoSpaceBetweenDoctypeSystemKeywordAndQuote
+msgid "No space between the doctype “SYSTEM” keyword and the quote."
+msgstr ""
+
+#: errNoSpaceBetweenPublicAndSystemIds
+msgid "No space between the doctype public and system identifiers."
+msgstr ""
+
+#: errNoSpaceBetweenDoctypePublicKeywordAndQuote
+msgid "No space between the doctype “PUBLIC” keyword and the quote."
+msgstr ""
+
+#. # Tree builder errors
+#: errStrayStartTag2
+msgid "Stray start tag “%1$S”."
+msgstr ""
+
+#: errStrayEndTag
+msgid "Stray end tag “%1$S”."
+msgstr ""
+
+#: errUnclosedElements
+msgid "End tag “%1$S” seen, but there were open elements."
+msgstr ""
+
+#: errUnclosedElementsImplied
+msgid "End tag “%1$S” implied, but there were open elements."
+msgstr ""
+
+#: errUnclosedElementsCell
+msgid "A table cell was implicitly closed, but there were open elements."
+msgstr ""
+
+#: errStrayDoctype
+msgid "Stray doctype."
+msgstr ""
+
+#: errAlmostStandardsDoctype
+msgid "Almost standards mode doctype. Expected “<!DOCTYPE html>”."
+msgstr ""
+
+#: errQuirkyDoctype
+msgid "Quirky doctype. Expected “<!DOCTYPE html>”."
+msgstr ""
+
+#: errNonSpaceInTrailer
+msgid "Non-space character in page trailer."
+msgstr ""
+
+#: errNonSpaceAfterFrameset
+msgid "Non-space after “frameset”."
+msgstr ""
+
+#: errNonSpaceInFrameset
+msgid "Non-space in “frameset”."
+msgstr ""
+
+#: errNonSpaceAfterBody
+msgid "Non-space character after body."
+msgstr ""
+
+#: errNonSpaceInColgroupInFragment
+msgid "Non-space in “colgroup” when parsing fragment."
+msgstr ""
+
+#: errNonSpaceInNoscriptInHead
+msgid "Non-space character inside “noscript” inside “head”."
+msgstr ""
+
+#: errFooBetweenHeadAndBody
+msgid "“%1$S” element between “head” and “body”."
+msgstr ""
+
+#: errStartTagWithoutDoctype
+msgid ""
+"Start tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”."
+msgstr ""
+
+#: errNoSelectInTableScope
+msgid "No “select” in table scope."
+msgstr ""
+
+#: errStartSelectWhereEndSelectExpected
+msgid "“select” start tag where end tag expected."
+msgstr ""
+
+#: errStartTagWithSelectOpen
+msgid "“%1$S” start tag with “select” open."
+msgstr ""
+
+#: errBadStartTagInHead2
+msgid "Bad start tag “%1$S” in “head”."
+msgstr ""
+
+#: errImage
+msgid "Saw a start tag “image”."
+msgstr ""
+
+#: errIsindex
+msgid "“isindex” seen."
+msgstr ""
+
+#: errFooSeenWhenFooOpen
+msgid ""
+"An “%1$S” start tag seen but an element of the same type was already open."
+msgstr ""
+
+#: errHeadingWhenHeadingOpen
+msgid "Heading cannot be a child of another heading."
+msgstr ""
+
+#: errFramesetStart
+msgid "“frameset” start tag seen."
+msgstr ""
+
+#: errNoCellToClose
+msgid "No cell to close."
+msgstr ""
+
+#: errStartTagInTable
+msgid "Start tag “%1$S” seen in “table”."
+msgstr ""
+
+#: errFormWhenFormOpen
+msgid ""
+"Saw a “form” start tag, but there was already an active “form” element. "
+"Nested forms are not allowed. Ignoring the tag."
+msgstr ""
+
+#: errTableSeenWhileTableOpen
+msgid "Start tag for “table” seen but the previous “table” is still open."
+msgstr ""
+
+#: errStartTagInTableBody
+msgid "“%1$S” start tag in table body."
+msgstr ""
+
+#: errEndTagSeenWithoutDoctype
+msgid ""
+"End tag seen without seeing a doctype first. Expected “<!DOCTYPE html>”."
+msgstr ""
+
+#: errEndTagAfterBody
+msgid "Saw an end tag after “body” had been closed."
+msgstr ""
+
+#: errEndTagSeenWithSelectOpen
+msgid "“%1$S” end tag with “select” open."
+msgstr ""
+
+#: errGarbageInColgroup
+msgid "Garbage in “colgroup” fragment."
+msgstr ""
+
+#: errEndTagBr
+msgid "End tag “br”."
+msgstr ""
+
+#: errNoElementToCloseButEndTagSeen
+msgid "No “%1$S” element in scope but a “%1$S” end tag seen."
+msgstr ""
+
+#: errHtmlStartTagInForeignContext
+msgid "HTML start tag “%1$S” in a foreign namespace context."
+msgstr ""
+
+#: errTableClosedWhileCaptionOpen
+msgid "“table” closed but “caption” was still open."
+msgstr ""
+
+#: errNoTableRowToClose
+msgid "No table row to close."
+msgstr ""
+
+#: errNonSpaceInTable
+msgid "Misplaced non-space characters inside a table."
+msgstr ""
+
+#: errUnclosedChildrenInRuby
+msgid "Unclosed children in “ruby”."
+msgstr ""
+
+#: errStartTagSeenWithoutRuby
+msgid "Start tag “%1$S” seen without a “ruby” element being open."
+msgstr ""
+
+#: errSelfClosing
+msgid ""
+"Self-closing syntax (“/>”) used on a non-void HTML element. Ignoring the "
+"slash and treating as a start tag."
+msgstr ""
+
+#: errNoCheckUnclosedElementsOnStack
+msgid "Unclosed elements on stack."
+msgstr ""
+
+#: errEndTagDidNotMatchCurrentOpenElement
+msgid ""
+"End tag “%1$S” did not match the name of the current open element (“%2$S”)."
+msgstr ""
+
+#: errEndTagViolatesNestingRules
+msgid "End tag “%1$S” violates nesting rules."
+msgstr ""
+
+#: errEndWithUnclosedElements
+msgid "End tag for “%1$S” seen, but there were unclosed elements."
+msgstr ""
