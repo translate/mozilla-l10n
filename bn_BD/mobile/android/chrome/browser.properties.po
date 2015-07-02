@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 23:22+0000\n"
+"POT-Creation-Date: 2015-07-02 00:07+0000\n"
 "PO-Revision-Date: 2015-06-27 23:03+0000\n"
 "Last-Translator: Mahay Alam Khan <mahayalamkhan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1435446218.000000\n"
@@ -27,14 +27,20 @@ msgstr "অ্যাড-অন ইনস্টল করা হচ্ছে"
 msgid "Install"
 msgstr "ইনস্টল"
 
+#: addonsConfirmInstallUnsigned.title
+msgid "Unverified add-on"
+msgstr ""
+
+#: addonsConfirmInstallUnsigned.message
+msgid ""
+"This site would like to install an unverified add-on. Proceed at your own "
+"risk."
+msgstr ""
+
 #. # Alerts
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "অ্যাড-অন ডাউনলোড করা হচ্ছে"
-
-#: alertAddonsFail
-msgid "Installation failed"
-msgstr "ইনস্টল প্রক্রিয়া ব্যর্থ"
 
 #: alertAddonsInstalledNoRestart.message
 msgid "Installation complete"
@@ -118,7 +124,39 @@ msgstr "ডাউনলোড বাতিল করুন"
 msgid "Do you want to cancel this download?"
 msgstr "আপনি কি এই ডাউনলোড বাতিল করতে ইচ্ছুক"
 
-#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#: addonError.titleError
+#, fuzzy
+msgid "Error"
+msgstr "ত্রুটি:"
+
+#: addonError.titleBlocked
+msgid "Blocked add-on"
+msgstr ""
+
+#: addonError.learnMore
+msgid "Learn more"
+msgstr "আরও জানুন"
+
+#. # LOCALIZATION NOTE (unsignedAddonsDisabled.title, unsignedAddonsDisabled.message):
+#. # These strings will appear in a dialog when Firefox detects that installed add-ons cannot be verified.
+#: unsignedAddonsDisabled.title
+msgid "Unverified add-ons"
+msgstr ""
+
+#: unsignedAddonsDisabled.message
+msgid ""
+"One or more installed add-ons cannot be verified and have been disabled."
+msgstr ""
+
+#: unsignedAddonsDisabled.dismiss
+msgid "Dismiss"
+msgstr ""
+
+#: unsignedAddonsDisabled.viewAddons
+msgid "View add-ons"
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonError-5):
 #. # #1 is the add-on name, #2 is the add-on host, #3 is the application name
 #: addonError-1
 msgid ""
@@ -142,7 +180,11 @@ msgctxt "addonError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "#1 ইনস্টল করা যায়নি কারণ #3 প্রয়োজনীয় ফাইল পরিবর্তন করতে পারে না।"
 
-#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#: addonError-5
+msgid "#3 has prevented #2 from installing an unverified add-on."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonLocalError-5, addonErrorIncompatible, addonErrorBlocklisted):
 #. # #1 is the add-on name, #3 is the application name, #4 is the application version
 #: addonLocalError-1
 msgid "This add-on could not be installed because of a filesystem error."
@@ -162,6 +204,11 @@ msgstr "ত্রুটিযুক্ত হওয়ায় এ অ্যাড-�
 msgctxt "addonLocalError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "#1 ইনস্টল করা যায়নি কারণ #3 প্রয়োজনীয় ফাইল পরিবর্তন করা যায়নি।"
+
+#: addonLocalError-5
+#, fuzzy
+msgid "This add-on could not be installed because it has not been verified."
+msgstr "ত্রুটিযুক্ত হওয়ায় এ অ্যাড-অন ইনস্টল করা যায়নি।"
 
 #: addonErrorIncompatible
 msgid "#1 could not be installed because it is not compatible with #3 #4."
@@ -283,10 +330,6 @@ msgstr "%S, %S"
 #: identity.identified.title_with_country
 msgid "%S (%S)"
 msgstr "%S (%S)"
-
-#: identity.encrypted2
-msgid "Encrypted"
-msgstr "এনক্রিপ্ট করা হয়েছে"
 
 #. # Geolocation UI
 #: geolocation.allow
@@ -1089,6 +1132,12 @@ msgstr ""
 msgid "%1$S is deprecated. Please use %2$S instead"
 msgstr ""
 
+#~ msgid "Installation failed"
+#~ msgstr "ইনস্টল প্রক্রিয়া ব্যর্থ"
+
+#~ msgid "Encrypted"
+#~ msgstr "এনক্রিপ্ট করা হয়েছে"
+
 #~ msgid "%S wants to store a lot of data on your device for offline use."
 #~ msgstr "%S অফলাইনে ব্যবহারের জন্য আপনার ডিভাইসে প্রচুর ডাটা স্টোর করতে চায়।"
 
@@ -1159,9 +1208,6 @@ msgstr ""
 #~ msgid "Send info to %1$S so that we can improve %2$S?"
 #~ msgstr "%1$S এ তথ্য পাঠানো হবে যাতে আমরা %2$S উন্নত করতে পারি?"
 
-#~ msgid "Learn more"
-#~ msgstr "আরও জানুন"
-
 #~ msgctxt "telemetry.optin.yes"
 #~ msgid "Yes"
 #~ msgstr "হ্যাঁ"
@@ -1188,9 +1234,6 @@ msgstr ""
 
 #~ msgid "%S wants to use notifications."
 #~ msgstr "%S নটিফিকেশন ব্যবহার করতে চায়।"
-
-#~ msgid "Error:"
-#~ msgstr "ত্রুটি:"
 
 #~ msgid "Warning:"
 #~ msgstr "সতর্কীকরণ:"
