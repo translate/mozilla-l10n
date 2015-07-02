@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-12 04:07+0000\n"
+"POT-Creation-Date: 2015-07-02 12:52+0000\n"
 "PO-Revision-Date: 2015-06-10 11:13+0000\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1433934836.000000\n"
@@ -132,6 +132,13 @@ msgstr "تعذّر تسليم هذه الرسالة: %S"
 msgid "Could not join: %S"
 msgstr "تعذّر الانضمام إلى: %S"
 
+#. #   This is displayed in a conversation as an error message when the user is
+#. #   banned from a room.
+#. #   %S is the name of the MUC room.
+#: conversation.error.joinForbidden
+msgid "Couldn't join %S as you are banned from this room."
+msgstr ""
+
 #: conversation.error.joinFailedNotAuthorized
 msgid "Registration required: You are not authorized to join this room."
 msgstr "التسجيل مطلوب: لست مخولا بالانضمام لهذه الغرفة."
@@ -148,6 +155,29 @@ msgid ""
 "Could not join the room %S as the server the room is hosted on could not be "
 "reached."
 msgstr "تعذّر الانضمام للغرفة %S لتعذّر الوصول إلى الخادوم الذي يستضيف الغرفة."
+
+#: conversation.error.changeTopicFailedNotAuthorized
+msgid "You are not authorized to set the topic of this room."
+msgstr ""
+
+#. #   This is displayed in a conversation as an error message when the user sends
+#. #   a message to a room that he is not in.
+#. #   %1$S is the name of MUC room.
+#. #   %2$S is the text of the message that wasn't delivered.
+#: conversation.error.sendFailedAsNotInRoom
+msgid ""
+"Message could not be sent to %1$S as you are no longer in the room: %2$S"
+msgstr ""
+
+#. #   This is displayed in a conversation as an error message when the user sends
+#. #   a message to a room that the recipient is not in.
+#. #   %1$S is the jid of the recipient.
+#. #   %2$S is the text of the message that wasn't delivered.
+#: conversation.error.sendFailedAsRecipientNotInRoom
+msgid ""
+"Message could not be sent to %1$S as the recipient is no longer in the room: "
+"%2$S"
+msgstr ""
 
 #. #   These are displayed in a conversation as a system error message.
 #: conversation.error.remoteServerNotFound
@@ -276,6 +306,23 @@ msgstr "عنوان البريد"
 #: odnoklassniki.usernameHint
 msgid "Profile ID"
 msgstr "معرّف الملف الشخصي"
+
+#. # LOCALZIATION NOTE (command.*):
+#. #  These are the help messages for each command.
+#: command.join3
+msgid ""
+"%S [&lt;room&gt;[@&lt;server&gt;][/&lt;nick&gt;]] [&lt;password&gt;]: Join a "
+"room, optionally providing a different server, or nickname, or the room "
+"password."
+msgstr ""
+
+#: command.part2
+msgid "%S [&lt;message&gt;]: Leave the current room with an optional message."
+msgstr ""
+
+#: command.topic
+msgid "%S [&lt;new topic&gt;]: Set this room's topic."
+msgstr ""
 
 #~ msgid "Contacts"
 #~ msgstr "المتراسلون"
