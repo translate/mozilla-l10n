@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 23:22+0000\n"
+"POT-Creation-Date: 2015-07-02 00:07+0000\n"
 "PO-Revision-Date: 2015-03-04 23:55+0000\n"
 "Last-Translator: Sutha Seng <sutha@open.org.kh>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1425513359.000000\n"
@@ -28,14 +28,20 @@ msgstr "ដំឡើង​កម្មវិធី​បន្ថែម"
 msgid "Install"
 msgstr "ដំឡើង"
 
+#: addonsConfirmInstallUnsigned.title
+msgid "Unverified add-on"
+msgstr ""
+
+#: addonsConfirmInstallUnsigned.message
+msgid ""
+"This site would like to install an unverified add-on. Proceed at your own "
+"risk."
+msgstr ""
+
 #. # Alerts
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "កំពុង​ទាញ​យក​កម្មវិធី​បន្ថែម"
-
-#: alertAddonsFail
-msgid "Installation failed"
-msgstr "ការ​ដំឡើង​បាន​បរាជ័យ"
 
 #: alertAddonsInstalledNoRestart.message
 msgid "Installation complete"
@@ -118,7 +124,39 @@ msgstr "បោះបង់​ការ​ទាញ​យក"
 msgid "Do you want to cancel this download?"
 msgstr "តើ​អ្នក​ចង់​បោះបង់​ការ​ទាញ​យក​នេះ​ដែរ​ឬទេ ?"
 
-#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#: addonError.titleError
+#, fuzzy
+msgid "Error"
+msgstr "កំហុស ៖"
+
+#: addonError.titleBlocked
+msgid "Blocked add-on"
+msgstr ""
+
+#: addonError.learnMore
+msgid "Learn more"
+msgstr "ស្វែងយល់​បន្ថែម"
+
+#. # LOCALIZATION NOTE (unsignedAddonsDisabled.title, unsignedAddonsDisabled.message):
+#. # These strings will appear in a dialog when Firefox detects that installed add-ons cannot be verified.
+#: unsignedAddonsDisabled.title
+msgid "Unverified add-ons"
+msgstr ""
+
+#: unsignedAddonsDisabled.message
+msgid ""
+"One or more installed add-ons cannot be verified and have been disabled."
+msgstr ""
+
+#: unsignedAddonsDisabled.dismiss
+msgid "Dismiss"
+msgstr ""
+
+#: unsignedAddonsDisabled.viewAddons
+msgid "View add-ons"
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonError-5):
 #. # #1 is the add-on name, #2 is the add-on host, #3 is the application name
 #: addonError-1
 msgid ""
@@ -143,7 +181,11 @@ msgctxt "addonError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "#1 មិន​អាច​ដំឡើង​បាន​ទេ ពីព្រោះ​ #3 មិន​អាច​​កែប្រែ​ឯកសារ​ដែល​ត្រូវ​ការ ។"
 
-#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#: addonError-5
+msgid "#3 has prevented #2 from installing an unverified add-on."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonLocalError-5, addonErrorIncompatible, addonErrorBlocklisted):
 #. # #1 is the add-on name, #3 is the application name, #4 is the application version
 #: addonLocalError-1
 msgid "This add-on could not be installed because of a filesystem error."
@@ -164,6 +206,11 @@ msgstr "មិន​អាច​ដំឡើង​កម្មវិធី​ន
 msgctxt "addonLocalError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "#1 មិន​អាច​ដំឡើង​បាន​ទេ ពីព្រោះ​ #3 មិន​អាច​​កែប្រែ​ឯកសារ​ដែល​ត្រូវ​ការ ។"
+
+#: addonLocalError-5
+#, fuzzy
+msgid "This add-on could not be installed because it has not been verified."
+msgstr "មិន​អាច​ដំឡើង​កម្មវិធី​នេះ​បាន​ទេ ពីព្រោះ​វា​ខូច ។"
 
 #: addonErrorIncompatible
 msgid "#1 could not be installed because it is not compatible with #3 #4."
@@ -277,10 +324,6 @@ msgstr "%S, %S"
 #: identity.identified.title_with_country
 msgid "%S (%S)"
 msgstr "%S (%S)"
-
-#: identity.encrypted2
-msgid "Encrypted"
-msgstr "បាន​អ៊ិនគ្រីប"
 
 #. # Geolocation UI
 #: geolocation.allow
@@ -1060,6 +1103,12 @@ msgstr "ជាវ​ប្រចាំ​ជាមួយ"
 msgid "%1$S is deprecated. Please use %2$S instead"
 msgstr "%1$S ត្រូវ​បាន​បដិសេធ។ សូម​ប្រើ %2$S ជំនួស"
 
+#~ msgid "Installation failed"
+#~ msgstr "ការ​ដំឡើង​បាន​បរាជ័យ"
+
+#~ msgid "Encrypted"
+#~ msgstr "បាន​អ៊ិនគ្រីប"
+
 #~ msgid "Enter Reader View"
 #~ msgstr "ចូល​របៀប​អ្នក​អាន"
 
@@ -1153,9 +1202,6 @@ msgstr "%1$S ត្រូវ​បាន​បដិសេធ។ សូម​ប
 #~ msgid "Send info to %1$S so that we can improve %2$S?"
 #~ msgstr "ផ្ញើ​ព័ត៌មាន​​ទៅ %1$S ដូច្នេះ​យើង​អាច​ធ្វើឲ្យ %2$S ប្រសើរ​ឡើង ?"
 
-#~ msgid "Learn more"
-#~ msgstr "ស្វែងយល់​បន្ថែម"
-
 #~ msgctxt "telemetry.optin.yes"
 #~ msgid "Yes"
 #~ msgstr "បាទ/ចាស"
@@ -1182,9 +1228,6 @@ msgstr "%1$S ត្រូវ​បាន​បដិសេធ។ សូម​ប
 
 #~ msgid "%S wants to use notifications."
 #~ msgstr "%S ចង់​ប្រើ​ការ​ជូនដំណឹង ។"
-
-#~ msgid "Error:"
-#~ msgstr "កំហុស ៖"
 
 #~ msgid "Warning:"
 #~ msgstr "ការ​ព្រមាន ៖"

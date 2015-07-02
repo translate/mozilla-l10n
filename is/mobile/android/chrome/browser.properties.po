@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 23:22+0000\n"
+"POT-Creation-Date: 2015-07-02 00:07+0000\n"
 "PO-Revision-Date: 2015-05-12 03:55+0000\n"
 "Last-Translator: Kristján  Mathiesen <kgm@kasma.is>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n%10!=1 || n%100==11);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1431402941.000000\n"
@@ -28,14 +28,20 @@ msgstr "Setja inn viðbætur"
 msgid "Install"
 msgstr "Setja inn"
 
+#: addonsConfirmInstallUnsigned.title
+msgid "Unverified add-on"
+msgstr ""
+
+#: addonsConfirmInstallUnsigned.message
+msgid ""
+"This site would like to install an unverified add-on. Proceed at your own "
+"risk."
+msgstr ""
+
 #. # Alerts
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "Hleð niður viðbót"
-
-#: alertAddonsFail
-msgid "Installation failed"
-msgstr "Innsetning mistókst"
 
 #: alertAddonsInstalledNoRestart.message
 msgid "Installation complete"
@@ -118,7 +124,38 @@ msgstr "Hætta við niðurhal"
 msgid "Do you want to cancel this download?"
 msgstr "Viltu hætta við niðurhalið?"
 
-#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#: addonError.titleError
+msgid "Error"
+msgstr ""
+
+#: addonError.titleBlocked
+msgid "Blocked add-on"
+msgstr ""
+
+#: addonError.learnMore
+msgid "Learn more"
+msgstr "Fræðast meira"
+
+#. # LOCALIZATION NOTE (unsignedAddonsDisabled.title, unsignedAddonsDisabled.message):
+#. # These strings will appear in a dialog when Firefox detects that installed add-ons cannot be verified.
+#: unsignedAddonsDisabled.title
+msgid "Unverified add-ons"
+msgstr ""
+
+#: unsignedAddonsDisabled.message
+msgid ""
+"One or more installed add-ons cannot be verified and have been disabled."
+msgstr ""
+
+#: unsignedAddonsDisabled.dismiss
+msgid "Dismiss"
+msgstr ""
+
+#: unsignedAddonsDisabled.viewAddons
+msgid "View add-ons"
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonError-5):
 #. # #1 is the add-on name, #2 is the add-on host, #3 is the application name
 #: addonError-1
 msgid ""
@@ -148,7 +185,11 @@ msgctxt "addonError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "Ekki var hægt að setja inn #1því #3 getur ekki breytt viðkomandi skrá."
 
-#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#: addonError-5
+msgid "#3 has prevented #2 from installing an unverified add-on."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonLocalError-5, addonErrorIncompatible, addonErrorBlocklisted):
 #. # #1 is the add-on name, #3 is the application name, #4 is the application version
 #: addonLocalError-1
 msgid "This add-on could not be installed because of a filesystem error."
@@ -172,6 +213,13 @@ msgstr ""
 msgctxt "addonLocalError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "Ekki var hægt að setja inn #1því #3 getur ekki breytt viðeigandi skrá."
+
+#: addonLocalError-5
+#, fuzzy
+msgid "This add-on could not be installed because it has not been verified."
+msgstr ""
+"Ekki var hægt að setja inn þessa viðbót því hún virðist vera eitthvað "
+"brengluð."
 
 #: addonErrorIncompatible
 msgid "#1 could not be installed because it is not compatible with #3 #4."
@@ -290,10 +338,6 @@ msgstr "%S, %S"
 #: identity.identified.title_with_country
 msgid "%S (%S)"
 msgstr "%S (%S)"
-
-#: identity.encrypted2
-msgid "Encrypted"
-msgstr "Dulritað"
 
 #. # Geolocation UI
 #: geolocation.allow
@@ -1072,6 +1116,12 @@ msgstr "Panta áskrift hjá"
 #: nativeWindow.deprecated
 msgid "%1$S is deprecated. Please use %2$S instead"
 msgstr "%1$S er farið að rýrna. Vinsamlega nota %2$S í staðinn"
+
+#~ msgid "Installation failed"
+#~ msgstr "Innsetning mistókst"
+
+#~ msgid "Encrypted"
+#~ msgstr "Dulritað"
 
 #, fuzzy
 #~ msgid "Enter Reader View"

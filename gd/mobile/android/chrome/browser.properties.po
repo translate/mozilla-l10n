@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 23:22+0000\n"
+"POT-Creation-Date: 2015-07-02 00:07+0000\n"
 "PO-Revision-Date: 2015-03-04 23:54+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1425513280.000000\n"
@@ -29,14 +29,20 @@ msgstr "A' stàladh tuilleadan"
 msgid "Install"
 msgstr "Stàlaich"
 
+#: addonsConfirmInstallUnsigned.title
+msgid "Unverified add-on"
+msgstr ""
+
+#: addonsConfirmInstallUnsigned.message
+msgid ""
+"This site would like to install an unverified add-on. Proceed at your own "
+"risk."
+msgstr ""
+
 #. # Alerts
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "A' luchdadh a-nuas an tuilleadain"
-
-#: alertAddonsFail
-msgid "Installation failed"
-msgstr "Dh'fhàillig an stàladh"
 
 #: alertAddonsInstalledNoRestart.message
 msgid "Installation complete"
@@ -119,7 +125,39 @@ msgstr "Sguir dhen luchdadh a-nuas"
 msgid "Do you want to cancel this download?"
 msgstr "A bheil thu airson sgur dhen luchdadh a-nuas seo?"
 
-#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#: addonError.titleError
+#, fuzzy
+msgid "Error"
+msgstr "Mearachd:"
+
+#: addonError.titleBlocked
+msgid "Blocked add-on"
+msgstr ""
+
+#: addonError.learnMore
+msgid "Learn more"
+msgstr "Barrachd fiosrachaidh"
+
+#. # LOCALIZATION NOTE (unsignedAddonsDisabled.title, unsignedAddonsDisabled.message):
+#. # These strings will appear in a dialog when Firefox detects that installed add-ons cannot be verified.
+#: unsignedAddonsDisabled.title
+msgid "Unverified add-ons"
+msgstr ""
+
+#: unsignedAddonsDisabled.message
+msgid ""
+"One or more installed add-ons cannot be verified and have been disabled."
+msgstr ""
+
+#: unsignedAddonsDisabled.dismiss
+msgid "Dismiss"
+msgstr ""
+
+#: unsignedAddonsDisabled.viewAddons
+msgid "View add-ons"
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonError-5):
 #. # #1 is the add-on name, #2 is the add-on host, #3 is the application name
 #: addonError-1
 msgid ""
@@ -151,7 +189,11 @@ msgstr ""
 "Cha b’ urrainn dhuinn #1 a stàladh a chionn ’s nach urrainn dha #3 am "
 "faidhle atharrachadh a dh’fheumas e atharrachadh."
 
-#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#: addonError-5
+msgid "#3 has prevented #2 from installing an unverified add-on."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonLocalError-5, addonErrorIncompatible, addonErrorBlocklisted):
 #. # #1 is the add-on name, #3 is the application name, #4 is the application version
 #: addonLocalError-1
 msgid "This add-on could not be installed because of a filesystem error."
@@ -179,6 +221,13 @@ msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr ""
 "Cha b' urrainn dhuinn #1 a stàladh a chionn 's nach urrainn do #3 am faidhle "
 "atharrachadh a dh'fheumas e atharrachadh."
+
+#: addonLocalError-5
+#, fuzzy
+msgid "This add-on could not be installed because it has not been verified."
+msgstr ""
+"Cha do ghabh an tuilleadan seo a stàladh a chionn 's gu bheil e truaillte a-"
+"rèir coltais."
 
 #: addonErrorIncompatible
 msgid "#1 could not be installed because it is not compatible with #3 #4."
@@ -305,10 +354,6 @@ msgstr "%S, %S"
 #: identity.identified.title_with_country
 msgid "%S (%S)"
 msgstr "%S (%S)"
-
-#: identity.encrypted2
-msgid "Encrypted"
-msgstr "Crioptaichte"
 
 #. # Geolocation UI
 #: geolocation.allow
@@ -1097,6 +1142,12 @@ msgstr "Fo-sgrìobh slighe"
 msgid "%1$S is deprecated. Please use %2$S instead"
 msgstr "Cha mholar %1$S tuilleadh. Cleachd %2$S ’na àite"
 
+#~ msgid "Installation failed"
+#~ msgstr "Dh'fhàillig an stàladh"
+
+#~ msgid "Encrypted"
+#~ msgstr "Crioptaichte"
+
 #~ msgid "Enter Reader View"
 #~ msgstr "Fosgail sealladh an leughadair"
 
@@ -1166,9 +1217,6 @@ msgstr "Cha mholar %1$S tuilleadh. Cleachd %2$S ’na àite"
 #~ msgid "Send info to %1$S so that we can improve %2$S?"
 #~ msgstr "An cuidich thu leinn le leasachadh %2$S 's tu a' cur dàta gu %1$S?"
 
-#~ msgid "Learn more"
-#~ msgstr "Barrachd fiosrachaidh"
-
 #~ msgid "Send"
 #~ msgstr "Cuir"
 
@@ -1227,9 +1275,6 @@ msgstr "Cha mholar %1$S tuilleadh. Cleachd %2$S ’na àite"
 
 #~ msgid "%S wants to use notifications."
 #~ msgstr "Tha %S airson brathan a chleachdadh."
-
-#~ msgid "Error:"
-#~ msgstr "Mearachd:"
 
 #~ msgid "Warning:"
 #~ msgstr "Rabhadh:"

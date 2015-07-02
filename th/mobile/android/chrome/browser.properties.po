@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 23:22+0000\n"
+"POT-Creation-Date: 2015-07-02 00:07+0000\n"
 "PO-Revision-Date: 2015-05-12 04:03+0000\n"
 "Last-Translator: Wichai <chengings@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1431403402.000000\n"
@@ -28,14 +28,20 @@ msgstr "กำลังติดตั้งส่วนเสริม"
 msgid "Install"
 msgstr "ติดตั้ง"
 
+#: addonsConfirmInstallUnsigned.title
+msgid "Unverified add-on"
+msgstr ""
+
+#: addonsConfirmInstallUnsigned.message
+msgid ""
+"This site would like to install an unverified add-on. Proceed at your own "
+"risk."
+msgstr ""
+
 #. # Alerts
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "กำลังโหลดส่วนเสริม"
-
-#: alertAddonsFail
-msgid "Installation failed"
-msgstr "ติดตั้งไม่สำเร็จ"
 
 #: alertAddonsInstalledNoRestart.message
 msgid "Installation complete"
@@ -118,7 +124,39 @@ msgstr "ยกเลิกการดาวน์โหลด"
 msgid "Do you want to cancel this download?"
 msgstr "คุนต้องการยกเลิกการดาวน์โหลดนี้หรือไม่?"
 
-#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#: addonError.titleError
+#, fuzzy
+msgid "Error"
+msgstr "ข้อผิดพลาด:"
+
+#: addonError.titleBlocked
+msgid "Blocked add-on"
+msgstr ""
+
+#: addonError.learnMore
+msgid "Learn more"
+msgstr "เรียนรู้เพิ่มเติม"
+
+#. # LOCALIZATION NOTE (unsignedAddonsDisabled.title, unsignedAddonsDisabled.message):
+#. # These strings will appear in a dialog when Firefox detects that installed add-ons cannot be verified.
+#: unsignedAddonsDisabled.title
+msgid "Unverified add-ons"
+msgstr ""
+
+#: unsignedAddonsDisabled.message
+msgid ""
+"One or more installed add-ons cannot be verified and have been disabled."
+msgstr ""
+
+#: unsignedAddonsDisabled.dismiss
+msgid "Dismiss"
+msgstr ""
+
+#: unsignedAddonsDisabled.viewAddons
+msgid "View add-ons"
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonError-5):
 #. # #1 is the add-on name, #2 is the add-on host, #3 is the application name
 #: addonError-1
 msgid ""
@@ -142,7 +180,11 @@ msgctxt "addonError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "ไม่สามารถติดตั้ง #1 เนื่องจาก #3 ไม่สามารถแก้ไขแฟ้มที่จำเป็นได้"
 
-#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#: addonError-5
+msgid "#3 has prevented #2 from installing an unverified add-on."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonLocalError-5, addonErrorIncompatible, addonErrorBlocklisted):
 #. # #1 is the add-on name, #3 is the application name, #4 is the application version
 #: addonLocalError-1
 msgid "This add-on could not be installed because of a filesystem error."
@@ -162,6 +204,11 @@ msgstr "ไม่สามารถติดตั้งส่วนเสริ
 msgctxt "addonLocalError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "ไม่สามารถติดตั้ง #1 ได้ เนื่องจาก #3 ไม่สามารถแก้ไขแฟ้มที่จำเป็นได้"
+
+#: addonLocalError-5
+#, fuzzy
+msgid "This add-on could not be installed because it has not been verified."
+msgstr "ไม่สามารถติดตั้งส่วนเสริมนี้ได้ เนื่องจากส่วนเสริมเสียหาย"
 
 #: addonErrorIncompatible
 msgid "#1 could not be installed because it is not compatible with #3 #4."
@@ -274,10 +321,6 @@ msgstr "%S, %S"
 #: identity.identified.title_with_country
 msgid "%S (%S)"
 msgstr "%S (%S)"
-
-#: identity.encrypted2
-msgid "Encrypted"
-msgstr "ถูกเข้ารหัสลับ"
 
 #. # Geolocation UI
 #: geolocation.allow
@@ -1057,6 +1100,12 @@ msgstr "บอกรับกับ"
 msgid "%1$S is deprecated. Please use %2$S instead"
 msgstr "%1$S ไม่ได้รับการสนับสนุนอีกต่อไป โปรดใช้ %2$S แทน"
 
+#~ msgid "Installation failed"
+#~ msgstr "ติดตั้งไม่สำเร็จ"
+
+#~ msgid "Encrypted"
+#~ msgstr "ถูกเข้ารหัสลับ"
+
 #, fuzzy
 #~ msgid "Enter Reader View"
 #~ msgstr "เข้าสู่โหมดตัวอ่าน"
@@ -1149,9 +1198,6 @@ msgstr "%1$S ไม่ได้รับการสนับสนุนอี�
 #~ msgid "Send info to %1$S so that we can improve %2$S?"
 #~ msgstr "ส่งข้อมูลให้ %1$S เพื่อเราจะได้ปรับปรุง %2$S?"
 
-#~ msgid "Learn more"
-#~ msgstr "เรียนรู้เพิ่มเติม"
-
 #~ msgctxt "telemetry.optin.yes"
 #~ msgid "Yes"
 #~ msgstr "ยินยอม"
@@ -1178,9 +1224,6 @@ msgstr "%1$S ไม่ได้รับการสนับสนุนอี�
 
 #~ msgid "%S wants to use notifications."
 #~ msgstr "%S ต้องการใช้การแจ้งเตือน"
-
-#~ msgid "Error:"
-#~ msgstr "ข้อผิดพลาด:"
 
 #~ msgid "Warning:"
 #~ msgstr "คำเตือน:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 23:22+0000\n"
+"POT-Creation-Date: 2015-07-02 00:07+0000\n"
 "PO-Revision-Date: 2015-03-26 07:46+0000\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
@@ -31,14 +31,20 @@ msgstr "تثبيت الإضافة"
 msgid "Install"
 msgstr "ثبّت"
 
+#: addonsConfirmInstallUnsigned.title
+msgid "Unverified add-on"
+msgstr ""
+
+#: addonsConfirmInstallUnsigned.message
+msgid ""
+"This site would like to install an unverified add-on. Proceed at your own "
+"risk."
+msgstr ""
+
 #. # Alerts
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "ينزل الإضافة"
-
-#: alertAddonsFail
-msgid "Installation failed"
-msgstr "فشل التثبيت"
 
 #: alertAddonsInstalledNoRestart.message
 msgid "Installation complete"
@@ -121,7 +127,39 @@ msgstr "ألغِ التنزيل"
 msgid "Do you want to cancel this download?"
 msgstr "أتريد إلغاء هذا التنزيل؟"
 
-#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#: addonError.titleError
+#, fuzzy
+msgid "Error"
+msgstr "خطأ:"
+
+#: addonError.titleBlocked
+msgid "Blocked add-on"
+msgstr ""
+
+#: addonError.learnMore
+msgid "Learn more"
+msgstr "اطّلع على المزيد"
+
+#. # LOCALIZATION NOTE (unsignedAddonsDisabled.title, unsignedAddonsDisabled.message):
+#. # These strings will appear in a dialog when Firefox detects that installed add-ons cannot be verified.
+#: unsignedAddonsDisabled.title
+msgid "Unverified add-ons"
+msgstr ""
+
+#: unsignedAddonsDisabled.message
+msgid ""
+"One or more installed add-ons cannot be verified and have been disabled."
+msgstr ""
+
+#: unsignedAddonsDisabled.dismiss
+msgid "Dismiss"
+msgstr ""
+
+#: unsignedAddonsDisabled.viewAddons
+msgid "View add-ons"
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonError-5):
 #. # #1 is the add-on name, #2 is the add-on host, #3 is the application name
 #: addonError-1
 msgid ""
@@ -145,7 +183,11 @@ msgctxt "addonError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "تعذر تثبيت #1 لأن #3 لم يستطع تعديل الملف المطلوب."
 
-#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#: addonError-5
+msgid "#3 has prevented #2 from installing an unverified add-on."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonLocalError-5, addonErrorIncompatible, addonErrorBlocklisted):
 #. # #1 is the add-on name, #3 is the application name, #4 is the application version
 #: addonLocalError-1
 msgid "This add-on could not be installed because of a filesystem error."
@@ -165,6 +207,11 @@ msgstr "تعذر تثبيت هذه الإضافة لأنها تبدو فاسدة
 msgctxt "addonLocalError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "تعذر تثبيت #1 لأن #3 لم يستطع تعديل الملف المطلوب."
+
+#: addonLocalError-5
+#, fuzzy
+msgid "This add-on could not be installed because it has not been verified."
+msgstr "تعذر تثبيت هذه الإضافة لأنها تبدو فاسدة."
 
 #: addonErrorIncompatible
 msgid "#1 could not be installed because it is not compatible with #3 #4."
@@ -279,10 +326,6 @@ msgstr "%S, %S"
 #: identity.identified.title_with_country
 msgid "%S (%S)"
 msgstr "%S (%S)"
-
-#: identity.encrypted2
-msgid "Encrypted"
-msgstr "مُعمّى"
 
 #. # Geolocation UI
 #: geolocation.allow
@@ -1080,6 +1123,12 @@ msgstr "اشترك مع"
 msgid "%1$S is deprecated. Please use %2$S instead"
 msgstr ""
 
+#~ msgid "Installation failed"
+#~ msgstr "فشل التثبيت"
+
+#~ msgid "Encrypted"
+#~ msgstr "مُعمّى"
+
 #, fuzzy
 #~ msgid "Enter Reader View"
 #~ msgstr "ادخل وضع القارئ"
@@ -1145,9 +1194,6 @@ msgstr ""
 #~ msgid "Send info to %1$S so that we can improve %2$S?"
 #~ msgstr "أأرسل المعلومات إلى %1$S حتى نستطيع تحسين %2$S؟"
 
-#~ msgid "Learn more"
-#~ msgstr "اطّلع على المزيد"
-
 #~ msgid "Send"
 #~ msgstr "أرسِل"
 
@@ -1204,9 +1250,6 @@ msgstr ""
 
 #~ msgid "%S wants to use notifications."
 #~ msgstr "يريد %S استخدام التنبيهات."
-
-#~ msgid "Error:"
-#~ msgstr "خطأ:"
 
 #~ msgid "Warning:"
 #~ msgstr "تحذير:"

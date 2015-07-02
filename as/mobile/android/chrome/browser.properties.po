@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 23:22+0000\n"
+"POT-Creation-Date: 2015-07-02 00:07+0000\n"
 "PO-Revision-Date: 2015-04-29 17:35+0000\n"
 "Last-Translator: Nilamdyuti Goswami <ngoswami@redhat.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1430328946.000000\n"
@@ -27,14 +27,20 @@ msgstr "এড-অন ইনস্টল কৰা হৈ আছে"
 msgid "Install"
 msgstr "ইনস্টল কৰক"
 
+#: addonsConfirmInstallUnsigned.title
+msgid "Unverified add-on"
+msgstr ""
+
+#: addonsConfirmInstallUnsigned.message
+msgid ""
+"This site would like to install an unverified add-on. Proceed at your own "
+"risk."
+msgstr ""
+
 #. # Alerts
 #: alertAddonsDownloading
 msgid "Downloading add-on"
 msgstr "এড-অন ডাউনল'ড কৰা হৈ আছে"
-
-#: alertAddonsFail
-msgid "Installation failed"
-msgstr "ইনস্টলেষণ ব্যৰ্থ হল"
 
 #: alertAddonsInstalledNoRestart.message
 msgid "Installation complete"
@@ -117,7 +123,40 @@ msgstr "ডাউনল'ড বাতিল কৰক"
 msgid "Do you want to cancel this download?"
 msgstr "আপুনি এই ডাউনল'ডটো বাতিল কৰিব বিচাৰে নেকি?"
 
-#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#: addonError.titleError
+#, fuzzy
+msgid "Error"
+msgstr "ভুল:"
+
+#: addonError.titleBlocked
+msgid "Blocked add-on"
+msgstr ""
+
+#: addonError.learnMore
+#, fuzzy
+msgid "Learn more"
+msgstr "অধিক জানক"
+
+#. # LOCALIZATION NOTE (unsignedAddonsDisabled.title, unsignedAddonsDisabled.message):
+#. # These strings will appear in a dialog when Firefox detects that installed add-ons cannot be verified.
+#: unsignedAddonsDisabled.title
+msgid "Unverified add-ons"
+msgstr ""
+
+#: unsignedAddonsDisabled.message
+msgid ""
+"One or more installed add-ons cannot be verified and have been disabled."
+msgstr ""
+
+#: unsignedAddonsDisabled.dismiss
+msgid "Dismiss"
+msgstr ""
+
+#: unsignedAddonsDisabled.viewAddons
+msgid "View add-ons"
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonError-5):
 #. # #1 is the add-on name, #2 is the add-on host, #3 is the application name
 #: addonError-1
 msgid ""
@@ -143,7 +182,11 @@ msgctxt "addonError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "#1 ইনস্টল কৰিব পৰা নগল কাৰণ #3 এ প্ৰয়োজনীয় ফাইল সলনি কৰিব নোৱাৰে।"
 
-#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#: addonError-5
+msgid "#3 has prevented #2 from installing an unverified add-on."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonLocalError-5, addonErrorIncompatible, addonErrorBlocklisted):
 #. # #1 is the add-on name, #3 is the application name, #4 is the application version
 #: addonLocalError-1
 msgid "This add-on could not be installed because of a filesystem error."
@@ -164,6 +207,11 @@ msgstr "এই এড-অন ইনস্টল কৰিব পৰা নগল
 msgctxt "addonLocalError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "#1 ইনস্টল কৰিব পৰা নগল কাৰণ #3 প্ৰয়োজনীয় ফাইল সলনি কৰিব নোৱাৰে।"
+
+#: addonLocalError-5
+#, fuzzy
+msgid "This add-on could not be installed because it has not been verified."
+msgstr "এই এড-অন ইনস্টল কৰিব পৰা নগল কাৰণ ই সম্ভবত ক্ষতিগ্ৰস্থ।"
 
 #: addonErrorIncompatible
 msgid "#1 could not be installed because it is not compatible with #3 #4."
@@ -281,10 +329,6 @@ msgstr "%S, %S"
 #: identity.identified.title_with_country
 msgid "%S (%S)"
 msgstr "%S (%S)"
-
-#: identity.encrypted2
-msgid "Encrypted"
-msgstr "ইনক্ৰিপ্টেড"
 
 #. # Geolocation UI
 #: geolocation.allow
@@ -1065,6 +1109,12 @@ msgstr "চিহ্নিত বস্তুৰ সৈতে স্বাক্
 msgid "%1$S is deprecated. Please use %2$S instead"
 msgstr "%1$S স্খলিত হৈছে। অনুগ্ৰহ কৰি ইয়াৰ পৰিৱৰ্তে %2$S ব্যৱহাৰ কৰক"
 
+#~ msgid "Installation failed"
+#~ msgstr "ইনস্টলেষণ ব্যৰ্থ হল"
+
+#~ msgid "Encrypted"
+#~ msgstr "ইনক্ৰিপ্টেড"
+
 #, fuzzy
 #~ msgid "Enter Reader View"
 #~ msgstr "পঢ়োতা অৱস্থালৈ যাওক"
@@ -1138,10 +1188,6 @@ msgstr "%1$S স্খলিত হৈছে। অনুগ্ৰহ কৰি 
 #~ msgstr "%S এ এই ছাইটক %S পপ-আপ উইন্ডোসমূহ খোলাৰ পৰা প্ৰতিৰোধ কৰিছে।"
 
 #, fuzzy
-#~ msgid "Learn more"
-#~ msgstr "অধিক জানক"
-
-#, fuzzy
 #~ msgctxt "telemetry.optin.yes"
 #~ msgid "Yes"
 #~ msgstr "হয়"
@@ -1157,9 +1203,6 @@ msgstr "%1$S স্খলিত হৈছে। অনুগ্ৰহ কৰি 
 #~ msgstr ""
 #~ "%1$S এ পৰিৱেশন, হাৰ্ডৱেৰ, ব্যৱহাৰ আৰু স্বনিৰ্বাচনৰ বিষয়ে তথ্য %2$S লে পঠায় %3$S "
 #~ "ক উন্নত কৰিবলে।"
-
-#~ msgid "Error:"
-#~ msgstr "ভুল:"
 
 #~ msgid "Warning:"
 #~ msgstr "সকিয়নি:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 23:22+0000\n"
+"POT-Creation-Date: 2015-07-02 00:07+0000\n"
 "PO-Revision-Date: 2015-05-12 03:50+0000\n"
 "Last-Translator: samson <sambelet@yahoo.com>\n"
 "Language-Team: ANLOC\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1431402638.000000\n"
@@ -30,13 +30,19 @@ msgstr ""
 msgid "Install"
 msgstr ""
 
+#: addonsConfirmInstallUnsigned.title
+msgid "Unverified add-on"
+msgstr ""
+
+#: addonsConfirmInstallUnsigned.message
+msgid ""
+"This site would like to install an unverified add-on. Proceed at your own "
+"risk."
+msgstr ""
+
 #. # Alerts
 #: alertAddonsDownloading
 msgid "Downloading add-on"
-msgstr ""
-
-#: alertAddonsFail
-msgid "Installation failed"
 msgstr ""
 
 #: alertAddonsInstalledNoRestart.message
@@ -122,7 +128,39 @@ msgstr ""
 msgid "Do you want to cancel this download?"
 msgstr ""
 
-#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4):
+#: addonError.titleError
+msgid "Error"
+msgstr ""
+
+#: addonError.titleBlocked
+msgid "Blocked add-on"
+msgstr ""
+
+#: addonError.learnMore
+#, fuzzy
+msgid "Learn more"
+msgstr "የበለጠ ተማር "
+
+#. # LOCALIZATION NOTE (unsignedAddonsDisabled.title, unsignedAddonsDisabled.message):
+#. # These strings will appear in a dialog when Firefox detects that installed add-ons cannot be verified.
+#: unsignedAddonsDisabled.title
+msgid "Unverified add-ons"
+msgstr ""
+
+#: unsignedAddonsDisabled.message
+msgid ""
+"One or more installed add-ons cannot be verified and have been disabled."
+msgstr ""
+
+#: unsignedAddonsDisabled.dismiss
+msgid "Dismiss"
+msgstr ""
+
+#: unsignedAddonsDisabled.viewAddons
+msgid "View add-ons"
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonError-1, addonError-2, addonError-3, addonError-4, addonError-5):
 #. # #1 is the add-on name, #2 is the add-on host, #3 is the application name
 #: addonError-1
 msgid ""
@@ -146,7 +184,11 @@ msgctxt "addonError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "#1ሊጫን  አልቻለም ምክንያቱም  #3 የሚፈለገዉን ፋይል ማሻሻል  ስላልተቻለ።"
 
-#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonErrorIncompatible, addonErrorBlocklisted):
+#: addonError-5
+msgid "#3 has prevented #2 from installing an unverified add-on."
+msgstr ""
+
+#. # LOCALIZATION NOTE (addonLocalError-1, addonLocalError-2, addonLocalError-3, addonLocalError-4, addonLocalError-5, addonErrorIncompatible, addonErrorBlocklisted):
 #. # #1 is the add-on name, #3 is the application name, #4 is the application version
 #: addonLocalError-1
 msgid "This add-on could not be installed because of a filesystem error."
@@ -167,6 +209,11 @@ msgstr "ይህ እክሉ ሊጫን  አልቻለም ምክንያቱም ብልሽ
 msgctxt "addonLocalError-4"
 msgid "#1 could not be installed because #3 cannot modify the needed file."
 msgstr "#1ሊጫን  አልቻለም ምክንያቱም  #3 የሚፈለገዉን ፋይል ማሻሻል  ስላልተቻለ።"
+
+#: addonLocalError-5
+#, fuzzy
+msgid "This add-on could not be installed because it has not been verified."
+msgstr "ይህ እክሉ ሊጫን  አልቻለም ምክንያቱም ብልሽት ተከስቷል። "
 
 #: addonErrorIncompatible
 msgid "#1 could not be installed because it is not compatible with #3 #4."
@@ -278,10 +325,6 @@ msgstr "%S, %S "
 
 #: identity.identified.title_with_country
 msgid "%S (%S)"
-msgstr ""
-
-#: identity.encrypted2
-msgid "Encrypted"
 msgstr ""
 
 #. # Geolocation UI
@@ -1106,10 +1149,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Always Show"
 #~ msgstr "ሁሌም አጋራ "
-
-#, fuzzy
-#~ msgid "Learn more"
-#~ msgstr "የበለጠ ተማር "
 
 #, fuzzy
 #~ msgctxt "telemetry.optin.yes"
