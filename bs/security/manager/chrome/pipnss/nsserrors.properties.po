@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-30 17:16+0000\n"
-"PO-Revision-Date: 2015-07-07 23:18+0000\n"
+"PO-Revision-Date: 2015-07-14 10:01+0000\n"
 "Last-Translator: Kerim Kalamujic <kerim@mozilla.ba>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: bs\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1436311090.000000\n"
+"X-POOTLE-MTIME: 1436868082.000000\n"
 
 #: SSL_ERROR_EXPORT_ONLY_SERVER
 msgid ""
@@ -630,6 +630,8 @@ msgid ""
 "The next protocol negotiation extension was enabled, but the callback was "
 "cleared prior to being needed."
 msgstr ""
+"Proširenje dogovaranja idućeg protokola je omogućeno, ali ponovni poziv je "
+"obrisan prije nego je bio potreban."
 
 #: SSL_ERROR_NEXT_PROTOCOL_NO_PROTOCOL
 msgid ""
@@ -643,10 +645,12 @@ msgid ""
 "The server rejected the handshake because the client downgraded to a lower "
 "TLS version than the server supports."
 msgstr ""
+"Server je odbio rukovanje jer je klijent zatražio prelazak na nižu verziju "
+"TLS-a, koju server ne podržava."
 
 #: SSL_ERROR_WEAK_SERVER_CERT_KEY
 msgid "The server certificate included a public key that was too weak."
-msgstr ""
+msgstr "Certifikat servera sadržavao je preslab javni ključ."
 
 #: SEC_ERROR_IO
 msgid "An I/O error occurred during security authorization."
@@ -713,9 +717,8 @@ msgid "The security password entered is incorrect."
 msgstr "Unešena sigurnosna lozinka je neispravna."
 
 #: SEC_ERROR_RETRY_PASSWORD
-#, fuzzy
 msgid "New password entered incorrectly. Please try again."
-msgstr "Nova lozinka je neispravno unesena. Molimo da pokušate ponovo."
+msgstr "Nova lozinka je neispravno unešena. Molimo da pokušate ponovo."
 
 #: SEC_ERROR_NO_NODELOCK
 msgid "security library: no nodelock."
@@ -776,7 +779,6 @@ msgid "Cert Library: No Response"
 msgstr "Biblioteka certifikata: nema odgovora"
 
 #: SEC_ERROR_EXPIRED_ISSUER_CERTIFICATE
-#, fuzzy
 msgid ""
 "The certificate issuer's certificate has expired. Check your system date and "
 "time."
@@ -785,7 +787,6 @@ msgstr ""
 "sistema."
 
 #: SEC_ERROR_CRL_EXPIRED
-#, fuzzy
 msgid ""
 "The CRL for the certificate's issuer has expired. Update it or check your "
 "system date and time."
@@ -881,13 +882,12 @@ msgstr ""
 "dužine ključa."
 
 #: XP_SEC_FORTEZZA_BAD_CARD
-#, fuzzy
 msgid ""
 "Fortezza card has not been properly initialized. Please remove it and return "
 "it to your issuer."
 msgstr ""
-"Fortezza karta nije propisno pokrenuta. Molimo da je uklonite i vratite "
-"izdavaču."
+"Fortezza karta nije propisno inicijalizirana. Molimo da je uklonite i "
+"vratite izdavaču."
 
 #: XP_SEC_FORTEZZA_NO_CARD
 msgid "No Fortezza cards Found"
@@ -1005,50 +1005,40 @@ msgid "Error attempting to import certificates."
 msgstr "Greška pri pokušaju uvoza certifikata."
 
 #: SEC_ERROR_PKCS12_DECODING_PFX
-#, fuzzy
 msgid "Unable to import. Decoding error. File not valid."
 msgstr "Uvoz nije moguć. Greška pri dekodiranju. Fajl nije ispravan."
 
 #: SEC_ERROR_PKCS12_INVALID_MAC
-#, fuzzy
 msgid "Unable to import. Invalid MAC. Incorrect password or corrupt file."
-msgstr ""
-"Uvoz nije moguć. Neispravan MAC. Neispravna lozinka ili oštećena datoteka."
+msgstr "Uvoz nije moguć. Neispravan MAC. Neispravna lozinka ili oštećen fajl."
 
 #: SEC_ERROR_PKCS12_UNSUPPORTED_MAC_ALGORITHM
-#, fuzzy
 msgid "Unable to import. MAC algorithm not supported."
 msgstr "Uvoz nije moguć. MAC algoritam nije podržan."
 
 #: SEC_ERROR_PKCS12_UNSUPPORTED_TRANSPORT_MODE
-#, fuzzy
 msgid "Unable to import. Only password integrity and privacy modes supported."
 msgstr ""
-"Uvoz nije moguć. Jedino modovi sa integritetom lozinke i privatnošću su "
+"Uvoz nije moguć. Jedino režimi sa integritetom lozinke i privatnošću su "
 "podržani."
 
 #: SEC_ERROR_PKCS12_CORRUPT_PFX_STRUCTURE
-#, fuzzy
 msgid "Unable to import. File structure is corrupt."
-msgstr "Uvoz nije moguć. Struktura datoteke je oštećena."
+msgstr "Uvoz nije moguć. Struktura fajla je oštećena."
 
 #: SEC_ERROR_PKCS12_UNSUPPORTED_PBE_ALGORITHM
-#, fuzzy
 msgid "Unable to import. Encryption algorithm not supported."
 msgstr "Uvoz nije moguć. Algoritam za enkripciju nije podržan."
 
 #: SEC_ERROR_PKCS12_UNSUPPORTED_VERSION
-#, fuzzy
 msgid "Unable to import. File version not supported."
 msgstr "Uvoz nije moguć. Verzija fajla nije podržana."
 
 #: SEC_ERROR_PKCS12_PRIVACY_PASSWORD_INCORRECT
-#, fuzzy
 msgid "Unable to import. Incorrect privacy password."
 msgstr "Uvoz nije moguć. Pogrešna lozinka za privatnost."
 
 #: SEC_ERROR_PKCS12_CERT_COLLISION
-#, fuzzy
 msgid "Unable to import. Same nickname already exists in database."
 msgstr "Uvoz nije moguć. Ista oznaka već postoji u bazi podataka."
 
@@ -1079,37 +1069,30 @@ msgstr ""
 "Adresa u potpisnom certifikatu ne odgovara adresi u zaglavljima poruke."
 
 #: SEC_ERROR_PKCS12_UNABLE_TO_IMPORT_KEY
-#, fuzzy
 msgid "Unable to import. Error attempting to import private key."
 msgstr "Uvoz nije moguć. Greška pri pokušaju uvoza privatnog ključa."
 
 #: SEC_ERROR_PKCS12_IMPORTING_CERT_CHAIN
-#, fuzzy
 msgid "Unable to import. Error attempting to import certificate chain."
 msgstr "Uvoz nije moguć. Greška pri pokušaju uvoza lanca certifikata."
 
 #: SEC_ERROR_PKCS12_UNABLE_TO_LOCATE_OBJECT_BY_NAME
-#, fuzzy
 msgid "Unable to export. Unable to locate certificate or key by nickname."
 msgstr "Izvoz nije moguć. Nije moguće locirati certifikat ili ključ po oznaci."
 
 #: SEC_ERROR_PKCS12_UNABLE_TO_EXPORT_KEY
-#, fuzzy
 msgid "Unable to export. Private Key could not be located and exported."
-msgstr "Izvoz nije moguć. Privatni ključ nije pronađen."
+msgstr "Izvoz nije moguć. Privatni ključ nije mogao biti pronađen i izvezen."
 
 #: SEC_ERROR_PKCS12_UNABLE_TO_WRITE
-#, fuzzy
 msgid "Unable to export. Unable to write the export file."
 msgstr "Izvoz nije moguć. Nije moguće pisati u izlazni fajl."
 
 #: SEC_ERROR_PKCS12_UNABLE_TO_READ
-#, fuzzy
 msgid "Unable to import. Unable to read the import file."
 msgstr "Uvoz nije moguć. Nije moguće pročitati ulazni fajl."
 
 #: SEC_ERROR_PKCS12_KEY_DATABASE_NOT_INITIALIZED
-#, fuzzy
 msgid "Unable to export. Key database corrupt or deleted."
 msgstr "Izvoz nije moguć. Baza ključeva je oštećena ili obrisana."
 
@@ -1118,14 +1101,12 @@ msgid "Unable to generate public/private key pair."
 msgstr "Nije moguće generisati par javnog i privatnog ključa."
 
 #: SEC_ERROR_INVALID_PASSWORD
-#, fuzzy
 msgid "Password entered is invalid. Please pick a different one."
-msgstr "Unesena lozinka je neispravna. Molimo da odaberete neku drugu."
+msgstr "Unešena lozinka je neispravna. Molimo da izaberete neku drugu."
 
 #: SEC_ERROR_RETRY_OLD_PASSWORD
-#, fuzzy
 msgid "Old password entered incorrectly. Please try again."
-msgstr "Stara lozinka je neispravno unesena. Molimo pokušajte ponovo."
+msgstr "Stara lozinka je neispravno unešena. Molimo pokušajte ponovo."
 
 #: SEC_ERROR_BAD_NICKNAME
 msgid "Certificate nickname already in use."
@@ -1160,7 +1141,6 @@ msgid "New KRL is not later than the current one."
 msgstr "Novi KRL nije stariji od trenutnog."
 
 #: SEC_ERROR_CKL_CONFLICT
-#, fuzzy
 msgid "New CKL has different issuer than current CKL. Delete current CKL."
 msgstr ""
 "Novi CKL ima drugačijeg izdavača nego trenutni CKL. Obrišite trenutni CKL."
@@ -1408,7 +1388,6 @@ msgstr ""
 "nepopravljiva greška."
 
 #: SEC_ERROR_PKCS11_FUNCTION_FAILED
-#, fuzzy
 msgid ""
 "A PKCS #11 module returned CKR_FUNCTION_FAILED, indicating that the "
 "requested function could not be performed. Trying the same operation again "
@@ -1464,6 +1443,9 @@ msgid ""
 "constructed that matches the pinset. Key pinning violations cannot be "
 "overridden."
 msgstr ""
+"Server koristi \"key pinning\" (HPKP), ali nije moguće sastaviti nijedan "
+"lanac certifikata koji odgovara pinsetu. \"Key pinning\" prekršaji se ne "
+"mogu zaobići."
 
 #: MOZILLA_PKIX_ERROR_CA_CERT_USED_AS_END_ENTITY
 msgid ""
@@ -1471,12 +1453,17 @@ msgid ""
 "it as a certificate authority. For a properly-issued certificate, this "
 "should not be the case."
 msgstr ""
+"Server koristi certifikat s proširenjem osnovnih uvjeta koji ga "
+"identificiraju kao certifikacijski autoritet. Za ispravno izdat certifikat, "
+"ovo ne bi smio biti slučaj."
 
 #: MOZILLA_PKIX_ERROR_INADEQUATE_KEY_SIZE
 msgid ""
 "The server presented a certificate with a key size that is too small to "
 "establish a secure connection."
 msgstr ""
+"Server je prezentirao certifikat s ključem premale dužine za uspostavljanje "
+"sigurne veze."
 
 #: MOZILLA_PKIX_ERROR_V1_CERT_USED_AS_CA
 msgid ""
@@ -1484,28 +1471,35 @@ msgid ""
 "the server's certificate. X.509 version 1 certificates are deprecated and "
 "should not be used to sign other certificates."
 msgstr ""
+"X.509 certifikat verzija 1 koji nema potvrđenu vjerodostojnost korišten je "
+"za izdavanje certifikata servera. X.509 certifikati verzija 1 su zastarjeli "
+"i ne bi se smjeli koristiti za potpisivanje drugih certifikata."
 
 #: MOZILLA_PKIX_ERROR_NOT_YET_VALID_CERTIFICATE
 msgid "The server presented a certificate that is not yet valid."
-msgstr ""
+msgstr "Server je ponudio certifikat koji još nije važeći."
 
 #: MOZILLA_PKIX_ERROR_NOT_YET_VALID_ISSUER_CERTIFICATE
 msgid ""
 "A certificate that is not yet valid was used to issue the server's "
 "certificate."
 msgstr ""
+"Za izdavanje certifikata ovog servera korišten je certifikat koji tek treba "
+"postati važeći."
 
 #: MOZILLA_PKIX_ERROR_SIGNATURE_ALGORITHM_MISMATCH
 msgid ""
 "The signature algorithm in the signature field of the certificate does not "
 "match the algorithm in its signatureAlgorithm field."
 msgstr ""
+"Algoritam potpisa u polju potpisa certifikata se ne podudara s algoritmom u "
+"signatureAlgorithm polju."
 
 #: MOZILLA_PKIX_ERROR_OCSP_RESPONSE_FOR_CERT_MISSING
 msgid ""
 "The OCSP response does not include a status for the certificate being "
 "verified."
-msgstr ""
+msgstr "OCSP odgovor ne uključuje status za certifikat koji se provjerava."
 
 #~ msgctxt "SSL_ERROR_UNUSED_10"
 #~ msgid "Unrecognized SSL error code."
