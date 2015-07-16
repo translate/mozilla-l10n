@@ -182,14 +182,10 @@ rsync_files_get() {
 
 rsync_files_put() {
 	log_info "rsync copying files on local filesystem to Pootle"
-	if [ -z "${1//[0-9]}" ]; then
-		option_keep="--keep --modified-since=$1"
-		shift 1
-	fi
 	local langs=$(get_language_pootle $*)
 
 	option_project="--project=$project"
-	update_command="$precommand python $manage_command update_stores $option_project $option_keep"
+	update_command="$precommand python $manage_command update_stores $option_project"
 	pootle_dir=/var/www/sites/$instance/translations/$project
 	
 	if [[ $opt_yes ]]; then

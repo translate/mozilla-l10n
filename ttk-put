@@ -9,17 +9,10 @@ do
 			opt_yes=""
 			shift 1
 			;;
-		--keep=*)
-			tmpkeep=${opt/--keep=/}
-			if [ -z "${tmpkeep//[0-9]}" ]; then
-				keep=$tmpkeep
-				shift 1
-			fi
-			;;
 	esac
 done
 
 langs=$(which_langs $*)
 
 sync_stores $langs
-rsync_files_put $keep $langs
+rsync_files_put $langs
