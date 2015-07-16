@@ -37,7 +37,7 @@ if [ $? -ne 0 ]; then
 		ttk-build --no-compare-locales --no-xpi --no-tarball
 		git add $(ttk-langs)
 		git commit -m "All: update against templates ($project)"
-		ttk-put --yes --keep=$id
+		ttk-put --yes
 	else
 		git commit -m "Templates: non-POT update ($project)" templates templates-en-US
 		id=$(ttk-changeid)
