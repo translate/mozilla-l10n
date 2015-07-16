@@ -148,7 +148,7 @@ _create_option_langs() {
 # Pootle interactions
 #####################
 latest_change_id() {
-	ssh $user@$server $precommand python $manage_command latest_change_id --verbosity=$manage_py_verbosity
+	ssh $user@$server $precommand python $manage_command revision --verbosity=$manage_py_verbosity
 }
 
 sync_stores() {
