@@ -185,7 +185,7 @@ rsync_files_put() {
 	local langs=$(get_language_pootle $*)
 
 	option_project="--project=$project"
-	update_command="$precommand python $manage_command update_stores $option_project"
+	update_command="$precommand python $manage_command update_stores --force $option_project"
 	pootle_dir=/var/www/sites/$instance/translations/$project
 	
 	if [[ $opt_yes ]]; then
