@@ -14,5 +14,8 @@ done
 
 langs=$(which_langs $*)
 
-sync_stores $langs
+# We don't want to sync_store anymore as Pootle now has last_sync_revision and
+# this would mess with that.  Keep it here while we validate that we mean what
+# we say here.
+#sync_stores $langs
 rsync_files_put $langs
