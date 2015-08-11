@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from ./browser/chrome/browser/devtools/profiler.properties
+#. extracted from ./browser/chrome/browser/devtools/performance.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-30 17:16+0000\n"
+"POT-Creation-Date: 2015-08-11 11:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,42 +17,38 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 
-#. # LOCALIZATION NOTE These strings are used inside the Profiler
-#. # which is available from the Web Developer sub-menu -> 'Profiler'.
+#. # LOCALIZATION NOTE These strings are used inside the Performance Tools
+#. # which is available from the Web Developer sub-menu -> 'Performance'.
 #. # The correct localization of this file might be to keep it in
 #. # English, or another language commonly spoken among web developers.
 #. # You want to make that choice consistent across the developer tools.
 #. # A good criteria is the language in which you'd find the best
 #. # documentation on web development on the web.
-#. # LOCALIZATION NOTE (profiler.label):
+#. # LOCALIZATION NOTE (performance.label):
 #. # This string is displayed in the title of the tab when the profiler is
 #. # displayed inside the developer tools window and in the Developer Tools Menu.
-#: profiler.label2
-msgid "Performance"
+#: performance.label performance.accesskey
+msgid "&Performance"
 msgstr ""
 
-#. # LOCALIZATION NOTE (profiler.panelLabel):
+#. # LOCALIZATION NOTE (performance.panelLabel):
 #. # This is used as the label for the toolbox panel.
-#: profiler.panelLabel2
+#: performance.panelLabel
 msgid "Performance Panel"
 msgstr ""
 
-#. # LOCALIZATION NOTE (profiler2.commandkey, profiler.accesskey)
+#. # LOCALIZATION NOTE (performance.commandkey, performance.accesskey)
 #. # Used for the menuitem in the tool menu
-#: profiler.commandkey2
+#: performance.commandkey
 msgid "VK_F5"
 msgstr ""
 
-#: profiler.accesskey
-msgid "P"
-msgstr ""
-
-#. # LOCALIZATION NOTE (profiler.tooltip3):
+#. # LOCALIZATION NOTE (performance.tooltip):
 #. # This string is displayed in the tooltip of the tab when the profiler is
 #. # displayed inside the developer tools window.
-#. # Keyboard shortcut for JS Profiler will be shown inside brackets.
-#: profiler.tooltip3
-msgid "JavaScript Profiler (%S)"
+#. # Keyboard shortcut for Performance Tools will be shown inside brackets.
+#: performance.tooltip
+msgid "Performance (%S)"
 msgstr ""
 
 #. # LOCALIZATION NOTE (noRecordingsText): The text to display in the
@@ -62,42 +58,44 @@ msgid "There are no profiles yet."
 msgstr ""
 
 #. # LOCALIZATION NOTE (recordingsList.itemLabel):
-#. # This string is displayed in the recordings list of the Profiler,
-#. # identifying a set of function calls.
+#. # This string is displayed in the recordings list of the Performance Tools,
+#. # identifying a set of function calls. %S represents the number of recording,
+#. # iterating for every new recording, resulting in "Recording #1", "Recording #2", etc.
 #: recordingsList.itemLabel
 msgid "Recording #%S"
 msgstr ""
 
 #. # LOCALIZATION NOTE (recordingsList.recordingLabel):
-#. # This string is displayed in the recordings list of the Profiler,
+#. # This string is displayed in the recordings list of the Performance Tools,
 #. # for an item that has not finished recording.
 #: recordingsList.recordingLabel
 msgid "In progress…"
 msgstr ""
 
+#. # LOCALIZATION NOTE (recordingsList.loadingLabel):
+#. # This string is displayed in the recordings list of the Performance Tools,
+#. # for an item that is finished and is loading.
+#: recordingsList.loadingLabel
+msgid "Loading…"
+msgstr ""
+
 #. # LOCALIZATION NOTE (recordingsList.durationLabel):
-#. # This string is displayed in the recordings list of the Profiler,
+#. # This string is displayed in the recordings list of the Performance Tools,
 #. # for an item that has finished recording.
 #: recordingsList.durationLabel
+msgctxt "recordingsList.durationLabel"
 msgid "%S ms"
 msgstr ""
 
 #. # LOCALIZATION NOTE (recordingsList.saveLabel):
-#. # This string is displayed in the recordings list of the Profiler,
+#. # This string is displayed in the recordings list of the Performance Tools,
 #. # for saving an item to disk.
 #: recordingsList.saveLabel
 msgid "Save"
 msgstr ""
 
-#. # LOCALIZATION NOTE (profile.tab):
-#. # This string is displayed in the profile view for a tab, after the
-#. # recording has finished, as the recording 'start → stop' range in milliseconds.
-#: profile.tab
-msgid "%1$S ms → %2$S ms"
-msgstr ""
-
 #. # LOCALIZATION NOTE (graphs.fps):
-#. # This string is displayed in the framerate graph of the Profiler,
+#. # This string is displayed in the framerate graph of the Performance Tools,
 #. # as the unit used to measure frames per second. This label should be kept
 #. # AS SHORT AS POSSIBLE so it doesn't obstruct important parts of the graph.
 #: graphs.fps
@@ -105,7 +103,7 @@ msgid "fps"
 msgstr ""
 
 #. # LOCALIZATION NOTE (graphs.ms):
-#. # This string is displayed in the flamegraph of the Profiler,
+#. # This string is displayed in the flamegraph of the Performance Tools,
 #. # as the unit used to measure time (in milliseconds). This label should be kept
 #. # AS SHORT AS POSSIBLE so it doesn't obstruct important parts of the graph.
 #: graphs.ms
@@ -113,8 +111,16 @@ msgctxt "graphs.ms"
 msgid "ms"
 msgstr ""
 
+#. # LOCALIZATION NOTE (graphs.memory):
+#. # This string is displayed in the memory graph of the Performance tool,
+#. # as the unit used to memory consumption. This label should be kept
+#. # AS SHORT AS POSSIBLE so it doesn't obstruct important parts of the graph.
+#: graphs.memory
+msgid "MB"
+msgstr ""
+
 #. # LOCALIZATION NOTE (category.*):
-#. # These strings are displayed in the categories graph of the Profiler,
+#. # These strings are displayed in the categories graph of the Performance Tools,
 #. # as the legend for each block in every bar. These labels should be kept
 #. # AS SHORT AS POSSIBLE so they don't obstruct important parts of the graph.
 #: category.other
@@ -153,14 +159,14 @@ msgstr ""
 msgid "Tools"
 msgstr ""
 
-#. # LOCALIZATION NOTE (graphs.ms):
+#. # LOCALIZATION NOTE (table.ms):
 #. # This string is displayed in the call tree after units of time in milliseconds.
 #: table.ms
 msgctxt "table.ms"
 msgid "ms"
 msgstr ""
 
-#. # LOCALIZATION NOTE (graphs.ms):
+#. # LOCALIZATION NOTE (table.percentage):
 #. # This string is displayed in the call tree after units representing percentages.
 #: table.percentage
 msgid "%"
@@ -199,10 +205,16 @@ msgstr ""
 msgid "View optimizations in JIT View"
 msgstr ""
 
+#. # LOCALIZATION NOTE (recordingsList.importDialogTitle):
+#. # This string is displayed as a title for importing a recoring from disk.
+#: recordingsList.importDialogTitle
+msgid "Import recording…"
+msgstr ""
+
 #. # LOCALIZATION NOTE (recordingsList.saveDialogTitle):
 #. # This string is displayed as a title for saving a recording to disk.
 #: recordingsList.saveDialogTitle
-msgid "Save profile…"
+msgid "Save recording…"
 msgstr ""
 
 #. # LOCALIZATION NOTE (recordingsList.saveDialogJSONFilter):
@@ -223,13 +235,13 @@ msgstr ""
 msgid "Optimization failed"
 msgstr ""
 
-#. # LOCALIZATION NOTE (jit.samples2):
+#. # LOCALIZATION NOTE (jit.samples):
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # This string is displayed for the unit representing the number of times a
 #. # frame is sampled.
 #. # "#1" represents the number of samples
 #. # example: 30 samples
-#: jit.samples2
+#: jit.samples
 msgid "#1 sample;#1 samples"
 msgstr ""
 
@@ -239,20 +251,26 @@ msgstr ""
 msgid "No JIT optimizations recorded for this frame."
 msgstr ""
 
-#. # LOCALIZATION NOTE (consoleProfile.recordingNotice/stopCommand):
-#. # These strings are displayed when a recording is in progress, that was started from the console.
-#. # TODO REMOVE
-#: consoleProfile.recordingNotice
-msgid "Currently recording profile \"%S\"."
+#. # LOCALIZATION NOTE (timeline.tick):
+#. # This string is displayed in the timeline overview, for delimiting ticks
+#. # by time, in milliseconds.
+#: timeline.tick
+msgctxt "timeline.tick"
+msgid "%S ms"
 msgstr ""
 
-#. # TODO REMOVE
-#: consoleProfile.stopCommand
-msgid "Stop profiling by typing \"console.profileEnd('%S')\" into the console."
+#. # LOCALIZATION NOTE (timeline.records):
+#. # This string is displayed in the timeline waterfall, as a title for the menu.
+#: timeline.records
+msgid "RECORDS"
 msgstr ""
 
-#. # LOCALIZATION NOTE (profiler.bufferStatus):
-#. # This string is displayed illustrating how full the profiler's circular buffer is.
-#: profiler.bufferStatus
-msgid "Buffer capacity: %S%"
+#. # LOCALIZATION NOTE (profiler.bufferFull):
+#. # This string is displayed when recording, indicating how much of the
+#. # buffer is currently be used.
+#. # %S is the percentage of the buffer used -- there are two "%"s after to escape
+#. # the % that is actually displayed.
+#. # Example: "Buffer 54% full"
+#: profiler.bufferFull
+msgid "Buffer %S%% full"
 msgstr ""
