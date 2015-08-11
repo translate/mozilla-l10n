@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-23 18:16+0000\n"
+"POT-Creation-Date: 2015-08-11 11:38+0000\n"
 "PO-Revision-Date: 2015-02-25 00:22+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1424823768.000000\n"
@@ -39,15 +39,6 @@ msgid ""
 msgstr ""
 "Chaidh an t-arrtas Cross-Origin a bhacadh: Chan eil an Same Origin Policy a' "
 "ceadachadh leughadh a' ghoireis chèin aig %1$S. (Adhbhar: Tha CORS à comas)."
-
-#: CORSRequestFailed
-msgid ""
-"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
-"remote resource at %1$S. (Reason: CORS request failed)."
-msgstr ""
-"Chaidh an t-arrtas Cross-Origin a bhacadh: Chan eil an Same Origin Policy a' "
-"ceadachadh leughadh a' ghoireis chèin aig %1$S. (Adhbhar: Dh'fhàillig an t-"
-"iarrtas CORS)."
 
 #: CORSRequestNotHttp
 msgid ""
@@ -136,17 +127,137 @@ msgstr ""
 "remote resource at %1$S. (Reason: missing token '%2$S' in CORS header "
 "'Access-Control-Allow-Headers' from CORS preflight channel)."
 
-#. # LOCALIZATION NOTE: Do not translate "Strict-Transport-Security" or "HSTS"
-#: InvalidSTSHeaders
-msgid "The site specified an invalid Strict-Transport-Security header."
+#. # LOCALIZATION NOTE: Do not translate "Strict-Transport-Security", "HSTS", "max-age" or "includeSubDomains"
+#: STSUnknownError
+msgid ""
+"Strict-Transport-Security: An unknown error occurred processing the header "
+"specified by the site."
 msgstr ""
-"Shònraich an làrach seo bann-cinn Strict-Transport-Security nach eil "
-"dligheach."
 
-#. # LOCALIZATION NOTE: Do not translate "Public-Key-Pins or HPKP"
-#: InvalidPKPHeaders
-msgid "The site specified an invalid Public-Key-Pins header."
-msgstr "The site specified an invalid Public-Key-Pins header."
+#: STSUntrustworthyConnection
+msgid ""
+"Strict-Transport-Security: The connection to the site is untrustworthy, so "
+"the specified header was ignored."
+msgstr ""
+
+#: STSCouldNotParseHeader
+msgid ""
+"Strict-Transport-Security: The site specified a header that could not be "
+"parsed successfully."
+msgstr ""
+
+#: STSNoMaxAge
+msgid ""
+"Strict-Transport-Security: The site specified a header that did not include "
+"a 'max-age' directive."
+msgstr ""
+
+#: STSMultipleMaxAges
+msgid ""
+"Strict-Transport-Security: The site specified a header that included "
+"multiple 'max-age' directives."
+msgstr ""
+
+#: STSInvalidMaxAge
+msgid ""
+"Strict-Transport-Security: The site specified a header that included an "
+"invalid 'max-age' directive."
+msgstr ""
+
+#: STSMultipleIncludeSubdomains
+msgid ""
+"Strict-Transport-Security: The site specified a header that included "
+"multiple 'includeSubDomains' directives."
+msgstr ""
+
+#: STSInvalidIncludeSubdomains
+msgid ""
+"Strict-Transport-Security: The site specified a header that included an "
+"invalid 'includeSubDomains' directive."
+msgstr ""
+
+#: STSCouldNotSaveState
+msgid ""
+"Strict-Transport-Security: An error occurred noting the site as a Strict-"
+"Transport-Security host."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "Public-Key-Pins", "HPKP", "max-age" or "includeSubDomains"
+#: PKPUnknownError
+msgid ""
+"Public-Key-Pins: An unknown error occurred processing the header specified "
+"by the site."
+msgstr ""
+
+#: PKPUntrustworthyConnection
+msgid ""
+"Public-Key-Pins: The connection to the site is untrustworthy, so the "
+"specified header was ignored."
+msgstr ""
+
+#: PKPCouldNotParseHeader
+msgid ""
+"Public-Key-Pins: The site specified a header that could not be parsed "
+"successfully."
+msgstr ""
+
+#: PKPNoMaxAge
+msgid ""
+"Public-Key-Pins: The site specified a header that did not include a 'max-"
+"age' directive."
+msgstr ""
+
+#: PKPMultipleMaxAges
+msgid ""
+"Public-Key-Pins: The site specified a header that included multiple 'max-"
+"age' directives."
+msgstr ""
+
+#: PKPInvalidMaxAge
+msgid ""
+"Public-Key-Pins: The site specified a header that included an invalid 'max-"
+"age' directive."
+msgstr ""
+
+#: PKPMultipleIncludeSubdomains
+msgid ""
+"Public-Key-Pins: The site specified a header that included multiple "
+"'includeSubDomains' directives."
+msgstr ""
+
+#: PKPInvalidIncludeSubdomains
+msgid ""
+"Public-Key-Pins: The site specified a header that included an invalid "
+"'includeSubDomains' directive."
+msgstr ""
+
+#: PKPInvalidPin
+msgid ""
+"Public-Key-Pins: The site specified a header that included an invalid pin."
+msgstr ""
+
+#: PKPMultipleReportURIs
+msgid ""
+"Public-Key-Pins: The site specified a header that included multiple 'report-"
+"uri' directives."
+msgstr ""
+
+#: PKPPinsetDoesNotMatch
+msgid ""
+"Public-Key-Pins: The site specified a header that did not include a matching "
+"pin."
+msgstr ""
+
+#: PKPNoBackupPin
+msgid ""
+"Public-Key-Pins: The site specified a header that did not include a backup "
+"pin."
+msgstr ""
+
+#: PKPCouldNotSaveState
+msgid ""
+"Public-Key-Pins: An error occurred noting the site as a Public-Key-Pins host."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "SHA-1"
 #: SHA1Sig
@@ -225,6 +336,22 @@ msgid ""
 msgstr ""
 "Tha an làrach seo a' cleachdadh na sifire RC4 airson crioptachadh nach eil "
 "tèarainte tuilleadh 's nach molar tuilleadh."
+
+#~ msgid ""
+#~ "Cross-Origin Request Blocked: The Same Origin Policy disallows reading "
+#~ "the remote resource at %1$S. (Reason: CORS request failed)."
+#~ msgstr ""
+#~ "Chaidh an t-arrtas Cross-Origin a bhacadh: Chan eil an Same Origin Policy "
+#~ "a' ceadachadh leughadh a' ghoireis chèin aig %1$S. (Adhbhar: Dh'fhàillig "
+#~ "an t-iarrtas CORS)."
+
+#~ msgid "The site specified an invalid Strict-Transport-Security header."
+#~ msgstr ""
+#~ "Shònraich an làrach seo bann-cinn Strict-Transport-Security nach eil "
+#~ "dligheach."
+
+#~ msgid "The site specified an invalid Public-Key-Pins header."
+#~ msgstr "The site specified an invalid Public-Key-Pins header."
 
 #~ msgid ""
 #~ "Cross-Origin Request Blocked: The Same Origin Policy disallows reading "
