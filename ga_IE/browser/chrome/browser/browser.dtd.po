@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-30 17:16+0000\n"
+"POT-Creation-Date: 2015-08-11 11:38+0000\n"
 "PO-Revision-Date: 2015-07-02 04:00+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1435809611.000000\n"
@@ -241,6 +241,10 @@ msgstr "Taispeáin G&ach Cluaisín"
 msgid "Sign in to &syncBrand.shortName.label;"
 msgstr "Logáil isteach i &syncBrand.shortName.label;"
 
+#: fxaSignedIn.tooltip
+msgid "Open &syncBrand.shortName.label; preferences"
+msgstr ""
+
 #: fxaSignInError.label
 msgid "Reconnect to &syncBrand.shortName.label;"
 msgstr "Athcheangail le &syncBrand.shortName.label;"
@@ -285,14 +289,6 @@ msgstr "Folaig&h Barraí Uirlisí"
 #: fullScreenExit.label fullScreenExit.accesskey
 msgid "Exit &Full Screen Mode"
 msgstr "Fág Mód &Lánscáileáin"
-
-#: fullscreenAllowButton.label
-msgid "Allow"
-msgstr "Ceadaigh"
-
-#: fullscreenExitButton.label
-msgid "Deny"
-msgstr "Diúltaigh"
 
 #: fullscreenExitHint2.value
 msgid "Press ESC at any time to exit."
@@ -964,6 +960,23 @@ msgstr "m"
 msgid "Switch to tab:"
 msgstr "Téigh go cluaisín:"
 
+#: urlbar.searchSuggestionsNotification.question
+msgid "Would you like to improve your search experience with suggestions?"
+msgstr ""
+
+#: urlbar.searchSuggestionsNotification.learnMore
+#, fuzzy
+msgid "Learn more…"
+msgstr "&Tuilleadh eolais…"
+
+#: urlbar.searchSuggestionsNotification.disable
+msgid "No"
+msgstr "Níl"
+
+#: urlbar.searchSuggestionsNotification.enable
+msgid "Yes"
+msgstr "Tá"
+
 #. Comment duplicated from browser-sets.inc:
 #. Search Command Key Logic works like this:
 #. Unix: Ctrl+J (0.8, 0.9 support)
@@ -991,6 +1004,17 @@ msgstr "e"
 msgctxt "searchFocusUnix.commandkey"
 msgid "j"
 msgstr "j"
+
+#. LOCALIZATION NOTE (contentSearchInput.label, contentSearchSubmit.label):
+#. These are set as the aria-label attribute for the search input box and
+#. submit button in the in-content search UI, to be used by screen readers.
+#: contentSearchInput.label
+msgid "Search query"
+msgstr ""
+
+#: contentSearchSubmit.label
+msgid "Submit search"
+msgstr ""
 
 #. LOCALIZATION NOTE (searchFor.label, searchWith.label):
 #. These two strings are used to build the header above the list of one-click
@@ -1425,6 +1449,11 @@ msgstr "&Dún"
 msgid "W"
 msgstr "W"
 
+#: toggleMuteCmd.key
+msgctxt "toggleMuteCmd.key"
+msgid "M"
+msgstr ""
+
 #: pageStyleMenu.label pageStyleMenu.accesskey
 msgid "Page St&yle"
 msgstr "Stíl &Leathanaigh"
@@ -1519,7 +1548,7 @@ msgid "Cancel"
 msgstr "Cealaigh"
 
 #: editBookmark.removeBookmark.accessKey
-msgctxt "editBookmark.removeBookmark.accessKey"
+#, fuzzy
 msgid "R"
 msgstr "R"
 
@@ -1530,6 +1559,10 @@ msgstr "Ceangal Slán"
 #: identity.connectionNotSecure
 msgid "Connection is Not Secure"
 msgstr "Ní Ceangal Slán é seo"
+
+#: identity.connectionFile
+msgid "This page is stored on your computer."
+msgstr ""
 
 #: identity.connectionVerified
 msgid ""
@@ -1542,6 +1575,94 @@ msgstr ""
 #: identity.connectionInternal
 msgid "This is a secure &brandShortName; page."
 msgstr "Is leathanach slán &brandShortName; é seo."
+
+#. Strings for connection state warnings.
+#: identity.activeBlocked
+msgctxt "identity.activeBlocked"
+msgid "&brandShortName; has blocked parts of this page that are not secure."
+msgstr ""
+
+#: identity.passiveLoaded
+msgid "Parts of this page are not secure (such as images)."
+msgstr ""
+
+#: identity.activeLoaded
+msgid "You have disabled protection on this page."
+msgstr ""
+
+#: identity.weakEncryption
+msgid "This page uses weak encryption."
+msgstr ""
+
+#. Strings for connection state warnings in the subview.
+#: identity.description.insecure
+msgid ""
+"Your connection to this site is not private. Information you submit could be "
+"viewed by others (like passwords, messages, credit cards, etc.)."
+msgstr ""
+
+#: identity.description.weakCipher
+msgid ""
+"Your connection to this website uses weak encryption and is not private."
+msgstr ""
+
+#: identity.description.weakCipher2
+msgid ""
+"Other people can view your information or modify the website's behavior."
+msgstr ""
+
+#: identity.description.activeBlocked
+msgctxt "identity.description.activeBlocked"
+msgid "&brandShortName; has blocked parts of this page that are not secure."
+msgstr ""
+
+#: identity.description.passiveLoaded
+msgid ""
+"Your connection is not private and information you share with the site could "
+"be viewed by others."
+msgstr ""
+
+#: identity.description.passiveLoaded2
+msgid "This website contains content that is not secure (such as images)."
+msgstr ""
+
+#: identity.description.passiveLoaded3
+msgid ""
+"Although &brandShortName; has blocked some content, there is still content "
+"on the page that is not secure (such as images)."
+msgstr ""
+
+#: identity.description.activeLoaded
+msgid ""
+"This website contains content that is not secure (such as scripts) and your "
+"connection to it is not private."
+msgstr ""
+
+#: identity.description.activeLoaded2
+msgid ""
+"Information you share with this site could be viewed by others (like "
+"passwords, messages, credit cards, etc.)."
+msgstr ""
+
+#: identity.enableMixedContentBlocking.label
+#: identity.enableMixedContentBlocking.accesskey
+#, fuzzy
+msgctxt ""
+"identity.enableMixedContentBlocking.label identity."
+"enableMixedContentBlocking.accesskey"
+msgid "&Enable protection"
+msgstr "&Cumasaigh cosaint"
+
+#: identity.disableMixedContentBlocking.label
+#: identity.disableMixedContentBlocking.accesskey
+msgid "&Disable protection for now"
+msgstr "&Díchumasaigh cosaint don am i láthair"
+
+#: identity.learnMore
+#, fuzzy
+msgctxt "identity.learnMore"
+msgid "Learn More"
+msgstr "Tuilleadh Eolais"
 
 #: identity.moreInfoLinkText2
 msgid "More Information"
@@ -1733,47 +1854,56 @@ msgstr "&Ceamara le comhroinnt:"
 msgid "&Microphone to share:"
 msgstr "&Micreafón le comhroinnt:"
 
+#: getUserMedia.audioCapture.label
+msgid "Audio from the tab will be shared."
+msgstr ""
+
 #: getUserMedia.allWindowsShared.message
 msgid "All visible windows on your screen will be shared."
 msgstr "Comhroinnfear gach fuinneog infheicthe ar do scáileáin."
 
-#. Bad Content Blocker Doorhanger Notification
-#: badContentBlocked.moreinfo
-msgid "Most websites will work properly even if content is blocked."
+#: trackingProtection.title
+msgid "Tracking Protection"
 msgstr ""
-"Den chuid is mó, feidhmeoidh suímh Ghréasáin mar is ceart fiú má chuireann "
-"tú cosc ar ábhar."
 
-#: mixedContentBlocked2.message
-msgid "Insecure content"
-msgstr "Ábhar neamhshlán"
+#: trackingProtection.detectedBlocked3
+msgid ""
+"&brandShortName; is blocking parts of the page that may track your browsing."
+msgstr ""
 
-#: mixedContentBlocked2.moreinfo
-msgid "Some unencrypted elements on this website have been blocked."
-msgstr "Cuireadh cosc ar roinnt eilimintí gan criptiú ar an suíomh seo."
+#: trackingProtection.detectedNotBlocked3
+msgid ""
+"This site includes elements that may track your browsing. You have disabled "
+"protection."
+msgstr ""
 
-#: mixedContentBlocked2.learnMore
-msgctxt "mixedContentBlocked2.learnMore"
-msgid "Learn More"
-msgstr "Tuilleadh Eolais"
+#: trackingProtection.notDetected3
+msgid "No tracking elements detected on this page."
+msgstr ""
 
-#: mixedContentBlocked2.options
-msgctxt "mixedContentBlocked2.options"
-msgid "Options"
-msgstr "Roghanna"
+#. LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
+#. The associated button with this label and accesskey is only shown when opening the control
+#. center while looking at a site with trackers in NON-private browsing mode.
+#: trackingProtection.unblock.label trackingProtection.unblock.accesskey
+#, fuzzy
+msgctxt "trackingProtection.unblock.label trackingProtection.unblock.accesskey"
+msgid "&Disable protection for this site"
+msgstr "&Díchumasaigh cosaint don suíomh seo"
 
-#: mixedContentBlocked2.unblock.label mixedContentBlocked2.unblock.accesskey
-msgid "&Disable protection for now"
-msgstr "&Díchumasaigh cosaint don am i láthair"
+#. LOCALIZATION NOTE (trackingProtection.unblockPrivate.label, trackingProtection.unblockPrivate.accesskey):
+#. The associated button with this label and accesskey is only shown when opening the control
+#. center while looking at a site with trackers in PRIVATE browsing mode.
+#: trackingProtection.unblockPrivate.label
+#: trackingProtection.unblockPrivate.accesskey
+#, fuzzy
+msgid "&Disable protection for this session"
+msgstr "&Díchumasaigh cosaint don suíomh seo"
 
-#: mixedContentBlocked2.block.label mixedContentBlocked2.block.accesskey
-msgctxt "mixedContentBlocked2.block.label mixedContentBlocked2.block.accesskey"
+#: trackingProtection.block2.label trackingProtection.block2.accesskey
+#, fuzzy
+msgctxt "trackingProtection.block2.label trackingProtection.block2.accesskey"
 msgid "&Enable protection"
 msgstr "&Cumasaigh cosaint"
-
-#: mixedContentBlocked2.disabled.message
-msgid "Protection is disabled"
-msgstr "Tá cosaint díchumasaithe"
 
 #: trackingContentBlocked.message
 msgid "Tracking"
@@ -1791,12 +1921,16 @@ msgid "Learn More"
 msgstr "Tuilleadh Eolais"
 
 #: trackingContentBlocked.options
-msgctxt "trackingContentBlocked.options"
+#, fuzzy
 msgid "Options"
 msgstr "Roghanna"
 
 #: trackingContentBlocked.unblock2.label
 #: trackingContentBlocked.unblock2.accesskey
+#, fuzzy
+msgctxt ""
+"trackingContentBlocked.unblock2.label trackingContentBlocked.unblock2."
+"accesskey"
 msgid "&Disable protection for this site"
 msgstr "&Díchumasaigh cosaint don suíomh seo"
 
@@ -1945,46 +2079,6 @@ msgstr "&Níl anois"
 msgid "&Don't ask me again"
 msgstr "&Ná fiafraigh díom arís"
 
-#: readingList.label
-msgid "Reading List"
-msgstr "Liosta Léitheoireachta"
-
-#: readingList.sidebar.commandKey
-msgctxt "readingList.sidebar.commandKey"
-msgid "R"
-msgstr "R"
-
-#: readingList.showSidebar.label
-msgid "Show Reading List Sidebar"
-msgstr "Taispeáin an Liosta Léitheoireachta i mBarra Taoibh"
-
-#. Pre-landed string for bug 1124153
-#: readingList.sidebar.showMore.label
-msgid "Show more…"
-msgstr "Tuilleadh…"
-
-#. Pre-landed string for bug 1133662
-#: readingList.sidebar.emptyText
-msgid ""
-"Add articles to your Reading List to save them for later and find them "
-"easily when you need them."
-msgstr ""
-"Cuir altanna le do Liosta Léitheoireachta chun iad a shábháil agus chun "
-"teacht orthu ar ball gan stró."
-
-#: readingList.sidebar.delete.tooltip
-msgid "Remove this from your Reading List"
-msgstr "Bain de do Liosta Léitheoireachta é seo"
-
-#. Pre-landed strings for bug 1123519
-#: readingList.sidebar.add.label
-msgid "Add to Reading List"
-msgstr "Cuir le do Liosta Léitheoireachta"
-
-#: readingList.sidebar.add.tooltip
-msgid "Add this page to your Reading List"
-msgstr "Cuir an leathanach seo le do Liosta Léitheoireachta"
-
 #. LOCALIZATION NOTE (saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label): Pocket is a brand name
 #: saveToPocketCmd.label saveToPocketCmd.accesskey
 msgid "Save Page to Poc&ket"
@@ -1997,6 +2091,59 @@ msgstr "Sábháil an Nasc i bP&ocket"
 #: pocketMenuitem.label
 msgid "View Pocket List"
 msgstr "Féach ar an Liosta Pocket"
+
+#~ msgid "Allow"
+#~ msgstr "Ceadaigh"
+
+#~ msgid "Deny"
+#~ msgstr "Diúltaigh"
+
+#~ msgid "Most websites will work properly even if content is blocked."
+#~ msgstr ""
+#~ "Den chuid is mó, feidhmeoidh suímh Ghréasáin mar is ceart fiú má "
+#~ "chuireann tú cosc ar ábhar."
+
+#~ msgid "Insecure content"
+#~ msgstr "Ábhar neamhshlán"
+
+#~ msgid "Some unencrypted elements on this website have been blocked."
+#~ msgstr "Cuireadh cosc ar roinnt eilimintí gan criptiú ar an suíomh seo."
+
+#~ msgid "Protection is disabled"
+#~ msgstr "Tá cosaint díchumasaithe"
+
+#~ msgctxt "trackingContentBlocked.options"
+#~ msgid "Options"
+#~ msgstr "Roghanna"
+
+#~ msgid "Reading List"
+#~ msgstr "Liosta Léitheoireachta"
+
+#~ msgctxt "readingList.sidebar.commandKey"
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "Show Reading List Sidebar"
+#~ msgstr "Taispeáin an Liosta Léitheoireachta i mBarra Taoibh"
+
+#~ msgid "Show more…"
+#~ msgstr "Tuilleadh…"
+
+#~ msgid ""
+#~ "Add articles to your Reading List to save them for later and find them "
+#~ "easily when you need them."
+#~ msgstr ""
+#~ "Cuir altanna le do Liosta Léitheoireachta chun iad a shábháil agus chun "
+#~ "teacht orthu ar ball gan stró."
+
+#~ msgid "Remove this from your Reading List"
+#~ msgstr "Bain de do Liosta Léitheoireachta é seo"
+
+#~ msgid "Add to Reading List"
+#~ msgstr "Cuir le do Liosta Léitheoireachta"
+
+#~ msgid "Add this page to your Reading List"
+#~ msgstr "Cuir an leathanach seo le do Liosta Léitheoireachta"
 
 #~ msgid "This website does not supply identity information."
 #~ msgstr "Ní sholáthraíonn an suíomh seo faisnéis maidir lena aitheantas."

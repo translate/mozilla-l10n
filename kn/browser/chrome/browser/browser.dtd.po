@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-30 17:16+0000\n"
+"POT-Creation-Date: 2015-08-11 11:38+0000\n"
 "PO-Revision-Date: 2015-08-09 18:46+0000\n"
 "Last-Translator: Omshivaprakash H L <omshivaprakash@gmail.com>\n"
 "Language-Team: Kannada <kde-i18n-doc@kde.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1439145993.000000\n"
@@ -230,6 +230,10 @@ msgstr "ಎಲ್ಲಾ ಟ್ಯಾಬ್‌ಗಳನ್ನು ತೋರಿಸ�
 msgid "Sign in to &syncBrand.shortName.label;"
 msgstr "&syncBrand.shortName.label; ಗೆ ಸೈನ್-ಇನ್ ಆಗು"
 
+#: fxaSignedIn.tooltip
+msgid "Open &syncBrand.shortName.label; preferences"
+msgstr ""
+
 #: fxaSignInError.label
 msgid "Reconnect to &syncBrand.shortName.label;"
 msgstr "&syncBrand.shortName.label; ಗೆ ಮತ್ತೆ ಸಂಪರ್ಕ ಹೊಂದು"
@@ -274,14 +278,6 @@ msgstr "ಉಪಕರಣಪಟ್ಟಿಗಳನ್ನು ಅಡಗಿಸು"
 #: fullScreenExit.label fullScreenExit.accesskey
 msgid "Exit &Full Screen Mode"
 msgstr "ಪೂರ್ಣತೆರೆಯ ವಿಧಾನದಿಂದ ಹೊರನಡೆ"
-
-#: fullscreenAllowButton.label
-msgid "Allow"
-msgstr "ಅನುಮತಿಸು"
-
-#: fullscreenExitButton.label
-msgid "Deny"
-msgstr "ನಿರಾಕರಿಸು"
 
 #: fullscreenExitHint2.value
 msgid "Press ESC at any time to exit."
@@ -926,6 +922,23 @@ msgstr "d"
 msgid "Switch to tab:"
 msgstr "ಟ್ಯಾಬ್‌ಗೆ ಬದಲಾಯಿಸು:"
 
+#: urlbar.searchSuggestionsNotification.question
+msgid "Would you like to improve your search experience with suggestions?"
+msgstr ""
+
+#: urlbar.searchSuggestionsNotification.learnMore
+#, fuzzy
+msgid "Learn more…"
+msgstr "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ..."
+
+#: urlbar.searchSuggestionsNotification.disable
+msgid "No"
+msgstr "ಇಲ್ಲ"
+
+#: urlbar.searchSuggestionsNotification.enable
+msgid "Yes"
+msgstr "ಹೌದು"
+
 #. Comment duplicated from browser-sets.inc:
 #. Search Command Key Logic works like this:
 #. Unix: Ctrl+J (0.8, 0.9 support)
@@ -953,6 +966,17 @@ msgstr "e"
 msgctxt "searchFocusUnix.commandkey"
 msgid "j"
 msgstr "j"
+
+#. LOCALIZATION NOTE (contentSearchInput.label, contentSearchSubmit.label):
+#. These are set as the aria-label attribute for the search input box and
+#. submit button in the in-content search UI, to be used by screen readers.
+#: contentSearchInput.label
+msgid "Search query"
+msgstr ""
+
+#: contentSearchSubmit.label
+msgid "Submit search"
+msgstr ""
 
 #. LOCALIZATION NOTE (searchFor.label, searchWith.label):
 #. These two strings are used to build the header above the list of one-click
@@ -1376,6 +1400,11 @@ msgstr "ಮುಚ್ಚು"
 msgid "W"
 msgstr "W"
 
+#: toggleMuteCmd.key
+msgctxt "toggleMuteCmd.key"
+msgid "M"
+msgstr ""
+
 #: pageStyleMenu.label pageStyleMenu.accesskey
 msgid "Page St&yle"
 msgstr "ಪುಟದ ಶೈಲಿ"
@@ -1465,7 +1494,7 @@ msgid "Cancel"
 msgstr "ರದ್ದುಗೊಳಿಸು"
 
 #: editBookmark.removeBookmark.accessKey
-msgctxt "editBookmark.removeBookmark.accessKey"
+#, fuzzy
 msgid "R"
 msgstr "R"
 
@@ -1476,6 +1505,10 @@ msgstr "ಸುರಕ್ಷಿತ ಸಂಪರ್ಕ"
 #: identity.connectionNotSecure
 msgid "Connection is Not Secure"
 msgstr "ಸಂಪರ್ಕವು ಸುರಕ್ಷಿತವಾಗಿಲ್ಲ"
+
+#: identity.connectionFile
+msgid "This page is stored on your computer."
+msgstr ""
 
 #: identity.connectionVerified
 msgid ""
@@ -1488,6 +1521,94 @@ msgstr ""
 #: identity.connectionInternal
 msgid "This is a secure &brandShortName; page."
 msgstr "ಇದು ಸುರಕ್ಷಿತ &brandShortName; ಪುಟ"
+
+#. Strings for connection state warnings.
+#: identity.activeBlocked
+msgctxt "identity.activeBlocked"
+msgid "&brandShortName; has blocked parts of this page that are not secure."
+msgstr ""
+
+#: identity.passiveLoaded
+msgid "Parts of this page are not secure (such as images)."
+msgstr ""
+
+#: identity.activeLoaded
+msgid "You have disabled protection on this page."
+msgstr ""
+
+#: identity.weakEncryption
+msgid "This page uses weak encryption."
+msgstr ""
+
+#. Strings for connection state warnings in the subview.
+#: identity.description.insecure
+msgid ""
+"Your connection to this site is not private. Information you submit could be "
+"viewed by others (like passwords, messages, credit cards, etc.)."
+msgstr ""
+
+#: identity.description.weakCipher
+msgid ""
+"Your connection to this website uses weak encryption and is not private."
+msgstr ""
+
+#: identity.description.weakCipher2
+msgid ""
+"Other people can view your information or modify the website's behavior."
+msgstr ""
+
+#: identity.description.activeBlocked
+msgctxt "identity.description.activeBlocked"
+msgid "&brandShortName; has blocked parts of this page that are not secure."
+msgstr ""
+
+#: identity.description.passiveLoaded
+msgid ""
+"Your connection is not private and information you share with the site could "
+"be viewed by others."
+msgstr ""
+
+#: identity.description.passiveLoaded2
+msgid "This website contains content that is not secure (such as images)."
+msgstr ""
+
+#: identity.description.passiveLoaded3
+msgid ""
+"Although &brandShortName; has blocked some content, there is still content "
+"on the page that is not secure (such as images)."
+msgstr ""
+
+#: identity.description.activeLoaded
+msgid ""
+"This website contains content that is not secure (such as scripts) and your "
+"connection to it is not private."
+msgstr ""
+
+#: identity.description.activeLoaded2
+msgid ""
+"Information you share with this site could be viewed by others (like "
+"passwords, messages, credit cards, etc.)."
+msgstr ""
+
+#: identity.enableMixedContentBlocking.label
+#: identity.enableMixedContentBlocking.accesskey
+#, fuzzy
+msgctxt ""
+"identity.enableMixedContentBlocking.label identity."
+"enableMixedContentBlocking.accesskey"
+msgid "&Enable protection"
+msgstr "ಸಂರಕ್ಷಣೆಯನ್ನು &Enable"
+
+#: identity.disableMixedContentBlocking.label
+#: identity.disableMixedContentBlocking.accesskey
+msgid "&Disable protection for now"
+msgstr "ಸಂರಕ್ಷಣೆಯನ್ನು ಸಧ್ಯಕ್ಕೆ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸು (&D)"
+
+#: identity.learnMore
+#, fuzzy
+msgctxt "identity.learnMore"
+msgid "Learn More"
+msgstr "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
 
 #: identity.moreInfoLinkText2
 msgid "More Information"
@@ -1676,45 +1797,56 @@ msgstr "ಹಂಚಬೇಕಿರುವ ಕ್ಯಾಮೆರಾ:"
 msgid "&Microphone to share:"
 msgstr "ಹಂಚಲು ಮೈಕ್ರೊಫೋನ್:"
 
+#: getUserMedia.audioCapture.label
+msgid "Audio from the tab will be shared."
+msgstr ""
+
 #: getUserMedia.allWindowsShared.message
 msgid "All visible windows on your screen will be shared."
 msgstr "ನಿಮ್ಮ ತೆರೆಯಲ್ಲಿರುವ ಎಲ್ಲಾ ಗೋಚರಿಸುವ ಕಿಟಕಿಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಲಾಗುತ್ತದೆ."
 
-#. Bad Content Blocker Doorhanger Notification
-#: badContentBlocked.moreinfo
-msgid "Most websites will work properly even if content is blocked."
-msgstr "ವಿಷಯವನ್ನು ನಿರ್ಬಂಧಿಸಿದ್ದರೂ ಸಹ ಹೆಚ್ಚಿನ ಜಾಲತಾಣಗಳು ಸರಿಯಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತವೆ."
+#: trackingProtection.title
+msgid "Tracking Protection"
+msgstr ""
 
-#: mixedContentBlocked2.message
-msgid "Insecure content"
-msgstr "ಅಸುರಕ್ಷಿತ ವಿಷಯ"
+#: trackingProtection.detectedBlocked3
+msgid ""
+"&brandShortName; is blocking parts of the page that may track your browsing."
+msgstr ""
 
-#: mixedContentBlocked2.moreinfo
-msgid "Some unencrypted elements on this website have been blocked."
-msgstr "ಈ ಜಾಲತಾಣದಲ್ಲಿ ಎನ್ಕ್ರಿಪ್ಟ್ ಆಗಿರದ ಕೆಲವು ಅಂಶಗಳನ್ನು ತಡೆ ಹಿಡಿಯಲಾಗಿದೆ."
+#: trackingProtection.detectedNotBlocked3
+msgid ""
+"This site includes elements that may track your browsing. You have disabled "
+"protection."
+msgstr ""
 
-#: mixedContentBlocked2.learnMore
-msgctxt "mixedContentBlocked2.learnMore"
-msgid "Learn More"
-msgstr "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
+#: trackingProtection.notDetected3
+msgid "No tracking elements detected on this page."
+msgstr ""
 
-#: mixedContentBlocked2.options
-msgctxt "mixedContentBlocked2.options"
-msgid "Options"
-msgstr "ಆಯ್ಕೆಗಳು"
+#. LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
+#. The associated button with this label and accesskey is only shown when opening the control
+#. center while looking at a site with trackers in NON-private browsing mode.
+#: trackingProtection.unblock.label trackingProtection.unblock.accesskey
+#, fuzzy
+msgctxt "trackingProtection.unblock.label trackingProtection.unblock.accesskey"
+msgid "&Disable protection for this site"
+msgstr "ಈ ತಾಣದ ಸಂರಕ್ಷಣೆಯನ್ನು &Disable"
 
-#: mixedContentBlocked2.unblock.label mixedContentBlocked2.unblock.accesskey
-msgid "&Disable protection for now"
-msgstr "ಸಂರಕ್ಷಣೆಯನ್ನು ಸಧ್ಯಕ್ಕೆ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸು (&D)"
+#. LOCALIZATION NOTE (trackingProtection.unblockPrivate.label, trackingProtection.unblockPrivate.accesskey):
+#. The associated button with this label and accesskey is only shown when opening the control
+#. center while looking at a site with trackers in PRIVATE browsing mode.
+#: trackingProtection.unblockPrivate.label
+#: trackingProtection.unblockPrivate.accesskey
+#, fuzzy
+msgid "&Disable protection for this session"
+msgstr "ಈ ತಾಣದ ಸಂರಕ್ಷಣೆಯನ್ನು &Disable"
 
-#: mixedContentBlocked2.block.label mixedContentBlocked2.block.accesskey
-msgctxt "mixedContentBlocked2.block.label mixedContentBlocked2.block.accesskey"
+#: trackingProtection.block2.label trackingProtection.block2.accesskey
+#, fuzzy
+msgctxt "trackingProtection.block2.label trackingProtection.block2.accesskey"
 msgid "&Enable protection"
 msgstr "ಸಂರಕ್ಷಣೆಯನ್ನು &Enable"
-
-#: mixedContentBlocked2.disabled.message
-msgid "Protection is disabled"
-msgstr "ಸಂರಕ್ಷಣೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
 
 #: trackingContentBlocked.message
 msgid "Tracking"
@@ -1732,12 +1864,16 @@ msgid "Learn More"
 msgstr "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
 
 #: trackingContentBlocked.options
-msgctxt "trackingContentBlocked.options"
+#, fuzzy
 msgid "Options"
 msgstr "ಆಯ್ಕೆಗಳು"
 
 #: trackingContentBlocked.unblock2.label
 #: trackingContentBlocked.unblock2.accesskey
+#, fuzzy
+msgctxt ""
+"trackingContentBlocked.unblock2.label trackingContentBlocked.unblock2."
+"accesskey"
 msgid "&Disable protection for this site"
 msgstr "ಈ ತಾಣದ ಸಂರಕ್ಷಣೆಯನ್ನು &Disable"
 
@@ -1886,46 +2022,6 @@ msgstr "&Not ಈಗ"
 msgid "&Don't ask me again"
 msgstr "ಮತ್ತೊಮ್ಮೆ ನನ್ನನ್ನು ಕೇಳಬೇಡ (&D)"
 
-#: readingList.label
-msgid "Reading List"
-msgstr "ಓದುಬೇಕಿರುವ ಪಟ್ಟಿ"
-
-#: readingList.sidebar.commandKey
-msgctxt "readingList.sidebar.commandKey"
-msgid "R"
-msgstr "R"
-
-#: readingList.showSidebar.label
-msgid "Show Reading List Sidebar"
-msgstr "ಓದಬೇಕಿರುವ ಪಟ್ಟಿಯ ಬದಿಪಟ್ಟಿ ತೋರಿಸು"
-
-#. Pre-landed string for bug 1124153
-#: readingList.sidebar.showMore.label
-msgid "Show more…"
-msgstr "ಇನ್ನಷ್ಟು ತೋರಿಸು…"
-
-#. Pre-landed string for bug 1133662
-#: readingList.sidebar.emptyText
-msgid ""
-"Add articles to your Reading List to save them for later and find them "
-"easily when you need them."
-msgstr ""
-"ಲೇಖನಗಳನ್ನು ನಿಮ್ಮ ಓದುವ ಪಟ್ಟಿಗೆ ಮುಂದೆ ಓದುವ ಸಲುವಾಗಿ ಉಳಿಸಿ ಮತ್ತು ಅವುಗಳನ್ನು ಬೇಕಾದಾಗ "
-"ಸುಲಭವಾಗಿ ಹುಡುಕಿ."
-
-#: readingList.sidebar.delete.tooltip
-msgid "Remove this from your Reading List"
-msgstr "ಇದನ್ನು ನಿಮ್ಮ ಓದುವ ಪಟ್ಟಿಯಿಂದ ತೆಗೆಯಿರಿ"
-
-#. Pre-landed strings for bug 1123519
-#: readingList.sidebar.add.label
-msgid "Add to Reading List"
-msgstr "ಓದುವ ಪಟ್ಟಿಗೆ ಸೇರಿಸು"
-
-#: readingList.sidebar.add.tooltip
-msgid "Add this page to your Reading List"
-msgstr "ಈ ಪುಟವನ್ನು ನಿಮ್ಮ ಓದುವ ಪಟ್ಟಿಗೆ ಸೇರಿಸು"
-
 #. LOCALIZATION NOTE (saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label): Pocket is a brand name
 #: saveToPocketCmd.label saveToPocketCmd.accesskey
 msgid "Save Page to Poc&ket"
@@ -1938,6 +2034,57 @@ msgstr "ಕೊಂಡಿಯನ್ನು ಪಾಕೆಟ್‌ಗೆ ಉಳಿಸ�
 #: pocketMenuitem.label
 msgid "View Pocket List"
 msgstr "ಪಾಕೆಟ್ ಪಟ್ಟಿಯನ್ನು ನೋಡಿ"
+
+#~ msgid "Allow"
+#~ msgstr "ಅನುಮತಿಸು"
+
+#~ msgid "Deny"
+#~ msgstr "ನಿರಾಕರಿಸು"
+
+#~ msgid "Most websites will work properly even if content is blocked."
+#~ msgstr "ವಿಷಯವನ್ನು ನಿರ್ಬಂಧಿಸಿದ್ದರೂ ಸಹ ಹೆಚ್ಚಿನ ಜಾಲತಾಣಗಳು ಸರಿಯಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತವೆ."
+
+#~ msgid "Insecure content"
+#~ msgstr "ಅಸುರಕ್ಷಿತ ವಿಷಯ"
+
+#~ msgid "Some unencrypted elements on this website have been blocked."
+#~ msgstr "ಈ ಜಾಲತಾಣದಲ್ಲಿ ಎನ್ಕ್ರಿಪ್ಟ್ ಆಗಿರದ ಕೆಲವು ಅಂಶಗಳನ್ನು ತಡೆ ಹಿಡಿಯಲಾಗಿದೆ."
+
+#~ msgid "Protection is disabled"
+#~ msgstr "ಸಂರಕ್ಷಣೆಯನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ"
+
+#~ msgctxt "trackingContentBlocked.options"
+#~ msgid "Options"
+#~ msgstr "ಆಯ್ಕೆಗಳು"
+
+#~ msgid "Reading List"
+#~ msgstr "ಓದುಬೇಕಿರುವ ಪಟ್ಟಿ"
+
+#~ msgctxt "readingList.sidebar.commandKey"
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "Show Reading List Sidebar"
+#~ msgstr "ಓದಬೇಕಿರುವ ಪಟ್ಟಿಯ ಬದಿಪಟ್ಟಿ ತೋರಿಸು"
+
+#~ msgid "Show more…"
+#~ msgstr "ಇನ್ನಷ್ಟು ತೋರಿಸು…"
+
+#~ msgid ""
+#~ "Add articles to your Reading List to save them for later and find them "
+#~ "easily when you need them."
+#~ msgstr ""
+#~ "ಲೇಖನಗಳನ್ನು ನಿಮ್ಮ ಓದುವ ಪಟ್ಟಿಗೆ ಮುಂದೆ ಓದುವ ಸಲುವಾಗಿ ಉಳಿಸಿ ಮತ್ತು ಅವುಗಳನ್ನು ಬೇಕಾದಾಗ "
+#~ "ಸುಲಭವಾಗಿ ಹುಡುಕಿ."
+
+#~ msgid "Remove this from your Reading List"
+#~ msgstr "ಇದನ್ನು ನಿಮ್ಮ ಓದುವ ಪಟ್ಟಿಯಿಂದ ತೆಗೆಯಿರಿ"
+
+#~ msgid "Add to Reading List"
+#~ msgstr "ಓದುವ ಪಟ್ಟಿಗೆ ಸೇರಿಸು"
+
+#~ msgid "Add this page to your Reading List"
+#~ msgstr "ಈ ಪುಟವನ್ನು ನಿಮ್ಮ ಓದುವ ಪಟ್ಟಿಗೆ ಸೇರಿಸು"
 
 #~ msgid "This website does not supply identity information."
 #~ msgstr "ಈ ಜಾಲತಾಣವು ತನ್ನು ಗುರುತು ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿಲ್ಲ."

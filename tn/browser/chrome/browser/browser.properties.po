@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-30 17:16+0000\n"
+"POT-Creation-Date: 2015-08-11 11:38+0000\n"
 "PO-Revision-Date: 2015-08-06 13:36+0000\n"
 "Last-Translator: Olebile Ditshweu <olditshweu@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1438868180.000000\n"
@@ -833,28 +833,38 @@ msgstr "O tsentse seemo tirafalo thulano ya khoutu tshireletso mo saeteng e."
 msgid "%S, %S"
 msgstr "%S, %S"
 
-#: identity.broken_loaded
-msgid ""
-"The connection to this website is not fully secure because it contains "
-"unencrypted elements (such as images) or the encryption is not strong enough."
-msgstr ""
-"Kgolagano mo webosaeteng e ga e sireletsega mo go tletseng ka gore e tshotse "
-"ditlhakakaelo tse di sa sireletsegang (jaaka ditshwantsho) kgotsa "
-"mokgwatshireletso ga o a nonofa mo go lekaneng."
-
-#: identity.mixed_active_loaded2
-msgid ""
-"This website contains interactive content that isn't encrypted (such as "
-"scripts). Other people can view your information or modify the website's "
-"behavior."
-msgstr ""
-"Webosaete e tshotse diteng ya tirisano e sa dirwang ka mokgwatshireletso "
-"(jaaka disekeripiti). Batho bangwe baka leba tshedimosetso ya gago kgotsa ba "
-"fetola maitsholo a webosaete."
-
 #: identity.unknown.tooltip
 msgid "This website does not supply identity information."
 msgstr "Webosaete e ga e neele tshedimosetso boitshupo."
+
+#: trackingProtection.intro.title
+msgid "How Tracking Protection works"
+msgstr ""
+
+#. # LOCALIZATION NOTE (trackingProtection.intro.description): %S is brandShortName
+#: trackingProtection.intro.description
+msgid ""
+"When the shield is visible, that means Firefox is actively blocking content "
+"that tracks you."
+msgstr ""
+
+#. # LOCALIZATION NOTE (trackingProtection.intro.step1of3): Indicates that the intro panel is step one of three in a tour.
+#: trackingProtection.intro.step1of3
+msgid "1 of 3"
+msgstr ""
+
+#: trackingProtection.intro.nextButton.label
+#, fuzzy
+msgid "Next"
+msgstr "&E e tlang"
+
+#: trackingProtection.icon.activeTooltip
+msgid "Tracking attempts blocked"
+msgstr ""
+
+#: trackingProtection.icon.disabledTooltip
+msgid "Tracking content detected"
+msgstr ""
 
 #. # Edit Bookmark UI
 #: editBookmarkPanel.pageBookmarkedTitle
@@ -1252,11 +1262,6 @@ msgstr "A o batla go ntsha \"%1$S\"?"
 msgid "%S is now fullscreen."
 msgstr "%S e sekerini se se tletseng."
 
-#. # LOCALIZATION NOTE (fullscreen.rememberDecision): displayed when we enter HTML5 fullscreen mode, %S is the domain name of the focused website (e.g. mozilla.com).
-#: fullscreen.rememberDecision
-msgid "Remember decision for %S"
-msgstr "Gakologelwa ditshwetso tsa %S"
-
 #. # LOCALIZATION NOTE (fullscreenButton.tooltip): %S is the keyboard shortcut for full screen
 #: fullscreenButton.tooltip
 msgid "Display the window in full screen (%S)"
@@ -1360,7 +1365,8 @@ msgstr "Go &tswa tirong"
 
 #. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message,
 #. #                    getUserMedia.shareScreen.message, getUserMedia.shareCameraAndMicrophone.message,
-#. #                    getUserMedia.shareScreenAndMicrophone.message):
+#. #                    getUserMedia.shareScreenAndMicrophone.message, getUserMedia.shareCameraAndAudioCapture.message,
+#. #                    getUserMedia.shareAudioCapture.message, getUserMedia.shareScreenAndAudioCapture.message):
 #. #  %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
@@ -1378,9 +1384,22 @@ msgstr "A o tla batla go aba sekerini sa gago le %S?"
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "A o batla go aba sekapa-ditshwantsho le sekapa-mantswe mo %S?"
 
+#: getUserMedia.shareCameraAndAudioCapture.message
+#, fuzzy
+msgid "Would you like to share your camera and this tab's audio with %S?"
+msgstr "A o batla go aba sekapa-ditshwantsho le sekapa-mantswe mo %S?"
+
 #: getUserMedia.shareScreenAndMicrophone.message
 msgid "Would you like to share your microphone and screen with %S?"
 msgstr "A o tla rata go aba segapamantswe le sekerini sa gago le %S?"
+
+#: getUserMedia.shareScreenAndAudioCapture.message
+msgid "Would you like to share this tab's audio and your screen with %S?"
+msgstr ""
+
+#: getUserMedia.shareAudioCapture.message
+msgid "Would you like to share this tab's audio with %S?"
+msgstr ""
 
 #: getUserMedia.selectWindow.label getUserMedia.selectWindow.accesskey
 msgid "&Window to share:"
@@ -1494,6 +1513,11 @@ msgstr "O sa aba window le tsebe ga jaana."
 msgid "You are currently sharing a tab with this page."
 msgstr "O sa abelana ga jaana thebe le tsebe e."
 
+#: getUserMedia.sharingAudioCapture.message
+#, fuzzy
+msgid "You are currently sharing a tab's audio with this page."
+msgstr "O sa abelana ga jaana thebe le tsebe e."
+
 #: getUserMedia.continueSharing.label getUserMedia.continueSharing.accesskey
 msgid "&Continue Sharing"
 msgstr "&Tswelela ka go Abelana"
@@ -1508,6 +1532,7 @@ msgstr "Dithebe tsa kabo &didirisweng"
 
 #. # LOCALIZATION NOTE (getUserMedia.sharingMenuCamera
 #. #                    getUserMedia.sharingMenuMicrophone,
+#. #                    getUserMedia.sharingMenuAudioCapture,
 #. #                    getUserMedia.sharingMenuApplication,
 #. #                    getUserMedia.sharingMenuScreen,
 #. #                    getUserMedia.sharingMenuWindow,
@@ -1517,6 +1542,11 @@ msgstr "Dithebe tsa kabo &didirisweng"
 #. #                    getUserMedia.sharingMenuCameraMicrophoneScreen,
 #. #                    getUserMedia.sharingMenuCameraMicrophoneWindow,
 #. #                    getUserMedia.sharingMenuCameraMicrophoneBrowser,
+#. #                    getUserMedia.sharingMenuCameraAudioCapture,
+#. #                    getUserMedia.sharingMenuCameraAudioCaptureApplication,
+#. #                    getUserMedia.sharingMenuCameraAudioCaptureScreen,
+#. #                    getUserMedia.sharingMenuCameraAudioCaptureWindow,
+#. #                    getUserMedia.sharingMenuCameraAudioCaptureBrowser,
 #. #                    getUserMedia.sharingMenuCameraApplication,
 #. #                    getUserMedia.sharingMenuCameraScreen,
 #. #                    getUserMedia.sharingMenuCameraWindow,
@@ -1524,7 +1554,11 @@ msgstr "Dithebe tsa kabo &didirisweng"
 #. #                    getUserMedia.sharingMenuMicrophoneApplication,
 #. #                    getUserMedia.sharingMenuMicrophoneScreen,
 #. #                    getUserMedia.sharingMenuMicrophoneWindow,
-#. #                    getUserMedia.sharingMenuMicrophoneBrowser):
+#. #                    getUserMedia.sharingMenuMicrophoneBrowser,
+#. #                    getUserMedia.sharingMenuAudioCaptureApplication,
+#. #                    getUserMedia.sharingMenuAudioCaptureScreen,
+#. #                    getUserMedia.sharingMenuAudioCaptureWindow,
+#. #                    getUserMedia.sharingMenuAudioCaptureBrowser):
 #. # %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.sharingMenuCamera
 msgid "%S (camera)"
@@ -1533,6 +1567,10 @@ msgstr "%S (sekapa-ditshwantsho)"
 #: getUserMedia.sharingMenuMicrophone
 msgid "%S (microphone)"
 msgstr "%S (segapamantswe)"
+
+#: getUserMedia.sharingMenuAudioCapture
+msgid "%S (tab audio)"
+msgstr ""
 
 #: getUserMedia.sharingMenuApplication
 msgid "%S (application)"
@@ -1570,6 +1608,27 @@ msgstr "%S (sekapa-ditshwantsho, sekapa-mantswe le window)"
 msgid "%S (camera, microphone and tab)"
 msgstr "%S (sekapa-ditshwantsho, sekapa-mantswe le thebe)"
 
+#: getUserMedia.sharingMenuCameraAudioCapture
+#, fuzzy
+msgid "%S (camera and tab audio)"
+msgstr "%S (sekapa-ditshwantsho le thebe)"
+
+#: getUserMedia.sharingMenuCameraAudioCaptureApplication
+msgid "%S (camera, tab audio and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraAudioCaptureScreen
+msgid "%S (camera, tab audio and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraAudioCaptureWindow
+msgid "%S (camera, tab audio and window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraAudioCaptureBrowser
+msgid "%S (camera, tab audio and tab)"
+msgstr ""
+
 #: getUserMedia.sharingMenuCameraApplication
 msgid "%S (camera and application)"
 msgstr "%S (sekapa-ditshwantsho le mokgwatiriso)"
@@ -1601,6 +1660,22 @@ msgstr "%S (sekapamantswe le window)"
 #: getUserMedia.sharingMenuMicrophoneBrowser
 msgid "%S (microphone and tab)"
 msgstr "%S (sekapamantswe le thebe)"
+
+#: getUserMedia.sharingMenuAudioCaptureApplication
+msgid "%S (tab audio and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuAudioCaptureScreen
+msgid "%S (tab audio and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuAudioCaptureWindow
+msgid "%S (tab audio and window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuAudioCaptureBrowser
+msgid "%S (tab audio and tab)"
+msgstr ""
 
 #. # LOCALIZATION NOTE(getUserMedia.sharingMenuUnknownHost): this is used for the website
 #. # origin for the sharing menu if no readable origin could be deduced from the URL.
@@ -1765,99 +1840,7 @@ msgstr "Simolola %S sešwa"
 msgid "Download Update"
 msgstr "Kopolola Tlhabololo"
 
-#. # LOCALIZATION NOTE : FILE Reading List and Reader View are feature names and therefore typically used as proper nouns.
-#. # Pre-landed string for bug 1124153
-#. # LOCALIZATION NOTE(readingList.sidebar.showMore.tooltip): %S is the number of items that will be added by clicking this button
-#. # Semicolon-separated list of plural forms. See:
-#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#: readingList.sidebar.showMore.tooltip
-msgid "Show %S more item;Show %S more items"
-msgstr "Bontsha %S bogolo selwana;Bontsha %S bogolo dilwana"
-
-#. # Pre-landed strings for bug 1131457 / bug 1131461
-#: readingList.urlbar.add
-msgid "Add page to Reading List"
-msgstr "Tsenya tsebe mo Lenaane Puiso"
-
-#: readingList.urlbar.addDone
-msgid "Page added to Reading List"
-msgstr "Tsebe e tsentswe mo Lenaane Puiso"
-
-#: readingList.urlbar.remove
-msgid "Remove page from Reading List"
-msgstr "Tlosa tsebe mo Lenaane Puiso"
-
-#: readingList.urlbar.removeDone
-msgid "Page removed from Reading List"
-msgstr "Tsebe e tlositswe mo Lenaane Puiso"
-
-#. # Pre-landed strings for bug 1133610 & bug 1133611
-#. # LOCALIZATION NOTE(readingList.promo.noSync.label): %S a link, using the text from readingList.promo.noSync.link
-#: readingList.promo.noSync.label
-msgid "Access your Reading List on all your devices. %S"
-msgstr ""
-"Bala le go dirisa ka tetlelesego Lenaane Puiso mo didirisweng tsa gago "
-"tsotlhe. %S"
-
-#. # LOCALIZATION NOTE(readingList.promo.noSync.link): %S is syncBrandShortName
-#: readingList.promo.noSync.link
-msgid "Get started with %S."
-msgstr "Simolola ka %S."
-
-#. # LOCALIZATION NOTE(readingList.promo.hasSync.label): %S is syncBrandShortName
-#: readingList.promo.hasSync.label
-msgid ""
-"You can now access your Reading List on all your devices connected by %S."
-msgstr ""
-"O ka bala le go dirisa ka tetlelesego Lenaane Puiso mo didirisweng tsa gago "
-"tsotlhe tse di golaganyeng ka %S."
-
-#. # Pre-landed strings for bug 1136570
-#: readerView.promo.firstDetectedArticle.title
-msgid "Read and save articles easily"
-msgstr "Buisa le go boloka diathikele motlhofo"
-
-#: readerView.promo.firstDetectedArticle.body
-msgid ""
-"Click the book to make articles easier to read and use the plus to save them "
-"for later."
-msgstr ""
-"Tobetsa buka go dira gore di athikele di balege bonolo mme o dirise "
-"letshwaotlhakanya go di bolokela tiriso morago."
-
-#: readingList.promo.firstUse.exitTourButton
-msgid "Close"
-msgstr "Tswala"
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.tourDoneButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.tourDoneButton
-msgid "Start Reading »"
-msgstr "Simolola Puiso »"
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.readingList.multipleStepsTitle):
-#. # This is used when there are multiple steps in the tour.
-#. # %1$S is the current step's title (readingList.promo.firstUse.*.title), %2$S is the current step number of the tour, %3$S is the total number of steps.
-#: readingList.promo.firstUse.multipleStepsTitle
-msgid "%1$S (%2$S/%3$S)"
-msgstr "%1$S (%2$S/%3$S)"
-
-#: readingList.promo.firstUse.readingList.title
-msgid "Reading List"
-msgstr "Lenaane Puiso"
-
-#: readingList.promo.firstUse.readingList.body
-msgid "Save articles for later and find them easily when you need them."
-msgstr ""
-"Boloka diathikele go ka di dirisa moragonyana le go di bona motlhofo fa o di "
-"tlhoka."
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.readingList.moveToButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.readingList.moveToButton
-msgid "Next: Easy finding »"
-msgstr "E e tlang: Patlo e bonolo »"
-
+#. # LOCALIZATION NOTE : FILE Reader View is a feature name and therefore typically used as a proper noun.
 #: readingList.promo.firstUse.readerView.title
 msgid "Reader View"
 msgstr "Sebontsha Mmuisi"
@@ -1866,86 +1849,6 @@ msgstr "Sebontsha Mmuisi"
 msgid "Remove clutter so you can focus exactly on what you want to read."
 msgstr ""
 "Tlosa tse di tlhatlhabetseng gore o itebaganya le se o batlang go se buisa."
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.readerView.moveToButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.readerView.moveToButton
-msgid "Next: Easy reading »"
-msgstr "E e tlang: Puiso e bonolo »"
-
-#: readingList.promo.firstUse.syncNotSignedIn.title
-msgctxt "readingList.promo.firstUse.syncNotSignedIn.title"
-msgid "Sync"
-msgstr "Rulaganya ka tsamaisano"
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.syncNotSignedIn.body): %S is brandShortName
-#: readingList.promo.firstUse.syncNotSignedIn.body
-msgid "Sign in to access your Reading List everywhere you use %S."
-msgstr ""
-"Tsena tirong go ka letlelesega go dirisa Lenaneo Puiso gongwe le gongwe fa o "
-"e dirisa %S."
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.syncNotSignedIn.moveToButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.syncNotSignedIn.moveToButton
-msgctxt "readingList.promo.firstUse.syncNotSignedIn.moveToButton"
-msgid "Next: Easy access »"
-msgstr "E e tlang: Tetlelesego e bonolo »"
-
-#: readingList.promo.firstUse.syncSignedIn.title
-msgctxt "readingList.promo.firstUse.syncSignedIn.title"
-msgid "Sync"
-msgstr "Rulaganya ka tsamaisano"
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.syncSignedIn.body): %S is brandShortName
-#: readingList.promo.firstUse.syncSignedIn.body
-msgid "Open your Reading List articles everywhere you use %S."
-msgstr ""
-"Bula diathikele tsa Lenaane Puiso la gago gongwe le gongwe fa o dirisa %S."
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.syncSignedIn.moveToButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.syncSignedIn.moveToButton
-msgctxt "readingList.promo.firstUse.syncSignedIn.moveToButton"
-msgid "Next: Easy access »"
-msgstr "E e tlang: Tetlelesego e bonolo »"
-
-#. # Pre-landed strings for bug 1136570
-#. # LOCALIZATION NOTE(readingList.prepopulatedArticles.learnMore):
-#. # This will show as an item in the Reading List, and will link to a page that explains and shows how the Reading List and Reader View works.
-#. # This will be staged at:
-#. #   https://www.allizom.org/firefox/reading/start/
-#. # And eventually available at:
-#. #   https://www.mozilla.org/firefox/reading/start/
-#. # %S is brandShortName
-#: readingList.prepopulatedArticles.learnMore
-msgid "Learn how %S makes reading more pleasant"
-msgstr "Ithute gore go ka dirwa jang go %S dira gore puiso e nne monate thata"
-
-#. # LOCALIZATION NOTE(readingList.prepopulatedArticles.supportReadingList):
-#. # This will show as an item in the Reading List, and will link to a SUMO article describing the Reading List:
-#. #   https://support.mozilla.org/kb/save-sync-and-read-pages-anywhere-reading-list
-#: readingList.prepopulatedArticles.supportReadingList
-msgid "Save, sync and read pages anywhere with Reading List"
-msgstr ""
-"Boloka, o rulaganye ka tsamaisano o be o buise ditsebe gongwe le gongwe fa "
-"go nang le Lenaneo Puiso"
-
-#. # LOCALIZATION NOTE(readingList.prepopulatedArticles.supportReaderView):
-#. # This will show as an item in the Reading List, and will link to a SUMO article describing the Reader View:
-#. #   https://support.mozilla.org/kb/enjoy-clutter-free-web-pages-reader-view
-#: readingList.prepopulatedArticles.supportReaderView
-msgid "Enjoy clutter-free Web pages with Reader View"
-msgstr ""
-"Jaa monate ditsebe tsa webo tse di rulagantsweng sentle ka Sebontsha Mmuisi"
-
-#. # LOCALIZATION NOTE(readingList.prepopulatedArticles.learnMore):
-#. # This will show as an item in the Reading List, and will link to a SUMO article describing Sync:
-#. #   https://support.mozilla.org/kb/how-do-i-set-up-firefox-sync
-#. # %S is syncBrandShortName
-#: readingList.prepopulatedArticles.supportSync
-msgid "Access your Reading List anywhere with %S"
-msgstr "Tetlelesego mo Lenaane Puiso la gago gongwe le gongwe ka %S"
 
 #. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
 #. #                    e10s.offerPopup.highlight1
@@ -2025,6 +1928,131 @@ msgstr "Thibela go dira le go &Simolola sešwa"
 #: e10s.accessibilityNotice.dontDisable.accesskey
 msgid "&Don't Disable"
 msgstr "&O seka wa Thibela go dira"
+
+#~ msgid ""
+#~ "The connection to this website is not fully secure because it contains "
+#~ "unencrypted elements (such as images) or the encryption is not strong "
+#~ "enough."
+#~ msgstr ""
+#~ "Kgolagano mo webosaeteng e ga e sireletsega mo go tletseng ka gore e "
+#~ "tshotse ditlhakakaelo tse di sa sireletsegang (jaaka ditshwantsho) kgotsa "
+#~ "mokgwatshireletso ga o a nonofa mo go lekaneng."
+
+#~ msgid ""
+#~ "This website contains interactive content that isn't encrypted (such as "
+#~ "scripts). Other people can view your information or modify the website's "
+#~ "behavior."
+#~ msgstr ""
+#~ "Webosaete e tshotse diteng ya tirisano e sa dirwang ka mokgwatshireletso "
+#~ "(jaaka disekeripiti). Batho bangwe baka leba tshedimosetso ya gago kgotsa "
+#~ "ba fetola maitsholo a webosaete."
+
+#~ msgid "Remember decision for %S"
+#~ msgstr "Gakologelwa ditshwetso tsa %S"
+
+#~ msgid "Show %S more item;Show %S more items"
+#~ msgstr "Bontsha %S bogolo selwana;Bontsha %S bogolo dilwana"
+
+#~ msgid "Add page to Reading List"
+#~ msgstr "Tsenya tsebe mo Lenaane Puiso"
+
+#~ msgid "Page added to Reading List"
+#~ msgstr "Tsebe e tsentswe mo Lenaane Puiso"
+
+#~ msgid "Remove page from Reading List"
+#~ msgstr "Tlosa tsebe mo Lenaane Puiso"
+
+#~ msgid "Page removed from Reading List"
+#~ msgstr "Tsebe e tlositswe mo Lenaane Puiso"
+
+#~ msgid "Access your Reading List on all your devices. %S"
+#~ msgstr ""
+#~ "Bala le go dirisa ka tetlelesego Lenaane Puiso mo didirisweng tsa gago "
+#~ "tsotlhe. %S"
+
+#~ msgid "Get started with %S."
+#~ msgstr "Simolola ka %S."
+
+#~ msgid ""
+#~ "You can now access your Reading List on all your devices connected by %S."
+#~ msgstr ""
+#~ "O ka bala le go dirisa ka tetlelesego Lenaane Puiso mo didirisweng tsa "
+#~ "gago tsotlhe tse di golaganyeng ka %S."
+
+#~ msgid "Read and save articles easily"
+#~ msgstr "Buisa le go boloka diathikele motlhofo"
+
+#~ msgid ""
+#~ "Click the book to make articles easier to read and use the plus to save "
+#~ "them for later."
+#~ msgstr ""
+#~ "Tobetsa buka go dira gore di athikele di balege bonolo mme o dirise "
+#~ "letshwaotlhakanya go di bolokela tiriso morago."
+
+#~ msgid "Close"
+#~ msgstr "Tswala"
+
+#~ msgid "Start Reading »"
+#~ msgstr "Simolola Puiso »"
+
+#~ msgid "%1$S (%2$S/%3$S)"
+#~ msgstr "%1$S (%2$S/%3$S)"
+
+#~ msgid "Reading List"
+#~ msgstr "Lenaane Puiso"
+
+#~ msgid "Save articles for later and find them easily when you need them."
+#~ msgstr ""
+#~ "Boloka diathikele go ka di dirisa moragonyana le go di bona motlhofo fa o "
+#~ "di tlhoka."
+
+#~ msgid "Next: Easy finding »"
+#~ msgstr "E e tlang: Patlo e bonolo »"
+
+#~ msgid "Next: Easy reading »"
+#~ msgstr "E e tlang: Puiso e bonolo »"
+
+#~ msgctxt "readingList.promo.firstUse.syncNotSignedIn.title"
+#~ msgid "Sync"
+#~ msgstr "Rulaganya ka tsamaisano"
+
+#~ msgid "Sign in to access your Reading List everywhere you use %S."
+#~ msgstr ""
+#~ "Tsena tirong go ka letlelesega go dirisa Lenaneo Puiso gongwe le gongwe "
+#~ "fa o e dirisa %S."
+
+#~ msgctxt "readingList.promo.firstUse.syncNotSignedIn.moveToButton"
+#~ msgid "Next: Easy access »"
+#~ msgstr "E e tlang: Tetlelesego e bonolo »"
+
+#~ msgctxt "readingList.promo.firstUse.syncSignedIn.title"
+#~ msgid "Sync"
+#~ msgstr "Rulaganya ka tsamaisano"
+
+#~ msgid "Open your Reading List articles everywhere you use %S."
+#~ msgstr ""
+#~ "Bula diathikele tsa Lenaane Puiso la gago gongwe le gongwe fa o dirisa %S."
+
+#~ msgctxt "readingList.promo.firstUse.syncSignedIn.moveToButton"
+#~ msgid "Next: Easy access »"
+#~ msgstr "E e tlang: Tetlelesego e bonolo »"
+
+#~ msgid "Learn how %S makes reading more pleasant"
+#~ msgstr ""
+#~ "Ithute gore go ka dirwa jang go %S dira gore puiso e nne monate thata"
+
+#~ msgid "Save, sync and read pages anywhere with Reading List"
+#~ msgstr ""
+#~ "Boloka, o rulaganye ka tsamaisano o be o buise ditsebe gongwe le gongwe "
+#~ "fa go nang le Lenaneo Puiso"
+
+#~ msgid "Enjoy clutter-free Web pages with Reader View"
+#~ msgstr ""
+#~ "Jaa monate ditsebe tsa webo tse di rulagantsweng sentle ka Sebontsha "
+#~ "Mmuisi"
+
+#~ msgid "Access your Reading List anywhere with %S"
+#~ msgstr "Tetlelesego mo Lenaane Puiso la gago gongwe le gongwe ka %S"
 
 #~ msgid ""
 #~ "The add-on from #2 could not be installed because it does not match the "

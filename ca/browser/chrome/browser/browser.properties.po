@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-30 17:16+0000\n"
+"POT-Creation-Date: 2015-08-11 11:38+0000\n"
 "PO-Revision-Date: 2015-07-15 09:11+0000\n"
 "Last-Translator: Jordi Serratosa <jordis@softcatala.cat>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1436951483.000000\n"
@@ -839,27 +839,38 @@ msgstr "Heu afegit una excepció de seguretat per a aquest lloc web."
 msgid "%S, %S"
 msgstr "%S, %S"
 
-#: identity.broken_loaded
-msgid ""
-"The connection to this website is not fully secure because it contains "
-"unencrypted elements (such as images) or the encryption is not strong enough."
-msgstr ""
-"La connexió a aquest lloc web no és totalment segura, perquè conté elements "
-"sense xifrar (com ara, imatges) o bé perquè el xifratge no és prou potent."
-
-#: identity.mixed_active_loaded2
-msgid ""
-"This website contains interactive content that isn't encrypted (such as "
-"scripts). Other people can view your information or modify the website's "
-"behavior."
-msgstr ""
-"Aquest lloc web conté contingut interactiu sense xifrar (com ara, scripts). "
-"Altres persones poden veure la vostra informació o modificar el comportament "
-"del lloc web."
-
 #: identity.unknown.tooltip
 msgid "This website does not supply identity information."
 msgstr "El lloc web no proporciona cap informació d'identitat."
+
+#: trackingProtection.intro.title
+msgid "How Tracking Protection works"
+msgstr ""
+
+#. # LOCALIZATION NOTE (trackingProtection.intro.description): %S is brandShortName
+#: trackingProtection.intro.description
+msgid ""
+"When the shield is visible, that means Firefox is actively blocking content "
+"that tracks you."
+msgstr ""
+
+#. # LOCALIZATION NOTE (trackingProtection.intro.step1of3): Indicates that the intro panel is step one of three in a tour.
+#: trackingProtection.intro.step1of3
+msgid "1 of 3"
+msgstr ""
+
+#: trackingProtection.intro.nextButton.label
+#, fuzzy
+msgid "Next"
+msgstr "Següe&nt"
+
+#: trackingProtection.icon.activeTooltip
+msgid "Tracking attempts blocked"
+msgstr ""
+
+#: trackingProtection.icon.disabledTooltip
+msgid "Tracking content detected"
+msgstr ""
 
 #. # Edit Bookmark UI
 #: editBookmarkPanel.pageBookmarkedTitle
@@ -1252,11 +1263,6 @@ msgstr "Voleu desinstal·lar l'aplicació «%1$S»?"
 msgid "%S is now fullscreen."
 msgstr "%S està ara a pantalla completa."
 
-#. # LOCALIZATION NOTE (fullscreen.rememberDecision): displayed when we enter HTML5 fullscreen mode, %S is the domain name of the focused website (e.g. mozilla.com).
-#: fullscreen.rememberDecision
-msgid "Remember decision for %S"
-msgstr "Recorda aquesta preferència per a %S"
-
 #. # LOCALIZATION NOTE (fullscreenButton.tooltip): %S is the keyboard shortcut for full screen
 #: fullscreenButton.tooltip
 msgid "Display the window in full screen (%S)"
@@ -1360,7 +1366,8 @@ msgstr "Finalit&za la sessió"
 
 #. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message,
 #. #                    getUserMedia.shareScreen.message, getUserMedia.shareCameraAndMicrophone.message,
-#. #                    getUserMedia.shareScreenAndMicrophone.message):
+#. #                    getUserMedia.shareScreenAndMicrophone.message, getUserMedia.shareCameraAndAudioCapture.message,
+#. #                    getUserMedia.shareAudioCapture.message, getUserMedia.shareScreenAndAudioCapture.message):
 #. #  %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
@@ -1378,9 +1385,22 @@ msgstr "Voleu compartir la vostra pantalla amb %S?"
 msgid "Would you like to share your camera and microphone with %S?"
 msgstr "Voleu compartir la càmera i el micròfon amb %S?"
 
+#: getUserMedia.shareCameraAndAudioCapture.message
+#, fuzzy
+msgid "Would you like to share your camera and this tab's audio with %S?"
+msgstr "Voleu compartir la càmera i el micròfon amb %S?"
+
 #: getUserMedia.shareScreenAndMicrophone.message
 msgid "Would you like to share your microphone and screen with %S?"
 msgstr "Voleu compartir el micròfon i la pantalla amb %S?"
+
+#: getUserMedia.shareScreenAndAudioCapture.message
+msgid "Would you like to share this tab's audio and your screen with %S?"
+msgstr ""
+
+#: getUserMedia.shareAudioCapture.message
+msgid "Would you like to share this tab's audio with %S?"
+msgstr ""
 
 #: getUserMedia.selectWindow.label getUserMedia.selectWindow.accesskey
 msgid "&Window to share:"
@@ -1494,6 +1514,11 @@ msgstr "Esteu compartint una finestra amb aquesta pàgina."
 msgid "You are currently sharing a tab with this page."
 msgstr "Esteu compartint una pestanya amb aquesta pàgina."
 
+#: getUserMedia.sharingAudioCapture.message
+#, fuzzy
+msgid "You are currently sharing a tab's audio with this page."
+msgstr "Esteu compartint una pestanya amb aquesta pàgina."
+
 #: getUserMedia.continueSharing.label getUserMedia.continueSharing.accesskey
 msgid "&Continue Sharing"
 msgstr "&Continua compartint"
@@ -1508,6 +1533,7 @@ msgstr "Pestanyes que comparteixen &dispositius"
 
 #. # LOCALIZATION NOTE (getUserMedia.sharingMenuCamera
 #. #                    getUserMedia.sharingMenuMicrophone,
+#. #                    getUserMedia.sharingMenuAudioCapture,
 #. #                    getUserMedia.sharingMenuApplication,
 #. #                    getUserMedia.sharingMenuScreen,
 #. #                    getUserMedia.sharingMenuWindow,
@@ -1517,6 +1543,11 @@ msgstr "Pestanyes que comparteixen &dispositius"
 #. #                    getUserMedia.sharingMenuCameraMicrophoneScreen,
 #. #                    getUserMedia.sharingMenuCameraMicrophoneWindow,
 #. #                    getUserMedia.sharingMenuCameraMicrophoneBrowser,
+#. #                    getUserMedia.sharingMenuCameraAudioCapture,
+#. #                    getUserMedia.sharingMenuCameraAudioCaptureApplication,
+#. #                    getUserMedia.sharingMenuCameraAudioCaptureScreen,
+#. #                    getUserMedia.sharingMenuCameraAudioCaptureWindow,
+#. #                    getUserMedia.sharingMenuCameraAudioCaptureBrowser,
 #. #                    getUserMedia.sharingMenuCameraApplication,
 #. #                    getUserMedia.sharingMenuCameraScreen,
 #. #                    getUserMedia.sharingMenuCameraWindow,
@@ -1524,7 +1555,11 @@ msgstr "Pestanyes que comparteixen &dispositius"
 #. #                    getUserMedia.sharingMenuMicrophoneApplication,
 #. #                    getUserMedia.sharingMenuMicrophoneScreen,
 #. #                    getUserMedia.sharingMenuMicrophoneWindow,
-#. #                    getUserMedia.sharingMenuMicrophoneBrowser):
+#. #                    getUserMedia.sharingMenuMicrophoneBrowser,
+#. #                    getUserMedia.sharingMenuAudioCaptureApplication,
+#. #                    getUserMedia.sharingMenuAudioCaptureScreen,
+#. #                    getUserMedia.sharingMenuAudioCaptureWindow,
+#. #                    getUserMedia.sharingMenuAudioCaptureBrowser):
 #. # %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.sharingMenuCamera
 msgid "%S (camera)"
@@ -1533,6 +1568,10 @@ msgstr "%S (càmera)"
 #: getUserMedia.sharingMenuMicrophone
 msgid "%S (microphone)"
 msgstr "%S (micròfon)"
+
+#: getUserMedia.sharingMenuAudioCapture
+msgid "%S (tab audio)"
+msgstr ""
 
 #: getUserMedia.sharingMenuApplication
 msgid "%S (application)"
@@ -1570,6 +1609,27 @@ msgstr "%S (càmera, micròfon i finestra)"
 msgid "%S (camera, microphone and tab)"
 msgstr "%S (càmera, micròfon i pestanya)"
 
+#: getUserMedia.sharingMenuCameraAudioCapture
+#, fuzzy
+msgid "%S (camera and tab audio)"
+msgstr "%S (càmera i pestanya)"
+
+#: getUserMedia.sharingMenuCameraAudioCaptureApplication
+msgid "%S (camera, tab audio and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraAudioCaptureScreen
+msgid "%S (camera, tab audio and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraAudioCaptureWindow
+msgid "%S (camera, tab audio and window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraAudioCaptureBrowser
+msgid "%S (camera, tab audio and tab)"
+msgstr ""
+
 #: getUserMedia.sharingMenuCameraApplication
 msgid "%S (camera and application)"
 msgstr "%S (càmera i aplicació)"
@@ -1601,6 +1661,22 @@ msgstr "%S (micròfon i finestra)"
 #: getUserMedia.sharingMenuMicrophoneBrowser
 msgid "%S (microphone and tab)"
 msgstr "%S (micròfon i pestanya)"
+
+#: getUserMedia.sharingMenuAudioCaptureApplication
+msgid "%S (tab audio and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuAudioCaptureScreen
+msgid "%S (tab audio and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuAudioCaptureWindow
+msgid "%S (tab audio and window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuAudioCaptureBrowser
+msgid "%S (tab audio and tab)"
+msgstr ""
 
 #. # LOCALIZATION NOTE(getUserMedia.sharingMenuUnknownHost): this is used for the website
 #. # origin for the sharing menu if no readable origin could be deduced from the URL.
@@ -1766,97 +1842,7 @@ msgstr "Reinicia el %S"
 msgid "Download Update"
 msgstr "Baixa l'actualització"
 
-#. # LOCALIZATION NOTE : FILE Reading List and Reader View are feature names and therefore typically used as proper nouns.
-#. # Pre-landed string for bug 1124153
-#. # LOCALIZATION NOTE(readingList.sidebar.showMore.tooltip): %S is the number of items that will be added by clicking this button
-#. # Semicolon-separated list of plural forms. See:
-#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#: readingList.sidebar.showMore.tooltip
-msgid "Show %S more item;Show %S more items"
-msgstr "Mostra %S element més;Mostra %S elements més"
-
-#. # Pre-landed strings for bug 1131457 / bug 1131461
-#: readingList.urlbar.add
-msgid "Add page to Reading List"
-msgstr "Afegeix la pàgina a la llista de lectura"
-
-#: readingList.urlbar.addDone
-msgid "Page added to Reading List"
-msgstr "S'ha afegit la pàgina a la llista de lectura"
-
-#: readingList.urlbar.remove
-msgid "Remove page from Reading List"
-msgstr "Elimina la pàgina de la llista de lectura"
-
-#: readingList.urlbar.removeDone
-msgid "Page removed from Reading List"
-msgstr "S'ha eliminat la pàgina de la llista de lectura"
-
-#. # Pre-landed strings for bug 1133610 & bug 1133611
-#. # LOCALIZATION NOTE(readingList.promo.noSync.label): %S a link, using the text from readingList.promo.noSync.link
-#: readingList.promo.noSync.label
-msgid "Access your Reading List on all your devices. %S"
-msgstr "Accediu a la vostra llista de lectura des de qualsevol dispositiu. %S"
-
-#. # LOCALIZATION NOTE(readingList.promo.noSync.link): %S is syncBrandShortName
-#: readingList.promo.noSync.link
-msgid "Get started with %S."
-msgstr "Primers passos amb el %S."
-
-#. # LOCALIZATION NOTE(readingList.promo.hasSync.label): %S is syncBrandShortName
-#: readingList.promo.hasSync.label
-msgid ""
-"You can now access your Reading List on all your devices connected by %S."
-msgstr ""
-"Ara podeu accedir a la vostra llista de lectura en tots els dispositius "
-"connectats amb el %S."
-
-#. # Pre-landed strings for bug 1136570
-#: readerView.promo.firstDetectedArticle.title
-msgid "Read and save articles easily"
-msgstr "Llegiu i deseu articles fàcilment"
-
-#: readerView.promo.firstDetectedArticle.body
-msgid ""
-"Click the book to make articles easier to read and use the plus to save them "
-"for later."
-msgstr ""
-"Feu clic a la icona de llibre per fer que els articles siguin més fàcils de "
-"llegir i utilitzeu el signe de més per desar-los i llegir-los més endavant."
-
-#: readingList.promo.firstUse.exitTourButton
-msgid "Close"
-msgstr "Tanca"
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.tourDoneButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.tourDoneButton
-msgid "Start Reading »"
-msgstr "Comença a llegir »"
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.readingList.multipleStepsTitle):
-#. # This is used when there are multiple steps in the tour.
-#. # %1$S is the current step's title (readingList.promo.firstUse.*.title), %2$S is the current step number of the tour, %3$S is the total number of steps.
-#: readingList.promo.firstUse.multipleStepsTitle
-msgid "%1$S (%2$S/%3$S)"
-msgstr "%1$S (%2$S/%3$S)"
-
-#: readingList.promo.firstUse.readingList.title
-msgid "Reading List"
-msgstr "Llista de lectura"
-
-#: readingList.promo.firstUse.readingList.body
-msgid "Save articles for later and find them easily when you need them."
-msgstr ""
-"Deseu articles per llegir-los més endavant i trobeu-los fàcilment quan els "
-"necessiteu."
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.readingList.moveToButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.readingList.moveToButton
-msgid "Next: Easy finding »"
-msgstr "Següent: Fàcils de trobar »"
-
+#. # LOCALIZATION NOTE : FILE Reader View is a feature name and therefore typically used as a proper noun.
 #: readingList.promo.firstUse.readerView.title
 msgid "Reader View"
 msgstr "Vista de lectura"
@@ -1866,86 +1852,6 @@ msgid "Remove clutter so you can focus exactly on what you want to read."
 msgstr ""
 "Elimineu les parts irrellevants i centreu-vos exactament en allò que voleu "
 "llegir."
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.readerView.moveToButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.readerView.moveToButton
-msgid "Next: Easy reading »"
-msgstr "Següent: Fàcil de llegir »"
-
-#: readingList.promo.firstUse.syncNotSignedIn.title
-msgctxt "readingList.promo.firstUse.syncNotSignedIn.title"
-msgid "Sync"
-msgstr "Sync"
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.syncNotSignedIn.body): %S is brandShortName
-#: readingList.promo.firstUse.syncNotSignedIn.body
-msgid "Sign in to access your Reading List everywhere you use %S."
-msgstr ""
-"Inicieu la sessió per accedir a la vostra llista de lectura des de qualsevol "
-"lloc on utilitzeu el %S."
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.syncNotSignedIn.moveToButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.syncNotSignedIn.moveToButton
-msgctxt "readingList.promo.firstUse.syncNotSignedIn.moveToButton"
-msgid "Next: Easy access »"
-msgstr "Següent: Fàcil accés »"
-
-#: readingList.promo.firstUse.syncSignedIn.title
-msgctxt "readingList.promo.firstUse.syncSignedIn.title"
-msgid "Sync"
-msgstr "Sync"
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.syncSignedIn.body): %S is brandShortName
-#: readingList.promo.firstUse.syncSignedIn.body
-msgid "Open your Reading List articles everywhere you use %S."
-msgstr ""
-"Obriu els articles de la llista de lectura des de qualsevol lloc on "
-"utilitzeu el %S."
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.syncSignedIn.moveToButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.syncSignedIn.moveToButton
-msgctxt "readingList.promo.firstUse.syncSignedIn.moveToButton"
-msgid "Next: Easy access »"
-msgstr "Següent: Fàcil accés »"
-
-#. # Pre-landed strings for bug 1136570
-#. # LOCALIZATION NOTE(readingList.prepopulatedArticles.learnMore):
-#. # This will show as an item in the Reading List, and will link to a page that explains and shows how the Reading List and Reader View works.
-#. # This will be staged at:
-#. #   https://www.allizom.org/firefox/reading/start/
-#. # And eventually available at:
-#. #   https://www.mozilla.org/firefox/reading/start/
-#. # %S is brandShortName
-#: readingList.prepopulatedArticles.learnMore
-msgid "Learn how %S makes reading more pleasant"
-msgstr "Vegeu com el %S fa que la lectura sigui més agradable"
-
-#. # LOCALIZATION NOTE(readingList.prepopulatedArticles.supportReadingList):
-#. # This will show as an item in the Reading List, and will link to a SUMO article describing the Reading List:
-#. #   https://support.mozilla.org/kb/save-sync-and-read-pages-anywhere-reading-list
-#: readingList.prepopulatedArticles.supportReadingList
-msgid "Save, sync and read pages anywhere with Reading List"
-msgstr ""
-"Deseu, sincronitzeu i deseu pàgines des de qualsevol lloc amb la llista de "
-"lectura"
-
-#. # LOCALIZATION NOTE(readingList.prepopulatedArticles.supportReaderView):
-#. # This will show as an item in the Reading List, and will link to a SUMO article describing the Reader View:
-#. #   https://support.mozilla.org/kb/enjoy-clutter-free-web-pages-reader-view
-#: readingList.prepopulatedArticles.supportReaderView
-msgid "Enjoy clutter-free Web pages with Reader View"
-msgstr "Gaudiu de pàgines web sense distraccions amb la vista de lectura"
-
-#. # LOCALIZATION NOTE(readingList.prepopulatedArticles.learnMore):
-#. # This will show as an item in the Reading List, and will link to a SUMO article describing Sync:
-#. #   https://support.mozilla.org/kb/how-do-i-set-up-firefox-sync
-#. # %S is syncBrandShortName
-#: readingList.prepopulatedArticles.supportSync
-msgid "Access your Reading List anywhere with %S"
-msgstr "Accediu a la vostra llista de lectura des de qualsevol lloc amb el %S"
 
 #. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
 #. #                    e10s.offerPopup.highlight1
@@ -2024,6 +1930,130 @@ msgstr "Desactiva i &reinicia"
 #: e10s.accessibilityNotice.dontDisable.accesskey
 msgid "&Don't Disable"
 msgstr "&No el desactivis"
+
+#~ msgid ""
+#~ "The connection to this website is not fully secure because it contains "
+#~ "unencrypted elements (such as images) or the encryption is not strong "
+#~ "enough."
+#~ msgstr ""
+#~ "La connexió a aquest lloc web no és totalment segura, perquè conté "
+#~ "elements sense xifrar (com ara, imatges) o bé perquè el xifratge no és "
+#~ "prou potent."
+
+#~ msgid ""
+#~ "This website contains interactive content that isn't encrypted (such as "
+#~ "scripts). Other people can view your information or modify the website's "
+#~ "behavior."
+#~ msgstr ""
+#~ "Aquest lloc web conté contingut interactiu sense xifrar (com ara, "
+#~ "scripts). Altres persones poden veure la vostra informació o modificar el "
+#~ "comportament del lloc web."
+
+#~ msgid "Remember decision for %S"
+#~ msgstr "Recorda aquesta preferència per a %S"
+
+#~ msgid "Show %S more item;Show %S more items"
+#~ msgstr "Mostra %S element més;Mostra %S elements més"
+
+#~ msgid "Add page to Reading List"
+#~ msgstr "Afegeix la pàgina a la llista de lectura"
+
+#~ msgid "Page added to Reading List"
+#~ msgstr "S'ha afegit la pàgina a la llista de lectura"
+
+#~ msgid "Remove page from Reading List"
+#~ msgstr "Elimina la pàgina de la llista de lectura"
+
+#~ msgid "Page removed from Reading List"
+#~ msgstr "S'ha eliminat la pàgina de la llista de lectura"
+
+#~ msgid "Access your Reading List on all your devices. %S"
+#~ msgstr ""
+#~ "Accediu a la vostra llista de lectura des de qualsevol dispositiu. %S"
+
+#~ msgid "Get started with %S."
+#~ msgstr "Primers passos amb el %S."
+
+#~ msgid ""
+#~ "You can now access your Reading List on all your devices connected by %S."
+#~ msgstr ""
+#~ "Ara podeu accedir a la vostra llista de lectura en tots els dispositius "
+#~ "connectats amb el %S."
+
+#~ msgid "Read and save articles easily"
+#~ msgstr "Llegiu i deseu articles fàcilment"
+
+#~ msgid ""
+#~ "Click the book to make articles easier to read and use the plus to save "
+#~ "them for later."
+#~ msgstr ""
+#~ "Feu clic a la icona de llibre per fer que els articles siguin més fàcils "
+#~ "de llegir i utilitzeu el signe de més per desar-los i llegir-los més "
+#~ "endavant."
+
+#~ msgid "Close"
+#~ msgstr "Tanca"
+
+#~ msgid "Start Reading »"
+#~ msgstr "Comença a llegir »"
+
+#~ msgid "%1$S (%2$S/%3$S)"
+#~ msgstr "%1$S (%2$S/%3$S)"
+
+#~ msgid "Reading List"
+#~ msgstr "Llista de lectura"
+
+#~ msgid "Save articles for later and find them easily when you need them."
+#~ msgstr ""
+#~ "Deseu articles per llegir-los més endavant i trobeu-los fàcilment quan "
+#~ "els necessiteu."
+
+#~ msgid "Next: Easy finding »"
+#~ msgstr "Següent: Fàcils de trobar »"
+
+#~ msgid "Next: Easy reading »"
+#~ msgstr "Següent: Fàcil de llegir »"
+
+#~ msgctxt "readingList.promo.firstUse.syncNotSignedIn.title"
+#~ msgid "Sync"
+#~ msgstr "Sync"
+
+#~ msgid "Sign in to access your Reading List everywhere you use %S."
+#~ msgstr ""
+#~ "Inicieu la sessió per accedir a la vostra llista de lectura des de "
+#~ "qualsevol lloc on utilitzeu el %S."
+
+#~ msgctxt "readingList.promo.firstUse.syncNotSignedIn.moveToButton"
+#~ msgid "Next: Easy access »"
+#~ msgstr "Següent: Fàcil accés »"
+
+#~ msgctxt "readingList.promo.firstUse.syncSignedIn.title"
+#~ msgid "Sync"
+#~ msgstr "Sync"
+
+#~ msgid "Open your Reading List articles everywhere you use %S."
+#~ msgstr ""
+#~ "Obriu els articles de la llista de lectura des de qualsevol lloc on "
+#~ "utilitzeu el %S."
+
+#~ msgctxt "readingList.promo.firstUse.syncSignedIn.moveToButton"
+#~ msgid "Next: Easy access »"
+#~ msgstr "Següent: Fàcil accés »"
+
+#~ msgid "Learn how %S makes reading more pleasant"
+#~ msgstr "Vegeu com el %S fa que la lectura sigui més agradable"
+
+#~ msgid "Save, sync and read pages anywhere with Reading List"
+#~ msgstr ""
+#~ "Deseu, sincronitzeu i deseu pàgines des de qualsevol lloc amb la llista "
+#~ "de lectura"
+
+#~ msgid "Enjoy clutter-free Web pages with Reader View"
+#~ msgstr "Gaudiu de pàgines web sense distraccions amb la vista de lectura"
+
+#~ msgid "Access your Reading List anywhere with %S"
+#~ msgstr ""
+#~ "Accediu a la vostra llista de lectura des de qualsevol lloc amb el %S"
 
 #~ msgid ""
 #~ "The add-on from #2 could not be installed because it does not match the "

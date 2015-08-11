@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-23 18:16+0000\n"
+"POT-Creation-Date: 2015-08-11 11:38+0000\n"
 "PO-Revision-Date: 2015-04-13 06:36+0000\n"
 "Last-Translator: shanky <prasad.mvs@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1428906992.000000\n"
@@ -35,14 +35,6 @@ msgid ""
 msgstr ""
 "ಕ್ರಾಸ್-ಆರಿಜಿನ್ ಮನವಿ ಪ್ರತಿಬಂಧಿತವಾಗಿದೆ: ಅದೇ ಮೂಲ ನೀತಿ ದೂರದ ಸಂಪನ್ಮೂಲ %1$S ರಲ್ಲಿ "
 "ಓದುವುದನ್ನು ನಿರ್ಭಂದಿಸುತ್ತದೆ. (ಕಾರಣ: CORS ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ)."
-
-#: CORSRequestFailed
-msgid ""
-"Cross-Origin Request Blocked: The Same Origin Policy disallows reading the "
-"remote resource at %1$S. (Reason: CORS request failed)."
-msgstr ""
-"ಕ್ರಾಸ್-ಆರಿಜಿನ್ ಮನವಿ ಪ್ರತಿಬಂಧಿತವಾಗಿದೆ: ಅದೇ ಮೂಲ ನೀತಿ ದೂರದ ಸಂಪನ್ಮೂಲ %1$S ರಲ್ಲಿ "
-"ಓದುವುದನ್ನು ನಿರ್ಭಂದಿಸುತ್ತದೆ. (ಕಾರಣ: CORS ಮನವಿ ವಿಫಲವಾಗಿದೆ)."
 
 #: CORSRequestNotHttp
 msgid ""
@@ -130,15 +122,137 @@ msgstr ""
 "ಓದುವುದನ್ನು ನಿರ್ಭಂದಿಸುತ್ತದೆ. (ಕಾರಣ: ಕಾಣೆಯಾದ ಟೋಕನ್ '%2$S' CORS ಶಿರೋಲೇಖ 'Access-"
 "Control-Allow-Headers' ನಲ್ಲಿ CORS ಪ್ರಿಫ್ಲೈಟ್ ವಾಹಿನಿಯಿಂದ)."
 
-#. # LOCALIZATION NOTE: Do not translate "Strict-Transport-Security" or "HSTS"
-#: InvalidSTSHeaders
-msgid "The site specified an invalid Strict-Transport-Security header."
-msgstr "ತಾಣವು ಒಂದು ಅಮಾನ್ಯವಾದ ಸ್ಟ್ರಿಕ್ಟ್-ಟ್ರಾನ್ಸ್‌ಪೋರ್ಟ್-ಸೆಕ್ಯುರಿಟಿ ಹೆಡರ್ ಅನ್ನು ಸೂಚಿಸಿದೆ."
+#. # LOCALIZATION NOTE: Do not translate "Strict-Transport-Security", "HSTS", "max-age" or "includeSubDomains"
+#: STSUnknownError
+msgid ""
+"Strict-Transport-Security: An unknown error occurred processing the header "
+"specified by the site."
+msgstr ""
 
-#. # LOCALIZATION NOTE: Do not translate "Public-Key-Pins or HPKP"
-#: InvalidPKPHeaders
-msgid "The site specified an invalid Public-Key-Pins header."
-msgstr "ತಾಣವು ಒಂದು ತಪ್ಪಾದ ಪಬ್ಲಿಕ್-ಕೀ-ಪಿನ್ಸ್ ಹೆಡರ್ ಅನ್ನು ಸೂಚಿಸಿದೆ."
+#: STSUntrustworthyConnection
+msgid ""
+"Strict-Transport-Security: The connection to the site is untrustworthy, so "
+"the specified header was ignored."
+msgstr ""
+
+#: STSCouldNotParseHeader
+msgid ""
+"Strict-Transport-Security: The site specified a header that could not be "
+"parsed successfully."
+msgstr ""
+
+#: STSNoMaxAge
+msgid ""
+"Strict-Transport-Security: The site specified a header that did not include "
+"a 'max-age' directive."
+msgstr ""
+
+#: STSMultipleMaxAges
+msgid ""
+"Strict-Transport-Security: The site specified a header that included "
+"multiple 'max-age' directives."
+msgstr ""
+
+#: STSInvalidMaxAge
+msgid ""
+"Strict-Transport-Security: The site specified a header that included an "
+"invalid 'max-age' directive."
+msgstr ""
+
+#: STSMultipleIncludeSubdomains
+msgid ""
+"Strict-Transport-Security: The site specified a header that included "
+"multiple 'includeSubDomains' directives."
+msgstr ""
+
+#: STSInvalidIncludeSubdomains
+msgid ""
+"Strict-Transport-Security: The site specified a header that included an "
+"invalid 'includeSubDomains' directive."
+msgstr ""
+
+#: STSCouldNotSaveState
+msgid ""
+"Strict-Transport-Security: An error occurred noting the site as a Strict-"
+"Transport-Security host."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "Public-Key-Pins", "HPKP", "max-age" or "includeSubDomains"
+#: PKPUnknownError
+msgid ""
+"Public-Key-Pins: An unknown error occurred processing the header specified "
+"by the site."
+msgstr ""
+
+#: PKPUntrustworthyConnection
+msgid ""
+"Public-Key-Pins: The connection to the site is untrustworthy, so the "
+"specified header was ignored."
+msgstr ""
+
+#: PKPCouldNotParseHeader
+msgid ""
+"Public-Key-Pins: The site specified a header that could not be parsed "
+"successfully."
+msgstr ""
+
+#: PKPNoMaxAge
+msgid ""
+"Public-Key-Pins: The site specified a header that did not include a 'max-"
+"age' directive."
+msgstr ""
+
+#: PKPMultipleMaxAges
+msgid ""
+"Public-Key-Pins: The site specified a header that included multiple 'max-"
+"age' directives."
+msgstr ""
+
+#: PKPInvalidMaxAge
+msgid ""
+"Public-Key-Pins: The site specified a header that included an invalid 'max-"
+"age' directive."
+msgstr ""
+
+#: PKPMultipleIncludeSubdomains
+msgid ""
+"Public-Key-Pins: The site specified a header that included multiple "
+"'includeSubDomains' directives."
+msgstr ""
+
+#: PKPInvalidIncludeSubdomains
+msgid ""
+"Public-Key-Pins: The site specified a header that included an invalid "
+"'includeSubDomains' directive."
+msgstr ""
+
+#: PKPInvalidPin
+msgid ""
+"Public-Key-Pins: The site specified a header that included an invalid pin."
+msgstr ""
+
+#: PKPMultipleReportURIs
+msgid ""
+"Public-Key-Pins: The site specified a header that included multiple 'report-"
+"uri' directives."
+msgstr ""
+
+#: PKPPinsetDoesNotMatch
+msgid ""
+"Public-Key-Pins: The site specified a header that did not include a matching "
+"pin."
+msgstr ""
+
+#: PKPNoBackupPin
+msgid ""
+"Public-Key-Pins: The site specified a header that did not include a backup "
+"pin."
+msgstr ""
+
+#: PKPCouldNotSaveState
+msgid ""
+"Public-Key-Pins: An error occurred noting the site as a Public-Key-Pins host."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "SHA-1"
 #: SHA1Sig
@@ -211,6 +325,19 @@ msgid ""
 "insecure."
 msgstr ""
 " ಈ ತಾಣವು ಗೂಢಲಿಪೀಕರಣಕ್ಕಾಗಿ ಬಳಕೆಯಲ್ಲಿರದ ಮತ್ತು ಸುರಕ್ಷಿತವಲ್ಲದ ಸಿಫರ್ RC4 ಅನ್ನು ಬಳಸುತ್ತದೆ. "
+
+#~ msgid ""
+#~ "Cross-Origin Request Blocked: The Same Origin Policy disallows reading "
+#~ "the remote resource at %1$S. (Reason: CORS request failed)."
+#~ msgstr ""
+#~ "ಕ್ರಾಸ್-ಆರಿಜಿನ್ ಮನವಿ ಪ್ರತಿಬಂಧಿತವಾಗಿದೆ: ಅದೇ ಮೂಲ ನೀತಿ ದೂರದ ಸಂಪನ್ಮೂಲ %1$S ರಲ್ಲಿ "
+#~ "ಓದುವುದನ್ನು ನಿರ್ಭಂದಿಸುತ್ತದೆ. (ಕಾರಣ: CORS ಮನವಿ ವಿಫಲವಾಗಿದೆ)."
+
+#~ msgid "The site specified an invalid Strict-Transport-Security header."
+#~ msgstr "ತಾಣವು ಒಂದು ಅಮಾನ್ಯವಾದ ಸ್ಟ್ರಿಕ್ಟ್-ಟ್ರಾನ್ಸ್‌ಪೋರ್ಟ್-ಸೆಕ್ಯುರಿಟಿ ಹೆಡರ್ ಅನ್ನು ಸೂಚಿಸಿದೆ."
+
+#~ msgid "The site specified an invalid Public-Key-Pins header."
+#~ msgstr "ತಾಣವು ಒಂದು ತಪ್ಪಾದ ಪಬ್ಲಿಕ್-ಕೀ-ಪಿನ್ಸ್ ಹೆಡರ್ ಅನ್ನು ಸೂಚಿಸಿದೆ."
 
 #~ msgid ""
 #~ "Cross-Origin Request Blocked: The Same Origin Policy disallows reading "

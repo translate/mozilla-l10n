@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-30 17:16+0000\n"
+"POT-Creation-Date: 2015-08-11 11:38+0000\n"
 "PO-Revision-Date: 2015-07-09 23:01+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1436482869.000000\n"
@@ -869,28 +869,38 @@ msgstr "Chuir thu ris eisgeachd tèarainteachd airson na làraich seo."
 msgid "%S, %S"
 msgstr "%S, %S"
 
-#: identity.broken_loaded
-msgid ""
-"The connection to this website is not fully secure because it contains "
-"unencrypted elements (such as images) or the encryption is not strong enough."
-msgstr ""
-"Chan eil an ceangal ris an làrach-lìn seo gu tur tèarainte a chionn 's gu "
-"bheil eileamaidean neo-chrioptaichte (mar dhealbhan) ann no leis nach eil an "
-"crioptachadh làidir gu leòr."
-
-#: identity.mixed_active_loaded2
-msgid ""
-"This website contains interactive content that isn't encrypted (such as "
-"scripts). Other people can view your information or modify the website's "
-"behavior."
-msgstr ""
-"Tha susbaint eadar-ghnìomhach air an làrach-lìn seo nach eil crioptaichte "
-"(mar sgriobtaichean). Chì daoine eile am fiosrachadh agad agus is urrainn "
-"dhaibh giùlan a' bhrabhsair agad atharrachadh."
-
 #: identity.unknown.tooltip
 msgid "This website does not supply identity information."
 msgstr "Chan eil an làrach seo a' nochdadh fiosrachadh dearbh-aithne."
+
+#: trackingProtection.intro.title
+msgid "How Tracking Protection works"
+msgstr ""
+
+#. # LOCALIZATION NOTE (trackingProtection.intro.description): %S is brandShortName
+#: trackingProtection.intro.description
+msgid ""
+"When the shield is visible, that means Firefox is actively blocking content "
+"that tracks you."
+msgstr ""
+
+#. # LOCALIZATION NOTE (trackingProtection.intro.step1of3): Indicates that the intro panel is step one of three in a tour.
+#: trackingProtection.intro.step1of3
+msgid "1 of 3"
+msgstr ""
+
+#: trackingProtection.intro.nextButton.label
+#, fuzzy
+msgid "Next"
+msgstr "Air a&dhart"
+
+#: trackingProtection.icon.activeTooltip
+msgid "Tracking attempts blocked"
+msgstr ""
+
+#: trackingProtection.icon.disabledTooltip
+msgid "Tracking content detected"
+msgstr ""
 
 #. # Edit Bookmark UI
 #: editBookmarkPanel.pageBookmarkedTitle
@@ -1293,11 +1303,6 @@ msgstr "A bheil thu airson “%1$S” a dhì-stàladh?"
 msgid "%S is now fullscreen."
 msgstr "Tha %S 'na làn-sgrìn a-nis."
 
-#. # LOCALIZATION NOTE (fullscreen.rememberDecision): displayed when we enter HTML5 fullscreen mode, %S is the domain name of the focused website (e.g. mozilla.com).
-#: fullscreen.rememberDecision
-msgid "Remember decision for %S"
-msgstr "Cuimhnich mo cho-dhùnadh mu %S"
-
 #. # LOCALIZATION NOTE (fullscreenButton.tooltip): %S is the keyboard shortcut for full screen
 #: fullscreenButton.tooltip
 msgid "Display the window in full screen (%S)"
@@ -1401,7 +1406,8 @@ msgstr "C&làraich a-mach"
 
 #. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message,
 #. #                    getUserMedia.shareScreen.message, getUserMedia.shareCameraAndMicrophone.message,
-#. #                    getUserMedia.shareScreenAndMicrophone.message):
+#. #                    getUserMedia.shareScreenAndMicrophone.message, getUserMedia.shareCameraAndAudioCapture.message,
+#. #                    getUserMedia.shareAudioCapture.message, getUserMedia.shareScreenAndAudioCapture.message):
 #. #  %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.shareCamera.message
 msgid "Would you like to share your camera with %S?"
@@ -1420,9 +1426,23 @@ msgid "Would you like to share your camera and microphone with %S?"
 msgstr ""
 "A bheil thu airson am micreofon 's an camara agad a cho-roinneadh le %S?"
 
+#: getUserMedia.shareCameraAndAudioCapture.message
+#, fuzzy
+msgid "Would you like to share your camera and this tab's audio with %S?"
+msgstr ""
+"A bheil thu airson am micreofon 's an camara agad a cho-roinneadh le %S?"
+
 #: getUserMedia.shareScreenAndMicrophone.message
 msgid "Would you like to share your microphone and screen with %S?"
 msgstr "A bheil thu airson am micreofon is sgrìn agad a cho-roinneadh le %S?"
+
+#: getUserMedia.shareScreenAndAudioCapture.message
+msgid "Would you like to share this tab's audio and your screen with %S?"
+msgstr ""
+
+#: getUserMedia.shareAudioCapture.message
+msgid "Would you like to share this tab's audio with %S?"
+msgstr ""
 
 #: getUserMedia.selectWindow.label getUserMedia.selectWindow.accesskey
 msgid "&Window to share:"
@@ -1541,6 +1561,11 @@ msgstr "Tha thu a' co-roinneadh uinneag leis an duilleag seo an-dràsta."
 msgid "You are currently sharing a tab with this page."
 msgstr "Tha thu a’ co-roinneadh taba leis an duilleag seo an-dràsta."
 
+#: getUserMedia.sharingAudioCapture.message
+#, fuzzy
+msgid "You are currently sharing a tab's audio with this page."
+msgstr "Tha thu a’ co-roinneadh taba leis an duilleag seo an-dràsta."
+
 #: getUserMedia.continueSharing.label getUserMedia.continueSharing.accesskey
 msgid "&Continue Sharing"
 msgstr "Lean air a' &cho-roinneadh"
@@ -1555,6 +1580,7 @@ msgstr "Ta&baichean a tha a' co-roinneadh uidheaman"
 
 #. # LOCALIZATION NOTE (getUserMedia.sharingMenuCamera
 #. #                    getUserMedia.sharingMenuMicrophone,
+#. #                    getUserMedia.sharingMenuAudioCapture,
 #. #                    getUserMedia.sharingMenuApplication,
 #. #                    getUserMedia.sharingMenuScreen,
 #. #                    getUserMedia.sharingMenuWindow,
@@ -1564,6 +1590,11 @@ msgstr "Ta&baichean a tha a' co-roinneadh uidheaman"
 #. #                    getUserMedia.sharingMenuCameraMicrophoneScreen,
 #. #                    getUserMedia.sharingMenuCameraMicrophoneWindow,
 #. #                    getUserMedia.sharingMenuCameraMicrophoneBrowser,
+#. #                    getUserMedia.sharingMenuCameraAudioCapture,
+#. #                    getUserMedia.sharingMenuCameraAudioCaptureApplication,
+#. #                    getUserMedia.sharingMenuCameraAudioCaptureScreen,
+#. #                    getUserMedia.sharingMenuCameraAudioCaptureWindow,
+#. #                    getUserMedia.sharingMenuCameraAudioCaptureBrowser,
 #. #                    getUserMedia.sharingMenuCameraApplication,
 #. #                    getUserMedia.sharingMenuCameraScreen,
 #. #                    getUserMedia.sharingMenuCameraWindow,
@@ -1571,7 +1602,11 @@ msgstr "Ta&baichean a tha a' co-roinneadh uidheaman"
 #. #                    getUserMedia.sharingMenuMicrophoneApplication,
 #. #                    getUserMedia.sharingMenuMicrophoneScreen,
 #. #                    getUserMedia.sharingMenuMicrophoneWindow,
-#. #                    getUserMedia.sharingMenuMicrophoneBrowser):
+#. #                    getUserMedia.sharingMenuMicrophoneBrowser,
+#. #                    getUserMedia.sharingMenuAudioCaptureApplication,
+#. #                    getUserMedia.sharingMenuAudioCaptureScreen,
+#. #                    getUserMedia.sharingMenuAudioCaptureWindow,
+#. #                    getUserMedia.sharingMenuAudioCaptureBrowser):
 #. # %S is the website origin (e.g. www.mozilla.org)
 #: getUserMedia.sharingMenuCamera
 msgid "%S (camera)"
@@ -1580,6 +1615,10 @@ msgstr "%S (camara)"
 #: getUserMedia.sharingMenuMicrophone
 msgid "%S (microphone)"
 msgstr "%S (micreofon)"
+
+#: getUserMedia.sharingMenuAudioCapture
+msgid "%S (tab audio)"
+msgstr ""
 
 #: getUserMedia.sharingMenuApplication
 msgid "%S (application)"
@@ -1617,6 +1656,27 @@ msgstr "%S (camara, micreofon is uinneag)"
 msgid "%S (camera, microphone and tab)"
 msgstr "%S (camara, micreofon is taba)"
 
+#: getUserMedia.sharingMenuCameraAudioCapture
+#, fuzzy
+msgid "%S (camera and tab audio)"
+msgstr "%S (camara ’s taba)"
+
+#: getUserMedia.sharingMenuCameraAudioCaptureApplication
+msgid "%S (camera, tab audio and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraAudioCaptureScreen
+msgid "%S (camera, tab audio and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraAudioCaptureWindow
+msgid "%S (camera, tab audio and window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuCameraAudioCaptureBrowser
+msgid "%S (camera, tab audio and tab)"
+msgstr ""
+
 #: getUserMedia.sharingMenuCameraApplication
 msgid "%S (camera and application)"
 msgstr "%S (an camara is an aplacaid)"
@@ -1648,6 +1708,22 @@ msgstr "%S (micreofon is uinneag)"
 #: getUserMedia.sharingMenuMicrophoneBrowser
 msgid "%S (microphone and tab)"
 msgstr "%S (micreofon is taba)"
+
+#: getUserMedia.sharingMenuAudioCaptureApplication
+msgid "%S (tab audio and application)"
+msgstr ""
+
+#: getUserMedia.sharingMenuAudioCaptureScreen
+msgid "%S (tab audio and screen)"
+msgstr ""
+
+#: getUserMedia.sharingMenuAudioCaptureWindow
+msgid "%S (tab audio and window)"
+msgstr ""
+
+#: getUserMedia.sharingMenuAudioCaptureBrowser
+msgid "%S (tab audio and tab)"
+msgstr ""
 
 #. # LOCALIZATION NOTE(getUserMedia.sharingMenuUnknownHost): this is used for the website
 #. # origin for the sharing menu if no readable origin could be deduced from the URL.
@@ -1818,99 +1894,7 @@ msgstr "Ath-thòisich %S"
 msgid "Download Update"
 msgstr "Luchdaich a-nuas an t-ùrachadh"
 
-#. # LOCALIZATION NOTE : FILE Reading List and Reader View are feature names and therefore typically used as proper nouns.
-#. # Pre-landed string for bug 1124153
-#. # LOCALIZATION NOTE(readingList.sidebar.showMore.tooltip): %S is the number of items that will be added by clicking this button
-#. # Semicolon-separated list of plural forms. See:
-#. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#: readingList.sidebar.showMore.tooltip
-msgid "Show %S more item;Show %S more items"
-msgstr ""
-"Seall %S nì eile;Seall %S nì eile;Seall %S nithean eile;Seall %S nì eile"
-
-#. # Pre-landed strings for bug 1131457 / bug 1131461
-#: readingList.urlbar.add
-msgid "Add page to Reading List"
-msgstr "Cuir an duilleag ris an liosta-leughaidh"
-
-#: readingList.urlbar.addDone
-msgid "Page added to Reading List"
-msgstr "Chaidh an duilleag a chur ris an liosta leughaidh"
-
-#: readingList.urlbar.remove
-msgid "Remove page from Reading List"
-msgstr "Thoir an duilleag air falbh on liosta leughaidh"
-
-#: readingList.urlbar.removeDone
-msgid "Page removed from Reading List"
-msgstr "Chaidh an duilleag a thoirt air falbh on liosta leughaidh"
-
-#. # Pre-landed strings for bug 1133610 & bug 1133611
-#. # LOCALIZATION NOTE(readingList.promo.noSync.label): %S a link, using the text from readingList.promo.noSync.link
-#: readingList.promo.noSync.label
-msgid "Access your Reading List on all your devices. %S"
-msgstr ""
-"Faigh cothrom air an liosta leughadh agad air na h-uidheaman uile agad. %S"
-
-#. # LOCALIZATION NOTE(readingList.promo.noSync.link): %S is syncBrandShortName
-#: readingList.promo.noSync.link
-msgid "Get started with %S."
-msgstr "Tòisich air %S."
-
-#. # LOCALIZATION NOTE(readingList.promo.hasSync.label): %S is syncBrandShortName
-#: readingList.promo.hasSync.label
-msgid ""
-"You can now access your Reading List on all your devices connected by %S."
-msgstr ""
-"Gheibh thu cothrom air an liosta leughadh agad air gach uidheam a tha "
-"ceangailte ri %S a-nis."
-
-#. # Pre-landed strings for bug 1136570
-#: readerView.promo.firstDetectedArticle.title
-msgid "Read and save articles easily"
-msgstr "Leugh is sàbhail artaigilean gun duilgheadas"
-
-#: readerView.promo.firstDetectedArticle.body
-msgid ""
-"Click the book to make articles easier to read and use the plus to save them "
-"for later."
-msgstr ""
-"Briog air an leabhar gus artaigilean a dhèanamh nas fhasa ri leughadh agus "
-"am plus gus an sàbhaladh airson uaireigin eile."
-
-#: readingList.promo.firstUse.exitTourButton
-msgid "Close"
-msgstr "Dùin"
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.tourDoneButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.tourDoneButton
-msgid "Start Reading »"
-msgstr "Tòisich air leughadh »"
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.readingList.multipleStepsTitle):
-#. # This is used when there are multiple steps in the tour.
-#. # %1$S is the current step's title (readingList.promo.firstUse.*.title), %2$S is the current step number of the tour, %3$S is the total number of steps.
-#: readingList.promo.firstUse.multipleStepsTitle
-msgid "%1$S (%2$S/%3$S)"
-msgstr "%1$S (%2$S/%3$S)"
-
-#: readingList.promo.firstUse.readingList.title
-msgid "Reading List"
-msgstr "An liosta leughaidh"
-
-#: readingList.promo.firstUse.readingList.body
-msgid "Save articles for later and find them easily when you need them."
-msgstr ""
-"Sàbhail artaigilean airson uaireigin eile ach am faigh thu greim orra gu "
-"luath nuair a bhios feum agad orra."
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.readingList.moveToButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.readingList.moveToButton
-msgid "Next: Easy finding »"
-msgstr "Nise, a' faighinn greim air rud »"
-
+#. # LOCALIZATION NOTE : FILE Reader View is a feature name and therefore typically used as a proper noun.
 #: readingList.promo.firstUse.readerView.title
 msgid "Reader View"
 msgstr "Sealladh an leughadair"
@@ -1920,87 +1904,6 @@ msgid "Remove clutter so you can focus exactly on what you want to read."
 msgstr ""
 "A-mach leis an treamsgal ach an urrainn dhut làn-aire a chur air na tha thu "
 "airson leughadh."
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.readerView.moveToButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.readerView.moveToButton
-msgid "Next: Easy reading »"
-msgstr "Nise, leughadh furasta »"
-
-#: readingList.promo.firstUse.syncNotSignedIn.title
-msgctxt "readingList.promo.firstUse.syncNotSignedIn.title"
-msgid "Sync"
-msgstr "Sioncronachadh"
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.syncNotSignedIn.body): %S is brandShortName
-#: readingList.promo.firstUse.syncNotSignedIn.body
-msgid "Sign in to access your Reading List everywhere you use %S."
-msgstr ""
-"Clàraich a-steach is faigh cothrom air an liosta-leughaidh àite sam bith a "
-"chleachdas tu %S."
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.syncNotSignedIn.moveToButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.syncNotSignedIn.moveToButton
-msgctxt "readingList.promo.firstUse.syncNotSignedIn.moveToButton"
-msgid "Next: Easy access »"
-msgstr "Nise, cothrom furasta »"
-
-#: readingList.promo.firstUse.syncSignedIn.title
-msgctxt "readingList.promo.firstUse.syncSignedIn.title"
-msgid "Sync"
-msgstr "Sioncronachadh"
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.syncSignedIn.body): %S is brandShortName
-#: readingList.promo.firstUse.syncSignedIn.body
-msgid "Open your Reading List articles everywhere you use %S."
-msgstr ""
-"Fosgail na h-artaigilean a tha agad air an liosta-leughaidh àite sam bith a "
-"chleachdas tu %S."
-
-#. # LOCALIZATION NOTE(readingList.promo.firstUse.syncSignedIn.moveToButton):
-#. # » is used as an indication that pressing this button progresses through the tour.
-#: readingList.promo.firstUse.syncSignedIn.moveToButton
-msgctxt "readingList.promo.firstUse.syncSignedIn.moveToButton"
-msgid "Next: Easy access »"
-msgstr "Nise, cothrom furasta »"
-
-#. # Pre-landed strings for bug 1136570
-#. # LOCALIZATION NOTE(readingList.prepopulatedArticles.learnMore):
-#. # This will show as an item in the Reading List, and will link to a page that explains and shows how the Reading List and Reader View works.
-#. # This will be staged at:
-#. #   https://www.allizom.org/firefox/reading/start/
-#. # And eventually available at:
-#. #   https://www.mozilla.org/firefox/reading/start/
-#. # %S is brandShortName
-#: readingList.prepopulatedArticles.learnMore
-msgid "Learn how %S makes reading more pleasant"
-msgstr "Fiosraich mar a bhios an leughadh nas tlachdmhoire le %S"
-
-#. # LOCALIZATION NOTE(readingList.prepopulatedArticles.supportReadingList):
-#. # This will show as an item in the Reading List, and will link to a SUMO article describing the Reading List:
-#. #   https://support.mozilla.org/kb/save-sync-and-read-pages-anywhere-reading-list
-#: readingList.prepopulatedArticles.supportReadingList
-msgid "Save, sync and read pages anywhere with Reading List"
-msgstr ""
-"Sàbhail, sioncronaich is leugh duilleagan àite sam bith leis an liosta-"
-"leughaidh"
-
-#. # LOCALIZATION NOTE(readingList.prepopulatedArticles.supportReaderView):
-#. # This will show as an item in the Reading List, and will link to a SUMO article describing the Reader View:
-#. #   https://support.mozilla.org/kb/enjoy-clutter-free-web-pages-reader-view
-#: readingList.prepopulatedArticles.supportReaderView
-msgid "Enjoy clutter-free Web pages with Reader View"
-msgstr ""
-"Gabh tlachd ann an duilleagan-lìn gun treamsgal san t-sealladh-leughaidh"
-
-#. # LOCALIZATION NOTE(readingList.prepopulatedArticles.learnMore):
-#. # This will show as an item in the Reading List, and will link to a SUMO article describing Sync:
-#. #   https://support.mozilla.org/kb/how-do-i-set-up-firefox-sync
-#. # %S is syncBrandShortName
-#: readingList.prepopulatedArticles.supportSync
-msgid "Access your Reading List anywhere with %S"
-msgstr "Faigh cothrom air an liosta-leughaidh agad àite sam bith le %S"
 
 #. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
 #. #                    e10s.offerPopup.highlight1
@@ -2080,6 +1983,130 @@ msgstr "Cui&r à comas is ath-thòisich"
 #: e10s.accessibilityNotice.dontDisable.accesskey
 msgid "&Don't Disable"
 msgstr "&Na cuir à comas e"
+
+#~ msgid ""
+#~ "The connection to this website is not fully secure because it contains "
+#~ "unencrypted elements (such as images) or the encryption is not strong "
+#~ "enough."
+#~ msgstr ""
+#~ "Chan eil an ceangal ris an làrach-lìn seo gu tur tèarainte a chionn 's gu "
+#~ "bheil eileamaidean neo-chrioptaichte (mar dhealbhan) ann no leis nach eil "
+#~ "an crioptachadh làidir gu leòr."
+
+#~ msgid ""
+#~ "This website contains interactive content that isn't encrypted (such as "
+#~ "scripts). Other people can view your information or modify the website's "
+#~ "behavior."
+#~ msgstr ""
+#~ "Tha susbaint eadar-ghnìomhach air an làrach-lìn seo nach eil crioptaichte "
+#~ "(mar sgriobtaichean). Chì daoine eile am fiosrachadh agad agus is urrainn "
+#~ "dhaibh giùlan a' bhrabhsair agad atharrachadh."
+
+#~ msgid "Remember decision for %S"
+#~ msgstr "Cuimhnich mo cho-dhùnadh mu %S"
+
+#~ msgid "Show %S more item;Show %S more items"
+#~ msgstr ""
+#~ "Seall %S nì eile;Seall %S nì eile;Seall %S nithean eile;Seall %S nì eile"
+
+#~ msgid "Add page to Reading List"
+#~ msgstr "Cuir an duilleag ris an liosta-leughaidh"
+
+#~ msgid "Page added to Reading List"
+#~ msgstr "Chaidh an duilleag a chur ris an liosta leughaidh"
+
+#~ msgid "Remove page from Reading List"
+#~ msgstr "Thoir an duilleag air falbh on liosta leughaidh"
+
+#~ msgid "Page removed from Reading List"
+#~ msgstr "Chaidh an duilleag a thoirt air falbh on liosta leughaidh"
+
+#~ msgid "Access your Reading List on all your devices. %S"
+#~ msgstr ""
+#~ "Faigh cothrom air an liosta leughadh agad air na h-uidheaman uile agad. %S"
+
+#~ msgid "Get started with %S."
+#~ msgstr "Tòisich air %S."
+
+#~ msgid ""
+#~ "You can now access your Reading List on all your devices connected by %S."
+#~ msgstr ""
+#~ "Gheibh thu cothrom air an liosta leughadh agad air gach uidheam a tha "
+#~ "ceangailte ri %S a-nis."
+
+#~ msgid "Read and save articles easily"
+#~ msgstr "Leugh is sàbhail artaigilean gun duilgheadas"
+
+#~ msgid ""
+#~ "Click the book to make articles easier to read and use the plus to save "
+#~ "them for later."
+#~ msgstr ""
+#~ "Briog air an leabhar gus artaigilean a dhèanamh nas fhasa ri leughadh "
+#~ "agus am plus gus an sàbhaladh airson uaireigin eile."
+
+#~ msgid "Close"
+#~ msgstr "Dùin"
+
+#~ msgid "Start Reading »"
+#~ msgstr "Tòisich air leughadh »"
+
+#~ msgid "%1$S (%2$S/%3$S)"
+#~ msgstr "%1$S (%2$S/%3$S)"
+
+#~ msgid "Reading List"
+#~ msgstr "An liosta leughaidh"
+
+#~ msgid "Save articles for later and find them easily when you need them."
+#~ msgstr ""
+#~ "Sàbhail artaigilean airson uaireigin eile ach am faigh thu greim orra gu "
+#~ "luath nuair a bhios feum agad orra."
+
+#~ msgid "Next: Easy finding »"
+#~ msgstr "Nise, a' faighinn greim air rud »"
+
+#~ msgid "Next: Easy reading »"
+#~ msgstr "Nise, leughadh furasta »"
+
+#~ msgctxt "readingList.promo.firstUse.syncNotSignedIn.title"
+#~ msgid "Sync"
+#~ msgstr "Sioncronachadh"
+
+#~ msgid "Sign in to access your Reading List everywhere you use %S."
+#~ msgstr ""
+#~ "Clàraich a-steach is faigh cothrom air an liosta-leughaidh àite sam bith "
+#~ "a chleachdas tu %S."
+
+#~ msgctxt "readingList.promo.firstUse.syncNotSignedIn.moveToButton"
+#~ msgid "Next: Easy access »"
+#~ msgstr "Nise, cothrom furasta »"
+
+#~ msgctxt "readingList.promo.firstUse.syncSignedIn.title"
+#~ msgid "Sync"
+#~ msgstr "Sioncronachadh"
+
+#~ msgid "Open your Reading List articles everywhere you use %S."
+#~ msgstr ""
+#~ "Fosgail na h-artaigilean a tha agad air an liosta-leughaidh àite sam bith "
+#~ "a chleachdas tu %S."
+
+#~ msgctxt "readingList.promo.firstUse.syncSignedIn.moveToButton"
+#~ msgid "Next: Easy access »"
+#~ msgstr "Nise, cothrom furasta »"
+
+#~ msgid "Learn how %S makes reading more pleasant"
+#~ msgstr "Fiosraich mar a bhios an leughadh nas tlachdmhoire le %S"
+
+#~ msgid "Save, sync and read pages anywhere with Reading List"
+#~ msgstr ""
+#~ "Sàbhail, sioncronaich is leugh duilleagan àite sam bith leis an liosta-"
+#~ "leughaidh"
+
+#~ msgid "Enjoy clutter-free Web pages with Reader View"
+#~ msgstr ""
+#~ "Gabh tlachd ann an duilleagan-lìn gun treamsgal san t-sealladh-leughaidh"
+
+#~ msgid "Access your Reading List anywhere with %S"
+#~ msgstr "Faigh cothrom air an liosta-leughaidh agad àite sam bith le %S"
 
 #~ msgid ""
 #~ "The add-on from #2 could not be installed because it does not match the "

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-30 17:16+0000\n"
+"POT-Creation-Date: 2015-08-11 11:38+0000\n"
 "PO-Revision-Date: 2015-08-08 09:50+0000\n"
 "Last-Translator: Gabor Kelemen <kelemeng@ubuntu.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1439027448.000000\n"
@@ -229,6 +229,10 @@ msgstr "Az összes böngészőlap &megjelenítése"
 msgid "Sign in to &syncBrand.shortName.label;"
 msgstr "Jelentkezzen be a &syncBrand.shortName.label;be"
 
+#: fxaSignedIn.tooltip
+msgid "Open &syncBrand.shortName.label; preferences"
+msgstr ""
+
 #: fxaSignInError.label
 msgid "Reconnect to &syncBrand.shortName.label;"
 msgstr "Újracsatlakozás a &syncBrand.shortName.label;hez"
@@ -273,14 +277,6 @@ msgstr "&Eszköztárak elrejtése"
 #: fullScreenExit.label fullScreenExit.accesskey
 msgid "Exit &Full Screen Mode"
 msgstr "&Kilépés a teljes képernyős módból"
-
-#: fullscreenAllowButton.label
-msgid "Allow"
-msgstr "Engedélyezés"
-
-#: fullscreenExitButton.label
-msgid "Deny"
-msgstr "Tiltás"
 
 #: fullscreenExitHint2.value
 msgid "Press ESC at any time to exit."
@@ -925,6 +921,23 @@ msgstr "d"
 msgid "Switch to tab:"
 msgstr "Váltás erre a lapra:"
 
+#: urlbar.searchSuggestionsNotification.question
+msgid "Would you like to improve your search experience with suggestions?"
+msgstr ""
+
+#: urlbar.searchSuggestionsNotification.learnMore
+#, fuzzy
+msgid "Learn more…"
+msgstr "&További tudnivalók…"
+
+#: urlbar.searchSuggestionsNotification.disable
+msgid "No"
+msgstr "Nem"
+
+#: urlbar.searchSuggestionsNotification.enable
+msgid "Yes"
+msgstr "Igen"
+
 #. Comment duplicated from browser-sets.inc:
 #. Search Command Key Logic works like this:
 #. Unix: Ctrl+J (0.8, 0.9 support)
@@ -952,6 +965,17 @@ msgstr "e"
 msgctxt "searchFocusUnix.commandkey"
 msgid "j"
 msgstr "j"
+
+#. LOCALIZATION NOTE (contentSearchInput.label, contentSearchSubmit.label):
+#. These are set as the aria-label attribute for the search input box and
+#. submit button in the in-content search UI, to be used by screen readers.
+#: contentSearchInput.label
+msgid "Search query"
+msgstr ""
+
+#: contentSearchSubmit.label
+msgid "Submit search"
+msgstr ""
 
 # Ez szándékosan üres! A következő " with:" tartalmazza a teljes fordítást: "x keresése ezzel: y" lesz
 #. LOCALIZATION NOTE (searchFor.label, searchWith.label):
@@ -1376,6 +1400,11 @@ msgstr "&Bezárás"
 msgid "W"
 msgstr "W"
 
+#: toggleMuteCmd.key
+msgctxt "toggleMuteCmd.key"
+msgid "M"
+msgstr ""
+
 #: pageStyleMenu.label pageStyleMenu.accesskey
 msgid "Page St&yle"
 msgstr "Oldal&stílus"
@@ -1465,7 +1494,7 @@ msgid "Cancel"
 msgstr "Mégse"
 
 #: editBookmark.removeBookmark.accessKey
-msgctxt "editBookmark.removeBookmark.accessKey"
+#, fuzzy
 msgid "R"
 msgstr "E"
 
@@ -1476,6 +1505,10 @@ msgstr "Biztonságos kapcsolat"
 #: identity.connectionNotSecure
 msgid "Connection is Not Secure"
 msgstr "A kapcsolat nem biztonságos"
+
+#: identity.connectionFile
+msgid "This page is stored on your computer."
+msgstr ""
 
 #: identity.connectionVerified
 msgid ""
@@ -1488,6 +1521,94 @@ msgstr ""
 #: identity.connectionInternal
 msgid "This is a secure &brandShortName; page."
 msgstr "Ez egy biztonságos &brandShortName; oldal."
+
+#. Strings for connection state warnings.
+#: identity.activeBlocked
+msgctxt "identity.activeBlocked"
+msgid "&brandShortName; has blocked parts of this page that are not secure."
+msgstr ""
+
+#: identity.passiveLoaded
+msgid "Parts of this page are not secure (such as images)."
+msgstr ""
+
+#: identity.activeLoaded
+msgid "You have disabled protection on this page."
+msgstr ""
+
+#: identity.weakEncryption
+msgid "This page uses weak encryption."
+msgstr ""
+
+#. Strings for connection state warnings in the subview.
+#: identity.description.insecure
+msgid ""
+"Your connection to this site is not private. Information you submit could be "
+"viewed by others (like passwords, messages, credit cards, etc.)."
+msgstr ""
+
+#: identity.description.weakCipher
+msgid ""
+"Your connection to this website uses weak encryption and is not private."
+msgstr ""
+
+#: identity.description.weakCipher2
+msgid ""
+"Other people can view your information or modify the website's behavior."
+msgstr ""
+
+#: identity.description.activeBlocked
+msgctxt "identity.description.activeBlocked"
+msgid "&brandShortName; has blocked parts of this page that are not secure."
+msgstr ""
+
+#: identity.description.passiveLoaded
+msgid ""
+"Your connection is not private and information you share with the site could "
+"be viewed by others."
+msgstr ""
+
+#: identity.description.passiveLoaded2
+msgid "This website contains content that is not secure (such as images)."
+msgstr ""
+
+#: identity.description.passiveLoaded3
+msgid ""
+"Although &brandShortName; has blocked some content, there is still content "
+"on the page that is not secure (such as images)."
+msgstr ""
+
+#: identity.description.activeLoaded
+msgid ""
+"This website contains content that is not secure (such as scripts) and your "
+"connection to it is not private."
+msgstr ""
+
+#: identity.description.activeLoaded2
+msgid ""
+"Information you share with this site could be viewed by others (like "
+"passwords, messages, credit cards, etc.)."
+msgstr ""
+
+#: identity.enableMixedContentBlocking.label
+#: identity.enableMixedContentBlocking.accesskey
+#, fuzzy
+msgctxt ""
+"identity.enableMixedContentBlocking.label identity."
+"enableMixedContentBlocking.accesskey"
+msgid "&Enable protection"
+msgstr "Védelem &bekapcsolása"
+
+#: identity.disableMixedContentBlocking.label
+#: identity.disableMixedContentBlocking.accesskey
+msgid "&Disable protection for now"
+msgstr "Védelem &kikapcsolása most"
+
+#: identity.learnMore
+#, fuzzy
+msgctxt "identity.learnMore"
+msgid "Learn More"
+msgstr "További tudnivalók"
 
 #: identity.moreInfoLinkText2
 msgid "More Information"
@@ -1677,47 +1798,56 @@ msgstr "Megosztandó &kamera:"
 msgid "&Microphone to share:"
 msgstr "&Megosztandó mikrofon:"
 
+#: getUserMedia.audioCapture.label
+msgid "Audio from the tab will be shared."
+msgstr ""
+
 #: getUserMedia.allWindowsShared.message
 msgid "All visible windows on your screen will be shared."
 msgstr "A képernyő minden látható ablaka meg lesz osztva."
 
-#. Bad Content Blocker Doorhanger Notification
-#: badContentBlocked.moreinfo
-msgid "Most websites will work properly even if content is blocked."
+#: trackingProtection.title
+msgid "Tracking Protection"
 msgstr ""
-"A legtöbb weboldal megfelelően működik akkor is, ha a tartalom részben "
-"blokkolva van."
 
-#: mixedContentBlocked2.message
-msgid "Insecure content"
-msgstr "Nem biztonságos tartalom"
+#: trackingProtection.detectedBlocked3
+msgid ""
+"&brandShortName; is blocking parts of the page that may track your browsing."
+msgstr ""
 
-#: mixedContentBlocked2.moreinfo
-msgid "Some unencrypted elements on this website have been blocked."
-msgstr "A weboldal egyes nem titkosított elemei blokkolva lettek."
+#: trackingProtection.detectedNotBlocked3
+msgid ""
+"This site includes elements that may track your browsing. You have disabled "
+"protection."
+msgstr ""
 
-#: mixedContentBlocked2.learnMore
-msgctxt "mixedContentBlocked2.learnMore"
-msgid "Learn More"
-msgstr "További tudnivalók"
+#: trackingProtection.notDetected3
+msgid "No tracking elements detected on this page."
+msgstr ""
 
-#: mixedContentBlocked2.options
-msgctxt "mixedContentBlocked2.options"
-msgid "Options"
-msgstr "Beállítások"
+#. LOCALIZATION NOTE (trackingProtection.unblock.label, trackingProtection.unblock.accesskey):
+#. The associated button with this label and accesskey is only shown when opening the control
+#. center while looking at a site with trackers in NON-private browsing mode.
+#: trackingProtection.unblock.label trackingProtection.unblock.accesskey
+#, fuzzy
+msgctxt "trackingProtection.unblock.label trackingProtection.unblock.accesskey"
+msgid "&Disable protection for this site"
+msgstr "Védelem &kikapcsolása ezen az oldalon"
 
-#: mixedContentBlocked2.unblock.label mixedContentBlocked2.unblock.accesskey
-msgid "&Disable protection for now"
-msgstr "Védelem &kikapcsolása most"
+#. LOCALIZATION NOTE (trackingProtection.unblockPrivate.label, trackingProtection.unblockPrivate.accesskey):
+#. The associated button with this label and accesskey is only shown when opening the control
+#. center while looking at a site with trackers in PRIVATE browsing mode.
+#: trackingProtection.unblockPrivate.label
+#: trackingProtection.unblockPrivate.accesskey
+#, fuzzy
+msgid "&Disable protection for this session"
+msgstr "Védelem &kikapcsolása ezen az oldalon"
 
-#: mixedContentBlocked2.block.label mixedContentBlocked2.block.accesskey
-msgctxt "mixedContentBlocked2.block.label mixedContentBlocked2.block.accesskey"
+#: trackingProtection.block2.label trackingProtection.block2.accesskey
+#, fuzzy
+msgctxt "trackingProtection.block2.label trackingProtection.block2.accesskey"
 msgid "&Enable protection"
 msgstr "Védelem &bekapcsolása"
-
-#: mixedContentBlocked2.disabled.message
-msgid "Protection is disabled"
-msgstr "Védelem kikapcsolva"
 
 #: trackingContentBlocked.message
 msgid "Tracking"
@@ -1733,12 +1863,16 @@ msgid "Learn More"
 msgstr "További tudnivalók"
 
 #: trackingContentBlocked.options
-msgctxt "trackingContentBlocked.options"
+#, fuzzy
 msgid "Options"
 msgstr "Beállítások"
 
 #: trackingContentBlocked.unblock2.label
 #: trackingContentBlocked.unblock2.accesskey
+#, fuzzy
+msgctxt ""
+"trackingContentBlocked.unblock2.label trackingContentBlocked.unblock2."
+"accesskey"
 msgid "&Disable protection for this site"
 msgstr "Védelem &kikapcsolása ezen az oldalon"
 
@@ -1887,46 +2021,6 @@ msgstr "&Most nem"
 msgid "&Don't ask me again"
 msgstr "&Ne kérdezze meg többet"
 
-#: readingList.label
-msgid "Reading List"
-msgstr "Olvasási lista"
-
-#: readingList.sidebar.commandKey
-msgctxt "readingList.sidebar.commandKey"
-msgid "R"
-msgstr "R"
-
-#: readingList.showSidebar.label
-msgid "Show Reading List Sidebar"
-msgstr "Olvasási lista oldalsáv megjelenítése"
-
-#. Pre-landed string for bug 1124153
-#: readingList.sidebar.showMore.label
-msgid "Show more…"
-msgstr "Több megjelenítése…"
-
-#. Pre-landed string for bug 1133662
-#: readingList.sidebar.emptyText
-msgid ""
-"Add articles to your Reading List to save them for later and find them "
-"easily when you need them."
-msgstr ""
-"Adjon cikkeket az olvasási listájához későbbre, és találja meg azokat, "
-"amikor szüksége van rájuk."
-
-#: readingList.sidebar.delete.tooltip
-msgid "Remove this from your Reading List"
-msgstr "Eltávolítás az olvasási listából"
-
-#. Pre-landed strings for bug 1123519
-#: readingList.sidebar.add.label
-msgid "Add to Reading List"
-msgstr "Olvasási listához adás"
-
-#: readingList.sidebar.add.tooltip
-msgid "Add this page to your Reading List"
-msgstr "Oldal olvasási listához adása"
-
 #. LOCALIZATION NOTE (saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label): Pocket is a brand name
 #: saveToPocketCmd.label saveToPocketCmd.accesskey
 msgid "Save Page to Poc&ket"
@@ -1939,6 +2033,59 @@ msgstr "&Hivatkozás mentése a Pocketbe"
 #: pocketMenuitem.label
 msgid "View Pocket List"
 msgstr "Pocket lista megjelenítése"
+
+#~ msgid "Allow"
+#~ msgstr "Engedélyezés"
+
+#~ msgid "Deny"
+#~ msgstr "Tiltás"
+
+#~ msgid "Most websites will work properly even if content is blocked."
+#~ msgstr ""
+#~ "A legtöbb weboldal megfelelően működik akkor is, ha a tartalom részben "
+#~ "blokkolva van."
+
+#~ msgid "Insecure content"
+#~ msgstr "Nem biztonságos tartalom"
+
+#~ msgid "Some unencrypted elements on this website have been blocked."
+#~ msgstr "A weboldal egyes nem titkosított elemei blokkolva lettek."
+
+#~ msgid "Protection is disabled"
+#~ msgstr "Védelem kikapcsolva"
+
+#~ msgctxt "trackingContentBlocked.options"
+#~ msgid "Options"
+#~ msgstr "Beállítások"
+
+#~ msgid "Reading List"
+#~ msgstr "Olvasási lista"
+
+#~ msgctxt "readingList.sidebar.commandKey"
+#~ msgid "R"
+#~ msgstr "R"
+
+#~ msgid "Show Reading List Sidebar"
+#~ msgstr "Olvasási lista oldalsáv megjelenítése"
+
+#~ msgid "Show more…"
+#~ msgstr "Több megjelenítése…"
+
+#~ msgid ""
+#~ "Add articles to your Reading List to save them for later and find them "
+#~ "easily when you need them."
+#~ msgstr ""
+#~ "Adjon cikkeket az olvasási listájához későbbre, és találja meg azokat, "
+#~ "amikor szüksége van rájuk."
+
+#~ msgid "Remove this from your Reading List"
+#~ msgstr "Eltávolítás az olvasási listából"
+
+#~ msgid "Add to Reading List"
+#~ msgstr "Olvasási listához adás"
+
+#~ msgid "Add this page to your Reading List"
+#~ msgstr "Oldal olvasási listához adása"
 
 #~ msgid "This website does not supply identity information."
 #~ msgstr "Ez a webhely nem szolgáltat magáról azonosító információkat."
