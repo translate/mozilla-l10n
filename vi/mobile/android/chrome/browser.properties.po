@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-02 00:07+0000\n"
+"POT-Creation-Date: 2015-08-12 03:36+0000\n"
 "PO-Revision-Date: 2015-08-01 11:00+0000\n"
 "Last-Translator: Đặng Thanh <thanhdd.it@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1438426810.000000\n"
@@ -882,31 +882,50 @@ msgstr ""
 msgid "Incoming Connection"
 msgstr "Kết nối đến"
 
-#. # LOCALIZATION NOTE (remoteIncomingPromptMessage): The message displayed on the
-#. # dialog that prompts the user to allow the incoming connection.
-#: remoteIncomingPromptMessage
-msgid ""
-"An incoming request to permit remote debugging connection was detected. A "
-"remote client can take complete control over your browser! Allow connection?"
+#. # LOCALIZATION NOTE (remoteIncomingPromptUSB): The message displayed on the
+#. # dialog that prompts the user to allow an incoming USB connection.
+#: remoteIncomingPromptUSB
+msgid "Allow USB debugging connection?"
 msgstr ""
-"Có một yêu cầu xin phép kết nối gỡ rối từ xa. Máy trạm có thể kiểm soát hoàn "
-"toàn trình duyệt của bạn! Cho phép kết nối?"
 
-#: remoteIncomingPromptDisable
-msgid "Disable"
-msgstr "Vô hiệu hóa"
+#. # LOCALIZATION NOTE (remoteIncomingPromptUSB): The message displayed on the
+#. # dialog that prompts the user to allow an incoming TCP connection.
+#: remoteIncomingPromptTCP
+msgid ""
+"Allow remote debugging connection from %1$S:%2$S? This connection requires a "
+"QR code to be scanned in order to authenticate the remote device's "
+"certificate. You can avoid future scans by remembering the device."
+msgstr ""
 
-#: remoteIncomingPromptAccept
+#. # LOCALIZATION NOTE (remoteIncomingPromptDeny): This button will deny an
+#. # an incoming remote debugger connection.
+#: remoteIncomingPromptDeny
+msgid "Deny"
+msgstr ""
+
+#. # LOCALIZATION NOTE (remoteIncomingPromptAllow): This button will allow an
+#. # an incoming remote debugger connection.
+#: remoteIncomingPromptAllow
 #, fuzzy
-msgctxt "remoteIncomingPromptAccept"
-msgid "OK"
-msgstr "OK"
+msgctxt "remoteIncomingPromptAllow"
+msgid "Allow"
+msgstr "Cho phép"
 
-#: remoteIncomingPromptCancel
-#, fuzzy
-msgctxt "remoteIncomingPromptCancel"
-msgid "Cancel"
-msgstr "Hủy bỏ"
+#. # LOCALIZATION NOTE (remoteIncomingPromptScan): This button will start a QR
+#. # code scanner to authenticate an incoming remote debugger connection.  The
+#. # connection will be allowed assuming the scan succeeds.
+#: remoteIncomingPromptScan
+msgid "Scan"
+msgstr ""
+
+#. # LOCALIZATION NOTE (remoteIncomingPromptScanAndRemember): This button will
+#. # start a QR code scanner to authenticate an incoming remote debugger
+#. # connection.  The connection will be allowed assuming the scan succeeds, and
+#. # the other endpoint's certificate will be saved to skip future scans for this
+#. # client.
+#: remoteIncomingPromptScanAndRemember
+msgid "Scan and Remember"
+msgstr ""
 
 #. # LOCALIZATION NOTE (remoteNotificationTitle): %S is the name of the app.
 #: remoteNotificationTitle
@@ -974,8 +993,9 @@ msgid "Complete action using"
 msgstr ""
 
 #: helperapps.saveToDisk
+#, fuzzy
 msgid "Download"
-msgstr ""
+msgstr "Tải xuống"
 
 #: helperapps.alwaysUse
 #, fuzzy
@@ -1085,7 +1105,6 @@ msgstr "Mở trong ứng dụng"
 
 #: openInApp.ok
 #, fuzzy
-msgctxt "openInApp.ok"
 msgid "OK"
 msgstr "OK"
 
@@ -1141,6 +1160,27 @@ msgstr ""
 #: nativeWindow.deprecated
 msgid "%1$S is deprecated. Please use %2$S instead"
 msgstr ""
+
+#~ msgid ""
+#~ "An incoming request to permit remote debugging connection was detected. A "
+#~ "remote client can take complete control over your browser! Allow "
+#~ "connection?"
+#~ msgstr ""
+#~ "Có một yêu cầu xin phép kết nối gỡ rối từ xa. Máy trạm có thể kiểm soát "
+#~ "hoàn toàn trình duyệt của bạn! Cho phép kết nối?"
+
+#~ msgid "Disable"
+#~ msgstr "Vô hiệu hóa"
+
+#, fuzzy
+#~ msgctxt "remoteIncomingPromptCancel"
+#~ msgid "Cancel"
+#~ msgstr "Hủy bỏ"
+
+#, fuzzy
+#~ msgctxt "openInApp.ok"
+#~ msgid "OK"
+#~ msgstr "OK"
 
 #~ msgid "Installation failed"
 #~ msgstr "Cài đặt bị thất bại"
