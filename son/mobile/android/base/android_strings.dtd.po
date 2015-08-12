@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-02 00:07+0000\n"
+"POT-Creation-Date: 2015-08-12 03:36+0000\n"
 "PO-Revision-Date: 2015-06-22 13:45+0000\n"
 "Last-Translator: Mohomodou  Houssouba <mh@bollag-areal.ch>\n"
 "Language-Team: none\n"
@@ -46,6 +46,11 @@ msgstr "Huru &brandShortName; ra"
 #: onboard_start_button_browser
 msgid "Start Browsing"
 msgstr "Ceecikaw tunandi"
+
+#: onboard_start_restricted1
+msgid ""
+"Stay safe and in control with this simplified version of &brandShortName;."
+msgstr ""
 
 #. Localization note: These are used as the titles of different pages on the home screen.
 #. They are automatically converted to all caps by the Android platform.
@@ -237,6 +242,14 @@ msgstr "Naŋ"
 #: close_tab
 msgid "Close Tab"
 msgstr "Nor lokoo daabu"
+
+#: tab_audio_playing
+msgid "This tab is playing audio"
+msgstr ""
+
+#: tab_audio_muted
+msgid "This tab has been muted"
+msgstr ""
 
 #: one_tab
 msgid "1 tab"
@@ -472,6 +485,19 @@ msgstr "Cinakey goyjinawey"
 msgid "Remote debugging"
 msgstr "Mooray hasaraw kaakayan"
 
+#: pref_developer_remotedebugging_usb
+msgid "Remote debugging via USB"
+msgstr ""
+
+#: pref_developer_remotedebugging_wifi
+msgid "Remote debugging via Wi-Fi"
+msgstr ""
+
+#: pref_developer_remotedebugging_wifi_disabled_summary
+msgid ""
+"Wi-Fi debugging requires your device to have a QR code reader app installed."
+msgstr ""
+
 #: pref_category_logins
 msgctxt "pref_category_logins"
 msgid "Logins"
@@ -605,12 +631,14 @@ msgid "Disabled"
 msgstr "Kayante"
 
 #: pref_tracking_protection_title
+#, fuzzy
+msgctxt "pref_tracking_protection_title"
 msgid "Tracking protection"
 msgstr "Ganayan jejebuyan"
 
-#: pref_tracking_protection_summary
-msgid "&brandShortName; will prevent sites from tracking you"
-msgstr "&brandShortName; ga ganji interneti nungey ma war gana"
+#: pref_tracking_protection_summary3
+msgid "Enabled in Private Browsing"
+msgstr ""
 
 #: pref_donottrack_title
 msgid "Do not track"
@@ -619,6 +647,22 @@ msgstr "May ši ay gana"
 #: pref_donottrack_summary
 msgid "&brandShortName; will tell sites that you do not want to be tracked"
 msgstr "&brandShortName; ga har nungey se kaŋ war ši baa boro ma war gana"
+
+#: tracking_protection_prompt_title
+msgid "Now with Tracking Protection"
+msgstr ""
+
+#: tracking_protection_prompt_text
+msgid "Actively block tracking elements so you don't have to worry."
+msgstr ""
+
+#: tracking_protection_prompt_tip_text
+msgid "Visit Privacy settings to learn more"
+msgstr ""
+
+#: tracking_protection_prompt_action_button
+msgid "Got it!"
+msgstr ""
 
 #: tab_queue_toast_message3
 msgid "Tab saved in &brandShortName;"
@@ -632,13 +676,12 @@ msgstr "Feeri sohõ"
 msgid "Opening multiple links?"
 msgstr ""
 
-#: tab_queue_prompt_text3
-msgctxt "tab_queue_prompt_text3"
-msgid "Save them until the next time you open &brandShortName;"
+#: tab_queue_prompt_text4
+msgid "Save them until the next time you open &brandShortName;."
 msgstr ""
 
-#: tab_queue_prompt_tip_text
-msgid "you can change this later in Settings"
+#: tab_queue_prompt_tip_text2
+msgid "You can change this later in Settings"
 msgstr ""
 
 #: tab_queue_prompt_positive_action_button
@@ -1076,10 +1119,6 @@ msgctxt "downloads"
 msgid "Downloads"
 msgstr "Zumandiyaney"
 
-#: apps
-msgid "Apps"
-msgstr "Porogaramizey"
-
 #: char_encoding
 msgid "Character Encoding"
 msgstr "Harfu hawyan"
@@ -1322,6 +1361,16 @@ msgstr "Maa zuu cebe"
 msgid "Show page address"
 msgstr "Moo aderesu cebe"
 
+#. Localization note (pref_prevent_magnifying_glass): Label for setting that controls
+#. whether or not the magnifying glass is disabled.
+#: pref_prevent_magnifying_glass
+msgid "Disable magnifying glass "
+msgstr ""
+
+#: pref_prevent_magnifying_glass_summary
+msgid "Prevent magnifying glass for use in resolving ambiguous screen touches"
+msgstr ""
+
 #. Localization note (pref_scroll_title_bar2): Label for setting that controls
 #. whether or not the dynamic toolbar is enabled.
 #: pref_scroll_title_bar2
@@ -1337,7 +1386,6 @@ msgid "Open multiple links"
 msgstr ""
 
 #: pref_tab_queue_summary3
-msgctxt "pref_tab_queue_summary3"
 msgid "Save them until the next time you open &brandShortName;"
 msgstr ""
 
@@ -1384,11 +1432,12 @@ msgstr "Tuusu"
 msgid "There are no settings to clear."
 msgstr "Kayandiyan kul ši kaŋ ma tuusandi."
 
-#. Localization note (reading_list_added2) : Used in a toast, please keep as short
+#. Localization note (reading_list_added3) : Used in a toast, please keep as short
 #. as possible.
-#: reading_list_added2
-msgid "Added to list"
-msgstr ""
+#: reading_list_added3
+#, fuzzy
+msgid "Added to Reading List"
+msgstr "Tonton caw maašeedaa ga"
 
 #: reading_list_removed
 msgid "Page removed from your Reading List"
@@ -1680,23 +1729,31 @@ msgstr "War ciya dogoo ne"
 #. substitution variables.  If it is difficult to translate the sense of the string
 #. with that structure, consider a translation which ignores the preceding domain and
 #. just addresses the organization to follow, e.g. "This site is run by "
-#: identity_run_by
-msgid "which is run by"
-msgstr "kaŋ tunandikaa ti"
+#: identity_connection_secure
+msgid "Secure Connection"
+msgstr ""
 
-#: identity_no_info
-msgid "This website does not supply identity information."
-msgstr "Interneti nungoo woo ši boŋtammaasa alhabar noo."
-
-#: identity_not_encrypted
-msgid "Your connection to this website is not encrypted."
-msgstr "War ciyaroo Interneti nungoo woo do ši tugandi."
-
-#: identity_encrypted
-msgid "Encrypted"
-msgstr "Tugante"
+#: identity_connection_insecure
+msgid "Insecure connection"
+msgstr ""
 
 #. Mixed content notifications in site identity popup
+#: mixed_content_blocked_all
+msgid "&brandShortName; has blocked insecure elements on this page."
+msgstr ""
+
+#: mixed_content_blocked_some
+msgid "&brandShortName; has blocked some insecure elements on this page."
+msgstr ""
+
+#: mixed_content_display_loaded
+msgid "This page has some insecure elements."
+msgstr ""
+
+#: mixed_content_protection_disabled
+msgid "You have disabled protection from insecure elements."
+msgstr ""
+
 #: loaded_mixed_content_message
 msgid "This page is displaying content that isn't secure."
 msgstr "Moɲoo woo ka gundekuna cebe kaŋ ši saajaw."
@@ -1711,21 +1768,31 @@ msgid ""
 msgstr "Interneti nungi boobey ga goy boryo ba gundekunaa woo n' ka gagayandi."
 
 #. Tracking content notifications in site identity popup
-#: loaded_tracking_content_message_top
-msgid "Tracking protection disabled."
-msgstr "Jejebu ganayan n' ka kay."
+#: doorhanger_tracking_title
+#, fuzzy
+msgctxt "doorhanger_tracking_title"
+msgid "Tracking protection"
+msgstr "Ganayan jejebuyan"
 
-#: loaded_tracking_content_message_bottom
-msgid "Parts of this page may track your online activity."
-msgstr "Moɲoo woo jereyaŋ ga hin ka war interneti gana goyey gana."
+#: doorhanger_tracking_state_enabled
+#, fuzzy
+msgctxt "doorhanger_tracking_state_enabled"
+msgid "Enabled"
+msgstr "Ga dira"
 
-#: blocked_tracking_content_message_top2
-msgid "Tracking protection enabled."
-msgstr "Ganayan jejebu n' ka tunandi."
+#: doorhanger_tracking_state_disabled
+#, fuzzy
+msgctxt "doorhanger_tracking_state_disabled"
+msgid "Disabled"
+msgstr "Kayante"
 
-#: blocked_tracking_content_message_bottom2
-msgid "Parts of the page that track your online activity have been blocked."
-msgstr "Moɲoo woo jereyaŋ kaŋ ga war interneti goyey gana n' ka kayandi."
+#: doorhanger_tracking_message_enabled1
+msgid "Attempts to track your online behavior have been blocked."
+msgstr ""
+
+#: doorhanger_tracking_message_disabled2
+msgid "This page includes elements that may track your browsing."
+msgstr ""
 
 #. Common mixed and tracking content strings in site identity popup
 #: learn_more
@@ -1937,23 +2004,6 @@ msgstr "Ben"
 msgid "Speak now"
 msgstr "Šelaŋ sohõ"
 
-#: voicesearch_failed_title
-msgid "&brandShortName; Voice Search"
-msgstr "&brandShortName; jinde ceeciyan"
-
-#: voicesearch_failed_message
-msgid "There is a problem with voice search right now. Please try later."
-msgstr "Šenday foo goo jinde ceeciyan ra sohõda. Ceeci hiino taare."
-
-#: voicesearch_failed_message_recoverable
-msgid "Sorry! We could not recognize your words. Please try again."
-msgstr "Alhaa naŋ! Ir mana hin ka faham ni kalimawey se. Ceeci koyne taare."
-
-#: voicesearch_failed_retry
-#, fuzzy
-msgid "Try again"
-msgstr "Ceeci koyne"
-
 #. Localization note (remote_tabs_last_synced): the variable is replaced by a
 #. "relative time span string" produced by Android.  This string describes the
 #. time the tabs were last synced relative to the current time; examples
@@ -1979,6 +2029,103 @@ msgstr "Aa"
 #: intent_uri_cannot_open
 msgid "Cannot open link"
 msgstr ""
+
+#. DevTools Authentication
+#. This header text appears
+#. above a QR reader that is actively scanning for QR codes.  The expected QR
+#. code has already been displayed by the client trying to connect (such as
+#. desktop Firefox via WebIDE), so you just need to aim this device at the QR
+#. code.
+#: devtools_auth_scan_header
+msgid "Scanning for the QR code displayed on your other device"
+msgstr ""
+
+#. Restrictions
+#. Localization note: These are restrictions the device owner (e.g. parent) can enable for
+#. a restricted profile (e.g. child). Used inside the Android settings UI.
+#: restriction_disallow_import_settings_title2
+msgid "Disable 'Import from Android'"
+msgstr ""
+
+#: restriction_disallow_addons_title2
+msgid "Disable add-on installation"
+msgstr ""
+
+#: restriction_disallow_devtools_title2
+msgid "Disable developer tools"
+msgstr ""
+
+#: restriction_disallow_customize_home_title2
+msgid "Disable Home customization"
+msgstr ""
+
+#: restriction_disallow_private_browsing_title2
+msgid "Disable Private Browsing"
+msgstr ""
+
+#: restriction_disallow_location_services_title2
+msgid "Disable Location Services"
+msgstr ""
+
+#: restriction_disallow_display_settings_title2
+msgid "Disable Display settings"
+msgstr ""
+
+#: restriction_disallow_clear_history_title2
+msgid "Disable 'Clear browsing history'"
+msgstr ""
+
+#: restriction_disallow_master_password_title2
+#, fuzzy
+msgid "Disable master password"
+msgstr "Takaddaɲaa šennikufal beeroo"
+
+#: restriction_disallow_guest_browsing_title2
+msgid "Disable Guest Browsing"
+msgstr ""
+
+#~ msgid "&brandShortName; will prevent sites from tracking you"
+#~ msgstr "&brandShortName; ga ganji interneti nungey ma war gana"
+
+#~ msgid "Apps"
+#~ msgstr "Porogaramizey"
+
+#~ msgid "which is run by"
+#~ msgstr "kaŋ tunandikaa ti"
+
+#~ msgid "This website does not supply identity information."
+#~ msgstr "Interneti nungoo woo ši boŋtammaasa alhabar noo."
+
+#~ msgid "Your connection to this website is not encrypted."
+#~ msgstr "War ciyaroo Interneti nungoo woo do ši tugandi."
+
+#~ msgid "Encrypted"
+#~ msgstr "Tugante"
+
+#~ msgid "Tracking protection disabled."
+#~ msgstr "Jejebu ganayan n' ka kay."
+
+#~ msgid "Parts of this page may track your online activity."
+#~ msgstr "Moɲoo woo jereyaŋ ga hin ka war interneti gana goyey gana."
+
+#~ msgid "Tracking protection enabled."
+#~ msgstr "Ganayan jejebu n' ka tunandi."
+
+#~ msgid "Parts of the page that track your online activity have been blocked."
+#~ msgstr "Moɲoo woo jereyaŋ kaŋ ga war interneti goyey gana n' ka kayandi."
+
+#~ msgid "&brandShortName; Voice Search"
+#~ msgstr "&brandShortName; jinde ceeciyan"
+
+#~ msgid "There is a problem with voice search right now. Please try later."
+#~ msgstr "Šenday foo goo jinde ceeciyan ra sohõda. Ceeci hiino taare."
+
+#~ msgid "Sorry! We could not recognize your words. Please try again."
+#~ msgstr "Alhaa naŋ! Ir mana hin ka faham ni kalimawey se. Ceeci koyne taare."
+
+#, fuzzy
+#~ msgid "Try again"
+#~ msgstr "Ceeci koyne"
 
 #~ msgid "Remember passwords"
 #~ msgstr "Honga šennikufaley"
