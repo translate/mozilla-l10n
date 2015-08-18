@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-11 11:38+0000\n"
-"PO-Revision-Date: 2015-08-16 14:12+0000\n"
+"PO-Revision-Date: 2015-08-18 00:53+0000\n"
 "Last-Translator: Cláudio Esperança <cesperanc@gmail.com>\n"
 "Language-Team: none\n"
 "Language: pt\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1439734324.000000\n"
+"X-POOTLE-MTIME: 1439859181.000000\n"
 
 #. # LOCALIZATION NOTE These strings are used inside the Performance Tools
 #. # which is available from the Web Developer sub-menu -> 'Performance'.
@@ -72,7 +72,6 @@ msgid "Non-incremental GC"
 msgstr "GC não-incremental"
 
 #: marker.label.cycleCollection
-#, fuzzy
 msgid "Cycle Collection"
 msgstr "Ciclo de recolha"
 
@@ -96,12 +95,10 @@ msgid "Script Tag"
 msgstr "Tag script"
 
 #: marker.label.javascript.promiseCallback
-#, fuzzy
 msgid "Promise Callback"
 msgstr "Invocação de promessa"
 
 #: marker.label.javascript.promiseInit
-#, fuzzy
 msgid "Promise Init"
 msgstr "Inicialização de promessa"
 
@@ -180,7 +177,6 @@ msgstr "Causa não incremental:"
 
 #. # For "Recalculate Style" markers
 #: marker.field.restyleHint
-#, fuzzy
 msgid "Restyle Hint:"
 msgstr "Dica de reaplicação de estilo:"
 
@@ -219,7 +215,6 @@ msgid "API Call"
 msgstr "Chamada API"
 
 #: marker.gcreason.label.EAGER_ALLOC_TRIGGER
-#, fuzzy
 msgid "Eager Allocation Trigger"
 msgstr "Acionador de pré-alocação"
 
@@ -250,7 +245,6 @@ msgid "Debug GC"
 msgstr "Depurar GC"
 
 #: marker.gcreason.label.COMPARTMENT_REVIVED
-#, fuzzy
 msgid "Dead Global Revived"
 msgstr "Reanimação de global"
 
@@ -275,10 +269,9 @@ msgid "Large Allocation Failed"
 msgstr "Falha de uma grande alocação"
 
 #: marker.gcreason.label.PERIODIC_FULL_GC
-#, fuzzy
 msgctxt "marker.gcreason.label.PERIODIC_FULL_GC"
 msgid "Periodic Full GC"
-msgstr "GC total periódica"
+msgstr "Recolha de lixo total periódica"
 
 #: marker.gcreason.label.INCREMENTAL_TOO_SLOW
 msgid "Allocations Rate Too Fast"
@@ -293,13 +286,11 @@ msgid "Low Memory"
 msgstr "Pouca memória"
 
 #: marker.gcreason.label.CC_WAITING
-#, fuzzy
 msgctxt "marker.gcreason.label.CC_WAITING"
 msgid "Forced by Cycle Collection"
 msgstr "Forçado por ciclo de recolha"
 
 #: marker.gcreason.label.CC_FORCED
-#, fuzzy
 msgctxt "marker.gcreason.label.CC_FORCED"
 msgid "Forced by Cycle Collection"
 msgstr "Forçado por ciclo de recolha"
@@ -336,20 +327,17 @@ msgid "IPC"
 msgstr "IPC"
 
 #: marker.gcreason.label.DOM_WORKER
-#, fuzzy
 msgid "Periodic Worker GC"
-msgstr "GC periódica de worker"
+msgstr "Recolha de lixo periódica de worker"
 
 #: marker.gcreason.label.INTER_SLICE_GC
-#, fuzzy
 msgid "Periodic Incremental GC Slice"
-msgstr "GC parcial, incremental e periódica"
+msgstr "Recolha parcial de lixo de forma incremental e periódica"
 
 #: marker.gcreason.label.FULL_GC_TIMER
-#, fuzzy
 msgctxt "marker.gcreason.label.FULL_GC_TIMER"
 msgid "Periodic Full GC"
-msgstr "GC completa e periódica"
+msgstr "Recolha de lixo completa e periódica"
 
 #: marker.gcreason.label.SHUTDOWN_CC
 msgctxt "marker.gcreason.label.SHUTDOWN_CC"
@@ -357,21 +345,18 @@ msgid "Shutdown"
 msgstr "Desligar"
 
 #: marker.gcreason.label.FINISH_LARGE_EVALUATE
-#, fuzzy
 msgid "Large Eval"
-msgstr "Eval de grandes dimensões"
+msgstr "Avaliação de grandes dimensões"
 
 #: marker.gcreason.label.DOM_WINDOW_UTILS
-#, fuzzy
 msgctxt "marker.gcreason.label.DOM_WINDOW_UTILS"
 msgid "User Inactive"
-msgstr "Inatividade do utilizador"
+msgstr "Utilizador inativo"
 
 #: marker.gcreason.label.USER_INACTIVE
-#, fuzzy
 msgctxt "marker.gcreason.label.USER_INACTIVE"
 msgid "User Inactive"
-msgstr "Inatividade do utilizador"
+msgstr "Utilizador inativo"
 
 #. # LOCALIZATION NOTE (marker.gcreason.description.*):
 #. # These strings are used to give an expanded description of why a GC occurred.
@@ -381,16 +366,15 @@ msgid "There was an API call to force garbage collection."
 msgstr "Existe uma chamada da API para forçar o garbage collection."
 
 #: marker.gcreason.description.EAGER_ALLOC_TRIGGER
-#, fuzzy
 msgid ""
 "JavaScript returned to the event loop and there were enough bytes allocated "
 "since the last GC that a new GC cycle was triggered."
 msgstr ""
-"O JavaScript devolveu para o ciclo de evento e foram alocados bytes "
-"suficientes desde a última GC para que um novo ciclo de GC fosse despoletado."
+"O JavaScript retornou para o ciclo de eventos e foram alocados bytes "
+"suficientes desde a última recolha de lixo para que um novo ciclo de recolha "
+"de lixo fosse despoletado."
 
 #: marker.gcreason.description.DESTROY_RUNTIME
-#, fuzzy
 msgctxt "marker.gcreason.description.DESTROY_RUNTIME"
 msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
@@ -400,7 +384,6 @@ msgstr ""
 "de lixo final antes de encerrar."
 
 #: marker.gcreason.description.DESTROY_CONTEXT
-#, fuzzy
 msgctxt "marker.gcreason.description.DESTROY_CONTEXT"
 msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
@@ -428,27 +411,23 @@ msgid "JavaScript allocated too many times, and forced a garbage collection."
 msgstr "O JavaScript alocou demasiadas vezes e forçou uma recolha de lixo."
 
 #: marker.gcreason.description.DEBUG_GC
-#, fuzzy
 msgid "GC due to Zeal debug settings."
 msgstr "Recolha de lixo devido a definições de depuração Zeal."
 
 #: marker.gcreason.description.COMPARTMENT_REVIVED
-#, fuzzy
 msgid ""
 "A global object that was thought to be dead at the start of the GC cycle was "
 "revived by the end of the GC cycle."
 msgstr ""
 "Um objeto global que se pensava morto no início do ciclo de recolha de lixo "
-"foi reavivado no final do ciclo de recolha de lixo."
+"foi reanimado no final do ciclo de recolha de lixo."
 
 #: marker.gcreason.description.RESET
-#, fuzzy
 msgid "The active incremental GC cycle was forced to finish immediately."
 msgstr ""
 "O ciclo incremental de recolha de lixo foi forçado a terminar imediatamente."
 
 #: marker.gcreason.description.OUT_OF_NURSERY
-#, fuzzy
 msgid ""
 "JavaScript allocated enough new objects in the nursery that it became full "
 "and triggered a minor GC."
@@ -457,16 +436,14 @@ msgstr ""
 "tivesse ficado completo e iniciado uma pequena recolha de lixo."
 
 #: marker.gcreason.description.EVICT_NURSERY
-#, fuzzy
 msgid ""
 "Work needed to be done on the tenured heap, requiring the nursery to be "
 "empty."
 msgstr ""
-"Trabalho precisa de ser feito na pilha de propriedade, requer que o berçário "
-"esteja vazio."
+"O trabalho que precisa de ser feito na pilha de propriedade, requer que o "
+"berçário esteja vazio."
 
 #: marker.gcreason.description.FULL_STORE_BUFFER
-#, fuzzy
 msgid ""
 "There were too many properties on tenured objects whose value was an object "
 "in the nursery."
@@ -480,24 +457,22 @@ msgstr ""
 "Uma alocação grande foi solicitada, mas não existia memória suficiente."
 
 #: marker.gcreason.description.PERIODIC_FULL_GC
-#, fuzzy
 msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since Firefox performed a garbage collection."
 msgstr ""
-"O JavaScript voltou para o ciclo de eventos e passou relativamente muito "
-"tempo desde que o Firefox executou uma recolha de lixo."
+"O JavaScript voltou para o ciclo de eventos e passou um período de tempo "
+"relativamente longo desde que o Firefox executou uma recolha de lixo."
 
 #: marker.gcreason.description.INCREMENTAL_TOO_SLOW
-#, fuzzy
 msgid ""
 "A full, non-incremental garbage collection was triggered because there was a "
 "faster rate of allocations than the existing incremental garbage collection "
 "cycle could keep up with."
 msgstr ""
-"Um recolha de lixo completa e não-incremental foi despoletada porque ocorreu "
-"um ritmo de alocações mais rápido do que o ciclo de recolha incremental de "
-"lixo conseguia acompanhar."
+"Uma recolha de lixo completa e não-incremental foi despoletada porque "
+"ocorreu um ritmo de alocações mais rápido do que o ciclo de recolha "
+"incremental de lixo conseguiu acompanhar."
 
 #: marker.gcreason.description.COMPONENT_UTILS
 msgid "Components.utils.forceGC() was called to force a garbage collection."
@@ -532,40 +507,47 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"O Firefox destruiu um ambiente de execução ou contexto JavaScript e esta foi "
+"a recolha de lixo final antes de encerrar."
 
 #: marker.gcreason.description.SET_NEW_DOCUMENT
 msgctxt "marker.gcreason.description.SET_NEW_DOCUMENT"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "Ocorreu uma navegação da página para um novo documento."
 
 #: marker.gcreason.description.SET_DOC_SHELL
 msgctxt "marker.gcreason.description.SET_DOC_SHELL"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "Ocorreu uma navegação da página para um novo documento."
 
 #: marker.gcreason.description.DOM_UTILS
 msgctxt "marker.gcreason.description.DOM_UTILS"
 msgid "There was an API call to force garbage collection."
-msgstr ""
+msgstr "Existiu uma chamada da API para forçar a recolha do lixo."
 
 #: marker.gcreason.description.DOM_IPC
 msgid "Received an inter-process message that requested a garbage collection."
 msgstr ""
+"Foi recebida uma mensagem interprocessual que solicitou uma recolha de lixo."
 
 #: marker.gcreason.description.DOM_WORKER
 msgid "The worker was idle for a relatively long time."
-msgstr ""
+msgstr "O worker esteve ocioso por um período de tempo relativamente longo."
 
 #: marker.gcreason.description.INTER_SLICE_GC
 msgid ""
 "There has been a relatively long time since the last incremental GC slice."
 msgstr ""
+"Passou um período de tempo relativamente longo desde a última fatia "
+"incremental de recolha de lixo."
 
 #: marker.gcreason.description.FULL_GC_TIMER
 msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since we performed a garbage collection."
 msgstr ""
+"O JavaScript voltou para o ciclo de eventos e passou um período de tempo "
+"relativamente longo desde que o Firefox executou uma recolha de lixo."
 
 #: marker.gcreason.description.SHUTDOWN_CC
 msgctxt "marker.gcreason.description.SHUTDOWN_CC"
@@ -573,21 +555,31 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"O Firefox destruiu um ambiente de execução ou contexto JavaScript e esta foi "
+"a recolha de lixo final antes de encerrar."
 
 #: marker.gcreason.description.FINISH_LARGE_EVALUATE
 msgid ""
 "Firefox finished evaluating a large script, and performed a GC because the "
 "script will never be run again."
 msgstr ""
+"O Firefox terminou a avaliação de um script grande e executou uma recolha de "
+"lixo pois o script não será novamente executado."
 
 #: marker.gcreason.description.DOM_WINDOW_UTILS
 msgid ""
 "The user was inactive for a long time. Took the opportunity to perform GC "
 "when it was unlikely to be noticed."
 msgstr ""
+"O utilizador esteve inativo durante muito tempo. Foi aproveitada a "
+"oportunidade para executar uma recolha de lixo quando a mesma tinha uma "
+"probabilidade relativamente baixa de ser detetada."
 
 #: marker.gcreason.description.USER_INACTIVE
 msgid ""
 "The user was inactive for a long time. Firefox took the opportunity to "
 "perform GC when it was unlikely to be noticed."
 msgstr ""
+"O utilizador esteve inativo durante muito tempo. Foi aproveitada a "
+"oportunidade para executar uma recolha de lixo quando a mesma tinha uma "
+"probabilidade relativamente baixa de ser detetada. "
