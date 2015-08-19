@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-11 11:38+0000\n"
-"PO-Revision-Date: 2015-08-18 16:00+0000\n"
+"PO-Revision-Date: 2015-08-19 16:17+0000\n"
 "Last-Translator: andpet <az@kth.se>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1439913624.000000\n"
+"X-POOTLE-MTIME: 1440001055.000000\n"
 
 #. # LOCALIZATION NOTE These strings are used inside the Performance Tools
 #. # which is available from the Web Developer sub-menu -> 'Performance'.
@@ -266,7 +266,7 @@ msgstr ""
 
 #: marker.gcreason.label.SHARED_MEMORY_LIMIT
 msgid "Large Allocation Failed"
-msgstr ""
+msgstr "Stor allokering misslyckades"
 
 #: marker.gcreason.label.PERIODIC_FULL_GC
 msgctxt "marker.gcreason.label.PERIODIC_FULL_GC"
@@ -275,7 +275,7 @@ msgstr ""
 
 #: marker.gcreason.label.INCREMENTAL_TOO_SLOW
 msgid "Allocations Rate Too Fast"
-msgstr ""
+msgstr "Allokeringshastighet för snabb"
 
 #: marker.gcreason.label.COMPONENT_UTILS
 msgid "Cu.forceGC"
@@ -363,7 +363,7 @@ msgstr "Användare inaktiv"
 #: marker.gcreason.description.API
 msgctxt "marker.gcreason.description.API"
 msgid "There was an API call to force garbage collection."
-msgstr "Det fanns ett API-anrop för att tvinga skräpinsamling."
+msgstr "Det fanns ett API-anrop för att tvinga en sophämtning."
 
 #: marker.gcreason.description.EAGER_ALLOC_TRIGGER
 msgid ""
@@ -380,7 +380,7 @@ msgid ""
 "garbage collection before shutting down."
 msgstr ""
 "Firefox förstörde en JavaScript-runtime eller innehåll och detta var den "
-"sista skräpinsamling innan nedstängning."
+"sista sophämtningen innan nedstängning."
 
 #: marker.gcreason.description.DESTROY_CONTEXT
 msgctxt "marker.gcreason.description.DESTROY_CONTEXT"
@@ -389,7 +389,7 @@ msgid ""
 "garbage collection before shutting down."
 msgstr ""
 "Firefox förstörde en JavaScript-runtime eller innehåll och detta var den "
-"sista skräpinsamling innan nedstängning."
+"sista sophämtningen innan nedstängning."
 
 #: marker.gcreason.description.LAST_DITCH
 msgid ""
@@ -398,16 +398,16 @@ msgid ""
 "allocation."
 msgstr ""
 "JavaScript försökte allokera, men det fanns inget minne tillgängligt. Gör en "
-"fullständig kompakt skräpinsamling som ett försök att frigöra minne för "
+"fullständig kompakt sophämtning som ett försök att frigöra minne för "
 "allokering."
 
 #: marker.gcreason.description.TOO_MUCH_MALLOC
 msgid "JavaScript allocated too many bytes, and forced a garbage collection."
-msgstr "JavaScript allokerade för många byte och tvingade en skräpinsamling."
+msgstr "JavaScript allokerade för många byte och tvingade en sophämtning."
 
 #: marker.gcreason.description.ALLOC_TRIGGER
 msgid "JavaScript allocated too many times, and forced a garbage collection."
-msgstr "JavaScript allokerade för många gånger och tvingade en skräpinsamling."
+msgstr "JavaScript allokerade för många gånger och tvingade en sophämtning."
 
 #: marker.gcreason.description.DEBUG_GC
 msgid "GC due to Zeal debug settings."
@@ -454,7 +454,7 @@ msgid ""
 "time since Firefox performed a garbage collection."
 msgstr ""
 "JavaScript återvände till händelsen loop och det har varit en relativt lång "
-"tid sedan Firefox utförde en skräpinsamling."
+"tid sedan Firefox utförde en sophämtning."
 
 #: marker.gcreason.description.INCREMENTAL_TOO_SLOW
 msgid ""
@@ -465,11 +465,11 @@ msgstr ""
 
 #: marker.gcreason.description.COMPONENT_UTILS
 msgid "Components.utils.forceGC() was called to force a garbage collection."
-msgstr ""
+msgstr "Components.utils.forceGC() har anropats för att tvinga en sophämtning."
 
 #: marker.gcreason.description.MEM_PRESSURE
 msgid "There was very low memory available."
-msgstr ""
+msgstr "Det fanns mycket lite minne tillgängligt."
 
 #: marker.gcreason.description.CC_WAITING
 msgctxt "marker.gcreason.description.CC_WAITING"
@@ -487,7 +487,7 @@ msgstr ""
 
 #: marker.gcreason.description.PAGE_HIDE
 msgid "The tab or window was moved to the background."
-msgstr ""
+msgstr "Fliken eller fönstret har flyttas till bakgrunden."
 
 #: marker.gcreason.description.NSJSCONTEXT_DESTROY
 msgctxt "marker.gcreason.description.NSJSCONTEXT_DESTROY"
@@ -499,12 +499,12 @@ msgstr ""
 #: marker.gcreason.description.SET_NEW_DOCUMENT
 msgctxt "marker.gcreason.description.SET_NEW_DOCUMENT"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "Sidan har navigerat till ett nytt dokument."
 
 #: marker.gcreason.description.SET_DOC_SHELL
 msgctxt "marker.gcreason.description.SET_DOC_SHELL"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "Sidan har navigerat till ett nytt dokument."
 
 #: marker.gcreason.description.DOM_UTILS
 msgctxt "marker.gcreason.description.DOM_UTILS"
@@ -517,7 +517,7 @@ msgstr ""
 
 #: marker.gcreason.description.DOM_WORKER
 msgid "The worker was idle for a relatively long time."
-msgstr ""
+msgstr "Worker var inaktiv under en relativt lång tid."
 
 #: marker.gcreason.description.INTER_SLICE_GC
 msgid ""
@@ -548,6 +548,8 @@ msgid ""
 "The user was inactive for a long time. Took the opportunity to perform GC "
 "when it was unlikely to be noticed."
 msgstr ""
+"Användaren var inaktiv under en lång tid. Passade på att utföra en GC när "
+"det var sannolikt att det inte skulle märkas."
 
 #: marker.gcreason.description.USER_INACTIVE
 msgid ""
@@ -555,4 +557,4 @@ msgid ""
 "perform GC when it was unlikely to be noticed."
 msgstr ""
 "Användaren var inaktiv under en lång tid. Firefox passade på att utföra en "
-"GC när det sannolikt inte skulle märkas."
+"GC när det var sannolikt att det inte skulle märkas."
