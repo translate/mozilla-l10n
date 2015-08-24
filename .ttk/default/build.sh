@@ -266,7 +266,7 @@ do
 			cp -rp ${POT_DIR}/$pdir/* ${tmp_templatedir}/$pdir
 		fi
 	done
-	pomigrate2 --use-compendium --pot2po $pomigrate2verbosity ${tmp_podir}/${polang} ${PO_DIR}/${polang} ${tmp_templatedir}
+	pomigrate2 --pot2po $pomigrate2verbosity ${tmp_podir}/${polang} ${PO_DIR}/${polang} ${tmp_templatedir}
 	rm -r ${tmp_podir} ${tmp_templatedir}
 
 	(cd ${PO_DIR}
