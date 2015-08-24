@@ -613,7 +613,7 @@ function revert_unchanged_po_git {
 	for dir in $dirs
 	do
 		log_debug "Reverting files in '$dir'"
-		[ "$(git status --porcelain ${dir})" != "?? ${dir}/" ] && git checkout $gitverbosity -- $(git difftool -y -x 'diff --unified=3 --ignore-matching-lines=POT-Creation --ignore-matching-lines=X-Generator --ignore-matching-lines="#. extracted from" -s' ${dir} |
+		[ "$(git status --porcelain ${dir})" != "?? ${dir}/" ] && git checkout $gitverbosity -- $(git difftool -y -x 'diff --unified=3 --ignore-matching-lines=POT-Creation --ignore-matching-lines=X-Generator --ignore-matching-lines="#. extracted from" --ignore-matching-lines=Last-Translator -s' ${dir} |
 		egrep "are identical$" |
 		sed "s/^Files.*.\.po[t]\? and //;s/\(\.po[t]\?\).*/\1/") || echo "No header only changes, so no reverts needed"
 	done
