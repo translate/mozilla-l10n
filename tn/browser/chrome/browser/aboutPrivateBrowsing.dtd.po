@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 11:38+0000\n"
+"POT-Creation-Date: 2015-08-31 14:17+0000\n"
 "PO-Revision-Date: 2015-08-15 09:49+0000\n"
 "Last-Translator: Tshepo Tamajobe <tamajobetshepo@gmail.com>\n"
 "Language-Team: none\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1439632166.000000\n"
@@ -33,11 +33,14 @@ msgstr "Bula &Window e Poraefete"
 msgid "Private Browsing"
 msgstr "Patloya Sephiri"
 
-#. Width of the Private Browsing section.
+#. Width of the Private Browsing section. This should depend primarily on the
+#. length of the headers and text, but should be roughly 1.5 times the width
+#. of the Tracking Protection section, and in general not much larger than
+#. 30em to prevent the sections from wrapping on smaller window sizes.
 #. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
 #: aboutPrivateBrowsing.width
-msgid "25em"
-msgstr "25em"
+msgid "30em"
+msgstr ""
 
 #. LOCALIZATION NOTE (aboutPrivateBrowsing.subtitle,
 #. aboutPrivateBrowsing.info.forgotten, aboutPrivateBrowsing.info.kept):
@@ -58,8 +61,8 @@ msgid "In this window, &brandShortName; will not remember:"
 msgstr "Mo letlhabaphefong le, &brandShortName; ga e kake ya gakologelwa:"
 
 #: aboutPrivateBrowsing.info.forgotten
-msgid "Forgotten"
-msgstr "lebetswe"
+msgid "Not Saved"
+msgstr ""
 
 #: aboutPrivateBrowsing.info.history
 msgid "History"
@@ -83,8 +86,8 @@ msgid "&brandShortName; will keep:"
 msgstr "&brandShortName; e tla boloka:"
 
 #: aboutPrivateBrowsing.info.kept
-msgid "Kept"
-msgstr "Tshegeditswe"
+msgid "Saved"
+msgstr ""
 
 #: aboutPrivateBrowsing.info.downloads
 msgid "Downloads"
@@ -106,8 +109,12 @@ msgstr ""
 msgid "Learn More."
 msgstr "Ithute mo Gontsi."
 
-#. Width of the Tracking Protection section. This should be enough to
-#. accommodate the title as well as the enabled or disabled indicator.
+#. Width of the Tracking Protection section. It is fine for the enabled or
+#. disabled indicator or the words in the title to wrap to the next line, but
+#. you can expand or reduce this section to fit better, as long as the width
+#. of the Private Browsing section is roughly 1.5 times the width of this one.
+#. Note that the required space may vary between platforms because fonts are
+#. different, so testing on Windows, Mac, and Linux is encouraged.
 #. Do not translate this.  Only change the numeric values if you need this dialogue box to appear bigger
 #: trackingProtection.width
 msgid "22em"
@@ -150,6 +157,15 @@ msgstr "Tobetsa go Dirisa Tshireletso ya Tatediso"
 #: trackingProtection.startTour1
 msgid "See how this works"
 msgstr "Bona gore se dira jang"
+
+#~ msgid "25em"
+#~ msgstr "25em"
+
+#~ msgid "Forgotten"
+#~ msgstr "lebetswe"
+
+#~ msgid "Kept"
+#~ msgstr "Tshegeditswe"
 
 #~ msgid "Open a private window?"
 #~ msgstr "Bula window ya poraefete?"
