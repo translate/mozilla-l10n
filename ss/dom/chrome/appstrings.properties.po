@@ -1,17 +1,24 @@
-#, fuzzy
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./dom/chrome/appstrings.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 14:29+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-05-11 20:18+0000\n"
+"PO-Revision-Date: 2015-09-09 08:57+0000\n"
+"Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ss\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.7\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+"X-POOTLE-MTIME: 1441789031.000000\n"
 
 #: malformedURI
 msgid "The URL is not valid and cannot be loaded."
@@ -27,9 +34,11 @@ msgstr ""
 msgid "%S could not be found. Please check the name and try again."
 msgstr "%S akatfolakali. Uyacelwa uhlole lelinye libito uphindze wetame."
 
-#: protocolNotFound
-msgid "%S is not a registered protocol."
-msgstr "%S akusiyo iprothokholi lebhalisiwe."
+#: unknownProtocolFound
+msgid ""
+"One of the following (%S) is not a registered protocol or is not allowed in "
+"this context."
+msgstr ""
 
 #: connectionFailure
 msgid "The connection was refused when attempting to contact %S."
@@ -55,28 +64,16 @@ msgstr ""
 "Kuphambukiswa kwa-URL kungetulu.  Alisalayisheleki lelipheji leliceliwe.  "
 "Loku kungenteka kutsi kubangwe ngulamakukisi labavinjiwe."
 
-#: repost
+#: confirmRepostPrompt
 msgid ""
-"The page you are trying to view contains POSTDATA that has expired from "
-"cache. If you resend the data, any action the form carried out (such as a "
-"search or online purchase) will be repeated. To resend the data, click OK. "
-"Otherwise, click Cancel."
+"To display this page, the application must send information that will repeat "
+"any action (such as a search or order confirmation) that was performed "
+"earlier."
 msgstr ""
-"Lelipheji lowetama kulibuka line-POSTDATA leseyispayile esilulwini. "
-"Nawuphindze utfumela nome nguyiphi inshukumo leyentekile (lefana nekuphenya "
-"nome kutsenga ngekhompyutha) itawuphindzeka. Kuze uphindze utfumele facata "
-"OK nome-ke ufacate Cisha."
 
-#: repostConfirm
-msgid ""
-"The page you are trying to view contains POSTDATA. If you resend the data, "
-"any action the form carried out (such as a search or online purchase) will "
-"be repeated. To resend the data, click OK. Otherwise, click Cancel."
+#: resendButton.label
+msgid "Resend"
 msgstr ""
-"Lelipheji lowetama kulibuka line-POSTDATA. Nawuphindze utfumela idatha nome "
-"nguyiphi inshukumo leyentekile (lefana nekuphenya nome kutsenga "
-"ngekhompyutha) itawuphindzeka. Kuze uphindze utfumele facata OK nome-ke "
-"ufacate Cisha."
 
 #: unknownSocketType
 msgid ""
@@ -91,6 +88,10 @@ msgstr ""
 #: netReset
 msgid "The document contains no data."
 msgstr "Ledokhumente ayinadatha."
+
+#: notCached
+msgid "This document is no longer available."
+msgstr ""
 
 #: netOffline
 msgid ""
@@ -126,23 +127,39 @@ msgstr ""
 "losilungisile. Uyacelwa kutsi uhlole tinhlelo teproksi yakho uphindze wetame "
 "futsi."
 
+#: contentEncodingError
+msgid ""
+"The page you are trying to view cannot be shown because it uses an invalid "
+"or unsupported form of compression."
+msgstr ""
+
+#: unsafeContentType
+msgid ""
+"The page you are trying to view cannot be shown because it is contained in a "
+"file type that may not be safe to open. Please contact the website owners to "
+"inform them of this problem."
+msgstr ""
+
 #: externalProtocolTitle
 msgid "External Protocol Request"
 msgstr "Sicelo seprothokholi yangaphandle"
 
 #: externalProtocolPrompt
+#, fuzzy
 msgid ""
-"An external application must be launched to handle %1$S: links. Requested "
-"link:\n"
+"An external application must be launched to handle %1$S: links.\n"
 "\n"
+"\n"
+"Requested link:\n"
 "\n"
 "%2$S\n"
+"\n"
 "Application: %3$S\n"
 "\n"
 "\n"
 "If you were not expecting this request it may be an attempt to exploit a "
 "weakness in that other program. Cancel this request unless you are sure it "
-"is not malicious."
+"is not malicious.\n"
 msgstr ""
 "Sicelo sangaphandle kufanele setfulwe kuze sikwati kwetfwala %1$S: "
 "tihlanganisi. Tihlanganisi leticeliwe:\n"
@@ -156,6 +173,7 @@ msgstr ""
 "ebutsakatsakeni baloluhlelo. Sicishe lesicelo ngaphandle nangabe ucinisekile "
 "kutsi asinangoti."
 
+#. #LOCALIZATION NOTE (externalProtocolUnknown): The following string is shown if the application name can't be determined
 #: externalProtocolUnknown
 msgid "<Unknown>"
 msgstr "<Asatiwa>"
@@ -167,3 +185,70 @@ msgstr "Khumbula kutikhetsela kwami kuko konkhe kutsintsana ngalenhlobo."
 #: externalProtocolLaunchBtn
 msgid "Launch application"
 msgstr "Sicelo sekwetfula"
+
+#: malwareBlocked
+msgid ""
+"The site at %S has been reported as an attack site and has been blocked "
+"based on your security preferences."
+msgstr ""
+
+#: unwantedBlocked
+msgid ""
+"The site at %S has been reported as serving unwanted software and has been "
+"blocked based on your security preferences."
+msgstr ""
+
+#: phishingBlocked
+msgid ""
+"The website at %S has been reported as a web forgery designed to trick users "
+"into sharing personal or financial information."
+msgstr ""
+
+#: cspBlocked
+msgid ""
+"This page has a content security policy that prevents it from being loaded "
+"in this way."
+msgstr ""
+
+#: corruptedContentError
+msgid ""
+"The page you are trying to view cannot be shown because an error in the data "
+"transmission was detected."
+msgstr ""
+
+#: remoteXUL
+msgid ""
+"This page uses an unsupported technology that is no longer available by "
+"default."
+msgstr ""
+
+#: sslv3Used
+msgid ""
+"The safety of your data on %S could not be guaranteed because it uses SSLv3, "
+"a broken security protocol."
+msgstr ""
+
+#~ msgid "%S is not a registered protocol."
+#~ msgstr "%S akusiyo iprothokholi lebhalisiwe."
+
+#~ msgid ""
+#~ "The page you are trying to view contains POSTDATA that has expired from "
+#~ "cache. If you resend the data, any action the form carried out (such as a "
+#~ "search or online purchase) will be repeated. To resend the data, click "
+#~ "OK. Otherwise, click Cancel."
+#~ msgstr ""
+#~ "Lelipheji lowetama kulibuka line-POSTDATA leseyispayile esilulwini. "
+#~ "Nawuphindze utfumela nome nguyiphi inshukumo leyentekile (lefana "
+#~ "nekuphenya nome kutsenga ngekhompyutha) itawuphindzeka. Kuze uphindze "
+#~ "utfumele facata OK nome-ke ufacate Cisha."
+
+#~ msgid ""
+#~ "The page you are trying to view contains POSTDATA. If you resend the "
+#~ "data, any action the form carried out (such as a search or online "
+#~ "purchase) will be repeated. To resend the data, click OK. Otherwise, "
+#~ "click Cancel."
+#~ msgstr ""
+#~ "Lelipheji lowetama kulibuka line-POSTDATA. Nawuphindze utfumela idatha "
+#~ "nome nguyiphi inshukumo leyentekile (lefana nekuphenya nome kutsenga "
+#~ "ngekhompyutha) itawuphindzeka. Kuze uphindze utfumele facata OK nome-ke "
+#~ "ufacate Cisha."
