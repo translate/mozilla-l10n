@@ -1,21 +1,25 @@
-#, fuzzy
+#. #
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./security/manager/chrome/pippki/pippki.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 14:29+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-08-11 11:38+0000\n"
+"PO-Revision-Date: 2015-09-09 09:03+0000\n"
+"Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ss\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
-
-#: SignedBy
-msgid "Signed by %S"
-msgstr "Kwasayinwa ngu %S"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.7\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
+"X-POOTLE-MTIME: 1441789396.000000\n"
 
 #: CertPassPrompt
 msgid ""
@@ -25,6 +29,8 @@ msgstr ""
 "Sita ngenisa libitophawu lakho lelivikelekile ngendlela yekuvikeleka "
 "yetikhiya tangasese te PSM."
 
+#. #These are for dialogs
+#. #Download Cert dialog
 #: newCAMessage1
 msgid "Do you want to trust \"%S\" for the following purposes?"
 msgstr "Ufuna kutsemba \"%S\" mayelana naletinhloso letilandzelako?"
@@ -33,82 +39,30 @@ msgstr "Ufuna kutsemba \"%S\" mayelana naletinhloso letilandzelako?"
 msgid "Certificate Authority (unnamed)"
 msgstr "Umtsetfo sitifiketi (asinalibito)"
 
-#: editTrustWindowTitle
-msgid "Edit certificate trust"
-msgstr "Lungisa kutsembeke kwesitifiketi"
-
+#. #For editing cert trust
 #: editTrustCA
 msgid "The certificate \"%S\" represents a Certificate Authority."
 msgstr "Sitifiketi \"%S\" simele umtsetfo wesitifiketi."
 
-#: editTrustSSL
-msgid ""
-"_: editTrustSSL\n"
-"The certificate \"%S\" was issued by:"
-msgstr "Sitifiketi\"%S\" sakhishwa ngu:"
+#. #For Deleting Certificates
+#: deleteSslCertConfirm3
+#, fuzzy
+msgid "Are you sure you want to delete these server exceptions?"
+msgstr "Ucinisile ufuna kucisha letitifiketi?"
 
-#: editTrustEmail
+#: deleteSslCertImpact3
 msgid ""
-"_: editTrustEmail\n"
-"The certificate \"%S\" was issued by:"
-msgstr "Sitifiketi \"%S\" sakhishwa ngu:"
-
-#: issuerNotTrusted
-msgid ""
-"Because you do not trust the certificate authority that issued this "
-"certificate, you do not trust the authenticity of this certificate unless "
-"otherwise indicated here."
+"If you delete a server exception, you restore the usual security checks for "
+"that server and require it uses a valid certificate."
 msgstr ""
-"Ngoba awuwetsembi umtsetfo wesitifiketi lokhiphe sitifiketi, awukwetsembi "
-"kubaluleka kwalesitifiketi ngaphandle kwalokuchaziwe lapha."
 
-#: issuerTrusted
-msgid ""
-"Because you trust the certificate authority that issued this certificate, "
-"you trust the authenticity of this certificate unless otherwise indicated "
-"here."
+#: deleteSslCertTitle3
+msgid "Delete Server Certificate Exceptions"
 msgstr ""
-"Ngoba uyawetsemba umtsetfo wesitifiketi lokhiphe sitifiketi, awukwetsembi "
-"kubaluleka kwalesitifiketi ngaphandle kwalokuchaziwe lapha."
-
-#: issuerNotKnown
-msgid ""
-"Because you do not know the certificate authority that issued this "
-"certificate, you do not trust the authenticity of this certificate unless "
-"otherwise indicated here."
-msgstr ""
-"Ngoba awuwati umtsetfo wesitifiketi lokhiphe sitifiketi, awukwetsembi "
-"kubaluleka kwalesitifiketi ngaphandle kwalokuchaziwe lapha."
-
-#: issuerCertNotFound
-msgid "Certificate for this certificate authority was not found"
-msgstr "Sitifiketi semtsetfo sitifiketi asimange sitfolakale"
-
-#: deleteSslCertFlag
-msgid "deleteSslFlag"
-msgstr "Cisha SsIFlag"
-
-#: deleteSslCertConfirm
-msgid "Are you sure you want to delete these web site certificates?"
-msgstr "Ucinisekile ufuna kucisha letitifiketi telisatithi lewebhu?"
-
-#: deleteSslCertImpact
-msgid ""
-"If you delete a web site certificate, you will be asked to accept it again "
-"the next time you visit the web site."
-msgstr ""
-"Nawucisha sitifiketi selisayithi lewebhu, utocelwa kukwamukela futsi "
-"esikhatsini lesitako uvakashela lisayithi lwebhu."
-
-#: deleteSslCertTitle
-msgid "Delete Web Site Certificates"
-msgstr "Cisha titifiketi telisayithi lewebhu"
-
-#: deleteUserCertFlag
-msgid "deleteUserFlag"
-msgstr "Cisha UmsebentisiFlag"
 
 #: deleteUserCertConfirm
+#, fuzzy
+msgctxt "deleteUserCertConfirm"
 msgid "Are you sure you want to delete these certificates?"
 msgstr "Ucinisile ufuna kucisha letitifiketi?"
 
@@ -124,38 +78,35 @@ msgstr ""
 msgid "Delete your Certificates"
 msgstr "Cisha titifiketi takho"
 
-#: deleteCaCertFlag
-msgid "deleteCaFlag"
-msgstr "Cisha CaFlag"
-
-#: deleteCaCertConfirm
-msgid "Are you sure you want to delete these CA certificates?"
-msgstr "Ucinisekile ufuna kucisha letitifiketi CA?"
-
-#: deleteCaCertImpact
+#: deleteCaCertConfirm2
 msgid ""
-"If you delete a certificate authority (CA) certificate, your browser will no "
-"longer trust any certificates issued by that CA."
+"You have requested to delete these CA certificates. For built-in "
+"certificates all trust will be removed, which has the same effect. Are you "
+"sure you want to delete or distrust?"
+msgstr ""
+
+#: deleteCaCertImpactX2
+#, fuzzy
+msgid ""
+"If you delete or distrust a certificate authority (CA) certificate, this "
+"application will no longer trust any certificates issued by that CA."
 msgstr ""
 "Nawucisha umtsetfo sitifiketi (CA), ibhrawuza angeke itsembe noma nggutiphi "
 "titifiketi letikhokhwe nguleyo CA."
 
-#: deleteCaCertTitle
-msgid "Delete CA Certificates"
-msgstr "Cisha titifiketi te CA"
-
-#: deleteEmailCertFlag
-msgid "deleteEmailFlag"
-msgstr "cisha umbhelebhele we-imeyili"
+#: deleteCaCertTitle2
+msgid "Delete or Distrust CA Certificates"
+msgstr ""
 
 #: deleteEmailCertConfirm
 msgid "Are you sure you want to delete these people's e-mail certificates?"
 msgstr "Ucinisekile ufuna kucisha letitifiketi talabantfu te-imeyili?"
 
-#: deleteEmailCertImpact
+#: deleteEmailCertImpactDesc
+#, fuzzy
 msgid ""
-"If you delete an e-mail certificate, your will no longer be able to send "
-"encrypted e-mail to those people."
+"If you delete a person's e-mail certificate, you will no longer be able to "
+"send encrypted e-mail to that person."
 msgstr ""
 "Nawucisha sitifiketi se-imeyili, angeke usakhona kutfumela leguculwe "
 "ngekufihla kulabo bantfu."
@@ -164,9 +115,21 @@ msgstr ""
 msgid "Delete E-Mail Certificates"
 msgstr "Cisha titifiketi te-imeyili"
 
-#: chooseP12RestoreFileDialog
-msgid "File Name to Restore"
-msgstr "Libito lefayela kulondvolota"
+#: deleteOrphanCertConfirm
+#, fuzzy
+msgctxt "deleteOrphanCertConfirm"
+msgid "Are you sure you want to delete these certificates?"
+msgstr "Ucinisile ufuna kucisha letitifiketi?"
+
+#: deleteOrphanCertTitle
+#, fuzzy
+msgid "Delete Certificates"
+msgstr "Cisha titifiketi te CA"
+
+#. #PKCS#12 file dialogs
+#: chooseP12RestoreFileDialog2
+msgid "Certificate File to Import"
+msgstr ""
 
 #: chooseP12BackupFileDialog
 msgid "File Name to Backup"
@@ -176,65 +139,12 @@ msgstr "Libito lefayela kusekela"
 msgid "PKCS12 Files"
 msgstr "Emafayela PKCS12"
 
-#: mismatchDomainMsg1
+#: getPKCS12FilePasswordMessage
 msgid ""
-"You have attempted to establish a connection with \"%S\".  However, the "
-"security certificate presented belongs to \"%S\".  It is possible, though "
-"unlikely, that someone may be trying to intercept your communication with "
-"this web site."
+"Please enter the password that was used to encrypt this certificate backup:"
 msgstr ""
-"Wetamile kwakha sichumanisi nga \"%S\".  Noko, lesitifiketi lesetfuliwe sa "
-"\"%S\".  Kungenteka nome kungakavami nje, kutsi kungenteka kube kukhona "
-"umuntfu lowetama kutsikameta kuchumana kwakho nalewebsayithi."
 
-#: mismatchDomainMsg2
-msgid ""
-"If you suspect the certificate shown does not belong to \"%S\", please "
-"cancel the connection and notify the site administrator."
-msgstr ""
-"Nawusola lesitifiketi lesikhonjisiwe kutsi asisiso sa \"%S\", sita cisha "
-"loluchumano watise umlawuli welisayithi."
-
-#: serverCertExpiredMsg1
-msgid ""
-"\"%S\" is a site that uses a security certificate to encrypt data during "
-"transmission, but its certificate expired on %S."
-msgstr ""
-"\"%S\" ilisayithi lesitifiketi lesivikelekile kugucula lwati lelivikelekile "
-"ngesikhatsi sekungenisa kodvwa sitifiketi sayo saphelelwa sikhatsi ku %S."
-
-#: serverCertExpiredTitle
-msgid "Server Certificate Expired"
-msgstr "Silulu sesitifiketi siphelelwe sikhatsi"
-
-#: serverCertNotYetValedMsg1
-msgid ""
-"\"%S\" is a site that uses a security certificate to encrypt data during "
-"transmission, but its certificate will not be valid until %S."
-msgstr ""
-"\"%S\"lisayithi lelisebentisa sitifikethi sekuvikela kulwati loluguculwe "
-"ngalokufihliwe ngesikhatsi sekudlulisa, sitifiketi saso angeke sibe "
-"semtsetfweni kuze kube %S."
-
-#: serverCertNotYetValidTitle
-msgid "Server Certificate Not Yet Valid"
-msgstr "Silulu sesisitifiketi asikho emtsetfweni"
-
-#: serverCertExpiredMsg2
-msgid ""
-"You should check to make sure that your computer's time (currently set to "
-"%S) is correct."
-msgstr ""
-"Hlola kwenta siciniseko sekutsi sikhatsi sangcondvomshini wakho(kwanyalo "
-"sisetha ku %S) singiso."
-
-#: resetPreferences
-msgid ""
-"Use this button to reset %S's security preferences to their factory settings."
-msgstr ""
-"Sebentisa lelikinobho kusetha kabusha kuvikela kwalokunconotekako %S "
-"kutinhlelo takhe tefekthri."
-
+#. #Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr "Lesitifiketi sicinisekiswe ngalemisebenti lelandzelako:"
@@ -264,10 +174,17 @@ msgid ""
 "Could not verify this certificate because the CA certificate is invalid."
 msgstr "Asikacinisekiswa lesitifiketi ngoba sitifiketi CA asikho emtsetfweni."
 
+#: certNotVerified_AlgorithmDisabled
+msgid ""
+"Could not verify this certificate because it was signed using a signature "
+"algorithm that was disabled because that algorithm is not secure."
+msgstr ""
+
 #: certNotVerified_Unknown
 msgid "Could not verify this certificate for unknown reasons."
 msgstr "Asikacinisekiswa lesitifiketi ngetizatfu letingatiwa."
 
+#. #Client auth
 #: clientAuthMessage1
 msgid "Organization: \"%S\""
 msgstr "Inhlangano: \"%S\""
@@ -276,44 +193,24 @@ msgstr "Inhlangano: \"%S\""
 msgid "Issued Under: \"%S\""
 msgstr "Ikhishwe ngaphasi: \"%S\""
 
-#: pageInfo_SiteNotVerified
-msgid "Web Site Identity Not Verified"
-msgstr "Kwatiwa kwelisayithi lewebhu lelingakacinisekiswa"
-
-#: pageInfo_WebSiteVerified
-msgid "Web Site Identity Verified"
-msgstr "Kwatiwa kwelisayithi lewebhu licinisekisiwe"
-
-#: pageInfo_Identity_Verified
-msgid ""
-"The web site %S supports authentication for the page you are viewing. The "
-"identity of this web site has been verified by %S, a certificate authority "
-"you trust for this purpose."
-msgstr ""
-"Lisayithi lewebhu %S lisekela kubaluleka kwalelikhasi lolibukako. Lokwatiwa "
-"kwalelisayithi lewebhu kucinisekiswe nga %S, sitifiketi semtsetfo "
-"lositsembako kulenhloso."
-
-#: pageInfo_ViewCertificate
-msgid "View the security certificate that verifies this web site's identity."
-msgstr ""
-"Buka sitifiketi lesivikelekile lesicinisekisa lokwatiwa lelisayithi lewebhu."
-
+#. #Page Info
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Luchumano alukaguculwa"
 
 #: pageInfo_Privacy_None1
+#, fuzzy
 msgid ""
-"The web site %S does not support encryption for the page you are viewing."
+"The website %S does not support encryption for the page you are viewing."
 msgstr ""
 "Lelisayithi lewebhu %S alikusekeli kugucula ngalokufihliwe kwelikhasi "
 "lolibukako."
 
 #: pageInfo_Privacy_None2
+#, fuzzy
 msgid ""
 "Information sent over the Internet without encryption can be seen by other "
-"people while it is in transit."
+"people while it is in transit. "
 msgstr ""
 "Lwati lolitfumele ku-inthanethi ngaphandle kwekugucula lwati lolufihlakele "
 "lungabonwa ngulabanye bantfu uma lisantjintja."
@@ -322,49 +219,53 @@ msgstr ""
 msgid "The page you are viewing is not encrypted."
 msgstr "Likhasi lolibukako alikaguculwa."
 
-#: pageInfo_StrongEncryption
-msgid "Connection Encrypted: High-grade Encryption (%S %S bit)"
+#. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
+#. # %1$S is the name of the encryption standard,
+#. # %2$S is the key size of the cipher.
+#. # %3$S is protocol version like "SSL 3" or "TLS 1.2"
+#: pageInfo_EncryptionWithBitsAndProtocol
+msgid "Connection Encrypted (%1$S, %2$S bit keys, %3$S)"
 msgstr ""
-"Luchumano luyaguculwa ngalokufihlekile: Lizinga lelisetulu lekuguculwa "
-"kwelati lolufihlakele (%S %S bit)"
 
-#: pageInfo_Privacy_Strong1
+#: pageInfo_BrokenEncryption
+msgid "Broken Encryption (%1$S, %2$S bit keys, %3$S)"
+msgstr ""
+
+#: pageInfo_Privacy_Encrypted1
 msgid ""
 "The page you are viewing was encrypted before being transmitted over the "
 "Internet."
 msgstr "Likhasi lolibukako laguculwa ngembi kwekungeniswa ku-inthanethi."
 
-#: pageInfo_Privacy_Strong2
+#: pageInfo_Privacy_Encrypted2
+#, fuzzy
 msgid ""
-"Encryption makes it very difficult for unauthorized people to view "
-"information traveling between computers. It is therefore very unlikely that "
-"anyone read this page as it traveled across the network."
+"Encryption makes it difficult for unauthorized people to view information "
+"traveling between computers. It is therefore unlikely that anyone read this "
+"page as it traveled across the network."
 msgstr ""
 "Kuphawula umbhalo kwenta kube lukhuni kutsi umuntfu longasiye alungute lwati "
 "lolwendluliswa kubongcondvomshina. Ngaleyo ndlela-ke kulukhuni kutsi "
 "lelipheji lingafundvwa ngunome ngubani njengobe lisajikeleta kunethiwekhi."
 
-#: pageInfo_WeakEncryption
-msgid "Connection Encrypted: Low-grade Encryption (%S %S bit)"
+#: pageInfo_MixedContent
+msgid "Connection Partially Encrypted"
 msgstr ""
-"Kuchumana kuguculwe ngendlela yekufihla: Lizinga leliphasi lekuguculwa "
-"kwendlela lefihlakele (%S %S bit)"
 
-#: pageInfo_Privacy_Weak1
+#: pageInfo_MixedContent2
+#, fuzzy
 msgid ""
-"The web site %S is using low-grade encryption for the page you are viewing."
-msgstr ""
-"Lisayithi lewebhu %S lisebentisa lizinga leliphasi lendlela yekugucula "
-"lokufihliwe kulelikhasi lolibukako."
+"Parts of the page you are viewing were not encrypted before being "
+"transmitted over the Internet."
+msgstr "Likhasi lolibukako laguculwa ngembi kwekungeniswa ku-inthanethi."
 
-#: pageInfo_Privacy_Weak2
+#: pageInfo_WeakCipher
 msgid ""
-"Low-grade encryption may allow some unauthorized people to view this "
-"information."
+"Your connection to this website uses weak encryption and is not private. "
+"Other people can view your information or modify the website's behavior."
 msgstr ""
-"Lizinga leliphasi lalokuguculiwe luvumela bantfu labngekho emtsetfweni "
-"kubuka lelwati."
 
+#. #Cert Viewer
 #: certDetails
 msgid "Certificate Viewer:"
 msgstr "Umbuki sitifiketi:"
@@ -373,18 +274,7 @@ msgstr "Umbuki sitifiketi:"
 msgid "<Not Part Of Certificate>"
 msgstr "<Akusiyo incenye ysitifiketi>"
 
-#: unknownIssuer
-msgid "<Unknown Issuer>"
-msgstr "<Akatiwa lokhokhako>"
-
-#: escrowFinalMessage
-msgid ""
-"You should click OK only if you trust \"%S\" to protect your encryption "
-"private key."
-msgstr ""
-"Bekufanele uchafate OK kuphela nawetsemba kutsi \"%S\" utawuvikela sikhiya "
-"sakho sekubhala emagama ngemfihlo."
-
+#. #Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(akukasethwa)"
@@ -403,7 +293,8 @@ msgid "Master Password successfully changed."
 msgstr "Libitophawu lelikhulu liguculwe kahle kakhulu."
 
 #: pw_erased_ok
-msgid "Warning! You have deleted your Master Password."
+#, fuzzy
+msgid "Warning! You have deleted your Master Password. "
 msgstr "Sicwayiso! Ucishe libitophawu lelikhulu."
 
 #: pw_not_wanted
@@ -509,72 +400,11 @@ msgstr ""
 "ngayinye yekuvikela. Hlela libitophawu ngembi kwekulinga kunika emandl "
 "indlela ya FIPS."
 
-#: crlNextUpdateMsg1
-msgid "%S cannot establish an encrypted connection with \"%S\"."
-msgstr "%S angeke acale luchumano lwendlela lefihlakeleleguculiwe na \"%S\"."
-
-#: crlNextUpdateMsg2
-msgid "The certificate revocation list (CRL) from \"%S\" needs to be updated."
-msgstr "Leluhla lekucisha sitifiketi (CRL) ku \"%S\" lidzinga kuvuselelwa."
-
-#: NoUpdateFailure
-msgid "None"
-msgstr "Kute"
-
-#: lastFetchUrlLabel
-msgid "URL originally fetched from"
-msgstr "URL ngekwemvelo watfolwa ku"
-
-#: advertisedUrlLabel
-msgid "URL advertised by the CA"
-msgstr "URL watiswe ngu CA"
-
-#: CrlUpdatePrefsSetConfirmation
+#: unable_to_toggle_fips
 msgid ""
-"Automatic update preferences will take effect when you restart the browser."
+"Unable to change the FIPS mode for the security device. It is recommended "
+"that you exit and restart this application."
 msgstr ""
-"Kutivuselelalokunconotekako kutocala kusebenta uma kucala kabusha ibhrawuza."
-
-#: crlAutoUpdateDayCntError
-msgid "Number of days before next update must be a number greater than zero."
-msgstr ""
-"Inamba yemalanga ngembi kwekuvuselela lokutako akube yinamba lenkhulu kuna 0."
-
-#: crlAutoUpdtaeFreqCntError
-msgid "Frequency of update must be a number greater than zero."
-msgstr "Kuvuselela lokuvela njalo akube yinamba lenkhulu kuna 0."
-
-#: disabledStatement
-msgid "Automatic Update is not enabled for this CRL."
-msgstr "Kutivuselela akukanikwa emandla ku CRL."
-
-#: enabledStatement
-msgid "Automatic Update is enabled for this CRL."
-msgstr "Kutivuselela kuniketwe emandla ku CRL."
-
-#: crlAutoupdateQuestion1
-msgid "Would would like to enable automatic update?"
-msgstr "Ungatsandza kutivuselela kwalokuvuselelwe?"
-
-#: crlAutoupdateQuestion2
-msgid "Would would like to view the automatic update settings?"
-msgstr "Ungatsandza kubuka tinhlelo letitivuselele?"
-
-#: undefinedValStr
-msgid "<Not Defined>"
-msgstr "<Akukachazwa>"
-
-#: undefinedURL
-msgid "Auto update URL is not defined."
-msgstr "Kutivuselela kwa URL akukachazwa."
-
-#: yesButton
-msgid "Yes"
-msgstr "Yebo"
-
-#: noButton
-msgid "No"
-msgstr "Cha"
 
 #: resetPasswordConfirmationTitle
 msgid "Reset Master Password"
@@ -584,30 +414,7 @@ msgstr "Hlela libitophawu lelikhulu"
 msgid "Your password has been reset."
 msgstr "Libitophawu lakho lihlelwe kabusha."
 
-#: crlAutoupdateEnabled
-msgid "Enabled"
-msgstr "Kunikwe emandla"
-
-#: crlAutoupdateNotEnabled
-msgid "Not Enabled"
-msgstr "Akukanikwa emandla"
-
-#: crlAutoupdateOk
-msgid "OK"
-msgstr "OK"
-
-#: crlAutoupdateFailed
-msgid "Failed"
-msgstr "Kuhlulekile"
-
-#: crlImportNewCRLTitle
-msgid "Import Certificate Revocation List"
-msgstr "Ngenisa kucishwa kweluhla lesitifiketi"
-
-#: crlImportNewCRLLabel
-msgid "Import the CRL from:"
-msgstr "Ngenisa CRL ku:"
-
+#. #Import certificate(s) file dialog
 #: importEmailCertPrompt
 msgid "Select File containing somebody's Email certificate to import"
 msgstr "Khetsa ifayela lenesitifiketi semuntfu se-imeyili kungenisa"
@@ -616,14 +423,398 @@ msgstr "Khetsa ifayela lenesitifiketi semuntfu se-imeyili kungenisa"
 msgid "Select File containing CA certificate(s) to import"
 msgstr "Khetsa ifayela lenetitifiketi CA kungenisa"
 
-#: importWebSiteCertPrompt
-msgid "Select File containing Web Site certificate to import"
+#: importServerCertPrompt
+#, fuzzy
+msgid "Select File containing Server certificate to import"
 msgstr "Khetsa ifayela lenesitifiketi lesinelisayithi lewebhu kungenisa"
 
 #: file_browse_Certificate_spec
 msgid "Certificate Files"
 msgstr "Emafayela etitifiketi"
 
-#: formSigningIntro
-msgid "The site '%S' has requested that you sign the following text message:"
-msgstr "Lisayithi '%S' licele kutsi usayine umlayeto wembhalo lolandzelako:"
+#. # Cert export
+#: SaveCertAs
+msgid "Save Certificate To File"
+msgstr ""
+
+#: CertFormatBase64
+msgid "X.509 Certificate (PEM)"
+msgstr ""
+
+#: CertFormatBase64Chain
+msgid "X.509 Certificate with chain (PEM)"
+msgstr ""
+
+#: CertFormatDER
+msgid "X.509 Certificate (DER)"
+msgstr ""
+
+#: CertFormatPKCS7
+msgid "X.509 Certificate (PKCS#7)"
+msgstr ""
+
+#: CertFormatPKCS7Chain
+msgid "X.509 Certificate with chain (PKCS#7)"
+msgstr ""
+
+#: writeFileFailure
+msgid "File Error"
+msgstr ""
+
+#: writeFileFailed
+msgid ""
+"Can't write to file %S:\n"
+"%S."
+msgstr ""
+
+#: writeFileAccessDenied
+msgid "Access denied"
+msgstr ""
+
+#: writeFileIsLocked
+msgid "File is locked"
+msgstr ""
+
+#: writeFileNoDeviceSpace
+msgid "No space left on device"
+msgstr ""
+
+#: writeFileUnknownError
+msgid "Unknown error"
+msgstr ""
+
+#. #Add Security Exception dialog
+#: addExceptionBrandedWarning2
+msgid "You are about to override how %S identifies this site."
+msgstr ""
+
+#: addExceptionInvalidHeader
+msgid "This site attempts to identify itself with invalid information."
+msgstr ""
+
+#: addExceptionDomainMismatchShort
+msgid "Wrong Site"
+msgstr ""
+
+#: addExceptionDomainMismatchLong2
+msgid ""
+"The certificate belongs to a different site, which could mean that someone "
+"is trying to impersonate this site."
+msgstr ""
+
+#: addExceptionExpiredShort
+msgid "Outdated Information"
+msgstr ""
+
+#: addExceptionExpiredLong2
+msgid ""
+"The certificate is not currently valid. It may have been stolen or lost, and "
+"could be used by someone to impersonate this site."
+msgstr ""
+
+#: addExceptionUnverifiedOrBadSignatureShort
+msgid "Unknown Identity"
+msgstr ""
+
+#: addExceptionUnverifiedOrBadSignatureLong2
+msgid ""
+"The certificate is not trusted because it hasn't been verified as issued by "
+"a trusted authority using a secure signature."
+msgstr ""
+
+#: addExceptionValidShort
+msgid "Valid Certificate"
+msgstr ""
+
+#: addExceptionValidLong
+msgid ""
+"This site provides valid, verified identification.  There is no need to add "
+"an exception."
+msgstr ""
+
+#: addExceptionCheckingShort
+msgid "Checking Information"
+msgstr ""
+
+#: addExceptionCheckingLong2
+msgid "Attempting to identify this site…"
+msgstr ""
+
+#: addExceptionNoCertShort
+msgid "No Information Available"
+msgstr ""
+
+#: addExceptionNoCertLong2
+msgid "Unable to obtain identification status for this site."
+msgstr ""
+
+#. #Certificate Exists in database
+#: caCertExistsTitle
+#, fuzzy
+msgid "Certificate Exists"
+msgstr "Emafayela etitifiketi"
+
+#: caCertExistsMessage
+msgid "The Certificate already exists."
+msgstr ""
+
+#~ msgid "Signed by %S"
+#~ msgstr "Kwasayinwa ngu %S"
+
+#~ msgid "Edit certificate trust"
+#~ msgstr "Lungisa kutsembeke kwesitifiketi"
+
+#~ msgid ""
+#~ "_: editTrustSSL\n"
+#~ "The certificate \"%S\" was issued by:"
+#~ msgstr "Sitifiketi\"%S\" sakhishwa ngu:"
+
+#~ msgid ""
+#~ "_: editTrustEmail\n"
+#~ "The certificate \"%S\" was issued by:"
+#~ msgstr "Sitifiketi \"%S\" sakhishwa ngu:"
+
+#~ msgid ""
+#~ "Because you do not trust the certificate authority that issued this "
+#~ "certificate, you do not trust the authenticity of this certificate unless "
+#~ "otherwise indicated here."
+#~ msgstr ""
+#~ "Ngoba awuwetsembi umtsetfo wesitifiketi lokhiphe sitifiketi, awukwetsembi "
+#~ "kubaluleka kwalesitifiketi ngaphandle kwalokuchaziwe lapha."
+
+#~ msgid ""
+#~ "Because you trust the certificate authority that issued this certificate, "
+#~ "you trust the authenticity of this certificate unless otherwise indicated "
+#~ "here."
+#~ msgstr ""
+#~ "Ngoba uyawetsemba umtsetfo wesitifiketi lokhiphe sitifiketi, awukwetsembi "
+#~ "kubaluleka kwalesitifiketi ngaphandle kwalokuchaziwe lapha."
+
+#~ msgid ""
+#~ "Because you do not know the certificate authority that issued this "
+#~ "certificate, you do not trust the authenticity of this certificate unless "
+#~ "otherwise indicated here."
+#~ msgstr ""
+#~ "Ngoba awuwati umtsetfo wesitifiketi lokhiphe sitifiketi, awukwetsembi "
+#~ "kubaluleka kwalesitifiketi ngaphandle kwalokuchaziwe lapha."
+
+#~ msgid "Certificate for this certificate authority was not found"
+#~ msgstr "Sitifiketi semtsetfo sitifiketi asimange sitfolakale"
+
+#~ msgid "deleteSslFlag"
+#~ msgstr "Cisha SsIFlag"
+
+#~ msgid "Are you sure you want to delete these web site certificates?"
+#~ msgstr "Ucinisekile ufuna kucisha letitifiketi telisatithi lewebhu?"
+
+#~ msgid ""
+#~ "If you delete a web site certificate, you will be asked to accept it "
+#~ "again the next time you visit the web site."
+#~ msgstr ""
+#~ "Nawucisha sitifiketi selisayithi lewebhu, utocelwa kukwamukela futsi "
+#~ "esikhatsini lesitako uvakashela lisayithi lwebhu."
+
+#~ msgid "Delete Web Site Certificates"
+#~ msgstr "Cisha titifiketi telisayithi lewebhu"
+
+#~ msgid "deleteUserFlag"
+#~ msgstr "Cisha UmsebentisiFlag"
+
+#~ msgid "deleteCaFlag"
+#~ msgstr "Cisha CaFlag"
+
+#~ msgid "Are you sure you want to delete these CA certificates?"
+#~ msgstr "Ucinisekile ufuna kucisha letitifiketi CA?"
+
+#~ msgid "deleteEmailFlag"
+#~ msgstr "cisha umbhelebhele we-imeyili"
+
+#~ msgid "File Name to Restore"
+#~ msgstr "Libito lefayela kulondvolota"
+
+#~ msgid ""
+#~ "You have attempted to establish a connection with \"%S\".  However, the "
+#~ "security certificate presented belongs to \"%S\".  It is possible, though "
+#~ "unlikely, that someone may be trying to intercept your communication with "
+#~ "this web site."
+#~ msgstr ""
+#~ "Wetamile kwakha sichumanisi nga \"%S\".  Noko, lesitifiketi lesetfuliwe "
+#~ "sa \"%S\".  Kungenteka nome kungakavami nje, kutsi kungenteka kube "
+#~ "kukhona umuntfu lowetama kutsikameta kuchumana kwakho nalewebsayithi."
+
+#~ msgid ""
+#~ "If you suspect the certificate shown does not belong to \"%S\", please "
+#~ "cancel the connection and notify the site administrator."
+#~ msgstr ""
+#~ "Nawusola lesitifiketi lesikhonjisiwe kutsi asisiso sa \"%S\", sita cisha "
+#~ "loluchumano watise umlawuli welisayithi."
+
+#~ msgid ""
+#~ "\"%S\" is a site that uses a security certificate to encrypt data during "
+#~ "transmission, but its certificate expired on %S."
+#~ msgstr ""
+#~ "\"%S\" ilisayithi lesitifiketi lesivikelekile kugucula lwati "
+#~ "lelivikelekile ngesikhatsi sekungenisa kodvwa sitifiketi sayo saphelelwa "
+#~ "sikhatsi ku %S."
+
+#~ msgid "Server Certificate Expired"
+#~ msgstr "Silulu sesitifiketi siphelelwe sikhatsi"
+
+#~ msgid ""
+#~ "\"%S\" is a site that uses a security certificate to encrypt data during "
+#~ "transmission, but its certificate will not be valid until %S."
+#~ msgstr ""
+#~ "\"%S\"lisayithi lelisebentisa sitifikethi sekuvikela kulwati loluguculwe "
+#~ "ngalokufihliwe ngesikhatsi sekudlulisa, sitifiketi saso angeke sibe "
+#~ "semtsetfweni kuze kube %S."
+
+#~ msgid "Server Certificate Not Yet Valid"
+#~ msgstr "Silulu sesisitifiketi asikho emtsetfweni"
+
+#~ msgid ""
+#~ "You should check to make sure that your computer's time (currently set to "
+#~ "%S) is correct."
+#~ msgstr ""
+#~ "Hlola kwenta siciniseko sekutsi sikhatsi sangcondvomshini wakho(kwanyalo "
+#~ "sisetha ku %S) singiso."
+
+#~ msgid ""
+#~ "Use this button to reset %S's security preferences to their factory "
+#~ "settings."
+#~ msgstr ""
+#~ "Sebentisa lelikinobho kusetha kabusha kuvikela kwalokunconotekako %S "
+#~ "kutinhlelo takhe tefekthri."
+
+#~ msgid "Web Site Identity Not Verified"
+#~ msgstr "Kwatiwa kwelisayithi lewebhu lelingakacinisekiswa"
+
+#~ msgid "Web Site Identity Verified"
+#~ msgstr "Kwatiwa kwelisayithi lewebhu licinisekisiwe"
+
+#~ msgid ""
+#~ "The web site %S supports authentication for the page you are viewing. The "
+#~ "identity of this web site has been verified by %S, a certificate "
+#~ "authority you trust for this purpose."
+#~ msgstr ""
+#~ "Lisayithi lewebhu %S lisekela kubaluleka kwalelikhasi lolibukako. "
+#~ "Lokwatiwa kwalelisayithi lewebhu kucinisekiswe nga %S, sitifiketi "
+#~ "semtsetfo lositsembako kulenhloso."
+
+#~ msgid ""
+#~ "View the security certificate that verifies this web site's identity."
+#~ msgstr ""
+#~ "Buka sitifiketi lesivikelekile lesicinisekisa lokwatiwa lelisayithi "
+#~ "lewebhu."
+
+#~ msgid "Connection Encrypted: High-grade Encryption (%S %S bit)"
+#~ msgstr ""
+#~ "Luchumano luyaguculwa ngalokufihlekile: Lizinga lelisetulu lekuguculwa "
+#~ "kwelati lolufihlakele (%S %S bit)"
+
+#~ msgid "Connection Encrypted: Low-grade Encryption (%S %S bit)"
+#~ msgstr ""
+#~ "Kuchumana kuguculwe ngendlela yekufihla: Lizinga leliphasi lekuguculwa "
+#~ "kwendlela lefihlakele (%S %S bit)"
+
+#~ msgid ""
+#~ "The web site %S is using low-grade encryption for the page you are "
+#~ "viewing."
+#~ msgstr ""
+#~ "Lisayithi lewebhu %S lisebentisa lizinga leliphasi lendlela yekugucula "
+#~ "lokufihliwe kulelikhasi lolibukako."
+
+#~ msgid ""
+#~ "Low-grade encryption may allow some unauthorized people to view this "
+#~ "information."
+#~ msgstr ""
+#~ "Lizinga leliphasi lalokuguculiwe luvumela bantfu labngekho emtsetfweni "
+#~ "kubuka lelwati."
+
+#~ msgid "<Unknown Issuer>"
+#~ msgstr "<Akatiwa lokhokhako>"
+
+#~ msgid ""
+#~ "You should click OK only if you trust \"%S\" to protect your encryption "
+#~ "private key."
+#~ msgstr ""
+#~ "Bekufanele uchafate OK kuphela nawetsemba kutsi \"%S\" utawuvikela "
+#~ "sikhiya sakho sekubhala emagama ngemfihlo."
+
+#~ msgid "%S cannot establish an encrypted connection with \"%S\"."
+#~ msgstr ""
+#~ "%S angeke acale luchumano lwendlela lefihlakeleleguculiwe na \"%S\"."
+
+#~ msgid ""
+#~ "The certificate revocation list (CRL) from \"%S\" needs to be updated."
+#~ msgstr "Leluhla lekucisha sitifiketi (CRL) ku \"%S\" lidzinga kuvuselelwa."
+
+#~ msgid "None"
+#~ msgstr "Kute"
+
+#~ msgid "URL originally fetched from"
+#~ msgstr "URL ngekwemvelo watfolwa ku"
+
+#~ msgid "URL advertised by the CA"
+#~ msgstr "URL watiswe ngu CA"
+
+#~ msgid ""
+#~ "Automatic update preferences will take effect when you restart the "
+#~ "browser."
+#~ msgstr ""
+#~ "Kutivuselelalokunconotekako kutocala kusebenta uma kucala kabusha "
+#~ "ibhrawuza."
+
+#~ msgid ""
+#~ "Number of days before next update must be a number greater than zero."
+#~ msgstr ""
+#~ "Inamba yemalanga ngembi kwekuvuselela lokutako akube yinamba lenkhulu "
+#~ "kuna 0."
+
+#~ msgid "Frequency of update must be a number greater than zero."
+#~ msgstr "Kuvuselela lokuvela njalo akube yinamba lenkhulu kuna 0."
+
+#~ msgid "Automatic Update is not enabled for this CRL."
+#~ msgstr "Kutivuselela akukanikwa emandla ku CRL."
+
+#~ msgid "Automatic Update is enabled for this CRL."
+#~ msgstr "Kutivuselela kuniketwe emandla ku CRL."
+
+#~ msgid "Would would like to enable automatic update?"
+#~ msgstr "Ungatsandza kutivuselela kwalokuvuselelwe?"
+
+#~ msgid "Would would like to view the automatic update settings?"
+#~ msgstr "Ungatsandza kubuka tinhlelo letitivuselele?"
+
+#~ msgid "<Not Defined>"
+#~ msgstr "<Akukachazwa>"
+
+#~ msgid "Auto update URL is not defined."
+#~ msgstr "Kutivuselela kwa URL akukachazwa."
+
+#~ msgid "Yes"
+#~ msgstr "Yebo"
+
+#~ msgid "No"
+#~ msgstr "Cha"
+
+#~ msgid "Enabled"
+#~ msgstr "Kunikwe emandla"
+
+#~ msgid "Not Enabled"
+#~ msgstr "Akukanikwa emandla"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Failed"
+#~ msgstr "Kuhlulekile"
+
+#~ msgid "Import Certificate Revocation List"
+#~ msgstr "Ngenisa kucishwa kweluhla lesitifiketi"
+
+#~ msgid "Import the CRL from:"
+#~ msgstr "Ngenisa CRL ku:"
+
+#~ msgid ""
+#~ "The site '%S' has requested that you sign the following text message:"
+#~ msgstr "Lisayithi '%S' licele kutsi usayine umlayeto wembhalo lolandzelako:"
