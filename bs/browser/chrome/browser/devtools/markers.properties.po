@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-11 11:38+0000\n"
-"PO-Revision-Date: 2015-09-09 20:31+0000\n"
+"PO-Revision-Date: 2015-09-14 18:56+0000\n"
 "Last-Translator: Kerim Kalamujic <kerim@mozilla.ba>\n"
 "Language-Team: none\n"
 "Language: bs\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1441830674.000000\n"
+"X-POOTLE-MTIME: 1442256961.000000\n"
 
 #. # LOCALIZATION NOTE These strings are used inside the Performance Tools
 #. # which is available from the Web Developer sub-menu -> 'Performance'.
@@ -74,7 +74,7 @@ msgstr "Ne-inkrementalni GC"
 
 #: marker.label.cycleCollection
 msgid "Cycle Collection"
-msgstr ""
+msgstr "Kolekcija ciklusa"
 
 #: marker.label.cycleCollection.forgetSkippable
 msgid "CC Graph Reduction"
@@ -179,7 +179,7 @@ msgstr "Ne-inkrementalni uzrok:"
 #. # For "Recalculate Style" markers
 #: marker.field.restyleHint
 msgid "Restyle Hint:"
-msgstr ""
+msgstr "Savjet za restilizovanje:"
 
 #. # General "reason" for a marker (JavaScript, Garbage Collection)
 #: marker.field.causeName
@@ -217,7 +217,7 @@ msgstr "API poziv"
 
 #: marker.gcreason.label.EAGER_ALLOC_TRIGGER
 msgid "Eager Allocation Trigger"
-msgstr ""
+msgstr "Eager Allocation Trigger"
 
 #: marker.gcreason.label.DESTROY_RUNTIME
 msgctxt "marker.gcreason.label.DESTROY_RUNTIME"
@@ -247,7 +247,7 @@ msgstr "Debagiraj GC"
 
 #: marker.gcreason.label.COMPARTMENT_REVIVED
 msgid "Dead Global Revived"
-msgstr ""
+msgstr "Oživljen mrtav globalni objekt"
 
 #: marker.gcreason.label.RESET
 msgid "Finish Incremental Cycle"
@@ -255,15 +255,15 @@ msgstr "Završi inkrementalni ciklus"
 
 #: marker.gcreason.label.OUT_OF_NURSERY
 msgid "Nursery is Full"
-msgstr ""
+msgstr "Nursery je pun"
 
 #: marker.gcreason.label.EVICT_NURSERY
 msgid "Nursery Eviction"
-msgstr ""
+msgstr "Iseljenje iz Nursery-a"
 
 #: marker.gcreason.label.FULL_STORE_BUFFER
 msgid "Nursery Objects Too Active"
-msgstr ""
+msgstr "Nursery objekti preaktivni"
 
 #: marker.gcreason.label.SHARED_MEMORY_LIMIT
 msgid "Large Allocation Failed"
@@ -276,7 +276,7 @@ msgstr "Periodički puni GC"
 
 #: marker.gcreason.label.INCREMENTAL_TOO_SLOW
 msgid "Allocations Rate Too Fast"
-msgstr ""
+msgstr "Previsoka brzina alokacija"
 
 #: marker.gcreason.label.COMPONENT_UTILS
 msgid "Cu.forceGC"
@@ -289,12 +289,12 @@ msgstr "Nizak nivo memorije"
 #: marker.gcreason.label.CC_WAITING
 msgctxt "marker.gcreason.label.CC_WAITING"
 msgid "Forced by Cycle Collection"
-msgstr ""
+msgstr "Forsirano od kolekcije ciklusa"
 
 #: marker.gcreason.label.CC_FORCED
 msgctxt "marker.gcreason.label.CC_FORCED"
 msgid "Forced by Cycle Collection"
-msgstr ""
+msgstr "Forsirano od kolekcije ciklusa"
 
 #: marker.gcreason.label.LOAD_END
 msgid "Page Load Finished"
@@ -333,7 +333,7 @@ msgstr "Periodički Worker GC"
 
 #: marker.gcreason.label.INTER_SLICE_GC
 msgid "Periodic Incremental GC Slice"
-msgstr ""
+msgstr "Periodički inkrementalni GC Slice"
 
 #: marker.gcreason.label.FULL_GC_TIMER
 msgctxt "marker.gcreason.label.FULL_GC_TIMER"
@@ -371,6 +371,8 @@ msgid ""
 "JavaScript returned to the event loop and there were enough bytes allocated "
 "since the last GC that a new GC cycle was triggered."
 msgstr ""
+"JavaScript se vratio u petlju događaja i dovoljno je bajta alocirano od "
+"zadnjeg GC-a pa je izazvan novi GC ciklus."
 
 #: marker.gcreason.description.DESTROY_RUNTIME
 msgctxt "marker.gcreason.description.DESTROY_RUNTIME"
@@ -396,6 +398,8 @@ msgid ""
 "full compacting garbage collection as an attempt to free up memory for the "
 "allocation."
 msgstr ""
+"JavaScript je pokušao alocirati, ali nije bilo dostupne memorije. Radim punu "
+"kompakciju skupljanja smeća kao pokušaj da oslobodim memoriju za alokaciju."
 
 #: marker.gcreason.description.TOO_MUCH_MALLOC
 msgid "JavaScript allocated too many bytes, and forced a garbage collection."
@@ -414,28 +418,36 @@ msgid ""
 "A global object that was thought to be dead at the start of the GC cycle was "
 "revived by the end of the GC cycle."
 msgstr ""
+"Globalni objekt za koji se mislilo da je mrtav na početku GC ciklusa je "
+"oživljen na kraju GC ciklusa."
 
 #: marker.gcreason.description.RESET
 msgid "The active incremental GC cycle was forced to finish immediately."
-msgstr ""
+msgstr "Aktivni inkrementalni GC ciklus natjeran je da se odmah završi."
 
 #: marker.gcreason.description.OUT_OF_NURSERY
 msgid ""
 "JavaScript allocated enough new objects in the nursery that it became full "
 "and triggered a minor GC."
 msgstr ""
+"JavaScript je alocirao dovoljno novih objekata u nursery-u da se popunio i "
+"izazvao minorni GC."
 
 #: marker.gcreason.description.EVICT_NURSERY
 msgid ""
 "Work needed to be done on the tenured heap, requiring the nursery to be "
 "empty."
 msgstr ""
+"Bilo je potrebno da se obavi posao na redovnom heap-u, što je zahtijevalo "
+"pražnjenje nursery-a."
 
 #: marker.gcreason.description.FULL_STORE_BUFFER
 msgid ""
 "There were too many properties on tenured objects whose value was an object "
 "in the nursery."
 msgstr ""
+"Bilo je previše svojstava na redovnim objektima čije su vrijednosti bile "
+"objekti u nursery-u."
 
 #: marker.gcreason.description.SHARED_MEMORY_LIMIT
 msgid "A large allocation was requested, but there was not enough memory."
@@ -447,6 +459,8 @@ msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since Firefox performed a garbage collection."
 msgstr ""
+"JavaScript se vratila u petlju događaja, a prošlo je relativno mnogo vremena "
+"otkako je Firefox obavio skupljanje smeća."
 
 #: marker.gcreason.description.INCREMENTAL_TOO_SLOW
 msgid ""
@@ -454,6 +468,9 @@ msgid ""
 "faster rate of allocations than the existing incremental garbage collection "
 "cycle could keep up with."
 msgstr ""
+"Potpuno, neinkrementalno skupljanje smeća je izazvano zbog toga što je "
+"brzina alociranja bila veća nego što je postojeći inkerementalni ciklus "
+"skupljanja smeća mogao da prati."
 
 #: marker.gcreason.description.COMPONENT_UTILS
 msgid "Components.utils.forceGC() was called to force a garbage collection."
@@ -466,12 +483,12 @@ msgstr "Premalo memorije je dostupno."
 #: marker.gcreason.description.CC_WAITING
 msgctxt "marker.gcreason.description.CC_WAITING"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "Kolektor ciklusa zahtijevao je skupljanje smeća."
 
 #: marker.gcreason.description.CC_FORCED
 msgctxt "marker.gcreason.description.CC_FORCED"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "Kolektor ciklusa zahtijevao je skupljanje smeća."
 
 #: marker.gcreason.description.LOAD_END
 msgid "The document finished loading."
@@ -507,22 +524,25 @@ msgstr "Desio se API poziv za forsiranje skupljanja smeća."
 
 #: marker.gcreason.description.DOM_IPC
 msgid "Received an inter-process message that requested a garbage collection."
-msgstr ""
+msgstr "Primljena je međuprocesna poruka da je zatraženo skupljanje smeća."
 
 #: marker.gcreason.description.DOM_WORKER
 msgid "The worker was idle for a relatively long time."
-msgstr ""
+msgstr "Worker je bio besposlen relativno dugo."
 
 #: marker.gcreason.description.INTER_SLICE_GC
 msgid ""
 "There has been a relatively long time since the last incremental GC slice."
 msgstr ""
+"Prošlo je relativno mnogo vremena od zadnjeg inkrementalnog GC slice-a."
 
 #: marker.gcreason.description.FULL_GC_TIMER
 msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since we performed a garbage collection."
 msgstr ""
+"JavaScript se vratila u petlju događaja, a prošlo je relativno mnogo vremena "
+"otkako smo obavili skupljanje smeća."
 
 #: marker.gcreason.description.SHUTDOWN_CC
 msgctxt "marker.gcreason.description.SHUTDOWN_CC"
@@ -538,15 +558,21 @@ msgid ""
 "Firefox finished evaluating a large script, and performed a GC because the "
 "script will never be run again."
 msgstr ""
+"Firefox je završio procjenu velike skripte i izvršio GC jer skripta neće "
+"biti pokretana ikad više."
 
 #: marker.gcreason.description.DOM_WINDOW_UTILS
 msgid ""
 "The user was inactive for a long time. Took the opportunity to perform GC "
 "when it was unlikely to be noticed."
 msgstr ""
+"Korisnik je dugo bio neaktivan. Iskoristili smo priliku za izvršenje GC-a "
+"kada je bilo najmanje uočljivo."
 
 #: marker.gcreason.description.USER_INACTIVE
 msgid ""
 "The user was inactive for a long time. Firefox took the opportunity to "
 "perform GC when it was unlikely to be noticed."
 msgstr ""
+"Korisnik je dugo bio neaktivan. Firefox je iskoristio priliku za izvršenje "
+"GC-a kada je bilo najmanje uočljivo."
