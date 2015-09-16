@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-11 11:38+0000\n"
-"PO-Revision-Date: 2015-09-16 22:14+0000\n"
+"PO-Revision-Date: 2015-09-16 22:29+0000\n"
 "Last-Translator: Juan Pablo Martínez <juanpabl@gmail.com>\n"
 "Language-Team: none\n"
 "Language: an\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1442441680.000000\n"
+"X-POOTLE-MTIME: 1442442550.000000\n"
 
 #. # LOCALIZATION NOTE These strings are used inside the Performance Tools
 #. # which is available from the Web Developer sub-menu -> 'Performance'.
@@ -215,7 +215,7 @@ msgstr "Clamada API"
 
 #: marker.gcreason.label.EAGER_ALLOC_TRIGGER
 msgid "Eager Allocation Trigger"
-msgstr ""
+msgstr "Disparo d'asignación impacient"
 
 #: marker.gcreason.label.DESTROY_RUNTIME
 msgctxt "marker.gcreason.label.DESTROY_RUNTIME"
@@ -396,56 +396,70 @@ msgid ""
 "full compacting garbage collection as an attempt to free up memory for the "
 "allocation."
 msgstr ""
+"JavaScript ha mirau d'asignar, pero no i heba memoria disponible. Fendo una "
+"replega de vasuera full compacting pa mirar de liberar memoria pa "
+"l'asignación."
 
 #: marker.gcreason.description.TOO_MUCH_MALLOC
 msgid "JavaScript allocated too many bytes, and forced a garbage collection."
-msgstr ""
+msgstr "JavaScript ha asignau masiaus bytes, y ha forzau a replega de vasuera."
 
 #: marker.gcreason.description.ALLOC_TRIGGER
 msgid "JavaScript allocated too many times, and forced a garbage collection."
 msgstr ""
+"JavaScript ha asignau masiadas vegadas, y ha forzau a replega de vasuera."
 
 #: marker.gcreason.description.DEBUG_GC
 msgid "GC due to Zeal debug settings."
-msgstr ""
+msgstr "GC debida a os achustes de depuración Zeal"
 
 #: marker.gcreason.description.COMPARTMENT_REVIVED
 msgid ""
 "A global object that was thought to be dead at the start of the GC cycle was "
 "revived by the end of the GC cycle."
 msgstr ""
+"Un obchecto global que se pensaba muerto a lo inicio d'o ciclo GC ha reviviu "
+"a la fin d'o ciclo GC."
 
 #: marker.gcreason.description.RESET
 msgid "The active incremental GC cycle was forced to finish immediately."
-msgstr ""
+msgstr "O ciclo GC incremental activo s'ha aforzau a acabar de camín."
 
 #: marker.gcreason.description.OUT_OF_NURSERY
 msgid ""
 "JavaScript allocated enough new objects in the nursery that it became full "
 "and triggered a minor GC."
 msgstr ""
+"JavaScript ha asignau tantos nuevos obchectos en a guardería que s'ha empliu "
+"y ha disparau un GC menor."
 
 #: marker.gcreason.description.EVICT_NURSERY
 msgid ""
 "Work needed to be done on the tenured heap, requiring the nursery to be "
 "empty."
 msgstr ""
+"S'amenista treballo pa fer-se en a pila tenured, requiriendo-se que a "
+"guardería siga vueda."
 
 #: marker.gcreason.description.FULL_STORE_BUFFER
 msgid ""
 "There were too many properties on tenured objects whose value was an object "
 "in the nursery."
 msgstr ""
+"I heba masiadas propiedatz en obchectos con tenure que teneban como valura "
+"un obchecto d'a guardería."
 
 #: marker.gcreason.description.SHARED_MEMORY_LIMIT
 msgid "A large allocation was requested, but there was not enough memory."
-msgstr ""
+msgstr "S'ha demandau una gran asignación, pero no i hai prou memoria."
 
 #: marker.gcreason.description.PERIODIC_FULL_GC
 msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since Firefox performed a garbage collection."
 msgstr ""
+"JavaScript ha tornau ta o bucle d'evento, y ha pasau un tiempo relativament "
+"largo dende que Firefox ha feito a replega de vasuera."
 
 #: marker.gcreason.description.INCREMENTAL_TOO_SLOW
 msgid ""
@@ -453,32 +467,36 @@ msgid ""
 "faster rate of allocations than the existing incremental garbage collection "
 "cycle could keep up with."
 msgstr ""
+"Un replega de vasuera completa y no incremental s'ha disparau porque i heba "
+"una taxa  d'asignacions mas alta d'as que puede limpiar o ciclo de replega "
+"de vasuera incremental existent."
 
 #: marker.gcreason.description.COMPONENT_UTILS
 msgid "Components.utils.forceGC() was called to force a garbage collection."
 msgstr ""
+"S'ha clamau a Components.utils.forceGC() pa aforzar una replega de vasuera."
 
 #: marker.gcreason.description.MEM_PRESSURE
 msgid "There was very low memory available."
-msgstr ""
+msgstr "I heba muit poca memoria disponible."
 
 #: marker.gcreason.description.CC_WAITING
 msgctxt "marker.gcreason.description.CC_WAITING"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "O replegador de ciclos ha requiesto una replega de vasuera."
 
 #: marker.gcreason.description.CC_FORCED
 msgctxt "marker.gcreason.description.CC_FORCED"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "O replegador de ciclos ha requiesto una replega de vasuera."
 
 #: marker.gcreason.description.LOAD_END
 msgid "The document finished loading."
-msgstr ""
+msgstr "S'ha rematau de cargar o documento."
 
 #: marker.gcreason.description.PAGE_HIDE
 msgid "The tab or window was moved to the background."
-msgstr ""
+msgstr "A pestanya u finestra s'ha moviu ta o fondo."
 
 #: marker.gcreason.description.NSJSCONTEXT_DESTROY
 msgctxt "marker.gcreason.description.NSJSCONTEXT_DESTROY"
@@ -486,40 +504,47 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"Firefox ha destruyiu un JavaScript de tiempo real u contexto, y iste ha "
+"estau a replega de vasuera final antes d'amortar."
 
 #: marker.gcreason.description.SET_NEW_DOCUMENT
 msgctxt "marker.gcreason.description.SET_NEW_DOCUMENT"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "A pachina s'ha navegau enta un nuevo documento."
 
 #: marker.gcreason.description.SET_DOC_SHELL
 msgctxt "marker.gcreason.description.SET_DOC_SHELL"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "A pachina s'ha navegau enta un nuevo documento."
 
 #: marker.gcreason.description.DOM_UTILS
 msgctxt "marker.gcreason.description.DOM_UTILS"
 msgid "There was an API call to force garbage collection."
-msgstr ""
+msgstr "I ha habiu una clamada ta una API pa forzar a replega de vasuera."
 
 #: marker.gcreason.description.DOM_IPC
 msgid "Received an inter-process message that requested a garbage collection."
 msgstr ""
+"S'ha recibiu un mensache inter-procesos que demandaba una replega de vasuera."
 
 #: marker.gcreason.description.DOM_WORKER
 msgid "The worker was idle for a relatively long time."
-msgstr ""
+msgstr "O worker ha estau quedo por un tiempo relativament largo."
 
 #: marker.gcreason.description.INTER_SLICE_GC
 msgid ""
 "There has been a relatively long time since the last incremental GC slice."
 msgstr ""
+"Ha pasau un tiempo relativament largo dende a zaguera tallada de GC "
+"incremental."
 
 #: marker.gcreason.description.FULL_GC_TIMER
 msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since we performed a garbage collection."
 msgstr ""
+"JavaScript ha tornau ta o bucle d'evento, y ha pasau un tiempo relativament "
+"largo dende que hemos feito a zaguera replega de vasuera."
 
 #: marker.gcreason.description.SHUTDOWN_CC
 msgctxt "marker.gcreason.description.SHUTDOWN_CC"
@@ -527,21 +552,29 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"Firefox ha destruyiu un JavaScript de tiempo real u contexto, y iste ha "
+"estau a replega de vasuera final antes d'amortar."
 
 #: marker.gcreason.description.FINISH_LARGE_EVALUATE
 msgid ""
 "Firefox finished evaluating a large script, and performed a GC because the "
 "script will never be run again."
 msgstr ""
+"Firefox ha rematau d'evaluar un script largo, y ha feito una GC porque o "
+"script no tornará a executar-se."
 
 #: marker.gcreason.description.DOM_WINDOW_UTILS
 msgid ""
 "The user was inactive for a long time. Took the opportunity to perform GC "
 "when it was unlikely to be noticed."
 msgstr ""
+"O usuario ha estau inactivo por bell tiempo. S'ha feito una GC quan yera mas "
+"dificil que se notase."
 
 #: marker.gcreason.description.USER_INACTIVE
 msgid ""
 "The user was inactive for a long time. Firefox took the opportunity to "
 "perform GC when it was unlikely to be noticed."
 msgstr ""
+"O usuario ha estau inactivo por bell tiempo. Firefox ha aproveitar pa fer "
+"una GC quan menos s'iba a notar."
