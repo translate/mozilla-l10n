@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 11:38+0000\n"
+"POT-Creation-Date: 2015-09-21 15:18+0000\n"
 "PO-Revision-Date: 2015-09-20 21:51+0000\n"
 "Last-Translator: Gabor Kelemen <kelemeng@ubuntu.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1442785890.000000\n"
@@ -237,6 +237,10 @@ msgstr "A &syncBrand.shortName.label; beállításainak megnyitása"
 msgid "Reconnect to &syncBrand.shortName.label;"
 msgstr "Újracsatlakozás a &syncBrand.shortName.label;hez"
 
+#: fxaUnverified.label
+msgid "Verify Your Account"
+msgstr ""
+
 #: syncStartPanel2.heading
 msgid "&syncBrand.shortName.label; enabled"
 msgstr "&syncBrand.shortName.label; bekapcsolva"
@@ -244,18 +248,6 @@ msgstr "&syncBrand.shortName.label; bekapcsolva"
 #: syncStartPanel2.subTitle
 msgid "&brandShortName; will begin syncing momentarily."
 msgstr "A &brandShortName; mindjárt elkezdi a szinkronizálást."
-
-#: syncErrorPanel.heading
-msgid "Cannot connect to &syncBrand.shortName.label;"
-msgstr "Nem lehet csatlakozni a &syncBrand.shortName.label;hez"
-
-#: syncErrorPanel.subTitle
-msgid "Please sign in to resume syncing."
-msgstr "Jelentkezzen be a szinkronizálás folytatásához."
-
-#: syncErrorPanel.signInButton.label syncErrorPanel.signInButton.accesskey
-msgid "&Sign In"
-msgstr "&Bejelentkezés"
 
 #: fullScreenMinimize.tooltip
 msgid "Minimize"
@@ -278,9 +270,34 @@ msgstr "&Eszköztárak elrejtése"
 msgid "Exit &Full Screen Mode"
 msgstr "&Kilépés a teljes képernyős módból"
 
-#: fullscreenExitHint2.value
-msgid "Press ESC at any time to exit."
-msgstr "Nyomja meg bármikor az Esc-t a kilépéshez."
+#. LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
+#. fullscreenWarning.afterDomain.label): these two strings are used
+#. respectively before and after the domain requiring fullscreen.
+#. Localizers can use one of them, or both, to better adapt this
+#. sentence to their language.
+#: fullscreenWarning.beforeDomain.label
+msgctxt "fullscreenWarning.beforeDomain.label"
+msgid ""
+msgstr ""
+
+#: fullscreenWarning.afterDomain.label
+msgid "is now full screen"
+msgstr ""
+
+#: fullscreenWarning.generic.label
+msgid "This document is now full screen"
+msgstr ""
+
+#. LOCALIZATION NOTE (exitDOMFullscreen.button,
+#. exitDOMFullscreenMac.button): the "escape" button on PC keyboards
+#. is uppercase, while on Mac keyboards it is lowercase
+#: exitDOMFullscreen.button
+msgid "Exit Full Screen (Esc)"
+msgstr ""
+
+#: exitDOMFullscreenMac.button
+msgid "Exit Full Screen (esc)"
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -513,6 +530,8 @@ msgid "j"
 msgstr "j"
 
 #: downloadsUnix.commandkey
+#, fuzzy
+msgctxt "downloadsUnix.commandkey"
 msgid "y"
 msgstr "y"
 
@@ -929,13 +948,27 @@ msgstr "Szeretné a keresési élményt javaslatokkal javítani?"
 msgid "Learn more…"
 msgstr "További tudnivalók…"
 
+#: urlbar.searchSuggestionsNotification.learnMore.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.learnMore.accesskey"
+msgid "l"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.disable
 msgid "No"
 msgstr "Nem"
 
+#: urlbar.searchSuggestionsNotification.disable.accesskey
+msgid "n"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.enable
 msgid "Yes"
 msgstr "Igen"
+
+#: urlbar.searchSuggestionsNotification.enable.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.enable.accesskey"
+msgid "y"
+msgstr ""
 
 #. Comment duplicated from browser-sets.inc:
 #. Search Command Key Logic works like this:
@@ -1016,6 +1049,14 @@ msgstr "Keresés ezzel:"
 #: changeSearchSettings.button
 msgid "Change Search Settings"
 msgstr "Keresési beállítások módosítása"
+
+#: searchInNewTab.label searchInNewTab.accesskey
+msgid "Search in New &Tab"
+msgstr ""
+
+#: searchSetAsDefault.label searchSetAsDefault.accesskey
+msgid "Set As &Default Search Engine"
+msgstr ""
 
 #: tabView.commandkey
 msgctxt "tabView.commandkey"
@@ -1509,17 +1550,17 @@ msgstr "A kapcsolat nem biztonságos"
 msgid "This page is stored on your computer."
 msgstr "Ez az oldal a számítógépén van tárolva."
 
-#: identity.connectionVerified
-msgid ""
-"&brandShortName; verified that you are securely connected to this site, run "
-"by:"
+#: identity.connectionVerified1
+msgid "You are securely connected to this site, run by:"
 msgstr ""
-"A &brandShortName; ellenőrizte, hogy biztonságosan kapcsolódott ehhez ez "
-"oldalhoz; az üzemeltetője:"
 
 #: identity.connectionInternal
 msgid "This is a secure &brandShortName; page."
 msgstr "Ez egy biztonságos &brandShortName; oldal."
+
+#: identity.insecureLoginForms
+msgid "Your login could be compromised."
+msgstr ""
 
 #. Strings for connection state warnings.
 #: identity.activeBlocked
@@ -1548,6 +1589,12 @@ msgstr ""
 "A kapcsolat ehhez az oldalhoz nem biztonságos. Az elküldött információkat "
 "mások is láthatják (például a jelszavakat, üzeneteket, bankkártya-adatokat "
 "stb.)."
+
+#: identity.description.insecureLoginForms
+msgid ""
+"The login information you enter on this page is not secure and could be "
+"compromised."
+msgstr ""
 
 #: identity.description.weakCipher
 msgid ""
@@ -1630,6 +1677,10 @@ msgstr "További tudnivalók"
 msgid "Permissions"
 msgstr "Engedélyek"
 
+#: identity.permissionsEmpty
+msgid "You have not granted this site any special permissions."
+msgstr ""
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1646,14 +1697,15 @@ msgctxt "syncBrand.shortName.label"
 msgid "Sync"
 msgstr "Sync"
 
-#: syncSetup.label
-msgid "Set Up &syncBrand.shortName.label;…"
-msgstr "A &syncBrand.shortName.label; beállítása…"
+#: syncSignIn.label
+#, fuzzy
+msgid "Sign In To &syncBrand.shortName.label;…"
+msgstr "Jelentkezzen be a &syncBrand.shortName.label;be"
 
-#: syncSetup.accesskey
-msgctxt "syncSetup.accesskey"
+#: syncSignIn.accesskey
+msgctxt "syncSignIn.accesskey"
 msgid "Y"
-msgstr "b"
+msgstr ""
 
 #: syncSyncNowItem.label syncSyncNowItem.accesskey
 msgid "&Sync Now"
@@ -2044,6 +2096,32 @@ msgstr "&Hivatkozás mentése a Pocketbe"
 #: pocketMenuitem.label
 msgid "View Pocket List"
 msgstr "Pocket lista megjelenítése"
+
+#~ msgid "Cannot connect to &syncBrand.shortName.label;"
+#~ msgstr "Nem lehet csatlakozni a &syncBrand.shortName.label;hez"
+
+#~ msgid "Please sign in to resume syncing."
+#~ msgstr "Jelentkezzen be a szinkronizálás folytatásához."
+
+#~ msgid "&Sign In"
+#~ msgstr "&Bejelentkezés"
+
+#~ msgid "Press ESC at any time to exit."
+#~ msgstr "Nyomja meg bármikor az Esc-t a kilépéshez."
+
+#~ msgid ""
+#~ "&brandShortName; verified that you are securely connected to this site, "
+#~ "run by:"
+#~ msgstr ""
+#~ "A &brandShortName; ellenőrizte, hogy biztonságosan kapcsolódott ehhez ez "
+#~ "oldalhoz; az üzemeltetője:"
+
+#~ msgid "Set Up &syncBrand.shortName.label;…"
+#~ msgstr "A &syncBrand.shortName.label; beállítása…"
+
+#~ msgctxt "syncSetup.accesskey"
+#~ msgid "Y"
+#~ msgstr "b"
 
 #~ msgid "Allow"
 #~ msgstr "Engedélyezés"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 11:38+0000\n"
+"POT-Creation-Date: 2015-09-21 15:18+0000\n"
 "PO-Revision-Date: 2015-09-09 01:15+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441761332.000000\n"
@@ -249,6 +249,10 @@ msgstr ""
 msgid "Reconnect to &syncBrand.shortName.label;"
 msgstr "Şuny Gur: &syncBrand.fullName.label;"
 
+#: fxaUnverified.label
+msgid "Verify Your Account"
+msgstr ""
+
 #: syncStartPanel2.heading
 #, fuzzy
 msgid "&syncBrand.shortName.label; enabled"
@@ -256,19 +260,6 @@ msgstr "&syncBrand.shortName.label;"
 
 #: syncStartPanel2.subTitle
 msgid "&brandShortName; will begin syncing momentarily."
-msgstr ""
-
-#: syncErrorPanel.heading
-#, fuzzy
-msgid "Cannot connect to &syncBrand.shortName.label;"
-msgstr "Şuny Gur: &syncBrand.fullName.label;"
-
-#: syncErrorPanel.subTitle
-msgid "Please sign in to resume syncing."
-msgstr ""
-
-#: syncErrorPanel.signInButton.label syncErrorPanel.signInButton.accesskey
-msgid "&Sign In"
 msgstr ""
 
 #: fullScreenMinimize.tooltip
@@ -293,8 +284,33 @@ msgstr "Şahamçalary Gizle"
 msgid "Exit &Full Screen Mode"
 msgstr "&Doly Ekran Görnüşden Çyk"
 
-#: fullscreenExitHint2.value
-msgid "Press ESC at any time to exit."
+#. LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
+#. fullscreenWarning.afterDomain.label): these two strings are used
+#. respectively before and after the domain requiring fullscreen.
+#. Localizers can use one of them, or both, to better adapt this
+#. sentence to their language.
+#: fullscreenWarning.beforeDomain.label
+msgctxt "fullscreenWarning.beforeDomain.label"
+msgid ""
+msgstr ""
+
+#: fullscreenWarning.afterDomain.label
+msgid "is now full screen"
+msgstr ""
+
+#: fullscreenWarning.generic.label
+msgid "This document is now full screen"
+msgstr ""
+
+#. LOCALIZATION NOTE (exitDOMFullscreen.button,
+#. exitDOMFullscreenMac.button): the "escape" button on PC keyboards
+#. is uppercase, while on Mac keyboards it is lowercase
+#: exitDOMFullscreen.button
+msgid "Exit Full Screen (Esc)"
+msgstr ""
+
+#: exitDOMFullscreenMac.button
+msgid "Exit Full Screen (esc)"
 msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
@@ -537,6 +553,8 @@ msgid "j"
 msgstr "j"
 
 #: downloadsUnix.commandkey
+#, fuzzy
+msgctxt "downloadsUnix.commandkey"
 msgid "y"
 msgstr "y"
 
@@ -965,14 +983,28 @@ msgstr ""
 msgid "Learn more…"
 msgstr "Köpräk Maglumat"
 
+#: urlbar.searchSuggestionsNotification.learnMore.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.learnMore.accesskey"
+msgid "l"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.disable
 msgid "No"
 msgstr "Ýok"
+
+#: urlbar.searchSuggestionsNotification.disable.accesskey
+msgid "n"
+msgstr ""
 
 #: urlbar.searchSuggestionsNotification.enable
 #, fuzzy
 msgid "Yes"
 msgstr "Hawa"
+
+#: urlbar.searchSuggestionsNotification.enable.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.enable.accesskey"
+msgid "y"
+msgstr ""
 
 #. Comment duplicated from browser-sets.inc:
 #. Search Command Key Logic works like this:
@@ -1051,6 +1083,14 @@ msgstr ""
 #. consider translating it as if it said only "Search Settings".
 #: changeSearchSettings.button
 msgid "Change Search Settings"
+msgstr ""
+
+#: searchInNewTab.label searchInNewTab.accesskey
+msgid "Search in New &Tab"
+msgstr ""
+
+#: searchSetAsDefault.label searchSetAsDefault.accesskey
+msgid "Set As &Default Search Engine"
 msgstr ""
 
 #: tabView.commandkey
@@ -1552,14 +1592,16 @@ msgstr ""
 msgid "This page is stored on your computer."
 msgstr ""
 
-#: identity.connectionVerified
-msgid ""
-"&brandShortName; verified that you are securely connected to this site, run "
-"by:"
+#: identity.connectionVerified1
+msgid "You are securely connected to this site, run by:"
 msgstr ""
 
 #: identity.connectionInternal
 msgid "This is a secure &brandShortName; page."
+msgstr ""
+
+#: identity.insecureLoginForms
+msgid "Your login could be compromised."
 msgstr ""
 
 #. Strings for connection state warnings.
@@ -1585,6 +1627,12 @@ msgstr ""
 msgid ""
 "Your connection to this site is not private. Information you submit could be "
 "viewed by others (like passwords, messages, credit cards, etc.)."
+msgstr ""
+
+#: identity.description.insecureLoginForms
+msgid ""
+"The login information you enter on this page is not secure and could be "
+"compromised."
 msgstr ""
 
 #: identity.description.weakCipher
@@ -1658,6 +1706,10 @@ msgstr "Köpräk Maglumat..."
 msgid "Permissions"
 msgstr ""
 
+#: identity.permissionsEmpty
+msgid "You have not granted this site any special permissions."
+msgstr ""
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1674,14 +1726,15 @@ msgctxt "syncBrand.shortName.label"
 msgid "Sync"
 msgstr "Sync"
 
-#: syncSetup.label
-msgid "Set Up &syncBrand.shortName.label;…"
+#: syncSignIn.label
+#, fuzzy
+msgid "Sign In To &syncBrand.shortName.label;…"
 msgstr "Şuny Gur: &syncBrand.fullName.label;"
 
-#: syncSetup.accesskey
-msgctxt "syncSetup.accesskey"
+#: syncSignIn.accesskey
+msgctxt "syncSignIn.accesskey"
 msgid "Y"
-msgstr "Y"
+msgstr ""
 
 #: syncSyncNowItem.label syncSyncNowItem.accesskey
 msgid "&Sync Now"
@@ -2073,6 +2126,17 @@ msgstr ""
 #: pocketMenuitem.label
 msgid "View Pocket List"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Cannot connect to &syncBrand.shortName.label;"
+#~ msgstr "Şuny Gur: &syncBrand.fullName.label;"
+
+#~ msgid "Set Up &syncBrand.shortName.label;…"
+#~ msgstr "Şuny Gur: &syncBrand.fullName.label;"
+
+#~ msgctxt "syncSetup.accesskey"
+#~ msgid "Y"
+#~ msgstr "Y"
 
 #~ msgid "Allow"
 #~ msgstr "Rugsat ber"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 11:38+0000\n"
+"POT-Creation-Date: 2015-09-21 15:18+0000\n"
 "PO-Revision-Date: 2015-09-10 12:30+0000\n"
 "Last-Translator: Cristian Silaghi <cristian.silaghi@mozilla.ro>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441888249.000000\n"
@@ -197,7 +197,7 @@ msgstr ""
 "Strict-Transport-Security: S-a produs o eroare cu specificarea că site-ul ar "
 "fi o gazdă Strict-Transport-Security."
 
-#. # LOCALIZATION NOTE: Do not translate "Public-Key-Pins", "HPKP", "max-age" or "includeSubDomains"
+#. # LOCALIZATION NOTE: Do not translate "Public-Key-Pins", "HPKP", "max-age", "report-uri" or "includeSubDomains"
 #: PKPUnknownError
 msgid ""
 "Public-Key-Pins: An unknown error occurred processing the header specified "
@@ -301,6 +301,13 @@ msgstr ""
 "Public-Key-Pins: S-a produs o eroare cu specificarea că site-ul ar fi gazdă "
 "Public-Key-Pins."
 
+#: PKPRootNotBuiltIn
+msgid ""
+"Public-Key-Pins: The certificate used by the site was not issued by a "
+"certificate in the default root certificate store. To prevent accidental "
+"breakage, the specified header was ignored."
+msgstr ""
+
 #. # LOCALIZATION NOTE: Do not translate "SHA-1"
 #: SHA1Sig
 msgid ""
@@ -356,14 +363,47 @@ msgstr ""
 "An iframe which has both allow-scripts and allow-same-origin for its sandbox "
 "attribute can remove its sandboxing."
 
-#. # LOCALIZATION NOTE: Do not translate "SSL 3.0".
-#: WeakProtocolVersionWarning
+#. # Sub-Resource Integrity
+#. # LOCALIZATION NOTE: Do not translate "script" or "integrity". "%1$S" is the invalid token found in the attribute.
+#: MalformedIntegrityHash
 msgid ""
-"This site uses the protocol SSL 3.0 for encryption, which is deprecated and "
-"insecure."
+"The script element has a malformed hash in its integrity attribute: \"%1$S"
+"\". The correct format is \"<hash algorithm>-<hash value>\"."
 msgstr ""
-"Acest site folosește protocolul SSL 3.0 pentru criptare, care este "
-"descurajat și nesigur."
+
+#. # LOCALIZATION NOTE: Do not translate "integrity"
+#: InvalidIntegrityLength
+msgid "The hash contained in the integrity attribute has the wrong length."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "integrity"
+#: InvalidIntegrityBase64
+msgid "The hash contained in the integrity attribute could not be decoded."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "integrity". "%1$S" is the type of hash algorigthm in use (e.g. "sha256").
+#: IntegrityMismatch
+msgid ""
+"None of the \"%1$S\" hashes in the integrity attribute match the content of "
+"the subresource."
+msgstr ""
+
+#. # LOCALIZATION NOTE: "%1$S" is the URI of the sub-resource that cannot be protected using SRI.
+#: IneligibleResource
+msgid ""
+"\"%1$S\" is not eligible for integrity checks since it's neither CORS-"
+"enabled nor same-origin."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "integrity". "%1$S" is the invalid hash algorithm found in the attribute.
+#: UnsupportedHashAlg
+msgid "Unsupported hash algorithm in the integrity attribute: \"%1$S\""
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "integrity"
+#: NoValidMetadata
+msgid "The integrity attribute does not contain any valid metadata."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "RC4".
 #: WeakCipherSuiteWarning
@@ -373,6 +413,13 @@ msgid ""
 msgstr ""
 "Acest site folosește cifrul RC4 pentru criptare, care este descurajat și "
 "nesigur."
+
+#~ msgid ""
+#~ "This site uses the protocol SSL 3.0 for encryption, which is deprecated "
+#~ "and insecure."
+#~ msgstr ""
+#~ "Acest site folosește protocolul SSL 3.0 pentru criptare, care este "
+#~ "descurajat și nesigur."
 
 #~ msgid ""
 #~ "Cross-Origin Request Blocked: The Same Origin Policy disallows reading "

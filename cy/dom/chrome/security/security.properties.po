@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 11:38+0000\n"
+"POT-Creation-Date: 2015-09-21 15:18+0000\n"
 "PO-Revision-Date: 2015-08-18 08:05+0000\n"
 "Last-Translator: Rhoslyn Prys <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1439885142.000000\n"
@@ -196,7 +196,7 @@ msgstr ""
 "Strict-Transport-Security: Digwyddodd gwall yn nodi'r wefan fel gwestai "
 "Strict-Transport-Security."
 
-#. # LOCALIZATION NOTE: Do not translate "Public-Key-Pins", "HPKP", "max-age" or "includeSubDomains"
+#. # LOCALIZATION NOTE: Do not translate "Public-Key-Pins", "HPKP", "max-age", "report-uri" or "includeSubDomains"
 #: PKPUnknownError
 msgid ""
 "Public-Key-Pins: An unknown error occurred processing the header specified "
@@ -295,6 +295,13 @@ msgstr ""
 "Public-Key-Pins: Digwyddodd gwall wrth bennu'r wefan fel gwesteiwr Public-"
 "Key-Pins."
 
+#: PKPRootNotBuiltIn
+msgid ""
+"Public-Key-Pins: The certificate used by the site was not issued by a "
+"certificate in the default root certificate store. To prevent accidental "
+"breakage, the specified header was ignored."
+msgstr ""
+
 #. # LOCALIZATION NOTE: Do not translate "SHA-1"
 #: SHA1Sig
 msgid ""
@@ -354,14 +361,47 @@ msgstr ""
 "Mae modd i iframe sydd ag allow-scripts ac allow-same-origin i'w briodweddau "
 "sandbox fedru tynnu ei sandbox."
 
-#. # LOCALIZATION NOTE: Do not translate "SSL 3.0".
-#: WeakProtocolVersionWarning
+#. # Sub-Resource Integrity
+#. # LOCALIZATION NOTE: Do not translate "script" or "integrity". "%1$S" is the invalid token found in the attribute.
+#: MalformedIntegrityHash
 msgid ""
-"This site uses the protocol SSL 3.0 for encryption, which is deprecated and "
-"insecure."
+"The script element has a malformed hash in its integrity attribute: \"%1$S"
+"\". The correct format is \"<hash algorithm>-<hash value>\"."
 msgstr ""
-"Mae'r wefan yn defnyddio protocol SSL 3.0 ar gyfer amgryptiad, sy'n "
-"anghymeradwy ac anniogel."
+
+#. # LOCALIZATION NOTE: Do not translate "integrity"
+#: InvalidIntegrityLength
+msgid "The hash contained in the integrity attribute has the wrong length."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "integrity"
+#: InvalidIntegrityBase64
+msgid "The hash contained in the integrity attribute could not be decoded."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "integrity". "%1$S" is the type of hash algorigthm in use (e.g. "sha256").
+#: IntegrityMismatch
+msgid ""
+"None of the \"%1$S\" hashes in the integrity attribute match the content of "
+"the subresource."
+msgstr ""
+
+#. # LOCALIZATION NOTE: "%1$S" is the URI of the sub-resource that cannot be protected using SRI.
+#: IneligibleResource
+msgid ""
+"\"%1$S\" is not eligible for integrity checks since it's neither CORS-"
+"enabled nor same-origin."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "integrity". "%1$S" is the invalid hash algorithm found in the attribute.
+#: UnsupportedHashAlg
+msgid "Unsupported hash algorithm in the integrity attribute: \"%1$S\""
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "integrity"
+#: NoValidMetadata
+msgid "The integrity attribute does not contain any valid metadata."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "RC4".
 #: WeakCipherSuiteWarning
@@ -371,6 +411,13 @@ msgid ""
 msgstr ""
 "Mae'r wefan yn defnyddio seiffr RC4 ar gyfer amgryptiad, sy'n anghymeradwy "
 "ac anniogel."
+
+#~ msgid ""
+#~ "This site uses the protocol SSL 3.0 for encryption, which is deprecated "
+#~ "and insecure."
+#~ msgstr ""
+#~ "Mae'r wefan yn defnyddio protocol SSL 3.0 ar gyfer amgryptiad, sy'n "
+#~ "anghymeradwy ac anniogel."
 
 #~ msgid ""
 #~ "Cross-Origin Request Blocked: The Same Origin Policy disallows reading "
