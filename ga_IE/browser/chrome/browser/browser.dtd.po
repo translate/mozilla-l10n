@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 11:38+0000\n"
+"POT-Creation-Date: 2015-09-21 15:18+0000\n"
 "PO-Revision-Date: 2015-09-15 22:58+0000\n"
 "Last-Translator: Mícheál John Ó Meachair <michealomeachair@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1442357912.000000\n"
@@ -249,6 +249,10 @@ msgstr "Oscail sainroghanna &syncBrand.shortName.label;"
 msgid "Reconnect to &syncBrand.shortName.label;"
 msgstr "Athcheangail le &syncBrand.shortName.label;"
 
+#: fxaUnverified.label
+msgid "Verify Your Account"
+msgstr ""
+
 #: syncStartPanel2.heading
 msgid "&syncBrand.shortName.label; enabled"
 msgstr "&syncBrand.shortName.label; cumasaithe"
@@ -256,18 +260,6 @@ msgstr "&syncBrand.shortName.label; cumasaithe"
 #: syncStartPanel2.subTitle
 msgid "&brandShortName; will begin syncing momentarily."
 msgstr "Tosóidh &brandShortName; ag sioncrónú go luath."
-
-#: syncErrorPanel.heading
-msgid "Cannot connect to &syncBrand.shortName.label;"
-msgstr "Ní féidir ceangal le &syncBrand.shortName.label;"
-
-#: syncErrorPanel.subTitle
-msgid "Please sign in to resume syncing."
-msgstr "Logáil isteach chun sioncrónú a atosú."
-
-#: syncErrorPanel.signInButton.label syncErrorPanel.signInButton.accesskey
-msgid "&Sign In"
-msgstr "&Logáil Isteach"
 
 #: fullScreenMinimize.tooltip
 msgid "Minimize"
@@ -290,9 +282,34 @@ msgstr "Folaig&h Barraí Uirlisí"
 msgid "Exit &Full Screen Mode"
 msgstr "Fág Mód &Lánscáileáin"
 
-#: fullscreenExitHint2.value
-msgid "Press ESC at any time to exit."
-msgstr "Brúigh ESC am ar bith chun scor."
+#. LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
+#. fullscreenWarning.afterDomain.label): these two strings are used
+#. respectively before and after the domain requiring fullscreen.
+#. Localizers can use one of them, or both, to better adapt this
+#. sentence to their language.
+#: fullscreenWarning.beforeDomain.label
+msgctxt "fullscreenWarning.beforeDomain.label"
+msgid ""
+msgstr ""
+
+#: fullscreenWarning.afterDomain.label
+msgid "is now full screen"
+msgstr ""
+
+#: fullscreenWarning.generic.label
+msgid "This document is now full screen"
+msgstr ""
+
+#. LOCALIZATION NOTE (exitDOMFullscreen.button,
+#. exitDOMFullscreenMac.button): the "escape" button on PC keyboards
+#. is uppercase, while on Mac keyboards it is lowercase
+#: exitDOMFullscreen.button
+msgid "Exit Full Screen (Esc)"
+msgstr ""
+
+#: exitDOMFullscreenMac.button
+msgid "Exit Full Screen (esc)"
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -532,6 +549,8 @@ msgid "j"
 msgstr "j"
 
 #: downloadsUnix.commandkey
+#, fuzzy
+msgctxt "downloadsUnix.commandkey"
 msgid "y"
 msgstr "y"
 
@@ -968,13 +987,27 @@ msgstr "Ar mhaith leat do chuardaigh a fheabhsú trí mholtaí a sheoladh?"
 msgid "Learn more…"
 msgstr "Tuilleadh eolais…"
 
+#: urlbar.searchSuggestionsNotification.learnMore.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.learnMore.accesskey"
+msgid "l"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.disable
 msgid "No"
 msgstr "Níl"
 
+#: urlbar.searchSuggestionsNotification.disable.accesskey
+msgid "n"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.enable
 msgid "Yes"
 msgstr "Tá"
+
+#: urlbar.searchSuggestionsNotification.enable.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.enable.accesskey"
+msgid "y"
+msgstr ""
 
 #. Comment duplicated from browser-sets.inc:
 #. Search Command Key Logic works like this:
@@ -1054,6 +1087,14 @@ msgstr "Cuardaigh le:"
 #: changeSearchSettings.button
 msgid "Change Search Settings"
 msgstr "Socruithe Cuardaigh"
+
+#: searchInNewTab.label searchInNewTab.accesskey
+msgid "Search in New &Tab"
+msgstr ""
+
+#: searchSetAsDefault.label searchSetAsDefault.accesskey
+msgid "Set As &Default Search Engine"
+msgstr ""
 
 #: tabView.commandkey
 msgctxt "tabView.commandkey"
@@ -1562,17 +1603,17 @@ msgstr "Ní Ceangal Slán é seo"
 msgid "This page is stored on your computer."
 msgstr "Stóráiltear an leathanach seo ar do ríomhaire."
 
-#: identity.connectionVerified
-msgid ""
-"&brandShortName; verified that you are securely connected to this site, run "
-"by:"
+#: identity.connectionVerified1
+msgid "You are securely connected to this site, run by:"
 msgstr ""
-"Dheimhnigh &brandShortName; go bhfuil ceangal slán agat leis an suíomh seo, "
-"suíomh faoi stiúir:"
 
 #: identity.connectionInternal
 msgid "This is a secure &brandShortName; page."
 msgstr "Is leathanach slán &brandShortName; é seo."
+
+#: identity.insecureLoginForms
+msgid "Your login could be compromised."
+msgstr ""
 
 #. Strings for connection state warnings.
 #: identity.activeBlocked
@@ -1602,6 +1643,12 @@ msgstr ""
 "Níl do cheangal leis an suíomh seo príobháideach. D'fhéadfadh daoine eile an "
 "t-eolas a aighníonn tú a fheiscint (leithéidí focail faire, "
 "teachtaireachtaí, cártaí creidmheasa, etc.)"
+
+#: identity.description.insecureLoginForms
+msgid ""
+"The login information you enter on this page is not secure and could be "
+"compromised."
+msgstr ""
 
 #: identity.description.weakCipher
 msgid ""
@@ -1685,6 +1732,10 @@ msgstr "Tuilleadh Eolais"
 msgid "Permissions"
 msgstr "Ceadanna"
 
+#: identity.permissionsEmpty
+msgid "You have not granted this site any special permissions."
+msgstr ""
+
 # Name for the tabs toolbar as spoken by screen readers.
 # The word "toolbar" is appended automatically and should not be contained below!
 #. Name for the tabs toolbar as spoken by screen readers.
@@ -1703,14 +1754,15 @@ msgctxt "syncBrand.shortName.label"
 msgid "Sync"
 msgstr "Sync"
 
-#: syncSetup.label
-msgid "Set Up &syncBrand.shortName.label;…"
-msgstr "Socraigh &syncBrand.shortName.label;…"
+#: syncSignIn.label
+#, fuzzy
+msgid "Sign In To &syncBrand.shortName.label;…"
+msgstr "Logáil isteach i &syncBrand.shortName.label;"
 
-#: syncSetup.accesskey
-msgctxt "syncSetup.accesskey"
+#: syncSignIn.accesskey
+msgctxt "syncSignIn.accesskey"
 msgid "Y"
-msgstr "Y"
+msgstr ""
 
 #: syncSyncNowItem.label syncSyncNowItem.accesskey
 msgid "&Sync Now"
@@ -2103,6 +2155,32 @@ msgstr "Sábháil an Nasc i bP&ocket"
 #: pocketMenuitem.label
 msgid "View Pocket List"
 msgstr "Féach ar an Liosta Pocket"
+
+#~ msgid "Cannot connect to &syncBrand.shortName.label;"
+#~ msgstr "Ní féidir ceangal le &syncBrand.shortName.label;"
+
+#~ msgid "Please sign in to resume syncing."
+#~ msgstr "Logáil isteach chun sioncrónú a atosú."
+
+#~ msgid "&Sign In"
+#~ msgstr "&Logáil Isteach"
+
+#~ msgid "Press ESC at any time to exit."
+#~ msgstr "Brúigh ESC am ar bith chun scor."
+
+#~ msgid ""
+#~ "&brandShortName; verified that you are securely connected to this site, "
+#~ "run by:"
+#~ msgstr ""
+#~ "Dheimhnigh &brandShortName; go bhfuil ceangal slán agat leis an suíomh "
+#~ "seo, suíomh faoi stiúir:"
+
+#~ msgid "Set Up &syncBrand.shortName.label;…"
+#~ msgstr "Socraigh &syncBrand.shortName.label;…"
+
+#~ msgctxt "syncSetup.accesskey"
+#~ msgid "Y"
+#~ msgstr "Y"
 
 #~ msgid "Allow"
 #~ msgstr "Ceadaigh"

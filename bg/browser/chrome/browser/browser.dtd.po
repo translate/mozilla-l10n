@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 11:38+0000\n"
+"POT-Creation-Date: 2015-09-21 15:18+0000\n"
 "PO-Revision-Date: 2015-09-19 08:35+0000\n"
 "Last-Translator: Ognyan Kulev <ognyan@ognyankulev.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1442651731.000000\n"
@@ -237,6 +237,10 @@ msgstr "Отваряне настройките на &syncBrand.shortName.label;
 msgid "Reconnect to &syncBrand.shortName.label;"
 msgstr "Свържете се наново в &syncBrand.shortName.label;"
 
+#: fxaUnverified.label
+msgid "Verify Your Account"
+msgstr ""
+
 #: syncStartPanel2.heading
 msgid "&syncBrand.shortName.label; enabled"
 msgstr "&syncBrand.shortName.label; включен"
@@ -244,18 +248,6 @@ msgstr "&syncBrand.shortName.label; включен"
 #: syncStartPanel2.subTitle
 msgid "&brandShortName; will begin syncing momentarily."
 msgstr "&brandShortName; скоро ще започне синхронизация."
-
-#: syncErrorPanel.heading
-msgid "Cannot connect to &syncBrand.shortName.label;"
-msgstr "Не може да се направи връзка с &syncBrand.shortName.label;"
-
-#: syncErrorPanel.subTitle
-msgid "Please sign in to resume syncing."
-msgstr "Моля впишете се за продължаване на синхронизирането."
-
-#: syncErrorPanel.signInButton.label syncErrorPanel.signInButton.accesskey
-msgid "&Sign In"
-msgstr "&Вписване"
 
 #: fullScreenMinimize.tooltip
 msgid "Minimize"
@@ -278,9 +270,34 @@ msgstr "Скриване на &лентите"
 msgid "Exit &Full Screen Mode"
 msgstr "Изход от &цял екран"
 
-#: fullscreenExitHint2.value
-msgid "Press ESC at any time to exit."
-msgstr "Натиснете ESC за излизане от пълноекранния режим."
+#. LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
+#. fullscreenWarning.afterDomain.label): these two strings are used
+#. respectively before and after the domain requiring fullscreen.
+#. Localizers can use one of them, or both, to better adapt this
+#. sentence to their language.
+#: fullscreenWarning.beforeDomain.label
+msgctxt "fullscreenWarning.beforeDomain.label"
+msgid ""
+msgstr ""
+
+#: fullscreenWarning.afterDomain.label
+msgid "is now full screen"
+msgstr ""
+
+#: fullscreenWarning.generic.label
+msgid "This document is now full screen"
+msgstr ""
+
+#. LOCALIZATION NOTE (exitDOMFullscreen.button,
+#. exitDOMFullscreenMac.button): the "escape" button on PC keyboards
+#. is uppercase, while on Mac keyboards it is lowercase
+#: exitDOMFullscreen.button
+msgid "Exit Full Screen (Esc)"
+msgstr ""
+
+#: exitDOMFullscreenMac.button
+msgid "Exit Full Screen (esc)"
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -514,6 +531,8 @@ msgid "j"
 msgstr "j"
 
 #: downloadsUnix.commandkey
+#, fuzzy
+msgctxt "downloadsUnix.commandkey"
 msgid "y"
 msgstr "y"
 
@@ -930,13 +949,27 @@ msgstr "Искате ли да се показват подсказки при �
 msgid "Learn more…"
 msgstr "Научете повече…"
 
+#: urlbar.searchSuggestionsNotification.learnMore.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.learnMore.accesskey"
+msgid "l"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.disable
 msgid "No"
 msgstr "Не"
 
+#: urlbar.searchSuggestionsNotification.disable.accesskey
+msgid "n"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.enable
 msgid "Yes"
 msgstr "Да"
+
+#: urlbar.searchSuggestionsNotification.enable.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.enable.accesskey"
+msgid "y"
+msgstr ""
 
 #. Comment duplicated from browser-sets.inc:
 #. Search Command Key Logic works like this:
@@ -1015,6 +1048,14 @@ msgstr "Търсене с:"
 #: changeSearchSettings.button
 msgid "Change Search Settings"
 msgstr "Настройки на търсене"
+
+#: searchInNewTab.label searchInNewTab.accesskey
+msgid "Search in New &Tab"
+msgstr ""
+
+#: searchSetAsDefault.label searchSetAsDefault.accesskey
+msgid "Set As &Default Search Engine"
+msgstr ""
 
 #: tabView.commandkey
 msgctxt "tabView.commandkey"
@@ -1508,17 +1549,17 @@ msgstr "Връзката е незащитена"
 msgid "This page is stored on your computer."
 msgstr "Страницата е запазена в компютъра."
 
-#: identity.connectionVerified
-msgid ""
-"&brandShortName; verified that you are securely connected to this site, run "
-"by:"
+#: identity.connectionVerified1
+msgid "You are securely connected to this site, run by:"
 msgstr ""
-"&brandShortName; потвърждава защитата на връзката към тази страница, "
-"управлявана от:"
 
 #: identity.connectionInternal
 msgid "This is a secure &brandShortName; page."
 msgstr "Това е защитена страница на &brandShortName;."
+
+#: identity.insecureLoginForms
+msgid "Your login could be compromised."
+msgstr ""
 
 #. Strings for connection state warnings.
 #: identity.activeBlocked
@@ -1547,6 +1588,12 @@ msgstr ""
 "Връзката ви със сайта не е поверителна. Изпращаната информация, като "
 "например пароли, съобщения, кредитни карти и др., може да бъде видяна от "
 "други."
+
+#: identity.description.insecureLoginForms
+msgid ""
+"The login information you enter on this page is not secure and could be "
+"compromised."
+msgstr ""
 
 #: identity.description.weakCipher
 msgid ""
@@ -1628,6 +1675,10 @@ msgstr "Повече информация"
 msgid "Permissions"
 msgstr "Права"
 
+#: identity.permissionsEmpty
+msgid "You have not granted this site any special permissions."
+msgstr ""
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1644,14 +1695,15 @@ msgctxt "syncBrand.shortName.label"
 msgid "Sync"
 msgstr "Sync"
 
-#: syncSetup.label
-msgid "Set Up &syncBrand.shortName.label;…"
-msgstr "Начална настройка на &syncBrand.shortName.label;…"
+#: syncSignIn.label
+#, fuzzy
+msgid "Sign In To &syncBrand.shortName.label;…"
+msgstr "Вписване в &syncBrand.shortName.label;"
 
-#: syncSetup.accesskey
-msgctxt "syncSetup.accesskey"
+#: syncSignIn.accesskey
+msgctxt "syncSignIn.accesskey"
 msgid "Y"
-msgstr "Y"
+msgstr ""
 
 #: syncSyncNowItem.label syncSyncNowItem.accesskey
 msgid "&Sync Now"
@@ -2043,6 +2095,32 @@ msgstr "Запазване на &връзката в Pocket"
 #: pocketMenuitem.label
 msgid "View Pocket List"
 msgstr "Преглед списъка на Pocket"
+
+#~ msgid "Cannot connect to &syncBrand.shortName.label;"
+#~ msgstr "Не може да се направи връзка с &syncBrand.shortName.label;"
+
+#~ msgid "Please sign in to resume syncing."
+#~ msgstr "Моля впишете се за продължаване на синхронизирането."
+
+#~ msgid "&Sign In"
+#~ msgstr "&Вписване"
+
+#~ msgid "Press ESC at any time to exit."
+#~ msgstr "Натиснете ESC за излизане от пълноекранния режим."
+
+#~ msgid ""
+#~ "&brandShortName; verified that you are securely connected to this site, "
+#~ "run by:"
+#~ msgstr ""
+#~ "&brandShortName; потвърждава защитата на връзката към тази страница, "
+#~ "управлявана от:"
+
+#~ msgid "Set Up &syncBrand.shortName.label;…"
+#~ msgstr "Начална настройка на &syncBrand.shortName.label;…"
+
+#~ msgctxt "syncSetup.accesskey"
+#~ msgid "Y"
+#~ msgstr "Y"
 
 #~ msgid "Allow"
 #~ msgstr "Разрешаване"

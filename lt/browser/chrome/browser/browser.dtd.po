@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 11:38+0000\n"
+"POT-Creation-Date: 2015-09-21 15:18+0000\n"
 "PO-Revision-Date: 2015-09-18 08:54+0000\n"
 "Last-Translator: Paulius And <ekstras@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1442566497.000000\n"
@@ -238,6 +238,10 @@ msgstr "Atverti „&syncBrand.shortName.label;“ nuostatas"
 msgid "Reconnect to &syncBrand.shortName.label;"
 msgstr "Iš naujo jungtis prie „&syncBrand.shortName.label;“"
 
+#: fxaUnverified.label
+msgid "Verify Your Account"
+msgstr ""
+
 #: syncStartPanel2.heading
 msgid "&syncBrand.shortName.label; enabled"
 msgstr "„&syncBrand.shortName.label;“ įgalinta"
@@ -245,18 +249,6 @@ msgstr "„&syncBrand.shortName.label;“ įgalinta"
 #: syncStartPanel2.subTitle
 msgid "&brandShortName; will begin syncing momentarily."
 msgstr "„&brandShortName;“ tuoj pat pradės sinchronizavimą."
-
-#: syncErrorPanel.heading
-msgid "Cannot connect to &syncBrand.shortName.label;"
-msgstr "Prisijungti prie „&syncBrand.shortName.label;“ nepavyko"
-
-#: syncErrorPanel.subTitle
-msgid "Please sign in to resume syncing."
-msgstr "Sinchronizavimui tęsti turite prisijungti."
-
-#: syncErrorPanel.signInButton.label syncErrorPanel.signInButton.accesskey
-msgid "&Sign In"
-msgstr "Pri&sijungti"
 
 #: fullScreenMinimize.tooltip
 msgid "Minimize"
@@ -279,9 +271,34 @@ msgstr "&Slėpti įrankių juostas"
 msgid "Exit &Full Screen Mode"
 msgstr "Grįžti iš &viso ekrano veiksenos"
 
-#: fullscreenExitHint2.value
-msgid "Press ESC at any time to exit."
-msgstr "Kai norėsite išeiti, spauskite klavišą Gr."
+#. LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
+#. fullscreenWarning.afterDomain.label): these two strings are used
+#. respectively before and after the domain requiring fullscreen.
+#. Localizers can use one of them, or both, to better adapt this
+#. sentence to their language.
+#: fullscreenWarning.beforeDomain.label
+msgctxt "fullscreenWarning.beforeDomain.label"
+msgid ""
+msgstr ""
+
+#: fullscreenWarning.afterDomain.label
+msgid "is now full screen"
+msgstr ""
+
+#: fullscreenWarning.generic.label
+msgid "This document is now full screen"
+msgstr ""
+
+#. LOCALIZATION NOTE (exitDOMFullscreen.button,
+#. exitDOMFullscreenMac.button): the "escape" button on PC keyboards
+#. is uppercase, while on Mac keyboards it is lowercase
+#: exitDOMFullscreen.button
+msgid "Exit Full Screen (Esc)"
+msgstr ""
+
+#: exitDOMFullscreenMac.button
+msgid "Exit Full Screen (esc)"
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -516,6 +533,8 @@ msgid "j"
 msgstr "j"
 
 #: downloadsUnix.commandkey
+#, fuzzy
+msgctxt "downloadsUnix.commandkey"
 msgid "y"
 msgstr "y"
 
@@ -932,13 +951,27 @@ msgstr "Ar norėtumėte paieškos metu matyti siūlymus?"
 msgid "Learn more…"
 msgstr "Sužinoti daugiau…"
 
+#: urlbar.searchSuggestionsNotification.learnMore.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.learnMore.accesskey"
+msgid "l"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.disable
 msgid "No"
 msgstr "Ne"
 
+#: urlbar.searchSuggestionsNotification.disable.accesskey
+msgid "n"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.enable
 msgid "Yes"
 msgstr "Taip"
+
+#: urlbar.searchSuggestionsNotification.enable.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.enable.accesskey"
+msgid "y"
+msgstr ""
 
 #. Comment duplicated from browser-sets.inc:
 #. Search Command Key Logic works like this:
@@ -1017,6 +1050,14 @@ msgstr "Ieškoti per:"
 #: changeSearchSettings.button
 msgid "Change Search Settings"
 msgstr "Keisti paieškos nuostatas"
+
+#: searchInNewTab.label searchInNewTab.accesskey
+msgid "Search in New &Tab"
+msgstr ""
+
+#: searchSetAsDefault.label searchSetAsDefault.accesskey
+msgid "Set As &Default Search Engine"
+msgstr ""
 
 #: tabView.commandkey
 msgctxt "tabView.commandkey"
@@ -1510,17 +1551,17 @@ msgstr "Ryšys nėra saugus"
 msgid "This page is stored on your computer."
 msgstr "Šis tinklalapis yra įrašytas jūsų kompiuteryje."
 
-#: identity.connectionVerified
-msgid ""
-"&brandShortName; verified that you are securely connected to this site, run "
-"by:"
+#: identity.connectionVerified1
+msgid "You are securely connected to this site, run by:"
 msgstr ""
-"„&brandShortName;“ patvirtino, kad esate saugiai prisijungę prie šios "
-"svetainės, kurią valdo: "
 
 #: identity.connectionInternal
 msgid "This is a secure &brandShortName; page."
 msgstr "Tai yra saugus „&brandShortName;“ tinklalapis."
+
+#: identity.insecureLoginForms
+msgid "Your login could be compromised."
+msgstr ""
 
 #. Strings for connection state warnings.
 #: identity.activeBlocked
@@ -1548,6 +1589,12 @@ msgid ""
 msgstr ""
 "Jūsų ryšys su šia svetaine nėra privatus. Jūsų pateikta informacija gali "
 "būti peržiūrėta kitų (pvz., slaptažodžiai, žinutės, banko kortelės, kita)."
+
+#: identity.description.insecureLoginForms
+msgid ""
+"The login information you enter on this page is not secure and could be "
+"compromised."
+msgstr ""
 
 #: identity.description.weakCipher
 msgid ""
@@ -1627,6 +1674,10 @@ msgstr "Daugiau informacijos"
 msgid "Permissions"
 msgstr "Leidimai"
 
+#: identity.permissionsEmpty
+msgid "You have not granted this site any special permissions."
+msgstr ""
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1643,14 +1694,15 @@ msgctxt "syncBrand.shortName.label"
 msgid "Sync"
 msgstr "Sync"
 
-#: syncSetup.label
-msgid "Set Up &syncBrand.shortName.label;…"
-msgstr "Konfigūruoti „&syncBrand.shortName.label;“…"
+#: syncSignIn.label
+#, fuzzy
+msgid "Sign In To &syncBrand.shortName.label;…"
+msgstr "Jungtis prie „&syncBrand.shortName.label;“"
 
-#: syncSetup.accesskey
-msgctxt "syncSetup.accesskey"
+#: syncSignIn.accesskey
+msgctxt "syncSignIn.accesskey"
 msgid "Y"
-msgstr "K"
+msgstr ""
 
 #: syncSyncNowItem.label syncSyncNowItem.accesskey
 msgid "&Sync Now"
@@ -2041,6 +2093,32 @@ msgstr "Išsaugoti saitą į „P&ocket“"
 #: pocketMenuitem.label
 msgid "View Pocket List"
 msgstr "Rodyti „Pocket“ sąrašą"
+
+#~ msgid "Cannot connect to &syncBrand.shortName.label;"
+#~ msgstr "Prisijungti prie „&syncBrand.shortName.label;“ nepavyko"
+
+#~ msgid "Please sign in to resume syncing."
+#~ msgstr "Sinchronizavimui tęsti turite prisijungti."
+
+#~ msgid "&Sign In"
+#~ msgstr "Pri&sijungti"
+
+#~ msgid "Press ESC at any time to exit."
+#~ msgstr "Kai norėsite išeiti, spauskite klavišą Gr."
+
+#~ msgid ""
+#~ "&brandShortName; verified that you are securely connected to this site, "
+#~ "run by:"
+#~ msgstr ""
+#~ "„&brandShortName;“ patvirtino, kad esate saugiai prisijungę prie šios "
+#~ "svetainės, kurią valdo: "
+
+#~ msgid "Set Up &syncBrand.shortName.label;…"
+#~ msgstr "Konfigūruoti „&syncBrand.shortName.label;“…"
+
+#~ msgctxt "syncSetup.accesskey"
+#~ msgid "Y"
+#~ msgstr "K"
 
 #~ msgid "Allow"
 #~ msgstr "Leisti"

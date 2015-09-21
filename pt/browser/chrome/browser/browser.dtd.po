@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 11:38+0000\n"
+"POT-Creation-Date: 2015-09-21 15:18+0000\n"
 "PO-Revision-Date: 2015-09-20 23:27+0000\n"
 "Last-Translator: Gonçalo Matos <goncalo.matos@me.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1442791628.000000\n"
@@ -237,6 +237,10 @@ msgstr "Abrir as preferências do &syncBrand.shortName.label;"
 msgid "Reconnect to &syncBrand.shortName.label;"
 msgstr "Voltar a ligar ao &syncBrand.shortName.label;"
 
+#: fxaUnverified.label
+msgid "Verify Your Account"
+msgstr ""
+
 #: syncStartPanel2.heading
 msgid "&syncBrand.shortName.label; enabled"
 msgstr "&syncBrand.shortName.label; ativado"
@@ -244,18 +248,6 @@ msgstr "&syncBrand.shortName.label; ativado"
 #: syncStartPanel2.subTitle
 msgid "&brandShortName; will begin syncing momentarily."
 msgstr "O &brandShortName; iniciará a sincronização brevemente."
-
-#: syncErrorPanel.heading
-msgid "Cannot connect to &syncBrand.shortName.label;"
-msgstr "Não é possível ligar ao &syncBrand.shortName.label;"
-
-#: syncErrorPanel.subTitle
-msgid "Please sign in to resume syncing."
-msgstr "Inicie sessão para continuar a sincronização."
-
-#: syncErrorPanel.signInButton.label syncErrorPanel.signInButton.accesskey
-msgid "&Sign In"
-msgstr "Iniciar &sessão"
 
 #: fullScreenMinimize.tooltip
 msgid "Minimize"
@@ -278,9 +270,34 @@ msgstr "Ocultar barras d&e ferramentas"
 msgid "Exit &Full Screen Mode"
 msgstr "Sa&ir do ecrã completo"
 
-#: fullscreenExitHint2.value
-msgid "Press ESC at any time to exit."
-msgstr "Prima ESC a qualquer momento para sair."
+#. LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
+#. fullscreenWarning.afterDomain.label): these two strings are used
+#. respectively before and after the domain requiring fullscreen.
+#. Localizers can use one of them, or both, to better adapt this
+#. sentence to their language.
+#: fullscreenWarning.beforeDomain.label
+msgctxt "fullscreenWarning.beforeDomain.label"
+msgid ""
+msgstr ""
+
+#: fullscreenWarning.afterDomain.label
+msgid "is now full screen"
+msgstr ""
+
+#: fullscreenWarning.generic.label
+msgid "This document is now full screen"
+msgstr ""
+
+#. LOCALIZATION NOTE (exitDOMFullscreen.button,
+#. exitDOMFullscreenMac.button): the "escape" button on PC keyboards
+#. is uppercase, while on Mac keyboards it is lowercase
+#: exitDOMFullscreen.button
+msgid "Exit Full Screen (Esc)"
+msgstr ""
+
+#: exitDOMFullscreenMac.button
+msgid "Exit Full Screen (esc)"
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -514,6 +531,8 @@ msgid "j"
 msgstr "j"
 
 #: downloadsUnix.commandkey
+#, fuzzy
+msgctxt "downloadsUnix.commandkey"
 msgid "y"
 msgstr "y"
 
@@ -930,13 +949,27 @@ msgstr "Gostaria de melhorar a sua experiência de pesquisa com sugestões?"
 msgid "Learn more…"
 msgstr "Saber mais…"
 
+#: urlbar.searchSuggestionsNotification.learnMore.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.learnMore.accesskey"
+msgid "l"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.disable
 msgid "No"
 msgstr "Não"
 
+#: urlbar.searchSuggestionsNotification.disable.accesskey
+msgid "n"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.enable
 msgid "Yes"
 msgstr "Sim"
+
+#: urlbar.searchSuggestionsNotification.enable.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.enable.accesskey"
+msgid "y"
+msgstr ""
 
 #. Comment duplicated from browser-sets.inc:
 #. Search Command Key Logic works like this:
@@ -1015,6 +1048,14 @@ msgstr "Pesquisar com:"
 #: changeSearchSettings.button
 msgid "Change Search Settings"
 msgstr "Alterar definições de pesquisa"
+
+#: searchInNewTab.label searchInNewTab.accesskey
+msgid "Search in New &Tab"
+msgstr ""
+
+#: searchSetAsDefault.label searchSetAsDefault.accesskey
+msgid "Set As &Default Search Engine"
+msgstr ""
 
 #: tabView.commandkey
 msgctxt "tabView.commandkey"
@@ -1508,17 +1549,17 @@ msgstr "Ligação não segura"
 msgid "This page is stored on your computer."
 msgstr "Esta página está guardada no seu computador."
 
-#: identity.connectionVerified
-msgid ""
-"&brandShortName; verified that you are securely connected to this site, run "
-"by:"
+#: identity.connectionVerified1
+msgid "You are securely connected to this site, run by:"
 msgstr ""
-"O &brandShortName; verificou que estabeleceu uma ligação segura a este site "
-"através de:"
 
 #: identity.connectionInternal
 msgid "This is a secure &brandShortName; page."
 msgstr "Esta é uma página segura do &brandShortName;."
+
+#: identity.insecureLoginForms
+msgid "Your login could be compromised."
+msgstr ""
 
 #. Strings for connection state warnings.
 #: identity.activeBlocked
@@ -1548,6 +1589,12 @@ msgstr ""
 "A sua ligação a este site não é privada. As informações que submeter (tais "
 "como palavra-passe, mensagens, cartões de créditos, etc.) podem ser vistas "
 "por terceiros."
+
+#: identity.description.insecureLoginForms
+msgid ""
+"The login information you enter on this page is not secure and could be "
+"compromised."
+msgstr ""
 
 #: identity.description.weakCipher
 msgid ""
@@ -1627,6 +1674,10 @@ msgstr "Mais informação"
 msgid "Permissions"
 msgstr "Permissões"
 
+#: identity.permissionsEmpty
+msgid "You have not granted this site any special permissions."
+msgstr ""
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1643,14 +1694,15 @@ msgctxt "syncBrand.shortName.label"
 msgid "Sync"
 msgstr "Sync"
 
-#: syncSetup.label
-msgid "Set Up &syncBrand.shortName.label;…"
-msgstr "Configurar o &syncBrand.shortName.label;…"
+#: syncSignIn.label
+#, fuzzy
+msgid "Sign In To &syncBrand.shortName.label;…"
+msgstr "Iniciar sessão no &syncBrand.shortName.label;"
 
-#: syncSetup.accesskey
-msgctxt "syncSetup.accesskey"
+#: syncSignIn.accesskey
+msgctxt "syncSignIn.accesskey"
 msgid "Y"
-msgstr "C"
+msgstr ""
 
 #: syncSyncNowItem.label syncSyncNowItem.accesskey
 msgid "&Sync Now"
@@ -2040,6 +2092,32 @@ msgstr "Guardar ligação n&o Pocket"
 #: pocketMenuitem.label
 msgid "View Pocket List"
 msgstr "Ver lista do Pocket"
+
+#~ msgid "Cannot connect to &syncBrand.shortName.label;"
+#~ msgstr "Não é possível ligar ao &syncBrand.shortName.label;"
+
+#~ msgid "Please sign in to resume syncing."
+#~ msgstr "Inicie sessão para continuar a sincronização."
+
+#~ msgid "&Sign In"
+#~ msgstr "Iniciar &sessão"
+
+#~ msgid "Press ESC at any time to exit."
+#~ msgstr "Prima ESC a qualquer momento para sair."
+
+#~ msgid ""
+#~ "&brandShortName; verified that you are securely connected to this site, "
+#~ "run by:"
+#~ msgstr ""
+#~ "O &brandShortName; verificou que estabeleceu uma ligação segura a este "
+#~ "site através de:"
+
+#~ msgid "Set Up &syncBrand.shortName.label;…"
+#~ msgstr "Configurar o &syncBrand.shortName.label;…"
+
+#~ msgctxt "syncSetup.accesskey"
+#~ msgid "Y"
+#~ msgstr "C"
 
 #~ msgid "Allow"
 #~ msgstr "Permitir"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 11:38+0000\n"
+"POT-Creation-Date: 2015-09-21 15:18+0000\n"
 "PO-Revision-Date: 2015-09-09 01:14+0000\n"
 "Last-Translator: Wichai <chengings@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1441761280.000000\n"
@@ -237,6 +237,10 @@ msgstr "เปิดการปรับแต่ง &syncBrand.shortName.label
 msgid "Reconnect to &syncBrand.shortName.label;"
 msgstr "เชื่อมต่อ &syncBrand.shortName.label; ใหม่"
 
+#: fxaUnverified.label
+msgid "Verify Your Account"
+msgstr ""
+
 #: syncStartPanel2.heading
 msgid "&syncBrand.shortName.label; enabled"
 msgstr "เปิดใช้งาน &syncBrand.shortName.label; แล้ว"
@@ -244,18 +248,6 @@ msgstr "เปิดใช้งาน &syncBrand.shortName.label; แล้ว"
 #: syncStartPanel2.subTitle
 msgid "&brandShortName; will begin syncing momentarily."
 msgstr "&brandShortName; จะทำการซิงก์ในไม่ช้า"
-
-#: syncErrorPanel.heading
-msgid "Cannot connect to &syncBrand.shortName.label;"
-msgstr "ไม่สามารถเชื่อมต่อกับ &syncBrand.shortName.label;"
-
-#: syncErrorPanel.subTitle
-msgid "Please sign in to resume syncing."
-msgstr "โปรดลงชื่อเข้าใช้งานเพื่อดำเนินการซิงก์"
-
-#: syncErrorPanel.signInButton.label syncErrorPanel.signInButton.accesskey
-msgid "&Sign In"
-msgstr "เ&ข้าระบบ"
 
 #: fullScreenMinimize.tooltip
 msgid "Minimize"
@@ -278,9 +270,34 @@ msgstr "&ซ่อนแถบเครื่องมือ"
 msgid "Exit &Full Screen Mode"
 msgstr "&ออกจากโหมดเต็มจอ"
 
-#: fullscreenExitHint2.value
-msgid "Press ESC at any time to exit."
-msgstr "กด ESC เพื่อออก"
+#. LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
+#. fullscreenWarning.afterDomain.label): these two strings are used
+#. respectively before and after the domain requiring fullscreen.
+#. Localizers can use one of them, or both, to better adapt this
+#. sentence to their language.
+#: fullscreenWarning.beforeDomain.label
+msgctxt "fullscreenWarning.beforeDomain.label"
+msgid ""
+msgstr ""
+
+#: fullscreenWarning.afterDomain.label
+msgid "is now full screen"
+msgstr ""
+
+#: fullscreenWarning.generic.label
+msgid "This document is now full screen"
+msgstr ""
+
+#. LOCALIZATION NOTE (exitDOMFullscreen.button,
+#. exitDOMFullscreenMac.button): the "escape" button on PC keyboards
+#. is uppercase, while on Mac keyboards it is lowercase
+#: exitDOMFullscreen.button
+msgid "Exit Full Screen (Esc)"
+msgstr ""
+
+#: exitDOMFullscreenMac.button
+msgid "Exit Full Screen (esc)"
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -513,6 +530,8 @@ msgid "j"
 msgstr "j"
 
 #: downloadsUnix.commandkey
+#, fuzzy
+msgctxt "downloadsUnix.commandkey"
 msgid "y"
 msgstr "y"
 
@@ -929,13 +948,27 @@ msgstr "คุณต้องการทำให้ประสบการณ
 msgid "Learn more…"
 msgstr "เรียนรู้เพิ่มเติม…"
 
+#: urlbar.searchSuggestionsNotification.learnMore.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.learnMore.accesskey"
+msgid "l"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.disable
 msgid "No"
 msgstr "ไม่"
 
+#: urlbar.searchSuggestionsNotification.disable.accesskey
+msgid "n"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.enable
 msgid "Yes"
 msgstr "ใช่"
+
+#: urlbar.searchSuggestionsNotification.enable.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.enable.accesskey"
+msgid "y"
+msgstr ""
 
 #. Comment duplicated from browser-sets.inc:
 #. Search Command Key Logic works like this:
@@ -1014,6 +1047,14 @@ msgstr "ค้นหาด้วย:"
 #: changeSearchSettings.button
 msgid "Change Search Settings"
 msgstr "เปลี่ยนการตั้งค่าการค้นหา"
+
+#: searchInNewTab.label searchInNewTab.accesskey
+msgid "Search in New &Tab"
+msgstr ""
+
+#: searchSetAsDefault.label searchSetAsDefault.accesskey
+msgid "Set As &Default Search Engine"
+msgstr ""
 
 #: tabView.commandkey
 msgctxt "tabView.commandkey"
@@ -1507,15 +1548,17 @@ msgstr "การเชื่อมต่อไม่นิรภัย"
 msgid "This page is stored on your computer."
 msgstr "หน้านี้ถูกจัดเก็บบนคอมพิวเตอร์ของคุณ"
 
-#: identity.connectionVerified
-msgid ""
-"&brandShortName; verified that you are securely connected to this site, run "
-"by:"
-msgstr "&brandShortName; ได้ยืนยันความถูกต้องว่าคุณเชื่อมต่อไซต์นี้แบบนิรภัย ดำเนินงานโดย:"
+#: identity.connectionVerified1
+msgid "You are securely connected to this site, run by:"
+msgstr ""
 
 #: identity.connectionInternal
 msgid "This is a secure &brandShortName; page."
 msgstr "นี้คือหน้า &brandShortName; ที่ปลอดภัย"
+
+#: identity.insecureLoginForms
+msgid "Your login could be compromised."
+msgstr ""
 
 #. Strings for connection state warnings.
 #: identity.activeBlocked
@@ -1543,6 +1586,12 @@ msgid ""
 msgstr ""
 "การเชื่อมต่อของคุณไปยังไซต์นี้ไม่เป็นส่วนตัว ข้อมูลที่คุณส่งไปบนเว็บไซต์คนอื่นสามารถดูได้ (เช่น "
 "รหัสผ่าน ข้อความ บัตรเครดิต)"
+
+#: identity.description.insecureLoginForms
+msgid ""
+"The login information you enter on this page is not secure and could be "
+"compromised."
+msgstr ""
 
 #: identity.description.weakCipher
 msgid ""
@@ -1616,6 +1665,10 @@ msgstr "ข้อมูลเพิ่มเติม"
 msgid "Permissions"
 msgstr "การอนุญาต"
 
+#: identity.permissionsEmpty
+msgid "You have not granted this site any special permissions."
+msgstr ""
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1632,14 +1685,15 @@ msgctxt "syncBrand.shortName.label"
 msgid "Sync"
 msgstr "Sync"
 
-#: syncSetup.label
-msgid "Set Up &syncBrand.shortName.label;…"
-msgstr "ตั้งค่า &syncBrand.shortName.label;…"
+#: syncSignIn.label
+#, fuzzy
+msgid "Sign In To &syncBrand.shortName.label;…"
+msgstr "เข้าใช้ &syncBrand.shortName.label;"
 
-#: syncSetup.accesskey
-msgctxt "syncSetup.accesskey"
+#: syncSignIn.accesskey
+msgctxt "syncSignIn.accesskey"
 msgid "Y"
-msgstr "ต"
+msgstr ""
 
 #: syncSyncNowItem.label syncSyncNowItem.accesskey
 msgid "&Sync Now"
@@ -2024,6 +2078,30 @@ msgstr "บันทึกลิงก์ไ&ปยัง Pocket"
 #: pocketMenuitem.label
 msgid "View Pocket List"
 msgstr "ดูรายการ Pocket"
+
+#~ msgid "Cannot connect to &syncBrand.shortName.label;"
+#~ msgstr "ไม่สามารถเชื่อมต่อกับ &syncBrand.shortName.label;"
+
+#~ msgid "Please sign in to resume syncing."
+#~ msgstr "โปรดลงชื่อเข้าใช้งานเพื่อดำเนินการซิงก์"
+
+#~ msgid "&Sign In"
+#~ msgstr "เ&ข้าระบบ"
+
+#~ msgid "Press ESC at any time to exit."
+#~ msgstr "กด ESC เพื่อออก"
+
+#~ msgid ""
+#~ "&brandShortName; verified that you are securely connected to this site, "
+#~ "run by:"
+#~ msgstr "&brandShortName; ได้ยืนยันความถูกต้องว่าคุณเชื่อมต่อไซต์นี้แบบนิรภัย ดำเนินงานโดย:"
+
+#~ msgid "Set Up &syncBrand.shortName.label;…"
+#~ msgstr "ตั้งค่า &syncBrand.shortName.label;…"
+
+#~ msgctxt "syncSetup.accesskey"
+#~ msgid "Y"
+#~ msgstr "ต"
 
 #~ msgid "Allow"
 #~ msgstr "อนุญาต"
