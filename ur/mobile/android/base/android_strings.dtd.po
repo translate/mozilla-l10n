@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-12 03:36+0000\n"
+"POT-Creation-Date: 2015-09-22 00:54+0000\n"
 "PO-Revision-Date: 2015-08-26 05:42+0000\n"
 "Last-Translator: Umer Tanvir <um.qshi@gmail.com>\n"
 "Language-Team: none\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1440567723.000000\n"
@@ -30,6 +30,10 @@ msgstr ""
 "&brandShortName; چلانے کے لئے ضروری مسلیں کو لوڈ کرنے کی کوشش کرتے وقت ایک "
 "خامی پیش آگئی"
 
+#: firstrun_panel_title_welcome
+msgid "Welcome"
+msgstr "خوش آمدید"
+
 #: onboard_start_message3
 msgid "Browse with &brandShortName;"
 msgstr "&brandShortName; کے ساتھ براؤز کریں"
@@ -46,12 +50,45 @@ msgstr "&brandShortName; میں سائن ان کریں"
 msgid "Start Browsing"
 msgstr "براؤزنگ شروع کریں"
 
+#: firstrun_button_next
+#, fuzzy
+msgctxt "firstrun_button_next"
+msgid "Next"
+msgstr "اگلا"
+
 #: onboard_start_restricted1
 msgid ""
 "Stay safe and in control with this simplified version of &brandShortName;."
 msgstr ""
 "&brandShortName; کی اس سادہ کردہ ورژن کے ساتھ محفوظ رہیں اور کنٹرول اپنے "
 "ہاتھ میں رکھیں۔"
+
+#: firstrun_import_title
+#, fuzzy
+msgctxt "firstrun_import_title"
+msgid "Import"
+msgstr "درآمد کریں"
+
+#: firstrun_import_message
+msgid "Welcome to &brandShortName;"
+msgstr "&brandShortName; میں خوش آمدید"
+
+#: firstrun_import_subtext
+msgid "Import your bookmarks and history from another browser."
+msgstr ""
+
+#: firstrun_import_action
+#, fuzzy
+msgid "Transfer to &brandShortName;"
+msgstr "&brandShortName; میں سائن ان کریں"
+
+#: firstrun_import_dialog_button
+msgid "Transfer"
+msgstr ""
+
+#: firstrun_import_progress_title
+msgid "Transferring"
+msgstr ""
 
 #. Localization note: These are used as the titles of different pages on the home screen.
 #. They are automatically converted to all caps by the Android platform.
@@ -193,13 +230,17 @@ msgstr "آج"
 msgid "Yesterday"
 msgstr "کل"
 
-#: history_week_section2
-msgid "Last Week"
-msgstr "پچھلا ہفتہ"
+#: history_week_section3
+msgid "Last 7 days"
+msgstr ""
 
-#: history_older_section2
-msgid "Last Month"
-msgstr "پچھلا مہینہ"
+#: history_this_month_section
+msgid "This month"
+msgstr ""
+
+#: history_older_section3
+msgid "Older than 6 months"
+msgstr ""
 
 #: go
 msgid "Go"
@@ -245,14 +286,6 @@ msgstr "منسوخ کریں"
 msgid "Close Tab"
 msgstr "ٹیب بند کردیں"
 
-#: tab_audio_playing
-msgid "This tab is playing audio"
-msgstr "یہ ٹیب آڈیو چلا رہا ہے"
-
-#: tab_audio_muted
-msgid "This tab has been muted"
-msgstr "یہ ٹیب خاموش کر دیا گیا ہے"
-
 #: one_tab
 msgid "1 tab"
 msgstr "1 ٹیب"
@@ -277,6 +310,17 @@ msgstr "نیا نجی ٹیب کھل گیا"
 #: switch_button_message
 msgid "SWITCH"
 msgstr "SWITCH"
+
+#. Localization note (tab_title_prefix_is_playing_audio): This string is not
+#. visible in the UI, but rather used as a text-to-speech content description
+#. for sight-impaired a11y users. The content description is set on a tab
+#. title in a list of open tabs when content in that tab is playing audio.
+#. &formatS; will be replaced with the title of the tab, as received from the
+#. web page. When audio is not playing in a tab, &formatS; will be used as
+#. the content description.
+#: tab_title_prefix_is_playing_audio
+msgid "Playing audio – &formatS;"
+msgstr ""
 
 #: settings
 msgctxt "settings"
@@ -576,6 +620,18 @@ msgid ""
 "interesting"
 msgstr "ان سائٹوں کی تیز راہیں دکھائیں جو ہمارے حساب سے آپ کو پسند آئیں گیں"
 
+#: pref_category_home_homepage
+msgid "Homepage"
+msgstr ""
+
+#: home_homepage_title
+msgid "Set a Homepage"
+msgstr ""
+
+#: home_homepage_use_current_tab
+msgid "Use current tab"
+msgstr ""
+
 #. Localization note: These are shown in the left sidebar on tablets
 #: pref_header_customize
 msgctxt "pref_header_customize"
@@ -766,10 +822,6 @@ msgstr "نا اہل"
 #: pref_text_size
 msgid "Text size"
 msgstr "متن سائز"
-
-#: pref_reflow_on_zoom4
-msgid "Text reflow"
-msgstr "متن بازروانی"
 
 #: pref_restore
 msgctxt "pref_restore"
@@ -1134,6 +1186,10 @@ msgstr "یہ نقش شیئر کرنے میں ناکام"
 msgid "Save as PDF"
 msgstr "بطور PDF محفوظ کریں"
 
+#: print
+msgid "Print"
+msgstr ""
+
 #: find_in_page
 msgctxt "find_in_page"
 msgid "Find in Page"
@@ -1204,6 +1260,8 @@ msgid "Previous"
 msgstr "پچھلا"
 
 #: find_next
+#, fuzzy
+msgctxt "find_next"
 msgid "Next"
 msgstr "اگلا"
 
@@ -1295,6 +1353,14 @@ msgstr "سائٹ کو اتاریں"
 msgid "Add a Search Engine"
 msgstr "تلاش انجن اضافہ کریں"
 
+#: contextmenu_mark_read
+msgid "Mark as read"
+msgstr ""
+
+#: contextmenu_mark_unread
+msgid "Mark as unread"
+msgstr ""
+
 #. Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
 #. where normally a username would be displayed. In this case, no username was found, and this placeholder
 #. contains brackets to indicate this is not actually a username, but rather a placeholder
@@ -1357,12 +1423,12 @@ msgstr "صفحہ کا پتہ دکھائیں"
 
 #. Localization note (pref_prevent_magnifying_glass): Label for setting that controls
 #. whether or not the magnifying glass is disabled.
-#: pref_prevent_magnifying_glass
-msgid "Disable magnifying glass "
-msgstr "بڑا کرنے ولا شیشا نااہل بنائیں  "
+#: pref_magnifying_glass_enabled
+msgid "Magnify small areas"
+msgstr ""
 
-#: pref_prevent_magnifying_glass_summary
-msgid "Prevent magnifying glass for use in resolving ambiguous screen touches"
+#: pref_magnifying_glass_enabled_summary
+msgid "Enlarge links and form fields when tapping near them"
 msgstr ""
 
 #. Localization note (pref_scroll_title_bar2): Label for setting that controls
@@ -1516,10 +1582,6 @@ msgstr "صاف کریں"
 #: button_copy
 msgid "Copy"
 msgstr "نقل کریں"
-
-#: firstrun_panel_title_welcome
-msgid "Welcome"
-msgstr "خوش آمدید"
 
 #: home_top_sites_title
 msgid "Top Sites"
@@ -1735,35 +1797,24 @@ msgid "Insecure connection"
 msgstr "ناقابل بھروسا کنکشن"
 
 #. Mixed content notifications in site identity popup
-#: mixed_content_blocked_all
-msgid "&brandShortName; has blocked insecure elements on this page."
+#: mixed_content_blocked_all1
+#, fuzzy
+msgid "&brandShortName; has blocked insecure content on this page."
 msgstr "&brandShortName; نے اس صفحے پر ناقابل بھروسا عناصر بلاک کر دیے ہیں۔"
 
-#: mixed_content_blocked_some
-msgid "&brandShortName; has blocked some insecure elements on this page."
+#: mixed_content_blocked_some1
+#, fuzzy
+msgid "&brandShortName; has blocked some of the insecure content on this page."
 msgstr ""
 "&brandShortName; نے اس صفحے پر کچھ ناقابل بھروسا عناصر بلاک کر دیے ہیں۔ "
 
-#: mixed_content_display_loaded
-msgid "This page has some insecure elements."
-msgstr "اس صفحہصفحے پر کچھ ناقابل بھروسا عناصر ہیں۔"
-
-#: mixed_content_protection_disabled
-msgid "You have disabled protection from insecure elements."
+#: mixed_content_display_loaded1
+msgid "Parts of this page are not secure (such as images)."
 msgstr ""
 
-#: loaded_mixed_content_message
-msgid "This page is displaying content that isn't secure."
-msgstr "یہ صفحہ مواد دکھا رہا ہے جو قابل بھروسا نہیں ہے۔"
-
-#: blocked_mixed_content_message_top
-msgid "&brandShortName; has blocked content that isn't secure."
-msgstr "&brandShortName; نے ناقابل بھروسا مواد بلاک کر دیا ہے۔"
-
-#: blocked_mixed_content_message_bottom
-msgid ""
-"Most websites will still work properly even when this content is blocked."
-msgstr "اس مواد کے بلاک ہونے کے باوجود زیادہ تر ویب سائٹ ٹھیک چلیں گی۔"
+#: mixed_content_protection_disabled1
+msgid "You have disabled protection from insecure content."
+msgstr ""
 
 #. Tracking content notifications in site identity popup
 #: doorhanger_tracking_title
@@ -1818,6 +1869,8 @@ msgid "Some private data could not be cleared"
 msgstr "کچھ نجی کوائف ہٹائے نہیں جا سکے"
 
 #: bookmarkhistory_button_import
+#, fuzzy
+msgctxt "bookmarkhistory_button_import"
 msgid "Import"
 msgstr "درآمد کریں"
 
@@ -2084,6 +2137,73 @@ msgstr "ماسٹر پاس ورڈ استعمال کریں"
 msgid "Disable Guest Browsing"
 msgstr "نجی براؤزنگ نا اہل بنائیں"
 
+#. Default Bookmarks titles
+#. title for the folder that will contains the default bookmarks
+#: bookmarks_title
+msgid "Mobile"
+msgstr ""
+
+#. link title for about:fennec
+#: bookmarks_about_browser
+msgid "Firefox: About your browser"
+msgstr ""
+
+#. link title for https://addons.mozilla.org/en-US/mobile
+#: bookmarks_addons
+msgid "Firefox: Customize with add-ons"
+msgstr ""
+
+#. link title for https://support.mozilla.org/
+#: bookmarks_support
+msgid "Firefox: Support"
+msgstr ""
+
+#. link title for https://marketplace.firefox.com
+#: bookmarks_marketplace
+msgid "Firefox Marketplace"
+msgstr ""
+
+#. LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess
+#: bookmarks_restricted_support2
+msgid "Firefox Help and Support for restricted profiles on Android tablets"
+msgstr ""
+
+#. link title for https://webmaker.org
+#: bookmarks_restricted_webmaker
+msgid "Learn the Web: Mozilla Webmaker"
+msgstr ""
+
+#~ msgid "Last Week"
+#~ msgstr "پچھلا ہفتہ"
+
+#~ msgid "Last Month"
+#~ msgstr "پچھلا مہینہ"
+
+#~ msgid "This tab is playing audio"
+#~ msgstr "یہ ٹیب آڈیو چلا رہا ہے"
+
+#~ msgid "This tab has been muted"
+#~ msgstr "یہ ٹیب خاموش کر دیا گیا ہے"
+
+#~ msgid "Text reflow"
+#~ msgstr "متن بازروانی"
+
+#~ msgid "Disable magnifying glass "
+#~ msgstr "بڑا کرنے ولا شیشا نااہل بنائیں  "
+
+#~ msgid "This page has some insecure elements."
+#~ msgstr "اس صفحہصفحے پر کچھ ناقابل بھروسا عناصر ہیں۔"
+
+#~ msgid "This page is displaying content that isn't secure."
+#~ msgstr "یہ صفحہ مواد دکھا رہا ہے جو قابل بھروسا نہیں ہے۔"
+
+#~ msgid "&brandShortName; has blocked content that isn't secure."
+#~ msgstr "&brandShortName; نے ناقابل بھروسا مواد بلاک کر دیا ہے۔"
+
+#~ msgid ""
+#~ "Most websites will still work properly even when this content is blocked."
+#~ msgstr "اس مواد کے بلاک ہونے کے باوجود زیادہ تر ویب سائٹ ٹھیک چلیں گی۔"
+
 #~ msgid "&brandShortName; will prevent sites from tracking you"
 #~ msgstr "&brandShortName; سائٹوں کو آپ کا سراغ لگانے سے روکے گا"
 
@@ -2157,9 +2277,6 @@ msgstr "نجی براؤزنگ نا اہل بنائیں"
 
 #~ msgid "Want to learn more?"
 #~ msgstr "مزید سیکھیں گے؟"
-
-#~ msgid "Welcome to &brandShortName;"
-#~ msgstr "&brandShortName; میں خوش آمدید"
 
 #~ msgid "More privacy features and ways to customize than ever."
 #~ msgstr ""
