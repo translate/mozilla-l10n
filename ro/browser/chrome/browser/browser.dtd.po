@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-11 11:38+0000\n"
-"PO-Revision-Date: 2015-09-20 11:52+0000\n"
+"POT-Creation-Date: 2015-09-21 15:18+0000\n"
+"PO-Revision-Date: 2015-09-23 14:14+0000\n"
 "Last-Translator: Cristian Silaghi <cristian.silaghi@mozilla.ro>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ro\n"
@@ -13,10 +13,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1442749961.000000\n"
+"X-POOTLE-MTIME: 1443017667.000000\n"
 
 #. This will be appended to the window's title
 #. inside the private browsing mode
@@ -238,6 +238,10 @@ msgstr "Deschide preferințele &syncBrand.shortName.label;"
 msgid "Reconnect to &syncBrand.shortName.label;"
 msgstr "Reconectare la &syncBrand.shortName.label;"
 
+#: fxaUnverified.label
+msgid "Verify Your Account"
+msgstr ""
+
 #: syncStartPanel2.heading
 msgid "&syncBrand.shortName.label; enabled"
 msgstr "&syncBrand.shortName.label; activat"
@@ -245,18 +249,6 @@ msgstr "&syncBrand.shortName.label; activat"
 #: syncStartPanel2.subTitle
 msgid "&brandShortName; will begin syncing momentarily."
 msgstr "&brandShortName; va începe sincronizarea în câteva momente."
-
-#: syncErrorPanel.heading
-msgid "Cannot connect to &syncBrand.shortName.label;"
-msgstr "Nu mă pot conecta la &syncBrand.shortName.label;"
-
-#: syncErrorPanel.subTitle
-msgid "Please sign in to resume syncing."
-msgstr "Vă rugăm să vă autentificați pentru a relua sincronizarea."
-
-#: syncErrorPanel.signInButton.label syncErrorPanel.signInButton.accesskey
-msgid "&Sign In"
-msgstr "&Autentificare"
 
 #: fullScreenMinimize.tooltip
 msgid "Minimize"
@@ -279,9 +271,34 @@ msgstr "&Ascunde barele de unelte"
 msgid "Exit &Full Screen Mode"
 msgstr "Ieșiți din modul ec&ran complet"
 
-#: fullscreenExitHint2.value
-msgid "Press ESC at any time to exit."
-msgstr "Apăsați ESC oricând pentru a ieși."
+#. LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
+#. fullscreenWarning.afterDomain.label): these two strings are used
+#. respectively before and after the domain requiring fullscreen.
+#. Localizers can use one of them, or both, to better adapt this
+#. sentence to their language.
+#: fullscreenWarning.beforeDomain.label
+msgctxt "fullscreenWarning.beforeDomain.label"
+msgid ""
+msgstr ""
+
+#: fullscreenWarning.afterDomain.label
+msgid "is now full screen"
+msgstr ""
+
+#: fullscreenWarning.generic.label
+msgid "This document is now full screen"
+msgstr ""
+
+#. LOCALIZATION NOTE (exitDOMFullscreen.button,
+#. exitDOMFullscreenMac.button): the "escape" button on PC keyboards
+#. is uppercase, while on Mac keyboards it is lowercase
+#: exitDOMFullscreen.button
+msgid "Exit Full Screen (Esc)"
+msgstr ""
+
+#: exitDOMFullscreenMac.button
+msgid "Exit Full Screen (esc)"
+msgstr ""
 
 #: leaveDOMFullScreen.label leaveDOMFullScreen.accesskey
 msgid "Exit F&ull Screen"
@@ -514,6 +531,8 @@ msgid "j"
 msgstr "j"
 
 #: downloadsUnix.commandkey
+#, fuzzy
+msgctxt "downloadsUnix.commandkey"
 msgid "y"
 msgstr "y"
 
@@ -635,7 +654,7 @@ msgstr "Bara de dez&voltare"
 
 #: devAppMgrMenu.label devAppMgrMenu.accesskey
 msgid "&App Manager"
-msgstr "Gestionar &aplicații"
+msgstr "Manager de &aplicații"
 
 #: webide.label webide.accesskey
 msgid "&WebIDE"
@@ -930,13 +949,27 @@ msgstr "Doriți să vă îmbunătățiți experiența de căutare cu sugestii?"
 msgid "Learn more…"
 msgstr "Aflați mai multe…"
 
+#: urlbar.searchSuggestionsNotification.learnMore.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.learnMore.accesskey"
+msgid "l"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.disable
 msgid "No"
 msgstr "Nu"
 
+#: urlbar.searchSuggestionsNotification.disable.accesskey
+msgid "n"
+msgstr ""
+
 #: urlbar.searchSuggestionsNotification.enable
 msgid "Yes"
 msgstr "Da"
+
+#: urlbar.searchSuggestionsNotification.enable.accesskey
+msgctxt "urlbar.searchSuggestionsNotification.enable.accesskey"
+msgid "y"
+msgstr ""
 
 #. Comment duplicated from browser-sets.inc:
 #. Search Command Key Logic works like this:
@@ -1015,6 +1048,14 @@ msgstr "Caută cu:"
 #: changeSearchSettings.button
 msgid "Change Search Settings"
 msgstr "Schimbare setări de căutare"
+
+#: searchInNewTab.label searchInNewTab.accesskey
+msgid "Search in New &Tab"
+msgstr ""
+
+#: searchSetAsDefault.label searchSetAsDefault.accesskey
+msgid "Set As &Default Search Engine"
+msgstr ""
 
 #: tabView.commandkey
 msgctxt "tabView.commandkey"
@@ -1509,17 +1550,17 @@ msgstr "Conexiunea nu este securizată"
 msgid "This page is stored on your computer."
 msgstr "Această pagină este stocată pe calculator."
 
-#: identity.connectionVerified
-msgid ""
-"&brandShortName; verified that you are securely connected to this site, run "
-"by:"
+#: identity.connectionVerified1
+msgid "You are securely connected to this site, run by:"
 msgstr ""
-"&brandShortName; a verificat că sunteți conectat în mod securizat la acest "
-"site aparținând:"
 
 #: identity.connectionInternal
 msgid "This is a secure &brandShortName; page."
 msgstr "Pagină securizată de &brandShortName;."
+
+#: identity.insecureLoginForms
+msgid "Your login could be compromised."
+msgstr ""
 
 #. Strings for connection state warnings.
 #: identity.activeBlocked
@@ -1548,6 +1589,12 @@ msgstr ""
 "Conexiunea dumneavoastră la acest site nu este privată. Informațiile trimise "
 "pot fi văzute de alții (cum ar fi parolele, mesajele, carduri de credit, "
 "etc.)."
+
+#: identity.description.insecureLoginForms
+msgid ""
+"The login information you enter on this page is not secure and could be "
+"compromised."
+msgstr ""
 
 #: identity.description.weakCipher
 msgid ""
@@ -1630,6 +1677,10 @@ msgstr "Mai multe informații"
 msgid "Permissions"
 msgstr "Permisiuni"
 
+#: identity.permissionsEmpty
+msgid "You have not granted this site any special permissions."
+msgstr ""
+
 #. Name for the tabs toolbar as spoken by screen readers.
 #. The word "toolbar" is appended automatically and should not be contained below!
 #: tabsToolbar.label
@@ -1646,14 +1697,15 @@ msgctxt "syncBrand.shortName.label"
 msgid "Sync"
 msgstr "Sincronizare"
 
-#: syncSetup.label
-msgid "Set Up &syncBrand.shortName.label;…"
-msgstr "Setare &syncBrand.shortName.label;…"
+#: syncSignIn.label
+#, fuzzy
+msgid "Sign In To &syncBrand.shortName.label;…"
+msgstr "Autentificare la &syncBrand.shortName.label;"
 
-#: syncSetup.accesskey
-msgctxt "syncSetup.accesskey"
+#: syncSignIn.accesskey
+msgctxt "syncSignIn.accesskey"
 msgid "Y"
-msgstr "R"
+msgstr ""
 
 #: syncSyncNowItem.label syncSyncNowItem.accesskey
 msgid "&Sync Now"
@@ -1682,7 +1734,7 @@ msgstr "Arată &bara laterală"
 
 #: social.addons.label
 msgid "Manage Services…"
-msgstr "Gestionare servicii…"
+msgstr "Gestionează servicii…"
 
 #: social.toggleNotifications.label social.toggleNotifications.accesskey
 msgid "Show desktop &notifications"
@@ -2043,6 +2095,32 @@ msgstr "Salvează linkul în P&ocket"
 #: pocketMenuitem.label
 msgid "View Pocket List"
 msgstr "Vezi lista Pocket"
+
+#~ msgid "Cannot connect to &syncBrand.shortName.label;"
+#~ msgstr "Nu mă pot conecta la &syncBrand.shortName.label;"
+
+#~ msgid "Please sign in to resume syncing."
+#~ msgstr "Vă rugăm să vă autentificați pentru a relua sincronizarea."
+
+#~ msgid "&Sign In"
+#~ msgstr "&Autentificare"
+
+#~ msgid "Press ESC at any time to exit."
+#~ msgstr "Apăsați ESC oricând pentru a ieși."
+
+#~ msgid ""
+#~ "&brandShortName; verified that you are securely connected to this site, "
+#~ "run by:"
+#~ msgstr ""
+#~ "&brandShortName; a verificat că sunteți conectat în mod securizat la "
+#~ "acest site aparținând:"
+
+#~ msgid "Set Up &syncBrand.shortName.label;…"
+#~ msgstr "Setare &syncBrand.shortName.label;…"
+
+#~ msgctxt "syncSetup.accesskey"
+#~ msgid "Y"
+#~ msgstr "R"
 
 #~ msgid "Allow"
 #~ msgstr "Permite"
