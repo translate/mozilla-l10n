@@ -120,7 +120,7 @@ PO_DIR="${base_dir}"
 L10N_DIR="${BUILD_DIR}/${L10N_VER}"
 L10N_ENUS="${PO_DIR}/templates-en-US"
 POT_DIR="${PO_DIR}/templates"
-LANGPACK_DIR="/var/www/sites/mozilla/translations/POOTLE_EXPORT"
+LANGPACK_DIR="/var/www/sites/mozilla/src/pootle/downloads/langpacks/"
 TARBALL_DIR="${BUILD_DIR}/tarball"
 
 if [ $opt_vc ]; then
@@ -338,7 +338,12 @@ do
 			copyfileifmissing browser/chrome/browser-region/region.properties ${mozlang}
 			copyfileifmissing browser/searchplugins/list.txt ${mozlang}
 	                po2moz --progress=$progress --errorlevel=$errorlevel -t ${L10N_ENUS}/browser/profile/bookmarks.inc -i ${PO_DIR}/${polang}/browser/profile/bookmarks.inc.po -o ${L10N_DIR}/${mozlang}/browser/profile/bookmarks.inc
-			buildxpi.py -d -L ${L10N_DIR} -s ${MOZCENTRAL_DIR} -o ${LANGPACK_DIR}/$project/$lang --soft-max-version ${mozlang} > ${LANGPACK_DIR}/$project/$lang/langpack-build.log 2>&1
+			buildxpi.py -d -L ${L10N_DIR} -s ${MOZCENTRAL_DIR} -o ${LANGPACK_DIR}/$project/$lang --soft-max-version ${mozlang} > ${LANGPACK_DIR}/$project/$lang/langpack-$project-build.log.txt 2>&1
+			version=$(cat ${MOZCENTRAL_DIR}/browser/config/version.txt)
+			rm  ${LANGPACK_DIR}/$project/$lang/latest-$project.xpi
+			if [[ -f "${LANGPACK_DIR}/$project/$lang/firefox-$version.$mozlang.langpack.xpi" ]]; then
+				ln -s "${LANGPACK_DIR}/$project/$lang/firefox-$version.$mozlang.langpack.xpi" "${LANGPACK_DIR}/$project/$lang/latest-$project.xpi"
+			fi
 			hg revert  $hgverbosity --no-backup \
 				browser/chrome/browser-region/region.properties \
 				browser/searchplugins/list.txt 
