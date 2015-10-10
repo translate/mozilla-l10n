@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-21 15:18+0000\n"
-"PO-Revision-Date: 2015-10-10 12:17+0000\n"
+"PO-Revision-Date: 2015-10-10 13:15+0000\n"
 "Last-Translator: Halil Kaya <halil@halilkaya.net>\n"
 "Language-Team: none\n"
 "Language: tr\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1444479433.000000\n"
+"X-POOTLE-MTIME: 1444482932.000000\n"
 
 #. # LOCALIZATION NOTE These strings are used inside the Performance Tools
 #. # which is available from the Web Developer sub-menu -> 'Performance'.
@@ -185,12 +185,12 @@ msgstr "Aşama:"
 #. # Non-incremental cause for a Garbage Collection marker
 #: marker.field.nonIncrementalCause
 msgid "Non-incremental Cause:"
-msgstr ""
+msgstr "Artırımsız sebep:"
 
 #. # For "Recalculate Style" markers
 #: marker.field.restyleHint
 msgid "Restyle Hint:"
-msgstr ""
+msgstr "Yeniden stilleme ipucu:"
 
 #. # General "reason" for a marker (JavaScript, Garbage Collection)
 #: marker.field.causeName
@@ -249,9 +249,8 @@ msgid "Too Many Bytes Allocated"
 msgstr "Çok fazla bayt ayrıldı"
 
 #: marker.gcreason.label.ALLOC_TRIGGER
-#, fuzzy
 msgid "Too Many Allocations"
-msgstr "Toplam dağıtım"
+msgstr "Çok fazla tahsis"
 
 #: marker.gcreason.label.DEBUG_GC
 msgid "Debug GC"
@@ -259,7 +258,7 @@ msgstr "GC'de hata ayıkla"
 
 #: marker.gcreason.label.COMPARTMENT_REVIVED
 msgid "Dead Global Revived"
-msgstr ""
+msgstr "Ölü global canlandı"
 
 #: marker.gcreason.label.RESET
 msgid "Finish Incremental Cycle"
@@ -383,6 +382,8 @@ msgid ""
 "JavaScript returned to the event loop and there were enough bytes allocated "
 "since the last GC that a new GC cycle was triggered."
 msgstr ""
+"JavaScript, olay döngüsüne döndü ve yeni bir GC çalıştırmak için gerekli "
+"olan son GC'ye kadar yeterli byte tahsis edilmiş durumda."
 
 #: marker.gcreason.description.DESTROY_RUNTIME
 msgctxt "marker.gcreason.description.DESTROY_RUNTIME"
@@ -390,6 +391,8 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"Firefox, kapanmadan önce son garbage collection olan bir JavaScript "
+"runtime'ını veya context'ini ortadan kaldırdı."
 
 #: marker.gcreason.description.DESTROY_CONTEXT
 msgctxt "marker.gcreason.description.DESTROY_CONTEXT"
@@ -397,6 +400,8 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"Firefox, kapanmadan önce son garbage collection olan bir JavaScript "
+"runtime'ını veya context'ini ortadan kaldırdı."
 
 #: marker.gcreason.description.LAST_DITCH
 msgid ""
@@ -404,56 +409,70 @@ msgid ""
 "full compacting garbage collection as an attempt to free up memory for the "
 "allocation."
 msgstr ""
+"JavaScript yer tahsis etmeyi denedi ama yeterli bellek yoktu. Tahsis için "
+"bellekte yer açmak üzere tam sıkıştırılmış bir garbage collection yapılıyor."
 
 #: marker.gcreason.description.TOO_MUCH_MALLOC
 msgid "JavaScript allocated too many bytes, and forced a garbage collection."
 msgstr ""
+"JavaScript çok fazla byte tahsis etti ve bir garbage collection zorladı."
 
 #: marker.gcreason.description.ALLOC_TRIGGER
 msgid "JavaScript allocated too many times, and forced a garbage collection."
 msgstr ""
+"JavaScript çok fazla defa tahsis edildi ve bir garbage collection zorladı."
 
 #: marker.gcreason.description.DEBUG_GC
 msgid "GC due to Zeal debug settings."
-msgstr ""
+msgstr "Zeal hata ayıklama ayarlarından dolayı GC oluştu."
 
 #: marker.gcreason.description.COMPARTMENT_REVIVED
 msgid ""
 "A global object that was thought to be dead at the start of the GC cycle was "
 "revived by the end of the GC cycle."
 msgstr ""
+"GC döngüsünün başında ölü olduğu düşünülen global bir nesne GC döngüsünün "
+"sonunda yeniden canlandı."
 
 #: marker.gcreason.description.RESET
 msgid "The active incremental GC cycle was forced to finish immediately."
-msgstr ""
+msgstr "Aktif artan GC döngüsü, acilen durdurulmaya zorlandı."
 
 #: marker.gcreason.description.OUT_OF_NURSERY
 msgid ""
 "JavaScript allocated enough new objects in the nursery that it became full "
 "and triggered a minor GC."
 msgstr ""
+"JavaSript'in nursery'ye atadığı yeni nesne miktarı nedeniyle nursery doldu "
+"ve küçük bir GC'yi çalıştırdı."
 
 #: marker.gcreason.description.EVICT_NURSERY
 msgid ""
 "Work needed to be done on the tenured heap, requiring the nursery to be "
 "empty."
 msgstr ""
+"Çalışmanın ayrıcalıklı bir yığında yapılması gerekti, bunun için de nursery "
+"boş olmalı."
 
 #: marker.gcreason.description.FULL_STORE_BUFFER
 msgid ""
 "There were too many properties on tenured objects whose value was an object "
 "in the nursery."
 msgstr ""
+"Nursery'deki değeri de bir nesne olan ayrıcalıklı nesnelerde çok fazla "
+"özellik vardı."
 
 #: marker.gcreason.description.SHARED_MEMORY_LIMIT
 msgid "A large allocation was requested, but there was not enough memory."
-msgstr ""
+msgstr "Büyük bir tahsis talep edildi ama yeterli bellek yoktu."
 
 #: marker.gcreason.description.PERIODIC_FULL_GC
 msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since Firefox performed a garbage collection."
 msgstr ""
+"JavaScript, bir olay döngüsüne döndü ve buna bağlı olarak Firefox'un garbage "
+"collection'ın performansını sağlaması için uzun zaman geçti."
 
 #: marker.gcreason.description.INCREMENTAL_TOO_SLOW
 msgid ""
@@ -465,20 +484,21 @@ msgstr ""
 #: marker.gcreason.description.COMPONENT_UTILS
 msgid "Components.utils.forceGC() was called to force a garbage collection."
 msgstr ""
+"Bir garbage collection'ı zorlamak için Components.utils.forceGC() çağırıldı."
 
 #: marker.gcreason.description.MEM_PRESSURE
 msgid "There was very low memory available."
-msgstr ""
+msgstr "Kullanılabilir çok az bellek vardı."
 
 #: marker.gcreason.description.CC_WAITING
 msgctxt "marker.gcreason.description.CC_WAITING"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "Döngü toplayıcı, bir garbage collection istedi."
 
 #: marker.gcreason.description.CC_FORCED
 msgctxt "marker.gcreason.description.CC_FORCED"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "Döngü toplayıcı, bir garbage collection istedi."
 
 #: marker.gcreason.description.LOAD_END
 msgid "The document finished loading."
@@ -494,40 +514,44 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"Firefox, kapanmadan önce son garbage collection olan bir JavaScript "
+"runtime'ını veya context'ini ortadan kaldırdı."
 
 #: marker.gcreason.description.SET_NEW_DOCUMENT
 msgctxt "marker.gcreason.description.SET_NEW_DOCUMENT"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "Sayfa, yeni bir belgeye yönlendirildi."
 
 #: marker.gcreason.description.SET_DOC_SHELL
 msgctxt "marker.gcreason.description.SET_DOC_SHELL"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "Sayfa, yeni bir belgeye yönlendirildi."
 
 #: marker.gcreason.description.DOM_UTILS
 msgctxt "marker.gcreason.description.DOM_UTILS"
 msgid "There was an API call to force garbage collection."
-msgstr ""
+msgstr "Garbage collection'ı zorlamak için API çağrısı yapıldı."
 
 #: marker.gcreason.description.DOM_IPC
 msgid "Received an inter-process message that requested a garbage collection."
-msgstr ""
+msgstr "Bir garbage collection isteyen inter-process mesajı alındı."
 
 #: marker.gcreason.description.DOM_WORKER
 msgid "The worker was idle for a relatively long time."
-msgstr ""
+msgstr "Worker, görece uzun süredir atıl durumda."
 
 #: marker.gcreason.description.INTER_SLICE_GC
 msgid ""
 "There has been a relatively long time since the last incremental GC slice."
-msgstr ""
+msgstr "Son artırımlı GC diliminden sonra görece uzun bir zaman geçti."
 
 #: marker.gcreason.description.FULL_GC_TIMER
 msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since we performed a garbage collection."
 msgstr ""
+"JavaScript, bir olay döngüsüne döndü ve buna bağlı olarak garbage "
+"collection'ın performansını sağlamamız için uzun zaman geçti."
 
 #: marker.gcreason.description.SHUTDOWN_CC
 msgctxt "marker.gcreason.description.SHUTDOWN_CC"
@@ -535,12 +559,16 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"Firefox, kapanmadan önce son garbage collection olan bir JavaScript "
+"runtime'ını veya context'ini ortadan kaldırdı."
 
 #: marker.gcreason.description.FINISH_LARGE_EVALUATE
 msgid ""
 "Firefox finished evaluating a large script, and performed a GC because the "
 "script will never be run again."
 msgstr ""
+"Firefox, büyük bir script'i değerlendirmeyi bitirdi ve bu script yeniden "
+"çalıştırılmayacağı için GC uyguladı."
 
 #: marker.gcreason.description.DOM_WINDOW_UTILS
 msgid ""
