@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-08-11 11:38+0000\n"
-"PO-Revision-Date: 2015-10-11 10:04+0000\n"
+"PO-Revision-Date: 2015-10-11 11:04+0000\n"
 "Last-Translator: Akmal Xushvaqov <akmalxster@gmail.com>\n"
 "Language-Team: none\n"
 "Language: uz\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1444557870.000000\n"
+"X-POOTLE-MTIME: 1444561462.000000\n"
 
 #. # LOCALIZATION NOTE These strings are used inside the Performance Tools
 #. # which is available from the Web Developer sub-menu -> 'Performance'.
@@ -241,15 +241,15 @@ msgstr "Juda ko‘p ajratildi"
 
 #: marker.gcreason.label.DEBUG_GC
 msgid "Debug GC"
-msgstr ""
+msgstr "GC’ni tuzatish"
 
 #: marker.gcreason.label.COMPARTMENT_REVIVED
 msgid "Dead Global Revived"
-msgstr ""
+msgstr "O‘lgan global jonlandi"
 
 #: marker.gcreason.label.RESET
 msgid "Finish Incremental Cycle"
-msgstr ""
+msgstr "Ko‘payadigan halqani tugatish"
 
 #: marker.gcreason.label.OUT_OF_NURSERY
 msgid "Nursery is Full"
@@ -257,7 +257,7 @@ msgstr "Enaga – to‘la"
 
 #: marker.gcreason.label.EVICT_NURSERY
 msgid "Nursery Eviction"
-msgstr ""
+msgstr "Nursery Eviction"
 
 #: marker.gcreason.label.FULL_STORE_BUFFER
 msgid "Nursery Objects Too Active"
@@ -327,35 +327,35 @@ msgstr "IPC"
 
 #: marker.gcreason.label.DOM_WORKER
 msgid "Periodic Worker GC"
-msgstr ""
+msgstr "Mavsumiy Worker GC"
 
 #: marker.gcreason.label.INTER_SLICE_GC
 msgid "Periodic Incremental GC Slice"
-msgstr ""
+msgstr "Davriy ko‘payadigan GC parchasi"
 
 #: marker.gcreason.label.FULL_GC_TIMER
 msgctxt "marker.gcreason.label.FULL_GC_TIMER"
 msgid "Periodic Full GC"
-msgstr ""
+msgstr "Davriy to‘liq GC"
 
 #: marker.gcreason.label.SHUTDOWN_CC
 msgctxt "marker.gcreason.label.SHUTDOWN_CC"
 msgid "Shutdown"
-msgstr ""
+msgstr "O‘chirish"
 
 #: marker.gcreason.label.FINISH_LARGE_EVALUATE
 msgid "Large Eval"
-msgstr ""
+msgstr "Katta Eval"
 
 #: marker.gcreason.label.DOM_WINDOW_UTILS
 msgctxt "marker.gcreason.label.DOM_WINDOW_UTILS"
 msgid "User Inactive"
-msgstr ""
+msgstr "Foydalanuvchi nofaol"
 
 #: marker.gcreason.label.USER_INACTIVE
 msgctxt "marker.gcreason.label.USER_INACTIVE"
 msgid "User Inactive"
-msgstr ""
+msgstr "Foydalanuvchi nofaol"
 
 #. # LOCALIZATION NOTE (marker.gcreason.description.*):
 #. # These strings are used to give an expanded description of why a GC occurred.
@@ -437,22 +437,28 @@ msgid ""
 "Work needed to be done on the tenured heap, requiring the nursery to be "
 "empty."
 msgstr ""
+"Work needed to be done on the tenured heap, requiring the nursery to be "
+"empty."
 
 #: marker.gcreason.description.FULL_STORE_BUFFER
 msgid ""
 "There were too many properties on tenured objects whose value was an object "
 "in the nursery."
 msgstr ""
+"There were too many properties on tenured objects whose value was an object "
+"in the nursery."
 
 #: marker.gcreason.description.SHARED_MEMORY_LIMIT
 msgid "A large allocation was requested, but there was not enough memory."
-msgstr ""
+msgstr "Katta miqdorda joylashtirish so‘ralgan edi, ammo xotira yetmagan edi."
 
 #: marker.gcreason.description.PERIODIC_FULL_GC
 msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since Firefox performed a garbage collection."
 msgstr ""
+"JavaScript hodisalarni qayta ishlash halqasiga qaytdi va bu Firefox bajargan "
+"chiqindi yig‘ishdan uzoq vaqt keyin bo‘ldi."
 
 #: marker.gcreason.description.INCREMENTAL_TOO_SLOW
 msgid ""
@@ -460,10 +466,14 @@ msgid ""
 "faster rate of allocations than the existing incremental garbage collection "
 "cycle could keep up with."
 msgstr ""
+"To‘liq, ko‘paymaydigan chiqindi to‘plash chaqirilgan, chunki mavjud "
+"ko‘paymaydigan chiqindi to‘plash halqasi saqlaganidan ko‘ra ajratish "
+"darajasi tezroq edi."
 
 #: marker.gcreason.description.COMPONENT_UTILS
 msgid "Components.utils.forceGC() was called to force a garbage collection."
 msgstr ""
+"Components.utils.forceGC() majburiy chiqindi yig‘ish uchun chaqirilgan edi."
 
 #: marker.gcreason.description.MEM_PRESSURE
 msgid "There was very low memory available."
@@ -477,11 +487,11 @@ msgstr "Halqa jamlagichi chiqindi yig‘ishni so‘ramoqda."
 #: marker.gcreason.description.CC_FORCED
 msgctxt "marker.gcreason.description.CC_FORCED"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "Halqa jamlagichi chiqindi yig‘ishni so‘ramoqda."
 
 #: marker.gcreason.description.LOAD_END
 msgid "The document finished loading."
-msgstr ""
+msgstr "Hujat yuklashni tugatdi."
 
 #: marker.gcreason.description.PAGE_HIDE
 msgid "The tab or window was moved to the background."
@@ -546,12 +556,16 @@ msgid ""
 "Firefox finished evaluating a large script, and performed a GC because the "
 "script will never be run again."
 msgstr ""
+"Firefox katta skriptni hisoblashni tugatdi va GC’ni amalga oshirdi, chunki "
+"skript endi hech qachon ishga tushirilmaydi."
 
 #: marker.gcreason.description.DOM_WINDOW_UTILS
 msgid ""
 "The user was inactive for a long time. Took the opportunity to perform GC "
 "when it was unlikely to be noticed."
 msgstr ""
+"Foydalanuvchi uzoq vaqt nofaol bo‘lgan. U ogohlantirilmagan bo‘lganda GC "
+"bajarish imkoniyatini qo‘lga oling."
 
 #: marker.gcreason.description.USER_INACTIVE
 msgid ""
