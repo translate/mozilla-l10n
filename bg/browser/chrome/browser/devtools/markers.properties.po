@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-21 15:18+0000\n"
-"PO-Revision-Date: 2015-10-13 11:01+0000\n"
+"PO-Revision-Date: 2015-10-15 17:05+0000\n"
 "Last-Translator: Ognyan Kulev <ognyan@ognyankulev.com>\n"
 "Language-Team: none\n"
 "Language: bg\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1444734077.000000\n"
+"X-POOTLE-MTIME: 1444928722.000000\n"
 
 #. # LOCALIZATION NOTE These strings are used inside the Performance Tools
 #. # which is available from the Web Developer sub-menu -> 'Performance'.
@@ -85,7 +85,7 @@ msgstr "Не-постепенен GC"
 
 #: marker.label.cycleCollection
 msgid "Cycle Collection"
-msgstr "Събиране на цикли"
+msgstr "Редовно почистване"
 
 #: marker.label.cycleCollection.forgetSkippable
 msgid "CC Graph Reduction"
@@ -300,12 +300,12 @@ msgstr "Малко памет"
 #: marker.gcreason.label.CC_WAITING
 msgctxt "marker.gcreason.label.CC_WAITING"
 msgid "Forced by Cycle Collection"
-msgstr "Принудително от събирането на цикли"
+msgstr "Принудително от редовното почистване"
 
 #: marker.gcreason.label.CC_FORCED
 msgctxt "marker.gcreason.label.CC_FORCED"
 msgid "Forced by Cycle Collection"
-msgstr "Принудително от събирането на цикли"
+msgstr "Принудително от редовното почистване"
 
 #: marker.gcreason.label.LOAD_END
 msgid "Page Load Finished"
@@ -382,6 +382,8 @@ msgid ""
 "JavaScript returned to the event loop and there were enough bytes allocated "
 "since the last GC that a new GC cycle was triggered."
 msgstr ""
+"JavaScript се върна към цикъла на събития и имаше достатъчно заделени "
+"байтове от последния GC, така че да се пусне нов цикъл GC."
 
 #: marker.gcreason.description.DESTROY_RUNTIME
 msgctxt "marker.gcreason.description.DESTROY_RUNTIME"
@@ -389,6 +391,8 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"Firefox разруши контекста на JavaScript и това беше окончателното почистване "
+"на остатъци преди приключване."
 
 #: marker.gcreason.description.DESTROY_CONTEXT
 msgctxt "marker.gcreason.description.DESTROY_CONTEXT"
@@ -396,6 +400,8 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"Firefox разруши контекста на JavaScript и това беше окончателното почистване "
+"на остатъци преди приключване."
 
 #: marker.gcreason.description.LAST_DITCH
 msgid ""
@@ -403,56 +409,73 @@ msgid ""
 "full compacting garbage collection as an attempt to free up memory for the "
 "allocation."
 msgstr ""
+"JavaScript се опита да задели памет, но няма свободна памет. Извършване на "
+"пълно почистване на остатъци в опит за освобождаване на памет за заделяне."
 
 #: marker.gcreason.description.TOO_MUCH_MALLOC
 msgid "JavaScript allocated too many bytes, and forced a garbage collection."
 msgstr ""
+"JavaScript задели твърде много байтове и принуди да се извърши почистване на "
+"остатъци."
 
 #: marker.gcreason.description.ALLOC_TRIGGER
 msgid "JavaScript allocated too many times, and forced a garbage collection."
 msgstr ""
+"JavaScript задели памет твърде много пъти и принуди да се извърши почистване "
+"на остатъци."
 
 #: marker.gcreason.description.DEBUG_GC
 msgid "GC due to Zeal debug settings."
-msgstr ""
+msgstr "GC заради настройка за дебъгване."
 
 #: marker.gcreason.description.COMPARTMENT_REVIVED
 msgid ""
 "A global object that was thought to be dead at the start of the GC cycle was "
 "revived by the end of the GC cycle."
 msgstr ""
+"Глобален обект, смятан за унищожен в началото на цикъла на GC се появи "
+"отново в края на GC цикъла."
 
 #: marker.gcreason.description.RESET
 msgid "The active incremental GC cycle was forced to finish immediately."
-msgstr ""
+msgstr "Активният постепенен GC цикъл беше принуден да завърши незабавно."
 
 #: marker.gcreason.description.OUT_OF_NURSERY
 msgid ""
 "JavaScript allocated enough new objects in the nursery that it became full "
 "and triggered a minor GC."
 msgstr ""
+"JavaScript задели достатъчно нови обекти в разсадника, за да се напълни и "
+"така да се пусне малък GC."
 
 #: marker.gcreason.description.EVICT_NURSERY
 msgid ""
 "Work needed to be done on the tenured heap, requiring the nursery to be "
 "empty."
 msgstr ""
+"Нужно беше да се извърши работа върху собствената работната памет, което "
+"изискваше разсадникът да се изпразни."
 
 #: marker.gcreason.description.FULL_STORE_BUFFER
 msgid ""
 "There were too many properties on tenured objects whose value was an object "
 "in the nursery."
 msgstr ""
+"Имаше твърде много свойства в собствените обекти, чиито стойности бяха "
+"обекти в разсадника."
 
 #: marker.gcreason.description.SHARED_MEMORY_LIMIT
 msgid "A large allocation was requested, but there was not enough memory."
 msgstr ""
+"Поискано беше голямо заделяне на памет, но нямаше достатъчно свободна памет."
 
 #: marker.gcreason.description.PERIODIC_FULL_GC
 msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since Firefox performed a garbage collection."
 msgstr ""
+"JavaScript се върна в цикъла на събития, а е изминало твърде много време, "
+"откакто Firefox извърши почистване на остатъците."
 
 #: marker.gcreason.description.INCREMENTAL_TOO_SLOW
 msgid ""
@@ -460,32 +483,37 @@ msgid ""
 "faster rate of allocations than the existing incremental garbage collection "
 "cycle could keep up with."
 msgstr ""
+"Пуснато беше пълно, не-постепененно почистване на остатъци, защото имаше "
+"честота на заделяне на памет, която надвишаваше възможностите на "
+"постепенното почистване на остатъци."
 
 #: marker.gcreason.description.COMPONENT_UTILS
 msgid "Components.utils.forceGC() was called to force a garbage collection."
 msgstr ""
+"Беше пуснато Components.utils.forceGC() за принудително извършване на "
+"почистване на остатъците."
 
 #: marker.gcreason.description.MEM_PRESSURE
 msgid "There was very low memory available."
-msgstr ""
+msgstr "Свободната памет беше твърде малко."
 
 #: marker.gcreason.description.CC_WAITING
 msgctxt "marker.gcreason.description.CC_WAITING"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "Редовното почистване изиска почистване на остатъците."
 
 #: marker.gcreason.description.CC_FORCED
 msgctxt "marker.gcreason.description.CC_FORCED"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "Редовното почистване изиска почистване на остатъците."
 
 #: marker.gcreason.description.LOAD_END
 msgid "The document finished loading."
-msgstr ""
+msgstr "Документът завърши зареждането."
 
 #: marker.gcreason.description.PAGE_HIDE
 msgid "The tab or window was moved to the background."
-msgstr ""
+msgstr "Подпрозорецът или прозорецът премина във фонов режим."
 
 #: marker.gcreason.description.NSJSCONTEXT_DESTROY
 msgctxt "marker.gcreason.description.NSJSCONTEXT_DESTROY"
@@ -493,40 +521,45 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"Firefox разруши контекста на JavaScript и това беше окончателното почистване "
+"на остатъци преди приключване."
 
 #: marker.gcreason.description.SET_NEW_DOCUMENT
 msgctxt "marker.gcreason.description.SET_NEW_DOCUMENT"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "Беше зададен нов документ за страницата."
 
 #: marker.gcreason.description.SET_DOC_SHELL
 msgctxt "marker.gcreason.description.SET_DOC_SHELL"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "Беше зададен нов документ за страницата."
 
 #: marker.gcreason.description.DOM_UTILS
 msgctxt "marker.gcreason.description.DOM_UTILS"
 msgid "There was an API call to force garbage collection."
-msgstr ""
+msgstr "Извикан API за принудително почистване на остатъци."
 
 #: marker.gcreason.description.DOM_IPC
 msgid "Received an inter-process message that requested a garbage collection."
 msgstr ""
+"Получено е междупроцесно съобщение, което изисква почистване на остатъците."
 
 #: marker.gcreason.description.DOM_WORKER
 msgid "The worker was idle for a relatively long time."
-msgstr ""
+msgstr "Обслужващата нишка беше неактивна твърде дълго време."
 
 #: marker.gcreason.description.INTER_SLICE_GC
 msgid ""
 "There has been a relatively long time since the last incremental GC slice."
-msgstr ""
+msgstr "Измина твърде много време от последното действие на постепенния GC."
 
 #: marker.gcreason.description.FULL_GC_TIMER
 msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since we performed a garbage collection."
 msgstr ""
+"JavaScript се върна в цикъла на събития, а е изминало твърде много време, "
+"откакто се извърши почистване на остатъците."
 
 #: marker.gcreason.description.SHUTDOWN_CC
 msgctxt "marker.gcreason.description.SHUTDOWN_CC"
@@ -534,21 +567,29 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"Firefox разруши контекста на JavaScript и това беше окончателното почистване "
+"на остатъци преди приключване."
 
 #: marker.gcreason.description.FINISH_LARGE_EVALUATE
 msgid ""
 "Firefox finished evaluating a large script, and performed a GC because the "
 "script will never be run again."
 msgstr ""
+"Firefox завърши изчисляването на голям скрипт и извърши GC, защото скриптът "
+"повече никога няма да бъде изпълняван."
 
 #: marker.gcreason.description.DOM_WINDOW_UTILS
 msgid ""
 "The user was inactive for a long time. Took the opportunity to perform GC "
 "when it was unlikely to be noticed."
 msgstr ""
+"Потребителят беше неактивен за дълго време. Извършен беше GC, понеже беше "
+"малко вероятно да бъде забелязано."
 
 #: marker.gcreason.description.USER_INACTIVE
 msgid ""
 "The user was inactive for a long time. Firefox took the opportunity to "
 "perform GC when it was unlikely to be noticed."
 msgstr ""
+"Потребителят беше неактивен за дълго време. Firefox извърши GC, понеже беше "
+"малко вероятно да бъде забелязано."
