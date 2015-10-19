@@ -200,6 +200,8 @@ if [ $opt_vc ]; then
 	do
 		rm -f ${L10N_ENUS}/${rmfile}
 	done
+	# Cleanup any oddeties in templates-en-US
+	sed -i '0,/^shouldRestartTitle=.*$/s///'  ${L10N_ENUS}/browser/chrome/browser/preferences/preferences.properties 
 	
 	verbose "moz2po - Create POT files from en-US"
 	#for exclude in $RETIRED_PRODUCT_DIRS $OTHER_EXCLUDED_DIRS ".hg"
