@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-21 15:18+0000\n"
-"PO-Revision-Date: 2015-10-25 15:42+0000\n"
+"PO-Revision-Date: 2015-10-25 17:12+0000\n"
 "Last-Translator: egamonal <egamonal@softcatala.cat>\n"
 "Language-Team: none\n"
 "Language: ca\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1445787728.000000\n"
+"X-POOTLE-MTIME: 1445793148.000000\n"
 
 #. # LOCALIZATION NOTE These strings are used inside the Performance Tools
 #. # which is available from the Web Developer sub-menu -> 'Performance'.
@@ -445,34 +445,43 @@ msgstr ""
 #: marker.gcreason.description.RESET
 msgid "The active incremental GC cycle was forced to finish immediately."
 msgstr ""
+"El cicle incremental actiu del GC ha estat forçat a finalitzar immediatament."
 
 #: marker.gcreason.description.OUT_OF_NURSERY
 msgid ""
 "JavaScript allocated enough new objects in the nursery that it became full "
 "and triggered a minor GC."
 msgstr ""
+"El JavaScript ha assignat suficients objectes nous a l'àrea jove que s'ha "
+"emplenat i ha disparat una recollida de deixalles menor."
 
 #: marker.gcreason.description.EVICT_NURSERY
+#, fuzzy
 msgid ""
 "Work needed to be done on the tenured heap, requiring the nursery to be "
 "empty."
-msgstr ""
+msgstr "Cal actuar sobre l'àrea vella perquè la nova quedi buida."
 
 #: marker.gcreason.description.FULL_STORE_BUFFER
 msgid ""
 "There were too many properties on tenured objects whose value was an object "
 "in the nursery."
 msgstr ""
+"Hi havia massa propietats d'objectes en l'àrea vella que feien referència a "
+"un objecte en l'àrea nova."
 
 #: marker.gcreason.description.SHARED_MEMORY_LIMIT
 msgid "A large allocation was requested, but there was not enough memory."
-msgstr ""
+msgstr "S'ha sol·licitat una assignació gran però no hi ha prou memòria."
 
 #: marker.gcreason.description.PERIODIC_FULL_GC
 msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since Firefox performed a garbage collection."
 msgstr ""
+"El JavaScript ha retornat al bucle d'esdeveniments i ha passat un temps "
+"relativament llarg des que el Firefox ha fet la darrera recollida de "
+"deixalles."
 
 #: marker.gcreason.description.INCREMENTAL_TOO_SLOW
 msgid ""
@@ -480,25 +489,28 @@ msgid ""
 "faster rate of allocations than the existing incremental garbage collection "
 "cycle could keep up with."
 msgstr ""
+"Una recollida de deixalles no incremental i completa s'ha disparat perquè la "
+"freqüència d'assignacions era més alta que el permès pel cicle incremental."
 
 #: marker.gcreason.description.COMPONENT_UTILS
 msgid "Components.utils.forceGC() was called to force a garbage collection."
 msgstr ""
+"S'ha cridat a Components.utils.forceGC() per forçar una recollida de "
+"deixalles."
 
 #: marker.gcreason.description.MEM_PRESSURE
-#, fuzzy
 msgid "There was very low memory available."
-msgstr "Es trobava en condicions de baixa memòria."
+msgstr "La memòria disponible era massa baixa."
 
 #: marker.gcreason.description.CC_WAITING
 msgctxt "marker.gcreason.description.CC_WAITING"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "El cicle ha requerit una recollida de deixalles"
 
 #: marker.gcreason.description.CC_FORCED
 msgctxt "marker.gcreason.description.CC_FORCED"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "El cicle ha requerit una recollida de deixalles."
 
 #: marker.gcreason.description.LOAD_END
 msgid "The document finished loading."
@@ -514,21 +526,23 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"El Firefox ha destruït un context o versió d'execució del JavaScript i ha "
+"estat la darrera recollida de deixalles abans d'aturar-se."
 
 #: marker.gcreason.description.SET_NEW_DOCUMENT
 msgctxt "marker.gcreason.description.SET_NEW_DOCUMENT"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "Aquesta pàgina ha estat moguda a un document nou."
 
 #: marker.gcreason.description.SET_DOC_SHELL
 msgctxt "marker.gcreason.description.SET_DOC_SHELL"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "Aquesta pàgina ha estat moguda a un nou document."
 
 #: marker.gcreason.description.DOM_UTILS
 msgctxt "marker.gcreason.description.DOM_UTILS"
 msgid "There was an API call to force garbage collection."
-msgstr ""
+msgstr "S'ha produït una crida a l'API per forçar la recollida de deixalles."
 
 #: marker.gcreason.description.DOM_IPC
 msgid "Received an inter-process message that requested a garbage collection."
@@ -555,6 +569,8 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"El Firefox ha destruït un context o versió d'execució del JavaScript i ha "
+"estat la darrera recollida de deixalles abans d'aturar-se."
 
 #: marker.gcreason.description.FINISH_LARGE_EVALUATE
 msgid ""
