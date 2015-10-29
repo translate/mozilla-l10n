@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-21 15:18+0000\n"
+"POT-Creation-Date: 2015-10-29 12:22+0000\n"
 "PO-Revision-Date: 2015-10-14 20:34+0000\n"
 "Last-Translator: Emin Mastizada <emin@mastizada.com>\n"
 "Language-Team: none\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1444854861.000000\n"
@@ -30,14 +30,6 @@ msgstr "Firefox Hello"
 #: clientSuperShortname
 msgid "Hello"
 msgstr "Hello"
-
-#: rooms_tab_button
-msgid "Conversations"
-msgstr "Söhbətlər"
-
-#: contacts_tab_button
-msgid "Contacts"
-msgstr "Əlaqələr"
 
 #. ## LOCALIZATION_NOTE(sign_in_again_title_line_one, sign_in_again_title_line_two2):
 #. ## These are displayed together at the top of the panel when a user is needed to
@@ -64,6 +56,14 @@ msgstr "Daxil ol"
 msgid "Use {{clientSuperShortname}} as a Guest"
 msgstr "{{clientSuperShortname}} səyyahını Qonaq kimi işlət"
 
+#: panel_browse_with_friend_button
+msgid "Browse this page with a friend"
+msgstr ""
+
+#: panel_stop_sharing_tabs_button
+msgid "Stop sharing your tabs"
+msgstr ""
+
 #: first_time_experience_button_label
 msgid "Get Started"
 msgstr "Başla"
@@ -75,68 +75,42 @@ msgctxt "first_time_experience_subheading"
 msgid "Join the conversation"
 msgstr "Söhbətə qoşul"
 
-#: invite_header_text
-msgid "Invite someone to join you."
-msgstr "Sizə qoşulması üçün başqasını dəvət edin."
-
 #: invite_header_text2
 msgid "Invite a friend to join you"
 msgstr "Yoldaşınızı sizə qoşulmağa dəvət edin"
 
-#: invite_facebook_button
-msgid "share on Facebook"
+#. ## LOCALIZATION_NOTE(invite_copy_link_button, invite_copied_link_button,
+#. ## invite_email_link_button, invite_facebook_button2): These labels appear under
+#. ## an iconic button for the invite view.
+#: invite_copy_link_button
+#, fuzzy
+msgctxt "invite_copy_link_button"
+msgid "Copy Link"
+msgstr "Keçidi köçür"
+
+#: invite_copied_link_button
+msgid "Copied!"
+msgstr "Köçürüldü!"
+
+#: invite_email_link_button
+#, fuzzy
+msgctxt "invite_email_link_button"
+msgid "Email Link"
+msgstr "Keçidi e-poçtla göndər"
+
+#: invite_facebook_button2
+#, fuzzy
+msgid "Share on Facebook"
 msgstr "Facebook-da paylaş"
-
-#: invite_facebook_triggered
-msgctxt "invite_facebook_triggered"
-msgid "shared!"
-msgstr "paylaşıldı!"
-
-#: invite_contacts_button
-msgid "share with contacts"
-msgstr "əlaqələrlə paylaş"
-
-#: invite_contacts_triggered
-msgctxt "invite_contacts_triggered"
-msgid "shared!"
-msgstr "paylaşıldı!"
-
-#: invite_copy_button
-msgid "copy link"
-msgstr "keçidi köçür"
-
-#: invite_copy_triggered
-msgid "copied!"
-msgstr "köçürüldü!"
-
-#: invite_email_button
-msgid "email link"
-msgstr "keçidi e-poçtla göndər"
-
-#: invite_email_triggered
-msgid "emailed!"
-msgstr "e-poçtla göndərildi!"
 
 #. # Status text
 #: display_name_guest
 msgid "Guest"
 msgstr "Qonaq"
 
-#: display_name_dnd_status
-msgid "Do Not Disturb"
-msgstr "Narahat Etməyin"
-
-#: display_name_available_status
-msgid "Available"
-msgstr "Yerindədir"
-
 #. # Error bars
-#. ## LOCALIZATION NOTE(unable_retrieve_url,session_expired_error_description,could_not_authenticate,password_changed_question,try_again_later,could_not_connect,check_internet_connection,login_expired,service_not_available,problem_accessing_account):
+#. ## LOCALIZATION NOTE(session_expired_error_description,could_not_authenticate,password_changed_question,try_again_later,could_not_connect,check_internet_connection,login_expired,service_not_available,problem_accessing_account):
 #. ## These may be displayed at the top of the panel.
-#: unable_retrieve_url
-msgid "Sorry, we were unable to retrieve a call URL."
-msgstr "Bağışlayın, çağrı ünvanı ala bilmədik."
-
 #: session_expired_error_description
 msgid ""
 "Session expired. All URLs you have previously created and shared will no "
@@ -234,22 +208,27 @@ msgstr ""
 msgid "Join me for a video conversation on {{clientShortname2}}!"
 msgstr "Mənimlə video söhbət üçün {{clientShortname2}} üzərindən qoşulun!"
 
-#: share_button3
-msgid "Share Link"
-msgstr "Keçidi Paylaş"
-
 #: share_add_service_button
 msgid "Add a Service"
 msgstr "Xidmət Əlavə et"
 
-#: copy_url_button2
-msgctxt "copy_url_button2"
+#. ## LOCALIZATION NOTE (copy_link_menuitem, email_link_menuitem, delete_conversation_menuitem):
+#. ## These menu items are displayed from a panel's context menu for a conversation.
+#: copy_link_menuitem
+#, fuzzy
+msgctxt "copy_link_menuitem"
 msgid "Copy Link"
 msgstr "Keçidi köçür"
 
-#: copied_url_button
-msgid "Copied!"
-msgstr "Köçürüldü!"
+#: email_link_menuitem
+#, fuzzy
+msgctxt "email_link_menuitem"
+msgid "Email Link"
+msgstr "Keçidi e-poçtla göndər"
+
+#: delete_conversation_menuitem
+msgid "Delete conversation"
+msgstr "Söhbəti sil"
 
 #: panel_footer_signin_or_signup_link
 msgid "Sign In or Sign Up"
@@ -274,275 +253,23 @@ msgctxt "settings_menu_item_signin"
 msgid "Sign In"
 msgstr "Daxil ol"
 
+#: settings_menu_item_turnnotificationson
+msgid "Turn Notifications On"
+msgstr ""
+
+#: settings_menu_item_turnnotificationsoff
+msgid "Turn Notifications Off"
+msgstr ""
+
+#: settings_menu_item_feedback
+msgid "Submit Feedback"
+msgstr ""
+
 # Ortaq qərarla Tənzimləmələr
 #: settings_menu_button_tooltip
 msgctxt "settings_menu_button_tooltip"
 msgid "Settings"
 msgstr "Tənzimləmələr"
-
-#. # Contact Strings (Panel)
-#. ## LOCALIZATION NOTE(contacts_search_placeholder): This is the placeholder text for
-#. ## the search field.
-#: contacts_search_placesholder2
-msgid "Search…"
-msgstr "Axtar…"
-
-#. ## LOCALIZATION NOTE (new_contact_button2): This is the button to open the
-#. ## new contact sub-panel.
-#: new_contact_button2
-msgid "Add new contact"
-msgstr "Yeni əlaqə əlavə et"
-
-#. ## LOCALIZATION NOTE (contact_form_*_placeholder):
-#. ## These are the placeholders for the inputs for entering or editing a contact
-#. ## Click the 'New Contact' button to see the fields.
-#: contact_form_name_placeholder
-msgctxt "contact_form_name_placeholder"
-msgid "Name"
-msgstr "Ad"
-
-#: contact_form_email_placeholder
-msgctxt "contact_form_email_placeholder"
-msgid "Email"
-msgstr "E-poçt"
-
-#: contact_form_fxos_phone_placeholder
-msgid "Firefox OS Phone"
-msgstr "Firefox OS Telefonu"
-
-#: contact_form_phone_placeholder2
-msgid "Phone"
-msgstr "Telefon"
-
-#: contacts_blocked_contacts
-msgid "Blocked Contacts"
-msgstr "Bloklanmış əlaqələr"
-
-#. ## LOCALIZATION NOTE (add_contact_button):
-#. ## This is the button to actually add the new contact. Click the 'New Contact'
-#. ## button to see the fields.
-#: add_contact_button
-msgctxt "add_contact_button"
-msgid "Add Contact"
-msgstr "Əlaqə əlavə et"
-
-#. ## LOCALIZATION NOTE(add_contact_title): This is the subtitle of the add contact
-#. ## panel. It is displayed when Add Contact is selected.
-#: add_contact_title
-msgctxt "add_contact_title"
-msgid "Add Contact"
-msgstr "Əlaqə əlavə et"
-
-#. ### LOCALIZATION NOTE (valid_email_text_description): This is displayed when
-#. ### the user enters an invalid email address, preventing the addition of the
-#. ### contact.
-#: valid_email_text_description
-msgid "Please enter a valid email address"
-msgstr "Lütfən doğru e-poçt ünvanı daxil edin"
-
-#. ## LOCALIZATION NOTE (add_or_import_contact_title): This is the subtitle of the
-#. ## panel.
-#: add_or_import_contact_title
-msgid "Add or Import Contact"
-msgstr "Əlaqə əlavə və ya idxal et"
-
-#: import_contacts_button2
-msgid "Import from Google"
-msgstr "Google-dan idxal et"
-
-#. ## LOCALIZATION NOTE (import_contacts_button3): Text for button used to import
-#. ## contacts into the contact list.
-#: import_contacts_button3
-msgid "Import"
-msgstr "İdxal et"
-
-#: importing_contacts_progress_button
-msgid "Importing…"
-msgstr "İdxal edilir…"
-
-#: import_contacts_failure_message
-msgid "Some contacts could not be imported. Please try again."
-msgstr "Bəzi əlaqələr idxal edilə bilmir. Lütfən təkrar yoxlayın."
-
-#. ## LOCALIZATION NOTE(import_contacts_success_message): Success notification message
-#. ## when user's contacts have been successfully imported.
-#. ## Semicolon-separated list of plural forms. See:
-#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. ## In this item, don't translate the part between {{..}}
-#: import_contacts_success_message
-msgid ""
-"{{total}} contact was successfully imported.;{{total}} contacts were "
-"successfully imported."
-msgstr ""
-"{{total}} əlaqə uğurla idxal edildi.;{{total}} əlaqə uğurla idxal edildi."
-
-#. ## LOCALIZATION NOTE(sync_contacts_button): This button is displayed in place of
-#. ## importing_contacts_button once contacts have been imported once.
-#: sync_contacts_button
-msgid "Sync Contacts"
-msgstr "Əlaqələri sinxronlaşdır"
-
-#. ## LOCALIZATION NOTE(no_contacts_message_heading2): Title shown when user has no
-#. ## contacts in his address book
-#: no_contacts_message_heading2
-msgid "No contacts yet."
-msgstr "Hələlik əlaqə yoxdur."
-
-#. ## LOCALIZATION NOTE(no_contacts_import_or_add2): Subheading inviting the user
-#. ## to add people to his contact list
-#: no_contacts_import_or_add2
-msgid "Add someone!"
-msgstr "Birini əlavə et!"
-
-#. ## LOCALIZATION NOTE(no_conversations_message_heading2): Title shown when user
-#. ## has no conversations available.
-#: no_conversations_message_heading2
-msgid "No conversations yet."
-msgstr "Hələlik söhbət yoxdur."
-
-#. ## LOCALIZATION NOTE(no_conversations_start_message2): Subheading inviting the
-#. ## user to start a new conversation.
-#: no_conversations_start_message2
-msgid "Start a new one!"
-msgstr "Yenisini başlat!"
-
-#. ## LOCALIZATION NOTE(contacts_no_search_results): Message shown when contacts
-#. ## search returned no matching results.
-#: contacts_no_search_results
-msgid "No matching results."
-msgstr "Uyğun nəticə tapılmadı."
-
-#. ## LOCALIZATION NOTE(import_failed_description simple): Displayed when an import of
-#. ## contacts fails. This is displayed in the error field.
-#: import_failed_description_simple
-msgid "Sorry, contact import failed"
-msgstr "Üzr istəyirik, əlaqələri idxal etmə uğursuz oldu"
-
-#: import_failed_description_some
-msgid "Some contacts could not be imported"
-msgstr "Bəzi əlaqələr daxil edilə bilmir"
-
-#: import_failed_support_button
-msgctxt "import_failed_support_button"
-msgid "Help"
-msgstr "Kömək"
-
-#. ## LOCALIZATION NOTE(remove_contact_menu_button2): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name.
-#: remove_contact_menu_button2
-msgid "Remove Contact…"
-msgstr "Əlaqəni Sil…"
-
-#. ## LOCALIZATION NOTE(remove_contact_title): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name.
-#: remove_contact_menu_button3
-msgctxt "remove_contact_menu_button3"
-msgid "Remove Contact"
-msgstr "Əlaqəni Sil"
-
-#. ## LOCALIZATION NOTE(confirm_delete_contact_alert): This is an alert that is displayed
-#. ## to confirm deletion of a contact.
-#: confirm_delete_contact_alert
-msgid "Are you sure you want to delete this contact?"
-msgstr "Bu əlaqəni silmək istədiyinizə əminsiniz?"
-
-#. ## LOCALIZATION NOTE(confirm_delete_contact_remove_button, confirm_delete_contact_cancel_button):
-#. ## These are displayed on the alert with confirm_delete_contact_alert
-#: confirm_delete_contact_remove_button
-msgctxt "confirm_delete_contact_remove_button"
-msgid "Remove Contact"
-msgstr "Əlaqəni Sil"
-
-#: confirm_delete_contact_cancel_button
-msgctxt "confirm_delete_contact_cancel_button"
-msgid "Cancel"
-msgstr "Ləğv et"
-
-#. ## LOCALIZATION NOTE(contact_list_title): This is in uppercase in English for
-#. ## emphasis, please do what is appropriate for specific locales.
-#: contact_list_title
-msgid "MY CONTACTS"
-msgstr "ƏLAQƏLƏRİM"
-
-#. ## LOCALIZATION NOTE(block_contact_menu_button): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name, used to block a contact from calling
-#. ## the user.
-#: block_contact_menu_button
-msgid "Block Contact"
-msgstr "Əlaqəni blokla"
-
-#. ## LOCALIZATION NOTE(unblock_contact_menu_button): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name, used to unblock a contact and allow them
-#. ## to call the user.
-#: unblock_contact_menu_button
-msgid "Unblock Contact"
-msgstr "Əlaqəni blokdan çıxart"
-
-#. ## LOCALIZATION NOTE(edit_contact_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: edit_contact_menu_button
-msgid "Edit Contact…"
-msgstr "Əlaqəni redaktə et…"
-
-#. ## LOCALIZATION NOTE(edit_contact_tile): This is the subtitle of the edit contact
-#. ## panel. It is displayed when Edit Contact is selected.
-#: edit_contact_title
-msgid "Edit Contact"
-msgstr "Əlaqəni redaktə et"
-
-#. ## LOCALIZATION NOTE(edit_contact_name_label, edit_contact_email_label):
-#. ## These fields are display when the Edit Contact button is selected.
-#: edit_contact_name_label
-msgctxt "edit_contact_name_label"
-msgid "Name"
-msgstr "Ad"
-
-#: edit_contact_email_label
-msgctxt "edit_contact_email_label"
-msgid "Email"
-msgstr "E-poçt"
-
-#. ## LOCALIZATION NOTE(edit_contact_name_label, edit_contact_email_label):
-#. ## These button is displayed when the Edit Contact button is selected and is used
-#. ## to accept the change.
-#: edit_contact_done_button
-msgctxt "edit_contact_done_button"
-msgid "Done"
-msgstr "Bitdi"
-
-#. ## LOCALIZATION NOTE(audio_call_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: audio_call_menu_button
-msgid "Audio Conversation"
-msgstr "Səsli söhbət"
-
-#. ## LOCALIZATION NOTE(video_call_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: video_call_menu_button
-msgid "Video Conversation"
-msgstr "Video söhbət"
-
-#. ## LOCALIZATION NOTE(gravatars_promo_message): The {{learn_more}} part will be
-#. ## replaced with a link with the text content of gravatars_promo_message_learnmore.
-#: gravatars_promo_message
-msgid ""
-"You can automatically add profile icons to your contacts by sharing their "
-"email addresses with Gravatar. {{learn_more}}."
-msgstr ""
-"Əlaqələrinizin Gravatar e-poçt ünvanlarını paylaşmaqla onlara avtomatik "
-"olaraq profil təsvirlərini əlavə edə bilərsiz. {{learn_more}}."
-
-#: gravatars_promo_message_learnmore
-msgid "Learn more"
-msgstr "Ətraflı öyrən"
-
-#: gravatars_promo_button_nothanks2
-msgid "No, thanks"
-msgstr "Xeyr, təşəkkürlər"
-
-#: gravatars_promo_button_use2
-msgid "Use profile icons"
-msgstr "Profil ikonlarını işlət"
 
 #. # Conversation Window Strings
 #: initiate_call_button_label2
@@ -552,27 +279,6 @@ msgstr "Söhbəti başlatmağa hazırsınız?"
 #: incoming_call_title2
 msgid "Conversation Request"
 msgstr "Söhbət istəyi"
-
-#: incoming_call_accept_button
-msgid "Accept"
-msgstr "Qəbul et"
-
-#: incoming_call_accept_audio_only_tooltip
-msgid "Accept with voice"
-msgstr "Səsli qəbul et"
-
-#: incoming_call_accept_audio_video_tooltip
-msgid "Accept with video"
-msgstr "Video ilə qəbul et"
-
-#: incoming_call_cancel_button
-msgctxt "incoming_call_cancel_button"
-msgid "Cancel"
-msgstr "Ləğv et"
-
-#: incoming_call_cancel_and_block_button
-msgid "Cancel and Block"
-msgstr "Ləğv et və Blokla"
 
 #: incoming_call_block_button
 msgid "Block"
@@ -648,23 +354,6 @@ msgstr "Video söhbət başlat"
 msgid "Voice conversation"
 msgstr "Səsli söhbət"
 
-#: initiate_call_cancel_button
-msgctxt "initiate_call_cancel_button"
-msgid "Cancel"
-msgstr "Ləğv et"
-
-#. ## LOCALIZATION NOTE (call_progress_connecting_description): This is displayed
-#. ## whilst the client is contacting the client at the other end of the connection.
-#: call_progress_connecting_description
-msgid "Connecting…"
-msgstr "Bağlanır…"
-
-#. ## LOCALIZATION NOTE (call_progress_ringing_description): This is displayed
-#. ## when the other client is actually ringing.
-#: call_progress_ringing_description
-msgid "Ringing…"
-msgstr "Çağırır…"
-
 #: peer_ended_conversation2
 msgid "The person you were calling has ended the conversation."
 msgstr "Zəng etdiyiniz şəxs söhbəti sonlandırdı."
@@ -678,30 +367,19 @@ msgctxt "restart_call"
 msgid "Rejoin"
 msgstr "Yenidən qoşul"
 
-#. ## LOCALIZATION NOTE (contact_unavailable_title): The title displayed
-#. ## when a contact is unavailable. Don't translate the part between {{..}}
-#. ## because this will be replaced by the contact's name.
-#: contact_unavailable_title
-msgid "{{contactName}} is unavailable."
-msgstr "{{contactName}} məşğuldur."
-
-#: generic_contact_unavailable_title
-msgid "This person is unavailable."
-msgstr "Bu şəxs məşğuldur."
-
 #: generic_failure_message
 msgid "We're having technical difficulties…"
 msgstr "Texniki çətinliklərimiz var…"
 
-#: generic_failure_with_reason2
-msgid "You can try again or email a link to be reached at later."
-msgstr ""
-"Yenidən yoxlaya bilər və ya daha sonra əlaqə saxlamaq üçün e-poçt ilə link "
-"göndərə bilərsiniz."
-
 #: generic_failure_no_reason2
 msgid "Would you like to try again?"
 msgstr "Yenidən yoxlamaq istəyirsiniz?"
+
+#. ## LOCALIZATION NOTE (tos_failure_message): Don't translate {{clientShortname2}}
+#. ## as this will be replaced by the shortname.
+#: tos_failure_message
+msgid "{{clientShortname}} is not available in your country."
+msgstr ""
 
 #. ## LOCALIZATION NOTE (contact_offline_title): Title which is displayed when the
 #. ## contact is offline.
@@ -715,16 +393,12 @@ msgstr "Bu şəxs onlayn deyil"
 msgid "Your call did not go through."
 msgstr "Zənginiz qarşı tərəfə çatmadı."
 
-#. ## LOCALIZATION NOTE (retry_call_button, cancel_button, email_link_button):
+#. ## LOCALIZATION NOTE (retry_call_button, cancel_button):
 #. ## These buttons are displayed when a call has failed.
 #: retry_call_button
 msgctxt "retry_call_button"
 msgid "Retry"
 msgstr "Yenidən yoxla"
-
-#: email_link_button
-msgid "Email Link"
-msgstr "Keçidi e-poçtla göndər"
 
 #: cancel_button
 msgctxt "cancel_button"
@@ -750,6 +424,10 @@ msgstr "Zəng uğursuz oldu; təfərrüatlar üçün consola baxın."
 #: no_media_failure_message
 msgid "No camera or microphone found."
 msgstr "Kamera və ya mikrofon tapılmadı."
+
+#: ice_failure_message
+msgid "Connection failed. Your firewall may be blocking calls."
+msgstr ""
 
 #. ## LOCALIZATION NOTE (legal_text_and_links3): In this item, don't translate the
 #. ## parts between {{..}} because these will be replaced with links with the labels
@@ -806,7 +484,7 @@ msgid "Leave Feedback"
 msgstr "Təklif Göndər"
 
 #: help_label
-msgctxt "help_label"
+#, fuzzy
 msgid "Help"
 msgstr "Kömək"
 
@@ -824,32 +502,21 @@ msgstr "Söhbət {{conversationLabel}}"
 msgid "Leave"
 msgstr "Tərk et"
 
-#: rooms_list_copy_url_tooltip
-msgctxt "rooms_list_copy_url_tooltip"
-msgid "Copy Link"
-msgstr "Keçidi köçür"
-
-#. ## LOCALIZATION NOTE (rooms_list_recent_conversations): String is in all caps
+#. ## LOCALIZATION NOTE (rooms_list_recently_browsed): String is in all caps
 #. ## for emphasis reasons, it is a heading. Proceed as appropriate for locale.
-#: rooms_list_recent_conversations
-msgid "RECENT CONVERSATIONS"
-msgstr "SON SÖHBƏTLƏR"
+#: rooms_list_recently_browsed
+msgid "RECENTLY BROWSED"
+msgstr ""
 
-#: rooms_list_delete_tooltip
-msgid "Delete conversation"
-msgstr "Söhbəti sil"
-
-#: rooms_list_deleteConfirmation_label
-msgid "Are you sure?"
-msgstr "Əminsiniz?"
+#. ## LOCALIZATION NOTE (rooms_list_currently_browsing): String is in all caps
+#. ## for emphasis reasons, it is a heading. Proceed as appropriate for locale.
+#: rooms_list_currently_browsing
+msgid "CURRENTLY BROWSING"
+msgstr ""
 
 #: rooms_change_failed_label
 msgid "Conversation cannot be updated"
 msgstr "Söhbət yenilənə bilməz"
-
-#: rooms_new_room_button_label
-msgid "Start a conversation"
-msgstr "Söhbət başlat"
 
 #: rooms_panel_title
 msgid "Choose a conversation or start a new one"
@@ -906,6 +573,18 @@ msgid "D"
 msgstr "D"
 
 #. # Context in conversation strings
+#. ## LOCALIZATION NOTE(no_conversations_message_heading2): Title shown when user
+#. ## has no conversations available.
+#: no_conversations_message_heading2
+msgid "No conversations yet."
+msgstr "Hələlik söhbət yoxdur."
+
+#. ## LOCALIZATION NOTE(no_conversations_start_message2): Subheading inviting the
+#. ## user to start a new conversation.
+#: no_conversations_start_message2
+msgid "Start a new one!"
+msgstr "Yenisini başlat!"
+
 #. # LOCALIZATION NOTE (context_inroom_header): this string is displayed in the
 #. # conversation window when the user edits context. It is a header to the edit
 #. # section.
@@ -922,13 +601,6 @@ msgstr "Söhbət mövzusu…"
 msgid "Let's Talk About:"
 msgstr "Söhbət mövzusu:"
 
-#. ## LOCALIZATION_NOTE (context_edit_activate_label): {{title}} will be replaced
-#. ## by the title of the active tab, also known as the title of an HTML document.
-#. ## The quotes around the title are intentional.
-#: context_edit_activate_label
-msgid "Talk about \"{{title}}\""
-msgstr "\"{{title}}\" haqqında danış"
-
 #: context_edit_name_placeholder
 msgid "Conversation Name"
 msgstr "Söhbət Adı"
@@ -937,31 +609,15 @@ msgstr "Söhbət Adı"
 msgid "Comments"
 msgstr "Şərhlər"
 
-#: context_add_some_label
-msgid "Add some context"
-msgstr "Kontekst əlavə et"
-
-#: context_show_tooltip
-msgid "Show Context"
-msgstr "Konteksti Göstər"
-
 #: context_cancel_label
 msgctxt "context_cancel_label"
 msgid "Cancel"
 msgstr "Ləğv et"
 
 #: context_done_label
-msgctxt "context_done_label"
+#, fuzzy
 msgid "Done"
 msgstr "Bitdi"
-
-#: context_link_modified
-msgid "This link was modified."
-msgstr "Bu keçid dəyişdirilib."
-
-#: context_learn_more_link_label
-msgid "Learn more."
-msgstr "Ətraflı öyrən."
 
 #: conversation_settings_menu_edit_context
 msgid "Edit Context"
@@ -975,6 +631,255 @@ msgstr "Konteksti Gizlət"
 #: chat_textbox_placeholder
 msgid "Type here…"
 msgstr "Bura yazın…"
+
+#~ msgid "Conversations"
+#~ msgstr "Söhbətlər"
+
+#~ msgid "Contacts"
+#~ msgstr "Əlaqələr"
+
+#~ msgid "Invite someone to join you."
+#~ msgstr "Sizə qoşulması üçün başqasını dəvət edin."
+
+#~ msgctxt "invite_facebook_triggered"
+#~ msgid "shared!"
+#~ msgstr "paylaşıldı!"
+
+#~ msgid "share with contacts"
+#~ msgstr "əlaqələrlə paylaş"
+
+#~ msgctxt "invite_contacts_triggered"
+#~ msgid "shared!"
+#~ msgstr "paylaşıldı!"
+
+#~ msgid "copy link"
+#~ msgstr "keçidi köçür"
+
+#~ msgid "copied!"
+#~ msgstr "köçürüldü!"
+
+#~ msgid "email link"
+#~ msgstr "keçidi e-poçtla göndər"
+
+#~ msgid "emailed!"
+#~ msgstr "e-poçtla göndərildi!"
+
+#~ msgid "Do Not Disturb"
+#~ msgstr "Narahat Etməyin"
+
+#~ msgid "Available"
+#~ msgstr "Yerindədir"
+
+#~ msgid "Sorry, we were unable to retrieve a call URL."
+#~ msgstr "Bağışlayın, çağrı ünvanı ala bilmədik."
+
+#~ msgid "Share Link"
+#~ msgstr "Keçidi Paylaş"
+
+#~ msgid "Search…"
+#~ msgstr "Axtar…"
+
+#~ msgid "Add new contact"
+#~ msgstr "Yeni əlaqə əlavə et"
+
+#~ msgctxt "contact_form_name_placeholder"
+#~ msgid "Name"
+#~ msgstr "Ad"
+
+#~ msgctxt "contact_form_email_placeholder"
+#~ msgid "Email"
+#~ msgstr "E-poçt"
+
+#~ msgid "Firefox OS Phone"
+#~ msgstr "Firefox OS Telefonu"
+
+#~ msgid "Phone"
+#~ msgstr "Telefon"
+
+#~ msgid "Blocked Contacts"
+#~ msgstr "Bloklanmış əlaqələr"
+
+#~ msgctxt "add_contact_button"
+#~ msgid "Add Contact"
+#~ msgstr "Əlaqə əlavə et"
+
+#~ msgctxt "add_contact_title"
+#~ msgid "Add Contact"
+#~ msgstr "Əlaqə əlavə et"
+
+#~ msgid "Please enter a valid email address"
+#~ msgstr "Lütfən doğru e-poçt ünvanı daxil edin"
+
+#~ msgid "Add or Import Contact"
+#~ msgstr "Əlaqə əlavə və ya idxal et"
+
+#~ msgid "Import from Google"
+#~ msgstr "Google-dan idxal et"
+
+#~ msgid "Import"
+#~ msgstr "İdxal et"
+
+#~ msgid "Importing…"
+#~ msgstr "İdxal edilir…"
+
+#~ msgid "Some contacts could not be imported. Please try again."
+#~ msgstr "Bəzi əlaqələr idxal edilə bilmir. Lütfən təkrar yoxlayın."
+
+#~ msgid ""
+#~ "{{total}} contact was successfully imported.;{{total}} contacts were "
+#~ "successfully imported."
+#~ msgstr ""
+#~ "{{total}} əlaqə uğurla idxal edildi.;{{total}} əlaqə uğurla idxal edildi."
+
+#~ msgid "Sync Contacts"
+#~ msgstr "Əlaqələri sinxronlaşdır"
+
+#~ msgid "No contacts yet."
+#~ msgstr "Hələlik əlaqə yoxdur."
+
+#~ msgid "Add someone!"
+#~ msgstr "Birini əlavə et!"
+
+#~ msgid "No matching results."
+#~ msgstr "Uyğun nəticə tapılmadı."
+
+#~ msgid "Sorry, contact import failed"
+#~ msgstr "Üzr istəyirik, əlaqələri idxal etmə uğursuz oldu"
+
+#~ msgid "Some contacts could not be imported"
+#~ msgstr "Bəzi əlaqələr daxil edilə bilmir"
+
+#~ msgid "Remove Contact…"
+#~ msgstr "Əlaqəni Sil…"
+
+#~ msgctxt "remove_contact_menu_button3"
+#~ msgid "Remove Contact"
+#~ msgstr "Əlaqəni Sil"
+
+#~ msgid "Are you sure you want to delete this contact?"
+#~ msgstr "Bu əlaqəni silmək istədiyinizə əminsiniz?"
+
+#~ msgctxt "confirm_delete_contact_remove_button"
+#~ msgid "Remove Contact"
+#~ msgstr "Əlaqəni Sil"
+
+#~ msgid "MY CONTACTS"
+#~ msgstr "ƏLAQƏLƏRİM"
+
+#~ msgid "Block Contact"
+#~ msgstr "Əlaqəni blokla"
+
+#~ msgid "Unblock Contact"
+#~ msgstr "Əlaqəni blokdan çıxart"
+
+#~ msgid "Edit Contact…"
+#~ msgstr "Əlaqəni redaktə et…"
+
+#~ msgid "Edit Contact"
+#~ msgstr "Əlaqəni redaktə et"
+
+#~ msgctxt "edit_contact_name_label"
+#~ msgid "Name"
+#~ msgstr "Ad"
+
+#~ msgctxt "edit_contact_email_label"
+#~ msgid "Email"
+#~ msgstr "E-poçt"
+
+#~ msgid "Audio Conversation"
+#~ msgstr "Səsli söhbət"
+
+#~ msgid "Video Conversation"
+#~ msgstr "Video söhbət"
+
+#~ msgid ""
+#~ "You can automatically add profile icons to your contacts by sharing their "
+#~ "email addresses with Gravatar. {{learn_more}}."
+#~ msgstr ""
+#~ "Əlaqələrinizin Gravatar e-poçt ünvanlarını paylaşmaqla onlara avtomatik "
+#~ "olaraq profil təsvirlərini əlavə edə bilərsiz. {{learn_more}}."
+
+#~ msgid "Learn more"
+#~ msgstr "Ətraflı öyrən"
+
+#~ msgid "No, thanks"
+#~ msgstr "Xeyr, təşəkkürlər"
+
+#~ msgid "Use profile icons"
+#~ msgstr "Profil ikonlarını işlət"
+
+#~ msgid "Accept"
+#~ msgstr "Qəbul et"
+
+#~ msgid "Accept with voice"
+#~ msgstr "Səsli qəbul et"
+
+#~ msgid "Accept with video"
+#~ msgstr "Video ilə qəbul et"
+
+#~ msgctxt "incoming_call_cancel_button"
+#~ msgid "Cancel"
+#~ msgstr "Ləğv et"
+
+#~ msgid "Cancel and Block"
+#~ msgstr "Ləğv et və Blokla"
+
+#~ msgctxt "initiate_call_cancel_button"
+#~ msgid "Cancel"
+#~ msgstr "Ləğv et"
+
+#~ msgid "Connecting…"
+#~ msgstr "Bağlanır…"
+
+#~ msgid "Ringing…"
+#~ msgstr "Çağırır…"
+
+#~ msgid "{{contactName}} is unavailable."
+#~ msgstr "{{contactName}} məşğuldur."
+
+#~ msgid "This person is unavailable."
+#~ msgstr "Bu şəxs məşğuldur."
+
+#~ msgid "You can try again or email a link to be reached at later."
+#~ msgstr ""
+#~ "Yenidən yoxlaya bilər və ya daha sonra əlaqə saxlamaq üçün e-poçt ilə "
+#~ "link göndərə bilərsiniz."
+
+#~ msgctxt "help_label"
+#~ msgid "Help"
+#~ msgstr "Kömək"
+
+#~ msgctxt "rooms_list_copy_url_tooltip"
+#~ msgid "Copy Link"
+#~ msgstr "Keçidi köçür"
+
+#~ msgid "RECENT CONVERSATIONS"
+#~ msgstr "SON SÖHBƏTLƏR"
+
+#~ msgid "Are you sure?"
+#~ msgstr "Əminsiniz?"
+
+#~ msgid "Start a conversation"
+#~ msgstr "Söhbət başlat"
+
+#~ msgid "Talk about \"{{title}}\""
+#~ msgstr "\"{{title}}\" haqqında danış"
+
+#~ msgid "Add some context"
+#~ msgstr "Kontekst əlavə et"
+
+#~ msgid "Show Context"
+#~ msgstr "Konteksti Göstər"
+
+#~ msgctxt "context_done_label"
+#~ msgid "Done"
+#~ msgstr "Bitdi"
+
+#~ msgid "This link was modified."
+#~ msgstr "Bu keçid dəyişdirilib."
+
+#~ msgid "Learn more."
+#~ msgstr "Ətraflı öyrən."
 
 #~ msgid "{{clientShortname}} — Join the conversation"
 #~ msgstr "{{clientShortname}} — Söhbətə qoşul"

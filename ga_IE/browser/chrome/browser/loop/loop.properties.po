@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-21 15:18+0000\n"
+"POT-Creation-Date: 2015-10-29 12:22+0000\n"
 "PO-Revision-Date: 2015-09-23 20:56+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1443041765.000000\n"
@@ -31,14 +31,6 @@ msgstr "Firefox Hello"
 #: clientSuperShortname
 msgid "Hello"
 msgstr "Dia dhuit"
-
-#: rooms_tab_button
-msgid "Conversations"
-msgstr "Comhráite"
-
-#: contacts_tab_button
-msgid "Contacts"
-msgstr "Teagmhálacha"
 
 #. ## LOCALIZATION_NOTE(sign_in_again_title_line_one, sign_in_again_title_line_two2):
 #. ## These are displayed together at the top of the panel when a user is needed to
@@ -65,6 +57,14 @@ msgstr "Logáil Isteach"
 msgid "Use {{clientSuperShortname}} as a Guest"
 msgstr "Úsáid {{clientSuperShortname}} mar Aoi"
 
+#: panel_browse_with_friend_button
+msgid "Browse this page with a friend"
+msgstr ""
+
+#: panel_stop_sharing_tabs_button
+msgid "Stop sharing your tabs"
+msgstr ""
+
 #: first_time_experience_button_label
 msgid "Get Started"
 msgstr "Tús Maith"
@@ -76,68 +76,42 @@ msgctxt "first_time_experience_subheading"
 msgid "Join the conversation"
 msgstr "Téigh isteach sa chomhrá"
 
-#: invite_header_text
-msgid "Invite someone to join you."
-msgstr "Tabhair cuireadh do dhuine éigin."
-
 #: invite_header_text2
 msgid "Invite a friend to join you"
 msgstr "Tabhair cuireadh do chara"
 
-#: invite_facebook_button
-msgid "share on Facebook"
+#. ## LOCALIZATION_NOTE(invite_copy_link_button, invite_copied_link_button,
+#. ## invite_email_link_button, invite_facebook_button2): These labels appear under
+#. ## an iconic button for the invite view.
+#: invite_copy_link_button
+#, fuzzy
+msgctxt "invite_copy_link_button"
+msgid "Copy Link"
+msgstr "Cóipeáil an Nasc"
+
+#: invite_copied_link_button
+msgid "Copied!"
+msgstr "Cóipeáilte!"
+
+#: invite_email_link_button
+#, fuzzy
+msgctxt "invite_email_link_button"
+msgid "Email Link"
+msgstr "Seol an Nasc trí Ríomhphost"
+
+#: invite_facebook_button2
+#, fuzzy
+msgid "Share on Facebook"
 msgstr "comhroinn ar Facebook"
-
-#: invite_facebook_triggered
-msgctxt "invite_facebook_triggered"
-msgid "shared!"
-msgstr "comhroinnte!"
-
-#: invite_contacts_button
-msgid "share with contacts"
-msgstr "comhroinn le do lucht teagmhála"
-
-#: invite_contacts_triggered
-msgctxt "invite_contacts_triggered"
-msgid "shared!"
-msgstr "comhroinnte!"
-
-#: invite_copy_button
-msgid "copy link"
-msgstr "cóipeáil an nasc"
-
-#: invite_copy_triggered
-msgid "copied!"
-msgstr "cóipeáilte!"
-
-#: invite_email_button
-msgid "email link"
-msgstr "seol an nasc trí ríomhphost"
-
-#: invite_email_triggered
-msgid "emailed!"
-msgstr "seolta!"
 
 #. # Status text
 #: display_name_guest
 msgid "Guest"
 msgstr "Aoi"
 
-#: display_name_dnd_status
-msgid "Do Not Disturb"
-msgstr "Ná Cuir Isteach Orm"
-
-#: display_name_available_status
-msgid "Available"
-msgstr "Ar Fáil"
-
 #. # Error bars
-#. ## LOCALIZATION NOTE(unable_retrieve_url,session_expired_error_description,could_not_authenticate,password_changed_question,try_again_later,could_not_connect,check_internet_connection,login_expired,service_not_available,problem_accessing_account):
+#. ## LOCALIZATION NOTE(session_expired_error_description,could_not_authenticate,password_changed_question,try_again_later,could_not_connect,check_internet_connection,login_expired,service_not_available,problem_accessing_account):
 #. ## These may be displayed at the top of the panel.
-#: unable_retrieve_url
-msgid "Sorry, we were unable to retrieve a call URL."
-msgstr "Níorbh fhéidir linn URL an ghlao a fháil."
-
 #: session_expired_error_description
 msgid ""
 "Session expired. All URLs you have previously created and shared will no "
@@ -236,22 +210,27 @@ msgstr ""
 msgid "Join me for a video conversation on {{clientShortname2}}!"
 msgstr "Ba mhaith liom comhrá a dhéanamh leat ar {{clientShortname2}}!"
 
-#: share_button3
-msgid "Share Link"
-msgstr "Comhroinn an Nasc"
-
 #: share_add_service_button
 msgid "Add a Service"
 msgstr "Cuir Seirbhís Leis"
 
-#: copy_url_button2
-msgctxt "copy_url_button2"
+#. ## LOCALIZATION NOTE (copy_link_menuitem, email_link_menuitem, delete_conversation_menuitem):
+#. ## These menu items are displayed from a panel's context menu for a conversation.
+#: copy_link_menuitem
+#, fuzzy
+msgctxt "copy_link_menuitem"
 msgid "Copy Link"
 msgstr "Cóipeáil an Nasc"
 
-#: copied_url_button
-msgid "Copied!"
-msgstr "Cóipeáilte!"
+#: email_link_menuitem
+#, fuzzy
+msgctxt "email_link_menuitem"
+msgid "Email Link"
+msgstr "Seol an Nasc trí Ríomhphost"
+
+#: delete_conversation_menuitem
+msgid "Delete conversation"
+msgstr "Scrios an comhrá"
 
 #: panel_footer_signin_or_signup_link
 msgid "Sign In or Sign Up"
@@ -275,277 +254,22 @@ msgctxt "settings_menu_item_signin"
 msgid "Sign In"
 msgstr "Logáil Isteach"
 
+#: settings_menu_item_turnnotificationson
+msgid "Turn Notifications On"
+msgstr ""
+
+#: settings_menu_item_turnnotificationsoff
+msgid "Turn Notifications Off"
+msgstr ""
+
+#: settings_menu_item_feedback
+msgid "Submit Feedback"
+msgstr ""
+
 #: settings_menu_button_tooltip
 msgctxt "settings_menu_button_tooltip"
 msgid "Settings"
 msgstr "Socruithe"
-
-#. # Contact Strings (Panel)
-#. ## LOCALIZATION NOTE(contacts_search_placeholder): This is the placeholder text for
-#. ## the search field.
-#: contacts_search_placesholder2
-msgid "Search…"
-msgstr "Cuardaigh…"
-
-#. ## LOCALIZATION NOTE (new_contact_button2): This is the button to open the
-#. ## new contact sub-panel.
-#: new_contact_button2
-msgid "Add new contact"
-msgstr "Teagmhálaí nua"
-
-#. ## LOCALIZATION NOTE (contact_form_*_placeholder):
-#. ## These are the placeholders for the inputs for entering or editing a contact
-#. ## Click the 'New Contact' button to see the fields.
-#: contact_form_name_placeholder
-msgctxt "contact_form_name_placeholder"
-msgid "Name"
-msgstr "Ainm"
-
-#: contact_form_email_placeholder
-msgctxt "contact_form_email_placeholder"
-msgid "Email"
-msgstr "Seoladh ríomhphoist"
-
-#: contact_form_fxos_phone_placeholder
-msgid "Firefox OS Phone"
-msgstr "Guthán Firefox OS"
-
-#: contact_form_phone_placeholder2
-msgid "Phone"
-msgstr "Fón"
-
-#: contacts_blocked_contacts
-msgid "Blocked Contacts"
-msgstr "Teagmhálaithe Bactha"
-
-#. ## LOCALIZATION NOTE (add_contact_button):
-#. ## This is the button to actually add the new contact. Click the 'New Contact'
-#. ## button to see the fields.
-#: add_contact_button
-msgctxt "add_contact_button"
-msgid "Add Contact"
-msgstr "Sábháil an Teagmhálaí"
-
-#. ## LOCALIZATION NOTE(add_contact_title): This is the subtitle of the add contact
-#. ## panel. It is displayed when Add Contact is selected.
-#: add_contact_title
-msgctxt "add_contact_title"
-msgid "Add Contact"
-msgstr "Teagmhálaí Nua"
-
-#. ### LOCALIZATION NOTE (valid_email_text_description): This is displayed when
-#. ### the user enters an invalid email address, preventing the addition of the
-#. ### contact.
-#: valid_email_text_description
-msgid "Please enter a valid email address"
-msgstr "Tabhair seoladh ríomhphoist bailí"
-
-#. ## LOCALIZATION NOTE (add_or_import_contact_title): This is the subtitle of the
-#. ## panel.
-#: add_or_import_contact_title
-msgid "Add or Import Contact"
-msgstr "Cruthaigh nó Iompórtáil Teagmhálaí"
-
-#: import_contacts_button2
-msgid "Import from Google"
-msgstr "Iompórtáil ó Google"
-
-#. ## LOCALIZATION NOTE (import_contacts_button3): Text for button used to import
-#. ## contacts into the contact list.
-#: import_contacts_button3
-msgid "Import"
-msgstr "Iompórtáil"
-
-#: importing_contacts_progress_button
-msgid "Importing…"
-msgstr "Á nIompórtáil…"
-
-#: import_contacts_failure_message
-msgid "Some contacts could not be imported. Please try again."
-msgstr "Níorbh fhéidir roinnt teagmhálaithe a iompórtáil. Bain triail eile as."
-
-#. ## LOCALIZATION NOTE(import_contacts_success_message): Success notification message
-#. ## when user's contacts have been successfully imported.
-#. ## Semicolon-separated list of plural forms. See:
-#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. ## In this item, don't translate the part between {{..}}
-#: import_contacts_success_message
-msgid ""
-"{{total}} contact was successfully imported.;{{total}} contacts were "
-"successfully imported."
-msgstr ""
-"D'éirigh linn teagmhálaí amháin a iompórtáil;D'éirigh linn beirt "
-"teagmhálaithe a iompórtáil;D'éirigh linn {{total}} theagmhálaí a iompórtáil;"
-"D'éirigh linn {{total}} dteagmhálaí a iompórtáil;D'éirigh linn {{total}} "
-"teagmhálaí a iompórtáil"
-
-#. ## LOCALIZATION NOTE(sync_contacts_button): This button is displayed in place of
-#. ## importing_contacts_button once contacts have been imported once.
-#: sync_contacts_button
-msgid "Sync Contacts"
-msgstr "Sioncrónaigh Teagmhálaithe"
-
-#. ## LOCALIZATION NOTE(no_contacts_message_heading2): Title shown when user has no
-#. ## contacts in his address book
-#: no_contacts_message_heading2
-msgid "No contacts yet."
-msgstr "Gan teagmhálaithe."
-
-#. ## LOCALIZATION NOTE(no_contacts_import_or_add2): Subheading inviting the user
-#. ## to add people to his contact list
-#: no_contacts_import_or_add2
-msgid "Add someone!"
-msgstr "Cuir duine éigin leis!"
-
-#. ## LOCALIZATION NOTE(no_conversations_message_heading2): Title shown when user
-#. ## has no conversations available.
-#: no_conversations_message_heading2
-msgid "No conversations yet."
-msgstr "Níl aon chomhrá ann."
-
-#. ## LOCALIZATION NOTE(no_conversations_start_message2): Subheading inviting the
-#. ## user to start a new conversation.
-#: no_conversations_start_message2
-msgid "Start a new one!"
-msgstr "Tosaigh comhrá!"
-
-#. ## LOCALIZATION NOTE(contacts_no_search_results): Message shown when contacts
-#. ## search returned no matching results.
-#: contacts_no_search_results
-msgid "No matching results."
-msgstr "Gan torthaí."
-
-#. ## LOCALIZATION NOTE(import_failed_description simple): Displayed when an import of
-#. ## contacts fails. This is displayed in the error field.
-#: import_failed_description_simple
-msgid "Sorry, contact import failed"
-msgstr "Theip ar iompórtáil na dteagmhálaithe"
-
-#: import_failed_description_some
-msgid "Some contacts could not be imported"
-msgstr "Theip ar iompórtáil roinnt dteagmhálaithe"
-
-#: import_failed_support_button
-msgctxt "import_failed_support_button"
-msgid "Help"
-msgstr "Cabhair"
-
-#. ## LOCALIZATION NOTE(remove_contact_menu_button2): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name.
-#: remove_contact_menu_button2
-msgid "Remove Contact…"
-msgstr "Scrios Teagmhálaí…"
-
-#. ## LOCALIZATION NOTE(remove_contact_title): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name.
-#: remove_contact_menu_button3
-msgctxt "remove_contact_menu_button3"
-msgid "Remove Contact"
-msgstr "Scrios an Teagmhálaí"
-
-#. ## LOCALIZATION NOTE(confirm_delete_contact_alert): This is an alert that is displayed
-#. ## to confirm deletion of a contact.
-#: confirm_delete_contact_alert
-msgid "Are you sure you want to delete this contact?"
-msgstr "An bhfuil tú cinnte gur mhaith leat an teagmhálaí seo a scriosadh?"
-
-#. ## LOCALIZATION NOTE(confirm_delete_contact_remove_button, confirm_delete_contact_cancel_button):
-#. ## These are displayed on the alert with confirm_delete_contact_alert
-#: confirm_delete_contact_remove_button
-msgctxt "confirm_delete_contact_remove_button"
-msgid "Remove Contact"
-msgstr "Scrios an Teagmhálaí"
-
-#: confirm_delete_contact_cancel_button
-msgctxt "confirm_delete_contact_cancel_button"
-msgid "Cancel"
-msgstr "Cealaigh"
-
-#. ## LOCALIZATION NOTE(contact_list_title): This is in uppercase in English for
-#. ## emphasis, please do what is appropriate for specific locales.
-#: contact_list_title
-msgid "MY CONTACTS"
-msgstr "MO LUCHT TEAGMHÁLA"
-
-#. ## LOCALIZATION NOTE(block_contact_menu_button): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name, used to block a contact from calling
-#. ## the user.
-#: block_contact_menu_button
-msgid "Block Contact"
-msgstr "Cuir Bac ar an Teagmhálaí"
-
-#. ## LOCALIZATION NOTE(unblock_contact_menu_button): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name, used to unblock a contact and allow them
-#. ## to call the user.
-#: unblock_contact_menu_button
-msgid "Unblock Contact"
-msgstr "Bain Bac den Teagmhálaí"
-
-#. ## LOCALIZATION NOTE(edit_contact_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: edit_contact_menu_button
-msgid "Edit Contact…"
-msgstr "Cuir Teagmhálaí in Eagar…"
-
-#. ## LOCALIZATION NOTE(edit_contact_tile): This is the subtitle of the edit contact
-#. ## panel. It is displayed when Edit Contact is selected.
-#: edit_contact_title
-msgid "Edit Contact"
-msgstr "Cuir Teagmhálaí in Eagar"
-
-#. ## LOCALIZATION NOTE(edit_contact_name_label, edit_contact_email_label):
-#. ## These fields are display when the Edit Contact button is selected.
-#: edit_contact_name_label
-msgctxt "edit_contact_name_label"
-msgid "Name"
-msgstr "Ainm"
-
-#: edit_contact_email_label
-msgctxt "edit_contact_email_label"
-msgid "Email"
-msgstr "Seoladh ríomhphoist"
-
-#. ## LOCALIZATION NOTE(edit_contact_name_label, edit_contact_email_label):
-#. ## These button is displayed when the Edit Contact button is selected and is used
-#. ## to accept the change.
-#: edit_contact_done_button
-msgctxt "edit_contact_done_button"
-msgid "Done"
-msgstr "Déanta"
-
-#. ## LOCALIZATION NOTE(audio_call_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: audio_call_menu_button
-msgid "Audio Conversation"
-msgstr "Comhrá Fuaime"
-
-#. ## LOCALIZATION NOTE(video_call_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: video_call_menu_button
-msgid "Video Conversation"
-msgstr "Físchomhrá"
-
-#. ## LOCALIZATION NOTE(gravatars_promo_message): The {{learn_more}} part will be
-#. ## replaced with a link with the text content of gravatars_promo_message_learnmore.
-#: gravatars_promo_message
-msgid ""
-"You can automatically add profile icons to your contacts by sharing their "
-"email addresses with Gravatar. {{learn_more}}."
-msgstr ""
-"Is féidir leat deilbhíní próifíle a chur le do lucht teagmhála trína seoltaí "
-"ríomhphoist a chomhroinnt le Gravatar. {{learn_more}}."
-
-#: gravatars_promo_message_learnmore
-msgid "Learn more"
-msgstr "Tuilleadh eolais"
-
-#: gravatars_promo_button_nothanks2
-msgid "No, thanks"
-msgstr "Níl, grma"
-
-#: gravatars_promo_button_use2
-msgid "Use profile icons"
-msgstr "Úsáid deilbhíní próifíle"
 
 #. # Conversation Window Strings
 #: initiate_call_button_label2
@@ -555,27 +279,6 @@ msgstr "An bhfuil tú réidh comhrá a dhéanamh?"
 #: incoming_call_title2
 msgid "Conversation Request"
 msgstr "Iarratas ar Chomhrá"
-
-#: incoming_call_accept_button
-msgid "Accept"
-msgstr "Glac Leis"
-
-#: incoming_call_accept_audio_only_tooltip
-msgid "Accept with voice"
-msgstr "Glac le comhrá gutha"
-
-#: incoming_call_accept_audio_video_tooltip
-msgid "Accept with video"
-msgstr "Glac le fís-chomhrá"
-
-#: incoming_call_cancel_button
-msgctxt "incoming_call_cancel_button"
-msgid "Cancel"
-msgstr "Cealaigh"
-
-#: incoming_call_cancel_and_block_button
-msgid "Cancel and Block"
-msgstr "Cealaigh agus Cuir Cosc"
 
 #: incoming_call_block_button
 msgid "Block"
@@ -651,23 +354,6 @@ msgstr "Tosaigh físchomhrá"
 msgid "Voice conversation"
 msgstr "Comhrá gutha"
 
-#: initiate_call_cancel_button
-msgctxt "initiate_call_cancel_button"
-msgid "Cancel"
-msgstr "Cealaigh"
-
-#. ## LOCALIZATION NOTE (call_progress_connecting_description): This is displayed
-#. ## whilst the client is contacting the client at the other end of the connection.
-#: call_progress_connecting_description
-msgid "Connecting…"
-msgstr "Ag ceangal…"
-
-#. ## LOCALIZATION NOTE (call_progress_ringing_description): This is displayed
-#. ## when the other client is actually ringing.
-#: call_progress_ringing_description
-msgid "Ringing…"
-msgstr "Ag clingeadh…"
-
 #: peer_ended_conversation2
 msgid "The person you were calling has ended the conversation."
 msgstr "Chuir an duine ar chuir tú glaoch air deireadh leis an gcomhrá."
@@ -681,30 +367,19 @@ msgctxt "restart_call"
 msgid "Rejoin"
 msgstr "Atosaigh"
 
-#. ## LOCALIZATION NOTE (contact_unavailable_title): The title displayed
-#. ## when a contact is unavailable. Don't translate the part between {{..}}
-#. ## because this will be replaced by the contact's name.
-#: contact_unavailable_title
-msgid "{{contactName}} is unavailable."
-msgstr "Níl {{contactName}} ar fáil."
-
-#: generic_contact_unavailable_title
-msgid "This person is unavailable."
-msgstr "Níl an duine seo ar fáil."
-
 #: generic_failure_message
 msgid "We're having technical difficulties…"
 msgstr "Tá fadhbanna teicniúla againn faoi láthair…"
 
-#: generic_failure_with_reason2
-msgid "You can try again or email a link to be reached at later."
-msgstr ""
-"Bheifeá in ann iarracht eile a dhéanamh, nó nasc a sheoladh lenarbh fhéidir "
-"dul i dteagmháil leat ar ball."
-
 #: generic_failure_no_reason2
 msgid "Would you like to try again?"
 msgstr "An bhfuil fonn ort triail eile a bhaint as?"
+
+#. ## LOCALIZATION NOTE (tos_failure_message): Don't translate {{clientShortname2}}
+#. ## as this will be replaced by the shortname.
+#: tos_failure_message
+msgid "{{clientShortname}} is not available in your country."
+msgstr ""
 
 #. ## LOCALIZATION NOTE (contact_offline_title): Title which is displayed when the
 #. ## contact is offline.
@@ -718,16 +393,12 @@ msgstr "Níl an duine seo ar líne"
 msgid "Your call did not go through."
 msgstr "Theip ar do ghlao."
 
-#. ## LOCALIZATION NOTE (retry_call_button, cancel_button, email_link_button):
+#. ## LOCALIZATION NOTE (retry_call_button, cancel_button):
 #. ## These buttons are displayed when a call has failed.
 #: retry_call_button
 msgctxt "retry_call_button"
 msgid "Retry"
 msgstr "Atriail"
-
-#: email_link_button
-msgid "Email Link"
-msgstr "Seol an Nasc trí Ríomhphost"
 
 #: cancel_button
 msgctxt "cancel_button"
@@ -753,6 +424,10 @@ msgstr "Theip ar an nglaoch; féach ar an gconsól."
 #: no_media_failure_message
 msgid "No camera or microphone found."
 msgstr "Gan teacht ar cheamara nó micreafón."
+
+#: ice_failure_message
+msgid "Connection failed. Your firewall may be blocking calls."
+msgstr ""
 
 # urú built into {{privacy notice}}
 #. ## LOCALIZATION NOTE (legal_text_and_links3): In this item, don't translate the
@@ -809,7 +484,7 @@ msgid "Leave Feedback"
 msgstr "Tabhair Aiseolas Dúinn"
 
 #: help_label
-msgctxt "help_label"
+#, fuzzy
 msgid "Help"
 msgstr "Cabhair"
 
@@ -827,32 +502,21 @@ msgstr "Comhrá {{conversationLabel}}"
 msgid "Leave"
 msgstr "Fág"
 
-#: rooms_list_copy_url_tooltip
-msgctxt "rooms_list_copy_url_tooltip"
-msgid "Copy Link"
-msgstr "Cóipeáil an Nasc"
-
-#. ## LOCALIZATION NOTE (rooms_list_recent_conversations): String is in all caps
+#. ## LOCALIZATION NOTE (rooms_list_recently_browsed): String is in all caps
 #. ## for emphasis reasons, it is a heading. Proceed as appropriate for locale.
-#: rooms_list_recent_conversations
-msgid "RECENT CONVERSATIONS"
-msgstr "COMHRÁITE IS DÉANAÍ"
+#: rooms_list_recently_browsed
+msgid "RECENTLY BROWSED"
+msgstr ""
 
-#: rooms_list_delete_tooltip
-msgid "Delete conversation"
-msgstr "Scrios an comhrá"
-
-#: rooms_list_deleteConfirmation_label
-msgid "Are you sure?"
-msgstr "An bhfuil tú cinnte?"
+#. ## LOCALIZATION NOTE (rooms_list_currently_browsing): String is in all caps
+#. ## for emphasis reasons, it is a heading. Proceed as appropriate for locale.
+#: rooms_list_currently_browsing
+msgid "CURRENTLY BROWSING"
+msgstr ""
 
 #: rooms_change_failed_label
 msgid "Conversation cannot be updated"
 msgstr "Ní féidir an comhrá a nuashonrú"
-
-#: rooms_new_room_button_label
-msgid "Start a conversation"
-msgstr "Tosaigh comhrá"
 
 #: rooms_panel_title
 msgid "Choose a conversation or start a new one"
@@ -909,6 +573,18 @@ msgid "D"
 msgstr "D"
 
 #. # Context in conversation strings
+#. ## LOCALIZATION NOTE(no_conversations_message_heading2): Title shown when user
+#. ## has no conversations available.
+#: no_conversations_message_heading2
+msgid "No conversations yet."
+msgstr "Níl aon chomhrá ann."
+
+#. ## LOCALIZATION NOTE(no_conversations_start_message2): Subheading inviting the
+#. ## user to start a new conversation.
+#: no_conversations_start_message2
+msgid "Start a new one!"
+msgstr "Tosaigh comhrá!"
+
 #. # LOCALIZATION NOTE (context_inroom_header): this string is displayed in the
 #. # conversation window when the user edits context. It is a header to the edit
 #. # section.
@@ -925,13 +601,6 @@ msgstr "Pléimis…"
 msgid "Let's Talk About:"
 msgstr "Pléimis:"
 
-#. ## LOCALIZATION_NOTE (context_edit_activate_label): {{title}} will be replaced
-#. ## by the title of the active tab, also known as the title of an HTML document.
-#. ## The quotes around the title are intentional.
-#: context_edit_activate_label
-msgid "Talk about \"{{title}}\""
-msgstr "Pléigh \"{{title}}\""
-
 #: context_edit_name_placeholder
 msgid "Conversation Name"
 msgstr "Ainm an Chomhrá"
@@ -940,31 +609,15 @@ msgstr "Ainm an Chomhrá"
 msgid "Comments"
 msgstr "Nótaí"
 
-#: context_add_some_label
-msgid "Add some context"
-msgstr "Cuir comhthéacs leis"
-
-#: context_show_tooltip
-msgid "Show Context"
-msgstr "Taispeáin an Comhthéacs"
-
 #: context_cancel_label
 msgctxt "context_cancel_label"
 msgid "Cancel"
 msgstr "Cealaigh"
 
 #: context_done_label
-msgctxt "context_done_label"
+#, fuzzy
 msgid "Done"
 msgstr "Déanta"
-
-#: context_link_modified
-msgid "This link was modified."
-msgstr "Athraíodh an nasc seo."
-
-#: context_learn_more_link_label
-msgid "Learn more."
-msgstr "Tuilleadh eolais."
 
 #: conversation_settings_menu_edit_context
 msgid "Edit Context"
@@ -978,6 +631,259 @@ msgstr "Folaigh an Comhthéacs"
 #: chat_textbox_placeholder
 msgid "Type here…"
 msgstr "Clóscríobh anseo…"
+
+#~ msgid "Conversations"
+#~ msgstr "Comhráite"
+
+#~ msgid "Contacts"
+#~ msgstr "Teagmhálacha"
+
+#~ msgid "Invite someone to join you."
+#~ msgstr "Tabhair cuireadh do dhuine éigin."
+
+#~ msgctxt "invite_facebook_triggered"
+#~ msgid "shared!"
+#~ msgstr "comhroinnte!"
+
+#~ msgid "share with contacts"
+#~ msgstr "comhroinn le do lucht teagmhála"
+
+#~ msgctxt "invite_contacts_triggered"
+#~ msgid "shared!"
+#~ msgstr "comhroinnte!"
+
+#~ msgid "copy link"
+#~ msgstr "cóipeáil an nasc"
+
+#~ msgid "copied!"
+#~ msgstr "cóipeáilte!"
+
+#~ msgid "email link"
+#~ msgstr "seol an nasc trí ríomhphost"
+
+#~ msgid "emailed!"
+#~ msgstr "seolta!"
+
+#~ msgid "Do Not Disturb"
+#~ msgstr "Ná Cuir Isteach Orm"
+
+#~ msgid "Available"
+#~ msgstr "Ar Fáil"
+
+#~ msgid "Sorry, we were unable to retrieve a call URL."
+#~ msgstr "Níorbh fhéidir linn URL an ghlao a fháil."
+
+#~ msgid "Share Link"
+#~ msgstr "Comhroinn an Nasc"
+
+#~ msgid "Search…"
+#~ msgstr "Cuardaigh…"
+
+#~ msgid "Add new contact"
+#~ msgstr "Teagmhálaí nua"
+
+#~ msgctxt "contact_form_name_placeholder"
+#~ msgid "Name"
+#~ msgstr "Ainm"
+
+#~ msgctxt "contact_form_email_placeholder"
+#~ msgid "Email"
+#~ msgstr "Seoladh ríomhphoist"
+
+#~ msgid "Firefox OS Phone"
+#~ msgstr "Guthán Firefox OS"
+
+#~ msgid "Phone"
+#~ msgstr "Fón"
+
+#~ msgid "Blocked Contacts"
+#~ msgstr "Teagmhálaithe Bactha"
+
+#~ msgctxt "add_contact_button"
+#~ msgid "Add Contact"
+#~ msgstr "Sábháil an Teagmhálaí"
+
+#~ msgctxt "add_contact_title"
+#~ msgid "Add Contact"
+#~ msgstr "Teagmhálaí Nua"
+
+#~ msgid "Please enter a valid email address"
+#~ msgstr "Tabhair seoladh ríomhphoist bailí"
+
+#~ msgid "Add or Import Contact"
+#~ msgstr "Cruthaigh nó Iompórtáil Teagmhálaí"
+
+#~ msgid "Import from Google"
+#~ msgstr "Iompórtáil ó Google"
+
+#~ msgid "Import"
+#~ msgstr "Iompórtáil"
+
+#~ msgid "Importing…"
+#~ msgstr "Á nIompórtáil…"
+
+#~ msgid "Some contacts could not be imported. Please try again."
+#~ msgstr ""
+#~ "Níorbh fhéidir roinnt teagmhálaithe a iompórtáil. Bain triail eile as."
+
+#~ msgid ""
+#~ "{{total}} contact was successfully imported.;{{total}} contacts were "
+#~ "successfully imported."
+#~ msgstr ""
+#~ "D'éirigh linn teagmhálaí amháin a iompórtáil;D'éirigh linn beirt "
+#~ "teagmhálaithe a iompórtáil;D'éirigh linn {{total}} theagmhálaí a "
+#~ "iompórtáil;D'éirigh linn {{total}} dteagmhálaí a iompórtáil;D'éirigh linn "
+#~ "{{total}} teagmhálaí a iompórtáil"
+
+#~ msgid "Sync Contacts"
+#~ msgstr "Sioncrónaigh Teagmhálaithe"
+
+#~ msgid "No contacts yet."
+#~ msgstr "Gan teagmhálaithe."
+
+#~ msgid "Add someone!"
+#~ msgstr "Cuir duine éigin leis!"
+
+#~ msgid "No matching results."
+#~ msgstr "Gan torthaí."
+
+#~ msgid "Sorry, contact import failed"
+#~ msgstr "Theip ar iompórtáil na dteagmhálaithe"
+
+#~ msgid "Some contacts could not be imported"
+#~ msgstr "Theip ar iompórtáil roinnt dteagmhálaithe"
+
+#~ msgid "Remove Contact…"
+#~ msgstr "Scrios Teagmhálaí…"
+
+#~ msgctxt "remove_contact_menu_button3"
+#~ msgid "Remove Contact"
+#~ msgstr "Scrios an Teagmhálaí"
+
+#~ msgid "Are you sure you want to delete this contact?"
+#~ msgstr "An bhfuil tú cinnte gur mhaith leat an teagmhálaí seo a scriosadh?"
+
+#~ msgctxt "confirm_delete_contact_remove_button"
+#~ msgid "Remove Contact"
+#~ msgstr "Scrios an Teagmhálaí"
+
+#~ msgid "MY CONTACTS"
+#~ msgstr "MO LUCHT TEAGMHÁLA"
+
+#~ msgid "Block Contact"
+#~ msgstr "Cuir Bac ar an Teagmhálaí"
+
+#~ msgid "Unblock Contact"
+#~ msgstr "Bain Bac den Teagmhálaí"
+
+#~ msgid "Edit Contact…"
+#~ msgstr "Cuir Teagmhálaí in Eagar…"
+
+#~ msgid "Edit Contact"
+#~ msgstr "Cuir Teagmhálaí in Eagar"
+
+#~ msgctxt "edit_contact_name_label"
+#~ msgid "Name"
+#~ msgstr "Ainm"
+
+#~ msgctxt "edit_contact_email_label"
+#~ msgid "Email"
+#~ msgstr "Seoladh ríomhphoist"
+
+#~ msgid "Audio Conversation"
+#~ msgstr "Comhrá Fuaime"
+
+#~ msgid "Video Conversation"
+#~ msgstr "Físchomhrá"
+
+#~ msgid ""
+#~ "You can automatically add profile icons to your contacts by sharing their "
+#~ "email addresses with Gravatar. {{learn_more}}."
+#~ msgstr ""
+#~ "Is féidir leat deilbhíní próifíle a chur le do lucht teagmhála trína "
+#~ "seoltaí ríomhphoist a chomhroinnt le Gravatar. {{learn_more}}."
+
+#~ msgid "Learn more"
+#~ msgstr "Tuilleadh eolais"
+
+#~ msgid "No, thanks"
+#~ msgstr "Níl, grma"
+
+#~ msgid "Use profile icons"
+#~ msgstr "Úsáid deilbhíní próifíle"
+
+#~ msgid "Accept"
+#~ msgstr "Glac Leis"
+
+#~ msgid "Accept with voice"
+#~ msgstr "Glac le comhrá gutha"
+
+#~ msgid "Accept with video"
+#~ msgstr "Glac le fís-chomhrá"
+
+#~ msgctxt "incoming_call_cancel_button"
+#~ msgid "Cancel"
+#~ msgstr "Cealaigh"
+
+#~ msgid "Cancel and Block"
+#~ msgstr "Cealaigh agus Cuir Cosc"
+
+#~ msgctxt "initiate_call_cancel_button"
+#~ msgid "Cancel"
+#~ msgstr "Cealaigh"
+
+#~ msgid "Connecting…"
+#~ msgstr "Ag ceangal…"
+
+#~ msgid "Ringing…"
+#~ msgstr "Ag clingeadh…"
+
+#~ msgid "{{contactName}} is unavailable."
+#~ msgstr "Níl {{contactName}} ar fáil."
+
+#~ msgid "This person is unavailable."
+#~ msgstr "Níl an duine seo ar fáil."
+
+#~ msgid "You can try again or email a link to be reached at later."
+#~ msgstr ""
+#~ "Bheifeá in ann iarracht eile a dhéanamh, nó nasc a sheoladh lenarbh "
+#~ "fhéidir dul i dteagmháil leat ar ball."
+
+#~ msgctxt "help_label"
+#~ msgid "Help"
+#~ msgstr "Cabhair"
+
+#~ msgctxt "rooms_list_copy_url_tooltip"
+#~ msgid "Copy Link"
+#~ msgstr "Cóipeáil an Nasc"
+
+#~ msgid "RECENT CONVERSATIONS"
+#~ msgstr "COMHRÁITE IS DÉANAÍ"
+
+#~ msgid "Are you sure?"
+#~ msgstr "An bhfuil tú cinnte?"
+
+#~ msgid "Start a conversation"
+#~ msgstr "Tosaigh comhrá"
+
+#~ msgid "Talk about \"{{title}}\""
+#~ msgstr "Pléigh \"{{title}}\""
+
+#~ msgid "Add some context"
+#~ msgstr "Cuir comhthéacs leis"
+
+#~ msgid "Show Context"
+#~ msgstr "Taispeáin an Comhthéacs"
+
+#~ msgctxt "context_done_label"
+#~ msgid "Done"
+#~ msgstr "Déanta"
+
+#~ msgid "This link was modified."
+#~ msgstr "Athraíodh an nasc seo."
+
+#~ msgid "Learn more."
+#~ msgstr "Tuilleadh eolais."
 
 #~ msgid "{{clientShortname}} — Join the conversation"
 #~ msgstr "{{clientShortname}} — Glac páirt sa chomhrá"

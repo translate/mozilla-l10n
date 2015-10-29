@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-21 15:18+0000\n"
+"POT-Creation-Date: 2015-10-29 12:22+0000\n"
 "PO-Revision-Date: 2015-10-01 12:36+0000\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: none\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1443702995.000000\n"
@@ -30,14 +30,6 @@ msgstr "Firefox Hello"
 #: clientSuperShortname
 msgid "Hello"
 msgstr "Hello"
-
-#: rooms_tab_button
-msgid "Conversations"
-msgstr "Gesprekke"
-
-#: contacts_tab_button
-msgid "Contacts"
-msgstr "Kontakte"
 
 #. ## LOCALIZATION_NOTE(sign_in_again_title_line_one, sign_in_again_title_line_two2):
 #. ## These are displayed together at the top of the panel when a user is needed to
@@ -64,6 +56,14 @@ msgstr "Meld aan"
 msgid "Use {{clientSuperShortname}} as a Guest"
 msgstr "Gebruik {{clientSuperShortname}} as 'n gas"
 
+#: panel_browse_with_friend_button
+msgid "Browse this page with a friend"
+msgstr ""
+
+#: panel_stop_sharing_tabs_button
+msgid "Stop sharing your tabs"
+msgstr ""
+
 #: first_time_experience_button_label
 msgid "Get Started"
 msgstr "Begin"
@@ -75,68 +75,42 @@ msgctxt "first_time_experience_subheading"
 msgid "Join the conversation"
 msgstr "Sluit by die gesprek aan"
 
-#: invite_header_text
-msgid "Invite someone to join you."
-msgstr "Nooi iemand uit om aan te sluit."
-
 #: invite_header_text2
 msgid "Invite a friend to join you"
 msgstr "Nooi 'n vriend om saam te gesels"
 
-#: invite_facebook_button
-msgid "share on Facebook"
+#. ## LOCALIZATION_NOTE(invite_copy_link_button, invite_copied_link_button,
+#. ## invite_email_link_button, invite_facebook_button2): These labels appear under
+#. ## an iconic button for the invite view.
+#: invite_copy_link_button
+#, fuzzy
+msgctxt "invite_copy_link_button"
+msgid "Copy Link"
+msgstr "Kopieer skakel"
+
+#: invite_copied_link_button
+msgid "Copied!"
+msgstr "Gekopieer!"
+
+#: invite_email_link_button
+#, fuzzy
+msgctxt "invite_email_link_button"
+msgid "Email Link"
+msgstr "E-pos skakel"
+
+#: invite_facebook_button2
+#, fuzzy
+msgid "Share on Facebook"
 msgstr "deel op Facebook"
-
-#: invite_facebook_triggered
-msgctxt "invite_facebook_triggered"
-msgid "shared!"
-msgstr "gedeel!"
-
-#: invite_contacts_button
-msgid "share with contacts"
-msgstr "deel met kontakte"
-
-#: invite_contacts_triggered
-msgctxt "invite_contacts_triggered"
-msgid "shared!"
-msgstr "gedeel!"
-
-#: invite_copy_button
-msgid "copy link"
-msgstr "kopieer skakel"
-
-#: invite_copy_triggered
-msgid "copied!"
-msgstr "gekopieer!"
-
-#: invite_email_button
-msgid "email link"
-msgstr "e-pos skakel"
-
-#: invite_email_triggered
-msgid "emailed!"
-msgstr "gestuur!"
 
 #. # Status text
 #: display_name_guest
 msgid "Guest"
 msgstr "Gas"
 
-#: display_name_dnd_status
-msgid "Do Not Disturb"
-msgstr "Moenie steur nie"
-
-#: display_name_available_status
-msgid "Available"
-msgstr "Beskikbaar"
-
 #. # Error bars
-#. ## LOCALIZATION NOTE(unable_retrieve_url,session_expired_error_description,could_not_authenticate,password_changed_question,try_again_later,could_not_connect,check_internet_connection,login_expired,service_not_available,problem_accessing_account):
+#. ## LOCALIZATION NOTE(session_expired_error_description,could_not_authenticate,password_changed_question,try_again_later,could_not_connect,check_internet_connection,login_expired,service_not_available,problem_accessing_account):
 #. ## These may be displayed at the top of the panel.
-#: unable_retrieve_url
-msgid "Sorry, we were unable to retrieve a call URL."
-msgstr "Jammer! Ons kon nie 'n gesprek-URL kry nie."
-
 #: session_expired_error_description
 msgid ""
 "Session expired. All URLs you have previously created and shared will no "
@@ -235,22 +209,27 @@ msgstr ""
 msgid "Join me for a video conversation on {{clientShortname2}}!"
 msgstr "Kom ons hou 'n videogesprek met {{clientShortname2}}!"
 
-#: share_button3
-msgid "Share Link"
-msgstr "Deel skakel"
-
 #: share_add_service_button
 msgid "Add a Service"
 msgstr "Voeg diens by"
 
-#: copy_url_button2
-msgctxt "copy_url_button2"
+#. ## LOCALIZATION NOTE (copy_link_menuitem, email_link_menuitem, delete_conversation_menuitem):
+#. ## These menu items are displayed from a panel's context menu for a conversation.
+#: copy_link_menuitem
+#, fuzzy
+msgctxt "copy_link_menuitem"
 msgid "Copy Link"
 msgstr "Kopieer skakel"
 
-#: copied_url_button
-msgid "Copied!"
-msgstr "Gekopieer!"
+#: email_link_menuitem
+#, fuzzy
+msgctxt "email_link_menuitem"
+msgid "Email Link"
+msgstr "E-pos skakel"
+
+#: delete_conversation_menuitem
+msgid "Delete conversation"
+msgstr "Skrap gesprek"
 
 #: panel_footer_signin_or_signup_link
 msgid "Sign In or Sign Up"
@@ -274,277 +253,22 @@ msgctxt "settings_menu_item_signin"
 msgid "Sign In"
 msgstr "Meld aan"
 
+#: settings_menu_item_turnnotificationson
+msgid "Turn Notifications On"
+msgstr ""
+
+#: settings_menu_item_turnnotificationsoff
+msgid "Turn Notifications Off"
+msgstr ""
+
+#: settings_menu_item_feedback
+msgid "Submit Feedback"
+msgstr ""
+
 #: settings_menu_button_tooltip
 msgctxt "settings_menu_button_tooltip"
 msgid "Settings"
 msgstr "Instellings"
-
-#. # Contact Strings (Panel)
-#. ## LOCALIZATION NOTE(contacts_search_placeholder): This is the placeholder text for
-#. ## the search field.
-#: contacts_search_placesholder2
-msgid "Search…"
-msgstr "Soek…"
-
-#. ## LOCALIZATION NOTE (new_contact_button2): This is the button to open the
-#. ## new contact sub-panel.
-#: new_contact_button2
-msgid "Add new contact"
-msgstr "Voeg nuwe kontak by"
-
-#. ## LOCALIZATION NOTE (contact_form_*_placeholder):
-#. ## These are the placeholders for the inputs for entering or editing a contact
-#. ## Click the 'New Contact' button to see the fields.
-#: contact_form_name_placeholder
-msgctxt "contact_form_name_placeholder"
-msgid "Name"
-msgstr "Naam"
-
-#: contact_form_email_placeholder
-msgctxt "contact_form_email_placeholder"
-msgid "Email"
-msgstr "E-posadres"
-
-#: contact_form_fxos_phone_placeholder
-msgid "Firefox OS Phone"
-msgstr "Firefox OS-foon"
-
-#: contact_form_phone_placeholder2
-msgid "Phone"
-msgstr "Telefoon"
-
-#: contacts_blocked_contacts
-msgid "Blocked Contacts"
-msgstr "Geblokkeerde kontakte"
-
-#. ## LOCALIZATION NOTE (add_contact_button):
-#. ## This is the button to actually add the new contact. Click the 'New Contact'
-#. ## button to see the fields.
-#: add_contact_button
-msgctxt "add_contact_button"
-msgid "Add Contact"
-msgstr "Voeg kontak by"
-
-#. ## LOCALIZATION NOTE(add_contact_title): This is the subtitle of the add contact
-#. ## panel. It is displayed when Add Contact is selected.
-#: add_contact_title
-msgctxt "add_contact_title"
-msgid "Add Contact"
-msgstr "Voeg kontak by"
-
-#. ### LOCALIZATION NOTE (valid_email_text_description): This is displayed when
-#. ### the user enters an invalid email address, preventing the addition of the
-#. ### contact.
-#: valid_email_text_description
-msgid "Please enter a valid email address"
-msgstr "Tik 'n geldige e-posadres in"
-
-#. ## LOCALIZATION NOTE (add_or_import_contact_title): This is the subtitle of the
-#. ## panel.
-#: add_or_import_contact_title
-msgid "Add or Import Contact"
-msgstr "Kontakte: voeg by of voer in"
-
-#: import_contacts_button2
-msgid "Import from Google"
-msgstr "Voer vanaf Google in"
-
-#. ## LOCALIZATION NOTE (import_contacts_button3): Text for button used to import
-#. ## contacts into the contact list.
-#: import_contacts_button3
-msgid "Import"
-msgstr "Voer in"
-
-#: importing_contacts_progress_button
-msgid "Importing…"
-msgstr "Voer tans in…"
-
-#: import_contacts_failure_message
-msgid "Some contacts could not be imported. Please try again."
-msgstr "Sommige kontakte kon nie ingevoer word nie. Probeer gerus weer."
-
-#. ## LOCALIZATION NOTE(import_contacts_success_message): Success notification message
-#. ## when user's contacts have been successfully imported.
-#. ## Semicolon-separated list of plural forms. See:
-#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. ## In this item, don't translate the part between {{..}}
-#: import_contacts_success_message
-msgid ""
-"{{total}} contact was successfully imported.;{{total}} contacts were "
-"successfully imported."
-msgstr ""
-"{{total}} kontak is suksesvol ingevoer.;{{total}} kontakte is suksesvol "
-"ingevoer."
-
-#. ## LOCALIZATION NOTE(sync_contacts_button): This button is displayed in place of
-#. ## importing_contacts_button once contacts have been imported once.
-#: sync_contacts_button
-msgid "Sync Contacts"
-msgstr "Sinkroniseer kontakte"
-
-#. ## LOCALIZATION NOTE(no_contacts_message_heading2): Title shown when user has no
-#. ## contacts in his address book
-#: no_contacts_message_heading2
-msgid "No contacts yet."
-msgstr "Nog geen kontakte nie."
-
-#. ## LOCALIZATION NOTE(no_contacts_import_or_add2): Subheading inviting the user
-#. ## to add people to his contact list
-#: no_contacts_import_or_add2
-msgid "Add someone!"
-msgstr "Voeg gerus iemand by!"
-
-#. ## LOCALIZATION NOTE(no_conversations_message_heading2): Title shown when user
-#. ## has no conversations available.
-#: no_conversations_message_heading2
-msgid "No conversations yet."
-msgstr "Nog geen gesprekke nie."
-
-#. ## LOCALIZATION NOTE(no_conversations_start_message2): Subheading inviting the
-#. ## user to start a new conversation.
-#: no_conversations_start_message2
-msgid "Start a new one!"
-msgstr "Begin 'n nuwe een!"
-
-#. ## LOCALIZATION NOTE(contacts_no_search_results): Message shown when contacts
-#. ## search returned no matching results.
-#: contacts_no_search_results
-msgid "No matching results."
-msgstr ""
-
-#. ## LOCALIZATION NOTE(import_failed_description simple): Displayed when an import of
-#. ## contacts fails. This is displayed in the error field.
-#: import_failed_description_simple
-msgid "Sorry, contact import failed"
-msgstr "Jammer! Kon nie kontak invoer nie."
-
-#: import_failed_description_some
-msgid "Some contacts could not be imported"
-msgstr "Sommige kontakte kon nie ingevoer word nie"
-
-#: import_failed_support_button
-msgctxt "import_failed_support_button"
-msgid "Help"
-msgstr "Hulp"
-
-#. ## LOCALIZATION NOTE(remove_contact_menu_button2): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name.
-#: remove_contact_menu_button2
-msgid "Remove Contact…"
-msgstr "Verwyder kontak…"
-
-#. ## LOCALIZATION NOTE(remove_contact_title): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name.
-#: remove_contact_menu_button3
-msgctxt "remove_contact_menu_button3"
-msgid "Remove Contact"
-msgstr "Verwyder kontak"
-
-#. ## LOCALIZATION NOTE(confirm_delete_contact_alert): This is an alert that is displayed
-#. ## to confirm deletion of a contact.
-#: confirm_delete_contact_alert
-msgid "Are you sure you want to delete this contact?"
-msgstr "Wil u definitief dié kontak skrap?"
-
-#. ## LOCALIZATION NOTE(confirm_delete_contact_remove_button, confirm_delete_contact_cancel_button):
-#. ## These are displayed on the alert with confirm_delete_contact_alert
-#: confirm_delete_contact_remove_button
-#, fuzzy
-msgctxt "confirm_delete_contact_remove_button"
-msgid "Remove Contact"
-msgstr "Verwyder kontak"
-
-#: confirm_delete_contact_cancel_button
-msgctxt "confirm_delete_contact_cancel_button"
-msgid "Cancel"
-msgstr "Kanselleer"
-
-#. ## LOCALIZATION NOTE(contact_list_title): This is in uppercase in English for
-#. ## emphasis, please do what is appropriate for specific locales.
-#: contact_list_title
-msgid "MY CONTACTS"
-msgstr ""
-
-#. ## LOCALIZATION NOTE(block_contact_menu_button): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name, used to block a contact from calling
-#. ## the user.
-#: block_contact_menu_button
-msgid "Block Contact"
-msgstr "Blokkeer kontak"
-
-#. ## LOCALIZATION NOTE(unblock_contact_menu_button): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name, used to unblock a contact and allow them
-#. ## to call the user.
-#: unblock_contact_menu_button
-#, fuzzy
-msgid "Unblock Contact"
-msgstr "Blokkeer kontak"
-
-#. ## LOCALIZATION NOTE(edit_contact_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: edit_contact_menu_button
-msgid "Edit Contact…"
-msgstr "Redigeer kontak…"
-
-#. ## LOCALIZATION NOTE(edit_contact_tile): This is the subtitle of the edit contact
-#. ## panel. It is displayed when Edit Contact is selected.
-#: edit_contact_title
-msgid "Edit Contact"
-msgstr "Redigeer kontak"
-
-#. ## LOCALIZATION NOTE(edit_contact_name_label, edit_contact_email_label):
-#. ## These fields are display when the Edit Contact button is selected.
-#: edit_contact_name_label
-msgctxt "edit_contact_name_label"
-msgid "Name"
-msgstr "Naam"
-
-#: edit_contact_email_label
-msgctxt "edit_contact_email_label"
-msgid "Email"
-msgstr "E-pos"
-
-#. ## LOCALIZATION NOTE(edit_contact_name_label, edit_contact_email_label):
-#. ## These button is displayed when the Edit Contact button is selected and is used
-#. ## to accept the change.
-#: edit_contact_done_button
-msgctxt "edit_contact_done_button"
-msgid "Done"
-msgstr "Klaar"
-
-#. ## LOCALIZATION NOTE(audio_call_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: audio_call_menu_button
-msgid "Audio Conversation"
-msgstr "Oudio-gesprek"
-
-#. ## LOCALIZATION NOTE(video_call_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: video_call_menu_button
-msgid "Video Conversation"
-msgstr "Video-gesprek"
-
-#. ## LOCALIZATION NOTE(gravatars_promo_message): The {{learn_more}} part will be
-#. ## replaced with a link with the text content of gravatars_promo_message_learnmore.
-#: gravatars_promo_message
-msgid ""
-"You can automatically add profile icons to your contacts by sharing their "
-"email addresses with Gravatar. {{learn_more}}."
-msgstr ""
-"Kry outomaties profielprentjies vir kontakte deur hul e-posadresse te deel "
-"met Gravatar. {{learn_more}}."
-
-#: gravatars_promo_message_learnmore
-msgid "Learn more"
-msgstr "Meer inligting"
-
-#: gravatars_promo_button_nothanks2
-msgid "No, thanks"
-msgstr "Nee dankie"
-
-#: gravatars_promo_button_use2
-msgid "Use profile icons"
-msgstr "Gebruik profielprentjies"
 
 #. # Conversation Window Strings
 #: initiate_call_button_label2
@@ -554,27 +278,6 @@ msgstr "Gereed om die gesprek te begin?"
 #: incoming_call_title2
 msgid "Conversation Request"
 msgstr "Gesprekversoek"
-
-#: incoming_call_accept_button
-msgid "Accept"
-msgstr "Aanvaar"
-
-#: incoming_call_accept_audio_only_tooltip
-msgid "Accept with voice"
-msgstr "Aanvaar met stem"
-
-#: incoming_call_accept_audio_video_tooltip
-msgid "Accept with video"
-msgstr "Aanvaar met video"
-
-#: incoming_call_cancel_button
-msgctxt "incoming_call_cancel_button"
-msgid "Cancel"
-msgstr "Kanselleer"
-
-#: incoming_call_cancel_and_block_button
-msgid "Cancel and Block"
-msgstr "Kanselleer en blok"
 
 #: incoming_call_block_button
 msgid "Block"
@@ -650,23 +353,6 @@ msgstr "Begin 'n videogesprek"
 msgid "Voice conversation"
 msgstr "Stemgesprek"
 
-#: initiate_call_cancel_button
-msgctxt "initiate_call_cancel_button"
-msgid "Cancel"
-msgstr "Kanselleer"
-
-#. ## LOCALIZATION NOTE (call_progress_connecting_description): This is displayed
-#. ## whilst the client is contacting the client at the other end of the connection.
-#: call_progress_connecting_description
-msgid "Connecting…"
-msgstr "Verbind tans…"
-
-#. ## LOCALIZATION NOTE (call_progress_ringing_description): This is displayed
-#. ## when the other client is actually ringing.
-#: call_progress_ringing_description
-msgid "Ringing…"
-msgstr "Dit lui…"
-
 #: peer_ended_conversation2
 msgid "The person you were calling has ended the conversation."
 msgstr "Die persoon wat gebel is, het die gesprek beëindig."
@@ -680,28 +366,19 @@ msgctxt "restart_call"
 msgid "Rejoin"
 msgstr "Sluit weer aan"
 
-#. ## LOCALIZATION NOTE (contact_unavailable_title): The title displayed
-#. ## when a contact is unavailable. Don't translate the part between {{..}}
-#. ## because this will be replaced by the contact's name.
-#: contact_unavailable_title
-msgid "{{contactName}} is unavailable."
-msgstr "{{contactName}} is nie beskikbaar nie."
-
-#: generic_contact_unavailable_title
-msgid "This person is unavailable."
-msgstr "Dié persoon is nie beskikbaar nie."
-
 #: generic_failure_message
 msgid "We're having technical difficulties…"
 msgstr "Ons ervaar tegniese probleme…"
 
-#: generic_failure_with_reason2
-msgid "You can try again or email a link to be reached at later."
-msgstr "Probeer weer of e-pos 'n skakel waarmee u later bereik kan word."
-
 #: generic_failure_no_reason2
 msgid "Would you like to try again?"
 msgstr "Wil u weer probeer?"
+
+#. ## LOCALIZATION NOTE (tos_failure_message): Don't translate {{clientShortname2}}
+#. ## as this will be replaced by the shortname.
+#: tos_failure_message
+msgid "{{clientShortname}} is not available in your country."
+msgstr ""
 
 #. ## LOCALIZATION NOTE (contact_offline_title): Title which is displayed when the
 #. ## contact is offline.
@@ -715,16 +392,12 @@ msgstr "Dié persoon is nie aanlyn nie"
 msgid "Your call did not go through."
 msgstr "Die oproep het nie deurgegaan nie."
 
-#. ## LOCALIZATION NOTE (retry_call_button, cancel_button, email_link_button):
+#. ## LOCALIZATION NOTE (retry_call_button, cancel_button):
 #. ## These buttons are displayed when a call has failed.
 #: retry_call_button
 msgctxt "retry_call_button"
 msgid "Retry"
 msgstr "Probeer weer"
-
-#: email_link_button
-msgid "Email Link"
-msgstr "E-pos skakel"
 
 #: cancel_button
 msgctxt "cancel_button"
@@ -750,6 +423,10 @@ msgstr "Oproep het misluk; sien die konsole vir detail."
 #: no_media_failure_message
 msgid "No camera or microphone found."
 msgstr "Geen kamera of mikrofoon gevind nie."
+
+#: ice_failure_message
+msgid "Connection failed. Your firewall may be blocking calls."
+msgstr ""
 
 #. ## LOCALIZATION NOTE (legal_text_and_links3): In this item, don't translate the
 #. ## parts between {{..}} because these will be replaced with links with the labels
@@ -805,7 +482,7 @@ msgid "Leave Feedback"
 msgstr "Gee terugvoer"
 
 #: help_label
-msgctxt "help_label"
+#, fuzzy
 msgid "Help"
 msgstr "Hulp"
 
@@ -823,32 +500,21 @@ msgstr "Gesprek {{conversationLabel}}"
 msgid "Leave"
 msgstr "Verlaat"
 
-#: rooms_list_copy_url_tooltip
-msgctxt "rooms_list_copy_url_tooltip"
-msgid "Copy Link"
-msgstr "Kopieer skakel"
-
-#. ## LOCALIZATION NOTE (rooms_list_recent_conversations): String is in all caps
+#. ## LOCALIZATION NOTE (rooms_list_recently_browsed): String is in all caps
 #. ## for emphasis reasons, it is a heading. Proceed as appropriate for locale.
-#: rooms_list_recent_conversations
-msgid "RECENT CONVERSATIONS"
+#: rooms_list_recently_browsed
+msgid "RECENTLY BROWSED"
 msgstr ""
 
-#: rooms_list_delete_tooltip
-msgid "Delete conversation"
-msgstr "Skrap gesprek"
-
-#: rooms_list_deleteConfirmation_label
-msgid "Are you sure?"
-msgstr "Is u seker?"
+#. ## LOCALIZATION NOTE (rooms_list_currently_browsing): String is in all caps
+#. ## for emphasis reasons, it is a heading. Proceed as appropriate for locale.
+#: rooms_list_currently_browsing
+msgid "CURRENTLY BROWSING"
+msgstr ""
 
 #: rooms_change_failed_label
 msgid "Conversation cannot be updated"
 msgstr "Gesprek kan nie bygewerk word nie"
-
-#: rooms_new_room_button_label
-msgid "Start a conversation"
-msgstr "Begin 'n gesprek"
 
 #: rooms_panel_title
 msgid "Choose a conversation or start a new one"
@@ -906,6 +572,18 @@ msgid "D"
 msgstr "M"
 
 #. # Context in conversation strings
+#. ## LOCALIZATION NOTE(no_conversations_message_heading2): Title shown when user
+#. ## has no conversations available.
+#: no_conversations_message_heading2
+msgid "No conversations yet."
+msgstr "Nog geen gesprekke nie."
+
+#. ## LOCALIZATION NOTE(no_conversations_start_message2): Subheading inviting the
+#. ## user to start a new conversation.
+#: no_conversations_start_message2
+msgid "Start a new one!"
+msgstr "Begin 'n nuwe een!"
+
 #. # LOCALIZATION NOTE (context_inroom_header): this string is displayed in the
 #. # conversation window when the user edits context. It is a header to the edit
 #. # section.
@@ -922,13 +600,6 @@ msgstr "Kom ons gesels oor…"
 msgid "Let's Talk About:"
 msgstr "Kom ons gesels oor:"
 
-#. ## LOCALIZATION_NOTE (context_edit_activate_label): {{title}} will be replaced
-#. ## by the title of the active tab, also known as the title of an HTML document.
-#. ## The quotes around the title are intentional.
-#: context_edit_activate_label
-msgid "Talk about \"{{title}}\""
-msgstr "Gesels oor \"{{title}}\""
-
 #: context_edit_name_placeholder
 msgid "Conversation Name"
 msgstr "Gespreknaam"
@@ -937,31 +608,15 @@ msgstr "Gespreknaam"
 msgid "Comments"
 msgstr "Opmerkings"
 
-#: context_add_some_label
-msgid "Add some context"
-msgstr "Gee bietjie konteks"
-
-#: context_show_tooltip
-msgid "Show Context"
-msgstr "Wys konteks"
-
 #: context_cancel_label
 msgctxt "context_cancel_label"
 msgid "Cancel"
 msgstr "Kanselleer"
 
 #: context_done_label
-msgctxt "context_done_label"
+#, fuzzy
 msgid "Done"
 msgstr "Klaar"
-
-#: context_link_modified
-msgid "This link was modified."
-msgstr "Die skakel is gewysig."
-
-#: context_learn_more_link_label
-msgid "Learn more."
-msgstr "Meer inligting."
 
 #: conversation_settings_menu_edit_context
 msgid "Edit Context"
@@ -975,6 +630,247 @@ msgstr "Versteek konteks"
 #: chat_textbox_placeholder
 msgid "Type here…"
 msgstr "Tik hier…"
+
+#~ msgid "Conversations"
+#~ msgstr "Gesprekke"
+
+#~ msgid "Contacts"
+#~ msgstr "Kontakte"
+
+#~ msgid "Invite someone to join you."
+#~ msgstr "Nooi iemand uit om aan te sluit."
+
+#~ msgctxt "invite_facebook_triggered"
+#~ msgid "shared!"
+#~ msgstr "gedeel!"
+
+#~ msgid "share with contacts"
+#~ msgstr "deel met kontakte"
+
+#~ msgctxt "invite_contacts_triggered"
+#~ msgid "shared!"
+#~ msgstr "gedeel!"
+
+#~ msgid "copy link"
+#~ msgstr "kopieer skakel"
+
+#~ msgid "copied!"
+#~ msgstr "gekopieer!"
+
+#~ msgid "email link"
+#~ msgstr "e-pos skakel"
+
+#~ msgid "emailed!"
+#~ msgstr "gestuur!"
+
+#~ msgid "Do Not Disturb"
+#~ msgstr "Moenie steur nie"
+
+#~ msgid "Available"
+#~ msgstr "Beskikbaar"
+
+#~ msgid "Sorry, we were unable to retrieve a call URL."
+#~ msgstr "Jammer! Ons kon nie 'n gesprek-URL kry nie."
+
+#~ msgid "Share Link"
+#~ msgstr "Deel skakel"
+
+#~ msgid "Search…"
+#~ msgstr "Soek…"
+
+#~ msgid "Add new contact"
+#~ msgstr "Voeg nuwe kontak by"
+
+#~ msgctxt "contact_form_name_placeholder"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgctxt "contact_form_email_placeholder"
+#~ msgid "Email"
+#~ msgstr "E-posadres"
+
+#~ msgid "Firefox OS Phone"
+#~ msgstr "Firefox OS-foon"
+
+#~ msgid "Phone"
+#~ msgstr "Telefoon"
+
+#~ msgid "Blocked Contacts"
+#~ msgstr "Geblokkeerde kontakte"
+
+#~ msgctxt "add_contact_button"
+#~ msgid "Add Contact"
+#~ msgstr "Voeg kontak by"
+
+#~ msgctxt "add_contact_title"
+#~ msgid "Add Contact"
+#~ msgstr "Voeg kontak by"
+
+#~ msgid "Please enter a valid email address"
+#~ msgstr "Tik 'n geldige e-posadres in"
+
+#~ msgid "Add or Import Contact"
+#~ msgstr "Kontakte: voeg by of voer in"
+
+#~ msgid "Import from Google"
+#~ msgstr "Voer vanaf Google in"
+
+#~ msgid "Import"
+#~ msgstr "Voer in"
+
+#~ msgid "Importing…"
+#~ msgstr "Voer tans in…"
+
+#~ msgid "Some contacts could not be imported. Please try again."
+#~ msgstr "Sommige kontakte kon nie ingevoer word nie. Probeer gerus weer."
+
+#~ msgid ""
+#~ "{{total}} contact was successfully imported.;{{total}} contacts were "
+#~ "successfully imported."
+#~ msgstr ""
+#~ "{{total}} kontak is suksesvol ingevoer.;{{total}} kontakte is suksesvol "
+#~ "ingevoer."
+
+#~ msgid "Sync Contacts"
+#~ msgstr "Sinkroniseer kontakte"
+
+#~ msgid "No contacts yet."
+#~ msgstr "Nog geen kontakte nie."
+
+#~ msgid "Add someone!"
+#~ msgstr "Voeg gerus iemand by!"
+
+#~ msgid "Sorry, contact import failed"
+#~ msgstr "Jammer! Kon nie kontak invoer nie."
+
+#~ msgid "Some contacts could not be imported"
+#~ msgstr "Sommige kontakte kon nie ingevoer word nie"
+
+#~ msgid "Remove Contact…"
+#~ msgstr "Verwyder kontak…"
+
+#~ msgctxt "remove_contact_menu_button3"
+#~ msgid "Remove Contact"
+#~ msgstr "Verwyder kontak"
+
+#~ msgid "Are you sure you want to delete this contact?"
+#~ msgstr "Wil u definitief dié kontak skrap?"
+
+#, fuzzy
+#~ msgctxt "confirm_delete_contact_remove_button"
+#~ msgid "Remove Contact"
+#~ msgstr "Verwyder kontak"
+
+#~ msgid "Block Contact"
+#~ msgstr "Blokkeer kontak"
+
+#, fuzzy
+#~ msgid "Unblock Contact"
+#~ msgstr "Blokkeer kontak"
+
+#~ msgid "Edit Contact…"
+#~ msgstr "Redigeer kontak…"
+
+#~ msgid "Edit Contact"
+#~ msgstr "Redigeer kontak"
+
+#~ msgctxt "edit_contact_name_label"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgctxt "edit_contact_email_label"
+#~ msgid "Email"
+#~ msgstr "E-pos"
+
+#~ msgid "Audio Conversation"
+#~ msgstr "Oudio-gesprek"
+
+#~ msgid "Video Conversation"
+#~ msgstr "Video-gesprek"
+
+#~ msgid ""
+#~ "You can automatically add profile icons to your contacts by sharing their "
+#~ "email addresses with Gravatar. {{learn_more}}."
+#~ msgstr ""
+#~ "Kry outomaties profielprentjies vir kontakte deur hul e-posadresse te "
+#~ "deel met Gravatar. {{learn_more}}."
+
+#~ msgid "Learn more"
+#~ msgstr "Meer inligting"
+
+#~ msgid "No, thanks"
+#~ msgstr "Nee dankie"
+
+#~ msgid "Use profile icons"
+#~ msgstr "Gebruik profielprentjies"
+
+#~ msgid "Accept"
+#~ msgstr "Aanvaar"
+
+#~ msgid "Accept with voice"
+#~ msgstr "Aanvaar met stem"
+
+#~ msgid "Accept with video"
+#~ msgstr "Aanvaar met video"
+
+#~ msgctxt "incoming_call_cancel_button"
+#~ msgid "Cancel"
+#~ msgstr "Kanselleer"
+
+#~ msgid "Cancel and Block"
+#~ msgstr "Kanselleer en blok"
+
+#~ msgctxt "initiate_call_cancel_button"
+#~ msgid "Cancel"
+#~ msgstr "Kanselleer"
+
+#~ msgid "Connecting…"
+#~ msgstr "Verbind tans…"
+
+#~ msgid "Ringing…"
+#~ msgstr "Dit lui…"
+
+#~ msgid "{{contactName}} is unavailable."
+#~ msgstr "{{contactName}} is nie beskikbaar nie."
+
+#~ msgid "This person is unavailable."
+#~ msgstr "Dié persoon is nie beskikbaar nie."
+
+#~ msgid "You can try again or email a link to be reached at later."
+#~ msgstr "Probeer weer of e-pos 'n skakel waarmee u later bereik kan word."
+
+#~ msgctxt "help_label"
+#~ msgid "Help"
+#~ msgstr "Hulp"
+
+#~ msgctxt "rooms_list_copy_url_tooltip"
+#~ msgid "Copy Link"
+#~ msgstr "Kopieer skakel"
+
+#~ msgid "Are you sure?"
+#~ msgstr "Is u seker?"
+
+#~ msgid "Start a conversation"
+#~ msgstr "Begin 'n gesprek"
+
+#~ msgid "Talk about \"{{title}}\""
+#~ msgstr "Gesels oor \"{{title}}\""
+
+#~ msgid "Add some context"
+#~ msgstr "Gee bietjie konteks"
+
+#~ msgid "Show Context"
+#~ msgstr "Wys konteks"
+
+#~ msgctxt "context_done_label"
+#~ msgid "Done"
+#~ msgstr "Klaar"
+
+#~ msgid "This link was modified."
+#~ msgstr "Die skakel is gewysig."
+
+#~ msgid "Learn more."
+#~ msgstr "Meer inligting."
 
 #~ msgid "{{clientShortname}} — Join the conversation"
 #~ msgstr "{{clientShortname}} — Deel in die gesprek"

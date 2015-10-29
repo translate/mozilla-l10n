@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-21 15:18+0000\n"
+"POT-Creation-Date: 2015-10-29 12:22+0000\n"
 "PO-Revision-Date: 2015-10-12 17:20+0000\n"
 "Last-Translator: Raj Nilayam <raj.nilayam@gmail.com>\n"
 "Language-Team: none\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1444670448.000000\n"
@@ -29,14 +29,6 @@ msgstr "फ़ायरफ़ॉक्स हेलो"
 #: clientSuperShortname
 msgid "Hello"
 msgstr "नमस्कार"
-
-#: rooms_tab_button
-msgid "Conversations"
-msgstr "बातचीत"
-
-#: contacts_tab_button
-msgid "Contacts"
-msgstr "संपर्क"
 
 #. ## LOCALIZATION_NOTE(sign_in_again_title_line_one, sign_in_again_title_line_two2):
 #. ## These are displayed together at the top of the panel when a user is needed to
@@ -63,6 +55,14 @@ msgstr "साइन इन"
 msgid "Use {{clientSuperShortname}} as a Guest"
 msgstr "{{clientSuperShortname}} अतिथि जैसा उपयोग करें"
 
+#: panel_browse_with_friend_button
+msgid "Browse this page with a friend"
+msgstr ""
+
+#: panel_stop_sharing_tabs_button
+msgid "Stop sharing your tabs"
+msgstr ""
+
 #: first_time_experience_button_label
 msgid "Get Started"
 msgstr "प्रारंभ करें"
@@ -75,49 +75,31 @@ msgctxt "first_time_experience_subheading"
 msgid "Join the conversation"
 msgstr "बातचीत में शामिल हों"
 
-#: invite_header_text
-msgid "Invite someone to join you."
-msgstr "बात करने के लिए किसी को आमंत्रित करें."
-
 #: invite_header_text2
 msgid "Invite a friend to join you"
 msgstr ""
 
-#: invite_facebook_button
-msgid "share on Facebook"
-msgstr ""
-
-#: invite_facebook_triggered
-msgctxt "invite_facebook_triggered"
-msgid "shared!"
-msgstr ""
-
-#: invite_contacts_button
-msgid "share with contacts"
-msgstr ""
-
-#: invite_contacts_triggered
-msgctxt "invite_contacts_triggered"
-msgid "shared!"
-msgstr ""
-
-#: invite_copy_button
+#. ## LOCALIZATION_NOTE(invite_copy_link_button, invite_copied_link_button,
+#. ## invite_email_link_button, invite_facebook_button2): These labels appear under
+#. ## an iconic button for the invite view.
+#: invite_copy_link_button
 #, fuzzy
-msgid "copy link"
+msgctxt "invite_copy_link_button"
+msgid "Copy Link"
 msgstr "लिंक कॉपी करें"
 
-#: invite_copy_triggered
-#, fuzzy
-msgid "copied!"
+#: invite_copied_link_button
+msgid "Copied!"
 msgstr "नक़ल किया हुआ!"
 
-#: invite_email_button
+#: invite_email_link_button
 #, fuzzy
-msgid "email link"
+msgctxt "invite_email_link_button"
+msgid "Email Link"
 msgstr "ईमेल लिंक"
 
-#: invite_email_triggered
-msgid "emailed!"
+#: invite_facebook_button2
+msgid "Share on Facebook"
 msgstr ""
 
 #. # Status text
@@ -125,21 +107,9 @@ msgstr ""
 msgid "Guest"
 msgstr "अतिथि"
 
-#: display_name_dnd_status
-msgid "Do Not Disturb"
-msgstr "परेशान नहीं करें"
-
-#: display_name_available_status
-msgid "Available"
-msgstr "उपलब्ध"
-
 #. # Error bars
-#. ## LOCALIZATION NOTE(unable_retrieve_url,session_expired_error_description,could_not_authenticate,password_changed_question,try_again_later,could_not_connect,check_internet_connection,login_expired,service_not_available,problem_accessing_account):
+#. ## LOCALIZATION NOTE(session_expired_error_description,could_not_authenticate,password_changed_question,try_again_later,could_not_connect,check_internet_connection,login_expired,service_not_available,problem_accessing_account):
 #. ## These may be displayed at the top of the panel.
-#: unable_retrieve_url
-msgid "Sorry, we were unable to retrieve a call URL."
-msgstr "माफ करें, हम कॉल यूआएल पाने में असमर्थ हैं."
-
 #: session_expired_error_description
 msgid ""
 "Session expired. All URLs you have previously created and shared will no "
@@ -236,22 +206,27 @@ msgstr ""
 msgid "Join me for a video conversation on {{clientShortname2}}!"
 msgstr "{{clientShortname2}} पर वीडियो वार्तालाप के लिए मुझसे जुड़ें!"
 
-#: share_button3
-msgid "Share Link"
-msgstr "लिंक साझा करें"
-
 #: share_add_service_button
 msgid "Add a Service"
 msgstr "एक सेवा जोड़ें"
 
-#: copy_url_button2
-msgctxt "copy_url_button2"
+#. ## LOCALIZATION NOTE (copy_link_menuitem, email_link_menuitem, delete_conversation_menuitem):
+#. ## These menu items are displayed from a panel's context menu for a conversation.
+#: copy_link_menuitem
+#, fuzzy
+msgctxt "copy_link_menuitem"
 msgid "Copy Link"
 msgstr "लिंक कॉपी करें"
 
-#: copied_url_button
-msgid "Copied!"
-msgstr "नक़ल किया हुआ!"
+#: email_link_menuitem
+#, fuzzy
+msgctxt "email_link_menuitem"
+msgid "Email Link"
+msgstr "ईमेल लिंक"
+
+#: delete_conversation_menuitem
+msgid "Delete conversation"
+msgstr "वार्तालाप मिटाएँ"
 
 #: panel_footer_signin_or_signup_link
 msgid "Sign In or Sign Up"
@@ -275,282 +250,22 @@ msgctxt "settings_menu_item_signin"
 msgid "Sign In"
 msgstr "साइन इन"
 
+#: settings_menu_item_turnnotificationson
+msgid "Turn Notifications On"
+msgstr ""
+
+#: settings_menu_item_turnnotificationsoff
+msgid "Turn Notifications Off"
+msgstr ""
+
+#: settings_menu_item_feedback
+msgid "Submit Feedback"
+msgstr ""
+
 #: settings_menu_button_tooltip
 msgctxt "settings_menu_button_tooltip"
 msgid "Settings"
 msgstr "सेटिंग"
-
-#. # Contact Strings (Panel)
-#. ## LOCALIZATION NOTE(contacts_search_placeholder): This is the placeholder text for
-#. ## the search field.
-#: contacts_search_placesholder2
-msgid "Search…"
-msgstr "खोजें…"
-
-#. ## LOCALIZATION NOTE (new_contact_button2): This is the button to open the
-#. ## new contact sub-panel.
-#: new_contact_button2
-msgid "Add new contact"
-msgstr ""
-
-#. ## LOCALIZATION NOTE (contact_form_*_placeholder):
-#. ## These are the placeholders for the inputs for entering or editing a contact
-#. ## Click the 'New Contact' button to see the fields.
-#: contact_form_name_placeholder
-#, fuzzy
-msgctxt "contact_form_name_placeholder"
-msgid "Name"
-msgstr "नाम"
-
-#: contact_form_email_placeholder
-#, fuzzy
-msgctxt "contact_form_email_placeholder"
-msgid "Email"
-msgstr "ईमेल"
-
-#: contact_form_fxos_phone_placeholder
-msgid "Firefox OS Phone"
-msgstr "Firefox OS फोन"
-
-#: contact_form_phone_placeholder2
-msgid "Phone"
-msgstr "फोन"
-
-#: contacts_blocked_contacts
-msgid "Blocked Contacts"
-msgstr "अवरोधित संपर्क"
-
-#. ## LOCALIZATION NOTE (add_contact_button):
-#. ## This is the button to actually add the new contact. Click the 'New Contact'
-#. ## button to see the fields.
-#: add_contact_button
-#, fuzzy
-msgctxt "add_contact_button"
-msgid "Add Contact"
-msgstr "संपर्क जोड़ें"
-
-#. ## LOCALIZATION NOTE(add_contact_title): This is the subtitle of the add contact
-#. ## panel. It is displayed when Add Contact is selected.
-#: add_contact_title
-#, fuzzy
-msgctxt "add_contact_title"
-msgid "Add Contact"
-msgstr "संपर्क जोड़ें"
-
-#. ### LOCALIZATION NOTE (valid_email_text_description): This is displayed when
-#. ### the user enters an invalid email address, preventing the addition of the
-#. ### contact.
-#: valid_email_text_description
-msgid "Please enter a valid email address"
-msgstr "कृपया एक वैध ई-डाक पता डालें"
-
-#. ## LOCALIZATION NOTE (add_or_import_contact_title): This is the subtitle of the
-#. ## panel.
-#: add_or_import_contact_title
-msgid "Add or Import Contact"
-msgstr "संपर्क जोड़ें या आयात करें"
-
-#: import_contacts_button2
-msgid "Import from Google"
-msgstr "गूगल से आयात करें"
-
-#. ## LOCALIZATION NOTE (import_contacts_button3): Text for button used to import
-#. ## contacts into the contact list.
-#: import_contacts_button3
-msgid "Import"
-msgstr "आयात करें"
-
-#: importing_contacts_progress_button
-msgid "Importing…"
-msgstr "आयात कर रहा है..."
-
-#: import_contacts_failure_message
-msgid "Some contacts could not be imported. Please try again."
-msgstr "कुछ संपर्क नहीं आयात किए जा सके. कृपया फिर कोशिश करें."
-
-#. ## LOCALIZATION NOTE(import_contacts_success_message): Success notification message
-#. ## when user's contacts have been successfully imported.
-#. ## Semicolon-separated list of plural forms. See:
-#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. ## In this item, don't translate the part between {{..}}
-#: import_contacts_success_message
-msgid ""
-"{{total}} contact was successfully imported.;{{total}} contacts were "
-"successfully imported."
-msgstr ""
-"{{total}} को सफलतापूर्वक आयातित किए गए.;{{total}} संपर्क को सफलतापूर्वक आयात किया "
-"गया."
-
-#. ## LOCALIZATION NOTE(sync_contacts_button): This button is displayed in place of
-#. ## importing_contacts_button once contacts have been imported once.
-#: sync_contacts_button
-msgid "Sync Contacts"
-msgstr "संपर्क सिंक करें"
-
-#. ## LOCALIZATION NOTE(no_contacts_message_heading2): Title shown when user has no
-#. ## contacts in his address book
-#: no_contacts_message_heading2
-#, fuzzy
-msgid "No contacts yet."
-msgstr "अभी तक कोई संपर्क नहीं"
-
-#. ## LOCALIZATION NOTE(no_contacts_import_or_add2): Subheading inviting the user
-#. ## to add people to his contact list
-#: no_contacts_import_or_add2
-msgid "Add someone!"
-msgstr ""
-
-#. ## LOCALIZATION NOTE(no_conversations_message_heading2): Title shown when user
-#. ## has no conversations available.
-#: no_conversations_message_heading2
-msgid "No conversations yet."
-msgstr ""
-
-#. ## LOCALIZATION NOTE(no_conversations_start_message2): Subheading inviting the
-#. ## user to start a new conversation.
-#: no_conversations_start_message2
-msgid "Start a new one!"
-msgstr ""
-
-#. ## LOCALIZATION NOTE(contacts_no_search_results): Message shown when contacts
-#. ## search returned no matching results.
-#: contacts_no_search_results
-msgid "No matching results."
-msgstr ""
-
-#. ## LOCALIZATION NOTE(import_failed_description simple): Displayed when an import of
-#. ## contacts fails. This is displayed in the error field.
-#: import_failed_description_simple
-msgid "Sorry, contact import failed"
-msgstr "माफ करें, संपर्क आयात विफल"
-
-#: import_failed_description_some
-msgid "Some contacts could not be imported"
-msgstr "कुछ संपर्क नहीं आयात किए जा सके. "
-
-#: import_failed_support_button
-msgctxt "import_failed_support_button"
-msgid "Help"
-msgstr "मदद"
-
-#. ## LOCALIZATION NOTE(remove_contact_menu_button2): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name.
-#: remove_contact_menu_button2
-msgid "Remove Contact…"
-msgstr "संपर्क निकालें…"
-
-#. ## LOCALIZATION NOTE(remove_contact_title): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name.
-#: remove_contact_menu_button3
-msgctxt "remove_contact_menu_button3"
-msgid "Remove Contact"
-msgstr "संपर्क मिटाएँ"
-
-#. ## LOCALIZATION NOTE(confirm_delete_contact_alert): This is an alert that is displayed
-#. ## to confirm deletion of a contact.
-#: confirm_delete_contact_alert
-msgid "Are you sure you want to delete this contact?"
-msgstr "क्या आप निश्चित हैं कि आप इन संपर्कों को मिटाना चाहते हैं?"
-
-#. ## LOCALIZATION NOTE(confirm_delete_contact_remove_button, confirm_delete_contact_cancel_button):
-#. ## These are displayed on the alert with confirm_delete_contact_alert
-#: confirm_delete_contact_remove_button
-msgctxt "confirm_delete_contact_remove_button"
-msgid "Remove Contact"
-msgstr "संपर्क मिटाएँ"
-
-#: confirm_delete_contact_cancel_button
-msgctxt "confirm_delete_contact_cancel_button"
-msgid "Cancel"
-msgstr "रद्द करें"
-
-#. ## LOCALIZATION NOTE(contact_list_title): This is in uppercase in English for
-#. ## emphasis, please do what is appropriate for specific locales.
-#: contact_list_title
-msgid "MY CONTACTS"
-msgstr "मेरे संपर्क"
-
-#. ## LOCALIZATION NOTE(block_contact_menu_button): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name, used to block a contact from calling
-#. ## the user.
-#: block_contact_menu_button
-msgid "Block Contact"
-msgstr "सम्पर्क रोकें"
-
-#. ## LOCALIZATION NOTE(unblock_contact_menu_button): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name, used to unblock a contact and allow them
-#. ## to call the user.
-#: unblock_contact_menu_button
-msgid "Unblock Contact"
-msgstr "सम्पर्क का रोक हटाएँ"
-
-#. ## LOCALIZATION NOTE(edit_contact_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: edit_contact_menu_button
-msgid "Edit Contact…"
-msgstr "संपर्क संपादित करें…"
-
-#. ## LOCALIZATION NOTE(edit_contact_tile): This is the subtitle of the edit contact
-#. ## panel. It is displayed when Edit Contact is selected.
-#: edit_contact_title
-msgid "Edit Contact"
-msgstr "संपर्क संपादित करें"
-
-#. ## LOCALIZATION NOTE(edit_contact_name_label, edit_contact_email_label):
-#. ## These fields are display when the Edit Contact button is selected.
-#: edit_contact_name_label
-msgctxt "edit_contact_name_label"
-msgid "Name"
-msgstr "नाम"
-
-#: edit_contact_email_label
-msgctxt "edit_contact_email_label"
-msgid "Email"
-msgstr "ईमेल"
-
-#. ## LOCALIZATION NOTE(edit_contact_name_label, edit_contact_email_label):
-#. ## These button is displayed when the Edit Contact button is selected and is used
-#. ## to accept the change.
-#: edit_contact_done_button
-#, fuzzy
-msgctxt "edit_contact_done_button"
-msgid "Done"
-msgstr "संपन्न"
-
-#. ## LOCALIZATION NOTE(audio_call_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: audio_call_menu_button
-msgid "Audio Conversation"
-msgstr "ध्वनि वार्तालाप"
-
-#. ## LOCALIZATION NOTE(video_call_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: video_call_menu_button
-msgid "Video Conversation"
-msgstr "वीडियो वार्तालाप"
-
-#. ## LOCALIZATION NOTE(gravatars_promo_message): The {{learn_more}} part will be
-#. ## replaced with a link with the text content of gravatars_promo_message_learnmore.
-#: gravatars_promo_message
-msgid ""
-"You can automatically add profile icons to your contacts by sharing their "
-"email addresses with Gravatar. {{learn_more}}."
-msgstr ""
-"आप खुद प्रोफाइल चिह्न को जोड़ सकते हैं उनके ईमेल पता से ग्रेवाटार के साथ. {{learn_more}}."
-
-#: gravatars_promo_message_learnmore
-msgid "Learn more"
-msgstr "अधिक जानें"
-
-#: gravatars_promo_button_nothanks2
-#, fuzzy
-msgid "No, thanks"
-msgstr "नहीं धन्यवाद"
-
-#: gravatars_promo_button_use2
-#, fuzzy
-msgid "Use profile icons"
-msgstr "प्रोफाइल चिह्न का प्रयोग करें"
 
 #. # Conversation Window Strings
 #: initiate_call_button_label2
@@ -560,27 +275,6 @@ msgstr "बातचीत के लिए तैयार हैं?"
 #: incoming_call_title2
 msgid "Conversation Request"
 msgstr "वार्तालाप निवेदन"
-
-#: incoming_call_accept_button
-msgid "Accept"
-msgstr "स्वीकारें"
-
-#: incoming_call_accept_audio_only_tooltip
-msgid "Accept with voice"
-msgstr "आवाज के साथ स्वीकारें"
-
-#: incoming_call_accept_audio_video_tooltip
-msgid "Accept with video"
-msgstr "वीडियो स्वीकारें"
-
-#: incoming_call_cancel_button
-msgctxt "incoming_call_cancel_button"
-msgid "Cancel"
-msgstr "रद्द करें"
-
-#: incoming_call_cancel_and_block_button
-msgid "Cancel and Block"
-msgstr "रद्द करें और बंद करें"
 
 #: incoming_call_block_button
 msgid "Block"
@@ -654,23 +348,6 @@ msgstr "वीडियो संवाद शुरू करें"
 msgid "Voice conversation"
 msgstr "आवाज संवाद"
 
-#: initiate_call_cancel_button
-msgctxt "initiate_call_cancel_button"
-msgid "Cancel"
-msgstr "रद्द करें"
-
-#. ## LOCALIZATION NOTE (call_progress_connecting_description): This is displayed
-#. ## whilst the client is contacting the client at the other end of the connection.
-#: call_progress_connecting_description
-msgid "Connecting…"
-msgstr "कनेक्ट कर रहा है…"
-
-#. ## LOCALIZATION NOTE (call_progress_ringing_description): This is displayed
-#. ## when the other client is actually ringing.
-#: call_progress_ringing_description
-msgid "Ringing…"
-msgstr "रिंगिंग..."
-
 #: peer_ended_conversation2
 msgid "The person you were calling has ended the conversation."
 msgstr "जिसे व्यक्ति को आपने कॉल किया है वह वार्तालाप बंद कर दिया है."
@@ -684,28 +361,19 @@ msgctxt "restart_call"
 msgid "Rejoin"
 msgstr "फिर जुड़ें"
 
-#. ## LOCALIZATION NOTE (contact_unavailable_title): The title displayed
-#. ## when a contact is unavailable. Don't translate the part between {{..}}
-#. ## because this will be replaced by the contact's name.
-#: contact_unavailable_title
-msgid "{{contactName}} is unavailable."
-msgstr "{{contactName}} अनुपलब्ध है."
-
-#: generic_contact_unavailable_title
-msgid "This person is unavailable."
-msgstr "व्यक्ति है अनुपलब्ध."
-
 #: generic_failure_message
 msgid "We're having technical difficulties…"
 msgstr ""
 
-#: generic_failure_with_reason2
-msgid "You can try again or email a link to be reached at later."
-msgstr "आप फिर कोशिश कर सकते हैं या बाद में पहुँचने के लिए कड़ी ईमेल कर सकते हैं."
-
 #: generic_failure_no_reason2
 msgid "Would you like to try again?"
 msgstr "क्या आप इसे फिर से कोशिश करना चाहते हैं?"
+
+#. ## LOCALIZATION NOTE (tos_failure_message): Don't translate {{clientShortname2}}
+#. ## as this will be replaced by the shortname.
+#: tos_failure_message
+msgid "{{clientShortname}} is not available in your country."
+msgstr ""
 
 #. ## LOCALIZATION NOTE (contact_offline_title): Title which is displayed when the
 #. ## contact is offline.
@@ -719,16 +387,12 @@ msgstr "यह व्यक्ति ऑनलाइन नहीं है"
 msgid "Your call did not go through."
 msgstr "आपका कॉल नहीं गया."
 
-#. ## LOCALIZATION NOTE (retry_call_button, cancel_button, email_link_button):
+#. ## LOCALIZATION NOTE (retry_call_button, cancel_button):
 #. ## These buttons are displayed when a call has failed.
 #: retry_call_button
 msgctxt "retry_call_button"
 msgid "Retry"
 msgstr "फिर कोशिश करें"
-
-#: email_link_button
-msgid "Email Link"
-msgstr "ईमेल लिंक"
 
 #: cancel_button
 msgctxt "cancel_button"
@@ -754,6 +418,10 @@ msgstr "कॉल विफल; विवरण के लिए कंसोल
 #: no_media_failure_message
 msgid "No camera or microphone found."
 msgstr "कोई कैमरा या माइक्रोफोन नही पाया गया."
+
+#: ice_failure_message
+msgid "Connection failed. Your firewall may be blocking calls."
+msgstr ""
 
 #. ## LOCALIZATION NOTE (legal_text_and_links3): In this item, don't translate the
 #. ## parts between {{..}} because these will be replaced with links with the labels
@@ -809,7 +477,7 @@ msgid "Leave Feedback"
 msgstr "प्रतिक्रिया दें"
 
 #: help_label
-msgctxt "help_label"
+#, fuzzy
 msgid "Help"
 msgstr "मदद"
 
@@ -827,32 +495,21 @@ msgstr "बातचीत {{conversationLabel}}"
 msgid "Leave"
 msgstr "छोड़ें"
 
-#: rooms_list_copy_url_tooltip
-msgctxt "rooms_list_copy_url_tooltip"
-msgid "Copy Link"
-msgstr "कड़ी की नक़ल लें"
-
-#. ## LOCALIZATION NOTE (rooms_list_recent_conversations): String is in all caps
+#. ## LOCALIZATION NOTE (rooms_list_recently_browsed): String is in all caps
 #. ## for emphasis reasons, it is a heading. Proceed as appropriate for locale.
-#: rooms_list_recent_conversations
-msgid "RECENT CONVERSATIONS"
+#: rooms_list_recently_browsed
+msgid "RECENTLY BROWSED"
 msgstr ""
 
-#: rooms_list_delete_tooltip
-msgid "Delete conversation"
-msgstr "वार्तालाप मिटाएँ"
-
-#: rooms_list_deleteConfirmation_label
-msgid "Are you sure?"
-msgstr "क्या आप निश्चित हैं?"
+#. ## LOCALIZATION NOTE (rooms_list_currently_browsing): String is in all caps
+#. ## for emphasis reasons, it is a heading. Proceed as appropriate for locale.
+#: rooms_list_currently_browsing
+msgid "CURRENTLY BROWSING"
+msgstr ""
 
 #: rooms_change_failed_label
 msgid "Conversation cannot be updated"
 msgstr "बातचीत को अद्यतन नहीं किया जा सकता है"
-
-#: rooms_new_room_button_label
-msgid "Start a conversation"
-msgstr "संवाद शुरू करें"
 
 #: rooms_panel_title
 msgid "Choose a conversation or start a new one"
@@ -908,6 +565,18 @@ msgid "D"
 msgstr "D"
 
 #. # Context in conversation strings
+#. ## LOCALIZATION NOTE(no_conversations_message_heading2): Title shown when user
+#. ## has no conversations available.
+#: no_conversations_message_heading2
+msgid "No conversations yet."
+msgstr ""
+
+#. ## LOCALIZATION NOTE(no_conversations_start_message2): Subheading inviting the
+#. ## user to start a new conversation.
+#: no_conversations_start_message2
+msgid "Start a new one!"
+msgstr ""
+
 #. # LOCALIZATION NOTE (context_inroom_header): this string is displayed in the
 #. # conversation window when the user edits context. It is a header to the edit
 #. # section.
@@ -926,13 +595,6 @@ msgstr "के बारे में बात करें:"
 msgid "Let's Talk About:"
 msgstr "के बारे में बात करें:"
 
-#. ## LOCALIZATION_NOTE (context_edit_activate_label): {{title}} will be replaced
-#. ## by the title of the active tab, also known as the title of an HTML document.
-#. ## The quotes around the title are intentional.
-#: context_edit_activate_label
-msgid "Talk about \"{{title}}\""
-msgstr "\"{{title}}\" के बारे में बात करें"
-
 #: context_edit_name_placeholder
 msgid "Conversation Name"
 msgstr "वार्तालाप का नाम"
@@ -940,14 +602,6 @@ msgstr "वार्तालाप का नाम"
 #: context_edit_comments_placeholder
 msgid "Comments"
 msgstr "टिप्पणियाँ"
-
-#: context_add_some_label
-msgid "Add some context"
-msgstr "कुछ संदर्भ जोड़ें"
-
-#: context_show_tooltip
-msgid "Show Context"
-msgstr "संदर्भ दिखाएँ"
 
 #: context_cancel_label
 #, fuzzy
@@ -957,17 +611,8 @@ msgstr "रद्द करें"
 
 #: context_done_label
 #, fuzzy
-msgctxt "context_done_label"
 msgid "Done"
 msgstr "संपन्न"
-
-#: context_link_modified
-msgid "This link was modified."
-msgstr "यह लिंक संशोधित किया गया था."
-
-#: context_learn_more_link_label
-msgid "Learn more."
-msgstr "अधिक जानें."
 
 #: conversation_settings_menu_edit_context
 msgid "Edit Context"
@@ -981,6 +626,239 @@ msgstr "संदर्भ छुपाएँ"
 #: chat_textbox_placeholder
 msgid "Type here…"
 msgstr "यहाँ टाइप करें…"
+
+#~ msgid "Conversations"
+#~ msgstr "बातचीत"
+
+#~ msgid "Contacts"
+#~ msgstr "संपर्क"
+
+#~ msgid "Invite someone to join you."
+#~ msgstr "बात करने के लिए किसी को आमंत्रित करें."
+
+#, fuzzy
+#~ msgid "copy link"
+#~ msgstr "लिंक कॉपी करें"
+
+#, fuzzy
+#~ msgid "copied!"
+#~ msgstr "नक़ल किया हुआ!"
+
+#, fuzzy
+#~ msgid "email link"
+#~ msgstr "ईमेल लिंक"
+
+#~ msgid "Do Not Disturb"
+#~ msgstr "परेशान नहीं करें"
+
+#~ msgid "Available"
+#~ msgstr "उपलब्ध"
+
+#~ msgid "Sorry, we were unable to retrieve a call URL."
+#~ msgstr "माफ करें, हम कॉल यूआएल पाने में असमर्थ हैं."
+
+#~ msgid "Share Link"
+#~ msgstr "लिंक साझा करें"
+
+#~ msgid "Search…"
+#~ msgstr "खोजें…"
+
+#, fuzzy
+#~ msgctxt "contact_form_name_placeholder"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#, fuzzy
+#~ msgctxt "contact_form_email_placeholder"
+#~ msgid "Email"
+#~ msgstr "ईमेल"
+
+#~ msgid "Firefox OS Phone"
+#~ msgstr "Firefox OS फोन"
+
+#~ msgid "Phone"
+#~ msgstr "फोन"
+
+#~ msgid "Blocked Contacts"
+#~ msgstr "अवरोधित संपर्क"
+
+#, fuzzy
+#~ msgctxt "add_contact_button"
+#~ msgid "Add Contact"
+#~ msgstr "संपर्क जोड़ें"
+
+#, fuzzy
+#~ msgctxt "add_contact_title"
+#~ msgid "Add Contact"
+#~ msgstr "संपर्क जोड़ें"
+
+#~ msgid "Please enter a valid email address"
+#~ msgstr "कृपया एक वैध ई-डाक पता डालें"
+
+#~ msgid "Add or Import Contact"
+#~ msgstr "संपर्क जोड़ें या आयात करें"
+
+#~ msgid "Import from Google"
+#~ msgstr "गूगल से आयात करें"
+
+#~ msgid "Import"
+#~ msgstr "आयात करें"
+
+#~ msgid "Importing…"
+#~ msgstr "आयात कर रहा है..."
+
+#~ msgid "Some contacts could not be imported. Please try again."
+#~ msgstr "कुछ संपर्क नहीं आयात किए जा सके. कृपया फिर कोशिश करें."
+
+#~ msgid ""
+#~ "{{total}} contact was successfully imported.;{{total}} contacts were "
+#~ "successfully imported."
+#~ msgstr ""
+#~ "{{total}} को सफलतापूर्वक आयातित किए गए.;{{total}} संपर्क को सफलतापूर्वक आयात "
+#~ "किया गया."
+
+#~ msgid "Sync Contacts"
+#~ msgstr "संपर्क सिंक करें"
+
+#, fuzzy
+#~ msgid "No contacts yet."
+#~ msgstr "अभी तक कोई संपर्क नहीं"
+
+#~ msgid "Sorry, contact import failed"
+#~ msgstr "माफ करें, संपर्क आयात विफल"
+
+#~ msgid "Some contacts could not be imported"
+#~ msgstr "कुछ संपर्क नहीं आयात किए जा सके. "
+
+#~ msgid "Remove Contact…"
+#~ msgstr "संपर्क निकालें…"
+
+#~ msgctxt "remove_contact_menu_button3"
+#~ msgid "Remove Contact"
+#~ msgstr "संपर्क मिटाएँ"
+
+#~ msgid "Are you sure you want to delete this contact?"
+#~ msgstr "क्या आप निश्चित हैं कि आप इन संपर्कों को मिटाना चाहते हैं?"
+
+#~ msgctxt "confirm_delete_contact_remove_button"
+#~ msgid "Remove Contact"
+#~ msgstr "संपर्क मिटाएँ"
+
+#~ msgid "MY CONTACTS"
+#~ msgstr "मेरे संपर्क"
+
+#~ msgid "Block Contact"
+#~ msgstr "सम्पर्क रोकें"
+
+#~ msgid "Unblock Contact"
+#~ msgstr "सम्पर्क का रोक हटाएँ"
+
+#~ msgid "Edit Contact…"
+#~ msgstr "संपर्क संपादित करें…"
+
+#~ msgid "Edit Contact"
+#~ msgstr "संपर्क संपादित करें"
+
+#~ msgctxt "edit_contact_name_label"
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#~ msgctxt "edit_contact_email_label"
+#~ msgid "Email"
+#~ msgstr "ईमेल"
+
+#~ msgid "Audio Conversation"
+#~ msgstr "ध्वनि वार्तालाप"
+
+#~ msgid "Video Conversation"
+#~ msgstr "वीडियो वार्तालाप"
+
+#~ msgid ""
+#~ "You can automatically add profile icons to your contacts by sharing their "
+#~ "email addresses with Gravatar. {{learn_more}}."
+#~ msgstr ""
+#~ "आप खुद प्रोफाइल चिह्न को जोड़ सकते हैं उनके ईमेल पता से ग्रेवाटार के साथ. "
+#~ "{{learn_more}}."
+
+#~ msgid "Learn more"
+#~ msgstr "अधिक जानें"
+
+#, fuzzy
+#~ msgid "No, thanks"
+#~ msgstr "नहीं धन्यवाद"
+
+#, fuzzy
+#~ msgid "Use profile icons"
+#~ msgstr "प्रोफाइल चिह्न का प्रयोग करें"
+
+#~ msgid "Accept"
+#~ msgstr "स्वीकारें"
+
+#~ msgid "Accept with voice"
+#~ msgstr "आवाज के साथ स्वीकारें"
+
+#~ msgid "Accept with video"
+#~ msgstr "वीडियो स्वीकारें"
+
+#~ msgctxt "incoming_call_cancel_button"
+#~ msgid "Cancel"
+#~ msgstr "रद्द करें"
+
+#~ msgid "Cancel and Block"
+#~ msgstr "रद्द करें और बंद करें"
+
+#~ msgctxt "initiate_call_cancel_button"
+#~ msgid "Cancel"
+#~ msgstr "रद्द करें"
+
+#~ msgid "Connecting…"
+#~ msgstr "कनेक्ट कर रहा है…"
+
+#~ msgid "Ringing…"
+#~ msgstr "रिंगिंग..."
+
+#~ msgid "{{contactName}} is unavailable."
+#~ msgstr "{{contactName}} अनुपलब्ध है."
+
+#~ msgid "This person is unavailable."
+#~ msgstr "व्यक्ति है अनुपलब्ध."
+
+#~ msgid "You can try again or email a link to be reached at later."
+#~ msgstr "आप फिर कोशिश कर सकते हैं या बाद में पहुँचने के लिए कड़ी ईमेल कर सकते हैं."
+
+#~ msgctxt "help_label"
+#~ msgid "Help"
+#~ msgstr "मदद"
+
+#~ msgctxt "rooms_list_copy_url_tooltip"
+#~ msgid "Copy Link"
+#~ msgstr "कड़ी की नक़ल लें"
+
+#~ msgid "Are you sure?"
+#~ msgstr "क्या आप निश्चित हैं?"
+
+#~ msgid "Start a conversation"
+#~ msgstr "संवाद शुरू करें"
+
+#~ msgid "Talk about \"{{title}}\""
+#~ msgstr "\"{{title}}\" के बारे में बात करें"
+
+#~ msgid "Add some context"
+#~ msgstr "कुछ संदर्भ जोड़ें"
+
+#~ msgid "Show Context"
+#~ msgstr "संदर्भ दिखाएँ"
+
+#, fuzzy
+#~ msgctxt "context_done_label"
+#~ msgid "Done"
+#~ msgstr "संपन्न"
+
+#~ msgid "This link was modified."
+#~ msgstr "यह लिंक संशोधित किया गया था."
+
+#~ msgid "Learn more."
+#~ msgstr "अधिक जानें."
 
 #~ msgid "{{clientShortname}} — Join the conversation"
 #~ msgstr "{{clientShortname}} — संवाद में शामिल हों"
