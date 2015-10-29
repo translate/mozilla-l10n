@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-21 15:18+0000\n"
+"POT-Creation-Date: 2015-10-29 12:22+0000\n"
 "PO-Revision-Date: 2015-09-25 11:10+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: none\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1443179449.000000\n"
@@ -31,14 +31,6 @@ msgstr "Firefox Hello"
 #: clientSuperShortname
 msgid "Hello"
 msgstr "Halo"
-
-#: rooms_tab_button
-msgid "Conversations"
-msgstr "Rozgrona"
-
-#: contacts_tab_button
-msgid "Contacts"
-msgstr "Kontakty"
 
 #. ## LOCALIZATION_NOTE(sign_in_again_title_line_one, sign_in_again_title_line_two2):
 #. ## These are displayed together at the top of the panel when a user is needed to
@@ -65,6 +57,14 @@ msgstr "Pśizjawiś"
 msgid "Use {{clientSuperShortname}} as a Guest"
 msgstr "{{clientSuperShortname}} ako gósć wužywaś"
 
+#: panel_browse_with_friend_button
+msgid "Browse this page with a friend"
+msgstr ""
+
+#: panel_stop_sharing_tabs_button
+msgid "Stop sharing your tabs"
+msgstr ""
+
 #: first_time_experience_button_label
 msgid "Get Started"
 msgstr "Prědne kšace"
@@ -76,68 +76,42 @@ msgctxt "first_time_experience_subheading"
 msgid "Join the conversation"
 msgstr "Rozgronoju se pśizamknuś"
 
-#: invite_header_text
-msgid "Invite someone to join you."
-msgstr "Pśepšosćo někogo, se wam pśizamknuś."
-
 #: invite_header_text2
 msgid "Invite a friend to join you"
 msgstr "Pśepšosćo pśijaśela, aby se wam pśizamknuł"
 
-#: invite_facebook_button
-msgid "share on Facebook"
+#. ## LOCALIZATION_NOTE(invite_copy_link_button, invite_copied_link_button,
+#. ## invite_email_link_button, invite_facebook_button2): These labels appear under
+#. ## an iconic button for the invite view.
+#: invite_copy_link_button
+#, fuzzy
+msgctxt "invite_copy_link_button"
+msgid "Copy Link"
+msgstr "Wótkaz kopěrowaś"
+
+#: invite_copied_link_button
+msgid "Copied!"
+msgstr "Kopěrowany!"
+
+#: invite_email_link_button
+#, fuzzy
+msgctxt "invite_email_link_button"
+msgid "Email Link"
+msgstr "Wótkaz e-mailowaś"
+
+#: invite_facebook_button2
+#, fuzzy
+msgid "Share on Facebook"
 msgstr "na Facebooku źěliś"
-
-#: invite_facebook_triggered
-msgctxt "invite_facebook_triggered"
-msgid "shared!"
-msgstr "źělony!"
-
-#: invite_contacts_button
-msgid "share with contacts"
-msgstr "z kontaktami źěliś"
-
-#: invite_contacts_triggered
-msgctxt "invite_contacts_triggered"
-msgid "shared!"
-msgstr "źělony!"
-
-#: invite_copy_button
-msgid "copy link"
-msgstr "wótkaz kopěrowaś"
-
-#: invite_copy_triggered
-msgid "copied!"
-msgstr "kopěrowany!"
-
-#: invite_email_button
-msgid "email link"
-msgstr "wótkaz e-mailowaś"
-
-#: invite_email_triggered
-msgid "emailed!"
-msgstr "e-mailowany!"
 
 #. # Status text
 #: display_name_guest
 msgid "Guest"
 msgstr "Gósć"
 
-#: display_name_dnd_status
-msgid "Do Not Disturb"
-msgstr "Pšosym njemólśo"
-
-#: display_name_available_status
-msgid "Available"
-msgstr "K dispoziciji"
-
 #. # Error bars
-#. ## LOCALIZATION NOTE(unable_retrieve_url,session_expired_error_description,could_not_authenticate,password_changed_question,try_again_later,could_not_connect,check_internet_connection,login_expired,service_not_available,problem_accessing_account):
+#. ## LOCALIZATION NOTE(session_expired_error_description,could_not_authenticate,password_changed_question,try_again_later,could_not_connect,check_internet_connection,login_expired,service_not_available,problem_accessing_account):
 #. ## These may be displayed at the top of the panel.
-#: unable_retrieve_url
-msgid "Sorry, we were unable to retrieve a call URL."
-msgstr "Bóžko njamóžomy zazwónjeński URL wótwołaś."
-
 #: session_expired_error_description
 msgid ""
 "Session expired. All URLs you have previously created and shared will no "
@@ -236,22 +210,27 @@ msgstr ""
 msgid "Join me for a video conversation on {{clientShortname2}}!"
 msgstr "Pśizamkniśo se mě za wideorozgrono na {{clientShortname2}}!"
 
-#: share_button3
-msgid "Share Link"
-msgstr "Wótkaz źěliś"
-
 #: share_add_service_button
 msgid "Add a Service"
 msgstr "Słužbu pśidaś"
 
-#: copy_url_button2
-msgctxt "copy_url_button2"
+#. ## LOCALIZATION NOTE (copy_link_menuitem, email_link_menuitem, delete_conversation_menuitem):
+#. ## These menu items are displayed from a panel's context menu for a conversation.
+#: copy_link_menuitem
+#, fuzzy
+msgctxt "copy_link_menuitem"
 msgid "Copy Link"
 msgstr "Wótkaz kopěrowaś"
 
-#: copied_url_button
-msgid "Copied!"
-msgstr "Kopěrowany!"
+#: email_link_menuitem
+#, fuzzy
+msgctxt "email_link_menuitem"
+msgid "Email Link"
+msgstr "Wótkaz e-mailowaś"
+
+#: delete_conversation_menuitem
+msgid "Delete conversation"
+msgstr "Rozgrono lašowaś"
 
 #: panel_footer_signin_or_signup_link
 msgid "Sign In or Sign Up"
@@ -275,277 +254,22 @@ msgctxt "settings_menu_item_signin"
 msgid "Sign In"
 msgstr "Pśizjawiś"
 
+#: settings_menu_item_turnnotificationson
+msgid "Turn Notifications On"
+msgstr ""
+
+#: settings_menu_item_turnnotificationsoff
+msgid "Turn Notifications Off"
+msgstr ""
+
+#: settings_menu_item_feedback
+msgid "Submit Feedback"
+msgstr ""
+
 #: settings_menu_button_tooltip
 msgctxt "settings_menu_button_tooltip"
 msgid "Settings"
 msgstr "Nastajenja"
-
-#. # Contact Strings (Panel)
-#. ## LOCALIZATION NOTE(contacts_search_placeholder): This is the placeholder text for
-#. ## the search field.
-#: contacts_search_placesholder2
-msgid "Search…"
-msgstr "Pytaś…"
-
-#. ## LOCALIZATION NOTE (new_contact_button2): This is the button to open the
-#. ## new contact sub-panel.
-#: new_contact_button2
-msgid "Add new contact"
-msgstr "Nowy kontakt pśidaś"
-
-#. ## LOCALIZATION NOTE (contact_form_*_placeholder):
-#. ## These are the placeholders for the inputs for entering or editing a contact
-#. ## Click the 'New Contact' button to see the fields.
-#: contact_form_name_placeholder
-msgctxt "contact_form_name_placeholder"
-msgid "Name"
-msgstr "Mě"
-
-#: contact_form_email_placeholder
-msgctxt "contact_form_email_placeholder"
-msgid "Email"
-msgstr "E-mail"
-
-#: contact_form_fxos_phone_placeholder
-msgid "Firefox OS Phone"
-msgstr "Telefon Firefox OS"
-
-#: contact_form_phone_placeholder2
-msgid "Phone"
-msgstr "Telefon"
-
-#: contacts_blocked_contacts
-msgid "Blocked Contacts"
-msgstr "Blokěrowane kontakty"
-
-#. ## LOCALIZATION NOTE (add_contact_button):
-#. ## This is the button to actually add the new contact. Click the 'New Contact'
-#. ## button to see the fields.
-#: add_contact_button
-msgctxt "add_contact_button"
-msgid "Add Contact"
-msgstr "Kontakt pśidaś"
-
-#. ## LOCALIZATION NOTE(add_contact_title): This is the subtitle of the add contact
-#. ## panel. It is displayed when Add Contact is selected.
-#: add_contact_title
-msgctxt "add_contact_title"
-msgid "Add Contact"
-msgstr "Kontakt pśidaś"
-
-#. ### LOCALIZATION NOTE (valid_email_text_description): This is displayed when
-#. ### the user enters an invalid email address, preventing the addition of the
-#. ### contact.
-#: valid_email_text_description
-msgid "Please enter a valid email address"
-msgstr "Pšosym zapódajśo płaśiwu e-mailowu adresu"
-
-#. ## LOCALIZATION NOTE (add_or_import_contact_title): This is the subtitle of the
-#. ## panel.
-#: add_or_import_contact_title
-msgid "Add or Import Contact"
-msgstr "Kontakt pśidaś abo importěrowaś"
-
-#: import_contacts_button2
-msgid "Import from Google"
-msgstr "Z Google importěrowaś"
-
-#. ## LOCALIZATION NOTE (import_contacts_button3): Text for button used to import
-#. ## contacts into the contact list.
-#: import_contacts_button3
-msgid "Import"
-msgstr "Importěrowaś"
-
-#: importing_contacts_progress_button
-msgid "Importing…"
-msgstr "Importěrujo se…"
-
-#: import_contacts_failure_message
-msgid "Some contacts could not be imported. Please try again."
-msgstr ""
-"Někotare kontakty njejsu dali se importěrowaś. Pšosym wopytajśo hyšći raz."
-
-#. ## LOCALIZATION NOTE(import_contacts_success_message): Success notification message
-#. ## when user's contacts have been successfully imported.
-#. ## Semicolon-separated list of plural forms. See:
-#. ## http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. ## In this item, don't translate the part between {{..}}
-#: import_contacts_success_message
-msgid ""
-"{{total}} contact was successfully imported.;{{total}} contacts were "
-"successfully imported."
-msgstr ""
-"{{total}} kontakt jo se wuspěšnje importěrował.;{{total}} kontakta stej se "
-"wuspěšnje importěrowałej.;{{total}} kontakty su se wuspěšnje importěrowali.;"
-"{{total}} kontaktow jo se wuspěšnje importowěrało."
-
-#. ## LOCALIZATION NOTE(sync_contacts_button): This button is displayed in place of
-#. ## importing_contacts_button once contacts have been imported once.
-#: sync_contacts_button
-msgid "Sync Contacts"
-msgstr "Kontakty synchronizěrowaś"
-
-#. ## LOCALIZATION NOTE(no_contacts_message_heading2): Title shown when user has no
-#. ## contacts in his address book
-#: no_contacts_message_heading2
-msgid "No contacts yet."
-msgstr "Hyšći žedne kontakty."
-
-#. ## LOCALIZATION NOTE(no_contacts_import_or_add2): Subheading inviting the user
-#. ## to add people to his contact list
-#: no_contacts_import_or_add2
-msgid "Add someone!"
-msgstr "Pśidajśo někogo!"
-
-#. ## LOCALIZATION NOTE(no_conversations_message_heading2): Title shown when user
-#. ## has no conversations available.
-#: no_conversations_message_heading2
-msgid "No conversations yet."
-msgstr "Hyšći žedne rozgrona."
-
-#. ## LOCALIZATION NOTE(no_conversations_start_message2): Subheading inviting the
-#. ## user to start a new conversation.
-#: no_conversations_start_message2
-msgid "Start a new one!"
-msgstr "Zachopśo nowe!"
-
-#. ## LOCALIZATION NOTE(contacts_no_search_results): Message shown when contacts
-#. ## search returned no matching results.
-#: contacts_no_search_results
-msgid "No matching results."
-msgstr "Žedne wótpowědujuce wuslědki."
-
-#. ## LOCALIZATION NOTE(import_failed_description simple): Displayed when an import of
-#. ## contacts fails. This is displayed in the error field.
-#: import_failed_description_simple
-msgid "Sorry, contact import failed"
-msgstr "Bóžko import kontakta njejo se raźił"
-
-#: import_failed_description_some
-msgid "Some contacts could not be imported"
-msgstr "Někotare kontakty njedaju se importěrowaś"
-
-#: import_failed_support_button
-msgctxt "import_failed_support_button"
-msgid "Help"
-msgstr "Pomoc"
-
-#. ## LOCALIZATION NOTE(remove_contact_menu_button2): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name.
-#: remove_contact_menu_button2
-msgid "Remove Contact…"
-msgstr "Kontakt wótpóraś…"
-
-#. ## LOCALIZATION NOTE(remove_contact_title): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name.
-#: remove_contact_menu_button3
-msgctxt "remove_contact_menu_button3"
-msgid "Remove Contact"
-msgstr "Kontakt wótpóraś"
-
-#. ## LOCALIZATION NOTE(confirm_delete_contact_alert): This is an alert that is displayed
-#. ## to confirm deletion of a contact.
-#: confirm_delete_contact_alert
-msgid "Are you sure you want to delete this contact?"
-msgstr "Cośo napšawdu toś ten kontakt lašowaś?"
-
-#. ## LOCALIZATION NOTE(confirm_delete_contact_remove_button, confirm_delete_contact_cancel_button):
-#. ## These are displayed on the alert with confirm_delete_contact_alert
-#: confirm_delete_contact_remove_button
-msgctxt "confirm_delete_contact_remove_button"
-msgid "Remove Contact"
-msgstr "Kontakt wótpóraś"
-
-#: confirm_delete_contact_cancel_button
-msgctxt "confirm_delete_contact_cancel_button"
-msgid "Cancel"
-msgstr "Pśetergnuś"
-
-#. ## LOCALIZATION NOTE(contact_list_title): This is in uppercase in English for
-#. ## emphasis, please do what is appropriate for specific locales.
-#: contact_list_title
-msgid "MY CONTACTS"
-msgstr "MÓJE KONTAKTY"
-
-#. ## LOCALIZATION NOTE(block_contact_menu_button): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name, used to block a contact from calling
-#. ## the user.
-#: block_contact_menu_button
-msgid "Block Contact"
-msgstr "Kontakt blokěrowaś"
-
-#. ## LOCALIZATION NOTE(unblock_contact_menu_button): Displayed in the contact list in
-#. ## a pop-up menu next to the contact's name, used to unblock a contact and allow them
-#. ## to call the user.
-#: unblock_contact_menu_button
-msgid "Unblock Contact"
-msgstr "Blokěrowanje kontakta wótpóraś"
-
-#. ## LOCALIZATION NOTE(edit_contact_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: edit_contact_menu_button
-msgid "Edit Contact…"
-msgstr "Kontakt wobźěłaś…"
-
-#. ## LOCALIZATION NOTE(edit_contact_tile): This is the subtitle of the edit contact
-#. ## panel. It is displayed when Edit Contact is selected.
-#: edit_contact_title
-msgid "Edit Contact"
-msgstr "Kontakt wobźěłaś"
-
-#. ## LOCALIZATION NOTE(edit_contact_name_label, edit_contact_email_label):
-#. ## These fields are display when the Edit Contact button is selected.
-#: edit_contact_name_label
-msgctxt "edit_contact_name_label"
-msgid "Name"
-msgstr "Mě"
-
-#: edit_contact_email_label
-msgctxt "edit_contact_email_label"
-msgid "Email"
-msgstr "E-mail"
-
-#. ## LOCALIZATION NOTE(edit_contact_name_label, edit_contact_email_label):
-#. ## These button is displayed when the Edit Contact button is selected and is used
-#. ## to accept the change.
-#: edit_contact_done_button
-msgctxt "edit_contact_done_button"
-msgid "Done"
-msgstr "Dokóńcony"
-
-#. ## LOCALIZATION NOTE(audio_call_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: audio_call_menu_button
-msgid "Audio Conversation"
-msgstr "Awdiorozgrono"
-
-#. ## LOCALIZATION NOTE(video_call_menu_button): Displayed in the contact list in a
-#. ## pop-up menu next to the contact's name.
-#: video_call_menu_button
-msgid "Video Conversation"
-msgstr "Wideorozgrono"
-
-#. ## LOCALIZATION NOTE(gravatars_promo_message): The {{learn_more}} part will be
-#. ## replaced with a link with the text content of gravatars_promo_message_learnmore.
-#: gravatars_promo_message
-msgid ""
-"You can automatically add profile icons to your contacts by sharing their "
-"email addresses with Gravatar. {{learn_more}}."
-msgstr ""
-"Móžośo wašym kontaktam awtomatiski profilowe symbole pśidaś, z tym až źěliśo "
-"jich e-mailowe adrese z Gravatar. {{learn_more}}."
-
-#: gravatars_promo_message_learnmore
-msgid "Learn more"
-msgstr "Dalšne informacije"
-
-#: gravatars_promo_button_nothanks2
-msgid "No, thanks"
-msgstr "Ně, źěkujom se"
-
-#: gravatars_promo_button_use2
-msgid "Use profile icons"
-msgstr "Profilowe symbole wužywaś"
 
 #. # Conversation Window Strings
 #: initiate_call_button_label2
@@ -555,27 +279,6 @@ msgstr "Cośo swójo rozgrono zachopiś?"
 #: incoming_call_title2
 msgid "Conversation Request"
 msgstr "Pšosba wó rozgrono"
-
-#: incoming_call_accept_button
-msgid "Accept"
-msgstr "Akceptěrowaś"
-
-#: incoming_call_accept_audio_only_tooltip
-msgid "Accept with voice"
-msgstr "Z głosom akceptěrowaś"
-
-#: incoming_call_accept_audio_video_tooltip
-msgid "Accept with video"
-msgstr "Z wideo akceptěrowaś"
-
-#: incoming_call_cancel_button
-msgctxt "incoming_call_cancel_button"
-msgid "Cancel"
-msgstr "Pśetergnuś"
-
-#: incoming_call_cancel_and_block_button
-msgid "Cancel and Block"
-msgstr "Pśetergnuś a blokěrowaś"
 
 #: incoming_call_block_button
 msgid "Block"
@@ -650,23 +353,6 @@ msgstr "Wideorozgrono zachopiś"
 msgid "Voice conversation"
 msgstr "Telefonowe rozgrono"
 
-#: initiate_call_cancel_button
-msgctxt "initiate_call_cancel_button"
-msgid "Cancel"
-msgstr "Pśetergnuś"
-
-#. ## LOCALIZATION NOTE (call_progress_connecting_description): This is displayed
-#. ## whilst the client is contacting the client at the other end of the connection.
-#: call_progress_connecting_description
-msgid "Connecting…"
-msgstr "Zwězujo se…"
-
-#. ## LOCALIZATION NOTE (call_progress_ringing_description): This is displayed
-#. ## when the other client is actually ringing.
-#: call_progress_ringing_description
-msgid "Ringing…"
-msgstr "Zwóni…"
-
 #: peer_ended_conversation2
 msgid "The person you were calling has ended the conversation."
 msgstr "Wósoba, kótaruž sćo zazwónił, jo rozgrono skóńcyła."
@@ -680,29 +366,19 @@ msgctxt "restart_call"
 msgid "Rejoin"
 msgstr "Zasej so pśizamknuś"
 
-#. ## LOCALIZATION NOTE (contact_unavailable_title): The title displayed
-#. ## when a contact is unavailable. Don't translate the part between {{..}}
-#. ## because this will be replaced by the contact's name.
-#: contact_unavailable_title
-msgid "{{contactName}} is unavailable."
-msgstr "{{contactName}} njejo k dispoziciji."
-
-#: generic_contact_unavailable_title
-msgid "This person is unavailable."
-msgstr "Toś ta wósoba njejo k dispoziciji."
-
 #: generic_failure_message
 msgid "We're having technical difficulties…"
 msgstr "Mamy techniske śěžkosći…"
 
-#: generic_failure_with_reason2
-msgid "You can try again or email a link to be reached at later."
-msgstr ""
-"Móžośo hyšći raz wopytaś abo wótkaz e-mailowaś, gdy sćo pózdźej k dostaśeju."
-
 #: generic_failure_no_reason2
 msgid "Would you like to try again?"
 msgstr "Cośo hyšći raz wopytaś?"
+
+#. ## LOCALIZATION NOTE (tos_failure_message): Don't translate {{clientShortname2}}
+#. ## as this will be replaced by the shortname.
+#: tos_failure_message
+msgid "{{clientShortname}} is not available in your country."
+msgstr ""
 
 #. ## LOCALIZATION NOTE (contact_offline_title): Title which is displayed when the
 #. ## contact is offline.
@@ -716,16 +392,12 @@ msgstr "Toś ta wósoba njejo online"
 msgid "Your call did not go through."
 msgstr "Waš telefonat njejo se pśedostał."
 
-#. ## LOCALIZATION NOTE (retry_call_button, cancel_button, email_link_button):
+#. ## LOCALIZATION NOTE (retry_call_button, cancel_button):
 #. ## These buttons are displayed when a call has failed.
 #: retry_call_button
 msgctxt "retry_call_button"
 msgid "Retry"
 msgstr "Hyšći raz wopytaś"
-
-#: email_link_button
-msgid "Email Link"
-msgstr "Wótkaz e-mailowaś"
 
 #: cancel_button
 msgctxt "cancel_button"
@@ -751,6 +423,10 @@ msgstr "Telefonat njejo se raźił; glejśo konsolu za drobnostki."
 #: no_media_failure_message
 msgid "No camera or microphone found."
 msgstr "Žedna kamera abo žeden mikrofon."
+
+#: ice_failure_message
+msgid "Connection failed. Your firewall may be blocking calls."
+msgstr ""
 
 #. ## LOCALIZATION NOTE (legal_text_and_links3): In this item, don't translate the
 #. ## parts between {{..}} because these will be replaced with links with the labels
@@ -806,7 +482,7 @@ msgid "Leave Feedback"
 msgstr "Komentar zawóstajiś"
 
 #: help_label
-msgctxt "help_label"
+#, fuzzy
 msgid "Help"
 msgstr "Pomoc"
 
@@ -824,32 +500,21 @@ msgstr "Rozgrono {{conversationLabel}}"
 msgid "Leave"
 msgstr "Spušćiś"
 
-#: rooms_list_copy_url_tooltip
-msgctxt "rooms_list_copy_url_tooltip"
-msgid "Copy Link"
-msgstr "Wótkaz kopěrowaś"
-
-#. ## LOCALIZATION NOTE (rooms_list_recent_conversations): String is in all caps
+#. ## LOCALIZATION NOTE (rooms_list_recently_browsed): String is in all caps
 #. ## for emphasis reasons, it is a heading. Proceed as appropriate for locale.
-#: rooms_list_recent_conversations
-msgid "RECENT CONVERSATIONS"
-msgstr "NEJNOWŠE ROZGRONA"
+#: rooms_list_recently_browsed
+msgid "RECENTLY BROWSED"
+msgstr ""
 
-#: rooms_list_delete_tooltip
-msgid "Delete conversation"
-msgstr "Rozgrono lašowaś"
-
-#: rooms_list_deleteConfirmation_label
-msgid "Are you sure?"
-msgstr "Sćo wěsty?"
+#. ## LOCALIZATION NOTE (rooms_list_currently_browsing): String is in all caps
+#. ## for emphasis reasons, it is a heading. Proceed as appropriate for locale.
+#: rooms_list_currently_browsing
+msgid "CURRENTLY BROWSING"
+msgstr ""
 
 #: rooms_change_failed_label
 msgid "Conversation cannot be updated"
 msgstr "Rozgrono njedajo se aktualizěrowaś"
-
-#: rooms_new_room_button_label
-msgid "Start a conversation"
-msgstr "Rozgrono zachopiś"
 
 #: rooms_panel_title
 msgid "Choose a conversation or start a new one"
@@ -906,6 +571,18 @@ msgid "D"
 msgstr "W"
 
 #. # Context in conversation strings
+#. ## LOCALIZATION NOTE(no_conversations_message_heading2): Title shown when user
+#. ## has no conversations available.
+#: no_conversations_message_heading2
+msgid "No conversations yet."
+msgstr "Hyšći žedne rozgrona."
+
+#. ## LOCALIZATION NOTE(no_conversations_start_message2): Subheading inviting the
+#. ## user to start a new conversation.
+#: no_conversations_start_message2
+msgid "Start a new one!"
+msgstr "Zachopśo nowe!"
+
 #. # LOCALIZATION NOTE (context_inroom_header): this string is displayed in the
 #. # conversation window when the user edits context. It is a header to the edit
 #. # section.
@@ -922,13 +599,6 @@ msgstr "Rozgranjajmy se wó…"
 msgid "Let's Talk About:"
 msgstr "Rozgranjajmy se wó:"
 
-#. ## LOCALIZATION_NOTE (context_edit_activate_label): {{title}} will be replaced
-#. ## by the title of the active tab, also known as the title of an HTML document.
-#. ## The quotes around the title are intentional.
-#: context_edit_activate_label
-msgid "Talk about \"{{title}}\""
-msgstr "Wó \"{{title}}\" powědaś"
-
 #: context_edit_name_placeholder
 msgid "Conversation Name"
 msgstr "Mě rozgrona"
@@ -937,31 +607,15 @@ msgstr "Mě rozgrona"
 msgid "Comments"
 msgstr "Komentary"
 
-#: context_add_some_label
-msgid "Add some context"
-msgstr "Pśidajśo pitśku konteksta"
-
-#: context_show_tooltip
-msgid "Show Context"
-msgstr "Kontekst pokazaś"
-
 #: context_cancel_label
 msgctxt "context_cancel_label"
 msgid "Cancel"
 msgstr "Pśetergnuś"
 
 #: context_done_label
-msgctxt "context_done_label"
+#, fuzzy
 msgid "Done"
 msgstr "Dokóńcony"
-
-#: context_link_modified
-msgid "This link was modified."
-msgstr "Toś ten wótkaz jo se změnił."
-
-#: context_learn_more_link_label
-msgid "Learn more."
-msgstr "Dalšne informacije."
 
 #: conversation_settings_menu_edit_context
 msgid "Edit Context"
@@ -975,6 +629,258 @@ msgstr "Kontekst schowaś"
 #: chat_textbox_placeholder
 msgid "Type here…"
 msgstr "Zapišćo how…"
+
+#~ msgid "Conversations"
+#~ msgstr "Rozgrona"
+
+#~ msgid "Contacts"
+#~ msgstr "Kontakty"
+
+#~ msgid "Invite someone to join you."
+#~ msgstr "Pśepšosćo někogo, se wam pśizamknuś."
+
+#~ msgctxt "invite_facebook_triggered"
+#~ msgid "shared!"
+#~ msgstr "źělony!"
+
+#~ msgid "share with contacts"
+#~ msgstr "z kontaktami źěliś"
+
+#~ msgctxt "invite_contacts_triggered"
+#~ msgid "shared!"
+#~ msgstr "źělony!"
+
+#~ msgid "copy link"
+#~ msgstr "wótkaz kopěrowaś"
+
+#~ msgid "copied!"
+#~ msgstr "kopěrowany!"
+
+#~ msgid "email link"
+#~ msgstr "wótkaz e-mailowaś"
+
+#~ msgid "emailed!"
+#~ msgstr "e-mailowany!"
+
+#~ msgid "Do Not Disturb"
+#~ msgstr "Pšosym njemólśo"
+
+#~ msgid "Available"
+#~ msgstr "K dispoziciji"
+
+#~ msgid "Sorry, we were unable to retrieve a call URL."
+#~ msgstr "Bóžko njamóžomy zazwónjeński URL wótwołaś."
+
+#~ msgid "Share Link"
+#~ msgstr "Wótkaz źěliś"
+
+#~ msgid "Search…"
+#~ msgstr "Pytaś…"
+
+#~ msgid "Add new contact"
+#~ msgstr "Nowy kontakt pśidaś"
+
+#~ msgctxt "contact_form_name_placeholder"
+#~ msgid "Name"
+#~ msgstr "Mě"
+
+#~ msgctxt "contact_form_email_placeholder"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Firefox OS Phone"
+#~ msgstr "Telefon Firefox OS"
+
+#~ msgid "Phone"
+#~ msgstr "Telefon"
+
+#~ msgid "Blocked Contacts"
+#~ msgstr "Blokěrowane kontakty"
+
+#~ msgctxt "add_contact_button"
+#~ msgid "Add Contact"
+#~ msgstr "Kontakt pśidaś"
+
+#~ msgctxt "add_contact_title"
+#~ msgid "Add Contact"
+#~ msgstr "Kontakt pśidaś"
+
+#~ msgid "Please enter a valid email address"
+#~ msgstr "Pšosym zapódajśo płaśiwu e-mailowu adresu"
+
+#~ msgid "Add or Import Contact"
+#~ msgstr "Kontakt pśidaś abo importěrowaś"
+
+#~ msgid "Import from Google"
+#~ msgstr "Z Google importěrowaś"
+
+#~ msgid "Import"
+#~ msgstr "Importěrowaś"
+
+#~ msgid "Importing…"
+#~ msgstr "Importěrujo se…"
+
+#~ msgid "Some contacts could not be imported. Please try again."
+#~ msgstr ""
+#~ "Někotare kontakty njejsu dali se importěrowaś. Pšosym wopytajśo hyšći raz."
+
+#~ msgid ""
+#~ "{{total}} contact was successfully imported.;{{total}} contacts were "
+#~ "successfully imported."
+#~ msgstr ""
+#~ "{{total}} kontakt jo se wuspěšnje importěrował.;{{total}} kontakta stej "
+#~ "se wuspěšnje importěrowałej.;{{total}} kontakty su se wuspěšnje "
+#~ "importěrowali.;{{total}} kontaktow jo se wuspěšnje importowěrało."
+
+#~ msgid "Sync Contacts"
+#~ msgstr "Kontakty synchronizěrowaś"
+
+#~ msgid "No contacts yet."
+#~ msgstr "Hyšći žedne kontakty."
+
+#~ msgid "Add someone!"
+#~ msgstr "Pśidajśo někogo!"
+
+#~ msgid "No matching results."
+#~ msgstr "Žedne wótpowědujuce wuslědki."
+
+#~ msgid "Sorry, contact import failed"
+#~ msgstr "Bóžko import kontakta njejo se raźił"
+
+#~ msgid "Some contacts could not be imported"
+#~ msgstr "Někotare kontakty njedaju se importěrowaś"
+
+#~ msgid "Remove Contact…"
+#~ msgstr "Kontakt wótpóraś…"
+
+#~ msgctxt "remove_contact_menu_button3"
+#~ msgid "Remove Contact"
+#~ msgstr "Kontakt wótpóraś"
+
+#~ msgid "Are you sure you want to delete this contact?"
+#~ msgstr "Cośo napšawdu toś ten kontakt lašowaś?"
+
+#~ msgctxt "confirm_delete_contact_remove_button"
+#~ msgid "Remove Contact"
+#~ msgstr "Kontakt wótpóraś"
+
+#~ msgid "MY CONTACTS"
+#~ msgstr "MÓJE KONTAKTY"
+
+#~ msgid "Block Contact"
+#~ msgstr "Kontakt blokěrowaś"
+
+#~ msgid "Unblock Contact"
+#~ msgstr "Blokěrowanje kontakta wótpóraś"
+
+#~ msgid "Edit Contact…"
+#~ msgstr "Kontakt wobźěłaś…"
+
+#~ msgid "Edit Contact"
+#~ msgstr "Kontakt wobźěłaś"
+
+#~ msgctxt "edit_contact_name_label"
+#~ msgid "Name"
+#~ msgstr "Mě"
+
+#~ msgctxt "edit_contact_email_label"
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Audio Conversation"
+#~ msgstr "Awdiorozgrono"
+
+#~ msgid "Video Conversation"
+#~ msgstr "Wideorozgrono"
+
+#~ msgid ""
+#~ "You can automatically add profile icons to your contacts by sharing their "
+#~ "email addresses with Gravatar. {{learn_more}}."
+#~ msgstr ""
+#~ "Móžośo wašym kontaktam awtomatiski profilowe symbole pśidaś, z tym až "
+#~ "źěliśo jich e-mailowe adrese z Gravatar. {{learn_more}}."
+
+#~ msgid "Learn more"
+#~ msgstr "Dalšne informacije"
+
+#~ msgid "No, thanks"
+#~ msgstr "Ně, źěkujom se"
+
+#~ msgid "Use profile icons"
+#~ msgstr "Profilowe symbole wužywaś"
+
+#~ msgid "Accept"
+#~ msgstr "Akceptěrowaś"
+
+#~ msgid "Accept with voice"
+#~ msgstr "Z głosom akceptěrowaś"
+
+#~ msgid "Accept with video"
+#~ msgstr "Z wideo akceptěrowaś"
+
+#~ msgctxt "incoming_call_cancel_button"
+#~ msgid "Cancel"
+#~ msgstr "Pśetergnuś"
+
+#~ msgid "Cancel and Block"
+#~ msgstr "Pśetergnuś a blokěrowaś"
+
+#~ msgctxt "initiate_call_cancel_button"
+#~ msgid "Cancel"
+#~ msgstr "Pśetergnuś"
+
+#~ msgid "Connecting…"
+#~ msgstr "Zwězujo se…"
+
+#~ msgid "Ringing…"
+#~ msgstr "Zwóni…"
+
+#~ msgid "{{contactName}} is unavailable."
+#~ msgstr "{{contactName}} njejo k dispoziciji."
+
+#~ msgid "This person is unavailable."
+#~ msgstr "Toś ta wósoba njejo k dispoziciji."
+
+#~ msgid "You can try again or email a link to be reached at later."
+#~ msgstr ""
+#~ "Móžośo hyšći raz wopytaś abo wótkaz e-mailowaś, gdy sćo pózdźej k "
+#~ "dostaśeju."
+
+#~ msgctxt "help_label"
+#~ msgid "Help"
+#~ msgstr "Pomoc"
+
+#~ msgctxt "rooms_list_copy_url_tooltip"
+#~ msgid "Copy Link"
+#~ msgstr "Wótkaz kopěrowaś"
+
+#~ msgid "RECENT CONVERSATIONS"
+#~ msgstr "NEJNOWŠE ROZGRONA"
+
+#~ msgid "Are you sure?"
+#~ msgstr "Sćo wěsty?"
+
+#~ msgid "Start a conversation"
+#~ msgstr "Rozgrono zachopiś"
+
+#~ msgid "Talk about \"{{title}}\""
+#~ msgstr "Wó \"{{title}}\" powědaś"
+
+#~ msgid "Add some context"
+#~ msgstr "Pśidajśo pitśku konteksta"
+
+#~ msgid "Show Context"
+#~ msgstr "Kontekst pokazaś"
+
+#~ msgctxt "context_done_label"
+#~ msgid "Done"
+#~ msgstr "Dokóńcony"
+
+#~ msgid "This link was modified."
+#~ msgstr "Toś ten wótkaz jo se změnił."
+
+#~ msgid "Learn more."
+#~ msgstr "Dalšne informacije."
 
 #~ msgid "{{clientShortname}} — Join the conversation"
 #~ msgstr "{{clientShortname}} — Rozgronoju se pśizamknuś"

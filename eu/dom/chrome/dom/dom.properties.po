@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-21 15:18+0000\n"
+"POT-Creation-Date: 2015-10-29 12:22+0000\n"
 "PO-Revision-Date: 2015-10-27 12:26+0000\n"
 "Last-Translator: Julen Ruiz Aizpuru <julenx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1445948774.000000\n"
@@ -320,10 +320,6 @@ msgstr ""
 "Zaharkituta dago nsIDOMWindowInternal erabiltzea. Erabili nsIDOMWindow "
 "horren ordez."
 
-#: InputEncodingWarning
-msgid "Use of inputEncoding is deprecated."
-msgstr "Zaharkituta dago inputEncoding erabiltzea."
-
 #: FullScreenDeniedDisabled
 msgid ""
 "Request for full-screen was denied because full-screen API is disabled by "
@@ -344,10 +340,12 @@ msgid ""
 msgstr ""
 "Pantaila osoaren eskaera debekatu egin da dokumentua ez dagoelako ikusgai."
 
-#: FullScreenDeniedIframeNotAllowed
+#: FullScreenDeniedContainerNotAllowed
+#, fuzzy
 msgid ""
 "Request for full-screen was denied because at least one of the document's "
-"containing iframes does not have an \"allowfullscreen\" attribute."
+"containing element is not iframe or does not have an \"allowfullscreen\" "
+"attribute."
 msgstr ""
 "Pantaila osoaren eskaera debekatu egin da dokumentuak dauzkan iframe "
 "elementuetatik gutxienez batek ez duelako \"allowfullscreen\" atributua."
@@ -548,6 +546,20 @@ msgstr ""
 #: MediaLoadDecodeError
 msgid "Media resource %S could not be decoded."
 msgstr "Ezin izan da %S media-baliabidea deskodetu."
+
+#. # LOCALIZATION NOTE: %S is the ID of the MediaStreamTrack passed to MediaStream.addTrack(). Do not translate "MediaStreamTrack" and "AudioChannel".
+#: MediaStreamAddTrackDifferentAudioChannel
+msgid ""
+"MediaStreamTrack %S could not be added since it belongs to a different "
+"AudioChannel."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "MediaStream", "stop()" and "MediaStreamTrack"
+#: MediaStreamStopDeprecatedWarning
+msgid ""
+"MediaStream.stop() is deprecated and will soon be removed. Use "
+"MediaStreamTrack.stop() instead."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "DOMException", "code" and "name"
 #: DOMExceptionCodeWarning
@@ -793,7 +805,7 @@ msgstr ""
 "ServiceWorker-a ilaran dago orain eta beste langileetakoren batek amaitu "
 "bezain laster abiaraziko da."
 
-#. # LOCALIZATION NOTE: Do no translate "setVelocity", "PannerNode", "AudioListener", "speedOfSound" and "dopplerFactor"
+#. # LOCALIZATION NOTE: Do not translate "setVelocity", "PannerNode", "AudioListener", "speedOfSound" and "dopplerFactor"
 #: PannerNodeDopplerWarning
 msgid ""
 "Use of setVelocity on the PannerNode and AudioListener, and speedOfSound and "
@@ -805,6 +817,13 @@ msgstr ""
 "speedOfSound eta dopplerFactor erabiltzea AudioListener-en eta kideak "
 "ezabatu egingo dira. Argibide gehiagorako irakurri https://developer.mozilla."
 "org/en-US/docs/Web/API/AudioListener#Deprecated_features"
+
+#. # LOCALIZATION NOTE: Do not translate "Application Cache API", "AppCache" and "ServiceWorker".
+#: AppCacheWarning
+msgid ""
+"The Application Cache API (AppCache) is deprecated and will be removed at a "
+"future date.  Please consider using ServiceWorker for offline support."
+msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "Worker".
 #: EmptyWorkerSourceWarning
@@ -890,6 +909,28 @@ msgid ""
 msgstr ""
 "ServiceWorker-ak sareko erantzun-jasotzea utzi du FetchEvent."
 "preventDefault() metodoari deituz."
+
+#. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "Promise", or "FetchEvent.respondWith()".
+#: InterceptionRejectedResponse
+msgid ""
+"ServiceWorker passed a rejected Promise to FetchEvent.respondWith().  This "
+"typically means that the code that resolves the Promise has failed."
+msgstr ""
+
+#: WebrtcDeprecatedPrefixWarning
+msgid ""
+"WebRTC interfaces with the \"moz\" prefix (mozRTCPeerConnection, "
+"mozRTCSessionDescription, mozRTCIceCandidate) have been deprecated."
+msgstr ""
+
+#: NavigatorGetUserMediaWarning
+msgid ""
+"navigator.mozGetUserMedia has been replaced by navigator.mediaDevices."
+"getUserMedia"
+msgstr ""
+
+#~ msgid "Use of inputEncoding is deprecated."
+#~ msgstr "Zaharkituta dago inputEncoding erabiltzea."
 
 #~ msgid ""
 #~ "MozBeforePaint events are no longer supported.  mozRequestAnimationFrame "
