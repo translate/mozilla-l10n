@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-30 09:16+0000\n"
+"POT-Creation-Date: 2015-10-30 03:09+0000\n"
 "PO-Revision-Date: 2015-08-23 18:56+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -429,15 +429,13 @@ msgstr "పరికరాన్ని ఎంచుకోండి"
 msgid "No Firefox Account connected devices found"
 msgstr "ఫైర్‌ఫాక్స్ ఖాతా సంధానమైవున్న పరికరాలేమీ కనబడలేదు"
 
-#. Localization note (overlay_share_tab_not_sent) : Used when the menu option
-#. to send a tab to a synced device is pressed and there is an error
-#. connecting to the server so the tab could not be sent. The text should be
-#. divided into two lines (use the newline escape character, "\n", between
-#. them): the first notifying the user about the failure and the second
-#. telling the user what to do about it.
-#: overlay_share_tab_not_sent
-msgid "Your tab could not be sent.\\nPlease try again later."
-msgstr "మీ ట్యాబును పంపించలేకపోయాం.\\nదయచేసి కాసేపాగి మళ్ళీ ప్రయత్నించండి."
+#. Localization note (menu_no_synced_devices): Used in a toast when the user
+#. clicks on the button to send a tab to another device and there are no
+#. other devices present. This label should briefly inform the user that they
+#. need another connected device in order to use the feature.
+#: menu_no_synced_devices
+msgid "Send this tab to another connected device"
+msgstr ""
 
 #: pref_category_search3
 msgctxt "pref_category_search3"
@@ -683,6 +681,14 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "అచేతనం"
 
+#: pref_tap_to_load_images_title
+msgid "Tap-to-load images"
+msgstr ""
+
+#: pref_tap_to_load_images_summary2
+msgid "Load images only when you long press them"
+msgstr ""
+
 #: pref_tracking_protection_title
 #, fuzzy
 msgctxt "pref_tracking_protection_title"
@@ -690,6 +696,7 @@ msgid "Tracking protection"
 msgstr "ట్రాకింగ్ సంరక్షణ"
 
 #: pref_tracking_protection_summary3
+msgctxt "pref_tracking_protection_summary3"
 msgid "Enabled in Private Browsing"
 msgstr ""
 
@@ -700,6 +707,23 @@ msgstr "ట్రాక్ చెయ్యవద్దు"
 #: pref_donottrack_summary
 msgid "&brandShortName; will tell sites that you do not want to be tracked"
 msgstr "మిమ్మల్ని ట్రాక్ చెయ్యవద్దనుకుంటున్నారని &brandShortName; వెబ్‌సైట్లకు తెలియజేస్తుంది"
+
+#: pref_tracking_protection_enabled
+#, fuzzy
+msgctxt "pref_tracking_protection_enabled"
+msgid "Enabled"
+msgstr "చేతనం"
+
+#: pref_tracking_protection_enabled_pb
+msgctxt "pref_tracking_protection_enabled_pb"
+msgid "Enabled in Private Browsing"
+msgstr ""
+
+#: pref_tracking_protection_disabled
+#, fuzzy
+msgctxt "pref_tracking_protection_disabled"
+msgid "Disabled"
+msgstr "అచేతనం"
 
 #: tracking_protection_prompt_title
 msgid "Now with Tracking Protection"
@@ -932,6 +956,10 @@ msgstr "మీ ట్యాబులను, ఇష్టాంశాలను, �
 #: pref_search_suggestions
 msgid "Show search suggestions"
 msgstr "వెతుకుడు సలహాలను చూపించు"
+
+#: pref_history_search_suggestions
+msgid "Show search history"
+msgstr ""
 
 #: pref_import_android
 msgid "Import from Android"
@@ -1793,6 +1821,10 @@ msgstr ""
 msgid "Insecure connection"
 msgstr ""
 
+#: identity_login_insecure
+msgid "This page is not secure and your login could be vulnerable."
+msgstr ""
+
 #. Mixed content notifications in site identity popup
 #: mixed_content_blocked_all1
 msgid "&brandShortName; has blocked insecure content on this page."
@@ -2075,6 +2107,27 @@ msgstr "Aa"
 msgid "Cannot open link"
 msgstr ""
 
+#. This string will
+#. appear in an alert when a user, who is currently in private browsing,
+#. clicks a link that will open an external Android application. "&formatS;"
+#. will be replaced with the name of the application that will be opened.
+#: intent_uri_private_browsing_prompt
+msgid ""
+"This link will open in &formatS;. Are you sure you want to exit Private "
+"Browsing?"
+msgstr ""
+
+#. This
+#. string will appear as the title of an alert when a user, who is currently
+#. in private browsing, clicks a link that will open an external Android
+#. application and more than one application is available to open that link.
+#. We don't have control over the style of this dialog and it looks
+#. unpolished when this string is longer than one line so ideally keep it
+#. short!
+#: intent_uri_private_browsing_multiple_match_title
+msgid "Exit Private Browsing?"
+msgstr ""
+
 #. DevTools Authentication
 #. This header text appears
 #. above a QR reader that is actively scanning for QR codes.  The expected QR
@@ -2147,11 +2200,6 @@ msgstr ""
 msgid "Firefox: Support"
 msgstr ""
 
-#. link title for https://marketplace.firefox.com
-#: bookmarks_marketplace
-msgid "Firefox Marketplace"
-msgstr ""
-
 #. LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess
 #: bookmarks_restricted_support2
 msgid "Firefox Help and Support for restricted profiles on Android tablets"
@@ -2161,6 +2209,9 @@ msgstr ""
 #: bookmarks_restricted_webmaker
 msgid "Learn the Web: Mozilla Webmaker"
 msgstr ""
+
+#~ msgid "Your tab could not be sent.\\nPlease try again later."
+#~ msgstr "మీ ట్యాబును పంపించలేకపోయాం.\\nదయచేసి కాసేపాగి మళ్ళీ ప్రయత్నించండి."
 
 #~ msgid "Last Week"
 #~ msgstr "పోయిన వారం"
