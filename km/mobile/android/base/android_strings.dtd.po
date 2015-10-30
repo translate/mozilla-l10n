@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-30 09:16+0000\n"
+"POT-Creation-Date: 2015-10-30 03:09+0000\n"
 "PO-Revision-Date: 2015-09-22 14:46+0000\n"
 "Last-Translator: Piseth Kheng <piseth.kheng@gmail.com>\n"
 "Language-Team: none\n"
@@ -424,15 +424,13 @@ msgstr "ជ្រើស​ឧបករណ៍"
 msgid "No Firefox Account connected devices found"
 msgstr "រក​មិន​ឃើញ​ឧបករណ៍​ដែល​បាន​ភ្ជាប់​សម្រាប់​គណនី Firefox"
 
-#. Localization note (overlay_share_tab_not_sent) : Used when the menu option
-#. to send a tab to a synced device is pressed and there is an error
-#. connecting to the server so the tab could not be sent. The text should be
-#. divided into two lines (use the newline escape character, "\n", between
-#. them): the first notifying the user about the failure and the second
-#. telling the user what to do about it.
-#: overlay_share_tab_not_sent
-msgid "Your tab could not be sent.\\nPlease try again later."
-msgstr "ផ្ទាំង​របស់​អ្នក​មិន​អាច​ត្រូវ​បាន​ផ្ញើ។\\n​សូមព្យាយាម​ម្ដងទៀត​ពេលក្រោយ។"
+#. Localization note (menu_no_synced_devices): Used in a toast when the user
+#. clicks on the button to send a tab to another device and there are no
+#. other devices present. This label should briefly inform the user that they
+#. need another connected device in order to use the feature.
+#: menu_no_synced_devices
+msgid "Send this tab to another connected device"
+msgstr ""
 
 #: pref_category_search3
 msgctxt "pref_category_search3"
@@ -677,12 +675,22 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "បាន​បិទ"
 
+#: pref_tap_to_load_images_title
+msgid "Tap-to-load images"
+msgstr ""
+
+#: pref_tap_to_load_images_summary2
+msgid "Load images only when you long press them"
+msgstr ""
+
 #: pref_tracking_protection_title
 msgctxt "pref_tracking_protection_title"
 msgid "Tracking protection"
 msgstr "ការ​ទប់ស្កាត់​ការ​តាមដាន"
 
 #: pref_tracking_protection_summary3
+#, fuzzy
+msgctxt "pref_tracking_protection_summary3"
 msgid "Enabled in Private Browsing"
 msgstr "បាន​អនុញ្ញាត​​នៅ​ក្នុង​ការ​​រក​មើល​ជា​ឯកជន"
 
@@ -693,6 +701,24 @@ msgstr "កុំ​តាមដាន"
 #: pref_donottrack_summary
 msgid "&brandShortName; will tell sites that you do not want to be tracked"
 msgstr "&brandShortName; នឹង​ប្រាប់​តំបន់បណ្ដាញ​ថា​អ្នក​មិន​ចង់​ឲ្យ​តាមដាន​ទេ"
+
+#: pref_tracking_protection_enabled
+#, fuzzy
+msgctxt "pref_tracking_protection_enabled"
+msgid "Enabled"
+msgstr "បាន​បើក"
+
+#: pref_tracking_protection_enabled_pb
+#, fuzzy
+msgctxt "pref_tracking_protection_enabled_pb"
+msgid "Enabled in Private Browsing"
+msgstr "បាន​អនុញ្ញាត​​នៅ​ក្នុង​ការ​​រក​មើល​ជា​ឯកជន"
+
+#: pref_tracking_protection_disabled
+#, fuzzy
+msgctxt "pref_tracking_protection_disabled"
+msgid "Disabled"
+msgstr "បាន​បិទ"
 
 #: tracking_protection_prompt_title
 msgid "Now with Tracking Protection"
@@ -922,6 +948,10 @@ msgstr "ធ្វើ​សមកាលកម្ម​ផ្ទាំង​, ច�
 #: pref_search_suggestions
 msgid "Show search suggestions"
 msgstr "បង្ហាញ​ការ​ផ្ដល់​យោបល់​ស្វែងរក"
+
+#: pref_history_search_suggestions
+msgid "Show search history"
+msgstr ""
 
 #: pref_import_android
 msgid "Import from Android"
@@ -1779,6 +1809,10 @@ msgstr "ការ​ភ្ជាប់​ដោយ​សុវត្ថិភា
 msgid "Insecure connection"
 msgstr "ការ​ភ្ជាប់​ដោយ​សុវត្ថិភាព"
 
+#: identity_login_insecure
+msgid "This page is not secure and your login could be vulnerable."
+msgstr ""
+
 #. Mixed content notifications in site identity popup
 #: mixed_content_blocked_all1
 msgid "&brandShortName; has blocked insecure content on this page."
@@ -2056,6 +2090,27 @@ msgstr "Aa"
 msgid "Cannot open link"
 msgstr "មិន​អាច​បើក​តំណ"
 
+#. This string will
+#. appear in an alert when a user, who is currently in private browsing,
+#. clicks a link that will open an external Android application. "&formatS;"
+#. will be replaced with the name of the application that will be opened.
+#: intent_uri_private_browsing_prompt
+msgid ""
+"This link will open in &formatS;. Are you sure you want to exit Private "
+"Browsing?"
+msgstr ""
+
+#. This
+#. string will appear as the title of an alert when a user, who is currently
+#. in private browsing, clicks a link that will open an external Android
+#. application and more than one application is available to open that link.
+#. We don't have control over the style of this dialog and it looks
+#. unpolished when this string is longer than one line so ideally keep it
+#. short!
+#: intent_uri_private_browsing_multiple_match_title
+msgid "Exit Private Browsing?"
+msgstr ""
+
 #. DevTools Authentication
 #. This header text appears
 #. above a QR reader that is actively scanning for QR codes.  The expected QR
@@ -2125,11 +2180,6 @@ msgstr "Firefox៖ កែ​​តាម​បំណង​ជាមួយ​ក�
 msgid "Firefox: Support"
 msgstr "Firefox៖ គាំទ្រ"
 
-#. link title for https://marketplace.firefox.com
-#: bookmarks_marketplace
-msgid "Firefox Marketplace"
-msgstr "កន្លែង​ផ្ទុក​កម្មវិធី​របស់ Firefox"
-
 #. LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess
 #: bookmarks_restricted_support2
 msgid "Firefox Help and Support for restricted profiles on Android tablets"
@@ -2139,6 +2189,12 @@ msgstr "ជំនួយ និង​ការ​គាំទ្រ Firefox ស�
 #: bookmarks_restricted_webmaker
 msgid "Learn the Web: Mozilla Webmaker"
 msgstr "ស្វែងយល់​ពី​បណ្ដាញ៖ Mozilla Webmaker"
+
+#~ msgid "Your tab could not be sent.\\nPlease try again later."
+#~ msgstr "ផ្ទាំង​របស់​អ្នក​មិន​អាច​ត្រូវ​បាន​ផ្ញើ។\\n​សូមព្យាយាម​ម្ដងទៀត​ពេលក្រោយ។"
+
+#~ msgid "Firefox Marketplace"
+#~ msgstr "កន្លែង​ផ្ទុក​កម្មវិធី​របស់ Firefox"
 
 #~ msgid "Mobile"
 #~ msgstr "ចល័ត"
