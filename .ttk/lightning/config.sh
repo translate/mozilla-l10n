@@ -20,3 +20,5 @@ MOZ_PRODUCT=calendar
 
 MOZ_REPO=comm-aurora
 L10N_VER=l10n
+
+alt_src="es fr ru"
