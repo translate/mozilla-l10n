@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 12:22+0000\n"
-"PO-Revision-Date: 2015-11-07 18:56+0000\n"
+"PO-Revision-Date: 2015-11-09 00:03+0000\n"
 "Last-Translator: Jordi Serratosa <jordis@softcatala.cat>\n"
 "Language-Team: none\n"
 "Language: ca\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1446922588.000000\n"
+"X-POOTLE-MTIME: 1447027403.000000\n"
 
 #. # LOCALIZATION NOTE These strings are used inside the Performance Tools
 #. # which is available from the Web Developer sub-menu -> 'Performance'.
@@ -77,11 +77,11 @@ msgstr "Recollida de deixalles (GC)"
 
 #: marker.label.garbageCollection.incremental
 msgid "Incremental GC"
-msgstr "Context Gràfic (GC) incremental"
+msgstr "Recollida de deixalles incremental"
 
 #: marker.label.garbageCollection.nonIncremental
 msgid "Non-incremental GC"
-msgstr "GC no incremental"
+msgstr "Recollida de deixalles no incremental"
 
 #: marker.label.cycleCollection
 msgid "Cycle Collection"
@@ -117,7 +117,7 @@ msgstr "Crida de retorn de la promesa"
 
 #: marker.label.javascript.promiseInit
 msgid "Promise Init"
-msgstr "Inicialització de la promesa"
+msgstr "Inicialització de Promise"
 
 #: marker.label.javascript.workerRunnable
 msgctxt "marker.label.javascript.workerRunnable"
@@ -251,7 +251,7 @@ msgstr "Crida a API"
 
 #: marker.gcreason.label.EAGER_ALLOC_TRIGGER
 msgid "Eager Allocation Trigger"
-msgstr ""
+msgstr "Activador d'assignació impacient"
 
 #: marker.gcreason.label.DESTROY_RUNTIME
 msgctxt "marker.gcreason.label.DESTROY_RUNTIME"
@@ -277,11 +277,11 @@ msgstr "S'han fet massa assignacions"
 
 #: marker.gcreason.label.DEBUG_GC
 msgid "Debug GC"
-msgstr "Depura el GC"
+msgstr "Depura la recollida de deixalles"
 
 #: marker.gcreason.label.COMPARTMENT_REVIVED
 msgid "Dead Global Revived"
-msgstr ""
+msgstr "Global mort ressuscitat"
 
 #: marker.gcreason.label.RESET
 msgid "Finish Incremental Cycle"
@@ -304,10 +304,9 @@ msgid "Large Allocation Failed"
 msgstr "Ha fallat l'assignació més gran"
 
 #: marker.gcreason.label.PERIODIC_FULL_GC
-#, fuzzy
 msgctxt "marker.gcreason.label.PERIODIC_FULL_GC"
 msgid "Periodic Full GC"
-msgstr "GC periòdic complet"
+msgstr "Recollida de deixalles completa periòdica"
 
 #: marker.gcreason.label.INCREMENTAL_TOO_SLOW
 msgid "Allocations Rate Too Fast"
@@ -364,16 +363,16 @@ msgstr "IPC"
 
 #: marker.gcreason.label.DOM_WORKER
 msgid "Periodic Worker GC"
-msgstr ""
+msgstr "Recollida de deixalles de processos de treball periòdica"
 
 #: marker.gcreason.label.INTER_SLICE_GC
 msgid "Periodic Incremental GC Slice"
-msgstr ""
+msgstr "Tall de recollida de deixalles incremental periòdica"
 
 #: marker.gcreason.label.FULL_GC_TIMER
 msgctxt "marker.gcreason.label.FULL_GC_TIMER"
 msgid "Periodic Full GC"
-msgstr "GC peròdic complet"
+msgstr "Recollida de deixalles completa periòdica"
 
 #: marker.gcreason.label.SHUTDOWN_CC
 msgctxt "marker.gcreason.label.SHUTDOWN_CC"
@@ -382,7 +381,7 @@ msgstr "Atura"
 
 #: marker.gcreason.label.FINISH_LARGE_EVALUATE
 msgid "Large Eval"
-msgstr ""
+msgstr "«Eval» gran"
 
 #: marker.gcreason.label.DOM_WINDOW_UTILS
 msgctxt "marker.gcreason.label.DOM_WINDOW_UTILS"
@@ -406,6 +405,9 @@ msgid ""
 "JavaScript returned to the event loop and there were enough bytes allocated "
 "since the last GC that a new GC cycle was triggered."
 msgstr ""
+"JavaScript ha retornat al bucle d'esdeveniment i hi ha hagut prou bytes "
+"assignats des de l'última recollida de deixalles com per activar un cicle "
+"nou de recollida de deixalles."
 
 #: marker.gcreason.description.DESTROY_RUNTIME
 msgctxt "marker.gcreason.description.DESTROY_RUNTIME"
@@ -449,20 +451,21 @@ msgstr ""
 
 #: marker.gcreason.description.DEBUG_GC
 msgid "GC due to Zeal debug settings."
-msgstr "GC degut als paràmetres de depuració del Zeal."
+msgstr "Recollida de deixalles a causa dels paràmetres de depuració del Zeal."
 
 #: marker.gcreason.description.COMPARTMENT_REVIVED
 msgid ""
 "A global object that was thought to be dead at the start of the GC cycle was "
 "revived by the end of the GC cycle."
 msgstr ""
-"Un objecte global que es considerava mort en iniciar el cicle de GC ha estat "
-"ressucitat al final del cicle."
+"Un objecte global que es considerava mort en iniciar el cicle de recollida "
+"de deixalles ha estat ressuscitat al final del cicle."
 
 #: marker.gcreason.description.RESET
 msgid "The active incremental GC cycle was forced to finish immediately."
 msgstr ""
-"El cicle incremental actiu del GC ha estat forçat a finalitzar immediatament."
+"El cicle actiu de recollida de deixalles incremental ha estat forçat a "
+"finalitzar immediatament."
 
 #: marker.gcreason.description.OUT_OF_NURSERY
 msgid ""
@@ -523,12 +526,12 @@ msgstr "La memòria disponible era massa baixa."
 #: marker.gcreason.description.CC_WAITING
 msgctxt "marker.gcreason.description.CC_WAITING"
 msgid "The cycle collector required a garbage collection."
-msgstr "El cicle ha requerit una recollida de deixalles"
+msgstr "El col·lector de cicles ha requerit una recollida de deixalles."
 
 #: marker.gcreason.description.CC_FORCED
 msgctxt "marker.gcreason.description.CC_FORCED"
 msgid "The cycle collector required a garbage collection."
-msgstr "El cicle ha requerit una recollida de deixalles."
+msgstr "El col·lector de cicles ha requerit una recollida de deixalles."
 
 #: marker.gcreason.description.LOAD_END
 msgid "The document finished loading."
@@ -571,11 +574,14 @@ msgstr ""
 #: marker.gcreason.description.DOM_WORKER
 msgid "The worker was idle for a relatively long time."
 msgstr ""
+"El procés de treball ha estat inactiu durant un temps relativament llarg."
 
 #: marker.gcreason.description.INTER_SLICE_GC
 msgid ""
 "There has been a relatively long time since the last incremental GC slice."
 msgstr ""
+"Ha transcorregut un temps relativament llarg des de l'últim tall de "
+"recollida de deixalles incremental."
 
 #: marker.gcreason.description.FULL_GC_TIMER
 msgid ""
