@@ -1,16 +1,19 @@
+#. extracted from ./mobile/android/base/android_strings.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-18 17:09+0000\n"
+"POT-Creation-Date: 2015-10-30 03:09+0000\n"
 "PO-Revision-Date: 2015-11-06 10:17-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: es_MX\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #. This Source Code Form is subject to the terms of the Mozilla Public
 #. - License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -23,6 +26,11 @@ msgstr "Iñede aiyo íbɨrɨ &brandShortName;mo taɨjɨe"
 msgid ""
 "An error occurred when trying to load files required to run &brandShortName;"
 msgstr "Fɨgoñeno zuide nana rá taɨjɨna kaifo jóneyena"
+
+#: firstrun_panel_title_welcome
+#, fuzzy
+msgid "Welcome"
+msgstr "Fɨgo o biya"
 
 #: onboard_start_message3
 #, fuzzy
@@ -44,11 +52,44 @@ msgstr "Komo tainede con &brandShortName;"
 msgid "Start Browsing"
 msgstr "mai jaikana jái"
 
+#: firstrun_button_next
+#, fuzzy
+msgctxt "firstrun_button_next"
+msgid "Next"
+msgstr "Báɨfene"
+
 #: onboard_start_restricted1
 #, fuzzy
 msgid ""
 "Stay safe and in control with this simplified version of &brandShortName;."
 msgstr "Bíedo ó jónega íedo control bíe kaɨmanide version &brandShortName;."
+
+#: firstrun_import_title
+#, fuzzy
+msgctxt "firstrun_import_title"
+msgid "Import"
+msgstr "Atɨde"
+
+#: firstrun_import_message
+msgid "Welcome to &brandShortName;"
+msgstr ""
+
+#: firstrun_import_subtext
+msgid "Import your bookmarks and history from another browser."
+msgstr ""
+
+#: firstrun_import_action
+#, fuzzy
+msgid "Transfer to &brandShortName;"
+msgstr "Komo tainede con &brandShortName;"
+
+#: firstrun_import_dialog_button
+msgid "Transfer"
+msgstr ""
+
+#: firstrun_import_progress_title
+msgid "Transferring"
+msgstr ""
 
 #. Localization note: These are used as the titles of different pages on the home screen.
 #. They are automatically converted to all caps by the Android platform.
@@ -86,8 +127,8 @@ msgstr "Fɨgóñede yote  de &brandShortName;"
 #: crash_message2
 #, fuzzy
 msgid ""
-"&brandShortName; had a problem and crashed. Your tabs should be listed on the "
-"&brandShortName; Start page when you restart."
+"&brandShortName; had a problem and crashed. Your tabs should be listed on "
+"the &brandShortName; Start page when you restart."
 msgstr ""
 "&brandShortName; fɨgoñede íe ɨbáika. Taɨnía rabeniko ó iutɨraɨ dɨno ífɨrede "
 "&brandShortName; Abɨdo taɨníamo."
@@ -219,15 +260,17 @@ msgstr "Jabe"
 msgid "Yesterday"
 msgstr "Naúiri"
 
-#: history_week_section2
-#, fuzzy
-msgid "Last Week"
-msgstr "Jubekuiro menaámani mona"
+#: history_week_section3
+msgid "Last 7 days"
+msgstr ""
 
-#: history_older_section2
-#, fuzzy
-msgid "Last Month"
-msgstr "Náui mes"
+#: history_this_month_section
+msgid "This month"
+msgstr ""
+
+#: history_older_section3
+msgid "Older than 6 months"
+msgstr ""
 
 #: go
 #, fuzzy
@@ -283,16 +326,6 @@ msgstr "Fuitaka"
 msgid "Close Tab"
 msgstr "Uitɨraɨ ɨbai"
 
-#: tab_audio_playing
-#, fuzzy
-msgid "This tab is playing audio"
-msgstr "Abɨdo bóno audio bíemo  uitɨraɨ"
-
-#: tab_audio_muted
-#, fuzzy
-msgid "This tab has been muted"
-msgstr "Bíe úitiraɨ ja fɨkɨnide"
-
 #: one_tab
 #, fuzzy
 msgid "1 tab"
@@ -322,6 +355,17 @@ msgstr "Dáma  kue tuñoka Kómue úitɨraɨ"
 #, fuzzy
 msgid "SWITCH"
 msgstr "Méidote"
+
+#. Localization note (tab_title_prefix_is_playing_audio): This string is not
+#. visible in the UI, but rather used as a text-to-speech content description
+#. for sight-impaired a11y users. The content description is set on a tab
+#. title in a list of open tabs when content in that tab is playing audio.
+#. &formatS; will be replaced with the title of the tab, as received from the
+#. web page. When audio is not playing in a tab, &formatS; will be used as
+#. the content description.
+#: tab_title_prefix_is_playing_audio
+msgid "Playing audio – &formatS;"
+msgstr ""
 
 #: settings
 #, fuzzy
@@ -453,16 +497,13 @@ msgstr "Joriaɨmo nɨzeri "
 msgid "No Firefox Account connected devices found"
 msgstr "Baiñega fierefox Nitaoɨde Ráanɨaɨ"
 
-#. Localization note (overlay_share_tab_not_sent) : Used when the menu option
-#. to send a tab to a synced device is pressed and there is an error
-#. connecting to the server so the tab could not be sent. The text should be
-#. divided into two lines (use the newline escape character, "\n", between
-#. them): the first notifying the user about the failure and the second
-#. telling the user what to do about it.
-#: overlay_share_tab_not_sent
-#, fuzzy
-msgid "Your tab could not be sent.\\nPlease try again later."
-msgstr "Ó úitɨraɨ órenide. \\nPlease fúi abɨdo órerí."
+#. Localization note (menu_no_synced_devices): Used in a toast when the user
+#. clicks on the button to send a tab to another device and there are no
+#. other devices present. This label should briefly inform the user that they
+#. need another connected device in order to use the feature.
+#: menu_no_synced_devices
+msgid "Send this tab to another connected device"
+msgstr ""
 
 #: pref_category_search3
 #, fuzzy
@@ -553,8 +594,8 @@ msgstr "Já íte ráa ráifide abɨdo fɨnori"
 #: pref_search_hint
 #, fuzzy
 msgid ""
-"TIP: Add any website to your list of search providers by long-pressing on its "
-"search field and then tapping the &formatI; icon."
+"TIP: Add any website to your list of search providers by long-pressing on "
+"its search field and then tapping the &formatI; icon."
 msgstr ""
 "Yuamo: Benomo jóne web afemakɨ ráanɨaɨ jenóyena, dɨno  gátari aíyo fúedo "
 "abɨdo jána jétano ́ &formatI;. "
@@ -679,6 +720,18 @@ msgid ""
 "interesting"
 msgstr "Eróir ó rabe taɨneka jiyakɨmo ó gaɨde biémo "
 
+#: pref_category_home_homepage
+msgid "Homepage"
+msgstr ""
+
+#: home_homepage_title
+msgid "Set a Homepage"
+msgstr ""
+
+#: home_homepage_use_current_tab
+msgid "Use current tab"
+msgstr ""
+
 #. Localization note: These are shown in the left sidebar on tablets
 #: pref_header_customize
 #, fuzzy
@@ -744,13 +797,23 @@ msgctxt "pref_cookies_disabled"
 msgid "Disabled"
 msgstr "Já oni oga "
 
+#: pref_tap_to_load_images_title
+msgid "Tap-to-load images"
+msgstr ""
+
+#: pref_tap_to_load_images_summary2
+msgid "Load images only when you long press them"
+msgstr ""
+
 #: pref_tracking_protection_title
+#, fuzzy
 msgctxt "pref_tracking_protection_title"
 msgid "Tracking protection"
-msgstr ""
+msgstr "Ráiruika jénua"
 
 #: pref_tracking_protection_summary3
 #, fuzzy
+msgctxt "pref_tracking_protection_summary3"
 msgid "Enabled in Private Browsing"
 msgstr "Kúe dáma mákara íte ráa abɨdo taɨneka"
 
@@ -763,6 +826,24 @@ msgstr "Mai jenoñeno"
 #, fuzzy
 msgid "&brandShortName; will tell sites that you do not want to be tracked"
 msgstr "&brandShortName; yoitɨkue biemo jenokáñedɨkue "
+
+#: pref_tracking_protection_enabled
+#, fuzzy
+msgctxt "pref_tracking_protection_enabled"
+msgid "Enabled"
+msgstr "Ite ráa taɨneka abɨdo"
+
+#: pref_tracking_protection_enabled_pb
+#, fuzzy
+msgctxt "pref_tracking_protection_enabled_pb"
+msgid "Enabled in Private Browsing"
+msgstr "Kúe dáma mákara íte ráa abɨdo taɨneka"
+
+#: pref_tracking_protection_disabled
+#, fuzzy
+msgctxt "pref_tracking_protection_disabled"
+msgid "Disabled"
+msgstr "Já oni oga "
 
 #: tracking_protection_prompt_title
 #, fuzzy
@@ -911,11 +992,6 @@ msgstr "Já oni oga "
 msgid "Text size"
 msgstr "Text size"
 
-#: pref_reflow_on_zoom4
-#, fuzzy
-msgid "Text reflow"
-msgstr "Abɨdo ga+taka rabeniko"
-
 #: pref_restore
 #, fuzzy
 msgctxt "pref_restore"
@@ -1047,6 +1123,10 @@ msgstr "Ó úitɨraɨ dáamakɨ, rɨgɨnua, fakara ráa ie jágaɨ"
 #, fuzzy
 msgid "Show search suggestions"
 msgstr "Show search suggestions"
+
+#: pref_history_search_suggestions
+msgid "Show search history"
+msgstr ""
 
 #: pref_import_android
 #, fuzzy
@@ -1236,8 +1316,8 @@ msgstr "Fakáyena"
 #: datareporting_telemetry_summary
 #, fuzzy
 msgid ""
-"Shares performance, usage, hardware and customization data about your browser "
-"with &vendorShortName; to help us make &brandShortName; better"
+"Shares performance, usage, hardware and customization data about your "
+"browser with &vendorShortName; to help us make &brandShortName; better"
 msgstr ""
 "Fekayena taɨjɨe, hardware  kúe dáma ráa makara biedo &vendorShortName; kái "
 "kánoyena &brandShortName; Ñúera"
@@ -1269,8 +1349,8 @@ msgid ""
 "Help &vendorShortName; map the world! Share the approximate Wi-Fi and "
 "cellular location of your device to improve our geolocation service."
 msgstr ""
-"¡Kanoye &vendorShortName; énɨe! Féka ó iyano bíedo ó Wi-Fi ó joriaɨ dɨga jóne "
-"biedo geolocalización.   "
+"¡Kanoye &vendorShortName; énɨe! Féka ó iyano bíedo ó Wi-Fi ó joriaɨ dɨga "
+"jóne biedo geolocalización.   "
 
 #. Localization note (pref_update_autodownload2) : This should mention downloading
 #. specifically, since the pref only prevents automatic downloads and not the
@@ -1350,6 +1430,10 @@ msgstr "Unable to share this image"
 #, fuzzy
 msgid "Save as PDF"
 msgstr "Óni jone PDF"
+
+#: print
+msgid "Print"
+msgstr ""
 
 #: find_in_page
 #, fuzzy
@@ -1438,6 +1522,7 @@ msgstr "Jɨáɨkena"
 
 #: find_next
 #, fuzzy
+msgctxt "find_next"
 msgid "Next"
 msgstr "Báɨfene"
 
@@ -1549,6 +1634,14 @@ msgstr "Unpin Site"
 msgid "Add a Search Engine"
 msgstr "Dá ráya jénoyena zota."
 
+#: contextmenu_mark_read
+msgid "Mark as read"
+msgstr ""
+
+#: contextmenu_mark_unread
+msgid "Mark as unread"
+msgstr ""
+
 #. Localization note (doorhanger_login_no_username): This string is used in the save-login doorhanger
 #. where normally a username would be displayed. In this case, no username was found, and this placeholder
 #. contains brackets to indicate this is not actually a username, but rather a placeholder
@@ -1625,15 +1718,13 @@ msgstr "Rábe íyano ákatari"
 
 #. Localization note (pref_prevent_magnifying_glass): Label for setting that controls
 #. whether or not the magnifying glass is disabled.
-#: pref_prevent_magnifying_glass
-#, fuzzy
-msgid "Disable magnifying glass "
-msgstr "Eróirako óni jone"
+#: pref_magnifying_glass_enabled
+msgid "Magnify small areas"
+msgstr ""
 
-#: pref_prevent_magnifying_glass_summary
-#, fuzzy
-msgid "Prevent magnifying glass for use in resolving ambiguous screen touches"
-msgstr "Eróirako jitɨrede éroiya ráa bonoñeno"
+#: pref_magnifying_glass_enabled_summary
+msgid "Enlarge links and form fields when tapping near them"
+msgstr ""
 
 #. Localization note (pref_scroll_title_bar2): Label for setting that controls
 #. whether or not the dynamic toolbar is enabled.
@@ -1816,11 +1907,6 @@ msgstr "Dote "
 #, fuzzy
 msgid "Copy"
 msgstr "Fakádote"
-
-#: firstrun_panel_title_welcome
-#, fuzzy
-msgid "Welcome"
-msgstr "Fɨgo o biya"
 
 #: home_top_sites_title
 #, fuzzy
@@ -2067,42 +2153,29 @@ msgstr "Ñúe nítade."
 msgid "Insecure connection"
 msgstr "Ñúe nitánoñede."
 
+#: identity_login_insecure
+msgid "This page is not secure and your login could be vulnerable."
+msgstr ""
+
 #. Mixed content notifications in site identity popup
-#: mixed_content_blocked_all
+#: mixed_content_blocked_all1
 #, fuzzy
-msgid "&brandShortName; has blocked insecure elements on this page."
+msgid "&brandShortName; has blocked insecure content on this page."
 msgstr "&brandShortName; Já béno ɨbaika ráɨe rabénikomo."
 
-#: mixed_content_blocked_some
+#: mixed_content_blocked_some1
 #, fuzzy
-msgid "&brandShortName; has blocked some insecure elements on this page."
+msgid "&brandShortName; has blocked some of the insecure content on this page."
 msgstr "Já béno ɨbaika  ráɨe kɨgɨmo rabénikomo."
 
-#: mixed_content_display_loaded
-#, fuzzy
-msgid "This page has some insecure elements."
-msgstr "Biemo kɨgɨmo ráɨe ñue íñede."
+#: mixed_content_display_loaded1
+msgid "Parts of this page are not secure (such as images)."
+msgstr ""
 
-#: mixed_content_protection_disabled
+#: mixed_content_protection_disabled1
 #, fuzzy
-msgid "You have disabled protection from insecure elements."
+msgid "You have disabled protection from insecure content."
 msgstr "Já  ɨbaidɨo okúiri ráɨe  ñueñede."
-
-#: loaded_mixed_content_message
-#, fuzzy
-msgid "This page is displaying content that isn't secure."
-msgstr "Bíe íte rábeniko akátate  ñúeñede."
-
-#: blocked_mixed_content_message_top
-#, fuzzy
-msgid "&brandShortName; has blocked content that isn't secure."
-msgstr "&brandShortName; Benomo íte ñueñede já ɨbaika."
-
-#: blocked_mixed_content_message_bottom
-#, fuzzy
-msgid ""
-"Most websites will still work properly even when this content is blocked."
-msgstr "Áiyo íte web bénomo ñue íte  iadɨ béno ɨbáika."
 
 #. Tracking content notifications in site identity popup
 #: doorhanger_tracking_title
@@ -2166,6 +2239,7 @@ msgstr "Dóinide dáma Kúe ráa."
 
 #: bookmarkhistory_button_import
 #, fuzzy
+msgctxt "bookmarkhistory_button_import"
 msgid "Import"
 msgstr "Atɨde"
 
@@ -2304,8 +2378,8 @@ msgstr "&brandShortName; Abɨdo Taɨneye  Bírui"
 #, fuzzy
 msgid ""
 "The person using it will not be able to see any of your personal browsing "
-"data (like saved logins, history or bookmarks).\\n\\nWhen your guest is done, "
-"their browsing data will be deleted and your session will be restored."
+"data (like saved logins, history or bookmarks).\\n\\nWhen your guest is "
+"done, their browsing data will be deleted and your session will be restored."
 msgstr ""
 "Kóme éróñeite mákara ráanáɨ  ( Nɨe fákara ráa, jaganɨai ñue enóga)\\n\\n Ó "
 "yoraɨma fúitari, nána íe ránɨaɨ oni dotaye, íemo  abɨdo taxneye."
@@ -2405,6 +2479,27 @@ msgstr "Aa"
 msgid "Cannot open link"
 msgstr "Tuinide áfe rá "
 
+#. This string will
+#. appear in an alert when a user, who is currently in private browsing,
+#. clicks a link that will open an external Android application. "&formatS;"
+#. will be replaced with the name of the application that will be opened.
+#: intent_uri_private_browsing_prompt
+msgid ""
+"This link will open in &formatS;. Are you sure you want to exit Private "
+"Browsing?"
+msgstr ""
+
+#. This
+#. string will appear as the title of an alert when a user, who is currently
+#. in private browsing, clicks a link that will open an external Android
+#. application and more than one application is available to open that link.
+#. We don't have control over the style of this dialog and it looks
+#. unpolished when this string is longer than one line so ideally keep it
+#. short!
+#: intent_uri_private_browsing_multiple_match_title
+msgid "Exit Private Browsing?"
+msgstr ""
+
 #. DevTools Authentication
 #. This header text appears
 #. above a QR reader that is actively scanning for QR codes.  The expected QR
@@ -2468,3 +2563,79 @@ msgstr "Yofueraɨma  fakára ráa oni oga "
 #, fuzzy
 msgid "Disable Guest Browsing"
 msgstr "Yóoraide makara já oni oga"
+
+#. Default Bookmarks titles
+#. link title for about:fennec
+#: bookmarks_about_browser
+msgid "Firefox: About your browser"
+msgstr ""
+
+#. link title for https://addons.mozilla.org/en-US/mobile
+#: bookmarks_addons
+msgid "Firefox: Customize with add-ons"
+msgstr ""
+
+#. link title for https://support.mozilla.org/
+#: bookmarks_support
+msgid "Firefox: Support"
+msgstr ""
+
+#. LOCALIZATION NOTE (bookmarks_restricted_support): link title for https://support.mozilla.org/kb/controlledaccess
+#: bookmarks_restricted_support2
+msgid "Firefox Help and Support for restricted profiles on Android tablets"
+msgstr ""
+
+#. link title for https://webmaker.org
+#: bookmarks_restricted_webmaker
+msgid "Learn the Web: Mozilla Webmaker"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Last Week"
+#~ msgstr "Jubekuiro menaámani mona"
+
+#, fuzzy
+#~ msgid "Last Month"
+#~ msgstr "Náui mes"
+
+#, fuzzy
+#~ msgid "This tab is playing audio"
+#~ msgstr "Abɨdo bóno audio bíemo  uitɨraɨ"
+
+#, fuzzy
+#~ msgid "This tab has been muted"
+#~ msgstr "Bíe úitiraɨ ja fɨkɨnide"
+
+#, fuzzy
+#~ msgid "Your tab could not be sent.\\nPlease try again later."
+#~ msgstr "Ó úitɨraɨ órenide. \\nPlease fúi abɨdo órerí."
+
+#, fuzzy
+#~ msgid "Text reflow"
+#~ msgstr "Abɨdo ga+taka rabeniko"
+
+#, fuzzy
+#~ msgid "Disable magnifying glass "
+#~ msgstr "Eróirako óni jone"
+
+#, fuzzy
+#~ msgid ""
+#~ "Prevent magnifying glass for use in resolving ambiguous screen touches"
+#~ msgstr "Eróirako jitɨrede éroiya ráa bonoñeno"
+
+#, fuzzy
+#~ msgid "This page has some insecure elements."
+#~ msgstr "Biemo kɨgɨmo ráɨe ñue íñede."
+
+#, fuzzy
+#~ msgid "This page is displaying content that isn't secure."
+#~ msgstr "Bíe íte rábeniko akátate  ñúeñede."
+
+#, fuzzy
+#~ msgid "&brandShortName; has blocked content that isn't secure."
+#~ msgstr "&brandShortName; Benomo íte ñueñede já ɨbaika."
+
+#, fuzzy
+#~ msgid ""
+#~ "Most websites will still work properly even when this content is blocked."
+#~ msgstr "Áiyo íte web bénomo ñue íte  iadɨ béno ɨbáika."
