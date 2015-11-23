@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 12:22+0000\n"
-"PO-Revision-Date: 2015-11-23 14:11+0000\n"
-"Last-Translator: Mahir Bin Farooque <mahirfarook@gmail.com>\n"
+"PO-Revision-Date: 2015-11-23 14:57+0000\n"
+"Last-Translator: Hrishi <hrishi.kb@gmail.com>\n"
 "Language-Team: none\n"
 "Language: ml\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1448287901.000000\n"
+"X-POOTLE-MTIME: 1448290664.000000\n"
 
 #. # LOCALIZATION NOTE These strings are used inside the Performance Tools
 #. # which is available from the Web Developer sub-menu -> 'Performance'.
@@ -453,6 +453,8 @@ msgid ""
 "A global object that was thought to be dead at the start of the GC cycle was "
 "revived by the end of the GC cycle."
 msgstr ""
+"ജിസി സൈക്കിളിന്റെ തുടക്കത്തിൽ നിർജ്ജീവമെന്ന് കരുതിയിരുന്ന ഒരു ഗ്ലോബൽ ഒബ്ജെക്റ്റ് ജിസി "
+"സൈക്കിളിന്റെ അവസാനം പുനരുജ്ജീവിപ്പിക്കപ്പെട്ടിട്ടുണ്ട്."
 
 #: marker.gcreason.description.RESET
 msgid "The active incremental GC cycle was forced to finish immediately."
@@ -463,18 +465,24 @@ msgid ""
 "JavaScript allocated enough new objects in the nursery that it became full "
 "and triggered a minor GC."
 msgstr ""
+"ജാവസ്ക്രിപ്റ്റ് നഴ്സറിയിൽ ആവശ്യത്തിനു പുതിയ ഒബ്ജറ്റുകളെ അലോക്കേറ്റ് ചെയ്തതിന്റെ ഫലമായി അത് "
+"നിറയുകയും ചെറിയൊരു ഗാർബേജ് കളക്ഷൻ ട്രിഗർ ചെയ്യപ്പെടുകയും ചെയ്തിട്ടുണ്ട്."
 
 #: marker.gcreason.description.EVICT_NURSERY
 msgid ""
 "Work needed to be done on the tenured heap, requiring the nursery to be "
 "empty."
 msgstr ""
+"ഉപയോഗത്തിലിരിക്കുന്ന ഹീപ്പിൽ വർക്ക് ചെയ്യേണ്ടുന്നതിനായി നഴ്സറി കാലിയാക്കേണ്ടതായി "
+"വന്നിരിക്കുന്നു."
 
 #: marker.gcreason.description.FULL_STORE_BUFFER
 msgid ""
 "There were too many properties on tenured objects whose value was an object "
 "in the nursery."
 msgstr ""
+"ഉപയോഗത്തിലിരിക്കുന്ന ഒബ്ജക്റ്റുകൾക്ക് നഴ്സറിയിലെ ഒരു ഒബ്ജക്റ്റ് മൂല്യമായിട്ടുള്ള ഒരുപാട് "
+"പ്രോപ്പർട്ടികളുണ്ട്."
 
 #: marker.gcreason.description.SHARED_MEMORY_LIMIT
 msgid "A large allocation was requested, but there was not enough memory."
@@ -485,6 +493,8 @@ msgid ""
 "JavaScript returned to the event loop, and it has been a relatively long "
 "time since Firefox performed a garbage collection."
 msgstr ""
+"ജാവാസ്ക്രിപ്റ്റ് ഒരു ഇവന്റ് ലൂപ്പ് റിട്ടേൺ ചെയ്തിരിക്കുന്നു. കൂടാതെ ഫയർഫോക്സ് ഗാർബേജ് കളക്ഷൻ "
+"ചെയ്തിട്ട് താരതമ്യേന കുറച്ചധികം സമയമായി."
 
 #: marker.gcreason.description.INCREMENTAL_TOO_SLOW
 msgid ""
@@ -492,24 +502,26 @@ msgid ""
 "faster rate of allocations than the existing incremental garbage collection "
 "cycle could keep up with."
 msgstr ""
+"നിലവില്‍ ഉള്ള ഇന്‍ക്രിമെന്‍റല്‍ ഗാര്‍ബേജ് ശേഖരണ സൈക്കിളിനു ഒത്തു പോകാന്‍ കഴിയാത്ത വേഗത്തില്‍ "
+"അലോക്കേഷന്‍ ഉള്ളതിനാല്‍ ഒരു മുഴുവന്‍ നോണ്‍-ഇന്‍ക്രിമെന്‍റല്‍ ഗാര്‍ബേജ് ശേഖരണം ട്രിഗര്‍ ചെയ്തിട്ടുണ്ട്."
 
 #: marker.gcreason.description.COMPONENT_UTILS
 msgid "Components.utils.forceGC() was called to force a garbage collection."
-msgstr ""
+msgstr "ഗാര്‍ബേജ് ശേഖരം ആവശ്യമായതിനാല്‍ Components.utils.forceGC() നെ വിളിച്ചിട്ടുണ്ട്."
 
 #: marker.gcreason.description.MEM_PRESSURE
 msgid "There was very low memory available."
-msgstr ""
+msgstr "അവിടെ വളരെ കുറഞ്ഞ മെമ്മറിയാണ് ലഭ്യമായത്."
 
 #: marker.gcreason.description.CC_WAITING
 msgctxt "marker.gcreason.description.CC_WAITING"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "സൈക്കിള്‍ കളക്റ്ററിനു ഒരു ഗാര്‍ബേജ് കളക്ഷന്‍ ആവശ്യമായിട്ടുണ്ട്."
 
 #: marker.gcreason.description.CC_FORCED
 msgctxt "marker.gcreason.description.CC_FORCED"
 msgid "The cycle collector required a garbage collection."
-msgstr ""
+msgstr "സൈക്കിള്‍ കളക്റ്ററിനു ഒരു ഗാര്‍ബേജ് കളക്ഷന്‍ ആവശ്യമായിട്ടുണ്ട്."
 
 #: marker.gcreason.description.LOAD_END
 msgid "The document finished loading."
@@ -525,34 +537,36 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"ഒരു ജാവാസ്ക്രിപ്റ്റ് റൺടൈമോ കോണ്ടക്സ്റ്റോ ഫയർഫോക്സ് നശിപ്പിച്ചിരിക്കുന്നു. അടച്ചുപൂട്ടുന്നതിനുമുൻപായി "
+"അവസാനമായുള്ള ഗാർബേജ് കളക്ഷനായിരുന്നു ഇത്."
 
 #: marker.gcreason.description.SET_NEW_DOCUMENT
 msgctxt "marker.gcreason.description.SET_NEW_DOCUMENT"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "ഈ പേജ് ഒരു പുതിയ ഡോകുമെന്റിലെക്ക് നാവിഗേറ്റ് ചെയ്തിട്ടുണ്ട്."
 
 #: marker.gcreason.description.SET_DOC_SHELL
 msgctxt "marker.gcreason.description.SET_DOC_SHELL"
 msgid "The page has been navigated to a new document."
-msgstr ""
+msgstr "ഈ പേജ് ഒരു പുതിയ ഡോകുമെന്റിലെക്ക് നാവിഗേറ്റ് ചെയ്തിട്ടുണ്ട്."
 
 #: marker.gcreason.description.DOM_UTILS
 msgctxt "marker.gcreason.description.DOM_UTILS"
 msgid "There was an API call to force garbage collection."
-msgstr ""
+msgstr "ഗാര്‍ബേജ് ശേഖരം നിര്‍ബന്ധിച്ച് കൊണ്ട് ഒരു API വിളി ഉണ്ടായിരുന്നു."
 
 #: marker.gcreason.description.DOM_IPC
 msgid "Received an inter-process message that requested a garbage collection."
-msgstr ""
+msgstr "ഗാര്‍ബേജ് കളക്ഷന്‍ ആവശ്യപ്പെട്ടുകൊണ്ട് ഒരു ഇന്റര്‍-പ്രോസെസ് സന്ദേശം കിട്ടിയിട്ടുണ്ട്."
 
 #: marker.gcreason.description.DOM_WORKER
 msgid "The worker was idle for a relatively long time."
-msgstr ""
+msgstr "ആപേക്ഷികമായി ഒരു നീണ്ട സമയത്തേക്ക് വര്‍ക്കര്‍ ഒന്നും ചെയ്തിട്ടില്ലായിരുന്നു."
 
 #: marker.gcreason.description.INTER_SLICE_GC
 msgid ""
 "There has been a relatively long time since the last incremental GC slice."
-msgstr ""
+msgstr "അവസാനത്തെ ഇൻക്രിമെന്റൽ ജിസി സ്ലൈസിനു ശേഷം താരതമ്യേന കുറച്ചധികം സമയമായി."
 
 #: marker.gcreason.description.FULL_GC_TIMER
 msgid ""
@@ -566,6 +580,8 @@ msgid ""
 "Firefox destroyed a JavaScript runtime or context, and this was the final "
 "garbage collection before shutting down."
 msgstr ""
+"ഒരു ജാവാസ്ക്രിപ്റ്റ് റൺടൈമോ കോണ്ടക്സ്റ്റോ ഫയർഫോക്സ് നശിപ്പിച്ചിരിക്കുന്നു. അടച്ചുപൂട്ടുന്നതിനു മുൻപായി "
+"അവസാനമായുള്ള ഗാർബേജ് കളക്ഷനായിരുന്നു ഇത്."
 
 #: marker.gcreason.description.FINISH_LARGE_EVALUATE
 msgid ""
