@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-11 01:38+0000\n"
-"PO-Revision-Date: 2015-12-05 21:20+0000\n"
+"PO-Revision-Date: 2015-12-08 19:38+0000\n"
 "Last-Translator: Paulius And <ekstras@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: lt\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1449350432.000000\n"
+"X-POOTLE-MTIME: 1449603521.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -347,14 +347,13 @@ msgstr ""
 "Užklausa naudoti visą ekraną nepatenkinta, nes dokumentas jau yra nematomas."
 
 #: FullScreenDeniedContainerNotAllowed
-#, fuzzy
 msgid ""
 "Request for full-screen was denied because at least one of the document's "
 "containing element is not iframe or does not have an \"allowfullscreen\" "
 "attribute."
 msgstr ""
-"Užklausa naudoti visą ekraną nepatenkinta, nes bent vienam aukštesniojo "
-"lygio „iframe“ elementui nesuteiktas „allowfullscreen“ atributas."
+"Užklausa naudoti visą ekraną atmesta, nes bent vienas aukštesniojo lygio "
+"elementas nėra „iframe“ tipo arba neturi „allowfullscreen“ atributo."
 
 #: FullScreenDeniedNotInputDriven
 msgid ""
@@ -562,6 +561,8 @@ msgid ""
 "MediaStreamTrack %S could not be added since it belongs to a different "
 "AudioChannel."
 msgstr ""
+"Nepavyko pridėti „MediaStreamTrack“ %S, nes šis priklauso kitam "
+"„AudioChannel“."
 
 #. # LOCALIZATION NOTE: Do not translate "MediaStream", "stop()" and "MediaStreamTrack"
 #: MediaStreamStopDeprecatedWarning
@@ -569,6 +570,8 @@ msgid ""
 "MediaStream.stop() is deprecated and will soon be removed. Use "
 "MediaStreamTrack.stop() instead."
 msgstr ""
+"„MediaStream.stop()“ yra nenaudotinas ir netrukus bus panaikintas. Vietoje "
+"jo naudokite „MediaStreamTrack.stop()“."
 
 #. # LOCALIZATION NOTE: Do not translate "DOMException", "code" and "name"
 #: DOMExceptionCodeWarning
@@ -836,6 +839,9 @@ msgid ""
 "The Application Cache API (AppCache) is deprecated and will be removed at a "
 "future date.  Please consider using ServiceWorker for offline support."
 msgstr ""
+"„Application Cache API“ (AppCache) yra nenaudotinas ir ateityje bus "
+"panaikintas.  Darbo neprisijungus palaikymui siūlome naudoti „ServiceWorker“ "
+"scenarijų."
 
 #. # LOCALIZATION NOTE: Do not translate "Worker".
 #: EmptyWorkerSourceWarning
@@ -850,12 +856,16 @@ msgid ""
 "WebRTC interfaces with the \"moz\" prefix (mozRTCPeerConnection, "
 "mozRTCSessionDescription, mozRTCIceCandidate) have been deprecated."
 msgstr ""
+"„WebRTC“ sąsajos su „moz“ priešdėliu (mozRTCPeerConnection, "
+"mozRTCSessionDescription, mozRTCIceCandidate) yra nenaudotinos."
 
 #: NavigatorGetUserMediaWarning
 msgid ""
 "navigator.mozGetUserMedia has been replaced by navigator.mediaDevices."
 "getUserMedia"
 msgstr ""
+"„navigator.mozGetUserMedia“ buvo pakeista į „navigator.mediaDevices."
+"getUserMedia“"
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %S is a URL.
 #: InterceptionFailedWithURL
@@ -863,6 +873,8 @@ msgid ""
 "Failed to load '%S'. A ServiceWorker intercepted the request and encountered "
 "an unexpected error."
 msgstr ""
+"Nepavyko įkelti „%S“. „ServiceWorker“ scenarijus perėmė užklausą ir susidūrė "
+"su netikėta klaida."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "FetchEvent.respondWith()", "opaque", or "Response". %S is a URL.
 #: OpaqueInterceptionDisabledWithURL
@@ -880,6 +892,10 @@ msgid ""
 "FetchEvent.respondWith() while handling a '%2$S' FetchEvent. Opaque Response "
 "objects are only valid when the RequestMode is 'no-cors'."
 msgstr ""
+"Nepavyko įkelti „%1$S“. „ServiceWorker“ scenarijus, apdorodamas "
+"„%2$S“ „FetchEvent“ įvykį, perdavė neskaidrų atsaką į „FetchEvent."
+"respondWith()“ užklausą. Neskaidrūs atsako objektai galioja tik tada, kai "
+"„RequestMode“ yra „no-cors“ tipo."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "Error", "Response", "FetchEvent.respondWith()", or "fetch()". %S is a URL.
 #: InterceptedErrorResponseWithURL
@@ -909,6 +925,9 @@ msgid ""
 "Failed to load '%S'. A ServiceWorker passed an opaqueredirect Response to "
 "FetchEvent.respondWith() while handling a non-navigation FetchEvent."
 msgstr ""
+"Nepavyko įkelti „%S“. „ServiceWorker“ scenarijus, apdorodamas ne naršymo "
+"„FetchEvent“ įvykį, perdavė neskaidrų „opaqueredirect“ atsaką į „FetchEvent."
+"respondWith()“ užklausą."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker" or "FetchEvent.preventDefault()". %S is a URL.
 #: InterceptionCanceledWithURL
@@ -916,6 +935,8 @@ msgid ""
 "Failed to load '%S'. A ServiceWorker canceled the load by calling FetchEvent."
 "preventDefault()."
 msgstr ""
+"Nepavyko įkelti „%S“. „ServiceWorker“ scenarijus nutraukė įkėlimą "
+"iškviesdamas „FetchEvent.preventDefault()“."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "promise", or "FetchEvent.respondWith()". %1$S is a URL. %2$S is an error string.
 #: InterceptionRejectedResponseWithURL
@@ -923,6 +944,8 @@ msgid ""
 "Failed to load '%1$S'. A ServiceWorker passed a promise to FetchEvent."
 "respondWith() that rejected with '%2$S'."
 msgstr ""
+"Nepavyko įkelti „%1$S“. „ServiceWorker“ scenarijus perdavė „promise“ į "
+"„FetchEvent.respondWith()“, kuris grąžino „%2$S“."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "promise", "FetchEvent.respondWith()", or "Response". %1$S is a URL. %2$S is an error string.
 #: InterceptedNonResponseWithURL
@@ -930,6 +953,8 @@ msgid ""
 "Failed to load '%1$S'. A ServiceWorker passed a promise to FetchEvent."
 "respondWith() that resolved with non-Response value '%2$S'."
 msgstr ""
+"Nepavyko įkelti „%1$S“. „ServiceWorker“ scenarijus perdavė „promise“ į "
+"„FetchEvent.respondWith()“, kuris atsakė su ne „Response“ reikšme „%2$S“."
 
 #~ msgid ""
 #~ "ServiceWorker network interception failed due to an unexpected error."
