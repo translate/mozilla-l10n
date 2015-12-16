@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from ./browser/chrome/browser/devtools/memory.properties
+#. extracted from ./devtools/client/memory.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-30 21:15+0000\n"
+"POT-Creation-Date: 2015-12-16 16:52+0000\n"
 "PO-Revision-Date: 2015-10-31 04:27+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: none\n"
@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1446265658.000000\n"
@@ -46,6 +46,30 @@ msgstr ""
 #: memory.tooltip
 msgctxt "memory.tooltip"
 msgid "Memory"
+msgstr ""
+
+#. # LOCALIZATION NOTE (snapshot.io.save): The label for the link that saves a snapshot
+#. # to disk.
+#: snapshot.io.save
+msgid "Save"
+msgstr ""
+
+#. # LOCALIZATION NOTE (snapshot.io.save.window): The title for the window displayed when
+#. # saving a snapshot to disk.
+#: snapshot.io.save.window
+msgid "Save Heap Snapshot"
+msgstr ""
+
+#. # LOCALIZATION NOTE (snapshot.io.import.window): The title for the window displayed when
+#. # importing a snapshot form disk.
+#: snapshot.io.import.window
+msgid "Import Heap Snapshot"
+msgstr ""
+
+#. # LOCALIZATION NOTE (snapshot.io.filter): The title for the filter used to
+#. # filter file types (*.fxsnapshot)
+#: snapshot.io.filter
+msgid "Firefox Heap Snapshots"
 msgstr ""
 
 #. # LOCALIZATION NOTE (aggregate.mb): The label annotating the number of bytes (in megabytes)
@@ -84,6 +108,30 @@ msgstr ""
 msgid "Take snapshot"
 msgstr ""
 
+#. # LOCALIZATION NOTE (import-snapshot): The label describing the button that initiates
+#. # importing a snapshot.
+#: import-snapshot
+msgid "Import…"
+msgstr ""
+
+#. # LOCALIZATION NOTE (diff-snapshots): The label for the button that initiates
+#. # selecting two snapshots to diff with each other.
+#: diff-snapshots
+msgid "+/-"
+msgstr ""
+
+#. # LOCALIZATION NOTE (diff-snapshots.tooltip): The tooltip for the button that
+#. # initiates selecting two snapshots to diff with each other.
+#: diff-snapshots.tooltip
+msgid "Compare snapshots"
+msgstr ""
+
+#. # LOCALIZATION NOTE (filter.placeholder): The placeholder text used for the
+#. # memory tool's filter search box.
+#: filter.placeholder
+msgid "Filter"
+msgstr ""
+
 #. # LOCALIZATION NOTE (viewsourceindebugger): The label for the tooltip when hovering over
 #. # a link in the heap tree to jump to the debugger view.
 #. # %S represents the URL to match in the debugger.
@@ -97,6 +145,13 @@ msgstr ""
 msgid "(no stack available)"
 msgstr ""
 
+#. # LOCALIZATION NOTE (tree-item.nofilename): The label describing the row in the
+#. # heap tree that represents a row broken down by filename when no filename was
+#. # available.
+#: tree-item.nofilename
+msgid "(no filename available)"
+msgstr ""
+
 #. # LOCALIZATION NOTE (tree-item.root): The label describing the row in the heap tree
 #. # that represents the root of the tree when inverted.
 #: tree-item.root
@@ -108,30 +163,106 @@ msgstr ""
 msgid "%S%"
 msgstr ""
 
-#. # LOCALIZATION NOTE (snapshot.state.saving.full): The label describing the snapshot
-#. # state SAVING, used in the main heap view.
+#. # LOCALIZATION NOTE (diffing.baseline): The name of the baseline snapshot in a
+#. # diffing comparison.
+#: diffing.baseline
+msgid "Baseline"
+msgstr ""
+
+#. # LOCALIZATION NOTE (diffing.comparison): The name of the snapshot being
+#. # compared to the baseline in a diffing comparison.
+#: diffing.comparison
+msgid "Comparison"
+msgstr ""
+
+#. # LOCALIZATION NOTE (diffing.prompt.selectBaseline): The prompt to select the
+#. # first snapshot when doing a diffing comparison.
+#: diffing.prompt.selectBaseline
+msgid "Select the baseline snapshot"
+msgstr ""
+
+#. # LOCALIZATION NOTE (diffing.prompt.selectComparison): The prompt to select the
+#. # second snapshot when doing a diffing comparison.
+#: diffing.prompt.selectComparison
+msgid "Select the snapshot to compare to the baseline"
+msgstr ""
+
+#. # LOCALIZATION NOTE (diffing.state.error): The label describing the diffing
+#. # state ERROR, used in the snapshot list when an error occurs while diffing two
+#. # snapshots.
+#: diffing.state.error
+msgctxt "diffing.state.error"
+msgid "Error"
+msgstr ""
+
+#. # LOCALIZATION NOTE (diffing.state.error.full): The text describing the diffing
+#. # state ERROR, used in the main view when an error occurs while diffing two
+#. # snapshots.
+#: diffing.state.error.full
+msgid "There was an error while comparing snapshots"
+msgstr ""
+
+#. # LOCALIZATION NOTE (diffing.state.taking-diff): The label describing the diffin
+#. # state TAKING_DIFF, used in the snapshots list when computing the difference
+#. # between two snapshots.
+#: diffing.state.taking-diff
+msgctxt "diffing.state.taking-diff"
+msgid "Computing difference…"
+msgstr ""
+
+#. # LOCALIZATION NOTE (diffing.state.taking-diff.full): The label describing the
+#. # diffing state TAKING_DIFF, used in the main view when computing the difference
+#. # between two snapshots.
+#: diffing.state.taking-diff.full
+msgctxt "diffing.state.taking-diff.full"
+msgid "Computing difference…"
+msgstr ""
+
+#. # LOCALIZATION NOTE (diffing.state.selecting): The label describing the diffing
+#. # state SELECTING.
+#: diffing.state.selecting
+msgctxt "diffing.state.selecting"
+msgid "Select two snapshots to compare"
+msgstr ""
+
+#. # LOCALIZATION NOTE (diffing.state.selecting.full): The label describing the
+#. # diffing state SELECTING, used in the main view when selecting snapshots to
+#. # diff.
+#: diffing.state.selecting.full
+msgctxt "diffing.state.selecting.full"
+msgid "Select two snapshots to compare"
+msgstr ""
+
+#. # LOCALIZATION NOTE (snapshot.state.saving.full): The label describing the
+#. # snapshot state SAVING, used in the main heap view.
 #: snapshot.state.saving.full
 msgctxt "snapshot.state.saving.full"
 msgid "Saving snapshot…"
 msgstr ""
 
-#. # LOCALIZATION NOTE (snapshot.state.reading.full): The label describing the snapshot
-#. # state READING, and SAVED, due to these states being combined visually, used
-#. # in the main heap view.
+#. # LOCALIZATION NOTE (snapshot.state.importing.full): The label describing the
+#. # snapshot state IMPORTING, used in the main heap view.
+#: snapshot.state.importing.full
+msgid "Importing…"
+msgstr ""
+
+#. # LOCALIZATION NOTE (snapshot.state.reading.full): The label describing the
+#. # snapshot state READING, and SAVED, due to these states being combined
+#. # visually, used in the main heap view.
 #: snapshot.state.reading.full
 msgctxt "snapshot.state.reading.full"
 msgid "Reading snapshot…"
 msgstr ""
 
-#. # LOCALIZATION NOTE (snapshot.state.saving-census.full): The label describing the snapshot
-#. # state SAVING, used in the main heap view.
+#. # LOCALIZATION NOTE (snapshot.state.saving-census.full): The label describing
+#. # the snapshot state SAVING, used in the main heap view.
 #: snapshot.state.saving-census.full
 msgctxt "snapshot.state.saving-census.full"
 msgid "Saving census…"
 msgstr ""
 
-#. # LOCALIZATION NOTE (snapshot.state.error.full): The label describing the snapshot
-#. # state ERROR, used in the main heap view.
+#. # LOCALIZATION NOTE (snapshot.state.error.full): The label describing the
+#. # snapshot state ERROR, used in the main heap view.
 #: snapshot.state.error.full
 msgid "There was an error processing this snapshot."
 msgstr ""
@@ -143,16 +274,22 @@ msgctxt "snapshot.state.saving"
 msgid "Saving snapshot…"
 msgstr ""
 
+#. # LOCALIZATION NOTE (snapshot.state.importing): The label describing the
+#. # snapshot state IMPORTING, used in the snapshot list view
+#: snapshot.state.importing
+msgid "Importing snapshot…"
+msgstr ""
+
 #. # LOCALIZATION NOTE (snapshot.state.reading): The label describing the snapshot
-#. # state READING, and SAVED, due to these states being combined visually, used
-#. # in the snapshot list view.
+#. # state READING, and SAVED, due to these states being combined visually, used in
+#. # the snapshot list view.
 #: snapshot.state.reading
 msgctxt "snapshot.state.reading"
 msgid "Reading snapshot…"
 msgstr ""
 
-#. # LOCALIZATION NOTE (snapshot.state.saving-census): The label describing the snapshot
-#. # state SAVING, used in snapshot list view.
+#. # LOCALIZATION NOTE (snapshot.state.saving-census): The label describing the
+#. # snapshot state SAVING, used in snapshot list view.
 #: snapshot.state.saving-census
 msgctxt "snapshot.state.saving-census"
 msgid "Saving census…"
@@ -161,6 +298,7 @@ msgstr ""
 #. # LOCALIZATION NOTE (snapshot.state.error): The label describing the snapshot
 #. # state ERROR, used in the snapshot list view.
 #: snapshot.state.error
+msgctxt "snapshot.state.error"
 msgid "Error"
 msgstr ""
 
