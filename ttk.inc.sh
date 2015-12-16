@@ -773,6 +773,51 @@ function update_last_commit_file {
 	mv $new_commit_file $last_commit_file
 }
 
+####### Contributors ##############
+
+function list_contributors {
+	option_project="--project=$project"
+	option_change_id=""
+	option_language=""
+	if [[ $# -ge 1 ]]; then
+		option_language="--language=$1"
+	fi
+	if [[ $# -eq 2 ]]; then
+		option_change_id="--from-revision=$2"
+	fi
+	options_change_id="$2"
+	ssh $user@$server $precommand python $manage_command contributors --verbosity=$manage_py_verbosity $option_project $option_language $option_change_id
+}
+
+function count_contributors {
+	list_contributors $1 $2 | wc -l
+}
+
+####### Commit message related ###########
+
+function commit_author {
+	lang=$1
+	change_id=$2
+	author=$(list_contributors $lang $change_id)
+	if [[ $(count_contributors $lang $change_id) -eq 1 ]]; then
+		author=$(echo $author | sed "s/ ([0-9]\+ contributions)//")
+	else
+		author=""
+	fi
+	echo $author
+}
+
+function git_commit_author {
+	lang=$1
+	change_id=$2
+	author=$(commit_author $lang $change_id)
+	if [[ $author ]]; then
+		author="--author='$author'"
+	fi
+	echo $author
+}
+
+
 ####### Standard Settings #############
 # Standard file locations
 _find_config_base_dir
