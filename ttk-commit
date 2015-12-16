@@ -46,7 +46,16 @@ do
 		else
 			git add -A .
 		fi
-		git commit -m "[$pootlelang] pull from Pootle ($project)"
+		if [[ $auto ]]; then
+			author=$(commit_author $pootlelang $(cat $last_commit_file))
+			if [[ $author ]]; then
+				git commit --author="$author" -m "[$pootlelang] pull from Pootle ($project)"
+			else
+				git commit -m "[$pootlelang] pull from Pootle ($project)"
+			fi
+		else
+			git commit -m "[$pootlelang] pull from Pootle ($project)"
+		fi
 	)
 	ttk-build --vc $lang
 	(cd ${base_dir}; git checkout $pootlelang)
