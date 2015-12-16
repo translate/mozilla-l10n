@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-09 19:20+0000\n"
+"POT-Creation-Date: 2015-12-16 16:52+0000\n"
 "PO-Revision-Date: 2015-11-10 01:30+0000\n"
 "Last-Translator: andpet <az@kth.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1447119036.000000\n"
@@ -1075,25 +1075,6 @@ msgstr ";Lista alla #1 flikar"
 msgid "Search %S"
 msgstr "Sök på %S"
 
-#. # TabView
-#. # LOCALIZATION NOTE (tabview.title): %S is the application name.
-#: tabview.title
-msgid "%S - Group Your Tabs"
-msgstr "%S - Gruppera flikar"
-
-#. # LOCALIZATION NOTE (tabview.moveToUnnamedGroup.label): Semicolon-separated list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 is the page title of the first tab in the unnamed group, 
-#. # #2 is the number of remaining tabs.
-#: tabview.moveToUnnamedGroup.label
-msgid "#1 and 1 more;#1 and #2 more"
-msgstr "#1 och 1 till;#1 och #2 till"
-
-#. # LOCALIZATION NOTE (tabviewButton.tooltip): %S is the keyboard shortcut for tab groups
-#: tabviewButton.tooltip
-msgid "Group your tabs (%S)"
-msgstr "Gruppera dina flikar (%S)"
-
 #: extensions.{972ce4c6-7e08-4474-a285-3208198ce6fd}.name
 msgid "Default"
 msgstr "Standard"
@@ -1180,14 +1161,22 @@ msgid "&Choose What I Share"
 msgstr "&Välj vad som ska delas "
 
 #. # Process hang reporter
-#: processHang.message
-msgid "A web page is causing %1$S to run slowly. What would you like to do?"
+#: processHang.label
+#, fuzzy
+msgid "A web page is slowing down your browser. What would you like to do?"
 msgstr "En hemsida orsakar att %1$S körs långsamt. Vad vill du göra?"
 
-#: processHang.button.label processHang.button.accessKey
-msgctxt "processHang.button.label processHang.button.accessKey"
-msgid "&Options"
-msgstr "&Alternativ"
+#: processHang.button_stop.label processHang.button_stop.accessKey
+msgid "&Stop It"
+msgstr ""
+
+#: processHang.button_wait.label processHang.button_wait.accessKey
+msgid "&Wait"
+msgstr ""
+
+#: processHang.button_debug.label processHang.button_debug.accessKey
+msgid "&Debug Script"
+msgstr ""
 
 #. # Webapps notification popup
 #: webapps.install
@@ -1741,8 +1730,7 @@ msgstr ""
 
 #: emeNotifications.optionsButton.label
 #: emeNotifications.optionsButton.accesskey
-msgctxt ""
-"emeNotifications.optionsButton.label emeNotifications.optionsButton.accesskey"
+#, fuzzy
 msgid "&Options"
 msgstr "&Inställningar"
 
@@ -1823,6 +1811,25 @@ msgstr "Läsvy"
 msgid "Remove clutter so you can focus exactly on what you want to read."
 msgstr "Dölj oväsentligheter så du lätt kan fokusera på det du vill läsa."
 
+#. # LOCALIZATION NOTE (appMenuRemoteTabs.mobilePromo):
+#. # %1$S will be replaced with a link, the text of which is
+#. # appMenuRemoteTabs.mobilePromo.android and the link will be to
+#. # https://www.mozilla.org/firefox/android/.
+#. # %2$S will be replaced with a link, the text of which is
+#. # appMenuRemoteTabs.mobilePromo.ios
+#. # and the link will be to https://www.mozilla.org/firefox/ios/.
+#: appMenuRemoteTabs.mobilePromo
+msgid "Get %1$S or %2$S."
+msgstr ""
+
+#: appMenuRemoteTabs.mobilePromo.android
+msgid "Firefox for Android"
+msgstr ""
+
+#: appMenuRemoteTabs.mobilePromo.ios
+msgid "Firefox for iOS"
+msgstr ""
+
 #. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
 #. #                    e10s.offerPopup.highlight1
 #. #                    e10s.offerPopup.highlight2
@@ -1834,10 +1841,8 @@ msgstr "Dölj oväsentligheter så du lätt kan fokusera på det du vill läsa."
 #. #                    e10s.postActivationInfobar.learnMore.label
 #. #                    e10s.postActivationInfobar.learnMore.accesskey
 #. #                    e10s.accessibilityNotice.mainMessage
-#. #                    e10s.accessibilityNotice.disableAndRestart.label
-#. #                    e10s.accessibilityNotice.disableAndRestart.accesskey
-#. #                    e10s.accessibilityNotice.dontDisable.label
-#. #                    e10s.accessibilityNotice.dontDisable.accesskey):
+#. #                    e10s.accessibilityNotice.enableAndRestart.label
+#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey
 #. # These strings are related to the messages we display to offer e10s (Multi-process) to users
 #. # on the pre-release channels. They won't be used in release but they will likely be used in
 #. # beta starting from version 41, so it's still useful to have these strings properly localized.
@@ -1883,23 +1888,21 @@ msgctxt ""
 msgid "&Learn More"
 msgstr "&Lär dig mer"
 
-#: e10s.accessibilityNotice.mainMessage
+#: e10s.accessibilityNotice.mainMessage2
 msgid ""
-"Multi-process does not yet support accessibility features. Multi-process "
-"will be disabled if you restart %S. Would you like to restart?"
+"Accessibility support is partially disabled due to compatibility issues with "
+"new %S features."
 msgstr ""
-"Multi-process har ännu inte stöd för tillgänglighetsfunktioner. Multi-"
-"process kommer att inaktiveras om du startar om %S. Vill du starta om?"
 
-#: e10s.accessibilityNotice.disableAndRestart.label
-#: e10s.accessibilityNotice.disableAndRestart.accesskey
-msgid "Disable and &Restart"
-msgstr "Inaktivera och &starta om"
+#: e10s.accessibilityNotice.acceptButton.label
+#: e10s.accessibilityNotice.acceptButton.accesskey
+msgid "&Ok"
+msgstr ""
 
-#: e10s.accessibilityNotice.dontDisable.label
-#: e10s.accessibilityNotice.dontDisable.accesskey
-msgid "&Don't Disable"
-msgstr "&Inaktivera inte"
+#: e10s.accessibilityNotice.enableAndRestart.label
+#: e10s.accessibilityNotice.enableAndRestart.accesskey
+msgid "&Enable (Requires Restart)"
+msgstr ""
 
 #. # LOCALIZATION NOTE (usercontext.personal.label,
 #. #                    usercontext.work.label,
@@ -1938,19 +1941,83 @@ msgstr "&Ljud av för flik"
 msgid "Un&mute Tab"
 msgstr "L&jud på för flik"
 
-#. # LOCALIZATION NOTE (tabgroups.deprecationwarning.description):
-#. # %S is brandShortName
-#: tabgroups.deprecationwarning.description
-msgid "Heads up! Tab Groups will be removed from %S soon."
-msgstr "Varning! Flikgrupper kommer snart att tas bort från %S."
+#. # LOCALIZATION NOTE (weakCryptoOverriding.message): %S is brandShortName
+#: weakCryptoOverriding.message
+msgid ""
+"%S recommends that you don't enter your password, credit card and other "
+"personal information on this website."
+msgstr ""
 
-#: tabgroups.deprecationwarning.learnMore.label
-#: tabgroups.deprecationwarning.learnMore.accesskey
-msgctxt ""
-"tabgroups.deprecationwarning.learnMore.label tabgroups.deprecationwarning."
-"learnMore.accesskey"
-msgid "&Learn More"
-msgstr "&Läs mer"
+#: revokeOverride.label revokeOverride.accesskey
+msgid "&Don't Trust This Website"
+msgstr ""
+
+#. # LOCALIZATION NOTE (certErrorDetails.label): This is a text string that
+#. # appears in the about:certerror page, so that the user can copy and send it to
+#. # the server administrators for troubleshooting. %1$S is the visited URL, %2$S
+#. # is the error message, %3$S is true or false, depending on whether the server
+#. # supports HSTS, %4$S is true or false, depending on whether the server
+#. # supports HPKP, %5$S is the certificate chain in PEM format.
+#: certErrorDetails.label
+msgid ""
+"%1$S\r\n"
+"\r\n"
+"%2$S\r\n"
+"\r\n"
+"HTTP Strict Transport Security: %3$S\r\n"
+"HTTP Public Key Pinning: %4$S\r\n"
+"\r\n"
+"Certificate chain:\r\n"
+"\r\n"
+"%5$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (tabgroups.migration.anonGroup):
+#. # %S is the group number/ID
+#: tabgroups.migration.anonGroup
+msgid "Group %S"
+msgstr ""
+
+#: tabgroups.migration.tabGroupBookmarkFolderName
+msgid "Bookmarked Tab Groups"
+msgstr ""
+
+#~ msgid "%S - Group Your Tabs"
+#~ msgstr "%S - Gruppera flikar"
+
+#~ msgid "#1 and 1 more;#1 and #2 more"
+#~ msgstr "#1 och 1 till;#1 och #2 till"
+
+#~ msgid "Group your tabs (%S)"
+#~ msgstr "Gruppera dina flikar (%S)"
+
+#~ msgctxt ""
+#~ "emeNotifications.optionsButton.label emeNotifications.optionsButton."
+#~ "accesskey"
+#~ msgid "&Options"
+#~ msgstr "&Inställningar"
+
+#~ msgid ""
+#~ "Multi-process does not yet support accessibility features. Multi-process "
+#~ "will be disabled if you restart %S. Would you like to restart?"
+#~ msgstr ""
+#~ "Multi-process har ännu inte stöd för tillgänglighetsfunktioner. Multi-"
+#~ "process kommer att inaktiveras om du startar om %S. Vill du starta om?"
+
+#~ msgid "Disable and &Restart"
+#~ msgstr "Inaktivera och &starta om"
+
+#~ msgid "&Don't Disable"
+#~ msgstr "&Inaktivera inte"
+
+#~ msgid "Heads up! Tab Groups will be removed from %S soon."
+#~ msgstr "Varning! Flikgrupper kommer snart att tas bort från %S."
+
+#~ msgctxt ""
+#~ "tabgroups.deprecationwarning.learnMore.label tabgroups.deprecationwarning."
+#~ "learnMore.accesskey"
+#~ msgid "&Learn More"
+#~ msgstr "&Läs mer"
 
 #~ msgid "Show for this session"
 #~ msgstr "Visa för den här sessionen"
