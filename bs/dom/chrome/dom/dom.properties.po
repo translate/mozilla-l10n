@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-16 16:52+0000\n"
-"PO-Revision-Date: 2015-09-21 20:01+0000\n"
+"PO-Revision-Date: 2016-01-19 06:25+0000\n"
 "Last-Translator: Kerim Kalamujic <kerim@mozilla.ba>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: bs\n"
@@ -16,10 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1442865715.000000\n"
+"X-POOTLE-MTIME: 1453184708.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -338,14 +338,14 @@ msgstr ""
 "vidljiv."
 
 #: FullScreenDeniedContainerNotAllowed
-#, fuzzy
 msgid ""
 "Request for full-screen was denied because at least one of the document's "
 "containing elements is not an iframe or does not have an \"allowfullscreen\" "
 "attribute."
 msgstr ""
 "Zahtjev za prikazom preko cijelog ekrana je odbijen jer barem jedan od "
-"iframe-ovaa u dokumentu nema \"allowfullscreen\" atribut."
+"sadržajnih elemenata  u dokumentu nije iframe ili nema \"allowfullscreen\" "
+"atribut."
 
 #: FullScreenDeniedNotInputDriven
 msgid ""
@@ -550,6 +550,7 @@ msgid ""
 "MediaStreamTrack %S could not be added since it belongs to a different "
 "AudioChannel."
 msgstr ""
+"MediaStreamTrack %S nije moguće dodati jer pripada drugom AudioChannel."
 
 #. # LOCALIZATION NOTE: Do not translate "MediaStream", "stop()" and "MediaStreamTrack"
 #: MediaStreamStopDeprecatedWarning
@@ -557,6 +558,8 @@ msgid ""
 "MediaStream.stop() is deprecated and will soon be removed. Use "
 "MediaStreamTrack.stop() instead."
 msgstr ""
+"MediaStream.stop() je zastarjela metoda koja će ubrzo biti uklonjena. "
+"Koristite MediaStreamTrack.stop()."
 
 #. # LOCALIZATION NOTE: Do not translate "DOMException", "code" and "name"
 #: DOMExceptionCodeWarning
@@ -780,15 +783,14 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate Will-change, %1$S,%2$S are numbers.
 #: IgnoringWillChangeOverBudgetWarning
-#, fuzzy
 msgid ""
 "Will-change memory consumption is too high. Budget limit is the document "
 "surface area multiplied by %1$S (%2$S px). Occurrences of will-change over "
 "the budget will be ignored."
 msgstr ""
-"Will-change potrošnja memorije je prevelika. Površina prekriva %1$S piksela, "
-"budžet je površina dokumenta pomnožena sa %2$S (%3$S px). Nakon prekoračenja "
-"budžeta, sva will-change pojavljivanja u dokumentu se ignorišu."
+"Will-change potrošnja memorije je prevelika. Granica budžeta je površina "
+"dokumenta pomnožena sa %1$S (%2$S px). Nakon prekoračenja budžeta, sva will-"
+"change pojavljivanja u dokumentu se ignorišu."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker".
 #: HittingMaxWorkersPerDomain
@@ -822,6 +824,8 @@ msgid ""
 "The Application Cache API (AppCache) is deprecated and will be removed at a "
 "future date.  Please consider using ServiceWorker for offline support."
 msgstr ""
+"Application Cache API (AppCache) je zastarjela metoda i u budućnosti će biti "
+"uklonjena. Molimo da razmotrite korištenje ServiceWorker za offline podršku."
 
 #. # LOCALIZATION NOTE: Do not translate "Worker".
 #: EmptyWorkerSourceWarning
@@ -836,12 +840,16 @@ msgid ""
 "WebRTC interfaces with the \"moz\" prefix (mozRTCPeerConnection, "
 "mozRTCSessionDescription, mozRTCIceCandidate) have been deprecated."
 msgstr ""
+"WebRTC interfejsi s \"moz\" prefiksom (mozRTCPeerConnection, "
+"mozRTCSessionDescription, mozRTCIceCandidate) su zastarjeli."
 
 #: NavigatorGetUserMediaWarning
 msgid ""
 "navigator.mozGetUserMedia has been replaced by navigator.mediaDevices."
 "getUserMedia"
 msgstr ""
+"navigator.mozGetUserMedia je zamijenjen sa navigator.mediaDevices."
+"getUserMedia"
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %S is a URL.
 #: InterceptionFailedWithURL
@@ -849,16 +857,17 @@ msgid ""
 "Failed to load '%S'. A ServiceWorker intercepted the request and encountered "
 "an unexpected error."
 msgstr ""
+"Neuspješno učitavanje '%S'. ServiceWorker je presreo zahtjev i naišao na "
+"neočekivanu grešku."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "FetchEvent.respondWith()", "opaque", or "Response". %S is a URL.
 #: OpaqueInterceptionDisabledWithURL
-#, fuzzy
 msgid ""
 "Failed to load '%S'. A ServiceWorker passed an opaque Response to FetchEvent."
 "respondWith() while opaque interception is disabled."
 msgstr ""
-"ServiceWorker proslijedio je nerazumljiv Odgovor ka FetchEvent.respondWith() "
-"dok je nerazumljivo presretanje onemogućeno."
+"Učitavanje '%S' nije uspjelo. ServiceWorker je proslijedio opaque Response "
+"na FetchEvent.respondWith() dok je opaque presretanje bilo isključeno."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "FetchEvent.respondWith()", "FetchEvent", "no-cors", "opaque", "Response", or "RequestMode". %1$S is a URL. %2$S is a RequestMode value.
 #: BadOpaqueInterceptionRequestModeWithURL
@@ -867,29 +876,31 @@ msgid ""
 "FetchEvent.respondWith() while handling a '%2$S' FetchEvent. Opaque Response "
 "objects are only valid when the RequestMode is 'no-cors'."
 msgstr ""
+"Neuspješno učitavanje '%1$S'. ServiceWorker je proslijedio opaque Response "
+"prema FetchEvent.respondWith() dok je obrađivao '%2$S' FetchEvent. Opaque "
+"Response objekti su ispravni kada je RequestMode jednak 'no-cors'."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "Error", "Response", "FetchEvent.respondWith()", or "fetch()". %S is a URL.
 #: InterceptedErrorResponseWithURL
-#, fuzzy
 msgid ""
 "Failed to load '%S'. A ServiceWorker passed an Error Response to FetchEvent."
 "respondWith(). This typically means the ServiceWorker performed an invalid "
 "fetch() call."
 msgstr ""
-"ServiceWorker proslijedio je Odgovor greške ka FetchEvent.respondWith(). Ovo "
-"obično znači da je ServiceWorker izvršio pogrešan fetch() poziv."
+"Neuspješno učitavanje '%S'. ServiceWorker je proslijedio Error Response na "
+"FetchEvent.respondWith(). To obično znači da je ServiceWorker izveo nevažeći "
+"fetch() poziv."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "Response", "FetchEvent.respondWith()", or "Response.clone()". %S is a URL.
 #: InterceptedUsedResponseWithURL
-#, fuzzy
 msgid ""
 "Failed to load '%S'. A ServiceWorker passed a used Response to FetchEvent."
 "respondWith(). The body of a Response may only be read once. Use Response."
 "clone() to access the body multiple times."
 msgstr ""
-"ServiceWorker proslijedio je nerazumljiv Odgovor ka FetchEvent."
-"respondWith(). Tijelo Odgovora može biti pročitano samo jednom. Koristite "
-"Response.clone() da pristupite tijelu više puta."
+"Neuspješno učitavanje '%S'. ServiceWorker je proslijedio iskorišteni "
+"Response na FetchEvent.respondWith(). Response tijelo smije biti samo jednom "
+"pročitano. Koristite Response.clone() da biste pristupili tijelu više puta."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "opaqueredirect", "Response", "FetchEvent.respondWith()", or "FetchEvent". %s is a URL.
 #: BadOpaqueRedirectInterceptionWithURL
@@ -897,6 +908,9 @@ msgid ""
 "Failed to load '%S'. A ServiceWorker passed an opaqueredirect Response to "
 "FetchEvent.respondWith() while handling a non-navigation FetchEvent."
 msgstr ""
+"Neuspješno učitavanje '%S'. ServiceWorker je proslijedio opaqueredirect "
+"Response prema FetchEvent.respondWith() dok je obrađivao non-navigation "
+"FetchEvent."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker" or "FetchEvent.preventDefault()". %S is a URL.
 #: InterceptionCanceledWithURL
@@ -904,6 +918,8 @@ msgid ""
 "Failed to load '%S'. A ServiceWorker canceled the load by calling FetchEvent."
 "preventDefault()."
 msgstr ""
+"Neuspješno učitavanje '%S'. ServiceWorker je otkazao učitavanje pozivanjem "
+"FetchEvent.preventDefault()."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "promise", or "FetchEvent.respondWith()". %1$S is a URL. %2$S is an error string.
 #: InterceptionRejectedResponseWithURL
@@ -911,6 +927,8 @@ msgid ""
 "Failed to load '%1$S'. A ServiceWorker passed a promise to FetchEvent."
 "respondWith() that rejected with '%2$S'."
 msgstr ""
+"Neuspješno učitavanje '%1$S'. ServiceWorker je proslijedio obećanje "
+"FetchEvent.respondWith() koje je odbijeno sa '%2$S'."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "promise", "FetchEvent.respondWith()", or "Response". %1$S is a URL. %2$S is an error string.
 #: InterceptedNonResponseWithURL
@@ -918,12 +936,17 @@ msgid ""
 "Failed to load '%1$S'. A ServiceWorker passed a promise to FetchEvent."
 "respondWith() that resolved with non-Response value '%2$S'."
 msgstr ""
+"Neuspješno učitavanje '%1$S'. ServiceWorker je proslijedio obećanje prema "
+"FetchEvent.respondWith() koje je rezultiralo sa non-Response vrijednosti "
+"'%2$S'."
 
 #: ExecCommandCutCopyDeniedNotInputDriven
 msgid ""
 "document.execCommand('cut'/'copy') was denied because it was not called from "
 "inside a short running user-generated event handler."
 msgstr ""
+"document.execCommand('cut'/'copy') je odbijeno jer nije pozvano iz kratkog "
+"pokrenutog korisnički-generisanog upravljača događajima."
 
 #~ msgid ""
 #~ "ServiceWorker network interception failed due to an unexpected error."
