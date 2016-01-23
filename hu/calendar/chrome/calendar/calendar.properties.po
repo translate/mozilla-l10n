@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-10 22:19+0000\n"
+"POT-Creation-Date: 2016-01-23 12:18+0000\n"
 "PO-Revision-Date: 2016-01-03 13:53+0000\n"
 "Last-Translator: Gabor Kelemen <kelemeng@ubuntu.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -379,104 +379,119 @@ msgid "Completed:"
 msgstr "Befejezve:"
 
 #. # Tooltips for attendees and organizer in event and summary dialog
-#. # LOCALIZATION_NOTE(tooltip.attendeeRole.CHAIR): tooltip for itip icon in summary/event dialog
-#. # %1$S - value of tooltip.attendeeUserType.*
-#. # %2$S - value of tooltip.attendeePartStat.*
-#: dialog.tooltip.attendeeRole.CHAIR
-msgid "%1$S chairs the event and %2$S."
-msgstr "%1$S elnökli az eseményt, és %2$S"
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendee.combined): tooltip for itip icon in summary/event dialog.
+#. # Given an attendee loungeexample.org of type room is a mandatory participant and has accepted the
+#. # invitation, the tooltip would be:
+#. # lounge@example.org (room) is a required participant. lounge@example.org has confirmed attendance.
+#. # %1$S - value of dialog.tooltip.attendeeRole2.*
+#. # %2$S - value of dialog.tooltip.attendeePartStat2.*
+#: dialog.tooltip.attendee.combined
+#, fuzzy
+msgctxt "dialog.tooltip.attendee.combined"
+msgid "%1$S %2$S"
+msgstr "%2$S. %1$S"
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeRole.NON-PARTICIPANT): tooltip for itip icon in summary
-#. # and event dialog
-#. # %1$S - value of dialog.tooltip.attendeeUserType.*
-#. # %2$S - value of dialog.tooltip.attendeePartStat.*
-#: dialog.tooltip.attendeeRole.NON-PARTICIPANT
-msgid "%1$S is a non-participant and %2$S."
-msgstr "%1$S egy nem résztvevő, és %2$S."
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeRole2.CHAIR): used to compose
+#. # dialog.tooltip.attendee.combined
+#. # %1$S - value of dialog.tooltip.attendeeUserType2.*
+#: dialog.tooltip.attendeeRole2.CHAIR
+msgid "%1$S chairs the event."
+msgstr ""
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeRole.OPT-PARTICIPANT): tooltip for itip icon in summary
-#. # and event dialog
-#. # %1$S - value of dialog.tooltip.attendeeUserType.*
-#. # %2$S - value of dialog.tooltip.attendeePartStat.*
-#: dialog.tooltip.attendeeRole.OPT-PARTICIPANT
-msgid "%1$S is an optional participant and %2$S."
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeRole2.NON-PARTICIPANT): used to compose
+#. # dialog.tooltip.attendee.combined
+#. # %1$S - value of dialog.tooltip.attendeeUserType2.*
+#: dialog.tooltip.attendeeRole2.NON-PARTICIPANT
+msgid "%1$S is a non-participant."
+msgstr ""
+
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeRole2.OPT-PARTICIPANT): used to compose
+#. # dialog.tooltip.attendee.combined
+#. # %1$S - value of dialog.tooltip.attendeeUserType2.*
+#: dialog.tooltip.attendeeRole2.OPT-PARTICIPANT
+#, fuzzy
+msgid "%1$S is an optional participant."
 msgstr "%1$S egy elhagyható résztvevő, és %2$S."
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeRoleREQ-PARTICIPANT): tooltip for itip icon in summary
-#. # and event dialog
-#. # %1$S - value of dialog.tooltip.attendeeUserType.*
-#. # %2$S - value of dialog.tooltip.attendeePartStat.*
-#: dialog.tooltip.attendeeRole.REQ-PARTICIPANT
-msgid "%1$S is a required participant and %2$S."
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeRole2.REQ-PARTICIPANT): used to compose
+#. # dialog.tooltip.attendee.combined
+#. # %1$S - value of dialog.tooltip.attendeeUserType2.*
+#: dialog.tooltip.attendeeRole2.REQ-PARTICIPANT
+#, fuzzy
+msgid "%1$S is a required participant."
 msgstr "%1$S egy szükséges résztvevő, és %2$S."
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeePartStatACCEPTED): used to compose
-#. # dialog.tooltip.attendeeRole*
-#: dialog.tooltip.attendeePartStat.ACCEPTED
-msgid "has confirmed to attend"
-msgstr "megerősítette a részvételt"
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeePartStat2.ACCEPTED): used to compose
+#. # dialog.tooltip.attendee.combined
+#. # %1$S - common name or email address of the attendee
+#: dialog.tooltip.attendeePartStat2.ACCEPTED
+msgid "%1$S has confirmed attendance."
+msgstr ""
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeePartStatDECLINED): used to compose
-#. # dialog.tooltip.attendeeRole*
-#: dialog.tooltip.attendeePartStat.DECLINED
-msgid "has confirmed to not attend"
-msgstr "megerősítette, hogy nem vesz részt"
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeePartStat2.DECLINED): used to compose
+#. # dialog.tooltip.attendee.combined
+#. # %1$S - common name or email address of the attendee
+#: dialog.tooltip.attendeePartStat2.DECLINED
+msgid "%1$S has declined attendance."
+msgstr ""
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeePartStat.DELEGATED): used to compose
-#. # dialog.tooltip.attendeeRole.*
-#. # %1$S - single delegatee or comma separated list of delegatees
-#. # delegation is different from invitation forwarding - in case of the former the original attendee
-#. # is replaced, while on the latter the receiver may take part additionally
-#: dialog.tooltip.attendeePartStat.DELEGATED
-msgid "has delegated the attendance to %1$S"
-msgstr "a részvételt átadta ennek: %1$S"
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeePartStat2.DELEGATED): used to compose
+#. # dialog.tooltip.attendee.combined
+#. # %1$S - common name or email address of the attendee
+#: dialog.tooltip.attendeePartStat2.DELEGATED
+msgid "%1$S has delegated attendance."
+msgstr ""
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeePartStat.NEEDS-ACTION): used to compose
-#. # dialog.tooltip.attendeeRole.*
-#: dialog.tooltip.attendeePartStat.NEEDS-ACTION
-msgid "still needs to decide whether to attend"
-msgstr "még el kell döntenie, részt vesz-e"
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeePartStat2.NEEDS-ACTION): used to compose
+#. # dialog.tooltip.attendee.combined
+#. # %1$S - common name or email address of the attendee
+#: dialog.tooltip.attendeePartStat2.NEEDS-ACTION
+msgid "%1$S still needs to reply."
+msgstr ""
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeePartStat.TENTATIVE): used to compose
-#. # dialog.tooltip.attendeeRole.*
-#: dialog.tooltip.attendeePartStat.TENTATIVE
-msgid "has tentatively confirmed to attend"
-msgstr "még el kell döntenie, részt vesz-e"
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeePartStat2.TENTATIVE): used to compose
+#. # dialog.tooltip.attendee.combined
+#. # %1$S - common name or email address of the attendee
+#: dialog.tooltip.attendeePartStat2.TENTATIVE
+msgid "%1$S has confirmed attendance tentatively."
+msgstr ""
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeUserType.INDIVIDUAL): used to compose
-#. # dialog.tooltip.attendeeRole.*
-#. # %1$S - an individiual attendee
-#: dialog.tooltip.attendeeUserType.INDIVIDUAL
-msgctxt "dialog.tooltip.attendeeUserType.INDIVIDUAL"
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeUserType2.INDIVIDUAL): used to compose
+#. # dialog.tooltip.attendeeRole2.*
+#. # %1$S - email address or common name <email address> representing individual attendee
+#: dialog.tooltip.attendeeUserType2.INDIVIDUAL
+#, fuzzy
+msgctxt "dialog.tooltip.attendeeUserType2.INDIVIDUAL"
 msgid "%1$S"
 msgstr "%1$S"
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeUserType.GROUP): used to compose
-#. # dialog.tooltip.attendeeRole.*
-#. # %1$S - an attendee representing a group (e.g. a distribution list)
-#: dialog.tooltip.attendeeUserType.GROUP
-msgid "Group %1$S"
-msgstr "%1$S csoport"
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeUserType2.GROUP): used to compose
+#. # dialog.tooltip.attendeeRole2.*
+#. # %1$S - email address or common name <email address> representing a group (e.g. a distribution list)
+#: dialog.tooltip.attendeeUserType2.GROUP
+msgid "%1$S (group)"
+msgstr ""
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeUserType.RESOURCE): used to compose
-#. # dialog.tooltip.attendeeRole.*
-#. # %1$S - an attendee representing a resource (e.g. projector)
-#: dialog.tooltip.attendeeUserType.RESOURCE
-msgid "Resource %1$S"
-msgstr "%1$S erőforrás"
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeUserType2.RESOURCE): used to compose
+#. # dialog.tooltip.attendeeRole2.*
+#. # %1$S - email address or common name <email address> representing a resource (e.g. projector)
+#: dialog.tooltip.attendeeUserType2.RESOURCE
+msgid "%1$S (resource)"
+msgstr ""
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeUserType.ROOM): used to compose
-#. # dialog.tooltip.attendeeRole.*
-#. # %1$S - an attendee representing a room
-#: dialog.tooltip.attendeeUserType.ROOM
-msgid "Room %1$S"
-msgstr "%1$S szoba"
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeUserType2.ROOM): used to compose
+#. # dialog.tooltip.attendeeRole2.*
+#. # %1$S - email address or common name <email address> representing a room
+#: dialog.tooltip.attendeeUserType2.ROOM
+msgid "%1$S (room)"
+msgstr ""
 
-#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeUserType.UNKNOWN): used to compose
-#. # dialog.tooltip.attendeeRole.*
-#. # %1$S - an attendee of unknown type
-#: dialog.tooltip.attendeeUserType.UNKNOWN
-msgctxt "dialog.tooltip.attendeeUserType.UNKNOWN"
+#. # LOCALIZATION_NOTE(dialog.tooltip.attendeeUserType2.UNKNOWN): used to compose
+#. # dialog.tooltip.attendeeRole2.*
+#. # %1$S - email address or common name <email address> representing an attendee of unknown type
+#: dialog.tooltip.attendeeUserType2.UNKNOWN
+#, fuzzy
+msgctxt "dialog.tooltip.attendeeUserType2.UNKNOWN"
 msgid "%1$S"
 msgstr "%1$S"
 
@@ -1521,6 +1536,40 @@ msgstr "(átadva innen: %1$S)"
 #: dialog.attendee.append.delegatedTo
 msgid "(delegated to %1$S)"
 msgstr "(átadva ennek: %1$S)"
+
+#~ msgid "%1$S chairs the event and %2$S."
+#~ msgstr "%1$S elnökli az eseményt, és %2$S"
+
+#~ msgid "%1$S is a non-participant and %2$S."
+#~ msgstr "%1$S egy nem résztvevő, és %2$S."
+
+#~ msgid "has confirmed to attend"
+#~ msgstr "megerősítette a részvételt"
+
+#~ msgid "has confirmed to not attend"
+#~ msgstr "megerősítette, hogy nem vesz részt"
+
+#~ msgid "has delegated the attendance to %1$S"
+#~ msgstr "a részvételt átadta ennek: %1$S"
+
+#~ msgid "still needs to decide whether to attend"
+#~ msgstr "még el kell döntenie, részt vesz-e"
+
+#~ msgid "has tentatively confirmed to attend"
+#~ msgstr "még el kell döntenie, részt vesz-e"
+
+#~ msgid "Group %1$S"
+#~ msgstr "%1$S csoport"
+
+#~ msgid "Resource %1$S"
+#~ msgstr "%1$S erőforrás"
+
+#~ msgid "Room %1$S"
+#~ msgstr "%1$S szoba"
+
+#~ msgctxt "dialog.tooltip.attendeeUserType.UNKNOWN"
+#~ msgid "%1$S"
+#~ msgstr "%1$S"
 
 #~ msgid "Weeks %1$S-%2$S"
 #~ msgstr "%1$S-%2$S. hét"
