@@ -1,9 +1,9 @@
-#, fuzzy
+#. extracted from ./mail/chrome/messenger/addressbook/abMainWindow.dtd
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-02-01 23:32+0200\n"
+"POT-Creation-Date: 2015-12-24 01:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,12 +11,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
+#. This Source Code Form is subject to the terms of the Mozilla Public
+#. - License, v. 2.0. If a copy of the MPL was not distributed with this
+#. - file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #: addressbookWindow.title
 msgid "Address Book"
 msgstr "Address Book"
 
+#: blankResultsPaneMessage.label
+msgid "This address book shows contacts only after a search"
+msgstr "This address book shows contacts only after a search"
+
+#: localResultsOnlyMessage.label
+msgid "Contacts from remote address books are not shown until you search"
+msgstr "Contacts from remote address books are not shown until you search"
+
+#. File Menu
 #: fileMenu.label fileMenu.accesskey
 msgid "&File"
 msgstr "&File"
@@ -25,25 +39,25 @@ msgstr "&File"
 msgid "&New"
 msgstr "&New"
 
-#: newCard.label
-msgid "Address Book Card…"
-msgstr "Address Book Card…"
+#: newContact.label newContact.accesskey
+msgid "Address Book &Contact…"
+msgstr "Address Book &Contact…"
 
-#: newCard.key
+#: newContact.key
 msgid "N"
 msgstr "N"
 
-#: newListCmd.label
-msgid "Mailing List…"
-msgstr "Mailing List…"
+#: newListCmd.label newListCmd.accesskey
+msgid "Mailing &List…"
+msgstr "Mailing &List…"
 
 #: newAddressBookCmd.label newAddressBookCmd.accesskey
 msgid "Address &Book…"
 msgstr "Address &Book…"
 
-#: newLDAPDirectoryCmd.label
-msgid "LDAP Directory…"
-msgstr "LDAP Directory…"
+#: newLDAPDirectoryCmd.label newLDAPDirectoryCmd.accesskey
+msgid "L&DAP Directory…"
+msgstr "L&DAP Directory…"
 
 #: newMessageCmd.label newMessageCmd.accesskey
 msgid "&Message"
@@ -52,6 +66,11 @@ msgstr "&Message"
 #: newMessageCmd.key
 msgid "M"
 msgstr "M"
+
+#. LOCALIZATION NOTE (osxAddressBook) : These entities are only used on Mac
+#: osxAddressBook.label osxAddressBook.accesskey
+msgid "Use Mac &OS X Address Book"
+msgstr "Use Mac &OS X Address Book"
 
 #: closeCmd.label closeCmd.accesskey
 msgid "&Close"
@@ -65,34 +84,27 @@ msgstr "W"
 msgid "Page Set&up…"
 msgstr "Page Set&up…"
 
-#: printPreviewCardViewCmd.label printPreviewCardViewCmd.accesskey
-msgid "Print Pre&view Card"
-msgstr "Print Pre&view Card"
+#: printPreviewContactCmd.label printPreviewContactCmd.accesskey
+msgid "Print Pre&view Contact"
+msgstr "Print Pre&view Contact"
 
 #: printPreviewAddressBook.label printPreviewAddressBook.accesskey
 msgid "Print Preview Address &Book"
 msgstr "Print Preview Address &Book"
 
-#: printCardViewCmd.label printCardViewCmd.accesskey
-msgid "&Print Card…"
-msgstr "&Print Card…"
+#: printContactCmd.label printContactCmd.accesskey
+msgid "&Print Contact…"
+msgstr "&Print Contact…"
+
+#: printContactCmd.key
+msgid "P"
+msgstr "P"
 
 #: printAddressBook.label printAddressBook.accesskey
 msgid "Print &Address Book…"
 msgstr "Print &Address Book…"
 
-#: quitApplicationCmdWin.label quitApplicationCmdWin.accesskey
-msgid "E&xit"
-msgstr "E&xit"
-
-#: quitApplicationCmd.label quitApplicationCmd.accesskey
-msgid "&Quit"
-msgstr "&Quit"
-
-#: quitApplicationCmd.key
-msgid "Q"
-msgstr "Q"
-
+#. Edit Menu
 #: editMenu.label editMenu.accesskey
 msgid "&Edit"
 msgstr "&Edit"
@@ -138,26 +150,33 @@ msgid "V"
 msgstr "V"
 
 #: deleteCmd.label deleteCmd.accesskey
-msgid ""
-"_: deleteCmd.label deleteCmd.accesskey\n"
-"&Delete"
+msgctxt "deleteCmd.label deleteCmd.accesskey"
+msgid "&Delete"
 msgstr "&Delete"
-
-#: deleteCmd.key
-msgid "D"
-msgstr "D"
 
 #: deleteAbCmd.label
 msgid "Delete Address Book"
 msgstr "Delete Address Book"
 
-#: deleteCardCmd.label
-msgid "Delete Card"
-msgstr "Delete Card"
+#: deleteContactCmd.label
+msgid "Delete Contact"
+msgstr "Delete Contact"
 
-#: deleteCardsCmd.label
-msgid "Delete Selected Cards"
-msgstr "Delete Selected Cards"
+#: deleteContactsCmd.label
+msgid "Delete Contacts"
+msgstr "Delete Contacts"
+
+#: deleteListCmd.label
+msgid "Delete List"
+msgstr "Delete List"
+
+#: deleteListsCmd.label
+msgid "Delete Lists"
+msgstr "Delete Lists"
+
+#: deleteItemsCmd.label
+msgid "Delete Items"
+msgstr "Delete Items"
 
 #: selectAllCmd.label selectAllCmd.accesskey
 msgid "Select &All"
@@ -175,14 +194,15 @@ msgstr "f"
 msgid "S&wap First/Last Name"
 msgstr "S&wap First/Last Name"
 
-#: propertiesCmd.label
-msgid "Properties…"
-msgstr "Properties…"
+#: propertiesCmd2.label propertiesCmd2.accesskey
+msgid "Propert&ies"
+msgstr "Propert&ies"
 
 #: propertiesCmd.key
 msgid "i"
 msgstr "i"
 
+#. View Menu
 #: viewMenu.label viewMenu.accesskey
 msgid "&View"
 msgstr "&View"
@@ -190,6 +210,10 @@ msgstr "&View"
 #: viewToolbarsMenu.label viewToolbarsMenu.accesskey
 msgid "&Toolbars"
 msgstr "&Toolbars"
+
+#: menubarCmd.label menubarCmd.accesskey
+msgid "&Menu Bar"
+msgstr "&Menu Bar"
 
 #: showAbToolbarCmd.label showAbToolbarCmd.accesskey
 msgid "Address B&ook Toolbar"
@@ -203,17 +227,27 @@ msgstr "&Status Bar"
 msgid "&Customize…"
 msgstr "&Customise…"
 
-#: showCardPane.label showCardPane.accesskey
-msgid "&Card Summary Pane"
-msgstr "&Card Summary Pane"
+#: layoutMenu.label layoutMenu.accesskey
+msgid "&Layout"
+msgstr "&Layout"
+
+#: showDirectoryPane.label showDirectoryPane.accesskey
+msgid "&Directory Pane"
+msgstr "&Directory Pane"
+
+#: showContactPane2.label showContactPane2.accesskey
+msgid "&Contact Pane"
+msgstr "&Contact Pane"
 
 #: menu_ShowNameAs.label menu_ShowNameAs.accesskey
 msgid "Show &Name As"
 msgstr "Show &Name As"
 
-#: firstLastCmd.label firstLastCmd.accesskey
-msgid "&First, Last"
-msgstr "&First, Last"
+#. We're not including a comma here
+#. because displayed names don't have the comma in between.
+#: firstLastCmd2.label firstLastCmd2.accesskey
+msgid "&First Last"
+msgstr "&First Last"
 
 #: lastFirstCmd.label lastFirstCmd.accesskey
 msgid "&Last, First"
@@ -227,13 +261,14 @@ msgstr "&Display Name"
 msgid "&Sort by"
 msgstr "&Sort by"
 
+#. Tools Menu
 #: tasksMenu.label tasksMenu.accesskey
 msgid "&Tools"
 msgstr "&Tools"
 
 #: messengerCmd.label messengerCmd.accesskey
-msgid "&Mail &amp; Newsgroups"
-msgstr "&Mail &amp; Newsgroups"
+msgid "&Mail & Newsgroups"
+msgstr "&Mail & Newsgroups"
 
 #: messengerCmd.commandkey
 msgid "1"
@@ -251,50 +286,25 @@ msgstr "&Import…"
 msgid "&Export…"
 msgstr "&Export…"
 
-#: preferencesCmd.label preferencesCmd.accesskey
-msgid "&Options…"
-msgstr "&Options…"
-
-#: preferencesCmd.key
-msgid "O"
-msgstr "O"
+#: preferencesCmd2.label preferencesCmd2.accesskey
+msgid "&Options"
+msgstr "&Options"
 
 #: preferencesCmdUnix.label preferencesCmdUnix.accesskey
 msgid "Prefere&nces"
 msgstr "Prefere&nces"
 
-#: helpMenu.label helpMenu.accesskey
-msgid "&Help"
-msgstr "&Help"
-
-#: releaseCmd.label releaseCmd.accesskey
-msgid "&Release Notes"
-msgstr "&Release Notes"
-
-#: hintsAndTips.label hintsAndTips.accesskey
-msgid "&brandShortName; &Help"
-msgstr "&brandShortName; &Help"
-
-#: hintsAndTipsMac.commandkey
-msgid "?"
-msgstr "?"
-
-#: aboutCmd.label aboutCmd.accesskey
-msgid "&About &brandShortName;"
-msgstr "&About &brandShortName;"
-
-#: newcardButton.label newcardButton.accesskey
-msgid "New &Card"
-msgstr "New &Card"
+#. Address Book Toolbar and Context Menus
+#: newContactButton.label newContactButton.accesskey
+msgid "New &Contact"
+msgstr "New &Contact"
 
 #: newlistButton.label newlistButton.accesskey
 msgid "New &List"
 msgstr "New &List"
 
-#: editButton.label editButton.accesskey
-msgid ""
-"_: editButton.label editButton.accesskey\n"
-"&Properties"
+#: editButton2.label editButton2.accesskey
+msgid "&Properties"
 msgstr "&Properties"
 
 #: newmsgButton.label newmsgButton.accesskey
@@ -305,27 +315,27 @@ msgstr "&Write"
 msgid "&Instant Message"
 msgstr "&Instant Message"
 
-#: deleteButton.label deleteButton.accesskey
-msgid ""
-"_: deleteButton.label deleteButton.accesskey\n"
-"&Delete"
+#: printButton.label printButton.accesskey
+msgid "P&rint…"
+msgstr "P&rint…"
+
+#: deleteButton2.label deleteButton2.accesskey
+msgctxt "deleteButton2.label deleteButton2.accesskey"
+msgid "&Delete"
 msgstr "&Delete"
 
-#: throbberItem.title
-msgid "Activity Indicator"
-msgstr "Activity Indicator"
-
-#: newcardButton.tooltip
-msgid "Create a new address book card"
-msgstr "Create a new address book card"
+#. Address Book Toolbar Tooltips
+#: newContactButton.tooltip
+msgid "Create a new address book contact"
+msgstr "Create a new address book contact"
 
 #: newlistButton.tooltip
 msgid "Create a new list"
 msgstr "Create a new list"
 
-#: editButton.tooltip
-msgid "Edit the selected card"
-msgstr "Edit the selected card"
+#: editButton2.tooltip
+msgid "Edit the selected item"
+msgstr "Edit the selected item"
 
 #: newmsgButton.tooltip
 msgid "Send a mail message"
@@ -335,18 +345,16 @@ msgstr "Send a mail message"
 msgid "Send an instant message or chat"
 msgstr "Send an instant message or chat"
 
-#: deleteButton.tooltip
-msgid "Delete selected card or address book"
-msgstr "Delete selected card or address book"
+#: deleteButton2.tooltip
+msgid "Delete selected item"
+msgstr "Delete selected item"
 
-#: throbber.tooltip
-msgid "Go to the &vendorShortName; home page"
-msgstr "Go to the &vendorShortName; home page"
-
+#. Dir Tree header
 #: dirTreeHeader.label
 msgid "Address Books"
 msgstr "Address Books"
 
+#. Search Bar
 #: SearchNameOrEmail.label SearchNameOrEmail.accesskey
 msgid "&Name or Email"
 msgstr "&Name or Email"
@@ -363,6 +371,11 @@ msgstr "k"
 msgid "Quick Search"
 msgstr "Quick Search"
 
+#. Results Pane
+#: Addrbook.label Addrbook.accesskey
+msgid "Address &Book"
+msgstr "Address &Book"
+
 #: GeneratedName.label GeneratedName.accesskey
 msgid "&Name"
 msgstr "&Name"
@@ -371,9 +384,9 @@ msgstr "&Name"
 msgid "&Email"
 msgstr "&Email"
 
-#: ScreenName.label ScreenName.accesskey
-msgid "&Screen Name"
-msgstr "&Screen Name"
+#: ChatName.label ChatName.accesskey
+msgid "&Chat Name"
+msgstr "&Chat Name"
 
 #: Company.label Company.accesskey
 msgid "Organi&zation"
@@ -427,30 +440,8 @@ msgstr "&Descending"
 msgid "Ph&onetic Name"
 msgstr "Ph&onetic Name"
 
-#: composeEmail.label composeEmail.accesskey
-msgid "&Compose Email To"
-msgstr "&Compose Email To"
-
-#: deleteAddrBookCard.label deleteAddrBookCard.accesskey
-msgid ""
-"_: deleteAddrBookCard.label deleteAddrBookCard.accesskey\n"
-"&Delete"
-msgstr "&Delete"
-
-#: newAddrBookCard.label newAddrBookCard.accesskey
-msgid "&New Card…"
-msgstr "&New Card…"
-
-#: newAddrBookMailingList.label newAddrBookMailingList.accesskey
-msgid "New &Mailing List…"
-msgstr "New &Mailing List…"
-
-#: addrBookCardProperties.label addrBookCardProperties.accesskey
-msgid ""
-"_: addrBookCardProperties.label addrBookCardProperties.accesskey\n"
-"&Properties"
-msgstr "&Properties"
-
+#. Card Summary Pane
+#. Box Headings
 #: contact.heading
 msgid "Contact"
 msgstr "Contact"
@@ -463,6 +454,10 @@ msgstr "Home"
 msgid "Other"
 msgstr "Other"
 
+#: chat.heading
+msgid "Chat"
+msgstr "Chat"
+
 #: phone.heading
 msgid "Phone"
 msgstr "Phone"
@@ -471,6 +466,7 @@ msgstr "Phone"
 msgid "Work"
 msgstr "Work"
 
+#. Special Box Headings, for mailing lists
 #: description.heading
 msgid "Description"
 msgstr "Description"
@@ -479,6 +475,7 @@ msgstr "Description"
 msgid "Addresses"
 msgstr "Addresses"
 
+#. For Map It!
 #: mapItButton.label
 msgid "Get Map"
 msgstr "Get Map"
@@ -487,17 +484,24 @@ msgstr "Get Map"
 msgid "Display a map of this address from the Web"
 msgstr "Display a map of this address from the Web"
 
+#. Status Bar
+#: statusText.label
+msgctxt "statusText.label"
+msgid ""
+msgstr ""
+
+#. Mac OS X Window Menu
 #: windowMenu.label
 msgid "Window"
 msgstr "Window"
 
-#: minimizeWindow.key
-msgid "m"
-msgstr "m"
-
 #: minimizeWindow.label
 msgid "Minimize"
 msgstr "Minimise"
+
+#: minimizeWindow.key
+msgid "m"
+msgstr "m"
 
 #: bringAllToFront.label
 msgid "Bring All to Front"
@@ -506,6 +510,90 @@ msgstr "Bring All to Front"
 #: zoomWindow.label
 msgid "Zoom"
 msgstr "Zoom"
+
+#~ msgid "Address Book Card…"
+#~ msgstr "Address Book Card…"
+
+#~ msgid "&Print Card…"
+#~ msgstr "&Print Card…"
+
+#~ msgid "E&xit"
+#~ msgstr "E&xit"
+
+#~ msgid "&Quit"
+#~ msgstr "&Quit"
+
+#~ msgid "Q"
+#~ msgstr "Q"
+
+#~ msgid "D"
+#~ msgstr "D"
+
+#~ msgid "Delete Card"
+#~ msgstr "Delete Card"
+
+#~ msgid "Delete Selected Cards"
+#~ msgstr "Delete Selected Cards"
+
+#~ msgid "&Card Summary Pane"
+#~ msgstr "&Card Summary Pane"
+
+#~ msgid "O"
+#~ msgstr "O"
+
+#~ msgid "&Help"
+#~ msgstr "&Help"
+
+#~ msgid "&Release Notes"
+#~ msgstr "&Release Notes"
+
+#~ msgid "&brandShortName; &Help"
+#~ msgstr "&brandShortName; &Help"
+
+#~ msgid "?"
+#~ msgstr "?"
+
+#~ msgid "&About &brandShortName;"
+#~ msgstr "&About &brandShortName;"
+
+#~ msgid "New &Card"
+#~ msgstr "New &Card"
+
+#~ msgid ""
+#~ "_: deleteButton.label deleteButton.accesskey\n"
+#~ "&Delete"
+#~ msgstr "&Delete"
+
+#~ msgid "Activity Indicator"
+#~ msgstr "Activity Indicator"
+
+#~ msgid "Delete selected card or address book"
+#~ msgstr "Delete selected card or address book"
+
+#~ msgid "Go to the &vendorShortName; home page"
+#~ msgstr "Go to the &vendorShortName; home page"
+
+#~ msgid "&Screen Name"
+#~ msgstr "&Screen Name"
+
+#~ msgid "&Compose Email To"
+#~ msgstr "&Compose Email To"
+
+#~ msgid ""
+#~ "_: deleteAddrBookCard.label deleteAddrBookCard.accesskey\n"
+#~ "&Delete"
+#~ msgstr "&Delete"
+
+#~ msgid "&New Card…"
+#~ msgstr "&New Card…"
+
+#~ msgid "New &Mailing List…"
+#~ msgstr "New &Mailing List…"
+
+#~ msgid ""
+#~ "_: addrBookCardProperties.label addrBookCardProperties.accesskey\n"
+#~ "&Properties"
+#~ msgstr "&Properties"
 
 #~ msgid "S&earch Bar"
 #~ msgstr "S&earch Bar"

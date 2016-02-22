@@ -1,8 +1,12 @@
+#. # This Source Code Form is subject to the terms of the Mozilla Public
+#. # License, v. 2.0. If a copy of the MPL was not distributed with this
+#. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#. extracted from ./mail/chrome/messenger/am-smime.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-07-07 14:29+0200\n"
+"POT-Creation-Date: 2015-10-30 04:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10,8 +14,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 0.8rc3\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
+#. ## S/MIME error strings.
+#. ## Note to localization: %S is a placeholder
 #: NoSenderSigningCert
 msgid ""
 "You specified that this message should be digitally signed, but the "
@@ -40,36 +48,29 @@ msgstr ""
 "You specified encryption for this message, but the application failed to "
 "find an encryption certificate for %S."
 
-#: SignNoSenderEncryptionCert
-msgid ""
-"You specified that this message should be digitally signed, but the "
-"application either failed to find an encryption certificate to include in "
-"the signed message, or the certificate has expired."
-msgstr ""
-"You specified that this message should be digitally signed, but the "
-"application either failed to find an encryption certificate to include in "
-"the signed message, or the certificate has expired."
-
-#: ErrorCanNotEncrypt
+#: ErrorEncryptMail
 msgid ""
 "Unable to encrypt message. Please check that you have a valid email "
 "certificate for each recipient. Please check that the certificates specified "
 "in Mail & Newsgroups Account Settings for this mail account are valid and "
-"trusted."
+"trusted for mail."
 msgstr ""
 "Unable to encrypt message. Please check that you have a valid email "
 "certificate for each recipient. Please check that the certificates specified "
 "in Mail & Newsgroups Account Settings for this mail account are valid and "
-"trusted."
+"trusted for mail."
 
-#: ErrorCanNotSign
+#: ErrorCanNotSignMail
 msgid ""
 "Unable to sign message. Please check that the certificates specified in Mail "
-"& Newsgroups Account Settings for this mail account are valid and trusted"
+"& Newsgroups Account Settings for this mail account are valid and trusted "
+"for mail."
 msgstr ""
 "Unable to sign message. Please check that the certificates specified in Mail "
-"& Newsgroups Account Settings for this mail account are valid and trusted"
+"& Newsgroups Account Settings for this mail account are valid and trusted "
+"for mail."
 
+#. ## Strings used for in the prefs.
 #: prefPanel-smime
 msgid "Security"
 msgstr "Security"
@@ -82,6 +83,14 @@ msgstr ""
 "Certificate Manager can't locate a valid certificate that can be used to "
 "digitally sign your messages."
 
+#: NoSigningCertForThisAddress
+msgid ""
+"Certificate Manager can't locate a valid certificate that can be used to "
+"digitally sign your messages with an address of <%S>."
+msgstr ""
+"Certificate Manager can't locate a valid certificate that can be used to "
+"digitally sign your messages with an address of <%S>."
+
 #: NoEncryptionCert
 msgid ""
 "Certificate Manager can't locate a valid certificate that other people can "
@@ -89,6 +98,14 @@ msgid ""
 msgstr ""
 "Certificate Manager can't locate a valid certificate that other people can "
 "use to send you encrypted email messages."
+
+#: NoEncryptionCertForThisAddress
+msgid ""
+"Certificate Manager can't locate a valid certificate that other people can "
+"use to send you encrypted email messages to the address <%S>."
+msgstr ""
+"Certificate Manager can't locate a valid certificate that other people can "
+"use to send you encrypted email messages to the address <%S>."
 
 #: encryption_needCertWantSame
 msgid ""
@@ -143,3 +160,21 @@ msgstr ""
 "You should also specify a certificate to use for digitally signing your "
 "messages. Do you want to configure a certificate for digitally signing "
 "messages now?"
+
+#. ## Strings used by nsMsgComposeSecure
+#: mime_smimeEncryptedContentDesc
+msgid "S/MIME Encrypted Message"
+msgstr "S/MIME Encrypted Message"
+
+#: mime_smimeSignatureContentDesc
+msgid "S/MIME Cryptographic Signature"
+msgstr "S/MIME Cryptographic Signature"
+
+#~ msgid ""
+#~ "You specified that this message should be digitally signed, but the "
+#~ "application either failed to find an encryption certificate to include in "
+#~ "the signed message, or the certificate has expired."
+#~ msgstr ""
+#~ "You specified that this message should be digitally signed, but the "
+#~ "application either failed to find an encryption certificate to include in "
+#~ "the signed message, or the certificate has expired."
