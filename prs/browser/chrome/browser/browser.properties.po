@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-25 17:24+0000\n"
+"POT-Creation-Date: 2016-03-07 15:19+0000\n"
 "PO-Revision-Date: 2015-09-21 23:03+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -639,11 +639,6 @@ msgstr "تمام موارد انتخاب شده پاک خواهند شد."
 msgid "&Update to %S"
 msgstr "به‌هنگام‌سازی %S"
 
-#. # RSS Pretty Print
-#: feedShowFeedNew
-msgid "Subscribe to '%S'…"
-msgstr "آبونه شدن «%S»…"
-
 #: menuOpenAllInTabs.label
 msgid "Open All in Tabs"
 msgstr "باز کردن همه در تبها"
@@ -854,11 +849,13 @@ msgstr "این پایگاه وبی از هویت خود اطلاعاتی فرا�
 msgid "How Tracking Protection works"
 msgstr ""
 
-#. # LOCALIZATION NOTE (trackingProtection.intro.description): %S is brandShortName
-#: trackingProtection.intro.description
+#. # LOCALIZATION NOTE (trackingProtection.intro.description2):
+#. # %S is brandShortName. This string should match the one from Step 1 of the tour
+#. # when it starts from the button shown when a new private window is opened.
+#: trackingProtection.intro.description2
 msgid ""
-"When the shield is visible, that means Firefox is actively blocking content "
-"that tracks you."
+"When you see the shield, %S is blocking some parts of the page that could "
+"track your browsing activity."
 msgstr ""
 
 #. # LOCALIZATION NOTE (trackingProtection.intro.step1of3): Indicates that the intro panel is step one of three in a tour.
@@ -1051,15 +1048,14 @@ msgstr ""
 msgid "&Get me out of here!"
 msgstr "ترک این مکان!"
 
-#: safebrowsing.reportedWebForgery
-msgid "Reported Web Forgery!"
-msgstr "جعل وبی گزارش شده!"
+#: safebrowsing.deceptiveSite
+msgid "Deceptive Site!"
+msgstr ""
 
-#: safebrowsing.notAForgeryButton.label
-#: safebrowsing.notAForgeryButton.accessKey
-#, fuzzy
-msgid "This isn't a web &forgery…"
-msgstr "این یک جعل وبی نیست…"
+#: safebrowsing.notADeceptiveSiteButton.label
+#: safebrowsing.notADeceptiveSiteButton.accessKey
+msgid "This isn't a &deceptive site…"
+msgstr ""
 
 #: safebrowsing.reportedAttackSite
 msgid "Reported Attack Site!"
@@ -1293,52 +1289,6 @@ msgstr ""
 #, fuzzy
 msgid "%1$S (%2$S)"
 msgstr "%1$S %2$S"
-
-#. # Identity notifications popups
-#: identity.termsOfService
-msgid "Terms of Service"
-msgstr "شرایط ارائهٔ خدمات"
-
-#: identity.privacyPolicy
-msgid "Privacy Policy"
-msgstr "سیاست حفظ حریم خصوصی"
-
-#. # LOCALIZATION NOTE (identity.chooseIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
-#: identity.chooseIdentity.description
-msgid "Sign in to %S"
-msgstr ""
-
-#: identity.chooseIdentity.label
-msgid "Use an existing email"
-msgstr ""
-
-#: identity.newIdentity.label identity.newIdentity.accessKey
-msgid "Us&e a different email"
-msgstr ""
-
-#: identity.newIdentity.email.placeholder
-msgid "Email"
-msgstr "پست الکترونیکی"
-
-#. # LOCALIZATION NOTE (identity.newIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
-#: identity.newIdentity.description
-msgid "Enter your email address to sign in to %S"
-msgstr ""
-
-#: identity.next.label identity.next.accessKey
-#, fuzzy
-msgid "&Next"
-msgstr "بعدی"
-
-#. # LOCALIZATION NOTE: shown in the popup notification when a user successfully logs into a website
-#. # LOCALIZATION NOTE (identity.loggedIn.description): %S is the user's identity (e.g. user@example.com)
-#: identity.loggedIn.description
-msgid "Signed in as: %S"
-msgstr ""
-
-#: identity.loggedIn.signOut.label identity.loggedIn.signOut.accessKey
-msgid "Sign &Out"
-msgstr ""
 
 #. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message,
 #. #                    getUserMedia.shareScreen.message, getUserMedia.shareCameraAndMicrophone.message,
@@ -1723,25 +1673,12 @@ msgid ""
 "Please try again later."
 msgstr ""
 
-#. # LOCALIZATION NOTE(emeNotifications.drmContentCDMNotSupported.64bit.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %1$S is brandShortName, %2$S will be the 'learn more' link
-#: emeNotifications.drmContentCDMNotSupported.64bit.message
-msgid ""
-"The audio or video on this page requires DRM software that this 64-bit build "
-"of %1$S does not support. %2$S"
-msgstr ""
-
 #. # LOCALIZATION NOTE(emeNotifications.drmContentCDMNotSupported.unsupportedOS.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %1$S is brandShortName, %2$S is the name of the user's OS (Windows, Linux, Mac OS X), %3$S will be the 'learn more' link
 #: emeNotifications.drmContentCDMNotSupported.unsupportedOS.message
 msgid ""
 "The audio or video on this page requires DRM software that %1$S does not "
 "support on %2$S. %3$S"
 msgstr ""
-
-#: emeNotifications.optionsButton.label
-#: emeNotifications.optionsButton.accesskey
-#, fuzzy
-msgid "&Options"
-msgstr "گزینه‌ها"
 
 #: emeNotifications.unknownDRMSoftware
 #, fuzzy
@@ -1790,6 +1727,11 @@ msgstr ""
 #, fuzzy
 msgid "Learn more"
 msgstr "بیشتر بدانید…"
+
+#. # LOCALIZATION NOTE (customizeMode.tabTitle): %S is brandShortName
+#: customizeMode.tabTitle
+msgid "Customize %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE(appmenu.*.description, appmenu.*.label): these are used for
 #. # the appmenu labels and buttons that appear when an update is staged for
@@ -1897,7 +1839,7 @@ msgstr ""
 #. #                    usercontext.work.label,
 #. #                    usercontext.shopping.label,
 #. #                    usercontext.banking.label):
-#. # These strings specify the four default contexts included in support of the
+#. # These strings specify the four predefined contexts included in support of the
 #. # Contextual Identity / Containers project. Each context is meant to represent
 #. # the context that the user is in when interacting with the site. Different
 #. # contexts will store cookies and other information from those sites in
@@ -1965,6 +1907,33 @@ msgstr ""
 #: tabgroups.migration.tabGroupBookmarkFolderName
 msgid "Bookmarked Tab Groups"
 msgstr ""
+
+#~ msgid "Subscribe to '%S'…"
+#~ msgstr "آبونه شدن «%S»…"
+
+#~ msgid "Reported Web Forgery!"
+#~ msgstr "جعل وبی گزارش شده!"
+
+#, fuzzy
+#~ msgid "This isn't a web &forgery…"
+#~ msgstr "این یک جعل وبی نیست…"
+
+#~ msgid "Terms of Service"
+#~ msgstr "شرایط ارائهٔ خدمات"
+
+#~ msgid "Privacy Policy"
+#~ msgstr "سیاست حفظ حریم خصوصی"
+
+#~ msgid "Email"
+#~ msgstr "پست الکترونیکی"
+
+#, fuzzy
+#~ msgid "&Next"
+#~ msgstr "بعدی"
+
+#, fuzzy
+#~ msgid "&Options"
+#~ msgstr "گزینه‌ها"
 
 #, fuzzy
 #~ msgctxt ""

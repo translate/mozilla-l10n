@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-25 17:24+0000\n"
+"POT-Creation-Date: 2016-03-07 15:19+0000\n"
 "PO-Revision-Date: 2016-01-10 17:53+0000\n"
 "Last-Translator: Raul Malea <raul.malea@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -631,11 +631,6 @@ msgstr "Se vor curăța toate elementele selectate."
 msgid "&Update to %S"
 msgstr "Act&ualizează la %S"
 
-#. # RSS Pretty Print
-#: feedShowFeedNew
-msgid "Subscribe to '%S'…"
-msgstr "Abonează-te la „%S”…"
-
 #: menuOpenAllInTabs.label
 msgid "Open All in Tabs"
 msgstr "Deschide toate în file"
@@ -839,14 +834,14 @@ msgstr "Acest site nu furnizează informații despre identitatea sa."
 msgid "How Tracking Protection works"
 msgstr "Cum funcționează protecția față de urmărire"
 
-#. # LOCALIZATION NOTE (trackingProtection.intro.description): %S is brandShortName
-#: trackingProtection.intro.description
+#. # LOCALIZATION NOTE (trackingProtection.intro.description2):
+#. # %S is brandShortName. This string should match the one from Step 1 of the tour
+#. # when it starts from the button shown when a new private window is opened.
+#: trackingProtection.intro.description2
 msgid ""
-"When the shield is visible, that means Firefox is actively blocking content "
-"that tracks you."
+"When you see the shield, %S is blocking some parts of the page that could "
+"track your browsing activity."
 msgstr ""
-"Când scutul este vizibil, înseamnă că Firefox blochează în mod activ "
-"conținut care vă urmărește."
 
 #. # LOCALIZATION NOTE (trackingProtection.intro.step1of3): Indicates that the intro panel is step one of three in a tour.
 #: trackingProtection.intro.step1of3
@@ -1034,14 +1029,14 @@ msgstr "Acest site va ascunde cursorul."
 msgid "&Get me out of here!"
 msgstr "&Du-mă de aici!"
 
-#: safebrowsing.reportedWebForgery
-msgid "Reported Web Forgery!"
-msgstr "Fals web raportat!"
+#: safebrowsing.deceptiveSite
+msgid "Deceptive Site!"
+msgstr ""
 
-#: safebrowsing.notAForgeryButton.label
-#: safebrowsing.notAForgeryButton.accessKey
-msgid "This isn't a web &forgery…"
-msgstr "Acesta nu este un site web &fals…"
+#: safebrowsing.notADeceptiveSiteButton.label
+#: safebrowsing.notADeceptiveSiteButton.accessKey
+msgid "This isn't a &deceptive site…"
+msgstr ""
 
 #: safebrowsing.reportedAttackSite
 msgid "Reported Attack Site!"
@@ -1275,51 +1270,6 @@ msgstr "În&chide această bară laterală"
 #: social.aria.toolbarButtonBadgeText
 msgid "%1$S (%2$S)"
 msgstr "%1$S (%2$S)"
-
-#. # Identity notifications popups
-#: identity.termsOfService
-msgid "Terms of Service"
-msgstr "Termenii serviciului"
-
-#: identity.privacyPolicy
-msgid "Privacy Policy"
-msgstr "Politică de confidențialitate"
-
-#. # LOCALIZATION NOTE (identity.chooseIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
-#: identity.chooseIdentity.description
-msgid "Sign in to %S"
-msgstr "Autentifică-te la %S"
-
-#: identity.chooseIdentity.label
-msgid "Use an existing email"
-msgstr "Folosește un e-mail existent"
-
-#: identity.newIdentity.label identity.newIdentity.accessKey
-msgid "Us&e a different email"
-msgstr "Folos&ește o adresă de e-mail diferită"
-
-#: identity.newIdentity.email.placeholder
-msgid "Email"
-msgstr "E-mail"
-
-#. # LOCALIZATION NOTE (identity.newIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
-#: identity.newIdentity.description
-msgid "Enter your email address to sign in to %S"
-msgstr "Introdu adresa de e-mail pentru autentificarea la %S"
-
-#: identity.next.label identity.next.accessKey
-msgid "&Next"
-msgstr "Î&nainte"
-
-#. # LOCALIZATION NOTE: shown in the popup notification when a user successfully logs into a website
-#. # LOCALIZATION NOTE (identity.loggedIn.description): %S is the user's identity (e.g. user@example.com)
-#: identity.loggedIn.description
-msgid "Signed in as: %S"
-msgstr "Autenficat ca: %S"
-
-#: identity.loggedIn.signOut.label identity.loggedIn.signOut.accessKey
-msgid "Sign &Out"
-msgstr "Dec&onectare"
 
 #. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message,
 #. #                    getUserMedia.shareScreen.message, getUserMedia.shareCameraAndMicrophone.message,
@@ -1709,15 +1659,6 @@ msgstr ""
 "%S instalează componentele necesare pentru a reda clipul audio sau video de "
 "pe aceasta pagină. Vă rugăm să încercați din nou mai târziu."
 
-#. # LOCALIZATION NOTE(emeNotifications.drmContentCDMNotSupported.64bit.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %1$S is brandShortName, %2$S will be the 'learn more' link
-#: emeNotifications.drmContentCDMNotSupported.64bit.message
-msgid ""
-"The audio or video on this page requires DRM software that this 64-bit build "
-"of %1$S does not support. %2$S"
-msgstr ""
-"Elementele audio sau video de pe aceasta pagină necesită programe DRM pe "
-"care versiunea pe 64 biți a %1$S nu le suportă. %2$S"
-
 #. # LOCALIZATION NOTE(emeNotifications.drmContentCDMNotSupported.unsupportedOS.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %1$S is brandShortName, %2$S is the name of the user's OS (Windows, Linux, Mac OS X), %3$S will be the 'learn more' link
 #: emeNotifications.drmContentCDMNotSupported.unsupportedOS.message
 msgid ""
@@ -1726,12 +1667,6 @@ msgid ""
 msgstr ""
 "Elementele audio sau video de pe aceasta pagină necesită programe DRM pe "
 "care %1$S nu le suportă la %2$S. %3$S"
-
-#: emeNotifications.optionsButton.label
-#: emeNotifications.optionsButton.accesskey
-#, fuzzy
-msgid "&Options"
-msgstr "&Opțiuni"
 
 #: emeNotifications.unknownDRMSoftware
 msgctxt "emeNotifications.unknownDRMSoftware"
@@ -1781,6 +1716,11 @@ msgstr "Sfat"
 #: customizeTips.tip0.learnMore
 msgid "Learn more"
 msgstr "Află mai multe"
+
+#. # LOCALIZATION NOTE (customizeMode.tabTitle): %S is brandShortName
+#: customizeMode.tabTitle
+msgid "Customize %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE(appmenu.*.description, appmenu.*.label): these are used for
 #. # the appmenu labels and buttons that appear when an update is staged for
@@ -1891,7 +1831,7 @@ msgstr ""
 #. #                    usercontext.work.label,
 #. #                    usercontext.shopping.label,
 #. #                    usercontext.banking.label):
-#. # These strings specify the four default contexts included in support of the
+#. # These strings specify the four predefined contexts included in support of the
 #. # Contextual Identity / Containers project. Each context is meant to represent
 #. # the context that the user is in when interacting with the site. Different
 #. # contexts will store cookies and other information from those sites in
@@ -1959,6 +1899,63 @@ msgstr ""
 #: tabgroups.migration.tabGroupBookmarkFolderName
 msgid "Bookmarked Tab Groups"
 msgstr ""
+
+#~ msgid "Subscribe to '%S'…"
+#~ msgstr "Abonează-te la „%S”…"
+
+#~ msgid ""
+#~ "When the shield is visible, that means Firefox is actively blocking "
+#~ "content that tracks you."
+#~ msgstr ""
+#~ "Când scutul este vizibil, înseamnă că Firefox blochează în mod activ "
+#~ "conținut care vă urmărește."
+
+#~ msgid "Reported Web Forgery!"
+#~ msgstr "Fals web raportat!"
+
+#~ msgid "This isn't a web &forgery…"
+#~ msgstr "Acesta nu este un site web &fals…"
+
+#~ msgid "Terms of Service"
+#~ msgstr "Termenii serviciului"
+
+#~ msgid "Privacy Policy"
+#~ msgstr "Politică de confidențialitate"
+
+#~ msgid "Sign in to %S"
+#~ msgstr "Autentifică-te la %S"
+
+#~ msgid "Use an existing email"
+#~ msgstr "Folosește un e-mail existent"
+
+#~ msgid "Us&e a different email"
+#~ msgstr "Folos&ește o adresă de e-mail diferită"
+
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Enter your email address to sign in to %S"
+#~ msgstr "Introdu adresa de e-mail pentru autentificarea la %S"
+
+#~ msgid "&Next"
+#~ msgstr "Î&nainte"
+
+#~ msgid "Signed in as: %S"
+#~ msgstr "Autenficat ca: %S"
+
+#~ msgid "Sign &Out"
+#~ msgstr "Dec&onectare"
+
+#~ msgid ""
+#~ "The audio or video on this page requires DRM software that this 64-bit "
+#~ "build of %1$S does not support. %2$S"
+#~ msgstr ""
+#~ "Elementele audio sau video de pe aceasta pagină necesită programe DRM pe "
+#~ "care versiunea pe 64 biți a %1$S nu le suportă. %2$S"
+
+#, fuzzy
+#~ msgid "&Options"
+#~ msgstr "&Opțiuni"
 
 #~ msgid ""
 #~ "You're now helping to test multi-process in %S! Please report problems "

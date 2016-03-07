@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-25 17:24+0000\n"
+"POT-Creation-Date: 2016-03-07 15:19+0000\n"
 "PO-Revision-Date: 2016-02-23 15:18+0000\n"
 "Last-Translator: Ognyan Kulev <ognyan@ognyankulev.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1456240694.000000\n"
@@ -628,11 +628,6 @@ msgstr "Всички избрани елементи ще бъдат изчис�
 msgid "&Update to %S"
 msgstr "&Обновяване до %S"
 
-#. # RSS Pretty Print
-#: feedShowFeedNew
-msgid "Subscribe to '%S'…"
-msgstr "Абониране за „%S“…"
-
 #: menuOpenAllInTabs.label
 msgid "Open All in Tabs"
 msgstr "Отваряне на всички в подпрозорци"
@@ -835,14 +830,14 @@ msgstr "Страницата не предоставя информация за
 msgid "How Tracking Protection works"
 msgstr "Как работи защитата от проследяване"
 
-#. # LOCALIZATION NOTE (trackingProtection.intro.description): %S is brandShortName
-#: trackingProtection.intro.description
+#. # LOCALIZATION NOTE (trackingProtection.intro.description2):
+#. # %S is brandShortName. This string should match the one from Step 1 of the tour
+#. # when it starts from the button shown when a new private window is opened.
+#: trackingProtection.intro.description2
 msgid ""
-"When the shield is visible, that means Firefox is actively blocking content "
-"that tracks you."
+"When you see the shield, %S is blocking some parts of the page that could "
+"track your browsing activity."
 msgstr ""
-"Видимата иконка на щит означава, че Firefox активно блокира елементи, което "
-"ви проследяват."
 
 #. # LOCALIZATION NOTE (trackingProtection.intro.step1of3): Indicates that the intro panel is step one of three in a tour.
 #: trackingProtection.intro.step1of3
@@ -1032,14 +1027,14 @@ msgstr "Тази страница ще скрива показалеца."
 msgid "&Get me out of here!"
 msgstr "&Махнете ме от тук!"
 
-#: safebrowsing.reportedWebForgery
-msgid "Reported Web Forgery!"
-msgstr "Докладвана измамническа страница!"
+#: safebrowsing.deceptiveSite
+msgid "Deceptive Site!"
+msgstr ""
 
-#: safebrowsing.notAForgeryButton.label
-#: safebrowsing.notAForgeryButton.accessKey
-msgid "This isn't a web &forgery…"
-msgstr "Това не е &измамническа страница…"
+#: safebrowsing.notADeceptiveSiteButton.label
+#: safebrowsing.notADeceptiveSiteButton.accessKey
+msgid "This isn't a &deceptive site…"
+msgstr ""
 
 #: safebrowsing.reportedAttackSite
 msgid "Reported Attack Site!"
@@ -1277,51 +1272,6 @@ msgstr "&Затваряне на страничната лента"
 #: social.aria.toolbarButtonBadgeText
 msgid "%1$S (%2$S)"
 msgstr "%1$S (%2$S)"
-
-#. # Identity notifications popups
-#: identity.termsOfService
-msgid "Terms of Service"
-msgstr "Условия на услугата"
-
-#: identity.privacyPolicy
-msgid "Privacy Policy"
-msgstr "Политика за личните данни"
-
-#. # LOCALIZATION NOTE (identity.chooseIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
-#: identity.chooseIdentity.description
-msgid "Sign in to %S"
-msgstr "Вписване в %S"
-
-#: identity.chooseIdentity.label
-msgid "Use an existing email"
-msgstr "Използване на съществуващ адрес на ел. поща"
-
-#: identity.newIdentity.label identity.newIdentity.accessKey
-msgid "Us&e a different email"
-msgstr "Изп&олзване на друг адрес на ел. поща"
-
-#: identity.newIdentity.email.placeholder
-msgid "Email"
-msgstr "Адрес на ел. поща"
-
-#. # LOCALIZATION NOTE (identity.newIdentity.description): %S is the website origin (e.g. https://www.mozilla.org) shown in popup notifications.
-#: identity.newIdentity.description
-msgid "Enter your email address to sign in to %S"
-msgstr "Въведете своя адрес на ел. поща за вписване в %S"
-
-#: identity.next.label identity.next.accessKey
-msgid "&Next"
-msgstr "На&пред"
-
-#. # LOCALIZATION NOTE: shown in the popup notification when a user successfully logs into a website
-#. # LOCALIZATION NOTE (identity.loggedIn.description): %S is the user's identity (e.g. user@example.com)
-#: identity.loggedIn.description
-msgid "Signed in as: %S"
-msgstr "Вписани като: %S"
-
-#: identity.loggedIn.signOut.label identity.loggedIn.signOut.accessKey
-msgid "Sign &Out"
-msgstr "Из&ход"
 
 #. # LOCALIZATION NOTE (getUserMedia.shareCamera.message, getUserMedia.shareMicrophone.message,
 #. #                    getUserMedia.shareScreen.message, getUserMedia.shareCameraAndMicrophone.message,
@@ -1711,15 +1661,6 @@ msgstr ""
 "%S инсталира компоненти, необходими за работата на аудио или видеозапис от "
 "страницата. Моля опитайте по-късно."
 
-#. # LOCALIZATION NOTE(emeNotifications.drmContentCDMNotSupported.64bit.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %1$S is brandShortName, %2$S will be the 'learn more' link
-#: emeNotifications.drmContentCDMNotSupported.64bit.message
-msgid ""
-"The audio or video on this page requires DRM software that this 64-bit build "
-"of %1$S does not support. %2$S"
-msgstr ""
-"Аудио или видеозапис от страницата изисква софтуер за DRM, който е "
-"неподдържан от 64-битов %1$S. %2$S"
-
 #. # LOCALIZATION NOTE(emeNotifications.drmContentCDMNotSupported.unsupportedOS.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %1$S is brandShortName, %2$S is the name of the user's OS (Windows, Linux, Mac OS X), %3$S will be the 'learn more' link
 #: emeNotifications.drmContentCDMNotSupported.unsupportedOS.message
 msgid ""
@@ -1728,11 +1669,6 @@ msgid ""
 msgstr ""
 "Аудио или видеозапис от страницата изисква софтуер за DRM, който е "
 "неподдържан от %1$S работещ под %2$S. %3$S"
-
-#: emeNotifications.optionsButton.label
-#: emeNotifications.optionsButton.accesskey
-msgid "&Options"
-msgstr "&Настройки"
 
 #: emeNotifications.unknownDRMSoftware
 msgctxt "emeNotifications.unknownDRMSoftware"
@@ -1782,6 +1718,11 @@ msgstr "Подсказка"
 #: customizeTips.tip0.learnMore
 msgid "Learn more"
 msgstr "Научете повече"
+
+#. # LOCALIZATION NOTE (customizeMode.tabTitle): %S is brandShortName
+#: customizeMode.tabTitle
+msgid "Customize %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE(appmenu.*.description, appmenu.*.label): these are used for
 #. # the appmenu labels and buttons that appear when an update is staged for
@@ -1894,7 +1835,7 @@ msgstr "&Активиране (изисква рестартиране)"
 #. #                    usercontext.work.label,
 #. #                    usercontext.shopping.label,
 #. #                    usercontext.banking.label):
-#. # These strings specify the four default contexts included in support of the
+#. # These strings specify the four predefined contexts included in support of the
 #. # Contextual Identity / Containers project. Each context is meant to represent
 #. # the context that the user is in when interacting with the site. Different
 #. # contexts will store cookies and other information from those sites in
@@ -1964,6 +1905,62 @@ msgstr "Група %S"
 #: tabgroups.migration.tabGroupBookmarkFolderName
 msgid "Bookmarked Tab Groups"
 msgstr "Отметка на група подпрозорци"
+
+#~ msgid "Subscribe to '%S'…"
+#~ msgstr "Абониране за „%S“…"
+
+#~ msgid ""
+#~ "When the shield is visible, that means Firefox is actively blocking "
+#~ "content that tracks you."
+#~ msgstr ""
+#~ "Видимата иконка на щит означава, че Firefox активно блокира елементи, "
+#~ "което ви проследяват."
+
+#~ msgid "Reported Web Forgery!"
+#~ msgstr "Докладвана измамническа страница!"
+
+#~ msgid "This isn't a web &forgery…"
+#~ msgstr "Това не е &измамническа страница…"
+
+#~ msgid "Terms of Service"
+#~ msgstr "Условия на услугата"
+
+#~ msgid "Privacy Policy"
+#~ msgstr "Политика за личните данни"
+
+#~ msgid "Sign in to %S"
+#~ msgstr "Вписване в %S"
+
+#~ msgid "Use an existing email"
+#~ msgstr "Използване на съществуващ адрес на ел. поща"
+
+#~ msgid "Us&e a different email"
+#~ msgstr "Изп&олзване на друг адрес на ел. поща"
+
+#~ msgid "Email"
+#~ msgstr "Адрес на ел. поща"
+
+#~ msgid "Enter your email address to sign in to %S"
+#~ msgstr "Въведете своя адрес на ел. поща за вписване в %S"
+
+#~ msgid "&Next"
+#~ msgstr "На&пред"
+
+#~ msgid "Signed in as: %S"
+#~ msgstr "Вписани като: %S"
+
+#~ msgid "Sign &Out"
+#~ msgstr "Из&ход"
+
+#~ msgid ""
+#~ "The audio or video on this page requires DRM software that this 64-bit "
+#~ "build of %1$S does not support. %2$S"
+#~ msgstr ""
+#~ "Аудио или видеозапис от страницата изисква софтуер за DRM, който е "
+#~ "неподдържан от 64-битов %1$S. %2$S"
+
+#~ msgid "&Options"
+#~ msgstr "&Настройки"
 
 #~ msgid ""
 #~ "You're now helping to test multi-process in %S! Please report problems "
