@@ -1,13 +1,13 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from en-US/mobile/overrides/appstrings.properties
+#. extracted from ./mobile/overrides/appstrings.properties
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-11 03:15-0700\n"
+"POT-Creation-Date: 2016-03-08 00:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Merge-On: location\n"
 
 #: malformedURI
 msgid "The URL is not valid and cannot be loaded."
@@ -30,10 +31,11 @@ msgstr ""
 msgid "Firefox can't find the server at %S."
 msgstr ""
 
-#: protocolNotFound
+#: unknownProtocolFound
 msgid ""
-"Firefox doesn't know how to open this address, because the protocol (%S) "
-"isn't associated with any program."
+"Firefox doesn't know how to open this address, because one of the following "
+"protocols (%S) isn't associated with any program or is not allowed in this "
+"context."
 msgstr ""
 
 #: connectionFailure
@@ -166,15 +168,25 @@ msgid ""
 "based on your security preferences."
 msgstr ""
 
-#: phishingBlocked
+#: deceptiveBlocked
 msgid ""
-"The website at %S has been reported as a web forgery designed to trick users "
-"into sharing personal or financial information."
+"This web page at %S has been reported as a deceptive site and has been "
+"blocked based on your security preferences."
 msgstr ""
 
-#: cspFrameAncestorBlocked
+#: unwantedBlocked
 msgid ""
-"This page has a content security policy that prevents it from being embedded "
+"The site at %S has been reported as serving unwanted software and has been "
+"blocked based on your security preferences."
+msgstr ""
+
+#: forbiddenBlocked
+msgid "The site at %S has been blocked by your browser configuration."
+msgstr ""
+
+#: cspBlocked
+msgid ""
+"This page has a content security policy that prevents it from being loaded "
 "in this way."
 msgstr ""
 
@@ -188,6 +200,18 @@ msgstr ""
 msgid ""
 "This page uses an unsupported technology that is no longer available by "
 "default in Firefox."
+msgstr ""
+
+#: sslv3Used
+msgid ""
+"Firefox cannot guarantee the safety of your data on %S because it uses "
+"SSLv3, a broken security protocol."
+msgstr ""
+
+#: weakCryptoUsed
+msgid ""
+"The owner of %S has configured their website improperly. To protect your "
+"information from being stolen, Firefox has not connected to this website."
 msgstr ""
 
 #~ msgid ""
