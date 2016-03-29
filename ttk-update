@@ -1,9 +1,0 @@
-#!/bin/bash
-
-source $(dirname $0)/ttk.inc.sh
-stop_if_running
-
-if [ $# -ne 0 ]; then
-	langs=$(which_langs $*)
-fi
-update_against_templates $langs
