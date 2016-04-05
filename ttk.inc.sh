@@ -80,7 +80,10 @@ function all_langs() {
 	if [ $# -eq 1 ]; then
 		option_change_id="--modified-since=$1"
 	fi
-	ssh $user@$server $precommand python $manage_command list_languages --verbosity=$manage_py_verbosity $option_project $option_change_id
+	langs=$(ssh $user@$server $precommand python $manage_command list_languages --verbosity=$manage_py_verbosity $option_project $option_change_id)
+	# Check for broken mlo here by looking for languages like: Sentry
+	# Waiting, Ctrl-C message, etc
+	echo $langs
 }
 
 function _get_language_line() {
