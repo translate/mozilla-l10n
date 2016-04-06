@@ -303,7 +303,11 @@ do
 	if [ $opt_copyfiles ]; then
 		verbose "Copy files not handled by moz2po/po2moz"
 		if [ $MOZ_PRODUCT == "browser" ]; then
+			# DTD and properties files
+			copyfileifmissing devtools/client/promisedebugger.properties ${mozlang}
+			copyfileifmissing dom/chrome/netErrorApp.dtd ${mozlang}
 			copyfileifmissing toolkit/chrome/formautofill/requestAutocomplete.dtd ${mozlang}
+			# Special files
 			copyfileifmissing toolkit/chrome/mozapps/help/welcome.xhtml ${mozlang}
 			copyfileifmissing toolkit/chrome/mozapps/help/help-toc.rdf ${mozlang}
 			copyfileifmissing browser/firefox-l10n.js ${mozlang}
