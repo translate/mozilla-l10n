@@ -311,6 +311,8 @@ do
 			copyfileifmissing toolkit/chrome/mozapps/help/welcome.xhtml ${mozlang}
 			copyfileifmissing toolkit/chrome/mozapps/help/help-toc.rdf ${mozlang}
 			copyfileifmissing browser/firefox-l10n.js ${mozlang}
+			removefile browser/profile/chrome/userChrome-example.css ${mozlang}
+			removefile browser/profile/chrome/userContent-example.css ${mozlang}
 			copyfileifmissing toolkit/chrome/global/intl.css ${mozlang}
 			# This one needs special approval but we need it to pass and compile
 			copyfileifmissing browser/searchplugins/list.txt ${mozlang}

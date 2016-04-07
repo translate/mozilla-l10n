@@ -685,6 +685,14 @@ function copyfile {
 	fi
 }
 
+function removefile {
+	filename=$1
+	language=$2
+	if [ -f ${L10N_DIR}/$language/$filename ]; then
+		rm ${L10N_DIR}/$language/$filename
+	fi
+}
+
 function copyfileifmissing {
 	filename=$1
 	language=$2
