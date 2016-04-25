@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 09:51+0000\n"
+"POT-Creation-Date: 2016-04-25 17:21+0000\n"
 "PO-Revision-Date: 2015-03-19 21:09+0000\n"
 "Last-Translator: Стоян Димитров <stoyan@gmx.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1426799343.000000\n"
 
@@ -80,7 +80,7 @@ msgid "Blocked: May contain a virus or spyware"
 msgstr "Блокирано: може да съдържа вирус или шпионски софтуер"
 
 #. # LOCALIZATION NOTE (blockedMalware, blockedPotentiallyUnwanted,
-#. #                    blockedUncommon):
+#. #                    blockedUncommon2):
 #. # These strings are shown in the panel for some types of blocked downloads, and
 #. # are immediately followed by the "Learn More" link, thus they must end with a
 #. # period.  You may need to adjust "downloadDetails.width" in "downloads.dtd" if
@@ -94,20 +94,25 @@ msgstr "Този файл съдържа вирус или зловреден к
 msgid "This file may harm your computer."
 msgstr "Този файл може да навреди на компютъра."
 
-#: blockedUncommon
-msgid "This file may not be safe to open."
-msgstr "Този файл може да бъде опасен за отваряне."
+#: blockedUncommon2
+msgid "This file is not commonly downloaded."
+msgstr ""
 
-#. # LOCALIZATION NOTE (unblockHeader, unblockTypeMalware,
-#. #                    unblockTypePotentiallyUnwanted, unblockTypeUncommon,
-#. #                    unblockTip, unblockButtonContinue, unblockButtonCancel):
+#. # LOCALIZATION NOTE (unblockHeaderUnblock, unblockHeaderOpen,
+#. #                    unblockTypeMalware, unblockTypePotentiallyUnwanted2,
+#. #                    unblockTypeUncommon2, unblockTip2, unblockButtonOpen,
+#. #                    unblockButtonUnblock, unblockButtonConfirmBlock):
 #. # These strings are displayed in the dialog shown when the user asks a blocked
 #. # download to be unblocked.  The severity of the threat is expressed in
 #. # descending order by the unblockType strings, it is higher for files detected
 #. # as malware and lower for uncommon downloads.
-#. # Note: These strings don't exist in the UI yet.  See bug 1053890.
-#: unblockHeader
-msgid "Are you sure you want to unblock this file?"
+#: unblockHeaderUnblock
+msgid "Are you sure you want to allow this download?"
+msgstr ""
+
+#: unblockHeaderOpen
+#, fuzzy
+msgid "Are you sure you want to open this file?"
 msgstr "Сигурни ли сте, че искате да деблокирате този файл?"
 
 #: unblockTypeMalware
@@ -117,35 +122,37 @@ msgstr ""
 "Този файл съдържа вирус или шпионски софтуер, който може да навреди на "
 "компютъра."
 
-#: unblockTypePotentiallyUnwanted
+#: unblockTypePotentiallyUnwanted2
+#, fuzzy
 msgid ""
-"This file, disguised as a helpful download, will make unexpected changes to "
-"your programs and settings."
+"This file is disguised as a helpful download, but it can make unexpected "
+"changes to your programs and settings."
 msgstr ""
 "Този файл, прикрит като полезно приложение, ще направи неочаквани промени в "
 "програмите и настройките."
 
-#: unblockTypeUncommon
+#: unblockTypeUncommon2
 msgid ""
-"This file has been downloaded from an unfamiliar and potentially dangerous "
-"website and may not be safe to open."
+"This file is not commonly downloaded and may not be safe to open. It may "
+"contain a virus or make unexpected changes to your programs and settings."
 msgstr ""
-"Този файл е изтеглен от непозната и потенциално опасна страница и може да "
-"бъде опасен за отваряне."
 
-#: unblockTip
-msgid ""
-"You can search for an alternate download source or try to download the file "
-"again later."
+#: unblockTip2
+#, fuzzy
+msgid "You can search for an alternate download source or try again later."
 msgstr "Може да потърсите алтернативен източник или да го изтеглите отново."
 
-#: unblockButtonContinue
-msgid "Unblock anyway"
-msgstr "Деблокиране въпреки това"
+#: unblockButtonOpen
+msgid "Open"
+msgstr ""
 
-#: unblockButtonCancel
-msgid "Keep me safe"
-msgstr "Държа на безопасността"
+#: unblockButtonUnblock
+msgid "Allow download"
+msgstr ""
+
+#: unblockButtonConfirmBlock
+msgid "Remove file"
+msgstr ""
 
 #. # LOCALIZATION NOTE (sizeWithUnits):
 #. # %1$S is replaced with the size number, and %2$S with the measurement unit.
@@ -198,10 +205,11 @@ msgid "%1$S —  %2$S"
 msgstr "%1$S –  %2$S"
 
 #: fileExecutableSecurityWarning
+#, fuzzy
 msgid ""
-"\"%S\" is an executable file. Executable files may contain viruses or other "
+"“%S” is an executable file. Executable files may contain viruses or other "
 "malicious code that could harm your computer. Use caution when opening this "
-"file. Are you sure you want to launch \"%S\"?"
+"file. Are you sure you want to launch “%S”?"
 msgstr ""
 "„%S“ е изпълним файл. Възможно е изпълним файл да съдържа вируси или друг "
 "зловреден код. Бъдете внимателни при отваряне на такъв файл. Сигурни ли сте, "
@@ -212,7 +220,8 @@ msgid "Open Executable File?"
 msgstr "Отваряне на изпълним файл?"
 
 #: fileExecutableSecurityWarningDontAsk
-msgid "Don't ask me this again"
+#, fuzzy
+msgid "Don’t ask me this again"
 msgstr "Изключване на въпроса"
 
 #. # LOCALIZATION NOTE (otherDownloads2):
@@ -223,3 +232,19 @@ msgstr "Изключване на въпроса"
 #: otherDownloads2
 msgid "+ %1$S other download; + %1$S other downloads"
 msgstr "+ %1$S друго изтегляне; + %1$S други изтегляния"
+
+#~ msgid "This file may not be safe to open."
+#~ msgstr "Този файл може да бъде опасен за отваряне."
+
+#~ msgid ""
+#~ "This file has been downloaded from an unfamiliar and potentially "
+#~ "dangerous website and may not be safe to open."
+#~ msgstr ""
+#~ "Този файл е изтеглен от непозната и потенциално опасна страница и може да "
+#~ "бъде опасен за отваряне."
+
+#~ msgid "Unblock anyway"
+#~ msgstr "Деблокиране въпреки това"
+
+#~ msgid "Keep me safe"
+#~ msgstr "Държа на безопасността"

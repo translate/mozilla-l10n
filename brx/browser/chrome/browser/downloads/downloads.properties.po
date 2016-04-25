@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 09:51+0000\n"
+"POT-Creation-Date: 2016-04-25 17:21+0000\n"
 "PO-Revision-Date: 2015-02-11 04:08+0000\n"
 "Last-Translator: Chandrakant Dhutadmal <cpdhutadmal@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1423627720.000000\n"
 
@@ -79,7 +79,7 @@ msgid "Blocked: May contain a virus or spyware"
 msgstr "हेंथा होजाबाय: भाइरास एबा स्पाइवेयार थानो हागौ"
 
 #. # LOCALIZATION NOTE (blockedMalware, blockedPotentiallyUnwanted,
-#. #                    blockedUncommon):
+#. #                    blockedUncommon2):
 #. # These strings are shown in the panel for some types of blocked downloads, and
 #. # are immediately followed by the "Learn More" link, thus they must end with a
 #. # period.  You may need to adjust "downloadDetails.width" in "downloads.dtd" if
@@ -93,20 +93,25 @@ msgstr "बे फाइलआव भाइरास एबा खहागो�
 msgid "This file may harm your computer."
 msgstr "बेयो नोंथांनि कम्पुटारखौ खहा खालामनो हागौ।"
 
-#: blockedUncommon
-msgid "This file may not be safe to open."
-msgstr "बे फाइलखौ खेवनो रैखाथि नङा जानो हागौ।"
+#: blockedUncommon2
+msgid "This file is not commonly downloaded."
+msgstr ""
 
-#. # LOCALIZATION NOTE (unblockHeader, unblockTypeMalware,
-#. #                    unblockTypePotentiallyUnwanted, unblockTypeUncommon,
-#. #                    unblockTip, unblockButtonContinue, unblockButtonCancel):
+#. # LOCALIZATION NOTE (unblockHeaderUnblock, unblockHeaderOpen,
+#. #                    unblockTypeMalware, unblockTypePotentiallyUnwanted2,
+#. #                    unblockTypeUncommon2, unblockTip2, unblockButtonOpen,
+#. #                    unblockButtonUnblock, unblockButtonConfirmBlock):
 #. # These strings are displayed in the dialog shown when the user asks a blocked
 #. # download to be unblocked.  The severity of the threat is expressed in
 #. # descending order by the unblockType strings, it is higher for files detected
 #. # as malware and lower for uncommon downloads.
-#. # Note: These strings don't exist in the UI yet.  See bug 1053890.
-#: unblockHeader
-msgid "Are you sure you want to unblock this file?"
+#: unblockHeaderUnblock
+msgid "Are you sure you want to allow this download?"
+msgstr ""
+
+#: unblockHeaderOpen
+#, fuzzy
+msgid "Are you sure you want to open this file?"
 msgstr "थारैनो नोंथाङा बे फाइलखौ आनब्लक खालामनो लुबैयो नामा?"
 
 #: unblockTypeMalware
@@ -115,37 +120,39 @@ msgid ""
 msgstr ""
 "बे फाइलआव भाइरास एबा गुबुन खहागोनां बेसाद दं जाय नोंथांनि कम्पुटारखौ खहा खालामनो हागौ।"
 
-#: unblockTypePotentiallyUnwanted
+#: unblockTypePotentiallyUnwanted2
+#, fuzzy
 msgid ""
-"This file, disguised as a helpful download, will make unexpected changes to "
-"your programs and settings."
+"This file is disguised as a helpful download, but it can make unexpected "
+"changes to your programs and settings."
 msgstr ""
 "मददगोनां डाउनल'ड महर लाफ्लानानै, बे फाइलआ नोंथांनि प्रग्राम आरो सेटिंआव मिजिंथियै महरै "
 "सोलायगोन।"
 
-#: unblockTypeUncommon
+#: unblockTypeUncommon2
 msgid ""
-"This file has been downloaded from an unfamiliar and potentially dangerous "
-"website and may not be safe to open."
+"This file is not commonly downloaded and may not be safe to open. It may "
+"contain a virus or make unexpected changes to your programs and settings."
 msgstr ""
-"बे फाइलखौ मोनसे सिनायमोनै आरो खैफोदगोनां वेबसाइट निफ्राय डाउनल'ड खालामबाय आरो बेखौ "
-"खेवनो रैखाथि नङा जानो हागौ।"
 
-#: unblockTip
-msgid ""
-"You can search for an alternate download source or try to download the file "
-"again later."
+#: unblockTip2
+#, fuzzy
+msgid "You can search for an alternate download source or try again later."
 msgstr ""
 "नोंथाङा गुबुन डाउनल'ड फुंखाखौ नागिरनो हायो एबा फाइलखौ उनाव आरोबाव डाउनल'ड खालामनो "
 "नाजानो हायो।"
 
-#: unblockButtonContinue
-msgid "Unblock anyway"
-msgstr "जेरैखि जाया आनब्लक खालाम"
+#: unblockButtonOpen
+msgid "Open"
+msgstr ""
 
-#: unblockButtonCancel
-msgid "Keep me safe"
-msgstr "आंखौ रैखाथिआव दोन"
+#: unblockButtonUnblock
+msgid "Allow download"
+msgstr ""
+
+#: unblockButtonConfirmBlock
+msgid "Remove file"
+msgstr ""
 
 #. # LOCALIZATION NOTE (sizeWithUnits):
 #. # %1$S is replaced with the size number, and %2$S with the measurement unit.
@@ -198,10 +205,11 @@ msgid "%1$S —  %2$S"
 msgstr "%1$S —  %2$S"
 
 #: fileExecutableSecurityWarning
+#, fuzzy
 msgid ""
-"\"%S\" is an executable file. Executable files may contain viruses or other "
+"“%S” is an executable file. Executable files may contain viruses or other "
 "malicious code that could harm your computer. Use caution when opening this "
-"file. Are you sure you want to launch \"%S\"?"
+"file. Are you sure you want to launch “%S”?"
 msgstr ""
 "\"%S\" आ मोनसे मावफुंजाथाव फाइल। मावफुंजाथाव फाइलफोराव भाइरास एबा गुबुन खहागोनां क'ड "
 "दं जाय नोंथांनि कम्पुटारखौ खहा खालामनो हागौ। बे फाइलखौ खेवनाय समाव सांग्रां जा। थारैनो "
@@ -212,7 +220,8 @@ msgid "Open Executable File?"
 msgstr "खामानियाव बाहाय जाथाव फाइलखौ खेव?"
 
 #: fileExecutableSecurityWarningDontAsk
-msgid "Don't ask me this again"
+#, fuzzy
+msgid "Don’t ask me this again"
 msgstr "बेखौ आंनाव फिन सोंनो नाङा"
 
 #. # LOCALIZATION NOTE (otherDownloads2):
@@ -223,3 +232,19 @@ msgstr "बेखौ आंनाव फिन सोंनो नाङा"
 #: otherDownloads2
 msgid "+ %1$S other download; + %1$S other downloads"
 msgstr "+ %1$S गुबुन डाउनल'ड; + %1$S गुबुन डाउनल'डफोर"
+
+#~ msgid "This file may not be safe to open."
+#~ msgstr "बे फाइलखौ खेवनो रैखाथि नङा जानो हागौ।"
+
+#~ msgid ""
+#~ "This file has been downloaded from an unfamiliar and potentially "
+#~ "dangerous website and may not be safe to open."
+#~ msgstr ""
+#~ "बे फाइलखौ मोनसे सिनायमोनै आरो खैफोदगोनां वेबसाइट निफ्राय डाउनल'ड खालामबाय आरो "
+#~ "बेखौ खेवनो रैखाथि नङा जानो हागौ।"
+
+#~ msgid "Unblock anyway"
+#~ msgstr "जेरैखि जाया आनब्लक खालाम"
+
+#~ msgid "Keep me safe"
+#~ msgstr "आंखौ रैखाथिआव दोन"

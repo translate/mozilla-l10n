@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-07 15:19+0000\n"
+"POT-Creation-Date: 2016-04-25 17:21+0000\n"
 "PO-Revision-Date: 2016-03-28 16:10+0000\n"
 "Last-Translator: xh-ZA45_Ngqibelelo <zmabeka@gmail.com>\n"
 "Language-Team: none\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1459181434.000000\n"
 
@@ -54,22 +54,31 @@ msgstr "Imemori"
 msgid "Save"
 msgstr "Gcina"
 
+#. # LOCALIZATION NOTE (snapshot.io.delete): The label for the link that deletes
+#. # a snapshot
+#: snapshot.io.delete
+msgid "Delete"
+msgstr ""
+
 #. # LOCALIZATION NOTE (snapshot.io.save.window): The title for the window
 #. # displayed when saving a snapshot to disk.
 #: snapshot.io.save.window
-msgid "Save Heap Snapshot"
-msgstr "Gcina Izinephu Ezininzi"
+#, fuzzy
+msgid "Save Snapshot"
+msgstr "Thatha isnephu"
 
 #. # LOCALIZATION NOTE (snapshot.io.import.window): The title for the window
 #. # displayed when importing a snapshot form disk.
 #: snapshot.io.import.window
-msgid "Import Heap Snapshot"
+#, fuzzy
+msgid "Import Snapshot"
 msgstr "Thumela Ngaphakathi Izinephu Ezininzi"
 
 #. # LOCALIZATION NOTE (snapshot.io.filter): The title for the filter used to
 #. # filter file types (*.fxsnapshot)
 #: snapshot.io.filter
-msgid "Firefox Heap Snapshots"
+#, fuzzy
+msgid "Firefox Snapshots"
 msgstr "Izinephu Ezininzi ZeFirefox"
 
 #. # LOCALIZATION NOTE (aggregate.mb): The label annotating the number of bytes (in
@@ -86,26 +95,21 @@ msgid "Processing…"
 msgstr "Iyaprosesa…"
 
 #. # LOCALIZATION NOTE (checkbox.recordAllocationStacks): The label describing the
-#. # boolean checkbox whether or not to record allocation stacks.
+#. # boolean checkbox whether or not to record call stacks.
 #: checkbox.recordAllocationStacks
-msgid "Record allocation stacks"
-msgstr "Rekhoda isitekhi zokubekelwa bucala"
+msgid "Record call stacks"
+msgstr ""
 
 #. # LOCALIZATION NOTE (checkbox.recordAllocationStacks.tooltip): The tooltip for
-#. # the label describing the boolean checkbox whether or not to record allocation
+#. # the label describing the boolean checkbox whether or not to record call
 #. # stacks.
 #: checkbox.recordAllocationStacks.tooltip
 msgid ""
-"Toggle the recording of allocation stacks. Subsequent heap snapshots will be "
-"able to label and group objects created when allocation stack recording is "
-"active by their allocation stack. Recording allocation stacks has a "
-"performance overhead."
+"Toggle the recording of the call stack of when an object was allocated. "
+"Subsequent snapshots will be able to group and label objects by call stacks, "
+"but only with those objects created after toggling this option. Recording "
+"call stacks has a performance overhead."
 msgstr ""
-"Togla ukurekhodwa kweztekhi zokubekelwa bucala. Izinephu ezininzi "
-"ezilandelayo ziiya kukwazi ukuleyibhela nokubeka ngamaqela ii-objekthi "
-"eziyilwe xa kusebenza ukurekhoda kwezitekhi ezibekelwa bucala zizitekhi "
-"ezibekelwe bucala. Ukurekhoda izitekhi ezibekelwa bucala kunokusebenza "
-"ngaphezulu."
 
 #. # LOCALIZATION NOTE (toolbar.displayBy): The label describing the select menu
 #. # options of the display options.
@@ -119,6 +123,24 @@ msgstr "Beka ngokwamaqela ngako:"
 msgid "Change how objects are grouped"
 msgstr "Tshintsha indlela ii-objekthi ezibekwe ngayo ngokwamaqela"
 
+#. # LOCALIZATION NOTE (toolbar.pop-view): The text in the button to go back to the
+#. # previous view.
+#: toolbar.pop-view
+msgid "←"
+msgstr ""
+
+#. # LOCALIZATION NOTE (toolbar.pop-view.label): The text for the label for the
+#. # button to go back to the previous view.
+#: toolbar.pop-view.label
+msgid "Go back to aggregates"
+msgstr ""
+
+#. # LOCALIZATION NOTE (toolbar.viewing-individuals): The text letting the user
+#. # know that they are viewing individual nodes from a census group.
+#: toolbar.viewing-individuals
+msgid "⁂ Viewing individuals in group"
+msgstr ""
+
 #. # LOCALIZATION NOTE (censusDisplays.coarseType.tooltip): The tooltip for the
 #. # "coarse type" display option.
 #: censusDisplays.coarseType.tooltip
@@ -126,7 +148,7 @@ msgid "Group items by their type"
 msgstr "Iiayithem zeqela ngokohlobo lwazo"
 
 #. # LOCALIZATION NOTE (censusDisplays.allocationStack.tooltip): The tooltip for
-#. # the "allocation stack" display option.
+#. # the "call stack" display option.
 #: censusDisplays.allocationStack.tooltip
 msgid ""
 "Group items by the JavaScript stack recorded when the object was allocated"
@@ -134,7 +156,7 @@ msgstr ""
 "Ii-aythem zeqela zestekhi zeJavaScript esrekhodwe xa i-objekthi ibifunyenwe"
 
 #. # LOCALIZATION NOTE (censusDisplays.invertedAllocationStack.tooltip): The
-#. # tooltip for the "inverted allocation stack" display option.
+#. # tooltip for the "inverted call stack" display option.
 #: censusDisplays.invertedAllocationStack.tooltip
 msgid ""
 "Group items by the inverted JavaScript call stack recorded when the object "
@@ -142,6 +164,15 @@ msgid ""
 msgstr ""
 "Iiayithem zeqela ngestekhi somnxeba weJavaScript esitshintshiweyo "
 "esirekhodwe xa iobjekthi ibiyilwa"
+
+#. # LOCALIZATION NOTE (censusDisplays.treeMap.tooltip): The tooltip for the
+#. # "tree map" display option.
+#: censusDisplays.treeMap.tooltip
+msgctxt "censusDisplays.treeMap.tooltip"
+msgid ""
+"Visualize memory usage: larger blocks account for a larger percent of memory "
+"usage"
+msgstr ""
 
 #. # LOCALIZATION NOTE (censusDisplays.objectClass.tooltip): The tooltip for the
 #. # "object class" display option.
@@ -170,11 +201,13 @@ msgstr "Tshintsha indlela ezileyibhelwa ngayo iiobjekthi"
 #. # LOCALIZATION NOTE (dominatorTreeDisplays.coarseType.tooltip): The tooltip for
 #. # the "coarse type" dominator tree display option.
 #: dominatorTreeDisplays.coarseType.tooltip
+#, fuzzy
+msgctxt "dominatorTreeDisplays.coarseType.tooltip"
 msgid "Label objects by the broad categories they fit in"
 msgstr "Leyibhela iiobjekthi ngokweekhathegori ezibanzi ezingena kuzo"
 
 #. # LOCALIZATION NOTE (dominatorTreeDisplays.allocationStack.tooltip): The
-#. # tooltip for the "allocation stack" dominator tree display option.
+#. # tooltip for the "call stack" dominator tree display option.
 #: dominatorTreeDisplays.allocationStack.tooltip
 msgid "Label objects by the JavaScript stack recorded when it was allocated"
 msgstr ""
@@ -187,6 +220,14 @@ msgstr ""
 msgid "Label objects by their internal C++ type name"
 msgstr "Leyibhela iiobjekthi ngokwegama langaphakathi lohlobo C++ "
 
+#. # LOCALIZATION NOTE (treeMapDisplays.coarseType.tooltip): The tooltip for
+#. # the "coarse type" tree map display option.
+#: treeMapDisplays.coarseType.tooltip
+#, fuzzy
+msgctxt "treeMapDisplays.coarseType.tooltip"
+msgid "Label objects by the broad categories they fit in"
+msgstr "Leyibhela iiobjekthi ngokweekhathegori ezibanzi ezingena kuzo"
+
 #. # LOCALIZATION NOTE (toolbar.view): The label for the view selector in the
 #. # toolbar.
 #: toolbar.view
@@ -196,7 +237,8 @@ msgstr "Jonga:"
 #. # LOCALIZATION NOTE (toolbar.view.tooltip): The tooltip for the label for the
 #. # view selector in the toolbar.
 #: toolbar.view.tooltip
-msgid "Change the view of the heap snapshot"
+#, fuzzy
+msgid "Change the view of the snapshot"
 msgstr "Tshintsha imbonakalo yeznephu ezininzi"
 
 #. # LOCALIZATION NOTE (toolbar.view.census): The label for the census view option
@@ -208,9 +250,9 @@ msgstr "Umlinganiselo"
 #. # LOCALIZATION NOTE (toolbar.view.census.tooltip): The tooltip for the label for
 #. # the census view option in the toolbar.
 #: toolbar.view.census.tooltip
+#, fuzzy
 msgid ""
-"View a summary of the heap snapshot's contents by aggregating objects into "
-"groups"
+"View a summary of the snapshot’s contents by aggregating objects into groups"
 msgstr ""
 "Jonga ushwankathelo lweziqulatho zezinephu ezininzi ngokulinganisela "
 "iiobjekthi ngokwamaqela"
@@ -224,11 +266,26 @@ msgstr "Izilawuli"
 #. # LOCALIZATION NOTE (toolbar.view.dominators.tooltip): The tooltip for the label
 #. # for the dominators view option in the toolbar.
 #: toolbar.view.dominators.tooltip
+#, fuzzy
 msgid ""
-"View the dominator tree and surface the largest structures in the heap "
-"snapshot"
+"View the dominator tree and surface the largest structures in the snapshot"
 msgstr ""
 "Jonga umthi wesilawuli nomphantsi wesona sakhiwo sikhulu kwizinephhu ezininzi"
+
+#. # LOCALIZATION NOTE (toolbar.view.treemap): The label for the tree map option
+#. # in the toolbar.
+#: toolbar.view.treemap
+msgid "Tree Map"
+msgstr ""
+
+#. # LOCALIZATION NOTE (toolbar.view.treemap.tooltip): The tooltip for the label for
+#. # the tree map view option in the toolbar.
+#: toolbar.view.treemap.tooltip
+msgctxt "toolbar.view.treemap.tooltip"
+msgid ""
+"Visualize memory usage: larger blocks account for a larger percent of memory "
+"usage"
+msgstr ""
 
 #. # LOCALIZATION NOTE (take-snapshot): The label describing the button that
 #. # initiates taking a snapshot, either as the main label, or a tooltip.
@@ -263,8 +320,15 @@ msgstr "Hluza"
 #. # LOCALIZATION NOTE (filter.tooltip): The tooltip text used for the memory
 #. # tool's filter search box.
 #: filter.tooltip
-msgid "Filter the contents of the heap snapshot"
+#, fuzzy
+msgid "Filter the contents of the snapshot"
 msgstr "Hluza iziqulatho zezinephu ezininzi"
+
+#. # LOCALIZATION NOTE (tree-item.view-individuals.tooltip): The tooltip for the
+#. # button to view individuals in this group.
+#: tree-item.view-individuals.tooltip
+msgid "View individual nodes in this group and their retaining paths"
+msgstr ""
 
 #. # LOCALIZATION NOTE (tree-item.load-more): The label for the links to fetch the
 #. # lazily loaded sub trees in the dominator tree view.
@@ -279,7 +343,7 @@ msgid "GC Roots"
 msgstr "Iiruti zeGC"
 
 #. # LOCALIZATION NOTE (tree-item.nostack): The label describing the row in the heap tree
-#. # that represents a row broken down by allocation stack when no stack was available.
+#. # that represents a row broken down by call stack when no stack was available.
 #: tree-item.nostack
 msgid "(no stack available)"
 msgstr "(akukho stekhi sikhoyo)"
@@ -376,14 +440,16 @@ msgstr "Khetha izinephu ezibini ukuze uthelekise"
 #. # LOCALIZATION NOTE (dominatorTree.state.computing): The label describing the
 #. # dominator tree state COMPUTING.
 #: dominatorTree.state.computing
-msgid "Computing dominators…"
-msgstr "Izilawuli zekhompyutha…"
+msgctxt "dominatorTree.state.computing"
+msgid "Generating dominators report…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (dominatorTree.state.computing): The label describing the
 #. # dominator tree state COMPUTING, used in the dominator tree view.
 #: dominatorTree.state.computing.full
-msgid "Computing dominator tree…"
-msgstr "Umthi wesilawuli sekhompyutha…"
+msgctxt "dominatorTree.state.computing.full"
+msgid "Generating dominators report…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (dominatorTree.state.fetching): The label describing the
 #. # dominator tree state FETCHING.
@@ -394,20 +460,22 @@ msgstr "Isayizi sekhompyutha…"
 #. # LOCALIZATION NOTE (dominatorTree.state.fetching): The label describing the
 #. # dominator tree state FETCHING, used in the dominator tree view.
 #: dominatorTree.state.fetching.full
-msgid "Computing retained sizes…"
-msgstr "Iisayizi ezigciniweyo zekhompyutha…"
+msgid "Computing dominator’s retained sizes…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (dominatorTree.state.incrementalFetching): The label
 #. # describing the dominator tree state INCREMENTAL_FETCHING.
 #: dominatorTree.state.incrementalFetching
+#, fuzzy
+msgctxt "dominatorTree.state.incrementalFetching"
 msgid "Fetching…"
 msgstr "Iyalanda…"
 
 #. # LOCALIZATION NOTE (dominatorTree.state.incrementalFetching): The label describing the
 #. # dominator tree state INCREMENTAL_FETCHING, used in the dominator tree view.
 #: dominatorTree.state.incrementalFetching.full
-msgid "Fetching subtree…"
-msgstr "Ilanda umthi ongaphantsi…"
+msgid "Fetching more…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (dominatorTree.state.error): The label describing the
 #. # dominator tree state ERROR.
@@ -446,15 +514,61 @@ msgstr "Igcina isnephu…"
 #. # LOCALIZATION NOTE (snapshot.state.saving-census.full): The label describing
 #. # the snapshot state SAVING, used in the main heap view.
 #: snapshot.state.saving-census.full
-msgctxt "snapshot.state.saving-census.full"
-msgid "Saving census…"
-msgstr "Igcina ubalo…"
+msgid "Generating aggregate report…"
+msgstr ""
+
+#. # LOCALIZATION NOTE (snapshot.state.saving-tree-map.full): The label describing
+#. # the snapshot state SAVING, used in the main heap view.
+#: snapshot.state.saving-tree-map.full
+msgctxt "snapshot.state.saving-tree-map.full"
+msgid "Saving tree map…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (snapshot.state.error.full): The label describing the
 #. # snapshot state ERROR, used in the main heap view.
 #: snapshot.state.error.full
 msgid "There was an error processing this snapshot."
 msgstr "Kuye kwakho impazamo xa bekusenziwa esi snephu."
+
+#. # LOCALIZATION NOTE (individuals.state.error): The short message displayed when
+#. # there is an error fetching individuals from a group.
+#: individuals.state.error
+#, fuzzy
+msgctxt "individuals.state.error"
+msgid "Error"
+msgstr "Impazamo"
+
+#. # LOCALIZATION NOTE (individuals.state.error.full): The longer message displayed
+#. # when there is an error fetching individuals from a group.
+#: individuals.state.error.full
+msgid "There was an error while fetching individuals in the group"
+msgstr ""
+
+#. # LOCALIZATION NOTE (individuals.state.fetching): The short message displayed
+#. # while fetching individuals.
+#: individuals.state.fetching
+#, fuzzy
+msgctxt "individuals.state.fetching"
+msgid "Fetching…"
+msgstr "Iyalanda…"
+
+#. # LOCALIZATION NOTE (individuals.state.fetching.full): The longer message
+#. # displayed while fetching individuals.
+#: individuals.state.fetching.full
+msgid "Fetching individuals in group…"
+msgstr ""
+
+#. # LOCALIZATION NOTE (individuals.field.node): The header label for an individual
+#. # node.
+#: individuals.field.node
+msgid "Node"
+msgstr ""
+
+#. # LOCALIZATION NOTE (individuals.field.node.tooltip): The tooltip for the header
+#. # label for an individual node.
+#: individuals.field.node.tooltip
+msgid "The individual node in the snapshot"
+msgstr ""
 
 #. # LOCALIZATION NOTE (snapshot.state.saving): The label describing the snapshot
 #. # state SAVING, used in the snapshot list view
@@ -480,9 +594,15 @@ msgstr "Ifunda isnephu…"
 #. # LOCALIZATION NOTE (snapshot.state.saving-census): The label describing the
 #. # snapshot state SAVING, used in snapshot list view.
 #: snapshot.state.saving-census
-msgctxt "snapshot.state.saving-census"
-msgid "Saving census…"
-msgstr "Igcina ubalo…"
+msgid "Saving report…"
+msgstr ""
+
+#. # LOCALIZATION NOTE (snapshot.state.saving-census): The label describing the
+#. # snapshot state SAVING, used in snapshot list view.
+#: snapshot.state.saving-tree-map
+msgctxt "snapshot.state.saving-tree-map"
+msgid "Saving tree map…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (snapshot.state.error): The label describing the snapshot
 #. # state ERROR, used in the snapshot list view.
@@ -491,16 +611,30 @@ msgctxt "snapshot.state.error"
 msgid "Error"
 msgstr "Impazamo"
 
+#. # LOCALIZATION NOTE (heapview.no-difference): Message displayed when there is no
+#. # difference between two snapshots.
+#: heapview.no-difference
+msgid "No difference between the baseline and comparison."
+msgstr ""
+
+#. # LOCALIZATION NOTE (heapview.none-match): Message displayed when there are no
+#. # matches when filtering.
+#: heapview.none-match
+msgid "No matches."
+msgstr ""
+
+#. # LOCALIZATION NOTE (heapview.none-match): Message displayed when there report
+#. # is empty.
+#: heapview.empty
+msgid "Empty."
+msgstr ""
+
 #. # LOCALIZATION NOTE (heapview.noAllocationStacks): The message displayed to
-#. # users when selecting a display by "allocation stack" but no allocation stacks
+#. # users when selecting a display by "call stack" but no call stacks
 #. # were recorded in the heap snapshot.
 #: heapview.noAllocationStacks
-msgid ""
-"No allocation stacks found. Record allocation stacks before taking a heap "
-"snapshot."
+msgid "No call stacks found. Record call stacks before taking a snapshot."
 msgstr ""
-"Azikho iztekhi ezibekelwe ecaleni ezikhoyo. Bhala iztekhi ezibekelwe ecaleni "
-"ngaphambi kokuthatha iznephu ezininzi."
 
 #. # LOCALIZATION NOTE (heapview.field.retainedSize): The name of the column in the
 #. # dominator tree view for retained byte sizes.
@@ -533,13 +667,15 @@ msgstr "Isayizi ye-objekthi ngokwayo"
 #. # LOCALIZATION NOTE (dominatortree.field.label): The name of the column in the
 #. # dominator tree for an object's label.
 #: dominatortree.field.label
-msgid "Label"
-msgstr "Ileyibhile"
+#, fuzzy
+msgid "Dominator"
+msgstr "Izilawuli"
 
 #. # LOCALIZATION NOTE (dominatortree.field.label.tooltip): The tooltip for the column
 #. # header in the dominator tree view for an object's label.
 #: dominatortree.field.label.tooltip
-msgid "The label for an object in the heap"
+#, fuzzy
+msgid "The label for an object in memory"
 msgstr "Ileyibheli ye-objekthi eyimfumba"
 
 #. # LOCALIZATION NOTE (heapview.field.bytes): The name of the column in the heap
@@ -551,7 +687,8 @@ msgstr "Ii-byte"
 #. # LOCALIZATION NOTE (heapview.field.bytes.tooltip): The tooltip for the column
 #. # header in the heap view for bytes.
 #: heapview.field.bytes.tooltip
-msgid "The number of bytes consumed by this group, excluding subgroups"
+#, fuzzy
+msgid "The number of bytes taken up by this group, excluding subgroups"
 msgstr ""
 "Inani leebyte ezisetyenziswe leli qela, ngaphandle kwamaqela angaphantsi"
 
@@ -577,7 +714,7 @@ msgstr "Iibyte Ezipheleleyo"
 #. # column header in the heap view for total bytes.
 #: heapview.field.totalbytes.tooltip
 #, fuzzy
-msgid "The number of bytes consumed by this group, including subgroups"
+msgid "The number of bytes taken up by this group, including subgroups"
 msgstr ""
 "Inani leebyte ezisetyenziswe leli qela, ngaphandle kwamaqela angaphantsi"
 
@@ -596,8 +733,8 @@ msgstr ""
 #. # LOCALIZATION NOTE (heapview.field.name): The name of the column in the heap
 #. # view for name.
 #: heapview.field.name
-msgid "Name"
-msgstr "Igama"
+msgid "Group"
+msgstr ""
 
 #. # LOCALIZATION NOTE (heapview.field.name.tooltip): The tooltip for the column
 #. # header in the heap view for name.
@@ -608,14 +745,71 @@ msgstr ""
 #. # LOCALIZATION NOTE (shortest-paths.header): The header label for the shortest
 #. # paths pane.
 #: shortest-paths.header
-msgid "Retaining Paths from GC Roots"
+msgid "Retaining Paths (from Garbage Collector Roots)"
 msgstr ""
 
 #. # LOCALIZATION NOTE (shortest-paths.select-node): The message displayed in the
 #. # shortest paths pane when a node is not yet selected.
 #: shortest-paths.select-node
-msgid "Select a node to view its retaining paths"
+msgid "Select an item to view its retaining paths"
 msgstr ""
+
+#. # LOCALIZATION NOTE (tree-map.node-count): The label for the count value of a
+#. # node in the tree map
+#: tree-map.node-count
+msgid "count"
+msgstr ""
+
+#~ msgid "Save Heap Snapshot"
+#~ msgstr "Gcina Izinephu Ezininzi"
+
+#~ msgid "Record allocation stacks"
+#~ msgstr "Rekhoda isitekhi zokubekelwa bucala"
+
+#~ msgid ""
+#~ "Toggle the recording of allocation stacks. Subsequent heap snapshots will "
+#~ "be able to label and group objects created when allocation stack "
+#~ "recording is active by their allocation stack. Recording allocation "
+#~ "stacks has a performance overhead."
+#~ msgstr ""
+#~ "Togla ukurekhodwa kweztekhi zokubekelwa bucala. Izinephu ezininzi "
+#~ "ezilandelayo ziiya kukwazi ukuleyibhela nokubeka ngamaqela ii-objekthi "
+#~ "eziyilwe xa kusebenza ukurekhoda kwezitekhi ezibekelwa bucala zizitekhi "
+#~ "ezibekelwe bucala. Ukurekhoda izitekhi ezibekelwa bucala kunokusebenza "
+#~ "ngaphezulu."
+
+#~ msgid "Computing dominators…"
+#~ msgstr "Izilawuli zekhompyutha…"
+
+#~ msgid "Computing dominator tree…"
+#~ msgstr "Umthi wesilawuli sekhompyutha…"
+
+#~ msgid "Computing retained sizes…"
+#~ msgstr "Iisayizi ezigciniweyo zekhompyutha…"
+
+#~ msgid "Fetching subtree…"
+#~ msgstr "Ilanda umthi ongaphantsi…"
+
+#~ msgctxt "snapshot.state.saving-census.full"
+#~ msgid "Saving census…"
+#~ msgstr "Igcina ubalo…"
+
+#~ msgctxt "snapshot.state.saving-census"
+#~ msgid "Saving census…"
+#~ msgstr "Igcina ubalo…"
+
+#~ msgid ""
+#~ "No allocation stacks found. Record allocation stacks before taking a heap "
+#~ "snapshot."
+#~ msgstr ""
+#~ "Azikho iztekhi ezibekelwe ecaleni ezikhoyo. Bhala iztekhi ezibekelwe "
+#~ "ecaleni ngaphambi kokuthatha iznephu ezininzi."
+
+#~ msgid "Label"
+#~ msgstr "Ileyibhile"
+
+#~ msgid "Name"
+#~ msgstr "Igama"
 
 #~ msgid "Invert tree"
 #~ msgstr "Buyisela umthi"

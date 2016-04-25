@@ -1,12 +1,12 @@
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-#. extracted from ./toolkit/chrome/global/devtools/gcli.properties
+#. extracted from ./devtools/shared/gcli.properties
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-11 20:18+0000\n"
+"POT-Creation-Date: 2016-04-25 17:21+0000\n"
 "PO-Revision-Date: 2015-12-19 11:58+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1450526339.000000\n"
 
@@ -63,7 +63,7 @@ msgstr ""
 #. # LOCALIZATION NOTE: This error message is displayed when we try to add a new
 #. # command (using a proxy) where one already exists with the same name.
 #: canonProxyExists
-msgid "There is already a command called '%S'"
+msgid "There is already a command called ‘%S’"
 msgstr ""
 
 #. # LOCALIZATION NOTE: This message describes the '{' command, which allows
@@ -87,46 +87,46 @@ msgstr ""
 #. # LOCALIZATION NOTE: The error message when the user types a command that
 #. # isn't registered
 #: cliUnknownCommand2
-msgid "Invalid Command: '%1$S'."
+msgid "Invalid Command: ‘%1$S’."
 msgstr ""
 
 #. # LOCALIZATION NOTE: A parameter should have a value, but doesn't
 #: cliIncompleteParam
-msgid "Value required for '%1$S'."
+msgid "Value required for ‘%1$S’."
 msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a file
 #. # that does not exist, but should (e.g. for use with File->Open) %1$S is a
 #. # filename
 #: fileErrNotExists
-msgid "'%1$S' doesn't exist"
+msgid "‘%1$S’ doesn’t exist"
 msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a file
 #. # that exists, but should not (e.g. for use with File->Save As) %1$S is a
 #. # filename
 #: fileErrExists
-msgid "'%1$S' already exists"
+msgid "‘%1$S’ already exists"
 msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a
 #. # non-file, when a file is needed. %1$S is a filename
 #: fileErrIsNotFile
-msgid "'%1$S' is not a file"
+msgid "‘%1$S’ is not a file"
 msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument points to a
 #. # non-directory, when a directory is needed (e.g. for use with 'cd') %1$S is a
 #. # filename
 #: fileErrIsNotDirectory
-msgid "'%1$S' is not a directory"
+msgid "‘%1$S’ is not a directory"
 msgstr ""
 
 #. # LOCALIZATION NOTE: Error message given when a file argument does not match
 #. # the specified regular expression %1$S is a filename %2$S is a regular
 #. # expression
 #: fileErrDoesntMatch
-msgid "'%1$S' does not match '%2$S'"
+msgid "‘%1$S’ does not match ‘%2$S’"
 msgstr ""
 
 #. # LOCALIZATION NOTE: When the menu has displayed all the matches that it
@@ -147,7 +147,7 @@ msgstr ""
 #. # jstypeBeginUnterm): These error messages are displayed when the command line
 #. # is doing JavaScript completion and encounters errors.
 #: jstypeParseMissing
-msgid "Can't find property '%S'"
+msgid "Can’t find property ‘%S’"
 msgstr ""
 
 #: jstypeBeginSyntax
@@ -169,15 +169,15 @@ msgstr ""
 #. # which has the wrong format and can't be converted. Parameters: %S is the
 #. # passed variable.
 #: typesNumberNan
-msgid "Can't convert \"%S\" to a number."
+msgid "Can’t convert “%S” to a number."
 msgstr ""
 
 #: typesNumberNotInt2
-msgid "Can't convert \"%S\" to an integer."
+msgid "Can’t convert “%S” to an integer."
 msgstr ""
 
 #: typesDateNan
-msgid "Can't convert \"%S\" to a date."
+msgid "Can’t convert “%S” to a date."
 msgstr ""
 
 #. # LOCALIZATION NOTE (typesNumberMax, typesNumberMin, typesDateMax,
@@ -204,7 +204,7 @@ msgstr ""
 #. # passed an option with a limited number of correct values, but the passed
 #. # value is not one of them.
 #: typesSelectionNomatch
-msgid "Can't use '%S'."
+msgid "Can’t use ‘%S’."
 msgstr ""
 
 #. # LOCALIZATION NOTE: This error message is displayed when the command line is
@@ -271,11 +271,11 @@ msgstr ""
 #. # string), just above the list of matching commands. Parameters: %S is the
 #. # search string.
 #: helpListPrefix
-msgid "Commands starting with '%S':"
+msgid "Commands starting with ‘%S’:"
 msgstr ""
 
 #: helpListNone
-msgid "No commands starting with '%S'"
+msgid "No commands starting with ‘%S’"
 msgstr ""
 
 #. # LOCALIZATION NOTE (helpManRequired, helpManOptional, helpManDefault): When
@@ -326,8 +326,8 @@ msgstr ""
 
 #: contextManual
 msgid ""
-"Setup a default prefix to future commands. For example 'context git' would "
-"allow you to type 'commit' rather than 'git commit'."
+"Setup a default prefix to future commands. For example ‘context git’ would "
+"allow you to type ‘commit’ rather than ‘git commit’."
 msgstr ""
 
 #: contextPrefixDesc
@@ -337,7 +337,7 @@ msgstr ""
 #. # LOCALIZATION NOTE: This message message displayed during the processing of
 #. # the 'context' command, when the found command is not a parent command.
 #: contextNotParentError
-msgid "Can't use '%S' as a prefix because it is not a parent command."
+msgid "Can’t use ‘%S’ as a prefix because it is not a parent command."
 msgstr ""
 
 #. # LOCALIZATION NOTE (contextReply, contextEmptyReply): These messages are
@@ -466,7 +466,7 @@ msgstr ""
 
 #: prefListManual
 msgid ""
-"Display a list of preferences, optionally filtered when using the 'search' "
+"Display a list of preferences, optionally filtered when using the ‘search’ "
 "parameter"
 msgstr ""
 
@@ -573,8 +573,8 @@ msgstr ""
 
 #: introManual
 msgid ""
-"Redisplay the message that is shown to new users until they click the 'Got "
-"it!' button"
+"Redisplay the message that is shown to new users until they click the ‘Got "
+"it!’ button"
 msgstr ""
 
 #. # LOCALIZATION NOTE (introTextOpening3, introTextCommands, introTextKeys2,
