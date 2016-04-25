@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-14 09:51+0000\n"
+"POT-Creation-Date: 2016-04-25 17:21+0000\n"
 "PO-Revision-Date: 2015-03-12 18:56+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1426186581.000000\n"
 
@@ -83,7 +83,7 @@ msgid "Blocked: May contain a virus or spyware"
 msgstr "Cosctha: d'fhéadfadh víreas nó bogearra spiaireachta a bheith ann"
 
 #. # LOCALIZATION NOTE (blockedMalware, blockedPotentiallyUnwanted,
-#. #                    blockedUncommon):
+#. #                    blockedUncommon2):
 #. # These strings are shown in the panel for some types of blocked downloads, and
 #. # are immediately followed by the "Learn More" link, thus they must end with a
 #. # period.  You may need to adjust "downloadDetails.width" in "downloads.dtd" if
@@ -97,20 +97,25 @@ msgstr "Tá víreas nó bogearraí mailíseacha sa chomhad seo."
 msgid "This file may harm your computer."
 msgstr "Seans go ndéanfadh an comhad seo dochar do do ríomhaire."
 
-#: blockedUncommon
-msgid "This file may not be safe to open."
-msgstr "Seans go mbeadh sé contúirteach an comhad seo a oscailt."
+#: blockedUncommon2
+msgid "This file is not commonly downloaded."
+msgstr ""
 
-#. # LOCALIZATION NOTE (unblockHeader, unblockTypeMalware,
-#. #                    unblockTypePotentiallyUnwanted, unblockTypeUncommon,
-#. #                    unblockTip, unblockButtonContinue, unblockButtonCancel):
+#. # LOCALIZATION NOTE (unblockHeaderUnblock, unblockHeaderOpen,
+#. #                    unblockTypeMalware, unblockTypePotentiallyUnwanted2,
+#. #                    unblockTypeUncommon2, unblockTip2, unblockButtonOpen,
+#. #                    unblockButtonUnblock, unblockButtonConfirmBlock):
 #. # These strings are displayed in the dialog shown when the user asks a blocked
 #. # download to be unblocked.  The severity of the threat is expressed in
 #. # descending order by the unblockType strings, it is higher for files detected
 #. # as malware and lower for uncommon downloads.
-#. # Note: These strings don't exist in the UI yet.  See bug 1053890.
-#: unblockHeader
-msgid "Are you sure you want to unblock this file?"
+#: unblockHeaderUnblock
+msgid "Are you sure you want to allow this download?"
+msgstr ""
+
+#: unblockHeaderOpen
+#, fuzzy
+msgid "Are you sure you want to open this file?"
 msgstr "An bhfuil tú cinnte gur mhaith leat an cosc a bhaint den chomhad seo?"
 
 #: unblockTypeMalware
@@ -120,37 +125,39 @@ msgstr ""
 "Tá víreas nó bogearraí mailíseacha a dhéanfadh dochar do do ríomhaire sa "
 "chomhad seo."
 
-#: unblockTypePotentiallyUnwanted
+#: unblockTypePotentiallyUnwanted2
+#, fuzzy
 msgid ""
-"This file, disguised as a helpful download, will make unexpected changes to "
-"your programs and settings."
+"This file is disguised as a helpful download, but it can make unexpected "
+"changes to your programs and settings."
 msgstr ""
 "Tá an comhad seo ag ligean air gur íosluchtú cabhrach é, ach athróidh sé do "
 "chóras ar bhealach gan súil leis."
 
-#: unblockTypeUncommon
+#: unblockTypeUncommon2
 msgid ""
-"This file has been downloaded from an unfamiliar and potentially dangerous "
-"website and may not be safe to open."
+"This file is not commonly downloaded and may not be safe to open. It may "
+"contain a virus or make unexpected changes to your programs and settings."
 msgstr ""
-"Íosluchtaíodh an comhad seo ó shuíomh neamhaithnid a d'fhéadfadh a bheith "
-"contúirteach, agus seans go ndéanfadh sé dochar do do ríomhaire."
 
-#: unblockTip
-msgid ""
-"You can search for an alternate download source or try to download the file "
-"again later."
+#: unblockTip2
+#, fuzzy
+msgid "You can search for an alternate download source or try again later."
 msgstr ""
 "Tig leat an comhad a lorg ar shuíomh eile, nó iarracht a dhéanamh an comhad "
 "a íosluchtú arís ar ball."
 
-#: unblockButtonContinue
-msgid "Unblock anyway"
-msgstr "Bain an cosc de mar sin féin"
+#: unblockButtonOpen
+msgid "Open"
+msgstr ""
 
-#: unblockButtonCancel
-msgid "Keep me safe"
-msgstr "Coinnigh slán ó thubaiste mé"
+#: unblockButtonUnblock
+msgid "Allow download"
+msgstr ""
+
+#: unblockButtonConfirmBlock
+msgid "Remove file"
+msgstr ""
 
 # # LOCALIZATION NOTE (cityOrStateAndZip):
 # # %1$S is city or state, %2$S is zip
@@ -205,10 +212,11 @@ msgid "%1$S —  %2$S"
 msgstr "%1$S —  %2$S"
 
 #: fileExecutableSecurityWarning
+#, fuzzy
 msgid ""
-"\"%S\" is an executable file. Executable files may contain viruses or other "
+"“%S” is an executable file. Executable files may contain viruses or other "
 "malicious code that could harm your computer. Use caution when opening this "
-"file. Are you sure you want to launch \"%S\"?"
+"file. Are you sure you want to launch “%S”?"
 msgstr ""
 "Is comhad inrite é \"%S\". B'fhéidir go bhfuil víreas nó cód mailíseach eile "
 "le fáil i gcomhaid inrite.  Tá siad in ann dochar a dhéanamh do do "
@@ -220,7 +228,8 @@ msgid "Open Executable File?"
 msgstr "An bhfuil comhad inrite a oscailt?"
 
 #: fileExecutableSecurityWarningDontAsk
-msgid "Don't ask me this again"
+#, fuzzy
+msgid "Don’t ask me this again"
 msgstr "Ná fiafraigh arís."
 
 #. # LOCALIZATION NOTE (otherDownloads2):
@@ -233,3 +242,19 @@ msgid "+ %1$S other download; + %1$S other downloads"
 msgstr ""
 "+ %1$S íosluchtú eile; + %1$S íosluchtú eile; + %1$S íosluchtú eile; + %1$S "
 "n-íosluchtú eile; + %1$S íosluchtú eile"
+
+#~ msgid "This file may not be safe to open."
+#~ msgstr "Seans go mbeadh sé contúirteach an comhad seo a oscailt."
+
+#~ msgid ""
+#~ "This file has been downloaded from an unfamiliar and potentially "
+#~ "dangerous website and may not be safe to open."
+#~ msgstr ""
+#~ "Íosluchtaíodh an comhad seo ó shuíomh neamhaithnid a d'fhéadfadh a bheith "
+#~ "contúirteach, agus seans go ndéanfadh sé dochar do do ríomhaire."
+
+#~ msgid "Unblock anyway"
+#~ msgstr "Bain an cosc de mar sin féin"
+
+#~ msgid "Keep me safe"
+#~ msgstr "Coinnigh slán ó thubaiste mé"

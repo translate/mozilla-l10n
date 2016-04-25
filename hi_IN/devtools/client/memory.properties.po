@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-07 15:19+0000\n"
+"POT-Creation-Date: 2016-04-25 17:21+0000\n"
 "PO-Revision-Date: 2016-03-30 17:18+0000\n"
 "Last-Translator: umesh agarwal <umesh.agarwal1@gmail.com>\n"
 "Language-Team: none\n"
@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1459358324.000000\n"
 
@@ -53,22 +53,31 @@ msgstr "स्मृति"
 msgid "Save"
 msgstr "सहेजें"
 
+#. # LOCALIZATION NOTE (snapshot.io.delete): The label for the link that deletes
+#. # a snapshot
+#: snapshot.io.delete
+msgid "Delete"
+msgstr ""
+
 #. # LOCALIZATION NOTE (snapshot.io.save.window): The title for the window
 #. # displayed when saving a snapshot to disk.
 #: snapshot.io.save.window
-msgid "Save Heap Snapshot"
-msgstr "क्षणचित्र संग्रह सहेजें"
+#, fuzzy
+msgid "Save Snapshot"
+msgstr "क्षणचित्रफटका ले"
 
 #. # LOCALIZATION NOTE (snapshot.io.import.window): The title for the window
 #. # displayed when importing a snapshot form disk.
 #: snapshot.io.import.window
-msgid "Import Heap Snapshot"
+#, fuzzy
+msgid "Import Snapshot"
 msgstr "क्षणचित्र संग्रह आयात करें"
 
 #. # LOCALIZATION NOTE (snapshot.io.filter): The title for the filter used to
 #. # filter file types (*.fxsnapshot)
 #: snapshot.io.filter
-msgid "Firefox Heap Snapshots"
+#, fuzzy
+msgid "Firefox Snapshots"
 msgstr "Firefox संग्रह क्षणचित्र"
 
 #. # LOCALIZATION NOTE (aggregate.mb): The label annotating the number of bytes (in
@@ -85,24 +94,21 @@ msgid "Processing…"
 msgstr "प्रक्रिया हो रही है"
 
 #. # LOCALIZATION NOTE (checkbox.recordAllocationStacks): The label describing the
-#. # boolean checkbox whether or not to record allocation stacks.
+#. # boolean checkbox whether or not to record call stacks.
 #: checkbox.recordAllocationStacks
-msgid "Record allocation stacks"
-msgstr "आवंटन ढेरी दस्तावेज़"
+msgid "Record call stacks"
+msgstr ""
 
 #. # LOCALIZATION NOTE (checkbox.recordAllocationStacks.tooltip): The tooltip for
-#. # the label describing the boolean checkbox whether or not to record allocation
+#. # the label describing the boolean checkbox whether or not to record call
 #. # stacks.
 #: checkbox.recordAllocationStacks.tooltip
 msgid ""
-"Toggle the recording of allocation stacks. Subsequent heap snapshots will be "
-"able to label and group objects created when allocation stack recording is "
-"active by their allocation stack. Recording allocation stacks has a "
-"performance overhead."
+"Toggle the recording of the call stack of when an object was allocated. "
+"Subsequent snapshots will be able to group and label objects by call stacks, "
+"but only with those objects created after toggling this option. Recording "
+"call stacks has a performance overhead."
 msgstr ""
-"ढेरो के आवंटन का अभिलेख टॉगल करे. जब ढेरो के आवंटन का अभिलेख अपने ही आवंटित ढेर के द्वारा "
-"सक्रिय होगा तब आगामी क्षणचित्रों के संग्रह का नामांकन होगा एवं वस्तुुओं के समूह बनेंगे. ढेरो के "
-"आवंटन का अभिलेख अतिरिक्त कार्यत होगा."
 
 #. # LOCALIZATION NOTE (toolbar.displayBy): The label describing the select menu
 #. # options of the display options.
@@ -116,6 +122,24 @@ msgstr "के द्वारा समूह"
 msgid "Change how objects are grouped"
 msgstr "कैसे वस्तुओ का समूह बनता है परिवर्तन करें"
 
+#. # LOCALIZATION NOTE (toolbar.pop-view): The text in the button to go back to the
+#. # previous view.
+#: toolbar.pop-view
+msgid "←"
+msgstr ""
+
+#. # LOCALIZATION NOTE (toolbar.pop-view.label): The text for the label for the
+#. # button to go back to the previous view.
+#: toolbar.pop-view.label
+msgid "Go back to aggregates"
+msgstr ""
+
+#. # LOCALIZATION NOTE (toolbar.viewing-individuals): The text letting the user
+#. # know that they are viewing individual nodes from a census group.
+#: toolbar.viewing-individuals
+msgid "⁂ Viewing individuals in group"
+msgstr ""
+
 #. # LOCALIZATION NOTE (censusDisplays.coarseType.tooltip): The tooltip for the
 #. # "coarse type" display option.
 #: censusDisplays.coarseType.tooltip
@@ -123,19 +147,28 @@ msgid "Group items by their type"
 msgstr "वस्तु को उनके प्रकार के अनुसार समूह में बांधे"
 
 #. # LOCALIZATION NOTE (censusDisplays.allocationStack.tooltip): The tooltip for
-#. # the "allocation stack" display option.
+#. # the "call stack" display option.
 #: censusDisplays.allocationStack.tooltip
 msgid ""
 "Group items by the JavaScript stack recorded when the object was allocated"
 msgstr "ऑब्जेक्ट आवंटित होने के बाद जावास्क्रिप्ट से जुड़े तथ्यों को रिकॉर्ड किया गया"
 
 #. # LOCALIZATION NOTE (censusDisplays.invertedAllocationStack.tooltip): The
-#. # tooltip for the "inverted allocation stack" display option.
+#. # tooltip for the "inverted call stack" display option.
 #: censusDisplays.invertedAllocationStack.tooltip
 msgid ""
 "Group items by the inverted JavaScript call stack recorded when the object "
 "was created"
 msgstr "ऑब्जेक्ट आवंटित होने के बाद इनवर्टेड जावास्क्रिप्ट से जुड़े तथ्यों को रिकॉर्ड किया गया"
+
+#. # LOCALIZATION NOTE (censusDisplays.treeMap.tooltip): The tooltip for the
+#. # "tree map" display option.
+#: censusDisplays.treeMap.tooltip
+msgctxt "censusDisplays.treeMap.tooltip"
+msgid ""
+"Visualize memory usage: larger blocks account for a larger percent of memory "
+"usage"
+msgstr ""
 
 #. # LOCALIZATION NOTE (censusDisplays.objectClass.tooltip): The tooltip for the
 #. # "object class" display option.
@@ -164,11 +197,13 @@ msgstr "वस्तु समूह के बनने की प्रक्�
 #. # LOCALIZATION NOTE (dominatorTreeDisplays.coarseType.tooltip): The tooltip for
 #. # the "coarse type" dominator tree display option.
 #: dominatorTreeDisplays.coarseType.tooltip
+#, fuzzy
+msgctxt "dominatorTreeDisplays.coarseType.tooltip"
 msgid "Label objects by the broad categories they fit in"
 msgstr "वस्तुओं को उनकी व्यापक श्रेणी के आधार पर सर्वोत्तम श्रेणी मैं लेबल करें"
 
 #. # LOCALIZATION NOTE (dominatorTreeDisplays.allocationStack.tooltip): The
-#. # tooltip for the "allocation stack" dominator tree display option.
+#. # tooltip for the "call stack" dominator tree display option.
 #: dominatorTreeDisplays.allocationStack.tooltip
 msgid "Label objects by the JavaScript stack recorded when it was allocated"
 msgstr "ऑब्जेक्ट आवंटित होने के बाद जावास्क्रिप्ट से जुड़े तथ्यों को रिकॉर्ड करें"
@@ -179,6 +214,14 @@ msgstr "ऑब्जेक्ट आवंटित होने के बा�
 msgid "Label objects by their internal C++ type name"
 msgstr "समूह के विषयों का उनके आंतरिक C++ प्रकार के आधार पर भेद करें"
 
+#. # LOCALIZATION NOTE (treeMapDisplays.coarseType.tooltip): The tooltip for
+#. # the "coarse type" tree map display option.
+#: treeMapDisplays.coarseType.tooltip
+#, fuzzy
+msgctxt "treeMapDisplays.coarseType.tooltip"
+msgid "Label objects by the broad categories they fit in"
+msgstr "वस्तुओं को उनकी व्यापक श्रेणी के आधार पर सर्वोत्तम श्रेणी मैं लेबल करें"
+
 #. # LOCALIZATION NOTE (toolbar.view): The label for the view selector in the
 #. # toolbar.
 #: toolbar.view
@@ -188,7 +231,8 @@ msgstr "देखें:"
 #. # LOCALIZATION NOTE (toolbar.view.tooltip): The tooltip for the label for the
 #. # view selector in the toolbar.
 #: toolbar.view.tooltip
-msgid "Change the view of the heap snapshot"
+#, fuzzy
+msgid "Change the view of the snapshot"
 msgstr "क्षणचित्र के ढेर का दृष्टिकोण बदले"
 
 #. # LOCALIZATION NOTE (toolbar.view.census): The label for the census view option
@@ -201,8 +245,7 @@ msgstr "योग"
 #. # the census view option in the toolbar.
 #: toolbar.view.census.tooltip
 msgid ""
-"View a summary of the heap snapshot's contents by aggregating objects into "
-"groups"
+"View a summary of the snapshot’s contents by aggregating objects into groups"
 msgstr ""
 
 #. # LOCALIZATION NOTE (toolbar.view.dominators): The label for the dominators view
@@ -215,8 +258,22 @@ msgstr "नियामक"
 #. # for the dominators view option in the toolbar.
 #: toolbar.view.dominators.tooltip
 msgid ""
-"View the dominator tree and surface the largest structures in the heap "
-"snapshot"
+"View the dominator tree and surface the largest structures in the snapshot"
+msgstr ""
+
+#. # LOCALIZATION NOTE (toolbar.view.treemap): The label for the tree map option
+#. # in the toolbar.
+#: toolbar.view.treemap
+msgid "Tree Map"
+msgstr ""
+
+#. # LOCALIZATION NOTE (toolbar.view.treemap.tooltip): The tooltip for the label for
+#. # the tree map view option in the toolbar.
+#: toolbar.view.treemap.tooltip
+msgctxt "toolbar.view.treemap.tooltip"
+msgid ""
+"Visualize memory usage: larger blocks account for a larger percent of memory "
+"usage"
 msgstr ""
 
 #. # LOCALIZATION NOTE (take-snapshot): The label describing the button that
@@ -252,8 +309,15 @@ msgstr "छानें"
 #. # LOCALIZATION NOTE (filter.tooltip): The tooltip text used for the memory
 #. # tool's filter search box.
 #: filter.tooltip
-msgid "Filter the contents of the heap snapshot"
+#, fuzzy
+msgid "Filter the contents of the snapshot"
 msgstr "क्षणचित्र के ढेर की सूची को छानें"
+
+#. # LOCALIZATION NOTE (tree-item.view-individuals.tooltip): The tooltip for the
+#. # button to view individuals in this group.
+#: tree-item.view-individuals.tooltip
+msgid "View individual nodes in this group and their retaining paths"
+msgstr ""
 
 #. # LOCALIZATION NOTE (tree-item.load-more): The label for the links to fetch the
 #. # lazily loaded sub trees in the dominator tree view.
@@ -268,7 +332,7 @@ msgid "GC Roots"
 msgstr "जीसी रूट्स"
 
 #. # LOCALIZATION NOTE (tree-item.nostack): The label describing the row in the heap tree
-#. # that represents a row broken down by allocation stack when no stack was available.
+#. # that represents a row broken down by call stack when no stack was available.
 #: tree-item.nostack
 msgid "(no stack available)"
 msgstr "(no stack available"
@@ -364,14 +428,16 @@ msgstr "तुलना करने के लिए दो क्षणचि�
 #. # LOCALIZATION NOTE (dominatorTree.state.computing): The label describing the
 #. # dominator tree state COMPUTING.
 #: dominatorTree.state.computing
-msgid "Computing dominators…"
-msgstr "अभिकलन डोमिनेटर्स..."
+msgctxt "dominatorTree.state.computing"
+msgid "Generating dominators report…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (dominatorTree.state.computing): The label describing the
 #. # dominator tree state COMPUTING, used in the dominator tree view.
 #: dominatorTree.state.computing.full
-msgid "Computing dominator tree…"
-msgstr "अभिकलन प्रशासक शाखा..."
+msgctxt "dominatorTree.state.computing.full"
+msgid "Generating dominators report…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (dominatorTree.state.fetching): The label describing the
 #. # dominator tree state FETCHING.
@@ -382,20 +448,22 @@ msgstr "अभिकलन आकार..."
 #. # LOCALIZATION NOTE (dominatorTree.state.fetching): The label describing the
 #. # dominator tree state FETCHING, used in the dominator tree view.
 #: dominatorTree.state.fetching.full
-msgid "Computing retained sizes…"
-msgstr "अभिकलन ने परिमापों को याद रखा..."
+msgid "Computing dominator’s retained sizes…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (dominatorTree.state.incrementalFetching): The label
 #. # describing the dominator tree state INCREMENTAL_FETCHING.
 #: dominatorTree.state.incrementalFetching
+#, fuzzy
+msgctxt "dominatorTree.state.incrementalFetching"
 msgid "Fetching…"
 msgstr "प्राप्त हो रहा है ..."
 
 #. # LOCALIZATION NOTE (dominatorTree.state.incrementalFetching): The label describing the
 #. # dominator tree state INCREMENTAL_FETCHING, used in the dominator tree view.
 #: dominatorTree.state.incrementalFetching.full
-msgid "Fetching subtree…"
-msgstr "उपवृक्ष प्राप्त हो रहा है..."
+msgid "Fetching more…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (dominatorTree.state.error): The label describing the
 #. # dominator tree state ERROR.
@@ -434,15 +502,61 @@ msgstr "क्षणचित्रफटका पढ़ रहा है..."
 #. # LOCALIZATION NOTE (snapshot.state.saving-census.full): The label describing
 #. # the snapshot state SAVING, used in the main heap view.
 #: snapshot.state.saving-census.full
-msgctxt "snapshot.state.saving-census.full"
-msgid "Saving census…"
-msgstr "जनगणना सहेज रहा है..."
+msgid "Generating aggregate report…"
+msgstr ""
+
+#. # LOCALIZATION NOTE (snapshot.state.saving-tree-map.full): The label describing
+#. # the snapshot state SAVING, used in the main heap view.
+#: snapshot.state.saving-tree-map.full
+msgctxt "snapshot.state.saving-tree-map.full"
+msgid "Saving tree map…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (snapshot.state.error.full): The label describing the
 #. # snapshot state ERROR, used in the main heap view.
 #: snapshot.state.error.full
 msgid "There was an error processing this snapshot."
 msgstr "इस पृष्ठ के प्रोसेस करते समय में कोई त्रुटि था."
+
+#. # LOCALIZATION NOTE (individuals.state.error): The short message displayed when
+#. # there is an error fetching individuals from a group.
+#: individuals.state.error
+#, fuzzy
+msgctxt "individuals.state.error"
+msgid "Error"
+msgstr "त्रुटि"
+
+#. # LOCALIZATION NOTE (individuals.state.error.full): The longer message displayed
+#. # when there is an error fetching individuals from a group.
+#: individuals.state.error.full
+msgid "There was an error while fetching individuals in the group"
+msgstr ""
+
+#. # LOCALIZATION NOTE (individuals.state.fetching): The short message displayed
+#. # while fetching individuals.
+#: individuals.state.fetching
+#, fuzzy
+msgctxt "individuals.state.fetching"
+msgid "Fetching…"
+msgstr "प्राप्त हो रहा है ..."
+
+#. # LOCALIZATION NOTE (individuals.state.fetching.full): The longer message
+#. # displayed while fetching individuals.
+#: individuals.state.fetching.full
+msgid "Fetching individuals in group…"
+msgstr ""
+
+#. # LOCALIZATION NOTE (individuals.field.node): The header label for an individual
+#. # node.
+#: individuals.field.node
+msgid "Node"
+msgstr ""
+
+#. # LOCALIZATION NOTE (individuals.field.node.tooltip): The tooltip for the header
+#. # label for an individual node.
+#: individuals.field.node.tooltip
+msgid "The individual node in the snapshot"
+msgstr ""
 
 #. # LOCALIZATION NOTE (snapshot.state.saving): The label describing the snapshot
 #. # state SAVING, used in the snapshot list view
@@ -468,9 +582,15 @@ msgstr "क्षणचित्रफटका पढ़ रहा है..."
 #. # LOCALIZATION NOTE (snapshot.state.saving-census): The label describing the
 #. # snapshot state SAVING, used in snapshot list view.
 #: snapshot.state.saving-census
-msgctxt "snapshot.state.saving-census"
-msgid "Saving census…"
-msgstr "जनगणना सहेज रहा है..."
+msgid "Saving report…"
+msgstr ""
+
+#. # LOCALIZATION NOTE (snapshot.state.saving-census): The label describing the
+#. # snapshot state SAVING, used in snapshot list view.
+#: snapshot.state.saving-tree-map
+msgctxt "snapshot.state.saving-tree-map"
+msgid "Saving tree map…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (snapshot.state.error): The label describing the snapshot
 #. # state ERROR, used in the snapshot list view.
@@ -479,14 +599,30 @@ msgctxt "snapshot.state.error"
 msgid "Error"
 msgstr "त्रुटि"
 
+#. # LOCALIZATION NOTE (heapview.no-difference): Message displayed when there is no
+#. # difference between two snapshots.
+#: heapview.no-difference
+msgid "No difference between the baseline and comparison."
+msgstr ""
+
+#. # LOCALIZATION NOTE (heapview.none-match): Message displayed when there are no
+#. # matches when filtering.
+#: heapview.none-match
+msgid "No matches."
+msgstr ""
+
+#. # LOCALIZATION NOTE (heapview.none-match): Message displayed when there report
+#. # is empty.
+#: heapview.empty
+msgid "Empty."
+msgstr ""
+
 #. # LOCALIZATION NOTE (heapview.noAllocationStacks): The message displayed to
-#. # users when selecting a display by "allocation stack" but no allocation stacks
+#. # users when selecting a display by "call stack" but no call stacks
 #. # were recorded in the heap snapshot.
 #: heapview.noAllocationStacks
-msgid ""
-"No allocation stacks found. Record allocation stacks before taking a heap "
-"snapshot."
-msgstr "कोई आवंटन ढेरी नही पाया.क्षणचित्रफटका ढेर लगाने से पहले आवंटन ढेरी दस्तावेज़ बनाये"
+msgid "No call stacks found. Record call stacks before taking a snapshot."
+msgstr ""
 
 #. # LOCALIZATION NOTE (heapview.field.retainedSize): The name of the column in the
 #. # dominator tree view for retained byte sizes.
@@ -517,13 +653,15 @@ msgstr "स्वयं का ही आकर"
 #. # LOCALIZATION NOTE (dominatortree.field.label): The name of the column in the
 #. # dominator tree for an object's label.
 #: dominatortree.field.label
-msgid "Label"
-msgstr "नामांकन"
+#, fuzzy
+msgid "Dominator"
+msgstr "नियामक"
 
 #. # LOCALIZATION NOTE (dominatortree.field.label.tooltip): The tooltip for the column
 #. # header in the dominator tree view for an object's label.
 #: dominatortree.field.label.tooltip
-msgid "The label for an object in the heap"
+#, fuzzy
+msgid "The label for an object in memory"
 msgstr "ढेर के एक वास्तु ले लिए लेबल"
 
 #. # LOCALIZATION NOTE (heapview.field.bytes): The name of the column in the heap
@@ -535,7 +673,8 @@ msgstr "बाइट्स"
 #. # LOCALIZATION NOTE (heapview.field.bytes.tooltip): The tooltip for the column
 #. # header in the heap view for bytes.
 #: heapview.field.bytes.tooltip
-msgid "The number of bytes consumed by this group, excluding subgroups"
+#, fuzzy
+msgid "The number of bytes taken up by this group, excluding subgroups"
 msgstr "इस समूह द्वारा उपयोग किये गए बाइट्स की संख्या, उपसमूह के सिवा"
 
 #. # LOCALIZATION NOTE (heapview.field.count): The name of the column in the heap
@@ -559,7 +698,8 @@ msgstr "कुल बाइट्स"
 #. # LOCALIZATION NOTE (heapview.field.totalbytes.tooltip): The tooltip for the
 #. # column header in the heap view for total bytes.
 #: heapview.field.totalbytes.tooltip
-msgid "The number of bytes consumed by this group, including subgroups"
+#, fuzzy
+msgid "The number of bytes taken up by this group, including subgroups"
 msgstr "इस समूह तथा इसके उपसमूहों के द्वारा उपभुक्त किये गए बाइटस की संख्या"
 
 #. # LOCALIZATION NOTE (heapview.field.totalcount): The name of the column in the
@@ -577,8 +717,8 @@ msgstr "इस समूह तथा इसके उपसमूहों म�
 #. # LOCALIZATION NOTE (heapview.field.name): The name of the column in the heap
 #. # view for name.
 #: heapview.field.name
-msgid "Name"
-msgstr "नाम"
+msgid "Group"
+msgstr ""
 
 #. # LOCALIZATION NOTE (heapview.field.name.tooltip): The tooltip for the column
 #. # header in the heap view for name.
@@ -589,14 +729,73 @@ msgstr "इस समुह का नाम"
 #. # LOCALIZATION NOTE (shortest-paths.header): The header label for the shortest
 #. # paths pane.
 #: shortest-paths.header
-msgid "Retaining Paths from GC Roots"
-msgstr "जीसी जड़ से निकले पथ रोके रखना"
+msgid "Retaining Paths (from Garbage Collector Roots)"
+msgstr ""
 
 #. # LOCALIZATION NOTE (shortest-paths.select-node): The message displayed in the
 #. # shortest paths pane when a node is not yet selected.
 #: shortest-paths.select-node
-msgid "Select a node to view its retaining paths"
+#, fuzzy
+msgid "Select an item to view its retaining paths"
 msgstr "एक गाँठ को चुनें उसके रखे हुए पथ देखने हेतु"
+
+#. # LOCALIZATION NOTE (tree-map.node-count): The label for the count value of a
+#. # node in the tree map
+#: tree-map.node-count
+#, fuzzy
+msgid "count"
+msgstr "गिनती"
+
+#~ msgid "Save Heap Snapshot"
+#~ msgstr "क्षणचित्र संग्रह सहेजें"
+
+#~ msgid "Record allocation stacks"
+#~ msgstr "आवंटन ढेरी दस्तावेज़"
+
+#~ msgid ""
+#~ "Toggle the recording of allocation stacks. Subsequent heap snapshots will "
+#~ "be able to label and group objects created when allocation stack "
+#~ "recording is active by their allocation stack. Recording allocation "
+#~ "stacks has a performance overhead."
+#~ msgstr ""
+#~ "ढेरो के आवंटन का अभिलेख टॉगल करे. जब ढेरो के आवंटन का अभिलेख अपने ही आवंटित ढेर के "
+#~ "द्वारा सक्रिय होगा तब आगामी क्षणचित्रों के संग्रह का नामांकन होगा एवं वस्तुुओं के समूह "
+#~ "बनेंगे. ढेरो के आवंटन का अभिलेख अतिरिक्त कार्यत होगा."
+
+#~ msgid "Computing dominators…"
+#~ msgstr "अभिकलन डोमिनेटर्स..."
+
+#~ msgid "Computing dominator tree…"
+#~ msgstr "अभिकलन प्रशासक शाखा..."
+
+#~ msgid "Computing retained sizes…"
+#~ msgstr "अभिकलन ने परिमापों को याद रखा..."
+
+#~ msgid "Fetching subtree…"
+#~ msgstr "उपवृक्ष प्राप्त हो रहा है..."
+
+#~ msgctxt "snapshot.state.saving-census.full"
+#~ msgid "Saving census…"
+#~ msgstr "जनगणना सहेज रहा है..."
+
+#~ msgctxt "snapshot.state.saving-census"
+#~ msgid "Saving census…"
+#~ msgstr "जनगणना सहेज रहा है..."
+
+#~ msgid ""
+#~ "No allocation stacks found. Record allocation stacks before taking a heap "
+#~ "snapshot."
+#~ msgstr ""
+#~ "कोई आवंटन ढेरी नही पाया.क्षणचित्रफटका ढेर लगाने से पहले आवंटन ढेरी दस्तावेज़ बनाये"
+
+#~ msgid "Label"
+#~ msgstr "नामांकन"
+
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#~ msgid "Retaining Paths from GC Roots"
+#~ msgstr "जीसी जड़ से निकले पथ रोके रखना"
 
 #~ msgid "Invert tree"
 #~ msgstr "वृक्ष उलटें"

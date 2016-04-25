@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-07 15:19+0000\n"
+"POT-Creation-Date: 2016-04-25 17:21+0000\n"
 "PO-Revision-Date: 2016-01-19 06:25+0000\n"
 "Last-Translator: Kerim Kalamujic <kerim@mozilla.ba>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1453184708.000000\n"
 
@@ -555,6 +555,44 @@ msgstr ""
 msgid "Media resource %S could not be decoded."
 msgstr "Medijski resurs %S ne može biti dekodiran."
 
+#: MediaWidevineNoWMFNoSilverlight
+msgid ""
+"Trying to play Widevine with no Windows Media Foundation (nor Silverlight "
+"fallback), see https://support.mozilla.org/kb/fix-video-audio-problems-"
+"firefox-windows"
+msgstr ""
+
+#. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
+#: MediaWMFNeeded
+msgid ""
+"To play video formats %S, you need to install extra Microsoft software, see "
+"https://support.mozilla.org/kb/fix-video-audio-problems-firefox-windows"
+msgstr ""
+
+#. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
+#: MediaPlatformDecoderNotFound
+msgid ""
+"The video on this page can't be played. Your system may not have the "
+"required video codecs for: %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
+#: MediaCannotPlayNoDecoders
+msgid "Cannot play media. No decoders for requested formats: %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
+#: MediaNoDecoders
+msgid "No decoders for some of the requested formats: %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "MediaRecorder".
+#: MediaRecorderMultiTracksNotSupported
+msgid ""
+"MediaRecorder does not support recording multiple tracks of the same type at "
+"this time."
+msgstr ""
+
 #. # LOCALIZATION NOTE: %S is the ID of the MediaStreamTrack passed to MediaStream.addTrack(). Do not translate "MediaStreamTrack" and "AudioChannel".
 #: MediaStreamAddTrackDifferentAudioChannel
 msgid ""
@@ -810,13 +848,14 @@ msgstr ""
 "dokumenta pomnožena sa %1$S (%2$S px). Nakon prekoračenja budžeta, sva will-"
 "change pojavljivanja u dokumentu se ignorišu."
 
-#. # LOCALIZATION NOTE: Do not translate "ServiceWorker".
-#: HittingMaxWorkersPerDomain
+#. # LOCALIZATION NOTE: Do not translate "Worker".
+#: HittingMaxWorkersPerDomain2
+#, fuzzy
 msgid ""
-"A ServiceWorker could not be started immediately because other documents in "
-"the same origin are already using the maximum number of workers. The "
-"ServiceWorker is now queued and will be started after some of the other "
-"workers have completed."
+"A Worker could not be started immediately because other documents in the "
+"same origin are already using the maximum number of workers. The Worker is "
+"now queued and will be started after some of the other workers have "
+"completed."
 msgstr ""
 "ServiceWorker nije mogao biti momentalno pokrenut jer su drugi dokumenti u "
 "istom izvoru već koristili maksimalan broj workera. ServiceWorker je "
@@ -949,6 +988,15 @@ msgstr ""
 "FetchEvent.respondWith() koje je rezultiralo sa non-Response vrijednosti "
 "'%2$S'."
 
+#. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "Service-Worker-Allowed" or "HTTP". %1$S and %2$S are URLs.
+#: ServiceWorkerScopePathMismatch
+msgid ""
+"Failed to register a ServiceWorker: The path of the provided scope '%1$S' is "
+"not under the max scope allowed '%2$S'. Adjust the scope, move the Service "
+"Worker script, or use the Service-Worker-Allowed HTTP header to allow the "
+"scope."
+msgstr ""
+
 #: ExecCommandCutCopyDeniedNotInputDriven
 msgid ""
 "document.execCommand('cut'/'copy') was denied because it was not called from "
@@ -1017,6 +1065,14 @@ msgid ""
 "Rewriting old-style Youtube Flash embed (%S) to iframe embed (%S). Query was "
 "invalid and removed from URL. Please update page to use iframe instead of "
 "embed/object, if possible."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %1$S is the ServiceWorker scope URL. %2$S is an error string.
+#: PushMessageDecryptionFailure
+msgid ""
+"The ServiceWorker for scope '%1$S' encountered an error decrypting a push "
+"message: '%2$S'. For help with encryption, please see https://developer."
+"mozilla.org/en-US/docs/Web/API/Push_API/Using_the_Push_API#Encryption"
 msgstr ""
 
 #~ msgid ""

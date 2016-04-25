@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-07 15:19+0000\n"
+"POT-Creation-Date: 2016-04-25 17:21+0000\n"
 "PO-Revision-Date: 2016-01-08 14:10+0000\n"
 "Last-Translator: Rhoslyn Prys <rprys@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,8 +12,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
-"X-Generator: Translate Toolkit 1.13.0-rc1\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1452262245.000000\n"
 
@@ -59,10 +59,11 @@ msgid "Server not found"
 msgstr "Heb ganfod gweinydd"
 
 #: dnsNotFound.longDesc
+#, fuzzy
 msgid ""
 "<ul> <li>Check the address for typing errors such as <strong>ww</strong>."
 "example.com instead of <strong>www</strong>.example.com</li> <li>If you are "
-"unable to load any pages, check your computer's network connection.</li> "
+"unable to load any pages, check your computer’s network connection.</li> "
 "<li>If your computer or network is protected by a firewall or proxy, make "
 "sure that &brandShortName; is permitted to access the Web.</li> </ul>"
 msgstr ""
@@ -86,23 +87,36 @@ msgstr ""
 "li> <li>Gwiriwch i weld os yw'r ffeil wedi symud, ailenwi neu ei dileu.</li> "
 "</ul>"
 
+#: fileAccessDenied.title
+msgid "Access to the file was denied"
+msgstr ""
+
+#: fileAccessDenied.longDesc
+msgid ""
+"<ul> <li>It may have been removed, moved, or file permissions may be "
+"preventing access.</li> </ul>"
+msgstr ""
+
 #: generic.title
 msgid "Oops."
 msgstr "Wps."
 
 #: generic.longDesc
-msgid "<p>&brandShortName; can't load this page for some reason.</p>"
+#, fuzzy
+msgid "<p>&brandShortName; can’t load this page for some reason.</p>"
 msgstr ""
 "<p>Nid yw &brandShortName; yn gallu llwytho'r dudalen am ryw reswm.</p>"
 
 #: malformedURI.title
-msgid "The address isn't valid"
+#, fuzzy
+msgid "The address isn’t valid"
 msgstr "Nid yw'r cyfeiriad yn ddilys"
 
 #: malformedURI.longDesc
+#, fuzzy
 msgid ""
 "<ul> <li>Web addresses are usually written like <strong>http://www.example."
-"com/</strong></li> <li>Make sure that you're using forward slashes (i.e. "
+"com/</strong></li> <li>Make sure that you’re using forward slashes (i.e. "
 "<strong>/</strong>).</li> </ul>"
 msgstr ""
 "<ul> <li>Fel rheol mae cyfeiriadau Gwe'n cael eu hysgrifennu fel "
@@ -123,8 +137,9 @@ msgid "Document Expired"
 msgstr "Daeth y Ddogfen i Ben"
 
 #: notCached.longDesc
+#, fuzzy
 msgid ""
-"<p>The requested document is not available in &brandShortName;'s cache.</"
+"<p>The requested document is not available in &brandShortName;’s cache.</"
 "p><ul><li>As a security precaution, &brandShortName; does not automatically "
 "re-request sensitive documents.</li><li>Click Try Again to re-request the "
 "document from the website.</li></ul>"
@@ -189,7 +204,8 @@ msgid "&sharedLongDesc;"
 msgstr "&sharedLongDesc;"
 
 #: unknownProtocolFound.title
-msgid "The address wasn't understood"
+#, fuzzy
+msgid "The address wasn’t understood"
 msgstr "Heb ddeall y cyfeiriad"
 
 #: unknownProtocolFound.longDesc
@@ -231,7 +247,8 @@ msgstr ""
 "gwnewch yn siŵr fod gan &brandShortName; fynediad i'r we.</li> </ul>"
 
 #: redirectLoop.title
-msgid "The page isn't redirecting properly"
+#, fuzzy
+msgid "The page isn’t redirecting properly"
 msgstr "Nid yw'r dudalen yn ailgyfeirio'n iawn"
 
 #: redirectLoop.longDesc
@@ -257,7 +274,7 @@ msgstr ""
 "ul>"
 
 #: nssFailure2.title
-msgctxt "nssFailure2.title"
+#, fuzzy
 msgid "Secure Connection Failed"
 msgstr "Methodd y Cysylltiad Diogel"
 
@@ -271,28 +288,28 @@ msgstr ""
 "oes modd gwirio dilysrwydd y data derbyniwyd.</li> <li>Cysylltwch â "
 "pherchennog y wefan i'w hysbysu o'r anhawster.</li> </ul>"
 
-#: nssBadCert.title
-msgctxt "nssBadCert.title"
-msgid "Secure Connection Failed"
-msgstr "Methodd y Cysylltiad Diogel"
+#: certerror.longpagetitle1
+#, fuzzy
+msgctxt "certerror.longpagetitle1"
+msgid "Your connection is not secure"
+msgstr "Nid yw eich cysylltiad yn ddiogel"
 
-#: nssBadCert.longDesc2
+#. Localization note (certerror.introPara) - The text content of the span tag
+#. will be replaced at runtime with the name of the server to which the user
+#. was trying to connect.
+#: certerror.introPara
 msgid ""
-"<ul> <li>This could be a problem with the server's configuration, or it "
-"could be someone trying to impersonate the server.</li> <li>If you have "
-"connected to this server successfully in the past, the error may be "
-"temporary, and you can try again later.</li> </ul>"
+"The owner of <span class='hostname'/> has configured their website "
+"improperly.  To protect your information from being stolen, &brandShortName; "
+"has not connected to this website."
 msgstr ""
-"<ul> <li>Gall hwn fod yn anhawster gyda ffurfweddiad y gweinydd neu gall fod "
-"yn rhywun sy'n ceisio dynwared y gweinydd.</li> <li>Os ydych wedi cysylltu'n "
-"llwyddiannus gyda' gweinydd yn y gorffennol, efallai mai gwall dros dro ydyw "
-"ac i geisio eto.</li> </ul>"
 
 #: sharedLongDesc
+#, fuzzy
 msgid ""
 "<ul> <li>The site could be temporarily unavailable or too busy. Try again in "
 "a few moments.</li> <li>If you are unable to load any pages, check your "
-"computer's network connection.</li> <li>If your computer or network is "
+"computer’s network connection.</li> <li>If your computer or network is "
 "protected by a firewall or proxy, make sure that &brandShortName; is "
 "permitted to access the Web.</li> </ul>"
 msgstr ""
@@ -328,35 +345,9 @@ msgstr ""
 "canfuwyd gwall wrth drosglwyddo data.</p><ul><li>Cysylltwch â pherchnogion y "
 "wefan i'w hysbysu o'r anhawster.</li></ul>"
 
-#: securityOverride.linkText
-msgid "Or you can add an exception…"
-msgstr "Neu mae modd ychwanegu eithriad…"
-
-#: securityOverride.getMeOutOfHereButton
-msgid "Get me out of here!"
-msgstr "Allan o fan hyn!"
-
 #: securityOverride.exceptionButtonLabel
 msgid "Add Exception…"
 msgstr "Ychwanegu Eithriad…"
-
-#. <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
-#. contents of the <button> tags. It uses strings already defined above. The
-#. button is included here (instead of netError.xhtml) because it exposes
-#. functionality specific to firefox.
-#: securityOverride.warningContent
-msgid ""
-"<p>You should not add an exception if you are using an internet connection "
-"that you do not trust completely or if you are not used to seeing a warning "
-"for this server.</p>  <button id='getMeOutOfHereButton'>&securityOverride."
-"getMeOutOfHereButton;</button> <button "
-"id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>"
-msgstr ""
-"<p>Peidiwch ychwanegu eithriad os ydych yn defnyddio cysylltiad gwe nad "
-"ydych yn ymddiried ynddo'n llwyr neu os nad ydych wedi arfer â gweld rhybudd "
-"ar y gweinydd hwn.</p>  <button id='getMeOutOfHereButton'>&securityOverride."
-"getMeOutOfHereButton;</button> <button "
-"id='exceptionDialogButton'>&securityOverride.exceptionButtonLabel;</button>"
 
 #: errorReporting.automatic2
 msgid ""
@@ -392,6 +383,8 @@ msgid "Advanced info: SSL_ERROR_UNSUPPORTED_VERSION"
 msgstr "Gwybodaeth uwch: SSL_ERROR_UNSUPPORTED_VERSION"
 
 #: weakCryptoUsed.title
+#, fuzzy
+msgctxt "weakCryptoUsed.title"
 msgid "Your connection is not secure"
 msgstr "Nid yw eich cysylltiad yn ddiogel"
 
@@ -423,6 +416,74 @@ msgid ""
 msgstr ""
 "(Ddim yn ddiogel) Ceisiwch llwytho <span class='hostname'></span> gan "
 "ddefnyddio hen offer diogelwch"
+
+#: certerror.pagetitle1
+msgid "Insecure Connection"
+msgstr ""
+
+#: certerror.whatShouldIDo.badStsCertExplanation
+msgid ""
+"This site uses HTTP Strict Transport Security (HSTS) to specify that "
+"&brandShortName; only connect to it securely. As a result, it is not "
+"possible to add an exception for this certificate."
+msgstr ""
+
+#: certerror.copyToClipboard.label
+msgid "Copy text to clipboard"
+msgstr ""
+
+#: inadequateSecurityError.title
+#, fuzzy
+msgctxt "inadequateSecurityError.title"
+msgid "Your connection is not secure"
+msgstr "Nid yw eich cysylltiad yn ddiogel"
+
+#. <!-- LOCALIZATION NOTE (inadequateSecurityError.longDesc) - Do not translate
+#. "NS_ERROR_NET_INADEQUATE_SECURITY".
+#: inadequateSecurityError.longDesc
+msgid ""
+"<p><span class='hostname'></span> uses security technology that is outdated "
+"and vulnerable to attack. An attacker could easily reveal information which "
+"you thought to be safe. The website administrator will need to fix the "
+"server first before you can visit the site.</p><p>Error code: "
+"NS_ERROR_NET_INADEQUATE_SECURITY</p>"
+msgstr ""
+
+#~ msgctxt "nssBadCert.title"
+#~ msgid "Secure Connection Failed"
+#~ msgstr "Methodd y Cysylltiad Diogel"
+
+#~ msgid ""
+#~ "<ul> <li>This could be a problem with the server's configuration, or it "
+#~ "could be someone trying to impersonate the server.</li> <li>If you have "
+#~ "connected to this server successfully in the past, the error may be "
+#~ "temporary, and you can try again later.</li> </ul>"
+#~ msgstr ""
+#~ "<ul> <li>Gall hwn fod yn anhawster gyda ffurfweddiad y gweinydd neu gall "
+#~ "fod yn rhywun sy'n ceisio dynwared y gweinydd.</li> <li>Os ydych wedi "
+#~ "cysylltu'n llwyddiannus gyda' gweinydd yn y gorffennol, efallai mai gwall "
+#~ "dros dro ydyw ac i geisio eto.</li> </ul>"
+
+#~ msgid "Or you can add an exception…"
+#~ msgstr "Neu mae modd ychwanegu eithriad…"
+
+#~ msgid "Get me out of here!"
+#~ msgstr "Allan o fan hyn!"
+
+#~ msgid ""
+#~ "<p>You should not add an exception if you are using an internet "
+#~ "connection that you do not trust completely or if you are not used to "
+#~ "seeing a warning for this server.</p>  <button "
+#~ "id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</"
+#~ "button> <button id='exceptionDialogButton'>&securityOverride."
+#~ "exceptionButtonLabel;</button>"
+#~ msgstr ""
+#~ "<p>Peidiwch ychwanegu eithriad os ydych yn defnyddio cysylltiad gwe nad "
+#~ "ydych yn ymddiried ynddo'n llwyr neu os nad ydych wedi arfer â gweld "
+#~ "rhybudd ar y gweinydd hwn.</p>  <button "
+#~ "id='getMeOutOfHereButton'>&securityOverride.getMeOutOfHereButton;</"
+#~ "button> <button id='exceptionDialogButton'>&securityOverride."
+#~ "exceptionButtonLabel;</button>"
 
 #~ msgid "Suspected Attack Site!"
 #~ msgstr "Gwefan Meddalwedd Digroeso Tybiedig!"
