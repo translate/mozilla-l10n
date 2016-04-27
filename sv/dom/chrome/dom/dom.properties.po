@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-25 17:21+0000\n"
-"PO-Revision-Date: 2016-03-09 18:49+0000\n"
+"PO-Revision-Date: 2016-04-27 15:56+0000\n"
 "Last-Translator: andpet <az@kth.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv\n"
@@ -15,10 +15,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1457549381.000000\n"
+"X-POOTLE-MTIME: 1461772584.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -545,6 +545,9 @@ msgid ""
 "fallback), see https://support.mozilla.org/kb/fix-video-audio-problems-"
 "firefox-windows"
 msgstr ""
+"Försöker spela Widevine utan Windows Media Foundation (eller Silverlight "
+"fallback), se https://support.mozilla.org/kb/fix-video-audio-problems-"
+"firefox-windows"
 
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaWMFNeeded
@@ -552,6 +555,9 @@ msgid ""
 "To play video formats %S, you need to install extra Microsoft software, see "
 "https://support.mozilla.org/kb/fix-video-audio-problems-firefox-windows"
 msgstr ""
+"För att spela videoformat %S, måste du installera extra programvara från "
+"Microsoft, se https://support.mozilla.org/kb/fix-video-audio-problems-"
+"firefox-windows"
 
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaPlatformDecoderNotFound
@@ -559,16 +565,18 @@ msgid ""
 "The video on this page can't be played. Your system may not have the "
 "required video codecs for: %S"
 msgstr ""
+"Videon på denna sida kan inte spelas. Din dator kanske inte har de "
+"nödvändiga videokodekar för: %S"
 
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaCannotPlayNoDecoders
 msgid "Cannot play media. No decoders for requested formats: %S"
-msgstr ""
+msgstr "Det går inte att spela upp media. Inga dekodrar för begärda format: %S"
 
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaNoDecoders
 msgid "No decoders for some of the requested formats: %S"
-msgstr ""
+msgstr "Inga dekodrar för några av de begärda formaten: %S"
 
 #. # LOCALIZATION NOTE: Do not translate "MediaRecorder".
 #: MediaRecorderMultiTracksNotSupported
@@ -576,6 +584,7 @@ msgid ""
 "MediaRecorder does not support recording multiple tracks of the same type at "
 "this time."
 msgstr ""
+"MediaRecorder stöder inte inspelning av flera spår av samma typ just nu."
 
 #. # LOCALIZATION NOTE: %S is the ID of the MediaStreamTrack passed to MediaStream.addTrack(). Do not translate "MediaStreamTrack" and "AudioChannel".
 #: MediaStreamAddTrackDifferentAudioChannel
@@ -831,17 +840,15 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "Worker".
 #: HittingMaxWorkersPerDomain2
-#, fuzzy
 msgid ""
 "A Worker could not be started immediately because other documents in the "
 "same origin are already using the maximum number of workers. The Worker is "
 "now queued and will be started after some of the other workers have "
 "completed."
 msgstr ""
-"En ServiceWorker kunde inte startas omedelbart eftersom andra dokument i "
-"same-origin redan använder maximalt antal arbetare. ServiceWorker har satts "
-"i kö och kommer att startas efter att några av de andra arbetarna har "
-"slutfört."
+"En Worker kunde inte startas omedelbart eftersom andra dokument i samma "
+"ursprung redan använder maximalt antal arbetare. Worker har satts i kö och "
+"kommer att startas efter att några av de andra arbetena har slutförts ."
 
 #. # LOCALIZATION NOTE: Do not translate "setVelocity", "PannerNode", "AudioListener", "speedOfSound" and "dopplerFactor"
 #: PannerNodeDopplerWarning
@@ -979,6 +986,10 @@ msgid ""
 "Worker script, or use the Service-Worker-Allowed HTTP header to allow the "
 "scope."
 msgstr ""
+"Det gick inte att registrera en ServiceWorker: Sökvägen till området '%1$S' "
+"är inte under maximala området som tillåts '%2$S'. Justera området, flytta "
+"skriptet för ServiceWorker eller använda Service-Worker-Allowed HTTP-huvudet "
+"för att tillåta området."
 
 #: ExecCommandCutCopyDeniedNotInputDriven
 msgid ""
@@ -994,15 +1005,15 @@ msgstr "Manifest bör vara ett objekt."
 
 #: ManifestScopeURLInvalid
 msgid "The scope URL is invalid."
-msgstr "Omfångs-URL är ogiltig."
+msgstr "Område-URL är ogiltig."
 
 #: ManifestScopeNotSameOrigin
 msgid "The scope URL must be same origin as document."
-msgstr "Omfångs-URL måste ha samma ursprung som dokumentet."
+msgstr "Område-URL måste ha samma ursprung som dokumentet."
 
 #: ManifestStartURLOutsideScope
 msgid "The start URL is outside the scope, so the scope is invalid."
-msgstr "Starta URL är utanför omfång, så omfånget är ogiltigt."
+msgstr "Start URL:en är utanför området, så området är ogiltigt."
 
 #: ManifestStartURLInvalid
 msgid "The start URL is invalid."
@@ -1067,6 +1078,10 @@ msgid ""
 "message: '%2$S'. For help with encryption, please see https://developer."
 "mozilla.org/en-US/docs/Web/API/Push_API/Using_the_Push_API#Encryption"
 msgstr ""
+"ServiceWorker för område '%1$S' påträffade ett fel vid dekryptering av ett "
+"push-meddelande: '%2$S'. För att få hjälp med kryptering, se https://"
+"developer.mozilla.org/en-US/docs/Web/API/Push_API/"
+"Using_the_Push_API#Encryption"
 
 #~ msgid ""
 #~ "Failed to load '%S'. A ServiceWorker passed an opaque Response to "
