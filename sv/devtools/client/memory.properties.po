@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-25 17:21+0000\n"
-"PO-Revision-Date: 2016-04-28 20:01+0000\n"
+"PO-Revision-Date: 2016-04-28 20:29+0000\n"
 "Last-Translator: andpet <az@kth.se>\n"
 "Language-Team: none\n"
 "Language: sv\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1461873668.000000\n"
+"X-POOTLE-MTIME: 1461875375.000000\n"
 
 #. # LOCALIZATION NOTE These strings are used inside the Memory Tools
 #. # which is available from the Web Developer sub-menu -> 'Memory'.
@@ -95,7 +95,7 @@ msgstr "Bearbetar…"
 #. # boolean checkbox whether or not to record call stacks.
 #: checkbox.recordAllocationStacks
 msgid "Record call stacks"
-msgstr "Spela in call-stackar"
+msgstr "Spela in anropsstackar"
 
 #. # LOCALIZATION NOTE (checkbox.recordAllocationStacks.tooltip): The tooltip for
 #. # the label describing the boolean checkbox whether or not to record call
@@ -107,6 +107,10 @@ msgid ""
 "but only with those objects created after toggling this option. Recording "
 "call stacks has a performance overhead."
 msgstr ""
+"Växla inspelningen av anropsstacken när ett objekt allokeras. Efterföljande "
+"skärmbilder kommer att kunna gruppera och märka objekt genom anropsstackar, "
+"men endast med de objekt som skapats efter att ha växlat till det här "
+"alternativet. Inspelning av anropsstackar har en prestanda overhead."
 
 #. # LOCALIZATION NOTE (toolbar.displayBy): The label describing the select menu
 #. # options of the display options.
@@ -244,12 +248,11 @@ msgstr "Sammanlagt"
 #. # LOCALIZATION NOTE (toolbar.view.census.tooltip): The tooltip for the label for
 #. # the census view option in the toolbar.
 #: toolbar.view.census.tooltip
-#, fuzzy
 msgid ""
 "View a summary of the snapshot’s contents by aggregating objects into groups"
 msgstr ""
-"Visa en sammanfattning av stackens skärmbildsinnehåll genom att aggregera "
-"objekt till grupper"
+"Visa en sammanfattning av skärmbildsinnehåll genom att aggregera objekt till "
+"grupper"
 
 #. # LOCALIZATION NOTE (toolbar.view.dominators): The label for the dominators view
 #. # option in the toolbar.
@@ -260,18 +263,15 @@ msgstr "Dominatorer"
 #. # LOCALIZATION NOTE (toolbar.view.dominators.tooltip): The tooltip for the label
 #. # for the dominators view option in the toolbar.
 #: toolbar.view.dominators.tooltip
-#, fuzzy
 msgid ""
 "View the dominator tree and surface the largest structures in the snapshot"
-msgstr ""
-"Visa dominator träd och markera de största strukturerna i skärmbilden av "
-"stacken"
+msgstr "Visa dominatorträd och markera de största strukturerna i skärmbilden"
 
 #. # LOCALIZATION NOTE (toolbar.view.treemap): The label for the tree map option
 #. # in the toolbar.
 #: toolbar.view.treemap
 msgid "Tree Map"
-msgstr ""
+msgstr "Tree Map"
 
 #. # LOCALIZATION NOTE (toolbar.view.treemap.tooltip): The tooltip for the label for
 #. # the tree map view option in the toolbar.
@@ -281,6 +281,8 @@ msgid ""
 "Visualize memory usage: larger blocks account for a larger percent of memory "
 "usage"
 msgstr ""
+"Visualisera minnesanvändning: större blockkonto för en större procent av "
+"minnesanvändning "
 
 #. # LOCALIZATION NOTE (take-snapshot): The label describing the button that
 #. # initiates taking a snapshot, either as the main label, or a tooltip.
@@ -322,7 +324,7 @@ msgstr "Filtrera innehållet av skärmbilden"
 #. # button to view individuals in this group.
 #: tree-item.view-individuals.tooltip
 msgid "View individual nodes in this group and their retaining paths"
-msgstr ""
+msgstr "Visa enskilda noder i denna grupp och deras kvarhållande sökvägar"
 
 #. # LOCALIZATION NOTE (tree-item.load-more): The label for the links to fetch the
 #. # lazily loaded sub trees in the dominator tree view.
@@ -435,14 +437,14 @@ msgstr "Välj två skärmbilder att jämföra"
 #: dominatorTree.state.computing
 msgctxt "dominatorTree.state.computing"
 msgid "Generating dominators report…"
-msgstr ""
+msgstr "Genererar dominatorsrapport…"
 
 #. # LOCALIZATION NOTE (dominatorTree.state.computing): The label describing the
 #. # dominator tree state COMPUTING, used in the dominator tree view.
 #: dominatorTree.state.computing.full
 msgctxt "dominatorTree.state.computing.full"
 msgid "Generating dominators report…"
-msgstr ""
+msgstr "Genererar dominatorsrapport…"
 
 #. # LOCALIZATION NOTE (dominatorTree.state.fetching): The label describing the
 #. # dominator tree state FETCHING.
@@ -514,7 +516,7 @@ msgstr ""
 #: snapshot.state.saving-tree-map.full
 msgctxt "snapshot.state.saving-tree-map.full"
 msgid "Saving tree map…"
-msgstr ""
+msgstr "Sparar tree map…"
 
 #. # LOCALIZATION NOTE (snapshot.state.error.full): The label describing the
 #. # snapshot state ERROR, used in the main heap view.
@@ -533,7 +535,7 @@ msgstr "Fel"
 #. # when there is an error fetching individuals from a group.
 #: individuals.state.error.full
 msgid "There was an error while fetching individuals in the group"
-msgstr ""
+msgstr "Ett fel uppstod vid hämtning av individer i gruppen"
 
 #. # LOCALIZATION NOTE (individuals.state.fetching): The short message displayed
 #. # while fetching individuals.
@@ -592,7 +594,7 @@ msgstr "Sparar rapport…"
 #: snapshot.state.saving-tree-map
 msgctxt "snapshot.state.saving-tree-map"
 msgid "Saving tree map…"
-msgstr ""
+msgstr "Sparar tree map…"
 
 #. # LOCALIZATION NOTE (snapshot.state.error): The label describing the snapshot
 #. # state ERROR, used in the snapshot list view.
@@ -625,6 +627,7 @@ msgstr "Tom."
 #: heapview.noAllocationStacks
 msgid "No call stacks found. Record call stacks before taking a snapshot."
 msgstr ""
+"Inga anropsstackar hittades. Spela in anropsstackar innan en skärmbild tas."
 
 #. # LOCALIZATION NOTE (heapview.field.retainedSize): The name of the column in the
 #. # dominator tree view for retained byte sizes.
