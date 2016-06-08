@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 17:21+0000\n"
+"POT-Creation-Date: 2016-06-08 12:15+0000\n"
 "PO-Revision-Date: 2016-05-31 16:01+0000\n"
 "Last-Translator: Håvar Henriksen <havar@firefox.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1464710484.000000\n"
 
@@ -59,7 +59,8 @@ msgid "Continue"
 msgstr "Fortsett"
 
 #: DontAskAgain
-msgid "&Don't ask me again"
+#, fuzzy
+msgid "&Don’t ask me again"
 msgstr "&Ikke spør igjen"
 
 #: JSURLLoadBlockedWarning
@@ -267,18 +268,16 @@ msgstr ""
 "Bruk av document.createAttributeNS() er frarådet. Bruk element."
 "setAttributeNS() isteden."
 
-#: OwnerElementWarning
-msgid "Use of attributes' ownerElement attribute is deprecated."
-msgstr "Bruk av attributters ownerElement-attributt er frarådet."
-
 #: NodeValueWarning
+#, fuzzy
 msgid ""
-"Use of attributes' nodeValue attribute is deprecated. Use value instead."
+"Use of attributes’ nodeValue attribute is deprecated. Use value instead."
 msgstr "Bruk av attributters nodeValue-attributt er frarådet."
 
 #: TextContentWarning
+#, fuzzy
 msgid ""
-"Use of attributes' textContent attribute is deprecated. Use value instead."
+"Use of attributes’ textContent attribute is deprecated. Use value instead."
 msgstr ""
 "Bruk av attributters textContent-attributt er frarådet. Bruk value isteden."
 
@@ -323,9 +322,10 @@ msgstr ""
 "Forespørsel om fullskjerm ble avvist fordi dokumentet ikke lenger er synlig."
 
 #: FullscreenDeniedContainerNotAllowed
+#, fuzzy
 msgid ""
-"Request for fullscreen was denied because at least one of the document's "
-"containing elements is not an iframe or does not have an \"allowfullscreen\" "
+"Request for fullscreen was denied because at least one of the document’s "
+"containing elements is not an iframe or does not have an “allowfullscreen” "
 "attribute."
 msgstr ""
 "Forespørsel om fullskjerm ble avvist fordi minst ett av elementene som "
@@ -400,32 +400,27 @@ msgid ""
 msgstr "HTML-tolking i XMLHttpRequest er ikke støttet i synkron modus."
 
 #: InvalidRedirectChannelWarning
+#, fuzzy
 msgid ""
-"Unable to redirect to %S because the channel doesn't implement "
+"Unable to redirect to %S because the channel doesn’t implement "
 "nsIWritablePropertyBag2."
 msgstr ""
 "Klarte ikke omdirigere til %S fordi kanalen ikke implementerer "
 "nsIWritablePropertyBag2."
 
 #: ResponseTypeSyncXHRWarning
+#, fuzzy
 msgid ""
-"Use of XMLHttpRequest's responseType attribute is no longer supported in the "
+"Use of XMLHttpRequest’s responseType attribute is no longer supported in the "
 "synchronous mode in window context."
 msgstr ""
 "Bruk av XMLHttpRequest sin responseType-attributt er ikke lenger støttet i "
 "synkron modus i vinduskonteksten."
 
-#: WithCredentialsSyncXHRWarning
-msgid ""
-"Use of XMLHttpRequest's withCredentials attribute is no longer supported in "
-"the synchronous mode in window context."
-msgstr ""
-"Bruk av XMLHttpRequest sin withCredentials-attributt er ikke lenger støttet "
-"i synkron modus i vinduskonteksten."
-
 #: TimeoutSyncXHRWarning
+#, fuzzy
 msgid ""
-"Use of XMLHttpRequest's timeout attribute is not supported in the "
+"Use of XMLHttpRequest’s timeout attribute is not supported in the "
 "synchronous mode in window context."
 msgstr ""
 "Bruk av XMLHttpRequest sin timeout-attributt er ikke støttet i synkron modus "
@@ -468,13 +463,28 @@ msgstr ""
 msgid "The buffer passed to decodeAudioData does not contain any audio."
 msgstr "Bufferen sendt til decodeAudioData inneholder ikke lyddata."
 
+#. # LOCALIZATION NOTE: Do not translate HTMLMediaElement and createMediaElementSource.
+#: MediaElementAudioSourceNodeCrossOrigin
+msgid ""
+"The HTMLMediaElement passed to createMediaElementSource has a cross-origin "
+"resource, the node will output silence."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate MediaStream and createMediaStreamSource.
+#: MediaStreamAudioSourceNodeCrossOrigin
+msgid ""
+"The MediaStream passed to createMediaStreamSource has a cross-origin "
+"resource, the node will output silence."
+msgstr ""
+
 #: MediaLoadExhaustedCandidates
 msgid "All candidate resources failed to load. Media load paused."
 msgstr ""
 "Klarte ikke laste noen av kandidatressursene. Medialasting satt i pause."
 
 #: MediaLoadSourceMissingSrc
-msgid "<source> element has no \"src\" attribute. Media resource load failed."
+#, fuzzy
+msgid "<source> element has no “src” attribute. Media resource load failed."
 msgstr "<source>-elementet har ingen «src»-attributt. Medialasting mislyktes."
 
 #. # LOCALIZATION NOTE: %1$S is the Http error code the server returned (e.g. 404, 500, etc), %2$S is the URL of the media resource which failed to load.
@@ -491,8 +501,9 @@ msgstr "Ugyldig URI. Innlasting av medieressurs %S mislyktes."
 
 #. # LOCALIZATION NOTE: %1$S is the media resource's format/codec type (basically equivalent to the file type, e.g. MP4,AVI,WMV,MOV etc), %2$S is the URL of the media resource which failed to load.
 #: MediaLoadUnsupportedTypeAttribute
+#, fuzzy
 msgid ""
-"Specified \"type\" attribute of \"%1$S\" is not supported. Load of media "
+"Specified “type” attribute of “%1$S” is not supported. Load of media "
 "resource %2$S failed."
 msgstr ""
 "Den angitte verdien for «type» i «%1$S» støttes ikke. Innlasting av "
@@ -500,18 +511,20 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: %1$S is the "media" attribute value of the <source> element. It is a media query. %2$S is the URL of the media resource which failed to load.
 #: MediaLoadSourceMediaNotMatched
+#, fuzzy
 msgid ""
-"Specified \"media\" attribute of \"%1$S\" does not match the environment. "
-"Load of media resource %2$S failed."
+"Specified “media” attribute of “%1$S” does not match the environment. Load "
+"of media resource %2$S failed."
 msgstr ""
 "Den oppgitte «media»-attributten i «%1$S» passer ikke til miljøet. Lasting "
 "av mediaressursen %2$S mislyktes."
 
 #. # LOCALIZATION NOTE: %1$S is the MIME type HTTP header being sent by the web server, %2$S is the URL of the media resource which failed to load.
 #: MediaLoadUnsupportedMimeType
+#, fuzzy
 msgid ""
-"HTTP \"Content-Type\" of \"%1$S\" is not supported. Load of media resource "
-"%2$S failed."
+"HTTP “Content-Type” of “%1$S” is not supported. Load of media resource %2$S "
+"failed."
 msgstr ""
 "HTTP «Content-Type» med «%1$S» støttes ikke. Innlasting av medieressursen "
 "%2$S mislyktes."
@@ -543,8 +556,9 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaPlatformDecoderNotFound
+#, fuzzy
 msgid ""
-"The video on this page can't be played. Your system may not have the "
+"The video on this page can’t be played. Your system may not have the "
 "required video codecs for: %S"
 msgstr ""
 "Videoen på denne side kan ikke spilles av. Datamaskinen din har kanskje ikke "
@@ -590,7 +604,8 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "DOMException", "code" and "name"
 #: DOMExceptionCodeWarning
-msgid "Use of DOMException's code attribute is deprecated. Use name instead."
+#, fuzzy
+msgid "Use of DOMException’s code attribute is deprecated. Use name instead."
 msgstr ""
 "Bruk av DOMException sin code-attributt er frarådet. Bruk name isteden."
 
@@ -647,9 +662,10 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "mozHidden", "mozVisibilityState", "hidden", or "visibilityState"
 #: PrefixedVisibilityAPIWarning
+#, fuzzy
 msgid ""
-"'mozHidden' and 'mozVisibilityState' are deprecated.  Please use the "
-"unprefixed 'hidden' and 'visibilityState' instead."
+"‘mozHidden’ and ‘mozVisibilityState’ are deprecated.  Please use the "
+"unprefixed ‘hidden’ and ‘visibilityState’ instead."
 msgstr ""
 "'mozHidden' og 'mozVisibilityState' er frarådet.  Bruk prefiksløs 'hidden' "
 "og 'visibilityState' isteden."
@@ -661,8 +677,9 @@ msgstr "Kall til detach() på en NodeIterator har ikke lenger noen virkning."
 
 #. # LOCALIZATION NOTE: Do not translate "LenientThis" and "this"
 #: LenientThisWarning
+#, fuzzy
 msgid ""
-"Ignoring get or set of property that has [LenientThis] because the \"this\" "
+"Ignoring get or set of property that has [LenientThis] because the “this” "
 "object is incorrect."
 msgstr ""
 "Ignorerer get eller set på egenskap som har [LenientThis] fordi \"this\"-"
@@ -752,9 +769,10 @@ msgstr "window._content er frarådet. Bruk window.content isteden."
 
 #. # LOCALIZATION NOTE: Do not translate "XMLHttpRequest"
 #: SyncXMLHttpRequestWarning
+#, fuzzy
 msgid ""
 "Synchronous XMLHttpRequest on the main thread is deprecated because of its "
-"detrimental effects to the end user's experience. For more help http://xhr."
+"detrimental effects to the end user’s experience. For more help http://xhr."
 "spec.whatwg.org/"
 msgstr ""
 "Synkron XMLHttpRequest på hovedtråden er frarådet fordi det kan ha negativ "
@@ -862,8 +880,9 @@ msgstr ""
 "unintentional."
 
 #: WebrtcDeprecatedPrefixWarning
+#, fuzzy
 msgid ""
-"WebRTC interfaces with the \"moz\" prefix (mozRTCPeerConnection, "
+"WebRTC interfaces with the “moz” prefix (mozRTCPeerConnection, "
 "mozRTCSessionDescription, mozRTCIceCandidate) have been deprecated."
 msgstr ""
 "WebRTC-grensesnitt med \"moz\"-prefikset (mozRTCPeerConnection, "
@@ -876,10 +895,18 @@ msgid ""
 msgstr ""
 "navigator.mozGetUserMedia er erstattet av navigator.mediaDevices.getUserMedia"
 
+#. # LOCALIZATION NOTE: Do not translate "RTCPeerConnection", "getLocalStreams", "getRemoteStreams", "getSenders" or "getReceivers".
+#: RTCPeerConnectionGetStreamsWarning
+msgid ""
+"RTCPeerConnection.getLocalStreams/getRemoteStreams are deprecated. Use "
+"RTCPeerConnection.getSenders/getReceivers instead."
+msgstr ""
+
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %S is a URL.
 #: InterceptionFailedWithURL
+#, fuzzy
 msgid ""
-"Failed to load '%S'. A ServiceWorker intercepted the request and encountered "
+"Failed to load ‘%S’. A ServiceWorker intercepted the request and encountered "
 "an unexpected error."
 msgstr ""
 "Klarte ikke laste '%S'. En ServiceWorker mottok forespørselen, og fikk en "
@@ -887,10 +914,11 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "FetchEvent.respondWith()", "FetchEvent", "no-cors", "opaque", "Response", or "RequestMode". %1$S is a URL. %2$S is a RequestMode value.
 #: BadOpaqueInterceptionRequestModeWithURL
+#, fuzzy
 msgid ""
-"Failed to load '%1$S'. A ServiceWorker passed an opaque Response to "
-"FetchEvent.respondWith() while handling a '%2$S' FetchEvent. Opaque Response "
-"objects are only valid when the RequestMode is 'no-cors'."
+"Failed to load ‘%1$S’. A ServiceWorker passed an opaque Response to "
+"FetchEvent.respondWith() while handling a ‘%2$S’ FetchEvent. Opaque Response "
+"objects are only valid when the RequestMode is ‘no-cors’."
 msgstr ""
 "Klarte ikke laste '%1$S'. EnServiceWorker sendte en gjennomsiktig Response "
 "til FetchEvent.respondWith() ved behandling av '%2$S' FetchEvent. "
@@ -899,8 +927,9 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "Error", "Response", "FetchEvent.respondWith()", or "fetch()". %S is a URL.
 #: InterceptedErrorResponseWithURL
+#, fuzzy
 msgid ""
-"Failed to load '%S'. A ServiceWorker passed an Error Response to FetchEvent."
+"Failed to load ‘%S’. A ServiceWorker passed an Error Response to FetchEvent."
 "respondWith(). This typically means the ServiceWorker performed an invalid "
 "fetch() call."
 msgstr ""
@@ -910,8 +939,9 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "Response", "FetchEvent.respondWith()", or "Response.clone()". %S is a URL.
 #: InterceptedUsedResponseWithURL
+#, fuzzy
 msgid ""
-"Failed to load '%S'. A ServiceWorker passed a used Response to FetchEvent."
+"Failed to load ‘%S’. A ServiceWorker passed a used Response to FetchEvent."
 "respondWith(). The body of a Response may only be read once. Use Response."
 "clone() to access the body multiple times."
 msgstr ""
@@ -921,18 +951,27 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "opaqueredirect", "Response", "FetchEvent.respondWith()", or "FetchEvent". %s is a URL.
 #: BadOpaqueRedirectInterceptionWithURL
+#, fuzzy
 msgid ""
-"Failed to load '%S'. A ServiceWorker passed an opaqueredirect Response to "
+"Failed to load ‘%S’. A ServiceWorker passed an opaqueredirect Response to "
 "FetchEvent.respondWith() while handling a non-navigation FetchEvent."
 msgstr ""
 "Klarte ikke laste '%S'. En ServiceWorker sendte en opaqueredirect Response "
 "til FetchEvent.respondWith() mens en ikke-navigasjons-FetchEvent ble "
 "behandlet."
 
+#. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "Response", "FetchEvent.respondWith()", "RedirectMode" or "follow". %S is a URL.
+#: BadRedirectModeInterceptionWithURL
+msgid ""
+"Failed to load ‘%S’. A ServiceWorker passed a redirected Response to "
+"FetchEvent.respondWith() while RedirectMode is not ‘follow’."
+msgstr ""
+
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker" or "FetchEvent.preventDefault()". %S is a URL.
 #: InterceptionCanceledWithURL
+#, fuzzy
 msgid ""
-"Failed to load '%S'. A ServiceWorker canceled the load by calling FetchEvent."
+"Failed to load ‘%S’. A ServiceWorker canceled the load by calling FetchEvent."
 "preventDefault()."
 msgstr ""
 "Klarte ikke laste '%S'. En ServiceWorker avbrøt innlastingen ved å kalle "
@@ -940,27 +979,30 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "promise", or "FetchEvent.respondWith()". %1$S is a URL. %2$S is an error string.
 #: InterceptionRejectedResponseWithURL
+#, fuzzy
 msgid ""
-"Failed to load '%1$S'. A ServiceWorker passed a promise to FetchEvent."
-"respondWith() that rejected with '%2$S'."
+"Failed to load ‘%1$S’. A ServiceWorker passed a promise to FetchEvent."
+"respondWith() that rejected with ‘%2$S’."
 msgstr ""
 "Klarte ikke laste '%1$S'. En ServiceWorker sendte en promise til FetchEvent."
 "respondWith() som ble avvist med '%2$S'."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "promise", "FetchEvent.respondWith()", or "Response". %1$S is a URL. %2$S is an error string.
 #: InterceptedNonResponseWithURL
+#, fuzzy
 msgid ""
-"Failed to load '%1$S'. A ServiceWorker passed a promise to FetchEvent."
-"respondWith() that resolved with non-Response value '%2$S'."
+"Failed to load ‘%1$S’. A ServiceWorker passed a promise to FetchEvent."
+"respondWith() that resolved with non-Response value ‘%2$S’."
 msgstr ""
 "Klarte ikke laste '%1$S'. En ServiceWorker sendte en promise til FetchEvent."
 "respondWith() som resulterte i en ikke-Response-verdi '%2$S'."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker", "Service-Worker-Allowed" or "HTTP". %1$S and %2$S are URLs.
 #: ServiceWorkerScopePathMismatch
+#, fuzzy
 msgid ""
-"Failed to register a ServiceWorker: The path of the provided scope '%1$S' is "
-"not under the max scope allowed '%2$S'. Adjust the scope, move the Service "
+"Failed to register a ServiceWorker: The path of the provided scope ‘%1$S’ is "
+"not under the max scope allowed ‘%2$S’. Adjust the scope, move the Service "
 "Worker script, or use the Service-Worker-Allowed HTTP header to allow the "
 "scope."
 msgstr ""
@@ -970,8 +1012,9 @@ msgstr ""
 "hodet for å tillate området."
 
 #: ExecCommandCutCopyDeniedNotInputDriven
+#, fuzzy
 msgid ""
-"document.execCommand('cut'/'copy') was denied because it was not called from "
+"document.execCommand(‘cut’/‘copy’) was denied because it was not called from "
 "inside a short running user-generated event handler."
 msgstr ""
 "document.execCommand('cut'/'copy') ble avvist fordi den ikke ble kalt opp "
@@ -1003,7 +1046,8 @@ msgstr "Start-URL må være av samme opprinnelse som dokumentet."
 
 #. # LOCALIZATION NOTE: %1$S is the name of the object whose property is invalid. %2$S is the name of the invalid property. %3$S is the expected type of the property value. E.g. "Expected the manifest's start_url member to be a string."
 #: ManifestInvalidType
-msgid "Expected the %1$S's %2$S member to be a %3$S."
+#, fuzzy
+msgid "Expected the %1$S’s %2$S member to be a %3$S."
 msgstr "Forventet at %1$S sin %2$S-medlem å være en %3$S."
 
 #. # LOCALIZATION NOTE: %1$S is the name of the property whose value is invalid. %2$S is the (invalid) value of the property. E.g. "theme_color: 42 is not a valid CSS color."
@@ -1021,9 +1065,10 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "postMessage" or DOMWindow. %S values are origins, like https://domain.com:port
 #: TargetPrincipalDoesNotMatch
+#, fuzzy
 msgid ""
-"Failed to execute 'postMessage' on 'DOMWindow': The target origin provided "
-"('%S') does not match the recipient window's origin ('%S')."
+"Failed to execute ‘postMessage’ on ‘DOMWindow’: The target origin provided "
+"(‘%S’) does not match the recipient window’s origin (‘%S’)."
 msgstr ""
 "Klarte ikke utføre 'postMessage' på 'DOMWindow': Mål-opprinnelsen som er "
 "oppgitt ('%S') stemmer ikke med mottakervinduets opprinnelse ('%S')."
@@ -1050,11 +1095,37 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %1$S is the ServiceWorker scope URL. %2$S is an error string.
 #: PushMessageDecryptionFailure
+#, fuzzy
 msgid ""
-"The ServiceWorker for scope '%1$S' encountered an error decrypting a push "
-"message: '%2$S'. For help with encryption, please see https://developer."
+"The ServiceWorker for scope ‘%1$S’ encountered an error decrypting a push "
+"message: ‘%2$S’. For help with encryption, please see https://developer."
 "mozilla.org/en-US/docs/Web/API/Push_API/Using_the_Push_API#Encryption"
 msgstr ""
 "ServiceWorker-en for området '%1$S' støtte på en feil med dekryptering av en "
 "push-melding: '%2$S'. For å få hjelp med kryptering, se https://developer."
 "mozilla.org/en-US/docs/Web/API/Push_API/Using_the_Push_API#Encryption"
+
+#. # LOCALIZATION NOTE: %1$S is the type of a DOM event. 'passive' is a literal parameter from the DOM spec.
+#: PreventDefaultFromPassiveListenerWarning
+msgid ""
+"Ignoring ‘preventDefault()’ call on event of type ‘%1$S’ from a listener "
+"registered as ‘passive’."
+msgstr ""
+
+#: NavigatorBatteryWarning
+msgid "navigator.battery is deprecated. Use navigator.getBattery() instead."
+msgstr ""
+
+#: FileLastModifiedDateWarning
+msgid "File.lastModifiedDate is deprecated. Use File.lastModified instead."
+msgstr ""
+
+#~ msgid "Use of attributes' ownerElement attribute is deprecated."
+#~ msgstr "Bruk av attributters ownerElement-attributt er frarådet."
+
+#~ msgid ""
+#~ "Use of XMLHttpRequest's withCredentials attribute is no longer supported "
+#~ "in the synchronous mode in window context."
+#~ msgstr ""
+#~ "Bruk av XMLHttpRequest sin withCredentials-attributt er ikke lenger "
+#~ "støttet i synkron modus i vinduskonteksten."

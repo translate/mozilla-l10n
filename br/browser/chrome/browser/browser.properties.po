@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 17:21+0000\n"
+"POT-Creation-Date: 2016-06-08 12:15+0000\n"
 "PO-Revision-Date: 2016-05-06 21:42+0000\n"
 "Last-Translator: Gwenn M <tornoz@laposte.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1462570959.000000\n"
 
@@ -1038,7 +1038,7 @@ msgid "This site will hide the pointer."
 msgstr "Kuzhet e vo biz al logodenn gant al lec'hienn-mañ"
 
 #. # Phishing/Malware Notification Bar.
-#. # LOCALIZATION NOTE (notAForgery, notAnAttack)
+#. # LOCALIZATION NOTE (notADeceptiveSite, notAnAttack)
 #. # The two button strings will never be shown at the same time, so
 #. # it's okay for them to have the same access key
 #: safebrowsing.getMeOutOfHereButton.label
@@ -1286,10 +1286,6 @@ msgstr "&Skramm da rannañ :"
 msgid "&Application to share:"
 msgstr "&Arload da rannañ :"
 
-#: getUserMedia.noVideo.label
-msgid "No Video"
-msgstr "Video ebet"
-
 #: getUserMedia.noApplication.label
 msgid "No Application"
 msgstr "Arload ebet"
@@ -1301,10 +1297,6 @@ msgstr "Skramm ebet"
 #: getUserMedia.noWindow.label
 msgid "No Window"
 msgstr "Prenestr ebet"
-
-#: getUserMedia.noAudio.label
-msgid "No Audio"
-msgstr "Klevet ebet"
 
 #: getUserMedia.shareEntireScreen.label
 msgid "Entire screen"
@@ -1715,45 +1707,13 @@ msgstr "Firefox evit Android"
 msgid "Firefox for iOS"
 msgstr "Firefox evit iOS"
 
-#. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
-#. #                    e10s.offerPopup.highlight1
-#. #                    e10s.offerPopup.highlight2
-#. #                    e10s.offerPopup.enableAndRestart.label
-#. #                    e10s.offerPopup.enableAndRestart.accesskey
-#. #                    e10s.offerPopup.noThanks.label
-#. #                    e10s.offerPopup.noThanks.accesskey
-#. #                    e10s.accessibilityNotice.mainMessage
-#. #                    e10s.accessibilityNotice.enableAndRestart.label
-#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey
+#. # LOCALIZATION NOTE (e10s.accessibilityNotice.mainMessage,
+#. #                    e10s.accessibilityNotice.enableAndRestart.label,
+#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey):
 #. # These strings are related to the messages we display to offer e10s (Multi-process) to users
 #. # on the pre-release channels. They won't be used in release but they will likely be used in
 #. # beta starting from version 41, so it's still useful to have these strings properly localized.
 #. # %S is brandShortName
-#: e10s.offerPopup.mainMessage
-msgid ""
-"Multi-process is coming soon to %S. You can start using it now to get early "
-"access to some of the benefits:"
-msgstr ""
-"Al lies-araezad a vo o tont e %S a-benn nebeut. Tu zo deoc'h kregiñ da "
-"arverañ anezhañ adalek bremañ evit kaout un tañva eus e madoù."
-
-#: e10s.offerPopup.highlight1
-msgid "Improved responsiveness"
-msgstr "Ersavusted gwellaet"
-
-#: e10s.offerPopup.highlight2
-msgid "Fewer crashes"
-msgstr "Nebeutoc'h a sac'hadennoù"
-
-#: e10s.offerPopup.enableAndRestart.label
-#: e10s.offerPopup.enableAndRestart.accesskey
-msgid "&Enable and Restart"
-msgstr "&Gweredekaat hag adloc'hañ"
-
-#: e10s.offerPopup.noThanks.label e10s.offerPopup.noThanks.accesskey
-msgid "&No, thanks"
-msgstr "&Ket, trugarez"
-
 #: e10s.accessibilityNotice.mainMessage2
 msgid ""
 "Accessibility support is partially disabled due to compatibility issues with "
@@ -1772,10 +1732,10 @@ msgstr "&Mat eo"
 msgid "&Enable (Requires Restart)"
 msgstr "&Gweredekaat (Ret eo adloc'hañ)"
 
-#. # LOCALIZATION NOTE (usercontext.personal.label,
-#. #                    usercontext.work.label,
-#. #                    usercontext.shopping.label,
-#. #                    usercontext.banking.label):
+#. # LOCALIZATION NOTE (userContextPersonal.label,
+#. #                    userContextWork.label,
+#. #                    userContextShopping.label,
+#. #                    userContextBanking.label):
 #. # These strings specify the four predefined contexts included in support of the
 #. # Contextual Identity / Containers project. Each context is meant to represent
 #. # the context that the user is in when interacting with the site. Different
@@ -1785,21 +1745,25 @@ msgstr "&Gweredekaat (Ret eo adloc'hañ)"
 #. # Once enabled, you can open a new tab in a specific context by clicking
 #. # File > New Container Tab > (1 of 4 contexts). Once opened, you will see these
 #. # strings on the right-hand side of the URL bar.
-#: usercontext.personal.label
-msgid "Personal"
+#: userContextPersonal.label userContextPersonal.accesskey
+#, fuzzy
+msgid "&Personal"
 msgstr "Personel"
 
-#: usercontext.work.label
-msgid "Work"
+#: userContextWork.label userContextWork.accesskey
+#, fuzzy
+msgid "&Work"
 msgstr "Labour"
 
-#: usercontext.shopping.label
-msgid "Shopping"
-msgstr "Prenadennoù"
-
-#: usercontext.banking.label
-msgid "Banking"
+#: userContextBanking.label userContextBanking.accesskey
+#, fuzzy
+msgid "&Banking"
 msgstr "Bank"
+
+#: userContextShopping.label userContextShopping.accesskey
+#, fuzzy
+msgid "&Shopping"
+msgstr "Prenadennoù"
 
 #: muteTab.label muteTab.accesskey
 msgid "&Mute Tab"
@@ -1846,6 +1810,26 @@ msgstr "Strollad %S"
 #: tabgroups.migration.tabGroupBookmarkFolderName
 msgid "Bookmarked Tab Groups"
 msgstr "Strolladoù ivinelloù lakaet er sinedoù"
+
+#. # LOCALIZATION NOTE (pendingCrashReports.label): Semi-colon list of plural forms
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is the number of pending crash reports
+#: pendingCrashReports.label
+msgid ""
+"You have an unsubmitted crash report;You have #1 unsubmitted crash reports"
+msgstr ""
+
+#: pendingCrashReports.viewAll
+msgid "View"
+msgstr ""
+
+#: pendingCrashReports.submitAll
+msgid "Submit"
+msgstr ""
+
+#: pendingCrashReports.ignoreAll
+msgid "Ignore"
+msgstr ""
 
 #: decoder.noCodecs.button
 msgid "Learn how"
@@ -1898,6 +1882,31 @@ msgid ""
 msgstr ""
 "Evit gwellaat perzhded ar video e c'hallit kaout ezhomm da staliañ "
 "Microsoft’s Platform Update Supplement evit Windows Vista."
+
+#~ msgid "No Video"
+#~ msgstr "Video ebet"
+
+#~ msgid "No Audio"
+#~ msgstr "Klevet ebet"
+
+#~ msgid ""
+#~ "Multi-process is coming soon to %S. You can start using it now to get "
+#~ "early access to some of the benefits:"
+#~ msgstr ""
+#~ "Al lies-araezad a vo o tont e %S a-benn nebeut. Tu zo deoc'h kregiñ da "
+#~ "arverañ anezhañ adalek bremañ evit kaout un tañva eus e madoù."
+
+#~ msgid "Improved responsiveness"
+#~ msgstr "Ersavusted gwellaet"
+
+#~ msgid "Fewer crashes"
+#~ msgstr "Nebeutoc'h a sac'hadennoù"
+
+#~ msgid "&Enable and Restart"
+#~ msgstr "&Gweredekaat hag adloc'hañ"
+
+#~ msgid "&No, thanks"
+#~ msgstr "&Ket, trugarez"
 
 #~ msgid "You can access your passwords on all your devices with %S. "
 #~ msgstr ""

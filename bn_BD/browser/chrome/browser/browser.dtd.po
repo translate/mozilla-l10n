@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 17:21+0000\n"
+"POT-Creation-Date: 2016-06-08 12:15+0000\n"
 "PO-Revision-Date: 2016-03-24 21:15+0000\n"
 "Last-Translator: Mahay Alam Khan <mahayalamkhan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -232,14 +232,6 @@ msgstr "&syncBrand.shortName.label; এ পুনরায় সংযুক্ত
 msgid "Verify Your Account"
 msgstr "আপনার অ্যাকাউন্ট যাচাই করুন"
 
-#: syncStartPanel2.heading
-msgid "&syncBrand.shortName.label; enabled"
-msgstr "&syncBrand.shortName.label; সক্রিয়"
-
-#: syncStartPanel2.subTitle
-msgid "&brandShortName; will begin syncing momentarily."
-msgstr "&brandShortName; কিছুক্ষনের মধ্যে সিঙ্ক করা শুরু করবে।"
-
 #: fullScreenMinimize.tooltip
 msgid "Minimize"
 msgstr "ন্যূনতম বিস্তার"
@@ -386,6 +378,14 @@ msgstr ""
 #: bookmarksToolbarChevron.tooltip
 msgid "Show more bookmarks"
 msgstr "আরও বুকমার্ক প্রদর্শন"
+
+#: showRecentlyBookmarked.label showRecentlyBookmarked.accesskey
+msgid "S&how Recently Bookmarked"
+msgstr ""
+
+#: hideRecentlyBookmarked.label hideRecentlyBookmarked.accesskey
+msgid "&Hide Recently Bookmarked"
+msgstr ""
 
 #: backCmd.label
 msgid "Back"
@@ -566,6 +566,10 @@ msgstr "বুকমার্ক সাইডবার প্রদর্শন"
 msgid "View Bookmarks Toolbar"
 msgstr "বুকমার্ক টুলবার প্রদর্শন"
 
+#: containersMenu.label
+msgid "Containers"
+msgstr ""
+
 #. LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
 #. -  key should not contain the letters A-F, since these are reserved
 #. -  shortcut keys on Linux.
@@ -639,22 +643,6 @@ msgstr "ফাইল (&F)"
 #: newUserContext.label newUserContext.accesskey
 msgid "New &Container Tab"
 msgstr "নতুন কন্টেইনার ট্যাব &C"
-
-#: userContextPersonal.label userContextPersonal.accesskey
-msgid "&Personal"
-msgstr "ব্যক্তিগত &P"
-
-#: userContextWork.label userContextWork.accesskey
-msgid "&Work"
-msgstr "কাজ &W"
-
-#: userContextBanking.label userContextBanking.accesskey
-msgid "&Banking"
-msgstr "ব্যাংকিং &B"
-
-#: userContextShopping.label userContextShopping.accesskey
-msgid "&Shopping"
-msgstr "কেনাকাটা &S"
 
 #: newNavigatorCmd.label newNavigatorCmd.accesskey
 msgid "&New Window"
@@ -1289,28 +1277,37 @@ msgstr "শব্দ বন্ধ (&M)"
 msgid "Un&mute"
 msgstr "শব্দ চালু (&m)"
 
-#: mediaPlaybackRate.label mediaPlaybackRate.accesskey
-msgid "P&lay Speed"
+#: mediaPlaybackRate2.label mediaPlaybackRate2.accesskey
+#, fuzzy
+msgid "Play Spee&d"
 msgstr "চলার গতি &l"
 
-#: mediaPlaybackRate050x.label mediaPlaybackRate050x.accesskey
-msgid "&Slow Motion (0.5×)"
-msgstr "বিলম্বিত গতি (0.5×) &S"
+#: mediaPlaybackRate050x2.label mediaPlaybackRate050x2.accesskey
+msgid "&Slow (0.5×)"
+msgstr ""
 
-#: mediaPlaybackRate100x.label mediaPlaybackRate100x.accesskey
-msgid "&Normal Speed"
-msgstr "সাধারণ গতি &N"
+#: mediaPlaybackRate100x2.label mediaPlaybackRate100x2.accesskey
+msgid "&Normal"
+msgstr ""
 
-#: mediaPlaybackRate150x.label mediaPlaybackRate150x.accesskey
-msgid "&High Speed (1.5×)"
-msgstr "দ্রুত গতি (1.5x) &H"
+#: mediaPlaybackRate125x2.label mediaPlaybackRate125x2.accesskey
+msgid "&Fast (1.25×)"
+msgstr ""
 
-#. LOCALIZATION NOTE: "Ludicrous Speed" is a reference to the
+#: mediaPlaybackRate150x2.label mediaPlaybackRate150x2.accesskey
+msgid "F&aster (1.5×)"
+msgstr ""
+
+#. LOCALIZATION NOTE: "Ludicrous" is a reference to the
 #. movie "Space Balls" and is meant to say that this speed is very
 #. fast.
-#: mediaPlaybackRate200x.label mediaPlaybackRate200x.accesskey
-msgid "&Ludicrous Speed (2×)"
-msgstr "দ্রুত গতি (2x) &L"
+#: mediaPlaybackRate200x2.label mediaPlaybackRate200x2.accesskey
+msgid "&Ludicrous (2×)"
+msgstr ""
+
+#: mediaLoop.label mediaLoop.accesskey
+msgid "&Loop"
+msgstr ""
 
 #. LOCALIZATION NOTE: The access keys for "Show Controls" and
 #. "Hide Controls" are the same because the two context-menu
@@ -1547,8 +1544,9 @@ msgstr "সংযোগ নিরাপদ নয়"
 msgid "This page is stored on your computer."
 msgstr "এই পাতা আপনার কম্পিউটারে জমা হয়েছে।"
 
-#: identity.connectionVerified1
-msgid "You are securely connected to this site, run by:"
+#: identity.connectionVerified2
+#, fuzzy
+msgid "You are securely connected to this site, owned by:"
 msgstr "এটি চালনা করে, আপনি নিরাপদভাবে এই সাইটের সাথে সংযুক্ত:"
 
 #: identity.connectionInternal
@@ -2128,6 +2126,36 @@ msgstr "ধন্যবাদ!"
 #: emeLearnMoreContextMenu.label emeLearnMoreContextMenu.accesskey
 msgid "Learn more about &DRM…"
 msgstr "&DRM সম্পর্কে আরও জানুন…"
+
+#~ msgid "&syncBrand.shortName.label; enabled"
+#~ msgstr "&syncBrand.shortName.label; সক্রিয়"
+
+#~ msgid "&brandShortName; will begin syncing momentarily."
+#~ msgstr "&brandShortName; কিছুক্ষনের মধ্যে সিঙ্ক করা শুরু করবে।"
+
+#~ msgid "&Personal"
+#~ msgstr "ব্যক্তিগত &P"
+
+#~ msgid "&Work"
+#~ msgstr "কাজ &W"
+
+#~ msgid "&Banking"
+#~ msgstr "ব্যাংকিং &B"
+
+#~ msgid "&Shopping"
+#~ msgstr "কেনাকাটা &S"
+
+#~ msgid "&Slow Motion (0.5×)"
+#~ msgstr "বিলম্বিত গতি (0.5×) &S"
+
+#~ msgid "&Normal Speed"
+#~ msgstr "সাধারণ গতি &N"
+
+#~ msgid "&High Speed (1.5×)"
+#~ msgstr "দ্রুত গতি (1.5x) &H"
+
+#~ msgid "&Ludicrous Speed (2×)"
+#~ msgstr "দ্রুত গতি (2x) &L"
 
 #~ msgctxt "unsortedBookmarksCmd.label"
 #~ msgid "Unsorted Bookmarks"

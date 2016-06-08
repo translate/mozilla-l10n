@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 17:21+0000\n"
+"POT-Creation-Date: 2016-06-08 12:15+0000\n"
 "PO-Revision-Date: 2016-05-26 23:27+0000\n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1464305232.000000\n"
 
@@ -1023,7 +1023,7 @@ msgid "This site will hide the pointer."
 msgstr "Este site irá ocultar o ponteiro do rato."
 
 #. # Phishing/Malware Notification Bar.
-#. # LOCALIZATION NOTE (notAForgery, notAnAttack)
+#. # LOCALIZATION NOTE (notADeceptiveSite, notAnAttack)
 #. # The two button strings will never be shown at the same time, so
 #. # it's okay for them to have the same access key
 #: safebrowsing.getMeOutOfHereButton.label
@@ -1271,10 +1271,6 @@ msgstr "&Ecrã a partilhar:"
 msgid "&Application to share:"
 msgstr "&Aplicação a partilhar:"
 
-#: getUserMedia.noVideo.label
-msgid "No Video"
-msgstr "Sem vídeo"
-
 #: getUserMedia.noApplication.label
 msgid "No Application"
 msgstr "Sem aplicações"
@@ -1286,10 +1282,6 @@ msgstr "Sem ecrã"
 #: getUserMedia.noWindow.label
 msgid "No Window"
 msgstr "Sem janela"
-
-#: getUserMedia.noAudio.label
-msgid "No Audio"
-msgstr "Sem áudio"
 
 #: getUserMedia.shareEntireScreen.label
 msgid "Entire screen"
@@ -1696,45 +1688,13 @@ msgstr "Firefox para Android"
 msgid "Firefox for iOS"
 msgstr "Firefox para iOS"
 
-#. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
-#. #                    e10s.offerPopup.highlight1
-#. #                    e10s.offerPopup.highlight2
-#. #                    e10s.offerPopup.enableAndRestart.label
-#. #                    e10s.offerPopup.enableAndRestart.accesskey
-#. #                    e10s.offerPopup.noThanks.label
-#. #                    e10s.offerPopup.noThanks.accesskey
-#. #                    e10s.accessibilityNotice.mainMessage
-#. #                    e10s.accessibilityNotice.enableAndRestart.label
-#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey
+#. # LOCALIZATION NOTE (e10s.accessibilityNotice.mainMessage,
+#. #                    e10s.accessibilityNotice.enableAndRestart.label,
+#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey):
 #. # These strings are related to the messages we display to offer e10s (Multi-process) to users
 #. # on the pre-release channels. They won't be used in release but they will likely be used in
 #. # beta starting from version 41, so it's still useful to have these strings properly localized.
 #. # %S is brandShortName
-#: e10s.offerPopup.mainMessage
-msgid ""
-"Multi-process is coming soon to %S. You can start using it now to get early "
-"access to some of the benefits:"
-msgstr ""
-"O multi-processo chegará em breve ao %S. Pode começar já a utilizá-lo para "
-"obter acesso antecipado a alguns benefícios:"
-
-#: e10s.offerPopup.highlight1
-msgid "Improved responsiveness"
-msgstr "Capacidade de resposta melhorada"
-
-#: e10s.offerPopup.highlight2
-msgid "Fewer crashes"
-msgstr "Menos falhas"
-
-#: e10s.offerPopup.enableAndRestart.label
-#: e10s.offerPopup.enableAndRestart.accesskey
-msgid "&Enable and Restart"
-msgstr "Ativar &e reiniciar"
-
-#: e10s.offerPopup.noThanks.label e10s.offerPopup.noThanks.accesskey
-msgid "&No, thanks"
-msgstr "&Não obrigado"
-
 #: e10s.accessibilityNotice.mainMessage2
 msgid ""
 "Accessibility support is partially disabled due to compatibility issues with "
@@ -1753,10 +1713,10 @@ msgstr "&OK"
 msgid "&Enable (Requires Restart)"
 msgstr "Ativar (tem qu&e reiniciar)"
 
-#. # LOCALIZATION NOTE (usercontext.personal.label,
-#. #                    usercontext.work.label,
-#. #                    usercontext.shopping.label,
-#. #                    usercontext.banking.label):
+#. # LOCALIZATION NOTE (userContextPersonal.label,
+#. #                    userContextWork.label,
+#. #                    userContextShopping.label,
+#. #                    userContextBanking.label):
 #. # These strings specify the four predefined contexts included in support of the
 #. # Contextual Identity / Containers project. Each context is meant to represent
 #. # the context that the user is in when interacting with the site. Different
@@ -1766,21 +1726,25 @@ msgstr "Ativar (tem qu&e reiniciar)"
 #. # Once enabled, you can open a new tab in a specific context by clicking
 #. # File > New Container Tab > (1 of 4 contexts). Once opened, you will see these
 #. # strings on the right-hand side of the URL bar.
-#: usercontext.personal.label
-msgid "Personal"
+#: userContextPersonal.label userContextPersonal.accesskey
+#, fuzzy
+msgid "&Personal"
 msgstr "Pessoal"
 
-#: usercontext.work.label
-msgid "Work"
+#: userContextWork.label userContextWork.accesskey
+#, fuzzy
+msgid "&Work"
 msgstr "Profissional"
 
-#: usercontext.shopping.label
-msgid "Shopping"
-msgstr "Compras"
-
-#: usercontext.banking.label
-msgid "Banking"
+#: userContextBanking.label userContextBanking.accesskey
+#, fuzzy
+msgid "&Banking"
 msgstr "Bancos"
+
+#: userContextShopping.label userContextShopping.accesskey
+#, fuzzy
+msgid "&Shopping"
+msgstr "Compras"
 
 #: muteTab.label muteTab.accesskey
 msgid "&Mute Tab"
@@ -1827,6 +1791,26 @@ msgstr "Grupo %S"
 #: tabgroups.migration.tabGroupBookmarkFolderName
 msgid "Bookmarked Tab Groups"
 msgstr "Grupos de separadores marcados"
+
+#. # LOCALIZATION NOTE (pendingCrashReports.label): Semi-colon list of plural forms
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is the number of pending crash reports
+#: pendingCrashReports.label
+msgid ""
+"You have an unsubmitted crash report;You have #1 unsubmitted crash reports"
+msgstr ""
+
+#: pendingCrashReports.viewAll
+msgid "View"
+msgstr ""
+
+#: pendingCrashReports.submitAll
+msgid "Submit"
+msgstr ""
+
+#: pendingCrashReports.ignoreAll
+msgid "Ignore"
+msgstr ""
 
 #: decoder.noCodecs.button
 msgid "Learn how"
@@ -1878,6 +1862,31 @@ msgid ""
 msgstr ""
 "Para melhorar a qualidade de vídeo, poderá ter de instalar o Platform Update "
 "Supplement for Windows Vista da Microsoft."
+
+#~ msgid "No Video"
+#~ msgstr "Sem vídeo"
+
+#~ msgid "No Audio"
+#~ msgstr "Sem áudio"
+
+#~ msgid ""
+#~ "Multi-process is coming soon to %S. You can start using it now to get "
+#~ "early access to some of the benefits:"
+#~ msgstr ""
+#~ "O multi-processo chegará em breve ao %S. Pode começar já a utilizá-lo "
+#~ "para obter acesso antecipado a alguns benefícios:"
+
+#~ msgid "Improved responsiveness"
+#~ msgstr "Capacidade de resposta melhorada"
+
+#~ msgid "Fewer crashes"
+#~ msgstr "Menos falhas"
+
+#~ msgid "&Enable and Restart"
+#~ msgstr "Ativar &e reiniciar"
+
+#~ msgid "&No, thanks"
+#~ msgstr "&Não obrigado"
 
 #~ msgid "You can access your passwords on all your devices with %S. "
 #~ msgstr ""

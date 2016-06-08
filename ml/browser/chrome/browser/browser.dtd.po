@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 17:21+0000\n"
+"POT-Creation-Date: 2016-06-08 12:15+0000\n"
 "PO-Revision-Date: 2015-11-23 10:22+0000\n"
 "Last-Translator: Hrishi <hrishi.kb@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -233,14 +233,6 @@ msgstr "&syncBrand.shortName.label;-ലേക്ക് വീണ്ടും ക
 msgid "Verify Your Account"
 msgstr "താങ്കളുടെ അക്കൗണ്ട് ഉറപ്പു് വരുത്തൂ"
 
-#: syncStartPanel2.heading
-msgid "&syncBrand.shortName.label; enabled"
-msgstr "&syncBrand.shortName.label; പ്രവര്‍ത്തന സജ്ജം"
-
-#: syncStartPanel2.subTitle
-msgid "&brandShortName; will begin syncing momentarily."
-msgstr "&brandShortName; അനുനിമിഷം സിന്‍ക് ചെയ്യുന്നു."
-
 #: fullScreenMinimize.tooltip
 msgid "Minimize"
 msgstr "ചെറുതാക്കുക"
@@ -389,6 +381,14 @@ msgstr ""
 #: bookmarksToolbarChevron.tooltip
 msgid "Show more bookmarks"
 msgstr "കൂടുതല്‍ അടയാളക്കുറിപ്പുകള്‍ കാണിക്കുക"
+
+#: showRecentlyBookmarked.label showRecentlyBookmarked.accesskey
+msgid "S&how Recently Bookmarked"
+msgstr ""
+
+#: hideRecentlyBookmarked.label hideRecentlyBookmarked.accesskey
+msgid "&Hide Recently Bookmarked"
+msgstr ""
 
 #: backCmd.label
 msgid "Back"
@@ -570,6 +570,10 @@ msgstr "അടയാളക്കുറിപ്പുകള്‍ക്കുള
 msgid "View Bookmarks Toolbar"
 msgstr "അടയാളക്കുറിപ്പുകള്‍ക്കുള്ള ടൂള്‍ബാര്‍ കാണുക"
 
+#: containersMenu.label
+msgid "Containers"
+msgstr ""
+
 #. LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
 #. -  key should not contain the letters A-F, since these are reserved
 #. -  shortcut keys on Linux.
@@ -643,22 +647,6 @@ msgstr "ഫയല്‍"
 #: newUserContext.label newUserContext.accesskey
 msgid "New &Container Tab"
 msgstr "പുതിയ കണ്ടൈനര്‍ റ്റാബ്"
-
-#: userContextPersonal.label userContextPersonal.accesskey
-msgid "&Personal"
-msgstr "വ്യക്തിപരം"
-
-#: userContextWork.label userContextWork.accesskey
-msgid "&Work"
-msgstr "ജോലി"
-
-#: userContextBanking.label userContextBanking.accesskey
-msgid "&Banking"
-msgstr "ബാങ്കിങ്ങ്"
-
-#: userContextShopping.label userContextShopping.accesskey
-msgid "&Shopping"
-msgstr "വ്യാപാരം"
 
 #: newNavigatorCmd.label newNavigatorCmd.accesskey
 msgid "&New Window"
@@ -1293,28 +1281,37 @@ msgstr "നിശബ്ദമാക്കുക"
 msgid "Un&mute"
 msgstr "ശബ്ദം സജ്ജമാക്കുക"
 
-#: mediaPlaybackRate.label mediaPlaybackRate.accesskey
-msgid "P&lay Speed"
+#: mediaPlaybackRate2.label mediaPlaybackRate2.accesskey
+#, fuzzy
+msgid "Play Spee&d"
 msgstr "പ്രവര്‍ത്ത&ന വേഗത"
 
-#: mediaPlaybackRate050x.label mediaPlaybackRate050x.accesskey
-msgid "&Slow Motion (0.5×)"
-msgstr "&സ്ലോ മോഷന്‍ (0.5×)"
+#: mediaPlaybackRate050x2.label mediaPlaybackRate050x2.accesskey
+msgid "&Slow (0.5×)"
+msgstr ""
 
-#: mediaPlaybackRate100x.label mediaPlaybackRate100x.accesskey
-msgid "&Normal Speed"
-msgstr "&സാധാരണ വേഗത"
+#: mediaPlaybackRate100x2.label mediaPlaybackRate100x2.accesskey
+msgid "&Normal"
+msgstr ""
 
-#: mediaPlaybackRate150x.label mediaPlaybackRate150x.accesskey
-msgid "&High Speed (1.5×)"
-msgstr "&കൂടിയ വേഗത (1.5×)"
+#: mediaPlaybackRate125x2.label mediaPlaybackRate125x2.accesskey
+msgid "&Fast (1.25×)"
+msgstr ""
 
-#. LOCALIZATION NOTE: "Ludicrous Speed" is a reference to the
+#: mediaPlaybackRate150x2.label mediaPlaybackRate150x2.accesskey
+msgid "F&aster (1.5×)"
+msgstr ""
+
+#. LOCALIZATION NOTE: "Ludicrous" is a reference to the
 #. movie "Space Balls" and is meant to say that this speed is very
 #. fast.
-#: mediaPlaybackRate200x.label mediaPlaybackRate200x.accesskey
-msgid "&Ludicrous Speed (2×)"
-msgstr "&അതിവേഗത (2×)"
+#: mediaPlaybackRate200x2.label mediaPlaybackRate200x2.accesskey
+msgid "&Ludicrous (2×)"
+msgstr ""
+
+#: mediaLoop.label mediaLoop.accesskey
+msgid "&Loop"
+msgstr ""
 
 #. LOCALIZATION NOTE: The access keys for "Show Controls" and
 #. "Hide Controls" are the same because the two context-menu
@@ -1551,8 +1548,9 @@ msgstr "താങ്കളുടെ കണക്ഷന്‍ സുരക്ഷ�
 msgid "This page is stored on your computer."
 msgstr "ഈ താള്‍ താങ്കളുടെ കമ്പ്യൂട്ടറില്‍ ശേഖരിച്ചിട്ടുണ്ട്."
 
-#: identity.connectionVerified1
-msgid "You are securely connected to this site, run by:"
+#: identity.connectionVerified2
+#, fuzzy
+msgid "You are securely connected to this site, owned by:"
 msgstr "താങ്കള്‍ സുരക്ഷിതമായി ഈ വെബ്‌ സൈറ്റിലേക്ക് കണക്റ്റ് ചെയ്തിട്ടുണ്ട്, പ്രവര്‍ത്തിപ്പിക്കുന്നത്:"
 
 #: identity.connectionInternal
@@ -2132,6 +2130,36 @@ msgstr "നന്ദി!"
 #: emeLearnMoreContextMenu.label emeLearnMoreContextMenu.accesskey
 msgid "Learn more about &DRM…"
 msgstr "ഡിആര്‍എമിനെപ്പറ്റി കൂടുതല്‍ അറിയുക…"
+
+#~ msgid "&syncBrand.shortName.label; enabled"
+#~ msgstr "&syncBrand.shortName.label; പ്രവര്‍ത്തന സജ്ജം"
+
+#~ msgid "&brandShortName; will begin syncing momentarily."
+#~ msgstr "&brandShortName; അനുനിമിഷം സിന്‍ക് ചെയ്യുന്നു."
+
+#~ msgid "&Personal"
+#~ msgstr "വ്യക്തിപരം"
+
+#~ msgid "&Work"
+#~ msgstr "ജോലി"
+
+#~ msgid "&Banking"
+#~ msgstr "ബാങ്കിങ്ങ്"
+
+#~ msgid "&Shopping"
+#~ msgstr "വ്യാപാരം"
+
+#~ msgid "&Slow Motion (0.5×)"
+#~ msgstr "&സ്ലോ മോഷന്‍ (0.5×)"
+
+#~ msgid "&Normal Speed"
+#~ msgstr "&സാധാരണ വേഗത"
+
+#~ msgid "&High Speed (1.5×)"
+#~ msgstr "&കൂടിയ വേഗത (1.5×)"
+
+#~ msgid "&Ludicrous Speed (2×)"
+#~ msgstr "&അതിവേഗത (2×)"
 
 #~ msgctxt "unsortedBookmarksCmd.label"
 #~ msgid "Unsorted Bookmarks"

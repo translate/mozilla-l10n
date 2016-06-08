@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 17:21+0000\n"
+"POT-Creation-Date: 2016-06-08 12:15+0000\n"
 "PO-Revision-Date: 2016-05-02 16:49+0000\n"
 "Last-Translator: Hrant Ohanyan <hrant.mozilla@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1462207771.000000\n"
 
@@ -1017,7 +1017,7 @@ msgid "This site will hide the pointer."
 msgstr "Այս կայքը կթաքցնի նշիչը:"
 
 #. # Phishing/Malware Notification Bar.
-#. # LOCALIZATION NOTE (notAForgery, notAnAttack)
+#. # LOCALIZATION NOTE (notADeceptiveSite, notAnAttack)
 #. # The two button strings will never be shown at the same time, so
 #. # it's okay for them to have the same access key
 #: safebrowsing.getMeOutOfHereButton.label
@@ -1265,10 +1265,6 @@ msgstr "&Էկրանը, որը կտարածվի."
 msgid "&Application to share:"
 msgstr "&Հավելված, որը կտարածվի."
 
-#: getUserMedia.noVideo.label
-msgid "No Video"
-msgstr "Չկա տեսապատկեր"
-
 #: getUserMedia.noApplication.label
 msgid "No Application"
 msgstr "Չկա ծրագիր"
@@ -1280,10 +1276,6 @@ msgstr "Չկա էկրան"
 #: getUserMedia.noWindow.label
 msgid "No Window"
 msgstr "Նոր Պատուհան"
-
-#: getUserMedia.noAudio.label
-msgid "No Audio"
-msgstr "Չկա ձայն"
 
 #: getUserMedia.shareEntireScreen.label
 msgid "Entire screen"
@@ -1687,45 +1679,13 @@ msgstr "Firefox-ը Android-ի համար"
 msgid "Firefox for iOS"
 msgstr "Firefox-ը iOS-ի համար"
 
-#. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
-#. #                    e10s.offerPopup.highlight1
-#. #                    e10s.offerPopup.highlight2
-#. #                    e10s.offerPopup.enableAndRestart.label
-#. #                    e10s.offerPopup.enableAndRestart.accesskey
-#. #                    e10s.offerPopup.noThanks.label
-#. #                    e10s.offerPopup.noThanks.accesskey
-#. #                    e10s.accessibilityNotice.mainMessage
-#. #                    e10s.accessibilityNotice.enableAndRestart.label
-#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey
+#. # LOCALIZATION NOTE (e10s.accessibilityNotice.mainMessage,
+#. #                    e10s.accessibilityNotice.enableAndRestart.label,
+#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey):
 #. # These strings are related to the messages we display to offer e10s (Multi-process) to users
 #. # on the pre-release channels. They won't be used in release but they will likely be used in
 #. # beta starting from version 41, so it's still useful to have these strings properly localized.
 #. # %S is brandShortName
-#: e10s.offerPopup.mainMessage
-msgid ""
-"Multi-process is coming soon to %S. You can start using it now to get early "
-"access to some of the benefits:"
-msgstr ""
-"Բազմաընթացը հասանելի կլինի %S-ում: Կարող եք այն օգտագործել հիմա՝ մուտք "
-"ստանալով որոշ հնարավորությունների."
-
-#: e10s.offerPopup.highlight1
-msgid "Improved responsiveness"
-msgstr "Լավարկված արձագանքմամբ"
-
-#: e10s.offerPopup.highlight2
-msgid "Fewer crashes"
-msgstr "Հազվադեպ վթարում"
-
-#: e10s.offerPopup.enableAndRestart.label
-#: e10s.offerPopup.enableAndRestart.accesskey
-msgid "&Enable and Restart"
-msgstr "&Միացնել և վերամեկնարկել "
-
-#: e10s.offerPopup.noThanks.label e10s.offerPopup.noThanks.accesskey
-msgid "&No, thanks"
-msgstr "&Ոչ, շնորհակալ եմ"
-
 #: e10s.accessibilityNotice.mainMessage2
 msgid ""
 "Accessibility support is partially disabled due to compatibility issues with "
@@ -1744,10 +1704,10 @@ msgstr "&Լավ"
 msgid "&Enable (Requires Restart)"
 msgstr "&Միացնել (Պահանջում է վերամեկնարկել)"
 
-#. # LOCALIZATION NOTE (usercontext.personal.label,
-#. #                    usercontext.work.label,
-#. #                    usercontext.shopping.label,
-#. #                    usercontext.banking.label):
+#. # LOCALIZATION NOTE (userContextPersonal.label,
+#. #                    userContextWork.label,
+#. #                    userContextShopping.label,
+#. #                    userContextBanking.label):
 #. # These strings specify the four predefined contexts included in support of the
 #. # Contextual Identity / Containers project. Each context is meant to represent
 #. # the context that the user is in when interacting with the site. Different
@@ -1757,21 +1717,25 @@ msgstr "&Միացնել (Պահանջում է վերամեկնարկել)"
 #. # Once enabled, you can open a new tab in a specific context by clicking
 #. # File > New Container Tab > (1 of 4 contexts). Once opened, you will see these
 #. # strings on the right-hand side of the URL bar.
-#: usercontext.personal.label
-msgid "Personal"
+#: userContextPersonal.label userContextPersonal.accesskey
+#, fuzzy
+msgid "&Personal"
 msgstr "Անձնական"
 
-#: usercontext.work.label
-msgid "Work"
+#: userContextWork.label userContextWork.accesskey
+#, fuzzy
+msgid "&Work"
 msgstr "Աշխատանքային"
 
-#: usercontext.shopping.label
-msgid "Shopping"
-msgstr "Առևտուր"
-
-#: usercontext.banking.label
-msgid "Banking"
+#: userContextBanking.label userContextBanking.accesskey
+#, fuzzy
+msgid "&Banking"
 msgstr "Բանկային"
+
+#: userContextShopping.label userContextShopping.accesskey
+#, fuzzy
+msgid "&Shopping"
+msgstr "Առևտուր"
 
 #: muteTab.label muteTab.accesskey
 msgid "&Mute Tab"
@@ -1818,6 +1782,26 @@ msgstr "Խումբ %S"
 #: tabgroups.migration.tabGroupBookmarkFolderName
 msgid "Bookmarked Tab Groups"
 msgstr "Էջանշված ներդիրի խմբեր"
+
+#. # LOCALIZATION NOTE (pendingCrashReports.label): Semi-colon list of plural forms
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is the number of pending crash reports
+#: pendingCrashReports.label
+msgid ""
+"You have an unsubmitted crash report;You have #1 unsubmitted crash reports"
+msgstr ""
+
+#: pendingCrashReports.viewAll
+msgid "View"
+msgstr ""
+
+#: pendingCrashReports.submitAll
+msgid "Submit"
+msgstr ""
+
+#: pendingCrashReports.ignoreAll
+msgid "Ignore"
+msgstr ""
 
 #: decoder.noCodecs.button
 msgid "Learn how"
@@ -1868,6 +1852,31 @@ msgid ""
 msgstr ""
 "Տեսանյութի որակը բարելավելու համար պետք է տեղադրեք Microsoft-ի Platform "
 "Update Supplement-ը Windows Vista-ի համար:"
+
+#~ msgid "No Video"
+#~ msgstr "Չկա տեսապատկեր"
+
+#~ msgid "No Audio"
+#~ msgstr "Չկա ձայն"
+
+#~ msgid ""
+#~ "Multi-process is coming soon to %S. You can start using it now to get "
+#~ "early access to some of the benefits:"
+#~ msgstr ""
+#~ "Բազմաընթացը հասանելի կլինի %S-ում: Կարող եք այն օգտագործել հիմա՝ մուտք "
+#~ "ստանալով որոշ հնարավորությունների."
+
+#~ msgid "Improved responsiveness"
+#~ msgstr "Լավարկված արձագանքմամբ"
+
+#~ msgid "Fewer crashes"
+#~ msgstr "Հազվադեպ վթարում"
+
+#~ msgid "&Enable and Restart"
+#~ msgstr "&Միացնել և վերամեկնարկել "
+
+#~ msgid "&No, thanks"
+#~ msgstr "&Ոչ, շնորհակալ եմ"
 
 #~ msgid "You can access your passwords on all your devices with %S. "
 #~ msgstr "Կարող եք մուտք գործել Ձեր գաղտնաբառերին բոլոր սարքերից %S-ով։ "
