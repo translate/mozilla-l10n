@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 17:21+0000\n"
+"POT-Creation-Date: 2016-06-08 12:15+0000\n"
 "PO-Revision-Date: 2016-05-13 15:50+0000\n"
 "Last-Translator: Gabor Kelemen <kelemeng@ubuntu.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1463154601.000000\n"
 
@@ -1027,7 +1027,7 @@ msgid "This site will hide the pointer."
 msgstr "Ez az oldal el fogja rejteni a mutatót."
 
 #. # Phishing/Malware Notification Bar.
-#. # LOCALIZATION NOTE (notAForgery, notAnAttack)
+#. # LOCALIZATION NOTE (notADeceptiveSite, notAnAttack)
 #. # The two button strings will never be shown at the same time, so
 #. # it's okay for them to have the same access key
 #: safebrowsing.getMeOutOfHereButton.label
@@ -1272,10 +1272,6 @@ msgstr "Mego&sztandó képernyő:"
 msgid "&Application to share:"
 msgstr "Megosztan&dó alkalmazás:"
 
-#: getUserMedia.noVideo.label
-msgid "No Video"
-msgstr "Nincs videó"
-
 #: getUserMedia.noApplication.label
 msgid "No Application"
 msgstr "Nincs alkalmazás"
@@ -1287,10 +1283,6 @@ msgstr "Nincs képernyő"
 #: getUserMedia.noWindow.label
 msgid "No Window"
 msgstr "Nincs ablak"
-
-#: getUserMedia.noAudio.label
-msgid "No Audio"
-msgstr "Nincs hang"
 
 #: getUserMedia.shareEntireScreen.label
 msgid "Entire screen"
@@ -1698,45 +1690,13 @@ msgstr "Firefox for Android"
 msgid "Firefox for iOS"
 msgstr "Firefox for iOS"
 
-#. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
-#. #                    e10s.offerPopup.highlight1
-#. #                    e10s.offerPopup.highlight2
-#. #                    e10s.offerPopup.enableAndRestart.label
-#. #                    e10s.offerPopup.enableAndRestart.accesskey
-#. #                    e10s.offerPopup.noThanks.label
-#. #                    e10s.offerPopup.noThanks.accesskey
-#. #                    e10s.accessibilityNotice.mainMessage
-#. #                    e10s.accessibilityNotice.enableAndRestart.label
-#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey
+#. # LOCALIZATION NOTE (e10s.accessibilityNotice.mainMessage,
+#. #                    e10s.accessibilityNotice.enableAndRestart.label,
+#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey):
 #. # These strings are related to the messages we display to offer e10s (Multi-process) to users
 #. # on the pre-release channels. They won't be used in release but they will likely be used in
 #. # beta starting from version 41, so it's still useful to have these strings properly localized.
 #. # %S is brandShortName
-#: e10s.offerPopup.mainMessage
-msgid ""
-"Multi-process is coming soon to %S. You can start using it now to get early "
-"access to some of the benefits:"
-msgstr ""
-"A többszálúság hamarosan megérkezik a %Sba. A használatát már most "
-"megkezdheti, hogy korán hozzájusson néhány előnyéhez:"
-
-#: e10s.offerPopup.highlight1
-msgid "Improved responsiveness"
-msgstr "Jobb válaszkészség"
-
-#: e10s.offerPopup.highlight2
-msgid "Fewer crashes"
-msgstr "Kevesebb összeomlás"
-
-#: e10s.offerPopup.enableAndRestart.label
-#: e10s.offerPopup.enableAndRestart.accesskey
-msgid "&Enable and Restart"
-msgstr "&Engedélyezés és újraindítás"
-
-#: e10s.offerPopup.noThanks.label e10s.offerPopup.noThanks.accesskey
-msgid "&No, thanks"
-msgstr "&Köszönöm, nem"
-
 #: e10s.accessibilityNotice.mainMessage2
 msgid ""
 "Accessibility support is partially disabled due to compatibility issues with "
@@ -1755,10 +1715,10 @@ msgstr "&OK"
 msgid "&Enable (Requires Restart)"
 msgstr "&Engedélyezés (újraindítást igényel)"
 
-#. # LOCALIZATION NOTE (usercontext.personal.label,
-#. #                    usercontext.work.label,
-#. #                    usercontext.shopping.label,
-#. #                    usercontext.banking.label):
+#. # LOCALIZATION NOTE (userContextPersonal.label,
+#. #                    userContextWork.label,
+#. #                    userContextShopping.label,
+#. #                    userContextBanking.label):
 #. # These strings specify the four predefined contexts included in support of the
 #. # Contextual Identity / Containers project. Each context is meant to represent
 #. # the context that the user is in when interacting with the site. Different
@@ -1768,21 +1728,25 @@ msgstr "&Engedélyezés (újraindítást igényel)"
 #. # Once enabled, you can open a new tab in a specific context by clicking
 #. # File > New Container Tab > (1 of 4 contexts). Once opened, you will see these
 #. # strings on the right-hand side of the URL bar.
-#: usercontext.personal.label
-msgid "Personal"
+#: userContextPersonal.label userContextPersonal.accesskey
+#, fuzzy
+msgid "&Personal"
 msgstr "Személyes"
 
-#: usercontext.work.label
-msgid "Work"
+#: userContextWork.label userContextWork.accesskey
+#, fuzzy
+msgid "&Work"
 msgstr "Munka"
 
-#: usercontext.shopping.label
-msgid "Shopping"
-msgstr "Vásárlás"
-
-#: usercontext.banking.label
-msgid "Banking"
+#: userContextBanking.label userContextBanking.accesskey
+#, fuzzy
+msgid "&Banking"
 msgstr "Bankolás"
+
+#: userContextShopping.label userContextShopping.accesskey
+#, fuzzy
+msgid "&Shopping"
+msgstr "Vásárlás"
 
 #: muteTab.label muteTab.accesskey
 msgid "&Mute Tab"
@@ -1829,6 +1793,26 @@ msgstr "%S csoport"
 #: tabgroups.migration.tabGroupBookmarkFolderName
 msgid "Bookmarked Tab Groups"
 msgstr "Könyvjelzőzött lapcsoportok"
+
+#. # LOCALIZATION NOTE (pendingCrashReports.label): Semi-colon list of plural forms
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is the number of pending crash reports
+#: pendingCrashReports.label
+msgid ""
+"You have an unsubmitted crash report;You have #1 unsubmitted crash reports"
+msgstr ""
+
+#: pendingCrashReports.viewAll
+msgid "View"
+msgstr ""
+
+#: pendingCrashReports.submitAll
+msgid "Submit"
+msgstr ""
+
+#: pendingCrashReports.ignoreAll
+msgid "Ignore"
+msgstr ""
 
 #: decoder.noCodecs.button
 msgid "Learn how"
@@ -1878,6 +1862,31 @@ msgid ""
 msgstr ""
 "A videominőség javításához szükség lehet a Microsoft Platform Update "
 "Supplement for Windows Vista csomagjára."
+
+#~ msgid "No Video"
+#~ msgstr "Nincs videó"
+
+#~ msgid "No Audio"
+#~ msgstr "Nincs hang"
+
+#~ msgid ""
+#~ "Multi-process is coming soon to %S. You can start using it now to get "
+#~ "early access to some of the benefits:"
+#~ msgstr ""
+#~ "A többszálúság hamarosan megérkezik a %Sba. A használatát már most "
+#~ "megkezdheti, hogy korán hozzájusson néhány előnyéhez:"
+
+#~ msgid "Improved responsiveness"
+#~ msgstr "Jobb válaszkészség"
+
+#~ msgid "Fewer crashes"
+#~ msgstr "Kevesebb összeomlás"
+
+#~ msgid "&Enable and Restart"
+#~ msgstr "&Engedélyezés és újraindítás"
+
+#~ msgid "&No, thanks"
+#~ msgstr "&Köszönöm, nem"
 
 #~ msgid "You can access your passwords on all your devices with %S. "
 #~ msgstr "A %S segítségével minden eszközén elérheti a jelszavait. "

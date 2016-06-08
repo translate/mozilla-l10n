@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 17:21+0000\n"
+"POT-Creation-Date: 2016-06-08 12:15+0000\n"
 "PO-Revision-Date: 2016-03-27 09:31+0000\n"
 "Last-Translator: Tanzeel Khan <tanzeelkhan94@gmail.com>\n"
 "Language-Team: none\n"
@@ -1029,7 +1029,7 @@ msgid "This site will hide the pointer."
 msgstr "یہ سائٹ پوائنٹر چھپا دے گا."
 
 #. # Phishing/Malware Notification Bar.
-#. # LOCALIZATION NOTE (notAForgery, notAnAttack)
+#. # LOCALIZATION NOTE (notADeceptiveSite, notAnAttack)
 #. # The two button strings will never be shown at the same time, so
 #. # it's okay for them to have the same access key
 #: safebrowsing.getMeOutOfHereButton.label
@@ -1279,10 +1279,6 @@ msgstr "شیئر کرنے والی &سکرین:"
 msgid "&Application to share:"
 msgstr "شیئر کرنے والی &ایپلی کیشن: "
 
-#: getUserMedia.noVideo.label
-msgid "No Video"
-msgstr "کوئی وڈیو نہیں"
-
 #: getUserMedia.noApplication.label
 msgid "No Application"
 msgstr "کوئی ایپلی کیشن نہیں"
@@ -1294,10 +1290,6 @@ msgstr "کوئی سکرین نہیں"
 #: getUserMedia.noWindow.label
 msgid "No Window"
 msgstr "کوئی دریچہ نہیں"
-
-#: getUserMedia.noAudio.label
-msgid "No Audio"
-msgstr "کوئی آڈیو نہیں"
 
 #: getUserMedia.shareEntireScreen.label
 msgid "Entire screen"
@@ -1706,45 +1698,13 @@ msgstr "Android کے لئے Firefox"
 msgid "Firefox for iOS"
 msgstr "iOS کے لئے Firefox"
 
-#. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
-#. #                    e10s.offerPopup.highlight1
-#. #                    e10s.offerPopup.highlight2
-#. #                    e10s.offerPopup.enableAndRestart.label
-#. #                    e10s.offerPopup.enableAndRestart.accesskey
-#. #                    e10s.offerPopup.noThanks.label
-#. #                    e10s.offerPopup.noThanks.accesskey
-#. #                    e10s.accessibilityNotice.mainMessage
-#. #                    e10s.accessibilityNotice.enableAndRestart.label
-#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey
+#. # LOCALIZATION NOTE (e10s.accessibilityNotice.mainMessage,
+#. #                    e10s.accessibilityNotice.enableAndRestart.label,
+#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey):
 #. # These strings are related to the messages we display to offer e10s (Multi-process) to users
 #. # on the pre-release channels. They won't be used in release but they will likely be used in
 #. # beta starting from version 41, so it's still useful to have these strings properly localized.
 #. # %S is brandShortName
-#: e10s.offerPopup.mainMessage
-msgid ""
-"Multi-process is coming soon to %S. You can start using it now to get early "
-"access to some of the benefits:"
-msgstr ""
-"%S میں جلد کثیر عمل کاری آنے والی ہے۔ آپ اس کے کچھ فوائد جلدی حاصل کرنے کے "
-"لیے اسے ابھی سے استعمال کرنا شروع کر سکتے ہیں:"
-
-#: e10s.offerPopup.highlight1
-msgid "Improved responsiveness"
-msgstr "بہتر ردعمل"
-
-#: e10s.offerPopup.highlight2
-msgid "Fewer crashes"
-msgstr "کم کریش"
-
-#: e10s.offerPopup.enableAndRestart.label
-#: e10s.offerPopup.enableAndRestart.accesskey
-msgid "&Enable and Restart"
-msgstr "&اہل بنائیں اور دوباره شروع کریں"
-
-#: e10s.offerPopup.noThanks.label e10s.offerPopup.noThanks.accesskey
-msgid "&No, thanks"
-msgstr "ؑ&نہیں، شکریہ"
-
 #: e10s.accessibilityNotice.mainMessage2
 msgid ""
 "Accessibility support is partially disabled due to compatibility issues with "
@@ -1763,10 +1723,10 @@ msgstr "&ٹھیک ہے"
 msgid "&Enable (Requires Restart)"
 msgstr "&اہل بنائیں (دوبارہ شروع کریں کی ضرورت ہے)"
 
-#. # LOCALIZATION NOTE (usercontext.personal.label,
-#. #                    usercontext.work.label,
-#. #                    usercontext.shopping.label,
-#. #                    usercontext.banking.label):
+#. # LOCALIZATION NOTE (userContextPersonal.label,
+#. #                    userContextWork.label,
+#. #                    userContextShopping.label,
+#. #                    userContextBanking.label):
 #. # These strings specify the four predefined contexts included in support of the
 #. # Contextual Identity / Containers project. Each context is meant to represent
 #. # the context that the user is in when interacting with the site. Different
@@ -1776,21 +1736,25 @@ msgstr "&اہل بنائیں (دوبارہ شروع کریں کی ضرورت ہ�
 #. # Once enabled, you can open a new tab in a specific context by clicking
 #. # File > New Container Tab > (1 of 4 contexts). Once opened, you will see these
 #. # strings on the right-hand side of the URL bar.
-#: usercontext.personal.label
-msgid "Personal"
+#: userContextPersonal.label userContextPersonal.accesskey
+#, fuzzy
+msgid "&Personal"
 msgstr "ذاتی"
 
-#: usercontext.work.label
-msgid "Work"
+#: userContextWork.label userContextWork.accesskey
+#, fuzzy
+msgid "&Work"
 msgstr "کام"
 
-#: usercontext.shopping.label
-msgid "Shopping"
-msgstr "خریداری"
-
-#: usercontext.banking.label
-msgid "Banking"
+#: userContextBanking.label userContextBanking.accesskey
+#, fuzzy
+msgid "&Banking"
 msgstr "بینکاری"
+
+#: userContextShopping.label userContextShopping.accesskey
+#, fuzzy
+msgid "&Shopping"
+msgstr "خریداری"
 
 #: muteTab.label muteTab.accesskey
 msgid "&Mute Tab"
@@ -1840,6 +1804,26 @@ msgstr "گروپ %S"
 msgid "Bookmarked Tab Groups"
 msgstr "ٹیب گروپ نشانی کردہ"
 
+#. # LOCALIZATION NOTE (pendingCrashReports.label): Semi-colon list of plural forms
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is the number of pending crash reports
+#: pendingCrashReports.label
+msgid ""
+"You have an unsubmitted crash report;You have #1 unsubmitted crash reports"
+msgstr ""
+
+#: pendingCrashReports.viewAll
+msgid "View"
+msgstr ""
+
+#: pendingCrashReports.submitAll
+msgid "Submit"
+msgstr ""
+
+#: pendingCrashReports.ignoreAll
+msgid "Ignore"
+msgstr ""
+
 #: decoder.noCodecs.button
 msgid "Learn how"
 msgstr ""
@@ -1879,6 +1863,31 @@ msgid ""
 "To improve video quality, you may need to install Microsoft’s Platform "
 "Update Supplement for Windows Vista."
 msgstr ""
+
+#~ msgid "No Video"
+#~ msgstr "کوئی وڈیو نہیں"
+
+#~ msgid "No Audio"
+#~ msgstr "کوئی آڈیو نہیں"
+
+#~ msgid ""
+#~ "Multi-process is coming soon to %S. You can start using it now to get "
+#~ "early access to some of the benefits:"
+#~ msgstr ""
+#~ "%S میں جلد کثیر عمل کاری آنے والی ہے۔ آپ اس کے کچھ فوائد جلدی حاصل کرنے "
+#~ "کے لیے اسے ابھی سے استعمال کرنا شروع کر سکتے ہیں:"
+
+#~ msgid "Improved responsiveness"
+#~ msgstr "بہتر ردعمل"
+
+#~ msgid "Fewer crashes"
+#~ msgstr "کم کریش"
+
+#~ msgid "&Enable and Restart"
+#~ msgstr "&اہل بنائیں اور دوباره شروع کریں"
+
+#~ msgid "&No, thanks"
+#~ msgstr "ؑ&نہیں، شکریہ"
 
 #~ msgid "You can access your passwords on all your devices with %S. "
 #~ msgstr "آپ %S کے ساتھ اپنے تمام آلات پر اپنے پاس ورڈ تک سائی کر سکتے ہیں۔"

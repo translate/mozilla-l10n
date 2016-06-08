@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 17:21+0000\n"
+"POT-Creation-Date: 2016-06-08 12:15+0000\n"
 "PO-Revision-Date: 2016-05-14 11:37+0000\n"
 "Last-Translator: Paulius And <ekstras@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1463225823.000000\n"
 
@@ -1032,7 +1032,7 @@ msgid "This site will hide the pointer."
 msgstr "Ši svetainė paslėps žymeklį."
 
 #. # Phishing/Malware Notification Bar.
-#. # LOCALIZATION NOTE (notAForgery, notAnAttack)
+#. # LOCALIZATION NOTE (notADeceptiveSite, notAnAttack)
 #. # The two button strings will never be shown at the same time, so
 #. # it's okay for them to have the same access key
 #: safebrowsing.getMeOutOfHereButton.label
@@ -1287,10 +1287,6 @@ msgstr "&Ekranas prieigai suteikti:"
 msgid "&Application to share:"
 msgstr "&Programa prieigai suteikti:"
 
-#: getUserMedia.noVideo.label
-msgid "No Video"
-msgstr "Be vaizdo"
-
 #: getUserMedia.noApplication.label
 msgid "No Application"
 msgstr "Jokia programa"
@@ -1302,10 +1298,6 @@ msgstr "Joks ekranas"
 #: getUserMedia.noWindow.label
 msgid "No Window"
 msgstr "Joks langas"
-
-#: getUserMedia.noAudio.label
-msgid "No Audio"
-msgstr "Be garso"
 
 #: getUserMedia.shareEntireScreen.label
 msgid "Entire screen"
@@ -1726,45 +1718,13 @@ msgstr "„Firefox“, skirtą „Android“,"
 msgid "Firefox for iOS"
 msgstr "„Firefox“, skirtą „iOS“"
 
-#. # LOCALIZATION NOTE (e10s.offerPopup.mainMessage
-#. #                    e10s.offerPopup.highlight1
-#. #                    e10s.offerPopup.highlight2
-#. #                    e10s.offerPopup.enableAndRestart.label
-#. #                    e10s.offerPopup.enableAndRestart.accesskey
-#. #                    e10s.offerPopup.noThanks.label
-#. #                    e10s.offerPopup.noThanks.accesskey
-#. #                    e10s.accessibilityNotice.mainMessage
-#. #                    e10s.accessibilityNotice.enableAndRestart.label
-#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey
+#. # LOCALIZATION NOTE (e10s.accessibilityNotice.mainMessage,
+#. #                    e10s.accessibilityNotice.enableAndRestart.label,
+#. #                    e10s.accessibilityNotice.enableAndRestart.accesskey):
 #. # These strings are related to the messages we display to offer e10s (Multi-process) to users
 #. # on the pre-release channels. They won't be used in release but they will likely be used in
 #. # beta starting from version 41, so it's still useful to have these strings properly localized.
 #. # %S is brandShortName
-#: e10s.offerPopup.mainMessage
-msgid ""
-"Multi-process is coming soon to %S. You can start using it now to get early "
-"access to some of the benefits:"
-msgstr ""
-"„%S“ greitai taps daugiaprocese. Tai išbandyti galite jau dabar, jeigu "
-"norite iš anksto išmėginti dalį privalumų:"
-
-#: e10s.offerPopup.highlight1
-msgid "Improved responsiveness"
-msgstr "Pagerintas reagavimas"
-
-#: e10s.offerPopup.highlight2
-msgid "Fewer crashes"
-msgstr "Mažiau strigčių"
-
-#: e10s.offerPopup.enableAndRestart.label
-#: e10s.offerPopup.enableAndRestart.accesskey
-msgid "&Enable and Restart"
-msgstr "Į&jungti ir perleisti"
-
-#: e10s.offerPopup.noThanks.label e10s.offerPopup.noThanks.accesskey
-msgid "&No, thanks"
-msgstr "&Ne, ačiū"
-
 #: e10s.accessibilityNotice.mainMessage2
 msgid ""
 "Accessibility support is partially disabled due to compatibility issues with "
@@ -1783,10 +1743,10 @@ msgstr "&Gerai"
 msgid "&Enable (Requires Restart)"
 msgstr "&Įjungti (reikės paleisti iš naujo)"
 
-#. # LOCALIZATION NOTE (usercontext.personal.label,
-#. #                    usercontext.work.label,
-#. #                    usercontext.shopping.label,
-#. #                    usercontext.banking.label):
+#. # LOCALIZATION NOTE (userContextPersonal.label,
+#. #                    userContextWork.label,
+#. #                    userContextShopping.label,
+#. #                    userContextBanking.label):
 #. # These strings specify the four predefined contexts included in support of the
 #. # Contextual Identity / Containers project. Each context is meant to represent
 #. # the context that the user is in when interacting with the site. Different
@@ -1796,21 +1756,25 @@ msgstr "&Įjungti (reikės paleisti iš naujo)"
 #. # Once enabled, you can open a new tab in a specific context by clicking
 #. # File > New Container Tab > (1 of 4 contexts). Once opened, you will see these
 #. # strings on the right-hand side of the URL bar.
-#: usercontext.personal.label
-msgid "Personal"
+#: userContextPersonal.label userContextPersonal.accesskey
+#, fuzzy
+msgid "&Personal"
 msgstr "Asmeninis"
 
-#: usercontext.work.label
-msgid "Work"
+#: userContextWork.label userContextWork.accesskey
+#, fuzzy
+msgid "&Work"
 msgstr "Darbas"
 
-#: usercontext.shopping.label
-msgid "Shopping"
-msgstr "Pirkiniai"
-
-#: usercontext.banking.label
-msgid "Banking"
+#: userContextBanking.label userContextBanking.accesskey
+#, fuzzy
+msgid "&Banking"
 msgstr "Bankininkystė"
+
+#: userContextShopping.label userContextShopping.accesskey
+#, fuzzy
+msgid "&Shopping"
+msgstr "Pirkiniai"
 
 #: muteTab.label muteTab.accesskey
 msgid "&Mute Tab"
@@ -1857,6 +1821,26 @@ msgstr "Grupė Nr. %S"
 #: tabgroups.migration.tabGroupBookmarkFolderName
 msgid "Bookmarked Tab Groups"
 msgstr "Įrašytos kortelių grupės"
+
+#. # LOCALIZATION NOTE (pendingCrashReports.label): Semi-colon list of plural forms
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # #1 is the number of pending crash reports
+#: pendingCrashReports.label
+msgid ""
+"You have an unsubmitted crash report;You have #1 unsubmitted crash reports"
+msgstr ""
+
+#: pendingCrashReports.viewAll
+msgid "View"
+msgstr ""
+
+#: pendingCrashReports.submitAll
+msgid "Submit"
+msgstr ""
+
+#: pendingCrashReports.ignoreAll
+msgid "Ignore"
+msgstr ""
 
 #: decoder.noCodecs.button
 msgid "Learn how"
@@ -1909,6 +1893,31 @@ msgid ""
 msgstr ""
 "Norėdami pagerinti vaizdo kokybę, galimai turite įsidiegti „Microsoft "
 "Platform Supplement“, skirtą „Windows Vista“."
+
+#~ msgid "No Video"
+#~ msgstr "Be vaizdo"
+
+#~ msgid "No Audio"
+#~ msgstr "Be garso"
+
+#~ msgid ""
+#~ "Multi-process is coming soon to %S. You can start using it now to get "
+#~ "early access to some of the benefits:"
+#~ msgstr ""
+#~ "„%S“ greitai taps daugiaprocese. Tai išbandyti galite jau dabar, jeigu "
+#~ "norite iš anksto išmėginti dalį privalumų:"
+
+#~ msgid "Improved responsiveness"
+#~ msgstr "Pagerintas reagavimas"
+
+#~ msgid "Fewer crashes"
+#~ msgstr "Mažiau strigčių"
+
+#~ msgid "&Enable and Restart"
+#~ msgstr "Į&jungti ir perleisti"
+
+#~ msgid "&No, thanks"
+#~ msgstr "&Ne, ačiū"
 
 #~ msgid "You can access your passwords on all your devices with %S. "
 #~ msgstr ""

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 17:21+0000\n"
+"POT-Creation-Date: 2016-06-08 12:15+0000\n"
 "PO-Revision-Date: 2016-04-27 23:18+0000\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -14,8 +14,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
 "X-POOTLE-MTIME: 1461799094.000000\n"
@@ -236,14 +236,6 @@ msgstr "أعِد الاتصال مع &syncBrand.shortName.label;"
 msgid "Verify Your Account"
 msgstr "أكّد حسابك"
 
-#: syncStartPanel2.heading
-msgid "&syncBrand.shortName.label; enabled"
-msgstr "&syncBrand.shortName.label; مفعّل"
-
-#: syncStartPanel2.subTitle
-msgid "&brandShortName; will begin syncing momentarily."
-msgstr "سيبدأ &brandShortName; في المزامنة حالًا."
-
 #: fullScreenMinimize.tooltip
 msgid "Minimize"
 msgstr "صغّر"
@@ -390,6 +382,16 @@ msgstr "العلامات الأخرى"
 #: bookmarksToolbarChevron.tooltip
 msgid "Show more bookmarks"
 msgstr "أظهِر المزيد من العلامات"
+
+#: showRecentlyBookmarked.label showRecentlyBookmarked.accesskey
+#, fuzzy
+msgid "S&how Recently Bookmarked"
+msgstr "المعلّم حديثا"
+
+#: hideRecentlyBookmarked.label hideRecentlyBookmarked.accesskey
+#, fuzzy
+msgid "&Hide Recently Bookmarked"
+msgstr "المعلّم حديثا"
 
 #: backCmd.label
 msgid "Back"
@@ -570,6 +572,10 @@ msgstr "أظهِر شريط العلامات الجانبي"
 msgid "View Bookmarks Toolbar"
 msgstr "أظهِر شريط أدوات العلامات"
 
+#: containersMenu.label
+msgid "Containers"
+msgstr ""
+
 #. LOCALIZATION NOTE (bookmarksSidebarGtkCmd.commandkey): This command
 #. -  key should not contain the letters A-F, since these are reserved
 #. -  shortcut keys on Linux.
@@ -643,22 +649,6 @@ msgstr "&ملف"
 #: newUserContext.label newUserContext.accesskey
 msgid "New &Container Tab"
 msgstr "لسان &حاوٍ جديد"
-
-#: userContextPersonal.label userContextPersonal.accesskey
-msgid "&Personal"
-msgstr "&شخصي"
-
-#: userContextWork.label userContextWork.accesskey
-msgid "&Work"
-msgstr "&عمل"
-
-#: userContextBanking.label userContextBanking.accesskey
-msgid "&Banking"
-msgstr "ال&صيرفة"
-
-#: userContextShopping.label userContextShopping.accesskey
-msgid "&Shopping"
-msgstr "&تسوق"
 
 #: newNavigatorCmd.label newNavigatorCmd.accesskey
 msgid "&New Window"
@@ -1292,28 +1282,37 @@ msgstr "ا&كتم الصوت"
 msgid "Un&mute"
 msgstr "أ&طلق الصوت"
 
-#: mediaPlaybackRate.label mediaPlaybackRate.accesskey
-msgid "P&lay Speed"
+#: mediaPlaybackRate2.label mediaPlaybackRate2.accesskey
+#, fuzzy
+msgid "Play Spee&d"
 msgstr "سرعة ال&تشغيل"
 
-#: mediaPlaybackRate050x.label mediaPlaybackRate050x.accesskey
-msgid "&Slow Motion (0.5×)"
-msgstr "حركة ب&طيئة (٠٫٥×)"
+#: mediaPlaybackRate050x2.label mediaPlaybackRate050x2.accesskey
+msgid "&Slow (0.5×)"
+msgstr ""
 
-#: mediaPlaybackRate100x.label mediaPlaybackRate100x.accesskey
-msgid "&Normal Speed"
-msgstr "سرعة عا&دية"
+#: mediaPlaybackRate100x2.label mediaPlaybackRate100x2.accesskey
+msgid "&Normal"
+msgstr ""
 
-#: mediaPlaybackRate150x.label mediaPlaybackRate150x.accesskey
-msgid "&High Speed (1.5×)"
-msgstr "حركة سري&عة (١٫٥×)"
+#: mediaPlaybackRate125x2.label mediaPlaybackRate125x2.accesskey
+msgid "&Fast (1.25×)"
+msgstr ""
 
-#. LOCALIZATION NOTE: "Ludicrous Speed" is a reference to the
+#: mediaPlaybackRate150x2.label mediaPlaybackRate150x2.accesskey
+msgid "F&aster (1.5×)"
+msgstr ""
+
+#. LOCALIZATION NOTE: "Ludicrous" is a reference to the
 #. movie "Space Balls" and is meant to say that this speed is very
 #. fast.
-#: mediaPlaybackRate200x.label mediaPlaybackRate200x.accesskey
-msgid "&Ludicrous Speed (2×)"
-msgstr "حركة سريعة &جدا (٢×)"
+#: mediaPlaybackRate200x2.label mediaPlaybackRate200x2.accesskey
+msgid "&Ludicrous (2×)"
+msgstr ""
+
+#: mediaLoop.label mediaLoop.accesskey
+msgid "&Loop"
+msgstr ""
 
 #. LOCALIZATION NOTE: The access keys for "Show Controls" and
 #. "Hide Controls" are the same because the two context-menu
@@ -1550,8 +1549,9 @@ msgstr "الاتصال غير آمن"
 msgid "This page is stored on your computer."
 msgstr "هذه الصفحة مخزنة على حاسوبك."
 
-#: identity.connectionVerified1
-msgid "You are securely connected to this site, run by:"
+#: identity.connectionVerified2
+#, fuzzy
+msgid "You are securely connected to this site, owned by:"
 msgstr "تتصل بأمان مع هذا الموقع، و الذي يديره:"
 
 #: identity.connectionInternal
@@ -2115,6 +2115,36 @@ msgstr "شكرًا!"
 #: emeLearnMoreContextMenu.label emeLearnMoreContextMenu.accesskey
 msgid "Learn more about &DRM…"
 msgstr "اطلع أكثر عن إ&دارة الحقوق الرقمية"
+
+#~ msgid "&syncBrand.shortName.label; enabled"
+#~ msgstr "&syncBrand.shortName.label; مفعّل"
+
+#~ msgid "&brandShortName; will begin syncing momentarily."
+#~ msgstr "سيبدأ &brandShortName; في المزامنة حالًا."
+
+#~ msgid "&Personal"
+#~ msgstr "&شخصي"
+
+#~ msgid "&Work"
+#~ msgstr "&عمل"
+
+#~ msgid "&Banking"
+#~ msgstr "ال&صيرفة"
+
+#~ msgid "&Shopping"
+#~ msgstr "&تسوق"
+
+#~ msgid "&Slow Motion (0.5×)"
+#~ msgstr "حركة ب&طيئة (٠٫٥×)"
+
+#~ msgid "&Normal Speed"
+#~ msgstr "سرعة عا&دية"
+
+#~ msgid "&High Speed (1.5×)"
+#~ msgstr "حركة سري&عة (١٫٥×)"
+
+#~ msgid "&Ludicrous Speed (2×)"
+#~ msgstr "حركة سريعة &جدا (٢×)"
 
 #~ msgctxt "unsortedBookmarksCmd.label"
 #~ msgid "Unsorted Bookmarks"
