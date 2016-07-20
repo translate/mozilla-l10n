@@ -20,45 +20,46 @@ These are phases that we must complete to be included in a Firefox release. When
 new strings follow this order. Also when reviewing checks you can use this order so that you
 focus on the most important translations first.
 
-+--------+----------------------------------------------------------------------------------------+
-| Phase  | Details                                                                                |
-+========+========================================================================================+
-| shared | Shared between Desktop Firefox and Firefox Mobile.                                     |
-+--------+----------------------------------------------------------------------------------------+
-| user1  | Anything that appears when first starting, using menus or browsing the web in normal   |
-|        | use e.g. File, Edit, View menus; Find bar at bottom, error pages, first run dialogues  |
-|        | (Moving from secure to insecure pages, browsing offline, etc), About page, Rights      |
-|        | notification. Excluded: some configuration menus that are too complicated, e.g.        |
-|        | character set selection                                                                |
-|        | * One entry needed from ext ext/rep/ch/report* that appears in the help menu           |
-|        | "Report Broken Web Sites"                                                              |
-|        | Translation related feature.                                                           |
-+--------+----------------------------------------------------------------------------------------+
-| lang   | Only do the most important languages (also read regions)                               |
-|        | i.e. your language and languages commonly refered to                                   |
-|        | or used by your users.  *DO NOT* translate everything!                                 |
-+--------+----------------------------------------------------------------------------------------+
-| user2  | Extensions/addons, Download manager, Bookmarks, Places, File browsing/downloading,     |
-|        | Private Browsing, Session Restore, Sync, Video, PDF viewer, Health report, Crash       |
-|        | reporter                                                                               |
-+--------+----------------------------------------------------------------------------------------+
-| user3  | Still focused on use: print dialogue, other XXX... menus accesible, Tab Groups         |
-|        | WebRTC related features.                                                               |
-+--------+----------------------------------------------------------------------------------------+
-| config1| First layer of Preference dialog is translated including dropdowns                     |
-+--------+----------------------------------------------------------------------------------------+
-| user4  | Page info, page source, page properties, report broken websites, dom inspector,        |
-|        | about:rights page, about:permissions, profile reset, WebApps                           |
-+--------+----------------------------------------------------------------------------------------+
-| config2| All XXXX... are translated, e.g. Cookies, charset names, Advanced settings             |
-+--------+----------------------------------------------------------------------------------------+
-| install| Anything related to installation.  Not critical as mostly people use language packs    |
-|        | but allows a team to focus on installation when needed. Also include migration         |
-+--------+----------------------------------------------------------------------------------------+
-|platform| platform specific configuration                                                        |
-+--------+----------------------------------------------------------------------------------------+
-| other,1| Everything not yet classified                                                          |
-+--------+----------------------------------------------------------------------------------------+
++---------------+---------------------------------------------------------------------------------+
+| Phase         | Details                                                                         |
++===============+=================================================================================+
+| androidshared | Shared between Desktop Firefox and Firefox Mobile.                              |
++---------------+---------------------------------------------------------------------------------+
+| user1         | Anything that appears when first starting, using menus or browsing the web in   |
+|               | normal use e.g. File, Edit, View menus; Find bar at bottom, error pages, first  |
+|               | run dialogues (Moving from secure to insecure pages, browsing offline, etc),    |
+|               | About page, Rights notification. Excluded: some configuration menus that are    |
+|               | too complicated, e.g. character set selection                                   |
+|               | * One entry needed from ext ext/rep/ch/report* that appears in the help menu    |
+|               | "Report Broken Web Sites"                                                       |
+|               | Translation related feature.                                                    |
++---------------+---------------------------------------------------------------------------------+
+| lang          | Only do the most important languages (also read regions)                        |
+|               | i.e. your language and languages commonly refered to                            |
+|               | or used by your users.  *DO NOT* translate everything!                          |
++---------------+---------------------------------------------------------------------------------+
+| user2         | Extensions/addons, Download manager, Bookmarks, Places, File                    |
+|               | browsing/downloading, Private Browsing, Session Restore, Sync, Video, PDF       |
+|               | viewer, Health report, Crash reporter                                           |
++---------------+---------------------------------------------------------------------------------+
+| user3         | Still focused on use: print dialogue, other XXX... menus accesible, Tab Groups  |
+|               | WebRTC related features.                                                        |
++---------------+---------------------------------------------------------------------------------+
+| config1       | First layer of Preference dialog is translated including dropdowns              |
++---------------+---------------------------------------------------------------------------------+
+| user4         | Page info, page source, page properties, report broken websites, dom inspector, |
+|               | about:rights page, about:permissions, profile reset, WebApps                    |
++---------------+---------------------------------------------------------------------------------+
+| config2       | All XXXX... are translated, e.g. Cookies, charset names, Advanced settings      |
++---------------+---------------------------------------------------------------------------------+
+| install       | Anything related to installation.  Not critical as mostly people use languag    |
+|               | packs but allows a team to focus on installation when needed. Also include      |
+|               | migration                                                                       |
++---------------+---------------------------------------------------------------------------------+
+| platform      | platform specific configuration                                                 |
++---------------+---------------------------------------------------------------------------------+
+| other,1       | Everything not yet classified                                                   |
++---------------+---------------------------------------------------------------------------------+
 
 Optional
 --------
