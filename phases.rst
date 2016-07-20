@@ -27,6 +27,8 @@ focus on the most important translations first.
 +---------------+---------------------------------------------------------------------------------+
 | androidshared | Shared between Desktop Firefox and Firefox Mobile.                              |
 +---------------+---------------------------------------------------------------------------------+
+| tbshared      | Shared between Desktop Firefox and Thunderbird.                                 |
++---------------+---------------------------------------------------------------------------------+
 | user1         | Anything that appears when first starting, using menus or browsing the web in   |
 |               | normal use e.g. File, Edit, View menus; Find bar at bottom, error pages, first  |
 |               | run dialogues (Moving from secure to insecure pages, browsing offline, etc),    |
