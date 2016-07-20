@@ -23,6 +23,8 @@ focus on the most important translations first.
 +---------------+---------------------------------------------------------------------------------+
 | Phase         | Details                                                                         |
 +===============+=================================================================================+
+| langpack      | Critical translations to be able to a build Firefox language pack.              |
++---------------+---------------------------------------------------------------------------------+
 | androidshared | Shared between Desktop Firefox and Firefox Mobile.                              |
 +---------------+---------------------------------------------------------------------------------+
 | user1         | Anything that appears when first starting, using menus or browsing the web in   |
