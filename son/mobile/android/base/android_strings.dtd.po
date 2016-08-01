@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-09 07:07+0000\n"
+"POT-Creation-Date: 2016-08-01 23:28+0000\n"
 "PO-Revision-Date: 2016-06-11 21:16+0000\n"
 "Last-Translator: Mohomodou  Houssouba <mh@bollag-areal.ch>\n"
 "Language-Team: none\n"
@@ -12,8 +12,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1465679786.000000\n"
 
@@ -156,13 +156,14 @@ msgctxt "history_title"
 msgid "History"
 msgstr "Taariki"
 
-#: recent_tabs_title
-msgid "Recent Tabs"
-msgstr "Kanji korkorantey"
-
 #: switch_to_tab
 msgid "Switch to tab"
 msgstr "Bere kanji ga"
+
+#. Localization note: Shown in a snackbar when tab is loaded from cache while device was offline.
+#: tab_offline_version
+msgid "Showing offline version"
+msgstr ""
 
 #: crash_reporter_title
 msgid "&brandShortName; Crash Reporter"
@@ -347,12 +348,16 @@ msgid "Close Tab"
 msgstr "Kanjoo daabu"
 
 #: one_tab
+#, fuzzy
+msgctxt "one_tab"
 msgid "1 tab"
 msgstr "Kanji 1"
 
 #. Localization note (num_tabs2) : Number of tabs is always more than one.
 #. We can't use android plural forms, sadly. See bug #753859.
 #: num_tabs2
+#, fuzzy
+msgctxt "num_tabs2"
 msgid "&formatD; tabs"
 msgstr "Kanji &formatD;"
 
@@ -809,6 +814,34 @@ msgstr "Macin ma taaga &brandShortName; ra"
 msgid "Learn about new features after an update"
 msgstr "Alhaali taagey bay ka tonton taagandiri banda ga "
 
+#. Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
+#. for experimental features.
+#: pref_category_experimental
+msgid "Experimental features"
+msgstr ""
+
+#. Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
+#. Instead of switching to the browser it appears as if the user stays in the third-party app.
+#. For more see: https://developer.chrome.com/multidevice/android/customtabs
+#: pref_custom_tabs
+msgid "Custom Tabs"
+msgstr ""
+
+#: pref_custom_tabs_summary
+msgid "Allow third-party apps to open URLs with a customized look and feel."
+msgstr ""
+
+#. Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream
+#: pref_activity_stream
+msgid "Activity Stream"
+msgstr ""
+
+#: pref_activity_stream_summary
+msgid ""
+"A rich visual history feed and a reimagined home page make it easier than "
+"ever to find exactly what you're looking for in &brandShortName;."
+msgstr ""
+
 #: tracking_protection_prompt_title
 msgid "Now with Tracking Protection"
 msgstr "Sohõ nda ganayan jejebu"
@@ -1152,6 +1185,10 @@ msgstr "Kanje cere-hangantey"
 #: pref_default_browser
 msgid "Make default browser"
 msgstr "A tee tilasu ceecikaw"
+
+#: pref_default_browser_mozilla_support_tablet
+msgid "Visit Mozilla Support"
+msgstr ""
 
 #: pref_about_firefox
 msgid "About &brandShortName;"
@@ -1741,21 +1778,32 @@ msgstr "Alhakiika war ga boona ka taarikoo tuusu?"
 msgid "Bookmarks you save show up here."
 msgstr "War doo-šilbay gaabuntey ga cebe ne."
 
-#: home_closed_tabs_title
-msgid "Recently closed tabs"
+#: home_closed_tabs_title2
+#, fuzzy
+msgid "Recently closed"
 msgstr "Kanjey kaŋ kokor ka daaba"
-
-#: home_last_tabs_title
-msgid "Tabs from last time"
-msgstr "Cee koraa kanjey"
 
 #: home_last_tabs_empty
 msgid "Your recent tabs show up here."
 msgstr "War doŋ kanjey bangay ne."
 
-#: home_open_all
-msgid "Open all"
-msgstr "Ikul feeri"
+#: home_restore_all
+#, fuzzy
+msgid "Restore all"
+msgstr "Kanjey yeeti"
+
+#: home_closed_tabs_number
+#, fuzzy
+msgctxt "home_closed_tabs_number"
+msgid "&formatD; tabs"
+msgstr "Kanji &formatD;"
+
+#. Localization note (home_closed_tabs_one): This is the singular version of home_closed_tabs_number, referring to the number of recently closed tabs available.
+#: home_closed_tabs_one
+#, fuzzy
+msgctxt "home_closed_tabs_one"
+msgid "1 tab"
+msgstr "Kanji 1"
 
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
@@ -1859,10 +1907,6 @@ msgstr "Ciyari saajante"
 #: identity_connection_insecure
 msgid "Insecure connection"
 msgstr "Manti ciyari saajante"
-
-#: identity_login_insecure
-msgid "This page is not secure and your login could be vulnerable."
-msgstr "Moɲoo manti saajante nda war huruyan tammaasaa ga yalaafu."
 
 #: identity_connection_chromeui
 msgid "This is a secure &brandShortName; page"
@@ -2311,6 +2355,18 @@ msgstr "Hantumkaw gunari doo-šilbay ka caw bila nda ciyari."
 #: helper_triple_readerview_open_button
 msgid "Add to Bookmarks"
 msgstr "Tonton doo-šilbawey ga"
+
+#~ msgid "Recent Tabs"
+#~ msgstr "Kanji korkorantey"
+
+#~ msgid "Tabs from last time"
+#~ msgstr "Cee koraa kanjey"
+
+#~ msgid "Open all"
+#~ msgstr "Ikul feeri"
+
+#~ msgid "This page is not secure and your login could be vulnerable."
+#~ msgstr "Moɲoo manti saajante nda war huruyan tammaasaa ga yalaafu."
 
 #~ msgid "Browse with &brandShortName;"
 #~ msgstr "Ceeci nda &brandShortName;"

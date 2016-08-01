@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-09 07:07+0000\n"
+"POT-Creation-Date: 2016-08-01 23:28+0000\n"
 "PO-Revision-Date: 2016-06-18 01:44+0000\n"
 "Last-Translator: அருண் குமார் (Arun Kumar) <thangam.arunx@gmail.com>\n"
 "Language-Team: none\n"
@@ -12,8 +12,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1466214279.000000\n"
 
@@ -154,13 +154,14 @@ msgctxt "history_title"
 msgid "History"
 msgstr "வரலாறு"
 
-#: recent_tabs_title
-msgid "Recent Tabs"
-msgstr "அண்மைய கீற்றுகள்"
-
 #: switch_to_tab
 msgid "Switch to tab"
 msgstr "கீற்றுக்கு தாவு"
+
+#. Localization note: Shown in a snackbar when tab is loaded from cache while device was offline.
+#: tab_offline_version
+msgid "Showing offline version"
+msgstr ""
 
 #: crash_reporter_title
 msgid "&brandShortName; Crash Reporter"
@@ -347,12 +348,16 @@ msgid "Close Tab"
 msgstr "கீற்றை மூடவும்"
 
 #: one_tab
+#, fuzzy
+msgctxt "one_tab"
 msgid "1 tab"
 msgstr "1 கீற்று"
 
 #. Localization note (num_tabs2) : Number of tabs is always more than one.
 #. We can't use android plural forms, sadly. See bug #753859.
 #: num_tabs2
+#, fuzzy
+msgctxt "num_tabs2"
 msgid "&formatD; tabs"
 msgstr "&formatD; கீற்றுகள்"
 
@@ -808,6 +813,34 @@ msgstr "&brandShortName; இதில் புதியது என்ன"
 msgid "Learn about new features after an update"
 msgstr "புதுப்பித்தப் பின் புதிய வசதிகளைப் பற்றி வாசிக்கவும்"
 
+#. Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
+#. for experimental features.
+#: pref_category_experimental
+msgid "Experimental features"
+msgstr ""
+
+#. Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
+#. Instead of switching to the browser it appears as if the user stays in the third-party app.
+#. For more see: https://developer.chrome.com/multidevice/android/customtabs
+#: pref_custom_tabs
+msgid "Custom Tabs"
+msgstr ""
+
+#: pref_custom_tabs_summary
+msgid "Allow third-party apps to open URLs with a customized look and feel."
+msgstr ""
+
+#. Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream
+#: pref_activity_stream
+msgid "Activity Stream"
+msgstr ""
+
+#: pref_activity_stream_summary
+msgid ""
+"A rich visual history feed and a reimagined home page make it easier than "
+"ever to find exactly what you're looking for in &brandShortName;."
+msgstr ""
+
 #: tracking_protection_prompt_title
 msgid "Now with Tracking Protection"
 msgstr "தடமறியல் பாதுகாப்புடன் உள்ளது"
@@ -1151,6 +1184,10 @@ msgstr "ஒத்திசைக்கப்பட்ட கீற்றுக�
 #: pref_default_browser
 msgid "Make default browser"
 msgstr "முன்னிருப்பு உலாவியாக்குக"
+
+#: pref_default_browser_mozilla_support_tablet
+msgid "Visit Mozilla Support"
+msgstr ""
 
 #: pref_about_firefox
 msgid "About &brandShortName;"
@@ -1741,21 +1778,32 @@ msgstr "உங்களுடைய வரலாற்றை நிச்சை�
 msgid "Bookmarks you save show up here."
 msgstr "நீங்கள் சேமித்து வைத்த புத்தகக்குறிகள் இங்கே காட்டும்."
 
-#: home_closed_tabs_title
-msgid "Recently closed tabs"
+#: home_closed_tabs_title2
+#, fuzzy
+msgid "Recently closed"
 msgstr "சமீபத்தில் மூடப்பட்ட கீற்றுகள்"
-
-#: home_last_tabs_title
-msgid "Tabs from last time"
-msgstr "இறுதியாகப் பயன்படுத்தியக் கீற்று"
 
 #: home_last_tabs_empty
 msgid "Your recent tabs show up here."
 msgstr "நீங்கள் அன்மையில் பயன்படுத்திய கீற்று இங்கு காணப்படும்."
 
-#: home_open_all
-msgid "Open all"
-msgstr "அனைத்தையும் திற"
+#: home_restore_all
+#, fuzzy
+msgid "Restore all"
+msgstr "கீற்றுகளை மீளமை"
+
+#: home_closed_tabs_number
+#, fuzzy
+msgctxt "home_closed_tabs_number"
+msgid "&formatD; tabs"
+msgstr "&formatD; கீற்றுகள்"
+
+#. Localization note (home_closed_tabs_one): This is the singular version of home_closed_tabs_number, referring to the number of recently closed tabs available.
+#: home_closed_tabs_one
+#, fuzzy
+msgctxt "home_closed_tabs_one"
+msgid "1 tab"
+msgstr "1 கீற்று"
 
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
@@ -1858,10 +1906,6 @@ msgstr "பாதுகாப்பான இணைப்பு"
 #: identity_connection_insecure
 msgid "Insecure connection"
 msgstr "பாதுகாப்பற்ற இணைப்பு"
-
-#: identity_login_insecure
-msgid "This page is not secure and your login could be vulnerable."
-msgstr "இந்த பக்கம் பாதுகாப்பற்றது மேலும் உங்கள் நுழைவு பாதிக்கப்படக்கூடியது."
 
 #: identity_connection_chromeui
 msgid "This is a secure &brandShortName; page"
@@ -2309,6 +2353,18 @@ msgstr "இணைப்பின்றி படிக்க வாசிப்�
 #: helper_triple_readerview_open_button
 msgid "Add to Bookmarks"
 msgstr "புத்தக்குறிகளில் சேர்"
+
+#~ msgid "Recent Tabs"
+#~ msgstr "அண்மைய கீற்றுகள்"
+
+#~ msgid "Tabs from last time"
+#~ msgstr "இறுதியாகப் பயன்படுத்தியக் கீற்று"
+
+#~ msgid "Open all"
+#~ msgstr "அனைத்தையும் திற"
+
+#~ msgid "This page is not secure and your login could be vulnerable."
+#~ msgstr "இந்த பக்கம் பாதுகாப்பற்றது மேலும் உங்கள் நுழைவு பாதிக்கப்படக்கூடியது."
 
 #~ msgid "Browse with &brandShortName;"
 #~ msgstr "&brandShortName; மூலம் உலாவுங்கள்"

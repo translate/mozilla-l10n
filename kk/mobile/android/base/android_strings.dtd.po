@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-09 07:07+0000\n"
+"POT-Creation-Date: 2016-08-01 23:28+0000\n"
 "PO-Revision-Date: 2016-06-10 04:31+0000\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: none\n"
@@ -11,8 +11,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1465533098.000000\n"
 
@@ -160,13 +160,14 @@ msgctxt "history_title"
 msgid "History"
 msgstr "Тарихы"
 
-#: recent_tabs_title
-msgid "Recent Tabs"
-msgstr "Соңғы беттер"
-
 #: switch_to_tab
 msgid "Switch to tab"
 msgstr "Бетке ауысу"
+
+#. Localization note: Shown in a snackbar when tab is loaded from cache while device was offline.
+#: tab_offline_version
+msgid "Showing offline version"
+msgstr ""
 
 #: crash_reporter_title
 msgid "&brandShortName; Crash Reporter"
@@ -354,12 +355,16 @@ msgid "Close Tab"
 msgstr "Бетті жабу"
 
 #: one_tab
+#, fuzzy
+msgctxt "one_tab"
 msgid "1 tab"
 msgstr "1 бет"
 
 #. Localization note (num_tabs2) : Number of tabs is always more than one.
 #. We can't use android plural forms, sadly. See bug #753859.
 #: num_tabs2
+#, fuzzy
+msgctxt "num_tabs2"
 msgid "&formatD; tabs"
 msgstr "&formatD; бет"
 
@@ -818,6 +823,34 @@ msgstr "&brandShortName; ішінде не жаңалық"
 msgid "Learn about new features after an update"
 msgstr "Жаңартудан кейін жаңа мүмкіндіктер жөнінде білу"
 
+#. Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
+#. for experimental features.
+#: pref_category_experimental
+msgid "Experimental features"
+msgstr ""
+
+#. Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
+#. Instead of switching to the browser it appears as if the user stays in the third-party app.
+#. For more see: https://developer.chrome.com/multidevice/android/customtabs
+#: pref_custom_tabs
+msgid "Custom Tabs"
+msgstr ""
+
+#: pref_custom_tabs_summary
+msgid "Allow third-party apps to open URLs with a customized look and feel."
+msgstr ""
+
+#. Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream
+#: pref_activity_stream
+msgid "Activity Stream"
+msgstr ""
+
+#: pref_activity_stream_summary
+msgid ""
+"A rich visual history feed and a reimagined home page make it easier than "
+"ever to find exactly what you're looking for in &brandShortName;."
+msgstr ""
+
 #: tracking_protection_prompt_title
 msgid "Now with Tracking Protection"
 msgstr "Енді бақылаудан қорғанысы бар"
@@ -1162,6 +1195,10 @@ msgstr "Синхрондалған беттер"
 #: pref_default_browser
 msgid "Make default browser"
 msgstr "Негізгі браузер қылу"
+
+#: pref_default_browser_mozilla_support_tablet
+msgid "Visit Mozilla Support"
+msgstr ""
 
 #: pref_about_firefox
 msgid "About &brandShortName;"
@@ -1753,21 +1790,32 @@ msgstr "Тарихты өшіруді шынымен қалайсыз ба?"
 msgid "Bookmarks you save show up here."
 msgstr "Сіз сақтаған бетбелгілер осында көрсетіледі."
 
-#: home_closed_tabs_title
-msgid "Recently closed tabs"
+#: home_closed_tabs_title2
+#, fuzzy
+msgid "Recently closed"
 msgstr "Жақында жабылған беттер"
-
-#: home_last_tabs_title
-msgid "Tabs from last time"
-msgstr "Алдыңғы реттен қалған беттер"
 
 #: home_last_tabs_empty
 msgid "Your recent tabs show up here."
 msgstr "Сіздің соңғы ашық беттеріңіз осында болады."
 
-#: home_open_all
-msgid "Open all"
-msgstr "Барлығын ашу"
+#: home_restore_all
+#, fuzzy
+msgid "Restore all"
+msgstr "Беттерді қалпына келтіру"
+
+#: home_closed_tabs_number
+#, fuzzy
+msgctxt "home_closed_tabs_number"
+msgid "&formatD; tabs"
+msgstr "&formatD; бет"
+
+#. Localization note (home_closed_tabs_one): This is the singular version of home_closed_tabs_number, referring to the number of recently closed tabs available.
+#: home_closed_tabs_one
+#, fuzzy
+msgctxt "home_closed_tabs_one"
+msgid "1 tab"
+msgstr "1 бет"
 
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
@@ -1871,10 +1919,6 @@ msgstr "Қауіпсіз байланыс"
 #: identity_connection_insecure
 msgid "Insecure connection"
 msgstr "Қауіпсіз емес байланыс"
-
-#: identity_login_insecure
-msgid "This page is not secure and your login could be vulnerable."
-msgstr "Бұл бет қауіпсіз емес және сіздің логин осал болуы мүмкін."
 
 #: identity_connection_chromeui
 msgid "This is a secure &brandShortName; page"
@@ -2333,6 +2377,18 @@ msgstr "Оқу тізімінің нәрселерін желіден тыс о�
 #: helper_triple_readerview_open_button
 msgid "Add to Bookmarks"
 msgstr "Бетбелгілерге қосу"
+
+#~ msgid "Recent Tabs"
+#~ msgstr "Соңғы беттер"
+
+#~ msgid "Tabs from last time"
+#~ msgstr "Алдыңғы реттен қалған беттер"
+
+#~ msgid "Open all"
+#~ msgstr "Барлығын ашу"
+
+#~ msgid "This page is not secure and your login could be vulnerable."
+#~ msgstr "Бұл бет қауіпсіз емес және сіздің логин осал болуы мүмкін."
 
 #~ msgid "Browse with &brandShortName;"
 #~ msgstr "&brandShortName; көмегімен шолу"
