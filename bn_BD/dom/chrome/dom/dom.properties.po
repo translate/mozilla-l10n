@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-08 12:15+0000\n"
+"POT-Creation-Date: 2016-08-01 15:16+0000\n"
 "PO-Revision-Date: 2016-07-25 17:34+0000\n"
 "Last-Translator: Belayet Hossain <bellayet@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1469468086.000000\n"
 
@@ -134,6 +134,11 @@ msgid ""
 msgstr ""
 "যুগপৎ নয় এমনভাবে লোডকৃত অগ্রাহ্যের বাহ্যিক স্ক্রিপ্ট থেকে document.write() কে কল করা "
 "হয়েছে।"
+
+#. # LOCALIZATION NOTE (EditorFileDropFailed): Do not translate contenteditable, %S is the error message explaining why the drop failed.
+#: EditorFileDropFailed
+msgid "Dropping a file into a contenteditable element failed: %S."
+msgstr ""
 
 #: FormValidationTextTooLong
 msgid ""
@@ -397,6 +402,65 @@ msgstr ""
 msgid "Exited fullscreen because windowed plugin was focused."
 msgstr "পূর্ণ-পর্দা বন্ধ করা হয়েছে কারণ windowed প্লাগইন ফোকাস করা হয়েছিল।"
 
+#: PointerLockDeniedDisabled
+#, fuzzy
+msgid ""
+"Request for pointer lock was denied because Pointer Lock API is disabled by "
+"user preference."
+msgstr ""
+"পূর্ণ-পর্দার অনুরোধ উপেক্ষিত হয়েছে কারন পূর্ণ-পর্দার API ব্যবহারকারীর পছন্দের "
+"অগ্রাধিকার দ্বারা নিষ্ক্রিয় করা হয়েছে।"
+
+#: PointerLockDeniedInUse
+msgid ""
+"Request for pointer lock was denied because the pointer is currently "
+"controlled by a different document."
+msgstr ""
+
+#: PointerLockDeniedNotInDocument
+msgid ""
+"Request for pointer lock was denied because the requesting element is not in "
+"a document."
+msgstr ""
+
+#: PointerLockDeniedSandboxed
+msgid ""
+"Request for pointer lock was denied because Pointer Lock API is restricted "
+"via sandbox."
+msgstr ""
+
+#: PointerLockDeniedHidden
+#, fuzzy
+msgid ""
+"Request for pointer lock was denied because the document is not visible."
+msgstr "পূর্ণ-পর্দার জন্য অনুরোধ প্রত্যাখ্যাত হয়েছে কারণ নথিটি আর দৃশ্যমান নেই।"
+
+#: PointerLockDeniedNotFocused
+msgid ""
+"Request for pointer lock was denied because the document is not focused."
+msgstr ""
+
+#: PointerLockDeniedMovedDocument
+#, fuzzy
+msgid ""
+"Request for pointer lock was denied because the requesting element has moved "
+"document."
+msgstr ""
+"পূর্ণ-পর্দার জন্য অনুরোধ প্রত্যাখ্যাত হয়েছে কারণ অনুরোধকৃত উপাদান নথি স্থানান্তর করেছে।"
+
+#: PointerLockDeniedNotInputDriven
+msgid ""
+"Request for pointer lock was denied because Element.requestPointerLock() was "
+"not called from inside a short running user-generated event handler, and the "
+"document is not in full screen."
+msgstr ""
+
+#: PointerLockDeniedFailedToLock
+msgid ""
+"Request for pointer lock was denied because the browser failed to lock the "
+"pointer."
+msgstr ""
+
 #: HTMLSyncXHRWarning
 msgid ""
 "HTML parsing in XMLHttpRequest is not supported in the synchronous mode."
@@ -445,7 +509,8 @@ msgstr "decodeAudioData তে পাঠানো বাফারে বিষ�
 
 #. # LOCALIZATION NOTE: Do not translate decodeAudioData.
 #: MediaDecodeAudioDataUnknownError
-msgid "An unknown error occured while processing decodeAudioData."
+#, fuzzy
+msgid "An unknown error occurred while processing decodeAudioData."
 msgstr "decodeAudioData প্রসেসিং এর সময় অজানা ত্রুটি ঘটেছে।"
 
 #. # LOCALIZATION NOTE: Do not translate decodeAudioData.
@@ -543,6 +608,11 @@ msgid ""
 msgstr ""
 "ভিডিও বিন্যাস চালাতে %S, আপনাকে আলাদা Microsoft সফ্টওয়্যার ইন্সটল করতে হবে, দেখুন "
 "https://support.mozilla.org/kb/fix-video-audio-problems-firefox-windows"
+
+#. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
+#: MediaUnsupportedBeforeWindowsVista
+msgid "Video formats %S unsupported by Microsoft before Windows Vista"
+msgstr ""
 
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaPlatformDecoderNotFound
@@ -973,6 +1043,28 @@ msgid ""
 "scope."
 msgstr ""
 
+#. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %1$S is a URL representing the scope of the ServiceWorker, %2$S is a stringified numeric HTTP status code like "404" and %3$S is a URL.
+#: ServiceWorkerRegisterNetworkError
+msgid ""
+"Failed to register/update a ServiceWorker for scope ‘%1$S’: Load failed with "
+"status %2$S for script ‘%3$S’."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %1$S is a URL representing the scope of the ServiceWorker, %2$S is a MIME Media Type like "text/plain" and %3$S is a URL.
+#: ServiceWorkerRegisterMimeTypeError
+msgid ""
+"Failed to register/update a ServiceWorker for scope ‘%1$S’: Bad Content-Type "
+"of ‘%2$S’ received for script ‘%3$S’.  Must be ‘text/javascript’, "
+"‘application/x-javascript’, or ‘application/javascript’."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %1$S is a URL representing the scope of the ServiceWorker.
+#: ServiceWorkerGraceTimeoutTermination
+msgid ""
+"Terminating ServiceWorker for scope ‘%1$S’ with pending waitUntil/"
+"respondWith promises because of grace timeout."
+msgstr ""
+
 #: ExecCommandCutCopyDeniedNotInputDriven
 msgid ""
 "document.execCommand(‘cut’/‘copy’) was denied because it was not called from "
@@ -1030,19 +1122,19 @@ msgid ""
 "(‘%S’) does not match the recipient window’s origin (‘%S’)."
 msgstr ""
 
-#. # LOCALIZATION NOTE: Do not translate 'youtube'. %S values are origins, like https://domain.com:port
-#: RewriteYoutubeEmbed
+#. # LOCALIZATION NOTE: Do not translate 'YouTube'. %S values are origins, like https://domain.com:port
+#: RewriteYouTubeEmbed
 msgid ""
-"Rewriting old-style Youtube Flash embed (%S) to iframe embed (%S). Please "
+"Rewriting old-style YouTube Flash embed (%S) to iframe embed (%S). Please "
 "update page to use iframe instead of embed/object, if possible."
 msgstr ""
 
-#. # LOCALIZATION NOTE: Do not translate 'youtube'. %S values are origins, like https://domain.com:port
-#: RewriteYoutubeEmbedInvalidQuery
+#. # LOCALIZATION NOTE: Do not translate 'YouTube'. %S values are origins, like https://domain.com:port
+#: RewriteYouTubeEmbedPathParams
 msgid ""
-"Rewriting old-style Youtube Flash embed (%S) to iframe embed (%S). Query was "
-"invalid and removed from URL. Please update page to use iframe instead of "
-"embed/object, if possible."
+"Rewriting old-style YouTube Flash embed (%S) to iframe embed (%S). Params "
+"were unsupported by iframe embeds and converted. Please update page to use "
+"iframe instead of embed/object, if possible."
 msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %1$S is the ServiceWorker scope URL. %2$S is an error string.
@@ -1060,16 +1152,51 @@ msgid ""
 "registered as ‘passive’."
 msgstr ""
 
-#: NavigatorBatteryWarning
-msgid "navigator.battery is deprecated. Use navigator.getBattery() instead."
-msgstr ""
-"navigator.battery পুরনো হয়ে গেছে। এর পরিবর্তে navigator.getBattery() ব্যবহার "
-"করুন।"
-
 #: FileLastModifiedDateWarning
 msgid "File.lastModifiedDate is deprecated. Use File.lastModified instead."
 msgstr ""
 "File.lastModifiedDate পুরনো হয়ে গেছে। এর পরিবর্তে File.lastModified ব্যবহার করুন।"
+
+#: ChromeScriptedDOMParserWithoutPrincipal
+msgid "Creating DOMParser without a principal is deprecated."
+msgstr ""
+
+#: IIRFilterChannelCountChangeWarning
+msgid "IIRFilterNode channel count changes may produce audio glitches."
+msgstr ""
+
+#: BiquadFilterChannelCountChangeWarning
+msgid "BiquadFilterNode channel count changes may produce audio glitches."
+msgstr ""
+
+#. # LOCALIZATION NOTE: %1$S is the unanimatable paced property.
+#: UnanimatablePacedProperty
+msgid "Paced property ‘%1$S’ is not an animatable property."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate ".jpeg"
+#: GenericImageNameJPEG
+msgid "image.jpeg"
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate ".gif"
+#: GenericImageNameGIF
+msgid "image.gif"
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate ".png"
+#: GenericImageNamePNG
+msgid "image.png"
+msgstr ""
+
+#: GenericFileName
+msgid "file"
+msgstr ""
+
+#~ msgid "navigator.battery is deprecated. Use navigator.getBattery() instead."
+#~ msgstr ""
+#~ "navigator.battery পুরনো হয়ে গেছে। এর পরিবর্তে navigator.getBattery() ব্যবহার "
+#~ "করুন।"
 
 #~ msgid "Use of attributes' ownerElement attribute is deprecated."
 #~ msgstr ""

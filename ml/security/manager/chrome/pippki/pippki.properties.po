@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-08 12:15+0000\n"
+"POT-Creation-Date: 2016-08-01 15:16+0000\n"
 "PO-Revision-Date: 2015-11-24 07:19+0000\n"
 "Last-Translator: Mahir Bin Farooque <mahirfarook@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -184,13 +184,80 @@ msgid "Could not verify this certificate for unknown reasons."
 msgstr "അപരിചിതമായ കാരണങ്ങള്‍കൊണ്ടു് ഈ സര്‍ട്ടിഫിക്കേറ്റ് ഉറപ്പാക്കുവാനായില്ല."
 
 #. #Client auth
+#: clientAuthRemember
+msgid "Remember this decision"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthNickAndSerial): Represents a single cert when the
+#. # user is choosing from a list of certificates.
+#. # %1$S is the nickname of the cert.
+#. # %2$S is the serial number of the cert in AA:BB:CC hex format.
+#: clientAuthNickAndSerial
+msgid "%1$S [%2$S]"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthHostnameAndPort):
+#. # %1$S is the hostname of the server.
+#. # %2$S is the port of the server.
+#: clientAuthHostnameAndPort
+msgid "%1$S:%2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthMessage1): %S is the Organization of the server
+#. # cert.
 #: clientAuthMessage1
 msgid "Organization: “%S”"
 msgstr "സ്ഥാപനം: \"%S\""
 
+#. # LOCALIZATION NOTE(clientAuthMessage2): %S is the Organization of the issuer
+#. # cert of the server cert.
 #: clientAuthMessage2
 msgid "Issued Under: “%S”"
 msgstr "ഇഷ്യൂ ചെയ്തിരിക്കുന്നതു്: \"%S\""
+
+#. # LOCALIZATION NOTE(clientAuthIssuedTo): %1$S is the Distinguished Name of the
+#. # currently selected client cert, such as "CN=John Doe,OU=Example" (without
+#. # quotes).
+#: clientAuthIssuedTo
+msgid "Issued to: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthSerial): %1$S is the serial number of the selected
+#. # cert in AA:BB:CC hex format.
+#: clientAuthSerial
+msgid "Serial number: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthValidityPeriod):
+#. # %1$S is the already localized notBefore date of the selected cert.
+#. # %2$S is the already localized notAfter date of the selected cert.
+#: clientAuthValidityPeriod
+msgid "Valid from %1$S to %2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthKeyUsages): %1$S is a comma separated list of
+#. # already localized key usages the selected cert is valid for.
+#: clientAuthKeyUsages
+msgid "Key Usages: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthEmailAddresses): %1$S is a comma separated list of
+#. # e-mail addresses the selected cert is valid for.
+#: clientAuthEmailAddresses
+msgid "Email addresses: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthIssuedBy): %1$S is the Distinguished Name of the
+#. # cert which issued the selected cert.
+#: clientAuthIssuedBy
+msgid "Issued by: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthStoredOn): %1$S is the name of the PKCS #11 token
+#. # the selected cert is stored on.
+#: clientAuthStoredOn
+msgid "Stored on: %1$S"
+msgstr ""
 
 #. #Page Info
 #: pageInfo_NoEncryption
@@ -209,9 +276,13 @@ msgid ""
 msgstr ""
 "എന്‍ക്രിപ്റ്റ് ചെയ്യാതെ ഇന്റര്‍നെറ്റ് വഴി അയയ്ക്കുന്ന വിവരങ്ങള്‍ മറ്റുള്ളവര്‍ക്കു് കാണുവാന്‍ സാധിക്കുന്നു."
 
-#: pageInfo_Privacy_None3
-msgid "The page you are viewing is not encrypted."
-msgstr "നിങ്ങള്‍ സന്ദര്‍ശിക്കുന്ന താള്‍ എന്‍ക്രിപ്റ്റ് ചെയ്തിട്ടില്ല."
+#: pageInfo_Privacy_None4
+#, fuzzy
+msgid ""
+"The page you are viewing was not encrypted before being transmitted over the "
+"Internet."
+msgstr ""
+"നിങ്ങള്‍ കാണുന്ന താള്‍ ഇന്റര്‍നെറ്റില്‍ ട്രാന്‍സ്മിറ്റ് ചെയ്യുന്നതിനു മുമ്പായി എന്‍ക്രിപ്റ്റ് ചെയ്തിരിക്കുന്നു."
 
 #. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
 #. # %1$S is the name of the encryption standard,
@@ -550,6 +621,9 @@ msgstr "വിവരങ്ങള്‍ ലഭ്യമല്ല"
 #: addExceptionNoCertLong2
 msgid "Unable to obtain identification status for this site."
 msgstr "ഈ സൈറ്റിന്റെ തിരിച്ചറിയല്‍ അവസ്ഥ ലഭിക്കാന്‍ സാധിച്ചില്ല."
+
+#~ msgid "The page you are viewing is not encrypted."
+#~ msgstr "നിങ്ങള്‍ സന്ദര്‍ശിക്കുന്ന താള്‍ എന്‍ക്രിപ്റ്റ് ചെയ്തിട്ടില്ല."
 
 #~ msgid "Certificate Exists"
 #~ msgstr "സര്‍ട്ടിഫീക്കേറ്റ് നിലവിലുണ്ടു്"
