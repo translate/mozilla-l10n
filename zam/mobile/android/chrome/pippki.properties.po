@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-26 12:34+0000\n"
+"POT-Creation-Date: 2016-08-01 23:28+0000\n"
 "PO-Revision-Date: 2016-07-11 02:38+0000\n"
 "Last-Translator: Rodrigo Pérez Ramírez <rodrigo_perez_r@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1468204709.000000\n"
 
@@ -82,13 +82,76 @@ msgstr "Xa nie kue:"
 msgid "Remember this decision"
 msgstr "Seré ko blil"
 
+#. # LOCALIZATION NOTE(clientAuthAsk.nickAndSerial): Represents a single cert when
+#. # the user is choosing from a list of certificates.
+#. # %1$S is the nickname of the cert.
+#. # %2$S is the serial number of the cert in AA:BB:CC hex format.
+#: clientAuthAsk.nickAndSerial
+msgid "%1$S [%2$S]"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthAsk.hostnameAndPort):
+#. # %1$S is the hostname of the server.
+#. # %2$S is the port of the server.
+#: clientAuthAsk.hostnameAndPort
+msgid "%1$S:%2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthAsk.organization): %S is the Organization of the
+#. # server cert.
 #: clientAuthAsk.organization
 msgid "Organization: \"%S\""
 msgstr "Pá gél xhín: \"%S\""
 
+#. # LOCALIZATION NOTE(clientAuthAsk.issuer): %S is the Organization of the
+#. # issuer cert of the server cert.
 #: clientAuthAsk.issuer
 msgid "Issued Under: \"%S\""
 msgstr "Bruy loo: \"%S\""
+
+#. # LOCALIZATION NOTE(clientAuthAsk.issuedTo): %1$S is the Distinguished Name of
+#. # the currently selected client cert, such as "CN=John Doe,OU=Example" (without
+#. # quotes).
+#: clientAuthAsk.issuedTo
+msgid "Issued to: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthAsk.serial): %1$S is the serial number of the
+#. # selected cert in AA:BB:CC hex format.
+#: clientAuthAsk.serial
+msgid "Serial number: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthAsk.validityPeriod):
+#. # %1$S is the already localized notBefore date of the selected cert.
+#. # %2$S is the already localized notAfter date of the selected cert.
+#: clientAuthAsk.validityPeriod
+msgid "Valid from %1$S to %2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthAsk.keyUsages): %1$S is a comma separated list of
+#. # already localized key usages the selected cert is valid for.
+#: clientAuthAsk.keyUsages
+msgid "Key Usages: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthAsk.emailAddresses): %1$S is a comma separated
+#. # list of e-mail addresses the selected cert is valid for.
+#: clientAuthAsk.emailAddresses
+msgid "Email addresses: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthAsk.issuedBy): %1$S is the Distinguished Name of
+#. # the cert which issued the selected cert.
+#: clientAuthAsk.issuedBy
+msgid "Issued by: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthAsk.storedOn): %1$S is the name of the PKCS #11
+#. # token the selected cert is stored on.
+#: clientAuthAsk.storedOn
+msgid "Stored on: %1$S"
+msgstr ""
 
 #: clientAuthAsk.viewCert.label
 msgctxt "clientAuthAsk.viewCert.label"
@@ -116,34 +179,64 @@ msgstr "Plo li xhín na"
 msgid "Fingerprints"
 msgstr "Mbél yal"
 
-#: certmgr.certdetail.cn
-msgid "Common Name (CN)"
-msgstr "Xá leéy (CN)"
+#: certdetail.cn
+msgid "Common Name (CN): %1$S"
+msgstr ""
 
-#: certmgr.certdetail.o
-msgid "Organization (O)"
-msgstr "Pa died lú (O)"
+#: certdetail.o
+msgid "Organization (O): %1$S"
+msgstr ""
 
-#: certmgr.certdetail.ou
-msgid "Organizational Unit (OU)"
+#: certdetail.ou
+#, fuzzy
+msgid "Organizational Unit (OU): %1$S"
 msgstr "Pa dob bá (OU)"
 
-#: certmgr.certdetail.serialnumber
-msgid "Serial Number"
-msgstr "Ták dish lab"
+#. # LOCALIZATION NOTE(certdetail.serialnumber): %1$S is the serial number of the
+#. # cert being viewed in AA:BB:CC hex format.
+#: certdetail.serialnumber
+msgid "Serial Number: %1$S"
+msgstr ""
 
-#: certmgr.certdetail.sha256fingerprint
-msgid "SHA-256 Fingerprint"
+#. # LOCALIZATION NOTE(certdetail.sha256fingerprint): %1$S is the SHA-256
+#. # Fingerprint of the cert being viewed in AA:BB:CC hex format.
+#: certdetail.sha256fingerprint
+#, fuzzy
+msgid "SHA-256 Fingerprint: %1$S"
 msgstr "Mbél yal SHA-256"
 
-#: certmgr.certdetail.sha1fingerprint
-msgid "SHA1 Fingerprint"
-msgstr "Mbél yal SHA1"
+#. # LOCALIZATION NOTE(certdetail.sha1fingerprint): %1$S is the SHA-1 Fingerprint
+#. # of the cert being viewed in AA:BB:CC hex format.
+#: certdetail.sha1fingerprint
+msgid "SHA1 Fingerprint: %1$S"
+msgstr ""
 
-#: certmgr.begins
-msgid "Begins On"
-msgstr "Mtetey loo"
+#. # LOCALIZATION NOTE(certdetail.notBefore): %1$S is the already localized
+#. # notBefore date of the cert being viewed.
+#: certdetail.notBefore
+msgid "Begins On: %1$S"
+msgstr ""
 
-#: certmgr.expires
-msgid "Expires On"
-msgstr "Lus ha wis"
+#. # LOCALIZATION NOTE(certdetail.notAfter): %1$S is the already localized notAfter
+#. # date of the cert being viewed.
+#: certdetail.notAfter
+msgid "Expires On: %1$S"
+msgstr ""
+
+#~ msgid "Common Name (CN)"
+#~ msgstr "Xá leéy (CN)"
+
+#~ msgid "Organization (O)"
+#~ msgstr "Pa died lú (O)"
+
+#~ msgid "Serial Number"
+#~ msgstr "Ták dish lab"
+
+#~ msgid "SHA1 Fingerprint"
+#~ msgstr "Mbél yal SHA1"
+
+#~ msgid "Begins On"
+#~ msgstr "Mtetey loo"
+
+#~ msgid "Expires On"
+#~ msgstr "Lus ha wis"

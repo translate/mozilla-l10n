@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-09 07:07+0000\n"
+"POT-Creation-Date: 2016-08-01 23:28+0000\n"
 "PO-Revision-Date: 2016-07-09 19:15+0000\n"
 "Last-Translator: Teerapat Taechaiya <teerapatxtop@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,8 +12,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1468091701.000000\n"
 
@@ -151,13 +151,14 @@ msgctxt "history_title"
 msgid "History"
 msgstr "ประวัติ"
 
-#: recent_tabs_title
-msgid "Recent Tabs"
-msgstr "แท็บเมื่อเร็ว ๆ นี้"
-
 #: switch_to_tab
 msgid "Switch to tab"
 msgstr "สลับไปยังแท็บ"
+
+#. Localization note: Shown in a snackbar when tab is loaded from cache while device was offline.
+#: tab_offline_version
+msgid "Showing offline version"
+msgstr ""
 
 #: crash_reporter_title
 msgid "&brandShortName; Crash Reporter"
@@ -342,12 +343,16 @@ msgid "Close Tab"
 msgstr "ปิดแท็บ"
 
 #: one_tab
+#, fuzzy
+msgctxt "one_tab"
 msgid "1 tab"
 msgstr "1 แท็บ"
 
 #. Localization note (num_tabs2) : Number of tabs is always more than one.
 #. We can't use android plural forms, sadly. See bug #753859.
 #: num_tabs2
+#, fuzzy
+msgctxt "num_tabs2"
 msgid "&formatD; tabs"
 msgstr "&formatD; แท็บ"
 
@@ -803,6 +808,34 @@ msgstr "มีอะไรใหม่ใน &brandShortName;"
 msgid "Learn about new features after an update"
 msgstr "เรียนรู้เกี่ยวกับคุณลักษณะใหม่หลังจากการปรับปรุง"
 
+#. Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
+#. for experimental features.
+#: pref_category_experimental
+msgid "Experimental features"
+msgstr ""
+
+#. Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
+#. Instead of switching to the browser it appears as if the user stays in the third-party app.
+#. For more see: https://developer.chrome.com/multidevice/android/customtabs
+#: pref_custom_tabs
+msgid "Custom Tabs"
+msgstr ""
+
+#: pref_custom_tabs_summary
+msgid "Allow third-party apps to open URLs with a customized look and feel."
+msgstr ""
+
+#. Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream
+#: pref_activity_stream
+msgid "Activity Stream"
+msgstr ""
+
+#: pref_activity_stream_summary
+msgid ""
+"A rich visual history feed and a reimagined home page make it easier than "
+"ever to find exactly what you're looking for in &brandShortName;."
+msgstr ""
+
 #: tracking_protection_prompt_title
 msgid "Now with Tracking Protection"
 msgstr "ขณะนี้มาพร้อมการป้องกันการตามรอย"
@@ -1144,6 +1177,10 @@ msgstr "แท็บที่ซิงค์"
 #: pref_default_browser
 msgid "Make default browser"
 msgstr "ทำให้เป็นเบราว์เซอร์ปริยาย"
+
+#: pref_default_browser_mozilla_support_tablet
+msgid "Visit Mozilla Support"
+msgstr ""
 
 #: pref_about_firefox
 msgid "About &brandShortName;"
@@ -1733,21 +1770,32 @@ msgstr "คุณแน่ใจหรือไม่ว่าต้องกา
 msgid "Bookmarks you save show up here."
 msgstr "ที่คั่นหน้าที่คุณบันทึกไว้จะแสดงที่นี่"
 
-#: home_closed_tabs_title
-msgid "Recently closed tabs"
+#: home_closed_tabs_title2
+#, fuzzy
+msgid "Recently closed"
 msgstr "แท็บที่เพิ่งปิด"
-
-#: home_last_tabs_title
-msgid "Tabs from last time"
-msgstr "แท็บจากคราวที่แล้ว"
 
 #: home_last_tabs_empty
 msgid "Your recent tabs show up here."
 msgstr "แท็บเมื่อเร็ว ๆ นี้ของคุณจะแสดงที่นี่"
 
-#: home_open_all
-msgid "Open all"
-msgstr "เปิดทั้งหมด"
+#: home_restore_all
+#, fuzzy
+msgid "Restore all"
+msgstr "เรียกคืนแท็บ"
+
+#: home_closed_tabs_number
+#, fuzzy
+msgctxt "home_closed_tabs_number"
+msgid "&formatD; tabs"
+msgstr "&formatD; แท็บ"
+
+#. Localization note (home_closed_tabs_one): This is the singular version of home_closed_tabs_number, referring to the number of recently closed tabs available.
+#: home_closed_tabs_one
+#, fuzzy
+msgctxt "home_closed_tabs_one"
+msgid "1 tab"
+msgstr "1 แท็บ"
 
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
@@ -1849,10 +1897,6 @@ msgstr "การเชื่อมต่อปลอดภัย"
 #: identity_connection_insecure
 msgid "Insecure connection"
 msgstr "การเชื่อมต่อไม่ปลอดภัย"
-
-#: identity_login_insecure
-msgid "This page is not secure and your login could be vulnerable."
-msgstr "หน้านี้ไม่ปลอดภัยและการเข้าสู่ระบบของคุณอาจมีช่องโหว่"
 
 #: identity_connection_chromeui
 msgid "This is a secure &brandShortName; page"
@@ -2294,6 +2338,18 @@ msgstr "คั่นรายการมุมมองผู้อ่านเ
 #: helper_triple_readerview_open_button
 msgid "Add to Bookmarks"
 msgstr "เพิ่มไปยังที่คั่นหน้า"
+
+#~ msgid "Recent Tabs"
+#~ msgstr "แท็บเมื่อเร็ว ๆ นี้"
+
+#~ msgid "Tabs from last time"
+#~ msgstr "แท็บจากคราวที่แล้ว"
+
+#~ msgid "Open all"
+#~ msgstr "เปิดทั้งหมด"
+
+#~ msgid "This page is not secure and your login could be vulnerable."
+#~ msgstr "หน้านี้ไม่ปลอดภัยและการเข้าสู่ระบบของคุณอาจมีช่องโหว่"
 
 #~ msgid "Browse with &brandShortName;"
 #~ msgstr "ท่องเว็บด้วย &brandShortName;"

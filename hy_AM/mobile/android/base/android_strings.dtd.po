@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-09 07:07+0000\n"
+"POT-Creation-Date: 2016-08-01 23:28+0000\n"
 "PO-Revision-Date: 2016-07-09 13:11+0000\n"
 "Last-Translator: Hrant Ohanyan <hrant.mozilla@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,8 +12,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1468069897.000000\n"
 
@@ -155,13 +155,14 @@ msgctxt "history_title"
 msgid "History"
 msgstr "Պատմություն"
 
-#: recent_tabs_title
-msgid "Recent Tabs"
-msgstr "Վերջին ներդիրները"
-
 #: switch_to_tab
 msgid "Switch to tab"
 msgstr "Անցնել ներդիրին"
+
+#. Localization note: Shown in a snackbar when tab is loaded from cache while device was offline.
+#: tab_offline_version
+msgid "Showing offline version"
+msgstr ""
 
 #: crash_reporter_title
 msgid "&brandShortName; Crash Reporter"
@@ -346,12 +347,16 @@ msgid "Close Tab"
 msgstr "Փակել ներդիրը"
 
 #: one_tab
+#, fuzzy
+msgctxt "one_tab"
 msgid "1 tab"
 msgstr "1 ներդիր"
 
 #. Localization note (num_tabs2) : Number of tabs is always more than one.
 #. We can't use android plural forms, sadly. See bug #753859.
 #: num_tabs2
+#, fuzzy
+msgctxt "num_tabs2"
 msgid "&formatD; tabs"
 msgstr "&formatD; ներդիրներ"
 
@@ -807,6 +812,34 @@ msgstr "Ինչն է նոր &brandShortName;-ում"
 msgid "Learn about new features after an update"
 msgstr "Իմացեք նոր յուրահատկությունների մասին թարմացումից հետո"
 
+#. Localization note (pref_category_experimental): Title of a sub category in the 'advanced' category
+#. for experimental features.
+#: pref_category_experimental
+msgid "Experimental features"
+msgstr ""
+
+#. Custom Tabs is an Android API for allowing third-party apps to open URLs in a customized UI.
+#. Instead of switching to the browser it appears as if the user stays in the third-party app.
+#. For more see: https://developer.chrome.com/multidevice/android/customtabs
+#: pref_custom_tabs
+msgid "Custom Tabs"
+msgstr ""
+
+#: pref_custom_tabs_summary
+msgid "Allow third-party apps to open URLs with a customized look and feel."
+msgstr ""
+
+#. Localization note (pref_activity_stream): Experimental feature, see https://testpilot.firefox.com/experiments/activity-stream
+#: pref_activity_stream
+msgid "Activity Stream"
+msgstr ""
+
+#: pref_activity_stream_summary
+msgid ""
+"A rich visual history feed and a reimagined home page make it easier than "
+"ever to find exactly what you're looking for in &brandShortName;."
+msgstr ""
+
 #: tracking_protection_prompt_title
 msgid "Now with Tracking Protection"
 msgstr "Այժմ պաշտպանություն հետագծումից"
@@ -1149,6 +1182,10 @@ msgstr "Համաժամեցված ներդիրներ"
 #: pref_default_browser
 msgid "Make default browser"
 msgstr "Դարձնել հիմնական դիտարկիչ"
+
+#: pref_default_browser_mozilla_support_tablet
+msgid "Visit Mozilla Support"
+msgstr ""
 
 #: pref_about_firefox
 msgid "About &brandShortName;"
@@ -1739,21 +1776,32 @@ msgstr "Մաքրե՞լ պատմությունը:"
 msgid "Bookmarks you save show up here."
 msgstr "Այստեղ ցուցադրված են էջանիշերը:"
 
-#: home_closed_tabs_title
-msgid "Recently closed tabs"
+#: home_closed_tabs_title2
+#, fuzzy
+msgid "Recently closed"
 msgstr "Վերջին փակված ներդիրները"
-
-#: home_last_tabs_title
-msgid "Tabs from last time"
-msgstr "Ձեր բացած վերջին ներդիրները"
 
 #: home_last_tabs_empty
 msgid "Your recent tabs show up here."
 msgstr "Վերջին այցելությունները:"
 
-#: home_open_all
-msgid "Open all"
-msgstr "Բացել բոլորը"
+#: home_restore_all
+#, fuzzy
+msgid "Restore all"
+msgstr "Վերականգնել ներդիրները"
+
+#: home_closed_tabs_number
+#, fuzzy
+msgctxt "home_closed_tabs_number"
+msgid "&formatD; tabs"
+msgstr "&formatD; ներդիրներ"
+
+#. Localization note (home_closed_tabs_one): This is the singular version of home_closed_tabs_number, referring to the number of recently closed tabs available.
+#: home_closed_tabs_one
+#, fuzzy
+msgctxt "home_closed_tabs_one"
+msgid "1 tab"
+msgstr "1 ներդիր"
 
 #: home_most_recent_empty
 msgid "Websites you visited most recently show up here."
@@ -1855,10 +1903,6 @@ msgstr "Անվտանգ կապակցում"
 #: identity_connection_insecure
 msgid "Insecure connection"
 msgstr "Ոչ անվտանգ կապակցում"
-
-#: identity_login_insecure
-msgid "This page is not secure and your login could be vulnerable."
-msgstr "Այս էջը անվտանգ չէ և ձեր մուտքգործումը կարող է խոցելի լինել:"
 
 #: identity_connection_chromeui
 msgid "This is a secure &brandShortName; page"
@@ -2312,6 +2356,18 @@ msgstr "Էջանշեք Ընթերցելու եղանակի միույթները�
 #: helper_triple_readerview_open_button
 msgid "Add to Bookmarks"
 msgstr "Անցնել Էջանիշերին"
+
+#~ msgid "Recent Tabs"
+#~ msgstr "Վերջին ներդիրները"
+
+#~ msgid "Tabs from last time"
+#~ msgstr "Ձեր բացած վերջին ներդիրները"
+
+#~ msgid "Open all"
+#~ msgstr "Բացել բոլորը"
+
+#~ msgid "This page is not secure and your login could be vulnerable."
+#~ msgstr "Այս էջը անվտանգ չէ և ձեր մուտքգործումը կարող է խոցելի լինել:"
 
 #~ msgid "Browse with &brandShortName;"
 #~ msgstr "Բացել &brandShortName;-ով"
