@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-08 12:15+0000\n"
+"POT-Creation-Date: 2016-08-01 15:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,15 +195,82 @@ msgid "Could not verify this certificate for unknown reasons."
 msgstr "Este certificat no s'ha pogut comprovar per raons desconegudes."
 
 #. #Client auth
+#: clientAuthRemember
+msgid "Remember this decision"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthNickAndSerial): Represents a single cert when the
+#. # user is choosing from a list of certificates.
+#. # %1$S is the nickname of the cert.
+#. # %2$S is the serial number of the cert in AA:BB:CC hex format.
+#: clientAuthNickAndSerial
+msgid "%1$S [%2$S]"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthHostnameAndPort):
+#. # %1$S is the hostname of the server.
+#. # %2$S is the port of the server.
+#: clientAuthHostnameAndPort
+msgid "%1$S:%2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthMessage1): %S is the Organization of the server
+#. # cert.
 #: clientAuthMessage1
 #, fuzzy
 msgid "Organization: “%S”"
 msgstr "Organisació: \"%S\""
 
+#. # LOCALIZATION NOTE(clientAuthMessage2): %S is the Organization of the issuer
+#. # cert of the server cert.
 #: clientAuthMessage2
 #, fuzzy
 msgid "Issued Under: “%S”"
 msgstr "Emés baix: \"%S\""
+
+#. # LOCALIZATION NOTE(clientAuthIssuedTo): %1$S is the Distinguished Name of the
+#. # currently selected client cert, such as "CN=John Doe,OU=Example" (without
+#. # quotes).
+#: clientAuthIssuedTo
+msgid "Issued to: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthSerial): %1$S is the serial number of the selected
+#. # cert in AA:BB:CC hex format.
+#: clientAuthSerial
+msgid "Serial number: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthValidityPeriod):
+#. # %1$S is the already localized notBefore date of the selected cert.
+#. # %2$S is the already localized notAfter date of the selected cert.
+#: clientAuthValidityPeriod
+msgid "Valid from %1$S to %2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthKeyUsages): %1$S is a comma separated list of
+#. # already localized key usages the selected cert is valid for.
+#: clientAuthKeyUsages
+msgid "Key Usages: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthEmailAddresses): %1$S is a comma separated list of
+#. # e-mail addresses the selected cert is valid for.
+#: clientAuthEmailAddresses
+msgid "Email addresses: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthIssuedBy): %1$S is the Distinguished Name of the
+#. # cert which issued the selected cert.
+#: clientAuthIssuedBy
+msgid "Issued by: %1$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(clientAuthStoredOn): %1$S is the name of the PKCS #11 token
+#. # the selected cert is stored on.
+#: clientAuthStoredOn
+msgid "Stored on: %1$S"
+msgstr ""
 
 #. #Page Info
 #: pageInfo_NoEncryption
@@ -223,9 +290,13 @@ msgstr ""
 "L'informació que s'envia per internet sense sifrar pot ser vista per tercers "
 "mentres està de camí.  "
 
-#: pageInfo_Privacy_None3
-msgid "The page you are viewing is not encrypted."
-msgstr "La pàgina que està veent no està sifrada."
+#: pageInfo_Privacy_None4
+#, fuzzy
+msgid ""
+"The page you are viewing was not encrypted before being transmitted over the "
+"Internet."
+msgstr ""
+"La pàgina que està veent va ser sifrada abans de transmetre's per Internet."
 
 #. # LOCALIZATION NOTE (pageInfo_EncryptionWithBitsAndProtocol and pageInfo_BrokenEncryption):
 #. # %1$S is the name of the encryption standard,
@@ -574,3 +645,6 @@ msgstr "Sens informació disponible"
 #: addExceptionNoCertLong2
 msgid "Unable to obtain identification status for this site."
 msgstr "Impossible obtindre l'estat d'indentificació d'este lloc."
+
+#~ msgid "The page you are viewing is not encrypted."
+#~ msgstr "La pàgina que està veent no està sifrada."
