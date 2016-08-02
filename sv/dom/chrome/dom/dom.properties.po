@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-01 15:16+0000\n"
-"PO-Revision-Date: 2016-08-02 13:53+0000\n"
+"PO-Revision-Date: 2016-08-02 15:17+0000\n"
 "Last-Translator: andpet <az@kth.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Generator: Pootle 2.7\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1470146023.000000\n"
+"X-POOTLE-MTIME: 1470151079.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -141,6 +141,7 @@ msgstr ""
 #: EditorFileDropFailed
 msgid "Dropping a file into a contenteditable element failed: %S."
 msgstr ""
+"Att släppa en fil i ett element med redigerbart innehåll misslyckades: %S."
 
 #: FormValidationTextTooLong
 msgid ""
@@ -413,12 +414,11 @@ msgstr ""
 "Avslutade helskärmsläget eftersom en fönsterbaserad insticksmodul hade fokus."
 
 #: PointerLockDeniedDisabled
-#, fuzzy
 msgid ""
 "Request for pointer lock was denied because Pointer Lock API is disabled by "
 "user preference."
 msgstr ""
-"Begäran om helskärm nekades eftersom helskärms-API har inaktiverats av "
+"Begäran om pekarlås nekades eftersom pekarlås-API har inaktiverats av "
 "användarens inställningar."
 
 #: PointerLockDeniedInUse
@@ -426,39 +426,42 @@ msgid ""
 "Request for pointer lock was denied because the pointer is currently "
 "controlled by a different document."
 msgstr ""
+"Begäran om pekarlås nekades eftersom pekaren kontrolleras för närvarande av "
+"ett annat dokument."
 
 #: PointerLockDeniedNotInDocument
 msgid ""
 "Request for pointer lock was denied because the requesting element is not in "
 "a document."
 msgstr ""
+"Begäran om pekarlås nekades eftersom det begärda elementet inte är i ett "
+"dokument."
 
 #: PointerLockDeniedSandboxed
 msgid ""
 "Request for pointer lock was denied because Pointer Lock API is restricted "
 "via sandbox."
 msgstr ""
+"Begäran om pekarlås nekades eftersom pekarlås-API är begränsad via sandbox."
 
 #: PointerLockDeniedHidden
-#, fuzzy
 msgid ""
 "Request for pointer lock was denied because the document is not visible."
 msgstr ""
-"Begäran om helskärm nekades eftersom dokumentet inte längre är synligt."
+"Begäran om pekarlås nekades eftersom dokumentet inte längre är synligt."
 
 #: PointerLockDeniedNotFocused
 msgid ""
 "Request for pointer lock was denied because the document is not focused."
-msgstr ""
+msgstr "Begäran om pekarlås nekades eftersom dokumentet inte är i fokus."
 
 #: PointerLockDeniedMovedDocument
-#, fuzzy
 msgid ""
 "Request for pointer lock was denied because the requesting element has moved "
 "document."
 msgstr ""
-"Begäran om helskärm nekades eftersom elementet som gjorde begäran har "
-"flyttat dokumentet."
+"Begäran om pekarlås nekades eftersom det begärda elementet har flyttat "
+"dokument."
 
 #: PointerLockDeniedNotInputDriven
 msgid ""
@@ -466,12 +469,17 @@ msgid ""
 "not called from inside a short running user-generated event handler, and the "
 "document is not in full screen."
 msgstr ""
+"Begäran om pekarlås nekades eftersom Element.requestPointerLock() inte "
+"anropades inifrån en användargenererad händelsehanterare och dokumentet är "
+"inte i fullskärmsläge."
 
 #: PointerLockDeniedFailedToLock
 msgid ""
 "Request for pointer lock was denied because the browser failed to lock the "
 "pointer."
 msgstr ""
+"Begäran om pekarlås nekades eftersom webbläsaren misslyckats med att låsa "
+"pekaren."
 
 #: HTMLSyncXHRWarning
 msgid ""
@@ -525,9 +533,8 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate decodeAudioData.
 #: MediaDecodeAudioDataUnknownError
-#, fuzzy
 msgid "An unknown error occurred while processing decodeAudioData."
-msgstr "Ett okänt fel uppstod vid processning av decodeAudioData."
+msgstr "Ett okänt fel uppstod vid bearbetning av decodeAudioData."
 
 #. # LOCALIZATION NOTE: Do not translate decodeAudioData.
 #: MediaDecodeAudioDataInvalidContent
@@ -637,7 +644,7 @@ msgstr ""
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaUnsupportedBeforeWindowsVista
 msgid "Video formats %S unsupported by Microsoft before Windows Vista"
-msgstr ""
+msgstr "Videoformat %S stöds inte av Microsoft innan Windows Vista"
 
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaPlatformDecoderNotFound
@@ -1097,6 +1104,8 @@ msgid ""
 "Failed to register/update a ServiceWorker for scope ‘%1$S’: Load failed with "
 "status %2$S for script ‘%3$S’."
 msgstr ""
+"Det gick inte att registrera/uppdatera en ServiceWorker för område ‘%1$S’: "
+"Inläsning misslyckades med status %2$S för skript ‘%3$S’."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %1$S is a URL representing the scope of the ServiceWorker, %2$S is a MIME Media Type like "text/plain" and %3$S is a URL.
 #: ServiceWorkerRegisterMimeTypeError
@@ -1105,6 +1114,9 @@ msgid ""
 "of ‘%2$S’ received for script ‘%3$S’.  Must be ‘text/javascript’, "
 "‘application/x-javascript’, or ‘application/javascript’."
 msgstr ""
+"Det gick inte att registrera/uppdatera en ServiceWorker för område ‘%1$S’: "
+"Bad Content-Type för ‘%2$S’ mottagen för skript ‘%3$S’.  Måste vara ‘text/"
+"javascript’, ‘application/x-javascript’ eller ‘application/javascript’."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %1$S is a URL representing the scope of the ServiceWorker.
 #: ServiceWorkerGraceTimeoutTermination
@@ -1112,6 +1124,8 @@ msgid ""
 "Terminating ServiceWorker for scope ‘%1$S’ with pending waitUntil/"
 "respondWith promises because of grace timeout."
 msgstr ""
+"Avslutar ServiceWorker för område ‘%1$S’ med väntande waitUntil/respondWith "
+"därför att grace fick timeout."
 
 #: ExecCommandCutCopyDeniedNotInputDriven
 msgid ""
@@ -1174,7 +1188,6 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate 'YouTube'. %S values are origins, like https://domain.com:port
 #: RewriteYouTubeEmbed
-#, fuzzy
 msgid ""
 "Rewriting old-style YouTube Flash embed (%S) to iframe embed (%S). Please "
 "update page to use iframe instead of embed/object, if possible."
