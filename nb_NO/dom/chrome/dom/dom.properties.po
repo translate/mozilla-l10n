@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-01 15:16+0000\n"
-"PO-Revision-Date: 2016-06-23 19:12+0000\n"
+"PO-Revision-Date: 2016-08-25 09:00+0000\n"
 "Last-Translator: Håvar Henriksen <havar@firefox.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nb_NO\n"
@@ -16,9 +16,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 1.14.0-rc1\n"
+"X-Generator: Pootle 2.8\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1466709135.000000\n"
+"X-POOTLE-MTIME: 1472115614.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -137,7 +137,7 @@ msgstr ""
 #. # LOCALIZATION NOTE (EditorFileDropFailed): Do not translate contenteditable, %S is the error message explaining why the drop failed.
 #: EditorFileDropFailed
 msgid "Dropping a file into a contenteditable element failed: %S."
-msgstr ""
+msgstr "Slepping av en fil i et element med redigerbart innhold feilet: %S."
 
 #: FormValidationTextTooLong
 msgid ""
@@ -397,12 +397,11 @@ msgid "Exited fullscreen because windowed plugin was focused."
 msgstr "Avsluttet fullskjerm fordi et programtillegg i vindusmodus har fokus."
 
 #: PointerLockDeniedDisabled
-#, fuzzy
 msgid ""
 "Request for pointer lock was denied because Pointer Lock API is disabled by "
 "user preference."
 msgstr ""
-"Forespørsel om fullskjerm ble avvist fordi fullskjerm-API er avslått i "
+"Forespørsel om pekerlås ble avvist fordi pekerlås-API-et er avslått i "
 "brukerinnstillingene."
 
 #: PointerLockDeniedInUse
@@ -410,43 +409,42 @@ msgid ""
 "Request for pointer lock was denied because the pointer is currently "
 "controlled by a different document."
 msgstr ""
+"Forespørsel om pekerlås ble avvist fordi pekeren allerede blir kontrollert "
+"av et annet dokument."
 
 #: PointerLockDeniedNotInDocument
-#, fuzzy
 msgid ""
 "Request for pointer lock was denied because the requesting element is not in "
 "a document."
 msgstr ""
-"Forespørsel om fullskjerm ble avvist fordi det forespørrende elementet har "
-"flyttet til et annet dokument."
+"Forespørsel om pekerlås ble avvist fordi det forespørrende elementet ikke er "
+"et dokument."
 
 #: PointerLockDeniedSandboxed
 msgid ""
 "Request for pointer lock was denied because Pointer Lock API is restricted "
 "via sandbox."
 msgstr ""
+"Forespørsel om pekerlås ble avvist fordi pekerlås-API-et er avgrenset via "
+"sandbox."
 
 #: PointerLockDeniedHidden
-#, fuzzy
 msgid ""
 "Request for pointer lock was denied because the document is not visible."
 msgstr ""
-"Forespørsel om fullskjerm ble avvist fordi dokumentet ikke lenger er synlig."
+"Forespørsel om pekerlås ble avvist fordi dokumentet ikke lenger er synlig."
 
 #: PointerLockDeniedNotFocused
-#, fuzzy
 msgid ""
 "Request for pointer lock was denied because the document is not focused."
-msgstr ""
-"Forespørsel om fullskjerm ble avvist fordi dokumentet ikke lenger er synlig."
+msgstr "Forespørsel om pekerlås ble avvist fordi dokumentet ikke er i fokus."
 
 #: PointerLockDeniedMovedDocument
-#, fuzzy
 msgid ""
 "Request for pointer lock was denied because the requesting element has moved "
 "document."
 msgstr ""
-"Forespørsel om fullskjerm ble avvist fordi det forespørrende elementet har "
+"Forespørsel om pekerlås ble avvist fordi det forespørrende elementet har "
 "flyttet til et annet dokument."
 
 #: PointerLockDeniedNotInputDriven
@@ -455,12 +453,17 @@ msgid ""
 "not called from inside a short running user-generated event handler, and the "
 "document is not in full screen."
 msgstr ""
+"Forespørsel om pekerlås ble avvist fordi Element.requestPointerLock() ikke "
+"ble kalt innenfra en brukergenerert hendelseshåndterer og dokumentet ikke er "
+"i fullskjermmodus."
 
 #: PointerLockDeniedFailedToLock
 msgid ""
 "Request for pointer lock was denied because the browser failed to lock the "
 "pointer."
 msgstr ""
+"Forespørsel om pekerlås ble avvist fordi nettleseren mislyktes med å låse "
+"pekeren."
 
 #: HTMLSyncXHRWarning
 msgid ""
@@ -511,7 +514,6 @@ msgstr "Bufferen sendt til decodeAudioData inneholder en ukjent innholdstype."
 
 #. # LOCALIZATION NOTE: Do not translate decodeAudioData.
 #: MediaDecodeAudioDataUnknownError
-#, fuzzy
 msgid "An unknown error occurred while processing decodeAudioData."
 msgstr "En ukjent feil oppstod ved behandling av decodeAudioData."
 
@@ -623,7 +625,7 @@ msgstr ""
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaUnsupportedBeforeWindowsVista
 msgid "Video formats %S unsupported by Microsoft before Windows Vista"
-msgstr ""
+msgstr "Videoformatet %S er ikke støttet av Microsoft før Windows Vista"
 
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaPlatformDecoderNotFound
@@ -1154,23 +1156,21 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate 'YouTube'. %S values are origins, like https://domain.com:port
 #: RewriteYouTubeEmbed
-#, fuzzy
 msgid ""
 "Rewriting old-style YouTube Flash embed (%S) to iframe embed (%S). Please "
 "update page to use iframe instead of embed/object, if possible."
 msgstr ""
-"Skriver om foreldet syntaks på Youtube Flash embed (%S) til iframe embed "
+"Skriver om foreldet syntaks på YouTube Flash embed (%S) til iframe embed "
 "(%S). Oppdater siden til å bruke iframe istedenfor embed/object, hvis mulig."
 
 #. # LOCALIZATION NOTE: Do not translate 'YouTube'. %S values are origins, like https://domain.com:port
 #: RewriteYouTubeEmbedPathParams
-#, fuzzy
 msgid ""
 "Rewriting old-style YouTube Flash embed (%S) to iframe embed (%S). Params "
 "were unsupported by iframe embeds and converted. Please update page to use "
 "iframe instead of embed/object, if possible."
 msgstr ""
-"Skriver om foreldet syntaks på Youtube Flash embed (%S) til iframe embed "
+"Skriver om foreldet syntaks på YouTube Flash embed (%S) til iframe embed "
 "(%S). Forespørselen var ugyldig og ble fjernet fra URL. Oppdater siden til å "
 "bruke iframe istedenfor embed/object, hvis mulig."
 
