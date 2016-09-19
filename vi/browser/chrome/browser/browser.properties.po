@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2016-09-19 14:17+0000\n"
 "PO-Revision-Date: 2016-05-08 11:54+0000\n"
 "Last-Translator: Đặng Thanh <thanhdd.it@gmail.com>\n"
 "Language-Team: Vietnamese <>\n"
@@ -680,6 +680,13 @@ msgstr "Tiến tới trang này"
 msgid "Paste & Go"
 msgstr "Dán & mở đường dẫn"
 
+#. # LOCALIZATION NOTE(urlbar-zoom-button.label): %S is the current zoom level,
+#. # %% will be displayed as a single % character (% is commonly used to define
+#. # format specifiers, so it needs to be escaped).
+#: urlbar-zoom-button.label
+msgid "%S%%"
+msgstr ""
+
 #. # Block autorefresh
 #: refreshBlocked.goButton
 msgctxt "refreshBlocked.goButton"
@@ -818,10 +825,6 @@ msgstr "Bạn vừa thêm một ngoại lệ an ninh cho tên miền này."
 msgid "%S, %S"
 msgstr "%S, %S"
 
-#: identity.unknown.tooltip
-msgid "This website does not supply identity information."
-msgstr "Trang web này không cung cấp thông tin định danh."
-
 #: identity.icon.tooltip
 msgid "Show site information"
 msgstr ""
@@ -938,6 +941,28 @@ msgstr "Bạn có muốn chia sẻ vị trí của mình với trang web này kh
 #: geolocation.shareWithFile2
 msgid "Would you like to share your location with this file?"
 msgstr "Bạn có muốn chia sẻ vị trí của mình với tập tin này không?"
+
+#. # FlyWeb UI
+#. # LOCALIZATION NOTE (flyWebPublishServer.allowPublishServer): This is an experimental feature only shipping in Nightly, and doesn't need translation.
+#: flyWebPublishServer.allowPublishServer
+msgid "Allow Server"
+msgstr ""
+
+#. # LOCALIZATION NOTE (flyWebPublishServer.allowPublishServer.accessKey): This is an experimental feature only shipping in Nightly, and doesn't need translation.
+#: flyWebPublishServer.allowPublishServer.accesskey
+msgctxt "flyWebPublishServer.allowPublishServer.accesskey"
+msgid "A"
+msgstr ""
+
+#. # LOCALIZATION NOTE (flyWebPublishServer.denyPublishServer): This is an experimental feature only shipping in Nightly, and doesn't need translation.
+#: flyWebPublishServer.denyPublishServer
+msgid "Block Server"
+msgstr ""
+
+#. # LOCALIZATION NOTE (flyWebPublishServer.denyPublishServer.accessKey): This is an experimental feature only shipping in Nightly, and doesn't need translation.
+#: flyWebPublishServer.denyPublishServer.accesskey
+msgid "B"
+msgstr ""
 
 #: webNotifications.receiveForSession
 msgid "Receive for this session"
@@ -1268,46 +1293,6 @@ msgstr "&Không chia sẻ"
 #: getUserMedia.never.label getUserMedia.never.accesskey
 msgid "&Never Share"
 msgstr "Không &bao giờ chia sẻ"
-
-#: getUserMedia.sharingCamera.message2
-msgid "You are currently sharing your camera with this page."
-msgstr "Bạn đang chia sẻ camera với trang này."
-
-#: getUserMedia.sharingMicrophone.message2
-msgid "You are currently sharing your microphone with this page."
-msgstr "Bạn đang chia sẻ micrô với trang này."
-
-#: getUserMedia.sharingCameraAndMicrophone.message2
-msgid "You are currently sharing your camera and microphone with this page."
-msgstr "Bạn đang chia sẻ camera và micrô với trang này."
-
-#: getUserMedia.sharingApplication.message
-msgid "You are currently sharing an application with this page."
-msgstr "Bạn đang chia sẻ một ứng dụng với trang này."
-
-#: getUserMedia.sharingScreen.message
-msgid "You are currently sharing your screen with this page."
-msgstr "Bạn đang chia sẻ màn hình với trang này."
-
-#: getUserMedia.sharingWindow.message
-msgid "You are currently sharing a window with this page."
-msgstr "Bạn đang chia sẻ một cửa sổ với trang này."
-
-#: getUserMedia.sharingBrowser.message
-msgid "You are currently sharing a tab with this page."
-msgstr "Bạn đang chia sẻ một tab với trang này."
-
-#: getUserMedia.sharingAudioCapture.message
-msgid "You are currently sharing a tab’s audio with this page."
-msgstr "Bạn đang chia sẻ audio của một thẻ với trang này."
-
-#: getUserMedia.continueSharing.label getUserMedia.continueSharing.accesskey
-msgid "&Continue Sharing"
-msgstr "&Tiếp tục chia sẻ"
-
-#: getUserMedia.stopSharing.label getUserMedia.stopSharing.accesskey
-msgid "&Stop Sharing"
-msgstr "&Ngừng chia sẻ"
 
 #: getUserMedia.sharingMenu.label getUserMedia.sharingMenu.accesskey
 msgid "Tabs sharing &devices"
@@ -1720,24 +1705,23 @@ msgstr ""
 msgid "Bookmarked Tab Groups"
 msgstr ""
 
-#. # LOCALIZATION NOTE (pendingCrashReports.label): Semi-colon list of plural forms
+#. # LOCALIZATION NOTE (pendingCrashReports2.label): Semi-colon list of plural forms
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # #1 is the number of pending crash reports
-#: pendingCrashReports.label
-msgid ""
-"You have an unsubmitted crash report;You have #1 unsubmitted crash reports"
+#: pendingCrashReports2.label
+msgid "You have an unsent crash report;You have #1 unsent crash reports"
 msgstr ""
 
 #: pendingCrashReports.viewAll
 msgid "View"
 msgstr ""
 
-#: pendingCrashReports.submitAll
-msgid "Submit"
+#: pendingCrashReports.send
+msgid "Send"
 msgstr ""
 
-#: pendingCrashReports.ignoreAll
-msgid "Ignore"
+#: pendingCrashReports.alwaysSend
+msgid "Always Send"
 msgstr ""
 
 #: decoder.noCodecs.button
@@ -1779,6 +1763,56 @@ msgid ""
 "To improve video quality, you may need to install Microsoft’s Platform "
 "Update Supplement for Windows Vista."
 msgstr ""
+
+#: permissions.remove.tooltip
+msgid "Clear this permission and ask again"
+msgstr ""
+
+#. # LOCALIZATION NOTE (aboutDialog.architecture.*):
+#. # The sixtyFourBit and thirtyTwoBit strings describe the architecture of the
+#. # current Firefox build: 32-bit or 64-bit. These strings are used in parentheses
+#. # between the Firefox version and the "What's new" link in the About dialog,
+#. # e.g.: "48.0.2 (32-bit) <What's new>" or "51.0a1 (2016-09-05) (64-bit)".
+#: aboutDialog.architecture.sixtyFourBit
+msgid "64-bit"
+msgstr ""
+
+#: aboutDialog.architecture.thirtyTwoBit
+msgid "32-bit"
+msgstr ""
+
+#~ msgid "This website does not supply identity information."
+#~ msgstr "Trang web này không cung cấp thông tin định danh."
+
+#~ msgid "You are currently sharing your camera with this page."
+#~ msgstr "Bạn đang chia sẻ camera với trang này."
+
+#~ msgid "You are currently sharing your microphone with this page."
+#~ msgstr "Bạn đang chia sẻ micrô với trang này."
+
+#~ msgid "You are currently sharing your camera and microphone with this page."
+#~ msgstr "Bạn đang chia sẻ camera và micrô với trang này."
+
+#~ msgid "You are currently sharing an application with this page."
+#~ msgstr "Bạn đang chia sẻ một ứng dụng với trang này."
+
+#~ msgid "You are currently sharing your screen with this page."
+#~ msgstr "Bạn đang chia sẻ màn hình với trang này."
+
+#~ msgid "You are currently sharing a window with this page."
+#~ msgstr "Bạn đang chia sẻ một cửa sổ với trang này."
+
+#~ msgid "You are currently sharing a tab with this page."
+#~ msgstr "Bạn đang chia sẻ một tab với trang này."
+
+#~ msgid "You are currently sharing a tab’s audio with this page."
+#~ msgstr "Bạn đang chia sẻ audio của một thẻ với trang này."
+
+#~ msgid "&Continue Sharing"
+#~ msgstr "&Tiếp tục chia sẻ"
+
+#~ msgid "&Stop Sharing"
+#~ msgstr "&Ngừng chia sẻ"
 
 #~ msgid "Hide pointer"
 #~ msgstr "Ẩn con trỏ"
@@ -2033,9 +2067,6 @@ msgstr ""
 
 #~ msgid "Always Block Push Notifications"
 #~ msgstr "Luôn luôn chặn thông báo"
-
-#~ msgid "B"
-#~ msgstr "c"
 
 #~ msgid "Would you like to allow Push Notifications for this site?"
 #~ msgstr "Bạn có muốn hiển thị thông báo từ trang web này không?"
