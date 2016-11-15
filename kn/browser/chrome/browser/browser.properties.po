@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-19 14:17+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-09-22 19:36+0000\n"
 "Last-Translator: Omshivaprakash H L <omshivaprakash@gmail.com>\n"
 "Language-Team: Kannada <kde-i18n-doc@kde.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1474572986.000000\n"
 
@@ -35,6 +35,11 @@ msgstr "ನೆಲೆ ಪುಟವನ್ನು ಸಂಯೋಜಿಸು"
 
 #: droponhomemsg
 msgid "Do you want this document to be your new home page?"
+msgstr "ನೀವು ಈ ದಸ್ತಾವೇಜನ್ನು ನಿಮ್ಮ ಹೊಸ ನೆಲೆ ಪುಟವನ್ನಾಗಿಸಲು ಬಯಸುತ್ತೀರೆ?"
+
+#: droponhomemsgMultiple
+#, fuzzy
+msgid "Do you want these documents to be your new home pages?"
 msgstr "ನೀವು ಈ ದಸ್ತಾವೇಜನ್ನು ನಿಮ್ಮ ಹೊಸ ನೆಲೆ ಪುಟವನ್ನಾಗಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #. # context menu strings
@@ -946,28 +951,6 @@ msgstr "ನೀವು ಕಡತದೊಂದಿಗೆ ನೀವಿರುವ ಸ್
 msgid "Would you like to share your location with this file?"
 msgstr "ನೀವು ಈ ಕಡತದೊಂದಿಗೆ ನೀವಿರುವ ಸ್ಥಳದ ಮಾಹಿತಿಯನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಬಯಸುವಿರಾ?"
 
-#. # FlyWeb UI
-#. # LOCALIZATION NOTE (flyWebPublishServer.allowPublishServer): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.allowPublishServer
-msgid "Allow Server"
-msgstr "‍ಸರ್ವರ್‍ ಅನುಮತಿಸು‍"
-
-#. # LOCALIZATION NOTE (flyWebPublishServer.allowPublishServer.accessKey): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.allowPublishServer.accesskey
-msgctxt "flyWebPublishServer.allowPublishServer.accesskey"
-msgid "A"
-msgstr "A‍"
-
-#. # LOCALIZATION NOTE (flyWebPublishServer.denyPublishServer): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.denyPublishServer
-msgid "Block Server"
-msgstr "‍ಸರ್ವರ್‍ ನಿರ್ಭಂಧಿಸು"
-
-#. # LOCALIZATION NOTE (flyWebPublishServer.denyPublishServer.accessKey): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.denyPublishServer.accesskey
-msgid "B"
-msgstr "B‍"
-
 #: webNotifications.receiveForSession
 msgid "Receive for this session"
 msgstr "ಈ ಅಧಿವೇಶನಕ್ಕಾಗಿ ಪಡೆದುಕೊಳ್ಳಿ"
@@ -1214,6 +1197,30 @@ msgstr "%S ದೊಂದಿಗೆ ನಿಮ್ಮ ಟ್ಯಾಬ್‌ನ ಆಡ
 #: getUserMedia.shareAudioCapture.message
 msgid "Would you like to share this tab’s audio with %S?"
 msgstr "%S ದೊಂದಿಗೆ ಈ ಟ್ಯಾಬ್‌ನ ಆಡಿಯೊವನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಬಯಸುವಿರಾ?"
+
+#. # LOCALIZATION NOTE (getUserMedia.shareScreenWarning.message): NB: inserted via innerHTML, so please don't use <, > or & in this string.
+#. # %S will be the 'learn more' link
+#: getUserMedia.shareScreenWarning.message
+msgid ""
+"Only share screens with sites you trust. Sharing can allow deceptive sites "
+"to browse as you and steal your private data. %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (getUserMedia.shareFirefoxWarning.message): NB: inserted via innerHTML, so please don't use <, > or & in this string.
+#. # %1$S is brandShortName (eg. Firefox)
+#. # %2$S will be the 'learn more' link
+#: getUserMedia.shareFirefoxWarning.message
+msgid ""
+"Only share %1$S with sites you trust. Sharing can allow deceptive sites to "
+"browse as you and steal your private data. %2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(getUserMedia.shareScreen.learnMoreLabel): NB: inserted via innerHTML, so please don't use <, > or & in this string.
+#: getUserMedia.shareScreen.learnMoreLabel
+#, fuzzy
+msgctxt "getUserMedia.shareScreen.learnMoreLabel"
+msgid "Learn More"
+msgstr "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
 
 #: getUserMedia.selectWindow.label getUserMedia.selectWindow.accesskey
 msgid "&Window to share:"
@@ -1479,17 +1486,10 @@ msgstr "&Enable DRM"
 
 #. # LOCALIZATION NOTE(emeNotifications.drmContentDisabled.learnMoreLabel): NB: inserted via innerHTML, so please don't use <, > or & in this string.
 #: emeNotifications.drmContentDisabled.learnMoreLabel
+#, fuzzy
+msgctxt "emeNotifications.drmContentDisabled.learnMoreLabel"
 msgid "Learn More"
 msgstr "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
-
-#. # LOCALIZATION NOTE(emeNotifications.drmContentCDMInsufficientVersion.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %S is brandShortName
-#: emeNotifications.drmContentCDMInsufficientVersion.message
-msgid ""
-"%S is installing updates needed to play the audio or video on this page. "
-"Please try again later."
-msgstr ""
-"%S ಈ ಪುಟದಲ್ಲಿ ಧ್ವನಿ ಅಥವಾ ವೀಡಿಯೊ ಪ್ಲೇ ಮಾಡಲು ಬೇಕಿರುವ ಪರಿಷ್ಕರಣೆಗಳನ್ನು "
-"ಅನುಸ್ಥಾಪಿಸುತ್ತಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
 
 #. # LOCALIZATION NOTE(emeNotifications.drmContentCDMInstalling.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %S is brandShortName
 #: emeNotifications.drmContentCDMInstalling.message
@@ -1661,6 +1661,10 @@ msgstr "ಶಾಪಿಂಗ್"
 msgid "&No Container"
 msgstr "ಕಂಟೈನರ್ ಲಭ್ಯವಿಲ್ಲ"
 
+#: userContext.aboutPage.label userContext.aboutPage.accesskey
+msgid "Manage c&ontainers"
+msgstr ""
+
 #: userContextOpenLink.label
 msgid "Open Link in New %S Tab"
 msgstr "ಹೊಸ %S ಟ್ಯಾಬ್‌ನಲ್ಲಿ ಕೊಂಡಿಯನ್ನು ತೆರೆ"
@@ -1700,16 +1704,6 @@ msgstr "HTTP ಸಾರ್ವಜನಿಕ ಕೀಲಿ ಪಿನ್ನಿಂಗ�
 #: certErrorDetailsCertChain.label
 msgid "Certificate chain:"
 msgstr "ಪ್ರಮಾಣಪತ್ರದ ಕೊಂಡಿ:"
-
-#. # LOCALIZATION NOTE (tabgroups.migration.anonGroup):
-#. # %S is the group number/ID
-#: tabgroups.migration.anonGroup
-msgid "Group %S"
-msgstr "%S ಅನ್ನು ಗುಂಪುಗೂಡಿಸು"
-
-#: tabgroups.migration.tabGroupBookmarkFolderName
-msgid "Bookmarked Tab Groups"
-msgstr "ಗುರುತುಮಾಡಲಾದ ಹಾಳೆಗಳ ಗುಂಪುಗಳು"
 
 #. # LOCALIZATION NOTE (pendingCrashReports2.label): Semi-colon list of plural forms
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -1781,6 +1775,39 @@ msgstr ""
 "ವೀಡಿಯೊದ ಗುಣಮಟ್ಟವನ್ನು ಸುಧಾರಿಸಲು, ವಿಂಡೋಸ್‌ ವಿಸ್ಟಾಗಾಗಿ ಮೈಕ್ರೋಸಾಫ್ಟ್‌ನ ಪ್ಲಾಟ್‌ಫಾರ್ಮ್ ಅಪ್‌ಡೇಟ್ "
 "ಸಪ್ಲಿಮೆಂಟ್‌ ಅನ್ನು ಅನುಸ್ಥಾಪಿಸಬೇಕಾಗಬಹುದು."
 
+#: decoder.noPulseAudio.message
+#, fuzzy
+msgid ""
+"To play audio, you may need to install the required PulseAudio software."
+msgstr "ವೀಡಿಯೊವನ್ನು ಪ್ಲೇ ಮಾಡಲು, ಅಗತ್ಯವಿರುವ ವೀಡಿಯೊ ಕೋಡೆಕ್‌ಗಳನ್ನು ಅನುಸ್ಥಾಪಿಸಬೇಕಾಗಬಹುದು."
+
+#: decoder.unsupportedLibavcodec.message
+msgid ""
+"libavcodec may be vulnerable or is not supported, and should be updated to "
+"play video."
+msgstr ""
+
+#. # LOCALIZATION NOTE (captivePortal.infoMessage,
+#. #                    captivePortal.infoMessage2):
+#. # Shown in a notification bar when we detect a captive portal is blocking network access
+#. # and requires the user to log in before browsing. %1$S is replaced with brandShortName.
+#: captivePortal.infoMessage
+msgid ""
+"This network may require you to login to use the internet. %1$S has opened "
+"the login page for you."
+msgstr ""
+
+#: captivePortal.infoMessage2
+msgid "This network may require you to login to use the internet."
+msgstr ""
+
+#. # LOCALIZATION NOTE (captivePortal.showLoginPage):
+#. # The label for a button shown in the info bar in all tabs except the login page tab.
+#. # The button shows the portal login page tab when clicked.
+#: captivePortal.showLoginPage
+msgid "Show Login Page"
+msgstr ""
+
 #: permissions.remove.tooltip
 msgid "Clear this permission and ask again"
 msgstr ""
@@ -1797,6 +1824,32 @@ msgstr "‍64-ಬಿಟ್‍"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "‍32-ಬಿಟ್‍"
+
+#~ msgid "Allow Server"
+#~ msgstr "‍ಸರ್ವರ್‍ ಅನುಮತಿಸು‍"
+
+#~ msgctxt "flyWebPublishServer.allowPublishServer.accesskey"
+#~ msgid "A"
+#~ msgstr "A‍"
+
+#~ msgid "Block Server"
+#~ msgstr "‍ಸರ್ವರ್‍ ನಿರ್ಭಂಧಿಸು"
+
+#~ msgid "B"
+#~ msgstr "B‍"
+
+#~ msgid ""
+#~ "%S is installing updates needed to play the audio or video on this page. "
+#~ "Please try again later."
+#~ msgstr ""
+#~ "%S ಈ ಪುಟದಲ್ಲಿ ಧ್ವನಿ ಅಥವಾ ವೀಡಿಯೊ ಪ್ಲೇ ಮಾಡಲು ಬೇಕಿರುವ ಪರಿಷ್ಕರಣೆಗಳನ್ನು "
+#~ "ಅನುಸ್ಥಾಪಿಸುತ್ತಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೊಮ್ಮೆ ಪ್ರಯತ್ನಿಸಿ."
+
+#~ msgid "Group %S"
+#~ msgstr "%S ಅನ್ನು ಗುಂಪುಗೂಡಿಸು"
+
+#~ msgid "Bookmarked Tab Groups"
+#~ msgstr "ಗುರುತುಮಾಡಲಾದ ಹಾಳೆಗಳ ಗುಂಪುಗಳು"
 
 #~ msgid "This website does not supply identity information."
 #~ msgstr "ಈ ಜಾಲತಾಣವು ತನ್ನ ಗುರುತಿನ ಮಾಹಿತಿಯನ್ನು ಒದಗಿಸಿಲ್ಲ."
@@ -1880,10 +1933,6 @@ msgstr "‍32-ಬಿಟ್‍"
 #~ msgstr ""
 #~ "ನೀವು %S ಖಾತೆಯನ್ನು ಆಡ್-ಆನ್‌ಗಳನ್ನು ಅನೇಕ ಸಾಧನಗಳ ನಡುವೆ ಹೊಂದಾಣಿಕೆ ಮಾಡಲು ನೀವು "
 #~ "ಬಳಸಬಹುದು."
-
-#~ msgctxt "emeNotifications.drmContentDisabled.learnMoreLabel"
-#~ msgid "Learn More"
-#~ msgstr "ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"
 
 #~ msgid "No Video"
 #~ msgstr "ವೀಡಿಯೊ ಇಲ್ಲ"

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 17:21+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-06-21 17:05+0000\n"
 "Last-Translator: Selim Şumlu <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,8 +25,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1466528753.000000\n"
 
@@ -49,17 +49,25 @@ msgctxt "next_label"
 msgid "Next"
 msgstr "Sonraki"
 
-#. # LOCALIZATION NOTE (page_label, page_of):
-#. # These strings are concatenated to form the "Page: X of Y" string.
-#. # Do not translate "{{pageCount}}", it will be substituted with a number
-#. # representing the total number of pages.
-#: page_label
-msgid "Page:"
+#. # LOCALIZATION NOTE (page.title): The tooltip for the pageNumber input.
+#: page.title
+#, fuzzy
+msgid "Page"
 msgstr "Sayfa:"
 
-#: page_of
-msgid "of {{pageCount}}"
+#. # LOCALIZATION NOTE (of_pages): "{{pagesCount}}" will be replaced by a number
+#. # representing the total number of pages in the document.
+#: of_pages
+#, fuzzy
+msgid "of {{pagesCount}}"
 msgstr "/ {{pageCount}}"
+
+#. # LOCALIZATION NOTE (page_of_pages): "{{pageNumber}}" and "{{pagesCount}}"
+#. # will be replaced by a number representing the currently visible page,
+#. # respectively a number representing the total number of pages in the document.
+#: page_of_pages
+msgid "({{pageNumber}} of {{pagesCount}})"
+msgstr ""
 
 #: zoom_out.title
 msgctxt "zoom_out.title"
@@ -302,6 +310,22 @@ msgctxt "document_properties_close"
 msgid "Close"
 msgstr "Kapat"
 
+#: print_progress_message
+msgid "Preparing document for printing…"
+msgstr ""
+
+#. # LOCALIZATION NOTE (print_progress_percent): "{{progress}}" will be replaced by
+#. # a numerical per cent value.
+#: print_progress_percent
+msgid "{{progress}}%"
+msgstr ""
+
+#: print_progress_close
+#, fuzzy
+msgctxt "print_progress_close"
+msgid "Cancel"
+msgstr "İptal"
+
 #. # Tooltips and alt text for side panel toolbar buttons
 #. # (the _label strings are alt text for the buttons, the .title strings are
 #. # tooltips)
@@ -315,11 +339,11 @@ msgctxt "toggle_sidebar_label"
 msgid "Toggle Sidebar"
 msgstr "Kenar çubuğunu aç/kapat"
 
-#: outline.title
-msgid "Show Document Outline"
-msgstr "Belge şemasını göster"
+#: document_outline.title
+msgid "Show Document Outline (double-click to expand/collapse all items)"
+msgstr ""
 
-#: outline_label
+#: document_outline_label
 msgid "Document Outline"
 msgstr "Belge şeması"
 
@@ -514,6 +538,8 @@ msgid "OK"
 msgstr "Tamam"
 
 #: password_cancel
+#, fuzzy
+msgctxt "password_cancel"
 msgid "Cancel"
 msgstr "İptal"
 
@@ -537,6 +563,9 @@ msgstr ""
 "PDF belgelerinin kendi renklerini kullanması için izin verilmiyor: "
 "“Sayfalara kendi renklerini seçmesi için izin ver” tarayıcıda "
 "etkinleştirilmemiş."
+
+#~ msgid "Show Document Outline"
+#~ msgstr "Belge şemasını göster"
 
 #~ msgid "PDF is protected by a password:"
 #~ msgstr "Bu PDF parola korumalı:"

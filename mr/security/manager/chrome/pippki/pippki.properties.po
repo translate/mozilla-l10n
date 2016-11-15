@@ -1,4 +1,3 @@
-#. #
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -7,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-09-24 11:08+0000\n"
 "Last-Translator: Chaitali Kulkarni <crkulkarni2904@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1474715297.000000\n"
 
@@ -27,8 +26,15 @@ msgid ""
 "security device."
 msgstr "व्यक्तिगत कळ सुरक्षा साधनकरीता व्यक्तिगत सुरक्षा पासवर्ड कृपया प्रविष्ट करा."
 
-#. #These are for dialogs
-#. #Download Cert dialog
+#. # LOCALIZATION NOTE(certWithSerial): Used for semi-uniquely representing a cert.
+#. # %1$S is the serial number of the cert in AA:BB:CC hex format.
+#: certWithSerial
+msgid "Certificate with serial number: %1$S"
+msgstr ""
+
+#. # Download Cert dialog
+#. # LOCALIZATION NOTE(newCAMessage1):
+#. # %S is a string representative of the certificate being downloaded/imported.
 #: newCAMessage1
 msgid "Do you want to trust “%S” for the following purposes?"
 msgstr "आपणास \"%S\" वर पुढील कारणांसाठी विश्वास ठेवायचे?"
@@ -37,12 +43,12 @@ msgstr "आपणास \"%S\" वर पुढील कारणांसा�
 msgid "Certificate Authority (unnamed)"
 msgstr "प्रमाणपत्र अधिप्रमाणन (निनामी)"
 
-#. #For editing cert trust
+#. # For editing cert trust
 #: editTrustCA
 msgid "The certificate “%S” represents a Certificate Authority."
 msgstr "\"%S\" प्रमाणपत्र, Certificate Authority प्रस्तुत करते."
 
-#. #For Deleting Certificates
+#. # For Deleting Certificates
 #: deleteSslCertConfirm3
 msgid "Are you sure you want to delete these server exceptions?"
 msgstr "आपणास नक्की या सर्व्हर अपवाद काढायच्या आहेत?"
@@ -120,7 +126,7 @@ msgstr "आपणास नक्की हे प्रमाणपत्र �
 msgid "Delete Certificates"
 msgstr "प्रमाणपत्र काढूण टाका"
 
-#. #PKCS#12 file dialogs
+#. # PKCS#12 file dialogs
 #: chooseP12RestoreFileDialog2
 msgid "Certificate File to Import"
 msgstr "आयात करण्याकरिता प्रमाणपत्र फाइल"
@@ -138,7 +144,7 @@ msgid ""
 "Please enter the password that was used to encrypt this certificate backup:"
 msgstr "या प्रमाणपत्राचा बॅकअप एन्क्रिप्ट करताना वापरलेला पासवर्ड टाका:"
 
-#. #Cert verification
+#. # Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr "हे प्रमाणपत्र खालिल वापरांकरिता तपासलेले आहे:"
@@ -180,7 +186,7 @@ msgstr ""
 msgid "Could not verify this certificate for unknown reasons."
 msgstr "अपिरिचीत कारणास्तव प्रमाणपत्र तपासू शकले नाही."
 
-#. #Client auth
+#. # Client auth
 #: clientAuthRemember
 msgid "Remember this decision"
 msgstr "हा निर्णय लक्षात ठेवा"
@@ -256,7 +262,7 @@ msgstr "जारी करणारे: %1$S"
 msgid "Stored on: %1$S"
 msgstr "संग्रहित: %1$S"
 
-#. #Page Info
+#. # Page Info
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "जुळवणी एनक्रिप्टेड नाही"
@@ -324,16 +330,39 @@ msgstr ""
 "या वेबसाइटवर आपले कनेक्शन कमकुवत एनक्रिप्शन वापरते तसेच ते खाजगी नाही. इतर लोक आपली "
 "माहिती पाहु शकतात किंवा वेबसाइटचे वर्तन बदलू शकतात."
 
-#. #Cert Viewer
-#: certDetails
-msgid "Certificate Viewer:"
-msgstr "प्रमाणपत्र दृश्यक:"
+#: pageInfo_CertificateTransparency_None
+msgid "This website does not supply Certificate Transparency audit records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_OK
+msgid ""
+"This website supplies publicly auditable Certificate Transparency records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_UnknownLog
+msgid ""
+"This website claims to have Certificate Transparency audit records, but the "
+"records were issued by an unknown party and cannot be verified."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_Invalid
+msgid ""
+"This website supplies Certificate Transparency audit records, but the "
+"records failed verification."
+msgstr ""
+
+#. # Cert Viewer
+#. # LOCALIZATION NOTE(certViewerTitle): Title used for the Certificate Viewer.
+#. # %1$S is a string representative of the certificate being viewed.
+#: certViewerTitle
+msgid "Certificate Viewer: “%1$S”"
+msgstr ""
 
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<प्रमाणपत्राचा भाग नाही>"
 
-#. #Token Manager
+#. # Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(स्थापित नाही)"
@@ -537,7 +566,7 @@ msgstr "साधनावर रिकामी जागा नाही"
 msgid "Unknown error"
 msgstr "अपरिचीत त्रुटी"
 
-#. #Add Security Exception dialog
+#. # Add Security Exception dialog
 #: addExceptionBrandedWarning2
 msgid "You are about to override how %S identifies this site."
 msgstr "%S स्थळाची ओळख कसे करते हे आपणास लगेच कळेल."
@@ -606,6 +635,9 @@ msgstr "माहिती उपलब्ध नाही"
 #: addExceptionNoCertLong2
 msgid "Unable to obtain identification status for this site."
 msgstr "या संकेतस्थळाची ओळखविषयक स्थिती प्राप्त करू शकत नाही."
+
+#~ msgid "Certificate Viewer:"
+#~ msgstr "प्रमाणपत्र दृश्यक:"
 
 #~ msgid "The page you are viewing is not encrypted."
 #~ msgstr "आपण पहात असलेले पृष्ठ एनक्रिप्टेड नाही."

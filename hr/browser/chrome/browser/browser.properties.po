@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-19 14:17+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-10-18 09:26+0000\n"
 "Last-Translator: Mihovil Stanić <mihovil@miho.im>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1476782793.000000\n"
 
@@ -35,6 +35,11 @@ msgstr "Postavi početnu stranicu"
 
 #: droponhomemsg
 msgid "Do you want this document to be your new home page?"
+msgstr "Želite li postaviti ovaj dokument za svoju početnu stranicu?"
+
+#: droponhomemsgMultiple
+#, fuzzy
+msgid "Do you want these documents to be your new home pages?"
 msgstr "Želite li postaviti ovaj dokument za svoju početnu stranicu?"
 
 #. # context menu strings
@@ -947,28 +952,6 @@ msgstr "Želite li podijeliti svoju lokaciju s ovom stranicom?"
 msgid "Would you like to share your location with this file?"
 msgstr "Želite li podijeliti svoju lokaciju s ovom datotekom?"
 
-#. # FlyWeb UI
-#. # LOCALIZATION NOTE (flyWebPublishServer.allowPublishServer): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.allowPublishServer
-msgid "Allow Server"
-msgstr ""
-
-#. # LOCALIZATION NOTE (flyWebPublishServer.allowPublishServer.accessKey): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.allowPublishServer.accesskey
-msgctxt "flyWebPublishServer.allowPublishServer.accesskey"
-msgid "A"
-msgstr ""
-
-#. # LOCALIZATION NOTE (flyWebPublishServer.denyPublishServer): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.denyPublishServer
-msgid "Block Server"
-msgstr ""
-
-#. # LOCALIZATION NOTE (flyWebPublishServer.denyPublishServer.accessKey): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.denyPublishServer.accesskey
-msgid "B"
-msgstr ""
-
 #: webNotifications.receiveForSession
 msgid "Receive for this session"
 msgstr "Primaj u ovoj sesiji"
@@ -1213,6 +1196,30 @@ msgstr "Želite li podijeliti vaš ekran i zvuk kartice sa sa %S?"
 #: getUserMedia.shareAudioCapture.message
 msgid "Would you like to share this tab’s audio with %S?"
 msgstr "Želite li podijeliti zvuk ove kartice sa %S?"
+
+#. # LOCALIZATION NOTE (getUserMedia.shareScreenWarning.message): NB: inserted via innerHTML, so please don't use <, > or & in this string.
+#. # %S will be the 'learn more' link
+#: getUserMedia.shareScreenWarning.message
+msgid ""
+"Only share screens with sites you trust. Sharing can allow deceptive sites "
+"to browse as you and steal your private data. %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (getUserMedia.shareFirefoxWarning.message): NB: inserted via innerHTML, so please don't use <, > or & in this string.
+#. # %1$S is brandShortName (eg. Firefox)
+#. # %2$S will be the 'learn more' link
+#: getUserMedia.shareFirefoxWarning.message
+msgid ""
+"Only share %1$S with sites you trust. Sharing can allow deceptive sites to "
+"browse as you and steal your private data. %2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(getUserMedia.shareScreen.learnMoreLabel): NB: inserted via innerHTML, so please don't use <, > or & in this string.
+#: getUserMedia.shareScreen.learnMoreLabel
+#, fuzzy
+msgctxt "getUserMedia.shareScreen.learnMoreLabel"
+msgid "Learn More"
+msgstr "Saznajte više"
 
 #: getUserMedia.selectWindow.label getUserMedia.selectWindow.accesskey
 msgid "&Window to share:"
@@ -1481,17 +1488,9 @@ msgstr "&Omogući DRM"
 #. # LOCALIZATION NOTE(emeNotifications.drmContentDisabled.learnMoreLabel): NB: inserted via innerHTML, so please don't use <, > or & in this string.
 #: emeNotifications.drmContentDisabled.learnMoreLabel
 #, fuzzy
+msgctxt "emeNotifications.drmContentDisabled.learnMoreLabel"
 msgid "Learn More"
 msgstr "Saznajte više"
-
-#. # LOCALIZATION NOTE(emeNotifications.drmContentCDMInsufficientVersion.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %S is brandShortName
-#: emeNotifications.drmContentCDMInsufficientVersion.message
-msgid ""
-"%S is installing updates needed to play the audio or video on this page. "
-"Please try again later."
-msgstr ""
-"%S instalira dopune potrebne za reproduciranje audio ili video materijala na "
-"ovoj stranici. Molim pokušajte ponovno kasnije."
 
 #. # LOCALIZATION NOTE(emeNotifications.drmContentCDMInstalling.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %S is brandShortName
 #: emeNotifications.drmContentCDMInstalling.message
@@ -1664,6 +1663,10 @@ msgstr "&Kupovina"
 msgid "&No Container"
 msgstr "Bez sprem&nika"
 
+#: userContext.aboutPage.label userContext.aboutPage.accesskey
+msgid "Manage c&ontainers"
+msgstr ""
+
 #: userContextOpenLink.label
 msgid "Open Link in New %S Tab"
 msgstr ""
@@ -1703,16 +1706,6 @@ msgstr "HTTP Public Key Pinning: %S"
 #: certErrorDetailsCertChain.label
 msgid "Certificate chain:"
 msgstr "Lanac certifikata:"
-
-#. # LOCALIZATION NOTE (tabgroups.migration.anonGroup):
-#. # %S is the group number/ID
-#: tabgroups.migration.anonGroup
-msgid "Group %S"
-msgstr "Grupa %S"
-
-#: tabgroups.migration.tabGroupBookmarkFolderName
-msgid "Bookmarked Tab Groups"
-msgstr "Zabilježene grupe kartica"
 
 #. # LOCALIZATION NOTE (pendingCrashReports2.label): Semi-colon list of plural forms
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -1788,6 +1781,41 @@ msgstr ""
 "Kako biste poboljšali kvalitetu videa, možda ćete morati instalirati "
 "Microsoft Platform Update Supplement za Windows Vista."
 
+#: decoder.noPulseAudio.message
+#, fuzzy
+msgid ""
+"To play audio, you may need to install the required PulseAudio software."
+msgstr ""
+"Da biste reproducirali video, možda ćete trebati instalirati potrebne video "
+"kodeke."
+
+#: decoder.unsupportedLibavcodec.message
+msgid ""
+"libavcodec may be vulnerable or is not supported, and should be updated to "
+"play video."
+msgstr ""
+
+#. # LOCALIZATION NOTE (captivePortal.infoMessage,
+#. #                    captivePortal.infoMessage2):
+#. # Shown in a notification bar when we detect a captive portal is blocking network access
+#. # and requires the user to log in before browsing. %1$S is replaced with brandShortName.
+#: captivePortal.infoMessage
+msgid ""
+"This network may require you to login to use the internet. %1$S has opened "
+"the login page for you."
+msgstr ""
+
+#: captivePortal.infoMessage2
+msgid "This network may require you to login to use the internet."
+msgstr ""
+
+#. # LOCALIZATION NOTE (captivePortal.showLoginPage):
+#. # The label for a button shown in the info bar in all tabs except the login page tab.
+#. # The button shows the portal login page tab when clicked.
+#: captivePortal.showLoginPage
+msgid "Show Login Page"
+msgstr ""
+
 #: permissions.remove.tooltip
 msgid "Clear this permission and ask again"
 msgstr "Poništi ovo dopuštenje i pitaj ponovno"
@@ -1804,6 +1832,19 @@ msgstr ""
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr ""
+
+#~ msgid ""
+#~ "%S is installing updates needed to play the audio or video on this page. "
+#~ "Please try again later."
+#~ msgstr ""
+#~ "%S instalira dopune potrebne za reproduciranje audio ili video materijala "
+#~ "na ovoj stranici. Molim pokušajte ponovno kasnije."
+
+#~ msgid "Group %S"
+#~ msgstr "Grupa %S"
+
+#~ msgid "Bookmarked Tab Groups"
+#~ msgstr "Zabilježene grupe kartica"
 
 #~ msgid "This website does not supply identity information."
 #~ msgstr "Ova stranica ne pruža informacije o identitetu."
@@ -1883,10 +1924,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Za sinkronizaciju dodataka između različitih uređaja možete koristiti "
 #~ "svoj %S račun. "
-
-#~ msgctxt "emeNotifications.drmContentDisabled.learnMoreLabel"
-#~ msgid "Learn More"
-#~ msgstr "Saznajte više"
 
 #~ msgid "No Video"
 #~ msgstr "Bez videa"

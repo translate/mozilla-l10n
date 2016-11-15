@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-19 14:17+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-10-29 06:39+0000\n"
 "Last-Translator: Dhiraj Kumar Singh <singhdhiraj255@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1477723161.000000\n"
 
@@ -351,6 +351,15 @@ msgstr ""
 "पूर्ण स्क्रीन के लिए अनुरोध इनकार कर दिया गया है क्योंकि Element.requestFullscreen() "
 "को उपयोगकर्ता द्वारा जन्मित इवेंट हैंडलर से कॉल नहीं किया गया."
 
+#: FullscreenDeniedNotHTMLSVGOrMathML
+#, fuzzy
+msgid ""
+"Request for fullscreen was denied because requesting element is not <svg>, "
+"<math>, or an HTML element."
+msgstr ""
+"पूर्ण स्क्रीन के लिए अनुरोध इनकार कर दिया गया है क्योंकि निवेदन करने वाला अंश अब दस्तावेज "
+"मैं नहीं है."
+
 #: FullscreenDeniedNotInDocument
 msgid ""
 "Request for fullscreen was denied because requesting element is no longer in "
@@ -643,6 +652,12 @@ msgstr ""
 "इस पृष्ठ पर के वीडियो को चलाया नहीं जा सकता है. आपके सिस्टम के पास %S के लिए आवश्यक "
 "वीडियो कोडेक्स नहीं हो सकता है."
 
+#: MediaUnsupportedLibavcodec
+msgid ""
+"The video on this page can’t be played. Your system has an unsupported "
+"version of libavcodec"
+msgstr ""
+
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaCannotPlayNoDecoders
 msgid "Cannot play media. No decoders for requested formats: %S"
@@ -652,6 +667,10 @@ msgstr "मीडिया चला नहीं सकता. निवेद�
 #: MediaNoDecoders
 msgid "No decoders for some of the requested formats: %S"
 msgstr "कुछ अनुरोध किये गये प्रारूपों: %S हेतु कोई विसंकेतक नहीं हैं"
+
+#: MediaCannotInitializePulseAudio
+msgid "Unable to use PulseAudio"
+msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "MediaRecorder".
 #: MediaRecorderMultiTracksNotSupported
@@ -1181,12 +1200,115 @@ msgstr ""
 "है. आईफ्रेम न्यावेशन द्वारा पैरामीटर असमर्थित थे और बदले गये. यदि संभव हो, तो न्यावेशन/वस्तु "
 "के स्थान पर आईफ्रेम उपयोग करने के लिए कृपया पृष्ठ ताजा करें."
 
-#. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %1$S is the ServiceWorker scope URL. %2$S is an error string.
-#: PushMessageDecryptionFailure
+#. # LOCALIZATION NOTE: This error is reported when the "Encryption" header for an
+#. # incoming push message is missing or invalid. Do not translate "ServiceWorker",
+#. # "Encryption", and "salt". %1$S is the ServiceWorker scope URL.
+#: PushMessageBadEncryptionHeader
 msgid ""
-"The ServiceWorker for scope ‘%1$S’ encountered an error decrypting a push "
-"message: ‘%2$S’. For help with encryption, please see https://developer."
-"mozilla.org/en-US/docs/Web/API/Push_API/Using_the_Push_API#Encryption"
+"The ServiceWorker for scope ‘%1$S’ failed to decrypt a push message. The "
+"‘Encryption’ header must include a unique ‘salt‘ parameter for each message. "
+"See https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
+"encoding-02#section-3.1 for more information."
+msgstr ""
+
+#. # LOCALIZATION NOTE: This error is reported when the "Crypto-Key" header for an
+#. # incoming push message is missing or invalid. Do not translate "ServiceWorker",
+#. # "Crypto-Key", and "dh". %1$S is the ServiceWorker scope URL.
+#: PushMessageBadCryptoKeyHeader
+msgid ""
+"The ServiceWorker for scope ‘%1$S’ failed to decrypt a push message. The "
+"‘Crypto-Key‘ header must include a ‘dh‘ parameter containing the app "
+"server’s public key. See https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-4 for more information."
+msgstr ""
+
+#. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt because the deprecated
+#. # "Encryption-Key" header for an incoming push message is missing or invalid.
+#. # Do not translate "ServiceWorker", "Encryption-Key", "dh", "Crypto-Key", and
+#. # "Content-Encoding: aesgcm". %1$S is the ServiceWorker scope URL.
+#: PushMessageBadEncryptionKeyHeader
+msgid ""
+"The ServiceWorker for scope ‘%1$S’ failed to decrypt a push message. The "
+"‘Encryption-Key’ header must include a ‘dh‘ parameter. This header is "
+"deprecated and will soon be removed. Please use ‘Crypto-Key‘ with ‘Content-"
+"Encoding: aesgcm‘ instead. See https://tools.ietf.org/html/draft-ietf-"
+"httpbis-encryption-encoding-02#section-4 for more information."
+msgstr ""
+
+#. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
+#. # because the "Content-Encoding" header is missing or contains an
+#. # unsupported encoding. Do not translate "ServiceWorker", "Content-Encoding",
+#. # "aesgcm", and "aesgcm128". %1$S is the ServiceWorker scope URL.
+#: PushMessageBadEncodingHeader
+msgid ""
+"The ServiceWorker for scope ‘%1$S’ failed to decrypt a push message. The "
+"‘Content-Encoding‘ header must be ‘aesgcm‘. ‘aesgcm128‘ is allowed, but "
+"deprecated and will soon be removed. See https://tools.ietf.org/html/draft-"
+"ietf-httpbis-encryption-encoding-02#section-2 for more information."
+msgstr ""
+
+#. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
+#. # because the "dh" parameter is not valid base64url. Do not translate
+#. # "ServiceWorker", "dh", "Crypto-Key", and "base64url". %1$S is the
+#. # ServiceWorker scope URL.
+#: PushMessageBadSenderKey
+msgid ""
+"The ServiceWorker for scope ‘%1$S’ failed to decrypt a push message. The "
+"‘dh‘ parameter in the ‘Crypto-Key‘ header must be the app server’s Diffie-"
+"Hellman public key, base64url-encoded (https://tools.ietf.org/html/"
+"rfc7515#appendix-C) and in “uncompressed” or “raw” form (65 bytes before "
+"encoding). See https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
+"encoding-02#section-4 for more information."
+msgstr ""
+
+#. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
+#. # because the "salt" parameter is not valid base64url. Do not translate
+#. # "ServiceWorker", "salt", "Encryption", and "base64url". %1$S is the
+#. # ServiceWorker scope URL.
+#: PushMessageBadSalt
+msgid ""
+"The ServiceWorker for scope ‘%1$S’ failed to decrypt a push message. The "
+"‘salt‘ parameter in the ‘Encryption‘ header must be base64url-encoded "
+"(https://tools.ietf.org/html/rfc7515#appendix-C), and be at least 16 bytes "
+"before encoding. See https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-3.1 for more information."
+msgstr ""
+
+#. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
+#. # because the "rs" parameter is not a number, or is less than the pad size.
+#. # Do not translate "ServiceWorker", "rs", or "Encryption". %1$S is the
+#. # ServiceWorker scope URL. %2$S is the minimum value (1 for aesgcm128, 2 for
+#. # aesgcm).
+#: PushMessageBadRecordSize
+msgid ""
+"The ServiceWorker for scope ‘%1$S’ failed to decrypt a push message. The "
+"‘rs‘ parameter of the ‘Encryption‘ header must be between %2$S and 2^36-31, "
+"or omitted entirely. See https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-3.1 for more information."
+msgstr ""
+
+#. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
+#. # because an encrypted record is shorter than the pad size, the pad is larger
+#. # than the record, or any of the padding bytes are non-zero. Do not translate
+#. # "ServiceWorker". %1$S is the ServiceWorker scope URL. %2$S is the pad size
+#. # (1 for aesgcm128, 2 for aesgcm).
+#: PushMessageBadPaddingError
+msgid ""
+"The ServiceWorker for scope ‘%1$S’ failed to decrypt a push message. A "
+"record in the encrypted message was not padded correctly. See https://tools."
+"ietf.org/html/draft-ietf-httpbis-encryption-encoding-02#section-2 for more "
+"information."
+msgstr ""
+
+#. # LOCALIZATION NOTE: This error is reported when push message decryption fails
+#. # and no specific error info is available. Do not translate "ServiceWorker".
+#. # %1$S is the ServiceWorker scope URL.
+#: PushMessageBadCryptoError
+#, fuzzy
+msgid ""
+"The ServiceWorker for scope ‘%1$S’ failed to decrypt a push message. For "
+"help with encryption, please see https://developer.mozilla.org/docs/Web/API/"
+"Push_API/Using_the_Push_API#Encryption"
 msgstr ""
 "‘%1$S’ क्षेत्र के लिए सेवाकर्मी ने एक संदेश: ‘%2$S’ के विकोडन के दौरान एक त्रुटि का सामना "
 "किया. गोपन की मदद के लिए, कृपया https://developer.mozilla.org/en-US/docs/Web/"
@@ -1206,6 +1328,14 @@ msgid "File.lastModifiedDate is deprecated. Use File.lastModified instead."
 msgstr ""
 "File.lastModifiedDate अवमानित किया गया है. उसकी जगह File.lastModified उपयोग "
 "करें."
+
+#. # LOCALIZATION NOTE: 'ImageBitmapRenderingContext.transferImageBitmap' and 'ImageBitmapRenderingContext.transferFromImageBitmap' should not be translated
+#: ImageBitmapRenderingContext_TransferImageBitmap
+msgid ""
+"ImageBitmapRenderingContext.transferImageBitmap is deprecated and will be "
+"removed soon. Use ImageBitmapRenderingContext.transferFromImageBitmap "
+"instead."
+msgstr ""
 
 #: ChromeScriptedDOMParserWithoutPrincipal
 msgid "Creating DOMParser without a principal is deprecated."
@@ -1242,6 +1372,39 @@ msgstr "image.png"
 #: GenericFileName
 msgid "file"
 msgstr "फ़ाइल"
+
+#. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
+#: LargeAllocationSuccess
+msgid "This page was loaded in a new process due to a Large-Allocation header."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name. Do not translate GET.
+#: LargeAllocationNonGetRequest
+msgid ""
+"A Large-Allocation header was ignored due to the load being triggered by a "
+"non-GET request."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
+#: LargeAllocationRelatedBrowsingContexts
+msgid ""
+"A Large-Allocation header was ignored due to the presence of windows which "
+"have a reference to this browsing context."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
+#: LargeAllocationInIFrame
+msgid ""
+"A Large-Allocation header was ignored due to the load occuring within an "
+"iframe."
+msgstr ""
+
+#. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
+#: LargeAllocationNonE10S
+msgid ""
+"A Large-Allocation header was ignored due to the document not being loaded "
+"out of process."
+msgstr ""
 
 #~ msgid ""
 #~ "‘mozHidden’ and ‘mozVisibilityState’ are deprecated.  Please use the "
