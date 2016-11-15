@@ -22,4 +22,4 @@ MOZ_REPO=mozilla-aurora
 MOZ_DIR="mozilla-aurora"
 L10N_VER=l10n
 
-alt_src="es es_MX fr ru"
+alt_src="bn_IN es es_MX fr ru"
