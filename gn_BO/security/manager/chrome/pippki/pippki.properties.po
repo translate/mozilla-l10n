@@ -1,4 +1,3 @@
-#. #
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -7,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-08-01 18:38+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1470076688.000000\n"
 
@@ -28,8 +27,15 @@ msgstr ""
 "Please enter the Personal Security Password for the PSM Private Keys "
 "security device."
 
-#. #These are for dialogs
-#. #Download Cert dialog
+#. # LOCALIZATION NOTE(certWithSerial): Used for semi-uniquely representing a cert.
+#. # %1$S is the serial number of the cert in AA:BB:CC hex format.
+#: certWithSerial
+msgid "Certificate with serial number: %1$S"
+msgstr ""
+
+#. # Download Cert dialog
+#. # LOCALIZATION NOTE(newCAMessage1):
+#. # %S is a string representative of the certificate being downloaded/imported.
 #: newCAMessage1
 msgid "Do you want to trust “%S” for the following purposes?"
 msgstr "¿Reyekota pa \"%S\" re ïru mbae reta oyeapo vaerä?"
@@ -38,12 +44,12 @@ msgstr "¿Reyekota pa \"%S\" re ïru mbae reta oyeapo vaerä?"
 msgid "Certificate Authority (unnamed)"
 msgstr "Mbaepuere güɨnoi ombocertifica vae (jeembae)"
 
-#. #For editing cert trust
+#. # For editing cert trust
 #: editTrustCA
 msgid "The certificate “%S” represents a Certificate Authority."
 msgstr "Certificado \"%S\" oï ko mbaepuere güɨnoi ombocertica vae jekovia pe."
 
-#. #For Deleting Certificates
+#. # For Deleting Certificates
 #: deleteSslCertConfirm3
 msgid "Are you sure you want to delete these server exceptions?"
 msgstr "¿Añetete pa reipota remboai kuae oñeñono oyeokuai vae reta?"
@@ -125,7 +131,7 @@ msgstr "¿Añetete pa reipota remboai kuae certificado reta?"
 msgid "Delete Certificates"
 msgstr "Emboai certificado reta"
 
-#. #PKCS#12 file dialogs
+#. # PKCS#12 file dialogs
 #: chooseP12RestoreFileDialog2
 msgid "Certificate File to Import"
 msgstr "Certificado iarchivo reta oyererugüe"
@@ -146,7 +152,7 @@ msgstr ""
 "Eikuatía ndeño reikuaa oyeporu oipapa vaerä copia yemborɨ pegua kuae "
 "certificado güi."
 
-#. #Cert verification
+#. # Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr "Kuae certificado re oñemae oyeporu vae reta rupi:"
@@ -189,7 +195,7 @@ msgstr ""
 msgid "Could not verify this certificate for unknown reasons."
 msgstr "Mbaetɨ ipuere oväe kuae certificado yaikuaambae reta jeko pegua."
 
-#. #Client auth
+#. # Client auth
 #: clientAuthRemember
 msgid "Remember this decision"
 msgstr ""
@@ -265,7 +271,7 @@ msgstr ""
 msgid "Stored on: %1$S"
 msgstr ""
 
-#. #Page Info
+#. # Page Info
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Ñemoïru oyepapambae"
@@ -334,16 +340,39 @@ msgid ""
 "Other people can view your information or modify the website’s behavior."
 msgstr ""
 
-#. #Cert Viewer
-#: certDetails
-msgid "Certificate Viewer:"
-msgstr "Certificado reta re ñañemomae vae:"
+#: pageInfo_CertificateTransparency_None
+msgid "This website does not supply Certificate Transparency audit records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_OK
+msgid ""
+"This website supplies publicly auditable Certificate Transparency records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_UnknownLog
+msgid ""
+"This website claims to have Certificate Transparency audit records, but the "
+"records were issued by an unknown party and cannot be verified."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_Invalid
+msgid ""
+"This website supplies Certificate Transparency audit records, but the "
+"records failed verification."
+msgstr ""
+
+#. # Cert Viewer
+#. # LOCALIZATION NOTE(certViewerTitle): Title used for the Certificate Viewer.
+#. # %1$S is a string representative of the certificate being viewed.
+#: certViewerTitle
+msgid "Certificate Viewer: “%1$S”"
+msgstr ""
 
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Mbaetɨ ko metei certificado pegua>"
 
-#. #Token Manager
+#. # Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(Ndeiño oï jenda pe kavi)"
@@ -552,7 +581,7 @@ msgstr "Mbaetɨ oime jendarä dispositivo pe"
 msgid "Unknown error"
 msgstr "Mbaavɨ yaikuaa mbae"
 
-#. #Add Security Exception dialog
+#. # Add Security Exception dialog
 #: addExceptionBrandedWarning2
 msgid "You are about to override how %S identifies this site."
 msgstr "Oipota ma oïmegua ikuaa rami %S jenda."
@@ -622,6 +651,9 @@ msgstr "Mbaetɨ yemombeu oïndaivi vae"
 #, fuzzy
 msgid "Unable to obtain identification status for this site."
 msgstr "Ngaraa ipuere güɨnoi omboyekuaa kërai rupi oñemee jendarä vae pe."
+
+#~ msgid "Certificate Viewer:"
+#~ msgstr "Certificado reta re ñañemomae vae:"
 
 #~ msgid "The page you are viewing is not encrypted."
 #~ msgstr "Págian reecha renoi vae mbaetɨ oyepapa oï."

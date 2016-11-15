@@ -1,4 +1,3 @@
-#. #
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -7,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pippki\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-08-01 22:51+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1470091904.000000\n"
 
@@ -28,8 +27,15 @@ msgid ""
 msgstr ""
 "PSM شەخسىي ئاچقۇچ بىخەتەرلىك ئۈسكۈنىسى ئۈچۈن شەخسىي بىخەتەرلىك ئىم كىرگۈزۈڭ."
 
-#. #These are for dialogs
-#. #Download Cert dialog
+#. # LOCALIZATION NOTE(certWithSerial): Used for semi-uniquely representing a cert.
+#. # %1$S is the serial number of the cert in AA:BB:CC hex format.
+#: certWithSerial
+msgid "Certificate with serial number: %1$S"
+msgstr ""
+
+#. # Download Cert dialog
+#. # LOCALIZATION NOTE(newCAMessage1):
+#. # %S is a string representative of the certificate being downloaded/imported.
 #: newCAMessage1
 msgid "Do you want to trust “%S” for the following purposes?"
 msgstr "تۆۋەندىكى مەقسەتتە ئىشلىتىش ئۈچۈن \"%S\" غا ئىشىنەمسىز؟"
@@ -38,12 +44,12 @@ msgstr "تۆۋەندىكى مەقسەتتە ئىشلىتىش ئۈچۈن \"%S\" �
 msgid "Certificate Authority (unnamed)"
 msgstr "گۇۋاھنامە ئورگىنى (نامسىز)"
 
-#. #For editing cert trust
+#. # For editing cert trust
 #: editTrustCA
 msgid "The certificate “%S” represents a Certificate Authority."
 msgstr "بۇ \"%S\" گۇۋاھنامە گۇۋاھنامە ئىجازىتىگە ۋەكىللىك قىلىدۇ."
 
-#. #For Deleting Certificates
+#. # For Deleting Certificates
 #: deleteSslCertConfirm3
 msgid "Are you sure you want to delete these server exceptions?"
 msgstr "بۇ مۇلازىمىتىر مۇستەسنالىرىنى راستىنلا ئۆچۈرەمسىز؟"
@@ -125,7 +131,7 @@ msgstr "بۇ گۇۋاھنامىلەرنى راستىنلا ئۆچۈرەمسىز�
 msgid "Delete Certificates"
 msgstr "گۇۋاھنامە ئۆچۈر"
 
-#. #PKCS#12 file dialogs
+#. # PKCS#12 file dialogs
 #: chooseP12RestoreFileDialog2
 msgid "Certificate File to Import"
 msgstr "ئەكىرىدىغان گۇۋاھنامە ھۆججەت"
@@ -144,7 +150,7 @@ msgid ""
 "Please enter the password that was used to encrypt this certificate backup:"
 msgstr "بۇ گۇۋاھنامىنى شىفىرلاپ زاپاسلاش ئۈچۈن ئىم كىرگۈزۈڭ."
 
-#. #Cert verification
+#. # Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr "بۇ گۇۋاھنامە دەلىللەنگەن، تۆۋەندىكى ئەھۋالدا ئىشلىتىشكە ماس كېلىدۇ:"
@@ -186,7 +192,7 @@ msgstr ""
 msgid "Could not verify this certificate for unknown reasons."
 msgstr "نامەلۇم سەۋەپتىن بۇ گۇۋاھنامىنى دەلىلليەلمەيدۇ."
 
-#. #Client auth
+#. # Client auth
 #: clientAuthRemember
 msgid "Remember this decision"
 msgstr ""
@@ -262,7 +268,7 @@ msgstr ""
 msgid "Stored on: %1$S"
 msgstr ""
 
-#. #Page Info
+#. # Page Info
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "ئۇلىنىش شىفىرلانمىغان"
@@ -333,16 +339,39 @@ msgid ""
 "Other people can view your information or modify the website’s behavior."
 msgstr ""
 
-#. #Cert Viewer
-#: certDetails
-msgid "Certificate Viewer:"
-msgstr "گۇۋاھنامە كۆرگۈچ:"
+#: pageInfo_CertificateTransparency_None
+msgid "This website does not supply Certificate Transparency audit records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_OK
+msgid ""
+"This website supplies publicly auditable Certificate Transparency records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_UnknownLog
+msgid ""
+"This website claims to have Certificate Transparency audit records, but the "
+"records were issued by an unknown party and cannot be verified."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_Invalid
+msgid ""
+"This website supplies Certificate Transparency audit records, but the "
+"records failed verification."
+msgstr ""
+
+#. # Cert Viewer
+#. # LOCALIZATION NOTE(certViewerTitle): Title used for the Certificate Viewer.
+#. # %1$S is a string representative of the certificate being viewed.
+#: certViewerTitle
+msgid "Certificate Viewer: “%1$S”"
+msgstr ""
 
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<گۇۋاھنامە پارچىسى ئەمەس>"
 
-#. #Token Manager
+#. # Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(تەڭشەلمىگەن)"
@@ -547,7 +576,7 @@ msgstr "ئۈسكۈنىدە يېتەرلىك بوشلۇق يوق"
 msgid "Unknown error"
 msgstr "نامەلۇم خاتالىق"
 
-#. #Add Security Exception dialog
+#. # Add Security Exception dialog
 #: addExceptionBrandedWarning2
 msgid "You are about to override how %S identifies this site."
 msgstr "%S بۇ بېكەتنى قانداق ئىپادىلەيدىغانلىقىنى بەلگىلەيسىز"
@@ -617,6 +646,9 @@ msgstr "ئىشلىتىشكە بولىدىغان ئۇچۇر يوق"
 #, fuzzy
 msgid "Unable to obtain identification status for this site."
 msgstr "بېرىلگەن بېكەتنىڭ بەلگە ھالىتىگە ئېرىشكىلى بولمىدى"
+
+#~ msgid "Certificate Viewer:"
+#~ msgstr "گۇۋاھنامە كۆرگۈچ:"
 
 #~ msgid "The page you are viewing is not encrypted."
 #~ msgstr "سىز كۆرۈۋاتقان بەت شىفىرلانمىغان."

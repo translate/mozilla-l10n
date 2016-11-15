@@ -1,4 +1,3 @@
-#. #
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -7,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-08-01 17:13+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1470071620.000000\n"
 
@@ -29,8 +28,15 @@ msgstr ""
 "Escriba a clau de seguranza personal ta las claus privadas PSM d'o "
 "dispositivo de seguranza."
 
-#. #These are for dialogs
-#. #Download Cert dialog
+#. # LOCALIZATION NOTE(certWithSerial): Used for semi-uniquely representing a cert.
+#. # %1$S is the serial number of the cert in AA:BB:CC hex format.
+#: certWithSerial
+msgid "Certificate with serial number: %1$S"
+msgstr ""
+
+#. # Download Cert dialog
+#. # LOCALIZATION NOTE(newCAMessage1):
+#. # %S is a string representative of the certificate being downloaded/imported.
 #: newCAMessage1
 msgid "Do you want to trust “%S” for the following purposes?"
 msgstr "Quiere confiar en \"%S\" ta las fins siguients?"
@@ -39,12 +45,12 @@ msgstr "Quiere confiar en \"%S\" ta las fins siguients?"
 msgid "Certificate Authority (unnamed)"
 msgstr "Entidat certificadera (sin nombre)"
 
-#. #For editing cert trust
+#. # For editing cert trust
 #: editTrustCA
 msgid "The certificate “%S” represents a Certificate Authority."
 msgstr "O certificau \"%S\" represienta a una entidat certificadera."
 
-#. #For Deleting Certificates
+#. # For Deleting Certificates
 #: deleteSslCertConfirm3
 msgid "Are you sure you want to delete these server exceptions?"
 msgstr "Ye seguro que quiere eliminar istas excepcions de servidor?"
@@ -128,7 +134,7 @@ msgstr "Ye seguro que quiere eliminar istos certificaus?"
 msgid "Delete Certificates"
 msgstr "Eliminar os certificaus"
 
-#. #PKCS#12 file dialogs
+#. # PKCS#12 file dialogs
 #: chooseP12RestoreFileDialog2
 msgid "Certificate File to Import"
 msgstr "Fichero de certificau ta importar"
@@ -147,7 +153,7 @@ msgid ""
 msgstr ""
 "Escriba a clau que emplegó ta zifrar a copia de seguranza d'iste certificau."
 
-#. #Cert verification
+#. # Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr "S'ha verificau o certificau ta os usos siguients:"
@@ -191,7 +197,7 @@ msgstr ""
 msgid "Could not verify this certificate for unknown reasons."
 msgstr "No s'ha puesto verificar o certificau por razons desconoixidas."
 
-#. #Client auth
+#. # Client auth
 #: clientAuthRemember
 msgid "Remember this decision"
 msgstr ""
@@ -267,7 +273,7 @@ msgstr ""
 msgid "Stored on: %1$S"
 msgstr ""
 
-#. #Page Info
+#. # Page Info
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "A connexión no ye zifrada"
@@ -343,16 +349,39 @@ msgstr ""
 "Atras personas podría visualizar a información u modificar o comportamiento "
 "d'o puesto web."
 
-#. #Cert Viewer
-#: certDetails
-msgid "Certificate Viewer:"
-msgstr "Visor de certificaus:"
+#: pageInfo_CertificateTransparency_None
+msgid "This website does not supply Certificate Transparency audit records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_OK
+msgid ""
+"This website supplies publicly auditable Certificate Transparency records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_UnknownLog
+msgid ""
+"This website claims to have Certificate Transparency audit records, but the "
+"records were issued by an unknown party and cannot be verified."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_Invalid
+msgid ""
+"This website supplies Certificate Transparency audit records, but the "
+"records failed verification."
+msgstr ""
+
+#. # Cert Viewer
+#. # LOCALIZATION NOTE(certViewerTitle): Title used for the Certificate Viewer.
+#. # %1$S is a string representative of the certificate being viewed.
+#: certViewerTitle
+msgid "Certificate Viewer: “%1$S”"
+msgstr ""
 
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<No ye parte d'o certificau>"
 
-#. #Token Manager
+#. # Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(no definiu)"
@@ -560,7 +589,7 @@ msgstr "No i hai espacio libre en o dispositivo"
 msgid "Unknown error"
 msgstr "Error desconoixida"
 
-#. #Add Security Exception dialog
+#. # Add Security Exception dialog
 #: addExceptionBrandedWarning2
 msgid "You are about to override how %S identifies this site."
 msgstr ""
@@ -635,6 +664,9 @@ msgstr "No i hai garra información disponible"
 #: addExceptionNoCertLong2
 msgid "Unable to obtain identification status for this site."
 msgstr "No se puede obtener o estau d'identificación pa iste puesto."
+
+#~ msgid "Certificate Viewer:"
+#~ msgstr "Visor de certificaus:"
 
 #~ msgid "The page you are viewing is not encrypted."
 #~ msgstr "A pachina que ye veyendo no ye zifrada."

@@ -1,4 +1,3 @@
-#. #
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -7,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-08-01 20:28+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1470083300.000000\n"
 
@@ -27,8 +26,15 @@ msgid ""
 "security device."
 msgstr "PSM প্রাইভেত কি সেক্যুরিতি দিভাইসকী পার্সনেল সেক্যুরিতি পাসৱার্দ চঙশিনবিয়ু."
 
-#. #These are for dialogs
-#. #Download Cert dialog
+#. # LOCALIZATION NOTE(certWithSerial): Used for semi-uniquely representing a cert.
+#. # %1$S is the serial number of the cert in AA:BB:CC hex format.
+#: certWithSerial
+msgid "Certificate with serial number: %1$S"
+msgstr ""
+
+#. # Download Cert dialog
+#. # LOCALIZATION NOTE(newCAMessage1):
+#. # %S is a string representative of the certificate being downloaded/imported.
 #: newCAMessage1
 msgid "Do you want to trust “%S” for the following purposes?"
 msgstr "মখাগী হীরমশিংসিগীদমক অদোম্না \"%S\" থাজবা পাম্বিব্রা?"
@@ -37,12 +43,12 @@ msgstr "মখাগী হীরমশিংসিগীদমক অদোম�
 msgid "Certificate Authority (unnamed)"
 msgstr "সার্তিফিকেত ওথোরিতি (মিংথোন্দবা)"
 
-#. #For editing cert trust
+#. # For editing cert trust
 #: editTrustCA
 msgid "The certificate “%S” represents a Certificate Authority."
 msgstr "সার্তিফিকেত \"%S\"  না সার্তিফিকেত ওথোরিতি অমা মহুৎশিল্লি."
 
-#. #For Deleting Certificates
+#. # For Deleting Certificates
 #: deleteSslCertConfirm3
 msgid "Are you sure you want to delete these server exceptions?"
 msgstr "অদোম্না মসিগী সর্ভরগী অখন্নবশিংসি তশেংনা মুত্থত্পা পাম্লব্রা?"
@@ -121,7 +127,7 @@ msgstr "অদোম্না সার্তিফিকেতশিং অস�
 msgid "Delete Certificates"
 msgstr "সার্তিফিকেতশিং মুত্থৎলো"
 
-#. #PKCS#12 file dialogs
+#. # PKCS#12 file dialogs
 #: chooseP12RestoreFileDialog2
 msgid "Certificate File to Import"
 msgstr "পুশিল্লক্কদবা সার্তিফিকেত ফাইল"
@@ -139,7 +145,7 @@ msgid ""
 "Please enter the password that was used to encrypt this certificate backup:"
 msgstr "সার্তিফিকেত বেকঅপ অসি ইনক্রিপ্ত তৌবদা শিজিন্নবা পাসৱার্দ অদু চঙশিনবিরো:"
 
-#. #Cert verification
+#. # Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr "মখাগী শিজিন্নফমশিং অসিগীদমক সার্তিফিকেত অসি চুম্মী উৎলে:"
@@ -181,7 +187,7 @@ msgstr ""
 msgid "Could not verify this certificate for unknown reasons."
 msgstr "শকখঙদবা মরম অমনা মরম ওইদুনা মসিগী সার্তিফিকেতসি অচুম-চুমদা য়েংবা ঙমদে."
 
-#. #Client auth
+#. # Client auth
 #: clientAuthRemember
 msgid "Remember this decision"
 msgstr ""
@@ -257,7 +263,7 @@ msgstr ""
 msgid "Stored on: %1$S"
 msgstr ""
 
-#. #Page Info
+#. # Page Info
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "মরি শম্নবা ইনক্রিপ্ত তৌদে"
@@ -325,16 +331,39 @@ msgid ""
 "Other people can view your information or modify the website’s behavior."
 msgstr ""
 
-#. #Cert Viewer
-#: certDetails
-msgid "Certificate Viewer:"
-msgstr "সার্তিফিকেত মীৎযেং তারিবা:"
+#: pageInfo_CertificateTransparency_None
+msgid "This website does not supply Certificate Transparency audit records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_OK
+msgid ""
+"This website supplies publicly auditable Certificate Transparency records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_UnknownLog
+msgid ""
+"This website claims to have Certificate Transparency audit records, but the "
+"records were issued by an unknown party and cannot be verified."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_Invalid
+msgid ""
+"This website supplies Certificate Transparency audit records, but the "
+"records failed verification."
+msgstr ""
+
+#. # Cert Viewer
+#. # LOCALIZATION NOTE(certViewerTitle): Title used for the Certificate Viewer.
+#. # %1$S is a string representative of the certificate being viewed.
+#: certViewerTitle
+msgid "Certificate Viewer: “%1$S”"
+msgstr ""
 
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<সার্তিফিকেতকী শরুক নত্তে>"
 
-#. #Token Manager
+#. # Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(সেত তৌদে)"
@@ -537,7 +566,7 @@ msgstr "দিভাইসত স্পেস অমত্তা লৈতে"
 msgid "Unknown error"
 msgstr "শকখঙদবা অশোয়বা"
 
-#. #Add Security Exception dialog
+#. # Add Security Exception dialog
 #: addExceptionBrandedWarning2
 msgid "You are about to override how %S identifies this site."
 msgstr "সাইত অসি করম্না %S শক্তাকই হায়বা অদোম্না ওভররাইদ তৌগদৌরে."
@@ -606,6 +635,9 @@ msgstr "ঈ-পাউ অমত্তা ফংদে"
 #: addExceptionNoCertLong2
 msgid "Unable to obtain identification status for this site."
 msgstr "সাইত অসি শক্তাকপগী স্তেতস ফংবা ঙমদে."
+
+#~ msgid "Certificate Viewer:"
+#~ msgstr "সার্তিফিকেত মীৎযেং তারিবা:"
 
 #~ msgid "The page you are viewing is not encrypted."
 #~ msgstr "অদোম্না মীৎযেং তারিবা লামায়দু ইনক্রিপ্ত তৌদে."

@@ -1,4 +1,3 @@
-#. #
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -7,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-08-19 21:59+0000\n"
 "Last-Translator: Juan Esteban Ajsivinac Sián <ajtzibsyan@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1471643970.000000\n"
 
@@ -28,8 +27,15 @@ msgstr ""
 "Tatz'ib'aj ri ichinan rujikomal ewan tzij richin ri jikomal kokisaxel ri PSM "
 "ichinan ewan taq tzij."
 
-#. #These are for dialogs
-#. #Download Cert dialog
+#. # LOCALIZATION NOTE(certWithSerial): Used for semi-uniquely representing a cert.
+#. # %1$S is the serial number of the cert in AA:BB:CC hex format.
+#: certWithSerial
+msgid "Certificate with serial number: %1$S"
+msgstr ""
+
+#. # Download Cert dialog
+#. # LOCALIZATION NOTE(newCAMessage1):
+#. # %S is a string representative of the certificate being downloaded/imported.
 #: newCAMessage1
 msgid "Do you want to trust “%S” for the following purposes?"
 msgstr ""
@@ -40,13 +46,13 @@ msgstr ""
 msgid "Certificate Authority (unnamed)"
 msgstr "Taqonel ya'öy ruwujil b'i'aj (majun b'i'aj)"
 
-#. #For editing cert trust
+#. # For editing cert trust
 #: editTrustCA
 msgid "The certificate “%S” represents a Certificate Authority."
 msgstr ""
 "Ri ruwujil b'i'aj \"%S\" nuq'alajisaj jun taqonel taqöy ruwujil b'i'aj."
 
-#. #For Deleting Certificates
+#. # For Deleting Certificates
 #: deleteSslCertConfirm3
 msgid "Are you sure you want to delete these server exceptions?"
 msgstr "¿La kan nawajo' ye'ayüj el re taq me'elïk re' pa ruk'u'x samaj?"
@@ -130,7 +136,7 @@ msgstr "¿La kan nawajo' ye'ayüj el re taq ruwujil b'i'aj re'?"
 msgid "Delete Certificates"
 msgstr "Keyuj kiwujil b'i'aj"
 
-#. #PKCS#12 file dialogs
+#. # PKCS#12 file dialogs
 #: chooseP12RestoreFileDialog2
 msgid "Certificate File to Import"
 msgstr "Ri kiyakb'al kiwujil b'i'aj richin rujik'ik"
@@ -150,7 +156,7 @@ msgstr ""
 "Tab'ana' utzil tatz'ib'aj ri ewan tzij, ri xokisäx richin xewäx rusik'isik "
 "re to'onel ruwachib'al ruwujil b'i'aj:"
 
-#. #Cert verification
+#. # Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr "Re ruwujil b'i'aj jikib'an richin re ka'i' oxi' taq okisaxik re':"
@@ -201,7 +207,7 @@ msgid "Could not verify this certificate for unknown reasons."
 msgstr ""
 "Man tikirel ta nijikib'äx re ruwujil b'i'aj re', man etaman ta achoq uma."
 
-#. #Client auth
+#. # Client auth
 #: clientAuthRemember
 msgid "Remember this decision"
 msgstr "Tinatäx re na'oj re'"
@@ -277,7 +283,7 @@ msgstr "Elesan ruma: %1$S"
 msgid "Stored on: %1$S"
 msgstr "Yakon pa: %1$S"
 
-#. #Page Info
+#. # Page Info
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Man ewan ta rusik'ixik ri okem"
@@ -356,16 +362,39 @@ msgstr ""
 "ta chi ewan rusik'ixik. Ch'aqa' chik winaqi' yetikïr nikitz'ët ri "
 "awetamab'al o chuqa' nikijalwachij ri rub'anikil ri ruxaq k'amaya'l."
 
-#. #Cert Viewer
-#: certDetails
-msgid "Certificate Viewer:"
-msgstr "Kitz'etöy ruwujil b'i'aj:"
+#: pageInfo_CertificateTransparency_None
+msgid "This website does not supply Certificate Transparency audit records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_OK
+msgid ""
+"This website supplies publicly auditable Certificate Transparency records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_UnknownLog
+msgid ""
+"This website claims to have Certificate Transparency audit records, but the "
+"records were issued by an unknown party and cannot be verified."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_Invalid
+msgid ""
+"This website supplies Certificate Transparency audit records, but the "
+"records failed verification."
+msgstr ""
+
+#. # Cert Viewer
+#. # LOCALIZATION NOTE(certViewerTitle): Title used for the Certificate Viewer.
+#. # %1$S is a string representative of the certificate being viewed.
+#: certViewerTitle
+msgid "Certificate Viewer: “%1$S”"
+msgstr ""
 
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Man ruch'akulal ta ruwujil b'i'aj>"
 
-#. #Token Manager
+#. # Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(man jikib'an ta)"
@@ -574,7 +603,7 @@ msgstr "Man jamäl ta rupam ri okisaxel"
 msgid "Unknown error"
 msgstr "Man etaman ta ruwäch re sachoj re'"
 
-#. #Add Security Exception dialog
+#. # Add Security Exception dialog
 #: addExceptionBrandedWarning2
 msgid "You are about to override how %S identifies this site."
 msgstr "Najalwachij yan qa rub'eyal natz'ët %S re ruxaq k'amaya'l re'."
@@ -648,6 +677,9 @@ msgstr "Majun etamab'äl wachel"
 #: addExceptionNoCertLong2
 msgid "Unable to obtain identification status for this site."
 msgstr "Man tikirel ta nik'ul ri rub'anikil tz'etonem re ruxaq k'amaya'l re'."
+
+#~ msgid "Certificate Viewer:"
+#~ msgstr "Kitz'etöy ruwujil b'i'aj:"
 
 #~ msgid "The page you are viewing is not encrypted."
 #~ msgstr "Man ewan ta rusik'ixik re ruxaq tajin natz'ët."

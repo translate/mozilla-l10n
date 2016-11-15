@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-19 14:17+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-09-24 09:44+0000\n"
 "Last-Translator: Chaitali Kulkarni <crkulkarni2904@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1474710277.000000\n"
 
@@ -34,6 +34,11 @@ msgstr "प्रारंभिक पृष्ठ स्थापित कर
 
 #: droponhomemsg
 msgid "Do you want this document to be your new home page?"
+msgstr "आपल्याला सदर दस्तऐवज,आपले नवीन प्रारंभिक पृष्ठ म्हणून हवे आहे का ?"
+
+#: droponhomemsgMultiple
+#, fuzzy
+msgid "Do you want these documents to be your new home pages?"
 msgstr "आपल्याला सदर दस्तऐवज,आपले नवीन प्रारंभिक पृष्ठ म्हणून हवे आहे का ?"
 
 #. # context menu strings
@@ -927,28 +932,6 @@ msgstr "या साईट सोबत ठिकाण शेअर करा�
 msgid "Would you like to share your location with this file?"
 msgstr "या फाइल सोबत ठिकाण शेअर करायला आवडेल?"
 
-#. # FlyWeb UI
-#. # LOCALIZATION NOTE (flyWebPublishServer.allowPublishServer): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.allowPublishServer
-msgid "Allow Server"
-msgstr "सर्व्हरला परवानगी द्या"
-
-#. # LOCALIZATION NOTE (flyWebPublishServer.allowPublishServer.accessKey): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.allowPublishServer.accesskey
-msgctxt "flyWebPublishServer.allowPublishServer.accesskey"
-msgid "A"
-msgstr "A"
-
-#. # LOCALIZATION NOTE (flyWebPublishServer.denyPublishServer): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.denyPublishServer
-msgid "Block Server"
-msgstr "सर्व्हर अवरोधित करा"
-
-#. # LOCALIZATION NOTE (flyWebPublishServer.denyPublishServer.accessKey): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.denyPublishServer.accesskey
-msgid "B"
-msgstr "B"
-
 #: webNotifications.receiveForSession
 msgid "Receive for this session"
 msgstr "ह्या सत्राकरिता मिळवा"
@@ -1190,6 +1173,30 @@ msgstr "%S सह आपल्याला टॅब ऑडिओ आणि स�
 #: getUserMedia.shareAudioCapture.message
 msgid "Would you like to share this tab’s audio with %S?"
 msgstr "%S सह आपल्याला या टॅबचा ऑडिओ शेअर करायला आवडेल?"
+
+#. # LOCALIZATION NOTE (getUserMedia.shareScreenWarning.message): NB: inserted via innerHTML, so please don't use <, > or & in this string.
+#. # %S will be the 'learn more' link
+#: getUserMedia.shareScreenWarning.message
+msgid ""
+"Only share screens with sites you trust. Sharing can allow deceptive sites "
+"to browse as you and steal your private data. %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (getUserMedia.shareFirefoxWarning.message): NB: inserted via innerHTML, so please don't use <, > or & in this string.
+#. # %1$S is brandShortName (eg. Firefox)
+#. # %2$S will be the 'learn more' link
+#: getUserMedia.shareFirefoxWarning.message
+msgid ""
+"Only share %1$S with sites you trust. Sharing can allow deceptive sites to "
+"browse as you and steal your private data. %2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(getUserMedia.shareScreen.learnMoreLabel): NB: inserted via innerHTML, so please don't use <, > or & in this string.
+#: getUserMedia.shareScreen.learnMoreLabel
+#, fuzzy
+msgctxt "getUserMedia.shareScreen.learnMoreLabel"
+msgid "Learn More"
+msgstr "आणखी शिका"
 
 #: getUserMedia.selectWindow.label getUserMedia.selectWindow.accesskey
 msgid "&Window to share:"
@@ -1455,17 +1462,10 @@ msgstr "DRM सक्षम करा"
 
 #. # LOCALIZATION NOTE(emeNotifications.drmContentDisabled.learnMoreLabel): NB: inserted via innerHTML, so please don't use <, > or & in this string.
 #: emeNotifications.drmContentDisabled.learnMoreLabel
+#, fuzzy
+msgctxt "emeNotifications.drmContentDisabled.learnMoreLabel"
 msgid "Learn More"
 msgstr "आणखी शिका"
-
-#. # LOCALIZATION NOTE(emeNotifications.drmContentCDMInsufficientVersion.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %S is brandShortName
-#: emeNotifications.drmContentCDMInsufficientVersion.message
-msgid ""
-"%S is installing updates needed to play the audio or video on this page. "
-"Please try again later."
-msgstr ""
-"या पृष्ठावरील ऑडियो किंवा व्हिडियो चालवण्यासाठी, %S आवश्यक घटक प्रस्थापित करत आहे. "
-"कृपया नंतर पुन्हा प्रयत्न करा."
 
 #. # LOCALIZATION NOTE(emeNotifications.drmContentCDMInstalling.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %S is brandShortName
 #: emeNotifications.drmContentCDMInstalling.message
@@ -1636,6 +1636,10 @@ msgstr "खरेदी"
 msgid "&No Container"
 msgstr "कंटेनर नाही"
 
+#: userContext.aboutPage.label userContext.aboutPage.accesskey
+msgid "Manage c&ontainers"
+msgstr ""
+
 #: userContextOpenLink.label
 msgid "Open Link in New %S Tab"
 msgstr "दुवा नवीन %S टॅब मध्ये उघडा"
@@ -1675,16 +1679,6 @@ msgstr "HTTP Public Key Pinning: %S"
 #: certErrorDetailsCertChain.label
 msgid "Certificate chain:"
 msgstr "प्रमाणपत्र चैन:"
-
-#. # LOCALIZATION NOTE (tabgroups.migration.anonGroup):
-#. # %S is the group number/ID
-#: tabgroups.migration.anonGroup
-msgid "Group %S"
-msgstr "गट %S"
-
-#: tabgroups.migration.tabGroupBookmarkFolderName
-msgid "Bookmarked Tab Groups"
-msgstr "वाचनखूणा लावलेले टॅब गट"
 
 #. # LOCALIZATION NOTE (pendingCrashReports2.label): Semi-colon list of plural forms
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -1755,6 +1749,39 @@ msgstr ""
 "व्हिडिओ चा दर्जा वाढविण्यासाठी, आपणास Windows Vista साठी Microsoft चे प्लॅटफॉर्म "
 "अद्यतन स्थापित करण्याची आवश्यकता पडू शकते."
 
+#: decoder.noPulseAudio.message
+#, fuzzy
+msgid ""
+"To play audio, you may need to install the required PulseAudio software."
+msgstr "व्हिडिओ चालविण्यासाठी, कदाचित आपणास गरजेचे व्हीडीओ कोडेक्स स्थापित करावे लागेल."
+
+#: decoder.unsupportedLibavcodec.message
+msgid ""
+"libavcodec may be vulnerable or is not supported, and should be updated to "
+"play video."
+msgstr ""
+
+#. # LOCALIZATION NOTE (captivePortal.infoMessage,
+#. #                    captivePortal.infoMessage2):
+#. # Shown in a notification bar when we detect a captive portal is blocking network access
+#. # and requires the user to log in before browsing. %1$S is replaced with brandShortName.
+#: captivePortal.infoMessage
+msgid ""
+"This network may require you to login to use the internet. %1$S has opened "
+"the login page for you."
+msgstr ""
+
+#: captivePortal.infoMessage2
+msgid "This network may require you to login to use the internet."
+msgstr ""
+
+#. # LOCALIZATION NOTE (captivePortal.showLoginPage):
+#. # The label for a button shown in the info bar in all tabs except the login page tab.
+#. # The button shows the portal login page tab when clicked.
+#: captivePortal.showLoginPage
+msgid "Show Login Page"
+msgstr ""
+
 #: permissions.remove.tooltip
 msgid "Clear this permission and ask again"
 msgstr "ही परवानगी काढा आणि परत विचारा"
@@ -1771,6 +1798,32 @@ msgstr "64-बिट"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "32-बिट"
+
+#~ msgid "Allow Server"
+#~ msgstr "सर्व्हरला परवानगी द्या"
+
+#~ msgctxt "flyWebPublishServer.allowPublishServer.accesskey"
+#~ msgid "A"
+#~ msgstr "A"
+
+#~ msgid "Block Server"
+#~ msgstr "सर्व्हर अवरोधित करा"
+
+#~ msgid "B"
+#~ msgstr "B"
+
+#~ msgid ""
+#~ "%S is installing updates needed to play the audio or video on this page. "
+#~ "Please try again later."
+#~ msgstr ""
+#~ "या पृष्ठावरील ऑडियो किंवा व्हिडियो चालवण्यासाठी, %S आवश्यक घटक प्रस्थापित करत आहे. "
+#~ "कृपया नंतर पुन्हा प्रयत्न करा."
+
+#~ msgid "Group %S"
+#~ msgstr "गट %S"
+
+#~ msgid "Bookmarked Tab Groups"
+#~ msgstr "वाचनखूणा लावलेले टॅब गट"
 
 #~ msgid "This website does not supply identity information."
 #~ msgstr "हे संकेत स्थळ ओळखविषयी माहिती पुरवित नाही."
@@ -1847,10 +1900,6 @@ msgstr "32-बिट"
 #~ "You can use your %S account to synchronize add-ons across multiple "
 #~ "devices. "
 #~ msgstr "एकापेक्षा जास्त साधनांवर ॲड-ऑन्स् ची समजुळणीकरिता %S खात्याचा वापर शक्य आहे. "
-
-#~ msgctxt "emeNotifications.drmContentDisabled.learnMoreLabel"
-#~ msgid "Learn More"
-#~ msgstr "आणखी शिका"
 
 #~ msgid "No Video"
 #~ msgstr "व्हिडिओ नाही"

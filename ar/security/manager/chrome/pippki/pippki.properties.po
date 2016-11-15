@@ -1,5 +1,4 @@
 # Khaled Hosny <khaledhosny@eglug.org>, 2012.
-#. #
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -8,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-08-04 12:07+0000\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -19,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
 "X-POOTLE-MTIME: 1470312440.000000\n"
@@ -30,8 +29,15 @@ msgid ""
 "security device."
 msgstr "رجاءً أدخل كلمة سر الأمن الشّخصيّة لجهاز أمن المفاتيح السرّية PSM."
 
-#. #These are for dialogs
-#. #Download Cert dialog
+#. # LOCALIZATION NOTE(certWithSerial): Used for semi-uniquely representing a cert.
+#. # %1$S is the serial number of the cert in AA:BB:CC hex format.
+#: certWithSerial
+msgid "Certificate with serial number: %1$S"
+msgstr ""
+
+#. # Download Cert dialog
+#. # LOCALIZATION NOTE(newCAMessage1):
+#. # %S is a string representative of the certificate being downloaded/imported.
 #: newCAMessage1
 msgid "Do you want to trust “%S” for the following purposes?"
 msgstr "هل تريد الوثوق في ”%S“ للأغراض التّالية؟"
@@ -40,12 +46,12 @@ msgstr "هل تريد الوثوق في ”%S“ للأغراض التّالية
 msgid "Certificate Authority (unnamed)"
 msgstr "سلطة شهادات (غير مسمّاة)"
 
-#. #For editing cert trust
+#. # For editing cert trust
 #: editTrustCA
 msgid "The certificate “%S” represents a Certificate Authority."
 msgstr "تمثّل الشّهادة ”%S“ سلطة شهادات."
 
-#. #For Deleting Certificates
+#. # For Deleting Certificates
 #: deleteSslCertConfirm3
 msgid "Are you sure you want to delete these server exceptions?"
 msgstr "أمتأكد أنك تريد حذف استثناءات الخادوم هذه؟"
@@ -122,7 +128,7 @@ msgstr "أمتأكّد أنّك تريد حذف هذه الشّهادات؟"
 msgid "Delete Certificates"
 msgstr "احذف الشهادات"
 
-#. #PKCS#12 file dialogs
+#. # PKCS#12 file dialogs
 #: chooseP12RestoreFileDialog2
 msgid "Certificate File to Import"
 msgstr "اسم الشهادة المطلوب استيرادها"
@@ -141,7 +147,7 @@ msgid ""
 msgstr ""
 "الرّجاء إدخال كلمة السرّ التي استخدمت لتعمية النّسخة الاحتياطية من هذه الشّهادة:"
 
-#. #Cert verification
+#. # Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr "تمّ التحقّق من هذه الشّهادة للاستخدامات التّالية:"
@@ -183,7 +189,7 @@ msgstr ""
 msgid "Could not verify this certificate for unknown reasons."
 msgstr "تعذّر التحقّق من هذه الشّهادة لأسباب مجهولة."
 
-#. #Client auth
+#. # Client auth
 #: clientAuthRemember
 msgid "Remember this decision"
 msgstr "تذكّر هذا القرار"
@@ -259,7 +265,7 @@ msgstr "أصدرها: %1$S"
 msgid "Stored on: %1$S"
 msgstr "محفوظة في: %1$S"
 
-#. #Page Info
+#. # Page Info
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "الاتّصال غير مُعمّى"
@@ -328,16 +334,39 @@ msgstr ""
 "اتصالك بهذا الموقع يستخدم تعمية ضعيفة وليس خاصًّا أيضًا. يمكن للآخرين الاطلاع "
 "على معلوماتك أو تغيير سلوك الموقع."
 
-#. #Cert Viewer
-#: certDetails
-msgid "Certificate Viewer:"
-msgstr "عارض الشّهادات:"
+#: pageInfo_CertificateTransparency_None
+msgid "This website does not supply Certificate Transparency audit records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_OK
+msgid ""
+"This website supplies publicly auditable Certificate Transparency records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_UnknownLog
+msgid ""
+"This website claims to have Certificate Transparency audit records, but the "
+"records were issued by an unknown party and cannot be verified."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_Invalid
+msgid ""
+"This website supplies Certificate Transparency audit records, but the "
+"records failed verification."
+msgstr ""
+
+#. # Cert Viewer
+#. # LOCALIZATION NOTE(certViewerTitle): Title used for the Certificate Viewer.
+#. # %1$S is a string representative of the certificate being viewed.
+#: certViewerTitle
+msgid "Certificate Viewer: “%1$S”"
+msgstr ""
 
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<ليس جزءًا من الشّهادة>"
 
-#. #Token Manager
+#. # Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(غير مضبوط)"
@@ -542,7 +571,7 @@ msgstr "لم يتبق مساحة على المُشغّل"
 msgid "Unknown error"
 msgstr "خطأ مجهول"
 
-#. #Add Security Exception dialog
+#. # Add Security Exception dialog
 #: addExceptionBrandedWarning2
 msgid "You are about to override how %S identifies this site."
 msgstr "أنت على وشك تخطي كيفية تعرّف %S على هذا الموقع."
@@ -609,6 +638,9 @@ msgstr "لا توجد معلومات"
 #: addExceptionNoCertLong2
 msgid "Unable to obtain identification status for this site."
 msgstr "تعذّر الحصول على حالة التعرف على هذا الموقع."
+
+#~ msgid "Certificate Viewer:"
+#~ msgstr "عارض الشّهادات:"
 
 #~ msgid "The page you are viewing is not encrypted."
 #~ msgstr "الصّفحة التي تعرضها غير مُعمّاة."

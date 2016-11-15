@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-19 14:17+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-11-02 00:00+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1478044840.000000\n"
 
@@ -35,6 +35,12 @@ msgstr "Socraigh Leathanach Baile"
 
 #: droponhomemsg
 msgid "Do you want this document to be your new home page?"
+msgstr ""
+"An bhfuil tú ag iarraidh an cháipéis seo a roghnú mar do leathanach baile?"
+
+#: droponhomemsgMultiple
+#, fuzzy
+msgid "Do you want these documents to be your new home pages?"
 msgstr ""
 "An bhfuil tú ag iarraidh an cháipéis seo a roghnú mar do leathanach baile?"
 
@@ -1023,28 +1029,6 @@ msgid "Would you like to share your location with this file?"
 msgstr ""
 "An bhfuil fonn ort an láthair ina bhfuil tú a nochtadh don chomhad seo?"
 
-#. # FlyWeb UI
-#. # LOCALIZATION NOTE (flyWebPublishServer.allowPublishServer): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.allowPublishServer
-msgid "Allow Server"
-msgstr "Ceadaigh an Freastalaí"
-
-#. # LOCALIZATION NOTE (flyWebPublishServer.allowPublishServer.accessKey): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.allowPublishServer.accesskey
-msgctxt "flyWebPublishServer.allowPublishServer.accesskey"
-msgid "A"
-msgstr "A"
-
-#. # LOCALIZATION NOTE (flyWebPublishServer.denyPublishServer): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.denyPublishServer
-msgid "Block Server"
-msgstr "Cuir Cosc ar an bhFreastalaí"
-
-#. # LOCALIZATION NOTE (flyWebPublishServer.denyPublishServer.accessKey): This is an experimental feature only shipping in Nightly, and doesn't need translation.
-#: flyWebPublishServer.denyPublishServer.accesskey
-msgid "B"
-msgstr "C"
-
 #: webNotifications.receiveForSession
 msgid "Receive for this session"
 msgstr "Glacadh leo le linn an tseisiúin seo"
@@ -1301,6 +1285,30 @@ msgstr ""
 #: getUserMedia.shareAudioCapture.message
 msgid "Would you like to share this tab’s audio with %S?"
 msgstr "An bhfuil fonn ort fuaim an chluaisín seo a chomhroinnt le %S?"
+
+#. # LOCALIZATION NOTE (getUserMedia.shareScreenWarning.message): NB: inserted via innerHTML, so please don't use <, > or & in this string.
+#. # %S will be the 'learn more' link
+#: getUserMedia.shareScreenWarning.message
+msgid ""
+"Only share screens with sites you trust. Sharing can allow deceptive sites "
+"to browse as you and steal your private data. %S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (getUserMedia.shareFirefoxWarning.message): NB: inserted via innerHTML, so please don't use <, > or & in this string.
+#. # %1$S is brandShortName (eg. Firefox)
+#. # %2$S will be the 'learn more' link
+#: getUserMedia.shareFirefoxWarning.message
+msgid ""
+"Only share %1$S with sites you trust. Sharing can allow deceptive sites to "
+"browse as you and steal your private data. %2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE(getUserMedia.shareScreen.learnMoreLabel): NB: inserted via innerHTML, so please don't use <, > or & in this string.
+#: getUserMedia.shareScreen.learnMoreLabel
+#, fuzzy
+msgctxt "getUserMedia.shareScreen.learnMoreLabel"
+msgid "Learn More"
+msgstr "Tuilleadh Eolais"
 
 #: getUserMedia.selectWindow.label getUserMedia.selectWindow.accesskey
 msgid "&Window to share:"
@@ -1573,17 +1581,10 @@ msgstr "&Cumasaigh DRM"
 
 #. # LOCALIZATION NOTE(emeNotifications.drmContentDisabled.learnMoreLabel): NB: inserted via innerHTML, so please don't use <, > or & in this string.
 #: emeNotifications.drmContentDisabled.learnMoreLabel
+#, fuzzy
+msgctxt "emeNotifications.drmContentDisabled.learnMoreLabel"
 msgid "Learn More"
 msgstr "Tuilleadh Eolais"
-
-#. # LOCALIZATION NOTE(emeNotifications.drmContentCDMInsufficientVersion.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %S is brandShortName
-#: emeNotifications.drmContentCDMInsufficientVersion.message
-msgid ""
-"%S is installing updates needed to play the audio or video on this page. "
-"Please try again later."
-msgstr ""
-"Tá %S ag suiteáil nuashonruithe a theastaíonn uait le fuaim nó físeán ar an "
-"leathanach seo a sheinm. Bain triail eile as ar ball."
 
 #. # LOCALIZATION NOTE(emeNotifications.drmContentCDMInstalling.message): NB: inserted via innerHTML, so please don't use <, > or & in this string. %S is brandShortName
 #: emeNotifications.drmContentCDMInstalling.message
@@ -1756,6 +1757,10 @@ msgstr "&Siopadóireacht"
 msgid "&No Container"
 msgstr "&Gan Coimeádán"
 
+#: userContext.aboutPage.label userContext.aboutPage.accesskey
+msgid "Manage c&ontainers"
+msgstr ""
+
 #: userContextOpenLink.label
 msgid "Open Link in New %S Tab"
 msgstr "Oscail an Nasc i gCluaisín Nua %S"
@@ -1795,16 +1800,6 @@ msgstr "Pionnáil Phoiblí Eochrach HTTP: %S"
 #: certErrorDetailsCertChain.label
 msgid "Certificate chain:"
 msgstr "Slabhra teastais:"
-
-#. # LOCALIZATION NOTE (tabgroups.migration.anonGroup):
-#. # %S is the group number/ID
-#: tabgroups.migration.anonGroup
-msgid "Group %S"
-msgstr "Grúpáil %S"
-
-#: tabgroups.migration.tabGroupBookmarkFolderName
-msgid "Bookmarked Tab Groups"
-msgstr "Grúpaí Cluaisíní a bhfuil Leabharmharcanna leo"
 
 #. # LOCALIZATION NOTE (pendingCrashReports2.label): Semi-colon list of plural forms
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -1882,6 +1877,41 @@ msgstr ""
 "Seans gur gá duit Microsoft Platform Update Supplement le haghaidh Windows "
 "Vista a shuiteáil chun cáilíocht na físe a fheabhsú."
 
+#: decoder.noPulseAudio.message
+#, fuzzy
+msgid ""
+"To play audio, you may need to install the required PulseAudio software."
+msgstr ""
+"Seans gur gá duit an dí-chomhbhrúiteoir riachtanach a shuiteáil chun físeáin "
+"a sheinm."
+
+#: decoder.unsupportedLibavcodec.message
+msgid ""
+"libavcodec may be vulnerable or is not supported, and should be updated to "
+"play video."
+msgstr ""
+
+#. # LOCALIZATION NOTE (captivePortal.infoMessage,
+#. #                    captivePortal.infoMessage2):
+#. # Shown in a notification bar when we detect a captive portal is blocking network access
+#. # and requires the user to log in before browsing. %1$S is replaced with brandShortName.
+#: captivePortal.infoMessage
+msgid ""
+"This network may require you to login to use the internet. %1$S has opened "
+"the login page for you."
+msgstr ""
+
+#: captivePortal.infoMessage2
+msgid "This network may require you to login to use the internet."
+msgstr ""
+
+#. # LOCALIZATION NOTE (captivePortal.showLoginPage):
+#. # The label for a button shown in the info bar in all tabs except the login page tab.
+#. # The button shows the portal login page tab when clicked.
+#: captivePortal.showLoginPage
+msgid "Show Login Page"
+msgstr ""
+
 #: permissions.remove.tooltip
 msgid "Clear this permission and ask again"
 msgstr "Glan an cead seo agus fiafraigh arís"
@@ -1898,6 +1928,32 @@ msgstr "64-giotán"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "32-giotán"
+
+#~ msgid "Allow Server"
+#~ msgstr "Ceadaigh an Freastalaí"
+
+#~ msgctxt "flyWebPublishServer.allowPublishServer.accesskey"
+#~ msgid "A"
+#~ msgstr "A"
+
+#~ msgid "Block Server"
+#~ msgstr "Cuir Cosc ar an bhFreastalaí"
+
+#~ msgid "B"
+#~ msgstr "C"
+
+#~ msgid ""
+#~ "%S is installing updates needed to play the audio or video on this page. "
+#~ "Please try again later."
+#~ msgstr ""
+#~ "Tá %S ag suiteáil nuashonruithe a theastaíonn uait le fuaim nó físeán ar "
+#~ "an leathanach seo a sheinm. Bain triail eile as ar ball."
+
+#~ msgid "Group %S"
+#~ msgstr "Grúpáil %S"
+
+#~ msgid "Bookmarked Tab Groups"
+#~ msgstr "Grúpaí Cluaisíní a bhfuil Leabharmharcanna leo"
 
 #~ msgid "This website does not supply identity information."
 #~ msgstr "Ní sholáthraíonn an suíomh seo faisnéis maidir lena aitheantas."
@@ -1986,10 +2042,6 @@ msgstr "32-giotán"
 #~ msgstr ""
 #~ "Is féidir leat do chuntas %S a úsáid chun breiseáin a shioncronú ar do "
 #~ "ghléasanna go léir. "
-
-#~ msgctxt "emeNotifications.drmContentDisabled.learnMoreLabel"
-#~ msgid "Learn More"
-#~ msgstr "Tuilleadh Eolais"
 
 #~ msgid "No Video"
 #~ msgstr "Gan Fís"

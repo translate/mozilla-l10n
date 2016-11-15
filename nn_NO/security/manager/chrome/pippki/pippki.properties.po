@@ -1,4 +1,3 @@
-#. #
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -7,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-08-03 11:19+0000\n"
 "Last-Translator: Bjørn I. Svindseth <bjorn.svindseth@online.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1470223191.000000\n"
 
@@ -29,8 +28,15 @@ msgstr ""
 "Skriv inn det personlege tryggingspassordet ditt for PSM (tryggingseining "
 "for private nyklar)."
 
-#. #These are for dialogs
-#. #Download Cert dialog
+#. # LOCALIZATION NOTE(certWithSerial): Used for semi-uniquely representing a cert.
+#. # %1$S is the serial number of the cert in AA:BB:CC hex format.
+#: certWithSerial
+msgid "Certificate with serial number: %1$S"
+msgstr ""
+
+#. # Download Cert dialog
+#. # LOCALIZATION NOTE(newCAMessage1):
+#. # %S is a string representative of the certificate being downloaded/imported.
 #: newCAMessage1
 msgid "Do you want to trust “%S” for the following purposes?"
 msgstr "Vil du stola på «%S» for følgjande føremål?"
@@ -39,12 +45,12 @@ msgstr "Vil du stola på «%S» for følgjande føremål?"
 msgid "Certificate Authority (unnamed)"
 msgstr "Sertifikatutskrivar (utan namn)"
 
-#. #For editing cert trust
+#. # For editing cert trust
 #: editTrustCA
 msgid "The certificate “%S” represents a Certificate Authority."
 msgstr "Sertifikatet «%S» representerer ein sertifikatutskrivar."
 
-#. #For Deleting Certificates
+#. # For Deleting Certificates
 #: deleteSslCertConfirm3
 msgid "Are you sure you want to delete these server exceptions?"
 msgstr "Er du sikker på at du vil sletta sertifikata for desse nettstadene?"
@@ -126,7 +132,7 @@ msgstr "Er du sikker på at du ønskjer å sletta desse sertifikata?"
 msgid "Delete Certificates"
 msgstr "Slett sertifikat"
 
-#. #PKCS#12 file dialogs
+#. # PKCS#12 file dialogs
 #: chooseP12RestoreFileDialog2
 msgid "Certificate File to Import"
 msgstr "Sertifikatfil som skal importerast"
@@ -146,7 +152,7 @@ msgstr ""
 "Skriv inn passordet som vart brukt til å kryptera denne sertifikat-"
 "tryggingskopien:"
 
-#. #Cert verification
+#. # Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr "Sertifikatet har vorte stadfesta for følgjande brukarar:"
@@ -190,7 +196,7 @@ msgstr ""
 msgid "Could not verify this certificate for unknown reasons."
 msgstr "Klarte ikkje å kontrollera sertifikatet av ukjend årsak."
 
-#. #Client auth
+#. # Client auth
 #: clientAuthRemember
 msgid "Remember this decision"
 msgstr "Hugs denne avgjerdsla"
@@ -266,7 +272,7 @@ msgstr "Utferda av: %1$S"
 msgid "Stored on: %1$S"
 msgstr "Lagra på: %1$S"
 
-#. #Page Info
+#. # Page Info
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Tilkoplinga er ikkje kryptert"
@@ -339,16 +345,39 @@ msgstr ""
 "Tilkoplinga til denne nettstaden brukar svak kryptering og er ikkje privat. "
 "Andre personar kan sjå informasjonen, eller endra oppførselen til nettstaden."
 
-#. #Cert Viewer
-#: certDetails
-msgid "Certificate Viewer:"
-msgstr "Sertifikatvisar:"
+#: pageInfo_CertificateTransparency_None
+msgid "This website does not supply Certificate Transparency audit records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_OK
+msgid ""
+"This website supplies publicly auditable Certificate Transparency records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_UnknownLog
+msgid ""
+"This website claims to have Certificate Transparency audit records, but the "
+"records were issued by an unknown party and cannot be verified."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_Invalid
+msgid ""
+"This website supplies Certificate Transparency audit records, but the "
+"records failed verification."
+msgstr ""
+
+#. # Cert Viewer
+#. # LOCALIZATION NOTE(certViewerTitle): Title used for the Certificate Viewer.
+#. # %1$S is a string representative of the certificate being viewed.
+#: certViewerTitle
+msgid "Certificate Viewer: “%1$S”"
+msgstr ""
 
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Ikkje ein del av sertifikatet>"
 
-#. #Token Manager
+#. # Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(ikkje valt)"
@@ -553,7 +582,7 @@ msgstr "Ikkje meir ledig plass på eininga"
 msgid "Unknown error"
 msgstr "Ukjend feil"
 
-#. #Add Security Exception dialog
+#. # Add Security Exception dialog
 #: addExceptionBrandedWarning2
 msgid "You are about to override how %S identifies this site."
 msgstr "Du overstyrer no korleis %S identifiserer denne tenaren."
@@ -625,6 +654,9 @@ msgstr "Ingen informasjon er tilgjengeleg"
 #: addExceptionNoCertLong2
 msgid "Unable to obtain identification status for this site."
 msgstr "Klarte ikkje å henta identitetsinformasjon for denne nettstaden."
+
+#~ msgid "Certificate Viewer:"
+#~ msgstr "Sertifikatvisar:"
 
 #~ msgid "The page you are viewing is not encrypted."
 #~ msgstr "Sida du viser er ikkje kryptert."

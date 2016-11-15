@@ -1,4 +1,3 @@
-#. #
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -7,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-08-04 16:51+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1470329509.000000\n"
 
@@ -30,8 +29,15 @@ msgstr ""
 "Zapisajće prošu wosobinske wěstotne hesło za wěstotny grat priwatnych klučow "
 "PSM."
 
-#. #These are for dialogs
-#. #Download Cert dialog
+#. # LOCALIZATION NOTE(certWithSerial): Used for semi-uniquely representing a cert.
+#. # %1$S is the serial number of the cert in AA:BB:CC hex format.
+#: certWithSerial
+msgid "Certificate with serial number: %1$S"
+msgstr ""
+
+#. # Download Cert dialog
+#. # LOCALIZATION NOTE(newCAMessage1):
+#. # %S is a string representative of the certificate being downloaded/imported.
 #: newCAMessage1
 msgid "Do you want to trust “%S” for the following purposes?"
 msgstr "Chceće \"%S\" za slědowace zaměry dowěrić?"
@@ -40,12 +46,12 @@ msgstr "Chceće \"%S\" za slědowace zaměry dowěrić?"
 msgid "Certificate Authority (unnamed)"
 msgstr "Certifikatowa awtorita (bjez mjena)"
 
-#. #For editing cert trust
+#. # For editing cert trust
 #: editTrustCA
 msgid "The certificate “%S” represents a Certificate Authority."
 msgstr "Certifikat \"%S\" reprezentuje certifikatowu awtoritu."
 
-#. #For Deleting Certificates
+#. # For Deleting Certificates
 #: deleteSslCertConfirm3
 msgid "Are you sure you want to delete these server exceptions?"
 msgstr "Chceće woprawdźe tute serwerowe wuwzaća zhašeć?"
@@ -127,7 +133,7 @@ msgstr "Chceće woprawdźe tute certifikaty zhašeć?"
 msgid "Delete Certificates"
 msgstr "Certifikaty zhašeć"
 
-#. #PKCS#12 file dialogs
+#. # PKCS#12 file dialogs
 #: chooseP12RestoreFileDialog2
 msgid "Certificate File to Import"
 msgstr "Certifikatowa dataja, kotraž ma so importować"
@@ -147,7 +153,7 @@ msgstr ""
 "Prošu zapodajće hesło, kotrež je so za zaklučowanje tutoho zawěsćenja "
 "certifikata wužiło:"
 
-#. #Cert verification
+#. # Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr "Tutón certifikat bu za slědowace wužića přepruwowany:"
@@ -192,7 +198,7 @@ msgstr ""
 msgid "Could not verify this certificate for unknown reasons."
 msgstr "Tutón certifikat njeda so z njeznatych přičinow přepruwować."
 
-#. #Client auth
+#. # Client auth
 #: clientAuthRemember
 msgid "Remember this decision"
 msgstr "Tutón rozsud sej spomjatkować"
@@ -268,7 +274,7 @@ msgstr "Wudaty wot: %1$S"
 msgid "Stored on: %1$S"
 msgstr "Składowany na: %1$S"
 
-#. #Page Info
+#. # Page Info
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "Zwisk njezaklučowany"
@@ -346,16 +352,39 @@ msgstr ""
 "Waš zwisk z tutym websydłom wužiwa słabe zaklučowanje a njeje priwatny. "
 "Druzy ludźo móža waše informacije widźeć abo zadźerženje websydła změnić."
 
-#. #Cert Viewer
-#: certDetails
-msgid "Certificate Viewer:"
-msgstr "Wobhladowak certifiaktow:"
+#: pageInfo_CertificateTransparency_None
+msgid "This website does not supply Certificate Transparency audit records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_OK
+msgid ""
+"This website supplies publicly auditable Certificate Transparency records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_UnknownLog
+msgid ""
+"This website claims to have Certificate Transparency audit records, but the "
+"records were issued by an unknown party and cannot be verified."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_Invalid
+msgid ""
+"This website supplies Certificate Transparency audit records, but the "
+"records failed verification."
+msgstr ""
+
+#. # Cert Viewer
+#. # LOCALIZATION NOTE(certViewerTitle): Title used for the Certificate Viewer.
+#. # %1$S is a string representative of the certificate being viewed.
+#: certViewerTitle
+msgid "Certificate Viewer: “%1$S”"
+msgstr ""
 
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Njeje dźěl certifikata>"
 
-#. #Token Manager
+#. # Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(njenastajeny)"
@@ -564,7 +593,7 @@ msgstr "Žadyn rum na graće"
 msgid "Unknown error"
 msgstr "Njeznaty zmylk"
 
-#. #Add Security Exception dialog
+#. # Add Security Exception dialog
 #: addExceptionBrandedWarning2
 msgid "You are about to override how %S identifies this site."
 msgstr "Pospytujeće přeskakować, kak %S tute sydło identifikuje."
@@ -636,6 +665,9 @@ msgstr "Žane informacije k dispoziciji"
 #: addExceptionNoCertLong2
 msgid "Unable to obtain identification status for this site."
 msgstr "Njeje móžno, status identifikacije za tute sydło nabyć."
+
+#~ msgid "Certificate Viewer:"
+#~ msgstr "Wobhladowak certifiaktow:"
 
 #~ msgid "The page you are viewing is not encrypted."
 #~ msgstr "Strona, kotruž sej wobhladujeće, njeje zaklučowana."

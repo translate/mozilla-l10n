@@ -1,4 +1,3 @@
-#. #
 #. # This Source Code Form is subject to the terms of the Mozilla Public
 #. # License, v. 2.0. If a copy of the MPL was not distributed with this
 #. # file, You can obtain one at http://mozilla.org/MPL/2.0/.
@@ -7,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2016-11-15 16:56+0000\n"
 "PO-Revision-Date: 2016-08-07 11:56+0000\n"
 "Last-Translator: Gabor Kelemen <kelemeng@ubuntu.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1470570963.000000\n"
 
@@ -29,8 +28,15 @@ msgstr ""
 "Írja be a személyes biztonsági jelszavát a PSM személyes kulcsokat "
 "tartalmazó adatvédelmi eszköz."
 
-#. #These are for dialogs
-#. #Download Cert dialog
+#. # LOCALIZATION NOTE(certWithSerial): Used for semi-uniquely representing a cert.
+#. # %1$S is the serial number of the cert in AA:BB:CC hex format.
+#: certWithSerial
+msgid "Certificate with serial number: %1$S"
+msgstr ""
+
+#. # Download Cert dialog
+#. # LOCALIZATION NOTE(newCAMessage1):
+#. # %S is a string representative of the certificate being downloaded/imported.
 #: newCAMessage1
 msgid "Do you want to trust “%S” for the following purposes?"
 msgstr "Megbízik „%S” CA-ban a következő témákban?"
@@ -39,12 +45,12 @@ msgstr "Megbízik „%S” CA-ban a következő témákban?"
 msgid "Certificate Authority (unnamed)"
 msgstr "Hitelesítésszolgáltató (névtelen)"
 
-#. #For editing cert trust
+#. # For editing cert trust
 #: editTrustCA
 msgid "The certificate “%S” represents a Certificate Authority."
 msgstr "A(z) „%S” tanúsítvány egy hitelesítésszolgáltatót reprezentál."
 
-#. #For Deleting Certificates
+#. # For Deleting Certificates
 #: deleteSslCertConfirm3
 msgid "Are you sure you want to delete these server exceptions?"
 msgstr "Biztosan törölni akarja ezeket a kiszolgáló-kivételeket?"
@@ -126,7 +132,7 @@ msgstr "Biztosan törölni akarja ezeket a tanúsítványokat?"
 msgid "Delete Certificates"
 msgstr "Tanúsítványok törlése"
 
-#. #PKCS#12 file dialogs
+#. # PKCS#12 file dialogs
 #: chooseP12RestoreFileDialog2
 msgid "Certificate File to Import"
 msgstr "Importálandó tanúsítványfájl"
@@ -146,7 +152,7 @@ msgstr ""
 "Adja meg a jelszót, amelyet ennek a tanúsítványokról készült biztonsági "
 "mentésnek a titkosításához használt:"
 
-#. #Cert verification
+#. # Cert verification
 #: certVerified
 msgid "This certificate has been verified for the following uses:"
 msgstr "A tanúsítvány a következőkre lett ellenőrizve:"
@@ -191,7 +197,7 @@ msgstr ""
 msgid "Could not verify this certificate for unknown reasons."
 msgstr "A tanúsítvány ismeretlen okból ellenőrizhetetlen."
 
-#. #Client auth
+#. # Client auth
 #: clientAuthRemember
 msgid "Remember this decision"
 msgstr "A döntés megjegyzése"
@@ -267,7 +273,7 @@ msgstr "Kibocsátó: %1$S"
 msgid "Stored on: %1$S"
 msgstr "Tárolva ezen: %1$S"
 
-#. #Page Info
+#. # Page Info
 #: pageInfo_NoEncryption
 msgid "Connection Not Encrypted"
 msgstr "A kapcsolat nincs titkosítva"
@@ -342,16 +348,39 @@ msgstr ""
 "biztonságos. Mások megjeleníthetik információit, vagy módosíthatják a "
 "weboldal viselkedését."
 
-#. #Cert Viewer
-#: certDetails
-msgid "Certificate Viewer:"
-msgstr "Tanúsítványmegjelenítő:"
+#: pageInfo_CertificateTransparency_None
+msgid "This website does not supply Certificate Transparency audit records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_OK
+msgid ""
+"This website supplies publicly auditable Certificate Transparency records."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_UnknownLog
+msgid ""
+"This website claims to have Certificate Transparency audit records, but the "
+"records were issued by an unknown party and cannot be verified."
+msgstr ""
+
+#: pageInfo_CertificateTransparency_Invalid
+msgid ""
+"This website supplies Certificate Transparency audit records, but the "
+"records failed verification."
+msgstr ""
+
+#. # Cert Viewer
+#. # LOCALIZATION NOTE(certViewerTitle): Title used for the Certificate Viewer.
+#. # %1$S is a string representative of the certificate being viewed.
+#: certViewerTitle
+msgid "Certificate Viewer: “%1$S”"
+msgstr ""
 
 #: notPresent
 msgid "<Not Part Of Certificate>"
 msgstr "<Nem része a tanúsítványnak>"
 
-#. #Token Manager
+#. # Token Manager
 #: password_not_set
 msgid "(not set)"
 msgstr "(nincs beállítva)"
@@ -557,7 +586,7 @@ msgstr "Nincs hely az eszközön"
 msgid "Unknown error"
 msgstr "Ismeretlen hiba"
 
-#. #Add Security Exception dialog
+#. # Add Security Exception dialog
 #: addExceptionBrandedWarning2
 msgid "You are about to override how %S identifies this site."
 msgstr "Arra készül, hogy felülbírálja a webhely %S általi besorolását."
@@ -629,6 +658,9 @@ msgstr "Nem áll rendelkezésre információ"
 #: addExceptionNoCertLong2
 msgid "Unable to obtain identification status for this site."
 msgstr "Nem lehet a webhely azonosítási állapotát lekérdezni."
+
+#~ msgid "Certificate Viewer:"
+#~ msgstr "Tanúsítványmegjelenítő:"
 
 #~ msgid "The page you are viewing is not encrypted."
 #~ msgstr "A megjelenített oldal nincsen titkosítva."
