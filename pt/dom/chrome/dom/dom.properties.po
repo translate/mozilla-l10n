@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-15 16:56+0000\n"
-"PO-Revision-Date: 2016-11-15 22:32+0000\n"
+"PO-Revision-Date: 2016-11-17 20:02+0000\n"
 "Last-Translator: Rodrigo <rodrigo.mcunha@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Generator: Pootle 2.8\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1479249123.000000\n"
+"X-POOTLE-MTIME: 1479412965.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -126,8 +126,8 @@ msgid ""
 "en/Optimizing_Your_Pages_for_Speculative_Parsing"
 msgstr ""
 "Uma árvore não balanceada foi escrita utilizando document.write(), "
-"originando que os dados da rede fossem reanalisados. Para mais detalhes, "
-"consulte https://developer.mozilla.org/en/"
+"originando que os dados da rede fossem reanalisados. Para mais informação "
+"https://developer.mozilla.org/en/"
 "Optimizing_Your_Pages_for_Speculative_Parsing"
 
 #: DocumentWriteIgnored
@@ -1270,6 +1270,10 @@ msgid ""
 "See https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
 "encoding-02#section-3.1 for more information."
 msgstr ""
+"O ServiceWorker para o âmbito ‘%1$S’ falhou ao desencriptar a mensagem push. "
+"O cabeçalho ‘Encryption’ deve incluir um parâmetro ‘salt‘ único para cada "
+"mensagem. Veja https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
+"encoding-02#section-3.1 para mais informação."
 
 #. # LOCALIZATION NOTE: This error is reported when the "Crypto-Key" header for an
 #. # incoming push message is missing or invalid. Do not translate "ServiceWorker",
@@ -1281,6 +1285,10 @@ msgid ""
 "server’s public key. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-4 for more information."
 msgstr ""
+"O ServiceWorker para o âmbito ‘%1$S’ falhou ao desencriptar a mensagem push. "
+"O cabeçalho ‘Crypto-Key’ deve incluir um parâmetro ‘dh‘ que contenha a chave "
+"pública da aplicação do servidor. Veja https://tools.ietf.org/html/draft-"
+"ietf-httpbis-encryption-encoding-02#section-4 para mais informação."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt because the deprecated
 #. # "Encryption-Key" header for an incoming push message is missing or invalid.
@@ -1294,6 +1302,12 @@ msgid ""
 "Encoding: aesgcm‘ instead. See https://tools.ietf.org/html/draft-ietf-"
 "httpbis-encryption-encoding-02#section-4 for more information."
 msgstr ""
+"O ServiceWorker para o âmbito ‘%1$S’ falhou ao desencriptar a mensagem push. "
+"O cabeçalho ‘Encryption-Key’ deve incluir um parâmetro ‘dh‘. Este cabeçalho "
+"foi descontinuado e será removido brevemente. Por favor, em alternativa, "
+"utilize ‘Crypto-Key‘ com ‘Content-Encoding: aesgcm‘. Veja https://tools.ietf."
+"org/html/draft-ietf-httpbis-encryption-encoding-02#section-4 para mais "
+"informação."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "Content-Encoding" header is missing or contains an
@@ -1306,6 +1320,11 @@ msgid ""
 "deprecated and will soon be removed. See https://tools.ietf.org/html/draft-"
 "ietf-httpbis-encryption-encoding-02#section-2 for more information."
 msgstr ""
+"O ServiceWorker para o âmbito ‘%1$S’ falhou ao desencriptar a mensagem push. "
+"O cabeçalho ‘Content-Encoding’ deve ser ‘aesgcm‘. ‘aesgcm128‘ é permitido, "
+"mas foi descontinuado e será removido brevemente. Veja https://tools.ietf."
+"org/html/draft-ietf-httpbis-encryption-encoding-02#section-2 para mais "
+"informação."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "dh" parameter is not valid base64url. Do not translate
@@ -1320,6 +1339,12 @@ msgid ""
 "encoding). See https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
 "encoding-02#section-4 for more information."
 msgstr ""
+"O ServiceWorker para o âmbito ‘%1$S’ falhou ao desencriptar a mensagem push. "
+"O parâmetro ‘dh’ no cabeçalho ‘Crypto-Key‘ deve ser a chave pública Diffie-"
+"Hellman da aplicação do servidor, codificada com base64url (https://tools."
+"ietf.org/html/rfc7515#appendix-C) e na forma \"não comprimida\" ou \"bruta"
+"\" (65 bytes antes de codificar). Veja https://tools.ietf.org/html/draft-"
+"ietf-httpbis-encryption-encoding-02#section-4 para mais informação."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "salt" parameter is not valid base64url. Do not translate
@@ -1333,6 +1358,11 @@ msgid ""
 "before encoding. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-3.1 for more information."
 msgstr ""
+"O ServiceWorker para o âmbito ‘%1$S’ falhou ao desencriptar a mensagem push. "
+"O parâmetro ‘salt’ no cabeçalho ‘Encryption‘ deve ser codificado com "
+"base64url (https://tools.ietf.org/html/rfc7515#appendix-C) e deve ter, pelo "
+"menos, 16 bytes antes de codificar. Veja https://tools.ietf.org/html/draft-"
+"ietf-httpbis-encryption-encoding-02#section-3.1 para mais informação."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "rs" parameter is not a number, or is less than the pad size.
@@ -1346,6 +1376,10 @@ msgid ""
 "or omitted entirely. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-3.1 for more information."
 msgstr ""
+"O ServiceWorker para o âmbito ‘%1$S’ falhou ao desencriptar a mensagem push. "
+"O parâmetro ‘rs’ no cabeçalho ‘Encryption‘ deve estar entre %2$S e 2^36-31, "
+"ou inteiramente omitido. Veja https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-3.1 para mais informação."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because an encrypted record is shorter than the pad size, the pad is larger
@@ -1359,6 +1393,10 @@ msgid ""
 "ietf.org/html/draft-ietf-httpbis-encryption-encoding-02#section-2 for more "
 "information."
 msgstr ""
+"O ServiceWorker para o âmbito ‘%1$S’ falhou ao desencriptar a mensagem push. "
+"Um registo na mensagem encriptada não foi preenchido corretamente. Veja "
+"https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
+"encoding-02#section-2 para mais informação."
 
 #. # LOCALIZATION NOTE: This error is reported when push message decryption fails
 #. # and no specific error info is available. Do not translate "ServiceWorker".
