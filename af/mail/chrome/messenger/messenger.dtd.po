@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-25 15:18+0000\n"
+"POT-Creation-Date: 2016-11-17 12:19+0000\n"
 "PO-Revision-Date: 2015-08-12 05:30+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: translate-discuss-af@lists.sourceforge.net\n"
@@ -447,7 +447,7 @@ msgid "Re&cipient"
 msgstr "Ont&vanger"
 
 #: sortByCorrespondentCmd.label sortByCorrespondentCmd.accesskey
-msgid "Corr&espondents"
+msgid "Correspo&ndents"
 msgstr ""
 
 #: sortByUnreadCmd.label sortByUnreadCmd.accesskey
@@ -1172,15 +1172,6 @@ msgstr "&Skrap pos gemerk as gemors in vouer"
 msgid "I&mport…"
 msgstr "I&nvoer…"
 
-#: errorConsoleCmd.label errorConsoleCmd.accesskey
-msgid "&Error Console"
-msgstr "&Foutkonsole"
-
-#: errorConsoleCmd.commandkey
-msgctxt "errorConsoleCmd.commandkey"
-msgid "j"
-msgstr ""
-
 #: clearRecentHistory.label clearRecentHistory.accesskey
 msgid "Clear Recent &History…"
 msgstr ""
@@ -1190,14 +1181,58 @@ msgstr ""
 msgid "Account &Settings"
 msgstr "&Rekeningopstelling…"
 
-#. belongs to accountManagerCmd2.label,
-#. which is placed under the Edit menu on Unix systems
+#. LOCALIZATION NOTE (accountManagerCmdUnix.accesskey):
+#. Belongs to accountManagerCmd.label, which is placed under the Edit menu
+#. on Unix systems
 #: accountManagerCmdUnix2.accesskey
 msgid "A"
 msgstr ""
 
-#: allowRemoteDebugging.label allowRemoteDebugging.accesskey
-msgid "Allow Remote Debu&gging"
+#. Developer Tools Submenu
+#: devtoolsMenu.label devtoolsMenu.accesskey
+msgid "Devel&oper Tools"
+msgstr ""
+
+#: devToolboxCmd.label devToolboxCmd.accesskey
+msgid "Developer &Toolbox"
+msgstr ""
+
+#: devToolboxCmd.commandkey
+msgid "i"
+msgstr ""
+
+#: addonDebugCmd.label addonDebugCmd.accesskey
+msgid "&Add-on Debugger"
+msgstr ""
+
+#: tabsDebugCmd.label tabsDebugCmd.accesskey
+msgid "&Content Frame Debugger"
+msgstr ""
+
+#: errorConsoleCmd.label errorConsoleCmd.accesskey
+msgid "&Error Console"
+msgstr "&Foutkonsole"
+
+#: errorConsoleCmd.commandkey
+msgctxt "errorConsoleCmd.commandkey"
+msgid "j"
+msgstr ""
+
+#: scratchpadCmd.label scratchpadCmd.accesskey
+msgid "&Scratchpad"
+msgstr ""
+
+#. This should be a key code constant as per
+#. https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode#Constants_for_keyCode_value
+#. (but without the DOM_ prefix)
+#: scratchpadCmd.keycode
+#, fuzzy
+msgid "VK_F4"
+msgstr "VK_F2"
+
+#. This should be the text printed on the key defined in the previous string.
+#: scratchpadCmd.keytext
+msgid "F4"
 msgstr ""
 
 #. Mail Toolbar
@@ -1234,6 +1269,10 @@ msgstr "Lêer"
 #: archiveButton.label
 msgid "Archive"
 msgstr "Argief"
+
+#: openConversationButton.label
+msgid "Conversation"
+msgstr ""
 
 #: nextButton.label
 #, fuzzy
@@ -1410,6 +1449,10 @@ msgstr "Lêerskiesboodskap"
 #: archiveButton.tooltip
 msgid "Archive selected messages"
 msgstr "Argiveer gemerkte boodskappe"
+
+#: openConversationButton.tooltip
+msgid "Show conversation of selected message"
+msgstr ""
 
 #: nextButton.tooltip
 msgid "Move to the next unread message"
@@ -2026,9 +2069,9 @@ msgstr "Herstel kolomme na verstekopstelling"
 
 #. This option in the thread pane column picker pops up a sub-menu containing
 #. the "columnPicker.applyToFolder.label" and
-#. "columnPicker.applyToFolderAndChildren.label" options.  This item indicates
+#. "columnPicker.applyToFolderAndChildren.label" options. This item indicates
 #. a desire to apply the currently displayed set of columns to some other
-#. folder(s).  The sub-menu items indicate whether we want to apply it to just
+#. folder(s). The sub-menu items indicate whether we want to apply it to just
 #. a folder or also its children.
 #: columnPicker.applyTo.label
 msgid "Apply columns to…"
@@ -2036,7 +2079,7 @@ msgstr "Pas kolomme toe op…"
 
 #. This option in the thread pane column picker is found on a sub-menu beneath
 #. the "columnPicker.applyTo.label" alongside
-#. "columnPicker.applyToFolderAndChildren.label".  It indicates a desire to
+#. "columnPicker.applyToFolderAndChildren.label". It indicates a desire to
 #. apply the currently display thread pane column settings to a single folder
 #. that the user selects using the same widget as the move to/copy to
 #. mechanism (via a series of popups).
@@ -2046,9 +2089,9 @@ msgstr "Vouer…"
 
 #. This option in the thread pane column picker is found on a sub-menu beneath
 #. the "columnPicker.applyTo.label" alongside
-#. "columnPicker.applyToFolder.label".  It indicates a desire to
+#. "columnPicker.applyToFolder.label". It indicates a desire to
 #. apply the currently display thread pane column settings to a folder and all
-#. of its descendents.  The user selects the folder using the same widget as the
+#. of its descendents. The user selects the folder using the same widget as the
 #. move to/copy to mechanism (via a series of popups).
 #: columnPicker.applyToFolderAndChildren.label
 msgid "Folder and its children…"
@@ -2056,13 +2099,13 @@ msgstr "Vouer en sy kinders…"
 
 #. This is used in the folder selection widget for the
 #. "columnPicker.applyToFolder.label" and
-#. "columnPicker.applyToFolderAndChildren.label" menu options.  Whenever
+#. "columnPicker.applyToFolderAndChildren.label" menu options. Whenever
 #. a folder has children, it results in a menu popup; the first menu item
 #. in that popup is given this label to indicate that that folder should be
-#. selected.  For example, if folder "A" has two children, "B" and "C", then
+#. selected. For example, if folder "A" has two children, "B" and "C", then
 #. when the user hovers over "A", a new popup menu will be displayed whose
-#. items are "This folder", "B", and "C".  This is the equivalent of the
-#. "File here" option for the move to/copy to widge.t
+#. items are "This folder", "B", and "C". This is the equivalent of the
+#. "File here" option for the move to/copy to widget.
 #: columnPicker.thisFolder.label
 msgid "This folder"
 msgstr "Dié vouer"
@@ -2092,26 +2135,26 @@ msgctxt "quickSearchCmd.key"
 msgid "k"
 msgstr "k"
 
-#. This is the base of the empty text for the global search box.  We replace
+#. This is the base of the empty text for the global search box. We replace
 #. #1 with the contents of the appropriate search.keyLabel.* value for the
 #. platform.
 #. The goal is to convey to the user that typing in the box will allow them
 #. to search for messages globally and that there is a hotkey they can press
-#. to get to the box faster.  If the global indexer is disabled, the search
+#. to get to the box faster. If the global indexer is disabled, the search
 #. box will be collapsed and the user will never see this message.
 #: search.label.base1
 msgid "Search #1"
 msgstr ""
 
 #. The description of the key-binding to get into the global search box on
-#. windows and linux (which use the control key).  We use the key defined in
+#. windows and linux (which use the control key). We use the key defined in
 #. the quickSearchCmd.key entity defined above, the letter should match it.
 #: search.keyLabel.nonmac
 msgid "&lt;Ctrl+K&gt;"
 msgstr ""
 
 #. The description of the key-binding to get into the global search box on mac
-#. systems.  We use the key defined in the quickSearchCmd.key entity defined
+#. systems. We use the key defined in the quickSearchCmd.key entity defined
 #. above, the letter should match it.
 #: search.keyLabel.mac
 msgid "&lt;&#x2318;K&gt;"
@@ -2758,9 +2801,6 @@ msgstr ""
 #~ "_: markFlaggedCmd.label markFlaggedCmd.accesskey\n"
 #~ "&Flag"
 #~ msgstr "&Vlag"
-
-#~ msgid "i"
-#~ msgstr "i"
 
 #~ msgid "&Extensions"
 #~ msgstr "&Uitbreidings"

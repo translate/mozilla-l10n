@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-14 09:17+0000\n"
+"POT-Creation-Date: 2016-11-17 12:19+0000\n"
 "PO-Revision-Date: 2016-07-14 10:49+0000\n"
 "Last-Translator: Gwenn M <tornoz@laposte.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,8 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1468493344.000000\n"
 
@@ -125,6 +125,14 @@ msgstr "N'oc'h ket aotreet (Roet hoc'h eus ur ger-tremen fall ?)"
 #: connection.error.failedToGetAResource
 msgid "Failed to get a resource"
 msgstr "C'hwitet en deus kaout ul loaz"
+
+#: connection.error.failedMaxResourceLimit
+msgid "This account is connected from too many places at the same time."
+msgstr ""
+
+#: connection.error.failedResourceNotValid
+msgid "Resource is not valid."
+msgstr ""
 
 #: connection.error.XMPPNotSupported
 msgid "This server does not support XMPP"
@@ -264,6 +272,17 @@ msgid "You have to rejoin the room to be able to use this command."
 msgstr ""
 "Ret eo deoc'h kevreañ er saloñs evit bezañ gouest da arverañ an arc'had-mañ. "
 
+#. #   %S is the name of the recipient.
+#: conversation.error.resourceNotAvailable
+msgid "You must talk first as %S could be connected with more than one client."
+msgstr ""
+
+#. # LOCALIZATION NOTE (conversation.error.version.*):
+#. #   %S is the name of the recipient.
+#: conversation.error.version.unknown
+msgid "%S's client does not support querying for its software version."
+msgstr ""
+
 #. # LOCALIZATION NOTE (tooltip.*):
 #. #   These are the titles of lines of information that will appear in
 #. #   the tooltip showing details about a contact or conversation.
@@ -346,13 +365,25 @@ msgstr "_Ger-tremen"
 #. #   %2$S is the room.
 #. #   %3$S is the reason which is a message provided by the person sending the
 #. #   invitation.
-#: conversation.muc.invitationWithReason
+#: conversation.muc.invitationWithReason2
 msgid "%1$S has invited you to join %2$S: %3$S"
 msgstr "Pedet oc'h bet gant %1$S da gevreañ ouzh %2$S : %3$S"
+
+#. #   %3$S is the password of the room.
+#. #   %4$S is the reason which is a message provided by the person sending the
+#. #   invitation.
+#: conversation.muc.invitationWithReason2.password
+msgid "%1$S has invited you to join %2$S with password %3$S: %4$S"
+msgstr ""
 
 #: conversation.muc.invitationWithoutReason
 msgid "%1$S has invited you to join %2$S"
 msgstr "Pedet oc'h bet gant %1$S da gevreañ ouzh %2$S"
+
+#. #   %3$S is the password of the room.
+#: conversation.muc.invitationWithoutReason.password
+msgid "%1$S has invited you to join %2$S with password %3$S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (conversation.muc.join):
 #. #   This is displayed as a system message when a participant joins room.
@@ -532,6 +563,19 @@ msgstr ""
 msgid "You have been removed from the room because of a system shutdown."
 msgstr "Dilamet hoc'h bet eus ar saloñs abalamour m'eo bet lazhet ar reizhad."
 
+#. # LOCALIZATION NOTE (conversation.message.version*):
+#. #   %1$S is the name of the user whose version was requested.
+#. #   %2$S is the client name response from the client.
+#. #   %3$S is the client version response from the client.
+#. #   %4$S is the operating system(OS) response from the client.
+#: conversation.message.version
+msgid "%1$S is using \"%2$S %3$S\"."
+msgstr ""
+
+#: conversation.message.versionWithOS
+msgid "%1$S is using \"%2$S %3$S\" on %4$S."
+msgstr ""
+
 #. # LOCALIZATION NOTE (options.*):
 #. #   These are the protocol specific options shown in the account manager and
 #. #   account wizard windows.
@@ -643,6 +687,12 @@ msgstr ""
 "%S &lt;jid&gt;[&lt;kemennadenn&gt;]: Pediñ un arveriad da gevreañ er saloñs "
 "bremanel gant ur gemennadenn diret."
 
+#: command.inviteto
+msgid ""
+"%S &lt;room jid&gt;[&lt;password&gt;]: Invite your conversation partner to "
+"join a room, together with its password if required."
+msgstr ""
+
 #: command.me
 msgid "%S &lt;action to perform&gt;: Perform an action."
 msgstr "%S &lt;gwezh da arloañ&gt; : Arloañ ur gwezh"
@@ -658,6 +708,11 @@ msgid ""
 msgstr ""
 "%S &lt;lesanv&gt; &lt;kemennadenn&gt;: Kas ur gemennadenn brevez d'ur "
 "perzhiad er sal."
+
+#: command.version
+msgid ""
+"%S: Request information about the client your conversation partner is using."
+msgstr ""
 
 #~ msgid "Unknown error"
 #~ msgstr "Fazi dianav"
