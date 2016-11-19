@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-15 16:56+0000\n"
-"PO-Revision-Date: 2016-11-19 08:13+0000\n"
+"PO-Revision-Date: 2016-11-19 10:14+0000\n"
 "Last-Translator: andpet <az@kth.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Generator: Pootle 2.8\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1479543220.000000\n"
+"X-POOTLE-MTIME: 1479550496.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -1247,6 +1247,10 @@ msgid ""
 "See https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
 "encoding-02#section-3.1 for more information."
 msgstr ""
+"ServiceWorker för område ‘%1$S’ misslyckades med att dekryptera ett push-"
+"meddelande. Headern ‘Encryption’ måste innehålla en unik ‘salt‘-parameter "
+"för varje meddelande. Se https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-3.1 för mer information."
 
 #. # LOCALIZATION NOTE: This error is reported when the "Crypto-Key" header for an
 #. # incoming push message is missing or invalid. Do not translate "ServiceWorker",
@@ -1258,6 +1262,10 @@ msgid ""
 "server’s public key. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-4 for more information."
 msgstr ""
+"ServiceWorker för område ‘%1$S’ misslyckades med att dekryptera ett push-"
+"meddelande. Headern ‘Crypto-Key‘ måste innehålla en ‘dh‘-parameter som "
+"innehåller appserverns publika nyckel. Se https://tools.ietf.org/html/draft-"
+"ietf-httpbis-encryption-encoding-02#section-4 för mer information."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt because the deprecated
 #. # "Encryption-Key" header for an incoming push message is missing or invalid.
@@ -1271,6 +1279,11 @@ msgid ""
 "Encoding: aesgcm‘ instead. See https://tools.ietf.org/html/draft-ietf-"
 "httpbis-encryption-encoding-02#section-4 for more information."
 msgstr ""
+"ServiceWorker för område ‘%1$S’ misslyckades med att dekryptera ett push-"
+"meddelande. Headern ‘Encryption-Key’ måste innehålla en ‘dh‘-parameter. "
+"Denna header är föråldrad och kommer snart att tas bort. Använd ‘Crypto-Key‘ "
+"med ‘Content-Encoding: aesgcm‘ istället. Se https://tools.ietf.org/html/"
+"draft-ietf-httpbis-encryption-encoding-02#section-4 för mer information."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "Content-Encoding" header is missing or contains an
@@ -1283,6 +1296,11 @@ msgid ""
 "deprecated and will soon be removed. See https://tools.ietf.org/html/draft-"
 "ietf-httpbis-encryption-encoding-02#section-2 for more information."
 msgstr ""
+"ServiceWorker för område ‘%1$S’ misslyckades med att dekryptera ett push-"
+"meddelande. Headern ‘Content-Encoding‘ måste vara ‘aesgcm‘. ‘Aesgcm128‘ är "
+"tillåtet, men föråldrat och kommer snart att tas bort. Se https://tools.ietf."
+"org/html/draft-ietf-httpbis-encryption-encoding-02#section-2 för mer "
+"information."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "dh" parameter is not valid base64url. Do not translate
@@ -1297,6 +1315,12 @@ msgid ""
 "encoding). See https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
 "encoding-02#section-4 for more information."
 msgstr ""
+"ServiceWorker för område ‘%1$S’ misslyckades med att dekryptera ett push-"
+"meddelande. Parametern 'dh' i headern 'Crypto-Key' måste vara appserverns "
+"Diffie-Hellman publika nyckel, base64url-kodad (https://tools.ietf.org/html/"
+"rfc7515#appendix-C) och i formen “uncompressed” eller “raw” (65 bytes innan "
+"kodning). Se https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
+"encoding-02#section-4 för mer information."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "salt" parameter is not valid base64url. Do not translate
@@ -1310,6 +1334,11 @@ msgid ""
 "before encoding. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-3.1 for more information."
 msgstr ""
+"ServiceWorker för område ‘%1$S’ misslyckades med att dekryptera ett push-"
+"meddelande. Parametern 'salt' i headern 'Encryption' måste vara base64url-"
+"kodad (https://tools.ietf.org/html/rfc7515#appendix-C) och vara minst 16 "
+"byte innan kodning. Se https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-3.1 för mer information."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "rs" parameter is not a number, or is less than the pad size.
@@ -1323,6 +1352,10 @@ msgid ""
 "or omitted entirely. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-3.1 for more information."
 msgstr ""
+"ServiceWorker för område ‘%1$S’ misslyckades med att dekryptera ett push-"
+"meddelande. Parametern 'rs' i headern 'Encryption' måste vara mellan %2$S "
+"och 2^36-31 eller utelämnas helt. Se https://tools.ietf.org/html/draft-ietf-"
+"httpbis-encryption-encoding-02#section-3.1 för mer information."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because an encrypted record is shorter than the pad size, the pad is larger
@@ -1336,6 +1369,10 @@ msgid ""
 "ietf.org/html/draft-ietf-httpbis-encryption-encoding-02#section-2 for more "
 "information."
 msgstr ""
+"ServiceWorker för område ‘%1$S’ misslyckades med att dekryptera ett push-"
+"meddelande. En post i det krypterade meddelandet är inte padded korrekt. Se "
+"https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
+"encoding-02#section-2 för mer information."
 
 #. # LOCALIZATION NOTE: This error is reported when push message decryption fails
 #. # and no specific error info is available. Do not translate "ServiceWorker".
@@ -1370,6 +1407,9 @@ msgid ""
 "removed soon. Use ImageBitmapRenderingContext.transferFromImageBitmap "
 "instead."
 msgstr ""
+"ImageBitmapRenderingContext.transferImageBitmap är föråldrat och kommer att "
+"tas bort inom kort. Använda ImageBitmapRenderingContext."
+"transferFromImageBitmap istället."
 
 #: ChromeScriptedDOMParserWithoutPrincipal
 msgid "Creating DOMParser without a principal is deprecated."
@@ -1411,6 +1451,8 @@ msgstr "fil"
 #: LargeAllocationSuccess
 msgid "This page was loaded in a new process due to a Large-Allocation header."
 msgstr ""
+"Denna sida laddades i en ny process på grund av att en Large-Allocation "
+"header."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name. Do not translate GET.
 #: LargeAllocationNonGetRequest
@@ -1418,6 +1460,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the load being triggered by a "
 "non-GET request."
 msgstr ""
+"En Large-Allocation header ignorerades på grund av belastningen utlöstes av "
+"en non-GET begäran."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationRelatedBrowsingContexts
@@ -1425,6 +1469,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the presence of windows which "
 "have a reference to this browsing context."
 msgstr ""
+"En Large-Allocation header ignorerades på grund av närvaron av fönster som "
+"har en hänvisning till denna surfkontext."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationInIFrame
@@ -1432,6 +1478,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the load occuring within an "
 "iframe."
 msgstr ""
+"En Large-Allocation header ignorerades på grund av belastningen som "
+"inträffar inom en iframe."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationNonE10S
@@ -1439,6 +1487,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the document not being loaded "
 "out of process."
 msgstr ""
+"En Large-Allocation header ignorerades på grund av att dokumentet inte "
+"laddas ur processen."
 
 #~ msgid ""
 #~ "‘mozHidden’ and ‘mozVisibilityState’ are deprecated.  Please use the "
