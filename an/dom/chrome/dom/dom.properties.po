@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-15 16:56+0000\n"
-"PO-Revision-Date: 2016-11-19 23:09+0000\n"
+"PO-Revision-Date: 2016-11-20 00:01+0000\n"
 "Last-Translator: Juan Pablo Martínez <juanpabl@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: an\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Generator: Pootle 2.8\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1479596983.000000\n"
+"X-POOTLE-MTIME: 1479600101.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -1282,6 +1282,10 @@ msgid ""
 "See https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
 "encoding-02#section-3.1 for more information."
 msgstr ""
+"Lo ServiceWorker pa l'ambito ‘%1$S’ no ha puesto descifrar un mensache push. "
+"La cabecera ‘Encryption’ ha d'incluyir un parametro 'salt' unico pa cada "
+"mensache. Mirar https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
+"encoding-02#section-3.1 pa tener mas información."
 
 #. # LOCALIZATION NOTE: This error is reported when the "Crypto-Key" header for an
 #. # incoming push message is missing or invalid. Do not translate "ServiceWorker",
@@ -1293,6 +1297,10 @@ msgid ""
 "server’s public key. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-4 for more information."
 msgstr ""
+"Lo ServiceWorker pa l'ambito ‘%1$S’ no ha puesto descifrar un mensache push. "
+"La cabecera ‘Crypto-Key’ ha d'incluyir un parametro 'dh' con la clau publica "
+"d'o servidor de l'aplicación. Mirar https://tools.ietf.org/html/draft-ietf-"
+"httpbis-encryption-encoding-02#section-4 pa tener mas información."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt because the deprecated
 #. # "Encryption-Key" header for an incoming push message is missing or invalid.
@@ -1306,6 +1314,11 @@ msgid ""
 "Encoding: aesgcm‘ instead. See https://tools.ietf.org/html/draft-ietf-"
 "httpbis-encryption-encoding-02#section-4 for more information."
 msgstr ""
+"Lo ServiceWorker pa l'ambito ‘%1$S’ no ha puesto descifrar un mensache push. "
+"La cabecera ‘Encryption-Key’ ha d'incluyir un parametro 'dh'. Ista cabecera "
+"ye obsoleta y luego s'eliminará. Use millor ‘Crypto-Key‘ con ‘Content-"
+"Encoding: aesgcm‘. Mirar https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-4 pa tener mas información."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "Content-Encoding" header is missing or contains an
@@ -1318,6 +1331,11 @@ msgid ""
 "deprecated and will soon be removed. See https://tools.ietf.org/html/draft-"
 "ietf-httpbis-encryption-encoding-02#section-2 for more information."
 msgstr ""
+"Lo ServiceWorker pa l'ambito ‘%1$S’ no ha puesto descifrar un mensache push. "
+"La cabecera ‘Content-Encoding’ ha d'estar 'aesgcm'. 'aesgcm128' ye "
+"permitida, pero obsoleta y luego s'eliminará. Mirar https://tools.ietf.org/"
+"html/draft-ietf-httpbis-encryption-encoding-02#section-2 pa tener mas "
+"información."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "dh" parameter is not valid base64url. Do not translate
@@ -1332,6 +1350,12 @@ msgid ""
 "encoding). See https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
 "encoding-02#section-4 for more information."
 msgstr ""
+"Lo ServiceWorker pa l'ambito ‘%1$S’ no ha puesto descifrar un mensache push. "
+"Lo parametro 'dh' en a cabecera 'Crypto-Key' ha d'estar la clau publica "
+"Diffie-Hellman d'o servidor de l'aplicación, base64url-encoded (https://"
+"tools.ietf.org/html/rfc7515#appendix-C) y en forma no comprimida u cruda (65 "
+"bytes antes de codificar). Mirar https://tools.ietf.org/html/draft-ietf-"
+"httpbis-encryption-encoding-02#section-4 pa tener mas información."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "salt" parameter is not valid base64url. Do not translate
@@ -1345,6 +1369,11 @@ msgid ""
 "before encoding. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-3.1 for more information."
 msgstr ""
+"Lo ServiceWorker pa l'ambito ‘%1$S’ no ha puesto descifrar un mensache push. "
+"Lo parametro 'salt' en a cabecera 'Encryption' ha d'estar base64url-encoded "
+"(https://tools.ietf.org/html/rfc7515#appendix-C) y tener lo menos 16 bytes "
+"antes de codificar. Mirar https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-3.1 pa tener mas información."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "rs" parameter is not a number, or is less than the pad size.
@@ -1358,6 +1387,10 @@ msgid ""
 "or omitted entirely. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-3.1 for more information."
 msgstr ""
+"Lo ServiceWorker pa l'ambito ‘%1$S’ no ha puesto descifrar un mensache push. "
+"Lo parametro 'rs' en a cabecera 'Encryption' ha d'estar entre %2$S and "
+"2^36-31 u estar omitiu. Mirar https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-3.1 pa tener mas información."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because an encrypted record is shorter than the pad size, the pad is larger
@@ -1371,6 +1404,10 @@ msgid ""
 "ietf.org/html/draft-ietf-httpbis-encryption-encoding-02#section-2 for more "
 "information."
 msgstr ""
+"Lo ServiceWorker pa l'ambito ‘%1$S’ no ha puesto descifrar un mensache push. "
+"Un rechistro d'o mensache cifrau no ye correctament repleno. Mirar https://"
+"tools.ietf.org/html/draft-ietf-httpbis-encryption-encoding-02#section-2 pa "
+"tener mas información."
 
 #. # LOCALIZATION NOTE: This error is reported when push message decryption fails
 #. # and no specific error info is available. Do not translate "ServiceWorker".
@@ -1405,47 +1442,55 @@ msgid ""
 "removed soon. Use ImageBitmapRenderingContext.transferFromImageBitmap "
 "instead."
 msgstr ""
+"ImageBitmapRenderingContext.transferImageBitmap ye obsoleto y luego "
+"s'eliminará. Use millor ImageBitmapRenderingContext.transferFromImageBitmap."
 
 #: ChromeScriptedDOMParserWithoutPrincipal
 msgid "Creating DOMParser without a principal is deprecated."
-msgstr ""
+msgstr "La creyación de DOMParser sin un principal ye obsoleta."
 
 #: IIRFilterChannelCountChangeWarning
 msgid "IIRFilterNode channel count changes may produce audio glitches."
 msgstr ""
+"Los cambios en la cuenta d'o canal IIRFIlterNode pueden producir glitches "
+"d'audio."
 
 #: BiquadFilterChannelCountChangeWarning
 msgid "BiquadFilterNode channel count changes may produce audio glitches."
 msgstr ""
+"Los cambios en la cuenta d'o canal BiquadFilterNode pueden producir glitches "
+"d'audio."
 
 #. # LOCALIZATION NOTE: %1$S is the unanimatable paced property.
 #: UnanimatablePacedProperty
 msgid "Paced property ‘%1$S’ is not an animatable property."
-msgstr ""
+msgstr "La propiedat marcapasiada ‘%1$S’ no ye una propiedat animable."
 
 #. # LOCALIZATION NOTE: Do not translate ".jpeg"
 #: GenericImageNameJPEG
 msgid "image.jpeg"
-msgstr ""
+msgstr "imachen.jpeg"
 
 #. # LOCALIZATION NOTE: Do not translate ".gif"
 #: GenericImageNameGIF
 msgid "image.gif"
-msgstr ""
+msgstr "imachen.gif"
 
 #. # LOCALIZATION NOTE: Do not translate ".png"
 #: GenericImageNamePNG
 msgid "image.png"
-msgstr ""
+msgstr "imachen.png"
 
 #: GenericFileName
 msgid "file"
-msgstr ""
+msgstr "fichero"
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationSuccess
 msgid "This page was loaded in a new process due to a Large-Allocation header."
 msgstr ""
+"Ista pachina s'ha cargau en un nuevo proceso por la cabecera d'asignación "
+"ampla."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name. Do not translate GET.
 #: LargeAllocationNonGetRequest
@@ -1453,6 +1498,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the load being triggered by a "
 "non-GET request."
 msgstr ""
+"S'ha ignorau una cabecera d'asignación ampla ya que la carga ha estau "
+"desencadenada por una demanda no GET."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationRelatedBrowsingContexts
@@ -1460,6 +1507,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the presence of windows which "
 "have a reference to this browsing context."
 msgstr ""
+"S'ha ignorau una cabecera d'asignación ampla por la presencia de finestras "
+"que tienen una referencia a iste contexto de navegación."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationInIFrame
@@ -1467,6 +1516,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the load occuring within an "
 "iframe."
 msgstr ""
+"S'ha ignorau una cabecera d'asignación ampla por la carga que ocurre en un "
+"iframe."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationNonE10S
@@ -1474,6 +1525,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the document not being loaded "
 "out of process."
 msgstr ""
+"S'ha ignorau una cabecera d'asignación ampla ya que lo documento no se carga "
+"difuera d'o proceso."
 
 #~ msgid ""
 #~ "‘mozHidden’ and ‘mozVisibilityState’ are deprecated.  Please use the "
