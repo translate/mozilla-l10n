@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-17 13:02+0000\n"
+"POT-Creation-Date: 2016-12-05 15:16+0000\n"
 "PO-Revision-Date: 2016-07-12 16:59+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -120,7 +120,7 @@ msgid "Dis&allow counter"
 msgstr ""
 
 #: event.attendees.disallowcounter.tooltip
-msgid "Indicates that you will not accept counter proposals"
+msgid "Indicates that you will not accept counterproposals"
 msgstr ""
 
 #. Keyboard Shortcuts
@@ -251,13 +251,31 @@ msgstr "&Teagmháil Leabhair Seoltaí"
 msgid "&Close"
 msgstr "&Dún"
 
+#. LOCALIZATION NOTE
+#. - event.menu.item.save.accesskey is used for the "Save" menu item
+#. - when editing events/tasks in a dialog window.
+#. - event.menu.item.save.tab.accesskey is used for the "Save" menu item
+#. - when editing events/tasks in a tab.
 #: event.menu.item.save.label event.menu.item.save.accesskey
 msgid "&Save"
 msgstr "&Sábháil"
 
+#: event.menu.item.save.tab.accesskey
+msgid "a"
+msgstr ""
+
+#. LOCALIZATION NOTE
+#. - event.menu.item.saveandclose.accesskey is used for "Save and Close"
+#. - menu item when editing events/tasks in a dialog window.
+#. - event.menu.item.saveandclose.tab.accesskey is used for "Save and Close"
+#. - when editing events/tasks in a tab.
 #: event.menu.item.saveandclose.label event.menu.item.saveandclose.accesskey
 msgid "Save and C&lose"
 msgstr "Sábhái&l agus Dún"
+
+#: event.menu.item.saveandclose.tab.accesskey
+msgid "z"
+msgstr ""
 
 #: event.menu.item.delete.label event.menu.item.delete.accesskey
 msgid "&Delete…"
@@ -432,8 +450,15 @@ msgid "R&emove attendee"
 msgstr "B&ain rannpháirtí"
 
 #. Toolbar
-#: event.toolbar.save.label
-msgctxt "event.toolbar.save.label"
+#: event.toolbar.save.label2
+#, fuzzy
+msgctxt "event.toolbar.save.label2"
+msgid "Save"
+msgstr "&Sábháil"
+
+#: event.toolbar.saveandclose.label
+#, fuzzy
+msgctxt "event.toolbar.saveandclose.label"
 msgid "Save and Close"
 msgstr "Sábháil agus Dún"
 
@@ -451,8 +476,15 @@ msgstr "Tabhair Cuireadh Do Rannpháirtithe"
 msgid "Privacy"
 msgstr "Príobháideachas"
 
-#: event.toolbar.save.tooltip
-msgctxt "event.toolbar.save.tooltip"
+#: event.toolbar.save.tooltip2
+#, fuzzy
+msgctxt "event.toolbar.save.tooltip2"
+msgid "Save"
+msgstr "&Sábháil"
+
+#: event.toolbar.saveandclose.tooltip
+#, fuzzy
+msgctxt "event.toolbar.saveandclose.tooltip"
 msgid "Save and Close"
 msgstr "Sábháil agus Dún"
 
@@ -487,20 +519,31 @@ msgid "Change Free/Busy time"
 msgstr "Athraigh Saor/Gafa"
 
 #. Counter box
+#. LOCALIZATON NOTE(counter.button.*)
+#. - This is only visible in the UI if you have received a counterproposal before and are going to
+#. - reschedule the event from the imipbar in the email view. Clicking on the buttons will only
+#. - populate the form fields in the dialog, there's no other immediate action on clicking like with
+#. - the imip bar. Rescheduling will happen after clicking on save&close as usual. This screenshot
+#. - illustrates how it might look like: https://bugzilla.mozilla.org/attachment.cgi?id=8810121
 #: counter.button.proposal.label counter.button.proposal.accesskey
 msgid "A&pply proposal"
 msgstr ""
 
-#: counter.button.proposal.tooltip
-msgid "Apply the proposal data to the form."
+#: counter.button.proposal.tooltip2
+msgid ""
+"Event fields will be filled in using the values from the counterproposal, "
+"only saving with or without additional changes will notify all attendees "
+"accordingly"
 msgstr ""
 
 #: counter.button.original.label counter.button.original.accesskey
 msgid "Apply o&riginal data"
 msgstr ""
 
-#: counter.button.original.tooltip
-msgid "Apply the original data to the form."
+#: counter.button.original.tooltip2
+msgid ""
+"The fields will be set to the values from the original event, before the "
+"counterproposal was made"
 msgstr ""
 
 #. Main page
@@ -1264,6 +1307,11 @@ msgstr "Dearbhóidh mé níos déanaí"
 msgid "Reminder:"
 msgstr "Meabhrúchán:"
 
+#: read.only.attachments.label
+#, fuzzy
+msgid "Attachments:"
+msgstr "&Iatáin:"
+
 #: read.only.attendees.label
 msgid "Attendees"
 msgstr "Rannpháirtithe"
@@ -1275,6 +1323,10 @@ msgstr "Cur Síos"
 #: read.only.link.label
 msgid "Related Link"
 msgstr "Nasc Gaolta"
+
+#~ msgctxt "event.toolbar.save.tooltip"
+#~ msgid "Save and Close"
+#~ msgstr "Sábháil agus Dún"
 
 #~ msgid "Invite Attendees…"
 #~ msgstr "Tabhair Cuireadh Do Rannpháirtithe…"

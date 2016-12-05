@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-17 13:02+0000\n"
+"POT-Creation-Date: 2016-12-05 15:16+0000\n"
 "PO-Revision-Date: 2016-11-24 19:32+0000\n"
 "Last-Translator: Belkacem mohammed <belkacem77@gmail.com>\n"
 "Language-Team: none\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1480015926.000000\n"
 
@@ -117,7 +117,8 @@ msgid "Dis&allow counter"
 msgstr "&Ur sirig ara amesmiḍan"
 
 #: event.attendees.disallowcounter.tooltip
-msgid "Indicates that you will not accept counter proposals"
+#, fuzzy
+msgid "Indicates that you will not accept counterproposals"
 msgstr "ayagi ymmal-d ma yella ur tqebbleḍ ara asumer n umesḍan"
 
 #. Keyboard Shortcuts
@@ -198,13 +199,31 @@ msgstr "A&nermis n umedlis n tensa"
 msgid "&Close"
 msgstr "&Mdel"
 
+#. LOCALIZATION NOTE
+#. - event.menu.item.save.accesskey is used for the "Save" menu item
+#. - when editing events/tasks in a dialog window.
+#. - event.menu.item.save.tab.accesskey is used for the "Save" menu item
+#. - when editing events/tasks in a tab.
 #: event.menu.item.save.label event.menu.item.save.accesskey
 msgid "&Save"
 msgstr "&Sekles"
 
+#: event.menu.item.save.tab.accesskey
+msgid "a"
+msgstr ""
+
+#. LOCALIZATION NOTE
+#. - event.menu.item.saveandclose.accesskey is used for "Save and Close"
+#. - menu item when editing events/tasks in a dialog window.
+#. - event.menu.item.saveandclose.tab.accesskey is used for "Save and Close"
+#. - when editing events/tasks in a tab.
 #: event.menu.item.saveandclose.label event.menu.item.saveandclose.accesskey
 msgid "Save and C&lose"
 msgstr "Sekles u M&del"
+
+#: event.menu.item.saveandclose.tab.accesskey
+msgid "z"
+msgstr ""
 
 #: event.menu.item.delete.label event.menu.item.delete.accesskey
 msgid "&Delete…"
@@ -369,8 +388,15 @@ msgid "R&emove attendee"
 msgstr "Kkes imttekk&i"
 
 #. Toolbar
-#: event.toolbar.save.label
-msgctxt "event.toolbar.save.label"
+#: event.toolbar.save.label2
+#, fuzzy
+msgctxt "event.toolbar.save.label2"
+msgid "Save"
+msgstr "&Sekles"
+
+#: event.toolbar.saveandclose.label
+#, fuzzy
+msgctxt "event.toolbar.saveandclose.label"
 msgid "Save and Close"
 msgstr "Sekles u M&del"
 
@@ -388,8 +414,15 @@ msgstr "Ɛṛeḍ-d imttekki"
 msgid "Privacy"
 msgstr "Tabaḍnit"
 
-#: event.toolbar.save.tooltip
-msgctxt "event.toolbar.save.tooltip"
+#: event.toolbar.save.tooltip2
+#, fuzzy
+msgctxt "event.toolbar.save.tooltip2"
+msgid "Save"
+msgstr "&Sekles"
+
+#: event.toolbar.saveandclose.tooltip
+#, fuzzy
+msgctxt "event.toolbar.saveandclose.tooltip"
 msgid "Save and Close"
 msgstr "Sekles u M&del"
 
@@ -424,21 +457,32 @@ msgid "Change Free/Busy time"
 msgstr "Snifel akud ilelli/yettwaṭṭef"
 
 #. Counter box
+#. LOCALIZATON NOTE(counter.button.*)
+#. - This is only visible in the UI if you have received a counterproposal before and are going to
+#. - reschedule the event from the imipbar in the email view. Clicking on the buttons will only
+#. - populate the form fields in the dialog, there's no other immediate action on clicking like with
+#. - the imip bar. Rescheduling will happen after clicking on save&close as usual. This screenshot
+#. - illustrates how it might look like: https://bugzilla.mozilla.org/attachment.cgi?id=8810121
 #: counter.button.proposal.label counter.button.proposal.accesskey
 msgid "A&pply proposal"
 msgstr "Snes asumer"
 
-#: counter.button.proposal.tooltip
-msgid "Apply the proposal data to the form."
-msgstr "Snes isefka n usumer di tferkit."
+#: counter.button.proposal.tooltip2
+msgid ""
+"Event fields will be filled in using the values from the counterproposal, "
+"only saving with or without additional changes will notify all attendees "
+"accordingly"
+msgstr ""
 
 #: counter.button.original.label counter.button.original.accesskey
 msgid "Apply o&riginal data"
 msgstr "Snes isefka ineẓliyen"
 
-#: counter.button.original.tooltip
-msgid "Apply the original data to the form."
-msgstr "Snes isefka n usumer di tferkit."
+#: counter.button.original.tooltip2
+msgid ""
+"The fields will be set to the values from the original event, before the "
+"counterproposal was made"
+msgstr ""
 
 #. Main page
 #: event.title.textbox.label event.title.textbox.accesskey
@@ -1194,6 +1238,11 @@ msgstr "Ad sentmeɣ ticki"
 msgid "Reminder:"
 msgstr "Asmekti:"
 
+#: read.only.attachments.label
+#, fuzzy
+msgid "Attachments:"
+msgstr "Imedda&yen:"
+
 #: read.only.attendees.label
 msgid "Attendees"
 msgstr "Imttekkiyen"
@@ -1205,3 +1254,13 @@ msgstr "Aglam"
 #: read.only.link.label
 msgid "Related Link"
 msgstr "Aseɣwen i d-yettuɣalen"
+
+#~ msgctxt "event.toolbar.save.tooltip"
+#~ msgid "Save and Close"
+#~ msgstr "Sekles u M&del"
+
+#~ msgid "Apply the proposal data to the form."
+#~ msgstr "Snes isefka n usumer di tferkit."
+
+#~ msgid "Apply the original data to the form."
+#~ msgstr "Snes isefka n usumer di tferkit."

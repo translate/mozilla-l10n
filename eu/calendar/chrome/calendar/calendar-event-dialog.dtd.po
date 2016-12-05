@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-17 13:02+0000\n"
+"POT-Creation-Date: 2016-12-05 15:16+0000\n"
 "PO-Revision-Date: 2015-05-11 09:43+0000\n"
 "Last-Translator: Julen Ruiz Aizpuru <julenx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,7 +120,7 @@ msgid "Dis&allow counter"
 msgstr ""
 
 #: event.attendees.disallowcounter.tooltip
-msgid "Indicates that you will not accept counter proposals"
+msgid "Indicates that you will not accept counterproposals"
 msgstr ""
 
 #. Keyboard Shortcuts
@@ -202,13 +202,31 @@ msgstr "Helbide-liburu&ko kontaktuak"
 msgid "&Close"
 msgstr "I&txi"
 
+#. LOCALIZATION NOTE
+#. - event.menu.item.save.accesskey is used for the "Save" menu item
+#. - when editing events/tasks in a dialog window.
+#. - event.menu.item.save.tab.accesskey is used for the "Save" menu item
+#. - when editing events/tasks in a tab.
 #: event.menu.item.save.label event.menu.item.save.accesskey
 msgid "&Save"
 msgstr "Go&rde"
 
+#: event.menu.item.save.tab.accesskey
+msgid "a"
+msgstr ""
+
+#. LOCALIZATION NOTE
+#. - event.menu.item.saveandclose.accesskey is used for "Save and Close"
+#. - menu item when editing events/tasks in a dialog window.
+#. - event.menu.item.saveandclose.tab.accesskey is used for "Save and Close"
+#. - when editing events/tasks in a tab.
 #: event.menu.item.saveandclose.label event.menu.item.saveandclose.accesskey
 msgid "Save and C&lose"
 msgstr "Gorde eta it&xi"
+
+#: event.menu.item.saveandclose.tab.accesskey
+msgid "z"
+msgstr ""
 
 #: event.menu.item.delete.label event.menu.item.delete.accesskey
 msgid "&Delete…"
@@ -375,8 +393,15 @@ msgid "R&emove attendee"
 msgstr ""
 
 #. Toolbar
-#: event.toolbar.save.label
-msgctxt "event.toolbar.save.label"
+#: event.toolbar.save.label2
+#, fuzzy
+msgctxt "event.toolbar.save.label2"
+msgid "Save"
+msgstr "Go&rde"
+
+#: event.toolbar.saveandclose.label
+#, fuzzy
+msgctxt "event.toolbar.saveandclose.label"
 msgid "Save and Close"
 msgstr "Gorde eta itxi"
 
@@ -394,8 +419,15 @@ msgstr "Gonbidatu partaideak"
 msgid "Privacy"
 msgstr "Pribatutasuna"
 
-#: event.toolbar.save.tooltip
-msgctxt "event.toolbar.save.tooltip"
+#: event.toolbar.save.tooltip2
+#, fuzzy
+msgctxt "event.toolbar.save.tooltip2"
+msgid "Save"
+msgstr "Go&rde"
+
+#: event.toolbar.saveandclose.tooltip
+#, fuzzy
+msgctxt "event.toolbar.saveandclose.tooltip"
 msgid "Save and Close"
 msgstr "Gorde eta itxi"
 
@@ -430,20 +462,31 @@ msgid "Change Free/Busy time"
 msgstr "Aldatu libre/lanpetuta denbora"
 
 #. Counter box
+#. LOCALIZATON NOTE(counter.button.*)
+#. - This is only visible in the UI if you have received a counterproposal before and are going to
+#. - reschedule the event from the imipbar in the email view. Clicking on the buttons will only
+#. - populate the form fields in the dialog, there's no other immediate action on clicking like with
+#. - the imip bar. Rescheduling will happen after clicking on save&close as usual. This screenshot
+#. - illustrates how it might look like: https://bugzilla.mozilla.org/attachment.cgi?id=8810121
 #: counter.button.proposal.label counter.button.proposal.accesskey
 msgid "A&pply proposal"
 msgstr ""
 
-#: counter.button.proposal.tooltip
-msgid "Apply the proposal data to the form."
+#: counter.button.proposal.tooltip2
+msgid ""
+"Event fields will be filled in using the values from the counterproposal, "
+"only saving with or without additional changes will notify all attendees "
+"accordingly"
 msgstr ""
 
 #: counter.button.original.label counter.button.original.accesskey
 msgid "Apply o&riginal data"
 msgstr ""
 
-#: counter.button.original.tooltip
-msgid "Apply the original data to the form."
+#: counter.button.original.tooltip2
+msgid ""
+"The fields will be set to the values from the original event, before the "
+"counterproposal was made"
 msgstr ""
 
 #. Main page
@@ -1206,6 +1249,11 @@ msgstr "Beranduago baieztatuko dut"
 msgid "Reminder:"
 msgstr "Gogoratu:"
 
+#: read.only.attachments.label
+#, fuzzy
+msgid "Attachments:"
+msgstr "E&ranskinak:"
+
 #: read.only.attendees.label
 msgid "Attendees"
 msgstr "Partaideak"
@@ -1217,6 +1265,10 @@ msgstr "Azalpena"
 #: read.only.link.label
 msgid "Related Link"
 msgstr "Erlazionatutako lotura"
+
+#~ msgctxt "event.toolbar.save.tooltip"
+#~ msgid "Save and Close"
+#~ msgstr "Gorde eta itxi"
 
 #, fuzzy
 #~ msgid "Invite Attendees…"
