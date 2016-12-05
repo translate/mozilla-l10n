@@ -40,7 +40,7 @@
 <!ENTITY event.attendees.notifyundisclosed.tooltip   "This option sends one invitation email per attendee. Each invitation only contains the recipient attendee so that other attendee identities are not disclosed.">
 <!ENTITY event.attendees.disallowcounter.label       "Disallow counter">
 <!ENTITY event.attendees.disallowcounter.accesskey   "a">
-<!ENTITY event.attendees.disallowcounter.tooltip     "Indicates that you will not accept counter proposals">
+<!ENTITY event.attendees.disallowcounter.tooltip     "Indicates that you will not accept counterproposals">
 
 <!-- Keyboard Shortcuts -->
 <!ENTITY event.dialog.new.event.key2              "I">
@@ -70,10 +70,25 @@
 <!ENTITY  event.menu.item.new.contact.accesskey           "C">
 <!ENTITY  event.menu.item.close.label                     "Close">
 <!ENTITY  event.menu.item.close.accesskey                 "C">
+
+<!-- LOCALIZATION NOTE
+   - event.menu.item.save.accesskey is used for the "Save" menu item
+   - when editing events/tasks in a dialog window.
+   - event.menu.item.save.tab.accesskey is used for the "Save" menu item
+   - when editing events/tasks in a tab. -->
 <!ENTITY  event.menu.item.save.label                      "Save">
 <!ENTITY  event.menu.item.save.accesskey                  "S">
+<!ENTITY  event.menu.item.save.tab.accesskey              "a">
+
+<!-- LOCALIZATION NOTE
+    - event.menu.item.saveandclose.accesskey is used for "Save and Close"
+    - menu item when editing events/tasks in a dialog window.
+    - event.menu.item.saveandclose.tab.accesskey is used for "Save and Close"
+    - when editing events/tasks in a tab. -->
 <!ENTITY  event.menu.item.saveandclose.label              "Save and Close">
 <!ENTITY  event.menu.item.saveandclose.accesskey          "l">
+<!ENTITY  event.menu.item.saveandclose.tab.accesskey      "z">
+
 <!ENTITY  event.menu.item.delete.label                    "Delete…">
 <!ENTITY  event.menu.item.delete.accesskey                "D">
 <!ENTITY  event.menu.item.page.setup.label                "Page Setup">
@@ -150,12 +165,14 @@
 <!ENTITY event.remove.attendee.accesskey                  "e">
 
 <!-- Toolbar -->
-<!ENTITY  event.toolbar.save.label                        "Save and Close">
+<!ENTITY  event.toolbar.save.label2                       "Save">
+<!ENTITY  event.toolbar.saveandclose.label                "Save and Close">
 <!ENTITY  event.toolbar.delete.label                      "Delete">
 <!ENTITY  event.toolbar.attendees.label                   "Invite Attendees">
 <!ENTITY  event.toolbar.privacy.label                     "Privacy">
 
-<!ENTITY  event.toolbar.save.tooltip                      "Save and Close">
+<!ENTITY  event.toolbar.save.tooltip2                     "Save">
+<!ENTITY  event.toolbar.saveandclose.tooltip              "Save and Close">
 <!ENTITY  event.toolbar.delete.tooltip                    "Delete">
 <!ENTITY  event.toolbar.attendees.tooltip                 "Invite Attendees">
 <!ENTITY  event.toolbar.attachments.tooltip               "Add Attachments">
@@ -165,12 +182,18 @@
 <!ENTITY  event.toolbar.freebusy.tooltip                  "Change Free/Busy time">
 
 <!-- Counter box -->
+<!-- LOCALIZATON NOTE(counter.button.*)
+   - This is only visible in the UI if you have received a counterproposal before and are going to
+   - reschedule the event from the imipbar in the email view. Clicking on the buttons will only
+   - populate the form fields in the dialog, there's no other immediate action on clicking like with
+   - the imip bar. Rescheduling will happen after clicking on save&close as usual. This screenshot
+   - illustrates how it might look like: https://bugzilla.mozilla.org/attachment.cgi?id=8810121 -->
 <!ENTITY counter.button.proposal.label                    "Apply proposal">
 <!ENTITY counter.button.proposal.accesskey                "p">
-<!ENTITY counter.button.proposal.tooltip                  "Apply the proposal data to the form.">
+<!ENTITY counter.button.proposal.tooltip2                 "Event fields will be filled in using the values from the counterproposal, only saving with or without additional changes will notify all attendees accordingly">
 <!ENTITY counter.button.original.label                    "Apply original data">
 <!ENTITY counter.button.original.accesskey                "r">
-<!ENTITY counter.button.original.tooltip                  "Apply the original data to the form.">
+<!ENTITY counter.button.original.tooltip2                 "The fields will be set to the values from the original event, before the counterproposal was made">
 
 <!-- Main page -->
 <!ENTITY event.title.textbox.label                        "Title:" >
@@ -389,6 +412,7 @@
 <!ENTITY read.only.tentative.label       "I might attend">
 <!ENTITY read.only.needs.action.label    "I will confirm later">
 <!ENTITY read.only.reminder.label        "Reminder:">
+<!ENTITY read.only.attachments.label     "Attachments:">
 <!ENTITY read.only.attendees.label       "Attendees">
 <!ENTITY read.only.description.label     "Description">
 <!ENTITY read.only.link.label            "Related Link">
