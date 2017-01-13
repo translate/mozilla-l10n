@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-15 16:56+0000\n"
-"PO-Revision-Date: 2017-01-13 19:06+0000\n"
+"PO-Revision-Date: 2017-01-13 19:38+0000\n"
 "Last-Translator: Jobava <jobaval10n@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ro\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Generator: Pootle 2.8\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1484334413.000000\n"
+"X-POOTLE-MTIME: 1484336280.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -1174,6 +1174,10 @@ msgid ""
 "of ‘%2$S’ received for script ‘%3$S’.  Must be ‘text/javascript’, "
 "‘application/x-javascript’, or ‘application/javascript’."
 msgstr ""
+"Nu s-a reușit înregistrarea/actualizarea unui ServiceWorker pentru scope-ul "
+"„%1$S”: Content-Type greșit al „%2$S” pasat scriptului „%3$S”.  Trebuie să "
+"fie de tip „text/javascript”, „application/x-javascript”, sau „application/"
+"javascript”."
 
 #. # LOCALIZATION NOTE: Do not translate "ServiceWorker". %1$S is a URL representing the scope of the ServiceWorker.
 #: ServiceWorkerGraceTimeoutTermination
@@ -1190,47 +1194,49 @@ msgid ""
 "inside a short running user-generated event handler."
 msgstr ""
 "document.execCommand(‘cut’/‘copy’) a fost negată deoarece nu a fost chemată "
-"dintr-un event handler de scurtă durată generat de utilizator. ş"
+"dintr-un event handler de scurtă durată generat de utilizator."
 
 #: ManifestShouldBeObject
 msgid "Manifest should be an object."
-msgstr ""
+msgstr "Manifestul trebuie să fie un obiect."
 
 #: ManifestScopeURLInvalid
 msgid "The scope URL is invalid."
-msgstr ""
+msgstr "Scope-ul URL-ului este nevalid."
 
 #: ManifestScopeNotSameOrigin
 msgid "The scope URL must be same origin as document."
-msgstr ""
+msgstr "Scope-ul URL-ului trebuie să aibă aceeași origine ca documentul."
 
 #: ManifestStartURLOutsideScope
 msgid "The start URL is outside the scope, so the scope is invalid."
-msgstr ""
+msgstr "Începutul URL-ului este în afara scope-ului, care este nevalid."
 
 #: ManifestStartURLInvalid
 msgid "The start URL is invalid."
-msgstr ""
+msgstr "URL-ul de început este nevalid."
 
 #: ManifestStartURLShouldBeSameOrigin
 msgid "The start URL must be same origin as document."
-msgstr ""
+msgstr "URL-ul de început trebuie să aibă aceeași origine ca documentul."
 
 #. # LOCALIZATION NOTE: %1$S is the name of the object whose property is invalid. %2$S is the name of the invalid property. %3$S is the expected type of the property value. E.g. "Expected the manifest's start_url member to be a string."
 #: ManifestInvalidType
 msgid "Expected the %1$S’s %2$S member to be a %3$S."
-msgstr ""
+msgstr "S-a așteptat ca membrul %2$S al %1$S să fie un %3$S."
 
 #. # LOCALIZATION NOTE: %1$S is the name of the property whose value is invalid. %2$S is the (invalid) value of the property. E.g. "theme_color: 42 is not a valid CSS color."
 #: ManifestInvalidCSSColor
 msgid "%1$S: %2$S is not a valid CSS color."
-msgstr ""
+msgstr "%1$S: %2$S nu este o culoare validă CSS."
 
 #: PatternAttributeCompileFailure
 msgid ""
 "Unable to check <input pattern='%S'> because the pattern is not a valid "
 "regexp: %S"
 msgstr ""
+"Nu s-a putut verifica <input pattern='%S'> deoarece %S nu este un regex "
+"valid."
 
 #. # LOCALIZATION NOTE: Do not translate "postMessage" or DOMWindow. %S values are origins, like https://domain.com:port
 #: TargetPrincipalDoesNotMatch
@@ -1238,6 +1244,8 @@ msgid ""
 "Failed to execute ‘postMessage’ on ‘DOMWindow’: The target origin provided "
 "(‘%S’) does not match the recipient window’s origin (‘%S’)."
 msgstr ""
+"Nu s-a reușit executarea „postMessage” într-o „DOMWindow”: Origina țintă "
+"furnizată („%S”) nu se potrivește cu originea ferestrei recipiente („%S”)."
 
 #. # LOCALIZATION NOTE: Do not translate 'YouTube'. %S values are origins, like https://domain.com:port
 #: RewriteYouTubeEmbed
@@ -1288,6 +1296,12 @@ msgid ""
 "Encoding: aesgcm‘ instead. See https://tools.ietf.org/html/draft-ietf-"
 "httpbis-encryption-encoding-02#section-4 for more information."
 msgstr ""
+"ServiceWorker-ul pentru scope-ul „%1$S” nu a reușit să decripteze un mesaj "
+"de push. Headerul ‘Encryption-Key’ trebuie să includă un parametru „dh”. "
+"Acest header este învechit și va fi eliminat în curând. Trebuie să folosești "
+"„Crypto-Key” cu „Content-Encoding: aesgcm” în loc. Vezi https://tools.ietf."
+"org/html/draft-ietf-httpbis-encryption-encoding-02#section-4 pentru mai "
+"multe informații."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "Content-Encoding" header is missing or contains an
@@ -1370,10 +1384,13 @@ msgid ""
 "Ignoring ‘preventDefault()’ call on event of type ‘%1$S’ from a listener "
 "registered as ‘passive’."
 msgstr ""
+"Se ignoră apelul „preventDefault()” pe un eveniment de tipul „%1$S” primit "
+"de la un listener înregistrat ca „passive”."
 
 #: FileLastModifiedDateWarning
 msgid "File.lastModifiedDate is deprecated. Use File.lastModified instead."
 msgstr ""
+"File.lastModifiedDate este învechit. Folosește File.lastModified în loc."
 
 #. # LOCALIZATION NOTE: 'ImageBitmapRenderingContext.transferImageBitmap' and 'ImageBitmapRenderingContext.transferFromImageBitmap' should not be translated
 #: ImageBitmapRenderingContext_TransferImageBitmap
@@ -1385,7 +1402,7 @@ msgstr ""
 
 #: ChromeScriptedDOMParserWithoutPrincipal
 msgid "Creating DOMParser without a principal is deprecated."
-msgstr ""
+msgstr "Crearea unui DomParser fără principal este învechită."
 
 #: IIRFilterChannelCountChangeWarning
 msgid "IIRFilterNode channel count changes may produce audio glitches."
@@ -1398,31 +1415,33 @@ msgstr ""
 #. # LOCALIZATION NOTE: %1$S is the unanimatable paced property.
 #: UnanimatablePacedProperty
 msgid "Paced property ‘%1$S’ is not an animatable property."
-msgstr ""
+msgstr "Proprietatea paced „%1$S” nu este o proprietate ce poate fi animată."
 
 #. # LOCALIZATION NOTE: Do not translate ".jpeg"
 #: GenericImageNameJPEG
 msgid "image.jpeg"
-msgstr ""
+msgstr "image.jpeg"
 
 #. # LOCALIZATION NOTE: Do not translate ".gif"
 #: GenericImageNameGIF
 msgid "image.gif"
-msgstr ""
+msgstr "image.gif"
 
 #. # LOCALIZATION NOTE: Do not translate ".png"
 #: GenericImageNamePNG
 msgid "image.png"
-msgstr ""
+msgstr "image.png"
 
 #: GenericFileName
 msgid "file"
-msgstr ""
+msgstr "fișier"
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationSuccess
 msgid "This page was loaded in a new process due to a Large-Allocation header."
 msgstr ""
+"Această pagină a fost încărcată într-un nou proces din cauza unui header "
+"Large-Allocation."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name. Do not translate GET.
 #: LargeAllocationNonGetRequest
