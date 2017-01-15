@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-15 16:56+0000\n"
-"PO-Revision-Date: 2017-01-10 08:02+0000\n"
+"PO-Revision-Date: 2017-01-15 01:15+0000\n"
 "Last-Translator: Håvar Henriksen <havar@firefox.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nb_NO\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Generator: Pootle 2.8\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1484035365.000000\n"
+"X-POOTLE-MTIME: 1484442902.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -1230,7 +1230,6 @@ msgstr ""
 #. # incoming push message is missing or invalid. Do not translate "ServiceWorker",
 #. # "Crypto-Key", and "dh". %1$S is the ServiceWorker scope URL.
 #: PushMessageBadCryptoKeyHeader
-#, fuzzy
 msgid ""
 "The ServiceWorker for scope ‘%1$S’ failed to decrypt a push message. The "
 "‘Crypto-Key‘ header must include a ‘dh‘ parameter containing the app "
@@ -1238,9 +1237,9 @@ msgid ""
 "encryption-encoding-02#section-4 for more information."
 msgstr ""
 "ServiceWorkeren for området ‘%1$S’ klarte ikke å dekryptere en push-melding. "
-"'Encryption'-headeren må inneholde en unik 'salt'-parameter for hver "
-"melding. Se https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
-"encoding-02#section-3.1 for mer informasjon."
+"‘Crypto-Key‘-headeren må inneholde en 'dh'-parameter som inneholder app-"
+"serverens offentlige nøkkel. Se https://tools.ietf.org/html/draft-ietf-"
+"httpbis-encryption-encoding-02#section-4 for mer informasjon."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt because the deprecated
 #. # "Encryption-Key" header for an incoming push message is missing or invalid.
@@ -1254,6 +1253,11 @@ msgid ""
 "Encoding: aesgcm‘ instead. See https://tools.ietf.org/html/draft-ietf-"
 "httpbis-encryption-encoding-02#section-4 for more information."
 msgstr ""
+"ServiceWorkeren for området ‘%1$S’ klarte ikke å dekryptere en push-melding. "
+"‘Encryption-Key‘-headeren må inneholde en 'dh'-parameter. Denne headeren er "
+"foreldet og vil snart bli fjernet. Bruk ‘Crypto-Key‘ med ‘Content-Encoding: "
+"aesgcm‘ istedenfor. Se https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-4 for mer informasjon."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "Content-Encoding" header is missing or contains an
@@ -1266,6 +1270,10 @@ msgid ""
 "deprecated and will soon be removed. See https://tools.ietf.org/html/draft-"
 "ietf-httpbis-encryption-encoding-02#section-2 for more information."
 msgstr ""
+"ServiceWorkeren for området ‘%1$S’ klarte ikke å dekryptere en push-melding. "
+"‘Content-Encoding‘-headeren må være ‘aesgcm‘. ‘aesgcm128‘ er tillatt, men "
+"foreldet og vil snart bli fjernet. Se https://tools.ietf.org/html/draft-ietf-"
+"httpbis-encryption-encoding-02#section-2 for mer informasjon."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "dh" parameter is not valid base64url. Do not translate
@@ -1280,6 +1288,12 @@ msgid ""
 "encoding). See https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
 "encoding-02#section-4 for more information."
 msgstr ""
+"ServiceWorkeren for området ‘%1$S’ klarte ikke å dekryptere en push-melding. "
+"‘dh‘-parameteret i ‘Crypto-Key‘-headern må være app-serverens offentlige "
+"Diffie-Hellman-nøkkel, må være base64-url-kodet (https://tools.ietf.org/html/"
+"rfc7515#appendix-C) og i “uncompressed” eller “raw” form (65 byte før "
+"koding). Se https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
+"encoding-02#section-4 for mer informasjon."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "salt" parameter is not valid base64url. Do not translate
@@ -1293,6 +1307,11 @@ msgid ""
 "before encoding. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-3.1 for more information."
 msgstr ""
+"ServiceWorkeren for området ‘%1$S’ klarte ikke å dekryptere en push-melding. "
+"‘salt‘-parameteret i 'Encryption'-headeren må være base64url-kodet (https://"
+"tools.ietf.org/html/rfc7515#appendix-C), og være på minst 16 byte før "
+"koding. Se https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
+"encoding-02#section-3.1 for mer informasjon."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "rs" parameter is not a number, or is less than the pad size.
@@ -1317,7 +1336,6 @@ msgstr ""
 #. # "ServiceWorker". %1$S is the ServiceWorker scope URL. %2$S is the pad size
 #. # (1 for aesgcm128, 2 for aesgcm).
 #: PushMessageBadPaddingError
-#, fuzzy
 msgid ""
 "The ServiceWorker for scope ‘%1$S’ failed to decrypt a push message. A "
 "record in the encrypted message was not padded correctly. See https://tools."
@@ -1325,9 +1343,9 @@ msgid ""
 "information."
 msgstr ""
 "ServiceWorkeren for området ‘%1$S’ klarte ikke å dekryptere en push-melding. "
-"'Encryption'-headeren må inneholde en unik 'salt'-parameter for hver "
-"melding. Se https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
-"encoding-02#section-3.1 for mer informasjon."
+"En post i den krypterte meldingen ble ikke utfylt riktig. Se https://tools."
+"ietf.org/html/draft-ietf-httpbis-encryption-encoding-02#section-2 for mer "
+"informasjon."
 
 #. # LOCALIZATION NOTE: This error is reported when push message decryption fails
 #. # and no specific error info is available. Do not translate "ServiceWorker".
@@ -1415,6 +1433,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the load being triggered by a "
 "non-GET request."
 msgstr ""
+"En Large-Allocation-header ble ignorert på grunn av at lasten ble utløst av "
+"en ikke-GET-forespørsel."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationRelatedBrowsingContexts
@@ -1422,6 +1442,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the presence of windows which "
 "have a reference to this browsing context."
 msgstr ""
+"En Large-Allocation-header ble ignorert på grunn av tilstedeværelsen av "
+"vinduer som har en referanse til denne nettlesingskonteksten."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationInIFrame
@@ -1429,6 +1451,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the load occuring within an "
 "iframe."
 msgstr ""
+"En Large-Allocation-header ble ignorert på grunn av at lastingen hendte inni "
+"en iframe."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationNonE10S
