@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-15 16:56+0000\n"
-"PO-Revision-Date: 2017-01-20 08:05+0000\n"
+"PO-Revision-Date: 2017-01-20 16:49+0000\n"
 "Last-Translator: Kerim Kalamujic <kerim@mozilla.ba>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: bs\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Generator: Pootle 2.8\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1484899554.000000\n"
+"X-POOTLE-MTIME: 1484930976.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -1253,6 +1253,10 @@ msgid ""
 "See https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
 "encoding-02#section-3.1 for more information."
 msgstr ""
+"ServiceWorker za scope ‘%1$S’ nije uspio dekriptovati push poruku. "
+"‘Encryption’ zaglavlje mora da sadrži jedinstven ‘salt‘ parametar za svaku "
+"poruku. Pogledajte https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
+"encoding-02#section-3.1 za više informacija."
 
 #. # LOCALIZATION NOTE: This error is reported when the "Crypto-Key" header for an
 #. # incoming push message is missing or invalid. Do not translate "ServiceWorker",
@@ -1264,6 +1268,10 @@ msgid ""
 "server’s public key. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-4 for more information."
 msgstr ""
+"ServiceWorker za scope ‘%1$S’ nije uspio dekriptovati push poruku. ‘Crypto-"
+"Key’ zaglavlje mora da sadrži ‘dh‘ parametar koji sadrži javni ključ servera "
+"aplikacije. Pogledajte https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-4 za više informacija."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt because the deprecated
 #. # "Encryption-Key" header for an incoming push message is missing or invalid.
@@ -1277,6 +1285,11 @@ msgid ""
 "Encoding: aesgcm‘ instead. See https://tools.ietf.org/html/draft-ietf-"
 "httpbis-encryption-encoding-02#section-4 for more information."
 msgstr ""
+"ServiceWorker za scope ‘%1$S’ nije uspio dekriptovati push poruku. "
+"‘Encryption-Key’ zaglavlje mora da sadrži ‘dh‘ parametar. Ovo zaglavlje je "
+"zastarjelo i uskoro će biti uklonjeno. Molimo da koristite ‘Crypto-Key‘ sa "
+"‘Content-Encoding: aesgcm‘ umjesto njega. Pogledajte https://tools.ietf.org/"
+"html/draft-ietf-httpbis-encryption-encoding-02#section-4 za više informacija."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "Content-Encoding" header is missing or contains an
@@ -1289,6 +1302,11 @@ msgid ""
 "deprecated and will soon be removed. See https://tools.ietf.org/html/draft-"
 "ietf-httpbis-encryption-encoding-02#section-2 for more information."
 msgstr ""
+"ServiceWorker za scope ‘%1$S’ nije uspio dekriptovati push poruku. ‘Content-"
+"Encoding’ zaglavlje mora imati vrijednost ‘aesgcm‘. ‘aegscm128‘ je "
+"dozvoljeno, ali je zastarjelo i uskoro će biti uklonjeno. Pogledajte https://"
+"tools.ietf.org/html/draft-ietf-httpbis-encryption-encoding-02#section-2 za "
+"više informacija."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "dh" parameter is not valid base64url. Do not translate
@@ -1303,6 +1321,12 @@ msgid ""
 "encoding). See https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
 "encoding-02#section-4 for more information."
 msgstr ""
+"ServiceWorker za scope ‘%1$S’ nije uspio dekriptovati push poruku. ‘dh’ "
+"parametar u ‘Crypto-Key‘ zaglavlju mora da sadrži Diffie-Hellman javni ključ "
+"servera aplikacije, base64url-enkodiran (https://tools.ietf.org/html/"
+"rfc7515#appendix-C) i u “uncompressed” ili “raw” formi (65 bajta prije "
+"enkodiranja). Pogledajte https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-4 za više informacija."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "salt" parameter is not valid base64url. Do not translate
@@ -1316,6 +1340,11 @@ msgid ""
 "before encoding. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-3.1 for more information."
 msgstr ""
+"ServiceWorker za scope ‘%1$S’ nije uspio dekriptovati push poruku. ‘salt’ "
+"parametar u ‘Encryption‘ zaglavlju mora biti base64url-enkodiran (https://"
+"tools.ietf.org/html/rfc7515#appendix-C) i imati barem 16 bajta prije "
+"enkodiranja. Pogledajte https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-3.1 za više informacija."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "rs" parameter is not a number, or is less than the pad size.
