@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-19 14:17+0000\n"
+"POT-Creation-Date: 2017-01-23 16:20+0000\n"
 "PO-Revision-Date: 2016-11-18 12:11+0000\n"
 "Last-Translator: Selim Şumlu <selim@sum.lu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1479471078.000000\n"
 
@@ -33,12 +33,14 @@ msgstr "Erişilebilirlik"
 msgid "Always use the &cursor keys to navigate within pages"
 msgstr "&Sayfaların içinde hareket ederken her zaman işaretçi tuşlarını kullan"
 
-#: searchStartTyping.label searchStartTyping.accesskey
-msgid "Search for te&xt when I start typing"
+#: searchOnStartTyping.label searchOnStartTyping.accesskey
+#, fuzzy
+msgid "Search for te&xt when you start typing"
 msgstr "Ya&zmaya başlar başlamaz arama yap"
 
-#: blockAutoRefresh.label blockAutoRefresh.accesskey
-msgid "Warn me when we&bsites try to redirect or reload the page"
+#: blockAutoReload.label blockAutoReload.accesskey
+#, fuzzy
+msgid "Warn you when we&bsites try to redirect or reload the page"
 msgstr "Sitele&r sayfaları yönlendirmek veya tazelemek istediğinde beni uyar"
 
 #: useOnScreenKeyboard.label useOnScreenKeyboard.accesskey
@@ -61,8 +63,9 @@ msgstr "Akı&cı kaydırmayı kullan"
 msgid "Use ha&rdware acceleration when available"
 msgstr "Mümkün ol&duğunda donanım ivmelenmesini kullan"
 
-#: checkSpelling.label checkSpelling.accesskey
-msgid "Check my spelling as I &type"
+#: checkUserSpelling.label checkUserSpelling.accesskey
+#, fuzzy
+msgid "Check your spelling as you &type"
 msgstr "Yazarken yazım dene&timi yap"
 
 #: dataChoicesTab.label
@@ -146,6 +149,25 @@ msgstr "Önbelleğe alınmış web içeriği"
 msgid "Offline Web Content and User Data"
 msgstr "Çevrimdışı web içeriği ve kullanıcı verileri"
 
+#. Site Data section manages sites using Storage API and is under Network
+#: siteData.label
+msgid "Site Data"
+msgstr ""
+
+#: clearSiteData.label clearSiteData.accesskey
+msgid "C&lear All Data"
+msgstr ""
+
+#: siteDataSettings.label siteDataSettings.accesskey
+#, fuzzy
+msgid "Sett&ings…"
+msgstr "&Ayarlar…"
+
+#: siteDataLearnMoreLink.label
+#, fuzzy
+msgid "Learn more"
+msgstr "Daha fazla bilgi al"
+
 #. LOCALIZATION NOTE:
 #. The entities limitCacheSizeBefore.label and limitCacheSizeAfter.label appear on a single
 #. line in preferences as follows:
@@ -174,16 +196,18 @@ msgstr "&Otomatik önbellek yönetimini devre dışı bırak"
 msgid "Update"
 msgstr "Güncelleme"
 
-#: updateApp.label
-msgid "&brandShortName; updates:"
+#: updateApplication.label
+#, fuzzy
+msgid "&brandShortName; updates"
 msgstr "&brandShortName; güncellemeleri:"
 
 #: updateAuto1.label updateAuto1.accesskey
 msgid "&Automatically install updates (recommended: improved security)"
 msgstr "Güncellemeleri &otomatik olarak yükle (önerilir: artırılmış güvenlik)"
 
-#: updateCheck.label updateCheck.accesskey
-msgid "&Check for updates, but let me choose whether to install them"
+#: updateCheckChoose.label updateCheckChoose.accesskey
+#, fuzzy
+msgid "&Check for updates, but let you choose whether to install them"
 msgstr "Güncellemeleri &denetle ama yükleme konusunda kararı bana bırak"
 
 #: updateManual.label updateManual.accesskey
@@ -198,20 +222,23 @@ msgstr "&Güncelleme geçmişini göster"
 msgid "Use a &background service to install updates"
 msgstr "Güncellemeleri yüklemek için arka plan &hizmetini kullan"
 
-#: updateOthers.label
-msgid "Automatically update:"
+#: autoUpdateOthers.label
+#, fuzzy
+msgid "Automatically update"
 msgstr "Otomatik güncelle:"
 
 #: enableSearchUpdate.label enableSearchUpdate.accesskey
 msgid "Search &Engines"
 msgstr "&Arama motorları"
 
-#: offlineNotify.label offlineNotify.accesskey
-msgid "&Tell me when a website asks to store data for offline use"
+#: offlineStorageNotify.label offlineStorageNotify.accesskey
+#, fuzzy
+msgid "&Tell you when a website asks to store data for offline use"
 msgstr ""
 "Bir site çe&vrimdışı kullanım için veri depolamak istediğinde bana bildir"
 
-#: offlineNotifyExceptions.label offlineNotifyExceptions.accesskey
+#: offlineStorageNotifyExceptions.label
+#: offlineStorageNotifyExceptions.accesskey
 msgid "E&xceptions…"
 msgstr "Ayrı&calıklar…"
 
@@ -238,29 +265,31 @@ msgstr "Çevrimdışı verileri sil"
 msgid "Certificates"
 msgstr "Sertifikalar"
 
-#: certSelection.label
+#: certPersonal.label
 msgid "Requests"
 msgstr "İstekler"
 
-#: certSelection.description
-msgid "When a server requests my personal certificate:"
+#: certPersonal.description
+#, fuzzy
+msgid "When a server requests your personal certificate:"
 msgstr "Bir sunucu kişisel sertifikamı istediğinde:"
 
-#: certs.auto
+#: selectCerts.auto
 msgid "Select one automatically"
 msgstr "Birini kendiliğinden seç"
 
-#: certs.auto.accesskey
+#: selectCerts.auto.accesskey
 msgid "S"
-msgstr "B"
+msgstr ""
 
-#: certs.ask
-msgid "Ask me every time"
+#: selectCerts.ask
+#, fuzzy
+msgid "Ask you every time"
 msgstr "Her seferinde bana sor"
 
-#: certs.ask.accesskey
+#: selectCerts.ask.accesskey
 msgid "A"
-msgstr "H"
+msgstr ""
 
 #: enableOCSP.label enableOCSP.accesskey
 msgid ""

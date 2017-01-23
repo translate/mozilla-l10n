@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2017-01-23 16:20+0000\n"
 "PO-Revision-Date: 2016-08-10 07:37+0000\n"
 "Last-Translator: Gabor Kelemen <kelemeng@ubuntu.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1470814627.000000\n"
 
@@ -92,20 +92,16 @@ msgstr ""
 "Az animáció nem futtatható a kompozitálón, mert a keretméret (%1$S, %2$S) "
 "kisebb, mint (16, 16)"
 
-#. ## LOCALIZATION NOTE(CompositorAnimationWarningContentTooLarge):
+#. ## LOCALIZATION NOTE(CompositorAnimationWarningContentTooLarge2):
 #. ## (%1$S, %2$S) is a pair of integer values of the frame size
-#. ## (%3$S, %4$S) is a pair of integer values of the viewport size
-#. ## (%5$S, %6$S) is a pair of integer values of the visual rectangle size
-#. ## (%7$S) is an integer value
-#: CompositorAnimationWarningContentTooLarge
+#. ## (%3$S, %4$S) is a pair of integer values of a limit based on the viewport size
+#. ## (%5$S, %6$S) is a pair of integer values of an absolute limit
+#: CompositorAnimationWarningContentTooLarge2
 msgid ""
 "Animation cannot be run on the compositor because the frame size (%1$S, "
-"%2$S) is bigger than the viewport (%3$S, %4$S) or the visual rectangle "
-"(%5$S, %6$S) is larger than the maximum allowed value (%7$S)"
+"%2$S) is too large relative to the viewport (larger than (%3$S, %4$S)) or "
+"larger than the maximum allowed value (%5$S, %6$S)"
 msgstr ""
-"Az animáció nem futtatható a kompozitálón, mert a keretméret (%1$S, %2$S) "
-"nagyobb, mint a nézetport (%3$S, %4$S), vagy a látható téglalap (%5$S, %6$S) "
-"nagyobb a maximálisan engedélyezett értéknél (%7$S)"
 
 #. ## LOCALIZATION NOTE(CompositorAnimationWarningTransformBackfaceVisibilityHidden):
 #. ## 'backface-visibility: hidden' is a CSS property, don't translate it.
@@ -129,6 +125,7 @@ msgstr ""
 
 #. ## LOCALIZATION NOTE(CompositorAnimationWarningTransformSVG,
 #. ##                   CompositorAnimationWarningTransformWithGeometricProperties,
+#. ##                   CompositorAnimationWarningTransformWithSyncGeometricAnimations,
 #. ##                   CompositorAnimationWarningTransformFrameInactive,
 #. ##                   CompositorAnimationWarningOpacityFrameInactive):
 #. ## 'transform' and 'opacity' mean CSS property names, don't translate it.
@@ -147,6 +144,13 @@ msgid ""
 msgstr ""
 "A „transform” animációi nem futtathatók a kompozitálón, ha egyidejűleg "
 "ugyanazon az elemen geometriai tulajdonságok vannak animálva"
+
+#: CompositorAnimationWarningTransformWithSyncGeometricAnimations
+msgid ""
+"Animation of ‘transform’ cannot be run on the compositor because it should "
+"be synchronized with animations of geometric properties that started at the "
+"same time"
+msgstr ""
 
 #: CompositorAnimationWarningTransformFrameInactive
 msgid ""
@@ -171,6 +175,15 @@ msgid ""
 msgstr ""
 "Az animáció nem futtatható a kompozitálón, mert az elemnek "
 "megjelenítésfigyelői vannak  (-moz-element vagy SVG vágás/maszkolás)"
+
+#~ msgid ""
+#~ "Animation cannot be run on the compositor because the frame size (%1$S, "
+#~ "%2$S) is bigger than the viewport (%3$S, %4$S) or the visual rectangle "
+#~ "(%5$S, %6$S) is larger than the maximum allowed value (%7$S)"
+#~ msgstr ""
+#~ "Az animáció nem futtatható a kompozitálón, mert a keretméret (%1$S, %2$S) "
+#~ "nagyobb, mint a nézetport (%3$S, %4$S), vagy a látható téglalap (%5$S, "
+#~ "%6$S) nagyobb a maximálisan engedélyezett értéknél (%7$S)"
 
 #~ msgid ""
 #~ "Async animation of 'backface-visibility: hidden' transforms is not "

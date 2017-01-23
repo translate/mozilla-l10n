@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-08 12:15+0000\n"
+"POT-Creation-Date: 2017-01-23 16:20+0000\n"
 "PO-Revision-Date: 2016-06-10 14:52+0000\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,28 +16,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
-"X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1465570329.000000\n"
 
-#. # LOCALIZATION NOTE (seconds, minutes, hours, days): Semi-colon list of plural
+#. # LOCALIZATION NOTE (shortSeconds): Semi-colon list of plural
 #. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#: seconds
-msgid "second;seconds"
-msgstr "ثانية;ثانيتان;ثوان;ثانية;ثانية;ثانية"
+#. # s is the short form for seconds
+#: shortSeconds
+msgid "s;s"
+msgstr ""
 
-#: minutes
-msgid "minute;minutes"
-msgstr "دقيقة;دقيقتان;دقائق;دقيقة;دقيقة;دقيقة"
+#. # LOCALIZATION NOTE (shortMinutes): Semi-colon list of plural
+#. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # m is the short form for minutes
+#: shortMinutes
+msgid "m;m"
+msgstr ""
 
-#: hours
-msgid "hour;hours"
-msgstr "ساعة;ساعتان;ساعات;ساعة;ساعة;ساعة"
+#. # LOCALIZATION NOTE (shortHours): Semi-colon list of plural
+#. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # h is the short form for hours
+#: shortHours
+msgid "h;h"
+msgstr ""
 
-#: days
-msgid "day;days"
-msgstr "يوم;يومان;أيام;يوما;يوم;يوم"
+#. # LOCALIZATION NOTE (shortDays): Semi-colon list of plural
+#. # forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#. # d is the short form for days
+#: shortDays
+msgid "d;d"
+msgstr ""
 
 #. # LOCALIZATION NOTE (paused): — is the "em dash" (long dash)
 #: paused
@@ -53,7 +63,7 @@ msgid "Not Started"
 msgstr "لم يبدأ"
 
 #: failed
-msgctxt "failed"
+#, fuzzy
 msgid "Failed"
 msgstr "فشل"
 
@@ -62,13 +72,9 @@ msgid "Finished"
 msgstr "تم"
 
 #: canceled
-msgctxt "canceled"
+#, fuzzy
 msgid "Canceled"
 msgstr "أُلغيَ"
-
-#: cannotPause
-msgid "This download cannot be paused"
-msgstr "لا يُمكن إلباث هذا التنزيل"
 
 #: downloadErrorAlertTitle
 msgid "Download Error"
@@ -251,49 +257,37 @@ msgctxt "transferNoTotal2"
 msgid "%1$S %2$S"
 msgstr "%1$S %2$S"
 
-#. # LOCALIZATION NOTE (timePair2): %1$S time number; %2$S time unit
-#. # example: 1 minute; 11 hours
-#: timePair2
-msgctxt "timePair2"
-msgid "%1$S %2$S"
+#. # LOCALIZATION NOTE (timePair3): %1$S time number; %2$S time unit
+#. # example: 1m; 11h
+#: timePair3
+#, fuzzy
+msgid "%1$S%2$S"
 msgstr "%1$S %2$S"
 
-#. # LOCALIZATION NOTE (timeLeftSingle2): %1$S time left
-#. # example: 1 minute remaining; 11 hours remaining
-#: timeLeftSingle2
-msgid "%1$S remaining"
-msgstr "بقي %1$S"
+#. # LOCALIZATION NOTE (timeLeftSingle3): %1$S time left
+#. # example: 1m left; 11h left
+#: timeLeftSingle3
+msgid "%1$S left"
+msgstr ""
 
-#. # LOCALIZATION NOTE (timeLeftDouble2): %1$S time left; %2$S time left sub units
-#. # example: 11 hours, 2 minutes remaining; 1 day, 22 hours remaining
-#: timeLeftDouble2
-msgid "%1$S, %2$S remaining"
-msgstr "بقي %1$S و %2$S"
+#. # LOCALIZATION NOTE (timeLeftDouble3): %1$S time left; %2$S time left sub units
+#. # example: 11h 2m left; 1d 22h left
+#: timeLeftDouble3
+msgid "%1$S %2$S left"
+msgstr ""
 
-#: timeFewSeconds
-msgid "A few seconds remaining"
-msgstr "بقي بضع ثوان"
+#: timeFewSeconds2
+msgid "A few seconds left"
+msgstr ""
 
-#: timeUnknown
-msgid "Unknown time remaining"
-msgstr "لا يُعرف كم بقي"
-
-#. # LOCALIZATION NOTE (doneStatus): — is the "em dash" (long dash)
-#. # #1 download size for FINISHED or download state; #2 host (e.g., eTLD + 1, IP)
-#. # #2 can also be doneScheme or doneFileScheme for special URIs like file:
-#. # examples: 1.1 MB — website2.com; Canceled — 222.net
-#: doneStatus
-msgid "#1 — #2"
-msgstr "#1 — #2"
+#: timeUnknown2
+msgid "Unknown time left"
+msgstr ""
 
 #. # LOCALIZATION NOTE (doneSize): #1 size number; #2 size unit
 #: doneSize
 msgid "#1 #2"
 msgstr "#1 #2"
-
-#: doneSizeUnknown
-msgid "Unknown size"
-msgstr "حجم مجهول"
 
 #. # LOCALIZATION NOTE (doneScheme): #1 URI scheme like data: jar: about:
 #: doneScheme2
@@ -306,30 +300,6 @@ msgstr "مورد %1$S"
 msgid "local file"
 msgstr "ملف محلي"
 
-#: stateFailed
-msgctxt "stateFailed"
-msgid "Failed"
-msgstr "فشل"
-
-#: stateCanceled
-msgctxt "stateCanceled"
-msgid "Canceled"
-msgstr "أُلغيَ"
-
-#. # LOCALIZATION NOTE (stateBlocked): 'Parental Controls' should be capitalized
-#: stateBlocked
-msgid "Blocked by Parental Controls"
-msgstr "منعته \"المراقبة الأبويّة\""
-
-#: stateDirty
-msgid "Blocked: Download may contain a virus or spyware"
-msgstr "مُنِع: قد يحتوي التنزيل على فيروس أو برنامج تجسس"
-
-#. # LOCALIZATION NOTE (stateBlockedPolicy): 'Security Zone Policy' should be capitalized
-#: stateBlockedPolicy
-msgid "This download has been blocked by your Security Zone Policy"
-msgstr "منعت سياسة منطقة الأمان هذا التنزيل"
-
 #. # LOCALIZATION NOTE (yesterday): Displayed time for files finished yesterday
 #: yesterday
 msgid "Yesterday"
@@ -340,40 +310,6 @@ msgstr "أمس"
 msgctxt "monthDate2"
 msgid "%1$S %2$S"
 msgstr "%2$S %1$S"
-
-#: fileDoesNotExistOpenTitle
-msgid "Cannot Open %S"
-msgstr "تعذّر فتح %S"
-
-#: fileDoesNotExistShowTitle
-msgid "Cannot Show %S"
-msgstr "تعذّر عرض %S"
-
-#: fileDoesNotExistError
-msgid ""
-"%S does not exist. It may have been renamed, moved, or deleted since it was "
-"downloaded."
-msgstr "‏%S غير موجود. رُبما تغير اسمه، أو نُقل، أو حُذف منذ تنزيله."
-
-#: chooseAppFilePickerTitle
-msgid "Open With…"
-msgstr "افتح ب‍…"
-
-#. # LOCALIZATION NOTE (downloadsTitleFiles, downloadsTitlePercent): Semi-colon list of
-#. # plural forms. See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # #1 number of files; #2 overall download percent (only for downloadsTitlePercent)
-#. # examples: 2% of 1 file - Downloads; 22% of 11 files - Downloads
-#: downloadsTitleFiles
-msgid "#1 file - Downloads;#1 files - Downloads"
-msgstr ""
-"ملف واحد - التنزيلات;ملفان - التنزيلات; #1 ملفات - التنزيلات;#1 ملفًا - "
-"التنزيلات;#1 ملف - التنزيلات; لا ملفات - التنزيلات"
-
-#: downloadsTitlePercent
-msgid "#2% of #1 file - Downloads;#2% of #1 files - Downloads"
-msgstr ""
-"#2% مِن ملف واحد - التنزيلات;#2% من ملفين - التنزيلات;#2% من #1 ملفات - "
-"التنزيلات;#2% من #1 ملفًا - التنزيلات;#2% من #1 ملف;#2% من لا ملفات"
 
 #: fileExecutableSecurityWarning
 msgid ""
@@ -392,14 +328,91 @@ msgstr "هل تريد فتح الملفّ التّنفيذيّ؟"
 msgid "Don’t ask me this again"
 msgstr "لا تسألني عن هذا ثانيّا"
 
-#: displayNameDesktop
-msgid "Desktop"
-msgstr "سطح المكتب"
-
 #. # Desktop folder name for downloaded files
 #: downloadsFolder
 msgid "Downloads"
 msgstr "التّنزيلات"
+
+#~ msgid "second;seconds"
+#~ msgstr "ثانية;ثانيتان;ثوان;ثانية;ثانية;ثانية"
+
+#~ msgid "minute;minutes"
+#~ msgstr "دقيقة;دقيقتان;دقائق;دقيقة;دقيقة;دقيقة"
+
+#~ msgid "hour;hours"
+#~ msgstr "ساعة;ساعتان;ساعات;ساعة;ساعة;ساعة"
+
+#~ msgid "day;days"
+#~ msgstr "يوم;يومان;أيام;يوما;يوم;يوم"
+
+#~ msgid "This download cannot be paused"
+#~ msgstr "لا يُمكن إلباث هذا التنزيل"
+
+#~ msgctxt "timePair2"
+#~ msgid "%1$S %2$S"
+#~ msgstr "%1$S %2$S"
+
+#~ msgid "%1$S remaining"
+#~ msgstr "بقي %1$S"
+
+#~ msgid "%1$S, %2$S remaining"
+#~ msgstr "بقي %1$S و %2$S"
+
+#~ msgid "A few seconds remaining"
+#~ msgstr "بقي بضع ثوان"
+
+#~ msgid "Unknown time remaining"
+#~ msgstr "لا يُعرف كم بقي"
+
+#~ msgid "#1 — #2"
+#~ msgstr "#1 — #2"
+
+#~ msgid "Unknown size"
+#~ msgstr "حجم مجهول"
+
+#~ msgctxt "stateFailed"
+#~ msgid "Failed"
+#~ msgstr "فشل"
+
+#~ msgctxt "stateCanceled"
+#~ msgid "Canceled"
+#~ msgstr "أُلغيَ"
+
+#~ msgid "Blocked by Parental Controls"
+#~ msgstr "منعته \"المراقبة الأبويّة\""
+
+#~ msgid "Blocked: Download may contain a virus or spyware"
+#~ msgstr "مُنِع: قد يحتوي التنزيل على فيروس أو برنامج تجسس"
+
+#~ msgid "This download has been blocked by your Security Zone Policy"
+#~ msgstr "منعت سياسة منطقة الأمان هذا التنزيل"
+
+#~ msgid "Cannot Open %S"
+#~ msgstr "تعذّر فتح %S"
+
+#~ msgid "Cannot Show %S"
+#~ msgstr "تعذّر عرض %S"
+
+#~ msgid ""
+#~ "%S does not exist. It may have been renamed, moved, or deleted since it "
+#~ "was downloaded."
+#~ msgstr "‏%S غير موجود. رُبما تغير اسمه، أو نُقل، أو حُذف منذ تنزيله."
+
+#~ msgid "Open With…"
+#~ msgstr "افتح ب‍…"
+
+#~ msgid "#1 file - Downloads;#1 files - Downloads"
+#~ msgstr ""
+#~ "ملف واحد - التنزيلات;ملفان - التنزيلات; #1 ملفات - التنزيلات;#1 ملفًا - "
+#~ "التنزيلات;#1 ملف - التنزيلات; لا ملفات - التنزيلات"
+
+#~ msgid "#2% of #1 file - Downloads;#2% of #1 files - Downloads"
+#~ msgstr ""
+#~ "#2% مِن ملف واحد - التنزيلات;#2% من ملفين - التنزيلات;#2% من #1 ملفات - "
+#~ "التنزيلات;#2% من #1 ملفًا - التنزيلات;#2% من #1 ملف;#2% من لا ملفات"
+
+#~ msgid "Desktop"
+#~ msgstr "سطح المكتب"
 
 #~ msgid "Don't Enter the Private Browsing Mode"
 #~ msgstr "لا تدخل نمط التصفح الخاص"

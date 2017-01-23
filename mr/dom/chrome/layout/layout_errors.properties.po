@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2017-01-23 16:20+0000\n"
 "PO-Revision-Date: 2016-09-25 08:37+0000\n"
 "Last-Translator: Varad Dingankar <vmdhhh@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1474792649.000000\n"
 
@@ -90,20 +90,16 @@ msgstr ""
 "अँनिमशन कंपॉसझिटरवर चालणार नाही कारण चौकटीचा आकार (%1$S, %2$S) हा (16, 16) "
 "पेक्षा कमी आहे"
 
-#. ## LOCALIZATION NOTE(CompositorAnimationWarningContentTooLarge):
+#. ## LOCALIZATION NOTE(CompositorAnimationWarningContentTooLarge2):
 #. ## (%1$S, %2$S) is a pair of integer values of the frame size
-#. ## (%3$S, %4$S) is a pair of integer values of the viewport size
-#. ## (%5$S, %6$S) is a pair of integer values of the visual rectangle size
-#. ## (%7$S) is an integer value
-#: CompositorAnimationWarningContentTooLarge
+#. ## (%3$S, %4$S) is a pair of integer values of a limit based on the viewport size
+#. ## (%5$S, %6$S) is a pair of integer values of an absolute limit
+#: CompositorAnimationWarningContentTooLarge2
 msgid ""
 "Animation cannot be run on the compositor because the frame size (%1$S, "
-"%2$S) is bigger than the viewport (%3$S, %4$S) or the visual rectangle "
-"(%5$S, %6$S) is larger than the maximum allowed value (%7$S)"
+"%2$S) is too large relative to the viewport (larger than (%3$S, %4$S)) or "
+"larger than the maximum allowed value (%5$S, %6$S)"
 msgstr ""
-"Async अॅनिमेशन निष्क्रीय करण्यात आले कारण, फ्रेमचा आकार (%1$S, %2$S) viewport (%3$S, "
-"%4$S) पेक्षा मोठा आहे किंवा दृष्य आयात (%5$S, %6$S) चा आकार कमाल मर्यादेच्या बाहेर आहे "
-"(%7$S)"
 
 #. ## LOCALIZATION NOTE(CompositorAnimationWarningTransformBackfaceVisibilityHidden):
 #. ## 'backface-visibility: hidden' is a CSS property, don't translate it.
@@ -126,6 +122,7 @@ msgstr ""
 
 #. ## LOCALIZATION NOTE(CompositorAnimationWarningTransformSVG,
 #. ##                   CompositorAnimationWarningTransformWithGeometricProperties,
+#. ##                   CompositorAnimationWarningTransformWithSyncGeometricAnimations,
 #. ##                   CompositorAnimationWarningTransformFrameInactive,
 #. ##                   CompositorAnimationWarningOpacityFrameInactive):
 #. ## 'transform' and 'opacity' mean CSS property names, don't translate it.
@@ -144,6 +141,13 @@ msgid ""
 msgstr ""
 "जेंव्हा भूमितीय गुणधर्म एकाच वेळी एकाच घटकावर ॲनीमेट केलेले असतात, त्यावेळी 'transform' चे "
 "ॲनिमेशन कॉम्पोझीटर वर चालवीणे शक्य नाही"
+
+#: CompositorAnimationWarningTransformWithSyncGeometricAnimations
+msgid ""
+"Animation of ‘transform’ cannot be run on the compositor because it should "
+"be synchronized with animations of geometric properties that started at the "
+"same time"
+msgstr ""
 
 #: CompositorAnimationWarningTransformFrameInactive
 msgid ""
@@ -168,6 +172,15 @@ msgid ""
 msgstr ""
 "कंपोसिटर वर अनिमेशन चालू शकत नाही कारण घटकामध्ये रेंडरिंग निरीक्षक आहेत (-moz-element "
 "किंवा SVG क्लिपिंग/मास्किंग)"
+
+#~ msgid ""
+#~ "Animation cannot be run on the compositor because the frame size (%1$S, "
+#~ "%2$S) is bigger than the viewport (%3$S, %4$S) or the visual rectangle "
+#~ "(%5$S, %6$S) is larger than the maximum allowed value (%7$S)"
+#~ msgstr ""
+#~ "Async अॅनिमेशन निष्क्रीय करण्यात आले कारण, फ्रेमचा आकार (%1$S, %2$S) viewport "
+#~ "(%3$S, %4$S) पेक्षा मोठा आहे किंवा दृष्य आयात (%5$S, %6$S) चा आकार कमाल "
+#~ "मर्यादेच्या बाहेर आहे (%7$S)"
 
 #~ msgid ""
 #~ "Async animation of 'backface-visibility: hidden' transforms is not "

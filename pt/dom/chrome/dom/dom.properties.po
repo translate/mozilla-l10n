@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-15 16:56+0000\n"
+"POT-Creation-Date: 2017-01-23 16:20+0000\n"
 "PO-Revision-Date: 2017-01-09 03:05+0000\n"
 "Last-Translator: Rodrigo <rodrigo.mcunha@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1483931127.000000\n"
 
@@ -653,11 +653,11 @@ msgstr ""
 msgid "Media resource %S could not be decoded."
 msgstr "O recurso multimédia %S não pode ser descodificado."
 
-#: MediaWidevineNoWMFNoSilverlight
+#: MediaWidevineNoWMF
+#, fuzzy
 msgid ""
-"Trying to play Widevine with no Windows Media Foundation (nor Silverlight "
-"fallback), see https://support.mozilla.org/kb/fix-video-audio-problems-"
-"firefox-windows"
+"Trying to play Widevine with no Windows Media Foundation. See https://"
+"support.mozilla.org/kb/fix-video-audio-problems-firefox-windows"
 msgstr ""
 "Tentar reproduzir Widevine sem Windows Media Foundation (ou Silverlight de "
 "recurso), veja https://support.mozilla.org/kb/fix-video-audio-problems-"
@@ -672,13 +672,6 @@ msgstr ""
 "Para reproduzir formatos de vídeo %S, precisa de instalar software da "
 "Microsoft extra, veja https://support.mozilla.org/kb/fix-video-audio-"
 "problems-firefox-windows"
-
-#. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
-#: MediaUnsupportedBeforeWindowsVista
-msgid "Video formats %S unsupported by Microsoft before Windows Vista"
-msgstr ""
-"Os formatos de vídeo %S não são suportados pela Microsoft antes do Windows "
-"Vista"
 
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaPlatformDecoderNotFound
@@ -1178,6 +1171,13 @@ msgstr ""
 "A terminar o ServiceWorker para o âmbito ‘%1$S’ com promessas waitUntil/"
 "respondWith pendentes por causa intervalo de graça."
 
+#. # LOCALIZATION NOTE (ServiceWorkerNoFetchHandler): Do not translate "Fetch".
+#: ServiceWorkerNoFetchHandler
+msgid ""
+"Fetch event handlers must be added during the worker script’s initial "
+"evaluation."
+msgstr ""
+
 #: ExecCommandCutCopyDeniedNotInputDriven
 msgid ""
 "document.execCommand(‘cut’/‘copy’) was denied because it was not called from "
@@ -1494,23 +1494,13 @@ msgstr ""
 "Um cabeçalho Large-Allocation foi ignorado devido ao carregamento ter sido "
 "acionado por um pedido não-GET."
 
-#. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
-#: LargeAllocationRelatedBrowsingContexts
+#. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name. Do not translate `window.opener`.
+#: LargeAllocationNotOnlyToplevelInTabGroup
 msgid ""
 "A Large-Allocation header was ignored due to the presence of windows which "
-"have a reference to this browsing context."
+"have a reference to this browsing context through the frame hierarchy or "
+"window.opener."
 msgstr ""
-"Um cabeçalho Large-Allocation foi ignorado devido à presença de janelas que "
-"têm uma referência a este contexto de navegação."
-
-#. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
-#: LargeAllocationInIFrame
-msgid ""
-"A Large-Allocation header was ignored due to the load occuring within an "
-"iframe."
-msgstr ""
-"Um cabeçalho Large-Allocation foi ignorado devido ao carregamento ocorrido "
-"dentro de um iframe."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationNonE10S
@@ -1520,6 +1510,25 @@ msgid ""
 msgstr ""
 "Um cabeçalho Large-Allocation foi ignorado devido ao documento não ter sido "
 "carregado fora de processo."
+
+#~ msgid "Video formats %S unsupported by Microsoft before Windows Vista"
+#~ msgstr ""
+#~ "Os formatos de vídeo %S não são suportados pela Microsoft antes do "
+#~ "Windows Vista"
+
+#~ msgid ""
+#~ "A Large-Allocation header was ignored due to the presence of windows "
+#~ "which have a reference to this browsing context."
+#~ msgstr ""
+#~ "Um cabeçalho Large-Allocation foi ignorado devido à presença de janelas "
+#~ "que têm uma referência a este contexto de navegação."
+
+#~ msgid ""
+#~ "A Large-Allocation header was ignored due to the load occuring within an "
+#~ "iframe."
+#~ msgstr ""
+#~ "Um cabeçalho Large-Allocation foi ignorado devido ao carregamento "
+#~ "ocorrido dentro de um iframe."
 
 #~ msgid ""
 #~ "‘mozHidden’ and ‘mozVisibilityState’ are deprecated.  Please use the "

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2017-01-23 16:20+0000\n"
 "PO-Revision-Date: 2016-08-01 18:45+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n==2 ? 1 : 2;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1470077118.000000\n"
 
@@ -73,16 +73,15 @@ msgid ""
 "smaller than (16, 16)"
 msgstr ""
 
-#. ## LOCALIZATION NOTE(CompositorAnimationWarningContentTooLarge):
+#. ## LOCALIZATION NOTE(CompositorAnimationWarningContentTooLarge2):
 #. ## (%1$S, %2$S) is a pair of integer values of the frame size
-#. ## (%3$S, %4$S) is a pair of integer values of the viewport size
-#. ## (%5$S, %6$S) is a pair of integer values of the visual rectangle size
-#. ## (%7$S) is an integer value
-#: CompositorAnimationWarningContentTooLarge
+#. ## (%3$S, %4$S) is a pair of integer values of a limit based on the viewport size
+#. ## (%5$S, %6$S) is a pair of integer values of an absolute limit
+#: CompositorAnimationWarningContentTooLarge2
 msgid ""
 "Animation cannot be run on the compositor because the frame size (%1$S, "
-"%2$S) is bigger than the viewport (%3$S, %4$S) or the visual rectangle "
-"(%5$S, %6$S) is larger than the maximum allowed value (%7$S)"
+"%2$S) is too large relative to the viewport (larger than (%3$S, %4$S)) or "
+"larger than the maximum allowed value (%5$S, %6$S)"
 msgstr ""
 
 #. ## LOCALIZATION NOTE(CompositorAnimationWarningTransformBackfaceVisibilityHidden):
@@ -103,6 +102,7 @@ msgstr ""
 
 #. ## LOCALIZATION NOTE(CompositorAnimationWarningTransformSVG,
 #. ##                   CompositorAnimationWarningTransformWithGeometricProperties,
+#. ##                   CompositorAnimationWarningTransformWithSyncGeometricAnimations,
 #. ##                   CompositorAnimationWarningTransformFrameInactive,
 #. ##                   CompositorAnimationWarningOpacityFrameInactive):
 #. ## 'transform' and 'opacity' mean CSS property names, don't translate it.
@@ -116,6 +116,13 @@ msgstr ""
 msgid ""
 "Animations of ‘transform’ cannot be run on the compositor when geometric "
 "properties are animated on the same element at the same time"
+msgstr ""
+
+#: CompositorAnimationWarningTransformWithSyncGeometricAnimations
+msgid ""
+"Animation of ‘transform’ cannot be run on the compositor because it should "
+"be synchronized with animations of geometric properties that started at the "
+"same time"
 msgstr ""
 
 #: CompositorAnimationWarningTransformFrameInactive

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-19 14:17+0000\n"
+"POT-Creation-Date: 2017-01-23 16:20+0000\n"
 "PO-Revision-Date: 2016-12-19 23:06+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1482188778.000000\n"
 
@@ -34,12 +34,14 @@ msgstr "Inrochtaineacht"
 msgid "Always use the &cursor keys to navigate within pages"
 msgstr "Úsáid &eochracha cúrsóra i gcónaí chun bogadh laistigh de leathanaigh"
 
-#: searchStartTyping.label searchStartTyping.accesskey
-msgid "Search for te&xt when I start typing"
+#: searchOnStartTyping.label searchOnStartTyping.accesskey
+#, fuzzy
+msgid "Search for te&xt when you start typing"
 msgstr "Cuardaigh &téacs nuair a thosóidh mé ag clóscríobh"
 
-#: blockAutoRefresh.label blockAutoRefresh.accesskey
-msgid "Warn me when we&bsites try to redirect or reload the page"
+#: blockAutoReload.label blockAutoReload.accesskey
+#, fuzzy
+msgid "Warn you when we&bsites try to redirect or reload the page"
 msgstr ""
 "Ta&bhair rabhadh dom nuair a dhéanann suímh Ghréasáin iarracht leathanach a "
 "athluchtú nó a atreorú"
@@ -65,8 +67,9 @@ msgid "Use ha&rdware acceleration when available"
 msgstr "Úsáid luasghéa&rú crua-earraí más féidir"
 
 # not "b" - used in "Ta&bhair" above
-#: checkSpelling.label checkSpelling.accesskey
-msgid "Check my spelling as I &type"
+#: checkUserSpelling.label checkUserSpelling.accesskey
+#, fuzzy
+msgid "Check your spelling as you &type"
 msgstr "&Litriú beo"
 
 #: dataChoicesTab.label
@@ -150,6 +153,25 @@ msgstr "Ábhar Gréasáin i dTaisce"
 msgid "Offline Web Content and User Data"
 msgstr "Ábhar Gréasáin As Líne agus Sonraí Úsáideora"
 
+#. Site Data section manages sites using Storage API and is under Network
+#: siteData.label
+msgid "Site Data"
+msgstr ""
+
+#: clearSiteData.label clearSiteData.accesskey
+msgid "C&lear All Data"
+msgstr ""
+
+#: siteDataSettings.label siteDataSettings.accesskey
+#, fuzzy
+msgid "Sett&ings…"
+msgstr "Socruith&e…"
+
+#: siteDataLearnMoreLink.label
+#, fuzzy
+msgid "Learn more"
+msgstr "Tuilleadh Eolais"
+
 #. LOCALIZATION NOTE:
 #. The entities limitCacheSizeBefore.label and limitCacheSizeAfter.label appear on a single
 #. line in preferences as follows:
@@ -179,16 +201,18 @@ msgstr "Sá&raigh bainistíocht uathoibríoch na taisce"
 msgid "Update"
 msgstr "Nuashonrú"
 
-#: updateApp.label
-msgid "&brandShortName; updates:"
+#: updateApplication.label
+#, fuzzy
+msgid "&brandShortName; updates"
 msgstr "Nuashonruithe &brandShortName;:"
 
 #: updateAuto1.label updateAuto1.accesskey
 msgid "&Automatically install updates (recommended: improved security)"
 msgstr "Suiteáil nu&ashonruithe go huathoibríoch (molta: slándáil níos fearr)"
 
-#: updateCheck.label updateCheck.accesskey
-msgid "&Check for updates, but let me choose whether to install them"
+#: updateCheckChoose.label updateCheckChoose.accesskey
+#, fuzzy
+msgid "&Check for updates, but let you choose whether to install them"
 msgstr "&Lorg nuashonruithe, ach lig dom iad a shuiteáil nuair is mian liom"
 
 #: updateManual.label updateManual.accesskey
@@ -203,21 +227,24 @@ msgstr "Tais&peáin Stair na Nuashonruithe"
 msgid "Use a &background service to install updates"
 msgstr "Úsáid seir&bhís sa chúlra chun nuashonruithe a shuiteáil"
 
-#: updateOthers.label
-msgid "Automatically update:"
+#: autoUpdateOthers.label
+#, fuzzy
+msgid "Automatically update"
 msgstr "Nuashonraigh go huathoibríoch:"
 
 #: enableSearchUpdate.label enableSearchUpdate.accesskey
 msgid "Search &Engines"
 msgstr "&Innill Chuardaigh"
 
-#: offlineNotify.label offlineNotify.accesskey
-msgid "&Tell me when a website asks to store data for offline use"
+#: offlineStorageNotify.label offlineStorageNotify.accesskey
+#, fuzzy
+msgid "&Tell you when a website asks to store data for offline use"
 msgstr ""
 "Inis dom nuair a iarrann suíomh Gréasáin sonraí a s&tóráil le haghaidh "
 "úsáide as líne"
 
-#: offlineNotifyExceptions.label offlineNotifyExceptions.accesskey
+#: offlineStorageNotifyExceptions.label
+#: offlineStorageNotifyExceptions.accesskey
 msgid "E&xceptions…"
 msgstr "Ei&sceachtaí…"
 
@@ -246,30 +273,31 @@ msgstr "Bain sonraí as líne"
 msgid "Certificates"
 msgstr "Teastais"
 
-#: certSelection.label
+#: certPersonal.label
 msgid "Requests"
 msgstr "Iarratais"
 
-#: certSelection.description
-msgid "When a server requests my personal certificate:"
+#: certPersonal.description
+#, fuzzy
+msgid "When a server requests your personal certificate:"
 msgstr "Nuair atá freastalaí ag iarraidh mo theastas pearsanta:"
 
-#: certs.auto
+#: selectCerts.auto
 msgid "Select one automatically"
 msgstr "Roghnaigh go huathoibríoch"
 
-#: certs.auto.accesskey
+#: selectCerts.auto.accesskey
 msgid "S"
-msgstr "u"
+msgstr ""
 
-#: certs.ask
-msgid "Ask me every time"
+#: selectCerts.ask
+#, fuzzy
+msgid "Ask you every time"
 msgstr "Fiafraigh díom i gcónaí"
 
-# Alt+W is Roghnaigh Uile  ?? (not working, tried V,7,lots of others)
-#: certs.ask.accesskey
+#: selectCerts.ask.accesskey
 msgid "A"
-msgstr "d"
+msgstr ""
 
 #: enableOCSP.label enableOCSP.accesskey
 msgid ""

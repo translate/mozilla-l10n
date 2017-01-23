@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-15 16:56+0000\n"
+"POT-Creation-Date: 2017-01-23 16:20+0000\n"
 "PO-Revision-Date: 2016-11-16 04:40+0000\n"
 "Last-Translator: Bjørn I. Svindseth <bjorn.svindseth@online.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1479271205.000000\n"
 
@@ -42,8 +42,8 @@ msgstr "Expand panes"
 #. # LOCALIZATION NOTE (pauseButtonTooltip): The tooltip that is displayed for the pause
 #. # button when the debugger is in a running state.
 #: pauseButtonTooltip
-msgid "Click to pause (%S)"
-msgstr "Click to pause (%S)"
+msgid "Pause %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (pausePendingButtonTooltip): The tooltip that is displayed for
 #. # the pause button after it's been clicked but before the next JavaScript to run.
@@ -54,25 +54,28 @@ msgstr "Waiting for next execution"
 #. # LOCALIZATION NOTE (resumeButtonTooltip): The label that is displayed on the pause
 #. # button when the debugger is in a paused state.
 #: resumeButtonTooltip
-msgid "Click to resume (%S)"
-msgstr "Click to resume (%S)"
+msgid "Resume %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (stepOverTooltip): The label that is displayed on the
 #. # button that steps over a function call.
 #: stepOverTooltip
-msgid "Step Over (%S)"
+#, fuzzy
+msgid "Step Over %S"
 msgstr "Step Over (%S)"
 
 #. # LOCALIZATION NOTE (stepInTooltip): The label that is displayed on the
 #. # button that steps into a function call.
 #: stepInTooltip
-msgid "Step In (%S)"
+#, fuzzy
+msgid "Step In %S"
 msgstr "Step In (%S)"
 
 #. # LOCALIZATION NOTE (stepOutTooltip): The label that is displayed on the
 #. # button that steps out of a function call.
 #: stepOutTooltip
-msgid "Step Out (%S)"
+#, fuzzy
+msgid "Step Out %S"
 msgstr "Step Out (%S)"
 
 #. # LOCALIZATION NOTE (noWorkersText): The text to display in the workers list
@@ -92,6 +95,12 @@ msgstr "This page has no sources."
 #: noEventListenersText
 msgid "No event listeners to display"
 msgstr "No event listeners to display"
+
+#. # LOCALIZATION NOTE (eventListenersHeader): The text to display in the events
+#. # header.
+#: eventListenersHeader
+msgid "Event Listeners"
+msgstr ""
 
 #. # LOCALIZATION NOTE (noStackFramesText): The text to display in the call stack tab
 #. # when there are no stack frames.
@@ -226,6 +235,30 @@ msgstr "Other"
 msgid "Toggle black boxing"
 msgstr "Toggle black boxing"
 
+#. # LOCALIZATION NOTE (sources.search.key): Key shortcut to open the search for
+#. # searching all the source files the debugger has seen.
+#: sources.search.key
+msgid "P"
+msgstr ""
+
+#. # LOCALIZATION NOTE (sourceSearch.search.key): Key shortcut to open the search
+#. # for searching within a the currently opened files in the editor
+#: sourceSearch.search.key
+msgid "F"
+msgstr ""
+
+#. # LOCALIZATION NOTE (sourceSearch.search.again.key): Key shortcut to re-open
+#. # the search for re-searching the same search triggered from a sourceSearch
+#: sourceSearch.search.again.key
+msgid "G"
+msgstr ""
+
+#. # LOCALIZATION NOTE (sourceSearch.search.resultsSummary): Shows a summary of
+#. # the number of matches for autocomplete
+#: sourceSearch.resultsSummary
+msgid "%d instances of “%S”"
+msgstr ""
+
 #. # LOCALIZATION NOTE (noMatchingStringsText): The text to display in the
 #. # global search results when there are no matching strings after filtering.
 #: noMatchingStringsText
@@ -333,6 +366,35 @@ msgstr "Remove all breakpoints"
 msgid "Breakpoints"
 msgstr "Breakpoints"
 
+#. # LOCALIZATION NOTE (breakpoints.none): The text that appears when there are
+#. # no breakpoints present
+#: breakpoints.none
+#, fuzzy
+msgid "No Breakpoints"
+msgstr "Breakpoints"
+
+#. # LOCALIZATION NOTE (breakpoints.enable): The text that may appear as a tooltip
+#. # when hovering over the 'disable breakpoints' switch button in right sidebar
+#: breakpoints.enable
+#, fuzzy
+msgid "Enable Breakpoints"
+msgstr "Enable breakpoint"
+
+#. # LOCALIZATION NOTE (breakpoints.disable): The text that may appear as a tooltip
+#. # when hovering over the 'disable breakpoints' switch button in right sidebar
+#: breakpoints.disable
+#, fuzzy
+msgid "Disable Breakpoints"
+msgstr "Disable breakpoint"
+
+#. # LOCALIZATION NOTE (breakpoints.removeBreakpointTooltip): The tooltip that is displayed
+#. # for remove breakpoint button in right sidebar
+#: breakpoints.removeBreakpointTooltip
+#, fuzzy
+msgctxt "breakpoints.removeBreakpointTooltip"
+msgid "Remove Breakpoint"
+msgstr "Remove breakpoint"
+
 #. # LOCALIZATION NOTE (callStack.header): Call Stack right sidebar pane header.
 #: callStack.header
 msgid "Call Stack"
@@ -369,33 +431,80 @@ msgstr "%d of %d results"
 msgid "no results"
 msgstr "no results"
 
-#. # LOCALIZATION NOTE(editor.addBreakpoint): Editor gutter context menu item
+#. # LOCALIZATION NOTE (editor.addBreakpoint): Editor gutter context menu item
 #. # for adding a breakpoint on a line.
 #: editor.addBreakpoint
 msgid "Add Breakpoint"
 msgstr "Add Breakpoint"
 
-#. # LOCALIZATION NOTE(editor.removeBreakpoint): Editor gutter context menu item
+#. # LOCALIZATION NOTE (editor.disableBreakpoint): Editor gutter context menu item
+#. # for disabling a breakpoint on a line.
+#: editor.disableBreakpoint
+#, fuzzy
+msgid "Disable Breakpoint"
+msgstr "Disable breakpoint"
+
+#. # LOCALIZATION NOTE (editor.enableBreakpoint): Editor gutter context menu item
+#. # for enabling a breakpoint on a line.
+#: editor.enableBreakpoint
+#, fuzzy
+msgid "Enable Breakpoint"
+msgstr "Enable breakpoint"
+
+#. # LOCALIZATION NOTE (editor.removeBreakpoint): Editor gutter context menu item
 #. # for removing a breakpoint on a line.
 #: editor.removeBreakpoint
+#, fuzzy
+msgctxt "editor.removeBreakpoint"
 msgid "Remove Breakpoint"
 msgstr "Remove breakpoint"
 
-#. # LOCALIZATION NOTE(editor.editBreakpoint): Editor gutter context menu item
+#. # LOCALIZATION NOTE (editor.editBreakpoint): Editor gutter context menu item
 #. # for setting a breakpoint condition on a line.
 #: editor.editBreakpoint
 msgid "Edit Breakpoint"
 msgstr "Edit Breakpoint"
 
-#. # LOCALIZATION NOTE(editor.addConditionalBreakpoint): Editor gutter context
+#. # LOCALIZATION NOTE (editor.addConditionalBreakpoint): Editor gutter context
 #. # menu item for adding a breakpoint condition on a line.
 #: editor.addConditionalBreakpoint
 msgid "Add Conditional Breakpoint"
 msgstr "Add Conditional Breakpoint"
 
+#. # LOCALIZATION NOTE (editor.conditionalPanel.placeholder): Placeholder text for
+#. # input element inside ConditionalPanel component
+#: editor.conditionalPanel.placeholder
+msgid "This breakpoint will pause when the expression is true"
+msgstr ""
+
+#. # LOCALIZATION NOTE (editor.jumpToMappedLocation): Context menu item
+#. # for navigating to a source mapped location
+#: editor.jumpToMappedLocation
+msgid "Jump to %s location"
+msgstr ""
+
+#. # LOCALIZATION NOTE (generated): Source Map term for a server source location
+#: generated
+msgid "generated"
+msgstr ""
+
+#. # LOCALIZATION NOTE (original): Source Map term for a debugger UI source location
+#: original
+msgid "original"
+msgstr ""
+
+#. # LOCALIZATION NOTE (expressions.placeholder): Placeholder text for expression
+#. # input element
+#: expressions.placeholder
+#, fuzzy
+msgid "Add Watch Expression"
+msgstr "Add watch expression"
+
 #. # LOCALIZATION NOTE (sourceTabs.closeTab): Editor source tab context menu item
 #. # for closing the selected tab below the mouse.
 #: sourceTabs.closeTab
+#, fuzzy
+msgctxt "sourceTabs.closeTab"
 msgid "Close tab"
 msgstr "Close tab"
 
@@ -417,6 +526,20 @@ msgstr "Close tabs to the right"
 msgid "Close all tabs"
 msgstr "Close all tabs"
 
+#. # LOCALIZATION NOTE (sourceTabs.closeTabButtonTooltip): The tooltip that is displayed
+#. # for close tab button in source tabs.
+#: sourceTabs.closeTabButtonTooltip
+#, fuzzy
+msgctxt "sourceTabs.closeTabButtonTooltip"
+msgid "Close tab"
+msgstr "Close tab"
+
+#. # LOCALIZATION NOTE (sourceTabs.newTabButtonTooltip): The tooltip that is displayed for
+#. # new tab button in source tabs.
+#: sourceTabs.newTabButtonTooltip
+msgid "Search for sources (%S)"
+msgstr ""
+
 #. # LOCALIZATION NOTE (scopes.header): Scopes right sidebar pane header.
 #: scopes.header
 msgid "Scopes"
@@ -434,6 +557,11 @@ msgstr "Scopes Unavailable"
 msgctxt "scopes.notPaused"
 msgid "Not Paused"
 msgstr "Not Paused"
+
+#. # LOCALIZATION NOTE (scopes.block): Scopes right sidebar block subheading
+#: scopes.block
+msgid "Block"
+msgstr ""
 
 #. # LOCALIZATION NOTE (sources.header): Sources left sidebar header
 #: sources.header
@@ -453,24 +581,37 @@ msgstr "%S to search"
 msgid "Watch Expressions"
 msgstr "Watch Expressions"
 
+#. # LOCALIZATION NOTE (watchExpressions.refreshButton): Watch Expressions header
+#. # button for refreshing the expressions.
+#: watchExpressions.refreshButton
+msgid "Refresh"
+msgstr ""
+
 #. # LOCALIZATION NOTE (welcome.search): The center pane welcome panel's
 #. # search prompt. e.g. cmd+p to search for files. On windows, it's ctrl, on
 #. # a mac we use the unicode character.
 #: welcome.search
-msgid "%S to search for files"
+#, fuzzy
+msgid "%S to search for sources"
 msgstr "%S to search for files"
 
 #. # LOCALIZATION NOTE (sourceSearch.search): The center pane Source Search
 #. # prompt for searching for files.
 #: sourceSearch.search
-msgid "Search…"
-msgstr "Search…"
+msgid "Search Sources…"
+msgstr ""
 
 #. # LOCALIZATION NOTE (sourceSearch.noResults): The center pane Source Search
 #. # message when the query did not match any of the sources.
 #: sourceSearch.noResults
 msgid "No files matching %S found"
 msgstr "No files matching %S found"
+
+#. # LOCALIZATION NOTE (sourceFooter.debugBtnTooltip): Tooltip text associated
+#. # with the pretty-print button
+#: sourceFooter.debugBtnTooltip
+msgid "Prettify Source"
+msgstr ""
 
 #. # LOCALIZATION NOTE (ignoreExceptions): The pause on exceptions button tooltip
 #. # when the debugger will not pause on exceptions.
@@ -681,6 +822,83 @@ msgstr "Anonymous Sources"
 #: experimental
 msgid "This is an experimental feature"
 msgstr "This is an experimental feature"
+
+#. # LOCALIZATION NOTE (whyPaused.debuggerStatement): The text that is displayed
+#. # in a info block explaining how the debugger is currently paused due to a `debugger`
+#. # statement in the code
+#: whyPaused.debuggerStatement
+msgid "Paused on debugger statement"
+msgstr ""
+
+#. # LOCALIZATION NOTE (whyPaused.breakpoint): The text that is displayed
+#. # in a info block explaining how the debugger is currently paused on a breakpoint
+#: whyPaused.breakpoint
+msgid "Paused on breakpoint"
+msgstr ""
+
+#. # LOCALIZATION NOTE (whyPaused.exception): The text that is displayed
+#. # in a info block explaining how the debugger is currently paused on an exception
+#: whyPaused.exception
+msgid "Paused on exception"
+msgstr ""
+
+#. # LOCALIZATION NOTE (whyPaused.resumeLimit): The text that is displayed
+#. # in a info block explaining how the debugger is currently paused while stepping
+#. # in or out of the stack
+#: whyPaused.resumeLimit
+msgid "Paused while stepping"
+msgstr ""
+
+#. # LOCALIZATION NOTE (whyPaused.pauseOnDOMEvents): The text that is displayed
+#. # in a info block explaining how the debugger is currently paused on a
+#. # dom event
+#: whyPaused.pauseOnDOMEvents
+msgid "Paused on event listener"
+msgstr ""
+
+#. # LOCALIZATION NOTE (whyPaused.xhr): The text that is displayed
+#. # in a info block explaining how the debugger is currently paused on an
+#. # xml http request
+#: whyPaused.xhr
+msgid "Paused on XMLHttpRequest"
+msgstr ""
+
+#. # LOCALIZATION NOTE (whyPaused.promiseRejection): The text that is displayed
+#. # in a info block explaining how the debugger is currently paused on a
+#. # promise rejection
+#: whyPaused.promiseRejection
+msgid "Paused on promise rejection"
+msgstr ""
+
+#. # LOCALIZATION NOTE (whyPaused.assert): The text that is displayed
+#. # in a info block explaining how the debugger is currently paused on an
+#. # assert
+#: whyPaused.assert
+msgid "Paused on assertion"
+msgstr ""
+
+#. # LOCALIZATION NOTE (whyPaused.debugCommand): The text that is displayed
+#. # in a info block explaining how the debugger is currently paused on a
+#. # debugger statement
+#: whyPaused.debugCommand
+msgid "Paused on debugged function"
+msgstr ""
+
+#. # LOCALIZATION NOTE (whyPaused.other): The text that is displayed
+#. # in a info block explaining how the debugger is currently paused on an event
+#. # listener breakpoint set
+#: whyPaused.other
+msgid "Debugger paused"
+msgstr ""
+
+#~ msgid "Click to pause (%S)"
+#~ msgstr "Click to pause (%S)"
+
+#~ msgid "Click to resume (%S)"
+#~ msgstr "Click to resume (%S)"
+
+#~ msgid "Search…"
+#~ msgstr "Search…"
 
 #~ msgid "Debugger"
 #~ msgstr "Debugger"

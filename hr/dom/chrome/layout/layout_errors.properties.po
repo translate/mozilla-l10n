@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 15:16+0000\n"
+"POT-Creation-Date: 2017-01-23 16:20+0000\n"
 "PO-Revision-Date: 2016-08-01 18:55+0000\n"
 "Last-Translator: Mihovil Stanić <mihovil@miho.im>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 1.14.0-rc1\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1470077712.000000\n"
 
@@ -93,20 +93,16 @@ msgstr ""
 "Animacija se ne može reproducirati jer je veličina okvira (%1$S, %2$S) manja "
 "od (16, 16)"
 
-#. ## LOCALIZATION NOTE(CompositorAnimationWarningContentTooLarge):
+#. ## LOCALIZATION NOTE(CompositorAnimationWarningContentTooLarge2):
 #. ## (%1$S, %2$S) is a pair of integer values of the frame size
-#. ## (%3$S, %4$S) is a pair of integer values of the viewport size
-#. ## (%5$S, %6$S) is a pair of integer values of the visual rectangle size
-#. ## (%7$S) is an integer value
-#: CompositorAnimationWarningContentTooLarge
+#. ## (%3$S, %4$S) is a pair of integer values of a limit based on the viewport size
+#. ## (%5$S, %6$S) is a pair of integer values of an absolute limit
+#: CompositorAnimationWarningContentTooLarge2
 msgid ""
 "Animation cannot be run on the compositor because the frame size (%1$S, "
-"%2$S) is bigger than the viewport (%3$S, %4$S) or the visual rectangle "
-"(%5$S, %6$S) is larger than the maximum allowed value (%7$S)"
+"%2$S) is too large relative to the viewport (larger than (%3$S, %4$S)) or "
+"larger than the maximum allowed value (%5$S, %6$S)"
 msgstr ""
-"Animacija se ne može reproducirati jer je veličina okvira (%1$S, %2$S) veća "
-"od polja za prikaz (%3$S, %4$S) ili je vizualni kvadrat (%5$S, %6$S) veći od "
-"najveće dopuštene vrijednosti (%7$S)"
 
 #. ## LOCALIZATION NOTE(CompositorAnimationWarningTransformBackfaceVisibilityHidden):
 #. ## 'backface-visibility: hidden' is a CSS property, don't translate it.
@@ -130,6 +126,7 @@ msgstr ""
 
 #. ## LOCALIZATION NOTE(CompositorAnimationWarningTransformSVG,
 #. ##                   CompositorAnimationWarningTransformWithGeometricProperties,
+#. ##                   CompositorAnimationWarningTransformWithSyncGeometricAnimations,
 #. ##                   CompositorAnimationWarningTransformFrameInactive,
 #. ##                   CompositorAnimationWarningOpacityFrameInactive):
 #. ## 'transform' and 'opacity' mean CSS property names, don't translate it.
@@ -148,6 +145,13 @@ msgid ""
 msgstr ""
 "Animacija ‘transform’ se ne može reproducirati na kompozitoru kada se "
 "geometrijska svojstva animiraju na istom elementu u isto vrijeme"
+
+#: CompositorAnimationWarningTransformWithSyncGeometricAnimations
+msgid ""
+"Animation of ‘transform’ cannot be run on the compositor because it should "
+"be synchronized with animations of geometric properties that started at the "
+"same time"
+msgstr ""
 
 #: CompositorAnimationWarningTransformFrameInactive
 msgid ""
@@ -170,6 +174,15 @@ msgid ""
 "Animation cannot be run on the compositor because the element has rendering "
 "observers (-moz-element or SVG clipping/masking)"
 msgstr ""
+
+#~ msgid ""
+#~ "Animation cannot be run on the compositor because the frame size (%1$S, "
+#~ "%2$S) is bigger than the viewport (%3$S, %4$S) or the visual rectangle "
+#~ "(%5$S, %6$S) is larger than the maximum allowed value (%7$S)"
+#~ msgstr ""
+#~ "Animacija se ne može reproducirati jer je veličina okvira (%1$S, %2$S) "
+#~ "veća od polja za prikaz (%3$S, %4$S) ili je vizualni kvadrat (%5$S, %6$S) "
+#~ "veći od najveće dopuštene vrijednosti (%7$S)"
 
 #~ msgid ""
 #~ "Async animation of 'backface-visibility: hidden' transforms is not "
