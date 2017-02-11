@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-23 16:20+0000\n"
-"PO-Revision-Date: 2017-02-11 10:46+0000\n"
-"Last-Translator: reza habibi <reza.habibi2008@gmail.com>\n"
+"PO-Revision-Date: 2017-02-11 11:36+0000\n"
+"Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Generator: Pootle 2.8\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1486810011.000000\n"
+"X-POOTLE-MTIME: 1486812984.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -1275,10 +1275,10 @@ msgid ""
 "httpbis-encryption-encoding-02#section-4 for more information."
 msgstr ""
 "یک ServiceWorker برای محدوده «%1$S» در هنگام رمزگشایی یک پیام شکست خورد. "
-"سرصفحه «Encryption-Key» باید شامل یک پارامتر «dh» که محتوی کلیدِ عمومیِ "
-"کارگزارِ برنامه است، باشد. این سربرگ خراب شده اس و به زودی حذف می‌شود. برای "
-"اطلاعات بیشتر https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
-"encoding-02#section-4 را مشاهده کنید."
+"سرصفحه «Encryption-Key» باید شامل یک پارامتر «dh» باشد. این سرصفحه منسوخ شده "
+"است و به زودی حذف خواهد شد. لطفا از «Crypto-Key» با «Content-Encoding: "
+"aesgcm» استفاده کنید. برای اطلاعات بیشتر https://tools.ietf.org/html/draft-"
+"ietf-httpbis-encryption-encoding-02#section-4 را مشاهده کنید."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "Content-Encoding" header is missing or contains an
@@ -1291,6 +1291,11 @@ msgid ""
 "deprecated and will soon be removed. See https://tools.ietf.org/html/draft-"
 "ietf-httpbis-encryption-encoding-02#section-2 for more information."
 msgstr ""
+"یک ServiceWorker برای محدوده «%1$S» در هنگام رمزگشایی یک پیام شکست خورد. "
+"سرصفحه «Content-Encoding» باید مقدار «aesgcm» داشته باشد. «aesgcm128» مجاز "
+"است، اما منسوخ شده و به زودی حذف خواهد شد. برای اطلاعات بیشتر https://tools."
+"ietf.org/html/draft-ietf-httpbis-encryption-encoding-02#section-2 را مشاهده "
+"کنید."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "dh" parameter is not valid base64url. Do not translate
@@ -1305,6 +1310,12 @@ msgid ""
 "encoding). See https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
 "encoding-02#section-4 for more information."
 msgstr ""
+"یک ServiceWorker برای محدوده «%1$S» در هنگام رمزگشاییِ یک پیام شکست خورد. "
+"پارامتر «dh» از سرصفحه «Crypto-Key» باید کلید عمومی Diffie-Hellman مربوط به "
+"کارگزار اپ و با رمزنگاری base64url باشد (https://tools.ietf.org/html/"
+"rfc7515#appendix-C) و در حالت «uncompressed» یا «raw» (حجم ۶۵ بایت پیش از "
+"رمزنگاری). برای اطلاعات بیشتر https://tools.ietf.org/html/draft-ietf-httpbis-"
+"encryption-encoding-02#section-4 مشاهده کنید."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "salt" parameter is not valid base64url. Do not translate
@@ -1318,6 +1329,11 @@ msgid ""
 "before encoding. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-3.1 for more information."
 msgstr ""
+"یک ServiceWorker برای محدوده «%1$S» در هنگام رمزگشاییِ یک پیام شکست خورد. "
+"پارامتر «salt» در سرصفحه «Encryption» باید رمزنگاری base64url داشته باشد "
+"(https://tools.ietf.org/html/rfc7515#appendix-C)، و پیش از رمزنگاری باید "
+"حداقل ۱۶ بایت باشد. برای اطلاعات بیشتر https://tools.ietf.org/html/draft-"
+"ietf-httpbis-encryption-encoding-02#section-3.1 را مشاهده کنید."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because the "rs" parameter is not a number, or is less than the pad size.
@@ -1331,6 +1347,10 @@ msgid ""
 "or omitted entirely. See https://tools.ietf.org/html/draft-ietf-httpbis-"
 "encryption-encoding-02#section-3.1 for more information."
 msgstr ""
+"یک ServiceWorker برای محدوده «%1$S» در هنگام رمزگشاییِ یک پیام شکست خورد. "
+"پارامتر «rs» در سرصفحه «Encryption» باید بین %2$S و 2^36-31 باشد یا اینکه به "
+"طور کامل حذف شود. برای اطلاعات بیشتر https://tools.ietf.org/html/draft-ietf-"
+"httpbis-encryption-encoding-02#section-3.1 را مشاهده کنید."
 
 #. # LOCALIZATION NOTE: This error is reported when a push message fails to decrypt
 #. # because an encrypted record is shorter than the pad size, the pad is larger
@@ -1344,6 +1364,10 @@ msgid ""
 "ietf.org/html/draft-ietf-httpbis-encryption-encoding-02#section-2 for more "
 "information."
 msgstr ""
+"یک ServiceWorker برای محدوده «%1$S» در هنگام رمزگشایی یک پیام شکست خورد. یک "
+"رکورد در پیام رمزنگاری شده به طور صحیح pad نشده بود. برای اطلاعات بیشتر "
+"https://tools.ietf.org/html/draft-ietf-httpbis-encryption-"
+"encoding-02#section-2 مشاهده کنید."
 
 #. # LOCALIZATION NOTE: This error is reported when push message decryption fails
 #. # and no specific error info is available. Do not translate "ServiceWorker".
@@ -1354,6 +1378,9 @@ msgid ""
 "help with encryption, please see https://developer.mozilla.org/docs/Web/API/"
 "Push_API/Using_the_Push_API#Encryption"
 msgstr ""
+"یک ServiceWorker برای محدوده «%1$S» در هنگام رمزگشایی یک پیام شکست خورد. "
+"برای راهنمایی در مورد رمزنگاری، لطفا https://developer.mozilla.org/docs/Web/"
+"API/Push_API/Using_the_Push_API#Encryption را مشاهده کنید."
 
 #. # LOCALIZATION NOTE: %1$S is the type of a DOM event. 'passive' is a literal parameter from the DOM spec.
 #: PreventDefaultFromPassiveListenerWarning
@@ -1432,6 +1459,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the load being triggered by a "
 "non-GET request."
 msgstr ""
+"یک سرصفحهٔ Large-Allocation به دلیل بارگیری آن از طریق یک درخواست غیر GET "
+"انجام شده بود، نادیده گرفته شد."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name. Do not translate `window.opener`.
 #: LargeAllocationNotOnlyToplevelInTabGroup
@@ -1440,6 +1469,8 @@ msgid ""
 "have a reference to this browsing context through the frame hierarchy or "
 "window.opener."
 msgstr ""
+"یک سرصفحه Large-Allocation به دلیل حضور پنجره‌هایی که به محتوای این صفحه از "
+"طریق یک ساختار frame یا window.opener اشاره دارند، نادیده گرفته شد."
 
 #. # LOCALIZATION NOTE: Do not translate "Large-Allocation", as it is a literal header name
 #: LargeAllocationNonE10S
@@ -1447,6 +1478,8 @@ msgid ""
 "A Large-Allocation header was ignored due to the document not being loaded "
 "out of process."
 msgstr ""
+"یک سرصفحه Large-Allocation به دلیل اینکه سند خارج از پردازش بار نشده بود، "
+"نادیده گرفته شد."
 
 #~ msgid ""
 #~ "‘mozHidden’ and ‘mozVisibilityState’ are deprecated.  Please use the "
