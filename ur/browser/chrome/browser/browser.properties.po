@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-26 08:16+0000\n"
+"POT-Creation-Date: 2017-03-06 23:16+0000\n"
 "PO-Revision-Date: 2017-02-26 07:02+0000\n"
 "Last-Translator: Mohammed Yaseen Khan <myaseen.khan@hotmail.com>\n"
 "Language-Team: none\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.0.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1488092553.000000\n"
 
@@ -148,23 +148,32 @@ msgstr "%1$S کا %2$S میں اظافہ کر دیا گیا ہے"
 msgid "%S added"
 msgstr "%S شامل"
 
-#: webextPerms.sideloadText
+#: webextPerms.sideloadText2
+#, fuzzy
 msgid ""
 "Another program on your computer installed an add-on that may affect your "
 "browser. Please review this add-on’s permissions requests and choose to "
-"Enable or Disable."
+"Enable or Cancel (to leave it disabled)."
 msgstr ""
 "ایک اور پروگرام نے آپ کے کمپیوٹر پر add-on تنصیب کیا ہے جو آپ کے براؤزر کو "
 "متاثر کر سکتا ہے۔ براہ مہربانی اس add-on کا جائزہ لیں اجازتیں درخواستوں اور "
 "فعال یا غیر فعال کرنے کا انتخاب کریں۔"
 
+#: webextPerms.sideloadTextNoPerms
+msgid ""
+"Another program on your computer installed an add-on that may affect your "
+"browser. Please choose to Enable or Cancel (to leave it disabled)."
+msgstr ""
+
 #: webextPerms.sideloadEnable.label webextPerms.sideloadEnable.accessKey
 msgid "&Enable"
 msgstr "&اہل بنائیں"
 
-#: webextPerms.sideloadDisable.label webextPerms.sideloadDisable.accessKey
-msgid "&Disable"
-msgstr "&نا اہل بنائیں"
+#: webextPerms.sideloadCancel.label webextPerms.sideloadCancel.accessKey
+#, fuzzy
+msgctxt "webextPerms.sideloadCancel.label webextPerms.sideloadCancel.accessKey"
+msgid "&Cancel"
+msgstr "&منسوخ کریں"
 
 #. # LOCALIZATION NOTE (webextPerms.updateMenuItem)
 #. # %S will be replaced with the localized name of the extension which
@@ -194,10 +203,22 @@ msgstr "&تازہ کاری کریں"
 msgid "Read and modify bookmarks"
 msgstr "نشانیاں پڑھیں اور ترمیم کریں"
 
+#: webextPerms.description.clipboardRead
+msgid "Get data from the clipboard"
+msgstr ""
+
+#: webextPerms.description.clipboardWrite
+msgid "Input data to the clipboard"
+msgstr ""
+
 #: webextPerms.description.downloads
 msgid "Download files and read and modify the browser’s download history"
 msgstr ""
 "مسل کو ڈاؤن لوڈ کریں اور پڑھیں اور براؤزر کے ڈاؤن لوڈ کی تاریخ میں ترمیم کریں‪"
+
+#: webextPerms.description.geolocation
+msgid "Access your location"
+msgstr ""
 
 #: webextPerms.description.history
 msgctxt "webextPerms.description.history"
@@ -213,6 +234,10 @@ msgstr "%S کے علاوہ پروگرام کے ساتھ پیغامپیغامات
 #: webextPerms.description.notifications
 msgid "Display notifications to you"
 msgstr "اطلاعات کی آپ کو نمائش کریں"
+
+#: webextPerms.description.privacy
+msgid "Read and modify privacy settings"
+msgstr ""
 
 #: webextPerms.description.sessions
 msgid "Access recently closed tabs"
@@ -280,14 +305,13 @@ msgstr ""
 msgid "%1$S has been added to %2$S."
 msgstr "%1$S کا %2$S میں اظافہ کر دیا گیا ہے۔"
 
-#. # LOCALIZATION NOTE (addonPostInstall.message2)
-#. # %1$S is replaced with the localized name of the extension.
-#. # %2$S is replaced with the icon for the add-ons menu.
-#. # %3$S is replaced with the icon for the toolbar menu.
+#. # LOCALIZATION NOTE (addonPostInstall.messageDetail)
+#. # %1$S is replaced with the icon for the add-ons menu.
+#. # %2$S is replaced with the icon for the toolbar menu.
 #. # Note, this string will be used as raw markup. Avoid characters like <, >, &
-#: addonPostInstall.message2
-msgid "Manage %1$S by clicking %2$S in the %3$S menu."
-msgstr " %3$S مینیو مِیں %2$S پر کلک کر کے %1$S بندوبست کریں"
+#: addonPostInstall.messageDetail
+msgid "Manage your add-ons by clicking %1$S in the %2$S menu."
+msgstr ""
 
 #: addonPostInstall.okay.label
 msgid "OK"
@@ -1887,21 +1911,9 @@ msgid "Un&mute Tab"
 msgstr "ٹیب کی خاموشی &ختم کریں"
 
 #: playTab.label playTab.accesskey
-msgid "&Play Tab"
+#, fuzzy
+msgid "P&lay Tab"
 msgstr "ٹیب &چلائیں"
-
-#. # LOCALIZATION NOTE (weakCryptoOverriding.message): %S is brandShortName
-#: weakCryptoOverriding.message
-msgid ""
-"%S recommends that you don’t enter your password, credit card and other "
-"personal information on this website."
-msgstr ""
-"%S سفارش کرتا ہے کے آپ پاس ورڈ، کریڈٹ کارڈ اور دیگر ذاتی معلومات اس ویب سائٹ "
-"پر داخل نہ کریں۔"
-
-#: revokeOverride.label revokeOverride.accesskey
-msgid "&Don’t Trust This Website"
-msgstr "&اس ویب سائٹ پر بھروسا نہ کرے"
 
 #. # LOCALIZATION NOTE (certErrorDetails*.label): These are text strings that
 #. # appear in the about:certerror page, so that the user can copy and send them to
@@ -1977,21 +1989,19 @@ msgstr ""
 "لاباوکودیک عٰیر محفوظ یا بلا تعاون ہو سکتا ہے، اور ویڈیو چلانے کے لئے اسے "
 "تازہ کاری ہونا چاہئے۔"
 
-#. # LOCALIZATION NOTE (captivePortal.infoMessage2):
+#. # LOCALIZATION NOTE (captivePortal.infoMessage3):
 #. # Shown in a notification bar when we detect a captive portal is blocking network access
 #. # and requires the user to log in before browsing.
-#: captivePortal.infoMessage2
-msgid "This network may require you to log in to use the internet."
+#: captivePortal.infoMessage3
+msgid "You must log in to this network before you can access the Internet."
 msgstr ""
-"اس نیٹ ورک پر آپ کو انٹرنیٹ استعمال کرنے کے لئے شاید لاگ ان کرنے کی ضرورت "
-"ہوسکتی ہے۔"
 
-#. # LOCALIZATION NOTE (captivePortal.showLoginPage):
+#. # LOCALIZATION NOTE (captivePortal.showLoginPage2):
 #. # The label for a button shown in the info bar in all tabs except the login page tab.
 #. # The button shows the portal login page tab when clicked.
-#: captivePortal.showLoginPage
-msgid "Show Login Page"
-msgstr "لاگ ان صفحہ دکھائیں"
+#: captivePortal.showLoginPage2
+msgid "Open Network Login Page"
+msgstr ""
 
 #: permissions.remove.tooltip
 msgid "Clear this permission and ask again"
@@ -2009,6 +2019,30 @@ msgstr "64-بٹ"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "32-بٹ"
+
+#~ msgid "&Disable"
+#~ msgstr "&نا اہل بنائیں"
+
+#~ msgid "Manage %1$S by clicking %2$S in the %3$S menu."
+#~ msgstr " %3$S مینیو مِیں %2$S پر کلک کر کے %1$S بندوبست کریں"
+
+#~ msgid ""
+#~ "%S recommends that you don’t enter your password, credit card and other "
+#~ "personal information on this website."
+#~ msgstr ""
+#~ "%S سفارش کرتا ہے کے آپ پاس ورڈ، کریڈٹ کارڈ اور دیگر ذاتی معلومات اس ویب "
+#~ "سائٹ پر داخل نہ کریں۔"
+
+#~ msgid "&Don’t Trust This Website"
+#~ msgstr "&اس ویب سائٹ پر بھروسا نہ کرے"
+
+#~ msgid "This network may require you to log in to use the internet."
+#~ msgstr ""
+#~ "اس نیٹ ورک پر آپ کو انٹرنیٹ استعمال کرنے کے لئے شاید لاگ ان کرنے کی ضرورت "
+#~ "ہوسکتی ہے۔"
+
+#~ msgid "Show Login Page"
+#~ msgstr "لاگ ان صفحہ دکھائیں"
 
 #~ msgid "Developer Edition"
 #~ msgstr "Developer Edition"

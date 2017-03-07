@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-26 08:16+0000\n"
+"POT-Creation-Date: 2017-03-06 23:16+0000\n"
 "PO-Revision-Date: 2017-01-27 18:45+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.0.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1485542710.000000\n"
 
@@ -150,23 +150,32 @@ msgstr "%1$S je so %2$S přidał"
 msgid "%S added"
 msgstr "%S je so přidał"
 
-#: webextPerms.sideloadText
+#: webextPerms.sideloadText2
+#, fuzzy
 msgid ""
 "Another program on your computer installed an add-on that may affect your "
 "browser. Please review this add-on’s permissions requests and choose to "
-"Enable or Disable."
+"Enable or Cancel (to leave it disabled)."
 msgstr ""
 "Druhi program na wašim ličaku je přidatk instalował, kotryž móhł waš "
 "wobhladowak kazyć. Prošu přepruwujće prawa tutoho přidatka a wubjerće "
 "Zmóžnić abo Znjemóžnić."
 
+#: webextPerms.sideloadTextNoPerms
+msgid ""
+"Another program on your computer installed an add-on that may affect your "
+"browser. Please choose to Enable or Cancel (to leave it disabled)."
+msgstr ""
+
 #: webextPerms.sideloadEnable.label webextPerms.sideloadEnable.accessKey
 msgid "&Enable"
 msgstr "Z&móžnić"
 
-#: webextPerms.sideloadDisable.label webextPerms.sideloadDisable.accessKey
-msgid "&Disable"
-msgstr "Z&njemóžnić"
+#: webextPerms.sideloadCancel.label webextPerms.sideloadCancel.accessKey
+#, fuzzy
+msgctxt "webextPerms.sideloadCancel.label webextPerms.sideloadCancel.accessKey"
+msgid "&Cancel"
+msgstr "&Přetorhnyć"
 
 #. # LOCALIZATION NOTE (webextPerms.updateMenuItem)
 #. # %S will be replaced with the localized name of the extension which
@@ -196,10 +205,22 @@ msgstr "&Aktualizować"
 msgid "Read and modify bookmarks"
 msgstr "Zapołožki čitać a změnić"
 
+#: webextPerms.description.clipboardRead
+msgid "Get data from the clipboard"
+msgstr ""
+
+#: webextPerms.description.clipboardWrite
+msgid "Input data to the clipboard"
+msgstr ""
+
 #: webextPerms.description.downloads
 msgid "Download files and read and modify the browser’s download history"
 msgstr ""
 "Sćehńće dataje a čitajće a změńće sćehnjensku historiju swojeho wobhladowaka"
+
+#: webextPerms.description.geolocation
+msgid "Access your location"
+msgstr ""
 
 #: webextPerms.description.history
 msgctxt "webextPerms.description.history"
@@ -215,6 +236,10 @@ msgstr "Wuměńće powěsće z druhimi programami hač %S"
 #: webextPerms.description.notifications
 msgid "Display notifications to you"
 msgstr "Zdźělenki na was pokazać"
+
+#: webextPerms.description.privacy
+msgid "Read and modify privacy settings"
+msgstr ""
 
 #: webextPerms.description.sessions
 msgid "Access recently closed tabs"
@@ -284,14 +309,13 @@ msgstr ""
 msgid "%1$S has been added to %2$S."
 msgstr "%1$S je so %2$S přidał."
 
-#. # LOCALIZATION NOTE (addonPostInstall.message2)
-#. # %1$S is replaced with the localized name of the extension.
-#. # %2$S is replaced with the icon for the add-ons menu.
-#. # %3$S is replaced with the icon for the toolbar menu.
+#. # LOCALIZATION NOTE (addonPostInstall.messageDetail)
+#. # %1$S is replaced with the icon for the add-ons menu.
+#. # %2$S is replaced with the icon for the toolbar menu.
 #. # Note, this string will be used as raw markup. Avoid characters like <, >, &
-#: addonPostInstall.message2
-msgid "Manage %1$S by clicking %2$S in the %3$S menu."
-msgstr "Klikńće na %2$S w meniju %3$S, zo byšće %1$S rjadował."
+#: addonPostInstall.messageDetail
+msgid "Manage your add-ons by clicking %1$S in the %2$S menu."
+msgstr ""
 
 #: addonPostInstall.okay.label
 msgid "OK"
@@ -1908,21 +1932,9 @@ msgid "Un&mute Tab"
 msgstr "Zně&mjenje rajtarka anulować"
 
 #: playTab.label playTab.accesskey
-msgid "&Play Tab"
+#, fuzzy
+msgid "P&lay Tab"
 msgstr "&Rajtark wothrać"
-
-#. # LOCALIZATION NOTE (weakCryptoOverriding.message): %S is brandShortName
-#: weakCryptoOverriding.message
-msgid ""
-"%S recommends that you don’t enter your password, credit card and other "
-"personal information on this website."
-msgstr ""
-"%S poruča, zo swoje hesło, čisło kreditneje karty abo druhe wosobinske daty "
-"na websydle njezapodawaće."
-
-#: revokeOverride.label revokeOverride.accesskey
-msgid "&Don’t Trust This Website"
-msgstr "&Tutomu websydłu njedowěrić"
 
 #. # LOCALIZATION NOTE (certErrorDetails*.label): These are text strings that
 #. # appear in the about:certerror page, so that the user can copy and send them to
@@ -2000,20 +2012,19 @@ msgstr ""
 "libavcodec móže napadliwy być abo so njepodpěruje a měł so za wothraće "
 "widejow aktualizować."
 
-#. # LOCALIZATION NOTE (captivePortal.infoMessage2):
+#. # LOCALIZATION NOTE (captivePortal.infoMessage3):
 #. # Shown in a notification bar when we detect a captive portal is blocking network access
 #. # and requires the user to log in before browsing.
-#: captivePortal.infoMessage2
-msgid "This network may require you to log in to use the internet."
+#: captivePortal.infoMessage3
+msgid "You must log in to this network before you can access the Internet."
 msgstr ""
-"Tuta syć sej snano žada, zo dyrbiće so přizjewić, zo byšće internet wužiwał."
 
-#. # LOCALIZATION NOTE (captivePortal.showLoginPage):
+#. # LOCALIZATION NOTE (captivePortal.showLoginPage2):
 #. # The label for a button shown in the info bar in all tabs except the login page tab.
 #. # The button shows the portal login page tab when clicked.
-#: captivePortal.showLoginPage
-msgid "Show Login Page"
-msgstr "Stronu přizjewjenja pokazać"
+#: captivePortal.showLoginPage2
+msgid "Open Network Login Page"
+msgstr ""
 
 #: permissions.remove.tooltip
 msgid "Clear this permission and ask again"
@@ -2031,6 +2042,30 @@ msgstr "64-bitowy"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "32-bitowy"
+
+#~ msgid "&Disable"
+#~ msgstr "Z&njemóžnić"
+
+#~ msgid "Manage %1$S by clicking %2$S in the %3$S menu."
+#~ msgstr "Klikńće na %2$S w meniju %3$S, zo byšće %1$S rjadował."
+
+#~ msgid ""
+#~ "%S recommends that you don’t enter your password, credit card and other "
+#~ "personal information on this website."
+#~ msgstr ""
+#~ "%S poruča, zo swoje hesło, čisło kreditneje karty abo druhe wosobinske "
+#~ "daty na websydle njezapodawaće."
+
+#~ msgid "&Don’t Trust This Website"
+#~ msgstr "&Tutomu websydłu njedowěrić"
+
+#~ msgid "This network may require you to log in to use the internet."
+#~ msgstr ""
+#~ "Tuta syć sej snano žada, zo dyrbiće so přizjewić, zo byšće internet "
+#~ "wužiwał."
+
+#~ msgid "Show Login Page"
+#~ msgstr "Stronu přizjewjenja pokazać"
 
 #~ msgid "Developer Edition"
 #~ msgstr "Wuwiwarska edicija"

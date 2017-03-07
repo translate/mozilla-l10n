@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-26 08:16+0000\n"
+"POT-Creation-Date: 2017-03-06 23:16+0000\n"
 "PO-Revision-Date: 2017-02-19 16:56+0000\n"
 "Last-Translator: Aniket Deshpande <djaniketster@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.0.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1487523360.000000\n"
 
@@ -148,11 +148,17 @@ msgstr "%2$S मध्ये %1$S जोडले आहे"
 msgid "%S added"
 msgstr "%S जोडले"
 
-#: webextPerms.sideloadText
+#: webextPerms.sideloadText2
 msgid ""
 "Another program on your computer installed an add-on that may affect your "
 "browser. Please review this add-on’s permissions requests and choose to "
-"Enable or Disable."
+"Enable or Cancel (to leave it disabled)."
+msgstr ""
+
+#: webextPerms.sideloadTextNoPerms
+msgid ""
+"Another program on your computer installed an add-on that may affect your "
+"browser. Please choose to Enable or Cancel (to leave it disabled)."
 msgstr ""
 
 #: webextPerms.sideloadEnable.label webextPerms.sideloadEnable.accessKey
@@ -160,10 +166,11 @@ msgstr ""
 msgid "&Enable"
 msgstr "कार्यान्वीत करा"
 
-#: webextPerms.sideloadDisable.label webextPerms.sideloadDisable.accessKey
+#: webextPerms.sideloadCancel.label webextPerms.sideloadCancel.accessKey
 #, fuzzy
-msgid "&Disable"
-msgstr "अकार्यान्वीत"
+msgctxt "webextPerms.sideloadCancel.label webextPerms.sideloadCancel.accessKey"
+msgid "&Cancel"
+msgstr "रद्द करा"
 
 #. # LOCALIZATION NOTE (webextPerms.updateMenuItem)
 #. # %S will be replaced with the localized name of the extension which
@@ -190,8 +197,20 @@ msgstr "अद्ययावत करा"
 msgid "Read and modify bookmarks"
 msgstr ""
 
+#: webextPerms.description.clipboardRead
+msgid "Get data from the clipboard"
+msgstr ""
+
+#: webextPerms.description.clipboardWrite
+msgid "Input data to the clipboard"
+msgstr ""
+
 #: webextPerms.description.downloads
 msgid "Download files and read and modify the browser’s download history"
+msgstr ""
+
+#: webextPerms.description.geolocation
+msgid "Access your location"
 msgstr ""
 
 #: webextPerms.description.history
@@ -207,6 +226,10 @@ msgstr ""
 
 #: webextPerms.description.notifications
 msgid "Display notifications to you"
+msgstr ""
+
+#: webextPerms.description.privacy
+msgid "Read and modify privacy settings"
 msgstr ""
 
 #: webextPerms.description.sessions
@@ -271,13 +294,12 @@ msgstr ""
 msgid "%1$S has been added to %2$S."
 msgstr ""
 
-#. # LOCALIZATION NOTE (addonPostInstall.message2)
-#. # %1$S is replaced with the localized name of the extension.
-#. # %2$S is replaced with the icon for the add-ons menu.
-#. # %3$S is replaced with the icon for the toolbar menu.
+#. # LOCALIZATION NOTE (addonPostInstall.messageDetail)
+#. # %1$S is replaced with the icon for the add-ons menu.
+#. # %2$S is replaced with the icon for the toolbar menu.
 #. # Note, this string will be used as raw markup. Avoid characters like <, >, &
-#: addonPostInstall.message2
-msgid "Manage %1$S by clicking %2$S in the %3$S menu."
+#: addonPostInstall.messageDetail
+msgid "Manage your add-ons by clicking %1$S in the %2$S menu."
 msgstr ""
 
 #: addonPostInstall.okay.label
@@ -979,8 +1001,9 @@ msgid "&Allow Storing Data"
 msgstr ""
 
 #: offlineApps.dontAllow.label offlineApps.dontAllow.accesskey
+#, fuzzy
 msgid "Do&n’t Allow"
-msgstr ""
+msgstr "परवानगी देऊ नका"
 
 #: offlineApps.usage
 msgid ""
@@ -1102,9 +1125,10 @@ msgid "A"
 msgstr ""
 
 #: geolocation.dontAllowLocation
+#, fuzzy
 msgctxt "geolocation.dontAllowLocation"
 msgid "Don’t Allow"
-msgstr ""
+msgstr "परवानगी देऊ नका"
 
 #: geolocation.dontAllowLocation.accesskey
 msgctxt "geolocation.dontAllowLocation.accesskey"
@@ -1143,9 +1167,10 @@ msgid "A"
 msgstr ""
 
 #: webNotifications.dontAllow
+#, fuzzy
 msgctxt "webNotifications.dontAllow"
 msgid "Don’t Allow"
-msgstr ""
+msgstr "परवानगी देऊ नका"
 
 #: webNotifications.dontAllow.accesskey
 msgctxt "webNotifications.dontAllow.accesskey"
@@ -1454,8 +1479,9 @@ msgid "&Allow"
 msgstr "स्वीकारा…"
 
 #: getUserMedia.dontAllow.label getUserMedia.dontAllow.accesskey
+#, fuzzy
 msgid "&Don’t Allow"
-msgstr ""
+msgstr "परवानगी देऊ नका"
 
 #: getUserMedia.remember
 msgctxt "getUserMedia.remember"
@@ -1850,21 +1876,8 @@ msgid "Un&mute Tab"
 msgstr "टॅब सशब्द करा"
 
 #: playTab.label playTab.accesskey
-msgid "&Play Tab"
+msgid "P&lay Tab"
 msgstr ""
-
-#. # LOCALIZATION NOTE (weakCryptoOverriding.message): %S is brandShortName
-#: weakCryptoOverriding.message
-msgid ""
-"%S recommends that you don’t enter your password, credit card and other "
-"personal information on this website."
-msgstr ""
-"या वेबसाइट वर आपला पासवर्ड, क्रेडिट कार्ड आणि इतर वैयक्तिक माहिती देउ नका, अशी "
-"शिफारस %S करते."
-
-#: revokeOverride.label revokeOverride.accesskey
-msgid "&Don’t Trust This Website"
-msgstr "या संकेतस्थळावर विश्वास ठेवू नका"
 
 #. # LOCALIZATION NOTE (certErrorDetails*.label): These are text strings that
 #. # appear in the about:certerror page, so that the user can copy and send them to
@@ -1939,20 +1952,19 @@ msgid ""
 msgstr ""
 "libavcodec असुरक्षित असेल किंवा समर्थित नाही, व व्हिडिओ चालविण्यासाठी अद्ययावत करावे."
 
-#. # LOCALIZATION NOTE (captivePortal.infoMessage2):
+#. # LOCALIZATION NOTE (captivePortal.infoMessage3):
 #. # Shown in a notification bar when we detect a captive portal is blocking network access
 #. # and requires the user to log in before browsing.
-#: captivePortal.infoMessage2
-#, fuzzy
-msgid "This network may require you to log in to use the internet."
-msgstr "ह्या नेटवर्कवर इंटरनेट वापरण्यासाठी लॉग-इनची आवश्यकता असू शकते."
+#: captivePortal.infoMessage3
+msgid "You must log in to this network before you can access the Internet."
+msgstr ""
 
-#. # LOCALIZATION NOTE (captivePortal.showLoginPage):
+#. # LOCALIZATION NOTE (captivePortal.showLoginPage2):
 #. # The label for a button shown in the info bar in all tabs except the login page tab.
 #. # The button shows the portal login page tab when clicked.
-#: captivePortal.showLoginPage
-msgid "Show Login Page"
-msgstr "लॉगईन पृष्ठ दाखवा"
+#: captivePortal.showLoginPage2
+msgid "Open Network Login Page"
+msgstr ""
 
 #: permissions.remove.tooltip
 msgid "Clear this permission and ask again"
@@ -1970,6 +1982,27 @@ msgstr "64-बिट"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "32-बिट"
+
+#, fuzzy
+#~ msgid "&Disable"
+#~ msgstr "अकार्यान्वीत"
+
+#~ msgid ""
+#~ "%S recommends that you don’t enter your password, credit card and other "
+#~ "personal information on this website."
+#~ msgstr ""
+#~ "या वेबसाइट वर आपला पासवर्ड, क्रेडिट कार्ड आणि इतर वैयक्तिक माहिती देउ नका, अशी "
+#~ "शिफारस %S करते."
+
+#~ msgid "&Don’t Trust This Website"
+#~ msgstr "या संकेतस्थळावर विश्वास ठेवू नका"
+
+#, fuzzy
+#~ msgid "This network may require you to log in to use the internet."
+#~ msgstr "ह्या नेटवर्कवर इंटरनेट वापरण्यासाठी लॉग-इनची आवश्यकता असू शकते."
+
+#~ msgid "Show Login Page"
+#~ msgstr "लॉगईन पृष्ठ दाखवा"
 
 #~ msgid "Developer Edition"
 #~ msgstr "डेव्हलपर आवृत्ती"

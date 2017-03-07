@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-26 08:16+0000\n"
+"POT-Creation-Date: 2017-03-06 23:16+0000\n"
 "PO-Revision-Date: 2017-02-07 18:32+0000\n"
 "Last-Translator: SafaAlfulaij <safa1996alfulaij@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.0.0\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
 "X-POOTLE-MTIME: 1486492328.000000\n"
@@ -147,22 +147,31 @@ msgstr "أُضيف %1$S إلى %2$S"
 msgid "%S added"
 msgstr "أُضيف %S"
 
-#: webextPerms.sideloadText
+#: webextPerms.sideloadText2
+#, fuzzy
 msgid ""
 "Another program on your computer installed an add-on that may affect your "
 "browser. Please review this add-on’s permissions requests and choose to "
-"Enable or Disable."
+"Enable or Cancel (to leave it disabled)."
 msgstr ""
 "ثبت برنامج آخر على حاسوبك إضافة قد تُؤثر على متصفحك. رجاء راجع طلبات صلاحية "
 "هذه الإضافة و احتر تفعيلها أو تعطيلها."
+
+#: webextPerms.sideloadTextNoPerms
+msgid ""
+"Another program on your computer installed an add-on that may affect your "
+"browser. Please choose to Enable or Cancel (to leave it disabled)."
+msgstr ""
 
 #: webextPerms.sideloadEnable.label webextPerms.sideloadEnable.accessKey
 msgid "&Enable"
 msgstr "&فعّل"
 
-#: webextPerms.sideloadDisable.label webextPerms.sideloadDisable.accessKey
-msgid "&Disable"
-msgstr "&عطّل"
+#: webextPerms.sideloadCancel.label webextPerms.sideloadCancel.accessKey
+#, fuzzy
+msgctxt "webextPerms.sideloadCancel.label webextPerms.sideloadCancel.accessKey"
+msgid "&Cancel"
+msgstr "أل&غِ"
 
 #. # LOCALIZATION NOTE (webextPerms.updateMenuItem)
 #. # %S will be replaced with the localized name of the extension which
@@ -191,9 +200,21 @@ msgstr "&حدّث"
 msgid "Read and modify bookmarks"
 msgstr "قراءة و تعديل العلامات"
 
+#: webextPerms.description.clipboardRead
+msgid "Get data from the clipboard"
+msgstr ""
+
+#: webextPerms.description.clipboardWrite
+msgid "Input data to the clipboard"
+msgstr ""
+
 #: webextPerms.description.downloads
 msgid "Download files and read and modify the browser’s download history"
 msgstr "تنزيل الملفات و تعديل تأريخ التنزيل في المتصفح"
+
+#: webextPerms.description.geolocation
+msgid "Access your location"
+msgstr ""
 
 #: webextPerms.description.history
 msgctxt "webextPerms.description.history"
@@ -209,6 +230,10 @@ msgstr "تبادل الرسائل مع برامج أخرى غير %S"
 #: webextPerms.description.notifications
 msgid "Display notifications to you"
 msgstr "عرض تنبيهات إليك"
+
+#: webextPerms.description.privacy
+msgid "Read and modify privacy settings"
+msgstr ""
 
 #: webextPerms.description.sessions
 msgid "Access recently closed tabs"
@@ -278,14 +303,13 @@ msgstr ""
 msgid "%1$S has been added to %2$S."
 msgstr "أُضيف %1$S إلى %2$S."
 
-#. # LOCALIZATION NOTE (addonPostInstall.message2)
-#. # %1$S is replaced with the localized name of the extension.
-#. # %2$S is replaced with the icon for the add-ons menu.
-#. # %3$S is replaced with the icon for the toolbar menu.
+#. # LOCALIZATION NOTE (addonPostInstall.messageDetail)
+#. # %1$S is replaced with the icon for the add-ons menu.
+#. # %2$S is replaced with the icon for the toolbar menu.
 #. # Note, this string will be used as raw markup. Avoid characters like <, >, &
-#: addonPostInstall.message2
-msgid "Manage %1$S by clicking %2$S in the %3$S menu."
-msgstr "أدِر %1$S بالنقر على %2$S في قائمة %3$S."
+#: addonPostInstall.messageDetail
+msgid "Manage your add-ons by clicking %1$S in the %2$S menu."
+msgstr ""
 
 #: addonPostInstall.okay.label
 msgid "OK"
@@ -1878,21 +1902,9 @@ msgid "Un&mute Tab"
 msgstr "أ&طلِق صوت اللسان"
 
 #: playTab.label playTab.accesskey
-msgid "&Play Tab"
+#, fuzzy
+msgid "P&lay Tab"
 msgstr "&شغّل اللسان"
-
-#. # LOCALIZATION NOTE (weakCryptoOverriding.message): %S is brandShortName
-#: weakCryptoOverriding.message
-msgid ""
-"%S recommends that you don’t enter your password, credit card and other "
-"personal information on this website."
-msgstr ""
-"ينصح %S بعدم إدخال كلمة سرك أو معلومات بطاقة الائتمان أو أي معلومات شخصية "
-"أخرى في هذا الموقع."
-
-#: revokeOverride.label revokeOverride.accesskey
-msgid "&Don’t Trust This Website"
-msgstr "لا &تثِق في هذا الموقع"
 
 #. # LOCALIZATION NOTE (certErrorDetails*.label): These are text strings that
 #. # appear in the about:certerror page, so that the user can copy and send them to
@@ -1964,19 +1976,19 @@ msgid ""
 msgstr ""
 "برمجية libavcodec قد تكون مجروحة أو غير مدعومة، و يجب تحديثها لتشغيل الڤديو."
 
-#. # LOCALIZATION NOTE (captivePortal.infoMessage2):
+#. # LOCALIZATION NOTE (captivePortal.infoMessage3):
 #. # Shown in a notification bar when we detect a captive portal is blocking network access
 #. # and requires the user to log in before browsing.
-#: captivePortal.infoMessage2
-msgid "This network may require you to log in to use the internet."
-msgstr "قد تتطلب هذه الشبكة الولوج لاستخدام الإنترنت."
+#: captivePortal.infoMessage3
+msgid "You must log in to this network before you can access the Internet."
+msgstr ""
 
-#. # LOCALIZATION NOTE (captivePortal.showLoginPage):
+#. # LOCALIZATION NOTE (captivePortal.showLoginPage2):
 #. # The label for a button shown in the info bar in all tabs except the login page tab.
 #. # The button shows the portal login page tab when clicked.
-#: captivePortal.showLoginPage
-msgid "Show Login Page"
-msgstr "اعرض صفحة الولوج"
+#: captivePortal.showLoginPage2
+msgid "Open Network Login Page"
+msgstr ""
 
 #: permissions.remove.tooltip
 msgid "Clear this permission and ask again"
@@ -1994,6 +2006,28 @@ msgstr "64 بتة"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "32 بتة"
+
+#~ msgid "&Disable"
+#~ msgstr "&عطّل"
+
+#~ msgid "Manage %1$S by clicking %2$S in the %3$S menu."
+#~ msgstr "أدِر %1$S بالنقر على %2$S في قائمة %3$S."
+
+#~ msgid ""
+#~ "%S recommends that you don’t enter your password, credit card and other "
+#~ "personal information on this website."
+#~ msgstr ""
+#~ "ينصح %S بعدم إدخال كلمة سرك أو معلومات بطاقة الائتمان أو أي معلومات شخصية "
+#~ "أخرى في هذا الموقع."
+
+#~ msgid "&Don’t Trust This Website"
+#~ msgstr "لا &تثِق في هذا الموقع"
+
+#~ msgid "This network may require you to log in to use the internet."
+#~ msgstr "قد تتطلب هذه الشبكة الولوج لاستخدام الإنترنت."
+
+#~ msgid "Show Login Page"
+#~ msgstr "اعرض صفحة الولوج"
 
 #~ msgid "Developer Edition"
 #~ msgstr "إصدارة المطورين"

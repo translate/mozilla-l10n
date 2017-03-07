@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-26 08:16+0000\n"
+"POT-Creation-Date: 2017-03-06 23:16+0000\n"
 "PO-Revision-Date: 2017-03-06 07:40+0000\n"
 "Last-Translator: Julen <julenx@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.0.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1488786051.000000\n"
 
@@ -148,23 +148,32 @@ msgstr "%1$S gehigarria %2$S(e)ra gehitu da"
 msgid "%S added"
 msgstr "%S gehitu da"
 
-#: webextPerms.sideloadText
+#: webextPerms.sideloadText2
+#, fuzzy
 msgid ""
 "Another program on your computer installed an add-on that may affect your "
 "browser. Please review this add-on’s permissions requests and choose to "
-"Enable or Disable."
+"Enable or Cancel (to leave it disabled)."
 msgstr ""
 "Zure ordenagailuko beste programa batek nabigatzailean eragina izan lezakeen "
 "gehigarri bat instalatu du. Mesedez berrikusi gehigarri honen baimen-"
 "eskaerak eta aukeratu 'Gaitu' edo 'Desgaitu'."
 
+#: webextPerms.sideloadTextNoPerms
+msgid ""
+"Another program on your computer installed an add-on that may affect your "
+"browser. Please choose to Enable or Cancel (to leave it disabled)."
+msgstr ""
+
 #: webextPerms.sideloadEnable.label webextPerms.sideloadEnable.accessKey
 msgid "&Enable"
 msgstr "&Gaitu"
 
-#: webextPerms.sideloadDisable.label webextPerms.sideloadDisable.accessKey
-msgid "&Disable"
-msgstr "&Desgaitu"
+#: webextPerms.sideloadCancel.label webextPerms.sideloadCancel.accessKey
+#, fuzzy
+msgctxt "webextPerms.sideloadCancel.label webextPerms.sideloadCancel.accessKey"
+msgid "&Cancel"
+msgstr "&Utzi"
 
 #. # LOCALIZATION NOTE (webextPerms.updateMenuItem)
 #. # %S will be replaced with the localized name of the extension which
@@ -194,11 +203,23 @@ msgstr "&Eguneratu"
 msgid "Read and modify bookmarks"
 msgstr "Laster-markak irakurri eta aldatzea"
 
+#: webextPerms.description.clipboardRead
+msgid "Get data from the clipboard"
+msgstr ""
+
+#: webextPerms.description.clipboardWrite
+msgid "Input data to the clipboard"
+msgstr ""
+
 #: webextPerms.description.downloads
 msgid "Download files and read and modify the browser’s download history"
 msgstr ""
 "Fitxategiak deskargatzea eta nabigatzailearen deskarga-historia irakurri eta "
 "aldatzea"
+
+#: webextPerms.description.geolocation
+msgid "Access your location"
+msgstr ""
 
 #: webextPerms.description.history
 msgctxt "webextPerms.description.history"
@@ -214,6 +235,10 @@ msgstr "%S ez beste programekin mezuak trukatzea"
 #: webextPerms.description.notifications
 msgid "Display notifications to you"
 msgstr "Zuri jakinarazpenak bistaratzea"
+
+#: webextPerms.description.privacy
+msgid "Read and modify privacy settings"
+msgstr ""
 
 #: webextPerms.description.sessions
 msgid "Access recently closed tabs"
@@ -281,14 +306,13 @@ msgstr ""
 msgid "%1$S has been added to %2$S."
 msgstr "%1$S hedapena %2$S(e)ra gehitu da."
 
-#. # LOCALIZATION NOTE (addonPostInstall.message2)
-#. # %1$S is replaced with the localized name of the extension.
-#. # %2$S is replaced with the icon for the add-ons menu.
-#. # %3$S is replaced with the icon for the toolbar menu.
+#. # LOCALIZATION NOTE (addonPostInstall.messageDetail)
+#. # %1$S is replaced with the icon for the add-ons menu.
+#. # %2$S is replaced with the icon for the toolbar menu.
 #. # Note, this string will be used as raw markup. Avoid characters like <, >, &
-#: addonPostInstall.message2
-msgid "Manage %1$S by clicking %2$S in the %3$S menu."
-msgstr "Kudeatu %1$S %3$S menuko %2$S ikonoan klik eginez."
+#: addonPostInstall.messageDetail
+msgid "Manage your add-ons by clicking %1$S in the %2$S menu."
+msgstr ""
 
 #: addonPostInstall.okay.label
 msgid "OK"
@@ -1900,21 +1924,9 @@ msgid "Un&mute Tab"
 msgstr "Ez &mututu fitxa"
 
 #: playTab.label playTab.accesskey
-msgid "&Play Tab"
+#, fuzzy
+msgid "P&lay Tab"
 msgstr "&Erreproduzitu fitxa"
-
-#. # LOCALIZATION NOTE (weakCryptoOverriding.message): %S is brandShortName
-#: weakCryptoOverriding.message
-msgid ""
-"%S recommends that you don’t enter your password, credit card and other "
-"personal information on this website."
-msgstr ""
-"Webgune honetan pasahitz, kreditu-txartel eta bestelako informazio "
-"pertsonalik ez sartzea gomendatzen du %S(e)k."
-
-#: revokeOverride.label revokeOverride.accesskey
-msgid "&Don’t Trust This Website"
-msgstr "&Ez fidatu webgune honetaz"
 
 #. # LOCALIZATION NOTE (certErrorDetails*.label): These are text strings that
 #. # appear in the about:certerror page, so that the user can copy and send them to
@@ -1995,19 +2007,19 @@ msgstr ""
 "libavcodec babesik edo euskarririk gabe egon liteke eta eguneratu egin behar "
 "da bideoa erreproduzitzeko."
 
-#. # LOCALIZATION NOTE (captivePortal.infoMessage2):
+#. # LOCALIZATION NOTE (captivePortal.infoMessage3):
 #. # Shown in a notification bar when we detect a captive portal is blocking network access
 #. # and requires the user to log in before browsing.
-#: captivePortal.infoMessage2
-msgid "This network may require you to log in to use the internet."
-msgstr "Internet erabiltzeko saioa hastea eska diezazuke sare honek."
+#: captivePortal.infoMessage3
+msgid "You must log in to this network before you can access the Internet."
+msgstr ""
 
-#. # LOCALIZATION NOTE (captivePortal.showLoginPage):
+#. # LOCALIZATION NOTE (captivePortal.showLoginPage2):
 #. # The label for a button shown in the info bar in all tabs except the login page tab.
 #. # The button shows the portal login page tab when clicked.
-#: captivePortal.showLoginPage
-msgid "Show Login Page"
-msgstr "Erakutsi saio-hasiera orria"
+#: captivePortal.showLoginPage2
+msgid "Open Network Login Page"
+msgstr ""
 
 #: permissions.remove.tooltip
 msgid "Clear this permission and ask again"
@@ -2025,6 +2037,28 @@ msgstr "64 bit"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "32 bit"
+
+#~ msgid "&Disable"
+#~ msgstr "&Desgaitu"
+
+#~ msgid "Manage %1$S by clicking %2$S in the %3$S menu."
+#~ msgstr "Kudeatu %1$S %3$S menuko %2$S ikonoan klik eginez."
+
+#~ msgid ""
+#~ "%S recommends that you don’t enter your password, credit card and other "
+#~ "personal information on this website."
+#~ msgstr ""
+#~ "Webgune honetan pasahitz, kreditu-txartel eta bestelako informazio "
+#~ "pertsonalik ez sartzea gomendatzen du %S(e)k."
+
+#~ msgid "&Don’t Trust This Website"
+#~ msgstr "&Ez fidatu webgune honetaz"
+
+#~ msgid "This network may require you to log in to use the internet."
+#~ msgstr "Internet erabiltzeko saioa hastea eska diezazuke sare honek."
+
+#~ msgid "Show Login Page"
+#~ msgstr "Erakutsi saio-hasiera orria"
 
 #~ msgid "Developer Edition"
 #~ msgstr "Garatzaile-edizioa"
