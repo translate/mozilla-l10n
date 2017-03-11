@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-23 16:20+0000\n"
+"POT-Creation-Date: 2017-03-11 18:25+0000\n"
 "PO-Revision-Date: 2017-01-23 20:48+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.0.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1485204532.000000\n"
 
@@ -231,16 +231,15 @@ msgstr "Spadowacy sortěrowany"
 msgid "No requests"
 msgstr "Žane naprašowanja"
 
-#. # LOCALIZATION NOTE (networkMenu.summary): Semi-colon list of plural forms.
+#. # LOCALIZATION NOTE (networkMenu.summary3): Semi-colon list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
 #. # This label is displayed in the network table footer providing concise
 #. # information about all requests. Parameters: #1 is the number of requests,
-#. # #2 is the size, #3 is the number of seconds.
-#: networkMenu.summary
-msgid "One request, #2 KB, #3 s;#1 requests, #2 KB, #3 s"
+#. # #2 is the size, #3 is the transferred size, #4 is the number of seconds.
+#: networkMenu.summary3
+msgid ""
+"One request, #2 (transferred: #3), #4;#1 requests, #2 (transferred: #3), #4"
 msgstr ""
-"Jedne naprašowanje, #2 KB, #3 s;#1 naprašowani, #2 KB, #3 s;#1 naprašowanja, "
-"#2 KB, #3 s;#1 naprašowanjow, #2 KB, #3 s"
 
 #. # LOCALIZATION NOTE (networkMenu.sizeB): This is the label displayed
 #. # in the network menu specifying the size of a request (in bytes).
@@ -348,12 +347,32 @@ msgctxt "charts.sizeKB"
 msgid "%S KB"
 msgstr "%S KB"
 
+#. # LOCALIZATION NOTE (charts.transferredSizeKB): This is the label displayed
+#. # in pie or table charts specifying the size of a transferred request (in kilobytes).
+#: charts.transferredSizeKB
+#, fuzzy
+msgctxt "charts.transferredSizeKB"
+msgid "%S KB"
+msgstr "%S KB"
+
 #. # LOCALIZATION NOTE (charts.totalS): This is the label displayed
 #. # in pie or table charts specifying the time for a request to finish (in seconds).
 #: charts.totalS
 msgctxt "charts.totalS"
 msgid "%S s"
 msgstr "%S s"
+
+#. # LOCALIZATION NOTE (charts.totalS): This is the label displayed
+#. # in the performance analysis view for total requests size, in kilobytes.
+#: charts.totalSize
+msgid "Size: %S KB"
+msgstr "Wulkosć: %S KB"
+
+#. # LOCALIZATION NOTE (charts.totalTranferredSize): This is the label displayed
+#. # in the performance analysis view for total transferred size, in kilobytes.
+#: charts.totalTransferredSize
+msgid "Transferred Size: %S KB"
+msgstr ""
 
 #. # LOCALIZATION NOTE (charts.cacheEnabled): This is the label displayed
 #. # in the performance analysis view for "cache enabled" charts.
@@ -366,12 +385,6 @@ msgstr "Hłowny pufrowak"
 #: charts.cacheDisabled
 msgid "Empty cache"
 msgstr "Pufrowak wuprózdnić"
-
-#. # LOCALIZATION NOTE (charts.totalSize): This is the label displayed
-#. # in the performance analysis view for total requests size, in kilobytes.
-#: charts.totalSize
-msgid "Size: %S KB"
-msgstr "Wulkosć: %S KB"
 
 #. # LOCALIZATION NOTE (charts.totalSeconds): Semi-colon list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -392,6 +405,37 @@ msgstr "Pufrowane wotmołwy: %S"
 #: charts.totalCount
 msgid "Total requests: %S"
 msgstr "Cyłkowne naprašowanja: %S"
+
+#. # LOCALIZATION NOTE (charts.totalCount): This is the label displayed
+#. # in the header column in the performance analysis view for size of the request.
+#: charts.size
+#, fuzzy
+msgctxt "charts.size"
+msgid "Size"
+msgstr "Wulkosć"
+
+#. # LOCALIZATION NOTE (charts.totalCount): This is the label displayed
+#. # in the header column in the performance analysis view for type of request.
+#: charts.type
+#, fuzzy
+msgctxt "charts.type"
+msgid "Type"
+msgstr "Typ"
+
+#. # LOCALIZATION NOTE (charts.totalCount): This is the label displayed
+#. # in the header column in the performance analysis view for transferred
+#. # size of the request.
+#: charts.transferred
+#, fuzzy
+msgctxt "charts.transferred"
+msgid "Transferred"
+msgstr "Přenjeseny"
+
+#. # LOCALIZATION NOTE (charts.totalCount): This is the label displayed
+#. # in the header column in the performance analysis view for time of request.
+#: charts.time
+msgid "Time"
+msgstr ""
 
 #. # LOCALIZATION NOTE (netRequest.headers): A label used for Headers tab
 #. # This tab displays list of HTTP headers
@@ -612,6 +656,8 @@ msgstr "Přičina"
 #. # LOCALIZATION NOTE (netmonitor.toolbar.type): This is the label displayed
 #. # in the network table toolbar, above the "type" column.
 #: netmonitor.toolbar.type
+#, fuzzy
+msgctxt "netmonitor.toolbar.type"
 msgid "Type"
 msgstr "Typ"
 
@@ -619,6 +665,8 @@ msgstr "Typ"
 #. # in the network table toolbar, above the "transferred" column, which is the
 #. # compressed / encoded size.
 #: netmonitor.toolbar.transferred
+#, fuzzy
+msgctxt "netmonitor.toolbar.transferred"
 msgid "Transferred"
 msgstr "Přenjeseny"
 
@@ -626,6 +674,8 @@ msgstr "Přenjeseny"
 #. # in the network table toolbar, above the "size" column, which is the
 #. # uncompressed / decoded size.
 #: netmonitor.toolbar.size
+#, fuzzy
+msgctxt "netmonitor.toolbar.size"
 msgid "Size"
 msgstr "Wulkosć"
 
@@ -1146,6 +1196,17 @@ msgstr "Přetorhnyć"
 #: netmonitor.backButton
 msgid "Back"
 msgstr "Wróćo"
+
+#. # LOCALIZATION NOTE (netmonitor.headers.learnMore): This is the label displayed
+#. # next to a header list item, with a link to external documentation
+#: netmonitor.headers.learnMore
+msgid "Learn More"
+msgstr ""
+
+#~ msgid "One request, #2 KB, #3 s;#1 requests, #2 KB, #3 s"
+#~ msgstr ""
+#~ "Jedne naprašowanje, #2 KB, #3 s;#1 naprašowani, #2 KB, #3 s;#1 "
+#~ "naprašowanja, #2 KB, #3 s;#1 naprašowanjow, #2 KB, #3 s"
 
 #~ msgid "Toggle network info"
 #~ msgstr "Syćowe informacije přepinać"
