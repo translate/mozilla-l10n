@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-06 23:16+0000\n"
+"POT-Creation-Date: 2017-04-18 12:46+0000\n"
 "PO-Revision-Date: 2017-04-05 06:43+0000\n"
 "Last-Translator: Mahay Alam Khan <mahayalamkhan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.1.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1491374621.000000\n"
 
@@ -116,6 +116,13 @@ msgstr "n"
 msgid "Add %S?"
 msgstr "%S যোগ করবেন?"
 
+#: webextPerms.unsignedWarning
+msgid ""
+"Caution: This add-on is unverified. Malicious add-ons can steal your private "
+"information or compromise your computer. Only install this add-on if you "
+"trust the source."
+msgstr ""
+
 #. # LOCALIZATION NOTE (webextPerms.listIntro)
 #. # This string will be followed by a list of permissions requested
 #. # by the webextension.
@@ -124,6 +131,8 @@ msgid "It requires your permission to:"
 msgstr "যা করতে আপনার অনুমতির প্রয়োজন:"
 
 #: webextPerms.add.label webextPerms.add.accessKey
+#, fuzzy
+msgctxt "webextPerms.add.label webextPerms.add.accessKey"
 msgid "&Add"
 msgstr "যোগ করুন"
 
@@ -198,6 +207,30 @@ msgstr ""
 #: webextPerms.updateAccept.label webextPerms.updateAccept.accessKey
 msgid "&Update"
 msgstr "হালনাগাদ"
+
+#. # LOCALIZATION NOTE (webextPerms.optionalPermsHheader)
+#. # %S is replace with the localized name of the extension requested new
+#. # permissions.
+#. # Note, this string will be used as raw markup. Avoid characters like <, >, &
+#: webextPerms.optionalPermsHeader
+msgid "%S requests additional permissions."
+msgstr ""
+
+#: webextPerms.optionalPermsListIntro
+msgid "It wants to:"
+msgstr ""
+
+#: webextPerms.optionalPermsAllow.label
+#: webextPerms.optionalPermsAllow.accessKey
+#, fuzzy
+msgctxt ""
+"webextPerms.optionalPermsAllow.label webextPerms.optionalPermsAllow.accessKey"
+msgid "&Allow"
+msgstr "অনুমোদন"
+
+#: webextPerms.optionalPermsDeny.label webextPerms.optionalPermsDeny.accessKey
+msgid "&Deny"
+msgstr ""
 
 #: webextPerms.description.bookmarks
 msgid "Read and modify bookmarks"
@@ -341,9 +374,11 @@ msgctxt "addonInstall.cancelButton.label addonInstall.cancelButton.accesskey"
 msgid "&Cancel"
 msgstr "বাতিল"
 
-#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
-msgid "&Install"
-msgstr "ইনস্টল &I"
+#: addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey
+#, fuzzy
+msgctxt "addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey"
+msgid "&Add"
+msgstr "যোগ করুন"
 
 #. # LOCALIZATION NOTE (addonConfirmInstallMessage,addonConfirmInstallUnsigned):
 #. # Semicolon-separated list of plural forms. See:
@@ -381,30 +416,6 @@ msgstr ""
 ";সতর্কতা: এই সাইটটি একটি #2 অ্যাড-অন ইন্সটল করতে চাইছে #1-এ, যেগুলোর কিছু অযাচিত। "
 "আপনার নিজের রিস্কে এগোন।"
 
-#: addonwatch.slow
-msgid "%1$S might be making %2$S run slowly"
-msgstr "%1$S হয়তো %2$S কে আসতে চালনা করছে"
-
-#: addonwatch.disable.label
-msgid "Disable %S"
-msgstr "নিষ্ক্রিয় করুন %S"
-
-#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
-msgid "&Ignore for now"
-msgstr "&এখনকার জন্য উপেক্ষা করুন"
-
-#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
-msgid "Ignore &permanently"
-msgstr "স্থায়ীভাবে উপেক্ষা করুন &p"
-
-#: addonwatch.restart.message
-msgid "To disable %1$S you must restart %2$S"
-msgstr "নিষ্ক্রিয় করতে %1$S পুনরারম্ভ করতে %2$S"
-
-#: addonwatch.restart.label addonwatch.restart.accesskey
-msgid "&Restart %S"
-msgstr "%S পুনরায় শুরু করুন"
-
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -432,6 +443,8 @@ msgid "R"
 msgstr "R"
 
 #: addonInstallRestartIgnoreButton
+#, fuzzy
+msgctxt "addonInstallRestartIgnoreButton"
 msgid "Not Now"
 msgstr "এই মূহুর্তে নয়"
 
@@ -537,40 +550,21 @@ msgstr "কম্প্যাক্ট ডার্ক"
 msgid "A compact theme with a dark color scheme."
 msgstr "গাড় রঙের আবহ দেওয়া একটি কম্প্যাক্ট থিম।"
 
-#. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
+#. # LOCALIZATION NOTE (lwthemeInstallRequest.message2): %S will be replaced with
 #. # the host name of the site.
-#: lwthemeInstallRequest.message
+#: lwthemeInstallRequest.message2
 msgid "This site (%S) attempted to install a theme."
 msgstr "সাইট (%S) একটি থিম ইনস্টল করার প্রস্তুতি নিয়েছে।"
 
-#: lwthemeInstallRequest.allowButton
-msgctxt "lwthemeInstallRequest.allowButton"
+#: lwthemeInstallRequest.allowButton2
+#, fuzzy
+msgctxt "lwthemeInstallRequest.allowButton2"
 msgid "Allow"
 msgstr "অনুমোদন"
 
-#: lwthemeInstallRequest.allowButton.accesskey
+#: lwthemeInstallRequest.allowButton.accesskey2
 msgid "a"
-msgstr "a"
-
-#: lwthemePostInstallNotification.message
-msgid "A new theme has been installed."
-msgstr "একটি নতুন থিম ইনস্টল করা হয়েছে।"
-
-#: lwthemePostInstallNotification.undoButton
-msgid "Undo"
-msgstr "পূর্বাবস্থায় ফিরিয়ে আনা হবে"
-
-#: lwthemePostInstallNotification.undoButton.accesskey
-msgid "U"
-msgstr "U"
-
-#: lwthemePostInstallNotification.manageButton
-msgid "Manage Themes…"
-msgstr "থিম ব্যবস্থাপনা…"
-
-#: lwthemePostInstallNotification.manageButton.accesskey
-msgid "M"
-msgstr "M"
+msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeNeedsRestart.message):
 #. # %S will be replaced with the new theme name.
@@ -919,10 +913,28 @@ msgstr "এই পৃষ্ঠায় এগিয়ে আনা হবে"
 msgid "Paste & Go"
 msgstr "প্রতিলেপন করুন এবং অগ্রসর হোন"
 
-#. # LOCALIZATION NOTE(urlbar-zoom-button.label): %S is the current zoom level,
+#. # LOCALIZATION NOTE (reloadButton.tooltip):
+#. # %S is the keyboard shortcut for reloading the current page
+#: reloadButton.tooltip
+msgid "Reload current page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (stopButton.tooltip):
+#. # %S is the keyboard shortcut for stopping loading the page
+#: stopButton.tooltip
+msgid "Stop loading this page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (urlbar-zoom-button.tooltip):
+#. # %S is the keyboard shortcut for resetting the zoom level to 100%
+#: urlbar-zoom-button.tooltip
+msgid "Reset zoom level (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE(zoom-button.label): %S is the current page zoom level,
 #. # %% will be displayed as a single % character (% is commonly used to define
 #. # format specifiers, so it needs to be escaped).
-#: urlbar-zoom-button.label
+#: zoom-button.label
 msgid "%S%%"
 msgstr "%S%%"
 
@@ -1046,6 +1058,14 @@ msgstr "%S, %S"
 msgid "Show site information"
 msgstr "সাইটের তথ্য প্রদর্শন"
 
+#: identity.showDetails.tooltip
+msgid "Show connection details"
+msgstr ""
+
+#: identity.hideDetails.tooltip
+msgid "Hide connection details"
+msgstr ""
+
 #: trackingProtection.intro.title
 msgid "How Tracking Protection works"
 msgstr "ট্রাকিং সুরক্ষা যেভাবে কাজ করে"
@@ -1156,14 +1176,38 @@ msgctxt "geolocation.remember"
 msgid "Remember this decision"
 msgstr "এই সিদ্ধান্ত মনে রাখো"
 
-#: webNotifications.remember
-msgctxt "webNotifications.remember"
+#. # Persistent storage UI
+#: persistentStorage.allow
+#, fuzzy
+msgctxt "persistentStorage.allow"
+msgid "Allow"
+msgstr "অনুমোদন"
+
+#: persistentStorage.allow.accesskey
+msgctxt "persistentStorage.allow.accesskey"
+msgid "A"
+msgstr ""
+
+#: persistentStorage.dontAllow
+#, fuzzy
+msgctxt "persistentStorage.dontAllow"
+msgid "Don’t Allow"
+msgstr "অনুমোদন করো না"
+
+#: persistentStorage.dontAllow.accesskey
+msgctxt "persistentStorage.dontAllow.accesskey"
+msgid "n"
+msgstr ""
+
+#: persistentStorage.allowWithSite
+msgid "Will you allow %S to store data in persistent storage?"
+msgstr ""
+
+#: persistentStorage.remember
+#, fuzzy
+msgctxt "persistentStorage.remember"
 msgid "Remember this decision"
 msgstr "এই সিদ্ধান্ত মনে রাখো"
-
-#: webNotifications.rememberForSession
-msgid "Remember decision for this session"
-msgstr "এই সেশনের জন্য এই সিদ্ধান্ত মনে রাখো"
 
 #: webNotifications.allow
 msgid "Allow Notifications"
@@ -1174,15 +1218,24 @@ msgctxt "webNotifications.allow.accesskey"
 msgid "A"
 msgstr "A"
 
-#: webNotifications.dontAllow
-msgctxt "webNotifications.dontAllow"
-msgid "Don’t Allow"
-msgstr "অনুমোদন করো না"
+#: webNotifications.notNow
+#, fuzzy
+msgctxt "webNotifications.notNow"
+msgid "Not Now"
+msgstr "এই মূহুর্তে নয়"
 
-#: webNotifications.dontAllow.accesskey
-msgctxt "webNotifications.dontAllow.accesskey"
+#: webNotifications.notNow.accesskey
+msgctxt "webNotifications.notNow.accesskey"
 msgid "n"
-msgstr "n"
+msgstr ""
+
+#: webNotifications.never
+msgid "Never Allow"
+msgstr ""
+
+#: webNotifications.never.accesskey
+msgid "v"
+msgstr ""
 
 #: webNotifications.receiveFromSite2
 msgid "Will you allow %S to send notifications?"
@@ -1486,6 +1539,8 @@ msgstr "#1 (#2 উইন্ডো);#1 (#2 উইন্ডোজ)"
 #. # These two buttons are the possible answers to the various prompts in the
 #. # "getUserMedia.share{device}.message" strings.
 #: getUserMedia.allow.label getUserMedia.allow.accesskey
+#, fuzzy
+msgctxt "getUserMedia.allow.label getUserMedia.allow.accesskey"
 msgid "&Allow"
 msgstr "অনুমোদন"
 
@@ -1498,17 +1553,13 @@ msgctxt "getUserMedia.remember"
 msgid "Remember this decision"
 msgstr "এই সিদ্ধান্ত মনে রাখা হবে"
 
-#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen2,
+#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen3,
 #. #                    getUserMedia.reasonForNoPermanentAllow.audio,
 #. #                    getUserMedia.reasonForNoPermanentAllow.insecure):
 #. # %S is brandShortName
-#: getUserMedia.reasonForNoPermanentAllow.screen2
-msgid ""
-"%S can not allow permanent access to your screen without asking which one to "
-"share."
+#: getUserMedia.reasonForNoPermanentAllow.screen3
+msgid "%S can not allow permanent access to your screen."
 msgstr ""
-"কোন স্ক্রিন শেয়ার করা হবে সেটা না জেনে %S আপনার স্ক্রিনের স্থায়ী অ্যাক্সেস অনুমতি "
-"দিতে পারে না।"
 
 #: getUserMedia.reasonForNoPermanentAllow.audio
 msgid ""
@@ -1769,26 +1820,6 @@ msgstr "আরও জানুন"
 msgid "Customize %S"
 msgstr "%S স্বনির্ধারণ"
 
-#. # LOCALIZATION NOTE(appmenu.*.description, appmenu.*.label): these are used for
-#. # the appmenu labels and buttons that appear when an update is staged for
-#. # installation or a background update has failed and a manual download is required.
-#. # %S is brandShortName
-#: appmenu.restartNeeded.description
-msgid "Restart %S to apply updates"
-msgstr "হালনাগাদ করার জন্য %S পুনরায় শুরু করুন"
-
-#: appmenu.updateFailed.description
-msgid "Background update failed, please download update"
-msgstr "ব্যাকগ্রাউন্ড আপডেট করতে ব্যর্থ হয়েছে, অনুগ্রহ করে আপডেট ডাউনলোড করুন"
-
-#: appmenu.restartBrowserButton.label
-msgid "Restart %S"
-msgstr "%S পুনরায় শুরু করুন"
-
-#: appmenu.downloadUpdateButton.label
-msgid "Download Update"
-msgstr "ডাউনলোড আপডেট"
-
 #. # LOCALIZATION NOTE : FILE Reader View is a feature name and therefore typically used as a proper noun.
 #: readingList.promo.firstUse.readerView.title
 msgid "Reader View"
@@ -1969,6 +2000,23 @@ msgid ""
 msgstr ""
 "libavcodec হয়তো দূর্বল বা সমর্থিত নয় এবং ভিডিও চালাতে যা হালনাগাদ করতে হবে।"
 
+#: decoder.decodeError.message
+msgid "An error occurred while decoding a media resource."
+msgstr ""
+
+#: decoder.decodeError.button
+msgid "Report Site Issue"
+msgstr ""
+
+#: decoder.decodeError.accesskey
+msgctxt "decoder.decodeError.accesskey"
+msgid "R"
+msgstr ""
+
+#: decoder.decodeWarning.message
+msgid "A recoverable error occurred while decoding a media resource."
+msgstr ""
+
 #. # LOCALIZATION NOTE (captivePortal.infoMessage3):
 #. # Shown in a notification bar when we detect a captive portal is blocking network access
 #. # and requires the user to log in before browsing.
@@ -1999,6 +2047,80 @@ msgstr "64-bit"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "32-bit"
+
+#~ msgid "&Install"
+#~ msgstr "ইনস্টল &I"
+
+#~ msgid "%1$S might be making %2$S run slowly"
+#~ msgstr "%1$S হয়তো %2$S কে আসতে চালনা করছে"
+
+#~ msgid "Disable %S"
+#~ msgstr "নিষ্ক্রিয় করুন %S"
+
+#~ msgid "&Ignore for now"
+#~ msgstr "&এখনকার জন্য উপেক্ষা করুন"
+
+#~ msgid "Ignore &permanently"
+#~ msgstr "স্থায়ীভাবে উপেক্ষা করুন &p"
+
+#~ msgid "To disable %1$S you must restart %2$S"
+#~ msgstr "নিষ্ক্রিয় করতে %1$S পুনরারম্ভ করতে %2$S"
+
+#~ msgid "&Restart %S"
+#~ msgstr "%S পুনরায় শুরু করুন"
+
+#~ msgctxt "lwthemeInstallRequest.allowButton"
+#~ msgid "Allow"
+#~ msgstr "অনুমোদন"
+
+#~ msgid "A new theme has been installed."
+#~ msgstr "একটি নতুন থিম ইনস্টল করা হয়েছে।"
+
+#~ msgid "Undo"
+#~ msgstr "পূর্বাবস্থায় ফিরিয়ে আনা হবে"
+
+#~ msgid "U"
+#~ msgstr "U"
+
+#~ msgid "Manage Themes…"
+#~ msgstr "থিম ব্যবস্থাপনা…"
+
+#~ msgid "M"
+#~ msgstr "M"
+
+#~ msgctxt "webNotifications.remember"
+#~ msgid "Remember this decision"
+#~ msgstr "এই সিদ্ধান্ত মনে রাখো"
+
+#~ msgid "Remember decision for this session"
+#~ msgstr "এই সেশনের জন্য এই সিদ্ধান্ত মনে রাখো"
+
+#~ msgctxt "webNotifications.dontAllow"
+#~ msgid "Don’t Allow"
+#~ msgstr "অনুমোদন করো না"
+
+#~ msgctxt "webNotifications.dontAllow.accesskey"
+#~ msgid "n"
+#~ msgstr "n"
+
+#~ msgid ""
+#~ "%S can not allow permanent access to your screen without asking which one "
+#~ "to share."
+#~ msgstr ""
+#~ "কোন স্ক্রিন শেয়ার করা হবে সেটা না জেনে %S আপনার স্ক্রিনের স্থায়ী অ্যাক্সেস অনুমতি "
+#~ "দিতে পারে না।"
+
+#~ msgid "Restart %S to apply updates"
+#~ msgstr "হালনাগাদ করার জন্য %S পুনরায় শুরু করুন"
+
+#~ msgid "Background update failed, please download update"
+#~ msgstr "ব্যাকগ্রাউন্ড আপডেট করতে ব্যর্থ হয়েছে, অনুগ্রহ করে আপডেট ডাউনলোড করুন"
+
+#~ msgid "Restart %S"
+#~ msgstr "%S পুনরায় শুরু করুন"
+
+#~ msgid "Download Update"
+#~ msgstr "ডাউনলোড আপডেট"
 
 #~ msgid "&Disable"
 #~ msgstr "নিষ্ক্রিয়"
