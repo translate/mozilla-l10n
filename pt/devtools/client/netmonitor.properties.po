@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-13 15:23+0000\n"
+"POT-Creation-Date: 2017-04-18 12:46+0000\n"
 "PO-Revision-Date: 2017-04-06 00:47+0000\n"
 "Last-Translator: Rodrigo <rodrigo.mcunha@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.1.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1491439673.000000\n"
 
@@ -361,13 +361,6 @@ msgctxt "charts.totalS"
 msgid "%S s"
 msgstr "%S s"
 
-#. # LOCALIZATION NOTE (charts.totalS): This is the label displayed
-#. # in the performance analysis view for total requests size, in kilobytes.
-#: charts.totalSize
-msgctxt "charts.totalSize"
-msgid "Size: %S KB"
-msgstr "Tamanho: %S KB"
-
 #. # LOCALIZATION NOTE (charts.totalTranferredSize): This is the label displayed
 #. # in the performance analysis view for total transferred size, in kilobytes.
 #: charts.totalTransferredSize
@@ -385,6 +378,13 @@ msgstr "Cache utilizada"
 #: charts.cacheDisabled
 msgid "Empty cache"
 msgstr "Cache vazia"
+
+#. # LOCALIZATION NOTE (charts.totalSize): This is the label displayed
+#. # in the performance analysis view for total requests size, in kilobytes.
+#: charts.totalSize
+#, fuzzy
+msgid "Size: %S KB"
+msgstr "Tamanho: %S KB"
 
 #. # LOCALIZATION NOTE (charts.totalSeconds): Semi-colon list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -636,11 +636,23 @@ msgstr "Método"
 msgid "File"
 msgstr "Ficheiro"
 
+#. # LOCALIZATION NOTE (netmonitor.toolbar.protocol): This is the label displayed
+#. # in the network table toolbar, above the "protocol" column.
+#: netmonitor.toolbar.protocol
+msgid "Protocol"
+msgstr ""
+
 #. # LOCALIZATION NOTE (netmonitor.toolbar.domain): This is the label displayed
 #. # in the network table toolbar, above the "domain" column.
 #: netmonitor.toolbar.domain
 msgid "Domain"
 msgstr "Domínio"
+
+#. # LOCALIZATION NOTE (netmonitor.toolbar.remoteip): This is the label displayed
+#. # in the network table toolbar, above the "remoteip" column.
+#: netmonitor.toolbar.remoteip
+msgid "Remote IP"
+msgstr ""
 
 #. # LOCALIZATION NOTE (netmonitor.toolbar.cause): This is the label displayed
 #. # in the network table toolbar, above the "cause" column.
@@ -663,11 +675,12 @@ msgctxt "netmonitor.toolbar.transferred"
 msgid "Transferred"
 msgstr "Transferido"
 
-#. # LOCALIZATION NOTE (netmonitor.toolbar.size): This is the label displayed
+#. # LOCALIZATION NOTE (netmonitor.toolbar.contentSize): This is the label displayed
 #. # in the network table toolbar, above the "size" column, which is the
 #. # uncompressed / decoded size.
-#: netmonitor.toolbar.size
-msgctxt "netmonitor.toolbar.size"
+#: netmonitor.toolbar.contentSize
+#, fuzzy
+msgctxt "netmonitor.toolbar.contentSize"
 msgid "Size"
 msgstr "Tamanho"
 
@@ -711,11 +724,11 @@ msgstr "Resposta"
 msgid "Timings"
 msgstr "Temporizações"
 
-#. # LOCALIZATION NOTE (netmonitor.tab.preview): This is the label displayed
-#. # in the network details pane identifying the preview tab.
-#: netmonitor.tab.preview
-msgid "Preview"
-msgstr "Pré-visualizar"
+#. # LOCALIZATION NOTE (netmonitor.tab.stackTrace): This is the label displayed
+#. # in the network details pane identifying the stack-trace tab.
+#: netmonitor.tab.stackTrace
+msgid "Stack Trace"
+msgstr ""
 
 #. # LOCALIZATION NOTE (netmonitor.tab.security): This is the label displayed
 #. # in the network details pane identifying the security tab.
@@ -812,6 +825,12 @@ msgstr "Limpar"
 #: netmonitor.toolbar.perf
 msgid "Toggle performance analysis…"
 msgstr "Alternar análise de desempenho…"
+
+#. # LOCALIZATION NOTE (netmonitor.toolbar.resetColumns): This is the label
+#. # displayed in the network table header context menu.
+#: netmonitor.toolbar.resetColumns
+msgid "Reset Columns"
+msgstr ""
 
 #. # LOCALIZATION NOTE (netmonitor.summary.url): This is the label displayed
 #. # in the network details headers tab identifying the URL.
@@ -985,6 +1004,19 @@ msgstr "Ligação:"
 msgid "Certificate:"
 msgstr "Certificado:"
 
+#. # LOCALIZATION NOTE (netmonitor.context.copy): This is the label displayed
+#. # for the copy sub-menu in the context menu for a request
+#: netmonitor.context.copy
+msgid "Copy"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.context.copy.accesskey): This is the access key
+#. # for the copy sub-menu displayed in the context menu for a request
+#: netmonitor.context.copy.accesskey
+msgctxt "netmonitor.context.copy.accesskey"
+msgid "C"
+msgstr ""
+
 #. # LOCALIZATION NOTE (netmonitor.context.copyUrl): This is the label displayed
 #. # on the context menu that copies the selected request's url
 #: netmonitor.context.copyUrl
@@ -1032,6 +1064,8 @@ msgstr "Copiar como cURL"
 #. # LOCALIZATION NOTE (netmonitor.context.copyAsCUrl.accesskey): This is the access key
 #. # for the Copy as cURL menu item displayed in the context menu for a request
 #: netmonitor.context.copyAsCurl.accesskey
+#, fuzzy
+msgctxt "netmonitor.context.copyAsCurl.accesskey"
 msgid "C"
 msgstr "C"
 
@@ -1082,6 +1116,18 @@ msgstr "Copiar imagem como dados URI"
 #: netmonitor.context.copyImageAsDataUri.accesskey
 msgid "I"
 msgstr "I"
+
+#. # LOCALIZATION NOTE (netmonitor.context.saveImageAs): This is the label displayed
+#. # on the context menu that save the Image
+#: netmonitor.context.saveImageAs
+msgid "Save Image As"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.context.copyImageAsDataUri.accesskey): This is the access key
+#. # for the Copy Image As Data URI menu item displayed in the context menu for a request
+#: netmonitor.context.saveImageAs.accesskey
+msgid "V"
+msgstr ""
 
 #. # LOCALIZATION NOTE (netmonitor.context.copyAllAsHar): This is the label displayed
 #. # on the context menu that copies all as HAR format
@@ -1194,6 +1240,13 @@ msgstr "Retroceder"
 #: netmonitor.headers.learnMore
 msgid "Learn More"
 msgstr "Saber mais"
+
+#~ msgctxt "netmonitor.toolbar.size"
+#~ msgid "Size"
+#~ msgstr "Tamanho"
+
+#~ msgid "Preview"
+#~ msgstr "Pré-visualizar"
 
 #~ msgid "One request, #2 KB, #3 s;#1 requests, #2 KB, #3 s"
 #~ msgstr "Um pedido, #2 KB, #3 s;#1 pedidos, #2 KB, #3 s"
