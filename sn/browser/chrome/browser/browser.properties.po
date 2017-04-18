@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-06 23:16+0000\n"
+"POT-Creation-Date: 2017-04-18 12:46+0000\n"
 "PO-Revision-Date: 2016-09-20 16:20+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 2.0.0\n"
+"X-Generator: Translate Toolkit 2.1.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1474388421.000000\n"
 
@@ -113,6 +113,13 @@ msgstr ""
 msgid "Add %S?"
 msgstr ""
 
+#: webextPerms.unsignedWarning
+msgid ""
+"Caution: This add-on is unverified. Malicious add-ons can steal your private "
+"information or compromise your computer. Only install this add-on if you "
+"trust the source."
+msgstr ""
+
 #. # LOCALIZATION NOTE (webextPerms.listIntro)
 #. # This string will be followed by a list of permissions requested
 #. # by the webextension.
@@ -121,6 +128,7 @@ msgid "It requires your permission to:"
 msgstr ""
 
 #: webextPerms.add.label webextPerms.add.accessKey
+msgctxt "webextPerms.add.label webextPerms.add.accessKey"
 msgid "&Add"
 msgstr ""
 
@@ -186,6 +194,30 @@ msgstr ""
 
 #: webextPerms.updateAccept.label webextPerms.updateAccept.accessKey
 msgid "&Update"
+msgstr ""
+
+#. # LOCALIZATION NOTE (webextPerms.optionalPermsHheader)
+#. # %S is replace with the localized name of the extension requested new
+#. # permissions.
+#. # Note, this string will be used as raw markup. Avoid characters like <, >, &
+#: webextPerms.optionalPermsHeader
+msgid "%S requests additional permissions."
+msgstr ""
+
+#: webextPerms.optionalPermsListIntro
+msgid "It wants to:"
+msgstr ""
+
+#: webextPerms.optionalPermsAllow.label
+#: webextPerms.optionalPermsAllow.accessKey
+#, fuzzy
+msgctxt ""
+"webextPerms.optionalPermsAllow.label webextPerms.optionalPermsAllow.accessKey"
+msgid "&Allow"
+msgstr "Bvumidza"
+
+#: webextPerms.optionalPermsDeny.label webextPerms.optionalPermsDeny.accessKey
+msgid "&Deny"
 msgstr ""
 
 #: webextPerms.description.bookmarks
@@ -327,8 +359,9 @@ msgctxt "addonInstall.cancelButton.label addonInstall.cancelButton.accesskey"
 msgid "&Cancel"
 msgstr ""
 
-#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
-msgid "&Install"
+#: addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey
+msgctxt "addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey"
+msgid "&Add"
 msgstr ""
 
 #. # LOCALIZATION NOTE (addonConfirmInstallMessage,addonConfirmInstallUnsigned):
@@ -360,30 +393,6 @@ msgid ""
 "are unverified. Proceed at your own risk."
 msgstr ""
 
-#: addonwatch.slow
-msgid "%1$S might be making %2$S run slowly"
-msgstr ""
-
-#: addonwatch.disable.label
-msgid "Disable %S"
-msgstr ""
-
-#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
-msgid "&Ignore for now"
-msgstr ""
-
-#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
-msgid "Ignore &permanently"
-msgstr ""
-
-#: addonwatch.restart.message
-msgid "To disable %1$S you must restart %2$S"
-msgstr ""
-
-#: addonwatch.restart.label addonwatch.restart.accesskey
-msgid "&Restart %S"
-msgstr ""
-
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -411,6 +420,7 @@ msgid "R"
 msgstr ""
 
 #: addonInstallRestartIgnoreButton
+msgctxt "addonInstallRestartIgnoreButton"
 msgid "Not Now"
 msgstr ""
 
@@ -512,40 +522,20 @@ msgstr ""
 msgid "A compact theme with a dark color scheme."
 msgstr ""
 
-#. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
+#. # LOCALIZATION NOTE (lwthemeInstallRequest.message2): %S will be replaced with
 #. # the host name of the site.
-#: lwthemeInstallRequest.message
+#: lwthemeInstallRequest.message2
 msgid "This site (%S) attempted to install a theme."
 msgstr ""
 
-#: lwthemeInstallRequest.allowButton
+#: lwthemeInstallRequest.allowButton2
 #, fuzzy
-msgctxt "lwthemeInstallRequest.allowButton"
+msgctxt "lwthemeInstallRequest.allowButton2"
 msgid "Allow"
 msgstr "Bvumidza"
 
-#: lwthemeInstallRequest.allowButton.accesskey
+#: lwthemeInstallRequest.allowButton.accesskey2
 msgid "a"
-msgstr ""
-
-#: lwthemePostInstallNotification.message
-msgid "A new theme has been installed."
-msgstr ""
-
-#: lwthemePostInstallNotification.undoButton
-msgid "Undo"
-msgstr ""
-
-#: lwthemePostInstallNotification.undoButton.accesskey
-msgid "U"
-msgstr ""
-
-#: lwthemePostInstallNotification.manageButton
-msgid "Manage Themes…"
-msgstr ""
-
-#: lwthemePostInstallNotification.manageButton.accesskey
-msgid "M"
 msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeNeedsRestart.message):
@@ -896,10 +886,28 @@ msgstr ""
 msgid "Paste & Go"
 msgstr ""
 
-#. # LOCALIZATION NOTE(urlbar-zoom-button.label): %S is the current zoom level,
+#. # LOCALIZATION NOTE (reloadButton.tooltip):
+#. # %S is the keyboard shortcut for reloading the current page
+#: reloadButton.tooltip
+msgid "Reload current page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (stopButton.tooltip):
+#. # %S is the keyboard shortcut for stopping loading the page
+#: stopButton.tooltip
+msgid "Stop loading this page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (urlbar-zoom-button.tooltip):
+#. # %S is the keyboard shortcut for resetting the zoom level to 100%
+#: urlbar-zoom-button.tooltip
+msgid "Reset zoom level (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE(zoom-button.label): %S is the current page zoom level,
 #. # %% will be displayed as a single % character (% is commonly used to define
 #. # format specifiers, so it needs to be escaped).
-#: urlbar-zoom-button.label
+#: zoom-button.label
 msgid "%S%%"
 msgstr ""
 
@@ -1025,6 +1033,14 @@ msgstr ""
 msgid "Show site information"
 msgstr ""
 
+#: identity.showDetails.tooltip
+msgid "Show connection details"
+msgstr ""
+
+#: identity.hideDetails.tooltip
+msgid "Hide connection details"
+msgstr ""
+
 #: trackingProtection.intro.title
 msgid "How Tracking Protection works"
 msgstr ""
@@ -1134,13 +1150,35 @@ msgctxt "geolocation.remember"
 msgid "Remember this decision"
 msgstr ""
 
-#: webNotifications.remember
-msgctxt "webNotifications.remember"
-msgid "Remember this decision"
+#. # Persistent storage UI
+#: persistentStorage.allow
+#, fuzzy
+msgctxt "persistentStorage.allow"
+msgid "Allow"
+msgstr "Bvumidza"
+
+#: persistentStorage.allow.accesskey
+msgctxt "persistentStorage.allow.accesskey"
+msgid "A"
 msgstr ""
 
-#: webNotifications.rememberForSession
-msgid "Remember decision for this session"
+#: persistentStorage.dontAllow
+msgctxt "persistentStorage.dontAllow"
+msgid "Don’t Allow"
+msgstr ""
+
+#: persistentStorage.dontAllow.accesskey
+msgctxt "persistentStorage.dontAllow.accesskey"
+msgid "n"
+msgstr ""
+
+#: persistentStorage.allowWithSite
+msgid "Will you allow %S to store data in persistent storage?"
+msgstr ""
+
+#: persistentStorage.remember
+msgctxt "persistentStorage.remember"
+msgid "Remember this decision"
 msgstr ""
 
 #: webNotifications.allow
@@ -1152,14 +1190,22 @@ msgctxt "webNotifications.allow.accesskey"
 msgid "A"
 msgstr ""
 
-#: webNotifications.dontAllow
-msgctxt "webNotifications.dontAllow"
-msgid "Don’t Allow"
+#: webNotifications.notNow
+msgctxt "webNotifications.notNow"
+msgid "Not Now"
 msgstr ""
 
-#: webNotifications.dontAllow.accesskey
-msgctxt "webNotifications.dontAllow.accesskey"
+#: webNotifications.notNow.accesskey
+msgctxt "webNotifications.notNow.accesskey"
 msgid "n"
+msgstr ""
+
+#: webNotifications.never
+msgid "Never Allow"
+msgstr ""
+
+#: webNotifications.never.accesskey
+msgid "v"
 msgstr ""
 
 #: webNotifications.receiveFromSite2
@@ -1457,6 +1503,7 @@ msgstr ""
 #. # "getUserMedia.share{device}.message" strings.
 #: getUserMedia.allow.label getUserMedia.allow.accesskey
 #, fuzzy
+msgctxt "getUserMedia.allow.label getUserMedia.allow.accesskey"
 msgid "&Allow"
 msgstr "Bvumidza"
 
@@ -1469,14 +1516,12 @@ msgctxt "getUserMedia.remember"
 msgid "Remember this decision"
 msgstr ""
 
-#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen2,
+#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen3,
 #. #                    getUserMedia.reasonForNoPermanentAllow.audio,
 #. #                    getUserMedia.reasonForNoPermanentAllow.insecure):
 #. # %S is brandShortName
-#: getUserMedia.reasonForNoPermanentAllow.screen2
-msgid ""
-"%S can not allow permanent access to your screen without asking which one to "
-"share."
+#: getUserMedia.reasonForNoPermanentAllow.screen3
+msgid "%S can not allow permanent access to your screen."
 msgstr ""
 
 #: getUserMedia.reasonForNoPermanentAllow.audio
@@ -1729,26 +1774,6 @@ msgstr "Didza zvimwe "
 msgid "Customize %S"
 msgstr ""
 
-#. # LOCALIZATION NOTE(appmenu.*.description, appmenu.*.label): these are used for
-#. # the appmenu labels and buttons that appear when an update is staged for
-#. # installation or a background update has failed and a manual download is required.
-#. # %S is brandShortName
-#: appmenu.restartNeeded.description
-msgid "Restart %S to apply updates"
-msgstr ""
-
-#: appmenu.updateFailed.description
-msgid "Background update failed, please download update"
-msgstr ""
-
-#: appmenu.restartBrowserButton.label
-msgid "Restart %S"
-msgstr ""
-
-#: appmenu.downloadUpdateButton.label
-msgid "Download Update"
-msgstr ""
-
 #. # LOCALIZATION NOTE : FILE Reader View is a feature name and therefore typically used as a proper noun.
 #: readingList.promo.firstUse.readerView.title
 msgid "Reader View"
@@ -1921,6 +1946,23 @@ msgid ""
 "play video."
 msgstr ""
 
+#: decoder.decodeError.message
+msgid "An error occurred while decoding a media resource."
+msgstr ""
+
+#: decoder.decodeError.button
+msgid "Report Site Issue"
+msgstr ""
+
+#: decoder.decodeError.accesskey
+msgctxt "decoder.decodeError.accesskey"
+msgid "R"
+msgstr ""
+
+#: decoder.decodeWarning.message
+msgid "A recoverable error occurred while decoding a media resource."
+msgstr ""
+
 #. # LOCALIZATION NOTE (captivePortal.infoMessage3):
 #. # Shown in a notification bar when we detect a captive portal is blocking network access
 #. # and requires the user to log in before browsing.
@@ -1951,6 +1993,11 @@ msgstr ""
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "lwthemeInstallRequest.allowButton"
+#~ msgid "Allow"
+#~ msgstr "Bvumidza"
 
 #, fuzzy
 #~ msgctxt "offlineApps.allow"
