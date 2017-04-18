@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-06 23:16+0000\n"
+"POT-Creation-Date: 2017-04-18 12:17+0000\n"
 "PO-Revision-Date: 2017-03-28 07:46+0000\n"
 "Last-Translator: F Wolff <friedel@translate.org.za>\n"
 "Language-Team: I have a very cool team\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.1.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1490687166.000000\n"
 
@@ -115,6 +115,13 @@ msgstr "k"
 msgid "Add %S?"
 msgstr "Voeg “%S” by?"
 
+#: webextPerms.unsignedWarning
+msgid ""
+"Caution: This add-on is unverified. Malicious add-ons can steal your private "
+"information or compromise your computer. Only install this add-on if you "
+"trust the source."
+msgstr ""
+
 #. # LOCALIZATION NOTE (webextPerms.listIntro)
 #. # This string will be followed by a list of permissions requested
 #. # by the webextension.
@@ -123,6 +130,8 @@ msgid "It requires your permission to:"
 msgstr "Dit benodig toestemming vir die volgende:"
 
 #: webextPerms.add.label webextPerms.add.accessKey
+#, fuzzy
+msgctxt "webextPerms.add.label webextPerms.add.accessKey"
 msgid "&Add"
 msgstr "&Voeg by"
 
@@ -198,6 +207,30 @@ msgstr ""
 #: webextPerms.updateAccept.label webextPerms.updateAccept.accessKey
 msgid "&Update"
 msgstr "&Werk by"
+
+#. # LOCALIZATION NOTE (webextPerms.optionalPermsHheader)
+#. # %S is replace with the localized name of the extension requested new
+#. # permissions.
+#. # Note, this string will be used as raw markup. Avoid characters like <, >, &
+#: webextPerms.optionalPermsHeader
+msgid "%S requests additional permissions."
+msgstr ""
+
+#: webextPerms.optionalPermsListIntro
+msgid "It wants to:"
+msgstr ""
+
+#: webextPerms.optionalPermsAllow.label
+#: webextPerms.optionalPermsAllow.accessKey
+#, fuzzy
+msgctxt ""
+"webextPerms.optionalPermsAllow.label webextPerms.optionalPermsAllow.accessKey"
+msgid "&Allow"
+msgstr "L&aat toe"
+
+#: webextPerms.optionalPermsDeny.label webextPerms.optionalPermsDeny.accessKey
+msgid "&Deny"
+msgstr ""
 
 #: webextPerms.description.bookmarks
 msgid "Read and modify bookmarks"
@@ -344,9 +377,11 @@ msgctxt "addonInstall.cancelButton.label addonInstall.cancelButton.accesskey"
 msgid "&Cancel"
 msgstr "&Kanselleer"
 
-#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
-msgid "&Install"
-msgstr "&Installeer"
+#: addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey
+#, fuzzy
+msgctxt "addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey"
+msgid "&Add"
+msgstr "&Voeg by"
 
 #. # LOCALIZATION NOTE (addonConfirmInstallMessage,addonConfirmInstallUnsigned):
 #. # Semicolon-separated list of plural forms. See:
@@ -384,30 +419,6 @@ msgstr ""
 ";Dié werf wil #2 byvoegings in #1 installeer waarvan sommige ongeverifieer "
 "is. Gaan voort op eie risiko."
 
-#: addonwatch.slow
-msgid "%1$S might be making %2$S run slowly"
-msgstr "%1$S maak %2$S dalk stadig"
-
-#: addonwatch.disable.label
-msgid "Disable %S"
-msgstr "Deaktiveer %S"
-
-#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
-msgid "&Ignore for now"
-msgstr "&Ignoreer vir eers"
-
-#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
-msgid "Ignore &permanently"
-msgstr "Ignoreer &permanent"
-
-#: addonwatch.restart.message
-msgid "To disable %1$S you must restart %2$S"
-msgstr "Herbegin %2$S om %1$S te deaktiveer"
-
-#: addonwatch.restart.label addonwatch.restart.accesskey
-msgid "&Restart %S"
-msgstr "He&rbegin %S"
-
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -437,6 +448,8 @@ msgid "R"
 msgstr "R"
 
 #: addonInstallRestartIgnoreButton
+#, fuzzy
+msgctxt "addonInstallRestartIgnoreButton"
 msgid "Not Now"
 msgstr "Nie nou nie"
 
@@ -558,40 +571,21 @@ msgstr "Kompak en donker"
 msgid "A compact theme with a dark color scheme."
 msgstr "'n Kompakte tema met 'n donker kleurskema."
 
-#. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
+#. # LOCALIZATION NOTE (lwthemeInstallRequest.message2): %S will be replaced with
 #. # the host name of the site.
-#: lwthemeInstallRequest.message
+#: lwthemeInstallRequest.message2
 msgid "This site (%S) attempted to install a theme."
 msgstr "Die werf (%S) het probeer om 'n tema te installeer."
 
-#: lwthemeInstallRequest.allowButton
-msgctxt "lwthemeInstallRequest.allowButton"
+#: lwthemeInstallRequest.allowButton2
+#, fuzzy
+msgctxt "lwthemeInstallRequest.allowButton2"
 msgid "Allow"
 msgstr "Laat toe"
 
-#: lwthemeInstallRequest.allowButton.accesskey
+#: lwthemeInstallRequest.allowButton.accesskey2
 msgid "a"
-msgstr "a"
-
-#: lwthemePostInstallNotification.message
-msgid "A new theme has been installed."
-msgstr "'n Nuwe tema is geïnstalleer."
-
-#: lwthemePostInstallNotification.undoButton
-msgid "Undo"
-msgstr "Ontdoen"
-
-#: lwthemePostInstallNotification.undoButton.accesskey
-msgid "U"
-msgstr "O"
-
-#: lwthemePostInstallNotification.manageButton
-msgid "Manage Themes…"
-msgstr "Bestuur temas…"
-
-#: lwthemePostInstallNotification.manageButton.accesskey
-msgid "M"
-msgstr "B"
+msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeNeedsRestart.message):
 #. # %S will be replaced with the new theme name.
@@ -940,10 +934,28 @@ msgstr "Gaan vorentoe na hierdie bladsy"
 msgid "Paste & Go"
 msgstr "Plak en gaan"
 
-#. # LOCALIZATION NOTE(urlbar-zoom-button.label): %S is the current zoom level,
+#. # LOCALIZATION NOTE (reloadButton.tooltip):
+#. # %S is the keyboard shortcut for reloading the current page
+#: reloadButton.tooltip
+msgid "Reload current page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (stopButton.tooltip):
+#. # %S is the keyboard shortcut for stopping loading the page
+#: stopButton.tooltip
+msgid "Stop loading this page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (urlbar-zoom-button.tooltip):
+#. # %S is the keyboard shortcut for resetting the zoom level to 100%
+#: urlbar-zoom-button.tooltip
+msgid "Reset zoom level (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE(zoom-button.label): %S is the current page zoom level,
 #. # %% will be displayed as a single % character (% is commonly used to define
 #. # format specifiers, so it needs to be escaped).
-#: urlbar-zoom-button.label
+#: zoom-button.label
 msgid "%S%%"
 msgstr "%S%%"
 
@@ -1068,6 +1080,14 @@ msgstr "%S, %S"
 msgid "Show site information"
 msgstr "Wys werfinligting"
 
+#: identity.showDetails.tooltip
+msgid "Show connection details"
+msgstr ""
+
+#: identity.hideDetails.tooltip
+msgid "Hide connection details"
+msgstr ""
+
 #: trackingProtection.intro.title
 msgid "How Tracking Protection works"
 msgstr "Hoe volgbeskerming werk"
@@ -1178,14 +1198,38 @@ msgctxt "geolocation.remember"
 msgid "Remember this decision"
 msgstr "Onthou hierdie besluit"
 
-#: webNotifications.remember
-msgctxt "webNotifications.remember"
+#. # Persistent storage UI
+#: persistentStorage.allow
+#, fuzzy
+msgctxt "persistentStorage.allow"
+msgid "Allow"
+msgstr "Laat toe"
+
+#: persistentStorage.allow.accesskey
+msgctxt "persistentStorage.allow.accesskey"
+msgid "A"
+msgstr ""
+
+#: persistentStorage.dontAllow
+#, fuzzy
+msgctxt "persistentStorage.dontAllow"
+msgid "Don’t Allow"
+msgstr "Moenie toelaat nie"
+
+#: persistentStorage.dontAllow.accesskey
+msgctxt "persistentStorage.dontAllow.accesskey"
+msgid "n"
+msgstr ""
+
+#: persistentStorage.allowWithSite
+msgid "Will you allow %S to store data in persistent storage?"
+msgstr ""
+
+#: persistentStorage.remember
+#, fuzzy
+msgctxt "persistentStorage.remember"
 msgid "Remember this decision"
 msgstr "Onthou hierdie besluit"
-
-#: webNotifications.rememberForSession
-msgid "Remember decision for this session"
-msgstr "Onthou besluit vir hierdie sessie"
 
 #: webNotifications.allow
 msgid "Allow Notifications"
@@ -1196,15 +1240,24 @@ msgctxt "webNotifications.allow.accesskey"
 msgid "A"
 msgstr "a"
 
-#: webNotifications.dontAllow
-msgctxt "webNotifications.dontAllow"
-msgid "Don’t Allow"
-msgstr "Moenie toelaat nie"
+#: webNotifications.notNow
+#, fuzzy
+msgctxt "webNotifications.notNow"
+msgid "Not Now"
+msgstr "Nie nou nie"
 
-#: webNotifications.dontAllow.accesskey
-msgctxt "webNotifications.dontAllow.accesskey"
+#: webNotifications.notNow.accesskey
+msgctxt "webNotifications.notNow.accesskey"
 msgid "n"
-msgstr "n"
+msgstr ""
+
+#: webNotifications.never
+msgid "Never Allow"
+msgstr ""
+
+#: webNotifications.never.accesskey
+msgid "v"
+msgstr ""
 
 #: webNotifications.receiveFromSite2
 msgid "Will you allow %S to send notifications?"
@@ -1508,6 +1561,8 @@ msgstr "#1 (#2 venster);#1 (#2 vensters)"
 #. # These two buttons are the possible answers to the various prompts in the
 #. # "getUserMedia.share{device}.message" strings.
 #: getUserMedia.allow.label getUserMedia.allow.accesskey
+#, fuzzy
+msgctxt "getUserMedia.allow.label getUserMedia.allow.accesskey"
 msgid "&Allow"
 msgstr "L&aat toe"
 
@@ -1520,17 +1575,13 @@ msgctxt "getUserMedia.remember"
 msgid "Remember this decision"
 msgstr "Onthou hierdie besluit"
 
-#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen2,
+#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen3,
 #. #                    getUserMedia.reasonForNoPermanentAllow.audio,
 #. #                    getUserMedia.reasonForNoPermanentAllow.insecure):
 #. # %S is brandShortName
-#: getUserMedia.reasonForNoPermanentAllow.screen2
-msgid ""
-"%S can not allow permanent access to your screen without asking which one to "
-"share."
+#: getUserMedia.reasonForNoPermanentAllow.screen3
+msgid "%S can not allow permanent access to your screen."
 msgstr ""
-"%S kan nie permanente toegang tot die skerm toelaat sonder om te vra watter "
-"een gedeel moet word nie."
 
 #: getUserMedia.reasonForNoPermanentAllow.audio
 msgid ""
@@ -1792,26 +1843,6 @@ msgstr "Meer inligting"
 msgid "Customize %S"
 msgstr "Pas %S aan"
 
-#. # LOCALIZATION NOTE(appmenu.*.description, appmenu.*.label): these are used for
-#. # the appmenu labels and buttons that appear when an update is staged for
-#. # installation or a background update has failed and a manual download is required.
-#. # %S is brandShortName
-#: appmenu.restartNeeded.description
-msgid "Restart %S to apply updates"
-msgstr "Herbegin %S om bywerkings te installeer"
-
-#: appmenu.updateFailed.description
-msgid "Background update failed, please download update"
-msgstr "Kon nie in die agtergrond bywerk nie. Laai asb. die bywerking self af."
-
-#: appmenu.restartBrowserButton.label
-msgid "Restart %S"
-msgstr "Herbegin %S"
-
-#: appmenu.downloadUpdateButton.label
-msgid "Download Update"
-msgstr "Laai bywerking af"
-
 #. # LOCALIZATION NOTE : FILE Reader View is a feature name and therefore typically used as a proper noun.
 #: readingList.promo.firstUse.readerView.title
 msgid "Reader View"
@@ -1997,6 +2028,23 @@ msgstr ""
 "libavcodec is moontlik kwesbaar of word nie ondersteun nie, en moet bygewerk "
 "word om video te speel."
 
+#: decoder.decodeError.message
+msgid "An error occurred while decoding a media resource."
+msgstr ""
+
+#: decoder.decodeError.button
+msgid "Report Site Issue"
+msgstr ""
+
+#: decoder.decodeError.accesskey
+msgctxt "decoder.decodeError.accesskey"
+msgid "R"
+msgstr ""
+
+#: decoder.decodeWarning.message
+msgid "A recoverable error occurred while decoding a media resource."
+msgstr ""
+
 #. # LOCALIZATION NOTE (captivePortal.infoMessage3):
 #. # Shown in a notification bar when we detect a captive portal is blocking network access
 #. # and requires the user to log in before browsing.
@@ -2028,11 +2076,86 @@ msgstr "64-bis"
 msgid "32-bit"
 msgstr "32-bis"
 
-msgid "&Disable"
-msgstr "Ge&deaktiveer"
+#~ msgid "&Install"
+#~ msgstr "&Installeer"
 
-msgid "This network may require you to log in to use the internet."
-msgstr "Dié netwerk benodig dalk dat u aanmeld om die internet te gebruik."
+#~ msgid "%1$S might be making %2$S run slowly"
+#~ msgstr "%1$S maak %2$S dalk stadig"
+
+#~ msgid "Disable %S"
+#~ msgstr "Deaktiveer %S"
+
+#~ msgid "&Ignore for now"
+#~ msgstr "&Ignoreer vir eers"
+
+#~ msgid "Ignore &permanently"
+#~ msgstr "Ignoreer &permanent"
+
+#~ msgid "To disable %1$S you must restart %2$S"
+#~ msgstr "Herbegin %2$S om %1$S te deaktiveer"
+
+#~ msgid "&Restart %S"
+#~ msgstr "He&rbegin %S"
+
+#~ msgctxt "lwthemeInstallRequest.allowButton"
+#~ msgid "Allow"
+#~ msgstr "Laat toe"
+
+#~ msgid "A new theme has been installed."
+#~ msgstr "'n Nuwe tema is geïnstalleer."
+
+#~ msgid "Undo"
+#~ msgstr "Ontdoen"
+
+#~ msgid "U"
+#~ msgstr "O"
+
+#~ msgid "Manage Themes…"
+#~ msgstr "Bestuur temas…"
+
+#~ msgid "M"
+#~ msgstr "B"
+
+#~ msgctxt "webNotifications.remember"
+#~ msgid "Remember this decision"
+#~ msgstr "Onthou hierdie besluit"
+
+#~ msgid "Remember decision for this session"
+#~ msgstr "Onthou besluit vir hierdie sessie"
+
+#~ msgctxt "webNotifications.dontAllow"
+#~ msgid "Don’t Allow"
+#~ msgstr "Moenie toelaat nie"
+
+#~ msgctxt "webNotifications.dontAllow.accesskey"
+#~ msgid "n"
+#~ msgstr "n"
+
+#~ msgid ""
+#~ "%S can not allow permanent access to your screen without asking which one "
+#~ "to share."
+#~ msgstr ""
+#~ "%S kan nie permanente toegang tot die skerm toelaat sonder om te vra "
+#~ "watter een gedeel moet word nie."
+
+#~ msgid "Restart %S to apply updates"
+#~ msgstr "Herbegin %S om bywerkings te installeer"
+
+#~ msgid "Background update failed, please download update"
+#~ msgstr ""
+#~ "Kon nie in die agtergrond bywerk nie. Laai asb. die bywerking self af."
+
+#~ msgid "Restart %S"
+#~ msgstr "Herbegin %S"
+
+#~ msgid "Download Update"
+#~ msgstr "Laai bywerking af"
+
+#~ msgid "&Disable"
+#~ msgstr "Ge&deaktiveer"
+
+#~ msgid "This network may require you to log in to use the internet."
+#~ msgstr "Dié netwerk benodig dalk dat u aanmeld om die internet te gebruik."
 
 #~ msgid "Manage %1$S by clicking %2$S in the %3$S menu."
 #~ msgstr "Bestuur %1$S deur op %2$S te klik onder die %3$S-kieslys."
