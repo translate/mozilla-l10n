@@ -50,7 +50,7 @@ function _clone(){
 	mozlang=$(get_language_upstream $*)
 	[ -f $L10N_DIR/$mozlang/.hg/hgrc ] && mv $L10N_DIR/$mozlang/.hg/hgrc $L10N_DIR/$mozlang.hgrc
 	rm -rf $L10N_DIR/$mozlang
-	hg clone http://hg.mozilla.org/${L10N_VER}/${MOZ_REPO}/$mozlang $L10N_DIR/$mozlang
+	hg clone http://hg.mozilla.org/${L10N_VER}/$mozlang $L10N_DIR/$mozlang
 	[ -f $L10N_DIR/$mozlang.hgrc ] && mv $L10N_DIR/$mozlang.hgrc $L10N_DIR/$mozlang/.hg/hgrc
 }
 
