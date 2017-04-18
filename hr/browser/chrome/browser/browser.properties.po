@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-06 23:16+0000\n"
+"POT-Creation-Date: 2017-04-18 12:46+0000\n"
 "PO-Revision-Date: 2017-02-03 19:23+0000\n"
 "Last-Translator: Mihovil Stanić <mihovil@miho.im>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 2.0.0\n"
+"X-Generator: Translate Toolkit 2.1.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1486149806.000000\n"
 
@@ -118,6 +118,13 @@ msgstr "m"
 msgid "Add %S?"
 msgstr "Dodati %S?"
 
+#: webextPerms.unsignedWarning
+msgid ""
+"Caution: This add-on is unverified. Malicious add-ons can steal your private "
+"information or compromise your computer. Only install this add-on if you "
+"trust the source."
+msgstr ""
+
 #. # LOCALIZATION NOTE (webextPerms.listIntro)
 #. # This string will be followed by a list of permissions requested
 #. # by the webextension.
@@ -126,6 +133,8 @@ msgid "It requires your permission to:"
 msgstr "Traži vaše dopuštenja za:"
 
 #: webextPerms.add.label webextPerms.add.accessKey
+#, fuzzy
+msgctxt "webextPerms.add.label webextPerms.add.accessKey"
 msgid "&Add"
 msgstr "&Dodaj"
 
@@ -201,6 +210,30 @@ msgstr ""
 
 #: webextPerms.updateAccept.label webextPerms.updateAccept.accessKey
 msgid "&Update"
+msgstr ""
+
+#. # LOCALIZATION NOTE (webextPerms.optionalPermsHheader)
+#. # %S is replace with the localized name of the extension requested new
+#. # permissions.
+#. # Note, this string will be used as raw markup. Avoid characters like <, >, &
+#: webextPerms.optionalPermsHeader
+msgid "%S requests additional permissions."
+msgstr ""
+
+#: webextPerms.optionalPermsListIntro
+msgid "It wants to:"
+msgstr ""
+
+#: webextPerms.optionalPermsAllow.label
+#: webextPerms.optionalPermsAllow.accessKey
+#, fuzzy
+msgctxt ""
+"webextPerms.optionalPermsAllow.label webextPerms.optionalPermsAllow.accessKey"
+msgid "&Allow"
+msgstr "D&opusti"
+
+#: webextPerms.optionalPermsDeny.label webextPerms.optionalPermsDeny.accessKey
+msgid "&Deny"
 msgstr ""
 
 #: webextPerms.description.bookmarks
@@ -345,9 +378,11 @@ msgctxt "addonInstall.cancelButton.label addonInstall.cancelButton.accesskey"
 msgid "&Cancel"
 msgstr "&Otkaži"
 
-#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
-msgid "&Install"
-msgstr "&Instaliraj"
+#: addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey
+#, fuzzy
+msgctxt "addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey"
+msgid "&Add"
+msgstr "&Dodaj"
 
 #. # LOCALIZATION NOTE (addonConfirmInstallMessage,addonConfirmInstallUnsigned):
 #. # Semicolon-separated list of plural forms. See:
@@ -386,30 +421,6 @@ msgstr ""
 ";Oprez: ova stranica želi instalirati #2 dodatka u #1, a neki od njih nisu "
 "potvrđeni. Nastavite na vlastiti rizik."
 
-#: addonwatch.slow
-msgid "%1$S might be making %2$S run slowly"
-msgstr "%1$S možda usporava %2$S"
-
-#: addonwatch.disable.label
-msgid "Disable %S"
-msgstr "Onemogući %S"
-
-#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
-msgid "&Ignore for now"
-msgstr "&Ignoriraj za sada"
-
-#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
-msgid "Ignore &permanently"
-msgstr "Ignoriraj &trajno"
-
-#: addonwatch.restart.message
-msgid "To disable %1$S you must restart %2$S"
-msgstr "Za onemogućavanje %1$S je potrebno ponovno pokrenuti %2$S"
-
-#: addonwatch.restart.label addonwatch.restart.accesskey
-msgid "&Restart %S"
-msgstr "Ponovo pok&reni %S"
-
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -439,6 +450,8 @@ msgid "R"
 msgstr "R"
 
 #: addonInstallRestartIgnoreButton
+#, fuzzy
+msgctxt "addonInstallRestartIgnoreButton"
 msgid "Not Now"
 msgstr "Ne sad"
 
@@ -549,41 +562,21 @@ msgstr ""
 msgid "A compact theme with a dark color scheme."
 msgstr ""
 
-#. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
+#. # LOCALIZATION NOTE (lwthemeInstallRequest.message2): %S will be replaced with
 #. # the host name of the site.
-#: lwthemeInstallRequest.message
+#: lwthemeInstallRequest.message2
 msgid "This site (%S) attempted to install a theme."
 msgstr "Ova stranica (%S) pokušava instalirati temu."
 
-#: lwthemeInstallRequest.allowButton
-msgctxt "lwthemeInstallRequest.allowButton"
-msgid "Allow"
-msgstr "Dopusti"
-
-#: lwthemeInstallRequest.allowButton.accesskey
+#: lwthemeInstallRequest.allowButton2
 #, fuzzy
+msgctxt "lwthemeInstallRequest.allowButton2"
+msgid "Allow"
+msgstr "Dozvoli"
+
+#: lwthemeInstallRequest.allowButton.accesskey2
 msgid "a"
-msgstr "o"
-
-#: lwthemePostInstallNotification.message
-msgid "A new theme has been installed."
-msgstr "Nova tema je instalirana."
-
-#: lwthemePostInstallNotification.undoButton
-msgid "Undo"
-msgstr "Vrati"
-
-#: lwthemePostInstallNotification.undoButton.accesskey
-msgid "U"
-msgstr "V"
-
-#: lwthemePostInstallNotification.manageButton
-msgid "Manage Themes…"
-msgstr "Uređivanje tema…"
-
-#: lwthemePostInstallNotification.manageButton.accesskey
-msgid "M"
-msgstr "M"
+msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeNeedsRestart.message):
 #. # %S will be replaced with the new theme name.
@@ -936,10 +929,28 @@ msgstr "Idi naprijed na ovu stranicu"
 msgid "Paste & Go"
 msgstr "Zalijepi i kreni"
 
-#. # LOCALIZATION NOTE(urlbar-zoom-button.label): %S is the current zoom level,
+#. # LOCALIZATION NOTE (reloadButton.tooltip):
+#. # %S is the keyboard shortcut for reloading the current page
+#: reloadButton.tooltip
+msgid "Reload current page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (stopButton.tooltip):
+#. # %S is the keyboard shortcut for stopping loading the page
+#: stopButton.tooltip
+msgid "Stop loading this page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (urlbar-zoom-button.tooltip):
+#. # %S is the keyboard shortcut for resetting the zoom level to 100%
+#: urlbar-zoom-button.tooltip
+msgid "Reset zoom level (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE(zoom-button.label): %S is the current page zoom level,
 #. # %% will be displayed as a single % character (% is commonly used to define
 #. # format specifiers, so it needs to be escaped).
-#: urlbar-zoom-button.label
+#: zoom-button.label
 msgid "%S%%"
 msgstr "%S%%"
 
@@ -1064,6 +1075,14 @@ msgstr "%S, %S"
 msgid "Show site information"
 msgstr "Prikaži informacije o stranici"
 
+#: identity.showDetails.tooltip
+msgid "Show connection details"
+msgstr ""
+
+#: identity.hideDetails.tooltip
+msgid "Hide connection details"
+msgstr ""
+
 #: trackingProtection.intro.title
 msgid "How Tracking Protection works"
 msgstr "Kako funkcionira zaštita od praćenja"
@@ -1175,13 +1194,36 @@ msgctxt "geolocation.remember"
 msgid "Remember this decision"
 msgstr ""
 
-#: webNotifications.remember
-msgctxt "webNotifications.remember"
-msgid "Remember this decision"
+#. # Persistent storage UI
+#: persistentStorage.allow
+#, fuzzy
+msgctxt "persistentStorage.allow"
+msgid "Allow"
+msgstr "Dozvoli"
+
+#: persistentStorage.allow.accesskey
+msgctxt "persistentStorage.allow.accesskey"
+msgid "A"
 msgstr ""
 
-#: webNotifications.rememberForSession
-msgid "Remember decision for this session"
+#: persistentStorage.dontAllow
+#, fuzzy
+msgctxt "persistentStorage.dontAllow"
+msgid "Don’t Allow"
+msgstr "Nemoj dopustiti"
+
+#: persistentStorage.dontAllow.accesskey
+msgctxt "persistentStorage.dontAllow.accesskey"
+msgid "n"
+msgstr ""
+
+#: persistentStorage.allowWithSite
+msgid "Will you allow %S to store data in persistent storage?"
+msgstr ""
+
+#: persistentStorage.remember
+msgctxt "persistentStorage.remember"
+msgid "Remember this decision"
 msgstr ""
 
 #: webNotifications.allow
@@ -1193,15 +1235,23 @@ msgctxt "webNotifications.allow.accesskey"
 msgid "A"
 msgstr ""
 
-#: webNotifications.dontAllow
+#: webNotifications.notNow
 #, fuzzy
-msgctxt "webNotifications.dontAllow"
-msgid "Don’t Allow"
-msgstr "Nemoj dopustiti"
+msgctxt "webNotifications.notNow"
+msgid "Not Now"
+msgstr "Ne sad"
 
-#: webNotifications.dontAllow.accesskey
-msgctxt "webNotifications.dontAllow.accesskey"
+#: webNotifications.notNow.accesskey
+msgctxt "webNotifications.notNow.accesskey"
 msgid "n"
+msgstr ""
+
+#: webNotifications.never
+msgid "Never Allow"
+msgstr ""
+
+#: webNotifications.never.accesskey
+msgid "v"
 msgstr ""
 
 #: webNotifications.receiveFromSite2
@@ -1507,6 +1557,7 @@ msgstr "#1 (#2 prozor);#1 (#2 prozora);#1 (#2 prozora)"
 #. # "getUserMedia.share{device}.message" strings.
 #: getUserMedia.allow.label getUserMedia.allow.accesskey
 #, fuzzy
+msgctxt "getUserMedia.allow.label getUserMedia.allow.accesskey"
 msgid "&Allow"
 msgstr "D&opusti"
 
@@ -1520,14 +1571,12 @@ msgctxt "getUserMedia.remember"
 msgid "Remember this decision"
 msgstr ""
 
-#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen2,
+#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen3,
 #. #                    getUserMedia.reasonForNoPermanentAllow.audio,
 #. #                    getUserMedia.reasonForNoPermanentAllow.insecure):
 #. # %S is brandShortName
-#: getUserMedia.reasonForNoPermanentAllow.screen2
-msgid ""
-"%S can not allow permanent access to your screen without asking which one to "
-"share."
+#: getUserMedia.reasonForNoPermanentAllow.screen3
+msgid "%S can not allow permanent access to your screen."
 msgstr ""
 
 #: getUserMedia.reasonForNoPermanentAllow.audio
@@ -1785,26 +1834,6 @@ msgstr "Saznajte više"
 msgid "Customize %S"
 msgstr "Prilagodi %S"
 
-#. # LOCALIZATION NOTE(appmenu.*.description, appmenu.*.label): these are used for
-#. # the appmenu labels and buttons that appear when an update is staged for
-#. # installation or a background update has failed and a manual download is required.
-#. # %S is brandShortName
-#: appmenu.restartNeeded.description
-msgid "Restart %S to apply updates"
-msgstr "Ponovno pokreni %S i primjeni ažuriranja"
-
-#: appmenu.updateFailed.description
-msgid "Background update failed, please download update"
-msgstr "Pozadinsko ažuriranje nije uspjelo, preuzmite ažuriranje"
-
-#: appmenu.restartBrowserButton.label
-msgid "Restart %S"
-msgstr "Ponovo pokreni %S"
-
-#: appmenu.downloadUpdateButton.label
-msgid "Download Update"
-msgstr "Preuzmi dopunu"
-
 #. # LOCALIZATION NOTE : FILE Reader View is a feature name and therefore typically used as a proper noun.
 #: readingList.promo.firstUse.readerView.title
 msgid "Reader View"
@@ -1993,6 +2022,23 @@ msgstr ""
 "libavcodec je možda ranjiv ili nije podržan i trebao bi biti ažuriran kako "
 "bi se video reproducirao."
 
+#: decoder.decodeError.message
+msgid "An error occurred while decoding a media resource."
+msgstr ""
+
+#: decoder.decodeError.button
+msgid "Report Site Issue"
+msgstr ""
+
+#: decoder.decodeError.accesskey
+msgctxt "decoder.decodeError.accesskey"
+msgid "R"
+msgstr ""
+
+#: decoder.decodeWarning.message
+msgid "A recoverable error occurred while decoding a media resource."
+msgstr ""
+
 #. # LOCALIZATION NOTE (captivePortal.infoMessage3):
 #. # Shown in a notification bar when we detect a captive portal is blocking network access
 #. # and requires the user to log in before browsing.
@@ -2023,6 +2069,63 @@ msgstr "64-bitni"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "32-bitni"
+
+#~ msgid "&Install"
+#~ msgstr "&Instaliraj"
+
+#~ msgid "%1$S might be making %2$S run slowly"
+#~ msgstr "%1$S možda usporava %2$S"
+
+#~ msgid "Disable %S"
+#~ msgstr "Onemogući %S"
+
+#~ msgid "&Ignore for now"
+#~ msgstr "&Ignoriraj za sada"
+
+#~ msgid "Ignore &permanently"
+#~ msgstr "Ignoriraj &trajno"
+
+#~ msgid "To disable %1$S you must restart %2$S"
+#~ msgstr "Za onemogućavanje %1$S je potrebno ponovno pokrenuti %2$S"
+
+#~ msgid "&Restart %S"
+#~ msgstr "Ponovo pok&reni %S"
+
+#~ msgctxt "lwthemeInstallRequest.allowButton"
+#~ msgid "Allow"
+#~ msgstr "Dopusti"
+
+#~ msgid "A new theme has been installed."
+#~ msgstr "Nova tema je instalirana."
+
+#~ msgid "Undo"
+#~ msgstr "Vrati"
+
+#~ msgid "U"
+#~ msgstr "V"
+
+#~ msgid "Manage Themes…"
+#~ msgstr "Uređivanje tema…"
+
+#~ msgid "M"
+#~ msgstr "M"
+
+#, fuzzy
+#~ msgctxt "webNotifications.dontAllow"
+#~ msgid "Don’t Allow"
+#~ msgstr "Nemoj dopustiti"
+
+#~ msgid "Restart %S to apply updates"
+#~ msgstr "Ponovno pokreni %S i primjeni ažuriranja"
+
+#~ msgid "Background update failed, please download update"
+#~ msgstr "Pozadinsko ažuriranje nije uspjelo, preuzmite ažuriranje"
+
+#~ msgid "Restart %S"
+#~ msgstr "Ponovo pokreni %S"
+
+#~ msgid "Download Update"
+#~ msgstr "Preuzmi dopunu"
 
 #~ msgid "&Disable"
 #~ msgstr "O&nemogući"
