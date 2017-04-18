@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-06 23:16+0000\n"
+"POT-Creation-Date: 2017-04-18 12:46+0000\n"
 "PO-Revision-Date: 2017-03-08 10:37+0000\n"
 "Last-Translator: Gwenn M <tornoz@laposte.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.1.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1488969471.000000\n"
 
@@ -116,6 +116,13 @@ msgstr "o"
 msgid "Add %S?"
 msgstr "Ouzhpennañ %S?"
 
+#: webextPerms.unsignedWarning
+msgid ""
+"Caution: This add-on is unverified. Malicious add-ons can steal your private "
+"information or compromise your computer. Only install this add-on if you "
+"trust the source."
+msgstr ""
+
 #. # LOCALIZATION NOTE (webextPerms.listIntro)
 #. # This string will be followed by a list of permissions requested
 #. # by the webextension.
@@ -124,6 +131,8 @@ msgid "It requires your permission to:"
 msgstr "Goulenn a ra hoc'h aotre evit:"
 
 #: webextPerms.add.label webextPerms.add.accessKey
+#, fuzzy
+msgctxt "webextPerms.add.label webextPerms.add.accessKey"
 msgid "&Add"
 msgstr "&Ouzhpennañ"
 
@@ -199,6 +208,30 @@ msgstr ""
 #: webextPerms.updateAccept.label webextPerms.updateAccept.accessKey
 msgid "&Update"
 msgstr "&Hizivaat"
+
+#. # LOCALIZATION NOTE (webextPerms.optionalPermsHheader)
+#. # %S is replace with the localized name of the extension requested new
+#. # permissions.
+#. # Note, this string will be used as raw markup. Avoid characters like <, >, &
+#: webextPerms.optionalPermsHeader
+msgid "%S requests additional permissions."
+msgstr ""
+
+#: webextPerms.optionalPermsListIntro
+msgid "It wants to:"
+msgstr ""
+
+#: webextPerms.optionalPermsAllow.label
+#: webextPerms.optionalPermsAllow.accessKey
+#, fuzzy
+msgctxt ""
+"webextPerms.optionalPermsAllow.label webextPerms.optionalPermsAllow.accessKey"
+msgid "&Allow"
+msgstr "&Aotren"
+
+#: webextPerms.optionalPermsDeny.label webextPerms.optionalPermsDeny.accessKey
+msgid "&Deny"
+msgstr ""
 
 #: webextPerms.description.bookmarks
 msgid "Read and modify bookmarks"
@@ -345,9 +378,11 @@ msgctxt "addonInstall.cancelButton.label addonInstall.cancelButton.accesskey"
 msgid "&Cancel"
 msgstr "&Nullañ"
 
-#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
-msgid "&Install"
-msgstr "&Staliañ"
+#: addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey
+#, fuzzy
+msgctxt "addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey"
+msgid "&Add"
+msgstr "&Ouzhpennañ"
 
 #. # LOCALIZATION NOTE (addonConfirmInstallMessage,addonConfirmInstallUnsigned):
 #. # Semicolon-separated list of plural forms. See:
@@ -386,30 +421,6 @@ msgstr ""
 ";Diwallit : c'hoant he deus al lec'hienn-mañ da staliañ #2 askouezh e #1, ha "
 "reoù 'zo n'int ket gwiriet. Kendalc'hit en ho riskl hoc'h-unan."
 
-#: addonwatch.slow
-msgid "%1$S might be making %2$S run slowly"
-msgstr "Gallout a ra %1$S gorrekaat erounezadur %2$S"
-
-#: addonwatch.disable.label
-msgid "Disable %S"
-msgstr "Diweredekaat %S"
-
-#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
-msgid "&Ignore for now"
-msgstr "&Leuskel a-gostez evit ar mare"
-
-#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
-msgid "Ignore &permanently"
-msgstr "Leuskel a-gostez &peurzalc'hus"
-
-#: addonwatch.restart.message
-msgid "To disable %1$S you must restart %2$S"
-msgstr "Evit diweredekaat %1$S eo ret deoc'h adloc'hañ %2$S"
-
-#: addonwatch.restart.label addonwatch.restart.accesskey
-msgid "&Restart %S"
-msgstr "&Adloc'hañ %S"
-
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -439,6 +450,8 @@ msgid "R"
 msgstr "A"
 
 #: addonInstallRestartIgnoreButton
+#, fuzzy
+msgctxt "addonInstallRestartIgnoreButton"
 msgid "Not Now"
 msgstr "Ket bremañ"
 
@@ -559,40 +572,21 @@ msgstr "Koazhet teñval"
 msgid "A compact theme with a dark color scheme."
 msgstr "Un neuz koazhet gant ur steuñv livioù teñval."
 
-#. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
+#. # LOCALIZATION NOTE (lwthemeInstallRequest.message2): %S will be replaced with
 #. # the host name of the site.
-#: lwthemeInstallRequest.message
+#: lwthemeInstallRequest.message2
 msgid "This site (%S) attempted to install a theme."
 msgstr "Al lec'hienn-mañ (%S) he deus klasket staliañ un neuz."
 
-#: lwthemeInstallRequest.allowButton
-msgctxt "lwthemeInstallRequest.allowButton"
+#: lwthemeInstallRequest.allowButton2
+#, fuzzy
+msgctxt "lwthemeInstallRequest.allowButton2"
 msgid "Allow"
 msgstr "Aotren"
 
-#: lwthemeInstallRequest.allowButton.accesskey
+#: lwthemeInstallRequest.allowButton.accesskey2
 msgid "a"
-msgstr "A"
-
-#: lwthemePostInstallNotification.message
-msgid "A new theme has been installed."
-msgstr "Un neuz nevez zo bet staliet."
-
-#: lwthemePostInstallNotification.undoButton
-msgid "Undo"
-msgstr "Dizober"
-
-#: lwthemePostInstallNotification.undoButton.accesskey
-msgid "U"
-msgstr "D"
-
-#: lwthemePostInstallNotification.manageButton
-msgid "Manage Themes…"
-msgstr "Ardeiñ an neuzioù"
-
-#: lwthemePostInstallNotification.manageButton.accesskey
-msgid "M"
-msgstr "A"
+msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeNeedsRestart.message):
 #. # %S will be replaced with the new theme name.
@@ -945,10 +939,28 @@ msgstr "Mont war-raok betek ar bajenn-mañ"
 msgid "Paste & Go"
 msgstr "Pegañ & Mont"
 
-#. # LOCALIZATION NOTE(urlbar-zoom-button.label): %S is the current zoom level,
+#. # LOCALIZATION NOTE (reloadButton.tooltip):
+#. # %S is the keyboard shortcut for reloading the current page
+#: reloadButton.tooltip
+msgid "Reload current page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (stopButton.tooltip):
+#. # %S is the keyboard shortcut for stopping loading the page
+#: stopButton.tooltip
+msgid "Stop loading this page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (urlbar-zoom-button.tooltip):
+#. # %S is the keyboard shortcut for resetting the zoom level to 100%
+#: urlbar-zoom-button.tooltip
+msgid "Reset zoom level (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE(zoom-button.label): %S is the current page zoom level,
 #. # %% will be displayed as a single % character (% is commonly used to define
 #. # format specifiers, so it needs to be escaped).
-#: urlbar-zoom-button.label
+#: zoom-button.label
 msgid "%S%%"
 msgstr "%S%%"
 
@@ -1075,6 +1087,14 @@ msgstr "%S, %S"
 msgid "Show site information"
 msgstr "Diskouez titouroù al lec'hienn"
 
+#: identity.showDetails.tooltip
+msgid "Show connection details"
+msgstr ""
+
+#: identity.hideDetails.tooltip
+msgid "Hide connection details"
+msgstr ""
+
 #: trackingProtection.intro.title
 msgid "How Tracking Protection works"
 msgstr "Penaos ez a ar gwarez heuliañ en dro"
@@ -1185,14 +1205,38 @@ msgctxt "geolocation.remember"
 msgid "Remember this decision"
 msgstr "Derc'hel soñj en diviz-mañ"
 
-#: webNotifications.remember
-msgctxt "webNotifications.remember"
+#. # Persistent storage UI
+#: persistentStorage.allow
+#, fuzzy
+msgctxt "persistentStorage.allow"
+msgid "Allow"
+msgstr "Aotren"
+
+#: persistentStorage.allow.accesskey
+msgctxt "persistentStorage.allow.accesskey"
+msgid "A"
+msgstr ""
+
+#: persistentStorage.dontAllow
+#, fuzzy
+msgctxt "persistentStorage.dontAllow"
+msgid "Don’t Allow"
+msgstr "Na aotren"
+
+#: persistentStorage.dontAllow.accesskey
+msgctxt "persistentStorage.dontAllow.accesskey"
+msgid "n"
+msgstr ""
+
+#: persistentStorage.allowWithSite
+msgid "Will you allow %S to store data in persistent storage?"
+msgstr ""
+
+#: persistentStorage.remember
+#, fuzzy
+msgctxt "persistentStorage.remember"
 msgid "Remember this decision"
 msgstr "Derc'hel soñj en diviz-mañ"
-
-#: webNotifications.rememberForSession
-msgid "Remember decision for this session"
-msgstr "Derc'hel-soñj en diviz evit an estez-mañ"
 
 #: webNotifications.allow
 msgid "Allow Notifications"
@@ -1203,15 +1247,24 @@ msgctxt "webNotifications.allow.accesskey"
 msgid "A"
 msgstr "A"
 
-#: webNotifications.dontAllow
-msgctxt "webNotifications.dontAllow"
-msgid "Don’t Allow"
-msgstr "Na aotren"
+#: webNotifications.notNow
+#, fuzzy
+msgctxt "webNotifications.notNow"
+msgid "Not Now"
+msgstr "Ket bremañ"
 
-#: webNotifications.dontAllow.accesskey
-msgctxt "webNotifications.dontAllow.accesskey"
+#: webNotifications.notNow.accesskey
+msgctxt "webNotifications.notNow.accesskey"
 msgid "n"
-msgstr "N"
+msgstr ""
+
+#: webNotifications.never
+msgid "Never Allow"
+msgstr ""
+
+#: webNotifications.never.accesskey
+msgid "v"
+msgstr ""
 
 #: webNotifications.receiveFromSite2
 msgid "Will you allow %S to send notifications?"
@@ -1520,6 +1573,8 @@ msgstr "#1 (#2 prenestr);#1 (#2 prenestr)"
 #. # These two buttons are the possible answers to the various prompts in the
 #. # "getUserMedia.share{device}.message" strings.
 #: getUserMedia.allow.label getUserMedia.allow.accesskey
+#, fuzzy
+msgctxt "getUserMedia.allow.label getUserMedia.allow.accesskey"
 msgid "&Allow"
 msgstr "&Aotren"
 
@@ -1532,17 +1587,13 @@ msgctxt "getUserMedia.remember"
 msgid "Remember this decision"
 msgstr "Derc'hel soñj en diviz-mañ"
 
-#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen2,
+#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen3,
 #. #                    getUserMedia.reasonForNoPermanentAllow.audio,
 #. #                    getUserMedia.reasonForNoPermanentAllow.insecure):
 #. # %S is brandShortName
-#: getUserMedia.reasonForNoPermanentAllow.screen2
-msgid ""
-"%S can not allow permanent access to your screen without asking which one to "
-"share."
+#: getUserMedia.reasonForNoPermanentAllow.screen3
+msgid "%S can not allow permanent access to your screen."
 msgstr ""
-"N'hall ket %S aotren haeziñ ho skramm en un doare peurzalc'hus hep goulenn "
-"pehini rannañ."
 
 #: getUserMedia.reasonForNoPermanentAllow.audio
 msgid ""
@@ -1805,27 +1856,6 @@ msgstr "Gouzout hiroc'h"
 msgid "Customize %S"
 msgstr "Personelaat %S"
 
-#. # LOCALIZATION NOTE(appmenu.*.description, appmenu.*.label): these are used for
-#. # the appmenu labels and buttons that appear when an update is staged for
-#. # installation or a background update has failed and a manual download is required.
-#. # %S is brandShortName
-#: appmenu.restartNeeded.description
-msgid "Restart %S to apply updates"
-msgstr "Adloc'hañ %S evit arloañ an hizivadurioù"
-
-#: appmenu.updateFailed.description
-msgid "Background update failed, please download update"
-msgstr ""
-"C'hwitadenn war an hizivaat en drekleur, mar plij, pellgargit an hizivadur"
-
-#: appmenu.restartBrowserButton.label
-msgid "Restart %S"
-msgstr "Adloc'hañ %S"
-
-#: appmenu.downloadUpdateButton.label
-msgid "Download Update"
-msgstr "Pellgargañ an hizivadur"
-
 #. # LOCALIZATION NOTE : FILE Reader View is a feature name and therefore typically used as a proper noun.
 #: readingList.promo.firstUse.readerView.title
 msgid "Reader View"
@@ -2014,6 +2044,23 @@ msgstr ""
 "libavcodec a c'hall bezañ bresk pe n'eo ket skoret ha ret eo dezhañ bezañ "
 "hizivaet evit lenn ar video."
 
+#: decoder.decodeError.message
+msgid "An error occurred while decoding a media resource."
+msgstr ""
+
+#: decoder.decodeError.button
+msgid "Report Site Issue"
+msgstr ""
+
+#: decoder.decodeError.accesskey
+msgctxt "decoder.decodeError.accesskey"
+msgid "R"
+msgstr ""
+
+#: decoder.decodeWarning.message
+msgid "A recoverable error occurred while decoding a media resource."
+msgstr ""
+
 #. # LOCALIZATION NOTE (captivePortal.infoMessage3):
 #. # Shown in a notification bar when we detect a captive portal is blocking network access
 #. # and requires the user to log in before browsing.
@@ -2046,6 +2093,81 @@ msgstr "64-bit"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "32-bit"
+
+#~ msgid "&Install"
+#~ msgstr "&Staliañ"
+
+#~ msgid "%1$S might be making %2$S run slowly"
+#~ msgstr "Gallout a ra %1$S gorrekaat erounezadur %2$S"
+
+#~ msgid "Disable %S"
+#~ msgstr "Diweredekaat %S"
+
+#~ msgid "&Ignore for now"
+#~ msgstr "&Leuskel a-gostez evit ar mare"
+
+#~ msgid "Ignore &permanently"
+#~ msgstr "Leuskel a-gostez &peurzalc'hus"
+
+#~ msgid "To disable %1$S you must restart %2$S"
+#~ msgstr "Evit diweredekaat %1$S eo ret deoc'h adloc'hañ %2$S"
+
+#~ msgid "&Restart %S"
+#~ msgstr "&Adloc'hañ %S"
+
+#~ msgctxt "lwthemeInstallRequest.allowButton"
+#~ msgid "Allow"
+#~ msgstr "Aotren"
+
+#~ msgid "A new theme has been installed."
+#~ msgstr "Un neuz nevez zo bet staliet."
+
+#~ msgid "Undo"
+#~ msgstr "Dizober"
+
+#~ msgid "U"
+#~ msgstr "D"
+
+#~ msgid "Manage Themes…"
+#~ msgstr "Ardeiñ an neuzioù"
+
+#~ msgid "M"
+#~ msgstr "A"
+
+#~ msgctxt "webNotifications.remember"
+#~ msgid "Remember this decision"
+#~ msgstr "Derc'hel soñj en diviz-mañ"
+
+#~ msgid "Remember decision for this session"
+#~ msgstr "Derc'hel-soñj en diviz evit an estez-mañ"
+
+#~ msgctxt "webNotifications.dontAllow"
+#~ msgid "Don’t Allow"
+#~ msgstr "Na aotren"
+
+#~ msgctxt "webNotifications.dontAllow.accesskey"
+#~ msgid "n"
+#~ msgstr "N"
+
+#~ msgid ""
+#~ "%S can not allow permanent access to your screen without asking which one "
+#~ "to share."
+#~ msgstr ""
+#~ "N'hall ket %S aotren haeziñ ho skramm en un doare peurzalc'hus hep "
+#~ "goulenn pehini rannañ."
+
+#~ msgid "Restart %S to apply updates"
+#~ msgstr "Adloc'hañ %S evit arloañ an hizivadurioù"
+
+#~ msgid "Background update failed, please download update"
+#~ msgstr ""
+#~ "C'hwitadenn war an hizivaat en drekleur, mar plij, pellgargit an hizivadur"
+
+#~ msgid "Restart %S"
+#~ msgstr "Adloc'hañ %S"
+
+#~ msgid "Download Update"
+#~ msgstr "Pellgargañ an hizivadur"
 
 #~ msgid "&Disable"
 #~ msgstr "&Diweredekaet"
