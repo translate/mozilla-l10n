@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-06 23:16+0000\n"
+"POT-Creation-Date: 2017-04-18 12:46+0000\n"
 "PO-Revision-Date: 2016-11-18 22:46+0000\n"
 "Last-Translator: Juan Pablo Martínez <juanpabl@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 2.0.0\n"
+"X-Generator: Translate Toolkit 2.1.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1479509195.000000\n"
 
@@ -119,6 +119,13 @@ msgstr "c"
 msgid "Add %S?"
 msgstr ""
 
+#: webextPerms.unsignedWarning
+msgid ""
+"Caution: This add-on is unverified. Malicious add-ons can steal your private "
+"information or compromise your computer. Only install this add-on if you "
+"trust the source."
+msgstr ""
+
 #. # LOCALIZATION NOTE (webextPerms.listIntro)
 #. # This string will be followed by a list of permissions requested
 #. # by the webextension.
@@ -127,6 +134,7 @@ msgid "It requires your permission to:"
 msgstr ""
 
 #: webextPerms.add.label webextPerms.add.accessKey
+msgctxt "webextPerms.add.label webextPerms.add.accessKey"
 msgid "&Add"
 msgstr ""
 
@@ -195,6 +203,30 @@ msgstr ""
 
 #: webextPerms.updateAccept.label webextPerms.updateAccept.accessKey
 msgid "&Update"
+msgstr ""
+
+#. # LOCALIZATION NOTE (webextPerms.optionalPermsHheader)
+#. # %S is replace with the localized name of the extension requested new
+#. # permissions.
+#. # Note, this string will be used as raw markup. Avoid characters like <, >, &
+#: webextPerms.optionalPermsHeader
+msgid "%S requests additional permissions."
+msgstr ""
+
+#: webextPerms.optionalPermsListIntro
+msgid "It wants to:"
+msgstr ""
+
+#: webextPerms.optionalPermsAllow.label
+#: webextPerms.optionalPermsAllow.accessKey
+#, fuzzy
+msgctxt ""
+"webextPerms.optionalPermsAllow.label webextPerms.optionalPermsAllow.accessKey"
+msgid "&Allow"
+msgstr "&Permitir"
+
+#: webextPerms.optionalPermsDeny.label webextPerms.optionalPermsDeny.accessKey
+msgid "&Deny"
 msgstr ""
 
 #: webextPerms.description.bookmarks
@@ -339,9 +371,10 @@ msgctxt "addonInstall.cancelButton.label addonInstall.cancelButton.accesskey"
 msgid "&Cancel"
 msgstr "&Cancelar"
 
-#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
-msgid "&Install"
-msgstr "&Instalar"
+#: addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey
+msgctxt "addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey"
+msgid "&Add"
+msgstr ""
 
 #. # LOCALIZATION NOTE (addonConfirmInstallMessage,addonConfirmInstallUnsigned):
 #. # Semicolon-separated list of plural forms. See:
@@ -379,30 +412,6 @@ msgstr ""
 ";Pare cuenta: Iste puesto quiere instalar #2 complementos en #1, d'os quals "
 "beluns son no verificaus. Siga baixo o suyo propio risgo."
 
-#: addonwatch.slow
-msgid "%1$S might be making %2$S run slowly"
-msgstr "Ye posible que o complemento %1$S faiga que o %2$S s'execute aspaciet"
-
-#: addonwatch.disable.label
-msgid "Disable %S"
-msgstr "Desactivar %S"
-
-#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
-msgid "&Ignore for now"
-msgstr "&Ignorar-lo ista vegada"
-
-#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
-msgid "Ignore &permanently"
-msgstr "Ignorar-lo &permanentment"
-
-#: addonwatch.restart.message
-msgid "To disable %1$S you must restart %2$S"
-msgstr "Pa inhabilitar %1$S ha de reiniciar %2$S"
-
-#: addonwatch.restart.label addonwatch.restart.accesskey
-msgid "&Restart %S"
-msgstr "Reiniciar o %S"
-
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -432,6 +441,8 @@ msgid "R"
 msgstr "R"
 
 #: addonInstallRestartIgnoreButton
+#, fuzzy
+msgctxt "addonInstallRestartIgnoreButton"
 msgid "Not Now"
 msgstr "No pas agora"
 
@@ -549,41 +560,21 @@ msgstr ""
 msgid "A compact theme with a dark color scheme."
 msgstr ""
 
-#. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
+#. # LOCALIZATION NOTE (lwthemeInstallRequest.message2): %S will be replaced with
 #. # the host name of the site.
-#: lwthemeInstallRequest.message
+#: lwthemeInstallRequest.message2
 msgid "This site (%S) attempted to install a theme."
 msgstr "Iste puesto web (%S) ha mirau d'instalar un tema."
 
-#: lwthemeInstallRequest.allowButton
-msgctxt "lwthemeInstallRequest.allowButton"
+#: lwthemeInstallRequest.allowButton2
+#, fuzzy
+msgctxt "lwthemeInstallRequest.allowButton2"
 msgid "Allow"
 msgstr "Permitir"
 
-#: lwthemeInstallRequest.allowButton.accesskey
-#, fuzzy
+#: lwthemeInstallRequest.allowButton.accesskey2
 msgid "a"
-msgstr "r"
-
-#: lwthemePostInstallNotification.message
-msgid "A new theme has been installed."
-msgstr "S'ha instalau un nuevo tema."
-
-#: lwthemePostInstallNotification.undoButton
-msgid "Undo"
-msgstr "Desfer"
-
-#: lwthemePostInstallNotification.undoButton.accesskey
-msgid "U"
-msgstr "D"
-
-#: lwthemePostInstallNotification.manageButton
-msgid "Manage Themes…"
-msgstr "Administrar os temas…"
-
-#: lwthemePostInstallNotification.manageButton.accesskey
-msgid "M"
-msgstr "n"
+msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeNeedsRestart.message):
 #. # %S will be replaced with the new theme name.
@@ -934,10 +925,28 @@ msgstr "Abanzar a ista pachina"
 msgid "Paste & Go"
 msgstr "Apegar-lo y ir-ie"
 
-#. # LOCALIZATION NOTE(urlbar-zoom-button.label): %S is the current zoom level,
+#. # LOCALIZATION NOTE (reloadButton.tooltip):
+#. # %S is the keyboard shortcut for reloading the current page
+#: reloadButton.tooltip
+msgid "Reload current page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (stopButton.tooltip):
+#. # %S is the keyboard shortcut for stopping loading the page
+#: stopButton.tooltip
+msgid "Stop loading this page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (urlbar-zoom-button.tooltip):
+#. # %S is the keyboard shortcut for resetting the zoom level to 100%
+#: urlbar-zoom-button.tooltip
+msgid "Reset zoom level (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE(zoom-button.label): %S is the current page zoom level,
 #. # %% will be displayed as a single % character (% is commonly used to define
 #. # format specifiers, so it needs to be escaped).
-#: urlbar-zoom-button.label
+#: zoom-button.label
 msgid "%S%%"
 msgstr "%S%%"
 
@@ -1061,6 +1070,14 @@ msgstr "%S, %S"
 msgid "Show site information"
 msgstr "Amostrar la información d'o puesto"
 
+#: identity.showDetails.tooltip
+msgid "Show connection details"
+msgstr ""
+
+#: identity.hideDetails.tooltip
+msgid "Hide connection details"
+msgstr ""
+
 #: trackingProtection.intro.title
 msgid "How Tracking Protection works"
 msgstr "Como funciona a protección contra o seguimiento"
@@ -1171,13 +1188,35 @@ msgctxt "geolocation.remember"
 msgid "Remember this decision"
 msgstr ""
 
-#: webNotifications.remember
-msgctxt "webNotifications.remember"
-msgid "Remember this decision"
+#. # Persistent storage UI
+#: persistentStorage.allow
+#, fuzzy
+msgctxt "persistentStorage.allow"
+msgid "Allow"
+msgstr "Permitir"
+
+#: persistentStorage.allow.accesskey
+msgctxt "persistentStorage.allow.accesskey"
+msgid "A"
 msgstr ""
 
-#: webNotifications.rememberForSession
-msgid "Remember decision for this session"
+#: persistentStorage.dontAllow
+msgctxt "persistentStorage.dontAllow"
+msgid "Don’t Allow"
+msgstr ""
+
+#: persistentStorage.dontAllow.accesskey
+msgctxt "persistentStorage.dontAllow.accesskey"
+msgid "n"
+msgstr ""
+
+#: persistentStorage.allowWithSite
+msgid "Will you allow %S to store data in persistent storage?"
+msgstr ""
+
+#: persistentStorage.remember
+msgctxt "persistentStorage.remember"
+msgid "Remember this decision"
 msgstr ""
 
 #: webNotifications.allow
@@ -1189,14 +1228,23 @@ msgctxt "webNotifications.allow.accesskey"
 msgid "A"
 msgstr ""
 
-#: webNotifications.dontAllow
-msgctxt "webNotifications.dontAllow"
-msgid "Don’t Allow"
+#: webNotifications.notNow
+#, fuzzy
+msgctxt "webNotifications.notNow"
+msgid "Not Now"
+msgstr "No pas agora"
+
+#: webNotifications.notNow.accesskey
+msgctxt "webNotifications.notNow.accesskey"
+msgid "n"
 msgstr ""
 
-#: webNotifications.dontAllow.accesskey
-msgctxt "webNotifications.dontAllow.accesskey"
-msgid "n"
+#: webNotifications.never
+msgid "Never Allow"
+msgstr ""
+
+#: webNotifications.never.accesskey
+msgid "v"
 msgstr ""
 
 #: webNotifications.receiveFromSite2
@@ -1503,6 +1551,7 @@ msgstr "#1 (#2 finestra);#1 (#2 finestras)"
 #. # "getUserMedia.share{device}.message" strings.
 #: getUserMedia.allow.label getUserMedia.allow.accesskey
 #, fuzzy
+msgctxt "getUserMedia.allow.label getUserMedia.allow.accesskey"
 msgid "&Allow"
 msgstr "&Permitir"
 
@@ -1515,14 +1564,12 @@ msgctxt "getUserMedia.remember"
 msgid "Remember this decision"
 msgstr ""
 
-#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen2,
+#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen3,
 #. #                    getUserMedia.reasonForNoPermanentAllow.audio,
 #. #                    getUserMedia.reasonForNoPermanentAllow.insecure):
 #. # %S is brandShortName
-#: getUserMedia.reasonForNoPermanentAllow.screen2
-msgid ""
-"%S can not allow permanent access to your screen without asking which one to "
-"share."
+#: getUserMedia.reasonForNoPermanentAllow.screen3
+msgid "%S can not allow permanent access to your screen."
 msgstr ""
 
 #: getUserMedia.reasonForNoPermanentAllow.audio
@@ -1781,26 +1828,6 @@ msgstr "Saber-ne mas"
 msgid "Customize %S"
 msgstr "Personalizar lo %S"
 
-#. # LOCALIZATION NOTE(appmenu.*.description, appmenu.*.label): these are used for
-#. # the appmenu labels and buttons that appear when an update is staged for
-#. # installation or a background update has failed and a manual download is required.
-#. # %S is brandShortName
-#: appmenu.restartNeeded.description
-msgid "Restart %S to apply updates"
-msgstr "Reiniciar %S ta aplicar as actualizacions"
-
-#: appmenu.updateFailed.description
-msgid "Background update failed, please download update"
-msgstr "Ha fallau l'actualización de fondo, baixe l'actualización"
-
-#: appmenu.restartBrowserButton.label
-msgid "Restart %S"
-msgstr "Reiniciar o %S"
-
-#: appmenu.downloadUpdateButton.label
-msgid "Download Update"
-msgstr "Baixa l'actualización"
-
 #. # LOCALIZATION NOTE : FILE Reader View is a feature name and therefore typically used as a proper noun.
 #: readingList.promo.firstUse.readerView.title
 msgid "Reader View"
@@ -1986,6 +2013,23 @@ msgstr ""
 "libavcodec puet estar vulnerable u no ye soportau, y habría d'actualizar-se "
 "a play video."
 
+#: decoder.decodeError.message
+msgid "An error occurred while decoding a media resource."
+msgstr ""
+
+#: decoder.decodeError.button
+msgid "Report Site Issue"
+msgstr ""
+
+#: decoder.decodeError.accesskey
+msgctxt "decoder.decodeError.accesskey"
+msgid "R"
+msgstr ""
+
+#: decoder.decodeWarning.message
+msgid "A recoverable error occurred while decoding a media resource."
+msgstr ""
+
 #. # LOCALIZATION NOTE (captivePortal.infoMessage3):
 #. # Shown in a notification bar when we detect a captive portal is blocking network access
 #. # and requires the user to log in before browsing.
@@ -2016,6 +2060,59 @@ msgstr "64 bits"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "32 bits"
+
+#~ msgid "&Install"
+#~ msgstr "&Instalar"
+
+#~ msgid "%1$S might be making %2$S run slowly"
+#~ msgstr ""
+#~ "Ye posible que o complemento %1$S faiga que o %2$S s'execute aspaciet"
+
+#~ msgid "Disable %S"
+#~ msgstr "Desactivar %S"
+
+#~ msgid "&Ignore for now"
+#~ msgstr "&Ignorar-lo ista vegada"
+
+#~ msgid "Ignore &permanently"
+#~ msgstr "Ignorar-lo &permanentment"
+
+#~ msgid "To disable %1$S you must restart %2$S"
+#~ msgstr "Pa inhabilitar %1$S ha de reiniciar %2$S"
+
+#~ msgid "&Restart %S"
+#~ msgstr "Reiniciar o %S"
+
+#~ msgctxt "lwthemeInstallRequest.allowButton"
+#~ msgid "Allow"
+#~ msgstr "Permitir"
+
+#~ msgid "A new theme has been installed."
+#~ msgstr "S'ha instalau un nuevo tema."
+
+#~ msgid "Undo"
+#~ msgstr "Desfer"
+
+#~ msgid "U"
+#~ msgstr "D"
+
+#~ msgid "Manage Themes…"
+#~ msgstr "Administrar os temas…"
+
+#~ msgid "M"
+#~ msgstr "n"
+
+#~ msgid "Restart %S to apply updates"
+#~ msgstr "Reiniciar %S ta aplicar as actualizacions"
+
+#~ msgid "Background update failed, please download update"
+#~ msgstr "Ha fallau l'actualización de fondo, baixe l'actualización"
+
+#~ msgid "Restart %S"
+#~ msgstr "Reiniciar o %S"
+
+#~ msgid "Download Update"
+#~ msgstr "Baixa l'actualización"
 
 #, fuzzy
 #~ msgid "&Disable"
