@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-13 15:23+0000\n"
+"POT-Creation-Date: 2017-04-18 12:46+0000\n"
 "PO-Revision-Date: 2017-03-31 12:31+0000\n"
 "Last-Translator: Hrant Ohanyan <hrant.mozilla@gmail.com>\n"
 "Language-Team: none\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.1.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1490963478.000000\n"
 
@@ -359,13 +359,6 @@ msgctxt "charts.totalS"
 msgid "%S s"
 msgstr "%S մվ"
 
-#. # LOCALIZATION NOTE (charts.totalS): This is the label displayed
-#. # in the performance analysis view for total requests size, in kilobytes.
-#: charts.totalSize
-msgctxt "charts.totalSize"
-msgid "Size: %S KB"
-msgstr "Չափը՝ %S ԿԲ"
-
 #. # LOCALIZATION NOTE (charts.totalTranferredSize): This is the label displayed
 #. # in the performance analysis view for total transferred size, in kilobytes.
 #: charts.totalTransferredSize
@@ -383,6 +376,13 @@ msgstr "Սկզբնական պահոց"
 #: charts.cacheDisabled
 msgid "Empty cache"
 msgstr "Դատարկ պահոց"
+
+#. # LOCALIZATION NOTE (charts.totalSize): This is the label displayed
+#. # in the performance analysis view for total requests size, in kilobytes.
+#: charts.totalSize
+#, fuzzy
+msgid "Size: %S KB"
+msgstr "Չափը՝ %S ԿԲ"
 
 #. # LOCALIZATION NOTE (charts.totalSeconds): Semi-colon list of plural forms.
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -634,11 +634,23 @@ msgstr "Եղանակ"
 msgid "File"
 msgstr "Ֆայլ"
 
+#. # LOCALIZATION NOTE (netmonitor.toolbar.protocol): This is the label displayed
+#. # in the network table toolbar, above the "protocol" column.
+#: netmonitor.toolbar.protocol
+msgid "Protocol"
+msgstr ""
+
 #. # LOCALIZATION NOTE (netmonitor.toolbar.domain): This is the label displayed
 #. # in the network table toolbar, above the "domain" column.
 #: netmonitor.toolbar.domain
 msgid "Domain"
 msgstr "Տիրույթը"
+
+#. # LOCALIZATION NOTE (netmonitor.toolbar.remoteip): This is the label displayed
+#. # in the network table toolbar, above the "remoteip" column.
+#: netmonitor.toolbar.remoteip
+msgid "Remote IP"
+msgstr ""
 
 #. # LOCALIZATION NOTE (netmonitor.toolbar.cause): This is the label displayed
 #. # in the network table toolbar, above the "cause" column.
@@ -661,11 +673,12 @@ msgctxt "netmonitor.toolbar.transferred"
 msgid "Transferred"
 msgstr "Փոխանցված"
 
-#. # LOCALIZATION NOTE (netmonitor.toolbar.size): This is the label displayed
+#. # LOCALIZATION NOTE (netmonitor.toolbar.contentSize): This is the label displayed
 #. # in the network table toolbar, above the "size" column, which is the
 #. # uncompressed / decoded size.
-#: netmonitor.toolbar.size
-msgctxt "netmonitor.toolbar.size"
+#: netmonitor.toolbar.contentSize
+#, fuzzy
+msgctxt "netmonitor.toolbar.contentSize"
 msgid "Size"
 msgstr "Չափը"
 
@@ -709,11 +722,11 @@ msgstr "Արձագանք"
 msgid "Timings"
 msgstr "Աշխատանքային ժամեր"
 
-#. # LOCALIZATION NOTE (netmonitor.tab.preview): This is the label displayed
-#. # in the network details pane identifying the preview tab.
-#: netmonitor.tab.preview
-msgid "Preview"
-msgstr "Դիտել"
+#. # LOCALIZATION NOTE (netmonitor.tab.stackTrace): This is the label displayed
+#. # in the network details pane identifying the stack-trace tab.
+#: netmonitor.tab.stackTrace
+msgid "Stack Trace"
+msgstr ""
 
 #. # LOCALIZATION NOTE (netmonitor.tab.security): This is the label displayed
 #. # in the network details pane identifying the security tab.
@@ -810,6 +823,12 @@ msgstr "Մաքրել"
 #: netmonitor.toolbar.perf
 msgid "Toggle performance analysis…"
 msgstr "Ցուցադրել/թաքցնել արտադրողականության ստուգումը..."
+
+#. # LOCALIZATION NOTE (netmonitor.toolbar.resetColumns): This is the label
+#. # displayed in the network table header context menu.
+#: netmonitor.toolbar.resetColumns
+msgid "Reset Columns"
+msgstr ""
 
 #. # LOCALIZATION NOTE (netmonitor.summary.url): This is the label displayed
 #. # in the network details headers tab identifying the URL.
@@ -983,6 +1002,19 @@ msgstr "Կապակցում."
 msgid "Certificate:"
 msgstr "Վկայագիրը."
 
+#. # LOCALIZATION NOTE (netmonitor.context.copy): This is the label displayed
+#. # for the copy sub-menu in the context menu for a request
+#: netmonitor.context.copy
+msgid "Copy"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.context.copy.accesskey): This is the access key
+#. # for the copy sub-menu displayed in the context menu for a request
+#: netmonitor.context.copy.accesskey
+msgctxt "netmonitor.context.copy.accesskey"
+msgid "C"
+msgstr ""
+
 #. # LOCALIZATION NOTE (netmonitor.context.copyUrl): This is the label displayed
 #. # on the context menu that copies the selected request's url
 #: netmonitor.context.copyUrl
@@ -1030,6 +1062,8 @@ msgstr "Պատճենել որպես cURL"
 #. # LOCALIZATION NOTE (netmonitor.context.copyAsCUrl.accesskey): This is the access key
 #. # for the Copy as cURL menu item displayed in the context menu for a request
 #: netmonitor.context.copyAsCurl.accesskey
+#, fuzzy
+msgctxt "netmonitor.context.copyAsCurl.accesskey"
 msgid "C"
 msgstr "C"
 
@@ -1080,6 +1114,18 @@ msgstr "Պատճենել նկարի տվյալի URI-ն"
 #: netmonitor.context.copyImageAsDataUri.accesskey
 msgid "I"
 msgstr "I"
+
+#. # LOCALIZATION NOTE (netmonitor.context.saveImageAs): This is the label displayed
+#. # on the context menu that save the Image
+#: netmonitor.context.saveImageAs
+msgid "Save Image As"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.context.copyImageAsDataUri.accesskey): This is the access key
+#. # for the Copy Image As Data URI menu item displayed in the context menu for a request
+#: netmonitor.context.saveImageAs.accesskey
+msgid "V"
+msgstr ""
 
 #. # LOCALIZATION NOTE (netmonitor.context.copyAllAsHar): This is the label displayed
 #. # on the context menu that copies all as HAR format
@@ -1192,6 +1238,13 @@ msgstr "Նախորդը"
 #: netmonitor.headers.learnMore
 msgid "Learn More"
 msgstr "Իմանալ ավելին"
+
+#~ msgctxt "netmonitor.toolbar.size"
+#~ msgid "Size"
+#~ msgstr "Չափը"
+
+#~ msgid "Preview"
+#~ msgstr "Դիտել"
 
 #~ msgid "One request, #2 KB, #3 s;#1 requests, #2 KB, #3 s"
 #~ msgstr "Մեկ հարցում, , #2 ԿԲ, #3 վ;#1 հարցումներ, #2 ԿԲ, #3 վ"
