@@ -168,7 +168,7 @@ do
 			        rm -rf ${mozlang}/* 
 			fi
 		else
-		    hg clone $hgverbosity http://hg.mozilla.org/releases/l10n/${MOZ_DIR}/${mozlang} ${mozlang} || mkdir ${mozlang}
+		    hg clone $hgverbosity http://hg.mozilla.org/${L10N_VER}/${MOZ_DIR}/${mozlang} ${mozlang} || mkdir ${mozlang}
 		fi
 	fi
 done
