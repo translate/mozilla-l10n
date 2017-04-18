@@ -31,13 +31,16 @@ if [ $? -ne 0 ]; then
 		ttk-put --yes templates
 		id=$(ttk-changeid)
 		logger_file templates POT $id
-		ttk-get
-		git add $(ttk-langs)
-		git commit -m "Various: pre templates update ($project)"
-		ttk-build --no-compare-locales --no-xpi --no-tarball
-		git add -A $(ttk-langs)
-		git commit -m "All: update against templates ($project)"
-		ttk-put --yes
+		for lang in $(ttk-langs)
+		do
+			ttk-get $lang
+			git add $lang
+			git commit -m "[$lang] pre templates update ($project)"
+			ttk-build --no-compare-locales --no-xpi --no-tarball $lang
+			git add -A $lang
+			git commit -m "[$lang] update against templates ($project)"
+			ttk-put --yes $lang
+		done
 	else
 		git commit -m "Templates: non-POT update ($project)" templates templates-en-US
 		id=$(ttk-changeid)
