@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-06 23:16+0000\n"
+"POT-Creation-Date: 2017-04-18 12:46+0000\n"
 "PO-Revision-Date: 2017-03-07 14:57+0000\n"
 "Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n>=3 && "
 "n<=10 ? 3 : n>=11 && n<=99 ? 4 : 5;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.1.0\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
 "X-POOTLE-MTIME: 1488898678.000000\n"
@@ -115,6 +115,13 @@ msgstr "ع"
 msgid "Add %S?"
 msgstr "أتريد إضافة %S؟"
 
+#: webextPerms.unsignedWarning
+msgid ""
+"Caution: This add-on is unverified. Malicious add-ons can steal your private "
+"information or compromise your computer. Only install this add-on if you "
+"trust the source."
+msgstr ""
+
 #. # LOCALIZATION NOTE (webextPerms.listIntro)
 #. # This string will be followed by a list of permissions requested
 #. # by the webextension.
@@ -123,6 +130,8 @@ msgid "It requires your permission to:"
 msgstr "يحتاج الصلاحيات التالية:"
 
 #: webextPerms.add.label webextPerms.add.accessKey
+#, fuzzy
+msgctxt "webextPerms.add.label webextPerms.add.accessKey"
 msgid "&Add"
 msgstr "أ&ضف"
 
@@ -195,6 +204,30 @@ msgstr ""
 #: webextPerms.updateAccept.label webextPerms.updateAccept.accessKey
 msgid "&Update"
 msgstr "&حدّث"
+
+#. # LOCALIZATION NOTE (webextPerms.optionalPermsHheader)
+#. # %S is replace with the localized name of the extension requested new
+#. # permissions.
+#. # Note, this string will be used as raw markup. Avoid characters like <, >, &
+#: webextPerms.optionalPermsHeader
+msgid "%S requests additional permissions."
+msgstr ""
+
+#: webextPerms.optionalPermsListIntro
+msgid "It wants to:"
+msgstr ""
+
+#: webextPerms.optionalPermsAllow.label
+#: webextPerms.optionalPermsAllow.accessKey
+#, fuzzy
+msgctxt ""
+"webextPerms.optionalPermsAllow.label webextPerms.optionalPermsAllow.accessKey"
+msgid "&Allow"
+msgstr "ا&سمح"
+
+#: webextPerms.optionalPermsDeny.label webextPerms.optionalPermsDeny.accessKey
+msgid "&Deny"
+msgstr ""
 
 #: webextPerms.description.bookmarks
 msgid "Read and modify bookmarks"
@@ -343,9 +376,11 @@ msgctxt "addonInstall.cancelButton.label addonInstall.cancelButton.accesskey"
 msgid "&Cancel"
 msgstr "أل&غِ"
 
-#: addonInstall.acceptButton.label addonInstall.acceptButton.accesskey
-msgid "&Install"
-msgstr "&ثبّت"
+#: addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey
+#, fuzzy
+msgctxt "addonInstall.acceptButton2.label addonInstall.acceptButton2.accesskey"
+msgid "&Add"
+msgstr "أ&ضف"
 
 #. # LOCALIZATION NOTE (addonConfirmInstallMessage,addonConfirmInstallUnsigned):
 #. # Semicolon-separated list of plural forms. See:
@@ -391,30 +426,6 @@ msgstr ""
 "في #1. أكمل على مسئوليتك.;انتبه: يحاول هذا الموقع تثبيت #2 إضافة بعضها لم "
 "يُتحقق منه في #1. أكمل على مسئوليتك.;"
 
-#: addonwatch.slow
-msgid "%1$S might be making %2$S run slowly"
-msgstr "قد يكون %1$S يسبب بطء %2$S"
-
-#: addonwatch.disable.label
-msgid "Disable %S"
-msgstr "عطّل %S"
-
-#: addonwatch.ignoreSession.label addonwatch.ignoreSession.accesskey
-msgid "&Ignore for now"
-msgstr "&تجاهل حاليًا"
-
-#: addonwatch.ignorePerm.label addonwatch.ignorePerm.accesskey
-msgid "Ignore &permanently"
-msgstr "تجا&هل للأبد"
-
-#: addonwatch.restart.message
-msgid "To disable %1$S you must restart %2$S"
-msgstr "عليك إعادة تشغيل %2$S لتعطيل %1$S"
-
-#: addonwatch.restart.label addonwatch.restart.accesskey
-msgid "&Restart %S"
-msgstr "أ&عد تشغيل %S"
-
 #. # LOCALIZATION NOTE (addonsInstalled, addonsInstalledNeedsRestart):
 #. # Semicolon-separated list of plural forms. See:
 #. # http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -447,6 +458,8 @@ msgid "R"
 msgstr "ش"
 
 #: addonInstallRestartIgnoreButton
+#, fuzzy
+msgctxt "addonInstallRestartIgnoreButton"
 msgid "Not Now"
 msgstr "ليس الآن"
 
@@ -548,40 +561,21 @@ msgstr "غامقة مكتنزة"
 msgid "A compact theme with a dark color scheme."
 msgstr "سمة مكتنزة مع ألوان غامقة"
 
-#. # LOCALIZATION NOTE (lwthemeInstallRequest.message): %S will be replaced with
+#. # LOCALIZATION NOTE (lwthemeInstallRequest.message2): %S will be replaced with
 #. # the host name of the site.
-#: lwthemeInstallRequest.message
+#: lwthemeInstallRequest.message2
 msgid "This site (%S) attempted to install a theme."
 msgstr "حاول هذا الموقع (%S) أن يثبّت سمة."
 
-#: lwthemeInstallRequest.allowButton
-msgctxt "lwthemeInstallRequest.allowButton"
+#: lwthemeInstallRequest.allowButton2
+#, fuzzy
+msgctxt "lwthemeInstallRequest.allowButton2"
 msgid "Allow"
 msgstr "اسمح"
 
-#: lwthemeInstallRequest.allowButton.accesskey
+#: lwthemeInstallRequest.allowButton.accesskey2
 msgid "a"
-msgstr "س"
-
-#: lwthemePostInstallNotification.message
-msgid "A new theme has been installed."
-msgstr "ثُبّتت سمة جديدة."
-
-#: lwthemePostInstallNotification.undoButton
-msgid "Undo"
-msgstr "تراجع"
-
-#: lwthemePostInstallNotification.undoButton.accesskey
-msgid "U"
-msgstr "ت"
-
-#: lwthemePostInstallNotification.manageButton
-msgid "Manage Themes…"
-msgstr "أدِر السمات…"
-
-#: lwthemePostInstallNotification.manageButton.accesskey
-msgid "M"
-msgstr "س"
+msgstr ""
 
 #. # LOCALIZATION NOTE (lwthemeNeedsRestart.message):
 #. # %S will be replaced with the new theme name.
@@ -934,10 +928,28 @@ msgstr "اذهب لهذه الصفحة"
 msgid "Paste & Go"
 msgstr "ألصق واذهب"
 
-#. # LOCALIZATION NOTE(urlbar-zoom-button.label): %S is the current zoom level,
+#. # LOCALIZATION NOTE (reloadButton.tooltip):
+#. # %S is the keyboard shortcut for reloading the current page
+#: reloadButton.tooltip
+msgid "Reload current page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (stopButton.tooltip):
+#. # %S is the keyboard shortcut for stopping loading the page
+#: stopButton.tooltip
+msgid "Stop loading this page (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (urlbar-zoom-button.tooltip):
+#. # %S is the keyboard shortcut for resetting the zoom level to 100%
+#: urlbar-zoom-button.tooltip
+msgid "Reset zoom level (%S)"
+msgstr ""
+
+#. # LOCALIZATION NOTE(zoom-button.label): %S is the current page zoom level,
 #. # %% will be displayed as a single % character (% is commonly used to define
 #. # format specifiers, so it needs to be escaped).
-#: urlbar-zoom-button.label
+#: zoom-button.label
 msgid "%S%%"
 msgstr "%S٪"
 
@@ -1061,6 +1073,14 @@ msgstr "%S، %S"
 msgid "Show site information"
 msgstr "أظهر معلومات الموقع"
 
+#: identity.showDetails.tooltip
+msgid "Show connection details"
+msgstr ""
+
+#: identity.hideDetails.tooltip
+msgid "Hide connection details"
+msgstr ""
+
 #: trackingProtection.intro.title
 msgid "How Tracking Protection works"
 msgstr "كيف تعمل الحماية من التعقّب"
@@ -1172,14 +1192,38 @@ msgctxt "geolocation.remember"
 msgid "Remember this decision"
 msgstr "تذكّر هذا القرار"
 
-#: webNotifications.remember
-msgctxt "webNotifications.remember"
+#. # Persistent storage UI
+#: persistentStorage.allow
+#, fuzzy
+msgctxt "persistentStorage.allow"
+msgid "Allow"
+msgstr "اسمح"
+
+#: persistentStorage.allow.accesskey
+msgctxt "persistentStorage.allow.accesskey"
+msgid "A"
+msgstr ""
+
+#: persistentStorage.dontAllow
+#, fuzzy
+msgctxt "persistentStorage.dontAllow"
+msgid "Don’t Allow"
+msgstr "لا تسمح"
+
+#: persistentStorage.dontAllow.accesskey
+msgctxt "persistentStorage.dontAllow.accesskey"
+msgid "n"
+msgstr ""
+
+#: persistentStorage.allowWithSite
+msgid "Will you allow %S to store data in persistent storage?"
+msgstr ""
+
+#: persistentStorage.remember
+#, fuzzy
+msgctxt "persistentStorage.remember"
 msgid "Remember this decision"
 msgstr "تذكّر هذا القرار"
-
-#: webNotifications.rememberForSession
-msgid "Remember decision for this session"
-msgstr "تذكّر القرار لهذه الجلسة"
 
 #: webNotifications.allow
 msgid "Allow Notifications"
@@ -1190,15 +1234,24 @@ msgctxt "webNotifications.allow.accesskey"
 msgid "A"
 msgstr "س"
 
-#: webNotifications.dontAllow
-msgctxt "webNotifications.dontAllow"
-msgid "Don’t Allow"
-msgstr "لا تسمح"
+#: webNotifications.notNow
+#, fuzzy
+msgctxt "webNotifications.notNow"
+msgid "Not Now"
+msgstr "ليس الآن"
 
-#: webNotifications.dontAllow.accesskey
-msgctxt "webNotifications.dontAllow.accesskey"
+#: webNotifications.notNow.accesskey
+msgctxt "webNotifications.notNow.accesskey"
 msgid "n"
-msgstr "ت"
+msgstr ""
+
+#: webNotifications.never
+msgid "Never Allow"
+msgstr ""
+
+#: webNotifications.never.accesskey
+msgid "v"
+msgstr ""
 
 #: webNotifications.receiveFromSite2
 msgid "Will you allow %S to send notifications?"
@@ -1500,6 +1553,8 @@ msgstr ""
 #. # These two buttons are the possible answers to the various prompts in the
 #. # "getUserMedia.share{device}.message" strings.
 #: getUserMedia.allow.label getUserMedia.allow.accesskey
+#, fuzzy
+msgctxt "getUserMedia.allow.label getUserMedia.allow.accesskey"
 msgid "&Allow"
 msgstr "ا&سمح"
 
@@ -1512,16 +1567,13 @@ msgctxt "getUserMedia.remember"
 msgid "Remember this decision"
 msgstr "تذكّر هذا القرار"
 
-#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen2,
+#. # LOCALIZATION NOTE (getUserMedia.reasonForNoPermanentAllow.screen3,
 #. #                    getUserMedia.reasonForNoPermanentAllow.audio,
 #. #                    getUserMedia.reasonForNoPermanentAllow.insecure):
 #. # %S is brandShortName
-#: getUserMedia.reasonForNoPermanentAllow.screen2
-msgid ""
-"%S can not allow permanent access to your screen without asking which one to "
-"share."
+#: getUserMedia.reasonForNoPermanentAllow.screen3
+msgid "%S can not allow permanent access to your screen."
 msgstr ""
-"لا يستطيع %S أن يسمح بمشاركة دائمة لشاشتك بدون السؤال عن أي شاشة ستشارك."
 
 #: getUserMedia.reasonForNoPermanentAllow.audio
 msgid ""
@@ -1780,26 +1832,6 @@ msgstr "اعرف المزيد"
 msgid "Customize %S"
 msgstr "خصّص %S"
 
-#. # LOCALIZATION NOTE(appmenu.*.description, appmenu.*.label): these are used for
-#. # the appmenu labels and buttons that appear when an update is staged for
-#. # installation or a background update has failed and a manual download is required.
-#. # %S is brandShortName
-#: appmenu.restartNeeded.description
-msgid "Restart %S to apply updates"
-msgstr "أعد تشغيل %S لتطبيق التحديثات"
-
-#: appmenu.updateFailed.description
-msgid "Background update failed, please download update"
-msgstr "فشل التحديث في الخلفية، من فضلك نزّل التحديث"
-
-#: appmenu.restartBrowserButton.label
-msgid "Restart %S"
-msgstr "أعد تشغيل %S"
-
-#: appmenu.downloadUpdateButton.label
-msgid "Download Update"
-msgstr "نزّل التحديث"
-
 #. # LOCALIZATION NOTE : FILE Reader View is a feature name and therefore typically used as a proper noun.
 #: readingList.promo.firstUse.readerView.title
 msgid "Reader View"
@@ -1975,6 +2007,23 @@ msgid ""
 msgstr ""
 "برمجية libavcodec قد تكون مجروحة أو غير مدعومة، و يجب تحديثها لتشغيل الڤديو."
 
+#: decoder.decodeError.message
+msgid "An error occurred while decoding a media resource."
+msgstr ""
+
+#: decoder.decodeError.button
+msgid "Report Site Issue"
+msgstr ""
+
+#: decoder.decodeError.accesskey
+msgctxt "decoder.decodeError.accesskey"
+msgid "R"
+msgstr ""
+
+#: decoder.decodeWarning.message
+msgid "A recoverable error occurred while decoding a media resource."
+msgstr ""
+
 #. # LOCALIZATION NOTE (captivePortal.infoMessage3):
 #. # Shown in a notification bar when we detect a captive portal is blocking network access
 #. # and requires the user to log in before browsing.
@@ -2005,6 +2054,79 @@ msgstr "64 بتة"
 #: aboutDialog.architecture.thirtyTwoBit
 msgid "32-bit"
 msgstr "32 بتة"
+
+#~ msgid "&Install"
+#~ msgstr "&ثبّت"
+
+#~ msgid "%1$S might be making %2$S run slowly"
+#~ msgstr "قد يكون %1$S يسبب بطء %2$S"
+
+#~ msgid "Disable %S"
+#~ msgstr "عطّل %S"
+
+#~ msgid "&Ignore for now"
+#~ msgstr "&تجاهل حاليًا"
+
+#~ msgid "Ignore &permanently"
+#~ msgstr "تجا&هل للأبد"
+
+#~ msgid "To disable %1$S you must restart %2$S"
+#~ msgstr "عليك إعادة تشغيل %2$S لتعطيل %1$S"
+
+#~ msgid "&Restart %S"
+#~ msgstr "أ&عد تشغيل %S"
+
+#~ msgctxt "lwthemeInstallRequest.allowButton"
+#~ msgid "Allow"
+#~ msgstr "اسمح"
+
+#~ msgid "A new theme has been installed."
+#~ msgstr "ثُبّتت سمة جديدة."
+
+#~ msgid "Undo"
+#~ msgstr "تراجع"
+
+#~ msgid "U"
+#~ msgstr "ت"
+
+#~ msgid "Manage Themes…"
+#~ msgstr "أدِر السمات…"
+
+#~ msgid "M"
+#~ msgstr "س"
+
+#~ msgctxt "webNotifications.remember"
+#~ msgid "Remember this decision"
+#~ msgstr "تذكّر هذا القرار"
+
+#~ msgid "Remember decision for this session"
+#~ msgstr "تذكّر القرار لهذه الجلسة"
+
+#~ msgctxt "webNotifications.dontAllow"
+#~ msgid "Don’t Allow"
+#~ msgstr "لا تسمح"
+
+#~ msgctxt "webNotifications.dontAllow.accesskey"
+#~ msgid "n"
+#~ msgstr "ت"
+
+#~ msgid ""
+#~ "%S can not allow permanent access to your screen without asking which one "
+#~ "to share."
+#~ msgstr ""
+#~ "لا يستطيع %S أن يسمح بمشاركة دائمة لشاشتك بدون السؤال عن أي شاشة ستشارك."
+
+#~ msgid "Restart %S to apply updates"
+#~ msgstr "أعد تشغيل %S لتطبيق التحديثات"
+
+#~ msgid "Background update failed, please download update"
+#~ msgstr "فشل التحديث في الخلفية، من فضلك نزّل التحديث"
+
+#~ msgid "Restart %S"
+#~ msgstr "أعد تشغيل %S"
+
+#~ msgid "Download Update"
+#~ msgstr "نزّل التحديث"
 
 #~ msgid "&Disable"
 #~ msgstr "&عطّل"
