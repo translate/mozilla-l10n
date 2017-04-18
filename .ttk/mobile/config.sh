@@ -19,8 +19,8 @@ OTHER_EXCLUDED_DIRS="calendar editor mail thunderbird chat browser devtools dom 
 
 MOZ_PRODUCT=mobile
 
-MOZ_REPO=mozilla-aurora
-MOZ_DIR="mozilla-aurora"
-L10N_VER=l10n
+MOZ_REPO=mozilla-central
+MOZ_DIR="mozilla-central"
+L10N_VER=l10n-central
 
 alt_src="bn_IN es es_MX fr ru"
