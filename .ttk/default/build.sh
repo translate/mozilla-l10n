@@ -130,7 +130,7 @@ if [ $opt_vc ]; then
 		hg pull $hgverbosity -u
 		hg update $hgverbosity -C
 	else
-		hg clone $hgverbosity http://hg.mozilla.org/releases/${MOZ_REPO}/ ${MOZCENTRAL_DIR}
+		hg clone $hgverbosity http://hg.mozilla.org/${L10N_VER}/ ${MOZCENTRAL_DIR}
 	fi
 fi
 
