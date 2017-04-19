@@ -545,7 +545,7 @@ function workon_list() {
 	echo "Project configs:"
 	(cd $config_base_dir; ls -1 */config.sh | cut -d"/" -f1 | egrep -v "default")
 	logger green "Default" "$(basename $(ls $config_base_dir/*.default 2>/dev/null || echo "None.default") .default)"
-	logger red "Current acive" "$(basename $(ls $config_base_dir/*.workon 2>/dev/null || echo "None.workon") .workon)"
+	logger red "Current active" "$(basename $(ls $config_base_dir/*.workon 2>/dev/null || echo "None.workon") .workon)"
 }
 
 function workon_current() {

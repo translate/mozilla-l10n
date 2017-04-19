@@ -78,7 +78,7 @@ do
 			--time)
 				opt_time="yes"
 			;;
-			*) 
+			*)
 			echo "Unkown option: $option"
 			exit
 			;;
@@ -165,7 +165,7 @@ do
 				hg pull $hgverbosity -u
 				hg update $hgverbosity -C)
 			else
-			        rm -rf ${mozlang}/* 
+			        rm -rf ${mozlang}/*
 			fi
 		else
 		    hg clone $hgverbosity http://hg.mozilla.org/${L10N_VER}/${mozlang} ${mozlang} || mkdir ${mozlang}
@@ -201,8 +201,8 @@ if [ $opt_vc ]; then
 		rm -f ${L10N_ENUS}/${rmfile}
 	done
 	# Cleanup any oddeties in templates-en-US
-	#sed -i '0,/^shouldRestartTitle=.*$/s///'  ${L10N_ENUS}/browser/chrome/browser/preferences/preferences.properties 
-	
+	#sed -i '0,/^shouldRestartTitle=.*$/s///'  ${L10N_ENUS}/browser/chrome/browser/preferences/preferences.properties
+
 	verbose "moz2po - Create POT files from en-US"
 	#for exclude in $RETIRED_PRODUCT_DIRS $OTHER_EXCLUDED_DIRS ".hg"
 	#do
@@ -352,7 +352,7 @@ do
 			fi
 			hg revert  $hgverbosity --no-backup \
 				browser/chrome/browser-region/region.properties \
-				browser/searchplugins/list.txt 
+				browser/searchplugins/list.txt
 		fi
 	fi
 
