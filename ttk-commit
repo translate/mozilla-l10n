@@ -63,11 +63,18 @@ do
 		cd ${base_dir}/build/${L10N_VER}/$mozlang
 		hg addremove $PRODUCT_DIRS $RETIRED_PRODUCT_DIRS
 		hg revert -C $OTHER_EXCLUDED_DIRS
+		echo "** Creating mercurial commit **"
 		hg commit -m "[$mozlang] update from Pootle ($project)"
-		[[ $push ]] && hg push
+		if [[ $push ]]; then
+			echo "** Pushing to mercurial **"
+			hg push
+		fi
 	)
 done
 
-[[ $push ]] && git push
+if [[ $push ]]; then
+	echo "** Pushing to git **"
+	git push
+fi
 [[ $auto ]] && update_last_commit_file
 rm_lock_file
