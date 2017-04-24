@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-18 12:46+0000\n"
-"PO-Revision-Date: 2017-03-13 20:06+0000\n"
+"POT-Creation-Date: 2017-04-21 12:22+0000\n"
+"PO-Revision-Date: 2017-04-19 12:45+0000\n"
 "Last-Translator: milupo <milupo@sorbzilla.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hsb\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Generator: Translate Toolkit 2.1.0\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1489435573.000000\n"
+"X-POOTLE-MTIME: 1492605953.000000\n"
 
 #. # LOCALIZATION NOTE These strings are used inside the Network Monitor
 #. # which is available from the Web Developer sub-menu -> 'Network Monitor'.
@@ -225,24 +225,30 @@ msgstr "Postupowacy sortěrowany"
 msgid "Sorted descending"
 msgstr "Spadowacy sortěrowany"
 
-#. # LOCALIZATION NOTE (networkMenu.empty): This is the label displayed
-#. # in the network table footer when there are no requests available.
-#: networkMenu.empty
+#. # LOCALIZATION NOTE (networkMenu.summary.requestsCount): This label is displayed
+#. # in the network table footer providing the number of requests
+#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
+#: networkMenu.summary.requestsCount
+msgid "One request;%S requests"
+msgstr ""
+
+#. # LOCALIZATION NOTE (networkMenu.summary.requestsCountEmpty): This label is displayed
+#. # in the network table footer when there are no requests
+#: networkMenu.summary.requestsCountEmpty
 msgid "No requests"
 msgstr "Žane naprašowanja"
 
-#. # LOCALIZATION NOTE (networkMenu.summary3): Semi-colon list of plural forms.
-#. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
-#. # This label is displayed in the network table footer providing concise
-#. # information about all requests. Parameters: #1 is the number of requests,
-#. # #2 is the size, #3 is the transferred size, #4 is the number of seconds.
-#: networkMenu.summary3
-msgid ""
-"One request, #2 (transferred: #3), #4;#1 requests, #2 (transferred: #3), #4"
+#. # LOCALIZATION NOTE (networkMenu.summary.transferred): This label is displayed
+#. # in the network table footer providing the transferred size.
+#: networkMenu.summary.transferred
+msgid "%S / %S transferred"
 msgstr ""
-"Jedne naprašowanje, #2 (přenjesene: #3), #4;#1 naprašowani, #2 (přenjesene: "
-"#3), #4;#1 naprašowanja, #2 (přenjesene: #3), #4;#1 naprašowanjow, #2 "
-"(přenjesene: #3), #4;"
+
+#. # LOCALIZATION NOTE (networkMenu.summary.finish): This label is displayed
+#. # in the network table footer providing the transfer time.
+#: networkMenu.summary.finish
+msgid "Finish: %S"
+msgstr ""
 
 #. # LOCALIZATION NOTE (networkMenu.sizeB): This is the label displayed
 #. # in the network menu specifying the size of a request (in bytes).
@@ -385,7 +391,6 @@ msgstr "Pufrowak wuprózdnić"
 #. # LOCALIZATION NOTE (charts.totalSize): This is the label displayed
 #. # in the performance analysis view for total requests size, in kilobytes.
 #: charts.totalSize
-#, fuzzy
 msgid "Size: %S KB"
 msgstr "Wulkosć: %S KB"
 
@@ -645,7 +650,7 @@ msgstr "Dataja"
 #. # in the network table toolbar, above the "protocol" column.
 #: netmonitor.toolbar.protocol
 msgid "Protocol"
-msgstr ""
+msgstr "Protokol"
 
 #. # LOCALIZATION NOTE (netmonitor.toolbar.domain): This is the label displayed
 #. # in the network table toolbar, above the "domain" column.
@@ -657,7 +662,7 @@ msgstr "Domena"
 #. # in the network table toolbar, above the "remoteip" column.
 #: netmonitor.toolbar.remoteip
 msgid "Remote IP"
-msgstr ""
+msgstr "Zdaleny IP"
 
 #. # LOCALIZATION NOTE (netmonitor.toolbar.cause): This is the label displayed
 #. # in the network table toolbar, above the "cause" column.
@@ -684,7 +689,6 @@ msgstr "Přenjeseny"
 #. # in the network table toolbar, above the "size" column, which is the
 #. # uncompressed / decoded size.
 #: netmonitor.toolbar.contentSize
-#, fuzzy
 msgctxt "netmonitor.toolbar.contentSize"
 msgid "Size"
 msgstr "Wulkosć"
@@ -733,7 +737,7 @@ msgstr "Časy"
 #. # in the network details pane identifying the stack-trace tab.
 #: netmonitor.tab.stackTrace
 msgid "Stack Trace"
-msgstr ""
+msgstr "Staplowy slěd"
 
 #. # LOCALIZATION NOTE (netmonitor.tab.security): This is the label displayed
 #. # in the network details pane identifying the security tab.
@@ -835,7 +839,7 @@ msgstr "Wukonowu analyzu přepinać…"
 #. # displayed in the network table header context menu.
 #: netmonitor.toolbar.resetColumns
 msgid "Reset Columns"
-msgstr ""
+msgstr "Špalty wróćo stajić"
 
 #. # LOCALIZATION NOTE (netmonitor.summary.url): This is the label displayed
 #. # in the network details headers tab identifying the URL.
@@ -1013,14 +1017,14 @@ msgstr "Certifikat:"
 #. # for the copy sub-menu in the context menu for a request
 #: netmonitor.context.copy
 msgid "Copy"
-msgstr ""
+msgstr "Kopěrować"
 
 #. # LOCALIZATION NOTE (netmonitor.context.copy.accesskey): This is the access key
 #. # for the copy sub-menu displayed in the context menu for a request
 #: netmonitor.context.copy.accesskey
 msgctxt "netmonitor.context.copy.accesskey"
 msgid "C"
-msgstr ""
+msgstr "K"
 
 #. # LOCALIZATION NOTE (netmonitor.context.copyUrl): This is the label displayed
 #. # on the context menu that copies the selected request's url
@@ -1069,10 +1073,9 @@ msgstr "Jako cURL kopěrować"
 #. # LOCALIZATION NOTE (netmonitor.context.copyAsCUrl.accesskey): This is the access key
 #. # for the Copy as cURL menu item displayed in the context menu for a request
 #: netmonitor.context.copyAsCurl.accesskey
-#, fuzzy
 msgctxt "netmonitor.context.copyAsCurl.accesskey"
 msgid "C"
-msgstr "J"
+msgstr "K"
 
 #. # LOCALIZATION NOTE (netmonitor.context.copyRequestHeaders): This is the label displayed
 #. # on the context menu that copies the selected item's request headers
@@ -1126,13 +1129,13 @@ msgstr "U"
 #. # on the context menu that save the Image
 #: netmonitor.context.saveImageAs
 msgid "Save Image As"
-msgstr ""
+msgstr "Wobraz składować jako"
 
 #. # LOCALIZATION NOTE (netmonitor.context.copyImageAsDataUri.accesskey): This is the access key
 #. # for the Copy Image As Data URI menu item displayed in the context menu for a request
 #: netmonitor.context.saveImageAs.accesskey
 msgid "V"
-msgstr ""
+msgstr "s"
 
 #. # LOCALIZATION NOTE (netmonitor.context.copyAllAsHar): This is the label displayed
 #. # on the context menu that copies all as HAR format
@@ -1245,6 +1248,42 @@ msgstr "Wróćo"
 #: netmonitor.headers.learnMore
 msgid "Learn More"
 msgstr "Dalše informacije"
+
+#. # LOCALIZATION NOTE (netmonitor.status.tooltip.simple): This is the tooltip of the
+#. # column status code, when request is not being cached or is not from a service worker
+#. # %1$S is the status code, %2$S is the status text.
+#: netmonitor.status.tooltip.simple
+msgid "%1$S %2$S"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.status.tooltip.cached): This is the tooltip of
+#. # the column status code, when the request is cached
+#. # %1$S is the status code, %2$S is the status text.
+#: netmonitor.status.tooltip.cached
+msgid "%1$S %2$S (cached)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.status.tooltip.worker): This is the tooltip of
+#. # the column status code, when the request is from a service worker
+#. # %1$S is the status code, %2$S is the status text.
+#: netmonitor.status.tooltip.worker
+msgid "%1$S %2$S (service worker)"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.status.tooltip.cachedworker): This is the tooltip
+#. # of the column status code, when the request is cached and is from a service worker
+#. # %1$S is the status code, %2$S is the status text.
+#: netmonitor.status.tooltip.cachedworker
+msgid "%1$S %2$S (cached, service worker)"
+msgstr ""
+
+#~ msgid ""
+#~ "One request, #2 (transferred: #3), #4;#1 requests, #2 (transferred: #3), "
+#~ "#4"
+#~ msgstr ""
+#~ "Jedne naprašowanje, #2 (přenjesene: #3), #4;#1 naprašowani, #2 "
+#~ "(přenjesene: #3), #4;#1 naprašowanja, #2 (přenjesene: #3), #4;#1 "
+#~ "naprašowanjow, #2 (přenjesene: #3), #4;"
 
 #~ msgctxt "netmonitor.toolbar.size"
 #~ msgid "Size"

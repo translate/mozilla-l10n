@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-18 12:46+0000\n"
+"POT-Creation-Date: 2017-04-21 12:22+0000\n"
 "PO-Revision-Date: 2017-03-14 12:03+0000\n"
 "Last-Translator: Gwenn M <tornoz@laposte.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -237,11 +237,12 @@ msgstr "Touch"
 msgid "Other"
 msgstr "Other"
 
-#. # LOCALIZATION NOTE (blackBoxCheckboxTooltip): The tooltip text to display when
-#. # the user hovers over the checkbox used to toggle black boxing its associated
+#. # LOCALIZATION NOTE (blackboxCheckboxTooltip2): The tooltip text to display when
+#. # the user hovers over the checkbox used to toggle blackboxing its associated
 #. # source.
-#: blackBoxCheckboxTooltip
-msgid "Toggle black boxing"
+#: blackboxCheckboxTooltip2
+#, fuzzy
+msgid "Toggle blackboxing"
 msgstr "Toggle black boxing"
 
 #. # LOCALIZATION NOTE (sources.search.key): Key shortcut to open the search for
@@ -249,6 +250,13 @@ msgstr "Toggle black boxing"
 #: sources.search.key
 msgid "P"
 msgstr "P"
+
+#. # LOCALIZATION NOTE (sources.noSourcesAvailable): Text shown when the debugger
+#. # does not have any sources.
+#: sources.noSourcesAvailable
+#, fuzzy
+msgid "This page has no sources"
+msgstr "This page has no sources."
 
 #. # LOCALIZATION NOTE (sources.searchAlt.key): Alternate key shortcut to open
 #. # the search for searching all the source files the debugger has seen.
@@ -443,11 +451,22 @@ msgstr "Expand Rows"
 msgid "%d of %d results"
 msgstr "%d of %d results"
 
+#. # LOCALIZATION NOTE (sourceSearch.singleResult): Copy shown when there is one result.
+#: editor.singleResult
+msgid "1 result"
+msgstr ""
+
 #. # LOCALIZATION NOTE (editor.noResults): Editor Search bar message
 #. # for when no results found.
 #: editor.noResults
 msgid "no results"
 msgstr "no results"
+
+#. # LOCALIZATION NOTE (editor.searchTypeToggleTitle): Search bar title for
+#. # toggling search type buttons(function search, variable search)
+#: editor.searchTypeToggleTitle
+msgid "Search for:"
+msgstr ""
 
 #. # LOCALIZATION NOTE (editor.addBreakpoint): Editor gutter context menu item
 #. # for adding a breakpoint on a line.
@@ -605,6 +624,30 @@ msgstr "Pretty Print Source"
 msgid "p"
 msgstr "p"
 
+#. # LOCALIZATION NOTE (sourceFooter.blackbox): Tooltip text associated
+#. # with the blackbox button
+#: sourceFooter.blackbox
+msgid "Blackbox Source"
+msgstr ""
+
+#. # LOCALIZATION NOTE (sourceFooter.unblackbox): Tooltip text associated
+#. # with the blackbox button
+#: sourceFooter.unblackbox
+msgid "Unblackbox Source"
+msgstr ""
+
+#. # LOCALIZATION NOTE (sourceFooter.blackbox.accesskey): Access key to blackbox
+#. # an associated source
+#: sourceFooter.blackbox.accesskey
+msgid "b"
+msgstr ""
+
+#. # LOCALIZATION NOTE (sourceFooter.blackboxed): Text associated
+#. # with a blackboxed source
+#: sourceFooter.blackboxed
+msgid "Blackboxed Source"
+msgstr ""
+
 #. # LOCALIZATION NOTE (sourceTabs.closeTabButtonTooltip): The tooltip that is displayed
 #. # for close tab button in source tabs.
 #: sourceTabs.closeTabButtonTooltip
@@ -684,12 +727,6 @@ msgstr "Search Sources…"
 #: sourceSearch.noResults
 msgid "No files matching %S found"
 msgstr "No files matching %S found"
-
-#. # LOCALIZATION NOTE (sourceFooter.debugBtnTooltip): Tooltip text associated
-#. # with the pretty-print button
-#: sourceFooter.debugBtnTooltip
-msgid "Prettify Source"
-msgstr "Prettify Source"
 
 #. # LOCALIZATION NOTE (ignoreExceptions): The pause on exceptions button tooltip
 #. # when the debugger will not pause on exceptions.
@@ -868,14 +905,43 @@ msgstr " →"
 msgid "←"
 msgstr "←"
 
-#: functionSearch.search.placeholder
-msgid "Search Functions…"
+#. # LOCALIZATION NOTE(symbolSearch.search.functionsPlaceholder): The placeholder
+#. # text displayed when the user searches for functions in a file
+#: symbolSearch.search.functionsPlaceholder
+#, fuzzy
+msgid "Search functions…"
 msgstr "Search Functions…"
 
-#: functionSearch.search.key
-msgctxt "functionSearch.search.key"
+#. # LOCALIZATION NOTE(symbolSearch.search.variablesPlaceholder): The placeholder
+#. # text displayed when the user searches for variables in a file
+#: symbolSearch.search.variablesPlaceholder
+msgid "Search variables…"
+msgstr ""
+
+#. # LOCALIZATION NOTE(symbolSearch.search.key): The shortcut (cmd+shift+o) for
+#. # searching for a function or variable
+#: symbolSearch.search.key
+msgctxt "symbolSearch.search.key"
 msgid "O"
-msgstr "O"
+msgstr ""
+
+#. # LOCALIZATION NOTE(symbolSearch.searchModifier.regex): A search option
+#. # when searching text in a file
+#: symbolSearch.searchModifier.regex
+msgid "Regex"
+msgstr ""
+
+#. # LOCALIZATION NOTE(symbolSearch.searchModifier.caseSensitive): A search option
+#. # when searching text in a file
+#: symbolSearch.searchModifier.caseSensitive
+msgid "Case sensitive"
+msgstr ""
+
+#. # LOCALIZATION NOTE(symbolSearch.searchModifier.wholeWord): A search option
+#. # when searching text in a file
+#: symbolSearch.searchModifier.wholeWord
+msgid "Whole word"
+msgstr ""
 
 #. # LOCALIZATION NOTE (resumptionOrderPanelTitle): This is the text that appears
 #. # as a description in the notification panel popup, when multiple debuggers are
@@ -983,6 +1049,19 @@ msgstr "Paused on debugged function"
 #: whyPaused.other
 msgid "Debugger paused"
 msgstr "Debugger paused"
+
+#. # LOCALIZATION NOTE (ctrl): The text that is used for documenting
+#. # keyboard shortcuts that use the control key
+#: ctrl
+msgid "Ctrl"
+msgstr ""
+
+#~ msgid "Prettify Source"
+#~ msgstr "Prettify Source"
+
+#~ msgctxt "functionSearch.search.key"
+#~ msgid "O"
+#~ msgstr "O"
 
 #~ msgid "Search…"
 #~ msgstr "Search…"
