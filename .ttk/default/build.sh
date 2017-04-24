@@ -116,7 +116,6 @@ BUILD_DIR="${base_dir}/build"
 SOURCE_DIR="${base_dir}/source"
 # FIXME rename this
 MOZCENTRAL_DIR="${SOURCE_DIR}/${MOZ_REPO}"
-FFOXCENTRAL_DIR="${SOURCE_DIR}/${FFOX_REPO}"
 PO_DIR="${base_dir}"
 L10N_DIR="${BUILD_DIR}/${L10N_VER}"
 L10N_ENUS="${PO_DIR}/templates-en-US"
@@ -125,14 +124,6 @@ LANGPACK_DIR="/var/www/sites/mozilla/src/pootle/downloads/langpacks/"
 TARBALL_DIR="${BUILD_DIR}/tarball"
 
 if [ $opt_vc ]; then
-	verbose "${FFOX_REPO} - update/pull using Mercurial"
-	if [ -d "${FFOXCENTRAL_DIR}/.hg" ]; then
-		cd ${FFOXCENTRAL_DIR}
-		hg pull $hgverbosity -u
-		hg update $hgverbosity -C
-	else
-		echo "There is no Firefox Central hg repo. Please check it out."
-	fi
 	verbose "${MOZ_REPO} - update/pull using Mercurial"
 	if [ -d "${MOZCENTRAL_DIR}/.hg" ]; then
 		cd ${MOZCENTRAL_DIR}
