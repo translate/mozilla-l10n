@@ -18,7 +18,8 @@ OTHER_EXCLUDED_DIRS="browser devtools dom netwerk security services/sync toolkit
 
 MOZ_PRODUCT=calendar
 
-MOZ_REPO=comm-aurora
-L10N_VER=l10n
+MOZ_REPO=comm-central
+FFOX_REPO="mozilla-central"
+L10N_VER=l10n-central
 
 alt_src="es fr ru"
