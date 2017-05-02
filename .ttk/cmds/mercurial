@@ -31,13 +31,16 @@ function _get_option() {
 	local option=$1
 	case $1 in
 		--clone)
-			command="_clone _set_author _set_push_repo"
+			command="_clone _set_author _set_push_repo _set_rebase_extension"
 			;;
 		--set-author)
 			command="_set_author"
 			;;
 		--set-push-repo)
 			command="_set_push_repo"
+			;;
+		--set-rebase-extension)
+			command="_set_rebase_extension"
 			;;
 		*)
 			usage
@@ -78,6 +81,27 @@ function _set_author(){
 		[ui]
 		username = $mozlang team [Pootle] <https://wiki.mozilla.org/L10n:Teams:$mozlang>
 		EOF
+	fi
+}
+
+function _set_rebase_extension(){
+	mozlang=$(get_language_upstream $*)
+	hgrc=$L10N_DIR/$mozlang/.hg/hgrc
+	has_extensions=$(grep -q "\[extensions\]" $filename)
+	has_rebase_extension=$(grep -q "rebase =" $filename)
+	if [ $has_extensions -eq 0 ] &&	[ $has_rebase_extension -eq 0 ]; then
+		log_warning "Rebase extension already enabled for $mozlang"
+	else
+		if [ $has_extensions -ne 0 ] &&	[ $has_rebase_extension -ne 0 ]; then
+
+			cat >> $hgrc <<-EOF
+
+			[extensions]
+			rebase =
+			EOF
+		else
+			log_warning "Possibly wrong or duplicate [extensions] in `hgrc` for $mozlang. Fix manually."
+		fi
 	fi
 }
 
