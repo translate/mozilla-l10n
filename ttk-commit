@@ -67,7 +67,22 @@ do
 		hg commit -m "[$mozlang] update from Pootle ($project)"
 		if [[ $push ]]; then
 			echo "** Pushing to mercurial **"
-			hg push
+			for i in {1..10}
+			do
+				LOCAL_TIP=$(hg identify --id --rev tip)
+				REMOTE_TIP=$(hg identify --id --rev default default)
+				echo "Local tip:  $LOCAL_TIP"
+				echo "Remote tip:  $REMOTE_TIP"
+				hg pull -b default default
+				hg update
+				hg rebase --dest $REMOTE_TIP --base $LOCAL_TIP
+				hg push
+				status=$?  # Get exit status for `hg push`.
+				if [[ $status -eq 0 ]]; then
+					break
+				fi
+				echo "Failed to push. Rebasing..."
+			done
 		fi
 	)
 done
