@@ -363,7 +363,7 @@ do
 	if [ $opt_compare_locales ]; then
 		verbose "Compare-Locales - to find errors"
 		if [ -f ${MOZCENTRAL_DIR}/${MOZ_PRODUCT}/locales/l10n.ini ]; then
-			compare-locales --ignore-missing ${MOZCENTRAL_DIR}/${MOZ_PRODUCT}/locales/l10n.ini ${L10N_DIR} $mozlang
+			compare-locales ${MOZCENTRAL_DIR}/${MOZ_PRODUCT}/locales/l10n.ini ${L10N_DIR} $mozlang
 		else
 			echo "Can't run compare-locales without ${MOZCENTRAL_DIR} checkout"
 		fi
