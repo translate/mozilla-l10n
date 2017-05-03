@@ -59,6 +59,10 @@ do
 	)
 	ttk-build --vc $lang
 	(cd ${base_dir}; git checkout $pootlelang)
+	if [[ ! -d ${base_dir}/build/${L10N_VER}/$mozlang/.hg ]]; then
+		echo "** No mercurial repo, skipping **"
+		continue
+	fi
 	(
 		cd ${base_dir}/build/${L10N_VER}/$mozlang
 		hg addremove $PRODUCT_DIRS $RETIRED_PRODUCT_DIRS
