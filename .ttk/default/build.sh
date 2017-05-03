@@ -350,9 +350,11 @@ do
 			if [[ -f "${LANGPACK_DIR}/$project/$lang/firefox-$version.$mozlang.langpack.xpi" ]]; then
 				ln -s "${LANGPACK_DIR}/$project/$lang/firefox-$version.$mozlang.langpack.xpi" "${LANGPACK_DIR}/$project/$lang/latest-$project.xpi"
 			fi
-			hg revert  $hgverbosity --no-backup \
-				browser/chrome/browser-region/region.properties \
-				browser/searchplugins/list.txt
+			if [ -d ${L10N_DIR}/${mozlang}/.hg ]; then
+				hg revert $hgverbosity --no-backup \
+					browser/chrome/browser-region/region.properties \
+					browser/searchplugins/list.txt
+			fi
 		fi
 	fi
 
