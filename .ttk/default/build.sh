@@ -158,16 +158,17 @@ do
 	mozlang=$(get_language_upstream $lang)
 	if [ $opt_vc ]; then
 		verbose "Update ${L10N_DIR}/$mozlang"
-		if [ -d ${mozlang} ]; then
-			if [ -d ${mozlang}/.hg ]; then
+		if [ -d ${L10N_DIR}/${mozlang} ]; then
+			if [ -d ${L10N_DIR}/${mozlang}/.hg ]; then
 			        (cd ${mozlang}
 				hg revert $hgverbosity --no-backup --all -r default
 				hg pull $hgverbosity -u
 				hg update $hgverbosity -C)
 			else
-			        rm -rf ${mozlang}/*
+			        rm -rf ${mozlang}
 			fi
-		else
+		fi
+		if [ ! -d ${L10N_DIR}/${mozlang} ]; then
 		    hg clone $hgverbosity http://hg.mozilla.org/${L10N_VER}/${mozlang} ${mozlang} || mkdir ${mozlang}
 		fi
 	fi
