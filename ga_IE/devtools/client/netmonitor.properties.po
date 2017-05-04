@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: firefox\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-21 12:22+0000\n"
+"POT-Creation-Date: 2017-05-04 18:15+0000\n"
 "PO-Revision-Date: 2017-04-23 04:13+0000\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : (n>2 && n<7) ? 2 :"
 "(n>6 && n<11) ? 3 : 4;;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.1.0\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1492920801.000000\n"
 
@@ -222,6 +222,25 @@ msgstr "Sórtáilte: ord ardaitheach"
 msgid "Sorted descending"
 msgstr "Sórtáilte: ord íslitheach"
 
+#. # LOCALIZATION NOTE (networkMenu.summary.tooltip.perf): A tooltip explaining
+#. # what the perf button does
+#: networkMenu.summary.tooltip.perf
+#, fuzzy
+msgid "Start performance analysis"
+msgstr "Tosaigh Anailís ar Fheidhmíocht…"
+
+#. # LOCALIZATION NOTE (networkMenu.summary.tooltip.domContentLoaded): A tooltip explaining
+#. # what the DOMContentLoaded label displays
+#: networkMenu.summary.tooltip.domContentLoaded
+msgid "Time when “DOMContentLoad” event occurred"
+msgstr ""
+
+#. # LOCALIZATION NOTE (networkMenu.summary.tooltip.load): A tooltip explaining
+#. # what the load label displays
+#: networkMenu.summary.tooltip.load
+msgid "Time when “load” event occurred"
+msgstr ""
+
 #. # LOCALIZATION NOTE (networkMenu.summary.requestsCount): This label is displayed
 #. # in the network table footer providing the number of requests
 #. # See: http://developer.mozilla.org/en/docs/Localization_and_Plurals
@@ -235,17 +254,35 @@ msgstr "Iarratas amháin;%S iarratas;%S iarratas;%S n-iarratas;%S iarratas"
 msgid "No requests"
 msgstr "Gan iarratais"
 
+#. # LOCALIZATION NOTE (networkMenu.summary.tooltip.requestsCount): A tooltip explaining
+#. # what the requestsCount label displays
+#: networkMenu.summary.tooltip.requestsCount
+msgid "Number of requests"
+msgstr ""
+
 #. # LOCALIZATION NOTE (networkMenu.summary.transferred): This label is displayed
 #. # in the network table footer providing the transferred size.
 #: networkMenu.summary.transferred
 msgid "%S / %S transferred"
 msgstr "%S / %S aistrithe"
 
+#. # LOCALIZATION NOTE (networkMenu.summary.tooltip.transferred): A tooltip explaining
+#. # what the transferred  label displays
+#: networkMenu.summary.tooltip.transferred
+msgid "Size/transferred size of all requests"
+msgstr ""
+
 #. # LOCALIZATION NOTE (networkMenu.summary.finish): This label is displayed
 #. # in the network table footer providing the transfer time.
 #: networkMenu.summary.finish
 msgid "Finish: %S"
 msgstr "Críoch: %S"
+
+#. # LOCALIZATION NOTE (networkMenu.summary.tooltip.finish): A tooltip explaining
+#. # what the finish label displays
+#: networkMenu.summary.tooltip.finish
+msgid "Total time needed to load all requests"
+msgstr ""
 
 #. # LOCALIZATION NOTE (networkMenu.sizeB): This is the label displayed
 #. # in the network menu specifying the size of a request (in bytes).
@@ -298,6 +335,56 @@ msgstr "oibrí seirbhíse"
 #: networkMenu.totalMS
 msgid "→ %S ms"
 msgstr "→ %S ms"
+
+#. # This string is used to concatenate tooltips (netmonitor.waterfall.tooltip.*)
+#. # in the requests waterfall for total time (in milliseconds). \\u0020 represents
+#. # a whitespace. You can replace this with a different character, e.g. an hyphen
+#. # or a period, if a comma doesn't work for your language.
+#: netmonitor.waterfall.tooltip.separator
+msgid ", "
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.waterfall.tooltip.total): This is part of the tooltip
+#. # displayed in the requests waterfall for total time (in milliseconds).
+#: netmonitor.waterfall.tooltip.total
+msgid "Total %S ms"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.waterfall.tooltip.blocked): This is part of the tooltip
+#. # displayed in the requests waterfall for blocked time (in milliseconds).
+#: netmonitor.waterfall.tooltip.blocked
+msgid "Blocked %S ms"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.waterfall.tooltip.dns): This is part of the tooltip
+#. # displayed in the requests waterfall for dns time (in milliseconds).
+#: netmonitor.waterfall.tooltip.dns
+msgid "DNS %S ms"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.waterfall.tooltip.connect): This is part of the tooltip
+#. # displayed in the requests waterfall for connect time (in milliseconds).
+#: netmonitor.waterfall.tooltip.connect
+msgid "Connect %S ms"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.waterfall.tooltip.send): This is part of the tooltip
+#. # displayed in the requests waterfall for send time (in milliseconds).
+#: netmonitor.waterfall.tooltip.send
+msgid "Send %S ms"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.waterfall.tooltip.wait): This is part of the tooltip
+#. # displayed in the requests waterfall for wait time (in milliseconds).
+#: netmonitor.waterfall.tooltip.wait
+msgid "Wait %S ms"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.waterfall.tooltip.receive): This is part of the tooltip
+#. # displayed in the requests waterfall for receive time (in milliseiconds).
+#: netmonitor.waterfall.tooltip.receive
+msgid "Receive %S ms"
+msgstr ""
 
 #. # LOCALIZATION NOTE (networkMenu.millisecond): This is the label displayed
 #. # in the network menu specifying timing interval divisions (in milliseconds).
@@ -672,6 +759,28 @@ msgstr "Cúis"
 msgctxt "netmonitor.toolbar.type"
 msgid "Type"
 msgstr "Cineál"
+
+#. # LOCALIZATION NOTE (netmonitor.toolbar.cookies): This is the label displayed
+#. # in the network table toolbar, above the "cookies" column.
+#: netmonitor.toolbar.cookies
+#, fuzzy
+msgctxt "netmonitor.toolbar.cookies"
+msgid "Cookies"
+msgstr "Fianáin"
+
+#. # LOCALIZATION NOTE (netmonitor.toolbar.setCookies): This is the label displayed
+#. # in the network table toolbar, above the "set cookies" column.
+#. # Set-Cookie is a HTTP response header. This string is the plural form of it.
+#. # See https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie
+#: netmonitor.toolbar.setCookies
+msgid "Set-Cookies"
+msgstr ""
+
+#. # LOCALIZATION NOTE (netmonitor.toolbar.cookies): This is the label displayed
+#. # in the network table toolbar, above the "scheme" column.
+#: netmonitor.toolbar.scheme
+msgid "Scheme"
+msgstr ""
 
 #. # LOCALIZATION NOTE (netmonitor.toolbar.transferred): This is the label displayed
 #. # in the network table toolbar, above the "transferred" column, which is the
