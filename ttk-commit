@@ -75,6 +75,9 @@ do
 			do
 				LOCAL_TIP=$(hg identify --id --rev tip)
 				REMOTE_TIP=$(hg identify --id --rev default default)
+				if [[ $LOCAL_TIP == $REMOTE_TIP ]]; then
+					break
+				fi
 				echo "Local tip:  $LOCAL_TIP"
 				echo "Remote tip:  $REMOTE_TIP"
 				hg pull -b default default
