@@ -18,8 +18,8 @@ OTHER_EXCLUDED_DIRS="editor mail thunderbird chat mobile embedding calendar suit
 
 MOZ_PRODUCT=browser
 
-MOZ_REPO=mozilla-central
-MOZ_DIR="mozilla-central"
-L10N_VER=l10n-central
+MOZ_REPO=mozilla-beta
+MOZ_DIR="mozilla-beta"
+L10N_VER=l10n
 
 alt_src="bn_IN es es_MX fr ru"

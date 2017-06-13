@@ -169,7 +169,7 @@ do
 			fi
 		fi
 		if [ ! -d ${L10N_DIR}/${mozlang} ]; then
-		    hg clone $hgverbosity http://hg.mozilla.org/${L10N_VER}/${mozlang} ${mozlang} || mkdir ${mozlang}
+		    hg clone $hgverbosity http://hg.mozilla.org/releases/${L10N_VER}/${MOZ_REPO}/${mozlang} ${mozlang} || mkdir ${mozlang}
 		fi
 	fi
 done
