@@ -87,12 +87,12 @@ function _set_author(){
 function _set_rebase_extension(){
 	mozlang=$(get_language_upstream $*)
 	hgrc=$L10N_DIR/$mozlang/.hg/hgrc
-	has_extensions=$(grep -q "\[extensions\]" $filename)
-	has_rebase_extension=$(grep -q "rebase =" $filename)
-	if [ $has_extensions -eq 0 ] &&	[ $has_rebase_extension -eq 0 ]; then
+	has_extensions=$(grep "\[extensions\]" ${hgrc})
+	has_rebase_extension=$(grep "rebase =" ${hgrc})
+	if [ "$has_extensions" != "" ] &&	[ "$has_rebase_extension" != "" ]; then
 		log_warning "Rebase extension already enabled for $mozlang"
 	else
-		if [ $has_extensions -ne 0 ] &&	[ $has_rebase_extension -ne 0 ]; then
+		if [ "$has_extensions" == "" ] && [ "$has_rebase_extension" == "" ]; then
 
 			cat >> $hgrc <<-EOF
 
@@ -100,7 +100,7 @@ function _set_rebase_extension(){
 			rebase =
 			EOF
 		else
-			log_warning "Possibly wrong or duplicate [extensions] in `hgrc` for $mozlang. Fix manually."
+			log_warning "Possibly wrong or duplicate [extensions] in 'hgrc' for $mozlang. Fix manually."
 		fi
 	fi
 }
