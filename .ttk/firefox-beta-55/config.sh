@@ -1,4 +1,4 @@
-project=firefox
+project=firefox_beta
 instance=mozilla
 user=pootlesync
 server=mozilla.locamotion.org
