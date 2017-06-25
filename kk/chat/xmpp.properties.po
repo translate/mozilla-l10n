@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-17 12:19+0000\n"
-"PO-Revision-Date: 2017-06-18 17:55+0000\n"
+"PO-Revision-Date: 2017-06-25 01:38+0000\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: kk\n"
@@ -16,9 +16,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 1.14.0-rc1\n"
+"X-Generator: Pootle 2.8\n"
 "X-Merge-On: location\n"
-"X-POOTLE-MTIME: 1497808542.000000\n"
+"X-POOTLE-MTIME: 1498354690.000000\n"
 
 #. # LOCALIZATION NOTE (connection.*)
 #. #   These will be displayed in the account manager in order to show the progress
@@ -108,6 +108,7 @@ msgstr "Сервер ұсынған аутентификация тәсілде�
 msgid ""
 "The server only supports authentication by sending the password in cleartext"
 msgstr ""
+"Сервер парольді тек ашық мәтінмен жіберу арқылы аутентификация түрін қолдайды"
 
 #: connection.error.authenticationFailure
 msgid "Authentication failure"
@@ -153,7 +154,7 @@ msgstr "Кіру мүмкін емес: %S"
 #. #   %S is the name of the MUC room.
 #: conversation.error.joinForbidden
 msgid "Couldn't join %S as you are banned from this room."
-msgstr ""
+msgstr "%S ішіне кіру мүмкін емес, өйткені сізге оған кіруге тыйым салынған."
 
 #: conversation.error.joinFailedNotAuthorized
 msgid "Registration required: You are not authorized to join this room."
@@ -161,7 +162,7 @@ msgstr "Тіркелу керек: Сізге бұл бөлмеге кіру ү�
 
 #: conversation.error.creationFailedNotAllowed
 msgid "Access restricted: You are not allowed to create rooms."
-msgstr ""
+msgstr "Рұқсат етілмеген: Сізде бөлмелерді жасауға рұқсат жоқ."
 
 #. #   This is displayed in a conversation as an error message when remote server
 #. #   is not found.
@@ -171,10 +172,12 @@ msgid ""
 "Could not join the room %S as the server the room is hosted on could not be "
 "reached."
 msgstr ""
+"%S бөлмесіне кіру мүмкін емес, өйткені ол орналасқан серверге жету мүмкін "
+"емес."
 
 #: conversation.error.changeTopicFailedNotAuthorized
 msgid "You are not authorized to set the topic of this room."
-msgstr ""
+msgstr "Сізде бұл бөлменің тақырыбын орнатуға құқығыңыз жоқ."
 
 #. #   This is displayed in a conversation as an error message when the user sends
 #. #   a message to a room that he is not in.
@@ -184,6 +187,8 @@ msgstr ""
 msgid ""
 "Message could not be sent to %1$S as you are no longer in the room: %2$S"
 msgstr ""
+"Хабарламаны %1$S атына жіберу мүмкін емес, өйткені сіз енді бөлмеде емессіз: "
+"%2$S"
 
 #. #   This is displayed in a conversation as an error message when the user sends
 #. #   a message to a room that the recipient is not in.
@@ -194,11 +199,13 @@ msgid ""
 "Message could not be sent to %1$S as the recipient is no longer in the room: "
 "%2$S"
 msgstr ""
+"Хабарламаны %1$S атына жіберу мүмкін емес, өйткені алушы енді бөлмеде емес: "
+"%2$S"
 
 #. #   These are displayed in a conversation as a system error message.
 #: conversation.error.remoteServerNotFound
 msgid "Could not reach the recipient's server."
-msgstr ""
+msgstr "Алушының серверіне жету мүмкін емес."
 
 #: conversation.error.unknownSendError
 msgid "An unknown error occurred on sending this message."
@@ -207,7 +214,7 @@ msgstr "Бұл хабарламаны жіберу кезінде белгісі
 #. #   %S is the name of the message recipient.
 #: conversation.error.sendServiceUnavailable
 msgid "It is not possible to send messages to %S at this time."
-msgstr ""
+msgstr "Ағымдағы уақытта %S атына хабарламаларды жіберу мүмкін емес."
 
 #. #   %S is the nick of participant that is not in room.
 #: conversation.error.nickNotInRoom
@@ -217,54 +224,64 @@ msgstr "%S бөлмеде емес."
 #: conversation.error.banCommandAnonymousRoom
 msgid "You can't ban participants from anonymous rooms. Try /kick instead."
 msgstr ""
+"Қатысушыларға анонимды бөлмелерге кіруге тыйым сала алмайсыз. Орнына /kick "
+"қолданыңыз."
 
 #: conversation.error.banKickCommandNotAllowed
 msgid ""
 "You don't have the required privileges to remove this participant from the "
 "room."
-msgstr ""
+msgstr "Бұл бөлмеден қатысушыны өшіру үшін керек рұқсаттарыңыз жоқ."
 
 #: conversation.error.banKickCommandConflict
 msgid "Sorry, you can't remove yourself from the room."
-msgstr ""
+msgstr "Кешіріңіз, бөлмеден өзіңізді өшіре алмайсыз."
 
 #: conversation.error.changeNickFailedConflict
 msgid "Could not change your nick to %S as this nick is already in use."
 msgstr ""
+"Ник атыңызды %S етіп өзгерту мүмкін емес, өйткені ол ник қолданылуда болып "
+"тұр."
 
 #: conversation.error.changeNickFailedNotAcceptable
 msgid "Could not change your nick to %S as nicks are locked down in this room."
 msgstr ""
+"Ник атыңызды %S етіп өзгерту мүмкін емес, өйткені бұл бөлмеде никтерді "
+"өзгерту рұқсат етілмеген."
 
 #: conversation.error.inviteFailedForbidden
 msgid "You don't have the required privileges to invite users to this room."
-msgstr ""
+msgstr "Бұл бөлмеге қатысушыларды шақыру үшін керек рұқсаттарыңыз жоқ."
 
 #. #   %S is the jid of user that is invited.
 #: conversation.error.failedJIDNotFound
 msgid "Could not reach %S."
-msgstr ""
+msgstr "%S пайдаланушысына жету мүмкін емес."
 
 #. #   %S is the jid that is invalid.
 #: conversation.error.invalidJID
 msgid ""
 "%S is an invalid jid (Jabber identifiers must be of the form user@domain)."
 msgstr ""
+"%S - жарамсыз jid (Jabber идентификаторлары пайдаланушы@домен түрінде болуы "
+"тиіс)."
 
 #: conversation.error.commandFailedNotInRoom
 msgid "You have to rejoin the room to be able to use this command."
-msgstr ""
+msgstr "Бұл команданы қолдану үшін сізге бөлмеге қайта кіру керек."
 
 #. #   %S is the name of the recipient.
 #: conversation.error.resourceNotAvailable
 msgid "You must talk first as %S could be connected with more than one client."
 msgstr ""
+"Сізге бірінші болып сөйлеу керек, өйткені %S бірнеше клиенттен байланысқан "
+"болуы мүмкін."
 
 #. # LOCALIZATION NOTE (conversation.error.version.*):
 #. #   %S is the name of the recipient.
 #: conversation.error.version.unknown
 msgid "%S's client does not support querying for its software version."
-msgstr ""
+msgstr "%S клиенті өзінің БҚ нұсқасын сұрауды қолдамайды."
 
 #. # LOCALIZATION NOTE (tooltip.*):
 #. #   These are the titles of lines of information that will appear in
@@ -305,7 +322,7 @@ msgstr "Пайдаланушы аты"
 
 #: tooltip.title
 msgid "Title"
-msgstr ""
+msgstr "Лауазымы"
 
 #: tooltip.organization
 msgid "Organization"
@@ -313,7 +330,7 @@ msgstr "Ұйым"
 
 #: tooltip.locality
 msgid "Locality"
-msgstr ""
+msgstr "Орналасуы"
 
 #: tooltip.country
 msgid "Country"
@@ -350,23 +367,23 @@ msgstr "_Пароль"
 #. #   invitation.
 #: conversation.muc.invitationWithReason2
 msgid "%1$S has invited you to join %2$S: %3$S"
-msgstr ""
+msgstr "%1$S сізді %2$S қатысуға шақырды: %3$S"
 
 #. #   %3$S is the password of the room.
 #. #   %4$S is the reason which is a message provided by the person sending the
 #. #   invitation.
 #: conversation.muc.invitationWithReason2.password
 msgid "%1$S has invited you to join %2$S with password %3$S: %4$S"
-msgstr ""
+msgstr "%1$S сізді %3$S паролімен %2$S қатысуға шақырды: %4$S"
 
 #: conversation.muc.invitationWithoutReason
 msgid "%1$S has invited you to join %2$S"
-msgstr ""
+msgstr "%1$S сізді %2$S қатысуға шақырды"
 
 #. #   %3$S is the password of the room.
 #: conversation.muc.invitationWithoutReason.password
 msgid "%1$S has invited you to join %2$S with password %3$S"
-msgstr ""
+msgstr "%1$S сізді %3$S паролімен %2$S қатысуға шақырды"
 
 #. # LOCALIZATION NOTE (conversation.muc.join):
 #. #   This is displayed as a system message when a participant joins room.
@@ -421,46 +438,42 @@ msgstr "%1$S сіздің шақыруыңызды тайдырды: %2$S"
 #. #   %2$S is the reason.
 #. #   %3$S is the person who is banning.
 #: conversation.message.banned
-#, fuzzy
 msgid "%1$S has been banned from the room."
-msgstr "%1$S бөлмеден тебілді."
+msgstr "%1$S үшін бөлмеге кіруге тыйым салынған."
 
 #: conversation.message.banned.reason
-#, fuzzy
 msgid "%1$S has been banned from the room: %2$S"
-msgstr "%1$S бөлмеден тебілді: %2$S"
+msgstr "%1$S үшін бөлмеге кіруге тыйым салынған: %2$S"
 
 #. #   %1$S is the person who is banning.
 #. #   %2$S is the participant that is banned.
 #. #   %3$S is the reason.
 #: conversation.message.banned.actor
 msgid "%1$S has banned %2$S from the room."
-msgstr ""
+msgstr "%1$S %2$S пайдаланушысына бөлмеге кіруге тыйым салған."
 
 #: conversation.message.banned.actor.reason
-#, fuzzy
 msgid "%1$S has banned %2$S from the room: %3$S"
-msgstr "%1$S бөлмеден тебілді: %2$S"
+msgstr "%1$S %2$S үшін бөлмеге кіруге тыйым салған: %3$S"
 
 #: conversation.message.banned.you
 msgid "You have been banned from the room."
-msgstr ""
+msgstr "Сізге бөлмеге кіруге тыйым салынған."
 
 #. #   %1$S is the reason.
 #: conversation.message.banned.you.reason
 msgid "You have been banned from the room: %1$S"
-msgstr ""
+msgstr "Сізге бөлмеге кіруге тыйым салынған: %1$S"
 
 #. #   %1$S is the person who is banning.
 #. #   %2$S is the reason.
 #: conversation.message.banned.you.actor
 msgid "%1$S has banned you from the room."
-msgstr ""
+msgstr "%1$S сіз үшін бөлмеге кіруге тыйым салған."
 
 #: conversation.message.banned.you.actor.reason
-#, fuzzy
 msgid "%1$S has banned you from the room: %2$S"
-msgstr "%1$S бөлмеден тебілді: %2$S"
+msgstr "%1$S сіз үшін бөлмеге кіруге тыйым салған: %2$S"
 
 #. # LOCALIZATION NOTE (conversation.message.kicked.*):
 #. #   These are displayed as a system message when a participant is kicked from
@@ -469,44 +482,41 @@ msgstr "%1$S бөлмеден тебілді: %2$S"
 #. #   %2$S is the reason.
 #: conversation.message.kicked
 msgid "%1$S has been kicked from the room."
-msgstr "%1$S бөлмеден тебілді."
+msgstr "%1$S бөлмеден шығарып жіберілді."
 
 #: conversation.message.kicked.reason
 msgid "%1$S has been kicked from the room: %2$S"
-msgstr "%1$S бөлмеден тебілді: %2$S"
+msgstr "%1$S бөлмеден шығарып жіберілді: %2$S"
 
 #. #   %1$S is the person who is kicking.
 #. #   %2$S is the participant that is kicked.
 #. #   %3$S is the reason.
 #: conversation.message.kicked.actor
 msgid "%1$S has kicked %2$S from the room."
-msgstr ""
+msgstr "%1$S %2$S пайдаланушысын бөлмеден шығарып жіберді."
 
 #: conversation.message.kicked.actor.reason
 msgid "%1$S has kicked %2$S from the room: %3$S"
-msgstr ""
+msgstr "%1$S %2$S пайдаланушысын бөлмеден шығарып жіберді: %3$S"
 
 #: conversation.message.kicked.you
-#, fuzzy
 msgid "You have been kicked from the room."
-msgstr "%1$S бөлмеден тебілді."
+msgstr "Сізді бөлмеден шығарып жіберді."
 
 #. #   %1$S is the reason.
 #: conversation.message.kicked.you.reason
-#, fuzzy
 msgid "You have been kicked from the room: %1$S"
-msgstr "%1$S бөлмеден тебілді: %2$S"
+msgstr "Сізді бөлмеден шығарып жіберді: %1$S"
 
 #. #   %1$S is the person who is kicking.
 #. #   %2$S is the reason.
 #: conversation.message.kicked.you.actor
 msgid "%1$S has kicked you from the room."
-msgstr ""
+msgstr "%1$S сізді бөлмеден шығарып жіберді."
 
 #: conversation.message.kicked.you.actor.reason
-#, fuzzy
 msgid "%1$S has kicked you from the room: %2$S"
-msgstr "%1$S бөлмеден тебілді: %2$S"
+msgstr "%1$S сізді бөлмеден шығарып жіберді: %2$S"
 
 #. # LOCALIZATION NOTE (conversation.message.removedNonMember.*):
 #. #   These are displayed as a system message when a participant is removed from
@@ -518,18 +528,24 @@ msgid ""
 "%1$S has been removed from the room because its configuration was changed to "
 "members-only."
 msgstr ""
+"%1$S бөлмеден өшірілді, өйткені бөлме баптаулары тек қатысушылар үшін етіп "
+"өзгертілді."
 
 #: conversation.message.removedNonMember.actor
 msgid ""
 "%1$S has been removed from the room because %2$S has changed it to members-"
 "only."
 msgstr ""
+"%1$S бөлмеден өшірілді, өйткені %2$S бөлме баптауларын тек қатысушылар үшін "
+"етіп өзгертті."
 
 #: conversation.message.removedNonMember.you
 msgid ""
 "You have been removed from the room because its configuration has been "
 "changed to members-only."
 msgstr ""
+"Сіз бөлмеден өшірілдіңіз, өйткені бөлме баптаулары тек қатысушылар үшін етіп "
+"өзгертілді."
 
 #. #   %1$S is the person who changed the room configuration.
 #: conversation.message.removedNonMember.you.actor
@@ -537,13 +553,15 @@ msgid ""
 "You have been removed from the room because %1$S has changed it to members-"
 "only."
 msgstr ""
+"Сіз бөлмеден өшірілдіңіз, өйткені %1$S бөлме баптауларын тек қатысушылар "
+"үшін етіп өзгертті."
 
 #. # LOCALIZATION NOTE (conversation.message.MUCShutdown):
 #. #   These are displayed as a system message when a participant is removed from
 #. #   a room because of a system shutdown.
 #: conversation.message.mucShutdown
 msgid "You have been removed from the room because of a system shutdown."
-msgstr ""
+msgstr "Сіз бөлмеден өшірілдіңіз, өйткені жүйе сөндірілді."
 
 #. # LOCALIZATION NOTE (conversation.message.version*):
 #. #   %1$S is the name of the user whose version was requested.
@@ -552,22 +570,22 @@ msgstr ""
 #. #   %4$S is the operating system(OS) response from the client.
 #: conversation.message.version
 msgid "%1$S is using \"%2$S %3$S\"."
-msgstr ""
+msgstr "%1$S \"%2$S %3$S\" қолдануда."
 
 #: conversation.message.versionWithOS
 msgid "%1$S is using \"%2$S %3$S\" on %4$S."
-msgstr ""
+msgstr "%1$S %4$S негізіндегі \"%2$S %3$S\" қолдануда."
 
 #. # LOCALIZATION NOTE (options.*):
 #. #   These are the protocol specific options shown in the account manager and
 #. #   account wizard windows.
 #: options.resource
 msgid "Resource"
-msgstr ""
+msgstr "Ресурс"
 
 #: options.priority
 msgid "Priority"
-msgstr ""
+msgstr "Приоритет"
 
 #: options.connectionSecurity
 msgid "Connection security"
@@ -605,7 +623,7 @@ msgstr "Google Talk"
 
 #: odnoklassniki.protocolName
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Одноклассники"
 
 #. # LOCALIZATION NOTE (gtalk.usernameHint):
 #. #  This is displayed inside the accountUsernameInfoWithDescription
@@ -621,7 +639,7 @@ msgstr "эл. пошта адресі"
 #. #  configuring a Odnoklassniki account.
 #: odnoklassniki.usernameHint
 msgid "Profile ID"
-msgstr ""
+msgstr "Профиль идентификаторы"
 
 #. # LOCALZIATION NOTE (command.*):
 #. #  These are the help messages for each command.
@@ -650,18 +668,24 @@ msgid ""
 "%S &lt;nick&gt;[&lt;message&gt;]: Ban someone from the room. You must be a "
 "room administrator to do this."
 msgstr ""
+"%S &lt;nick&gt;[&lt;message&gt;]: Біреуге бөлмеге кіруге тыйым салу. Бұны "
+"жасау үшін, бөлме әкімшісі болуыңыз керек."
 
 #: command.kick
 msgid ""
 "%S &lt;nick&gt;[&lt;message&gt;]: Remove someone from the room. You must be "
 "a room moderator to do this."
 msgstr ""
+"%S &lt;nick&gt;[&lt;message&gt;]: Біреуді бөлмеден өшіру. Бұны жасау үшін, "
+"бөлме әкімшісі болуыңыз керек."
 
 #: command.invite
 msgid ""
 "%S &lt;jid&gt;[&lt;message&gt;]: Invite a user to join the current room with "
 "an optional message."
 msgstr ""
+"%S &lt;jid&gt;[&lt;message&gt;]: Пайдаланушыны міндетті емес хабарламамен "
+"ағымдағы бөлмеге кіруге шақыру."
 
 #: command.inviteto
 msgid ""
@@ -684,11 +708,12 @@ msgid ""
 "%S &lt;nick&gt; &lt;message&gt;: Send a private message to a participant in "
 "the room."
 msgstr ""
+"%S &lt;nick&gt; &lt;message&gt;: Бөлме қатысушысына жеке хабарламаны жіберу."
 
 #: command.version
 msgid ""
 "%S: Request information about the client your conversation partner is using."
-msgstr ""
+msgstr "%S: Сөйлесіп жатқан адамның клиент нұсқасы ақпаратын сұрау."
 
 #~ msgid "Unknown error"
 #~ msgstr "Белгісіз қате"
