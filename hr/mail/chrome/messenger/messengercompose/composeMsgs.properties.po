@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-24 10:06+0000\n"
+"POT-Creation-Date: 2017-07-11 07:45+0000\n"
 "PO-Revision-Date: 2017-01-07 22:45+0000\n"
 "Last-Translator: Mihovil Stanić <mihovil@miho.im>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 2.1.0\n"
+"X-Generator: Translate Toolkit 2.2.3\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1483829125.000000\n"
 
@@ -442,12 +442,17 @@ msgctxt "saveDlogTitle"
 msgid "Save Message"
 msgstr "Spremi poruku"
 
-#. ## LOCALIZATION NOTE (SaveDlogMessages): %1$S is the folder name
-#: saveDlogMessages
+#. ## LOCALIZATION NOTE (saveDlogMessages2): Do not translate the words %1$S and \n.
+#. ## %1$S is replaced by the folder name configured for saving drafts (typically the "Drafts" folder).
+#. ## Translate "Write" to match the translation of item "windowTitlePrefix" below.
+#: saveDlogMessages2
 msgid ""
-"Message has not been sent. Do you want to save the message in your drafts "
-"folder (%1$S)?"
-msgstr "Poruka nije poslana. Želite li spremiti poruku u mapu Skice (%1$S)?"
+"Message has not been sent or saved in your drafts folder (%1$S).\n"
+"\"Save\" copies the message to your drafts folder (%1$S) and closes the "
+"Write window.\n"
+"\"Don't Save\" closes the Write window without saving a draft.\n"
+"\"Cancel\" allows you continue writing without saving a draft."
+msgstr ""
 
 #. ## generics string
 #: defaultSubject
@@ -990,11 +995,21 @@ msgstr "Potrebna je lozinka za poslužitelj odlazne pošte (SMTP)"
 msgid "Remove Attachment;Remove Attachments"
 msgstr "Ukloni privitak;Ukloni privitke"
 
-#. ## LOCALIZATION NOTE(errorSavingMsg): Do not translate the word %S. It
-#. ## will be replaced with the name of the folder the message is being saved to.
-#: errorSavingMsg
-msgid "There was an error saving the message to %S. Retry?"
-msgstr "Došlo je do greške prilikom spremanja poruke u %S. Pokušati ponovno?"
+#. ## LOCALIZATION NOTE(promptToSaveSentLocally): Do not translate the stings %1$S, %2$S, %3$S and \n.
+#. ## %2$S will be replaced with the account name. $1$S will be replaced by the folder name
+#. ## configured to contain saved sent messages (typically the "Sent" folder).
+#. ## %3$S will be replaced with the local folders account name (typically "Local Folders").
+#. ## Translate "Write" to match the translation of item "windowTitlePrefix" above.
+#: promptToSaveSentLocally
+msgid ""
+"Your message was sent but not saved to your sent folder (%1$S) probably "
+"because of network errors.\n"
+"\"Retry\" attempts the save again.\n"
+"\"Save\" copies the message to %3$S/%1$S-%2$S and closes the Write window if "
+"it is present.\n"
+"\"Cancel\" does not save the sent message and closes the Write window if it "
+"is present."
+msgstr ""
 
 #: errorFilteringMsg
 msgid ""
@@ -1007,6 +1022,46 @@ msgstr ""
 #: errorCloudFileAuth.title
 msgid "Authentication Error"
 msgstr "Greška prilikom autentifikacije"
+
+#. ## LOCALIZATION NOTE(promptToSaveDraftLocally): Do not translate the stings %1$S, %2$S, %3$S and \n.
+#. ## %2$S will be replaced with the account name. $1$S will be replaced by the folder name
+#. ## configured to contain saved draft messages (typically the "Drafts" folder).
+#. ## %3$S will be replaced with the local folders account name (typically "Local Folders").
+#: promptToSaveDraftLocally
+msgid ""
+"Your draft message was not saved to your drafts folder (%1$S) probably "
+"because of network errors.\n"
+"\"Retry\" attempts to save again.\n"
+"\"Save\" copies the message to %3$S/%1$S-%2$S and you can continue writing.\n"
+"\"Cancel\" allows you to continue writing without saving your draft."
+msgstr ""
+
+#: buttonLabelRetry
+msgid "Retry"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(promptToSaveTemplateLocally): Do not translate the stings %1$S, %2$S, %3$S and \n.
+#. ## %2$S will be replaced with the account name. $1$S will be replaced by the folder name
+#. ## configured to contain saved templates (typically the "Templates" folder).
+#. ## %3$S will be replaced with the local folders account name (typically "Local Folders").
+#: promptToSaveTemplateLocally
+msgid ""
+"Your template was not saved to your templates folder (%1$S) probably because "
+"of network errors.\n"
+"\"Retry\" attempts to save again.\n"
+"\"Save\" copies the message to %3$S/%1$S-%2$S and you can continue writing.\n"
+"\"Cancel\" allows you to continue writing without saving your template."
+msgstr ""
+
+#. ## LOCALIZATION NOTE(saveToLocalFoldersFailed): Message appears after normal
+#. ## save fails (e.g., to Sent) and save to Local Folders also fails. This could
+#. ## occur if network is down and filesystem problems are present such as disk
+#. ## full, permission issues or hardware failure.
+#: saveToLocalFoldersFailed
+msgid ""
+"Unable to save your message to local folders. Possibly out of file storage "
+"space."
+msgstr ""
 
 #. ## LOCALIZATION NOTE(errorCloudFileAuth.message):
 #. ## %1$S is the name of the online storage service against which the authentication failed.
@@ -1174,6 +1229,15 @@ msgstr "Postavke"
 #: blockedContentPrefAccesskeyUnix
 msgid "P"
 msgstr "P"
+
+#~ msgid ""
+#~ "Message has not been sent. Do you want to save the message in your drafts "
+#~ "folder (%1$S)?"
+#~ msgstr "Poruka nije poslana. Želite li spremiti poruku u mapu Skice (%1$S)?"
+
+#~ msgid "There was an error saving the message to %S. Retry?"
+#~ msgstr ""
+#~ "Došlo je do greške prilikom spremanja poruke u %S. Pokušati ponovno?"
 
 #~ msgid ""
 #~ "An error occurred sending mail: SMTP server error. The server responded:  "
