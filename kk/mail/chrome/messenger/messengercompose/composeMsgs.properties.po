@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-24 10:06+0000\n"
+"POT-Creation-Date: 2017-07-11 07:45+0000\n"
 "PO-Revision-Date: 2017-06-10 12:48+0000\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.2.3\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1497098910.000000\n"
 
@@ -439,14 +439,17 @@ msgctxt "saveDlogTitle"
 msgid "Save Message"
 msgstr "Хабарламаны сақтау"
 
-#. ## LOCALIZATION NOTE (SaveDlogMessages): %1$S is the folder name
-#: saveDlogMessages
+#. ## LOCALIZATION NOTE (saveDlogMessages2): Do not translate the words %1$S and \n.
+#. ## %1$S is replaced by the folder name configured for saving drafts (typically the "Drafts" folder).
+#. ## Translate "Write" to match the translation of item "windowTitlePrefix" below.
+#: saveDlogMessages2
 msgid ""
-"Message has not been sent. Do you want to save the message in your drafts "
-"folder (%1$S)?"
+"Message has not been sent or saved in your drafts folder (%1$S).\n"
+"\"Save\" copies the message to your drafts folder (%1$S) and closes the "
+"Write window.\n"
+"\"Don't Save\" closes the Write window without saving a draft.\n"
+"\"Cancel\" allows you continue writing without saving a draft."
 msgstr ""
-"Хабарлама жіберілген жоқ. Оны сіздің шимай қағаз бумасына сақтау керек пе "
-"(%1$S)?"
 
 #. ## generics string
 #: defaultSubject
@@ -984,11 +987,21 @@ msgstr "Шығыс серверінің (SMTP) паролі керек"
 msgid "Remove Attachment;Remove Attachments"
 msgstr "Салынымды өшіру;Салынымдарды өшіру"
 
-#. ## LOCALIZATION NOTE(errorSavingMsg): Do not translate the word %S. It
-#. ## will be replaced with the name of the folder the message is being saved to.
-#: errorSavingMsg
-msgid "There was an error saving the message to %S. Retry?"
-msgstr "%S ішіне хабарламаны сақтау қатесі. Қайталау керек пе?"
+#. ## LOCALIZATION NOTE(promptToSaveSentLocally): Do not translate the stings %1$S, %2$S, %3$S and \n.
+#. ## %2$S will be replaced with the account name. $1$S will be replaced by the folder name
+#. ## configured to contain saved sent messages (typically the "Sent" folder).
+#. ## %3$S will be replaced with the local folders account name (typically "Local Folders").
+#. ## Translate "Write" to match the translation of item "windowTitlePrefix" above.
+#: promptToSaveSentLocally
+msgid ""
+"Your message was sent but not saved to your sent folder (%1$S) probably "
+"because of network errors.\n"
+"\"Retry\" attempts the save again.\n"
+"\"Save\" copies the message to %3$S/%1$S-%2$S and closes the Write window if "
+"it is present.\n"
+"\"Cancel\" does not save the sent message and closes the Write window if it "
+"is present."
+msgstr ""
 
 #: errorFilteringMsg
 msgid ""
@@ -1001,6 +1014,46 @@ msgstr ""
 #: errorCloudFileAuth.title
 msgid "Authentication Error"
 msgstr "Аутентификация қатесі"
+
+#. ## LOCALIZATION NOTE(promptToSaveDraftLocally): Do not translate the stings %1$S, %2$S, %3$S and \n.
+#. ## %2$S will be replaced with the account name. $1$S will be replaced by the folder name
+#. ## configured to contain saved draft messages (typically the "Drafts" folder).
+#. ## %3$S will be replaced with the local folders account name (typically "Local Folders").
+#: promptToSaveDraftLocally
+msgid ""
+"Your draft message was not saved to your drafts folder (%1$S) probably "
+"because of network errors.\n"
+"\"Retry\" attempts to save again.\n"
+"\"Save\" copies the message to %3$S/%1$S-%2$S and you can continue writing.\n"
+"\"Cancel\" allows you to continue writing without saving your draft."
+msgstr ""
+
+#: buttonLabelRetry
+msgid "Retry"
+msgstr ""
+
+#. ## LOCALIZATION NOTE(promptToSaveTemplateLocally): Do not translate the stings %1$S, %2$S, %3$S and \n.
+#. ## %2$S will be replaced with the account name. $1$S will be replaced by the folder name
+#. ## configured to contain saved templates (typically the "Templates" folder).
+#. ## %3$S will be replaced with the local folders account name (typically "Local Folders").
+#: promptToSaveTemplateLocally
+msgid ""
+"Your template was not saved to your templates folder (%1$S) probably because "
+"of network errors.\n"
+"\"Retry\" attempts to save again.\n"
+"\"Save\" copies the message to %3$S/%1$S-%2$S and you can continue writing.\n"
+"\"Cancel\" allows you to continue writing without saving your template."
+msgstr ""
+
+#. ## LOCALIZATION NOTE(saveToLocalFoldersFailed): Message appears after normal
+#. ## save fails (e.g., to Sent) and save to Local Folders also fails. This could
+#. ## occur if network is down and filesystem problems are present such as disk
+#. ## full, permission issues or hardware failure.
+#: saveToLocalFoldersFailed
+msgid ""
+"Unable to save your message to local folders. Possibly out of file storage "
+"space."
+msgstr ""
 
 #. ## LOCALIZATION NOTE(errorCloudFileAuth.message):
 #. ## %1$S is the name of the online storage service against which the authentication failed.
@@ -1165,6 +1218,16 @@ msgstr "Қалаулар"
 #: blockedContentPrefAccesskeyUnix
 msgid "P"
 msgstr "л"
+
+#~ msgid ""
+#~ "Message has not been sent. Do you want to save the message in your drafts "
+#~ "folder (%1$S)?"
+#~ msgstr ""
+#~ "Хабарлама жіберілген жоқ. Оны сіздің шимай қағаз бумасына сақтау керек пе "
+#~ "(%1$S)?"
+
+#~ msgid "There was an error saving the message to %S. Retry?"
+#~ msgstr "%S ішіне хабарламаны сақтау қатесі. Қайталау керек пе?"
 
 #, fuzzy
 #~ msgid "%s wrote"
