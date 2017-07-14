@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-12 17:15+0000\n"
-"PO-Revision-Date: 2017-03-24 23:19+0000\n"
+"PO-Revision-Date: 2017-07-14 18:18+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: Akerbeltz\n"
 "Language: gd\n"
@@ -18,10 +18,10 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : "
 "(n > 2 && n < 20) ? 2 : 3 ;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 2.2.3\n"
+"X-Generator: Pootle 2.8\n"
 "X-Merge-On: location\n"
 "X-Project-Style: mozilla\n"
-"X-POOTLE-MTIME: 1490397576.000000\n"
+"X-POOTLE-MTIME: 1500056288.000000\n"
 
 #: KillScriptTitle
 msgid "Warning: Unresponsive script"
@@ -193,7 +193,7 @@ msgstr "Cuir a-steach URL."
 
 #: FormValidationInvalidDate
 msgid "Please enter a valid date."
-msgstr ""
+msgstr "Cuir a-steach ceann-là dligheach."
 
 #: FormValidationPatternMismatch
 msgid "Please match the requested format."
@@ -211,7 +211,6 @@ msgstr "Tagh luach nach eil nas motha na %S."
 
 #. # LOCALIZATION NOTE (FormValidationDateRangeOverflow): %S is a date or time.
 #: FormValidationDateTimeRangeOverflow
-#, fuzzy
 msgid "Please select a value that is no later than %S."
 msgstr "Tagh luach nach eil an dèidh %S."
 
@@ -222,7 +221,6 @@ msgstr "Tagh luach nach eil nas lugha na %S."
 
 #. # LOCALIZATION NOTE (FormValidationDateRangeUnderflow): %S is a date or time.
 #: FormValidationDateTimeRangeUnderflow
-#, fuzzy
 msgid "Please select a value that is no earlier than %S."
 msgstr "Tagh luach nach eil ro %S."
 
@@ -698,11 +696,13 @@ msgstr ""
 #: MediaDecodeError
 msgid "Media resource %1$S could not be decoded, error: %2$S"
 msgstr ""
+"Dh’fhàillig dì-chòdachadh a’ ghoireis mheadhain %1$S leis a’ mhearachd %2$S"
 
 #. # LOCALIZATION NOTE: %1$S is the URL of the media resource, %2$S is technical information (in English)
 #: MediaDecodeWarning
 msgid "Media resource %1$S could be decoded, but with error: %2$S"
 msgstr ""
+"Chaidh an goireas meadhain %1$S a dhì-chòdachadh ach leis a’ mhearachd %2$S"
 
 #. # LOCALIZATION NOTE: %S is a comma-separated list of codecs (e.g. 'video/mp4, video/webm')
 #: MediaCannotPlayNoDecoders
@@ -755,6 +755,9 @@ msgid ""
 "context is deprecated and will soon be removed. You should consider "
 "switching to a secure origin such as HTTPS."
 msgstr ""
+"Using Encrypted Media Extensions at %S on an insecure (i.e. non-HTTPS) "
+"context is deprecated and will soon be removed. You should consider "
+"switching to a secure origin such as HTTPS."
 
 #. # LOCALIZATION NOTE: %S is the URL of the web page which is calling web APIs without passing data (either an audioCapabilities or a videoCapabilities) that will soon be required. See https://bugzilla.mozilla.org/show_bug.cgi?id=1368583#c21 for explanation of this string.
 #: MediaEMENoCapabilitiesDeprecatedWarning
@@ -763,6 +766,9 @@ msgid ""
 "candidate MediaKeySystemConfiguration containing audioCapabilities or "
 "videoCapabilities is deprecated and will soon become unsupported."
 msgstr ""
+"Calling navigator.requestMediaKeySystemAccess() (at %S) without passing a "
+"candidate MediaKeySystemConfiguration containing audioCapabilities or "
+"videoCapabilities is deprecated and will soon become unsupported."
 
 #. # LOCALIZATION NOTE: %S is the URL of the web page which is calling web APIs without passing data (a "codecs" string in the "contentType") that will soon be required. See https://bugzilla.mozilla.org/show_bug.cgi?id=1368583#c21 for explanation of this string.
 #: MediaEMENoCodecsDeprecatedWarning
@@ -772,6 +778,10 @@ msgid ""
 "videoCapabilities without a contentType with a “codecs” string is deprecated "
 "and will soon become unsupported."
 msgstr ""
+"Calling navigator.requestMediaKeySystemAccess() (at %S) passing a candidate "
+"MediaKeySystemConfiguration containing audioCapabilities or "
+"videoCapabilities without a contentType with a “codecs” string is deprecated "
+"and will soon become unsupported."
 
 #. # LOCALIZATION NOTE: Do not translate "DOMException", "code" and "name"
 #: DOMExceptionCodeWarning
@@ -957,10 +967,10 @@ msgstr ""
 
 #. # LOCALIZATION NOTE: Do not translate "window.controllers/Controllers"
 #: Window_ControllersWarning
-#, fuzzy
 msgid ""
 "window.controllers/Controllers is deprecated. Do not use it for UA detection."
-msgstr "window.controllers is deprecated. Do not use it for UA detection."
+msgstr ""
+"window.controllers/Controllers is deprecated. Do not use it for UA detection."
 
 #: ImportXULIntoContentWarning
 msgid ""
@@ -1561,12 +1571,12 @@ msgstr ""
 #. # LOCALIZATION NOTE: Do not translate MozAutoGainControl or autoGainControl.
 #: MozAutoGainControlWarning
 msgid "mozAutoGainControl is deprecated. Use autoGainControl instead."
-msgstr ""
+msgstr "mozAutoGainControl is deprecated. Use autoGainControl instead."
 
 #. # LOCALIZATION NOTE: Do not translate mozNoiseSuppression or noiseSuppression.
 #: MozNoiseSuppressionWarning
 msgid "mozNoiseSuppression is deprecated. Use noiseSuppression instead."
-msgstr ""
+msgstr "mozNoiseSuppression is deprecated. Use noiseSuppression instead."
 
 #. # LOCALIZATION NOTE: Do not translate xml:base.
 #: XMLBaseAttributeWarning
@@ -1583,6 +1593,8 @@ msgid ""
 "There is an SVG <%S> reference loop in this document, which will prevent the "
 "document rendering correctly."
 msgstr ""
+"There is an SVG <%S> reference loop in this document, which will prevent the "
+"document rendering correctly."
 
 #. # LOCALIZATION NOTE: %S is the tag name of the element that starts the chain
 #: SVGReferenceChainLengthExceededWarning
@@ -1590,37 +1602,40 @@ msgid ""
 "There is an SVG <%S> reference chain which is too long in this document, "
 "which will prevent the document rendering correctly."
 msgstr ""
+"There is an SVG <%S> reference chain which is too long in this document, "
+"which will prevent the document rendering correctly."
 
 #. # LOCALIZATION NOTE: Do not translate "<script>".
 #: ScriptSourceEmpty
 msgid "‘%S’ attribute of <script> element is empty."
-msgstr ""
+msgstr "‘%S’ attribute of <script> element is empty."
 
 #. # LOCALIZATION NOTE: Do not translate "<script>".
 #: ScriptSourceInvalidUri
 msgid "‘%S’ attribute of <script> element is not a valid URI: “%S”"
-msgstr ""
+msgstr "‘%S’ attribute of <script> element is not a valid URI: “%S”"
 
 #. # LOCALIZATION NOTE: Do not translate "<script>".
 #: ScriptSourceLoadFailed
 msgid "Loading failed for the <script> with source “%S”."
-msgstr ""
+msgstr "Loading failed for the <script> with source “%S”."
 
 #. # LOCALIZATION NOTE: Do not translate "<script>".
 #: ScriptSourceMalformed
 msgid "<script> source URI is malformed: “%S”."
-msgstr ""
+msgstr "<script> source URI is malformed: “%S”."
 
 #. # LOCALIZATION NOTE: Do not translate "<script>".
 #: ScriptSourceNotAllowed
 msgid "<script> source URI is not allowed in this document: “%S”."
-msgstr ""
+msgstr "<script> source URI is not allowed in this document: “%S”."
 
 #. # LOCALIZATION NOTE: %1$S is the invalid property value and %2$S is the property name.
 #: InvalidKeyframePropertyValue
 msgid ""
 "Keyframe property value “%1$S” is invalid according to the syntax for “%2$S”."
 msgstr ""
+"Keyframe property value “%1$S” is invalid according to the syntax for “%2$S”."
 
 #~ msgctxt "FormValidationTimeRangeOverflow"
 #~ msgid "Please select a value that is no later than %S."
