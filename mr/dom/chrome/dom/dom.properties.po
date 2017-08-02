@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-06 05:15+0000\n"
+"POT-Creation-Date: 2017-08-02 09:21+0000\n"
 "PO-Revision-Date: 2017-06-08 10:39+0000\n"
 "Last-Translator: Aniket Deshpande <djaniketster@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.2.3\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1496918387.000000\n"
 
@@ -181,6 +181,10 @@ msgstr "कृपया ईमेल पत्ता द्या."
 msgid "Please enter a URL."
 msgstr "कृपया URL द्या."
 
+#: FormValidationInvalidDate
+msgid "Please enter a valid date."
+msgstr ""
+
 #: FormValidationPatternMismatch
 msgid "Please match the requested format."
 msgstr "कृपया विनंतीकृत स्वरूप जुळवा."
@@ -195,15 +199,9 @@ msgstr "कृपया विनंतीकृत स्वरूप जुळ
 msgid "Please select a value that is no more than %S."
 msgstr "कृपया %S पेक्षा कमी मूल्याची नीवड करा."
 
-#. # LOCALIZATION NOTE (FormValidationDateRangeOverflow): %S is a date.
-#: FormValidationDateRangeOverflow
-msgctxt "FormValidationDateRangeOverflow"
-msgid "Please select a value that is no later than %S."
-msgstr "कृपया %S पेक्षा मागील मूल्याची नीवड करा."
-
-#. # LOCALIZATION NOTE (FormValidationTimeRangeOverflow): %S is a time.
-#: FormValidationTimeRangeOverflow
-msgctxt "FormValidationTimeRangeOverflow"
+#. # LOCALIZATION NOTE (FormValidationDateTimeRangeOverflow): %S is a date or a time.
+#: FormValidationDateTimeRangeOverflow
+#, fuzzy
 msgid "Please select a value that is no later than %S."
 msgstr "कृपया %S पेक्षा मागील मूल्याची नीवड करा."
 
@@ -212,15 +210,9 @@ msgstr "कृपया %S पेक्षा मागील मूल्या
 msgid "Please select a value that is no less than %S."
 msgstr "कृपया %S पेक्षा कमी मूल्याची नीवड करा."
 
-#. # LOCALIZATION NOTE (FormValidationDateRangeUnderflow): %S is a date.
-#: FormValidationDateRangeUnderflow
-msgctxt "FormValidationDateRangeUnderflow"
-msgid "Please select a value that is no earlier than %S."
-msgstr "कृपया %S पेक्षा अलीकडील मूल्याची नीवड करा."
-
-#. # LOCALIZATION NOTE (FormValidationTimeRangeUnderflow): %S is a time.
-#: FormValidationTimeRangeUnderflow
-msgctxt "FormValidationTimeRangeUnderflow"
+#. # LOCALIZATION NOTE (FormValidationDateTimeRangeUnderflow): %S is a date or a time.
+#: FormValidationDateTimeRangeUnderflow
+#, fuzzy
 msgid "Please select a value that is no earlier than %S."
 msgstr "कृपया %S पेक्षा अलीकडील मूल्याची नीवड करा."
 
@@ -901,9 +893,11 @@ msgstr ""
 "निर्देशीत करा. अधिक माहितीकरिता https://developer.mozilla.org/en/docs/Mozilla/"
 "Mobile/Viewport_meta_tag पहा"
 
-#. # LOCALIZATION NOTE: Do not translate "window.controllers"
-#: Window_ControllersWarning
-msgid "window.controllers is deprecated. Do not use it for UA detection."
+#. # LOCALIZATION NOTE: Do not translate "window.controllers/Controllers"
+#: Window_Cc_ontrollersWarning
+#, fuzzy
+msgid ""
+"window.controllers/Controllers is deprecated. Do not use it for UA detection."
 msgstr "window.controllers चा वापर होत नाही. UA शोधकरिता वापर करू नका."
 
 #: ImportXULIntoContentWarning
@@ -1412,11 +1406,6 @@ msgstr "IIRFilterNode चॅनेल् बदल गणना कदाचि�
 msgid "BiquadFilterNode channel count changes may produce audio glitches."
 msgstr "BiquadFilterNode चॅनेल् बदल गणना कदाचित ऑडिओमध्ये अडचणी निर्माण करू शकतात."
 
-#. # LOCALIZATION NOTE: %1$S is the unanimatable paced property.
-#: UnanimatablePacedProperty
-msgid "Paced property ‘%1$S’ is not an animatable property."
-msgstr "‘%1$S’ हा पेस्ड गुणधर्म अॅनिमेटेबल नाही."
-
 #. # LOCALIZATION NOTE: Do not translate ".jpeg"
 #: GenericImageNameJPEG
 msgid "image.jpeg"
@@ -1547,6 +1536,23 @@ msgstr "<script> स्रोत URI विकृत आहे: “%S”."
 #: ScriptSourceNotAllowed
 msgid "<script> source URI is not allowed in this document: “%S”."
 msgstr "<script> स्रोत URI ला या दस्तऐवजात परवानगी नाही: “%S”."
+
+#. # LOCALIZATION NOTE: %1$S is the invalid property value and %2$S is the property name.
+#: InvalidKeyframePropertyValue
+msgid ""
+"Keyframe property value “%1$S” is invalid according to the syntax for “%2$S”."
+msgstr ""
+
+#~ msgctxt "FormValidationTimeRangeOverflow"
+#~ msgid "Please select a value that is no later than %S."
+#~ msgstr "कृपया %S पेक्षा मागील मूल्याची नीवड करा."
+
+#~ msgctxt "FormValidationTimeRangeUnderflow"
+#~ msgid "Please select a value that is no earlier than %S."
+#~ msgstr "कृपया %S पेक्षा अलीकडील मूल्याची नीवड करा."
+
+#~ msgid "Paced property ‘%1$S’ is not an animatable property."
+#~ msgstr "‘%1$S’ हा पेस्ड गुणधर्म अॅनिमेटेबल नाही."
 
 #~ msgid "Use of DataContainerEvent is deprecated. Use CustomEvent instead."
 #~ msgstr ""
