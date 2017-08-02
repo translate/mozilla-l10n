@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-06 05:15+0000\n"
+"POT-Creation-Date: 2017-08-02 09:21+0000\n"
 "PO-Revision-Date: 2017-03-20 13:05+0000\n"
 "Last-Translator: Mahay Alam Khan <mahayalamkhan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 2.1.0\n"
+"X-Generator: Translate Toolkit 2.2.3\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1490015109.000000\n"
 
@@ -181,6 +181,10 @@ msgstr "অনুগ্রহ করে আপনার ইমেইল ঠি�
 msgid "Please enter a URL."
 msgstr "অনুগ্রহ করে একটি URL দিন।"
 
+#: FormValidationInvalidDate
+msgid "Please enter a valid date."
+msgstr ""
+
 #: FormValidationPatternMismatch
 msgid "Please match the requested format."
 msgstr "অনুগ্রহ করে অনুরোধকৃত বিন্যাসের সাথে মিল রাখুন।"
@@ -195,34 +199,22 @@ msgstr "অনুগ্রহ করে অনুরোধকৃত বিন্
 msgid "Please select a value that is no more than %S."
 msgstr "অনুগ্রহ করে একটি মান নির্বাচন করুন যার মান %S এর থেকে কম।"
 
-#. # LOCALIZATION NOTE (FormValidationDateRangeOverflow): %S is a date.
-#: FormValidationDateRangeOverflow
-msgctxt "FormValidationDateRangeOverflow"
+#. # LOCALIZATION NOTE (FormValidationDateTimeRangeOverflow): %S is a date or a time.
+#: FormValidationDateTimeRangeOverflow
+#, fuzzy
 msgid "Please select a value that is no later than %S."
 msgstr "অনুগ্রহ করে একটি মান নির্বাচন করুন যার মান %S এর থেকে কম"
-
-#. # LOCALIZATION NOTE (FormValidationTimeRangeOverflow): %S is a time.
-#: FormValidationTimeRangeOverflow
-msgctxt "FormValidationTimeRangeOverflow"
-msgid "Please select a value that is no later than %S."
-msgstr "অনুগ্রহ করে একটি মান নির্বাচন করুন যার মান %S এর থেকে কম।"
 
 #. # LOCALIZATION NOTE (FormValidationNumberRangeUnderflow): %S is a number.
 #: FormValidationNumberRangeUnderflow
 msgid "Please select a value that is no less than %S."
 msgstr "অনুগ্রহ করে একটি মান নির্বাচন করুন যার মান %S এর থেকে কম।"
 
-#. # LOCALIZATION NOTE (FormValidationDateRangeUnderflow): %S is a date.
-#: FormValidationDateRangeUnderflow
-msgctxt "FormValidationDateRangeUnderflow"
+#. # LOCALIZATION NOTE (FormValidationDateTimeRangeUnderflow): %S is a date or a time.
+#: FormValidationDateTimeRangeUnderflow
+#, fuzzy
 msgid "Please select a value that is no earlier than %S."
 msgstr "অনুগ্রহ করে একটি মান নির্বাচন করুন যার মান %S এর থেকে কম।"
-
-#. # LOCALIZATION NOTE (FormValidationTimeRangeUnderflow): %S is a time.
-#: FormValidationTimeRangeUnderflow
-msgctxt "FormValidationTimeRangeUnderflow"
-msgid "Please select a value that is no earlier than %S."
-msgstr "অনুগ্রহ করে একটি মান নির্বাচন করুন যার মান %S এর থেকে কম"
 
 #. # LOCALIZATION NOTE (FormValidationStepMismatch): both %S can be a number, a date or a time.
 #: FormValidationStepMismatch
@@ -898,9 +890,11 @@ msgstr ""
 "রোধ করার জন্য স্পষ্টভাবে যেকোনো একটি উল্লেখ করুন। আরও সাহায্যের জন্য https://"
 "developer.mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag"
 
-#. # LOCALIZATION NOTE: Do not translate "window.controllers"
-#: Window_ControllersWarning
-msgid "window.controllers is deprecated. Do not use it for UA detection."
+#. # LOCALIZATION NOTE: Do not translate "window.controllers/Controllers"
+#: Window_Cc_ontrollersWarning
+#, fuzzy
+msgid ""
+"window.controllers/Controllers is deprecated. Do not use it for UA detection."
 msgstr "উইন্ডো। নিয়ন্ত্রণকারী অসমর্থিত। UA সনাক্তকরণের জন্য এটি ব্যবহার করবেন না।"
 
 #: ImportXULIntoContentWarning
@@ -1378,11 +1372,6 @@ msgstr "IIRFilterNode চ্যানেল গণনায় পরিবর্�
 msgid "BiquadFilterNode channel count changes may produce audio glitches."
 msgstr "BiquadFilterNode চ্যানেল গণনায় পরিবর্তন অডিও গ্লিচ তৈরি করতে পারে।"
 
-#. # LOCALIZATION NOTE: %1$S is the unanimatable paced property.
-#: UnanimatablePacedProperty
-msgid "Paced property ‘%1$S’ is not an animatable property."
-msgstr "Paced প্রোপার্টি ‘%1$S’ animatable প্রোপার্টি নয়।"
-
 #. # LOCALIZATION NOTE: Do not translate ".jpeg"
 #: GenericImageNameJPEG
 msgid "image.jpeg"
@@ -1501,6 +1490,23 @@ msgstr ""
 #: ScriptSourceNotAllowed
 msgid "<script> source URI is not allowed in this document: “%S”."
 msgstr ""
+
+#. # LOCALIZATION NOTE: %1$S is the invalid property value and %2$S is the property name.
+#: InvalidKeyframePropertyValue
+msgid ""
+"Keyframe property value “%1$S” is invalid according to the syntax for “%2$S”."
+msgstr ""
+
+#~ msgctxt "FormValidationTimeRangeOverflow"
+#~ msgid "Please select a value that is no later than %S."
+#~ msgstr "অনুগ্রহ করে একটি মান নির্বাচন করুন যার মান %S এর থেকে কম।"
+
+#~ msgctxt "FormValidationTimeRangeUnderflow"
+#~ msgid "Please select a value that is no earlier than %S."
+#~ msgstr "অনুগ্রহ করে একটি মান নির্বাচন করুন যার মান %S এর থেকে কম"
+
+#~ msgid "Paced property ‘%1$S’ is not an animatable property."
+#~ msgstr "Paced প্রোপার্টি ‘%1$S’ animatable প্রোপার্টি নয়।"
 
 #~ msgid "Use of DataContainerEvent is deprecated. Use CustomEvent instead."
 #~ msgstr ""

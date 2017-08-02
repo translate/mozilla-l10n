@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-18 12:46+0000\n"
+"POT-Creation-Date: 2017-08-02 09:21+0000\n"
 "PO-Revision-Date: 2017-03-19 23:35+0000\n"
 "Last-Translator: Mahay Alam Khan <mahayalamkhan@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 2.1.0\n"
+"X-Generator: Translate Toolkit 2.2.3\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1489966513.000000\n"
 
@@ -25,14 +25,15 @@ msgstr ""
 msgid "Tracking Protection"
 msgstr "ট্রাকিং সুরক্ষা ব্যবহার করুন"
 
-#: trackingProtection.description
+#: trackingProtection2.description
 msgid ""
-"Tracking is when companies collect information about you to build a profile "
-"and display content based on your browsing and personal data."
+"Tracking is the collection of your browsing data across multiple websites. "
+"Tracking can be used to build a profile and display content based on your "
+"browsing and personal information."
 msgstr ""
 
-#: trackingProtection.radioGroupLabel
-msgid "Block known tracking companies from displaying content"
+#: trackingProtection2.radioGroupLabel
+msgid "Use Tracking Protection to block known trackers"
 msgstr ""
 
 #: trackingProtectionAlways.label trackingProtectionAlways.accesskey
@@ -56,54 +57,66 @@ msgstr "আরো জানতে"
 msgid "E&xceptions…"
 msgstr "ব্যতিক্রম… &E"
 
-#: tracking.label
-msgid "Tracking"
-msgstr "অনুসরণ"
-
+#. This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel.
 #: trackingProtectionPBM5.label trackingProtectionPBM5.accesskey
 msgid "Use Tracking Protection in Pri&vate Windows"
 msgstr "ব্যক্তিগত উইন্ডোতে ট্রাকিং সুরক্ষা ব্যবহার করুন &v"
+
+#. This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel.
+#: trackingProtectionPBM6.label trackingProtectionPBM6.accesskey
+msgid "Use Tracking Protection in Pri&vate Browsing to block known trackers"
+msgstr ""
 
 #: trackingProtectionPBMLearnMore.label
 msgctxt "trackingProtectionPBMLearnMore.label"
 msgid "Learn more"
 msgstr "আরও জানুন"
 
-#: changeBlockList.label changeBlockList.accesskey
-msgid "&Change Block List"
+#: changeBlockList2.label changeBlockList2.accesskey
+#, fuzzy
+msgid "&Change Block List…"
 msgstr "ব্লক তালিকা পরিবর্তন করুন &C"
 
-#. include a trailing space as needed
-#. LOCALIZATION NOTE (doNotTrack.post.label): include a starting space as needed
-#: doNotTrack.pre.label
-msgid "You can also "
-msgstr "এছাড়াও আপনি "
+#: doNotTrack.description
+msgid "Send websites a “Do Not Track” signal that you don’t want to be tracked"
+msgstr ""
 
-#: doNotTrack.settings.label
-msgid "manage your Do Not Track settings"
-msgstr "আপনার Do Not Track পরিচালনা করুন"
+#: doNotTrack.learnMore.label
+#, fuzzy
+msgctxt "doNotTrack.learnMore.label"
+msgid "Learn more"
+msgstr "আরো জানতে"
 
-#: doNotTrack.post.label
-msgctxt "doNotTrack.post.label"
-msgid "."
-msgstr "."
+#: doNotTrack.default.label
+msgid "Only when using Tracking Protection"
+msgstr ""
+
+#: doNotTrack.always.label
+#, fuzzy
+msgctxt "doNotTrack.always.label"
+msgid "Always"
+msgstr "সর্বদা"
 
 #: history.label
 msgid "History"
 msgstr "ইতিহাস"
 
-#: locationBar.label
-msgid "Location Bar"
-msgstr "অবস্থান সূচক বার"
+#: permissions.label
+msgid "Permissions"
+msgstr ""
 
-#: locbar.suggest2.label
+#: addressBar.label
+msgid "Address Bar"
+msgstr ""
+
+#: addressBar.suggest.label
 #, fuzzy
-msgid "When using the location bar, suggest"
+msgid "When using the address bar, suggest"
 msgstr "অবস্থান বার ব্যবহার করার সময় পরামর্শ দিন:"
 
-#: locbar.history.label locbar.history.accesskey
-msgid "&History"
-msgstr "ইতিহাস"
+#: locbar.history2.label locbar.history2.accesskey
+msgid "Browsing &history"
+msgstr ""
 
 #: locbar.bookmarks.label locbar.bookmarks.accesskey
 msgid "Boo&kmarks"
@@ -122,8 +135,9 @@ msgstr "পূর্বনির্ধারিত অনুসন্ধান �
 msgid "Change preferences for search engine suggestions"
 msgstr "সার্চ ইঞ্জিন পরামর্শের জন্য অগ্রাধিকার পরিবর্তন করুন &g..."
 
-#: acceptCookies.label acceptCookies.accesskey
-msgid "&Accept cookies from sites"
+#: acceptCookies2.label acceptCookies2.accesskey
+#, fuzzy
+msgid "&Accept cookies from websites"
 msgstr "সাইট হতে কুকি গ্রহণ করুন &A"
 
 #: acceptThirdParty.pre.label acceptThirdParty.pre.accesskey
@@ -131,6 +145,8 @@ msgid "Accept third-part&y cookies:"
 msgstr "তৃতীয়-পক্ষের কুকি গ্রহণ করা হবে"
 
 #: acceptThirdParty.always.label
+#, fuzzy
+msgctxt "acceptThirdParty.always.label"
 msgid "Always"
 msgstr "সর্বদা"
 
@@ -259,10 +275,6 @@ msgstr "&brandShortName; বন্ধ করার সময় ইতিহাস 
 msgid "Se&ttings…"
 msgstr "সেটিং…"
 
-#: browserContainersHeader.label
-msgid "Container Tabs"
-msgstr "কন্টেইনার ট্যাব"
-
 #: browserContainersLearnMore.label
 msgctxt "browserContainersLearnMore.label"
 msgid "Learn more"
@@ -275,6 +287,24 @@ msgstr "কন্টেইনার ট্যাব সক্রিয় করু
 #: browserContainersSettings.label browserContainersSettings.accesskey
 msgid "Sett&ings…"
 msgstr "সেটিং"
+
+#~ msgid "Tracking"
+#~ msgstr "অনুসরণ"
+
+#~ msgid "You can also "
+#~ msgstr "এছাড়াও আপনি "
+
+#~ msgid "manage your Do Not Track settings"
+#~ msgstr "আপনার Do Not Track পরিচালনা করুন"
+
+#~ msgid "Location Bar"
+#~ msgstr "অবস্থান সূচক বার"
+
+#~ msgid "&History"
+#~ msgstr "ইতিহাস"
+
+#~ msgid "Container Tabs"
+#~ msgstr "কন্টেইনার ট্যাব"
 
 #~ msgid "Request that sites &not track you"
 #~ msgstr "সাইট ও আপনি ট্র্যাক না করার অনুরোধ জানান"
