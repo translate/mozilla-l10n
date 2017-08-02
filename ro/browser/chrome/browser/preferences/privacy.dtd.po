@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-18 12:46+0000\n"
+"POT-Creation-Date: 2017-08-02 09:21+0000\n"
 "PO-Revision-Date: 2017-07-01 15:12+0000\n"
 "Last-Translator: Cristian Silaghi <cristian.silaghi@mozilla.ro>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.2.3\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1498921922.000000\n"
 
@@ -25,20 +25,16 @@ msgstr ""
 msgid "Tracking Protection"
 msgstr "Protecția față de urmărire"
 
-#: trackingProtection.description
+#: trackingProtection2.description
 msgid ""
-"Tracking is when companies collect information about you to build a profile "
-"and display content based on your browsing and personal data."
+"Tracking is the collection of your browsing data across multiple websites. "
+"Tracking can be used to build a profile and display content based on your "
+"browsing and personal information."
 msgstr ""
-"Urmărirea este atunci când companiile colectează informații despre tine "
-"pentru a construi un profil și pentru a afișa conținut pe baza datelor tale "
-"de navigare și personale."
 
-#: trackingProtection.radioGroupLabel
-msgid "Block known tracking companies from displaying content"
+#: trackingProtection2.radioGroupLabel
+msgid "Use Tracking Protection to block known trackers"
 msgstr ""
-"Blochează afișarea de conținut din partea companiilor cunoscute pentru "
-"urmărirea utilizatorilor"
 
 #: trackingProtectionAlways.label trackingProtectionAlways.accesskey
 msgid "Alwa&ys"
@@ -61,53 +57,66 @@ msgstr "Află mai multe"
 msgid "E&xceptions…"
 msgstr "E&xcepții…"
 
-#: tracking.label
-msgid "Tracking"
-msgstr "Urmărire"
-
+#. This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel.
 #: trackingProtectionPBM5.label trackingProtectionPBM5.accesskey
 msgid "Use Tracking Protection in Pri&vate Windows"
 msgstr "Folosește protecția față de urmărire în ferestre pri&vate"
+
+#. This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel.
+#: trackingProtectionPBM6.label trackingProtectionPBM6.accesskey
+msgid "Use Tracking Protection in Pri&vate Browsing to block known trackers"
+msgstr ""
 
 #: trackingProtectionPBMLearnMore.label
 msgctxt "trackingProtectionPBMLearnMore.label"
 msgid "Learn more"
 msgstr "Află mai multe"
 
-#: changeBlockList.label changeBlockList.accesskey
-msgid "&Change Block List"
+#: changeBlockList2.label changeBlockList2.accesskey
+#, fuzzy
+msgid "&Change Block List…"
 msgstr "S&chimbă lista de blocări"
 
-#. include a trailing space as needed
-#. LOCALIZATION NOTE (doNotTrack.post.label): include a starting space as needed
-#: doNotTrack.pre.label
-msgid "You can also "
-msgstr "Poți și "
+#: doNotTrack.description
+msgid "Send websites a “Do Not Track” signal that you don’t want to be tracked"
+msgstr ""
 
-#: doNotTrack.settings.label
-msgid "manage your Do Not Track settings"
-msgstr "să gestionezi setările Nu mă urmări"
+#: doNotTrack.learnMore.label
+#, fuzzy
+msgctxt "doNotTrack.learnMore.label"
+msgid "Learn more"
+msgstr "Află mai multe"
 
-#: doNotTrack.post.label
-msgctxt "doNotTrack.post.label"
-msgid "."
-msgstr "."
+#: doNotTrack.default.label
+msgid "Only when using Tracking Protection"
+msgstr ""
+
+#: doNotTrack.always.label
+#, fuzzy
+msgctxt "doNotTrack.always.label"
+msgid "Always"
+msgstr "Întotdeauna"
 
 #: history.label
 msgid "History"
 msgstr "Istoric"
 
-#: locationBar.label
-msgid "Location Bar"
-msgstr "Bară de adresă"
+#: permissions.label
+msgid "Permissions"
+msgstr ""
 
-#: locbar.suggest2.label
-msgid "When using the location bar, suggest"
+#: addressBar.label
+msgid "Address Bar"
+msgstr ""
+
+#: addressBar.suggest.label
+#, fuzzy
+msgid "When using the address bar, suggest"
 msgstr "Când se folosește bara de adresă, sugerează:"
 
-#: locbar.history.label locbar.history.accesskey
-msgid "&History"
-msgstr "Istoric"
+#: locbar.history2.label locbar.history2.accesskey
+msgid "Browsing &history"
+msgstr ""
 
 #: locbar.bookmarks.label locbar.bookmarks.accesskey
 msgid "Boo&kmarks"
@@ -125,8 +134,9 @@ msgstr "Căutări similare &de la motorul de căutare implicit"
 msgid "Change preferences for search engine suggestions"
 msgstr "Schimbă preferințele pentru sugestiile motoarelor de căutare…"
 
-#: acceptCookies.label acceptCookies.accesskey
-msgid "&Accept cookies from sites"
+#: acceptCookies2.label acceptCookies2.accesskey
+#, fuzzy
+msgid "&Accept cookies from websites"
 msgstr "&Acceptă cookie-uri de la site-uri"
 
 #: acceptThirdParty.pre.label acceptThirdParty.pre.accesskey
@@ -134,6 +144,8 @@ msgid "Accept third-part&y cookies:"
 msgstr "Acceptă cookie-uri terțe:"
 
 #: acceptThirdParty.always.label
+#, fuzzy
+msgctxt "acceptThirdParty.always.label"
 msgid "Always"
 msgstr "Întotdeauna"
 
@@ -262,10 +274,6 @@ msgstr "&Curăță istoricul când &brandShortName; este închis"
 msgid "Se&ttings…"
 msgstr "Se&tări…"
 
-#: browserContainersHeader.label
-msgid "Container Tabs"
-msgstr "File container"
-
 #: browserContainersLearnMore.label
 msgctxt "browserContainersLearnMore.label"
 msgid "Learn more"
@@ -278,6 +286,37 @@ msgstr "Activează filele co&ntainer"
 #: browserContainersSettings.label browserContainersSettings.accesskey
 msgid "Sett&ings…"
 msgstr "Se&tări…"
+
+#~ msgid ""
+#~ "Tracking is when companies collect information about you to build a "
+#~ "profile and display content based on your browsing and personal data."
+#~ msgstr ""
+#~ "Urmărirea este atunci când companiile colectează informații despre tine "
+#~ "pentru a construi un profil și pentru a afișa conținut pe baza datelor "
+#~ "tale de navigare și personale."
+
+#~ msgid "Block known tracking companies from displaying content"
+#~ msgstr ""
+#~ "Blochează afișarea de conținut din partea companiilor cunoscute pentru "
+#~ "urmărirea utilizatorilor"
+
+#~ msgid "Tracking"
+#~ msgstr "Urmărire"
+
+#~ msgid "You can also "
+#~ msgstr "Poți și "
+
+#~ msgid "manage your Do Not Track settings"
+#~ msgstr "să gestionezi setările Nu mă urmări"
+
+#~ msgid "Location Bar"
+#~ msgstr "Bară de adresă"
+
+#~ msgid "&History"
+#~ msgstr "Istoric"
+
+#~ msgid "Container Tabs"
+#~ msgstr "File container"
 
 #~ msgid "Request that sites &not track you"
 #~ msgstr "Solicită ca site-urile să &nu te urmărească"
