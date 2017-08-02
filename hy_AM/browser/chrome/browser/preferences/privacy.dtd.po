@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-18 12:46+0000\n"
+"POT-Creation-Date: 2017-08-02 09:21+0000\n"
 "PO-Revision-Date: 2017-05-17 17:47+0000\n"
 "Last-Translator: Hrant Ohanyan <hrant.mozilla@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.2.3\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1495043266.000000\n"
 
@@ -24,19 +24,16 @@ msgstr ""
 msgid "Tracking Protection"
 msgstr "Հետագծման պաշտպանություն"
 
-#: trackingProtection.description
+#: trackingProtection2.description
 msgid ""
-"Tracking is when companies collect information about you to build a profile "
-"and display content based on your browsing and personal data."
+"Tracking is the collection of your browsing data across multiple websites. "
+"Tracking can be used to build a profile and display content based on your "
+"browsing and personal information."
 msgstr ""
-"Հետագծումը, երբ ընկերությունները հավաքում են տեղեկություններ ձեր մասին՝ "
-"պրոֆիլ կառուցելու և բովանդակություն ցուցմադրելու համար՝ ձեր դիտարկումների և "
-"անձնական տվյալների վրա հիմնված:"
 
-#: trackingProtection.radioGroupLabel
-msgid "Block known tracking companies from displaying content"
+#: trackingProtection2.radioGroupLabel
+msgid "Use Tracking Protection to block known trackers"
 msgstr ""
-"Արգելափակել հետագծող հայտնի ընկերություններին բովանդակություն ցուցադրելուց"
 
 #: trackingProtectionAlways.label trackingProtectionAlways.accesskey
 msgid "Alwa&ys"
@@ -59,53 +56,66 @@ msgstr "Իմանալ ավելին"
 msgid "E&xceptions…"
 msgstr "Բ&ացառություններ…"
 
-#: tracking.label
-msgid "Tracking"
-msgstr "Հետագծում"
-
+#. This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel.
 #: trackingProtectionPBM5.label trackingProtectionPBM5.accesskey
 msgid "Use Tracking Protection in Pri&vate Windows"
 msgstr "Օգտ. հետագծման պաշտպանությունը Գաղ&տնի պատուհանում"
+
+#. This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel.
+#: trackingProtectionPBM6.label trackingProtectionPBM6.accesskey
+msgid "Use Tracking Protection in Pri&vate Browsing to block known trackers"
+msgstr ""
 
 #: trackingProtectionPBMLearnMore.label
 msgctxt "trackingProtectionPBMLearnMore.label"
 msgid "Learn more"
 msgstr "Իմանալ ավելին"
 
-#: changeBlockList.label changeBlockList.accesskey
-msgid "&Change Block List"
+#: changeBlockList2.label changeBlockList2.accesskey
+#, fuzzy
+msgid "&Change Block List…"
 msgstr "&Փոխել արգելացուցակը"
 
-#. include a trailing space as needed
-#. LOCALIZATION NOTE (doNotTrack.post.label): include a starting space as needed
-#: doNotTrack.pre.label
-msgid "You can also "
-msgstr "Նաև կարող եք՝ "
+#: doNotTrack.description
+msgid "Send websites a “Do Not Track” signal that you don’t want to be tracked"
+msgstr ""
 
-#: doNotTrack.settings.label
-msgid "manage your Do Not Track settings"
-msgstr "կառավարել Չհետագծելու կարգավորումները"
+#: doNotTrack.learnMore.label
+#, fuzzy
+msgctxt "doNotTrack.learnMore.label"
+msgid "Learn more"
+msgstr "Իմանալ ավելին"
 
-#: doNotTrack.post.label
-msgctxt "doNotTrack.post.label"
-msgid "."
-msgstr "."
+#: doNotTrack.default.label
+msgid "Only when using Tracking Protection"
+msgstr ""
+
+#: doNotTrack.always.label
+#, fuzzy
+msgctxt "doNotTrack.always.label"
+msgid "Always"
+msgstr "Միշտ"
 
 #: history.label
 msgid "History"
 msgstr "Պատմություն"
 
-#: locationBar.label
-msgid "Location Bar"
-msgstr "Հասցեի վահանակ"
+#: permissions.label
+msgid "Permissions"
+msgstr ""
 
-#: locbar.suggest2.label
-msgid "When using the location bar, suggest"
+#: addressBar.label
+msgid "Address Bar"
+msgstr ""
+
+#: addressBar.suggest.label
+#, fuzzy
+msgid "When using the address bar, suggest"
 msgstr "Հասցեի գոտին օգտագործելիս առաջարկել"
 
-#: locbar.history.label locbar.history.accesskey
-msgid "&History"
-msgstr "&Պատմություն"
+#: locbar.history2.label locbar.history2.accesskey
+msgid "Browsing &history"
+msgstr ""
 
 #: locbar.bookmarks.label locbar.bookmarks.accesskey
 msgid "Boo&kmarks"
@@ -123,8 +133,9 @@ msgstr "Առնչվ&ող որոնումներ՝ հիմնական որոնիչի �
 msgid "Change preferences for search engine suggestions"
 msgstr "Փոխել որոնիչների նախապատվությունները"
 
-#: acceptCookies.label acceptCookies.accesskey
-msgid "&Accept cookies from sites"
+#: acceptCookies2.label acceptCookies2.accesskey
+#, fuzzy
+msgid "&Accept cookies from websites"
 msgstr "&Ընդունել cookie-ներ կայքերից"
 
 #: acceptThirdParty.pre.label acceptThirdParty.pre.accesskey
@@ -132,6 +143,8 @@ msgid "Accept third-part&y cookies:"
 msgstr "Ընդունել cookie-ներ կողմնակի կայքե&րից."
 
 #: acceptThirdParty.always.label
+#, fuzzy
+msgctxt "acceptThirdParty.always.label"
 msgid "Always"
 msgstr "Միշտ"
 
@@ -259,10 +272,6 @@ msgstr "&brandShortName;-ը փակելիս մաքրե&լ պատմություն�
 msgid "Se&ttings…"
 msgstr "Կա&րգավորումներ..."
 
-#: browserContainersHeader.label
-msgid "Container Tabs"
-msgstr "Պարունակ ներդիրներ"
-
 #: browserContainersLearnMore.label
 msgctxt "browserContainersLearnMore.label"
 msgid "Learn more"
@@ -275,6 +284,36 @@ msgstr "Մ&իացնել պարունակ ներդիրները"
 #: browserContainersSettings.label browserContainersSettings.accesskey
 msgid "Sett&ings…"
 msgstr "Կա&րգավորումներ..."
+
+#~ msgid ""
+#~ "Tracking is when companies collect information about you to build a "
+#~ "profile and display content based on your browsing and personal data."
+#~ msgstr ""
+#~ "Հետագծումը, երբ ընկերությունները հավաքում են տեղեկություններ ձեր մասին՝ "
+#~ "պրոֆիլ կառուցելու և բովանդակություն ցուցմադրելու համար՝ ձեր դիտարկումների "
+#~ "և անձնական տվյալների վրա հիմնված:"
+
+#~ msgid "Block known tracking companies from displaying content"
+#~ msgstr ""
+#~ "Արգելափակել հետագծող հայտնի ընկերություններին բովանդակություն ցուցադրելուց"
+
+#~ msgid "Tracking"
+#~ msgstr "Հետագծում"
+
+#~ msgid "You can also "
+#~ msgstr "Նաև կարող եք՝ "
+
+#~ msgid "manage your Do Not Track settings"
+#~ msgstr "կառավարել Չհետագծելու կարգավորումները"
+
+#~ msgid "Location Bar"
+#~ msgstr "Հասցեի վահանակ"
+
+#~ msgid "&History"
+#~ msgstr "&Պատմություն"
+
+#~ msgid "Container Tabs"
+#~ msgstr "Պարունակ ներդիրներ"
 
 #~ msgid "Request that sites &not track you"
 #~ msgstr "Հարցում, որպեսզի կայքերը &չհետևեն ձեզ"
