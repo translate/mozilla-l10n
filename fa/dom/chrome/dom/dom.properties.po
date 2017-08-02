@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-06 05:15+0000\n"
+"POT-Creation-Date: 2017-08-02 09:21+0000\n"
 "PO-Revision-Date: 2017-06-02 07:36+0000\n"
 "Last-Translator: Arash Mousavi <mousavi.arash@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 2.1.0\n"
+"X-Generator: Translate Toolkit 2.2.3\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1496389000.000000\n"
 
@@ -182,6 +182,10 @@ msgstr "لطفاً یک نشانی پست الکترونیکی وارد کنید
 msgid "Please enter a URL."
 msgstr "لطفاً یک نشانی اینترنتی وارد کنید."
 
+#: FormValidationInvalidDate
+msgid "Please enter a valid date."
+msgstr ""
+
 #: FormValidationPatternMismatch
 msgid "Please match the requested format."
 msgstr "لطفاً عبارتی منطبق با الگوی درخواست شده وارد کنید."
@@ -196,32 +200,20 @@ msgstr "لطفاً عبارتی منطبق با الگوی درخواست شده
 msgid "Please select a value that is no more than %S."
 msgstr "لطفا یک مقدار کم تر از %S استفاده کنید."
 
-#. # LOCALIZATION NOTE (FormValidationDateRangeOverflow): %S is a date.
-#: FormValidationDateRangeOverflow
-msgctxt "FormValidationDateRangeOverflow"
+#. # LOCALIZATION NOTE (FormValidationDateTimeRangeOverflow): %S is a date or a time.
+#: FormValidationDateTimeRangeOverflow
+#, fuzzy
 msgid "Please select a value that is no later than %S."
 msgstr "لطفا یک مقدارقبل از%S انتخاب کنید."
-
-#. # LOCALIZATION NOTE (FormValidationTimeRangeOverflow): %S is a time.
-#: FormValidationTimeRangeOverflow
-msgctxt "FormValidationTimeRangeOverflow"
-msgid "Please select a value that is no later than %S."
-msgstr "لطفا یک مقدار قبل از %S انتخاب کنید."
 
 #. # LOCALIZATION NOTE (FormValidationNumberRangeUnderflow): %S is a number.
 #: FormValidationNumberRangeUnderflow
 msgid "Please select a value that is no less than %S."
 msgstr "لطفا یک مقدار کم تر از %S استفاده کنید."
 
-#. # LOCALIZATION NOTE (FormValidationDateRangeUnderflow): %S is a date.
-#: FormValidationDateRangeUnderflow
-msgctxt "FormValidationDateRangeUnderflow"
-msgid "Please select a value that is no earlier than %S."
-msgstr "لطفا مقداری را انتخاب کنید که کمتر از %S نباشد."
-
-#. # LOCALIZATION NOTE (FormValidationTimeRangeUnderflow): %S is a time.
-#: FormValidationTimeRangeUnderflow
-msgctxt "FormValidationTimeRangeUnderflow"
+#. # LOCALIZATION NOTE (FormValidationDateTimeRangeUnderflow): %S is a date or a time.
+#: FormValidationDateTimeRangeUnderflow
+#, fuzzy
 msgid "Please select a value that is no earlier than %S."
 msgstr "لطفا مقداری را انتخاب کنید که کمتر از %S نباشد."
 
@@ -931,9 +923,11 @@ msgstr ""
 "تغییرات رفتار در نسخه‌های بعدی بشوید. برای راهنمایی بیشتر https://developer."
 "mozilla.org/en/docs/Mozilla/Mobile/Viewport_meta_tag"
 
-#. # LOCALIZATION NOTE: Do not translate "window.controllers"
-#: Window_ControllersWarning
-msgid "window.controllers is deprecated. Do not use it for UA detection."
+#. # LOCALIZATION NOTE: Do not translate "window.controllers/Controllers"
+#: Window_Cc_ontrollersWarning
+#, fuzzy
+msgid ""
+"window.controllers/Controllers is deprecated. Do not use it for UA detection."
 msgstr "window.controllers منسوخ شده است. برای شناسایی UA استفاده نکنید."
 
 #: ImportXULIntoContentWarning
@@ -1460,11 +1454,6 @@ msgid "BiquadFilterNode channel count changes may produce audio glitches."
 msgstr ""
 "تغییرِ تعدادِ کانالِ BiquadFilterNode ممکن است باعث ایجاد اشکالاتی در صدا بشود."
 
-#. # LOCALIZATION NOTE: %1$S is the unanimatable paced property.
-#: UnanimatablePacedProperty
-msgid "Paced property ‘%1$S’ is not an animatable property."
-msgstr "مشخصه «%1$S» یک مشخصه با قابلیت پویانمایی نیست."
-
 #. # LOCALIZATION NOTE: Do not translate ".jpeg"
 #: GenericImageNameJPEG
 msgid "image.jpeg"
@@ -1604,6 +1593,23 @@ msgstr "منبع URI مربوط به <script> شکل ناصحیحی دارد: «
 #: ScriptSourceNotAllowed
 msgid "<script> source URI is not allowed in this document: “%S”."
 msgstr "استفاده از منبع URI مربوط به <script> در این صفحه مجاز نیست: «%S»."
+
+#. # LOCALIZATION NOTE: %1$S is the invalid property value and %2$S is the property name.
+#: InvalidKeyframePropertyValue
+msgid ""
+"Keyframe property value “%1$S” is invalid according to the syntax for “%2$S”."
+msgstr ""
+
+#~ msgctxt "FormValidationTimeRangeOverflow"
+#~ msgid "Please select a value that is no later than %S."
+#~ msgstr "لطفا یک مقدار قبل از %S انتخاب کنید."
+
+#~ msgctxt "FormValidationTimeRangeUnderflow"
+#~ msgid "Please select a value that is no earlier than %S."
+#~ msgstr "لطفا مقداری را انتخاب کنید که کمتر از %S نباشد."
+
+#~ msgid "Paced property ‘%1$S’ is not an animatable property."
+#~ msgstr "مشخصه «%1$S» یک مشخصه با قابلیت پویانمایی نیست."
 
 #~ msgid "Use of DataContainerEvent is deprecated. Use CustomEvent instead."
 #~ msgstr ""
