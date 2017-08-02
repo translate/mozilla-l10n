@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-18 12:46+0000\n"
+"POT-Creation-Date: 2017-08-02 09:21+0000\n"
 "PO-Revision-Date: 2017-04-20 12:21+0000\n"
 "Last-Translator: Kerim Kalamujic <kerim@mozilla.ba>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Pootle 2.8\n"
+"X-Generator: Translate Toolkit 2.2.3\n"
 "X-Merge-On: location\n"
 "X-POOTLE-MTIME: 1492690891.000000\n"
 
@@ -25,17 +25,16 @@ msgstr ""
 msgid "Tracking Protection"
 msgstr "Zaštita od praćenja"
 
-#: trackingProtection.description
+#: trackingProtection2.description
 msgid ""
-"Tracking is when companies collect information about you to build a profile "
-"and display content based on your browsing and personal data."
+"Tracking is the collection of your browsing data across multiple websites. "
+"Tracking can be used to build a profile and display content based on your "
+"browsing and personal information."
 msgstr ""
-"Praćenje je kada kompanije sakupljaju informacije o tome kako gradite svoj "
-"profil i prikazuju sadržaj na osnovu vaših ličnih i podataka o surfanju."
 
-#: trackingProtection.radioGroupLabel
-msgid "Block known tracking companies from displaying content"
-msgstr "Blokiraj poznate kompanije koje prate da prikazuju sadržaj"
+#: trackingProtection2.radioGroupLabel
+msgid "Use Tracking Protection to block known trackers"
+msgstr ""
 
 #: trackingProtectionAlways.label trackingProtectionAlways.accesskey
 msgid "Alwa&ys"
@@ -58,53 +57,66 @@ msgstr "Saznajte više"
 msgid "E&xceptions…"
 msgstr "&Izuzeci…"
 
-#: tracking.label
-msgid "Tracking"
-msgstr "Pratim"
-
+#. This string is displayed if privacy.trackingprotection.ui.enabled is set to true. This currently happens on the release and beta channel.
 #: trackingProtectionPBM5.label trackingProtectionPBM5.accesskey
 msgid "Use Tracking Protection in Pri&vate Windows"
 msgstr "Koristi zaštitu od praćenja u pri&vatnim prozorima"
+
+#. This string is displayed if privacy.trackingprotection.ui.enabled is set to false. This currently happens on the nightly channel.
+#: trackingProtectionPBM6.label trackingProtectionPBM6.accesskey
+msgid "Use Tracking Protection in Pri&vate Browsing to block known trackers"
+msgstr ""
 
 #: trackingProtectionPBMLearnMore.label
 msgctxt "trackingProtectionPBMLearnMore.label"
 msgid "Learn more"
 msgstr "Saznajte više"
 
-#: changeBlockList.label changeBlockList.accesskey
-msgid "&Change Block List"
+#: changeBlockList2.label changeBlockList2.accesskey
+#, fuzzy
+msgid "&Change Block List…"
 msgstr "&Promijeni listu za blokiranje"
 
-#. include a trailing space as needed
-#. LOCALIZATION NOTE (doNotTrack.post.label): include a starting space as needed
-#: doNotTrack.pre.label
-msgid "You can also "
-msgstr "Također možete "
+#: doNotTrack.description
+msgid "Send websites a “Do Not Track” signal that you don’t want to be tracked"
+msgstr ""
 
-#: doNotTrack.settings.label
-msgid "manage your Do Not Track settings"
-msgstr "upravljati vašim Nemoj me pratiti postavkama"
+#: doNotTrack.learnMore.label
+#, fuzzy
+msgctxt "doNotTrack.learnMore.label"
+msgid "Learn more"
+msgstr "Saznajte više"
 
-#: doNotTrack.post.label
-msgctxt "doNotTrack.post.label"
-msgid "."
-msgstr "."
+#: doNotTrack.default.label
+msgid "Only when using Tracking Protection"
+msgstr ""
+
+#: doNotTrack.always.label
+#, fuzzy
+msgctxt "doNotTrack.always.label"
+msgid "Always"
+msgstr "Uvijek"
 
 #: history.label
 msgid "History"
 msgstr "Historija"
 
-#: locationBar.label
-msgid "Location Bar"
-msgstr "Adresna traka"
+#: permissions.label
+msgid "Permissions"
+msgstr ""
 
-#: locbar.suggest2.label
-msgid "When using the location bar, suggest"
+#: addressBar.label
+msgid "Address Bar"
+msgstr ""
+
+#: addressBar.suggest.label
+#, fuzzy
+msgid "When using the address bar, suggest"
 msgstr "Pri korištenju adresne trake, predloži"
 
-#: locbar.history.label locbar.history.accesskey
-msgid "&History"
-msgstr "&Historija"
+#: locbar.history2.label locbar.history2.accesskey
+msgid "Browsing &history"
+msgstr ""
 
 #: locbar.bookmarks.label locbar.bookmarks.accesskey
 msgid "Boo&kmarks"
@@ -122,8 +134,9 @@ msgstr "Povezane pretrage iz glavnog pretraživača"
 msgid "Change preferences for search engine suggestions"
 msgstr "Promijenite postavke prijedloga pretraživača"
 
-#: acceptCookies.label acceptCookies.accesskey
-msgid "&Accept cookies from sites"
+#: acceptCookies2.label acceptCookies2.accesskey
+#, fuzzy
+msgid "&Accept cookies from websites"
 msgstr "Prihvati kolačiće sa strani&ca"
 
 #: acceptThirdParty.pre.label acceptThirdParty.pre.accesskey
@@ -131,6 +144,8 @@ msgid "Accept third-part&y cookies:"
 msgstr "Prihvati kolačiće trećeg li&ca:"
 
 #: acceptThirdParty.always.label
+#, fuzzy
+msgctxt "acceptThirdParty.always.label"
 msgid "Always"
 msgstr "Uvijek"
 
@@ -258,10 +273,6 @@ msgstr "Očisti histo&riju kada se &brandShortName; zatvori"
 msgid "Se&ttings…"
 msgstr "Pos&tavke…"
 
-#: browserContainersHeader.label
-msgid "Container Tabs"
-msgstr "Container tabovi"
-
 #: browserContainersLearnMore.label
 msgctxt "browserContainersLearnMore.label"
 msgid "Learn more"
@@ -274,6 +285,35 @@ msgstr "Omogući Co&ntainer tabove"
 #: browserContainersSettings.label browserContainersSettings.accesskey
 msgid "Sett&ings…"
 msgstr "Pos&tavke…"
+
+#~ msgid ""
+#~ "Tracking is when companies collect information about you to build a "
+#~ "profile and display content based on your browsing and personal data."
+#~ msgstr ""
+#~ "Praćenje je kada kompanije sakupljaju informacije o tome kako gradite "
+#~ "svoj profil i prikazuju sadržaj na osnovu vaših ličnih i podataka o "
+#~ "surfanju."
+
+#~ msgid "Block known tracking companies from displaying content"
+#~ msgstr "Blokiraj poznate kompanije koje prate da prikazuju sadržaj"
+
+#~ msgid "Tracking"
+#~ msgstr "Pratim"
+
+#~ msgid "You can also "
+#~ msgstr "Također možete "
+
+#~ msgid "manage your Do Not Track settings"
+#~ msgstr "upravljati vašim Nemoj me pratiti postavkama"
+
+#~ msgid "Location Bar"
+#~ msgstr "Adresna traka"
+
+#~ msgid "&History"
+#~ msgstr "&Historija"
+
+#~ msgid "Container Tabs"
+#~ msgstr "Container tabovi"
 
 #~ msgid "Request that sites &not track you"
 #~ msgstr "Zatražite da vas stranice &ne prate"
